@@ -157,7 +157,7 @@ async function signInWithGoogle() {
     if (error.code === "auth/popup-closed-by-user") {
       showNotification("Sign-in cancelled", "You closed the sign-in window before completing authentication.", "badges/summary.png");
     } else {
-      showNotification("Sign-in failed", error.message, "badges/summary.png");
+      showNotification("Sign-in failed", error && error.message ? error.message : error, "badges/summary.png");
     }
   }
 }
@@ -1437,17 +1437,17 @@ async function loadUserProfile(uid) {
 
 // Sign in with Google (global sign-in button)
 document.getElementById("signInBtn")?.addEventListener("click", async () => {
-  console.log("Sign-in button clicked"); // Debug: confirm handler fires
+  console.log("Sign-in button clicked");
   try {
     if (isMobile()) {
-      console.log("Using signInWithRedirect");
+      console.log("Using signInWithRedirect (MOBILE)");
       await signInWithRedirect(auth, provider);
     } else {
-      console.log("Using signInWithPopup");
+      console.log("Using signInWithPopup (DESKTOP)");
       await signInWithPopup(auth, provider);
     }
   } catch (error) {
-    console.error("Google sign-in error:", error); // Debug: log errors
+    console.error("Google sign-in error:", error);
     alert("Sign-in failed: " + (error && error.message ? error.message : error));
   }
 });
@@ -1628,11 +1628,29 @@ function showProfileModal() {
       <div style="margin-top:16px;">
         ${user
           ? `<button class="modal-btn" onclick="signOut()">Sign Out</button>`
-          : `<button class="modal-btn" onclick="document.getElementById('signInBtn').click()">Sign In with Google</button>`
+          : `<button class="modal-btn" id="modalSignInBtn">Sign In with Google</button>`
         }
       </div>
     </div>
   `);
+
+  // Attach event listeners after modal is in DOM
+  if (!user) {
+    const btn = document.getElementById("modalSignInBtn");
+    if (btn) {
+      btn.addEventListener("click", async () => {
+        try {
+          if (isMobile()) {
+            await signInWithRedirect(auth, provider);
+          } else {
+            await signInWithPopup(auth, provider);
+          }
+        } catch (error) {
+          alert("Sign-in failed: " + (error && error.message ? error.message : error));
+        }
+      });
+    }
+  }
 
   setTimeout(() => {
     document.getElementById("smartLearningBtn")?.addEventListener("click", showSmartLearningModal);
