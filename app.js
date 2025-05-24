@@ -189,6 +189,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const result = await getRedirectResult(auth);
     console.log("getRedirectResult result:", result);
+    // Log location and referrer for mobile diagnostics
+    console.log("window.location.href:", window.location.href);
+    console.log("document.referrer:", document.referrer);
     if (result && result.user) {
       // User signed in via redirect
       console.log("Redirect sign-in successful:", result.user);
@@ -196,8 +199,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       console.log("No user from getRedirectResult");
     }
+    if (result && result._tokenResponse && result._tokenResponse.error) {
+      // Log and show any error from token response
+      console.error("Token response error:", result._tokenResponse.error, result._tokenResponse.error_description);
+      showNotification("Sign-in error", `${result._tokenResponse.error}: ${result._tokenResponse.error_description || ''}`);
+      let statusElem = document.querySelector("#status");
+      if (statusElem) statusElem.innerText = `Sign-in error: ${result._tokenResponse.error}: ${result._tokenResponse.error_description || ''}`;
+    }
   } catch (error) {
     console.error("Redirect sign-in error:", error);
+    showNotification("Sign-in failed", error && error.message ? error.message : error, "badges/summary.png");
+    // Show error details in a persistent UI element for debugging
+    let statusElem = document.querySelector("#status");
+    if (statusElem) statusElem.innerText = `Sign-in error: ${error.code || ''} ${error.message || error}`;
   }
 
   const statusElem = document.querySelector("#status");
@@ -205,6 +219,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   onAuthStateChanged(auth, async user => {
     console.log("Auth state changed. User:", user); // <-- Add this
+    // Log location and referrer for mobile diagnostics
+    console.log("window.location.href:", window.location.href);
+    console.log("document.referrer:", document.referrer);
     if (user) {
       if (statusElem) statusElem.innerText = "Loading questions...";
       questions = await loadQuestionsFromFirestore();
@@ -221,8 +238,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       showNotification("Welcome!", "Challenge your skills with Massage Therapy Smart Study PRO!", "badges/welcome.png");
       renderChartsOnLoad();
     } else {
-      if (statusElem) statusElem.innerText = "Please sign in to access questions.";
-      // Optionally, hide quiz UI until signed in
+      // If sign-in failed after redirect, show persistent error and suggestions
+      if (statusElem) {
+        statusElem.innerText = "Sign-in failed or cancelled. Please ensure third-party cookies are enabled, you are not in private browsing mode, and the app is served over HTTPS. Try a different browser if the problem persists.";
+      }
     }
   });
 }); // <-- Add this closing brace and parenthesis
