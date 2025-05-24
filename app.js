@@ -188,10 +188,13 @@ function ensureQuestionMetadata(questions) {
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const result = await getRedirectResult(auth);
+    console.log("getRedirectResult result:", result);
     if (result && result.user) {
       // User signed in via redirect
       console.log("Redirect sign-in successful:", result.user);
       showNotification("Signed in!", "Welcome, " + (result.user.displayName || "user") + "!");
+    } else {
+      console.log("No user from getRedirectResult");
     }
   } catch (error) {
     console.error("Redirect sign-in error:", error);
