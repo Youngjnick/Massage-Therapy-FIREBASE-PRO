@@ -1448,8 +1448,11 @@ document.getElementById("signInBtn")?.addEventListener("click", async () => {
       await signInWithPopup(auth, provider);
     }
   } catch (error) {
-    console.error("Google sign-in error:", error);
-    alert("Sign-in failed: " + (error && error.message ? error.message : error));
+    if (error.code === "auth/popup-closed-by-user") {
+      showNotification("Sign-in cancelled", "You closed the sign-in window before completing authentication.", "badges/summary.png");
+    } else {
+      showNotification("Sign-in failed", error && error.message ? error.message : error, "badges/summary.png");
+    }
   }
 });
 
