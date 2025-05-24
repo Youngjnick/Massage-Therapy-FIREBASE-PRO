@@ -1771,4 +1771,8 @@ localStorage.getItem("quizResults")
 localStorage.getItem("questionConfidence")
 localStorage.getItem("masteryHistory")
 
+window.onerror = function(message, source, lineno, colno, error) {
+  alert("Error: " + message + "\n" + source + ":" + lineno);
+};
+
 
