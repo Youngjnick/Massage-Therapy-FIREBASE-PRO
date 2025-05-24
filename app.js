@@ -133,12 +133,34 @@ import { firebaseConfig } from "./firebaseConfig.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-analytics.js";
 import { getFirestore, setDoc, getDoc, doc, collection, addDoc, getDocs, collectionGroup } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-firestore.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-auth.js";
 
+// --- INITIALIZE FIREBASE APP FIRST ---
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const auth = getAuth(app);
+const analytics = getAnalytics(app);
+const provider = new GoogleAuthProvider();
+
+function isMobile() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+async function signInWithGoogle() {
+  try {
+    if (isMobile()) {
+      await signInWithRedirect(auth, provider);
+    } else {
+      await signInWithPopup(auth, provider);
+    }
+  } catch (error) {
+    if (error.code === "auth/popup-closed-by-user") {
+      showNotification("Sign-in cancelled", "You closed the sign-in window before completing authentication.", "badges/summary.png");
+    } else {
+      showNotification("Sign-in failed", error.message, "badges/summary.png");
+    }
+  }
+}
 
 // --- QUESTION LOADING ---
 
@@ -1407,9 +1429,17 @@ async function loadUserProfile(uid) {
 document.getElementById("signInBtn")?.addEventListener("click", async () => {
   const provider = new GoogleAuthProvider();
   try {
-    await signInWithPopup(auth, provider);
+    if (isMobile()) {
+      await signInWithRedirect(auth, provider);
+    } else {
+      await signInWithPopup(auth, provider);
+    }
   } catch (error) {
-    alert("Sign-in failed: " + error.message);
+    if (error.code === "auth/popup-closed-by-user") {
+      showNotification("Sign-in cancelled", "You closed the sign-in window before completing authentication.", "badges/summary.png");
+    } else {
+      showNotification("Sign-in failed", error.message, "badges/summary.png");
+    }
   }
 });
 
