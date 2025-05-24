@@ -191,6 +191,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (result && result.user) {
       // User signed in via redirect
       console.log("Redirect sign-in successful:", result.user);
+      showNotification("Signed in!", "Welcome, " + (result.user.displayName || "user") + "!");
     }
   } catch (error) {
     console.error("Redirect sign-in error:", error);
