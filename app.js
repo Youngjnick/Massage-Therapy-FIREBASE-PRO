@@ -1437,19 +1437,19 @@ async function loadUserProfile(uid) {
 
 // Sign in with Google (global sign-in button)
 document.getElementById("signInBtn")?.addEventListener("click", async () => {
+  console.log("Sign-in button clicked"); // Debug: confirm handler fires
   const provider = new GoogleAuthProvider();
   try {
     if (isMobile()) {
+      console.log("Using signInWithRedirect");
       await signInWithRedirect(auth, provider);
     } else {
+      console.log("Using signInWithPopup");
       await signInWithPopup(auth, provider);
     }
   } catch (error) {
-    if (error.code === "auth/popup-closed-by-user") {
-      showNotification("Sign-in cancelled", "You closed the sign-in window before completing authentication.", "badges/summary.png");
-    } else {
-      showNotification("Sign-in failed", error.message, "badges/summary.png");
-    }
+    console.error("Google sign-in error:", error); // Debug: log errors
+    alert("Sign-in failed: " + (error && error.message ? error.message : error));
   }
 });
 
