@@ -133,7 +133,7 @@ import { firebaseConfig } from "./firebaseConfig.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-analytics.js";
 import { getFirestore, setDoc, getDoc, doc, collection, addDoc, getDocs, collectionGroup } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-firestore.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, signOut, getRedirectResult } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-auth.js";
 
 // --- INITIALIZE FIREBASE APP FIRST ---
 const app = initializeApp(firebaseConfig);
@@ -185,7 +185,17 @@ function ensureQuestionMetadata(questions) {
 
 // --- APP INIT ---
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const result = await getRedirectResult(auth);
+    if (result && result.user) {
+      // User signed in via redirect
+      console.log("Redirect sign-in successful:", result.user);
+    }
+  } catch (error) {
+    console.error("Redirect sign-in error:", error);
+  }
+
   const statusElem = document.querySelector("#status");
   if (statusElem) statusElem.innerText = "Checking authentication...";
 
