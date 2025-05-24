@@ -1,5 +1,5 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyARFhLgGr73voN2rZRCycMtup_VKdy2s18",
+  apiKey: "AIzAIzaSyBUJaf1a-_CjrbPXe48YOVbp1cN9UwcWB8",
   authDomain: "massage-therapy-smart-study.firebaseapp.com",
   projectId: "massage-therapy-smart-study",
   storageBucket: "massage-therapy-smart-study.appspot.com",
