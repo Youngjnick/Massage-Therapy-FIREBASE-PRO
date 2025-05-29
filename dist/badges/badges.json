@@ -1,0 +1,1772 @@
+[
+  {
+    "id": "SOAP_star_basic",
+    "name": "SOAP Star Basic",
+    "description": "Complete 10 SOAP-related questions with 80%+ accuracy",
+    "category": "Achievement",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 1,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/SOAP_star_basic"
+  },
+  {
+    "id": "accuracy_100",
+    "name": "Accuracy 100",
+    "description": "Score 100% on any quiz",
+    "type": "performance",
+    "tier": "gold",
+    "category": "Quiz",
+    "difficulty": "hard",
+    "date_created": "2024-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Score 100% on any quiz attempt.",
+    "display_order": 2,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "quiz",
+      "accuracy",
+      "gold"
+    ],
+    "url": "/badges/accuracy_100",
+    "progress": {
+      "current": 0,
+      "required": 1
+    },
+    "date_earned": null,
+    "times_earned": 0,
+    "icon": "accuracy_100.png",
+    "animation": "glow",
+    "requires": [
+      "first_quiz"
+    ],
+    "hidden": false,
+    "reward": {
+      "type": "coupon",
+      "value": "10% off"
+    },
+    "expires_in_days": null,
+    "notification": "Congrats! You unlocked the {name} badge!",
+    "next_badges": [
+      "accuracy_pro",
+      "accuracy_master"
+    ],
+    "rarity": "epic",
+    "personal_message": "You did it, {username}! This badge is yours.",
+    "points": 100,
+    "xp": 250,
+    "renewable": true,
+    "shareable": true,
+    "share_message": "I just earned the {name} badge on Massage Therapy Smart Study!",
+    "customizable": true,
+    "customization_options": [
+      "color",
+      "emoji"
+    ],
+    "global_earned_count": 0,
+    "collection": "Performance",
+    "collection_bonus": {
+      "points": 500,
+      "reward": "Exclusive Avatar"
+    }
+  },
+  {
+    "id": "first_quiz",
+    "name": "First Quiz",
+    "description": "Complete your very first quiz — the journey begins!",
+    "icon": "first_quiz.png",
+    "category": "Quiz",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Complete your first quiz.",
+    "display_order": 3,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "quiz",
+      "achievement"
+    ],
+    "url": "/badges/first_quiz"
+  },
+  {
+    "id": "badge_collector_2",
+    "name": "Badge Collector 2",
+    "description": "Earn 25 different badges",
+    "icon": "badge_collector_2.png",
+    "category": "General",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Earn multiple different badges.",
+    "display_order": 4,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [],
+    "url": "/badges/badge_collector_2"
+  },
+  {
+    "id": "reflexology_regent",
+    "name": "Reflexology Regent",
+    "description": "Score high on reflexology knowledge and practice.",
+    "icon": "reflexology_regent.png",
+    "category": "General",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 5,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [],
+    "url": "/badges/reflexology_regent"
+  },
+  {
+    "id": "streak_3",
+    "name": "Consistency Spark",
+    "description": "Complete 3 sessions in 3 consecutive days.",
+    "icon": "streak_3.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 3 consecutive days.",
+    "display_order": 6,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_3"
+  },
+  {
+    "id": "streak_100",
+    "name": "Unstoppable",
+    "description": "100-day streak — no misses.",
+    "icon": "streak_100.png",
+    "category": "Streak",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 100 consecutive days.",
+    "display_order": 7,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_100"
+  },
+  {
+    "id": "10_day_streak",
+    "name": "10 Day Streak",
+    "description": "Maintain a streak for 10 consecutive days.",
+    "icon": "10_day_streak.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 8,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/10_day_streak"
+  },
+  {
+    "id": "3_day_streak",
+    "name": "3 Day Streak",
+    "description": "Maintain a streak for 3 consecutive days.",
+    "icon": "3_day_streak.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 9,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/3_day_streak"
+  },
+  {
+    "id": "3x_streak_3",
+    "name": "3x Streak 3",
+    "description": "Achieve a 3-day activity streak.",
+    "icon": "3x_streak_3.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 3 consecutive days.",
+    "display_order": 10,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/3x_streak_3"
+  },
+  {
+    "id": "5_day_streak.png",
+    "name": "5 Day Streak Png",
+    "description": "Maintain a streak for 5 consecutive days.",
+    "icon": "5_day_streak.png.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 11,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/5_day_streak.png"
+  },
+  {
+    "id": "7_day_streak.png",
+    "name": "7 Day Streak Png",
+    "description": "Maintain a streak for 7 consecutive days.",
+    "icon": "7_day_streak.png.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 12,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/7_day_streak.png"
+  },
+  {
+    "id": "accuracy_90",
+    "name": "Accuracy 90",
+    "description": "Achieve 90% accuracy on a quiz.",
+    "icon": "accuracy_90.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Score 90% or higher on a quiz.",
+    "display_order": 13,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "accuracy"
+    ],
+    "url": "/badges/accuracy_90"
+  },
+  {
+    "id": "accuracy_master",
+    "name": "Accuracy Master",
+    "description": "Demonstrate outstanding accuracy.",
+    "icon": "accuracy_master.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 14,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "accuracy",
+      "achievement"
+    ],
+    "url": "/badges/accuracy_master"
+  },
+  {
+    "id": "accuracy_master_gold",
+    "name": "Accuracy Master Gold",
+    "description": "Demonstrate outstanding accuracy.",
+    "icon": "accuracy_master_gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 15,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "accuracy",
+      "gold",
+      "achievement"
+    ],
+    "url": "/badges/accuracy_master_gold"
+  },
+  {
+    "id": "accuracy_pro",
+    "name": "Accuracy Pro",
+    "description": "Demonstrate outstanding accuracy.",
+    "icon": "accuracy_pro.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 16,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "accuracy",
+      "achievement"
+    ],
+    "url": "/badges/accuracy_pro"
+  },
+  {
+    "id": "accuracy_pro_gold",
+    "name": "Accuracy Pro Gold",
+    "description": "Demonstrate outstanding accuracy.",
+    "icon": "accuracy_pro_gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 17,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "accuracy",
+      "gold",
+      "achievement"
+    ],
+    "url": "/badges/accuracy_pro_gold"
+  },
+  {
+    "id": "accuracy_top_10",
+    "name": "Accuracy Top 10",
+    "description": "Demonstrate outstanding accuracy.",
+    "icon": "accuracy_top_10.png",
+    "category": "Achievement",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 18,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "accuracy"
+    ],
+    "url": "/badges/accuracy_top_10"
+  },
+  {
+    "id": "accuracy_top_10_gold",
+    "name": "Accuracy Top 10 Gold",
+    "description": "Demonstrate outstanding accuracy.",
+    "icon": "accuracy_top_10_gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 19,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "accuracy",
+      "gold"
+    ],
+    "url": "/badges/accuracy_top_10_gold"
+  },
+  {
+    "id": "anatomy-ace-arm",
+    "name": "Anatomy-Ace-Arm",
+    "description": "Unlock the Anatomy-Ace-Arm badge by demonstrating excellence in anatomy-ace-arm.",
+    "icon": "anatomy-ace-arm.png",
+    "category": "Achievement",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 20,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/anatomy-ace-arm"
+  },
+  {
+    "id": "assessment_ace_1",
+    "name": "Assessment Ace 1",
+    "description": "Unlock the Assessment Ace 1 badge by demonstrating excellence in assessment ace 1.",
+    "icon": "assessment_ace_1.png",
+    "category": "Quiz",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 21,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/assessment_ace_1"
+  },
+  {
+    "id": "badge collector",
+    "name": "Badge Collector",
+    "description": "Collect multiple unique badges.",
+    "icon": "badge collector.png",
+    "category": "General",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 22,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [],
+    "url": "/badges/badge collector"
+  },
+  {
+    "id": "badge_collector",
+    "name": "Badge Collector",
+    "description": "Collect multiple unique badges.",
+    "icon": "badge_collector.png",
+    "category": "General",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Earn multiple different badges.",
+    "display_order": 23,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [],
+    "url": "/badges/badge_collector"
+  },
+  {
+    "id": "badge_vault_complete",
+    "name": "Badge Vault Complete",
+    "description": "Unlock the Badge Vault Complete badge by demonstrating excellence in badge vault complete.",
+    "icon": "badge_vault_complete.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 24,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [],
+    "url": "/badges/badge_vault_complete"
+  },
+  {
+    "id": "bone_baron_small",
+    "name": "Bone Baron Small",
+    "description": "Unlock the Bone Baron Small badge by demonstrating excellence in bone baron small.",
+    "icon": "bone_baron_small.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 25,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/bone_baron_small"
+  },
+  {
+    "id": "bookmarked",
+    "name": "Bookmarked",
+    "description": "Unlock the Bookmarked badge!",
+    "icon": "bookmarked.png",
+    "category": "General",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 26,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [],
+    "url": "/badges/bookmarked"
+  },
+  {
+    "id": "brain_boss_elite_green",
+    "name": "Brain Boss Elite Green",
+    "description": "Unlock the Brain Boss Elite Green badge by demonstrating excellence in brain boss elite green.",
+    "icon": "brain_boss_elite_green.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 27,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/brain_boss_elite_green"
+  },
+  {
+    "id": "brain_boss_elite_white",
+    "name": "Brain Boss Elite White",
+    "description": "Unlock the Brain Boss Elite White badge by demonstrating excellence in brain boss elite white.",
+    "icon": "brain_boss_elite_white.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 28,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/brain_boss_elite_white"
+  },
+  {
+    "id": "breathe_easy_gold",
+    "name": "Breathe Easy Gold",
+    "description": "Unlock the Breathe Easy Gold badge by demonstrating excellence in breathe easy gold.",
+    "icon": "breathe_easy_gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 29,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "gold",
+      "achievement"
+    ],
+    "url": "/badges/breathe_easy_gold"
+  },
+  {
+    "id": "chakra_alchemist",
+    "name": "Chakra Alchemist",
+    "description": "Unlock the Chakra Alchemist badge by demonstrating excellence in chakra alchemist.",
+    "icon": "chakra_alchemist.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 30,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/chakra_alchemist"
+  },
+  {
+    "id": "chakra_alchemist_2",
+    "name": "Chakra Alchemist 2",
+    "description": "Unlock the Chakra Alchemist 2 badge by demonstrating excellence in chakra alchemist 2.",
+    "icon": "chakra_alchemist_2.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 31,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/chakra_alchemist_2"
+  },
+  {
+    "id": "chakra_alchemist_open",
+    "name": "Chakra Alchemist Open",
+    "description": "Unlock the Chakra Alchemist Open badge by demonstrating excellence in chakra alchemist open.",
+    "icon": "chakra_alchemist_open.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 32,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/chakra_alchemist_open"
+  },
+  {
+    "id": "chakra_alchemist_pots",
+    "name": "Chakra Alchemist Pots",
+    "description": "Unlock the Chakra Alchemist Pots badge by demonstrating excellence in chakra alchemist pots.",
+    "icon": "chakra_alchemist_pots.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 33,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/chakra_alchemist_pots"
+  },
+  {
+    "id": "circulatory_commander",
+    "name": "Circulatory Commander",
+    "description": "Unlock the Circulatory Commander badge by demonstrating excellence in circulatory commander.",
+    "icon": "circulatory_commander.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 34,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/circulatory_commander"
+  },
+  {
+    "id": "client_whisperer",
+    "name": "Client Whisperer",
+    "description": "Unlock the Client Whisperer badge by demonstrating excellence in client whisperer.",
+    "icon": "client_whisperer.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 35,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/client_whisperer"
+  },
+  {
+    "id": "core_control",
+    "name": "Core Control",
+    "description": "Unlock the Core Control badge by demonstrating excellence in core control.",
+    "icon": "core_control.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 36,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/core_control"
+  },
+  {
+    "id": "core_control_gold",
+    "name": "Core Control Gold",
+    "description": "Unlock the Core Control Gold badge by demonstrating excellence in core control gold.",
+    "icon": "core_control_gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 37,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "gold",
+      "achievement"
+    ],
+    "url": "/badges/core_control_gold"
+  },
+  {
+    "id": "cortical_commander",
+    "name": "Cortical Commander",
+    "description": "Unlock the Cortical Commander badge by demonstrating excellence in cortical commander.",
+    "icon": "cortical_commander.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 38,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/cortical_commander"
+  },
+  {
+    "id": "crammer_hammer",
+    "name": "Crammer Hammer",
+    "description": "Unlock the Crammer Hammer badge by demonstrating excellence in crammer hammer.",
+    "icon": "crammer_hammer.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 39,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/crammer_hammer"
+  },
+  {
+    "id": "cryotherapy_conquerer",
+    "name": "Cryotherapy Conquerer",
+    "description": "Unlock the Cryotherapy Conquerer badge by demonstrating excellence in cryotherapy conquerer.",
+    "icon": "cryotherapy_conquerer.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 40,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/cryotherapy_conquerer"
+  },
+  {
+    "id": "deep_tissue_devotee",
+    "name": "Deep Tissue Devotee",
+    "description": "Unlock the Deep Tissue Devotee badge by demonstrating excellence in deep tissue devotee.",
+    "icon": "deep_tissue_devotee.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 41,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/deep_tissue_devotee"
+  },
+  {
+    "id": "digestive_dynamo",
+    "name": "Digestive Dynamo",
+    "description": "Unlock the Digestive Dynamo badge by demonstrating excellence in digestive dynamo.",
+    "icon": "digestive_dynamo.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 42,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/digestive_dynamo"
+  },
+  {
+    "id": "fascial_flowmaster",
+    "name": "Fascial Flowmaster",
+    "description": "Unlock the Fascial Flowmaster badge by demonstrating excellence in fascial flowmaster.",
+    "icon": "fascial_flowmaster.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 43,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/fascial_flowmaster"
+  },
+  {
+    "id": "fast_learner",
+    "name": "Fast Learner",
+    "description": "Unlock the Fast Learner badge by demonstrating excellence in fast learner.",
+    "icon": "fast_learner.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 44,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/fast_learner"
+  },
+  {
+    "id": "first_steps",
+    "name": "First Steps",
+    "description": "Unlock the First Steps badge by demonstrating excellence in first steps.",
+    "icon": "first_steps.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 45,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/first_steps"
+  },
+  {
+    "id": "flexor_signal_master_no_bkg",
+    "name": "Flexor Signal Master No Bkg",
+    "description": "Unlock the Flexor Signal Master No Bkg badge by demonstrating excellence in flexor signal master no bkg.",
+    "icon": "flexor_signal_master_no_bkg.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 46,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/flexor_signal_master_no_bkg"
+  },
+  {
+    "id": "foot_focus",
+    "name": "Foot Focus",
+    "description": "Unlock the Foot Focus badge by demonstrating excellence in foot focus.",
+    "icon": "foot_focus.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 47,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/foot_focus"
+  },
+  {
+    "id": "heart-throb-gold",
+    "name": "Heart-Throb-Gold",
+    "description": "Unlock the Heart-Throb-Gold badge by demonstrating excellence in heart-throb-gold.",
+    "icon": "heart-throb-gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 48,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "gold",
+      "achievement"
+    ],
+    "url": "/badges/heart-throb-gold"
+  },
+  {
+    "id": "heart-throb",
+    "name": "Heart-Throb",
+    "description": "Unlock the Heart-Throb badge by demonstrating excellence in heart-throb.",
+    "icon": "heart-throb.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 49,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/heart-throb"
+  },
+  {
+    "id": "lower_limb_legend_basic",
+    "name": "Lower Limb Legend Basic",
+    "description": "Unlock the Lower Limb Legend Basic badge by demonstrating excellence in lower limb legend basic.",
+    "icon": "lower_limb_legend_basic.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 50,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/lower_limb_legend_basic"
+  },
+  {
+    "id": "lymphatic_legend",
+    "name": "Lymphatic Legend",
+    "description": "Unlock the Lymphatic Legend badge by demonstrating excellence in lymphatic legend.",
+    "icon": "lymphatic_legend.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 51,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/lymphatic_legend"
+  },
+  {
+    "id": "marrow_mage",
+    "name": "Marrow Mage",
+    "description": "Unlock the Marrow Mage badge by demonstrating excellence in marrow mage.",
+    "icon": "marrow_mage.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 52,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/marrow_mage"
+  },
+  {
+    "id": "massage_maverick_chakras",
+    "name": "Massage Maverick Chakras",
+    "description": "Unlock the Massage Maverick Chakras badge by demonstrating excellence in massage maverick chakras.",
+    "icon": "massage_maverick_chakras.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 53,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/massage_maverick_chakras"
+  },
+  {
+    "id": "meridian_mapper",
+    "name": "Meridian Mapper",
+    "description": "Unlock the Meridian Mapper badge by demonstrating excellence in meridian mapper.",
+    "icon": "meridian_mapper.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 54,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/meridian_mapper"
+  },
+  {
+    "id": "muscle_monarch",
+    "name": "Muscle Monarch",
+    "description": "Unlock the Muscle Monarch badge by demonstrating excellence in muscle monarch.",
+    "icon": "muscle_monarch.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 55,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/muscle_monarch"
+  },
+  {
+    "id": "myofascial_maestro_chest",
+    "name": "Myofascial Maestro Chest",
+    "description": "Unlock the Myofascial Maestro Chest badge by demonstrating excellence in myofascial maestro chest.",
+    "icon": "myofascial_maestro_chest.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 56,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/myofascial_maestro_chest"
+  },
+  {
+    "id": "myofascial_maestro_fascia",
+    "name": "Myofascial Maestro Fascia",
+    "description": "Unlock the Myofascial Maestro Fascia badge by demonstrating excellence in myofascial maestro fascia.",
+    "icon": "myofascial_maestro_fascia.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 57,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/myofascial_maestro_fascia"
+  },
+  {
+    "id": "nerve_navigator",
+    "name": "Nerve Navigator",
+    "description": "Unlock the Nerve Navigator badge by demonstrating excellence in nerve navigator.",
+    "icon": "nerve_navigator.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 58,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/nerve_navigator"
+  },
+  {
+    "id": "neuro_dominator",
+    "name": "Neuro Dominator",
+    "description": "Unlock the Neuro Dominator badge by demonstrating excellence in neuro dominator.",
+    "icon": "neuro_dominator.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 59,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/neuro_dominator"
+  },
+  {
+    "id": "palpation_pro",
+    "name": "Palpation Pro",
+    "description": "Unlock the Palpation Pro badge by demonstrating excellence in palpation pro.",
+    "icon": "palpation_pro.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 60,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/palpation_pro"
+  },
+  {
+    "id": "palpation_pro_2",
+    "name": "Palpation Pro 2",
+    "description": "Unlock the Palpation Pro 2 badge by demonstrating excellence in palpation pro 2.",
+    "icon": "palpation_pro_2.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 61,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/palpation_pro_2"
+  },
+  {
+    "id": "pathology_adept",
+    "name": "Pathology Adept",
+    "description": "Unlock the Pathology Adept badge by demonstrating excellence in pathology adept.",
+    "icon": "pathology_adept.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 62,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/pathology_adept"
+  },
+  {
+    "id": "pathology_apprentice",
+    "name": "Pathology Apprentice",
+    "description": "Unlock the Pathology Apprentice badge by demonstrating excellence in pathology apprentice.",
+    "icon": "pathology_apprentice.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 63,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/pathology_apprentice"
+  },
+  {
+    "id": "pathology_pro",
+    "name": "Pathology Pro",
+    "description": "Unlock the Pathology Pro badge by demonstrating excellence in pathology pro.",
+    "icon": "pathology_pro.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 64,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/pathology_pro"
+  },
+  {
+    "id": "qi_flow_facilitator",
+    "name": "Qi Flow Facilitator",
+    "description": "Unlock the Qi Flow Facilitator badge by demonstrating excellence in qi flow facilitator.",
+    "icon": "qi_flow_facilitator.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 65,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/qi_flow_facilitator"
+  },
+  {
+    "id": "quiz_thousand_club",
+    "name": "Quiz Thousand Club",
+    "description": "Complete quiz-related achievements.",
+    "icon": "quiz_thousand_club.png",
+    "category": "Quiz",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Answer 1000 quiz questions.",
+    "display_order": 66,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "quiz"
+    ],
+    "url": "/badges/quiz_thousand_club"
+  },
+  {
+    "id": "shiatsu_sensei",
+    "name": "Shiatsu Sensei",
+    "description": "Unlock the Shiatsu Sensei badge by demonstrating excellence in shiatsu sensei.",
+    "icon": "shiatsu_sensei.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 67,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/shiatsu_sensei"
+  },
+  {
+    "id": "skeletal-scholar",
+    "name": "Skeletal-Scholar",
+    "description": "Unlock the Skeletal-Scholar badge by demonstrating excellence in skeletal-scholar.",
+    "icon": "skeletal-scholar.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 68,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/skeletal-scholar"
+  },
+  {
+    "id": "skeletal_scholar_2",
+    "name": "Skeletal Scholar 2",
+    "description": "Unlock the Skeletal Scholar 2 badge by demonstrating excellence in skeletal scholar 2.",
+    "icon": "skeletal_scholar_2.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 69,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/skeletal_scholar_2"
+  },
+  {
+    "id": "spinal_elite",
+    "name": "Spinal Elite",
+    "description": "Unlock the Spinal Elite badge by demonstrating excellence in spinal elite.",
+    "icon": "spinal_elite.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 70,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/spinal_elite"
+  },
+  {
+    "id": "sports_recovery_ace_ice",
+    "name": "Sports Recovery Ace Ice",
+    "description": "Unlock the Sports Recovery Ace Ice badge by demonstrating excellence in sports recovery ace ice.",
+    "icon": "sports_recovery_ace_ice.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 71,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/sports_recovery_ace_ice"
+  },
+  {
+    "id": "streak_20",
+    "name": "Streak 20",
+    "description": "Achieve a 20-day activity streak.",
+    "icon": "streak_20.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 20 consecutive days.",
+    "display_order": 72,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_20"
+  },
+  {
+    "id": "streak_200",
+    "name": "Streak 200",
+    "description": "Achieve a 200-day activity streak.",
+    "icon": "streak_200.png",
+    "category": "Streak",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 200 consecutive days.",
+    "display_order": 73,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_200"
+  },
+  {
+    "id": "streak_5",
+    "name": "Streak 5",
+    "description": "Achieve a 5-day activity streak.",
+    "icon": "streak_5.png",
+    "category": "Streak",
+    "difficulty": "easy",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 5 consecutive days.",
+    "display_order": 74,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_5"
+  },
+  {
+    "id": "streak_50",
+    "name": "Streak 50",
+    "description": "Achieve a 50-day activity streak.",
+    "icon": "streak_50.png",
+    "category": "Streak",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 50 consecutive days.",
+    "display_order": 75,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_50"
+  },
+  {
+    "id": "streak_500",
+    "name": "Streak 500",
+    "description": "Achieve a 500-day activity streak.",
+    "icon": "streak_500.png",
+    "category": "Streak",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "Log in or complete a session for 500 consecutive days.",
+    "display_order": 76,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "streak"
+    ],
+    "url": "/badges/streak_500"
+  },
+  {
+    "id": "stretch-specialist_2",
+    "name": "Stretch-Specialist 2",
+    "description": "Unlock the Stretch-Specialist 2 badge by demonstrating excellence in stretch-specialist 2.",
+    "icon": "stretch-specialist_2.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 77,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/stretch-specialist_2"
+  },
+  {
+    "id": "stretch_specialist",
+    "name": "Stretch Specialist",
+    "description": "Unlock the Stretch Specialist badge by demonstrating excellence in stretch specialist.",
+    "icon": "stretch_specialist.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 78,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/stretch_specialist"
+  },
+  {
+    "id": "summary",
+    "name": "Summary",
+    "description": "Unlock the Summary badge by demonstrating excellence in summary.",
+    "icon": "summary.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 79,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/summary"
+  },
+  {
+    "id": "swedish_specialist",
+    "name": "Swedish Specialist",
+    "description": "Unlock the Swedish Specialist badge by demonstrating excellence in swedish specialist.",
+    "icon": "swedish_specialist.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 80,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/swedish_specialist"
+  },
+  {
+    "id": "swedish_specialist_basic",
+    "name": "Swedish Specialist Basic",
+    "description": "Unlock the Swedish Specialist Basic badge by demonstrating excellence in swedish specialist basic.",
+    "icon": "swedish_specialist_basic.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 81,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/swedish_specialist_basic"
+  },
+  {
+    "id": "synapse_sage",
+    "name": "Synapse Sage",
+    "description": "Unlock the Synapse Sage badge by demonstrating excellence in synapse sage.",
+    "icon": "synapse_sage.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 82,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/synapse_sage"
+  },
+  {
+    "id": "therapeutic_titan_1",
+    "name": "Therapeutic Titan 1",
+    "description": "Unlock the Therapeutic Titan 1 badge by demonstrating excellence in therapeutic titan 1.",
+    "icon": "therapeutic_titan_1.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 83,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/therapeutic_titan_1"
+  },
+  {
+    "id": "therapeutic_titan_2",
+    "name": "Therapeutic Titan 2",
+    "description": "Unlock the Therapeutic Titan 2 badge by demonstrating excellence in therapeutic titan 2.",
+    "icon": "therapeutic_titan_2.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 84,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/therapeutic_titan_2"
+  },
+  {
+    "id": "therapeutic_titan_3",
+    "name": "Therapeutic Titan 3",
+    "description": "Unlock the Therapeutic Titan 3 badge by demonstrating excellence in therapeutic titan 3.",
+    "icon": "therapeutic_titan_3.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 85,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/therapeutic_titan_3"
+  },
+  {
+    "id": "thorax_titan",
+    "name": "Thorax Titan",
+    "description": "Unlock the Thorax Titan badge by demonstrating excellence in thorax titan.",
+    "icon": "thorax_titan.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 86,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/thorax_titan"
+  },
+  {
+    "id": "thorax_titan_2",
+    "name": "Thorax Titan 2",
+    "description": "Unlock the Thorax Titan 2 badge by demonstrating excellence in thorax titan 2.",
+    "icon": "thorax_titan_2.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 87,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/thorax_titan_2"
+  },
+  {
+    "id": "treatment_strategist_gold",
+    "name": "Treatment Strategist Gold",
+    "description": "Unlock the Treatment Strategist Gold badge by demonstrating excellence in treatment strategist gold.",
+    "icon": "treatment_strategist_gold.png",
+    "category": "Achievement",
+    "difficulty": "hard",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 88,
+    "theme_color": "#FFD700",
+    "is_active": true,
+    "tags": [
+      "gold",
+      "achievement"
+    ],
+    "url": "/badges/treatment_strategist_gold"
+  },
+  {
+    "id": "treatment_strategist_pink",
+    "name": "Treatment Strategist Pink",
+    "description": "Unlock the Treatment Strategist Pink badge by demonstrating excellence in treatment strategist pink.",
+    "icon": "treatment_strategist_pink.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 89,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/treatment_strategist_pink"
+  },
+  {
+    "id": "treatment_strategist_purple",
+    "name": "Treatment Strategist Purple",
+    "description": "Unlock the Treatment Strategist Purple badge by demonstrating excellence in treatment strategist purple.",
+    "icon": "treatment_strategist_purple.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 90,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/treatment_strategist_purple"
+  },
+  {
+    "id": "treatment_tactician",
+    "name": "Treatment Tactician",
+    "description": "Unlock the Treatment Tactician badge by demonstrating excellence in treatment tactician.",
+    "icon": "treatment_tactician.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 91,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/treatment_tactician"
+  },
+  {
+    "id": "trigger_champ",
+    "name": "Trigger Champ",
+    "description": "Unlock the Trigger Champ badge by demonstrating excellence in trigger champ.",
+    "icon": "trigger_champ.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 92,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/trigger_champ"
+  },
+  {
+    "id": "ultimate_anatomy",
+    "name": "Ultimate Anatomy",
+    "description": "Unlock the Ultimate Anatomy badge by demonstrating excellence in ultimate anatomy.",
+    "icon": "ultimate_anatomy.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 93,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/ultimate_anatomy"
+  },
+  {
+    "id": "vital_volume",
+    "name": "Vital Volume",
+    "description": "Unlock the Vital Volume badge by demonstrating excellence in vital volume.",
+    "icon": "vital_volume.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 94,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/vital_volume"
+  },
+  {
+    "id": "welcome",
+    "name": "Welcome",
+    "description": "Unlock the Welcome badge by demonstrating excellence in welcome.",
+    "icon": "welcome.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 95,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/welcome"
+  },
+  {
+    "id": "welcometrophy",
+    "name": "Welcometrophy",
+    "description": "Unlock the Welcometrophy badge by demonstrating excellence in welcometrophy.",
+    "icon": "welcometrophy.png",
+    "category": "Achievement",
+    "difficulty": "medium",
+    "date_created": "2025-05-27",
+    "is_limited_time": false,
+    "unlock_hint": "See badge description for details.",
+    "display_order": 96,
+    "theme_color": "#4A90E2",
+    "is_active": true,
+    "tags": [
+      "achievement"
+    ],
+    "url": "/badges/welcometrophy"
+  }
+]
