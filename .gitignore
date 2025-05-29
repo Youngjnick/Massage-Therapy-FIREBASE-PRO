@@ -1,0 +1,6 @@
+# Ignore config files with secrets
+serviceAccountKey.json
+firebaseConfig.js
+.env
+dist/
+node_modules
