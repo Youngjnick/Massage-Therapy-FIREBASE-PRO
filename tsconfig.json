@@ -6,9 +6,12 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src", "tests", "tools", "jest.global-mocks.js"],
+  "include": ["src", "tests", "tools", "jest.global-mocks.js", "extractVariantQuestions.js"],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",

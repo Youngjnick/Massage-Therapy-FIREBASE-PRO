@@ -1,3 +1,5 @@
+module.exports = {};
+
 jest.mock("firebase/auth", () => {
   const getAuth = jest.fn(() => ({}));
   const onAuthStateChanged = jest.fn();

@@ -4,10 +4,10 @@
  * @param {import('@playwright/test').FullConfig} config
  */
 export default async (config) => {
-  // Always use port 1234 for Playwright tests
-  const baseURL = `http://localhost:1234`;
+  // Always use port 5173 for Playwright tests
+  const baseURL = "http://localhost:5173";
   config.projects.forEach((project) => {
-    if (!project.use) project.use = {};
+    if (!project.use) {project.use = {};}
     project.use.baseURL = baseURL;
   });
   console.log(`[Playwright global-setup] baseURL set to: ${baseURL}`);

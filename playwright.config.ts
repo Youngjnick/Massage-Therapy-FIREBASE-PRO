@@ -2,7 +2,6 @@
 
 import { devices } from '@playwright/test';
 import { defineConfig } from '@playwright/test';
-import path from 'path';
 
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 const config = defineConfig({
@@ -10,7 +9,7 @@ const config = defineConfig({
   timeout: 30000,
   retries: 0,
   use: {
-    headless: false, // Set to true for CI and reliability
+    headless: true, // Set to true for CI and reliability
     // baseURL will be set dynamically in globalSetup
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
@@ -20,8 +19,8 @@ const config = defineConfig({
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
   ],
   webServer: {
-    command: 'npx vite --port 1234', // Start Vite on fixed port 1234
-    port: 1234, // Use the same port as app and tests
+    command: 'npx vite --port 5173', // Start Vite on default port 5173
+    port: 5173, // Use the same port as app and tests
     timeout: 300 * 1000,
     reuseExistingServer: !process.env.CI,
   },

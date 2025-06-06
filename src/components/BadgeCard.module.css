@@ -1,0 +1,34 @@
+.badgeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.badgeCard:focus {
+  outline: 2px solid #3A86FF;
+  box-shadow: 0 0 0 2px #FFD93D;
+}
+.badgeEarned {
+  background: #f6fff6;
+  border: 1.5px solid #6BCB77;
+}
+.badgeUnearned {
+  background: #f9f9f9;
+  border: 1.5px dashed #ccc;
+  opacity: 0.7;
+}
+.badgeImg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 2px;
+}
+.badgeName {
+  font-size: 11px;
+  text-align: center;
+  max-width: 70px;
+}
