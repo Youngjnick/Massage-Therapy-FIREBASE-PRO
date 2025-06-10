@@ -1,0 +1,26 @@
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0 1.5rem 0;
+  background: transparent;
+}
+
+.question-search-bar {
+  width: 320px;
+  max-width: 90vw;
+  padding: 0.7rem 1.2rem;
+  border-radius: 16px;
+  border: none;
+  background: rgba(30, 60, 40, 0.7);
+  color: #eafff2;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  outline: none;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.question-search-bar:focus {
+  background: rgba(80, 255, 180, 0.18);
+  box-shadow: 0 4px 24px rgba(80,255,180,0.10);
+}
