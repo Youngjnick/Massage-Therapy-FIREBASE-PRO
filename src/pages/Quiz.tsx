@@ -13,6 +13,14 @@ import { getUserStats } from '../stats/index';
 import { exportToCSV, exportToPDF } from '../utils/export';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
+import QuizOption from '../components/Quiz/QuizOption';
+import QuizStepper from '../components/Quiz/QuizStepper';
+import QuizActions from '../components/Quiz/QuizActions';
+import QuizFeedback from '../components/Quiz/QuizFeedback';
+import QuizExplanation from '../components/Quiz/QuizExplanation';
+import QuizSessionSummary from '../components/Quiz/QuizSessionSummary';
+import Modal from '../components/Quiz/Modal';
+import { shuffleArray } from '../utils/quizUtils';
 import { BASE_URL } from '../utils/baseUrl';
 
 const Quiz: React.FC = () => {
@@ -124,16 +132,6 @@ const Quiz: React.FC = () => {
     return qs;
   };
   const quizQuestions = getFilteredSortedQuestions();
-
-  // Utility: Fisher-Yates shuffle
-  function shuffleArray<T>(array: T[]): T[] {
-    const arr = [...array];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }
 
   // Advanced adaptive difficulty: factor in speed, streak, and accuracy
   const getNextQuestionIndex = (wasCorrect: boolean) => {
@@ -559,75 +557,18 @@ const Quiz: React.FC = () => {
     }, [showResults]);
     const avgTime = questionTimes.length ? (questionTimes.reduce((a, b) => a + b, 0) / questionTimes.length).toFixed(2) : 'N/A';
     return (
-      <div className="glass-card" style={{ maxWidth: 700, margin: '2rem auto' }}>
-        <h2>Quiz Results</h2>
-        <p>Your score: {correct} / {activeQuestions.length}</p>
-        <div style={{ margin: '16px 0' }}>
-          <strong>Average Time per Question:</strong> {avgTime} sec<br />
-          <strong>Longest Correct Streak:</strong> {maxStreak}
-        </div>
-        <div style={{ margin: '16px 0' }}>
-          <strong>Accuracy by Topic:</strong>
-          <ul>
-            {Object.entries(topicStats).map(([topic, stat]) => (
-              <li key={topic}>{topic}: {stat.correct} / {stat.total} ({((stat.correct / stat.total) * 100).toFixed(0)}%)</li>
-            ))}
-          </ul>
-        </div>
-        <button onClick={resetQuiz}>Try Another Quiz</button>
-        <ul style={{ marginTop: 24 }}>
-          {activeQuestions.map((q: any, i) => (
-            <li key={q.id} style={{ marginBottom: 16 }}>
-              <strong>{q.text}</strong><br />
-              <span>Your answer: {userAnswers[i] !== undefined ? (shuffledOptions[i] || q.options)[userAnswers[i]] : 'No answer'}</span><br />
-              <span>Correct answer: {q.correctAnswer}</span>
-              {q.short_explanation && (
-                <div style={{ color: '#059669', marginTop: 4 }}>Explanation: {q.short_explanation}</div>
-              )}
-              {q.long_explanation && (
-                <div style={{ color: '#2563eb', marginTop: 4 }}>More Info: {q.long_explanation}</div>
-              )}
-              {q.clinical_application && (
-                <div style={{ color: '#64748b', marginTop: 4 }}>Clinical Application: {q.clinical_application}</div>
-              )}
-              <div style={{ color: '#64748b', fontSize: 13 }}>Time: {questionTimes[i] ? questionTimes[i].toFixed(2) : 'N/A'} sec</div>
-              <button onClick={() => toggleBookmark(q.id)} style={{ marginLeft: 8 }}>
-                {bookmarks.includes(q.id) ? <FaBookmark color="#f59e42" /> : <FaRegBookmark />}
-              </button>
-            </li>
-          ))}
-        </ul>
-        <div style={{ marginTop: 32 }}>
-          <button onClick={() => setShowBookmarks(b => !b)}>
-            {showBookmarks ? 'Hide' : 'Show'} Bookmarked Questions
-          </button>
-          {showBookmarks && (
-            <ul style={{ marginTop: 16 }}>
-              {quizQuestions.filter(q => bookmarks.includes(q.id)).map(q => (
-                <li key={q.id}>
-                  <strong>{q.text}</strong>
-                  <button onClick={() => toggleBookmark(q.id)} style={{ marginLeft: 8 }}>
-                    <FaBookmark color="#f59e42" /> Remove
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-        <div style={{ marginTop: 32 }}>
-          <h3>Feedback</h3>
-          <textarea value={feedback} onChange={e => setFeedback(e.target.value)} placeholder="Your feedback..." style={{ width: '100%', minHeight: 60 }} />
-          <button onClick={handleFeedback} disabled={!feedback}>Send Feedback</button>
-          {feedbackSent && <span style={{ color: '#059669', marginLeft: 8 }}>Thank you!</span>}
-        </div>
-        {/* Export buttons */}
-        <div style={{ marginTop: 24, display: 'flex', gap: 16 }}>
-          <button onClick={handleExportBookmarks}>Export Bookmarks (CSV)</button>
-          <button onClick={handleExportStats}>Export Review History (CSV)</button>
-          <button onClick={handleExportBookmarksPDF}>Export Bookmarks (PDF)</button>
-          <button onClick={handleExportStatsPDF}>Export Review History (PDF)</button>
-        </div>
-      </div>
+      <QuizSessionSummary
+        score={correct}
+        total={activeQuestions.length}
+        avgTime={avgTime}
+        maxStreak={maxStreak}
+        topicStats={topicStats}
+        onClose={() => setShowResults(false)}
+        onRetry={resetQuiz}
+        questions={activeQuestions}
+        userAnswers={userAnswers}
+        shuffledOptions={shuffledOptions}
+      />
     );
   }
 
@@ -731,24 +672,16 @@ const Quiz: React.FC = () => {
                 </div>
               )}
               {/* Progress Dots/Stepper */}
-              <div className="quiz-stepper" aria-label="Question Progress" role="group">
-                {activeQuestions.map((_, idx) => (
-                  <button
-                    key={idx}
-                    className={
-                      'quiz-stepper-dot' +
-                      (idx === current ? ' active' : '') +
-                      (userAnswers[idx] !== undefined ? ' answered' : '')
-                    }
-                    aria-label={`Go to question ${idx + 1}`}
-                    onClick={() => setCurrent(idx)}
-                  />
-                ))}
-              </div>
+              <QuizStepper
+                total={activeQuestions.length}
+                current={current}
+                answered={userAnswers.map(a => a !== undefined)}
+                onStep={setCurrent}
+              />
               <ul className="quiz-options">
                 {(shuffledOptions[current] || q.options).map((opt: string, i: number) => {
                   const correctOpt = (shuffledOptions[current] || q.options).indexOf(q.correctAnswer);
-                  let optionClass = 'quiz-option';
+                  let optionClass = '';
                   if (answered) {
                     if (i === correctOpt) optionClass += ' correct';
                     else if (userAnswers[current] === i) optionClass += ' incorrect';
@@ -757,67 +690,47 @@ const Quiz: React.FC = () => {
                   }
                   return (
                     <li key={i}>
-                      <label className={optionClass} style={{ width: '100%' }}>
-                        <input
-                          ref={(el) => { optionRefs.current[i] = el || null; }}
-                          type="radio"
-                          name={`q${current}`}
-                          checked={userAnswers[current] === i}
-                          onChange={() => handleAnswer(i)}
-                          aria-label={`Option ${String.fromCharCode(65 + i)}: ${opt}`}
-                          style={{ marginRight: 12 }}
-                          disabled={answered}
-                        />
-                        <span style={{ fontWeight: 600, marginRight: 8 }}>{String.fromCharCode(65 + i)}.</span> {opt}
+                      <QuizOption
+                        label={String.fromCharCode(65 + i)}
+                        option={opt}
+                        selected={userAnswers[current] === i}
+                        disabled={answered}
+                        onSelect={() => handleAnswer(i)}
+                        className={optionClass}
+                        inputRef={optionRefs.current[i] ? { current: optionRefs.current[i] } : undefined}
+                      >
                         <button type="button" onClick={e => { e.stopPropagation(); toggleBookmark(q.id); }} style={{ marginLeft: 8, background: 'none', border: 'none', cursor: 'pointer' }} aria-label={bookmarks.includes(q.id) ? 'Remove flag for review' : 'Flag for review'}>
                           {bookmarks.includes(q.id) ? <FaBookmark color="#f59e42" /> : <FaRegBookmark />}
                         </button>
                         <button type="button" onClick={e => { e.stopPropagation(); handleReportError(q.id); }} style={{ marginLeft: 4, background: 'none', border: 'none', cursor: 'pointer' }} aria-label="Report Error">
                           <FaFlag color="#ef4444" />
                         </button>
-                      </label>
+                      </QuizOption>
                     </li>
                   );
                 })}
               </ul>
-              {showInstantFeedback && answerFeedback && (
-                <div className="quiz-feedback" style={{ color: answerFeedback === 'Correct!' ? '#059669' : '#ef4444' }}>{answerFeedback}</div>
-              )}
+              <QuizFeedback show={showInstantFeedback} feedback={answerFeedback} />
               {showExplanations && (
-                <>
-                  {q.short_explanation && (
-                    <div className="quiz-explanation">Quick Tip: {q.short_explanation}</div>
-                  )}
-                  {q.long_explanation && (
-                    <div style={{ color: '#2563eb', marginTop: 8, fontSize: 15 }}>More Info: {q.long_explanation}</div>
-                  )}
-                  {q.clinical_application && (
-                    <div style={{ color: '#64748b', marginTop: 8, fontSize: 14 }}>Clinical Application: {q.clinical_application}</div>
-                  )}
-                </>
+                <QuizExplanation
+                  shortExplanation={q.short_explanation}
+                  longExplanation={q.long_explanation}
+                  clinicalApplication={q.clinical_application}
+                  sourceReference={q.source_reference}
+                  tags={q.tags}
+                  keywords={q.keywords}
+                />
               )}
-              {q.source_reference && (
-                <div style={{ color: '#a16207', marginTop: 8, fontSize: 13 }}>Source: {q.source_reference}</div>
-              )}
-              {(q.tags || q.keywords) && (
-                <div style={{ color: '#64748b', marginTop: 8, fontSize: 13 }}>
-                  {q.tags && q.tags.length > 0 && (
-                    <span>Tags: {q.tags.join(', ')} </span>
-                  )}
-                  {q.keywords && q.keywords.length > 0 && (
-                    <span>Keywords: {q.keywords.join(', ')}</span>
-                  )}
-                </div>
-              )}
-              <div className="quiz-actions">
-                <button onClick={prev} disabled={current === 0}>Previous</button>
-                {current < activeQuestions.length - 1 ? (
-                  <button onClick={next} disabled={!answered}>Next</button>
-                ) : (
-                  <button onClick={finishQuiz} disabled={!answered}>Finish</button>
-                )}
-                <button onClick={resetQuiz}>Cancel</button>
-              </div>
+              {/* Replace inline quiz-actions with: */}
+              <QuizActions
+                onPrev={prev}
+                onNext={next}
+                onFinish={finishQuiz}
+                onCancel={resetQuiz}
+                current={current}
+                total={activeQuestions.length}
+                answered={answered}
+              />
             </div>
           </motion.div>
         </AnimatePresence>
@@ -827,16 +740,12 @@ const Quiz: React.FC = () => {
         <div className="quiz-progress-bar-inner" style={{ width: `${progress}%` }} />
       </div>
       {/* Session summary modal placeholder */}
-      {showResults && (
-        <div className="modal-summary">
-          <div>
-            <h3>Session Summary</h3>
-            {/* TODO: Add charts for accuracy by topic, time per question, streaks, suggested focus */}
-            <div>Charts and insights coming soon!</div>
-            <button onClick={() => setShowResults(false)}>Close</button>
-          </div>
-        </div>
-      )}
+      <Modal open={showResults} onClose={() => setShowResults(false)}>
+        <h3>Session Summary</h3>
+        {/* TODO: Add charts for accuracy by topic, time per question, streaks, suggested focus */}
+        <div>Charts and insights coming soon!</div>
+        <button onClick={() => setShowResults(false)}>Close</button>
+      </Modal>
     </div>
   );
 };
