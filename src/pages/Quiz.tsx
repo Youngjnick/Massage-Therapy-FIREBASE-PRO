@@ -20,8 +20,14 @@ import QuizFeedback from '../components/Quiz/QuizFeedback';
 import QuizExplanation from '../components/Quiz/QuizExplanation';
 import QuizSessionSummary from '../components/Quiz/QuizSessionSummary';
 import Modal from '../components/Quiz/Modal';
+refactor/modularize-app
+import QuizBookmarksPanel from '../components/Quiz/QuizBookmarksPanel';
+import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
+main
 import { shuffleArray } from '../utils/quizUtils';
 import { BASE_URL } from '../utils/baseUrl';
+import QuizStartForm from '../components/Quiz/QuizStartForm';
+import QuizStartControls from '../components/Quiz/QuizStartControls';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -460,60 +466,29 @@ const Quiz: React.FC = () => {
     return (
       <div className="glass-card" style={{ maxWidth: 600, margin: '2rem auto' }}>
         <h2>Start a Quiz</h2>
-        <form style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); startQuiz(); }}>
-          <label>
-            Topic:
-            <select value={selectedTopic} onChange={e => setSelectedTopic(e.target.value)}>
-              {availableTopics.map(topic => (
-                <option key={topic} value={topic}>{topic}</option>
-              ))}
-            </select>
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            Quiz Length:
-            <input
-              type="number"
-              min={1}
-              max={filteredQuestions.length}
-              value={quizLength}
-              onChange={e => setQuizLength(Number(e.target.value))}
-              style={{ width: 60, marginLeft: 4 }}
-            />
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            <input type="checkbox" checked={randomizeQuestions} onChange={e => setRandomizeQuestions(e.target.checked)} /> Randomize Questions
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            <input type="checkbox" checked={randomizeOptions} onChange={e => setRandomizeOptions(e.target.checked)} /> Randomize Options
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            <input type="checkbox" checked={showInstantFeedback} onChange={e => setShowInstantFeedback(e.target.checked)} /> Instant Feedback
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            Filter:
-            <select value={filter} onChange={e => setFilter(e.target.value as any)}>
-              <option value="all">All</option>
-              <option value="incorrect">Incorrect</option>
-              <option value="unseen">Unseen</option>
-              <option value="difficult">Difficult</option>
-              <option value="tag">By Tag</option>
-              <option value="slow">Slow (time &gt; 30s)</option>
-            </select>
-            {filter === 'tag' && (
-              <input type="text" value={filterTag} onChange={e => setFilterTag(e.target.value)} placeholder="Tag..." style={{ marginLeft: 4, width: 80 }} />
-            )}
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            Sort:
-            <select value={sort} onChange={e => setSort(e.target.value as any)}>
-              <option value="default">Default</option>
-              <option value="accuracy">By Accuracy</option>
-              <option value="time">By Time</option>
-              <option value="difficulty">By Difficulty</option>
-            </select>
-          </label>
-          <button type="submit" style={{ marginLeft: '1rem' }}>Start Quiz</button>
-        </form>
+        <QuizStartForm
+          availableTopics={availableTopics}
+          selectedTopic={selectedTopic}
+          setSelectedTopic={setSelectedTopic}
+          quizLength={quizLength}
+          setQuizLength={setQuizLength}
+          maxQuizLength={filteredQuestions.length}
+          randomizeQuestions={randomizeQuestions}
+          setRandomizeQuestions={setRandomizeQuestions}
+          randomizeOptions={randomizeOptions}
+          setRandomizeOptions={setRandomizeOptions}
+          sort={sort}
+          setSort={(val) => setSort(val as typeof sort)}
+          onStart={startQuiz}
+        />
+        <QuizStartControls
+          filter={filter}
+          setFilter={(val) => setFilter(val as typeof filter)}
+          filterTag={filterTag}
+          setFilterTag={setFilterTag}
+          showInstantFeedback={showInstantFeedback}
+          setShowInstantFeedback={setShowInstantFeedback}
+        />
       </div>
     );
   }
@@ -599,40 +574,16 @@ const Quiz: React.FC = () => {
       </button>
       <h2 style={{ marginBottom: 8 }}>Quiz: {selectedTopic}</h2>
       {/* Editable bookmarks list modal/panel */}
-      {showBookmarks && (
-        <div style={{ position: 'absolute', top: 56, right: 16, background: 'rgba(255,255,255,0.95)', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.12)', padding: 20, minWidth: 320, zIndex: 20 }}>
-          <h3 style={{ marginTop: 0 }}>Bookmarked Questions</h3>
-          {bookmarks.length === 0 ? (
-            <div style={{ color: '#64748b' }}>No bookmarks yet.</div>
-          ) : (
-            <ul style={{ maxHeight: 300, overflowY: 'auto', padding: 0, margin: 0, listStyle: 'none' }}>
-              {quizQuestions.filter(q => bookmarks.includes(q.id)).map(q => (
-                <li key={q.id} style={{ marginBottom: 12, display: 'flex', alignItems: 'center' }}>
-                  <span style={{ flex: 1 }}>{q.text}</span>
-                  <button onClick={() => toggleBookmark(q.id)} style={{ marginLeft: 8, background: 'none', border: 'none', cursor: 'pointer' }}>
-                    <FaBookmark color="#f59e42" /> Remove
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
+      <QuizBookmarksPanel
+        show={showBookmarks}
+        bookmarks={bookmarks}
+        quizQuestions={quizQuestions}
+        onToggleBookmark={toggleBookmark}
+        onClose={() => setShowBookmarks(false)}
+      />
       {showConfetti && <Confetti width={width} height={height} recycle={false} numberOfPieces={200} />}
       {/* Topic Progress Bars */}
-      {topicStats && Object.entries(topicStats).length > 0 && (
-        <div style={{display:'flex',gap:16,marginBottom:12,flexWrap:'wrap'}}>
-          {Object.entries(topicStats).map(([topic,stat]) => (
-            <div key={topic} style={{minWidth:120}}>
-              <div style={{fontWeight:600}}>{topic}</div>
-              <div style={{height:8,background:'#e5e7eb',borderRadius:4,margin:'4px 0',position:'relative'}}>
-                <div style={{width:`${stat.total?((stat.correct/stat.total)*100):0}%`,height:'100%',background:'#3b82f6',borderRadius:4,transition:'width 0.3s'}} />
-              </div>
-              <div style={{fontSize:12}}>{stat.correct} / {stat.total} correct</div>
-            </div>
-          ))}
-        </div>
-      )}
+      <QuizTopicProgress topicStats={topicStats} />
       {/* Shake animation on question card */}
       <div className={shake ? 'shake' : ''}>
         <AnimatePresence mode="wait" initial={false}>
