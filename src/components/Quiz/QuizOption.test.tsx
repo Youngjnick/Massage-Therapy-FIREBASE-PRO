@@ -1,8 +1,12 @@
 import React from 'react';
-import { render, screen, fireEvent } from '../../utils/testUtils';
+import { render, screen, fireEvent } from '@testing-library/react';
 import QuizOption from './QuizOption';
 
 describe('QuizOption', () => {
+  beforeAll(() => { console.log('Starting QuizOption tests...'); });
+  beforeEach(() => { console.log('Running next QuizOption test...'); });
+  afterAll(() => { console.log('Finished QuizOption tests.'); });
+
   it('renders label and option', () => {
     render(
       <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={jest.fn()} />
