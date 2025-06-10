@@ -19,6 +19,7 @@ import QuizActions from '../components/Quiz/QuizActions';
 import QuizFeedback from '../components/Quiz/QuizFeedback';
 import QuizExplanation from '../components/Quiz/QuizExplanation';
 import QuizSessionSummary from '../components/Quiz/QuizSessionSummary';
+import Modal from '../components/Quiz/Modal';
 import { shuffleArray } from '../utils/quizUtils';
 
 const Quiz: React.FC = () => {
@@ -738,16 +739,12 @@ const Quiz: React.FC = () => {
         <div className="quiz-progress-bar-inner" style={{ width: `${progress}%` }} />
       </div>
       {/* Session summary modal placeholder */}
-      {showResults && (
-        <div className="modal-summary">
-          <div>
-            <h3>Session Summary</h3>
-            {/* TODO: Add charts for accuracy by topic, time per question, streaks, suggested focus */}
-            <div>Charts and insights coming soon!</div>
-            <button onClick={() => setShowResults(false)}>Close</button>
-          </div>
-        </div>
-      )}
+      <Modal open={showResults} onClose={() => setShowResults(false)}>
+        <h3>Session Summary</h3>
+        {/* TODO: Add charts for accuracy by topic, time per question, streaks, suggested focus */}
+        <div>Charts and insights coming soon!</div>
+        <button onClick={() => setShowResults(false)}>Close</button>
+      </Modal>
     </div>
   );
 };
