@@ -4,9 +4,6 @@ import { Question } from '../types/index';
 import { FaRegBookmark, FaBookmark, FaBookOpen, FaFlag } from 'react-icons/fa';
 import { addBookmark, getBookmarks, deleteBookmark } from '../bookmarks/index';
 import { logError, logFeedback } from '../errors/index';
-import { db } from '../firebase/firebaseConfig';
-import { motion, AnimatePresence } from 'framer-motion';
-import { getUserSettings } from '../userSettings/index';
 import { getAuth } from 'firebase/auth';
 import { recordUserInteraction } from '../stats/index';
 import { getUserStats } from '../stats/index';
@@ -14,6 +11,8 @@ import { exportToCSV, exportToPDF } from '../utils/export';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 import { BASE_URL } from '../utils/baseUrl';
+import { getUserSettings } from '../userSettings';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -136,7 +135,7 @@ const Quiz: React.FC = () => {
   }
 
   // Advanced adaptive difficulty: factor in speed, streak, and accuracy
-  const getNextQuestionIndex = (wasCorrect: boolean) => {
+  const getNextQuestionIndex = () => {
     if (!activeQuestions[current]?.difficulty) return current + 1;
     const currentDifficulty = activeQuestions[current].difficulty;
     const allDifficulties = Array.from(new Set(activeQuestions.map(q => q.difficulty).filter(Boolean)));
@@ -159,12 +158,6 @@ const Quiz: React.FC = () => {
       }
     }
     if (streak >= 3 && targetIdx < difficulties.length - 1) targetIdx++;
-    // 3. Accuracy: if accuracy < 60%, try easier; if >90%, try harder
-    const answeredCount = userAnswers.filter(a => a !== undefined).length;
-    const correctCount = userAnswers.filter((a, i) => a !== undefined && (shuffledOptions[i] || activeQuestions[i].options)[a] === activeQuestions[i].correctAnswer).length;
-    const accuracy = answeredCount ? correctCount / answeredCount : 1;
-    if (accuracy < 0.6 && targetIdx > 0) targetIdx--;
-    if (accuracy > 0.9 && targetIdx < difficulties.length - 1) targetIdx++;
     // Clamp
     targetIdx = Math.max(0, Math.min(targetIdx, difficulties.length - 1));
     const targetDifficulty = difficulties[targetIdx];
@@ -215,12 +208,10 @@ const Quiz: React.FC = () => {
       return copy;
     });
     setAnswered(true);
-    let wasCorrect = false;
     const correctOpt = (shuffledOptions[current] || q.options).indexOf(q.correctAnswer);
     if (showInstantFeedback) {
       if (idx === correctOpt) {
         setAnswerFeedback('Correct!');
-        wasCorrect = true;
         if (streak + 1 >= 3) {
           setShowConfetti(true);
           setTimeout(() => setShowConfetti(false), 1800);
@@ -241,7 +232,7 @@ const Quiz: React.FC = () => {
         if (reviewQueue.length === 1) setShowReview(false);
         return;
       }
-      const nextIdx = getNextQuestionIndex(wasCorrect);
+      const nextIdx = getNextQuestionIndex();
       if (nextIdx < activeQuestions.length) {
         setCurrent(nextIdx);
       } else {
@@ -382,7 +373,7 @@ const Quiz: React.FC = () => {
         return copy;
       });
     }
-    // eslint-disable-next-line
+     
   }, [answered]);
 
   const handleReportError = (questionId: string) => {
@@ -443,7 +434,7 @@ const Quiz: React.FC = () => {
   // Adaptive topic mix: increase frequency of weak topics
   const getWeakTopics = () => {
     return Object.entries(topicStats)
-      .filter(([t, stat]) => stat.total >= 2 && (stat.correct / stat.total) < 0.7)
+      .filter(([, stat]) => stat.total >= 2 && (stat.correct / stat.total) < 0.7)
       .map(([t]) => t);
   };
 
@@ -555,7 +546,7 @@ const Quiz: React.FC = () => {
         }
       });
       // Only run once per quiz result
-      // eslint-disable-next-line
+       
     }, [showResults]);
     const avgTime = questionTimes.length ? (questionTimes.reduce((a, b) => a + b, 0) / questionTimes.length).toFixed(2) : 'N/A';
     return (
@@ -633,7 +624,7 @@ const Quiz: React.FC = () => {
 
   // Quiz in progress
   const progress = activeQuestions.length > 0 ? ((current + 1) / activeQuestions.length) * 100 : 0;
-  // Calculate streak and accuracy
+  // Calculate streak
   let streak = 0;
   for (let i = current; i >= 0; i--) {
     if (userAnswers[i] !== undefined) {
@@ -642,9 +633,6 @@ const Quiz: React.FC = () => {
       else break;
     }
   }
-  const answeredCount = userAnswers.filter(a => a !== undefined).length;
-  const correctCount = userAnswers.filter((a, i) => a !== undefined && (shuffledOptions[i] || activeQuestions[i].options)[a] === activeQuestions[i].correctAnswer).length;
-  const accuracy = answeredCount ? (correctCount / answeredCount) : 1;
 
   return (
     <div className="quiz-card">

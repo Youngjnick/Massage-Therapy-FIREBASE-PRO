@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import { app } from '../firebase/firebaseConfig';
-import { getUserSettings, setUserSettings, UserSettings } from '../userSettings';
+import { getUserSettings, setUserSettings } from '../userSettings';
 import { BASE_URL } from '../utils/baseUrl';
 
 const auth = getAuth(app);
@@ -51,8 +51,8 @@ const Profile: React.FC = () => {
   const handleSignIn = async () => {
     try {
       await signInWithPopup(auth, provider);
-    } catch (err) {
-      alert('Sign in failed');
+    } catch {
+      // Sign in failed, handle error
     }
   };
   const handleSignOut = async () => {

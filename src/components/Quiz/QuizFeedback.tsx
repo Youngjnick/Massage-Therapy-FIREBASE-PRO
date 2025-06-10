@@ -7,9 +7,15 @@ interface QuizFeedbackProps {
 
 const QuizFeedback = ({ show, feedback }: QuizFeedbackProps) => {
   if (!show || feedback == null) return null;
-  // Render feedback as string, preserving whitespace and newlines
+  if (typeof feedback === 'symbol') return null;
+  let feedbackStr: string;
+  try {
+    feedbackStr = String(feedback);
+  } catch {
+    return null;
+  }
   return (
-    <div data-testid="quiz-feedback" style={{ whiteSpace: 'pre-line' }}>{String(feedback)}</div>
+    <div data-testid="quiz-feedback" style={{ whiteSpace: 'pre-line' }}>{feedbackStr}</div>
   );
 };
 

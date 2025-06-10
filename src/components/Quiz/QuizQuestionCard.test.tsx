@@ -16,9 +16,6 @@ describe('QuizQuestionCard', () => {
         answered={false}
         handleAnswer={() => {}}
         optionRefs={{ current: [] }}
-        bookmarks={[]}
-        toggleBookmark={() => {}}
-        handleReportError={() => {}}
         showInstantFeedback={false}
         answerFeedback={null}
         showExplanations={false}

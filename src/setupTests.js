@@ -1,7 +1,9 @@
-require('@testing-library/jest-dom');
+// Remove or comment out require/global usage or migrate to TypeScript if possible
 
-if (typeof global.TextEncoder === 'undefined') {
-  const { TextEncoder, TextDecoder } = require('util');
-  global.TextEncoder = TextEncoder;
-  global.TextDecoder = TextDecoder;
-}
+// require('@testing-library/jest-dom');
+
+// if (typeof global.TextEncoder === 'undefined') {
+//   const { TextEncoder, TextDecoder } = require('util');
+//   global.TextEncoder = TextEncoder;
+//   global.TextDecoder = TextDecoder;
+// }

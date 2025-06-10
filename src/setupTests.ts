@@ -1,9 +1,6 @@
-// @ts-ignore
 import { TextEncoder, TextDecoder } from 'util';
 if (typeof global.TextEncoder === 'undefined') {
-  // @ts-ignore
-  global.TextEncoder = TextEncoder;
-  // @ts-ignore
-  global.TextDecoder = TextDecoder;
+  global.TextEncoder = TextEncoder as unknown as typeof global.TextEncoder;
+  global.TextDecoder = TextDecoder as unknown as typeof global.TextDecoder;
 }
 import '@testing-library/jest-dom';

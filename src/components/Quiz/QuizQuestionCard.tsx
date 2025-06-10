@@ -8,14 +8,14 @@ interface QuizQuestionCardProps {
   answered: boolean;
   handleAnswer: (idx: number) => void;
   optionRefs: React.MutableRefObject<(HTMLInputElement | null)[]>;
+  showExplanations: boolean;
+  shuffledOptions: { [key: number]: string[] };
+  showInstantFeedback: boolean;
+  answerFeedback: string | null;
+  showReview: boolean;
   bookmarks: string[];
   toggleBookmark: (id: string) => void;
   handleReportError: (id: string) => void;
-  showInstantFeedback: boolean;
-  answerFeedback: string | null;
-  showExplanations: boolean;
-  showReview: boolean;
-  shuffledOptions: { [key: number]: string[] };
 }
 
 const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
@@ -25,14 +25,14 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   answered,
   handleAnswer,
   optionRefs,
+  showExplanations,
+  shuffledOptions,
+  showInstantFeedback,
+  answerFeedback,
+  showReview,
   bookmarks,
   toggleBookmark,
   handleReportError,
-  showInstantFeedback,
-  answerFeedback,
-  showExplanations,
-  showReview,
-  shuffledOptions,
 }) => (
   <div>
     <div style={{ fontWeight: 600, marginBottom: 8 }}>{q.text}</div>
@@ -63,16 +63,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
         );
       })}
     </ul>
-    {/* <QuizFeedback show={showInstantFeedback} feedback={answerFeedback} /> */}
     {showExplanations && (
-      // <QuizExplanation
-      //   shortExplanation={q.short_explanation}
-      //   longExplanation={q.long_explanation}
-      //   clinicalApplication={q.clinical_application}
-      //   sourceReference={q.source_reference}
-      //   tags={q.tags}
-      //   keywords={q.keywords}
-      // />
       <div>
         {q.short_explanation && <div>{q.short_explanation}</div>}
         {q.long_explanation && <div>{q.long_explanation}</div>}
@@ -82,15 +73,6 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
         {q.keywords && <div>{q.keywords}</div>}
       </div>
     )}
-    {/* <QuizActions
-      onPrev={() => {}}
-      onNext={() => {}}
-      onFinish={() => {}}
-      onCancel={() => {}}
-      current={current}
-      total={1}
-      answered={answered}
-    /> */}
     <div>
       <button onClick={() => {}}>Prev</button>
       <button onClick={() => {}}>Next</button>

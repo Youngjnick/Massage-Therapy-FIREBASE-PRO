@@ -58,4 +58,52 @@ describe('QuizFeedback', () => {
     expect(feedbackDiv).toBeInTheDocument();
     expect(feedbackDiv.textContent).toBe('Line 1\nLine 2');
   });
+
+  it('renders nothing when feedback is undefined', () => {
+    const { container } = render(<QuizFeedback show={true} feedback={undefined as any} />);
+    expect(container.textContent).toBe("");
+  });
+
+  it('renders nothing when feedback is an empty string', () => {
+    const { container } = render(<QuizFeedback show={true} feedback={''} />);
+    expect(container.textContent).toBe("");
+  });
+
+  it('renders boolean feedback as string', () => {
+    render(<QuizFeedback show={true} feedback={true as any} />);
+    expect(screen.getByText('true')).toBeInTheDocument();
+  });
+
+  it('renders object feedback as [object Object]', () => {
+    render(<QuizFeedback show={true} feedback={{ foo: 'bar' } as any} />);
+    expect(screen.getByText('[object Object]')).toBeInTheDocument();
+  });
+
+  it('renders array feedback as comma-separated string', () => {
+    render(<QuizFeedback show={true} feedback={['a', 'b', 1] as any} />);
+    expect(screen.getByText('a,b,1')).toBeInTheDocument();
+  });
+
+  it('renders nothing or throws if feedback is a React element', () => {
+    // Should not render the element as feedback text
+    const { container } = render(<QuizFeedback show={true} feedback={<span>Element</span> as any} />);
+    // Should not find the text 'Element' as plain text
+    expect(container.textContent).not.toBe('Element');
+  });
+
+  it('handles symbol feedback gracefully', () => {
+    const symbol = Symbol('sym');
+    render(<QuizFeedback show={true} feedback={symbol as any} />);
+    // Symbol coerces to undefined string, so nothing should be rendered
+    expect(screen.queryByTestId('quiz-feedback')).not.toBeInTheDocument();
+  });
+
+  it('handles function feedback gracefully', () => {
+    const fn = function fn() { return 'hi'; };
+    render(<QuizFeedback show={true} feedback={fn as any} />);
+    // Function coerces to string with newlines/indentation, so use a matcher that ignores whitespace
+    const feedbackDiv = screen.getByTestId('quiz-feedback');
+    expect(feedbackDiv).toBeInTheDocument();
+    expect(feedbackDiv.textContent?.replace(/\s/g, '')).toBe(fn.toString().replace(/\s/g, ''));
+  });
 });
