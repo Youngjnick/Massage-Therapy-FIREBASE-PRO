@@ -9,10 +9,6 @@ export default defineConfig({
     outDir: 'dist',
   },
   server: {
-refactor/modularize-app
-
-    historyApiFallback: true,
-main
   },
   appType: 'spa',
 });
