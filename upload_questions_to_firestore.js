@@ -1,12 +1,12 @@
 // upload_questions_to_firestore.js
 // Usage: node upload_questions_to_firestore.js
 
-const fs = require('fs');
-const path = require('path');
-const admin = require('firebase-admin');
+import fs from 'fs';
+import path from 'path';
+import admin from 'firebase-admin';
+import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
 
 // Initialize Firebase Admin
-const serviceAccount = require('./serviceAccountKey.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });

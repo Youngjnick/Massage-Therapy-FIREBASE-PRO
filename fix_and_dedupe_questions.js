@@ -1,6 +1,5 @@
-// fix_and_dedupe_questions.js
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const walk = (dir, filelist = []) => {
   fs.readdirSync(dir).forEach(file => {
