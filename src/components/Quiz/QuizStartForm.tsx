@@ -2,6 +2,7 @@ import React from 'react';
 import QuizSortSelect from './QuizSortSelect';
 import QuizTopicSelect from './QuizTopicSelect';
 import QuizLengthInput from './QuizLengthInput';
+import QuizRandomizeOptions from './QuizRandomizeOptions';
 
 interface QuizStartFormProps {
   availableTopics: string[];
@@ -45,12 +46,12 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
       setQuizLength={setQuizLength}
       maxQuizLength={maxQuizLength}
     />
-    <label style={{ marginLeft: '1rem' }}>
-      <input type="checkbox" checked={randomizeQuestions} onChange={e => setRandomizeQuestions(e.target.checked)} /> Randomize Questions
-    </label>
-    <label style={{ marginLeft: '1rem' }}>
-      <input type="checkbox" checked={randomizeOptions} onChange={e => setRandomizeOptions(e.target.checked)} /> Randomize Options
-    </label>
+    <QuizRandomizeOptions
+      randomizeQuestions={randomizeQuestions}
+      setRandomizeQuestions={setRandomizeQuestions}
+      randomizeOptions={randomizeOptions}
+      setRandomizeOptions={setRandomizeOptions}
+    />
     <QuizSortSelect sort={sort} setSort={setSort} />
     <button type="submit" style={{ marginLeft: '1rem' }}>Start Quiz</button>
   </form>
