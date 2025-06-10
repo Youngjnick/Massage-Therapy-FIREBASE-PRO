@@ -26,16 +26,16 @@ import { shuffleArray } from '../utils/quizUtils';
 import { BASE_URL } from '../utils/baseUrl';
 import QuizStartForm from '../components/Quiz/QuizStartForm';
 import QuizStartControls from '../components/Quiz/QuizStartControls';
+import { QuizProvider, useQuizContext } from '../context/QuizContext';
 
 const Quiz: React.FC = () => {
+  const { started, setStarted, current, setCurrent } = useQuizContext();
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string>('');
   const [quizLength, setQuizLength] = useState<number>(10);
   const [availableTopics, setAvailableTopics] = useState<string[]>([]);
-  const [started, setStarted] = useState(false);
-  const [current, setCurrent] = useState(0);
   const [userAnswers, setUserAnswers] = useState<number[]>([]);
   const [showResults, setShowResults] = useState(false);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
@@ -253,8 +253,8 @@ const Quiz: React.FC = () => {
   };
 
   // Handle next/prev navigation
-  const next = () => setCurrent((c) => Math.min(c + 1, quizQuestions.length - 1));
-  const prev = () => setCurrent((c) => Math.max(c - 1, 0));
+  const next = () => setCurrent(Math.min(current + 1, quizQuestions.length - 1));
+  const prev = () => setCurrent(Math.max(current - 1, 0));
 
   // Handle quiz start/reset
   const startQuiz = () => {
@@ -699,7 +699,13 @@ const Quiz: React.FC = () => {
   );
 };
 
-export default Quiz;
+export default function QuizWithProvider() {
+  return (
+    <QuizProvider>
+      <Quiz />
+    </QuizProvider>
+  );
+}
 
 /* CSS for shake animation and modal-summary
 .shake {
