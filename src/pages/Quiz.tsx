@@ -24,6 +24,8 @@ import QuizBookmarksPanel from '../components/Quiz/QuizBookmarksPanel';
 import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
 import { shuffleArray } from '../utils/quizUtils';
 import { BASE_URL } from '../utils/baseUrl';
+import QuizStartForm from '../components/Quiz/QuizStartForm';
+import QuizStartControls from '../components/Quiz/QuizStartControls';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -462,66 +464,29 @@ const Quiz: React.FC = () => {
     return (
       <div className="glass-card" style={{ maxWidth: 600, margin: '2rem auto' }}>
         <h2>Start a Quiz</h2>
-        <form style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); startQuiz(); }}>
-          <label>
-            Topic:
-            <select value={selectedTopic} onChange={e => setSelectedTopic(e.target.value)}>
-              {availableTopics.map(topic => (
-                <option key={topic} value={topic}>{topic}</option>
-              ))}
-            </select>
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            Quiz Length:
-            <input
-              type="number"
-              min={1}
-              max={filteredQuestions.length}
-              value={quizLength}
-              onChange={e => setQuizLength(Number(e.target.value))}
-              style={{ width: 60, marginLeft: 4 }}
-            />
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            <input type="checkbox" checked={randomizeQuestions} onChange={e => setRandomizeQuestions(e.target.checked)} /> Randomize Questions
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            <input type="checkbox" checked={randomizeOptions} onChange={e => setRandomizeOptions(e.target.checked)} /> Randomize Options
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            <input type="checkbox" checked={showInstantFeedback} onChange={e => setShowInstantFeedback(e.target.checked)} /> Instant Feedback
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            Filter:
-            <select value={filter} onChange={e => setFilter(e.target.value as any)}>
-              <option value="all">All</option>
-              <option value="incorrect">Incorrect</option>
-              <option value="unseen">Unseen</option>
-              <option value="difficult">Difficult</option>
-              <option value="tag">By Tag</option>
-              <option value="slow">Slow (time &gt; 30s)</option>
-            </select>
-            {filter === 'tag' && (
-              <input
-                type="text"
-                value={filterTag}
-                onChange={e => setFilterTag(e.target.value)}
-                placeholder="Enter tag"
-                style={{ marginLeft: 4 }}
-              />
-            )}
-          </label>
-          <label style={{ marginLeft: '1rem' }}>
-            Sort:
-            <select value={sort} onChange={e => setSort(e.target.value as any)}>
-              <option value="default">Default</option>
-              <option value="accuracy">By Accuracy</option>
-              <option value="time">By Time</option>
-              <option value="difficulty">By Difficulty</option>
-            </select>
-          </label>
-          <button type="submit" style={{ marginLeft: '1rem' }}>Start Quiz</button>
-        </form>
+        <QuizStartForm
+          availableTopics={availableTopics}
+          selectedTopic={selectedTopic}
+          setSelectedTopic={setSelectedTopic}
+          quizLength={quizLength}
+          setQuizLength={setQuizLength}
+          maxQuizLength={filteredQuestions.length}
+          randomizeQuestions={randomizeQuestions}
+          setRandomizeQuestions={setRandomizeQuestions}
+          randomizeOptions={randomizeOptions}
+          setRandomizeOptions={setRandomizeOptions}
+          sort={sort}
+          setSort={(val) => setSort(val as typeof sort)}
+          onStart={startQuiz}
+        />
+        <QuizStartControls
+          filter={filter}
+          setFilter={(val) => setFilter(val as typeof filter)}
+          filterTag={filterTag}
+          setFilterTag={setFilterTag}
+          showInstantFeedback={showInstantFeedback}
+          setShowInstantFeedback={setShowInstantFeedback}
+        />
       </div>
     );
   }
