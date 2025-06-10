@@ -1,4 +1,5 @@
 import React from 'react';
+import QuizOptionIndicator from './QuizOptionIndicator';
 
 interface QuizOptionProps {
   label: string;
@@ -32,6 +33,12 @@ const QuizOption: React.FC<QuizOptionProps> = ({
       disabled={disabled}
     />
     <span style={{ fontWeight: 600, marginRight: 8 }}>{label}.</span> {option}
+    {/* Option feedback indicator (correct/incorrect/selected) */}
+    <QuizOptionIndicator
+      isCorrect={className.includes('correct')}
+      isIncorrect={className.includes('incorrect')}
+      isSelected={className.includes('selected')}
+    />
     {children}
   </label>
 );
