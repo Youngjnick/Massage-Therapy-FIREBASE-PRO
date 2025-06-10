@@ -63,7 +63,7 @@ const Profile: React.FC = () => {
     <div style={{ textAlign: 'center' }}>
       <h2>Profile</h2>
       <img
-        src={user && user.photoURL ? user.photoURL : '/default_avatar.png'}
+        src={user && user.photoURL ? user.photoURL : `${import.meta.env.BASE_URL}default_avatar.png`}
         alt="User Avatar"
         style={{ width: 120, height: 120, borderRadius: '50%', margin: '1rem auto', display: 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
       />

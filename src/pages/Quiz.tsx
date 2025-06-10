@@ -1,15 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { getQuestions } from '../questions';
-import { Question } from '../types';
+import { getQuestions } from '../questions/index';
+import { Question } from '../types/index';
 import { FaRegBookmark, FaBookmark, FaBookOpen, FaFlag } from 'react-icons/fa';
-import { addBookmark, getBookmarks, deleteBookmark } from '../bookmarks';
-import { logError, logFeedback } from '../errors';
+import { addBookmark, getBookmarks, deleteBookmark } from '../bookmarks/index';
+import { logError, logFeedback } from '../errors/index';
 import { db } from '../firebase/firebaseConfig';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getUserSettings } from '../userSettings';
+import { getUserSettings } from '../userSettings/index';
 import { getAuth } from 'firebase/auth';
-import { recordUserInteraction } from '../stats';
-import { getUserStats } from '../stats';
+import { recordUserInteraction } from '../stats/index';
+import { getUserStats } from '../stats/index';
 import { exportToCSV, exportToPDF } from '../utils/export';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
@@ -646,7 +646,7 @@ const Quiz: React.FC = () => {
   const accuracy = answeredCount ? (correctCount / answeredCount) : 1;
 
   return (
-    <div className="glass-card" style={{ maxWidth: 700, margin: '2rem auto', position: 'relative' }}>
+    <div className="quiz-card">
       {/* Bookmarks icon in top right */}
       <button
         onClick={() => setShowBookmarks(b => !b)}
@@ -655,7 +655,7 @@ const Quiz: React.FC = () => {
       >
         <FaBookOpen size={28} color={showBookmarks ? '#3b82f6' : '#64748b'} />
       </button>
-      <h2>Quiz: {selectedTopic}</h2>
+      <h2 style={{ marginBottom: 8 }}>Quiz: {selectedTopic}</h2>
       {/* Editable bookmarks list modal/panel */}
       {showBookmarks && (
         <div style={{ position: 'absolute', top: 56, right: 16, background: 'rgba(255,255,255,0.95)', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.12)', padding: 20, minWidth: 320, zIndex: 20 }}>
@@ -707,7 +707,7 @@ const Quiz: React.FC = () => {
               {q.img && (
                 <div style={{ textAlign: 'center', marginBottom: 16 }}>
                   <img
-                    src={q.img.startsWith('http') ? q.img : `/public/${q.img}`}
+                    src={q.img.startsWith('http') ? q.img : `${import.meta.env.BASE_URL}${q.img}`}
                     alt="Question Illustration"
                     style={{ maxWidth: 320, maxHeight: 200, borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}
                   />
@@ -716,7 +716,7 @@ const Quiz: React.FC = () => {
               {q.media && (
                 <div style={{ textAlign: 'center', marginBottom: 16 }}>
                   <video controls style={{ maxWidth: 320, borderRadius: 12 }}>
-                    <source src={q.media.startsWith('http') ? q.media : `/public/${q.media}`} />
+                    <source src={q.media.startsWith('http') ? q.media : `${import.meta.env.BASE_URL}${q.media}`} />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -724,41 +724,39 @@ const Quiz: React.FC = () => {
               {q.audio && (
                 <div style={{ textAlign: 'center', marginBottom: 16 }}>
                   <audio controls style={{ maxWidth: 320 }}>
-                    <source src={q.audio.startsWith('http') ? q.audio : `/public/${q.audio}`} />
+                    <source src={q.audio.startsWith('http') ? q.audio : `${import.meta.env.BASE_URL}${q.audio}`} />
                     Your browser does not support the audio element.
                   </audio>
                 </div>
               )}
               {/* Progress Dots/Stepper */}
-              <div aria-label="Question Progress" role="group" style={{ display: 'flex', justifyContent: 'center', gap: 8, marginBottom: 16 }}>
+              <div className="quiz-stepper" aria-label="Question Progress" role="group">
                 {activeQuestions.map((_, idx) => (
                   <button
                     key={idx}
+                    className={
+                      'quiz-stepper-dot' +
+                      (idx === current ? ' active' : '') +
+                      (userAnswers[idx] !== undefined ? ' answered' : '')
+                    }
                     aria-label={`Go to question ${idx + 1}`}
                     onClick={() => setCurrent(idx)}
-                    style={{
-                      width: 18, height: 18, borderRadius: '50%', border: 'none',
-                      background: idx === current ? '#3b82f6' : userAnswers[idx] !== undefined ? '#6ee7b7' : '#e5e7eb',
-                      outline: idx === current ? '2px solid #2563eb' : 'none',
-                      cursor: 'pointer',
-                      transition: 'background 0.2s',
-                    }}
                   />
                 ))}
               </div>
-              <ul style={{ listStyle: 'none', padding: 0 }}>
+              <ul className="quiz-options">
                 {(shuffledOptions[current] || q.options).map((opt: string, i: number) => {
                   const correctOpt = (shuffledOptions[current] || q.options).indexOf(q.correctAnswer);
-                  let bg = 'transparent';
+                  let optionClass = 'quiz-option';
                   if (answered) {
-                    if (i === correctOpt) bg = 'rgba(34,197,94,0.15)'; // green for correct
-                    else if (userAnswers[current] === i) bg = 'rgba(239,68,68,0.15)'; // red for incorrect
+                    if (i === correctOpt) optionClass += ' correct';
+                    else if (userAnswers[current] === i) optionClass += ' incorrect';
                   } else if (userAnswers[current] === i) {
-                    bg = 'rgba(59,130,246,0.12)';
+                    optionClass += ' selected';
                   }
                   return (
-                    <li key={i} style={{ marginBottom: 12 }}>
-                      <label style={{ display: 'flex', alignItems: 'center', cursor: answered ? 'default' : 'pointer', padding: 8, borderRadius: 8, background: bg, border: userAnswers[current] === i ? '1.5px solid #3b82f6' : '1px solid #e5e7eb' }}>
+                    <li key={i}>
+                      <label className={optionClass} style={{ width: '100%' }}>
                         <input
                           ref={(el) => { optionRefs.current[i] = el || null; }}
                           type="radio"
@@ -782,12 +780,12 @@ const Quiz: React.FC = () => {
                 })}
               </ul>
               {showInstantFeedback && answerFeedback && (
-                <div style={{ margin: '12px 0', fontWeight: 600, color: answerFeedback === 'Correct!' ? '#059669' : '#ef4444' }}>{answerFeedback}</div>
+                <div className="quiz-feedback" style={{ color: answerFeedback === 'Correct!' ? '#059669' : '#ef4444' }}>{answerFeedback}</div>
               )}
               {showExplanations && (
                 <>
                   {q.short_explanation && (
-                    <div style={{ color: '#059669', marginTop: 8, fontWeight: 500 }}>Quick Tip: {q.short_explanation}</div>
+                    <div className="quiz-explanation">Quick Tip: {q.short_explanation}</div>
                   )}
                   {q.long_explanation && (
                     <div style={{ color: '#2563eb', marginTop: 8, fontSize: 15 }}>More Info: {q.long_explanation}</div>
@@ -810,22 +808,22 @@ const Quiz: React.FC = () => {
                   )}
                 </div>
               )}
-              <div style={{ marginTop: 24, display: 'flex', justifyContent: 'space-between' }}>
+              <div className="quiz-actions">
                 <button onClick={prev} disabled={current === 0}>Previous</button>
                 {current < activeQuestions.length - 1 ? (
-                  <button onClick={next} style={{ marginLeft: 8 }} disabled={!answered}>Next</button>
+                  <button onClick={next} disabled={!answered}>Next</button>
                 ) : (
-                  <button onClick={finishQuiz} style={{ marginLeft: 8 }} disabled={!answered}>Finish</button>
+                  <button onClick={finishQuiz} disabled={!answered}>Finish</button>
                 )}
-                <button onClick={resetQuiz} style={{ marginLeft: 8 }}>Cancel</button>
+                <button onClick={resetQuiz}>Cancel</button>
               </div>
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
       {/* Progress Bar */}
-      <div style={{ position: 'absolute', left: 0, right: 0, bottom: -16, height: 8, background: 'rgba(200,200,200,0.2)', zIndex: 100, borderRadius: 8 }}>
-        <div style={{ width: `${progress}%`, height: '100%', background: 'linear-gradient(90deg, #6ee7b7, #3b82f6)', transition: 'width 0.3s', borderRadius: 8 }} />
+      <div className="quiz-progress-bar">
+        <div className="quiz-progress-bar-inner" style={{ width: `${progress}%` }} />
       </div>
       {/* Session summary modal placeholder */}
       {showResults && (
