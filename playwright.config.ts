@@ -5,7 +5,7 @@ export default defineConfig({
   timeout: 30000,
   retries: 1,
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:5174/Massage-Therapy-FIREBASE-PRO/',
     ...devices['Desktop Chrome'],
   },
 });
