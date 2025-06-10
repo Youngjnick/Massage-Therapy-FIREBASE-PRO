@@ -1,4 +1,8 @@
 import React from 'react';
+refactor/modularize-app
+import QuizOptionIndicator from './QuizOptionIndicator';
+
+main
 
 interface QuizOptionProps {
   label: string;
@@ -32,6 +36,14 @@ const QuizOption: React.FC<QuizOptionProps> = ({
       disabled={disabled}
     />
     <span style={{ fontWeight: 600, marginRight: 8 }}>{label}.</span> {option}
+refactor/modularize-app
+    {/* Option feedback indicator (correct/incorrect/selected) */}
+    <QuizOptionIndicator
+      isCorrect={className.includes('correct')}
+      isIncorrect={className.includes('incorrect')}
+      isSelected={className.includes('selected')}
+    />
+main
     {children}
   </label>
 );
