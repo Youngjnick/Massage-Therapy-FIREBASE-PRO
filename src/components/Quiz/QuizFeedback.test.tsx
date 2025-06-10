@@ -10,13 +10,27 @@ describe('QuizFeedback', () => {
 
   it('renders nothing when show=false', () => {
     const { container } = render(<QuizFeedback show={false} feedback="Should not show" />);
-    // Should not render the feedback text
     expect(container.textContent).not.toContain('Should not show');
   });
 
   it('renders nothing when feedback is null', () => {
     const { container } = render(<QuizFeedback show={true} feedback={null} />);
-    // Should not render any feedback text
     expect(container.textContent).toBe("");
+  });
+
+  it('renders nothing when show=false and feedback is null', () => {
+    const { container } = render(<QuizFeedback show={false} feedback={null} />);
+    expect(container.textContent).toBe("");
+  });
+
+  it('renders special characters in feedback', () => {
+    render(<QuizFeedback show={true} feedback={"Great job! 🎉"} />);
+    expect(screen.getByText(/Great job! 🎉/)).toBeInTheDocument();
+  });
+
+  it('renders long feedback text', () => {
+    const longText = 'A'.repeat(1000);
+    render(<QuizFeedback show={true} feedback={longText} />);
+    expect(screen.getByText(longText)).toBeInTheDocument();
   });
 });
