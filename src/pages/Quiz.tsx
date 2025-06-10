@@ -21,6 +21,7 @@ import QuizExplanation from '../components/Quiz/QuizExplanation';
 import QuizSessionSummary from '../components/Quiz/QuizSessionSummary';
 import Modal from '../components/Quiz/Modal';
 import { shuffleArray } from '../utils/quizUtils';
+import { BASE_URL } from '../utils/baseUrl';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
