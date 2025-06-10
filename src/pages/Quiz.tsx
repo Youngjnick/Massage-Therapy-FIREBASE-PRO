@@ -20,6 +20,8 @@ import QuizFeedback from '../components/Quiz/QuizFeedback';
 import QuizExplanation from '../components/Quiz/QuizExplanation';
 import QuizSessionSummary from '../components/Quiz/QuizSessionSummary';
 import Modal from '../components/Quiz/Modal';
+import QuizBookmarksPanel from '../components/Quiz/QuizBookmarksPanel';
+import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
 import { shuffleArray } from '../utils/quizUtils';
 import { BASE_URL } from '../utils/baseUrl';
 
@@ -500,7 +502,13 @@ const Quiz: React.FC = () => {
               <option value="slow">Slow (time &gt; 30s)</option>
             </select>
             {filter === 'tag' && (
-              <input type="text" value={filterTag} onChange={e => setFilterTag(e.target.value)} placeholder="Tag..." style={{ marginLeft: 4, width: 80 }} />
+              <input
+                type="text"
+                value={filterTag}
+                onChange={e => setFilterTag(e.target.value)}
+                placeholder="Enter tag"
+                style={{ marginLeft: 4 }}
+              />
             )}
           </label>
           <label style={{ marginLeft: '1rem' }}>
@@ -599,40 +607,16 @@ const Quiz: React.FC = () => {
       </button>
       <h2 style={{ marginBottom: 8 }}>Quiz: {selectedTopic}</h2>
       {/* Editable bookmarks list modal/panel */}
-      {showBookmarks && (
-        <div style={{ position: 'absolute', top: 56, right: 16, background: 'rgba(255,255,255,0.95)', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.12)', padding: 20, minWidth: 320, zIndex: 20 }}>
-          <h3 style={{ marginTop: 0 }}>Bookmarked Questions</h3>
-          {bookmarks.length === 0 ? (
-            <div style={{ color: '#64748b' }}>No bookmarks yet.</div>
-          ) : (
-            <ul style={{ maxHeight: 300, overflowY: 'auto', padding: 0, margin: 0, listStyle: 'none' }}>
-              {quizQuestions.filter(q => bookmarks.includes(q.id)).map(q => (
-                <li key={q.id} style={{ marginBottom: 12, display: 'flex', alignItems: 'center' }}>
-                  <span style={{ flex: 1 }}>{q.text}</span>
-                  <button onClick={() => toggleBookmark(q.id)} style={{ marginLeft: 8, background: 'none', border: 'none', cursor: 'pointer' }}>
-                    <FaBookmark color="#f59e42" /> Remove
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
+      <QuizBookmarksPanel
+        show={showBookmarks}
+        bookmarks={bookmarks}
+        quizQuestions={quizQuestions}
+        onToggleBookmark={toggleBookmark}
+        onClose={() => setShowBookmarks(false)}
+      />
       {showConfetti && <Confetti width={width} height={height} recycle={false} numberOfPieces={200} />}
       {/* Topic Progress Bars */}
-      {topicStats && Object.entries(topicStats).length > 0 && (
-        <div style={{display:'flex',gap:16,marginBottom:12,flexWrap:'wrap'}}>
-          {Object.entries(topicStats).map(([topic,stat]) => (
-            <div key={topic} style={{minWidth:120}}>
-              <div style={{fontWeight:600}}>{topic}</div>
-              <div style={{height:8,background:'#e5e7eb',borderRadius:4,margin:'4px 0',position:'relative'}}>
-                <div style={{width:`${stat.total?((stat.correct/stat.total)*100):0}%`,height:'100%',background:'#3b82f6',borderRadius:4,transition:'width 0.3s'}} />
-              </div>
-              <div style={{fontSize:12}}>{stat.correct} / {stat.total} correct</div>
-            </div>
-          ))}
-        </div>
-      )}
+      <QuizTopicProgress topicStats={topicStats} />
       {/* Shake animation on question card */}
       <div className={shake ? 'shake' : ''}>
         <AnimatePresence mode="wait" initial={false}>
