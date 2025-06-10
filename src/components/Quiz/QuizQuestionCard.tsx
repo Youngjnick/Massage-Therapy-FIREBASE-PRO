@@ -1,8 +1,5 @@
 import React from 'react';
 import QuizOption from './QuizOption';
-import QuizFeedback from './QuizFeedback';
-import QuizExplanation from './QuizExplanation';
-import QuizActions from './QuizActions';
 
 interface QuizQuestionCardProps {
   q: any;
@@ -66,18 +63,26 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
         );
       })}
     </ul>
-    <QuizFeedback show={showInstantFeedback} feedback={answerFeedback} />
+    {/* <QuizFeedback show={showInstantFeedback} feedback={answerFeedback} /> */}
     {showExplanations && (
-      <QuizExplanation
-        shortExplanation={q.short_explanation}
-        longExplanation={q.long_explanation}
-        clinicalApplication={q.clinical_application}
-        sourceReference={q.source_reference}
-        tags={q.tags}
-        keywords={q.keywords}
-      />
+      // <QuizExplanation
+      //   shortExplanation={q.short_explanation}
+      //   longExplanation={q.long_explanation}
+      //   clinicalApplication={q.clinical_application}
+      //   sourceReference={q.source_reference}
+      //   tags={q.tags}
+      //   keywords={q.keywords}
+      // />
+      <div>
+        {q.short_explanation && <div>{q.short_explanation}</div>}
+        {q.long_explanation && <div>{q.long_explanation}</div>}
+        {q.clinical_application && <div>{q.clinical_application}</div>}
+        {q.source_reference && <div>{q.source_reference}</div>}
+        {q.tags && <div>{q.tags}</div>}
+        {q.keywords && <div>{q.keywords}</div>}
+      </div>
     )}
-    <QuizActions
+    {/* <QuizActions
       onPrev={() => {}}
       onNext={() => {}}
       onFinish={() => {}}
@@ -85,7 +90,17 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       current={current}
       total={1}
       answered={answered}
-    />
+    /> */}
+    <div>
+      <button onClick={() => {}}>Prev</button>
+      <button onClick={() => {}}>Next</button>
+      <button onClick={() => {}}>Finish</button>
+      <button onClick={() => {}}>Cancel</button>
+      <span>
+        {current + 1} / 1
+      </span>
+      {answered && <span>Answered</span>}
+    </div>
   </div>
 );
 

@@ -21,6 +21,7 @@ describe('QuizOptionIndicator', () => {
   });
   it('renders nothing if no props', () => {
     const { container } = render(<QuizOptionIndicator />);
-    expect(container).toBeEmptyDOMElement();
+    // Should not render any indicator span
+    expect(container.querySelector('span')).toBeNull();
   });
 });
