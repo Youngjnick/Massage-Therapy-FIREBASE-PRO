@@ -649,7 +649,7 @@ const Quiz: React.FC = () => {
               {q.img && (
                 <div style={{ textAlign: 'center', marginBottom: 16 }}>
                   <img
-                    src={q.img.startsWith('http') ? q.img : `${import.meta.env.BASE_URL}${q.img}`}
+                    src={q.img.startsWith('http') ? q.img : `${BASE_URL}${q.img}`}
                     alt="Question Illustration"
                     style={{ maxWidth: 320, maxHeight: 200, borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}
                   />
@@ -658,7 +658,7 @@ const Quiz: React.FC = () => {
               {q.media && (
                 <div style={{ textAlign: 'center', marginBottom: 16 }}>
                   <video controls style={{ maxWidth: 320, borderRadius: 12 }}>
-                    <source src={q.media.startsWith('http') ? q.media : `${import.meta.env.BASE_URL}${q.media}`} />
+                    <source src={q.media.startsWith('http') ? q.media : `${BASE_URL}${q.media}`} />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -666,7 +666,7 @@ const Quiz: React.FC = () => {
               {q.audio && (
                 <div style={{ textAlign: 'center', marginBottom: 16 }}>
                   <audio controls style={{ maxWidth: 320 }}>
-                    <source src={q.audio.startsWith('http') ? q.audio : `${import.meta.env.BASE_URL}${q.audio}`} />
+                    <source src={q.audio.startsWith('http') ? q.audio : `${BASE_URL}${q.audio}`} />
                     Your browser does not support the audio element.
                   </audio>
                 </div>

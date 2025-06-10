@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BASE_URL } from '../utils/baseUrl';
 
 const badgeList = [
   // List badge filenames or fetch dynamically if needed
@@ -22,7 +23,7 @@ const Achievements: React.FC = () => {
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
         {badges.map(badge => (
           <div key={badge} style={{ textAlign: 'center' }}>
-            <img src={`${import.meta.env.BASE_URL}badges/${badge}`} alt={badge} style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
+            <img src={`${BASE_URL}badges/${badge}`} alt={badge} style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
             <div style={{ marginTop: 8 }}>{badge.replace(/_/g, ' ').replace(/\.png$/, '')}</div>
           </div>
         ))}
