@@ -20,8 +20,10 @@ import QuizFeedback from '../components/Quiz/QuizFeedback';
 import QuizExplanation from '../components/Quiz/QuizExplanation';
 import QuizSessionSummary from '../components/Quiz/QuizSessionSummary';
 import Modal from '../components/Quiz/Modal';
+refactor/modularize-app
 import QuizBookmarksPanel from '../components/Quiz/QuizBookmarksPanel';
 import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
+main
 import { shuffleArray } from '../utils/quizUtils';
 import { BASE_URL } from '../utils/baseUrl';
 import QuizStartForm from '../components/Quiz/QuizStartForm';
