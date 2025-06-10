@@ -9,7 +9,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "jsx": "react-jsx",
-    "types": ["vite/client"],
+    "types": ["vite/client", "jest"],
     "lib": ["es2020", "dom"],
     "moduleResolution": "bundler"
   },

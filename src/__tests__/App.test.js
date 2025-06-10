@@ -1,3 +1,9 @@
+import { TextEncoder, TextDecoder } from 'util';
+if (typeof global.TextEncoder === 'undefined') {
+  global.TextEncoder = TextEncoder;
+  global.TextDecoder = TextDecoder;
+}
+
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
