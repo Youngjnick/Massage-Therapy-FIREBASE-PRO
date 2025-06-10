@@ -33,4 +33,29 @@ describe('QuizFeedback', () => {
     render(<QuizFeedback show={true} feedback={longText} />);
     expect(screen.getByText(longText)).toBeInTheDocument();
   });
+
+  it('renders feedback with HTML tags as plain text', () => {
+    render(<QuizFeedback show={true} feedback={'<b>Bold!</b>'} />);
+    expect(screen.getByText('<b>Bold!</b>')).toBeInTheDocument();
+  });
+
+  it('renders feedback with numbers', () => {
+    render(<QuizFeedback show={true} feedback={12345 as any} />);
+    expect(screen.getByText('12345')).toBeInTheDocument();
+  });
+
+  it('renders feedback with whitespace only', () => {
+    render(<QuizFeedback show={true} feedback={'   '} />);
+    const feedbackDiv = screen.getByTestId('quiz-feedback');
+    expect(feedbackDiv).toBeInTheDocument();
+    expect(feedbackDiv.textContent).toBe('   ');
+  });
+
+  it('renders feedback with multiline text', () => {
+    const multiline = 'Line 1\nLine 2';
+    render(<QuizFeedback show={true} feedback={multiline} />);
+    const feedbackDiv = screen.getByTestId('quiz-feedback');
+    expect(feedbackDiv).toBeInTheDocument();
+    expect(feedbackDiv.textContent).toBe('Line 1\nLine 2');
+  });
 });
