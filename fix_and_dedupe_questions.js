@@ -1,3 +1,4 @@
+/* eslint-env node */
 import fs from 'fs';
 import path from 'path';
 
@@ -51,15 +52,15 @@ const dedupeQuestions = (questions) => {
   return unique;
 };
 
-const processFile = (filepath, seenIds) => {
+const processFile = (filepath) => {
   const raw = fs.readFileSync(filepath, 'utf8');
   let data;
   try {
     data = JSON.parse(raw);
-  } catch (e) {
+  } catch {
     // If file is empty or invalid, write [] and return
-    fs.writeFileSync(filepath, '[]');
-    return { filepath, error: 'Invalid or empty JSON, replaced with []' };
+    fs.writeFileSync(filepath.replace('.json', '_fixed.json'), '[]');
+    return;
   }
   if (!Array.isArray(data)) {
     // If not an array, replace with []
@@ -88,9 +89,8 @@ const main = () => {
   const base = path.join(__dirname, 'src', 'data', 'questions');
   const files = walk(base);
   const report = [];
-  const seenIds = new Set();
   files.forEach(f => {
-    const res = processFile(f, seenIds);
+    const res = processFile(f);
     report.push(res);
   });
   fs.writeFileSync(path.join(__dirname, 'fix_and_dedupe_report.json'), JSON.stringify(report, null, 2));

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { getQuestions } from '../questions/index';
 import { Question } from '../types/index';
 import { getBookmarks } from '../bookmarks/index';
@@ -24,7 +24,6 @@ const Quiz: React.FC = () => {
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
   const [shuffledOptions, setShuffledOptions] = useState<{ [key: number]: string[] }>({});
   const [showInstantFeedback, setShowInstantFeedback] = useState(true);
-  const [answerFeedback, setAnswerFeedback] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
   const [questionTimes, setQuestionTimes] = useState<number[]>([]);
   const [questionStart, setQuestionStart] = useState<number | null>(null);
@@ -45,6 +44,22 @@ const Quiz: React.FC = () => {
   const activeQuestions = started ? shuffledQuestions : quizQuestions;
   const q = activeQuestions[current];
   const optionRefs = useRef<(HTMLInputElement | null)[]>([]);
+
+  // Ensure optionRefs has the correct length for the current question
+  useEffect(() => {
+    if (!q) return;
+    const optionCount = (shuffledOptions[current] || q.options).length;
+    optionRefs.current = Array(optionCount)
+      .fill(null)
+      .map((_, i) => optionRefs.current[i] || null);
+  }, [q, current, shuffledOptions]);
+
+  // Focus the first option's input after quiz start or question change
+  useLayoutEffect(() => {
+    if (started && optionRefs.current[0]) {
+      optionRefs.current[0].focus();
+    }
+  }, [started, current, shuffledOptions]);
 
   // --- All hooks must be called unconditionally at the top level ---
   // Load questions and bookmarks on component mount
@@ -104,7 +119,6 @@ const Quiz: React.FC = () => {
 
   // Reset feedback and answered state on question change or quiz start
   useEffect(() => {
-    setAnswerFeedback(null);
     setAnswered(false);
   }, [current, started]);
 
@@ -273,18 +287,10 @@ const Quiz: React.FC = () => {
       return copy;
     });
     setAnswered(true);
-    const correctOpt = (shuffledOptions[current] || q.options).indexOf(q.correctAnswer);
-    if (showInstantFeedback) {
-      if (idx === correctOpt) {
-        setAnswerFeedback('Correct!');
-      } else {
-        setAnswerFeedback('Incorrect.');
-      }
-    }
     setTimeout(() => {
       setShowInstantFeedback(showInstantFeedback);
       setAnswered(false);
-      setAnswerFeedback(null);
+      // Remove: setAnswerFeedback(null)
       if (showReview && reviewQueue.length > 0) {
         setCurrent(reviewQueue[0]);
         setReviewQueue(rq => rq.slice(1));

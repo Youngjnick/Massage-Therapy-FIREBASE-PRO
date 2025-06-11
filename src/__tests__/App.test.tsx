@@ -21,8 +21,6 @@ jest.mock('../utils/baseUrl', () => ({
   BASE_URL: '/',
 }));
 
-globalThis.import = { meta: { env: { BASE_URL: '/' } } };
-
 beforeAll(() => { console.log('Starting App tests...'); });
 beforeEach(() => { console.log('Running next App test...'); });
 afterAll(() => { console.log('Finished App tests.'); });

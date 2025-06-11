@@ -46,6 +46,7 @@ export default [
         beforeEach: true,
         afterAll: true,
         jest: true,
+        test: true,
       },
     },
     rules: {
@@ -92,6 +93,18 @@ export default [
     },
   },
   {
-    ignores: ['dist/', 'dist/assets/'],
+    ignores: ['dist/', 'dist/assets/', 'playwright.config.ts', 'vite.config.ts', 'e2e/tsconfig.json'],
+  },
+  {
+    files: ['*.js'],
+    languageOptions: {
+      globals: {
+        __dirname: 'readonly',
+        console: 'readonly',
+        process: 'readonly',
+        module: 'readonly',
+        require: 'readonly',
+      },
+    },
   },
 ];

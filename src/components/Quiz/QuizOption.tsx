@@ -8,7 +8,7 @@ interface QuizOptionProps {
   disabled: boolean;
   onSelect: () => void;
   className?: string;
-  inputRef?: React.RefObject<HTMLInputElement>;
+  inputRef?: React.Ref<HTMLInputElement>;
   children?: React.ReactNode;
 }
 
