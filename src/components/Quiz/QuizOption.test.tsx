@@ -587,11 +587,11 @@ describe('QuizOption', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
       const { rerender } = render(
-        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle3" />
+        <QuizOption label="A" option="Option 1" selected={true} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle3" />
       );
       const radio = screen.getByRole('radio');
       rerender(<QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle3" />);
-      rerender(<QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle3" />);
+      rerender(<QuizOption label="A" option="Option 1" selected={true} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle3" />);
       fireEvent.click(radio);
       expect(onSelect).not.toHaveBeenCalled();
       expect(onSubmitOption).not.toHaveBeenCalled();
@@ -683,6 +683,82 @@ describe('QuizOption', () => {
       fireEvent.click(radioB);
       expect(onSelectA).not.toHaveBeenCalled();
       expect(onSelectB).toHaveBeenCalled();
+    });
+  });
+
+  describe('QuizOption (additional advanced/edge tests)', () => {
+    it('renders label/option as string for null/undefined/0', () => {
+      render(
+        <>
+          <QuizOption label={null as any} option={null as any} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-null" />
+          <QuizOption label={undefined as any} option={undefined as any} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-undefined" />
+          <QuizOption label={0 as any} option={0 as any} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-zero" />
+        </>
+      );
+      expect(screen.getByText('null.')).toBeInTheDocument();
+      expect(screen.getByText('null')).toBeInTheDocument();
+      expect(screen.getByText('undefined.')).toBeInTheDocument();
+      expect(screen.getByText('undefined')).toBeInTheDocument();
+      expect(screen.getByText('0.')).toBeInTheDocument();
+      expect(screen.getByText('0')).toBeInTheDocument();
+    });
+
+    it('renders children as a React fragment', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-child-frag">
+          <>
+            <span data-testid="frag-child-1">Frag1</span>
+            <span data-testid="frag-child-2">Frag2</span>
+          </>
+        </QuizOption>
+      );
+      expect(screen.getByTestId('frag-child-1')).toBeInTheDocument();
+      expect(screen.getByTestId('frag-child-2')).toBeInTheDocument();
+    });
+
+    it('renders deeply nested children', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-nested-child">
+          <div><span data-testid="deep-child">DeepChild</span></div>
+        </QuizOption>
+      );
+      expect(screen.getByTestId('deep-child')).toBeInTheDocument();
+    });
+
+    it('inputRef works as callback and object', () => {
+      const cbRef = jest.fn();
+      const objRef = React.createRef<HTMLInputElement>();
+      render(
+        <>
+          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-cbref" inputRef={cbRef} />
+          <QuizOption label="B" option="Option 2" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-objref" inputRef={objRef} />
+        </>
+      );
+      expect(cbRef).toHaveBeenCalled();
+      expect(objRef.current).not.toBeNull();
+      expect(objRef.current?.tagName).toBe('INPUT');
+    });
+
+    it('handles rapid prop changes (selected/disabled)', () => {
+      const onSelect = jest.fn();
+      const { rerender } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} inputId="test-id-rapid-prop" />
+      );
+      const radio = screen.getByRole('radio');
+      rerender(<QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={onSelect} inputId="test-id-rapid-prop" />);
+      rerender(<QuizOption label="A" option="Option 1" selected={true} disabled={true} onSelect={onSelect} inputId="test-id-rapid-prop" />);
+      rerender(<QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} inputId="test-id-rapid-prop" />);
+      fireEvent.click(radio);
+      expect(onSelect).toHaveBeenCalled();
+    });
+
+    it('input has correct aria-checked for accessibility', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={() => {}} inputId="test-id-aria-checked" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(radio).toBeChecked();
+      expect(radio).toHaveAttribute('aria-label', 'Option A: Option 1');
     });
   });
 });
