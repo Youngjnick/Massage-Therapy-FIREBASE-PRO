@@ -61,6 +61,15 @@ const Quiz: React.FC = () => {
     }
   }, [started, current, shuffledOptions]);
 
+  // After quiz start, move focus to the first radio input for accessibility
+  useEffect(() => {
+    if (started && optionRefs.current[0]) {
+      setTimeout(() => {
+        optionRefs.current[0]?.focus();
+      }, 0);
+    }
+  }, [started]);
+
   // --- All hooks must be called unconditionally at the top level ---
   // Load questions and bookmarks on component mount
   useEffect(() => {
@@ -110,7 +119,7 @@ const Quiz: React.FC = () => {
         prev();
       } else if (/^[1-9]$/.test(e.key)) {
         const idx = parseInt(e.key, 10) - 1;
-        if (q && q.options[idx]) handleAnswer(idx);
+        if (q && q.options[idx]) handleAnswer(idx, false);
       }
     };
     window.addEventListener('keydown', handleKey);
@@ -279,31 +288,33 @@ const Quiz: React.FC = () => {
 
   const next = () => setCurrent((c) => Math.min(c + 1, quizQuestions.length - 1));
   const prev = () => setCurrent((c) => Math.max(c - 1, 0));
-  const handleAnswer = (idx: number) => {
-    if (answered) return;
+  // New: distinguish between navigation and answer submission
+  const handleAnswer = (idx: number, submit: boolean = false) => {
+    if (answered) return; // Prevent rapid/duplicate answers
     setUserAnswers((prev) => {
       const copy = [...prev];
       copy[current] = idx;
       return copy;
     });
-    setAnswered(true);
-    setTimeout(() => {
-      setShowInstantFeedback(showInstantFeedback);
-      setAnswered(false);
-      // Remove: setAnswerFeedback(null)
-      if (showReview && reviewQueue.length > 0) {
-        setCurrent(reviewQueue[0]);
-        setReviewQueue(rq => rq.slice(1));
-        if (reviewQueue.length === 1) setShowReview(false);
-        return;
-      }
-      const nextIdx = getNextQuestionIndex();
-      if (nextIdx < activeQuestions.length) {
-        setCurrent(nextIdx);
-      } else {
-        setShowResults(true);
-      }
-    }, showInstantFeedback ? 500 : 0);
+    if (submit) {
+      setAnswered(true);
+      setTimeout(() => {
+        setShowInstantFeedback(showInstantFeedback);
+        setAnswered(false);
+        if (showReview && reviewQueue.length > 0) {
+          setCurrent(reviewQueue[0]);
+          setReviewQueue(rq => rq.slice(1));
+          if (reviewQueue.length === 1) setShowReview(false);
+          return;
+        }
+        const nextIdx = getNextQuestionIndex();
+        if (nextIdx < activeQuestions.length) {
+          setCurrent(nextIdx);
+        } else {
+          setShowResults(true);
+        }
+      }, showInstantFeedback ? 500 : 0);
+    }
   };
 
   // Handler to start the quiz
@@ -325,8 +336,13 @@ const Quiz: React.FC = () => {
     }
     setStarted(true);
     setCurrent(0);
-    setUserAnswers([]);
+    // Ensure first radio is selected by default for accessibility/tab order
+    setUserAnswers([0]);
     setShowResults(false);
+    // Programmatically focus the first radio input after quiz starts
+    setTimeout(() => {
+      if (optionRefs.current[0]) optionRefs.current[0].focus();
+    }, 0);
   }
 
   // --- Render loading/error state, or quiz/success content ---
@@ -375,7 +391,7 @@ const Quiz: React.FC = () => {
 
       {/* --- Results and review --- */}
       {showResults && (
-        <div>
+        <div data-testid="quiz-results-screen">
           <h2>Results</h2>
           <div>
             {activeQuestions.map((q, i) => {
@@ -385,86 +401,43 @@ const Quiz: React.FC = () => {
               return (
                 <div key={i} style={{ marginBottom: '1rem' }}>
                   <div>
-                    <strong>Question {i + 1}:</strong> {q.text}
+                    <strong>Q{i + 1}:</strong> {q.text}
                   </div>
                   <div>
-                    Your answer: {q.options[userAnswer]} {isCorrect ? '(Correct)' : '(Incorrect)'}
+                    Your answer: {userAnswer !== undefined ? (shuffledOptions[i] || q.options)[userAnswer] : '—'}
+                    {isCorrect ? ' ✅' : ' ❌'}
                   </div>
-                  {!isCorrect && (
-                    <div>
-                      Correct answer: {q.options[correctOpt]}
-                    </div>
-                  )}
+                  <div>
+                    Correct answer: {q.correctAnswer}
+                  </div>
                 </div>
               );
             })}
           </div>
-          <div>
-            <h3>Review</h3>
-            {reviewQueue.length === 0 ? (
-              <div>No review needed, you got all questions correct!</div>
-            ) : (
-              <div>
-                {reviewQueue.map(i => {
-                  const q = activeQuestions[i];
-                  const correctOpt = (shuffledOptions[i] || q.options).indexOf(q.correctAnswer);
-                  return (
-                    <div key={i} style={{ marginBottom: '1rem' }}>
-                      <div>
-                        <strong>Question {i + 1}:</strong> {q.text}
-                      </div>
-                      <div>
-                        Your answer: {q.options[userAnswers[i]]} (Incorrect)
-                      </div>
-                      <div>
-                        Correct answer: {q.options[correctOpt]}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-          <div>
-            <h3>Topic Stats</h3>
-            {Object.entries(topicStats).map(([topic, stat]) => (
-              <div key={topic}>
-                {topic}: {stat.correct} correct, {stat.total} total ({((stat.correct / stat.total) || 0) * 100}%)
-              </div>
+          <h3>Topic Stats</h3>
+          <ul>
+            {Object.entries(topicStats).map(([topic, stats]) => (
+              <li key={topic}>
+                {topic}: {stats.correct} / {stats.total} correct
+              </li>
             ))}
-          </div>
-          <div>
-            <button onClick={() => setShowResults(false)}>Back to Quiz</button>
-            <button onClick={() => {
-              setUserAnswers([]);
-              setCurrent(0);
-              setShowResults(false);
-              setReviewQueue([]);
-              setStarted(false);
-            }}>
-              Start New Quiz
-            </button>
-          </div>
-          <div>
-            <button onClick={() => {
-              const auth = getAuth();
-              const user = auth.currentUser;
-              if (!user) return;
-              // logError(user.uid, new Error('Test error logging'));
-            }}>
-              Test Error Logging
-            </button>
-          </div>
-          <div>
-            <button onClick={() => {
-              const auth = getAuth();
-              const user = auth.currentUser;
-              if (!user) return;
-              logFeedback(user.uid, 'Test feedback message');
-            }}>
-              Test Feedback Logging
-            </button>
-          </div>
+          </ul>
+          <button onClick={() => {
+            console.log('Start New Quiz button clicked');
+            setStarted(false);
+            setShowResults(false);
+            setUserAnswers([]);
+            setCurrent(0);
+            setAnswered(false);
+            setShuffledQuestions([]);
+            setShuffledOptions({});
+            setReviewQueue([]);
+            setShowReview(false);
+            setQuestionTimes([]);
+            setQuestionStart(null);
+          }} aria-label="Start New Quiz">
+            Start New Quiz
+          </button>
         </div>
       )}
     </div>

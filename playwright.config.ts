@@ -7,5 +7,6 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:5174/Massage-Therapy-FIREBASE-PRO/',
     ...devices['Desktop Chrome'],
+    headless: false,
   },
 });

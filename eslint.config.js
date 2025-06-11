@@ -82,6 +82,11 @@ export default [
       parserOptions: {
         project: './e2e/tsconfig.json',
       },
+      globals: {
+        document: 'readonly',
+        window: 'readonly',
+        navigator: 'readonly',
+      },
     },
   },
   {
