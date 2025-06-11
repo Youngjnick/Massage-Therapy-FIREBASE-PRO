@@ -31,13 +31,26 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   name,
   children,
   autoFocus = false,
+  'data-testid': dataTestId,
   ...rest
 }) => {
   const classList = className.split(' ');
   const labelStr = String(label);
   const optionStr = String(option);
+
+  // Warn in dev if duplicate inputId is detected (simple global check)
+  try {
+    if ((typeof window !== 'undefined') && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+      if (inputId && document.getElementById(inputId)) {
+        console.warn(`QuizOption: Duplicate inputId detected: ${inputId}`);
+      }
+    }
+  } catch {
+    // Suppress errors in duplicate inputId dev check
+  }
+
   return (
-    <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest}>
+    <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest} data-qa="quiz-option" data-testid={dataTestId}>
       <input
         id={inputId}
         ref={inputRef}
@@ -47,11 +60,11 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         onChange={e => {
           if (disabled || e.currentTarget.readOnly) return;
           try {
-            onSelect();
+            if (typeof onSelect === 'function') onSelect();
           } catch {
             // Swallow error to prevent crash
           }
-          if (onSubmitOption) {
+          if (typeof onSubmitOption === 'function') {
             try {
               onSubmitOption();
             } catch {
@@ -60,6 +73,9 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           }
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
+        aria-checked={selected}
+        aria-disabled={disabled}
+        role="radio"
         style={{ marginRight: 12 }}
         disabled={disabled}
         tabIndex={0}
@@ -72,7 +88,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           }
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            if (onSubmitOption) {
+            if (typeof onSubmitOption === 'function') {
               try {
                 onSubmitOption();
               } catch {

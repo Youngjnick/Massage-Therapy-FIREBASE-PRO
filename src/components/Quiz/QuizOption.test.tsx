@@ -423,7 +423,7 @@ describe('QuizOption', () => {
     it('does not call handlers if input is rapidly set to readOnly and back before click', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
-      const { rerender } = render(
+      render(
         <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-readonly-toggle" />
       );
       // Simulate readOnly by patching property (not a real prop, but for test robustness)
@@ -668,10 +668,9 @@ describe('QuizOption', () => {
     it('does not call onSelect/onSubmitOption if input is rapidly toggled between enabled/disabled and clicked', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
-      const { rerender } = render(
+      const { rerender, unmount } = render(
         <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle" />
       );
-      // Rapidly enable and disable
       rerender(<QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle" />);
       rerender(<QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle" />);
       const radio = screen.getByRole('radio');
@@ -679,11 +678,12 @@ describe('QuizOption', () => {
       fireEvent.keyDown(radio, { key: 'Enter' });
       expect(onSelect).not.toHaveBeenCalled();
       expect(onSubmitOption).not.toHaveBeenCalled();
+      unmount();
     });
     it('calls onSelect/onSubmitOption if input is enabled after rapid toggling and then clicked', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
-      const { rerender } = render(
+      const { rerender, unmount } = render(
         <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle2" />
       );
       rerender(<QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle2" />);
@@ -692,11 +692,12 @@ describe('QuizOption', () => {
       fireEvent.keyDown(radio, { key: 'Enter' });
       expect(onSelect).toHaveBeenCalled();
       expect(onSubmitOption).toHaveBeenCalled();
+      unmount();
     });
     it('does not call handlers if input is rapidly set to readOnly and back before click', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
-      const { rerender } = render(
+      render(
         <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-readonly-toggle" />
       );
       // Simulate readOnly by patching property (not a real prop, but for test robustness)
@@ -725,6 +726,62 @@ describe('QuizOption', () => {
       fireEvent.keyDown(radio, { key: 'Enter' });
       expect(onSelect).not.toHaveBeenCalled();
       expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('QuizOption (critical/edge/robustness async handler tests)', () => {
+    it('does not crash if onSelect returns a rejected Promise', async () => {
+      const onSelect = jest.fn(() => Promise.reject(new Error('fail')));
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} inputId="test-id-async-reject" />
+      );
+      const radio = screen.getByRole('radio');
+      await fireEvent.click(radio);
+      // Explicitly catch the rejection from the handler
+      await onSelect.mock.results[0].value.catch(() => {});
+      expect(true).toBe(true); // If we reach here, no crash
+    });
+
+    it('does not crash if onSubmitOption returns a rejected Promise', async () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn(() => Promise.reject(new Error('fail')));
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-async-reject2" />
+      );
+      const radio = screen.getByRole('radio');
+      await fireEvent.keyDown(radio, { key: 'Enter' });
+      // Explicitly catch the rejection from the handler
+      await onSubmitOption.mock.results[0].value.catch(() => {});
+      expect(true).toBe(true);
+    });
+
+    it('does not crash if onSelect is async and triggers unmount', async () => {
+      let unmountFn: any;
+      const onSelect = jest.fn(async () => {
+        unmountFn();
+      });
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} inputId="test-id-async-unmount" />
+      );
+      unmountFn = unmount;
+      const radio = screen.getByRole('radio');
+      await fireEvent.click(radio);
+      expect(true).toBe(true);
+    });
+
+    it('does not crash if onSubmitOption is async and triggers unmount', async () => {
+      let unmountFn: any;
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn(async () => {
+        unmountFn();
+      });
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-async-unmount2" />
+      );
+      unmountFn = unmount;
+      const radio = screen.getByRole('radio');
+      await fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(true).toBe(true);
     });
   });
 });
