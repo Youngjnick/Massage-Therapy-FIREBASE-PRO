@@ -5,14 +5,16 @@ interface QuizSortSelectProps {
   setSort: (val: string) => void;
 }
 
-const QuizSortSelect = ({ sort = 'default', setSort = () => {} }: QuizSortSelectProps) => {
-  return (
-    <select data-testid="quiz-sort-select" value={sort} onChange={e => setSort(e.target.value)}>
+const QuizSortSelect: React.FC<QuizSortSelectProps> = ({ sort, setSort }) => (
+  <label style={{ marginLeft: '1rem' }}>
+    Sort:
+    <select value={sort} onChange={e => setSort(e.target.value)}>
       <option value="default">Default</option>
-      <option value="asc">Ascending</option>
-      <option value="desc">Descending</option>
+      <option value="accuracy">By Accuracy</option>
+      <option value="time">By Time</option>
+      <option value="difficulty">By Difficulty</option>
     </select>
-  );
-};
+  </label>
+);
 
 export default QuizSortSelect;

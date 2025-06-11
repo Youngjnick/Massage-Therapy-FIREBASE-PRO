@@ -5,17 +5,12 @@ interface QuizFeedbackProps {
   feedback: string | null;
 }
 
-const QuizFeedback = ({ show, feedback }: QuizFeedbackProps) => {
-  if (!show || feedback == null) return null;
-  if (typeof feedback === 'symbol') return null;
-  let feedbackStr: string;
-  try {
-    feedbackStr = String(feedback);
-  } catch {
-    return null;
-  }
+const QuizFeedback: React.FC<QuizFeedbackProps> = ({ show, feedback }) => {
+  if (!show || !feedback) return null;
   return (
-    <div data-testid="quiz-feedback" style={{ whiteSpace: 'pre-line' }}>{feedbackStr}</div>
+    <div className="quiz-feedback" style={{ color: feedback === 'Correct!' ? '#059669' : '#ef4444' }}>
+      {feedback}
+    </div>
   );
 };
 

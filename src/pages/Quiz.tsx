@@ -4,7 +4,6 @@ import { Question } from '../types/index';
 import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
 import QuizStartForm from '../components/Quiz/QuizStartForm';
-import { useWindowSize } from 'react-use';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
 import QuizProgressBar from '../components/Quiz/QuizProgressBar';
 import QuizStepper from '../components/Quiz/QuizStepper';
@@ -29,11 +28,11 @@ const Quiz: React.FC = () => {
   const [questionTimes, setQuestionTimes] = useState<number[]>([]);
   const [questionStart, setQuestionStart] = useState<number | null>(null);
   const [sort, setSort] = useState<'default' | 'accuracy' | 'time' | 'difficulty'>('default');
-  // const [userStats, setUserStats] = useState<any[]>([]);
   const [showReview, setShowReview] = useState(false);
   const [reviewQueue, setReviewQueue] = useState<number[]>([]);
   const [topicStats, setTopicStats] = useState<{[topic:string]:{correct:number,total:number}}>({});
-  useWindowSize();
+  const [showExplanations, setShowExplanations] = useState(false);
+  const optionRefs = useRef<(HTMLInputElement | null)[]>([]);
 
   // --- Derived variables (declare before hooks) ---
   const filteredQuestions = questions.filter((q: any) => (selectedTopic ? q.topic === selectedTopic : true));
@@ -44,7 +43,6 @@ const Quiz: React.FC = () => {
   const quizQuestions = getFilteredSortedQuestions();
   const activeQuestions = started ? shuffledQuestions : quizQuestions;
   const q = activeQuestions[current];
-  const optionRefs = useRef<(HTMLInputElement | null)[]>([]);
 
   // Ensure optionRefs has the correct length for the current question
   useEffect(() => {
@@ -213,25 +211,13 @@ const Quiz: React.FC = () => {
     }
   }, [showResults]);
 
-  // --- Handler and utility function definitions (must be before any return/guard clause) ---
-  // Utility: Fisher-Yates shuffle
-  function shuffleArray<T>(array: T[]): T[] {
-    const arr = [...array];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }
-
-  // Adaptive topic mix: increase frequency of weak topics
+  // --- Adaptive/advanced logic helpers ---
   function getWeakTopics() {
     return Object.entries(topicStats)
       .filter(([, stat]) => stat.total >= 2 && (stat.correct / stat.total) < 0.7)
       .map(([t]) => t);
   }
-
-  function getNextQuestionIndex() {
+  const getNextQuestionIndex = () => {
     if (!activeQuestions[current]?.difficulty) return current + 1;
     const currentDifficulty = activeQuestions[current].difficulty;
     const allDifficulties = Array.from(new Set(activeQuestions.map(q => q.difficulty).filter(Boolean)));
@@ -300,13 +286,10 @@ const Quiz: React.FC = () => {
     // No more questions
     return activeQuestions.length;
   };
-
   const next = () => setCurrent((c) => Math.min(c + 1, quizQuestions.length - 1));
   const prev = () => setCurrent((c) => Math.max(c - 1, 0));
-  // New: distinguish between navigation and answer submission
   const handleAnswer = (idx: number, submit: boolean = false) => {
-    // Defensive: Only allow submission if submit === true
-    if (answered && submit) return; // Prevent rapid/duplicate answers
+    if (answered && submit) return;
     setUserAnswers((prev) => {
       const copy = [...prev];
       copy[current] = idx;
@@ -332,19 +315,14 @@ const Quiz: React.FC = () => {
       }, showInstantFeedback ? 500 : 0);
     }
   };
-
-  // Handler to start the quiz
   function startQuiz() {
     let qs = quizQuestions;
-    if (randomizeQuestions) {
-      qs = shuffleArray(qs);
-    }
     setShuffledQuestions(qs);
     // Shuffle options for each question if enabled
     if (randomizeOptions) {
       const opts: { [key: number]: string[] } = {};
       qs.forEach((q, idx) => {
-        opts[idx] = shuffleArray(q.options);
+        opts[idx] = [...q.options];
       });
       setShuffledOptions(opts);
     } else {
@@ -365,108 +343,81 @@ const Quiz: React.FC = () => {
   if (loading) return <div>Loading questions...</div>;
   if (error) return <div>{error}</div>;
 
+  // Quiz start screen
+  if (!started) {
+    return (
+      <div className="glass-card" style={{ maxWidth: 600, margin: '2rem auto' }}>
+        <h2>Start a Quiz</h2>
+        <QuizStartForm
+          availableTopics={availableTopics}
+          selectedTopic={selectedTopic}
+          setSelectedTopic={setSelectedTopic}
+          quizLength={quizLength}
+          setQuizLength={setQuizLength}
+          maxQuizLength={filteredQuestions.length}
+          randomizeQuestions={randomizeQuestions}
+          setRandomizeQuestions={setRandomizeQuestions}
+          randomizeOptions={randomizeOptions}
+          setRandomizeOptions={setRandomizeOptions}
+          sort={sort}
+          setSort={val => setSort(val as typeof sort)}
+          onStart={startQuiz}
+          showExplanations={showExplanations}
+          setShowExplanations={setShowExplanations}
+        />
+      </div>
+    );
+  }
+
+  // Results screen (simple inline summary)
+  if (showResults) {
+    const correctCount = userAnswers.filter((a, i) => a !== undefined && (shuffledOptions[i] || activeQuestions[i].options)[a] === activeQuestions[i].correctAnswer).length;
+    return (
+      <div style={{ maxWidth: 600, margin: '2rem auto', textAlign: 'center' }}>
+        <h2>Quiz Results</h2>
+        <div style={{ fontSize: 20, margin: '1rem 0' }}>Score: {correctCount} / {activeQuestions.length}</div>
+        <div style={{ margin: '1rem 0' }}>Average Time: {questionTimes.length ? (questionTimes.reduce((a, b) => a + b, 0) / questionTimes.length).toFixed(2) : 'N/A'} seconds</div>
+        <button onClick={() => {
+          setStarted(false);
+          setShowResults(false);
+          setUserAnswers([]);
+          setCurrent(0);
+          setAnswered(false);
+          setShuffledQuestions([]);
+          setShuffledOptions({});
+          setReviewQueue([]);
+          setShowReview(false);
+          setQuestionTimes([]);
+          setQuestionStart(null);
+        }}>Start New Quiz</button>
+      </div>
+    );
+  }
+
+  // Quiz in progress
   return (
     <div>
-      {/* --- Quiz start / topic selection --- */}
-      {!started && (
-        <div className="glass-card" style={{ maxWidth: 600, margin: '2rem auto' }}>
-          <h2>Start a Quiz</h2>
-          <QuizStartForm
-            availableTopics={availableTopics}
-            selectedTopic={selectedTopic}
-            setSelectedTopic={setSelectedTopic}
-            quizLength={quizLength}
-            setQuizLength={setQuizLength}
-            maxQuizLength={filteredQuestions.length}
-            randomizeQuestions={randomizeQuestions}
-            setRandomizeQuestions={setRandomizeQuestions}
-            randomizeOptions={randomizeOptions}
-            setRandomizeOptions={setRandomizeOptions}
-            sort={sort}
-            setSort={(val: string) => setSort(val as any)}
-            onStart={startQuiz}
-            showExplanations={false}
-            setShowExplanations={() => {}}
-          />
-        </div>
-      )}
-
-      {/* --- Actual quiz --- */}
-      {started && (
-        <div>
-          <QuizProgressBar progress={activeQuestions.length > 0 ? ((current + 1) / activeQuestions.length) * 100 : 0} />
-          <QuizStepper
-            total={activeQuestions.length}
-            current={current}
-            answered={activeQuestions.map((_, i) => userAnswers[i] !== undefined)}
-            onStep={setCurrent}
-          />
-          <QuizQuestionCard
-            q={q}
-            current={current}
-            userAnswers={userAnswers}
-            answered={answered}
-            handleAnswer={handleAnswer}
-            optionRefs={optionRefs}
-            showExplanations={false}
-            shuffledOptions={shuffledOptions}
-          />
-        </div>
-      )}
-
-      {/* --- Results and review --- */}
-      {showResults && (
-        <div data-testid="quiz-results-screen">
-          <h2>Results</h2>
-          <div>
-            {activeQuestions.map((q, i) => {
-              const userAnswer = userAnswers[i];
-              const correctOpt = (shuffledOptions[i] || q.options).indexOf(q.correctAnswer);
-              const isCorrect = userAnswer === correctOpt;
-              return (
-                <div key={i} style={{ marginBottom: '1rem' }}>
-                  <div>
-                    <strong>Q{i + 1}:</strong> {q.text}
-                  </div>
-                  <div>
-                    Your answer: {userAnswer !== undefined ? (shuffledOptions[i] || q.options)[userAnswer] : '—'}
-                    {isCorrect ? ' ✅' : ' ❌'}
-                  </div>
-                  <div>
-                    Correct answer: {q.correctAnswer}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <h3>Topic Stats</h3>
-          <ul>
-            {Object.entries(topicStats).map(([topic, stats]) => (
-              <li key={topic}>
-                {topic}: {stats.correct} / {stats.total} correct
-              </li>
-            ))}
-          </ul>
-          <button onClick={() => {
-            console.log('Start New Quiz button clicked');
-            setStarted(false);
-            setShowResults(false);
-            setUserAnswers([]);
-            setCurrent(0);
-            setAnswered(false);
-            setShuffledQuestions([]);
-            setShuffledOptions({});
-            setReviewQueue([]);
-            setShowReview(false);
-            setQuestionTimes([]);
-            setQuestionStart(null);
-          }} aria-label="Start New Quiz">
-            Start New Quiz
-          </button>
-        </div>
-      )}
+      <QuizProgressBar progress={activeQuestions.length > 0 ? ((current + 1) / activeQuestions.length) * 100 : 0} />
+      <QuizStepper
+        total={activeQuestions.length}
+        current={current}
+        answered={activeQuestions.map((_, i) => userAnswers[i] !== undefined)}
+        onStep={setCurrent}
+      />
+      <QuizQuestionCard
+        q={q}
+        current={current}
+        userAnswers={userAnswers}
+        answered={answered}
+        handleAnswer={handleAnswer}
+        optionRefs={optionRefs}
+        showInstantFeedback={showInstantFeedback}
+        answerFeedback={null}
+        showExplanations={showExplanations}
+        shuffledOptions={shuffledOptions}
+      />
     </div>
   );
-};
+}
 
 export default Quiz;
