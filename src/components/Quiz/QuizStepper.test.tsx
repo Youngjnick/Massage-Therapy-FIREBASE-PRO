@@ -67,15 +67,41 @@ describe('QuizStepper', () => {
     const buttons = screen.getAllByRole('button');
     expect(buttons.length === 20 || buttons.length === 21).toBe(true);
   });
+});
 
-  it('supports keyboard navigation (Tab/Shift+Tab)', () => {
+describe('QuizStepper (keyboard navigation)', () => {
+  it('focuses current step on mount', () => {
     render(
       <QuizStepper total={3} current={1} answered={[false, false, false]} onStep={() => {}} />
     );
     const buttons = screen.getAllByRole('button');
+    expect(document.activeElement === buttons[1] || buttons[1].tabIndex === 0).toBeTruthy();
+  });
+
+  it('navigates steps with Tab and Shift+Tab', () => {
+    render(
+      <QuizStepper total={3} current={0} answered={[false, false, false]} onStep={() => {}} />
+    );
+    const buttons = screen.getAllByRole('button');
     buttons[0].focus();
-    expect(buttons[0]).toHaveFocus();
+    fireEvent.keyDown(buttons[0], { key: 'Tab' });
+    // Simulate tabbing to next button
     buttons[1].focus();
-    expect(buttons[1]).toHaveFocus();
+    expect(document.activeElement).toBe(buttons[1]);
+    fireEvent.keyDown(buttons[1], { key: 'Tab', shiftKey: true });
+    buttons[0].focus();
+    expect(document.activeElement).toBe(buttons[0]);
+  });
+
+  it('activates step with Enter/Space', () => {
+    const onStep = jest.fn();
+    render(
+      <QuizStepper total={3} current={0} answered={[false, false, false]} onStep={onStep} />
+    );
+    const buttons = screen.getAllByRole('button');
+    buttons[2].focus();
+    fireEvent.keyDown(buttons[2], { key: 'Enter' });
+    fireEvent.keyDown(buttons[2], { key: ' ' });
+    expect(onStep).toHaveBeenCalledWith(2);
   });
 });

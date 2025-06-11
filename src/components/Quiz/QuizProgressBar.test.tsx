@@ -31,3 +31,28 @@ describe('QuizProgressBar (aria and edge cases)', () => {
     expect(bar).toHaveStyle('width: 100%');
   });
 });
+
+describe('QuizProgressBar (edge and accessibility)', () => {
+  it('renders with 1 step (0% and 100%)', () => {
+    render(<>
+      <QuizProgressBar progress={0} />
+      <QuizProgressBar progress={100} />
+    </>);
+    const bars = screen.getAllByRole('progressbar');
+    expect(bars[0]).toHaveStyle('width: 0%');
+    expect(bars[1]).toHaveStyle('width: 100%');
+  });
+
+  it('renders with non-integer progress', () => {
+    render(<QuizProgressBar progress={33.3} />);
+    const bar = screen.getByRole('progressbar');
+    expect(bar).toHaveAttribute('aria-valuenow', '33.3');
+  });
+
+  it('is focusable and has correct aria-label', () => {
+    render(<QuizProgressBar progress={50} />);
+    const bar = screen.getByRole('progressbar');
+    expect(bar.tabIndex === 0 || bar.getAttribute('tabindex') === '0').toBeTruthy();
+    expect(bar).toHaveAttribute('aria-label');
+  });
+});

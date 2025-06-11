@@ -67,6 +67,12 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
         checked={showExplanations}
         onChange={e => setShowExplanations(e.target.checked)}
         aria-label="Show Explanations"
+        onKeyDown={e => {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            setShowExplanations(!showExplanations);
+          }
+        }}
       />
       Show Explanations
     </label>

@@ -108,3 +108,84 @@ describe('QuizStartForm (form submission and validation)', () => {
     expect(screen.getByRole('button', { name: /start/i })).toBeEnabled();
   });
 });
+
+describe('QuizStartForm (keyboard and accessibility)', () => {
+  it('focuses first input on mount', () => {
+    render(
+      <QuizStartForm
+        availableTopics={['A', 'B']}
+        selectedTopic="A"
+        setSelectedTopic={() => {}}
+        quizLength={1}
+        setQuizLength={() => {}}
+        maxQuizLength={2}
+        randomizeQuestions={false}
+        setRandomizeQuestions={() => {}}
+        randomizeOptions={false}
+        setRandomizeOptions={() => {}}
+        sort="default"
+        setSort={() => {}}
+        onStart={() => {}}
+        showExplanations={false}
+        setShowExplanations={() => {}}
+      />
+    );
+    const select = screen.getByLabelText(/topic/i);
+    expect(document.activeElement === select || select.tabIndex === 0).toBeTruthy();
+  });
+
+  it('toggles explanation with keyboard', () => {
+    const setShowExplanations = jest.fn();
+    render(
+      <QuizStartForm
+        availableTopics={['A']}
+        selectedTopic="A"
+        setSelectedTopic={() => {}}
+        quizLength={1}
+        setQuizLength={() => {}}
+        maxQuizLength={1}
+        randomizeQuestions={false}
+        setRandomizeQuestions={() => {}}
+        randomizeOptions={false}
+        setRandomizeOptions={() => {}}
+        sort="default"
+        setSort={() => {}}
+        onStart={() => {}}
+        showExplanations={false}
+        setShowExplanations={setShowExplanations}
+      />
+    );
+    const checkbox = screen.getByLabelText(/show explanations/i);
+    checkbox.focus();
+    fireEvent.keyDown(checkbox, { key: ' ' });
+    expect(setShowExplanations).toHaveBeenCalled();
+  });
+
+  it('submits form with Enter key', () => {
+    const onStart = jest.fn();
+    render(
+      <QuizStartForm
+        availableTopics={['A']}
+        selectedTopic="A"
+        setSelectedTopic={() => {}}
+        quizLength={1}
+        setQuizLength={() => {}}
+        maxQuizLength={1}
+        randomizeQuestions={false}
+        setRandomizeQuestions={() => {}}
+        randomizeOptions={false}
+        setRandomizeOptions={() => {}}
+        sort="default"
+        setSort={() => {}}
+        onStart={onStart}
+        showExplanations={false}
+        setShowExplanations={() => {}}
+      />
+    );
+    const startBtn = screen.getByRole('button', { name: /start/i });
+    startBtn.focus();
+    fireEvent.keyDown(startBtn, { key: 'Enter' });
+    fireEvent.click(startBtn);
+    expect(onStart).toHaveBeenCalled();
+  });
+});

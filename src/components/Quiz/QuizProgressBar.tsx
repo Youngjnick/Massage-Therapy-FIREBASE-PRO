@@ -13,6 +13,8 @@ const QuizProgressBar: React.FC<QuizProgressBarProps> = ({ progress }) => (
       aria-valuemax={100}
       aria-valuemin={0}
       role="progressbar"
+      tabIndex={0}
+      aria-label={`Quiz progress: ${progress}%`}
     />
     <div style={{ textAlign: 'right', fontWeight: 600, marginTop: 4 }}>{progress} %</div>
   </div>

@@ -21,6 +21,12 @@ const QuizStepper: React.FC<QuizStepperProps> = ({ total, current, answered, onS
         aria-label={`Go to question ${idx + 1}`}
         aria-current={idx === current ? 'step' : undefined}
         onClick={() => onStep(idx)}
+        onKeyDown={e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onStep(idx);
+          }
+        }}
       />
     ))}
   </div>
