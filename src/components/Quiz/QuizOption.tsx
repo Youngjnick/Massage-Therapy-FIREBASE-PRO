@@ -38,24 +38,25 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   const labelStr = String(label);
   const optionStr = String(option);
 
-  // Make inputId more unique by including question id from name if possible
-  let uniqueInputId = inputId;
-  if (name && name.startsWith('quiz-question-')) {
-    // Try to extract question id from name
-    const qid = name.replace('quiz-question-', '');
-    uniqueInputId = `${inputId}-${qid}`;
-  }
+  // Use inputId as provided, do not append qid from name
+  const uniqueInputId = inputId;
 
   // Warn in dev if duplicate inputId is detected (simple global check)
-  try {
-    if ((typeof window !== 'undefined') && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
-      if (uniqueInputId && document.getElementById(uniqueInputId)) {
-        console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
+  React.useEffect(() => {
+    if (
+      typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ) {
+      const el = document.getElementById(uniqueInputId);
+      if (el) {
+        // Check if there is more than one element with this id
+        const all = document.querySelectorAll(`#${CSS.escape(uniqueInputId)}`);
+        if (all.length > 1) {
+          console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
+        }
       }
     }
-  } catch {
-    // Suppress errors in duplicate inputId dev check
-  }
+  }, [uniqueInputId]);
 
   return (
     <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest} data-qa="quiz-option" data-testid={dataTestId}>
@@ -69,15 +70,13 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           if (disabled || e.currentTarget.readOnly) return;
           try {
             if (typeof onSelect === 'function') onSelect();
-          } catch {
-            // Swallow error to prevent crash
+          } catch (err) {
+            console.error(err);
           }
-          if (typeof onSubmitOption === 'function') {
-            try {
-              onSubmitOption();
-            } catch {
-              // Swallow error to prevent crash
-            }
+          try {
+            if (typeof onSubmitOption === 'function') onSubmitOption();
+          } catch (err) {
+            console.error(err);
           }
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
@@ -99,8 +98,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
             if (typeof onSubmitOption === 'function') {
               try {
                 onSubmitOption();
-              } catch {
-                // Swallow error to prevent crash
+              } catch (err) {
+                console.error(err);
               }
             }
           }
