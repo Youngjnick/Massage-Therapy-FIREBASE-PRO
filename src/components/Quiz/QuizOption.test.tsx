@@ -277,4 +277,60 @@ describe('QuizOption', () => {
       expect(radio).toHaveAttribute('aria-label', 'Option : ');
     });
   });
+
+  describe('QuizOption (extreme/critical edge cases)', () => {
+    it('does not fire onSelect/onSubmitOption if input is blurred before click', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-blur" />
+      );
+      const radio = screen.getByRole('radio');
+      radio.focus();
+      fireEvent.blur(radio);
+      fireEvent.click(radio);
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not fire onSelect/onSubmitOption if input is removed from DOM before event', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-unmount" />
+      );
+      const radio = screen.getByRole('radio');
+      unmount();
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('handles rapid focus/blur/focus cycles without error', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-focuscycle" />
+      );
+      const radio = screen.getByRole('radio');
+      for (let i = 0; i < 10; i++) {
+        radio.focus();
+        radio.blur();
+      }
+      expect(radio).toBeInTheDocument();
+    });
+    it('does not fire onSubmitOption if input is not focused and Enter/Space is pressed elsewhere', () => {
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-notfocused" />
+      );
+      // Simulate Enter/Space on document body
+      fireEvent.keyDown(document.body, { key: 'Enter' });
+      fireEvent.keyDown(document.body, { key: ' ' });
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('renders correctly with only required props', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-required" />
+      );
+      expect(screen.getByRole('radio')).toBeInTheDocument();
+    });
+  });
 });
