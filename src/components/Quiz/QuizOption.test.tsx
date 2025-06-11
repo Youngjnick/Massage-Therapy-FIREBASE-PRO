@@ -527,4 +527,66 @@ describe('QuizOption', () => {
       }).toThrow('child error');
     });
   });
+
+  describe('QuizOption (critical error and edge cases - async and timing)', () => {
+    it('does not call handlers if click is very rapid after disabling', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { rerender } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-disable" />
+      );
+      const radio = screen.getByRole('radio');
+      // Simulate rapid disable before click
+      rerender(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-disable" />
+      );
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('does not call handlers if input is quickly set to readOnly before event', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-readonly2" />
+      );
+      const radio = screen.getByRole('radio');
+      Object.defineProperty(radio, 'readOnly', { value: true });
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('calls handlers if input is enabled and not readOnly after rapid toggling', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { rerender } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-enable" />
+      );
+      const radio = screen.getByRole('radio');
+      rerender(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-enable" />
+      );
+      Object.defineProperty(radio, 'readOnly', { value: false });
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not call handlers if input is removed from DOM and event is fired asynchronously', async () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-async-unmount" />
+      );
+      const radio = screen.getByRole('radio');
+      unmount();
+      await Promise.resolve(); // Simulate async delay
+      expect(() => fireEvent.click(radio)).not.toThrow();
+      expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+  });
 });
