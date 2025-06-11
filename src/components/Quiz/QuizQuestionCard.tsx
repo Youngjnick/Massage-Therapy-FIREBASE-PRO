@@ -59,6 +59,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
             return (
               <li key={inputId}>
                 <QuizOption
+                  key={inputId + '-' + answered}
                   label={String.fromCharCode(65 + i)}
                   option={opt}
                   selected={userAnswers[current] === i}
@@ -69,6 +70,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   inputRef={optionRefs.current[i] ? { current: optionRefs.current[i] } : undefined}
                   inputId={inputId}
                   name={name}
+                  autoFocus={current === 0 && i === 0}
                 >
                   {/* Bookmark and error buttons can be slotted here if needed */}
                 </QuizOption>
