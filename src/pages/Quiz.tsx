@@ -7,6 +7,7 @@ import QuizStartForm from '../components/Quiz/QuizStartForm';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
 import QuizProgressBar from '../components/Quiz/QuizProgressBar';
 import QuizStepper from '../components/Quiz/QuizStepper';
+import { shuffleArray } from '../utils/quizUtils';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -19,7 +20,7 @@ const Quiz: React.FC = () => {
   const [current, setCurrent] = useState(0);
   const [userAnswers, setUserAnswers] = useState<number[]>([]);
   const [showResults, setShowResults] = useState(false);
-  const [randomizeQuestions, setRandomizeQuestions] = useState(false);
+  const [randomizeQuestions, setRandomizeQuestions] = useState(true); // default true
   const [randomizeOptions, setRandomizeOptions] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
   const [shuffledOptions, setShuffledOptions] = useState<{ [key: number]: string[] }>({});
@@ -31,13 +32,43 @@ const Quiz: React.FC = () => {
   const [showReview, setShowReview] = useState(false);
   const [reviewQueue, setReviewQueue] = useState<number[]>([]);
   const [topicStats, setTopicStats] = useState<{[topic:string]:{correct:number,total:number}}>({});
-  const [showExplanations, setShowExplanations] = useState(false);
+  const [showExplanations, setShowExplanations] = useState(true); // default true
+  const [filter, setFilter] = useState<'all' | 'incorrect' | 'unseen' | 'difficulty' | 'tag'>('all');
+  const [filterValue, setFilterValue] = useState<string>('');
   const optionRefs = useRef<(HTMLInputElement | null)[]>([]);
 
   // --- Derived variables (declare before hooks) ---
   const filteredQuestions = questions.filter((q: any) => (selectedTopic ? q.topic === selectedTopic : true));
+
+  // Reset filter and filterValue on quiz start
+  useEffect(() => {
+    if (!started) {
+      setFilter('all');
+      setFilterValue('');
+    }
+  }, [started]);
+
   const getFilteredSortedQuestions = () => {
     let qs = [...filteredQuestions];
+    // --- Filtering ---
+    if (filter === 'incorrect') {
+      qs = qs.filter((q, i) => userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] !== q.correctAnswer);
+    } else if (filter === 'unseen') {
+      qs = qs.filter((q, i) => userAnswers[i] === undefined);
+    } else if (filter === 'difficulty' && filterValue) {
+      qs = qs.filter(q => q.difficulty === filterValue);
+    } else if (filter === 'tag' && filterValue) {
+      qs = qs.filter(q => q.tags && q.tags.includes(filterValue));
+    }
+    // --- Sorting ---
+    if (sort === 'accuracy') {
+      // If you have per-question accuracy stats, sort by them. Placeholder: no-op.
+    } else if (sort === 'time') {
+      // If you have per-question time stats, sort by them. Placeholder: no-op.
+    } else if (sort === 'difficulty') {
+      const order: Record<string, number> = { easy: 0, medium: 1, intermediate: 2, hard: 3 };
+      qs.sort((a, b) => (order[a.difficulty ?? ''] ?? 99) - (order[b.difficulty ?? ''] ?? 99));
+    }
     return qs;
   };
   const quizQuestions = getFilteredSortedQuestions();
@@ -143,6 +174,11 @@ const Quiz: React.FC = () => {
   useEffect(() => {
     setAnswered(false);
   }, [current, started]);
+
+  // Reset answered state when current question changes
+  useEffect(() => {
+    setAnswered(false);
+  }, [current]);
 
   // Start timing when quiz starts or question changes
   useEffect(() => {
@@ -317,12 +353,15 @@ const Quiz: React.FC = () => {
   };
   function startQuiz() {
     let qs = quizQuestions;
+    if (randomizeQuestions) {
+      qs = shuffleArray(qs);
+    }
     setShuffledQuestions(qs);
     // Shuffle options for each question if enabled
     if (randomizeOptions) {
       const opts: { [key: number]: string[] } = {};
       qs.forEach((q, idx) => {
-        opts[idx] = [...q.options];
+        opts[idx] = shuffleArray(q.options);
       });
       setShuffledOptions(opts);
     } else {
@@ -345,6 +384,9 @@ const Quiz: React.FC = () => {
 
   // Quiz start screen
   if (!started) {
+    // Collect all unique tags from questions
+    const allTags = Array.from(new Set(questions.flatMap(q => q.tags || [])));
+    const allDifficulties = Array.from(new Set(questions.map(q => q.difficulty).filter(Boolean))) as string[];
     return (
       <div className="glass-card" style={{ maxWidth: 600, margin: '2rem auto' }}>
         <h2>Start a Quiz</h2>
@@ -364,6 +406,14 @@ const Quiz: React.FC = () => {
           onStart={startQuiz}
           showExplanations={showExplanations}
           setShowExplanations={setShowExplanations}
+          filter={filter}
+          setFilter={val => setFilter(val as typeof filter)}
+          filterValue={filterValue}
+          setFilterValue={setFilterValue}
+          availableDifficulties={allDifficulties}
+          availableTags={allTags}
+          showInstantFeedback={showInstantFeedback}
+          setShowInstantFeedback={setShowInstantFeedback}
         />
       </div>
     );

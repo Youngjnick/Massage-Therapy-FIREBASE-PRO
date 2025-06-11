@@ -806,4 +806,94 @@ describe('QuizOption', () => {
       expect(onSubmitOption).not.toHaveBeenCalled();
     });
   });
+
+  describe('QuizOption (mouse click-to-submit extra cases)', () => {
+    it('does not call handlers when clicking a disabled option', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-disabled-mouse" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('does not call handlers when clicking an already-selected option', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-selected-mouse" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(onSelect).not.toHaveBeenCalled();
+      // onSubmitOption is not called on click if already selected (browser default)
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('disables all options after click-to-submit (parent disables after submit)', () => {
+      // Simulate parent logic: after click, disables all options
+      function Wrapper() {
+        const [answered, setAnswered] = React.useState(false);
+        return (
+          <QuizOption
+            label="A"
+            option="Option 1"
+            selected={false}
+            disabled={answered}
+            onSelect={() => setAnswered(true)}
+            onSubmitOption={() => setAnswered(true)}
+            inputId="test-id-disable-after"
+          />
+        );
+      }
+      render(<Wrapper />);
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(radio).toBeDisabled();
+    });
+    it('shows correct indicator after click-to-submit', async () => {
+      function Wrapper() {
+        const [answered, setAnswered] = React.useState(false);
+        return (
+          <QuizOption
+            label="A"
+            option="Option 1"
+            selected={answered} // selected only after click
+            disabled={answered}
+            className={answered ? 'correct' : ''}
+            onSelect={() => setAnswered(true)}
+            onSubmitOption={() => setAnswered(true)}
+            inputId="test-id-indicator-after"
+          />
+        );
+      }
+      render(<Wrapper />);
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(await screen.findByTitle('Correct')).toBeInTheDocument();
+    });
+    it('does nothing if clicked after already answered', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-answered-mouse" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('handles click-to-submit with special characters', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="Ω" option={"Option & < > ' \""} selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-special-mouse" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+  });
 });
