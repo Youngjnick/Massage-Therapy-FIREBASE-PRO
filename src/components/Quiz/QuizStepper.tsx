@@ -12,13 +12,21 @@ const QuizStepper: React.FC<QuizStepperProps> = ({ total, current, answered, onS
     {Array.from({ length: total }).map((_, idx) => (
       <button
         key={idx}
+        type="button"
         className={
           'quiz-stepper-dot' +
           (idx === current ? ' active' : '') +
           (answered[idx] ? ' answered' : '')
         }
         aria-label={`Go to question ${idx + 1}`}
+        aria-current={idx === current ? 'step' : undefined}
         onClick={() => onStep(idx)}
+        onKeyDown={e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onStep(idx);
+          }
+        }}
       />
     ))}
   </div>

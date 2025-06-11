@@ -1,20 +1,49 @@
-import React from 'react';
-import { FaBookOpen } from 'react-icons/fa';
+import React, { useEffect, useState } from 'react';
+import { getBookmarks, addBookmark, deleteBookmark } from '../../bookmarks';
 
-interface BookmarksToggleButtonProps {
-  showBookmarks: boolean;
-  onClick: () => void;
+interface Props {
+  questionId: string;
+  userId: string;
 }
 
-const BookmarksToggleButton: React.FC<BookmarksToggleButtonProps> = ({ showBookmarks, onClick }) => (
-  <button
-    onClick={onClick}
-    style={{ position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', cursor: 'pointer', zIndex: 10 }}
-    title={showBookmarks ? 'Hide Bookmarked Questions' : 'Show Bookmarked Questions'}
-    aria-label={showBookmarks ? 'Hide Bookmarked Questions' : 'Show Bookmarked Questions'}
-  >
-    <FaBookOpen size={28} color={showBookmarks ? '#3b82f6' : '#64748b'} />
-  </button>
-);
+const BookmarksToggleButton: React.FC<Props> = ({ questionId, userId }) => {
+  const [bookmarked, setBookmarked] = useState(false);
+  const [bookmarkId, setBookmarkId] = useState<string | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    getBookmarks(userId).then((bookmarks: any[]) => {
+      const found = bookmarks.find(b => b.questionId === questionId);
+      if (mounted) {
+        setBookmarked(!!found);
+        setBookmarkId(found ? found.id : null);
+      }
+    });
+    return () => { mounted = false; };
+  }, [questionId, userId]);
+
+  const handleToggle = async () => {
+    if (bookmarked && bookmarkId) {
+      await deleteBookmark(bookmarkId);
+      setBookmarked(false);
+      setBookmarkId(null);
+    } else {
+      await addBookmark(userId, { questionId });
+      setBookmarked(true);
+      // In real app, refetch or get new id
+    }
+  };
+
+  return (
+    <button
+      aria-label={bookmarked ? 'Bookmarked' : 'Bookmark'}
+      aria-pressed={bookmarked}
+      onClick={handleToggle}
+      type="button"
+    >
+      {bookmarked ? '★ Bookmarked' : '☆ Bookmark'}
+    </button>
+  );
+};
 
 export default BookmarksToggleButton;

@@ -9,12 +9,13 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "jsx": "react-jsx",
-    "types": ["vite/client"],
+    "types": ["vite/client", "jest"],
     "lib": ["es2020", "dom"],
-    "moduleResolution": "bundler"
+    "moduleResolution": "node"
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "__tests__/**/*"
   ],
   "exclude": [
     "node_modules",

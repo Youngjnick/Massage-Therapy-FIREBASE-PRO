@@ -18,6 +18,8 @@ interface QuizStartFormProps {
   sort: string;
   setSort: (val: string) => void;
   onStart: () => void;
+  showExplanations: boolean;
+  setShowExplanations: (val: boolean) => void;
 }
 
 const QuizStartForm: React.FC<QuizStartFormProps> = ({
@@ -34,17 +36,23 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
   sort,
   setSort,
   onStart,
+  showExplanations,
+  setShowExplanations,
 }) => (
-  <form style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); onStart(); }}>
+  <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); onStart(); }}>
+    <label htmlFor="quiz-topic-select">Topic</label>
     <QuizTopicSelect
       availableTopics={availableTopics}
       selectedTopic={selectedTopic}
       setSelectedTopic={setSelectedTopic}
+      id="quiz-topic-select"
     />
+    <label htmlFor="quiz-length-input">Quiz Length</label>
     <QuizLengthInput
       quizLength={quizLength}
       setQuizLength={setQuizLength}
       maxQuizLength={maxQuizLength}
+      id="quiz-length-input"
     />
     <QuizRandomizeOptions
       randomizeQuestions={randomizeQuestions}
@@ -53,6 +61,21 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
       setRandomizeOptions={setRandomizeOptions}
     />
     <QuizSortSelect sort={sort} setSort={setSort} />
+    <label>
+      <input
+        type="checkbox"
+        checked={showExplanations}
+        onChange={e => setShowExplanations(e.target.checked)}
+        aria-label="Show Explanations"
+        onKeyDown={e => {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            setShowExplanations(!showExplanations);
+          }
+        }}
+      />
+      Show Explanations
+    </label>
     <button type="submit" style={{ marginLeft: '1rem' }}>Start Quiz</button>
   </form>
 );

@@ -1,20 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { getBadges, Badge } from '../badges';
 import { BASE_URL } from '../utils/baseUrl';
 
-const badgeList = [
-  // List badge filenames or fetch dynamically if needed
-  'first_quiz.png',
-  'accuracy_100.png',
-  'badge_collector_basic.png',
-  // ...add more as needed
-];
-
 const Achievements: React.FC = () => {
-  const [badges, setBadges] = useState<string[]>([]);
+  const [badges, setBadges] = useState<Badge[]>([]);
 
   useEffect(() => {
-    // TODO: Replace with real user badge fetch
-    setBadges(badgeList); // For demo, show all
+    getBadges().then(setBadges);
   }, []);
 
   return (
@@ -22,9 +14,17 @@ const Achievements: React.FC = () => {
       <h2>Achievements</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
         {badges.map(badge => (
-          <div key={badge} style={{ textAlign: 'center' }}>
-            <img src={`${BASE_URL}badges/${badge}`} alt={badge} style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }} />
-            <div style={{ marginTop: 8 }}>{badge.replace(/_/g, ' ').replace(/\.png$/, '')}</div>
+          <div
+            key={badge.id}
+            data-testid="badge-container"
+            style={{ textAlign: 'center' }}
+          >
+            <img
+              src={`${BASE_URL}badges/${badge.criteria}.png`}
+              alt={badge.name}
+              style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
+            />
+            <div style={{ marginTop: 8, opacity: badge.awarded ? 1 : 0.5 }}>{badge.name}</div>
           </div>
         ))}
       </div>

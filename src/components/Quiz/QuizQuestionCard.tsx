@@ -11,13 +11,9 @@ interface QuizQuestionCardProps {
   answered: boolean;
   handleAnswer: (idx: number) => void;
   optionRefs: React.MutableRefObject<(HTMLInputElement | null)[]>;
-  bookmarks: string[];
-  toggleBookmark: (id: string) => void;
-  handleReportError: (id: string) => void;
   showInstantFeedback: boolean;
   answerFeedback: string | null;
   showExplanations: boolean;
-  showReview: boolean;
   shuffledOptions: { [key: number]: string[] };
 }
 
@@ -28,13 +24,9 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   answered,
   handleAnswer,
   optionRefs,
-  bookmarks,
-  toggleBookmark,
-  handleReportError,
   showInstantFeedback,
   answerFeedback,
   showExplanations,
-  showReview,
   shuffledOptions,
 }) => (
   <div>
@@ -49,6 +41,8 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                 : 'incorrect'
               : 'selected'
             : '';
+        const inputId = `quiz-option-${current}-${i}`;
+        const name = `quiz-question-${current}`;
         return (
           <li key={i}>
             <QuizOption
@@ -59,6 +53,8 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
               onSelect={() => handleAnswer(i)}
               className={optionClass}
               inputRef={optionRefs.current[i] ? { current: optionRefs.current[i] } : undefined}
+              inputId={inputId}
+              name={name}
             >
               {/* Bookmark and error buttons can be slotted here if needed */}
             </QuizOption>

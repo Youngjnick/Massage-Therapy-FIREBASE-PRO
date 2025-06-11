@@ -1,10 +1,11 @@
+/* eslint-env node */
 // upload_questions_to_firestore.js
 // Usage: node upload_questions_to_firestore.js
 
 import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
-import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
+import serviceAccount from './serviceAccountKey.json'; // Remove 'assert { type: "json" }' for compatibility with Node.js and ESLint
 
 // Initialize Firebase Admin
 admin.initializeApp({
@@ -34,8 +35,8 @@ async function uploadQuestions() {
     let questions;
     try {
       questions = JSON.parse(raw);
-    } catch (e) {
-      console.error(`Invalid JSON in ${file}, skipping.`);
+    } catch {
+      // Invalid JSON in file, skipping.
       continue;
     }
     if (!Array.isArray(questions)) continue;
