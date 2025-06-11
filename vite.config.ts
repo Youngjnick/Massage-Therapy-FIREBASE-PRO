@@ -8,4 +8,11 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  server: {
+refactor/modularize-app
+
+    historyApiFallback: true,
+main
+  },
+  appType: 'spa',
 });

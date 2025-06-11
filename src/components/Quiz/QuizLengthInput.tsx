@@ -4,21 +4,20 @@ interface QuizLengthInputProps {
   quizLength: number;
   setQuizLength: (len: number) => void;
   maxQuizLength: number;
-  id?: string;
 }
 
-const QuizLengthInput = ({ quizLength = 10, setQuizLength = () => {}, maxQuizLength = 100, id }: QuizLengthInputProps) => {
-  return (
+const QuizLengthInput: React.FC<QuizLengthInputProps> = ({ quizLength, setQuizLength, maxQuizLength }) => (
+  <label style={{ marginLeft: '1rem' }}>
+    Quiz Length:
     <input
-      data-testid="quiz-length-input"
-      id={id}
       type="number"
       min={1}
       max={maxQuizLength}
       value={quizLength}
       onChange={e => setQuizLength(Number(e.target.value))}
+      style={{ width: 60, marginLeft: 4 }}
     />
-  );
-};
+  </label>
+);
 
 export default QuizLengthInput;

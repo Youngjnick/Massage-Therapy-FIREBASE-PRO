@@ -7,34 +7,30 @@ interface QuizRandomizeOptionsProps {
   setRandomizeOptions: (val: boolean) => void;
 }
 
-const QuizRandomizeOptions = ({
-  randomizeQuestions = false,
-  setRandomizeQuestions = () => {},
-  randomizeOptions = false,
-  setRandomizeOptions = () => {},
-}: QuizRandomizeOptionsProps) => {
-  return (
-    <>
-      <label>
-        <input
-          data-testid="quiz-randomize-questions"
-          type="checkbox"
-          checked={randomizeQuestions}
-          onChange={e => setRandomizeQuestions(e.target.checked)}
-        />
-        Randomize Questions
-      </label>
-      <label>
-        <input
-          data-testid="quiz-randomize-options"
-          type="checkbox"
-          checked={randomizeOptions}
-          onChange={e => setRandomizeOptions(e.target.checked)}
-        />
-        Randomize Options
-      </label>
-    </>
-  );
-};
+const QuizRandomizeOptions: React.FC<QuizRandomizeOptionsProps> = ({
+  randomizeQuestions,
+  setRandomizeQuestions,
+  randomizeOptions,
+  setRandomizeOptions,
+}) => (
+  <>
+    <label style={{ marginLeft: '1rem' }}>
+      <input
+        type="checkbox"
+        checked={randomizeQuestions}
+        onChange={e => setRandomizeQuestions(e.target.checked)}
+      />{' '}
+      Randomize Questions
+    </label>
+    <label style={{ marginLeft: '1rem' }}>
+      <input
+        type="checkbox"
+        checked={randomizeOptions}
+        onChange={e => setRandomizeOptions(e.target.checked)}
+      />{' '}
+      Randomize Options
+    </label>
+  </>
+);
 
 export default QuizRandomizeOptions;
