@@ -1,3 +1,5 @@
+// WIP: This component is under active development and critical testing for robustness and accessibility.
+
 import React from 'react';
 import QuizOptionIndicator from './QuizOptionIndicator';
 
