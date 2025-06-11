@@ -27,6 +27,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   answerFeedback,
   showExplanations,
   shuffledOptions,
+  showInstantFeedback,
 }) => {
   // Generate a unique instance id for this question card (per mount)
   // Use window.crypto.randomUUID() for true uniqueness if available
@@ -83,7 +84,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       </fieldset>
       {/* Feedback should render if answered is true and answerFeedback is not null */}
       {answered && answerFeedback && (
-        <QuizFeedback show={true} feedback={answerFeedback} />
+        <QuizFeedback show={showInstantFeedback} feedback={answerFeedback} />
       )}
       {showExplanations && (
         <QuizExplanation

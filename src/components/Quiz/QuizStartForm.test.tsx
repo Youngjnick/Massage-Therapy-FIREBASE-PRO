@@ -132,3 +132,18 @@ describe('QuizStartForm (keyboard and accessibility)', () => {
     expect(onStart).toHaveBeenCalled();
   });
 });
+
+describe('QuizStartForm (quiz length default)', () => {
+  it('defaults quiz length to number of available questions', () => {
+    const availableQuestions = 7;
+    render(
+      <QuizStartForm
+        {...defaultProps}
+        maxQuizLength={availableQuestions}
+        quizLength={availableQuestions}
+      />
+    );
+    const input = screen.getByLabelText(/quiz length/i);
+    expect(input).toHaveValue(availableQuestions);
+  });
+});
