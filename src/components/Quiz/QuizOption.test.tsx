@@ -240,4 +240,41 @@ describe('QuizOption', () => {
       expect(onSubmitOption).toHaveBeenCalledTimes(5); // If you want to limit, change this assertion
     });
   });
+
+  describe('QuizOption (additional critical cases)', () => {
+    it('does not fire onSelect/onSubmitOption if disabled, even if selected', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={true} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-disabled-selected" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      fireEvent.keyDown(radio, { key: ' ' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('fires onSelect on change, onSubmitOption only on Enter/Space (with radio group)', () => {
+      const calls: string[] = [];
+      render(
+        <>
+          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => calls.push('select')} onSubmitOption={() => calls.push('submit')} inputId="test-id-order1" name="group1" />
+          <QuizOption label="B" option="Option 2" selected={true} disabled={false} onSelect={() => {}} inputId="test-id-order2" name="group1" />
+        </>
+      );
+      const [radioA] = screen.getAllByRole('radio');
+      fireEvent.click(radioA); // select A
+      expect(calls).toContain('select');
+      fireEvent.keyDown(radioA, { key: 'Enter' });
+      expect(calls).toContain('submit');
+    });
+    it('renders with empty string label and option (aria-label)', () => {
+      render(
+        <QuizOption label="" option="" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-empty" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(radio).toHaveAttribute('aria-label', 'Option : ');
+    });
+  });
 });
