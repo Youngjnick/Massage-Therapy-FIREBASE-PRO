@@ -352,42 +352,127 @@ describe('QuizOption', () => {
       radio.focus();
       expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
     });
-    it('does not fire onSelect/onSubmitOption if input is hidden (display:none)', () => {
+    it('does not call handlers if both disabled and readOnly are set', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
       render(
-        <div style={{ display: 'none' }}>
-          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-hidden" />
-        </div>
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-disabled-readonly" />
       );
-      // Can't getByRole because it's hidden, so queryByRole returns null
-      expect(screen.queryByRole('radio')).toBeNull();
-    });
-    it('does not fire onSelect/onSubmitOption if input is readOnly (simulated)', () => {
-      const onSelect = jest.fn();
-      const onSubmitOption = jest.fn();
-      render(
-        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-readonly" />
-      );
-      const radio = screen.getByRole('radio') as HTMLInputElement;
+      const radio = screen.getByRole('radio');
       Object.defineProperty(radio, 'readOnly', { value: true });
       fireEvent.click(radio);
       fireEvent.keyDown(radio, { key: 'Enter' });
       expect(onSelect).not.toHaveBeenCalled();
       expect(onSubmitOption).not.toHaveBeenCalled();
     });
-    it('fires onSelect and onSubmitOption if input is enabled after being disabled', () => {
+    it('does not call handlers if input is removed from DOM before event', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-unmount-critical" />
+      );
+      const radio = screen.getByRole('radio');
+      unmount();
+      expect(() => fireEvent.click(radio)).not.toThrow();
+      expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('does not call handlers if input is hidden (display:none)', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <div style={{ display: 'none' }}>
+          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-hidden-critical" />
+        </div>
+      );
+      expect(screen.queryByRole('radio')).toBeNull();
+      // No events possible
+    });
+  });
+
+  describe('QuizOption (additional critical and edge cases)', () => {
+    it('does not call handlers if input is rapidly toggled between disabled/enabled', () => {
       const onSelect = jest.fn();
       const onSubmitOption = jest.fn();
       const { rerender } = render(
-        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-enable" />
-      );
-      rerender(
-        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-enable" />
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle" />
       );
       const radio = screen.getByRole('radio');
       fireEvent.click(radio);
       fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+      rerender(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-toggle" />
+      );
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not call handlers if input is rapidly set to readOnly and back (remount)', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-readonly" />
+      );
+      const radio = screen.getByRole('radio');
+      Object.defineProperty(radio, 'readOnly', { value: true });
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+      unmount();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-readonly" />
+      );
+      const radio2 = screen.getByRole('radio');
+      fireEvent.click(radio2);
+      fireEvent.keyDown(radio2, { key: 'Enter' });
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not call handlers if input is disabled and readOnly toggled rapidly (remount)', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-both" />
+      );
+      const radio = screen.getByRole('radio');
+      Object.defineProperty(radio, 'readOnly', { value: true });
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+      unmount();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-both" />
+      );
+      const radio2 = screen.getByRole('radio');
+      fireEvent.click(radio2);
+      fireEvent.keyDown(radio2, { key: 'Enter' });
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not call handlers if input is removed and re-added to DOM (fresh render)', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-remove-readd" />
+      );
+      const radio = screen.getByRole('radio');
+      unmount();
+      expect(() => fireEvent.click(radio)).not.toThrow();
+      expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-remove-readd" />
+      );
+      const radio2 = screen.getByRole('radio');
+      fireEvent.click(radio2);
+      fireEvent.keyDown(radio2, { key: 'Enter' });
       expect(onSelect).toHaveBeenCalled();
       expect(onSubmitOption).toHaveBeenCalled();
     });
