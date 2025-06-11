@@ -2,11 +2,12 @@ import React, { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { getQuestions } from '../questions/index';
 import { Question } from '../types/index';
 import { getBookmarks } from '../bookmarks/index';
-import { logFeedback } from '../errors/index';
 import { getAuth } from 'firebase/auth';
 import QuizStartForm from '../components/Quiz/QuizStartForm';
 import { useWindowSize } from 'react-use';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
+import QuizProgressBar from '../components/Quiz/QuizProgressBar';
+import QuizStepper from '../components/Quiz/QuizStepper';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -111,19 +112,27 @@ const Quiz: React.FC = () => {
     }
     if (!started) return;
     const handleKey = (e: KeyboardEvent) => {
-      // Only handle Arrow keys for question navigation if NOT focused on a radio input
+      // Only handle Arrow keys for question navigation if NOT focused on a quiz radio input
       const active = document.activeElement;
-      if (active && active.tagName === 'INPUT' && (active as HTMLInputElement).type === 'radio') {
-        // Let browser handle radio navigation
+      // If a quiz radio is focused, do nothing (let browser handle)
+      if (active && (active as HTMLElement).hasAttribute && (active as HTMLElement).hasAttribute('data-quiz-radio')) {
+        // Prevent default to stop propagation to global handler
         return;
       }
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      // If any input or textarea is focused, do nothing
+      if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+        return;
+      }
+      // Only handle Arrow keys if NOT focused on any input
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        // Do NOT submit answer, just go to next/prev question
         e.preventDefault();
-        next();
-      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-        e.preventDefault();
-        prev();
-      } else if (/^[1-9]$/.test(e.key)) {
+        // Do not call setAnswered(false) here, just navigate
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next();
+        else prev();
+        return;
+      }
+      if (/^[1-9]$/.test(e.key)) {
         const idx = parseInt(e.key, 10) - 1;
         if (q && q.options[idx]) handleAnswer(idx, false);
       }
@@ -296,7 +305,8 @@ const Quiz: React.FC = () => {
   const prev = () => setCurrent((c) => Math.max(c - 1, 0));
   // New: distinguish between navigation and answer submission
   const handleAnswer = (idx: number, submit: boolean = false) => {
-    if (answered) return; // Prevent rapid/duplicate answers
+    // Defensive: Only allow submission if submit === true
+    if (answered && submit) return; // Prevent rapid/duplicate answers
     setUserAnswers((prev) => {
       const copy = [...prev];
       copy[current] = idx;
@@ -375,6 +385,8 @@ const Quiz: React.FC = () => {
             sort={sort}
             setSort={(val: string) => setSort(val as any)}
             onStart={startQuiz}
+            showExplanations={false}
+            setShowExplanations={() => {}}
           />
         </div>
       )}
@@ -382,6 +394,13 @@ const Quiz: React.FC = () => {
       {/* --- Actual quiz --- */}
       {started && (
         <div>
+          <QuizProgressBar progress={activeQuestions.length > 0 ? ((current + 1) / activeQuestions.length) * 100 : 0} />
+          <QuizStepper
+            total={activeQuestions.length}
+            current={current}
+            answered={activeQuestions.map((_, i) => userAnswers[i] !== undefined)}
+            onStep={setCurrent}
+          />
           <QuizQuestionCard
             q={q}
             current={current}

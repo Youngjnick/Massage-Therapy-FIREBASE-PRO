@@ -1,16 +1,23 @@
 # Test info
 
-- Name: should reset quiz and focus first option after restart
-- Location: /Users/macuser/Desktop/Massage_Therapy_Smart_Study_PRO_FIREBASE_ELITE_REACT/e2e/app.spec.ts:40:5
+- Name: should allow selecting options and navigation with keyboard and mouse
+- Location: /Users/macuser/Desktop/Massage_Therapy_Smart_Study_PRO_FIREBASE_ELITE_REACT/e2e/app.spec.ts:100:5
 
 # Error details
 
 ```
-Error: locator.click: Test timeout of 30000ms exceeded.
-Call log:
-  - waiting for getByRole('button', { name: /start new quiz/i })
+Error: Timed out 5000ms waiting for expect(locator).toBeChecked()
 
-    at /Users/macuser/Desktop/Massage_Therapy_Smart_Study_PRO_FIREBASE_ELITE_REACT/e2e/app.spec.ts:46:63
+Locator: getByTestId('quiz-option').nth(1).locator('input[type="radio"]')
+Expected: checked
+Received: unchecked
+Call log:
+  - expect.toBeChecked with timeout 5000ms
+  - waiting for getByTestId('quiz-option').nth(1).locator('input[type="radio"]')
+    9 × locator resolved to <input tabindex="0" type="radio" id="quiz-option-1-1" name="quiz-question-1" aria-label="Option B: Medulla"/>
+      - unexpected value "unchecked"
+
+    at /Users/macuser/Desktop/Massage_Therapy_Smart_Study_PRO_FIREBASE_ELITE_REACT/e2e/app.spec.ts:116:29
 ```
 
 # Page snapshot
@@ -33,25 +40,25 @@ Call log:
     - listitem:
       - link "Profile":
         - /url: /profile
-- group "What is the primary role of the amygdala in the brain?":
-  - text: What is the primary role of the amygdala in the brain?
+- group "Which structure does the amygdala communicate with to activate the stress response?":
+  - text: Which structure does the amygdala communicate with to activate the stress response?
   - list:
     - listitem:
-      - 'radio "Option A: Motor coordination" [checked]'
-      - text: A. Motor coordination •
+      - 'radio "Option A: Cerebellum"'
+      - text: A. Cerebellum
     - listitem:
-      - 'radio "Option B: Visual perception"'
-      - text: B. Visual perception
+      - 'radio "Option B: Medulla"'
+      - text: B. Medulla
     - listitem:
-      - 'radio "Option C: Fear processing"'
-      - text: C. Fear processing
+      - 'radio "Option C: Hypothalamus"'
+      - text: C. Hypothalamus
     - listitem:
-      - 'radio "Option D: Language production"'
-      - text: D. Language production
+      - 'radio "Option D: Occipital lobe"'
+      - text: D. Occipital lobe
   - button "Prev"
   - button "Next"
   - button "Finish"
-  - text: 1 / 1
+  - text: 2 / 1
 - contentinfo:
   - textbox "Search questions"
 ```
@@ -59,21 +66,6 @@ Call log:
 # Test source
 
 ```ts
-   1 | /* eslint-env browser */
-   2 | import { test, expect } from '@playwright/test';
-   3 |
-   4 | // Only run the failing test for now
-   5 | test('should focus first option after starting quiz', async ({ page }) => {
-   6 |   await page.goto('/');
-   7 |   await page.getByLabel('Quiz Length').fill('1');
-   8 |   await page.getByLabel(/topic/i).selectOption({ index: 0 });
-   9 |   await page.getByRole('button', { name: /start/i }).click();
-   10 |   const firstOption = page.getByTestId('quiz-option').first();
-   11 |   // Playwright cannot directly check focus on label, but can check the input inside
-   12 |   const input = await firstOption.locator('input[type="radio"]');
-   13 |   await expect(input).toBeFocused();
-   14 | });
-   15 |
    16 | test.skip('should allow keyboard navigation through options and buttons', async ({ page }) => {
    17 |   await page.goto('/');
    18 |   await page.getByLabel('Quiz Length').fill('2');
@@ -104,8 +96,7 @@ Call log:
    43 |   await page.getByRole('button', { name: /start/i }).click();
    44 |   await page.getByTestId('quiz-option').first().click();
    45 |   await page.getByRole('button', { name: /finish/i }).click();
->  46 |   await page.getByRole('button', { name: /start new quiz/i }).click();
-      |                                                               ^ Error: locator.click: Test timeout of 30000ms exceeded.
+   46 |   await page.getByRole('button', { name: /start new quiz/i }).click();
    47 |   const input = await page.getByTestId('quiz-option').first().locator('input[type="radio"]');
    48 |   await expect(input).toBeFocused();
    49 | });
@@ -175,7 +166,8 @@ Call log:
   113 |   const secondRadio = page.getByTestId('quiz-option').nth(1).locator('input[type="radio"]');
   114 |   // Wait for React state to update
   115 |   await page.waitForTimeout(150);
-  116 |   await expect(secondRadio).toBeChecked();
+> 116 |   await expect(secondRadio).toBeChecked();
+      |                             ^ Error: Timed out 5000ms waiting for expect(locator).toBeChecked()
   117 |   // Tab to navigation buttons (Prev/Next/Finish)
   118 |   await page.keyboard.press('Tab');
   119 |   await page.keyboard.press('Tab');

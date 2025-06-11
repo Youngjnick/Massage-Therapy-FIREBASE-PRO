@@ -1,13 +1,10 @@
 import React from 'react';
-import { render, screen } from '../../utils/testUtils';
-import QuizStartForm from './QuizStartForm';
+import { render, screen, fireEvent } from '@testing-library/react';
+import QuizStartForm from '../components/Quiz/QuizStartForm';
 
-describe('QuizStartForm', () => {
-  beforeAll(() => { console.log('Starting QuizStartForm tests...'); });
-  beforeEach(() => { console.log('Running next QuizStartForm test...'); });
-  afterAll(() => { console.log('Finished QuizStartForm tests.'); });
-
-  it('renders topic select and start button', () => {
+describe('QuizStartForm (explanation toggle)', () => {
+  it('calls setShowExplanations when toggled', () => {
+    const setShowExplanations = jest.fn();
     render(
       <QuizStartForm
         availableTopics={['A']}
@@ -24,9 +21,11 @@ describe('QuizStartForm', () => {
         setSort={() => {}}
         onStart={() => {}}
         showExplanations={false}
-        setShowExplanations={() => {}}
+        setShowExplanations={setShowExplanations}
       />
     );
-    expect(screen.getByText('A')).toBeInTheDocument();
+    const toggle = screen.getByLabelText(/explanation/i);
+    fireEvent.click(toggle);
+    expect(setShowExplanations).toHaveBeenCalled();
   });
 });

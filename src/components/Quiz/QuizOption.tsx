@@ -14,9 +14,6 @@ interface QuizOptionProps {
   name?: string;
   children?: React.ReactNode;
   autoFocus?: boolean;
-  optionIndex?: number;
-  totalOptions?: number;
-  onArrowSelect?: (idx: number) => void;
 }
 
 const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
@@ -32,9 +29,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   name,
   children,
   autoFocus = false,
-  optionIndex,
-  totalOptions,
-  onArrowSelect,
   ...rest
 }) => {
   return (
@@ -51,13 +45,20 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         disabled={disabled}
         tabIndex={0}
         autoFocus={autoFocus}
-        onClick={e => {
+        data-quiz-radio
+        onClick={() => {
           if (!disabled && onSubmitOption) {
             onSubmitOption();
           }
         }}
         onKeyDown={e => {
-          if (!disabled && (e.key === 'Enter' || e.key === ' ')) {
+          if (disabled) return;
+          // Prevent answer submission on Arrow keys
+          if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            // Let the event bubble for navigation, but do not submit
+            return;
+          }
+          if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
             if (onSubmitOption) onSubmitOption();
           }

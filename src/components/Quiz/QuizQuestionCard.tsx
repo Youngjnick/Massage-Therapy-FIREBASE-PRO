@@ -24,31 +24,11 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
 }) => {
   const radioName = `quiz-question-${current}`;
 
-  // Keyboard handler for Arrow navigation
-  const handleRadioKeyDown = (e: React.KeyboardEvent<HTMLUListElement>) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      const nextIdx = (userAnswers[current] ?? 0) + 1;
-      const optionCount = (shuffledOptions[current] || q.options).length;
-      if (nextIdx < optionCount) {
-        handleAnswer(nextIdx, false);
-        optionRefs.current[nextIdx]?.focus();
-      }
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-      e.preventDefault();
-      const prevIdx = (userAnswers[current] ?? 0) - 1;
-      if (prevIdx >= 0) {
-        handleAnswer(prevIdx, false);
-        optionRefs.current[prevIdx]?.focus();
-      }
-    }
-  };
-
   return (
     <fieldset data-testid="quiz-question-card" style={{ border: 0, padding: 0, margin: 0 }}>
       <legend style={{ fontWeight: 600, marginBottom: 8 }}>{q.text}</legend>
       <ul style={{ listStyle: 'none', padding: 0 }}>
-        {(shuffledOptions[current] || q.options).map((opt: string, i: number, arr: string[]) => {
+        {(shuffledOptions[current] || q.options).map((opt: string, i: number) => {
           // Ensure optionRefs.current[i] is a ref for this option
           const setRef = (el: HTMLInputElement | null) => {
             optionRefs.current[i] = el;
@@ -62,11 +42,6 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                 : 'selected'
               : '';
           const inputId = `quiz-option-${current}-${i}`;
-          // Debug: log answered state and selection
-          if (typeof window !== 'undefined') {
-            // eslint-disable-next-line no-console
-            console.log('QuizOption', { i, answered, selected: userAnswers[current] === i });
-          }
           return (
             <li key={i}>
               <QuizOption
@@ -88,12 +63,6 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                 name={radioName}
                 data-testid="quiz-option"
                 autoFocus={userAnswers[current] === i && i === 0}
-                optionIndex={i}
-                totalOptions={arr.length}
-                onArrowSelect={idx => {
-                  handleAnswer(idx, false);
-                  optionRefs.current[idx]?.focus();
-                }}
               >
                 {/* Bookmark and error buttons can be slotted here if needed */}
               </QuizOption>

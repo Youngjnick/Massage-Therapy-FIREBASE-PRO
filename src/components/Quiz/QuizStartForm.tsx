@@ -18,6 +18,8 @@ interface QuizStartFormProps {
   sort: string;
   setSort: (val: string) => void;
   onStart: () => void;
+  showExplanations: boolean;
+  setShowExplanations: (val: boolean) => void;
 }
 
 const QuizStartForm: React.FC<QuizStartFormProps> = ({
@@ -34,6 +36,8 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
   sort,
   setSort,
   onStart,
+  showExplanations,
+  setShowExplanations,
 }) => (
   <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); onStart(); }}>
     <label htmlFor="quiz-topic-select">Topic</label>
@@ -57,6 +61,15 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
       setRandomizeOptions={setRandomizeOptions}
     />
     <QuizSortSelect sort={sort} setSort={setSort} />
+    <label>
+      <input
+        type="checkbox"
+        checked={showExplanations}
+        onChange={e => setShowExplanations(e.target.checked)}
+        aria-label="Show Explanations"
+      />
+      Show Explanations
+    </label>
     <button type="submit" style={{ marginLeft: '1rem' }}>Start Quiz</button>
   </form>
 );
