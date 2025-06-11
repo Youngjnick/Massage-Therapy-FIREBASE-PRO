@@ -24,10 +24,31 @@ describe('QuizOption', () => {
     expect(onSelect).toHaveBeenCalled();
   });
 
-  it('is disabled when disabled prop is true', () => {
-    render(
-      <QuizOption label="C" option="Option 3" selected={false} disabled={true} onSelect={jest.fn()} inputId="test-id-3" />
-    );
-    expect(screen.getByRole('radio')).toBeDisabled();
+  describe('QuizOption (indicators/disabled)', () => {
+    it('is disabled when disabled prop is true', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={() => {}} inputId="test-id-1" />
+      );
+      expect(screen.getByRole('radio')).toBeDisabled();
+    });
+    it('shows correct indicator', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-1" className="correct" />
+      );
+      expect(screen.getByTitle('Correct')).toBeInTheDocument();
+    });
+    it('shows incorrect indicator', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-1" className="incorrect" />
+      );
+      screen.debug(); // Debug output for troubleshooting
+      expect(screen.getByTitle('Incorrect')).toBeInTheDocument();
+    });
+    it('shows selected indicator', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-1" className="selected" />
+      );
+      expect(screen.getByTitle('Selected')).toBeInTheDocument();
+    });
   });
 });

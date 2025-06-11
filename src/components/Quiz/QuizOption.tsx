@@ -31,6 +31,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   autoFocus = false,
   ...rest
 }) => {
+  const classList = className.split(' ');
   return (
     <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest}>
       <input
@@ -39,23 +40,21 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         type="radio"
         name={name}
         checked={selected}
-        onChange={onSelect} // Only select, do not submit
+        onChange={() => {
+          onSelect();
+          if (!disabled && onSubmitOption) {
+            onSubmitOption();
+          }
+        }}
         aria-label={`Option ${label}: ${option}`}
         style={{ marginRight: 12 }}
         disabled={disabled}
         tabIndex={0}
         autoFocus={autoFocus}
         data-quiz-radio
-        onClick={() => {
-          if (!disabled && onSubmitOption) {
-            onSubmitOption();
-          }
-        }}
         onKeyDown={e => {
           if (disabled) return;
-          // Prevent answer submission on Arrow keys
           if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-            // Let the event bubble for navigation, but do not submit
             return;
           }
           if (e.key === 'Enter' || e.key === ' ') {
@@ -66,9 +65,9 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
       />
       <label htmlFor={inputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{label}.</label> {option}
       <QuizOptionIndicator
-        isCorrect={className.includes('correct')}
-        isIncorrect={className.includes('incorrect')}
-        isSelected={className.includes('selected')}
+        isCorrect={classList.includes('correct')}
+        isIncorrect={classList.includes('incorrect')}
+        isSelected={classList.includes('selected')}
       />
       {children}
     </div>
