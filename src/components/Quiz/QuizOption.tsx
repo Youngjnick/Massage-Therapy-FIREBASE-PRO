@@ -7,6 +7,7 @@ interface QuizOptionProps {
   selected: boolean;
   disabled: boolean;
   onSelect: () => void;
+  onSubmitOption?: () => void; // <-- add this
   className?: string;
   inputRef?: React.Ref<HTMLInputElement>;
   inputId: string;
@@ -24,6 +25,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   selected,
   disabled,
   onSelect,
+  onSubmitOption, // <-- add this
   className = '',
   inputRef,
   inputId,
@@ -35,21 +37,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   onArrowSelect,
   ...rest
 }) => {
-  // Keyboard handler for Arrow navigation on the radio input
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (disabled) return;
-    if ((e.key === 'ArrowDown' || e.key === 'ArrowRight') && typeof optionIndex === 'number' && typeof totalOptions === 'number') {
-      e.preventDefault();
-      if (optionIndex < totalOptions - 1 && onArrowSelect) {
-        onArrowSelect(optionIndex + 1);
-      }
-    } else if ((e.key === 'ArrowUp' || e.key === 'ArrowLeft') && typeof optionIndex === 'number') {
-      e.preventDefault();
-      if (optionIndex > 0 && onArrowSelect) {
-        onArrowSelect(optionIndex - 1);
-      }
-    }
-  };
   return (
     <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest}>
       <input
@@ -58,15 +45,25 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         type="radio"
         name={name}
         checked={selected}
-        onChange={onSelect}
-        onKeyDown={handleKeyDown}
+        onChange={onSelect} // Only select, do not submit
         aria-label={`Option ${label}: ${option}`}
         style={{ marginRight: 12 }}
         disabled={disabled}
-        tabIndex={0} // Ensure radio is tabbable
+        tabIndex={0}
         autoFocus={autoFocus}
+        onClick={e => {
+          if (!disabled && onSubmitOption) {
+            onSubmitOption();
+          }
+        }}
+        onKeyDown={e => {
+          if (!disabled && (e.key === 'Enter' || e.key === ' ')) {
+            e.preventDefault();
+            if (onSubmitOption) onSubmitOption();
+          }
+        }}
       />
-      <label htmlFor={inputId} style={{ fontWeight: 600, marginRight: 8 }}>{label}.</label> {option}
+      <label htmlFor={inputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{label}.</label> {option}
       <QuizOptionIndicator
         isCorrect={className.includes('correct')}
         isIncorrect={className.includes('incorrect')}

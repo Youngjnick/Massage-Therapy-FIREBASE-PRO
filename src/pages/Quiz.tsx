@@ -111,6 +111,12 @@ const Quiz: React.FC = () => {
     }
     if (!started) return;
     const handleKey = (e: KeyboardEvent) => {
+      // Only handle Arrow keys for question navigation if NOT focused on a radio input
+      const active = document.activeElement;
+      if (active && active.tagName === 'INPUT' && (active as HTMLInputElement).type === 'radio') {
+        // Let browser handle radio navigation
+        return;
+      }
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
         e.preventDefault();
         next();

@@ -62,6 +62,11 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                 : 'selected'
               : '';
           const inputId = `quiz-option-${current}-${i}`;
+          // Debug: log answered state and selection
+          if (typeof window !== 'undefined') {
+            // eslint-disable-next-line no-console
+            console.log('QuizOption', { i, answered, selected: userAnswers[current] === i });
+          }
           return (
             <li key={i}>
               <QuizOption
@@ -69,7 +74,14 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                 option={opt}
                 selected={userAnswers[current] === i}
                 disabled={answered}
-                onSelect={() => handleAnswer(i, true)}
+                onSelect={() => {
+                  // Only select, do not submit
+                  handleAnswer(i, false);
+                }}
+                onSubmitOption={() => {
+                  // Submit answer (mouse click or Enter/Space)
+                  handleAnswer(i, true);
+                }}
                 className={optionClass}
                 inputRef={setRef}
                 inputId={inputId}
