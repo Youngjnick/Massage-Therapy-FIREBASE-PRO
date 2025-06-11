@@ -40,11 +40,19 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         type="radio"
         name={name}
         checked={selected}
-        onChange={() => {
-          if (disabled) return;
-          onSelect();
+        onChange={e => {
+          if (disabled || e.currentTarget.readOnly) return;
+          try {
+            onSelect();
+          } catch {
+            // Swallow error to prevent crash
+          }
           if (onSubmitOption) {
-            onSubmitOption();
+            try {
+              onSubmitOption();
+            } catch {
+              // Swallow error to prevent crash
+            }
           }
         }}
         aria-label={`Option ${label}: ${option}`}
@@ -54,13 +62,19 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         data-quiz-radio
         autoFocus={autoFocus}
         onKeyDown={e => {
-          if (disabled) return;
+          if (disabled || e.currentTarget.readOnly) return;
           if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
             return;
           }
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            if (onSubmitOption) onSubmitOption();
+            if (onSubmitOption) {
+              try {
+                onSubmitOption();
+              } catch {
+                // Swallow error to prevent crash
+              }
+            }
           }
         }}
       />
