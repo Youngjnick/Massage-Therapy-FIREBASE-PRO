@@ -56,10 +56,12 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
             // Add current index and questionInstanceId to inputId to ensure uniqueness even for repeated questions
             const inputId = `quiz-option-${safeQuestionId}-${i}-${current}-${questionInstanceId}`;
             const name = `quiz-question-${safeQuestionId}-${current}-${questionInstanceId}`;
+            // Add current index, questionInstanceId, and answered to key for correct remounting
+            const optionKey = `${inputId}-${answered}`;
             return (
-              <li key={inputId}>
+              <li key={optionKey}>
                 <QuizOption
-                  key={inputId + '-' + answered}
+                  key={optionKey}
                   label={String.fromCharCode(65 + i)}
                   option={opt}
                   selected={userAnswers[current] === i}
