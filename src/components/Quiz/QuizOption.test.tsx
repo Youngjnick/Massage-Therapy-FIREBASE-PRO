@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import QuizOption from './QuizOption';
 
 describe('QuizOption', () => {
-  beforeAll(() => { console.log('Starting QuizOption tests...'); });
-  beforeEach(() => { console.log('Running next QuizOption test...'); });
-  afterAll(() => { console.log('Finished QuizOption tests.'); });
+  beforeAll(() => {});
+  beforeEach(() => {});
+  afterAll(() => {});
 
   it('renders label and option', () => {
     render(

@@ -3,9 +3,9 @@ import { render, screen } from '../../utils/testUtils';
 import QuizOptionIndicator from './QuizOptionIndicator';
 
 describe('QuizOptionIndicator', () => {
-  beforeAll(() => { console.log('Starting QuizOptionIndicator tests...'); });
-  beforeEach(() => { console.log('Running next QuizOptionIndicator test...'); });
-  afterAll(() => { console.log('Finished QuizOptionIndicator tests.'); });
+  beforeAll(() => {});
+  beforeEach(() => {});
+  afterAll(() => {});
 
   it('shows correct icon', () => {
     render(<QuizOptionIndicator isCorrect />);

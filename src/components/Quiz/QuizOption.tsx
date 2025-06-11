@@ -52,7 +52,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         // Check if there is more than one element with this id
         const all = document.querySelectorAll(`#${CSS.escape(uniqueInputId)}`);
         if (all.length > 1) {
-          console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
+          // Remove or comment out debug warning for duplicate inputId
+          // console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
         }
       }
     }
@@ -70,13 +71,13 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           if (disabled || e.currentTarget.readOnly) return;
           try {
             if (typeof onSelect === 'function') onSelect();
-          } catch (err) {
-            console.error(err);
+          } catch {
+            // Swallow error
           }
           try {
             if (typeof onSubmitOption === 'function') onSubmitOption();
-          } catch (err) {
-            console.error(err);
+          } catch {
+            // Swallow error
           }
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
@@ -98,8 +99,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
             if (typeof onSubmitOption === 'function') {
               try {
                 onSubmitOption();
-              } catch (err) {
-                console.error(err);
+              } catch {
+                // Swallow error
               }
             }
           }
