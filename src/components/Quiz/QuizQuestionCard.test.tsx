@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '../../utils/testUtils';
 import QuizQuestionCard from './QuizQuestionCard';
 
 describe('QuizQuestionCard', () => {
-  beforeAll(() => { console.log('Starting QuizQuestionCard tests...'); });
-  beforeEach(() => { console.log('Running next QuizQuestionCard test...'); });
-  afterAll(() => { console.log('Finished QuizQuestionCard tests.'); });
+  beforeAll(() => {});
+  beforeEach(() => {});
+  afterAll(() => {});
 
   it('renders question text', () => {
     render(

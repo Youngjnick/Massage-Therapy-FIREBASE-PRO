@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '../../utils/testUtils';
 import QuizStartForm from './QuizStartForm';
 
 describe('QuizStartForm', () => {
-  beforeAll(() => { console.log('Starting QuizStartForm tests...'); });
-  beforeEach(() => { console.log('Running next QuizStartForm test...'); });
-  afterAll(() => { console.log('Finished QuizStartForm tests.'); });
+  beforeAll(() => {});
+  beforeEach(() => {});
+  afterAll(() => {});
 
   it('renders topic select and start button', () => {
     render(

@@ -12,7 +12,6 @@ const Achievements: React.FC = () => {
       if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
         loadedBadges = await getBadges();
       } else {
-        // @ts-expect-error: Dynamic import of JSON for SSR/test fallback
         loadedBadges = (await import('../../public/badges/badges.json')).default || [];
       }
       setBadges(loadedBadges);
