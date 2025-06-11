@@ -54,16 +54,17 @@ describe('Quiz Flow Integration', () => {
 
     // Next question or results (depends on quiz length)
     // Try to find a result summary or score
-    const maybeResult = screen.queryByText(/score|result|congratulations|completed/i);
-    if (maybeResult) {
-      expect(maybeResult).toBeInTheDocument();
+    const maybeResults = screen.queryAllByText(/score|result|congratulations|completed/i);
+    if (maybeResults.length > 0) {
+      expect(maybeResults.length).toBeGreaterThan(0);
     } else {
       // If not finished, answer next question
       const nextRadios = screen.getAllByRole('radio');
       fireEvent.click(nextRadios[0]);
       fireEvent.keyDown(nextRadios[0], { key: 'Enter' });
       // Now expect results
-      expect(await screen.findByText(/score|result|congratulations|completed/i)).toBeInTheDocument();
+      const results = await screen.findAllByText(/score|result|congratulations|completed/i);
+      expect(results.length).toBeGreaterThan(0);
     }
   });
 });

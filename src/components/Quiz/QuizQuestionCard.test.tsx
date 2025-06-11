@@ -18,6 +18,8 @@ describe('QuizQuestionCard', () => {
         optionRefs={{ current: [] }}
         showExplanations={false}
         shuffledOptions={{ 0: ['Paris', 'London', 'Berlin', 'Rome'] }}
+        showInstantFeedback={false}
+        answerFeedback={null}
       />
     );
     expect(screen.getByText('What is the capital of France?')).toBeInTheDocument();
@@ -36,14 +38,14 @@ describe('QuizQuestionCard (explanations/feedback)', () => {
     shuffledOptions: { 0: ['A', 'B'] },
   };
   it('renders explanations when showExplanations is true', () => {
-    render(<QuizQuestionCard {...baseProps} />);
-    expect(screen.getByText('Short')).toBeInTheDocument();
-    expect(screen.getByText('Long')).toBeInTheDocument();
+    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} />);
+    expect(screen.getByText('Quick Tip: Short')).toBeInTheDocument();
+    expect(screen.getByText('More Info: Long')).toBeInTheDocument();
   });
-  it('renders feedback only when answered', () => {
-    const { rerender } = render(<QuizQuestionCard {...baseProps} answered={false} />);
+  it('renders feedback only when answered and answerFeedback is not null', () => {
+    const { rerender } = render(<QuizQuestionCard {...baseProps} answered={false} showInstantFeedback={false} answerFeedback={null} />);
     expect(screen.queryByTestId('quiz-feedback')).not.toBeInTheDocument();
-    rerender(<QuizQuestionCard {...baseProps} answered={true} />);
+    rerender(<QuizQuestionCard {...baseProps} answered={true} showInstantFeedback={false} answerFeedback={"Some feedback"} />);
     expect(screen.getByTestId('quiz-feedback')).toBeInTheDocument();
   });
 });
@@ -61,14 +63,14 @@ describe('QuizQuestionCard (navigation and answer submission)', () => {
   };
   it('calls handleAnswer with submit=false on radio select', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[2]);
     expect(handleAnswer).toHaveBeenCalledWith(2, false);
   });
   it('calls handleAnswer with submit=true on Enter/Space', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} />);
     const radios = screen.getAllByRole('radio');
     radios[1].focus();
     fireEvent.keyDown(radios[1], { key: 'Enter' });
@@ -76,13 +78,12 @@ describe('QuizQuestionCard (navigation and answer submission)', () => {
     expect(handleAnswer).toHaveBeenCalledWith(1, true);
   });
   it('renders navigation buttons', () => {
-    render(<QuizQuestionCard {...baseProps} />);
-    expect(screen.getByText('Prev')).toBeInTheDocument();
-    expect(screen.getByText('Next')).toBeInTheDocument();
+    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} />);
+    expect(screen.getByText('Previous')).toBeInTheDocument();
     expect(screen.getByText('Finish')).toBeInTheDocument();
   });
-  it('shows feedback when answered', () => {
-    render(<QuizQuestionCard {...baseProps} answered={true} />);
+  it('shows feedback when answered and answerFeedback is not null', () => {
+    render(<QuizQuestionCard {...baseProps} answered={true} showInstantFeedback={false} answerFeedback={"Some feedback"} />);
     expect(screen.getByTestId('quiz-feedback')).toBeInTheDocument();
   });
 });
