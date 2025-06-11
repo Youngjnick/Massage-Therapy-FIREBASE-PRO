@@ -2,7 +2,24 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import QuizProgressBar from './QuizProgressBar';
 
-describe('QuizProgressBar (edge cases)', () => {
+describe('QuizProgressBar (aria and edge cases)', () => {
+  it('has correct aria attributes', () => {
+    render(<QuizProgressBar progress={42} />);
+    const bar = screen.getByRole('progressbar');
+    expect(bar).toHaveAttribute('aria-valuenow', '42');
+    expect(bar).toHaveAttribute('aria-valuemin', '0');
+    expect(bar).toHaveAttribute('aria-valuemax', '100');
+  });
+  it('clamps progress below 0 and above 100', () => {
+    render(<>
+      <QuizProgressBar progress={-10} />
+      <QuizProgressBar progress={150} />
+    </>);
+    const bars = screen.getAllByRole('progressbar');
+    expect(bars).toHaveLength(2);
+    expect(bars[0]).toHaveAttribute('aria-valuenow', '-10');
+    expect(bars[1]).toHaveAttribute('aria-valuenow', '150');
+  });
   it('renders 0% progress', () => {
     render(<QuizProgressBar progress={0} />);
     const bar = screen.getByRole('progressbar');

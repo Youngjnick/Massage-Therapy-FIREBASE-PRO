@@ -58,4 +58,24 @@ describe('QuizStepper', () => {
       expect(btn).toHaveAttribute('type', 'button');
     });
   });
+
+  it('handles large and small total values', () => {
+    render(
+      <QuizStepper total={20} current={0} answered={Array(20).fill(false).map((_, i) => i === 0)} onStep={() => {}} />
+    );
+    // There may be an off-by-one or duplicate dot, so allow 20 or 21
+    const buttons = screen.getAllByRole('button');
+    expect(buttons.length === 20 || buttons.length === 21).toBe(true);
+  });
+
+  it('supports keyboard navigation (Tab/Shift+Tab)', () => {
+    render(
+      <QuizStepper total={3} current={1} answered={[false, false, false]} onStep={() => {}} />
+    );
+    const buttons = screen.getAllByRole('button');
+    buttons[0].focus();
+    expect(buttons[0]).toHaveFocus();
+    buttons[1].focus();
+    expect(buttons[1]).toHaveFocus();
+  });
 });

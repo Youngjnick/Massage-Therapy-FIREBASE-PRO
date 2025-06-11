@@ -103,4 +103,48 @@ describe('QuizOption', () => {
       expect(radio).toHaveFocus();
     });
   });
+
+  describe('QuizOption (edge cases)', () => {
+    it('renders with a very long option string', () => {
+      const longOption = 'A'.repeat(500);
+      render(
+        <QuizOption label="A" option={longOption} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-long" />
+      );
+      expect(screen.getByText(longOption)).toBeInTheDocument();
+    });
+
+    it('renders with special characters in label and option', () => {
+      render(
+        <QuizOption label="Ω" option={"Option & < > ' \""} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-special" />
+      );
+      expect(screen.getByText('Ω.')).toBeInTheDocument();
+      expect(screen.getByText("Option & < > ' \"")).toBeInTheDocument();
+    });
+
+    it('renders with no className and no indicator', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-no-class" />
+      );
+      // Should not render any indicator span
+      expect(screen.queryByTitle('Correct')).not.toBeInTheDocument();
+      expect(screen.queryByTitle('Incorrect')).not.toBeInTheDocument();
+      expect(screen.queryByTitle('Selected')).not.toBeInTheDocument();
+    });
+
+    it('renders children if provided', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-child">
+          <span data-testid="custom-child">Extra</span>
+        </QuizOption>
+      );
+      expect(screen.getByTestId('custom-child')).toBeInTheDocument();
+    });
+
+    it('handles missing optional props gracefully', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-minimal" />
+      );
+      expect(screen.getByRole('radio')).toBeInTheDocument();
+    });
+  });
 });
