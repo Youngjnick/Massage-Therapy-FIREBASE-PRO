@@ -477,4 +477,54 @@ describe('QuizOption', () => {
       expect(onSubmitOption).toHaveBeenCalled();
     });
   });
+
+  describe('QuizOption (critical error and edge cases - advanced)', () => {
+    it('does not call handlers if inputRef is a callback and is null', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      let lastRef: any = null;
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-cb-ref" inputRef={ref => { lastRef = ref; }} />
+      );
+      // Simulate input being removed
+      if (lastRef) lastRef = null;
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not call handlers if label and option are empty strings', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="" option="" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-null-label" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not throw if onSubmitOption is missing', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-no-handlers" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(() => fireEvent.click(radio)).not.toThrow();
+      expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
+    });
+    it('does not call handlers if children throw an error', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const ErrorChild = () => { throw new Error('child error'); };
+      expect(() => {
+        render(
+          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-child-error">
+            <ErrorChild />
+          </QuizOption>
+        );
+      }).toThrow('child error');
+    });
+  });
 });
