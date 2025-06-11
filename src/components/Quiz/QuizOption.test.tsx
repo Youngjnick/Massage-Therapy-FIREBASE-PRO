@@ -656,4 +656,33 @@ describe('QuizOption', () => {
       expect(onSubmitOption).not.toHaveBeenCalled();
     });
   });
+
+  describe('QuizOption (additional hardening scenarios)', () => {
+    it('renders label/option as string even if passed as number or boolean', () => {
+      render(
+        <QuizOption label={123 as any} option={false as any} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-type-coerce" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(radio).toHaveAttribute('aria-label', 'Option 123: false');
+      expect(screen.getByText('123.')).toBeInTheDocument();
+      expect(screen.getByText('false')).toBeInTheDocument();
+    });
+
+    it('multiple QuizOption in a group: only one selected, handlers isolated', () => {
+      const onSelectA = jest.fn();
+      const onSelectB = jest.fn();
+      render(
+        <>
+          <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={onSelectA} inputId="test-id-groupA" name="groupX" />
+          <QuizOption label="B" option="Option 2" selected={false} disabled={false} onSelect={onSelectB} inputId="test-id-groupB" name="groupX" />
+        </>
+      );
+      const [radioA, radioB] = screen.getAllByRole('radio');
+      expect(radioA).toBeChecked();
+      expect(radioB).not.toBeChecked();
+      fireEvent.click(radioB);
+      expect(onSelectA).not.toHaveBeenCalled();
+      expect(onSelectB).toHaveBeenCalled();
+    });
+  });
 });

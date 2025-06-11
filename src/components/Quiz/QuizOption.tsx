@@ -34,6 +34,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   ...rest
 }) => {
   const classList = className.split(' ');
+  const labelStr = String(label);
+  const optionStr = String(option);
   return (
     <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest}>
       <input
@@ -57,7 +59,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
             }
           }
         }}
-        aria-label={`Option ${label}: ${option}`}
+        aria-label={`Option ${labelStr}: ${optionStr}`}
         style={{ marginRight: 12 }}
         disabled={disabled}
         tabIndex={0}
@@ -80,7 +82,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           }
         }}
       />
-      <label htmlFor={inputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{label}.</label> {option}
+      <label htmlFor={inputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{labelStr}.</label> {optionStr}
       <QuizOptionIndicator
         isCorrect={classList.includes('correct')}
         isIncorrect={classList.includes('incorrect')}
