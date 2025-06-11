@@ -82,11 +82,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           } catch {
             // Swallow error
           }
-          try {
-            if (typeof onSubmitOption === 'function') onSubmitOption();
-          } catch {
-            // Swallow error
-          }
+          // REMOVE: onSubmitOption from onChange
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
         aria-checked={selected}
