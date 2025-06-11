@@ -1,0 +1,57 @@
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import QuizQuestionCard from './QuizQuestionCard';
+
+describe('QuizQuestionCard (event propagation, focus, and CSS)', () => {
+  const baseProps = {
+    q: { text: 'Q1', options: ['A', 'B', 'C'], correctAnswer: 'B', id: 'q1' },
+    current: 0,
+    userAnswers: [],
+    answered: false,
+    handleAnswer: jest.fn(),
+    optionRefs: { current: [] },
+    showExplanations: false,
+    shuffledOptions: { 0: ['A', 'B', 'C'] },
+  };
+
+  const makeOptionRefs = (len: number) => {
+    const arr = Array(len).fill(null).map(() => React.createRef<HTMLInputElement>());
+    return { current: arr.map(ref => ref.current) };
+  };
+
+  it('focuses first option after render', () => {
+    render(<QuizQuestionCard {...baseProps} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    const radios = screen.getAllByRole('radio');
+    expect(radios[0]).toHaveFocus();
+  });
+
+  it('calls handleAnswer on click and Enter, not on Arrow keys', () => {
+    const handleAnswer = jest.fn();
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    const radios = screen.getAllByRole('radio');
+    fireEvent.click(radios[1]);
+    expect(handleAnswer).toHaveBeenCalledWith(1, false);
+    handleAnswer.mockClear();
+    radios[2].focus();
+    fireEvent.keyDown(radios[2], { key: 'Enter' });
+    expect(handleAnswer).toHaveBeenCalledWith(2, true);
+    handleAnswer.mockClear();
+    fireEvent.keyDown(radios[2], { key: 'ArrowDown' });
+    fireEvent.keyDown(radios[2], { key: 'ArrowUp' });
+    expect(handleAnswer).not.toHaveBeenCalled();
+  });
+
+  it('applies correct CSS classes for selected and disabled', () => {
+    // Selected
+    const { unmount } = render(<QuizQuestionCard {...baseProps} userAnswers={[1]} answered={false} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    const radios = screen.getAllByRole('radio');
+    expect(radios[1].parentElement?.className).toMatch(/selected/);
+    // Disabled
+    unmount();
+    render(<QuizQuestionCard {...baseProps} userAnswers={[1]} answered={true} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    const radios2 = screen.getAllByRole('radio');
+    expect(radios2[0]).toBeDisabled();
+    expect(radios2[1]).toBeDisabled();
+    expect(radios2[2]).toBeDisabled();
+  });
+});

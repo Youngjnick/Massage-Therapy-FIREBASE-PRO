@@ -59,6 +59,14 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
     }
   }, [uniqueInputId]);
 
+  React.useEffect(() => {
+    // Focus the input if autoFocus is true and not disabled
+    if (autoFocus && !disabled && inputRef && typeof inputRef !== 'function') {
+      const ref = (inputRef as React.RefObject<HTMLInputElement>);
+      if (ref.current) ref.current.focus();
+    }
+  }, [autoFocus, disabled, inputRef]);
+
   return (
     <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest} data-qa="quiz-option" data-testid={dataTestId}>
       <input
@@ -68,7 +76,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         name={name}
         checked={selected}
         onChange={e => {
-          if (disabled || e.currentTarget.readOnly) return;
+          if (Boolean(disabled) || e.currentTarget.readOnly) return;
           try {
             if (typeof onSelect === 'function') onSelect();
           } catch {
@@ -82,15 +90,16 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
         aria-checked={selected}
-        aria-disabled={disabled}
+        aria-disabled={Boolean(disabled)}
         role="radio"
         style={{ marginRight: 12 }}
-        disabled={disabled}
+        disabled={Boolean(disabled)}
+        data-disabled={Boolean(disabled)}
         tabIndex={0}
         data-quiz-radio
         autoFocus={autoFocus}
         onKeyDown={e => {
-          if (disabled || e.currentTarget.readOnly) return;
+          if (Boolean(disabled) || e.currentTarget.readOnly) return;
           if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
             return;
           }
