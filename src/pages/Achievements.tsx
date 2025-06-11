@@ -6,7 +6,18 @@ const Achievements: React.FC = () => {
   const [badges, setBadges] = useState<Badge[]>([]);
 
   useEffect(() => {
-    getBadges().then(setBadges);
+    // For SSR/test, fallback to static import if window.fetch is not available
+    const loadBadges = async () => {
+      let loadedBadges: Badge[] = [];
+      if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
+        loadedBadges = await getBadges();
+      } else {
+        // @ts-expect-error: Dynamic import of JSON for SSR/test fallback
+        loadedBadges = (await import('../../public/badges/badges.json')).default || [];
+      }
+      setBadges(loadedBadges);
+    };
+    loadBadges();
   }, []);
 
   return (
@@ -24,7 +35,7 @@ const Achievements: React.FC = () => {
               alt={badge.name}
               style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
             />
-            <div style={{ marginTop: 8, opacity: badge.awarded ? 1 : 0.5 }}>{badge.name}</div>
+            <div style={{ marginTop: 8, opacity: badge.awarded ? 1 : 0.5 }} data-testid={badge.awarded ? 'badge-awarded' : 'badge-unawarded'}>{badge.name}</div>
           </div>
         ))}
       </div>

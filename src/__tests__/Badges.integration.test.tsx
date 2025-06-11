@@ -26,9 +26,9 @@ describe('Badges/Achievements integration', () => {
 
   it('shows awarded badges visually distinct', async () => {
     render(<Achievements />);
-    const awarded = await screen.findByText('First Quiz');
-    expect(awarded.closest('div')).toHaveStyle('opacity: 1');
-    const notAwarded = await screen.findByText('Accuracy 100%');
-    expect(notAwarded.closest('div')).toHaveStyle('opacity: 0.5');
+    const awarded = await screen.findByTestId('badge-awarded');
+    expect(awarded).toHaveStyle('opacity: 1');
+    const notAwarded = await screen.findByTestId('badge-unawarded');
+    expect(notAwarded).toHaveStyle('opacity: 0.5');
   });
 });

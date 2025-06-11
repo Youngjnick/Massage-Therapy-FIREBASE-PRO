@@ -53,6 +53,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
       setQuizLength={setQuizLength}
       maxQuizLength={maxQuizLength}
       id="quiz-length-input"
+      data-testid="quiz-length-input"
     />
     <QuizRandomizeOptions
       randomizeQuestions={randomizeQuestions}
