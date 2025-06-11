@@ -20,9 +20,8 @@ test('should select an option and submit answer', async ({ page }) => {
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByLabel(/topic/i).selectOption({ index: 0 });
   await page.getByRole('button', { name: /start/i }).click();
-  // Select first option and submit
+  // Select first option (should instantly submit)
   await page.getByTestId('quiz-option').first().click();
-  await page.getByRole('button', { name: /submit/i }).click();
   // Should see feedback
   await expect(page.getByTestId('quiz-feedback')).toBeVisible();
 });
@@ -34,7 +33,8 @@ test('should navigate to next question or finish quiz', async ({ page }) => {
   await page.getByRole('button', { name: /start/i }).click();
   // Answer first question
   await page.getByTestId('quiz-option').first().click();
-  await page.getByRole('button', { name: /submit/i }).click();
+  // Should see feedback
+  await expect(page.getByTestId('quiz-feedback')).toBeVisible();
   await page.getByRole('button', { name: /next/i }).click();
   // Should see second question or summary
   const summary = page.getByTestId('quiz-summary');

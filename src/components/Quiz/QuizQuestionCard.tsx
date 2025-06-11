@@ -66,12 +66,20 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       <button onClick={() => {}}>Prev</button>
       <button onClick={() => {}}>Next</button>
       <button onClick={() => {}}>Finish</button>
-      <button onClick={() => {}}>Cancel</button>
       <span>
         {current + 1} / 1
       </span>
       {answered && <span>Answered</span>}
     </div>
+    {/* Show feedback if answered */}
+    {answered && (
+      <div data-testid="quiz-feedback" style={{ marginTop: 12 }}>
+        {/* You can customize feedback text here, e.g. Correct/Incorrect */}
+        {userAnswers[current] === (shuffledOptions[current] || q.options).indexOf(q.correctAnswer)
+          ? 'Correct!'
+          : 'Incorrect.'}
+      </div>
+    )}
   </div>
 );
 

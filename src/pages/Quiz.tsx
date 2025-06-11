@@ -6,6 +6,7 @@ import { logFeedback } from '../errors/index';
 import { getAuth } from 'firebase/auth';
 import QuizStartForm from '../components/Quiz/QuizStartForm';
 import { useWindowSize } from 'react-use';
+import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
 
 const Quiz: React.FC = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -353,29 +354,16 @@ const Quiz: React.FC = () => {
       {/* --- Actual quiz --- */}
       {started && (
         <div>
-          {/* Question display */}
-          <div>
-            <h2>Question {current + 1} of {quizQuestions.length}</h2>
-            <div>{q.text}</div>
-            <div>
-              {q.options.map((opt, idx) => (
-                <div key={idx}>
-                  <input
-                    type="radio"
-                    id={`q${current}opt${idx}`}
-                    name={`q${current}`}
-                    value={idx}
-                    checked={userAnswers[current] === idx}
-                    onChange={() => handleAnswer(idx)}
-                    ref={optionRefs.current[idx] ? { current: optionRefs.current[idx] } : undefined}
-                    disabled={answered}
-                  />
-                  <label htmlFor={`q${current}opt${idx}`}>{opt}</label>
-                </div>
-              ))}
-            </div>
-            {answerFeedback && <div>{answerFeedback}</div>}
-          </div>
+          <QuizQuestionCard
+            q={q}
+            current={current}
+            userAnswers={userAnswers}
+            answered={answered}
+            handleAnswer={handleAnswer}
+            optionRefs={optionRefs}
+            showExplanations={false}
+            shuffledOptions={shuffledOptions}
+          />
         </div>
       )}
 
