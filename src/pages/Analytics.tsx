@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Analytics: React.FC = () => {
   // Demo stats, replace with real data from Firestore/user context
-  const [stats, setStats] = useState({
+  const [stats] = useState({
     quizzesTaken: 12,
     correctAnswers: 87,
     totalQuestions: 100,
