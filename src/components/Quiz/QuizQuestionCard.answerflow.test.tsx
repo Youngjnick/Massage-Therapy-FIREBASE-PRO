@@ -73,13 +73,33 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
     fireEvent.keyDown(radios[2], { key: 'Enter' });
     expect(handleAnswer).toHaveBeenCalledWith(2, true);
     // After submit, simulate answered=true
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[2]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} key="answered-true" />);
-    const radios2 = screen.getAllByRole('radio');
+    render(
+      <QuizQuestionCard
+        q={baseProps.q}
+        current={0}
+        userAnswers={[2]}
+        answered={true}
+        handleAnswer={handleAnswer}
+        optionRefs={makeOptionRefs(3)}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        showExplanations={false}
+        shuffledOptions={baseProps.shuffledOptions}
+      />
+    );
+    const radiosAfterAnswered = screen.getAllByRole('radio');
     handleAnswer.mockClear(); // Clear after remount
     // Assert radios are disabled
-    expect(radios2[1]).toBeDisabled();
-    fireEvent.click(radios2[1]);
-    fireEvent.keyDown(radios2[1], { key: 'Enter' });
+    console.log('Before assertion: radiosAfterAnswered[1]', {
+      disabled: (radiosAfterAnswered[1] as HTMLInputElement).disabled,
+      ariaDisabled: radiosAfterAnswered[1].getAttribute('aria-disabled'),
+      id: radiosAfterAnswered[1].id,
+      name: (radiosAfterAnswered[1] as HTMLInputElement).name,
+      checked: (radiosAfterAnswered[1] as HTMLInputElement).checked
+    });
+    expect(radiosAfterAnswered[1]).toBeDisabled();
+    fireEvent.click(radiosAfterAnswered[1]);
+    fireEvent.keyDown(radiosAfterAnswered[1], { key: 'Enter' });
     expect(handleAnswer).not.toHaveBeenCalled();
   });
 
@@ -93,5 +113,88 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
     radios[1].focus();
     fireEvent.keyDown(radios[1], { key: 'Enter' });
     expect(handleAnswer).toHaveBeenCalledWith(1, true);
+  });
+
+  it('should reset answered state and allow answer submission for next question', () => {
+    // Simulate a quiz with two questions
+    const q1 = { text: 'Q1', options: ['A', 'B'], correctAnswer: 'A' };
+    const q2 = { text: 'Q2', options: ['C', 'D'], correctAnswer: 'C' };
+    const handleAnswer = jest.fn();
+    // First question, not answered
+    const { rerender } = render(
+      <QuizQuestionCard
+        q={q1}
+        current={0}
+        userAnswers={[]}
+        answered={false}
+        handleAnswer={handleAnswer}
+        optionRefs={{ current: [null, null] }}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        showExplanations={false}
+        shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
+      />
+    );
+    let radios = screen.getAllByRole('radio');
+    expect(radios[0]).not.toBeDisabled();
+    fireEvent.click(radios[1]);
+    expect(handleAnswer).toHaveBeenCalledWith(1, false);
+    // Simulate submit
+    fireEvent.keyDown(radios[1], { key: 'Enter' });
+    expect(handleAnswer).toHaveBeenCalledWith(1, true);
+    // Move to next question, answered should reset
+    rerender(
+      <QuizQuestionCard
+        q={q2}
+        current={1}
+        userAnswers={[]}
+        answered={false}
+        handleAnswer={handleAnswer}
+        optionRefs={{ current: [null, null] }}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        showExplanations={false}
+        shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
+      />
+    );
+    radios = screen.getAllByRole('radio');
+    handleAnswer.mockClear();
+    expect(radios[0]).not.toBeDisabled();
+    fireEvent.click(radios[0]);
+    expect(handleAnswer).toHaveBeenCalledWith(0, false);
+    fireEvent.keyDown(radios[0], { key: 'Enter' });
+    expect(handleAnswer).toHaveBeenCalledWith(0, true);
+    // After submit, simulate answered=true for second question
+    rerender(
+      <QuizQuestionCard
+        q={q2}
+        current={1}
+        userAnswers={[0]}
+        answered={true}
+        handleAnswer={handleAnswer}
+        optionRefs={{ current: [null, null] }}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        showExplanations={false}
+        shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
+      />
+    );
+    const radiosAfterAnswered = screen.getAllByRole('radio');
+    // Debug output for props and DOM state
+    console.log('Second question radios after answered=true:', radiosAfterAnswered.map(r => ({
+      disabled: (r as HTMLInputElement).disabled,
+      ariaDisabled: r.getAttribute('aria-disabled'),
+      id: r.id,
+      name: (r as HTMLInputElement).name,
+      checked: (r as HTMLInputElement).checked
+    })));
+    // Only check the current question's radios for disabled state after rerendering with answered=true
+    // Remove any assertion for the first question's radios after submission
+    // Only check radiosAfterAnswered (second question) for disabled state
+    expect(radiosAfterAnswered[0]).toBeDisabled();
+    expect(radiosAfterAnswered[1]).toBeDisabled();
+    fireEvent.click(radiosAfterAnswered[0]);
+    fireEvent.keyDown(radiosAfterAnswered[0], { key: 'Enter' });
+    expect(handleAnswer).not.toHaveBeenCalled();
   });
 });
