@@ -3,6 +3,7 @@ import parser from '@typescript-eslint/parser';
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 import reactPlugin from 'eslint-plugin-react';
 import prettier from 'eslint-config-prettier';
+import babelParser from '@babel/eslint-parser';
 
 export default [
   js.configs.recommended,
@@ -115,6 +116,47 @@ export default [
         process: 'readonly',
         module: 'readonly',
         require: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['**/*.jsx'],
+    languageOptions: {
+      parser: babelParser,
+      parserOptions: {
+        requireConfigFile: false,
+        babelOptions: {
+          presets: ['@babel/preset-react'],
+        },
+        ecmaFeatures: { jsx: true },
+        ecmaVersion: 2020,
+        sourceType: 'module',
+      },
+    },
+    plugins: {
+      react: reactPlugin,
+    },
+    rules: {
+      ...reactPlugin.configs.recommended.rules,
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
+  {
+    files: ['**/*.test.jsx', '**/__tests__/**/*.jsx'],
+    languageOptions: {
+      globals: {
+        describe: true,
+        it: true,
+        expect: true,
+        beforeAll: true,
+        beforeEach: true,
+        afterAll: true,
+        jest: true,
+        test: true,
       },
     },
   },

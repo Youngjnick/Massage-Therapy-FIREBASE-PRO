@@ -4,10 +4,9 @@ interface ConfettiProps {
   show: boolean;
   width: number;
   height: number;
-  onComplete?: () => void;
 }
 
-const Confetti = ({ show, width, height, onComplete }: ConfettiProps) => {
+const Confetti = ({ show, width, height }: ConfettiProps) => {
   if (!show) return null;
   // You can swap this for your preferred confetti library/component
   // This is a placeholder for modularization

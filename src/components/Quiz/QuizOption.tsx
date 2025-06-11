@@ -68,7 +68,21 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   }, [autoFocus, disabled, inputRef]);
 
   return (
-    <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest} data-qa="quiz-option" data-testid={dataTestId}>
+    <div
+      className={`quiz-option${className ? ' ' + className : ''}`}
+      style={{ width: '100%' }}
+      {...rest}
+      data-qa="quiz-option"
+      data-testid={dataTestId}
+      onClick={e => {
+        // Only handle click if not disabled and not already selected/answered
+        if (disabled) return;
+        // Prevent double submission if the click originated from the input itself
+        if ((e.target as HTMLElement).tagName === 'INPUT') return;
+        if (typeof onSelect === 'function') onSelect();
+        if (typeof onSubmitOption === 'function') onSubmitOption();
+      }}
+    >
       <input
         id={uniqueInputId}
         ref={inputRef}
@@ -82,7 +96,14 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           } catch {
             // Swallow error
           }
-          // REMOVE: onSubmitOption from onChange
+          // On mouse click, also submit immediately
+          if (typeof onSubmitOption === 'function') {
+            try {
+              onSubmitOption();
+            } catch {
+              // Swallow error
+            }
+          }
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
         aria-checked={selected}

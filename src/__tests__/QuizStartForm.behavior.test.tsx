@@ -13,15 +13,21 @@ describe('QuizStartForm (explanation toggle)', () => {
         quizLength={1}
         setQuizLength={() => {}}
         maxQuizLength={1}
-        randomizeQuestions={false}
+        randomizeQuestions
         setRandomizeQuestions={() => {}}
         randomizeOptions={false}
         setRandomizeOptions={() => {}}
         sort="default"
         setSort={() => {}}
         onStart={() => {}}
-        showExplanations={false}
+        showExplanations
         setShowExplanations={setShowExplanations}
+        filter="all"
+        setFilter={() => {}}
+        filterValue=""
+        setFilterValue={() => {}}
+        showInstantFeedback
+        setShowInstantFeedback={() => {}}
       />
     );
     const toggle = screen.getByLabelText(/explanation/i);
