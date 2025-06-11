@@ -51,4 +51,56 @@ describe('QuizOption', () => {
       expect(screen.getByTitle('Selected')).toBeInTheDocument();
     });
   });
+
+  describe('QuizOption (accessibility and keyboard)', () => {
+    it('has correct aria attributes', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={() => {}} inputId="test-id-1" />
+      );
+      const radio = screen.getByRole('radio');
+      // checked radio inputs do not have aria-checked, but have checked property
+      expect(radio).toBeChecked();
+      expect(radio).toHaveAttribute('id', 'test-id-1');
+    });
+    it('calls onSubmitOption when pressing Space or Enter', () => {
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-1" />
+      );
+      const radio = screen.getByRole('radio');
+      radio.focus();
+      fireEvent.keyDown(radio, { key: ' ' });
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSubmitOption).toHaveBeenCalledTimes(2);
+    });
+    it('does not call onSelect or onSubmitOption when disabled', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-1" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: ' ' });
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('is focusable when not disabled', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-1" />
+      );
+      const radio = screen.getByRole('radio');
+      radio.focus();
+      expect(radio).toHaveFocus();
+    });
+    it('is focusable even when disabled (browser default for radio)', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={() => {}} inputId="test-id-1" />
+      );
+      const radio = screen.getByRole('radio');
+      radio.focus();
+      expect(radio).toHaveFocus();
+    });
+  });
 });

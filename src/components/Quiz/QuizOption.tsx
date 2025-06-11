@@ -41,8 +41,9 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         name={name}
         checked={selected}
         onChange={() => {
+          if (disabled) return;
           onSelect();
-          if (!disabled && onSubmitOption) {
+          if (onSubmitOption) {
             onSubmitOption();
           }
         }}
@@ -50,8 +51,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         style={{ marginRight: 12 }}
         disabled={disabled}
         tabIndex={0}
-        autoFocus={autoFocus}
         data-quiz-radio
+        autoFocus={autoFocus}
         onKeyDown={e => {
           if (disabled) return;
           if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
