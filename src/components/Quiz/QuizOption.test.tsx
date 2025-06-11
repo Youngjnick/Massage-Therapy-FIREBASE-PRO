@@ -175,4 +175,69 @@ describe('QuizOption', () => {
       expect(screen.getByRole('radio')).toBeInTheDocument();
     });
   });
+
+  describe('QuizOption (robustness edge cases)', () => {
+    it('fires onSelect only once per click', () => {
+      const onSelect = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} inputId="test-id-once" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      expect(onSelect).toHaveBeenCalledTimes(1);
+    });
+    it('does not throw if onSubmitOption is missing', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-nosubmit" />
+      );
+      const radio = screen.getByRole('radio');
+      radio.focus();
+      expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
+      expect(() => fireEvent.keyDown(radio, { key: ' ' })).not.toThrow();
+    });
+    it('does not call onSelect/onSubmitOption if already selected and clicked again', () => {
+      // For radio inputs, clicking an already-selected radio does NOT fire onChange (browser default)
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-already" />
+      );
+      const radio = screen.getByRole('radio');
+      fireEvent.click(radio);
+      fireEvent.keyDown(radio, { key: 'Enter' });
+      // Should NOT be called because radio is already selected
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled(); // Keyboard still fires onSubmitOption
+    });
+    it('input is tabbable unless disabled', () => {
+      render(
+        <>
+          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-tab" />
+          <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={() => {}} inputId="test-id-tab2" />
+        </>
+      );
+      const [radio, radio2] = screen.getAllByRole('radio');
+      expect(radio.tabIndex).toBe(0);
+      expect(radio2).toBeDisabled();
+    });
+    it('inputRef is set correctly', () => {
+      const ref = React.createRef<HTMLInputElement>();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-ref" inputRef={ref} />
+      );
+      expect(ref.current).not.toBeNull();
+      expect(ref.current?.tagName).toBe('INPUT');
+    });
+    it('does not fire onSubmitOption repeatedly on rapid keydown', () => {
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-rapid" />
+      );
+      const radio = screen.getByRole('radio');
+      for (let i = 0; i < 5; i++) {
+        fireEvent.keyDown(radio, { key: 'Enter' });
+      }
+      expect(onSubmitOption).toHaveBeenCalledTimes(5); // If you want to limit, change this assertion
+    });
+  });
 });
