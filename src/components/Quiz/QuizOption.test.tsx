@@ -828,4 +828,94 @@ describe('QuizOption', () => {
       expect(onSubmitOption).toHaveBeenCalled();
     });
   });
+
+  describe('QuizOption (additional critical/edge/robustness tests)', () => {
+    it('does not call onSelect/onSubmitOption if input is rapidly disabled during click', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { rerender } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-disable-click" />
+      );
+      const radio = screen.getByRole('radio');
+      // Simulate disabling just before click
+      rerender(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-disable-click" />
+      );
+      fireEvent.click(radio);
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('does not call onSelect/onSubmitOption if input is rapidly set to readOnly during click', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { rerender } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-rapid-readonly-click" />
+      );
+      const radio = screen.getByRole('radio');
+      Object.defineProperty(radio, 'readOnly', { value: true });
+      fireEvent.click(radio);
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('calls onSelect/onSubmitOption if input is enabled after being disabled, then clicked', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { rerender } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={true} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-enable-after-disable" />
+      );
+      const radio = screen.getByRole('radio');
+      rerender(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-enable-after-disable" />
+      );
+      fireEvent.click(radio);
+      expect(onSelect).toHaveBeenCalled();
+      expect(onSubmitOption).toHaveBeenCalled();
+    });
+    it('does not call onSelect/onSubmitOption if input is removed from DOM before click', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const { unmount } = render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-remove-before-click" />
+      );
+      const radio = screen.getByRole('radio');
+      unmount();
+      expect(() => fireEvent.click(radio)).not.toThrow();
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('does not throw if onSelect or onSubmitOption throw errors (robust handler)', () => {
+      const onSelect = jest.fn(() => { throw new Error('fail-select'); });
+      const onSubmitOption = jest.fn(() => { throw new Error('fail-submit'); });
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-handler-throw" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(() => fireEvent.click(radio)).not.toThrow();
+      radio.focus();
+      expect(() => fireEvent.keyDown(radio, { key: 'Enter' })).not.toThrow();
+    });
+    it('does not call onSelect/onSubmitOption if children throw error', () => {
+      const onSelect = jest.fn();
+      const onSubmitOption = jest.fn();
+      const ErrorChild = () => { throw new Error('child error'); };
+      expect(() => {
+        render(
+          <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={onSelect} onSubmitOption={onSubmitOption} inputId="test-id-child-throw">
+            <ErrorChild />
+          </QuizOption>
+        );
+      }).toThrow('child error');
+      expect(onSelect).not.toHaveBeenCalled();
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('renders and works with whitespace/emoji/long string props', () => {
+      const long = 'L'.repeat(1000);
+      render(
+        <QuizOption label={'  '} option={'😀 ' + long} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-emoji-long2" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(radio).toHaveAttribute('aria-label', `Option   : 😀 ${long}`);
+      expect(screen.getByText('😀 ' + long)).toBeInTheDocument();
+    });
+  });
 });
