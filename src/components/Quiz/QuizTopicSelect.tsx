@@ -4,12 +4,14 @@ interface QuizTopicSelectProps {
   availableTopics: string[];
   selectedTopic: string;
   setSelectedTopic: (topic: string) => void;
+  id?: string;
 }
 
-const QuizTopicSelect = ({ availableTopics = [], selectedTopic = '', setSelectedTopic = () => {} }: QuizTopicSelectProps) => {
+const QuizTopicSelect = ({ availableTopics = [], selectedTopic = '', setSelectedTopic = () => {}, id }: QuizTopicSelectProps) => {
   return (
     <select
       data-testid="quiz-topic-select"
+      id={id}
       value={selectedTopic}
       onChange={e => setSelectedTopic(e.target.value)}
     >

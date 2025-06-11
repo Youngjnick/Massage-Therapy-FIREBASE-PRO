@@ -12,7 +12,7 @@ interface QuizOptionProps {
   children?: React.ReactNode;
 }
 
-const QuizOption: React.FC<QuizOptionProps> = ({
+const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   label,
   option,
   selected,
@@ -21,8 +21,9 @@ const QuizOption: React.FC<QuizOptionProps> = ({
   className = '',
   inputRef,
   children,
+  ...rest
 }) => (
-  <label className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }}>
+  <label className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest}>
     <input
       ref={inputRef}
       type="radio"

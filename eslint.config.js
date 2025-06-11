@@ -75,4 +75,23 @@ export default [
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
+  {
+    files: ['e2e/**/*.ts'],
+    languageOptions: {
+      parserOptions: {
+        project: './e2e/tsconfig.json',
+      },
+    },
+  },
+  {
+    files: ['playwright.config.ts'],
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+    },
+  },
+  {
+    ignores: ['dist/', 'dist/assets/'],
+  },
 ];

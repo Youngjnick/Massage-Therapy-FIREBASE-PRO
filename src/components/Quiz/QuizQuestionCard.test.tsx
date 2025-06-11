@@ -16,10 +16,7 @@ describe('QuizQuestionCard', () => {
         answered={false}
         handleAnswer={() => {}}
         optionRefs={{ current: [] }}
-        showInstantFeedback={false}
-        answerFeedback={null}
         showExplanations={false}
-        showReview={false}
         shuffledOptions={{ 0: ['Paris', 'London', 'Berlin', 'Rome'] }}
       />
     );

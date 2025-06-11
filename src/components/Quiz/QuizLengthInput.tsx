@@ -4,12 +4,14 @@ interface QuizLengthInputProps {
   quizLength: number;
   setQuizLength: (len: number) => void;
   maxQuizLength: number;
+  id?: string;
 }
 
-const QuizLengthInput = ({ quizLength = 10, setQuizLength = () => {}, maxQuizLength = 100 }: QuizLengthInputProps) => {
+const QuizLengthInput = ({ quizLength = 10, setQuizLength = () => {}, maxQuizLength = 100, id }: QuizLengthInputProps) => {
   return (
     <input
       data-testid="quiz-length-input"
+      id={id}
       type="number"
       min={1}
       max={maxQuizLength}

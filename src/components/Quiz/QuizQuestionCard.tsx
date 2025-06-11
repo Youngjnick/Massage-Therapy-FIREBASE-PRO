@@ -10,12 +10,6 @@ interface QuizQuestionCardProps {
   optionRefs: React.MutableRefObject<(HTMLInputElement | null)[]>;
   showExplanations: boolean;
   shuffledOptions: { [key: number]: string[] };
-  showInstantFeedback: boolean;
-  answerFeedback: string | null;
-  showReview: boolean;
-  bookmarks: string[];
-  toggleBookmark: (id: string) => void;
-  handleReportError: (id: string) => void;
 }
 
 const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
@@ -27,14 +21,8 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   optionRefs,
   showExplanations,
   shuffledOptions,
-  showInstantFeedback,
-  answerFeedback,
-  showReview,
-  bookmarks,
-  toggleBookmark,
-  handleReportError,
 }) => (
-  <div>
+  <div data-testid="quiz-question-card">
     <div style={{ fontWeight: 600, marginBottom: 8 }}>{q.text}</div>
     <ul style={{ listStyle: 'none', padding: 0 }}>
       {(shuffledOptions[current] || q.options).map((opt: string, i: number) => {
@@ -56,6 +44,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
               onSelect={() => handleAnswer(i)}
               className={optionClass}
               inputRef={optionRefs.current[i] ? { current: optionRefs.current[i] } : undefined}
+              data-testid="quiz-option"
             >
               {/* Bookmark and error buttons can be slotted here if needed */}
             </QuizOption>

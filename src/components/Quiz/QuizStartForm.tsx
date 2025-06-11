@@ -35,16 +35,20 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
   setSort,
   onStart,
 }) => (
-  <form style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); onStart(); }}>
+  <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); onStart(); }}>
+    <label htmlFor="quiz-topic-select">Topic</label>
     <QuizTopicSelect
       availableTopics={availableTopics}
       selectedTopic={selectedTopic}
       setSelectedTopic={setSelectedTopic}
+      id="quiz-topic-select"
     />
+    <label htmlFor="quiz-length-input">Quiz Length</label>
     <QuizLengthInput
       quizLength={quizLength}
       setQuizLength={setQuizLength}
       maxQuizLength={maxQuizLength}
+      id="quiz-length-input"
     />
     <QuizRandomizeOptions
       randomizeQuestions={randomizeQuestions}
