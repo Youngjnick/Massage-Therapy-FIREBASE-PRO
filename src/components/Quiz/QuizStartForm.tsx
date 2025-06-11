@@ -66,7 +66,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
     <label htmlFor="quiz-length-input">Quiz Length</label>
     <QuizLengthInput
       quizLength={quizLength}
-      setQuizLength={setQuizLength}
+      setQuizLength={len => setQuizLength(Math.max(1, Math.min(len, maxQuizLength)))}
       maxQuizLength={maxQuizLength}
       id="quiz-length-input"
       data-testid="quiz-length-input"
@@ -136,7 +136,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = ({
         </select>
       </label>
     )}
-    <button type="submit" style={{ marginLeft: '1rem' }}>Start Quiz</button>
+    <button type="submit" style={{ marginLeft: '1rem' }} disabled={maxQuizLength === 0}>Start Quiz</button>
   </form>
 );
 

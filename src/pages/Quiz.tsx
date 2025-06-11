@@ -14,7 +14,7 @@ const Quiz: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string>('');
-  const [quizLength, setQuizLength] = useState<number>(10);
+  const [quizLength, setQuizLength] = useState<number>(questions.length > 0 ? questions.length : 10);
   const [availableTopics, setAvailableTopics] = useState<string[]>([]);
   const [started, setStarted] = useState(false);
   const [current, setCurrent] = useState(0);
@@ -378,6 +378,24 @@ const Quiz: React.FC = () => {
     }, 0);
   }
 
+  // When questions are loaded, update quizLength to match available questions
+  useEffect(() => {
+    if (questions.length > 0) {
+      setQuizLength(questions.length);
+    }
+  }, [questions]);
+
+  // Update quizLength when filteredQuestions changes (e.g., topic/filter changes)
+  useEffect(() => {
+    if (filteredQuestions.length === 0) {
+      setQuizLength(0);
+    } else if (quizLength > filteredQuestions.length) {
+      setQuizLength(filteredQuestions.length);
+    } else if (quizLength < 1) {
+      setQuizLength(1);
+    }
+  }, [filteredQuestions.length]);
+
   // --- Render loading/error state, or quiz/success content ---
   if (loading) return <div>Loading questions...</div>;
   if (error) return <div>{error}</div>;
@@ -445,6 +463,16 @@ const Quiz: React.FC = () => {
   }
 
   // Quiz in progress
+  // Compute answer feedback for the current question
+  const getAnswerFeedback = () => {
+    if (!answered || userAnswers[current] === undefined) return null;
+    const selectedIdx = userAnswers[current];
+    const options = (shuffledOptions[current] || q.options);
+    const selected = options[selectedIdx];
+    if (selected === q.correctAnswer) return 'Correct!';
+    return 'Incorrect';
+  };
+
   return (
     <div>
       <QuizProgressBar progress={activeQuestions.length > 0 ? ((current + 1) / activeQuestions.length) * 100 : 0} />
@@ -462,7 +490,7 @@ const Quiz: React.FC = () => {
         handleAnswer={handleAnswer}
         optionRefs={optionRefs}
         showInstantFeedback={showInstantFeedback}
-        answerFeedback={null}
+        answerFeedback={getAnswerFeedback()}
         showExplanations={showExplanations}
         shuffledOptions={shuffledOptions}
       />
