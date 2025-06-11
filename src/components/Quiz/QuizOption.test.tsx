@@ -104,6 +104,34 @@ describe('QuizOption', () => {
     });
   });
 
+  describe('QuizOption (extra accessibility/keyboard)', () => {
+    it('focuses input on mount if autoFocus is true', () => {
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} inputId="test-id-auto" autoFocus />
+      );
+      const radio = screen.getByRole('radio');
+      expect(radio).toHaveFocus();
+    });
+    it('does not call onSubmitOption on Arrow keys', () => {
+      const onSubmitOption = jest.fn();
+      render(
+        <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-arrow" />
+      );
+      const radio = screen.getByRole('radio');
+      ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].forEach(key => {
+        fireEvent.keyDown(radio, { key });
+      });
+      expect(onSubmitOption).not.toHaveBeenCalled();
+    });
+    it('input always has correct aria-label', () => {
+      render(
+        <QuizOption label="Ω" option={"Option & < > ' \""} selected={false} disabled={false} onSelect={() => {}} inputId="test-id-aria" />
+      );
+      const radio = screen.getByRole('radio');
+      expect(radio).toHaveAttribute('aria-label', 'Option Ω: Option & < > \' "');
+    });
+  });
+
   describe('QuizOption (edge cases)', () => {
     it('renders with a very long option string', () => {
       const longOption = 'A'.repeat(500);
