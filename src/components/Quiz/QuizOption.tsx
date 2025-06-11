@@ -24,7 +24,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   selected,
   disabled,
   onSelect,
-  onSubmitOption, // <-- add this
+  onSubmitOption,
   className = '',
   inputRef,
   inputId,
@@ -38,11 +38,19 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   const labelStr = String(label);
   const optionStr = String(option);
 
+  // Make inputId more unique by including question id from name if possible
+  let uniqueInputId = inputId;
+  if (name && name.startsWith('quiz-question-')) {
+    // Try to extract question id from name
+    const qid = name.replace('quiz-question-', '');
+    uniqueInputId = `${inputId}-${qid}`;
+  }
+
   // Warn in dev if duplicate inputId is detected (simple global check)
   try {
     if ((typeof window !== 'undefined') && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
-      if (inputId && document.getElementById(inputId)) {
-        console.warn(`QuizOption: Duplicate inputId detected: ${inputId}`);
+      if (uniqueInputId && document.getElementById(uniqueInputId)) {
+        console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
       }
     }
   } catch {
@@ -52,7 +60,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   return (
     <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest} data-qa="quiz-option" data-testid={dataTestId}>
       <input
-        id={inputId}
+        id={uniqueInputId}
         ref={inputRef}
         type="radio"
         name={name}
@@ -98,7 +106,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
           }
         }}
       />
-      <label htmlFor={inputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{labelStr}.</label> {optionStr}
+      <label htmlFor={uniqueInputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{labelStr}.</label> {optionStr}
       <QuizOptionIndicator
         isCorrect={classList.includes('correct')}
         isIncorrect={classList.includes('incorrect')}

@@ -98,7 +98,13 @@ export default [
     },
   },
   {
-    ignores: ['dist/', 'dist/assets/', 'playwright.config.ts', 'vite.config.ts', 'e2e/tsconfig.json'],
+    ignores: [
+      'dist/',
+      'dist/assets/',
+      'playwright.config.ts',
+      'vite.config.ts',
+      'e2e/tsconfig.json',
+    ],
   },
   {
     files: ['*.js'],
