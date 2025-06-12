@@ -21,7 +21,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it('allows selecting with click, arrow keys, and submitting with Enter', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     // Click second option
     fireEvent.click(radios[1]);
@@ -42,7 +42,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
   it('should not allow answer submission after already answered', () => {
     const handleAnswer = jest.fn();
     // answered=true disables options, so simulate a submit and try again
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[1]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[1]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[0]);
     fireEvent.keyDown(radios[0], { key: 'Enter' });
@@ -51,7 +51,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it.skip('should allow rapid answer changes before submit, but only one submit', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[0]);
     fireEvent.click(radios[1]);
@@ -82,6 +82,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         answerFeedback={null}
         showExplanations={false}
         shuffledOptions={baseProps.shuffledOptions}
+        isReviewMode={false}
       />
     );
     const radiosAfterAnswered = screen.getAllByRole('radio');
@@ -95,7 +96,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it('should call handleAnswer with correct index and submit flag', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[1]);
     expect(handleAnswer).toHaveBeenCalledWith(1, false);
@@ -123,6 +124,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         answerFeedback={null}
         showExplanations={false}
         shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
+        isReviewMode={false}
       />
     );
     let radios = screen.getAllByRole('radio');
@@ -145,6 +147,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         answerFeedback={null}
         showExplanations={false}
         shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
+        isReviewMode={false}
       />
     );
     radios = screen.getAllByRole('radio');
@@ -167,6 +170,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         answerFeedback={null}
         showExplanations={false}
         shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
+        isReviewMode={false}
       />
     );
     const radiosAfterAnswered = screen.getAllByRole('radio');

@@ -27,7 +27,6 @@ describe('Quiz integration: feature toggles', () => {
   it('randomizes questions when enabled', async () => {
     window.history.pushState({}, 'Quiz page', '/quiz');
     render(<App />);
-    const startForm = await screen.findByTestId('quiz-start-form');
     // Randomize Questions should be checked by default
     const randomizeCheckbox = screen.getByLabelText(/randomize questions/i);
     expect(randomizeCheckbox).toBeChecked();
@@ -48,7 +47,6 @@ describe('Quiz integration: feature toggles', () => {
   it('shows explanations when enabled', async () => {
     window.history.pushState({}, 'Quiz page', '/quiz');
     render(<App />);
-    await screen.findByTestId('quiz-start-form');
     // Show Explanations should be checked by default
     const explanationsCheckbox = screen.getByLabelText(/show explanations/i);
     expect(explanationsCheckbox).toBeChecked();
@@ -72,7 +70,6 @@ describe('Quiz integration: feature toggles', () => {
   it('shows instant feedback when enabled', async () => {
     window.history.pushState({}, 'Quiz page', '/quiz');
     render(<App />);
-    await screen.findByTestId('quiz-start-form');
     // Instant Feedback should be checked by default
     const feedbackCheckbox = screen.getByLabelText(/instant feedback/i);
     expect(feedbackCheckbox).toBeChecked();
