@@ -14,6 +14,8 @@ import { useQuizState } from '../hooks/useQuizState';
 import { getFilteredSortedQuestions } from '../utils/quizFiltering';
 import { getNextQuestionIndex } from '../utils/quizAdaptive';
 import { getQuizFeedback } from '../utils/quizFeedback';
+import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
+import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -57,6 +59,7 @@ const Quiz: React.FC = () => {
     sort,
     setSort,
   } = useQuizState();
+  const [reviewMode, setReviewMode] = useState(false);
 
   // Reset filter and filterValue on quiz start
   useEffect(() => {
@@ -240,15 +243,14 @@ const Quiz: React.FC = () => {
       return copy;
     });
     setAnswered(true);
-    // For demo: auto-move to next question after 1s
-    setTimeout(() => {
-      if (showResults) {
-        next();
-      } else {
+    // Only auto-advance if not on last question
+    if (current < totalQuestions - 1) {
+      setTimeout(() => {
         const nextIdx = getNextQuestionIndex(activeQuestions, current, userAnswers, shuffledOptions, questionTimes);
         setCurrent(nextIdx);
-      }
-    }, 1000);
+      }, 1000);
+    }
+    // If last question (including 1-question quizzes), do NOT auto-advance, so Finish Quiz button appears
   };
 
   // When quiz is finished, set hasCompletedQuiz to true
@@ -264,9 +266,66 @@ const Quiz: React.FC = () => {
   }, [selectedTopic, questions]);
 
   // --- Render ---
+  // Compute topicStats for results
+  const topicStats = React.useMemo(() => {
+    const stats: { [topic: string]: { correct: number; total: number } } = {};
+    (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
+      const topic = q.topic || 'Other';
+      if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
+      stats[topic].total++;
+      if (userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer) {
+        stats[topic].correct++;
+      }
+    });
+    return stats;
+  }, [started, shuffledQuestions, quizQuestions, userAnswers, shuffledOptions]);
+
+  // --- Render ---
+  // Show results if showResults is true
   return (
     <div className="quiz-container">
       <h1>Quiz</h1>
+      {/* Results screen */}
+      {showResults && !reviewMode && (
+        <>
+          <QuizResultsScreen
+            isAllIncorrect={false}
+            onStartNewQuiz={() => {
+              setStarted(false);
+              setShowResults(false);
+              setCurrent(0);
+              setUserAnswers([]);
+              setQuestionTimes([]);
+              setSelectedTopic('');
+              setQuizLength(questions.length > 0 ? questions.length : 10);
+              setHasCompletedQuiz(true);
+              setReviewMode(false);
+            }}
+            topicStats={topicStats}
+            q={q}
+            current={current}
+            userAnswers={userAnswers}
+            shuffledOptions={shuffledOptions}
+            toggleState={toggleState}
+            reviewQueue={Array.from({length: (started ? shuffledQuestions : quizQuestions).length}, (_, i) => i)}
+            activeQuestions={started ? shuffledQuestions : quizQuestions}
+          />
+          <button onClick={() => setReviewMode(true)} data-testid="review-answers-btn" style={{marginTop: 16}}>Review Answers</button>
+        </>
+      )}
+      {/* Review screen */}
+      {showResults && reviewMode && (
+        <>
+          <QuizReviewScreen
+            reviewQueue={Array.from({length: (started ? shuffledQuestions : quizQuestions).length}, (_, i) => i)}
+            activeQuestions={started ? shuffledQuestions : quizQuestions}
+            userAnswers={userAnswers}
+            shuffledOptions={shuffledOptions}
+            toggleState={toggleState}
+          />
+          <button onClick={() => setReviewMode(false)} data-testid="back-to-results-btn" style={{marginTop: 16}}>Back to Results</button>
+        </>
+      )}
       {/* Always render the start form, even while loading, with toggles and disabled Start button */}
       {!started && !showResults && (
         <QuizStartForm
@@ -329,6 +388,37 @@ const Quiz: React.FC = () => {
                 isReviewMode={false}
                 showInstantFeedback={toggleState.instantFeedback}
               />
+            )}
+            {/* Show Finish Quiz button only on the last question, after it is answered, and not already finished */}
+            {current === totalQuestions - 1 && userAnswers[current] !== undefined && !showResults && (
+              <button
+                onClick={() => {
+                  setShowResults(true);
+                  setReviewMode(false);
+                }}
+                data-testid="finish-quiz-btn"
+                style={{
+                  marginTop: 24,
+                  fontWeight: 600,
+                  fontSize: 16,
+                  background: '#2563eb',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: 8,
+                  padding: '10px 24px',
+                  minWidth: 120,
+                  minHeight: 40,
+                  boxShadow: '0 2px 8px rgba(37,99,235,0.12)',
+                  cursor: 'pointer',
+                  transition: 'background 0.2s',
+                  outline: 'none',
+                  display: 'inline-block',
+                }}
+                onMouseOver={e => (e.currentTarget.style.background = '#1d4ed8')}
+                onMouseOut={e => (e.currentTarget.style.background = '#2563eb')}
+              >
+                Finish Quiz
+              </button>
             )}
           </div>
         </>

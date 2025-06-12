@@ -147,7 +147,3 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
 
 export default QuizOption;
 
-// --- Remove all review logic and state for now ---
-// (If needed, move review logic to a separate file or comment block for future reference)
-// All review-related imports, state, and effects are removed for a clean quiz-only experience.
-// Note: Some tests expect both onSelect and onSubmitOption on a single click, which is not standard for the two-step flow. This implementation matches standard radio UX and most test expectations.
