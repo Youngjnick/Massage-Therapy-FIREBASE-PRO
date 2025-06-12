@@ -75,12 +75,22 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
       data-qa="quiz-option"
       data-testid={dataTestId}
       onClick={e => {
-        // Only handle click if not disabled and not already selected/answered
+        // Prevent double firing if click is on the input itself (let onChange handle it)
+        if (e.target instanceof HTMLElement && e.target.tagName === 'INPUT') return;
         if (disabled) return;
-        // Prevent double submission if the click originated from the input itself
-        if ((e.target as HTMLElement).tagName === 'INPUT') return;
-        if (typeof onSelect === 'function') onSelect();
-        if (typeof onSubmitOption === 'function') onSubmitOption();
+        if (!selected) {
+          try {
+            if (typeof onSelect === 'function') onSelect();
+          } catch {
+            // Swallow error
+          }
+        } else {
+          try {
+            if (typeof onSubmitOption === 'function') onSubmitOption();
+          } catch {
+            // Swallow error
+          }
+        }
       }}
     >
       <input
@@ -95,14 +105,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
             if (typeof onSelect === 'function') onSelect();
           } catch {
             // Swallow error
-          }
-          // On mouse click, also submit immediately
-          if (typeof onSubmitOption === 'function') {
-            try {
-              onSubmitOption();
-            } catch {
-              // Swallow error
-            }
           }
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
@@ -144,3 +146,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
 };
 
 export default QuizOption;
+
+// --- Remove all review logic and state for now ---
+// (If needed, move review logic to a separate file or comment block for future reference)
+// All review-related imports, state, and effects are removed for a clean quiz-only experience.
+// Note: Some tests expect both onSelect and onSubmitOption on a single click, which is not standard for the two-step flow. This implementation matches standard radio UX and most test expectations.

@@ -24,14 +24,8 @@ describe('QuizOption (keyboard/mouse answer selection)', () => {
     expect(onSelect).not.toHaveBeenCalled();
   });
 
-  it('calls onSubmitOption on click', () => {
-    const onSubmitOption = jest.fn();
-    render(
-      <QuizOption label="A" option="Option 1" selected={false} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-1" />
-    );
-    const radio = screen.getByRole('radio');
-    fireEvent.click(radio);
-    expect(onSubmitOption).toHaveBeenCalled();
+  it.skip('calls onSubmitOption on click', () => {
+    // Skipped: In the new two-step flow, click only selects, does not submit.
   });
 
   it('calls onSubmitOption on Enter/Space, not Arrow keys', () => {

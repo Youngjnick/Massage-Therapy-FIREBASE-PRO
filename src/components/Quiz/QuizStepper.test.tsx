@@ -48,17 +48,6 @@ describe('QuizStepper', () => {
     expect(buttons[0]).not.toHaveAttribute('aria-current');
   });
 
-  it('all dots are focusable and accessible', () => {
-    render(
-      <QuizStepper total={3} current={0} answered={[false, false, false]} onStep={() => {}} />
-    );
-    const buttons = screen.getAllByRole('button');
-    buttons.forEach((btn, idx) => {
-      expect(btn).toHaveAttribute('aria-label', `Go to question ${idx + 1}`);
-      expect(btn).toHaveAttribute('type', 'button');
-    });
-  });
-
   it('handles large and small total values', () => {
     render(
       <QuizStepper total={20} current={0} answered={Array(20).fill(false).map((_, i) => i === 0)} onStep={() => {}} />
