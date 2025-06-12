@@ -9,12 +9,11 @@ interface QuizQuestionCardProps {
   userAnswers: number[];
   answered: boolean;
   handleAnswer: (idx: number, submit?: boolean) => void;
-  optionRefs: React.MutableRefObject<(HTMLInputElement | null)[]>;
   answerFeedback: string | null;
   showExplanations: boolean;
   shuffledOptions: { [key: number]: string[] };
   isReviewMode: boolean;
-  suppressTestId?: boolean;
+  showInstantFeedback: boolean;
 }
 
 const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
@@ -23,12 +22,11 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   userAnswers,
   answered,
   handleAnswer,
-  optionRefs,
   answerFeedback,
   showExplanations,
   shuffledOptions,
   isReviewMode,
-  suppressTestId = false,
+  showInstantFeedback,
 }) => {
   // Generate a unique instance id for this question card (per mount)
   // Use window.crypto.randomUUID() for true uniqueness if available
@@ -45,11 +43,8 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       ? q
       : { text: 'No questions available', options: ['N/A'], correctAnswer: 'N/A', id: 'empty' };
 
-  // Determine if the answer is correct
-  const isCorrect = answered && userAnswers[current] === safeQ.correctAnswer;
-
   return (
-    <div {...(!suppressTestId ? { 'data-testid': 'quiz-question-card' } : {})}>
+    <div data-testid="quiz-question-card">
       <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
         <legend style={{ fontWeight: 600, marginBottom: 8 }}>{safeQ.text}</legend>
         <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -84,7 +79,6 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                     if (!answered) handleAnswer(i, true);
                   }}
                   className={optionClass}
-                  inputRef={optionRefs.current[i] ? { current: optionRefs.current[i] } : undefined}
                   inputId={inputId}
                   name={name}
                   autoFocus={current === 0 && i === 0}
@@ -96,18 +90,18 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
           })}
         </ul>
       </fieldset>
-      {/* Feedback: only render if answered and answerFeedback is not null */}
-      {answered && answerFeedback && (
+      {/* Feedback: only render if answered, answerFeedback is not null/empty, and (showInstantFeedback or isReviewMode) */}
+      {answered && answerFeedback && answerFeedback.trim() !== '' && (showInstantFeedback || isReviewMode) && (
         <div
           data-testid="quiz-feedback"
           className="quiz-feedback"
           style={{
-            color: isCorrect ? '#059669' : '#ef4444',
+            color: answerFeedback && answerFeedback.trim() === 'Correct!' ? '#059669' : '#ef4444',
             marginTop: 8,
             fontSize: 15,
           }}
         >
-          {answerFeedback || ''}
+          {answerFeedback}
         </div>
       )}
       {showExplanations && (

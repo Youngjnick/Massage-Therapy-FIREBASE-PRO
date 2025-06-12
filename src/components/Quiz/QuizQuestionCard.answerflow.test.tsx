@@ -9,14 +9,8 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
     userAnswers: [],
     answered: false,
     handleAnswer: jest.fn(),
-    optionRefs: { current: [] },
     showExplanations: false,
     shuffledOptions: { 0: ['Alpha', 'Beta', 'Gamma'] },
-  };
-
-  // Helper to create refs array of correct length
-  const makeOptionRefs = (len: number) => {
-    return { current: Array(len).fill(null) };
   };
 
   it('allows selecting with click, arrow keys, and submitting with Enter', () => {
@@ -42,7 +36,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
   it('should not allow answer submission after already answered', () => {
     const handleAnswer = jest.fn();
     // answered=true disables options, so simulate a submit and try again
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[1]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} isReviewMode={false} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[1]} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[0]);
     fireEvent.keyDown(radios[0], { key: 'Enter' });
@@ -51,7 +45,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it.skip('should allow rapid answer changes before submit, but only one submit', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} isReviewMode={false} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[0]);
     fireEvent.click(radios[1]);
@@ -77,7 +71,6 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         userAnswers={[2]}
         answered={true}
         handleAnswer={handleAnswer}
-        optionRefs={makeOptionRefs(3)}
         showInstantFeedback={false}
         answerFeedback={null}
         showExplanations={false}
@@ -96,7 +89,7 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it('should call handleAnswer with correct index and submit flag', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} optionRefs={makeOptionRefs(3)} isReviewMode={false} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[1]);
     expect(handleAnswer).toHaveBeenCalledWith(1, false);
@@ -119,7 +112,6 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         userAnswers={[]}
         answered={false}
         handleAnswer={handleAnswer}
-        optionRefs={{ current: [null, null] }}
         showInstantFeedback={false}
         answerFeedback={null}
         showExplanations={false}
@@ -142,7 +134,6 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         userAnswers={[]}
         answered={false}
         handleAnswer={handleAnswer}
-        optionRefs={{ current: [null, null] }}
         showInstantFeedback={false}
         answerFeedback={null}
         showExplanations={false}
@@ -165,7 +156,6 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
         userAnswers={[0]}
         answered={true}
         handleAnswer={handleAnswer}
-        optionRefs={{ current: [null, null] }}
         showInstantFeedback={false}
         answerFeedback={null}
         showExplanations={false}
