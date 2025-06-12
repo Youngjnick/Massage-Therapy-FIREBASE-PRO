@@ -3,8 +3,14 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import QuizStartForm from '../components/Quiz/QuizStartForm';
 
 describe('QuizStartForm (explanation toggle)', () => {
-  it('calls setShowExplanations when toggled', () => {
-    const setShowExplanations = jest.fn();
+  it('calls setToggleState when explanation toggle is used', () => {
+    const setToggleState = jest.fn();
+    const toggleState = {
+      showExplanations: true,
+      instantFeedback: true,
+      randomizeQuestions: true,
+      randomizeOptions: false,
+    };
     render(
       <QuizStartForm
         availableTopics={['A']}
@@ -13,25 +19,19 @@ describe('QuizStartForm (explanation toggle)', () => {
         quizLength={1}
         setQuizLength={() => {}}
         maxQuizLength={1}
-        randomizeQuestions
-        setRandomizeQuestions={() => {}}
-        randomizeOptions={false}
-        setRandomizeOptions={() => {}}
         sort="default"
         setSort={() => {}}
         onStart={() => {}}
-        showExplanations
-        setShowExplanations={setShowExplanations}
         filter="all"
         setFilter={() => {}}
         filterValue=""
         setFilterValue={() => {}}
-        showInstantFeedback
-        setShowInstantFeedback={() => {}}
+        toggleState={toggleState}
+        setToggleState={setToggleState}
       />
     );
     const toggle = screen.getByLabelText(/explanation/i);
     fireEvent.click(toggle);
-    expect(setShowExplanations).toHaveBeenCalled();
+    expect(setToggleState).toHaveBeenCalled();
   });
 });

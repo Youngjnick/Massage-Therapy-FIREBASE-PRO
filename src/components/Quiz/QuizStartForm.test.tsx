@@ -9,21 +9,22 @@ const defaultProps = {
   quizLength: 10,
   setQuizLength: jest.fn(),
   maxQuizLength: 20,
-  randomizeQuestions: false,
-  setRandomizeQuestions: jest.fn(),
-  showExplanations: false,
-  setShowExplanations: jest.fn(),
+  sort: 'default',
+  setSort: jest.fn(),
   onStart: jest.fn(),
   filter: 'all',
   setFilter: jest.fn(),
   filterValue: '',
   setFilterValue: jest.fn(),
-  sort: 'default',
-  setSort: jest.fn(),
-  randomizeOptions: false,
-  setRandomizeOptions: jest.fn(),
-  showInstantFeedback: true,
-  setShowInstantFeedback: jest.fn(),
+  availableDifficulties: ['easy', 'hard'],
+  availableTags: [],
+  toggleState: {
+    showExplanations: true,
+    instantFeedback: true,
+    randomizeQuestions: true,
+    randomizeOptions: false,
+  },
+  setToggleState: jest.fn(),
 };
 
 describe('QuizStartForm', () => {
@@ -49,19 +50,31 @@ describe('QuizStartForm', () => {
   });
 
   it('randomizes questions checkbox is checked by default', () => {
-    render(<QuizStartForm {...defaultProps} randomizeQuestions={true} />);
+    const props = {
+      ...defaultProps,
+      toggleState: { ...defaultProps.toggleState, randomizeQuestions: true },
+    };
+    render(<QuizStartForm {...props} />);
     const checkbox = screen.getByLabelText(/randomize questions/i);
     expect(checkbox).toBeChecked();
   });
 
   it('show explanations checkbox is checked by default', () => {
-    render(<QuizStartForm {...defaultProps} showExplanations={true} />);
+    const props = {
+      ...defaultProps,
+      toggleState: { ...defaultProps.toggleState, showExplanations: true },
+    };
+    render(<QuizStartForm {...props} />);
     const checkbox = screen.getByLabelText(/show explanations/i);
     expect(checkbox).toBeChecked();
   });
 
   it('instant feedback checkbox is checked by default', () => {
-    render(<QuizStartForm {...defaultProps} showInstantFeedback={true} />);
+    const props = {
+      ...defaultProps,
+      toggleState: { ...defaultProps.toggleState, instantFeedback: true },
+    };
+    render(<QuizStartForm {...props} />);
     const checkbox = screen.getByLabelText(/instant feedback/i);
     expect(checkbox).toBeChecked();
   });
@@ -69,14 +82,12 @@ describe('QuizStartForm', () => {
 
 describe('QuizStartForm (validation)', () => {
   it('disables Start button if no topic selected', () => {
-    render(
-      <QuizStartForm
-        {...defaultProps}
-        availableTopics={[]}
-        selectedTopic=""
-        onStart={jest.fn()}
-      />
-    );
+    const props = {
+      ...defaultProps,
+      availableTopics: [],
+      selectedTopic: '',
+    };
+    render(<QuizStartForm {...props} />);
     expect(screen.getByRole('button', { name: /start/i })).toBeEnabled(); // Adjust if you want to disable
   });
 });
@@ -109,17 +120,17 @@ describe('QuizStartForm (keyboard and accessibility)', () => {
   });
 
   it('toggles explanation with keyboard', () => {
-    const setShowExplanations = jest.fn();
+    const setToggleState = jest.fn();
     render(
       <QuizStartForm
         {...defaultProps}
-        setShowExplanations={setShowExplanations}
+        setToggleState={setToggleState}
       />
     );
     const checkbox = screen.getByLabelText(/show explanations/i);
     checkbox.focus();
     fireEvent.keyDown(checkbox, { key: ' ' });
-    expect(setShowExplanations).toHaveBeenCalled();
+    expect(setToggleState).toHaveBeenCalled();
   });
 
   it('submits form with Enter key', () => {

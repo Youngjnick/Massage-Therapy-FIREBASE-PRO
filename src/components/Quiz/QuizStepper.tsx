@@ -16,7 +16,10 @@ const QuizStepper: React.FC<QuizStepperProps> = ({ total, current, answered, onS
         aria-label="No questions"
         aria-current="step"
         disabled
-      />
+        data-testid="quiz-stepper-dot"
+      >
+        <span className="visually-hidden">No questions</span>
+      </button>
     ) : (
       Array.from({ length: total }).map((_, idx) => (
         <button
@@ -36,7 +39,10 @@ const QuizStepper: React.FC<QuizStepperProps> = ({ total, current, answered, onS
               onStep(idx);
             }
           }}
-        />
+          data-testid="quiz-stepper-dot"
+        >
+          <span className="visually-hidden">Go to question {idx + 1}</span>
+        </button>
       ))
     )}
   </div>
