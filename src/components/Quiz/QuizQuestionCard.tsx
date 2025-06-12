@@ -73,10 +73,12 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   selected={userAnswers[current] === i}
                   disabled={answered ? true : false}
                   onSelect={() => {
+                    // Only select, do not submit
                     if (!answered) handleAnswer(i, false);
                   }}
                   onSubmitOption={() => {
-                    if (!answered) handleAnswer(i, true);
+                    // Only submit if this option is already selected and not answered
+                    if (!answered && userAnswers[current] === i) handleAnswer(i, true);
                   }}
                   className={optionClass}
                   inputId={inputId}

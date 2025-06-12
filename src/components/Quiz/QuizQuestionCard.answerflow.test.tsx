@@ -15,14 +15,40 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it('allows selecting with click, arrow keys, and submitting with Enter', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+    // Use a wrapper to simulate state updates for userAnswers
+    function Wrapper() {
+      const [userAnswers, setUserAnswers] = React.useState<number[]>([]);
+      const [answered, setAnswered] = React.useState(false);
+      // handleAnswer: on select, update userAnswers; on submit, set answered
+      const wrappedHandleAnswer = (idx: number, submit?: boolean) => {
+        if (!submit) setUserAnswers([idx]);
+        if (submit) setAnswered(true);
+        handleAnswer(idx, submit);
+      };
+      return (
+        <QuizQuestionCard
+          {...baseProps}
+          handleAnswer={wrappedHandleAnswer}
+          userAnswers={userAnswers}
+          answered={answered}
+          showInstantFeedback={false}
+          answerFeedback={null}
+          isReviewMode={false}
+        />
+      );
+    }
+    render(<Wrapper />);
     const radios = screen.getAllByRole('radio');
-    // Click second option
+    // Click second option (select)
     fireEvent.click(radios[1]);
     expect(handleAnswer).toHaveBeenCalledWith(1, false);
     handleAnswer.mockClear();
-    // Focus third option and submit with Enter
+    // Focus third option and select it (simulate click)
     radios[2].focus();
+    fireEvent.click(radios[2]); // select third option
+    expect(handleAnswer).toHaveBeenCalledWith(2, false);
+    handleAnswer.mockClear();
+    // Now submit with Enter
     fireEvent.keyDown(radios[2], { key: 'Enter' });
     expect(handleAnswer).toHaveBeenCalledWith(2, true);
     handleAnswer.mockClear();
@@ -89,7 +115,27 @@ describe('QuizQuestionCard (full answer flow: click, arrow, enter)', () => {
 
   it('should call handleAnswer with correct index and submit flag', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={false} userAnswers={[]} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+    function Wrapper() {
+      const [userAnswers, setUserAnswers] = React.useState<number[]>([]);
+      const [answered, setAnswered] = React.useState(false);
+      const wrappedHandleAnswer = (idx: number, submit?: boolean) => {
+        if (!submit) setUserAnswers([idx]);
+        if (submit) setAnswered(true);
+        handleAnswer(idx, submit);
+      };
+      return (
+        <QuizQuestionCard
+          {...baseProps}
+          handleAnswer={wrappedHandleAnswer}
+          userAnswers={userAnswers}
+          answered={answered}
+          showInstantFeedback={false}
+          answerFeedback={null}
+          isReviewMode={false}
+        />
+      );
+    }
+    render(<Wrapper />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[1]);
     expect(handleAnswer).toHaveBeenCalledWith(1, false);
