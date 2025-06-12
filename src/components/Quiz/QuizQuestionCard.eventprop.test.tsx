@@ -20,14 +20,14 @@ describe('QuizQuestionCard (event propagation, focus, and CSS)', () => {
   };
 
   it('focuses first option after render', () => {
-    render(<QuizQuestionCard {...baseProps} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    render(<QuizQuestionCard {...baseProps} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     expect(radios[0]).toHaveFocus();
   });
 
   it('calls handleAnswer on click and Enter, not on Arrow keys', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     fireEvent.click(radios[1]);
     expect(handleAnswer).toHaveBeenCalledWith(1, false);
@@ -43,12 +43,12 @@ describe('QuizQuestionCard (event propagation, focus, and CSS)', () => {
 
   it('applies correct CSS classes for selected and disabled', () => {
     // Selected
-    const { unmount } = render(<QuizQuestionCard {...baseProps} userAnswers={[1]} answered={false} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    const { unmount } = render(<QuizQuestionCard {...baseProps} userAnswers={[1]} answered={false} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     expect(radios[1].parentElement?.className).toMatch(/selected/);
     // Disabled
     unmount();
-    render(<QuizQuestionCard {...baseProps} userAnswers={[1]} answered={true} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} />);
+    render(<QuizQuestionCard {...baseProps} userAnswers={[1]} answered={true} optionRefs={makeOptionRefs(3)} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios2 = screen.getAllByRole('radio');
     expect(radios2[0]).toBeDisabled();
     expect(radios2[1]).toBeDisabled();

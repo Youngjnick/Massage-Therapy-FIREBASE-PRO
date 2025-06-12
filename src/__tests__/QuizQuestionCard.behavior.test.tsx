@@ -12,10 +12,11 @@ describe('QuizQuestionCard (app-level quiz flow)', () => {
     optionRefs: { current: [] },
     showExplanations: false,
     shuffledOptions: { 0: ['A', 'B'] },
+    isReviewMode: false,
   };
 
   it('renders question and options', () => {
-    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} />);
+    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     expect(screen.getByText('Q1')).toBeInTheDocument();
     expect(screen.getByText('A.')).toBeInTheDocument();
     expect(screen.getByText('B.')).toBeInTheDocument();
@@ -23,7 +24,7 @@ describe('QuizQuestionCard (app-level quiz flow)', () => {
 
   it('calls handleAnswer with submit=false on select, true on submit', () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} />);
+    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
     const radios = screen.getAllByRole('radio');
     // Simulate selecting the second option
     fireEvent.click(radios[1]);
