@@ -3,102 +3,61 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import QuizStartForm from './QuizStartForm';
 
 describe('QuizStartForm (feature toggles)', () => {
+  const baseProps = {
+    availableTopics: ['A'],
+    selectedTopic: 'A',
+    setSelectedTopic: jest.fn(),
+    quizLength: 5,
+    setQuizLength: jest.fn(),
+    maxQuizLength: 10,
+    sort: 'default',
+    setSort: jest.fn(),
+    onStart: jest.fn(),
+    filter: 'all',
+    setFilter: jest.fn(),
+    filterValue: '',
+    setFilterValue: jest.fn(),
+    availableDifficulties: ['easy', 'hard'],
+    availableTags: [],
+    toggleState: {
+      showExplanations: true,
+      instantFeedback: true,
+      randomizeQuestions: true,
+      randomizeOptions: false,
+    },
+    setToggleState: jest.fn(),
+  };
+
   it('randomize questions is checked by default and toggles', () => {
-    const setRandomizeQuestions = jest.fn();
-    render(
-      <QuizStartForm
-        availableTopics={['A']}
-        selectedTopic="A"
-        setSelectedTopic={jest.fn()}
-        quizLength={5}
-        setQuizLength={jest.fn()}
-        maxQuizLength={10}
-        randomizeQuestions={true}
-        setRandomizeQuestions={setRandomizeQuestions}
-        randomizeOptions={false}
-        setRandomizeOptions={jest.fn()}
-        sort="default"
-        setSort={jest.fn()}
-        onStart={jest.fn()}
-        showExplanations={true}
-        setShowExplanations={jest.fn()}
-        filter="all"
-        setFilter={jest.fn()}
-        filterValue=""
-        setFilterValue={jest.fn()}
-        showInstantFeedback={true}
-        setShowInstantFeedback={jest.fn()}
-      />
-    );
+    const { setToggleState } = baseProps;
+    render(<QuizStartForm {...baseProps} />);
     const checkbox = screen.getByLabelText(/randomize questions/i);
     expect(checkbox).toBeChecked();
     fireEvent.click(checkbox);
-    expect(setRandomizeQuestions).toHaveBeenCalledWith(false);
+    expect(setToggleState).toHaveBeenCalledWith(
+      expect.objectContaining({ randomizeQuestions: false })
+    );
   });
 
   it('show explanations is checked by default and toggles', () => {
-    const setShowExplanations = jest.fn();
-    render(
-      <QuizStartForm
-        availableTopics={['A']}
-        selectedTopic="A"
-        setSelectedTopic={jest.fn()}
-        quizLength={5}
-        setQuizLength={jest.fn()}
-        maxQuizLength={10}
-        randomizeQuestions={false}
-        setRandomizeQuestions={jest.fn()}
-        randomizeOptions={false}
-        setRandomizeOptions={jest.fn()}
-        sort="default"
-        setSort={jest.fn()}
-        onStart={jest.fn()}
-        showExplanations={true}
-        setShowExplanations={setShowExplanations}
-        filter="all"
-        setFilter={jest.fn()}
-        filterValue=""
-        setFilterValue={jest.fn()}
-        showInstantFeedback={true}
-        setShowInstantFeedback={jest.fn()}
-      />
-    );
+    const { setToggleState } = baseProps;
+    render(<QuizStartForm {...baseProps} />);
     const checkbox = screen.getByLabelText(/show explanations/i);
     expect(checkbox).toBeChecked();
     fireEvent.click(checkbox);
-    expect(setShowExplanations).toHaveBeenCalledWith(false);
+    expect(setToggleState).toHaveBeenCalledWith(
+      expect.objectContaining({ showExplanations: false })
+    );
   });
 
   it('instant feedback is checked by default and toggles', () => {
-    const setShowInstantFeedback = jest.fn();
-    render(
-      <QuizStartForm
-        availableTopics={['A']}
-        selectedTopic="A"
-        setSelectedTopic={jest.fn()}
-        quizLength={5}
-        setQuizLength={jest.fn()}
-        maxQuizLength={10}
-        randomizeQuestions={false}
-        setRandomizeQuestions={jest.fn()}
-        randomizeOptions={false}
-        setRandomizeOptions={jest.fn()}
-        sort="default"
-        setSort={jest.fn()}
-        onStart={jest.fn()}
-        showExplanations={false}
-        setShowExplanations={jest.fn()}
-        filter="all"
-        setFilter={jest.fn()}
-        filterValue=""
-        setFilterValue={jest.fn()}
-        showInstantFeedback={true}
-        setShowInstantFeedback={setShowInstantFeedback}
-      />
-    );
+    const { setToggleState } = baseProps;
+    render(<QuizStartForm {...baseProps} />);
     const checkbox = screen.getByLabelText(/instant feedback/i);
     expect(checkbox).toBeChecked();
     fireEvent.click(checkbox);
-    expect(setShowInstantFeedback).toHaveBeenCalledWith(false);
+    expect(setToggleState).toHaveBeenCalledWith(
+      expect.objectContaining({ instantFeedback: false })
+    );
   });
 });

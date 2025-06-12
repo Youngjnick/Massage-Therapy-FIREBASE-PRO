@@ -10,7 +10,6 @@ interface QuizQuestionCardProps {
   answered: boolean;
   handleAnswer: (idx: number, submit?: boolean) => void;
   optionRefs: React.MutableRefObject<(HTMLInputElement | null)[]>;
-  showInstantFeedback: boolean; // <-- add back
   answerFeedback: string | null;
   showExplanations: boolean;
   shuffledOptions: { [key: number]: string[] };
@@ -28,7 +27,6 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   answerFeedback,
   showExplanations,
   shuffledOptions,
-  showInstantFeedback,
   isReviewMode,
   suppressTestId = false,
 }) => {
@@ -41,25 +39,31 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
     return Math.random().toString(36).slice(2);
   });
 
+  // Defensive check: ensure q is always defined and has required properties
+  const safeQ =
+    q && typeof q === 'object' && q.text && Array.isArray(q.options)
+      ? q
+      : { text: 'No questions available', options: ['N/A'], correctAnswer: 'N/A', id: 'empty' };
+
   // Determine if the answer is correct
-  const isCorrect = answered && userAnswers[current] === q.correctAnswer;
+  const isCorrect = answered && userAnswers[current] === safeQ.correctAnswer;
 
   return (
     <div {...(!suppressTestId ? { 'data-testid': 'quiz-question-card' } : {})}>
       <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
-        <legend style={{ fontWeight: 600, marginBottom: 8 }}>{q.text}</legend>
+        <legend style={{ fontWeight: 600, marginBottom: 8 }}>{safeQ.text}</legend>
         <ul style={{ listStyle: 'none', padding: 0 }}>
-          {(shuffledOptions[current] || q.options).map((opt: string, i: number) => {
+          {(shuffledOptions[current] || safeQ.options).map((opt: string, i: number) => {
             const optionClass =
               userAnswers[current] === i
                 ? answered
-                  ? (shuffledOptions[current] || q.options)[i] === q.correctAnswer
+                  ? (shuffledOptions[current] || safeQ.options)[i] === safeQ.correctAnswer
                     ? 'correct'
                     : 'incorrect'
                   : 'selected'
                 : '';
             // Use a unique question identifier for inputId
-            const safeQuestionId = q.id || (q.text ? q.text.replace(/[^a-zA-Z0-9]/g, '').slice(0, 10) : current);
+            const safeQuestionId = safeQ.id || (safeQ.text ? safeQ.text.replace(/[^a-zA-Z0-9]/g, '').slice(0, 10) : current);
             // Add current index and questionInstanceId to inputId to ensure uniqueness even for repeated questions
             const inputId = `quiz-option-${safeQuestionId}-${i}-${current}-${questionInstanceId}`;
             const name = `quiz-question-${safeQuestionId}-${current}-${questionInstanceId}`;
@@ -72,9 +76,13 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   label={String.fromCharCode(65 + i)}
                   option={opt}
                   selected={userAnswers[current] === i}
-                  disabled={answered}
-                  onSelect={() => handleAnswer(i, false)}
-                  onSubmitOption={() => handleAnswer(i, true)}
+                  disabled={answered ? true : false}
+                  onSelect={() => {
+                    if (!answered) handleAnswer(i, false);
+                  }}
+                  onSubmitOption={() => {
+                    if (!answered) handleAnswer(i, true);
+                  }}
                   className={optionClass}
                   inputRef={optionRefs.current[i] ? { current: optionRefs.current[i] } : undefined}
                   inputId={inputId}
@@ -88,28 +96,28 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
           })}
         </ul>
       </fieldset>
-      {/* Feedback: always render for test, but visually hide if showInstantFeedback is false */}
-      {answered && (answerFeedback !== null) && showInstantFeedback && (
+      {/* Feedback: only render if answered and answerFeedback is not null */}
+      {answered && answerFeedback && (
         <div
           data-testid="quiz-feedback"
           className="quiz-feedback"
           style={{
             color: isCorrect ? '#059669' : '#ef4444',
             marginTop: 8,
-            fontSize: 15
+            fontSize: 15,
           }}
         >
-          {answerFeedback}
+          {answerFeedback || ''}
         </div>
       )}
       {showExplanations && (
         <QuizExplanation
-          shortExplanation={q.short_explanation}
-          longExplanation={q.long_explanation}
-          clinicalApplication={q.clinical_application}
-          sourceReference={q.source_reference}
-          tags={q.tags}
-          keywords={q.keywords}
+          shortExplanation={safeQ.short_explanation}
+          longExplanation={safeQ.long_explanation}
+          clinicalApplication={safeQ.clinical_application}
+          sourceReference={safeQ.source_reference}
+          tags={safeQ.tags}
+          keywords={safeQ.keywords}
         />
       )}
       {/* Pass correct onFinish handler to QuizActions */}
