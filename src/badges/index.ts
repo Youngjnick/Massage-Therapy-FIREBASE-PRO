@@ -3,6 +3,7 @@ export interface Badge {
   name: string;
   description: string;
   criteria: string;
+  image: string;
   awarded: boolean;
 }
 
