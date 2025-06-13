@@ -1,19 +1,12 @@
-/* global process */
 export function getBaseUrl() {
-  // Use process.env for Node/Jest, import.meta.env for browser/Vite, fallback to '/'
-  if (
-    typeof process !== 'undefined' &&
-    process.env &&
-    (process.env.JEST_WORKER_ID || process.env.NODE_ENV === 'test')
-  ) {
-    return '/';
-  }
   let baseUrl = '/';
   try {
-    // Use Function constructor to avoid static import.meta reference
-    baseUrl = Function('try { return import.meta.env.BASE_URL || "/" } catch { return "/" }')();
+    const meta = new Function('return typeof import !== "undefined" ? import.meta : undefined')();
+    if (meta && meta.env && meta.env.BASE_URL) {
+      baseUrl = meta.env.BASE_URL;
+    }
   } catch {
-    // Ignore errors in environments that do not support import.meta
+    // Swallow errors from environments that do not support import.meta
   }
   if (
     typeof globalThis !== 'undefined' &&
@@ -25,3 +18,5 @@ export function getBaseUrl() {
   }
   return baseUrl;
 }
+
+export const BASE_URL = getBaseUrl();
