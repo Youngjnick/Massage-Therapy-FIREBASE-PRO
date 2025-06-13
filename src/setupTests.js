@@ -1,16 +1,6 @@
-/* global jest */
-// Mock import.meta.env for Jest so Vite-specific code doesn't break tests
-Object.defineProperty(globalThis, 'import', {
-  value: {
-    meta: {
-      env: {
-        BASE_URL: '/',
-      },
-    },
-  },
-});
-
-// Mock getBaseUrl for all tests so import.meta.env is never called in Jest
-jest.mock('../utils/getBaseUrl', () => ({
-  getBaseUrl: () => '/',
-}));
+import { TextEncoder, TextDecoder } from 'util';
+if (typeof globalThis.TextEncoder === 'undefined') {
+  globalThis.TextEncoder = TextEncoder;
+  globalThis.TextDecoder = TextDecoder;
+}
+import '@testing-library/jest-dom';
