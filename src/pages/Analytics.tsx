@@ -1,19 +1,50 @@
 import React, { useEffect, useState } from 'react';
+import { doc, onSnapshot } from 'firebase/firestore';
+import { db } from '../firebaseClient';
+import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
 
 const Analytics: React.FC = () => {
-  // Demo stats, replace with real data from Firestore/user context
-  const [stats] = useState({
-    quizzesTaken: 12,
-    correctAnswers: 87,
-    totalQuestions: 100,
-    accuracy: 87,
-    streak: 5,
-    badges: 7,
+  const [stats, setStats] = useState({
+    quizzesTaken: 0,
+    correctAnswers: 0,
+    totalQuestions: 0,
+    accuracy: 0,
+    streak: 0,
+    badges: 0,
   });
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    // TODO: Fetch real analytics from Firestore/user context
+    const auth = getAuth();
+    const unsubscribeAuth = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+    });
+    return () => unsubscribeAuth();
   }, []);
+
+  useEffect(() => {
+    if (!user) return;
+    // Listen to /users/{uid}/stats/analytics (valid document path)
+    const analyticsDoc = doc(db, 'users', user.uid, 'stats', 'analytics');
+    const unsubscribe = onSnapshot(analyticsDoc, (docSnap) => {
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        setStats({
+          quizzesTaken: data.completed || 0,
+          correctAnswers: data.correct || 0,
+          totalQuestions: data.total || 0,
+          accuracy: data.total ? Math.round((data.correct / data.total) * 100) : 0,
+          streak: data.streak || 0,
+          badges: data.badges || 0,
+        });
+      }
+    });
+    return () => unsubscribe();
+  }, [user]);
+
+  if (!user) {
+    return <div>Please sign in to view your analytics.</div>;
+  }
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import { TextEncoder, TextDecoder } from 'util';
-if (typeof global.TextEncoder === 'undefined') {
-  global.TextEncoder = TextEncoder;
-  global.TextDecoder = TextDecoder;
+if (typeof globalThis.TextEncoder === 'undefined') {
+  globalThis.TextEncoder = TextEncoder;
+  globalThis.TextDecoder = TextDecoder;
 }
 
 import React from 'react';
