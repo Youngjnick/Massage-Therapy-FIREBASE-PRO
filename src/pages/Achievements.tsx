@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getBadges, Badge } from '../badges';
-import { BASE_URL } from '../utils/baseUrl';
-import Modal from '../components/Modal';
+import BadgeModal from '../components/Quiz/BadgeModal';
 
 const Achievements: React.FC = () => {
   const [badges, setBadges] = useState<Badge[]>([]);
@@ -37,7 +36,7 @@ const Achievements: React.FC = () => {
             onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setSelectedBadge(badge); }}
           >
             <img
-              src={`${BASE_URL}badges/${badge.criteria}.png`}
+              src={`/badges/${badge.image}`}
               alt={badge.name}
               style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
             />
@@ -45,20 +44,7 @@ const Achievements: React.FC = () => {
           </div>
         ))}
       </div>
-      <Modal isOpen={!!selectedBadge} onClose={() => setSelectedBadge(null)} ariaLabel={selectedBadge ? selectedBadge.name : 'Badge details'}>
-        {selectedBadge && (
-          <div style={{ textAlign: 'center', minWidth: 260 }}>
-            <img
-              src={`${BASE_URL}badges/${selectedBadge.criteria}.png`}
-              alt={selectedBadge.name}
-              style={{ width: 120, height: 120, borderRadius: 20, marginBottom: 16 }}
-            />
-            <h3>{selectedBadge.name}</h3>
-            <div style={{ margin: '12px 0', color: '#64748b' }}>{selectedBadge.description || 'No description available.'}</div>
-            <div><strong>Status:</strong> {selectedBadge.awarded ? 'Awarded' : 'Locked'}</div>
-          </div>
-        )}
-      </Modal>
+      <BadgeModal badge={selectedBadge} open={!!selectedBadge} onClose={() => setSelectedBadge(null)} />
     </div>
   );
 };

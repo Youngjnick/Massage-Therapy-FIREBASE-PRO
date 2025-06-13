@@ -28,7 +28,12 @@ jest.mock('../utils/baseUrl', () => ({ BASE_URL: '/' }));
 // Mock Modal to just render children for simplicity
 jest.mock('../components/Modal', () => ({
   __esModule: true,
-  default: ({ isOpen, children }: any) => (isOpen ? <div data-testid="modal">{children}</div> : null),
+  default: ({ isOpen, children }: any) => (isOpen ? <div data-testid="modal-overlay">{children}</div> : null),
+}));
+// Also mock BadgeModal to use the same overlay for test selectors
+jest.mock('../components/Quiz/BadgeModal', () => ({
+  __esModule: true,
+  default: ({ open, children }: any) => (open ? <div data-testid="modal-overlay">{children}</div> : null),
 }));
 
 describe('Achievements Page', () => {
@@ -44,10 +49,10 @@ describe('Achievements Page', () => {
     render(<Achievements />);
     const badge = await screen.findByText('First Quiz');
     fireEvent.click(badge.closest('[data-testid="badge-container"]')!);
-    expect(screen.getByTestId('modal')).toBeInTheDocument();
+    expect(screen.getByTestId('modal-overlay')).toBeInTheDocument();
     expect(screen.getByText('Complete your first quiz')).toBeInTheDocument();
     // Close modal
-    fireEvent.keyDown(screen.getByTestId('modal'), { key: 'Escape' });
+    fireEvent.keyDown(screen.getByTestId('modal-overlay'), { key: 'Escape' });
     // Modal should close (simulate onClose)
   });
 
