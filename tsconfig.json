@@ -11,7 +11,8 @@
     "jsx": "react-jsx",
     "types": ["vite/client", "jest"],
     "lib": ["es2020", "dom"],
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*",
