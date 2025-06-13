@@ -24,4 +24,16 @@ describe('QuizOptionIndicator', () => {
     // Should not render any indicator span
     expect(container.querySelector('span')).toBeNull();
   });
+  it('renders correct indicator snapshot', () => {
+    const { container } = render(<QuizOptionIndicator isCorrect isSelected isIncorrect={false} />);
+    expect(container).toMatchSnapshot();
+  });
+  it('renders incorrect indicator snapshot', () => {
+    const { container } = render(<QuizOptionIndicator isCorrect={false} isSelected isIncorrect />);
+    expect(container).toMatchSnapshot();
+  });
+  it('renders selected indicator snapshot', () => {
+    const { container } = render(<QuizOptionIndicator isCorrect={false} isSelected isIncorrect={false} />);
+    expect(container).toMatchSnapshot();
+  });
 });

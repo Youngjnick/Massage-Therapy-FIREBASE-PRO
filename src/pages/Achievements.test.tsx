@@ -1,19 +1,19 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitForElementToBeRemoved, act } from '@testing-library/react';
 import Achievements from './Achievements';
 
 // Mock getBadges to return a fixed set of badges
 jest.mock('../badges', () => ({
   getBadges: async () => [
     {
-      id: 'b1',
+      id: 'first_quiz',
       name: 'First Quiz',
       description: 'Complete your first quiz',
       criteria: 'first_quiz',
       awarded: true,
     },
     {
-      id: 'b2',
+      id: 'accuracy_100',
       name: 'Accuracy 100%',
       description: 'Get 100% on a quiz',
       criteria: 'accuracy_100',
@@ -28,12 +28,14 @@ jest.mock('../utils/baseUrl', () => ({ BASE_URL: '/' }));
 // Mock Modal to just render children for simplicity
 jest.mock('../components/Modal', () => ({
   __esModule: true,
-  default: ({ isOpen, children }: any) => (isOpen ? <div data-testid="modal">{children}</div> : null),
+  default: ({ isOpen, children }: any) => (isOpen ? <div data-testid="modal-overlay">{children}</div> : null),
 }));
 
 describe('Achievements Page', () => {
   it('renders badges from getBadges()', async () => {
-    render(<Achievements />);
+    await act(async () => {
+      render(<Achievements />);
+    });
     expect(await screen.findByText('First Quiz')).toBeInTheDocument();
     expect(screen.getByText('Accuracy 100%')).toBeInTheDocument();
     // Check that badge images are present
@@ -41,20 +43,28 @@ describe('Achievements Page', () => {
   });
 
   it('opens and closes badge modal on click', async () => {
-    render(<Achievements />);
+    await act(async () => {
+      render(<Achievements />);
+    });
     const badge = await screen.findByText('First Quiz');
     fireEvent.click(badge.closest('[data-testid="badge-container"]')!);
-    expect(screen.getByTestId('modal')).toBeInTheDocument();
+    expect(screen.getByTestId('modal-overlay')).toBeInTheDocument();
     expect(screen.getByText('Complete your first quiz')).toBeInTheDocument();
-    // Close modal
-    fireEvent.keyDown(screen.getByTestId('modal'), { key: 'Escape' });
-    // Modal should close (simulate onClose)
+    // Close the modal by clicking the overlay
+    const overlay = screen.getByTestId('modal-overlay');
+    fireEvent.click(overlay);
+    // Wait for modal to be removed only if it exists
+    if (screen.queryByTestId('modal-overlay')) {
+      await waitForElementToBeRemoved(() => screen.queryByTestId('modal-overlay'));
+    }
+    expect(screen.queryByTestId('modal-overlay')).not.toBeInTheDocument();
   });
 
   it('toggles light and dark mode', async () => {
-    // Simulate a theme toggle button in the DOM
     document.body.innerHTML = '<button data-testid="theme-toggle">Toggle</button>';
-    render(<Achievements />);
+    await act(async () => {
+      render(<Achievements />);
+    });
     const toggle = screen.getByTestId('theme-toggle');
     // Simulate toggling theme
     fireEvent.click(toggle);

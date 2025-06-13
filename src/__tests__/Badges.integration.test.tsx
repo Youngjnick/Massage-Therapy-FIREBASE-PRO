@@ -6,8 +6,8 @@ import Achievements from '../pages/Achievements';
 jest.mock('../badges');
 
 const mockBadges = [
-  { id: 'b1', name: 'First Quiz', description: 'Complete your first quiz', criteria: 'first_quiz', awarded: true },
-  { id: 'b2', name: 'Accuracy 100%', description: 'Get 100% on a quiz', criteria: 'accuracy_100', awarded: false },
+  { id: 'first_quiz', name: 'First Quiz', description: 'Complete your first quiz', criteria: 'first_quiz', awarded: true },
+  { id: 'accuracy_100', name: 'Accuracy 100%', description: 'Get 100% on a quiz', criteria: 'accuracy_100', awarded: false },
 ];
 
 

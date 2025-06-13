@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from './Modal';
 import type { Badge } from '../../badges';
 
@@ -9,14 +9,17 @@ interface BadgeModalProps {
 }
 
 const BadgeModal: React.FC<BadgeModalProps> = ({ badge, open, onClose }) => {
+  const [imgError, setImgError] = useState(false);
   if (!badge) return null;
   return (
     <Modal open={open} onClose={onClose}>
       <div style={{ textAlign: 'center' }}>
         <img
-          src={`/badges/${badge.id}.png`}
+          src={imgError ? '/badges/badge_test.png' : `/badges/${badge.id}.png`}
           alt={badge.name}
           style={{ width: 160, height: 160, marginBottom: 16 }}
+          onError={() => setImgError(true)}
+          data-testid="badge-image"
         />
         <h2 style={{ marginBottom: 8 }}>{badge.name}</h2>
         <p style={{ fontStyle: 'italic', color: '#64748b', marginBottom: 12 }}>{badge.description}</p>
