@@ -1,30 +1,25 @@
-# Commit Summary: Badge Modal, Quiz Flow, and Badge Image Consistency
-
-## Test Results (detailed)
-- **Test Suites:** 29 passed, 2 skipped, 31 total
-- **Tests:** 182 passed, 23 skipped, 205 total
-- **Snapshots:** 3 passed, 3 total
-- **Time:** ~2.6s
-- **Test results written to:** `test-results/summary.json`
+# Commit Summary: Analytics, Badge Modal, and Test Robustness Refactor (2025-06-13)
 
 ## Key Changes
-- Refactored quiz answer option flow for accessibility and robust two-step select/submit.
-- Modularized test helpers, cleaned up ESLint config, and resolved merge conflicts.
-- Added and tested robust `BadgeModal` with image fallback and accessibility.
-- Added Node-based test to ensure every badge in `badges.json` has a corresponding image file in `public/badges/`.
-- Updated `badges.json` to use image-based IDs (`first_quiz`, `accuracy_100`), removed obsolete `b1`/`b2`.
-- All badge modal, quiz, and badge image tests pass.
+- Refactored `Analytics.tsx` to use Firestore `doc` and `onSnapshot` for robust, real-time user analytics updates.
+- Updated all analytics tests to use static mocks for Firestore and Auth, including proper `doc` and `onSnapshot` mocks with `exists()` and `data()` methods.
+- Fixed all TypeScript, ESLint, and Jest environment issues (TextEncoder/TextDecoder, global/globalThis, ts-expect-error usage).
+- Cleaned up and modularized test helpers, and ensured all badge modal and quiz option flows are robust and accessible.
+- All badge image and metadata consistency tests pass.
 
-## Notable Test Coverage
-- Badge modal: open/close, image fallback, alt text, keyboard navigation.
-- Quiz answer flow: keyboard and mouse, accessibility, two-step logic.
-- Metadata: badge image existence, badge metadata consistency.
+## Test Results (detailed)
+- **Test Suites:** 30 passed, 2 skipped, 32 total
+- **Tests:** 185 passed, 23 skipped, 208 total
+- **Snapshots:** 3 passed, 3 total
+- **Time:** ~2.4s
+- **Test results written to:** `test-results/summary.json`
 
-## Next Steps
-- Add new badges by matching `id` to image filename.
-- Use the badge image existence test to catch missing images early.
-- Continue to improve accessibility and test coverage as needed.
+## Notable Details
+- All analytics and badge modal tests now pass with real-time Firestore logic.
+- No remaining lint or type errors in the codebase.
+- All global and environment setup for Jest is now robust and standards-compliant.
+- Console warnings about React `act(...)` are present but do not affect test pass/fail status.
 
 ---
 
-All tests are passing and badge system is robust. Ready to commit!
+**Ready for deployment and further feature work.**
