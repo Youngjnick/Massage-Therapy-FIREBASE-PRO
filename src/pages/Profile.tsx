@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import { app } from '../firebase/firebaseConfig';
 import { getUserSettings, setUserSettings } from '../userSettings';
-import { BASE_URL } from '../utils/baseUrl';
+import { getBaseUrl } from '../utils/getBaseUrl';
 
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
@@ -30,6 +30,7 @@ const Profile: React.FC = () => {
   useEffect(() => {
     if (!user) return;
     getUserSettings(user.uid).then(settings => {
+      if (!settings) return; // null check
       setDarkMode(!!settings.darkMode);
       setAriaSound(settings.ariaSound !== false);
       setHaptic(!!settings.haptic);
@@ -64,7 +65,7 @@ const Profile: React.FC = () => {
     <div style={{ textAlign: 'center' }}>
       <h2>Profile</h2>
       <img
-        src={user && user.photoURL ? user.photoURL : `${BASE_URL}default_avatar.png`}
+        src={user && user.photoURL ? user.photoURL : `${getBaseUrl()}default_avatar.png`}
         alt="User Avatar"
         style={{ width: 120, height: 120, borderRadius: '50%', margin: '1rem auto', display: 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
       />

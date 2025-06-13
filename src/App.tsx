@@ -8,9 +8,10 @@ import Analytics from './pages/Analytics';
 import Profile from './pages/Profile';
 import AppFooter from './components/AppFooter';
 import './App.css';
+import { getBaseUrl } from './utils/getBaseUrl';
 
 const App: React.FC = () => (
-  <Router>
+  <Router basename={getBaseUrl()}>
     <AppHeader />
     <NavBar />
     <div className="main-content">
