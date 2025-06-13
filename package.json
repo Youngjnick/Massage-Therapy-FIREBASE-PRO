@@ -1,7 +1,6 @@
 {
   "type": "module",
   "dependencies": {
-    "@vitejs/plugin-react": "^4.5.1",
     "firebase": "^11.9.0",
     "firebase-admin": "^13.4.0",
     "framer-motion": "^11.18.2",
@@ -39,6 +38,7 @@
     "@types/testing-library__react": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.34.0",
+    "@vitejs/plugin-react": "^4.5.2",
     "babel-jest": "^29.7.0",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
