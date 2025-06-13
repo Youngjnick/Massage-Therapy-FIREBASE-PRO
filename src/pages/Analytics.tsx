@@ -24,17 +24,18 @@ const Analytics: React.FC = () => {
 
   useEffect(() => {
     if (!user) return;
-    const userDoc = doc(db, 'users', user.uid);
-    const unsubscribe = onSnapshot(userDoc, (docSnap) => {
+    // Listen to /users/{uid}/stats/analytics (valid document path)
+    const analyticsDoc = doc(db, 'users', user.uid, 'stats', 'analytics');
+    const unsubscribe = onSnapshot(analyticsDoc, (docSnap) => {
       if (docSnap.exists()) {
-        const userData = docSnap.data();
+        const data = docSnap.data();
         setStats({
-          quizzesTaken: userData.quizzesTaken || 0,
-          correctAnswers: userData.correctAnswers || 0,
-          totalQuestions: userData.totalQuestions || 0,
-          accuracy: userData.accuracy || 0,
-          streak: userData.streak || 0,
-          badges: userData.badges || 0,
+          quizzesTaken: data.completed || 0,
+          correctAnswers: data.correct || 0,
+          totalQuestions: data.total || 0,
+          accuracy: data.total ? Math.round((data.correct / data.total) * 100) : 0,
+          streak: data.streak || 0,
+          badges: data.badges || 0,
         });
       }
     });
