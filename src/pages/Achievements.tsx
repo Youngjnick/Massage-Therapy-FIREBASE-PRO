@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { getBadges, Badge } from '../badges';
-import { BASE_URL } from '../utils/baseUrl';
 import Modal from '../components/Modal';
 
 const Achievements: React.FC = () => {
@@ -37,7 +36,7 @@ const Achievements: React.FC = () => {
             onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setSelectedBadge(badge); }}
           >
             <img
-              src={`${BASE_URL}badges/${badge.criteria}.png`}
+              src={`/badges/${badge.image}`}
               alt={badge.name}
               style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
             />
@@ -49,7 +48,7 @@ const Achievements: React.FC = () => {
         {selectedBadge && (
           <div style={{ textAlign: 'center', minWidth: 260 }}>
             <img
-              src={`${BASE_URL}badges/${selectedBadge.criteria}.png`}
+              src={`/badges/${selectedBadge.image}`}
               alt={selectedBadge.name}
               style={{ width: 120, height: 120, borderRadius: 20, marginBottom: 16 }}
             />
