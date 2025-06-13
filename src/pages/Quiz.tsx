@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { getQuestions } from '../questions/index';
 import { Question } from '../types/index';
-import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
 import QuizProgressBar from '../components/Quiz/QuizProgressBar';
@@ -16,6 +15,8 @@ import { getNextQuestionIndex } from '../utils/quizAdaptive';
 import { getQuizFeedback } from '../utils/quizFeedback';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
+import BookmarkButton from '../components/Quiz/BookmarkButton';
+import { getBookmarks, addBookmark, removeBookmark } from '../bookmarks';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -60,6 +61,8 @@ const Quiz: React.FC = () => {
     setSort,
   } = useQuizState();
   const [reviewMode, setReviewMode] = useState(false);
+  const [bookmarks, setBookmarks] = useState<{ [questionId: string]: string }>({});
+  const [bookmarkLoading, setBookmarkLoading] = useState(false);
 
   // Reset filter and filterValue on quiz start
   useEffect(() => {
@@ -102,8 +105,7 @@ const Quiz: React.FC = () => {
       .catch(() => console.log('Failed to load questions'))
       .finally(() => setLoading(false));
 
-    // Load bookmarks from Firebase on start (replace 'userId' with real user id)
-    getBookmarks('demoUser');
+    // getBookmarks('demoUser'); // Disabled: missing bookmarks module
 
     // Load user settings from Firestore on mount
     const auth = getAuth();
@@ -265,6 +267,26 @@ const Quiz: React.FC = () => {
     setQuizLength(count);
   }, [selectedTopic, questions]);
 
+  // Move handleBookmarkToggle and bookmark state above return so it's in scope
+  // Handler to add/remove bookmark for current question
+  const handleBookmarkToggle = async (questionId: string) => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (!user) return;
+    setBookmarkLoading(true);
+    if (bookmarks[questionId]) {
+      await removeBookmark(bookmarks[questionId]);
+    } else {
+      await addBookmark(user.uid, questionId);
+    }
+    // Refresh bookmarks
+    const bms = await getBookmarks(user.uid);
+    const map: { [questionId: string]: string } = {};
+    bms.forEach(bm => { if (bm.questionId) map[bm.questionId] = bm.id || ''; });
+    setBookmarks(map);
+    setBookmarkLoading(false);
+  };
+
   // --- Render ---
   // Compute topicStats for results
   const topicStats = React.useMemo(() => {
@@ -376,18 +398,28 @@ const Quiz: React.FC = () => {
           />
           <div className="quiz-question">
             {q && (
-              <QuizQuestionCard
-                q={q}
-                current={current}
-                userAnswers={userAnswers}
-                answered={answered}
-                handleAnswer={handleAnswer}
-                answerFeedback={getQuizFeedback(q, current, userAnswers, shuffledOptions)}
-                showExplanations={toggleState.showExplanations}
-                shuffledOptions={shuffledOptions}
-                isReviewMode={false}
-                showInstantFeedback={toggleState.instantFeedback}
-              />
+              <>
+                <div style={{ display: 'flex', alignItems: 'center', marginBottom: 8 }}>
+                  <span style={{ fontWeight: 600, fontSize: 18 }}>Question {current + 1}</span>
+                  <BookmarkButton
+                    bookmarked={!!bookmarks[q.id]}
+                    onClick={() => handleBookmarkToggle(q.id)}
+                    disabled={bookmarkLoading}
+                  />
+                </div>
+                <QuizQuestionCard
+                  q={q}
+                  current={current}
+                  userAnswers={userAnswers}
+                  answered={answered}
+                  handleAnswer={handleAnswer}
+                  answerFeedback={getQuizFeedback(q, current, userAnswers, shuffledOptions)}
+                  showExplanations={toggleState.showExplanations}
+                  shuffledOptions={shuffledOptions}
+                  isReviewMode={false}
+                  showInstantFeedback={toggleState.instantFeedback}
+                />
+              </>
             )}
             {/* Show Finish Quiz button only on the last question, after it is answered, and not already finished */}
             {current === totalQuestions - 1 && userAnswers[current] !== undefined && !showResults && (

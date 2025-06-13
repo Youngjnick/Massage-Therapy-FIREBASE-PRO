@@ -1,0 +1,1 @@
+const i=[{id:"first_quiz",name:"First Quiz",description:"Complete your first quiz",criteria:"first_quiz",image:"first_quiz.png",awarded:!0},{id:"accuracy_100",name:"Accuracy 100%",description:"Get 100% on a quiz",criteria:"accuracy_100",image:"accuracy_100.png",awarded:!1}];export{i as default};

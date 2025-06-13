@@ -13,7 +13,7 @@ const Achievements: React.FC = () => {
       if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
         loadedBadges = await getBadges();
       } else {
-        loadedBadges = (await import('../../public/badges/badges.json')).default || [];
+        loadedBadges = (await import('../badges/badges.json')).default || [];
       }
       setBadges(loadedBadges);
     };
