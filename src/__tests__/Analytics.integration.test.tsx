@@ -7,20 +7,20 @@ jest.mock('firebase/auth', () => ({
     return jest.fn();
   },
 }));
+const mockDoc = jest.fn();
 jest.mock('firebase/firestore', () => {
   return {
     collection: jest.fn(),
     query: jest.fn(),
     where: jest.fn(),
-    doc: jest.fn(() => ({})),
+    doc: (...args: any[]) => mockDoc(...args),
     onSnapshot: (ref: unknown, cb: (snapshot: any) => void) => {
       cb({
         exists: () => true,
         data: () => ({
-          quizzesTaken: 5,
-          correctAnswers: 40,
-          totalQuestions: 50,
-          accuracy: 80,
+          completed: 5,
+          correct: 40,
+          total: 50,
           streak: 3,
           badges: 2,
         }),
@@ -35,12 +35,29 @@ import { render, screen } from '@testing-library/react';
 import Analytics from '../pages/Analytics';
 
 describe('Analytics integration', () => {
+  beforeEach(() => {
+    mockDoc.mockClear();
+  });
   it('displays user stats: quizzes taken, correct answers, accuracy, streak, badges', async () => {
     render(<Analytics />);
-    expect(await screen.findByText(/Quizzes Taken:/)).toBeInTheDocument();
-    expect(screen.getByText(/Correct Answers:/)).toBeInTheDocument();
-    expect(screen.getByText(/Accuracy:/)).toBeInTheDocument();
-    expect(screen.getByText(/Current Streak:/)).toBeInTheDocument();
-    expect(screen.getByText(/Badges Earned:/)).toBeInTheDocument();
+    // Check for labels and values using toHaveTextContent
+    const quizzesDiv = (await screen.findByText('Quizzes Taken:')).parentElement!;
+    expect(quizzesDiv).toHaveTextContent(/Quizzes Taken:\s*5/);
+    const correctDiv = screen.getByText('Correct Answers:').parentElement!;
+    expect(correctDiv).toHaveTextContent(/Correct Answers:\s*40\s*\/\s*50/);
+    const accuracyDiv = screen.getByText('Accuracy:').parentElement!;
+    expect(accuracyDiv).toHaveTextContent(/Accuracy:\s*80%/);
+    const streakDiv = screen.getByText('Current Streak:').parentElement!;
+    expect(streakDiv).toHaveTextContent(/Current Streak:\s*3 days/);
+    const badgesDiv = screen.getByText('Badges Earned:').parentElement!;
+    expect(badgesDiv).toHaveTextContent(/Badges Earned:\s*2/);
+    // Ensure correct Firestore path
+    expect(mockDoc).toHaveBeenCalledWith(
+      expect.anything(),
+      'users',
+      'test-user',
+      'stats',
+      'analytics'
+    );
   });
 });
