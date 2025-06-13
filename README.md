@@ -1,7 +1,26 @@
 # Massage Therapy Smart Study PRO
 
 ## Overview
-The Massage Therapy Smart Study PRO is a comprehensive application designed to enhance the learning experience for massage therapy students. This application allows users to manage questions, track statistics, save bookmarks, log errors, and earn badges based on their achievements.
+The Massage Therapy Smart Study PRO is a comprehensive, modular React application designed to enhance the learning experience for massage therapy students. It features a robust quiz system, statistics tracking, bookmarking, error logging, and a dynamic badge/achievements system. The app is built with TypeScript, tested with Jest and React Testing Library, and integrates with Firebase for data persistence.
+
+---
+
+## Main Branch Status (as of June 13, 2025)
+- **Codebase:** Clean, modular, and fully TypeScript-typed. All merge conflicts have been resolved.
+- **Testing:** All Jest and React Testing Library test suites pass. No parse, ESLint, or TypeScript errors in the main code or tests.
+- **Features:**
+  - Quiz flow with instant feedback, review mode, and explanations
+  - Badge/achievement system with modal details and visual distinction for awarded badges
+  - Bookmarks and error logging for user study tracking
+  - Statistics dashboard for performance analysis
+  - Accessibility and keyboard navigation support
+- **Deployment:** Ready for deployment (e.g., GitHub Pages via `gh-pages` branch)
+- **Development Workflow:**
+  - Feature branches are merged only after passing all tests
+  - Code is linted and type-checked before merging
+  - README and documentation are kept up to date
+
+---
 
 ## Features
 - **Questions Management**: Add, retrieve, update, and delete questions related to massage therapy.
