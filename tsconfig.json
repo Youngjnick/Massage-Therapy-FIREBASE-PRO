@@ -15,11 +15,19 @@
     "resolveJsonModule": true
   },
   "include": [
-    "src/**/*",
-    "__tests__/**/*"
+    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "__tests__",
+    "__tests__/**/*.ts",
+    "__tests__/**/*.tsx",
+    "__tests__/**/*.js",
+    "__tests__/**/*.jsx"
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts"
+    "dist"
   ]
 }

@@ -17,9 +17,7 @@ jest.mock('react-router-dom', () => {
     useLocation: () => ({ pathname: '/' }),
   };
 });
-jest.mock('../utils/baseUrl', () => ({
-  BASE_URL: '/',
-}));
+jest.mock('../utils/getBaseUrl', () => ({ getBaseUrl: () => '/' }));
 
 globalThis.import = { meta: { env: { BASE_URL: '/' } } };
 

@@ -16,7 +16,7 @@ jest.mock('../questions/index', () => ({
     },
   ]),
 }));
-jest.mock('../utils/baseUrl', () => ({ BASE_URL: '/' }));
+jest.mock('../utils/getBaseUrl', () => ({ getBaseUrl: () => '/' }));
 
 describe('Quiz Flow Integration', () => {
   it.skip('allows a user to start a quiz, answer questions, and see results', async () => {
