@@ -49,6 +49,7 @@ const Achievements: React.FC = () => {
           <div style={{ textAlign: 'center', minWidth: 260 }}>
             <img
               src={`/badges/${selectedBadge.image}`}
+
               alt={selectedBadge.name}
               style={{ width: 120, height: 120, borderRadius: 20, marginBottom: 16 }}
             />

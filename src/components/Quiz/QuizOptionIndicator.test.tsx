@@ -2,7 +2,9 @@ import React from 'react';
 import { render, screen } from '../../utils/testUtils';
 import QuizOptionIndicator from './QuizOptionIndicator';
 
-describe('QuizOptionIndicator', () => {
+  beforeAll(() => {});
+  beforeEach(() => {});
+  afterAll(() => {});
   beforeAll(() => { console.log('Starting QuizOptionIndicator tests...'); });
   beforeEach(() => { console.log('Running next QuizOptionIndicator test...'); });
   afterAll(() => { console.log('Finished QuizOptionIndicator tests.'); });
