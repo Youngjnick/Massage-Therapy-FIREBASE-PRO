@@ -1,3 +1,5 @@
+import { getBaseUrl } from '../utils/getBaseUrl';
+
 export interface Badge {
   id: string;
   name: string;
@@ -11,7 +13,7 @@ export interface Badge {
 export const getBadges = async (): Promise<Badge[]> => {
   if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
     try {
-      const res = await window.fetch('/badges/badges.json');
+      const res = await window.fetch(`${getBaseUrl()}badges/badges.json`);
       if (!res.ok) throw new Error('Failed to load badge metadata');
       return await res.json();
     } catch {
