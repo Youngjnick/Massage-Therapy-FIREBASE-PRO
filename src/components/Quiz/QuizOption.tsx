@@ -1,5 +1,4 @@
 // WIP: This component is under active development and critical testing for robustness and accessibility.
-
 import React from 'react';
 import QuizOptionIndicator from './QuizOptionIndicator';
 
@@ -211,4 +210,3 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
 };
 
 export default QuizOption;
-

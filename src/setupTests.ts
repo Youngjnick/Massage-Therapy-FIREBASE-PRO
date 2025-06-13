@@ -1,6 +1,8 @@
 import { TextEncoder, TextDecoder } from 'util';
 if (typeof global.TextEncoder === 'undefined') {
-  global.TextEncoder = TextEncoder as unknown as typeof global.TextEncoder;
-  global.TextDecoder = TextDecoder as unknown as typeof global.TextDecoder;
+  // @ts-expect-error: Assigning Node.js TextEncoder to global for Jest
+  global.TextEncoder = TextEncoder;
+  // @ts-expect-error: Assigning Node.js TextDecoder to global for Jest
+  global.TextDecoder = TextDecoder;
 }
 import '@testing-library/jest-dom';
