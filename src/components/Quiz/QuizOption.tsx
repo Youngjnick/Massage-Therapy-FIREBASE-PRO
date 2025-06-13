@@ -9,13 +9,14 @@ interface QuizOptionProps {
   selected: boolean;
   disabled: boolean;
   onSelect: () => void;
-  onSubmitOption?: () => void; // <-- add this
+  onSubmitOption?: () => void;
   className?: string;
   inputRef?: React.Ref<HTMLInputElement>;
   inputId: string;
   name?: string;
   children?: React.ReactNode;
   autoFocus?: boolean;
+  isFirst?: boolean; // Add this prop
 }
 
 const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
@@ -31,6 +32,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   name,
   children,
   autoFocus = false,
+  isFirst = false,
   'data-testid': dataTestId,
   ...rest
 }) => {
@@ -38,75 +40,166 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   const labelStr = String(label);
   const optionStr = String(option);
 
-  // Make inputId more unique by including question id from name if possible
-  let uniqueInputId = inputId;
-  if (name && name.startsWith('quiz-question-')) {
-    // Try to extract question id from name
-    const qid = name.replace('quiz-question-', '');
-    uniqueInputId = `${inputId}-${qid}`;
-  }
+  // Use inputId as provided, do not append qid from name
+  const uniqueInputId = inputId;
 
   // Warn in dev if duplicate inputId is detected (simple global check)
-  try {
-    if ((typeof window !== 'undefined') && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
-      if (uniqueInputId && document.getElementById(uniqueInputId)) {
-        console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
+  React.useEffect(() => {
+    if (
+      typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ) {
+      const el = document.getElementById(uniqueInputId);
+      if (el) {
+        // Check if there is more than one element with this id
+        const all = document.querySelectorAll(`#${CSS.escape(uniqueInputId)}`);
+        if (all.length > 1) {
+          // Remove or comment out debug warning for duplicate inputId
+          // console.warn(`QuizOption: Duplicate inputId detected: ${uniqueInputId}`);
+        }
       }
     }
-  } catch {
-    // Suppress errors in duplicate inputId dev check
-  }
+  }, [uniqueInputId]);
+
+  React.useEffect(() => {
+    // Focus the input if autoFocus is true and not disabled
+    if (autoFocus && !disabled && inputRef && typeof inputRef !== 'function') {
+      const ref = (inputRef as React.RefObject<HTMLInputElement>);
+      if (ref.current) ref.current.focus();
+    }
+  }, [autoFocus, disabled, inputRef]);
+
+  // Track which keys have submitted in this focus session
+  const submittedKeysRef = React.useRef<{ [key: string]: boolean }>({});
+
+  // Reset submit keys on blur
+  const handleBlur = () => {
+    submittedKeysRef.current = {};
+  };
+
+  // IMPORTANT: The 'name' prop must be unique per quiz card/group.
+  // Keyboard navigation (ArrowUp/Down/Left/Right) is scoped to radios with the same 'name'.
+  const focusSiblingInput = (direction: 'next' | 'prev') => {
+    const thisInput = document.getElementById(uniqueInputId);
+    if (!thisInput || !name) return;
+    // Only include radios that are visible and are siblings (same parentNode)
+    const parent = thisInput.parentNode;
+    if (!parent) return;
+    const radios = Array.from(parent.querySelectorAll('input[type="radio"][name="' + name + '"]'))
+      .map(r => r as HTMLInputElement)
+      .filter(r => r.offsetParent !== null);
+    const idx = radios.findIndex(r => r.id === uniqueInputId);
+    if (idx === -1) return;
+    const nextIdx = direction === 'next' ? (idx + 1) % radios.length : (idx - 1 + radios.length) % radios.length;
+    Promise.resolve().then(() => { radios[nextIdx]?.focus(); });
+  };
+
+  // Use a fallback ref if inputRef is not provided
+  const fallbackRef = React.useRef<HTMLInputElement>(null);
+  const resolvedInputRef = inputRef || fallbackRef;
+
+  // Helper to get the input element from ref (handles function or object ref)
+  const getInputEl = () => {
+    if (typeof resolvedInputRef === 'function') return null;
+    return resolvedInputRef?.current || null;
+  };
+
+  // Determine tabIndex: if selected, 0; if not selected and isFirst, 0; else -1
+  const tabIndex = selected || (isFirst && !disabled) ? 0 : -1;
+
+  // Auto-focus the first visible option if none are selected (for first question)
+  React.useEffect(() => {
+    if (isFirst && !selected && !disabled) {
+      // Only focus if no other radio in the group is selected or focused
+      const el = getInputEl();
+      if (!el) return;
+      // Find all radios in the same group (by name)
+      const groupRadios = name
+        ? Array.from(document.querySelectorAll(`input[type='radio'][name='${name}']`))
+        : [el];
+      const anySelected = groupRadios.some(r => (r as HTMLInputElement).checked);
+      const anyFocused = groupRadios.some(r => r === document.activeElement);
+      if (!anySelected && !anyFocused) {
+        Promise.resolve().then(() => { el.focus(); }); // Robust focus after mount
+      }
+    }
+  }, [isFirst, selected, disabled, name]);
 
   return (
-    <div className={`quiz-option${className ? ' ' + className : ''}`} style={{ width: '100%' }} {...rest} data-qa="quiz-option" data-testid={dataTestId}>
+    <div
+      className={`quiz-option${className ? ' ' + className : ''}`}
+      style={{ width: '100%', cursor: disabled ? 'not-allowed' : 'pointer' }}
+      {...rest}
+      data-qa="quiz-option"
+      data-testid={dataTestId}
+      onClick={() => {
+        if (disabled) return;
+        // Only focus input if not already focused
+        const el = getInputEl();
+        if (el && document.activeElement !== el) el.focus();
+        // If not selected, trigger onSelect (for box click)
+        if (!selected && typeof onSelect === 'function') {
+          onSelect();
+        } else if (selected && typeof onSubmitOption === 'function') {
+          onSubmitOption();
+        }
+      }}
+    >
       <input
         id={uniqueInputId}
-        ref={inputRef}
+        ref={resolvedInputRef}
         type="radio"
         name={name}
         checked={selected}
         onChange={e => {
-          if (disabled || e.currentTarget.readOnly) return;
-          try {
-            if (typeof onSelect === 'function') onSelect();
-          } catch {
-            // Swallow error to prevent crash
-          }
-          if (typeof onSubmitOption === 'function') {
-            try {
-              onSubmitOption();
-            } catch {
-              // Swallow error to prevent crash
-            }
+          if (Boolean(disabled) || e.currentTarget.readOnly) return;
+          if (!selected) {
+            try { if (typeof onSelect === 'function') onSelect(); } catch { /* swallow */ }
           }
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
         aria-checked={selected}
-        aria-disabled={disabled}
+        aria-disabled={Boolean(disabled)}
         role="radio"
-        style={{ marginRight: 12 }}
-        disabled={disabled}
-        tabIndex={0}
+        style={{ marginRight: 12, cursor: disabled ? 'not-allowed' : 'pointer' }}
+        disabled={Boolean(disabled)}
+        data-disabled={Boolean(disabled)}
+        tabIndex={tabIndex}
         data-quiz-radio
-        autoFocus={autoFocus}
+        // autoFocus={autoFocus} // Remove this line to avoid React warnings and double-focusing
+        onClick={e => {
+          e.stopPropagation();
+          if (Boolean(disabled) || e.currentTarget.readOnly) return;
+          if (selected && typeof onSubmitOption === 'function') {
+            onSubmitOption();
+          }
+        }}
+        onBlur={handleBlur}
         onKeyDown={e => {
-          if (disabled || e.currentTarget.readOnly) return;
-          if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          if (Boolean(disabled) || e.currentTarget.readOnly) return;
+          if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            focusSiblingInput('prev');
             return;
           }
-          if (e.key === 'Enter' || e.key === ' ') {
+          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
             e.preventDefault();
-            if (typeof onSubmitOption === 'function') {
-              try {
-                onSubmitOption();
-              } catch {
-                // Swallow error to prevent crash
-              }
+            focusSiblingInput('next');
+            return;
+          }
+          if ((e.key === 'Enter' || e.key === ' ')) {
+            e.preventDefault();
+            if (!selected) {
+              try { if (typeof onSelect === 'function') onSelect(); } catch { /* swallow */ }
+            } else if (!submittedKeysRef.current[e.key]) {
+              submittedKeysRef.current[e.key] = true;
+              try { if (typeof onSubmitOption === 'function') onSubmitOption(); } catch { /* swallow */ }
             }
+            return;
           }
         }}
       />
-      <label htmlFor={uniqueInputId} style={{ fontWeight: 600, marginRight: 8, cursor: 'pointer' }}>{labelStr}.</label> {optionStr}
+      <label htmlFor={uniqueInputId} style={{ fontWeight: 600, marginRight: 8, cursor: disabled ? 'not-allowed' : 'pointer' }}>{labelStr}.</label> {optionStr}
       <QuizOptionIndicator
         isCorrect={classList.includes('correct')}
         isIncorrect={classList.includes('incorrect')}
@@ -118,3 +211,4 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
 };
 
 export default QuizOption;
+

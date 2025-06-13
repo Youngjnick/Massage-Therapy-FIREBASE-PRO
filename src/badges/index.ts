@@ -1,8 +1,3 @@
-import { db } from '../firebase/firebaseConfig';
-import {
-  collection, getDocs, doc, updateDoc, addDoc
-} from 'firebase/firestore';
-
 export interface Badge {
   id: string;
   name: string;
@@ -11,18 +6,25 @@ export interface Badge {
   awarded: boolean;
 }
 
+// Load badge metadata from public/badges/badges.json
 export const getBadges = async (): Promise<Badge[]> => {
-  const snapshot = await getDocs(collection(db, 'badges'));
-  return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Badge));
+  if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
+    try {
+      const res = await window.fetch('/badges/badges.json');
+      if (!res.ok) throw new Error('Failed to load badge metadata');
+      return await res.json();
+    } catch {
+      return [];
+    }
+  }
+  // SSR or test fallback
+  return [];
 };
 
-export const awardBadge = async (userId: string, badgeId: string): Promise<void> => {
-  const userRef = doc(db, 'users', userId);
-  await updateDoc(userRef, {
-    badges: badgeId // For arrayUnion, use FieldValue from server if needed
-  });
+export const awardBadge = async (): Promise<void> => {
+  // No-op for local badge images
 };
 
-export const createBadge = async (badge: Badge): Promise<void> => {
-  await addDoc(collection(db, 'badges'), badge);
+export const createBadge = async (): Promise<void> => {
+  // No-op for local badge images
 };
