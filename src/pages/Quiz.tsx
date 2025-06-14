@@ -17,7 +17,7 @@ import { getQuizFeedback } from '../utils/quizFeedback';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
 import { db } from '../firebaseClient';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc, getDoc, onSnapshot } from 'firebase/firestore';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -62,6 +62,7 @@ const Quiz: React.FC = () => {
     setSort,
   } = useQuizState();
   const [reviewMode, setReviewMode] = useState(false);
+  const [liveStats, setLiveStats] = useState<any | null>(null);
 
   // Reset filter and filterValue on quiz start
   useEffect(() => {
@@ -308,9 +309,26 @@ const Quiz: React.FC = () => {
     setQuizLength(count);
   }, [selectedTopic, questions]);
 
+  // Subscribe to Firestore stats when showing results
+  useEffect(() => {
+    if (!showResults) {
+      setLiveStats(null);
+      return;
+    }
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (!user) return;
+    const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
+    const unsubscribe = onSnapshot(analyticsRef, (docSnap: any) => {
+      if (docSnap.exists()) setLiveStats(docSnap.data());
+    });
+    return () => unsubscribe();
+  }, [showResults]);
+
   // --- Render ---
   // Compute topicStats for results
   const topicStats = React.useMemo(() => {
+    if (liveStats && liveStats.topicStats) return liveStats.topicStats;
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
       const topic = q.topic || 'Other';
@@ -321,7 +339,7 @@ const Quiz: React.FC = () => {
       }
     });
     return stats;
-  }, [started, shuffledQuestions, quizQuestions, userAnswers, shuffledOptions]);
+  }, [liveStats, started, shuffledQuestions, quizQuestions, userAnswers, shuffledOptions]);
 
   // --- Render ---
   // Show results if showResults is true
