@@ -3,6 +3,9 @@ import { getQuizFeedback } from '../../utils/quizFeedback';
 import QuizReviewIndicator from './QuizReviewIndicator';
 import QuizQuestionCard from './QuizQuestionCard';
 import QuizReviewList from './QuizReviewList';
+import QuizSessionSummary from './QuizSessionSummary';
+import QuizSessionCharts from './QuizSessionCharts';
+import QuizTopicProgress from './QuizTopicProgress';
 
 interface QuizResultsScreenProps {
   isAllIncorrect: boolean;
@@ -50,6 +53,21 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
         Start New Quiz
       </button>
       <h2>Results</h2>
+      {/* Live stats UI components */}
+      <QuizTopicProgress topicStats={topicStats} />
+      <QuizSessionCharts topicStats={topicStats} />
+      <QuizSessionSummary
+        score={0} // TODO: Pass real score from parent if needed
+        total={0} // TODO: Pass real total from parent if needed
+        avgTime={0}
+        maxStreak={0}
+        topicStats={topicStats}
+        onClose={() => {}}
+        onRetry={onStartNewQuiz}
+        questions={[]}
+        userAnswers={[]}
+        shuffledOptions={{}}
+      />
       <div>
         {Object.entries(topicStats).map(([topic, stat]) => (
           <div key={topic}>

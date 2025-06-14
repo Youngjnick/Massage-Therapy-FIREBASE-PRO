@@ -90,12 +90,24 @@ describe('QuizResultsScreen Firestore live stats', () => {
     const testStrong = screen.getByText('Test', { selector: 'strong' });
     const testDiv = testStrong.parentElement;
     expect(testDiv).toHaveTextContent('Test: 1 / 2');
+    // QuizSessionCharts and QuizSessionSummary both render 'Accuracy by Topic'
+    const accuracyLabels = screen.getAllByText(/Accuracy by Topic/i);
+    expect(accuracyLabels.length).toBeGreaterThanOrEqual(2);
+    // QuizSessionCharts
+    expect(screen.getByText(/Test: 1 \/ 2 correct/i)).toBeInTheDocument();
+    // QuizSessionSummary
+    expect(screen.getByText(/Test: 1 \/ 2 \(50%\)/i)).toBeInTheDocument();
+    // QuizTopicProgress
+    const progressLabel = screen.getAllByText('Test')[0];
+    expect(progressLabel).toBeInTheDocument();
     // Simulate Firestore update
     act(() => {
       onSnapshotCallback({ exists: () => true, data: () => ({ topicStats: { Test: { correct: 2, total: 2 } } }) });
     });
     await waitFor(() => {
       expect(testDiv).toHaveTextContent('Test: 2 / 2');
+      expect(screen.getByText(/Test: 2 \/ 2 correct/i)).toBeInTheDocument();
+      expect(screen.getByText(/Test: 2 \/ 2 \(100%\)/i)).toBeInTheDocument();
     });
   });
 });
