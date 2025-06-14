@@ -4,9 +4,14 @@
   <head>
     <meta http-equiv="refresh" content="0; url=/Massage-Therapy-FIREBASE-PRO/" />
     <script>
-      // If JavaScript is enabled, use the current path for SPA routing
-      var path = location.pathname.replace('/Massage-Therapy-FIREBASE-PRO', '');
-      location.replace('/Massage-Therapy-FIREBASE-PRO/' + '#' + path + location.search + location.hash);
+      // Special case: If Firebase Auth handler, redirect to app root for SPA to handle
+      if (location.pathname.endsWith('/__/auth/handler')) {
+        location.replace('/Massage-Therapy-FIREBASE-PRO/');
+      } else {
+        // If JavaScript is enabled, use the current path for SPA routing
+        var path = location.pathname.replace('/Massage-Therapy-FIREBASE-PRO', '');
+        location.replace('/Massage-Therapy-FIREBASE-PRO/' + '#' + path + location.search + location.hash);
+      }
     </script>
   </head>
   <body>

@@ -2,9 +2,17 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAnalytics, logEvent as firebaseLogEvent, isSupported } from 'firebase/analytics';
 
+const hostname = typeof window !== 'undefined' ? window.location.hostname : '';
+let authDomain = "massage-therapy-smart-st-c7f8f.firebaseapp.com";
+if (hostname === "youngjnick.github.io") {
+  authDomain = "youngjnick.github.io";
+} else if (hostname === "localhost" || hostname === "127.0.0.1") {
+  authDomain = "localhost";
+}
+
 const firebaseConfig = {
   apiKey: "AIzaSyANzEDUkGjM0M6L6dwZd1-TaOy1olo_6OM",
-  authDomain: "massage-therapy-smart-st-c7f8f.firebaseapp.com",
+  authDomain,
   projectId: "massage-therapy-smart-st-c7f8f",
   storageBucket: "massage-therapy-smart-st-c7f8f.appspot.com",
   messagingSenderId: "278320425266",

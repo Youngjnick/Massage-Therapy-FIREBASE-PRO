@@ -39,4 +39,27 @@ describe('Profile integration', () => {
       expect(userSettingsApi.setUserSettings).toHaveBeenCalled();
     });
   });
+
+  it('signs in with Google and displays user info', async () => {
+    // Stateful mock for onAuthStateChanged
+    let authCallback: ((user: any) => void) | null = null;
+    (onAuthStateChanged as jest.Mock).mockImplementation((auth: any, cb: any) => {
+      authCallback = cb;
+      // Initially, user is not signed in
+      cb(null);
+      return () => {};
+    });
+    render(<Profile />);
+    // Should show Sign In button and Guest
+    expect(screen.getByText('Sign In with Google')).toBeInTheDocument();
+    expect(screen.getByText('Guest')).toBeInTheDocument();
+
+    // Simulate sign-in
+    (authCallback as ((user: any) => void) | null)?.({ uid: 'test-user', displayName: 'Test User', photoURL: '' });
+
+    // Wait for user info to appear
+    await waitFor(() => {
+      expect(screen.getByText('Test User')).toBeInTheDocument();
+    });
+  });
 });

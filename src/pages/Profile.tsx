@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import { app } from '../firebase/firebaseConfig';
 import { getUserSettings, setUserSettings } from '../userSettings';
 import { getBaseUrl } from '../utils/getBaseUrl';
@@ -16,6 +16,7 @@ const Profile: React.FC = () => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      console.log('[DEBUG] onAuthStateChanged:', firebaseUser);
       setUser(firebaseUser);
     });
     return () => unsubscribe();
@@ -51,9 +52,14 @@ const Profile: React.FC = () => {
 
   const handleSignIn = async () => {
     try {
-      await signInWithPopup(auth, provider);
-    } catch {
-      // Sign in failed, handle error
+      console.log('[DEBUG] handleSignIn called');
+      // Use redirect for Google sign-in for best compatibility (mobile Safari, private mode, etc)
+      console.log('[DEBUG] before signInWithRedirect');
+      await import('firebase/auth').then(({ signInWithRedirect }) => signInWithRedirect(auth, provider));
+      console.log('[DEBUG] after signInWithRedirect');
+    } catch (err) {
+      console.error('[DEBUG] Google sign-in error:', err);
+      alert('Google sign-in failed: ' + (err && typeof err === 'object' && 'message' in err ? (err as any).message : String(err)));
     }
   };
   const handleSignOut = async () => {
