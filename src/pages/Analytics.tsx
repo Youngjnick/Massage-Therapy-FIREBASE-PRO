@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebaseClient';
 import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
+import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
 
 const Analytics: React.FC = () => {
   const [stats, setStats] = useState({
@@ -13,6 +14,7 @@ const Analytics: React.FC = () => {
     badges: 0,
   });
   const [user, setUser] = useState<User | null>(null);
+  const [topicStats, setTopicStats] = useState<{ [topic: string]: { correct: number; total: number } }>({});
 
   useEffect(() => {
     const auth = getAuth();
@@ -26,7 +28,7 @@ const Analytics: React.FC = () => {
     if (!user) return;
     // Listen to /users/{uid}/stats/analytics (valid document path)
     const analyticsDoc = doc(db, 'users', user.uid, 'stats', 'analytics');
-    const unsubscribe = onSnapshot(analyticsDoc, (docSnap) => {
+    const unsubscribeAnalytics = onSnapshot(analyticsDoc, (docSnap) => {
       if (docSnap.exists()) {
         const data = docSnap.data();
         setStats({
@@ -37,9 +39,30 @@ const Analytics: React.FC = () => {
           streak: data.streak || 0,
           badges: data.badges || 0,
         });
+      } else {
+        setStats({
+          quizzesTaken: 0,
+          correctAnswers: 0,
+          totalQuestions: 0,
+          accuracy: 0,
+          streak: 0,
+          badges: 0,
+        });
       }
     });
-    return () => unsubscribe();
+    // Listen to /users/{uid}/stats/topicStats for per-topic breakdown
+    const topicStatsDoc = doc(db, 'users', user.uid, 'stats', 'topicStats');
+    const unsubscribeTopicStats = onSnapshot(topicStatsDoc, (docSnap) => {
+      if (docSnap.exists()) {
+        setTopicStats(docSnap.data() || {});
+      } else {
+        setTopicStats({});
+      }
+    });
+    return () => {
+      unsubscribeAnalytics();
+      unsubscribeTopicStats();
+    };
   }, [user]);
 
   if (!user) {
@@ -65,6 +88,11 @@ const Analytics: React.FC = () => {
         <div>
           <strong>Badges Earned:</strong> {stats.badges}
         </div>
+      </div>
+      {/* Topic breakdown */}
+      <div style={{ marginTop: 32 }}>
+        <h3>Topic Breakdown</h3>
+        <QuizTopicProgress topicStats={topicStats} />
       </div>
       {/* Add charts, graphs, or more analytics as needed */}
     </div>

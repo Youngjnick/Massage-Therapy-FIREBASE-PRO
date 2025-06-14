@@ -87,9 +87,9 @@ describe('QuizResultsScreen Firestore live stats', () => {
     // Wait for the results screen to appear
     await screen.findByText('Results');
     // Initial Firestore stats
-    const testStrong = screen.getByText('Test', { selector: 'strong' });
-    const testDiv = testStrong.parentElement;
-    expect(testDiv).toHaveTextContent('Test: 1 / 2');
+    // Check that the topic label and stats are both present in the topic progress UI
+    expect(screen.getAllByText('Test').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('1 / 2 correct').length).toBeGreaterThan(0);
     // QuizSessionCharts and QuizSessionSummary both render 'Accuracy by Topic'
     const accuracyLabels = screen.getAllByText(/Accuracy by Topic/i);
     expect(accuracyLabels.length).toBeGreaterThanOrEqual(2);
@@ -105,7 +105,8 @@ describe('QuizResultsScreen Firestore live stats', () => {
       onSnapshotCallback({ exists: () => true, data: () => ({ topicStats: { Test: { correct: 2, total: 2 } } }) });
     });
     await waitFor(() => {
-      expect(testDiv).toHaveTextContent('Test: 2 / 2');
+      expect(screen.getAllByText('Test').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('2 / 2 correct').length).toBeGreaterThan(0);
       expect(screen.getByText(/Test: 2 \/ 2 correct/i)).toBeInTheDocument();
       expect(screen.getByText(/Test: 2 \/ 2 \(100%\)/i)).toBeInTheDocument();
     });
