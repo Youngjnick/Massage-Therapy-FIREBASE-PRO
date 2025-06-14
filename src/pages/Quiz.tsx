@@ -16,6 +16,8 @@ import { getNextQuestionIndex } from '../utils/quizAdaptive';
 import { getQuizFeedback } from '../utils/quizFeedback';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
+import { db } from '../firebaseClient';
+import { doc, setDoc, getDoc } from 'firebase/firestore';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -235,7 +237,7 @@ const Quiz: React.FC = () => {
   };
 
   // Remove unused parameter 'submit' from handleAnswer
-  const handleAnswer = (idx: number) => {
+  const handleAnswer = async (idx: number) => {
     if (answered) return;
     setUserAnswers((prev) => {
       const copy = [...prev];
@@ -243,6 +245,47 @@ const Quiz: React.FC = () => {
       return copy;
     });
     setAnswered(true);
+
+    // --- Firestore live stats update ---
+    try {
+      const auth = getAuth();
+      const user = auth.currentUser;
+      if (user) {
+        // Compute stats for this session
+        const stats: { [topic: string]: { correct: number; total: number } } = {};
+        (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
+          const topic = q.topic || 'Other';
+          if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
+          stats[topic].total++;
+          if (userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer) {
+            stats[topic].correct++;
+          }
+        });
+        // Aggregate overall stats
+        const correct = Object.values(stats).reduce((sum, s) => sum + s.correct, 0);
+        const total = Object.values(stats).reduce((sum, s) => sum + s.total, 0);
+        // Optionally, increment quizzesTaken only at end of quiz
+        // Write to Firestore
+        const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
+        // Merge with existing stats (get previous streak, badges, etc.)
+        const prevSnap = await getDoc(analyticsRef);
+        const prev = prevSnap.exists() ? prevSnap.data() : {};
+        await setDoc(
+          analyticsRef,
+          {
+            completed: prev.completed || 0, // Only increment on quiz finish
+            correct,
+            total,
+            streak: prev.streak || 0,
+            badges: prev.badges || 0,
+            updatedAt: new Date().toISOString(),
+          },
+          { merge: true }
+        );
+      }
+    } catch (err) {
+      console.error('Failed to update Firestore stats:', err);
+    }
     // Only auto-advance if not on last question
     if (current < totalQuestions - 1) {
       setTimeout(() => {
