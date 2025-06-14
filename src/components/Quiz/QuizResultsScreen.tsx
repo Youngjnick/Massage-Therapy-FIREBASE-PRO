@@ -57,16 +57,27 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
       <QuizTopicProgress topicStats={topicStats} />
       <QuizSessionCharts topicStats={topicStats} />
       <QuizSessionSummary
-        score={0} // TODO: Pass real score from parent if needed
-        total={0} // TODO: Pass real total from parent if needed
+        score={userAnswers.filter((a, i) => a !== undefined && (shuffledOptions[i] || (q && q.options) || []).length > 0 && (shuffledOptions[i] || (q && q.options) || [])[a] === (activeQuestions[i] && activeQuestions[i].correctAnswer)).length}
+        total={activeQuestions.length}
         avgTime={0}
-        maxStreak={0}
+        maxStreak={(() => {
+          let max = 0, curr = 0;
+          for (let i = 0; i < userAnswers.length; i++) {
+            if (userAnswers[i] !== undefined && (shuffledOptions[i] || (activeQuestions[i] && activeQuestions[i].options) || [])[userAnswers[i]] === (activeQuestions[i] && activeQuestions[i].correctAnswer)) {
+              curr++;
+              if (curr > max) max = curr;
+            } else {
+              curr = 0;
+            }
+          }
+          return max;
+        })()}
         topicStats={topicStats}
         onClose={() => {}}
         onRetry={onStartNewQuiz}
-        questions={[]}
-        userAnswers={[]}
-        shuffledOptions={{}}
+        questions={activeQuestions}
+        userAnswers={userAnswers}
+        shuffledOptions={shuffledOptions}
       />
       <div>
         {Object.entries(topicStats).map(([topic, stat]) => (
