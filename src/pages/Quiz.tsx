@@ -364,11 +364,8 @@ const Quiz: React.FC = () => {
             }}
             topicStats={topicStats}
             q={q}
-            current={current}
             userAnswers={userAnswers}
             shuffledOptions={shuffledOptions}
-            toggleState={toggleState}
-            reviewQueue={Array.from({length: (started ? shuffledQuestions : quizQuestions).length}, (_, i) => i)}
             activeQuestions={started ? shuffledQuestions : quizQuestions}
           />
           <button onClick={() => setReviewMode(true)} data-testid="review-answers-btn" style={{marginTop: 16}}>Review Answers</button>
