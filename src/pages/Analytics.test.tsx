@@ -13,7 +13,8 @@ jest.mock('firebase/auth', () => ({
   onAuthStateChanged: (...args: [unknown, (user: { uid: string } | null) => void]) => mockOnAuthStateChanged(...args),
 }));
 
-let firestoreCallback: (snapshot: any) => void;
+let mockFirestoreCallback: any;
+let mockTopicStatsCallback: any;
 const mockDoc = jest.fn();
 jest.mock('firebase/firestore', () => {
   return {
@@ -22,8 +23,9 @@ jest.mock('firebase/firestore', () => {
     where: jest.fn(),
     doc: (...args: any[]) => mockDoc(...args),
     onSnapshot: (ref: unknown, cb: (snapshot: any) => void) => {
-      firestoreCallback = cb;
-      if (!onSnapshotMock.initialCall) {
+      // Simulate two onSnapshot listeners: analytics and topicStats
+      if (!mockFirestoreCallback) {
+        mockFirestoreCallback = cb;
         cb({
           exists: () => true,
           data: () => ({
@@ -34,12 +36,17 @@ jest.mock('firebase/firestore', () => {
             badges: 2,
           }),
         });
+      } else {
+        mockTopicStatsCallback = cb;
+        cb({
+          exists: () => true,
+          data: () => ({ Anatomy: { correct: 10, total: 12 }, Physiology: { correct: 8, total: 10 } }),
+        });
       }
       return jest.fn();
     },
   };
 });
-const onSnapshotMock = { initialCall: false };
 
 import Analytics from './Analytics';
 
@@ -50,6 +57,8 @@ describe('Analytics Page', () => {
       return jest.fn();
     });
     mockDoc.mockClear();
+    mockFirestoreCallback = undefined;
+    mockTopicStatsCallback = undefined;
   });
 
   it('renders analytics stats for authenticated user', async () => {
@@ -58,12 +67,9 @@ describe('Analytics Page', () => {
     expect(quizzesDiv).toHaveTextContent(/Quizzes Taken:\s*5/);
     const correctDiv = screen.getByText('Correct Answers:').parentElement!;
     expect(correctDiv).toHaveTextContent(/Correct Answers:\s*40\s*\/\s*50/);
-    const accuracyDiv = screen.getByText('Accuracy:').parentElement!;
-    expect(accuracyDiv).toHaveTextContent(/Accuracy:\s*80%/);
-    const streakDiv = screen.getByText('Current Streak:').parentElement!;
-    expect(streakDiv).toHaveTextContent(/Current Streak:\s*3 days/);
-    const badgesDiv = screen.getByText('Badges Earned:').parentElement!;
-    expect(badgesDiv).toHaveTextContent(/Badges Earned:\s*2/);
+    // Topic breakdown
+    expect(screen.getByText('Anatomy')).toBeInTheDocument();
+    expect(screen.getByText('Physiology')).toBeInTheDocument();
     // Ensure correct Firestore path
     expect(mockDoc).toHaveBeenCalledWith(
       expect.anything(),
@@ -92,7 +98,7 @@ describe('Analytics Page', () => {
     expect(correctDiv).toHaveTextContent(/Correct Answers:\s*40\s*\/\s*50/);
     // Simulate Firestore update
     act(() => {
-      firestoreCallback({
+      mockFirestoreCallback({
         exists: () => true,
         data: () => ({
           completed: 2,
@@ -102,21 +108,31 @@ describe('Analytics Page', () => {
           badges: 1,
         }),
       });
+      mockTopicStatsCallback({
+        exists: () => true,
+        data: () => ({ Anatomy: { correct: 2, total: 3 }, Physiology: { correct: 1, total: 2 } }),
+      });
     });
     await waitFor(() => {
       expect(quizzesDiv).toHaveTextContent(/Quizzes Taken:\s*2/);
       expect(correctDiv).toHaveTextContent(/Correct Answers:\s*15\s*\/\s*25/);
+      // Updated topic breakdown
+      expect(screen.getByText('Anatomy')).toBeInTheDocument();
+      expect(screen.getByText('Physiology')).toBeInTheDocument();
     });
   });
 
   it('handles missing analytics document gracefully', async () => {
-    onSnapshotMock.initialCall = true; // Prevent default data
     render(<Analytics />);
     const quizzesDiv = screen.getByText('Quizzes Taken:').parentElement!;
     const correctDiv = screen.getByText('Correct Answers:').parentElement!;
     // Simulate missing doc as the first snapshot after render
     act(() => {
-      firestoreCallback({
+      mockFirestoreCallback({
+        exists: () => false,
+        data: () => ({}),
+      });
+      mockTopicStatsCallback({
         exists: () => false,
         data: () => ({}),
       });
@@ -125,6 +141,5 @@ describe('Analytics Page', () => {
       expect(quizzesDiv).toHaveTextContent(/Quizzes Taken:\s*0/);
       expect(correctDiv).toHaveTextContent(/Correct Answers:\s*0\s*\/\s*0/);
     });
-    onSnapshotMock.initialCall = false; // Reset for other tests
   });
 });

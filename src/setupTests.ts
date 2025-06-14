@@ -1,8 +1,8 @@
-import { TextEncoder, TextDecoder } from 'util';
-if (typeof global.TextEncoder === 'undefined') {
-  // @ts-expect-error: Assigning Node.js TextEncoder to global for Jest
-  global.TextEncoder = TextEncoder;
-  // @ts-expect-error: Assigning Node.js TextDecoder to global for Jest
-  global.TextDecoder = TextDecoder;
-}
 import '@testing-library/jest-dom';
+
+// Polyfill TextEncoder for Jest/react-router-dom v6+ tests
+import { TextEncoder } from 'util';
+if (typeof global.TextEncoder === 'undefined') {
+  // @ts-expect-error: Assigning Node.js TextEncoder to global for Jest/react-router-dom v6+ compatibility
+  global.TextEncoder = TextEncoder;
+}
