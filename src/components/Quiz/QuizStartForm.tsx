@@ -33,25 +33,49 @@ interface QuizStartFormProps {
 const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
   const { toggleState, setToggleState } = props;
 
+  // Clamp quizLength to max available for selected topic
+  React.useEffect(() => {
+    if (props.quizLength > props.maxQuizLength) {
+      props.setQuizLength(props.maxQuizLength);
+    } else if (props.quizLength < 1) {
+      props.setQuizLength(1);
+    }
+  }, [props.selectedTopic, props.maxQuizLength]);
+
+  // When topic changes, update quiz length to max available for that topic
+  React.useEffect(() => {
+    // Find the max number of questions for the selected topic
+    if (props.availableTopics && props.selectedTopic) {
+      // This assumes parent always updates maxQuizLength prop correctly
+      if (props.quizLength > props.maxQuizLength) {
+        props.setQuizLength(props.maxQuizLength);
+      }
+      if (props.quizLength < 1) {
+        props.setQuizLength(1);
+      }
+    }
+  }, [props.selectedTopic, props.maxQuizLength]);
+
   return (
     <>
       <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); props.onStart({ selectedTopic: props.selectedTopic, quizLength: props.quizLength, sort: props.sort, ...toggleState }); }}>
-        <label htmlFor="quiz-topic-select">Topic</label>
-        <QuizTopicSelect
-          availableTopics={props.availableTopics}
-          selectedTopic={props.selectedTopic}
-          setSelectedTopic={props.setSelectedTopic}
-          id="quiz-topic-select"
-        />
-        <label htmlFor="quiz-length-input">Quiz Length</label>
-        <QuizLengthInput
-          quizLength={props.quizLength}
-          setQuizLength={len => props.setQuizLength(Math.max(1, Math.min(len, props.maxQuizLength)))}
-          maxQuizLength={props.maxQuizLength}
-          id="quiz-length-input"
-          data-testid="quiz-length-input"
-        />
-        <QuizSortSelect sort={props.sort} setSort={props.setSort} />
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-end', marginBottom: '1rem' }}>
+          <label htmlFor="quiz-topic-select">Topic</label>
+          <QuizTopicSelect
+            availableTopics={props.availableTopics}
+            selectedTopic={props.selectedTopic}
+            setSelectedTopic={props.setSelectedTopic}
+            id="quiz-topic-select"
+          />
+          <QuizLengthInput
+            quizLength={props.quizLength}
+            setQuizLength={len => props.setQuizLength(Math.max(1, Math.min(len, props.maxQuizLength)))}
+            maxQuizLength={props.maxQuizLength}
+            id="quiz-length-input"
+            data-testid="quiz-length-input"
+          />
+          <QuizSortSelect sort={props.sort} setSort={props.setSort} />
+        </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', margin: '1rem 0' }}>
           <div>
             <label htmlFor="show-explanations-toggle">Show Explanations</label>

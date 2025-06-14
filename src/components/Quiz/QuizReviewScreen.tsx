@@ -88,6 +88,10 @@ const QuizReviewScreen: React.FC<QuizReviewScreenProps> = ({
               shuffledOptions={shuffledOptions}
               isReviewMode={true}
               showInstantFeedback={toggleState.instantFeedback}
+              onPrev={() => {}}
+              onNext={() => {}}
+              onFinish={() => {}}
+              total={activeQuestions.length}
             />
           );
         })()}

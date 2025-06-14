@@ -9,19 +9,21 @@ interface QuizLengthInputProps {
 }
 
 const QuizLengthInput: React.FC<QuizLengthInputProps> = ({ quizLength, setQuizLength, maxQuizLength, id, "data-testid": dataTestId }) => (
-  <label style={{ marginLeft: '1rem' }} htmlFor={id}>
-    Quiz Length:
-    <input
-      type="number"
-      min={1}
-      max={maxQuizLength}
-      value={quizLength}
-      onChange={e => setQuizLength(Number(e.target.value))}
-      style={{ width: 60, marginLeft: 4 }}
-      id={id}
-      data-testid={dataTestId}
-    />
-  </label>
+  <div className="quiz-length-input">
+    <label style={{ marginLeft: '1rem' }} htmlFor={id}>
+      Quiz Length:
+      <input
+        type="number"
+        min={1}
+        max={maxQuizLength}
+        value={quizLength}
+        onChange={e => setQuizLength(Number(e.target.value))}
+        style={{ width: 60, marginLeft: 4 }}
+        id={id}
+        data-testid={dataTestId}
+      />
+    </label>
+  </div>
 );
 
 export default QuizLengthInput;

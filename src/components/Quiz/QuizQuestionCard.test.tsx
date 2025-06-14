@@ -1,6 +1,9 @@
 import React from 'react';
 import { render, screen, fireEvent } from '../../utils/testUtils';
+import { waitFor, act } from '@testing-library/react';
 import QuizQuestionCard from './QuizQuestionCard';
+import { CreateStatefulQuizCard } from './QuizQuestionCardTestUtils';
+import { baseProps as testBaseProps } from './QuizQuestionCardTestUtils';
 
 describe('QuizQuestionCard', () => {
   it('renders question text', () => {
@@ -16,6 +19,10 @@ describe('QuizQuestionCard', () => {
         showInstantFeedback={false}
         answerFeedback={null}
         isReviewMode={false}
+        onPrev={() => {}}
+        onNext={() => {}}
+        onFinish={() => {}}
+        total={1}
       />
     );
     expect(screen.getByText('What is the capital of France?')).toBeInTheDocument();
@@ -23,7 +30,7 @@ describe('QuizQuestionCard', () => {
 });
 
 describe('QuizQuestionCard (explanations/feedback)', () => {
-  const baseProps = {
+  const explanationProps = {
     q: { text: 'Q1', options: ['A', 'B'], correctAnswer: 'A', short_explanation: 'Short', long_explanation: 'Long' },
     current: 0,
     userAnswers: [0],
@@ -33,7 +40,7 @@ describe('QuizQuestionCard (explanations/feedback)', () => {
     shuffledOptions: { 0: ['A', 'B'] },
   };
   it('renders explanations when showExplanations is true', () => {
-    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+    render(<QuizQuestionCard {...explanationProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} onPrev={() => {}} onNext={() => {}} onFinish={() => {}} total={2} />);
     expect(screen.getByText('Quick Tip: Short')).toBeInTheDocument();
     expect(screen.getByText('More Info: Long')).toBeInTheDocument();
   });
@@ -43,33 +50,60 @@ describe('QuizQuestionCard (explanations/feedback)', () => {
 });
 
 describe('QuizQuestionCard (navigation and answer submission)', () => {
-  const baseProps = {
-    q: { text: 'Q1', options: ['A', 'B', 'C'], correctAnswer: 'B' },
-    current: 0,
-    userAnswers: [1],
-    answered: false,
-    handleAnswer: jest.fn(),
-    showExplanations: false,
-    shuffledOptions: { 0: ['A', 'B', 'C'] },
-  };
-  it('calls handleAnswer with submit=false on radio select', () => {
+  it('calls handleAnswer with submit=false on radio select', async () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+    render(
+      <CreateStatefulQuizCard
+        {...testBaseProps}
+        answered={false}
+        handleAnswer={handleAnswer}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        isReviewMode={false}
+        onPrev={() => {}}
+        onNext={() => {}}
+        onFinish={() => {}}
+        total={3}
+      />
+    );
     const radios = screen.getAllByRole('radio');
-    fireEvent.click(radios[2]);
+    await act(async () => {
+      fireEvent.click(radios[2]);
+    });
     expect(handleAnswer).toHaveBeenCalledWith(2, false);
   });
-  it('calls handleAnswer with submit=true on Enter/Space', () => {
+  it('calls handleAnswer with submit=true on Enter/Space', async () => {
     const handleAnswer = jest.fn();
-    render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
-    const radios = screen.getAllByRole('radio');
+    render(
+      <CreateStatefulQuizCard
+        {...testBaseProps}
+        answered={false}
+        handleAnswer={handleAnswer}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        isReviewMode={false}
+        onPrev={() => {}}
+        onNext={() => {}}
+        onFinish={() => {}}
+        total={3}
+      />
+    );
+    let radios = screen.getAllByRole('radio');
+    await act(async () => {
+      fireEvent.click(radios[1]);
+    });
+    radios = screen.getAllByRole('radio');
     radios[1].focus();
     fireEvent.keyDown(radios[1], { key: 'Enter' });
+    await waitFor(() => expect(handleAnswer).toHaveBeenCalledWith(1, true));
     fireEvent.keyDown(radios[1], { key: ' ' });
-    expect(handleAnswer).toHaveBeenCalledWith(1, true);
+    // Should only be called twice: once for select, once for submit
+    expect(handleAnswer).toHaveBeenNthCalledWith(1, 1, false);
+    expect(handleAnswer).toHaveBeenNthCalledWith(2, 1, true);
+    expect(handleAnswer).toHaveBeenCalledTimes(2);
   });
   it('renders navigation buttons', () => {
-    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+    render(<QuizQuestionCard {...testBaseProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} onPrev={() => {}} onNext={() => {}} onFinish={() => {}} total={3} />);
     expect(screen.getByText('Previous')).toBeInTheDocument();
     expect(screen.getByText('Finish')).toBeInTheDocument();
   });

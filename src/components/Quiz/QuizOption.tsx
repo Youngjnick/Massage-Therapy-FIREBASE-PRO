@@ -76,6 +76,11 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
     submittedKeysRef.current = {};
   };
 
+  // Reset submit keys when selection changes
+  React.useEffect(() => {
+    submittedKeysRef.current = {};
+  }, [selected]);
+
   // IMPORTANT: The 'name' prop must be unique per quiz card/group.
   // Keyboard navigation (ArrowUp/Down/Left/Right) is scoped to radios with the same 'name'.
   const focusSiblingInput = (direction: 'next' | 'prev') => {
