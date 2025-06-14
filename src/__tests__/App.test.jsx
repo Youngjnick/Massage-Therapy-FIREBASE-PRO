@@ -4,6 +4,14 @@ if (typeof globalThis.TextEncoder === 'undefined') {
   globalThis.TextDecoder = TextDecoder;
 }
 
+jest.mock('../hooks/useAnalytics', () => {
+  const mockLogEvent = jest.fn();
+  return {
+    useAnalytics: () => ({ logEvent: mockLogEvent }),
+    mockLogEvent,
+  };
+});
+
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
@@ -24,4 +32,11 @@ globalThis.import = { meta: { env: { BASE_URL: '/' } } };
 test('renders main content', () => {
   render(<App />);
   expect(screen.getByText(/Massage/i)).toBeInTheDocument();
+});
+
+test('logs analytics event on app load', () => {
+  const { mockLogEvent } = jest.requireMock('../hooks/useAnalytics');
+  mockLogEvent.mockClear();
+  render(<App />);
+  expect(mockLogEvent).toHaveBeenCalledWith('app_loaded');
 });

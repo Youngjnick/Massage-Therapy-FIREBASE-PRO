@@ -1,14 +1,12 @@
 import { useCallback } from 'react';
+import { analytics, firebaseLogEvent } from '../firebase/firebaseConfig';
 
-// Example: Google Analytics, Mixpanel, or custom event logging
 export function useAnalytics() {
-  // Replace this with your analytics service (e.g., window.gtag, Mixpanel, etc.)
   const logEvent = useCallback((event: string, params?: Record<string, any>) => {
-    // Example: window.gtag('event', event, params);
-    // Example: mixpanel.track(event, params);
-    // For now, just log to console
-    if (process.env.NODE_ENV === 'development') {
-      // eslint-disable-next-line no-console
+    if (analytics) {
+      firebaseLogEvent(analytics, event, params);
+    } else {
+      // Fallback: log to console if analytics is not available
       console.log('[analytics]', event, params);
     }
   }, []);

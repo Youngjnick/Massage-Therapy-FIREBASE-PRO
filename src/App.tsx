@@ -9,22 +9,31 @@ import Profile from './pages/Profile';
 import AppFooter from './components/AppFooter';
 import './App.css';
 import { getBaseUrl } from './utils/getBaseUrl';
+import { useAnalytics } from './hooks/useAnalytics';
 
-const App: React.FC = () => (
-  <Router basename={getBaseUrl()}>
-    <AppHeader />
-    <NavBar />
-    <div className="main-content">
-      <Routes>
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/analytics" element={<Analytics />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={<Navigate to="/quiz" replace />} />
-      </Routes>
-    </div>
-    <AppFooter />
-  </Router>
-);
+const App: React.FC = () => {
+  const { logEvent } = useAnalytics();
+
+  React.useEffect(() => {
+    logEvent('app_loaded');
+  }, [logEvent]);
+
+  return (
+    <Router basename={getBaseUrl()}>
+      <AppHeader />
+      <NavBar />
+      <div className="main-content">
+        <Routes>
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="*" element={<Navigate to="/quiz" replace />} />
+        </Routes>
+      </div>
+      <AppFooter />
+    </Router>
+  );
+};
 
 export default App;
