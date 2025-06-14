@@ -1,9 +1,11 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { act } from 'react';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
+import { CreateStatefulQuizCard, baseProps } from '../components/Quiz/QuizQuestionCardTestUtils';
 
 describe('QuizQuestionCard (app-level quiz flow)', () => {
-  const baseProps = {
+  const defaultProps = {
     q: { text: 'Q1', options: ['A', 'B'], correctAnswer: 'A' },
     current: 0,
     userAnswers: [],
@@ -16,35 +18,44 @@ describe('QuizQuestionCard (app-level quiz flow)', () => {
   };
 
   it('renders question and options', () => {
-    render(<QuizQuestionCard {...baseProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+    render(<QuizQuestionCard {...defaultProps} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} onPrev={() => {}} onNext={() => {}} onFinish={() => {}} total={2} />);
     expect(screen.getByText('Q1')).toBeInTheDocument();
     expect(screen.getByText('A.')).toBeInTheDocument();
     expect(screen.getByText('B.')).toBeInTheDocument();
   });
 
-  it('calls handleAnswer with submit=false on select, true on submit (two-step flow)', () => {
+  it('calls handleAnswer with submit=false on select, true on submit (two-step flow)', async () => {
     const handleAnswer = jest.fn();
-    // Initial render: nothing selected
-    const { rerender } = render(
-      <QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} userAnswers={[]} />
+    render(
+      <CreateStatefulQuizCard
+        {...baseProps}
+        answered={false}
+        handleAnswer={handleAnswer}
+        showInstantFeedback={false}
+        answerFeedback={null}
+        isReviewMode={false}
+        onPrev={() => {}}
+        onNext={() => {}}
+        onFinish={() => {}}
+        total={3}
+      />
     );
-    const radios = screen.getAllByRole('radio');
-    // Simulate selecting the second option
-    fireEvent.click(radios[1]);
-    expect(handleAnswer).toHaveBeenCalledWith(1, false);
-
-    // Simulate state update: option 1 is now selected
-    rerender(
-      <QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} userAnswers={[1]} />
-    );
-
-    // Simulate submitting the answer with Enter
-    fireEvent.keyDown(screen.getAllByRole('radio')[1], { key: 'Enter' });
-    expect(handleAnswer).toHaveBeenCalledWith(1, true);
-
-    // Simulate ArrowDown (should NOT call handleAnswer)
+    let radios = screen.getAllByRole('radio');
+    // Step 1: select option 1 (index 1)
+    await act(async () => {
+      fireEvent.click(radios[1]);
+    });
+    // Wait for radio to be checked before submitting
+    await waitFor(() => expect((screen.getAllByRole('radio')[1] as HTMLInputElement).checked).toBe(true));
     handleAnswer.mockClear();
-    fireEvent.keyDown(screen.getAllByRole('radio')[1], { key: 'ArrowDown' });
+    // Step 2: re-query radios and focus the same radio, then simulate Enter to submit
+    radios = screen.getAllByRole('radio');
+    radios[1].focus();
+    fireEvent.keyDown(radios[1], { key: 'Enter' });
+    await waitFor(() => expect(handleAnswer).toHaveBeenCalledWith(1, true));
+    handleAnswer.mockClear();
+    // Step 3: simulate ArrowDown (should NOT call handleAnswer)
+    fireEvent.keyDown(radios[1], { key: 'ArrowDown' });
     expect(handleAnswer).not.toHaveBeenCalled();
   });
 });

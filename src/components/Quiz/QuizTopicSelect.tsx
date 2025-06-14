@@ -7,19 +7,16 @@ interface QuizTopicSelectProps {
 }
 
 const QuizTopicSelect: React.FC<QuizTopicSelectProps & { id?: string }> = ({ availableTopics, selectedTopic, setSelectedTopic, id }) => (
-  <label>
-    Topic:
-    <select
-      value={selectedTopic}
-      onChange={e => setSelectedTopic(e.target.value)}
-      id={id}
-      data-testid={id}
-    >
-      {availableTopics.map(topic => (
-        <option key={topic} value={topic}>{topic}</option>
-      ))}
-    </select>
-  </label>
+  <select
+    value={selectedTopic}
+    onChange={e => setSelectedTopic(e.target.value)}
+    id={id}
+    data-testid={id}
+  >
+    {availableTopics.map(topic => (
+      <option key={topic} value={topic}>{topic}</option>
+    ))}
+  </select>
 );
 
 export default QuizTopicSelect;

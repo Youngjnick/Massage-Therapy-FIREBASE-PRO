@@ -14,13 +14,13 @@ QuizQuestionCard.propTypes.shuffledOptions = () => null;
  * Base props for QuizQuestionCard tests. Use as a default and override as needed.
  */
 export const baseProps = {
-  q: { text: 'Q2', options: ['Alpha', 'Beta', 'Gamma'], correctAnswer: 'Beta' },
+  q: { text: 'Q1', options: ['A', 'B', 'C'], correctAnswer: 'B', id: 'q1' },
   current: 0,
   userAnswers: [],
   answered: false,
   handleAnswer: jest.fn(),
   showExplanations: false,
-  shuffledOptions: { 0: ['Alpha', 'Beta', 'Gamma'] },
+  shuffledOptions: { 0: ['A', 'B', 'C'] },
 };
 
 /**
@@ -30,17 +30,22 @@ export const baseProps = {
  */
 export function makeWrapper(props: any = {}) {
   return function Wrapper() {
+    // Initialize userAnswers to [] for no selection on first render
     const [userAnswers, setUserAnswers] = React.useState<number[]>([]);
     const [answered, setAnswered] = React.useState(false);
-    const handleAnswer = (idx: number, submit?: boolean) => {
-      if (!submit) setUserAnswers([idx]);
-      if (submit) setAnswered(true);
+    // Use useCallback to ensure stable function identity
+    const handleAnswer = React.useCallback((idx: number, submit?: boolean) => {
+      if (!submit) {
+        setUserAnswers([idx]);
+        setAnswered(false); // Always reset answered to false on selection
+      }
+      if (submit) setAnswered(true); // Only set answered to true on submit
       (props as any).handleAnswer?.(idx, submit);
-    };
+    }, [props]);
     return (
       <QuizQuestionCard
         q={(props as any).q ?? baseProps.q}
-        current={(props as any).current ?? baseProps.current}
+        current={0}
         userAnswers={userAnswers}
         answered={answered}
         handleAnswer={handleAnswer}
@@ -48,7 +53,7 @@ export function makeWrapper(props: any = {}) {
         answerFeedback={null}
         isReviewMode={false}
         showExplanations={false}
-        shuffledOptions={(props as any).shuffledOptions ?? baseProps.shuffledOptions}
+        shuffledOptions={{ 0: ['A', 'B', 'C'] }}
         {...(props as any)}
       />
     );
@@ -60,12 +65,15 @@ export function makeWrapper(props: any = {}) {
  * @param props All props for QuizQuestionCard, with state managed externally.
  * @returns A QuizQuestionCard element.
  */
-export function createStatefulQuizCard(props: React.ComponentProps<typeof QuizQuestionCard>) {
+export function CreateStatefulQuizCard(props: React.ComponentProps<typeof QuizQuestionCard>) {
   const [userAnswers, setUserAnswers] = React.useState<number[]>(props.userAnswers ?? []);
   const [answered, setAnswered] = React.useState(props.answered ?? false);
   const handleAnswer = (idx: number, submit?: boolean) => {
-    if (!submit) setUserAnswers([idx]);
-    if (submit) setAnswered(true);
+    if (!submit) {
+      setUserAnswers([idx]);
+      setAnswered(false); // Always reset answered to false on selection
+    }
+    if (submit) setAnswered(true); // Only set answered to true on submit
     if (typeof props.handleAnswer === 'function') props.handleAnswer(idx, submit);
   };
   return (

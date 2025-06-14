@@ -94,6 +94,12 @@ const Analytics: React.FC = () => {
         <h3>Topic Breakdown</h3>
         <QuizTopicProgress topicStats={topicStats} />
       </div>
+      {/* Quiz history chart */}
+      <div style={{ marginTop: 32 }}>
+        <h3>Quiz Activity (Last 14 Days)</h3>
+        {/* TODO: Implement or import QuizHistoryChart, and install 'react-chartjs-2' and 'chart.js' if needed */}
+        {/* <QuizHistoryChart history={history} /> */}
+      </div>
       {/* Add charts, graphs, or more analytics as needed */}
     </div>
   );

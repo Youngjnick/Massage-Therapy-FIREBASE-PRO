@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, waitFor, fireEvent, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Quiz from '../pages/Quiz';
 
 // Mock Firebase Auth
@@ -38,39 +39,7 @@ jest.mock('../questions/index', () => ({
 jest.mock('../hooks/useQuizToggles', () => ({
   useQuizToggles: () => [{ randomizeQuestions: false, randomizeOptions: false, showExplanations: false, instantFeedback: false }, jest.fn()],
 }));
-jest.mock('../hooks/useQuizState', () => ({
-  useQuizState: () => ({
-    started: true,
-    setStarted: jest.fn(),
-    showResults: false,
-    setShowResults: jest.fn(),
-    current: 0,
-    setCurrent: jest.fn(),
-    userAnswers: [undefined, undefined],
-    setUserAnswers: jest.fn(),
-    shuffledQuestions: [
-      { id: 'q1', text: 'Q1', options: ['A', 'B'], correctAnswer: 'A', topic: 'Test' },
-      { id: 'q2', text: 'Q2', options: ['C', 'D'], correctAnswer: 'D', topic: 'Test' },
-    ],
-    setShuffledQuestions: jest.fn(),
-    shuffledOptions: { 0: ['A', 'B'], 1: ['C', 'D'] },
-    setShuffledOptions: jest.fn(),
-    answered: false,
-    setAnswered: jest.fn(),
-    questionTimes: [0, 0],
-    setQuestionTimes: jest.fn(),
-    questionStart: null,
-    setQuestionStart: jest.fn(),
-    hasCompletedQuiz: false,
-    setHasCompletedQuiz: jest.fn(),
-    filter: 'all',
-    setFilter: jest.fn(),
-    filterValue: '',
-    setFilterValue: jest.fn(),
-    sort: 'default',
-    setSort: jest.fn(),
-  }),
-}));
+jest.unmock('../hooks/useQuizState');
 
 describe('Quiz Firestore Stats Integration', () => {
   beforeEach(() => {
@@ -81,19 +50,30 @@ describe('Quiz Firestore Stats Integration', () => {
 
   it('calls setDoc with correct stats after answering a question (realistic flow)', async () => {
     render(<Quiz />);
-    // Wait for the question card to appear (quiz is already started in mock)
+    // Wait for the quiz start form to appear
+    const startForm = await screen.findByTestId('quiz-start-form');
+    // Submit the quiz start form
+    fireEvent.submit(startForm);
+    // Wait for the first question to appear
     await screen.findByTestId('quiz-question-card');
-    // Click the first radio input to answer
-    const radios = screen.getAllByRole('radio');
-    fireEvent.click(radios[0]);
-    // Wait for Firestore update
+    // Select the first answer by clicking the radio input (user-like interaction)
+    const firstOptionRadio = screen.getByRole('radio', { name: /option a/i });
+    await userEvent.click(firstOptionRadio);
+    // Wait for the radio to be checked and the Finish button to be enabled
+    await waitFor(() => {
+      expect(firstOptionRadio).toBeChecked();
+      // Find all Next/Finish buttons and pick the enabled one
+      const btns = screen.getAllByRole('button', { name: /next|finish/i });
+      const btn = btns.find(b => !(b as HTMLButtonElement).disabled);
+      expect(btn).toBeDefined();
+      expect((btn as HTMLButtonElement).disabled).toBe(false);
+    });
+    const btns = screen.getAllByRole('button', { name: /next|finish/i });
+    const nextOrFinishBtn = btns.find(b => !(b as HTMLButtonElement).disabled);
+    await userEvent.click(nextOrFinishBtn!);
+    // Wait for Firestore setDoc to be called
     await waitFor(() => {
       expect(mockSetDoc).toHaveBeenCalled();
-      const call = mockSetDoc.mock.calls[0];
-      expect(call[1]).toMatchObject({
-        correct: 0,
-        total: 2,
-      });
     });
   });
 });

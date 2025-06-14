@@ -14,19 +14,28 @@ interface QuizQuestionCardProps {
   shuffledOptions: { [key: number]: string[] };
   isReviewMode: boolean;
   showInstantFeedback: boolean;
+  // Add navigation handlers
+  onPrev: () => void;
+  onNext: () => void;
+  onFinish: () => void;
+  total: number;
 }
 
 const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   q,
   current,
   userAnswers,
-  answered,
   handleAnswer,
   answerFeedback,
   showExplanations,
   shuffledOptions,
   isReviewMode,
   showInstantFeedback,
+  onPrev,
+  onNext,
+  onFinish,
+  total,
+  answered: answeredProp, // Destructure answered as answeredProp
 }) => {
   // Generate a unique instance id for this question card (per mount)
   // Use window.crypto.randomUUID() for true uniqueness if available
@@ -43,10 +52,25 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       ? q
       : { text: 'No questions available', options: ['N/A'], correctAnswer: 'N/A', id: 'empty' };
 
+  // Sanitize question text to remove any repeated 'Topic' at the start (e.g., 'TopicTopic', 'Topic Topic', etc.)
+  let sanitizedText = safeQ.text;
+  if (typeof sanitizedText === 'string') {
+    const before = sanitizedText;
+    sanitizedText = sanitizedText.replace(/^(topic)+/i, 'Topic'); // Remove any number of 'topic' at the start
+    sanitizedText = sanitizedText.replace(/^(Topic\s*)+/i, 'Topic '); // Remove repeated 'Topic' with spaces
+    sanitizedText = sanitizedText.replace(/^\s+/, ''); // Remove leading whitespace
+    if (before !== sanitizedText) {
+      // console.log('[QuizQuestionCard] Sanitized question text:', { before, after: sanitizedText });
+    }
+  }
+
+  // Use the answered prop directly
+  const answered = answeredProp;
+
   return (
     <div data-testid="quiz-question-card">
       <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
-        <legend style={{ fontWeight: 600, marginBottom: 8 }}>{safeQ.text}</legend>
+        <legend style={{ fontWeight: 600, marginBottom: 8 }}>{sanitizedText}</legend>
         <ul style={{ listStyle: 'none', padding: 0 }}>
           {(shuffledOptions[current] || safeQ.options).map((opt: string, i: number) => {
             const optionClass =
@@ -92,18 +116,21 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
           })}
         </ul>
       </fieldset>
-      {/* Feedback: only render if answered, answerFeedback is not null/empty, and (showInstantFeedback or isReviewMode) */}
-      {answered && answerFeedback && answerFeedback.trim() !== '' && (showInstantFeedback || isReviewMode) && (
+      {/* Feedback: render the feedback div only when answered and (showInstantFeedback || isReviewMode) are true */}
+      {answered && (showInstantFeedback || isReviewMode) && (
         <div
           data-testid="quiz-feedback"
           className="quiz-feedback"
           style={{
-            color: answerFeedback && answerFeedback.trim() === 'Correct!' ? '#059669' : '#ef4444',
+            color: answerFeedback && answerFeedback.trim() !== ''
+              ? (answerFeedback.trim() === 'Correct!' ? '#059669' : '#ef4444')
+              : undefined,
             marginTop: 8,
             fontSize: 15,
+            minHeight: 20,
           }}
         >
-          {answerFeedback}
+          {answerFeedback && answerFeedback.trim() !== '' ? answerFeedback : ''}
         </div>
       )}
       {showExplanations && (
@@ -118,17 +145,11 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       )}
       {/* Pass correct onFinish handler to QuizActions */}
       <QuizActions
-        onPrev={() => {}}
-        onNext={() => {}}
-        onFinish={() => {
-          // Call handleAnswer with the selected answer and true
-          if (typeof userAnswers[current] === 'number') {
-            handleAnswer(userAnswers[current], true);
-          }
-        }}
-        onCancel={() => {}}
+        onPrev={onPrev}
+        onNext={onNext}
+        onFinish={onFinish}
         current={current}
-        total={1}
+        total={total}
         answered={answered}
       />
       {/* Remove progress bar and stepper from here, only render in parent */}
