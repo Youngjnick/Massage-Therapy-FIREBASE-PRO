@@ -503,10 +503,8 @@ const Quiz: React.FC = () => {
               }
             }}
             onFinish={() => {
-              // Only finish if answered
-              if (userAnswers[current] !== undefined) {
-                setShowResults(true);
-              }
+              // Show results with whatever questions have been answered so far
+              setShowResults(true);
             }}
             total={totalQuestions}
           />
