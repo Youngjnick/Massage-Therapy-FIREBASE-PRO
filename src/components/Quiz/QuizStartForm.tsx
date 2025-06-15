@@ -33,29 +33,6 @@ interface QuizStartFormProps {
 const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
   const { toggleState, setToggleState } = props;
 
-  // Clamp quizLength to max available for selected topic
-  React.useEffect(() => {
-    if (props.quizLength > props.maxQuizLength) {
-      props.setQuizLength(props.maxQuizLength);
-    } else if (props.quizLength < 1) {
-      props.setQuizLength(1);
-    }
-  }, [props.selectedTopic, props.maxQuizLength]);
-
-  // When topic changes, update quiz length to max available for that topic
-  React.useEffect(() => {
-    // Find the max number of questions for the selected topic
-    if (props.availableTopics && props.selectedTopic) {
-      // This assumes parent always updates maxQuizLength prop correctly
-      if (props.quizLength > props.maxQuizLength) {
-        props.setQuizLength(props.maxQuizLength);
-      }
-      if (props.quizLength < 1) {
-        props.setQuizLength(1);
-      }
-    }
-  }, [props.selectedTopic, props.maxQuizLength]);
-
   return (
     <>
       <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); props.onStart({ selectedTopic: props.selectedTopic, quizLength: props.quizLength, sort: props.sort, ...toggleState }); }}>
@@ -69,7 +46,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
           />
           <QuizLengthInput
             quizLength={props.quizLength}
-            setQuizLength={len => props.setQuizLength(Math.max(1, Math.min(len, props.maxQuizLength)))}
+            setQuizLength={props.setQuizLength}
             maxQuizLength={props.maxQuizLength}
             id="quiz-length-input"
             data-testid="quiz-length-input"
@@ -151,7 +128,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
             </select>
           </label>
         )}
-        <button style={{ marginLeft: '1rem' }} type="submit" disabled={props.quizLength <= 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
+        <button style={{ marginLeft: '1rem' }} type="submit" disabled={props.quizLength < 1 || props.maxQuizLength === 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
       </form>
       {props.showStartNewQuiz && (
         <button
