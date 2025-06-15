@@ -3,11 +3,16 @@ import { render, screen, fireEvent } from '../../utils/testUtils';
 import QuizQuestionCard from './QuizQuestionCard';
 import { makeWrapper, baseProps } from './QuizQuestionCardTestUtils';
 
+const mockOnPrev = jest.fn();
+const mockOnNext = jest.fn();
+const mockOnFinish = jest.fn();
+const mockTotal = 5;
+
 describe('QuizQuestionCard (full answer flow: click, arrow, Enter)', () => {
   describe('Submission Flow', () => {
     it('should not allow answer submission after already answered', () => {
       const handleAnswer = jest.fn();
-      render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[1]} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} />);
+      render(<QuizQuestionCard {...baseProps} handleAnswer={handleAnswer} answered={true} userAnswers={[1]} showInstantFeedback={false} answerFeedback={null} isReviewMode={false} onPrev={mockOnPrev} onNext={mockOnNext} onFinish={mockOnFinish} total={mockTotal} />);
       const radios = screen.getAllByRole('radio');
       fireEvent.click(radios[0]);
       fireEvent.keyDown(radios[0], { key: 'Enter' });
@@ -91,6 +96,10 @@ describe('QuizQuestionCard (full answer flow: click, arrow, Enter)', () => {
               showExplanations={false}
               shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
               isReviewMode={false}
+              onPrev={mockOnPrev}
+              onNext={mockOnNext}
+              onFinish={mockOnFinish}
+              total={mockTotal}
             />
             <QuizQuestionCard
               q={q2}
@@ -103,6 +112,10 @@ describe('QuizQuestionCard (full answer flow: click, arrow, Enter)', () => {
               showExplanations={false}
               shuffledOptions={{ 0: ['A', 'B'], 1: ['C', 'D'] }}
               isReviewMode={false}
+              onPrev={mockOnPrev}
+              onNext={mockOnNext}
+              onFinish={mockOnFinish}
+              total={mockTotal}
             />
           </>
         );

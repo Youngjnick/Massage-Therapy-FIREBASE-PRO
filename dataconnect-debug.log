@@ -1,0 +1,16 @@
+I0615 07:57:37.555101   36869 load.go:37] Reloading schema and connectors...
+I0615 07:57:37.581637   36869 control.go:84] [/emulator/massage-therapy-firebase-pro 7faf] UpdateResources(): done
+Schema: sources: schema/schema.gql [2088B] 
+Connector "default": sources: connector/queries.gql [1802B] connector/mutations.gql [1233B] 
+I0615 07:57:37.603154   36869 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/dataconnect-generated/js/default-connector"
+I0615 07:57:37.616451   36869 collector.go:107] schema extensions wrote into "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] 
+I0615 07:57:37.617806   36869 collector.go:107] connector "default" javascriptSdk wrote into "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/dataconnect-generated/js/default-connector"
+Generated sources: package.json [860B] README.md [2774B] react/index.d.ts [228B] react/package.json [468B] react/README.md [5357B] index.d.ts [246B] esm/package.json [17B] react/esm/package.json [17B] react/index.cjs.js [0B] react/esm/index.esm.js [0B] esm/index.esm.js [131B] index.cjs.js [166B] 
+I0615 07:57:37.623492   36869 installsdk.go:55] Package @firebasegen/default-connector is already installed. Skipping installation
+I0615 07:57:37.623675   36869 load.go:115] Finished reloading
+I0615 07:57:37.626954   36869 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I0615 07:57:37.628595   36869 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I0615 07:57:40.228113   36869 control.go:84] [/emulator/massage-therapy-firebase-pro 2ae8] UpdateResources(): done
+Schema: sources: schema/schema.gql [2088B] 
+Connector "default": sources: connector/queries.gql [1802B] connector/mutations.gql [1233B] 
