@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { getQuestions } from '../questions/index';
-import { Question } from '../types/index';
 import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
@@ -17,6 +16,8 @@ import { doc, setDoc, getDoc } from 'firebase/firestore';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
 import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
+import { useQuizData } from '../hooks/useQuizData';
+import { updateQuizStatsOnFinish, updateQuizStatsOnAnswer } from '../services/quizStatsService';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -27,10 +28,8 @@ if (typeof window !== 'undefined') {
   } catch { /* ignore localStorage errors */ }
 }
 const Quiz: React.FC = () => {
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [loading, setLoading] = useState(true);
+  // Remove local questions, setQuestions, loading, setLoading
   const [selectedTopic, setSelectedTopic] = useState<string>('');
-  const [quizLength, setQuizLength] = useState<number>(questions.length > 0 ? questions.length : 10);
   const [toggleState, setToggleState] = useQuizToggles(initialToggleState);
   const {
     started,
@@ -54,6 +53,9 @@ const Quiz: React.FC = () => {
   const [reviewMode] = useState(false);
   const [liveTopicStats, setLiveTopicStats] = useState<{ [topic: string]: { correct: number; total: number } } | null>(null);
 
+  // Use modularized data hook
+  const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
+
   // Reset filter and filterValue on quiz start
   useEffect(() => {
     if (!started) {
@@ -76,6 +78,10 @@ const Quiz: React.FC = () => {
 
   // --- Derived variables (declare after quizQuestions/activeQuestions) ---
   const availableTopics = Array.from(new Set(questions.map((q: any) => q.topic || 'Other')));
+  const maxQuizLength = quizQuestions.length;
+  // User can select a desired quiz length, but always clamp to available range
+  const [desiredQuizLength, setDesiredQuizLength] = useState<number>(10);
+  const quizLength = maxQuizLength === 0 ? 0 : Math.max(1, Math.min(desiredQuizLength, maxQuizLength));
   const totalQuestions = started ? shuffledQuestions.length : quizQuestions.length;
   const progress = totalQuestions > 0 ? Math.round((userAnswers.filter((a) => a !== undefined).length / totalQuestions) * 100) : 0;
 
@@ -149,63 +155,6 @@ const Quiz: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKey);
   }, [current, started, q]);
 
-  // --- Firestore analytics update at quiz finish ---
-  useEffect(() => {
-    if (!showResults) return;
-    (async () => {
-      try {
-        const auth = getAuth();
-        const user = auth.currentUser;
-        if (user) {
-          // Compute stats for this session
-          const stats: { [topic: string]: { correct: number; total: number } } = {};
-          (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-            const topic = q.topic || 'Other';
-            if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
-            stats[topic].total++;
-            if (
-              userAnswers[i] !== undefined &&
-              (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer
-            ) {
-              stats[topic].correct++;
-            }
-          });
-          // Aggregate overall stats
-          const correct = Object.values(stats).reduce((sum, s) => sum + s.correct, 0);
-          const total = Object.values(stats).reduce((sum, s) => sum + s.total, 0);
-          // Write to Firestore and increment completed
-          const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
-          const prevSnap = await getDoc(analyticsRef);
-          const prev = prevSnap.exists() ? prevSnap.data() : {};
-          // Update streak history
-          const streakHistory = Array.isArray(prev.streakHistory) ? [...prev.streakHistory] : [];
-          streakHistory.push({ date: new Date().toISOString(), streak: prev.streak || 0 });
-          // Badge progress (placeholder)
-          const badgeProgress = { ...prev.badgeProgress, correct: correct };
-          await setDoc(
-            analyticsRef,
-            {
-              completed: (prev.completed || 0) + 1, // Increment quizzes taken
-              correct,
-              total,
-              streak: prev.streak || 0,
-              badges: prev.badges || 0,
-              badgeProgress,
-              streakHistory,
-              updatedAt: new Date().toISOString(),
-            },
-            { merge: true }
-          );
-          // Optionally, persist topicStats as well
-          const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
-          await setDoc(topicStatsRef, stats, { merge: true });
-        }
-      } catch (err) {
-        console.error('Failed to update Firestore stats at quiz finish:', err);
-      }
-    })();
-  }, [showResults]);
-
   const startQuiz = () => {
     setStarted(true);
     setLoading(true);
@@ -251,105 +200,39 @@ const Quiz: React.FC = () => {
     newAnswers[current] = idx;
     setUserAnswers(newAnswers);
     // After updating local state, update Firestore stats with the new answers
-    await updateQuizStatsInFirestore(newAnswers);
+    await updateQuizStatsOnAnswer({
+      userAnswers: newAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      started,
+      quizQuestions
+    });
   };
 
-  // Ensure updateQuizStatsInFirestore calls setDoc with correct arguments
-  async function updateQuizStatsInFirestore(answers: number[]) {
-    try {
-      const auth = getAuth();
-      const user = auth.currentUser;
-      if (user) {
-        const stats: { [topic: string]: { correct: number; total: number } } = {};
-        (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-          const topic = q.topic || 'Other';
-          if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
-          stats[topic].total++;
-          const answerIdx = answers[i];
-          if (
-            answerIdx !== undefined &&
-            (shuffledOptions[i] || q.options)[answerIdx] === q.correctAnswer
-          ) {
-            stats[topic].correct++;
-          }
-        });
-        const correct = Object.values(stats).reduce((sum, s) => sum + s.correct, 0);
-        const total = Object.values(stats).reduce((sum, s) => sum + s.total, 0);
-        const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
-        const prevSnap = await getDoc(analyticsRef);
-        const prevAnalytics = prevSnap.exists() ? prevSnap.data() : {};
-        const badgeProgress = { ...prevAnalytics.badgeProgress, correct: correct };
-        await setDoc(
-          analyticsRef,
-          {
-            correct,
-            total,
-            streak: prevAnalytics.streak || 0,
-            badges: prevAnalytics.badges || 0,
-            badgeProgress,
-            updatedAt: new Date().toISOString(),
-          },
-          { merge: true }
-        );
-        const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
-        await setDoc(topicStatsRef, stats, { merge: true });
-      }
-    } catch (err) {
-      console.error('Failed to update Firestore stats on answer (integration test):', err);
-    }
-  };
+  // --- Firestore analytics update at quiz finish ---
+  useEffect(() => {
+    if (!showResults) return;
+    updateQuizStatsOnFinish({
+      userAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      started,
+      quizQuestions
+    });
+  }, [showResults]);
 
   // --- Firestore analytics update on every answer (except quiz finish) ---
   useEffect(() => {
     if (!started || showResults) return;
     // Only update if at least one answer is present
     if (!userAnswers.some(a => a !== undefined)) return;
-    (async () => {
-      try {
-        const auth = getAuth();
-        const user = auth.currentUser;
-        if (user) {
-          // Compute stats for this session
-          const stats: { [topic: string]: { correct: number; total: number } } = {};
-          (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-            const topic = q.topic || 'Other';
-            if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
-            stats[topic].total++;
-            if (
-              userAnswers[i] !== undefined &&
-              (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer
-            ) {
-              stats[topic].correct++;
-            }
-          });
-          // Aggregate overall stats
-          const correct = Object.values(stats).reduce((sum, s) => sum + s.correct, 0);
-          const total = Object.values(stats).reduce((sum, s) => sum + s.total, 0);
-          // Write to Firestore (do NOT increment completed here)
-          const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
-          const prevSnap = await getDoc(analyticsRef);
-          const prev = prevSnap.exists() ? prevSnap.data() : {};
-          const badgeProgress = { ...prev.badgeProgress, correct: correct };
-          await setDoc(
-            analyticsRef,
-            {
-              correct,
-              total,
-              streak: prev.streak || 0,
-              badges: prev.badges || 0,
-              badgeProgress,
-              updatedAt: new Date().toISOString(),
-            },
-            { merge: true }
-          );
-          // Optionally, persist topicStats as well
-          const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
-          await setDoc(topicStatsRef, stats, { merge: true });
-        }
-      } catch (err) {
-        console.error('Failed to update Firestore stats on answer:', err);
-      }
-    })();
+    updateQuizStatsOnAnswer({
+      userAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      started,
+      quizQuestions
+    });
   }, [started, showResults, userAnswers, shuffledQuestions, quizQuestions, shuffledOptions]);
 
   // --- topicStats is used for results UI ---
@@ -365,27 +248,6 @@ const Quiz: React.FC = () => {
     });
     return stats;
   }, [started, shuffledQuestions, quizQuestions, userAnswers, shuffledOptions]);
-
-  // When topic or filter changes, update quiz length to max available for that topic
-  useEffect(() => {
-    // Find the max number of questions for the selected topic and filter
-    if (questions && selectedTopic) {
-      const filtered = getFilteredSortedQuestions(
-        questions,
-        selectedTopic,
-        filter,
-        filterValue,
-        userAnswers,
-        shuffledOptions
-      );
-      if (quizLength > filtered.length) {
-        setQuizLength(filtered.length);
-      }
-      if (quizLength < 1) {
-        setQuizLength(1);
-      }
-    }
-  }, [selectedTopic, filter, filterValue, questions]);
 
   // On quiz start, trigger initial Firestore stats write (all answers undefined)
   useEffect(() => {
@@ -464,9 +326,6 @@ const Quiz: React.FC = () => {
   // Compute answered array for QuizStepper
   const answeredArray = activeQuestions.map((_, i) => userAnswers[i] !== undefined);
 
-  // Compute maxQuizLength for QuizStartForm
-  const maxQuizLength = quizQuestions.length;
-
   // Fix setFilter and setSort to accept string
   const handleSetFilter = (val: string) => setFilter(val as any);
   const handleSetSort = (val: string) => setSort(val);
@@ -516,7 +375,7 @@ const Quiz: React.FC = () => {
           selectedTopic={selectedTopic}
           setSelectedTopic={setSelectedTopic}
           quizLength={quizLength}
-          setQuizLength={setQuizLength}
+          setQuizLength={setDesiredQuizLength}
           maxQuizLength={maxQuizLength}
           sort={"default"}
           setSort={handleSetSort}

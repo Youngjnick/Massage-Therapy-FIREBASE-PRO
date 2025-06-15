@@ -105,6 +105,7 @@ export default [
       'playwright.config.ts',
       'vite.config.ts',
       'e2e/tsconfig.json',
+      'dataconnect-generated/**',
     ],
   },
   {
