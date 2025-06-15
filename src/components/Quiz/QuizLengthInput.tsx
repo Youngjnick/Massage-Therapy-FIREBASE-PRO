@@ -14,13 +14,14 @@ const QuizLengthInput: React.FC<QuizLengthInputProps> = ({ quizLength, setQuizLe
       Quiz Length:
       <input
         type="number"
-        min={1}
+        min={maxQuizLength === 0 ? 0 : 1}
         max={maxQuizLength}
         value={quizLength}
         onChange={e => setQuizLength(Number(e.target.value))}
         style={{ width: 60, marginLeft: 4 }}
         id={id}
         data-testid={dataTestId}
+        disabled={maxQuizLength === 0}
       />
     </label>
   </div>
