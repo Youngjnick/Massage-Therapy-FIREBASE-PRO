@@ -180,3 +180,30 @@ test('should show fallback badge image if badge image fails to load', async ({ p
   });
   expect(naturalWidth).toBeGreaterThan(0);
 });
+
+test('should load favicon, app icon, and default avatar image', async ({ page }) => {
+  await page.goto('/');
+
+  // Check favicon loads
+  const faviconHref = await page.getAttribute('link[rel~="icon"]', 'href');
+  expect(faviconHref).toBeTruthy();
+  if (faviconHref) {
+    const faviconResp = await page.request.get(faviconHref.replace('%BASE_URL%', '/'));
+    expect(faviconResp.status()).toBe(200);
+    expect(faviconResp.headers()['content-type']).toMatch(/image/);
+  }
+
+  // Check app icon loads
+  const appIconHref = await page.getAttribute('link[rel~="apple-touch-icon"]', 'href');
+  expect(appIconHref).toBeTruthy();
+  if (appIconHref) {
+    const appIconResp = await page.request.get(appIconHref.replace('%BASE_URL%', '/'));
+    expect(appIconResp.status()).toBe(200);
+    expect(appIconResp.headers()['content-type']).toMatch(/image/);
+  }
+
+  // Check default avatar loads
+  const avatarResp = await page.request.get('/default_avatar.png');
+  expect(avatarResp.status()).toBe(200);
+  expect(avatarResp.headers()['content-type']).toMatch(/image/);
+});
