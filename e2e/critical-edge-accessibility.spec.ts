@@ -7,8 +7,20 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     await page.getByRole('button', { name: /start/i }).click();
     // Answer only the first question
     await page.getByTestId('quiz-option').first().click();
+    // Debug: print number of stepper dots and their aria-current state
+    const stepperDots = page.getByTestId('quiz-stepper-dot');
+    const count = await stepperDots.count();
+    await test.info().attach('stepper-dot-count', { body: String(count), contentType: 'text/plain' });
+    let ariaStates = '';
+    for (let i = 0; i < count; i++) {
+      const ariaCurrent = await stepperDots.nth(i).getAttribute('aria-current');
+      ariaStates += `dot ${i}: aria-current=${ariaCurrent}\n`;
+    }
+    await test.info().attach('stepper-dot-aria-currents', { body: ariaStates, contentType: 'text/plain' });
+    await test.info().attach('quiz-html', { body: await page.content(), contentType: 'text/html' });
+    await test.info().attach('quiz-screenshot', { body: await page.screenshot(), contentType: 'image/png' });
     // Use the stepper to skip to the third question
-    await page.getByTestId('quiz-step').nth(2).click();
+    await stepperDots.nth(2).click();
     // On third question, try to finish
     await page.getByRole('button', { name: /finish/i }).click();
     // Assert: warning, error, or highlight for unanswered questions
@@ -17,8 +29,12 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
   });
 
   test('Network failure: loading questions', async ({ page }) => {
-    await page.route('**/questions*', route => route.abort());
+    // Abort all Firestore requests to simulate network failure
+    await page.route('**/firestore.googleapis.com/**', route => route.abort());
     await page.goto('/');
+    // Debug: print HTML before checking for error
+    const html = await page.content();
+    await test.info().attach('quiz-html', { body: html, contentType: 'text/html' });
     // Should show error message
     await expect(page.getByText(/error|failed|could not load/i)).toBeVisible();
     // UI should still be usable (e.g., start button visible)
@@ -30,8 +46,8 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     await page.getByTestId('quiz-option').first().click();
-    // Simulate network failure on submit
-    await page.route('**/submit*', route => route.abort());
+    // Simulate network failure on Firestore write (result submission)
+    await page.route('**/firestore.googleapis.com/**', route => route.abort());
     await page.getByRole('button', { name: /finish/i }).click();
     await expect(page.getByText(/error|failed|could not submit/i)).toBeVisible();
   });

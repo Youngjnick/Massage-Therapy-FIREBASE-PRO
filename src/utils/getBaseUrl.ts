@@ -4,8 +4,8 @@ export function getBaseUrl() {
     if ((globalThis as any).import?.meta?.env?.BASE_URL) {
       const baseUrl = (globalThis as any).import.meta.env.BASE_URL;
       if (typeof window !== 'undefined') {
-        // Only log in browser
-        console.log('[getBaseUrl] BASE_URL at runtime:', baseUrl);
+        // Prominent debug log for production
+        console.log('[DEBUG][getBaseUrl] BASE_URL at runtime:', baseUrl, 'window.location:', window.location.href);
       }
       return baseUrl;
     }
@@ -14,7 +14,7 @@ export function getBaseUrl() {
   }
   // Fallback for Jest or Node environments
   if (typeof window !== 'undefined') {
-    console.log('[getBaseUrl] BASE_URL fallback: /');
+    console.log('[DEBUG][getBaseUrl] BASE_URL fallback: /', 'window.location:', window.location.href);
   }
   return '/';
 }

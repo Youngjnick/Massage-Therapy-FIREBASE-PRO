@@ -6,21 +6,51 @@ import BadgeModal from '../components/Quiz/BadgeModal';
 const Achievements: React.FC = () => {
   const [badges, setBadges] = useState<Badge[]>([]);
   const [selectedBadge, setSelectedBadge] = useState<Badge | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    getBadges().then(setBadges);
+    getBadges()
+      .then(badges => {
+        setBadges(badges);
+        if (!badges || badges.length === 0) {
+          setError('No badges found. Please check badge data or network.');
+        }
+      })
+      .catch(e => {
+        setError('Failed to load badges.');
+        console.error('[DEBUG] Error loading badges:', e);
+      });
   }, []);
 
   return (
     <div>
       <h2>Achievements</h2>
+      {error && (
+        <div style={{ color: 'red', marginBottom: 16 }} data-testid="badge-error">
+          {error}
+        </div>
+      )}
+      {badges.length === 0 && !error && (
+        <div style={{ color: 'orange', marginBottom: 16 }} data-testid="badge-empty">
+          No badges to display. (Debug: badge list is empty but no error was thrown.)
+        </div>
+      )}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
         {badges.map(badge => (
           <div
             key={badge.id}
             data-testid="badge-container"
             style={{ textAlign: 'center' }}
+            tabIndex={0}
+            role="button"
+            aria-label={`Open badge modal for ${badge.name}`}
             onClick={() => setSelectedBadge(badge)}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setSelectedBadge(badge);
+              }
+            }}
           >
             <img
               src={`${getBaseUrl()}badges/${badge.criteria}.png`}
