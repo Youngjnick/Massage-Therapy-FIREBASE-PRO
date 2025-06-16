@@ -26,7 +26,7 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
   // Defensive: If topicStats is missing or empty, do not render stats UI
   const safeTopicStats = topicStats && Object.keys(topicStats).length > 0 ? topicStats : {};
   return (
-    <div className="quiz-results">
+    <div className="quiz-results" data-testid="quiz-results">
       {isAllIncorrect && <QuizReviewIndicator />}
       <button
         role="button"

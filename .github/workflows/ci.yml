@@ -20,3 +20,9 @@ jobs:
       - run: npm run type-check
       - run: npm test
       - run: npm run build
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright asset tests on GitHub Pages
+        env:
+          PLAYWRIGHT_BASE_URL: https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/
+        run: npx playwright test e2e/assets-on-production.spec.ts
