@@ -18,6 +18,7 @@
     - listitem:
       - link "Profile":
         - /url: /profile
+- heading "Quiz" [level=1]
 - button "Start New Quiz"
 - heading "Results" [level=2]
 - text: amygdala 0 / 10 correct
@@ -36,20 +37,23 @@
 - button "Try Another Quiz"
 - list:
   - listitem:
-    - strong: Which structure provides sensory input to the amygdala to help assess threats?
-    - text: "Your answer: Cerebellum Correct answer: Thalamus Explanation: The thalamus routes sensory information to the amygdala. More Info: The thalamus acts as a sensory relay center, delivering visual, auditory, and somatic signals directly to the amygdala for rapid emotional processing."
+    - strong: How does the amygdala influence the autonomic nervous system?
+    - text: "Your answer: Directs voluntary movement Correct answer: Activates sympathetic output Explanation: The amygdala increases sympathetic nervous activity during threat perception. More Info: When triggered by fear or stress, the amygdala communicates with brainstem centers to initiate rapid heart rate, respiration, and muscle readiness."
+  - listitem:
+    - strong: Which neurotransmitter modulates amygdala-driven fear responses?
+    - text: "Your answer: No answer Correct answer: GABA Explanation: GABA inhibits overactivation of the amygdala. More Info: Inhibitory GABAergic interneurons modulate amygdala activity. Dysfunction in GABA signaling is linked to anxiety and panic disorders."
   - listitem:
     - strong: Which emotion is most directly associated with the amygdala?
     - text: "Your answer: No answer Correct answer: Fear Explanation: Fear is primarily processed by the amygdala. More Info: Neuroimaging studies show heightened amygdala activity during fear-based stimuli. It also stores fear-based emotional memories."
   - listitem:
-    - strong: Which structure does the amygdala communicate with to activate the stress response?
-    - text: "Your answer: No answer Correct answer: Hypothalamus Explanation: The amygdala activates the hypothalamus to initiate the HPA axis. More Info: Through its connections to the hypothalamus, the amygdala activates the HPA axis, triggering cortisol release in response to fear."
-  - listitem:
-    - strong: How does the amygdala influence the autonomic nervous system?
-    - text: "Your answer: No answer Correct answer: Activates sympathetic output Explanation: The amygdala increases sympathetic nervous activity during threat perception. More Info: When triggered by fear or stress, the amygdala communicates with brainstem centers to initiate rapid heart rate, respiration, and muscle readiness."
-  - listitem:
     - strong: What is the primary role of the amygdala in the brain?
     - text: "Your answer: No answer Correct answer: Fear processing Explanation: The amygdala is key in fear detection and emotional memory. More Info: Located in the medial temporal lobe, the amygdala helps recognize emotional stimuli—especially fear—and initiate appropriate behavioral responses."
+  - listitem:
+    - strong: The amygdala is part of which larger brain system?
+    - text: "Your answer: No answer Correct answer: Limbic system Explanation: The amygdala is a key component of the limbic system. More Info: The limbic system regulates emotion, memory, and motivation. The amygdala plays a central role in fear and aggression."
+  - listitem:
+    - strong: Which therapy specifically aims to regulate overactive amygdala responses in PTSD?
+    - text: "Your answer: No answer Correct answer: EMDR Explanation: EMDR helps reprocess traumatic memories stored in the amygdala. More Info: Eye Movement Desensitization and Reprocessing (EMDR) integrates bilateral stimulation to dampen hyperactive emotional responses."
   - listitem:
     - strong: What happens to fear response if the amygdala is damaged?
     - text: "Your answer: No answer Correct answer: Reduced fear response Explanation: Bilateral amygdala damage results in impaired fear recognition. More Info: Patients with amygdala lesions often fail to recognize or react to threatening stimuli. This supports its role in emotional salience."
@@ -57,14 +61,11 @@
     - strong: What type of memory is the amygdala most involved in?
     - text: "Your answer: No answer Correct answer: Emotional memory Explanation: The amygdala enhances encoding of emotional memories. More Info: Emotionally charged events are remembered more vividly due to amygdala-hippocampal interplay. This strengthens memory consolidation."
   - listitem:
-    - strong: Which neurotransmitter modulates amygdala-driven fear responses?
-    - text: "Your answer: No answer Correct answer: GABA Explanation: GABA inhibits overactivation of the amygdala. More Info: Inhibitory GABAergic interneurons modulate amygdala activity. Dysfunction in GABA signaling is linked to anxiety and panic disorders."
+    - strong: Which structure does the amygdala communicate with to activate the stress response?
+    - text: "Your answer: No answer Correct answer: Hypothalamus Explanation: The amygdala activates the hypothalamus to initiate the HPA axis. More Info: Through its connections to the hypothalamus, the amygdala activates the HPA axis, triggering cortisol release in response to fear."
   - listitem:
-    - strong: The amygdala is part of which larger brain system?
-    - text: "Your answer: No answer Correct answer: Limbic system Explanation: The amygdala is a key component of the limbic system. More Info: The limbic system regulates emotion, memory, and motivation. The amygdala plays a central role in fear and aggression."
-  - listitem:
-    - strong: Which therapy specifically aims to regulate overactive amygdala responses in PTSD?
-    - text: "Your answer: No answer Correct answer: EMDR Explanation: EMDR helps reprocess traumatic memories stored in the amygdala. More Info: Eye Movement Desensitization and Reprocessing (EMDR) integrates bilateral stimulation to dampen hyperactive emotional responses."
+    - strong: Which structure provides sensory input to the amygdala to help assess threats?
+    - text: "Your answer: No answer Correct answer: Thalamus Explanation: The thalamus routes sensory information to the amygdala. More Info: The thalamus acts as a sensory relay center, delivering visual, auditory, and somatic signals directly to the amygdala for rapid emotional processing."
 - button "Close"
 - contentinfo:
   - textbox "Search questions"

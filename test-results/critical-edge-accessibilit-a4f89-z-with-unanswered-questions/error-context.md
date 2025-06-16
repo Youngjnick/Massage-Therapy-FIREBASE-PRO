@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- heading "Quiz" [level=1]
+- 'progressbar "Quiz progress: 10%"'
+- text: 10 % amygdala 0 / 10 correct
+- group "Question Progress":
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+- group "Which emotion is most directly associated with the amygdala?":
+  - text: Which emotion is most directly associated with the amygdala?
+  - list:
+    - listitem:
+      - 'radio "Option A: Gratitude" [checked] [disabled]'
+      - text: A. Gratitude ❌
+    - listitem:
+      - 'radio "Option B: Fear" [disabled]'
+      - text: B. Fear
+    - listitem:
+      - 'radio "Option C: Happiness" [disabled]'
+      - text: C. Happiness
+    - listitem:
+      - 'radio "Option D: Trust" [disabled]'
+      - text: D. Trust
+- text: "Incorrect Quick Tip: Fear is primarily processed by the amygdala. More Info: Neuroimaging studies show heightened amygdala activity during fear-based stimuli. It also stores fear-based emotional memories. Source: DSM-5, Neurobiology of PTSD Tags: fear, PTSD, emotions Keywords: fear center, emotion circuits, trauma response"
+- button "Previous question" [disabled]: Previous
+- button "Next question": Next
+- button "Finish quiz early": Finish
+- contentinfo:
+  - textbox "Search questions"
+```

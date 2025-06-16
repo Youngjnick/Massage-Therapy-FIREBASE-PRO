@@ -12,13 +12,13 @@ jest.mock('firebase/auth', () => ({
 const mockSetDoc = jest.fn();
 const mockGetDoc = jest.fn(() => ({ exists: () => false, data: () => ({}) }));
 const mockDoc = jest.fn();
-let onSnapshotCallback: ((snapshot: any) => void) | null = null;
+let onSnapshotCallback: ((_snapshot: any) => void) | null = null;
 
 jest.mock('firebase/firestore', () => ({
   doc: (...args: any[]) => { mockDoc(...args); return {}; },
   setDoc: (...args: any[]) => mockSetDoc(...args),
   getDoc: () => mockGetDoc(),
-  onSnapshot: (ref: unknown, cb: (snapshot: any) => void) => {
+  onSnapshot: (ref: unknown, cb: (_snapshot: any) => void) => {
     onSnapshotCallback = cb;
     // Initial call with default stats
     cb({ exists: () => true, data: () => ({ topicStats: { Test: { correct: 1, total: 2 } } }) });
