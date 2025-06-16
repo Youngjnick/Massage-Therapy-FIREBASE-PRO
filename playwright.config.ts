@@ -5,8 +5,14 @@ export default defineConfig({
   timeout: 30000,
   retries: 1,
   use: {
-    baseURL: 'http://localhost:5174/Massage-Therapy-FIREBASE-PRO/',
+    baseURL: 'http://localhost:5174/',
     ...devices['Desktop Chrome'],
     headless: false,
+  },
+  webServer: {
+    command: 'vite --port 5174',
+    port: 5174,
+    timeout: 120 * 1000,
+    reuseExistingServer: !process.env.CI,
   },
 });
