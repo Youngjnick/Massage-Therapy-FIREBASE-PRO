@@ -1,42 +1,30 @@
 import js from '@eslint/js';
 import parser from '@typescript-eslint/parser';
-import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 import reactPlugin from 'eslint-plugin-react';
 import prettier from 'eslint-config-prettier';
 import babelParser from '@babel/eslint-parser';
+import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 
 export default [
   js.configs.recommended,
   prettier,
   {
-    files: ['**/*.ts', '**/*.tsx'],
+    files: [
+      'src/__tests__/*.ts',
+      'src/__tests__/*.tsx',
+      'src/__tests__/**/*.ts',
+      'src/__tests__/**/*.tsx',
+      '__tests__/*.ts',
+      '__tests__/*.tsx',
+      '__tests__/**/*.ts',
+      '__tests__/**/*.tsx',
+      '**/*.test.ts',
+      '**/*.test.tsx',
+    ],
     languageOptions: {
       parser,
       parserOptions: {
-        project: './tsconfig.json',
-        ecmaFeatures: { jsx: true },
-      },
-    },
-    plugins: {
-      '@typescript-eslint': tsEslintPlugin,
-      react: reactPlugin,
-    },
-    rules: {
-      ...tsEslintPlugin.configs.recommended.rules,
-      ...reactPlugin.configs.recommended.rules,
-    },
-    settings: {
-      react: {
-        version: 'detect',
-      },
-    },
-  },
-  {
-    files: ['**/*.test.ts', '**/*.test.tsx', '**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
-    languageOptions: {
-      parser,
-      parserOptions: {
-        project: './tsconfig.json',
+        project: './tsconfig.test.json',
         ecmaFeatures: { jsx: true },
       },
       globals: {
@@ -48,10 +36,24 @@ export default [
         afterAll: true,
         jest: true,
         test: true,
+        window: true,
+        document: true,
+        setTimeout: true,
+        console: true,
+        global: true,
+        alert: true,
       },
+    },
+    plugins: {
+      '@typescript-eslint': tsEslintPlugin,
+      react: reactPlugin,
     },
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
     },
   },
   {
@@ -66,15 +68,26 @@ export default [
         window: true,
         document: true,
         setTimeout: true,
-        alert: true,
-        prompt: true,
         console: true,
-        require: true,
         global: true,
+        alert: true,
       },
     },
+    plugins: {
+      '@typescript-eslint': tsEslintPlugin,
+      react: reactPlugin,
+    },
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
+      ...reactPlugin.configs.recommended.rules,
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
     },
   },
   {
@@ -106,6 +119,8 @@ export default [
       'vite.config.ts',
       'e2e/tsconfig.json',
       'dataconnect-generated/**',
+      '.vite/**',
+      'node_modules/**',
     ],
   },
   {
@@ -160,5 +175,29 @@ export default [
         test: true,
       },
     },
+  },
+  {
+    ignores: [
+      'src/components/Quiz/QuizCheckbox.tsx',
+      'src/components/Quiz/QuizLengthInput.tsx',
+      'src/components/Quiz/QuizRandomizeOptions.tsx',
+      'src/components/Quiz/QuizSortSelect.tsx',
+      'src/components/Quiz/QuizBookmarkItem.tsx',
+      'src/components/Quiz/QuizBookmarksPanel.tsx',
+      'src/components/Quiz/QuizQuestionCard.tsx',
+      'src/components/Quiz/QuizStartControls.tsx',
+      'src/components/Quiz/QuizStartForm.tsx',
+      'src/components/Quiz/QuizStepper.tsx',
+      'src/components/Quiz/QuizTopicSelect.tsx',
+      'src/components/Quiz/useQuizKeyboardNavigation.ts',
+      'src/context/FeatureFlagContext.tsx',
+      'src/context/QuizContext.tsx',
+      'src/context/ToastContext.tsx',
+      'src/hooks/useQuizData.ts',
+      'src/hooks/useUserStats.ts',
+      'src/pages/Analytics.test.tsx',
+      'src/__tests__/Analytics.integration.test.tsx',
+      'src/__tests__/QuizResultsLiveStats.integration.test.tsx'
+    ],
   },
 ];

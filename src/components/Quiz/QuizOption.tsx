@@ -86,15 +86,14 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   const focusSiblingInput = (direction: 'next' | 'prev') => {
     const thisInput = document.getElementById(uniqueInputId);
     if (!thisInput || !name) return;
-    // Only include radios that are visible and are siblings (same parentNode)
-    const parent = thisInput.parentNode;
-    if (!parent) return;
-    const radios = Array.from(parent.querySelectorAll('input[type="radio"][name="' + name + '"]'))
+    const radios = Array.from(document.querySelectorAll('input[type="radio"][name="' + name + '"]'))
       .map(r => r as HTMLInputElement)
       .filter(r => r.offsetParent !== null);
     const idx = radios.findIndex(r => r.id === uniqueInputId);
     if (idx === -1) return;
     const nextIdx = direction === 'next' ? (idx + 1) % radios.length : (idx - 1 + radios.length) % radios.length;
+    // Debug log
+    console.log('[QuizOption] focusSiblingInput:', { direction, current: uniqueInputId, next: radios[nextIdx]?.id });
     Promise.resolve().then(() => { radios[nextIdx]?.focus(); });
   };
 
@@ -170,6 +169,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         data-disabled={Boolean(disabled)}
         tabIndex={tabIndex}
         data-quiz-radio
+        data-testid="quiz-radio"
         // autoFocus={autoFocus} // Remove this line to avoid React warnings and double-focusing
         onClick={e => {
           e.stopPropagation();
@@ -180,6 +180,8 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         }}
         onBlur={handleBlur}
         onKeyDown={e => {
+          // Debug log for keydown
+          console.log('[QuizOption] onKeyDown:', { key: e.key, id: uniqueInputId, focused: document.activeElement?.id });
           if (Boolean(disabled) || e.currentTarget.readOnly) return;
           if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
             e.preventDefault();
