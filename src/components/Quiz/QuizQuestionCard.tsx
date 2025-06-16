@@ -67,6 +67,21 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   // Use the answered prop directly
   const answered = answeredProp;
 
+  // Fallback: focus the first radio input after mount if on the first question or after quiz restart
+  React.useEffect(() => {
+    // Only run if on the first question and not in review mode
+    if (current === 0 && !isReviewMode) {
+      // Wait for the DOM to update after quiz start/reset
+      setTimeout(() => {
+        // Find the first enabled radio input for the current question
+        const firstRadio = document.querySelector('input[type="radio"][data-testid="quiz-radio"]:not([disabled])') as HTMLInputElement | null;
+        if (firstRadio) {
+          firstRadio.focus();
+        }
+      }, 0);
+    }
+  }, [current, isReviewMode, q]);
+
   return (
     <div data-testid="quiz-question-card">
       <fieldset style={{ border: 0, padding: 0, margin: 0 }}>

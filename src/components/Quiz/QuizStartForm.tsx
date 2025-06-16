@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import QuizSortSelect from './QuizSortSelect';
 import QuizTopicSelect from './QuizTopicSelect';
 import QuizLengthInput from './QuizLengthInput';
@@ -32,10 +32,36 @@ interface QuizStartFormProps {
 
 const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
   const { toggleState, setToggleState } = props;
+  // Ref for the quiz length input
+  const lengthInputRef = useRef<HTMLInputElement>(null);
+  // Error state for required fields
+  const [error, setError] = useState<string | null>(null);
+  // Auto-focus the quiz length input when the form appears
+  useEffect(() => {
+    if (lengthInputRef.current) {
+      lengthInputRef.current.focus();
+    }
+  }, []);
+
+  function validate() {
+    if (!props.selectedTopic) return 'Please select a topic.';
+    if (!props.quizLength || props.quizLength < 1) return 'Please enter a valid quiz length.';
+    if (!props.availableTopics || props.availableTopics.length === 0) return 'No topics available.';
+    return null;
+  }
 
   return (
     <>
-      <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => { e.preventDefault(); props.onStart({ selectedTopic: props.selectedTopic, quizLength: props.quizLength, sort: props.sort, ...toggleState }); }}>
+      <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => {
+        e.preventDefault();
+        const validationError = validate();
+        if (validationError) {
+          setError(validationError);
+          return;
+        }
+        setError(null);
+        props.onStart({ selectedTopic: props.selectedTopic, quizLength: props.quizLength, sort: props.sort, ...toggleState });
+      }}>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-end', marginBottom: '1rem' }}>
           <label htmlFor="quiz-topic-select">Topic</label>
           <QuizTopicSelect
@@ -50,6 +76,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
             maxQuizLength={props.maxQuizLength}
             id="quiz-length-input"
             data-testid="quiz-length-input"
+            ref={lengthInputRef}
           />
           <QuizSortSelect sort={props.sort} setSort={props.setSort} />
         </div>
@@ -129,6 +156,9 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
           </label>
         )}
         <button style={{ marginLeft: '1rem' }} type="submit" disabled={props.quizLength < 1 || props.maxQuizLength === 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
+        {error && (
+          <div style={{ color: 'red', marginTop: 12 }} data-testid="quiz-start-error">{error}</div>
+        )}
       </form>
       {props.showStartNewQuiz && (
         <button
