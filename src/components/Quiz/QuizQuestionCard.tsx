@@ -108,6 +108,8 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   inputId={inputId}
                   name={name}
                   autoFocus={current === 0 && i === 0}
+                  isFirst={i === 0}
+                  data-testid="quiz-option"
                 >
                   {/* Bookmark and error buttons can be slotted here if needed */}
                 </QuizOption>
