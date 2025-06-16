@@ -131,3 +131,52 @@ test.skip('should allow selecting options and navigation with keyboard and mouse
   // Should be on Prev button
   await expect(page.getByRole('button', { name: /prev/i })).toBeFocused();
 });
+
+test('should load all referenced badge images on Achievements page', async ({ page }) => {
+  await page.goto('/achievements');
+  // Only check images that are always present
+  const badgeImages = [
+    'first_quiz.png',
+    'accuracy_100.png',
+  ];
+  for (const imgName of badgeImages) {
+    const img = page.locator(`img[src*="badges/${imgName}"]`);
+    await expect(img).toBeVisible();
+    const naturalWidth = await img.evaluate((el) => {
+      // @ts-ignore
+      return el.naturalWidth || 0;
+    });
+    expect(naturalWidth).toBeGreaterThan(0);
+  }
+});
+
+test('should show fallback badge image if badge image fails to load', async ({ page }) => {
+  // Intercept the badge metadata request and inject a badge with a non-existent id (since BadgeModal uses badge.id for the image src)
+  await page.route('**/badges/badges.json', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify([
+        {
+          id: 'nonexistent_badge',
+          name: 'Broken Badge',
+          description: 'This badge image does not exist',
+          criteria: 'nonexistent_badge',
+          image: 'nonexistent_badge.png',
+          awarded: true
+        }
+      ]),
+    });
+  });
+  await page.goto('/achievements');
+  // Open the badge modal by clicking the badge
+  await page.getByTestId('badge-container').first().click();
+  // The fallback image should appear in the modal
+  const fallbackImg = page.locator('img[src*="badges/badge_test.png"]');
+  await expect(fallbackImg).toBeVisible();
+  const naturalWidth = await fallbackImg.evaluate((el) => {
+    // @ts-ignore
+    return el.naturalWidth || 0;
+  });
+  expect(naturalWidth).toBeGreaterThan(0);
+});
