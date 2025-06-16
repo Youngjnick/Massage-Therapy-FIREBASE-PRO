@@ -11,7 +11,7 @@ interface QuizTopicProgressProps {
 const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats }) => {
   if (!topicStats || Object.entries(topicStats).length === 0) return null;
   return (
-    <div style={{ display: 'flex', gap: 16, marginBottom: 12, flexWrap: 'wrap' }}>
+    <div data-testid="quiz-topic-progress" style={{ display: 'flex', gap: 16, marginBottom: 12, flexWrap: 'wrap' }}>
       {Object.entries(topicStats).map(([topic, stat]) => {
         // Defensive: prevent duplicate topic name rendering (e.g., 'topictpoic')
         const cleanTopic =
