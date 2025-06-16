@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- heading "Quiz" [level=1]
+- 'progressbar "Quiz progress: 10%"'
+- text: 10 % amygdala 1 / 10 correct
+- group "Question Progress":
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+- group "Which neurotransmitter modulates amygdala-driven fear responses?":
+  - text: Which neurotransmitter modulates amygdala-driven fear responses?
+  - list:
+    - listitem:
+      - 'radio "Option A: GABA" [checked] [disabled]'
+      - text: A. GABA ✔️
+    - listitem:
+      - 'radio "Option B: Acetylcholine" [disabled]'
+      - text: B. Acetylcholine
+    - listitem:
+      - 'radio "Option C: Dopamine" [disabled]'
+      - text: C. Dopamine
+    - listitem:
+      - 'radio "Option D: Serotonin" [disabled]'
+      - text: D. Serotonin
+- text: "Correct! Quick Tip: GABA inhibits overactivation of the amygdala. More Info: Inhibitory GABAergic interneurons modulate amygdala activity. Dysfunction in GABA signaling is linked to anxiety and panic disorders. Source: Neuropsychopharmacology: Textbook Tags: GABA, anxiety, amygdala inhibition Keywords: GABA neurotransmitter, fear modulation, calming response"
+- button "Previous question" [disabled]: Previous
+- button "Next question": Next
+- button "Finish quiz early": Finish
+- contentinfo:
+  - textbox "Search questions"
+```
