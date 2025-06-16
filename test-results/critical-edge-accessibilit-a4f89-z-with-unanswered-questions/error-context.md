@@ -32,22 +32,22 @@
   - button
   - button
   - button
-- group "Which emotion is most directly associated with the amygdala?":
-  - text: Which emotion is most directly associated with the amygdala?
+- group "What happens to fear response if the amygdala is damaged?":
+  - text: What happens to fear response if the amygdala is damaged?
   - list:
     - listitem:
-      - 'radio "Option A: Gratitude" [checked] [disabled]'
-      - text: A. Gratitude ❌
+      - 'radio "Option A: Exaggerated fear" [checked] [disabled]'
+      - text: A. Exaggerated fear ❌
     - listitem:
-      - 'radio "Option B: Fear" [disabled]'
-      - text: B. Fear
+      - 'radio "Option B: No change" [disabled]'
+      - text: B. No change
     - listitem:
-      - 'radio "Option C: Happiness" [disabled]'
-      - text: C. Happiness
+      - 'radio "Option C: Reduced fear response" [disabled]'
+      - text: C. Reduced fear response
     - listitem:
-      - 'radio "Option D: Trust" [disabled]'
-      - text: D. Trust
-- text: "Incorrect Quick Tip: Fear is primarily processed by the amygdala. More Info: Neuroimaging studies show heightened amygdala activity during fear-based stimuli. It also stores fear-based emotional memories. Source: DSM-5, Neurobiology of PTSD Tags: fear, PTSD, emotions Keywords: fear center, emotion circuits, trauma response"
+      - 'radio "Option D: Improved learning" [disabled]'
+      - text: D. Improved learning
+- text: "Incorrect Quick Tip: Bilateral amygdala damage results in impaired fear recognition. More Info: Patients with amygdala lesions often fail to recognize or react to threatening stimuli. This supports its role in emotional salience. Source: Case studies in Behavioral Neurology Tags: amygdala lesion, fear response, neuropsychology Keywords: lesion behavior, fear blunting, brain injury"
 - button "Previous question" [disabled]: Previous
 - button "Next question": Next
 - button "Finish quiz early": Finish
