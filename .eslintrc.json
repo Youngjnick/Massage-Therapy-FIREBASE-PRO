@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "extends": ["./eslint.config.js"],
+  "ignorePatterns": [
+    ".vite/",
+    "dist/",
+    "dataconnect-generated/",
+    "node_modules/",
+    "*.config.js",
+    "*.config.cjs",
+    "*.config.mjs",
+    "*.d.ts",
+    "*.test.js",
+    "*.test.ts",
+    "*.test.tsx",
+    "*.spec.js",
+    "*.spec.ts",
+    "*.spec.tsx"
+  ],
+  "overrides": [
+    {
+      "files": ["src/__tests__/*.ts", "src/__tests__/*.tsx"],
+      "env": {
+        "node": true,
+        "jest": true
+      },
+      "globals": {
+        "console": "readonly"
+      },
+      "rules": {
+        "no-undef": "off",
+        "no-constant-condition": "off"
+      }
+    },
+    {
+      "files": ["src/__tests__/**/*", "*.test.*", "*.spec.*"],
+      "env": {
+        "jest": true,
+        "node": true
+      },
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "no-undef": "off",
+        "no-unused-vars": "off"
+      }
+    }
+  ]
+}
