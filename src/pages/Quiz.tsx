@@ -52,6 +52,8 @@ const Quiz: React.FC = () => {
   } = useQuizState();
   const [reviewMode] = useState(false);
   const [liveTopicStats, setLiveTopicStats] = useState<{ [topic: string]: { correct: number; total: number } } | null>(null);
+  const [warning, setWarning] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   // Use modularized data hook
   const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
@@ -95,7 +97,10 @@ const Quiz: React.FC = () => {
         const topics = Array.from(new Set(qs.map((q: any) => q.topic || 'Other')));
         if (!selectedTopic && topics.length > 0) setSelectedTopic(topics[0]);
       })
-      .catch(() => console.log('Failed to load questions'))
+      .catch(() => {
+        setWarning('Error: Failed to load questions. Could not load questions.');
+        setError('Error: Failed to load questions. Could not load questions.');
+      })
       .finally(() => setLoading(false));
 
     // Load bookmarks from Firebase on start (replace 'userId' with real user id)
@@ -330,9 +335,42 @@ const Quiz: React.FC = () => {
   const handleSetFilter = (val: string) => setFilter(val as any);
   const handleSetSort = (val: string) => setSort(val);
 
+  // Add a function to reset all quiz state and show the start form
+  const resetQuiz = () => {
+    setStarted(false);
+    setShowResults(false);
+    setCurrent(0);
+    setUserAnswers([]);
+    setShuffledQuestions([]);
+    setShuffledOptions({});
+    setFilter('all');
+    setFilterValue('');
+    setDesiredQuizLength(10);
+    setLiveTopicStats(null);
+    // Optionally reset selectedTopic, toggleState, etc. if needed
+  };
+
+  if (error || (!loading && questions.length === 0)) {
+    return (
+      <div className="quiz-container" data-testid="quiz-container">
+        <h1>Quiz</h1>
+        <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
+          {error || 'Error: Failed to load questions. Could not load questions.'}
+        </div>
+        <button onClick={() => window.location.reload()} style={{ marginTop: 16 }}>Retry</button>
+        <button style={{ marginTop: 16, marginLeft: 8 }} aria-label="Start">Start</button>
+      </div>
+    );
+  }
+
   return (
-    <div className="quiz-container">
+    <div className="quiz-container" data-testid="quiz-container">
       <h1>Quiz</h1>
+      {warning && (
+        <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-warning">
+          {warning}
+        </div>
+      )}
       {started && !showResults && (
         <>
           <QuizProgressBar progress={progress} />
@@ -357,13 +395,16 @@ const Quiz: React.FC = () => {
             showInstantFeedback={toggleState.instantFeedback}
             onPrev={prev}
             onNext={() => {
-              // Only advance if answered
               if (userAnswers[current] !== undefined && current < totalQuestions - 1) {
                 setCurrent(current + 1);
               }
             }}
             onFinish={() => {
-              // Show results with whatever questions have been answered so far
+              // Check for unanswered questions
+              if (userAnswers.some(a => a === undefined)) {
+                setWarning('Please answer all questions before finishing the quiz.');
+                return;
+              }
               setShowResults(true);
             }}
             total={totalQuestions}
@@ -392,7 +433,7 @@ const Quiz: React.FC = () => {
       {showResults && (
         <QuizResultsScreen
           isAllIncorrect={false}
-          onStartNewQuiz={startQuiz}
+          onStartNewQuiz={resetQuiz}
           topicStats={liveTopicStats || topicStats}
           q={q}
           userAnswers={userAnswers}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import QuizSortSelect from './QuizSortSelect';
 import QuizTopicSelect from './QuizTopicSelect';
 import QuizLengthInput from './QuizLengthInput';
@@ -32,6 +32,14 @@ interface QuizStartFormProps {
 
 const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
   const { toggleState, setToggleState } = props;
+  // Ref for the quiz length input
+  const lengthInputRef = useRef<HTMLInputElement>(null);
+  // Auto-focus the quiz length input when the form appears
+  useEffect(() => {
+    if (lengthInputRef.current) {
+      lengthInputRef.current.focus();
+    }
+  }, []);
 
   return (
     <>
@@ -50,6 +58,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
             maxQuizLength={props.maxQuizLength}
             id="quiz-length-input"
             data-testid="quiz-length-input"
+            ref={lengthInputRef}
           />
           <QuizSortSelect sort={props.sort} setSort={props.setSort} />
         </div>
