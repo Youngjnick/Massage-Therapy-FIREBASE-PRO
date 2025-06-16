@@ -1,0 +1,55 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- 'progressbar "Quiz progress: 10%"'
+- text: 10 % amygdala 0 / 10 correct
+- group "Question Progress":
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+- group "What is the primary role of the amygdala in the brain?":
+  - text: What is the primary role of the amygdala in the brain?
+  - list:
+    - listitem:
+      - 'radio "Option A: Motor coordination"'
+      - text: A. Motor coordination
+    - listitem:
+      - 'radio "Option B: Visual perception"'
+      - text: B. Visual perception
+    - listitem:
+      - 'radio "Option C: Fear processing"'
+      - text: C. Fear processing
+    - listitem:
+      - 'radio "Option D: Language production"'
+      - text: D. Language production
+- text: "Quick Tip: The amygdala is key in fear detection and emotional memory. More Info: Located in the medial temporal lobe, the amygdala helps recognize emotional stimuli—especially fear—and initiate appropriate behavioral responses. Source: Neuroscience: Exploring the Brain Tags: amygdala, fear, emotional brain Keywords: limbic system, emotional memory, fight-or-flight"
+- button "Previous question": Previous
+- button "Next question" [disabled]: Next
+- button "Finish quiz early": Finish
+- contentinfo:
+  - textbox "Search questions"
+```

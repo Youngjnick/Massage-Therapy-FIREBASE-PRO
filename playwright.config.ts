@@ -9,4 +9,10 @@ export default defineConfig({
     ...devices['Desktop Chrome'],
     headless: false,
   },
+  webServer: {
+    command: 'vite --port 5174',
+    port: 5174,
+    timeout: 120 * 1000,
+    reuseExistingServer: !process.env.CI,
+  },
 });
