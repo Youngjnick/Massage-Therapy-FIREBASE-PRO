@@ -332,6 +332,7 @@ const Quiz: React.FC = () => {
 
   return (
     <div className="quiz-container">
+      <h1>Quiz</h1>
       {started && !showResults && (
         <>
           <QuizProgressBar progress={progress} />
