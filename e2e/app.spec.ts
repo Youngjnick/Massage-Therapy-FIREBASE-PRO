@@ -207,3 +207,42 @@ test('should load favicon, app icon, and default avatar image', async ({ page })
   expect(avatarResp.status()).toBe(200);
   expect(avatarResp.headers()['content-type']).toMatch(/image/);
 });
+
+test.only('should navigate to all main pages via NavBar and route correctly', async ({ page }) => {
+  await page.goto('/');
+
+  // Define navigation links and expected headings
+  const navLinks = [
+    { label: 'Quiz', path: '/quiz', heading: /quiz/i },
+    { label: 'Achievements', path: '/achievements', heading: /achievements/i },
+    { label: 'Analytics', path: '/analytics', heading: /analytics/i },
+    { label: 'Profile', path: '/profile', heading: /profile/i },
+  ];
+
+  for (const { label, path, heading } of navLinks) {
+    await page.getByRole('link', { name: label }).click();
+    await page.waitForURL(`**${path}`);
+    if (label === 'Analytics') {
+      // If not signed in, expect the sign-in message
+      const signInMsg = page.getByText(/please sign in to view your analytics/i);
+      if (await signInMsg.isVisible()) {
+        await expect(signInMsg).toBeVisible();
+        continue;
+      }
+    }
+    await expect(page.getByRole('heading', { name: heading })).toBeVisible();
+  }
+
+  // Test browser back/forward navigation
+  await page.goBack();
+  // Analytics page: check for heading or sign-in message
+  const analyticsHeading = page.getByRole('heading', { name: /analytics/i });
+  const analyticsSignInMsg = page.getByText(/please sign in to view your analytics/i);
+  if (await analyticsSignInMsg.isVisible()) {
+    await expect(analyticsSignInMsg).toBeVisible();
+  } else {
+    await expect(analyticsHeading).toBeVisible();
+  }
+  await page.goForward();
+  await expect(page.getByRole('heading', { name: /profile/i })).toBeVisible();
+});

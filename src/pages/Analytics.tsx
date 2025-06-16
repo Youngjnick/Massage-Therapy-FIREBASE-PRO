@@ -71,7 +71,7 @@ const Analytics: React.FC = () => {
 
   return (
     <div>
-      <h2>Analytics</h2>
+      <h1>Analytics</h1>
       <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap', marginTop: 24 }}>
         <div>
           <strong>Quizzes Taken:</strong> {stats.quizzesTaken}
