@@ -106,6 +106,8 @@ export default [
       'vite.config.ts',
       'e2e/tsconfig.json',
       'dataconnect-generated/**',
+      '.vite/**',
+      'node_modules/**',
     ],
   },
   {
