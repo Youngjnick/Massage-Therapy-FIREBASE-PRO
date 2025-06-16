@@ -108,23 +108,22 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
     return resolvedInputRef?.current || null;
   };
 
-  // Determine tabIndex: if selected, 0; if not selected and isFirst, 0; else -1
-  const tabIndex = selected || (isFirst && !disabled) ? 0 : -1;
+  // Always set tabIndex=0 for the first enabled option, else -1
+  const tabIndex = isFirst && !disabled ? 0 : selected ? 0 : -1;
 
-  // Auto-focus the first visible option if none are selected (for first question)
+  // Robustly focus the first option after quiz start/reset
   React.useEffect(() => {
     if (isFirst && !selected && !disabled) {
-      // Only focus if no other radio in the group is selected or focused
       const el = getInputEl();
       if (!el) return;
-      // Find all radios in the same group (by name)
+      // Only focus if no other radio in the group is selected or focused
       const groupRadios = name
         ? Array.from(document.querySelectorAll(`input[type='radio'][name='${name}']`))
         : [el];
       const anySelected = groupRadios.some(r => (r as HTMLInputElement).checked);
       const anyFocused = groupRadios.some(r => r === document.activeElement);
       if (!anySelected && !anyFocused) {
-        Promise.resolve().then(() => { el.focus(); }); // Robust focus after mount
+        window.requestAnimationFrame(() => { el.focus(); }); // Use window.rAF for robust focus after mount
       }
     }
   }, [isFirst, selected, disabled, name]);
@@ -170,6 +169,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         data-disabled={Boolean(disabled)}
         tabIndex={tabIndex}
         data-quiz-radio
+        data-testid="quiz-radio"
         // autoFocus={autoFocus} // Remove this line to avoid React warnings and double-focusing
         onClick={e => {
           e.stopPropagation();

@@ -4,12 +4,15 @@ import { test, expect } from '@playwright/test';
 // Only run the failing test for now
 test('should focus first option after starting quiz', async ({ page }) => {
   await page.goto('/');
+  await page.screenshot({ path: 'screenshots/step1-home.png', fullPage: true });
   await page.getByLabel('Quiz Length').fill('1');
+  await page.screenshot({ path: 'screenshots/step2-filled-quiz-length.png', fullPage: true });
   await page.getByLabel(/topic/i).selectOption({ index: 0 });
+  await page.screenshot({ path: 'screenshots/step3-selected-topic.png', fullPage: true });
   await page.getByRole('button', { name: /start/i }).click();
+  await page.screenshot({ path: 'screenshots/step4-after-start.png', fullPage: true });
   const firstOption = page.getByTestId('quiz-option').first();
-  // Playwright cannot directly check focus on label, but can check the input inside
-  const input = await firstOption.locator('input[type="radio"]');
+  const input = await firstOption.getByTestId('quiz-radio');
   await expect(input).toBeFocused();
 });
 
@@ -39,11 +42,15 @@ test.skip('should allow keyboard navigation through options and buttons', async 
 
 test('should reset quiz and focus first option after restart', async ({ page }) => {
   await page.goto('/');
+  await page.screenshot({ path: 'screenshots/reset-1-home.png', fullPage: true });
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
+  await page.screenshot({ path: 'screenshots/reset-2-quiz-started.png', fullPage: true });
   await page.getByTestId('quiz-option').first().click();
   await page.getByRole('button', { name: /finish/i }).click();
+  await page.screenshot({ path: 'screenshots/reset-3-finished.png', fullPage: true });
   await page.getByRole('button', { name: /start new quiz/i }).click();
+  await page.screenshot({ path: 'screenshots/reset-4-new-quiz.png', fullPage: true });
   const input = await page.getByTestId('quiz-option').first().locator('input[type="radio"]');
   await expect(input).toBeFocused();
 });
@@ -61,11 +68,12 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
   await page.goto('/');
   await page.getByLabel('Quiz Length').fill('2');
   await page.getByRole('button', { name: /start/i }).click();
+  await page.screenshot({ path: 'screenshots/rapid-1-quiz-started.png', fullPage: true });
   const options = page.getByTestId('quiz-option');
   await options.nth(0).click();
   await options.nth(1).click();
   await options.nth(0).click();
-  // Should not crash, and feedback should be shown
+  await page.screenshot({ path: 'screenshots/rapid-2-after-answers.png', fullPage: true });
   await expect(page.getByTestId('quiz-feedback')).toBeVisible();
 });
 
@@ -92,8 +100,8 @@ test('should render and be usable on mobile viewport', async ({ page }) => {
   await page.goto('/');
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
+  await page.screenshot({ path: 'screenshots/mobile-quiz.png', fullPage: true });
   await expect(page.getByTestId('quiz-question-card')).toBeVisible();
-  // Check that options are visible and accessible
   await expect(page.getByTestId('quiz-option').first()).toBeVisible();
 });
 
