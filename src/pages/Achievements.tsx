@@ -6,27 +6,76 @@ import BadgeModal from '../components/Quiz/BadgeModal';
 const Achievements: React.FC = () => {
   const [badges, setBadges] = useState<Badge[]>([]);
   const [selectedBadge, setSelectedBadge] = useState<Badge | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  const fallbackUrl = `${getBaseUrl()}badges/fallback.png`;
+
+  // Preload fallback image once
+  useEffect(() => {
+    const img = new window.Image();
+    img.src = fallbackUrl;
+  }, []);
 
   useEffect(() => {
-    getBadges().then(setBadges);
+    getBadges()
+      .then(badges => {
+        setBadges(badges);
+        if (!badges || badges.length === 0) {
+          setError('No badges found. Please check badge data or network.');
+        }
+      })
+      .catch(e => {
+        setError('Failed to load badges.');
+        console.error('[DEBUG] Error loading badges:', e);
+      });
   }, []);
 
   return (
     <div>
       <h2>Achievements</h2>
+      {error && (
+        <div style={{ color: 'red', marginBottom: 16 }} data-testid="badge-error">
+          {error}
+        </div>
+      )}
+      {badges.length === 0 && !error && (
+        <div style={{ color: 'orange', marginBottom: 16 }} data-testid="badge-empty">
+          No badges to display. (Debug: badge list is empty but no error was thrown.)
+        </div>
+      )}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
         {badges.map(badge => (
           <div
             key={badge.id}
             data-testid="badge-container"
             style={{ textAlign: 'center' }}
+            tabIndex={0}
+            role="button"
+            aria-label={`Open badge modal for ${badge.name}`}
             onClick={() => setSelectedBadge(badge)}
+            onKeyDown={e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setSelectedBadge(badge);
+              }
+            }}
           >
             <img
-              src={`${getBaseUrl()}badges/${badge.criteria}.png`}
+              src={`${getBaseUrl()}badges/${badge.image}`}
               alt={badge.name}
               style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', opacity: badge.awarded ? 1 : 0.5 }}
               data-testid={badge.awarded ? 'badge-awarded' : 'badge-unawarded'}
+              onError={e => {
+                if (!(e.currentTarget as any)._hasFallback) {
+                  (e.currentTarget as any)._hasFallback = true;
+                  e.currentTarget.src = fallbackUrl;
+                  console.error('Badge image failed to load:', e.currentTarget.src);
+                }
+              }}
+              onLoad={e => {
+                (e.currentTarget as any)._hasFallback = false;
+                console.log('Badge image loaded:', e.currentTarget.src);
+              }}
             />
             <div style={{ marginTop: 8 }}>{badge.name}</div>
           </div>

@@ -1,0 +1,39 @@
+name: PR Preview Deploy and E2E
+
+on:
+  pull_request:
+    branches: [main, feature/testing-setup, refactor/modularize-app, base-app-fully-featured-2]
+
+jobs:
+  build-deploy-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run build
+      - name: Deploy PR Preview to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          destination_dir: pr-${{ github.event.number }}
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright E2E tests on PR Preview
+        env:
+          PLAYWRIGHT_BASE_URL: https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/pr-${{ github.event.number }}/
+        run: npx playwright test e2e/assets-on-production.spec.ts
+      - name: Comment PR Preview URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 Preview: https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/pr-${context.issue.number}/`
+            })
