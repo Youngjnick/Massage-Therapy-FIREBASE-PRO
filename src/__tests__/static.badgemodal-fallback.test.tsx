@@ -2,8 +2,6 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import BadgeModal from '../components/Quiz/BadgeModal';
 
-jest.mock('../utils/getBaseUrl', () => ({ getBaseUrl: () => '/' }));
-
 describe('BadgeModal fallback image', () => {
   it('renders fallback image on error', () => {
     const badge = { id: 'nonexistent_badge', name: 'Missing Badge', description: 'desc', criteria: 'crit', awarded: false, image: 'nonexistent_badge.png' };

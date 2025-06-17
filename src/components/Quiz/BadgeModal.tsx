@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 import type { Badge } from '../../badges';
-import { getBaseUrl } from '../../utils/getBaseUrl';
 
 interface BadgeModalProps {
   badge: Badge | null;
@@ -16,7 +15,7 @@ const BadgeModal: React.FC<BadgeModalProps> = ({ badge, open, onClose }) => {
     <Modal open={open} onClose={onClose}>
       <div style={{ textAlign: 'center' }} data-testid="badge-modal">
         <img
-          src={imgError ? `${getBaseUrl()}badges/badge_test.png` : `${getBaseUrl()}badges/${badge.id}.png`}
+          src={imgError ? `${import.meta.env.BASE_URL}badges/badge_test.png` : `${import.meta.env.BASE_URL}badges/${badge.id}.png`}
           alt={badge.name}
           style={{ width: 160, height: 160, marginBottom: 16 }}
           onError={() => setImgError(true)}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import AppHeader from './AppHeader';
-jest.mock('../utils/getBaseUrl', () => ({ getBaseUrl: () => '/' }));
 
 describe('AppHeader', () => {
   it('renders the app icon with correct alt text', () => {
