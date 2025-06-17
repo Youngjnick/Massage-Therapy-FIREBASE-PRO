@@ -36,7 +36,7 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     const html = await page.content();
     await test.info().attach('quiz-html', { body: html, contentType: 'text/html' });
     // Should show error message
-    await expect(page.getByText(/error|failed|could not load/i)).toBeVisible();
+    await expect(page.getByTestId('quiz-error')).toBeVisible();
     // UI should still be usable (e.g., start button visible)
     await expect(page.getByRole('button', { name: /start/i })).toBeVisible();
   });
@@ -49,7 +49,7 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     // Simulate network failure on Firestore write (result submission)
     await page.route('**/firestore.googleapis.com/**', route => route.abort());
     await page.getByRole('button', { name: /finish/i }).click();
-    await expect(page.getByText(/error|failed|could not submit/i)).toBeVisible();
+    await expect(page.getByTestId('quiz-error')).toBeVisible();
   });
 
   test('ARIA attributes: quiz options and navigation', async ({ page }) => {

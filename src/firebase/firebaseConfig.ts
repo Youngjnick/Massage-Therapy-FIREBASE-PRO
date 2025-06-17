@@ -25,4 +25,4 @@ if (typeof window !== 'undefined') {
   });
 }
 
-export { app, analytics, firebaseLogEvent };
+export { app, analytics, firebaseLogEvent, firebaseConfig };

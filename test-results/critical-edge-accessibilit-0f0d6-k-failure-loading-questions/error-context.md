@@ -1,0 +1,50 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- heading "Quiz" [level=1]
+- text: Topic
+- combobox "Topic"
+- text: "Quiz Length:"
+- spinbutton "Quiz Length" [disabled]: "0"
+- text: "Sort:"
+- combobox "Sort:":
+  - option "Default" [selected]
+  - option "By Accuracy"
+  - option "By Time"
+  - option "By Difficulty"
+- text: Show Explanations
+- checkbox "Show Explanations" [checked]
+- text: Instant Feedback
+- checkbox "Instant Feedback" [checked]
+- text: Randomize Questions
+- checkbox "Randomize Questions" [checked]
+- text: Randomize Options
+- checkbox "Randomize Options"
+- text: "Filter:"
+- combobox "Filter:":
+  - option "All" [selected]
+  - option "Incorrect"
+  - option "Unseen"
+  - option "By Difficulty"
+  - option "By Tag"
+- button "Start Quiz" [disabled]
+- contentinfo:
+  - textbox "Search questions"
+```
