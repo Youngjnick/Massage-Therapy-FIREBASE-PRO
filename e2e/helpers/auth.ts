@@ -13,9 +13,8 @@ import { firebaseConfig } from '../../src/firebase/firebaseConfig';
 /**
  * Programmatic Firebase sign-in for Playwright E2E tests
  * @param {import('@playwright/test').Page} page
- * @param {{ token: string, config: any }} opts
  */
-export async function signInWithCustomToken(page, { token, config }) {
+export async function signInWithCustomToken(page) {
   const customToken = fs.readFileSync(path.resolve(__dirname, '../../test-custom-token.txt'), 'utf8');
   await page.goto('/');
   await page.addInitScript(({ config, token }) => {
