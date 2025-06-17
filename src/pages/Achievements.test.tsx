@@ -22,9 +22,6 @@ jest.mock('../badges', () => ({
   ],
 }));
 
-// Mock BASE_URL
-jest.mock('../utils/getBaseUrl', () => ({ getBaseUrl: () => '/' }));
-
 // Mock Modal to just render children for simplicity
 jest.mock('../components/Modal', () => ({
   __esModule: true,

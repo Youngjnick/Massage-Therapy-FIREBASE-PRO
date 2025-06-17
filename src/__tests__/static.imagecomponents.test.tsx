@@ -3,9 +3,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import Profile from '../pages/Profile';
 import BadgeModal from '../components/Quiz/BadgeModal';
 
-// Mock getBaseUrl to always return '/'
-jest.mock('../utils/getBaseUrl', () => ({ getBaseUrl: () => '/' }));
-
 // Mock Modal for BadgeModal
 describe('Profile image rendering', () => {
   it('renders default avatar if no user photoURL', () => {

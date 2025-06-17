@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import AppHeader from './components/AppHeader';
 import NavBar from './components/NavBar';
 import Quiz from './pages/Quiz';
@@ -8,8 +8,17 @@ import Analytics from './pages/Analytics';
 import Profile from './pages/Profile';
 import AppFooter from './components/AppFooter';
 import './App.css';
-import { getBaseUrl } from './utils/getBaseUrl';
 import { useAnalytics } from './hooks/useAnalytics';
+
+// Debug component to log routing info
+function RouteDebug() {
+  const location = useLocation();
+  React.useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log('[DEBUG][Router] location.pathname:', location.pathname, 'basename:', import.meta.env.BASE_URL);
+  }, [location]);
+  return null;
+}
 
 const App: React.FC = () => {
   const { logEvent } = useAnalytics();
@@ -19,7 +28,8 @@ const App: React.FC = () => {
   }, [logEvent]);
 
   return (
-    <Router basename={getBaseUrl()}>
+    <Router basename={import.meta.env.BASE_URL}>
+      <RouteDebug />
       <AppHeader />
       <NavBar />
       <div className="main-content">
