@@ -333,6 +333,18 @@ const Quiz: React.FC = () => {
     return () => { if (unsubscribe) unsubscribe(); };
   }, [showResults]);
 
+  if (error) {
+    return (
+      <div className="quiz-container" data-testid="quiz-container">
+        <h1>Quiz</h1>
+        <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
+          {error}
+        </div>
+        <button onClick={() => window.location.reload()} style={{ marginTop: 16 }}>Retry</button>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div className="quiz-container" data-testid="quiz-container">
@@ -367,42 +379,14 @@ const Quiz: React.FC = () => {
     // Optionally reset selectedTopic, toggleState, etc. if needed
   };
 
-  if (error || (!loading && questions.length === 0)) {
-    return (
-      <div className="quiz-container" data-testid="quiz-container">
-        <h1>Quiz</h1>
-        <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
-          {error || 'Error: Failed to load questions. Could not load questions.'}
-        </div>
-        <button onClick={() => window.location.reload()} style={{ marginTop: 16 }}>Retry</button>
-        <button style={{ marginTop: 16, marginLeft: 8 }} aria-label="Start">Start</button>
-      </div>
-    );
-  }
-
-  if (showResults && error) {
-    return (
-      <div className="quiz-container" data-testid="quiz-container">
-        <h1>Quiz</h1>
-        <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-submit-error">
-          {error || 'Error: Failed to submit results. Could not submit your quiz results.'}
-        </div>
-        <QuizResultsScreen
-          isAllIncorrect={false}
-          onStartNewQuiz={resetQuiz}
-          topicStats={liveTopicStats || topicStats}
-          q={q}
-          userAnswers={userAnswers}
-          shuffledOptions={shuffledOptions}
-          activeQuestions={activeQuestions}
-        />
-      </div>
-    );
-  }
-
   return (
     <div className="quiz-container" data-testid="quiz-container">
       <h1>Quiz</h1>
+      {error && (
+        <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
+          {error}
+        </div>
+      )}
       {warning && (
         <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-warning">
           {warning}
@@ -478,11 +462,6 @@ const Quiz: React.FC = () => {
           toggleState={toggleState}
           setToggleState={setToggleState}
         />
-      )}
-      {showResults && error && (
-        <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-submit-error">
-          {error || 'Error: Failed to submit results. Could not submit your quiz results.'}
-        </div>
       )}
       {showResults && (
         <QuizResultsScreen
