@@ -123,14 +123,13 @@ export default [
   },
   {
     ignores: [
+      '.vite/',
       'dist/',
-      'dist/assets/',
+      'dataconnect-generated/',
+      'node_modules/',
       'playwright.config.ts',
       'vite.config.ts',
       'e2e/tsconfig.json',
-      'dataconnect-generated/**',
-      '.vite/**',
-      'node_modules/**',
       'src/__tests__/static.badgeimages-dist.test.ts',
       'src/__tests__/static.badgeimages-public.test.ts',
     ],
@@ -139,11 +138,11 @@ export default [
     files: ['*.js'],
     languageOptions: {
       globals: {
-        __dirname: 'readonly',
         console: 'readonly',
         process: 'readonly',
         module: 'readonly',
         require: 'readonly',
+        __dirname: 'readonly',
       },
     },
   },
@@ -211,5 +210,23 @@ export default [
       'src/__tests__/Analytics.integration.test.tsx',
       'src/__tests__/QuizResultsLiveStats.integration.test.tsx'
     ],
+  },
+  {
+    files: ['tests/**/*.js', '**/*.test.js'],
+    languageOptions: {
+      globals: {
+        describe: true,
+        it: true,
+        expect: true,
+        beforeAll: true,
+        beforeEach: true,
+        afterAll: true,
+        jest: true,
+        test: true,
+        __dirname: 'readonly',
+        require: 'readonly',
+        module: 'readonly',
+      },
+    },
   },
 ];

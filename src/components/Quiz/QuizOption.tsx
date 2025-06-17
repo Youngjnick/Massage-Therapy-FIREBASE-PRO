@@ -60,13 +60,17 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
     }
   }, [uniqueInputId]);
 
+  // Use a fallback ref if inputRef is not provided
+  const fallbackRef = React.useRef<HTMLInputElement>(null);
+  const resolvedInputRef = inputRef || fallbackRef;
+
   React.useEffect(() => {
     // Focus the input if autoFocus is true and not disabled
-    if (autoFocus && !disabled && inputRef && typeof inputRef !== 'function') {
-      const ref = (inputRef as React.RefObject<HTMLInputElement>);
+    if (autoFocus && !disabled && resolvedInputRef && typeof resolvedInputRef !== 'function') {
+      const ref = resolvedInputRef as React.RefObject<HTMLInputElement>;
       if (ref.current) ref.current.focus();
     }
-  }, [autoFocus, disabled, inputRef]);
+  }, [autoFocus, disabled, resolvedInputRef]);
 
   // Track which keys have submitted in this focus session
   const submittedKeysRef = React.useRef<{ [key: string]: boolean }>({});
@@ -97,32 +101,29 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
     Promise.resolve().then(() => { radios[nextIdx]?.focus(); });
   };
 
-  // Use a fallback ref if inputRef is not provided
-  const fallbackRef = React.useRef<HTMLInputElement>(null);
-  const resolvedInputRef = inputRef || fallbackRef;
-
   // Helper to get the input element from ref (handles function or object ref)
   const getInputEl = () => {
     if (typeof resolvedInputRef === 'function') return null;
     return resolvedInputRef?.current || null;
   };
 
-  // Always set tabIndex=0 for the first enabled option, else -1
-  const tabIndex = isFirst && !disabled ? 0 : selected ? 0 : -1;
+  // Determine tabIndex: if selected, 0; if not selected and isFirst, 0; else -1
+  const tabIndex = selected || (isFirst && !disabled) ? 0 : -1;
 
-  // Robustly focus the first option after quiz start/reset
+  // Auto-focus the first visible option if none are selected (for first question)
   React.useEffect(() => {
     if (isFirst && !selected && !disabled) {
+      // Only focus if no other radio in the group is selected or focused
       const el = getInputEl();
       if (!el) return;
-      // Only focus if no other radio in the group is selected or focused
+      // Find all radios in the same group (by name)
       const groupRadios = name
         ? Array.from(document.querySelectorAll(`input[type='radio'][name='${name}']`))
         : [el];
       const anySelected = groupRadios.some(r => (r as HTMLInputElement).checked);
       const anyFocused = groupRadios.some(r => r === document.activeElement);
       if (!anySelected && !anyFocused) {
-        window.requestAnimationFrame(() => { el.focus(); }); // Use window.rAF for robust focus after mount
+        Promise.resolve().then(() => { el.focus(); }); // Robust focus after mount
       }
     }
   }, [isFirst, selected, disabled, name]);

@@ -18,6 +18,7 @@ import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
 import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
 import { useQuizData } from '../hooks/useQuizData';
 import { updateQuizStatsOnFinish, updateQuizStatsOnAnswer } from '../services/quizStatsService';
+import Spinner from '../components/common/Spinner';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -52,6 +53,8 @@ const Quiz: React.FC = () => {
   } = useQuizState();
   const [reviewMode] = useState(false);
   const [liveTopicStats, setLiveTopicStats] = useState<{ [topic: string]: { correct: number; total: number } } | null>(null);
+  const [warning, setWarning] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   // Use modularized data hook
   const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
@@ -95,7 +98,10 @@ const Quiz: React.FC = () => {
         const topics = Array.from(new Set(qs.map((q: any) => q.topic || 'Other')));
         if (!selectedTopic && topics.length > 0) setSelectedTopic(topics[0]);
       })
-      .catch(() => console.log('Failed to load questions'))
+      .catch(() => {
+        setWarning('Error: Failed to load questions. Could not load questions.');
+        setError('Error: Failed to load questions. Could not load questions.');
+      })
       .finally(() => setLoading(false));
 
     // Load bookmarks from Firebase on start (replace 'userId' with real user id)
@@ -212,13 +218,19 @@ const Quiz: React.FC = () => {
   // --- Firestore analytics update at quiz finish ---
   useEffect(() => {
     if (!showResults) return;
-    updateQuizStatsOnFinish({
-      userAnswers,
-      shuffledQuestions,
-      shuffledOptions,
-      started,
-      quizQuestions
-    });
+    (async () => {
+      try {
+        await updateQuizStatsOnFinish({
+          userAnswers,
+          shuffledQuestions,
+          shuffledOptions,
+          started,
+          quizQuestions
+        });
+      } catch {
+        setError('Error: Failed to submit results. Could not submit your quiz results.');
+      }
+    })();
   }, [showResults]);
 
   // --- Firestore analytics update on every answer (except quiz finish) ---
@@ -321,7 +333,29 @@ const Quiz: React.FC = () => {
     return () => { if (unsubscribe) unsubscribe(); };
   }, [showResults]);
 
-  if (loading) return null;
+  if (error) {
+    return (
+      <div className="quiz-container" data-testid="quiz-container">
+        <h1>Quiz</h1>
+        <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
+          {error}
+        </div>
+        <button onClick={() => window.location.reload()} style={{ marginTop: 16 }}>Retry</button>
+      </div>
+    );
+  }
+
+  if (loading) {
+    return (
+      <div className="quiz-container" data-testid="quiz-container">
+        <h1>Quiz</h1>
+        <div style={{ color: '#2563eb', fontWeight: 600, marginBottom: 12, display: 'flex', alignItems: 'center' }} data-testid="quiz-loading">
+          <Spinner size={32} />
+          Loading...
+        </div>
+      </div>
+    );
+  }
 
   // Compute answered array for QuizStepper
   const answeredArray = activeQuestions.map((_, i) => userAnswers[i] !== undefined);
@@ -330,9 +364,34 @@ const Quiz: React.FC = () => {
   const handleSetFilter = (val: string) => setFilter(val as any);
   const handleSetSort = (val: string) => setSort(val);
 
+  // Add a function to reset all quiz state and show the start form
+  const resetQuiz = () => {
+    setStarted(false);
+    setShowResults(false);
+    setCurrent(0);
+    setUserAnswers([]);
+    setShuffledQuestions([]);
+    setShuffledOptions({});
+    setFilter('all');
+    setFilterValue('');
+    setDesiredQuizLength(10);
+    setLiveTopicStats(null);
+    // Optionally reset selectedTopic, toggleState, etc. if needed
+  };
+
   return (
-    <div className="quiz-container">
+    <div className="quiz-container" data-testid="quiz-container">
       <h1>Quiz</h1>
+      {error && (
+        <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
+          {error}
+        </div>
+      )}
+      {warning && (
+        <div style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-warning">
+          {warning}
+        </div>
+      )}
       {started && !showResults && (
         <>
           <QuizProgressBar progress={progress} />
@@ -357,14 +416,29 @@ const Quiz: React.FC = () => {
             showInstantFeedback={toggleState.instantFeedback}
             onPrev={prev}
             onNext={() => {
-              // Only advance if answered
               if (userAnswers[current] !== undefined && current < totalQuestions - 1) {
                 setCurrent(current + 1);
               }
             }}
-            onFinish={() => {
-              // Show results with whatever questions have been answered so far
-              setShowResults(true);
+            onFinish={async () => {
+              // Check for unanswered questions
+              if (userAnswers.some(a => a === undefined)) {
+                setWarning('Please answer all questions before finishing the quiz.');
+                return;
+              }
+              try {
+                await updateQuizStatsOnFinish({
+                  userAnswers,
+                  shuffledQuestions,
+                  shuffledOptions,
+                  started,
+                  quizQuestions
+                });
+                setShowResults(true);
+              } catch {
+                setError('Error: Failed to submit results. Could not submit your quiz results.');
+                setShowResults(true);
+              }
             }}
             total={totalQuestions}
           />
@@ -392,7 +466,7 @@ const Quiz: React.FC = () => {
       {showResults && (
         <QuizResultsScreen
           isAllIncorrect={false}
-          onStartNewQuiz={startQuiz}
+          onStartNewQuiz={resetQuiz}
           topicStats={liveTopicStats || topicStats}
           q={q}
           userAnswers={userAnswers}
