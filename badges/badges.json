@@ -14,5 +14,21 @@
     "criteria": "accuracy_100",
     "image": "accuracy_100.png",
     "awarded": false
+  },
+  {
+    "id": "test_fallback",
+    "name": "Test Fallback",
+    "description": "Test fallback image",
+    "criteria": "does_not_exist",
+    "image": "does_not_exist.png",
+    "awarded": true
+  },
+  {
+    "id": "badge_test",
+    "name": "Test Badge",
+    "description": "Test badge image exists",
+    "criteria": "badge_test",
+    "image": "badge_test.png",
+    "awarded": true
   }
 ]
