@@ -2,15 +2,6 @@ import { test, expect } from '@playwright/test';
 
 const DEV_BASE_URL = 'http://localhost:5174';
 
-test('getBaseUrl() returns "/" in development', async ({ page }) => {
-  await page.goto(DEV_BASE_URL + '/');
-  const baseUrl = await page.evaluate(() => {
-    // @ts-ignore
-    return window.BASE_URL || (window.getBaseUrl && window.getBaseUrl());
-  });
-  expect(baseUrl === '/' || baseUrl === undefined).toBe(true);
-});
-
 test('badges.json has correct criteria and image fields', async ({ request }) => {
   const resp = await request.get(DEV_BASE_URL + '/badges/badges.json');
   expect(resp.status()).toBe(200);

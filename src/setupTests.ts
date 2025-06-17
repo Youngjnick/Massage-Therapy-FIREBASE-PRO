@@ -27,4 +27,5 @@ if (typeof global.fetch === 'undefined') {
 // Set IS_REACT_ACT_ENVIRONMENT for React 18+ act() warnings in tests
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
 
-// No fetch polyfill needed for Node.js v18+ (global fetch is available)
+// Set process.env.BASE_URL for Jest (used by babel-plugin-transform-import-meta)
+process.env.BASE_URL = '/';

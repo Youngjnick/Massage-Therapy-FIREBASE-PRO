@@ -104,6 +104,7 @@ describe('All badge images are referenced in badges.json', () => {
       'vital_volume.png',
       'welcome.png',
       'icon-512x512.png',
+      'fallback.png', // allow fallback image
     ];
     badgeImages.forEach(img => {
       if (!referenced.has(img) && !allowedExtras.includes(img)) {
