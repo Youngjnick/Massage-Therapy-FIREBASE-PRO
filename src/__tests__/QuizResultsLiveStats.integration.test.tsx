@@ -180,6 +180,10 @@ describe('QuizResultsScreen Firestore live stats', () => {
         }
       }
     }
+    // Wait for the quiz start form and start the quiz again
+    await screen.findByTestId('quiz-start-form');
+    const startQuizBtn2 = await screen.findByRole('button', { name: /start quiz/i });
+    await userEvent.click(startQuizBtn2);
     // Wait for the first question card of the new quiz
     await screen.findByTestId('quiz-question-card');
   });

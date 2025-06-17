@@ -14,7 +14,7 @@ const BadgeModal: React.FC<BadgeModalProps> = ({ badge, open, onClose }) => {
   if (!badge) return null;
   return (
     <Modal open={open} onClose={onClose}>
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: 'center' }} data-testid="badge-modal">
         <img
           src={imgError ? `${getBaseUrl()}badges/badge_test.png` : `${getBaseUrl()}badges/${badge.id}.png`}
           alt={badge.name}
