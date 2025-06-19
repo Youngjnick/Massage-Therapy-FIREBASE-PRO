@@ -15,16 +15,8 @@
     "difficulty": "easy",
     "category": "Anatomy",
     "topic": "Hand Muscles",
-    "tags": [
-      "dorsal interossei",
-      "finger abduction",
-      "hand muscles"
-    ],
-    "keywords": [
-      "dorsal hand",
-      "abduction",
-      "interossei"
-    ],
+    "tags": ["dorsal interossei", "finger abduction", "hand muscles"],
+    "keywords": ["dorsal hand", "abduction", "interossei"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which muscle group is located on the dorsal aspect of the hand and abducts the fingers?",
@@ -40,7 +32,10 @@
       "B. Dorsal interossei",
       "C. Lumbricals",
       "D. Flexor digitorum profundus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_002",
@@ -58,15 +53,8 @@
     "difficulty": "moderate",
     "category": "Neurology",
     "topic": "Nerve Supply",
-    "tags": [
-      "ulnar nerve",
-      "hand innervation"
-    ],
-    "keywords": [
-      "dorsal interossei",
-      "ulnar nerve",
-      "motor control"
-    ],
+    "tags": ["ulnar nerve", "hand innervation"],
+    "keywords": ["dorsal interossei", "ulnar nerve", "motor control"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Clinical Neuroanatomy",
     "text": "The dorsal interossei are innervated by which nerve?",
@@ -82,17 +70,15 @@
       "B. Radial nerve",
       "C. Ulnar nerve",
       "D. Musculocutaneous nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_003",
     "question": "Which digit has two dorsal interossei muscles acting on it?",
-    "answers": [
-      "Thumb",
-      "Index finger",
-      "Middle finger",
-      "Little finger"
-    ],
+    "answers": ["Thumb", "Index finger", "Middle finger", "Little finger"],
     "correct": 2,
     "short_explanation": "The middle finger has two dorsal interossei for bidirectional abduction.",
     "long_explanation": "The middle finger can abduct in either direction and therefore has two dorsal interossei, one on each side, unlike other digits.",
@@ -100,32 +86,22 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Muscle Anatomy",
-    "tags": [
-      "middle finger",
-      "abduction",
-      "interossei"
-    ],
-    "keywords": [
-      "middle finger",
-      "bidirectional",
-      "dorsal muscle"
-    ],
+    "tags": ["middle finger", "abduction", "interossei"],
+    "keywords": ["middle finger", "bidirectional", "dorsal muscle"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray's Anatomy",
     "text": "Which digit has two dorsal interossei muscles acting on it?",
-    "options": [
-      "Thumb",
-      "Index finger",
-      "Middle finger",
-      "Little finger"
-    ],
+    "options": ["Thumb", "Index finger", "Middle finger", "Little finger"],
     "correctAnswer": "Middle finger",
     "abcd": [
       "A. Thumb",
       "B. Index finger",
       "C. Middle finger",
       "D. Little finger"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_004",
@@ -143,15 +119,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Muscle Attachments",
-    "tags": [
-      "muscle insertion",
-      "dorsal hand"
-    ],
-    "keywords": [
-      "proximal phalanx",
-      "extensor hood",
-      "interossei"
-    ],
+    "tags": ["muscle insertion", "dorsal hand"],
+    "keywords": ["proximal phalanx", "extensor hood", "interossei"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Atlas",
     "text": "Where do the dorsal interossei insert?",
@@ -167,7 +136,10 @@
       "B. Lateral sides of proximal phalanges",
       "C. Flexor retinaculum",
       "D. Palmar aponeurosis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_005",
@@ -185,15 +157,8 @@
     "difficulty": "moderate",
     "category": "Physiology",
     "topic": "Joint Movement",
-    "tags": [
-      "MCP flexion",
-      "extensor hood"
-    ],
-    "keywords": [
-      "flexion",
-      "hand coordination",
-      "interosseous muscles"
-    ],
+    "tags": ["MCP flexion", "extensor hood"],
+    "keywords": ["flexion", "hand coordination", "interosseous muscles"],
     "mblex_category": "Kinesiology",
     "source_reference": "Orthopedic Physical Assessment, Magee",
     "text": "The dorsal interossei assist in which joint movement?",
@@ -209,7 +174,10 @@
       "B. MCP joint flexion",
       "C. IP joint flexion",
       "D. Thumb opposition"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_006",
@@ -227,15 +195,8 @@
     "difficulty": "hard",
     "category": "Vascular",
     "topic": "Blood Supply",
-    "tags": [
-      "dorsal metacarpal artery",
-      "vascular anatomy"
-    ],
-    "keywords": [
-      "dorsal hand",
-      "arterial supply",
-      "interossei"
-    ],
+    "tags": ["dorsal metacarpal artery", "vascular anatomy"],
+    "keywords": ["dorsal hand", "arterial supply", "interossei"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Atlas of Human Anatomy, Netter",
     "text": "Which vascular structure supplies the dorsal interossei?",
@@ -251,7 +212,10 @@
       "B. Ulnar artery",
       "C. Deep palmar arch",
       "D. Dorsal metacarpal arteries"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_007",
@@ -269,15 +233,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Wrist & Hand",
-    "tags": [
-      "APL",
-      "thumb abduction"
-    ],
-    "keywords": [
-      "APL",
-      "radial deviation",
-      "thumb"
-    ],
+    "tags": ["APL", "thumb abduction"],
+    "keywords": ["APL", "radial deviation", "thumb"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Essentials of Musculoskeletal Care",
     "text": "Which dorsal muscle does not directly control digit movement?",
@@ -293,17 +250,15 @@
       "B. Extensor digitorum",
       "C. Extensor pollicis longus",
       "D. Abductor pollicis longus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_008",
     "question": "What hand deformity may result from loss of dorsal interossei function?",
-    "answers": [
-      "Claw hand",
-      "Ape hand",
-      "Bishop's hand",
-      "Trigger finger"
-    ],
+    "answers": ["Claw hand", "Ape hand", "Bishop's hand", "Trigger finger"],
     "correct": 0,
     "short_explanation": "Loss of interossei function can contribute to claw hand deformity.",
     "long_explanation": "Without dorsal interossei to assist with MCP flexion and IP extension, the fingers hyperextend at the MCP and flex at the IP joints, resulting in claw hand.",
@@ -311,31 +266,22 @@
     "difficulty": "hard",
     "category": "Clinical Anatomy",
     "topic": "Deformities",
-    "tags": [
-      "claw hand",
-      "ulnar nerve palsy"
-    ],
-    "keywords": [
-      "interossei",
-      "hand deformity",
-      "nerve damage"
-    ],
+    "tags": ["claw hand", "ulnar nerve palsy"],
+    "keywords": ["interossei", "hand deformity", "nerve damage"],
     "mblex_category": "Pathology",
     "source_reference": "Orthopedic Physical Assessment",
     "text": "What hand deformity may result from loss of dorsal interossei function?",
-    "options": [
-      "Claw hand",
-      "Ape hand",
-      "Bishop's hand",
-      "Trigger finger"
-    ],
+    "options": ["Claw hand", "Ape hand", "Bishop's hand", "Trigger finger"],
     "correctAnswer": "Claw hand",
     "abcd": [
       "A. Claw hand",
       "B. Ape hand",
       "C. Bishop's hand",
       "D. Trigger finger"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_009",
@@ -353,14 +299,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Tissue Layers",
-    "tags": [
-      "dorsal aponeurosis",
-      "extensor hood"
-    ],
-    "keywords": [
-      "extensor expansion",
-      "interosseous covering"
-    ],
+    "tags": ["dorsal aponeurosis", "extensor hood"],
+    "keywords": ["extensor expansion", "interosseous covering"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray's Anatomy",
     "text": "Which of the following structures lies superficial to the dorsal interossei?",
@@ -376,7 +316,10 @@
       "B. Dorsal aponeurosis",
       "C. Flexor retinaculum",
       "D. Thenar eminence"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   },
   {
     "id": "dorsal_hand_010",
@@ -394,10 +337,7 @@
     "difficulty": "easy",
     "category": "Neurophysiology",
     "topic": "Functional Loss",
-    "tags": [
-      "finger abduction",
-      "paralysis"
-    ],
+    "tags": ["finger abduction", "paralysis"],
     "keywords": [
       "ulnar nerve injury",
       "dorsal interossei loss",
@@ -418,6 +358,9 @@
       "B. Finger flexion",
       "C. Finger abduction",
       "D. Wrist extension"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "dorsal_hand.json"
   }
 ]

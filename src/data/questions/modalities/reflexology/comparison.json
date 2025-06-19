@@ -22,11 +22,7 @@
     "synonyms": [],
     "variant": 1,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "comparison",
-      "shiatsu",
-      "reflexology"
-    ],
+    "tags": ["comparison", "shiatsu", "reflexology"],
     "text": "What is the primary difference between Shiatsu and reflexology?",
     "options": [
       "Reflexology focuses on the feet/hands, Shiatsu uses whole-body meridian pathways",
@@ -40,17 +36,15 @@
       "B. Both follow zone therapy only",
       "C. Shiatsu is for digestion only",
       "D. Reflexology works only on the ears"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 002",
     "question": "Which energy therapy works with poles of energy and includes structural alignment?",
-    "answers": [
-      "Polarity Therapy",
-      "Shiatsu",
-      "Reflexology",
-      "Craniosacral"
-    ],
+    "answers": ["Polarity Therapy", "Shiatsu", "Reflexology", "Craniosacral"],
     "correct": 0,
     "short_explanation": "Polarity Therapy balances energy via positive/negative poles.",
     "long_explanation": "It integrates Ayurvedic, TCM, and osteopathic ideas to align posture and balance energy fields.",
@@ -65,35 +59,24 @@
     "synonyms": [],
     "variant": 2,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "comparison",
-      "polarity",
-      "energy_fields"
-    ],
+    "tags": ["comparison", "polarity", "energy_fields"],
     "text": "Which energy therapy works with poles of energy and includes structural alignment?",
-    "options": [
-      "Polarity Therapy",
-      "Shiatsu",
-      "Reflexology",
-      "Craniosacral"
-    ],
+    "options": ["Polarity Therapy", "Shiatsu", "Reflexology", "Craniosacral"],
     "correctAnswer": "Polarity Therapy",
     "abcd": [
       "A. Polarity Therapy",
       "B. Shiatsu",
       "C. Reflexology",
       "D. Craniosacral"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 003",
     "question": "Which of the following uses mapped zones and specific pressure points without involving meridians?",
-    "answers": [
-      "Reflexology",
-      "Shiatsu",
-      "Polarity Therapy",
-      "Reiki"
-    ],
+    "answers": ["Reflexology", "Shiatsu", "Polarity Therapy", "Reiki"],
     "correct": 0,
     "short_explanation": "Reflexology uses foot/hand zones, not meridians.",
     "long_explanation": "It maps body parts to specific foot/hand regions, affecting organ systems via zone therapy.",
@@ -108,35 +91,19 @@
     "synonyms": [],
     "variant": 3,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "reflexology",
-      "zone_therapy",
-      "non_meridian"
-    ],
+    "tags": ["reflexology", "zone_therapy", "non_meridian"],
     "text": "Which of the following uses mapped zones and specific pressure points without involving meridians?",
-    "options": [
-      "Reflexology",
-      "Shiatsu",
-      "Polarity Therapy",
-      "Reiki"
-    ],
+    "options": ["Reflexology", "Shiatsu", "Polarity Therapy", "Reiki"],
     "correctAnswer": "Reflexology",
-    "abcd": [
-      "A. Reflexology",
-      "B. Shiatsu",
-      "C. Polarity Therapy",
-      "D. Reiki"
-    ]
+    "abcd": ["A. Reflexology", "B. Shiatsu", "C. Polarity Therapy", "D. Reiki"],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 004",
     "question": "Which technique is most rooted in Traditional Chinese Medicine principles?",
-    "answers": [
-      "Shiatsu",
-      "Reflexology",
-      "Polarity Therapy",
-      "Craniosacral"
-    ],
+    "answers": ["Shiatsu", "Reflexology", "Polarity Therapy", "Craniosacral"],
     "correct": 0,
     "short_explanation": "Shiatsu applies acupressure to balance meridian energy.",
     "long_explanation": "Based on TCM, Shiatsu uses meridian theory and pressure points to restore qi balance and harmony.",
@@ -151,25 +118,19 @@
     "synonyms": [],
     "variant": 4,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "shiatsu",
-      "TCM",
-      "meridian_work"
-    ],
+    "tags": ["shiatsu", "TCM", "meridian_work"],
     "text": "Which technique is most rooted in Traditional Chinese Medicine principles?",
-    "options": [
-      "Shiatsu",
-      "Reflexology",
-      "Polarity Therapy",
-      "Craniosacral"
-    ],
+    "options": ["Shiatsu", "Reflexology", "Polarity Therapy", "Craniosacral"],
     "correctAnswer": "Shiatsu",
     "abcd": [
       "A. Shiatsu",
       "B. Reflexology",
       "C. Polarity Therapy",
       "D. Craniosacral"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 005",
@@ -194,11 +155,7 @@
     "synonyms": [],
     "variant": 5,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "polarity",
-      "chakra_balancing",
-      "energy_vs_zone"
-    ],
+    "tags": ["polarity", "chakra_balancing", "energy_vs_zone"],
     "text": "How does Polarity Therapy differ from reflexology?",
     "options": [
       "It integrates energy balancing across chakras and body polarities",
@@ -212,7 +169,10 @@
       "B. It uses reflex maps only",
       "C. It is purely structural",
       "D. It only treats digestion"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 006",
@@ -237,11 +197,7 @@
     "synonyms": [],
     "variant": 6,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "craniosacral",
-      "rhythmic_therapy",
-      "nervous_system"
-    ],
+    "tags": ["craniosacral", "rhythmic_therapy", "nervous_system"],
     "text": "What technique relies on intuitive listening and cranium-sacrum rhythm sensing?",
     "options": [
       "Craniosacral therapy",
@@ -255,17 +211,15 @@
       "B. Shiatsu",
       "C. Rolfing",
       "D. Polarity Therapy"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 007",
     "question": "Which technique is most focused on posture and fascial patterns over multiple sessions?",
-    "answers": [
-      "Rolfing",
-      "Shiatsu",
-      "Reflexology",
-      "Reiki"
-    ],
+    "answers": ["Rolfing", "Shiatsu", "Reflexology", "Reiki"],
     "correct": 0,
     "short_explanation": "Rolfing aligns body structure via fascia manipulation.",
     "long_explanation": "Over 10 sessions, Rolfing frees connective tissue restrictions and reeducates posture and movement.",
@@ -280,35 +234,19 @@
     "synonyms": [],
     "variant": 7,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "rolfing",
-      "fascial_release",
-      "posture"
-    ],
+    "tags": ["rolfing", "fascial_release", "posture"],
     "text": "Which technique is most focused on posture and fascial patterns over multiple sessions?",
-    "options": [
-      "Rolfing",
-      "Shiatsu",
-      "Reflexology",
-      "Reiki"
-    ],
+    "options": ["Rolfing", "Shiatsu", "Reflexology", "Reiki"],
     "correctAnswer": "Rolfing",
-    "abcd": [
-      "A. Rolfing",
-      "B. Shiatsu",
-      "C. Reflexology",
-      "D. Reiki"
-    ]
+    "abcd": ["A. Rolfing", "B. Shiatsu", "C. Reflexology", "D. Reiki"],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 008",
     "question": "Which therapy combines rhythmic movement and 'mentastics' to reeducate neuromuscular patterns?",
-    "answers": [
-      "Trager Method",
-      "Shiatsu",
-      "Craniosacral",
-      "Reflexology"
-    ],
+    "answers": ["Trager Method", "Shiatsu", "Craniosacral", "Reflexology"],
     "correct": 0,
     "short_explanation": "Trager uses gentle rocking to release tension.",
     "long_explanation": "It includes mindful movement (mentastics) and touch to retrain holding patterns.",
@@ -323,25 +261,19 @@
     "synonyms": [],
     "variant": 8,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "trager",
-      "mentastics",
-      "neuro_reeducation"
-    ],
+    "tags": ["trager", "mentastics", "neuro_reeducation"],
     "text": "Which therapy combines rhythmic movement and 'mentastics' to reeducate neuromuscular patterns?",
-    "options": [
-      "Trager Method",
-      "Shiatsu",
-      "Craniosacral",
-      "Reflexology"
-    ],
+    "options": ["Trager Method", "Shiatsu", "Craniosacral", "Reflexology"],
     "correctAnswer": "Trager Method",
     "abcd": [
       "A. Trager Method",
       "B. Shiatsu",
       "C. Craniosacral",
       "D. Reflexology"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 009",
@@ -366,11 +298,7 @@
     "synonyms": [],
     "variant": 9,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "shiatsu",
-      "reiki",
-      "touch_vs_energy"
-    ],
+    "tags": ["shiatsu", "reiki", "touch_vs_energy"],
     "text": "What differentiates Shiatsu from Reiki in technique?",
     "options": [
       "Shiatsu uses physical pressure; Reiki uses energy channeling with little/no touch",
@@ -384,7 +312,10 @@
       "B. Shiatsu is hands-off",
       "C. Reiki is more anatomical",
       "D. Reiki uses foot zones"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   },
   {
     "id": "Reflexology Comparison 010",
@@ -409,11 +340,7 @@
     "synonyms": [],
     "variant": 10,
     "unit": "../../../src/data/questions/comparisons/energy_reflexology_modality",
-    "tags": [
-      "reflexology",
-      "acupressure",
-      "mapped_pressure"
-    ],
+    "tags": ["reflexology", "acupressure", "mapped_pressure"],
     "text": "What is a key similarity between Reflexology and Acupressure?",
     "options": [
       "Both apply pressure to specific mapped points",
@@ -427,6 +354,9 @@
       "B. Both use needles",
       "C. Both are from Ayurveda",
       "D. Both are for facial treatments"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "comparison.json"
   }
 ]

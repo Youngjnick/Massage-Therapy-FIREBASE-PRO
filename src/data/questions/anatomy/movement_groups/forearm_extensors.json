@@ -65,7 +65,10 @@
       "B. Extensor carpi radialis longus",
       "C. Extensor digitorum",
       "D. Extensor carpi ulnaris"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 002",
@@ -127,7 +130,10 @@
       "B. Extend the fingers",
       "C. Abduct the thumb",
       "D. Oppose the thumb"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 003",
@@ -187,7 +193,10 @@
       "B. Extensor digiti minimi",
       "C. Extensor carpi radialis brevis",
       "D. Extensor indicis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 004",
@@ -257,7 +266,10 @@
       "B. Radial nerve",
       "C. Ulnar nerve",
       "D. Musculocutaneous nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 005",
@@ -325,7 +337,10 @@
       "B. Extensor pollicis longus",
       "C. Extensor carpi ulnaris",
       "D. Extensor digitorum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 006",
@@ -347,12 +362,8 @@
     "topic": "anatomy",
     "category": "Anatomy",
     "subcategory": "Upper Limb",
-    "tags": [
-      "anatomy_muscles"
-    ],
-    "keywords": [
-      "anatomy_muscles"
-    ],
+    "tags": ["anatomy_muscles"],
+    "keywords": ["anatomy_muscles"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 161",
     "stats": {
@@ -379,7 +390,10 @@
       "B. Extensor digiti minimi",
       "C. Extensor pollicis longus",
       "D. Extensor carpi radialis longus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 007",
@@ -443,7 +457,10 @@
       "B. Extensor pollicis brevis",
       "C. Extensor pollicis longus",
       "D. Extensor digitorum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 008",
@@ -465,16 +482,8 @@
     "topic": "anatomy",
     "category": "Anatomy",
     "subcategory": "Upper Limb",
-    "tags": [
-      "anatomy_muscles",
-      "concept_assists",
-      "concept_assisted"
-    ],
-    "keywords": [
-      "anatomy_muscles",
-      "concept_assists",
-      "concept_assisted"
-    ],
+    "tags": ["anatomy_muscles", "concept_assists", "concept_assisted"],
+    "keywords": ["anatomy_muscles", "concept_assists", "concept_assisted"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 160",
     "stats": {
@@ -501,17 +510,15 @@
       "B. Abducting wrist",
       "C. Extending pinky",
       "D. Opposing thumb"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 009",
     "question": "Which two muscles form the lateral boundary of the anatomical snuffbox?",
-    "answers": [
-      "EPL and EDM",
-      "EPB and APL",
-      "ED and ECU",
-      "FCR and FDS"
-    ],
+    "answers": ["EPL and EDM", "EPB and APL", "ED and ECU", "FCR and FDS"],
     "correct": 1,
     "distractors": [],
     "short_explanation": "EPB and APL form the lateral snuffbox wall.",
@@ -551,19 +558,17 @@
     "unit": "../../../src/data/questions/anatomy/movement groups/forearm_extensors",
     "img": "anatomical_snuffbox.png",
     "text": "Which two muscles form the lateral boundary of the anatomical snuffbox?",
-    "options": [
-      "EPL and EDM",
-      "EPB and APL",
-      "ED and ECU",
-      "FCR and FDS"
-    ],
+    "options": ["EPL and EDM", "EPB and APL", "ED and ECU", "FCR and FDS"],
     "correctAnswer": "EPB and APL",
     "abcd": [
       "A. EPL and EDM",
       "B. EPB and APL",
       "C. ED and ECU",
       "D. FCR and FDS"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   },
   {
     "id": "Forearm Extensors 010",
@@ -629,6 +634,9 @@
       "B. Extensor digitorum",
       "C. Extensor carpi radialis brevis",
       "D. Extensor pollicis brevis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "forearm_extensors.json"
   }
 ]

@@ -51,10 +51,7 @@
     "created_at": "2025-05-24T14:34:08.079Z",
     "updated_at": "2025-05-24T14:54:13.423Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": [
-      "main dorsiflexor",
-      "TA"
-    ],
+    "synonyms": ["main dorsiflexor", "TA"],
     "text": "Which muscle is the primary dorsiflexor of the ankle?",
     "options": [
       "Gastrocnemius",
@@ -68,7 +65,10 @@
       "B. Peroneus longus",
       "C. Tibialis anterior",
       "D. Flexor digitorum longus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "ankle_dorsiflexors.json"
   },
   {
     "id": "Ankle Dorsiflexor 002",
@@ -128,10 +128,7 @@
     "created_at": "2025-05-24T14:34:08.079Z",
     "updated_at": "2025-05-24T14:54:13.423Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": [
-      "EHL",
-      "toe lifter"
-    ],
+    "synonyms": ["EHL", "toe lifter"],
     "text": "Which muscle dorsiflexes the foot and also extends the great toe?",
     "options": [
       "Extensor digitorum longus",
@@ -145,7 +142,10 @@
       "B. Tibialis posterior",
       "C. Extensor hallucis longus",
       "D. Peroneus brevis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "ankle_dorsiflexors.json"
   },
   {
     "id": "Ankle Dorsiflexor 003",
@@ -199,10 +199,7 @@
     "created_at": "2025-05-24T14:34:08.079Z",
     "updated_at": "2025-05-24T14:54:13.423Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": [
-      "EDL",
-      "toe lifter"
-    ],
+    "synonyms": ["EDL", "toe lifter"],
     "text": "Which anterior compartment muscle helps dorsiflex the ankle and extend toes 2–5?",
     "options": [
       "Flexor digitorum longus",
@@ -216,7 +213,10 @@
       "B. Extensor digitorum longus",
       "C. Tibialis posterior",
       "D. Peroneus longus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "ankle_dorsiflexors.json"
   },
   {
     "id": "Ankle Dorsiflexor 004",
@@ -238,11 +238,7 @@
     "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Ankle Dorsiflexors",
-    "tags": [
-      "anatomy_nerve",
-      "muscle_tibialis_anterior",
-      "nerve_tibial_nerve"
-    ],
+    "tags": ["anatomy_nerve", "muscle_tibialis_anterior", "nerve_tibial_nerve"],
     "keywords": [
       "anatomy_nerve",
       "muscle_tibialis_anterior",
@@ -260,9 +256,7 @@
     "created_at": "2025-05-24T14:34:08.079Z",
     "updated_at": "2025-05-24T14:54:13.423Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": [
-      "dorsiflexor innervation"
-    ],
+    "synonyms": ["dorsiflexor innervation"],
     "text": "Which nerve innervates the ankle dorsiflexors?",
     "options": [
       "Tibial nerve",
@@ -276,7 +270,10 @@
       "B. Superficial fibular nerve",
       "C. Deep fibular (peroneal) nerve",
       "D. Saphenous nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "ankle_dorsiflexors.json"
   },
   {
     "id": "Ankle Dorsiflexor 005",
@@ -332,9 +329,7 @@
     "created_at": "2025-05-24T14:34:08.079Z",
     "updated_at": "2025-05-24T14:54:13.423Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": [
-      "fibularis tertius"
-    ],
+    "synonyms": ["fibularis tertius"],
     "text": "Which muscle assists dorsiflexion and is sometimes considered part of the extensor group?",
     "options": [
       "Flexor hallucis longus",
@@ -348,6 +343,9 @@
       "B. Extensor digitorum brevis",
       "C. Peroneus tertius",
       "D. Tibialis posterior"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "ankle_dorsiflexors.json"
   }
 ]

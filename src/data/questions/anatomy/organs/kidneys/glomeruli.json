@@ -15,11 +15,7 @@
     "difficulty": "easy",
     "topic": "Renal System",
     "category": "Nephron Anatomy",
-    "tags": [
-      "glomerulus",
-      "filtration",
-      "kidney"
-    ],
+    "tags": ["glomerulus", "filtration", "kidney"],
     "keywords": [
       "glomerulus",
       "renal corpuscle",
@@ -41,7 +37,10 @@
       "B. Filtration of blood",
       "C. Secretion of ions",
       "D. Production of erythropoietin"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_002",
@@ -59,15 +58,8 @@
     "difficulty": "easy",
     "topic": "Nephron Structure",
     "category": "Kidney Histology",
-    "tags": [
-      "bowman's capsule",
-      "renal",
-      "nephron"
-    ],
-    "keywords": [
-      "renal corpuscle",
-      "filtration unit"
-    ],
+    "tags": ["bowman's capsule", "renal", "nephron"],
+    "keywords": ["renal corpuscle", "filtration unit"],
     "mblex_category": "Anatomy",
     "source_reference": "Martini – Fundamentals of Anatomy and Physiology",
     "text": "Which structure immediately surrounds the glomerulus?",
@@ -83,17 +75,15 @@
       "B. Proximal tubule",
       "C. Bowman's capsule",
       "D. Distal tubule"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_003",
     "question": "What type of capillaries make up the glomerulus?",
-    "answers": [
-      "Continuous",
-      "Fenestrated",
-      "Sinusoidal",
-      "Discontinuous"
-    ],
+    "answers": ["Continuous", "Fenestrated", "Sinusoidal", "Discontinuous"],
     "correct": 1,
     "short_explanation": "Glomeruli have fenestrated capillaries to support filtration.",
     "long_explanation": "Fenestrated capillaries in the glomerulus have pores that allow water and solutes to pass while blocking blood cells and large proteins. This structure is ideal for ultrafiltration.",
@@ -101,32 +91,22 @@
     "difficulty": "medium",
     "topic": "Histology",
     "category": "Capillary Types",
-    "tags": [
-      "fenestrated",
-      "capillary",
-      "glomerulus"
-    ],
-    "keywords": [
-      "pores",
-      "renal filtration",
-      "capillary types"
-    ],
+    "tags": ["fenestrated", "capillary", "glomerulus"],
+    "keywords": ["pores", "renal filtration", "capillary types"],
     "mblex_category": "Physiology",
     "source_reference": "Ross & Pawlina – Histology",
     "text": "What type of capillaries make up the glomerulus?",
-    "options": [
-      "Continuous",
-      "Fenestrated",
-      "Sinusoidal",
-      "Discontinuous"
-    ],
+    "options": ["Continuous", "Fenestrated", "Sinusoidal", "Discontinuous"],
     "correctAnswer": "Fenestrated",
     "abcd": [
       "A. Continuous",
       "B. Fenestrated",
       "C. Sinusoidal",
       "D. Discontinuous"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_004",
@@ -144,16 +124,8 @@
     "difficulty": "medium",
     "topic": "Kidney Histology",
     "category": "Filtration Cells",
-    "tags": [
-      "podocytes",
-      "glomerulus",
-      "filtration"
-    ],
-    "keywords": [
-      "foot processes",
-      "renal filter",
-      "nephron"
-    ],
+    "tags": ["podocytes", "glomerulus", "filtration"],
+    "keywords": ["foot processes", "renal filter", "nephron"],
     "mblex_category": "Anatomy",
     "source_reference": "Guyton & Hall – Textbook of Medical Physiology",
     "text": "What is the name of the cells that wrap around glomerular capillaries and assist in filtration?",
@@ -169,7 +141,10 @@
       "B. Podocytes",
       "C. Juxtaglomerular cells",
       "D. Mesangial cells"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_005",
@@ -187,15 +162,8 @@
     "difficulty": "hard",
     "topic": "Renal Physiology",
     "category": "Filtration Forces",
-    "tags": [
-      "hydrostatic",
-      "glomerulus",
-      "blood pressure"
-    ],
-    "keywords": [
-      "filtration pressure",
-      "glomerular filtration rate"
-    ],
+    "tags": ["hydrostatic", "glomerulus", "blood pressure"],
+    "keywords": ["filtration pressure", "glomerular filtration rate"],
     "mblex_category": "Physiology",
     "source_reference": "Saladin – Anatomy & Physiology",
     "text": "Which pressure primarily drives filtration across the glomerular membrane?",
@@ -211,7 +179,10 @@
       "B. Hydrostatic pressure",
       "C. Interstitial pressure",
       "D. Capillary oncotic pressure"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_006",
@@ -229,16 +200,8 @@
     "difficulty": "medium",
     "topic": "Filtration Rate",
     "category": "Renal Physiology",
-    "tags": [
-      "GFR",
-      "blood pressure",
-      "kidneys"
-    ],
-    "keywords": [
-      "filtration rate",
-      "renal perfusion",
-      "glomerular pressure"
-    ],
+    "tags": ["GFR", "blood pressure", "kidneys"],
+    "keywords": ["filtration rate", "renal perfusion", "glomerular pressure"],
     "mblex_category": "Physiology",
     "source_reference": "Clinically Oriented Anatomy – Moore",
     "text": "What happens to filtration rate if glomerular pressure drops significantly?",
@@ -254,17 +217,15 @@
       "B. It remains unchanged",
       "C. It decreases",
       "D. It becomes toxic"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_007",
     "question": "Which hormone constricts the efferent arteriole to maintain glomerular filtration pressure?",
-    "answers": [
-      "Aldosterone",
-      "ADH",
-      "Angiotensin II",
-      "ANP"
-    ],
+    "answers": ["Aldosterone", "ADH", "Angiotensin II", "ANP"],
     "correct": 2,
     "short_explanation": "Angiotensin II maintains filtration by constricting efferent arterioles.",
     "long_explanation": "By narrowing the efferent arteriole, angiotensin II increases pressure in the glomerulus, sustaining filtration during low blood volume or pressure.",
@@ -272,42 +233,22 @@
     "difficulty": "hard",
     "topic": "Hormonal Regulation",
     "category": "Renal Physiology",
-    "tags": [
-      "angiotensin",
-      "filtration",
-      "kidney"
-    ],
-    "keywords": [
-      "efferent arteriole",
-      "GFR control",
-      "renin-angiotensin"
-    ],
+    "tags": ["angiotensin", "filtration", "kidney"],
+    "keywords": ["efferent arteriole", "GFR control", "renin-angiotensin"],
     "mblex_category": "Physiology",
     "source_reference": "Guyton – Medical Physiology",
     "text": "Which hormone constricts the efferent arteriole to maintain glomerular filtration pressure?",
-    "options": [
-      "Aldosterone",
-      "ADH",
-      "Angiotensin II",
-      "ANP"
-    ],
+    "options": ["Aldosterone", "ADH", "Angiotensin II", "ANP"],
     "correctAnswer": "Angiotensin II",
-    "abcd": [
-      "A. Aldosterone",
-      "B. ADH",
-      "C. Angiotensin II",
-      "D. ANP"
-    ]
+    "abcd": ["A. Aldosterone", "B. ADH", "C. Angiotensin II", "D. ANP"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_008",
     "question": "Which condition may damage glomeruli and reduce filtration ability?",
-    "answers": [
-      "Diabetes mellitus",
-      "Asthma",
-      "Osteoarthritis",
-      "Psoriasis"
-    ],
+    "answers": ["Diabetes mellitus", "Asthma", "Osteoarthritis", "Psoriasis"],
     "correct": 0,
     "short_explanation": "Diabetes can damage glomerular capillaries.",
     "long_explanation": "Chronic high blood glucose damages the glomerular basement membrane, leading to proteinuria and nephropathy. This is a major cause of renal failure.",
@@ -315,32 +256,22 @@
     "difficulty": "medium",
     "topic": "Pathology",
     "category": "Renal Disease",
-    "tags": [
-      "diabetes",
-      "glomerulus",
-      "nephropathy"
-    ],
-    "keywords": [
-      "proteinuria",
-      "diabetic nephropathy",
-      "renal disease"
-    ],
+    "tags": ["diabetes", "glomerulus", "nephropathy"],
+    "keywords": ["proteinuria", "diabetic nephropathy", "renal disease"],
     "mblex_category": "Pathology",
     "source_reference": "Robbins – Pathologic Basis of Disease",
     "text": "Which condition may damage glomeruli and reduce filtration ability?",
-    "options": [
-      "Diabetes mellitus",
-      "Asthma",
-      "Osteoarthritis",
-      "Psoriasis"
-    ],
+    "options": ["Diabetes mellitus", "Asthma", "Osteoarthritis", "Psoriasis"],
     "correctAnswer": "Diabetes mellitus",
     "abcd": [
       "A. Diabetes mellitus",
       "B. Asthma",
       "C. Osteoarthritis",
       "D. Psoriasis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_009",
@@ -358,16 +289,8 @@
     "difficulty": "easy",
     "topic": "Vascular Anatomy",
     "category": "Kidney Circulation",
-    "tags": [
-      "efferent",
-      "glomerulus",
-      "arteriole"
-    ],
-    "keywords": [
-      "blood flow",
-      "renal vessel",
-      "glomerular loop"
-    ],
+    "tags": ["efferent", "glomerulus", "arteriole"],
+    "keywords": ["blood flow", "renal vessel", "glomerular loop"],
     "mblex_category": "Anatomy",
     "source_reference": "Gray’s Anatomy",
     "text": "Which structure carries blood away from the glomerulus?",
@@ -383,17 +306,15 @@
       "B. Peritubular capillaries",
       "C. Efferent arteriole",
       "D. Renal vein"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   },
   {
     "id": "glomeruli_010",
     "question": "Which component does NOT normally pass through the glomerular filtration barrier?",
-    "answers": [
-      "Sodium",
-      "Water",
-      "Glucose",
-      "Red blood cells"
-    ],
+    "answers": ["Sodium", "Water", "Glucose", "Red blood cells"],
     "correct": 3,
     "short_explanation": "RBCs are too large to pass through the filtration barrier.",
     "long_explanation": "The glomerular barrier allows water and small solutes like glucose and sodium to pass, but it blocks blood cells and most proteins to preserve blood composition.",
@@ -401,31 +322,16 @@
     "difficulty": "medium",
     "topic": "Filtration Selectivity",
     "category": "Renal Barrier",
-    "tags": [
-      "glomerular",
-      "filtration",
-      "urine"
-    ],
-    "keywords": [
-      "blood cells",
-      "glomerular damage",
-      "filtration membrane"
-    ],
+    "tags": ["glomerular", "filtration", "urine"],
+    "keywords": ["blood cells", "glomerular damage", "filtration membrane"],
     "mblex_category": "Pathology",
     "source_reference": "Tortora – Principles of Anatomy and Physiology",
     "text": "Which component does NOT normally pass through the glomerular filtration barrier?",
-    "options": [
-      "Sodium",
-      "Water",
-      "Glucose",
-      "Red blood cells"
-    ],
+    "options": ["Sodium", "Water", "Glucose", "Red blood cells"],
     "correctAnswer": "Red blood cells",
-    "abcd": [
-      "A. Sodium",
-      "B. Water",
-      "C. Glucose",
-      "D. Red blood cells"
-    ]
+    "abcd": ["A. Sodium", "B. Water", "C. Glucose", "D. Red blood cells"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/kidneys",
+    "filename": "glomeruli.json"
   }
 ]

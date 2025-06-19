@@ -15,16 +15,8 @@
     "topic": "amygdala",
     "category": "Emotion Processing",
     "difficulty": "basic",
-    "tags": [
-      "amygdala",
-      "fear",
-      "emotional brain"
-    ],
-    "keywords": [
-      "limbic system",
-      "emotional memory",
-      "fight-or-flight"
-    ],
+    "tags": ["amygdala", "fear", "emotional brain"],
+    "keywords": ["limbic system", "emotional memory", "fight-or-flight"],
     "source_reference": "Neuroscience: Exploring the Brain",
     "text": "What is the primary role of the amygdala in the brain?",
     "options": [
@@ -39,17 +31,15 @@
       "B. Visual perception",
       "C. Fear processing",
       "D. Language production"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_002",
     "question": "Which structure does the amygdala communicate with to activate the stress response?",
-    "answers": [
-      "Cerebellum",
-      "Medulla",
-      "Hypothalamus",
-      "Occipital lobe"
-    ],
+    "answers": ["Cerebellum", "Medulla", "Hypothalamus", "Occipital lobe"],
     "correct": 2,
     "short_explanation": "The amygdala activates the hypothalamus to initiate the HPA axis.",
     "long_explanation": "Through its connections to the hypothalamus, the amygdala activates the HPA axis, triggering cortisol release in response to fear.",
@@ -57,31 +47,21 @@
     "topic": "amygdala",
     "category": "Stress Physiology",
     "difficulty": "intermediate",
-    "tags": [
-      "HPA axis",
-      "hypothalamus",
-      "cortisol"
-    ],
-    "keywords": [
-      "amygdala stress",
-      "fear signaling",
-      "endocrine response"
-    ],
+    "tags": ["HPA axis", "hypothalamus", "cortisol"],
+    "keywords": ["amygdala stress", "fear signaling", "endocrine response"],
     "source_reference": "Principles of Neural Science",
     "text": "Which structure does the amygdala communicate with to activate the stress response?",
-    "options": [
-      "Cerebellum",
-      "Medulla",
-      "Hypothalamus",
-      "Occipital lobe"
-    ],
+    "options": ["Cerebellum", "Medulla", "Hypothalamus", "Occipital lobe"],
     "correctAnswer": "Hypothalamus",
     "abcd": [
       "A. Cerebellum",
       "B. Medulla",
       "C. Hypothalamus",
       "D. Occipital lobe"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_003",
@@ -99,16 +79,8 @@
     "topic": "amygdala",
     "category": "Neuroanatomy",
     "difficulty": "basic",
-    "tags": [
-      "limbic",
-      "emotion",
-      "amygdala"
-    ],
-    "keywords": [
-      "limbic system",
-      "emotion center",
-      "brain circuits"
-    ],
+    "tags": ["limbic", "emotion", "amygdala"],
+    "keywords": ["limbic system", "emotion center", "brain circuits"],
     "source_reference": "Gray’s Anatomy for Students",
     "text": "The amygdala is part of which larger brain system?",
     "options": [
@@ -123,17 +95,15 @@
       "B. Basal ganglia",
       "C. Limbic system",
       "D. Brainstem"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_004",
     "question": "Which emotion is most directly associated with the amygdala?",
-    "answers": [
-      "Gratitude",
-      "Fear",
-      "Happiness",
-      "Trust"
-    ],
+    "answers": ["Gratitude", "Fear", "Happiness", "Trust"],
     "correct": 1,
     "short_explanation": "Fear is primarily processed by the amygdala.",
     "long_explanation": "Neuroimaging studies show heightened amygdala activity during fear-based stimuli. It also stores fear-based emotional memories.",
@@ -141,31 +111,16 @@
     "topic": "amygdala",
     "category": "Emotion Processing",
     "difficulty": "basic",
-    "tags": [
-      "fear",
-      "PTSD",
-      "emotions"
-    ],
-    "keywords": [
-      "fear center",
-      "emotion circuits",
-      "trauma response"
-    ],
+    "tags": ["fear", "PTSD", "emotions"],
+    "keywords": ["fear center", "emotion circuits", "trauma response"],
     "source_reference": "DSM-5, Neurobiology of PTSD",
     "text": "Which emotion is most directly associated with the amygdala?",
-    "options": [
-      "Gratitude",
-      "Fear",
-      "Happiness",
-      "Trust"
-    ],
+    "options": ["Gratitude", "Fear", "Happiness", "Trust"],
     "correctAnswer": "Fear",
-    "abcd": [
-      "A. Gratitude",
-      "B. Fear",
-      "C. Happiness",
-      "D. Trust"
-    ]
+    "abcd": ["A. Gratitude", "B. Fear", "C. Happiness", "D. Trust"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_005",
@@ -183,16 +138,8 @@
     "topic": "amygdala",
     "category": "Neurobehavioral Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "amygdala lesion",
-      "fear response",
-      "neuropsychology"
-    ],
-    "keywords": [
-      "lesion behavior",
-      "fear blunting",
-      "brain injury"
-    ],
+    "tags": ["amygdala lesion", "fear response", "neuropsychology"],
+    "keywords": ["lesion behavior", "fear blunting", "brain injury"],
     "source_reference": "Case studies in Behavioral Neurology",
     "text": "What happens to fear response if the amygdala is damaged?",
     "options": [
@@ -207,7 +154,10 @@
       "B. No change",
       "C. Reduced fear response",
       "D. Improved learning"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_006",
@@ -225,16 +175,8 @@
     "topic": "amygdala",
     "category": "Memory Systems",
     "difficulty": "intermediate",
-    "tags": [
-      "emotional memory",
-      "hippocampus",
-      "trauma"
-    ],
-    "keywords": [
-      "memory storage",
-      "emotion encoding",
-      "amygdala-hippocampus"
-    ],
+    "tags": ["emotional memory", "hippocampus", "trauma"],
+    "keywords": ["memory storage", "emotion encoding", "amygdala-hippocampus"],
     "source_reference": "Cognitive Neuroscience by Gazzaniga",
     "text": "What type of memory is the amygdala most involved in?",
     "options": [
@@ -249,17 +191,15 @@
       "B. Semantic memory",
       "C. Emotional memory",
       "D. Episodic memory"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_007",
     "question": "Which neurotransmitter modulates amygdala-driven fear responses?",
-    "answers": [
-      "GABA",
-      "Acetylcholine",
-      "Dopamine",
-      "Serotonin"
-    ],
+    "answers": ["GABA", "Acetylcholine", "Dopamine", "Serotonin"],
     "correct": 0,
     "short_explanation": "GABA inhibits overactivation of the amygdala.",
     "long_explanation": "Inhibitory GABAergic interneurons modulate amygdala activity. Dysfunction in GABA signaling is linked to anxiety and panic disorders.",
@@ -267,11 +207,7 @@
     "topic": "amygdala",
     "category": "Neurochemistry",
     "difficulty": "advanced",
-    "tags": [
-      "GABA",
-      "anxiety",
-      "amygdala inhibition"
-    ],
+    "tags": ["GABA", "anxiety", "amygdala inhibition"],
     "keywords": [
       "GABA neurotransmitter",
       "fear modulation",
@@ -279,19 +215,12 @@
     ],
     "source_reference": "Neuropsychopharmacology: Textbook",
     "text": "Which neurotransmitter modulates amygdala-driven fear responses?",
-    "options": [
-      "GABA",
-      "Acetylcholine",
-      "Dopamine",
-      "Serotonin"
-    ],
+    "options": ["GABA", "Acetylcholine", "Dopamine", "Serotonin"],
     "correctAnswer": "GABA",
-    "abcd": [
-      "A. GABA",
-      "B. Acetylcholine",
-      "C. Dopamine",
-      "D. Serotonin"
-    ]
+    "abcd": ["A. GABA", "B. Acetylcholine", "C. Dopamine", "D. Serotonin"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_008",
@@ -309,11 +238,7 @@
     "topic": "amygdala",
     "category": "Psychotherapy & Trauma",
     "difficulty": "advanced",
-    "tags": [
-      "EMDR",
-      "PTSD",
-      "amygdala"
-    ],
+    "tags": ["EMDR", "PTSD", "amygdala"],
     "keywords": [
       "trauma healing",
       "emotional regulation",
@@ -333,7 +258,10 @@
       "B. EMDR",
       "C. Massage therapy",
       "D. Exposure to blue light"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_009",
@@ -351,16 +279,8 @@
     "topic": "amygdala",
     "category": "Autonomic Control",
     "difficulty": "intermediate",
-    "tags": [
-      "sympathetic activation",
-      "fight-or-flight",
-      "amygdala"
-    ],
-    "keywords": [
-      "ANS control",
-      "heart rate",
-      "autonomic arousal"
-    ],
+    "tags": ["sympathetic activation", "fight-or-flight", "amygdala"],
+    "keywords": ["ANS control", "heart rate", "autonomic arousal"],
     "source_reference": "Guyton & Hall Medical Physiology",
     "text": "How does the amygdala influence the autonomic nervous system?",
     "options": [
@@ -375,7 +295,10 @@
       "B. Suppresses respiration",
       "C. Activates sympathetic output",
       "D. Inhibits heart rate"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   },
   {
     "id": "Amygdala_010",
@@ -393,16 +316,8 @@
     "topic": "amygdala",
     "category": "Neurosensory Integration",
     "difficulty": "intermediate",
-    "tags": [
-      "thalamus",
-      "sensory input",
-      "amygdala"
-    ],
-    "keywords": [
-      "fear stimulus",
-      "limbic relay",
-      "emotional reflex"
-    ],
+    "tags": ["thalamus", "sensory input", "amygdala"],
+    "keywords": ["fear stimulus", "limbic relay", "emotional reflex"],
     "source_reference": "Fundamentals of Neuroscience",
     "text": "Which structure provides sensory input to the amygdala to help assess threats?",
     "options": [
@@ -417,6 +332,9 @@
       "B. Thalamus",
       "C. Corpus callosum",
       "D. Occipital cortex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "amygdala.json"
   }
 ]

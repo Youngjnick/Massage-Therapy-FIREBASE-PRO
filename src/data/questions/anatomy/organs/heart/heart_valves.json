@@ -15,11 +15,7 @@
     "topic": "Cardiovascular Anatomy",
     "category": "Heart Valves",
     "difficulty": "basic",
-    "tags": [
-      "mitral valve",
-      "left heart",
-      "valve anatomy"
-    ],
+    "tags": ["mitral valve", "left heart", "valve anatomy"],
     "keywords": [
       "bicuspid",
       "atrioventricular",
@@ -40,7 +36,10 @@
       "B. Pulmonary valve",
       "C. Mitral valve",
       "D. Aortic valve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_002",
@@ -58,16 +57,8 @@
     "topic": "Circulatory Anatomy",
     "category": "Heart Valves",
     "difficulty": "basic",
-    "tags": [
-      "tricuspid",
-      "right heart",
-      "atrioventricular valve"
-    ],
-    "keywords": [
-      "right atrium",
-      "valve function",
-      "cardiac flow"
-    ],
+    "tags": ["tricuspid", "right heart", "atrioventricular valve"],
+    "keywords": ["right atrium", "valve function", "cardiac flow"],
     "source_reference": "Gray’s Anatomy",
     "text": "What is the function of the tricuspid valve?",
     "options": [
@@ -82,7 +73,10 @@
       "B. Control blood flow to the lungs",
       "C. Separate the right atrium and right ventricle",
       "D. Control blood flow from heart to body"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_003",
@@ -100,16 +94,8 @@
     "topic": "Cardiovascular Function",
     "category": "Heart Valves",
     "difficulty": "intermediate",
-    "tags": [
-      "aortic valve",
-      "left ventricle",
-      "semilunar valve"
-    ],
-    "keywords": [
-      "valve closure",
-      "cardiac output",
-      "blood pressure"
-    ],
+    "tags": ["aortic valve", "left ventricle", "semilunar valve"],
+    "keywords": ["valve closure", "cardiac output", "blood pressure"],
     "source_reference": "Guyton and Hall Physiology",
     "text": "Which heart valve prevents backflow into the left ventricle?",
     "options": [
@@ -124,17 +110,15 @@
       "B. Pulmonary valve",
       "C. Aortic valve",
       "D. Tricuspid valve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_004",
     "question": "Which valve opens during right ventricular contraction?",
-    "answers": [
-      "Mitral",
-      "Pulmonary",
-      "Tricuspid",
-      "Aortic"
-    ],
+    "answers": ["Mitral", "Pulmonary", "Tricuspid", "Aortic"],
     "correct": 1,
     "short_explanation": "The pulmonary valve opens to allow blood flow to the lungs.",
     "long_explanation": "The pulmonary semilunar valve opens as the right ventricle contracts, pushing blood into the pulmonary artery and toward the lungs.",
@@ -142,41 +126,21 @@
     "topic": "Heart Function",
     "category": "Pulmonary Circulation",
     "difficulty": "intermediate",
-    "tags": [
-      "pulmonary valve",
-      "semilunar",
-      "right heart"
-    ],
-    "keywords": [
-      "ventricular systole",
-      "blood to lungs",
-      "semilunar valve"
-    ],
+    "tags": ["pulmonary valve", "semilunar", "right heart"],
+    "keywords": ["ventricular systole", "blood to lungs", "semilunar valve"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "Which valve opens during right ventricular contraction?",
-    "options": [
-      "Mitral",
-      "Pulmonary",
-      "Tricuspid",
-      "Aortic"
-    ],
+    "options": ["Mitral", "Pulmonary", "Tricuspid", "Aortic"],
     "correctAnswer": "Pulmonary",
-    "abcd": [
-      "A. Mitral",
-      "B. Pulmonary",
-      "C. Tricuspid",
-      "D. Aortic"
-    ]
+    "abcd": ["A. Mitral", "B. Pulmonary", "C. Tricuspid", "D. Aortic"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_005",
     "question": "How many cusps does the tricuspid valve have?",
-    "answers": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
+    "answers": ["2", "3", "4", "5"],
     "correct": 1,
     "short_explanation": "The tricuspid valve has three cusps.",
     "long_explanation": "The three leaflets of the tricuspid valve are anterior, posterior, and septal, enabling effective closure and blood flow regulation.",
@@ -184,41 +148,21 @@
     "topic": "Valve Morphology",
     "category": "Cardiac Structure",
     "difficulty": "basic",
-    "tags": [
-      "tricuspid valve",
-      "cusps",
-      "leaflets"
-    ],
-    "keywords": [
-      "right AV valve",
-      "three cusps",
-      "chambers"
-    ],
+    "tags": ["tricuspid valve", "cusps", "leaflets"],
+    "keywords": ["right AV valve", "three cusps", "chambers"],
     "source_reference": "Clinically Oriented Anatomy by Moore",
     "text": "How many cusps does the tricuspid valve have?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
+    "options": ["2", "3", "4", "5"],
     "correctAnswer": "3",
-    "abcd": [
-      "A. 2",
-      "B. 3",
-      "C. 4",
-      "D. 5"
-    ]
+    "abcd": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_006",
     "question": "What condition results from valve failure to close properly?",
-    "answers": [
-      "Stenosis",
-      "Regurgitation",
-      "Fibrillation",
-      "Tamponade"
-    ],
+    "answers": ["Stenosis", "Regurgitation", "Fibrillation", "Tamponade"],
     "correct": 1,
     "short_explanation": "Regurgitation occurs when valves do not close completely, allowing backflow.",
     "long_explanation": "Valve insufficiency or regurgitation may cause inefficient circulation, increased cardiac workload, and can be heard as a murmur.",
@@ -226,31 +170,21 @@
     "topic": "Cardiac Pathology",
     "category": "Valve Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "regurgitation",
-      "valve failure",
-      "murmur"
-    ],
-    "keywords": [
-      "valve disease",
-      "blood backflow",
-      "mitral insufficiency"
-    ],
+    "tags": ["regurgitation", "valve failure", "murmur"],
+    "keywords": ["valve disease", "blood backflow", "mitral insufficiency"],
     "source_reference": "Bates’ Physical Examination Guide",
     "text": "What condition results from valve failure to close properly?",
-    "options": [
-      "Stenosis",
-      "Regurgitation",
-      "Fibrillation",
-      "Tamponade"
-    ],
+    "options": ["Stenosis", "Regurgitation", "Fibrillation", "Tamponade"],
     "correctAnswer": "Regurgitation",
     "abcd": [
       "A. Stenosis",
       "B. Regurgitation",
       "C. Fibrillation",
       "D. Tamponade"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_007",
@@ -268,16 +202,8 @@
     "topic": "Valve Anatomy",
     "category": "Cardiac Microstructure",
     "difficulty": "intermediate",
-    "tags": [
-      "chordae tendineae",
-      "AV valves",
-      "papillary muscle"
-    ],
-    "keywords": [
-      "heart strings",
-      "valve support",
-      "valve mechanics"
-    ],
+    "tags": ["chordae tendineae", "AV valves", "papillary muscle"],
+    "keywords": ["heart strings", "valve support", "valve mechanics"],
     "source_reference": "Netter’s Atlas",
     "text": "What tissue anchors the AV valves to the ventricular wall?",
     "options": [
@@ -292,7 +218,10 @@
       "B. Purkinje fibers",
       "C. Papillary muscles",
       "D. Endocardium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_008",
@@ -310,16 +239,8 @@
     "topic": "Anatomical Terminology",
     "category": "Valves",
     "difficulty": "basic",
-    "tags": [
-      "semilunar",
-      "aortic valve",
-      "pulmonary valve"
-    ],
-    "keywords": [
-      "valve shape",
-      "arterial valves",
-      "cardiac anatomy"
-    ],
+    "tags": ["semilunar", "aortic valve", "pulmonary valve"],
+    "keywords": ["valve shape", "arterial valves", "cardiac anatomy"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which valves are considered semilunar valves?",
     "options": [
@@ -334,17 +255,15 @@
       "B. Aortic and pulmonary",
       "C. Tricuspid and pulmonary",
       "D. Aortic and mitral"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_009",
     "question": "Which valve is most often affected in rheumatic fever?",
-    "answers": [
-      "Tricuspid",
-      "Mitral",
-      "Aortic",
-      "Pulmonary"
-    ],
+    "answers": ["Tricuspid", "Mitral", "Aortic", "Pulmonary"],
     "correct": 1,
     "short_explanation": "Rheumatic fever most often damages the mitral valve.",
     "long_explanation": "Autoimmune response post-strep infection can lead to mitral stenosis or regurgitation. The mitral valve is the most vulnerable.",
@@ -352,41 +271,21 @@
     "topic": "Pathophysiology",
     "category": "Valve Disorders",
     "difficulty": "advanced",
-    "tags": [
-      "mitral disease",
-      "rheumatic fever",
-      "cardiac history"
-    ],
-    "keywords": [
-      "valve stenosis",
-      "mitral regurgitation",
-      "immune damage"
-    ],
+    "tags": ["mitral disease", "rheumatic fever", "cardiac history"],
+    "keywords": ["valve stenosis", "mitral regurgitation", "immune damage"],
     "source_reference": "Robbins Pathologic Basis of Disease",
     "text": "Which valve is most often affected in rheumatic fever?",
-    "options": [
-      "Tricuspid",
-      "Mitral",
-      "Aortic",
-      "Pulmonary"
-    ],
+    "options": ["Tricuspid", "Mitral", "Aortic", "Pulmonary"],
     "correctAnswer": "Mitral",
-    "abcd": [
-      "A. Tricuspid",
-      "B. Mitral",
-      "C. Aortic",
-      "D. Pulmonary"
-    ]
+    "abcd": ["A. Tricuspid", "B. Mitral", "C. Aortic", "D. Pulmonary"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   },
   {
     "id": "heart_valves_010",
     "question": "What sound is produced when the semilunar valves close?",
-    "answers": [
-      "S1",
-      "S2",
-      "Murmur",
-      "Click"
-    ],
+    "answers": ["S1", "S2", "Murmur", "Click"],
     "correct": 1,
     "short_explanation": "The second heart sound (S2) is created when semilunar valves close.",
     "long_explanation": "S2 marks the end of systole and the start of diastole, produced by closure of the aortic and pulmonary valves.",
@@ -394,30 +293,15 @@
     "topic": "Heart Sounds",
     "category": "Cardiac Auscultation",
     "difficulty": "intermediate",
-    "tags": [
-      "S2",
-      "semilunar closure",
-      "heart sound"
-    ],
-    "keywords": [
-      "aortic valve",
-      "pulmonary valve",
-      "diastole start"
-    ],
+    "tags": ["S2", "semilunar closure", "heart sound"],
+    "keywords": ["aortic valve", "pulmonary valve", "diastole start"],
     "source_reference": "Bates’ Physical Exam",
     "text": "What sound is produced when the semilunar valves close?",
-    "options": [
-      "S1",
-      "S2",
-      "Murmur",
-      "Click"
-    ],
+    "options": ["S1", "S2", "Murmur", "Click"],
     "correctAnswer": "S2",
-    "abcd": [
-      "A. S1",
-      "B. S2",
-      "C. Murmur",
-      "D. Click"
-    ]
+    "abcd": ["A. S1", "B. S2", "C. Murmur", "D. Click"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart_valves.json"
   }
 ]

@@ -13,16 +13,8 @@
     "difficulty": "easy",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "purpose_healing",
-      "concept_balance",
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "purpose_healing",
-      "concept_balance",
-      "modality_ayurveda"
-    ],
+    "tags": ["purpose_healing", "concept_balance", "modality_ayurveda"],
+    "keywords": ["purpose_healing", "concept_balance", "modality_ayurveda"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -51,27 +43,21 @@
       "B. Healing hands",
       "C. Knowledge of life",
       "D. Body balance"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 002",
     "question": "Ayurveda originated in which country?",
-    "answers": [
-      "China",
-      "Egypt",
-      "India",
-      "Greece"
-    ],
+    "answers": ["China", "Egypt", "India", "Greece"],
     "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_ayurveda",
-      "concept_originates",
-      "concept_originated"
-    ],
+    "tags": ["modality_ayurveda", "concept_originates", "concept_originated"],
     "keywords": [
       "modality_ayurveda",
       "concept_originates",
@@ -93,19 +79,12 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "Ayurveda originated in which country?",
-    "options": [
-      "China",
-      "Egypt",
-      "India",
-      "Greece"
-    ],
+    "options": ["China", "Egypt", "India", "Greece"],
     "correctAnswer": "India",
-    "abcd": [
-      "A. China",
-      "B. Egypt",
-      "C. India",
-      "D. Greece"
-    ]
+    "abcd": ["A. China", "B. Egypt", "C. India", "D. Greece"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 003",
@@ -121,12 +100,8 @@
     "difficulty": "easy",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "modality_ayurveda"
-    ],
+    "tags": ["modality_ayurveda"],
+    "keywords": ["modality_ayurveda"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -155,32 +130,22 @@
       "B. Earth, Wind, Fire",
       "C. Kapha, Vata, Pitta",
       "D. Vata, Soma, Agni"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 004",
     "question": "Which dosha is associated with movement and air?",
-    "answers": [
-      "Pitta",
-      "Vata",
-      "Kapha",
-      "Prana"
-    ],
+    "answers": ["Pitta", "Vata", "Kapha", "Prana"],
     "correct": 1,
     "distractors": [],
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "ayurveda",
-      "doshas",
-      "vata",
-      "pitta",
-      "kapha"
-    ],
+    "tags": ["modality_ayurveda"],
+    "keywords": ["ayurveda", "doshas", "vata", "pitta", "kapha"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -197,44 +162,24 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "Which dosha is associated with movement and air?",
-    "options": [
-      "Pitta",
-      "Vata",
-      "Kapha",
-      "Prana"
-    ],
+    "options": ["Pitta", "Vata", "Kapha", "Prana"],
     "correctAnswer": "Vata",
-    "abcd": [
-      "A. Pitta",
-      "B. Vata",
-      "C. Kapha",
-      "D. Prana"
-    ]
+    "abcd": ["A. Pitta", "B. Vata", "C. Kapha", "D. Prana"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 005",
     "question": "Which dosha governs metabolism and digestion?",
-    "answers": [
-      "Vata",
-      "Pitta",
-      "Kapha",
-      "Ojas"
-    ],
+    "answers": ["Vata", "Pitta", "Kapha", "Ojas"],
     "correct": 1,
     "distractors": [],
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "ayurveda",
-      "doshas",
-      "vata",
-      "pitta",
-      "kapha"
-    ],
+    "tags": ["modality_ayurveda"],
+    "keywords": ["ayurveda", "doshas", "vata", "pitta", "kapha"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -251,44 +196,24 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "Which dosha governs metabolism and digestion?",
-    "options": [
-      "Vata",
-      "Pitta",
-      "Kapha",
-      "Ojas"
-    ],
+    "options": ["Vata", "Pitta", "Kapha", "Ojas"],
     "correctAnswer": "Pitta",
-    "abcd": [
-      "A. Vata",
-      "B. Pitta",
-      "C. Kapha",
-      "D. Ojas"
-    ]
+    "abcd": ["A. Vata", "B. Pitta", "C. Kapha", "D. Ojas"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 006",
     "question": "Which element is primarily associated with Kapha dosha?",
-    "answers": [
-      "Fire",
-      "Air",
-      "Earth and Water",
-      "Ether"
-    ],
+    "answers": ["Fire", "Air", "Earth and Water", "Ether"],
     "correct": 2,
     "distractors": [],
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "ayurveda",
-      "doshas",
-      "vata",
-      "pitta",
-      "kapha"
-    ],
+    "tags": ["modality_ayurveda"],
+    "keywords": ["ayurveda", "doshas", "vata", "pitta", "kapha"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -305,40 +230,24 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "Which element is primarily associated with Kapha dosha?",
-    "options": [
-      "Fire",
-      "Air",
-      "Earth and Water",
-      "Ether"
-    ],
+    "options": ["Fire", "Air", "Earth and Water", "Ether"],
     "correctAnswer": "Earth and Water",
-    "abcd": [
-      "A. Fire",
-      "B. Air",
-      "C. Earth and Water",
-      "D. Ether"
-    ]
+    "abcd": ["A. Fire", "B. Air", "C. Earth and Water", "D. Ether"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 007",
     "question": "In Ayurveda, what is the term for life energy or vitality?",
-    "answers": [
-      "Agni",
-      "Prana",
-      "Dosha",
-      "Dhatu"
-    ],
+    "answers": ["Agni", "Prana", "Dosha", "Dhatu"],
     "correct": 1,
     "distractors": [],
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "modality_ayurveda"
-    ],
+    "tags": ["modality_ayurveda"],
+    "keywords": ["modality_ayurveda"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -355,19 +264,12 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "In Ayurveda, what is the term for life energy or vitality?",
-    "options": [
-      "Agni",
-      "Prana",
-      "Dosha",
-      "Dhatu"
-    ],
+    "options": ["Agni", "Prana", "Dosha", "Dhatu"],
     "correctAnswer": "Prana",
-    "abcd": [
-      "A. Agni",
-      "B. Prana",
-      "C. Dosha",
-      "D. Dhatu"
-    ]
+    "abcd": ["A. Agni", "B. Prana", "C. Dosha", "D. Dhatu"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 008",
@@ -423,32 +325,22 @@
       "B. Cleanse the body of toxins",
       "C. Promote deep sleep",
       "D. Stimulate digestion"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 009",
     "question": "Which Ayurvedic herb is commonly used to promote memory and brain function?",
-    "answers": [
-      "Ashwagandha",
-      "Triphala",
-      "Brahmi",
-      "Neem"
-    ],
+    "answers": ["Ashwagandha", "Triphala", "Brahmi", "Neem"],
     "correct": 2,
     "distractors": [],
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "anatomy_brain",
-      "modality_ayurvedic",
-      "organ_brain"
-    ],
-    "keywords": [
-      "anatomy_brain",
-      "modality_ayurvedic",
-      "organ_brain"
-    ],
+    "tags": ["anatomy_brain", "modality_ayurvedic", "organ_brain"],
+    "keywords": ["anatomy_brain", "modality_ayurvedic", "organ_brain"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -465,42 +357,24 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "Which Ayurvedic herb is commonly used to promote memory and brain function?",
-    "options": [
-      "Ashwagandha",
-      "Triphala",
-      "Brahmi",
-      "Neem"
-    ],
+    "options": ["Ashwagandha", "Triphala", "Brahmi", "Neem"],
     "correctAnswer": "Brahmi",
-    "abcd": [
-      "A. Ashwagandha",
-      "B. Triphala",
-      "C. Brahmi",
-      "D. Neem"
-    ]
+    "abcd": ["A. Ashwagandha", "B. Triphala", "C. Brahmi", "D. Neem"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   },
   {
     "id": "Ayurveda 010",
     "question": "What is the Ayurvedic term for digestive fire?",
-    "answers": [
-      "Ojas",
-      "Prana",
-      "Agni",
-      "Ama"
-    ],
+    "answers": ["Ojas", "Prana", "Agni", "Ama"],
     "correct": 2,
     "distractors": [],
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "system_digestive",
-      "modality_ayurvedic"
-    ],
-    "keywords": [
-      "system_digestive",
-      "modality_ayurvedic"
-    ],
+    "tags": ["system_digestive", "modality_ayurvedic"],
+    "keywords": ["system_digestive", "modality_ayurvedic"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -517,18 +391,11 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Ayurveda Foundations Manual",
     "text": "What is the Ayurvedic term for digestive fire?",
-    "options": [
-      "Ojas",
-      "Prana",
-      "Agni",
-      "Ama"
-    ],
+    "options": ["Ojas", "Prana", "Agni", "Ama"],
     "correctAnswer": "Agni",
-    "abcd": [
-      "A. Ojas",
-      "B. Prana",
-      "C. Agni",
-      "D. Ama"
-    ]
+    "abcd": ["A. Ojas", "B. Prana", "C. Agni", "D. Ama"],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "ayurveda_intro.json"
   }
 ]

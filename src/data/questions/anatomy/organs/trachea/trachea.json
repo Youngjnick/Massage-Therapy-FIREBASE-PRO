@@ -15,16 +15,8 @@
     "topic": "Tracheal Anatomy",
     "category": "Muscle Function",
     "difficulty": "intermediate",
-    "tags": [
-      "trachealis",
-      "trachea",
-      "smooth muscle"
-    ],
-    "keywords": [
-      "trachealis contraction",
-      "airway diameter",
-      "coughing"
-    ],
+    "tags": ["trachealis", "trachea", "smooth muscle"],
+    "keywords": ["trachealis contraction", "airway diameter", "coughing"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which muscle is responsible for reducing the diameter of the trachea during coughing?",
     "options": [
@@ -39,7 +31,10 @@
       "B. Sternocleidomastoid",
       "C. Scalene muscles",
       "D. Cricothyroid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_002",
@@ -57,16 +52,8 @@
     "topic": "Tissue Types",
     "category": "Histology",
     "difficulty": "basic",
-    "tags": [
-      "trachealis",
-      "smooth muscle",
-      "respiratory system"
-    ],
-    "keywords": [
-      "muscle type",
-      "involuntary muscle",
-      "respiratory histology"
-    ],
+    "tags": ["trachealis", "smooth muscle", "respiratory system"],
+    "keywords": ["muscle type", "involuntary muscle", "respiratory histology"],
     "source_reference": "Moore’s Anatomy",
     "text": "What type of muscle tissue is the trachealis?",
     "options": [
@@ -81,7 +68,10 @@
       "B. Skeletal muscle",
       "C. Smooth muscle",
       "D. Striated muscle"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_003",
@@ -99,16 +89,8 @@
     "topic": "Anatomy",
     "category": "Positioning",
     "difficulty": "intermediate",
-    "tags": [
-      "trachealis location",
-      "trachea",
-      "esophagus"
-    ],
-    "keywords": [
-      "posterior trachea",
-      "muscle position",
-      "cartilage rings"
-    ],
+    "tags": ["trachealis location", "trachea", "esophagus"],
+    "keywords": ["posterior trachea", "muscle position", "cartilage rings"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "Where is the trachealis muscle located anatomically?",
     "options": [
@@ -123,7 +105,10 @@
       "B. On the anterior surface of the trachea",
       "C. On the posterior wall of the trachea",
       "D. Between trachea and larynx"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_004",
@@ -141,16 +126,8 @@
     "topic": "Innervation",
     "category": "Neuroanatomy",
     "difficulty": "advanced",
-    "tags": [
-      "vagus nerve",
-      "parasympathetic",
-      "trachealis"
-    ],
-    "keywords": [
-      "cranial nerve X",
-      "autonomic innervation",
-      "airway control"
-    ],
+    "tags": ["vagus nerve", "parasympathetic", "trachealis"],
+    "keywords": ["cranial nerve X", "autonomic innervation", "airway control"],
     "source_reference": "Neuroanatomy through Clinical Cases",
     "text": "Which nerve innervates the trachealis muscle?",
     "options": [
@@ -165,7 +142,10 @@
       "B. Phrenic nerve",
       "C. Glossopharyngeal nerve",
       "D. Accessory nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_005",
@@ -183,16 +163,8 @@
     "topic": "Function",
     "category": "Physiology",
     "difficulty": "intermediate",
-    "tags": [
-      "forced expiration",
-      "cough",
-      "trachea"
-    ],
-    "keywords": [
-      "tracheal recoil",
-      "bronchomotor response",
-      "exhalation"
-    ],
+    "tags": ["forced expiration", "cough", "trachea"],
+    "keywords": ["tracheal recoil", "bronchomotor response", "exhalation"],
     "source_reference": "Guyton & Hall",
     "text": "What happens to the trachealis muscle during forced expiration?",
     "options": [
@@ -207,7 +179,10 @@
       "B. It contracts to narrow the airway",
       "C. It thickens the cartilage",
       "D. It shortens the trachea"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_006",
@@ -225,11 +200,7 @@
     "topic": "Swallowing Coordination",
     "category": "Functional Anatomy",
     "difficulty": "advanced",
-    "tags": [
-      "esophagus",
-      "trachealis",
-      "swallowing"
-    ],
+    "tags": ["esophagus", "trachealis", "swallowing"],
     "keywords": [
       "airway and digestion",
       "shared pathway",
@@ -249,17 +220,15 @@
       "B. It expands the airway",
       "C. It allows the esophagus to bulge during swallowing",
       "D. It closes the trachea"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_007",
     "question": "What is the shape of the cartilage rings of the trachea?",
-    "answers": [
-      "O-shaped",
-      "C-shaped",
-      "D-shaped",
-      "S-shaped"
-    ],
+    "answers": ["O-shaped", "C-shaped", "D-shaped", "S-shaped"],
     "correct": 1,
     "short_explanation": "The trachea has C-shaped rings of cartilage.",
     "long_explanation": "These rings are incomplete posteriorly and bridged by the trachealis muscle, allowing flexibility and movement.",
@@ -267,31 +236,16 @@
     "topic": "Structural Anatomy",
     "category": "Cartilage",
     "difficulty": "basic",
-    "tags": [
-      "C-rings",
-      "tracheal cartilage",
-      "trachea"
-    ],
-    "keywords": [
-      "cartilage shape",
-      "tracheal support",
-      "respiratory tube"
-    ],
+    "tags": ["C-rings", "tracheal cartilage", "trachea"],
+    "keywords": ["cartilage shape", "tracheal support", "respiratory tube"],
     "source_reference": "Gray’s Anatomy",
     "text": "What is the shape of the cartilage rings of the trachea?",
-    "options": [
-      "O-shaped",
-      "C-shaped",
-      "D-shaped",
-      "S-shaped"
-    ],
+    "options": ["O-shaped", "C-shaped", "D-shaped", "S-shaped"],
     "correctAnswer": "C-shaped",
-    "abcd": [
-      "A. O-shaped",
-      "B. C-shaped",
-      "C. D-shaped",
-      "D. S-shaped"
-    ]
+    "abcd": ["A. O-shaped", "B. C-shaped", "C. D-shaped", "D. S-shaped"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_008",
@@ -309,16 +263,8 @@
     "topic": "Autonomic Nervous System",
     "category": "Neurophysiology",
     "difficulty": "advanced",
-    "tags": [
-      "sympathetic response",
-      "airway dilation",
-      "trachealis"
-    ],
-    "keywords": [
-      "ANS control",
-      "bronchodilation",
-      "respiratory stress"
-    ],
+    "tags": ["sympathetic response", "airway dilation", "trachealis"],
+    "keywords": ["ANS control", "bronchodilation", "respiratory stress"],
     "source_reference": "Guyton & Hall",
     "text": "What is the effect of sympathetic stimulation on the trachealis muscle?",
     "options": [
@@ -333,17 +279,15 @@
       "B. Relaxation of the muscle",
       "C. Spasm of the muscle",
       "D. No effect"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_009",
     "question": "Which hormone indirectly increases trachealis tone via parasympathetic pathways?",
-    "answers": [
-      "Epinephrine",
-      "Norepinephrine",
-      "Acetylcholine",
-      "Cortisol"
-    ],
+    "answers": ["Epinephrine", "Norepinephrine", "Acetylcholine", "Cortisol"],
     "correct": 2,
     "short_explanation": "Acetylcholine increases smooth muscle tone.",
     "long_explanation": "Acetylcholine, released by vagal parasympathetic fibers, binds to muscarinic receptors and causes trachealis contraction.",
@@ -351,41 +295,26 @@
     "topic": "Neurotransmitters",
     "category": "Respiratory Control",
     "difficulty": "advanced",
-    "tags": [
-      "acetylcholine",
-      "muscarinic",
-      "parasympathetic"
-    ],
-    "keywords": [
-      "smooth muscle tone",
-      "airway reactivity",
-      "neurochemical"
-    ],
+    "tags": ["acetylcholine", "muscarinic", "parasympathetic"],
+    "keywords": ["smooth muscle tone", "airway reactivity", "neurochemical"],
     "source_reference": "Medical Physiology",
     "text": "Which hormone indirectly increases trachealis tone via parasympathetic pathways?",
-    "options": [
-      "Epinephrine",
-      "Norepinephrine",
-      "Acetylcholine",
-      "Cortisol"
-    ],
+    "options": ["Epinephrine", "Norepinephrine", "Acetylcholine", "Cortisol"],
     "correctAnswer": "Acetylcholine",
     "abcd": [
       "A. Epinephrine",
       "B. Norepinephrine",
       "C. Acetylcholine",
       "D. Cortisol"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   },
   {
     "id": "trachea_010",
     "question": "The trachealis muscle helps regulate airflow during which activity?",
-    "answers": [
-      "Breathing",
-      "Swallowing",
-      "Sneezing",
-      "Coughing"
-    ],
+    "answers": ["Breathing", "Swallowing", "Sneezing", "Coughing"],
     "correct": 3,
     "short_explanation": "The muscle contracts to increase air velocity during coughing.",
     "long_explanation": "During a cough, the trachealis contracts, narrowing the lumen and increasing pressure to forcefully expel mucus or debris.",
@@ -393,30 +322,15 @@
     "topic": "Functional Physiology",
     "category": "Protective Reflexes",
     "difficulty": "intermediate",
-    "tags": [
-      "cough reflex",
-      "trachealis",
-      "airway"
-    ],
-    "keywords": [
-      "forced expiration",
-      "mucus clearance",
-      "respiratory health"
-    ],
+    "tags": ["cough reflex", "trachealis", "airway"],
+    "keywords": ["forced expiration", "mucus clearance", "respiratory health"],
     "source_reference": "Bates' Guide to Physical Examination",
     "text": "The trachealis muscle helps regulate airflow during which activity?",
-    "options": [
-      "Breathing",
-      "Swallowing",
-      "Sneezing",
-      "Coughing"
-    ],
+    "options": ["Breathing", "Swallowing", "Sneezing", "Coughing"],
     "correctAnswer": "Coughing",
-    "abcd": [
-      "A. Breathing",
-      "B. Swallowing",
-      "C. Sneezing",
-      "D. Coughing"
-    ]
+    "abcd": ["A. Breathing", "B. Swallowing", "C. Sneezing", "D. Coughing"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/trachea",
+    "filename": "trachea.json"
   }
 ]

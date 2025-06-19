@@ -15,16 +15,8 @@
     "topic": "Cranial Nerve Function",
     "category": "Sensory",
     "difficulty": "basic",
-    "tags": [
-      "olfactory",
-      "CN I",
-      "smell"
-    ],
-    "keywords": [
-      "olfaction",
-      "cribriform plate",
-      "anosmia"
-    ],
+    "tags": ["olfactory", "CN I", "smell"],
+    "keywords": ["olfaction", "cribriform plate", "anosmia"],
     "source_reference": "Moore's Clinically Oriented Anatomy",
     "text": "Which cranial nerve is responsible for smell?",
     "options": [
@@ -39,7 +31,10 @@
       "B. CN II - Optic",
       "C. CN V - Trigeminal",
       "D. CN VII - Facial"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_002",
@@ -57,16 +52,8 @@
     "topic": "Cranial Nerve Motor",
     "category": "Ocular",
     "difficulty": "intermediate",
-    "tags": [
-      "abducens",
-      "eye movement",
-      "lateral rectus"
-    ],
-    "keywords": [
-      "strabismus",
-      "CN VI palsy",
-      "lateral gaze"
-    ],
+    "tags": ["abducens", "eye movement", "lateral rectus"],
+    "keywords": ["strabismus", "CN VI palsy", "lateral gaze"],
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "text": "Which cranial nerve controls the lateral rectus muscle of the eye?",
     "options": [
@@ -81,7 +68,10 @@
       "B. CN III - Oculomotor",
       "C. CN IV - Trochlear",
       "D. CN VI - Abducens"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_003",
@@ -99,16 +89,8 @@
     "topic": "Autonomic Nervous System",
     "category": "Parasympathetic",
     "difficulty": "intermediate",
-    "tags": [
-      "vagus",
-      "CN X",
-      "autonomic"
-    ],
-    "keywords": [
-      "parasympathetic",
-      "digestion",
-      "vagal tone"
-    ],
+    "tags": ["vagus", "CN X", "autonomic"],
+    "keywords": ["parasympathetic", "digestion", "vagal tone"],
     "source_reference": "Guyton and Hall Textbook of Physiology",
     "text": "Which cranial nerve provides parasympathetic innervation to the heart and GI tract?",
     "options": [
@@ -123,7 +105,10 @@
       "B. CN IX - Glossopharyngeal",
       "C. CN X - Vagus",
       "D. CN XII - Hypoglossal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_004",
@@ -141,16 +126,8 @@
     "topic": "Facial Musculature",
     "category": "Motor",
     "difficulty": "basic",
-    "tags": [
-      "facial nerve",
-      "expression",
-      "bell’s palsy"
-    ],
-    "keywords": [
-      "CN VII",
-      "parotid",
-      "facial muscles"
-    ],
+    "tags": ["facial nerve", "expression", "bell’s palsy"],
+    "keywords": ["CN VII", "parotid", "facial muscles"],
     "source_reference": "Trail Guide to the Body",
     "text": "Which cranial nerve innervates the muscles of facial expression?",
     "options": [
@@ -165,7 +142,10 @@
       "B. CN VII - Facial",
       "C. CN IX - Glossopharyngeal",
       "D. CN XI - Accessory"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_005",
@@ -183,16 +163,8 @@
     "topic": "Sensory Innervation",
     "category": "Head and Neck",
     "difficulty": "intermediate",
-    "tags": [
-      "trigeminal",
-      "facial sensation",
-      "CN V"
-    ],
-    "keywords": [
-      "ophthalmic",
-      "maxillary",
-      "mandibular"
-    ],
+    "tags": ["trigeminal", "facial sensation", "CN V"],
+    "keywords": ["ophthalmic", "maxillary", "mandibular"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which cranial nerve has three major sensory branches: ophthalmic, maxillary, and mandibular?",
     "options": [
@@ -207,7 +179,10 @@
       "B. CN VIII - Vestibulocochlear",
       "C. CN V - Trigeminal",
       "D. CN IX - Glossopharyngeal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_006",
@@ -225,16 +200,8 @@
     "topic": "Cranial Motor Function",
     "category": "Speech and Swallowing",
     "difficulty": "basic",
-    "tags": [
-      "hypoglossal",
-      "tongue",
-      "CN XII"
-    ],
-    "keywords": [
-      "tongue control",
-      "speech articulation",
-      "cranial nerve test"
-    ],
+    "tags": ["hypoglossal", "tongue", "CN XII"],
+    "keywords": ["tongue control", "speech articulation", "cranial nerve test"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "Which cranial nerve controls tongue movement?",
     "options": [
@@ -249,7 +216,10 @@
       "B. CN X - Vagus",
       "C. CN XII - Hypoglossal",
       "D. CN V - Trigeminal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_007",
@@ -267,17 +237,8 @@
     "topic": "Sensory Pathways",
     "category": "Auditory/Balance",
     "difficulty": "intermediate",
-    "tags": [
-      "vestibular",
-      "hearing",
-      "balance",
-      "CN VIII"
-    ],
-    "keywords": [
-      "inner ear",
-      "vertigo",
-      "hearing loss"
-    ],
+    "tags": ["vestibular", "hearing", "balance", "CN VIII"],
+    "keywords": ["inner ear", "vertigo", "hearing loss"],
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "text": "Which cranial nerve carries hearing and balance signals from the inner ear?",
     "options": [
@@ -292,7 +253,10 @@
       "B. CN V - Trigeminal",
       "C. CN VIII - Vestibulocochlear",
       "D. CN XI - Accessory"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_008",
@@ -310,16 +274,8 @@
     "topic": "Cranial Motor",
     "category": "Musculoskeletal",
     "difficulty": "intermediate",
-    "tags": [
-      "accessory nerve",
-      "CN XI",
-      "shoulder"
-    ],
-    "keywords": [
-      "trapezius",
-      "SCM",
-      "nerve damage"
-    ],
+    "tags": ["accessory nerve", "CN XI", "shoulder"],
+    "keywords": ["trapezius", "SCM", "nerve damage"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "Which cranial nerve exits the jugular foramen and innervates the sternocleidomastoid and trapezius?",
     "options": [
@@ -334,7 +290,10 @@
       "B. CN VII - Facial",
       "C. CN X - Vagus",
       "D. CN XII - Hypoglossal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_009",
@@ -352,16 +311,8 @@
     "topic": "Eye Movement",
     "category": "Motor",
     "difficulty": "intermediate",
-    "tags": [
-      "trochlear",
-      "eye",
-      "CN IV"
-    ],
-    "keywords": [
-      "superior oblique",
-      "eye palsy",
-      "diplopia"
-    ],
+    "tags": ["trochlear", "eye", "CN IV"],
+    "keywords": ["superior oblique", "eye palsy", "diplopia"],
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "text": "Which cranial nerve controls the superior oblique muscle of the eye?",
     "options": [
@@ -376,7 +327,10 @@
       "B. CN IV - Trochlear",
       "C. CN VI - Abducens",
       "D. CN V - Trigeminal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   },
   {
     "id": "cranial_nerve_010",
@@ -394,16 +348,8 @@
     "topic": "Sensory Function",
     "category": "Taste",
     "difficulty": "intermediate",
-    "tags": [
-      "taste",
-      "facial nerve",
-      "CN VII"
-    ],
-    "keywords": [
-      "anterior tongue",
-      "chorda tympani",
-      "gustatory"
-    ],
+    "tags": ["taste", "facial nerve", "CN VII"],
+    "keywords": ["anterior tongue", "chorda tympani", "gustatory"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which cranial nerve is involved in taste sensation from the anterior two-thirds of the tongue?",
     "options": [
@@ -418,6 +364,9 @@
       "B. CN VII - Facial",
       "C. CN IX - Glossopharyngeal",
       "D. CN XII - Hypoglossal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cranial_nerves.json"
   }
 ]

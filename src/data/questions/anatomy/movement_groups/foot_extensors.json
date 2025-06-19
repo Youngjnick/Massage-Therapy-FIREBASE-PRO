@@ -55,10 +55,7 @@
     "created_at": "2025-05-24T14:34:08.082Z",
     "updated_at": "2025-05-24T14:54:13.426Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": [
-      "EHL",
-      "toe lifter"
-    ],
+    "synonyms": ["EHL", "toe lifter"],
     "text": "Which muscle extends the great toe at both MTP and IP joints?",
     "options": [
       "Extensor hallucis longus",
@@ -72,7 +69,10 @@
       "B. Flexor hallucis longus",
       "C. Extensor digitorum longus",
       "D. Abductor hallucis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "foot_extensors.json"
   },
   {
     "id": "Foot Extensor 002",
@@ -126,10 +126,7 @@
     "created_at": "2025-05-24T14:34:08.082Z",
     "updated_at": "2025-05-24T14:54:13.426Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": [
-      "EDL",
-      "long toe extensor"
-    ],
+    "synonyms": ["EDL", "long toe extensor"],
     "text": "What is the primary action of extensor digitorum longus?",
     "options": [
       "Toe flexion",
@@ -143,7 +140,10 @@
       "B. Dorsiflexion of the foot only",
       "C. Extension of toes 2–5",
       "D. Plantarflexion of the ankle"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "foot_extensors.json"
   },
   {
     "id": "Foot Extensor 003",
@@ -193,9 +193,7 @@
     "created_at": "2025-05-24T14:34:08.082Z",
     "updated_at": "2025-05-24T14:54:13.426Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": [
-      "toe and foot extensor"
-    ],
+    "synonyms": ["toe and foot extensor"],
     "text": "Which muscle assists in both dorsiflexion and extension of the toes?",
     "options": [
       "Tibialis posterior",
@@ -209,7 +207,10 @@
       "B. Peroneus longus",
       "C. Extensor digitorum longus",
       "D. Flexor digitorum longus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "foot_extensors.json"
   },
   {
     "id": "Foot Extensor 004",
@@ -259,9 +260,7 @@
     "created_at": "2025-05-24T14:34:08.082Z",
     "updated_at": "2025-05-24T14:54:13.426Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": [
-      "long toe extensor"
-    ],
+    "synonyms": ["long toe extensor"],
     "text": "What is the insertion of extensor hallucis longus?",
     "options": [
       "Base of proximal phalanx of the hallux",
@@ -275,7 +274,10 @@
       "B. Base of the first metatarsal",
       "C. Distal phalanx of the hallux",
       "D. Navicular bone"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "foot_extensors.json"
   },
   {
     "id": "Foot Extensor 005",
@@ -331,9 +333,7 @@
     "created_at": "2025-05-24T14:34:08.082Z",
     "updated_at": "2025-05-24T14:54:13.426Z",
     "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": [
-      "EDB"
-    ],
+    "synonyms": ["EDB"],
     "text": "Which muscle is located on the dorsal surface of the foot and assists in toe extension?",
     "options": [
       "Extensor digitorum brevis",
@@ -347,6 +347,9 @@
       "B. Abductor hallucis",
       "C. Plantar interossei",
       "D. Peroneus brevis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "foot_extensors.json"
   }
 ]

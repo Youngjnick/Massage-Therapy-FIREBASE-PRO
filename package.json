@@ -4,7 +4,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "jest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "dev": "vite"
   },
   "devDependencies": {
     "@babel/core": "^7.27.4",
@@ -24,6 +25,7 @@
     "babel-plugin-transform-import-meta": "^2.3.3",
     "babel-plugin-transform-vite-meta-env": "^1.0.3",
     "cross-fetch": "^4.1.0",
+    "firebase-admin": "^13.4.0",
     "gh-pages": "^6.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.0",

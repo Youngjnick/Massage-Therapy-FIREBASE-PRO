@@ -15,16 +15,8 @@
     "difficulty": "intermediate",
     "topic": "neuroanatomy",
     "category": "Motor & Sensory Innervation",
-    "tags": [
-      "C2",
-      "greater occipital nerve",
-      "semispinalis capitis"
-    ],
-    "keywords": [
-      "C2 spinal nerve",
-      "posterior scalp",
-      "neck extensors"
-    ],
+    "tags": ["C2", "greater occipital nerve", "semispinalis capitis"],
+    "keywords": ["C2 spinal nerve", "posterior scalp", "neck extensors"],
     "source_reference": "Gray’s Anatomy for Students",
     "stats": {
       "correct": 0,
@@ -45,7 +37,10 @@
       "B. Semispinalis capitis",
       "C. Levator scapulae",
       "D. Trapezius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_002",
@@ -63,16 +58,8 @@
     "difficulty": "intermediate",
     "topic": "cutaneous innervation",
     "category": "Sensory",
-    "tags": [
-      "C2",
-      "scalp",
-      "sensory"
-    ],
-    "keywords": [
-      "greater occipital",
-      "posterior head",
-      "cutaneous nerve"
-    ],
+    "tags": ["C2", "scalp", "sensory"],
+    "keywords": ["greater occipital", "posterior head", "cutaneous nerve"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "unit": "C2 spinal nerve",
     "text": "Which nerve branch from C2 supplies sensory innervation to the posterior scalp up to the vertex?",
@@ -88,17 +75,15 @@
       "B. Greater auricular nerve",
       "C. Greater occipital nerve",
       "D. Supraclavicular nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_003",
     "question": "Which cranial muscle receives motor fibers from both C1 and C2?",
-    "answers": [
-      "Thyrohyoid",
-      "Sternocleidomastoid",
-      "Trapezius",
-      "Geniohyoid"
-    ],
+    "answers": ["Thyrohyoid", "Sternocleidomastoid", "Trapezius", "Geniohyoid"],
     "correct": 1,
     "short_explanation": "Sternocleidomastoid is supplied by the spinal accessory nerve with contributions from C2.",
     "long_explanation": "Although the spinal accessory nerve (CN XI) provides motor innervation to the SCM, C2 (and C3) contribute proprioceptive sensory fibers.",
@@ -106,32 +91,22 @@
     "difficulty": "advanced",
     "topic": "cranial-cervical innervation",
     "category": "Mixed Innervation",
-    "tags": [
-      "C2",
-      "SCM",
-      "cranial nerve XI"
-    ],
-    "keywords": [
-      "accessory nerve",
-      "cervical roots",
-      "neck muscles"
-    ],
+    "tags": ["C2", "SCM", "cranial nerve XI"],
+    "keywords": ["accessory nerve", "cervical roots", "neck muscles"],
     "source_reference": "Moore's Clinically Oriented Anatomy",
     "unit": "C2 spinal nerve",
     "text": "Which cranial muscle receives motor fibers from both C1 and C2?",
-    "options": [
-      "Thyrohyoid",
-      "Sternocleidomastoid",
-      "Trapezius",
-      "Geniohyoid"
-    ],
+    "options": ["Thyrohyoid", "Sternocleidomastoid", "Trapezius", "Geniohyoid"],
     "correctAnswer": "Sternocleidomastoid",
     "abcd": [
       "A. Thyrohyoid",
       "B. Sternocleidomastoid",
       "C. Trapezius",
       "D. Geniohyoid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_004",
@@ -149,16 +124,8 @@
     "difficulty": "basic",
     "topic": "nervous system",
     "category": "Sensory Innervation",
-    "tags": [
-      "C2",
-      "lesser occipital",
-      "cervical plexus"
-    ],
-    "keywords": [
-      "cervical plexus",
-      "cutaneous innervation",
-      "ear region"
-    ],
+    "tags": ["C2", "lesser occipital", "cervical plexus"],
+    "keywords": ["cervical plexus", "cutaneous innervation", "ear region"],
     "source_reference": "Essentials of Clinical Anatomy",
     "unit": "C2 spinal nerve",
     "text": "The lesser occipital nerve is a branch of which plexus?",
@@ -174,7 +141,10 @@
       "B. Cervical plexus",
       "C. Lumbar plexus",
       "D. Lumbosacral plexus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_005",
@@ -192,16 +162,8 @@
     "difficulty": "intermediate",
     "topic": "neurology",
     "category": "Pathology",
-    "tags": [
-      "C2",
-      "occipital neuralgia",
-      "greater occipital"
-    ],
-    "keywords": [
-      "headache",
-      "C2 compression",
-      "posterior headache"
-    ],
+    "tags": ["C2", "occipital neuralgia", "greater occipital"],
+    "keywords": ["headache", "C2 compression", "posterior headache"],
     "source_reference": "Clinical Neurology for Rehabilitation",
     "unit": "C2 spinal nerve",
     "text": "What symptom is most commonly associated with irritation of the greater occipital nerve?",
@@ -217,7 +179,10 @@
       "B. Facial numbness",
       "C. Posterior scalp pain",
       "D. Blurred vision"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_006",
@@ -235,15 +200,8 @@
     "difficulty": "advanced",
     "topic": "suboccipital anatomy",
     "category": "Muscle Function",
-    "tags": [
-      "C2",
-      "obliquus capitis",
-      "dizziness"
-    ],
-    "keywords": [
-      "cervicogenic headache",
-      "C2 influence"
-    ],
+    "tags": ["C2", "obliquus capitis", "dizziness"],
+    "keywords": ["cervicogenic headache", "C2 influence"],
     "source_reference": "Travell & Simons’ Trigger Point Manual",
     "unit": "C2 spinal nerve",
     "text": "Which suboccipital muscle is indirectly influenced by C2 innervation?",
@@ -259,7 +217,10 @@
       "B. Obliquus capitis superior",
       "C. Rectus capitis posterior major",
       "D. Semispinalis cervicis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_007",
@@ -277,15 +238,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Neck Plexus",
-    "tags": [
-      "C2",
-      "ansa cervicalis",
-      "infrahyoid"
-    ],
-    "keywords": [
-      "cervical plexus",
-      "infrahyoid muscle control"
-    ],
+    "tags": ["C2", "ansa cervicalis", "infrahyoid"],
+    "keywords": ["cervical plexus", "infrahyoid muscle control"],
     "source_reference": "Clinically Oriented Anatomy, Moore",
     "unit": "C2 spinal nerve",
     "text": "Which part of the cervical plexus does C2 contribute to?",
@@ -301,7 +255,10 @@
       "B. Ansa cervicalis",
       "C. Phrenic nerve",
       "D. Transverse cervical nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_008",
@@ -319,16 +276,8 @@
     "difficulty": "basic",
     "topic": "movement analysis",
     "category": "Kinesiology",
-    "tags": [
-      "C2",
-      "rotation",
-      "nerve compression"
-    ],
-    "keywords": [
-      "neck movement",
-      "cervical dysfunction",
-      "C2 pain"
-    ],
+    "tags": ["C2", "rotation", "nerve compression"],
+    "keywords": ["neck movement", "cervical dysfunction", "C2 pain"],
     "source_reference": "Kinesiology of the Musculoskeletal System",
     "unit": "C2 spinal nerve",
     "text": "Which motion may exacerbate a C2 nerve irritation?",
@@ -344,7 +293,10 @@
       "B. Neck rotation",
       "C. Ankle dorsiflexion",
       "D. Lumbar extension"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_009",
@@ -362,15 +314,8 @@
     "difficulty": "intermediate",
     "topic": "clinical neuroanatomy",
     "category": "Differential Diagnosis",
-    "tags": [
-      "C2",
-      "neuralgia",
-      "diagnosis"
-    ],
-    "keywords": [
-      "headache origin",
-      "cervical compression"
-    ],
+    "tags": ["C2", "neuralgia", "diagnosis"],
+    "keywords": ["headache origin", "cervical compression"],
     "source_reference": "Practical Neurology Review",
     "unit": "C2 spinal nerve",
     "text": "C2 nerve root compression can mimic symptoms of which condition?",
@@ -386,7 +331,10 @@
       "B. Occipital neuralgia",
       "C. Tension headache",
       "D. TMJ dysfunction"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   },
   {
     "id": "C2_Nerve_010",
@@ -404,16 +352,8 @@
     "difficulty": "advanced",
     "topic": "neuromuscular",
     "category": "Proprioception",
-    "tags": [
-      "C2",
-      "SCM",
-      "proprioception"
-    ],
-    "keywords": [
-      "cervical proprioceptors",
-      "C2 feedback",
-      "neck balance"
-    ],
+    "tags": ["C2", "SCM", "proprioception"],
+    "keywords": ["cervical proprioceptors", "C2 feedback", "neck balance"],
     "source_reference": "Neuroscience: Exploring the Brain",
     "unit": "C2 spinal nerve",
     "text": "Which nerve provides proprioception to the sternocleidomastoid from C2?",
@@ -429,6 +369,9 @@
       "B. Greater auricular",
       "C. Lesser occipital",
       "D. C2 proprioceptive fibers"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C2_nerve_innervations.json"
   }
 ]

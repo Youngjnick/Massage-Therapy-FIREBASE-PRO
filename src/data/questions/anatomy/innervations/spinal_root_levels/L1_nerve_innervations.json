@@ -15,19 +15,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Motor Function",
-    "tags": [
-      "L1",
-      "iliohypogastric",
-      "internal oblique",
-      "motor",
-      "trunk"
-    ],
-    "keywords": [
-      "L1",
-      "iliohypogastric nerve",
-      "abdominal muscles",
-      "motor"
-    ],
+    "tags": ["L1", "iliohypogastric", "internal oblique", "motor", "trunk"],
+    "keywords": ["L1", "iliohypogastric nerve", "abdominal muscles", "motor"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -48,7 +37,10 @@
       "B. Gluteus medius",
       "C. Internal oblique",
       "D. Soleus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_002",
@@ -66,19 +58,8 @@
     "difficulty": "basic",
     "topic": "anatomy",
     "category": "Sensory Distribution",
-    "tags": [
-      "L1",
-      "ilioinguinal",
-      "groin",
-      "sensory",
-      "nerve"
-    ],
-    "keywords": [
-      "ilioinguinal nerve",
-      "L1",
-      "groin",
-      "sensory innervation"
-    ],
+    "tags": ["L1", "ilioinguinal", "groin", "sensory", "nerve"],
+    "keywords": ["ilioinguinal nerve", "L1", "groin", "sensory innervation"],
     "source_reference": "Clinically Oriented Anatomy by Moore",
     "stats": {
       "correct": 0,
@@ -99,7 +80,10 @@
       "B. Medial thigh and groin",
       "C. Upper gluteal area",
       "D. Back of leg"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_003",
@@ -117,18 +101,8 @@
     "difficulty": "intermediate",
     "topic": "neuroanatomy",
     "category": "Nerve Pathways",
-    "tags": [
-      "L1",
-      "iliohypogastric",
-      "abdominal_wall",
-      "nerve_path"
-    ],
-    "keywords": [
-      "iliohypogastric",
-      "L1",
-      "abdominal muscles",
-      "nerve course"
-    ],
+    "tags": ["L1", "iliohypogastric", "abdominal_wall", "nerve_path"],
+    "keywords": ["iliohypogastric", "L1", "abdominal muscles", "nerve course"],
     "source_reference": "Gray's Anatomy for Students",
     "stats": {
       "correct": 0,
@@ -149,17 +123,15 @@
       "B. Obturator nerve",
       "C. Iliohypogastric nerve",
       "D. Sciatic nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_004",
     "question": "Which spinal root is involved in the cremasteric reflex in males?",
-    "answers": [
-      "L1",
-      "L4",
-      "S1",
-      "T10"
-    ],
+    "answers": ["L1", "L4", "S1", "T10"],
     "correct": 0,
     "short_explanation": "The L1 spinal root mediates the cremasteric reflex via the genitofemoral nerve.",
     "long_explanation": "The cremasteric reflex involves contraction of the cremaster muscle, triggered by stroking the inner thigh. The sensory limb is via the femoral branch of the genitofemoral nerve (L1–L2), and the motor limb is through its genital branch.",
@@ -167,13 +139,7 @@
     "difficulty": "advanced",
     "topic": "reflexes",
     "category": "Neurological Reflexes",
-    "tags": [
-      "L1",
-      "genitofemoral",
-      "cremasteric_reflex",
-      "male",
-      "neurology"
-    ],
+    "tags": ["L1", "genitofemoral", "cremasteric_reflex", "male", "neurology"],
     "keywords": [
       "L1",
       "cremasteric reflex",
@@ -188,19 +154,12 @@
     },
     "unit": "L1 spinal nerve",
     "text": "Which spinal root is involved in the cremasteric reflex in males?",
-    "options": [
-      "L1",
-      "L4",
-      "S1",
-      "T10"
-    ],
+    "options": ["L1", "L4", "S1", "T10"],
     "correctAnswer": "L1",
-    "abcd": [
-      "A. L1",
-      "B. L4",
-      "C. S1",
-      "D. T10"
-    ]
+    "abcd": ["A. L1", "B. L4", "C. S1", "D. T10"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_005",
@@ -218,17 +177,8 @@
     "difficulty": "basic",
     "topic": "spinal_anatomy",
     "category": "Nerve Root Anatomy",
-    "tags": [
-      "L1",
-      "vertebral_exit",
-      "spinal_root",
-      "anatomy"
-    ],
-    "keywords": [
-      "L1 spinal nerve",
-      "vertebral level",
-      "exit point"
-    ],
+    "tags": ["L1", "vertebral_exit", "spinal_root", "anatomy"],
+    "keywords": ["L1 spinal nerve", "vertebral level", "exit point"],
     "source_reference": "Essentials of Spinal Anatomy",
     "stats": {
       "correct": 0,
@@ -249,7 +199,10 @@
       "B. Above T12 vertebra",
       "C. Between L2 and L3",
       "D. Below L5 vertebra"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_006",
@@ -267,18 +220,8 @@
     "difficulty": "intermediate",
     "topic": "motor_function",
     "category": "Functional Movement",
-    "tags": [
-      "L1",
-      "core_stability",
-      "internal_oblique",
-      "motor"
-    ],
-    "keywords": [
-      "L1",
-      "motor deficit",
-      "core",
-      "trunk rotation"
-    ],
+    "tags": ["L1", "core_stability", "internal_oblique", "motor"],
+    "keywords": ["L1", "motor deficit", "core", "trunk rotation"],
     "source_reference": "Kinesiology of the Musculoskeletal System",
     "stats": {
       "correct": 0,
@@ -299,17 +242,15 @@
       "B. Trunk rotation and core stability",
       "C. Toe abduction",
       "D. Neck flexion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_007",
     "question": "L1 contributes to which plexus?",
-    "answers": [
-      "Cervical",
-      "Brachial",
-      "Lumbar",
-      "Sacral"
-    ],
+    "answers": ["Cervical", "Brachial", "Lumbar", "Sacral"],
     "correct": 2,
     "short_explanation": "L1 is part of the lumbar plexus.",
     "long_explanation": "The lumbar plexus is formed by the anterior rami of L1–L4. L1 gives rise to nerves like the iliohypogastric and ilioinguinal, contributing to abdominal and groin innervation.",
@@ -317,17 +258,8 @@
     "difficulty": "basic",
     "topic": "plexus_anatomy",
     "category": "Nerve Grouping",
-    "tags": [
-      "L1",
-      "lumbar_plexus",
-      "neuroanatomy"
-    ],
-    "keywords": [
-      "L1",
-      "lumbar plexus",
-      "iliohypogastric",
-      "ilioinguinal"
-    ],
+    "tags": ["L1", "lumbar_plexus", "neuroanatomy"],
+    "keywords": ["L1", "lumbar plexus", "iliohypogastric", "ilioinguinal"],
     "source_reference": "Gray’s Anatomy for Students",
     "stats": {
       "correct": 0,
@@ -336,19 +268,12 @@
     },
     "unit": "L1 spinal nerve",
     "text": "L1 contributes to which plexus?",
-    "options": [
-      "Cervical",
-      "Brachial",
-      "Lumbar",
-      "Sacral"
-    ],
+    "options": ["Cervical", "Brachial", "Lumbar", "Sacral"],
     "correctAnswer": "Lumbar",
-    "abcd": [
-      "A. Cervical",
-      "B. Brachial",
-      "C. Lumbar",
-      "D. Sacral"
-    ]
+    "abcd": ["A. Cervical", "B. Brachial", "C. Lumbar", "D. Sacral"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_008",
@@ -366,18 +291,8 @@
     "difficulty": "intermediate",
     "topic": "clinical_assessment",
     "category": "Pain Referral",
-    "tags": [
-      "L1",
-      "groin_pain",
-      "sensory",
-      "referral"
-    ],
-    "keywords": [
-      "L1 nerve",
-      "pain referral",
-      "groin",
-      "suprapubic"
-    ],
+    "tags": ["L1", "groin_pain", "sensory", "referral"],
+    "keywords": ["L1 nerve", "pain referral", "groin", "suprapubic"],
     "source_reference": "Orthopedic Physical Assessment",
     "stats": {
       "correct": 0,
@@ -398,7 +313,10 @@
       "B. Posterior thigh",
       "C. Upper groin or suprapubic area",
       "D. Big toe"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_009",
@@ -416,12 +334,7 @@
     "difficulty": "advanced",
     "topic": "anatomy",
     "category": "Nerve Pathways",
-    "tags": [
-      "L1",
-      "iliohypogastric",
-      "abdominal_layer",
-      "nerve_course"
-    ],
+    "tags": ["L1", "iliohypogastric", "abdominal_layer", "nerve_course"],
     "keywords": [
       "L1",
       "abdominal nerves",
@@ -448,7 +361,10 @@
       "B. Internal oblique and transversus abdominis",
       "C. Skin and fascia",
       "D. Rectus abdominis and peritoneum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   },
   {
     "id": "L1_Nerve_010",
@@ -466,18 +382,8 @@
     "difficulty": "intermediate",
     "topic": "massage_techniques",
     "category": "Treatment Applications",
-    "tags": [
-      "L1",
-      "massage",
-      "myofascial_release",
-      "abdominal_wall"
-    ],
-    "keywords": [
-      "L1",
-      "myofascial",
-      "abdominal muscles",
-      "nerve relief"
-    ],
+    "tags": ["L1", "massage", "myofascial_release", "abdominal_wall"],
+    "keywords": ["L1", "myofascial", "abdominal muscles", "nerve relief"],
     "source_reference": "Massage Therapy Principles and Practice",
     "stats": {
       "correct": 0,
@@ -498,6 +404,9 @@
       "B. Effleurage over gluteus medius",
       "C. Myofascial release to oblique muscles",
       "D. Percussion to gastrocnemius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L1_nerve_innervations.json"
   }
 ]

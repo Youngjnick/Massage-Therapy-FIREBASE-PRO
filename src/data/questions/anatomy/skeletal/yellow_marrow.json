@@ -15,16 +15,8 @@
     "difficulty": "easy",
     "category": "Anatomy",
     "topic": "Skeletal System",
-    "tags": [
-      "yellow marrow",
-      "fat storage",
-      "bone anatomy"
-    ],
-    "keywords": [
-      "adipose tissue",
-      "medullary cavity",
-      "bone"
-    ],
+    "tags": ["yellow marrow", "fat storage", "bone anatomy"],
+    "keywords": ["adipose tissue", "medullary cavity", "bone"],
     "mblex_category": "Anatomy",
     "source_reference": "Martini: Fundamentals of Anatomy & Physiology",
     "text": "What is the primary function of yellow bone marrow in adults?",
@@ -40,7 +32,10 @@
       "B. Fat storage",
       "C. Calcium absorption",
       "D. Cartilage formation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_002",
@@ -58,16 +53,8 @@
     "difficulty": "easy",
     "category": "Skeletal Anatomy",
     "topic": "Bone Marrow Distribution",
-    "tags": [
-      "medullary cavity",
-      "long bones",
-      "yellow marrow"
-    ],
-    "keywords": [
-      "femur",
-      "humerus",
-      "shaft"
-    ],
+    "tags": ["medullary cavity", "long bones", "yellow marrow"],
+    "keywords": ["femur", "humerus", "shaft"],
     "mblex_category": "Anatomy",
     "source_reference": "Gray’s Anatomy for Students",
     "text": "Where is yellow marrow most commonly found in adults?",
@@ -83,17 +70,15 @@
       "B. Diaphysis of long bones",
       "C. Epiphysis of long bones",
       "D. Vertebral bodies"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_003",
     "question": "What can yellow marrow revert to under extreme physiological stress?",
-    "answers": [
-      "Red marrow",
-      "Periosteum",
-      "Spongy bone",
-      "Cartilage"
-    ],
+    "answers": ["Red marrow", "Periosteum", "Spongy bone", "Cartilage"],
     "correct": 0,
     "short_explanation": "Yellow marrow can convert to red marrow in emergencies.",
     "long_explanation": "In cases of severe blood loss or anemia, the body can stimulate the transformation of yellow marrow back into red marrow to increase hematopoiesis and blood cell production.",
@@ -101,42 +86,27 @@
     "difficulty": "medium",
     "category": "Physiology",
     "topic": "Marrow Conversion",
-    "tags": [
-      "yellow marrow",
-      "hematopoiesis",
-      "marrow conversion"
-    ],
-    "keywords": [
-      "blood loss",
-      "stress",
-      "regeneration"
-    ],
+    "tags": ["yellow marrow", "hematopoiesis", "marrow conversion"],
+    "keywords": ["blood loss", "stress", "regeneration"],
     "mblex_category": "Pathology",
     "source_reference": "Robbins Basic Pathology",
     "text": "What can yellow marrow revert to under extreme physiological stress?",
-    "options": [
-      "Red marrow",
-      "Periosteum",
-      "Spongy bone",
-      "Cartilage"
-    ],
+    "options": ["Red marrow", "Periosteum", "Spongy bone", "Cartilage"],
     "correctAnswer": "Red marrow",
     "abcd": [
       "A. Red marrow",
       "B. Periosteum",
       "C. Spongy bone",
       "D. Cartilage"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_004",
     "question": "What type of cells predominantly make up yellow marrow?",
-    "answers": [
-      "Osteoblasts",
-      "Adipocytes",
-      "Chondrocytes",
-      "Erythroblasts"
-    ],
+    "answers": ["Osteoblasts", "Adipocytes", "Chondrocytes", "Erythroblasts"],
     "correct": 1,
     "short_explanation": "Adipocytes are the main cells in yellow marrow.",
     "long_explanation": "Yellow bone marrow is composed mostly of fat cells (adipocytes), which function in energy storage and do not produce blood cells unless reconverted under special conditions.",
@@ -144,32 +114,22 @@
     "difficulty": "easy",
     "category": "Histology",
     "topic": "Marrow Composition",
-    "tags": [
-      "adipocytes",
-      "yellow marrow",
-      "cell types"
-    ],
-    "keywords": [
-      "fat",
-      "tissue",
-      "bone"
-    ],
+    "tags": ["adipocytes", "yellow marrow", "cell types"],
+    "keywords": ["fat", "tissue", "bone"],
     "mblex_category": "Anatomy",
     "source_reference": "Junquiera's Basic Histology",
     "text": "What type of cells predominantly make up yellow marrow?",
-    "options": [
-      "Osteoblasts",
-      "Adipocytes",
-      "Chondrocytes",
-      "Erythroblasts"
-    ],
+    "options": ["Osteoblasts", "Adipocytes", "Chondrocytes", "Erythroblasts"],
     "correctAnswer": "Adipocytes",
     "abcd": [
       "A. Osteoblasts",
       "B. Adipocytes",
       "C. Chondrocytes",
       "D. Erythroblasts"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_005",
@@ -187,16 +147,8 @@
     "difficulty": "medium",
     "category": "Developmental Anatomy",
     "topic": "Marrow Aging",
-    "tags": [
-      "aging",
-      "marrow",
-      "red vs yellow marrow"
-    ],
-    "keywords": [
-      "growth",
-      "bone changes",
-      "adults"
-    ],
+    "tags": ["aging", "marrow", "red vs yellow marrow"],
+    "keywords": ["growth", "bone changes", "adults"],
     "mblex_category": "Anatomy",
     "source_reference": "Clinically Oriented Anatomy – Moore",
     "text": "Which of the following changes with age in bone marrow?",
@@ -212,7 +164,10 @@
       "B. Yellow marrow increases and red marrow decreases",
       "C. Both red and yellow marrow increase",
       "D. Neither changes with age"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_006",
@@ -230,16 +185,8 @@
     "difficulty": "easy",
     "category": "Systems Overview",
     "topic": "Skeletal Function",
-    "tags": [
-      "skeletal system",
-      "yellow marrow",
-      "fat metabolism"
-    ],
-    "keywords": [
-      "bone",
-      "energy",
-      "storage"
-    ],
+    "tags": ["skeletal system", "yellow marrow", "fat metabolism"],
+    "keywords": ["bone", "energy", "storage"],
     "mblex_category": "Anatomy",
     "source_reference": "Trail Guide to the Body",
     "text": "Yellow marrow is most closely associated with which system?",
@@ -255,17 +202,15 @@
       "B. Endocrine system",
       "C. Muscular system",
       "D. Skeletal system"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_007",
     "question": "In cases of severe trauma, yellow marrow can enter the bloodstream and cause what condition?",
-    "answers": [
-      "Embolism",
-      "Aneurysm",
-      "Stroke",
-      "Hemorrhage"
-    ],
+    "answers": ["Embolism", "Aneurysm", "Stroke", "Hemorrhage"],
     "correct": 0,
     "short_explanation": "Fat embolism can occur when yellow marrow enters circulation.",
     "long_explanation": "A fat embolism occurs when adipose tissue from yellow marrow escapes into the bloodstream following fracture of a long bone, potentially leading to respiratory distress and organ damage.",
@@ -273,42 +218,22 @@
     "difficulty": "hard",
     "category": "Pathophysiology",
     "topic": "Bone Injury Complications",
-    "tags": [
-      "fat embolism",
-      "trauma",
-      "yellow marrow"
-    ],
-    "keywords": [
-      "fracture",
-      "embolus",
-      "injury"
-    ],
+    "tags": ["fat embolism", "trauma", "yellow marrow"],
+    "keywords": ["fracture", "embolus", "injury"],
     "mblex_category": "Pathology",
     "source_reference": "Robbins and Cotran: Pathologic Basis of Disease",
     "text": "In cases of severe trauma, yellow marrow can enter the bloodstream and cause what condition?",
-    "options": [
-      "Embolism",
-      "Aneurysm",
-      "Stroke",
-      "Hemorrhage"
-    ],
+    "options": ["Embolism", "Aneurysm", "Stroke", "Hemorrhage"],
     "correctAnswer": "Embolism",
-    "abcd": [
-      "A. Embolism",
-      "B. Aneurysm",
-      "C. Stroke",
-      "D. Hemorrhage"
-    ]
+    "abcd": ["A. Embolism", "B. Aneurysm", "C. Stroke", "D. Hemorrhage"],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_008",
     "question": "Which vitamin is primarily stored in yellow marrow due to its fat content?",
-    "answers": [
-      "Vitamin B12",
-      "Vitamin C",
-      "Vitamin D",
-      "Vitamin A"
-    ],
+    "answers": ["Vitamin B12", "Vitamin C", "Vitamin D", "Vitamin A"],
     "correct": 3,
     "short_explanation": "Fat-soluble Vitamin A can be stored in yellow marrow fat.",
     "long_explanation": "Fat-soluble vitamins like A, D, E, and K are stored in adipose tissue. Since yellow marrow is composed of fat, it can act as a reserve for these nutrients, particularly Vitamin A.",
@@ -316,42 +241,22 @@
     "difficulty": "medium",
     "category": "Nutrition and Anatomy",
     "topic": "Fat-Soluble Vitamins",
-    "tags": [
-      "vitamin storage",
-      "fat-soluble",
-      "yellow marrow"
-    ],
-    "keywords": [
-      "nutrition",
-      "vitamin A",
-      "fat"
-    ],
+    "tags": ["vitamin storage", "fat-soluble", "yellow marrow"],
+    "keywords": ["nutrition", "vitamin A", "fat"],
     "mblex_category": "Physiology",
     "source_reference": "Guyton and Hall: Textbook of Medical Physiology",
     "text": "Which vitamin is primarily stored in yellow marrow due to its fat content?",
-    "options": [
-      "Vitamin B12",
-      "Vitamin C",
-      "Vitamin D",
-      "Vitamin A"
-    ],
+    "options": ["Vitamin B12", "Vitamin C", "Vitamin D", "Vitamin A"],
     "correctAnswer": "Vitamin A",
-    "abcd": [
-      "A. Vitamin B12",
-      "B. Vitamin C",
-      "C. Vitamin D",
-      "D. Vitamin A"
-    ]
+    "abcd": ["A. Vitamin B12", "B. Vitamin C", "C. Vitamin D", "D. Vitamin A"],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_009",
     "question": "What condition may result in yellow marrow replacing red marrow prematurely?",
-    "answers": [
-      "Anemia",
-      "Leukemia",
-      "Radiation exposure",
-      "Osteoarthritis"
-    ],
+    "answers": ["Anemia", "Leukemia", "Radiation exposure", "Osteoarthritis"],
     "correct": 2,
     "short_explanation": "Radiation can destroy red marrow and accelerate yellow marrow replacement.",
     "long_explanation": "Radiation therapy and environmental exposure can damage hematopoietic tissue, causing a loss of red marrow and subsequent fat infiltration, replacing it with yellow marrow and reducing blood cell production.",
@@ -359,42 +264,27 @@
     "difficulty": "hard",
     "category": "Pathology",
     "topic": "Marrow Disorders",
-    "tags": [
-      "radiation",
-      "marrow replacement",
-      "yellow marrow"
-    ],
-    "keywords": [
-      "hematopoiesis",
-      "damage",
-      "fat infiltration"
-    ],
+    "tags": ["radiation", "marrow replacement", "yellow marrow"],
+    "keywords": ["hematopoiesis", "damage", "fat infiltration"],
     "mblex_category": "Pathology",
     "source_reference": "Medical Physiology – Boron & Boulpaep",
     "text": "What condition may result in yellow marrow replacing red marrow prematurely?",
-    "options": [
-      "Anemia",
-      "Leukemia",
-      "Radiation exposure",
-      "Osteoarthritis"
-    ],
+    "options": ["Anemia", "Leukemia", "Radiation exposure", "Osteoarthritis"],
     "correctAnswer": "Radiation exposure",
     "abcd": [
       "A. Anemia",
       "B. Leukemia",
       "C. Radiation exposure",
       "D. Osteoarthritis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   },
   {
     "id": "yellow_marrow_010",
     "question": "Which of the following bones retains red marrow into adulthood instead of yellow?",
-    "answers": [
-      "Femur",
-      "Sternum",
-      "Tibia",
-      "Humerus"
-    ],
+    "answers": ["Femur", "Sternum", "Tibia", "Humerus"],
     "correct": 1,
     "short_explanation": "Flat bones like the sternum retain red marrow for life.",
     "long_explanation": "Flat bones such as the sternum, pelvis, ribs, and vertebrae maintain red marrow into adulthood for continued blood cell production. Long bones switch to yellow marrow.",
@@ -402,31 +292,16 @@
     "difficulty": "medium",
     "category": "Anatomy",
     "topic": "Bone Marrow Locations",
-    "tags": [
-      "red marrow",
-      "yellow marrow",
-      "sternum"
-    ],
-    "keywords": [
-      "bone types",
-      "blood formation",
-      "skeletal system"
-    ],
+    "tags": ["red marrow", "yellow marrow", "sternum"],
+    "keywords": ["bone types", "blood formation", "skeletal system"],
     "mblex_category": "Anatomy",
     "source_reference": "Clinically Oriented Anatomy – Moore",
     "text": "Which of the following bones retains red marrow into adulthood instead of yellow?",
-    "options": [
-      "Femur",
-      "Sternum",
-      "Tibia",
-      "Humerus"
-    ],
+    "options": ["Femur", "Sternum", "Tibia", "Humerus"],
     "correctAnswer": "Sternum",
-    "abcd": [
-      "A. Femur",
-      "B. Sternum",
-      "C. Tibia",
-      "D. Humerus"
-    ]
+    "abcd": ["A. Femur", "B. Sternum", "C. Tibia", "D. Humerus"],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "yellow_marrow.json"
   }
 ]

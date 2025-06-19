@@ -2,12 +2,7 @@
   {
     "id": "Professional Ethics 001",
     "question": "What is the primary principle of professional ethics in massage therapy?",
-    "answers": [
-      "Flexibility",
-      "Confidentiality",
-      "Appearance",
-      "Friendship"
-    ],
+    "answers": ["Flexibility", "Confidentiality", "Appearance", "Friendship"],
     "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
@@ -37,19 +32,17 @@
     "long_explanation": "Professional ethics in massage therapy emphasize maintaining client confidentiality to protect sensitive health information and uphold therapeutic integrity.",
     "clinical_application": "A therapist who maintains confidentiality builds client confidence and ensures compliance with legal and ethical standards.",
     "text": "What is the primary principle of professional ethics in massage therapy?",
-    "options": [
-      "Flexibility",
-      "Confidentiality",
-      "Appearance",
-      "Friendship"
-    ],
+    "options": ["Flexibility", "Confidentiality", "Appearance", "Friendship"],
     "correctAnswer": "Confidentiality",
     "abcd": [
       "A. Flexibility",
       "B. Confidentiality",
       "C. Appearance",
       "D. Friendship"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 002",
@@ -109,7 +102,10 @@
       "B. Legal activities a massage therapist is allowed to perform",
       "C. Client preferences for technique",
       "D. Optional extra services"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 003",
@@ -167,7 +163,10 @@
       "B. Permission after full disclosure of procedures and risks",
       "C. Therapist's approval to treat a client",
       "D. A waiver signed by the therapist"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 004",
@@ -183,16 +182,8 @@
     "difficulty": "intermediate",
     "topic": "licensing",
     "category": "Licensing",
-    "tags": [
-      "ethics",
-      "client",
-      "ethics_nonmaleficence"
-    ],
-    "keywords": [
-      "ethics",
-      "client",
-      "ethics_nonmaleficence"
-    ],
+    "tags": ["ethics", "client", "ethics_nonmaleficence"],
+    "keywords": ["ethics", "client", "ethics_nonmaleficence"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -219,7 +210,10 @@
       "B. Avoiding dual relationships",
       "C. The duty to do no harm",
       "D. Obtaining liability insurance"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 005",
@@ -235,11 +229,7 @@
     "difficulty": "intermediate",
     "topic": "licensing",
     "category": "Licensing",
-    "tags": [
-      "client",
-      "modality_massage_therapy",
-      "ethics_dual_relationship"
-    ],
+    "tags": ["client", "modality_massage_therapy", "ethics_dual_relationship"],
     "keywords": [
       "client",
       "modality_massage_therapy",
@@ -271,7 +261,10 @@
       "B. Having both personal and professional relationships with a client",
       "C. Working in two clinics",
       "D. Providing two services in one session"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 006",
@@ -287,16 +280,8 @@
     "difficulty": "intermediate",
     "topic": "licensing",
     "category": "Licensing",
-    "tags": [
-      "client",
-      "business_marketing",
-      "ethics_reporting"
-    ],
-    "keywords": [
-      "client",
-      "business_marketing",
-      "ethics_reporting"
-    ],
+    "tags": ["client", "business_marketing", "ethics_reporting"],
+    "keywords": ["client", "business_marketing", "ethics_reporting"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -323,7 +308,10 @@
       "B. If the client misses appointments",
       "C. If legally required to protect the client or others",
       "D. To improve clinic marketing"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 007",
@@ -377,17 +365,15 @@
       "B. Physical boundaries between techniques",
       "C. Avoiding personal expression",
       "D. Emphasizing spiritual healing"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 008",
     "question": "What organization protects health information under federal law?",
-    "answers": [
-      "HIPAA",
-      "FSMTB",
-      "AMTA",
-      "NCBTMB"
-    ],
+    "answers": ["HIPAA", "FSMTB", "AMTA", "NCBTMB"],
     "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
@@ -419,19 +405,12 @@
     "long_explanation": "HIPAA is a U.S. law that requires practitioners to maintain the privacy and security of client health records.",
     "clinical_application": "Therapists must store records securely and avoid sharing private information without consent.",
     "text": "What organization protects health information under federal law?",
-    "options": [
-      "HIPAA",
-      "FSMTB",
-      "AMTA",
-      "NCBTMB"
-    ],
+    "options": ["HIPAA", "FSMTB", "AMTA", "NCBTMB"],
     "correctAnswer": "HIPAA",
-    "abcd": [
-      "A. HIPAA",
-      "B. FSMTB",
-      "C. AMTA",
-      "D. NCBTMB"
-    ]
+    "abcd": ["A. HIPAA", "B. FSMTB", "C. AMTA", "D. NCBTMB"],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 009",
@@ -487,7 +466,10 @@
       "B. Predetermined ethical and behavioral limits in therapeutic settings",
       "C. A law restricting clinic hours",
       "D. A physical limitation from injury"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   },
   {
     "id": "Professional Ethics 010",
@@ -543,6 +525,9 @@
       "B. Ensure informed consent and reinforce professional boundaries",
       "C. End the session immediately",
       "D. Refer the client elsewhere without explanation"
-    ]
+    ],
+    "main_topic": "licensing",
+    "subtopic": "ethics",
+    "filename": "professional_ethics.json"
   }
 ]
