@@ -2,12 +2,7 @@
   {
     "id": "pineal_001",
     "question": "What is the primary hormone secreted by the pineal gland?",
-    "answers": [
-      "Serotonin",
-      "Dopamine",
-      "Melatonin",
-      "Cortisol"
-    ],
+    "answers": ["Serotonin", "Dopamine", "Melatonin", "Cortisol"],
     "correct": 2,
     "short_explanation": "Melatonin is secreted by the pineal gland to regulate sleep cycles.",
     "long_explanation": "The pineal gland secretes melatonin, especially in response to darkness, helping to regulate the circadian rhythm and sleep-wake cycles.",
@@ -15,32 +10,17 @@
     "difficulty": "easy",
     "category": "Endocrine System",
     "topic": "Pineal Gland",
-    "tags": [
-      "melatonin",
-      "pineal gland",
-      "sleep"
-    ],
-    "keywords": [
-      "circadian rhythm",
-      "hormones",
-      "pineal"
-    ],
+    "tags": ["melatonin", "pineal gland", "sleep"],
+    "keywords": ["circadian rhythm", "hormones", "pineal"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
     "text": "What is the primary hormone secreted by the pineal gland?",
-    "options": [
-      "Serotonin",
-      "Dopamine",
-      "Melatonin",
-      "Cortisol"
-    ],
+    "options": ["Serotonin", "Dopamine", "Melatonin", "Cortisol"],
     "correctAnswer": "Melatonin",
-    "abcd": [
-      "A. Serotonin",
-      "B. Dopamine",
-      "C. Melatonin",
-      "D. Cortisol"
-    ]
+    "abcd": ["A. Serotonin", "B. Dopamine", "C. Melatonin", "D. Cortisol"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_002",
@@ -58,16 +38,8 @@
     "difficulty": "medium",
     "category": "Endocrine System",
     "topic": "Pineal Gland Anatomy",
-    "tags": [
-      "location",
-      "pineal",
-      "brain"
-    ],
-    "keywords": [
-      "epithalamus",
-      "brain gland",
-      "neuroendocrine"
-    ],
+    "tags": ["location", "pineal", "brain"],
+    "keywords": ["epithalamus", "brain gland", "neuroendocrine"],
     "mblex_category": "Anatomy",
     "source_reference": "Netter: Atlas of Human Anatomy",
     "text": "Where is the pineal gland located?",
@@ -83,7 +55,10 @@
       "B. Between the cerebral hemispheres near the thalamus",
       "C. Behind the pituitary gland",
       "D. Above the cerebellum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_003",
@@ -101,16 +76,8 @@
     "difficulty": "medium",
     "category": "Endocrine System",
     "topic": "Circadian Regulation",
-    "tags": [
-      "light",
-      "circadian",
-      "pineal gland"
-    ],
-    "keywords": [
-      "melatonin",
-      "photoreception",
-      "SCN"
-    ],
+    "tags": ["light", "circadian", "pineal gland"],
+    "keywords": ["melatonin", "photoreception", "SCN"],
     "mblex_category": "Physiology",
     "source_reference": "Guyton & Hall: Textbook of Medical Physiology",
     "text": "What environmental cue regulates pineal gland function?",
@@ -126,7 +93,10 @@
       "B. Light exposure",
       "C. Sound frequency",
       "D. Touch stimulation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_004",
@@ -144,16 +114,8 @@
     "difficulty": "medium",
     "category": "Endocrine System",
     "topic": "Aging",
-    "tags": [
-      "pineal gland",
-      "calcification",
-      "aging"
-    ],
-    "keywords": [
-      "melatonin",
-      "sleep loss",
-      "senescence"
-    ],
+    "tags": ["pineal gland", "calcification", "aging"],
+    "keywords": ["melatonin", "sleep loss", "senescence"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Robbins & Cotran: Pathologic Basis of Disease",
     "text": "What is a common age-related change in the pineal gland?",
@@ -169,7 +131,10 @@
       "B. Enlargement and hypertrophy",
       "C. Calcification",
       "D. Increased blood flow"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_005",
@@ -187,16 +152,8 @@
     "difficulty": "hard",
     "category": "Endocrine System",
     "topic": "Neuroendocrine Pathways",
-    "tags": [
-      "SCN",
-      "pineal",
-      "circadian rhythm"
-    ],
-    "keywords": [
-      "suprachiasmatic nucleus",
-      "hypothalamus",
-      "melatonin"
-    ],
+    "tags": ["SCN", "pineal", "circadian rhythm"],
+    "keywords": ["suprachiasmatic nucleus", "hypothalamus", "melatonin"],
     "mblex_category": "Physiology",
     "source_reference": "Bear, Connors & Paradiso: Neuroscience Exploring the Brain",
     "text": "Which structure communicates light-dark cycles to the pineal gland?",
@@ -212,7 +169,10 @@
       "B. Suprachiasmatic nucleus (SCN)",
       "C. Hypothalamus",
       "D. Pituitary gland"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_006",
@@ -230,16 +190,8 @@
     "difficulty": "easy",
     "category": "Endocrine System",
     "topic": "Melatonin Effects",
-    "tags": [
-      "melatonin",
-      "sleep",
-      "pineal"
-    ],
-    "keywords": [
-      "circadian",
-      "hormonal rhythm",
-      "light response"
-    ],
+    "tags": ["melatonin", "sleep", "pineal"],
+    "keywords": ["circadian", "hormonal rhythm", "light response"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Silverthorn: Human Physiology",
     "text": "Melatonin primarily affects which physiological system?",
@@ -255,17 +207,15 @@
       "B. Integumentary system",
       "C. Endocrine system",
       "D. Sleep-wake cycle"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_007",
     "question": "Which neurotransmitter is a precursor to melatonin in the pineal gland?",
-    "answers": [
-      "GABA",
-      "Serotonin",
-      "Epinephrine",
-      "Histamine"
-    ],
+    "answers": ["GABA", "Serotonin", "Epinephrine", "Histamine"],
     "correct": 1,
     "short_explanation": "Melatonin is synthesized from serotonin in the pineal gland.",
     "long_explanation": "The pineal gland converts serotonin into melatonin using enzymes activated during darkness, highlighting the biochemical link between mood and sleep.",
@@ -273,32 +223,17 @@
     "difficulty": "medium",
     "category": "Endocrine System",
     "topic": "Neurotransmitters",
-    "tags": [
-      "serotonin",
-      "melatonin",
-      "pineal gland"
-    ],
-    "keywords": [
-      "precursor",
-      "neuroendocrine",
-      "mood and sleep"
-    ],
+    "tags": ["serotonin", "melatonin", "pineal gland"],
+    "keywords": ["precursor", "neuroendocrine", "mood and sleep"],
     "mblex_category": "Neurophysiology",
     "source_reference": "Tortora: Principles of Anatomy and Physiology",
     "text": "Which neurotransmitter is a precursor to melatonin in the pineal gland?",
-    "options": [
-      "GABA",
-      "Serotonin",
-      "Epinephrine",
-      "Histamine"
-    ],
+    "options": ["GABA", "Serotonin", "Epinephrine", "Histamine"],
     "correctAnswer": "Serotonin",
-    "abcd": [
-      "A. GABA",
-      "B. Serotonin",
-      "C. Epinephrine",
-      "D. Histamine"
-    ]
+    "abcd": ["A. GABA", "B. Serotonin", "C. Epinephrine", "D. Histamine"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_008",
@@ -316,16 +251,8 @@
     "difficulty": "hard",
     "category": "Pathophysiology",
     "topic": "Pineal Tumors",
-    "tags": [
-      "tumor",
-      "CSF",
-      "hydrocephalus"
-    ],
-    "keywords": [
-      "intracranial pressure",
-      "pineal mass",
-      "neurological signs"
-    ],
+    "tags": ["tumor", "CSF", "hydrocephalus"],
+    "keywords": ["intracranial pressure", "pineal mass", "neurological signs"],
     "mblex_category": "Pathology",
     "source_reference": "Robbins: Basic Pathology",
     "text": "What condition may result from pineal gland tumors?",
@@ -341,17 +268,15 @@
       "B. Hydrocephalus",
       "C. Increased heart rate",
       "D. Hypoglycemia"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_009",
     "question": "Which of the following best describes the pineal gland’s shape?",
-    "answers": [
-      "Bean-shaped",
-      "Cone-shaped",
-      "Oval-shaped",
-      "Rod-shaped"
-    ],
+    "answers": ["Bean-shaped", "Cone-shaped", "Oval-shaped", "Rod-shaped"],
     "correct": 1,
     "short_explanation": "The pineal gland is cone-shaped and small.",
     "long_explanation": "Its name comes from its pinecone-like shape, measuring about 5–8 mm in length, and it plays a crucial role in hormonal regulation.",
@@ -359,42 +284,27 @@
     "difficulty": "easy",
     "category": "Anatomy",
     "topic": "Pineal Gland Morphology",
-    "tags": [
-      "shape",
-      "pineal",
-      "anatomy"
-    ],
-    "keywords": [
-      "cone-shaped",
-      "pinecone",
-      "endocrine anatomy"
-    ],
+    "tags": ["shape", "pineal", "anatomy"],
+    "keywords": ["cone-shaped", "pinecone", "endocrine anatomy"],
     "mblex_category": "Anatomy",
     "source_reference": "Netter: Atlas of Human Anatomy",
     "text": "Which of the following best describes the pineal gland’s shape?",
-    "options": [
-      "Bean-shaped",
-      "Cone-shaped",
-      "Oval-shaped",
-      "Rod-shaped"
-    ],
+    "options": ["Bean-shaped", "Cone-shaped", "Oval-shaped", "Rod-shaped"],
     "correctAnswer": "Cone-shaped",
     "abcd": [
       "A. Bean-shaped",
       "B. Cone-shaped",
       "C. Oval-shaped",
       "D. Rod-shaped"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   },
   {
     "id": "pineal_010",
     "question": "The pineal gland is part of which broader brain region?",
-    "answers": [
-      "Diencephalon",
-      "Cerebellum",
-      "Brainstem",
-      "Medulla"
-    ],
+    "answers": ["Diencephalon", "Cerebellum", "Brainstem", "Medulla"],
     "correct": 0,
     "short_explanation": "The pineal gland belongs to the diencephalon region.",
     "long_explanation": "The diencephalon contains major endocrine and sensory structures including the pineal gland, thalamus, hypothalamus, and epithalamus.",
@@ -402,31 +312,16 @@
     "difficulty": "medium",
     "category": "Neuroanatomy",
     "topic": "Brain Regions",
-    "tags": [
-      "diencephalon",
-      "pineal",
-      "brain anatomy"
-    ],
-    "keywords": [
-      "epithalamus",
-      "central brain",
-      "neuroendocrine"
-    ],
+    "tags": ["diencephalon", "pineal", "brain anatomy"],
+    "keywords": ["epithalamus", "central brain", "neuroendocrine"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Bear: Neuroscience",
     "text": "The pineal gland is part of which broader brain region?",
-    "options": [
-      "Diencephalon",
-      "Cerebellum",
-      "Brainstem",
-      "Medulla"
-    ],
+    "options": ["Diencephalon", "Cerebellum", "Brainstem", "Medulla"],
     "correctAnswer": "Diencephalon",
-    "abcd": [
-      "A. Diencephalon",
-      "B. Cerebellum",
-      "C. Brainstem",
-      "D. Medulla"
-    ]
+    "abcd": ["A. Diencephalon", "B. Cerebellum", "C. Brainstem", "D. Medulla"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pineal_gland.json"
   }
 ]

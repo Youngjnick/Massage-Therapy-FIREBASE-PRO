@@ -15,16 +15,8 @@
     "topic": "spleen",
     "category": "Organ Function",
     "difficulty": "basic",
-    "tags": [
-      "spleen",
-      "blood filtration",
-      "red blood cells"
-    ],
-    "keywords": [
-      "RBC recycling",
-      "spleen function",
-      "lymphatic organ"
-    ],
+    "tags": ["spleen", "blood filtration", "red blood cells"],
+    "keywords": ["RBC recycling", "spleen function", "lymphatic organ"],
     "source_reference": "Guyton and Hall Medical Physiology",
     "stats": {
       "correct": 0,
@@ -44,17 +36,15 @@
       "B. Produce insulin",
       "C. Filter blood and recycle red blood cells",
       "D. Produce cerebrospinal fluid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_002",
     "question": "What kind of immune cells are abundant in the spleen's white pulp?",
-    "answers": [
-      "Erythrocytes",
-      "Hepatocytes",
-      "Lymphocytes",
-      "Chondrocytes"
-    ],
+    "answers": ["Erythrocytes", "Hepatocytes", "Lymphocytes", "Chondrocytes"],
     "correct": 2,
     "short_explanation": "Lymphocytes dominate the white pulp of the spleen.",
     "long_explanation": "White pulp in the spleen contains a high concentration of lymphocytes which are activated during immune responses to blood-borne pathogens.",
@@ -62,16 +52,8 @@
     "topic": "spleen",
     "category": "Immunity",
     "difficulty": "intermediate",
-    "tags": [
-      "spleen",
-      "lymphocytes",
-      "white pulp"
-    ],
-    "keywords": [
-      "immune tissue",
-      "white pulp",
-      "spleen lymphocytes"
-    ],
+    "tags": ["spleen", "lymphocytes", "white pulp"],
+    "keywords": ["immune tissue", "white pulp", "spleen lymphocytes"],
     "source_reference": "Immunology: A Short Course",
     "stats": {
       "correct": 0,
@@ -79,19 +61,17 @@
       "attempts": 0
     },
     "text": "What kind of immune cells are abundant in the spleen's white pulp?",
-    "options": [
-      "Erythrocytes",
-      "Hepatocytes",
-      "Lymphocytes",
-      "Chondrocytes"
-    ],
+    "options": ["Erythrocytes", "Hepatocytes", "Lymphocytes", "Chondrocytes"],
     "correctAnswer": "Lymphocytes",
     "abcd": [
       "A. Erythrocytes",
       "B. Hepatocytes",
       "C. Lymphocytes",
       "D. Chondrocytes"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_003",
@@ -109,16 +89,8 @@
     "topic": "spleen",
     "category": "Emergency Signs",
     "difficulty": "advanced",
-    "tags": [
-      "Kehr's sign",
-      "splenic rupture",
-      "referred pain"
-    ],
-    "keywords": [
-      "abdominal trauma",
-      "spleen injury",
-      "shoulder pain"
-    ],
+    "tags": ["Kehr's sign", "splenic rupture", "referred pain"],
+    "keywords": ["abdominal trauma", "spleen injury", "shoulder pain"],
     "source_reference": "Emergency Medicine Textbook",
     "stats": {
       "correct": 0,
@@ -138,17 +110,15 @@
       "B. Bradycardia",
       "C. Left shoulder pain (Kehr's sign)",
       "D. Difficulty swallowing"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_004",
     "question": "Which condition commonly leads to an enlarged spleen?",
-    "answers": [
-      "Appendicitis",
-      "Liver cirrhosis",
-      "Diabetes",
-      "Cholecystitis"
-    ],
+    "answers": ["Appendicitis", "Liver cirrhosis", "Diabetes", "Cholecystitis"],
     "correct": 1,
     "short_explanation": "Liver cirrhosis can cause splenomegaly due to portal hypertension.",
     "long_explanation": "Increased pressure in the portal venous system leads to backup into the spleen, enlarging it due to excess blood pooling and immune activity.",
@@ -156,16 +126,8 @@
     "topic": "spleen",
     "category": "Pathology",
     "difficulty": "intermediate",
-    "tags": [
-      "splenomegaly",
-      "portal hypertension",
-      "liver disease"
-    ],
-    "keywords": [
-      "spleen enlargement",
-      "cirrhosis",
-      "massage precautions"
-    ],
+    "tags": ["splenomegaly", "portal hypertension", "liver disease"],
+    "keywords": ["spleen enlargement", "cirrhosis", "massage precautions"],
     "source_reference": "Robbins Pathologic Basis of Disease",
     "stats": {
       "correct": 0,
@@ -173,19 +135,17 @@
       "attempts": 0
     },
     "text": "Which condition commonly leads to an enlarged spleen?",
-    "options": [
-      "Appendicitis",
-      "Liver cirrhosis",
-      "Diabetes",
-      "Cholecystitis"
-    ],
+    "options": ["Appendicitis", "Liver cirrhosis", "Diabetes", "Cholecystitis"],
     "correctAnswer": "Liver cirrhosis",
     "abcd": [
       "A. Appendicitis",
       "B. Liver cirrhosis",
       "C. Diabetes",
       "D. Cholecystitis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_005",
@@ -203,16 +163,8 @@
     "topic": "spleen",
     "category": "Immune Compromise",
     "difficulty": "intermediate",
-    "tags": [
-      "splenectomy",
-      "immune suppression",
-      "blood pathogens"
-    ],
-    "keywords": [
-      "splenectomy risks",
-      "immunocompromised",
-      "infection control"
-    ],
+    "tags": ["splenectomy", "immune suppression", "blood pathogens"],
+    "keywords": ["splenectomy risks", "immunocompromised", "infection control"],
     "source_reference": "Medical Microbiology by Murray",
     "stats": {
       "correct": 0,
@@ -232,7 +184,10 @@
       "B. Becomes slightly impaired",
       "C. Is unaffected",
       "D. Decreases significantly"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_006",
@@ -250,16 +205,8 @@
     "topic": "spleen",
     "category": "Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "left upper quadrant",
-      "spleen location",
-      "rib protection"
-    ],
-    "keywords": [
-      "LUQ",
-      "spleen anatomy",
-      "abdominal quadrants"
-    ],
+    "tags": ["left upper quadrant", "spleen location", "rib protection"],
+    "keywords": ["LUQ", "spleen anatomy", "abdominal quadrants"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -279,17 +226,15 @@
       "B. Left upper quadrant",
       "C. Left lower quadrant",
       "D. Midline"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_007",
     "question": "Which part of the spleen is responsible for red blood cell recycling?",
-    "answers": [
-      "White pulp",
-      "Lymphoid follicles",
-      "Red pulp",
-      "Trabeculae"
-    ],
+    "answers": ["White pulp", "Lymphoid follicles", "Red pulp", "Trabeculae"],
     "correct": 2,
     "short_explanation": "The red pulp of the spleen is involved in RBC breakdown.",
     "long_explanation": "The red pulp contains macrophages that phagocytose old erythrocytes, recycle iron, and remove debris.",
@@ -297,16 +242,8 @@
     "topic": "spleen",
     "category": "Physiology",
     "difficulty": "intermediate",
-    "tags": [
-      "red pulp",
-      "RBC recycling",
-      "iron recovery"
-    ],
-    "keywords": [
-      "erythrocyte turnover",
-      "macrophages",
-      "spleen filtering"
-    ],
+    "tags": ["red pulp", "RBC recycling", "iron recovery"],
+    "keywords": ["erythrocyte turnover", "macrophages", "spleen filtering"],
     "source_reference": "Physiology by Berne & Levy",
     "stats": {
       "correct": 0,
@@ -314,19 +251,17 @@
       "attempts": 0
     },
     "text": "Which part of the spleen is responsible for red blood cell recycling?",
-    "options": [
-      "White pulp",
-      "Lymphoid follicles",
-      "Red pulp",
-      "Trabeculae"
-    ],
+    "options": ["White pulp", "Lymphoid follicles", "Red pulp", "Trabeculae"],
     "correctAnswer": "Red pulp",
     "abcd": [
       "A. White pulp",
       "B. Lymphoid follicles",
       "C. Red pulp",
       "D. Trabeculae"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_008",
@@ -344,16 +279,8 @@
     "topic": "spleen",
     "category": "Histology",
     "difficulty": "intermediate",
-    "tags": [
-      "white pulp",
-      "lymphoid tissue",
-      "histology"
-    ],
-    "keywords": [
-      "T cells",
-      "B cells",
-      "immune tissue"
-    ],
+    "tags": ["white pulp", "lymphoid tissue", "histology"],
+    "keywords": ["T cells", "B cells", "immune tissue"],
     "source_reference": "Histology: A Text and Atlas",
     "stats": {
       "correct": 0,
@@ -373,7 +300,10 @@
       "B. Cardiac muscle",
       "C. Lymphoid tissue",
       "D. Epithelial tissue"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_009",
@@ -391,16 +321,8 @@
     "topic": "spleen",
     "category": "Vascular Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "splenic artery",
-      "blood supply",
-      "vascular"
-    ],
-    "keywords": [
-      "celiac trunk",
-      "arterial flow",
-      "abdominal arteries"
-    ],
+    "tags": ["splenic artery", "blood supply", "vascular"],
+    "keywords": ["celiac trunk", "arterial flow", "abdominal arteries"],
     "source_reference": "Moore's Clinically Oriented Anatomy",
     "stats": {
       "correct": 0,
@@ -420,7 +342,10 @@
       "B. Splenic artery",
       "C. Celiac trunk",
       "D. Superior mesenteric artery"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   },
   {
     "id": "Spleen_010",
@@ -438,11 +363,7 @@
     "topic": "spleen",
     "category": "Surgical Conditions",
     "difficulty": "intermediate",
-    "tags": [
-      "splenectomy",
-      "trauma",
-      "surgical removal"
-    ],
+    "tags": ["splenectomy", "trauma", "surgical removal"],
     "keywords": [
       "spleen injury",
       "splenic bleeding",
@@ -467,6 +388,9 @@
       "B. Splenic trauma",
       "C. Appendicitis",
       "D. Renal failure"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "spleen.json"
   }
 ]

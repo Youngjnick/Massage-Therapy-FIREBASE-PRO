@@ -2,12 +2,7 @@
   {
     "id": "Reflexology Clinical Application 001",
     "question": "Which condition is commonly supported through reflexology by stimulating the solar plexus point?",
-    "answers": [
-      "Constipation",
-      "Anxiety",
-      "Skin irritation",
-      "Muscle fatigue"
-    ],
+    "answers": ["Constipation", "Anxiety", "Skin irritation", "Muscle fatigue"],
     "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
@@ -48,19 +43,17 @@
     "synonyms": [],
     "variant": 1,
     "text": "Which condition is commonly supported through reflexology by stimulating the solar plexus point?",
-    "options": [
-      "Constipation",
-      "Anxiety",
-      "Skin irritation",
-      "Muscle fatigue"
-    ],
+    "options": ["Constipation", "Anxiety", "Skin irritation", "Muscle fatigue"],
     "correctAnswer": "Anxiety",
     "abcd": [
       "A. Constipation",
       "B. Anxiety",
       "C. Skin irritation",
       "D. Muscle fatigue"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 002",
@@ -129,32 +122,22 @@
       "B. Enhances digestion and bowel movement",
       "C. Relaxes neck tension",
       "D. Increases alertness"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 003",
     "question": "Which system of the body is targeted through the kidney, ureter, and bladder reflexes?",
-    "answers": [
-      "Nervous",
-      "Respiratory",
-      "Urinary",
-      "Lymphatic"
-    ],
+    "answers": ["Nervous", "Respiratory", "Urinary", "Lymphatic"],
     "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "anatomy_nervous_system",
-      "concept_targeted",
-      "organ_bladder"
-    ],
-    "keywords": [
-      "anatomy_nervous_system",
-      "concept_targeted",
-      "organ_bladder"
-    ],
+    "tags": ["anatomy_nervous_system", "concept_targeted", "organ_bladder"],
+    "keywords": ["anatomy_nervous_system", "concept_targeted", "organ_bladder"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -176,29 +159,17 @@
     "synonyms": [],
     "variant": 3,
     "text": "Which system of the body is targeted through the kidney, ureter, and bladder reflexes?",
-    "options": [
-      "Nervous",
-      "Respiratory",
-      "Urinary",
-      "Lymphatic"
-    ],
+    "options": ["Nervous", "Respiratory", "Urinary", "Lymphatic"],
     "correctAnswer": "Urinary",
-    "abcd": [
-      "A. Nervous",
-      "B. Respiratory",
-      "C. Urinary",
-      "D. Lymphatic"
-    ]
+    "abcd": ["A. Nervous", "B. Respiratory", "C. Urinary", "D. Lymphatic"],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 004",
     "question": "Reflexology may help with sleep issues by stimulating points related to the:",
-    "answers": [
-      "Spine",
-      "Pineal gland",
-      "Sinuses",
-      "Liver"
-    ],
+    "answers": ["Spine", "Pineal gland", "Sinuses", "Liver"],
     "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
@@ -237,19 +208,12 @@
     "synonyms": [],
     "variant": 4,
     "text": "Reflexology may help with sleep issues by stimulating points related to the:",
-    "options": [
-      "Spine",
-      "Pineal gland",
-      "Sinuses",
-      "Liver"
-    ],
+    "options": ["Spine", "Pineal gland", "Sinuses", "Liver"],
     "correctAnswer": "Pineal gland",
-    "abcd": [
-      "A. Spine",
-      "B. Pineal gland",
-      "C. Sinuses",
-      "D. Liver"
-    ]
+    "abcd": ["A. Spine", "B. Pineal gland", "C. Sinuses", "D. Liver"],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 005",
@@ -265,14 +229,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "anatomy_reflex_point",
-      "concept_targeted"
-    ],
-    "keywords": [
-      "anatomy_reflex_point",
-      "concept_targeted"
-    ],
+    "tags": ["anatomy_reflex_point", "concept_targeted"],
+    "keywords": ["anatomy_reflex_point", "concept_targeted"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -306,7 +264,10 @@
       "B. Tips of the toes",
       "C. Ball of the foot",
       "D. Arch of the foot"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 006",
@@ -331,11 +292,7 @@
     "synonyms": [],
     "variant": 6,
     "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
-    "tags": [
-      "respiratory_system",
-      "breathwork",
-      "diaphragm_zone"
-    ],
+    "tags": ["respiratory_system", "breathwork", "diaphragm_zone"],
     "text": "What effect does stimulating the diaphragm reflex point have in a reflexology session?",
     "options": [
       "Promotes deep breathing and relaxation",
@@ -349,17 +306,15 @@
       "B. Stimulates blood pressure",
       "C. Tightens abdominal muscles",
       "D. Increases spinal flexibility"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 007",
     "question": "Which reflex zone would best support sinus drainage and congestion relief?",
-    "answers": [
-      "Toe pads",
-      "Heel",
-      "Lateral arch",
-      "Midfoot center"
-    ],
+    "answers": ["Toe pads", "Heel", "Lateral arch", "Midfoot center"],
     "correct": 0,
     "short_explanation": "Toe pads reflect sinus areas in reflexology.",
     "long_explanation": "Gentle stimulation of the pads of the toes can improve sinus function, reduce congestion, and help relieve sinus headaches.",
@@ -374,25 +329,14 @@
     "synonyms": [],
     "variant": 7,
     "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
-    "tags": [
-      "ENT_system",
-      "sinus_relief",
-      "seasonal_support"
-    ],
+    "tags": ["ENT_system", "sinus_relief", "seasonal_support"],
     "text": "Which reflex zone would best support sinus drainage and congestion relief?",
-    "options": [
-      "Toe pads",
-      "Heel",
-      "Lateral arch",
-      "Midfoot center"
-    ],
+    "options": ["Toe pads", "Heel", "Lateral arch", "Midfoot center"],
     "correctAnswer": "Toe pads",
-    "abcd": [
-      "A. Toe pads",
-      "B. Heel",
-      "C. Lateral arch",
-      "D. Midfoot center"
-    ]
+    "abcd": ["A. Toe pads", "B. Heel", "C. Lateral arch", "D. Midfoot center"],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 008",
@@ -417,11 +361,7 @@
     "synonyms": [],
     "variant": 8,
     "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
-    "tags": [
-      "endocrine_system",
-      "hormonal_balance",
-      "glandular_reflex"
-    ],
+    "tags": ["endocrine_system", "hormonal_balance", "glandular_reflex"],
     "text": "When working with clients experiencing hormonal imbalances, which glandular reflex zones are often emphasized?",
     "options": [
       "Thyroid, pituitary, and adrenal",
@@ -435,7 +375,10 @@
       "B. Liver and spleen",
       "C. Sinuses and colon",
       "D. Heart and kidneys"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 009",
@@ -460,11 +403,7 @@
     "synonyms": [],
     "variant": 9,
     "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
-    "tags": [
-      "spinal_reflex",
-      "postural_support",
-      "structural_mapping"
-    ],
+    "tags": ["spinal_reflex", "postural_support", "structural_mapping"],
     "text": "Which foot reflex zone is associated with promoting spinal alignment and posture support?",
     "options": [
       "Medial longitudinal arch",
@@ -478,7 +417,10 @@
       "B. Ball of the foot",
       "C. Lateral heel",
       "D. Toe tips"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   },
   {
     "id": "Reflexology Clinical Application 010",
@@ -503,11 +445,7 @@
     "synonyms": [],
     "variant": 10,
     "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
-    "tags": [
-      "stress_relief",
-      "adrenal_glands",
-      "HPA_axis_support"
-    ],
+    "tags": ["stress_relief", "adrenal_glands", "HPA_axis_support"],
     "text": "Which of the following is a primary intention when working the adrenal reflex point?",
     "options": [
       "Reduce stress and support adrenal recovery",
@@ -521,6 +459,9 @@
       "B. Stimulate digestion",
       "C. Relieve sinus pressure",
       "D. Correct scoliosis"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "reflexology",
+    "filename": "clinical_applications.json"
   }
 ]

@@ -2,12 +2,7 @@
   {
     "id": "Arm Extensors 001",
     "question": "Which muscle is the primary extensor of the elbow joint?",
-    "answers": [
-      "Anconeus",
-      "Triceps brachii",
-      "Deltoid",
-      "Latissimus dorsi"
-    ],
+    "answers": ["Anconeus", "Triceps brachii", "Deltoid", "Latissimus dorsi"],
     "correct": 1,
     "distractors": [],
     "short_explanation": "Triceps brachii is the main elbow extensor.",
@@ -57,19 +52,17 @@
     "unit": "../../../src/data/questions/anatomy/movement groups/arm_extensors",
     "img": "triceps_brachii_elbow_extension.png",
     "text": "Which muscle is the primary extensor of the elbow joint?",
-    "options": [
-      "Anconeus",
-      "Triceps brachii",
-      "Deltoid",
-      "Latissimus dorsi"
-    ],
+    "options": ["Anconeus", "Triceps brachii", "Deltoid", "Latissimus dorsi"],
     "correctAnswer": "Triceps brachii",
     "abcd": [
       "A. Anconeus",
       "B. Triceps brachii",
       "C. Deltoid",
       "D. Latissimus dorsi"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 002",
@@ -139,7 +132,10 @@
       "B. Radial nerve",
       "C. Median nerve",
       "D. Ulnar nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 003",
@@ -207,17 +203,15 @@
       "B. Lateral epicondyle",
       "C. Infraglenoid tubercle",
       "D. Coracoid process"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 004",
     "question": "Which small muscle assists the triceps in elbow extension and stabilizes the elbow joint?",
-    "answers": [
-      "Brachialis",
-      "Anconeus",
-      "Pronator teres",
-      "Supinator"
-    ],
+    "answers": ["Brachialis", "Anconeus", "Pronator teres", "Supinator"],
     "correct": 1,
     "distractors": [],
     "short_explanation": "The anconeus assists triceps in elbow extension.",
@@ -261,19 +255,17 @@
     "unit": "../../../src/data/questions/anatomy/movement groups/arm_extensors",
     "img": "anconeus_muscle.png",
     "text": "Which small muscle assists the triceps in elbow extension and stabilizes the elbow joint?",
-    "options": [
-      "Brachialis",
-      "Anconeus",
-      "Pronator teres",
-      "Supinator"
-    ],
+    "options": ["Brachialis", "Anconeus", "Pronator teres", "Supinator"],
     "correctAnswer": "Anconeus",
     "abcd": [
       "A. Brachialis",
       "B. Anconeus",
       "C. Pronator teres",
       "D. Supinator"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 005",
@@ -295,11 +287,7 @@
     "topic": "anatomy",
     "category": "Anatomy",
     "subcategory": "Upper Limb",
-    "tags": [
-      "concept_targeted",
-      "condition_injury",
-      "muscle_triceps_brachii"
-    ],
+    "tags": ["concept_targeted", "condition_injury", "muscle_triceps_brachii"],
     "keywords": [
       "concept_targeted",
       "condition_injury",
@@ -331,7 +319,10 @@
       "B. Lateral head",
       "C. Medial head",
       "D. None of the above"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 006",
@@ -353,11 +344,7 @@
     "topic": "anatomy",
     "category": "Anatomy",
     "subcategory": "Upper Limb",
-    "tags": [
-      "modality_massage",
-      "technique_friction",
-      "condition_tendinitis"
-    ],
+    "tags": ["modality_massage", "technique_friction", "condition_tendinitis"],
     "keywords": [
       "modality_massage",
       "technique_friction",
@@ -389,7 +376,10 @@
       "B. Triceps rupture",
       "C. Triceps tendinitis",
       "D. Olecranon bursitis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 007",
@@ -455,7 +445,10 @@
       "B. Forearm pronation",
       "C. Shoulder abduction",
       "D. Wrist flexion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 008",
@@ -477,14 +470,8 @@
     "topic": "anatomy",
     "category": "Anatomy",
     "subcategory": "Upper Limb",
-    "tags": [
-      "anatomy_joint",
-      "joint_joint"
-    ],
-    "keywords": [
-      "anatomy_joint",
-      "joint_joint"
-    ],
+    "tags": ["anatomy_joint", "joint_joint"],
+    "keywords": ["anatomy_joint", "joint_joint"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 147",
     "stats": {
@@ -511,7 +498,10 @@
       "B. Shoulder extension and elbow extension",
       "C. Shoulder abduction and elbow flexion",
       "D. Shoulder rotation and elbow pronation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 009",
@@ -581,17 +571,15 @@
       "B. Ulnar styloid",
       "C. Olecranon process",
       "D. Coronoid process"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   },
   {
     "id": "Arm Extensors 010",
     "question": "Which head of the triceps is most active during high-force movements?",
-    "answers": [
-      "Long head",
-      "Medial head",
-      "Lateral head",
-      "Anconeus"
-    ],
+    "answers": ["Long head", "Medial head", "Lateral head", "Anconeus"],
     "correct": 2,
     "distractors": [],
     "short_explanation": "The lateral head is recruited during powerful extension.",
@@ -629,18 +617,16 @@
     "unit": "../../../src/data/questions/anatomy/movement groups/arm_extensors",
     "img": "triceps_lateral_head.png",
     "text": "Which head of the triceps is most active during high-force movements?",
-    "options": [
-      "Long head",
-      "Medial head",
-      "Lateral head",
-      "Anconeus"
-    ],
+    "options": ["Long head", "Medial head", "Lateral head", "Anconeus"],
     "correctAnswer": "Lateral head",
     "abcd": [
       "A. Long head",
       "B. Medial head",
       "C. Lateral head",
       "D. Anconeus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "movement_groups",
+    "filename": "arm_extensors.json"
   }
 ]

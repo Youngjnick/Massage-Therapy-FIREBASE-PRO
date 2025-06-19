@@ -13,17 +13,8 @@
     "difficulty": "medium",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_somatic",
-      "trauma_release",
-      "body_awareness"
-    ],
-    "keywords": [
-      "trauma",
-      "body",
-      "somatic therapy",
-      "release"
-    ],
+    "tags": ["modality_somatic", "trauma_release", "body_awareness"],
+    "keywords": ["trauma", "body", "somatic therapy", "release"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -52,7 +43,10 @@
       "B. Analyzing dreams",
       "C. Releasing trauma stored in the body",
       "D. Increasing medication adherence"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   },
   {
     "id": "Somatic 002",
@@ -68,11 +62,7 @@
     "difficulty": "medium",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_SE",
-      "nervous_system_discharge",
-      "trauma_integration"
-    ],
+    "tags": ["modality_SE", "nervous_system_discharge", "trauma_integration"],
     "keywords": [
       "survival energy",
       "trauma",
@@ -107,7 +97,10 @@
       "B. Reliving traumatic events",
       "C. Discharging excess survival energy",
       "D. Challenging automatic thoughts"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   },
   {
     "id": "Somatic 003",
@@ -123,16 +116,8 @@
     "difficulty": "medium",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_somatic",
-      "interoception",
-      "awareness"
-    ],
-    "keywords": [
-      "internal awareness",
-      "body cues",
-      "self-regulation"
-    ],
+    "tags": ["modality_somatic", "interoception", "awareness"],
+    "keywords": ["internal awareness", "body cues", "self-regulation"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -161,32 +146,22 @@
       "B. Improving digestion",
       "C. Enhancing body awareness",
       "D. Correcting posture"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   },
   {
     "id": "Somatic 004",
     "question": "Peter Levine is most associated with which somatic therapy approach?",
-    "answers": [
-      "Hakomi",
-      "Somatic Experiencing",
-      "Bioenergetics",
-      "EMDR"
-    ],
+    "answers": ["Hakomi", "Somatic Experiencing", "Bioenergetics", "EMDR"],
     "correct": 1,
     "distractors": [],
     "difficulty": "medium",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "founder_SE",
-      "trauma_integration",
-      "modality_origin"
-    ],
-    "keywords": [
-      "Peter Levine",
-      "SE",
-      "somatic therapy"
-    ],
+    "tags": ["founder_SE", "trauma_integration", "modality_origin"],
+    "keywords": ["Peter Levine", "SE", "somatic therapy"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -203,19 +178,17 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Levine, Waking the Tiger",
     "text": "Peter Levine is most associated with which somatic therapy approach?",
-    "options": [
-      "Hakomi",
-      "Somatic Experiencing",
-      "Bioenergetics",
-      "EMDR"
-    ],
+    "options": ["Hakomi", "Somatic Experiencing", "Bioenergetics", "EMDR"],
     "correctAnswer": "Somatic Experiencing",
     "abcd": [
       "A. Hakomi",
       "B. Somatic Experiencing",
       "C. Bioenergetics",
       "D. EMDR"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   },
   {
     "id": "Somatic 005",
@@ -231,16 +204,8 @@
     "difficulty": "medium",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_hakomi",
-      "mindfulness",
-      "unconscious_material"
-    ],
-    "keywords": [
-      "Hakomi",
-      "mindfulness",
-      "somatic psychology"
-    ],
+    "tags": ["modality_hakomi", "mindfulness", "unconscious_material"],
+    "keywords": ["Hakomi", "mindfulness", "somatic psychology"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -269,17 +234,15 @@
       "B. Enhance cardiovascular fitness",
       "C. Access unconscious core material",
       "D. Practice mantra-based meditation"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   },
   {
     "id": "Somatic 006",
     "question": "Which nervous system branch is often targeted in somatic regulation practices?",
-    "answers": [
-      "Sympathetic",
-      "Parasympathetic",
-      "Central",
-      "Enteric"
-    ],
+    "answers": ["Sympathetic", "Parasympathetic", "Central", "Enteric"],
     "correct": 1,
     "distractors": [],
     "difficulty": "medium",
@@ -312,19 +275,17 @@
     "mblex_category": "Massage and Bodywork Modalities",
     "source_reference": "Polyvagal Theory in Therapy",
     "text": "Which nervous system branch is often targeted in somatic regulation practices?",
-    "options": [
-      "Sympathetic",
-      "Parasympathetic",
-      "Central",
-      "Enteric"
-    ],
+    "options": ["Sympathetic", "Parasympathetic", "Central", "Enteric"],
     "correctAnswer": "Parasympathetic",
     "abcd": [
       "A. Sympathetic",
       "B. Parasympathetic",
       "C. Central",
       "D. Enteric"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   },
   {
     "id": "Somatic 007",
@@ -340,16 +301,8 @@
     "difficulty": "medium",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "nervous_system_balance",
-      "somatic_goal",
-      "healing_trauma"
-    ],
-    "keywords": [
-      "nervous system",
-      "regulation",
-      "trauma release"
-    ],
+    "tags": ["nervous_system_balance", "somatic_goal", "healing_trauma"],
+    "keywords": ["nervous system", "regulation", "trauma release"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -378,6 +331,9 @@
       "B. Promote cathartic reliving",
       "C. Restore nervous system balance",
       "D. Repress traumatic memories"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "energy_work",
+    "filename": "somatic_therapy.json"
   }
 ]

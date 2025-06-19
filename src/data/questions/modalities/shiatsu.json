@@ -13,16 +13,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_shiatsu",
-      "technique_pressure",
-      "purpose_healing"
-    ],
-    "keywords": [
-      "modality_shiatsu",
-      "technique_pressure",
-      "purpose_healing"
-    ],
+    "tags": ["modality_shiatsu", "technique_pressure", "purpose_healing"],
+    "keywords": ["modality_shiatsu", "technique_pressure", "purpose_healing"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -55,7 +47,10 @@
       "B. Healing energy",
       "C. Finger pressure",
       "D. Body alignment"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 002",
@@ -71,16 +66,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_shiatsu",
-      "purpose_healing",
-      "modality_ayurveda"
-    ],
-    "keywords": [
-      "modality_shiatsu",
-      "purpose_healing",
-      "modality_ayurveda"
-    ],
+    "tags": ["modality_shiatsu", "purpose_healing", "modality_ayurveda"],
+    "keywords": ["modality_shiatsu", "purpose_healing", "modality_ayurveda"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -113,7 +100,10 @@
       "B. Ayurveda",
       "C. Western anatomy",
       "D. Homeopathy"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 003",
@@ -129,16 +119,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_shiatsu",
-      "technique_pressure",
-      "modality_oils"
-    ],
-    "keywords": [
-      "modality_shiatsu",
-      "technique_pressure",
-      "modality_oils"
-    ],
+    "tags": ["modality_shiatsu", "technique_pressure", "modality_oils"],
+    "keywords": ["modality_shiatsu", "technique_pressure", "modality_oils"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -171,7 +153,10 @@
       "B. Thumb, finger, and palm pressure",
       "C. Elbow kneading",
       "D. Hot stones"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 004",
@@ -231,17 +216,15 @@
       "B. Qi (life energy)",
       "C. Heart rate",
       "D. Calcium levels"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 005",
     "question": "Which concept is central to Shiatsu practice?",
-    "answers": [
-      "Meridians",
-      "Reflex zones",
-      "Muscle chains",
-      "Tissue layers"
-    ],
+    "answers": ["Meridians", "Reflex zones", "Muscle chains", "Tissue layers"],
     "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
@@ -281,19 +264,17 @@
     "synonyms": [],
     "variant": 5,
     "text": "Which concept is central to Shiatsu practice?",
-    "options": [
-      "Meridians",
-      "Reflex zones",
-      "Muscle chains",
-      "Tissue layers"
-    ],
+    "options": ["Meridians", "Reflex zones", "Muscle chains", "Tissue layers"],
     "correctAnswer": "Meridians",
     "abcd": [
       "A. Meridians",
       "B. Reflex zones",
       "C. Muscle chains",
       "D. Tissue layers"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 006",
@@ -309,16 +290,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_shiatsu",
-      "client",
-      "modality_oils"
-    ],
-    "keywords": [
-      "modality_shiatsu",
-      "client",
-      "modality_oils"
-    ],
+    "tags": ["modality_shiatsu", "client", "modality_oils"],
+    "keywords": ["modality_shiatsu", "client", "modality_oils"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -351,7 +324,10 @@
       "B. Fully clothed on a floor mat",
       "C. Immersed in water",
       "D. Lying in sand"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 007",
@@ -411,7 +387,10 @@
       "B. Following energy lines",
       "C. Quick feather-light strokes",
       "D. Maintaining calm breathing"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 008",
@@ -427,12 +406,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_shiatsu"
-    ],
-    "keywords": [
-      "modality_shiatsu"
-    ],
+    "tags": ["modality_shiatsu"],
+    "keywords": ["modality_shiatsu"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -465,7 +440,10 @@
       "B. It is performed standing",
       "C. It emphasizes meditation and intuitive touch",
       "D. It incorporates herbs"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 009",
@@ -527,7 +505,10 @@
       "B. Raising body temperature",
       "C. Reducing cholesterol",
       "D. Muscle growth"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   },
   {
     "id": "Shiatsu 010",
@@ -543,14 +524,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_shiatsu",
-      "technique_pressure"
-    ],
-    "keywords": [
-      "modality_shiatsu",
-      "technique_pressure"
-    ],
+    "tags": ["modality_shiatsu", "technique_pressure"],
+    "keywords": ["modality_shiatsu", "technique_pressure"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -583,6 +558,9 @@
       "B. High blood pressure",
       "C. Severe fractures or contagious illness",
       "D. Mild fatigue"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "",
+    "filename": "shiatsu.json"
   }
 ]

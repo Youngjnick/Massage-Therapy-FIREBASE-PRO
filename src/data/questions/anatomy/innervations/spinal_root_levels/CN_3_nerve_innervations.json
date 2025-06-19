@@ -15,16 +15,8 @@
     "difficulty": "easy",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "CN III",
-      "oculomotor",
-      "parasympathetic"
-    ],
-    "keywords": [
-      "motor nerve",
-      "autonomic",
-      "extraocular"
-    ],
+    "tags": ["CN III", "oculomotor", "parasympathetic"],
+    "keywords": ["motor nerve", "autonomic", "extraocular"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray’s Anatomy",
     "text": "What type of fibers does the oculomotor nerve (CN III) primarily carry?",
@@ -40,7 +32,10 @@
       "B. Motor fibers only",
       "C. Both motor and parasympathetic fibers",
       "D. Sympathetic fibers only"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_002",
@@ -58,15 +53,8 @@
     "difficulty": "medium",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "extraocular muscles",
-      "eye movement"
-    ],
-    "keywords": [
-      "medial rectus",
-      "lateral rectus",
-      "cranial innervation"
-    ],
+    "tags": ["extraocular muscles", "eye movement"],
+    "keywords": ["medial rectus", "lateral rectus", "cranial innervation"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Atlas",
     "text": "Which of the following muscles is NOT innervated by CN III?",
@@ -82,17 +70,15 @@
       "B. Lateral rectus",
       "C. Superior rectus",
       "D. Inferior oblique"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_003",
     "question": "Damage to CN III can result in which clinical sign?",
-    "answers": [
-      "Bell’s palsy",
-      "Anosmia",
-      "Ptosis",
-      "Tongue deviation"
-    ],
+    "answers": ["Bell’s palsy", "Anosmia", "Ptosis", "Tongue deviation"],
     "correct": 2,
     "short_explanation": "Ptosis is drooping of the eyelid, often from CN III dysfunction.",
     "long_explanation": "The oculomotor nerve innervates the levator palpebrae superioris, which elevates the upper eyelid. Damage can result in ptosis.",
@@ -100,30 +86,22 @@
     "difficulty": "medium",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "ptosis",
-      "oculomotor dysfunction"
-    ],
-    "keywords": [
-      "eyelid droop",
-      "cranial nerve lesion"
-    ],
+    "tags": ["ptosis", "oculomotor dysfunction"],
+    "keywords": ["eyelid droop", "cranial nerve lesion"],
     "mblex_category": "Pathology",
     "source_reference": "Moore Clinical Anatomy",
     "text": "Damage to CN III can result in which clinical sign?",
-    "options": [
-      "Bell’s palsy",
-      "Anosmia",
-      "Ptosis",
-      "Tongue deviation"
-    ],
+    "options": ["Bell’s palsy", "Anosmia", "Ptosis", "Tongue deviation"],
     "correctAnswer": "Ptosis",
     "abcd": [
       "A. Bell’s palsy",
       "B. Anosmia",
       "C. Ptosis",
       "D. Tongue deviation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_004",
@@ -141,14 +119,8 @@
     "difficulty": "medium",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "parasympathetic",
-      "pupil"
-    ],
-    "keywords": [
-      "light reflex",
-      "ciliary ganglion"
-    ],
+    "tags": ["parasympathetic", "pupil"],
+    "keywords": ["light reflex", "ciliary ganglion"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "text": "Which parasympathetic function is mediated by CN III?",
@@ -164,17 +136,15 @@
       "B. Pupil constriction",
       "C. Tear production",
       "D. Heart rate regulation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_005",
     "question": "Where does CN III originate in the brainstem?",
-    "answers": [
-      "Pons",
-      "Medulla",
-      "Midbrain",
-      "Thalamus"
-    ],
+    "answers": ["Pons", "Medulla", "Midbrain", "Thalamus"],
     "correct": 2,
     "short_explanation": "CN III emerges from the midbrain.",
     "long_explanation": "Specifically, CN III originates from the oculomotor nucleus in the midbrain at the level of the superior colliculus.",
@@ -182,30 +152,17 @@
     "difficulty": "medium",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "brainstem",
-      "midbrain origin"
-    ],
-    "keywords": [
-      "cranial nerve nuclei",
-      "oculomotor nucleus"
-    ],
+    "tags": ["brainstem", "midbrain origin"],
+    "keywords": ["cranial nerve nuclei", "oculomotor nucleus"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray’s Anatomy",
     "text": "Where does CN III originate in the brainstem?",
-    "options": [
-      "Pons",
-      "Medulla",
-      "Midbrain",
-      "Thalamus"
-    ],
+    "options": ["Pons", "Medulla", "Midbrain", "Thalamus"],
     "correctAnswer": "Midbrain",
-    "abcd": [
-      "A. Pons",
-      "B. Medulla",
-      "C. Midbrain",
-      "D. Thalamus"
-    ]
+    "abcd": ["A. Pons", "B. Medulla", "C. Midbrain", "D. Thalamus"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_006",
@@ -223,14 +180,8 @@
     "difficulty": "medium",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "nerve pathway",
-      "orbit"
-    ],
-    "keywords": [
-      "cranial foramina",
-      "orbital entry"
-    ],
+    "tags": ["nerve pathway", "orbit"],
+    "keywords": ["cranial foramina", "orbital entry"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Atlas",
     "text": "What structure does CN III pass through to enter the orbit?",
@@ -246,7 +197,10 @@
       "B. Foramen rotundum",
       "C. Superior orbital fissure",
       "D. Inferior orbital fissure"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_007",
@@ -264,14 +218,8 @@
     "difficulty": "hard",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "nuclei",
-      "parasympathetic"
-    ],
-    "keywords": [
-      "autonomic control",
-      "pupil reflex"
-    ],
+    "tags": ["nuclei", "parasympathetic"],
+    "keywords": ["autonomic control", "pupil reflex"],
     "mblex_category": "Neuroanatomy",
     "source_reference": "Neuroscience Essentials",
     "text": "Which nucleus is associated with the parasympathetic component of CN III?",
@@ -287,7 +235,10 @@
       "B. Edinger-Westphal nucleus",
       "C. Nucleus ambiguus",
       "D. Solitary nucleus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_008",
@@ -305,14 +256,8 @@
     "difficulty": "hard",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "nerve palsy",
-      "eye alignment"
-    ],
-    "keywords": [
-      "eye deviation",
-      "muscle imbalance"
-    ],
+    "tags": ["nerve palsy", "eye alignment"],
+    "keywords": ["eye deviation", "muscle imbalance"],
     "mblex_category": "Pathology",
     "source_reference": "Clinical Neuroanatomy",
     "text": "What eye position results from complete CN III palsy?",
@@ -328,7 +273,10 @@
       "B. Eye is abducted and depressed",
       "C. Eye is centrally aligned",
       "D. Eye is elevated and medially rotated"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_009",
@@ -346,15 +294,8 @@
     "difficulty": "easy",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "eyelid control",
-      "motor function"
-    ],
-    "keywords": [
-      "levator",
-      "eyelid droop",
-      "ptosis"
-    ],
+    "tags": ["eyelid control", "motor function"],
+    "keywords": ["levator", "eyelid droop", "ptosis"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which muscle elevates the upper eyelid and is innervated by CN III?",
@@ -370,7 +311,10 @@
       "B. Levator palpebrae superioris",
       "C. Superior rectus",
       "D. Inferior oblique"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   },
   {
     "id": "cn3_010",
@@ -388,14 +332,8 @@
     "difficulty": "hard",
     "category": "Cranial Nerves",
     "topic": "Oculomotor Nerve (CN III)",
-    "tags": [
-      "pupil reflex",
-      "nerve compression"
-    ],
-    "keywords": [
-      "blown pupil",
-      "parasympathetic loss"
-    ],
+    "tags": ["pupil reflex", "nerve compression"],
+    "keywords": ["blown pupil", "parasympathetic loss"],
     "mblex_category": "Pathology",
     "source_reference": "Neuroscience Essentials",
     "text": "What happens to the pupil in CN III compression?",
@@ -411,6 +349,9 @@
       "B. It remains unaffected",
       "C. It dilates and becomes unreactive",
       "D. It oscillates with eye movement"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "CN_3_nerve_innervations.json"
   }
 ]

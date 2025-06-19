@@ -2,50 +2,26 @@
   {
     "id": "glossopharyngeal_001",
     "question": "What is the cranial nerve number associated with the glossopharyngeal nerve?",
-    "answers": [
-      "CN VII",
-      "CN VIII",
-      "CN IX",
-      "CN X"
-    ],
+    "answers": ["CN VII", "CN VIII", "CN IX", "CN X"],
     "correct": 2,
-    "distractors": [
-      0,
-      1,
-      3
-    ],
+    "distractors": [0, 1, 3],
     "short_explanation": "CN IX is the glossopharyngeal nerve.",
     "long_explanation": "The glossopharyngeal nerve is the ninth cranial nerve (CN IX) and plays a role in both sensory and motor functions, especially in the throat and tongue.",
     "applied_example": "Recognizing the number helps correlate symptoms like loss of taste or difficulty swallowing with specific nerve damage.",
     "difficulty": "easy",
     "category": "Neuroanatomy",
     "topic": "Cranial Nerves",
-    "tags": [
-      "CN IX",
-      "glossopharyngeal",
-      "cranial nerves"
-    ],
-    "keywords": [
-      "cranial nerve IX",
-      "nerve function",
-      "brainstem"
-    ],
+    "tags": ["CN IX", "glossopharyngeal", "cranial nerves"],
+    "keywords": ["cranial nerve IX", "nerve function", "brainstem"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Atlas of Human Anatomy",
     "text": "What is the cranial nerve number associated with the glossopharyngeal nerve?",
-    "options": [
-      "CN VII",
-      "CN VIII",
-      "CN IX",
-      "CN X"
-    ],
+    "options": ["CN VII", "CN VIII", "CN IX", "CN X"],
     "correctAnswer": "CN IX",
-    "abcd": [
-      "A. CN VII",
-      "B. CN VIII",
-      "C. CN IX",
-      "D. CN X"
-    ]
+    "abcd": ["A. CN VII", "B. CN VIII", "C. CN IX", "D. CN X"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_002",
@@ -57,27 +33,15 @@
       "Superior pharyngeal constrictor"
     ],
     "correct": 0,
-    "distractors": [
-      1,
-      2,
-      3
-    ],
+    "distractors": [1, 2, 3],
     "short_explanation": "The stylopharyngeus is the only muscle innervated by CN IX.",
     "long_explanation": "The glossopharyngeal nerve provides motor innervation to the stylopharyngeus muscle, which elevates the pharynx during swallowing and speech.",
     "applied_example": "Loss of this function may contribute to dysphagia in stroke or nerve injury cases.",
     "difficulty": "medium",
     "category": "Anatomy",
     "topic": "Muscle Innervation",
-    "tags": [
-      "stylopharyngeus",
-      "pharynx",
-      "swallowing"
-    ],
-    "keywords": [
-      "muscle control",
-      "CN IX motor",
-      "pharyngeal elevation"
-    ],
+    "tags": ["stylopharyngeus", "pharynx", "swallowing"],
+    "keywords": ["muscle control", "CN IX motor", "pharyngeal elevation"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray's Anatomy",
     "text": "Which muscle is innervated by the glossopharyngeal nerve?",
@@ -93,7 +57,10 @@
       "B. Masseter",
       "C. Sternocleidomastoid",
       "D. Superior pharyngeal constrictor"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_003",
@@ -105,27 +72,15 @@
       "Lateral edges"
     ],
     "correct": 1,
-    "distractors": [
-      0,
-      2,
-      3
-    ],
+    "distractors": [0, 2, 3],
     "short_explanation": "CN IX provides taste to the posterior third.",
     "long_explanation": "The glossopharyngeal nerve carries special sensory fibers for taste from the posterior one-third of the tongue.",
     "applied_example": "Infections or nerve damage affecting CN IX can lead to loss of taste in that area.",
     "difficulty": "medium",
     "category": "Sensory",
     "topic": "Taste Innervation",
-    "tags": [
-      "tongue",
-      "taste",
-      "posterior third"
-    ],
-    "keywords": [
-      "taste buds",
-      "posterior tongue",
-      "CN IX"
-    ],
+    "tags": ["tongue", "taste", "posterior third"],
+    "keywords": ["taste buds", "posterior tongue", "CN IX"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Human Anatomy & Physiology by Marieb",
     "text": "Which part of the tongue does CN IX provide taste sensation for?",
@@ -141,7 +96,10 @@
       "B. Posterior 1/3",
       "C. Tip of the tongue",
       "D. Lateral edges"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_004",
@@ -153,27 +111,15 @@
       "Jaw jerk reflex"
     ],
     "correct": 2,
-    "distractors": [
-      0,
-      1,
-      3
-    ],
+    "distractors": [0, 1, 3],
     "short_explanation": "CN IX is the afferent limb of the gag reflex.",
     "long_explanation": "The glossopharyngeal nerve senses the stimulus in the pharynx that triggers the gag reflex. The motor response is carried out by the vagus nerve (CN X).",
     "applied_example": "Loss of this reflex is used clinically to detect brainstem dysfunction or nerve damage.",
     "difficulty": "hard",
     "category": "Neurophysiology",
     "topic": "Reflex Arcs",
-    "tags": [
-      "gag reflex",
-      "brainstem",
-      "afferent limb"
-    ],
-    "keywords": [
-      "reflex testing",
-      "clinical neurology",
-      "CN IX"
-    ],
+    "tags": ["gag reflex", "brainstem", "afferent limb"],
+    "keywords": ["reflex testing", "clinical neurology", "CN IX"],
     "mblex_category": "Assessment",
     "source_reference": "Clinical Neuroanatomy",
     "text": "Which reflex is primarily mediated by the glossopharyngeal nerve?",
@@ -189,7 +135,10 @@
       "B. Blink reflex",
       "C. Gag reflex (afferent limb)",
       "D. Jaw jerk reflex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_005",
@@ -201,26 +150,15 @@
       "Pupil constriction"
     ],
     "correct": 1,
-    "distractors": [
-      0,
-      2,
-      3
-    ],
+    "distractors": [0, 2, 3],
     "short_explanation": "CN IX stimulates the parotid gland for saliva production.",
     "long_explanation": "The glossopharyngeal nerve carries parasympathetic fibers to the otic ganglion, which then innervates the parotid gland to stimulate salivation.",
     "applied_example": "Dry mouth may occur if CN IX function is disrupted by trauma or tumors.",
     "difficulty": "hard",
     "category": "Autonomic",
     "topic": "Parasympathetic Functions",
-    "tags": [
-      "salivation",
-      "autonomic",
-      "parotid gland"
-    ],
-    "keywords": [
-      "CN IX parasympathetic",
-      "gland function"
-    ],
+    "tags": ["salivation", "autonomic", "parotid gland"],
+    "keywords": ["CN IX parasympathetic", "gland function"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Medical Physiology Textbook",
     "text": "What autonomic function is associated with CN IX?",
@@ -236,7 +174,10 @@
       "B. Saliva production from parotid gland",
       "C. Digestive enzyme secretion",
       "D. Pupil constriction"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_006",
@@ -248,26 +189,15 @@
       "Stylomastoid foramen"
     ],
     "correct": 1,
-    "distractors": [
-      0,
-      2,
-      3
-    ],
+    "distractors": [0, 2, 3],
     "short_explanation": "It exits via the jugular foramen.",
     "long_explanation": "CN IX, along with CN X and CN XI, exits the skull through the jugular foramen, located between the temporal and occipital bones.",
     "applied_example": "Lesions at this foramen can affect multiple cranial nerves, producing a mix of symptoms.",
     "difficulty": "hard",
     "category": "Anatomy",
     "topic": "Cranial Openings",
-    "tags": [
-      "jugular foramen",
-      "cranial base",
-      "nerve exit"
-    ],
-    "keywords": [
-      "skull foramina",
-      "brainstem pathways"
-    ],
+    "tags": ["jugular foramen", "cranial base", "nerve exit"],
+    "keywords": ["skull foramina", "brainstem pathways"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray’s Anatomy",
     "text": "Where does the glossopharyngeal nerve exit the skull?",
@@ -283,7 +213,10 @@
       "B. Jugular foramen",
       "C. Hypoglossal canal",
       "D. Stylomastoid foramen"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_007",
@@ -295,27 +228,15 @@
       "Double vision"
     ],
     "correct": 2,
-    "distractors": [
-      0,
-      1,
-      3
-    ],
+    "distractors": [0, 1, 3],
     "short_explanation": "Taste sensation from the posterior third may be lost.",
     "long_explanation": "Injury to CN IX can impair taste in the posterior tongue and cause dysphagia due to motor loss in the pharynx.",
     "applied_example": "Massage therapists should be aware of these symptoms when treating clients post-stroke or with nerve injury.",
     "difficulty": "medium",
     "category": "Clinical",
     "topic": "Nerve Dysfunction",
-    "tags": [
-      "nerve damage",
-      "taste loss",
-      "pharynx"
-    ],
-    "keywords": [
-      "glossopharyngeal nerve",
-      "CN IX",
-      "nerve injury"
-    ],
+    "tags": ["nerve damage", "taste loss", "pharynx"],
+    "keywords": ["glossopharyngeal nerve", "CN IX", "nerve injury"],
     "mblex_category": "Pathology & Contraindications",
     "source_reference": "Current Medical Diagnosis & Treatment",
     "text": "Damage to the glossopharyngeal nerve can result in which symptom?",
@@ -331,7 +252,10 @@
       "B. Loss of hearing",
       "C. Loss of taste in the posterior tongue",
       "D. Double vision"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_008",
@@ -343,26 +267,15 @@
       "Submandibular ganglion"
     ],
     "correct": 1,
-    "distractors": [
-      0,
-      2,
-      3
-    ],
+    "distractors": [0, 2, 3],
     "short_explanation": "The otic ganglion relays CN IX fibers to the parotid gland.",
     "long_explanation": "CN IX sends parasympathetic preganglionic fibers to the otic ganglion via the lesser petrosal nerve. Postganglionic fibers then stimulate the parotid gland.",
     "applied_example": "Damage along this route can cause dry mouth or salivary gland dysfunction.",
     "difficulty": "hard",
     "category": "Neuroanatomy",
     "topic": "Autonomic Ganglia",
-    "tags": [
-      "parasympathetic",
-      "otic ganglion",
-      "salivation"
-    ],
-    "keywords": [
-      "lesser petrosal nerve",
-      "CN IX pathway"
-    ],
+    "tags": ["parasympathetic", "otic ganglion", "salivation"],
+    "keywords": ["lesser petrosal nerve", "CN IX pathway"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "text": "Which ganglion is associated with CN IX parasympathetic fibers?",
@@ -378,7 +291,10 @@
       "B. Otic ganglion",
       "C. Pterygopalatine ganglion",
       "D. Submandibular ganglion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_009",
@@ -390,26 +306,15 @@
       "Basilar artery"
     ],
     "correct": 1,
-    "distractors": [
-      0,
-      2,
-      3
-    ],
+    "distractors": [0, 2, 3],
     "short_explanation": "The carotid sinus is innervated by CN IX.",
     "long_explanation": "The glossopharyngeal nerve carries baroreceptor fibers from the carotid sinus, allowing it to help regulate blood pressure reflexively.",
     "applied_example": "Clients with carotid artery surgery may risk altered pressure regulation.",
     "difficulty": "hard",
     "category": "Physiology",
     "topic": "Homeostasis",
-    "tags": [
-      "baroreceptor",
-      "blood pressure",
-      "carotid sinus"
-    ],
-    "keywords": [
-      "CN IX",
-      "blood pressure reflex"
-    ],
+    "tags": ["baroreceptor", "blood pressure", "carotid sinus"],
+    "keywords": ["CN IX", "blood pressure reflex"],
     "mblex_category": "Physiology",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
     "text": "CN IX monitors blood pressure through which structure?",
@@ -425,53 +330,33 @@
       "B. Carotid sinus",
       "C. Subclavian artery",
       "D. Basilar artery"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   },
   {
     "id": "glossopharyngeal_010",
     "question": "What special sensory modality is transmitted by the glossopharyngeal nerve?",
-    "answers": [
-      "Hearing",
-      "Smell",
-      "Taste",
-      "Balance"
-    ],
+    "answers": ["Hearing", "Smell", "Taste", "Balance"],
     "correct": 2,
-    "distractors": [
-      0,
-      1,
-      3
-    ],
+    "distractors": [0, 1, 3],
     "short_explanation": "It transmits taste from the posterior 1/3 of the tongue.",
     "long_explanation": "Although CN IX has multiple functions, its special sensory component is specifically for taste from the posterior part of the tongue.",
     "applied_example": "Loss of this function may contribute to appetite changes or oral complaints in older adults.",
     "difficulty": "medium",
     "category": "Neurosensory",
     "topic": "Taste",
-    "tags": [
-      "CN IX",
-      "taste",
-      "posterior tongue"
-    ],
-    "keywords": [
-      "taste buds",
-      "nerve function"
-    ],
+    "tags": ["CN IX", "taste", "posterior tongue"],
+    "keywords": ["taste buds", "nerve function"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Essentials of Anatomy and Physiology",
     "text": "What special sensory modality is transmitted by the glossopharyngeal nerve?",
-    "options": [
-      "Hearing",
-      "Smell",
-      "Taste",
-      "Balance"
-    ],
+    "options": ["Hearing", "Smell", "Taste", "Balance"],
     "correctAnswer": "Taste",
-    "abcd": [
-      "A. Hearing",
-      "B. Smell",
-      "C. Taste",
-      "D. Balance"
-    ]
+    "abcd": ["A. Hearing", "B. Smell", "C. Taste", "D. Balance"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/facial_innervations.json",
+    "filename": "glossopharyngeal_nerve_innervations.json"
   }
 ]

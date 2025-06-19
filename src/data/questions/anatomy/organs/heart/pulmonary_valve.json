@@ -15,16 +15,8 @@
     "topic": "Cardiac Anatomy",
     "category": "Heart Valves",
     "difficulty": "easy",
-    "tags": [
-      "pulmonary valve",
-      "heart valve",
-      "right ventricle"
-    ],
-    "keywords": [
-      "valve",
-      "pulmonary circulation",
-      "semilunar"
-    ],
+    "tags": ["pulmonary valve", "heart valve", "right ventricle"],
+    "keywords": ["valve", "pulmonary circulation", "semilunar"],
     "source_reference": "Moore's Clinically Oriented Anatomy",
     "text": "What is the primary function of the pulmonary valve?",
     "options": [
@@ -39,7 +31,10 @@
       "B. To regulate blood flow from the right ventricle to the pulmonary artery",
       "C. To control blood flow between the right atrium and ventricle",
       "D. To oxygenate blood entering the lungs"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_002",
@@ -57,17 +52,8 @@
     "topic": "Cardiac Landmarks",
     "category": "Heart Valves",
     "difficulty": "easy",
-    "tags": [
-      "pulmonary valve",
-      "valve position",
-      "anatomy"
-    ],
-    "keywords": [
-      "valve",
-      "heart",
-      "right ventricle",
-      "pulmonary artery"
-    ],
+    "tags": ["pulmonary valve", "valve position", "anatomy"],
+    "keywords": ["valve", "heart", "right ventricle", "pulmonary artery"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "text": "Where is the pulmonary valve located?",
     "options": [
@@ -82,17 +68,15 @@
       "B. At the junction of the left ventricle and aorta",
       "C. Between the right ventricle and pulmonary artery",
       "D. At the base of the superior vena cava"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_003",
     "question": "Which sound is associated with the closure of the pulmonary valve?",
-    "answers": [
-      "S1",
-      "S2",
-      "S3",
-      "Opening snap"
-    ],
+    "answers": ["S1", "S2", "S3", "Opening snap"],
     "correct": 1,
     "short_explanation": "S2 is created by closure of the aortic and pulmonary valves.",
     "long_explanation": "The second heart sound (S2) corresponds to the closure of the semilunar valves—pulmonary and aortic—marking the end of systole.",
@@ -100,31 +84,16 @@
     "topic": "Heart Sounds",
     "category": "Auscultation",
     "difficulty": "intermediate",
-    "tags": [
-      "S2",
-      "semilunar valves",
-      "pulmonary valve"
-    ],
-    "keywords": [
-      "heart sounds",
-      "auscultation",
-      "semilunar"
-    ],
+    "tags": ["S2", "semilunar valves", "pulmonary valve"],
+    "keywords": ["heart sounds", "auscultation", "semilunar"],
     "source_reference": "Bates’ Guide to Physical Examination",
     "text": "Which sound is associated with the closure of the pulmonary valve?",
-    "options": [
-      "S1",
-      "S2",
-      "S3",
-      "Opening snap"
-    ],
+    "options": ["S1", "S2", "S3", "Opening snap"],
     "correctAnswer": "S2",
-    "abcd": [
-      "A. S1",
-      "B. S2",
-      "C. S3",
-      "D. Opening snap"
-    ]
+    "abcd": ["A. S1", "B. S2", "C. S3", "D. Opening snap"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_004",
@@ -142,16 +111,8 @@
     "topic": "Cardiac Pathology",
     "category": "Valve Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "pulmonary stenosis",
-      "hypertrophy",
-      "valve disorder"
-    ],
-    "keywords": [
-      "right heart",
-      "valvular disease",
-      "congenital"
-    ],
+    "tags": ["pulmonary stenosis", "hypertrophy", "valve disorder"],
+    "keywords": ["right heart", "valvular disease", "congenital"],
     "source_reference": "Lilly’s Pathophysiology of Heart Disease",
     "text": "Pulmonary valve stenosis can lead to which of the following?",
     "options": [
@@ -166,7 +127,10 @@
       "B. Right ventricular hypertrophy",
       "C. Pulmonary edema",
       "D. Systemic hypertension"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_005",
@@ -184,16 +148,8 @@
     "topic": "Cardiac Dysfunction",
     "category": "Valve Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "pulmonary regurgitation",
-      "valvular incompetence",
-      "diastole"
-    ],
-    "keywords": [
-      "backflow",
-      "valve failure",
-      "heart murmur"
-    ],
+    "tags": ["pulmonary regurgitation", "valvular incompetence", "diastole"],
+    "keywords": ["backflow", "valve failure", "heart murmur"],
     "source_reference": "Guyton & Hall Textbook of Medical Physiology",
     "text": "What causes pulmonary valve regurgitation?",
     "options": [
@@ -208,7 +164,10 @@
       "B. Valve calcification",
       "C. Incompetent valve closure during diastole",
       "D. Overactive aortic valve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_006",
@@ -226,17 +185,8 @@
     "topic": "Pediatric Cardiology",
     "category": "Congenital Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "congenital",
-      "pulmonary valve",
-      "cardiac defects"
-    ],
-    "keywords": [
-      "valve",
-      "congenital",
-      "stenosis",
-      "pediatrics"
-    ],
+    "tags": ["congenital", "pulmonary valve", "cardiac defects"],
+    "keywords": ["valve", "congenital", "stenosis", "pediatrics"],
     "source_reference": "Nelson Textbook of Pediatrics",
     "text": "Which condition is most likely congenital?",
     "options": [
@@ -251,7 +201,10 @@
       "B. Pulmonary valve stenosis",
       "C. Tricuspid valve prolapse",
       "D. Aortic dissection"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_007",
@@ -269,16 +222,8 @@
     "topic": "Auscultation Landmarks",
     "category": "Heart Sounds",
     "difficulty": "easy",
-    "tags": [
-      "auscultation",
-      "pulmonary valve",
-      "intercostal space"
-    ],
-    "keywords": [
-      "left upper sternal",
-      "heart sound",
-      "valve"
-    ],
+    "tags": ["auscultation", "pulmonary valve", "intercostal space"],
+    "keywords": ["left upper sternal", "heart sound", "valve"],
     "source_reference": "Bates’ Guide to Physical Examination",
     "text": "Where is the pulmonary valve best heard on auscultation?",
     "options": [
@@ -293,7 +238,10 @@
       "B. Right second intercostal space",
       "C. Left midclavicular fifth space",
       "D. Sternal notch"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_008",
@@ -311,16 +259,8 @@
     "topic": "Embryology",
     "category": "Developmental Anatomy",
     "difficulty": "advanced",
-    "tags": [
-      "embryology",
-      "pulmonary valve",
-      "development"
-    ],
-    "keywords": [
-      "truncus arteriosus",
-      "semilunar valve",
-      "congenital"
-    ],
+    "tags": ["embryology", "pulmonary valve", "development"],
+    "keywords": ["truncus arteriosus", "semilunar valve", "congenital"],
     "source_reference": "Langman’s Medical Embryology",
     "text": "What is the embryological origin of the pulmonary valve?",
     "options": [
@@ -335,7 +275,10 @@
       "B. Aortic sac",
       "C. Sinus venosus",
       "D. Endocardial cushion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_009",
@@ -353,16 +296,8 @@
     "topic": "Clinical Signs",
     "category": "Cardiac Examination",
     "difficulty": "intermediate",
-    "tags": [
-      "P2",
-      "pulmonary hypertension",
-      "valvular sound"
-    ],
-    "keywords": [
-      "heart sound",
-      "hypertension",
-      "auscultation"
-    ],
+    "tags": ["P2", "pulmonary hypertension", "valvular sound"],
+    "keywords": ["heart sound", "hypertension", "auscultation"],
     "source_reference": "Lilly’s Pathophysiology of Heart Disease",
     "text": "What is a clinical sign of pulmonary hypertension affecting the pulmonary valve?",
     "options": [
@@ -377,7 +312,10 @@
       "B. Early diastolic murmur",
       "C. Loud P2 component of S2",
       "D. S3 gallop"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   },
   {
     "id": "pulmonary_010",
@@ -395,16 +333,8 @@
     "topic": "Valve Structure",
     "category": "Comparative Anatomy",
     "difficulty": "easy",
-    "tags": [
-      "semilunar valves",
-      "pulmonary valve",
-      "aortic valve"
-    ],
-    "keywords": [
-      "valve structure",
-      "cusps",
-      "outflow valves"
-    ],
+    "tags": ["semilunar valves", "pulmonary valve", "aortic valve"],
+    "keywords": ["valve structure", "cusps", "outflow valves"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "Which valve shares similar structure and function with the pulmonary valve?",
     "options": [
@@ -419,6 +349,9 @@
       "B. Tricuspid valve",
       "C. Aortic valve",
       "D. Bicuspid valve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "pulmonary_valve.json"
   }
 ]

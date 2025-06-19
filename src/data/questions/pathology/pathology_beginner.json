@@ -13,14 +13,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_spine",
-      "condition_scoliosis"
-    ],
-    "keywords": [
-      "anatomy_spine",
-      "condition_scoliosis"
-    ],
+    "tags": ["anatomy_spine", "condition_scoliosis"],
+    "keywords": ["anatomy_spine", "condition_scoliosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -50,7 +44,10 @@
       "B. A forward bending of the spine",
       "C. An abnormal lateral curvature of the spine",
       "D. A shortening of spinal ligaments"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 002",
@@ -66,12 +63,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_artery"
-    ],
-    "keywords": [
-      "anatomy_artery"
-    ],
+    "tags": ["anatomy_artery"],
+    "keywords": ["anatomy_artery"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -101,28 +94,21 @@
       "B. Collapsed or malfunctioning vein valves",
       "C. Calcium buildup in arteries",
       "D. Blood clots in lymph vessels"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 003",
     "question": "Osteoporosis primarily affects the:",
-    "answers": [
-      "Joints",
-      "Lymph nodes",
-      "Arteries",
-      "Bones"
-    ],
+    "answers": ["Joints", "Lymph nodes", "Arteries", "Bones"],
     "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_joint",
-      "anatomy_artery",
-      "anatomy_bones",
-      "joint_joint"
-    ],
+    "tags": ["anatomy_joint", "anatomy_artery", "anatomy_bones", "joint_joint"],
     "keywords": [
       "anatomy_joint",
       "anatomy_artery",
@@ -146,19 +132,12 @@
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
     "question_rank": 3,
     "text": "Osteoporosis primarily affects the:",
-    "options": [
-      "Joints",
-      "Lymph nodes",
-      "Arteries",
-      "Bones"
-    ],
+    "options": ["Joints", "Lymph nodes", "Arteries", "Bones"],
     "correctAnswer": "Bones",
-    "abcd": [
-      "A. Joints",
-      "B. Lymph nodes",
-      "C. Arteries",
-      "D. Bones"
-    ]
+    "abcd": ["A. Joints", "B. Lymph nodes", "C. Arteries", "D. Bones"],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 004",
@@ -174,14 +153,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_artery",
-      "anatomy_bones"
-    ],
-    "keywords": [
-      "anatomy_artery",
-      "anatomy_bones"
-    ],
+    "tags": ["anatomy_artery", "anatomy_bones"],
+    "keywords": ["anatomy_artery", "anatomy_bones"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -211,7 +184,10 @@
       "B. Blocked artery",
       "C. Pooling of blood outside a vessel",
       "D. Bone fracture"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 005",
@@ -227,12 +203,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_artery"
-    ],
-    "keywords": [
-      "anatomy_artery"
-    ],
+    "tags": ["anatomy_artery"],
+    "keywords": ["anatomy_artery"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -262,7 +234,10 @@
       "B. Inflammation of a vein",
       "C. Air bubbles in the bloodstream",
       "D. Infection of lymph nodes"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 006",
@@ -278,14 +253,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_artery",
-      "anatomy_bones"
-    ],
-    "keywords": [
-      "anatomy_artery",
-      "anatomy_bones"
-    ],
+    "tags": ["anatomy_artery", "anatomy_bones"],
+    "keywords": ["anatomy_artery", "anatomy_bones"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -315,7 +284,10 @@
       "B. Clot formation in a lymph vessel",
       "C. Clotting in an inflamed vein",
       "D. Bone marrow overgrowth"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 007",
@@ -331,14 +303,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_artery",
-      "technique_pressure"
-    ],
-    "keywords": [
-      "anatomy_artery",
-      "technique_pressure"
-    ],
+    "tags": ["anatomy_artery", "technique_pressure"],
+    "keywords": ["anatomy_artery", "technique_pressure"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -368,7 +334,10 @@
       "B. A bruise from deep pressure",
       "C. A blocked lymph node",
       "D. An inflamed artery"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 008",
@@ -384,12 +353,7 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_joint",
-      "anatomy_artery",
-      "joint_joint",
-      "organ_lungs"
-    ],
+    "tags": ["anatomy_joint", "anatomy_artery", "joint_joint", "organ_lungs"],
     "keywords": [
       "anatomy_joint",
       "anatomy_artery",
@@ -425,7 +389,10 @@
       "B. A pooling of blood within the lungs",
       "C. A ballooning or weakening of an artery wall",
       "D. A displaced vertebral disc"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 009",
@@ -484,7 +451,10 @@
       "B. Nerve compression",
       "C. Lymphatic system obstruction causing swelling",
       "D. Increased red blood cell production"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   },
   {
     "id": "Pathology Beginner 010",
@@ -500,16 +470,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "modality_massage",
-      "condition_scoliosis",
-      "contraindication"
-    ],
-    "keywords": [
-      "modality_massage",
-      "condition_scoliosis",
-      "contraindication"
-    ],
+    "tags": ["modality_massage", "condition_scoliosis", "contraindication"],
+    "keywords": ["modality_massage", "condition_scoliosis", "contraindication"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -539,6 +501,9 @@
       "B. Stable osteoporosis",
       "C. Thrombophlebitis",
       "D. Mild varicose veins"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "pathology_beginner.json"
   }
 ]

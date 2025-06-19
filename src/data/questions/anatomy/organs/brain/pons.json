@@ -15,17 +15,8 @@
     "difficulty": "easy",
     "category": "Neuroanatomy",
     "topic": "Brainstem Anatomy",
-    "tags": [
-      "pons",
-      "brainstem",
-      "midbrain",
-      "medulla"
-    ],
-    "keywords": [
-      "location",
-      "neuroanatomy",
-      "cranial"
-    ],
+    "tags": ["pons", "brainstem", "midbrain", "medulla"],
+    "keywords": ["location", "neuroanatomy", "cranial"],
     "mblex_category": "Anatomy",
     "source_reference": "Netter: Atlas of Human Anatomy",
     "text": "Where is the pons located in the brainstem?",
@@ -41,7 +32,10 @@
       "B. Between the midbrain and medulla oblongata",
       "C. Below the cerebellum",
       "D. Adjacent to the corpus callosum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_002",
@@ -59,16 +53,8 @@
     "difficulty": "medium",
     "category": "Neurophysiology",
     "topic": "Brainstem Functions",
-    "tags": [
-      "pons",
-      "facial nerves",
-      "motor relay"
-    ],
-    "keywords": [
-      "cranial nerves",
-      "motor",
-      "sensory"
-    ],
+    "tags": ["pons", "facial nerves", "motor relay"],
+    "keywords": ["cranial nerves", "motor", "sensory"],
     "mblex_category": "Physiology",
     "source_reference": "Bear, Connors & Paradiso: Neuroscience",
     "text": "What is a primary function of the pons?",
@@ -84,17 +70,15 @@
       "B. Coordinating motor signals and facial sensations",
       "C. Storing emotional memory",
       "D. Visual signal processing"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_003",
     "question": "Which cranial nerves emerge from the pons?",
-    "answers": [
-      "CN I–IV",
-      "CN V–VIII",
-      "CN IX–XII",
-      "CN II–VI"
-    ],
+    "answers": ["CN I–IV", "CN V–VIII", "CN IX–XII", "CN II–VI"],
     "correct": 1,
     "short_explanation": "Cranial nerves V–VIII emerge from or near the pons.",
     "long_explanation": "The pons contains nuclei or fiber tracts for cranial nerves V (trigeminal), VI (abducens), VII (facial), and VIII (vestibulocochlear), which are involved in facial sensation, eye movement, expression, and hearing.",
@@ -102,32 +86,17 @@
     "difficulty": "medium",
     "category": "Cranial Nerves",
     "topic": "Brainstem Origins",
-    "tags": [
-      "CN V",
-      "CN VI",
-      "CN VII",
-      "CN VIII"
-    ],
-    "keywords": [
-      "cranial nerve origin",
-      "brainstem function"
-    ],
+    "tags": ["CN V", "CN VI", "CN VII", "CN VIII"],
+    "keywords": ["cranial nerve origin", "brainstem function"],
     "mblex_category": "Anatomy",
     "source_reference": "Snell: Clinical Neuroanatomy",
     "text": "Which cranial nerves emerge from the pons?",
-    "options": [
-      "CN I–IV",
-      "CN V–VIII",
-      "CN IX–XII",
-      "CN II–VI"
-    ],
+    "options": ["CN I–IV", "CN V–VIII", "CN IX–XII", "CN II–VI"],
     "correctAnswer": "CN V–VIII",
-    "abcd": [
-      "A. CN I–IV",
-      "B. CN V–VIII",
-      "C. CN IX–XII",
-      "D. CN II–VI"
-    ]
+    "abcd": ["A. CN I–IV", "B. CN V–VIII", "C. CN IX–XII", "D. CN II–VI"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_004",
@@ -145,15 +114,8 @@
     "difficulty": "medium",
     "category": "Neuroanatomy",
     "topic": "Cerebellar Pathways",
-    "tags": [
-      "peduncles",
-      "pons",
-      "cerebellum"
-    ],
-    "keywords": [
-      "brain connection",
-      "motor coordination"
-    ],
+    "tags": ["peduncles", "pons", "cerebellum"],
+    "keywords": ["brain connection", "motor coordination"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
     "text": "Which structure connects the pons to the cerebellum?",
@@ -169,7 +131,10 @@
       "B. Cerebral peduncles",
       "C. Middle cerebellar peduncles",
       "D. Corpus callosum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_005",
@@ -187,16 +152,8 @@
     "difficulty": "hard",
     "category": "Neuroanatomy",
     "topic": "Brain Function Localization",
-    "tags": [
-      "pons",
-      "function",
-      "hearing",
-      "brain regions"
-    ],
-    "keywords": [
-      "brainstem vs cortex",
-      "neuro differentiation"
-    ],
+    "tags": ["pons", "function", "hearing", "brain regions"],
+    "keywords": ["brainstem vs cortex", "neuro differentiation"],
     "mblex_category": "Physiology",
     "source_reference": "Silverthorn: Human Physiology",
     "text": "Which function is NOT typically associated with the pons?",
@@ -212,7 +169,10 @@
       "B. Facial muscle control",
       "C. Eye movement",
       "D. Auditory signal interpretation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_006",
@@ -230,15 +190,8 @@
     "difficulty": "medium",
     "category": "Pathology",
     "topic": "Brainstem Injury",
-    "tags": [
-      "facial nerve",
-      "brain injury",
-      "cranial nerve VII"
-    ],
-    "keywords": [
-      "Bell's palsy",
-      "brainstem damage"
-    ],
+    "tags": ["facial nerve", "brain injury", "cranial nerve VII"],
+    "keywords": ["Bell's palsy", "brainstem damage"],
     "mblex_category": "Pathology",
     "source_reference": "Robbins: Pathologic Basis of Disease",
     "text": "Damage to the pons may cause which of the following?",
@@ -254,17 +207,15 @@
       "B. Facial paralysis",
       "C. Reduced immune response",
       "D. Inability to regulate sleep"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_007",
     "question": "Which neurotransmitter is significantly associated with the pons?",
-    "answers": [
-      "Dopamine",
-      "Serotonin",
-      "Acetylcholine",
-      "GABA"
-    ],
+    "answers": ["Dopamine", "Serotonin", "Acetylcholine", "GABA"],
     "correct": 1,
     "short_explanation": "Serotonin is synthesized in the raphe nuclei of the pons.",
     "long_explanation": "The raphe nuclei in the pons are a major source of serotonin, which influences mood, pain modulation, and sleep-wake cycles.",
@@ -272,32 +223,17 @@
     "difficulty": "hard",
     "category": "Neurochemistry",
     "topic": "Brainstem Neurotransmitters",
-    "tags": [
-      "serotonin",
-      "pons",
-      "raphe nuclei"
-    ],
-    "keywords": [
-      "mood",
-      "neurotransmitters",
-      "brainstem"
-    ],
+    "tags": ["serotonin", "pons", "raphe nuclei"],
+    "keywords": ["mood", "neurotransmitters", "brainstem"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Bear: Neuroscience",
     "text": "Which neurotransmitter is significantly associated with the pons?",
-    "options": [
-      "Dopamine",
-      "Serotonin",
-      "Acetylcholine",
-      "GABA"
-    ],
+    "options": ["Dopamine", "Serotonin", "Acetylcholine", "GABA"],
     "correctAnswer": "Serotonin",
-    "abcd": [
-      "A. Dopamine",
-      "B. Serotonin",
-      "C. Acetylcholine",
-      "D. GABA"
-    ]
+    "abcd": ["A. Dopamine", "B. Serotonin", "C. Acetylcholine", "D. GABA"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_008",
@@ -315,16 +251,8 @@
     "difficulty": "medium",
     "category": "Physiology",
     "topic": "Respiratory Centers",
-    "tags": [
-      "pons",
-      "breathing",
-      "respiration"
-    ],
-    "keywords": [
-      "apneustic",
-      "pneumotaxic",
-      "brainstem"
-    ],
+    "tags": ["pons", "breathing", "respiration"],
+    "keywords": ["apneustic", "pneumotaxic", "brainstem"],
     "mblex_category": "Physiology",
     "source_reference": "Guyton & Hall: Textbook of Medical Physiology",
     "text": "Which breathing-related center resides in the pons?",
@@ -340,7 +268,10 @@
       "B. Medullary rhythmicity center",
       "C. Ventral respiratory group",
       "D. Pre-Bötzinger complex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_009",
@@ -358,16 +289,8 @@
     "difficulty": "medium",
     "category": "Neuroscience",
     "topic": "Sleep Regulation",
-    "tags": [
-      "pons",
-      "REM",
-      "sleep"
-    ],
-    "keywords": [
-      "dreaming",
-      "sleep stage",
-      "brainstem"
-    ],
+    "tags": ["pons", "REM", "sleep"],
+    "keywords": ["dreaming", "sleep stage", "brainstem"],
     "mblex_category": "Physiology",
     "source_reference": "Principles of Neural Science – Kandel",
     "text": "The pons contributes to which sleep-related function?",
@@ -383,7 +306,10 @@
       "B. REM cycle initiation",
       "C. Melatonin production",
       "D. Long-term memory storage"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   },
   {
     "id": "pons_010",
@@ -401,17 +327,8 @@
     "difficulty": "medium",
     "category": "Neurophysiology",
     "topic": "Motor Integration",
-    "tags": [
-      "balance",
-      "motor control",
-      "pons",
-      "cerebellum"
-    ],
-    "keywords": [
-      "coordination",
-      "brainstem",
-      "cerebellar relay"
-    ],
+    "tags": ["balance", "motor control", "pons", "cerebellum"],
+    "keywords": ["coordination", "brainstem", "cerebellar relay"],
     "mblex_category": "Physiology",
     "source_reference": "Human Anatomy & Physiology – Marieb & Hoehn",
     "text": "What role does the pons play in balance and coordination?",
@@ -427,6 +344,9 @@
       "B. Sending signals to the vestibular cortex",
       "C. Relaying cerebellar signals for posture and balance",
       "D. Regulating proprioception in muscles"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "pons.json"
   }
 ]

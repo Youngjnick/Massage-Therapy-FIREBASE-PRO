@@ -15,17 +15,8 @@
     "topic": "pituitary gland",
     "category": "Endocrinology",
     "difficulty": "intermediate",
-    "tags": [
-      "GH",
-      "LH",
-      "ACTH",
-      "anterior pituitary"
-    ],
-    "keywords": [
-      "growth hormone",
-      "endocrine function",
-      "pituitary hormones"
-    ],
+    "tags": ["GH", "LH", "ACTH", "anterior pituitary"],
+    "keywords": ["growth hormone", "endocrine function", "pituitary hormones"],
     "source_reference": "Guyton & Hall Medical Physiology",
     "text": "What is the primary function of the anterior pituitary gland?",
     "options": [
@@ -40,17 +31,15 @@
       "B. Secretion of growth and reproductive hormones",
       "C. Regulation of heart rate",
       "D. Production of cerebrospinal fluid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_002",
     "question": "Which hormone is released by the posterior pituitary?",
-    "answers": [
-      "Prolactin",
-      "Oxytocin",
-      "TSH",
-      "ACTH"
-    ],
+    "answers": ["Prolactin", "Oxytocin", "TSH", "ACTH"],
     "correct": 1,
     "short_explanation": "The posterior pituitary stores and releases oxytocin and ADH.",
     "long_explanation": "Oxytocin and antidiuretic hormone (ADH) are synthesized in the hypothalamus but stored and released from the posterior pituitary (neurohypophysis).",
@@ -58,41 +47,21 @@
     "topic": "pituitary gland",
     "category": "Hormonal Regulation",
     "difficulty": "basic",
-    "tags": [
-      "oxytocin",
-      "posterior pituitary",
-      "neurohypophysis"
-    ],
-    "keywords": [
-      "oxytocin release",
-      "ADH",
-      "hypothalamic hormones"
-    ],
+    "tags": ["oxytocin", "posterior pituitary", "neurohypophysis"],
+    "keywords": ["oxytocin release", "ADH", "hypothalamic hormones"],
     "source_reference": "Endocrine Physiology by Costanzo",
     "text": "Which hormone is released by the posterior pituitary?",
-    "options": [
-      "Prolactin",
-      "Oxytocin",
-      "TSH",
-      "ACTH"
-    ],
+    "options": ["Prolactin", "Oxytocin", "TSH", "ACTH"],
     "correctAnswer": "Oxytocin",
-    "abcd": [
-      "A. Prolactin",
-      "B. Oxytocin",
-      "C. TSH",
-      "D. ACTH"
-    ]
+    "abcd": ["A. Prolactin", "B. Oxytocin", "C. TSH", "D. ACTH"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_003",
     "question": "Which structure controls the pituitary gland?",
-    "answers": [
-      "Thalamus",
-      "Cerebellum",
-      "Hypothalamus",
-      "Pineal gland"
-    ],
+    "answers": ["Thalamus", "Cerebellum", "Hypothalamus", "Pineal gland"],
     "correct": 2,
     "short_explanation": "The hypothalamus regulates the pituitary through hormonal signals.",
     "long_explanation": "The hypothalamus communicates with the anterior pituitary via the hypophyseal portal system and sends neural signals to the posterior pituitary, thus controlling its hormone secretion.",
@@ -100,41 +69,26 @@
     "topic": "pituitary gland",
     "category": "Neuroendocrine Control",
     "difficulty": "intermediate",
-    "tags": [
-      "hypothalamus",
-      "pituitary control",
-      "neuroendocrine"
-    ],
-    "keywords": [
-      "hypophyseal axis",
-      "HPA axis",
-      "endocrine system"
-    ],
+    "tags": ["hypothalamus", "pituitary control", "neuroendocrine"],
+    "keywords": ["hypophyseal axis", "HPA axis", "endocrine system"],
     "source_reference": "Principles of Anatomy and Physiology",
     "text": "Which structure controls the pituitary gland?",
-    "options": [
-      "Thalamus",
-      "Cerebellum",
-      "Hypothalamus",
-      "Pineal gland"
-    ],
+    "options": ["Thalamus", "Cerebellum", "Hypothalamus", "Pineal gland"],
     "correctAnswer": "Hypothalamus",
     "abcd": [
       "A. Thalamus",
       "B. Cerebellum",
       "C. Hypothalamus",
       "D. Pineal gland"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_004",
     "question": "What hormone from the anterior pituitary stimulates the thyroid gland?",
-    "answers": [
-      "TRH",
-      "TSH",
-      "T3",
-      "Calcitonin"
-    ],
+    "answers": ["TRH", "TSH", "T3", "Calcitonin"],
     "correct": 1,
     "short_explanation": "TSH (thyroid-stimulating hormone) promotes thyroid hormone production.",
     "long_explanation": "TSH is released from the anterior pituitary in response to TRH from the hypothalamus. It stimulates the thyroid to produce T3 and T4, which regulate metabolism.",
@@ -142,41 +96,21 @@
     "topic": "pituitary gland",
     "category": "Hormonal Regulation",
     "difficulty": "intermediate",
-    "tags": [
-      "TSH",
-      "thyroid axis",
-      "pituitary"
-    ],
-    "keywords": [
-      "thyroid function",
-      "TSH hormone",
-      "pituitary-thyroid axis"
-    ],
+    "tags": ["TSH", "thyroid axis", "pituitary"],
+    "keywords": ["thyroid function", "TSH hormone", "pituitary-thyroid axis"],
     "source_reference": "Clinical Endocrinology",
     "text": "What hormone from the anterior pituitary stimulates the thyroid gland?",
-    "options": [
-      "TRH",
-      "TSH",
-      "T3",
-      "Calcitonin"
-    ],
+    "options": ["TRH", "TSH", "T3", "Calcitonin"],
     "correctAnswer": "TSH",
-    "abcd": [
-      "A. TRH",
-      "B. TSH",
-      "C. T3",
-      "D. Calcitonin"
-    ]
+    "abcd": ["A. TRH", "B. TSH", "C. T3", "D. Calcitonin"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_005",
     "question": "Which pituitary hormone directly stimulates milk production?",
-    "answers": [
-      "LH",
-      "FSH",
-      "Prolactin",
-      "Oxytocin"
-    ],
+    "answers": ["LH", "FSH", "Prolactin", "Oxytocin"],
     "correct": 2,
     "short_explanation": "Prolactin promotes lactation in postpartum women.",
     "long_explanation": "Prolactin is secreted from the anterior pituitary and acts on mammary glands to initiate and sustain milk production. It is stimulated by infant suckling and inhibited by dopamine.",
@@ -184,31 +118,16 @@
     "topic": "pituitary gland",
     "category": "Reproductive Endocrinology",
     "difficulty": "basic",
-    "tags": [
-      "prolactin",
-      "lactation",
-      "hormones"
-    ],
-    "keywords": [
-      "milk production",
-      "pituitary hormone",
-      "postpartum support"
-    ],
+    "tags": ["prolactin", "lactation", "hormones"],
+    "keywords": ["milk production", "pituitary hormone", "postpartum support"],
     "source_reference": "Essentials of Human Physiology",
     "text": "Which pituitary hormone directly stimulates milk production?",
-    "options": [
-      "LH",
-      "FSH",
-      "Prolactin",
-      "Oxytocin"
-    ],
+    "options": ["LH", "FSH", "Prolactin", "Oxytocin"],
     "correctAnswer": "Prolactin",
-    "abcd": [
-      "A. LH",
-      "B. FSH",
-      "C. Prolactin",
-      "D. Oxytocin"
-    ]
+    "abcd": ["A. LH", "B. FSH", "C. Prolactin", "D. Oxytocin"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_006",
@@ -226,11 +145,7 @@
     "topic": "pituitary gland",
     "category": "Endocrine Pathology",
     "difficulty": "advanced",
-    "tags": [
-      "GH",
-      "acromegaly",
-      "pituitary tumor"
-    ],
+    "tags": ["GH", "acromegaly", "pituitary tumor"],
     "keywords": [
       "growth hormone excess",
       "pituitary dysfunction",
@@ -250,17 +165,15 @@
       "B. Hypothyroidism",
       "C. Acromegaly",
       "D. Cushing’s syndrome"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_007",
     "question": "Which hormone is suppressed by high levels of cortisol?",
-    "answers": [
-      "LH",
-      "GH",
-      "ACTH",
-      "ADH"
-    ],
+    "answers": ["LH", "GH", "ACTH", "ADH"],
     "correct": 2,
     "short_explanation": "Cortisol inhibits ACTH through negative feedback.",
     "long_explanation": "Cortisol produced by the adrenal cortex feeds back to suppress ACTH from the anterior pituitary, maintaining hormonal balance via the HPA axis.",
@@ -268,31 +181,16 @@
     "topic": "pituitary gland",
     "category": "Hormonal Feedback",
     "difficulty": "advanced",
-    "tags": [
-      "cortisol",
-      "ACTH",
-      "HPA axis"
-    ],
-    "keywords": [
-      "pituitary feedback",
-      "cortisol loop",
-      "stress hormones"
-    ],
+    "tags": ["cortisol", "ACTH", "HPA axis"],
+    "keywords": ["pituitary feedback", "cortisol loop", "stress hormones"],
     "source_reference": "Medical Physiology by Boron & Boulpaep",
     "text": "Which hormone is suppressed by high levels of cortisol?",
-    "options": [
-      "LH",
-      "GH",
-      "ACTH",
-      "ADH"
-    ],
+    "options": ["LH", "GH", "ACTH", "ADH"],
     "correctAnswer": "ACTH",
-    "abcd": [
-      "A. LH",
-      "B. GH",
-      "C. ACTH",
-      "D. ADH"
-    ]
+    "abcd": ["A. LH", "B. GH", "C. ACTH", "D. ADH"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_008",
@@ -310,16 +208,8 @@
     "topic": "pituitary gland",
     "category": "Fluid Balance",
     "difficulty": "intermediate",
-    "tags": [
-      "ADH",
-      "water balance",
-      "posterior pituitary"
-    ],
-    "keywords": [
-      "antidiuretic",
-      "vasopressin",
-      "renal function"
-    ],
+    "tags": ["ADH", "water balance", "posterior pituitary"],
+    "keywords": ["antidiuretic", "vasopressin", "renal function"],
     "source_reference": "Textbook of Medical Physiology",
     "text": "What does ADH (antidiuretic hormone) regulate?",
     "options": [
@@ -334,7 +224,10 @@
       "B. Calcium storage",
       "C. Water retention",
       "D. Protein synthesis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_009",
@@ -352,11 +245,7 @@
     "topic": "pituitary gland",
     "category": "Endocrine Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "pituitary failure",
-      "hyposecretion",
-      "hormonal deficiency"
-    ],
+    "tags": ["pituitary failure", "hyposecretion", "hormonal deficiency"],
     "keywords": [
       "pituitary gland damage",
       "hormonal deficit",
@@ -376,7 +265,10 @@
       "B. Hypopituitarism",
       "C. Graves' disease",
       "D. Addison’s disease"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   },
   {
     "id": "Pituitary_010",
@@ -394,11 +286,7 @@
     "topic": "pituitary gland",
     "category": "Neuroendocrine Integration",
     "difficulty": "advanced",
-    "tags": [
-      "hypophyseal portal",
-      "pituitary signaling",
-      "hormone transport"
-    ],
+    "tags": ["hypophyseal portal", "pituitary signaling", "hormone transport"],
     "keywords": [
       "portal circulation",
       "neuroendocrine connection",
@@ -418,6 +306,9 @@
       "B. Pituitary capillary network",
       "C. Hypophyseal portal system",
       "D. Circle of Willis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "pituitary.json"
   }
 ]

@@ -15,18 +15,8 @@
     "topic": "organ_pancreas",
     "category": "Anatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "organ_pancreas",
-      "endocrine_system",
-      "digestive_system"
-    ],
-    "keywords": [
-      "pancreas",
-      "endocrine",
-      "exocrine",
-      "digestion",
-      "insulin"
-    ],
+    "tags": ["organ_pancreas", "endocrine_system", "digestive_system"],
+    "keywords": ["pancreas", "endocrine", "exocrine", "digestion", "insulin"],
     "source_reference": "Trail Guide to the Body, Ch. 6",
     "stats": {
       "correct": 0,
@@ -46,17 +36,15 @@
       "B. It only digests fats",
       "C. It has both endocrine and exocrine functions",
       "D. It stores bile for digestion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_002",
     "question": "Which hormone is secreted by the beta cells of the pancreas?",
-    "answers": [
-      "Glucagon",
-      "Somatostatin",
-      "Insulin",
-      "Adrenaline"
-    ],
+    "answers": ["Glucagon", "Somatostatin", "Insulin", "Adrenaline"],
     "correct": 2,
     "short_explanation": "Beta cells produce insulin to lower blood sugar.",
     "long_explanation": "Insulin is produced by beta cells in the islets of Langerhans. It facilitates glucose uptake into cells, thus reducing blood glucose levels. Dysfunction leads to diabetes mellitus.",
@@ -64,11 +52,7 @@
     "topic": "organ_pancreas",
     "category": "Endocrinology",
     "difficulty": "intermediate",
-    "tags": [
-      "organ_pancreas",
-      "hormone",
-      "endocrine_system"
-    ],
+    "tags": ["organ_pancreas", "hormone", "endocrine_system"],
     "keywords": [
       "insulin",
       "beta cells",
@@ -83,19 +67,12 @@
       "attempts": 0
     },
     "text": "Which hormone is secreted by the beta cells of the pancreas?",
-    "options": [
-      "Glucagon",
-      "Somatostatin",
-      "Insulin",
-      "Adrenaline"
-    ],
+    "options": ["Glucagon", "Somatostatin", "Insulin", "Adrenaline"],
     "correctAnswer": "Insulin",
-    "abcd": [
-      "A. Glucagon",
-      "B. Somatostatin",
-      "C. Insulin",
-      "D. Adrenaline"
-    ]
+    "abcd": ["A. Glucagon", "B. Somatostatin", "C. Insulin", "D. Adrenaline"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_003",
@@ -113,18 +90,8 @@
     "topic": "organ_pancreas",
     "category": "Digestive System",
     "difficulty": "basic",
-    "tags": [
-      "digestive_system",
-      "organ_pancreas",
-      "enzymes"
-    ],
-    "keywords": [
-      "amylase",
-      "lipase",
-      "trypsin",
-      "pancreas",
-      "digestion"
-    ],
+    "tags": ["digestive_system", "organ_pancreas", "enzymes"],
+    "keywords": ["amylase", "lipase", "trypsin", "pancreas", "digestion"],
     "source_reference": "Anatomy & Physiology Made Incredibly Easy",
     "stats": {
       "correct": 0,
@@ -144,7 +111,10 @@
       "B. Trypsin, lipase, and amylase",
       "C. Bile and sucrase",
       "D. Lactase and insulin"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_004",
@@ -162,18 +132,8 @@
     "topic": "organ_pancreas",
     "category": "Endocrinology",
     "difficulty": "intermediate",
-    "tags": [
-      "organ_pancreas",
-      "hormone",
-      "glucose"
-    ],
-    "keywords": [
-      "glucagon",
-      "alpha cells",
-      "glycogen",
-      "liver",
-      "blood sugar"
-    ],
+    "tags": ["organ_pancreas", "hormone", "glucose"],
+    "keywords": ["glucagon", "alpha cells", "glycogen", "liver", "blood sugar"],
     "source_reference": "Trail Guide to the Body",
     "stats": {
       "correct": 0,
@@ -193,7 +153,10 @@
       "B. Raise blood sugar levels",
       "C. Decrease fat metabolism",
       "D. Increase protein synthesis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_005",
@@ -211,18 +174,8 @@
     "topic": "organ_pancreas",
     "category": "Digestive System",
     "difficulty": "basic",
-    "tags": [
-      "anatomy",
-      "organ_pancreas",
-      "digestive_system",
-      "ducts"
-    ],
-    "keywords": [
-      "pancreatic duct",
-      "duodenum",
-      "enzymes",
-      "digestion"
-    ],
+    "tags": ["anatomy", "organ_pancreas", "digestive_system", "ducts"],
+    "keywords": ["pancreatic duct", "duodenum", "enzymes", "digestion"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -242,17 +195,15 @@
       "B. Cystic duct",
       "C. Pancreatic duct",
       "D. Hepatic duct"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_006",
     "question": "Which pancreatic cells secrete glucagon?",
-    "answers": [
-      "Alpha cells",
-      "Beta cells",
-      "Delta cells",
-      "Acinar cells"
-    ],
+    "answers": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
     "correct": 0,
     "short_explanation": "Glucagon is secreted by alpha cells in the islets of Langerhans.",
     "long_explanation": "Alpha cells in the pancreas detect low blood glucose levels and release glucagon to stimulate glycogenolysis in the liver.",
@@ -260,12 +211,7 @@
     "topic": "organ_pancreas",
     "category": "Hormonal",
     "difficulty": "intermediate",
-    "tags": [
-      "alpha cells",
-      "glucagon",
-      "pancreas",
-      "blood sugar"
-    ],
+    "tags": ["alpha cells", "glucagon", "pancreas", "blood sugar"],
     "keywords": [
       "islets of Langerhans",
       "endocrine pancreas",
@@ -278,19 +224,17 @@
       "attempts": 0
     },
     "text": "Which pancreatic cells secrete glucagon?",
-    "options": [
-      "Alpha cells",
-      "Beta cells",
-      "Delta cells",
-      "Acinar cells"
-    ],
+    "options": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
     "correctAnswer": "Alpha cells",
     "abcd": [
       "A. Alpha cells",
       "B. Beta cells",
       "C. Delta cells",
       "D. Acinar cells"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_007",
@@ -308,16 +252,8 @@
     "topic": "organ_pancreas",
     "category": "Hormonal",
     "difficulty": "advanced",
-    "tags": [
-      "pancreas",
-      "somatostatin",
-      "hormonal regulation"
-    ],
-    "keywords": [
-      "delta cells",
-      "pancreatic hormones",
-      "feedback inhibition"
-    ],
+    "tags": ["pancreas", "somatostatin", "hormonal regulation"],
+    "keywords": ["delta cells", "pancreatic hormones", "feedback inhibition"],
     "source_reference": "Pathophysiology: The Biologic Basis for Disease",
     "stats": {
       "correct": 0,
@@ -337,7 +273,10 @@
       "B. Stimulates bile secretion",
       "C. Inhibits insulin and glucagon release",
       "D. Accelerates digestive enzyme release"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_008",
@@ -355,16 +294,8 @@
     "topic": "organ_pancreas",
     "category": "Pathology",
     "difficulty": "intermediate",
-    "tags": [
-      "pancreas",
-      "inflammation",
-      "exocrine"
-    ],
-    "keywords": [
-      "pancreatitis",
-      "enzyme secretion",
-      "acinar cells"
-    ],
+    "tags": ["pancreas", "inflammation", "exocrine"],
+    "keywords": ["pancreatitis", "enzyme secretion", "acinar cells"],
     "source_reference": "Robbins Pathologic Basis of Disease",
     "stats": {
       "correct": 0,
@@ -384,7 +315,10 @@
       "B. Bile storage",
       "C. Exocrine enzyme release",
       "D. Insulin production"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_009",
@@ -402,16 +336,8 @@
     "topic": "organ_pancreas",
     "category": "Pathology",
     "difficulty": "advanced",
-    "tags": [
-      "pancreas",
-      "cystic fibrosis",
-      "malabsorption"
-    ],
-    "keywords": [
-      "CFTR gene",
-      "enzyme deficiency",
-      "pancreatic duct"
-    ],
+    "tags": ["pancreas", "cystic fibrosis", "malabsorption"],
+    "keywords": ["CFTR gene", "enzyme deficiency", "pancreatic duct"],
     "source_reference": "Essentials of Human Diseases and Conditions",
     "stats": {
       "correct": 0,
@@ -431,7 +357,10 @@
       "B. Diabetes mellitus",
       "C. Cystic fibrosis",
       "D. Pancreatic cancer"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   },
   {
     "id": "Pancreas_010",
@@ -449,16 +378,8 @@
     "topic": "organ_pancreas",
     "category": "Anatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "pancreas",
-      "liver",
-      "ducts"
-    ],
-    "keywords": [
-      "hepatopancreatic ampulla",
-      "common bile duct",
-      "duodenum"
-    ],
+    "tags": ["pancreas", "liver", "ducts"],
+    "keywords": ["hepatopancreatic ampulla", "common bile duct", "duodenum"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -478,6 +399,9 @@
       "B. They share a common duct entering the duodenum",
       "C. The pancreas detoxifies bile",
       "D. The liver produces insulin for the pancreas"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/pancreas",
+    "filename": "pancreas.json"
   }
 ]

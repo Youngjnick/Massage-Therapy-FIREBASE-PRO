@@ -15,16 +15,8 @@
     "difficulty": "intermediate",
     "topic": "neuroanatomy",
     "category": "Motor",
-    "tags": [
-      "C5",
-      "axillary nerve",
-      "deltoid"
-    ],
-    "keywords": [
-      "C5 spinal root",
-      "shoulder abduction",
-      "nerve testing"
-    ],
+    "tags": ["C5", "axillary nerve", "deltoid"],
+    "keywords": ["C5 spinal root", "shoulder abduction", "nerve testing"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "unit": "C5 spinal nerve",
     "text": "Which major upper limb muscle receives primary motor innervation from the C5 spinal nerve?",
@@ -40,17 +32,15 @@
       "B. Biceps brachii",
       "C. Flexor carpi ulnaris",
       "D. Deltoid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_002",
     "question": "Which nerve receives fibers from the C5 spinal root and innervates the supraspinatus muscle?",
-    "answers": [
-      "Axillary",
-      "Musculocutaneous",
-      "Suprascapular",
-      "Radial"
-    ],
+    "answers": ["Axillary", "Musculocutaneous", "Suprascapular", "Radial"],
     "correct": 2,
     "short_explanation": "The suprascapular nerve arises from the upper trunk (C5–C6) of the brachial plexus.",
     "long_explanation": "C5 contributes to the suprascapular nerve, which innervates supraspinatus and infraspinatus, both part of the rotator cuff group.",
@@ -58,32 +48,22 @@
     "difficulty": "intermediate",
     "topic": "shoulder stability",
     "category": "Motor",
-    "tags": [
-      "C5",
-      "suprascapular",
-      "rotator cuff"
-    ],
-    "keywords": [
-      "supraspinatus",
-      "infraspinatus",
-      "rotator cuff"
-    ],
+    "tags": ["C5", "suprascapular", "rotator cuff"],
+    "keywords": ["supraspinatus", "infraspinatus", "rotator cuff"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "unit": "C5 spinal nerve",
     "text": "Which nerve receives fibers from the C5 spinal root and innervates the supraspinatus muscle?",
-    "options": [
-      "Axillary",
-      "Musculocutaneous",
-      "Suprascapular",
-      "Radial"
-    ],
+    "options": ["Axillary", "Musculocutaneous", "Suprascapular", "Radial"],
     "correctAnswer": "Suprascapular",
     "abcd": [
       "A. Axillary",
       "B. Musculocutaneous",
       "C. Suprascapular",
       "D. Radial"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_003",
@@ -101,16 +81,8 @@
     "difficulty": "basic",
     "topic": "dermatomes",
     "category": "Sensory",
-    "tags": [
-      "C5",
-      "dermatome",
-      "shoulder sensation"
-    ],
-    "keywords": [
-      "cutaneous",
-      "radiculopathy",
-      "cervical nerves"
-    ],
+    "tags": ["C5", "dermatome", "shoulder sensation"],
+    "keywords": ["cutaneous", "radiculopathy", "cervical nerves"],
     "source_reference": "Dermatomes and Myotomes: A Clinical Guide",
     "unit": "C5 spinal nerve",
     "text": "What area of the skin is most associated with the C5 dermatome?",
@@ -126,7 +98,10 @@
       "B. Lateral shoulder",
       "C. Thumb",
       "D. Lateral thigh"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_004",
@@ -144,16 +119,8 @@
     "difficulty": "intermediate",
     "topic": "reflex testing",
     "category": "Neurology",
-    "tags": [
-      "C5",
-      "biceps",
-      "reflex"
-    ],
-    "keywords": [
-      "reflex arc",
-      "musculocutaneous nerve",
-      "neurological test"
-    ],
+    "tags": ["C5", "biceps", "reflex"],
+    "keywords": ["reflex arc", "musculocutaneous nerve", "neurological test"],
     "source_reference": "DeMyer’s Neurologic Examination",
     "unit": "C5 spinal nerve",
     "text": "Which reflex is most affected by a lesion at the C5 spinal root?",
@@ -169,7 +136,10 @@
       "B. Biceps reflex",
       "C. Brachioradialis reflex",
       "D. Achilles reflex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_005",
@@ -187,16 +157,8 @@
     "difficulty": "basic",
     "topic": "motor control",
     "category": "Motor",
-    "tags": [
-      "C5",
-      "deltoid",
-      "abduction"
-    ],
-    "keywords": [
-      "shoulder movement",
-      "nerve injury",
-      "upper limb"
-    ],
+    "tags": ["C5", "deltoid", "abduction"],
+    "keywords": ["shoulder movement", "nerve injury", "upper limb"],
     "source_reference": "Trail Guide to the Body",
     "unit": "C5 spinal nerve",
     "text": "Which of the following is a primary function of C5 spinal root innervation?",
@@ -212,7 +174,10 @@
       "B. Arm abduction",
       "C. Finger flexion",
       "D. Trunk rotation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_006",
@@ -230,16 +195,8 @@
     "difficulty": "intermediate",
     "topic": "plexus anatomy",
     "category": "Anatomy",
-    "tags": [
-      "C5",
-      "brachial plexus",
-      "upper trunk"
-    ],
-    "keywords": [
-      "plexus structure",
-      "nerve pathway",
-      "C5–C6"
-    ],
+    "tags": ["C5", "brachial plexus", "upper trunk"],
+    "keywords": ["plexus structure", "nerve pathway", "C5–C6"],
     "source_reference": "Biel’s Trail Guide to the Body",
     "unit": "C5 spinal nerve",
     "text": "Which trunk of the brachial plexus is formed partly by C5?",
@@ -255,17 +212,15 @@
       "B. Middle trunk",
       "C. Lower trunk",
       "D. Posterior trunk"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_007",
     "question": "A client with reduced sensation over the lateral deltoid and weakness in arm abduction likely has which root involved?",
-    "answers": [
-      "C4",
-      "C5",
-      "C6",
-      "C7"
-    ],
+    "answers": ["C4", "C5", "C6", "C7"],
     "correct": 1,
     "short_explanation": "These symptoms point to C5 involvement.",
     "long_explanation": "The C5 root provides sensory input to the lateral shoulder and motor output to the deltoid muscle via the axillary nerve.",
@@ -273,42 +228,22 @@
     "difficulty": "advanced",
     "topic": "diagnostic patterns",
     "category": "Motor/Sensory",
-    "tags": [
-      "C5",
-      "radiculopathy",
-      "shoulder"
-    ],
-    "keywords": [
-      "deltoid testing",
-      "nerve loss",
-      "cervical nerve"
-    ],
+    "tags": ["C5", "radiculopathy", "shoulder"],
+    "keywords": ["deltoid testing", "nerve loss", "cervical nerve"],
     "source_reference": "Hoppenfeld’s Orthopedic Neurology",
     "unit": "C5 spinal nerve",
     "text": "A client with reduced sensation over the lateral deltoid and weakness in arm abduction likely has which root involved?",
-    "options": [
-      "C4",
-      "C5",
-      "C6",
-      "C7"
-    ],
+    "options": ["C4", "C5", "C6", "C7"],
     "correctAnswer": "C5",
-    "abcd": [
-      "A. C4",
-      "B. C5",
-      "C. C6",
-      "D. C7"
-    ]
+    "abcd": ["A. C4", "B. C5", "C. C6", "D. C7"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_008",
     "question": "Which spinal root contributes to the musculocutaneous nerve for elbow flexion?",
-    "answers": [
-      "C5",
-      "C7",
-      "T1",
-      "C8"
-    ],
+    "answers": ["C5", "C7", "T1", "C8"],
     "correct": 0,
     "short_explanation": "C5 contributes significantly to the musculocutaneous nerve.",
     "long_explanation": "The musculocutaneous nerve arises from the lateral cord, containing fibers from C5–C7, and innervates biceps and brachialis.",
@@ -316,32 +251,17 @@
     "difficulty": "intermediate",
     "topic": "motor innervation",
     "category": "Motor",
-    "tags": [
-      "C5",
-      "elbow flexion",
-      "musculocutaneous"
-    ],
-    "keywords": [
-      "nerve function",
-      "arm flexion",
-      "motor testing"
-    ],
+    "tags": ["C5", "elbow flexion", "musculocutaneous"],
+    "keywords": ["nerve function", "arm flexion", "motor testing"],
     "source_reference": "Netter’s Clinical Anatomy",
     "unit": "C5 spinal nerve",
     "text": "Which spinal root contributes to the musculocutaneous nerve for elbow flexion?",
-    "options": [
-      "C5",
-      "C7",
-      "T1",
-      "C8"
-    ],
+    "options": ["C5", "C7", "T1", "C8"],
     "correctAnswer": "C5",
-    "abcd": [
-      "A. C5",
-      "B. C7",
-      "C. T1",
-      "D. C8"
-    ]
+    "abcd": ["A. C5", "B. C7", "C. T1", "D. C8"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_009",
@@ -359,15 +279,8 @@
     "difficulty": "basic",
     "topic": "motor testing",
     "category": "Motor",
-    "tags": [
-      "C5",
-      "abduction",
-      "motor"
-    ],
-    "keywords": [
-      "shoulder movement",
-      "nerve assessment"
-    ],
+    "tags": ["C5", "abduction", "motor"],
+    "keywords": ["shoulder movement", "nerve assessment"],
     "source_reference": "Moore’s Clinical Anatomy",
     "unit": "C5 spinal nerve",
     "text": "Which movement is most associated with C5 nerve activity?",
@@ -383,7 +296,10 @@
       "B. Elbow extension",
       "C. Arm abduction",
       "D. Wrist flexion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   },
   {
     "id": "C5_Nerve_010",
@@ -401,16 +317,8 @@
     "difficulty": "advanced",
     "topic": "differential diagnosis",
     "category": "Motor",
-    "tags": [
-      "C5",
-      "motor testing",
-      "wrist extension"
-    ],
-    "keywords": [
-      "C6 vs C5",
-      "radial nerve",
-      "upper limb diagnosis"
-    ],
+    "tags": ["C5", "motor testing", "wrist extension"],
+    "keywords": ["C6 vs C5", "radial nerve", "upper limb diagnosis"],
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "unit": "C5 spinal nerve",
     "text": "Damage to C5 would most likely spare which action?",
@@ -426,6 +334,9 @@
       "B. Arm external rotation",
       "C. Elbow flexion",
       "D. Wrist extension"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "C5_nerve_innervations.json"
   }
 ]

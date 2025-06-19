@@ -2,12 +2,7 @@
   {
     "id": "Brachial Plexus 001",
     "question": "Which spinal nerve roots contribute to the formation of the brachial plexus?",
-    "answers": [
-      "C1–C5",
-      "C5–T1",
-      "T2–T6",
-      "L1–L5"
-    ],
+    "answers": ["C1–C5", "C5–T1", "T2–T6", "L1–L5"],
     "correct": 1,
     "short_explanation": "The brachial plexus is formed from the ventral rami of spinal nerves C5 to T1.",
     "long_explanation": "The brachial plexus is a complex network of nerves formed by the anterior (ventral) rami of C5 through T1 spinal nerves. These nerves merge and divide into trunks, divisions, cords, and branches that innervate the upper limb. Understanding its origin is crucial for interpreting patterns of motor and sensory deficits.",
@@ -21,13 +16,7 @@
       "anatomy_neck",
       "upper_limb_innervation"
     ],
-    "keywords": [
-      "brachial plexus",
-      "C5",
-      "T1",
-      "nerve roots",
-      "upper limb"
-    ],
+    "keywords": ["brachial plexus", "C5", "T1", "nerve roots", "upper limb"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
     "stats": {
@@ -36,29 +25,17 @@
       "attempts": 0
     },
     "text": "Which spinal nerve roots contribute to the formation of the brachial plexus?",
-    "options": [
-      "C1–C5",
-      "C5–T1",
-      "T2–T6",
-      "L1–L5"
-    ],
+    "options": ["C1–C5", "C5–T1", "T2–T6", "L1–L5"],
     "correctAnswer": "C5–T1",
-    "abcd": [
-      "A. C1–C5",
-      "B. C5–T1",
-      "C. T2–T6",
-      "D. L1–L5"
-    ]
+    "abcd": ["A. C1–C5", "B. C5–T1", "C. T2–T6", "D. L1–L5"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 002",
     "question": "Which part of the brachial plexus gives rise directly to the musculocutaneous, median, and ulnar nerves?",
-    "answers": [
-      "Trunks",
-      "Divisions",
-      "Roots",
-      "Cords"
-    ],
+    "answers": ["Trunks", "Divisions", "Roots", "Cords"],
     "correct": 3,
     "short_explanation": "The cords of the brachial plexus give rise to its terminal branches, including the musculocutaneous, median, and ulnar nerves.",
     "long_explanation": "The brachial plexus has five roots, three trunks, six divisions, and three cords. The cords—named lateral, medial, and posterior based on their position relative to the axillary artery—give rise to most of the terminal branches that innervate the upper limb.",
@@ -87,29 +64,17 @@
       "attempts": 0
     },
     "text": "Which part of the brachial plexus gives rise directly to the musculocutaneous, median, and ulnar nerves?",
-    "options": [
-      "Trunks",
-      "Divisions",
-      "Roots",
-      "Cords"
-    ],
+    "options": ["Trunks", "Divisions", "Roots", "Cords"],
     "correctAnswer": "Cords",
-    "abcd": [
-      "A. Trunks",
-      "B. Divisions",
-      "C. Roots",
-      "D. Cords"
-    ]
+    "abcd": ["A. Trunks", "B. Divisions", "C. Roots", "D. Cords"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 003",
     "question": "Which of the following nerves does NOT originate from the brachial plexus?",
-    "answers": [
-      "Radial nerve",
-      "Phrenic nerve",
-      "Median nerve",
-      "Ulnar nerve"
-    ],
+    "answers": ["Radial nerve", "Phrenic nerve", "Median nerve", "Ulnar nerve"],
     "correct": 1,
     "short_explanation": "The phrenic nerve originates from C3–C5 and innervates the diaphragm, not the upper limb.",
     "long_explanation": "While the radial, median, and ulnar nerves are major branches of the brachial plexus, the phrenic nerve is derived from cervical nerves C3–C5. It travels inferiorly to innervate the diaphragm and is unrelated to upper limb innervation.",
@@ -117,11 +82,7 @@
     "difficulty": "easy",
     "topic": "neuroanatomy",
     "category": "Anatomy",
-    "tags": [
-      "nerve_phrenic",
-      "nerve_brachial_plexus",
-      "diaphragm_innervation"
-    ],
+    "tags": ["nerve_phrenic", "nerve_brachial_plexus", "diaphragm_innervation"],
     "keywords": [
       "phrenic nerve",
       "brachial plexus",
@@ -137,19 +98,17 @@
       "attempts": 0
     },
     "text": "Which of the following nerves does NOT originate from the brachial plexus?",
-    "options": [
-      "Radial nerve",
-      "Phrenic nerve",
-      "Median nerve",
-      "Ulnar nerve"
-    ],
+    "options": ["Radial nerve", "Phrenic nerve", "Median nerve", "Ulnar nerve"],
     "correctAnswer": "Phrenic nerve",
     "abcd": [
       "A. Radial nerve",
       "B. Phrenic nerve",
       "C. Median nerve",
       "D. Ulnar nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 004",
@@ -167,16 +126,8 @@
     "difficulty": "intermediate",
     "topic": "neurovascular anatomy",
     "category": "Anatomy",
-    "tags": [
-      "posterior_cord",
-      "axillary_artery",
-      "brachial_plexus"
-    ],
-    "keywords": [
-      "posterior cord",
-      "axillary artery",
-      "nerve anatomy"
-    ],
+    "tags": ["posterior_cord", "axillary_artery", "brachial_plexus"],
+    "keywords": ["posterior cord", "axillary artery", "nerve anatomy"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
@@ -197,17 +148,15 @@
       "B. Axillary artery",
       "C. Cephalic vein",
       "D. Median cubital vein"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 005",
     "question": "Erb’s palsy results from injury to which part of the brachial plexus?",
-    "answers": [
-      "Lower trunk",
-      "Middle trunk",
-      "Upper trunk",
-      "Posterior cord"
-    ],
+    "answers": ["Lower trunk", "Middle trunk", "Upper trunk", "Posterior cord"],
     "correct": 2,
     "short_explanation": "Erb’s palsy involves damage to the upper trunk (C5–C6).",
     "long_explanation": "Erb’s palsy is caused by traction on the upper trunk of the brachial plexus, typically during birth or trauma. This affects shoulder and elbow function due to impairment of the musculocutaneous and axillary nerves.",
@@ -215,17 +164,8 @@
     "difficulty": "advanced",
     "topic": "clinical neuroanatomy",
     "category": "Pathology",
-    "tags": [
-      "erb_palsy",
-      "upper_trunk",
-      "nerve_injury"
-    ],
-    "keywords": [
-      "Erb’s palsy",
-      "C5",
-      "C6",
-      "upper trunk"
-    ],
+    "tags": ["erb_palsy", "upper_trunk", "nerve_injury"],
+    "keywords": ["Erb’s palsy", "C5", "C6", "upper trunk"],
     "mblex_category": "Pathology",
     "source_reference": "Moore's Clinically Oriented Anatomy",
     "stats": {
@@ -234,19 +174,17 @@
       "attempts": 0
     },
     "text": "Erb’s palsy results from injury to which part of the brachial plexus?",
-    "options": [
-      "Lower trunk",
-      "Middle trunk",
-      "Upper trunk",
-      "Posterior cord"
-    ],
+    "options": ["Lower trunk", "Middle trunk", "Upper trunk", "Posterior cord"],
     "correctAnswer": "Upper trunk",
     "abcd": [
       "A. Lower trunk",
       "B. Middle trunk",
       "C. Upper trunk",
       "D. Posterior cord"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 006",
@@ -264,17 +202,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Anatomy",
-    "tags": [
-      "serratus_anterior",
-      "long_thoracic_nerve",
-      "brachial_plexus"
-    ],
-    "keywords": [
-      "serratus anterior",
-      "long thoracic",
-      "scapula",
-      "C5–C7"
-    ],
+    "tags": ["serratus_anterior", "long_thoracic_nerve", "brachial_plexus"],
+    "keywords": ["serratus anterior", "long thoracic", "scapula", "C5–C7"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
     "stats": {
@@ -295,7 +224,10 @@
       "B. Long thoracic nerve",
       "C. Lateral pectoral nerve",
       "D. Suprascapular nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 007",
@@ -313,17 +245,8 @@
     "difficulty": "intermediate",
     "topic": "neuroanatomy",
     "category": "Anatomy",
-    "tags": [
-      "axillary_nerve",
-      "posterior_cord",
-      "brachial_plexus"
-    ],
-    "keywords": [
-      "axillary nerve",
-      "posterior cord",
-      "deltoid",
-      "teres minor"
-    ],
+    "tags": ["axillary_nerve", "posterior_cord", "brachial_plexus"],
+    "keywords": ["axillary nerve", "posterior cord", "deltoid", "teres minor"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
@@ -344,7 +267,10 @@
       "B. Axillary nerve",
       "C. Musculocutaneous nerve",
       "D. Median nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 008",
@@ -362,11 +288,7 @@
     "difficulty": "advanced",
     "topic": "sensory neuroanatomy",
     "category": "Anatomy",
-    "tags": [
-      "cutaneous_nerve",
-      "brachial_plexus",
-      "lateral_forearm"
-    ],
+    "tags": ["cutaneous_nerve", "brachial_plexus", "lateral_forearm"],
     "keywords": [
       "lateral antebrachial cutaneous",
       "forearm sensation",
@@ -392,17 +314,15 @@
       "B. Medial antebrachial cutaneous",
       "C. Lateral antebrachial cutaneous",
       "D. Median nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 009",
     "question": "Which trunk of the brachial plexus gives rise to the suprascapular nerve?",
-    "answers": [
-      "Upper trunk",
-      "Middle trunk",
-      "Lower trunk",
-      "Posterior cord"
-    ],
+    "answers": ["Upper trunk", "Middle trunk", "Lower trunk", "Posterior cord"],
     "correct": 0,
     "short_explanation": "The suprascapular nerve branches off the upper trunk (C5–C6).",
     "long_explanation": "This nerve innervates the supraspinatus and infraspinatus muscles. It passes through the suprascapular notch, making it vulnerable to entrapment or compression.",
@@ -410,11 +330,7 @@
     "difficulty": "intermediate",
     "topic": "nerve branches",
     "category": "Anatomy",
-    "tags": [
-      "suprascapular_nerve",
-      "brachial_plexus",
-      "shoulder"
-    ],
+    "tags": ["suprascapular_nerve", "brachial_plexus", "shoulder"],
     "keywords": [
       "suprascapular nerve",
       "upper trunk",
@@ -430,19 +346,17 @@
       "attempts": 0
     },
     "text": "Which trunk of the brachial plexus gives rise to the suprascapular nerve?",
-    "options": [
-      "Upper trunk",
-      "Middle trunk",
-      "Lower trunk",
-      "Posterior cord"
-    ],
+    "options": ["Upper trunk", "Middle trunk", "Lower trunk", "Posterior cord"],
     "correctAnswer": "Upper trunk",
     "abcd": [
       "A. Upper trunk",
       "B. Middle trunk",
       "C. Lower trunk",
       "D. Posterior cord"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   },
   {
     "id": "Brachial Plexus 010",
@@ -460,16 +374,8 @@
     "difficulty": "intermediate",
     "topic": "nerve branches",
     "category": "Anatomy",
-    "tags": [
-      "ulnar_nerve",
-      "brachial_plexus",
-      "medial_cord"
-    ],
-    "keywords": [
-      "ulnar nerve",
-      "medial cord",
-      "hand innervation"
-    ],
+    "tags": ["ulnar_nerve", "brachial_plexus", "medial_cord"],
+    "keywords": ["ulnar nerve", "medial cord", "hand innervation"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
@@ -490,6 +396,9 @@
       "B. Median nerve",
       "C. Musculocutaneous nerve",
       "D. Ulnar nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/arm_innervations",
+    "filename": "brachial_plexus_innervations.json"
   }
 ]

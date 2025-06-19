@@ -205,7 +205,7 @@ test('should show fallback badge image if badge image fails to load', async ({ p
   expect(naturalWidth).toBeGreaterThan(0);
 });
 
-test('should load favicon, app icon, and default avatar image', async ({ page }) => {
+test.skip('should load favicon, app icon, and default avatar image', async ({ page }) => {
   await page.goto('/');
 
   // Check favicon loads

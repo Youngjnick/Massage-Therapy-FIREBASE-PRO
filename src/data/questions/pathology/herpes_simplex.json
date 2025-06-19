@@ -12,19 +12,9 @@
     "short_explanation": "Herpes simplex virus (HSV) is the causative agent.",
     "long_explanation": "Herpes simplex is caused by HSV-1 (oral/facial) and HSV-2 (genital), both belonging to the Herpesviridae family.",
     "clinical_application": "Massage is contraindicated over active lesions due to viral shedding.",
-    "tags": [
-      "HSV",
-      "virus",
-      "infection"
-    ],
-    "keywords": [
-      "herpesvirus",
-      "cold sores",
-      "genital herpes"
-    ],
-    "synonyms": [
-      "HSV"
-    ],
+    "tags": ["HSV", "virus", "infection"],
+    "keywords": ["herpesvirus", "cold sores", "genital herpes"],
+    "synonyms": ["HSV"],
     "topic": "Infectious Disease",
     "category": "Viral Infections",
     "subcategory": "Herpesviruses",
@@ -46,34 +36,22 @@
       "B. Epstein-Barr virus",
       "C. Herpes simplex virus",
       "D. Cytomegalovirus"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_002",
     "question": "Which type of herpes simplex virus is most commonly associated with cold sores?",
-    "answers": [
-      "HSV-1",
-      "HSV-2",
-      "Varicella-zoster",
-      "HPV"
-    ],
+    "answers": ["HSV-1", "HSV-2", "Varicella-zoster", "HPV"],
     "correct": 0,
     "short_explanation": "HSV-1 typically causes oral herpes.",
     "long_explanation": "HSV-1 is primarily responsible for cold sores or fever blisters around the mouth, often acquired in childhood.",
     "clinical_application": "Avoid facial massage if the client has a visible sore or recent outbreak.",
-    "tags": [
-      "oral herpes",
-      "cold sores",
-      "HSV-1"
-    ],
-    "keywords": [
-      "fever blister",
-      "mouth lesion",
-      "facial herpes"
-    ],
-    "synonyms": [
-      "oral herpes"
-    ],
+    "tags": ["oral herpes", "cold sores", "HSV-1"],
+    "keywords": ["fever blister", "mouth lesion", "facial herpes"],
+    "synonyms": ["oral herpes"],
     "topic": "Dermatology",
     "category": "Viral Dermatoses",
     "subcategory": "Lip Lesions",
@@ -83,46 +61,24 @@
     "mblex_category": "Pathology",
     "source_reference": "NIH",
     "text": "Which type of herpes simplex virus is most commonly associated with cold sores?",
-    "options": [
-      "HSV-1",
-      "HSV-2",
-      "Varicella-zoster",
-      "HPV"
-    ],
+    "options": ["HSV-1", "HSV-2", "Varicella-zoster", "HPV"],
     "correctAnswer": "HSV-1",
-    "abcd": [
-      "A. HSV-1",
-      "B. HSV-2",
-      "C. Varicella-zoster",
-      "D. HPV"
-    ]
+    "abcd": ["A. HSV-1", "B. HSV-2", "C. Varicella-zoster", "D. HPV"],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_003",
     "question": "Where does the herpes simplex virus remain latent after initial infection?",
-    "answers": [
-      "Bloodstream",
-      "Dermis",
-      "Sensory nerve ganglia",
-      "Thymus"
-    ],
+    "answers": ["Bloodstream", "Dermis", "Sensory nerve ganglia", "Thymus"],
     "correct": 2,
     "short_explanation": "HSV lies dormant in sensory ganglia like trigeminal or sacral nerves.",
     "long_explanation": "Once infected, the virus travels along nerves and stays dormant in ganglia, often reactivating during stress or immune suppression.",
     "clinical_application": "Clients may report tingling before outbreaks—massage may be adjusted or avoided accordingly.",
-    "tags": [
-      "latency",
-      "ganglia",
-      "reactivation"
-    ],
-    "keywords": [
-      "nerve",
-      "trigeminal",
-      "sacral"
-    ],
-    "synonyms": [
-      "latent herpes"
-    ],
+    "tags": ["latency", "ganglia", "reactivation"],
+    "keywords": ["nerve", "trigeminal", "sacral"],
+    "synonyms": ["latent herpes"],
     "topic": "Neurovirology",
     "category": "Latency",
     "subcategory": "Nerve Infections",
@@ -132,19 +88,17 @@
     "mblex_category": "Pathology",
     "source_reference": "Guyton & Hall",
     "text": "Where does the herpes simplex virus remain latent after initial infection?",
-    "options": [
-      "Bloodstream",
-      "Dermis",
-      "Sensory nerve ganglia",
-      "Thymus"
-    ],
+    "options": ["Bloodstream", "Dermis", "Sensory nerve ganglia", "Thymus"],
     "correctAnswer": "Sensory nerve ganglia",
     "abcd": [
       "A. Bloodstream",
       "B. Dermis",
       "C. Sensory nerve ganglia",
       "D. Thymus"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_004",
@@ -159,20 +113,9 @@
     "short_explanation": "Triggers include stress, illness, and UV exposure.",
     "long_explanation": "Stress, immune suppression, and ultraviolet light can reactivate HSV, leading to vesicular lesions at the original site.",
     "clinical_application": "Clients under stress may be more prone to outbreaks; facial massage should avoid active regions.",
-    "tags": [
-      "trigger",
-      "reactivation",
-      "sunlight"
-    ],
-    "keywords": [
-      "UV",
-      "fever",
-      "stress",
-      "suppress"
-    ],
-    "synonyms": [
-      "recurrent herpes"
-    ],
+    "tags": ["trigger", "reactivation", "sunlight"],
+    "keywords": ["UV", "fever", "stress", "suppress"],
+    "synonyms": ["recurrent herpes"],
     "topic": "Relapse Triggers",
     "category": "Recurrent Viral Conditions",
     "subcategory": "Environmental Stressors",
@@ -194,7 +137,10 @@
       "B. Antibiotics",
       "C. Fever, stress, or sunlight",
       "D. Cold water"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_005",
@@ -209,20 +155,9 @@
     "short_explanation": "HSV is spread by direct contact with skin or mucosa.",
     "long_explanation": "The virus is most contagious when lesions are present, but it can still spread when asymptomatic through skin contact or kissing.",
     "clinical_application": "Practitioners should avoid contact with active lesions and wash hands thoroughly.",
-    "tags": [
-      "transmission",
-      "contact",
-      "viral spread"
-    ],
-    "keywords": [
-      "skin contact",
-      "mucosa",
-      "kissing"
-    ],
-    "synonyms": [
-      "spread",
-      "contagious herpes"
-    ],
+    "tags": ["transmission", "contact", "viral spread"],
+    "keywords": ["skin contact", "mucosa", "kissing"],
+    "synonyms": ["spread", "contagious herpes"],
     "topic": "Infection Control",
     "category": "Transmission",
     "subcategory": "Direct Contact Pathogens",
@@ -244,7 +179,10 @@
       "B. Contaminated water",
       "C. Direct skin-to-skin contact",
       "D. Fecal-oral route"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_006",
@@ -259,19 +197,9 @@
     "short_explanation": "HSV-2 usually causes genital herpes.",
     "long_explanation": "Herpes simplex virus type 2 (HSV-2) primarily causes lesions in the genital and anal areas and is typically sexually transmitted.",
     "clinical_application": "Massage should avoid affected regions and ensure linens and therapist hands do not contact lesions.",
-    "tags": [
-      "HSV-2",
-      "genital",
-      "STI"
-    ],
-    "keywords": [
-      "sexually transmitted",
-      "lesion",
-      "anogenital"
-    ],
-    "synonyms": [
-      "genital herpes"
-    ],
+    "tags": ["HSV-2", "genital", "STI"],
+    "keywords": ["sexually transmitted", "lesion", "anogenital"],
+    "synonyms": ["genital herpes"],
     "topic": "Infectious Disease",
     "category": "Sexually Transmitted Infections",
     "subcategory": "Herpesviruses",
@@ -293,7 +221,10 @@
       "B. Nasal passages",
       "C. Genital and perineal areas",
       "D. Palms of the hands"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_007",
@@ -308,19 +239,9 @@
     "short_explanation": "Tingling or burning is often the first sign of a coming outbreak.",
     "long_explanation": "The prodromal phase includes itching, tingling, or burning in the affected area, signaling viral reactivation before visible blisters form.",
     "clinical_application": "Clients reporting prodromal symptoms should reschedule massage to avoid potential transmission.",
-    "tags": [
-      "prodrome",
-      "symptom",
-      "early sign"
-    ],
-    "keywords": [
-      "itching",
-      "burning",
-      "warning"
-    ],
-    "synonyms": [
-      "early herpes symptoms"
-    ],
+    "tags": ["prodrome", "symptom", "early sign"],
+    "keywords": ["itching", "burning", "warning"],
+    "synonyms": ["early herpes symptoms"],
     "topic": "Symptomatology",
     "category": "Viral Manifestation",
     "subcategory": "Prodromal Phase",
@@ -342,7 +263,10 @@
       "B. Itching, tingling, or burning",
       "C. Swollen lymph nodes",
       "D. Cough and congestion"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_008",
@@ -357,19 +281,9 @@
     "short_explanation": "HSV requires contact precautions due to transmission via direct skin or mucosa contact.",
     "long_explanation": "Standard and contact precautions prevent transmission of HSV during client interaction, especially when lesions are present.",
     "clinical_application": "Wear gloves if touching linens or surfaces exposed to outbreaks and sanitize thoroughly.",
-    "tags": [
-      "infection control",
-      "PPE",
-      "precautions"
-    ],
-    "keywords": [
-      "gloves",
-      "hygiene",
-      "sanitation"
-    ],
-    "synonyms": [
-      "standard precautions"
-    ],
+    "tags": ["infection control", "PPE", "precautions"],
+    "keywords": ["gloves", "hygiene", "sanitation"],
+    "synonyms": ["standard precautions"],
     "topic": "Safety Protocols",
     "category": "Infection Prevention",
     "subcategory": "Viral Contact Control",
@@ -391,7 +305,10 @@
       "B. Droplet precautions",
       "C. Airborne precautions",
       "D. Reverse isolation"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_009",
@@ -406,19 +323,9 @@
     "short_explanation": "Oral antiviral medications reduce the duration and severity of HSV outbreaks.",
     "long_explanation": "Drugs such as acyclovir, valacyclovir, and famciclovir inhibit viral replication, helping manage both HSV-1 and HSV-2 flare-ups.",
     "clinical_application": "Clients may take antivirals preventively—important for scheduling during asymptomatic periods.",
-    "tags": [
-      "treatment",
-      "antiviral",
-      "medication"
-    ],
-    "keywords": [
-      "acyclovir",
-      "valacyclovir",
-      "famciclovir"
-    ],
-    "synonyms": [
-      "herpes medication"
-    ],
+    "tags": ["treatment", "antiviral", "medication"],
+    "keywords": ["acyclovir", "valacyclovir", "famciclovir"],
+    "synonyms": ["herpes medication"],
     "topic": "Treatment",
     "category": "Viral Management",
     "subcategory": "Therapeutic Drugs",
@@ -440,7 +347,10 @@
       "B. Oral antivirals",
       "C. Antibiotics",
       "D. Antifungal creams"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   },
   {
     "id": "herpes_simplex_010",
@@ -455,19 +365,9 @@
     "short_explanation": "Massage can spread HSV during the active phase via skin contact.",
     "long_explanation": "Direct contact with active lesions or contaminated linens can transmit HSV, posing risk to both clients and practitioners.",
     "clinical_application": "Massage therapists must visually inspect areas prone to outbreaks and take a thorough health history before treatment.",
-    "tags": [
-      "contraindication",
-      "outbreak",
-      "infection risk"
-    ],
-    "keywords": [
-      "lesions",
-      "transmission",
-      "massage safety"
-    ],
-    "synonyms": [
-      "massage contraindication"
-    ],
+    "tags": ["contraindication", "outbreak", "infection risk"],
+    "keywords": ["lesions", "transmission", "massage safety"],
+    "synonyms": ["massage contraindication"],
     "topic": "Contraindications",
     "category": "Massage Pathology",
     "subcategory": "Infectious Conditions",
@@ -489,6 +389,9 @@
       "B. It increases risk of autoimmune disorders",
       "C. It may spread the virus through contact",
       "D. It reduces medication effectiveness"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "herpes_simplex.json"
   }
 ]

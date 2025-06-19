@@ -15,16 +15,8 @@
     "topic": "neck anatomy",
     "category": "Motor",
     "difficulty": "intermediate",
-    "tags": [
-      "ansa cervicalis",
-      "infrahyoid",
-      "neck"
-    ],
-    "keywords": [
-      "ansa cervicalis nerve loop",
-      "hyoid",
-      "motor innervation"
-    ],
+    "tags": ["ansa cervicalis", "infrahyoid", "neck"],
+    "keywords": ["ansa cervicalis nerve loop", "hyoid", "motor innervation"],
     "source_reference": "Clinically Oriented Anatomy by Moore",
     "text": "Which muscles are innervated by the ansa cervicalis?",
     "options": [
@@ -39,17 +31,15 @@
       "B. Suprahyoid muscles",
       "C. Scalene muscles",
       "D. Tongue muscles"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_002",
     "question": "The ansa cervicalis is formed from which cervical spinal nerves?",
-    "answers": [
-      "C1–C2",
-      "C1–C3",
-      "C2–C4",
-      "C1–C5"
-    ],
+    "answers": ["C1–C2", "C1–C3", "C2–C4", "C1–C5"],
     "correct": 1,
     "short_explanation": "The ansa cervicalis is typically formed by C1–C3.",
     "long_explanation": "Fibers from spinal nerves C1, C2, and C3 combine to form a nerve loop, which innervates several muscles in the anterior neck region.",
@@ -57,41 +47,21 @@
     "topic": "cervical plexus",
     "category": "Neuroanatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "cervical plexus",
-      "C1-C3",
-      "ansa"
-    ],
-    "keywords": [
-      "nerve roots",
-      "nerve loop",
-      "anterior neck"
-    ],
+    "tags": ["cervical plexus", "C1-C3", "ansa"],
+    "keywords": ["nerve roots", "nerve loop", "anterior neck"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "The ansa cervicalis is formed from which cervical spinal nerves?",
-    "options": [
-      "C1–C2",
-      "C1–C3",
-      "C2–C4",
-      "C1–C5"
-    ],
+    "options": ["C1–C2", "C1–C3", "C2–C4", "C1–C5"],
     "correctAnswer": "C1–C3",
-    "abcd": [
-      "A. C1–C2",
-      "B. C1–C3",
-      "C. C2–C4",
-      "D. C1–C5"
-    ]
+    "abcd": ["A. C1–C2", "B. C1–C3", "C. C2–C4", "D. C1–C5"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_003",
     "question": "Which infrahyoid muscle is *not* innervated by the ansa cervicalis?",
-    "answers": [
-      "Omohyoid",
-      "Sternothyroid",
-      "Thyrohyoid",
-      "Sternohyoid"
-    ],
+    "answers": ["Omohyoid", "Sternothyroid", "Thyrohyoid", "Sternohyoid"],
     "correct": 2,
     "short_explanation": "The thyrohyoid is innervated by C1 fibers via the hypoglossal nerve.",
     "long_explanation": "Although most infrahyoid muscles are innervated by the ansa cervicalis, the thyrohyoid receives its innervation directly from C1 fibers hitchhiking along CN XII.",
@@ -99,11 +69,7 @@
     "topic": "neck muscles",
     "category": "Motor",
     "difficulty": "advanced",
-    "tags": [
-      "thyrohyoid",
-      "CN XII",
-      "ansa exception"
-    ],
+    "tags": ["thyrohyoid", "CN XII", "ansa exception"],
     "keywords": [
       "thyrohyoid innervation",
       "ansa exclusion",
@@ -111,19 +77,17 @@
     ],
     "source_reference": "Anatomy & Physiology for Speech, Language, and Hearing",
     "text": "Which infrahyoid muscle is *not* innervated by the ansa cervicalis?",
-    "options": [
-      "Omohyoid",
-      "Sternothyroid",
-      "Thyrohyoid",
-      "Sternohyoid"
-    ],
+    "options": ["Omohyoid", "Sternothyroid", "Thyrohyoid", "Sternohyoid"],
     "correctAnswer": "Thyrohyoid",
     "abcd": [
       "A. Omohyoid",
       "B. Sternothyroid",
       "C. Thyrohyoid",
       "D. Sternohyoid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_004",
@@ -141,16 +105,8 @@
     "topic": "neck anatomy",
     "category": "Landmarks",
     "difficulty": "intermediate",
-    "tags": [
-      "carotid sheath",
-      "nerve location",
-      "ansa loop"
-    ],
-    "keywords": [
-      "carotid region",
-      "nerve landmarks",
-      "surgical anatomy"
-    ],
+    "tags": ["carotid sheath", "nerve location", "ansa loop"],
+    "keywords": ["carotid region", "nerve landmarks", "surgical anatomy"],
     "source_reference": "Grant’s Atlas of Anatomy",
     "text": "Where is the ansa cervicalis typically located?",
     "options": [
@@ -165,7 +121,10 @@
       "B. Anterior to the trachea",
       "C. Behind the sternocleidomastoid",
       "D. Posterior to the vertebral column"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_005",
@@ -183,11 +142,7 @@
     "topic": "cranial nerve interactions",
     "category": "Anatomical Relationships",
     "difficulty": "advanced",
-    "tags": [
-      "cranial nerve XII",
-      "ansa root",
-      "hypoglossal"
-    ],
+    "tags": ["cranial nerve XII", "ansa root", "hypoglossal"],
     "keywords": [
       "nerve communication",
       "nerve loops",
@@ -207,17 +162,15 @@
       "B. CN XI (Accessory)",
       "C. CN VII (Facial)",
       "D. CN XII (Hypoglossal)"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_006",
     "question": "Which function is aided by muscles innervated by the ansa cervicalis?",
-    "answers": [
-      "Mastication",
-      "Phonation",
-      "Swallowing",
-      "Tongue movement"
-    ],
+    "answers": ["Mastication", "Phonation", "Swallowing", "Tongue movement"],
     "correct": 2,
     "short_explanation": "Infrahyoid muscles assist with stabilizing the hyoid during swallowing.",
     "long_explanation": "These muscles depress the hyoid bone after elevation during swallowing and help anchor it for coordinated laryngeal motion.",
@@ -225,41 +178,26 @@
     "topic": "functional anatomy",
     "category": "Motor Function",
     "difficulty": "basic",
-    "tags": [
-      "swallowing",
-      "infrahyoid",
-      "ansa action"
-    ],
-    "keywords": [
-      "hyoid depression",
-      "neck muscle function",
-      "deglutition"
-    ],
+    "tags": ["swallowing", "infrahyoid", "ansa action"],
+    "keywords": ["hyoid depression", "neck muscle function", "deglutition"],
     "source_reference": "Human Anatomy by Martini",
     "text": "Which function is aided by muscles innervated by the ansa cervicalis?",
-    "options": [
-      "Mastication",
-      "Phonation",
-      "Swallowing",
-      "Tongue movement"
-    ],
+    "options": ["Mastication", "Phonation", "Swallowing", "Tongue movement"],
     "correctAnswer": "Swallowing",
     "abcd": [
       "A. Mastication",
       "B. Phonation",
       "C. Swallowing",
       "D. Tongue movement"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_007",
     "question": "Damage to the ansa cervicalis could affect which massage-relevant function?",
-    "answers": [
-      "Neck rotation",
-      "Breathing",
-      "Swallowing",
-      "Arm abduction"
-    ],
+    "answers": ["Neck rotation", "Breathing", "Swallowing", "Arm abduction"],
     "correct": 2,
     "short_explanation": "Swallowing can be impaired due to reduced infrahyoid muscle function.",
     "long_explanation": "Loss of ansa function can affect coordination of hyoid and laryngeal elevation/depression during the swallowing process.",
@@ -267,41 +205,26 @@
     "topic": "clinical relevance",
     "category": "Dysfunction",
     "difficulty": "intermediate",
-    "tags": [
-      "ansa damage",
-      "swallowing issues",
-      "nerve injury"
-    ],
-    "keywords": [
-      "dysphagia",
-      "massage precautions",
-      "neck surgery"
-    ],
+    "tags": ["ansa damage", "swallowing issues", "nerve injury"],
+    "keywords": ["dysphagia", "massage precautions", "neck surgery"],
     "source_reference": "Pathophysiology of Disease by McPhee",
     "text": "Damage to the ansa cervicalis could affect which massage-relevant function?",
-    "options": [
-      "Neck rotation",
-      "Breathing",
-      "Swallowing",
-      "Arm abduction"
-    ],
+    "options": ["Neck rotation", "Breathing", "Swallowing", "Arm abduction"],
     "correctAnswer": "Swallowing",
     "abcd": [
       "A. Neck rotation",
       "B. Breathing",
       "C. Swallowing",
       "D. Arm abduction"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_008",
     "question": "Which of the following is a superior root contributor to the ansa cervicalis?",
-    "answers": [
-      "C2",
-      "C3",
-      "C1",
-      "C4"
-    ],
+    "answers": ["C2", "C3", "C1", "C4"],
     "correct": 2,
     "short_explanation": "C1 contributes to the superior root, often traveling with CN XII.",
     "long_explanation": "The superior root of the ansa cervicalis primarily arises from C1 and joins the hypoglossal nerve briefly before descending.",
@@ -309,31 +232,16 @@
     "topic": "nerve roots",
     "category": "Anatomical Origin",
     "difficulty": "intermediate",
-    "tags": [
-      "superior root",
-      "C1",
-      "nerve loop"
-    ],
-    "keywords": [
-      "cervical root mapping",
-      "ansa formation",
-      "C1 fibers"
-    ],
+    "tags": ["superior root", "C1", "nerve loop"],
+    "keywords": ["cervical root mapping", "ansa formation", "C1 fibers"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which of the following is a superior root contributor to the ansa cervicalis?",
-    "options": [
-      "C2",
-      "C3",
-      "C1",
-      "C4"
-    ],
+    "options": ["C2", "C3", "C1", "C4"],
     "correctAnswer": "C1",
-    "abcd": [
-      "A. C2",
-      "B. C3",
-      "C. C1",
-      "D. C4"
-    ]
+    "abcd": ["A. C2", "B. C3", "C. C1", "D. C4"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_009",
@@ -351,16 +259,8 @@
     "topic": "surgical anatomy",
     "category": "Clinical Risk",
     "difficulty": "advanced",
-    "tags": [
-      "thyroid surgery",
-      "nerve injury",
-      "ansa risk"
-    ],
-    "keywords": [
-      "nerve protection",
-      "thyroid gland",
-      "surgical mapping"
-    ],
+    "tags": ["thyroid surgery", "nerve injury", "ansa risk"],
+    "keywords": ["nerve protection", "thyroid gland", "surgical mapping"],
     "source_reference": "Surgical Anatomy Review",
     "text": "What surgical procedure might risk damaging the ansa cervicalis?",
     "options": [
@@ -375,7 +275,10 @@
       "B. Tonsillectomy",
       "C. Mandibulectomy",
       "D. Craniotomy"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   },
   {
     "id": "AnsaCervicalis_010",
@@ -393,11 +296,7 @@
     "topic": "anatomical layers",
     "category": "Musculoskeletal",
     "difficulty": "intermediate",
-    "tags": [
-      "prevertebral",
-      "layered anatomy",
-      "neck"
-    ],
+    "tags": ["prevertebral", "layered anatomy", "neck"],
     "keywords": [
       "infrahyoid depth",
       "neck muscle layers",
@@ -417,6 +316,9 @@
       "B. Prevertebral muscles",
       "C. Laryngeal muscles",
       "D. Platysma"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "ansa_cervicalis.json"
   }
 ]

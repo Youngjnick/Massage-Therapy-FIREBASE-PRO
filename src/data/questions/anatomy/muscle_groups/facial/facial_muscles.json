@@ -15,16 +15,8 @@
     "difficulty": "easy",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "orbicularis oculi",
-      "blinking",
-      "eyelids"
-    ],
-    "keywords": [
-      "facial muscles",
-      "eye closure",
-      "CN VII"
-    ],
+    "tags": ["orbicularis oculi", "blinking", "eyelids"],
+    "keywords": ["facial muscles", "eye closure", "CN VII"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which facial muscle is primarily responsible for closing the eyelids?",
@@ -40,17 +32,15 @@
       "B. Zygomaticus major",
       "C. Orbicularis oculi",
       "D. Levator palpebrae superioris"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_002",
     "question": "Which muscle elevates the eyebrows and wrinkles the forehead?",
-    "answers": [
-      "Buccinator",
-      "Orbicularis oculi",
-      "Frontalis",
-      "Risorius"
-    ],
+    "answers": ["Buccinator", "Orbicularis oculi", "Frontalis", "Risorius"],
     "correct": 2,
     "short_explanation": "The frontalis raises the eyebrows and creates forehead lines.",
     "long_explanation": "Frontalis, part of the occipitofrontalis muscle, is innervated by the facial nerve and plays a key role in expressing surprise or curiosity.",
@@ -58,31 +48,22 @@
     "difficulty": "easy",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "frontalis",
-      "eyebrow elevation"
-    ],
-    "keywords": [
-      "forehead wrinkles",
-      "surprise",
-      "CN VII"
-    ],
+    "tags": ["frontalis", "eyebrow elevation"],
+    "keywords": ["forehead wrinkles", "surprise", "CN VII"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "Which muscle elevates the eyebrows and wrinkles the forehead?",
-    "options": [
-      "Buccinator",
-      "Orbicularis oculi",
-      "Frontalis",
-      "Risorius"
-    ],
+    "options": ["Buccinator", "Orbicularis oculi", "Frontalis", "Risorius"],
     "correctAnswer": "Frontalis",
     "abcd": [
       "A. Buccinator",
       "B. Orbicularis oculi",
       "C. Frontalis",
       "D. Risorius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_003",
@@ -100,15 +81,8 @@
     "difficulty": "medium",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "smiling",
-      "zygomaticus major"
-    ],
-    "keywords": [
-      "laugh lines",
-      "cheek muscle",
-      "facial nerve"
-    ],
+    "tags": ["smiling", "zygomaticus major"],
+    "keywords": ["laugh lines", "cheek muscle", "facial nerve"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Rattray Clinical Massage Therapy",
     "text": "Which muscle draws the corners of the mouth upward and outward, as in smiling?",
@@ -124,17 +98,15 @@
       "B. Mentalis",
       "C. Zygomaticus major",
       "D. Levator labii superioris"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_004",
     "question": "Which muscle compresses the cheeks during chewing or blowing?",
-    "answers": [
-      "Buccinator",
-      "Masseter",
-      "Orbicularis oris",
-      "Risorius"
-    ],
+    "answers": ["Buccinator", "Masseter", "Orbicularis oris", "Risorius"],
     "correct": 0,
     "short_explanation": "Buccinator compresses the cheek inward.",
     "long_explanation": "Buccinator is deep to the other facial muscles and prevents food from collecting between the teeth and cheek. It also aids in blowing air out forcefully.",
@@ -142,31 +114,22 @@
     "difficulty": "medium",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "buccinator",
-      "cheek compression"
-    ],
-    "keywords": [
-      "chewing",
-      "blowing",
-      "facial massage"
-    ],
+    "tags": ["buccinator", "cheek compression"],
+    "keywords": ["chewing", "blowing", "facial massage"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which muscle compresses the cheeks during chewing or blowing?",
-    "options": [
-      "Buccinator",
-      "Masseter",
-      "Orbicularis oris",
-      "Risorius"
-    ],
+    "options": ["Buccinator", "Masseter", "Orbicularis oris", "Risorius"],
     "correctAnswer": "Buccinator",
     "abcd": [
       "A. Buccinator",
       "B. Masseter",
       "C. Orbicularis oris",
       "D. Risorius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_005",
@@ -184,16 +147,8 @@
     "difficulty": "medium",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "orbicularis oris",
-      "puckering",
-      "kissing"
-    ],
-    "keywords": [
-      "mouth sphincter",
-      "lip closure",
-      "CN VII"
-    ],
+    "tags": ["orbicularis oris", "puckering", "kissing"],
+    "keywords": ["mouth sphincter", "lip closure", "CN VII"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Atlas",
     "text": "Which muscle is responsible for puckering the lips, such as in kissing?",
@@ -209,7 +164,10 @@
       "B. Orbicularis oris",
       "C. Mentalis",
       "D. Depressor labii inferioris"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_006",
@@ -227,16 +185,8 @@
     "difficulty": "medium",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "levator labii",
-      "upper lip",
-      "expression"
-    ],
-    "keywords": [
-      "lip curl",
-      "sneering",
-      "facial nerve"
-    ],
+    "tags": ["levator labii", "upper lip", "expression"],
+    "keywords": ["lip curl", "sneering", "facial nerve"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Rattray Clinical Massage",
     "text": "Which muscle raises the upper lip to show the upper teeth?",
@@ -252,7 +202,10 @@
       "B. Zygomaticus minor",
       "C. Levator labii superioris",
       "D. Mentalis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_007",
@@ -270,16 +223,8 @@
     "difficulty": "medium",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "platysma",
-      "neck tension",
-      "facial expression"
-    ],
-    "keywords": [
-      "superficial neck",
-      "jaw depression",
-      "tight fascia"
-    ],
+    "tags": ["platysma", "neck tension", "facial expression"],
+    "keywords": ["superficial neck", "jaw depression", "tight fascia"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray’s Anatomy",
     "text": "What is the function of the platysma muscle?",
@@ -295,7 +240,10 @@
       "B. Retracts the corners of the mouth",
       "C. Tenses the skin of the neck and depresses the mandible",
       "D. Opens the eyelids"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_008",
@@ -313,14 +261,8 @@
     "difficulty": "easy",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "frown",
-      "depressor anguli oris"
-    ],
-    "keywords": [
-      "mouth depression",
-      "emotional tone"
-    ],
+    "tags": ["frown", "depressor anguli oris"],
+    "keywords": ["mouth depression", "emotional tone"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which muscle is primarily involved in creating a frown by pulling the mouth corners downward?",
@@ -336,7 +278,10 @@
       "B. Depressor anguli oris",
       "C. Risorius",
       "D. Buccinator"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_009",
@@ -354,15 +299,8 @@
     "difficulty": "hard",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "nasal flare",
-      "nose movement"
-    ],
-    "keywords": [
-      "facial muscle",
-      "nostrils",
-      "levator"
-    ],
+    "tags": ["nasal flare", "nose movement"],
+    "keywords": ["facial muscle", "nostrils", "levator"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Atlas",
     "text": "Which muscle helps flare the nostrils?",
@@ -378,7 +316,10 @@
       "B. Buccinator",
       "C. Orbicularis oris",
       "D. Depressor septi nasi"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   },
   {
     "id": "facial_expr_010",
@@ -396,15 +337,8 @@
     "difficulty": "medium",
     "category": "Muscles",
     "topic": "Facial Expression",
-    "tags": [
-      "mentalis",
-      "chin wrinkle",
-      "lip pout"
-    ],
-    "keywords": [
-      "expression",
-      "chin muscle"
-    ],
+    "tags": ["mentalis", "chin wrinkle", "lip pout"],
+    "keywords": ["expression", "chin muscle"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "What is the main function of the mentalis muscle?",
@@ -420,6 +354,9 @@
       "B. Depressing the mandible",
       "C. Protruding and wrinkling the chin",
       "D. Tensing the neck skin"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/facial",
+    "filename": "facial_muscles.json"
   }
 ]

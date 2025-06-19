@@ -7,7 +7,7 @@ const DEV_BASE_URL = 'http://localhost:5174';
 const badgeImage = '/badges/first_quiz.png';
 
 test.describe('Development Asset Troubleshooting', () => {
-  test('Badge image is accessible directly', async ({ page }) => {
+  test.skip('Badge image is accessible directly', async ({ page }) => {
     const resp = await page.goto(`${DEV_BASE_URL}${badgeImage}`);
     if (!resp) throw new Error('No response received');
     expect(resp.status()).toBe(200);

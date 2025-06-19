@@ -15,18 +15,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Motor Function",
-    "tags": [
-      "T11",
-      "motor",
-      "abdominal wall",
-      "intercostal nerve"
-    ],
-    "keywords": [
-      "T11 nerve",
-      "motor function",
-      "trunk",
-      "core muscles"
-    ],
+    "tags": ["T11", "motor", "abdominal wall", "intercostal nerve"],
+    "keywords": ["T11 nerve", "motor function", "trunk", "core muscles"],
     "source_reference": "Gray’s Anatomy for Students",
     "stats": {
       "correct": 0,
@@ -47,7 +37,10 @@
       "B. Abdominal wall contraction",
       "C. Knee extension",
       "D. Shoulder abduction"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_002",
@@ -65,17 +58,8 @@
     "difficulty": "basic",
     "topic": "myology",
     "category": "Muscle Innervation",
-    "tags": [
-      "T11",
-      "external oblique",
-      "muscle",
-      "core"
-    ],
-    "keywords": [
-      "T11 innervation",
-      "obliques",
-      "abdominal muscle"
-    ],
+    "tags": ["T11", "external oblique", "muscle", "core"],
+    "keywords": ["T11 innervation", "obliques", "abdominal muscle"],
     "source_reference": "Muscles: Testing and Function",
     "stats": {
       "correct": 0,
@@ -96,7 +80,10 @@
       "B. External oblique",
       "C. Rectus femoris",
       "D. Gluteus medius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_003",
@@ -114,18 +101,8 @@
     "difficulty": "intermediate",
     "topic": "neuroanatomy",
     "category": "Sensory Distribution",
-    "tags": [
-      "T11",
-      "dermatome",
-      "flank",
-      "sensation"
-    ],
-    "keywords": [
-      "T11 dermatome",
-      "lower abdomen",
-      "flank",
-      "sensory"
-    ],
+    "tags": ["T11", "dermatome", "flank", "sensation"],
+    "keywords": ["T11 dermatome", "lower abdomen", "flank", "sensory"],
     "source_reference": "Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -146,7 +123,10 @@
       "B. Pubic region",
       "C. Lower abdomen and flank",
       "D. Sternum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_004",
@@ -164,17 +144,8 @@
     "difficulty": "intermediate",
     "topic": "neurology",
     "category": "Reflex Testing",
-    "tags": [
-      "T11",
-      "reflex",
-      "neurology",
-      "motor"
-    ],
-    "keywords": [
-      "abdominal reflex",
-      "T11 lesion",
-      "neurological testing"
-    ],
+    "tags": ["T11", "reflex", "neurology", "motor"],
+    "keywords": ["abdominal reflex", "T11 lesion", "neurological testing"],
     "source_reference": "DeMyer’s The Neurologic Examination",
     "stats": {
       "correct": 0,
@@ -195,17 +166,15 @@
       "B. Patellar reflex",
       "C. Superficial abdominal reflex",
       "D. Achilles reflex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_005",
     "question": "What type of nerve is the T11 intercostal nerve classified as?",
-    "answers": [
-      "Motor",
-      "Sensory",
-      "Autonomic",
-      "Mixed"
-    ],
+    "answers": ["Motor", "Sensory", "Autonomic", "Mixed"],
     "correct": 3,
     "short_explanation": "T11 intercostal nerve carries both motor and sensory fibers.",
     "long_explanation": "Spinal nerves such as T11 are considered mixed nerves because they convey motor signals to muscles and sensory information from the skin and joints.",
@@ -213,17 +182,8 @@
     "difficulty": "basic",
     "topic": "nerve classification",
     "category": "Nerve Anatomy",
-    "tags": [
-      "T11",
-      "mixed nerve",
-      "motor",
-      "sensory"
-    ],
-    "keywords": [
-      "T11 nerve type",
-      "mixed spinal nerve",
-      "intercostal"
-    ],
+    "tags": ["T11", "mixed nerve", "motor", "sensory"],
+    "keywords": ["T11 nerve type", "mixed spinal nerve", "intercostal"],
     "source_reference": "Fundamentals of Neuroscience",
     "stats": {
       "correct": 0,
@@ -232,19 +192,12 @@
     },
     "unit": "T11 spinal nerve",
     "text": "What type of nerve is the T11 intercostal nerve classified as?",
-    "options": [
-      "Motor",
-      "Sensory",
-      "Autonomic",
-      "Mixed"
-    ],
+    "options": ["Motor", "Sensory", "Autonomic", "Mixed"],
     "correctAnswer": "Mixed",
-    "abcd": [
-      "A. Motor",
-      "B. Sensory",
-      "C. Autonomic",
-      "D. Mixed"
-    ]
+    "abcd": ["A. Motor", "B. Sensory", "C. Autonomic", "D. Mixed"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_006",
@@ -262,17 +215,8 @@
     "difficulty": "advanced",
     "topic": "anatomy",
     "category": "Neurovascular Pathways",
-    "tags": [
-      "T11",
-      "intercostal",
-      "abdominal wall",
-      "nerve pathway"
-    ],
-    "keywords": [
-      "nerve course",
-      "T11",
-      "abdominal muscle layers"
-    ],
+    "tags": ["T11", "intercostal", "abdominal wall", "nerve pathway"],
+    "keywords": ["nerve course", "T11", "abdominal muscle layers"],
     "source_reference": "Clinical Anatomy by Regions",
     "stats": {
       "correct": 0,
@@ -293,7 +237,10 @@
       "B. External and internal obliques",
       "C. Internal oblique and transversus abdominis",
       "D. Latissimus dorsi and serratus posterior"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_007",
@@ -311,17 +258,8 @@
     "difficulty": "intermediate",
     "topic": "clinical neuro",
     "category": "Diagnosis",
-    "tags": [
-      "T11",
-      "nerve compression",
-      "flank",
-      "paresthesia"
-    ],
-    "keywords": [
-      "T11 sensory loss",
-      "nerve impingement",
-      "dermatome"
-    ],
+    "tags": ["T11", "nerve compression", "flank", "paresthesia"],
+    "keywords": ["T11 sensory loss", "nerve impingement", "dermatome"],
     "source_reference": "Spinal Disorders and Treatment",
     "stats": {
       "correct": 0,
@@ -342,7 +280,10 @@
       "B. Groin numbness",
       "C. Flank paresthesia",
       "D. Quadriceps weakness"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_008",
@@ -360,18 +301,8 @@
     "difficulty": "intermediate",
     "topic": "manual therapy",
     "category": "Treatment",
-    "tags": [
-      "T11",
-      "myofascial",
-      "nerve release",
-      "massage therapy"
-    ],
-    "keywords": [
-      "massage",
-      "T11",
-      "fascial techniques",
-      "nerve mobility"
-    ],
+    "tags": ["T11", "myofascial", "nerve release", "massage therapy"],
+    "keywords": ["massage", "T11", "fascial techniques", "nerve mobility"],
     "source_reference": "Massage Therapy Principles and Practice",
     "stats": {
       "correct": 0,
@@ -392,7 +323,10 @@
       "B. Trigger point therapy at soleus",
       "C. Myofascial release at lateral abdomen",
       "D. Effleurage to wrist extensors"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_009",
@@ -410,16 +344,8 @@
     "difficulty": "basic",
     "topic": "neuroanatomy",
     "category": "Nervous System Division",
-    "tags": [
-      "T11",
-      "somatic",
-      "spinal nerve"
-    ],
-    "keywords": [
-      "somatic nerve",
-      "T11 spinal",
-      "motor and sensory"
-    ],
+    "tags": ["T11", "somatic", "spinal nerve"],
+    "keywords": ["somatic nerve", "T11 spinal", "motor and sensory"],
     "source_reference": "Human Anatomy & Physiology",
     "stats": {
       "correct": 0,
@@ -440,17 +366,15 @@
       "B. Somatic motor and sensory",
       "C. Enteric",
       "D. Cranial parasympathetic"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   },
   {
     "id": "T11_Nerve_010",
     "question": "Which rib corresponds to the exit level of the T11 spinal nerve?",
-    "answers": [
-      "Rib 10",
-      "Rib 11",
-      "Rib 12",
-      "None—it's below all ribs"
-    ],
+    "answers": ["Rib 10", "Rib 11", "Rib 12", "None—it's below all ribs"],
     "correct": 1,
     "short_explanation": "The T11 spinal nerve exits below rib 11.",
     "long_explanation": "Like other thoracic nerves, the T11 nerve exits the intervertebral foramen below its corresponding vertebra and rib, specifically beneath the 11th thoracic vertebra and rib.",
@@ -458,17 +382,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Spinal Nerve Pathway",
-    "tags": [
-      "T11",
-      "rib level",
-      "nerve exit",
-      "intercostal"
-    ],
-    "keywords": [
-      "T11 exit",
-      "rib level",
-      "thoracic nerve path"
-    ],
+    "tags": ["T11", "rib level", "nerve exit", "intercostal"],
+    "keywords": ["T11 exit", "rib level", "thoracic nerve path"],
     "source_reference": "Netter’s Clinical Anatomy",
     "stats": {
       "correct": 0,
@@ -477,18 +392,16 @@
     },
     "unit": "T11 spinal nerve",
     "text": "Which rib corresponds to the exit level of the T11 spinal nerve?",
-    "options": [
-      "Rib 10",
-      "Rib 11",
-      "Rib 12",
-      "None—it's below all ribs"
-    ],
+    "options": ["Rib 10", "Rib 11", "Rib 12", "None—it's below all ribs"],
     "correctAnswer": "Rib 11",
     "abcd": [
       "A. Rib 10",
       "B. Rib 11",
       "C. Rib 12",
       "D. None—it's below all ribs"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T11_nerve_innervations.json"
   }
 ]

@@ -15,16 +15,8 @@
     "topic": "Cardiovascular Anatomy",
     "category": "Circulatory System",
     "difficulty": "basic",
-    "tags": [
-      "heart chambers",
-      "right atrium",
-      "systemic circulation"
-    ],
-    "keywords": [
-      "right atrium",
-      "vena cava",
-      "deoxygenated blood"
-    ],
+    "tags": ["heart chambers", "right atrium", "systemic circulation"],
+    "keywords": ["right atrium", "vena cava", "deoxygenated blood"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "Which chamber of the heart receives deoxygenated blood from the systemic circulation?",
     "options": [
@@ -39,17 +31,15 @@
       "B. Right atrium",
       "C. Left ventricle",
       "D. Right ventricle"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_002",
     "question": "Which valve prevents backflow from the right ventricle to the right atrium?",
-    "answers": [
-      "Bicuspid",
-      "Pulmonary",
-      "Tricuspid",
-      "Aortic"
-    ],
+    "answers": ["Bicuspid", "Pulmonary", "Tricuspid", "Aortic"],
     "correct": 2,
     "short_explanation": "The tricuspid valve separates the right atrium and right ventricle.",
     "long_explanation": "The tricuspid valve closes during right ventricular contraction to prevent blood from flowing back into the right atrium.",
@@ -57,41 +47,21 @@
     "topic": "Cardiac Valves",
     "category": "Heart Mechanics",
     "difficulty": "basic",
-    "tags": [
-      "valves",
-      "tricuspid",
-      "heart"
-    ],
-    "keywords": [
-      "AV valve",
-      "right heart",
-      "cardiac anatomy"
-    ],
+    "tags": ["valves", "tricuspid", "heart"],
+    "keywords": ["AV valve", "right heart", "cardiac anatomy"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which valve prevents backflow from the right ventricle to the right atrium?",
-    "options": [
-      "Bicuspid",
-      "Pulmonary",
-      "Tricuspid",
-      "Aortic"
-    ],
+    "options": ["Bicuspid", "Pulmonary", "Tricuspid", "Aortic"],
     "correctAnswer": "Tricuspid",
-    "abcd": [
-      "A. Bicuspid",
-      "B. Pulmonary",
-      "C. Tricuspid",
-      "D. Aortic"
-    ]
+    "abcd": ["A. Bicuspid", "B. Pulmonary", "C. Tricuspid", "D. Aortic"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_003",
     "question": "What structure initiates the electrical impulse for heart contraction?",
-    "answers": [
-      "AV node",
-      "SA node",
-      "Purkinje fibers",
-      "Bundle of His"
-    ],
+    "answers": ["AV node", "SA node", "Purkinje fibers", "Bundle of His"],
     "correct": 1,
     "short_explanation": "The sinoatrial (SA) node is the pacemaker of the heart.",
     "long_explanation": "The SA node generates spontaneous electrical signals that set the rhythm of the heartbeat, transmitting to the AV node and ventricles.",
@@ -99,31 +69,21 @@
     "topic": "Cardiac Electrophysiology",
     "category": "Cardiac Conduction",
     "difficulty": "intermediate",
-    "tags": [
-      "SA node",
-      "pacemaker",
-      "cardiac rhythm"
-    ],
-    "keywords": [
-      "heart impulse",
-      "SA node",
-      "conduction system"
-    ],
+    "tags": ["SA node", "pacemaker", "cardiac rhythm"],
+    "keywords": ["heart impulse", "SA node", "conduction system"],
     "source_reference": "Guyton and Hall Medical Physiology",
     "text": "What structure initiates the electrical impulse for heart contraction?",
-    "options": [
-      "AV node",
-      "SA node",
-      "Purkinje fibers",
-      "Bundle of His"
-    ],
+    "options": ["AV node", "SA node", "Purkinje fibers", "Bundle of His"],
     "correctAnswer": "SA node",
     "abcd": [
       "A. AV node",
       "B. SA node",
       "C. Purkinje fibers",
       "D. Bundle of His"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_004",
@@ -141,16 +101,8 @@
     "topic": "Coronary Circulation",
     "category": "Heart Vessels",
     "difficulty": "intermediate",
-    "tags": [
-      "coronary arteries",
-      "heart blood supply",
-      "myocardium"
-    ],
-    "keywords": [
-      "heart circulation",
-      "cardiac muscle",
-      "oxygenated blood"
-    ],
+    "tags": ["coronary arteries", "heart blood supply", "myocardium"],
+    "keywords": ["heart circulation", "cardiac muscle", "oxygenated blood"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "Which vessel delivers oxygenated blood to the heart muscle?",
     "options": [
@@ -165,7 +117,10 @@
       "B. Aorta",
       "C. Coronary arteries",
       "D. Superior vena cava"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_005",
@@ -183,16 +138,8 @@
     "topic": "Cardiac Cycle",
     "category": "Physiology",
     "difficulty": "intermediate",
-    "tags": [
-      "systole",
-      "cardiac cycle",
-      "ventricular contraction"
-    ],
-    "keywords": [
-      "systolic pressure",
-      "heartbeat phases",
-      "ventricle"
-    ],
+    "tags": ["systole", "cardiac cycle", "ventricular contraction"],
+    "keywords": ["systolic pressure", "heartbeat phases", "ventricle"],
     "source_reference": "Guyton and Hall Physiology",
     "text": "What occurs during systole?",
     "options": [
@@ -207,17 +154,15 @@
       "B. Ventricles relax",
       "C. Ventricles contract",
       "D. AV valves open"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_006",
     "question": "Which valve is located between the left atrium and left ventricle?",
-    "answers": [
-      "Tricuspid",
-      "Aortic",
-      "Pulmonary",
-      "Mitral"
-    ],
+    "answers": ["Tricuspid", "Aortic", "Pulmonary", "Mitral"],
     "correct": 3,
     "short_explanation": "The mitral (bicuspid) valve regulates blood flow on the heart's left side.",
     "long_explanation": "The mitral valve allows oxygen-rich blood to flow from the left atrium to the left ventricle and prevents backflow during contraction.",
@@ -225,31 +170,16 @@
     "topic": "Cardiac Valves",
     "category": "Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "mitral valve",
-      "left heart",
-      "cardiac anatomy"
-    ],
-    "keywords": [
-      "bicuspid valve",
-      "atrioventricular valve",
-      "left ventricle"
-    ],
+    "tags": ["mitral valve", "left heart", "cardiac anatomy"],
+    "keywords": ["bicuspid valve", "atrioventricular valve", "left ventricle"],
     "source_reference": "Moore’s Anatomy",
     "text": "Which valve is located between the left atrium and left ventricle?",
-    "options": [
-      "Tricuspid",
-      "Aortic",
-      "Pulmonary",
-      "Mitral"
-    ],
+    "options": ["Tricuspid", "Aortic", "Pulmonary", "Mitral"],
     "correctAnswer": "Mitral",
-    "abcd": [
-      "A. Tricuspid",
-      "B. Aortic",
-      "C. Pulmonary",
-      "D. Mitral"
-    ]
+    "abcd": ["A. Tricuspid", "B. Aortic", "C. Pulmonary", "D. Mitral"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_007",
@@ -267,16 +197,8 @@
     "topic": "Heart Structure",
     "category": "Development",
     "difficulty": "intermediate",
-    "tags": [
-      "septum",
-      "heart wall",
-      "chamber separation"
-    ],
-    "keywords": [
-      "interventricular septum",
-      "heart partition",
-      "VSD"
-    ],
+    "tags": ["septum", "heart wall", "chamber separation"],
+    "keywords": ["interventricular septum", "heart partition", "VSD"],
     "source_reference": "Embryology by Langman",
     "text": "What structure divides the right and left sides of the heart?",
     "options": [
@@ -291,7 +213,10 @@
       "B. Chordae tendineae",
       "C. Pericardium",
       "D. Pulmonary trunk"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_008",
@@ -309,16 +234,8 @@
     "topic": "Pulmonary Circulation",
     "category": "Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "pulmonary vein",
-      "lung circulation",
-      "oxygenated blood"
-    ],
-    "keywords": [
-      "left atrium",
-      "pulmonary return",
-      "heart-lung connection"
-    ],
+    "tags": ["pulmonary vein", "lung circulation", "oxygenated blood"],
+    "keywords": ["left atrium", "pulmonary return", "heart-lung connection"],
     "source_reference": "Netter's Atlas",
     "text": "Which vessel carries oxygenated blood from the lungs to the heart?",
     "options": [
@@ -333,7 +250,10 @@
       "B. Pulmonary vein",
       "C. Pulmonary artery",
       "D. Inferior vena cava"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_009",
@@ -351,16 +271,8 @@
     "topic": "Heart Anatomy",
     "category": "Tissue",
     "difficulty": "intermediate",
-    "tags": [
-      "pericardium",
-      "heart sac",
-      "friction reduction"
-    ],
-    "keywords": [
-      "pericardial sac",
-      "serous membrane",
-      "heart protection"
-    ],
+    "tags": ["pericardium", "heart sac", "friction reduction"],
+    "keywords": ["pericardial sac", "serous membrane", "heart protection"],
     "source_reference": "Snell’s Clinical Anatomy",
     "text": "What is the function of the pericardium?",
     "options": [
@@ -375,7 +287,10 @@
       "B. Delivers blood to the heart",
       "C. Reduces friction",
       "D. Stimulates electrical impulses"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   },
   {
     "id": "heart_010",
@@ -393,16 +308,8 @@
     "topic": "Cardiovascular Assessment",
     "category": "Vitals",
     "difficulty": "basic",
-    "tags": [
-      "radial pulse",
-      "artery",
-      "heart rate"
-    ],
-    "keywords": [
-      "pulse check",
-      "radial artery",
-      "wrist pulse"
-    ],
+    "tags": ["radial pulse", "artery", "heart rate"],
+    "keywords": ["pulse check", "radial artery", "wrist pulse"],
     "source_reference": "Bates’ Guide to Physical Examination",
     "text": "Which artery is commonly palpated to assess pulse at the wrist?",
     "options": [
@@ -417,6 +324,9 @@
       "B. Ulnar artery",
       "C. Brachial artery",
       "D. Femoral artery"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "heart.json"
   }
 ]

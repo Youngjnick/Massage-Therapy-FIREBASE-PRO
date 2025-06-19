@@ -63,7 +63,10 @@
       "B. Transporting oxygen",
       "C. Protecting and nourishing the brain and spinal cord",
       "D. Regulating heart rate"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 002",
@@ -82,16 +85,8 @@
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "technique_pressure",
-      "anatomy_brain",
-      "organ_brain"
-    ],
-    "keywords": [
-      "technique_pressure",
-      "anatomy_brain",
-      "organ_brain"
-    ],
+    "tags": ["technique_pressure", "anatomy_brain", "organ_brain"],
+    "keywords": ["technique_pressure", "anatomy_brain", "organ_brain"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -115,7 +110,10 @@
       "B. Cerebral cortex",
       "C. Choroid plexus",
       "D. Cerebellum"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 003",
@@ -169,7 +167,10 @@
       "B. Arachnoid villi",
       "C. Basal ganglia",
       "D. Pineal gland"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 004",
@@ -188,11 +189,7 @@
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "exam_assessment",
-      "indication",
-      "modality_craniosacral_therapy"
-    ],
+    "tags": ["exam_assessment", "indication", "modality_craniosacral_therapy"],
     "keywords": [
       "exam_assessment",
       "indication",
@@ -221,7 +218,10 @@
       "B. 2–4 cycles per minute",
       "C. 6–12 cycles per minute",
       "D. 12–20 cycles per minute"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 005",
@@ -287,7 +287,10 @@
       "B. Anchors muscles to bone",
       "C. Contains and guides CSF flow",
       "D. Transmits sensory nerve impulses"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 006",
@@ -347,7 +350,10 @@
       "B. Its movement reflects cranial health and vitality",
       "C. It increases lymphatic drainage",
       "D. It strengthens skeletal muscles"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 007",
@@ -405,7 +411,10 @@
       "B. Healthy tissue tone",
       "C. Possible system restriction or blockage",
       "D. Vibrant metabolic function"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 008",
@@ -461,17 +470,15 @@
       "B. Cardiac stop",
       "C. Still point",
       "D. Fluid stasis"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 009",
     "question": "Which condition is most closely linked with abnormal CSF pressure or flow?",
-    "answers": [
-      "Hypertension",
-      "Hydrocephalus",
-      "Diabetes",
-      "Asthma"
-    ],
+    "answers": ["Hypertension", "Hydrocephalus", "Diabetes", "Asthma"],
     "correct": 1,
     "distractors": [],
     "short_explanation": "Hydrocephalus is caused by excess CSF buildup in the brain.",
@@ -480,16 +487,8 @@
     "difficulty": "moderate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "technique_pressure",
-      "anatomy_brain",
-      "organ_brain"
-    ],
-    "keywords": [
-      "technique_pressure",
-      "anatomy_brain",
-      "organ_brain"
-    ],
+    "tags": ["technique_pressure", "anatomy_brain", "organ_brain"],
+    "keywords": ["technique_pressure", "anatomy_brain", "organ_brain"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -501,19 +500,12 @@
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/cerebrospinal_fluid",
     "text": "Which condition is most closely linked with abnormal CSF pressure or flow?",
-    "options": [
-      "Hypertension",
-      "Hydrocephalus",
-      "Diabetes",
-      "Asthma"
-    ],
+    "options": ["Hypertension", "Hydrocephalus", "Diabetes", "Asthma"],
     "correctAnswer": "Hydrocephalus",
-    "abcd": [
-      "A. Hypertension",
-      "B. Hydrocephalus",
-      "C. Diabetes",
-      "D. Asthma"
-    ]
+    "abcd": ["A. Hypertension", "B. Hydrocephalus", "C. Diabetes", "D. Asthma"],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "Csf 010",
@@ -589,6 +581,9 @@
       "B. Via gentle manipulation of cranial bones and dural membranes",
       "C. By stimulating muscle contraction",
       "D. Through lymphatic massage techniques"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "craniosacral",
+    "filename": "cerebrospinal_fluid.json"
   }
 ]

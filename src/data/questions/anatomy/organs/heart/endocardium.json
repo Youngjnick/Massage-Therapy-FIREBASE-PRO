@@ -15,16 +15,8 @@
     "topic": "Cardiac Anatomy",
     "category": "Structure",
     "difficulty": "easy",
-    "tags": [
-      "heart",
-      "endocardium",
-      "valves"
-    ],
-    "keywords": [
-      "inner lining",
-      "cardiac tissue",
-      "endothelial cells"
-    ],
+    "tags": ["heart", "endocardium", "valves"],
+    "keywords": ["inner lining", "cardiac tissue", "endothelial cells"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "What is the primary function of the endocardium?",
     "options": [
@@ -39,7 +31,10 @@
       "B. Pump blood to the lungs",
       "C. Line the heart chambers and valves",
       "D. Store oxygen for the myocardium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_002",
@@ -57,14 +52,8 @@
     "topic": "Histology",
     "category": "Cell Structure",
     "difficulty": "intermediate",
-    "tags": [
-      "endothelium",
-      "cardiac lining"
-    ],
-    "keywords": [
-      "squamous cells",
-      "tissue lining"
-    ],
+    "tags": ["endothelium", "cardiac lining"],
+    "keywords": ["squamous cells", "tissue lining"],
     "source_reference": "Gray’s Anatomy",
     "text": "What type of cells make up the endocardium?",
     "options": [
@@ -79,17 +68,15 @@
       "B. Epithelial cells",
       "C. Endothelial cells",
       "D. Fibroblasts"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_003",
     "question": "Infective endocarditis primarily affects which structure?",
-    "answers": [
-      "Pericardium",
-      "Epicardium",
-      "Endocardium",
-      "Myocardium"
-    ],
+    "answers": ["Pericardium", "Epicardium", "Endocardium", "Myocardium"],
     "correct": 2,
     "short_explanation": "Endocarditis is an infection of the endocardial surface.",
     "long_explanation": "Bacteria or fungi infect the endocardium, especially heart valves. It can result from poor dental hygiene, IV drug use, or implanted devices.",
@@ -97,31 +84,21 @@
     "topic": "Cardiovascular Pathology",
     "category": "Infection",
     "difficulty": "intermediate",
-    "tags": [
-      "endocarditis",
-      "infection",
-      "valves"
-    ],
-    "keywords": [
-      "bacterial infection",
-      "heart valves",
-      "septicemia"
-    ],
+    "tags": ["endocarditis", "infection", "valves"],
+    "keywords": ["bacterial infection", "heart valves", "septicemia"],
     "source_reference": "Robbins Basic Pathology",
     "text": "Infective endocarditis primarily affects which structure?",
-    "options": [
-      "Pericardium",
-      "Epicardium",
-      "Endocardium",
-      "Myocardium"
-    ],
+    "options": ["Pericardium", "Epicardium", "Endocardium", "Myocardium"],
     "correctAnswer": "Endocardium",
     "abcd": [
       "A. Pericardium",
       "B. Epicardium",
       "C. Endocardium",
       "D. Myocardium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_004",
@@ -139,16 +116,8 @@
     "topic": "Heart Wall",
     "category": "Layer Relationships",
     "difficulty": "easy",
-    "tags": [
-      "heart layers",
-      "myocardium",
-      "anatomy"
-    ],
-    "keywords": [
-      "heart wall",
-      "endocardium",
-      "myocardium"
-    ],
+    "tags": ["heart layers", "myocardium", "anatomy"],
+    "keywords": ["heart wall", "endocardium", "myocardium"],
     "source_reference": "Essential Clinical Anatomy",
     "text": "Which layer of the heart lies directly beneath the endocardium?",
     "options": [
@@ -163,7 +132,10 @@
       "B. Parietal pleura",
       "C. Myocardium",
       "D. Epicardium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_005",
@@ -181,15 +153,8 @@
     "topic": "Clinical Signs",
     "category": "Assessment",
     "difficulty": "intermediate",
-    "tags": [
-      "symptoms",
-      "endocarditis"
-    ],
-    "keywords": [
-      "fever",
-      "dyspnea",
-      "heart infection"
-    ],
+    "tags": ["symptoms", "endocarditis"],
+    "keywords": ["fever", "dyspnea", "heart infection"],
     "source_reference": "Merck Manual",
     "text": "Which of the following symptoms might suggest endocardial inflammation?",
     "options": [
@@ -204,17 +169,15 @@
       "B. Shortness of breath and fever",
       "C. Shoulder pain",
       "D. Chronic coughing"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_006",
     "question": "What is the embryological origin of the endocardium?",
-    "answers": [
-      "Ectoderm",
-      "Mesoderm",
-      "Endoderm",
-      "Neural crest cells"
-    ],
+    "answers": ["Ectoderm", "Mesoderm", "Endoderm", "Neural crest cells"],
     "correct": 1,
     "short_explanation": "The endocardium originates from mesoderm.",
     "long_explanation": "The heart develops from mesodermal tissue, with endocardial cushions forming the internal lining and valves of the heart.",
@@ -222,30 +185,21 @@
     "topic": "Embryology",
     "category": "Development",
     "difficulty": "advanced",
-    "tags": [
-      "embryology",
-      "cardiac development"
-    ],
-    "keywords": [
-      "mesoderm",
-      "heart origin",
-      "endocardial cushions"
-    ],
+    "tags": ["embryology", "cardiac development"],
+    "keywords": ["mesoderm", "heart origin", "endocardial cushions"],
     "source_reference": "Langman’s Medical Embryology",
     "text": "What is the embryological origin of the endocardium?",
-    "options": [
-      "Ectoderm",
-      "Mesoderm",
-      "Endoderm",
-      "Neural crest cells"
-    ],
+    "options": ["Ectoderm", "Mesoderm", "Endoderm", "Neural crest cells"],
     "correctAnswer": "Mesoderm",
     "abcd": [
       "A. Ectoderm",
       "B. Mesoderm",
       "C. Endoderm",
       "D. Neural crest cells"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_007",
@@ -263,16 +217,8 @@
     "topic": "Cardiac Conduction",
     "category": "Physiology",
     "difficulty": "advanced",
-    "tags": [
-      "conduction",
-      "Purkinje fibers",
-      "endocardium"
-    ],
-    "keywords": [
-      "subendocardial space",
-      "heart rhythm",
-      "fibers"
-    ],
+    "tags": ["conduction", "Purkinje fibers", "endocardium"],
+    "keywords": ["subendocardial space", "heart rhythm", "fibers"],
     "source_reference": "Guyton and Hall Physiology",
     "text": "The Purkinje fibers are located within or just beneath which cardiac layer?",
     "options": [
@@ -287,17 +233,15 @@
       "B. Myocardium",
       "C. Endocardium",
       "D. Fibrous pericardium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_008",
     "question": "What is a common complication of prosthetic valve endocarditis?",
-    "answers": [
-      "Hypotension",
-      "Stroke",
-      "Liver failure",
-      "Pulmonary fibrosis"
-    ],
+    "answers": ["Hypotension", "Stroke", "Liver failure", "Pulmonary fibrosis"],
     "correct": 1,
     "short_explanation": "Embolic stroke is a major complication.",
     "long_explanation": "Vegetations on the prosthetic valve can break off, travel through the bloodstream, and block cerebral vessels causing stroke.",
@@ -305,31 +249,21 @@
     "topic": "Pathology",
     "category": "Complication",
     "difficulty": "advanced",
-    "tags": [
-      "stroke",
-      "emboli",
-      "prosthetic valves"
-    ],
-    "keywords": [
-      "embolism",
-      "valve infection",
-      "neurovascular risk"
-    ],
+    "tags": ["stroke", "emboli", "prosthetic valves"],
+    "keywords": ["embolism", "valve infection", "neurovascular risk"],
     "source_reference": "Harrison’s Internal Medicine",
     "text": "What is a common complication of prosthetic valve endocarditis?",
-    "options": [
-      "Hypotension",
-      "Stroke",
-      "Liver failure",
-      "Pulmonary fibrosis"
-    ],
+    "options": ["Hypotension", "Stroke", "Liver failure", "Pulmonary fibrosis"],
     "correctAnswer": "Stroke",
     "abcd": [
       "A. Hypotension",
       "B. Stroke",
       "C. Liver failure",
       "D. Pulmonary fibrosis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_009",
@@ -347,15 +281,8 @@
     "topic": "Cardiac Physiology",
     "category": "Function",
     "difficulty": "intermediate",
-    "tags": [
-      "blood flow",
-      "anticoagulant",
-      "lining"
-    ],
-    "keywords": [
-      "clot prevention",
-      "cardiac physiology"
-    ],
+    "tags": ["blood flow", "anticoagulant", "lining"],
+    "keywords": ["clot prevention", "cardiac physiology"],
     "source_reference": "Cardiovascular Physiology Concepts, Klabunde",
     "text": "The endocardium helps regulate which of the following?",
     "options": [
@@ -370,17 +297,15 @@
       "B. Blood pressure",
       "C. Cardiac conduction",
       "D. Smooth blood flow and clot prevention"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   },
   {
     "id": "endocardium_010",
     "question": "Which imaging technique is most useful for evaluating endocardial damage?",
-    "answers": [
-      "X-ray",
-      "Ultrasound (echocardiogram)",
-      "CT scan",
-      "MRI"
-    ],
+    "answers": ["X-ray", "Ultrasound (echocardiogram)", "CT scan", "MRI"],
     "correct": 1,
     "short_explanation": "An echocardiogram is preferred for visualizing endocardial structures.",
     "long_explanation": "Transthoracic and transesophageal echocardiograms provide clear views of the endocardium and valves, useful in diagnosing infections or clots.",
@@ -388,29 +313,20 @@
     "topic": "Diagnostic Imaging",
     "category": "Assessment",
     "difficulty": "easy",
-    "tags": [
-      "echocardiogram",
-      "cardiac imaging"
-    ],
-    "keywords": [
-      "TTE",
-      "TEE",
-      "heart ultrasound"
-    ],
+    "tags": ["echocardiogram", "cardiac imaging"],
+    "keywords": ["TTE", "TEE", "heart ultrasound"],
     "source_reference": "ASE Guidelines for Echocardiography",
     "text": "Which imaging technique is most useful for evaluating endocardial damage?",
-    "options": [
-      "X-ray",
-      "Ultrasound (echocardiogram)",
-      "CT scan",
-      "MRI"
-    ],
+    "options": ["X-ray", "Ultrasound (echocardiogram)", "CT scan", "MRI"],
     "correctAnswer": "Ultrasound (echocardiogram)",
     "abcd": [
       "A. X-ray",
       "B. Ultrasound (echocardiogram)",
       "C. CT scan",
       "D. MRI"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "endocardium.json"
   }
 ]

@@ -15,18 +15,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Motor Function",
-    "tags": [
-      "T12",
-      "subcostal nerve",
-      "abdominal wall",
-      "motor"
-    ],
-    "keywords": [
-      "T12",
-      "subcostal",
-      "abdominal innervation",
-      "nerve"
-    ],
+    "tags": ["T12", "subcostal nerve", "abdominal wall", "motor"],
+    "keywords": ["T12", "subcostal", "abdominal innervation", "nerve"],
     "source_reference": "Gray’s Anatomy for Students",
     "stats": {
       "correct": 0,
@@ -47,7 +37,10 @@
       "B. Subcostal nerve",
       "C. Genitofemoral nerve",
       "D. Obturator nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_002",
@@ -65,18 +58,8 @@
     "difficulty": "advanced",
     "topic": "neuroanatomy",
     "category": "Nerve Course",
-    "tags": [
-      "T12",
-      "subcostal",
-      "thoracolumbar",
-      "nerve"
-    ],
-    "keywords": [
-      "T12",
-      "subcostal nerve",
-      "thoracic nerve",
-      "lumbar plexus"
-    ],
+    "tags": ["T12", "subcostal", "thoracolumbar", "nerve"],
+    "keywords": ["T12", "subcostal nerve", "thoracic nerve", "lumbar plexus"],
     "source_reference": "Clinically Oriented Anatomy",
     "stats": {
       "correct": 0,
@@ -97,7 +80,10 @@
       "B. It lies above the 12th rib",
       "C. It exits below the 12th rib and has a lumbar contribution",
       "D. It only carries motor fibers"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_003",
@@ -115,17 +101,8 @@
     "difficulty": "basic",
     "topic": "sensory",
     "category": "Dermatomes",
-    "tags": [
-      "T12",
-      "cutaneous",
-      "abdominal wall",
-      "sensory"
-    ],
-    "keywords": [
-      "subcostal nerve",
-      "T12 dermatome",
-      "abdominal sensation"
-    ],
+    "tags": ["T12", "cutaneous", "abdominal wall", "sensory"],
+    "keywords": ["subcostal nerve", "T12 dermatome", "abdominal sensation"],
     "source_reference": "Dermatomes and Cutaneous Nerves Atlas",
     "stats": {
       "correct": 0,
@@ -146,7 +123,10 @@
       "B. Lateral gluteal region",
       "C. Lower anterior abdominal wall",
       "D. Upper back"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_004",
@@ -164,17 +144,8 @@
     "difficulty": "intermediate",
     "topic": "anatomy",
     "category": "Motor Function",
-    "tags": [
-      "T12",
-      "muscle innervation",
-      "femoral nerve",
-      "abdominal wall"
-    ],
-    "keywords": [
-      "T12 motor",
-      "rectus femoris",
-      "abdominal muscles"
-    ],
+    "tags": ["T12", "muscle innervation", "femoral nerve", "abdominal wall"],
+    "keywords": ["T12 motor", "rectus femoris", "abdominal muscles"],
     "source_reference": "Muscles: Testing and Function",
     "stats": {
       "correct": 0,
@@ -195,7 +166,10 @@
       "B. Internal oblique",
       "C. Rectus femoris",
       "D. External oblique"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_005",
@@ -213,17 +187,8 @@
     "difficulty": "intermediate",
     "topic": "neurology",
     "category": "Reflexes",
-    "tags": [
-      "T12",
-      "abdominal reflex",
-      "neurology",
-      "reflex testing"
-    ],
-    "keywords": [
-      "superficial abdominal reflex",
-      "T12 lesion",
-      "reflex arc"
-    ],
+    "tags": ["T12", "abdominal reflex", "neurology", "reflex testing"],
+    "keywords": ["superficial abdominal reflex", "T12 lesion", "reflex arc"],
     "source_reference": "DeMyer’s Neurologic Examination",
     "stats": {
       "correct": 0,
@@ -244,17 +209,15 @@
       "B. Patellar reflex",
       "C. Superficial abdominal reflex",
       "D. Achilles reflex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_006",
     "question": "T12 subcostal nerve shares a dermatome zone with which adjacent spinal segment?",
-    "answers": [
-      "T11",
-      "L1",
-      "T10",
-      "L3"
-    ],
+    "answers": ["T11", "L1", "T10", "L3"],
     "correct": 1,
     "short_explanation": "T12 and L1 dermatomes overlap in the groin and lower abdomen.",
     "long_explanation": "Dermatome regions can overlap. The T12 dermatome borders and may share innervation with L1, particularly in the groin and lower abdominal wall.",
@@ -262,17 +225,8 @@
     "difficulty": "advanced",
     "topic": "dermatomes",
     "category": "Sensory Distribution",
-    "tags": [
-      "T12",
-      "L1",
-      "dermatome overlap",
-      "sensory"
-    ],
-    "keywords": [
-      "T12 dermatome",
-      "L1 dermatome",
-      "nerve distribution"
-    ],
+    "tags": ["T12", "L1", "dermatome overlap", "sensory"],
+    "keywords": ["T12 dermatome", "L1 dermatome", "nerve distribution"],
     "source_reference": "Netter’s Neurology Atlas",
     "stats": {
       "correct": 0,
@@ -281,19 +235,12 @@
     },
     "unit": "T12 spinal nerve",
     "text": "T12 subcostal nerve shares a dermatome zone with which adjacent spinal segment?",
-    "options": [
-      "T11",
-      "L1",
-      "T10",
-      "L3"
-    ],
+    "options": ["T11", "L1", "T10", "L3"],
     "correctAnswer": "L1",
-    "abcd": [
-      "A. T11",
-      "B. L1",
-      "C. T10",
-      "D. L3"
-    ]
+    "abcd": ["A. T11", "B. L1", "C. T10", "D. L3"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_007",
@@ -311,18 +258,8 @@
     "difficulty": "advanced",
     "topic": "nerve pathology",
     "category": "Entrapment Syndromes",
-    "tags": [
-      "T12",
-      "subcostal nerve",
-      "entrapment",
-      "flank pain"
-    ],
-    "keywords": [
-      "nerve compression",
-      "T12",
-      "external oblique",
-      "fascia"
-    ],
+    "tags": ["T12", "subcostal nerve", "entrapment", "flank pain"],
+    "keywords": ["nerve compression", "T12", "external oblique", "fascia"],
     "source_reference": "Clinical Neurology and Neurosurgery",
     "stats": {
       "correct": 0,
@@ -343,7 +280,10 @@
       "B. External oblique fascia",
       "C. Thoracolumbar fascia",
       "D. Femoral artery"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_008",
@@ -361,18 +301,8 @@
     "difficulty": "intermediate",
     "topic": "kinesiology",
     "category": "Motor Function",
-    "tags": [
-      "T12",
-      "motor",
-      "trunk flexion",
-      "core"
-    ],
-    "keywords": [
-      "T12",
-      "abdominal muscles",
-      "trunk movement",
-      "core strength"
-    ],
+    "tags": ["T12", "motor", "trunk flexion", "core"],
+    "keywords": ["T12", "abdominal muscles", "trunk movement", "core strength"],
     "source_reference": "Kinesiology of the Musculoskeletal System",
     "stats": {
       "correct": 0,
@@ -393,7 +323,10 @@
       "B. Hip rotation",
       "C. Trunk flexion and lateral bending",
       "D. Ankle plantarflexion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_009",
@@ -411,17 +344,8 @@
     "difficulty": "intermediate",
     "topic": "clinical treatment",
     "category": "Manual Therapy",
-    "tags": [
-      "T12",
-      "subcostal",
-      "myofascial",
-      "massage"
-    ],
-    "keywords": [
-      "massage therapy",
-      "nerve entrapment",
-      "T12 relief"
-    ],
+    "tags": ["T12", "subcostal", "myofascial", "massage"],
+    "keywords": ["massage therapy", "nerve entrapment", "T12 relief"],
     "source_reference": "Massage Therapy Principles and Practice",
     "stats": {
       "correct": 0,
@@ -442,7 +366,10 @@
       "B. Trigger point therapy to the gluteus maximus",
       "C. Myofascial release to lateral abdominal wall",
       "D. Effleurage to the calf"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   },
   {
     "id": "T12_Nerve_010",
@@ -460,18 +387,8 @@
     "difficulty": "basic",
     "topic": "neuroanatomy",
     "category": "Nerve Classification",
-    "tags": [
-      "T12",
-      "mixed nerve",
-      "motor",
-      "sensory"
-    ],
-    "keywords": [
-      "T12",
-      "mixed",
-      "subcostal nerve",
-      "nerve type"
-    ],
+    "tags": ["T12", "mixed nerve", "motor", "sensory"],
+    "keywords": ["T12", "mixed", "subcostal nerve", "nerve type"],
     "source_reference": "Fundamentals of Neuroscience",
     "stats": {
       "correct": 0,
@@ -492,6 +409,9 @@
       "B. Purely sensory",
       "C. Mixed nerve",
       "D. Autonomic only"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "T12_nerve_innervations.json"
   }
 ]

@@ -15,16 +15,8 @@
     "topic": "Peripheral Nerves",
     "category": "Motor",
     "difficulty": "basic",
-    "tags": [
-      "long thoracic",
-      "serratus anterior",
-      "C5–C7"
-    ],
-    "keywords": [
-      "nerve injury",
-      "scapular winging",
-      "upper limb nerve"
-    ],
+    "tags": ["long thoracic", "serratus anterior", "C5–C7"],
+    "keywords": ["nerve injury", "scapular winging", "upper limb nerve"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "Which muscle is innervated by the long thoracic nerve?",
     "options": [
@@ -39,17 +31,15 @@
       "B. Trapezius",
       "C. Serratus anterior",
       "D. Rhomboid major"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_002",
     "question": "Which spinal roots give rise to the long thoracic nerve?",
-    "answers": [
-      "C3–C5",
-      "C5–C7",
-      "C6–C8",
-      "T1–T3"
-    ],
+    "answers": ["C3–C5", "C5–C7", "C6–C8", "T1–T3"],
     "correct": 1,
     "short_explanation": "The long thoracic nerve is formed from C5, C6, and C7.",
     "long_explanation": "Emerging from the roots of the brachial plexus, the long thoracic nerve originates from C5–C7 and travels along the thoracic wall to the serratus anterior.",
@@ -57,42 +47,21 @@
     "topic": "Spinal Roots",
     "category": "Neuroanatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "C5",
-      "C6",
-      "C7",
-      "long thoracic nerve"
-    ],
-    "keywords": [
-      "brachial plexus",
-      "nerve roots",
-      "serratus"
-    ],
+    "tags": ["C5", "C6", "C7", "long thoracic nerve"],
+    "keywords": ["brachial plexus", "nerve roots", "serratus"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "text": "Which spinal roots give rise to the long thoracic nerve?",
-    "options": [
-      "C3–C5",
-      "C5–C7",
-      "C6–C8",
-      "T1–T3"
-    ],
+    "options": ["C3–C5", "C5–C7", "C6–C8", "T1–T3"],
     "correctAnswer": "C5–C7",
-    "abcd": [
-      "A. C3–C5",
-      "B. C5–C7",
-      "C. C6–C8",
-      "D. T1–T3"
-    ]
+    "abcd": ["A. C3–C5", "B. C5–C7", "C. C6–C8", "D. T1–T3"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_003",
     "question": "Damage to the long thoracic nerve may result in which clinical sign?",
-    "answers": [
-      "Shoulder droop",
-      "Winging scapula",
-      "Claw hand",
-      "Wrist drop"
-    ],
+    "answers": ["Shoulder droop", "Winging scapula", "Claw hand", "Wrist drop"],
     "correct": 1,
     "short_explanation": "Winging scapula is the hallmark of long thoracic nerve injury.",
     "long_explanation": "The serratus anterior anchors the scapula to the rib cage. When denervated, the medial scapula protrudes posteriorly when pushing forward—scapular winging.",
@@ -100,31 +69,21 @@
     "topic": "Clinical Presentation",
     "category": "Neuromuscular",
     "difficulty": "intermediate",
-    "tags": [
-      "scapular winging",
-      "long thoracic",
-      "nerve injury"
-    ],
-    "keywords": [
-      "serratus paralysis",
-      "posterior scapula",
-      "shoulder blade"
-    ],
+    "tags": ["scapular winging", "long thoracic", "nerve injury"],
+    "keywords": ["serratus paralysis", "posterior scapula", "shoulder blade"],
     "source_reference": "Orthopedic Physical Assessment, Magee",
     "text": "Damage to the long thoracic nerve may result in which clinical sign?",
-    "options": [
-      "Shoulder droop",
-      "Winging scapula",
-      "Claw hand",
-      "Wrist drop"
-    ],
+    "options": ["Shoulder droop", "Winging scapula", "Claw hand", "Wrist drop"],
     "correctAnswer": "Winging scapula",
     "abcd": [
       "A. Shoulder droop",
       "B. Winging scapula",
       "C. Claw hand",
       "D. Wrist drop"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_004",
@@ -142,16 +101,8 @@
     "topic": "Functional Loss",
     "category": "Kinesiology",
     "difficulty": "intermediate",
-    "tags": [
-      "scapular motion",
-      "nerve paralysis",
-      "shoulder control"
-    ],
-    "keywords": [
-      "serratus function",
-      "nerve testing",
-      "scapular glide"
-    ],
+    "tags": ["scapular motion", "nerve paralysis", "shoulder control"],
+    "keywords": ["serratus function", "nerve testing", "scapular glide"],
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
     "text": "Which of the following movements is primarily impaired by long thoracic nerve injury?",
     "options": [
@@ -166,7 +117,10 @@
       "B. Shoulder flexion",
       "C. Scapular protraction",
       "D. Wrist extension"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_005",
@@ -184,16 +138,8 @@
     "topic": "Vulnerability",
     "category": "Anatomical Risk",
     "difficulty": "advanced",
-    "tags": [
-      "nerve trauma",
-      "exposed nerves",
-      "shoulder blade"
-    ],
-    "keywords": [
-      "nerve exposure",
-      "surgical risk",
-      "superficial nerve"
-    ],
+    "tags": ["nerve trauma", "exposed nerves", "shoulder blade"],
+    "keywords": ["nerve exposure", "surgical risk", "superficial nerve"],
     "source_reference": "Gray’s Anatomy",
     "text": "Why is the long thoracic nerve vulnerable to injury?",
     "options": [
@@ -208,17 +154,15 @@
       "B. It lacks myelination",
       "C. It travels on the superficial surface of the serratus anterior",
       "D. It is located in the spinal canal"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_006",
     "question": "Which activity would be most affected by long thoracic nerve palsy?",
-    "answers": [
-      "Gripping",
-      "Typing",
-      "Reaching overhead",
-      "Running"
-    ],
+    "answers": ["Gripping", "Typing", "Reaching overhead", "Running"],
     "correct": 2,
     "short_explanation": "Overhead reaching requires scapular rotation, which depends on serratus anterior.",
     "long_explanation": "Tasks like reaching high shelves require coordinated scapular movement. Loss of serratus anterior causes fatigue, pain, or dysfunction in these motions.",
@@ -226,31 +170,16 @@
     "topic": "Movement Analysis",
     "category": "Function",
     "difficulty": "basic",
-    "tags": [
-      "overhead activity",
-      "nerve injury",
-      "long thoracic"
-    ],
-    "keywords": [
-      "serratus weakness",
-      "reaching pain",
-      "shoulder motion"
-    ],
+    "tags": ["overhead activity", "nerve injury", "long thoracic"],
+    "keywords": ["serratus weakness", "reaching pain", "shoulder motion"],
     "source_reference": "Kendall’s Muscles: Testing and Function",
     "text": "Which activity would be most affected by long thoracic nerve palsy?",
-    "options": [
-      "Gripping",
-      "Typing",
-      "Reaching overhead",
-      "Running"
-    ],
+    "options": ["Gripping", "Typing", "Reaching overhead", "Running"],
     "correctAnswer": "Reaching overhead",
-    "abcd": [
-      "A. Gripping",
-      "B. Typing",
-      "C. Reaching overhead",
-      "D. Running"
-    ]
+    "abcd": ["A. Gripping", "B. Typing", "C. Reaching overhead", "D. Running"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_007",
@@ -268,15 +197,8 @@
     "topic": "Assessment",
     "category": "Orthopedic Testing",
     "difficulty": "basic",
-    "tags": [
-      "wall push test",
-      "scapular test",
-      "nerve screening"
-    ],
-    "keywords": [
-      "scapular winging test",
-      "serratus anterior test"
-    ],
+    "tags": ["wall push test", "scapular test", "nerve screening"],
+    "keywords": ["scapular winging test", "serratus anterior test"],
     "source_reference": "Orthopedic Physical Exam, Hoppenfeld",
     "text": "Which clinical test is used to assess long thoracic nerve function?",
     "options": [
@@ -291,17 +213,15 @@
       "B. Push-off wall test",
       "C. Tinel’s sign",
       "D. Phalen’s test"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_008",
     "question": "The long thoracic nerve innervates its target muscle on which side?",
-    "answers": [
-      "Posterior",
-      "Anterior",
-      "Medial",
-      "Lateral"
-    ],
+    "answers": ["Posterior", "Anterior", "Medial", "Lateral"],
     "correct": 3,
     "short_explanation": "It runs along the lateral chest wall.",
     "long_explanation": "The long thoracic nerve travels on the lateral aspect of the rib cage to innervate the serratus anterior from its external surface.",
@@ -309,31 +229,16 @@
     "topic": "Anatomy",
     "category": "Pathway",
     "difficulty": "intermediate",
-    "tags": [
-      "nerve path",
-      "serratus innervation",
-      "lateral thorax"
-    ],
-    "keywords": [
-      "thoracic nerve",
-      "rib cage nerve",
-      "serratus anterior"
-    ],
+    "tags": ["nerve path", "serratus innervation", "lateral thorax"],
+    "keywords": ["thoracic nerve", "rib cage nerve", "serratus anterior"],
     "source_reference": "Grant’s Dissector",
     "text": "The long thoracic nerve innervates its target muscle on which side?",
-    "options": [
-      "Posterior",
-      "Anterior",
-      "Medial",
-      "Lateral"
-    ],
+    "options": ["Posterior", "Anterior", "Medial", "Lateral"],
     "correctAnswer": "Lateral",
-    "abcd": [
-      "A. Posterior",
-      "B. Anterior",
-      "C. Medial",
-      "D. Lateral"
-    ]
+    "abcd": ["A. Posterior", "B. Anterior", "C. Medial", "D. Lateral"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_009",
@@ -351,16 +256,8 @@
     "topic": "Etiology",
     "category": "Injury",
     "difficulty": "advanced",
-    "tags": [
-      "nerve palsy",
-      "nerve compression",
-      "overhead trauma"
-    ],
-    "keywords": [
-      "surgical nerve injury",
-      "axillary nerve",
-      "shoulder nerve"
-    ],
+    "tags": ["nerve palsy", "nerve compression", "overhead trauma"],
+    "keywords": ["surgical nerve injury", "axillary nerve", "shoulder nerve"],
     "source_reference": "Physical Medicine and Rehab Secrets",
     "text": "Which of the following is NOT a typical cause of long thoracic nerve damage?",
     "options": [
@@ -375,17 +272,15 @@
       "B. Backpack compression",
       "C. Surgical trauma",
       "D. Overhead sports"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   },
   {
     "id": "long_thoracic_010",
     "question": "Which brachial plexus region gives rise to the long thoracic nerve?",
-    "answers": [
-      "Roots",
-      "Trunks",
-      "Divisions",
-      "Cords"
-    ],
+    "answers": ["Roots", "Trunks", "Divisions", "Cords"],
     "correct": 0,
     "short_explanation": "It branches directly from the roots (C5–C7).",
     "long_explanation": "Unlike many other nerves of the upper limb, the long thoracic nerve arises directly from the roots of the brachial plexus before they combine into trunks.",
@@ -393,30 +288,15 @@
     "topic": "Neuroanatomy",
     "category": "Brachial Plexus",
     "difficulty": "intermediate",
-    "tags": [
-      "nerve origin",
-      "brachial plexus",
-      "roots"
-    ],
-    "keywords": [
-      "nerve branching",
-      "C5–C7",
-      "serratus motor"
-    ],
+    "tags": ["nerve origin", "brachial plexus", "roots"],
+    "keywords": ["nerve branching", "C5–C7", "serratus motor"],
     "source_reference": "Atlas of Anatomy, Thieme",
     "text": "Which brachial plexus region gives rise to the long thoracic nerve?",
-    "options": [
-      "Roots",
-      "Trunks",
-      "Divisions",
-      "Cords"
-    ],
+    "options": ["Roots", "Trunks", "Divisions", "Cords"],
     "correctAnswer": "Roots",
-    "abcd": [
-      "A. Roots",
-      "B. Trunks",
-      "C. Divisions",
-      "D. Cords"
-    ]
+    "abcd": ["A. Roots", "B. Trunks", "C. Divisions", "D. Cords"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/back_innervations",
+    "filename": "long_thoacic_nerve_innervations.json"
   }
 ]

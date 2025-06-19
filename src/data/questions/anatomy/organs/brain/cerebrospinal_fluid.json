@@ -15,16 +15,8 @@
     "topic": "Neurology",
     "category": "CSF Production",
     "difficulty": "basic",
-    "tags": [
-      "CSF",
-      "choroid plexus",
-      "ventricles"
-    ],
-    "keywords": [
-      "CSF formation",
-      "CSF source",
-      "choroid secretion"
-    ],
+    "tags": ["CSF", "choroid plexus", "ventricles"],
+    "keywords": ["CSF formation", "CSF source", "choroid secretion"],
     "source_reference": "Guyton & Hall Textbook of Medical Physiology",
     "text": "What is the primary site of cerebrospinal fluid (CSF) production?",
     "options": [
@@ -39,7 +31,10 @@
       "B. Choroid plexus",
       "C. Subarachnoid space",
       "D. Cerebral aqueduct"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_002",
@@ -57,11 +52,7 @@
     "topic": "CSF Pathway",
     "category": "Ventricular System",
     "difficulty": "intermediate",
-    "tags": [
-      "CSF",
-      "ventricular flow",
-      "aqueduct"
-    ],
+    "tags": ["CSF", "ventricular flow", "aqueduct"],
     "keywords": [
       "CSF circulation",
       "brain ventricles",
@@ -81,7 +72,10 @@
       "B. Lateral ventricles → third ventricle → cerebral aqueduct → fourth ventricle",
       "C. Third ventricle → lateral ventricles → fourth ventricle → cerebral aqueduct",
       "D. Fourth ventricle → third ventricle → cerebral aqueduct → lateral ventricles"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_003",
@@ -99,16 +93,8 @@
     "topic": "CSF Drainage",
     "category": "Anatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "CSF flow",
-      "fourth ventricle",
-      "apertures"
-    ],
-    "keywords": [
-      "Luschka",
-      "Magendie",
-      "CSF exit points"
-    ],
+    "tags": ["CSF flow", "fourth ventricle", "apertures"],
+    "keywords": ["Luschka", "Magendie", "CSF exit points"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "text": "Where does CSF exit the ventricular system to enter the subarachnoid space?",
     "options": [
@@ -123,7 +109,10 @@
       "B. Cerebral aqueduct",
       "C. Foramina of Luschka and Magendie",
       "D. Arachnoid villi"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_004",
@@ -141,16 +130,8 @@
     "topic": "CSF Reabsorption",
     "category": "Neurophysiology",
     "difficulty": "basic",
-    "tags": [
-      "arachnoid",
-      "CSF drainage",
-      "venous"
-    ],
-    "keywords": [
-      "CSF absorption",
-      "venous sinus",
-      "arachnoid granulations"
-    ],
+    "tags": ["arachnoid", "CSF drainage", "venous"],
+    "keywords": ["CSF absorption", "venous sinus", "arachnoid granulations"],
     "source_reference": "Snell’s Clinical Neuroanatomy",
     "text": "Where is CSF absorbed into the venous circulation?",
     "options": [
@@ -165,7 +146,10 @@
       "B. Central canal",
       "C. Arachnoid villi",
       "D. Pia mater"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_005",
@@ -183,16 +167,8 @@
     "topic": "CSF Pathway",
     "category": "Midbrain Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "cerebral aqueduct",
-      "ventricles",
-      "CSF"
-    ],
-    "keywords": [
-      "aqueduct of Sylvius",
-      "ventricular flow",
-      "hydrocephalus"
-    ],
+    "tags": ["cerebral aqueduct", "ventricles", "CSF"],
+    "keywords": ["aqueduct of Sylvius", "ventricular flow", "hydrocephalus"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which structure connects the third and fourth ventricles?",
     "options": [
@@ -207,7 +183,10 @@
       "B. Cerebral aqueduct",
       "C. Central canal",
       "D. Internal capsule"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_006",
@@ -225,16 +204,8 @@
     "topic": "Clinical Neurology",
     "category": "Pathophysiology",
     "difficulty": "intermediate",
-    "tags": [
-      "hydrocephalus",
-      "CSF obstruction",
-      "intracranial pressure"
-    ],
-    "keywords": [
-      "CSF backup",
-      "ventricular dilation",
-      "brain swelling"
-    ],
+    "tags": ["hydrocephalus", "CSF obstruction", "intracranial pressure"],
+    "keywords": ["CSF backup", "ventricular dilation", "brain swelling"],
     "source_reference": "Clinical Neurology by Waxman",
     "text": "What condition results from blockage of CSF flow?",
     "options": [
@@ -249,17 +220,15 @@
       "B. Hydrocephalus",
       "C. Meningitis",
       "D. Subdural hematoma"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_007",
     "question": "What is the average total volume of CSF in an adult?",
-    "answers": [
-      "50 mL",
-      "100 mL",
-      "150 mL",
-      "250 mL"
-    ],
+    "answers": ["50 mL", "100 mL", "150 mL", "250 mL"],
     "correct": 2,
     "short_explanation": "Adults typically have about 150 mL of CSF in circulation.",
     "long_explanation": "Despite producing about 500 mL daily, most CSF is reabsorbed continuously, maintaining a stable volume.",
@@ -267,41 +236,21 @@
     "topic": "Neuroanatomy",
     "category": "Physiology",
     "difficulty": "basic",
-    "tags": [
-      "CSF volume",
-      "neurophysiology",
-      "liquor"
-    ],
-    "keywords": [
-      "CSF amount",
-      "daily turnover",
-      "brain fluid"
-    ],
+    "tags": ["CSF volume", "neurophysiology", "liquor"],
+    "keywords": ["CSF amount", "daily turnover", "brain fluid"],
     "source_reference": "Guyton & Hall Physiology",
     "text": "What is the average total volume of CSF in an adult?",
-    "options": [
-      "50 mL",
-      "100 mL",
-      "150 mL",
-      "250 mL"
-    ],
+    "options": ["50 mL", "100 mL", "150 mL", "250 mL"],
     "correctAnswer": "150 mL",
-    "abcd": [
-      "A. 50 mL",
-      "B. 100 mL",
-      "C. 150 mL",
-      "D. 250 mL"
-    ]
+    "abcd": ["A. 50 mL", "B. 100 mL", "C. 150 mL", "D. 250 mL"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_008",
     "question": "Which diagnostic test samples CSF directly?",
-    "answers": [
-      "CT scan",
-      "EEG",
-      "Lumbar puncture",
-      "X-ray"
-    ],
+    "answers": ["CT scan", "EEG", "Lumbar puncture", "X-ray"],
     "correct": 2,
     "short_explanation": "A lumbar puncture draws CSF from the subarachnoid space.",
     "long_explanation": "A needle is inserted between L3-L4 or L4-L5 to collect CSF for analysis, useful in diagnosing infections or hemorrhages.",
@@ -309,31 +258,16 @@
     "topic": "Diagnostics",
     "category": "Procedures",
     "difficulty": "basic",
-    "tags": [
-      "lumbar puncture",
-      "CSF sampling",
-      "LP"
-    ],
-    "keywords": [
-      "spinal tap",
-      "diagnosis",
-      "neuro exam"
-    ],
+    "tags": ["lumbar puncture", "CSF sampling", "LP"],
+    "keywords": ["spinal tap", "diagnosis", "neuro exam"],
     "source_reference": "Harrison’s Principles of Internal Medicine",
     "text": "Which diagnostic test samples CSF directly?",
-    "options": [
-      "CT scan",
-      "EEG",
-      "Lumbar puncture",
-      "X-ray"
-    ],
+    "options": ["CT scan", "EEG", "Lumbar puncture", "X-ray"],
     "correctAnswer": "Lumbar puncture",
-    "abcd": [
-      "A. CT scan",
-      "B. EEG",
-      "C. Lumbar puncture",
-      "D. X-ray"
-    ]
+    "abcd": ["A. CT scan", "B. EEG", "C. Lumbar puncture", "D. X-ray"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_009",
@@ -351,16 +285,8 @@
     "topic": "CNS Anatomy",
     "category": "Brain Structures",
     "difficulty": "intermediate",
-    "tags": [
-      "septum pellucidum",
-      "lateral ventricles",
-      "brain imaging"
-    ],
-    "keywords": [
-      "ventricular anatomy",
-      "midline membrane",
-      "neuro MRI"
-    ],
+    "tags": ["septum pellucidum", "lateral ventricles", "brain imaging"],
+    "keywords": ["ventricular anatomy", "midline membrane", "neuro MRI"],
     "source_reference": "Netter’s Atlas",
     "text": "What structure separates the lateral ventricles?",
     "options": [
@@ -375,17 +301,15 @@
       "B. Septum pellucidum",
       "C. Thalamus",
       "D. Falx cerebri"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   },
   {
     "id": "csf_010",
     "question": "Which area contains the central canal of the spinal cord?",
-    "answers": [
-      "Medulla",
-      "Midbrain",
-      "Spinal cord",
-      "Cerebellum"
-    ],
+    "answers": ["Medulla", "Midbrain", "Spinal cord", "Cerebellum"],
     "correct": 2,
     "short_explanation": "The central canal extends through the spinal cord and contains CSF.",
     "long_explanation": "It is continuous with the ventricular system and helps distribute CSF to the lower CNS. It narrows with age and may become occluded.",
@@ -393,30 +317,15 @@
     "topic": "Spinal CSF",
     "category": "Anatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "central canal",
-      "spinal cord",
-      "CSF"
-    ],
-    "keywords": [
-      "spinal fluid flow",
-      "syrinx",
-      "ventricular continuity"
-    ],
+    "tags": ["central canal", "spinal cord", "CSF"],
+    "keywords": ["spinal fluid flow", "syrinx", "ventricular continuity"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which area contains the central canal of the spinal cord?",
-    "options": [
-      "Medulla",
-      "Midbrain",
-      "Spinal cord",
-      "Cerebellum"
-    ],
+    "options": ["Medulla", "Midbrain", "Spinal cord", "Cerebellum"],
     "correctAnswer": "Spinal cord",
-    "abcd": [
-      "A. Medulla",
-      "B. Midbrain",
-      "C. Spinal cord",
-      "D. Cerebellum"
-    ]
+    "abcd": ["A. Medulla", "B. Midbrain", "C. Spinal cord", "D. Cerebellum"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "cerebrospinal_fluid.json"
   }
 ]

@@ -15,16 +15,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Hand Muscles",
-    "tags": [
-      "hand anatomy",
-      "intrinsic muscles",
-      "layer 3"
-    ],
-    "keywords": [
-      "palmar interossei",
-      "dorsal interossei",
-      "adductor pollicis"
-    ],
+    "tags": ["hand anatomy", "intrinsic muscles", "layer 3"],
+    "keywords": ["palmar interossei", "dorsal interossei", "adductor pollicis"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which muscles make up the third (deepest intrinsic) layer of the hand?",
@@ -40,7 +32,10 @@
       "B. Lumbricals, flexor digiti minimi brevis, opponens digiti minimi",
       "C. Abductor pollicis brevis and opponens pollicis",
       "D. Flexor pollicis brevis and abductor digiti minimi"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_002",
@@ -58,16 +53,8 @@
     "difficulty": "easy",
     "category": "Anatomy",
     "topic": "Hand Muscles",
-    "tags": [
-      "hand",
-      "interossei",
-      "function"
-    ],
-    "keywords": [
-      "palmar interossei",
-      "finger adduction",
-      "ulnar nerve"
-    ],
+    "tags": ["hand", "interossei", "function"],
+    "keywords": ["palmar interossei", "finger adduction", "ulnar nerve"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Anatomy Atlas",
     "text": "What is the primary function of the palmar interossei muscles?",
@@ -83,7 +70,10 @@
       "B. Flexion of the wrist",
       "C. Adduction of the fingers",
       "D. Extension of the thumb"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_003",
@@ -101,16 +91,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Hand Innervation",
-    "tags": [
-      "ulnar nerve",
-      "interossei",
-      "innervation"
-    ],
-    "keywords": [
-      "dorsal interossei",
-      "ulnar nerve",
-      "hand muscles"
-    ],
+    "tags": ["ulnar nerve", "interossei", "innervation"],
+    "keywords": ["dorsal interossei", "ulnar nerve", "hand muscles"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which nerve innervates the dorsal interossei muscles of the hand?",
@@ -126,7 +108,10 @@
       "B. Radial nerve",
       "C. Ulnar nerve",
       "D. Musculocutaneous nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_004",
@@ -144,16 +129,8 @@
     "difficulty": "easy",
     "category": "Anatomy",
     "topic": "Hand Muscles",
-    "tags": [
-      "dorsal interossei",
-      "abduction",
-      "hand movement"
-    ],
-    "keywords": [
-      "finger abduction",
-      "dorsal interossei",
-      "ulnar innervation"
-    ],
+    "tags": ["dorsal interossei", "abduction", "hand movement"],
+    "keywords": ["finger abduction", "dorsal interossei", "ulnar innervation"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter's Clinical Anatomy",
     "text": "What is the function of the dorsal interossei muscles in the hand?",
@@ -169,17 +146,15 @@
       "B. Abduct the fingers",
       "C. Extend the wrist",
       "D. Oppose the thumb"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_005",
     "question": "How many dorsal interossei muscles are there in the human hand?",
-    "answers": [
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
+    "answers": ["3", "4", "5", "6"],
     "correct": 1,
     "short_explanation": "There are four dorsal interossei muscles.",
     "long_explanation": "The hand has four dorsal interossei muscles located between the metacarpal bones, responsible for abducting fingers from the axis of the middle finger.",
@@ -187,31 +162,17 @@
     "difficulty": "easy",
     "category": "Anatomy",
     "topic": "Hand Structure",
-    "tags": [
-      "hand muscles",
-      "interossei count"
-    ],
-    "keywords": [
-      "dorsal interossei",
-      "muscle count",
-      "hand anatomy"
-    ],
+    "tags": ["hand muscles", "interossei count"],
+    "keywords": ["dorsal interossei", "muscle count", "hand anatomy"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray's Anatomy",
     "text": "How many dorsal interossei muscles are there in the human hand?",
-    "options": [
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
+    "options": ["3", "4", "5", "6"],
     "correctAnswer": "4",
-    "abcd": [
-      "A. 3",
-      "B. 4",
-      "C. 5",
-      "D. 6"
-    ]
+    "abcd": ["A. 3", "B. 4", "C. 5", "D. 6"],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_006",
@@ -229,15 +190,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Thumb Muscles",
-    "tags": [
-      "thumb movement",
-      "adductor pollicis"
-    ],
-    "keywords": [
-      "thumb adduction",
-      "grip",
-      "ulnar nerve"
-    ],
+    "tags": ["thumb movement", "adductor pollicis"],
+    "keywords": ["thumb adduction", "grip", "ulnar nerve"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "What hand movement does the adductor pollicis primarily perform?",
@@ -253,7 +207,10 @@
       "B. Extension of the thumb",
       "C. Adduction of the thumb",
       "D. Opposition of the thumb"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_007",
@@ -271,16 +228,8 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Hand Structure",
-    "tags": [
-      "interossei",
-      "ligaments",
-      "hand anatomy"
-    ],
-    "keywords": [
-      "deep transverse metacarpal ligament",
-      "interossei",
-      "hand"
-    ],
+    "tags": ["interossei", "ligaments", "hand anatomy"],
+    "keywords": ["deep transverse metacarpal ligament", "interossei", "hand"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray’s Anatomy",
     "text": "Which anatomical structure separates the palmar and dorsal interossei muscles?",
@@ -296,7 +245,10 @@
       "B. Deep transverse metacarpal ligament",
       "C. Extensor retinaculum",
       "D. Flexor retinaculum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_008",
@@ -314,15 +266,8 @@
     "difficulty": "hard",
     "category": "Anatomy",
     "topic": "Hand Function",
-    "tags": [
-      "MCP joint",
-      "intrinsic hand muscles"
-    ],
-    "keywords": [
-      "flexion",
-      "interossei",
-      "grip"
-    ],
+    "tags": ["MCP joint", "intrinsic hand muscles"],
+    "keywords": ["flexion", "interossei", "grip"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Clinical Oriented Anatomy, Moore",
     "text": "Which action do both the palmar and dorsal interossei assist with besides finger movement?",
@@ -338,7 +283,10 @@
       "B. Flexion at the MCP joints",
       "C. Extension at the wrist",
       "D. Pronation of the forearm"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_009",
@@ -356,16 +304,8 @@
     "difficulty": "hard",
     "category": "Anatomy",
     "topic": "Neurology of Hand",
-    "tags": [
-      "ulnar nerve",
-      "adductor pollicis",
-      "nerve lesion"
-    ],
-    "keywords": [
-      "ulnar paradox",
-      "thumb",
-      "nerve"
-    ],
+    "tags": ["ulnar nerve", "adductor pollicis", "nerve lesion"],
+    "keywords": ["ulnar paradox", "thumb", "nerve"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Neuroanatomy Through Clinical Cases",
     "text": "Which muscle forms a part of the 'ulnar paradox' affecting hand muscle strength?",
@@ -381,7 +321,10 @@
       "B. Adductor pollicis",
       "C. Flexor digitorum superficialis",
       "D. Opponens pollicis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_010",
@@ -399,15 +342,8 @@
     "difficulty": "moderate",
     "category": "Orthopedic Assessment",
     "topic": "Hand Testing",
-    "tags": [
-      "Froment’s sign",
-      "ulnar nerve"
-    ],
-    "keywords": [
-      "adductor pollicis",
-      "ulnar test",
-      "clinical sign"
-    ],
+    "tags": ["Froment’s sign", "ulnar nerve"],
+    "keywords": ["adductor pollicis", "ulnar test", "clinical sign"],
     "mblex_category": "Assessment",
     "source_reference": "Orthopedic Physical Assessment, Magee",
     "text": "Which test best evaluates function of the adductor pollicis?",
@@ -423,17 +359,15 @@
       "B. Tinel’s test",
       "C. Phalen’s test",
       "D. Allen’s test"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   },
   {
     "id": "hand_layer3_011",
     "question": "Which digit does not have a palmar interosseous muscle?",
-    "answers": [
-      "Thumb",
-      "Index finger",
-      "Middle finger",
-      "Little finger"
-    ],
+    "answers": ["Thumb", "Index finger", "Middle finger", "Little finger"],
     "correct": 2,
     "short_explanation": "The middle finger has no palmar interosseous muscle.",
     "long_explanation": "Palmar interossei adduct fingers toward the middle finger, but the middle finger itself abducts in both directions via dorsal interossei and lacks a palmar interosseous.",
@@ -441,30 +375,21 @@
     "difficulty": "moderate",
     "category": "Anatomy",
     "topic": "Hand Muscles",
-    "tags": [
-      "palmar interossei",
-      "finger muscles"
-    ],
-    "keywords": [
-      "middle finger",
-      "no palmar interosseous",
-      "abduction"
-    ],
+    "tags": ["palmar interossei", "finger muscles"],
+    "keywords": ["middle finger", "no palmar interosseous", "abduction"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "text": "Which digit does not have a palmar interosseous muscle?",
-    "options": [
-      "Thumb",
-      "Index finger",
-      "Middle finger",
-      "Little finger"
-    ],
+    "options": ["Thumb", "Index finger", "Middle finger", "Little finger"],
     "correctAnswer": "Middle finger",
     "abcd": [
       "A. Thumb",
       "B. Index finger",
       "C. Middle finger",
       "D. Little finger"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "muscle_groups/hands",
+    "filename": "hand_layer_3.json"
   }
 ]

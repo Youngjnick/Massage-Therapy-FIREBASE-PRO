@@ -2,12 +2,7 @@
   {
     "id": "CervicalPlexus_001",
     "question": "Which spinal nerve roots form the cervical plexus?",
-    "answers": [
-      "C1–C3",
-      "C1–C4",
-      "C2–C5",
-      "C3–C6"
-    ],
+    "answers": ["C1–C3", "C1–C4", "C2–C5", "C3–C6"],
     "correct": 1,
     "short_explanation": "The cervical plexus is formed by the anterior rami of C1–C4.",
     "long_explanation": "The cervical plexus arises from the anterior rami of the first four cervical spinal nerves (C1–C4), providing sensory and motor innervation to parts of the head, neck, and shoulders.",
@@ -15,31 +10,16 @@
     "topic": "cervical plexus",
     "category": "Neuroanatomy",
     "difficulty": "basic",
-    "tags": [
-      "cervical plexus",
-      "nerve roots",
-      "C1-C4"
-    ],
-    "keywords": [
-      "anterior rami",
-      "cervical innervation",
-      "neck nerves"
-    ],
+    "tags": ["cervical plexus", "nerve roots", "C1-C4"],
+    "keywords": ["anterior rami", "cervical innervation", "neck nerves"],
     "source_reference": "Clinically Oriented Anatomy by Moore",
     "text": "Which spinal nerve roots form the cervical plexus?",
-    "options": [
-      "C1–C3",
-      "C1–C4",
-      "C2–C5",
-      "C3–C6"
-    ],
+    "options": ["C1–C3", "C1–C4", "C2–C5", "C3–C6"],
     "correctAnswer": "C1–C4",
-    "abcd": [
-      "A. C1–C3",
-      "B. C1–C4",
-      "C. C2–C5",
-      "D. C3–C6"
-    ]
+    "abcd": ["A. C1–C3", "B. C1–C4", "C. C2–C5", "D. C3–C6"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_002",
@@ -57,16 +37,8 @@
     "topic": "respiratory control",
     "category": "Motor Nerves",
     "difficulty": "intermediate",
-    "tags": [
-      "phrenic nerve",
-      "C3–C5",
-      "diaphragm"
-    ],
-    "keywords": [
-      "breathing control",
-      "cervical motor",
-      "nerve plexus"
-    ],
+    "tags": ["phrenic nerve", "C3–C5", "diaphragm"],
+    "keywords": ["breathing control", "cervical motor", "nerve plexus"],
     "source_reference": "Gray's Anatomy",
     "text": "Which of the following nerves is derived from the cervical plexus and innervates the diaphragm?",
     "options": [
@@ -81,7 +53,10 @@
       "B. Phrenic nerve",
       "C. Greater auricular nerve",
       "D. Lesser occipital nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_003",
@@ -99,16 +74,8 @@
     "topic": "motor innervation",
     "category": "Neck Musculature",
     "difficulty": "intermediate",
-    "tags": [
-      "ansa cervicalis",
-      "infrahyoid",
-      "neck"
-    ],
-    "keywords": [
-      "nerve loop",
-      "hyoid stabilization",
-      "swallowing"
-    ],
+    "tags": ["ansa cervicalis", "infrahyoid", "neck"],
+    "keywords": ["nerve loop", "hyoid stabilization", "swallowing"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "text": "What does the ansa cervicalis innervate?",
     "options": [
@@ -123,7 +90,10 @@
       "B. Scalene muscles",
       "C. Infrahyoid muscles",
       "D. Tongue muscles"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_004",
@@ -141,16 +111,8 @@
     "topic": "cutaneous innervation",
     "category": "Sensory Nerves",
     "difficulty": "intermediate",
-    "tags": [
-      "greater auricular",
-      "cutaneous",
-      "C2-C3"
-    ],
-    "keywords": [
-      "auricle nerve",
-      "parotid sensation",
-      "neck dermatomes"
-    ],
+    "tags": ["greater auricular", "cutaneous", "C2-C3"],
+    "keywords": ["auricle nerve", "parotid sensation", "neck dermatomes"],
     "source_reference": "Essential Clinical Anatomy by Moore",
     "text": "Which sensory branch of the cervical plexus innervates the skin over the parotid gland and auricle?",
     "options": [
@@ -165,7 +127,10 @@
       "B. Transverse cervical",
       "C. Greater auricular",
       "D. Supraclavicular"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_005",
@@ -183,16 +148,8 @@
     "topic": "cutaneous branches",
     "category": "Sensory Nerves",
     "difficulty": "basic",
-    "tags": [
-      "transverse cervical",
-      "neck sensory",
-      "C2-C3"
-    ],
-    "keywords": [
-      "anterior neck",
-      "superficial nerves",
-      "cervical triangle"
-    ],
+    "tags": ["transverse cervical", "neck sensory", "C2-C3"],
+    "keywords": ["anterior neck", "superficial nerves", "cervical triangle"],
     "source_reference": "Human Anatomy by Martini",
     "text": "The transverse cervical nerve provides sensation to which area?",
     "options": [
@@ -207,17 +164,15 @@
       "B. Anterior neck",
       "C. Deltoid region",
       "D. Mandible"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_006",
     "question": "Which cervical nerve contributes fibers to the hypoglossal nerve pathway?",
-    "answers": [
-      "C1",
-      "C2",
-      "C3",
-      "C4"
-    ],
+    "answers": ["C1", "C2", "C3", "C4"],
     "correct": 0,
     "short_explanation": "C1 fibers hitchhike along CN XII.",
     "long_explanation": "Fibers from C1 spinal nerve join the hypoglossal nerve briefly before branching off to form the superior root of the ansa cervicalis or innervate the geniohyoid and thyrohyoid directly.",
@@ -225,31 +180,16 @@
     "topic": "cranial nerve interactions",
     "category": "Anatomical Pathways",
     "difficulty": "advanced",
-    "tags": [
-      "C1",
-      "hypoglossal",
-      "ansa"
-    ],
-    "keywords": [
-      "nerve hitchhiking",
-      "geniohyoid",
-      "thyrohyoid"
-    ],
+    "tags": ["C1", "hypoglossal", "ansa"],
+    "keywords": ["nerve hitchhiking", "geniohyoid", "thyrohyoid"],
     "source_reference": "Moore’s Clinical Anatomy",
     "text": "Which cervical nerve contributes fibers to the hypoglossal nerve pathway?",
-    "options": [
-      "C1",
-      "C2",
-      "C3",
-      "C4"
-    ],
+    "options": ["C1", "C2", "C3", "C4"],
     "correctAnswer": "C1",
-    "abcd": [
-      "A. C1",
-      "B. C2",
-      "C. C3",
-      "D. C4"
-    ]
+    "abcd": ["A. C1", "B. C2", "C. C3", "D. C4"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_007",
@@ -267,16 +207,8 @@
     "topic": "dermatomal distribution",
     "category": "Sensory Nerves",
     "difficulty": "intermediate",
-    "tags": [
-      "supraclavicular",
-      "shoulder skin",
-      "C3-C4"
-    ],
-    "keywords": [
-      "nerve distribution",
-      "sensory zones",
-      "shoulder innervation"
-    ],
+    "tags": ["supraclavicular", "shoulder skin", "C3-C4"],
+    "keywords": ["nerve distribution", "sensory zones", "shoulder innervation"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which branch of the cervical plexus innervates the skin over the clavicle and upper shoulder?",
     "options": [
@@ -291,17 +223,15 @@
       "B. Phrenic nerve",
       "C. Transverse cervical nerve",
       "D. Greater auricular nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_008",
     "question": "Which function could be impaired by damage to the cervical plexus motor branches?",
-    "answers": [
-      "Swallowing",
-      "Hearing",
-      "Breathing",
-      "Vision"
-    ],
+    "answers": ["Swallowing", "Hearing", "Breathing", "Vision"],
     "correct": 0,
     "short_explanation": "Motor branches like the ansa cervicalis contribute to muscles used in swallowing.",
     "long_explanation": "Damage to motor fibers of the cervical plexus can impair infrahyoid muscle function, affecting swallowing and phonation.",
@@ -309,31 +239,16 @@
     "topic": "functional anatomy",
     "category": "Motor Control",
     "difficulty": "intermediate",
-    "tags": [
-      "motor nerves",
-      "swallowing",
-      "C1–C4"
-    ],
-    "keywords": [
-      "dysphagia",
-      "muscle control",
-      "nerve injury"
-    ],
+    "tags": ["motor nerves", "swallowing", "C1–C4"],
+    "keywords": ["dysphagia", "muscle control", "nerve injury"],
     "source_reference": "Pathophysiology of Disease by McPhee",
     "text": "Which function could be impaired by damage to the cervical plexus motor branches?",
-    "options": [
-      "Swallowing",
-      "Hearing",
-      "Breathing",
-      "Vision"
-    ],
+    "options": ["Swallowing", "Hearing", "Breathing", "Vision"],
     "correctAnswer": "Swallowing",
-    "abcd": [
-      "A. Swallowing",
-      "B. Hearing",
-      "C. Breathing",
-      "D. Vision"
-    ]
+    "abcd": ["A. Swallowing", "B. Hearing", "C. Breathing", "D. Vision"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_009",
@@ -351,11 +266,7 @@
     "topic": "nerve plexuses",
     "category": "Structural Relationships",
     "difficulty": "advanced",
-    "tags": [
-      "brachial plexus",
-      "nerve overlap",
-      "C5"
-    ],
+    "tags": ["brachial plexus", "nerve overlap", "C5"],
     "keywords": [
       "cervical-brachial junction",
       "nerve crossover",
@@ -375,7 +286,10 @@
       "B. Thoracic plexus",
       "C. Brachial plexus",
       "D. Sacral plexus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   },
   {
     "id": "CervicalPlexus_010",
@@ -393,16 +307,8 @@
     "topic": "clinical neuroanatomy",
     "category": "Symptoms & Diagnosis",
     "difficulty": "intermediate",
-    "tags": [
-      "cervical dermatomes",
-      "shoulder innervation",
-      "nerve irritation"
-    ],
-    "keywords": [
-      "sensory nerves",
-      "nerve dysfunction",
-      "neck assessment"
-    ],
+    "tags": ["cervical dermatomes", "shoulder innervation", "nerve irritation"],
+    "keywords": ["sensory nerves", "nerve dysfunction", "neck assessment"],
     "source_reference": "Neurology Essentials",
     "text": "Which of the following symptoms may suggest cervical plexus involvement?",
     "options": [
@@ -417,6 +323,9 @@
       "B. Facial droop",
       "C. Shoulder numbness",
       "D. Hand tremor"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "cervical_plexus.json"
   }
 ]

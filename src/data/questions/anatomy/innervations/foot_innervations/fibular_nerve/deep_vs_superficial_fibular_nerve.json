@@ -15,11 +15,7 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "deep_fibular",
-      "anterior_leg",
-      "nerve_innervation"
-    ],
+    "tags": ["deep_fibular", "anterior_leg", "nerve_innervation"],
     "keywords": [
       "tibialis anterior",
       "foot drop",
@@ -46,7 +42,10 @@
       "B. Fibularis brevis",
       "C. Tibialis anterior",
       "D. Gastrocnemius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 002",
@@ -64,11 +63,7 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "superficial_fibular",
-      "lateral_leg",
-      "foot_eversion"
-    ],
+    "tags": ["superficial_fibular", "lateral_leg", "foot_eversion"],
     "keywords": [
       "fibularis longus",
       "foot eversion",
@@ -94,7 +89,10 @@
       "B. Posterior compartment",
       "C. Lateral compartment",
       "D. Deep posterior compartment"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 003",
@@ -112,11 +110,7 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "cutaneous_innervation",
-      "superficial_fibular",
-      "foot"
-    ],
+    "tags": ["cutaneous_innervation", "superficial_fibular", "foot"],
     "keywords": [
       "dorsum of foot",
       "superficial fibular nerve",
@@ -142,7 +136,10 @@
       "B. Medial ankle",
       "C. Dorsum of the foot (except first web space)",
       "D. Sole of the foot"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 004",
@@ -160,16 +157,8 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "dorsiflexion",
-      "deep_fibular",
-      "nerve_damage"
-    ],
-    "keywords": [
-      "foot drop",
-      "deep fibular nerve",
-      "gait analysis"
-    ],
+    "tags": ["dorsiflexion", "deep_fibular", "nerve_damage"],
+    "keywords": ["foot drop", "deep fibular nerve", "gait analysis"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "stats": {
@@ -190,17 +179,15 @@
       "B. Deep fibular nerve",
       "C. Superficial fibular nerve",
       "D. Saphenous nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 005",
     "question": "Which action would be most affected by damage to the superficial fibular nerve?",
-    "answers": [
-      "Plantarflexion",
-      "Dorsiflexion",
-      "Toe flexion",
-      "Eversion"
-    ],
+    "answers": ["Plantarflexion", "Dorsiflexion", "Toe flexion", "Eversion"],
     "correct": 3,
     "short_explanation": "Eversion is the main action of muscles innervated by the superficial fibular nerve.",
     "long_explanation": "Fibularis longus and brevis, innervated by the superficial fibular nerve, evert the foot. Injury impairs this action and may lead to ankle instability.",
@@ -208,16 +195,8 @@
     "difficulty": "easy",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "eversion",
-      "superficial_fibular",
-      "ankle_instability"
-    ],
-    "keywords": [
-      "fibularis muscles",
-      "foot eversion",
-      "nerve injury"
-    ],
+    "tags": ["eversion", "superficial_fibular", "ankle_instability"],
+    "keywords": ["fibularis muscles", "foot eversion", "nerve injury"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Clinical Anatomy",
     "stats": {
@@ -226,29 +205,22 @@
       "attempts": 0
     },
     "text": "Which action would be most affected by damage to the superficial fibular nerve?",
-    "options": [
-      "Plantarflexion",
-      "Dorsiflexion",
-      "Toe flexion",
-      "Eversion"
-    ],
+    "options": ["Plantarflexion", "Dorsiflexion", "Toe flexion", "Eversion"],
     "correctAnswer": "Eversion",
     "abcd": [
       "A. Plantarflexion",
       "B. Dorsiflexion",
       "C. Toe flexion",
       "D. Eversion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 006",
     "question": "The deep fibular nerve originates from which spinal nerve roots?",
-    "answers": [
-      "L3-L4",
-      "L4-S1",
-      "S1-S3",
-      "L2-L3"
-    ],
+    "answers": ["L3-L4", "L4-S1", "S1-S3", "L2-L3"],
     "correct": 1,
     "short_explanation": "It arises from the common fibular division of the sciatic nerve, spinal roots L4–S1.",
     "long_explanation": "The deep fibular nerve originates from L4–S1, travels through the anterior leg, and innervates dorsiflexors and toe extensors.",
@@ -256,16 +228,8 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "deep_fibular",
-      "spinal_roots",
-      "sciatic_branch"
-    ],
-    "keywords": [
-      "nerve roots",
-      "deep fibular",
-      "sciatic nerve"
-    ],
+    "tags": ["deep_fibular", "spinal_roots", "sciatic_branch"],
+    "keywords": ["nerve roots", "deep fibular", "sciatic nerve"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Moore Clinically Oriented Anatomy",
     "stats": {
@@ -274,19 +238,12 @@
       "attempts": 0
     },
     "text": "The deep fibular nerve originates from which spinal nerve roots?",
-    "options": [
-      "L3-L4",
-      "L4-S1",
-      "S1-S3",
-      "L2-L3"
-    ],
+    "options": ["L3-L4", "L4-S1", "S1-S3", "L2-L3"],
     "correctAnswer": "L4-S1",
-    "abcd": [
-      "A. L3-L4",
-      "B. L4-S1",
-      "C. S1-S3",
-      "D. L2-L3"
-    ]
+    "abcd": ["A. L3-L4", "B. L4-S1", "C. S1-S3", "D. L2-L3"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 007",
@@ -304,16 +261,8 @@
     "difficulty": "easy",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "posterior_leg",
-      "tibial_nerve",
-      "compartment_syndrome"
-    ],
-    "keywords": [
-      "posterior leg",
-      "tibial nerve",
-      "leg innervation"
-    ],
+    "tags": ["posterior_leg", "tibial_nerve", "compartment_syndrome"],
+    "keywords": ["posterior leg", "tibial nerve", "leg innervation"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "stats": {
@@ -334,7 +283,10 @@
       "B. Lateral",
       "C. Deep posterior",
       "D. Superficial posterior"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 008",
@@ -352,16 +304,8 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Pathology",
-    "tags": [
-      "nerve_compression",
-      "foot_drop",
-      "anterior_tarsal_tunnel"
-    ],
-    "keywords": [
-      "deep fibular",
-      "foot drop",
-      "anterior ankle"
-    ],
+    "tags": ["nerve_compression", "foot_drop", "anterior_tarsal_tunnel"],
+    "keywords": ["deep fibular", "foot drop", "anterior ankle"],
     "mblex_category": "Pathology",
     "source_reference": "Orthopedic Physical Assessment by Magee",
     "stats": {
@@ -382,7 +326,10 @@
       "B. Weakness in toe flexion",
       "C. Foot drop",
       "D. Sensory loss in the heel"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 009",
@@ -400,16 +347,8 @@
     "difficulty": "intermediate",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "anterior_tarsal_tunnel",
-      "deep_fibular",
-      "entrapment"
-    ],
-    "keywords": [
-      "extensor retinaculum",
-      "nerve entrapment",
-      "deep fibular"
-    ],
+    "tags": ["anterior_tarsal_tunnel", "deep_fibular", "entrapment"],
+    "keywords": ["extensor retinaculum", "nerve entrapment", "deep fibular"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body",
     "stats": {
@@ -430,7 +369,10 @@
       "B. Superficial fibular nerve",
       "C. Deep fibular nerve",
       "D. Sural nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   },
   {
     "id": "Fibular Nerve 010",
@@ -448,16 +390,8 @@
     "difficulty": "easy",
     "topic": "nerve_innervations",
     "category": "Anatomy",
-    "tags": [
-      "sensory_loss",
-      "deep_fibular",
-      "diagnostic_zone"
-    ],
-    "keywords": [
-      "first web space",
-      "deep fibular",
-      "foot sensation"
-    ],
+    "tags": ["sensory_loss", "deep_fibular", "diagnostic_zone"],
+    "keywords": ["first web space", "deep fibular", "foot sensation"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
@@ -478,6 +412,9 @@
       "B. Sole of the foot",
       "C. Web space between the first and second toes",
       "D. Heel"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/foot_innervations/fibular_nerve",
+    "filename": "deep_vs_superficial_fibular_nerve.json"
   }
 ]

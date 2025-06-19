@@ -61,7 +61,10 @@
       "B. A Chinese hands-on body treatment using acupressure and rhythmic movements",
       "C. A reflexology style from Thailand",
       "D. A Japanese energy healing method"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 002",
@@ -121,7 +124,10 @@
       "B. Western medicine",
       "C. Traditional Chinese Medicine (TCM)",
       "D. Japanese Shiatsu"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 003",
@@ -137,16 +143,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_tuina",
-      "technique_cupping",
-      "technique_tapping"
-    ],
-    "keywords": [
-      "modality_tuina",
-      "technique_cupping",
-      "technique_tapping"
-    ],
+    "tags": ["modality_tuina", "technique_cupping", "technique_tapping"],
+    "keywords": ["modality_tuina", "technique_cupping", "technique_tapping"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -179,7 +177,10 @@
       "B. Tapping, kneading, pressing, and rolling",
       "C. Cupping and scraping only",
       "D. Stretching with yoga postures"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 004",
@@ -239,7 +240,10 @@
       "B. Energetic balancing and musculoskeletal complaints",
       "C. Skin exfoliation",
       "D. Blood pressure regulation"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 005",
@@ -255,12 +259,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_tuina"
-    ],
-    "keywords": [
-      "modality_tuina"
-    ],
+    "tags": ["modality_tuina"],
+    "keywords": ["modality_tuina"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -293,28 +293,22 @@
       "B. Herbal medicine, acupuncture, and qigong",
       "C. Chiropractic adjustments",
       "D. Oxygen therapy"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 006",
     "question": "What does 'Tui' mean in Chinese?",
-    "answers": [
-      "Stretch",
-      "Push",
-      "Knead",
-      "Heal"
-    ],
+    "answers": ["Stretch", "Push", "Knead", "Heal"],
     "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "purpose_healing"
-    ],
-    "keywords": [
-      "purpose_healing"
-    ],
+    "tags": ["purpose_healing"],
+    "keywords": ["purpose_healing"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -335,42 +329,24 @@
     "synonyms": [],
     "variant": 6,
     "text": "What does 'Tui' mean in Chinese?",
-    "options": [
-      "Stretch",
-      "Push",
-      "Knead",
-      "Heal"
-    ],
+    "options": ["Stretch", "Push", "Knead", "Heal"],
     "correctAnswer": "Push",
-    "abcd": [
-      "A. Stretch",
-      "B. Push",
-      "C. Knead",
-      "D. Heal"
-    ]
+    "abcd": ["A. Stretch", "B. Push", "C. Knead", "D. Heal"],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 007",
     "question": "What does 'Na' mean in Chinese?",
-    "answers": [
-      "Pinch or grasp",
-      "Heal",
-      "Slide",
-      "Tap"
-    ],
+    "answers": ["Pinch or grasp", "Heal", "Slide", "Tap"],
     "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "technique_tapping",
-      "purpose_healing"
-    ],
-    "keywords": [
-      "technique_tapping",
-      "purpose_healing"
-    ],
+    "tags": ["technique_tapping", "purpose_healing"],
+    "keywords": ["technique_tapping", "purpose_healing"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -391,19 +367,12 @@
     "synonyms": [],
     "variant": 7,
     "text": "What does 'Na' mean in Chinese?",
-    "options": [
-      "Pinch or grasp",
-      "Heal",
-      "Slide",
-      "Tap"
-    ],
+    "options": ["Pinch or grasp", "Heal", "Slide", "Tap"],
     "correctAnswer": "Pinch or grasp",
-    "abcd": [
-      "A. Pinch or grasp",
-      "B. Heal",
-      "C. Slide",
-      "D. Tap"
-    ]
+    "abcd": ["A. Pinch or grasp", "B. Heal", "C. Slide", "D. Tap"],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 008",
@@ -471,30 +440,22 @@
       "B. Muscle tension",
       "C. Fractures and open wounds",
       "D. Joint stiffness"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 009",
     "question": "Tui Na aims to balance the flow of which vital energy?",
-    "answers": [
-      "Qi (Chi)",
-      "Ojas",
-      "Aura",
-      "Yin"
-    ],
+    "answers": ["Qi (Chi)", "Ojas", "Aura", "Yin"],
     "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_tuina",
-      "concept_balance"
-    ],
-    "keywords": [
-      "modality_tuina",
-      "concept_balance"
-    ],
+    "tags": ["modality_tuina", "concept_balance"],
+    "keywords": ["modality_tuina", "concept_balance"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -515,19 +476,12 @@
     "synonyms": [],
     "variant": 9,
     "text": "Tui Na aims to balance the flow of which vital energy?",
-    "options": [
-      "Qi (Chi)",
-      "Ojas",
-      "Aura",
-      "Yin"
-    ],
+    "options": ["Qi (Chi)", "Ojas", "Aura", "Yin"],
     "correctAnswer": "Qi (Chi)",
-    "abcd": [
-      "A. Qi (Chi)",
-      "B. Ojas",
-      "C. Aura",
-      "D. Yin"
-    ]
+    "abcd": ["A. Qi (Chi)", "B. Ojas", "C. Aura", "D. Yin"],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   },
   {
     "id": "Tui Na 010",
@@ -543,16 +497,8 @@
     "difficulty": "intermediate",
     "topic": "modalities",
     "category": "Modalities",
-    "tags": [
-      "modality_massage",
-      "modality_tuina",
-      "client"
-    ],
-    "keywords": [
-      "modality_massage",
-      "modality_tuina",
-      "client"
-    ],
+    "tags": ["modality_massage", "modality_tuina", "client"],
+    "keywords": ["modality_massage", "modality_tuina", "client"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -585,6 +531,9 @@
       "B. Fully clothed on a massage table or chair",
       "C. Floating in warm water",
       "D. Strapped into resistance bands"
-    ]
+    ],
+    "main_topic": "modalities",
+    "subtopic": "tui-na",
+    "filename": "tui_na.json"
   }
 ]

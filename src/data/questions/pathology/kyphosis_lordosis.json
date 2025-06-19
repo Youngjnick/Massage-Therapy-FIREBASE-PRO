@@ -13,14 +13,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_spine",
-      "condition_scoliosis"
-    ],
-    "keywords": [
-      "anatomy_spine",
-      "condition_scoliosis"
-    ],
+    "tags": ["anatomy_spine", "condition_scoliosis"],
+    "keywords": ["anatomy_spine", "condition_scoliosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -49,30 +43,22 @@
       "B. An abnormal lateral curvature of the spine",
       "C. An inward curve of the thoracic spine",
       "D. A twisted pelvis"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 002",
     "question": "Kyphosis primarily affects which region of the spine?",
-    "answers": [
-      "Cervical",
-      "Lumbar",
-      "Thoracic",
-      "Sacral"
-    ],
+    "answers": ["Cervical", "Lumbar", "Thoracic", "Sacral"],
     "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_spine",
-      "condition_kyphosis"
-    ],
-    "keywords": [
-      "anatomy_spine",
-      "condition_kyphosis"
-    ],
+    "tags": ["anatomy_spine", "condition_kyphosis"],
+    "keywords": ["anatomy_spine", "condition_kyphosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -89,19 +75,12 @@
     "img": "spine_condition_002.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
     "text": "Kyphosis primarily affects which region of the spine?",
-    "options": [
-      "Cervical",
-      "Lumbar",
-      "Thoracic",
-      "Sacral"
-    ],
+    "options": ["Cervical", "Lumbar", "Thoracic", "Sacral"],
     "correctAnswer": "Thoracic",
-    "abcd": [
-      "A. Cervical",
-      "B. Lumbar",
-      "C. Thoracic",
-      "D. Sacral"
-    ]
+    "abcd": ["A. Cervical", "B. Lumbar", "C. Thoracic", "D. Sacral"],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 003",
@@ -147,7 +126,10 @@
       "B. Lumbar inward curve",
       "C. Cervical outward curve",
       "D. Sacral backward curve"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 004",
@@ -163,12 +145,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "condition_kyphosis"
-    ],
-    "keywords": [
-      "condition_kyphosis"
-    ],
+    "tags": ["condition_kyphosis"],
+    "keywords": ["condition_kyphosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -197,32 +175,22 @@
       "B. Flat back",
       "C. Rounded shoulders and hunching",
       "D. Elevated pelvis"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 005",
     "question": "Which condition involves a sideways 'S' or 'C' curve in the spine?",
-    "answers": [
-      "Kyphosis",
-      "Lordosis",
-      "Scoliosis",
-      "Spina bifida"
-    ],
+    "answers": ["Kyphosis", "Lordosis", "Scoliosis", "Spina bifida"],
     "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_spine",
-      "condition_scoliosis",
-      "condition_kyphosis"
-    ],
-    "keywords": [
-      "anatomy_spine",
-      "condition_scoliosis",
-      "condition_kyphosis"
-    ],
+    "tags": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
+    "keywords": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -239,42 +207,24 @@
     "img": "spine_condition_005.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
     "text": "Which condition involves a sideways 'S' or 'C' curve in the spine?",
-    "options": [
-      "Kyphosis",
-      "Lordosis",
-      "Scoliosis",
-      "Spina bifida"
-    ],
+    "options": ["Kyphosis", "Lordosis", "Scoliosis", "Spina bifida"],
     "correctAnswer": "Scoliosis",
-    "abcd": [
-      "A. Kyphosis",
-      "B. Lordosis",
-      "C. Scoliosis",
-      "D. Spina bifida"
-    ]
+    "abcd": ["A. Kyphosis", "B. Lordosis", "C. Scoliosis", "D. Spina bifida"],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 006",
     "question": "Which spinal curvature is most affected in pregnancy or obesity-related postural changes?",
-    "answers": [
-      "Scoliosis",
-      "Kyphosis",
-      "Lordosis",
-      "Flat back"
-    ],
+    "answers": ["Scoliosis", "Kyphosis", "Lordosis", "Flat back"],
     "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "condition_scoliosis",
-      "condition_kyphosis"
-    ],
-    "keywords": [
-      "condition_scoliosis",
-      "condition_kyphosis"
-    ],
+    "tags": ["condition_scoliosis", "condition_kyphosis"],
+    "keywords": ["condition_scoliosis", "condition_kyphosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -291,19 +241,12 @@
     "img": "spine_condition_006.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
     "text": "Which spinal curvature is most affected in pregnancy or obesity-related postural changes?",
-    "options": [
-      "Scoliosis",
-      "Kyphosis",
-      "Lordosis",
-      "Flat back"
-    ],
+    "options": ["Scoliosis", "Kyphosis", "Lordosis", "Flat back"],
     "correctAnswer": "Lordosis",
-    "abcd": [
-      "A. Scoliosis",
-      "B. Kyphosis",
-      "C. Lordosis",
-      "D. Flat back"
-    ]
+    "abcd": ["A. Scoliosis", "B. Kyphosis", "C. Lordosis", "D. Flat back"],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 007",
@@ -369,7 +312,10 @@
       "B. Even, deep pressure on both sides of the spine",
       "C. Balancing asymmetrical muscle tension and improving mobility",
       "D. Avoiding all spinal work"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 008",
@@ -385,14 +331,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "condition_kyphosis",
-      "organ_lungs"
-    ],
-    "keywords": [
-      "condition_kyphosis",
-      "organ_lungs"
-    ],
+    "tags": ["condition_kyphosis", "organ_lungs"],
+    "keywords": ["condition_kyphosis", "organ_lungs"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -421,7 +361,10 @@
       "B. Neck strain and restricted thoracic movement",
       "C. Increased lumbar flexibility",
       "D. Greater spinal stability"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 009",
@@ -437,11 +380,7 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "technique_compression",
-      "condition_pain",
-      "condition_scoliosis"
-    ],
+    "tags": ["technique_compression", "condition_pain", "condition_scoliosis"],
     "keywords": [
       "technique_compression",
       "condition_pain",
@@ -475,7 +414,10 @@
       "B. Frozen shoulder",
       "C. Thoracic scoliosis",
       "D. Cervical instability"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   },
   {
     "id": "Scoliosis Kyphosis Lordosis 010",
@@ -491,16 +433,8 @@
     "difficulty": "intermediate",
     "topic": "pathology",
     "category": "Pathology",
-    "tags": [
-      "anatomy_spine",
-      "condition_scoliosis",
-      "condition_kyphosis"
-    ],
-    "keywords": [
-      "anatomy_spine",
-      "condition_scoliosis",
-      "condition_kyphosis"
-    ],
+    "tags": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
+    "keywords": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
     "stats": {
       "correct": 0,
       "incorrect": 0,
@@ -529,6 +463,9 @@
       "B. Scoliosis and lordosis",
       "C. Kyphosis and lordosis",
       "D. All three conditions"
-    ]
+    ],
+    "main_topic": "pathology",
+    "subtopic": "",
+    "filename": "kyphosis_lordosis.json"
   }
 ]

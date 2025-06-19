@@ -15,16 +15,8 @@
     "topic": "thalamus",
     "category": "Neuroanatomy",
     "difficulty": "basic",
-    "tags": [
-      "sensory relay",
-      "brain function",
-      "thalamus"
-    ],
-    "keywords": [
-      "sensory processing",
-      "thalamic relay",
-      "cortical signaling"
-    ],
+    "tags": ["sensory relay", "brain function", "thalamus"],
+    "keywords": ["sensory processing", "thalamic relay", "cortical signaling"],
     "source_reference": "Neuroscience: Exploring the Brain (Bear et al.)",
     "text": "What is the primary function of the thalamus in the brain?",
     "options": [
@@ -39,17 +31,15 @@
       "B. Controls voluntary muscle movement",
       "C. Acts as a relay center for sensory information",
       "D. Secretes cerebrospinal fluid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_002",
     "question": "Which sensory modality is NOT processed by the thalamus?",
-    "answers": [
-      "Touch",
-      "Vision",
-      "Hearing",
-      "Smell"
-    ],
+    "answers": ["Touch", "Vision", "Hearing", "Smell"],
     "correct": 3,
     "short_explanation": "Olfactory input bypasses the thalamus.",
     "long_explanation": "All sensory information except for olfaction passes through the thalamus. Smell projects directly to the olfactory cortex.",
@@ -57,31 +47,16 @@
     "topic": "thalamus",
     "category": "Sensory Systems",
     "difficulty": "intermediate",
-    "tags": [
-      "olfaction",
-      "sensory pathways",
-      "thalamic relay"
-    ],
-    "keywords": [
-      "smell bypass",
-      "olfactory cortex",
-      "thalamus exception"
-    ],
+    "tags": ["olfaction", "sensory pathways", "thalamic relay"],
+    "keywords": ["smell bypass", "olfactory cortex", "thalamus exception"],
     "source_reference": "Principles of Neural Science (Kandel et al.)",
     "text": "Which sensory modality is NOT processed by the thalamus?",
-    "options": [
-      "Touch",
-      "Vision",
-      "Hearing",
-      "Smell"
-    ],
+    "options": ["Touch", "Vision", "Hearing", "Smell"],
     "correctAnswer": "Smell",
-    "abcd": [
-      "A. Touch",
-      "B. Vision",
-      "C. Hearing",
-      "D. Smell"
-    ]
+    "abcd": ["A. Touch", "B. Vision", "C. Hearing", "D. Smell"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_003",
@@ -99,16 +74,8 @@
     "topic": "thalamus",
     "category": "Neurophysiology",
     "difficulty": "intermediate",
-    "tags": [
-      "LGN",
-      "visual pathway",
-      "thalamic nucleus"
-    ],
-    "keywords": [
-      "lateral geniculate",
-      "optic radiation",
-      "visual relay"
-    ],
+    "tags": ["LGN", "visual pathway", "thalamic nucleus"],
+    "keywords": ["lateral geniculate", "optic radiation", "visual relay"],
     "source_reference": "Clinical Neuroanatomy Made Ridiculously Simple",
     "text": "Which thalamic nucleus is involved in visual information relay?",
     "options": [
@@ -123,7 +90,10 @@
       "B. Lateral geniculate nucleus",
       "C. Ventral posterior nucleus",
       "D. Anterior nucleus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_004",
@@ -141,16 +111,8 @@
     "topic": "thalamus",
     "category": "Neurology",
     "difficulty": "advanced",
-    "tags": [
-      "sensory loss",
-      "thalamic syndrome",
-      "stroke"
-    ],
-    "keywords": [
-      "sensory integration",
-      "central pain",
-      "post-stroke symptoms"
-    ],
+    "tags": ["sensory loss", "thalamic syndrome", "stroke"],
+    "keywords": ["sensory integration", "central pain", "post-stroke symptoms"],
     "source_reference": "Robbins Basic Pathology",
     "text": "Damage to the thalamus most commonly affects which of the following?",
     "options": [
@@ -165,7 +127,10 @@
       "B. Fine motor control",
       "C. Sensory perception",
       "D. Hormonal balance"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_005",
@@ -183,16 +148,8 @@
     "topic": "thalamus",
     "category": "Motor Control",
     "difficulty": "intermediate",
-    "tags": [
-      "motor circuit",
-      "basal ganglia",
-      "movement"
-    ],
-    "keywords": [
-      "motor pathway",
-      "basal ganglia loop",
-      "thalamic relay"
-    ],
+    "tags": ["motor circuit", "basal ganglia", "movement"],
+    "keywords": ["motor pathway", "basal ganglia loop", "thalamic relay"],
     "source_reference": "Medical Neurosciences (Purves et al.)",
     "text": "Which brain structure works closely with the thalamus to regulate movement?",
     "options": [
@@ -207,7 +164,10 @@
       "B. Basal ganglia",
       "C. Hippocampus",
       "D. Corpus callosum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_006",
@@ -225,16 +185,8 @@
     "topic": "thalamus",
     "category": "Somatosensation",
     "difficulty": "intermediate",
-    "tags": [
-      "ventral posterior",
-      "somatosensory",
-      "touch"
-    ],
-    "keywords": [
-      "body sensation",
-      "proprioceptive relay",
-      "thalamic nuclei"
-    ],
+    "tags": ["ventral posterior", "somatosensory", "touch"],
+    "keywords": ["body sensation", "proprioceptive relay", "thalamic nuclei"],
     "source_reference": "Snell’s Clinical Neuroanatomy",
     "text": "What is the primary role of the ventral posterior nucleus of the thalamus?",
     "options": [
@@ -249,17 +201,15 @@
       "B. Somatosensory relay",
       "C. Visual integration",
       "D. Auditory relay"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_007",
     "question": "Which emotion-related brain structure has strong reciprocal connections with the thalamus?",
-    "answers": [
-      "Amygdala",
-      "Cerebellum",
-      "Spinal cord",
-      "Occipital lobe"
-    ],
+    "answers": ["Amygdala", "Cerebellum", "Spinal cord", "Occipital lobe"],
     "correct": 0,
     "short_explanation": "The amygdala connects with the thalamus in emotional processing circuits.",
     "long_explanation": "The thalamus and amygdala communicate to rapidly process and respond to emotional stimuli, especially threats or fear-inducing cues.",
@@ -267,41 +217,26 @@
     "topic": "thalamus",
     "category": "Emotion & Behavior",
     "difficulty": "intermediate",
-    "tags": [
-      "emotion",
-      "amygdala",
-      "limbic"
-    ],
-    "keywords": [
-      "emotional processing",
-      "fear pathway",
-      "limbic connection"
-    ],
+    "tags": ["emotion", "amygdala", "limbic"],
+    "keywords": ["emotional processing", "fear pathway", "limbic connection"],
     "source_reference": "The Human Brain Book (Carter)",
     "text": "Which emotion-related brain structure has strong reciprocal connections with the thalamus?",
-    "options": [
-      "Amygdala",
-      "Cerebellum",
-      "Spinal cord",
-      "Occipital lobe"
-    ],
+    "options": ["Amygdala", "Cerebellum", "Spinal cord", "Occipital lobe"],
     "correctAnswer": "Amygdala",
     "abcd": [
       "A. Amygdala",
       "B. Cerebellum",
       "C. Spinal cord",
       "D. Occipital lobe"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_008",
     "question": "What part of the brain must be intact for the thalamus to effectively relay information to the cortex?",
-    "answers": [
-      "Pons",
-      "Hippocampus",
-      "Internal capsule",
-      "Medulla oblongata"
-    ],
+    "answers": ["Pons", "Hippocampus", "Internal capsule", "Medulla oblongata"],
     "correct": 2,
     "short_explanation": "The internal capsule transmits thalamic outputs to the cortex.",
     "long_explanation": "Thalamic axons project through the internal capsule, a white matter structure essential for communication between thalamus and cortex.",
@@ -309,11 +244,7 @@
     "topic": "thalamus",
     "category": "Neuroanatomy",
     "difficulty": "advanced",
-    "tags": [
-      "internal capsule",
-      "stroke",
-      "cortical relay"
-    ],
+    "tags": ["internal capsule", "stroke", "cortical relay"],
     "keywords": [
       "white matter pathway",
       "cerebral relay",
@@ -321,19 +252,17 @@
     ],
     "source_reference": "Clinical Neuroanatomy by Waxman",
     "text": "What part of the brain must be intact for the thalamus to effectively relay information to the cortex?",
-    "options": [
-      "Pons",
-      "Hippocampus",
-      "Internal capsule",
-      "Medulla oblongata"
-    ],
+    "options": ["Pons", "Hippocampus", "Internal capsule", "Medulla oblongata"],
     "correctAnswer": "Internal capsule",
     "abcd": [
       "A. Pons",
       "B. Hippocampus",
       "C. Internal capsule",
       "D. Medulla oblongata"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_009",
@@ -351,16 +280,8 @@
     "topic": "thalamus",
     "category": "Neuropathology",
     "difficulty": "advanced",
-    "tags": [
-      "pain syndrome",
-      "stroke",
-      "thalamic infarct"
-    ],
-    "keywords": [
-      "central pain",
-      "sensory loss",
-      "chronic pain disorder"
-    ],
+    "tags": ["pain syndrome", "stroke", "thalamic infarct"],
+    "keywords": ["central pain", "sensory loss", "chronic pain disorder"],
     "source_reference": "Robbins Pathologic Basis of Disease",
     "text": "Which condition is commonly associated with thalamic infarcts?",
     "options": [
@@ -375,7 +296,10 @@
       "B. Central pain syndrome",
       "C. ALS",
       "D. Multiple sclerosis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   },
   {
     "id": "Thalamus_010",
@@ -393,11 +317,7 @@
     "topic": "thalamus",
     "category": "Neurostructure",
     "difficulty": "advanced",
-    "tags": [
-      "lamina",
-      "thalamic anatomy",
-      "functional division"
-    ],
+    "tags": ["lamina", "thalamic anatomy", "functional division"],
     "keywords": [
       "internal medullary lamina",
       "nuclei classification",
@@ -417,6 +337,9 @@
       "B. Internal medullary lamina",
       "C. Corpus callosum",
       "D. Optic chiasm"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "thalamus.json"
   }
 ]
