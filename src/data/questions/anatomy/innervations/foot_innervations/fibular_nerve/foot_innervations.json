@@ -1,14 +1,7 @@
 [
   {
-    "id": "Foot Innervation 001",
+    "id": "foot_innervation_001",
     "question": "What nerve innervates the Extensor Digitorum Longus?",
-    "answers": [
-      "Superficial Peroneal Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Extensor Digitorum Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -48,7 +41,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Extensor Digitorum Longus"],
     "relevance_score": 85,
     "img": "/img/foot_muscles/extensor_digitorum_longus.png",
@@ -68,18 +61,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 002",
+    "id": "foot_innervation_002",
     "question": "What nerve innervates the Peroneus Brevis?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Superficial Peroneal Nerve",
-      "Tibial Nerve",
-      "Saphenous Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Peroneus Brevis is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve provides motor innervation to the Peroneus Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -117,7 +103,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Peroneus Brevis"],
     "relevance_score": 99,
     "img": "/img/foot_muscles/peroneus_brevis.png",
@@ -137,18 +123,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 003",
+    "id": "foot_innervation_003",
     "question": "What nerve innervates the Flexor Digiti Minimi Brevis?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Sural Nerve",
-      "Lateral Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Flexor Digiti Minimi Brevis is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Flexor Digiti Minimi Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -186,7 +165,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Digiti Minimi Brevis"],
     "relevance_score": 97,
     "img": "/img/foot_muscles/flexor_digiti_minimi_brevis.png",
@@ -206,18 +185,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 004",
+    "id": "foot_innervation_004",
     "question": "What nerve innervates the Flexor Hallucis Longus?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Lateral Plantar Nerve",
-      "Tibial Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Flexor Hallucis Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve provides motor innervation to the Flexor Hallucis Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -257,7 +229,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Hallucis Longus"],
     "relevance_score": 90,
     "img": "/img/foot_muscles/flexor_hallucis_longus.png",
@@ -277,18 +249,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 005",
+    "id": "foot_innervation_005",
     "question": "What nerve innervates the Quadratus Plantae?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Medial Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Quadratus Plantae is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Quadratus Plantae, allowing it to perform specific movements essential for balance and locomotion.",
@@ -326,7 +291,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Quadratus Plantae"],
     "relevance_score": 87,
     "img": "/img/foot_muscles/quadratus_plantae.png",
@@ -346,18 +311,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 006",
+    "id": "foot_innervation_006",
     "question": "What nerve innervates the Extensor Digitorum Brevis?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Superficial Peroneal Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Extensor Digitorum Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Extensor Digitorum Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -397,7 +355,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Extensor Digitorum Brevis"],
     "relevance_score": 89,
     "img": "/img/foot_muscles/extensor_digitorum_brevis.png",
@@ -417,18 +375,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 007",
+    "id": "foot_innervation_007",
     "question": "What nerve innervates the Tibialis Anterior?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Superficial Peroneal Nerve",
-      "Tibial Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Tibialis Anterior is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Tibialis Anterior, allowing it to perform specific movements essential for balance and locomotion.",
@@ -468,7 +419,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Tibialis Anterior"],
     "relevance_score": 94,
     "img": "/img/foot_muscles/tibialis_anterior.png",
@@ -488,18 +439,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 008",
+    "id": "foot_innervation_008",
     "question": "What nerve innervates the Dorsal Interossei?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Lateral Plantar Nerve",
-      "Tibial Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Dorsal Interossei is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Dorsal Interossei, allowing it to perform specific movements essential for balance and locomotion.",
@@ -537,7 +481,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Dorsal Interossei"],
     "relevance_score": 97,
     "img": "/img/foot_muscles/dorsal_interossei.png",
@@ -557,18 +501,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 009",
+    "id": "foot_innervation_009",
     "question": "What nerve innervates the Peroneus Brevis?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Saphenous Nerve",
-      "Superficial Peroneal Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Peroneus Brevis is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve provides motor innervation to the Peroneus Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -606,7 +543,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Peroneus Brevis"],
     "relevance_score": 92,
     "img": "/img/foot_muscles/peroneus_brevis.png",
@@ -626,18 +563,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 010",
+    "id": "foot_innervation_010",
     "question": "What nerve innervates the Peroneus Brevis?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Superficial Peroneal Nerve",
-      "Saphenous Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Peroneus Brevis is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve provides motor innervation to the Peroneus Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -675,7 +605,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Peroneus Brevis"],
     "relevance_score": 88,
     "img": "/img/foot_muscles/peroneus_brevis.png",
@@ -695,18 +625,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 011",
+    "id": "foot_innervation_011",
     "question": "What nerve innervates the Dorsal Interossei?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Tibial Nerve",
-      "Sural Nerve",
-      "Lateral Plantar Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Dorsal Interossei is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Dorsal Interossei, allowing it to perform specific movements essential for balance and locomotion.",
@@ -744,7 +667,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Dorsal Interossei"],
     "relevance_score": 96,
     "img": "/img/foot_muscles/dorsal_interossei.png",
@@ -764,18 +687,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 012",
+    "id": "foot_innervation_012",
     "question": "What nerve innervates the Flexor Digitorum Brevis?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Flexor Digitorum Brevis is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Flexor Digitorum Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -813,7 +729,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Digitorum Brevis"],
     "relevance_score": 91,
     "img": "/img/foot_muscles/flexor_digitorum_brevis.png",
@@ -833,18 +749,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 014",
+    "id": "foot_innervation_014",
     "question": "What nerve innervates the Flexor Hallucis Brevis?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Medial Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Flexor Hallucis Brevis is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Flexor Hallucis Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -884,7 +793,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Hallucis Brevis"],
     "relevance_score": 87,
     "img": "/img/foot_muscles/flexor_hallucis_brevis.png",
@@ -904,18 +813,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 015",
+    "id": "foot_innervation_015",
     "question": "What nerve innervates the Flexor Digiti Minimi Brevis?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Sural Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Flexor Digiti Minimi Brevis is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Flexor Digiti Minimi Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -953,7 +855,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Digiti Minimi Brevis"],
     "relevance_score": 91,
     "img": "/img/foot_muscles/flexor_digiti_minimi_brevis.png",
@@ -973,18 +875,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 017",
+    "id": "foot_innervation_017",
     "question": "What nerve innervates the Abductor Hallucis?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Medial Plantar Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Abductor Hallucis is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Abductor Hallucis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1024,7 +919,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Abductor Hallucis"],
     "relevance_score": 99,
     "img": "/img/foot_muscles/abductor_hallucis.png",
@@ -1044,18 +939,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 019",
+    "id": "foot_innervation_019",
     "question": "What nerve innervates the Extensor Digitorum Brevis?",
-    "answers": [
-      "Superficial Peroneal Nerve",
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Extensor Digitorum Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Extensor Digitorum Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1095,7 +983,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Extensor Digitorum Brevis"],
     "relevance_score": 100,
     "img": "/img/foot_muscles/extensor_digitorum_brevis.png",
@@ -1115,18 +1003,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 021",
+    "id": "foot_innervation_021",
     "question": "What nerve innervates the Quadratus Plantae?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Medial Plantar Nerve",
-      "Lateral Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Quadratus Plantae is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Quadratus Plantae, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1164,7 +1045,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Quadratus Plantae"],
     "relevance_score": 91,
     "img": "/img/foot_muscles/quadratus_plantae.png",
@@ -1184,18 +1065,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 022",
+    "id": "foot_innervation_022",
     "question": "What nerve innervates the Dorsal Interossei?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve",
-      "Tibial Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Dorsal Interossei is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Dorsal Interossei, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1233,7 +1107,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Dorsal Interossei"],
     "relevance_score": 90,
     "img": "/img/foot_muscles/dorsal_interossei.png",
@@ -1253,18 +1127,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 023",
+    "id": "foot_innervation_023",
     "question": "What nerve innervates the Flexor Digiti Minimi Brevis?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve",
-      "Sural Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Flexor Digiti Minimi Brevis is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Flexor Digiti Minimi Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1302,7 +1169,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Digiti Minimi Brevis"],
     "relevance_score": 88,
     "img": "/img/foot_muscles/flexor_digiti_minimi_brevis.png",
@@ -1322,18 +1189,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 024",
+    "id": "foot_innervation_024",
     "question": "What nerve innervates the Peroneus Longus?",
-    "answers": [
-      "Superficial Peroneal Nerve",
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Peroneus Longus is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve provides motor innervation to the Peroneus Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1371,7 +1231,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Peroneus Longus"],
     "relevance_score": 99,
     "img": "/img/foot_muscles/peroneus_longus.png",
@@ -1391,18 +1251,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 025",
+    "id": "foot_innervation_025",
     "question": "What nerve innervates the Tibialis Posterior?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Saphenous Nerve",
-      "Lateral Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve provides motor innervation to the Tibialis Posterior, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1442,7 +1295,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Tibialis Posterior"],
     "relevance_score": 97,
     "img": "/img/foot_muscles/tibialis_posterior.png",
@@ -1462,18 +1315,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 026",
+    "id": "foot_innervation_026",
     "question": "What nerve innervates the Flexor Digitorum Longus?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Flexor Digitorum Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve provides motor innervation to the Flexor Digitorum Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1513,7 +1359,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Digitorum Longus"],
     "relevance_score": 87,
     "img": "/img/foot_muscles/flexor_digitorum_longus.png",
@@ -1533,18 +1379,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 027",
+    "id": "foot_innervation_027",
     "question": "What nerve innervates the Lumbricals (1st)?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Sural Nerve",
-      "Medial Plantar Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Lumbricals (1st) is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Lumbricals (1st), allowing it to perform specific movements essential for balance and locomotion.",
@@ -1580,7 +1419,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Lumbricals (1st)"],
     "relevance_score": 96,
     "img": "/img/foot_muscles/lumbricals_(1st).png",
@@ -1600,18 +1439,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 028",
+    "id": "foot_innervation_028",
     "question": "What nerve innervates the Flexor Digitorum Brevis?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Flexor Digitorum Brevis is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Flexor Digitorum Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1649,7 +1481,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Digitorum Brevis"],
     "relevance_score": 91,
     "img": "/img/foot_muscles/flexor_digitorum_brevis.png",
@@ -1669,18 +1501,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 030",
+    "id": "foot_innervation_030",
     "question": "What nerve innervates the Lumbricals (1st)?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Lumbricals (1st) is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Lumbricals (1st), allowing it to perform specific movements essential for balance and locomotion.",
@@ -1716,7 +1541,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Lumbricals (1st)"],
     "relevance_score": 98,
     "img": "/img/foot_muscles/lumbricals_(1st).png",
@@ -1736,18 +1561,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 031",
+    "id": "foot_innervation_031",
     "question": "What nerve innervates the Peroneus Longus?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Sural Nerve",
-      "Superficial Peroneal Nerve"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The Peroneus Longus is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve provides motor innervation to the Peroneus Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1785,7 +1603,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Peroneus Longus"],
     "relevance_score": 90,
     "img": "/img/foot_muscles/peroneus_longus.png",
@@ -1805,18 +1623,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 032",
+    "id": "foot_innervation_032",
     "question": "What nerve innervates the Tibialis Posterior?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Saphenous Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve provides motor innervation to the Tibialis Posterior, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1856,7 +1667,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Tibialis Posterior"],
     "relevance_score": 99,
     "img": "/img/foot_muscles/tibialis_posterior.png",
@@ -1876,18 +1687,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 033",
+    "id": "foot_innervation_033",
     "question": "What nerve innervates the Abductor Hallucis?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Abductor Hallucis is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Abductor Hallucis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -1927,7 +1731,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Abductor Hallucis"],
     "relevance_score": 90,
     "img": "/img/foot_muscles/abductor_hallucis.png",
@@ -1947,18 +1751,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 034",
+    "id": "foot_innervation_034",
     "question": "What nerve innervates the Lumbricals (2nd-4th)?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Lumbricals (2nd-4th) is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Lumbricals (2nd-4th), allowing it to perform specific movements essential for balance and locomotion.",
@@ -1996,7 +1793,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Lumbricals (2nd-4th)"],
     "relevance_score": 98,
     "img": "/img/foot_muscles/lumbricals_(2nd-4th).png",
@@ -2016,18 +1813,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 035",
+    "id": "foot_innervation_035",
     "question": "What nerve innervates the Extensor Hallucis Brevis?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Extensor Hallucis Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Extensor Hallucis Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2067,7 +1857,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Extensor Hallucis Brevis"],
     "relevance_score": 96,
     "img": "/img/foot_muscles/extensor_hallucis_brevis.png",
@@ -2087,18 +1877,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 036",
+    "id": "foot_innervation_036",
     "question": "What nerve innervates the Abductor Hallucis?",
-    "answers": [
-      "Lateral Plantar Nerve",
-      "Deep Peroneal Nerve",
-      "Medial Plantar Nerve",
-      "Tibial Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Abductor Hallucis is innervated by the Medial Plantar Nerve.",
     "long_explanation": "The Medial Plantar Nerve provides motor innervation to the Abductor Hallucis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2138,7 +1921,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Abductor Hallucis"],
     "relevance_score": 94,
     "img": "/img/foot_muscles/abductor_hallucis.png",
@@ -2158,18 +1941,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 037",
+    "id": "foot_innervation_037",
     "question": "What nerve innervates the Flexor Hallucis Longus?",
-    "answers": [
-      "Tibial Nerve",
-      "Deep Peroneal Nerve",
-      "Lateral Plantar Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The Flexor Hallucis Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve provides motor innervation to the Flexor Hallucis Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2209,7 +1985,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Flexor Hallucis Longus"],
     "relevance_score": 87,
     "img": "/img/foot_muscles/flexor_hallucis_longus.png",
@@ -2229,18 +2005,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 039",
+    "id": "foot_innervation_039",
     "question": "What nerve innervates the Dorsal Interossei?",
-    "answers": [
-      "Medial Plantar Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The Dorsal Interossei is innervated by the Lateral Plantar Nerve.",
     "long_explanation": "The Lateral Plantar Nerve provides motor innervation to the Dorsal Interossei, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2278,7 +2047,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Dorsal Interossei"],
     "relevance_score": 85,
     "img": "/img/foot_muscles/dorsal_interossei.png",
@@ -2298,18 +2067,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 042",
+    "id": "foot_innervation_042",
     "question": "What nerve innervates the Peroneus Longus?",
-    "answers": [
-      "Deep Peroneal Nerve",
-      "Superficial Peroneal Nerve",
-      "Tibial Nerve",
-      "Sural Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Peroneus Longus is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve provides motor innervation to the Peroneus Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2347,7 +2109,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Peroneus Longus"],
     "relevance_score": 99,
     "img": "/img/foot_muscles/peroneus_longus.png",
@@ -2367,18 +2129,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 043",
+    "id": "foot_innervation_043",
     "question": "What nerve innervates the Extensor Digitorum Longus?",
-    "answers": [
-      "Superficial Peroneal Nerve",
-      "Deep Peroneal Nerve",
-      "Tibial Nerve",
-      "Lateral Plantar Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Extensor Digitorum Longus, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2418,7 +2173,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Extensor Digitorum Longus"],
     "relevance_score": 87,
     "img": "/img/foot_muscles/extensor_digitorum_longus.png",
@@ -2438,18 +2193,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   },
   {
-    "id": "Foot Innervation 049",
+    "id": "foot_innervation_049",
     "question": "What nerve innervates the Extensor Hallucis Brevis?",
-    "answers": [
-      "Tibial Nerve",
-      "Deep Peroneal Nerve",
-      "Lateral Plantar Nerve",
-      "Medial Plantar Nerve"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Extensor Hallucis Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve provides motor innervation to the Extensor Hallucis Brevis, allowing it to perform specific movements essential for balance and locomotion.",
@@ -2489,7 +2237,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.093Z",
     "updated_at": "2025-05-24T14:54:13.439Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/foot_innervations",
+    "unit": "foot_innervations",
     "synonyms": ["Extensor Hallucis Brevis"],
     "relevance_score": 98,
     "img": "/img/foot_muscles/extensor_hallucis_brevis.png",
@@ -2509,6 +2257,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/foot_innervations/fibular_nerve",
-    "filename": "foot_innervations.json"
+    "sourceFile": "foot_innervations"
   }
 ]

@@ -13,7 +13,8 @@ export function useQuizData(selectedTopic: string, setSelectedTopic: (topic: str
     getQuestions()
       .then((qs) => {
         setQuestions(qs);
-        const topics = Array.from(new Set(qs.map((q: any) => q.topic || 'Other')));
+        // Derive topics from sourceFile
+        const topics = Array.from(new Set(qs.map((q: any) => q.sourceFile || 'Other')));
         if (!selectedTopic && topics.length > 0) setSelectedTopic(topics[0]);
       })
       .catch((err) => {

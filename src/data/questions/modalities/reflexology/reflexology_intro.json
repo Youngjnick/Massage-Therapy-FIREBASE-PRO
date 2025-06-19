@@ -1,9 +1,7 @@
 [
   {
-    "id": "Reflexology Intro 001",
+    "id": "reflexology_intro_001",
     "question": "Which ancient civilization has the earliest recorded use of foot-based therapy resembling reflexology?",
-    "answers": ["Greece", "Egypt", "India", "China"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -19,7 +17,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Egypt has the earliest evidence of reflexology-like practices.",
     "long_explanation": "Ancient Egyptian medical illustrations show foot-based therapy resembling reflexology as early as 2500 BCE.",
     "clinical_application": "Used to demonstrate that healing practices using foot stimulation have ancient roots.",
@@ -35,18 +33,11 @@
     "abcd": ["A. Greece", "B. Egypt", "C. India", "D. China"],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 002",
+    "id": "reflexology_intro_002",
     "question": "What artifact shows evidence of reflexology being practiced in ancient Egypt?",
-    "answers": [
-      "Rosetta Stone",
-      "Temple of Isis relief",
-      "The Physician's Tomb painting",
-      "Pyramid of Giza markings"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -62,7 +53,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "The Physician's Tomb painting depicts foot therapy sessions.",
     "long_explanation": "This ancient Egyptian artifact visually documents practitioners applying manual pressure to feet and hands.",
     "clinical_application": "Used to establish the historical legitimacy of reflexology’s origins.",
@@ -88,18 +79,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 003",
+    "id": "reflexology_intro_003",
     "question": "Which early 20th century American doctor is credited with developing Zone Therapy, a precursor to reflexology?",
-    "answers": [
-      "William Fitzgerald",
-      "Ida Rolf",
-      "Milton Trager",
-      "John Upledger"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -129,7 +113,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Dr. William Fitzgerald developed Zone Therapy in the early 1900s.",
     "long_explanation": "His work divided the body into 10 vertical zones, laying the foundation for modern reflexology.",
     "clinical_application": "Introduces learners to foundational Western concepts in reflexology’s evolution.",
@@ -155,18 +139,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 004",
+    "id": "reflexology_intro_004",
     "question": "What is Zone Therapy in relation to reflexology?",
-    "answers": [
-      "A method for treating muscle adhesions",
-      "Dividing the body into longitudinal zones for therapeutic pressure",
-      "A form of heat therapy",
-      "A technique for diagnosing illness by skin color"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -196,7 +173,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Zone Therapy divides the body into longitudinal energy zones.",
     "long_explanation": "Pressure on these zones was believed to affect all organs within that zone.",
     "clinical_application": "Used to help explain how localized pressure might affect distant parts of the body.",
@@ -222,18 +199,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 005",
+    "id": "reflexology_intro_005",
     "question": "Who expanded and mapped out modern reflexology points on the feet and hands?",
-    "answers": [
-      "Dr. Emil Vodder",
-      "Eunice Ingham",
-      "Dr. James Cyriax",
-      "Dr. John Upledger"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -249,7 +219,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Eunice Ingham mapped modern reflexology points in the 1930s.",
     "long_explanation": "Her detailed maps for the feet and hands form the basis of current reflexology practices.",
     "clinical_application": "Establishes how modern reflexology became systematized and teachable.",
@@ -275,13 +245,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 006",
+    "id": "reflexology_intro_006",
     "question": "Eunice Ingham's work was based primarily on which body part?",
-    "answers": ["Face", "Hands", "Feet", "Abdomen"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -297,7 +265,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Eunice Ingham focused her reflexology work primarily on the feet.",
     "long_explanation": "She emphasized that the feet mirror the body's structure and organ systems.",
     "clinical_application": "Helps therapists understand foot anatomy as a reflexive map.",
@@ -313,18 +281,11 @@
     "abcd": ["A. Face", "B. Hands", "C. Feet", "D. Abdomen"],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 007",
+    "id": "reflexology_intro_007",
     "question": "Which statement best reflects the theory of reflexology?",
-    "answers": [
-      "Muscles can be manipulated to stimulate lymph flow",
-      "Pressure on reflex zones corresponds to and affects organs and systems",
-      "Essential oils must be applied to reflex zones",
-      "Massage must always follow the direction of blood flow"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -362,7 +323,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Reflexology theory links reflex zones to internal organs.",
     "long_explanation": "It suggests that stimulating reflex points can affect the function of related organs.",
     "clinical_application": "Foundational for understanding the purpose of reflex-based therapy.",
@@ -388,13 +349,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 008",
+    "id": "reflexology_intro_008",
     "question": "In reflexology, how many longitudinal zones is the body traditionally divided into?",
-    "answers": ["5", "6", "10", "12"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -410,7 +369,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "The body is traditionally divided into 10 longitudinal reflex zones.",
     "long_explanation": "Each foot contains five zones; they are mirrored across the sagittal plane.",
     "clinical_application": "Clarifies the structural logic behind reflex zone mapping.",
@@ -426,18 +385,11 @@
     "abcd": ["A. 5", "B. 6", "C. 10", "D. 12"],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 009",
+    "id": "reflexology_intro_009",
     "question": "Which U.S. movement helped bring reflexology into the public eye in the 20th century?",
-    "answers": [
-      "The holistic health movement",
-      "The chiropractic movement",
-      "The osteopathic surge",
-      "Ayurvedic revival"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -453,7 +405,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "The holistic health movement helped reflexology gain visibility.",
     "long_explanation": "This 20th-century shift emphasized natural, non-invasive methods of healing.",
     "clinical_application": "Contextualizes reflexology’s popularity and modern revival.",
@@ -479,18 +431,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   },
   {
-    "id": "Reflexology Intro 010",
+    "id": "reflexology_intro_010",
     "question": "What is the primary difference between reflexology and general foot massage?",
-    "answers": [
-      "Reflexology includes aromatherapy oils",
-      "Reflexology targets specific mapped points believed to affect internal organs",
-      "Reflexology uses more pressure",
-      "Foot massage requires certification"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -526,7 +471,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.142Z",
     "updated_at": "2025-05-26T21:57:49.922273Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_intro",
+    "unit": "reflexology_intro",
     "short_explanation": "Reflexology targets mapped points linked to internal organs.",
     "long_explanation": "Unlike general foot massage, reflexology applies therapeutic pressure to precise reflex zones.",
     "clinical_application": "Distinguishes reflexology from relaxation massage in therapeutic intent.",
@@ -552,6 +497,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "reflexology_intro.json"
+    "sourceFile": "reflexology_intro"
   }
 ]

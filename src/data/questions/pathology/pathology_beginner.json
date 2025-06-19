@@ -1,14 +1,7 @@
 [
   {
-    "id": "Pathology Beginner 001",
+    "id": "pathology_beginner_001",
     "question": "What is scoliosis?",
-    "answers": [
-      "A degeneration of vertebral discs",
-      "A forward bending of the spine",
-      "An abnormal lateral curvature of the spine",
-      "A shortening of spinal ligaments"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -24,7 +17,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Scoliosis is a sideways curve of the spine.",
     "long_explanation": "This abnormal lateral spinal curvature can affect posture, muscle symmetry, and breathing mechanics.",
     "clinical_application": "Massage therapy focuses on relieving muscular imbalance and supporting spinal mobility.",
@@ -47,18 +40,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 002",
+    "id": "pathology_beginner_002",
     "question": "What causes varicose veins?",
-    "answers": [
-      "Inflammation of arteries",
-      "Collapsed or malfunctioning vein valves",
-      "Calcium buildup in arteries",
-      "Blood clots in lymph vessels"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -74,7 +60,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Varicose veins are caused by faulty vein valves.",
     "long_explanation": "When vein valves collapse or fail, blood pools and veins become distended, especially in the legs.",
     "clinical_application": "Massage should avoid direct pressure on varicosities and focus on circulation enhancement around affected areas.",
@@ -97,13 +83,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 003",
+    "id": "pathology_beginner_003",
     "question": "Osteoporosis primarily affects the:",
-    "answers": ["Joints", "Lymph nodes", "Arteries", "Bones"],
-    "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -124,7 +108,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Osteoporosis primarily weakens bones.",
     "long_explanation": "This condition reduces bone density, increasing the risk of fractures, especially in the spine, hips, and wrists.",
     "clinical_application": "Massage must be gentle and adapted to avoid excessive pressure that could damage fragile bones.",
@@ -137,18 +121,11 @@
     "abcd": ["A. Joints", "B. Lymph nodes", "C. Arteries", "D. Bones"],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 004",
+    "id": "pathology_beginner_004",
     "question": "What is a hematoma?",
-    "answers": [
-      "Inflamed vein",
-      "Blocked artery",
-      "Pooling of blood outside a vessel",
-      "Bone fracture"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -164,7 +141,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "A hematoma is pooled blood outside a vessel.",
     "long_explanation": "Often the result of trauma or injury, it appears as swelling or bruising and should not be massaged directly.",
     "clinical_application": "Massage is contraindicated locally but may support drainage in surrounding tissues.",
@@ -187,18 +164,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 005",
+    "id": "pathology_beginner_005",
     "question": "Phlebitis refers to:",
-    "answers": [
-      "A blood clot in a coronary artery",
-      "Inflammation of a vein",
-      "Air bubbles in the bloodstream",
-      "Infection of lymph nodes"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -214,7 +184,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Phlebitis is inflammation of a vein.",
     "long_explanation": "It may result from trauma, IV injection, or clot formation and often presents with redness, pain, and swelling.",
     "clinical_application": "Massage is locally contraindicated to avoid aggravating the inflammation or dislodging a clot.",
@@ -237,18 +207,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 006",
+    "id": "pathology_beginner_006",
     "question": "Thrombophlebitis involves:",
-    "answers": [
-      "Arterial bleeding",
-      "Clot formation in a lymph vessel",
-      "Clotting in an inflamed vein",
-      "Bone marrow overgrowth"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -264,7 +227,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Thrombophlebitis involves a clot in an inflamed vein.",
     "long_explanation": "This condition is serious and can lead to embolism if a clot travels through the bloodstream.",
     "clinical_application": "Massage is strongly contraindicated and clients should be referred to medical care.",
@@ -287,18 +250,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 007",
+    "id": "pathology_beginner_007",
     "question": "What is an embolus?",
-    "answers": [
-      "A blood clot that travels through the bloodstream",
-      "A bruise from deep pressure",
-      "A blocked lymph node",
-      "An inflamed artery"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -314,7 +270,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "An embolus is a traveling blood clot.",
     "long_explanation": "It may lodge in the lungs (pulmonary embolism), brain (stroke), or heart, causing sudden symptoms.",
     "clinical_application": "Massage is contraindicated when embolic risk is present due to serious complications.",
@@ -337,18 +293,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 008",
+    "id": "pathology_beginner_008",
     "question": "An aneurysm is:",
-    "answers": [
-      "A thickening of joint cartilage",
-      "A pooling of blood within the lungs",
-      "A ballooning or weakening of an artery wall",
-      "A displaced vertebral disc"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -369,7 +318,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "An aneurysm is a ballooning artery wall.",
     "long_explanation": "It may rupture under pressure, leading to internal bleeding and life-threatening consequences.",
     "clinical_application": "Massage should avoid the affected area and encourage medical evaluation if suspected.",
@@ -392,18 +341,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 009",
+    "id": "pathology_beginner_009",
     "question": "Lymphedema is caused by:",
-    "answers": [
-      "A blocked artery",
-      "Nerve compression",
-      "Lymphatic system obstruction causing swelling",
-      "Increased red blood cell production"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -431,7 +373,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Lymphedema results from lymphatic blockage.",
     "long_explanation": "This condition leads to swelling due to impaired drainage and may be congenital or result from surgery or infection.",
     "clinical_application": "Massage therapists trained in manual lymphatic drainage (MLD) may treat under supervision.",
@@ -454,18 +396,11 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   },
   {
-    "id": "Pathology Beginner 010",
+    "id": "pathology_beginner_010",
     "question": "Massage is generally contraindicated in which of the following?",
-    "answers": [
-      "Mild scoliosis",
-      "Stable osteoporosis",
-      "Thrombophlebitis",
-      "Mild varicose veins"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "pathology",
@@ -481,7 +416,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "unit": "pathology beginner",
+    "unit": "pathology_beginner",
     "short_explanation": "Thrombophlebitis is a contraindication for massage.",
     "long_explanation": "Applying pressure near inflamed, clot-prone veins risks dislodging a thrombus and causing embolism.",
     "clinical_application": "Therapists must avoid massage until medically cleared.",
@@ -504,6 +439,6 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "pathology_beginner.json"
+    "sourceFile": "pathology_beginner"
   }
 ]

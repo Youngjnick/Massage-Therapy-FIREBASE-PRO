@@ -31,7 +31,7 @@ const QuizReviewScreen: React.FC<QuizReviewScreenProps> = ({
   const topicStats = React.useMemo(() => {
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     activeQuestions.forEach((q, i) => {
-      const topic = q.topic || 'Other';
+      const topic = q.sourceFile || 'Other';
       if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
       stats[topic].total++;
       if (userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer) {

@@ -2,13 +2,6 @@
   {
     "id": "impetigo_001",
     "question": "What is the primary cause of impetigo?",
-    "answers": [
-      "Fungal infection",
-      "Herpes simplex virus",
-      "Bacterial infection",
-      "Autoimmune disorder"
-    ],
-    "correct": 2,
     "short_explanation": "Impetigo is caused by bacteria.",
     "long_explanation": "Impetigo is a superficial skin infection usually caused by *Staphylococcus aureus* or *Streptococcus pyogenes*.",
     "clinical_application": "Avoid massage in the presence of any impetigo lesions, as it is highly contagious.",
@@ -39,18 +32,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "impetigo.json"
+    "sourceFile": "impetigo",
+    "unit": "impetigo"
   },
   {
     "id": "impetigo_002",
     "question": "Which population is most commonly affected by impetigo?",
-    "answers": [
-      "Elderly adults",
-      "Infants and children",
-      "Athletes only",
-      "Postmenopausal women"
-    ],
-    "correct": 1,
     "short_explanation": "Children are the most common group affected by impetigo.",
     "long_explanation": "Impetigo frequently affects preschool and school-age children due to close contact and underdeveloped hygiene habits.",
     "clinical_application": "Be alert when working with children or parents reporting school outbreaks.",
@@ -81,18 +68,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "impetigo.json"
+    "sourceFile": "impetigo",
+    "unit": "impetigo"
   },
   {
     "id": "impetigo_003",
     "question": "Which clinical sign is most characteristic of impetigo?",
-    "answers": [
-      "Vesicles with black centers",
-      "Dry, scaly plaques",
-      "Honey-colored crusted lesions",
-      "Purplish bruising"
-    ],
-    "correct": 2,
     "short_explanation": "The honey-colored crust is a hallmark of impetigo.",
     "long_explanation": "Impetigo often begins as red sores that rupture and form a golden-yellow, sticky crust — particularly around the mouth and nose.",
     "clinical_application": "Lesions must be fully resolved before massage to prevent surface contamination and spread.",
@@ -123,18 +104,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "impetigo.json"
+    "sourceFile": "impetigo",
+    "unit": "impetigo"
   },
   {
     "id": "impetigo_004",
     "question": "How is impetigo most commonly transmitted?",
-    "answers": [
-      "Inhalation of airborne bacteria",
-      "Contact with infected surfaces or skin",
-      "Contaminated water",
-      "Mosquito bites"
-    ],
-    "correct": 1,
     "short_explanation": "Impetigo spreads through direct or indirect contact.",
     "long_explanation": "Transmission occurs via skin-to-skin contact or contact with contaminated items like towels, linens, or toys.",
     "clinical_application": "Use disposable covers and disinfect surfaces if there's any suspicion of skin infection.",
@@ -165,18 +140,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "impetigo.json"
+    "sourceFile": "impetigo",
+    "unit": "impetigo"
   },
   {
     "id": "impetigo_005",
     "question": "Which treatment is most effective for impetigo?",
-    "answers": [
-      "Antifungal ointment",
-      "Antiviral cream",
-      "Topical or oral antibiotics",
-      "Steroid injection"
-    ],
-    "correct": 2,
     "short_explanation": "Antibiotics target the bacterial cause.",
     "long_explanation": "Impetigo is typically treated with topical antibiotics like mupirocin or oral antibiotics in more widespread cases.",
     "clinical_application": "Clients on antibiotics should still wait until lesions are healed before returning to massage therapy.",
@@ -207,6 +176,7 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "impetigo.json"
+    "sourceFile": "impetigo",
+    "unit": "impetigo"
   }
 ]

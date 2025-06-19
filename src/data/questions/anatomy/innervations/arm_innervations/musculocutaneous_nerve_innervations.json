@@ -1,14 +1,7 @@
 [
   {
-    "id": "Musculocutaneous Nerve 001",
+    "id": "musculocutaneous_nerve_001",
     "question": "Which muscle is primarily innervated by the musculocutaneous nerve?",
-    "answers": [
-      "Biceps brachii",
-      "Triceps brachii",
-      "Deltoid",
-      "Extensor carpi radialis"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The musculocutaneous nerve innervates the biceps brachii muscle.",
     "long_explanation": "The musculocutaneous nerve, a branch of the lateral cord of the brachial plexus (C5-C7), innervates the biceps brachii, which is responsible for flexion of the elbow and supination of the forearm.",
@@ -41,7 +34,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "Which muscle is primarily innervated by the musculocutaneous nerve?",
     "options": [
       "Biceps brachii",
@@ -58,18 +51,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 002",
+    "id": "musculocutaneous_nerve_002",
     "question": "What is the sensory territory of the musculocutaneous nerve?",
-    "answers": [
-      "Lateral forearm",
-      "Medial upper arm",
-      "Palm of the hand",
-      "Posterior arm"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The musculocutaneous nerve provides sensation to the lateral forearm.",
     "long_explanation": "After supplying motor branches to the anterior arm muscles, the musculocutaneous nerve continues as the lateral cutaneous nerve of the forearm, which provides sensory input to the lateral aspect of the forearm.",
@@ -102,7 +88,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "What is the sensory territory of the musculocutaneous nerve?",
     "options": [
       "Lateral forearm",
@@ -119,13 +105,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 003",
+    "id": "musculocutaneous_nerve_003",
     "question": "Which spinal nerve roots contribute to the musculocutaneous nerve?",
-    "answers": ["C5-C7", "C6-T1", "C4-C6", "C8-T1"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The musculocutaneous nerve arises from C5 to C7 spinal nerve roots.",
     "long_explanation": "This nerve branches off the lateral cord of the brachial plexus, incorporating fibers from C5, C6, and C7. These nerve roots contribute to upper limb flexor motor control.",
@@ -158,25 +142,18 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "Which spinal nerve roots contribute to the musculocutaneous nerve?",
     "options": ["C5-C7", "C6-T1", "C4-C6", "C8-T1"],
     "correctAnswer": "C5-C7",
     "abcd": ["A. C5-C7", "B. C6-T1", "C. C4-C6", "D. C8-T1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 004",
+    "id": "musculocutaneous_nerve_004",
     "question": "The musculocutaneous nerve primarily travels through which muscle?",
-    "answers": [
-      "Coracobrachialis",
-      "Brachialis",
-      "Trapezius",
-      "Pectoralis major"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "It pierces the coracobrachialis muscle.",
     "long_explanation": "The musculocutaneous nerve passes through the coracobrachialis muscle before descending between the biceps brachii and brachialis, making it a key landmark in the upper arm.",
@@ -209,7 +186,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "The musculocutaneous nerve primarily travels through which muscle?",
     "options": [
       "Coracobrachialis",
@@ -226,18 +203,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 005",
+    "id": "musculocutaneous_nerve_005",
     "question": "Which of the following is not innervated by the musculocutaneous nerve?",
-    "answers": [
-      "Biceps brachii",
-      "Brachialis",
-      "Coracobrachialis",
-      "Triceps brachii"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "Triceps brachii is innervated by the radial nerve.",
     "long_explanation": "The musculocutaneous nerve does not supply the posterior compartment of the arm, which includes the triceps brachii. This is the domain of the radial nerve.",
@@ -270,7 +240,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "Which of the following is not innervated by the musculocutaneous nerve?",
     "options": [
       "Biceps brachii",
@@ -287,18 +257,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 006",
+    "id": "musculocutaneous_nerve_006",
     "question": "What functional loss would occur with musculocutaneous nerve damage?",
-    "answers": [
-      "Loss of wrist extension",
-      "Loss of shoulder abduction",
-      "Weakness in elbow flexion and forearm supination",
-      "Loss of finger abduction"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "It would impair muscles that flex the elbow and supinate the forearm.",
     "long_explanation": "The musculocutaneous nerve innervates muscles like the biceps brachii and brachialis, which contribute to elbow flexion and supination of the forearm. Damage may cause weakness in these movements.",
@@ -331,7 +294,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "What functional loss would occur with musculocutaneous nerve damage?",
     "options": [
       "Loss of wrist extension",
@@ -348,13 +311,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 007",
+    "id": "musculocutaneous_nerve_007",
     "question": "The musculocutaneous nerve provides motor innervation to all of the following EXCEPT:",
-    "answers": ["Coracobrachialis", "Biceps brachii", "Brachialis", "Deltoid"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The deltoid is innervated by the axillary nerve.",
     "long_explanation": "While the musculocutaneous nerve innervates the anterior arm muscles, the deltoid is part of the shoulder complex and is supplied by the axillary nerve, not musculocutaneous.",
@@ -387,7 +348,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "The musculocutaneous nerve provides motor innervation to all of the following EXCEPT:",
     "options": ["Coracobrachialis", "Biceps brachii", "Brachialis", "Deltoid"],
     "correctAnswer": "Deltoid",
@@ -399,18 +360,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 008",
+    "id": "musculocutaneous_nerve_008",
     "question": "Which terminal branch does the musculocutaneous nerve become after providing motor innervation?",
-    "answers": [
-      "Lateral cutaneous nerve of the forearm",
-      "Radial cutaneous nerve",
-      "Medial antebrachial nerve",
-      "Ulnar dorsal cutaneous nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "It continues as the lateral cutaneous nerve of the forearm.",
     "long_explanation": "After innervating the anterior compartment of the arm, the musculocutaneous nerve transitions into a purely sensory nerve — the lateral cutaneous nerve of the forearm — which supplies the skin over the lateral forearm.",
@@ -443,7 +397,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "Which terminal branch does the musculocutaneous nerve become after providing motor innervation?",
     "options": [
       "Lateral cutaneous nerve of the forearm",
@@ -460,18 +414,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 009",
+    "id": "musculocutaneous_nerve_009",
     "question": "Which action would likely be impaired by musculocutaneous nerve injury?",
-    "answers": [
-      "Forearm supination",
-      "Wrist flexion",
-      "Thumb opposition",
-      "Finger extension"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Forearm supination relies heavily on the biceps brachii.",
     "long_explanation": "The biceps brachii, innervated by the musculocutaneous nerve, assists in supinating the forearm especially when the elbow is flexed. Damage to this nerve can impair this movement.",
@@ -504,7 +451,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "Which action would likely be impaired by musculocutaneous nerve injury?",
     "options": [
       "Forearm supination",
@@ -521,18 +468,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   },
   {
-    "id": "Musculocutaneous Nerve 010",
+    "id": "musculocutaneous_nerve_010",
     "question": "Which nerve innervates muscles synergistic to the musculocutaneous nerve in elbow flexion?",
-    "answers": [
-      "Radial nerve (brachioradialis)",
-      "Ulnar nerve (flexor carpi ulnaris)",
-      "Median nerve (pronator teres)",
-      "Axillary nerve (teres minor)"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Brachioradialis assists in elbow flexion and is innervated by the radial nerve.",
     "long_explanation": "Although the musculocutaneous nerve controls primary elbow flexors like the biceps and brachialis, the brachioradialis also contributes to elbow flexion — especially in mid-pronation — and is innervated by the radial nerve.",
@@ -565,7 +505,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-31T18:09:34.028924",
     "updated_at": "2025-05-31T18:09:34.028924",
-    "unit": "musculocutaneous nerve",
+    "unit": "musculocutaneous_nerve_innervations",
     "text": "Which nerve innervates muscles synergistic to the musculocutaneous nerve in elbow flexion?",
     "options": [
       "Radial nerve (brachioradialis)",
@@ -582,6 +522,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/arm_innervations",
-    "filename": "musculocutaneous_nerve_innervations.json"
+    "sourceFile": "musculocutaneous_nerve_innervations"
   }
 ]

@@ -1,20 +1,13 @@
 [
   {
-    "id": "End Feel 001",
+    "id": "end_feel_001",
     "question_rank": 1,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Trail Guide, Orthopedic Assessment Textbook",
     "question": "What is an 'end feel' in manual therapy assessment?",
-    "answers": [
-      "A measure of muscle strength",
-      "The last movement in a stretch",
-      "The quality of resistance felt at the end of passive range of motion",
-      "The final phase of a gait cycle"
-    ],
-    "correct": 2,
     "short_explanation": "End feel describes joint resistance at the end of a passive motion.",
     "long_explanation": "It refers to the tactile sensation or resistance a therapist perceives when passively moving a joint to its limit, helping differentiate between normal and pathological conditions.",
     "clinical_application": "Used to assess joint integrity, inflammation, or restrictions.",
@@ -37,24 +30,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 002",
+    "id": "end_feel_002",
     "question_rank": 2,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Salvo, Orthopedic Testing",
     "question": "Which of the following is a normal soft end feel?",
-    "answers": [
-      "Shoulder flexion",
-      "Elbow flexion",
-      "Hip flexion with knee flexed (contact between soft tissues)",
-      "Knee extension"
-    ],
-    "correct": 2,
     "short_explanation": "Soft end feel results from tissue approximation.",
     "long_explanation": "A soft end feel is typical when muscle or adipose tissue compresses against itself, like in hip flexion when the thigh meets the abdomen.",
     "clinical_application": "Considered normal during full-body assessments of flexibility.",
@@ -77,19 +63,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 003",
+    "id": "end_feel_003",
     "question_rank": 3,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "FSMTB, Trail Guide",
     "question": "Which end feel is typically described as 'leathery or springy'?",
-    "answers": ["Soft", "Firm", "Hard", "Empty"],
-    "correct": 1,
     "short_explanation": "Firm end feels have elastic resistance.",
     "long_explanation": "Firm end feels are caused by capsular or ligamentous stretching and feel springy or leathery in quality, often noted in shoulder or ankle mobility testing.",
     "clinical_application": "Useful in identifying capsular pattern restrictions.",
@@ -102,24 +86,17 @@
     "abcd": ["A. Soft", "B. Firm", "C. Hard", "D. Empty"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 004",
+    "id": "end_feel_004",
     "question_rank": 4,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Salvo, Joint ROM Standards",
     "question": "What is a normal hard end feel?",
-    "answers": [
-      "Ankle dorsiflexion",
-      "Elbow extension (contact between bone surfaces)",
-      "Wrist flexion",
-      "Hip extension"
-    ],
-    "correct": 1,
     "short_explanation": "A hard stop between bones defines this end feel.",
     "long_explanation": "Normal hard end feel occurs when bone contacts bone, such as in full elbow extension where the olecranon process contacts the fossa.",
     "clinical_application": "Helps confirm normal joint ROM and rule out joint fusion or spurs.",
@@ -142,24 +119,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 005",
+    "id": "end_feel_005",
     "question_rank": 5,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Orthopedic Manual Assessment Guide",
     "question": "Which of the following would be considered an abnormal end feel?",
-    "answers": [
-      "Firm resistance in wrist extension",
-      "Springy resistance at hip extension",
-      "Soft resistance in shoulder flexion",
-      "Hard stop in elbow extension"
-    ],
-    "correct": 1,
     "short_explanation": "Abnormal when springy occurs where it shouldn't.",
     "long_explanation": "A springy end feel in hip extension may indicate joint pathology like cartilage tear or internal derangement, which is not expected in that plane of motion.",
     "clinical_application": "Alerts therapist to refer out or reassess mobility limits.",
@@ -182,19 +152,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 006",
+    "id": "end_feel_006",
     "question_rank": 6,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "FSMTB, Salvo, Clinical Reasoning Text",
     "question": "Which end feel occurs when there is pain with no mechanical resistance?",
-    "answers": ["Hard", "Firm", "Empty", "Soft"],
-    "correct": 2,
     "short_explanation": "Empty end feels are limited by pain, not resistance.",
     "long_explanation": "Characterized by the client halting motion due to pain before a physical barrier is felt, often indicating acute inflammation, abscess, or fear of movement.",
     "clinical_application": "Seen in acute bursitis, fractures, or post-injury anxiety.",
@@ -207,24 +175,17 @@
     "abcd": ["A. Hard", "B. Firm", "C. Empty", "D. Soft"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 007",
+    "id": "end_feel_007",
     "question_rank": 7,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Trail Guide, Joint Dysfunction Reference",
     "question": "What might a springy abnormal end feel indicate?",
-    "answers": [
-      "Muscle strain",
-      "Joint fusion",
-      "Internal derangement such as a torn meniscus",
-      "Tendonitis"
-    ],
-    "correct": 2,
     "short_explanation": "Internal joint damage may cause a springy block.",
     "long_explanation": "Abnormal springy end feel results from loose body obstruction (e.g., torn cartilage), commonly felt in the knee with meniscal tears.",
     "clinical_application": "Suggests referral to orthopedics or imaging.",
@@ -247,24 +208,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 008",
+    "id": "end_feel_008",
     "question_rank": 8,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Orthopedic Exam Textbook",
     "question": "A boggy, soft end feel could indicate:",
-    "answers": [
-      "Joint inflammation or edema",
-      "Healthy muscle tone",
-      "Capsular stretch",
-      "Tendon strain"
-    ],
-    "correct": 0,
     "short_explanation": "Inflammation makes joints feel soft and mushy.",
     "long_explanation": "Boggy end feel is an abnormal soft quality, caused by fluid buildup in the joint capsule, typical in cases of synovitis or trauma.",
     "clinical_application": "Seen in acute joint swelling or synovial inflammation.",
@@ -287,19 +241,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 009",
+    "id": "end_feel_009",
     "question_rank": 9,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "FSMTB, Salvo, Range of Motion Standards",
     "question": "Which end feel is typically associated with a capsular stretch?",
-    "answers": ["Empty", "Hard", "Firm", "Soft"],
-    "correct": 2,
     "short_explanation": "Firm end feel reflects healthy capsular stretch.",
     "long_explanation": "Firm end feel is typical when the joint capsule or ligament limits motion, felt in normal ROM like shoulder external rotation.",
     "clinical_application": "Helps assess ligament health and capsular tightness.",
@@ -312,24 +264,17 @@
     "abcd": ["A. Empty", "B. Hard", "C. Firm", "D. Soft"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   },
   {
-    "id": "End Feel 010",
+    "id": "end_feel_010",
     "question_rank": 10,
     "difficulty": "intermediate",
     "topic": "assessment",
     "category": "End Feel Types",
-    "unit": "manual assessment",
+    "unit": "end_feel_types",
     "source_reference": "Salvo, Joint Pathology Manual",
     "question": "What would an unexpectedly hard end feel in a joint normally soft or firm suggest?",
-    "answers": [
-      "Tendonitis",
-      "Joint effusion",
-      "Abnormal bony growth or joint dysfunction",
-      "Healthy motion"
-    ],
-    "correct": 2,
     "short_explanation": "A hard stop where it doesn't belong is a red flag.",
     "long_explanation": "This finding may indicate osteoarthritis, bony spur formation, or ankylosis when bone contact occurs before expected.",
     "clinical_application": "May signal joint degeneration and require referral.",
@@ -352,6 +297,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "end_feel_types.json"
+    "sourceFile": "end_feel_types"
   }
 ]

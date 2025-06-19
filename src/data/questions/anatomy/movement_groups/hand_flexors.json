@@ -1,14 +1,7 @@
 [
   {
-    "id": "Hand Flexors 70087b43",
+    "id": "hand_flexors_70087b43",
     "question": "Which muscle is primarily responsible for flexing the wrist and is often targeted in forearm massage?",
-    "answers": [
-      "Flexor carpi radialis",
-      "Extensor digitorum",
-      "Brachioradialis",
-      "Supinator"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Flexor carpi radialis flexes the wrist and is commonly addressed in massage for wrist pain.",
     "long_explanation": "The flexor carpi radialis originates from the medial epicondyle of the humerus and inserts into the base of the second and third metacarpals. It flexes and abducts the wrist. It's commonly tight in clients who type or grip repetitively.",
@@ -58,7 +51,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Which muscle is primarily responsible for flexing the wrist and is often targeted in forearm massage?",
     "options": [
@@ -76,18 +69,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors F19501e1",
+    "id": "hand_flexors_f19501e1",
     "question": "The flexor digitorum superficialis primarily acts on which structure?",
-    "answers": [
-      "Proximal interphalangeal joints",
-      "Distal interphalangeal joints",
-      "Wrist joint",
-      "Thumb joint"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "It flexes the PIP joints of the fingers.",
     "long_explanation": "Flexor digitorum superficialis inserts into the middle phalanges of digits 2–5 and flexes the PIP joints. It also assists with wrist flexion.",
@@ -131,7 +117,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "The flexor digitorum superficialis primarily acts on which structure?",
     "options": [
@@ -149,18 +135,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors 3b77d137",
+    "id": "hand_flexors_3b77d137",
     "question": "Which deep flexor muscle is responsible for flexing the distal phalanges of the fingers?",
-    "answers": [
-      "Flexor digitorum profundus",
-      "Palmaris longus",
-      "Extensor indicis",
-      "Flexor pollicis brevis"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Flexor digitorum profundus flexes the DIP joints of the fingers.",
     "long_explanation": "This muscle originates from the ulna and interosseous membrane and inserts into the distal phalanges. It's essential for gripping.",
@@ -218,7 +197,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Which deep flexor muscle is responsible for flexing the distal phalanges of the fingers?",
     "options": [
@@ -236,18 +215,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors F680ac8f",
+    "id": "hand_flexors_f680ac8f",
     "question": "What is a common clinical symptom of overuse of the flexor pollicis longus?",
-    "answers": [
-      "Thumb pain during flexion",
-      "Elbow weakness",
-      "Shoulder tightness",
-      "Swelling in the upper arm"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Overuse of flexor pollicis longus leads to thumb flexion pain.",
     "long_explanation": "Flexor pollicis longus flexes the thumb’s interphalangeal joint. Repetitive use can cause pain or trigger thumb issues.",
@@ -283,7 +255,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "What is a common clinical symptom of overuse of the flexor pollicis longus?",
     "options": [
@@ -301,18 +273,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors 78b3000e",
+    "id": "hand_flexors_78b3000e",
     "question": "Which hand flexor is often absent in a portion of the population?",
-    "answers": [
-      "Palmaris longus",
-      "Flexor carpi ulnaris",
-      "Flexor digitorum profundus",
-      "Flexor pollicis longus"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Palmaris longus is congenitally absent in some individuals.",
     "long_explanation": "Palmaris longus is a superficial flexor muscle absent in 10–15% of people. It assists in wrist flexion but is not essential.",
@@ -346,7 +311,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Which hand flexor is often absent in a portion of the population?",
     "options": [
@@ -364,18 +329,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors Ff277ea7",
+    "id": "hand_flexors_ff277ea7",
     "question": "Which nerve innervates most of the anterior forearm flexor muscles?",
-    "answers": [
-      "Median nerve",
-      "Radial nerve",
-      "Ulnar nerve",
-      "Axillary nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The median nerve innervates most forearm flexors.",
     "long_explanation": "The median nerve supplies the majority of the hand flexors except for flexor carpi ulnaris and part of flexor digitorum profundus (ulnar nerve).",
@@ -419,7 +377,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Which nerve innervates most of the anterior forearm flexor muscles?",
     "options": [
@@ -437,18 +395,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors Fa59b09d",
+    "id": "hand_flexors_fa59b09d",
     "question": "Flexor carpi ulnaris is unique among hand flexors because it is innervated by which nerve?",
-    "answers": [
-      "Ulnar nerve",
-      "Median nerve",
-      "Radial nerve",
-      "Musculocutaneous nerve"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Flexor carpi ulnaris is innervated by the ulnar nerve.",
     "long_explanation": "It’s one of the few anterior forearm muscles not innervated by the median nerve. It aids in wrist flexion and ulnar deviation.",
@@ -494,7 +445,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Flexor carpi ulnaris is unique among hand flexors because it is innervated by which nerve?",
     "options": [
@@ -512,18 +463,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors 51718383",
+    "id": "hand_flexors_51718383",
     "question": "Which muscle helps tense the palmar fascia and is considered functionally minor?",
-    "answers": [
-      "Palmaris longus",
-      "Flexor digitorum superficialis",
-      "Pronator teres",
-      "Flexor pollicis brevis"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Palmaris longus tenses the palmar aponeurosis.",
     "long_explanation": "Though minor in function, this muscle helps tense the palm and assists wrist flexion. It’s often used in surgical tendon grafts.",
@@ -559,7 +503,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Which muscle helps tense the palmar fascia and is considered functionally minor?",
     "options": [
@@ -577,18 +521,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors B2f795e5",
+    "id": "hand_flexors_b2f795e5",
     "question": "Which activity most likely overworks the flexor digitorum muscles?",
-    "answers": [
-      "Typing for extended hours",
-      "Running",
-      "Breathing exercises",
-      "Leg curls"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Typing overuses finger flexors like flexor digitorum muscles.",
     "long_explanation": "Sustained finger flexion during typing can fatigue the flexor digitorum superficialis and profundus, leading to muscle imbalance or RSI.",
@@ -620,7 +557,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Which activity most likely overworks the flexor digitorum muscles?",
     "options": [
@@ -638,18 +575,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   },
   {
-    "id": "Hand Flexors 5064a75d",
+    "id": "hand_flexors_5064a75d",
     "question": "Flexor-pronator muscle group includes which of the following?",
-    "answers": [
-      "Pronator teres",
-      "Biceps brachii",
-      "Anconeus",
-      "Extensor carpi radialis"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Pronator teres is part of the flexor-pronator group.",
     "long_explanation": "Pronator teres not only pronates the forearm but also assists in elbow flexion. It belongs to the superficial anterior forearm group.",
@@ -689,7 +619,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
+    "unit": "hand_flexors",
     "synonyms": ["forearm flexors", "anterior forearm muscles"],
     "text": "Flexor-pronator muscle group includes which of the following?",
     "options": [
@@ -707,6 +637,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "movement_groups",
-    "filename": "hand_flexors.json"
+    "sourceFile": "hand_flexors"
   }
 ]

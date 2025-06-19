@@ -2,13 +2,6 @@
   {
     "id": "recurrent_laryngeal_001",
     "question": "Which cranial nerve gives rise to the recurrent laryngeal nerve?",
-    "answers": [
-      "Glossopharyngeal nerve (CN IX)",
-      "Vagus nerve (CN X)",
-      "Accessory nerve (CN XI)",
-      "Facial nerve (CN VII)"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "The recurrent laryngeal nerve is a branch of the vagus nerve.",
     "long_explanation": "The recurrent laryngeal nerve branches off the vagus nerve (cranial nerve X) and loops around major arteries before ascending to the larynx. It provides motor innervation to most intrinsic laryngeal muscles.",
@@ -36,18 +29,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_002",
     "question": "What is the primary function of the recurrent laryngeal nerve?",
-    "answers": [
-      "Sensory to the tongue",
-      "Motor to the intrinsic laryngeal muscles",
-      "Parasympathetic to the lungs",
-      "Motor to the diaphragm"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "It innervates most intrinsic laryngeal muscles.",
     "long_explanation": "The recurrent laryngeal nerve supplies motor innervation to all intrinsic muscles of the larynx except the cricothyroid, which is supplied by the external branch of the superior laryngeal nerve.",
@@ -75,18 +62,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_003",
     "question": "Which intrinsic laryngeal muscle is NOT innervated by the recurrent laryngeal nerve?",
-    "answers": [
-      "Thyroarytenoid",
-      "Posterior cricoarytenoid",
-      "Lateral cricoarytenoid",
-      "Cricothyroid"
-    ],
-    "correct": 3,
     "distractors": [0, 1, 2],
     "short_explanation": "The cricothyroid is innervated by the external branch of the superior laryngeal nerve.",
     "long_explanation": "While the recurrent laryngeal nerve innervates most intrinsic laryngeal muscles, the cricothyroid receives motor innervation from a separate branch — the external branch of the superior laryngeal nerve (also from CN X).",
@@ -114,18 +95,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_004",
     "question": "Which condition may result from recurrent laryngeal nerve damage?",
-    "answers": [
-      "Facial paralysis",
-      "Hoarseness or breathy voice",
-      "Tinnitus",
-      "Visual disturbances"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Damage impairs vocal fold closure, affecting voice.",
     "long_explanation": "Injury to the recurrent laryngeal nerve can paralyze one or both vocal folds, leading to hoarseness, weak voice, or even airway obstruction in severe cases.",
@@ -153,13 +128,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_005",
     "question": "Which side of the body does the recurrent laryngeal nerve loop under the aortic arch?",
-    "answers": ["Right side", "Left side", "Both sides", "Neither side"],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "On the left side, it loops under the aortic arch.",
     "long_explanation": "The left recurrent laryngeal nerve loops under the aortic arch while the right side loops around the subclavian artery. This asymmetry affects vulnerability during cardiac and thoracic surgery.",
@@ -182,18 +156,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_006",
     "question": "What sensory region does the recurrent laryngeal nerve serve?",
-    "answers": [
-      "External ear",
-      "Tongue",
-      "Larynx below vocal folds",
-      "Nasal cavity"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "It provides sensation below the vocal folds.",
     "long_explanation": "In addition to its motor function, the recurrent laryngeal nerve supplies sensory innervation to the mucosa below the vocal folds within the larynx.",
@@ -221,18 +189,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_007",
     "question": "Which muscle is responsible for abducting the vocal cords?",
-    "answers": [
-      "Thyroarytenoid",
-      "Lateral cricoarytenoid",
-      "Posterior cricoarytenoid",
-      "Cricothyroid"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "The posterior cricoarytenoid abducts (opens) the vocal folds.",
     "long_explanation": "This muscle is innervated by the recurrent laryngeal nerve and is the sole abductor of the vocal cords. It opens the glottis during breathing.",
@@ -260,18 +222,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_008",
     "question": "Why is the recurrent laryngeal nerve vulnerable during thyroid surgery?",
-    "answers": [
-      "It passes near the carotid artery",
-      "It lies deep to the parathyroid glands",
-      "It travels close to the thyroid gland",
-      "It innervates the sternocleidomastoid"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Its proximity to the thyroid makes it at risk during surgery.",
     "long_explanation": "During thyroidectomies, the recurrent laryngeal nerve is at risk due to its close anatomical relationship to the inferior thyroid artery and gland. Injury can result in voice loss.",
@@ -299,18 +255,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_009",
     "question": "Which clinical test might help evaluate recurrent laryngeal nerve integrity?",
-    "answers": [
-      "Gag reflex test",
-      "Voice phonation test",
-      "Visual field test",
-      "Palpation of thyroid cartilage"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Voice phonation tests vocal fold function innervated by this nerve.",
     "long_explanation": "A voice test (e.g., asking the patient to say 'E') evaluates vocal cord function. Asymmetry or breathiness may indicate recurrent laryngeal nerve compromise.",
@@ -338,18 +288,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   },
   {
     "id": "recurrent_laryngeal_010",
     "question": "What could be a cause of bilateral recurrent laryngeal nerve paralysis?",
-    "answers": [
-      "Viral infection",
-      "Surgical trauma",
-      "Bilateral stroke",
-      "Cervical spine fracture"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Bilateral paralysis is often due to surgical trauma.",
     "long_explanation": "While various factors can injure the nerve, bilateral recurrent laryngeal nerve paralysis is most commonly associated with complications from thyroid or neck surgery.",
@@ -377,6 +321,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/facial_innervations.json",
-    "filename": "recurrent_laryngeal_nerve_innervations.json"
+    "sourceFile": "recurrent_laryngeal_nerve_innervations",
+    "unit": "recurrent_laryngeal_nerve_innervations"
   }
 ]

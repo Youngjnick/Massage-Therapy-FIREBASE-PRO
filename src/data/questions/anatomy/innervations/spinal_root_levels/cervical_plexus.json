@@ -1,9 +1,7 @@
 [
   {
-    "id": "CervicalPlexus_001",
+    "id": "cervicalplexus_001",
     "question": "Which spinal nerve roots form the cervical plexus?",
-    "answers": ["C1–C3", "C1–C4", "C2–C5", "C3–C6"],
-    "correct": 1,
     "short_explanation": "The cervical plexus is formed by the anterior rami of C1–C4.",
     "long_explanation": "The cervical plexus arises from the anterior rami of the first four cervical spinal nerves (C1–C4), providing sensory and motor innervation to parts of the head, neck, and shoulders.",
     "applied_example": "Understanding the plexus structure helps massage therapists localize referred pain and nerve-related dysfunctions.",
@@ -19,18 +17,12 @@
     "abcd": ["A. C1–C3", "B. C1–C4", "C. C2–C5", "D. C3–C6"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_002",
+    "id": "cervicalplexus_002",
     "question": "Which of the following nerves is derived from the cervical plexus and innervates the diaphragm?",
-    "answers": [
-      "Ansa cervicalis",
-      "Phrenic nerve",
-      "Greater auricular nerve",
-      "Lesser occipital nerve"
-    ],
-    "correct": 1,
     "short_explanation": "The phrenic nerve (C3–C5) innervates the diaphragm and arises from the cervical plexus.",
     "long_explanation": "The phrenic nerve is a key motor branch of the cervical plexus, essential for respiration. It originates primarily from C4 with contributions from C3 and C5.",
     "applied_example": "Breathing restrictions may be linked to phrenic nerve dysfunction — useful when addressing postural issues or trauma near the neck.",
@@ -56,18 +48,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_003",
+    "id": "cervicalplexus_003",
     "question": "What does the ansa cervicalis innervate?",
-    "answers": [
-      "Suprahyoid muscles",
-      "Scalene muscles",
-      "Infrahyoid muscles",
-      "Tongue muscles"
-    ],
-    "correct": 2,
     "short_explanation": "Ansa cervicalis innervates most infrahyoid muscles.",
     "long_explanation": "The ansa cervicalis is a loop of nerves from the cervical plexus that innervates the sternohyoid, sternothyroid, and omohyoid muscles.",
     "applied_example": "Understanding the ansa helps in surgical planning or massage around the anterior neck.",
@@ -93,18 +79,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_004",
+    "id": "cervicalplexus_004",
     "question": "Which sensory branch of the cervical plexus innervates the skin over the parotid gland and auricle?",
-    "answers": [
-      "Lesser occipital",
-      "Transverse cervical",
-      "Greater auricular",
-      "Supraclavicular"
-    ],
-    "correct": 2,
     "short_explanation": "The greater auricular nerve innervates the parotid region and external ear.",
     "long_explanation": "The greater auricular nerve (C2–C3) is a superficial branch providing cutaneous innervation to the lower part of the auricle and parotid region.",
     "applied_example": "Useful for identifying referred pain patterns from cervical dysfunctions to the ear or jaw.",
@@ -130,18 +110,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_005",
+    "id": "cervicalplexus_005",
     "question": "The transverse cervical nerve provides sensation to which area?",
-    "answers": [
-      "Posterior scalp",
-      "Anterior neck",
-      "Deltoid region",
-      "Mandible"
-    ],
-    "correct": 1,
     "short_explanation": "It supplies the anterior cervical triangle of the neck.",
     "long_explanation": "The transverse cervical nerve (C2–C3) emerges from the cervical plexus and crosses the sternocleidomastoid to supply skin over the anterior neck.",
     "applied_example": "This knowledge is helpful for identifying nerve irritation causing anterior neck discomfort.",
@@ -167,13 +141,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_006",
+    "id": "cervicalplexus_006",
     "question": "Which cervical nerve contributes fibers to the hypoglossal nerve pathway?",
-    "answers": ["C1", "C2", "C3", "C4"],
-    "correct": 0,
     "short_explanation": "C1 fibers hitchhike along CN XII.",
     "long_explanation": "Fibers from C1 spinal nerve join the hypoglossal nerve briefly before branching off to form the superior root of the ansa cervicalis or innervate the geniohyoid and thyrohyoid directly.",
     "applied_example": "Understanding this path helps clarify complex head and neck nerve interactions for therapeutic focus.",
@@ -189,18 +162,12 @@
     "abcd": ["A. C1", "B. C2", "C. C3", "D. C4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_007",
+    "id": "cervicalplexus_007",
     "question": "Which branch of the cervical plexus innervates the skin over the clavicle and upper shoulder?",
-    "answers": [
-      "Supraclavicular nerve",
-      "Phrenic nerve",
-      "Transverse cervical nerve",
-      "Greater auricular nerve"
-    ],
-    "correct": 0,
     "short_explanation": "The supraclavicular nerves innervate the shoulder and upper chest.",
     "long_explanation": "The supraclavicular nerves (C3–C4) divide into medial, intermediate, and lateral branches to supply sensation to the skin over the clavicle and deltoid area.",
     "applied_example": "Shoulder pain could originate from cervical nerves, not always from the glenohumeral joint.",
@@ -226,13 +193,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_008",
+    "id": "cervicalplexus_008",
     "question": "Which function could be impaired by damage to the cervical plexus motor branches?",
-    "answers": ["Swallowing", "Hearing", "Breathing", "Vision"],
-    "correct": 0,
     "short_explanation": "Motor branches like the ansa cervicalis contribute to muscles used in swallowing.",
     "long_explanation": "Damage to motor fibers of the cervical plexus can impair infrahyoid muscle function, affecting swallowing and phonation.",
     "applied_example": "Neck trauma patients with swallowing difficulties may have cervical plexus involvement.",
@@ -248,18 +214,12 @@
     "abcd": ["A. Swallowing", "B. Hearing", "C. Breathing", "D. Vision"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_009",
+    "id": "cervicalplexus_009",
     "question": "The cervical plexus communicates with which adjacent plexus?",
-    "answers": [
-      "Lumbar plexus",
-      "Thoracic plexus",
-      "Brachial plexus",
-      "Sacral plexus"
-    ],
-    "correct": 2,
     "short_explanation": "C5 contributes to both cervical and brachial plexuses.",
     "long_explanation": "Cervical plexus (C1–C4) ends just before C5, which forms the root of the brachial plexus. However, there may be communication, especially in variant anatomy.",
     "applied_example": "Shoulder and neck symptoms may overlap due to shared spinal levels.",
@@ -289,18 +249,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   },
   {
-    "id": "CervicalPlexus_010",
+    "id": "cervicalplexus_010",
     "question": "Which of the following symptoms may suggest cervical plexus involvement?",
-    "answers": [
-      "Foot drop",
-      "Facial droop",
-      "Shoulder numbness",
-      "Hand tremor"
-    ],
-    "correct": 2,
     "short_explanation": "Sensory loss in the neck or shoulder suggests cervical plexus irritation.",
     "long_explanation": "The cervical plexus supplies the skin of the neck, jaw, and shoulder. Symptoms in these areas may indicate nerve compression or inflammation in C1–C4 roots.",
     "applied_example": "Massage therapists should assess dermatomes when treating upper neck or shoulder tightness.",
@@ -326,6 +280,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cervical_plexus.json"
+    "sourceFile": "cervical_plexus",
+    "unit": "cervical_plexus"
   }
 ]

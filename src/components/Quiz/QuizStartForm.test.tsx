@@ -3,8 +3,8 @@ import { render, screen, fireEvent } from '../../utils/testUtils';
 import QuizStartForm from './QuizStartForm';
 
 const defaultProps = {
-  availableTopics: ['Anatomy', 'Physiology'],
-  selectedTopic: 'Anatomy',
+  availableTopics: ['Anatomy Questions', 'Physiology Questions'], // Example prettified filenames
+  selectedTopic: 'Anatomy Questions',
   setSelectedTopic: jest.fn(),
   quizLength: 10,
   setQuizLength: jest.fn(),
@@ -30,15 +30,15 @@ const defaultProps = {
 describe('QuizStartForm', () => {
   it('renders with required props', () => {
     render(<QuizStartForm {...defaultProps} />);
-    expect(screen.getByText('Anatomy')).toBeInTheDocument();
+    expect(screen.getByText('Anatomy Questions')).toBeInTheDocument();
   });
 
   it('handles topic selection', () => {
     render(<QuizStartForm {...defaultProps} />);
     fireEvent.change(screen.getByLabelText(/topic/i), {
-      target: { value: 'Physiology' },
+      target: { value: 'Physiology Questions' },
     });
-    expect(defaultProps.setSelectedTopic).toHaveBeenCalledWith('Physiology');
+    expect(defaultProps.setSelectedTopic).toHaveBeenCalledWith('Physiology Questions');
   });
 
   it('handles quiz length change', () => {

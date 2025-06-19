@@ -2,13 +2,6 @@
   {
     "id": "aortic_valve_001",
     "question": "What is the main function of the aortic valve?",
-    "answers": [
-      "Prevent backflow from the left ventricle to the left atrium",
-      "Prevent backflow from the aorta into the left ventricle",
-      "Prevent blood flow into the pulmonary artery",
-      "Regulate pressure in the vena cava"
-    ],
-    "correct": 1,
     "short_explanation": "The aortic valve prevents backflow from the aorta into the left ventricle.",
     "long_explanation": "The aortic valve is a semilunar valve that closes after systole to prevent blood from re-entering the left ventricle. It ensures one-way flow of oxygenated blood from the heart to systemic circulation.",
     "applied_example": "Aortic valve regurgitation can lead to decreased cardiac efficiency and symptoms such as fatigue, which massage therapists should monitor for during client intake.",
@@ -34,13 +27,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_002",
     "question": "Which type of valve is the aortic valve?",
-    "answers": ["Atrioventricular", "Semilunar", "Mitral", "Tricuspid"],
-    "correct": 1,
     "short_explanation": "The aortic valve is classified as a semilunar valve.",
     "long_explanation": "Semilunar valves, including the aortic and pulmonary valves, have half-moon-shaped cusps that open and close with pressure changes in the heart to regulate blood flow direction.",
     "applied_example": "Understanding valve types helps in identifying pathologies such as stenosis, important for assessing client history.",
@@ -61,18 +53,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_003",
     "question": "Where is the aortic valve located?",
-    "answers": [
-      "Between the right atrium and right ventricle",
-      "Between the left ventricle and the aorta",
-      "Between the left atrium and left ventricle",
-      "Between the pulmonary trunk and the right ventricle"
-    ],
-    "correct": 1,
     "short_explanation": "The aortic valve lies between the left ventricle and the aorta.",
     "long_explanation": "The aortic valve ensures one-way flow of blood from the left ventricle to the aorta, preventing backflow during diastole.",
     "applied_example": "Aortic stenosis can cause left ventricular hypertrophy, something to consider in cardiac-focused massage therapy assessments.",
@@ -98,18 +84,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_004",
     "question": "What pathological condition is characterized by narrowing of the aortic valve?",
-    "answers": [
-      "Aortic regurgitation",
-      "Aortic stenosis",
-      "Mitral valve prolapse",
-      "Tricuspid insufficiency"
-    ],
-    "correct": 1,
     "short_explanation": "Aortic stenosis is the narrowing of the aortic valve opening.",
     "long_explanation": "Aortic stenosis restricts blood flow from the left ventricle to the aorta, leading to increased cardiac workload and potential heart failure.",
     "applied_example": "Massage pressure should be monitored in clients with known aortic stenosis to avoid cardiovascular strain.",
@@ -135,13 +115,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_005",
     "question": "Which sound is associated with aortic valve closure?",
-    "answers": ["S1", "S2", "S3", "S4"],
-    "correct": 1,
     "short_explanation": "The aortic valve closure contributes to the S2 sound.",
     "long_explanation": "S2 marks the end of systole and includes closure of the aortic and pulmonary valves.",
     "applied_example": "Changes in S2 may be a clinical sign of aortic valve dysfunction.",
@@ -157,13 +136,12 @@
     "abcd": ["A. S1", "B. S2", "C. S3", "D. S4"],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_006",
     "question": "How many cusps does the aortic valve typically have?",
-    "answers": ["2", "3", "4", "5"],
-    "correct": 1,
     "short_explanation": "The aortic valve normally has three cusps.",
     "long_explanation": "The three cusps of the aortic valve—right, left, and posterior—function together to prevent backflow into the ventricle.",
     "applied_example": "A bicuspid aortic valve is a common congenital variation and a risk factor for early valve disease.",
@@ -179,18 +157,12 @@
     "abcd": ["A. 2", "B. 3", "C. 4", "D. 5"],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_007",
     "question": "What is a bicuspid aortic valve?",
-    "answers": [
-      "A valve with three flaps",
-      "A congenital defect with only two cusps",
-      "A valve that connects the right atrium to the aorta",
-      "A type of pulmonary valve defect"
-    ],
-    "correct": 1,
     "short_explanation": "A bicuspid aortic valve has only two cusps instead of three.",
     "long_explanation": "Bicuspid aortic valve is a congenital anomaly that can predispose individuals to aortic stenosis or regurgitation over time.",
     "applied_example": "Massage therapists should note cardiovascular history in clients with congenital valve disorders.",
@@ -216,13 +188,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_008",
     "question": "Which diagnostic test is commonly used to evaluate aortic valve function?",
-    "answers": ["ECG", "MRI of the spine", "Echocardiography", "Chest X-ray"],
-    "correct": 2,
     "short_explanation": "Echocardiography is commonly used to assess valve function.",
     "long_explanation": "Echocardiography provides real-time imaging of heart valves, allowing assessment of valve morphology, flow, and regurgitation.",
     "applied_example": "Medical records indicating echocardiography findings can help therapists adjust techniques for cardiovascular safety.",
@@ -243,18 +214,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_009",
     "question": "What symptom may suggest aortic valve insufficiency?",
-    "answers": [
-      "Bradycardia",
-      "Leg cramps",
-      "Exertional dyspnea",
-      "Neck stiffness"
-    ],
-    "correct": 2,
     "short_explanation": "Shortness of breath during exertion may indicate valve insufficiency.",
     "long_explanation": "Aortic regurgitation reduces cardiac output efficiency, leading to symptoms such as fatigue, dyspnea, and decreased exercise tolerance.",
     "applied_example": "Massage therapists may need to modify treatment if clients experience fatigue or breathing issues due to valve insufficiency.",
@@ -280,18 +245,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   },
   {
     "id": "aortic_valve_010",
     "question": "Aortic valve replacement may be indicated in which condition?",
-    "answers": [
-      "Mild bradycardia",
-      "Hypertension",
-      "Severe aortic stenosis",
-      "Tricuspid regurgitation"
-    ],
-    "correct": 2,
     "short_explanation": "Severe aortic stenosis is a primary indication for valve replacement.",
     "long_explanation": "In cases of severe stenosis or regurgitation where symptoms impair quality of life, valve replacement is often recommended to restore efficient cardiac output.",
     "applied_example": "Clients with valve replacements may require special positioning and monitoring during massage.",
@@ -321,6 +280,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/heart",
-    "filename": "aortic_valve.json"
+    "sourceFile": "aortic_valve",
+    "unit": "aortic_valve"
   }
 ]

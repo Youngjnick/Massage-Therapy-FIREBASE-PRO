@@ -2,13 +2,6 @@
   {
     "id": "herpes_zoster_001",
     "question": "What virus is responsible for causing herpes zoster (shingles)?",
-    "answers": [
-      "Herpes simplex virus type 2",
-      "Epstein-Barr virus",
-      "Varicella-zoster virus",
-      "Cytomegalovirus"
-    ],
-    "correct": 2,
     "short_explanation": "Herpes zoster is caused by reactivation of varicella-zoster virus.",
     "long_explanation": "Herpes zoster results from reactivation of the dormant varicella-zoster virus (the same virus that causes chickenpox) in sensory ganglia.",
     "clinical_application": "Massage is contraindicated during the active outbreak due to risk of transmission and nerve inflammation.",
@@ -39,18 +32,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "herpes_zoster.json"
+    "sourceFile": "herpes_zoster",
+    "unit": "herpes_zoster"
   },
   {
     "id": "herpes_zoster_002",
     "question": "Where does the herpes zoster virus remain dormant after initial infection?",
-    "answers": [
-      "Epidermal layer",
-      "Spinal dorsal root ganglia",
-      "Thymus",
-      "Blood plasma"
-    ],
-    "correct": 1,
     "short_explanation": "VZV remains latent in dorsal root ganglia.",
     "long_explanation": "After chickenpox resolves, the virus lies dormant in sensory neurons of dorsal root ganglia and may reactivate later in life as shingles.",
     "clinical_application": "Understanding its neurological location helps explain dermatomal pain distribution in clients.",
@@ -81,18 +68,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "herpes_zoster.json"
+    "sourceFile": "herpes_zoster",
+    "unit": "herpes_zoster"
   },
   {
     "id": "herpes_zoster_003",
     "question": "What is the most common symptom of active herpes zoster?",
-    "answers": [
-      "Joint pain",
-      "General fatigue",
-      "Unilateral dermatomal rash with burning pain",
-      "Bilateral rash"
-    ],
-    "correct": 2,
     "short_explanation": "It typically presents as a painful rash in one dermatome.",
     "long_explanation": "The virus travels down a specific sensory nerve to the skin, causing a unilateral vesicular rash and severe neuropathic pain along that dermatome.",
     "clinical_application": "Clients with this pattern may report burning pain in one area—alerting therapists to a possible reactivation.",
@@ -123,18 +104,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "herpes_zoster.json"
+    "sourceFile": "herpes_zoster",
+    "unit": "herpes_zoster"
   },
   {
     "id": "herpes_zoster_004",
     "question": "What term describes nerve pain that persists after shingles resolves?",
-    "answers": [
-      "Radiculopathy",
-      "Paresthesia",
-      "Postherpetic neuralgia",
-      "Myelitis"
-    ],
-    "correct": 2,
     "short_explanation": "Postherpetic neuralgia is prolonged nerve pain after shingles.",
     "long_explanation": "Postherpetic neuralgia can last months or even years, caused by damaged sensory nerves from viral inflammation.",
     "clinical_application": "Massage may be cautiously reintroduced to improve circulation and comfort in the chronic phase.",
@@ -165,18 +140,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "herpes_zoster.json"
+    "sourceFile": "herpes_zoster",
+    "unit": "herpes_zoster"
   },
   {
     "id": "herpes_zoster_005",
     "question": "Which group is at the highest risk for herpes zoster reactivation?",
-    "answers": [
-      "Children under 5",
-      "Pregnant women",
-      "Elderly or immunocompromised individuals",
-      "Athletes"
-    ],
-    "correct": 2,
     "short_explanation": "The elderly and those with weak immune systems are most vulnerable.",
     "long_explanation": "Reactivation risk increases with age or immunosuppression due to reduced cell-mediated immunity needed to suppress the virus.",
     "clinical_application": "Massage therapists should screen older clients for shingles history before applying techniques near affected nerves.",
@@ -207,6 +176,7 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "herpes_zoster.json"
+    "sourceFile": "herpes_zoster",
+    "unit": "herpes_zoster"
   }
 ]

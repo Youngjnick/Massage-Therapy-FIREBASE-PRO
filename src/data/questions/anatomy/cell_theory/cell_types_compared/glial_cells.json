@@ -2,13 +2,6 @@
   {
     "id": "glial_cells_001",
     "question": "What is the primary function of astrocytes in the central nervous system?",
-    "answers": [
-      "Form cerebrospinal fluid",
-      "Insulate axons with myelin",
-      "Regulate blood-brain barrier and ion balance",
-      "Generate electrical impulses"
-    ],
-    "correct": 2,
     "short_explanation": "Astrocytes help regulate the blood-brain barrier and maintain extracellular ion balance.",
     "long_explanation": "Astrocytes are star-shaped glial cells that support neurons by maintaining the extracellular environment, repairing the CNS after injury, and regulating the blood-brain barrier.",
     "applied_example": "Understanding astrocyte function helps massage therapists appreciate how neurological inflammation can affect muscle tone and client sensation.",
@@ -34,13 +27,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_002",
     "question": "Which type of glial cell forms the myelin sheath in the central nervous system?",
-    "answers": ["Astrocytes", "Schwann cells", "Oligodendrocytes", "Microglia"],
-    "correct": 2,
     "short_explanation": "Oligodendrocytes myelinate axons in the CNS.",
     "long_explanation": "Each oligodendrocyte can extend its processes to multiple axons, forming segments of myelin that increase the speed of electrical conduction.",
     "applied_example": "Damage to oligodendrocytes is seen in MS, which may present as sensory dysfunction during bodywork assessments.",
@@ -61,18 +53,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_003",
     "question": "What is the role of microglia in the nervous system?",
-    "answers": [
-      "Support axonal transport",
-      "Regulate cerebrospinal fluid",
-      "Act as immune defense cells",
-      "Myelinate peripheral nerves"
-    ],
-    "correct": 2,
     "short_explanation": "Microglia serve as immune cells within the CNS.",
     "long_explanation": "Microglia constantly survey the CNS and respond to injury or infection by phagocytosing debris and releasing inflammatory cytokines.",
     "applied_example": "Overactivation of microglia may contribute to chronic pain, relevant in neuropathic massage adaptations.",
@@ -98,18 +84,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_004",
     "question": "Which glial cells line the ventricles of the brain and produce cerebrospinal fluid (CSF)?",
-    "answers": [
-      "Oligodendrocytes",
-      "Ependymal cells",
-      "Astrocytes",
-      "Microglia"
-    ],
-    "correct": 1,
     "short_explanation": "Ependymal cells produce and circulate cerebrospinal fluid.",
     "long_explanation": "Ependymal cells form a barrier between CSF and neural tissue and aid in fluid movement through cilia. They are essential to CNS homeostasis.",
     "applied_example": "Clients with hydrocephalus may present with symptoms requiring modified head or neck massage protocols.",
@@ -135,18 +115,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_005",
     "question": "Which glial cells are found in the peripheral nervous system and provide myelin?",
-    "answers": [
-      "Astrocytes",
-      "Schwann cells",
-      "Ependymal cells",
-      "Oligodendrocytes"
-    ],
-    "correct": 1,
     "short_explanation": "Schwann cells myelinate axons in the PNS.",
     "long_explanation": "Each Schwann cell wraps around a portion of one axon to form a myelin sheath, enhancing electrical signal speed in peripheral nerves.",
     "applied_example": "Massage near nerve entrapments (e.g. carpal tunnel) may be informed by Schwann cell health.",
@@ -172,18 +146,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_006",
     "question": "Which glial cells participate in synaptic pruning and neurotransmitter uptake?",
-    "answers": [
-      "Microglia",
-      "Astrocytes",
-      "Oligodendrocytes",
-      "Ependymal cells"
-    ],
-    "correct": 1,
     "short_explanation": "Astrocytes regulate neurotransmitters and remove excess synaptic debris.",
     "long_explanation": "Astrocytes help modulate synaptic activity by recycling neurotransmitters like glutamate and GABA, contributing to synaptic plasticity and neural homeostasis.",
     "applied_example": "Understanding astrocytic function is relevant in chronic stress or PTSD, often presenting with altered nervous system tone during massage.",
@@ -209,13 +177,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_007",
     "question": "Which glial cells are most involved in the formation of the glial scar after injury?",
-    "answers": ["Ependymal cells", "Microglia", "Astrocytes", "Schwann cells"],
-    "correct": 2,
     "short_explanation": "Astrocytes form glial scars after CNS injury.",
     "long_explanation": "After trauma or inflammation, astrocytes proliferate and form dense scars to wall off injury, limiting regeneration but protecting healthy tissue.",
     "applied_example": "In clients with spinal cord injury, glial scar formation affects neurological recovery and massage sensitivity.",
@@ -236,18 +203,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_008",
     "question": "Which glial cell type maintains the ionic environment around neurons?",
-    "answers": [
-      "Astrocytes",
-      "Microglia",
-      "Ependymal cells",
-      "Oligodendrocytes"
-    ],
-    "correct": 0,
     "short_explanation": "Astrocytes help buffer potassium ions around neurons.",
     "long_explanation": "Astrocytes absorb extracellular potassium ions released during neuronal activity, preventing hyperexcitability and maintaining signaling balance.",
     "applied_example": "Proper ionic balance supports smooth neuromuscular function, relevant for massage therapy targeting spasms or tremors.",
@@ -273,13 +234,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_009",
     "question": "Which glial cell is primarily responsible for removing cellular debris after CNS injury?",
-    "answers": ["Schwann cells", "Ependymal cells", "Astrocytes", "Microglia"],
-    "correct": 3,
     "short_explanation": "Microglia clean up cellular debris post-injury.",
     "long_explanation": "As CNS-resident macrophages, microglia rapidly respond to neuronal damage by engulfing apoptotic cells and releasing growth factors or inflammatory mediators.",
     "applied_example": "Massage adaptations for neuroinflammatory conditions benefit from understanding microglial behavior.",
@@ -300,13 +260,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   },
   {
     "id": "glial_cells_010",
     "question": "Which glial cell has a role in guiding developing neurons during embryogenesis?",
-    "answers": ["Radial glia", "Schwann cells", "Microglia", "Astrocytes"],
-    "correct": 0,
     "short_explanation": "Radial glial cells act as scaffolding for developing neurons.",
     "long_explanation": "During embryonic development, radial glia guide migrating neurons to their final locations and later differentiate into other glial types.",
     "applied_example": "Understanding developmental pathways helps therapists contextualize congenital conditions affecting movement or coordination.",
@@ -327,6 +286,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "glial_cells.json"
+    "sourceFile": "glial_cells",
+    "unit": "glial_cells"
   }
 ]

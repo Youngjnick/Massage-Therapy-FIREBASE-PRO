@@ -14,10 +14,7 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats }) => 
     <div data-testid="quiz-topic-progress" style={{ display: 'flex', gap: 16, marginBottom: 12, flexWrap: 'wrap' }}>
       {Object.entries(topicStats).map(([topic, stat]) => {
         // Defensive: prevent duplicate topic name rendering (e.g., 'topictpoic')
-        const cleanTopic =
-          typeof topic === 'string'
-            ? topic.replace(/(topictpoic|tpoic|topic)+/gi, 'topic').replace(/topic+/gi, 'topic').trim()
-            : topic;
+        const cleanTopic = typeof topic === 'string' ? topic : topic;
         return (
           <div key={topic} style={{ minWidth: 120 }}>
             <div style={{ fontWeight: 600 }}>{cleanTopic}</div>

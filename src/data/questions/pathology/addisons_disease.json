@@ -8,13 +8,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "What gland is primarily affected in Addison’s disease?",
-    "answers": [
-      "Pituitary gland",
-      "Thyroid gland",
-      "Adrenal cortex",
-      "Pancreas"
-    ],
-    "correct": 2,
     "short_explanation": "Addison’s disease affects the adrenal cortex.",
     "long_explanation": "Addison’s disease is caused by insufficient production of cortisol and aldosterone due to dysfunction or destruction of the adrenal cortex.",
     "clinical_application": "Clients with Addison’s may experience fatigue, low blood pressure, and require gentle treatment approaches during massage.",
@@ -37,18 +30,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_002",
     "question": "Which two hormones are deficient in Addison’s disease?",
-    "answers": [
-      "Insulin and glucagon",
-      "Cortisol and aldosterone",
-      "Estrogen and progesterone",
-      "ADH and oxytocin"
-    ],
-    "correct": 1,
     "short_explanation": "Cortisol and aldosterone are deficient in Addison’s.",
     "long_explanation": "In Addison’s disease, the adrenal glands do not produce enough of the steroid hormones cortisol (a glucocorticoid) and aldosterone (a mineralocorticoid).",
     "clinical_application": "Hormonal deficiency may lead to low energy, dizziness, and sensitivity to heat — important considerations for massage therapists.",
@@ -77,18 +64,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_003",
     "question": "Which of the following is a common symptom of Addison’s disease?",
-    "answers": [
-      "Hyperactivity",
-      "Low blood pressure",
-      "Rapid weight gain",
-      "Excess facial hair"
-    ],
-    "correct": 1,
     "short_explanation": "Hypotension is a common symptom due to low aldosterone.",
     "long_explanation": "Addison’s disease often causes low blood pressure due to insufficient aldosterone, which normally retains sodium and water to maintain blood volume.",
     "clinical_application": "Clients with hypotension may feel lightheaded during massage; use caution with position changes.",
@@ -117,18 +98,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_004",
     "question": "What skin sign is often associated with Addison’s disease?",
-    "answers": [
-      "Pale patches",
-      "Dark pigmentation (hyperpigmentation)",
-      "Itchy red rashes",
-      "Bluish fingernails"
-    ],
-    "correct": 1,
     "short_explanation": "Darkening of the skin (hyperpigmentation) is common in Addison’s.",
     "long_explanation": "In primary adrenal insufficiency, elevated ACTH levels stimulate melanin production, leading to bronzing or dark patches, especially on scars, elbows, and gums.",
     "clinical_application": "Be mindful of skin sensitivity or discoloration when observing clients during intake or treatment.",
@@ -157,18 +132,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_005",
     "question": "Which electrolyte imbalance is typical in Addison’s disease?",
-    "answers": [
-      "Hypernatremia and hypokalemia",
-      "Hyponatremia and hyperkalemia",
-      "Hypercalcemia and hypernatremia",
-      "Hypokalemia and hypoglycemia"
-    ],
-    "correct": 1,
     "short_explanation": "Low sodium and high potassium are common in Addison’s.",
     "long_explanation": "Due to low aldosterone, the kidneys excrete more sodium and retain potassium, leading to hyponatremia and hyperkalemia.",
     "clinical_application": "These imbalances may cause weakness, cramping, or fatigue during massage sessions.",
@@ -197,18 +166,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_006",
     "question": "What is the most common cause of Addison’s disease in developed countries?",
-    "answers": [
-      "Tuberculosis",
-      "Autoimmune destruction of the adrenal cortex",
-      "Radiation exposure",
-      "Viral infection"
-    ],
-    "correct": 1,
     "short_explanation": "Autoimmune destruction is the most common cause.",
     "long_explanation": "In developed nations, Addison’s disease is most often caused by the body’s immune system attacking its own adrenal glands, leading to hormonal deficiency.",
     "clinical_application": "Autoimmune conditions may involve systemic fatigue or inflammation, requiring modified massage protocols.",
@@ -237,18 +200,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_007",
     "question": "What is an Addisonian crisis?",
-    "answers": [
-      "A sudden drop in blood pressure and cortisol levels",
-      "A seizure related to glucose deficiency",
-      "Excess hormone release causing panic",
-      "A tumor of the adrenal medulla"
-    ],
-    "correct": 0,
     "short_explanation": "Addisonian crisis is a life-threatening drop in cortisol and BP.",
     "long_explanation": "An Addisonian crisis occurs when cortisol levels suddenly fall, usually under stress or illness. It causes severe hypotension, vomiting, and may lead to shock.",
     "clinical_application": "Massage therapists should defer treatment and refer immediately if a client shows signs of crisis (confusion, collapse, severe fatigue).",
@@ -277,13 +234,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_008",
     "question": "Which hormone is usually elevated in primary Addison’s disease due to feedback mechanisms?",
-    "answers": ["TSH", "Growth hormone", "ACTH", "Prolactin"],
-    "correct": 2,
     "short_explanation": "ACTH increases in response to low cortisol.",
     "long_explanation": "The pituitary increases ACTH production in an attempt to stimulate cortisol release from the failing adrenal glands, often leading to hyperpigmentation via melanocyte stimulation.",
     "clinical_application": "This helps explain skin changes and hormonal patterns seen during intake assessments.",
@@ -302,18 +258,12 @@
     "abcd": ["A. TSH", "B. Growth hormone", "C. ACTH", "D. Prolactin"],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_009",
     "question": "What treatment is typically required for Addison’s disease?",
-    "answers": [
-      "Insulin injections",
-      "Corticosteroid replacement therapy",
-      "Radiation therapy",
-      "Beta blockers"
-    ],
-    "correct": 1,
     "short_explanation": "Corticosteroids replace deficient hormones.",
     "long_explanation": "Lifelong hormone replacement with synthetic glucocorticoids (e.g., hydrocortisone) and sometimes mineralocorticoids is the standard treatment to manage symptoms and prevent crises.",
     "clinical_application": "Clients on corticosteroids may bruise easily and need lighter techniques.",
@@ -342,18 +292,12 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   },
   {
     "id": "addisons_010",
     "question": "Which of the following would be a **massage consideration** for a client with Addison’s disease?",
-    "answers": [
-      "Use deep pressure to increase circulation",
-      "Avoid all massage unless under supervision",
-      "Monitor for fatigue, dizziness, or low BP during sessions",
-      "Apply vigorous lymphatic drainage techniques"
-    ],
-    "correct": 2,
     "short_explanation": "Clients with Addison’s may tire easily and experience hypotension.",
     "long_explanation": "Due to low cortisol and aldosterone, clients with Addison’s disease may have low energy and blood pressure. Gentle, supportive massage is safest, with careful monitoring of position changes and energy levels.",
     "clinical_application": "Keep sessions shorter and supportive, and avoid rapid position changes to prevent dizziness or fainting.",
@@ -382,6 +326,7 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "addisons_disease.json"
+    "sourceFile": "addisons_disease",
+    "unit": "addisons_disease"
   }
 ]

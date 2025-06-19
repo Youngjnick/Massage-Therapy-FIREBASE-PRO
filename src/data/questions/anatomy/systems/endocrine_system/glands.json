@@ -8,13 +8,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Which type of gland produces sweat for thermoregulation?",
-    "answers": [
-      "Sebaceous gland",
-      "Eccrine gland",
-      "Apocrine gland",
-      "Ceruminous gland"
-    ],
-    "correct": 1,
     "short_explanation": "Eccrine glands produce sweat to cool the body.",
     "long_explanation": "Eccrine glands are distributed throughout the body and help regulate temperature by secreting a watery sweat directly onto the skin surface.",
     "clinical_application": "Eccrine function is crucial during exercise and massage to avoid overheating.",
@@ -40,7 +33,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_002",
@@ -51,13 +45,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Sebaceous glands are associated with which structure?",
-    "answers": [
-      "Sweat pores",
-      "Hair follicles",
-      "Dermal papillae",
-      "Arrector pili"
-    ],
-    "correct": 1,
     "short_explanation": "Sebaceous glands secrete oil into hair follicles.",
     "long_explanation": "Sebaceous glands release sebum into the follicle canal, lubricating hair and skin.",
     "clinical_application": "Overactivity can lead to acne; massage over acne-prone areas should be gentle.",
@@ -83,7 +70,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_003",
@@ -94,8 +82,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Which glands become active during puberty and are found in the armpits and groin?",
-    "answers": ["Eccrine", "Apocrine", "Sebaceous", "Ceruminous"],
-    "correct": 1,
     "short_explanation": "Apocrine glands are stimulated by hormones and stress.",
     "long_explanation": "Apocrine sweat glands release a thicker secretion into hair follicles, which can be broken down by skin bacteria causing body odor.",
     "clinical_application": "These areas require careful hygiene and massage consideration.",
@@ -111,7 +97,8 @@
     "abcd": ["A. Eccrine", "B. Apocrine", "C. Sebaceous", "D. Ceruminous"],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_004",
@@ -122,13 +109,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "What is the main function of ceruminous glands?",
-    "answers": [
-      "Oil production",
-      "Sweat production",
-      "Earwax secretion",
-      "Tear secretion"
-    ],
-    "correct": 2,
     "short_explanation": "Ceruminous glands produce cerumen or earwax.",
     "long_explanation": "These modified sweat glands in the external auditory canal protect the ear by trapping dust and repelling insects.",
     "clinical_application": "Massage therapists should avoid inserting anything into the ear canal.",
@@ -154,7 +134,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_005",
@@ -165,8 +146,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "Which gland is involved in lubricating and waterproofing the skin?",
-    "answers": ["Apocrine", "Ceruminous", "Sebaceous", "Eccrine"],
-    "correct": 2,
     "short_explanation": "Sebaceous glands secrete oily sebum.",
     "long_explanation": "Sebum maintains moisture, prevents cracking, and creates a slightly acidic environment to resist microbes.",
     "clinical_application": "Massage oils mimic natural sebum to protect skin integrity.",
@@ -182,7 +161,8 @@
     "abcd": ["A. Apocrine", "B. Ceruminous", "C. Sebaceous", "D. Eccrine"],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_006",
@@ -193,8 +173,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "Which glands respond primarily to emotional stress?",
-    "answers": ["Sebaceous", "Apocrine", "Eccrine", "Mammary"],
-    "correct": 1,
     "short_explanation": "Apocrine glands respond to stress and emotions.",
     "long_explanation": "They release secretion into hair follicles in stress-related regions like axillae and groin.",
     "clinical_application": "Sweating during massage may activate these glands in clients with anxiety.",
@@ -210,7 +188,8 @@
     "abcd": ["A. Sebaceous", "B. Apocrine", "C. Eccrine", "D. Mammary"],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_007",
@@ -221,13 +200,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "What type of gland is the mammary gland?",
-    "answers": [
-      "Modified sebaceous",
-      "Modified sweat",
-      "Endocrine",
-      "Lacrimal"
-    ],
-    "correct": 1,
     "short_explanation": "Mammary glands are modified apocrine glands.",
     "long_explanation": "Mammary glands produce milk and are structurally related to apocrine sweat glands.",
     "clinical_application": "Breast massage should consider glandular structure and function.",
@@ -253,7 +225,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_008",
@@ -264,8 +237,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "What secretion is produced by sebaceous glands?",
-    "answers": ["Sweat", "Sebum", "Cerumen", "Milk"],
-    "correct": 1,
     "short_explanation": "Sebaceous glands produce sebum.",
     "long_explanation": "Sebum is an oily, lipid-based substance that lubricates the skin and has antibacterial properties.",
     "clinical_application": "Sebum production varies across body regions and skin types.",
@@ -281,7 +252,8 @@
     "abcd": ["A. Sweat", "B. Sebum", "C. Cerumen", "D. Milk"],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_009",
@@ -292,8 +264,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "Which glands are most numerous in the palms and soles?",
-    "answers": ["Apocrine", "Sebaceous", "Ceruminous", "Eccrine"],
-    "correct": 3,
     "short_explanation": "Eccrine glands are abundant in palms and soles.",
     "long_explanation": "They provide effective thermoregulation and grip enhancement through sweat production.",
     "clinical_application": "Understanding gland locations helps tailor massage techniques.",
@@ -309,7 +279,8 @@
     "abcd": ["A. Apocrine", "B. Sebaceous", "C. Ceruminous", "D. Eccrine"],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   },
   {
     "id": "glands_010",
@@ -320,8 +291,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "Which gland is modified to secrete into the auditory canal?",
-    "answers": ["Lacrimal", "Sebaceous", "Ceruminous", "Apocrine"],
-    "correct": 2,
     "short_explanation": "Ceruminous glands secrete earwax into the ear canal.",
     "long_explanation": "These specialized glands trap debris and prevent microbial growth in the ear.",
     "clinical_application": "Massage therapists should avoid pressure near infected ceruminous glands.",
@@ -337,6 +306,7 @@
     "abcd": ["A. Lacrimal", "B. Sebaceous", "C. Ceruminous", "D. Apocrine"],
     "main_topic": "anatomy",
     "subtopic": "systems/endocrine_system",
-    "filename": "glands.json"
+    "sourceFile": "glands",
+    "unit": "glands"
   }
 ]

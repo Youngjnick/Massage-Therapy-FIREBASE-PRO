@@ -2,8 +2,6 @@
   {
     "id": "nmj_001",
     "question": "What is the primary neurotransmitter at the neuromuscular junction?",
-    "answers": ["Dopamine", "Acetylcholine", "Epinephrine", "Serotonin"],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Acetylcholine is the key neurotransmitter that activates skeletal muscle.",
     "long_explanation": "At the neuromuscular junction, acetylcholine is released from motor neurons and binds to receptors on the muscle fiber, initiating contraction.",
@@ -25,13 +23,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_002",
     "question": "Which structure on the muscle fiber receives the nerve signal at the NMJ?",
-    "answers": ["Sarcomere", "Myofibril", "Motor end plate", "T-tubule"],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "The motor end plate is the receptive surface of the NMJ on the muscle fiber.",
     "long_explanation": "The motor end plate is a specialized region of the sarcolemma with receptors for acetylcholine. It initiates an action potential in the muscle.",
@@ -53,13 +50,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_003",
     "question": "Which ion is primarily responsible for triggering neurotransmitter release at the NMJ?",
-    "answers": ["Sodium", "Calcium", "Potassium", "Magnesium"],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Calcium influx causes synaptic vesicle release.",
     "long_explanation": "When an action potential reaches the axon terminal, calcium channels open, allowing Ca²⁺ to enter and trigger acetylcholine release.",
@@ -76,18 +72,12 @@
     "abcd": ["A. Sodium", "B. Calcium", "C. Potassium", "D. Magnesium"],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_004",
     "question": "What enzyme breaks down acetylcholine in the synaptic cleft?",
-    "answers": [
-      "Monoamine oxidase",
-      "Acetylcholinesterase",
-      "Tyrosine hydroxylase",
-      "Choline acetyltransferase"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Acetylcholinesterase terminates the signal at the NMJ.",
     "long_explanation": "This enzyme rapidly degrades acetylcholine in the cleft to prevent prolonged stimulation of the muscle fiber.",
@@ -114,18 +104,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_005",
     "question": "Which disorder is caused by antibodies attacking acetylcholine receptors?",
-    "answers": [
-      "Multiple sclerosis",
-      "Parkinson’s disease",
-      "Myasthenia gravis",
-      "ALS"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Myasthenia gravis disrupts NMJ communication.",
     "long_explanation": "This autoimmune condition reduces the number of functional acetylcholine receptors, leading to muscle weakness and fatigue.",
@@ -152,18 +136,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_006",
     "question": "Where is the synaptic cleft located in the NMJ?",
-    "answers": [
-      "Within the sarcoplasmic reticulum",
-      "Between the axon terminal and motor end plate",
-      "Inside the muscle fiber nucleus",
-      "Inside the synaptic vesicle"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "The synaptic cleft is the gap between nerve and muscle membranes.",
     "long_explanation": "This narrow space allows neurotransmitters to diffuse from the neuron to the muscle's motor end plate.",
@@ -190,18 +168,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_007",
     "question": "What is the function of synaptic vesicles in the NMJ?",
-    "answers": [
-      "Generate muscle contraction",
-      "Hold mitochondria",
-      "Store and release neurotransmitters",
-      "Form new axons"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Synaptic vesicles release neurotransmitters into the cleft.",
     "long_explanation": "These membrane-bound sacs inside the axon terminal store acetylcholine and release it via exocytosis during neural activation.",
@@ -228,18 +200,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_008",
     "question": "How does the NMJ ensure a one-to-one transmission of nerve impulses to muscle fibers?",
-    "answers": [
-      "Multiple synapses",
-      "Large number of neurotransmitters and receptors",
-      "Reuptake inhibition",
-      "Use of gap junctions"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "A high safety factor ensures each impulse activates the muscle fiber.",
     "long_explanation": "The NMJ releases more acetylcholine than needed, and the motor end plate has abundant receptors, ensuring reliable transmission.",
@@ -266,18 +232,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_009",
     "question": "What happens when acetylcholine binds to receptors at the NMJ?",
-    "answers": [
-      "Potassium channels open",
-      "Calcium exits the muscle fiber",
-      "An action potential is generated in the muscle fiber",
-      "The neuron retracts"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "The muscle fiber is depolarized, leading to contraction.",
     "long_explanation": "Binding of acetylcholine causes sodium influx, depolarizing the muscle membrane and initiating a muscle action potential.",
@@ -304,18 +264,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   },
   {
     "id": "nmj_010",
     "question": "Why is the NMJ often called a 'chemical synapse'?",
-    "answers": [
-      "It conducts electricity directly",
-      "It uses acetylcholine to bridge the gap",
-      "It contains only muscle fibers",
-      "It contains tight junctions"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "The NMJ uses chemical messengers, not direct electrical continuity.",
     "long_explanation": "Unlike gap junctions, the NMJ relies on neurotransmitter release and receptor activation to transmit the signal.",
@@ -342,6 +296,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue",
-    "filename": "neuromuscular_junction.json"
+    "sourceFile": "neuromuscular_junction",
+    "unit": "neuromuscular_junction"
   }
 ]

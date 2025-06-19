@@ -8,8 +8,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "What is considered an ideal pain level during therapeutic massage work?",
-    "answers": ["0", "3–4", "7", "5–6"],
-    "correct": 1,
     "short_explanation": "A 3–4 on the pain scale is ideal for therapeutic effect without harm.",
     "long_explanation": "A pain level of 3–4 is often referred to as the therapeutic edge: enough to create change without causing the client to guard or tense.",
     "clinical_application": "Staying within the therapeutic range ensures safety and client trust during deep tissue work.",
@@ -22,7 +20,8 @@
     "abcd": ["A. 0", "B. 3–4", "C. 7", "D. 5–6"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_002",
@@ -33,8 +32,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "Which level of pain during massage typically signals the need to reduce pressure immediately?",
-    "answers": ["2", "3", "5", "7"],
-    "correct": 3,
     "short_explanation": "Pain at 7 or higher causes guarding and should be reduced.",
     "long_explanation": "A pain level above 6 is often accompanied by muscle tightening, which negates the benefits of massage and risks injury.",
     "clinical_application": "Therapists must immediately adjust techniques when clients report high pain.",
@@ -47,7 +44,8 @@
     "abcd": ["A. 2", "B. 3", "C. 5", "D. 7"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_003",
@@ -58,8 +56,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "A client begins to guard the area reflexively. What pain level are they likely experiencing?",
-    "answers": ["1", "4", "7", "3"],
-    "correct": 2,
     "short_explanation": "Reflex guarding often occurs around level 7.",
     "long_explanation": "When the body senses threat or injury, muscles contract involuntarily to protect the area—common around pain levels of 7+.",
     "clinical_application": "Recognizing guarding helps therapists avoid over-treatment and trauma.",
@@ -72,7 +68,8 @@
     "abcd": ["A. 1", "B. 4", "C. 7", "D. 3"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_004",
@@ -83,8 +80,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "On the 0–10 pain scale, what level is commonly associated with injury risk during massage?",
-    "answers": ["2", "4", "6", "7+"],
-    "correct": 3,
     "short_explanation": "Pain at level 7 or above is unsafe and potentially harmful.",
     "long_explanation": "Sustained pain over level 6 may lead to tissue damage, increased inflammation, and client distress, especially in vulnerable populations.",
     "clinical_application": "Massage pressure should be modified well before reaching this level.",
@@ -97,7 +92,8 @@
     "abcd": ["A. 2", "B. 4", "C. 6", "D. 7+"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_005",
@@ -108,13 +104,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "Which strategy is best when a client reports a pain level of 5 during treatment?",
-    "answers": [
-      "Increase pressure",
-      "Stop the session immediately",
-      "Reassess and reduce pressure",
-      "Switch to deeper tools"
-    ],
-    "correct": 2,
     "short_explanation": "Reassessment and communication ensure client safety.",
     "long_explanation": "Pain level 5 is on the edge of therapeutic range. Therapists should pause, communicate, and adjust technique based on feedback.",
     "clinical_application": "Encouraging open pain reporting builds client trust and safety.",
@@ -137,7 +126,8 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_006",
@@ -148,8 +138,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "Pain level '0' on the scale means the client feels:",
-    "answers": ["Slight numbness", "Tingling", "No pain", "Edge discomfort"],
-    "correct": 2,
     "short_explanation": "Zero means the absence of pain or discomfort.",
     "long_explanation": "A rating of 0 indicates the client feels no sensation of pain, which is common during relaxation massage or initial contact.",
     "clinical_application": "Knowing a client’s starting point helps track therapy effectiveness.",
@@ -167,7 +155,8 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_007",
@@ -178,8 +167,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "What is the highest acceptable level of discomfort during trigger point therapy?",
-    "answers": ["2", "3", "4", "7"],
-    "correct": 2,
     "short_explanation": "Trigger point therapy should not exceed a level 4.",
     "long_explanation": "Sustained pressure in trigger point therapy may approach discomfort, but exceeding level 4 risks triggering pain and sympathetic arousal.",
     "clinical_application": "Staying within the limit allows tissue release without trauma.",
@@ -192,7 +179,8 @@
     "abcd": ["A. 2", "B. 3", "C. 4", "D. 7"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_008",
@@ -203,13 +191,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "Why is it important to ask a client about pain level during massage?",
-    "answers": [
-      "To measure treatment cost",
-      "To prevent discomfort and injury",
-      "To diagnose illness",
-      "To perform a postural assessment"
-    ],
-    "correct": 1,
     "short_explanation": "Pain reporting protects the client.",
     "long_explanation": "Checking pain level helps maintain safe, effective pressure, and supports informed decision-making during massage.",
     "clinical_application": "Always integrate pain check-ins, especially during deep or specific work.",
@@ -232,7 +213,8 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_009",
@@ -243,13 +225,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "Which of the following best defines the 'therapeutic edge' in massage therapy?",
-    "answers": [
-      "The limit before soreness starts",
-      "The range of client pain tolerance used for effective therapy",
-      "The point at which a client goes numb",
-      "A technique using edge tools"
-    ],
-    "correct": 1,
     "short_explanation": "The therapeutic edge is the max tolerable level of discomfort that’s still beneficial.",
     "long_explanation": "This concept guides therapists to apply enough pressure to promote change without pushing into painful, counterproductive territory.",
     "clinical_application": "Mastering the therapeutic edge enhances effectiveness and client retention.",
@@ -272,7 +247,8 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   },
   {
     "id": "pain_scale_010",
@@ -283,13 +259,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "If a client reports increasing pain from 4 to 6 during a session, the massage therapist should:",
-    "answers": [
-      "Ignore it — it’s normal",
-      "Stop immediately and report an emergency",
-      "Communicate, adjust pressure, and reassess",
-      "Apply heat to increase pain"
-    ],
-    "correct": 2,
     "short_explanation": "Adjusting pressure is essential when pain increases beyond therapeutic range.",
     "long_explanation": "Therapists should respond to rising discomfort with empathy, reduce intensity, and re-check with the client to ensure ongoing safety.",
     "clinical_application": "This approach strengthens therapeutic rapport and avoids negative outcomes.",
@@ -312,6 +281,7 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "pain_scale.json"
+    "sourceFile": "pain_scale",
+    "unit": "pain_scale"
   }
 ]

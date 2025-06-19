@@ -1,14 +1,7 @@
 [
   {
-    "id": "Transport 001",
+    "id": "transport_001",
     "question": "What is the primary mechanism of movement in simple diffusion?",
-    "answers": [
-      "Movement against a concentration gradient using ATP",
-      "Movement along a concentration gradient without energy input",
-      "Bulk flow through membrane pores",
-      "Water movement through aquaporins only"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Simple diffusion moves molecules from high to low concentration without energy.",
     "long_explanation": "Simple diffusion involves the passive movement of molecules like oxygen or carbon dioxide across membranes. It requires no energy and occurs due to the natural tendency of molecules to spread out.",
@@ -36,7 +29,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "What is the primary mechanism of movement in simple diffusion?",
     "options": [
       "Movement against a concentration gradient using ATP",
@@ -53,13 +46,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 002",
+    "id": "transport_002",
     "question": "Osmosis specifically refers to the movement of what substance?",
-    "answers": ["Salt", "Glucose", "Proteins", "Water"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Osmosis is the passive movement of water across a semipermeable membrane.",
     "long_explanation": "Osmosis is a special type of diffusion involving water molecules. It occurs when water moves across a semipermeable membrane from an area of low solute concentration to high solute concentration to equalize concentrations.",
@@ -99,25 +90,18 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "Osmosis specifically refers to the movement of what substance?",
     "options": ["Salt", "Glucose", "Proteins", "Water"],
     "correctAnswer": "Salt",
     "abcd": ["A. Salt", "B. Glucose", "C. Proteins", "D. Water"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 003",
+    "id": "transport_003",
     "question": "Which of the following best describes facilitated diffusion?",
-    "answers": [
-      "Movement of water through a semipermeable membrane",
-      "Movement of molecules using protein carriers without ATP",
-      "Transport of ions through pumps requiring energy",
-      "Bulk flow of fluid from capillaries to tissues"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Facilitated diffusion helps transport molecules using carrier proteins without energy.",
     "long_explanation": "Facilitated diffusion is a passive transport mechanism where specific molecules, such as glucose, pass through membrane proteins that aid their movement without requiring energy.",
@@ -151,7 +135,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "Which of the following best describes facilitated diffusion?",
     "options": [
       "Movement of water through a semipermeable membrane",
@@ -168,18 +152,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 004",
+    "id": "transport_004",
     "question": "What type of transport is involved when blood pressure forces plasma through capillary walls?",
-    "answers": [
-      "Osmosis",
-      "Facilitated diffusion",
-      "Filtration",
-      "Active transport"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Filtration is driven by hydrostatic pressure, pushing fluids across membranes.",
     "long_explanation": "Filtration occurs when hydrostatic pressure forces water and solutes through a membrane, such as in kidney glomeruli or capillary exchange in tissues.",
@@ -215,7 +192,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "What type of transport is involved when blood pressure forces plasma through capillary walls?",
     "options": [
       "Osmosis",
@@ -232,18 +209,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 005",
+    "id": "transport_005",
     "question": "Which condition can cause water to move out of cells via osmosis?",
-    "answers": [
-      "Hypotonic extracellular fluid",
-      "Isotonic IV fluid administration",
-      "Hypertonic extracellular fluid",
-      "High intracellular glucose"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "A hypertonic solution draws water out of cells due to higher solute concentration outside.",
     "long_explanation": "When the extracellular fluid is hypertonic, water exits the cell to balance osmotic pressure. This can cause cellular shrinkage and dehydration.",
@@ -283,7 +253,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "Which condition can cause water to move out of cells via osmosis?",
     "options": [
       "Hypotonic extracellular fluid",
@@ -300,18 +270,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 006",
+    "id": "transport_006",
     "question": "What is the role of aquaporins in osmosis?",
-    "answers": [
-      "They prevent water from entering cells",
-      "They actively transport water using ATP",
-      "They allow passive water flow across membranes",
-      "They bind solutes and change membrane charge"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Aquaporins are channels that allow water to pass through membranes passively.",
     "long_explanation": "Aquaporins are integral membrane proteins that facilitate rapid, passive movement of water across cell membranes, crucial in tissues like kidneys and lungs.",
@@ -353,7 +316,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "What is the role of aquaporins in osmosis?",
     "options": [
       "They prevent water from entering cells",
@@ -370,18 +333,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 007",
+    "id": "transport_007",
     "question": "Which of the following is NOT a passive transport mechanism?",
-    "answers": [
-      "Simple diffusion",
-      "Facilitated diffusion",
-      "Osmosis",
-      "Sodium-potassium pump"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The sodium-potassium pump requires ATP and is active, not passive.",
     "long_explanation": "Passive transport does not require energy and includes diffusion, osmosis, and facilitated diffusion. Active transport, such as the sodium-potassium pump, uses ATP to move ions against gradients.",
@@ -405,7 +361,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "Which of the following is NOT a passive transport mechanism?",
     "options": [
       "Simple diffusion",
@@ -422,13 +378,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   },
   {
-    "id": "Transport 008",
+    "id": "transport_008",
     "question": "In the kidneys, what process filters blood plasma into the nephron?",
-    "answers": ["Osmosis", "Reabsorption", "Secretion", "Filtration"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Filtration in the glomerulus allows plasma to enter the nephron.",
     "long_explanation": "In the renal corpuscle, hydrostatic pressure forces plasma from capillaries into Bowman’s capsule, initiating urine formation through filtration.",
@@ -452,13 +406,13 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.116Z",
     "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "../../../src/data/questions/cell_theory/diffusion_osmosis_filtration",
+    "unit": "diffusion_osmosis_filtration",
     "text": "In the kidneys, what process filters blood plasma into the nephron?",
     "options": ["Osmosis", "Reabsorption", "Secretion", "Filtration"],
     "correctAnswer": "Osmosis",
     "abcd": ["A. Osmosis", "B. Reabsorption", "C. Secretion", "D. Filtration"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/equilibrium",
-    "filename": "diffusion_osmosis_filtration.json"
+    "sourceFile": "diffusion_osmosis_filtration"
   }
 ]

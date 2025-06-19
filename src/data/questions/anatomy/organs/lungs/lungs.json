@@ -2,8 +2,6 @@
   {
     "id": "lungs_001",
     "question": "Which lung has three lobes?",
-    "answers": ["Left lung", "Right lung", "Both lungs", "Neither lung"],
-    "correct": 1,
     "short_explanation": "The right lung has three lobes: superior, middle, and inferior.",
     "long_explanation": "The right lung is larger and has three lobes separated by the horizontal and oblique fissures, while the left lung has two lobes to accommodate the heart.",
     "applied_example": "Postural drainage techniques differ depending on lung lobe location, crucial for respiratory massage therapy.",
@@ -24,18 +22,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_002",
     "question": "What is the main muscle responsible for inspiration?",
-    "answers": [
-      "Diaphragm",
-      "Intercostals",
-      "Serratus anterior",
-      "Rectus abdominis"
-    ],
-    "correct": 0,
     "short_explanation": "The diaphragm is the primary muscle of inspiration.",
     "long_explanation": "During inspiration, the diaphragm contracts and flattens, increasing thoracic cavity volume and drawing air into the lungs.",
     "applied_example": "Diaphragmatic breathing techniques can help massage clients with asthma or stress-induced shallow breathing.",
@@ -61,13 +53,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_003",
     "question": "Which structure is NOT part of the lower respiratory tract?",
-    "answers": ["Trachea", "Bronchi", "Larynx", "Alveoli"],
-    "correct": 2,
     "short_explanation": "The larynx is part of the upper respiratory tract.",
     "long_explanation": "The lower respiratory tract includes the trachea, bronchi, bronchioles, and alveoli. The larynx, although near the trachea, belongs to the upper tract.",
     "applied_example": "Manual therapy involving the neck must account for sensitive upper airway structures.",
@@ -83,13 +74,12 @@
     "abcd": ["A. Trachea", "B. Bronchi", "C. Larynx", "D. Alveoli"],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_004",
     "question": "Where does gas exchange occur in the lungs?",
-    "answers": ["Bronchi", "Bronchioles", "Alveoli", "Pleura"],
-    "correct": 2,
     "short_explanation": "Gas exchange occurs in the alveoli.",
     "long_explanation": "Alveoli are tiny sacs with thin walls surrounded by capillaries, allowing efficient oxygen and carbon dioxide diffusion between air and blood.",
     "applied_example": "Massage can improve chest mobility, potentially aiding lung expansion and alveolar ventilation.",
@@ -105,18 +95,12 @@
     "abcd": ["A. Bronchi", "B. Bronchioles", "C. Alveoli", "D. Pleura"],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_005",
     "question": "Which pleural layer directly adheres to the lungs?",
-    "answers": [
-      "Parietal pleura",
-      "Visceral pleura",
-      "Diaphragmatic pleura",
-      "Costal pleura"
-    ],
-    "correct": 1,
     "short_explanation": "The visceral pleura covers the lungs directly.",
     "long_explanation": "The visceral pleura is the inner membrane layer that encases the lungs, while the parietal pleura lines the thoracic cavity.",
     "applied_example": "Visceral massage or myofascial release around the chest must respect underlying pleural integrity.",
@@ -142,18 +126,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_006",
     "question": "Which nerve innervates the diaphragm?",
-    "answers": [
-      "Vagus nerve",
-      "Accessory nerve",
-      "Phrenic nerve",
-      "Thoracic nerve"
-    ],
-    "correct": 2,
     "short_explanation": "The phrenic nerve innervates the diaphragm.",
     "long_explanation": "The phrenic nerve arises from spinal nerves C3–C5 and provides motor and some sensory innervation to the diaphragm, the main muscle of respiration.",
     "applied_example": "Understanding nerve pathways is important in neuromuscular massage for breathing dysfunction.",
@@ -179,18 +157,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_007",
     "question": "What is the function of surfactant in the lungs?",
-    "answers": [
-      "Lubricates pleural surfaces",
-      "Protects alveoli from pathogens",
-      "Reduces surface tension in alveoli",
-      "Stimulates respiratory rhythm"
-    ],
-    "correct": 2,
     "short_explanation": "Surfactant reduces alveolar surface tension.",
     "long_explanation": "Surfactant, secreted by type II alveolar cells, prevents alveolar collapse by decreasing surface tension, especially during exhalation.",
     "applied_example": "Infants with respiratory distress syndrome may lack surfactant—use caution in pediatric massage involving breathing.",
@@ -216,13 +188,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_008",
     "question": "What structure bifurcates into left and right primary bronchi?",
-    "answers": ["Pharynx", "Larynx", "Trachea", "Bronchioles"],
-    "correct": 2,
     "short_explanation": "The trachea divides into the left and right primary bronchi.",
     "long_explanation": "The trachea ends at the carina, where it splits into two primary bronchi that enter each lung at the hilum.",
     "applied_example": "Manual lymphatic drainage in the chest can support respiratory health by improving bronchial circulation.",
@@ -238,13 +209,12 @@
     "abcd": ["A. Pharynx", "B. Larynx", "C. Trachea", "D. Bronchioles"],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_009",
     "question": "Which lung is more susceptible to aspiration?",
-    "answers": ["Left", "Right", "Both equally", "Neither"],
-    "correct": 1,
     "short_explanation": "The right lung is more vertical and wider, making it more prone to aspiration.",
     "long_explanation": "The right main bronchus is shorter, wider, and more vertical than the left, increasing the likelihood of aspirated material entering the right lung.",
     "applied_example": "Massage therapists should avoid positioning supine clients with swallowing issues in flat positions.",
@@ -260,13 +230,12 @@
     "abcd": ["A. Left", "B. Right", "C. Both equally", "D. Neither"],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   },
   {
     "id": "lungs_010",
     "question": "Which part of the brain regulates breathing rhythm?",
-    "answers": ["Cerebellum", "Pons and medulla", "Thalamus", "Hypothalamus"],
-    "correct": 1,
     "short_explanation": "The medulla and pons regulate respiratory rhythm.",
     "long_explanation": "The medullary respiratory centers control inspiration and expiration. The pons modifies the rhythm for speech and other functions.",
     "applied_example": "Massage that stimulates vagal tone may influence breathing patterns regulated by these centers.",
@@ -287,6 +256,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/lungs",
-    "filename": "lungs.json"
+    "sourceFile": "lungs",
+    "unit": "lungs"
   }
 ]

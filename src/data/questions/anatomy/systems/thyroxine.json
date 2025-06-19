@@ -8,13 +8,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Which gland produces thyroxine?",
-    "answers": [
-      "Pituitary gland",
-      "Adrenal gland",
-      "Thyroid gland",
-      "Pancreas"
-    ],
-    "correct": 2,
     "short_explanation": "Thyroxine is produced by the thyroid gland.",
     "long_explanation": "Thyroxine (T4) is secreted by follicular cells in the thyroid and plays a vital role in metabolic regulation.",
     "clinical_application": "Thyroid dysfunction may alter thyroxine levels and affect energy and weight.",
@@ -40,7 +33,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_002",
@@ -51,13 +45,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "What is the main function of thyroxine?",
-    "answers": [
-      "Lower blood sugar",
-      "Stimulate growth hormone",
-      "Regulate metabolic rate",
-      "Promote calcium storage"
-    ],
-    "correct": 2,
     "short_explanation": "Thyroxine regulates the body's metabolic rate.",
     "long_explanation": "T4 increases oxygen consumption and cellular activity in most tissues, influencing metabolism, growth, and development.",
     "clinical_application": "Thyroid imbalance may present as fatigue, weight changes, or intolerance to heat/cold.",
@@ -83,7 +70,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_003",
@@ -94,8 +82,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Thyroxine (T4) is primarily converted into which active hormone?",
-    "answers": ["Calcitonin", "Insulin", "Cortisol", "Triiodothyronine (T3)"],
-    "correct": 3,
     "short_explanation": "T4 is converted into T3, the active thyroid hormone.",
     "long_explanation": "T3 is 3-5 times more potent than T4 and is mainly formed from T4 in tissues like the liver.",
     "clinical_application": "T4 levels may be normal but symptoms appear if T4 to T3 conversion is impaired.",
@@ -116,7 +102,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_004",
@@ -127,8 +114,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "Which hormone stimulates the release of thyroxine?",
-    "answers": ["ACTH", "TSH", "GH", "LH"],
-    "correct": 1,
     "short_explanation": "Thyroid Stimulating Hormone (TSH) triggers T4 release.",
     "long_explanation": "TSH is secreted by the anterior pituitary and regulates the production of T3 and T4 by the thyroid.",
     "clinical_application": "TSH is commonly tested alongside T4 to assess thyroid health.",
@@ -144,7 +129,8 @@
     "abcd": ["A. ACTH", "B. TSH", "C. GH", "D. LH"],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_005",
@@ -155,8 +141,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "Which nutrient is essential for thyroxine synthesis?",
-    "answers": ["Calcium", "Iron", "Iodine", "Zinc"],
-    "correct": 2,
     "short_explanation": "Iodine is a key component of T4 and T3.",
     "long_explanation": "The thyroid gland uses iodine to synthesize thyroid hormones; deficiency can cause goiter.",
     "clinical_application": "Iodized salt and thyroid health are closely linked.",
@@ -172,7 +156,8 @@
     "abcd": ["A. Calcium", "B. Iron", "C. Iodine", "D. Zinc"],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_006",
@@ -183,8 +168,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "What is a common symptom of low thyroxine levels?",
-    "answers": ["Tachycardia", "Anxiety", "Weight gain", "Exophthalmos"],
-    "correct": 2,
     "short_explanation": "Low T4 often causes weight gain and fatigue.",
     "long_explanation": "Hypothyroidism leads to slowed metabolism, fatigue, cold intolerance, and weight gain.",
     "clinical_application": "Massage can help manage symptoms of fatigue in hypothyroid clients.",
@@ -205,7 +188,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_007",
@@ -216,13 +200,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "What is the effect of high thyroxine (T4) on the body?",
-    "answers": [
-      "Decreased metabolism",
-      "Weight gain",
-      "Heat intolerance",
-      "Slow reflexes"
-    ],
-    "correct": 2,
     "short_explanation": "High T4 causes elevated metabolism and heat intolerance.",
     "long_explanation": "Hyperthyroidism leads to symptoms such as sweating, anxiety, weight loss, and heat sensitivity.",
     "clinical_application": "Clients with hyperthyroidism may benefit from calming massage techniques.",
@@ -248,7 +225,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_008",
@@ -259,13 +237,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "In which form is thyroxine most commonly found in the bloodstream?",
-    "answers": [
-      "Free T4",
-      "Bound to plasma proteins",
-      "As T3",
-      "Stored in adipose tissue"
-    ],
-    "correct": 1,
     "short_explanation": "Most T4 circulates bound to transport proteins.",
     "long_explanation": "Over 99% of T4 in the blood is bound to thyroxine-binding globulin (TBG), with only a small fraction as free T4.",
     "clinical_application": "Free T4 is the biologically active form measured in lab tests.",
@@ -291,7 +262,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_009",
@@ -302,13 +274,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "Which disorder is associated with autoimmune hyperthyroidism and elevated T4?",
-    "answers": [
-      "Hashimoto’s disease",
-      "Addison’s disease",
-      "Graves’ disease",
-      "Cushing’s syndrome"
-    ],
-    "correct": 2,
     "short_explanation": "Graves' disease causes hyperthyroidism and elevated T4.",
     "long_explanation": "Graves’ is an autoimmune condition that stimulates excess thyroid hormone production, often causing goiter and exophthalmos.",
     "clinical_application": "Massage therapists should be aware of swelling and heat sensitivity.",
@@ -334,7 +299,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   },
   {
     "id": "thyroxine_010",
@@ -345,13 +311,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "What structure stores thyroxine in the thyroid gland?",
-    "answers": [
-      "Chief cells",
-      "Follicles",
-      "Parafollicular cells",
-      "Islets of Langerhans"
-    ],
-    "correct": 1,
     "short_explanation": "Thyroid follicles store thyroglobulin, the precursor of T4.",
     "long_explanation": "Follicular cells surround colloid-filled follicles where T4 is synthesized and stored before release.",
     "clinical_application": "Ultrasound can detect abnormalities in follicle structure.",
@@ -377,6 +336,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "systems",
-    "filename": "thyroxine.json"
+    "sourceFile": "thyroxine",
+    "unit": "thyroxine"
   }
 ]

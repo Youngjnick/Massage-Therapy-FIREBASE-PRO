@@ -2,8 +2,6 @@
   {
     "id": "lumbricals_hand_001",
     "question": "How many lumbrical muscles are present in the human hand?",
-    "answers": ["2", "3", "4", "5"],
-    "correct": 2,
     "short_explanation": "There are four lumbricals in each hand.",
     "long_explanation": "The hand contains four lumbrical muscles, each originating from the tendons of the flexor digitorum profundus and inserting into the extensor expansion of digits 2–5.",
     "applied_example": "Lumbrical dysfunction can impair precise finger extension, relevant in clients with hand weakness or repetitive strain.",
@@ -20,18 +18,12 @@
     "abcd": ["A. 2", "B. 3", "C. 4", "D. 5"],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_002",
     "question": "From which tendons do the lumbricals originate?",
-    "answers": [
-      "Flexor digitorum superficialis",
-      "Extensor digitorum",
-      "Flexor digitorum profundus",
-      "Palmar interossei"
-    ],
-    "correct": 2,
     "short_explanation": "Lumbricals arise from flexor digitorum profundus tendons.",
     "long_explanation": "Each lumbrical originates from the tendons of the flexor digitorum profundus, making them unique in that they originate and insert into tendons rather than bones.",
     "applied_example": "Therapists working with musicians may target FDP and lumbrical mobility to enhance fine motor control.",
@@ -58,18 +50,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_003",
     "question": "What is the primary function of the lumbricals?",
-    "answers": [
-      "Flex MCP and extend IP joints of digits 2–5",
-      "Abduct the fingers",
-      "Oppose the thumb",
-      "Extend the wrist"
-    ],
-    "correct": 0,
     "short_explanation": "Lumbricals flex MCP and extend IP joints.",
     "long_explanation": "Lumbricals perform a unique dual action: they flex the metacarpophalangeal (MCP) joints while simultaneously extending the interphalangeal (IP) joints, crucial for precise hand movement.",
     "applied_example": "Strengthening lumbricals can support better hand posture in massage therapists or office workers.",
@@ -96,18 +82,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_004",
     "question": "Which lumbricals are typically innervated by the median nerve?",
-    "answers": [
-      "All four",
-      "First and second",
-      "Third and fourth",
-      "Only the fourth"
-    ],
-    "correct": 1,
     "short_explanation": "The first and second lumbricals are median nerve-innervated.",
     "long_explanation": "The median nerve innervates the first and second lumbricals (digits 2 and 3), while the third and fourth lumbricals (digits 4 and 5) are supplied by the deep branch of the ulnar nerve.",
     "applied_example": "Loss of median nerve function affects pinch grip due to weakened lumbricals 1 and 2.",
@@ -134,18 +114,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_005",
     "question": "What is the insertion point of the lumbricals?",
-    "answers": [
-      "Base of proximal phalanges",
-      "Extensor expansion of digits 2–5",
-      "Palmar aponeurosis",
-      "Flexor retinaculum"
-    ],
-    "correct": 1,
     "short_explanation": "Lumbricals insert into the extensor expansion.",
     "long_explanation": "All lumbricals insert into the lateral aspect of the extensor expansion of the digits they act upon, allowing them to assist in extending the interphalangeal joints.",
     "applied_example": "Tendon gliding exercises can aid lumbrical function by enhancing mobility through the extensor hood.",
@@ -172,18 +146,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_006",
     "question": "Which activity most relies on lumbrical function?",
-    "answers": [
-      "Making a fist",
-      "Typing on a keyboard",
-      "Lifting a heavy object",
-      "Wrist flexion"
-    ],
-    "correct": 1,
     "short_explanation": "Typing requires fine finger control from the lumbricals.",
     "long_explanation": "Typing involves sustained flexion at the MCP joints and extension at the IP joints — precisely the action controlled by the lumbricals.",
     "applied_example": "Ergonomic interventions may target lumbrical engagement for clients with repetitive strain injuries from typing.",
@@ -210,18 +178,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_007",
     "question": "Which digits do the third and fourth lumbricals act upon?",
-    "answers": [
-      "Digits 1 and 2",
-      "Digits 2 and 3",
-      "Digits 3 and 4",
-      "Digits 4 and 5"
-    ],
-    "correct": 3,
     "short_explanation": "The third and fourth lumbricals act on digits 4 and 5.",
     "long_explanation": "The third lumbrical inserts into the extensor expansion of the 4th digit, and the fourth lumbrical into the 5th digit, helping flex MCP and extend IP joints.",
     "applied_example": "Ulnar nerve injury may lead to loss of control in digits 4 and 5, causing 'claw hand' deformity.",
@@ -248,13 +210,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_008",
     "question": "What clinical sign is associated with loss of lumbrical function?",
-    "answers": ["Wrist drop", "Claw hand", "Thenar wasting", "Drop foot"],
-    "correct": 1,
     "short_explanation": "Claw hand results from lumbrical and interossei weakness.",
     "long_explanation": "Claw hand is caused by unopposed extension at MCP joints and flexion at IP joints due to loss of lumbrical and interosseous activity, often from ulnar nerve palsy.",
     "applied_example": "Early detection of claw hand helps in nerve injury rehab planning.",
@@ -276,18 +237,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_009",
     "question": "What muscle group works synergistically with lumbricals to extend IP joints?",
-    "answers": [
-      "Palmar interossei",
-      "Dorsal interossei",
-      "Both interossei groups",
-      "Thenar muscles"
-    ],
-    "correct": 2,
     "short_explanation": "Both dorsal and palmar interossei assist lumbricals.",
     "long_explanation": "The interossei (dorsal and palmar) assist the lumbricals in extending the IP joints through the extensor hood mechanism.",
     "applied_example": "Strengthening all intrinsic hand muscles improves coordination and reduces overuse in thumb/finger extension.",
@@ -314,18 +269,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   },
   {
     "id": "lumbricals_hand_010",
     "question": "Which joint actions are controlled by lumbricals during writing?",
-    "answers": [
-      "Extension of MCP, flexion of IP joints",
-      "Flexion of MCP, extension of IP joints",
-      "Abduction of fingers",
-      "Flexion of wrist"
-    ],
-    "correct": 1,
     "short_explanation": "Writing requires MCP flexion and IP extension, controlled by lumbricals.",
     "long_explanation": "The lumbricals help maintain precise finger positioning for writing by flexing the MCP and extending the IP joints of the fingers involved in pen grip.",
     "applied_example": "Massage for writers or students may target lumbricals for fine motor fatigue and postural stress.",
@@ -352,6 +301,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_groups/hands",
-    "filename": "lumbricals_hand.json"
+    "sourceFile": "lumbricals_hand",
+    "unit": "lumbricals_hand"
   }
 ]

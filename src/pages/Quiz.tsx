@@ -80,7 +80,7 @@ const Quiz: React.FC = () => {
   const q = activeQuestions[current];
 
   // --- Derived variables (declare after quizQuestions/activeQuestions) ---
-  const availableTopics = Array.from(new Set(questions.map((q: any) => q.topic || 'Other')));
+  const availableTopics = Array.from(new Set(questions.map((q: any) => q.sourceFile || 'Other')));
   const maxQuizLength = quizQuestions.length;
   // User can select a desired quiz length, but always clamp to available range
   const [desiredQuizLength, setDesiredQuizLength] = useState<number>(10);
@@ -94,8 +94,8 @@ const Quiz: React.FC = () => {
     getQuestions()
       .then((qs) => {
         setQuestions(qs);
-        // Extract unique topics
-        const topics = Array.from(new Set(qs.map((q: any) => q.topic || 'Other')));
+        // Extract unique topics from sourceFile
+        const topics = Array.from(new Set(qs.map((q: any) => q.sourceFile || 'Other')));
         if (!selectedTopic && topics.length > 0) setSelectedTopic(topics[0]);
       })
       .catch(() => {
@@ -251,12 +251,12 @@ const Quiz: React.FC = () => {
   const topicStats = React.useMemo(() => {
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-      const topic = q.topic || 'Other';
+      const topic = q.sourceFile || 'Other';
       if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
-      stats[topic].total++;
       if (userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer) {
         stats[topic].correct++;
       }
+      stats[topic].total++;
     });
     return stats;
   }, [started, shuffledQuestions, quizQuestions, userAnswers, shuffledOptions]);
@@ -271,7 +271,7 @@ const Quiz: React.FC = () => {
         if (user) {
           const stats: { [topic: string]: { correct: number; total: number } } = {};
           (shuffledQuestions.length ? shuffledQuestions : quizQuestions).forEach((q) => {
-            const topic = q.topic || 'Other';
+            const topic = q.sourceFile || 'Other';
             if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
             stats[topic].total++;
           });

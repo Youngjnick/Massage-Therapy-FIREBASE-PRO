@@ -1,14 +1,7 @@
 [
   {
-    "id": "Shiatsu 001",
+    "id": "shiatsu_001",
     "question": "What is the meaning of 'Shiatsu' in Japanese?",
-    "answers": [
-      "Deep stroke",
-      "Healing energy",
-      "Finger pressure",
-      "Body alignment"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -24,7 +17,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Shiatsu literally means 'finger pressure.'",
     "long_explanation": "The term reflects the primary method of applying therapeutic touch using fingers and palms along energy meridians.",
     "clinical_application": "Helps educate clients on how focused pressure restores energy flow.",
@@ -50,18 +43,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 002",
+    "id": "shiatsu_002",
     "question": "Which traditional healing system is Shiatsu based on?",
-    "answers": [
-      "Traditional Chinese Medicine",
-      "Ayurveda",
-      "Western anatomy",
-      "Homeopathy"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -77,7 +63,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Shiatsu draws from Chinese meridian and qi theories.",
     "long_explanation": "Though Japanese in form, Shiatsu is rooted in Traditional Chinese Medicine and mirrors acupuncture principles without needles.",
     "clinical_application": "Therapists apply this model to treat systemic imbalances holistically.",
@@ -103,18 +89,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 003",
+    "id": "shiatsu_003",
     "question": "Shiatsu is primarily applied using:",
-    "answers": [
-      "Oils and gliding strokes",
-      "Thumb, finger, and palm pressure",
-      "Elbow kneading",
-      "Hot stones"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -130,7 +109,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Pressure techniques are central to Shiatsu.",
     "long_explanation": "The therapist uses hands (not oils) to deliver static or rhythmic pressure to balance energy channels and promote wellness.",
     "clinical_application": "Great for clients who prefer clothed treatments with energetic focus.",
@@ -156,18 +135,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 004",
+    "id": "shiatsu_004",
     "question": "Shiatsu therapy aims to balance:",
-    "answers": [
-      "Lymph nodes",
-      "Qi (life energy)",
-      "Heart rate",
-      "Calcium levels"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -193,7 +165,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Qi refers to vital energy flow.",
     "long_explanation": "Shiatsu seeks to regulate and restore the flow of qi through the body’s meridians to address dysfunction and enhance vitality.",
     "clinical_application": "Common in sessions for stress, fatigue, and emotional imbalance.",
@@ -219,13 +191,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 005",
+    "id": "shiatsu_005",
     "question": "Which concept is central to Shiatsu practice?",
-    "answers": ["Meridians", "Reflex zones", "Muscle chains", "Tissue layers"],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -253,7 +223,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Meridians guide the structure of treatment.",
     "long_explanation": "These invisible pathways organize energy distribution; applying pressure at points along them is said to clear stagnation and restore function.",
     "clinical_application": "Used like acupuncture maps to guide treatment plans.",
@@ -274,18 +244,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 006",
+    "id": "shiatsu_006",
     "question": "Shiatsu is typically performed with the client:",
-    "answers": [
-      "Covered in oils",
-      "Fully clothed on a floor mat",
-      "Immersed in water",
-      "Lying in sand"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -301,7 +264,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Shiatsu does not use oils or undressing.",
     "long_explanation": "Treatments occur on a mat or table with clients dressed in flexible clothing, allowing deeper joint and meridian work.",
     "clinical_application": "Ideal for clients seeking structured, pressure-based, non-oil treatments.",
@@ -327,18 +290,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 007",
+    "id": "shiatsu_007",
     "question": "Which of the following is NOT a Shiatsu principle?",
-    "answers": [
-      "Using body weight to apply pressure",
-      "Following energy lines",
-      "Quick feather-light strokes",
-      "Maintaining calm breathing"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -364,7 +320,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Shiatsu favors grounded, sustained pressure.",
     "long_explanation": "Light strokes are not characteristic of Shiatsu, which emphasizes deliberate, firm touch guided by breath and intention.",
     "clinical_application": "Helps distinguish Shiatsu from Swedish massage in practice.",
@@ -390,18 +346,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 008",
+    "id": "shiatsu_008",
     "question": "What distinguishes Zen Shiatsu from other styles?",
-    "answers": [
-      "It uses only elbows",
-      "It is performed standing",
-      "It emphasizes meditation and intuitive touch",
-      "It incorporates herbs"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -417,7 +366,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Zen Shiatsu values intuitive presence.",
     "long_explanation": "Practitioners cultivate a meditative state and follow energetic cues, making the work more adaptive and internalized.",
     "clinical_application": "Appropriate for clients needing emotionally attuned or trauma-sensitive touch.",
@@ -443,18 +392,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 009",
+    "id": "shiatsu_009",
     "question": "Shiatsu is often recommended for which of the following?",
-    "answers": [
-      "Improving digestion, stress relief, joint mobility",
-      "Raising body temperature",
-      "Reducing cholesterol",
-      "Muscle growth"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -482,7 +424,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Shiatsu has many systemic applications.",
     "long_explanation": "Stimulating meridians can calm the nervous system, support gut motility, and ease musculoskeletal restrictions.",
     "clinical_application": "Used in fatigue, IBS, anxiety, or chronic stiffness.",
@@ -508,18 +450,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   },
   {
-    "id": "Shiatsu 010",
+    "id": "shiatsu_010",
     "question": "Shiatsu typically avoids treatment in cases of:",
-    "answers": [
-      "Pregnancy",
-      "High blood pressure",
-      "Severe fractures or contagious illness",
-      "Mild fatigue"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -535,7 +470,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "unit": "../../../src/data/questions/shiatsu/intro",
+    "unit": "shiatsu",
     "short_explanation": "Shiatsu avoids unsafe or unstable conditions.",
     "long_explanation": "Practitioners are trained to screen for contraindications, especially structural instability and infection.",
     "clinical_application": "Ensures safe practice and protects both therapist and client.",
@@ -561,6 +496,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "shiatsu.json"
+    "sourceFile": "shiatsu"
   }
 ]

@@ -1,14 +1,7 @@
 [
   {
-    "id": "Rolfing Intro 001",
+    "id": "rolfing_intro_001",
     "question": "What is the primary goal of Rolfing Structural Integration?",
-    "answers": [
-      "To relieve joint dislocations",
-      "To align the body in gravity by manipulating fascia",
-      "To enhance lymphatic flow",
-      "To reduce emotional tension only"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -42,7 +35,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Rolfing aims to realign the body for optimal function using fascial manipulation.",
     "long_explanation": "The goal is to improve posture, movement efficiency, and comfort by releasing fascial adhesions and improving body symmetry.",
     "clinical_application": "Therapists use Rolfing principles to support clients with chronic tension, misalignment, or poor posture.",
@@ -69,18 +62,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 002",
+    "id": "rolfing_intro_002",
     "question": "Who developed Rolfing Structural Integration?",
-    "answers": [
-      "Emil Vodder",
-      "Janet Travell",
-      "Dr. Ida Rolf",
-      "John Upledger"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -106,7 +92,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Ida Rolf created Structural Integration.",
     "long_explanation": "A biochemist, Rolf pioneered a system to improve body alignment by targeting fascial patterns and structural imbalance.",
     "clinical_application": "Her legacy supports integrative approaches in manual therapy.",
@@ -133,13 +119,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 003",
+    "id": "rolfing_intro_003",
     "question": "Which connective tissue does Rolfing primarily target?",
-    "answers": ["Tendons", "Ligaments", "Fascia", "Cartilage"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -165,7 +149,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Fascia is the main focus of Rolfing work.",
     "long_explanation": "Fascia is a web-like connective tissue that shapes and supports the body; Rolfing frees restrictions in this network.",
     "clinical_application": "Fascial work aids posture, mobility, and chronic pain reduction.",
@@ -182,18 +166,11 @@
     "abcd": ["A. Tendons", "B. Ligaments", "C. Fascia", "D. Cartilage"],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 004",
+    "id": "rolfing_intro_004",
     "question": "Rolfing differs from traditional massage by focusing on:",
-    "answers": [
-      "Quick relaxation",
-      "Energy meridians",
-      "Long-term postural and structural changes",
-      "Temporary stress relief"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -223,7 +200,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Rolfing emphasizes structure over temporary relief.",
     "long_explanation": "While massage typically offers relaxation, Rolfing addresses how the body holds itself in space, correcting alignment.",
     "clinical_application": "Ideal for clients seeking lasting changes to posture and pain patterns.",
@@ -250,13 +227,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 005",
+    "id": "rolfing_intro_005",
     "question": "How many sessions are typically involved in the traditional Rolfing series?",
-    "answers": ["5", "7", "10", "12"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -272,7 +247,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "The classic Rolfing protocol includes 10 sessions.",
     "long_explanation": "These sessions progress systematically, starting with superficial layers and moving toward deeper structural integration.",
     "clinical_application": "Offers a framework for therapists working with structural change over time.",
@@ -289,18 +264,11 @@
     "abcd": ["A. 5", "B. 7", "C. 10", "D. 12"],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 006",
+    "id": "rolfing_intro_006",
     "question": "What was Dr. Ida Rolf's academic background?",
-    "answers": [
-      "Chiropractic and acupuncture",
-      "Physics and biochemistry",
-      "Biochemistry and mathematics",
-      "Psychology and neurology"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -316,7 +284,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Rolf held a Ph.D. in biochemistry.",
     "long_explanation": "Her scientific training shaped her structural and energetic theories in manual therapy.",
     "clinical_application": "Positions Rolfing as both evidence-informed and intuitively applied.",
@@ -343,18 +311,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 007",
+    "id": "rolfing_intro_007",
     "question": "In Rolfing, improved alignment of the body is believed to result in:",
-    "answers": [
-      "Increased muscle size",
-      "Reduced circulation",
-      "Improved energy efficiency and function",
-      "Less skin elasticity"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -370,7 +331,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Better alignment enhances overall function.",
     "long_explanation": "Proper structure supports movement, breath, and emotional well-being through gravitational alignment.",
     "clinical_application": "Clients often report less fatigue and better coordination.",
@@ -397,18 +358,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 008",
+    "id": "rolfing_intro_008",
     "question": "Which of the following best describes the intensity of a typical Rolfing session?",
-    "answers": [
-      "Always gentle and soothing",
-      "Variable; can be deep and intense",
-      "Only light and superficial",
-      "Rhythmic percussion techniques"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -424,7 +378,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Rolfing intensity depends on the client’s needs.",
     "long_explanation": "Though known for deep work, Rolfing also includes subtle techniques; intensity is adapted for tissue tone and tolerance.",
     "clinical_application": "Helps address deep tension without overwhelming the client.",
@@ -451,18 +405,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 009",
+    "id": "rolfing_intro_009",
     "question": "What is the primary focus of the first few sessions of the Rolfing 10-series?",
-    "answers": [
-      "Integrating pelvic and spinal function",
-      "Addressing fascial restrictions in the arms",
-      "Balancing superficial layers of fascia",
-      "Mobilizing the diaphragm and thoracic spine"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -492,7 +439,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "Early Rolfing sessions address the outer body layers.",
     "long_explanation": "The first sessions prepare the body by freeing surface tissues before deeper work begins.",
     "clinical_application": "Useful to improve breathing, pelvic lift, and basic awareness.",
@@ -519,18 +466,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 010",
+    "id": "rolfing_intro_010",
     "question": "Which professional institution certifies Rolfing practitioners?",
-    "answers": [
-      "Rolf Institute of Structural Integration",
-      "Massage Therapy Foundation",
-      "American Board of Manual Therapies",
-      "Structural Medicine Academy"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -556,7 +496,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "unit": "../../../src/data/questions/rolfing/intro",
+    "unit": "rolfing_intro",
     "short_explanation": "The Rolf Institute certifies Rolfing practitioners.",
     "long_explanation": "Founded by Ida Rolf, the institute offers professional education in Structural Integration techniques.",
     "clinical_application": "Ensures that clients receive standardized and informed care.",
@@ -583,6 +523,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "sourceFile": "rolfing_intro"
   }
 ]

@@ -1,9 +1,7 @@
 [
   {
-    "id": "C1_Nerve_001",
+    "id": "c1_nerve_001",
     "question": "Which muscle is primarily innervated by the C1 spinal nerve via the hypoglossal nerve?",
-    "answers": ["Geniohyoid", "Masseter", "Sternohyoid", "Platysma"],
-    "correct": 0,
     "short_explanation": "C1 fibers hitchhike along the hypoglossal nerve to innervate the geniohyoid.",
     "long_explanation": "The C1 spinal nerve does not exit through a typical intervertebral foramen. Instead, its fibers join with the hypoglossal nerve (CN XII) to innervate muscles such as the geniohyoid and thyrohyoid, contributing to swallowing and tongue movement.",
     "clinical_application": "This pathway is clinically relevant for manual therapy involving swallowing dysfunction or anterior neck tightness.",
@@ -18,20 +16,18 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve (atlas)",
+    "unit": "c1_nerve_innervations",
     "text": "Which muscle is primarily innervated by the C1 spinal nerve via the hypoglossal nerve?",
     "options": ["Geniohyoid", "Masseter", "Sternohyoid", "Platysma"],
     "correctAnswer": "Geniohyoid",
     "abcd": ["A. Geniohyoid", "B. Masseter", "C. Sternohyoid", "D. Platysma"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_002",
+    "id": "c1_nerve_002",
     "question": "What is the primary type of fibers in the C1 spinal nerve?",
-    "answers": ["Sensory", "Motor", "Autonomic", "Mixed"],
-    "correct": 1,
     "short_explanation": "C1 is primarily a motor nerve.",
     "long_explanation": "The C1 spinal nerve contains mostly motor fibers, unlike other spinal nerves that are typically mixed. It supplies muscles such as geniohyoid and rectus capitis anterior.",
     "clinical_application": "Motor-only composition makes C1 unique in neurological evaluation and therapeutic targeting.",
@@ -46,25 +42,18 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "What is the primary type of fibers in the C1 spinal nerve?",
     "options": ["Sensory", "Motor", "Autonomic", "Mixed"],
     "correctAnswer": "Motor",
     "abcd": ["A. Sensory", "B. Motor", "C. Autonomic", "D. Mixed"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_003",
+    "id": "c1_nerve_003",
     "question": "Which neck muscle is innervated directly by C1 but not via the hypoglossal nerve?",
-    "answers": [
-      "Rectus capitis anterior",
-      "Omohyoid",
-      "Scalenus medius",
-      "Sternocleidomastoid"
-    ],
-    "correct": 0,
     "short_explanation": "C1 directly innervates rectus capitis anterior and lateralis.",
     "long_explanation": "C1 provides motor innervation to deep neck flexors such as rectus capitis anterior and lateralis directly, without cranial nerve mediation.",
     "clinical_application": "Massage therapy or myofascial release of these muscles may relieve tension headaches originating from upper cervical strain.",
@@ -79,7 +68,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "Which neck muscle is innervated directly by C1 but not via the hypoglossal nerve?",
     "options": [
       "Rectus capitis anterior",
@@ -96,13 +85,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_004",
+    "id": "c1_nerve_004",
     "question": "Which infrahyoid muscle receives C1 innervation via the hypoglossal nerve?",
-    "answers": ["Thyrohyoid", "Sternothyroid", "Sternohyoid", "Omohyoid"],
-    "correct": 0,
     "short_explanation": "C1 joins CN XII to supply thyrohyoid.",
     "long_explanation": "The thyrohyoid muscle is uniquely innervated by C1 fibers traveling with the hypoglossal nerve, controlling hyoid depression during swallowing.",
     "clinical_application": "Useful for understanding neck rehabilitation in patients with swallowing or vocal strain issues.",
@@ -117,7 +104,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "Which infrahyoid muscle receives C1 innervation via the hypoglossal nerve?",
     "options": ["Thyrohyoid", "Sternothyroid", "Sternohyoid", "Omohyoid"],
     "correctAnswer": "Thyrohyoid",
@@ -129,13 +116,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_005",
+    "id": "c1_nerve_005",
     "question": "Which cranial nerve does C1 spinal nerve briefly travel with?",
-    "answers": ["CN V", "CN VII", "CN X", "CN XII"],
-    "correct": 3,
     "short_explanation": "C1 hitchhikes with the hypoglossal nerve (CN XII).",
     "long_explanation": "The C1 spinal nerve briefly joins CN XII (the hypoglossal nerve) to distribute fibers to muscles like geniohyoid and thyrohyoid.",
     "clinical_application": "Cranio-cervical neural relationships are essential for functional neuromuscular therapy.",
@@ -150,25 +135,18 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "Which cranial nerve does C1 spinal nerve briefly travel with?",
     "options": ["CN V", "CN VII", "CN X", "CN XII"],
     "correctAnswer": "CN XII",
     "abcd": ["A. CN V", "B. CN VII", "C. CN X", "D. CN XII"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_006",
+    "id": "c1_nerve_006",
     "question": "How does C1 contribute to proprioception?",
-    "answers": [
-      "It innervates the inner ear",
-      "Via cranial nerve I",
-      "Through deep neck muscles",
-      "No proprioceptive role"
-    ],
-    "correct": 2,
     "short_explanation": "C1 aids in cervical proprioception through deep muscles.",
     "long_explanation": "C1 contributes to posture and spatial awareness by innervating deep suboccipital muscles that contain proprioceptors.",
     "clinical_application": "Manual therapy improving neck proprioception may help clients with balance or dizziness.",
@@ -183,7 +161,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "How does C1 contribute to proprioception?",
     "options": [
       "It innervates the inner ear",
@@ -200,18 +178,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_007",
+    "id": "c1_nerve_007",
     "question": "What clinical sign might indicate C1 nerve dysfunction?",
-    "answers": [
-      "Facial palsy",
-      "Swallowing difficulty",
-      "Loss of smell",
-      "Wrist drop"
-    ],
-    "correct": 1,
     "short_explanation": "C1 involvement in hypoglossal nerve affects swallowing.",
     "long_explanation": "Dysfunction in the C1 spinal nerve could impair geniohyoid or thyrohyoid function, leading to swallowing issues or anterior neck weakness.",
     "clinical_application": "Screening for C1 dysfunction is useful in clients with head/neck trauma or dysphagia.",
@@ -226,7 +197,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "What clinical sign might indicate C1 nerve dysfunction?",
     "options": [
       "Facial palsy",
@@ -243,18 +214,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_008",
+    "id": "c1_nerve_008",
     "question": "C1 nerve contributes to which suboccipital muscle?",
-    "answers": [
-      "Rectus capitis posterior minor",
-      "Trapezius",
-      "Splenius capitis",
-      "Sternocleidomastoid"
-    ],
-    "correct": 0,
     "short_explanation": "Innervates suboccipital muscles like rectus capitis posterior minor.",
     "long_explanation": "C1 via the suboccipital nerve innervates several suboccipital muscles that stabilize and extend the head.",
     "clinical_application": "C1 treatment is key in cervicogenic headaches or tension around the atlanto-occipital joint.",
@@ -269,7 +233,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "C1 nerve contributes to which suboccipital muscle?",
     "options": [
       "Rectus capitis posterior minor",
@@ -286,18 +250,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_009",
+    "id": "c1_nerve_009",
     "question": "Which structure exits between the occiput and atlas?",
-    "answers": [
-      "C2 spinal nerve",
-      "C1 spinal nerve",
-      "CN XI",
-      "Vertebral artery"
-    ],
-    "correct": 1,
     "short_explanation": "C1 exits above C1 vertebra, between the skull and atlas.",
     "long_explanation": "Unlike other spinal nerves, C1 exits above the first cervical vertebra, making it unique in location and function.",
     "clinical_application": "Palpation or mobilization of this region should account for C1 nerve pathway.",
@@ -312,7 +269,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "Which structure exits between the occiput and atlas?",
     "options": [
       "C2 spinal nerve",
@@ -329,13 +286,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   },
   {
-    "id": "C1_Nerve_010",
+    "id": "c1_nerve_010",
     "question": "Which muscle involved in tongue movement receives indirect innervation from C1?",
-    "answers": ["Genioglossus", "Hyoglossus", "Geniohyoid", "Styloglossus"],
-    "correct": 2,
     "short_explanation": "Geniohyoid receives fibers from C1 via hypoglossal nerve.",
     "long_explanation": "Although it assists in tongue movement, geniohyoid is innervated by C1 traveling with CN XII, not by CN XII itself.",
     "clinical_application": "Neuromuscular retraining of swallowing muscles should consider the C1–CN XII pathway.",
@@ -350,7 +305,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "C1 spinal nerve",
+    "unit": "c1_nerve_innervations",
     "text": "Which muscle involved in tongue movement receives indirect innervation from C1?",
     "options": ["Genioglossus", "Hyoglossus", "Geniohyoid", "Styloglossus"],
     "correctAnswer": "Geniohyoid",
@@ -362,6 +317,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C1_nerve_innervations.json"
+    "sourceFile": "c1_nerve_innervations"
   }
 ]

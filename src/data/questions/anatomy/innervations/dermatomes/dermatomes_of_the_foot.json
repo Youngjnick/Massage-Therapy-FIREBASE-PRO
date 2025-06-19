@@ -1,9 +1,7 @@
 [
   {
-    "id": "Foot Dermatomes 001",
+    "id": "foot_dermatomes_001",
     "question": "Which dermatome is primarily responsible for sensation to the medial aspect of the foot and big toe?",
-    "answers": ["L3", "L4", "L5", "S1"],
-    "correct": 1,
     "short_explanation": "L4 supplies sensation to the medial foot and big toe.",
     "long_explanation": "The L4 dermatome includes the medial shin and medial foot, including the great toe. Knowledge of dermatome maps aids in diagnosing nerve root compression and guiding therapeutic strategies.",
     "applied_example": "A massage therapist noticing tingling in the big toe might suspect L4 irritation and modify techniques near the lumbar spine accordingly.",
@@ -37,13 +35,12 @@
     "abcd": ["A. L3", "B. L4", "C. L5", "D. S1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 002",
+    "id": "foot_dermatomes_002",
     "question": "The lateral edge of the foot and small toe are primarily innervated by which dermatome?",
-    "answers": ["S1", "L5", "L4", "L3"],
-    "correct": 0,
     "short_explanation": "S1 supplies the lateral foot and fifth toe.",
     "long_explanation": "The S1 dermatome encompasses the posterior leg, lateral foot, and pinky toe. Sensory changes in these regions may indicate S1 root involvement.",
     "applied_example": "A therapist working on clients with lumbar disc issues may focus on the glutes and hamstrings when S1-related foot symptoms arise.",
@@ -65,13 +62,12 @@
     "abcd": ["A. S1", "B. L5", "C. L4", "D. L3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 003",
+    "id": "foot_dermatomes_003",
     "question": "Which dermatome includes the dorsal surface of the foot and middle toes?",
-    "answers": ["L3", "L5", "S2", "L4"],
-    "correct": 1,
     "short_explanation": "L5 covers the dorsum of the foot and middle digits.",
     "long_explanation": "L5 provides sensory input to the dorsum of the foot, including the 2nd, 3rd, and 4th toes. It’s commonly tested in nerve root exams.",
     "applied_example": "If a massage therapist notes tingling in the dorsum, they may refer the client for L5 radiculopathy assessment.",
@@ -93,13 +89,12 @@
     "abcd": ["A. L3", "B. L5", "C. S2", "D. L4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 004",
+    "id": "foot_dermatomes_004",
     "question": "Sensory loss in the heel region suggests involvement of which spinal nerve root?",
-    "answers": ["S2", "S1", "L5", "L4"],
-    "correct": 0,
     "short_explanation": "S2 innervates the heel and posterior thigh.",
     "long_explanation": "The S2 dermatome is responsible for sensation to the posterior thigh and heel. Its irritation may result in numbness or tingling in these areas.",
     "applied_example": "Heel numbness during palpation may indicate S2 compression and influence gluteal and hamstring treatment approaches.",
@@ -121,13 +116,12 @@
     "abcd": ["A. S2", "B. S1", "C. L5", "D. L4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 005",
+    "id": "foot_dermatomes_005",
     "question": "Which dermatome corresponds to the medial lower leg and arch of the foot?",
-    "answers": ["L3", "L5", "L4", "S1"],
-    "correct": 2,
     "short_explanation": "L4 innervates the medial leg and arch.",
     "long_explanation": "L4 covers the medial aspect of the lower leg and arch of the foot. It's essential for therapists to monitor for numbness or altered sensation in this zone when treating lumbar clients.",
     "applied_example": "Clients with medial foot tingling may benefit from L4 nerve root decompression work at the lumbar spine.",
@@ -149,13 +143,12 @@
     "abcd": ["A. L3", "B. L5", "C. L4", "D. S1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 006",
+    "id": "foot_dermatomes_006",
     "question": "Which spinal nerve root is tested when assessing sensation between the 1st and 2nd toes?",
-    "answers": ["L4", "L5", "S1", "S2"],
-    "correct": 1,
     "short_explanation": "L5 innervates the space between the first two toes.",
     "long_explanation": "This small but important dermatome zone is used clinically to assess L5 integrity, especially in nerve root impingement scenarios.",
     "applied_example": "When clients report numbness in this webspace, it suggests possible L5 root compression, and focused spinal decompression massage may help.",
@@ -177,18 +170,12 @@
     "abcd": ["A. L4", "B. L5", "C. S1", "D. S2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 007",
+    "id": "foot_dermatomes_007",
     "question": "Pain and paresthesia on the plantar surface of the foot may suggest involvement of which nerves?",
-    "answers": [
-      "Tibial nerve and S1–S2 roots",
-      "Common fibular nerve and L5 root",
-      "Femoral nerve and L4 root",
-      "Obturator nerve and S1 root"
-    ],
-    "correct": 0,
     "short_explanation": "The tibial nerve, innervated by S1–S2, serves the plantar surface.",
     "long_explanation": "Tibial nerve dysfunction often results in burning, tingling, or numbness on the sole of the foot. This is a hallmark of tarsal tunnel syndrome and is closely linked with S1–S2.",
     "applied_example": "Plantar nerve irritation due to tibial compression at the tarsal tunnel can guide treatment protocols for clients with plantar paresthesia.",
@@ -220,18 +207,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 008",
+    "id": "foot_dermatomes_008",
     "question": "A client presents with loss of sensation on the lateral dorsal foot. Which nerve or dermatome is likely involved?",
-    "answers": [
-      "Superficial fibular nerve / L5",
-      "Deep fibular nerve / L4",
-      "Sural nerve / S1",
-      "Tibial nerve / S2"
-    ],
-    "correct": 2,
     "short_explanation": "The sural nerve (S1) supplies the lateral dorsal foot.",
     "long_explanation": "The sural nerve originates from tibial and common fibular roots and follows the posterior-lateral path to the dorsal-lateral foot. Loss of sensation in this area often traces to S1 root or sural nerve compression.",
     "applied_example": "Massage near the Achilles or lateral ankle must avoid compressing the sural nerve in clients with prior nerve trauma or scarring.",
@@ -263,13 +244,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 009",
+    "id": "foot_dermatomes_009",
     "question": "Which dermatome corresponds to the medial malleolus?",
-    "answers": ["L5", "L4", "S1", "L3"],
-    "correct": 1,
     "short_explanation": "The L4 dermatome includes the medial malleolus.",
     "long_explanation": "Testing sensation near the medial malleolus is a common exam for L4 integrity. It’s a crucial landmark in dermatomal assessment.",
     "applied_example": "Light touch testing near the medial malleolus can help confirm L4 nerve root involvement in clients with anterior leg pain.",
@@ -291,13 +271,12 @@
     "abcd": ["A. L5", "B. L4", "C. S1", "D. L3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   },
   {
-    "id": "Foot Dermatomes 010",
+    "id": "foot_dermatomes_010",
     "question": "Which dermatome affects the posterior calf and heel?",
-    "answers": ["S1", "S2", "L5", "L3"],
-    "correct": 1,
     "short_explanation": "S2 spans the posterior calf and heel.",
     "long_explanation": "The S2 dermatome helps clinicians assess distal sensory loss in posterior lower limb regions. It is a key focus during sciatic nerve assessment.",
     "applied_example": "Deep gluteal work to address sciatic compression may alleviate sensory loss in the heel if the S2 nerve root is involved.",
@@ -319,6 +298,7 @@
     "abcd": ["A. S1", "B. S2", "C. L5", "D. L3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes_of_the_foot.json"
+    "sourceFile": "dermatomes_of_the_foot",
+    "unit": "dermatomes_of_the_foot"
   }
 ]

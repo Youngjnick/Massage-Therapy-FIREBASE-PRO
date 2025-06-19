@@ -1,9 +1,7 @@
 [
   {
-    "id": "Reflexology Clinical Application 001",
+    "id": "reflexology_clinical_application_001",
     "question": "Which condition is commonly supported through reflexology by stimulating the solar plexus point?",
-    "answers": ["Constipation", "Anxiety", "Skin irritation", "Muscle fatigue"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -31,7 +29,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:44:30.195190Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "short_explanation": "Stimulating the solar plexus reflex supports the parasympathetic nervous system and emotional regulation.",
     "long_explanation": "The solar plexus point is commonly used in reflexology to reduce anxiety, calm breathing, and support emotional balance by influencing the autonomic nervous system.",
     "clinical_application": "Massage therapists use this point to help clients experiencing stress, nervousness, or shallow breathing.",
@@ -53,18 +51,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 002",
+    "id": "reflexology_clinical_application_002",
     "question": "What is the benefit of stimulating the intestinal reflex zones?",
-    "answers": [
-      "Improves lung capacity",
-      "Enhances digestion and bowel movement",
-      "Relaxes neck tension",
-      "Increases alertness"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -98,7 +89,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:44:30.195190Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "short_explanation": "Intestinal reflex zones influence peristalsis and digestion.",
     "long_explanation": "Applying pressure to the intestinal zones supports bowel regularity, relieves bloating, and enhances digestive efficiency.",
     "clinical_application": "Therapists use these points to relieve discomfort after stress or travel.",
@@ -125,13 +116,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 003",
+    "id": "reflexology_clinical_application_003",
     "question": "Which system of the body is targeted through the kidney, ureter, and bladder reflexes?",
-    "answers": ["Nervous", "Respiratory", "Urinary", "Lymphatic"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -147,7 +136,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:44:30.195190Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "short_explanation": "Kidney, ureter, and bladder reflexes relate to urinary system detox and regulation.",
     "long_explanation": "Stimulation of these zones may support renal elimination and fluid balance.",
     "clinical_application": "Used during wellness sessions to promote kidney function or ease urinary tension.",
@@ -164,13 +153,11 @@
     "abcd": ["A. Nervous", "B. Respiratory", "C. Urinary", "D. Lymphatic"],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 004",
+    "id": "reflexology_clinical_application_004",
     "question": "Reflexology may help with sleep issues by stimulating points related to the:",
-    "answers": ["Spine", "Pineal gland", "Sinuses", "Liver"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -196,7 +183,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:44:30.195190Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "short_explanation": "The pineal gland regulates circadian rhythms and melatonin production.",
     "long_explanation": "Stimulating its reflex point may improve sleep quality and help re-regulate sleep-wake cycles.",
     "clinical_application": "Therapists use it to support insomnia relief and post-travel fatigue recovery.",
@@ -213,18 +200,11 @@
     "abcd": ["A. Spine", "B. Pineal gland", "C. Sinuses", "D. Liver"],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 005",
+    "id": "reflexology_clinical_application_005",
     "question": "Which reflex point is targeted to help with headaches?",
-    "answers": [
-      "Heel",
-      "Tips of the toes",
-      "Ball of the foot",
-      "Arch of the foot"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -240,7 +220,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:44:30.195190Z",
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "short_explanation": "Toes correspond to the head and are effective for relieving tension headaches.",
     "long_explanation": "Pressure to the tips of the toes can reduce neural tension, improve sinus drainage, and alleviate cephalgia symptoms.",
     "clinical_application": "Incorporated into treatments for migraine, sinus headaches, or tension-type headaches.",
@@ -267,18 +247,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 006",
+    "id": "reflexology_clinical_application_006",
     "question": "What effect does stimulating the diaphragm reflex point have in a reflexology session?",
-    "answers": [
-      "Promotes deep breathing and relaxation",
-      "Stimulates blood pressure",
-      "Tightens abdominal muscles",
-      "Increases spinal flexibility"
-    ],
-    "correct": 0,
     "short_explanation": "The diaphragm reflex helps regulate the breath and nervous system tone.",
     "long_explanation": "By working the diaphragm zone, therapists can assist clients in releasing tension around the respiratory system and calming the parasympathetic nervous system.",
     "clinical_application": "Especially useful for clients with shallow breathing, anxiety, or thoracic tension.",
@@ -291,7 +264,7 @@
     "created_at": "2025-05-26T21:51:27.242567Z",
     "synonyms": [],
     "variant": 6,
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "tags": ["respiratory_system", "breathwork", "diaphragm_zone"],
     "text": "What effect does stimulating the diaphragm reflex point have in a reflexology session?",
     "options": [
@@ -309,13 +282,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 007",
+    "id": "reflexology_clinical_application_007",
     "question": "Which reflex zone would best support sinus drainage and congestion relief?",
-    "answers": ["Toe pads", "Heel", "Lateral arch", "Midfoot center"],
-    "correct": 0,
     "short_explanation": "Toe pads reflect sinus areas in reflexology.",
     "long_explanation": "Gentle stimulation of the pads of the toes can improve sinus function, reduce congestion, and help relieve sinus headaches.",
     "clinical_application": "Incorporated into treatments for allergies, sinus pressure, or seasonal transitions.",
@@ -328,7 +299,7 @@
     "created_at": "2025-05-26T21:51:27.242567Z",
     "synonyms": [],
     "variant": 7,
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "tags": ["ENT_system", "sinus_relief", "seasonal_support"],
     "text": "Which reflex zone would best support sinus drainage and congestion relief?",
     "options": ["Toe pads", "Heel", "Lateral arch", "Midfoot center"],
@@ -336,18 +307,11 @@
     "abcd": ["A. Toe pads", "B. Heel", "C. Lateral arch", "D. Midfoot center"],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 008",
+    "id": "reflexology_clinical_application_008",
     "question": "When working with clients experiencing hormonal imbalances, which glandular reflex zones are often emphasized?",
-    "answers": [
-      "Thyroid, pituitary, and adrenal",
-      "Liver and spleen",
-      "Sinuses and colon",
-      "Heart and kidneys"
-    ],
-    "correct": 0,
     "short_explanation": "These endocrine glands regulate metabolism, stress, and hormone cycles.",
     "long_explanation": "Reflexology targeting these areas can promote endocrine balance and homeostasis, especially in stress, menstrual, or thyroid disorders.",
     "clinical_application": "Common in protocols for PMS, burnout, or thyroid dysfunction.",
@@ -360,7 +324,7 @@
     "created_at": "2025-05-26T21:51:27.242567Z",
     "synonyms": [],
     "variant": 8,
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "tags": ["endocrine_system", "hormonal_balance", "glandular_reflex"],
     "text": "When working with clients experiencing hormonal imbalances, which glandular reflex zones are often emphasized?",
     "options": [
@@ -378,18 +342,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 009",
+    "id": "reflexology_clinical_application_009",
     "question": "Which foot reflex zone is associated with promoting spinal alignment and posture support?",
-    "answers": [
-      "Medial longitudinal arch",
-      "Ball of the foot",
-      "Lateral heel",
-      "Toe tips"
-    ],
-    "correct": 0,
     "short_explanation": "The arch of the foot mirrors the spinal column in reflexology maps.",
     "long_explanation": "By stimulating the medial arch, therapists can influence spinal tension, posture, and the central nervous system through reflexive action.",
     "clinical_application": "Often used with clients who present postural imbalances, chronic back tension, or scoliosis patterns.",
@@ -402,7 +359,7 @@
     "created_at": "2025-05-26T21:51:27.242567Z",
     "synonyms": [],
     "variant": 9,
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "tags": ["spinal_reflex", "postural_support", "structural_mapping"],
     "text": "Which foot reflex zone is associated with promoting spinal alignment and posture support?",
     "options": [
@@ -420,18 +377,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Reflexology Clinical Application 010",
+    "id": "reflexology_clinical_application_010",
     "question": "Which of the following is a primary intention when working the adrenal reflex point?",
-    "answers": [
-      "Reduce stress and support adrenal recovery",
-      "Stimulate digestion",
-      "Relieve sinus pressure",
-      "Correct scoliosis"
-    ],
-    "correct": 0,
     "short_explanation": "Adrenal reflex points help regulate the stress response.",
     "long_explanation": "Gentle stimulation of the adrenal reflex zone (typically midfoot lateral to the arch) may assist in calming cortisol surges and supporting the hypothalamic-pituitary-adrenal (HPA) axis.",
     "clinical_application": "Used in burnout, fatigue, and post-traumatic stress protocols.",
@@ -444,7 +394,7 @@
     "created_at": "2025-05-26T21:51:27.242567Z",
     "synonyms": [],
     "variant": 10,
-    "unit": "../../../src/data/questions/modalities/reflexology_clinical_application",
+    "unit": "clinical_applications",
     "tags": ["stress_relief", "adrenal_glands", "HPA_axis_support"],
     "text": "Which of the following is a primary intention when working the adrenal reflex point?",
     "options": [
@@ -462,6 +412,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "reflexology",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   }
 ]

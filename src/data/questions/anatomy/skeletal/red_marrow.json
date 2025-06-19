@@ -2,13 +2,6 @@
   {
     "id": "red_marrow_001",
     "question": "What is the primary function of red bone marrow?",
-    "answers": [
-      "Fat storage",
-      "Calcium absorption",
-      "Hematopoiesis",
-      "Bone growth"
-    ],
-    "correct": 2,
     "short_explanation": "Red bone marrow produces blood cells through hematopoiesis.",
     "long_explanation": "Red bone marrow is a vital hematopoietic tissue found primarily in the flat bones and proximal ends of long bones in adults. It generates red blood cells, white blood cells, and platelets.",
     "applied_example": "Massage therapy over the sternum or pelvis should consider underlying red marrow in these areas, especially in immunocompromised clients.",
@@ -35,18 +28,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_002",
     "question": "Which bones retain red marrow throughout life?",
-    "answers": [
-      "Distal phalanges",
-      "Ribs, sternum, pelvis, and vertebrae",
-      "Tibia and fibula",
-      "Clavicle and scapula"
-    ],
-    "correct": 1,
     "short_explanation": "Flat bones and axial skeleton retain red marrow in adults.",
     "long_explanation": "In adults, red marrow is concentrated in the flat bones such as the sternum, ribs, vertebrae, and ilium, where hematopoiesis continues actively.",
     "applied_example": "Awareness of red marrow areas helps avoid excess pressure during deep tissue techniques over the thorax and pelvis.",
@@ -73,18 +60,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_003",
     "question": "In children, red bone marrow is found in:",
-    "answers": [
-      "Only the ribs and pelvis",
-      "All bones including long bones",
-      "Only the skull and sternum",
-      "Only the vertebrae"
-    ],
-    "correct": 1,
     "short_explanation": "Children have red marrow in nearly all bones.",
     "long_explanation": "During early development, red marrow fills the medullary cavities of all bones, including long bones like the femur and humerus, supporting rapid growth and high blood cell turnover.",
     "applied_example": "Knowledge of pediatric marrow distribution aids in understanding systemic effects of pediatric bone trauma or disease.",
@@ -111,13 +92,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_004",
     "question": "Which component is NOT produced in red marrow?",
-    "answers": ["Erythrocytes", "Platelets", "Adipocytes", "Leukocytes"],
-    "correct": 2,
     "short_explanation": "Adipocytes are more associated with yellow marrow.",
     "long_explanation": "While red marrow produces blood components such as erythrocytes, leukocytes, and thrombocytes, adipocytes are a feature of yellow marrow, which stores fat.",
     "applied_example": "Marrow type distinction is useful in understanding healing, immunity, and energy metabolism, especially in elderly or malnourished clients.",
@@ -139,13 +119,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_005",
     "question": "Where is red marrow commonly sampled for a bone marrow biopsy?",
-    "answers": ["Tibia", "Humerus", "Iliac crest", "Sternum"],
-    "correct": 2,
     "short_explanation": "The iliac crest provides accessible red marrow for biopsy.",
     "long_explanation": "The posterior iliac crest is a preferred site for sampling due to its superficial location, rich marrow content, and relatively low risk of complications.",
     "applied_example": "Massage therapists should take care not to apply direct deep pressure over recent biopsy sites in the pelvis.",
@@ -162,18 +141,12 @@
     "abcd": ["A. Tibia", "B. Humerus", "C. Iliac crest", "D. Sternum"],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_006",
     "question": "Red marrow gradually converts to yellow marrow in which process?",
-    "answers": [
-      "Ossification",
-      "Fatty infiltration",
-      "Chondrification",
-      "Calcification"
-    ],
-    "correct": 1,
     "short_explanation": "Red marrow converts to yellow marrow through fatty infiltration.",
     "long_explanation": "With age, some red marrow is replaced by adipose tissue, leading to the formation of yellow marrow in long bones. However, under stress or demand, yellow marrow can revert to red.",
     "applied_example": "This plasticity is important in understanding recovery from trauma or anemia, where marrow activity may increase.",
@@ -204,18 +177,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_007",
     "question": "Which type of stem cells reside in red bone marrow?",
-    "answers": [
-      "Mesenchymal stem cells only",
-      "Hematopoietic stem cells",
-      "Neural progenitor cells",
-      "Chondroblasts"
-    ],
-    "correct": 1,
     "short_explanation": "Hematopoietic stem cells generate blood cell lineages.",
     "long_explanation": "Red bone marrow houses hematopoietic stem cells (HSCs), which differentiate into all blood cells. These are key in bone marrow transplants and immune regeneration.",
     "applied_example": "Understanding stem cell roles is critical for massage safety with clients undergoing transplant recovery.",
@@ -242,13 +209,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_008",
     "question": "Which condition can lead to red marrow hyperplasia?",
-    "answers": ["Osteoporosis", "Anemia", "Arthritis", "Diabetes"],
-    "correct": 1,
     "short_explanation": "Anemia increases demand for red blood cells, triggering hyperplasia.",
     "long_explanation": "In response to low oxygen-carrying capacity, red marrow may become more active, increasing its mass and converting yellow marrow back to red for increased production.",
     "applied_example": "In clients with anemia, fatigue and tissue sensitivity may correlate with hyperactive marrow and systemic symptoms.",
@@ -265,13 +231,12 @@
     "abcd": ["A. Osteoporosis", "B. Anemia", "C. Arthritis", "D. Diabetes"],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_009",
     "question": "Which vitamin is critical for red marrow function?",
-    "answers": ["Vitamin C", "Vitamin D", "Vitamin B12", "Vitamin K"],
-    "correct": 2,
     "short_explanation": "Vitamin B12 supports red blood cell production in the marrow.",
     "long_explanation": "Vitamin B12 and folate are essential for DNA synthesis in rapidly dividing hematopoietic cells. Deficiency can lead to megaloblastic anemia, impairing marrow function.",
     "applied_example": "Massage therapists may observe pallor or fatigue in clients with nutritional anemia linked to marrow dysfunction.",
@@ -288,13 +253,12 @@
     "abcd": ["A. Vitamin C", "B. Vitamin D", "C. Vitamin B12", "D. Vitamin K"],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   },
   {
     "id": "red_marrow_010",
     "question": "Red marrow production can be artificially stimulated by which hormone?",
-    "answers": ["Insulin", "Erythropoietin", "Testosterone", "Melatonin"],
-    "correct": 1,
     "short_explanation": "Erythropoietin increases red blood cell production in red marrow.",
     "long_explanation": "Erythropoietin (EPO) is released primarily by the kidneys in response to low oxygen levels. It stimulates red marrow to produce more erythrocytes, improving oxygen delivery to tissues.",
     "applied_example": "Clients undergoing EPO therapy for kidney disease or anemia may experience changes in tissue perfusion relevant to massage response.",
@@ -316,6 +280,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "skeletal",
-    "filename": "red_marrow.json"
+    "sourceFile": "red_marrow",
+    "unit": "red_marrow"
   }
 ]

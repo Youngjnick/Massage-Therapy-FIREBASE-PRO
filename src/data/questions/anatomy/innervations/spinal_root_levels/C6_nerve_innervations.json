@@ -2,13 +2,6 @@
   {
     "id": "c6_innervation_001",
     "question": "Which muscle is primarily innervated by the C6 spinal root?",
-    "answers": [
-      "Triceps brachii",
-      "Biceps brachii",
-      "Deltoid",
-      "Flexor carpi ulnaris"
-    ],
-    "correct": 1,
     "short_explanation": "C6 contributes significantly to the biceps brachii.",
     "long_explanation": "C6, via the musculocutaneous nerve, innervates the biceps brachii, which is responsible for elbow flexion and forearm supination.",
     "applied_example": "Weakness in elbow flexion may suggest C6 involvement and guide massage adaptations.",
@@ -23,18 +16,26 @@
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "Which muscle is primarily innervated by the C6 spinal root?",
+    "options": [
+      "Biceps brachii",
+      "Triceps brachii",
+      "Deltoid",
+      "Flexor carpi ulnaris"
+    ],
+    "correctAnswer": "Biceps brachii",
+    "abcd": [
+      "A. Biceps brachii",
+      "B. Triceps brachii",
+      "C. Deltoid",
+      "D. Flexor carpi ulnaris"
+    ]
   },
   {
     "id": "c6_innervation_002",
     "question": "Which dermatome is associated with the C6 spinal nerve?",
-    "answers": [
-      "Lateral forearm and thumb",
-      "Middle finger",
-      "Lateral upper arm",
-      "Ring and little fingers"
-    ],
-    "correct": 0,
     "short_explanation": "C6 dermatome covers the lateral forearm and thumb.",
     "long_explanation": "C6 provides sensory input to the lateral forearm and radial side of the hand, including the thumb and index finger.",
     "applied_example": "Numbness in the thumb may signal C6 radiculopathy, aiding in differential diagnosis.",
@@ -44,18 +45,26 @@
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "Which dermatome is associated with the C6 spinal nerve?",
+    "options": [
+      "Lateral forearm and thumb",
+      "Medial forearm and little finger",
+      "Posterior deltoid region",
+      "Sole of the foot"
+    ],
+    "correctAnswer": "Lateral forearm and thumb",
+    "abcd": [
+      "A. Lateral forearm and thumb",
+      "B. Medial forearm and little finger",
+      "C. Posterior deltoid region",
+      "D. Sole of the foot"
+    ]
   },
   {
     "id": "c6_innervation_003",
     "question": "C6 nerve root injury most likely impairs which reflex?",
-    "answers": [
-      "Biceps reflex",
-      "Triceps reflex",
-      "Patellar reflex",
-      "Achilles reflex"
-    ],
-    "correct": 0,
     "short_explanation": "The biceps reflex tests C6 function.",
     "long_explanation": "The C6 root contributes to the musculocutaneous nerve which mediates the biceps reflex—tapping the tendon should elicit elbow flexion.",
     "applied_example": "A diminished biceps reflex during assessment may indicate C6 radiculopathy.",
@@ -65,18 +74,26 @@
     "source_reference": "Clinical Neurology Manual",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "C6 nerve root injury most likely impairs which reflex?",
+    "options": [
+      "Biceps reflex",
+      "Triceps reflex",
+      "Patellar reflex",
+      "Achilles reflex"
+    ],
+    "correctAnswer": "Biceps reflex",
+    "abcd": [
+      "A. Biceps reflex",
+      "B. Triceps reflex",
+      "C. Patellar reflex",
+      "D. Achilles reflex"
+    ]
   },
   {
     "id": "c6_innervation_004",
     "question": "Which nerve receives major contributions from the C6 root?",
-    "answers": [
-      "Axillary nerve",
-      "Musculocutaneous nerve",
-      "Ulnar nerve",
-      "Dorsal scapular nerve"
-    ],
-    "correct": 1,
     "short_explanation": "The musculocutaneous nerve receives strong input from C5 and C6.",
     "long_explanation": "This nerve innervates the anterior arm muscles including biceps brachii and brachialis, enabling elbow flexion and supination.",
     "applied_example": "Palpation and strength testing of anterior arm muscles during massage can inform nerve involvement.",
@@ -86,18 +103,26 @@
     "source_reference": "Gray’s Anatomy",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "Which nerve receives major contributions from the C6 root?",
+    "options": [
+      "Musculocutaneous nerve",
+      "Ulnar nerve",
+      "Median nerve",
+      "Axillary nerve"
+    ],
+    "correctAnswer": "Musculocutaneous nerve",
+    "abcd": [
+      "A. Musculocutaneous nerve",
+      "B. Ulnar nerve",
+      "C. Median nerve",
+      "D. Axillary nerve"
+    ]
   },
   {
     "id": "c6_innervation_005",
     "question": "Which of the following movements would be most affected by C6 injury?",
-    "answers": [
-      "Shoulder abduction",
-      "Elbow extension",
-      "Elbow flexion",
-      "Finger abduction"
-    ],
-    "correct": 2,
     "short_explanation": "C6 injury impairs elbow flexion.",
     "long_explanation": "The musculocutaneous nerve (C5–C6) innervates the biceps and brachialis, both critical to elbow flexion.",
     "applied_example": "Testing elbow flexion can help identify C6 nerve root involvement in clinical massage assessment.",
@@ -111,18 +136,26 @@
     "source_reference": "Orthopedic Physical Assessment",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "Which of the following movements would be most affected by C6 injury?",
+    "options": [
+      "Elbow flexion",
+      "Shoulder abduction",
+      "Wrist extension",
+      "Finger abduction"
+    ],
+    "correctAnswer": "Elbow flexion",
+    "abcd": [
+      "A. Elbow flexion",
+      "B. Shoulder abduction",
+      "C. Wrist extension",
+      "D. Finger abduction"
+    ]
   },
   {
     "id": "c6_innervation_006",
     "question": "What clinical sign suggests C6 nerve root compression?",
-    "answers": [
-      "Weak shoulder shrug",
-      "Wrist drop",
-      "Thumb numbness and weak biceps",
-      "Triceps weakness"
-    ],
-    "correct": 2,
     "short_explanation": "C6 affects the biceps and thumb dermatome.",
     "long_explanation": "Clients may report sensory disturbances in the thumb and weakness in elbow flexion if C6 is compressed.",
     "applied_example": "Palpation and movement of the thumb and forearm can offer insight into cervical radiculopathy.",
@@ -132,85 +165,98 @@
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
-  },
-  {
-    "id": "c6_innervation_007",
-    "question": "C6 contributes to which portion of the brachial plexus?",
-    "answers": [
-      "Posterior cord",
-      "Medial cord",
-      "Lateral cord",
-      "Inferior trunk"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "What clinical sign suggests C6 nerve root compression?",
+    "options": [
+      "Thumb numbness",
+      "Deltoid atrophy",
+      "Weak knee extension",
+      "Foot drop"
     ],
-    "correct": 2,
-    "short_explanation": "C6 contributes to the lateral cord.",
-    "long_explanation": "Fibers from C5 and C6 form the upper trunk, which then contributes to the lateral cord of the brachial plexus.",
-    "applied_example": "Understanding this helps map dysfunction in neuromuscular assessments for massage therapy clients.",
-    "difficulty": "hard",
-    "tags": ["C6", "brachial plexus", "lateral cord"],
-    "keywords": ["plexus anatomy", "nerve tracing", "cord contribution"],
-    "source_reference": "Netter’s Anatomy Flash Cards",
-    "main_topic": "anatomy",
-    "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "correctAnswer": "Thumb numbness",
+    "abcd": [
+      "A. Thumb numbness",
+      "B. Deltoid atrophy",
+      "C. Weak knee extension",
+      "D. Foot drop"
+    ]
   },
   {
     "id": "c6_innervation_008",
     "question": "The C6 root exits the spinal column between which vertebrae?",
-    "answers": ["C5 and C6", "C6 and C7", "C4 and C5", "C7 and T1"],
-    "correct": 0,
     "short_explanation": "C6 nerve exits above the C6 vertebra.",
-    "long_explanation": "In the cervical region, spinal nerves exit above their corresponding vertebrae. The C6 nerve root exits between C5 and C6 vertebrae.",
-    "applied_example": "Cervical disc herniation at C5–C6 can compress the C6 root.",
+    "long_explanation": "In the cervical spine, nerves are named for the vertebra below them. The C6 nerve exits between C5 and C6 vertebrae.",
+    "applied_example": "Cervical disc herniation at C5–C6 can compress the C6 root, impacting elbow flexion and thumb sensation.",
     "difficulty": "moderate",
     "tags": ["C6", "spinal anatomy", "nerve exit"],
     "keywords": ["intervertebral foramen", "cervical root", "disc herniation"],
     "source_reference": "Gray’s Anatomy",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "The C6 root exits the spinal column between which vertebrae?",
+    "options": ["C5 and C6", "C6 and C7", "C4 and C5", "T1 and T2"],
+    "correctAnswer": "C5 and C6",
+    "abcd": ["A. C5 and C6", "B. C6 and C7", "C. C4 and C5", "D. T1 and T2"]
   },
   {
     "id": "c6_innervation_009",
     "question": "Which motion is preserved in an isolated C6 lesion?",
-    "answers": [
-      "Elbow flexion",
-      "Shoulder abduction",
-      "Wrist extension",
-      "Triceps extension"
-    ],
-    "correct": 3,
     "short_explanation": "Triceps function (C7) is spared in C6 injury.",
-    "long_explanation": "The triceps brachii is innervated primarily by the C7 root, so it remains functional in isolated C6 damage.",
-    "applied_example": "This helps distinguish C6 from C7 injuries when evaluating arm strength and range of motion.",
+    "long_explanation": "The triceps brachii is primarily innervated by the C7 root, allowing elbow extension to remain intact in isolated C6 damage.",
+    "applied_example": "Distinguishing C6 from C7 lesions is important during upper limb neuro exams and massage assessments.",
     "difficulty": "hard",
     "tags": ["C6", "motor testing", "lesion differentiation"],
     "keywords": ["C6 vs C7", "neuromuscular comparison", "triceps"],
     "source_reference": "Orthopedic Testing Guidebook",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "Which motion is preserved in an isolated C6 lesion?",
+    "options": [
+      "Elbow extension",
+      "Elbow flexion",
+      "Wrist supination",
+      "Thumb sensation"
+    ],
+    "correctAnswer": "Elbow extension",
+    "abcd": [
+      "A. Elbow extension",
+      "B. Elbow flexion",
+      "C. Wrist supination",
+      "D. Thumb sensation"
+    ]
   },
   {
     "id": "c6_innervation_010",
-    "question": "Which of the following is not a symptom of C6 radiculopathy?",
-    "answers": [
-      "Weak elbow flexion",
-      "Tingling in thumb",
-      "Weak triceps reflex",
-      "Numbness in lateral forearm"
-    ],
-    "correct": 2,
+    "question": "Which of the following is NOT a symptom of C6 radiculopathy?",
     "short_explanation": "Triceps reflex is C7, not C6.",
-    "long_explanation": "C6 radiculopathy affects the biceps reflex, not the triceps reflex, which is mediated by C7. Confusing the two may lead to misdiagnosis.",
-    "applied_example": "Understanding reflex patterns helps guide appropriate manual therapy referral and treatment.",
+    "long_explanation": "While C6 radiculopathy affects the biceps reflex and sensation to the thumb, the triceps reflex is mediated by C7 and remains unaffected in C6 lesions.",
+    "applied_example": "Accurate reflex mapping helps guide massage therapists in identifying affected nerve roots and making referrals.",
     "difficulty": "moderate",
     "tags": ["C6", "reflex testing", "diagnosis"],
     "keywords": ["reflex pattern", "C6 vs C7", "differential diagnosis"],
     "source_reference": "Clinical Orthopedic Examination Textbook",
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "C6_nerve_innervations.json"
+    "sourceFile": "c6_nerve_innervations",
+    "unit": "c6_nerve_innervations",
+    "text": "Which of the following is NOT a symptom of C6 radiculopathy?",
+    "options": [
+      "Diminished triceps reflex",
+      "Thumb paresthesia",
+      "Weak elbow flexion",
+      "Reduced biceps reflex"
+    ],
+    "correctAnswer": "Diminished triceps reflex",
+    "abcd": [
+      "A. Diminished triceps reflex",
+      "B. Thumb paresthesia",
+      "C. Weak elbow flexion",
+      "D. Reduced biceps reflex"
+    ]
   }
 ]

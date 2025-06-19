@@ -1,14 +1,7 @@
 [
   {
-    "id": "Famous People 001",
+    "id": "famous_people_001",
     "question": "Who is considered the founder of craniosacral therapy?",
-    "answers": [
-      "John Upledger",
-      "Harvey Kellogg",
-      "Per Henrik Ling",
-      "Ida Rolf"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Dr. John Upledger developed craniosacral therapy in the 1970s.",
     "long_explanation": "An osteopathic physician, Upledger advanced the field of light-touch therapy by exploring cranial rhythms and the flow of cerebrospinal fluid. He formalized craniosacral therapy for use in integrative and trauma care.",
@@ -44,7 +37,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Upledger", "craniosacral therapy"],
     "interesting_fact": "Upledger served as clinical researcher at Michigan State University before founding the Upledger Institute.",
     "text": "Who is considered the founder of craniosacral therapy?",
@@ -63,13 +56,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 002",
+    "id": "famous_people_002",
     "question": "Who created the Rolfing method of structural integration?",
-    "answers": ["Ida Rolf", "Milton Trager", "Per Henrik Ling", "James Cyriax"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Ida Rolf developed structural integration to realign the body’s fascial system.",
     "long_explanation": "Rolf was a biochemist who created a method of deep myofascial manipulation intended to balance the body in gravity. Her ten-session protocol remains foundational in somatic therapy.",
@@ -115,7 +106,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Rolf", "SI"],
     "interesting_fact": "Ida Rolf earned a Ph.D. in biochemistry from Columbia University in 1920.",
     "text": "Who created the Rolfing method of structural integration?",
@@ -129,18 +120,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 003",
+    "id": "famous_people_003",
     "question": "Which physician helped standardize Swedish massage techniques using French terminology?",
-    "answers": [
-      "Avicenna",
-      "Johann Mezger",
-      "Per Henrik Ling",
-      "Harvey Kellogg"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "Mezger introduced the terminology for Swedish massage techniques.",
     "long_explanation": "Johann Mezger was a Dutch physician who helped standardize Swedish massage by adopting French medical terms for massage strokes. These remain part of massage curricula worldwide.",
@@ -174,7 +158,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["French terms", "massage strokes"],
     "interesting_fact": "Mezger's work helped legitimize massage as medical treatment in 19th-century Europe.",
     "text": "Which physician helped standardize Swedish massage techniques using French terminology?",
@@ -193,18 +177,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 004",
+    "id": "famous_people_004",
     "question": "Who is recognized as the founder of Swedish massage?",
-    "answers": [
-      "Ida Rolf",
-      "Per Henrik Ling",
-      "James Cyriax",
-      "Shiatsu Nakamura"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "Ling developed Swedish massage from movement therapy and anatomy.",
     "long_explanation": "Per Henrik Ling was a Swedish physiologist and fencing master who created 'medical gymnastics', which evolved into Swedish massage. He emphasized physical movement, anatomy, and physiology.",
@@ -244,7 +221,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Per Ling", "Swedish system"],
     "interesting_fact": "Ling founded the Royal Gymnastic Central Institute in Stockholm in 1813.",
     "text": "Who is recognized as the founder of Swedish massage?",
@@ -263,18 +240,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 005",
+    "id": "famous_people_005",
     "question": "Who created the Trager Approach to movement and massage?",
-    "answers": [
-      "Moshe Feldenkrais",
-      "Milton Trager",
-      "James Cyriax",
-      "John Upledger"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "Milton Trager developed a gentle movement-based massage approach.",
     "long_explanation": "The Trager Method uses rhythmic rocking and soft touch to improve neural patterning and mobility. It emphasizes the body–mind connection.",
@@ -310,7 +280,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Trager Method", "Trager Approach"],
     "interesting_fact": "Trager was a medical doctor and boxer who treated patients using intuition and softness.",
     "text": "Who created the Trager Approach to movement and massage?",
@@ -329,18 +299,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 006",
+    "id": "famous_people_006",
     "question": "Which 20th-century physician is known as the father of orthopedic medicine and deep friction massage?",
-    "answers": [
-      "John Upledger",
-      "James Cyriax",
-      "Harvey Kellogg",
-      "Moshe Feldenkrais"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "Cyriax developed orthopedic massage using deep friction for injuries.",
     "long_explanation": "Dr. Cyriax emphasized assessment-based treatment and created deep transverse friction techniques to help heal soft tissue injuries.",
@@ -386,7 +349,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Cyriax method", "deep friction"],
     "interesting_fact": "Cyriax also developed selective tension testing to pinpoint lesions.",
     "text": "Which 20th-century physician is known as the father of orthopedic medicine and deep friction massage?",
@@ -405,18 +368,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 007",
+    "id": "famous_people_007",
     "question": "Which physician popularized massage therapy at the Battle Creek Sanitarium in the U.S.?",
-    "answers": [
-      "Harvey Kellogg",
-      "Milton Trager",
-      "Per Henrik Ling",
-      "John Upledger"
-    ],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "Kellogg promoted massage as part of holistic treatment.",
     "long_explanation": "Dr. Kellogg integrated massage, diet, hydrotherapy, and exercise at his Battle Creek Sanitarium and authored 'The Art of Massage' in 1895.",
@@ -448,7 +404,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Kellogg", "massage advocate"],
     "interesting_fact": "Kellogg was also instrumental in promoting vegetarianism and early health reform.",
     "text": "Which physician popularized massage therapy at the Battle Creek Sanitarium in the U.S.?",
@@ -467,18 +423,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 008",
+    "id": "famous_people_008",
     "question": "Who developed a somatic method emphasizing awareness through movement?",
-    "answers": [
-      "James Cyriax",
-      "Ida Rolf",
-      "Moshe Feldenkrais",
-      "Harvey Kellogg"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "Feldenkrais created a system of movement education to enhance body function.",
     "long_explanation": "Originally trained in physics, Moshe Feldenkrais explored how gentle, mindful movement can change posture, coordination, and pain patterns by rewiring the nervous system.",
@@ -520,7 +469,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Feldenkrais Method"],
     "interesting_fact": "Feldenkrais was a judo expert who rehabilitated his own knee injury using body awareness.",
     "text": "Who developed a somatic method emphasizing awareness through movement?",
@@ -539,18 +488,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 009",
+    "id": "famous_people_009",
     "question": "Which woman pioneered soft tissue manipulation and helped lay foundations for structural work?",
-    "answers": [
-      "Florence Nightingale",
-      "Mary Putnam Jacobi",
-      "Janet Travell",
-      "Ida Rolf"
-    ],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "Ida Rolf was one of the first women to found a named bodywork system.",
     "long_explanation": "Rolf’s deep fascial release work recognized the impact of gravity and structure on health. She taught that body alignment and posture influence function and wellness.",
@@ -588,7 +530,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Rolfing", "Ida Rolf"],
     "interesting_fact": "She was ahead of her time, integrating science and intuition in bodywork.",
     "text": "Which woman pioneered soft tissue manipulation and helped lay foundations for structural work?",
@@ -607,18 +549,11 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   },
   {
-    "id": "Famous People 010",
+    "id": "famous_people_010",
     "question": "Which pioneer in trigger point therapy co-authored the seminal book on myofascial pain?",
-    "answers": [
-      "John Upledger",
-      "David Simons",
-      "Milton Trager",
-      "James Cyriax"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "Dr. David Simons co-authored the Trigger Point Manual with Janet Travell.",
     "long_explanation": "Together, they mapped trigger point patterns and provided guidelines for palpation, referred pain, and treatment in massage and physical therapy.",
@@ -654,7 +589,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.120Z",
     "updated_at": "2025-05-24T14:54:13.464Z",
-    "unit": "../../../src/data/questions/history/people/famous_people_massage_2",
+    "unit": "famous_people_massage_ii",
     "synonyms": ["Travell-Simons", "Simons"],
     "interesting_fact": "Simons was an aerospace physician before turning to pain medicine.",
     "text": "Which pioneer in trigger point therapy co-authored the seminal book on myofascial pain?",
@@ -673,6 +608,6 @@
     ],
     "main_topic": "history",
     "subtopic": "people",
-    "filename": "famous_people_massage_ii.json"
+    "sourceFile": "famous_people_massage_ii"
   }
 ]

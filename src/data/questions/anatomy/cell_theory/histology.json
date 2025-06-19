@@ -1,14 +1,7 @@
 [
   {
-    "id": "Histology 001",
+    "id": "histology_001",
     "question": "What does histology study?",
-    "answers": [
-      "The structure of organs",
-      "The body's electrical activity",
-      "The microscopic structure of tissues",
-      "Chemical properties of cells"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -63,13 +56,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 002",
+    "id": "histology_002",
     "question": "Which tool is essential for studying histology?",
-    "answers": ["CT scanner", "Telescope", "Microscope", "Stethoscope"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -99,13 +90,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 003",
+    "id": "histology_003",
     "question": "Which of the following is NOT one of the four basic tissue types?",
-    "answers": ["Epithelial", "Connective", "Muscular", "Skeletal"],
-    "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -142,13 +131,11 @@
     "abcd": ["A. Epithelial", "B. Connective", "C. Muscular", "D. Skeletal"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 004",
+    "id": "histology_004",
     "question": "Which tissue type covers body surfaces and lines hollow organs?",
-    "answers": ["Connective", "Muscle", "Epithelial", "Nervous"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -187,13 +174,11 @@
     "abcd": ["A. Connective", "B. Muscle", "C. Epithelial", "D. Nervous"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 005",
+    "id": "histology_005",
     "question": "Which tissue type is responsible for transmitting electrical signals?",
-    "answers": ["Muscle", "Connective", "Epithelial", "Nervous"],
-    "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -228,18 +213,11 @@
     "abcd": ["A. Muscle", "B. Connective", "C. Epithelial", "D. Nervous"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 006",
+    "id": "histology_006",
     "question": "What is the function of connective tissue?",
-    "answers": [
-      "Secretes hormones",
-      "Contracts to produce movement",
-      "Supports and binds other tissues",
-      "Initiates nerve impulses"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -284,13 +262,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 007",
+    "id": "histology_007",
     "question": "Which stain is commonly used to highlight nuclei in histological samples?",
-    "answers": ["Gram stain", "Hematoxylin", "Eosin", "Safranin"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -315,13 +291,11 @@
     "abcd": ["A. Gram stain", "B. Hematoxylin", "C. Eosin", "D. Safranin"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 008",
+    "id": "histology_008",
     "question": "Muscle tissue is specialized for what function?",
-    "answers": ["Secretion", "Conduction", "Contraction", "Absorption"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -367,13 +341,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 009",
+    "id": "histology_009",
     "question": "Which connective tissue has a liquid matrix?",
-    "answers": ["Adipose", "Cartilage", "Bone", "Blood"],
-    "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -412,18 +384,11 @@
     "abcd": ["A. Adipose", "B. Cartilage", "C. Bone", "D. Blood"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   },
   {
-    "id": "Histology 010",
+    "id": "histology_010",
     "question": "What is a pathologist most likely to use histology for?",
-    "answers": [
-      "Determining oxygen levels in the blood",
-      "Diagnosing tissue abnormalities or disease",
-      "Measuring heart rate",
-      "Performing surgery"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -470,6 +435,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory",
-    "filename": "histology.json"
+    "sourceFile": "histology"
   }
 ]

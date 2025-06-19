@@ -1,14 +1,7 @@
 [
   {
-    "id": "Polarity 001",
+    "id": "polarity_001",
     "question": "What is the main goal of Polarity Therapy?",
-    "answers": [
-      "Strengthen bones",
-      "Improve skin tone",
-      "Balance the body's energy fields",
-      "Enhance digestion"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -36,7 +29,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.140Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity Therapy aims to restore energetic balance within the body.",
     "long_explanation": "By using specific hand placements and energy-based techniques, practitioners facilitate the movement of energy through electromagnetic pathways, promoting healing.",
     "clinical_application": "Practitioners can use this technique to support clients with chronic fatigue, stress, or emotional blockages.",
@@ -63,18 +56,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 002",
+    "id": "polarity_002",
     "question": "Who developed Polarity Therapy?",
-    "answers": [
-      "Dr. Ida Rolf",
-      "Dr. Randolph Stone",
-      "Dr. John Upledger",
-      "Dr. Andrew Weil"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -98,7 +84,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.140Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity Therapy was founded by Dr. Randolph Stone, an osteopath and naturopath.",
     "long_explanation": "Stone integrated Eastern and Western energy principles to create a modality focused on energetic balance, nutrition, and gentle touch.",
     "clinical_application": "Understanding its origins helps therapists apply the modality with philosophical clarity and intention.",
@@ -125,18 +111,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 003",
+    "id": "polarity_003",
     "question": "Polarity Therapy integrates concepts from which systems?",
-    "answers": [
-      "Ayurveda, Traditional Chinese Medicine, and Western medicine",
-      "Homeopathy and chiropractic",
-      "Aromatherapy and reflexology",
-      "Reiki and crystal healing"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -166,7 +145,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.140Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity Therapy combines Ayurveda, Traditional Chinese Medicine, and Western anatomy.",
     "long_explanation": "It emphasizes the integration of multiple traditions to understand energetic anatomy, using five-element theory, meridians, and reflex patterns.",
     "clinical_application": "This integrative view enhances adaptability in holistic massage sessions.",
@@ -193,13 +172,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 004",
+    "id": "polarity_004",
     "question": "Which element is NOT part of the five elements in Polarity Therapy?",
-    "answers": ["Earth", "Metal", "Fire", "Water"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -215,7 +192,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.140Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "The five elements in Polarity Therapy are Earth, Water, Fire, Air, and Ether—not Metal.",
     "long_explanation": "These elements symbolize energy patterns in the body and guide techniques used to restore balance.",
     "clinical_application": "Bodyworkers may use the five-element model to guide intention and observe energy shifts during treatment.",
@@ -232,18 +209,11 @@
     "abcd": ["A. Earth", "B. Metal", "C. Fire", "D. Water"],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 005",
+    "id": "polarity_005",
     "question": "Which of the following techniques is commonly used in Polarity Therapy?",
-    "answers": [
-      "Percussion",
-      "Deep tissue pressure",
-      "Gentle touch and energetic contact",
-      "Joint cracking"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -273,7 +243,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity Therapy uses gentle touch and energetic contact, not deep pressure.",
     "long_explanation": "Contact is applied with intention to move or balance subtle energy patterns, often combining firm and light contact.",
     "clinical_application": "Massage therapists integrate it to calm the nervous system or support trauma resolution.",
@@ -300,18 +270,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 006",
+    "id": "polarity_006",
     "question": "What does the term 'polarity' in Polarity Therapy refer to?",
-    "answers": [
-      "Opposition in muscle groups",
-      "Emotional tension",
-      "Positive and negative energy charges in the body",
-      "Magnetic therapy tools"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -337,7 +300,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity refers to the positive and negative energetic charges within the body.",
     "long_explanation": "These charges help explain how energy flows between poles and centers, influencing balance and health.",
     "clinical_application": "Understanding polarity helps practitioners choose hand placements for flow enhancement.",
@@ -364,18 +327,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 007",
+    "id": "polarity_007",
     "question": "In Polarity Therapy, energy is believed to flow through:",
-    "answers": [
-      "Skin pores",
-      "Blood vessels",
-      "Electromagnetic pathways",
-      "The nervous system only"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -399,7 +355,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Energy in Polarity Therapy flows through electromagnetic pathways.",
     "long_explanation": "These channels resemble meridians and reflex arcs, allowing for diagnostic and therapeutic energetic mapping.",
     "clinical_application": "Bodyworkers apply this to refine subtle-touch skills and deepen client awareness.",
@@ -426,18 +382,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 008",
+    "id": "polarity_008",
     "question": "Which bodywork approach is often integrated into Polarity Therapy?",
-    "answers": [
-      "Swedish massage",
-      "Craniosacral therapy",
-      "Reflexology",
-      "Manual lymph drainage"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -467,7 +416,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Craniosacral therapy is often integrated into Polarity Therapy sessions.",
     "long_explanation": "Both modalities work with subtle rhythm, energetic shifts, and deep listening touch.",
     "clinical_application": "Integration improves client outcomes in stress relief, trauma healing, and nervous system balance.",
@@ -494,18 +443,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 009",
+    "id": "polarity_009",
     "question": "Polarity Therapy also includes which of the following lifestyle components?",
-    "answers": [
-      "Color therapy",
-      "Sound baths",
-      "Diet and exercise",
-      "Surgical techniques"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -521,7 +463,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity Therapy includes lifestyle changes such as diet, exercise, and breathwork.",
     "long_explanation": "Dr. Stone emphasized the importance of aligning lifestyle with energy principles to support health and balance.",
     "clinical_application": "Practitioners may offer self-care plans involving food energetics and movement routines.",
@@ -548,18 +490,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 010",
+    "id": "polarity_010",
     "question": "What kind of touch is used in Polarity Therapy?",
-    "answers": [
-      "Only deep pressure",
-      "Only feather-light strokes",
-      "Varied pressure including gentle and firm",
-      "Only tapping"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "easy",
     "topic": "modalities",
@@ -583,7 +518,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.141Z",
     "updated_at": "2025-05-26T15:42:00.998299Z",
-    "unit": "../../../src/data/questions/modalities/polarity_therapy",
+    "unit": "polarity_therapy",
     "short_explanation": "Polarity Therapy uses varied touch from gentle to firm, depending on energy needs.",
     "long_explanation": "The approach is intuitive and client-centered, adapting pressure to the energetic or tissue feedback.",
     "clinical_application": "Massage therapists use this versatility to meet diverse sensitivity and therapeutic goals.",
@@ -610,6 +545,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "sourceFile": "polarity_therapy"
   }
 ]

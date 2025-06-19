@@ -1,14 +1,7 @@
 [
   {
-    "id": "L3_Nerve_001",
+    "id": "l3_nerve_001",
     "question": "Which muscle is primarily innervated by the L3 spinal root via the femoral nerve?",
-    "answers": [
-      "Gluteus medius",
-      "Rectus femoris",
-      "Biceps femoris",
-      "Tibialis anterior"
-    ],
-    "correct": 1,
     "short_explanation": "L3 contributes to femoral nerve innervation of the quadriceps, including rectus femoris.",
     "long_explanation": "The L3 spinal root forms part of the femoral nerve, which innervates the quadriceps femoris group. Rectus femoris, as one of these muscles, is essential for hip flexion and knee extension—key movements during gait.",
     "clinical_application": "Strengthening or massaging the quadriceps can be useful in clients with L3-related radiculopathy.",
@@ -34,7 +27,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which muscle is primarily innervated by the L3 spinal root via the femoral nerve?",
     "options": [
       "Gluteus medius",
@@ -51,18 +44,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_002",
+    "id": "l3_nerve_002",
     "question": "What sensory area is primarily innervated by the L3 dermatome?",
-    "answers": [
-      "Posterior thigh",
-      "Lateral foot",
-      "Anterior thigh",
-      "Lateral thigh"
-    ],
-    "correct": 2,
     "short_explanation": "L3 provides cutaneous sensation to the anterior thigh region.",
     "long_explanation": "The L3 dermatome spans the anterior mid-thigh, which helps differentiate it from L2 (upper thigh) and L4 (medial knee/leg). Testing this area can assist with identifying L3 nerve root compression.",
     "clinical_application": "Clients with L3 radiculopathy may present with numbness or tingling in the anterior thigh.",
@@ -77,7 +63,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "What sensory area is primarily innervated by the L3 dermatome?",
     "options": [
       "Posterior thigh",
@@ -94,18 +80,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_003",
+    "id": "l3_nerve_003",
     "question": "Which movement would most likely be impaired by L3 nerve root compression?",
-    "answers": [
-      "Ankle plantarflexion",
-      "Knee extension",
-      "Toe abduction",
-      "Hip extension"
-    ],
-    "correct": 1,
     "short_explanation": "L3 innervates muscles responsible for knee extension via the femoral nerve.",
     "long_explanation": "The L3 spinal nerve contributes to quadriceps innervation, essential for extending the knee. Compression of L3 can result in weakness or difficulty straightening the leg.",
     "clinical_application": "Massage therapy can complement rehab protocols for strengthening quadriceps in clients with L3 issues.",
@@ -120,7 +99,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which movement would most likely be impaired by L3 nerve root compression?",
     "options": [
       "Ankle plantarflexion",
@@ -137,18 +116,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_004",
+    "id": "l3_nerve_004",
     "question": "Which reflex is commonly tested to assess L3 function?",
-    "answers": [
-      "Achilles reflex",
-      "Patellar reflex",
-      "Plantar reflex",
-      "Biceps reflex"
-    ],
-    "correct": 1,
     "short_explanation": "The patellar reflex tests L3 and L4 spinal nerves.",
     "long_explanation": "The patellar tendon reflex assesses integrity of the femoral nerve and L3–L4 spinal segments. A diminished response may suggest L3 involvement.",
     "clinical_application": "In clients with back pain, testing the patellar reflex can help identify L3 radiculopathy.",
@@ -163,7 +135,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which reflex is commonly tested to assess L3 function?",
     "options": [
       "Achilles reflex",
@@ -180,18 +152,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_005",
+    "id": "l3_nerve_005",
     "question": "Which of the following is a likely symptom of L3 nerve root irritation?",
-    "answers": [
-      "Pain in the lateral foot",
-      "Pain radiating to the anterior thigh",
-      "Foot drop",
-      "Inability to abduct the toes"
-    ],
-    "correct": 1,
     "short_explanation": "Pain in the anterior thigh is characteristic of L3 nerve irritation.",
     "long_explanation": "L3 radiculopathy may cause radiating pain, tingling, or weakness in the anterior thigh. This pattern helps distinguish it from L4 (medial leg) and L5 (lateral leg/foot).",
     "clinical_application": "Massage can help reduce myofascial tension in associated areas and aid postural compensation.",
@@ -211,7 +176,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which of the following is a likely symptom of L3 nerve root irritation?",
     "options": [
       "Pain in the lateral foot",
@@ -228,18 +193,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_006",
+    "id": "l3_nerve_006",
     "question": "Which nerve branch carries L3 fibers and supplies sensation to the anterior thigh?",
-    "answers": [
-      "Sciatic nerve",
-      "Obturator nerve",
-      "Saphenous nerve",
-      "Femoral nerve"
-    ],
-    "correct": 3,
     "short_explanation": "The femoral nerve, carrying L2–L4, supplies anterior thigh sensation.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2–L4) and provides both motor innervation to the quadriceps and sensory input to the anterior thigh via its cutaneous branches.",
     "clinical_application": "Clients with anterior thigh numbness may benefit from femoral nerve mobilization or lumbar decompression techniques.",
@@ -254,7 +212,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which nerve branch carries L3 fibers and supplies sensation to the anterior thigh?",
     "options": [
       "Sciatic nerve",
@@ -271,18 +229,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_007",
+    "id": "l3_nerve_007",
     "question": "Which motion would be weakened in a client with L3 nerve root damage?",
-    "answers": [
-      "Hip abduction",
-      "Knee flexion",
-      "Knee extension",
-      "Ankle eversion"
-    ],
-    "correct": 2,
     "short_explanation": "L3 contributes to quadriceps activation, which extend the knee.",
     "long_explanation": "Damage to L3 can impair motor output via the femoral nerve, reducing strength in the quadriceps muscle group, especially during knee extension.",
     "clinical_application": "Massage therapists may observe weakness in sit-to-stand transitions or instability in clients with suspected L3 involvement.",
@@ -302,7 +253,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which motion would be weakened in a client with L3 nerve root damage?",
     "options": [
       "Hip abduction",
@@ -319,18 +270,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_008",
+    "id": "l3_nerve_008",
     "question": "Which functional activity is most likely affected by L3 nerve root compression?",
-    "answers": [
-      "Standing on tiptoe",
-      "Crossing the legs",
-      "Straightening the knee from seated",
-      "Raising the shoulder overhead"
-    ],
-    "correct": 2,
     "short_explanation": "Straightening the knee requires quadriceps activity, linked to L3.",
     "long_explanation": "The femoral nerve (L2–L4), receiving strong input from L3, activates the quadriceps to extend the knee. Tasks like rising from a chair rely heavily on this action.",
     "clinical_application": "Therapists can use functional screens like sit-to-stand tests to help detect L3 deficits.",
@@ -350,7 +294,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which functional activity is most likely affected by L3 nerve root compression?",
     "options": [
       "Standing on tiptoe",
@@ -367,18 +311,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_009",
+    "id": "l3_nerve_009",
     "question": "L3 nerve fibers are part of which major nerve plexus?",
-    "answers": [
-      "Cervical plexus",
-      "Sacral plexus",
-      "Lumbar plexus",
-      "Brachial plexus"
-    ],
-    "correct": 2,
     "short_explanation": "L3 is a lumbar spinal nerve forming the lumbar plexus.",
     "long_explanation": "The lumbar plexus arises from L1–L4 spinal nerves. It gives rise to the femoral and obturator nerves, both of which include L3 fibers.",
     "clinical_application": "Understanding plexus organization can help therapists pinpoint referral sources for symptoms such as anterior thigh pain.",
@@ -393,7 +330,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "L3 nerve fibers are part of which major nerve plexus?",
     "options": [
       "Cervical plexus",
@@ -410,18 +347,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   },
   {
-    "id": "L3_Nerve_010",
+    "id": "l3_nerve_010",
     "question": "Which massage technique would best support a client with anterior thigh tension due to L3 nerve irritation?",
-    "answers": [
-      "Deep friction over Achilles tendon",
-      "Effleurage of the posterior calf",
-      "Petrissage of the quadriceps",
-      "Tapotement of the plantar fascia"
-    ],
-    "correct": 2,
     "short_explanation": "Petrissage improves blood flow and relieves tension in L3-affected muscles.",
     "long_explanation": "Quadriceps tightness from guarding or compensation related to L3 irritation can benefit from petrissage techniques that target deeper layers, promoting mobility and circulation.",
     "clinical_application": "Massage therapists should assess neurological involvement before applying pressure to reduce symptom aggravation.",
@@ -436,7 +366,7 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "unit": "L3 spinal nerve",
+    "unit": "l3_nerve_innervations",
     "text": "Which massage technique would best support a client with anterior thigh tension due to L3 nerve irritation?",
     "options": [
       "Deep friction over Achilles tendon",
@@ -453,6 +383,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L3_nerve_innervations.json"
+    "sourceFile": "l3_nerve_innervations"
   }
 ]

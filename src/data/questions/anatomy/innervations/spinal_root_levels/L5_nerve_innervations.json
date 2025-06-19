@@ -1,14 +1,7 @@
 [
   {
-    "id": "L5_001",
+    "id": "l5_001",
     "question": "Which of the following muscles is primarily innervated by the L5 spinal nerve root?",
-    "answers": [
-      "Tibialis anterior",
-      "Gluteus maximus",
-      "Biceps femoris (long head)",
-      "Extensor hallucis longus"
-    ],
-    "correct": 3,
     "short_explanation": "L5 innervates extensor hallucis longus, key in big toe extension.",
     "long_explanation": "The L5 spinal nerve root significantly contributes to the innervation of the extensor hallucis longus, a critical muscle in extending the big toe. This function is crucial for normal gait, especially during the toe-off phase.",
     "clinical_application": "In massage therapy, assessing L5 integrity is essential for clients with gait dysfunctions or toe extension weakness.",
@@ -47,18 +40,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_002",
+    "id": "l5_002",
     "question": "Which dermatome is most affected in an L5 nerve root compression?",
-    "answers": [
-      "Lateral foot",
-      "Medial thigh",
-      "Big toe and dorsum of the foot",
-      "Posterior calf"
-    ],
-    "correct": 2,
     "short_explanation": "L5 dermatome includes big toe and dorsum of the foot.",
     "long_explanation": "The L5 dermatome typically includes the lateral shin and the dorsum of the foot, particularly the area over the big toe. Sensory testing of this region helps localize L5 dysfunction.",
     "clinical_application": "Clients presenting numbness or tingling over the big toe may have L5 nerve involvement, guiding targeted massage or referral.",
@@ -90,18 +77,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_003",
+    "id": "l5_003",
     "question": "Which functional movement is most likely impaired with an L5 spinal nerve injury?",
-    "answers": [
-      "Plantar flexion",
-      "Toe extension",
-      "Knee flexion",
-      "Hip adduction"
-    ],
-    "correct": 1,
     "short_explanation": "L5 controls toe extension through extensor hallucis longus.",
     "long_explanation": "Toe extension, particularly of the great toe, relies on muscles innervated by L5. Weakness in this movement often indicates L5 radiculopathy.",
     "clinical_application": "Toe extension tests are quick neurological checks massage therapists can observe during gait analysis.",
@@ -127,18 +108,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_004",
+    "id": "l5_004",
     "question": "Which reflex is tested to assess L5 spinal nerve function?",
-    "answers": [
-      "Patellar reflex",
-      "Achilles reflex",
-      "Hamstring reflex",
-      "Babinski sign"
-    ],
-    "correct": 2,
     "short_explanation": "The hamstring reflex tests L5 integrity.",
     "long_explanation": "While less commonly tested than the patellar or Achilles reflexes, the hamstring reflex can offer insight into L5 function. It involves contraction of the hamstrings in response to a tap at the tendon.",
     "clinical_application": "Therapists noting hamstring tone or asymmetry may consider nerve root involvement, including L5.",
@@ -164,18 +139,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_005",
+    "id": "l5_005",
     "question": "Which of these nerves contains fibers from the L5 root?",
-    "answers": [
-      "Femoral nerve",
-      "Common fibular nerve",
-      "Obturator nerve",
-      "Saphenous nerve"
-    ],
-    "correct": 1,
     "short_explanation": "L5 contributes to the common fibular (peroneal) nerve.",
     "long_explanation": "The L5 root contributes to the lumbosacral plexus and innervates the lower leg and foot through the common fibular nerve. It branches into deep and superficial fibular nerves.",
     "clinical_application": "Massage techniques along the fibular pathway must consider L5 involvement when addressing foot drop or nerve entrapment.",
@@ -201,18 +170,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_006",
+    "id": "l5_006",
     "question": "Which clinical test helps isolate L5 nerve root pathology?",
-    "answers": [
-      "Straight leg raise",
-      "Thompson test",
-      "Trendelenburg test",
-      "Phalen’s test"
-    ],
-    "correct": 0,
     "short_explanation": "SLR reproduces symptoms from L4–S1 nerve roots, including L5.",
     "long_explanation": "The straight leg raise (SLR) test stretches the sciatic nerve, which includes L5 fibers. If it reproduces symptoms, it may indicate nerve root compression or irritation.",
     "clinical_application": "Massage therapists may refer clients with positive SLR and radiating pain to a physician for further evaluation.",
@@ -243,13 +206,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_007",
+    "id": "l5_007",
     "question": "Foot drop is most associated with damage to which spinal root?",
-    "answers": ["S1", "L2", "L5", "C7"],
-    "correct": 2,
     "short_explanation": "L5 controls dorsiflexors; injury may cause foot drop.",
     "long_explanation": "Foot drop results from weakened dorsiflexion, primarily due to L5 nerve root dysfunction. It affects gait and may require orthotics or targeted therapy.",
     "clinical_application": "Therapists should assess anterior leg strength and refer when foot drop is observed.",
@@ -265,18 +227,12 @@
     "abcd": ["A. S1", "B. L2", "C. L5", "D. C7"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_008",
+    "id": "l5_008",
     "question": "What action is preserved with an isolated L5 nerve lesion?",
-    "answers": [
-      "Ankle dorsiflexion",
-      "Big toe extension",
-      "Plantar flexion",
-      "Foot eversion"
-    ],
-    "correct": 2,
     "short_explanation": "Plantar flexion (S1) may remain intact despite L5 lesion.",
     "long_explanation": "Plantar flexion is primarily mediated by the S1 root via the tibial nerve, and is typically spared in an L5 lesion. This helps differentiate L5 from S1 pathology.",
     "clinical_application": "Assessing plantar flexion strength helps confirm the level of nerve involvement.",
@@ -307,18 +263,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_009",
+    "id": "l5_009",
     "question": "Which muscle would most likely be weak with L5 nerve root compression?",
-    "answers": [
-      "Peroneus longus",
-      "Soleus",
-      "Tibialis posterior",
-      "Gluteus maximus"
-    ],
-    "correct": 0,
     "short_explanation": "Peroneus longus is innervated partly by L5 via the superficial fibular nerve.",
     "long_explanation": "The peroneus longus and brevis assist in eversion and receive L5 contributions. Weakness in these muscles may indicate L5 involvement and affect foot stability.",
     "clinical_application": "Weak eversion can be observed in postural imbalances and guides massage therapists in lower limb assessments.",
@@ -349,13 +299,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   },
   {
-    "id": "L5_010",
+    "id": "l5_010",
     "question": "A massage client reports numbness in the dorsal foot and difficulty lifting their big toe. Which spinal nerve is most likely involved?",
-    "answers": ["L3", "L4", "L5", "S1"],
-    "correct": 2,
     "short_explanation": "These symptoms suggest L5 nerve involvement.",
     "long_explanation": "The L5 nerve root innervates the extensor hallucis longus and provides sensory input to the dorsal foot. Dysfunction manifests as toe extension weakness and sensory changes over the dorsum.",
     "clinical_application": "Such signs warrant referral, but also guide neuromuscular massage targeting compensatory areas.",
@@ -376,6 +325,7 @@
     "abcd": ["A. L3", "B. L4", "C. L5", "D. S1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "L5_nerve_innervations.json"
+    "sourceFile": "l5_nerve_innervations",
+    "unit": "l5_nerve_innervations"
   }
 ]

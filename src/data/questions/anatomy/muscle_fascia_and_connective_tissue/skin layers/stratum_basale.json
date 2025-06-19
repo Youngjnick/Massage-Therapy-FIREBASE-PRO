@@ -2,13 +2,6 @@
   {
     "id": "stratum_basale_001",
     "question": "What is the main function of the stratum basale?",
-    "answers": [
-      "Waterproofing",
-      "Cell division",
-      "Sweat production",
-      "Sensory reception"
-    ],
-    "correct": 1,
     "short_explanation": "The stratum basale is the mitotic layer responsible for generating new skin cells.",
     "long_explanation": "Located at the base of the epidermis, the stratum basale contains basal keratinocytes that divide continuously to replace lost or damaged cells in upper layers.",
     "clinical_application": "Skin healing begins in the stratum basale, making it vital after abrasion or massage-induced friction.",
@@ -39,13 +32,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "stratum_basale.json"
+    "sourceFile": "stratum_basale",
+    "unit": "stratum_basale"
   },
   {
     "id": "stratum_basale_002",
     "question": "Which type of cell in the stratum basale produces melanin?",
-    "answers": ["Keratinocyte", "Langerhans cell", "Merkel cell", "Melanocyte"],
-    "correct": 3,
     "short_explanation": "Melanocytes in the stratum basale synthesize melanin pigment.",
     "long_explanation": "Melanocytes distribute melanin to surrounding keratinocytes to protect nuclei from UV radiation.",
     "clinical_application": "Hyperpigmentation and tanning are regulated at the level of melanocytes in the stratum basale.",
@@ -71,13 +63,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "stratum_basale.json"
+    "sourceFile": "stratum_basale",
+    "unit": "stratum_basale"
   },
   {
     "id": "stratum_basale_003",
     "question": "Which sensory cell is found in the stratum basale?",
-    "answers": ["Melanocyte", "Merkel cell", "Langerhans cell", "Fibroblast"],
-    "correct": 1,
     "short_explanation": "Merkel cells are touch receptors in the stratum basale.",
     "long_explanation": "Merkel cells form synaptic contacts with sensory neurons and contribute to tactile sensation.",
     "clinical_application": "Massage pressure sensitivity is partially mediated by Merkel cells.",
@@ -103,18 +94,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "stratum_basale.json"
+    "sourceFile": "stratum_basale",
+    "unit": "stratum_basale"
   },
   {
     "id": "stratum_basale_004",
     "question": "What anchors the stratum basale to the dermis?",
-    "answers": [
-      "Tight junctions",
-      "Hemidesmosomes",
-      "Desmosomes",
-      "Gap junctions"
-    ],
-    "correct": 1,
     "short_explanation": "Hemidesmosomes bind basal cells to the basement membrane.",
     "long_explanation": "These structures provide firm adhesion between the stratum basale and underlying dermal tissue.",
     "clinical_application": "Blisters can form if hemidesmosome anchoring is disrupted under mechanical stress.",
@@ -145,6 +130,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "stratum_basale.json"
+    "sourceFile": "stratum_basale",
+    "unit": "stratum_basale"
   }
 ]

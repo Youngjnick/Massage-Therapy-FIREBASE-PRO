@@ -1,14 +1,7 @@
 [
   {
-    "id": "Parathyroid_001",
+    "id": "parathyroid_001",
     "question": "What hormone is secreted by the parathyroid glands?",
-    "answers": [
-      "Calcitonin",
-      "Parathyroid hormone (PTH)",
-      "Thyroxine (T4)",
-      "Aldosterone"
-    ],
-    "correct": 1,
     "short_explanation": "PTH is the primary hormone secreted by the parathyroid glands.",
     "long_explanation": "Parathyroid hormone (PTH) increases blood calcium levels by stimulating osteoclasts, increasing calcium reabsorption in kidneys, and activating vitamin D for better intestinal absorption.",
     "applied_example": "Massage therapists should be cautious with clients who have calcium imbalances, especially those with hyperparathyroidism-related bone fragility.",
@@ -38,13 +31,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_002",
+    "id": "parathyroid_002",
     "question": "Which organ system is most directly affected by parathyroid hormone?",
-    "answers": ["Respiratory", "Digestive", "Skeletal", "Reproductive"],
-    "correct": 2,
     "short_explanation": "PTH primarily acts on bones to regulate calcium.",
     "long_explanation": "PTH stimulates osteoclasts to resorb bone matrix, releasing calcium into the bloodstream. It plays a key role in bone remodeling and calcium-phosphate balance.",
     "applied_example": "Clients with osteoporosis or chronic fractures may have hyperparathyroidism and should avoid deep pressure techniques over fragile bones.",
@@ -65,18 +57,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_003",
+    "id": "parathyroid_003",
     "question": "What is the effect of PTH on renal function?",
-    "answers": [
-      "Decreases calcium reabsorption",
-      "Increases phosphate reabsorption",
-      "Increases calcium reabsorption",
-      "Decreases sodium excretion"
-    ],
-    "correct": 2,
     "short_explanation": "PTH increases calcium reabsorption in the distal tubules of the kidney.",
     "long_explanation": "Parathyroid hormone acts on the kidneys to conserve calcium and excrete phosphate, helping to maintain high calcium levels in the blood.",
     "applied_example": "Kidney stone risk is higher in hyperparathyroid clients. Hydration recommendations may accompany massage therapy.",
@@ -106,18 +92,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_004",
+    "id": "parathyroid_004",
     "question": "Low levels of PTH can lead to which condition?",
-    "answers": [
-      "Hypercalcemia",
-      "Hypocalcemia",
-      "Goiter",
-      "Diabetes insipidus"
-    ],
-    "correct": 1,
     "short_explanation": "Hypoparathyroidism results in low calcium levels in the blood.",
     "long_explanation": "Without adequate PTH, calcium is not effectively mobilized from bone, absorbed from the gut, or reabsorbed by kidneys, leading to hypocalcemia.",
     "applied_example": "Clients with hypocalcemia may experience muscle cramps, spasms, or tetany that massage can help relieve with gentle techniques.",
@@ -143,13 +123,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_005",
+    "id": "parathyroid_005",
     "question": "Which vitamin is activated by PTH to assist in calcium absorption?",
-    "answers": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
-    "correct": 3,
     "short_explanation": "PTH activates vitamin D, enhancing calcium absorption in the gut.",
     "long_explanation": "PTH stimulates conversion of inactive vitamin D to its active form, calcitriol, in the kidneys, which increases calcium absorption from the intestines.",
     "applied_example": "Therapists should consider vitamin D status when discussing lifestyle habits with clients who have bone or muscle issues.",
@@ -169,18 +148,12 @@
     "abcd": ["A. Vitamin A", "B. Vitamin B12", "C. Vitamin C", "D. Vitamin D"],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_006",
+    "id": "parathyroid_006",
     "question": "Where are the parathyroid glands typically located?",
-    "answers": [
-      "On the posterior surface of the thyroid",
-      "Inside the adrenal glands",
-      "Above the pituitary",
-      "In the pancreas"
-    ],
-    "correct": 0,
     "short_explanation": "Parathyroid glands are embedded on the back of the thyroid.",
     "long_explanation": "The four parathyroid glands lie on the posterior surface of the thyroid gland and are crucial for regulating calcium homeostasis.",
     "applied_example": "Cervical surgeries or trauma may affect parathyroid function, leading to symptoms a massage therapist should watch for.",
@@ -206,18 +179,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_007",
+    "id": "parathyroid_007",
     "question": "What is a common symptom of hyperparathyroidism?",
-    "answers": [
-      "Bradycardia",
-      "Weight loss",
-      "Kidney stones",
-      "Increased appetite"
-    ],
-    "correct": 2,
     "short_explanation": "Elevated calcium can lead to stone formation in the kidneys.",
     "long_explanation": "Excess PTH raises calcium in blood and urine, increasing kidney stone risk. Other signs may include bone pain and depression.",
     "applied_example": "Massage therapy can help alleviate musculoskeletal pain in clients managing chronic hyperparathyroidism.",
@@ -243,13 +210,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_008",
+    "id": "parathyroid_008",
     "question": "What type of feedback loop regulates PTH secretion?",
-    "answers": ["Positive", "Neural", "Negative", "Reflexive"],
-    "correct": 2,
     "short_explanation": "PTH is regulated by negative feedback in response to serum calcium levels.",
     "long_explanation": "When calcium levels fall, PTH is released to restore balance. Rising calcium then inhibits further secretion, creating a negative feedback loop.",
     "applied_example": "Massage techniques promoting relaxation may support endocrine balance indirectly by lowering systemic stress and supporting homeostasis.",
@@ -269,13 +235,12 @@
     "abcd": ["A. Positive", "B. Neural", "C. Negative", "D. Reflexive"],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_009",
+    "id": "parathyroid_009",
     "question": "Parathyroid disorders are most directly linked to imbalances in which electrolyte?",
-    "answers": ["Potassium", "Chloride", "Sodium", "Calcium"],
-    "correct": 3,
     "short_explanation": "Calcium is tightly regulated by PTH.",
     "long_explanation": "PTH regulates serum calcium, and imbalances in PTH levels result in hypercalcemia or hypocalcemia with muscle, nerve, and bone symptoms.",
     "applied_example": "Muscle spasms or cramps in clients could be signs of calcium imbalance, meriting further referral and cautious pressure techniques.",
@@ -295,13 +260,12 @@
     "abcd": ["A. Potassium", "B. Chloride", "C. Sodium", "D. Calcium"],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   },
   {
-    "id": "Parathyroid_010",
+    "id": "parathyroid_010",
     "question": "What imaging technique is often used to locate overactive parathyroid tissue?",
-    "answers": ["X-ray", "Ultrasound", "CT angiography", "PET scan"],
-    "correct": 1,
     "short_explanation": "Ultrasound is commonly used to locate enlarged or overactive parathyroid glands.",
     "long_explanation": "Ultrasound and nuclear medicine scans (like sestamibi) are used preoperatively to localize hyperactive parathyroid glands for surgical planning.",
     "applied_example": "Post-operative clients may benefit from gentle lymphatic or neck work to reduce swelling, with caution to avoid recent incision sites.",
@@ -317,6 +281,7 @@
     "abcd": ["A. X-ray", "B. Ultrasound", "C. CT angiography", "D. PET scan"],
     "main_topic": "anatomy",
     "subtopic": "organs",
-    "filename": "parathyroid.json"
+    "sourceFile": "parathyroid",
+    "unit": "parathyroid"
   }
 ]

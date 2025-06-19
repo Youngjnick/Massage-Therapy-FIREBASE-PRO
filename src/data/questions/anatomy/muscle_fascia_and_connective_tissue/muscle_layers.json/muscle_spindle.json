@@ -2,13 +2,6 @@
   {
     "id": "muscle_spindle_001",
     "question": "What is the primary function of the muscle spindle?",
-    "answers": [
-      "Detect muscle fatigue",
-      "Monitor muscle stretch",
-      "Facilitate muscle relaxation",
-      "Transmit pain signals"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Muscle spindles detect changes in muscle length.",
     "long_explanation": "Muscle spindles are specialized sensory receptors within the muscle that respond to stretch, helping regulate posture and movement through reflexes.",
@@ -35,18 +28,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_002",
     "question": "Where are muscle spindles located?",
-    "answers": [
-      "In the tendon",
-      "Between muscle fibers",
-      "In the synaptic cleft",
-      "In the joint capsule"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "They lie in parallel with skeletal muscle fibers.",
     "long_explanation": "Muscle spindles are embedded within the belly of skeletal muscles and are aligned parallel to the muscle fibers they monitor.",
@@ -73,18 +60,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_003",
     "question": "Which type of nerve fiber innervates the central region of the muscle spindle?",
-    "answers": [
-      "Gamma motor neurons",
-      "Alpha motor neurons",
-      "Type Ia afferent fibers",
-      "C fibers"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Type Ia afferents detect rapid stretch changes.",
     "long_explanation": "The central (non-contractile) region of the spindle is innervated by Ia afferent sensory neurons that transmit stretch information to the spinal cord.",
@@ -111,18 +92,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_004",
     "question": "What motor neurons adjust the sensitivity of the muscle spindle?",
-    "answers": [
-      "Alpha motor neurons",
-      "Beta neurons",
-      "Gamma motor neurons",
-      "Delta neurons"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Gamma motor neurons tune spindle sensitivity.",
     "long_explanation": "Gamma motor neurons stimulate the contractile ends of the intrafusal fibers, keeping the spindle taut and responsive during muscle movements.",
@@ -149,18 +124,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_005",
     "question": "Which reflex is mediated by the muscle spindle?",
-    "answers": [
-      "Flexor withdrawal reflex",
-      "Golgi tendon reflex",
-      "Stretch reflex",
-      "Crossed extensor reflex"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "The stretch reflex helps maintain muscle tone.",
     "long_explanation": "The stretch (myotatic) reflex is activated when muscle spindles sense a stretch, leading to reflexive contraction of the muscle to resist the stretch.",
@@ -187,18 +156,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_006",
     "question": "How does slow, sustained stretching affect the muscle spindle response?",
-    "answers": [
-      "It activates a strong contraction",
-      "It sensitizes the spindle",
-      "It inhibits spindle firing",
-      "It damages intrafusal fibers"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Slow stretch reduces spindle activation.",
     "long_explanation": "Gradual stretching desensitizes muscle spindles and decreases the stretch reflex, facilitating muscle relaxation and lengthening.",
@@ -229,18 +192,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_007",
     "question": "What are intrafusal muscle fibers?",
-    "answers": [
-      "Fibers that generate the bulk of muscle force",
-      "Connective tissue capsules in tendons",
-      "Sensory fibers that monitor tension",
-      "Specialized muscle fibers within the spindle"
-    ],
-    "correct": 3,
     "distractors": [0, 1, 2],
     "short_explanation": "Intrafusal fibers are part of the spindle, not force generators.",
     "long_explanation": "Intrafusal fibers lie within the muscle spindle and detect changes in muscle length. They differ from extrafusal fibers, which generate force.",
@@ -267,18 +224,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_008",
     "question": "Which type of movement most stimulates muscle spindles?",
-    "answers": [
-      "Quick stretch",
-      "Isometric contraction",
-      "Slow concentric movement",
-      "Relaxation"
-    ],
-    "correct": 0,
     "distractors": [1, 2, 3],
     "short_explanation": "Sudden stretching maximally activates the spindle.",
     "long_explanation": "Muscle spindles are highly responsive to quick changes in length and send rapid feedback to prevent overstretching.",
@@ -305,18 +256,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_009",
     "question": "Which of the following inhibits the activity of the muscle spindle?",
-    "answers": [
-      "Heat application",
-      "Quick stretch",
-      "Electrical stimulation",
-      "Cold application"
-    ],
-    "correct": 0,
     "distractors": [1, 2, 3],
     "short_explanation": "Heat relaxes muscle and reduces spindle firing.",
     "long_explanation": "Thermal therapy like moist heat increases tissue extensibility and may dampen proprioceptive firing, aiding muscle lengthening.",
@@ -343,18 +288,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   },
   {
     "id": "muscle_spindle_010",
     "question": "Why are muscle spindles important in maintaining posture?",
-    "answers": [
-      "They generate muscle force",
-      "They relax muscles during movement",
-      "They provide sensory feedback for balance",
-      "They inhibit reflexes"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "They help correct body position through reflexes.",
     "long_explanation": "Muscle spindles detect subtle changes in muscle length and trigger reflexes that adjust muscle tension to maintain upright posture.",
@@ -381,6 +320,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/muscle_layers.json",
-    "filename": "muscle_spindle.json"
+    "sourceFile": "muscle_spindle",
+    "unit": "muscle_spindle"
   }
 ]

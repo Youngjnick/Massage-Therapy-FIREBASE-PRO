@@ -11,6 +11,7 @@ jest.mock('../questions/index', () => ({
       options: ['A', 'B', 'C'],
       correctAnswer: 'B',
       topic: 'T1',
+      sourceFile: 'Other', // Add sourceFile for new topic logic
       short_explanation: 'Short explanation',
     },
     {
@@ -19,6 +20,7 @@ jest.mock('../questions/index', () => ({
       options: ['X', 'Y', 'Z'],
       correctAnswer: 'Y',
       topic: 'T1',
+      sourceFile: 'Other', // Add sourceFile for new topic logic
       short_explanation: 'Another explanation',
     },
   ]),

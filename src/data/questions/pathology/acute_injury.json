@@ -8,13 +8,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "What is the defining characteristic of an acute injury?",
-    "answers": [
-      "Chronic inflammation",
-      "Gradual pain onset",
-      "Sudden tissue trauma",
-      "Long-term dysfunction"
-    ],
-    "correct": 2,
     "short_explanation": "Acute injuries occur suddenly and are often caused by trauma.",
     "long_explanation": "Unlike chronic injuries, acute injuries result from an immediate incident—such as a fall or strain—causing sharp pain, swelling, and inflammation.",
     "clinical_application": "Massage therapists must recognize acute injury signs to avoid aggravating tissue.",
@@ -37,7 +30,8 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_002",
@@ -48,13 +42,6 @@
     "difficulty_rating": 1,
     "question_type": "Multiple Choice",
     "question": "Which of the following is an example of an acute injury?",
-    "answers": [
-      "Tendonitis",
-      "Hamstring strain",
-      "Osteoarthritis",
-      "Plantar fasciitis"
-    ],
-    "correct": 1,
     "short_explanation": "Hamstring strains are sudden, acute muscle injuries.",
     "long_explanation": "Tendonitis and arthritis are chronic conditions, while strains involve immediate fiber tearing, inflammation, and dysfunction.",
     "clinical_application": "Identify and refer out acute injuries for proper medical care before massage.",
@@ -77,7 +64,8 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_003",
@@ -88,8 +76,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "Which symptom is least likely in an acute stage injury?",
-    "answers": ["Redness", "Swelling", "Coolness", "Pain"],
-    "correct": 2,
     "short_explanation": "Coolness suggests chronic ischemia, not acute inflammation.",
     "long_explanation": "The acute phase typically shows warmth due to increased blood flow and inflammation—not coolness or pallor.",
     "clinical_application": "Therapists must monitor heat, swelling, and signs of inflammation.",
@@ -102,7 +88,8 @@
     "abcd": ["A. Redness", "B. Swelling", "C. Coolness", "D. Pain"],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_004",
@@ -113,13 +100,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "What is the safest initial approach to treating an acute soft tissue injury?",
-    "answers": [
-      "Deep tissue massage",
-      "Stretching the area",
-      "RICE protocol",
-      "Heat application"
-    ],
-    "correct": 2,
     "short_explanation": "RICE is the standard immediate care method for acute injuries.",
     "long_explanation": "Rest, Ice, Compression, and Elevation reduce inflammation and prevent further damage. Massage is not recommended during this phase.",
     "clinical_application": "Educating clients about RICE increases credibility and prevents harm.",
@@ -142,7 +122,8 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_005",
@@ -153,8 +134,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "During which phase of healing is massage typically **contraindicated**?",
-    "answers": ["Chronic", "Remodeling", "Acute", "Subacute"],
-    "correct": 2,
     "short_explanation": "Massage is generally avoided in the acute inflammatory phase.",
     "long_explanation": "Direct pressure may increase inflammation, swelling, and tissue damage if applied during the first 24–72 hours of injury.",
     "clinical_application": "Postpone hands-on treatment until the subacute phase begins.",
@@ -167,7 +146,8 @@
     "abcd": ["A. Chronic", "B. Remodeling", "C. Acute", "D. Subacute"],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_006",
@@ -178,13 +158,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "Which sign indicates massage may still be contraindicated in a healing injury?",
-    "answers": [
-      "Tissue is warm and red",
-      "Pain is fully gone",
-      "Full range of motion is restored",
-      "Tissue has scarred and cooled"
-    ],
-    "correct": 0,
     "short_explanation": "Warmth and redness suggest active inflammation.",
     "long_explanation": "Massage should be avoided if there is visible redness or excess heat, as these are signs the tissue is still inflamed and vulnerable.",
     "clinical_application": "Use visual and palpation cues to determine treatment timing.",
@@ -207,7 +180,8 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_007",
@@ -218,8 +192,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "Which of the following should be avoided during the acute phase of a muscle tear?",
-    "answers": ["Rest", "Gentle compression", "Ice", "Friction massage"],
-    "correct": 3,
     "short_explanation": "Friction massage can worsen inflammation during the acute phase.",
     "long_explanation": "Friction massage generates heat and pressure that can disrupt initial healing processes and cause further tearing or swelling.",
     "clinical_application": "Use passive approaches until the acute phase resolves.",
@@ -237,7 +209,8 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_008",
@@ -248,8 +221,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "Which type of tissue is most commonly affected in an acute sprain?",
-    "answers": ["Muscle", "Tendon", "Ligament", "Cartilage"],
-    "correct": 2,
     "short_explanation": "Ligaments are overstretched or torn in a sprain.",
     "long_explanation": "Sprains involve ligaments, while strains affect muscles or tendons. Knowing this distinction helps determine safe therapy and referral needs.",
     "clinical_application": "Avoid overstretching joints after a sprain, even during recovery.",
@@ -262,7 +233,8 @@
     "abcd": ["A. Muscle", "B. Tendon", "C. Ligament", "D. Cartilage"],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_009",
@@ -273,13 +245,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "What is the first priority in evaluating a new client with a recent injury?",
-    "answers": [
-      "Massage the area gently",
-      "Assess for inflammation and refer if needed",
-      "Begin stretching",
-      "Apply heat immediately"
-    ],
-    "correct": 1,
     "short_explanation": "Inflammation must be assessed before treatment.",
     "long_explanation": "Massage is often contraindicated in acute injuries, and proper referral or conservative care (RICE) may be more appropriate.",
     "clinical_application": "Protects both client safety and therapist liability.",
@@ -302,7 +267,8 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   },
   {
     "id": "acute_injury_010",
@@ -313,13 +279,6 @@
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
     "question": "When can massage generally begin after an acute injury?",
-    "answers": [
-      "Immediately after injury",
-      "Once inflammation subsides (subacute phase)",
-      "Only if there is a fracture",
-      "After 6 weeks regardless of symptoms"
-    ],
-    "correct": 1,
     "short_explanation": "Massage is typically safe in the subacute phase.",
     "long_explanation": "After 48–72 hours, once redness, swelling, and heat decrease, light massage may help reduce residual tension and assist recovery.",
     "clinical_application": "Monitor client progress and stay within scope of practice.",
@@ -342,6 +301,7 @@
     ],
     "main_topic": "pathology",
     "subtopic": "",
-    "filename": "acute_injury.json"
+    "sourceFile": "acute_injury",
+    "unit": "acute_injury"
   }
 ]

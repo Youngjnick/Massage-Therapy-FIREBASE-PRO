@@ -1,15 +1,13 @@
 [
   {
-    "id": "Clinical Application 001",
+    "id": "clinical_application_001",
     "question_rank": 1,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "FSMTB, Sports Massage Textbook",
     "question": "What technique is best to use before athletic activity to stimulate muscle response?",
-    "answers": ["Friction", "Effleurage", "Tapotement", "Petrissage"],
-    "correct": 2,
     "short_explanation": "Tapotement activates nerves and muscles pre-performance.",
     "long_explanation": "This percussive technique stimulates motor neurons, increasing alertness and muscle tone--ideal for preparing the body for exertion.",
     "clinical_application": "Used in sports massage warm-ups to enhance performance and neuromuscular readiness.",
@@ -22,19 +20,17 @@
     "abcd": ["A. Friction", "B. Effleurage", "C. Tapotement", "D. Petrissage"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 002",
+    "id": "clinical_application_002",
     "question_rank": 2,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "Trail Guide to the Body, Salvo",
     "question": "Which technique would you use to reduce chronic tension in the neck and shoulders?",
-    "answers": ["Tapotement", "Petrissage", "Vibration", "Friction"],
-    "correct": 1,
     "short_explanation": "Petrissage kneads and releases built-up tension.",
     "long_explanation": "This technique lifts and compresses soft tissue, helping to break down adhesions and relieve muscle hypertonicity in stressed regions.",
     "clinical_application": "Used in chronic stress, tech neck, and desk workers with upper body tightness.",
@@ -51,19 +47,17 @@
     "abcd": ["A. Tapotement", "B. Petrissage", "C. Vibration", "D. Friction"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 003",
+    "id": "clinical_application_003",
     "question_rank": 3,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "FSMTB, Clinical Massage Manual",
     "question": "What technique is useful for treating scar tissue and improving mobility?",
-    "answers": ["Effleurage", "Tapotement", "Friction", "Compression"],
-    "correct": 2,
     "short_explanation": "Friction targets deep adhesions in scarred tissue.",
     "long_explanation": "Cross-fiber friction breaks down scar tissue and enhances collagen remodeling, restoring range of motion in affected areas.",
     "clinical_application": "Common in post-surgical rehab and chronic injury recovery.",
@@ -76,19 +70,17 @@
     "abcd": ["A. Effleurage", "B. Tapotement", "C. Friction", "D. Compression"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 004",
+    "id": "clinical_application_004",
     "question_rank": 4,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "Salvo, Massage Therapy Outline",
     "question": "Which massage technique is best for reducing anxiety and promoting parasympathetic activation?",
-    "answers": ["Friction", "Tapotement", "Effleurage", "Vibration"],
-    "correct": 2,
     "short_explanation": "Effleurage relaxes the nervous system and calms the mind.",
     "long_explanation": "Smooth, gliding strokes activate the parasympathetic nervous system, reduce cortisol, and promote a sense of safety and calm.",
     "clinical_application": "Effective for general stress, trauma-informed work, and sleep support.",
@@ -101,19 +93,17 @@
     "abcd": ["A. Friction", "B. Tapotement", "C. Effleurage", "D. Vibration"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 005",
+    "id": "clinical_application_005",
     "question_rank": 5,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "Salvo, Clinical Protocols for Massage",
     "question": "What technique might be used to prepare tissue before deep tissue work?",
-    "answers": ["Friction", "Effleurage", "Petrissage", "Tapotement"],
-    "correct": 1,
     "short_explanation": "Effleurage warms up the tissue and enhances glide.",
     "long_explanation": "It gently increases circulation and relaxes superficial fascia, making deeper techniques more tolerable and effective.",
     "clinical_application": "Used at the beginning of sessions to gradually transition into deeper work.",
@@ -126,24 +116,17 @@
     "abcd": ["A. Friction", "B. Effleurage", "C. Petrissage", "D. Tapotement"],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 006",
+    "id": "clinical_application_006",
     "question_rank": 6,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "FSMTB, Vodder MLD Training",
     "question": "Which technique is commonly used to reduce edema after surgery or injury?",
-    "answers": [
-      "Friction",
-      "Tapotement",
-      "Manual lymphatic drainage",
-      "Effleurage"
-    ],
-    "correct": 2,
     "short_explanation": "Light rhythmic strokes encourage lymph flow and reduce swelling.",
     "long_explanation": "Lymphatic massage stimulates superficial lymph vessels, helping remove interstitial fluid and proteins from swollen tissues.",
     "clinical_application": "Used in post-op recovery, lymphedema care, or chronic inflammation.",
@@ -170,24 +153,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 007",
+    "id": "clinical_application_007",
     "question_rank": 7,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "Salvo, NMT Textbook",
     "question": "What technique would be most appropriate for releasing deep trigger points in the upper back?",
-    "answers": [
-      "Effleurage",
-      "Ischemic compression",
-      "Tapotement",
-      "Vibration"
-    ],
-    "correct": 1,
     "short_explanation": "Sustained pressure deactivates trigger points.",
     "long_explanation": "This technique applies static pressure to a hypersensitive point until pain decreases and muscle tone normalizes.",
     "clinical_application": "Used for chronic myofascial pain, headaches, or repetitive strain.",
@@ -214,24 +190,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 008",
+    "id": "clinical_application_008",
     "question_rank": 8,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "FSMTB, Sports Recovery Massage Guide",
     "question": "Which massage technique is best for improving muscle recovery after intense exercise?",
-    "answers": [
-      "Friction",
-      "Effleurage with flushing strokes",
-      "Compression",
-      "Tapotement"
-    ],
-    "correct": 1,
     "short_explanation": "Effleurage promotes circulation and waste removal.",
     "long_explanation": "Flushing strokes clear lactic acid and restore oxygen flow, enhancing tissue repair and reducing DOMS (delayed-onset muscle soreness).",
     "clinical_application": "Used in post-event sports massage and recovery protocols.",
@@ -254,24 +223,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 009",
+    "id": "clinical_application_009",
     "question_rank": 9,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "Trail Guide to the Body, MFR Manual",
     "question": "Which technique helps break up fascial restrictions in the thoracolumbar region?",
-    "answers": [
-      "Myofascial release",
-      "Effleurage",
-      "Tapotement",
-      "Compression"
-    ],
-    "correct": 0,
     "short_explanation": "Sustained stretching frees fascia and improves mobility.",
     "long_explanation": "Gentle, sustained pressure releases fascial adhesions by allowing collagen fibers to realign under load.",
     "clinical_application": "Used in chronic back pain, postural correction, and trauma recovery.",
@@ -294,24 +256,17 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   },
   {
-    "id": "Clinical Application 010",
+    "id": "clinical_application_010",
     "question_rank": 10,
     "difficulty": "intermediate",
     "topic": "techniques",
     "category": "Massage Techniques",
-    "unit": "clinical application of techniques",
+    "unit": "clinical_applications",
     "source_reference": "Trauma-Informed Bodywork, Salvo",
     "question": "What technique would you use on a client who is hypersensitive to touch but needs calming therapy?",
-    "answers": [
-      "Trigger point",
-      "Gentle rocking or rhythmic movement",
-      "Tapotement",
-      "Friction"
-    ],
-    "correct": 1,
     "short_explanation": "Rocking helps relax without triggering pain.",
     "long_explanation": "Rhythmic motion soothes the nervous system and is effective for clients with fibromyalgia, sensory disorders, or anxiety.",
     "clinical_application": "Used when pressure-based work is contraindicated or overstimulating.",
@@ -334,6 +289,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "techniques",
-    "filename": "clinical_applications.json"
+    "sourceFile": "clinical_applications"
   }
 ]

@@ -2,13 +2,6 @@
   {
     "id": "kidney_anatomy_001",
     "question": "What is the outermost layer of the kidney called?",
-    "answers": [
-      "Renal pelvis",
-      "Renal cortex",
-      "Renal medulla",
-      "Renal capsule"
-    ],
-    "correct": 3,
     "short_explanation": "The renal capsule is the tough outer fibrous layer.",
     "long_explanation": "The renal capsule is a dense, fibrous connective tissue layer that protects the kidney from injury and infection. It encases the renal cortex and medulla.",
     "applied_example": "Understanding the renal capsule is helpful in assessing lower back pain that could stem from organ referral rather than musculoskeletal causes.",
@@ -35,13 +28,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_002",
     "question": "Which kidney structure collects urine from the renal pyramids?",
-    "answers": ["Renal cortex", "Renal pelvis", "Calyx", "Ureter"],
-    "correct": 2,
     "short_explanation": "The calyces collect urine from pyramids before passing to the pelvis.",
     "long_explanation": "Minor calyces receive urine from the renal papillae and drain into major calyces, which then empty into the renal pelvis. This system channels urine toward the ureter.",
     "applied_example": "Awareness of the calyces helps understand fluid buildup that can lead to kidney pain referred to the low back or abdomen.",
@@ -58,13 +50,12 @@
     "abcd": ["A. Renal cortex", "B. Renal pelvis", "C. Calyx", "D. Ureter"],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_003",
     "question": "What is the name of the functional unit of the kidney?",
-    "answers": ["Glomerulus", "Nephron", "Renal tubule", "Loop of Henle"],
-    "correct": 1,
     "short_explanation": "The nephron is the kidney's functional filtration unit.",
     "long_explanation": "Each nephron consists of a glomerulus and renal tubule. It filters blood, reabsorbs needed substances, and excretes waste in the form of urine.",
     "applied_example": "Understanding the nephron helps massage therapists recognize symptoms related to renal impairment such as fatigue, edema, or toxicity.",
@@ -86,13 +77,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_004",
     "question": "What region of the kidney contains the renal pyramids?",
-    "answers": ["Renal cortex", "Renal pelvis", "Renal medulla", "Renal sinus"],
-    "correct": 2,
     "short_explanation": "The renal medulla houses the pyramids.",
     "long_explanation": "The renal medulla is the inner portion of the kidney and contains cone-shaped structures called renal pyramids, which play a key role in urine concentration.",
     "applied_example": "Massage therapy over the mid-to-lower back should consider potential discomfort near the medullary region due to renal congestion or dehydration.",
@@ -114,13 +104,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_005",
     "question": "Which structure carries urine from the kidney to the bladder?",
-    "answers": ["Renal pelvis", "Renal calyx", "Ureter", "Collecting duct"],
-    "correct": 2,
     "short_explanation": "The ureter transports urine to the bladder.",
     "long_explanation": "Urine flows from the collecting ducts to the calyces, then to the renal pelvis, and finally through the ureter to the urinary bladder for storage.",
     "applied_example": "Referred pain from ureter blockage may be felt in the back or lower abdomen, which can mimic musculoskeletal issues during massage assessments.",
@@ -142,18 +131,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_006",
     "question": "Which blood vessel brings blood into the kidney?",
-    "answers": [
-      "Renal artery",
-      "Renal vein",
-      "Inferior vena cava",
-      "Afferent arteriole"
-    ],
-    "correct": 0,
     "short_explanation": "The renal artery delivers oxygenated blood to the kidney.",
     "long_explanation": "The renal artery branches from the abdominal aorta and supplies the kidney with blood for filtration. It subdivides into segmental, interlobar, and arcuate arteries within the kidney.",
     "applied_example": "Good knowledge of renal circulation helps understand blood pressure-related kidney issues relevant to therapeutic bodywork.",
@@ -180,18 +163,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_007",
     "question": "Where is the hilum of the kidney located?",
-    "answers": [
-      "On the lateral surface",
-      "At the superior pole",
-      "On the medial concave border",
-      "On the anterior capsule"
-    ],
-    "correct": 2,
     "short_explanation": "The hilum is the medial entry point for vessels and nerves.",
     "long_explanation": "The hilum is a concave area on the medial side of the kidney where the renal artery, vein, ureter, lymphatics, and nerves enter or exit the organ.",
     "applied_example": "Pressure in this region may influence renal blood flow or ureter function and is often avoided in deep abdominal massage.",
@@ -218,18 +195,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_008",
     "question": "Which part of the nephron is primarily responsible for reabsorption of water and nutrients?",
-    "answers": [
-      "Loop of Henle",
-      "Distal convoluted tubule",
-      "Proximal convoluted tubule",
-      "Collecting duct"
-    ],
-    "correct": 2,
     "short_explanation": "The proximal convoluted tubule reabsorbs most filtrate.",
     "long_explanation": "This nephron segment reabsorbs about 65% of filtered water and essential nutrients like glucose and amino acids, helping retain valuable components in the body.",
     "applied_example": "Massage impacts circulation and hydration, which in turn can affect renal reabsorption and detoxification.",
@@ -256,18 +227,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_009",
     "question": "What anatomical feature helps concentrate urine in the kidney?",
-    "answers": [
-      "Renal cortex",
-      "Collecting duct",
-      "Loop of Henle",
-      "Renal calyx"
-    ],
-    "correct": 2,
     "short_explanation": "The Loop of Henle plays a major role in urine concentration.",
     "long_explanation": "The descending and ascending limbs of the loop establish a countercurrent multiplier system that concentrates solutes and conserves water.",
     "applied_example": "Understanding how the body concentrates urine supports hydration advice during massage therapy.",
@@ -294,18 +259,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   },
   {
     "id": "kidney_anatomy_010",
     "question": "Which structure returns filtered blood from the kidney to the systemic circulation?",
-    "answers": [
-      "Renal artery",
-      "Afferent arteriole",
-      "Renal vein",
-      "Glomerulus"
-    ],
-    "correct": 2,
     "short_explanation": "The renal vein returns blood to the inferior vena cava.",
     "long_explanation": "After filtration, blood exits the kidney through the renal vein, which empties into the inferior vena cava, maintaining circulatory balance.",
     "applied_example": "Massage therapists must understand vascular return, especially when treating clients with renal or cardiovascular conditions.",
@@ -332,6 +291,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "organs/kidneys",
-    "filename": "kidney_anatomy.json"
+    "sourceFile": "kidney_anatomy",
+    "unit": "kidney_anatomy"
   }
 ]

@@ -2,13 +2,6 @@
   {
     "id": "cn7_001",
     "question": "Which muscle group is primarily innervated by the facial nerve (CN VII)?",
-    "answers": [
-      "Muscles of mastication",
-      "Muscles of facial expression",
-      "Intrinsic laryngeal muscles",
-      "Extraocular muscles"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "CN VII innervates the muscles of facial expression.",
     "long_explanation": "The facial nerve (CN VII) is responsible for motor control of facial expression muscles including orbicularis oculi, buccinator, and zygomaticus major. These muscles allow for facial movement such as smiling, blinking, and frowning.",
@@ -36,18 +29,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_002",
     "question": "Which salivary glands receive parasympathetic innervation from CN VII?",
-    "answers": [
-      "Parotid glands",
-      "Submandibular and sublingual glands",
-      "Lacrimal glands only",
-      "Thyroid and parathyroid glands"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "CN VII innervates the submandibular and sublingual glands via the chorda tympani.",
     "long_explanation": "The facial nerve carries parasympathetic fibers to the submandibular and sublingual glands via the chorda tympani and lingual nerve. This helps regulate saliva secretion.",
@@ -75,18 +62,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_003",
     "question": "What is a hallmark symptom of Bell’s palsy?",
-    "answers": [
-      "Ptosis of both eyelids",
-      "Facial muscle paralysis on one side",
-      "Pain in the jaw",
-      "Difficulty speaking due to tongue paralysis"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Bell's palsy presents with sudden unilateral facial muscle paralysis.",
     "long_explanation": "Bell’s palsy is an acute condition caused by inflammation or compression of the facial nerve. It results in drooping of the mouth and eyelid on the affected side, and sometimes loss of taste or tear production.",
@@ -114,18 +95,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_004",
     "question": "Which of the following structures does CN VII pass through in the skull?",
-    "answers": [
-      "Foramen rotundum",
-      "Jugular foramen",
-      "Stylomastoid foramen",
-      "Foramen ovale"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "The facial nerve exits the skull via the stylomastoid foramen.",
     "long_explanation": "After passing through the internal acoustic meatus and facial canal, CN VII exits the skull via the stylomastoid foramen to reach the face.",
@@ -153,18 +128,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_005",
     "question": "Which branch of the facial nerve innervates the muscles around the eye?",
-    "answers": [
-      "Buccal branch",
-      "Mandibular branch",
-      "Temporal branch",
-      "Cervical branch"
-    ],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "The temporal branch supplies the orbicularis oculi and forehead muscles.",
     "long_explanation": "The temporal branch of CN VII innervates the frontalis and orbicularis oculi, helping raise the eyebrows and close the eyelids.",
@@ -192,18 +161,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_006",
     "question": "What taste sensation is carried by the facial nerve?",
-    "answers": [
-      "Anterior two-thirds of the tongue",
-      "Posterior one-third of the tongue",
-      "Palate",
-      "Epiglottis"
-    ],
-    "correct": 0,
     "distractors": [1, 2, 3],
     "short_explanation": "CN VII carries taste from the anterior 2/3 of the tongue via the chorda tympani.",
     "long_explanation": "The facial nerve transmits taste fibers from the anterior part of the tongue through the chorda tympani, which joins the lingual nerve (CN V3).",
@@ -231,13 +194,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_007",
     "question": "Which of the following is NOT innervated by the facial nerve?",
-    "answers": ["Platysma", "Buccinator", "Masseter", "Orbicularis oris"],
-    "correct": 2,
     "distractors": [0, 1, 3],
     "short_explanation": "Masseter is innervated by CN V (trigeminal), not CN VII.",
     "long_explanation": "While most facial muscles are innervated by CN VII, the masseter is an exception—it is a muscle of mastication innervated by the mandibular division of CN V.",
@@ -260,13 +222,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_008",
     "question": "Damage to the facial nerve at the stylomastoid foramen affects which function?",
-    "answers": ["Hearing", "Facial expression", "Taste", "Balance"],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "Facial expression muscles are affected since the motor branches emerge here.",
     "long_explanation": "After exiting the stylomastoid foramen, the facial nerve gives rise to branches for facial muscle control. Damage here affects only motor function, sparing taste and parasympathetics.",
@@ -284,18 +245,12 @@
     "abcd": ["A. Hearing", "B. Facial expression", "C. Taste", "D. Balance"],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_009",
     "question": "Which nerve joins the facial nerve to transmit parasympathetic fibers to glands?",
-    "answers": [
-      "Lingual nerve (CN V3)",
-      "Auriculotemporal nerve (CN V3)",
-      "Glossopharyngeal nerve (CN IX)",
-      "Hypoglossal nerve (CN XII)"
-    ],
-    "correct": 0,
     "distractors": [1, 2, 3],
     "short_explanation": "The lingual nerve helps carry chorda tympani fibers to the glands.",
     "long_explanation": "The chorda tympani from CN VII joins the lingual nerve (CN V3) to reach the submandibular ganglion and facilitate innervation of the salivary glands.",
@@ -323,18 +278,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   },
   {
     "id": "cn7_010",
     "question": "Which clinical sign may result from facial nerve damage at the internal acoustic meatus?",
-    "answers": [
-      "Loss of shoulder shrug",
-      "Impaired hearing and facial paralysis",
-      "Inability to chew",
-      "Drooping of the eyelid only"
-    ],
-    "correct": 1,
     "distractors": [0, 2, 3],
     "short_explanation": "The internal acoustic meatus houses both CN VII and CN VIII.",
     "long_explanation": "Damage at the internal acoustic meatus may affect both CN VII and CN VIII, leading to combined hearing loss and facial paralysis, as seen in tumors like acoustic neuromas.",
@@ -362,6 +311,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "CN7_nerve_innervations.json"
+    "sourceFile": "cn7_nerve_innervations",
+    "unit": "cn7_nerve_innervations"
   }
 ]

@@ -1,9 +1,7 @@
 [
   {
-    "id": "Thai Massage 001",
+    "id": "thai_massage_001",
     "question": "Thai massage is also known as:",
-    "answers": ["Nuad Thai", "Shiatsu", "Tui Na", "Swedish massage"],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -31,7 +29,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Nuad Thai is the traditional name for Thai massage.",
     "long_explanation": "Nuad Thai is the official term in Thailand, referring to a combination of acupressure, assisted yoga, and energy line work.",
     "clinical_application": "Clients may ask for 'Thai yoga massage' or 'Nuad Thai' by name, so practitioners should be familiar with all terms.",
@@ -47,18 +45,11 @@
     "abcd": ["A. Nuad Thai", "B. Shiatsu", "C. Tui Na", "D. Swedish massage"],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 002",
+    "id": "thai_massage_002",
     "question": "Thai massage is characterized by:",
-    "answers": [
-      "Deep pressure using only elbows",
-      "Gentle stroking",
-      "Passive stretching and compression along energy lines",
-      "Cupping and scraping"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -86,7 +77,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Thai massage blends stretching and pressure work.",
     "long_explanation": "It includes joint mobilization, acupressure, and assisted poses to promote energy flow through Sen lines.",
     "clinical_application": "Ideal for active individuals needing movement therapy or flexibility enhancement.",
@@ -112,18 +103,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 003",
+    "id": "thai_massage_003",
     "question": "Thai massage is traditionally performed with the client:",
-    "answers": [
-      "Nude on a heated table",
-      "Clothed on a floor mat",
-      "Standing in water",
-      "Seated on a stool"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -139,7 +123,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Thai massage is a clothed, mat-based treatment.",
     "long_explanation": "Clients wear loose clothing and lie on a mat, which allows full-body assisted movements and leverage-based techniques.",
     "clinical_application": "Useful for clients uncomfortable with oil-based massage or desiring deeper movement integration.",
@@ -165,13 +149,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 004",
+    "id": "thai_massage_004",
     "question": "Which energy lines are used in Thai massage?",
-    "answers": ["Meridians", "Sen lines", "Chakras", "Channels"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -191,7 +173,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Sen lines are energetic pathways in Thai medicine.",
     "long_explanation": "Thai massage works on 10 major Sen lines, similar in function to Chinese meridians, believed to carry life energy throughout the body.",
     "clinical_application": "Pressure points along Sen lines may relieve pain and stagnation.",
@@ -207,18 +189,11 @@
     "abcd": ["A. Meridians", "B. Sen lines", "C. Chakras", "D. Channels"],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 005",
+    "id": "thai_massage_005",
     "question": "What is one major benefit of Thai massage?",
-    "answers": [
-      "Increased muscle size",
-      "Improved flexibility and energy flow",
-      "Nutrient absorption",
-      "Sun protection"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -244,7 +219,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Thai massage increases flexibility and restores balance.",
     "long_explanation": "Stretching and pressure techniques promote range of motion and release energetic blockages.",
     "clinical_application": "Effective for athletes, dancers, or clients with tension and stiffness.",
@@ -270,13 +245,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 006",
+    "id": "thai_massage_006",
     "question": "Thai massage incorporates elements of which ancient system?",
-    "answers": ["Kalaripayattu", "Ayurveda", "Qi Gong", "Osteopathy"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -296,7 +269,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Thai medicine is historically linked with Ayurveda.",
     "long_explanation": "Influences from Indian Ayurvedic philosophy helped shape Thai theories of energy, herbs, and body types.",
     "clinical_application": "Therapists may integrate herbal compresses or dosha-balancing techniques.",
@@ -312,18 +285,11 @@
     "abcd": ["A. Kalaripayattu", "B. Ayurveda", "C. Qi Gong", "D. Osteopathy"],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 007",
+    "id": "thai_massage_007",
     "question": "Which of the following is a contraindication for Thai massage?",
-    "answers": [
-      "Mild stress",
-      "Recent surgery or herniated discs",
-      "Fatigue",
-      "Mild headache"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -349,7 +315,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Deep stretches may harm unstable structures.",
     "long_explanation": "Thai massage involves traction and mobilization, which may be unsafe post-surgery or with disc pathology.",
     "clinical_application": "Always screen for spinal issues, surgeries, and pregnancy before treatment.",
@@ -375,18 +341,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 008",
+    "id": "thai_massage_008",
     "question": "A key technique used in Thai massage is:",
-    "answers": [
-      "Oil-based gliding",
-      "Percussion",
-      "Joint mobilization",
-      "Yoga-like assisted stretching"
-    ],
-    "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -416,7 +375,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Thai massage includes assisted yoga poses.",
     "long_explanation": "These dynamic stretches improve alignment, mobility, and breath flow, supported by the practitioner’s body.",
     "clinical_application": "Helps with neuromuscular reeducation and postural restoration.",
@@ -442,13 +401,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 009",
+    "id": "thai_massage_009",
     "question": "How long is a traditional Thai massage session?",
-    "answers": ["10–15 minutes", "30 minutes", "60–120 minutes", "All day"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -464,7 +421,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Traditional sessions are longer than Western styles.",
     "long_explanation": "Longer sessions allow thorough work along all Sen lines and gradual integration of joint movement.",
     "clinical_application": "Educate clients that full benefits emerge through complete protocols.",
@@ -485,18 +442,11 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   },
   {
-    "id": "Thai Massage 010",
+    "id": "thai_massage_010",
     "question": "Thai massage is most appropriate for clients seeking:",
-    "answers": [
-      "Deep sleep therapy",
-      "Dynamic flexibility, movement, and energy balance",
-      "Weight loss",
-      "Surgical prep"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "modalities",
@@ -524,7 +474,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-26T22:11:36.359925Z",
     "updated_at": "2025-05-26T22:11:36.359925Z",
-    "unit": "../../../src/data/questions/modalities/thai_massage",
+    "unit": "thai_massage",
     "short_explanation": "Thai massage offers energizing and mobilizing effects.",
     "long_explanation": "It blends therapeutic stretching and pressure to restore energetic and physical equilibrium.",
     "clinical_application": "Recommend it for movement rehab, recovery, and chronic stagnation.",
@@ -550,6 +500,6 @@
     ],
     "main_topic": "modalities",
     "subtopic": "thai",
-    "filename": "thai_massage.json"
+    "sourceFile": "thai_massage"
   }
 ]

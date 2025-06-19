@@ -2,13 +2,6 @@
   {
     "id": "cranial_nerve_001",
     "question": "Which cranial nerve is responsible for smell?",
-    "answers": [
-      "CN I - Olfactory",
-      "CN II - Optic",
-      "CN V - Trigeminal",
-      "CN VII - Facial"
-    ],
-    "correct": 0,
     "short_explanation": "The olfactory nerve (CN I) transmits smell signals from the nasal mucosa to the brain.",
     "long_explanation": "CN I passes through the cribriform plate of the ethmoid bone and is vulnerable to damage from head trauma, potentially causing anosmia.",
     "applied_example": "Loss of smell after a concussion may indicate damage to the olfactory nerve.",
@@ -34,18 +27,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_002",
     "question": "Which cranial nerve controls the lateral rectus muscle of the eye?",
-    "answers": [
-      "CN II - Optic",
-      "CN III - Oculomotor",
-      "CN IV - Trochlear",
-      "CN VI - Abducens"
-    ],
-    "correct": 3,
     "short_explanation": "CN VI (Abducens) innervates the lateral rectus, allowing eye abduction.",
     "long_explanation": "Damage to CN VI can result in medial strabismus and double vision when looking laterally.",
     "applied_example": "Lateral gaze palsy in stroke or trauma may indicate abducens nerve dysfunction.",
@@ -71,18 +58,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_003",
     "question": "Which cranial nerve provides parasympathetic innervation to the heart and GI tract?",
-    "answers": [
-      "CN VII - Facial",
-      "CN IX - Glossopharyngeal",
-      "CN X - Vagus",
-      "CN XII - Hypoglossal"
-    ],
-    "correct": 2,
     "short_explanation": "The vagus nerve (CN X) controls parasympathetic functions from the neck to the abdomen.",
     "long_explanation": "CN X slows heart rate and stimulates digestion. It innervates organs including the lungs, heart, and intestines.",
     "applied_example": "Vagal stimulation can be therapeutic in stress reduction techniques like deep breathing.",
@@ -108,18 +89,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_004",
     "question": "Which cranial nerve innervates the muscles of facial expression?",
-    "answers": [
-      "CN V - Trigeminal",
-      "CN VII - Facial",
-      "CN IX - Glossopharyngeal",
-      "CN XI - Accessory"
-    ],
-    "correct": 1,
     "short_explanation": "The facial nerve (CN VII) controls all muscles of facial expression.",
     "long_explanation": "Facial nerve branches pass through the parotid gland and are vulnerable in Bell’s palsy, where half of the face becomes paralyzed.",
     "applied_example": "Massage therapists must be cautious with pressure over the stylomastoid foramen to avoid nerve irritation.",
@@ -145,18 +120,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_005",
     "question": "Which cranial nerve has three major sensory branches: ophthalmic, maxillary, and mandibular?",
-    "answers": [
-      "CN VII - Facial",
-      "CN VIII - Vestibulocochlear",
-      "CN V - Trigeminal",
-      "CN IX - Glossopharyngeal"
-    ],
-    "correct": 2,
     "short_explanation": "The trigeminal nerve (CN V) is the major sensory nerve of the face.",
     "long_explanation": "Its three branches cover facial sensation and the mandibular branch also carries motor fibers to muscles of mastication.",
     "applied_example": "Trigeminal neuralgia causes intense facial pain often triggered by light touch.",
@@ -182,18 +151,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_006",
     "question": "Which cranial nerve controls tongue movement?",
-    "answers": [
-      "CN IX - Glossopharyngeal",
-      "CN X - Vagus",
-      "CN XII - Hypoglossal",
-      "CN V - Trigeminal"
-    ],
-    "correct": 2,
     "short_explanation": "The hypoglossal nerve (CN XII) innervates intrinsic and extrinsic tongue muscles.",
     "long_explanation": "CN XII exits the skull via the hypoglossal canal and controls precise tongue movements. Damage causes tongue deviation toward the affected side.",
     "applied_example": "Tongue deviation on protrusion is a clinical test for CN XII integrity.",
@@ -219,18 +182,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_007",
     "question": "Which cranial nerve carries hearing and balance signals from the inner ear?",
-    "answers": [
-      "CN II - Optic",
-      "CN V - Trigeminal",
-      "CN VIII - Vestibulocochlear",
-      "CN XI - Accessory"
-    ],
-    "correct": 2,
     "short_explanation": "The vestibulocochlear nerve (CN VIII) transmits auditory and equilibrium signals.",
     "long_explanation": "The cochlear portion handles hearing, while the vestibular portion handles balance and spatial orientation.",
     "applied_example": "Vertigo or sensorineural hearing loss often implicate dysfunction in CN VIII.",
@@ -256,18 +213,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_008",
     "question": "Which cranial nerve exits the jugular foramen and innervates the sternocleidomastoid and trapezius?",
-    "answers": [
-      "CN XI - Accessory",
-      "CN VII - Facial",
-      "CN X - Vagus",
-      "CN XII - Hypoglossal"
-    ],
-    "correct": 0,
     "short_explanation": "CN XI innervates muscles responsible for head and shoulder movement.",
     "long_explanation": "Spinal accessory nerve is motor-only and can be injured in neck dissection surgeries, causing shoulder droop.",
     "applied_example": "Weak trapezius activation in massage clients may indicate accessory nerve dysfunction.",
@@ -293,18 +244,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_009",
     "question": "Which cranial nerve controls the superior oblique muscle of the eye?",
-    "answers": [
-      "CN III - Oculomotor",
-      "CN IV - Trochlear",
-      "CN VI - Abducens",
-      "CN V - Trigeminal"
-    ],
-    "correct": 1,
     "short_explanation": "CN IV (Trochlear) innervates the superior oblique for downward and lateral gaze.",
     "long_explanation": "It’s the smallest cranial nerve and the only one to exit dorsally from the brainstem.",
     "applied_example": "Trochlear nerve palsy can cause vertical diplopia and head tilt compensation.",
@@ -330,18 +275,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   },
   {
     "id": "cranial_nerve_010",
     "question": "Which cranial nerve is involved in taste sensation from the anterior two-thirds of the tongue?",
-    "answers": [
-      "CN V - Trigeminal",
-      "CN VII - Facial",
-      "CN IX - Glossopharyngeal",
-      "CN XII - Hypoglossal"
-    ],
-    "correct": 1,
     "short_explanation": "CN VII carries special sensory fibers for taste from the anterior 2/3 of the tongue.",
     "long_explanation": "The chorda tympani branch of CN VII joins the lingual nerve to transmit taste signals to the brainstem.",
     "applied_example": "Taste loss in anterior tongue may signal Bell’s palsy or facial nerve injury.",
@@ -367,6 +306,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "innervations/spinal_root_levels",
-    "filename": "cranial_nerves.json"
+    "sourceFile": "cranial_nerves",
+    "unit": "cranial_nerves"
   }
 ]

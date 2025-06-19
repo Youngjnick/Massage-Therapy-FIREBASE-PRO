@@ -8,13 +8,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "What is the primary function of the dermis?",
-    "answers": [
-      "To produce melanin",
-      "To store fat for insulation",
-      "To support and nourish the epidermis",
-      "To protect against UV radiation"
-    ],
-    "correct": 2,
     "short_explanation": "The dermis supports and nourishes the avascular epidermis.",
     "long_explanation": "The dermis contains a rich supply of blood vessels, lymphatics, and nerves that nourish the avascular epidermis and provide structural integrity to the skin.",
     "clinical_application": "Understanding dermal support is crucial for wound healing and scar formation during massage therapy or dermatological care.",
@@ -40,7 +33,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_002",
@@ -51,13 +45,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Which two layers make up the dermis?",
-    "answers": [
-      "Epidermis and hypodermis",
-      "Stratum corneum and stratum basale",
-      "Papillary and reticular layers",
-      "Adipose and collagen layers"
-    ],
-    "correct": 2,
     "short_explanation": "The dermis is divided into papillary and reticular layers.",
     "long_explanation": "The papillary layer is superficial, containing capillaries and sensory neurons, while the deeper reticular layer is rich in collagen and elastin fibers.",
     "clinical_application": "Massage techniques targeting the dermis can enhance circulation and stimulate mechanoreceptors in these layers.",
@@ -83,7 +70,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_003",
@@ -94,13 +82,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "Which of the following is NOT typically found in the dermis?",
-    "answers": [
-      "Hair follicles",
-      "Sebaceous glands",
-      "Blood vessels",
-      "Keratinocytes"
-    ],
-    "correct": 3,
     "short_explanation": "Keratinocytes are found in the epidermis, not the dermis.",
     "long_explanation": "The dermis contains connective tissue, blood vessels, nerves, and glands, but keratinocytes are exclusive to the epidermis.",
     "clinical_application": "Differentiating skin layers helps in diagnosing skin diseases and targeting massage depth.",
@@ -126,7 +107,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_004",
@@ -137,13 +119,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "What type of connective tissue predominates in the **reticular layer** of the dermis?",
-    "answers": [
-      "Areolar connective tissue",
-      "Dense irregular connective tissue",
-      "Elastic connective tissue",
-      "Cartilage"
-    ],
-    "correct": 1,
     "short_explanation": "The reticular layer contains dense irregular connective tissue.",
     "long_explanation": "This tissue type provides strength and flexibility, containing thick collagen fibers arranged in multiple directions, supporting skin resilience.",
     "clinical_application": "Knowledge of dermal tissue helps guide appropriate pressure during massage or fascial work.",
@@ -169,7 +144,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_005",
@@ -180,8 +156,6 @@
     "difficulty_rating": 1,
     "question_type": "multiple_choice",
     "question": "Which sensation is detected by **Meissner’s corpuscles** in the dermis?",
-    "answers": ["Pain", "Pressure", "Fine touch", "Temperature"],
-    "correct": 2,
     "short_explanation": "Meissner’s corpuscles detect light/fine touch.",
     "long_explanation": "These sensory receptors are concentrated in the papillary layer of the dermis, especially in fingertips and lips.",
     "clinical_application": "Massage techniques stimulate Meissner’s corpuscles to promote relaxation and sensory feedback.",
@@ -197,7 +171,8 @@
     "abcd": ["A. Pain", "B. Pressure", "C. Fine touch", "D. Temperature"],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_006",
@@ -208,13 +183,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "Which structure within the dermis secretes sebum?",
-    "answers": [
-      "Sweat gland",
-      "Sebaceous gland",
-      "Langerhans cell",
-      "Melanocyte"
-    ],
-    "correct": 1,
     "short_explanation": "Sebaceous glands secrete sebum into hair follicles.",
     "long_explanation": "Sebum is an oily substance that lubricates the skin and hair, providing waterproofing and antimicrobial properties.",
     "clinical_application": "Excessive sebum can lead to acne, while massage may help regulate circulation in these glandular areas.",
@@ -240,7 +208,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_007",
@@ -251,13 +220,6 @@
     "difficulty_rating": 4,
     "question_type": "multiple_choice",
     "question": "Which of the following cells are primarily found in the dermis and involved in immune defense?",
-    "answers": [
-      "Merkel cells",
-      "Melanocytes",
-      "Langerhans cells",
-      "Mast cells"
-    ],
-    "correct": 3,
     "short_explanation": "Mast cells in the dermis play roles in inflammation and allergy.",
     "long_explanation": "Mast cells are involved in releasing histamine and other mediators during immune responses in the dermis. Langerhans cells are more prevalent in the epidermis.",
     "clinical_application": "Understanding mast cell activation is relevant in allergic reactions, hives, and massage contraindications.",
@@ -283,7 +245,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_008",
@@ -294,13 +257,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "What fibers in the dermis allow the skin to stretch and recoil?",
-    "answers": [
-      "Collagen fibers",
-      "Elastic fibers",
-      "Reticular fibers",
-      "Fibrin fibers"
-    ],
-    "correct": 1,
     "short_explanation": "Elastic fibers provide flexibility and recoil.",
     "long_explanation": "Elastic fibers in the dermis allow the skin to return to its original shape after stretching, critical for flexibility and movement.",
     "clinical_application": "Massage may improve elasticity and circulation in aged or scarred skin.",
@@ -326,7 +282,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_009",
@@ -337,13 +294,6 @@
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "question": "What term describes the upward projections of the dermis into the epidermis?",
-    "answers": [
-      "Dermal papillae",
-      "Striae",
-      "Reticular ridges",
-      "Epidermal tunnels"
-    ],
-    "correct": 0,
     "short_explanation": "Dermal papillae project into the epidermis, increasing surface area.",
     "long_explanation": "These projections form the basis for fingerprints and improve the connection between dermis and epidermis, aiding nutrient exchange.",
     "clinical_application": "Dermal papillae contain capillaries and tactile receptors, important in touch therapy and skin perfusion.",
@@ -369,7 +319,8 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   },
   {
     "id": "dermis_010",
@@ -380,13 +331,6 @@
     "difficulty_rating": 2,
     "question_type": "multiple_choice",
     "question": "Which blood vessel type is most prevalent in the dermis?",
-    "answers": [
-      "Arterioles and venules",
-      "Capillaries",
-      "Large arteries",
-      "Veins only"
-    ],
-    "correct": 1,
     "short_explanation": "Capillaries supply the avascular epidermis.",
     "long_explanation": "Capillary beds in the papillary dermis exchange oxygen and nutrients with the epidermis and assist in thermoregulation.",
     "clinical_application": "Capillary density can affect skin temperature, redness, and healing capacity — all relevant to massage assessment.",
@@ -412,6 +356,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "muscle_fascia_and_connective_tissue/skin layers",
-    "filename": "dermis.json"
+    "sourceFile": "dermis",
+    "unit": "dermis"
   }
 ]

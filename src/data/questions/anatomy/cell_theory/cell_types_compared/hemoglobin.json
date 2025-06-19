@@ -8,13 +8,6 @@
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
     "question": "What is the primary function of hemoglobin?",
-    "answers": [
-      "Transporting carbon dioxide to tissues",
-      "Clotting blood at injury sites",
-      "Transporting oxygen from lungs to tissues",
-      "Producing white blood cells"
-    ],
-    "correct": 2,
     "short_explanation": "Hemoglobin transports oxygen from the lungs to the tissues.",
     "long_explanation": "Hemoglobin is a protein in red blood cells that binds to oxygen in the lungs and delivers it to tissues throughout the body.",
     "clinical_application": "Massage increases circulation, which may support oxygen delivery by hemoglobin to tissues.",
@@ -37,13 +30,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_002",
     "question": "Which mineral is essential for hemoglobin function?",
-    "answers": ["Calcium", "Iron", "Potassium", "Magnesium"],
-    "correct": 1,
     "short_explanation": "Iron is essential for oxygen binding in hemoglobin.",
     "long_explanation": "Each hemoglobin molecule contains four iron atoms, which are necessary to bind and transport oxygen.",
     "clinical_application": "Iron deficiency can lead to anemia, reducing oxygen delivery and affecting massage outcomes.",
@@ -61,18 +53,12 @@
     "abcd": ["A. Calcium", "B. Iron", "C. Potassium", "D. Magnesium"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_003",
     "question": "Where is hemoglobin located in the body?",
-    "answers": [
-      "White blood cells",
-      "Blood plasma",
-      "Red blood cells",
-      "Bone marrow"
-    ],
-    "correct": 2,
     "short_explanation": "Hemoglobin is found inside red blood cells.",
     "long_explanation": "Hemoglobin is the primary component of erythrocytes (red blood cells), enabling them to carry oxygen efficiently.",
     "clinical_application": "Circulatory massage may enhance red blood cell flow, aiding oxygen transport.",
@@ -100,13 +86,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_004",
     "question": "What condition results from low hemoglobin levels?",
-    "answers": ["Leukemia", "Anemia", "Hypertension", "Hemophilia"],
-    "correct": 1,
     "short_explanation": "Low hemoglobin causes anemia.",
     "long_explanation": "Anemia is a condition in which there are insufficient healthy red blood cells or hemoglobin to carry adequate oxygen to the body's tissues.",
     "clinical_application": "Massage therapists should consider client fatigue and energy levels when working with individuals with anemia.",
@@ -124,18 +109,12 @@
     "abcd": ["A. Leukemia", "B. Anemia", "C. Hypertension", "D. Hemophilia"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_005",
     "question": "Which part of hemoglobin binds to oxygen?",
-    "answers": [
-      "Globin chain",
-      "Iron ion in the heme group",
-      "Plasma membrane",
-      "Myoglobin"
-    ],
-    "correct": 1,
     "short_explanation": "Iron in the heme group binds oxygen.",
     "long_explanation": "Each heme group in hemoglobin contains an iron ion (Fe2+) that reversibly binds to oxygen molecules.",
     "clinical_application": "Optimal iron levels support oxygenation, important in active clients and post-exercise massage.",
@@ -163,13 +142,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_006",
     "question": "Which gas competes with oxygen for binding sites on hemoglobin?",
-    "answers": ["Carbon dioxide", "Nitrogen", "Hydrogen", "Carbon monoxide"],
-    "correct": 3,
     "short_explanation": "Carbon monoxide binds more strongly than oxygen.",
     "long_explanation": "Carbon monoxide binds to hemoglobin with much greater affinity than oxygen, preventing oxygen transport and leading to hypoxia.",
     "clinical_application": "Clients exposed to CO (e.g., smokers) may experience reduced tissue oxygenation despite normal oxygen levels.",
@@ -192,18 +170,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_007",
     "question": "What is the name of the molecule formed when hemoglobin binds carbon dioxide?",
-    "answers": [
-      "Oxyhemoglobin",
-      "Carbaminohemoglobin",
-      "Deoxyhemoglobin",
-      "Methemoglobin"
-    ],
-    "correct": 1,
     "short_explanation": "Carbaminohemoglobin carries CO₂.",
     "long_explanation": "Carbon dioxide can bind to the globin portion of hemoglobin, forming carbaminohemoglobin, which transports CO₂ back to the lungs.",
     "clinical_application": "Understanding CO₂ transport is important in clients with respiratory conditions.",
@@ -231,13 +203,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_008",
     "question": "How many oxygen molecules can a single hemoglobin molecule carry?",
-    "answers": ["1", "2", "3", "4"],
-    "correct": 3,
     "short_explanation": "One hemoglobin can carry 4 oxygen molecules.",
     "long_explanation": "Hemoglobin has four heme groups, each capable of binding one oxygen molecule, allowing a total of four O₂ per hemoglobin molecule.",
     "clinical_application": "Efficient oxygen loading/unloading is key during massage for recovery and performance enhancement.",
@@ -255,18 +226,12 @@
     "abcd": ["A. 1", "B. 2", "C. 3", "D. 4"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_009",
     "question": "What happens to hemoglobin in high oxygen environments (like the lungs)?",
-    "answers": [
-      "It becomes deoxygenated",
-      "It releases carbon dioxide",
-      "It binds to oxygen and forms oxyhemoglobin",
-      "It transforms into carbonic acid"
-    ],
-    "correct": 2,
     "short_explanation": "Hemoglobin binds oxygen in the lungs.",
     "long_explanation": "In the high-oxygen environment of the lungs, hemoglobin binds to oxygen, forming oxyhemoglobin, which is then transported to tissues.",
     "clinical_application": "Massage after deep breathing can help optimize oxygen-rich circulation to tissues.",
@@ -294,18 +259,12 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   },
   {
     "id": "hemoglobin_010",
     "question": "How does pH affect hemoglobin's affinity for oxygen?",
-    "answers": [
-      "Lower pH increases affinity",
-      "Higher pH decreases affinity",
-      "Lower pH decreases affinity",
-      "pH has no effect on hemoglobin"
-    ],
-    "correct": 2,
     "short_explanation": "Lower pH decreases oxygen affinity.",
     "long_explanation": "In acidic environments (lower pH), hemoglobin releases oxygen more readily—a phenomenon known as the Bohr effect.",
     "clinical_application": "Tissue massage may increase local acidity from CO₂ buildup, enhancing oxygen release for recovery.",
@@ -333,6 +292,7 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_types_compared",
-    "filename": "hemoglobin.json"
+    "sourceFile": "hemoglobin",
+    "unit": "hemoglobin"
   }
 ]

@@ -1,14 +1,7 @@
 [
   {
-    "id": "Golgi Apparatus 001",
+    "id": "golgi_apparatus_001",
     "question": "What is the main function of the Golgi apparatus?",
-    "answers": [
-      "Energy production",
-      "Protein synthesis",
-      "Modifying, sorting, and packaging proteins and lipids",
-      "DNA replication"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -29,7 +22,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The Golgi apparatus modifies, sorts, and packages proteins and lipids.",
     "long_explanation": "The Golgi apparatus receives materials from the ER, processes them (e.g., glycosylation), and then sorts and packages them into vesicles for delivery to specific destinations.",
     "clinical_application": "Massage supports circulation, potentially enhancing delivery of nutrients that rely on proper packaging and secretion pathways managed by the Golgi.",
@@ -49,13 +42,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 002",
+    "id": "golgi_apparatus_002",
     "question": "The Golgi apparatus works most closely with which organelle?",
-    "answers": ["Mitochondria", "Nucleolus", "Rough ER", "Centrioles"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -71,7 +62,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The Golgi works closely with the rough ER to modify and package proteins.",
     "long_explanation": "The rough ER synthesizes proteins, which are then transported to the Golgi apparatus for further processing and packaging into vesicles.",
     "clinical_application": "Efficient cellular repair—important in massage recovery—requires this ER-Golgi cooperation for protein distribution.",
@@ -81,13 +72,11 @@
     "abcd": ["A. Mitochondria", "B. Nucleolus", "C. Rough ER", "D. Centrioles"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 003",
+    "id": "golgi_apparatus_003",
     "question": "What structure describes the flattened sacs that make up the Golgi apparatus?",
-    "answers": ["Thylakoids", "Cristae", "Cisternae", "Vesicles"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -103,7 +92,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "Cisternae are the stacked membrane sacs of the Golgi apparatus.",
     "long_explanation": "The Golgi is composed of flattened membrane-bound sacs called cisternae, where different stages of protein and lipid modification occur.",
     "clinical_application": "This structure helps organize how materials are processed and secreted—key to understanding tissue growth and repair after massage.",
@@ -113,18 +102,11 @@
     "abcd": ["A. Thylakoids", "B. Cristae", "C. Cisternae", "D. Vesicles"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 004",
+    "id": "golgi_apparatus_004",
     "question": "Which direction do proteins travel through the Golgi apparatus?",
-    "answers": [
-      "From trans face to cis face",
-      "Randomly",
-      "From nucleus directly to plasma membrane",
-      "From cis face to trans face"
-    ],
-    "correct": 3,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -140,7 +122,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "Proteins travel from the cis face to the trans face of the Golgi.",
     "long_explanation": "The cis face of the Golgi receives vesicles from the ER, and proteins are processed as they move through the Golgi to the trans face for export.",
     "clinical_application": "This directional processing highlights how cellular systems prepare for extracellular communication—important in inflammatory and healing responses post-massage.",
@@ -160,18 +142,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 005",
+    "id": "golgi_apparatus_005",
     "question": "What does the Golgi apparatus create for secretion from the cell?",
-    "answers": [
-      "Microfilaments",
-      "Lysosomes and secretory vesicles",
-      "Ribosomes",
-      "Nucleotides"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -187,7 +162,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The Golgi creates lysosomes and secretory vesicles for cell export.",
     "long_explanation": "The Golgi plays a central role in producing lysosomes and secretory vesicles, which store and release materials from the cell.",
     "clinical_application": "These vesicles release growth factors and enzymes, potentially benefiting from massage-driven improved circulation.",
@@ -207,18 +182,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 006",
+    "id": "golgi_apparatus_006",
     "question": "The Golgi modifies proteins by adding:",
-    "answers": [
-      "DNA strands",
-      "Cholesterol",
-      "Carbohydrate groups (glycosylation)",
-      "ATP"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -234,7 +202,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The Golgi modifies proteins by adding carbohydrate groups.",
     "long_explanation": "This process, called glycosylation, helps stabilize proteins and guide them to their correct cellular destinations.",
     "clinical_application": "Glycosylation is critical to immune signaling and cell repair—both of which are activated after massage.",
@@ -254,13 +222,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 007",
+    "id": "golgi_apparatus_007",
     "question": "Which organelle often receives materials from the Golgi for digestion?",
-    "answers": ["Nucleolus", "Ribosome", "Lysosome", "Chloroplast"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -276,7 +242,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The lysosome receives digestive enzymes from the Golgi apparatus.",
     "long_explanation": "Lysosomes are vesicles filled with enzymes made in the ER and processed in the Golgi. These enzymes break down waste and cellular debris.",
     "clinical_application": "Massage may indirectly support this waste-clearing process by improving circulation and tissue turnover.",
@@ -286,13 +252,11 @@
     "abcd": ["A. Nucleolus", "B. Ribosome", "C. Lysosome", "D. Chloroplast"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 008",
+    "id": "golgi_apparatus_008",
     "question": "Which face of the Golgi receives transport vesicles from the ER?",
-    "answers": ["Trans face", "Inner membrane", "Cis face", "Basal face"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -308,7 +272,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The cis face of the Golgi receives transport vesicles from the ER.",
     "long_explanation": "The Golgi’s cis face is the entry point for materials from the ER. Proteins enter here to begin the modification process.",
     "clinical_application": "Proper cellular intake and processing are fundamental to tissue healing, which massage therapy seeks to support.",
@@ -323,18 +287,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 009",
+    "id": "golgi_apparatus_009",
     "question": "Golgi vesicles are especially abundant in cells that:",
-    "answers": [
-      "Are undergoing mitosis",
-      "Secrete hormones or enzymes",
-      "Are photosynthetic",
-      "Lack a nucleus"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -350,7 +307,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "Golgi vesicles are abundant in cells that secrete hormones or enzymes.",
     "long_explanation": "Cells involved in secretion, like pancreatic or salivary cells, have many Golgi vesicles to help with frequent export of proteins.",
     "clinical_application": "Massage may help regulate secretion by promoting homeostasis in endocrine and exocrine tissues.",
@@ -370,18 +327,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   },
   {
-    "id": "Golgi Apparatus 010",
+    "id": "golgi_apparatus_010",
     "question": "What is a key distinguishing feature of the Golgi apparatus under a microscope?",
-    "answers": [
-      "Membrane stacks arranged in layers",
-      "Beaded strands of RNA",
-      "Star-like mitochondria",
-      "Circular DNA rings"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -397,7 +347,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "unit": "golgi apparatus",
+    "unit": "golgi_apparatus",
     "short_explanation": "The Golgi appears as membrane stacks arranged in layers under a microscope.",
     "long_explanation": "The Golgi’s layered membrane-bound cisternae make it visually distinctive and reflect its role in orderly protein processing.",
     "clinical_application": "Understanding this structure helps massage professionals appreciate cellular organization behind tissue regeneration.",
@@ -417,6 +367,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "golgi_apparatus.json"
+    "sourceFile": "golgi_apparatus"
   }
 ]

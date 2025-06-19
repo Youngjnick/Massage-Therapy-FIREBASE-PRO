@@ -1,14 +1,7 @@
 [
   {
-    "id": "Cell Nucleus 001",
+    "id": "cell_nucleus_001",
     "question": "What is the main function of the cell nucleus?",
-    "answers": [
-      "Energy production",
-      "Protein synthesis",
-      "Controlling cell activities and storing DNA",
-      "Packaging proteins for transport"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -38,7 +31,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "The nucleus controls the cell and stores genetic material (DNA).",
     "long_explanation": "The cell nucleus acts as the control center, housing DNA that directs protein synthesis and cell function.",
     "clinical_application": "Massage therapists benefit from understanding cellular control centers when explaining tissue repair mechanisms post-treatment.",
@@ -58,13 +51,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 002",
+    "id": "cell_nucleus_002",
     "question": "Which structure within the nucleus is responsible for making ribosomes?",
-    "answers": ["Chromatin", "Nucleolus", "Nuclear envelope", "Centrosome"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -80,7 +71,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "The nucleolus makes ribosomes inside the nucleus.",
     "long_explanation": "Located within the nucleus, the nucleolus produces ribosomal RNA and assembles ribosome subunits essential for protein synthesis.",
     "clinical_application": "Protein synthesis is central to muscle healing — key for massage outcomes like recovery and tissue building.",
@@ -95,18 +86,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 003",
+    "id": "cell_nucleus_003",
     "question": "What material is found within the nucleus and carries genetic instructions?",
-    "answers": [
-      "RNA",
-      "Ribosomes",
-      "Chromatin (DNA and proteins)",
-      "Cytoplasm"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -134,7 +118,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "Chromatin contains DNA and proteins that store genetic instructions.",
     "long_explanation": "Chromatin is a combination of DNA and histone proteins that holds the code for all cellular functions and inheritance.",
     "clinical_application": "Genetic regulation helps guide therapeutic touch applications aimed at supporting cellular repair and replication.",
@@ -154,18 +138,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 004",
+    "id": "cell_nucleus_004",
     "question": "The nuclear envelope:",
-    "answers": [
-      "Is a rigid outer layer made of cellulose",
-      "Regulates what enters and leaves the nucleus",
-      "Generates ATP for the cell",
-      "Is found in prokaryotic cells"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -181,7 +158,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "text": "The nuclear envelope:",
     "options": [
       "Is a rigid outer layer made of cellulose",
@@ -198,13 +175,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 005",
+    "id": "cell_nucleus_005",
     "question": "How many membranes make up the nuclear envelope?",
-    "answers": ["One", "Two", "Three", "None"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -220,7 +195,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "The nuclear envelope consists of two membranes.",
     "long_explanation": "It includes an inner and outer membrane, providing a structural and functional barrier for nuclear contents.",
     "clinical_application": "Membrane understanding contributes to knowledge about cellular resilience and repair post-massage.",
@@ -230,13 +205,11 @@
     "abcd": ["A. One", "B. Two", "C. Three", "D. None"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 006",
+    "id": "cell_nucleus_006",
     "question": "Which of the following is NOT found in the nucleus?",
-    "answers": ["DNA", "Nucleolus", "Ribosomes", "Nuclear pores"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -262,7 +235,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "Ribosomes are assembled in the nucleolus but function in the cytoplasm.",
     "long_explanation": "While ribosomes originate in the nucleus, they operate outside it — other choices are intrinsic nuclear components.",
     "clinical_application": "Clarifying cell component locations helps massage students understand cell-level regeneration and metabolism.",
@@ -272,18 +245,11 @@
     "abcd": ["A. DNA", "B. Nucleolus", "C. Ribosomes", "D. Nuclear pores"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 007",
+    "id": "cell_nucleus_007",
     "question": "Which cell type lacks a nucleus?",
-    "answers": [
-      "Plant cells",
-      "Animal cells",
-      "Prokaryotic cells",
-      "Fungal cells"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -313,7 +279,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "Prokaryotic cells lack a defined nucleus.",
     "long_explanation": "Prokaryotes store genetic material in a nucleoid region, while eukaryotic cells have a membrane-bound nucleus.",
     "clinical_application": "Basic cell classification informs how microbes and tissue cells behave under mechanical stimulation.",
@@ -333,18 +299,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 008",
+    "id": "cell_nucleus_008",
     "question": "What is the function of nuclear pores?",
-    "answers": [
-      "Provide structural support",
-      "Allow the exchange of materials between the nucleus and cytoplasm",
-      "Store energy molecules",
-      "Digest old organelles"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -372,7 +331,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "Nuclear pores allow transport between the nucleus and cytoplasm.",
     "long_explanation": "These channels regulate the passage of molecules like mRNA and proteins, crucial for gene expression and response.",
     "clinical_application": "Understanding this supports insight into how massage-induced signals can affect protein transcription and healing.",
@@ -392,13 +351,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 009",
+    "id": "cell_nucleus_009",
     "question": "During cell division, chromatin condenses to form:",
-    "answers": ["Centrioles", "Enzymes", "Chromosomes", "Plasmids"],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -414,7 +371,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "During cell division, chromatin condenses into chromosomes.",
     "long_explanation": "To ensure proper genetic distribution, chromatin condenses into visible chromosomes during mitosis and meiosis.",
     "clinical_application": "Massage therapy’s influence on recovery may interact with cellular proliferation involving chromosome behavior.",
@@ -424,13 +381,11 @@
     "abcd": ["A. Centrioles", "B. Enzymes", "C. Chromosomes", "D. Plasmids"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   },
   {
-    "id": "Cell Nucleus 010",
+    "id": "cell_nucleus_010",
     "question": "Which of the following is made in the nucleolus and exits through nuclear pores?",
-    "answers": ["ATP", "rRNA", "Mitochondria", "Lysosomes"],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "cell_theory",
@@ -446,7 +401,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.114Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "cell nucleus",
+    "unit": "nucleus",
     "short_explanation": "rRNA is made in the nucleolus and exits through nuclear pores.",
     "long_explanation": "Ribosomal RNA is synthesized in the nucleolus and travels through pores to assist with protein assembly in the cytoplasm.",
     "clinical_application": "Massage benefits linked to protein synthesis begin with this process — key for tissue regeneration and inflammation control.",
@@ -456,6 +411,6 @@
     "abcd": ["A. ATP", "B. rRNA", "C. Mitochondria", "D. Lysosomes"],
     "main_topic": "anatomy",
     "subtopic": "cell_theory/cell_biology",
-    "filename": "nucleus.json"
+    "sourceFile": "nucleus"
   }
 ]

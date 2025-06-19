@@ -1,14 +1,7 @@
 [
   {
-    "id": "Gate Control Theory 001",
+    "id": "gate_control_theory_001",
     "question": "What is the main premise of the Gate Control Theory of pain?",
-    "answers": [
-      "Pain signals are only processed in the brain",
-      "Pain signals can be blocked at the spinal cord level by non-painful input",
-      "Massage removes pain signals from nerves",
-      "Pain only results from injury to bones"
-    ],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The Gate Control Theory suggests that non-painful input can block or reduce the perception of pain signals at the spinal cord level.",
     "long_explanation": "The Gate Control Theory, developed by Melzack and Wall in the 1960s, proposes that pain is not a direct result of activation of pain receptors, but rather it is modulated by a gating mechanism in the spinal cord. Non-painful stimuli, like pressure or touch, can activate larger nerve fibers (A-beta), which in turn inhibit pain transmission from smaller pain fibers (A-delta and C fibers). This theory helps explain why rubbing an area after injury can decrease discomfort.",
@@ -54,7 +47,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "applied_example": "Massage stimulates large sensory fibers that activate the gating mechanism in the spinal cord. This helps reduce pain perception during and after treatment, especially in chronic pain clients.",
     "text": "What is the main premise of the Gate Control Theory of pain?",
     "options": [
@@ -72,18 +65,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 002",
+    "id": "gate_control_theory_002",
     "question": "Where in the nervous system does the 'gate' in Gate Control Theory exist?",
-    "answers": [
-      "Cerebral cortex",
-      "Brainstem",
-      "Dorsal horn of the spinal cord",
-      "Peripheral nerves"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The gate in the Gate Control Theory is located in the dorsal horn of the spinal cord, where sensory signals are modulated.",
     "long_explanation": "The dorsal horn of the spinal cord is where primary afferent neurons synapse and where interneurons can either amplify or suppress the transmission of sensory information. In Gate Control Theory, this is the critical site where non-painful stimuli can inhibit the progression of pain signals, effectively 'closing the gate' to pain.",
@@ -113,7 +99,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "applied_example": "Understanding spinal gating helps massage therapists explain why gentle techniques like effleurage can reduce pain without directly treating the site of injury.",
     "text": "Where in the nervous system does the 'gate' in Gate Control Theory exist?",
     "options": [
@@ -131,18 +117,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 003",
+    "id": "gate_control_theory_003",
     "question": "Which type of nerve fibers are responsible for closing the pain gate?",
-    "answers": [
-      "C fibers",
-      "A-delta fibers",
-      "A-beta fibers",
-      "Sympathetic fibers"
-    ],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "A-beta fibers, which carry non-painful stimuli like pressure and vibration, help close the pain gate at the spinal cord level.",
     "long_explanation": "A-beta fibers are large, myelinated nerve fibers that conduct touch, pressure, and vibration. When activated, they stimulate inhibitory interneurons in the dorsal horn, which can suppress transmission of pain signals from slower-conducting pain fibers like A-delta and C fibers. This mechanism forms the foundation of Gate Control Theory.",
@@ -174,7 +153,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "applied_example": "Massage techniques that involve broad, rhythmic pressure activate A-beta fibers. This neurological stimulation can inhibit pain signals and produce relief in conditions like fibromyalgia or chronic tension.",
     "text": "Which type of nerve fibers are responsible for closing the pain gate?",
     "options": [
@@ -192,18 +171,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 004",
+    "id": "gate_control_theory_004",
     "question": "What role does massage play in the Gate Control Theory?",
-    "answers": [
-      "It activates pain fibers directly",
-      "It stimulates fast-conducting A-beta fibers to inhibit pain",
-      "It bypasses spinal nerves",
-      "It increases pain sensitivity"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -235,7 +207,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "Massage stimulates A-beta sensory fibers that can inhibit pain signals at the spinal cord level.",
     "long_explanation": "Massage activates fast-conducting A-beta fibers, which carry non-painful sensory input like touch and pressure. These fibers stimulate inhibitory interneurons in the dorsal horn of the spinal cord, blocking pain signals from slower-conducting fibers (A-delta and C fibers). This gating effect reduces the sensation of pain, which explains massage’s pain-relieving benefits.",
     "text": "What role does massage play in the Gate Control Theory?",
@@ -254,18 +226,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 005",
+    "id": "gate_control_theory_005",
     "question": "Which of the following sensations can help 'close the gate' on pain?",
-    "answers": [
-      "Light touch and vibration",
-      "Sharp stabbing pain",
-      "Pressure from a deep wound",
-      "Sudden trauma"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -305,7 +270,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "Light touch and vibration help close the pain gate by stimulating non-painful sensory fibers.",
     "long_explanation": "Gentle sensations like vibration, stroking, or superficial pressure activate large-diameter nerve fibers (A-beta fibers). These signals compete with pain input at the spinal cord level, reducing the intensity of pain signals that reach the brain. This principle supports the use of gentle massage to alleviate discomfort.",
     "text": "Which of the following sensations can help 'close the gate' on pain?",
@@ -324,18 +289,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 006",
+    "id": "gate_control_theory_006",
     "question": "Why is Gate Control Theory important in massage therapy?",
-    "answers": [
-      "It explains how massage decreases lymph flow",
-      "It shows how certain strokes may worsen inflammation",
-      "It provides a neurological basis for massage's pain-relieving effects",
-      "It proves massage can realign spinal vertebrae"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -371,7 +329,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "It provides a neurological basis for how massage reduces pain.",
     "long_explanation": "Gate Control Theory offers a scientific explanation for the effectiveness of massage in managing pain. By understanding how sensory input modulates pain at the spinal cord level, massage therapists can apply specific techniques to activate inhibitory pathways. This helps clients with chronic pain, post-surgical discomfort, or tension-related issues.",
     "text": "Why is Gate Control Theory important in massage therapy?",
@@ -390,18 +348,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 007",
+    "id": "gate_control_theory_007",
     "question": "How does deep pressure affect the gate control mechanism?",
-    "answers": [
-      "It closes the gate faster than light pressure",
-      "It may stimulate pain fibers and open the gate",
-      "It deactivates nerve pathways",
-      "It has no effect on the gate"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -431,7 +382,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "Deep pressure can stimulate both inhibitory and pain pathways depending on intensity.",
     "long_explanation": "While moderate pressure may activate A-beta fibers to close the gate, excessive or painful pressure may stimulate A-delta or C fibers, potentially opening the gate and increasing pain. This makes client feedback and pressure sensitivity critical in therapeutic massage to ensure the intended analgesic effect.",
     "text": "How does deep pressure affect the gate control mechanism?",
@@ -450,18 +401,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 008",
+    "id": "gate_control_theory_008",
     "question": "Which technique best aligns with Gate Control Theory to reduce pain?",
-    "answers": [
-      "Effleurage and vibration",
-      "Tapotement and friction",
-      "Trigger point therapy",
-      "Myofascial release"
-    ],
-    "correct": 0,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -503,7 +447,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "Effleurage and vibration reduce pain by stimulating non-painful touch receptors.",
     "long_explanation": "Effleurage (gliding strokes) and vibration target superficial sensory nerves that conduct signals faster than pain fibers. These techniques align with Gate Control Theory by engaging large-diameter fibers that modulate or block pain at the spinal cord. Selecting the appropriate technique enhances the effectiveness of massage in clinical settings.",
     "text": "Which technique best aligns with Gate Control Theory to reduce pain?",
@@ -522,18 +466,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 009",
+    "id": "gate_control_theory_009",
     "question": "What happens when the pain gate is 'open'?",
-    "answers": [
-      "Pain perception decreases",
-      "Non-painful signals are enhanced",
-      "Pain signals reach the brain more easily",
-      "The spinal cord stops processing input"
-    ],
-    "correct": 2,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -565,7 +502,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "More pain signals reach the brain, increasing pain perception.",
     "long_explanation": "When the gate is 'open', inhibitory control at the spinal cord is reduced, allowing pain signals from A-delta and C fibers to ascend to the brain without suppression. This leads to heightened pain perception. Stress, anxiety, or lack of sensory input can contribute to the gate staying open.",
     "text": "What happens when the pain gate is 'open'?",
@@ -584,18 +521,11 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   },
   {
-    "id": "Gate Control Theory 010",
+    "id": "gate_control_theory_010",
     "question": "Which best describes the relationship between sensory input and pain modulation in Gate Control Theory?",
-    "answers": [
-      "Sensory input has no effect on pain",
-      "Stimulating sensory receptors can inhibit pain perception",
-      "Sensory input always increases pain signals",
-      "Pain only occurs with sensory loss"
-    ],
-    "correct": 1,
     "distractors": [],
     "difficulty": "intermediate",
     "topic": "anatomy",
@@ -623,7 +553,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.077Z",
     "updated_at": "2025-05-24T14:54:13.419Z",
-    "unit": "gate control theory",
+    "unit": "gate_control_theory_updated",
     "short_explanation": "Stimulating sensory nerves can inhibit or reduce pain signal transmission.",
     "long_explanation": "Gate Control Theory shows that non-painful stimuli can modulate pain by activating sensory pathways that suppress pain transmission at the spinal cord. This interaction between sensory input and pain modulation is foundational to why massage therapy, physical touch, or even heat and cold can reduce perceived pain intensity.",
     "text": "Which best describes the relationship between sensory input and pain modulation in Gate Control Theory?",
@@ -642,6 +572,6 @@
     ],
     "main_topic": "anatomy",
     "subtopic": "",
-    "filename": "gate_control_theory_updated.json"
+    "sourceFile": "gate_control_theory_updated"
   }
 ]

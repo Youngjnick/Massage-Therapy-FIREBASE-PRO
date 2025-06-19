@@ -1,9 +1,7 @@
 [
   {
-    "id": "Dermatome 001",
+    "id": "dermatome_001",
     "question": "Which spinal nerve root provides sensory innervation to the Axilla and upper chest?",
-    "answers": ["C6", "C4", "T2", "L4"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The T2 dermatome covers the Axilla and upper chest.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T2 root supplies sensation to the Axilla and upper chest, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -43,7 +41,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.089Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T2"],
     "relevance_score": 88,
     "img": "/img/dermatomes/t2.png",
@@ -53,13 +51,11 @@
     "abcd": ["A. C6", "B. C4", "C. T2", "D. L4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 002",
+    "id": "dermatome_002",
     "question": "Which spinal nerve root provides sensory innervation to the Shoulder region and clavicle?",
-    "answers": ["L3", "L4", "C4", "T2"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The C4 dermatome covers the Shoulder region and clavicle.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C4 root supplies sensation to the Shoulder region and clavicle, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -101,7 +97,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C4"],
     "relevance_score": 93,
     "img": "/img/dermatomes/c4.png",
@@ -111,13 +107,11 @@
     "abcd": ["A. L3", "B. L4", "C. C4", "D. T2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 003",
+    "id": "dermatome_003",
     "question": "The Posterior thigh and upper calf is primarily innervated by which spinal nerve root?",
-    "answers": ["T4", "C6", "C3", "S2"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The S2 dermatome covers the Posterior thigh and upper calf.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S2 root supplies sensation to the Posterior thigh and upper calf, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -157,7 +151,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S2"],
     "relevance_score": 95,
     "img": "/img/dermatomes/s2.png",
@@ -167,13 +161,11 @@
     "abcd": ["A. T4", "B. C6", "C. C3", "D. S2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 004",
+    "id": "dermatome_004",
     "question": "Which spinal nerve root provides sensory innervation to the Lateral forearm, thumb, and index finger?",
-    "answers": ["T4", "C2", "L3", "C6"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C6 dermatome covers the Lateral forearm, thumb, and index finger.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C6 root supplies sensation to the Lateral forearm, thumb, and index finger, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -213,7 +205,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C6"],
     "relevance_score": 89,
     "img": "/img/dermatomes/c6.png",
@@ -223,13 +215,11 @@
     "abcd": ["A. T4", "B. C2", "C. L3", "D. C6"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 005",
+    "id": "dermatome_005",
     "question": "Which spinal nerve dermatome includes the Medial leg and ankle?",
-    "answers": ["C2", "S2", "L4", "T4"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The L4 dermatome covers the Medial leg and ankle.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L4 root supplies sensation to the Medial leg and ankle, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -269,7 +259,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L4"],
     "relevance_score": 100,
     "img": "/img/dermatomes/l4.png",
@@ -279,13 +269,11 @@
     "abcd": ["A. C2", "B. S2", "C. L4", "D. T4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 006",
+    "id": "dermatome_006",
     "question": "The Medial buttock and perianal region is primarily innervated by which spinal nerve root?",
-    "answers": ["C3", "C5", "S3", "L4"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The S3 dermatome covers the Medial buttock and perianal region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S3 root supplies sensation to the Medial buttock and perianal region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -325,7 +313,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S3"],
     "relevance_score": 94,
     "img": "/img/dermatomes/s3.png",
@@ -335,13 +323,11 @@
     "abcd": ["A. C3", "B. C5", "C. S3", "D. L4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 007",
+    "id": "dermatome_007",
     "question": "Which spinal nerve dermatome includes the Inguinal region and upper medial thigh?",
-    "answers": ["C7", "C8", "T4", "L1"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The L1 dermatome covers the Inguinal region and upper medial thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L1 root supplies sensation to the Inguinal region and upper medial thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -381,7 +367,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L1"],
     "relevance_score": 92,
     "img": "/img/dermatomes/l1.png",
@@ -391,13 +377,11 @@
     "abcd": ["A. C7", "B. C8", "C. T4", "D. L1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 008",
+    "id": "dermatome_008",
     "question": "The Medial upper arm and axilla is primarily innervated by which spinal nerve root?",
-    "answers": ["T1", "L5", "C3", "C8"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The T1 dermatome covers the Medial upper arm and axilla.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T1 root supplies sensation to the Medial upper arm and axilla, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -437,7 +421,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T1"],
     "relevance_score": 88,
     "img": "/img/dermatomes/t1.png",
@@ -447,13 +431,11 @@
     "abcd": ["A. T1", "B. L5", "C. C3", "D. C8"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 009",
+    "id": "dermatome_009",
     "question": "What dermatome level corresponds to the Medial knee and lower thigh?",
-    "answers": ["L5", "C5", "L2", "L3"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The L3 dermatome covers the Medial knee and lower thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L3 root supplies sensation to the Medial knee and lower thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -495,7 +477,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.432Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L3"],
     "relevance_score": 94,
     "img": "/img/dermatomes/l3.png",
@@ -505,13 +487,11 @@
     "abcd": ["A. L5", "B. C5", "C. L2", "D. L3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 010",
+    "id": "dermatome_010",
     "question": "The Ring and little fingers, medial forearm is primarily innervated by which spinal nerve root?",
-    "answers": ["T10", "C5", "C8", "C7"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The C8 dermatome covers the Ring and little fingers, medial forearm.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C8 root supplies sensation to the Ring and little fingers, medial forearm, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -551,7 +531,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C8"],
     "relevance_score": 98,
     "img": "/img/dermatomes/c8.png",
@@ -561,13 +541,11 @@
     "abcd": ["A. T10", "B. C5", "C. C8", "D. C7"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 011",
+    "id": "dermatome_011",
     "question": "The Medial buttock and perianal region is primarily innervated by which spinal nerve root?",
-    "answers": ["S3", "C2", "S1", "C7"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The S3 dermatome covers the Medial buttock and perianal region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S3 root supplies sensation to the Medial buttock and perianal region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -607,7 +585,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S3"],
     "relevance_score": 89,
     "img": "/img/dermatomes/s3.png",
@@ -617,13 +595,11 @@
     "abcd": ["A. S3", "B. C2", "C. S1", "D. C7"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 012",
+    "id": "dermatome_012",
     "question": "What dermatome level corresponds to the Medial upper arm and axilla?",
-    "answers": ["T1", "L1", "C3", "C6"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The T1 dermatome covers the Medial upper arm and axilla.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T1 root supplies sensation to the Medial upper arm and axilla, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -665,7 +641,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T1"],
     "relevance_score": 94,
     "img": "/img/dermatomes/t1.png",
@@ -675,13 +651,11 @@
     "abcd": ["A. T1", "B. L1", "C. C3", "D. C6"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 013",
+    "id": "dermatome_013",
     "question": "Which spinal nerve dermatome includes the Inguinal region and upper medial thigh?",
-    "answers": ["C7", "C2", "L1", "C3"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The L1 dermatome covers the Inguinal region and upper medial thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L1 root supplies sensation to the Inguinal region and upper medial thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -721,7 +695,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L1"],
     "relevance_score": 90,
     "img": "/img/dermatomes/l1.png",
@@ -731,13 +705,11 @@
     "abcd": ["A. C7", "B. C2", "C. L1", "D. C3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 014",
+    "id": "dermatome_014",
     "question": "Which spinal nerve dermatome includes the Lower neck and supraclavicular area?",
-    "answers": ["C3", "C5", "T4", "C4"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The C3 dermatome covers the Lower neck and supraclavicular area.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C3 root supplies sensation to the Lower neck and supraclavicular area, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -777,7 +749,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C3"],
     "relevance_score": 91,
     "img": "/img/dermatomes/c3.png",
@@ -787,13 +759,11 @@
     "abcd": ["A. C3", "B. C5", "C. T4", "D. C4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 015",
+    "id": "dermatome_015",
     "question": "Which spinal nerve dermatome includes the Umbilical region?",
-    "answers": ["C3", "T10", "C7", "C2"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The T10 dermatome covers the Umbilical region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T10 root supplies sensation to the Umbilical region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -833,7 +803,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T10"],
     "relevance_score": 92,
     "img": "/img/dermatomes/t10.png",
@@ -843,13 +813,11 @@
     "abcd": ["A. C3", "B. T10", "C. C7", "D. C2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 016",
+    "id": "dermatome_016",
     "question": "What dermatome level corresponds to the Anterior thigh?",
-    "answers": ["L4", "S2", "L2", "S4"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The L2 dermatome covers the Anterior thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L2 root supplies sensation to the Anterior thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -891,7 +859,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L2"],
     "relevance_score": 94,
     "img": "/img/dermatomes/l2.png",
@@ -901,13 +869,11 @@
     "abcd": ["A. L4", "B. S2", "C. L2", "D. S4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 017",
+    "id": "dermatome_017",
     "question": "The Lateral forearm, thumb, and index finger is primarily innervated by which spinal nerve root?",
-    "answers": ["C3", "L2", "T10", "C6"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C6 dermatome covers the Lateral forearm, thumb, and index finger.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C6 root supplies sensation to the Lateral forearm, thumb, and index finger, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -947,7 +913,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C6"],
     "relevance_score": 95,
     "img": "/img/dermatomes/c6.png",
@@ -957,13 +923,11 @@
     "abcd": ["A. C3", "B. L2", "C. T10", "D. C6"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 018",
+    "id": "dermatome_018",
     "question": "What dermatome level corresponds to the Medial knee and lower thigh?",
-    "answers": ["L3", "C3", "S3", "T10"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The L3 dermatome covers the Medial knee and lower thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L3 root supplies sensation to the Medial knee and lower thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1005,7 +969,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L3"],
     "relevance_score": 90,
     "img": "/img/dermatomes/l3.png",
@@ -1015,13 +979,11 @@
     "abcd": ["A. L3", "B. C3", "C. S3", "D. T10"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 019",
+    "id": "dermatome_019",
     "question": "The Shoulder region and clavicle is primarily innervated by which spinal nerve root?",
-    "answers": ["L2", "S1", "C2", "C4"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C4 dermatome covers the Shoulder region and clavicle.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C4 root supplies sensation to the Shoulder region and clavicle, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1063,7 +1025,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C4"],
     "relevance_score": 88,
     "img": "/img/dermatomes/c4.png",
@@ -1073,13 +1035,11 @@
     "abcd": ["A. L2", "B. S1", "C. C2", "D. C4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 020",
+    "id": "dermatome_020",
     "question": "What dermatome level corresponds to the Posterior thigh and upper calf?",
-    "answers": ["C7", "S2", "L5", "C8"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The S2 dermatome covers the Posterior thigh and upper calf.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S2 root supplies sensation to the Posterior thigh and upper calf, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1121,7 +1081,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S2"],
     "relevance_score": 93,
     "img": "/img/dermatomes/s2.png",
@@ -1131,13 +1091,11 @@
     "abcd": ["A. C7", "B. S2", "C. L5", "D. C8"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 021",
+    "id": "dermatome_021",
     "question": "What dermatome level corresponds to the Medial buttock and perianal region?",
-    "answers": ["S2", "S3", "L2", "T2"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The S3 dermatome covers the Medial buttock and perianal region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S3 root supplies sensation to the Medial buttock and perianal region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1179,7 +1137,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S3"],
     "relevance_score": 98,
     "img": "/img/dermatomes/s3.png",
@@ -1189,13 +1147,11 @@
     "abcd": ["A. S2", "B. S3", "C. L2", "D. T2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 022",
+    "id": "dermatome_022",
     "question": "Which spinal nerve root provides sensory innervation to the Lower neck and supraclavicular area?",
-    "answers": ["C8", "C3", "T2", "T1"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The C3 dermatome covers the Lower neck and supraclavicular area.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C3 root supplies sensation to the Lower neck and supraclavicular area, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1235,7 +1191,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C3"],
     "relevance_score": 90,
     "img": "/img/dermatomes/c3.png",
@@ -1245,13 +1201,11 @@
     "abcd": ["A. C8", "B. C3", "C. T2", "D. T1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 023",
+    "id": "dermatome_023",
     "question": "Which spinal nerve root provides sensory innervation to the Lateral leg and dorsum of foot?",
-    "answers": ["S3", "S1", "T2", "L5"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The L5 dermatome covers the Lateral leg and dorsum of foot.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L5 root supplies sensation to the Lateral leg and dorsum of foot, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1291,7 +1245,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L5"],
     "relevance_score": 85,
     "img": "/img/dermatomes/l5.png",
@@ -1301,13 +1255,11 @@
     "abcd": ["A. S3", "B. S1", "C. T2", "D. L5"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 024",
+    "id": "dermatome_024",
     "question": "The Medial buttock and perianal region is primarily innervated by which spinal nerve root?",
-    "answers": ["S3", "C5", "T1", "L4"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The S3 dermatome covers the Medial buttock and perianal region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S3 root supplies sensation to the Medial buttock and perianal region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1347,7 +1299,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S3"],
     "relevance_score": 91,
     "img": "/img/dermatomes/s3.png",
@@ -1357,13 +1309,11 @@
     "abcd": ["A. S3", "B. C5", "C. T1", "D. L4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 025",
+    "id": "dermatome_025",
     "question": "The Nipple line is primarily innervated by which spinal nerve root?",
-    "answers": ["T4", "C2", "C7", "T1"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The T4 dermatome covers the Nipple line.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T4 root supplies sensation to the Nipple line, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1403,7 +1353,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T4"],
     "relevance_score": 87,
     "img": "/img/dermatomes/t4.png",
@@ -1413,13 +1363,11 @@
     "abcd": ["A. T4", "B. C2", "C. C7", "D. T1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 026",
+    "id": "dermatome_026",
     "question": "What dermatome level corresponds to the Anterior thigh?",
-    "answers": ["L4", "C8", "L2", "T1"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The L2 dermatome covers the Anterior thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L2 root supplies sensation to the Anterior thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1461,7 +1409,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L2"],
     "relevance_score": 97,
     "img": "/img/dermatomes/l2.png",
@@ -1471,13 +1419,11 @@
     "abcd": ["A. L4", "B. C8", "C. L2", "D. T1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 027",
+    "id": "dermatome_027",
     "question": "Which spinal nerve dermatome includes the Lateral foot and sole?",
-    "answers": ["C5", "S1", "S2", "C4"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The S1 dermatome covers the Lateral foot and sole.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The S1 root supplies sensation to the Lateral foot and sole, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1517,7 +1463,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["S1"],
     "relevance_score": 87,
     "img": "/img/dermatomes/s1.png",
@@ -1527,13 +1473,11 @@
     "abcd": ["A. C5", "B. S1", "C. S2", "D. C4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 028",
+    "id": "dermatome_028",
     "question": "Which spinal nerve root provides sensory innervation to the Shoulder region and clavicle?",
-    "answers": ["L4", "S1", "C3", "C4"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C4 dermatome covers the Shoulder region and clavicle.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C4 root supplies sensation to the Shoulder region and clavicle, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1575,7 +1519,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C4"],
     "relevance_score": 98,
     "img": "/img/dermatomes/c4.png",
@@ -1585,13 +1529,11 @@
     "abcd": ["A. L4", "B. S1", "C. C3", "D. C4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 029",
+    "id": "dermatome_029",
     "question": "Which spinal nerve root provides sensory innervation to the Shoulder region and clavicle?",
-    "answers": ["C2", "L1", "S2", "C4"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C4 dermatome covers the Shoulder region and clavicle.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C4 root supplies sensation to the Shoulder region and clavicle, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1633,7 +1575,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C4"],
     "relevance_score": 100,
     "img": "/img/dermatomes/c4.png",
@@ -1643,13 +1585,11 @@
     "abcd": ["A. C2", "B. L1", "C. S2", "D. C4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 030",
+    "id": "dermatome_030",
     "question": "What dermatome level corresponds to the Lateral upper arm (deltoid region)?",
-    "answers": ["T10", "C5", "C2", "L1"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The C5 dermatome covers the Lateral upper arm (deltoid region).",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C5 root supplies sensation to the Lateral upper arm (deltoid region), a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1693,7 +1633,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C5"],
     "relevance_score": 88,
     "img": "/img/dermatomes/c5.png",
@@ -1703,13 +1643,11 @@
     "abcd": ["A. T10", "B. C5", "C. C2", "D. L1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 031",
+    "id": "dermatome_031",
     "question": "What dermatome level corresponds to the Medial knee and lower thigh?",
-    "answers": ["S3", "L2", "L3", "C5"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The L3 dermatome covers the Medial knee and lower thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L3 root supplies sensation to the Medial knee and lower thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1751,7 +1689,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L3"],
     "relevance_score": 86,
     "img": "/img/dermatomes/l3.png",
@@ -1761,13 +1699,11 @@
     "abcd": ["A. S3", "B. L2", "C. L3", "D. C5"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 032",
+    "id": "dermatome_032",
     "question": "What dermatome level corresponds to the Lower neck and supraclavicular area?",
-    "answers": ["L5", "C2", "C3", "T1"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The C3 dermatome covers the Lower neck and supraclavicular area.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C3 root supplies sensation to the Lower neck and supraclavicular area, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1809,7 +1745,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C3"],
     "relevance_score": 87,
     "img": "/img/dermatomes/c3.png",
@@ -1819,13 +1755,11 @@
     "abcd": ["A. L5", "B. C2", "C. C3", "D. T1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 033",
+    "id": "dermatome_033",
     "question": "What dermatome level corresponds to the Lateral upper arm (deltoid region)?",
-    "answers": ["L2", "C5", "C3", "L1"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The C5 dermatome covers the Lateral upper arm (deltoid region).",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C5 root supplies sensation to the Lateral upper arm (deltoid region), a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1869,7 +1803,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C5"],
     "relevance_score": 98,
     "img": "/img/dermatomes/c5.png",
@@ -1879,13 +1813,11 @@
     "abcd": ["A. L2", "B. C5", "C. C3", "D. L1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 034",
+    "id": "dermatome_034",
     "question": "The Umbilical region is primarily innervated by which spinal nerve root?",
-    "answers": ["T10", "L1", "L2", "T2"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The T10 dermatome covers the Umbilical region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T10 root supplies sensation to the Umbilical region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1925,7 +1857,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T10"],
     "relevance_score": 92,
     "img": "/img/dermatomes/t10.png",
@@ -1935,13 +1867,11 @@
     "abcd": ["A. T10", "B. L1", "C. L2", "D. T2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 035",
+    "id": "dermatome_035",
     "question": "Which spinal nerve dermatome includes the Back of the head and upper neck?",
-    "answers": ["T1", "L4", "C2", "S1"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The C2 dermatome covers the Back of the head and upper neck.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C2 root supplies sensation to the Back of the head and upper neck, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -1981,7 +1911,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C2"],
     "relevance_score": 100,
     "img": "/img/dermatomes/c2.png",
@@ -1991,13 +1921,11 @@
     "abcd": ["A. T1", "B. L4", "C. C2", "D. S1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 036",
+    "id": "dermatome_036",
     "question": "Which spinal nerve dermatome includes the Lateral forearm, thumb, and index finger?",
-    "answers": ["T1", "S1", "C6", "S4"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The C6 dermatome covers the Lateral forearm, thumb, and index finger.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C6 root supplies sensation to the Lateral forearm, thumb, and index finger, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2037,7 +1965,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C6"],
     "relevance_score": 90,
     "img": "/img/dermatomes/c6.png",
@@ -2047,13 +1975,11 @@
     "abcd": ["A. T1", "B. S1", "C. C6", "D. S4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 037",
+    "id": "dermatome_037",
     "question": "Which spinal nerve dermatome includes the Ring and little fingers, medial forearm?",
-    "answers": ["L1", "T1", "T10", "C8"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C8 dermatome covers the Ring and little fingers, medial forearm.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C8 root supplies sensation to the Ring and little fingers, medial forearm, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2093,7 +2019,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C8"],
     "relevance_score": 87,
     "img": "/img/dermatomes/c8.png",
@@ -2103,13 +2029,11 @@
     "abcd": ["A. L1", "B. T1", "C. T10", "D. C8"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 038",
+    "id": "dermatome_038",
     "question": "Which spinal nerve root provides sensory innervation to the Inguinal region and upper medial thigh?",
-    "answers": ["C8", "L2", "S4", "L1"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The L1 dermatome covers the Inguinal region and upper medial thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L1 root supplies sensation to the Inguinal region and upper medial thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2149,7 +2073,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L1"],
     "relevance_score": 91,
     "img": "/img/dermatomes/l1.png",
@@ -2159,13 +2083,11 @@
     "abcd": ["A. C8", "B. L2", "C. S4", "D. L1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 039",
+    "id": "dermatome_039",
     "question": "Which spinal nerve root provides sensory innervation to the Middle finger and center of posterior forearm?",
-    "answers": ["S1", "C7", "L4", "L1"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The C7 dermatome covers the Middle finger and center of posterior forearm.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C7 root supplies sensation to the Middle finger and center of posterior forearm, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2205,7 +2127,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C7"],
     "relevance_score": 98,
     "img": "/img/dermatomes/c7.png",
@@ -2215,13 +2137,11 @@
     "abcd": ["A. S1", "B. C7", "C. L4", "D. L1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 040",
+    "id": "dermatome_040",
     "question": "What dermatome level corresponds to the Lower neck and supraclavicular area?",
-    "answers": ["L5", "C7", "S1", "C3"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C3 dermatome covers the Lower neck and supraclavicular area.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C3 root supplies sensation to the Lower neck and supraclavicular area, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2263,7 +2183,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C3"],
     "relevance_score": 94,
     "img": "/img/dermatomes/c3.png",
@@ -2273,13 +2193,11 @@
     "abcd": ["A. L5", "B. C7", "C. S1", "D. C3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 041",
+    "id": "dermatome_041",
     "question": "What dermatome level corresponds to the Lateral upper arm (deltoid region)?",
-    "answers": ["C5", "C4", "C2", "T4"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The C5 dermatome covers the Lateral upper arm (deltoid region).",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C5 root supplies sensation to the Lateral upper arm (deltoid region), a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2323,7 +2241,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C5"],
     "relevance_score": 96,
     "img": "/img/dermatomes/c5.png",
@@ -2333,13 +2251,11 @@
     "abcd": ["A. C5", "B. C4", "C. C2", "D. T4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 042",
+    "id": "dermatome_042",
     "question": "Which spinal nerve dermatome includes the Back of the head and upper neck?",
-    "answers": ["T10", "S3", "L5", "C2"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C2 dermatome covers the Back of the head and upper neck.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C2 root supplies sensation to the Back of the head and upper neck, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2379,7 +2295,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C2"],
     "relevance_score": 99,
     "img": "/img/dermatomes/c2.png",
@@ -2389,13 +2305,11 @@
     "abcd": ["A. T10", "B. S3", "C. L5", "D. C2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 043",
+    "id": "dermatome_043",
     "question": "Which spinal nerve dermatome includes the Umbilical region?",
-    "answers": ["C8", "T10", "L1", "L3"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The T10 dermatome covers the Umbilical region.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The T10 root supplies sensation to the Umbilical region, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2435,7 +2349,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["T10"],
     "relevance_score": 97,
     "img": "/img/dermatomes/t10.png",
@@ -2445,13 +2359,11 @@
     "abcd": ["A. C8", "B. T10", "C. L1", "D. L3"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 044",
+    "id": "dermatome_044",
     "question": "Which spinal nerve dermatome includes the Middle finger and center of posterior forearm?",
-    "answers": ["C7", "S1", "L2", "S2"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The C7 dermatome covers the Middle finger and center of posterior forearm.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C7 root supplies sensation to the Middle finger and center of posterior forearm, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2491,7 +2403,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C7"],
     "relevance_score": 87,
     "img": "/img/dermatomes/c7.png",
@@ -2501,13 +2413,11 @@
     "abcd": ["A. C7", "B. S1", "C. L2", "D. S2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 045",
+    "id": "dermatome_045",
     "question": "Which spinal nerve root provides sensory innervation to the Back of the head and upper neck?",
-    "answers": ["S2", "T1", "L4", "C2"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C2 dermatome covers the Back of the head and upper neck.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C2 root supplies sensation to the Back of the head and upper neck, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2547,7 +2457,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C2"],
     "relevance_score": 87,
     "img": "/img/dermatomes/c2.png",
@@ -2557,13 +2467,11 @@
     "abcd": ["A. S2", "B. T1", "C. L4", "D. C2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 046",
+    "id": "dermatome_046",
     "question": "Which spinal nerve dermatome includes the Inguinal region and upper medial thigh?",
-    "answers": ["L4", "L5", "L1", "C2"],
-    "correct": 2,
     "distractors": [],
     "short_explanation": "The L1 dermatome covers the Inguinal region and upper medial thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L1 root supplies sensation to the Inguinal region and upper medial thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2603,7 +2511,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L1"],
     "relevance_score": 98,
     "img": "/img/dermatomes/l1.png",
@@ -2613,13 +2521,11 @@
     "abcd": ["A. L4", "B. L5", "C. L1", "D. C2"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 047",
+    "id": "dermatome_047",
     "question": "Which spinal nerve root provides sensory innervation to the Shoulder region and clavicle?",
-    "answers": ["C6", "C4", "C3", "S4"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The C4 dermatome covers the Shoulder region and clavicle.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C4 root supplies sensation to the Shoulder region and clavicle, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2661,7 +2567,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C4"],
     "relevance_score": 98,
     "img": "/img/dermatomes/c4.png",
@@ -2671,13 +2577,11 @@
     "abcd": ["A. C6", "B. C4", "C. C3", "D. S4"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 048",
+    "id": "dermatome_048",
     "question": "Which spinal nerve root provides sensory innervation to the Lateral forearm, thumb, and index finger?",
-    "answers": ["C8", "S4", "L3", "C6"],
-    "correct": 3,
     "distractors": [],
     "short_explanation": "The C6 dermatome covers the Lateral forearm, thumb, and index finger.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C6 root supplies sensation to the Lateral forearm, thumb, and index finger, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2717,7 +2621,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C6"],
     "relevance_score": 98,
     "img": "/img/dermatomes/c6.png",
@@ -2727,13 +2631,11 @@
     "abcd": ["A. C8", "B. S4", "C. L3", "D. C6"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 049",
+    "id": "dermatome_049",
     "question": "Which spinal nerve root provides sensory innervation to the Back of the head and upper neck?",
-    "answers": ["C8", "C2", "T4", "T1"],
-    "correct": 1,
     "distractors": [],
     "short_explanation": "The C2 dermatome covers the Back of the head and upper neck.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The C2 root supplies sensation to the Back of the head and upper neck, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2773,7 +2675,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["C2"],
     "relevance_score": 91,
     "img": "/img/dermatomes/c2.png",
@@ -2783,13 +2685,11 @@
     "abcd": ["A. C8", "B. C2", "C. T4", "D. T1"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   },
   {
-    "id": "Dermatome 050",
+    "id": "dermatome_050",
     "question": "What dermatome level corresponds to the Inguinal region and upper medial thigh?",
-    "answers": ["L1", "C3", "C7", "C6"],
-    "correct": 0,
     "distractors": [],
     "short_explanation": "The L1 dermatome covers the Inguinal region and upper medial thigh.",
     "long_explanation": "Dermatomes represent areas of skin innervated by specific spinal nerve roots. The L1 root supplies sensation to the Inguinal region and upper medial thigh, a critical zone for diagnosing radiculopathies and nerve root lesions.",
@@ -2831,7 +2731,7 @@
     "difficulty_adjustment": 0,
     "created_at": "2025-05-24T14:34:08.090Z",
     "updated_at": "2025-05-24T14:54:13.433Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/dermatomes",
+    "unit": "dermatomes",
     "synonyms": ["L1"],
     "relevance_score": 87,
     "img": "/img/dermatomes/l1.png",
@@ -2841,6 +2741,6 @@
     "abcd": ["A. L1", "B. C3", "C. C7", "D. C6"],
     "main_topic": "anatomy",
     "subtopic": "innervations/dermatomes",
-    "filename": "dermatomes.json"
+    "sourceFile": "dermatomes"
   }
 ]
