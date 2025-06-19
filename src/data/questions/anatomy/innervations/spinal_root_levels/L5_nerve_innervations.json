@@ -44,7 +44,10 @@
       "B. Gluteus maximus",
       "C. Biceps femoris (long head)",
       "D. Extensor hallucis longus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_002",
@@ -69,12 +72,7 @@
       "foot_sensation",
       "massage_assessment"
     ],
-    "keywords": [
-      "L5 dermatome",
-      "nerve root",
-      "sensory testing",
-      "big toe"
-    ],
+    "keywords": ["L5 dermatome", "nerve root", "sensory testing", "big toe"],
     "source_reference": "Netter's Anatomy Atlas, 7th Ed., p. 184",
     "text": "Which dermatome is most affected in an L5 nerve root compression?",
     "options": [
@@ -89,7 +87,10 @@
       "B. Medial thigh",
       "C. Big toe and dorsum of the foot",
       "D. Posterior calf"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_003",
@@ -107,18 +108,8 @@
     "difficulty": "intermediate",
     "topic": "neurofunction",
     "category": "Clinical Assessment",
-    "tags": [
-      "toe_extension",
-      "L5_injury",
-      "muscle_function",
-      "massage_gait"
-    ],
-    "keywords": [
-      "toe extension",
-      "L5",
-      "nerve injury",
-      "radiculopathy"
-    ],
+    "tags": ["toe_extension", "L5_injury", "muscle_function", "massage_gait"],
+    "keywords": ["toe extension", "L5", "nerve injury", "radiculopathy"],
     "source_reference": "Muscolino, The Muscular System Manual, 5th Ed.",
     "text": "Which functional movement is most likely impaired with an L5 spinal nerve injury?",
     "options": [
@@ -133,7 +124,10 @@
       "B. Toe extension",
       "C. Knee flexion",
       "D. Hip adduction"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_004",
@@ -151,18 +145,8 @@
     "difficulty": "advanced",
     "topic": "neuroassessment",
     "category": "Neurology",
-    "tags": [
-      "reflexes",
-      "hamstring",
-      "L5_testing",
-      "massage_screening"
-    ],
-    "keywords": [
-      "L5",
-      "reflex test",
-      "hamstring reflex",
-      "neurological exam"
-    ],
+    "tags": ["reflexes", "hamstring", "L5_testing", "massage_screening"],
+    "keywords": ["L5", "reflex test", "hamstring reflex", "neurological exam"],
     "source_reference": "Kendall's Muscles Testing and Function, 5th Ed.",
     "text": "Which reflex is tested to assess L5 spinal nerve function?",
     "options": [
@@ -177,7 +161,10 @@
       "B. Achilles reflex",
       "C. Hamstring reflex",
       "D. Babinski sign"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_005",
@@ -195,18 +182,8 @@
     "difficulty": "intermediate",
     "topic": "neuroanatomy",
     "category": "Anatomy",
-    "tags": [
-      "nerve_pathways",
-      "fibular_nerve",
-      "L5_root",
-      "massage_lower_leg"
-    ],
-    "keywords": [
-      "L5",
-      "common fibular",
-      "nerve anatomy",
-      "nerve branches"
-    ],
+    "tags": ["nerve_pathways", "fibular_nerve", "L5_root", "massage_lower_leg"],
+    "keywords": ["L5", "common fibular", "nerve anatomy", "nerve branches"],
     "source_reference": "Gray’s Anatomy, 41st Ed.",
     "text": "Which of these nerves contains fibers from the L5 root?",
     "options": [
@@ -221,7 +198,10 @@
       "B. Common fibular nerve",
       "C. Obturator nerve",
       "D. Saphenous nerve"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_006",
@@ -245,12 +225,7 @@
       "clinical_signs",
       "massage_referral"
     ],
-    "keywords": [
-      "L5",
-      "sciatic nerve",
-      "clinical test",
-      "nerve compression"
-    ],
+    "keywords": ["L5", "sciatic nerve", "clinical test", "nerve compression"],
     "source_reference": "Orthopedic Physical Assessment, Magee, 6th Ed.",
     "text": "Which clinical test helps isolate L5 nerve root pathology?",
     "options": [
@@ -265,17 +240,15 @@
       "B. Thompson test",
       "C. Trendelenburg test",
       "D. Phalen’s test"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_007",
     "question": "Foot drop is most associated with damage to which spinal root?",
-    "answers": [
-      "S1",
-      "L2",
-      "L5",
-      "C7"
-    ],
+    "answers": ["S1", "L2", "L5", "C7"],
     "correct": 2,
     "short_explanation": "L5 controls dorsiflexors; injury may cause foot drop.",
     "long_explanation": "Foot drop results from weakened dorsiflexion, primarily due to L5 nerve root dysfunction. It affects gait and may require orthotics or targeted therapy.",
@@ -283,33 +256,16 @@
     "difficulty": "intermediate",
     "topic": "neurological_dysfunction",
     "category": "Pathology",
-    "tags": [
-      "foot_drop",
-      "dorsiflexion",
-      "L5_damage",
-      "gait_analysis"
-    ],
-    "keywords": [
-      "L5",
-      "foot drop",
-      "nerve injury",
-      "gait abnormality"
-    ],
+    "tags": ["foot_drop", "dorsiflexion", "L5_damage", "gait_analysis"],
+    "keywords": ["L5", "foot drop", "nerve injury", "gait abnormality"],
     "source_reference": "Clinical Neurology Made Ridiculously Simple, 7th Ed.",
     "text": "Foot drop is most associated with damage to which spinal root?",
-    "options": [
-      "S1",
-      "L2",
-      "L5",
-      "C7"
-    ],
+    "options": ["S1", "L2", "L5", "C7"],
     "correctAnswer": "L5",
-    "abcd": [
-      "A. S1",
-      "B. L2",
-      "C. L5",
-      "D. C7"
-    ]
+    "abcd": ["A. S1", "B. L2", "C. L5", "D. C7"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_008",
@@ -333,12 +289,7 @@
       "plantar_flexion",
       "clinical_exam"
     ],
-    "keywords": [
-      "L5",
-      "S1",
-      "nerve function",
-      "differential diagnosis"
-    ],
+    "keywords": ["L5", "S1", "nerve function", "differential diagnosis"],
     "source_reference": "CNS Review Guide, 3rd Ed.",
     "text": "What action is preserved with an isolated L5 nerve lesion?",
     "options": [
@@ -353,7 +304,10 @@
       "B. Big toe extension",
       "C. Plantar flexion",
       "D. Foot eversion"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_009",
@@ -377,11 +331,7 @@
       "muscle_weakness",
       "massage_lower_limb"
     ],
-    "keywords": [
-      "L5",
-      "peroneal muscles",
-      "eversion weakness"
-    ],
+    "keywords": ["L5", "peroneal muscles", "eversion weakness"],
     "source_reference": "Trail Guide to the Body, 6th Ed.",
     "text": "Which muscle would most likely be weak with L5 nerve root compression?",
     "options": [
@@ -396,17 +346,15 @@
       "B. Soleus",
       "C. Tibialis posterior",
       "D. Gluteus maximus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   },
   {
     "id": "L5_010",
     "question": "A massage client reports numbness in the dorsal foot and difficulty lifting their big toe. Which spinal nerve is most likely involved?",
-    "answers": [
-      "L3",
-      "L4",
-      "L5",
-      "S1"
-    ],
+    "answers": ["L3", "L4", "L5", "S1"],
     "correct": 2,
     "short_explanation": "These symptoms suggest L5 nerve involvement.",
     "long_explanation": "The L5 nerve root innervates the extensor hallucis longus and provides sensory input to the dorsal foot. Dysfunction manifests as toe extension weakness and sensory changes over the dorsum.",
@@ -420,26 +368,14 @@
       "dorsal_numbness",
       "massage_referral"
     ],
-    "keywords": [
-      "L5",
-      "dorsal foot",
-      "toe weakness",
-      "nerve screening"
-    ],
+    "keywords": ["L5", "dorsal foot", "toe weakness", "nerve screening"],
     "source_reference": "Muscle Testing and Function, Kendall, 5th Ed.",
     "text": "A massage client reports numbness in the dorsal foot and difficulty lifting their big toe. Which spinal nerve is most likely involved?",
-    "options": [
-      "L3",
-      "L4",
-      "L5",
-      "S1"
-    ],
+    "options": ["L3", "L4", "L5", "S1"],
     "correctAnswer": "L5",
-    "abcd": [
-      "A. L3",
-      "B. L4",
-      "C. L5",
-      "D. S1"
-    ]
+    "abcd": ["A. L3", "B. L4", "C. L5", "D. S1"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "L5_nerve_innervations.json"
   }
 ]

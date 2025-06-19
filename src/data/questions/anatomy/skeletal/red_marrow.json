@@ -15,16 +15,8 @@
     "difficulty": "easy",
     "category": "Skeletal System",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "hematopoiesis",
-      "bone marrow",
-      "blood cells"
-    ],
-    "keywords": [
-      "red marrow",
-      "blood production",
-      "medullary cavity"
-    ],
+    "tags": ["hematopoiesis", "bone marrow", "blood cells"],
+    "keywords": ["red marrow", "blood production", "medullary cavity"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Martini: Human Anatomy",
     "text": "What is the primary function of red bone marrow?",
@@ -40,7 +32,10 @@
       "B. Calcium absorption",
       "C. Hematopoiesis",
       "D. Bone growth"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_002",
@@ -58,16 +53,8 @@
     "difficulty": "medium",
     "category": "Skeletal System",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "adult anatomy",
-      "axial skeleton",
-      "bone marrow"
-    ],
-    "keywords": [
-      "sternum",
-      "iliac crest",
-      "hematopoiesis"
-    ],
+    "tags": ["adult anatomy", "axial skeleton", "bone marrow"],
+    "keywords": ["sternum", "iliac crest", "hematopoiesis"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Gray's Anatomy",
     "text": "Which bones retain red marrow throughout life?",
@@ -83,7 +70,10 @@
       "B. Ribs, sternum, pelvis, and vertebrae",
       "C. Tibia and fibula",
       "D. Clavicle and scapula"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_003",
@@ -101,16 +91,8 @@
     "difficulty": "medium",
     "category": "Skeletal System",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "pediatrics",
-      "bone marrow",
-      "hematopoiesis"
-    ],
-    "keywords": [
-      "child",
-      "red marrow distribution",
-      "growth"
-    ],
+    "tags": ["pediatrics", "bone marrow", "hematopoiesis"],
+    "keywords": ["child", "red marrow distribution", "growth"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Principles of Anatomy and Physiology, Tortora",
     "text": "In children, red bone marrow is found in:",
@@ -126,17 +108,15 @@
       "B. All bones including long bones",
       "C. Only the skull and sternum",
       "D. Only the vertebrae"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_004",
     "question": "Which component is NOT produced in red marrow?",
-    "answers": [
-      "Erythrocytes",
-      "Platelets",
-      "Adipocytes",
-      "Leukocytes"
-    ],
+    "answers": ["Erythrocytes", "Platelets", "Adipocytes", "Leukocytes"],
     "correct": 2,
     "short_explanation": "Adipocytes are more associated with yellow marrow.",
     "long_explanation": "While red marrow produces blood components such as erythrocytes, leukocytes, and thrombocytes, adipocytes are a feature of yellow marrow, which stores fat.",
@@ -144,42 +124,27 @@
     "difficulty": "easy",
     "category": "Skeletal System",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "blood cells",
-      "yellow marrow",
-      "fat storage"
-    ],
-    "keywords": [
-      "adipocyte",
-      "hematopoiesis",
-      "platelet"
-    ],
+    "tags": ["blood cells", "yellow marrow", "fat storage"],
+    "keywords": ["adipocyte", "hematopoiesis", "platelet"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Clinically Oriented Anatomy",
     "text": "Which component is NOT produced in red marrow?",
-    "options": [
-      "Erythrocytes",
-      "Platelets",
-      "Adipocytes",
-      "Leukocytes"
-    ],
+    "options": ["Erythrocytes", "Platelets", "Adipocytes", "Leukocytes"],
     "correctAnswer": "Adipocytes",
     "abcd": [
       "A. Erythrocytes",
       "B. Platelets",
       "C. Adipocytes",
       "D. Leukocytes"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_005",
     "question": "Where is red marrow commonly sampled for a bone marrow biopsy?",
-    "answers": [
-      "Tibia",
-      "Humerus",
-      "Iliac crest",
-      "Sternum"
-    ],
+    "answers": ["Tibia", "Humerus", "Iliac crest", "Sternum"],
     "correct": 2,
     "short_explanation": "The iliac crest provides accessible red marrow for biopsy.",
     "long_explanation": "The posterior iliac crest is a preferred site for sampling due to its superficial location, rich marrow content, and relatively low risk of complications.",
@@ -187,31 +152,17 @@
     "difficulty": "medium",
     "category": "Clinical Anatomy",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "biopsy",
-      "iliac crest",
-      "pelvis"
-    ],
-    "keywords": [
-      "marrow biopsy",
-      "posterior superior iliac spine"
-    ],
+    "tags": ["biopsy", "iliac crest", "pelvis"],
+    "keywords": ["marrow biopsy", "posterior superior iliac spine"],
     "mblex_category": "Pathology",
     "source_reference": "Pathophysiology for the Health Professions",
     "text": "Where is red marrow commonly sampled for a bone marrow biopsy?",
-    "options": [
-      "Tibia",
-      "Humerus",
-      "Iliac crest",
-      "Sternum"
-    ],
+    "options": ["Tibia", "Humerus", "Iliac crest", "Sternum"],
     "correctAnswer": "Iliac crest",
-    "abcd": [
-      "A. Tibia",
-      "B. Humerus",
-      "C. Iliac crest",
-      "D. Sternum"
-    ]
+    "abcd": ["A. Tibia", "B. Humerus", "C. Iliac crest", "D. Sternum"],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_006",
@@ -229,11 +180,7 @@
     "difficulty": "medium",
     "category": "Histology",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "aging",
-      "marrow conversion",
-      "yellow marrow"
-    ],
+    "tags": ["aging", "marrow conversion", "yellow marrow"],
     "keywords": [
       "fatty infiltration",
       "adipose replacement",
@@ -254,7 +201,10 @@
       "B. Fatty infiltration",
       "C. Chondrification",
       "D. Calcification"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_007",
@@ -272,16 +222,8 @@
     "difficulty": "hard",
     "category": "Cell Biology",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "stem cells",
-      "HSC",
-      "immune system"
-    ],
-    "keywords": [
-      "hematopoiesis",
-      "marrow transplant",
-      "progenitor cells"
-    ],
+    "tags": ["stem cells", "HSC", "immune system"],
+    "keywords": ["hematopoiesis", "marrow transplant", "progenitor cells"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Molecular Biology of the Cell",
     "text": "Which type of stem cells reside in red bone marrow?",
@@ -297,17 +239,15 @@
       "B. Hematopoietic stem cells",
       "C. Neural progenitor cells",
       "D. Chondroblasts"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_008",
     "question": "Which condition can lead to red marrow hyperplasia?",
-    "answers": [
-      "Osteoporosis",
-      "Anemia",
-      "Arthritis",
-      "Diabetes"
-    ],
+    "answers": ["Osteoporosis", "Anemia", "Arthritis", "Diabetes"],
     "correct": 1,
     "short_explanation": "Anemia increases demand for red blood cells, triggering hyperplasia.",
     "long_explanation": "In response to low oxygen-carrying capacity, red marrow may become more active, increasing its mass and converting yellow marrow back to red for increased production.",
@@ -315,42 +255,22 @@
     "difficulty": "medium",
     "category": "Pathophysiology",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "anemia",
-      "hyperplasia",
-      "bone marrow"
-    ],
-    "keywords": [
-      "marrow reactivation",
-      "oxygen demand",
-      "erythropoiesis"
-    ],
+    "tags": ["anemia", "hyperplasia", "bone marrow"],
+    "keywords": ["marrow reactivation", "oxygen demand", "erythropoiesis"],
     "mblex_category": "Pathology",
     "source_reference": "Essentials of Pathophysiology",
     "text": "Which condition can lead to red marrow hyperplasia?",
-    "options": [
-      "Osteoporosis",
-      "Anemia",
-      "Arthritis",
-      "Diabetes"
-    ],
+    "options": ["Osteoporosis", "Anemia", "Arthritis", "Diabetes"],
     "correctAnswer": "Anemia",
-    "abcd": [
-      "A. Osteoporosis",
-      "B. Anemia",
-      "C. Arthritis",
-      "D. Diabetes"
-    ]
+    "abcd": ["A. Osteoporosis", "B. Anemia", "C. Arthritis", "D. Diabetes"],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_009",
     "question": "Which vitamin is critical for red marrow function?",
-    "answers": [
-      "Vitamin C",
-      "Vitamin D",
-      "Vitamin B12",
-      "Vitamin K"
-    ],
+    "answers": ["Vitamin C", "Vitamin D", "Vitamin B12", "Vitamin K"],
     "correct": 2,
     "short_explanation": "Vitamin B12 supports red blood cell production in the marrow.",
     "long_explanation": "Vitamin B12 and folate are essential for DNA synthesis in rapidly dividing hematopoietic cells. Deficiency can lead to megaloblastic anemia, impairing marrow function.",
@@ -358,42 +278,22 @@
     "difficulty": "medium",
     "category": "Nutrition",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "vitamin B12",
-      "nutrition",
-      "anemia"
-    ],
-    "keywords": [
-      "folate",
-      "erythropoiesis",
-      "nutritional deficiency"
-    ],
+    "tags": ["vitamin B12", "nutrition", "anemia"],
+    "keywords": ["folate", "erythropoiesis", "nutritional deficiency"],
     "mblex_category": "Nutrition & Pathology",
     "source_reference": "Nutrition and Diet Therapy",
     "text": "Which vitamin is critical for red marrow function?",
-    "options": [
-      "Vitamin C",
-      "Vitamin D",
-      "Vitamin B12",
-      "Vitamin K"
-    ],
+    "options": ["Vitamin C", "Vitamin D", "Vitamin B12", "Vitamin K"],
     "correctAnswer": "Vitamin B12",
-    "abcd": [
-      "A. Vitamin C",
-      "B. Vitamin D",
-      "C. Vitamin B12",
-      "D. Vitamin K"
-    ]
+    "abcd": ["A. Vitamin C", "B. Vitamin D", "C. Vitamin B12", "D. Vitamin K"],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   },
   {
     "id": "red_marrow_010",
     "question": "Red marrow production can be artificially stimulated by which hormone?",
-    "answers": [
-      "Insulin",
-      "Erythropoietin",
-      "Testosterone",
-      "Melatonin"
-    ],
+    "answers": ["Insulin", "Erythropoietin", "Testosterone", "Melatonin"],
     "correct": 1,
     "short_explanation": "Erythropoietin increases red blood cell production in red marrow.",
     "long_explanation": "Erythropoietin (EPO) is released primarily by the kidneys in response to low oxygen levels. It stimulates red marrow to produce more erythrocytes, improving oxygen delivery to tissues.",
@@ -401,31 +301,21 @@
     "difficulty": "hard",
     "category": "Endocrinology",
     "topic": "Red Bone Marrow",
-    "tags": [
-      "erythropoietin",
-      "kidney hormone",
-      "oxygen"
-    ],
-    "keywords": [
-      "hematocrit",
-      "hypoxia",
-      "blood doping"
-    ],
+    "tags": ["erythropoietin", "kidney hormone", "oxygen"],
+    "keywords": ["hematocrit", "hypoxia", "blood doping"],
     "mblex_category": "Physiology",
     "source_reference": "Guyton & Hall: Textbook of Medical Physiology",
     "text": "Red marrow production can be artificially stimulated by which hormone?",
-    "options": [
-      "Insulin",
-      "Erythropoietin",
-      "Testosterone",
-      "Melatonin"
-    ],
+    "options": ["Insulin", "Erythropoietin", "Testosterone", "Melatonin"],
     "correctAnswer": "Erythropoietin",
     "abcd": [
       "A. Insulin",
       "B. Erythropoietin",
       "C. Testosterone",
       "D. Melatonin"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "skeletal",
+    "filename": "red_marrow.json"
   }
 ]

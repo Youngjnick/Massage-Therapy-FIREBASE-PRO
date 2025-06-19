@@ -15,16 +15,8 @@
     "topic": "lymphatic_system",
     "category": "Function",
     "difficulty": "basic",
-    "tags": [
-      "fluid balance",
-      "immunity",
-      "lymph"
-    ],
-    "keywords": [
-      "interstitial fluid",
-      "immune support",
-      "lymph vessels"
-    ],
+    "tags": ["fluid balance", "immunity", "lymph"],
+    "keywords": ["interstitial fluid", "immune support", "lymph vessels"],
     "source_reference": "Trail Guide to the Body",
     "stats": {
       "correct": 0,
@@ -44,7 +36,10 @@
       "B. Nutrient digestion",
       "C. Waste filtration",
       "D. Fluid balance and immune defense"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_002",
@@ -62,15 +57,8 @@
     "topic": "lymphatic_system",
     "category": "Anatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "thymus",
-      "bone marrow",
-      "immune development"
-    ],
-    "keywords": [
-      "lymphocyte maturation",
-      "primary lymphoid tissue"
-    ],
+    "tags": ["thymus", "bone marrow", "immune development"],
+    "keywords": ["lymphocyte maturation", "primary lymphoid tissue"],
     "source_reference": "Guyton and Hall Medical Physiology",
     "stats": {
       "correct": 0,
@@ -90,17 +78,15 @@
       "B. Tonsils and lymph nodes",
       "C. Bone marrow and thymus",
       "D. Spleen and appendix"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_003",
     "question": "Which structure filters lymph before it reenters the blood circulation?",
-    "answers": [
-      "Liver",
-      "Lymph node",
-      "Spleen",
-      "Appendix"
-    ],
+    "answers": ["Liver", "Lymph node", "Spleen", "Appendix"],
     "correct": 1,
     "short_explanation": "Lymph nodes act as filters that trap pathogens.",
     "long_explanation": "Lymph nodes are small, bean-shaped structures scattered throughout lymphatic vessels that trap bacteria, viruses, and foreign substances, which are then destroyed by lymphocytes.",
@@ -108,15 +94,8 @@
     "topic": "lymphatic_system",
     "category": "Pathophysiology",
     "difficulty": "basic",
-    "tags": [
-      "lymph node",
-      "filtering",
-      "immune response"
-    ],
-    "keywords": [
-      "lymph filtration",
-      "swollen lymph nodes"
-    ],
+    "tags": ["lymph node", "filtering", "immune response"],
+    "keywords": ["lymph filtration", "swollen lymph nodes"],
     "source_reference": "Mosby’s Anatomy and Physiology",
     "stats": {
       "correct": 0,
@@ -124,19 +103,12 @@
       "attempts": 0
     },
     "text": "Which structure filters lymph before it reenters the blood circulation?",
-    "options": [
-      "Liver",
-      "Lymph node",
-      "Spleen",
-      "Appendix"
-    ],
+    "options": ["Liver", "Lymph node", "Spleen", "Appendix"],
     "correctAnswer": "Lymph node",
-    "abcd": [
-      "A. Liver",
-      "B. Lymph node",
-      "C. Spleen",
-      "D. Appendix"
-    ]
+    "abcd": ["A. Liver", "B. Lymph node", "C. Spleen", "D. Appendix"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_004",
@@ -154,16 +126,8 @@
     "topic": "lymphatic_system",
     "category": "Circulation",
     "difficulty": "intermediate",
-    "tags": [
-      "thoracic duct",
-      "lymph return",
-      "circulatory system"
-    ],
-    "keywords": [
-      "left subclavian vein",
-      "thoracic drainage",
-      "lymph path"
-    ],
+    "tags": ["thoracic duct", "lymph return", "circulatory system"],
+    "keywords": ["left subclavian vein", "thoracic drainage", "lymph path"],
     "source_reference": "Gray’s Anatomy",
     "stats": {
       "correct": 0,
@@ -183,17 +147,15 @@
       "B. Right lymphatic duct",
       "C. Jugular vein",
       "D. Aortic arch"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_005",
     "question": "Which of the following conditions is caused by blockage in the lymphatic system?",
-    "answers": [
-      "Embolism",
-      "Lymphedema",
-      "Hypertension",
-      "Ascites"
-    ],
+    "answers": ["Embolism", "Lymphedema", "Hypertension", "Ascites"],
     "correct": 1,
     "short_explanation": "Lymphedema is swelling due to blocked lymphatic drainage.",
     "long_explanation": "Obstruction in lymph vessels causes fluid accumulation in tissues. This may be congenital or due to infection, injury, or cancer.",
@@ -201,11 +163,7 @@
     "topic": "lymphatic_system",
     "category": "Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "lymphedema",
-      "fluid retention",
-      "blockage"
-    ],
+    "tags": ["lymphedema", "fluid retention", "blockage"],
     "keywords": [
       "lymphatic obstruction",
       "tissue swelling",
@@ -218,19 +176,12 @@
       "attempts": 0
     },
     "text": "Which of the following conditions is caused by blockage in the lymphatic system?",
-    "options": [
-      "Embolism",
-      "Lymphedema",
-      "Hypertension",
-      "Ascites"
-    ],
+    "options": ["Embolism", "Lymphedema", "Hypertension", "Ascites"],
     "correctAnswer": "Lymphedema",
-    "abcd": [
-      "A. Embolism",
-      "B. Lymphedema",
-      "C. Hypertension",
-      "D. Ascites"
-    ]
+    "abcd": ["A. Embolism", "B. Lymphedema", "C. Hypertension", "D. Ascites"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_006",
@@ -248,15 +199,8 @@
     "topic": "lymphatic_system",
     "category": "Immune Function",
     "difficulty": "basic",
-    "tags": [
-      "macrophages",
-      "lymphocytes",
-      "lymph node"
-    ],
-    "keywords": [
-      "antigen defense",
-      "immune cells in lymph"
-    ],
+    "tags": ["macrophages", "lymphocytes", "lymph node"],
+    "keywords": ["antigen defense", "immune cells in lymph"],
     "source_reference": "Immunology Essentials",
     "stats": {
       "correct": 0,
@@ -276,7 +220,10 @@
       "B. Macrophages and lymphocytes",
       "C. Chondrocytes",
       "D. Eosinophils"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_007",
@@ -294,16 +241,8 @@
     "topic": "lymphatic_system",
     "category": "Organ Function",
     "difficulty": "intermediate",
-    "tags": [
-      "spleen",
-      "blood filtration",
-      "immunity"
-    ],
-    "keywords": [
-      "lymphoid organ",
-      "infection control",
-      "spleen removal"
-    ],
+    "tags": ["spleen", "blood filtration", "immunity"],
+    "keywords": ["lymphoid organ", "infection control", "spleen removal"],
     "source_reference": "Guyton and Hall Physiology",
     "stats": {
       "correct": 0,
@@ -323,7 +262,10 @@
       "B. Stores lymph",
       "C. Filters blood and helps fight infection",
       "D. Drains lymph into veins"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_008",
@@ -341,16 +283,8 @@
     "topic": "lymphatic_system",
     "category": "Circulation",
     "difficulty": "intermediate",
-    "tags": [
-      "right lymphatic duct",
-      "lymph drainage",
-      "circulation"
-    ],
-    "keywords": [
-      "right subclavian",
-      "lymph region",
-      "lymph quadrant"
-    ],
+    "tags": ["right lymphatic duct", "lymph drainage", "circulation"],
+    "keywords": ["right subclavian", "lymph region", "lymph quadrant"],
     "source_reference": "Netter’s Anatomy",
     "stats": {
       "correct": 0,
@@ -370,17 +304,15 @@
       "B. Left thorax and arm",
       "C. Right upper quadrant only",
       "D. Right side of head, arm, and thorax"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_009",
     "question": "Which fluid enters lymphatic capillaries from tissues?",
-    "answers": [
-      "Blood plasma",
-      "Interstitial fluid",
-      "Bile",
-      "Urine"
-    ],
+    "answers": ["Blood plasma", "Interstitial fluid", "Bile", "Urine"],
     "correct": 1,
     "short_explanation": "Interstitial fluid enters lymphatic capillaries and becomes lymph.",
     "long_explanation": "Capillary filtration causes plasma to become interstitial fluid. Lymphatics reabsorb this fluid, returning it to circulation while filtering it.",
@@ -388,16 +320,8 @@
     "topic": "lymphatic_system",
     "category": "Fluid Dynamics",
     "difficulty": "basic",
-    "tags": [
-      "lymph",
-      "interstitial fluid",
-      "reabsorption"
-    ],
-    "keywords": [
-      "fluid balance",
-      "lymph reentry",
-      "swelling"
-    ],
+    "tags": ["lymph", "interstitial fluid", "reabsorption"],
+    "keywords": ["fluid balance", "lymph reentry", "swelling"],
     "source_reference": "Essentials of Anatomy and Physiology",
     "stats": {
       "correct": 0,
@@ -405,19 +329,12 @@
       "attempts": 0
     },
     "text": "Which fluid enters lymphatic capillaries from tissues?",
-    "options": [
-      "Blood plasma",
-      "Interstitial fluid",
-      "Bile",
-      "Urine"
-    ],
+    "options": ["Blood plasma", "Interstitial fluid", "Bile", "Urine"],
     "correctAnswer": "Interstitial fluid",
-    "abcd": [
-      "A. Blood plasma",
-      "B. Interstitial fluid",
-      "C. Bile",
-      "D. Urine"
-    ]
+    "abcd": ["A. Blood plasma", "B. Interstitial fluid", "C. Bile", "D. Urine"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   },
   {
     "id": "Lymph_010",
@@ -435,16 +352,8 @@
     "topic": "lymphatic_system",
     "category": "Massage Therapy",
     "difficulty": "basic",
-    "tags": [
-      "manual lymphatic drainage",
-      "massage",
-      "edema"
-    ],
-    "keywords": [
-      "lymph massage",
-      "edema relief",
-      "immune support"
-    ],
+    "tags": ["manual lymphatic drainage", "massage", "edema"],
+    "keywords": ["lymph massage", "edema relief", "immune support"],
     "source_reference": "Textbook of Lymphatic Massage Techniques",
     "stats": {
       "correct": 0,
@@ -464,6 +373,9 @@
       "B. Myofascial release",
       "C. Lymphatic drainage",
       "D. Trigger point therapy"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "lymph.json"
   }
 ]

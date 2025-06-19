@@ -2,28 +2,13 @@
   {
     "id": "ventricles_brain_001",
     "question": "How many ventricles are present in the human brain?",
-    "answers": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
+    "answers": ["2", "3", "4", "5"],
     "correct": 2,
     "short_explanation": "There are four ventricles: two lateral, one third, and one fourth.",
     "long_explanation": "The human brain has four interconnected ventricles filled with cerebrospinal fluid: two lateral ventricles (one in each hemisphere), the third ventricle, and the fourth ventricle.",
     "clinical_application": "Knowledge of ventricular anatomy is important when evaluating conditions like hydrocephalus in clinical practice.",
-    "tags": [
-      "brain ventricles",
-      "neuroanatomy",
-      "CSF"
-    ],
-    "keywords": [
-      "ventricles",
-      "lateral",
-      "third",
-      "fourth",
-      "CSF"
-    ],
+    "tags": ["brain ventricles", "neuroanatomy", "CSF"],
+    "keywords": ["ventricles", "lateral", "third", "fourth", "CSF"],
     "topic": "Nervous System",
     "category": "Neuroanatomy",
     "subcategory": "Ventricular System",
@@ -33,19 +18,12 @@
     "mblex_category": "Anatomy",
     "source_reference": "Netter's Atlas of Human Neuroscience",
     "text": "How many ventricles are present in the human brain?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
+    "options": ["2", "3", "4", "5"],
     "correctAnswer": "4",
-    "abcd": [
-      "A. 2",
-      "B. 3",
-      "C. 4",
-      "D. 5"
-    ]
+    "abcd": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_002",
@@ -60,16 +38,8 @@
     "short_explanation": "The interventricular foramen (of Monro) connects the lateral ventricles to the third ventricle.",
     "long_explanation": "Each lateral ventricle is connected to the third ventricle via the interventricular foramen, also known as the foramen of Monro, allowing CSF to flow through the ventricular system.",
     "clinical_application": "Blockage at the foramen of Monro can cause hydrocephalus due to CSF accumulation in the lateral ventricles.",
-    "tags": [
-      "interventricular foramen",
-      "foramen of Monro",
-      "CSF flow"
-    ],
-    "keywords": [
-      "ventricular system",
-      "neuroanatomy",
-      "CSF circulation"
-    ],
+    "tags": ["interventricular foramen", "foramen of Monro", "CSF flow"],
+    "keywords": ["ventricular system", "neuroanatomy", "CSF circulation"],
     "topic": "Nervous System",
     "category": "Neuroanatomy",
     "subcategory": "Ventricular Connections",
@@ -91,7 +61,10 @@
       "B. Corpus callosum",
       "C. Foramen of Luschka",
       "D. Interventricular foramen (of Monro)"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_003",
@@ -106,16 +79,8 @@
     "short_explanation": "The third ventricle lies within the diencephalon, between the two halves of the thalamus.",
     "long_explanation": "The third ventricle is a narrow midline cavity that lies between the right and left thalamus in the diencephalon, forming part of the CSF-filled ventricular system.",
     "clinical_application": "Swelling of the thalamus or tumor in the diencephalon can obstruct the third ventricle, affecting CSF flow.",
-    "tags": [
-      "third ventricle",
-      "diencephalon",
-      "thalamus"
-    ],
-    "keywords": [
-      "ventricular system",
-      "brain anatomy",
-      "CSF circulation"
-    ],
+    "tags": ["third ventricle", "diencephalon", "thalamus"],
+    "keywords": ["ventricular system", "brain anatomy", "CSF circulation"],
     "topic": "Nervous System",
     "category": "Neuroanatomy",
     "subcategory": "Diencephalic Structures",
@@ -137,7 +102,10 @@
       "B. Between the cerebral hemispheres",
       "C. In the thalamic region of the diencephalon",
       "D. In the spinal cord"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_004",
@@ -152,16 +120,8 @@
     "short_explanation": "The cerebral aqueduct connects the third and fourth ventricles.",
     "long_explanation": "The cerebral aqueduct (aqueduct of Sylvius) is a narrow channel in the midbrain that connects the third ventricle superiorly to the fourth ventricle inferiorly, allowing CSF flow.",
     "clinical_application": "Obstruction of the cerebral aqueduct is a common cause of non-communicating hydrocephalus.",
-    "tags": [
-      "cerebral aqueduct",
-      "ventricular flow",
-      "midbrain"
-    ],
-    "keywords": [
-      "brainstem",
-      "CSF blockage",
-      "aqueduct of Sylvius"
-    ],
+    "tags": ["cerebral aqueduct", "ventricular flow", "midbrain"],
+    "keywords": ["brainstem", "CSF blockage", "aqueduct of Sylvius"],
     "topic": "Nervous System",
     "category": "Neuroanatomy",
     "subcategory": "Brainstem Structures",
@@ -183,7 +143,10 @@
       "B. Central canal",
       "C. Interventricular foramen",
       "D. Sylvian fissure"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_005",
@@ -198,16 +161,8 @@
     "short_explanation": "It lies between the pons anteriorly and the cerebellum posteriorly.",
     "long_explanation": "The fourth ventricle is a diamond-shaped cavity located in the hindbrain, nestled between the pons/medulla and cerebellum. It marks the continuation of the ventricular system into the central canal of the spinal cord.",
     "clinical_application": "Massage therapists working near the posterior neck and cranial base must be aware of underlying neurovascular and CSF-sensitive structures.",
-    "tags": [
-      "fourth ventricle",
-      "pons",
-      "cerebellum"
-    ],
-    "keywords": [
-      "ventricular system",
-      "hindbrain",
-      "posterior fossa"
-    ],
+    "tags": ["fourth ventricle", "pons", "cerebellum"],
+    "keywords": ["ventricular system", "hindbrain", "posterior fossa"],
     "topic": "Nervous System",
     "category": "Neuroanatomy",
     "subcategory": "Hindbrain Anatomy",
@@ -229,7 +184,10 @@
       "B. Between the pons and cerebellum",
       "C. Above the thalamus",
       "D. Within the spinal cord"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_006",
@@ -244,15 +202,8 @@
     "short_explanation": "Cerebrospinal fluid (CSF) fills the ventricles.",
     "long_explanation": "CSF is a clear fluid produced by the choroid plexuses that circulates within the brain ventricles and subarachnoid space, providing cushioning and metabolic support.",
     "clinical_application": "Massage therapists should be cautious with clients with CSF flow disturbances, such as those with shunts or post-concussion symptoms.",
-    "tags": [
-      "CSF",
-      "ventricular fluid",
-      "choroid plexus"
-    ],
-    "keywords": [
-      "cerebrospinal fluid",
-      "brain protection"
-    ],
+    "tags": ["CSF", "ventricular fluid", "choroid plexus"],
+    "keywords": ["cerebrospinal fluid", "brain protection"],
     "topic": "Nervous System",
     "category": "Neuroanatomy",
     "subcategory": "CSF Circulation",
@@ -274,7 +225,10 @@
       "B. Blood plasma",
       "C. Cerebrospinal fluid (CSF)",
       "D. Synovial fluid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_007",
@@ -289,16 +243,8 @@
     "short_explanation": "CSF is produced by choroid plexuses within the ventricles.",
     "long_explanation": "The choroid plexuses are vascular networks found in all four ventricles that produce cerebrospinal fluid. They filter blood plasma into CSF.",
     "clinical_application": "Inflammation or infection of the choroid plexus can impair CSF production and balance.",
-    "tags": [
-      "CSF production",
-      "choroid plexus",
-      "ventricles"
-    ],
-    "keywords": [
-      "ventricular lining",
-      "fluid balance",
-      "neuroanatomy"
-    ],
+    "tags": ["CSF production", "choroid plexus", "ventricles"],
+    "keywords": ["ventricular lining", "fluid balance", "neuroanatomy"],
     "topic": "Nervous System",
     "category": "Neurophysiology",
     "subcategory": "CSF Production",
@@ -320,7 +266,10 @@
       "B. Choroid plexuses",
       "C. Arachnoid villi",
       "D. Cerebral cortex"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_008",
@@ -335,16 +284,8 @@
     "short_explanation": "Hydrocephalus is caused by CSF buildup.",
     "long_explanation": "Hydrocephalus results from an imbalance between CSF production and absorption, leading to increased intracranial pressure. It may be due to obstruction, overproduction, or impaired absorption.",
     "clinical_application": "Therapists should avoid deep pressure on the cranium in clients with hydrocephalus or shunts.",
-    "tags": [
-      "hydrocephalus",
-      "CSF imbalance",
-      "ventricular swelling"
-    ],
-    "keywords": [
-      "cerebral ventricles",
-      "fluid accumulation",
-      "ICP"
-    ],
+    "tags": ["hydrocephalus", "CSF imbalance", "ventricular swelling"],
+    "keywords": ["cerebral ventricles", "fluid accumulation", "ICP"],
     "topic": "Clinical Conditions",
     "category": "Neurological Disorders",
     "subcategory": "CSF Pathologies",
@@ -366,7 +307,10 @@
       "B. Meningitis",
       "C. Hydrocephalus",
       "D. Bell’s palsy"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_009",
@@ -381,16 +325,8 @@
     "short_explanation": "CSF circulates in the subarachnoid space.",
     "long_explanation": "After leaving the ventricles, CSF enters the subarachnoid space between the arachnoid and pia mater. It bathes the brain and spinal cord before being reabsorbed by arachnoid villi.",
     "clinical_application": "Inflammation here leads to meningitis, a condition therapists must screen for if symptoms like headache or neck stiffness are present.",
-    "tags": [
-      "subarachnoid",
-      "CSF circulation",
-      "meninges"
-    ],
-    "keywords": [
-      "arachnoid mater",
-      "pia mater",
-      "CSF flow"
-    ],
+    "tags": ["subarachnoid", "CSF circulation", "meninges"],
+    "keywords": ["arachnoid mater", "pia mater", "CSF flow"],
     "topic": "Nervous System",
     "category": "Meningeal Anatomy",
     "subcategory": "CSF Circulation",
@@ -412,7 +348,10 @@
       "B. Subarachnoid space",
       "C. Central canal",
       "D. Interventricular foramen"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   },
   {
     "id": "ventricles_brain_010",
@@ -427,16 +366,8 @@
     "short_explanation": "These foramina allow CSF to leave the fourth ventricle into the subarachnoid space.",
     "long_explanation": "CSF exits the ventricular system through the two lateral foramina of Luschka and the median foramen of Magendie in the fourth ventricle, entering the subarachnoid space around the brain and spinal cord.",
     "clinical_application": "Blockage of these openings can lead to CSF accumulation and raised intracranial pressure.",
-    "tags": [
-      "foramina of Luschka",
-      "foramen of Magendie",
-      "CSF exit points"
-    ],
-    "keywords": [
-      "ventricular outflow",
-      "neuroanatomy",
-      "CSF drainage"
-    ],
+    "tags": ["foramina of Luschka", "foramen of Magendie", "CSF exit points"],
+    "keywords": ["ventricular outflow", "neuroanatomy", "CSF drainage"],
     "topic": "Nervous System",
     "category": "Ventricular Exit Points",
     "subcategory": "CSF Flow",
@@ -458,6 +389,9 @@
       "B. Cerebral aqueduct",
       "C. Arachnoid villi",
       "D. Foramina of Luschka and Magendie"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/brain",
+    "filename": "ventricles_brain.json"
   }
 ]

@@ -15,16 +15,8 @@
     "topic": "organ_gallbladder",
     "category": "Digestive System",
     "difficulty": "basic",
-    "tags": [
-      "bile",
-      "gallbladder",
-      "digestion"
-    ],
-    "keywords": [
-      "gallbladder",
-      "bile storage",
-      "fat digestion"
-    ],
+    "tags": ["bile", "gallbladder", "digestion"],
+    "keywords": ["gallbladder", "bile storage", "fat digestion"],
     "source_reference": "Trail Guide to the Body",
     "stats": {
       "correct": 0,
@@ -44,7 +36,10 @@
       "B. Store and concentrate bile",
       "C. Digest proteins",
       "D. Secrete digestive enzymes"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_002",
@@ -62,16 +57,8 @@
     "topic": "organ_gallbladder",
     "category": "Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "quadrants",
-      "anatomy",
-      "gallbladder"
-    ],
-    "keywords": [
-      "location",
-      "RUQ",
-      "visceral pain"
-    ],
+    "tags": ["quadrants", "anatomy", "gallbladder"],
+    "keywords": ["location", "RUQ", "visceral pain"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -91,17 +78,15 @@
       "B. Right upper quadrant",
       "C. Left lower quadrant",
       "D. Right lower quadrant"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_003",
     "question": "Which hormone triggers bile release from the gallbladder?",
-    "answers": [
-      "Gastrin",
-      "Secretin",
-      "Cholecystokinin",
-      "Insulin"
-    ],
+    "answers": ["Gastrin", "Secretin", "Cholecystokinin", "Insulin"],
     "correct": 2,
     "short_explanation": "Cholecystokinin (CCK) stimulates bile release in response to fats.",
     "long_explanation": "CCK is released by the small intestine when fatty foods enter. It signals the gallbladder to contract and release bile into the duodenum.",
@@ -109,16 +94,8 @@
     "topic": "organ_gallbladder",
     "category": "Hormonal Control",
     "difficulty": "intermediate",
-    "tags": [
-      "hormone",
-      "CCK",
-      "gallbladder"
-    ],
-    "keywords": [
-      "cholecystokinin",
-      "fat digestion",
-      "bile release"
-    ],
+    "tags": ["hormone", "CCK", "gallbladder"],
+    "keywords": ["cholecystokinin", "fat digestion", "bile release"],
     "source_reference": "Guyton and Hall Physiology",
     "stats": {
       "correct": 0,
@@ -126,19 +103,12 @@
       "attempts": 0
     },
     "text": "Which hormone triggers bile release from the gallbladder?",
-    "options": [
-      "Gastrin",
-      "Secretin",
-      "Cholecystokinin",
-      "Insulin"
-    ],
+    "options": ["Gastrin", "Secretin", "Cholecystokinin", "Insulin"],
     "correctAnswer": "Cholecystokinin",
-    "abcd": [
-      "A. Gastrin",
-      "B. Secretin",
-      "C. Cholecystokinin",
-      "D. Insulin"
-    ]
+    "abcd": ["A. Gastrin", "B. Secretin", "C. Cholecystokinin", "D. Insulin"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_004",
@@ -156,16 +126,8 @@
     "topic": "organ_gallbladder",
     "category": "Pathology",
     "difficulty": "intermediate",
-    "tags": [
-      "gallstones",
-      "cholelithiasis",
-      "cholesterol"
-    ],
-    "keywords": [
-      "gallbladder stones",
-      "cholesterol imbalance",
-      "bile"
-    ],
+    "tags": ["gallstones", "cholelithiasis", "cholesterol"],
+    "keywords": ["gallbladder stones", "cholesterol imbalance", "bile"],
     "source_reference": "Robbins Pathologic Basis of Disease",
     "stats": {
       "correct": 0,
@@ -185,7 +147,10 @@
       "B. Excess cholesterol in bile",
       "C. Protein deficiency",
       "D. Overproduction of bile acids"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_005",
@@ -203,16 +168,8 @@
     "topic": "organ_gallbladder",
     "category": "Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "biliary tree",
-      "gallbladder",
-      "ducts"
-    ],
-    "keywords": [
-      "cystic duct",
-      "bile flow",
-      "digestive anatomy"
-    ],
+    "tags": ["biliary tree", "gallbladder", "ducts"],
+    "keywords": ["cystic duct", "bile flow", "digestive anatomy"],
     "source_reference": "Netter’s Anatomy",
     "stats": {
       "correct": 0,
@@ -232,17 +189,15 @@
       "B. Pancreatic duct",
       "C. Cystic duct",
       "D. Ampulla of Vater"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_006",
     "question": "Bile from the gallbladder helps in digestion of which nutrient?",
-    "answers": [
-      "Proteins",
-      "Carbohydrates",
-      "Fats",
-      "Minerals"
-    ],
+    "answers": ["Proteins", "Carbohydrates", "Fats", "Minerals"],
     "correct": 2,
     "short_explanation": "Bile emulsifies fats, aiding their breakdown.",
     "long_explanation": "Bile contains bile salts that break fat globules into smaller droplets (emulsification), which increases the surface area for lipase action.",
@@ -250,16 +205,8 @@
     "topic": "organ_gallbladder",
     "category": "Digestive Function",
     "difficulty": "basic",
-    "tags": [
-      "fat digestion",
-      "bile",
-      "gallbladder"
-    ],
-    "keywords": [
-      "lipid emulsification",
-      "bile salts",
-      "fat metabolism"
-    ],
+    "tags": ["fat digestion", "bile", "gallbladder"],
+    "keywords": ["lipid emulsification", "bile salts", "fat metabolism"],
     "source_reference": "Physiology Made Easy",
     "stats": {
       "correct": 0,
@@ -267,19 +214,12 @@
       "attempts": 0
     },
     "text": "Bile from the gallbladder helps in digestion of which nutrient?",
-    "options": [
-      "Proteins",
-      "Carbohydrates",
-      "Fats",
-      "Minerals"
-    ],
+    "options": ["Proteins", "Carbohydrates", "Fats", "Minerals"],
     "correctAnswer": "Fats",
-    "abcd": [
-      "A. Proteins",
-      "B. Carbohydrates",
-      "C. Fats",
-      "D. Minerals"
-    ]
+    "abcd": ["A. Proteins", "B. Carbohydrates", "C. Fats", "D. Minerals"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_007",
@@ -297,11 +237,7 @@
     "topic": "organ_gallbladder",
     "category": "Pathology",
     "difficulty": "intermediate",
-    "tags": [
-      "referred pain",
-      "gallbladder",
-      "scapular region"
-    ],
+    "tags": ["referred pain", "gallbladder", "scapular region"],
     "keywords": [
       "visceral referral",
       "gallbladder inflammation",
@@ -326,17 +262,15 @@
       "B. Right shoulder/scapula",
       "C. Lower abdomen",
       "D. Upper left back"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_008",
     "question": "Which condition is a medical emergency requiring removal of the gallbladder?",
-    "answers": [
-      "Pancreatitis",
-      "Cholecystitis",
-      "Hepatitis",
-      "Appendicitis"
-    ],
+    "answers": ["Pancreatitis", "Cholecystitis", "Hepatitis", "Appendicitis"],
     "correct": 1,
     "short_explanation": "Cholecystitis is inflammation of the gallbladder, often requiring surgery.",
     "long_explanation": "Cholecystitis can result from a blocked cystic duct, leading to infection and rupture if untreated. Cholecystectomy is often required.",
@@ -344,16 +278,8 @@
     "topic": "organ_gallbladder",
     "category": "Emergency Care",
     "difficulty": "intermediate",
-    "tags": [
-      "gallbladder",
-      "cholecystitis",
-      "surgical emergency"
-    ],
-    "keywords": [
-      "gallbladder removal",
-      "infection",
-      "abdominal pain"
-    ],
+    "tags": ["gallbladder", "cholecystitis", "surgical emergency"],
+    "keywords": ["gallbladder removal", "infection", "abdominal pain"],
     "source_reference": "Emergency Medicine Essentials",
     "stats": {
       "correct": 0,
@@ -361,19 +287,17 @@
       "attempts": 0
     },
     "text": "Which condition is a medical emergency requiring removal of the gallbladder?",
-    "options": [
-      "Pancreatitis",
-      "Cholecystitis",
-      "Hepatitis",
-      "Appendicitis"
-    ],
+    "options": ["Pancreatitis", "Cholecystitis", "Hepatitis", "Appendicitis"],
     "correctAnswer": "Cholecystitis",
     "abcd": [
       "A. Pancreatitis",
       "B. Cholecystitis",
       "C. Hepatitis",
       "D. Appendicitis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_009",
@@ -391,16 +315,8 @@
     "topic": "organ_gallbladder",
     "category": "Post-Surgical Physiology",
     "difficulty": "basic",
-    "tags": [
-      "bile flow",
-      "cholecystectomy",
-      "digestion"
-    ],
-    "keywords": [
-      "post-gallbladder surgery",
-      "bile secretion",
-      "fat digestion"
-    ],
+    "tags": ["bile flow", "cholecystectomy", "digestion"],
+    "keywords": ["post-gallbladder surgery", "bile secretion", "fat digestion"],
     "source_reference": "Physiology Review Guide",
     "stats": {
       "correct": 0,
@@ -420,17 +336,15 @@
       "B. It continues from the liver directly to the intestine",
       "C. It reverses direction",
       "D. It is absorbed by the pancreas"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   },
   {
     "id": "Gallbladder_010",
     "question": "Which nutrient's digestion is most impacted by gallbladder dysfunction?",
-    "answers": [
-      "Carbohydrates",
-      "Proteins",
-      "Fats",
-      "Fiber"
-    ],
+    "answers": ["Carbohydrates", "Proteins", "Fats", "Fiber"],
     "correct": 2,
     "short_explanation": "Fats require bile for emulsification, which is stored in the gallbladder.",
     "long_explanation": "Without proper bile release, fats are poorly emulsified, leading to steatorrhea (fatty stool) and nutrient malabsorption.",
@@ -438,16 +352,8 @@
     "topic": "organ_gallbladder",
     "category": "Nutrition",
     "difficulty": "intermediate",
-    "tags": [
-      "fat digestion",
-      "gallbladder",
-      "malabsorption"
-    ],
-    "keywords": [
-      "steatorrhea",
-      "bile",
-      "gallbladder dysfunction"
-    ],
+    "tags": ["fat digestion", "gallbladder", "malabsorption"],
+    "keywords": ["steatorrhea", "bile", "gallbladder dysfunction"],
     "source_reference": "Nutrition and Digestion for Therapists",
     "stats": {
       "correct": 0,
@@ -455,18 +361,11 @@
       "attempts": 0
     },
     "text": "Which nutrient's digestion is most impacted by gallbladder dysfunction?",
-    "options": [
-      "Carbohydrates",
-      "Proteins",
-      "Fats",
-      "Fiber"
-    ],
+    "options": ["Carbohydrates", "Proteins", "Fats", "Fiber"],
     "correctAnswer": "Fats",
-    "abcd": [
-      "A. Carbohydrates",
-      "B. Proteins",
-      "C. Fats",
-      "D. Fiber"
-    ]
+    "abcd": ["A. Carbohydrates", "B. Proteins", "C. Fats", "D. Fiber"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "gall_bladder.json"
   }
 ]

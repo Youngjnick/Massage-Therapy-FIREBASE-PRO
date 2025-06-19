@@ -2,12 +2,7 @@
   {
     "id": "phrenic_001",
     "question": "Which spinal nerve roots contribute to the phrenic nerve?",
-    "answers": [
-      "C1–C3",
-      "C3–C5",
-      "C5–C7",
-      "T1–T3"
-    ],
+    "answers": ["C1–C3", "C3–C5", "C5–C7", "T1–T3"],
     "correct": 1,
     "short_explanation": "The phrenic nerve arises from C3, C4, and C5.",
     "long_explanation": "The phrenic nerve originates from cervical spinal nerves C3 to C5, with C4 contributing the most. It travels downward to innervate the diaphragm.",
@@ -15,41 +10,21 @@
     "topic": "Spinal Nerves",
     "category": "Motor",
     "difficulty": "intermediate",
-    "tags": [
-      "phrenic nerve",
-      "diaphragm",
-      "C3–C5"
-    ],
-    "keywords": [
-      "phrenic origin",
-      "spinal roots",
-      "cervical plexus"
-    ],
+    "tags": ["phrenic nerve", "diaphragm", "C3–C5"],
+    "keywords": ["phrenic origin", "spinal roots", "cervical plexus"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "Which spinal nerve roots contribute to the phrenic nerve?",
-    "options": [
-      "C1–C3",
-      "C3–C5",
-      "C5–C7",
-      "T1–T3"
-    ],
+    "options": ["C1–C3", "C3–C5", "C5–C7", "T1–T3"],
     "correctAnswer": "C3–C5",
-    "abcd": [
-      "A. C1–C3",
-      "B. C3–C5",
-      "C. C5–C7",
-      "D. T1–T3"
-    ]
+    "abcd": ["A. C1–C3", "B. C3–C5", "C. C5–C7", "D. T1–T3"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_002",
     "question": "What is the primary motor target of the phrenic nerve?",
-    "answers": [
-      "Heart",
-      "Diaphragm",
-      "Intercostals",
-      "Esophagus"
-    ],
+    "answers": ["Heart", "Diaphragm", "Intercostals", "Esophagus"],
     "correct": 1,
     "short_explanation": "The diaphragm is the primary muscle innervated by the phrenic nerve.",
     "long_explanation": "The phrenic nerve exclusively provides motor innervation to the diaphragm, enabling its contraction during inhalation.",
@@ -57,31 +32,16 @@
     "topic": "Respiratory Control",
     "category": "Motor",
     "difficulty": "basic",
-    "tags": [
-      "phrenic",
-      "diaphragm",
-      "respiration"
-    ],
-    "keywords": [
-      "breathing nerve",
-      "motor diaphragm",
-      "phrenic control"
-    ],
+    "tags": ["phrenic", "diaphragm", "respiration"],
+    "keywords": ["breathing nerve", "motor diaphragm", "phrenic control"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "text": "What is the primary motor target of the phrenic nerve?",
-    "options": [
-      "Heart",
-      "Diaphragm",
-      "Intercostals",
-      "Esophagus"
-    ],
+    "options": ["Heart", "Diaphragm", "Intercostals", "Esophagus"],
     "correctAnswer": "Diaphragm",
-    "abcd": [
-      "A. Heart",
-      "B. Diaphragm",
-      "C. Intercostals",
-      "D. Esophagus"
-    ]
+    "abcd": ["A. Heart", "B. Diaphragm", "C. Intercostals", "D. Esophagus"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_003",
@@ -99,16 +59,8 @@
     "topic": "Thoracic Anatomy",
     "category": "Anatomical Course",
     "difficulty": "advanced",
-    "tags": [
-      "mediastinum",
-      "phrenic nerve",
-      "anatomy"
-    ],
-    "keywords": [
-      "thoracic path",
-      "nerve course",
-      "middle mediastinum"
-    ],
+    "tags": ["mediastinum", "phrenic nerve", "anatomy"],
+    "keywords": ["thoracic path", "nerve course", "middle mediastinum"],
     "source_reference": "Gray’s Anatomy",
     "text": "The phrenic nerve descends in which anatomical structure of the thorax?",
     "options": [
@@ -123,7 +75,10 @@
       "B. Lateral thoracic wall",
       "C. Anterior mediastinum",
       "D. Middle mediastinum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_004",
@@ -141,16 +96,8 @@
     "topic": "Neuromuscular Disorders",
     "category": "Injury Consequences",
     "difficulty": "intermediate",
-    "tags": [
-      "phrenic injury",
-      "hemidiaphragm",
-      "paralysis"
-    ],
-    "keywords": [
-      "diaphragm dysfunction",
-      "nerve trauma",
-      "breathing issue"
-    ],
+    "tags": ["phrenic injury", "hemidiaphragm", "paralysis"],
+    "keywords": ["diaphragm dysfunction", "nerve trauma", "breathing issue"],
     "source_reference": "Clinical Neurology by Aminoff",
     "text": "Unilateral phrenic nerve damage may result in:",
     "options": [
@@ -165,17 +112,15 @@
       "B. Shoulder droop",
       "C. Paralyzed hemidiaphragm",
       "D. Tingling in the fingers"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_005",
     "question": "The phrenic nerve carries sensory fibers from all of the following EXCEPT:",
-    "answers": [
-      "Pericardium",
-      "Diaphragm",
-      "Pleura",
-      "Alveoli"
-    ],
+    "answers": ["Pericardium", "Diaphragm", "Pleura", "Alveoli"],
     "correct": 3,
     "short_explanation": "The phrenic nerve does not innervate alveoli.",
     "long_explanation": "Phrenic sensory branches provide input from the central diaphragm, pericardium, and mediastinal pleura, but not the alveoli, which lack somatic innervation.",
@@ -183,31 +128,16 @@
     "topic": "Sensory Function",
     "category": "Sensory",
     "difficulty": "advanced",
-    "tags": [
-      "phrenic sensory",
-      "shoulder pain",
-      "pleura"
-    ],
-    "keywords": [
-      "diaphragm sensation",
-      "pericardium nerves",
-      "referred pain"
-    ],
+    "tags": ["phrenic sensory", "shoulder pain", "pleura"],
+    "keywords": ["diaphragm sensation", "pericardium nerves", "referred pain"],
     "source_reference": "Principles of Anatomy and Physiology by Tortora",
     "text": "The phrenic nerve carries sensory fibers from all of the following EXCEPT:",
-    "options": [
-      "Pericardium",
-      "Diaphragm",
-      "Pleura",
-      "Alveoli"
-    ],
+    "options": ["Pericardium", "Diaphragm", "Pleura", "Alveoli"],
     "correctAnswer": "Alveoli",
-    "abcd": [
-      "A. Pericardium",
-      "B. Diaphragm",
-      "C. Pleura",
-      "D. Alveoli"
-    ]
+    "abcd": ["A. Pericardium", "B. Diaphragm", "C. Pleura", "D. Alveoli"],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_006",
@@ -225,16 +155,8 @@
     "topic": "Neck Anatomy",
     "category": "Anatomical Path",
     "difficulty": "advanced",
-    "tags": [
-      "scalenes",
-      "neck nerves",
-      "phrenic course"
-    ],
-    "keywords": [
-      "anterior scalene",
-      "nerve landmarks",
-      "thoracic outlet"
-    ],
+    "tags": ["scalenes", "neck nerves", "phrenic course"],
+    "keywords": ["anterior scalene", "nerve landmarks", "thoracic outlet"],
     "source_reference": "Grant’s Atlas of Anatomy",
     "text": "Which muscle does the phrenic nerve pass anterior to in the neck?",
     "options": [
@@ -249,17 +171,15 @@
       "B. Scalenus medius",
       "C. Sternocleidomastoid",
       "D. Omohyoid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_007",
     "question": "Phrenic nerve irritation commonly refers pain to:",
-    "answers": [
-      "Upper chest",
-      "Lower abdomen",
-      "Shoulder",
-      "Posterior neck"
-    ],
+    "answers": ["Upper chest", "Lower abdomen", "Shoulder", "Posterior neck"],
     "correct": 2,
     "short_explanation": "Pain from diaphragm or pericardium is referred to the shoulder (C4 dermatome).",
     "long_explanation": "Shared spinal root origin (C3–C5) explains why diaphragmatic or pericardial irritation leads to referred pain in the shoulder or supraclavicular area.",
@@ -267,30 +187,21 @@
     "topic": "Referred Pain",
     "category": "Clinical Neuroanatomy",
     "difficulty": "intermediate",
-    "tags": [
-      "referred pain",
-      "phrenic",
-      "diaphragm"
-    ],
-    "keywords": [
-      "shoulder pain",
-      "visceral somatic convergence"
-    ],
+    "tags": ["referred pain", "phrenic", "diaphragm"],
+    "keywords": ["shoulder pain", "visceral somatic convergence"],
     "source_reference": "Neuroanatomy Through Clinical Cases by Blumenfeld",
     "text": "Phrenic nerve irritation commonly refers pain to:",
-    "options": [
-      "Upper chest",
-      "Lower abdomen",
-      "Shoulder",
-      "Posterior neck"
-    ],
+    "options": ["Upper chest", "Lower abdomen", "Shoulder", "Posterior neck"],
     "correctAnswer": "Shoulder",
     "abcd": [
       "A. Upper chest",
       "B. Lower abdomen",
       "C. Shoulder",
       "D. Posterior neck"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_008",
@@ -308,16 +219,8 @@
     "topic": "Functional Neuroanatomy",
     "category": "Function",
     "difficulty": "basic",
-    "tags": [
-      "phrenic",
-      "motor",
-      "sensory"
-    ],
-    "keywords": [
-      "nerve function",
-      "somatic motor",
-      "autonomic vs somatic"
-    ],
+    "tags": ["phrenic", "motor", "sensory"],
+    "keywords": ["nerve function", "somatic motor", "autonomic vs somatic"],
     "source_reference": "Human Physiology by Silverthorn",
     "text": "Which of the following is NOT a function of the phrenic nerve?",
     "options": [
@@ -332,7 +235,10 @@
       "B. Sensory input from central diaphragm",
       "C. Sympathetic innervation of lungs",
       "D. Motor signals to diaphragm"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_009",
@@ -350,15 +256,8 @@
     "topic": "Spinal Trauma",
     "category": "Pathophysiology",
     "difficulty": "advanced",
-    "tags": [
-      "cervical injury",
-      "breathing",
-      "phrenic"
-    ],
-    "keywords": [
-      "spinal cord trauma",
-      "diaphragm impact"
-    ],
+    "tags": ["cervical injury", "breathing", "phrenic"],
+    "keywords": ["spinal cord trauma", "diaphragm impact"],
     "source_reference": "Emergency Neurology Guidelines",
     "text": "In a cervical spinal cord injury at C5, phrenic nerve function is likely:",
     "options": [
@@ -373,7 +272,10 @@
       "B. Partially preserved",
       "C. Lost entirely",
       "D. Not affected"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   },
   {
     "id": "phrenic_010",
@@ -391,16 +293,8 @@
     "topic": "Memory Aid",
     "category": "Neuroeducation",
     "difficulty": "basic",
-    "tags": [
-      "mnemonic",
-      "phrenic",
-      "C3–C5"
-    ],
-    "keywords": [
-      "diaphragm innervation",
-      "nerve roots",
-      "neuro learning"
-    ],
+    "tags": ["mnemonic", "phrenic", "C3–C5"],
+    "keywords": ["diaphragm innervation", "nerve roots", "neuro learning"],
     "source_reference": "First Aid for the USMLE",
     "text": "The mnemonic 'C3, 4, 5 keep the diaphragm alive' refers to:",
     "options": [
@@ -415,6 +309,9 @@
       "B. Phrenic nerve origins",
       "C. Lung hilum levels",
       "D. Heart plexus innervation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "innervations/spinal_root_levels",
+    "filename": "phrenic_nerve.json"
   }
 ]

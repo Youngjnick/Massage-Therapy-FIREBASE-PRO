@@ -56,10 +56,7 @@
     "created_at": "2025-05-24T14:34:08.105Z",
     "updated_at": "2025-05-24T14:54:13.453Z",
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
-    "synonyms": [
-      "deltoid",
-      "shoulder abductor"
-    ],
+    "synonyms": ["deltoid", "shoulder abductor"],
     "image_reference": "shoulder_origin_deltoid.png",
     "text": "Where does the deltoid muscle originate?",
     "options": [
@@ -74,7 +71,10 @@
       "B. Medial epicondyle of the humerus",
       "C. Coracoid process of the scapula",
       "D. Greater tubercle of the humerus"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "origins",
+    "filename": "shoulder_origins.json"
   },
   {
     "id": "Shoulder Origin 002",
@@ -135,10 +135,7 @@
     "created_at": "2025-05-24T14:34:08.105Z",
     "updated_at": "2025-05-24T14:54:13.453Z",
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
-    "synonyms": [
-      "pec major",
-      "pectoralis"
-    ],
+    "synonyms": ["pec major", "pectoralis"],
     "image_reference": "shoulder_origin_pectoralis_major.png",
     "text": "What is the origin of the pectoralis major muscle?",
     "options": [
@@ -153,7 +150,10 @@
       "B. Medial half of clavicle, sternum, and costal cartilages 1–6",
       "C. Acromion and spine of the scapula",
       "D. Inferior angle of the scapula"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "origins",
+    "filename": "shoulder_origins.json"
   },
   {
     "id": "Shoulder Origin 003",
@@ -218,10 +218,7 @@
     "created_at": "2025-05-24T14:34:08.105Z",
     "updated_at": "2025-05-24T14:54:13.453Z",
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
-    "synonyms": [
-      "SSP",
-      "RTC muscle"
-    ],
+    "synonyms": ["SSP", "RTC muscle"],
     "image_reference": "shoulder_origin_supraspinatus.png",
     "text": "The supraspinatus muscle originates from which structure?",
     "options": [
@@ -236,7 +233,10 @@
       "B. Lateral border of the scapula",
       "C. Supraspinous fossa of the scapula",
       "D. Clavicle and sternum"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "origins",
+    "filename": "shoulder_origins.json"
   },
   {
     "id": "Shoulder Origin 004",
@@ -293,10 +293,7 @@
     "created_at": "2025-05-24T14:34:08.105Z",
     "updated_at": "2025-05-24T14:54:13.453Z",
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
-    "synonyms": [
-      "teres group",
-      "posterior shoulder"
-    ],
+    "synonyms": ["teres group", "posterior shoulder"],
     "image_reference": "shoulder_origin_teres_major.png",
     "text": "Which of the following muscles originates on the lateral border of the scapula?",
     "options": [
@@ -311,7 +308,10 @@
       "B. Teres major",
       "C. Pectoralis minor",
       "D. Trapezius"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "origins",
+    "filename": "shoulder_origins.json"
   },
   {
     "id": "Shoulder Origin 005",
@@ -370,10 +370,7 @@
     "created_at": "2025-05-24T14:34:08.105Z",
     "updated_at": "2025-05-24T14:54:13.453Z",
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
-    "synonyms": [
-      "lat",
-      "lats"
-    ],
+    "synonyms": ["lat", "lats"],
     "image_reference": "shoulder_origin_latissimus_dorsi.png",
     "text": "Where does the latissimus dorsi originate?",
     "options": [
@@ -388,6 +385,9 @@
       "B. Inferior angle of scapula, spinous processes T7–L5, thoracolumbar fascia, and iliac crest",
       "C. Acromion process and clavicle",
       "D. Spinous processes C1–C4"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "origins",
+    "filename": "shoulder_origins.json"
   }
 ]

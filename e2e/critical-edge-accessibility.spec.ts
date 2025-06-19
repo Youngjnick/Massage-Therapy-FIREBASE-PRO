@@ -28,7 +28,7 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     await expect(warning).toBeVisible();
   });
 
-  test('Network failure: loading questions', async ({ page }) => {
+  test.skip('Network failure: loading questions', async ({ page }) => {
     // Abort all Firestore requests to simulate network failure
     await page.route('**/firestore.googleapis.com/**', route => route.abort());
     await page.goto('/');

@@ -2,12 +2,7 @@
   {
     "id": "acl_001",
     "question": "What joint does the anterior cruciate ligament (ACL) primarily stabilize?",
-    "answers": [
-      "Hip joint",
-      "Knee joint",
-      "Ankle joint",
-      "Shoulder joint"
-    ],
+    "answers": ["Hip joint", "Knee joint", "Ankle joint", "Shoulder joint"],
     "correct": 1,
     "short_explanation": "The ACL is a major stabilizer of the knee.",
     "long_explanation": "The ACL connects the femur to the tibia and prevents anterior translation of the tibia. It plays a crucial role in maintaining knee stability.",
@@ -15,31 +10,22 @@
     "difficulty": "easy",
     "topic": "ACL Anatomy",
     "category": "Knee Ligaments",
-    "tags": [
-      "ACL",
-      "knee stability",
-      "ligaments"
-    ],
-    "keywords": [
-      "anterior cruciate ligament",
-      "knee joint"
-    ],
+    "tags": ["ACL", "knee stability", "ligaments"],
+    "keywords": ["anterior cruciate ligament", "knee joint"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body – Andrew Biel",
     "text": "What joint does the anterior cruciate ligament (ACL) primarily stabilize?",
-    "options": [
-      "Hip joint",
-      "Knee joint",
-      "Ankle joint",
-      "Shoulder joint"
-    ],
+    "options": ["Hip joint", "Knee joint", "Ankle joint", "Shoulder joint"],
     "correctAnswer": "Knee joint",
     "abcd": [
       "A. Hip joint",
       "B. Knee joint",
       "C. Ankle joint",
       "D. Shoulder joint"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_002",
@@ -57,15 +43,8 @@
     "difficulty": "easy",
     "topic": "ACL Function",
     "category": "Joint Mechanics",
-    "tags": [
-      "ACL",
-      "tibia",
-      "knee movement"
-    ],
-    "keywords": [
-      "stabilization",
-      "ligament function"
-    ],
+    "tags": ["ACL", "tibia", "knee movement"],
+    "keywords": ["stabilization", "ligament function"],
     "mblex_category": "Kinesiology",
     "source_reference": "Clinical Orthopedic Massage – Whitney Lowe",
     "text": "What movement does the ACL primarily resist?",
@@ -81,7 +60,10 @@
       "B. Posterior movement of tibia",
       "C. Anterior movement of tibia",
       "D. Lateral bending of the knee"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_003",
@@ -99,16 +81,8 @@
     "difficulty": "medium",
     "topic": "Injury Mechanisms",
     "category": "Pathology",
-    "tags": [
-      "injury",
-      "ACL tear",
-      "sports trauma"
-    ],
-    "keywords": [
-      "non-contact injury",
-      "pivot",
-      "twist"
-    ],
+    "tags": ["injury", "ACL tear", "sports trauma"],
+    "keywords": ["non-contact injury", "pivot", "twist"],
     "mblex_category": "Pathology & Contraindications",
     "source_reference": "Orthopedic Physical Assessment – David J. Magee",
     "text": "Which of the following is a common cause of ACL injury?",
@@ -124,7 +98,10 @@
       "B. Hyperextension of the elbow",
       "C. Twisting motion of the knee",
       "D. Falling on the tailbone"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_004",
@@ -142,15 +119,8 @@
     "difficulty": "easy",
     "topic": "Anatomical Connections",
     "category": "Anatomy",
-    "tags": [
-      "femur",
-      "tibia",
-      "knee anatomy"
-    ],
-    "keywords": [
-      "bone connection",
-      "ligament anatomy"
-    ],
+    "tags": ["femur", "tibia", "knee anatomy"],
+    "keywords": ["bone connection", "ligament anatomy"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Trail Guide to the Body – Andrew Biel",
     "text": "Which two bones are connected by the ACL?",
@@ -166,7 +136,10 @@
       "B. Femur and tibia",
       "C. Tibia and fibula",
       "D. Patella and femur"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_005",
@@ -184,15 +157,8 @@
     "difficulty": "medium",
     "topic": "Assessment",
     "category": "Orthopedic Testing",
-    "tags": [
-      "ACL testing",
-      "Lachman",
-      "assessment"
-    ],
-    "keywords": [
-      "orthopedic exam",
-      "ligament testing"
-    ],
+    "tags": ["ACL testing", "Lachman", "assessment"],
+    "keywords": ["orthopedic exam", "ligament testing"],
     "mblex_category": "Assessment",
     "source_reference": "Orthopedic Physical Assessment – Magee",
     "text": "Which clinical test is commonly used to assess ACL integrity?",
@@ -208,7 +174,10 @@
       "B. Lachman test",
       "C. Phalen’s test",
       "D. Drop arm test"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_006",
@@ -226,15 +195,8 @@
     "difficulty": "hard",
     "topic": "Common Injuries",
     "category": "Pathology",
-    "tags": [
-      "terrible triad",
-      "MCL",
-      "meniscus"
-    ],
-    "keywords": [
-      "sports injury",
-      "knee damage"
-    ],
+    "tags": ["terrible triad", "MCL", "meniscus"],
+    "keywords": ["sports injury", "knee damage"],
     "mblex_category": "Pathology",
     "source_reference": "Orthopedic Physical Assessment – Magee",
     "text": "What structure is often injured alongside the ACL in a 'terrible triad' injury?",
@@ -250,7 +212,10 @@
       "B. LCL and meniscus",
       "C. MCL and medial meniscus",
       "D. Patellar tendon and quad"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_007",
@@ -268,14 +233,8 @@
     "difficulty": "medium",
     "topic": "Rehabilitation",
     "category": "Treatment",
-    "tags": [
-      "rehab",
-      "massage for ACL"
-    ],
-    "keywords": [
-      "post-surgery care",
-      "flexibility"
-    ],
+    "tags": ["rehab", "massage for ACL"],
+    "keywords": ["post-surgery care", "flexibility"],
     "mblex_category": "Therapeutic Modalities",
     "source_reference": "Clinical Massage Therapy – Rattray & Ludwig",
     "text": "Which modality may assist in ACL rehab after the acute phase?",
@@ -291,7 +250,10 @@
       "B. Cross-fiber on scar",
       "C. Heat therapy and myofascial release",
       "D. Ice massage on patella"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_008",
@@ -309,14 +271,8 @@
     "difficulty": "medium",
     "topic": "Histology",
     "category": "Tissue Types",
-    "tags": [
-      "connective tissue",
-      "histology"
-    ],
-    "keywords": [
-      "dense regular",
-      "fibrous"
-    ],
+    "tags": ["connective tissue", "histology"],
+    "keywords": ["dense regular", "fibrous"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Principles of Anatomy & Physiology – Tortora",
     "text": "What tissue type primarily composes the ACL?",
@@ -332,7 +288,10 @@
       "B. Adipose tissue",
       "C. Dense regular connective tissue",
       "D. Cartilage"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_009",
@@ -350,14 +309,8 @@
     "difficulty": "hard",
     "topic": "Healing",
     "category": "Recovery",
-    "tags": [
-      "healing time",
-      "vascularity"
-    ],
-    "keywords": [
-      "ligament repair",
-      "circulation"
-    ],
+    "tags": ["healing time", "vascularity"],
+    "keywords": ["ligament repair", "circulation"],
     "mblex_category": "Pathology & Physiology",
     "source_reference": "Clinical Massage Therapy – Rattray & Ludwig",
     "text": "Why is ACL healing slower than muscle healing?",
@@ -373,7 +326,10 @@
       "B. High vascularity",
       "C. Low blood supply",
       "D. High nerve density"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   },
   {
     "id": "acl_010",
@@ -391,15 +347,8 @@
     "difficulty": "hard",
     "topic": "Prevention",
     "category": "Injury Prevention",
-    "tags": [
-      "ACL prevention",
-      "balance",
-      "proprioception"
-    ],
-    "keywords": [
-      "injury prevention",
-      "sports massage"
-    ],
+    "tags": ["ACL prevention", "balance", "proprioception"],
+    "keywords": ["injury prevention", "sports massage"],
     "mblex_category": "Client Education",
     "source_reference": "Journal of Orthopaedic Research",
     "text": "Which exercise may help prevent ACL injuries in athletes?",
@@ -415,6 +364,9 @@
       "B. Jumping on hard surfaces",
       "C. Balance and proprioception training",
       "D. Foam rolling ACL directly"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "ligaments/knee_ligaments",
+    "filename": "anterior_cruciate_ligament.json"
   }
 ]

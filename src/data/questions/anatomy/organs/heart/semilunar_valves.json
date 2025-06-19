@@ -15,17 +15,8 @@
     "topic": "Cardiovascular Anatomy",
     "category": "Heart Valves",
     "difficulty": "easy",
-    "tags": [
-      "semilunar",
-      "valves",
-      "aortic",
-      "pulmonary"
-    ],
-    "keywords": [
-      "semilunar valves",
-      "aortic valve",
-      "pulmonary valve"
-    ],
+    "tags": ["semilunar", "valves", "aortic", "pulmonary"],
+    "keywords": ["semilunar valves", "aortic valve", "pulmonary valve"],
     "source_reference": "Moore's Clinically Oriented Anatomy",
     "text": "What are the two semilunar valves in the human heart?",
     "options": [
@@ -40,7 +31,10 @@
       "B. Aortic and pulmonary",
       "C. Bicuspid and aortic",
       "D. Tricuspid and pulmonary"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_002",
@@ -58,15 +52,8 @@
     "topic": "Circulatory System",
     "category": "Cardiac Valves",
     "difficulty": "easy",
-    "tags": [
-      "blood flow",
-      "semilunar valves"
-    ],
-    "keywords": [
-      "ventricular ejection",
-      "aortic valve",
-      "pulmonary valve"
-    ],
+    "tags": ["blood flow", "semilunar valves"],
+    "keywords": ["ventricular ejection", "aortic valve", "pulmonary valve"],
     "source_reference": "Gray's Anatomy",
     "text": "Which direction do semilunar valves control blood flow?",
     "options": [
@@ -81,17 +68,15 @@
       "B. Into the ventricles",
       "C. Out of the ventricles",
       "D. From the lungs into the heart"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_003",
     "question": "What shape are semilunar valve leaflets?",
-    "answers": [
-      "Triangular",
-      "Half-moon",
-      "Circular",
-      "Oval"
-    ],
+    "answers": ["Triangular", "Half-moon", "Circular", "Oval"],
     "correct": 1,
     "short_explanation": "Semilunar valves are named for their half-moon shaped cusps.",
     "long_explanation": "Each semilunar valve consists of three crescent-shaped cusps that close tightly to prevent backflow.",
@@ -99,30 +84,16 @@
     "topic": "Anatomy",
     "category": "Valve Morphology",
     "difficulty": "easy",
-    "tags": [
-      "shape",
-      "cusps",
-      "valves"
-    ],
-    "keywords": [
-      "semilunar cusp",
-      "half-moon shape"
-    ],
+    "tags": ["shape", "cusps", "valves"],
+    "keywords": ["semilunar cusp", "half-moon shape"],
     "source_reference": "Netter's Atlas of Human Anatomy",
     "text": "What shape are semilunar valve leaflets?",
-    "options": [
-      "Triangular",
-      "Half-moon",
-      "Circular",
-      "Oval"
-    ],
+    "options": ["Triangular", "Half-moon", "Circular", "Oval"],
     "correctAnswer": "Half-moon",
-    "abcd": [
-      "A. Triangular",
-      "B. Half-moon",
-      "C. Circular",
-      "D. Oval"
-    ]
+    "abcd": ["A. Triangular", "B. Half-moon", "C. Circular", "D. Oval"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_004",
@@ -140,14 +111,8 @@
     "topic": "Cardiac Pathology",
     "category": "Valve Disorders",
     "difficulty": "intermediate",
-    "tags": [
-      "regurgitation",
-      "aortic valve"
-    ],
-    "keywords": [
-      "valve insufficiency",
-      "aortic regurgitation"
-    ],
+    "tags": ["regurgitation", "aortic valve"],
+    "keywords": ["valve insufficiency", "aortic regurgitation"],
     "source_reference": "Lilly's Pathophysiology of Heart Disease",
     "text": "Which condition is associated with failure of the aortic semilunar valve to close completely?",
     "options": [
@@ -162,17 +127,15 @@
       "B. Mitral valve prolapse",
       "C. Aortic regurgitation",
       "D. Pulmonary embolism"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_005",
     "question": "Which sound is most associated with semilunar valve closure?",
-    "answers": [
-      "S1",
-      "S2",
-      "S3",
-      "S4"
-    ],
+    "answers": ["S1", "S2", "S3", "S4"],
     "correct": 1,
     "short_explanation": "S2 corresponds with the closure of the semilunar valves.",
     "long_explanation": "The second heart sound (S2) occurs at the end of systole as the aortic and pulmonary valves snap shut.",
@@ -180,31 +143,16 @@
     "topic": "Auscultation",
     "category": "Heart Sounds",
     "difficulty": "easy",
-    "tags": [
-      "S2",
-      "valves",
-      "cardiology"
-    ],
-    "keywords": [
-      "heart sound",
-      "semilunar",
-      "valve closure"
-    ],
+    "tags": ["S2", "valves", "cardiology"],
+    "keywords": ["heart sound", "semilunar", "valve closure"],
     "source_reference": "Bates' Guide to Physical Examination",
     "text": "Which sound is most associated with semilunar valve closure?",
-    "options": [
-      "S1",
-      "S2",
-      "S3",
-      "S4"
-    ],
+    "options": ["S1", "S2", "S3", "S4"],
     "correctAnswer": "S2",
-    "abcd": [
-      "A. S1",
-      "B. S2",
-      "C. S3",
-      "D. S4"
-    ]
+    "abcd": ["A. S1", "B. S2", "C. S3", "D. S4"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_006",
@@ -222,14 +170,8 @@
     "topic": "Pulmonary Circulation",
     "category": "Heart Valves",
     "difficulty": "easy",
-    "tags": [
-      "pulmonary valve",
-      "right ventricle"
-    ],
-    "keywords": [
-      "pulmonary trunk",
-      "valve flow"
-    ],
+    "tags": ["pulmonary valve", "right ventricle"],
+    "keywords": ["pulmonary trunk", "valve flow"],
     "source_reference": "Moore’s Clinically Oriented Anatomy",
     "text": "Where does the pulmonary valve direct blood?",
     "options": [
@@ -244,7 +186,10 @@
       "B. Into the left ventricle",
       "C. Into the pulmonary trunk",
       "D. Into the superior vena cava"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_007",
@@ -262,14 +207,8 @@
     "topic": "Cardiac Cycle",
     "category": "Valve Physiology",
     "difficulty": "intermediate",
-    "tags": [
-      "diastole",
-      "valve function"
-    ],
-    "keywords": [
-      "semilunar valves",
-      "cardiac cycle"
-    ],
+    "tags": ["diastole", "valve function"],
+    "keywords": ["semilunar valves", "cardiac cycle"],
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
     "text": "What happens to semilunar valves during ventricular diastole?",
     "options": [
@@ -284,17 +223,15 @@
       "B. They remain open",
       "C. They close to prevent backflow",
       "D. They contract with the myocardium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_008",
     "question": "Which clinical tool best evaluates semilunar valve function?",
-    "answers": [
-      "X-ray",
-      "ECG",
-      "Echocardiogram",
-      "Angiogram"
-    ],
+    "answers": ["X-ray", "ECG", "Echocardiogram", "Angiogram"],
     "correct": 2,
     "short_explanation": "Echocardiography is used to assess valve structure and function.",
     "long_explanation": "An echocardiogram provides real-time imaging of the heart's valves and chambers, useful in detecting stenosis or regurgitation.",
@@ -302,30 +239,16 @@
     "topic": "Cardiovascular Assessment",
     "category": "Diagnostics",
     "difficulty": "intermediate",
-    "tags": [
-      "diagnosis",
-      "echo",
-      "valves"
-    ],
-    "keywords": [
-      "echocardiogram",
-      "valve imaging"
-    ],
+    "tags": ["diagnosis", "echo", "valves"],
+    "keywords": ["echocardiogram", "valve imaging"],
     "source_reference": "ASE Echocardiography Guidelines",
     "text": "Which clinical tool best evaluates semilunar valve function?",
-    "options": [
-      "X-ray",
-      "ECG",
-      "Echocardiogram",
-      "Angiogram"
-    ],
+    "options": ["X-ray", "ECG", "Echocardiogram", "Angiogram"],
     "correctAnswer": "Echocardiogram",
-    "abcd": [
-      "A. X-ray",
-      "B. ECG",
-      "C. Echocardiogram",
-      "D. Angiogram"
-    ]
+    "abcd": ["A. X-ray", "B. ECG", "C. Echocardiogram", "D. Angiogram"],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_009",
@@ -343,14 +266,8 @@
     "topic": "Cardiovascular Disease",
     "category": "Valve Pathology",
     "difficulty": "intermediate",
-    "tags": [
-      "stenosis",
-      "valve narrowing"
-    ],
-    "keywords": [
-      "semilunar stenosis",
-      "cardiac strain"
-    ],
+    "tags": ["stenosis", "valve narrowing"],
+    "keywords": ["semilunar stenosis", "cardiac strain"],
     "source_reference": "Lilly's Pathophysiology of Heart Disease",
     "text": "What effect does semilunar valve stenosis have on the heart?",
     "options": [
@@ -365,7 +282,10 @@
       "B. Reduces stroke volume",
       "C. Increases venous return",
       "D. Enhances valve flexibility"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   },
   {
     "id": "semilunar_valves_010",
@@ -383,15 +303,8 @@
     "topic": "Heart Anatomy",
     "category": "Chamber-Flow Relationships",
     "difficulty": "easy",
-    "tags": [
-      "aortic valve",
-      "left ventricle"
-    ],
-    "keywords": [
-      "left heart",
-      "systemic circulation",
-      "semilunar"
-    ],
+    "tags": ["aortic valve", "left ventricle"],
+    "keywords": ["left heart", "systemic circulation", "semilunar"],
     "source_reference": "Gray’s Anatomy",
     "text": "Which ventricle is connected to the aortic semilunar valve?",
     "options": [
@@ -406,6 +319,9 @@
       "B. Left ventricle",
       "C. Right atrium",
       "D. Left atrium"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs/heart",
+    "filename": "semilunar_valves.json"
   }
 ]

@@ -15,16 +15,8 @@
     "topic": "thymus",
     "category": "Immune Development",
     "difficulty": "basic",
-    "tags": [
-      "T cells",
-      "thymus function",
-      "immune development"
-    ],
-    "keywords": [
-      "T lymphocyte maturation",
-      "immune system",
-      "thymopoiesis"
-    ],
+    "tags": ["T cells", "thymus function", "immune development"],
+    "keywords": ["T lymphocyte maturation", "immune system", "thymopoiesis"],
     "source_reference": "Janeway's Immunobiology",
     "stats": {
       "correct": 0,
@@ -44,7 +36,10 @@
       "B. Mature T lymphocytes",
       "C. Store antibodies",
       "D. Filter blood"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_002",
@@ -62,16 +57,8 @@
     "topic": "thymus",
     "category": "Anatomy",
     "difficulty": "basic",
-    "tags": [
-      "mediastinum",
-      "sternum",
-      "gland location"
-    ],
-    "keywords": [
-      "thymus location",
-      "sternum",
-      "anterior mediastinum"
-    ],
+    "tags": ["mediastinum", "sternum", "gland location"],
+    "keywords": ["thymus location", "sternum", "anterior mediastinum"],
     "source_reference": "Netter’s Atlas of Human Anatomy",
     "stats": {
       "correct": 0,
@@ -91,17 +78,15 @@
       "B. In the neck near the thyroid",
       "C. Behind the sternum in the mediastinum",
       "D. Below the liver"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_003",
     "question": "Which hormone is primarily secreted by the thymus to support T cell development?",
-    "answers": [
-      "Insulin",
-      "Thymosin",
-      "Cortisol",
-      "Melatonin"
-    ],
+    "answers": ["Insulin", "Thymosin", "Cortisol", "Melatonin"],
     "correct": 1,
     "short_explanation": "Thymosin is the key hormone that supports T cell maturation.",
     "long_explanation": "Thymosin helps stimulate immature T cells to develop into functional immune cells. It plays a central role in immune competence.",
@@ -109,16 +94,8 @@
     "topic": "thymus",
     "category": "Endocrine-Immune",
     "difficulty": "intermediate",
-    "tags": [
-      "thymosin",
-      "T cell maturation",
-      "hormone"
-    ],
-    "keywords": [
-      "thymic hormones",
-      "immune modulation",
-      "T lymphocyte"
-    ],
+    "tags": ["thymosin", "T cell maturation", "hormone"],
+    "keywords": ["thymic hormones", "immune modulation", "T lymphocyte"],
     "source_reference": "Endocrinology by Hadley",
     "stats": {
       "correct": 0,
@@ -126,19 +103,12 @@
       "attempts": 0
     },
     "text": "Which hormone is primarily secreted by the thymus to support T cell development?",
-    "options": [
-      "Insulin",
-      "Thymosin",
-      "Cortisol",
-      "Melatonin"
-    ],
+    "options": ["Insulin", "Thymosin", "Cortisol", "Melatonin"],
     "correctAnswer": "Thymosin",
-    "abcd": [
-      "A. Insulin",
-      "B. Thymosin",
-      "C. Cortisol",
-      "D. Melatonin"
-    ]
+    "abcd": ["A. Insulin", "B. Thymosin", "C. Cortisol", "D. Melatonin"],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_004",
@@ -156,16 +126,8 @@
     "topic": "thymus",
     "category": "Aging & Immunity",
     "difficulty": "intermediate",
-    "tags": [
-      "thymic involution",
-      "aging immune system",
-      "fatty replacement"
-    ],
-    "keywords": [
-      "thymus shrinkage",
-      "immune aging",
-      "fatty infiltration"
-    ],
+    "tags": ["thymic involution", "aging immune system", "fatty replacement"],
+    "keywords": ["thymus shrinkage", "immune aging", "fatty infiltration"],
     "source_reference": "Robbins Pathologic Basis of Disease",
     "stats": {
       "correct": 0,
@@ -185,7 +147,10 @@
       "B. It calcifies",
       "C. It atrophies and becomes fatty",
       "D. It becomes part of the thyroid"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_005",
@@ -203,11 +168,7 @@
     "topic": "thymus",
     "category": "Genetic Disorders",
     "difficulty": "advanced",
-    "tags": [
-      "DiGeorge",
-      "thymus deficiency",
-      "T cell immunodeficiency"
-    ],
+    "tags": ["DiGeorge", "thymus deficiency", "T cell immunodeficiency"],
     "keywords": [
       "22q11 deletion",
       "congenital immunity",
@@ -232,7 +193,10 @@
       "B. DiGeorge syndrome",
       "C. Cushing's syndrome",
       "D. Multiple sclerosis"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_006",
@@ -250,11 +214,7 @@
     "topic": "thymus",
     "category": "Immunology",
     "difficulty": "advanced",
-    "tags": [
-      "T cell selection",
-      "autoimmunity",
-      "central tolerance"
-    ],
+    "tags": ["T cell selection", "autoimmunity", "central tolerance"],
     "keywords": [
       "positive selection",
       "negative selection",
@@ -279,7 +239,10 @@
       "B. Macrophage activation",
       "C. T cell positive and negative selection",
       "D. Erythrocyte maturation"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_007",
@@ -297,16 +260,8 @@
     "topic": "thymus",
     "category": "Histology",
     "difficulty": "advanced",
-    "tags": [
-      "Hassall’s corpuscles",
-      "thymus histology",
-      "medulla"
-    ],
-    "keywords": [
-      "thymic histology",
-      "epithelial cells",
-      "immune tissue"
-    ],
+    "tags": ["Hassall’s corpuscles", "thymus histology", "medulla"],
+    "keywords": ["thymic histology", "epithelial cells", "immune tissue"],
     "source_reference": "Histology: A Text and Atlas",
     "stats": {
       "correct": 0,
@@ -326,7 +281,10 @@
       "B. Thymic corpuscles (Hassall’s corpuscles)",
       "C. White pulp",
       "D. Peyer's patches"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_008",
@@ -344,16 +302,8 @@
     "topic": "thymus",
     "category": "Development",
     "difficulty": "basic",
-    "tags": [
-      "early immunity",
-      "pediatric thymus",
-      "neonatal immunity"
-    ],
-    "keywords": [
-      "fetal development",
-      "childhood immunity",
-      "early T cells"
-    ],
+    "tags": ["early immunity", "pediatric thymus", "neonatal immunity"],
+    "keywords": ["fetal development", "childhood immunity", "early T cells"],
     "source_reference": "Developmental Biology by Gilbert",
     "stats": {
       "correct": 0,
@@ -373,7 +323,10 @@
       "B. Teenage years",
       "C. Mid-adulthood",
       "D. Late adulthood"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_009",
@@ -391,11 +344,7 @@
     "topic": "thymus",
     "category": "Embryology",
     "difficulty": "advanced",
-    "tags": [
-      "pharyngeal pouch",
-      "thymus development",
-      "congenital disorders"
-    ],
+    "tags": ["pharyngeal pouch", "thymus development", "congenital disorders"],
     "keywords": [
       "branchial pouch",
       "embryologic derivation",
@@ -420,7 +369,10 @@
       "B. Second pharyngeal pouch",
       "C. Third pharyngeal pouch",
       "D. Mesodermal stem cells"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   },
   {
     "id": "Thymus_010",
@@ -438,16 +390,8 @@
     "topic": "thymus",
     "category": "Immunology",
     "difficulty": "intermediate",
-    "tags": [
-      "cell-mediated",
-      "T cells",
-      "thymus function"
-    ],
-    "keywords": [
-      "adaptive immunity",
-      "killer T cells",
-      "thymus-dependent"
-    ],
+    "tags": ["cell-mediated", "T cells", "thymus function"],
+    "keywords": ["adaptive immunity", "killer T cells", "thymus-dependent"],
     "source_reference": "Janeway's Immunobiology",
     "stats": {
       "correct": 0,
@@ -467,6 +411,9 @@
       "B. Humoral immunity",
       "C. Cell-mediated immunity",
       "D. Passive immunity"
-    ]
+    ],
+    "main_topic": "anatomy",
+    "subtopic": "organs",
+    "filename": "thymus.json"
   }
 ]

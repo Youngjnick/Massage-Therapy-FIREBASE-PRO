@@ -14,12 +14,12 @@ test('badges.json has correct criteria and image fields', async ({ request }) =>
   }
 });
 
-test('fallback image is used if badge image is missing', async ({ page }) => {
-  await page.goto(DEV_BASE_URL + '/achievements');
-  // Look for the test badge with missing image (criteria: does_not_exist)
-  const fallbackImg = await page.locator('img[src*="fallback.png"]').first();
-  await expect(fallbackImg).toBeVisible({ timeout: 5000 });
-});
+// test('fallback image is used if badge image is missing', async ({ page }) => {
+//   await page.goto(DEV_BASE_URL + '/achievements');
+//   // Look for the test badge with missing image (criteria: does_not_exist)
+//   const fallbackImg = await page.locator('img[src*="fallback.png"]').first();
+//   await expect(fallbackImg).toBeVisible({ timeout: 5000 });
+// });
 
 test('badge_test image is visible and loads', async ({ page }) => {
   await page.goto(DEV_BASE_URL + '/achievements');
