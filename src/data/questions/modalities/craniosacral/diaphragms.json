@@ -1,39 +1,34 @@
 [
   {
     "id": "diaphragms_001",
+    "correctAnswer": "Five",
     "question": "How many primary diaphragms are commonly addressed in craniosacral therapy?",
     "options": ["Two", "Three", "Four", "Five"],
-    "correctAnswer": "Five",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "CST often works with five diaphragms to promote full-body fascial balance.",
     "long_explanation": "The five primary diaphragms addressed in craniosacral therapy are the pelvic diaphragm, respiratory diaphragm, thoracic inlet, hyoid diaphragm, and tentorium cerebelli. Each one plays a key role in maintaining structural and fluidic continuity.",
     "clinical_application": "Releasing restrictions in these diaphragms helps improve cerebrospinal fluid flow and postural alignment.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": ["concept_balance", "modality_craniosacral_therapy", "bone_hyoid"],
     "keywords": [
       "concept_balance",
       "modality_craniosacral_therapy",
       "bone_hyoid"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_002",
+    "correctAnswer": "Tentorium cerebelli",
     "question": "Which diaphragm is located at the base of the skull?",
     "options": [
       "Thoracic inlet",
@@ -41,15 +36,20 @@
       "Respiratory diaphragm",
       "Hyoid diaphragm"
     ],
-    "correctAnswer": "Tentorium cerebelli",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The tentorium cerebelli is the cranial diaphragm at the base of the skull.",
     "long_explanation": "The tentorium cerebelli is a membrane that separates the cerebrum from the cerebellum. In CST, it is treated to influence cranial rhythm and relieve intracranial tension.",
     "clinical_application": "Useful for clients with migraines, TMJ issues, or head trauma.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "anatomy_membrane",
       "purpose_stress",
@@ -64,22 +64,11 @@
       "concept_tension",
       "bone_hyoid"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_003",
+    "correctAnswer": "Hyoid diaphragm",
     "question": "Which diaphragm supports vocal and swallowing function in CST?",
     "options": [
       "Pelvic diaphragm",
@@ -87,15 +76,20 @@
       "Hyoid diaphragm",
       "Respiratory diaphragm"
     ],
-    "correctAnswer": "Hyoid diaphragm",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The hyoid diaphragm supports the tongue, voice, and swallowing.",
     "long_explanation": "The hyoid diaphragm includes muscles and fascia surrounding the hyoid bone and plays a role in speech, swallowing, and upper cervical tension. It links the cranial and thoracic regions.",
     "clinical_application": "May relieve tension in clients with speech issues, jaw clenching, or upper neck strain.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "anatomy_fascia",
       "anatomy_muscles",
@@ -116,22 +110,11 @@
       "bone_hyoid",
       "organ_tongue"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_004",
+    "correctAnswer": "At the base of the neck and top of the thorax",
     "question": "What is the anatomical location of the thoracic inlet diaphragm?",
     "options": [
       "At the level of the hyoid bone",
@@ -139,15 +122,20 @@
       "Below the lungs",
       "Above the sacrum"
     ],
-    "correctAnswer": "At the base of the neck and top of the thorax",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The thoracic inlet is found where the neck meets the upper chest.",
     "long_explanation": "This region includes the clavicle, first rib, and upper thoracic fascia. In CST, restrictions here can impact breathing, lymphatic flow, and upper body tension.",
     "clinical_application": "Often released in clients with shoulder tension or postural compression.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "technique_compression",
       "anatomy_fascia",
@@ -174,22 +162,11 @@
       "bone_clavicle",
       "organ_lungs"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_005",
+    "correctAnswer": "Respiratory diaphragm",
     "question": "Which diaphragm plays a major role in both respiration and fascial movement?",
     "options": [
       "Pelvic diaphragm",
@@ -197,15 +174,20 @@
       "Tentorium cerebelli",
       "Hyoid diaphragm"
     ],
-    "correctAnswer": "Respiratory diaphragm",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The respiratory diaphragm is the key muscle of breathing and fascial rhythm.",
     "long_explanation": "This diaphragm separates the thoracic and abdominal cavities. Its movement helps influence craniosacral rhythm and supports global fascial mobility through breath.",
     "clinical_application": "Releasing this diaphragm can benefit clients with anxiety, shallow breathing, or core restrictions.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "modality_craniosacral",
       "anatomy_muscles",
@@ -224,22 +206,11 @@
       "concept_anxiety",
       "bone_hyoid"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_006",
+    "correctAnswer": "Pelvic diaphragm",
     "question": "Which diaphragm is closely associated with pelvic floor function?",
     "options": [
       "Respiratory diaphragm",
@@ -247,15 +218,20 @@
       "Tentorium cerebelli",
       "Thoracic inlet"
     ],
-    "correctAnswer": "Pelvic diaphragm",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The pelvic diaphragm supports bowel, bladder, and core function.",
     "long_explanation": "This diaphragm consists of the levator ani and coccygeus muscles. It’s vital for pelvic organ support, postural alignment, and links to the respiratory diaphragm above.",
     "clinical_application": "May benefit postpartum clients, or those with low back pain, pelvic instability, or pelvic trauma.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "anatomy_muscles",
       "anatomy_organs",
@@ -274,22 +250,11 @@
       "biology_organisms",
       "organ_bladder"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_007",
+    "correctAnswer": "Abdominal diaphragm",
     "question": "Which of the following is *not* considered one of the five craniosacral diaphragms?",
     "options": [
       "Tentorium cerebelli",
@@ -297,15 +262,20 @@
       "Abdominal diaphragm",
       "Hyoid diaphragm"
     ],
-    "correctAnswer": "Abdominal diaphragm",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The abdominal diaphragm is not one of the primary five in CST.",
     "long_explanation": "While the abdominal cavity is important, CST focuses on specific fascial partitions: pelvic, respiratory, thoracic inlet, hyoid, and tentorium cerebelli. The term ‘abdominal diaphragm’ is not part of this list.",
     "clinical_application": "Clarity in terminology helps prioritize manual therapy techniques correctly.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "modality_craniosacral",
       "exam_terminology",
@@ -318,22 +288,11 @@
       "concept_focuses",
       "bone_hyoid"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_008",
+    "correctAnswer": "To ensure fascial continuity and fluid flow",
     "question": "Why are craniosacral diaphragms treated sequentially?",
     "options": [
       "To align chakras",
@@ -341,15 +300,20 @@
       "To ensure fascial continuity and fluid flow",
       "To release muscle knots"
     ],
-    "correctAnswer": "To ensure fascial continuity and fluid flow",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "Diaphragms are released in sequence to support bodywide balance.",
     "long_explanation": "CST uses a bottom-to-top or top-to-bottom approach to restore balance through fascial chains and fluid rhythm. Sequencing respects the body's interconnected mechanics.",
     "clinical_application": "Ensures a structured release process and reduces compensatory strain.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "modality_craniosacral",
       "anatomy_muscles",
@@ -364,22 +328,11 @@
       "concept_balance",
       "concept_restoration"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_009",
+    "correctAnswer": "Sacral traction",
     "question": "Which technique may be used to assess or release the pelvic diaphragm?",
     "options": [
       "Occipital hold",
@@ -387,15 +340,20 @@
       "Clavicular compression",
       "Zygomatic arch release"
     ],
-    "correctAnswer": "Sacral traction",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "Sacral traction can help assess and release the pelvic diaphragm.",
     "long_explanation": "By gently tractioning the sacrum, therapists can detect fascial restriction patterns and influence pelvic diaphragm mobility. It's often combined with listening techniques.",
     "clinical_application": "Helpful in sacroiliac issues, pelvic tension, or birth recovery.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "technique_compression",
       "purpose_stress",
@@ -418,22 +376,11 @@
       "bone_zygomatic",
       "bone_sacrum"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   },
   {
     "id": "diaphragms_010",
+    "correctAnswer": "To balance core fascial planes and fluidic movement",
     "question": "What is the purpose of the ‘diaphragm release’ protocol in CST?",
     "options": [
       "To improve range of motion in limbs",
@@ -441,15 +388,20 @@
       "To balance core fascial planes and fluidic movement",
       "To reduce skin adhesions"
     ],
-    "correctAnswer": "To balance core fascial planes and fluidic movement",
-    "topics": ["Modalities"],
-    "subtopics": ["Craniosacral"],
-    "distractors": [],
+    "topics": ["modalities", "craniosacral", "diaphragms"],
     "short_explanation": "The protocol helps normalize pressure and movement across body diaphragms.",
     "long_explanation": "Diaphragm releases in CST address tension and asymmetry in major fascial planes. This supports rhythmic movement, internal organ function, and cerebrospinal fluid flow.",
     "clinical_application": "Frequently used with clients suffering from headaches, trauma, or breathing dysfunction.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/craniosacral/diaphragms.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.132Z",
+    "updated_at": "2025-05-24T14:54:13.479Z",
     "tags": [
       "anatomy_nerve",
       "technique_pressure",
@@ -480,18 +432,6 @@
       "nerve_vagus_nerve",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.132Z",
-    "updated_at": "2025-05-24T14:54:13.479Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/diaphragms",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/craniosacral/diaphragms.json",
-    "sourceFile": "diaphragms"
+    "synonyms": null
   }
 ]

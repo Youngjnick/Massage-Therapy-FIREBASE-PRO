@@ -1,6 +1,7 @@
 [
   {
     "id": "l2_nerve_innervations_001",
+    "correctAnswer": "Vastus lateralis",
     "question": "Which muscle receives significant motor input from the L2 spinal root via the femoral nerve?",
     "options": [
       "Gluteus maximus",
@@ -8,29 +9,32 @@
       "Soleus",
       "Semitendinosus"
     ],
-    "correctAnswer": "Vastus lateralis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "Vastus lateralis, part of the quadriceps group, is innervated by L2-L4.",
     "long_explanation": "The L2 spinal root contributes to the femoral nerve, which innervates the quadriceps femoris muscle group, including vastus lateralis. This group is responsible for knee extension.",
     "clinical_application": "Clients with L2 compression may exhibit weakness in the quadriceps, affecting stair climbing or rising from seated.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Motor Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "femoral_nerve", "quadriceps", "knee_extension"],
     "keywords": ["L2", "nerve", "motor", "femoral", "vastus lateralis"],
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_002",
+    "correctAnswer": "Anterior and upper medial thigh",
     "question": "What is the sensory distribution of the L2 dermatome?",
     "options": [
       "Posterior heel and sole",
@@ -38,29 +42,32 @@
       "Lateral leg and dorsum of foot",
       "Medial forearm"
     ],
-    "correctAnswer": "Anterior and upper medial thigh",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "The L2 dermatome supplies the upper anterior and medial thigh.",
     "long_explanation": "The L2 dermatome covers the anterior and upper medial thigh region, providing sensation through cutaneous branches of the femoral and lateral femoral cutaneous nerves.",
     "clinical_application": "Massage therapists may assess L2-related sensory changes in the upper thigh for radiculopathy or nerve impingement.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Dermatome",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "dermatome", "sensory", "thigh"],
     "keywords": ["L2 dermatome", "sensory", "femoral nerve", "anterior thigh"],
-    "source_reference": "Netter’s Atlas of Human Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_003",
+    "correctAnswer": "Hip flexion",
     "question": "Which movement is primarily associated with L2 spinal nerve function?",
     "options": [
       "Hip flexion",
@@ -68,29 +75,32 @@
       "Ankle plantarflexion",
       "Shoulder abduction"
     ],
-    "correctAnswer": "Hip flexion",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "L2 contributes to hip flexion via iliopsoas activation.",
     "long_explanation": "The L2 spinal nerve supplies the iliopsoas muscle through lumbar plexus branches. This muscle is vital for hip flexion during walking and climbing stairs.",
     "clinical_application": "Clients with difficulty lifting the knee may have L2-related nerve involvement.",
+    "source_reference": "Kendall’s Muscles Testing and Function",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Motor Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "iliopsoas", "hip_flexion", "nerve_root"],
     "keywords": ["L2", "hip flexion", "iliopsoas", "nerve", "motor"],
-    "source_reference": "Kendall’s Muscles Testing and Function",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_004",
+    "correctAnswer": "Obturator nerve",
     "question": "Which nerve carries L2 fibers and innervates the medial thigh adductor muscles?",
     "options": [
       "Obturator nerve",
@@ -98,29 +108,32 @@
       "Sciatic nerve",
       "Saphenous nerve"
     ],
-    "correctAnswer": "Obturator nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "The obturator nerve, composed of L2-L4, innervates thigh adductors.",
     "long_explanation": "The obturator nerve arises from the lumbar plexus (L2–L4) and innervates muscles such as the adductor longus, brevis, and magnus. It also carries sensory fibers to the medial thigh.",
     "clinical_application": "Adductor weakness may indicate L2 or obturator nerve dysfunction.",
+    "source_reference": "Gray’s Anatomy for Students",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Pathways",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "obturator_nerve", "adductors", "medial_thigh"],
     "keywords": ["L2", "obturator", "thigh", "nerve", "motor"],
-    "source_reference": "Gray’s Anatomy for Students",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_005",
+    "correctAnswer": "Patellar tendon reflex",
     "question": "Which reflex test may show subtle involvement of L2 fibers?",
     "options": [
       "Patellar tendon reflex",
@@ -128,29 +141,32 @@
       "Plantar Babinski reflex",
       "Triceps reflex"
     ],
-    "correctAnswer": "Patellar tendon reflex",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "The patellar reflex involves L2–L4 nerve roots.",
     "long_explanation": "Though L4 is most directly involved in the patellar tendon reflex, L2 and L3 also contribute via the femoral nerve. Weak or absent response may reflect early L2 involvement.",
     "clinical_application": "Use reflex testing to assess lower limb root involvement in clients with back or thigh pain.",
+    "source_reference": "Orthopedic Physical Assessment",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Reflexes",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "reflex", "patellar", "neurology"],
     "keywords": ["L2", "reflex", "femoral", "patellar tendon", "testing"],
-    "source_reference": "Orthopedic Physical Assessment",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_006",
+    "correctAnswer": "Lateral femoral cutaneous nerve",
     "question": "Which cutaneous nerve branch is derived from L2 and provides sensation to the lateral thigh?",
     "options": [
       "Sural nerve",
@@ -158,14 +174,25 @@
       "Tibial nerve",
       "Obturator nerve"
     ],
-    "correctAnswer": "Lateral femoral cutaneous nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "The lateral femoral cutaneous nerve arises from L2-L3 and supplies the lateral thigh.",
     "long_explanation": "L2 fibers contribute to the lateral femoral cutaneous nerve, which exits near the ASIS and provides sensory innervation to the anterolateral thigh.",
     "clinical_application": "Compression of this nerve near the ASIS can cause meralgia paresthetica, a sensory neuropathy linked to L2 dysfunction.",
+    "source_reference": "Netter's Clinical Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Sensory Distribution",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "cutaneous", "lateral_thigh", "nerve", "sensory"],
     "keywords": [
       "lateral femoral cutaneous",
@@ -173,19 +200,11 @@
       "L2",
       "sensory neuropathy"
     ],
-    "source_reference": "Netter's Clinical Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_007",
+    "correctAnswer": "Lumbar plexus",
     "question": "L2 contributes to which plexus?",
     "options": [
       "Brachial plexus",
@@ -193,29 +212,32 @@
       "Lumbar plexus",
       "Sacral plexus"
     ],
-    "correctAnswer": "Lumbar plexus",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "L2 is a key contributor to the lumbar plexus.",
     "long_explanation": "The lumbar plexus is formed by the ventral rami of L1–L4, and L2 plays a significant role in forming the femoral and obturator nerves.",
     "clinical_application": "Understanding the lumbar plexus is critical when assessing lower limb nerve injuries stemming from L2 roots.",
+    "source_reference": "Clinically Oriented Anatomy by Moore",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Plexus Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "lumbar_plexus", "nerve_formation"],
     "keywords": ["L2", "lumbar plexus", "femoral", "obturator", "nerve origin"],
-    "source_reference": "Clinically Oriented Anatomy by Moore",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_008",
+    "correctAnswer": "Iliacus",
     "question": "Which L2-innervated muscle helps stabilize the lumbar spine and pelvis?",
     "options": [
       "Gluteus minimus",
@@ -223,14 +245,25 @@
       "Rectus femoris",
       "Tensor fasciae latae"
     ],
-    "correctAnswer": "Iliacus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "The iliacus, innervated partly by L2, stabilizes the pelvis and assists with hip flexion.",
     "long_explanation": "The iliacus is innervated by the femoral nerve, receiving fibers from L2–L3. It acts with the psoas major to flex the hip and stabilize lumbar posture.",
     "clinical_application": "Postural dysfunction or anterior pelvic tilt may relate to iliacus or L2 involvement.",
+    "source_reference": "Kinesiology of the Musculoskeletal System",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Postural Stability",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "iliacus", "lumbar_stability", "hip_flexors"],
     "keywords": [
       "L2",
@@ -239,19 +272,11 @@
       "pelvic tilt",
       "femoral nerve"
     ],
-    "source_reference": "Kinesiology of the Musculoskeletal System",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_009",
+    "correctAnswer": "Raising the knee toward the chest",
     "question": "L2 motor deficits may present as difficulty performing which action?",
     "options": [
       "Dorsiflexing the foot",
@@ -259,29 +284,32 @@
       "Raising the knee toward the chest",
       "Spreading the toes apart"
     ],
-    "correctAnswer": "Raising the knee toward the chest",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "L2 controls hip flexion needed to raise the knee.",
     "long_explanation": "Hip flexion is impaired with L2 damage, particularly due to its innervation of the iliopsoas. Clients may drag the foot or have trouble initiating step motion.",
     "clinical_application": "Observe gait for signs of hip flexor weakness during client intake assessments.",
+    "source_reference": "Orthopedic Physical Assessment",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Gait & Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["L2", "hip_flexion", "gait", "motor_deficit"],
     "keywords": ["L2", "gait", "hip flexors", "knee raise", "nerve damage"],
-    "source_reference": "Orthopedic Physical Assessment",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "l2_nerve_innervations_010",
+    "correctAnswer": "Deep stripping of quadriceps",
     "question": "Which massage technique may be contraindicated in clients with acute L2 nerve root compression?",
     "options": [
       "Effleurage of upper back",
@@ -289,14 +317,25 @@
       "Deep stripping of quadriceps",
       "Swedish massage to arms"
     ],
-    "correctAnswer": "Deep stripping of quadriceps",
-    "topics": ["Anatomy", "Massage_techniques"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "l2_nerve_innervations"
+    ],
     "short_explanation": "Deep stripping of L2-innervated quadriceps may aggravate symptoms.",
     "long_explanation": "In acute nerve root compression, overly aggressive techniques targeting involved muscles like the quadriceps (L2–L4) may worsen irritation. Gentle techniques or indirect work may be safer.",
     "clinical_application": "Screen for nerve pain or loss of function before performing deep tissue on L2-affected areas.",
+    "source_reference": "Massage Therapy Principles and Practice",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Contraindications",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "L2",
       "contraindications",
@@ -310,15 +349,6 @@
       "contraindicated techniques",
       "nerve compression"
     ],
-    "source_reference": "Massage Therapy Principles and Practice",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "L2 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/l2_nerve_innervations.json",
-    "sourceFile": "l2_nerve_innervations"
+    "synonyms": null
   }
 ]

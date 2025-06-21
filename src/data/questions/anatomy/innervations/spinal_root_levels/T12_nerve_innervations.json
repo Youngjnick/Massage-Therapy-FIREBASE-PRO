@@ -1,6 +1,7 @@
 [
   {
     "id": "t12_nerve_innervations_001",
+    "correctAnswer": "Subcostal nerve",
     "question": "Which nerve arises from the T12 spinal root and contributes to abdominal wall innervation?",
     "options": [
       "Iliohypogastric nerve",
@@ -8,29 +9,32 @@
       "Genitofemoral nerve",
       "Obturator nerve"
     ],
-    "correctAnswer": "Subcostal nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "The subcostal nerve originates from T12 and innervates parts of the abdominal wall.",
     "long_explanation": "The subcostal nerve, the anterior ramus of T12, supplies the transversus abdominis and external/internal oblique muscles. It also provides cutaneous innervation to the lower anterior abdominal wall and lateral hip.",
     "clinical_application": "Injury or entrapment of the T12 subcostal nerve may lead to abdominal wall weakness and flank pain.",
+    "source_reference": "Gray’s Anatomy for Students",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Motor Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "subcostal nerve", "abdominal wall", "motor"],
     "keywords": ["T12", "subcostal", "abdominal innervation", "nerve"],
-    "source_reference": "Gray’s Anatomy for Students",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_002",
+    "correctAnswer": "It exits below the 12th rib and has a lumbar contribution",
     "question": "What is a unique feature of the subcostal nerve compared to other thoracic nerves?",
     "options": [
       "It is part of the brachial plexus",
@@ -38,29 +42,32 @@
       "It exits below the 12th rib and has a lumbar contribution",
       "It only carries motor fibers"
     ],
-    "correctAnswer": "It exits below the 12th rib and has a lumbar contribution",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "The subcostal nerve exits below the 12th rib and shares overlap with the lumbar plexus.",
     "long_explanation": "Unlike other thoracic spinal nerves, the T12 nerve (subcostal) exits below the 12th rib and can contribute to the lumbar plexus, affecting abdominal and hip innervation.",
     "clinical_application": "Understanding its dual role aids diagnosis of lower thoracoabdominal and hip dysfunction.",
+    "source_reference": "Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Nerve Course",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "subcostal", "thoracolumbar", "nerve"],
     "keywords": ["T12", "subcostal nerve", "thoracic nerve", "lumbar plexus"],
-    "source_reference": "Clinically Oriented Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_003",
+    "correctAnswer": "Lower anterior abdominal wall",
     "question": "The subcostal nerve provides cutaneous innervation to which region?",
     "options": [
       "Medial thigh",
@@ -68,29 +75,32 @@
       "Lower anterior abdominal wall",
       "Upper back"
     ],
-    "correctAnswer": "Lower anterior abdominal wall",
-    "topics": ["Anatomy", "Sensory"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "T12 (subcostal) provides sensation to the lower anterior abdominal wall.",
     "long_explanation": "The subcostal nerve innervates the skin over the lower part of the anterior abdominal wall and lateral hip, playing a sensory role in addition to motor supply to abdominal muscles.",
     "clinical_application": "T12 nerve injury may result in sensory loss or tingling in the suprapubic and hip regions.",
+    "source_reference": "Dermatomes and Cutaneous Nerves Atlas",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Dermatomes",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "cutaneous", "abdominal wall", "sensory"],
     "keywords": ["subcostal nerve", "T12 dermatome", "abdominal sensation"],
-    "source_reference": "Dermatomes and Cutaneous Nerves Atlas",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_004",
+    "correctAnswer": "Rectus femoris",
     "question": "Which of the following muscles is NOT innervated by the T12 spinal root?",
     "options": [
       "Transversus abdominis",
@@ -98,29 +108,32 @@
       "Rectus femoris",
       "External oblique"
     ],
-    "correctAnswer": "Rectus femoris",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "Rectus femoris is innervated by the femoral nerve, not T12.",
     "long_explanation": "T12 innervates abdominal muscles like transversus abdominis and the obliques through the subcostal nerve. Rectus femoris is supplied by the femoral nerve (L2-L4).",
     "clinical_application": "Understanding distinct innervations helps differentiate lumbar vs thoracic spinal issues.",
+    "source_reference": "Muscles: Testing and Function",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Motor Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "muscle innervation", "femoral nerve", "abdominal wall"],
     "keywords": ["T12 motor", "rectus femoris", "abdominal muscles"],
-    "source_reference": "Muscles: Testing and Function",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_005",
+    "correctAnswer": "Superficial abdominal reflex",
     "question": "Which reflex could be diminished with a lesion at T12?",
     "options": [
       "Cremasteric reflex",
@@ -128,54 +141,60 @@
       "Superficial abdominal reflex",
       "Achilles reflex"
     ],
-    "correctAnswer": "Superficial abdominal reflex",
-    "topics": ["Anatomy", "Neurology"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "The superficial abdominal reflex involves T7–T12 segments.",
     "long_explanation": "This reflex tests the integrity of thoracoabdominal segments, including T12. Damage here may result in asymmetry or loss of the reflex, indicating neurological impairment.",
     "clinical_application": "A weak or absent abdominal reflex may be an early indicator of lower thoracic or upper lumbar nerve pathology.",
+    "source_reference": "DeMyer’s Neurologic Examination",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Reflexes",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "abdominal reflex", "neurology", "reflex testing"],
     "keywords": ["superficial abdominal reflex", "T12 lesion", "reflex arc"],
-    "source_reference": "DeMyer’s Neurologic Examination",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_006",
+    "correctAnswer": "L1",
     "question": "T12 subcostal nerve shares a dermatome zone with which adjacent spinal segment?",
     "options": ["T11", "L1", "T10", "L3"],
-    "correctAnswer": "L1",
-    "topics": ["Anatomy", "Dermatomes"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "T12 and L1 dermatomes overlap in the groin and lower abdomen.",
     "long_explanation": "Dermatome regions can overlap. The T12 dermatome borders and may share innervation with L1, particularly in the groin and lower abdominal wall.",
     "clinical_application": "Differentiating T12 vs L1 pain patterns helps accurately localize spinal involvement in patients with groin or flank symptoms.",
+    "source_reference": "Netter’s Neurology Atlas",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Sensory Distribution",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "L1", "dermatome overlap", "sensory"],
     "keywords": ["T12 dermatome", "L1 dermatome", "nerve distribution"],
-    "source_reference": "Netter’s Neurology Atlas",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_007",
+    "correctAnswer": "External oblique fascia",
     "question": "Which structure is most likely compressed in a T12 subcostal nerve entrapment?",
     "options": [
       "Inguinal ligament",
@@ -183,29 +202,32 @@
       "Thoracolumbar fascia",
       "Femoral artery"
     ],
-    "correctAnswer": "External oblique fascia",
-    "topics": ["Anatomy", "Nerve pathology"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "Subcostal nerve entrapment often occurs at the external oblique fascia.",
     "long_explanation": "The subcostal nerve pierces and runs through layers of abdominal fascia. It is vulnerable to entrapment where it passes the external oblique aponeurosis, potentially causing pain or numbness.",
     "clinical_application": "Chronic flank pain unresponsive to musculoskeletal treatment may stem from subcostal nerve entrapment.",
+    "source_reference": "Clinical Neurology and Neurosurgery",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Entrapment Syndromes",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "subcostal nerve", "entrapment", "flank pain"],
     "keywords": ["nerve compression", "T12", "external oblique", "fascia"],
-    "source_reference": "Clinical Neurology and Neurosurgery",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_008",
+    "correctAnswer": "Trunk flexion and lateral bending",
     "question": "Which movement might be mildly impaired by T12 spinal root dysfunction?",
     "options": [
       "Knee extension",
@@ -213,29 +235,32 @@
       "Trunk flexion and lateral bending",
       "Ankle plantarflexion"
     ],
-    "correctAnswer": "Trunk flexion and lateral bending",
-    "topics": ["Anatomy", "Kinesiology"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "T12 helps power the abdominal muscles involved in trunk flexion and lateral bending.",
     "long_explanation": "The subcostal nerve provides motor input to the abdominal wall, which is essential in trunk control, balance, and lateral movement. T12 involvement may lead to reduced core stability.",
     "clinical_application": "Clients presenting with flank pain and imbalance may benefit from core strengthening and neural mobilization strategies.",
+    "source_reference": "Kinesiology of the Musculoskeletal System",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Motor Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "motor", "trunk flexion", "core"],
     "keywords": ["T12", "abdominal muscles", "trunk movement", "core strength"],
-    "source_reference": "Kinesiology of the Musculoskeletal System",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_009",
+    "correctAnswer": "Myofascial release to lateral abdominal wall",
     "question": "Which type of massage technique might help relieve pain from T12 nerve entrapment?",
     "options": [
       "Petrissage to the thigh",
@@ -243,29 +268,32 @@
       "Myofascial release to lateral abdominal wall",
       "Effleurage to the calf"
     ],
-    "correctAnswer": "Myofascial release to lateral abdominal wall",
-    "topics": ["Anatomy", "Clinical treatment"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "Releasing the fascia around the subcostal nerve’s path may reduce entrapment symptoms.",
     "long_explanation": "Gentle myofascial release techniques can reduce fascial compression around the subcostal nerve path near the obliques and flank. Reducing mechanical tension here may improve nerve mobility.",
     "clinical_application": "Therapists should identify tender zones along the T12 dermatome and apply nerve gliding and fascia release accordingly.",
+    "source_reference": "Massage Therapy Principles and Practice",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Manual Therapy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "subcostal", "myofascial", "massage"],
     "keywords": ["massage therapy", "nerve entrapment", "T12 relief"],
-    "source_reference": "Massage Therapy Principles and Practice",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t12_nerve_innervations_010",
+    "correctAnswer": "Mixed nerve",
     "question": "The subcostal nerve is classified as what type of spinal nerve?",
     "options": [
       "Purely motor",
@@ -273,25 +301,27 @@
       "Mixed nerve",
       "Autonomic only"
     ],
-    "correctAnswer": "Mixed nerve",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t12_nerve_innervations"
+    ],
     "short_explanation": "It is a mixed nerve carrying both motor and sensory fibers.",
     "long_explanation": "The subcostal nerve carries motor fibers to abdominal muscles and sensory fibers to the lower abdomen and lateral hip, qualifying it as a mixed spinal nerve.",
     "clinical_application": "Understanding mixed nerve function is crucial when diagnosing both motor and sensory symptoms in the same dermatome.",
+    "source_reference": "Fundamentals of Neuroscience",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Nerve Classification",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T12", "mixed nerve", "motor", "sensory"],
     "keywords": ["T12", "mixed", "subcostal nerve", "nerve type"],
-    "source_reference": "Fundamentals of Neuroscience",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T12 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t12_nerve_innervations.json",
-    "sourceFile": "t12_nerve_innervations"
+    "synonyms": null
   }
 ]

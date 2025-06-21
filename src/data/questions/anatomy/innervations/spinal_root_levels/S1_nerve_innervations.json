@@ -1,6 +1,7 @@
 [
   {
     "id": "s1_nerve_innervations_001",
+    "correctAnswer": "Gastrocnemius",
     "question": "Which muscle is primarily innervated by the S1 spinal root?",
     "options": [
       "Tibialis anterior",
@@ -8,14 +9,25 @@
       "Gastrocnemius",
       "Adductor longus"
     ],
-    "correctAnswer": "Gastrocnemius",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "The gastrocnemius receives primary innervation from the S1 spinal root.",
     "long_explanation": "The S1 spinal nerve innervates several muscles responsible for plantarflexion and hip extension. One of the most prominent is the gastrocnemius, a calf muscle involved in propulsion during walking and running.",
-    "applied_example": "Clients with S1 compression may present with weakness in push-off during gait. Massage to the calf and gluteal region can relieve compensatory tension.",
+    "clinical_application": "Clients with S1 compression may present with weakness in push-off during gait. Massage to the calf and gluteal region can relieve compensatory tension.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "nerve_innervation",
@@ -30,23 +42,32 @@
       "innervation",
       "plantarflexion"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_002",
+    "correctAnswer": "S1",
     "question": "What spinal root most often contributes to the innervation of the gluteus maximus?",
     "options": ["L3", "L5", "S1", "S3"],
-    "correctAnswer": "S1",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "S1 contributes significantly to gluteus maximus innervation.",
     "long_explanation": "The inferior gluteal nerve arises primarily from the L5–S2 roots, with S1 being a major contributor. This nerve controls the gluteus maximus, critical for powerful hip extension.",
-    "applied_example": "Therapists may observe decreased glute activation in clients with S1 impingement. Glute release techniques and SI joint mobilization may be beneficial.",
+    "clinical_application": "Therapists may observe decreased glute activation in clients with S1 impingement. Glute release techniques and SI joint mobilization may be beneficial.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "gluteus_maximus",
@@ -55,23 +76,32 @@
       "massage_functional"
     ],
     "keywords": ["S1", "gluteus maximus", "hip", "inferior gluteal nerve"],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_003",
+    "correctAnswer": "Plantarflexion",
     "question": "Which lower leg movement is most associated with S1 nerve root function?",
     "options": ["Dorsiflexion", "Plantarflexion", "Eversion", "Inversion"],
-    "correctAnswer": "Plantarflexion",
-    "topics": ["Anatomy", "Kinesiology"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "Plantarflexion involves several S1-innervated muscles.",
     "long_explanation": "The S1 spinal root innervates muscles such as the gastrocnemius, soleus, and peroneals that together contribute to plantarflexion of the ankle and propulsion during gait.",
-    "applied_example": "Plantarflexion weakness or cramps may indicate S1 irritation. Massage and nerve flossing can improve circulation and decrease symptoms.",
+    "clinical_application": "Plantarflexion weakness or cramps may indicate S1 irritation. Massage and nerve flossing can improve circulation and decrease symptoms.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Physiology",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "plantarflexion",
@@ -80,13 +110,11 @@
       "massage_assessment"
     ],
     "keywords": ["S1", "plantarflexion", "nerve function", "calf", "gait"],
-    "mblex_category": "Kinesiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_004",
+    "correctAnswer": "Sciatic nerve",
     "question": "Which of the following nerves receives major contribution from S1?",
     "options": [
       "Femoral nerve",
@@ -94,14 +122,25 @@
       "Sciatic nerve",
       "Phrenic nerve"
     ],
-    "correctAnswer": "Sciatic nerve",
-    "topics": ["Anatomy", "Nervous system"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "S1 is a key contributor to the sciatic nerve.",
     "long_explanation": "The sciatic nerve arises from spinal roots L4–S3, with S1 contributing significantly. It is the largest nerve in the body and innervates much of the posterior thigh, leg, and foot.",
-    "applied_example": "Clients with S1 nerve issues may report radiating sciatic pain. Deep tissue massage along the posterior chain can help decompress sciatic structures.",
+    "clinical_application": "Clients with S1 nerve issues may report radiating sciatic pain. Deep tissue massage along the posterior chain can help decompress sciatic structures.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "sciatic_nerve",
@@ -110,13 +149,11 @@
       "deep_tissue"
     ],
     "keywords": ["S1", "sciatic nerve", "sciatica", "Lumbosacral plexus"],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_005",
+    "correctAnswer": "Weak plantarflexion",
     "question": "Which symptom may suggest S1 nerve root irritation?",
     "options": [
       "Foot drop",
@@ -124,14 +161,25 @@
       "Weak plantarflexion",
       "Loss of quadriceps reflex"
     ],
-    "correctAnswer": "Weak plantarflexion",
-    "topics": ["Anatomy", "Clinical signs"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "S1 impingement often affects plantarflexion.",
     "long_explanation": "Plantarflexion weakness is a classic sign of S1 root involvement. This can present as trouble pushing off while walking, or calf muscle fatigue. Reflex testing may show a diminished Achilles reflex.",
-    "applied_example": "Massage therapists should assess calf and gluteal muscle tone and avoid direct pressure on the sacral plexus if nerve entrapment is suspected.",
+    "clinical_application": "Massage therapists should assess calf and gluteal muscle tone and avoid direct pressure on the sacral plexus if nerve entrapment is suspected.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Pathology",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "nerve_compression",
@@ -145,13 +193,11 @@
       "plantarflexion weakness",
       "neurological signs"
     ],
-    "mblex_category": "Pathology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_006",
+    "correctAnswer": "Achilles reflex",
     "question": "Which reflex is most associated with the S1 spinal nerve?",
     "options": [
       "Patellar reflex",
@@ -159,14 +205,25 @@
       "Achilles reflex",
       "Triceps reflex"
     ],
-    "correctAnswer": "Achilles reflex",
-    "topics": ["Anatomy", "Neurological assessment"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "The Achilles tendon reflex tests S1 root integrity.",
     "long_explanation": "The Achilles (ankle jerk) reflex evaluates the integrity of the S1 spinal nerve. A diminished response may indicate nerve root compression or radiculopathy.",
-    "applied_example": "Therapists may detect sluggish Achilles reflexes during passive footwork or stretching and adjust techniques to reduce nerve tension.",
+    "clinical_application": "Therapists may detect sluggish Achilles reflexes during passive footwork or stretching and adjust techniques to reduce nerve tension.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Assessment",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "achilles_reflex",
@@ -174,13 +231,11 @@
       "massage_neurological"
     ],
     "keywords": ["S1", "Achilles reflex", "reflex test", "nerve assessment"],
-    "mblex_category": "Assessment",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_007",
+    "correctAnswer": "Lateral foot and heel",
     "question": "Which dermatome area corresponds to the S1 spinal root?",
     "options": [
       "Anterior thigh",
@@ -188,14 +243,25 @@
       "Medial calf",
       "Dorsum of the foot"
     ],
-    "correctAnswer": "Lateral foot and heel",
-    "topics": ["Anatomy", "Dermatomes"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "S1 dermatome covers the lateral foot and heel.",
     "long_explanation": "Dermatomes are areas of skin supplied by sensory fibers from specific spinal nerves. S1 innervates the lateral foot, sole, and posterior leg. Numbness or tingling in this area can indicate S1 involvement.",
-    "applied_example": "Massage therapists can monitor for sensory complaints in the lateral foot when clients describe sciatic or piriformis pain patterns.",
+    "clinical_application": "Massage therapists can monitor for sensory complaints in the lateral foot when clients describe sciatic or piriformis pain patterns.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Neuroanatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "dermatome",
@@ -204,23 +270,32 @@
       "clinical_touch"
     ],
     "keywords": ["S1", "dermatome", "sensory", "lateral foot"],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_008",
+    "correctAnswer": "S1",
     "question": "The soleus muscle receives its motor supply primarily from which root?",
     "options": ["L4", "L5", "S1", "S2"],
-    "correctAnswer": "S1",
-    "topics": ["Anatomy", "Muscle innervation"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "S1 provides dominant innervation to the soleus.",
     "long_explanation": "The soleus, a key muscle for standing and walking, is innervated by the tibial branch of the sciatic nerve, which includes contributions from S1. It works with the gastrocnemius in plantarflexion.",
-    "applied_example": "A sluggish soleus can impact postural control. Massage can stimulate proprioceptors and aid clients with fatigue or chronic tension in the posterior leg.",
+    "clinical_application": "A sluggish soleus can impact postural control. Massage can stimulate proprioceptors and aid clients with fatigue or chronic tension in the posterior leg.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "soleus",
@@ -235,13 +310,11 @@
       "posterior chain",
       "muscle fatigue"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_009",
+    "correctAnswer": "Tibialis anterior",
     "question": "Which muscle is *not* primarily innervated by S1?",
     "options": [
       "Peroneus longus",
@@ -249,14 +322,25 @@
       "Tibialis anterior",
       "Soleus"
     ],
-    "correctAnswer": "Tibialis anterior",
-    "topics": ["Anatomy", "Differentiation"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "Tibialis anterior is innervated by L4–L5, not S1.",
     "long_explanation": "The tibialis anterior is a dorsiflexor innervated by the deep fibular nerve, primarily from L4–L5. This contrasts with the plantarflexor group and gluteals, which are largely S1-driven.",
-    "applied_example": "If a client has dorsiflexion weakness, it may indicate L4–L5 issues, while calf weakness more likely suggests S1 involvement.",
+    "clinical_application": "If a client has dorsiflexion weakness, it may indicate L4–L5 issues, while calf weakness more likely suggests S1 involvement.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "muscle_innervation",
@@ -264,23 +348,32 @@
       "nerve_levels"
     ],
     "keywords": ["S1", "L4", "tibialis anterior", "nerve root comparison"],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "s1_nerve_innervations_010",
+    "correctAnswer": "S1",
     "question": "Which sacral root contributes most to the posterior tibial nerve?",
     "options": ["S1", "S2", "L3", "T12"],
-    "correctAnswer": "S1",
-    "topics": ["Anatomy", "Peripheral nerves"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "s1_nerve_innervations"
+    ],
     "short_explanation": "S1 is the dominant contributor to the posterior tibial nerve.",
     "long_explanation": "The posterior tibial nerve is a continuation of the sciatic nerve and is heavily influenced by the S1 root. It innervates most of the posterior lower leg and foot intrinsic muscles.",
-    "applied_example": "Massage of the tarsal tunnel and calf may benefit clients with tibial nerve entrapment or referred pain related to S1 dysfunction.",
+    "clinical_application": "Massage of the tarsal tunnel and calf may benefit clients with tibial nerve entrapment or referred pain related to S1 dysfunction.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Neuroanatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "s1_root",
       "posterior_tibial_nerve",
@@ -293,9 +386,6 @@
       "nerve entrapment",
       "tarsal tunnel"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/s1_nerve_innervations.json",
-    "sourceFile": "s1_nerve_innervations"
+    "synonyms": null
   }
 ]

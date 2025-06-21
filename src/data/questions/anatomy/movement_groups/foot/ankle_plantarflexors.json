@@ -1,6 +1,7 @@
 [
   {
     "id": "ankle_plantarflexors_001",
+    "correctAnswer": "Gastrocnemius",
     "question": "Which muscle is the primary mover in ankle plantarflexion?",
     "options": [
       "Tibialis anterior",
@@ -8,18 +9,20 @@
       "Extensor hallucis longus",
       "Tibialis posterior"
     ],
-    "correctAnswer": "Gastrocnemius",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_plantarflexors"],
     "short_explanation": "The gastrocnemius is the main muscle responsible for plantarflexion of the ankle.",
     "long_explanation": "Originating from the femur and inserting on the calcaneus via the Achilles tendon, the gastrocnemius powerfully points the toes and aids in jumping or running.",
     "clinical_application": "Tightness or weakness may impair push-off and contribute to Achilles tendinopathy.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Plantarflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.080Z",
+    "updated_at": "2025-05-24T14:54:13.424Z",
     "tags": [
       "anatomy_muscles",
       "movement_plantarflexion",
@@ -44,25 +47,11 @@
       "muscle_extensor_hallucis_longus",
       "bone_femur"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.080Z",
-    "updated_at": "2025-05-24T14:54:13.424Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_plantarflexors",
-    "synonyms": ["main plantarflexor", "calf"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
-    "sourceFile": "ankle_plantarflexors"
+    "synonyms": ["main plantarflexor", "calf"]
   },
   {
     "id": "ankle_plantarflexors_002",
+    "correctAnswer": "Gastrocnemius",
     "question": "Which muscle assists plantarflexion and also crosses the knee joint?",
     "options": [
       "Soleus",
@@ -70,18 +59,20 @@
       "Gastrocnemius",
       "Tibialis posterior"
     ],
-    "correctAnswer": "Gastrocnemius",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_plantarflexors"],
     "short_explanation": "Gastrocnemius crosses both the knee and ankle joints.",
     "long_explanation": "This gives it a dual role: plantarflexing the ankle and assisting in knee flexion. It is most effective in plantarflexion when the knee is extended.",
     "clinical_application": "Useful to assess in clients with hamstring strain or calf tightness affecting knee function.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Plantarflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.080Z",
+    "updated_at": "2025-05-24T14:54:13.424Z",
     "tags": [
       "anatomy_joint",
       "anatomy_muscles",
@@ -110,25 +101,11 @@
       "muscle_flexor_hallucis_longus",
       "joint_joint"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.080Z",
-    "updated_at": "2025-05-24T14:54:13.424Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_plantarflexors",
-    "synonyms": ["calf muscle", "gastroc"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
-    "sourceFile": "ankle_plantarflexors"
+    "synonyms": ["calf muscle", "gastroc"]
   },
   {
     "id": "ankle_plantarflexors_003",
+    "correctAnswer": "Tibialis posterior",
     "question": "Which deep muscle contributes to plantarflexion and also inverts the foot?",
     "options": [
       "Peroneus longus",
@@ -136,18 +113,20 @@
       "Extensor digitorum longus",
       "Gastrocnemius"
     ],
-    "correctAnswer": "Tibialis posterior",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_plantarflexors"],
     "short_explanation": "Tibialis posterior supports the arch and plantarflexes the foot.",
     "long_explanation": "It runs deep in the posterior compartment, wrapping medially to insert on tarsal bones. It’s crucial in maintaining the medial arch and powering inversion.",
     "clinical_application": "Weakness contributes to flat feet and posterior tibial tendon dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Plantarflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.080Z",
+    "updated_at": "2025-05-24T14:54:13.424Z",
     "tags": [
       "anatomy_muscles",
       "anatomy_bones",
@@ -168,25 +147,11 @@
       "muscle_extensor_digitorum_longus",
       "bone_tarsals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.080Z",
-    "updated_at": "2025-05-24T14:54:13.424Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_plantarflexors",
-    "synonyms": ["TP", "deep flexor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
-    "sourceFile": "ankle_plantarflexors"
+    "synonyms": ["TP", "deep flexor"]
   },
   {
     "id": "ankle_plantarflexors_004",
+    "correctAnswer": "Tibialis anterior",
     "question": "Which of the following muscles does NOT contribute to plantarflexion?",
     "options": [
       "Soleus",
@@ -194,18 +159,20 @@
       "Tibialis anterior",
       "Plantaris"
     ],
-    "correctAnswer": "Tibialis anterior",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_plantarflexors"],
     "short_explanation": "Tibialis anterior dorsiflexes the ankle, not plantarflexes it.",
     "long_explanation": "Although located near the ankle, it acts in the opposite direction, lifting the foot rather than pointing it downward.",
     "clinical_application": "Differentiating dorsiflexors vs plantarflexors helps assess gait and foot drop.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Plantarflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.080Z",
+    "updated_at": "2025-05-24T14:54:13.424Z",
     "tags": [
       "anatomy_muscles",
       "exam_assessment",
@@ -224,25 +191,11 @@
       "muscle_tibialis_anterior",
       "muscle_flexor_digitorum_longus"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.080Z",
-    "updated_at": "2025-05-24T14:54:13.424Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_plantarflexors",
-    "synonyms": ["non-plantarflexor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
-    "sourceFile": "ankle_plantarflexors"
+    "synonyms": ["non-plantarflexor"]
   },
   {
     "id": "ankle_plantarflexors_005",
+    "correctAnswer": "Soleus",
     "question": "Which muscle is considered a strong postural stabilizer in standing plantarflexion?",
     "options": [
       "Gastrocnemius",
@@ -250,18 +203,20 @@
       "Flexor hallucis longus",
       "Peroneus brevis"
     ],
-    "correctAnswer": "Soleus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_plantarflexors"],
     "short_explanation": "Soleus is active during quiet standing to prevent the body from falling forward.",
     "long_explanation": "Unlike gastrocnemius, soleus does not cross the knee and is more active in slow, sustained plantarflexion like standing or walking.",
     "clinical_application": "Tightness can cause chronic calf tension and gait issues in older adults.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Plantarflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.080Z",
+    "updated_at": "2025-05-24T14:54:13.424Z",
     "tags": [
       "anatomy_muscles",
       "purpose_stress",
@@ -280,21 +235,6 @@
       "muscle_soleus",
       "muscle_flexor_hallucis_longus"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.080Z",
-    "updated_at": "2025-05-24T14:54:13.424Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_plantarflexors",
-    "synonyms": ["postural muscle", "soleus"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_plantarflexors.json",
-    "sourceFile": "ankle_plantarflexors"
+    "synonyms": ["postural muscle", "soleus"]
   }
 ]

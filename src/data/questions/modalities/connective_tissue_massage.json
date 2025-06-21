@@ -1,6 +1,7 @@
 [
   {
     "id": "connective_tissue_massage_001",
+    "correctAnswer": "To affect autonomic nervous system responses through dermatomes",
     "question": "What is the primary goal of connective tissue massage (CTM)?",
     "options": [
       "To apply deep pressure to muscle bellies",
@@ -8,14 +9,20 @@
       "To affect autonomic nervous system responses through dermatomes",
       "To stretch the tendons directly"
     ],
-    "correctAnswer": "To affect autonomic nervous system responses through dermatomes",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM targets skin and superficial fascia to affect the autonomic nervous system via dermatomes.",
     "long_explanation": "The primary goal of connective tissue massage is to influence visceral and systemic health by stimulating specific dermatomal regions. Rather than focusing on deep muscle, CTM works through skin traction and tension, affecting the sympathetic nervous system and related organ functions through shared spinal segments.",
+    "clinical_application": "For clients with digestive complaints, a therapist may perform CTM along dermatomes associated with the mid-thoracic spine to reflexively influence gut motility and relaxation.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_ctm",
@@ -52,23 +59,11 @@
       "concept_tension",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "For clients with digestive complaints, a therapist may perform CTM along dermatomes associated with the mid-thoracic spine to reflexively influence gut motility and relaxation.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_002",
+    "correctAnswer": "Elizabeth Dicke",
     "question": "Connective tissue massage was originally developed by:",
     "options": [
       "Ida Rolf",
@@ -76,14 +71,20 @@
       "Per Henrik Ling",
       "Janet Travell"
     ],
-    "correctAnswer": "Elizabeth Dicke",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "Elizabeth Dicke developed CTM in Germany in the 1920s following personal vascular illness.",
     "long_explanation": "Elizabeth Dicke is credited with developing CTM after self-applying traction to her skin to relieve chronic circulatory issues. She discovered reflexive changes in organ function and systemic relief, leading to a structured method now widely practiced in Europe.",
+    "clinical_application": "Understanding the history of CTM helps therapists appreciate its focus on neuromuscular and visceral reflex arcs rather than mechanical depth.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_rolfing",
@@ -114,23 +115,11 @@
       "concept_originated",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "Understanding the history of CTM helps therapists appreciate its focus on neuromuscular and visceral reflex arcs rather than mechanical depth.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_003",
+    "correctAnswer": "Subcutaneous fascia",
     "question": "Which layer of the body does connective tissue massage primarily target?",
     "options": [
       "Epidermis",
@@ -138,14 +127,20 @@
       "Subcutaneous fascia",
       "Muscle fibers"
     ],
-    "correctAnswer": "Subcutaneous fascia",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM primarily targets the subcutaneous fascia, just beneath the skin.",
     "long_explanation": "The subcutaneous fascia is a layer of connective tissue located between the skin and underlying muscles. CTM uses specific pulls and stretches to engage this layer and affect autonomic responses. The goal is not muscular manipulation, but rather fascial mobilization with reflex effects.",
+    "clinical_application": "Massage therapists using CTM focus on shallow traction across the skin rather than deep strokes, aiming to release fascial adhesions and influence nervous system tone.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_ctm",
@@ -166,23 +161,11 @@
       "concept_targeted",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "Massage therapists using CTM focus on shallow traction across the skin rather than deep strokes, aiming to release fascial adhesions and influence nervous system tone.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_004",
+    "correctAnswer": "Short, pulling strokes that create tension in the skin",
     "question": "What is a hallmark technique of connective tissue massage?",
     "options": [
       "Gentle rocking and jostling",
@@ -190,14 +173,20 @@
       "Short, pulling strokes that create tension in the skin",
       "Rhythmic tapping over meridians"
     ],
-    "correctAnswer": "Short, pulling strokes that create tension in the skin",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM uses short, pulling strokes that create tension in the skin and fascia.",
     "long_explanation": "A hallmark of CTM is the use of deliberate, shallow pulls on the skin in specific directions aligned with dermatomes. This technique produces a sensory input that reflexively alters organ tone, vascular tone, or sympathetic activity.",
+    "clinical_application": "In CTM, a therapist might use pulling strokes along the lower back to influence pelvic or bladder reflexes in clients with urinary tension or low back dysfunction.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_ctm",
@@ -230,23 +219,11 @@
       "concept_tension",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "In CTM, a therapist might use pulling strokes along the lower back to influence pelvic or bladder reflexes in clients with urinary tension or low back dysfunction.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_005",
+    "correctAnswer": "Visceral dysfunctions and organ referral patterns",
     "question": "Connective tissue massage is commonly used in Europe to address:",
     "options": [
       "Cardiac arrhythmias",
@@ -254,14 +231,20 @@
       "Broken bones",
       "Acute skin infections"
     ],
-    "correctAnswer": "Visceral dysfunctions and organ referral patterns",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM is widely used in Europe for visceral and autonomic dysfunctions.",
     "long_explanation": "In European practice, CTM is used to influence internal organ function, especially in cases of irritable bowel, menstrual cramps, or stress-related hypertension. By working dermatomally, therapists stimulate reflex zones that correspond to internal organ innervation.",
+    "clinical_application": "Clients with tension linked to digestive discomfort may benefit from CTM along thoracic and lumbar dermatomes related to the small and large intestines.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_ctm",
@@ -288,23 +271,11 @@
       "anatomy_zones",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "Clients with tension linked to digestive discomfort may benefit from CTM along thoracic and lumbar dermatomes related to the small and large intestines.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_006",
+    "correctAnswer": "Reflexive stimulation through shared spinal segments",
     "question": "Which of the following best describes the mechanism behind CTM’s effect on internal organs?",
     "options": [
       "Stimulation of lymph nodes",
@@ -312,14 +283,20 @@
       "Reflexive stimulation through shared spinal segments",
       "Increased muscle strength"
     ],
-    "correctAnswer": "Reflexive stimulation through shared spinal segments",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM affects internal organs via spinal reflexes in shared dermatomal segments.",
     "long_explanation": "CTM relies on the principle that skin and organs sharing the same spinal segments can reflexively affect one another. By stimulating dermatomal skin zones, therapists may influence underlying visceral function without direct internal contact.",
+    "clinical_application": "CTM over the T4-T6 dermatomes might be used to regulate tension linked to respiratory or cardiac dysfunction, offering an indirect approach to systemic balance.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -338,23 +315,11 @@
       "anatomy_zones",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "CTM over the T4-T6 dermatomes might be used to regulate tension linked to respiratory or cardiac dysfunction, offering an indirect approach to systemic balance.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_007",
+    "correctAnswer": "Dermatomes",
     "question": "In connective tissue massage, lines of pull are often determined by:",
     "options": [
       "Trigger points",
@@ -362,14 +327,20 @@
       "Dermatomes",
       "Joint alignment"
     ],
-    "correctAnswer": "Dermatomes",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM uses dermatome patterns to determine treatment zones.",
     "long_explanation": "Lines of pull in CTM are aligned with dermatomes-skin areas innervated by a single spinal nerve. These patterns are mapped and selected based on the client's symptoms and targeted autonomic or visceral regions.",
+    "clinical_application": "If a client experiences pelvic organ tension, a therapist may apply CTM to sacral dermatomes S2-S4 to reflexively affect those organs.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_ctm",
@@ -396,23 +367,11 @@
       "joint_joint",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "If a client experiences pelvic organ tension, a therapist may apply CTM to sacral dermatomes S2-S4 to reflexively affect those organs.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_008",
+    "correctAnswer": "Burning or stinging as adhesions release",
     "question": "What sensation is commonly reported by clients during connective tissue massage?",
     "options": [
       "Numbness",
@@ -420,14 +379,20 @@
       "Burning or stinging as adhesions release",
       "Cold chills"
     ],
-    "correctAnswer": "Burning or stinging as adhesions release",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "Clients often report a burning or stinging sensation during CTM as fascial adhesions are released.",
     "long_explanation": "The pulling techniques used in CTM can produce burning, stinging, or prickling sensations-especially in areas with dense or adhered fascia. These sensations are expected and reflect the neurological stimulation of the skin and underlying fascia.",
+    "clinical_application": "A therapist should inform clients about these sensations ahead of time to reduce anxiety and encourage breathing through the discomfort as adhesions are gently addressed.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_ctm",
@@ -446,23 +411,11 @@
       "client_sensation",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "A therapist should inform clients about these sensations ahead of time to reduce anxiety and encourage breathing through the discomfort as adhesions are gently addressed.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_009",
+    "correctAnswer": "All of the above",
     "question": "Which condition may benefit from CTM's effects on autonomic balance?",
     "options": [
       "High blood pressure",
@@ -470,14 +423,20 @@
       "Liver disease",
       "All of the above"
     ],
-    "correctAnswer": "All of the above",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM may benefit high blood pressure, asthma, and liver function via autonomic modulation.",
     "long_explanation": "By influencing the sympathetic and parasympathetic balance, CTM can support conditions linked to dysautonomia. It's been used in Europe to complement medical treatment of conditions like hypertension, bronchial asthma, and liver dysfunction-especially when emotional tension plays a role.",
+    "clinical_application": "Therapists using CTM for asthma may target dermatomes related to lung function, such as T2-T5, to help regulate respiratory tone and reduce stress-induced flare-ups.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "technique_pressure",
       "purpose_stress",
@@ -494,23 +453,11 @@
       "concept_tension",
       "organ_liver"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "Therapists using CTM for asthma may target dermatomes related to lung function, such as T2-T5, to help regulate respiratory tone and reduce stress-induced flare-ups.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   },
   {
     "id": "connective_tissue_massage_010",
+    "correctAnswer": "It focuses on superficial skin-fascial pulls rather than deep muscle work",
     "question": "Connective tissue massage differs from deep tissue massage in that:",
     "options": [
       "It only uses the elbows for pressure",
@@ -518,14 +465,20 @@
       "It uses oil for better glide",
       "It requires physician supervision"
     ],
-    "correctAnswer": "It focuses on superficial skin-fascial pulls rather than deep muscle work",
-    "topics": ["Modalities"],
-    "subtopics": ["Connective_tissue_massage.json"],
-    "distractors": [],
+    "topics": ["modalities", "connective_tissue_massage"],
     "short_explanation": "CTM focuses on superficial skin-fascial pulls, unlike deep tissue massage which targets muscles.",
     "long_explanation": "CTM distinguishes itself from deep tissue massage by working primarily on the skin and subcutaneous fascia, using traction techniques to stimulate reflex arcs. It does not aim to release muscle knots or use compressive force, but instead accesses autonomic pathways through the skin.",
+    "clinical_application": "Therapists trained in both CTM and deep tissue may choose CTM for clients with visceral or stress-linked tension, especially when deep work would be contraindicated or overstimulating.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/connective_tissue_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.130Z",
+    "updated_at": "2025-05-24T14:54:13.477Z",
     "tags": [
       "modality_massage",
       "modality_deep_tissue",
@@ -556,19 +509,6 @@
       "concept_targeted",
       "organ_skin"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.130Z",
-    "updated_at": "2025-05-24T14:54:13.477Z",
-    "unit": "connective tissue massage",
-    "applied_example": "Therapists trained in both CTM and deep tissue may choose CTM for clients with visceral or stress-linked tension, especially when deep work would be contraindicated or overstimulating.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/connective_tissue_massage.json",
-    "sourceFile": "connective_tissue_massage"
+    "synonyms": null
   }
 ]

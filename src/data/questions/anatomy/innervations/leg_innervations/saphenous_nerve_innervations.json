@@ -1,6 +1,7 @@
 [
   {
     "id": "saphenous_nerve_innervations_001",
+    "correctAnswer": "Medial leg and foot",
     "question": "Which region receives sensory innervation from the saphenous nerve?",
     "options": [
       "Posterior thigh",
@@ -8,14 +9,25 @@
       "Lateral ankle",
       "Dorsum of the foot"
     ],
-    "correctAnswer": "Medial leg and foot",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "The saphenous nerve innervates the medial leg and foot.",
     "long_explanation": "The saphenous nerve is a sensory branch of the femoral nerve that travels down the medial side of the leg to innervate the skin of the medial leg, ankle, and foot. It does not carry motor fibers.",
-    "applied_example": "Pain or numbness along the inner shin may indicate saphenous nerve entrapment, which massage can help by reducing fascial tension.",
+    "clinical_application": "Pain or numbness along the inner shin may indicate saphenous nerve entrapment, which massage can help by reducing fascial tension.",
+    "source_reference": "Trail Guide to the Body, 6th ed",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["anatomy_nerve", "nerve_saphenous", "region_leg", "region_foot"],
     "keywords": [
       "saphenous nerve",
@@ -23,13 +35,11 @@
       "cutaneous innervation",
       "femoral nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_002",
+    "correctAnswer": "Femoral nerve",
     "question": "The saphenous nerve is a branch of which larger nerve?",
     "options": [
       "Tibial nerve",
@@ -37,23 +47,32 @@
       "Femoral nerve",
       "Obturator nerve"
     ],
-    "correctAnswer": "Femoral nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "It branches from the femoral nerve.",
     "long_explanation": "The saphenous nerve is the largest cutaneous branch of the femoral nerve and travels distally through the adductor canal before supplying the medial leg.",
-    "applied_example": "Knowledge of the saphenous nerve's path helps therapists avoid compression zones when massaging the adductor region.",
+    "clinical_application": "Knowledge of the saphenous nerve's path helps therapists avoid compression zones when massaging the adductor region.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Nerve Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["nerve_femoral", "nerve_saphenous", "anatomy_branching"],
     "keywords": ["femoral nerve", "saphenous nerve", "nerve branching"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter’s Atlas of Human Anatomy",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_003",
+    "correctAnswer": "Sensory to medial lower limb",
     "question": "Which of the following best describes the saphenous nerve's function?",
     "options": [
       "Motor control to medial leg muscles",
@@ -61,23 +80,32 @@
       "Autonomic regulation of skin temperature",
       "Pain transmission from the knee joint"
     ],
-    "correctAnswer": "Sensory to medial lower limb",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "It provides cutaneous (sensory) innervation.",
     "long_explanation": "The saphenous nerve is purely sensory. It does not innervate muscles or carry autonomic fibers. It contributes to the perception of touch and pressure along the medial leg.",
-    "applied_example": "A massage therapist might test for hypersensitivity in the saphenous nerve region when assessing nerve irritation post-surgery.",
+    "clinical_application": "A massage therapist might test for hypersensitivity in the saphenous nerve region when assessing nerve irritation post-surgery.",
+    "source_reference": "Clinically Oriented Anatomy, Moore",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Sensory Nerves",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["nerve_sensory", "nerve_saphenous", "region_medial_leg"],
     "keywords": ["cutaneous", "sensory innervation", "saphenous function"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinically Oriented Anatomy, Moore",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_004",
+    "correctAnswer": "Adductor canal",
     "question": "Which passageway does the saphenous nerve travel through in the thigh?",
     "options": [
       "Popliteal fossa",
@@ -85,23 +113,32 @@
       "Inguinal canal",
       "Greater sciatic foramen"
     ],
-    "correctAnswer": "Adductor canal",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "It runs through the adductor canal.",
     "long_explanation": "After branching off the femoral nerve, the saphenous nerve travels through the adductor canal (Hunter’s canal) alongside the femoral artery and vein.",
-    "applied_example": "Fascial restriction in the adductor canal may compress the saphenous nerve and contribute to medial leg numbness.",
+    "clinical_application": "Fascial restriction in the adductor canal may compress the saphenous nerve and contribute to medial leg numbness.",
+    "source_reference": "Trail Guide to the Body",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["nerve_pathway", "anatomy_thigh", "nerve_saphenous"],
     "keywords": ["adductor canal", "Hunter’s canal", "nerve path"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_005",
+    "correctAnswer": "Saphenous neuritis",
     "question": "Which condition is commonly associated with irritation of the saphenous nerve?",
     "options": [
       "Tarsal tunnel syndrome",
@@ -109,23 +146,32 @@
       "Meralgia paresthetica",
       "Saphenous neuritis"
     ],
-    "correctAnswer": "Saphenous neuritis",
-    "topics": ["Anatomy", "Pathology"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "Saphenous neuritis is inflammation of the saphenous nerve.",
     "long_explanation": "Saphenous neuritis may result from trauma, compression, or overuse. It often causes burning, tingling, or numbness along the medial shin and foot.",
-    "applied_example": "Massage therapy can help manage symptoms of saphenous neuritis by reducing tension around the nerve's course.",
+    "clinical_application": "Massage therapy can help manage symptoms of saphenous neuritis by reducing tension around the nerve's course.",
+    "source_reference": "Orthopedic Physical Assessment, Magee",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Pathologies",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["condition_nerve", "nerve_saphenous", "condition_neuritis"],
     "keywords": ["saphenous neuritis", "nerve inflammation", "medial leg pain"],
-    "mblex_category": "Pathology",
-    "source_reference": "Orthopedic Physical Assessment, Magee",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_006",
+    "correctAnswer": "Tinel’s sign at the medial knee",
     "question": "Which clinical test might help assess saphenous nerve irritation?",
     "options": [
       "Straight leg raise",
@@ -133,23 +179,32 @@
       "McMurray’s test",
       "Patellar reflex test"
     ],
-    "correctAnswer": "Tinel’s sign at the medial knee",
-    "topics": ["Anatomy", "Assessment"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "Tinel’s sign may elicit tingling over the medial knee.",
     "long_explanation": "Tinel’s sign involves tapping over a nerve to produce tingling. Applied to the medial knee, it can indicate saphenous nerve irritation or entrapment.",
-    "applied_example": "A massage therapist may use light percussion over the adductor canal to assess for sensitivity before treatment.",
+    "clinical_application": "A massage therapist may use light percussion over the adductor canal to assess for sensitivity before treatment.",
+    "source_reference": "Orthopedic Physical Assessment, Magee",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Orthopedic Tests",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["test_tinels", "nerve_assessment", "nerve_saphenous"],
     "keywords": ["tinels sign", "medial knee", "nerve compression test"],
-    "mblex_category": "Assessment",
-    "source_reference": "Orthopedic Physical Assessment, Magee",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_007",
+    "correctAnswer": "Foot drop",
     "question": "Which symptom is least likely to result from saphenous nerve compression?",
     "options": [
       "Burning along the medial shin",
@@ -157,23 +212,32 @@
       "Foot drop",
       "Numbness over the inner knee"
     ],
-    "correctAnswer": "Foot drop",
-    "topics": ["Anatomy", "Differential diagnosis"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "Foot drop involves motor nerves, not the sensory-only saphenous nerve.",
     "long_explanation": "The saphenous nerve is purely sensory and does not affect motor control. Foot drop is more commonly associated with deep fibular nerve dysfunction.",
-    "applied_example": "If a client presents with sensory loss but no motor issues, saphenous involvement is more likely than fibular nerve injury.",
+    "clinical_application": "If a client presents with sensory loss but no motor issues, saphenous involvement is more likely than fibular nerve injury.",
+    "source_reference": "Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Neurology",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["nerve_compression", "nerve_fibular", "nerve_saphenous"],
     "keywords": ["foot drop", "motor vs sensory", "nerve compression"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinically Oriented Anatomy",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_008",
+    "correctAnswer": "It provides no motor innervation",
     "question": "Which of the following is true about the saphenous nerve?",
     "options": [
       "It is a mixed motor-sensory nerve",
@@ -181,23 +245,32 @@
       "It only innervates deep leg muscles",
       "It provides no motor innervation"
     ],
-    "correctAnswer": "It provides no motor innervation",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "The saphenous nerve is entirely sensory.",
     "long_explanation": "The saphenous nerve contains no motor fibers. Its sole function is cutaneous sensation from the medial leg, knee, and foot.",
-    "applied_example": "Palpating and tracing the nerve’s path helps massage therapists apply techniques that relieve nerve pressure without targeting muscle innervation.",
+    "clinical_application": "Palpating and tracing the nerve’s path helps massage therapists apply techniques that relieve nerve pressure without targeting muscle innervation.",
+    "source_reference": "Netter’s Atlas",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Sensory Nerves",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["nerve_saphenous", "nerve_sensory", "region_leg"],
     "keywords": ["cutaneous", "medial leg", "nerve anatomy"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter’s Atlas",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_009",
+    "correctAnswer": "Pes anserinus",
     "question": "Entrapment of the saphenous nerve is most likely to occur near which structure?",
     "options": [
       "Pes anserinus",
@@ -205,23 +278,32 @@
       "Lateral malleolus",
       "Fibular head"
     ],
-    "correctAnswer": "Pes anserinus",
-    "topics": ["Anatomy", "Clinical anatomy"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "Entrapment often occurs at the pes anserinus area.",
     "long_explanation": "The saphenous nerve may become compressed where it exits the adductor canal and passes near the pes anserinus insertion on the medial knee.",
-    "applied_example": "Massage around the medial knee should be cautious to avoid further irritation near the pes anserine bursa.",
+    "clinical_application": "Massage around the medial knee should be cautious to avoid further irritation near the pes anserine bursa.",
+    "source_reference": "Orthopedic Physical Assessment",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Entrapment Syndromes",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["nerve_entrapment", "nerve_saphenous", "region_knee"],
     "keywords": ["pes anserinus", "nerve compression", "medial knee"],
-    "mblex_category": "Pathology",
-    "source_reference": "Orthopedic Physical Assessment",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "saphenous_nerve_innervations_010",
+    "correctAnswer": "Direct compression over medial shin",
     "question": "Which intervention would least benefit a client with saphenous nerve irritation?",
     "options": [
       "Fascial release of the adductor canal",
@@ -229,14 +311,25 @@
       "Gentle gliding strokes along the medial thigh",
       "Stretching hip adductors"
     ],
-    "correctAnswer": "Direct compression over medial shin",
-    "topics": ["Anatomy", "Treatment planning"],
-    "subtopics": ["Innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "leg_innervations",
+      "saphenous_nerve_innervations"
+    ],
     "short_explanation": "Direct compression may worsen symptoms.",
     "long_explanation": "While fascial release, gentle massage, and stretching can improve nerve mobility, deep compression directly over irritated nerves may aggravate symptoms or inflame the surrounding tissue.",
-    "applied_example": "When working with nerve irritation, therapists should avoid localized pressure and instead use broad, superficial techniques initially.",
+    "clinical_application": "When working with nerve irritation, therapists should avoid localized pressure and instead use broad, superficial techniques initially.",
+    "source_reference": "Trail Guide to the Body",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Massage Therapy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "technique_fascial",
       "technique_gliding",
@@ -244,9 +337,6 @@
       "treatment_nerve_irritation"
     ],
     "keywords": ["massage techniques", "nerve safety", "clinical precautions"],
-    "mblex_category": "Treatment Planning",
-    "source_reference": "Trail Guide to the Body",
-    "filepath": "data/questions/anatomy/innervations/leg_innervations/saphenous_nerve_innervations.json",
-    "sourceFile": "saphenous_nerve_innervations"
+    "synonyms": null
   }
 ]

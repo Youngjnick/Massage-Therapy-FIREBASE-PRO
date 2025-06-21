@@ -1,6 +1,7 @@
 [
   {
     "id": "ankle_dorsiflexors_001",
+    "correctAnswer": "Tibialis anterior",
     "question": "Which muscle is the primary dorsiflexor of the ankle?",
     "options": [
       "Gastrocnemius",
@@ -8,18 +9,20 @@
       "Tibialis anterior",
       "Flexor digitorum longus"
     ],
-    "correctAnswer": "Tibialis anterior",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_dorsiflexors"],
     "short_explanation": "Tibialis anterior is the main muscle responsible for ankle dorsiflexion.",
     "long_explanation": "It originates from the lateral tibia and inserts on the medial foot, allowing upward movement of the foot to clear the ground during walking.",
     "clinical_application": "Weakness causes foot drop, increasing fall risk in older adults.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Dorsiflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.079Z",
+    "updated_at": "2025-05-24T14:54:13.423Z",
     "tags": [
       "anatomy_muscles",
       "concept_originates",
@@ -40,25 +43,11 @@
       "muscle_flexor_digitorum_longus",
       "bone_tibia"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.079Z",
-    "updated_at": "2025-05-24T14:54:13.423Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": ["main dorsiflexor", "TA"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
-    "sourceFile": "ankle_dorsiflexors"
+    "synonyms": ["main dorsiflexor", "TA"]
   },
   {
     "id": "ankle_dorsiflexors_002",
+    "correctAnswer": "Extensor hallucis longus",
     "question": "Which muscle dorsiflexes the foot and also extends the great toe?",
     "options": [
       "Extensor digitorum longus",
@@ -66,18 +55,20 @@
       "Extensor hallucis longus",
       "Peroneus brevis"
     ],
-    "correctAnswer": "Extensor hallucis longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_dorsiflexors"],
     "short_explanation": "EHL lifts the big toe and helps dorsiflex the ankle.",
     "long_explanation": "It originates on the fibula and inserts on the distal phalanx of the hallux, supporting toe clearance during walking and balance during push-off.",
     "clinical_application": "Often affected in L5 nerve root compression, leading to hallux extension weakness.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Dorsiflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.079Z",
+    "updated_at": "2025-05-24T14:54:13.423Z",
     "tags": [
       "technique_compression",
       "anatomy_nerve",
@@ -104,25 +95,11 @@
       "muscle_extensor_hallucis_longus",
       "bone_fibula"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.079Z",
-    "updated_at": "2025-05-24T14:54:13.423Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": ["EHL", "toe lifter"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
-    "sourceFile": "ankle_dorsiflexors"
+    "synonyms": ["EHL", "toe lifter"]
   },
   {
     "id": "ankle_dorsiflexors_003",
+    "correctAnswer": "Extensor digitorum longus",
     "question": "Which anterior compartment muscle helps dorsiflex the ankle and extend toes 2–5?",
     "options": [
       "Flexor digitorum longus",
@@ -130,18 +107,20 @@
       "Tibialis posterior",
       "Peroneus longus"
     ],
-    "correctAnswer": "Extensor digitorum longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_dorsiflexors"],
     "short_explanation": "EDL extends the lesser toes and contributes to dorsiflexion.",
     "long_explanation": "EDL originates from the tibia and fibula and runs to the distal toes, playing a key role in swing phase of gait.",
     "clinical_application": "EDL weakness may lead to dragging toes or increased fall risk.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Dorsiflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.079Z",
+    "updated_at": "2025-05-24T14:54:13.423Z",
     "tags": [
       "anatomy_muscles",
       "concept_originates",
@@ -162,25 +141,11 @@
       "bone_tibia",
       "bone_fibula"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.079Z",
-    "updated_at": "2025-05-24T14:54:13.423Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": ["EDL", "toe lifter"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
-    "sourceFile": "ankle_dorsiflexors"
+    "synonyms": ["EDL", "toe lifter"]
   },
   {
     "id": "ankle_dorsiflexors_004",
+    "correctAnswer": "Deep fibular (peroneal) nerve",
     "question": "Which nerve innervates the ankle dorsiflexors?",
     "options": [
       "Tibial nerve",
@@ -188,43 +153,31 @@
       "Deep fibular (peroneal) nerve",
       "Saphenous nerve"
     ],
-    "correctAnswer": "Deep fibular (peroneal) nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_dorsiflexors"],
     "short_explanation": "The deep fibular (peroneal) nerve supplies the ankle dorsiflexors.",
     "long_explanation": "This nerve innervates tibialis anterior, EDL, and EHL, which all contribute to foot dorsiflexion and toe extension.",
     "clinical_application": "Entrapment can result in foot drop or toe drag during swing phase.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Dorsiflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.079Z",
+    "updated_at": "2025-05-24T14:54:13.423Z",
     "tags": ["anatomy_nerve", "muscle_tibialis_anterior", "nerve_tibial_nerve"],
     "keywords": [
       "anatomy_nerve",
       "muscle_tibialis_anterior",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.079Z",
-    "updated_at": "2025-05-24T14:54:13.423Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": ["dorsiflexor innervation"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
-    "sourceFile": "ankle_dorsiflexors"
+    "synonyms": ["dorsiflexor innervation"]
   },
   {
     "id": "ankle_dorsiflexors_005",
+    "correctAnswer": "Peroneus tertius",
     "question": "Which muscle assists dorsiflexion and is sometimes considered part of the extensor group?",
     "options": [
       "Flexor hallucis longus",
@@ -232,18 +185,20 @@
       "Peroneus tertius",
       "Tibialis posterior"
     ],
-    "correctAnswer": "Peroneus tertius",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "ankle_dorsiflexors"],
     "short_explanation": "Peroneus tertius aids in dorsiflexion and slight eversion.",
     "long_explanation": "This small muscle originates from EDL fibers and inserts on the 5th metatarsal. Not everyone has it, but it contributes to ankle stabilization during gait.",
     "clinical_application": "Weakness here may affect lateral ankle control during fast changes of direction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Ankle Dorsiflexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.079Z",
+    "updated_at": "2025-05-24T14:54:13.423Z",
     "tags": [
       "anatomy_muscles",
       "concept_originates",
@@ -266,21 +221,6 @@
       "muscle_flexor_hallucis_longus",
       "muscle_extensor_digitorum_brevis"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.079Z",
-    "updated_at": "2025-05-24T14:54:13.423Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/ankle_dorsiflexors",
-    "synonyms": ["fibularis tertius"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/ankle_dorsiflexors.json",
-    "sourceFile": "ankle_dorsiflexors"
+    "synonyms": ["fibularis tertius"]
   }
 ]

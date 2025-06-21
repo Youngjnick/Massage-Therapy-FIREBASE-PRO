@@ -1,6 +1,7 @@
 [
   {
     "id": "t11_nerve_innervations_001",
+    "correctAnswer": "Abdominal wall contraction",
     "question": "What is the primary motor function of the T11 spinal nerve?",
     "options": [
       "Hip flexion",
@@ -8,29 +9,32 @@
       "Knee extension",
       "Shoulder abduction"
     ],
-    "correctAnswer": "Abdominal wall contraction",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "T11 supplies the abdominal wall muscles via intercostal nerves.",
     "long_explanation": "The T11 spinal nerve gives rise to an intercostal nerve that innervates portions of the abdominal musculature, including the internal and external obliques and transversus abdominis, contributing to trunk flexion and stabilization.",
     "clinical_application": "Weakness in T11 may impair core strength and breathing mechanics, relevant for massage techniques targeting the lateral abdomen.",
+    "source_reference": "Gray’s Anatomy for Students",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Motor Function",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "motor", "abdominal wall", "intercostal nerve"],
     "keywords": ["T11 nerve", "motor function", "trunk", "core muscles"],
-    "source_reference": "Gray’s Anatomy for Students",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_002",
+    "correctAnswer": "External oblique",
     "question": "Which muscle is directly innervated by the T11 spinal nerve?",
     "options": [
       "Quadratus lumborum",
@@ -38,29 +42,32 @@
       "Rectus femoris",
       "Gluteus medius"
     ],
-    "correctAnswer": "External oblique",
-    "topics": ["Anatomy", "Myology"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "The external oblique is innervated by T7–T12 spinal nerves.",
     "long_explanation": "T11 contributes to the intercostal nerve that supplies the external oblique muscle, which assists in trunk rotation and lateral flexion.",
     "clinical_application": "Massage therapy to the obliques may relieve pain in athletes with T11-related strains or postural issues.",
+    "source_reference": "Muscles: Testing and Function",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Muscle Innervation",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "external oblique", "muscle", "core"],
     "keywords": ["T11 innervation", "obliques", "abdominal muscle"],
-    "source_reference": "Muscles: Testing and Function",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_003",
+    "correctAnswer": "Lower abdomen and flank",
     "question": "Which dermatome region corresponds to the T11 spinal level?",
     "options": [
       "Umbilicus",
@@ -68,29 +75,32 @@
       "Lower abdomen and flank",
       "Sternum"
     ],
-    "correctAnswer": "Lower abdomen and flank",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "T11 supplies sensory input to the lower abdominal and lateral flank regions.",
     "long_explanation": "The dermatome for T11 extends below the T10 umbilical region and includes parts of the lower abdominal wall and flank, assisting with sensory feedback in trunk stabilization.",
     "clinical_application": "T11 nerve compression may present with flank tingling or hypoesthesia in the lower abdomen.",
+    "source_reference": "Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Sensory Distribution",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "dermatome", "flank", "sensation"],
     "keywords": ["T11 dermatome", "lower abdomen", "flank", "sensory"],
-    "source_reference": "Atlas of Human Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_004",
+    "correctAnswer": "Superficial abdominal reflex",
     "question": "Which reflex may be diminished with a lesion at T11?",
     "options": [
       "Cremasteric reflex",
@@ -98,54 +108,60 @@
       "Superficial abdominal reflex",
       "Achilles reflex"
     ],
-    "correctAnswer": "Superficial abdominal reflex",
-    "topics": ["Anatomy", "Neurology"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "The superficial abdominal reflex is mediated by T7–T12.",
     "long_explanation": "Lesions affecting T11 can reduce the superficial abdominal reflex, particularly in the lower quadrants, due to its role in abdominal wall motor innervation.",
     "clinical_application": "Testing abdominal reflexes can help localize thoracic spinal cord or nerve root damage.",
+    "source_reference": "DeMyer’s The Neurologic Examination",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Reflex Testing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "reflex", "neurology", "motor"],
     "keywords": ["abdominal reflex", "T11 lesion", "neurological testing"],
-    "source_reference": "DeMyer’s The Neurologic Examination",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_005",
+    "correctAnswer": "Mixed",
     "question": "What type of nerve is the T11 intercostal nerve classified as?",
     "options": ["Motor", "Sensory", "Autonomic", "Mixed"],
-    "correctAnswer": "Mixed",
-    "topics": ["Anatomy", "Nerve classification"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "T11 intercostal nerve carries both motor and sensory fibers.",
     "long_explanation": "Spinal nerves such as T11 are considered mixed nerves because they convey motor signals to muscles and sensory information from the skin and joints.",
     "clinical_application": "Injury to mixed nerves may result in both motor weakness and sensory disturbance.",
+    "source_reference": "Fundamentals of Neuroscience",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Nerve Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "mixed nerve", "motor", "sensory"],
     "keywords": ["T11 nerve type", "mixed spinal nerve", "intercostal"],
-    "source_reference": "Fundamentals of Neuroscience",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_006",
+    "correctAnswer": "Internal oblique and transversus abdominis",
     "question": "T11 intercostal nerve travels between which two muscle layers?",
     "options": [
       "Rectus abdominis and internal oblique",
@@ -153,29 +169,32 @@
       "Internal oblique and transversus abdominis",
       "Latissimus dorsi and serratus posterior"
     ],
-    "correctAnswer": "Internal oblique and transversus abdominis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "Intercostal nerves run between internal oblique and transversus abdominis.",
     "long_explanation": "The T11 intercostal nerve travels between the internal oblique and transversus abdominis layers as it innervates the abdominal musculature and skin.",
     "clinical_application": "Fascial release or massage in this region may improve neural glide and reduce tension headaches or abdominal pain.",
+    "source_reference": "Clinical Anatomy by Regions",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Neurovascular Pathways",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "intercostal", "abdominal wall", "nerve pathway"],
     "keywords": ["nerve course", "T11", "abdominal muscle layers"],
-    "source_reference": "Clinical Anatomy by Regions",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_007",
+    "correctAnswer": "Flank paresthesia",
     "question": "Which clinical symptom might suggest a T11 nerve root compression?",
     "options": [
       "Foot drop",
@@ -183,29 +202,32 @@
       "Flank paresthesia",
       "Quadriceps weakness"
     ],
-    "correctAnswer": "Flank paresthesia",
-    "topics": ["Anatomy", "Clinical neuro"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "T11 irritation can lead to flank paresthesia due to its dermatome.",
     "long_explanation": "Compression of the T11 spinal root may result in abnormal sensations such as tingling, numbness, or burning pain in the lateral abdominal region and flank.",
     "clinical_application": "Massage therapists can assess dermatomal distributions when evaluating unexplained flank symptoms.",
+    "source_reference": "Spinal Disorders and Treatment",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Diagnosis",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "nerve compression", "flank", "paresthesia"],
     "keywords": ["T11 sensory loss", "nerve impingement", "dermatome"],
-    "source_reference": "Spinal Disorders and Treatment",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_008",
+    "correctAnswer": "Myofascial release at lateral abdomen",
     "question": "Which massage technique might help improve nerve mobility around the T11 region?",
     "options": [
       "Cross-fiber friction over scapula",
@@ -213,29 +235,32 @@
       "Myofascial release at lateral abdomen",
       "Effleurage to wrist extensors"
     ],
-    "correctAnswer": "Myofascial release at lateral abdomen",
-    "topics": ["Anatomy", "Manual therapy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "Myofascial release can reduce fascial entrapment of T11 intercostal nerve.",
     "long_explanation": "Myofascial techniques help release tension in the muscle and fascial layers where the T11 nerve runs, improving mobility and relieving irritation.",
     "clinical_application": "Targeted fascial release on the lateral trunk may assist clients experiencing tension or nerve irritation related to T11.",
+    "source_reference": "Massage Therapy Principles and Practice",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Treatment",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "myofascial", "nerve release", "massage therapy"],
     "keywords": ["massage", "T11", "fascial techniques", "nerve mobility"],
-    "source_reference": "Massage Therapy Principles and Practice",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_009",
+    "correctAnswer": "Somatic motor and sensory",
     "question": "T11 intercostal nerve branches are classified under which nervous system division?",
     "options": [
       "Autonomic sympathetic",
@@ -243,50 +268,55 @@
       "Enteric",
       "Cranial parasympathetic"
     ],
-    "correctAnswer": "Somatic motor and sensory",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "T11 belongs to the somatic nervous system.",
     "long_explanation": "As a spinal nerve, T11 contains somatic motor fibers to skeletal muscles and somatic sensory fibers from skin and fascia, part of the somatic nervous system.",
     "clinical_application": "Understanding this helps differentiate somatic vs autonomic symptoms during spinal assessment.",
+    "source_reference": "Human Anatomy & Physiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "basic",
-    "category": "Nervous System Division",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "somatic", "spinal nerve"],
     "keywords": ["somatic nerve", "T11 spinal", "motor and sensory"],
-    "source_reference": "Human Anatomy & Physiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "t11_nerve_innervations_010",
+    "correctAnswer": "Rib 11",
     "question": "Which rib corresponds to the exit level of the T11 spinal nerve?",
     "options": ["Rib 10", "Rib 11", "Rib 12", "None—it's below all ribs"],
-    "correctAnswer": "Rib 11",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "t11_nerve_innervations"
+    ],
     "short_explanation": "The T11 spinal nerve exits below rib 11.",
     "long_explanation": "Like other thoracic nerves, the T11 nerve exits the intervertebral foramen below its corresponding vertebra and rib, specifically beneath the 11th thoracic vertebra and rib.",
     "clinical_application": "This anatomical knowledge aids in pinpointing intercostal neuralgia and targeting precise levels in manual therapy.",
+    "source_reference": "Netter’s Clinical Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Spinal Nerve Pathway",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T11", "rib level", "nerve exit", "intercostal"],
     "keywords": ["T11 exit", "rib level", "thoracic nerve path"],
-    "source_reference": "Netter’s Clinical Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "unit": "T11 spinal nerve",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/t11_nerve_innervations.json",
-    "sourceFile": "t11_nerve_innervations"
+    "synonyms": null
   }
 ]

@@ -1,6 +1,7 @@
 [
   {
     "id": "hand_flexors_001",
+    "correctAnswer": "Flexor carpi radialis",
     "question": "Which muscle is primarily responsible for flexing the wrist and is often targeted in forearm massage?",
     "options": [
       "Flexor carpi radialis",
@@ -8,18 +9,20 @@
       "Brachioradialis",
       "Supinator"
     ],
-    "correctAnswer": "Flexor carpi radialis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Flexor carpi radialis flexes the wrist and is commonly addressed in massage for wrist pain.",
     "long_explanation": "The flexor carpi radialis originates from the medial epicondyle of the humerus and inserts into the base of the second and third metacarpals. It flexes and abducts the wrist. It's commonly tight in clients who type or grip repetitively.",
     "clinical_application": "Massage targeting the flexor carpi radialis can relieve tension in clients with repetitive wrist strain from office work or lifting.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_muscles",
@@ -48,25 +51,11 @@
       "bone_humerus",
       "bone_metacarpals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_002",
+    "correctAnswer": "Proximal interphalangeal joints",
     "question": "The flexor digitorum superficialis primarily acts on which structure?",
     "options": [
       "Proximal interphalangeal joints",
@@ -74,18 +63,20 @@
       "Wrist joint",
       "Thumb joint"
     ],
-    "correctAnswer": "Proximal interphalangeal joints",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "It flexes the PIP joints of the fingers.",
     "long_explanation": "Flexor digitorum superficialis inserts into the middle phalanges of digits 2–5 and flexes the PIP joints. It also assists with wrist flexion.",
     "clinical_application": "Massage can reduce finger stiffness and improve hand function in clients with overuse injuries or musicians.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_joint",
@@ -108,25 +99,11 @@
       "condition_injuries",
       "joint_joint"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_003",
+    "correctAnswer": "Flexor digitorum profundus",
     "question": "Which deep flexor muscle is responsible for flexing the distal phalanges of the fingers?",
     "options": [
       "Flexor digitorum profundus",
@@ -134,18 +111,20 @@
       "Extensor indicis",
       "Flexor pollicis brevis"
     ],
-    "correctAnswer": "Flexor digitorum profundus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Flexor digitorum profundus flexes the DIP joints of the fingers.",
     "long_explanation": "This muscle originates from the ulna and interosseous membrane and inserts into the distal phalanges. It's essential for gripping.",
     "clinical_application": "Deep tissue massage targeting this muscle can aid recovery in clients with grip fatigue or carpal tunnel-like symptoms.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "modality_deep_tissue",
@@ -182,25 +161,11 @@
       "bone_ulna",
       "bone_carpals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_004",
+    "correctAnswer": "Thumb pain during flexion",
     "question": "What is a common clinical symptom of overuse of the flexor pollicis longus?",
     "options": [
       "Thumb pain during flexion",
@@ -208,18 +173,20 @@
       "Shoulder tightness",
       "Swelling in the upper arm"
     ],
-    "correctAnswer": "Thumb pain during flexion",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Overuse of flexor pollicis longus leads to thumb flexion pain.",
     "long_explanation": "Flexor pollicis longus flexes the thumb’s interphalangeal joint. Repetitive use can cause pain or trigger thumb issues.",
     "clinical_application": "Massage can alleviate pain in massage therapists, gamers, or clients who text frequently.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_joint",
@@ -234,25 +201,11 @@
       "client",
       "joint_joint"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_005",
+    "correctAnswer": "Palmaris longus",
     "question": "Which hand flexor is often absent in a portion of the population?",
     "options": [
       "Palmaris longus",
@@ -260,18 +213,20 @@
       "Flexor digitorum profundus",
       "Flexor pollicis longus"
     ],
-    "correctAnswer": "Palmaris longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Palmaris longus is congenitally absent in some individuals.",
     "long_explanation": "Palmaris longus is a superficial flexor muscle absent in 10–15% of people. It assists in wrist flexion but is not essential.",
     "clinical_application": "Its tendon is often used in tendon graft surgeries, and massage therapists should note asymmetry during palpation.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_muscles",
@@ -284,25 +239,11 @@
       "concept_assists",
       "concept_assisted"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_006",
+    "correctAnswer": "Median nerve",
     "question": "Which nerve innervates most of the anterior forearm flexor muscles?",
     "options": [
       "Median nerve",
@@ -310,18 +251,20 @@
       "Ulnar nerve",
       "Axillary nerve"
     ],
-    "correctAnswer": "Median nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "The median nerve innervates most forearm flexors.",
     "long_explanation": "The median nerve supplies the majority of the hand flexors except for flexor carpi ulnaris and part of flexor digitorum profundus (ulnar nerve).",
     "clinical_application": "Understanding innervation helps target massage for nerve impingement symptoms like carpal tunnel syndrome.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_nerve",
@@ -344,25 +287,11 @@
       "nerve_axillary_nerve",
       "bone_carpals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_007",
+    "correctAnswer": "Ulnar nerve",
     "question": "Flexor carpi ulnaris is unique among hand flexors because it is innervated by which nerve?",
     "options": [
       "Ulnar nerve",
@@ -370,18 +299,20 @@
       "Radial nerve",
       "Musculocutaneous nerve"
     ],
-    "correctAnswer": "Ulnar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Flexor carpi ulnaris is innervated by the ulnar nerve.",
     "long_explanation": "It’s one of the few anterior forearm muscles not innervated by the median nerve. It aids in wrist flexion and ulnar deviation.",
     "clinical_application": "Massage may help clients with ulnar neuropathy or medial wrist discomfort.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_nerve",
@@ -406,25 +337,11 @@
       "nerve_radial_nerve",
       "nerve_musculocutaneous_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_008",
+    "correctAnswer": "Palmaris longus",
     "question": "Which muscle helps tense the palmar fascia and is considered functionally minor?",
     "options": [
       "Palmaris longus",
@@ -432,18 +349,20 @@
       "Pronator teres",
       "Flexor pollicis brevis"
     ],
-    "correctAnswer": "Palmaris longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Palmaris longus tenses the palmar aponeurosis.",
     "long_explanation": "Though minor in function, this muscle helps tense the palm and assists wrist flexion. It’s often used in surgical tendon grafts.",
     "clinical_application": "Palpation of this muscle is useful for identifying tendon orientation during massage or rehab settings.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_fascia",
@@ -458,25 +377,11 @@
       "concept_assists",
       "concept_assisted"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_009",
+    "correctAnswer": "Typing for extended hours",
     "question": "Which activity most likely overworks the flexor digitorum muscles?",
     "options": [
       "Typing for extended hours",
@@ -484,18 +389,20 @@
       "Breathing exercises",
       "Leg curls"
     ],
-    "correctAnswer": "Typing for extended hours",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Typing overuses finger flexors like flexor digitorum muscles.",
     "long_explanation": "Sustained finger flexion during typing can fatigue the flexor digitorum superficialis and profundus, leading to muscle imbalance or RSI.",
     "clinical_application": "Massage techniques focusing on forearm flexors help reduce RSI in office workers.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "anatomy_muscles",
       "modality_massage_techniques",
@@ -506,25 +413,11 @@
       "modality_massage_techniques",
       "concept_focuses"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   },
   {
     "id": "hand_flexors_010",
+    "correctAnswer": "Pronator teres",
     "question": "Flexor-pronator muscle group includes which of the following?",
     "options": [
       "Pronator teres",
@@ -532,18 +425,20 @@
       "Anconeus",
       "Extensor carpi radialis"
     ],
-    "correctAnswer": "Pronator teres",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "hands", "hand_flexors"],
     "short_explanation": "Pronator teres is part of the flexor-pronator group.",
     "long_explanation": "Pronator teres not only pronates the forearm but also assists in elbow flexion. It belongs to the superficial anterior forearm group.",
     "clinical_application": "Massage here is effective for clients with medial elbow pain or golfers elbow.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/hands/hand_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Muscle Groups",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.084Z",
+    "updated_at": "2025-05-24T14:54:13.427Z",
     "tags": [
       "modality_massage",
       "anatomy_muscles",
@@ -562,21 +457,6 @@
       "concept_assisted",
       "muscle_biceps_brachii"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.084Z",
-    "updated_at": "2025-05-24T14:54:13.427Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/hand_flexors_mcqs",
-    "synonyms": ["forearm flexors", "anterior forearm muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/hands/hand_flexors.json",
-    "sourceFile": "hand_flexors"
+    "synonyms": ["forearm flexors", "anterior forearm muscles"]
   }
 ]

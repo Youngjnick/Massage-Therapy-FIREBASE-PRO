@@ -1,6 +1,7 @@
 [
   {
     "id": "contraindications_full_001",
+    "correctAnswer": "Deep vein thrombosis (DVT)",
     "question": "Which of the following conditions is an absolute contraindication to massage therapy?",
     "options": [
       "Chronic sinusitis",
@@ -8,18 +9,20 @@
       "Deep vein thrombosis (DVT)",
       "Mild scoliosis"
     ],
-    "correctAnswer": "Deep vein thrombosis (DVT)",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Massage is contraindicated with active DVT due to clot migration risk.",
     "long_explanation": "Deep vein thrombosis is a medical emergency. Massage can dislodge a clot, potentially leading to pulmonary embolism, stroke, or cardiac arrest. Medical clearance is required before resuming massage.",
     "clinical_application": "Always screen for unexplained leg swelling, tenderness, and warmth in clients — these are DVT red flags.",
+    "source_reference": "FSMTB Candidate Handbook; AMTA Safety Guidelines",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Absolute Contraindications",
+    "difficulty_adjustment": 0,
+    "relevance_score": 5,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "condition_scoliosis",
       "contraindication",
@@ -32,26 +35,11 @@
       "client",
       "modality_massage_therapy"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Candidate Handbook; AMTA Safety Guidelines",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["DVT", "thrombosis", "clot"],
-    "relevance_score": 5,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["DVT", "thrombosis", "clot"]
   },
   {
     "id": "contraindications_full_002",
+    "correctAnswer": "Varicose veins",
     "question": "Which of the following is considered a local contraindication for massage?",
     "options": [
       "Systemic infection",
@@ -59,18 +47,20 @@
       "HIV-positive status",
       "Mild fatigue"
     ],
-    "correctAnswer": "Varicose veins",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Massage is avoided over varicose veins but allowed elsewhere.",
     "long_explanation": "Varicose veins are fragile and pressure can damage the valve system or worsen pooling. Gentle work may be allowed with medical clearance, but deeper strokes are avoided over the area.",
     "clinical_application": "Visually inspect for enlarged or twisted superficial veins and avoid direct pressure.",
+    "source_reference": "Trail Guide to the Body; AMTA Position Statements",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Local Contraindications",
+    "difficulty_adjustment": 0,
+    "relevance_score": 4,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "technique_pressure",
@@ -83,26 +73,11 @@
       "contraindication",
       "concept_localized"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "Trail Guide to the Body; AMTA Position Statements",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["varicosities", "twisted veins"],
-    "relevance_score": 4,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["varicosities", "twisted veins"]
   },
   {
     "id": "contraindications_full_003",
+    "correctAnswer": "Systemic contagious infection",
     "question": "Massage should be avoided entirely if a client presents with:",
     "options": [
       "Seasonal allergies",
@@ -110,18 +85,20 @@
       "Systemic contagious infection",
       "History of anxiety"
     ],
-    "correctAnswer": "Systemic contagious infection",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Contagious infections require complete postponement of massage.",
     "long_explanation": "When a client has a fever, flu, strep throat, or other systemic infection, massage can worsen symptoms and pose risk of transmission. Reschedule when client is symptom-free for 24+ hours.",
     "clinical_application": "Ensure client screening includes illness questions to protect both client and therapist.",
+    "source_reference": "FSMTB Outline; AMTA Clinical Guidelines",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Infectious Conditions",
+    "difficulty_adjustment": 0,
+    "relevance_score": 5,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "purpose_stress",
@@ -134,26 +111,11 @@
       "client_presents",
       "concept_anxiety"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Outline; AMTA Clinical Guidelines",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["systemic infection", "contagious illness"],
-    "relevance_score": 5,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["systemic infection", "contagious illness"]
   },
   {
     "id": "contraindications_full_004",
+    "correctAnswer": "Recent surgery with staples",
     "question": "Which condition requires medical clearance before massage?",
     "options": [
       "Pregnancy in the first trimester",
@@ -161,18 +123,20 @@
       "Chronic anxiety",
       "Seasonal affective disorder"
     ],
-    "correctAnswer": "Recent surgery with staples",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Massage near surgical sites should not proceed without physician approval.",
     "long_explanation": "Recent surgeries involve fragile tissues, inflammation, risk of dehiscence, and potential blood clots. A physician's note ensures safety and timing for bodywork.",
     "clinical_application": "Always check for surgical dates, scar healing status, and medical advice before proceeding.",
+    "source_reference": "FSMTB Clinical Guidelines; AMTA Surgery Protocols",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Medical Conditions Requiring Clearance",
+    "difficulty_adjustment": 0,
+    "relevance_score": 4,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "anatomy_tissues",
@@ -187,26 +151,11 @@
       "purpose_healing",
       "concept_anxiety"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Clinical Guidelines; AMTA Surgery Protocols",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["surgical site", "recent operation"],
-    "relevance_score": 4,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["surgical site", "recent operation"]
   },
   {
     "id": "contraindications_full_005",
+    "correctAnswer": "Fungal infection (athlete's foot)",
     "question": "Which of the following skin conditions is a local contraindication?",
     "options": [
       "Cellulitis",
@@ -214,18 +163,20 @@
       "Eczema in remission",
       "General dryness"
     ],
-    "correctAnswer": "Fungal infection (athlete's foot)",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Avoid massage directly on fungal infections to prevent spread.",
     "long_explanation": "Athlete's foot is contagious and can spread to hands or other areas. Local massage should be avoided, and therapist hygiene precautions strictly followed.",
     "clinical_application": "If the infection is localized to the feet, work can be done on other body areas safely.",
+    "source_reference": "FSMTB Outline; CDC Guidelines",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Skin Conditions",
+    "difficulty_adjustment": 0,
+    "relevance_score": 4,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "contraindication",
@@ -240,26 +191,11 @@
       "population_athlete",
       "organ_skin"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Outline; CDC Guidelines",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["foot fungus", "tinea"],
-    "relevance_score": 4,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["foot fungus", "tinea"]
   },
   {
     "id": "contraindications_full_006",
+    "correctAnswer": "Recent myocardial infarction",
     "question": "Which of the following cardiovascular conditions is an absolute contraindication for massage therapy?",
     "options": [
       "Hypertension managed with medication",
@@ -267,18 +203,20 @@
       "Mild arrhythmia",
       "Recent myocardial infarction"
     ],
-    "correctAnswer": "Recent myocardial infarction",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Massage is contraindicated after a recent heart attack.",
     "long_explanation": "A myocardial infarction (heart attack) indicates cardiac instability. Massage should not be performed until the client has received medical clearance and is no longer in an acute phase.",
     "clinical_application": "Always ask about recent cardiac events or hospitalizations before working with cardiac clients.",
+    "source_reference": "FSMTB Pathology Guidelines",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "hard",
     "difficulty_rating": 4,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Absolute Contraindications",
+    "difficulty_adjustment": 0,
+    "relevance_score": 5,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "contraindication",
       "client",
@@ -291,26 +229,11 @@
       "modality_massage_therapy",
       "organ_heart"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Pathology Guidelines",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["heart attack", "MI"],
-    "relevance_score": 5,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["heart attack", "MI"]
   },
   {
     "id": "contraindications_full_007",
+    "correctAnswer": "Client has osteoporosis",
     "question": "Which situation requires a modified massage plan but is not a contraindication?",
     "options": [
       "Chemotherapy within 24 hours",
@@ -318,18 +241,20 @@
       "Open wound on the arm",
       "Severe cellulitis"
     ],
-    "correctAnswer": "Client has osteoporosis",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Osteoporosis requires pressure adjustments but not avoidance of massage.",
     "long_explanation": "Clients with osteoporosis have fragile bones. Light pressure, support positioning, and avoiding joint compression allow massage to be performed safely with modification.",
     "clinical_application": "Use bolsters, avoid deep techniques, and educate elderly clients on benefits of gentle touch.",
+    "source_reference": "FSMTB Special Populations Guide",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Special Populations",
+    "difficulty_adjustment": 0,
+    "relevance_score": 4,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "technique_compression",
       "anatomy_joint",
@@ -354,26 +279,11 @@
       "joint_joint",
       "plan_plan"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Special Populations Guide",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["bone thinning", "low bone density"],
-    "relevance_score": 4,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["bone thinning", "low bone density"]
   },
   {
     "id": "contraindications_full_008",
+    "correctAnswer": "Warts on the feet",
     "question": "Which of the following skin conditions is a localized contraindication?",
     "options": [
       "Warts on the feet",
@@ -381,18 +291,20 @@
       "Widespread sunburn",
       "General eczema flare-up"
     ],
-    "correctAnswer": "Warts on the feet",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Warts are contagious; avoid the area but massage can be performed elsewhere.",
     "long_explanation": "Warts are caused by HPV and can spread through skin contact or contamination. Avoid direct pressure on affected sites, especially plantar warts on the feet.",
     "clinical_application": "Apply universal precautions and offer a hand or seated massage as an alternative.",
+    "source_reference": "FSMTB Dermatology Standards",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Skin and Dermatologic Issues",
+    "difficulty_adjustment": 0,
+    "relevance_score": 4,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "technique_pressure",
@@ -407,26 +319,11 @@
       "condition_localized_contraindication",
       "organ_skin"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Dermatology Standards",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["verruca", "foot wart"],
-    "relevance_score": 4,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["verruca", "foot wart"]
   },
   {
     "id": "contraindications_full_009",
+    "correctAnswer": "Use light pressure and avoid bruising",
     "question": "What caution should be taken when working with clients on blood thinners?",
     "options": [
       "Use deep pressure to improve circulation",
@@ -434,18 +331,20 @@
       "Apply moderate pressure but only with medical clearance",
       "Use light pressure and avoid bruising"
     ],
-    "correctAnswer": "Use light pressure and avoid bruising",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Clients on anticoagulants bruise easily; use caution.",
     "long_explanation": "Medications like warfarin or apixaban reduce clotting ability. Even moderate pressure can cause bruising or internal bleeding. Always use light techniques unless cleared by a physician.",
     "clinical_application": "Watch for signs of easy bruising, hematomas, or capillary fragility in elderly clients or those on long-term medication.",
+    "source_reference": "AMTA Medication Guidelines",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Medication and Medical Devices",
+    "difficulty_adjustment": 0,
+    "relevance_score": 5,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "technique_pressure",
@@ -462,26 +361,11 @@
       "concept_thinners",
       "concept_blood_thinners"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "AMTA Medication Guidelines",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["blood thinning drugs", "bleeding risk"],
-    "relevance_score": 5,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["blood thinning drugs", "bleeding risk"]
   },
   {
     "id": "contraindications_full_010",
+    "correctAnswer": "Inflammatory phase",
     "question": "Massage is generally contraindicated during which stage of acute injury?",
     "options": [
       "Proliferation phase",
@@ -489,18 +373,20 @@
       "Inflammatory phase",
       "Recovery phase"
     ],
-    "correctAnswer": "Inflammatory phase",
-    "topics": ["Pathology"],
-    "subtopics": ["Contraindications"],
-    "distractors": [],
+    "topics": ["pathology", "contraindications", "contraindications_full"],
     "short_explanation": "Massage is avoided during the inflammatory stage of injury.",
     "long_explanation": "This early phase (24–72 hours post-injury) involves redness, swelling, and pain. Massage can increase inflammation and disrupt natural healing if applied too soon.",
     "clinical_application": "Use RICE (rest, ice, compression, elevation) during inflammation. Massage is introduced later for scar remodeling or muscle relaxation.",
+    "source_reference": "FSMTB Inflammation & Recovery Module",
+    "sourceFile": null,
+    "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Pathology & Contraindications",
-    "subcategory": "Acute Conditions",
+    "difficulty_adjustment": 0,
+    "relevance_score": 4,
+    "created_at": "2025-05-24T14:34:08.147Z",
+    "updated_at": "2025-05-24T14:54:13.489Z",
     "tags": [
       "modality_massage",
       "technique_compression",
@@ -525,22 +411,6 @@
       "condition_injury",
       "concept_recovery"
     ],
-    "mblex_category": "Pathology, Contraindications, Areas of Caution, Special Populations",
-    "source_reference": "FSMTB Inflammation & Recovery Module",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.147Z",
-    "updated_at": "2025-05-24T14:54:13.489Z",
-    "unit": "../../../src/data/questions/pathology/contraindications/contraindications_full",
-    "synonyms": ["acute phase", "initial injury"],
-    "relevance_score": 4,
-    "main_topic": "pathology",
-    "filepath": "data/questions/pathology/contraindications/contraindications_full.json",
-    "sourceFile": "contraindications_full"
+    "synonyms": ["acute phase", "initial injury"]
   }
 ]

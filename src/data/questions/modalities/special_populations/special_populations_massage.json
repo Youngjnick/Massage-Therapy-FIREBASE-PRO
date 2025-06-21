@@ -1,6 +1,7 @@
 [
   {
     "id": "special_populations_massage_001",
+    "correctAnswer": "Assess for frailty, medication use, and skin integrity before treatment",
     "question": "When working with elderly clients, which consideration is MOST important?",
     "options": [
       "Use deep pressure to loosen fascia",
@@ -8,14 +9,24 @@
       "Assess for frailty, medication use, and skin integrity before treatment",
       "Focus on trigger point therapy to reduce chronic pain"
     ],
-    "correctAnswer": "Assess for frailty, medication use, and skin integrity before treatment",
-    "topics": ["Modalities", "Clinical practice"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Elderly clients may have fragile skin, decreased circulation, and medication considerations that require gentle techniques and careful assessment.",
     "long_explanation": "Older adults often present with age-related changes such as thinner skin, reduced elasticity, poor circulation, and use of medications like anticoagulants. Therapists must assess these factors before applying techniques. Gentle Swedish massage, passive range-of-motion, and attention to comfort and communication are typically recommended.",
-    "applied_example": "An 80-year-old client on blood thinners is scheduled for massage. The therapist avoids deep pressure and instead uses light effleurage to promote relaxation without risking bruising.",
+    "clinical_application": "An 80-year-old client on blood thinners is scheduled for massage. The therapist avoids deep pressure and instead uses light effleurage to promote relaxation without risking bruising.",
+    "source_reference": "AMTA Massage for Older Adults Guide",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "population_elderly",
       "technique_adaptation",
@@ -29,14 +40,11 @@
       "massage safety",
       "senior massage"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "AMTA Massage for Older Adults Guide",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_002",
+    "correctAnswer": "After the first trimester",
     "question": "Massage therapy for pregnant clients is generally safest during which trimester?",
     "options": [
       "First trimester only",
@@ -44,14 +52,24 @@
       "Third trimester only",
       "Only after delivery"
     ],
-    "correctAnswer": "After the first trimester",
-    "topics": ["Modalities", "Prenatal massage"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Massage is typically safest after the first trimester when the risk of miscarriage decreases and the pregnancy stabilizes.",
     "long_explanation": "While massage during the first trimester isn't always contraindicated, many therapists avoid it due to increased miscarriage risk. After the first trimester, with clearance from a healthcare provider, prenatal massage can offer benefits such as reduced back pain, improved circulation, and lowered stress levels. Positioning and pressure must be adapted for safety and comfort.",
-    "applied_example": "A therapist modifies positioning with supportive pillows and avoids abdominal massage during a second-trimester session for a pregnant client experiencing low back pain.",
+    "clinical_application": "A therapist modifies positioning with supportive pillows and avoids abdominal massage during a second-trimester session for a pregnant client experiencing low back pain.",
+    "source_reference": "Massage Therapy Foundation – Prenatal Guidelines",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "population_pregnancy",
       "trimester_safety",
@@ -64,14 +82,11 @@
       "second trimester",
       "massage safety"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Massage Therapy Foundation – Prenatal Guidelines",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_003",
+    "correctAnswer": "Deep compressions",
     "question": "Which technique is best avoided in clients with osteoporosis?",
     "options": [
       "Effleurage",
@@ -79,14 +94,24 @@
       "Passive stretching",
       "Lymphatic drainage"
     ],
-    "correctAnswer": "Deep compressions",
-    "topics": ["Modalities", "Pathology"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Deep compressions can risk bone injury in clients with osteoporosis.",
     "long_explanation": "Osteoporosis causes bones to become brittle and prone to fracture. While massage can be beneficial, high-pressure techniques or joint mobilizations increase fracture risk. Therapists should use gentle techniques and communicate clearly about discomfort. Effleurage and lymphatic drainage are typically safe and supportive.",
-    "applied_example": "A client with osteoporosis receives only light Swedish massage and avoids pressure over spinal processes or ribs.",
+    "clinical_application": "A client with osteoporosis receives only light Swedish massage and avoids pressure over spinal processes or ribs.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "population_osteoporosis",
       "technique_modification",
@@ -98,14 +123,11 @@
       "deep pressure",
       "massage caution"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_004",
+    "correctAnswer": "Communicate clearly, seek consent, and allow sensory-friendly options",
     "question": "Which is a key consideration when massaging clients with autism spectrum disorder (ASD)?",
     "options": [
       "Apply deep pressure without asking permission",
@@ -113,14 +135,24 @@
       "Communicate clearly, seek consent, and allow sensory-friendly options",
       "Always use scented oils for stimulation"
     ],
-    "correctAnswer": "Communicate clearly, seek consent, and allow sensory-friendly options",
-    "topics": ["Modalities", "Neurodiverse clients"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Clear communication and respecting sensory boundaries are essential when working with clients on the autism spectrum.",
     "long_explanation": "Massage therapists working with individuals with ASD should be aware of sensory sensitivities and communication preferences. Offering choices, using neutral oils, and avoiding overstimulation help create a safe and respectful therapeutic environment.",
-    "applied_example": "A client with ASD is given the option to preview the treatment room and ask questions before receiving light Swedish massage in a low-stimulus setting.",
+    "clinical_application": "A client with ASD is given the option to preview the treatment room and ask questions before receiving light Swedish massage in a low-stimulus setting.",
+    "source_reference": "AMTA Guidelines for ASD Clients",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "autism",
       "neurodiverse",
@@ -134,14 +166,11 @@
       "sensory-friendly",
       "informed consent"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "AMTA Guidelines for ASD Clients",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_005",
+    "correctAnswer": "Focus on lymphatic drainage and gentle techniques",
     "question": "How should a therapist adapt massage for a client undergoing cancer treatment?",
     "options": [
       "Apply deep tissue to reduce pain",
@@ -149,14 +178,24 @@
       "Use heat therapy over radiation sites",
       "Massage directly over tumors to stimulate healing"
     ],
-    "correctAnswer": "Focus on lymphatic drainage and gentle techniques",
-    "topics": ["Modalities", "Oncology massage"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Lymphatic drainage and gentle techniques are safest for clients in cancer treatment.",
     "long_explanation": "Massage for cancer patients should be approached with care, avoiding deep pressure and direct work on tumors or radiation sites. Gentle massage and lymphatic drainage may help reduce edema, anxiety, and pain. Medical clearance is often necessary.",
-    "applied_example": "A therapist uses gentle, slow strokes and lymphatic drainage techniques on a client in chemotherapy, avoiding affected areas and ensuring comfort.",
+    "clinical_application": "A therapist uses gentle, slow strokes and lymphatic drainage techniques on a client in chemotherapy, avoiding affected areas and ensuring comfort.",
+    "source_reference": "Society for Oncology Massage – Standards of Practice",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "oncology",
       "lymphatic",
@@ -165,14 +204,11 @@
       "adapted_technique"
     ],
     "keywords": ["cancer", "massage safety", "edema", "gentle massage"],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Society for Oncology Massage – Standards of Practice",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_006",
+    "correctAnswer": "Loss of sensation in extremities",
     "question": "Which is a primary concern when massaging clients with diabetes?",
     "options": [
       "High blood pressure during sessions",
@@ -180,14 +216,24 @@
       "Loss of sensation in extremities",
       "Increased resistance to touch"
     ],
-    "correctAnswer": "Loss of sensation in extremities",
-    "topics": ["Modalities", "Medical considerations"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Clients with diabetes may have reduced sensation, especially in the feet, increasing risk of unnoticed injury.",
     "long_explanation": "Peripheral neuropathy is common in clients with diabetes. Massage therapists should use caution when working on the feet and extremities, monitor for skin changes, and avoid excessive pressure in areas with decreased sensation.",
-    "applied_example": "During a session, the therapist checks the client's feet for wounds and avoids aggressive pressure to prevent skin damage in areas with neuropathy.",
+    "clinical_application": "During a session, the therapist checks the client's feet for wounds and avoids aggressive pressure to prevent skin damage in areas with neuropathy.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["diabetes", "neuropathy", "contraindication", "safety", "massage"],
     "keywords": [
       "diabetes",
@@ -196,14 +242,11 @@
       "circulation",
       "wound care"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_007",
+    "correctAnswer": "Comfort and emotional support through gentle touch",
     "question": "What is a key goal when providing massage for clients in hospice care?",
     "options": [
       "Rehabilitation of muscular function",
@@ -211,14 +254,24 @@
       "Comfort and emotional support through gentle touch",
       "Stimulating the nervous system with percussion techniques"
     ],
-    "correctAnswer": "Comfort and emotional support through gentle touch",
-    "topics": ["Modalities", "Palliative care"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Hospice massage focuses on comfort and emotional connection, not corrective work.",
     "long_explanation": "End-of-life massage emphasizes presence, emotional support, and gentle, soothing techniques. It avoids stimulating or deep tissue work, prioritizing touch that brings comfort, pain relief, and connection.",
-    "applied_example": "A therapist uses light effleurage on the arms of a terminally ill client while offering compassionate presence and calm communication.",
+    "clinical_application": "A therapist uses light effleurage on the arms of a terminally ill client while offering compassionate presence and calm communication.",
+    "source_reference": "Hospice and Palliative Nurses Foundation",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "hospice",
       "comfort care",
@@ -232,14 +285,11 @@
       "soothing touch",
       "empathy"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Hospice and Palliative Nurses Foundation",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_008",
+    "correctAnswer": "Be mindful of spasticity and adjust pressure and positioning",
     "question": "When massaging a client with cerebral palsy, what is most important?",
     "options": [
       "Use intense stretching to improve range of motion",
@@ -247,14 +297,24 @@
       "Be mindful of spasticity and adjust pressure and positioning",
       "Avoid communication if the client is nonverbal"
     ],
-    "correctAnswer": "Be mindful of spasticity and adjust pressure and positioning",
-    "topics": ["Modalities", "Neuromuscular conditions"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Spasticity and motor challenges require adaptive pressure and clear, inclusive communication.",
     "long_explanation": "Clients with cerebral palsy may have variable tone, limited mobility, and communication needs. Therapists must adjust techniques for spastic areas and respect the client’s preferred communication method and boundaries.",
-    "applied_example": "A therapist asks the client's caregiver for positioning tips and uses slow, rhythmic techniques to reduce spasticity without overstimulating the nervous system.",
+    "clinical_application": "A therapist asks the client's caregiver for positioning tips and uses slow, rhythmic techniques to reduce spasticity without overstimulating the nervous system.",
+    "source_reference": "Massage & Bodywork Magazine: Special Populations Edition",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "cerebral_palsy",
       "spasticity",
@@ -268,14 +328,11 @@
       "muscle tone",
       "neurological conditions"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Massage & Bodywork Magazine: Special Populations Edition",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_009",
+    "correctAnswer": "Children with sensory integration issues",
     "question": "Which population benefits most from massage using rocking and rhythmic techniques?",
     "options": [
       "Post-surgical patients",
@@ -283,14 +340,24 @@
       "Clients recovering from fractures",
       "Elite athletes during peak season"
     ],
-    "correctAnswer": "Children with sensory integration issues",
-    "topics": ["Modalities", "Pediatric"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Children with sensory integration challenges often respond positively to rhythmic, grounding massage.",
     "long_explanation": "Rocking, rhythmic compression, and gentle pressure can help regulate the nervous system in children with sensory processing challenges. These techniques promote calm, proprioception, and safety when delivered in a predictable, respectful way.",
-    "applied_example": "A child on the autism spectrum with sensory processing issues receives rhythmic compressions while seated upright, helping reduce overstimulation.",
+    "clinical_application": "A child on the autism spectrum with sensory processing issues receives rhythmic compressions while seated upright, helping reduce overstimulation.",
+    "source_reference": "Pediatric Massage Therapy – Tina Allen",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "pediatrics",
       "sensory integration",
@@ -304,14 +371,11 @@
       "sensory massage",
       "proprioception"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Pediatric Massage Therapy – Tina Allen",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   },
   {
     "id": "special_populations_massage_010",
+    "correctAnswer": "Consistent routines, clear boundaries, and client control",
     "question": "For clients with PTSD, what massage strategy helps build trust and safety?",
     "options": [
       "Surprise changes in pressure and techniques",
@@ -319,14 +383,24 @@
       "Consistent routines, clear boundaries, and client control",
       "Avoiding discussion about comfort or consent"
     ],
-    "correctAnswer": "Consistent routines, clear boundaries, and client control",
-    "topics": ["Modalities", "Trauma-informed care"],
-    "subtopics": ["Special_populations"],
+    "topics": [
+      "modalities",
+      "special_populations",
+      "special_populations_massage"
+    ],
     "short_explanation": "Routine, predictability, and clear communication foster safety in trauma-informed massage.",
     "long_explanation": "Clients with PTSD may have heightened startle responses or anxiety related to physical touch. Trauma-informed care emphasizes consent, choice, communication, and consistent routines to foster a safe healing environment.",
-    "applied_example": "The therapist outlines what will happen during the session, offers frequent consent checks, and uses calm, slow techniques while letting the client set the pace.",
+    "clinical_application": "The therapist outlines what will happen during the session, offers frequent consent checks, and uses calm, slow techniques while letting the client set the pace.",
+    "source_reference": "Massage & Trauma Recovery – AMTA Education Series",
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/special_populations/special_populations_massage.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Special Populations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "PTSD",
       "trauma",
@@ -340,10 +414,6 @@
       "client empowerment",
       "PTSD care"
     ],
-    "mblex_category": "Pathology & Special Populations",
-    "source_reference": "Massage & Trauma Recovery – AMTA Education Series",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/special_populations/special_populations_massage.json",
-    "sourceFile": "special_populations_massage"
+    "synonyms": null
   }
 ]

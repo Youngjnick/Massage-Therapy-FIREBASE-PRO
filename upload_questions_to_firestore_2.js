@@ -55,7 +55,6 @@ function validateQuestion(q, file, idx) {
     errors.push('Missing or invalid correctAnswer');
   }
   if (!Array.isArray(q.abcd) || q.abcd.length !== q.options.length) errors.push('Missing or invalid abcd');
-  if (!q.sourceFile) errors.push('Missing sourceFile');
   // Warn if clinical explanation fields are missing (but do not block upload)
   const warnings = [];
   if (!q.short_explanation) warnings.push('Missing short_explanation');
@@ -72,9 +71,9 @@ function toSnakeCase(str) {
     : str;
 }
 
-function normalizeQuestionId(id, sourceFile, idx) {
-  if (!id && sourceFile && typeof idx === 'number') {
-    return `${sourceFile}_${String(idx + 1).padStart(3, '0')}`;
+function normalizeQuestionId(id, fileBase, idx) {
+  if (!id && fileBase && typeof idx === 'number') {
+    return `${fileBase}_${String(idx + 1).padStart(3, '0')}`;
   }
   if (!id) return id;
   return id.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
@@ -113,7 +112,6 @@ async function uploadQuestions() {
         q.abcd = q.options.map((opt, idx) => `${letters[idx] || '?'}${opt.startsWith('.') ? '' : '. '} ${opt}`.trim());
       }
       console.log('DEBUG: Question object before validation:', JSON.stringify(q, null, 2));
-      q.sourceFile = snakeSource;
       q.unit = snakeSource;
       if (q.id) {
         q.id = normalizeQuestionId(q.id, snakeSource, i);
@@ -156,7 +154,8 @@ async function uploadQuestions() {
     }
     const grouped = {};
     skippedQuestions.forEach(q => {
-      let fileName = (q.sourceFile ? q.sourceFile : 'unknown') + '.json';
+      // Use q.unit or fallback to 'unknown' for skipped file grouping
+      let fileName = (q.unit ? q.unit : 'unknown') + '.json';
       if (!grouped[fileName]) grouped[fileName] = [];
       grouped[fileName].push(q);
     });

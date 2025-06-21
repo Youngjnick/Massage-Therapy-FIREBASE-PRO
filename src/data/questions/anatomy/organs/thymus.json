@@ -1,6 +1,7 @@
 [
   {
     "id": "thymus_001",
+    "correctAnswer": "Mature T lymphocytes",
     "question": "What is the primary function of the thymus in the immune system?",
     "options": [
       "Produce insulin",
@@ -8,28 +9,27 @@
       "Store antibodies",
       "Filter blood"
     ],
-    "correctAnswer": "Mature T lymphocytes",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus is responsible for the maturation of T lymphocytes.",
     "long_explanation": "The thymus is essential in the development and education of T cells, which are critical for adaptive immunity. It is most active during childhood and shrinks after puberty.",
-    "applied_example": "Understanding the thymus is important in autoimmune disorders and may guide therapeutic communication in clients with immunodeficiencies.",
-    "category": "Immune Development",
+    "clinical_application": "Understanding the thymus is important in autoimmune disorders and may guide therapeutic communication in clients with immunodeficiencies.",
+    "source_reference": "Janeway's Immunobiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "basic",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T cells", "thymus function", "immune development"],
     "keywords": ["T lymphocyte maturation", "immune system", "thymopoiesis"],
-    "source_reference": "Janeway's Immunobiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_002",
+    "correctAnswer": "Behind the sternum in the mediastinum",
     "question": "Where is the thymus gland located?",
     "options": [
       "Above the kidneys",
@@ -37,52 +37,50 @@
       "Behind the sternum in the mediastinum",
       "Below the liver"
     ],
-    "correctAnswer": "Behind the sternum in the mediastinum",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus is located behind the sternum in the upper mediastinum.",
     "long_explanation": "The thymus lies anterior to the heart and behind the sternum. It is bilobed and gradually decreases in size with age.",
-    "applied_example": "Avoid direct pressure over the sternum in infants or young children where the thymus may still be prominent.",
-    "category": "Anatomy",
+    "clinical_application": "Avoid direct pressure over the sternum in infants or young children where the thymus may still be prominent.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "basic",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["mediastinum", "sternum", "gland location"],
     "keywords": ["thymus location", "sternum", "anterior mediastinum"],
-    "source_reference": "Netter’s Atlas of Human Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_003",
+    "correctAnswer": "Thymosin",
     "question": "Which hormone is primarily secreted by the thymus to support T cell development?",
     "options": ["Insulin", "Thymosin", "Cortisol", "Melatonin"],
-    "correctAnswer": "Thymosin",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "Thymosin is the key hormone that supports T cell maturation.",
     "long_explanation": "Thymosin helps stimulate immature T cells to develop into functional immune cells. It plays a central role in immune competence.",
-    "applied_example": "Understanding hormonal influence on immunity can assist in assessing chronic fatigue or immune suppression in clients.",
-    "category": "Endocrine-Immune",
+    "clinical_application": "Understanding hormonal influence on immunity can assist in assessing chronic fatigue or immune suppression in clients.",
+    "source_reference": "Endocrinology by Hadley",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["thymosin", "T cell maturation", "hormone"],
     "keywords": ["thymic hormones", "immune modulation", "T lymphocyte"],
-    "source_reference": "Endocrinology by Hadley",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_004",
+    "correctAnswer": "It atrophies and becomes fatty",
     "question": "What happens to the thymus after puberty?",
     "options": [
       "It enlarges",
@@ -90,28 +88,27 @@
       "It atrophies and becomes fatty",
       "It becomes part of the thyroid"
     ],
-    "correctAnswer": "It atrophies and becomes fatty",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus atrophies and is replaced by fat after puberty.",
     "long_explanation": "Thymic involution is the process by which the thymus decreases in size and function with age, making adults more reliant on memory T cells.",
-    "applied_example": "Age-related decline in thymic function can influence healing and immunity in older massage clients.",
-    "category": "Aging & Immunity",
+    "clinical_application": "Age-related decline in thymic function can influence healing and immunity in older massage clients.",
+    "source_reference": "Robbins Pathologic Basis of Disease",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["thymic involution", "aging immune system", "fatty replacement"],
     "keywords": ["thymus shrinkage", "immune aging", "fatty infiltration"],
-    "source_reference": "Robbins Pathologic Basis of Disease",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_005",
+    "correctAnswer": "DiGeorge syndrome",
     "question": "Which immune disorder is associated with abnormal thymus development?",
     "options": [
       "Graves' disease",
@@ -119,32 +116,31 @@
       "Cushing's syndrome",
       "Multiple sclerosis"
     ],
-    "correctAnswer": "DiGeorge syndrome",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "DiGeorge syndrome involves thymic hypoplasia or aplasia.",
     "long_explanation": "DiGeorge syndrome is a genetic disorder leading to underdeveloped thymus and parathyroid glands, causing immunodeficiency and hypocalcemia.",
-    "applied_example": "Knowing this disorder may help a therapist understand infection risks and behavior in pediatric clients with genetic syndromes.",
-    "category": "Genetic Disorders",
+    "clinical_application": "Knowing this disorder may help a therapist understand infection risks and behavior in pediatric clients with genetic syndromes.",
+    "source_reference": "Medical Genetics by Jorde",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "advanced",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["DiGeorge", "thymus deficiency", "T cell immunodeficiency"],
     "keywords": [
       "22q11 deletion",
       "congenital immunity",
       "thymus malformation"
     ],
-    "source_reference": "Medical Genetics by Jorde",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_006",
+    "correctAnswer": "T cell positive and negative selection",
     "question": "What type of cell education occurs in the thymus?",
     "options": [
       "B cell tolerance",
@@ -152,32 +148,31 @@
       "T cell positive and negative selection",
       "Erythrocyte maturation"
     ],
-    "correctAnswer": "T cell positive and negative selection",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus ensures T cells are self-tolerant through positive and negative selection.",
     "long_explanation": "Developing T cells are tested for their ability to recognize self vs. non-self antigens. Cells failing these tests are eliminated to prevent autoimmunity.",
-    "applied_example": "Knowledge of immune cell selection supports awareness of autoimmune conditions in client history.",
-    "category": "Immunology",
+    "clinical_application": "Knowledge of immune cell selection supports awareness of autoimmune conditions in client history.",
+    "source_reference": "Janeway's Immunobiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "advanced",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["T cell selection", "autoimmunity", "central tolerance"],
     "keywords": [
       "positive selection",
       "negative selection",
       "thymic education"
     ],
-    "source_reference": "Janeway's Immunobiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_007",
+    "correctAnswer": "Thymic corpuscles (Hassall’s corpuscles)",
     "question": "Which structure is a histological hallmark of the thymus?",
     "options": [
       "Lymphoid follicles",
@@ -185,28 +180,27 @@
       "White pulp",
       "Peyer's patches"
     ],
-    "correctAnswer": "Thymic corpuscles (Hassall’s corpuscles)",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "Hassall’s corpuscles are unique to the thymus medulla.",
     "long_explanation": "These keratinized epithelial structures are thought to support T cell development and regulate dendritic cell function.",
-    "applied_example": "Understanding tissue microanatomy helps health professionals visualize immune regulation pathways.",
-    "category": "Histology",
+    "clinical_application": "Understanding tissue microanatomy helps health professionals visualize immune regulation pathways.",
+    "source_reference": "Histology: A Text and Atlas",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "advanced",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["Hassall’s corpuscles", "thymus histology", "medulla"],
     "keywords": ["thymic histology", "epithelial cells", "immune tissue"],
-    "source_reference": "Histology: A Text and Atlas",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_008",
+    "correctAnswer": "Prenatal and early childhood",
     "question": "At what life stage is the thymus most active?",
     "options": [
       "Prenatal and early childhood",
@@ -214,28 +208,27 @@
       "Mid-adulthood",
       "Late adulthood"
     ],
-    "correctAnswer": "Prenatal and early childhood",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus is most active prenatally and in early childhood.",
     "long_explanation": "Peak T cell development occurs in infancy, which sets up immune tolerance and memory that carry into adulthood.",
-    "applied_example": "This helps explain the susceptibility of infants to infection and the importance of immune monitoring.",
-    "category": "Development",
+    "clinical_application": "This helps explain the susceptibility of infants to infection and the importance of immune monitoring.",
+    "source_reference": "Developmental Biology by Gilbert",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "basic",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["early immunity", "pediatric thymus", "neonatal immunity"],
     "keywords": ["fetal development", "childhood immunity", "early T cells"],
-    "source_reference": "Developmental Biology by Gilbert",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_009",
+    "correctAnswer": "Third pharyngeal pouch",
     "question": "What is the embryologic origin of the thymus?",
     "options": [
       "Neural crest cells",
@@ -243,32 +236,31 @@
       "Third pharyngeal pouch",
       "Mesodermal stem cells"
     ],
-    "correctAnswer": "Third pharyngeal pouch",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus develops from the third pharyngeal pouch.",
     "long_explanation": "The third pharyngeal pouch gives rise to both the thymus and inferior parathyroid glands. Errors here can result in congenital immunodeficiency.",
-    "applied_example": "Knowledge of embryologic origin aids understanding congenital disorders like DiGeorge syndrome.",
-    "category": "Embryology",
+    "clinical_application": "Knowledge of embryologic origin aids understanding congenital disorders like DiGeorge syndrome.",
+    "source_reference": "Langman’s Medical Embryology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "advanced",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["pharyngeal pouch", "thymus development", "congenital disorders"],
     "keywords": [
       "branchial pouch",
       "embryologic derivation",
       "thymus embryology"
     ],
-    "source_reference": "Langman’s Medical Embryology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   },
   {
     "id": "thymus_010",
+    "correctAnswer": "Cell-mediated immunity",
     "question": "Which type of immunity does the thymus primarily influence?",
     "options": [
       "Innate immunity",
@@ -276,24 +268,22 @@
       "Cell-mediated immunity",
       "Passive immunity"
     ],
-    "correctAnswer": "Cell-mediated immunity",
-    "topics": ["Anatomy", "Thymus"],
-    "subtopics": ["Organs"],
+    "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "The thymus supports T cells, which mediate cell-mediated immunity.",
     "long_explanation": "T lymphocytes carry out direct immune responses to infected or abnormal cells. The thymus shapes their identity and self-tolerance.",
-    "applied_example": "Therapists may see impacts of poor T cell response in clients with chronic viral or autoimmune issues.",
-    "category": "Immunology",
+    "clinical_application": "Therapists may see impacts of poor T cell response in clients with chronic viral or autoimmune issues.",
+    "source_reference": "Janeway's Immunobiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/organs/thymus.json",
+    "question_type": null,
     "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["cell-mediated", "T cells", "thymus function"],
     "keywords": ["adaptive immunity", "killer T cells", "thymus-dependent"],
-    "source_reference": "Janeway's Immunobiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/organs/thymus.json",
-    "sourceFile": "thymus"
+    "synonyms": null
   }
 ]
