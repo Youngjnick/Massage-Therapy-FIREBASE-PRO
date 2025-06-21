@@ -1,9 +1,9 @@
 import { TextEncoder, TextDecoder } from 'util';
 if (typeof globalThis.TextEncoder === 'undefined') {
-  // @ts-expect-error: Assigning Node.js TextEncoder for Jest
-  globalThis.TextEncoder = TextEncoder;
-  // @ts-expect-error: Assigning Node.js TextDecoder for Jest
-  globalThis.TextDecoder = TextDecoder;
+  // @ts-ignore
+  globalThis.TextEncoder = TextEncoder as unknown as typeof globalThis.TextEncoder;
+  // @ts-ignore
+  globalThis.TextDecoder = TextDecoder as unknown as typeof globalThis.TextDecoder;
 }
 
 jest.mock('../hooks/useAnalytics', () => {

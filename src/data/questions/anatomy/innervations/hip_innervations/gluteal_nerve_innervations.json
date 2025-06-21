@@ -1,14 +1,16 @@
 [
   {
-    "id": "Gluteal Innervation 001",
+    "id": "gluteal_nerve_innervations_001",
     "question": "Which nerve provides innervation to the Tensor Fasciae Latae?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -16,7 +18,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -54,34 +55,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 97,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Which nerve provides innervation to the Tensor Fasciae Latae?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_002",
+    "question": "Identify the correct nerve responsible for activating the Gluteus Medius.",
     "options": [
       "Obturator Nerve",
-      "Inferior Gluteal Nerve",
       "Femoral Nerve",
+      "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 002",
-    "question": "Identify the correct nerve responsible for activating the Gluteus Medius.",
-    "answers": [
-      "Obturator Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 3,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -89,7 +78,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -125,7 +113,13 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 98,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Medius.",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_003",
+    "question": "Which nerve provides innervation to the Tensor Fasciae Latae?",
     "options": [
       "Obturator Nerve",
       "Femoral Nerve",
@@ -133,26 +127,8 @@
       "Superior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 003",
-    "question": "Which nerve provides innervation to the Tensor Fasciae Latae?",
-    "answers": [
-      "Obturator Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 3,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -160,7 +136,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -198,34 +173,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 86,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Which nerve provides innervation to the Tensor Fasciae Latae?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_004",
+    "question": "Which nerve provides innervation to the Gluteus Medius?",
     "options": [
-      "Obturator Nerve",
       "Femoral Nerve",
+      "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 004",
-    "question": "Which nerve provides innervation to the Gluteus Medius?",
-    "answers": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 3,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -233,7 +196,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -269,34 +231,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 85,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve provides innervation to the Gluteus Medius?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_005",
+    "question": "Which nerve innervates the Gluteus Maximus?",
     "options": [
       "Femoral Nerve",
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 005",
-    "question": "Which nerve innervates the Gluteus Maximus?",
-    "answers": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 2,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -304,7 +254,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -340,34 +289,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 96,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Which nerve innervates the Gluteus Maximus?",
-    "options": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 006",
+    "id": "gluteal_nerve_innervations_006",
     "question": "Which nerve provides innervation to the Gluteus Maximus?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -375,7 +312,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -411,34 +347,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 95,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Which nerve provides innervation to the Gluteus Maximus?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 007",
+    "id": "gluteal_nerve_innervations_007",
     "question": "Which nerve innervates the Tensor Fasciae Latae?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -446,7 +370,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -484,34 +407,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 92,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Which nerve innervates the Tensor Fasciae Latae?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Obturator Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 008",
+    "id": "gluteal_nerve_innervations_008",
     "question": "Which nerve innervates the Tensor Fasciae Latae?",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -519,7 +430,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -557,34 +467,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 98,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Which nerve innervates the Tensor Fasciae Latae?",
-    "options": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 009",
+    "id": "gluteal_nerve_innervations_009",
     "question": "The Gluteus Medius receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -592,7 +490,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -628,34 +525,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 98,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "The Gluteus Medius receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 010",
+    "id": "gluteal_nerve_innervations_010",
     "question": "Which nerve innervates the Tensor Fasciae Latae?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -663,7 +548,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -701,34 +585,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 94,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Which nerve innervates the Tensor Fasciae Latae?",
-    "options": [
-      "Obturator Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 011",
+    "id": "gluteal_nerve_innervations_011",
     "question": "Which nerve provides innervation to the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -736,7 +608,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -772,34 +643,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 93,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve provides innervation to the Gluteus Medius?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_012",
+    "question": "Which nerve innervates the Gluteus Minimus?",
     "options": [
-      "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve",
+      "Inferior Gluteal Nerve",
       "Femoral Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Obturator Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 012",
-    "question": "Which nerve innervates the Gluteus Minimus?",
-    "answers": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correct": 1,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -807,7 +666,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -843,34 +701,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 91,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Which nerve innervates the Gluteus Minimus?",
-    "options": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 013",
+    "id": "gluteal_nerve_innervations_013",
     "question": "Which nerve innervates the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Obturator Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -878,7 +724,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -914,34 +759,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 96,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve innervates the Gluteus Medius?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Femoral Nerve",
-      "C. Obturator Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 014",
+    "id": "gluteal_nerve_innervations_014",
     "question": "Which nerve innervates the Gluteus Maximus?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -949,7 +782,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -985,34 +817,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 86,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Which nerve innervates the Gluteus Maximus?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 015",
+    "id": "gluteal_nerve_innervations_015",
     "question": "The Tensor Fasciae Latae receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1020,7 +840,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1058,34 +877,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 95,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "The Tensor Fasciae Latae receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Obturator Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 016",
+    "id": "gluteal_nerve_innervations_016",
     "question": "Which nerve provides innervation to the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1093,7 +900,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1129,34 +935,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 91,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve provides innervation to the Gluteus Medius?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_017",
+    "question": "Which nerve provides innervation to the Gluteus Minimus?",
     "options": [
       "Obturator Nerve",
-      "Superior Gluteal Nerve",
       "Femoral Nerve",
+      "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 017",
-    "question": "Which nerve provides innervation to the Gluteus Minimus?",
-    "answers": [
-      "Obturator Nerve",
-      "Femoral Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1164,7 +958,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1200,34 +993,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 98,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Which nerve provides innervation to the Gluteus Minimus?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_018",
+    "question": "Which nerve provides innervation to the Tensor Fasciae Latae?",
     "options": [
       "Obturator Nerve",
-      "Femoral Nerve",
       "Superior Gluteal Nerve",
+      "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 018",
-    "question": "Which nerve provides innervation to the Tensor Fasciae Latae?",
-    "answers": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correct": 1,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1235,7 +1016,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1273,34 +1053,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 88,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Which nerve provides innervation to the Tensor Fasciae Latae?",
-    "options": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 019",
+    "id": "gluteal_nerve_innervations_019",
     "question": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1308,7 +1076,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1344,34 +1111,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 95,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "options": [
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 020",
+    "id": "gluteal_nerve_innervations_020",
     "question": "Which nerve innervates the Gluteus Minimus?",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1379,7 +1134,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1415,34 +1169,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 94,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Which nerve innervates the Gluteus Minimus?",
-    "options": [
-      "Femoral Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 021",
+    "id": "gluteal_nerve_innervations_021",
     "question": "The Gluteus Maximus receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1450,7 +1192,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1486,34 +1227,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 100,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "The Gluteus Maximus receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Obturator Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 022",
+    "id": "gluteal_nerve_innervations_022",
     "question": "The Gluteus Minimus receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1521,7 +1250,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1557,34 +1285,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 89,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "The Gluteus Minimus receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Femoral Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 023",
+    "id": "gluteal_nerve_innervations_023",
     "question": "Which nerve provides innervation to the Gluteus Maximus?",
-    "answers": [
+    "options": [
       "Inferior Gluteal Nerve",
       "Femoral Nerve",
       "Superior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1592,7 +1308,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1628,34 +1343,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 91,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Which nerve provides innervation to the Gluteus Maximus?",
-    "options": [
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve",
-      "Superior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Femoral Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 024",
+    "id": "gluteal_nerve_innervations_024",
     "question": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1663,7 +1366,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1701,34 +1403,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 89,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
-    "options": [
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 025",
+    "id": "gluteal_nerve_innervations_025",
     "question": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1736,7 +1426,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1772,34 +1461,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 93,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 026",
+    "id": "gluteal_nerve_innervations_026",
     "question": "The Gluteus Minimus receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Inferior Gluteal Nerve",
       "Femoral Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1807,7 +1484,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1843,34 +1519,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 86,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "The Gluteus Minimus receives its motor supply from which gluteal nerve?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_027",
+    "question": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
     "options": [
-      "Inferior Gluteal Nerve",
       "Femoral Nerve",
+      "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Femoral Nerve",
-      "C. Obturator Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 027",
-    "question": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
-    "answers": [
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 3,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1878,7 +1542,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1916,7 +1579,13 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 88,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_028",
+    "question": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
     "options": [
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
@@ -1924,26 +1593,8 @@
       "Superior Gluteal Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 028",
-    "question": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "answers": [
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 3,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -1951,7 +1602,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -1987,34 +1637,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 91,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "options": [
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 029",
+    "id": "gluteal_nerve_innervations_029",
     "question": "Which nerve innervates the Gluteus Maximus?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2022,7 +1660,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2058,34 +1695,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 90,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Which nerve innervates the Gluteus Maximus?",
-    "options": [
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Femoral Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 030",
+    "id": "gluteal_nerve_innervations_030",
     "question": "Which nerve provides innervation to the Gluteus Maximus?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2093,7 +1718,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2129,34 +1753,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 88,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Which nerve provides innervation to the Gluteus Maximus?",
-    "options": [
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 031",
+    "id": "gluteal_nerve_innervations_031",
     "question": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2164,7 +1776,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2200,34 +1811,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 94,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "options": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 032",
+    "id": "gluteal_nerve_innervations_032",
     "question": "The Tensor Fasciae Latae receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2235,7 +1834,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2273,34 +1871,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 97,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "The Tensor Fasciae Latae receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 033",
+    "id": "gluteal_nerve_innervations_033",
     "question": "Which nerve innervates the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2308,7 +1894,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2344,34 +1929,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 95,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve innervates the Gluteus Medius?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 035",
+    "id": "gluteal_nerve_innervations_034",
     "question": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2379,7 +1952,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2415,34 +1987,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 97,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "options": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 036",
+    "id": "gluteal_nerve_innervations_035",
     "question": "The Gluteus Maximus receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2450,7 +2010,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2486,34 +2045,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 86,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "The Gluteus Maximus receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 037",
+    "id": "gluteal_nerve_innervations_036",
     "question": "The Gluteus Medius receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2521,7 +2068,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2557,34 +2103,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 99,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "The Gluteus Medius receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 038",
+    "id": "gluteal_nerve_innervations_037",
     "question": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2592,7 +2126,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2630,7 +2163,13 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 98,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_038",
+    "question": "Which nerve innervates the Gluteus Minimus?",
     "options": [
       "Obturator Nerve",
       "Inferior Gluteal Nerve",
@@ -2638,26 +2177,8 @@
       "Femoral Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 039",
-    "question": "Which nerve innervates the Gluteus Minimus?",
-    "answers": [
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2665,7 +2186,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2701,34 +2221,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 96,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Which nerve innervates the Gluteus Minimus?",
-    "options": [
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Superior Gluteal Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 040",
+    "id": "gluteal_nerve_innervations_039",
     "question": "Which nerve innervates the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2736,7 +2244,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2772,34 +2279,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 93,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve innervates the Gluteus Medius?",
-    "options": [
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 041",
+    "id": "gluteal_nerve_innervations_040",
     "question": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Inferior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2807,7 +2302,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2843,34 +2337,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 85,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_041",
+    "question": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
     "options": [
-      "Obturator Nerve",
       "Femoral Nerve",
+      "Obturator Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
     "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 043",
-    "question": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "answers": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Maximus is innervated by the Inferior Gluteal Nerve.",
     "long_explanation": "The Inferior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Maximus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2878,7 +2360,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2914,34 +2395,22 @@
     "synonyms": ["Gluteus Maximus"],
     "relevance_score": 92,
     "img": "/img/gluteal_nerve/gluteus_maximus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Maximus.",
-    "options": [
-      "Femoral Nerve",
-      "Obturator Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Inferior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Obturator Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 044",
+    "id": "gluteal_nerve_innervations_042",
     "question": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "answers": [
+    "options": [
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve",
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -2949,7 +2418,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -2985,7 +2453,13 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 93,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
+  },
+  {
+    "id": "gluteal_nerve_innervations_043",
+    "question": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
     "options": [
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve",
@@ -2993,26 +2467,8 @@
       "Femoral Nerve"
     ],
     "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Femoral Nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
-  },
-  {
-    "id": "Gluteal Innervation 045",
-    "question": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
-    "answers": [
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Obturator Nerve",
-      "Femoral Nerve"
-    ],
-    "correct": 1,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Tensor Fasciae Latae is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Tensor Fasciae Latae, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -3020,7 +2476,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -3058,34 +2513,22 @@
     "synonyms": ["Tensor Fasciae Latae"],
     "relevance_score": 98,
     "img": "/img/gluteal_nerve/tensor_fasciae_latae.png",
-    "text": "Identify the correct nerve responsible for activating the Tensor Fasciae Latae.",
-    "options": [
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve",
-      "Obturator Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Inferior Gluteal Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 046",
+    "id": "gluteal_nerve_innervations_044",
     "question": "Which nerve innervates the Gluteus Minimus?",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Superior Gluteal Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -3093,7 +2536,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -3129,34 +2571,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 86,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Which nerve innervates the Gluteus Minimus?",
-    "options": [
-      "Obturator Nerve",
-      "Superior Gluteal Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Femoral Nerve",
-      "D. Inferior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 047",
+    "id": "gluteal_nerve_innervations_045",
     "question": "Which nerve provides innervation to the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correct": 0,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -3164,7 +2594,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -3200,34 +2629,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 92,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve provides innervation to the Gluteus Medius?",
-    "options": [
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Femoral Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Superior Gluteal Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Femoral Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 048",
+    "id": "gluteal_nerve_innervations_046",
     "question": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "answers": [
+    "options": [
       "Obturator Nerve",
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Minimus is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Minimus, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -3235,7 +2652,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -3271,34 +2687,22 @@
     "synonyms": ["Gluteus Minimus"],
     "relevance_score": 100,
     "img": "/img/gluteal_nerve/gluteus_minimus.png",
-    "text": "Identify the correct nerve responsible for activating the Gluteus Minimus.",
-    "options": [
-      "Obturator Nerve",
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Obturator Nerve",
-      "B. Femoral Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 049",
+    "id": "gluteal_nerve_innervations_047",
     "question": "The Gluteus Medius receives its motor supply from which gluteal nerve?",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -3306,7 +2710,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -3342,34 +2745,22 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 85,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "The Gluteus Medius receives its motor supply from which gluteal nerve?",
-    "options": [
-      "Femoral Nerve",
-      "Superior Gluteal Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Superior Gluteal Nerve",
-      "C. Inferior Gluteal Nerve",
-      "D. Obturator Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   },
   {
-    "id": "Gluteal Innervation 050",
+    "id": "gluteal_nerve_innervations_048",
     "question": "Which nerve innervates the Gluteus Medius?",
-    "answers": [
+    "options": [
       "Femoral Nerve",
       "Inferior Gluteal Nerve",
       "Obturator Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correct": 3,
+    "correctAnswer": "Superior Gluteal Nerve",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "distractors": [],
     "short_explanation": "The Gluteus Medius is innervated by the Superior Gluteal Nerve.",
     "long_explanation": "The Superior Gluteal Nerve arises from the sacral plexus and supplies the Gluteus Medius, a key structure in stabilizing the pelvis, supporting hip extension or abduction, and maintaining postural control during movement.",
@@ -3377,7 +2768,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Gluteal Nerves",
     "tags": [
@@ -3413,22 +2803,8 @@
     "synonyms": ["Gluteus Medius"],
     "relevance_score": 87,
     "img": "/img/gluteal_nerve/gluteus_medius.png",
-    "text": "Which nerve innervates the Gluteus Medius?",
-    "options": [
-      "Femoral Nerve",
-      "Inferior Gluteal Nerve",
-      "Obturator Nerve",
-      "Superior Gluteal Nerve"
-    ],
-    "correctAnswer": "Superior Gluteal Nerve",
-    "abcd": [
-      "A. Femoral Nerve",
-      "B. Inferior Gluteal Nerve",
-      "C. Obturator Nerve",
-      "D. Superior Gluteal Nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "gluteal_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/gluteal_nerve_innervations.json",
+    "sourceFile": "gluteal_nerve_innervations"
   }
 ]

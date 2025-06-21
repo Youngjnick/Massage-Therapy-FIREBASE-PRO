@@ -3,7 +3,8 @@ export interface Question {
     text: string;
     options: string[];
     correctAnswer: string;
-    topic?: string;
+    topics?: string[];
+    subtopics?: string[];
     category?: string;
     img?: string;
     media?: string;

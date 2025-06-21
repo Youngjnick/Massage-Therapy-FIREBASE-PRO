@@ -1,9 +1,11 @@
 [
   {
-    "id": "Massage History 001",
+    "id": "history_of_massage_001",
     "question": "Which ancient civilization is credited with some of the earliest recorded uses of massage therapy?",
-    "answers": ["Romans", "Chinese", "Greeks", "Egyptians"],
-    "correct": 1,
+    "options": ["Romans", "Chinese", "Greeks", "Egyptians"],
+    "correctAnswer": "Chinese",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Ancient Chinese texts describe massage over 3,000 years ago.",
     "long_explanation": "Records from the Huangdi Neijing, an ancient Chinese medical text, reference massage as part of therapeutic practice dating back to around 2700 BCE.",
@@ -11,7 +13,6 @@
     "difficulty": "easy",
     "difficulty_rating": 2,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Foundations",
     "tags": [
@@ -37,19 +38,17 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["ancient massage", "Chinese medicine"],
-    "text": "Which ancient civilization is credited with some of the earliest recorded uses of massage therapy?",
-    "options": ["Romans", "Chinese", "Greeks", "Egyptians"],
-    "correctAnswer": "Chinese",
-    "abcd": ["A. Romans", "B. Chinese", "C. Greeks", "D. Egyptians"],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 002",
+    "id": "history_of_massage_002",
     "question": "Who is considered the father of Swedish massage?",
-    "answers": ["Avicenna", "Hippocrates", "Per Henrik Ling", "Johann Mezger"],
-    "correct": 2,
+    "options": ["Avicenna", "Hippocrates", "Per Henrik Ling", "Johann Mezger"],
+    "correctAnswer": "Per Henrik Ling",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Ling developed Swedish massage based on gymnastics and physiology.",
     "long_explanation": "Per Henrik Ling was a Swedish physician and fencing master who developed a system combining movement and touch known as medical gymnastics, which evolved into Swedish massage.",
@@ -57,7 +56,6 @@
     "difficulty": "easy",
     "difficulty_rating": 2,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Foundations",
     "tags": [
@@ -85,24 +83,17 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Ling", "Swedish founder"],
-    "text": "Who is considered the father of Swedish massage?",
-    "options": ["Avicenna", "Hippocrates", "Per Henrik Ling", "Johann Mezger"],
-    "correctAnswer": "Per Henrik Ling",
-    "abcd": [
-      "A. Avicenna",
-      "B. Hippocrates",
-      "C. Per Henrik Ling",
-      "D. Johann Mezger"
-    ],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 003",
+    "id": "history_of_massage_003",
     "question": "Which Greek physician referred to massage as 'an exercise without motion'?",
-    "answers": ["Herophilos", "Asclepius", "Hippocrates", "Galen"],
-    "correct": 2,
+    "options": ["Herophilos", "Asclepius", "Hippocrates", "Galen"],
+    "correctAnswer": "Hippocrates",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Hippocrates advocated for rubbing as a therapeutic tool.",
     "long_explanation": "Hippocrates, the father of Western medicine, described massage as an 'exercise without motion' and included it in treatment for injury, stiffness, and recovery.",
@@ -110,7 +101,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Greek Origins",
     "tags": [
@@ -138,24 +128,22 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Greek massage", "father of medicine"],
-    "text": "Which Greek physician referred to massage as 'an exercise without motion'?",
-    "options": ["Herophilos", "Asclepius", "Hippocrates", "Galen"],
-    "correctAnswer": "Hippocrates",
-    "abcd": ["A. Herophilos", "B. Asclepius", "C. Hippocrates", "D. Galen"],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 004",
+    "id": "history_of_massage_004",
     "question": "Which term did Johann Mezger introduce to describe massage techniques?",
-    "answers": [
+    "options": [
       "Petrissage, effleurage, friction, tapotement",
       "Myofascial release",
       "Shiatsu",
       "Tui Na"
     ],
-    "correct": 0,
+    "correctAnswer": "Petrissage, effleurage, friction, tapotement",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Mezger formalized massage using the French terms still used today.",
     "long_explanation": "In the 1800s, Johann Mezger adopted French terminology for massage strokes—effleurage (gliding), petrissage (kneading), friction, and tapotement (percussion)—standardizing Swedish massage techniques.",
@@ -163,7 +151,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Renaissance & Revival",
     "tags": [
@@ -203,29 +190,17 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Swedish strokes"],
-    "text": "Which term did Johann Mezger introduce to describe massage techniques?",
-    "options": [
-      "Petrissage, effleurage, friction, tapotement",
-      "Myofascial release",
-      "Shiatsu",
-      "Tui Na"
-    ],
-    "correctAnswer": "Petrissage, effleurage, friction, tapotement",
-    "abcd": [
-      "A. Petrissage, effleurage, friction, tapotement",
-      "B. Myofascial release",
-      "C. Shiatsu",
-      "D. Tui Na"
-    ],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 005",
+    "id": "history_of_massage_005",
     "question": "What is the name of the traditional Japanese massage that developed from Chinese medicine?",
-    "answers": ["Tui Na", "Shiatsu", "Lomi Lomi", "Ayurveda"],
-    "correct": 1,
+    "options": ["Tui Na", "Shiatsu", "Lomi Lomi", "Ayurveda"],
+    "correctAnswer": "Shiatsu",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Shiatsu is a Japanese massage rooted in Chinese meridian theory.",
     "long_explanation": "Shiatsu uses finger pressure on meridian points to balance qi (energy flow), similar to acupressure. It blends traditional Chinese medicine with Japanese philosophy and touch.",
@@ -233,7 +208,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Eastern Traditions",
     "tags": [
@@ -273,24 +247,22 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Shiatsu", "finger pressure"],
-    "text": "What is the name of the traditional Japanese massage that developed from Chinese medicine?",
-    "options": ["Tui Na", "Shiatsu", "Lomi Lomi", "Ayurveda"],
-    "correctAnswer": "Shiatsu",
-    "abcd": ["A. Tui Na", "B. Shiatsu", "C. Lomi Lomi", "D. Ayurveda"],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 006",
+    "id": "history_of_massage_006",
     "question": "Ayurvedic massage is associated with which traditional system of medicine?",
-    "answers": [
+    "options": [
       "Chinese Medicine",
       "Native American healing",
       "Indian Medicine",
       "Persian Medicine"
     ],
-    "correct": 2,
+    "correctAnswer": "Indian Medicine",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Ayurvedic massage comes from India’s ancient medical system.",
     "long_explanation": "Ayurveda emphasizes balance among the doshas (body types) and uses massage with herbal oils to promote health, digestion, and mental clarity.",
@@ -298,7 +270,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "World Traditions",
     "tags": [
@@ -338,34 +309,22 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Ayurvedic bodywork"],
-    "text": "Ayurvedic massage is associated with which traditional system of medicine?",
-    "options": [
-      "Chinese Medicine",
-      "Native American healing",
-      "Indian Medicine",
-      "Persian Medicine"
-    ],
-    "correctAnswer": "Indian Medicine",
-    "abcd": [
-      "A. Chinese Medicine",
-      "B. Native American healing",
-      "C. Indian Medicine",
-      "D. Persian Medicine"
-    ],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 007",
+    "id": "history_of_massage_007",
     "question": "Who helped introduce massage therapy to American medicine in the early 20th century?",
-    "answers": [
+    "options": [
       "Mary Shelley",
       "Harvey Kellogg",
       "Florence Nightingale",
       "John Upledger"
     ],
-    "correct": 1,
+    "correctAnswer": "Harvey Kellogg",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Harvey Kellogg promoted massage in his sanitarium and publications.",
     "long_explanation": "Kellogg was a physician who included massage, hydrotherapy, and exercise in his Battle Creek Sanitarium regimen and wrote 'The Art of Massage' in 1895.",
@@ -373,7 +332,6 @@
     "difficulty": "easy",
     "difficulty_rating": 2,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Modern Contributions",
     "tags": ["modality_massage_therapy"],
@@ -391,34 +349,22 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Dr. Kellogg"],
-    "text": "Who helped introduce massage therapy to American medicine in the early 20th century?",
-    "options": [
-      "Mary Shelley",
-      "Harvey Kellogg",
-      "Florence Nightingale",
-      "John Upledger"
-    ],
-    "correctAnswer": "Harvey Kellogg",
-    "abcd": [
-      "A. Mary Shelley",
-      "B. Harvey Kellogg",
-      "C. Florence Nightingale",
-      "D. John Upledger"
-    ],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 008",
+    "id": "history_of_massage_008",
     "question": "Who founded the craniosacral therapy system in the 20th century?",
-    "answers": [
+    "options": [
       "John Upledger",
       "Harvey Kellogg",
       "James Cyriax",
       "Moshe Feldenkrais"
     ],
-    "correct": 0,
+    "correctAnswer": "John Upledger",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Dr. John Upledger developed craniosacral therapy after researching cerebrospinal rhythms.",
     "long_explanation": "An osteopath and researcher, Upledger built on William Sutherland’s cranial osteopathy and created a light-touch therapy to influence CSF flow and nervous system regulation.",
@@ -426,7 +372,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Contemporary Movements",
     "tags": [
@@ -456,29 +401,17 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["craniosacral therapy", "Upledger"],
-    "text": "Who founded the craniosacral therapy system in the 20th century?",
-    "options": [
-      "John Upledger",
-      "Harvey Kellogg",
-      "James Cyriax",
-      "Moshe Feldenkrais"
-    ],
-    "correctAnswer": "John Upledger",
-    "abcd": [
-      "A. John Upledger",
-      "B. Harvey Kellogg",
-      "C. James Cyriax",
-      "D. Moshe Feldenkrais"
-    ],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 009",
+    "id": "history_of_massage_009",
     "question": "Which Roman physician popularized massage and exercise in medical treatments?",
-    "answers": ["Galen", "Herophilos", "Celsus", "Socrates"],
-    "correct": 0,
+    "options": ["Galen", "Herophilos", "Celsus", "Socrates"],
+    "correctAnswer": "Galen",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "Galen used massage to treat gladiators and believed in combining movement with healing.",
     "long_explanation": "As the personal physician to Roman emperors and gladiators, Galen promoted massage as part of daily hygiene and recovery protocols.",
@@ -486,7 +419,6 @@
     "difficulty": "easy",
     "difficulty_rating": 2,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Greek & Roman",
     "tags": [
@@ -514,19 +446,17 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Galenus"],
-    "text": "Which Roman physician popularized massage and exercise in medical treatments?",
-    "options": ["Galen", "Herophilos", "Celsus", "Socrates"],
-    "correctAnswer": "Galen",
-    "abcd": ["A. Galen", "B. Herophilos", "C. Celsus", "D. Socrates"],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   },
   {
-    "id": "Massage History 010",
+    "id": "history_of_massage_010",
     "question": "Which text is one of the earliest known references to massage in Indian Ayurvedic tradition?",
-    "answers": ["Bhagavad Gita", "Sushruta Samhita", "Neijing", "Qur'an"],
-    "correct": 1,
+    "options": ["Bhagavad Gita", "Sushruta Samhita", "Neijing", "Qur'an"],
+    "correctAnswer": "Sushruta Samhita",
+    "topics": ["History"],
+    "subtopics": ["History_of_massage.json"],
     "distractors": [],
     "short_explanation": "The Sushruta Samhita is a foundational Indian text mentioning massage.",
     "long_explanation": "Dating back to 600 BCE, this surgical text includes therapeutic bodywork using oils, herbs, and rubbing to balance doshas and promote health.",
@@ -534,7 +464,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "history",
     "category": "Massage Theory & History",
     "subcategory": "Timeline Overview",
     "tags": [
@@ -564,17 +493,8 @@
     "updated_at": "2025-05-24T14:54:13.463Z",
     "unit": "../../../src/data/questions/history/history_of_massage",
     "synonyms": ["Sushruta", "Indian surgical text"],
-    "text": "Which text is one of the earliest known references to massage in Indian Ayurvedic tradition?",
-    "options": ["Bhagavad Gita", "Sushruta Samhita", "Neijing", "Qur'an"],
-    "correctAnswer": "Sushruta Samhita",
-    "abcd": [
-      "A. Bhagavad Gita",
-      "B. Sushruta Samhita",
-      "C. Neijing",
-      "D. Qur'an"
-    ],
     "main_topic": "history",
-    "subtopic": "",
-    "filename": "history_of_massage.json"
+    "filepath": "data/questions/history/history_of_massage.json",
+    "sourceFile": "history_of_massage"
   }
 ]

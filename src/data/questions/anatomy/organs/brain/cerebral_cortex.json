@@ -1,20 +1,21 @@
 [
   {
     "id": "cerebral_cortex_001",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
     "question": "Which lobe of the cerebral cortex is primarily responsible for processing visual information?",
-    "answers": [
+    "options": [
       "Frontal lobe",
       "Temporal lobe",
       "Parietal lobe",
       "Occipital lobe"
     ],
-    "correct": "Occipital lobe",
+    "correctAnswer": "Occipital lobe",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The occipital lobe processes visual input.",
     "long_explanation": "Located at the back of the brain, the occipital lobe houses the primary visual cortex, which receives and interprets input from the eyes.",
     "clinical_application": "Damage to this area may lead to visual disturbances or blindness, important for massage therapists observing neurological symptoms.",
@@ -23,25 +24,26 @@
     "synonyms": ["visual processing"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_002",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
     "question": "Which part of the cerebral cortex is associated with voluntary motor control?",
-    "answers": [
+    "options": [
       "Primary motor cortex",
       "Broca’s area",
       "Wernicke’s area",
       "Somatosensory cortex"
     ],
-    "correct": "Primary motor cortex",
+    "correctAnswer": "Primary motor cortex",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The primary motor cortex initiates voluntary movement.",
     "long_explanation": "Located in the precentral gyrus of the frontal lobe, this area controls voluntary movement of muscles, with a topographic organization known as the motor homunculus.",
     "clinical_application": "Massage therapy may complement motor rehabilitation by stimulating proprioception and muscle coordination.",
@@ -50,25 +52,26 @@
     "synonyms": ["motor area"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_003",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
     "question": "Which area of the cerebral cortex is critical for understanding language?",
-    "answers": [
+    "options": [
       "Broca’s area",
       "Wernicke’s area",
       "Premotor cortex",
       "Angular gyrus"
     ],
-    "correct": "Wernicke’s area",
+    "correctAnswer": "Wernicke’s area",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "Wernicke’s area is responsible for language comprehension.",
     "long_explanation": "Located in the posterior superior temporal gyrus, Wernicke’s area allows for the understanding of spoken and written language. Damage here results in receptive aphasia.",
     "clinical_application": "Clients with stroke-induced aphasia may benefit from adapted communication techniques in massage sessions.",
@@ -77,25 +80,26 @@
     "synonyms": ["language understanding"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_004",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "Multiple Choice",
     "question": "Which lobe is most associated with reasoning, planning, and problem-solving?",
-    "answers": [
+    "options": [
       "Occipital lobe",
       "Parietal lobe",
       "Frontal lobe",
       "Temporal lobe"
     ],
-    "correct": "Frontal lobe",
+    "correctAnswer": "Frontal lobe",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "Multiple Choice",
     "short_explanation": "The frontal lobe handles executive functions.",
     "long_explanation": "The prefrontal cortex in the frontal lobe plays a major role in decision making, judgment, and complex problem-solving, which are crucial for goal-directed behavior.",
     "clinical_application": "Massage may support mental clarity by reducing stress and enhancing parasympathetic tone affecting frontal activity.",
@@ -104,25 +108,26 @@
     "synonyms": ["executive lobe"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_005",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
     "question": "Which lobe of the cerebral cortex processes sensory input related to touch and proprioception?",
-    "answers": [
+    "options": [
       "Frontal lobe",
       "Temporal lobe",
       "Parietal lobe",
       "Occipital lobe"
     ],
-    "correct": "Parietal lobe",
+    "correctAnswer": "Parietal lobe",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The parietal lobe processes tactile sensory input.",
     "long_explanation": "Located behind the central sulcus, the parietal lobe contains the primary somatosensory cortex, which receives information about pressure, pain, temperature, and spatial sense.",
     "clinical_application": "Massage therapy directly stimulates somatosensory input, enhancing body awareness and reducing tension.",
@@ -131,25 +136,26 @@
     "synonyms": ["sensory cortex"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_006",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
     "question": "Damage to Broca’s area results in which clinical condition?",
-    "answers": [
+    "options": [
       "Fluent aphasia",
       "Expressive aphasia",
       "Anomic aphasia",
       "Global aphasia"
     ],
-    "correct": "Expressive aphasia",
+    "correctAnswer": "Expressive aphasia",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "Broca’s area damage leads to expressive aphasia.",
     "long_explanation": "Located in the left inferior frontal gyrus, Broca’s area controls speech production. Damage results in difficulty forming words, although comprehension remains intact.",
     "clinical_application": "Therapists may need to adjust communication strategies for clients with expressive language limitations.",
@@ -158,25 +164,26 @@
     "synonyms": ["motor aphasia"],
     "mblex_category": "Pathology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_007",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
     "question": "The central sulcus separates which two lobes of the brain?",
-    "answers": [
+    "options": [
       "Frontal and parietal lobes",
       "Temporal and occipital lobes",
       "Frontal and occipital lobes",
       "Parietal and temporal lobes"
     ],
-    "correct": "Frontal and parietal lobes",
+    "correctAnswer": "Frontal and parietal lobes",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The central sulcus divides the frontal and parietal lobes.",
     "long_explanation": "This prominent groove distinguishes the precentral gyrus (motor) from the postcentral gyrus (sensory), marking a major anatomical landmark in the cerebral cortex.",
     "clinical_application": "Understanding brain landmarks aids in interpreting neurological symptoms that may emerge in massage clients with past trauma.",
@@ -185,25 +192,26 @@
     "synonyms": ["Rolandic fissure"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_008",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
     "question": "Which cortical region is involved in auditory perception?",
-    "answers": [
+    "options": [
       "Occipital lobe",
       "Temporal lobe",
       "Parietal lobe",
       "Frontal lobe"
     ],
-    "correct": "Temporal lobe",
+    "correctAnswer": "Temporal lobe",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The auditory cortex is located in the temporal lobe.",
     "long_explanation": "The superior temporal gyrus houses the primary auditory cortex, which processes sound frequency, intensity, and patterns.",
     "clinical_application": "Massage near the neck and jaw may help clients experiencing auditory sensitivity linked to muscle tension.",
@@ -212,25 +220,26 @@
     "synonyms": ["auditory area"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_009",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
     "question": "Which gyri are involved in somatosensory and motor processing respectively?",
-    "answers": [
+    "options": [
       "Superior and middle temporal gyri",
       "Postcentral and precentral gyri",
       "Angular and supramarginal gyri",
       "Cingulate and parahippocampal gyri"
     ],
-    "correct": "Postcentral and precentral gyri",
+    "correctAnswer": "Postcentral and precentral gyri",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "Precentral = motor; Postcentral = sensory.",
     "long_explanation": "The precentral gyrus contains the primary motor cortex, while the postcentral gyrus contains the somatosensory cortex, playing key roles in initiating movement and processing touch.",
     "clinical_application": "Massage that incorporates proprioceptive feedback may influence sensorimotor integration in these cortical areas.",
@@ -239,25 +248,26 @@
     "synonyms": ["primary gyri"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   },
   {
     "id": "cerebral_cortex_010",
-    "topic": "Cerebral Cortex",
-    "category": "Anatomy",
-    "subcategory": "Brain",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
     "question": "What is the primary role of the cerebral cortex overall?",
-    "answers": [
+    "options": [
       "Regulate heartbeat and digestion",
       "Coordinate reflexes and posture",
       "Control high-level cognitive and sensory processing",
       "Balance hormones and blood chemistry"
     ],
-    "correct": "Control high-level cognitive and sensory processing",
+    "correctAnswer": "Control high-level cognitive and sensory processing",
+    "topics": ["Anatomy", "Cerebral Cortex"],
+    "subtopics": ["Organs", "Brain"],
+    "category": "Anatomy",
+    "subcategory": "Brain",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The cortex enables complex brain functions.",
     "long_explanation": "The cerebral cortex is responsible for conscious thought, memory, language, voluntary movement, and sensory interpretation, distinguishing humans from other species.",
     "clinical_application": "Massage may promote cortical relaxation through parasympathetic activation, aiding in cognitive restoration.",
@@ -266,7 +276,7 @@
     "synonyms": ["higher brain function"],
     "mblex_category": "Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "cerebral_cortex.json"
+    "filepath": "data/questions/anatomy/organs/brain/cerebral_cortex.json",
+    "sourceFile": "cerebral_cortex"
   }
 ]

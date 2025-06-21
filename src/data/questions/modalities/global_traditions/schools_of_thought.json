@@ -1,12 +1,13 @@
 [
   {
-    "id": "Modalities Schools 001",
+    "id": "schools_of_thought_001",
     "question": "Which massage school emphasizes structural integration through manipulation of fascia?",
-    "answers": ["Swedish Massage", "Trager Method", "Rolfing", "Shiatsu"],
-    "correct": 2,
+    "options": ["Swedish Massage", "Trager Method", "Rolfing", "Shiatsu"],
+    "correctAnswer": "Rolfing",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_massage",
@@ -49,27 +50,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 1,
-    "text": "Which massage school emphasizes structural integration through manipulation of fascia?",
-    "options": ["Swedish Massage", "Trager Method", "Rolfing", "Shiatsu"],
-    "correctAnswer": "Rolfing",
-    "abcd": [
-      "A. Swedish Massage",
-      "B. Trager Method",
-      "C. Rolfing",
-      "D. Shiatsu"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 002",
+    "id": "schools_of_thought_002",
     "question": "Which school of massage originated in Sweden and emphasizes relaxation and circulation?",
-    "answers": ["Shiatsu", "Swedish Massage", "Tui-na", "Ayurvedic Massage"],
-    "correct": 1,
+    "options": ["Shiatsu", "Swedish Massage", "Tui-na", "Ayurvedic Massage"],
+    "correctAnswer": "Swedish Massage",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_massage",
@@ -108,32 +101,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 2,
-    "text": "Which school of massage originated in Sweden and emphasizes relaxation and circulation?",
-    "options": ["Shiatsu", "Swedish Massage", "Tui-na", "Ayurvedic Massage"],
-    "correctAnswer": "Swedish Massage",
-    "abcd": [
-      "A. Shiatsu",
-      "B. Swedish Massage",
-      "C. Tui-na",
-      "D. Ayurvedic Massage"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 003",
+    "id": "schools_of_thought_003",
     "question": "Shiatsu is based on which of the following principles?",
-    "answers": [
+    "options": [
       "Lymphatic drainage and joint mobility",
       "Trigger points and fascia release",
       "Energy flow through meridians and acupressure points",
       "Muscle hypertrophy and stimulation"
     ],
-    "correct": 2,
+    "correctAnswer": "Energy flow through meridians and acupressure points",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_shiatsu",
@@ -174,32 +159,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 3,
-    "text": "Shiatsu is based on which of the following principles?",
-    "options": [
-      "Lymphatic drainage and joint mobility",
-      "Trigger points and fascia release",
-      "Energy flow through meridians and acupressure points",
-      "Muscle hypertrophy and stimulation"
-    ],
-    "correctAnswer": "Energy flow through meridians and acupressure points",
-    "abcd": [
-      "A. Lymphatic drainage and joint mobility",
-      "B. Trigger points and fascia release",
-      "C. Energy flow through meridians and acupressure points",
-      "D. Muscle hypertrophy and stimulation"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 004",
+    "id": "schools_of_thought_004",
     "question": "Which massage system uses herbal oils and marma points for balancing energy?",
-    "answers": ["Rolfing", "Ayurvedic Massage", "Shiatsu", "Swedish Massage"],
-    "correct": 1,
+    "options": ["Rolfing", "Ayurvedic Massage", "Shiatsu", "Swedish Massage"],
+    "correctAnswer": "Ayurvedic Massage",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_swedish",
@@ -242,32 +214,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 4,
-    "text": "Which massage system uses herbal oils and marma points for balancing energy?",
-    "options": ["Rolfing", "Ayurvedic Massage", "Shiatsu", "Swedish Massage"],
-    "correctAnswer": "Ayurvedic Massage",
-    "abcd": [
-      "A. Rolfing",
-      "B. Ayurvedic Massage",
-      "C. Shiatsu",
-      "D. Swedish Massage"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 005",
+    "id": "schools_of_thought_005",
     "question": "The Trager Method is most known for:",
-    "answers": [
+    "options": [
       "Using cross-fiber friction for deep tissue release",
       "Gentle rocking and mentastics for nervous system reeducation",
       "Firm tapping to stimulate muscles",
       "Heat therapy combined with oils"
     ],
-    "correct": 1,
+    "correctAnswer": "Gentle rocking and mentastics for nervous system reeducation",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_deep_tissue",
@@ -312,37 +276,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 5,
-    "text": "The Trager Method is most known for:",
-    "options": [
-      "Using cross-fiber friction for deep tissue release",
-      "Gentle rocking and mentastics for nervous system reeducation",
-      "Firm tapping to stimulate muscles",
-      "Heat therapy combined with oils"
-    ],
-    "correctAnswer": "Gentle rocking and mentastics for nervous system reeducation",
-    "abcd": [
-      "A. Using cross-fiber friction for deep tissue release",
-      "B. Gentle rocking and mentastics for nervous system reeducation",
-      "C. Firm tapping to stimulate muscles",
-      "D. Heat therapy combined with oils"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 006",
+    "id": "schools_of_thought_006",
     "question": "Which massage school developed 'effleurage,' 'petrissage,' and 'tapotement' techniques?",
-    "answers": [
+    "options": [
       "Tui-na",
       "Ayurvedic Massage",
       "Swedish Massage",
       "Reflexology"
     ],
-    "correct": 2,
+    "correctAnswer": "Swedish Massage",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_massage",
@@ -383,37 +334,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 6,
-    "text": "Which massage school developed 'effleurage,' 'petrissage,' and 'tapotement' techniques?",
-    "options": [
-      "Tui-na",
-      "Ayurvedic Massage",
-      "Swedish Massage",
-      "Reflexology"
-    ],
-    "correctAnswer": "Swedish Massage",
-    "abcd": [
-      "A. Tui-na",
-      "B. Ayurvedic Massage",
-      "C. Swedish Massage",
-      "D. Reflexology"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 007",
+    "id": "schools_of_thought_007",
     "question": "Tui-na is a component of which traditional medical system?",
-    "answers": [
+    "options": [
       "Ayurvedic Medicine",
       "Traditional Chinese Medicine",
       "Naturopathy",
       "Allopathy"
     ],
-    "correct": 1,
+    "correctAnswer": "Traditional Chinese Medicine",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["anatomy_component", "modality_ayurvedic"],
     "keywords": ["anatomy_component", "modality_ayurvedic"],
@@ -436,37 +374,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 7,
-    "text": "Tui-na is a component of which traditional medical system?",
-    "options": [
-      "Ayurvedic Medicine",
-      "Traditional Chinese Medicine",
-      "Naturopathy",
-      "Allopathy"
-    ],
-    "correctAnswer": "Traditional Chinese Medicine",
-    "abcd": [
-      "A. Ayurvedic Medicine",
-      "B. Traditional Chinese Medicine",
-      "C. Naturopathy",
-      "D. Allopathy"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 008",
+    "id": "schools_of_thought_008",
     "question": "Which modality works with polarity and energy balancing through touch and intention?",
-    "answers": [
+    "options": [
       "Myofascial Release",
       "Polarity Therapy",
       "Shiatsu",
       "Reflexology"
     ],
-    "correct": 1,
+    "correctAnswer": "Polarity Therapy",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_shiatsu",
@@ -503,32 +428,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 8,
-    "text": "Which modality works with polarity and energy balancing through touch and intention?",
-    "options": [
-      "Myofascial Release",
-      "Polarity Therapy",
-      "Shiatsu",
-      "Reflexology"
-    ],
-    "correctAnswer": "Polarity Therapy",
-    "abcd": [
-      "A. Myofascial Release",
-      "B. Polarity Therapy",
-      "C. Shiatsu",
-      "D. Reflexology"
-    ],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 009",
+    "id": "schools_of_thought_009",
     "question": "Which system applies pressure to mapped zones on feet and hands to affect internal organs?",
-    "answers": ["Trager Method", "Reflexology", "Amma", "Shiatsu"],
-    "correct": 1,
+    "options": ["Trager Method", "Reflexology", "Amma", "Shiatsu"],
+    "correctAnswer": "Reflexology",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_shiatsu",
@@ -565,22 +477,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 9,
-    "text": "Which system applies pressure to mapped zones on feet and hands to affect internal organs?",
-    "options": ["Trager Method", "Reflexology", "Amma", "Shiatsu"],
-    "correctAnswer": "Reflexology",
-    "abcd": ["A. Trager Method", "B. Reflexology", "C. Amma", "D. Shiatsu"],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   },
   {
-    "id": "Modalities Schools 010",
+    "id": "schools_of_thought_010",
     "question": "Which massage system emphasizes aligning the body with gravity in a 10-session series?",
-    "answers": ["Tui-na", "Rolfing", "Shiatsu", "Lomi Lomi"],
-    "correct": 1,
+    "options": ["Tui-na", "Rolfing", "Shiatsu", "Lomi Lomi"],
+    "correctAnswer": "Rolfing",
+    "topics": ["Modalities"],
+    "subtopics": ["Global_traditions"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_shiatsu", "modality_rolfing", "modality_massage_system"],
     "keywords": [
@@ -607,12 +516,8 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 10,
-    "text": "Which massage system emphasizes aligning the body with gravity in a 10-session series?",
-    "options": ["Tui-na", "Rolfing", "Shiatsu", "Lomi Lomi"],
-    "correctAnswer": "Rolfing",
-    "abcd": ["A. Tui-na", "B. Rolfing", "C. Shiatsu", "D. Lomi Lomi"],
     "main_topic": "modalities",
-    "subtopic": "global_traditions",
-    "filename": "schools_of_thought.json"
+    "filepath": "data/questions/modalities/global_traditions/schools_of_thought.json",
+    "sourceFile": "schools_of_thought"
   }
 ]

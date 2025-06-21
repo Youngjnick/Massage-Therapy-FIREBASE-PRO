@@ -2,13 +2,15 @@
   {
     "id": "intertrochanteric_crest_001",
     "question": "Where is the intertrochanteric crest located on the femur?",
-    "answers": [
+    "options": [
       "Between the greater and lesser trochanters on the anterior side",
       "Between the greater and lesser trochanters on the posterior side",
       "Just distal to the femoral neck",
       "Along the medial condyle"
     ],
-    "correct": 1,
+    "correctAnswer": "Between the greater and lesser trochanters on the posterior side",
+    "topics": ["Anatomy", "Skeletal Anatomy"],
+    "subtopics": ["Muscle_groups", "Hip"],
     "short_explanation": "It lies on the posterior femur between the greater and lesser trochanters.",
     "long_explanation": "The intertrochanteric crest is a bony ridge on the posterior femur that connects the greater and lesser trochanters. It serves as an attachment site for several deep muscles and plays a role in hip stability.",
     "clinical_application": "Palpation of this area can help locate deep rotators like quadratus femoris and evaluate hip mobility during massage or orthopedic assessment.",
@@ -19,7 +21,6 @@
       "anatomy",
       "hip"
     ],
-    "topic": "Skeletal Anatomy",
     "category": "Pelvis and Hip",
     "subcategory": "Femur Landmarks",
     "difficulty": "Easy",
@@ -27,48 +28,13 @@
     "question_type": "multiple_choice",
     "mblex_category": "Anatomy and Physiology",
     "source_reference": "Trail Guide to the Body",
-    "text": "Where is the intertrochanteric crest located on the femur?",
-    "options": [
-      "Between the greater and lesser trochanters on the anterior side",
-      "Between the greater and lesser trochanters on the posterior side",
-      "Just distal to the femoral neck",
-      "Along the medial condyle"
-    ],
-    "correctAnswer": "Between the greater and lesser trochanters on the posterior side",
-    "abcd": [
-      "A. Between the greater and lesser trochanters on the anterior side",
-      "B. Between the greater and lesser trochanters on the posterior side",
-      "C. Just distal to the femoral neck",
-      "D. Along the medial condyle"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_002",
     "question": "Which muscle inserts at the quadrate tubercle on the intertrochanteric crest?",
-    "answers": [
-      "Piriformis",
-      "Obturator externus",
-      "Gluteus minimus",
-      "Quadratus femoris"
-    ],
-    "correct": 3,
-    "short_explanation": "Quadratus femoris inserts into the quadrate tubercle of the intertrochanteric crest.",
-    "long_explanation": "The quadratus femoris is a deep lateral rotator of the hip that inserts into the quadrate tubercle on the intertrochanteric crest of the femur. This provides stability to the hip joint during rotation and weight-bearing activity.",
-    "clinical_application": "Trigger points or tension in quadratus femoris may refer pain to the ischial and posterior thigh region, which can be addressed through deep lateral hip massage.",
-    "tags": ["quadratus femoris", "hip rotators", "intertrochanteric crest"],
-    "keywords": ["quadrate tubercle", "hip muscles", "femur", "posterior hip"],
-    "topic": "Muscular System",
-    "category": "Deep Hip Rotators",
-    "subcategory": "Quadratus Femoris",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Kinesiology",
-    "source_reference": "Netter's Atlas of Human Anatomy",
-    "text": "Which muscle inserts at the quadrate tubercle on the intertrochanteric crest?",
     "options": [
       "Piriformis",
       "Obturator externus",
@@ -76,40 +42,27 @@
       "Quadratus femoris"
     ],
     "correctAnswer": "Quadratus femoris",
-    "abcd": [
-      "A. Piriformis",
-      "B. Obturator externus",
-      "C. Gluteus minimus",
-      "D. Quadratus femoris"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
-  },
-  {
-    "id": "intertrochanteric_crest_003",
-    "question": "The intertrochanteric crest provides muscle attachment for which action at the hip?",
-    "answers": [
-      "Hip flexion",
-      "Hip abduction",
-      "Hip lateral rotation",
-      "Hip adduction"
-    ],
-    "correct": 2,
-    "short_explanation": "It provides attachment for lateral rotators like quadratus femoris.",
-    "long_explanation": "The intertrochanteric crest is the insertion site for the quadratus femoris, a muscle responsible for lateral rotation of the femur at the hip joint. This contributes to postural alignment and movement control.",
-    "clinical_application": "Massage techniques that relieve lateral hip tightness can improve range of motion and alleviate sciatic-like referral patterns.",
-    "tags": ["hip rotation", "muscle attachment", "femur anatomy"],
-    "keywords": ["hip", "lateral rotation", "femur", "intertrochanteric crest"],
-    "topic": "Kinesiology",
-    "category": "Joint Actions",
-    "subcategory": "Hip Movements",
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Muscle_groups", "Hip"],
+    "short_explanation": "Quadratus femoris inserts into the quadrate tubercle of the intertrochanteric crest.",
+    "long_explanation": "The quadratus femoris is a deep lateral rotator of the hip that inserts into the quadrate tubercle on the intertrochanteric crest of the femur. This provides stability to the hip joint during rotation and weight-bearing activity.",
+    "clinical_application": "Trigger points or tension in quadratus femoris may refer pain to the ischial and posterior thigh region, which can be addressed through deep lateral hip massage.",
+    "tags": ["quadratus femoris", "hip rotators", "intertrochanteric crest"],
+    "keywords": ["quadrate tubercle", "hip muscles", "femur", "posterior hip"],
+    "category": "Deep Hip Rotators",
+    "subcategory": "Quadratus Femoris",
     "difficulty": "Medium",
     "difficulty_rating": 3,
     "question_type": "multiple_choice",
     "mblex_category": "Kinesiology",
-    "source_reference": "Kinesiology: The Skeletal System and Muscle Function",
-    "text": "The intertrochanteric crest provides muscle attachment for which action at the hip?",
+    "source_reference": "Netter's Atlas of Human Anatomy",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
+  },
+  {
+    "id": "intertrochanteric_crest_003",
+    "question": "The intertrochanteric crest provides muscle attachment for which action at the hip?",
     "options": [
       "Hip flexion",
       "Hip abduction",
@@ -117,40 +70,27 @@
       "Hip adduction"
     ],
     "correctAnswer": "Hip lateral rotation",
-    "abcd": [
-      "A. Hip flexion",
-      "B. Hip abduction",
-      "C. Hip lateral rotation",
-      "D. Hip adduction"
-    ],
+    "topics": ["Anatomy", "Kinesiology"],
+    "subtopics": ["Muscle_groups", "Hip"],
+    "short_explanation": "It provides attachment for lateral rotators like quadratus femoris.",
+    "long_explanation": "The intertrochanteric crest is the insertion site for the quadratus femoris, a muscle responsible for lateral rotation of the femur at the hip joint. This contributes to postural alignment and movement control.",
+    "clinical_application": "Massage techniques that relieve lateral hip tightness can improve range of motion and alleviate sciatic-like referral patterns.",
+    "tags": ["hip rotation", "muscle attachment", "femur anatomy"],
+    "keywords": ["hip", "lateral rotation", "femur", "intertrochanteric crest"],
+    "category": "Joint Actions",
+    "subcategory": "Hip Movements",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Kinesiology",
+    "source_reference": "Kinesiology: The Skeletal System and Muscle Function",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_004",
     "question": "What clinical condition might involve tenderness near the intertrochanteric crest?",
-    "answers": [
-      "Greater trochanteric bursitis",
-      "Quadratus femoris syndrome",
-      "Iliotibial band syndrome",
-      "Hip flexor strain"
-    ],
-    "correct": 1,
-    "short_explanation": "Quadratus femoris syndrome involves entrapment near this region.",
-    "long_explanation": "Quadratus femoris syndrome results from compression or irritation of the quadratus femoris muscle and surrounding structures near the intertrochanteric crest, potentially mimicking sciatica.",
-    "clinical_application": "Deep tissue and myofascial release in the lateral hip region can relieve nerve entrapment symptoms and restore mobility.",
-    "tags": ["hip pathology", "nerve entrapment", "quadratus femoris"],
-    "keywords": ["sciatica mimic", "hip syndrome", "posterior femur"],
-    "topic": "Pathology",
-    "category": "Musculoskeletal Conditions",
-    "subcategory": "Hip Region",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "mblex_category": "Pathology",
-    "source_reference": "Clinical Orthopedic Assessment Guide",
-    "text": "What clinical condition might involve tenderness near the intertrochanteric crest?",
     "options": [
       "Greater trochanteric bursitis",
       "Quadratus femoris syndrome",
@@ -158,40 +98,27 @@
       "Hip flexor strain"
     ],
     "correctAnswer": "Quadratus femoris syndrome",
-    "abcd": [
-      "A. Greater trochanteric bursitis",
-      "B. Quadratus femoris syndrome",
-      "C. Iliotibial band syndrome",
-      "D. Hip flexor strain"
-    ],
+    "topics": ["Anatomy", "Pathology"],
+    "subtopics": ["Muscle_groups", "Hip"],
+    "short_explanation": "Quadratus femoris syndrome involves entrapment near this region.",
+    "long_explanation": "Quadratus femoris syndrome results from compression or irritation of the quadratus femoris muscle and surrounding structures near the intertrochanteric crest, potentially mimicking sciatica.",
+    "clinical_application": "Deep tissue and myofascial release in the lateral hip region can relieve nerve entrapment symptoms and restore mobility.",
+    "tags": ["hip pathology", "nerve entrapment", "quadratus femoris"],
+    "keywords": ["sciatica mimic", "hip syndrome", "posterior femur"],
+    "category": "Musculoskeletal Conditions",
+    "subcategory": "Hip Region",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "multiple_choice",
+    "mblex_category": "Pathology",
+    "source_reference": "Clinical Orthopedic Assessment Guide",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_005",
     "question": "Which of the following techniques best targets the quadratus femoris over the intertrochanteric crest?",
-    "answers": [
-      "Effleurage with hip in flexion",
-      "Broad cross-fiber friction with lateral rotation",
-      "Circular petrissage in supine position",
-      "Superficial lymphatic drainage"
-    ],
-    "correct": 1,
-    "short_explanation": "Cross-fiber friction over the lateral hip activates deep tissues like quadratus femoris.",
-    "long_explanation": "The quadratus femoris can be accessed using deep broad friction while the hip is slightly laterally rotated. This technique addresses chronic tightness or trigger points that affect hip range and stability.",
-    "clinical_application": "Massage therapy that releases fascial tension in this area can reduce referral patterns and restore external rotation.",
-    "tags": ["deep tissue", "lateral hip", "quadratus femoris"],
-    "keywords": ["massage", "palpation", "hip rotators", "intertrochanteric"],
-    "topic": "Massage Techniques",
-    "category": "Orthopedic Massage",
-    "subcategory": "Hip and Pelvis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Massage Therapy Techniques",
-    "source_reference": "Clinical Massage Therapy Manual",
-    "text": "Which of the following techniques best targets the quadratus femoris over the intertrochanteric crest?",
     "options": [
       "Effleurage with hip in flexion",
       "Broad cross-fiber friction with lateral rotation",
@@ -199,26 +126,36 @@
       "Superficial lymphatic drainage"
     ],
     "correctAnswer": "Broad cross-fiber friction with lateral rotation",
-    "abcd": [
-      "A. Effleurage with hip in flexion",
-      "B. Broad cross-fiber friction with lateral rotation",
-      "C. Circular petrissage in supine position",
-      "D. Superficial lymphatic drainage"
-    ],
+    "topics": ["Anatomy", "Massage Techniques"],
+    "subtopics": ["Muscle_groups", "Hip"],
+    "short_explanation": "Cross-fiber friction over the lateral hip activates deep tissues like quadratus femoris.",
+    "long_explanation": "The quadratus femoris can be accessed using deep broad friction while the hip is slightly laterally rotated. This technique addresses chronic tightness or trigger points that affect hip range and stability.",
+    "clinical_application": "Massage therapy that releases fascial tension in this area can reduce referral patterns and restore external rotation.",
+    "tags": ["deep tissue", "lateral hip", "quadratus femoris"],
+    "keywords": ["massage", "palpation", "hip rotators", "intertrochanteric"],
+    "category": "Orthopedic Massage",
+    "subcategory": "Hip and Pelvis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Massage Therapy Techniques",
+    "source_reference": "Clinical Massage Therapy Manual",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_006",
     "question": "What bony structure is continuous with the intertrochanteric crest on the posterior femur?",
-    "answers": [
+    "options": [
       "Linea aspera",
       "Gluteal tuberosity",
       "Greater trochanter",
       "Pectineal line"
     ],
-    "correct": 1,
+    "correctAnswer": "Gluteal tuberosity",
+    "topics": ["Anatomy", "Skeletal Anatomy"],
+    "subtopics": ["Muscle_groups", "Hip"],
     "short_explanation": "The gluteal tuberosity lies inferior and lateral to the intertrochanteric crest.",
     "long_explanation": "The gluteal tuberosity is a roughened area on the posterior femur that lies below and slightly lateral to the intertrochanteric crest. It serves as the attachment site for part of the gluteus maximus.",
     "clinical_application": "Understanding this connection is essential when applying deep massage or myofascial release for gluteus maximus or sciatic region dysfunction.",
@@ -228,7 +165,6 @@
       "intertrochanteric crest",
       "femur landmarks"
     ],
-    "topic": "Skeletal Anatomy",
     "category": "Femur",
     "subcategory": "Posterior Landmarks",
     "difficulty": "Medium",
@@ -236,48 +172,13 @@
     "question_type": "multiple_choice",
     "mblex_category": "Anatomy and Physiology",
     "source_reference": "Trail Guide to the Body",
-    "text": "What bony structure is continuous with the intertrochanteric crest on the posterior femur?",
-    "options": [
-      "Linea aspera",
-      "Gluteal tuberosity",
-      "Greater trochanter",
-      "Pectineal line"
-    ],
-    "correctAnswer": "Gluteal tuberosity",
-    "abcd": [
-      "A. Linea aspera",
-      "B. Gluteal tuberosity",
-      "C. Greater trochanter",
-      "D. Pectineal line"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_007",
     "question": "Which of the following is the most accurate surface landmark to begin palpation toward the intertrochanteric crest?",
-    "answers": [
-      "Anterior superior iliac spine (ASIS)",
-      "Ischial tuberosity",
-      "Greater trochanter",
-      "Sacral promontory"
-    ],
-    "correct": 2,
-    "short_explanation": "The greater trochanter is a reliable bony landmark for locating the crest.",
-    "long_explanation": "The greater trochanter is easily palpable and serves as a reference point for locating deeper structures such as the intertrochanteric crest and quadratus femoris. It marks the lateral femur at the hip.",
-    "clinical_application": "Massage therapists often begin palpation at the greater trochanter when treating lateral hip tightness or deep rotator issues.",
-    "tags": ["palpation", "landmarks", "hip"],
-    "keywords": ["greater trochanter", "intertrochanteric crest", "palpation"],
-    "topic": "Palpation",
-    "category": "Bony Landmarks",
-    "subcategory": "Hip Region",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "mblex_category": "Kinesiology",
-    "source_reference": "Palpation Techniques Guide",
-    "text": "Which of the following is the most accurate surface landmark to begin palpation toward the intertrochanteric crest?",
     "options": [
       "Anterior superior iliac spine (ASIS)",
       "Ischial tuberosity",
@@ -285,40 +186,27 @@
       "Sacral promontory"
     ],
     "correctAnswer": "Greater trochanter",
-    "abcd": [
-      "A. Anterior superior iliac spine (ASIS)",
-      "B. Ischial tuberosity",
-      "C. Greater trochanter",
-      "D. Sacral promontory"
-    ],
+    "topics": ["Anatomy", "Palpation"],
+    "subtopics": ["Muscle_groups", "Hip"],
+    "short_explanation": "The greater trochanter is a reliable bony landmark for locating the crest.",
+    "long_explanation": "The greater trochanter is easily palpable and serves as a reference point for locating deeper structures such as the intertrochanteric crest and quadratus femoris. It marks the lateral femur at the hip.",
+    "clinical_application": "Massage therapists often begin palpation at the greater trochanter when treating lateral hip tightness or deep rotator issues.",
+    "tags": ["palpation", "landmarks", "hip"],
+    "keywords": ["greater trochanter", "intertrochanteric crest", "palpation"],
+    "category": "Bony Landmarks",
+    "subcategory": "Hip Region",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "multiple_choice",
+    "mblex_category": "Kinesiology",
+    "source_reference": "Palpation Techniques Guide",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_008",
     "question": "Which muscle, although not directly inserting on the crest, lies anterior and superior to it and may affect the same joint mechanics?",
-    "answers": [
-      "Psoas major",
-      "Tensor fasciae latae",
-      "Gluteus medius",
-      "Piriformis"
-    ],
-    "correct": 3,
-    "short_explanation": "Piriformis lies superior to the crest and influences hip rotation.",
-    "long_explanation": "The piriformis muscle lies just above the intertrochanteric crest and crosses the posterior hip. Though it doesn’t insert there, it acts on the same joint and can produce similar restrictions when tight.",
-    "clinical_application": "Differentiating between quadratus femoris and piriformis tension can help avoid misdiagnosis of sciatic symptoms in massage therapy.",
-    "tags": ["piriformis", "hip rotation", "sciatic region"],
-    "keywords": ["piriformis", "intertrochanteric crest", "hip muscles"],
-    "topic": "Muscular System",
-    "category": "Deep Rotators",
-    "subcategory": "Posterior Hip",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Kinesiology",
-    "source_reference": "Orthopedic Massage Manual",
-    "text": "Which muscle, although not directly inserting on the crest, lies anterior and superior to it and may affect the same joint mechanics?",
     "options": [
       "Psoas major",
       "Tensor fasciae latae",
@@ -326,26 +214,36 @@
       "Piriformis"
     ],
     "correctAnswer": "Piriformis",
-    "abcd": [
-      "A. Psoas major",
-      "B. Tensor fasciae latae",
-      "C. Gluteus medius",
-      "D. Piriformis"
-    ],
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Muscle_groups", "Hip"],
+    "short_explanation": "Piriformis lies superior to the crest and influences hip rotation.",
+    "long_explanation": "The piriformis muscle lies just above the intertrochanteric crest and crosses the posterior hip. Though it doesn’t insert there, it acts on the same joint and can produce similar restrictions when tight.",
+    "clinical_application": "Differentiating between quadratus femoris and piriformis tension can help avoid misdiagnosis of sciatic symptoms in massage therapy.",
+    "tags": ["piriformis", "hip rotation", "sciatic region"],
+    "keywords": ["piriformis", "intertrochanteric crest", "hip muscles"],
+    "category": "Deep Rotators",
+    "subcategory": "Posterior Hip",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Kinesiology",
+    "source_reference": "Orthopedic Massage Manual",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_009",
     "question": "What is the clinical significance of the intertrochanteric crest in total hip replacement surgeries?",
-    "answers": [
+    "options": [
       "It is often fractured during surgery",
       "It is used as a surgical landmark",
       "It anchors the prosthesis",
       "It is removed completely"
     ],
-    "correct": 1,
+    "correctAnswer": "It is used as a surgical landmark",
+    "topics": ["Anatomy", "Clinical Considerations"],
+    "subtopics": ["Muscle_groups", "Hip"],
     "short_explanation": "Surgeons use it as a landmark to align implants and preserve anatomical reference.",
     "long_explanation": "The intertrochanteric crest is preserved and used by orthopedic surgeons as a key bony landmark for positioning implants in total hip arthroplasty. Its location provides spatial reference for optimal function.",
     "clinical_application": "Massage therapists should be cautious when treating clients with hip replacements, avoiding excessive pressure near this region.",
@@ -356,7 +254,6 @@
       "landmarks",
       "massage precautions"
     ],
-    "topic": "Clinical Considerations",
     "category": "Surgical Relevance",
     "subcategory": "Hip Surgery",
     "difficulty": "Hard",
@@ -364,34 +261,22 @@
     "question_type": "multiple_choice",
     "mblex_category": "Pathology",
     "source_reference": "Surgical Anatomy Atlas",
-    "text": "What is the clinical significance of the intertrochanteric crest in total hip replacement surgeries?",
-    "options": [
-      "It is often fractured during surgery",
-      "It is used as a surgical landmark",
-      "It anchors the prosthesis",
-      "It is removed completely"
-    ],
-    "correctAnswer": "It is used as a surgical landmark",
-    "abcd": [
-      "A. It is often fractured during surgery",
-      "B. It is used as a surgical landmark",
-      "C. It anchors the prosthesis",
-      "D. It is removed completely"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   },
   {
     "id": "intertrochanteric_crest_010",
     "question": "Which two trochanters does the intertrochanteric crest connect?",
-    "answers": [
+    "options": [
       "Greater trochanter and gluteal tuberosity",
       "Lesser trochanter and pectineal line",
       "Greater trochanter and lesser trochanter",
       "Greater trochanter and linea aspera"
     ],
-    "correct": 2,
+    "correctAnswer": "Greater trochanter and lesser trochanter",
+    "topics": ["Anatomy", "Skeletal Anatomy"],
+    "subtopics": ["Muscle_groups", "Hip"],
     "short_explanation": "It bridges the greater and lesser trochanters on the posterior femur.",
     "long_explanation": "The intertrochanteric crest is a bony ridge running between the greater and lesser trochanters on the posterior side of the femur. This area plays a structural and functional role in hip stability.",
     "clinical_application": "Understanding this anatomy supports accurate palpation and safe application of deep massage in the hip region.",
@@ -401,7 +286,6 @@
       "lesser trochanter",
       "intertrochanteric crest"
     ],
-    "topic": "Skeletal Anatomy",
     "category": "Femoral Landmarks",
     "subcategory": "Posterior View",
     "difficulty": "Easy",
@@ -409,22 +293,8 @@
     "question_type": "multiple_choice",
     "mblex_category": "Anatomy and Physiology",
     "source_reference": "Trail Guide to the Body",
-    "text": "Which two trochanters does the intertrochanteric crest connect?",
-    "options": [
-      "Greater trochanter and gluteal tuberosity",
-      "Lesser trochanter and pectineal line",
-      "Greater trochanter and lesser trochanter",
-      "Greater trochanter and linea aspera"
-    ],
-    "correctAnswer": "Greater trochanter and lesser trochanter",
-    "abcd": [
-      "A. Greater trochanter and gluteal tuberosity",
-      "B. Lesser trochanter and pectineal line",
-      "C. Greater trochanter and lesser trochanter",
-      "D. Greater trochanter and linea aspera"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/hip",
-    "filename": "intertrochanteric_crest.json"
+    "filepath": "data/questions/anatomy/muscle_groups/hip/intertrochanteric_crest.json",
+    "sourceFile": "intertrochanteric_crest"
   }
 ]

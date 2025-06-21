@@ -1,18 +1,19 @@
 [
   {
-    "id": "Hypothalamus_001",
+    "id": "hypothalamus_001",
     "question": "Which of the following is a primary function of the hypothalamus?",
-    "answers": [
+    "options": [
       "Sensory relay",
       "Motor coordination",
       "Homeostasis regulation",
       "Language processing"
     ],
-    "correct": 2,
+    "correctAnswer": "Homeostasis regulation",
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
     "short_explanation": "The hypothalamus maintains homeostasis in the body.",
     "long_explanation": "The hypothalamus regulates essential body functions like temperature, thirst, hunger, sleep, and hormonal output through the pituitary gland.",
     "applied_example": "Understanding hypothalamic imbalance helps massage therapists address fatigue, stress, or thermoregulation issues in clients.",
-    "topic": "hypothalamus",
     "category": "Neuroendocrinology",
     "difficulty": "basic",
     "tags": ["homeostasis", "hypothalamus function"],
@@ -22,71 +23,32 @@
       "autonomic regulation"
     ],
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "text": "Which of the following is a primary function of the hypothalamus?",
-    "options": [
-      "Sensory relay",
-      "Motor coordination",
-      "Homeostasis regulation",
-      "Language processing"
-    ],
-    "correctAnswer": "Homeostasis regulation",
-    "abcd": [
-      "A. Sensory relay",
-      "B. Motor coordination",
-      "C. Homeostasis regulation",
-      "D. Language processing"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_002",
+    "id": "hypothalamus_002",
     "question": "Which gland is directly regulated by the hypothalamus?",
-    "answers": ["Thyroid", "Adrenal cortex", "Pituitary gland", "Pineal gland"],
-    "correct": 2,
+    "options": ["Thyroid", "Adrenal cortex", "Pituitary gland", "Pineal gland"],
+    "correctAnswer": "Pituitary gland",
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
     "short_explanation": "The hypothalamus regulates the anterior and posterior pituitary gland.",
     "long_explanation": "The hypothalamus controls the pituitary via hormonal signals (releasing/inhibiting factors) and direct neural connections.",
     "applied_example": "Massage for endocrine imbalances may be supported by understanding hypothalamic-pituitary feedback loops.",
-    "topic": "hypothalamus",
     "category": "Endocrine System",
     "difficulty": "intermediate",
     "tags": ["pituitary control", "hypothalamic hormones"],
     "keywords": ["HPA axis", "hypothalamic control", "endocrine signaling"],
     "source_reference": "Endocrine Physiology by Costanzo",
-    "text": "Which gland is directly regulated by the hypothalamus?",
-    "options": ["Thyroid", "Adrenal cortex", "Pituitary gland", "Pineal gland"],
-    "correctAnswer": "Pituitary gland",
-    "abcd": [
-      "A. Thyroid",
-      "B. Adrenal cortex",
-      "C. Pituitary gland",
-      "D. Pineal gland"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_003",
+    "id": "hypothalamus_003",
     "question": "What region of the hypothalamus is responsible for circadian rhythm regulation?",
-    "answers": [
-      "Arcuate nucleus",
-      "Suprachiasmatic nucleus",
-      "Paraventricular nucleus",
-      "Preoptic area"
-    ],
-    "correct": 1,
-    "short_explanation": "The suprachiasmatic nucleus (SCN) controls circadian rhythms.",
-    "long_explanation": "Located above the optic chiasm, the SCN receives light input from the retina and synchronizes biological clocks.",
-    "applied_example": "Massage therapy may help clients with sleep disturbances caused by SCN dysfunction or jet lag.",
-    "topic": "hypothalamus",
-    "category": "Neurobiology of Sleep",
-    "difficulty": "advanced",
-    "tags": ["circadian rhythm", "SCN", "biological clock"],
-    "keywords": ["suprachiasmatic", "hypothalamus light input", "sleep-wake"],
-    "source_reference": "Neuroscience: Exploring the Brain",
-    "text": "What region of the hypothalamus is responsible for circadian rhythm regulation?",
     "options": [
       "Arcuate nucleus",
       "Suprachiasmatic nucleus",
@@ -94,36 +56,23 @@
       "Preoptic area"
     ],
     "correctAnswer": "Suprachiasmatic nucleus",
-    "abcd": [
-      "A. Arcuate nucleus",
-      "B. Suprachiasmatic nucleus",
-      "C. Paraventricular nucleus",
-      "D. Preoptic area"
-    ],
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
+    "short_explanation": "The suprachiasmatic nucleus (SCN) controls circadian rhythms.",
+    "long_explanation": "Located above the optic chiasm, the SCN receives light input from the retina and synchronizes biological clocks.",
+    "applied_example": "Massage therapy may help clients with sleep disturbances caused by SCN dysfunction or jet lag.",
+    "category": "Neurobiology of Sleep",
+    "difficulty": "advanced",
+    "tags": ["circadian rhythm", "SCN", "biological clock"],
+    "keywords": ["suprachiasmatic", "hypothalamus light input", "sleep-wake"],
+    "source_reference": "Neuroscience: Exploring the Brain",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_004",
+    "id": "hypothalamus_004",
     "question": "Which hypothalamic nucleus is involved in appetite suppression?",
-    "answers": [
-      "Ventromedial nucleus",
-      "Lateral nucleus",
-      "Arcuate nucleus",
-      "Supraoptic nucleus"
-    ],
-    "correct": 0,
-    "short_explanation": "The ventromedial nucleus (VMN) suppresses appetite.",
-    "long_explanation": "Lesions in the VMN lead to hyperphagia, while stimulation inhibits eating behavior. It is a satiety center.",
-    "applied_example": "Understanding hypothalamic centers may inform massage goals for clients managing weight or metabolic disorders.",
-    "topic": "hypothalamus",
-    "category": "Feeding Behavior",
-    "difficulty": "intermediate",
-    "tags": ["appetite", "VMN", "hypothalamic control"],
-    "keywords": ["satiety", "feeding regulation", "weight management"],
-    "source_reference": "Principles of Neural Science",
-    "text": "Which hypothalamic nucleus is involved in appetite suppression?",
     "options": [
       "Ventromedial nucleus",
       "Lateral nucleus",
@@ -131,25 +80,30 @@
       "Supraoptic nucleus"
     ],
     "correctAnswer": "Ventromedial nucleus",
-    "abcd": [
-      "A. Ventromedial nucleus",
-      "B. Lateral nucleus",
-      "C. Arcuate nucleus",
-      "D. Supraoptic nucleus"
-    ],
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
+    "short_explanation": "The ventromedial nucleus (VMN) suppresses appetite.",
+    "long_explanation": "Lesions in the VMN lead to hyperphagia, while stimulation inhibits eating behavior. It is a satiety center.",
+    "applied_example": "Understanding hypothalamic centers may inform massage goals for clients managing weight or metabolic disorders.",
+    "category": "Feeding Behavior",
+    "difficulty": "intermediate",
+    "tags": ["appetite", "VMN", "hypothalamic control"],
+    "keywords": ["satiety", "feeding regulation", "weight management"],
+    "source_reference": "Principles of Neural Science",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_005",
+    "id": "hypothalamus_005",
     "question": "Which hormone is produced in the hypothalamus and stored in the posterior pituitary?",
-    "answers": ["Growth hormone", "Thyroxine", "Cortisol", "Oxytocin"],
-    "correct": 3,
+    "options": ["Growth hormone", "Thyroxine", "Cortisol", "Oxytocin"],
+    "correctAnswer": "Oxytocin",
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
     "short_explanation": "Oxytocin is synthesized in the hypothalamus.",
     "long_explanation": "Oxytocin and ADH are made in the hypothalamus (supraoptic and paraventricular nuclei) and stored/released by the posterior pituitary.",
     "applied_example": "Massage may help increase endogenous oxytocin levels, promoting bonding and stress relief.",
-    "topic": "hypothalamus",
     "category": "Hormonal Regulation",
     "difficulty": "basic",
     "tags": ["oxytocin", "posterior pituitary", "hormones"],
@@ -159,28 +113,25 @@
       "emotional bonding"
     ],
     "source_reference": "Endocrine Physiology by Costanzo",
-    "text": "Which hormone is produced in the hypothalamus and stored in the posterior pituitary?",
-    "options": ["Growth hormone", "Thyroxine", "Cortisol", "Oxytocin"],
-    "correctAnswer": "Oxytocin",
-    "abcd": ["A. Growth hormone", "B. Thyroxine", "C. Cortisol", "D. Oxytocin"],
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_006",
+    "id": "hypothalamus_006",
     "question": "Which part of the hypothalamus regulates body temperature?",
-    "answers": [
+    "options": [
       "Anterior hypothalamus",
       "Posterior hypothalamus",
       "Dorsomedial nucleus",
       "Mammillary body"
     ],
-    "correct": 0,
+    "correctAnswer": "Anterior hypothalamus",
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
     "short_explanation": "The anterior hypothalamus cools the body through vasodilation and sweating.",
     "long_explanation": "The anterior region promotes heat loss. In contrast, the posterior hypothalamus helps conserve heat during cold exposure.",
     "applied_example": "Clients with thermoregulatory issues (e.g. menopausal) may benefit from temperature-sensitive massage settings.",
-    "topic": "hypothalamus",
     "category": "Thermoregulation",
     "difficulty": "intermediate",
     "tags": ["temperature control", "heat regulation", "hypothalamus"],
@@ -190,44 +141,13 @@
       "sweating"
     ],
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "text": "Which part of the hypothalamus regulates body temperature?",
-    "options": [
-      "Anterior hypothalamus",
-      "Posterior hypothalamus",
-      "Dorsomedial nucleus",
-      "Mammillary body"
-    ],
-    "correctAnswer": "Anterior hypothalamus",
-    "abcd": [
-      "A. Anterior hypothalamus",
-      "B. Posterior hypothalamus",
-      "C. Dorsomedial nucleus",
-      "D. Mammillary body"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_007",
+    "id": "hypothalamus_007",
     "question": "Which neurotransmitter is primarily involved in hypothalamic regulation of stress?",
-    "answers": [
-      "Dopamine",
-      "Serotonin",
-      "Corticotropin-releasing hormone (CRH)",
-      "Glutamate"
-    ],
-    "correct": 2,
-    "short_explanation": "CRH triggers the stress response through the HPA axis.",
-    "long_explanation": "The hypothalamus releases CRH to stimulate the anterior pituitary to secrete ACTH, which then signals the adrenal glands to produce cortisol.",
-    "applied_example": "Understanding the stress axis helps massage therapists support clients with chronic HPA axis activation.",
-    "topic": "hypothalamus",
-    "category": "Stress Physiology",
-    "difficulty": "intermediate",
-    "tags": ["CRH", "stress", "HPA axis"],
-    "keywords": ["cortisol", "adrenal signaling", "stress management"],
-    "source_reference": "Robbins Basic Pathology",
-    "text": "Which neurotransmitter is primarily involved in hypothalamic regulation of stress?",
     "options": [
       "Dopamine",
       "Serotonin",
@@ -235,90 +155,61 @@
       "Glutamate"
     ],
     "correctAnswer": "Corticotropin-releasing hormone (CRH)",
-    "abcd": [
-      "A. Dopamine",
-      "B. Serotonin",
-      "C. Corticotropin-releasing hormone (CRH)",
-      "D. Glutamate"
-    ],
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
+    "short_explanation": "CRH triggers the stress response through the HPA axis.",
+    "long_explanation": "The hypothalamus releases CRH to stimulate the anterior pituitary to secrete ACTH, which then signals the adrenal glands to produce cortisol.",
+    "applied_example": "Understanding the stress axis helps massage therapists support clients with chronic HPA axis activation.",
+    "category": "Stress Physiology",
+    "difficulty": "intermediate",
+    "tags": ["CRH", "stress", "HPA axis"],
+    "keywords": ["cortisol", "adrenal signaling", "stress management"],
+    "source_reference": "Robbins Basic Pathology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_008",
+    "id": "hypothalamus_008",
     "question": "Which of the following structures connects the hypothalamus to the pituitary gland?",
-    "answers": ["Thalamus", "Infundibulum", "Optic chiasm", "Corpus callosum"],
-    "correct": 1,
+    "options": ["Thalamus", "Infundibulum", "Optic chiasm", "Corpus callosum"],
+    "correctAnswer": "Infundibulum",
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
     "short_explanation": "The infundibulum is the stalk linking the hypothalamus to the pituitary.",
     "long_explanation": "The infundibulum (pituitary stalk) transmits signals and hormones between the hypothalamus and the pituitary gland, crucial for endocrine integration.",
     "applied_example": "Pituitary stalk lesions can disrupt hormonal rhythms and may lead to fatigue, infertility, or electrolyte imbalance — all relevant in massage assessment.",
-    "topic": "hypothalamus",
     "category": "Neuroendocrine Connectivity",
     "difficulty": "basic",
     "tags": ["infundibulum", "pituitary", "hypothalamic signaling"],
     "keywords": ["pituitary stalk", "hormone relay", "hypothalamic link"],
     "source_reference": "Human Physiology (Sherwood)",
-    "text": "Which of the following structures connects the hypothalamus to the pituitary gland?",
-    "options": ["Thalamus", "Infundibulum", "Optic chiasm", "Corpus callosum"],
-    "correctAnswer": "Infundibulum",
-    "abcd": [
-      "A. Thalamus",
-      "B. Infundibulum",
-      "C. Optic chiasm",
-      "D. Corpus callosum"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_009",
+    "id": "hypothalamus_009",
     "question": "What behavior is most directly regulated by the hypothalamic preoptic area?",
-    "answers": ["Fear", "Memory", "Sleep initiation", "Fine motor control"],
-    "correct": 2,
+    "options": ["Fear", "Memory", "Sleep initiation", "Fine motor control"],
+    "correctAnswer": "Sleep initiation",
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
     "short_explanation": "The preoptic area plays a key role in initiating sleep.",
     "long_explanation": "The ventrolateral preoptic nucleus (VLPO) of the hypothalamus inhibits wakefulness-promoting neurons to initiate and maintain sleep.",
     "applied_example": "Massage promoting parasympathetic activation may complement hypothalamic sleep regulation in clients with insomnia.",
-    "topic": "hypothalamus",
     "category": "Sleep Neurobiology",
     "difficulty": "advanced",
     "tags": ["VLPO", "sleep", "preoptic"],
     "keywords": ["sleep onset", "sleep regulation", "hypothalamus sleep"],
     "source_reference": "Neuroscience: Purves et al.",
-    "text": "What behavior is most directly regulated by the hypothalamic preoptic area?",
-    "options": ["Fear", "Memory", "Sleep initiation", "Fine motor control"],
-    "correctAnswer": "Sleep initiation",
-    "abcd": [
-      "A. Fear",
-      "B. Memory",
-      "C. Sleep initiation",
-      "D. Fine motor control"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   },
   {
-    "id": "Hypothalamus_010",
+    "id": "hypothalamus_010",
     "question": "Which hypothalamic nucleus primarily produces antidiuretic hormone (ADH)?",
-    "answers": [
-      "Paraventricular nucleus",
-      "Arcuate nucleus",
-      "Supraoptic nucleus",
-      "Preoptic nucleus"
-    ],
-    "correct": 2,
-    "short_explanation": "The supraoptic nucleus synthesizes ADH.",
-    "long_explanation": "The supraoptic nucleus produces ADH (vasopressin), which regulates water balance by acting on the kidneys to conserve water.",
-    "applied_example": "Clients with fluid retention or dehydration may be influenced by hypothalamic-pituitary disruptions. Gentle lymphatic massage can assist in mild fluid imbalance.",
-    "topic": "hypothalamus",
-    "category": "Endocrine Regulation",
-    "difficulty": "intermediate",
-    "tags": ["ADH", "water regulation", "supraoptic"],
-    "keywords": ["vasopressin", "hypothalamus hormones", "kidney function"],
-    "source_reference": "Costanzo Physiology",
-    "text": "Which hypothalamic nucleus primarily produces antidiuretic hormone (ADH)?",
     "options": [
       "Paraventricular nucleus",
       "Arcuate nucleus",
@@ -326,14 +217,18 @@
       "Preoptic nucleus"
     ],
     "correctAnswer": "Supraoptic nucleus",
-    "abcd": [
-      "A. Paraventricular nucleus",
-      "B. Arcuate nucleus",
-      "C. Supraoptic nucleus",
-      "D. Preoptic nucleus"
-    ],
+    "topics": ["Anatomy", "Hypothalamus"],
+    "subtopics": ["Organs", "Brain"],
+    "short_explanation": "The supraoptic nucleus synthesizes ADH.",
+    "long_explanation": "The supraoptic nucleus produces ADH (vasopressin), which regulates water balance by acting on the kidneys to conserve water.",
+    "applied_example": "Clients with fluid retention or dehydration may be influenced by hypothalamic-pituitary disruptions. Gentle lymphatic massage can assist in mild fluid imbalance.",
+    "category": "Endocrine Regulation",
+    "difficulty": "intermediate",
+    "tags": ["ADH", "water regulation", "supraoptic"],
+    "keywords": ["vasopressin", "hypothalamus hormones", "kidney function"],
+    "source_reference": "Costanzo Physiology",
     "main_topic": "anatomy",
-    "subtopic": "organs/brain",
-    "filename": "hypothalamus.json"
+    "filepath": "data/questions/anatomy/organs/brain/hypothalamus.json",
+    "sourceFile": "hypothalamus"
   }
 ]

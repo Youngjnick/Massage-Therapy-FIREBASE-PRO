@@ -1,18 +1,19 @@
 [
   {
-    "id": "Pancreas_001",
+    "id": "pancreas_001",
     "question": "Which of the following best describes the dual function of the pancreas?",
-    "answers": [
+    "options": [
       "It only secretes insulin",
       "It only digests fats",
       "It has both endocrine and exocrine functions",
       "It stores bile for digestion"
     ],
-    "correct": 2,
+    "correctAnswer": "It has both endocrine and exocrine functions",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "The pancreas is both an endocrine and exocrine gland.",
     "long_explanation": "The pancreas serves two critical functions: exocrine (digestive enzyme production like amylase, lipase) and endocrine (hormone secretion like insulin and glucagon). This dual functionality plays a central role in metabolism and digestion.",
     "applied_example": "Understanding pancreatic function helps massage therapists recognize signs of metabolic imbalance or digestive disorders during client assessment.",
-    "topic": "organ_pancreas",
     "category": "Anatomy",
     "difficulty": "intermediate",
     "tags": ["organ_pancreas", "endocrine_system", "digestive_system"],
@@ -23,33 +24,20 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which of the following best describes the dual function of the pancreas?",
-    "options": [
-      "It only secretes insulin",
-      "It only digests fats",
-      "It has both endocrine and exocrine functions",
-      "It stores bile for digestion"
-    ],
-    "correctAnswer": "It has both endocrine and exocrine functions",
-    "abcd": [
-      "A. It only secretes insulin",
-      "B. It only digests fats",
-      "C. It has both endocrine and exocrine functions",
-      "D. It stores bile for digestion"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_002",
+    "id": "pancreas_002",
     "question": "Which hormone is secreted by the beta cells of the pancreas?",
-    "answers": ["Glucagon", "Somatostatin", "Insulin", "Adrenaline"],
-    "correct": 2,
+    "options": ["Glucagon", "Somatostatin", "Insulin", "Adrenaline"],
+    "correctAnswer": "Insulin",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Beta cells produce insulin to lower blood sugar.",
     "long_explanation": "Insulin is produced by beta cells in the islets of Langerhans. It facilitates glucose uptake into cells, thus reducing blood glucose levels. Dysfunction leads to diabetes mellitus.",
     "applied_example": "A massage therapist working with diabetic clients should be aware of insulin's role and recognize signs of hypoglycemia during sessions.",
-    "topic": "organ_pancreas",
     "category": "Endocrinology",
     "difficulty": "intermediate",
     "tags": ["organ_pancreas", "hormone", "endocrine_system"],
@@ -66,28 +54,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which hormone is secreted by the beta cells of the pancreas?",
-    "options": ["Glucagon", "Somatostatin", "Insulin", "Adrenaline"],
-    "correctAnswer": "Insulin",
-    "abcd": ["A. Glucagon", "B. Somatostatin", "C. Insulin", "D. Adrenaline"],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_003",
+    "id": "pancreas_003",
     "question": "Which digestive enzymes are produced by the pancreas?",
-    "answers": [
+    "options": [
       "Pepsin and amylase",
       "Trypsin, lipase, and amylase",
       "Bile and sucrase",
       "Lactase and insulin"
     ],
-    "correct": 1,
+    "correctAnswer": "Trypsin, lipase, and amylase",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "The pancreas secretes trypsin, lipase, and amylase for digestion.",
     "long_explanation": "Pancreatic enzymes aid in digestion: amylase breaks down carbohydrates, lipase digests fats, and trypsin acts on proteins. These are secreted into the small intestine via the pancreatic duct.",
     "applied_example": "Knowledge of digestive enzymes can guide a therapist’s nutritional awareness and referrals in clients with digestive complaints.",
-    "topic": "organ_pancreas",
     "category": "Digestive System",
     "difficulty": "basic",
     "tags": ["digestive_system", "organ_pancreas", "enzymes"],
@@ -98,38 +83,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which digestive enzymes are produced by the pancreas?",
-    "options": [
-      "Pepsin and amylase",
-      "Trypsin, lipase, and amylase",
-      "Bile and sucrase",
-      "Lactase and insulin"
-    ],
-    "correctAnswer": "Trypsin, lipase, and amylase",
-    "abcd": [
-      "A. Pepsin and amylase",
-      "B. Trypsin, lipase, and amylase",
-      "C. Bile and sucrase",
-      "D. Lactase and insulin"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_004",
+    "id": "pancreas_004",
     "question": "What is the primary effect of glucagon?",
-    "answers": [
+    "options": [
       "Lower blood sugar levels",
       "Raise blood sugar levels",
       "Decrease fat metabolism",
       "Increase protein synthesis"
     ],
-    "correct": 1,
+    "correctAnswer": "Raise blood sugar levels",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Glucagon raises blood glucose by stimulating glycogen breakdown.",
     "long_explanation": "Secreted by alpha cells in the pancreas, glucagon promotes glycogenolysis in the liver, releasing glucose into the bloodstream. It is the functional opposite of insulin.",
     "applied_example": "Understanding glucagon is vital for massage therapists when assessing energy levels or hypoglycemic symptoms in diabetic clients.",
-    "topic": "organ_pancreas",
     "category": "Endocrinology",
     "difficulty": "intermediate",
     "tags": ["organ_pancreas", "hormone", "glucose"],
@@ -140,38 +112,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "What is the primary effect of glucagon?",
-    "options": [
-      "Lower blood sugar levels",
-      "Raise blood sugar levels",
-      "Decrease fat metabolism",
-      "Increase protein synthesis"
-    ],
-    "correctAnswer": "Raise blood sugar levels",
-    "abcd": [
-      "A. Lower blood sugar levels",
-      "B. Raise blood sugar levels",
-      "C. Decrease fat metabolism",
-      "D. Increase protein synthesis"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_005",
+    "id": "pancreas_005",
     "question": "Which structure carries pancreatic enzymes into the duodenum?",
-    "answers": [
+    "options": [
       "Common bile duct",
       "Cystic duct",
       "Pancreatic duct",
       "Hepatic duct"
     ],
-    "correct": 2,
+    "correctAnswer": "Pancreatic duct",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Pancreatic enzymes travel through the pancreatic duct.",
     "long_explanation": "The pancreatic duct delivers digestive enzymes to the duodenum. It often merges with the common bile duct at the hepatopancreatic ampulla before entering the small intestine.",
     "applied_example": "Massage therapists should avoid deep abdominal work in clients with gallbladder or pancreatic duct disorders due to referred pain risk.",
-    "topic": "organ_pancreas",
     "category": "Digestive System",
     "difficulty": "basic",
     "tags": ["anatomy", "organ_pancreas", "digestive_system", "ducts"],
@@ -182,33 +141,20 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which structure carries pancreatic enzymes into the duodenum?",
-    "options": [
-      "Common bile duct",
-      "Cystic duct",
-      "Pancreatic duct",
-      "Hepatic duct"
-    ],
-    "correctAnswer": "Pancreatic duct",
-    "abcd": [
-      "A. Common bile duct",
-      "B. Cystic duct",
-      "C. Pancreatic duct",
-      "D. Hepatic duct"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_006",
+    "id": "pancreas_006",
     "question": "Which pancreatic cells secrete glucagon?",
-    "answers": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
-    "correct": 0,
+    "options": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
+    "correctAnswer": "Alpha cells",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Glucagon is secreted by alpha cells in the islets of Langerhans.",
     "long_explanation": "Alpha cells in the pancreas detect low blood glucose levels and release glucagon to stimulate glycogenolysis in the liver.",
     "applied_example": "Massage practitioners working with hypoglycemic clients should be aware of glucagon's compensatory effects.",
-    "topic": "organ_pancreas",
     "category": "Hormonal",
     "difficulty": "intermediate",
     "tags": ["alpha cells", "glucagon", "pancreas", "blood sugar"],
@@ -223,33 +169,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which pancreatic cells secrete glucagon?",
-    "options": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
-    "correctAnswer": "Alpha cells",
-    "abcd": [
-      "A. Alpha cells",
-      "B. Beta cells",
-      "C. Delta cells",
-      "D. Acinar cells"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_007",
+    "id": "pancreas_007",
     "question": "What is the function of somatostatin in the pancreas?",
-    "answers": [
+    "options": [
       "Increases insulin release",
       "Stimulates bile secretion",
       "Inhibits insulin and glucagon release",
       "Accelerates digestive enzyme release"
     ],
-    "correct": 2,
+    "correctAnswer": "Inhibits insulin and glucagon release",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Somatostatin inhibits both insulin and glucagon secretion.",
     "long_explanation": "Somatostatin, secreted by delta cells, regulates the endocrine system by suppressing the release of several hormones, including insulin, glucagon, and growth hormone.",
     "applied_example": "Understanding somatostatin is useful for interpreting hormonal dysregulation in complex endocrine disorders.",
-    "topic": "organ_pancreas",
     "category": "Hormonal",
     "difficulty": "advanced",
     "tags": ["pancreas", "somatostatin", "hormonal regulation"],
@@ -260,38 +198,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "What is the function of somatostatin in the pancreas?",
-    "options": [
-      "Increases insulin release",
-      "Stimulates bile secretion",
-      "Inhibits insulin and glucagon release",
-      "Accelerates digestive enzyme release"
-    ],
-    "correctAnswer": "Inhibits insulin and glucagon release",
-    "abcd": [
-      "A. Increases insulin release",
-      "B. Stimulates bile secretion",
-      "C. Inhibits insulin and glucagon release",
-      "D. Accelerates digestive enzyme release"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_008",
+    "id": "pancreas_008",
     "question": "Pancreatitis primarily affects which pancreatic function?",
-    "answers": [
+    "options": [
       "Hormone secretion",
       "Bile storage",
       "Exocrine enzyme release",
       "Insulin production"
     ],
-    "correct": 2,
+    "correctAnswer": "Exocrine enzyme release",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Pancreatitis impairs exocrine enzyme release for digestion.",
     "long_explanation": "Pancreatitis is inflammation of the pancreas, often due to gallstones or alcohol use. It damages acinar cells, reducing enzyme output, causing digestive issues.",
     "applied_example": "Massage therapists must refer out if a client reports upper abdominal pain with digestive symptoms suggestive of pancreatitis.",
-    "topic": "organ_pancreas",
     "category": "Pathology",
     "difficulty": "intermediate",
     "tags": ["pancreas", "inflammation", "exocrine"],
@@ -302,38 +227,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Pancreatitis primarily affects which pancreatic function?",
-    "options": [
-      "Hormone secretion",
-      "Bile storage",
-      "Exocrine enzyme release",
-      "Insulin production"
-    ],
-    "correctAnswer": "Exocrine enzyme release",
-    "abcd": [
-      "A. Hormone secretion",
-      "B. Bile storage",
-      "C. Exocrine enzyme release",
-      "D. Insulin production"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_009",
+    "id": "pancreas_009",
     "question": "Which pancreatic disorder results in poor nutrient absorption?",
-    "answers": [
+    "options": [
       "Pancreatitis",
       "Diabetes mellitus",
       "Cystic fibrosis",
       "Pancreatic cancer"
     ],
-    "correct": 2,
+    "correctAnswer": "Cystic fibrosis",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Cystic fibrosis leads to thick mucus that blocks pancreatic ducts.",
     "long_explanation": "In cystic fibrosis, thick secretions obstruct ducts, preventing digestive enzymes from reaching the intestine, resulting in malabsorption and nutrient deficiencies.",
     "applied_example": "Massage therapists may support clients with cystic fibrosis by easing thoracic tension and promoting lymphatic drainage.",
-    "topic": "organ_pancreas",
     "category": "Pathology",
     "difficulty": "advanced",
     "tags": ["pancreas", "cystic fibrosis", "malabsorption"],
@@ -344,38 +256,25 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which pancreatic disorder results in poor nutrient absorption?",
-    "options": [
-      "Pancreatitis",
-      "Diabetes mellitus",
-      "Cystic fibrosis",
-      "Pancreatic cancer"
-    ],
-    "correctAnswer": "Cystic fibrosis",
-    "abcd": [
-      "A. Pancreatitis",
-      "B. Diabetes mellitus",
-      "C. Cystic fibrosis",
-      "D. Pancreatic cancer"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   },
   {
-    "id": "Pancreas_010",
+    "id": "pancreas_010",
     "question": "What is the relationship between the pancreas and the liver in digestion?",
-    "answers": [
+    "options": [
       "The liver stores pancreatic enzymes",
       "They share a common duct entering the duodenum",
       "The pancreas detoxifies bile",
       "The liver produces insulin for the pancreas"
     ],
-    "correct": 1,
+    "correctAnswer": "They share a common duct entering the duodenum",
+    "topics": ["Anatomy", "Organ_pancreas"],
+    "subtopics": ["Organs", "Pancreas"],
     "short_explanation": "Pancreatic and bile ducts merge at the hepatopancreatic ampulla.",
     "long_explanation": "The liver and pancreas connect via the common bile and pancreatic ducts. These join to empty digestive secretions into the duodenum, aiding fat and nutrient digestion.",
     "applied_example": "Understanding this anatomy helps therapists interpret gallbladder and pancreatic referral patterns in abdominal or mid-back pain.",
-    "topic": "organ_pancreas",
     "category": "Anatomy",
     "difficulty": "intermediate",
     "tags": ["pancreas", "liver", "ducts"],
@@ -386,22 +285,8 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "What is the relationship between the pancreas and the liver in digestion?",
-    "options": [
-      "The liver stores pancreatic enzymes",
-      "They share a common duct entering the duodenum",
-      "The pancreas detoxifies bile",
-      "The liver produces insulin for the pancreas"
-    ],
-    "correctAnswer": "They share a common duct entering the duodenum",
-    "abcd": [
-      "A. The liver stores pancreatic enzymes",
-      "B. They share a common duct entering the duodenum",
-      "C. The pancreas detoxifies bile",
-      "D. The liver produces insulin for the pancreas"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "organs/pancreas",
-    "filename": "pancreas.json"
+    "filepath": "data/questions/anatomy/organs/pancreas/pancreas.json",
+    "sourceFile": "pancreas"
   }
 ]

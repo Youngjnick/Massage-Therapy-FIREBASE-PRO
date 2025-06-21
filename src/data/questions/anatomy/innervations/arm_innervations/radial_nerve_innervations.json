@@ -1,49 +1,7 @@
 [
   {
-    "id": "Radial Nerve 001",
+    "id": "radial_nerve_innervations_001",
     "question": "Which muscle is innervated by the radial nerve?",
-    "answers": [
-      "Triceps brachii",
-      "Biceps brachii",
-      "Flexor carpi ulnaris",
-      "Palmaris longus"
-    ],
-    "correct": 0,
-    "distractors": [],
-    "short_explanation": "The radial nerve innervates the triceps brachii, which is involved in elbow extension.",
-    "long_explanation": "The radial nerve innervates all the extensor muscles in the posterior compartment of the arm and forearm, including the triceps brachii. This is critical for elbow extension.",
-    "applied_example": "During massage, awareness of the triceps’ nerve supply ensures safe application of deep techniques on the posterior arm.",
-    "difficulty": "intermediate",
-    "topic": "anatomy",
-    "category": "Anatomy",
-    "tags": [
-      "anatomy_nerve",
-      "nerve_radial",
-      "innervation",
-      "condition_wrist_drop",
-      "massage_contraindications"
-    ],
-    "keywords": [
-      "radial nerve",
-      "triceps",
-      "posterior arm",
-      "wrist drop",
-      "dorsal hand",
-      "nerve palsy"
-    ],
-    "mblex_category": "Anatomy and Physiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-31T18:11:23.682937",
-    "updated_at": "2025-05-31T18:11:23.682937",
-    "unit": "radial nerve innervations",
-    "question_type": "multiple_choice",
-    "text": "Which muscle is innervated by the radial nerve?",
     "options": [
       "Triceps brachii",
       "Biceps brachii",
@@ -51,32 +9,13 @@
       "Palmaris longus"
     ],
     "correctAnswer": "Triceps brachii",
-    "abcd": [
-      "A. Triceps brachii",
-      "B. Biceps brachii",
-      "C. Flexor carpi ulnaris",
-      "D. Palmaris longus"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
-  },
-  {
-    "id": "Radial Nerve 002",
-    "question": "What sensory area is primarily supplied by the radial nerve?",
-    "answers": [
-      "Dorsal hand and posterior forearm",
-      "Palmar surface of the hand",
-      "Medial thigh",
-      "Lateral leg"
-    ],
-    "correct": 0,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
-    "short_explanation": "The radial nerve provides sensation to the dorsal hand and posterior forearm.",
-    "long_explanation": "The radial nerve is responsible for cutaneous sensation on the posterior arm, posterior forearm, and dorsal surface of the hand, particularly over the thumb and index finger.",
-    "applied_example": "Clients complaining of dorsal hand numbness may have compression of the radial nerve requiring modification of massage techniques.",
+    "short_explanation": "The radial nerve innervates the triceps brachii, which is involved in elbow extension.",
+    "long_explanation": "The radial nerve innervates all the extensor muscles in the posterior compartment of the arm and forearm, including the triceps brachii. This is critical for elbow extension.",
+    "applied_example": "During massage, awareness of the triceps’ nerve supply ensures safe application of deep techniques on the posterior arm.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -105,7 +44,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "What sensory area is primarily supplied by the radial nerve?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
+  },
+  {
+    "id": "radial_nerve_innervations_002",
+    "question": "What sensory area is primarily supplied by the radial nerve?",
     "options": [
       "Dorsal hand and posterior forearm",
       "Palmar surface of the hand",
@@ -113,32 +58,13 @@
       "Lateral leg"
     ],
     "correctAnswer": "Dorsal hand and posterior forearm",
-    "abcd": [
-      "A. Dorsal hand and posterior forearm",
-      "B. Palmar surface of the hand",
-      "C. Medial thigh",
-      "D. Lateral leg"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
-  },
-  {
-    "id": "Radial Nerve 003",
-    "question": "Damage to the radial nerve at the spiral groove most likely causes what deficit?",
-    "answers": [
-      "Wrist drop",
-      "Loss of hand sensation only",
-      "Shoulder dislocation",
-      "Knee hyperextension"
-    ],
-    "correct": 0,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
-    "short_explanation": "Wrist drop is a classic sign of radial nerve injury at the spiral groove.",
-    "long_explanation": "Injury to the radial nerve at the spiral groove commonly affects the extensors of the wrist and fingers, resulting in wrist drop—a key clinical sign.",
-    "applied_example": "Avoid deep compression over the mid-humerus if a client has history of radial nerve injury to prevent aggravating wrist drop.",
+    "short_explanation": "The radial nerve provides sensation to the dorsal hand and posterior forearm.",
+    "long_explanation": "The radial nerve is responsible for cutaneous sensation on the posterior arm, posterior forearm, and dorsal surface of the hand, particularly over the thumb and index finger.",
+    "applied_example": "Clients complaining of dorsal hand numbness may have compression of the radial nerve requiring modification of massage techniques.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -167,7 +93,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "Damage to the radial nerve at the spiral groove most likely causes what deficit?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
+  },
+  {
+    "id": "radial_nerve_innervations_003",
+    "question": "Damage to the radial nerve at the spiral groove most likely causes what deficit?",
     "options": [
       "Wrist drop",
       "Loss of hand sensation only",
@@ -175,32 +107,13 @@
       "Knee hyperextension"
     ],
     "correctAnswer": "Wrist drop",
-    "abcd": [
-      "A. Wrist drop",
-      "B. Loss of hand sensation only",
-      "C. Shoulder dislocation",
-      "D. Knee hyperextension"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
-  },
-  {
-    "id": "Radial Nerve 004",
-    "question": "Which movement would be impaired by radial nerve injury?",
-    "answers": [
-      "Extension of the wrist",
-      "Flexion of the elbow",
-      "Opposition of the thumb",
-      "Adduction of the hip"
-    ],
-    "correct": 0,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
-    "short_explanation": "Radial nerve injury impairs wrist extension, causing weakness or paralysis.",
-    "long_explanation": "The radial nerve innervates wrist and finger extensors. An injury will impair extension, often presenting as wrist drop.",
-    "applied_example": "Understanding wrist extensor dysfunction helps therapists modify massage strokes for clients with radial nerve issues.",
+    "short_explanation": "Wrist drop is a classic sign of radial nerve injury at the spiral groove.",
+    "long_explanation": "Injury to the radial nerve at the spiral groove commonly affects the extensors of the wrist and fingers, resulting in wrist drop—a key clinical sign.",
+    "applied_example": "Avoid deep compression over the mid-humerus if a client has history of radial nerve injury to prevent aggravating wrist drop.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -229,7 +142,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "Which movement would be impaired by radial nerve injury?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
+  },
+  {
+    "id": "radial_nerve_innervations_004",
+    "question": "Which movement would be impaired by radial nerve injury?",
     "options": [
       "Extension of the wrist",
       "Flexion of the elbow",
@@ -237,32 +156,13 @@
       "Adduction of the hip"
     ],
     "correctAnswer": "Extension of the wrist",
-    "abcd": [
-      "A. Extension of the wrist",
-      "B. Flexion of the elbow",
-      "C. Opposition of the thumb",
-      "D. Adduction of the hip"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
-  },
-  {
-    "id": "Radial Nerve 005",
-    "question": "Which of the following muscles is not innervated by the radial nerve?",
-    "answers": [
-      "Anconeus",
-      "Extensor carpi radialis longus",
-      "Supinator",
-      "Flexor digitorum superficialis"
-    ],
-    "correct": 3,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
-    "short_explanation": "Flexor digitorum superficialis is innervated by the median nerve, not the radial nerve.",
-    "long_explanation": "Flexor digitorum superficialis is innervated by the median nerve. The radial nerve only innervates posterior compartment (extensor) muscles.",
-    "applied_example": "Knowledge of flexor/extensor muscle innervation supports safe and accurate muscle technique application in therapy.",
+    "short_explanation": "Radial nerve injury impairs wrist extension, causing weakness or paralysis.",
+    "long_explanation": "The radial nerve innervates wrist and finger extensors. An injury will impair extension, often presenting as wrist drop.",
+    "applied_example": "Understanding wrist extensor dysfunction helps therapists modify massage strokes for clients with radial nerve issues.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -291,7 +191,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "Which of the following muscles is not innervated by the radial nerve?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
+  },
+  {
+    "id": "radial_nerve_innervations_005",
+    "question": "Which of the following muscles is not innervated by the radial nerve?",
     "options": [
       "Anconeus",
       "Extensor carpi radialis longus",
@@ -299,27 +205,57 @@
       "Flexor digitorum superficialis"
     ],
     "correctAnswer": "Flexor digitorum superficialis",
-    "abcd": [
-      "A. Anconeus",
-      "B. Extensor carpi radialis longus",
-      "C. Supinator",
-      "D. Flexor digitorum superficialis"
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
+    "distractors": [],
+    "short_explanation": "Flexor digitorum superficialis is innervated by the median nerve, not the radial nerve.",
+    "long_explanation": "Flexor digitorum superficialis is innervated by the median nerve. The radial nerve only innervates posterior compartment (extensor) muscles.",
+    "applied_example": "Knowledge of flexor/extensor muscle innervation supports safe and accurate muscle technique application in therapy.",
+    "difficulty": "intermediate",
+    "category": "Anatomy",
+    "tags": [
+      "anatomy_nerve",
+      "nerve_radial",
+      "innervation",
+      "condition_wrist_drop",
+      "massage_contraindications"
     ],
+    "keywords": [
+      "radial nerve",
+      "triceps",
+      "posterior arm",
+      "wrist drop",
+      "dorsal hand",
+      "nerve palsy"
+    ],
+    "mblex_category": "Anatomy and Physiology",
+    "stats": {
+      "correct": 0,
+      "incorrect": 0,
+      "attempts": 0
+    },
+    "last_answered_at": null,
+    "difficulty_adjustment": 0,
+    "created_at": "2025-05-31T18:11:23.682937",
+    "updated_at": "2025-05-31T18:11:23.682937",
+    "unit": "radial nerve innervations",
+    "question_type": "multiple_choice",
     "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
   },
   {
-    "id": "Radial Nerve 006",
+    "id": "radial_nerve_innervations_006",
     "question": "What is a common clinical sign of radial nerve palsy?",
-    "answers": ["Wrist drop", "Claw hand", "Ape hand", "Foot drop"],
-    "correct": 0,
+    "options": ["Wrist drop", "Claw hand", "Ape hand", "Foot drop"],
+    "correctAnswer": "Wrist drop",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
     "short_explanation": "Wrist drop indicates radial nerve dysfunction affecting extensor muscles.",
     "long_explanation": "Radial nerve palsy, often due to compression or fracture, leads to wrist drop due to paralysis of wrist and finger extensors.",
     "applied_example": "Clients with wrist drop may benefit from compensatory massage on unaffected areas to promote circulation and prevent strain.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -348,25 +284,22 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "What is a common clinical sign of radial nerve palsy?",
-    "options": ["Wrist drop", "Claw hand", "Ape hand", "Foot drop"],
-    "correctAnswer": "Wrist drop",
-    "abcd": ["A. Wrist drop", "B. Claw hand", "C. Ape hand", "D. Foot drop"],
     "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
   },
   {
-    "id": "Radial Nerve 007",
+    "id": "radial_nerve_innervations_007",
     "question": "The radial nerve originates from which spinal nerve roots?",
-    "answers": ["C5–T1", "C3–C5", "L1–L3", "T10–T12"],
-    "correct": 0,
+    "options": ["C5–T1", "C3–C5", "L1–L3", "T10–T12"],
+    "correctAnswer": "C5–T1",
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
     "short_explanation": "The radial nerve is derived from spinal roots C5 to T1 via the posterior cord.",
     "long_explanation": "The radial nerve originates from the brachial plexus, specifically the posterior cord formed by roots C5 through T1.",
     "applied_example": "Identifying the spinal root source of radial nerve pain can assist in holistic treatment strategies involving cervical and thoracic assessment.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -395,59 +328,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "The radial nerve originates from which spinal nerve roots?",
-    "options": ["C5–T1", "C3–C5", "L1–L3", "T10–T12"],
-    "correctAnswer": "C5–T1",
-    "abcd": ["A. C5–T1", "B. C3–C5", "C. L1–L3", "D. T10–T12"],
     "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
   },
   {
-    "id": "Radial Nerve 008",
+    "id": "radial_nerve_innervations_008",
     "question": "Which action is preserved in radial nerve damage at the forearm level?",
-    "answers": [
-      "Elbow extension",
-      "Wrist extension",
-      "Finger abduction",
-      "Thumb opposition"
-    ],
-    "correct": 0,
-    "distractors": [],
-    "short_explanation": "Elbow extension is preserved if the injury is distal to the triceps innervation.",
-    "long_explanation": "Damage at the forearm level spares the triceps and allows elbow extension, even if wrist and finger extension are compromised.",
-    "applied_example": "Knowing what functions are spared distally aids the therapist in setting client expectations and avoiding overuse of impaired areas.",
-    "difficulty": "intermediate",
-    "topic": "anatomy",
-    "category": "Anatomy",
-    "tags": [
-      "anatomy_nerve",
-      "nerve_radial",
-      "innervation",
-      "condition_wrist_drop",
-      "massage_contraindications"
-    ],
-    "keywords": [
-      "radial nerve",
-      "triceps",
-      "posterior arm",
-      "wrist drop",
-      "dorsal hand",
-      "nerve palsy"
-    ],
-    "mblex_category": "Anatomy and Physiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-31T18:11:23.682937",
-    "updated_at": "2025-05-31T18:11:23.682937",
-    "unit": "radial nerve innervations",
-    "question_type": "multiple_choice",
-    "text": "Which action is preserved in radial nerve damage at the forearm level?",
     "options": [
       "Elbow extension",
       "Wrist extension",
@@ -455,32 +342,13 @@
       "Thumb opposition"
     ],
     "correctAnswer": "Elbow extension",
-    "abcd": [
-      "A. Elbow extension",
-      "B. Wrist extension",
-      "C. Finger abduction",
-      "D. Thumb opposition"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
-  },
-  {
-    "id": "Radial Nerve 009",
-    "question": "Which massage technique should be avoided over the radial nerve at the spiral groove?",
-    "answers": [
-      "Deep friction massage",
-      "Effleurage",
-      "Petrissage",
-      "Vibration"
-    ],
-    "correct": 0,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
-    "short_explanation": "Deep friction over the radial nerve may irritate or damage the nerve at the spiral groove.",
-    "long_explanation": "Deep friction massage near the spiral groove (posterior humerus) can compress or inflame the radial nerve, potentially worsening symptoms in clients with prior injury.",
-    "applied_example": "Avoiding intense friction massage over the spiral groove prevents nerve aggravation during upper arm sessions.",
+    "short_explanation": "Elbow extension is preserved if the injury is distal to the triceps innervation.",
+    "long_explanation": "Damage at the forearm level spares the triceps and allows elbow extension, even if wrist and finger extension are compromised.",
+    "applied_example": "Knowing what functions are spared distally aids the therapist in setting client expectations and avoiding overuse of impaired areas.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -509,7 +377,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "Which massage technique should be avoided over the radial nerve at the spiral groove?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
+  },
+  {
+    "id": "radial_nerve_innervations_009",
+    "question": "Which massage technique should be avoided over the radial nerve at the spiral groove?",
     "options": [
       "Deep friction massage",
       "Effleurage",
@@ -517,32 +391,13 @@
       "Vibration"
     ],
     "correctAnswer": "Deep friction massage",
-    "abcd": [
-      "A. Deep friction massage",
-      "B. Effleurage",
-      "C. Petrissage",
-      "D. Vibration"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
-  },
-  {
-    "id": "Radial Nerve 010",
-    "question": "What branch of the radial nerve provides sensation to the dorsal hand?",
-    "answers": [
-      "Superficial branch",
-      "Deep branch",
-      "Posterior interosseous",
-      "Anterior interosseous"
-    ],
-    "correct": 0,
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
     "distractors": [],
-    "short_explanation": "The superficial branch of the radial nerve supplies sensation to the dorsal hand.",
-    "long_explanation": "The superficial branch of the radial nerve runs subcutaneously along the forearm and supplies the dorsum of the hand, particularly the radial half.",
-    "applied_example": "Targeting the superficial branch area during massage requires light techniques to avoid irritating this sensory nerve.",
+    "short_explanation": "Deep friction over the radial nerve may irritate or damage the nerve at the spiral groove.",
+    "long_explanation": "Deep friction massage near the spiral groove (posterior humerus) can compress or inflame the radial nerve, potentially worsening symptoms in clients with prior injury.",
+    "applied_example": "Avoiding intense friction massage over the spiral groove prevents nerve aggravation during upper arm sessions.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "anatomy_nerve",
@@ -571,7 +426,13 @@
     "updated_at": "2025-05-31T18:11:23.682937",
     "unit": "radial nerve innervations",
     "question_type": "multiple_choice",
-    "text": "What branch of the radial nerve provides sensation to the dorsal hand?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
+  },
+  {
+    "id": "radial_nerve_innervations_010",
+    "question": "What branch of the radial nerve provides sensation to the dorsal hand?",
     "options": [
       "Superficial branch",
       "Deep branch",
@@ -579,14 +440,43 @@
       "Anterior interosseous"
     ],
     "correctAnswer": "Superficial branch",
-    "abcd": [
-      "A. Superficial branch",
-      "B. Deep branch",
-      "C. Posterior interosseous",
-      "D. Anterior interosseous"
+    "topics": ["Anatomy"],
+    "subtopics": ["Innervations", "Arm_innervations"],
+    "distractors": [],
+    "short_explanation": "The superficial branch of the radial nerve supplies sensation to the dorsal hand.",
+    "long_explanation": "The superficial branch of the radial nerve runs subcutaneously along the forearm and supplies the dorsum of the hand, particularly the radial half.",
+    "applied_example": "Targeting the superficial branch area during massage requires light techniques to avoid irritating this sensory nerve.",
+    "difficulty": "intermediate",
+    "category": "Anatomy",
+    "tags": [
+      "anatomy_nerve",
+      "nerve_radial",
+      "innervation",
+      "condition_wrist_drop",
+      "massage_contraindications"
     ],
+    "keywords": [
+      "radial nerve",
+      "triceps",
+      "posterior arm",
+      "wrist drop",
+      "dorsal hand",
+      "nerve palsy"
+    ],
+    "mblex_category": "Anatomy and Physiology",
+    "stats": {
+      "correct": 0,
+      "incorrect": 0,
+      "attempts": 0
+    },
+    "last_answered_at": null,
+    "difficulty_adjustment": 0,
+    "created_at": "2025-05-31T18:11:23.682937",
+    "updated_at": "2025-05-31T18:11:23.682937",
+    "unit": "radial nerve innervations",
+    "question_type": "multiple_choice",
     "main_topic": "anatomy",
-    "subtopic": "innervations/arm_innervations",
-    "filename": "radial_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/arm_innervations/radial_nerve_innervations.json",
+    "sourceFile": "radial_nerve_innervations"
   }
 ]
