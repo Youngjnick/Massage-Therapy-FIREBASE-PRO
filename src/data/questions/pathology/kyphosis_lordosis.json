@@ -1,17 +1,18 @@
 [
   {
-    "id": "Scoliosis Kyphosis Lordosis 001",
+    "id": "kyphosis_lordosis_001",
     "question": "What is scoliosis?",
-    "answers": [
+    "options": [
       "An exaggerated forward curvature of the lumbar spine",
       "An abnormal lateral curvature of the spine",
       "An inward curve of the thoracic spine",
       "A twisted pelvis"
     ],
-    "correct": 1,
+    "correctAnswer": "An abnormal lateral curvature of the spine",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["anatomy_spine", "condition_scoliosis"],
     "keywords": ["anatomy_spine", "condition_scoliosis"],
@@ -30,32 +31,19 @@
     "clinical_application": "Massage can address compensatory tension and postural imbalance in clients with scoliosis.",
     "img": "spine_condition_001.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "What is scoliosis?",
-    "options": [
-      "An exaggerated forward curvature of the lumbar spine",
-      "An abnormal lateral curvature of the spine",
-      "An inward curve of the thoracic spine",
-      "A twisted pelvis"
-    ],
-    "correctAnswer": "An abnormal lateral curvature of the spine",
-    "abcd": [
-      "A. An exaggerated forward curvature of the lumbar spine",
-      "B. An abnormal lateral curvature of the spine",
-      "C. An inward curve of the thoracic spine",
-      "D. A twisted pelvis"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 002",
+    "id": "kyphosis_lordosis_002",
     "question": "Kyphosis primarily affects which region of the spine?",
-    "answers": ["Cervical", "Lumbar", "Thoracic", "Sacral"],
-    "correct": 2,
+    "options": ["Cervical", "Lumbar", "Thoracic", "Sacral"],
+    "correctAnswer": "Thoracic",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["anatomy_spine", "condition_kyphosis"],
     "keywords": ["anatomy_spine", "condition_kyphosis"],
@@ -74,27 +62,24 @@
     "clinical_application": "Massage helps reduce upper back tension and promote postural awareness in kyphotic clients.",
     "img": "spine_condition_002.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Kyphosis primarily affects which region of the spine?",
-    "options": ["Cervical", "Lumbar", "Thoracic", "Sacral"],
-    "correctAnswer": "Thoracic",
-    "abcd": ["A. Cervical", "B. Lumbar", "C. Thoracic", "D. Sacral"],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 003",
+    "id": "kyphosis_lordosis_003",
     "question": "Which spinal curve is exaggerated in lordosis?",
-    "answers": [
+    "options": [
       "Thoracic outward curve",
       "Lumbar inward curve",
       "Cervical outward curve",
       "Sacral backward curve"
     ],
-    "correct": 1,
+    "correctAnswer": "Lumbar inward curve",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [],
     "keywords": [],
@@ -113,37 +98,24 @@
     "clinical_application": "Massage supports lumbar relief and stretches contributing muscles.",
     "img": "spine_condition_003.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Which spinal curve is exaggerated in lordosis?",
-    "options": [
-      "Thoracic outward curve",
-      "Lumbar inward curve",
-      "Cervical outward curve",
-      "Sacral backward curve"
-    ],
-    "correctAnswer": "Lumbar inward curve",
-    "abcd": [
-      "A. Thoracic outward curve",
-      "B. Lumbar inward curve",
-      "C. Cervical outward curve",
-      "D. Sacral backward curve"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 004",
+    "id": "kyphosis_lordosis_004",
     "question": "What posture is commonly associated with excessive kyphosis?",
-    "answers": [
+    "options": [
       "Sway back",
       "Flat back",
       "Rounded shoulders and hunching",
       "Elevated pelvis"
     ],
-    "correct": 2,
+    "correctAnswer": "Rounded shoulders and hunching",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["condition_kyphosis"],
     "keywords": ["condition_kyphosis"],
@@ -162,32 +134,19 @@
     "clinical_application": "Massage can lengthen shortened anterior muscles and improve thoracic mobility.",
     "img": "spine_condition_004.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "What posture is commonly associated with excessive kyphosis?",
-    "options": [
-      "Sway back",
-      "Flat back",
-      "Rounded shoulders and hunching",
-      "Elevated pelvis"
-    ],
-    "correctAnswer": "Rounded shoulders and hunching",
-    "abcd": [
-      "A. Sway back",
-      "B. Flat back",
-      "C. Rounded shoulders and hunching",
-      "D. Elevated pelvis"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 005",
+    "id": "kyphosis_lordosis_005",
     "question": "Which condition involves a sideways 'S' or 'C' curve in the spine?",
-    "answers": ["Kyphosis", "Lordosis", "Scoliosis", "Spina bifida"],
-    "correct": 2,
+    "options": ["Kyphosis", "Lordosis", "Scoliosis", "Spina bifida"],
+    "correctAnswer": "Scoliosis",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
     "keywords": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
@@ -206,22 +165,19 @@
     "clinical_application": "Massage is used to ease asymmetric tension and restore balance.",
     "img": "spine_condition_005.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Which condition involves a sideways 'S' or 'C' curve in the spine?",
-    "options": ["Kyphosis", "Lordosis", "Scoliosis", "Spina bifida"],
-    "correctAnswer": "Scoliosis",
-    "abcd": ["A. Kyphosis", "B. Lordosis", "C. Scoliosis", "D. Spina bifida"],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 006",
+    "id": "kyphosis_lordosis_006",
     "question": "Which spinal curvature is most affected in pregnancy or obesity-related postural changes?",
-    "answers": ["Scoliosis", "Kyphosis", "Lordosis", "Flat back"],
-    "correct": 2,
+    "options": ["Scoliosis", "Kyphosis", "Lordosis", "Flat back"],
+    "correctAnswer": "Lordosis",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["condition_scoliosis", "condition_kyphosis"],
     "keywords": ["condition_scoliosis", "condition_kyphosis"],
@@ -240,27 +196,24 @@
     "clinical_application": "Massage helps relieve lumbar pressure and improve pelvic alignment.",
     "img": "spine_condition_006.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Which spinal curvature is most affected in pregnancy or obesity-related postural changes?",
-    "options": ["Scoliosis", "Kyphosis", "Lordosis", "Flat back"],
-    "correctAnswer": "Lordosis",
-    "abcd": ["A. Scoliosis", "B. Kyphosis", "C. Lordosis", "D. Flat back"],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 007",
+    "id": "kyphosis_lordosis_007",
     "question": "Massage therapy for scoliosis should focus on:",
-    "answers": [
+    "options": [
       "Strengthening the spinal curves",
       "Even, deep pressure on both sides of the spine",
       "Balancing asymmetrical muscle tension and improving mobility",
       "Avoiding all spinal work"
     ],
-    "correct": 2,
+    "correctAnswer": "Balancing asymmetrical muscle tension and improving mobility",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "technique_pressure",
@@ -299,37 +252,24 @@
     "clinical_application": "Massage improves mobility, pain relief, and postural adaptation.",
     "img": "spine_condition_007.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Massage therapy for scoliosis should focus on:",
-    "options": [
-      "Strengthening the spinal curves",
-      "Even, deep pressure on both sides of the spine",
-      "Balancing asymmetrical muscle tension and improving mobility",
-      "Avoiding all spinal work"
-    ],
-    "correctAnswer": "Balancing asymmetrical muscle tension and improving mobility",
-    "abcd": [
-      "A. Strengthening the spinal curves",
-      "B. Even, deep pressure on both sides of the spine",
-      "C. Balancing asymmetrical muscle tension and improving mobility",
-      "D. Avoiding all spinal work"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 008",
+    "id": "kyphosis_lordosis_008",
     "question": "Kyphosis can lead to which of the following issues?",
-    "answers": [
+    "options": [
       "Improved lung capacity",
       "Neck strain and restricted thoracic movement",
       "Increased lumbar flexibility",
       "Greater spinal stability"
     ],
-    "correct": 1,
+    "correctAnswer": "Neck strain and restricted thoracic movement",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["condition_kyphosis", "organ_lungs"],
     "keywords": ["condition_kyphosis", "organ_lungs"],
@@ -348,37 +288,24 @@
     "clinical_application": "Massage therapy enhances breathing capacity and reduces postural fatigue.",
     "img": "spine_condition_008.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Kyphosis can lead to which of the following issues?",
-    "options": [
-      "Improved lung capacity",
-      "Neck strain and restricted thoracic movement",
-      "Increased lumbar flexibility",
-      "Greater spinal stability"
-    ],
-    "correctAnswer": "Neck strain and restricted thoracic movement",
-    "abcd": [
-      "A. Improved lung capacity",
-      "B. Neck strain and restricted thoracic movement",
-      "C. Increased lumbar flexibility",
-      "D. Greater spinal stability"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 009",
+    "id": "kyphosis_lordosis_009",
     "question": "Which of the following may be a result of untreated severe lordosis?",
-    "answers": [
+    "options": [
       "Sciatic compression or lower back pain",
       "Frozen shoulder",
       "Thoracic scoliosis",
       "Cervical instability"
     ],
-    "correct": 0,
+    "correctAnswer": "Sciatic compression or lower back pain",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["technique_compression", "condition_pain", "condition_scoliosis"],
     "keywords": [
@@ -401,37 +328,24 @@
     "clinical_application": "Massage can reduce pain, decompress tissues, and stretch hip flexors.",
     "img": "spine_condition_009.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Which of the following may be a result of untreated severe lordosis?",
-    "options": [
-      "Sciatic compression or lower back pain",
-      "Frozen shoulder",
-      "Thoracic scoliosis",
-      "Cervical instability"
-    ],
-    "correctAnswer": "Sciatic compression or lower back pain",
-    "abcd": [
-      "A. Sciatic compression or lower back pain",
-      "B. Frozen shoulder",
-      "C. Thoracic scoliosis",
-      "D. Cervical instability"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   },
   {
-    "id": "Scoliosis Kyphosis Lordosis 010",
+    "id": "kyphosis_lordosis_010",
     "question": "Which two conditions affect the spine's sagittal plane curvature?",
-    "answers": [
+    "options": [
       "Kyphosis and scoliosis",
       "Scoliosis and lordosis",
       "Kyphosis and lordosis",
       "All three conditions"
     ],
-    "correct": 2,
+    "correctAnswer": "Kyphosis and lordosis",
+    "topics": ["Pathology"],
+    "subtopics": ["Kyphosis_lordosis.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
     "keywords": ["anatomy_spine", "condition_scoliosis", "condition_kyphosis"],
@@ -450,22 +364,8 @@
     "clinical_application": "Massage interventions can help correct muscular patterns that exaggerate these curves.",
     "img": "spine_condition_010.png",
     "source_reference": "Salvo, Trail Guide to the Body, FSMTB",
-    "text": "Which two conditions affect the spine's sagittal plane curvature?",
-    "options": [
-      "Kyphosis and scoliosis",
-      "Scoliosis and lordosis",
-      "Kyphosis and lordosis",
-      "All three conditions"
-    ],
-    "correctAnswer": "Kyphosis and lordosis",
-    "abcd": [
-      "A. Kyphosis and scoliosis",
-      "B. Scoliosis and lordosis",
-      "C. Kyphosis and lordosis",
-      "D. All three conditions"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "kyphosis_lordosis.json"
+    "filepath": "data/questions/pathology/kyphosis_lordosis.json",
+    "sourceFile": "kyphosis_lordosis"
   }
 ]

@@ -1,7 +1,7 @@
 export function getFilteredSortedQuestions(questions: any[], selectedTopic: string, filter: string, filterValue: string, userAnswers: number[], shuffledOptions: { [key: number]: string[] }) {
   let qs = [...questions];
   if (selectedTopic) {
-    qs = qs.filter((q: any) => q.topic === selectedTopic);
+    qs = qs.filter((q: any) => Array.isArray(q.topics) && q.topics.includes(selectedTopic));
   }
   if (filter === 'incorrect') {
     qs = qs.filter((q, i) => userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] !== q.correctAnswer);

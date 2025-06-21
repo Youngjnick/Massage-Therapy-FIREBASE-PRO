@@ -1,19 +1,20 @@
 [
   {
-    "id": "Common Fibular Nerve 006",
+    "id": "common_fibular_nerve_001",
     "question": "Which activity is most likely to exacerbate symptoms of common fibular nerve compression?",
-    "answers": [
+    "options": [
       "Sitting cross-legged for extended periods",
       "Standing barefoot on hard surfaces",
       "Wearing arch supports",
       "Rotating the hip laterally"
     ],
-    "correct": 0,
+    "correctAnswer": "Sitting cross-legged for extended periods",
+    "topics": ["Anatomy", "Clinical posture"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "short_explanation": "Cross-legged sitting compresses the nerve around the fibular head.",
     "long_explanation": "The common fibular nerve wraps around the fibular neck and is vulnerable to compression during cross-legged posture. Prolonged pressure can lead to paresthesia or motor deficits in the anterior/lateral compartments of the leg.",
     "applied_example": "If a client reports foot numbness after sitting cross-legged, educate on nerve compression and repositioning strategies to prevent entrapment.",
     "difficulty": "easy",
-    "topic": "clinical posture",
     "category": "Massage Therapy",
     "tags": ["posture", "nerve_compression", "fibular_head", "entrapment"],
     "keywords": [
@@ -30,39 +31,26 @@
     },
     "created_at": "2025-05-31T10:20:00.000Z",
     "updated_at": "2025-05-31T10:20:00.000Z",
-    "text": "Which activity is most likely to exacerbate symptoms of common fibular nerve compression?",
-    "options": [
-      "Sitting cross-legged for extended periods",
-      "Standing barefoot on hard surfaces",
-      "Wearing arch supports",
-      "Rotating the hip laterally"
-    ],
-    "correctAnswer": "Sitting cross-legged for extended periods",
-    "abcd": [
-      "A. Sitting cross-legged for extended periods",
-      "B. Standing barefoot on hard surfaces",
-      "C. Wearing arch supports",
-      "D. Rotating the hip laterally"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "common_fibular_nerve.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/common_fibular_nerve.json",
+    "sourceFile": "common_fibular_nerve"
   },
   {
-    "id": "Common Fibular Nerve 007",
+    "id": "common_fibular_nerve_002",
     "question": "What is a distinguishing clinical test for common fibular nerve integrity?",
-    "answers": [
+    "options": [
       "Tinel's sign at the fibular neck",
       "Babinski reflex",
       "Trendelenburg sign",
       "Straight leg raise"
     ],
-    "correct": 0,
+    "correctAnswer": "Tinel's sign at the fibular neck",
+    "topics": ["Anatomy", "Clinical assessment"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "short_explanation": "Tapping over the fibular neck can elicit tingling along its sensory distribution.",
     "long_explanation": "A positive Tinel's sign at the fibular neck indicates irritation or regeneration of the common fibular nerve. It helps differentiate peripheral nerve issues from radiculopathies.",
     "applied_example": "During assessment, a positive Tinel’s sign suggests local entrapment of the fibular nerve rather than a lumbar origin.",
     "difficulty": "intermediate",
-    "topic": "clinical assessment",
     "category": "Neurology",
     "tags": [
       "tinels_sign",
@@ -84,39 +72,26 @@
     },
     "created_at": "2025-05-31T10:20:00.000Z",
     "updated_at": "2025-05-31T10:20:00.000Z",
-    "text": "What is a distinguishing clinical test for common fibular nerve integrity?",
-    "options": [
-      "Tinel's sign at the fibular neck",
-      "Babinski reflex",
-      "Trendelenburg sign",
-      "Straight leg raise"
-    ],
-    "correctAnswer": "Tinel's sign at the fibular neck",
-    "abcd": [
-      "A. Tinel's sign at the fibular neck",
-      "B. Babinski reflex",
-      "C. Trendelenburg sign",
-      "D. Straight leg raise"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "common_fibular_nerve.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/common_fibular_nerve.json",
+    "sourceFile": "common_fibular_nerve"
   },
   {
-    "id": "Common Fibular Nerve 008",
+    "id": "common_fibular_nerve_003",
     "question": "What muscle is innervated by the superficial fibular nerve?",
-    "answers": [
+    "options": [
       "Tibialis anterior",
       "Fibularis longus",
       "Extensor hallucis longus",
       "Tibialis posterior"
     ],
-    "correct": 1,
+    "correctAnswer": "Fibularis longus",
+    "topics": ["Anatomy", "Muscle innervation"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "short_explanation": "The superficial fibular nerve innervates fibularis longus and brevis.",
     "long_explanation": "These muscles evert the foot and help stabilize the lateral ankle. Loss of this nerve affects balance and ankle control during walking.",
     "applied_example": "A therapist noticing decreased foot eversion and ankle instability may assess superficial fibular nerve involvement in balance-related dysfunction.",
     "difficulty": "intermediate",
-    "topic": "muscle innervation",
     "category": "Anatomy",
     "tags": ["fibularis_muscles", "nerve_innervation", "foot_eversion"],
     "keywords": [
@@ -133,39 +108,26 @@
     },
     "created_at": "2025-05-31T10:20:00.000Z",
     "updated_at": "2025-05-31T10:20:00.000Z",
-    "text": "What muscle is innervated by the superficial fibular nerve?",
-    "options": [
-      "Tibialis anterior",
-      "Fibularis longus",
-      "Extensor hallucis longus",
-      "Tibialis posterior"
-    ],
-    "correctAnswer": "Fibularis longus",
-    "abcd": [
-      "A. Tibialis anterior",
-      "B. Fibularis longus",
-      "C. Extensor hallucis longus",
-      "D. Tibialis posterior"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "common_fibular_nerve.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/common_fibular_nerve.json",
+    "sourceFile": "common_fibular_nerve"
   },
   {
-    "id": "Common Fibular Nerve 009",
+    "id": "common_fibular_nerve_004",
     "question": "What type of gait may indicate common fibular nerve injury?",
-    "answers": [
+    "options": [
       "Waddling gait",
       "Spastic gait",
       "Steppage gait",
       "Antalgic gait"
     ],
-    "correct": 2,
+    "correctAnswer": "Steppage gait",
+    "topics": ["Anatomy", "Gait analysis"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "short_explanation": "Foot drop due to dorsiflexion weakness causes a high-stepping steppage gait.",
     "long_explanation": "With foot drop, patients lift the affected foot higher to prevent it from dragging. This compensation produces a steppage gait and is a hallmark of fibular nerve injury.",
     "applied_example": "Massage therapists observing unusual gait may refer for neurologic assessment if foot drop or steppage gait is evident.",
     "difficulty": "advanced",
-    "topic": "gait analysis",
     "category": "Kinesiology",
     "tags": [
       "foot_drop",
@@ -182,39 +144,26 @@
     },
     "created_at": "2025-05-31T10:20:00.000Z",
     "updated_at": "2025-05-31T10:20:00.000Z",
-    "text": "What type of gait may indicate common fibular nerve injury?",
-    "options": [
-      "Waddling gait",
-      "Spastic gait",
-      "Steppage gait",
-      "Antalgic gait"
-    ],
-    "correctAnswer": "Steppage gait",
-    "abcd": [
-      "A. Waddling gait",
-      "B. Spastic gait",
-      "C. Steppage gait",
-      "D. Antalgic gait"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "common_fibular_nerve.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/common_fibular_nerve.json",
+    "sourceFile": "common_fibular_nerve"
   },
   {
-    "id": "Common Fibular Nerve 010",
+    "id": "common_fibular_nerve_005",
     "question": "Which structure must be avoided during fibular head palpation to prevent nerve irritation?",
-    "answers": [
+    "options": [
       "Lateral collateral ligament",
       "Common fibular nerve",
       "Iliotibial band",
       "Tibial nerve"
     ],
-    "correct": 1,
+    "correctAnswer": "Common fibular nerve",
+    "topics": ["Anatomy", "Palpation safety"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "short_explanation": "The common fibular nerve is superficial and easily irritated at the fibular head.",
     "long_explanation": "This nerve lies just under the skin at the fibular neck. Vigorous palpation or sustained pressure may inflame or compress the nerve. Careful technique is important during assessments or treatments.",
     "applied_example": "During effleurage or compression near the fibular head, therapists must adjust pressure to avoid aggravating the common fibular nerve.",
     "difficulty": "easy",
-    "topic": "palpation safety",
     "category": "Massage Techniques",
     "tags": ["fibular_head", "nerve_safety", "palpation", "common_fibular"],
     "keywords": [
@@ -231,22 +180,8 @@
     },
     "created_at": "2025-05-31T10:20:00.000Z",
     "updated_at": "2025-05-31T10:20:00.000Z",
-    "text": "Which structure must be avoided during fibular head palpation to prevent nerve irritation?",
-    "options": [
-      "Lateral collateral ligament",
-      "Common fibular nerve",
-      "Iliotibial band",
-      "Tibial nerve"
-    ],
-    "correctAnswer": "Common fibular nerve",
-    "abcd": [
-      "A. Lateral collateral ligament",
-      "B. Common fibular nerve",
-      "C. Iliotibial band",
-      "D. Tibial nerve"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "common_fibular_nerve.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/common_fibular_nerve.json",
+    "sourceFile": "common_fibular_nerve"
   }
 ]

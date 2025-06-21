@@ -1,17 +1,18 @@
 [
   {
-    "id": "Cellular Anatomy 001",
+    "id": "cellular_anatomy_001",
     "question": "What is the function of the cell membrane?",
-    "answers": [
+    "options": [
       "Stores genetic information",
       "Produces energy",
       "Controls movement of substances in and out of the cell",
       "Synthesizes proteins"
     ],
-    "correct": 2,
+    "correctAnswer": "Controls movement of substances in and out of the cell",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_cells", "anatomy_protein"],
     "keywords": ["anatomy_membrane", "anatomy_cells", "anatomy_protein"],
@@ -28,32 +29,19 @@
     "short_explanation": "It controls the movement of substances into and out of the cell.",
     "long_explanation": "The cell membrane is a semipermeable barrier that surrounds the cell, allowing selective transport of nutrients, ions, and waste. It also supports communication and recognition through membrane proteins and receptors.",
     "clinical_application": "Damage to the cell membrane, as seen in trauma or infection, can lead to loss of homeostasis and cell death. This is crucial in understanding inflammation and immune responses.",
-    "text": "What is the function of the cell membrane?",
-    "options": [
-      "Stores genetic information",
-      "Produces energy",
-      "Controls movement of substances in and out of the cell",
-      "Synthesizes proteins"
-    ],
-    "correctAnswer": "Controls movement of substances in and out of the cell",
-    "abcd": [
-      "A. Stores genetic information",
-      "B. Produces energy",
-      "C. Controls movement of substances in and out of the cell",
-      "D. Synthesizes proteins"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 002",
+    "id": "cellular_anatomy_002",
     "question": "Which organelle is known as the 'powerhouse' of the cell?",
-    "answers": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
-    "correct": 2,
+    "options": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
+    "correctAnswer": "Mitochondrion",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_nucleus", "anatomy_organelle", "anatomy_ribosomes"],
     "keywords": ["anatomy_nucleus", "anatomy_organelle", "anatomy_ribosomes"],
@@ -70,27 +58,19 @@
     "short_explanation": "The mitochondrion generates energy in the form of ATP.",
     "long_explanation": "Mitochondria convert glucose and oxygen into ATP through cellular respiration. They also regulate apoptosis (programmed cell death) and play roles in calcium signaling and metabolism.",
     "clinical_application": "Mitochondrial dysfunction is linked to neurodegenerative diseases and metabolic syndromes, making it a focus in aging and chronic disease research.",
-    "text": "Which organelle is known as the 'powerhouse' of the cell?",
-    "options": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
-    "correctAnswer": "Mitochondrion",
-    "abcd": [
-      "A. Nucleus",
-      "B. Ribosome",
-      "C. Mitochondrion",
-      "D. Golgi apparatus"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 003",
+    "id": "cellular_anatomy_003",
     "question": "Which structure contains the cell’s genetic material?",
-    "answers": ["Endoplasmic reticulum", "Golgi body", "Nucleus", "Lysosome"],
-    "correct": 2,
+    "options": ["Endoplasmic reticulum", "Golgi body", "Nucleus", "Lysosome"],
+    "correctAnswer": "Nucleus",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_nucleus", "anatomy_genetic_material"],
     "keywords": ["anatomy_nucleus", "anatomy_genetic_material"],
@@ -107,32 +87,24 @@
     "short_explanation": "The nucleus houses and protects the cell’s DNA.",
     "long_explanation": "The nucleus is a membrane-bound structure that stores DNA and coordinates activities like growth, protein synthesis, and cell division. It contains the nucleolus and chromatin.",
     "clinical_application": "Mutations in nuclear DNA can cause genetic disorders and cancers. Nuclear changes are key diagnostic indicators in pathology.",
-    "text": "Which structure contains the cell’s genetic material?",
-    "options": ["Endoplasmic reticulum", "Golgi body", "Nucleus", "Lysosome"],
-    "correctAnswer": "Nucleus",
-    "abcd": [
-      "A. Endoplasmic reticulum",
-      "B. Golgi body",
-      "C. Nucleus",
-      "D. Lysosome"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 004",
+    "id": "cellular_anatomy_004",
     "question": "What is the primary function of ribosomes?",
-    "answers": [
+    "options": [
       "Break down waste",
       "Transport lipids",
       "Produce proteins",
       "Store water"
     ],
-    "correct": 2,
+    "correctAnswer": "Produce proteins",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_protein", "anatomy_ribosomes"],
     "keywords": ["anatomy_protein", "anatomy_ribosomes"],
@@ -149,37 +121,24 @@
     "short_explanation": "The ER processes and transports proteins and lipids.",
     "long_explanation": "The rough ER is studded with ribosomes and modifies newly synthesized proteins, while the smooth ER synthesizes lipids and detoxifies chemicals. Together, they act as the cell’s manufacturing and shipping center.",
     "clinical_application": "ER stress is implicated in diseases like diabetes, Alzheimer’s, and cancer due to its role in protein folding and cellular stress responses.",
-    "text": "What is the primary function of ribosomes?",
-    "options": [
-      "Break down waste",
-      "Transport lipids",
-      "Produce proteins",
-      "Store water"
-    ],
-    "correctAnswer": "Produce proteins",
-    "abcd": [
-      "A. Break down waste",
-      "B. Transport lipids",
-      "C. Produce proteins",
-      "D. Store water"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 005",
+    "id": "cellular_anatomy_005",
     "question": "What is the role of lysosomes in a cell?",
-    "answers": [
+    "options": [
       "Synthesizing proteins",
       "Breaking down cellular waste and debris",
       "Transporting RNA",
       "Generating energy"
     ],
-    "correct": 1,
+    "correctAnswer": "Breaking down cellular waste and debris",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_protein"],
     "keywords": ["anatomy_protein"],
@@ -196,37 +155,24 @@
     "short_explanation": "Ribosomes synthesize proteins by translating mRNA.",
     "long_explanation": "Ribosomes link amino acids into polypeptides by reading messenger RNA instructions. They may float freely or attach to the ER, supporting growth, repair, and cell signaling.",
     "clinical_application": "Antibiotics often target bacterial ribosomes. Ribosomal defects in humans can lead to disorders like Diamond-Blackfan anemia and some cancers.",
-    "text": "What is the role of lysosomes in a cell?",
-    "options": [
-      "Synthesizing proteins",
-      "Breaking down cellular waste and debris",
-      "Transporting RNA",
-      "Generating energy"
-    ],
-    "correctAnswer": "Breaking down cellular waste and debris",
-    "abcd": [
-      "A. Synthesizing proteins",
-      "B. Breaking down cellular waste and debris",
-      "C. Transporting RNA",
-      "D. Generating energy"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 006",
+    "id": "cellular_anatomy_006",
     "question": "What does the endoplasmic reticulum (ER) do?",
-    "answers": [
+    "options": [
       "Stores calcium and lipids",
       "Produces glucose",
       "Processes and packages proteins and lipids",
       "Synthesizes DNA"
     ],
-    "correct": 2,
+    "correctAnswer": "Processes and packages proteins and lipids",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_protein", "anatomy_dna", "biochemistry_glucose"],
     "keywords": ["anatomy_protein", "anatomy_dna", "biochemistry_glucose"],
@@ -243,32 +189,19 @@
     "short_explanation": "The Golgi apparatus modifies, sorts, and ships cellular products.",
     "long_explanation": "The Golgi receives vesicles from the ER, modifies proteins and lipids (e.g., glycosylation), and packages them into vesicles for transport within or outside the cell.",
     "clinical_application": "Disruption in Golgi function affects protein trafficking, contributing to diseases like congenital disorders of glycosylation (CDG).",
-    "text": "What does the endoplasmic reticulum (ER) do?",
-    "options": [
-      "Stores calcium and lipids",
-      "Produces glucose",
-      "Processes and packages proteins and lipids",
-      "Synthesizes DNA"
-    ],
-    "correctAnswer": "Processes and packages proteins and lipids",
-    "abcd": [
-      "A. Stores calcium and lipids",
-      "B. Produces glucose",
-      "C. Processes and packages proteins and lipids",
-      "D. Synthesizes DNA"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 007",
+    "id": "cellular_anatomy_007",
     "question": "Which type of ER has ribosomes attached and assists in protein synthesis?",
-    "answers": ["Smooth ER", "Rough ER", "Golgi body", "Nucleolus"],
-    "correct": 1,
+    "options": ["Smooth ER", "Rough ER", "Golgi body", "Nucleolus"],
+    "correctAnswer": "Rough ER",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_protein",
@@ -295,27 +228,24 @@
     "short_explanation": "Lysosomes break down waste and cellular debris.",
     "long_explanation": "Lysosomes contain enzymes that digest macromolecules, damaged organelles, and pathogens. They help recycle cellular components and maintain homeostasis.",
     "clinical_application": "Lysosomal storage diseases (e.g., Tay-Sachs) result from enzyme deficiencies, leading to toxic buildup and cell dysfunction.",
-    "text": "Which type of ER has ribosomes attached and assists in protein synthesis?",
-    "options": ["Smooth ER", "Rough ER", "Golgi body", "Nucleolus"],
-    "correctAnswer": "Rough ER",
-    "abcd": ["A. Smooth ER", "B. Rough ER", "C. Golgi body", "D. Nucleolus"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 008",
+    "id": "cellular_anatomy_008",
     "question": "What is the function of the Golgi apparatus?",
-    "answers": [
+    "options": [
       "Powering the cell",
       "Producing enzymes",
       "Modifying, sorting, and packaging proteins",
       "Destroying toxins"
     ],
-    "correct": 2,
+    "correctAnswer": "Modifying, sorting, and packaging proteins",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_protein"],
     "keywords": ["anatomy_cells", "anatomy_protein"],
@@ -332,37 +262,24 @@
     "short_explanation": "The cytoskeleton gives structural support and aids movement.",
     "long_explanation": "The cytoskeleton is a network of microfilaments, microtubules, and intermediate filaments that maintain shape, anchor organelles, and facilitate intracellular transport and cell division.",
     "clinical_application": "Defects in cytoskeletal proteins are linked to diseases like muscular dystrophy and certain neuropathies.",
-    "text": "What is the function of the Golgi apparatus?",
-    "options": [
-      "Powering the cell",
-      "Producing enzymes",
-      "Modifying, sorting, and packaging proteins",
-      "Destroying toxins"
-    ],
-    "correctAnswer": "Modifying, sorting, and packaging proteins",
-    "abcd": [
-      "A. Powering the cell",
-      "B. Producing enzymes",
-      "C. Modifying, sorting, and packaging proteins",
-      "D. Destroying toxins"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 009",
+    "id": "cellular_anatomy_009",
     "question": "What is cytoplasm?",
-    "answers": [
+    "options": [
       "A type of DNA",
       "A jelly-like substance that holds organelles",
       "A protein transporter",
       "A structure in the cell wall"
     ],
-    "correct": 1,
+    "correctAnswer": "A jelly-like substance that holds organelles",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -391,37 +308,24 @@
     "short_explanation": "The nuclear envelope’s pores control molecular traffic.",
     "long_explanation": "The nuclear envelope surrounds the nucleus and contains nuclear pores that allow selective exchange of RNA, proteins, and signaling molecules, ensuring controlled communication between nucleus and cytoplasm.",
     "clinical_application": "Altered nuclear transport is involved in viral replication and neurodegenerative diseases like ALS and Huntington’s.",
-    "text": "What is cytoplasm?",
-    "options": [
-      "A type of DNA",
-      "A jelly-like substance that holds organelles",
-      "A protein transporter",
-      "A structure in the cell wall"
-    ],
-    "correctAnswer": "A jelly-like substance that holds organelles",
-    "abcd": [
-      "A. A type of DNA",
-      "B. A jelly-like substance that holds organelles",
-      "C. A protein transporter",
-      "D. A structure in the cell wall"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   },
   {
-    "id": "Cellular Anatomy 010",
+    "id": "cellular_anatomy_010",
     "question": "What is the function of the nucleolus?",
-    "answers": [
+    "options": [
       "Produces ATP",
       "Produces ribosomes",
       "Breaks down sugars",
       "Directs cell division"
     ],
-    "correct": 1,
+    "correctAnswer": "Produces ribosomes",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_ribosomes"],
     "keywords": ["anatomy_cells", "anatomy_ribosomes"],
@@ -438,22 +342,8 @@
     "short_explanation": "The cytoplasm provides a medium for chemical reactions and organelle suspension.",
     "long_explanation": "The cytoplasm includes cytosol and suspended organelles. It’s where many metabolic reactions occur and facilitates molecular transport within the cell.",
     "clinical_application": "Cytoplasmic changes (e.g., inclusion bodies, vacuolization) are diagnostic clues in infection, cancer, and cell injury.",
-    "text": "What is the function of the nucleolus?",
-    "options": [
-      "Produces ATP",
-      "Produces ribosomes",
-      "Breaks down sugars",
-      "Directs cell division"
-    ],
-    "correctAnswer": "Produces ribosomes",
-    "abcd": [
-      "A. Produces ATP",
-      "B. Produces ribosomes",
-      "C. Breaks down sugars",
-      "D. Directs cell division"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "cellular_anatomy.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
+    "sourceFile": "cellular_anatomy"
   }
 ]

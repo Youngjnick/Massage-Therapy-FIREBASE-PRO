@@ -5,6 +5,7 @@
 import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
+// eslint-disable-next-line
 import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
 import readline from 'readline';
 import { fileURLToPath } from 'url';

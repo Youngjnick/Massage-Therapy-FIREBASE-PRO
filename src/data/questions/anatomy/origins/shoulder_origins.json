@@ -1,14 +1,16 @@
 [
   {
-    "id": "Shoulder Origin 001",
+    "id": "shoulder_origins_001",
     "question": "Where does the deltoid muscle originate?",
-    "answers": [
+    "options": [
       "Acromion and spine of the scapula, lateral third of clavicle",
       "Medial epicondyle of the humerus",
       "Coracoid process of the scapula",
       "Greater tubercle of the humerus"
     ],
-    "correct": 0,
+    "correctAnswer": "Acromion and spine of the scapula, lateral third of clavicle",
+    "topics": ["Anatomy"],
+    "subtopics": ["Origins"],
     "distractors": [],
     "short_explanation": "The deltoid originates from the acromion, scapular spine, and clavicle — allowing it to move the arm in multiple directions.",
     "long_explanation": "The deltoid has three parts originating from the lateral clavicle, acromion, and scapular spine. These origins support anterior, lateral, and posterior shoulder movements. A clear understanding of its origin helps identify shoulder abduction or dysfunction.",
@@ -16,7 +18,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Shoulder Region",
     "tags": [
@@ -58,34 +59,22 @@
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
     "synonyms": ["deltoid", "shoulder abductor"],
     "image_reference": "shoulder_origin_deltoid.png",
-    "text": "Where does the deltoid muscle originate?",
-    "options": [
-      "Acromion and spine of the scapula, lateral third of clavicle",
-      "Medial epicondyle of the humerus",
-      "Coracoid process of the scapula",
-      "Greater tubercle of the humerus"
-    ],
-    "correctAnswer": "Acromion and spine of the scapula, lateral third of clavicle",
-    "abcd": [
-      "A. Acromion and spine of the scapula, lateral third of clavicle",
-      "B. Medial epicondyle of the humerus",
-      "C. Coracoid process of the scapula",
-      "D. Greater tubercle of the humerus"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "origins",
-    "filename": "shoulder_origins.json"
+    "filepath": "data/questions/anatomy/origins/shoulder_origins.json",
+    "sourceFile": "shoulder_origins"
   },
   {
-    "id": "Shoulder Origin 002",
+    "id": "shoulder_origins_002",
     "question": "What is the origin of the pectoralis major muscle?",
-    "answers": [
+    "options": [
       "Coracoid process and supraglenoid tubercle",
       "Medial half of clavicle, sternum, and costal cartilages 1–6",
       "Acromion and spine of the scapula",
       "Inferior angle of the scapula"
     ],
-    "correct": 1,
+    "correctAnswer": "Medial half of clavicle, sternum, and costal cartilages 1–6",
+    "topics": ["Anatomy"],
+    "subtopics": ["Origins"],
     "distractors": [],
     "short_explanation": "Pectoralis major originates from the clavicle, sternum, and ribs, giving it broad leverage for arm movement.",
     "long_explanation": "With its origin across the medial clavicle, sternum, and upper costal cartilages, the pectoralis major facilitates powerful shoulder flexion and adduction. This large origin area allows it to assist in pushing, hugging, and lifting actions.",
@@ -93,7 +82,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 2,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Shoulder Region",
     "tags": [
@@ -137,34 +125,22 @@
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
     "synonyms": ["pec major", "pectoralis"],
     "image_reference": "shoulder_origin_pectoralis_major.png",
-    "text": "What is the origin of the pectoralis major muscle?",
-    "options": [
-      "Coracoid process and supraglenoid tubercle",
-      "Medial half of clavicle, sternum, and costal cartilages 1–6",
-      "Acromion and spine of the scapula",
-      "Inferior angle of the scapula"
-    ],
-    "correctAnswer": "Medial half of clavicle, sternum, and costal cartilages 1–6",
-    "abcd": [
-      "A. Coracoid process and supraglenoid tubercle",
-      "B. Medial half of clavicle, sternum, and costal cartilages 1–6",
-      "C. Acromion and spine of the scapula",
-      "D. Inferior angle of the scapula"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "origins",
-    "filename": "shoulder_origins.json"
+    "filepath": "data/questions/anatomy/origins/shoulder_origins.json",
+    "sourceFile": "shoulder_origins"
   },
   {
-    "id": "Shoulder Origin 003",
+    "id": "shoulder_origins_003",
     "question": "The supraspinatus muscle originates from which structure?",
-    "answers": [
+    "options": [
       "Infraspinous fossa of the scapula",
       "Lateral border of the scapula",
       "Supraspinous fossa of the scapula",
       "Clavicle and sternum"
     ],
-    "correct": 2,
+    "correctAnswer": "Supraspinous fossa of the scapula",
+    "topics": ["Anatomy"],
+    "subtopics": ["Origins"],
     "distractors": [],
     "short_explanation": "The supraspinatus originates in the supraspinous fossa of the scapula — above the spine.",
     "long_explanation": "As one of the four rotator cuff muscles, the supraspinatus starts in the supraspinous fossa and passes under the acromion to insert on the humerus. Its origin above the scapular spine positions it to initiate abduction.",
@@ -172,7 +148,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Shoulder Region",
     "tags": [
@@ -220,34 +195,22 @@
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
     "synonyms": ["SSP", "RTC muscle"],
     "image_reference": "shoulder_origin_supraspinatus.png",
-    "text": "The supraspinatus muscle originates from which structure?",
-    "options": [
-      "Infraspinous fossa of the scapula",
-      "Lateral border of the scapula",
-      "Supraspinous fossa of the scapula",
-      "Clavicle and sternum"
-    ],
-    "correctAnswer": "Supraspinous fossa of the scapula",
-    "abcd": [
-      "A. Infraspinous fossa of the scapula",
-      "B. Lateral border of the scapula",
-      "C. Supraspinous fossa of the scapula",
-      "D. Clavicle and sternum"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "origins",
-    "filename": "shoulder_origins.json"
+    "filepath": "data/questions/anatomy/origins/shoulder_origins.json",
+    "sourceFile": "shoulder_origins"
   },
   {
-    "id": "Shoulder Origin 004",
+    "id": "shoulder_origins_004",
     "question": "Which of the following muscles originates on the lateral border of the scapula?",
-    "answers": [
+    "options": [
       "Supraspinatus",
       "Teres major",
       "Pectoralis minor",
       "Trapezius"
     ],
-    "correct": 1,
+    "correctAnswer": "Teres major",
+    "topics": ["Anatomy"],
+    "subtopics": ["Origins"],
     "distractors": [],
     "short_explanation": "Teres major arises from the inferior part of the lateral scapular border.",
     "long_explanation": "The teres major helps adduct and medially rotate the arm. Its scapular origin allows it to function like a mini latissimus dorsi, especially during pulling actions.",
@@ -255,7 +218,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 2,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Shoulder Region",
     "tags": [
@@ -295,34 +257,22 @@
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
     "synonyms": ["teres group", "posterior shoulder"],
     "image_reference": "shoulder_origin_teres_major.png",
-    "text": "Which of the following muscles originates on the lateral border of the scapula?",
-    "options": [
-      "Supraspinatus",
-      "Teres major",
-      "Pectoralis minor",
-      "Trapezius"
-    ],
-    "correctAnswer": "Teres major",
-    "abcd": [
-      "A. Supraspinatus",
-      "B. Teres major",
-      "C. Pectoralis minor",
-      "D. Trapezius"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "origins",
-    "filename": "shoulder_origins.json"
+    "filepath": "data/questions/anatomy/origins/shoulder_origins.json",
+    "sourceFile": "shoulder_origins"
   },
   {
-    "id": "Shoulder Origin 005",
+    "id": "shoulder_origins_005",
     "question": "Where does the latissimus dorsi originate?",
-    "answers": [
+    "options": [
       "Anterior scapula and clavicle",
       "Inferior angle of scapula, spinous processes T7–L5, thoracolumbar fascia, and iliac crest",
       "Acromion process and clavicle",
       "Spinous processes C1–C4"
     ],
-    "correct": 1,
+    "correctAnswer": "Inferior angle of scapula, spinous processes T7–L5, thoracolumbar fascia, and iliac crest",
+    "topics": ["Anatomy"],
+    "subtopics": ["Origins"],
     "distractors": [],
     "short_explanation": "The latissimus dorsi has a broad origin across the mid and lower back.",
     "long_explanation": "Originating from the thoracolumbar fascia, lumbar vertebrae, iliac crest, and part of the scapula, the latissimus dorsi is a powerful extensor and internal rotator of the arm. Its wide origin enables strong pulling actions.",
@@ -330,7 +280,6 @@
     "difficulty": "moderate",
     "difficulty_rating": 3,
     "question_type": "multiple choice",
-    "topic": "anatomy",
     "category": "Anatomy & Physiology",
     "subcategory": "Shoulder Region",
     "tags": [
@@ -372,22 +321,8 @@
     "unit": "../../../src/data/questions/anatomy/origins/shoulder_origins",
     "synonyms": ["lat", "lats"],
     "image_reference": "shoulder_origin_latissimus_dorsi.png",
-    "text": "Where does the latissimus dorsi originate?",
-    "options": [
-      "Anterior scapula and clavicle",
-      "Inferior angle of scapula, spinous processes T7–L5, thoracolumbar fascia, and iliac crest",
-      "Acromion process and clavicle",
-      "Spinous processes C1–C4"
-    ],
-    "correctAnswer": "Inferior angle of scapula, spinous processes T7–L5, thoracolumbar fascia, and iliac crest",
-    "abcd": [
-      "A. Anterior scapula and clavicle",
-      "B. Inferior angle of scapula, spinous processes T7–L5, thoracolumbar fascia, and iliac crest",
-      "C. Acromion process and clavicle",
-      "D. Spinous processes C1–C4"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "origins",
-    "filename": "shoulder_origins.json"
+    "filepath": "data/questions/anatomy/origins/shoulder_origins.json",
+    "sourceFile": "shoulder_origins"
   }
 ]

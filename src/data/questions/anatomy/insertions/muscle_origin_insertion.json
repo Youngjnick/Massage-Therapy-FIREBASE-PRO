@@ -2,27 +2,6 @@
   {
     "id": "muscle_origin_insertion_001",
     "question": "Which of the following muscles originates on the anterior inferior iliac spine (AIIS)?",
-    "answers": [
-      "Rectus femoris",
-      "Sartorius",
-      "Iliacus",
-      "Tensor fasciae latae"
-    ],
-    "correct": 0,
-    "short_explanation": "Rectus femoris originates at the AIIS.",
-    "long_explanation": "The rectus femoris, part of the quadriceps group, originates at the anterior inferior iliac spine and contributes to both hip flexion and knee extension.",
-    "clinical_application": "Understanding its dual action helps massage therapists address anterior pelvic tilt or quad-dominant gait patterns.",
-    "tags": ["rectus femoris", "AIIS", "origin"],
-    "keywords": ["anterior inferior iliac spine", "hip flexion", "quadriceps"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Lower Limb",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body",
-    "text": "Which of the following muscles originates on the anterior inferior iliac spine (AIIS)?",
     "options": [
       "Rectus femoris",
       "Sartorius",
@@ -30,40 +9,28 @@
       "Tensor fasciae latae"
     ],
     "correctAnswer": "Rectus femoris",
-    "abcd": [
-      "A. Rectus femoris",
-      "B. Sartorius",
-      "C. Iliacus",
-      "D. Tensor fasciae latae"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "Rectus femoris originates at the AIIS.",
+      "long": "The rectus femoris, part of the quadriceps group, originates at the anterior inferior iliac spine and contributes to both hip flexion and knee extension.",
+      "clinical": "Understanding its dual action helps massage therapists address anterior pelvic tilt or quad-dominant gait patterns."
+    },
+    "tags": ["rectus femoris", "AIIS", "origin"],
+    "keywords": ["anterior inferior iliac spine", "hip flexion", "quadriceps"],
+    "category": "Origin & Insertion",
+    "subcategory": "Lower Limb",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Trail Guide to the Body",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_002",
     "question": "What is the insertion point of the sternocleidomastoid muscle?",
-    "answers": [
-      "Acromion and clavicle",
-      "Styloid process of the temporal bone",
-      "Mastoid process of the temporal bone",
-      "Angle of the mandible"
-    ],
-    "correct": 2,
-    "short_explanation": "It inserts at the mastoid process.",
-    "long_explanation": "The sternocleidomastoid inserts on the mastoid process and lateral portion of the superior nuchal line. This insertion allows for rotation and lateral flexion of the head.",
-    "clinical_application": "Tension in the SCM can contribute to headaches or forward head posture.",
-    "tags": ["SCM", "insertion", "mastoid"],
-    "keywords": ["sternocleidomastoid", "mastoid process", "head movement"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Neck",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Gray’s Anatomy",
-    "text": "What is the insertion point of the sternocleidomastoid muscle?",
     "options": [
       "Acromion and clavicle",
       "Styloid process of the temporal bone",
@@ -71,40 +38,28 @@
       "Angle of the mandible"
     ],
     "correctAnswer": "Mastoid process of the temporal bone",
-    "abcd": [
-      "A. Acromion and clavicle",
-      "B. Styloid process of the temporal bone",
-      "C. Mastoid process of the temporal bone",
-      "D. Angle of the mandible"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "It inserts at the mastoid process.",
+      "long": "The sternocleidomastoid inserts on the mastoid process and lateral portion of the superior nuchal line. This insertion allows for rotation and lateral flexion of the head.",
+      "clinical": "Tension in the SCM can contribute to headaches or forward head posture."
+    },
+    "tags": ["SCM", "insertion", "mastoid"],
+    "keywords": ["sternocleidomastoid", "mastoid process", "head movement"],
+    "category": "Origin & Insertion",
+    "subcategory": "Neck",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "multiple_choice",
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Gray’s Anatomy",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_003",
     "question": "The gluteus medius inserts on which bony landmark?",
-    "answers": [
-      "Greater trochanter of the femur",
-      "Lesser trochanter of the femur",
-      "Iliac crest",
-      "Ischial spine"
-    ],
-    "correct": 0,
-    "short_explanation": "It inserts on the greater trochanter.",
-    "long_explanation": "The gluteus medius originates on the external surface of the ilium and inserts into the lateral aspect of the greater trochanter of the femur. It plays a key role in hip abduction and stabilization.",
-    "clinical_application": "Weakness or dysfunction of this muscle can lead to Trendelenburg gait or hip instability.",
-    "tags": ["gluteus medius", "insertion", "greater trochanter"],
-    "keywords": ["hip abductor", "pelvic stability", "hip joint"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Pelvis & Hip",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Kinesiology",
-    "source_reference": "Kinesiology of the Musculoskeletal System",
-    "text": "The gluteus medius inserts on which bony landmark?",
     "options": [
       "Greater trochanter of the femur",
       "Lesser trochanter of the femur",
@@ -112,40 +67,28 @@
       "Ischial spine"
     ],
     "correctAnswer": "Greater trochanter of the femur",
-    "abcd": [
-      "A. Greater trochanter of the femur",
-      "B. Lesser trochanter of the femur",
-      "C. Iliac crest",
-      "D. Ischial spine"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "It inserts on the greater trochanter.",
+      "long": "The gluteus medius originates on the external surface of the ilium and inserts into the lateral aspect of the greater trochanter of the femur. It plays a key role in hip abduction and stabilization.",
+      "clinical": "Weakness or dysfunction of this muscle can lead to Trendelenburg gait or hip instability."
+    },
+    "tags": ["gluteus medius", "insertion", "greater trochanter"],
+    "keywords": ["hip abductor", "pelvic stability", "hip joint"],
+    "category": "Origin & Insertion",
+    "subcategory": "Pelvis & Hip",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Kinesiology",
+    "source_reference": "Kinesiology of the Musculoskeletal System",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_004",
     "question": "Which muscle originates on the spinous processes of T7–L5 and inserts on the intertubercular groove of the humerus?",
-    "answers": [
-      "Trapezius",
-      "Latissimus dorsi",
-      "Teres major",
-      "Rhomboid major"
-    ],
-    "correct": 1,
-    "short_explanation": "Latissimus dorsi originates from T7–L5 and inserts on the humerus.",
-    "long_explanation": "Latissimus dorsi originates from the lower thoracic and lumbar vertebrae, thoracolumbar fascia, and iliac crest, inserting on the intertubercular groove of the humerus. It functions in extension, adduction, and medial rotation of the arm.",
-    "clinical_application": "Tightness in this muscle can limit overhead reach and affect shoulder mechanics, especially in athletes or manual laborers.",
-    "tags": ["latissimus dorsi", "origin", "insertion"],
-    "keywords": ["T7–L5", "intertubercular groove", "shoulder movement"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Back & Shoulder",
-    "difficulty": "Medium",
-    "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter’s Atlas of Human Anatomy",
-    "text": "Which muscle originates on the spinous processes of T7–L5 and inserts on the intertubercular groove of the humerus?",
     "options": [
       "Trapezius",
       "Latissimus dorsi",
@@ -153,40 +96,28 @@
       "Rhomboid major"
     ],
     "correctAnswer": "Latissimus dorsi",
-    "abcd": [
-      "A. Trapezius",
-      "B. Latissimus dorsi",
-      "C. Teres major",
-      "D. Rhomboid major"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "Latissimus dorsi originates from T7–L5 and inserts on the humerus.",
+      "long": "Latissimus dorsi originates from the lower thoracic and lumbar vertebrae, thoracolumbar fascia, and iliac crest, inserting on the intertubercular groove of the humerus. It functions in extension, adduction, and medial rotation of the arm.",
+      "clinical": "Tightness in this muscle can limit overhead reach and affect shoulder mechanics, especially in athletes or manual laborers."
+    },
+    "tags": ["latissimus dorsi", "origin", "insertion"],
+    "keywords": ["T7–L5", "intertubercular groove", "shoulder movement"],
+    "category": "Origin & Insertion",
+    "subcategory": "Back & Shoulder",
+    "difficulty": "Medium",
+    "difficulty_rating": 4,
+    "question_type": "multiple_choice",
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_005",
     "question": "Which muscle inserts on the coronoid process and tuberosity of the ulna?",
-    "answers": [
-      "Biceps brachii",
-      "Brachialis",
-      "Brachioradialis",
-      "Triceps brachii"
-    ],
-    "correct": 1,
-    "short_explanation": "Brachialis inserts on the coronoid process and tuberosity of the ulna.",
-    "long_explanation": "The brachialis originates from the distal anterior surface of the humerus and inserts on the coronoid process and tuberosity of the ulna. It is the primary elbow flexor regardless of forearm position.",
-    "clinical_application": "A tight or overactive brachialis can contribute to elbow pain and restricted flexion, especially in lifting movements.",
-    "tags": ["brachialis", "elbow", "insertion"],
-    "keywords": ["coronoid process", "ulna", "elbow flexor"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Upper Limb",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Kinesiology",
-    "source_reference": "Trail Guide to the Body",
-    "text": "Which muscle inserts on the coronoid process and tuberosity of the ulna?",
     "options": [
       "Biceps brachii",
       "Brachialis",
@@ -194,40 +125,28 @@
       "Triceps brachii"
     ],
     "correctAnswer": "Brachialis",
-    "abcd": [
-      "A. Biceps brachii",
-      "B. Brachialis",
-      "C. Brachioradialis",
-      "D. Triceps brachii"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "Brachialis inserts on the coronoid process and tuberosity of the ulna.",
+      "long": "The brachialis originates from the distal anterior surface of the humerus and inserts on the coronoid process and tuberosity of the ulna. It is the primary elbow flexor regardless of forearm position.",
+      "clinical": "A tight or overactive brachialis can contribute to elbow pain and restricted flexion, especially in lifting movements."
+    },
+    "tags": ["brachialis", "elbow", "insertion"],
+    "keywords": ["coronoid process", "ulna", "elbow flexor"],
+    "category": "Origin & Insertion",
+    "subcategory": "Upper Limb",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Kinesiology",
+    "source_reference": "Trail Guide to the Body",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_006",
     "question": "Which muscle originates on the ischial tuberosity and inserts on the medial condyle of the tibia?",
-    "answers": [
-      "Semitendinosus",
-      "Biceps femoris long head",
-      "Semimembranosus",
-      "Adductor magnus"
-    ],
-    "correct": 2,
-    "short_explanation": "Semimembranosus inserts on the medial condyle of the tibia.",
-    "long_explanation": "The semimembranosus is one of the hamstring muscles, originating from the ischial tuberosity and inserting on the medial condyle of the tibia. It contributes to knee flexion and hip extension.",
-    "clinical_application": "Knowing its pathway is essential when addressing posterior thigh tightness or hamstring injuries in athletes.",
-    "tags": ["semimembranosus", "hamstrings", "origin insertion"],
-    "keywords": ["ischial tuberosity", "medial condyle", "knee flexion"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Posterior Thigh",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Moore's Clinically Oriented Anatomy",
-    "text": "Which muscle originates on the ischial tuberosity and inserts on the medial condyle of the tibia?",
     "options": [
       "Semitendinosus",
       "Biceps femoris long head",
@@ -235,40 +154,28 @@
       "Adductor magnus"
     ],
     "correctAnswer": "Semimembranosus",
-    "abcd": [
-      "A. Semitendinosus",
-      "B. Biceps femoris long head",
-      "C. Semimembranosus",
-      "D. Adductor magnus"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "Semimembranosus inserts on the medial condyle of the tibia.",
+      "long": "The semimembranosus is one of the hamstring muscles, originating from the ischial tuberosity and inserting on the medial condyle of the tibia. It contributes to knee flexion and hip extension.",
+      "clinical": "Knowing its pathway is essential when addressing posterior thigh tightness or hamstring injuries in athletes."
+    },
+    "tags": ["semimembranosus", "hamstrings", "origin insertion"],
+    "keywords": ["ischial tuberosity", "medial condyle", "knee flexion"],
+    "category": "Origin & Insertion",
+    "subcategory": "Posterior Thigh",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "multiple_choice",
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_007",
     "question": "The supraspinatus muscle originates from the supraspinous fossa of the scapula and inserts where?",
-    "answers": [
-      "Greater tubercle of the humerus",
-      "Acromion process",
-      "Lesser tubercle of the humerus",
-      "Coracoid process"
-    ],
-    "correct": 0,
-    "short_explanation": "Supraspinatus inserts on the greater tubercle.",
-    "long_explanation": "The supraspinatus originates from the supraspinous fossa and inserts on the superior facet of the greater tubercle of the humerus. It initiates arm abduction.",
-    "clinical_application": "This muscle is commonly involved in rotator cuff injuries, which are frequently seen in massage clients with overhead activity.",
-    "tags": ["supraspinatus", "rotator cuff", "origin insertion"],
-    "keywords": ["greater tubercle", "shoulder abduction", "rotator cuff tear"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Shoulder",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Kendall’s Muscles: Testing and Function",
-    "text": "The supraspinatus muscle originates from the supraspinous fossa of the scapula and inserts where?",
     "options": [
       "Greater tubercle of the humerus",
       "Acromion process",
@@ -276,40 +183,28 @@
       "Coracoid process"
     ],
     "correctAnswer": "Greater tubercle of the humerus",
-    "abcd": [
-      "A. Greater tubercle of the humerus",
-      "B. Acromion process",
-      "C. Lesser tubercle of the humerus",
-      "D. Coracoid process"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "Supraspinatus inserts on the greater tubercle.",
+      "long": "The supraspinatus originates from the supraspinous fossa and inserts on the superior facet of the greater tubercle of the humerus. It initiates arm abduction.",
+      "clinical": "This muscle is commonly involved in rotator cuff injuries, which are frequently seen in massage clients with overhead activity."
+    },
+    "tags": ["supraspinatus", "rotator cuff", "origin insertion"],
+    "keywords": ["greater tubercle", "shoulder abduction", "rotator cuff tear"],
+    "category": "Origin & Insertion",
+    "subcategory": "Shoulder",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Kendall’s Muscles: Testing and Function",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_008",
     "question": "The temporalis muscle inserts on which structure?",
-    "answers": [
-      "Zygomatic arch",
-      "Coronoid process of the mandible",
-      "Angle of the mandible",
-      "Maxilla"
-    ],
-    "correct": 1,
-    "short_explanation": "It inserts on the coronoid process.",
-    "long_explanation": "The temporalis muscle originates from the temporal fossa and inserts on the coronoid process of the mandible. It plays a role in mandibular elevation and retraction.",
-    "clinical_application": "This muscle is often implicated in TMJ dysfunction and jaw tension, making it important for intraoral massage techniques.",
-    "tags": ["temporalis", "jaw", "origin insertion"],
-    "keywords": ["mandible", "coronoid process", "TMJ"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Head & Jaw",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Pathology & Treatment",
-    "source_reference": "Gray’s Anatomy",
-    "text": "The temporalis muscle inserts on which structure?",
     "options": [
       "Zygomatic arch",
       "Coronoid process of the mandible",
@@ -317,40 +212,28 @@
       "Maxilla"
     ],
     "correctAnswer": "Coronoid process of the mandible",
-    "abcd": [
-      "A. Zygomatic arch",
-      "B. Coronoid process of the mandible",
-      "C. Angle of the mandible",
-      "D. Maxilla"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "It inserts on the coronoid process.",
+      "long": "The temporalis muscle originates from the temporal fossa and inserts on the coronoid process of the mandible. It plays a role in mandibular elevation and retraction.",
+      "clinical": "This muscle is often implicated in TMJ dysfunction and jaw tension, making it important for intraoral massage techniques."
+    },
+    "tags": ["temporalis", "jaw", "origin insertion"],
+    "keywords": ["mandible", "coronoid process", "TMJ"],
+    "category": "Origin & Insertion",
+    "subcategory": "Head & Jaw",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Pathology & Treatment",
+    "source_reference": "Gray’s Anatomy",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_009",
     "question": "Which of the following muscles inserts into the iliotibial tract?",
-    "answers": [
-      "Vastus lateralis",
-      "Rectus femoris",
-      "Tensor fasciae latae",
-      "Gluteus maximus"
-    ],
-    "correct": 2,
-    "short_explanation": "Tensor fasciae latae inserts into the IT tract.",
-    "long_explanation": "The tensor fasciae latae originates from the ASIS and iliac crest and inserts into the iliotibial tract. It aids in hip abduction, flexion, and internal rotation.",
-    "clinical_application": "Tension in this muscle contributes to IT band syndrome, especially in runners, and is a common target for massage and stretching.",
-    "tags": ["TFL", "IT band", "hip"],
-    "keywords": ["tensor fasciae latae", "iliotibial tract", "hip movement"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Hip & Thigh",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Kinesiology",
-    "source_reference": "Trail Guide to the Body",
-    "text": "Which of the following muscles inserts into the iliotibial tract?",
     "options": [
       "Vastus lateralis",
       "Rectus femoris",
@@ -358,40 +241,28 @@
       "Gluteus maximus"
     ],
     "correctAnswer": "Tensor fasciae latae",
-    "abcd": [
-      "A. Vastus lateralis",
-      "B. Rectus femoris",
-      "C. Tensor fasciae latae",
-      "D. Gluteus maximus"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "Tensor fasciae latae inserts into the IT tract.",
+      "long": "The tensor fasciae latae originates from the ASIS and iliac crest and inserts into the iliotibial tract. It aids in hip abduction, flexion, and internal rotation.",
+      "clinical": "Tension in this muscle contributes to IT band syndrome, especially in runners, and is a common target for massage and stretching."
+    },
+    "tags": ["TFL", "IT band", "hip"],
+    "keywords": ["tensor fasciae latae", "iliotibial tract", "hip movement"],
+    "category": "Origin & Insertion",
+    "subcategory": "Hip & Thigh",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Kinesiology",
+    "source_reference": "Trail Guide to the Body",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   },
   {
     "id": "muscle_origin_insertion_010",
     "question": "What is the origin of the pectoralis major's clavicular head?",
-    "answers": [
-      "Sternal manubrium",
-      "Lateral third of the clavicle",
-      "Anterior surface of the sternum",
-      "Medial half of the clavicle"
-    ],
-    "correct": 3,
-    "short_explanation": "It originates from the medial half of the clavicle.",
-    "long_explanation": "The clavicular head of the pectoralis major originates from the medial half of the clavicle, contributing to horizontal adduction and flexion of the shoulder.",
-    "clinical_application": "Overuse or tightness here can limit horizontal abduction and contribute to postural imbalances seen in clients with kyphotic posture.",
-    "tags": ["pectoralis major", "clavicle", "origin"],
-    "keywords": ["shoulder flexion", "chest muscle", "horizontal adduction"],
-    "topic": "Muscular System",
-    "category": "Origin & Insertion",
-    "subcategory": "Chest",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Moore's Clinically Oriented Anatomy",
-    "text": "What is the origin of the pectoralis major's clavicular head?",
     "options": [
       "Sternal manubrium",
       "Lateral third of the clavicle",
@@ -399,14 +270,23 @@
       "Medial half of the clavicle"
     ],
     "correctAnswer": "Medial half of the clavicle",
-    "abcd": [
-      "A. Sternal manubrium",
-      "B. Lateral third of the clavicle",
-      "C. Anterior surface of the sternum",
-      "D. Medial half of the clavicle"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "insertions",
-    "filename": "muscle_origin_insertion.json"
+    "topics": ["Anatomy", "Muscular System"],
+    "subtopics": ["Insertions"],
+    "explanations": {
+      "short": "It originates from the medial half of the clavicle.",
+      "long": "The clavicular head of the pectoralis major originates from the medial half of the clavicle, contributing to horizontal adduction and flexion of the shoulder.",
+      "clinical": "Overuse or tightness here can limit horizontal abduction and contribute to postural imbalances seen in clients with kyphotic posture."
+    },
+    "tags": ["pectoralis major", "clavicle", "origin"],
+    "keywords": ["shoulder flexion", "chest muscle", "horizontal adduction"],
+    "category": "Origin & Insertion",
+    "subcategory": "Chest",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "multiple_choice",
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "filepath": "data/questions/anatomy/insertions/muscle_origin_insertion.json",
+    "sourceFile": "muscle_origin_insertion"
   }
 ]

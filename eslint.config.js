@@ -101,16 +101,23 @@ export default [
     },
   },
   {
-    files: ['e2e/**/*.ts'],
+    files: ['e2e/**/*.ts', 'e2e/**/*.tsx'],
     languageOptions: {
+      parser: parser,
       parserOptions: {
         project: './e2e/tsconfig.json',
+        ecmaFeatures: { jsx: true },
+        ecmaVersion: 2022,
+        sourceType: 'module',
       },
       globals: {
         document: 'readonly',
         window: 'readonly',
         navigator: 'readonly',
       },
+    },
+    plugins: {
+      '@typescript-eslint': tsEslintPlugin,
     },
   },
   {
@@ -132,10 +139,26 @@ export default [
       'e2e/tsconfig.json',
       'src/__tests__/static.badgeimages-dist.test.ts',
       'src/__tests__/static.badgeimages-public.test.ts',
+      'upload_questions_to_firestore_2.js', // Exclude problematic ESM import assertion file
     ],
   },
   {
-    files: ['*.js'],
+    files: ['*.js', '**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        module: 'readonly',
+        require: 'readonly',
+        __dirname: 'readonly',
+        URL: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['**/*.cjs'],
     languageOptions: {
       globals: {
         console: 'readonly',
@@ -143,6 +166,11 @@ export default [
         module: 'readonly',
         require: 'readonly',
         __dirname: 'readonly',
+        URL: 'readonly',
+      },
+      parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'script',
       },
     },
   },
@@ -226,6 +254,27 @@ export default [
         __dirname: 'readonly',
         require: 'readonly',
         module: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['scripts/**/*.js', 'upload_questions_to_firestore_2.js', 'fix_skipped_questions.cjs', 'mergeSkippedQuestions.js'],
+    languageOptions: {
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        module: 'readonly',
+        require: 'readonly',
+        __dirname: 'readonly',
+        URL: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['src/setupTests.ts', '**/*.test.ts', '**/*.test.tsx', '**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
+    languageOptions: {
+      globals: {
+        process: 'readonly',
       },
     },
   },

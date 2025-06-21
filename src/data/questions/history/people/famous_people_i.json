@@ -1,12 +1,13 @@
 [
   {
-    "id": "People 001",
+    "id": "famous_people_i_001",
     "question": "Who is considered the Father of Medicine and promoted the concept of \"anatripsis\" (rubbing up)?",
-    "answers": ["Claudius Galen", "Asclepius", "Hippocrates", "Avicenna"],
-    "correct": 2,
+    "options": ["Claudius Galen", "Asclepius", "Hippocrates", "Avicenna"],
+    "correctAnswer": "Hippocrates",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": ["hippocrates", "anatripsis"],
     "keywords": ["hippocrates", "anatripsis"],
@@ -23,27 +24,19 @@
     "short_explanation": "Hippocrates promoted 'anatripsis,' the therapeutic use of rubbing.",
     "long_explanation": "As the Father of Medicine, Hippocrates emphasized balance and physical manipulation, introducing 'anatripsis' to describe massage's healing role.",
     "clinical_application": "His legacy underpins massage's medical credibility and supports its use in holistic patient care.",
-    "text": "Who is considered the Father of Medicine and promoted the concept of \"anatripsis\" (rubbing up)?",
-    "options": ["Claudius Galen", "Asclepius", "Hippocrates", "Avicenna"],
-    "correctAnswer": "Hippocrates",
-    "abcd": [
-      "A. Claudius Galen",
-      "B. Asclepius",
-      "C. Hippocrates",
-      "D. Avicenna"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 002",
+    "id": "famous_people_i_002",
     "question": "Who combined exercise and massage into gymnastics in ancient Greek healing practices?",
-    "answers": ["Hippocrates", "Claudius Galen", "Aesclepius", "Johann Mezger"],
-    "correct": 2,
+    "options": ["Hippocrates", "Claudius Galen", "Aesclepius", "Johann Mezger"],
+    "correctAnswer": "Aesclepius",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": ["modality_massage", "purpose_healing", "asclepius", "gymnastics"],
     "keywords": [
@@ -65,27 +58,19 @@
     "short_explanation": "Asclepius combined movement and massage as a healing method.",
     "long_explanation": "Greek healing integrated exercise and manual therapy, practiced in gymnasiums for physical and mental wellness.",
     "clinical_application": "Massage therapists can apply these principles in sports and rehabilitative treatments.",
-    "text": "Who combined exercise and massage into gymnastics in ancient Greek healing practices?",
-    "options": ["Hippocrates", "Claudius Galen", "Aesclepius", "Johann Mezger"],
-    "correctAnswer": "Aesclepius",
-    "abcd": [
-      "A. Hippocrates",
-      "B. Claudius Galen",
-      "C. Aesclepius",
-      "D. Johann Mezger"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 003",
+    "id": "famous_people_i_003",
     "question": "Who was the Roman physician known for writing extensively about massage and anatomy, especially for gladiators?",
-    "answers": ["Hippocrates", "Claudius Galen", "Avicenna", "Mezger"],
-    "correct": 1,
+    "options": ["Hippocrates", "Claudius Galen", "Avicenna", "Mezger"],
+    "correctAnswer": "Claudius Galen",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": ["modality_massage", "galen", "roman_medicine"],
     "keywords": ["modality_massage", "galen", "roman_medicine"],
@@ -102,27 +87,24 @@
     "short_explanation": "Claudius Galen documented massage techniques for gladiator care.",
     "long_explanation": "Galen’s writings detailed muscle anatomy, injury recovery, and massage as essential for athletic performance.",
     "clinical_application": "His methods laid the foundation for modern sports massage and therapeutic protocols.",
-    "text": "Who was the Roman physician known for writing extensively about massage and anatomy, especially for gladiators?",
-    "options": ["Hippocrates", "Claudius Galen", "Avicenna", "Mezger"],
-    "correctAnswer": "Claudius Galen",
-    "abcd": ["A. Hippocrates", "B. Claudius Galen", "C. Avicenna", "D. Mezger"],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 004",
+    "id": "famous_people_i_004",
     "question": "Who wrote the *Canon of Medicine*, which included information on massage?",
-    "answers": [
+    "options": [
       "Avicenna",
       "Razi",
       "Claudius Claudius Galen",
       "Per Henrik Ling"
     ],
-    "correct": 0,
+    "correctAnswer": "Avicenna",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": ["modality_massage", "avicenna", "canon_of_medicine"],
     "keywords": ["modality_massage", "avicenna", "canon_of_medicine"],
@@ -139,37 +121,24 @@
     "short_explanation": "Avicenna’s Canon included massage in medieval Islamic medicine.",
     "long_explanation": "This text synthesized Greek, Roman, and Islamic healing practices, using massage to balance humors and improve circulation.",
     "clinical_application": "Supports massage as a bridge between traditional wisdom and clinical practice.",
-    "text": "Who wrote the *Canon of Medicine*, which included information on massage?",
-    "options": [
-      "Avicenna",
-      "Razi",
-      "Claudius Claudius Galen",
-      "Per Henrik Ling"
-    ],
-    "correctAnswer": "Avicenna",
-    "abcd": [
-      "A. Avicenna",
-      "B. Razi",
-      "C. Claudius Claudius Galen",
-      "D. Per Henrik Ling"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 005",
+    "id": "famous_people_i_005",
     "question": "Who coined the terms effleurage, petrissage, and tapotement and helped develop scientific massage?",
-    "answers": [
+    "options": [
       "Per Henrik Ling",
       "Johann Mezger",
       "Charles Taylor",
       "Elizabeth Dicke"
     ],
-    "correct": 1,
+    "correctAnswer": "Johann Mezger",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_massage",
@@ -202,32 +171,19 @@
     "short_explanation": "Johann Mezger formalized massage into a medical discipline using French terminology.",
     "long_explanation": "Mezger coined massage terms still used today and helped distinguish therapeutic massage from other bodywork.",
     "clinical_application": "Modern massage modalities still use his techniques for relaxation and deep tissue therapy.",
-    "text": "Who coined the terms effleurage, petrissage, and tapotement and helped develop scientific massage?",
-    "options": [
-      "Per Henrik Ling",
-      "Johann Mezger",
-      "Charles Taylor",
-      "Elizabeth Dicke"
-    ],
-    "correctAnswer": "Johann Mezger",
-    "abcd": [
-      "A. Per Henrik Ling",
-      "B. Johann Mezger",
-      "C. Charles Taylor",
-      "D. Elizabeth Dicke"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 006",
+    "id": "famous_people_i_006",
     "question": "Who is credited with developing Swedish Massage?",
-    "answers": ["Emil Vodder", "Ida Rolf", "Per Henrik Ling", "James Cyriax"],
-    "correct": 2,
+    "options": ["Emil Vodder", "Ida Rolf", "Per Henrik Ling", "James Cyriax"],
+    "correctAnswer": "Per Henrik Ling",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_massage",
@@ -258,32 +214,24 @@
     "short_explanation": "Per Henrik Ling created Swedish gymnastics and massage systems.",
     "long_explanation": "Ling emphasized structured movement and muscle therapy to restore health, influencing Western massage education.",
     "clinical_application": "Swedish massage forms the core of many certification programs and treatment strategies.",
-    "text": "Who is credited with developing Swedish Massage?",
-    "options": ["Emil Vodder", "Ida Rolf", "Per Henrik Ling", "James Cyriax"],
-    "correctAnswer": "Per Henrik Ling",
-    "abcd": [
-      "A. Emil Vodder",
-      "B. Ida Rolf",
-      "C. Per Henrik Ling",
-      "D. James Cyriax"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 007",
+    "id": "famous_people_i_007",
     "question": "Who introduced Swedish massage to the United States in the 1800s?",
-    "answers": [
+    "options": [
       "Charles Fayette Taylor",
       "James Cyriax",
       "Mathias Roth",
       "John Grosvenor"
     ],
-    "correct": 0,
+    "correctAnswer": "Charles Fayette Taylor",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_massage",
@@ -310,32 +258,19 @@
     "short_explanation": "Charles Taylor introduced Ling’s Swedish massage to America.",
     "long_explanation": "Taylor adapted Ling’s teachings and helped massage gain medical legitimacy in the 19th-century U.S.",
     "clinical_application": "Massage’s clinical presence in the U.S. owes much to Taylor’s educational efforts.",
-    "text": "Who introduced Swedish massage to the United States in the 1800s?",
-    "options": [
-      "Charles Fayette Taylor",
-      "James Cyriax",
-      "Mathias Roth",
-      "John Grosvenor"
-    ],
-    "correctAnswer": "Charles Fayette Taylor",
-    "abcd": [
-      "A. Charles Fayette Taylor",
-      "B. James Cyriax",
-      "C. Mathias Roth",
-      "D. John Grosvenor"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 008",
+    "id": "famous_people_i_008",
     "question": "Who developed the manual lymph drainage technique?",
-    "answers": ["James Cyriax", "Ida Rolf", "Emil Vodder", "John Upledger"],
-    "correct": 2,
+    "options": ["James Cyriax", "Ida Rolf", "Emil Vodder", "John Upledger"],
+    "correctAnswer": "Emil Vodder",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_rolfing",
@@ -362,32 +297,24 @@
     "short_explanation": "Emil Vodder developed MLD to support immune and fluid health.",
     "long_explanation": "Vodder created light, rhythmic massage techniques to stimulate lymph flow and reduce swelling.",
     "clinical_application": "Manual Lymph Drainage aids post-surgical recovery and lymphedema, key for clinical massage work.",
-    "text": "Who developed the manual lymph drainage technique?",
-    "options": ["James Cyriax", "Ida Rolf", "Emil Vodder", "John Upledger"],
-    "correctAnswer": "Emil Vodder",
-    "abcd": [
-      "A. James Cyriax",
-      "B. Ida Rolf",
-      "C. Emil Vodder",
-      "D. John Upledger"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 009",
+    "id": "famous_people_i_009",
     "question": "Who created Connective Tissue Massage, also known as Bindegewebsmassage?",
-    "answers": [
+    "options": [
       "Elizabeth Dicke",
       "Janet Travell",
       "Per Henrik Ling",
       "David Palmer"
     ],
-    "correct": 0,
+    "correctAnswer": "Elizabeth Dicke",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_massage",
@@ -420,32 +347,19 @@
     "short_explanation": "Elizabeth Dicke founded Bindegewebsmassage to influence organ systems.",
     "long_explanation": "Using skin pulling and friction, she targeted reflex zones to relieve chronic pain and dysfunction.",
     "clinical_application": "CTM helps treat visceral and fascial imbalances—highly relevant in therapeutic massage settings.",
-    "text": "Who created Connective Tissue Massage, also known as Bindegewebsmassage?",
-    "options": [
-      "Elizabeth Dicke",
-      "Janet Travell",
-      "Per Henrik Ling",
-      "David Palmer"
-    ],
-    "correctAnswer": "Elizabeth Dicke",
-    "abcd": [
-      "A. Elizabeth Dicke",
-      "B. Janet Travell",
-      "C. Per Henrik Ling",
-      "D. David Palmer"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 010",
+    "id": "famous_people_i_010",
     "question": "Who developed Structural Integration (Rolfing) to align the body through fascia manipulation?",
-    "answers": ["Paul St. John", "Ida Rolf", "Elizabeth Dicke", "Emil Vodder"],
-    "correct": 1,
+    "options": ["Paul St. John", "Ida Rolf", "Elizabeth Dicke", "Emil Vodder"],
+    "correctAnswer": "Ida Rolf",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_rolfing",
@@ -480,32 +394,24 @@
     "short_explanation": "Ida Rolf created Structural Integration using deep fascial manipulation.",
     "long_explanation": "Her work realigned posture by releasing fascial restrictions, improving function and balance.",
     "clinical_application": "Structural bodywork is essential for addressing chronic pain and postural dysfunction in massage clients.",
-    "text": "Who developed Structural Integration (Rolfing) to align the body through fascia manipulation?",
-    "options": ["Paul St. John", "Ida Rolf", "Elizabeth Dicke", "Emil Vodder"],
-    "correctAnswer": "Ida Rolf",
-    "abcd": [
-      "A. Paul St. John",
-      "B. Ida Rolf",
-      "C. Elizabeth Dicke",
-      "D. Emil Vodder"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 011",
+    "id": "famous_people_i_011",
     "question": "Who founded Neuromuscular Therapy (NMT)?",
-    "answers": [
+    "options": [
       "Janet Travell",
       "Paul St. John",
       "James Cyriax",
       "Milton Trager"
     ],
-    "correct": 1,
+    "correctAnswer": "Paul St. John",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": ["modality_trager", "paul_st_john", "nmt"],
     "keywords": ["modality_trager", "paul_st_john", "nmt"],
@@ -522,32 +428,19 @@
     "short_explanation": "Paul St. John advanced NMT for soft-tissue pain relief.",
     "long_explanation": "His system combined trigger point therapy, postural assessment, and biomechanics to resolve neuromuscular dysfunction.",
     "clinical_application": "NMT is widely used in rehabilitative and pain-management massage protocols.",
-    "text": "Who founded Neuromuscular Therapy (NMT)?",
-    "options": [
-      "Janet Travell",
-      "Paul St. John",
-      "James Cyriax",
-      "Milton Trager"
-    ],
-    "correctAnswer": "Paul St. John",
-    "abcd": [
-      "A. Janet Travell",
-      "B. Paul St. John",
-      "C. James Cyriax",
-      "D. Milton Trager"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 012",
+    "id": "famous_people_i_012",
     "question": "Who developed Craniosacral Therapy, emphasizing subtle movement of cranial bones?",
-    "answers": ["John Upledger", "David Palmer", "Per Henrik Ling", "Ida Rolf"],
-    "correct": 0,
+    "options": ["John Upledger", "David Palmer", "Per Henrik Ling", "Ida Rolf"],
+    "correctAnswer": "John Upledger",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_rolfing",
@@ -578,32 +471,24 @@
     "short_explanation": "John Upledger developed CST to balance cranial rhythms.",
     "long_explanation": "CST uses gentle pressure to release restrictions in the craniosacral system, affecting the central nervous system.",
     "clinical_application": "Beneficial for treating headaches, stress disorders, and trauma recovery through gentle massage techniques.",
-    "text": "Who developed Craniosacral Therapy, emphasizing subtle movement of cranial bones?",
-    "options": ["John Upledger", "David Palmer", "Per Henrik Ling", "Ida Rolf"],
-    "correctAnswer": "John Upledger",
-    "abcd": [
-      "A. John Upledger",
-      "B. David Palmer",
-      "C. Per Henrik Ling",
-      "D. Ida Rolf"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 013",
+    "id": "famous_people_i_013",
     "question": "Who invented Chair Massage and brought massage into public spaces like airports?",
-    "answers": [
+    "options": [
       "David Palmer",
       "John Upledger",
       "Mathias Roth",
       "Charles Taylor"
     ],
-    "correct": 0,
+    "correctAnswer": "David Palmer",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": ["modality_massage", "david_palmer", "chair_massage"],
     "keywords": ["modality_massage", "david_palmer", "chair_massage"],
@@ -620,32 +505,19 @@
     "short_explanation": "David Palmer modernized on-site chair massage for accessibility.",
     "long_explanation": "He made massage more mainstream by adapting it for short, clothed sessions in workplaces and airports.",
     "clinical_application": "Chair massage expands reach, offering stress relief in public and corporate environments.",
-    "text": "Who invented Chair Massage and brought massage into public spaces like airports?",
-    "options": [
-      "David Palmer",
-      "John Upledger",
-      "Mathias Roth",
-      "Charles Taylor"
-    ],
-    "correctAnswer": "David Palmer",
-    "abcd": [
-      "A. David Palmer",
-      "B. John Upledger",
-      "C. Mathias Roth",
-      "D. Charles Taylor"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   },
   {
-    "id": "People 014",
+    "id": "famous_people_i_014",
     "question": "Who was known for Deep Transverse Friction Massage and orthopedic techniques?",
-    "answers": ["James Cyriax", "Paul St. John", "Ida Rolf", "Claudius Galen"],
-    "correct": 0,
+    "options": ["James Cyriax", "Paul St. John", "Ida Rolf", "Claudius Galen"],
+    "correctAnswer": "James Cyriax",
+    "topics": ["History"],
+    "subtopics": ["People"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "history",
     "category": "History",
     "tags": [
       "modality_massage",
@@ -678,17 +550,8 @@
     "short_explanation": "James Cyriax applied friction massage for orthopedic rehab.",
     "long_explanation": "He developed deep transverse friction to break down adhesions and improve soft tissue mobility.",
     "clinical_application": "This technique is valuable for treating tendonitis, sprains, and repetitive strain injuries.",
-    "text": "Who was known for Deep Transverse Friction Massage and orthopedic techniques?",
-    "options": ["James Cyriax", "Paul St. John", "Ida Rolf", "Claudius Galen"],
-    "correctAnswer": "James Cyriax",
-    "abcd": [
-      "A. James Cyriax",
-      "B. Paul St. John",
-      "C. Ida Rolf",
-      "D. Claudius Galen"
-    ],
     "main_topic": "history",
-    "subtopic": "people",
-    "filename": "famous_people_i.json"
+    "filepath": "data/questions/history/people/famous_people_i.json",
+    "sourceFile": "famous_people_i"
   }
 ]

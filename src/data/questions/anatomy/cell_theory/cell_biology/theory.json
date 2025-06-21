@@ -1,17 +1,18 @@
 [
   {
-    "id": "Cell Theory 001",
+    "id": "theory_001",
     "question": "Which scientist is credited with coining the term 'cell'?",
-    "answers": [
+    "options": [
       "Robert Hooke",
       "Anton van Leeuwenhoek",
       "Rudolf Virchow",
       "Theodor Schwann"
     ],
-    "correct": 0,
+    "correctAnswer": "Robert Hooke",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["history_cell_discovery"],
     "keywords": ["history_cell_discovery"],
@@ -28,37 +29,24 @@
     "short_explanation": "Robert Hooke coined the term 'cell' after observing cork under a microscope.",
     "long_explanation": "In 1665, Hooke described small box-like structures in cork as 'cells' because they reminded him of monastery cells.",
     "clinical_application": "Understanding cell discovery helps massage therapists appreciate how microscopic anatomy relates to hands-on practice.",
-    "text": "Which scientist is credited with coining the term 'cell'?",
-    "options": [
-      "Robert Hooke",
-      "Anton van Leeuwenhoek",
-      "Rudolf Virchow",
-      "Theodor Schwann"
-    ],
-    "correctAnswer": "Robert Hooke",
-    "abcd": [
-      "A. Robert Hooke",
-      "B. Anton van Leeuwenhoek",
-      "C. Rudolf Virchow",
-      "D. Theodor Schwann"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 002",
+    "id": "theory_002",
     "question": "Which of the following is NOT part of the classical Cell Theory?",
-    "answers": [
+    "options": [
       "All living things are made of cells",
       "Cells arise from pre-existing cells",
       "All cells contain a nucleus",
       "The cell is the basic unit of life"
     ],
-    "correct": 2,
+    "correctAnswer": "All cells contain a nucleus",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_nucleus", "classical_theory"],
     "keywords": ["anatomy_cells", "anatomy_nucleus", "classical_theory"],
@@ -75,37 +63,24 @@
     "short_explanation": "Not all cells contain a nucleus, such as prokaryotes.",
     "long_explanation": "The classical cell theory includes: all living things are made of cells, cells are the basic unit of life, and all cells come from other cells. Nuclei are only present in eukaryotic cells.",
     "clinical_application": "Differentiating cell types helps massage professionals understand tissue repair and immune response.",
-    "text": "Which of the following is NOT part of the classical Cell Theory?",
-    "options": [
-      "All living things are made of cells",
-      "Cells arise from pre-existing cells",
-      "All cells contain a nucleus",
-      "The cell is the basic unit of life"
-    ],
-    "correctAnswer": "All cells contain a nucleus",
-    "abcd": [
-      "A. All living things are made of cells",
-      "B. Cells arise from pre-existing cells",
-      "C. All cells contain a nucleus",
-      "D. The cell is the basic unit of life"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 003",
+    "id": "theory_003",
     "question": "Which scientist stated that all animals are made of cells?",
-    "answers": [
+    "options": [
       "Matthias Schleiden",
       "Theodor Schwann",
       "Robert Hooke",
       "Louis Pasteur"
     ],
-    "correct": 1,
+    "correctAnswer": "Theodor Schwann",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "animal_cell_theory"],
     "keywords": ["anatomy_cells", "animal_cell_theory"],
@@ -122,37 +97,24 @@
     "short_explanation": "Theodor Schwann concluded that all animals are made of cells.",
     "long_explanation": "In 1839, Schwann extended cell theory to animals, uniting plants and animals under one biological principle.",
     "clinical_application": "Understanding tissue origins is essential for applying massage techniques that affect animal (human) cells.",
-    "text": "Which scientist stated that all animals are made of cells?",
-    "options": [
-      "Matthias Schleiden",
-      "Theodor Schwann",
-      "Robert Hooke",
-      "Louis Pasteur"
-    ],
-    "correctAnswer": "Theodor Schwann",
-    "abcd": [
-      "A. Matthias Schleiden",
-      "B. Theodor Schwann",
-      "C. Robert Hooke",
-      "D. Louis Pasteur"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 004",
+    "id": "theory_004",
     "question": "Which scientist concluded that all plants are composed of cells?",
-    "answers": [
+    "options": [
       "Rudolf Virchow",
       "Anton van Leeuwenhoek",
       "Robert Brown",
       "Matthias Schleiden"
     ],
-    "correct": 3,
+    "correctAnswer": "Matthias Schleiden",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "plant_cell_theory"],
     "keywords": ["anatomy_cells", "plant_cell_theory"],
@@ -169,37 +131,24 @@
     "short_explanation": "Matthias Schleiden stated that plants are made of cells.",
     "long_explanation": "Schleiden observed plant tissues under microscopes and proposed that cells are the basic units of plant life.",
     "clinical_application": "Relating to cellular makeup helps massage therapists understand the plant-based therapies used in complementary modalities.",
-    "text": "Which scientist concluded that all plants are composed of cells?",
-    "options": [
-      "Rudolf Virchow",
-      "Anton van Leeuwenhoek",
-      "Robert Brown",
-      "Matthias Schleiden"
-    ],
-    "correctAnswer": "Matthias Schleiden",
-    "abcd": [
-      "A. Rudolf Virchow",
-      "B. Anton van Leeuwenhoek",
-      "C. Robert Brown",
-      "D. Matthias Schleiden"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 005",
+    "id": "theory_005",
     "question": "Rudolf Virchow contributed to Cell Theory by stating:",
-    "answers": [
+    "options": [
       "Cells can form spontaneously",
       "Cells are produced only from other cells",
       "Cells contain chloroplasts",
       "Cells develop from DNA only"
     ],
-    "correct": 1,
+    "correctAnswer": "Cells are produced only from other cells",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_dna", "cell_reproduction"],
     "keywords": ["anatomy_cells", "anatomy_dna", "cell_reproduction"],
@@ -216,37 +165,24 @@
     "short_explanation": "Virchow said cells come only from pre-existing cells.",
     "long_explanation": "Virchow expanded on cell theory by rejecting spontaneous generation and emphasizing biogenesis: 'Omnis cellula e cellula.'",
     "clinical_application": "Massage aids healing by supporting cellular processes rooted in this principle of cellular reproduction.",
-    "text": "Rudolf Virchow contributed to Cell Theory by stating:",
-    "options": [
-      "Cells can form spontaneously",
-      "Cells are produced only from other cells",
-      "Cells contain chloroplasts",
-      "Cells develop from DNA only"
-    ],
-    "correctAnswer": "Cells are produced only from other cells",
-    "abcd": [
-      "A. Cells can form spontaneously",
-      "B. Cells are produced only from other cells",
-      "C. Cells contain chloroplasts",
-      "D. Cells develop from DNA only"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 006",
+    "id": "theory_006",
     "question": "What does Cell Theory suggest about the function of cells?",
-    "answers": [
+    "options": [
       "Cells do not function independently",
       "Cells are only used for reproduction",
       "Cells carry out all vital life processes",
       "Cells only exist in animals and plants"
     ],
-    "correct": 2,
+    "correctAnswer": "Cells carry out all vital life processes",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "cell_function"],
     "keywords": ["anatomy_cells", "cell_function"],
@@ -263,32 +199,19 @@
     "short_explanation": "Cells carry out all life functions.",
     "long_explanation": "Cell theory emphasizes that each cell performs basic life processes like energy use, waste removal, and repair.",
     "clinical_application": "Massage therapy supports these life functions through improved circulation and nutrient delivery.",
-    "text": "What does Cell Theory suggest about the function of cells?",
-    "options": [
-      "Cells do not function independently",
-      "Cells are only used for reproduction",
-      "Cells carry out all vital life processes",
-      "Cells only exist in animals and plants"
-    ],
-    "correctAnswer": "Cells carry out all vital life processes",
-    "abcd": [
-      "A. Cells do not function independently",
-      "B. Cells are only used for reproduction",
-      "C. Cells carry out all vital life processes",
-      "D. Cells only exist in animals and plants"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 007",
+    "id": "theory_007",
     "question": "Which technology greatly contributed to the development of Cell Theory?",
-    "answers": ["Spectroscopy", "Microscopy", "PCR", "X-ray imaging"],
-    "correct": 1,
+    "options": ["Spectroscopy", "Microscopy", "PCR", "X-ray imaging"],
+    "correctAnswer": "Microscopy",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "microscopy_development"],
     "keywords": ["anatomy_cells", "microscopy_development"],
@@ -305,27 +228,24 @@
     "short_explanation": "Microscopy enabled observation of cells.",
     "long_explanation": "Advances in microscope design allowed scientists like Hooke and Leeuwenhoek to see and describe cells for the first time.",
     "clinical_application": "Microscopic insights enhance understanding of the tissues massage therapists work with.",
-    "text": "Which technology greatly contributed to the development of Cell Theory?",
-    "options": ["Spectroscopy", "Microscopy", "PCR", "X-ray imaging"],
-    "correctAnswer": "Microscopy",
-    "abcd": ["A. Spectroscopy", "B. Microscopy", "C. PCR", "D. X-ray imaging"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 008",
+    "id": "theory_008",
     "question": "Which of the following is consistent with Cell Theory?",
-    "answers": [
+    "options": [
       "Viruses are living cells",
       "All organisms begin as a single cell",
       "Only animals have cells",
       "Cells can survive without energy"
     ],
-    "correct": 1,
+    "correctAnswer": "All organisms begin as a single cell",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -354,32 +274,19 @@
     "short_explanation": "All organisms begin as a single cell.",
     "long_explanation": "From fertilization to growth, all organisms start as one cell that divides and differentiates into many specialized cells.",
     "clinical_application": "This principle supports how massage may influence early cellular regeneration and healing in therapy.",
-    "text": "Which of the following is consistent with Cell Theory?",
-    "options": [
-      "Viruses are living cells",
-      "All organisms begin as a single cell",
-      "Only animals have cells",
-      "Cells can survive without energy"
-    ],
-    "correctAnswer": "All organisms begin as a single cell",
-    "abcd": [
-      "A. Viruses are living cells",
-      "B. All organisms begin as a single cell",
-      "C. Only animals have cells",
-      "D. Cells can survive without energy"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 009",
+    "id": "theory_009",
     "question": "Cell Theory applies to which of the following organisms?",
-    "answers": ["Animals", "Plants", "Fungi", "All of the above"],
-    "correct": 3,
+    "options": ["Animals", "Plants", "Fungi", "All of the above"],
+    "correctAnswer": "All of the above",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -406,27 +313,24 @@
     "short_explanation": "Cell theory applies to all life forms, including fungi.",
     "long_explanation": "Every living organism—animal, plant, or fungus—is made up of cells, making the theory universal.",
     "clinical_application": "Knowledge of cellular structure across organisms supports a holistic view of health and massage’s role.",
-    "text": "Cell Theory applies to which of the following organisms?",
-    "options": ["Animals", "Plants", "Fungi", "All of the above"],
-    "correctAnswer": "All of the above",
-    "abcd": ["A. Animals", "B. Plants", "C. Fungi", "D. All of the above"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   },
   {
-    "id": "Cell Theory 010",
+    "id": "theory_010",
     "question": "How did Anton van Leeuwenhoek contribute to cell studies?",
-    "answers": [
+    "options": [
       "He developed the Cell Theory",
       "He first observed live cells under a microscope",
       "He discovered DNA",
       "He proposed spontaneous generation"
     ],
-    "correct": 1,
+    "correctAnswer": "He first observed live cells under a microscope",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_dna", "live_cell_discovery"],
     "keywords": ["anatomy_cells", "anatomy_dna", "live_cell_discovery"],
@@ -443,22 +347,8 @@
     "short_explanation": "He was the first to observe live cells.",
     "long_explanation": "Using handcrafted microscopes, Leeuwenhoek saw living microorganisms, paving the way for microbiology and cell biology.",
     "clinical_application": "This work underlies infection control, relevant for maintaining hygiene in massage practice.",
-    "text": "How did Anton van Leeuwenhoek contribute to cell studies?",
-    "options": [
-      "He developed the Cell Theory",
-      "He first observed live cells under a microscope",
-      "He discovered DNA",
-      "He proposed spontaneous generation"
-    ],
-    "correctAnswer": "He first observed live cells under a microscope",
-    "abcd": [
-      "A. He developed the Cell Theory",
-      "B. He first observed live cells under a microscope",
-      "C. He discovered DNA",
-      "D. He proposed spontaneous generation"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "theory.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/theory.json",
+    "sourceFile": "theory"
   }
 ]

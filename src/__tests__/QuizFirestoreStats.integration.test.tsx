@@ -30,8 +30,8 @@ jest.mock('../firebaseClient', () => ({ db: {} }));
 // Minimal question data for test
 jest.mock('../questions/index', () => ({
   getQuestions: () => Promise.resolve([
-    { id: 'q1', text: 'Q1', options: ['A', 'B'], correctAnswer: 'A', topic: 'Test' },
-    { id: 'q2', text: 'Q2', options: ['C', 'D'], correctAnswer: 'D', topic: 'Test' },
+    { id: 'q1', text: 'Q1', options: ['A', 'B'], correctAnswer: 'A', topics: ['Test'] },
+    { id: 'q2', text: 'Q2', options: ['C', 'D'], correctAnswer: 'D', topics: ['Test'] },
   ]),
 }));
 

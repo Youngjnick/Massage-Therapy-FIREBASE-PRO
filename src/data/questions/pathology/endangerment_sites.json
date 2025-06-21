@@ -1,17 +1,18 @@
 [
   {
-    "id": "Endangerment Sites 001",
+    "id": "endangerment_sites_001",
     "question": "What is an endangerment site in massage therapy?",
-    "answers": [
+    "options": [
       "An area that is always painful to touch",
       "A location where vital structures are close to the surface and can be injured",
       "A bony landmark with limited circulation",
       "A common site for cramping"
     ],
-    "correct": 1,
+    "correctAnswer": "A location where vital structures are close to the surface and can be injured",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "condition_pain",
@@ -44,37 +45,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 1,
-    "text": "What is an endangerment site in massage therapy?",
-    "options": [
-      "An area that is always painful to touch",
-      "A location where vital structures are close to the surface and can be injured",
-      "A bony landmark with limited circulation",
-      "A common site for cramping"
-    ],
-    "correctAnswer": "A location where vital structures are close to the surface and can be injured",
-    "abcd": [
-      "A. An area that is always painful to touch",
-      "B. A location where vital structures are close to the surface and can be injured",
-      "C. A bony landmark with limited circulation",
-      "D. A common site for cramping"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 002",
+    "id": "endangerment_sites_002",
     "question": "Which of the following is an endangerment site?",
-    "answers": [
+    "options": [
       "Deltoid muscle belly",
       "Posterior forearm",
       "Anterior triangle of the neck",
       "Sole of the foot"
     ],
-    "correct": 2,
+    "correctAnswer": "Anterior triangle of the neck",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["anatomy_muscles", "anatomy_endangerment_site", "muscle_deltoid"],
     "keywords": [
@@ -101,37 +89,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 2,
-    "text": "Which of the following is an endangerment site?",
-    "options": [
-      "Deltoid muscle belly",
-      "Posterior forearm",
-      "Anterior triangle of the neck",
-      "Sole of the foot"
-    ],
-    "correctAnswer": "Anterior triangle of the neck",
-    "abcd": [
-      "A. Deltoid muscle belly",
-      "B. Posterior forearm",
-      "C. Anterior triangle of the neck",
-      "D. Sole of the foot"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 003",
+    "id": "endangerment_sites_003",
     "question": "Why is the axilla considered an endangerment site?",
-    "answers": [
+    "options": [
       "It contains major arteries, veins, and lymph nodes",
       "It is surrounded by muscle tissue",
       "It has few nerve endings",
       "It is located near the scapula"
     ],
-    "correct": 0,
+    "correctAnswer": "It contains major arteries, veins, and lymph nodes",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "anatomy_nerve",
@@ -166,37 +141,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 3,
-    "text": "Why is the axilla considered an endangerment site?",
-    "options": [
-      "It contains major arteries, veins, and lymph nodes",
-      "It is surrounded by muscle tissue",
-      "It has few nerve endings",
-      "It is located near the scapula"
-    ],
-    "correctAnswer": "It contains major arteries, veins, and lymph nodes",
-    "abcd": [
-      "A. It contains major arteries, veins, and lymph nodes",
-      "B. It is surrounded by muscle tissue",
-      "C. It has few nerve endings",
-      "D. It is located near the scapula"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 004",
+    "id": "endangerment_sites_004",
     "question": "Which structure is located in the anterior triangle of the neck?",
-    "answers": [
+    "options": [
       "Sciatic nerve",
       "Femoral artery",
       "Carotid artery and vagus nerve",
       "Median nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Carotid artery and vagus nerve",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "anatomy_nerve",
@@ -235,37 +197,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 4,
-    "text": "Which structure is located in the anterior triangle of the neck?",
-    "options": [
-      "Sciatic nerve",
-      "Femoral artery",
-      "Carotid artery and vagus nerve",
-      "Median nerve"
-    ],
-    "correctAnswer": "Carotid artery and vagus nerve",
-    "abcd": [
-      "A. Sciatic nerve",
-      "B. Femoral artery",
-      "C. Carotid artery and vagus nerve",
-      "D. Median nerve"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 005",
+    "id": "endangerment_sites_005",
     "question": "Which of the following should be avoided due to proximity to the kidneys?",
-    "answers": [
+    "options": [
       "Upper trapezius",
       "Low back near the 12th rib",
       "Gluteal fold",
       "Posterior thigh"
     ],
-    "correct": 1,
+    "correctAnswer": "Low back near the 12th rib",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "anatomy_kidneys",
@@ -298,37 +247,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 5,
-    "text": "Which of the following should be avoided due to proximity to the kidneys?",
-    "options": [
-      "Upper trapezius",
-      "Low back near the 12th rib",
-      "Gluteal fold",
-      "Posterior thigh"
-    ],
-    "correctAnswer": "Low back near the 12th rib",
-    "abcd": [
-      "A. Upper trapezius",
-      "B. Low back near the 12th rib",
-      "C. Gluteal fold",
-      "D. Posterior thigh"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 006",
+    "id": "endangerment_sites_006",
     "question": "Why is the popliteal fossa considered an endangerment site?",
-    "answers": [
+    "options": [
       "It has thick connective tissue",
       "It contains the femoral artery",
       "It contains blood vessels and nerves behind the knee",
       "It is prone to soreness after exercise"
     ],
-    "correct": 2,
+    "correctAnswer": "It contains blood vessels and nerves behind the knee",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "anatomy_nerve",
@@ -369,37 +305,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 6,
-    "text": "Why is the popliteal fossa considered an endangerment site?",
-    "options": [
-      "It has thick connective tissue",
-      "It contains the femoral artery",
-      "It contains blood vessels and nerves behind the knee",
-      "It is prone to soreness after exercise"
-    ],
-    "correctAnswer": "It contains blood vessels and nerves behind the knee",
-    "abcd": [
-      "A. It has thick connective tissue",
-      "B. It contains the femoral artery",
-      "C. It contains blood vessels and nerves behind the knee",
-      "D. It is prone to soreness after exercise"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 007",
+    "id": "endangerment_sites_007",
     "question": "Which of the following structures lies within the cubital (antecubital) fossa?",
-    "answers": [
+    "options": [
       "Carotid artery",
       "Sciatic nerve",
       "Brachial artery and median nerve",
       "Femoral nerve"
     ],
-    "correct": 2,
+    "correctAnswer": "Brachial artery and median nerve",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "anatomy_nerve",
@@ -438,37 +361,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 7,
-    "text": "Which of the following structures lies within the cubital (antecubital) fossa?",
-    "options": [
-      "Carotid artery",
-      "Sciatic nerve",
-      "Brachial artery and median nerve",
-      "Femoral nerve"
-    ],
-    "correctAnswer": "Brachial artery and median nerve",
-    "abcd": [
-      "A. Carotid artery",
-      "B. Sciatic nerve",
-      "C. Brachial artery and median nerve",
-      "D. Femoral nerve"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 008",
+    "id": "endangerment_sites_008",
     "question": "Where is the femoral triangle located?",
-    "answers": [
+    "options": [
       "Behind the knee",
       "Medial thigh near the groin",
       "Posterior calf",
       "Lower abdomen"
     ],
-    "correct": 1,
+    "correctAnswer": "Medial thigh near the groin",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [],
     "keywords": [],
@@ -491,37 +401,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 8,
-    "text": "Where is the femoral triangle located?",
-    "options": [
-      "Behind the knee",
-      "Medial thigh near the groin",
-      "Posterior calf",
-      "Lower abdomen"
-    ],
-    "correctAnswer": "Medial thigh near the groin",
-    "abcd": [
-      "A. Behind the knee",
-      "B. Medial thigh near the groin",
-      "C. Posterior calf",
-      "D. Lower abdomen"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 009",
+    "id": "endangerment_sites_009",
     "question": "Which technique is appropriate when working near an endangerment site?",
-    "answers": [
+    "options": [
       "Deep pressure with knuckles",
       "Rapid tapotement",
       "Gentle, superficial contact or avoidance",
       "Cross-fiber friction"
     ],
-    "correct": 2,
+    "correctAnswer": "Gentle, superficial contact or avoidance",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "technique_friction",
@@ -554,37 +451,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 9,
-    "text": "Which technique is appropriate when working near an endangerment site?",
-    "options": [
-      "Deep pressure with knuckles",
-      "Rapid tapotement",
-      "Gentle, superficial contact or avoidance",
-      "Cross-fiber friction"
-    ],
-    "correctAnswer": "Gentle, superficial contact or avoidance",
-    "abcd": [
-      "A. Deep pressure with knuckles",
-      "B. Rapid tapotement",
-      "C. Gentle, superficial contact or avoidance",
-      "D. Cross-fiber friction"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   },
   {
-    "id": "Endangerment Sites 010",
+    "id": "endangerment_sites_010",
     "question": "Why must care be taken when massaging the subclavian region under the clavicle?",
-    "answers": [
+    "options": [
       "The skin is thin and delicate",
       "It contains lymph nodes and major blood vessels",
       "It leads to muscle cramping",
       "It is a common site for trigger points"
     ],
-    "correct": 1,
+    "correctAnswer": "It contains lymph nodes and major blood vessels",
+    "topics": ["Pathology"],
+    "subtopics": ["Endangerment_sites.json"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -617,22 +501,8 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 10,
-    "text": "Why must care be taken when massaging the subclavian region under the clavicle?",
-    "options": [
-      "The skin is thin and delicate",
-      "It contains lymph nodes and major blood vessels",
-      "It leads to muscle cramping",
-      "It is a common site for trigger points"
-    ],
-    "correctAnswer": "It contains lymph nodes and major blood vessels",
-    "abcd": [
-      "A. The skin is thin and delicate",
-      "B. It contains lymph nodes and major blood vessels",
-      "C. It leads to muscle cramping",
-      "D. It is a common site for trigger points"
-    ],
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "endangerment_sites.json"
+    "filepath": "data/questions/pathology/endangerment_sites.json",
+    "sourceFile": "endangerment_sites"
   }
 ]

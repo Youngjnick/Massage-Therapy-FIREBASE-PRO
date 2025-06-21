@@ -10,7 +10,7 @@ jest.mock('../questions/index', () => ({
       text: 'Q1',
       options: ['A', 'B', 'C'],
       correctAnswer: 'B',
-      topic: 'T1',
+      topics: ['T1'],
       short_explanation: 'Short explanation',
     },
     {
@@ -18,10 +18,13 @@ jest.mock('../questions/index', () => ({
       text: 'Q2',
       options: ['X', 'Y', 'Z'],
       correctAnswer: 'Y',
-      topic: 'T1',
+      topics: ['T1'],
       short_explanation: 'Another explanation',
     },
   ]),
+}));
+jest.mock('../questions/fileList', () => ({
+  fileList: ['T1.json'],
 }));
 
 describe('Quiz Accessibility, Feedback, and State Integration', () => {

@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 /**
  * Automated test to ensure every badge in badges.json has a corresponding image file in public/badges/.
  * Uses process.cwd() for Jest and linter compatibility (no require, no __dirname, no import.meta.url).

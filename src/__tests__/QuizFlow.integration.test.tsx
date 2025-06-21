@@ -5,14 +5,14 @@ jest.mock('../questions/index', () => ({
       text: 'What is the capital of France?',
       options: ['Paris', 'London', 'Berlin', 'Madrid'],
       correctAnswer: 'Paris',
-      topic: 'Geography',
+      topics: ['Geography'],
     },
     {
       id: '2',
       text: 'What is 2 + 2?',
       options: ['3', '4', '5', '6'],
       correctAnswer: '4',
-      topic: 'Math',
+      topics: ['Math'],
     },
   ]),
 }));

@@ -1,17 +1,18 @@
 [
   {
-    "id": "Contraindications 001",
+    "id": "contraindications_001",
     "question": "Which condition requires immediate avoidance of massage and physician referral?",
-    "answers": [
+    "options": [
       "Mild muscle soreness",
       "Deep vein thrombosis (DVT)",
       "Dry skin",
       "Joint stiffness"
     ],
-    "correct": 1,
+    "correctAnswer": "Deep vein thrombosis (DVT)",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -50,37 +51,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 1,
-    "text": "Which condition requires immediate avoidance of massage and physician referral?",
-    "options": [
-      "Mild muscle soreness",
-      "Deep vein thrombosis (DVT)",
-      "Dry skin",
-      "Joint stiffness"
-    ],
-    "correctAnswer": "Deep vein thrombosis (DVT)",
-    "abcd": [
-      "A. Mild muscle soreness",
-      "B. Deep vein thrombosis (DVT)",
-      "C. Dry skin",
-      "D. Joint stiffness"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 002",
+    "id": "contraindications_002",
     "question": "Which is considered a total contraindication for massage?",
-    "answers": [
+    "options": [
       "Acute fever",
       "Old scar tissue",
       "Chronic back pain",
       "Mild anxiety"
     ],
-    "correct": 0,
+    "correctAnswer": "Acute fever",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -117,32 +105,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 2,
-    "text": "Which is considered a total contraindication for massage?",
-    "options": [
-      "Acute fever",
-      "Old scar tissue",
-      "Chronic back pain",
-      "Mild anxiety"
-    ],
-    "correctAnswer": "Acute fever",
-    "abcd": [
-      "A. Acute fever",
-      "B. Old scar tissue",
-      "C. Chronic back pain",
-      "D. Mild anxiety"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 003",
+    "id": "contraindications_003",
     "question": "Massage should be avoided over which of the following conditions?",
-    "answers": ["Scar tissue", "Bruising", "Hematoma", "Stretch marks"],
-    "correct": 2,
+    "options": ["Scar tissue", "Bruising", "Hematoma", "Stretch marks"],
+    "correctAnswer": "Hematoma",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["modality_massage", "anatomy_tissues"],
     "keywords": ["modality_massage", "anatomy_tissues"],
@@ -165,32 +140,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 3,
-    "text": "Massage should be avoided over which of the following conditions?",
-    "options": ["Scar tissue", "Bruising", "Hematoma", "Stretch marks"],
-    "correctAnswer": "Hematoma",
-    "abcd": [
-      "A. Scar tissue",
-      "B. Bruising",
-      "C. Hematoma",
-      "D. Stretch marks"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 004",
+    "id": "contraindications_004",
     "question": "Why is massage contraindicated in the first trimester of pregnancy without clearance?",
-    "answers": [
+    "options": [
       "High risk for miscarriage",
       "Allergies to oils",
       "Joint damage",
       "It affects digestion"
     ],
-    "correct": 0,
+    "correctAnswer": "High risk for miscarriage",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -227,37 +194,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 4,
-    "text": "Why is massage contraindicated in the first trimester of pregnancy without clearance?",
-    "options": [
-      "High risk for miscarriage",
-      "Allergies to oils",
-      "Joint damage",
-      "It affects digestion"
-    ],
-    "correctAnswer": "High risk for miscarriage",
-    "abcd": [
-      "A. High risk for miscarriage",
-      "B. Allergies to oils",
-      "C. Joint damage",
-      "D. It affects digestion"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 005",
+    "id": "contraindications_005",
     "question": "When massaging a client with cancer, what is required?",
-    "answers": [
+    "options": [
       "Medical clearance",
       "Deeper pressure",
       "Essential oils",
       "Vigorous friction"
     ],
-    "correct": 0,
+    "correctAnswer": "Medical clearance",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -294,37 +248,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 5,
-    "text": "When massaging a client with cancer, what is required?",
-    "options": [
-      "Medical clearance",
-      "Deeper pressure",
-      "Essential oils",
-      "Vigorous friction"
-    ],
-    "correctAnswer": "Medical clearance",
-    "abcd": [
-      "A. Medical clearance",
-      "B. Deeper pressure",
-      "C. Essential oils",
-      "D. Vigorous friction"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 006",
+    "id": "contraindications_006",
     "question": "What should a massage therapist do if a client presents with deep vein thrombosis (DVT)?",
-    "answers": [
+    "options": [
       "Proceed with caution",
       "Avoid the area",
       "Apply deep pressure",
       "Refer out immediately"
     ],
-    "correct": 3,
+    "correctAnswer": "Refer out immediately",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -359,37 +300,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 6,
-    "text": "What should a massage therapist do if a client presents with deep vein thrombosis (DVT)?",
-    "options": [
-      "Proceed with caution",
-      "Avoid the area",
-      "Apply deep pressure",
-      "Refer out immediately"
-    ],
-    "correctAnswer": "Refer out immediately",
-    "abcd": [
-      "A. Proceed with caution",
-      "B. Avoid the area",
-      "C. Apply deep pressure",
-      "D. Refer out immediately"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 007",
+    "id": "contraindications_007",
     "question": "What is a local contraindication?",
-    "answers": [
+    "options": [
       "Massage should not be done at all",
       "Massage is only safe under doctor supervision",
       "Massage is avoided in a specific area",
       "Massage must use oil"
     ],
-    "correct": 2,
+    "correctAnswer": "Massage is avoided in a specific area",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": [
       "modality_massage",
@@ -422,37 +350,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 7,
-    "text": "What is a local contraindication?",
-    "options": [
-      "Massage should not be done at all",
-      "Massage is only safe under doctor supervision",
-      "Massage is avoided in a specific area",
-      "Massage must use oil"
-    ],
-    "correctAnswer": "Massage is avoided in a specific area",
-    "abcd": [
-      "A. Massage should not be done at all",
-      "B. Massage is only safe under doctor supervision",
-      "C. Massage is avoided in a specific area",
-      "D. Massage must use oil"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 008",
+    "id": "contraindications_008",
     "question": "Which of the following is an example of a conditional contraindication?",
-    "answers": [
+    "options": [
       "Active fever",
       "Open wound",
       "High blood pressure under control",
       "Deep vein thrombosis"
     ],
-    "correct": 2,
+    "correctAnswer": "High blood pressure under control",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["technique_pressure", "contraindication"],
     "keywords": ["technique_pressure", "contraindication"],
@@ -475,32 +390,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 8,
-    "text": "Which of the following is an example of a conditional contraindication?",
-    "options": [
-      "Active fever",
-      "Open wound",
-      "High blood pressure under control",
-      "Deep vein thrombosis"
-    ],
-    "correctAnswer": "High blood pressure under control",
-    "abcd": [
-      "A. Active fever",
-      "B. Open wound",
-      "C. High blood pressure under control",
-      "D. Deep vein thrombosis"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   },
   {
-    "id": "Contraindications 009",
+    "id": "contraindications_009",
     "question": "Massage should be avoided on which of the following skin conditions?",
-    "answers": ["Psoriasis", "Eczema", "Athlete’s foot", "Stretch marks"],
-    "correct": 2,
+    "options": ["Psoriasis", "Eczema", "Athlete’s foot", "Stretch marks"],
+    "correctAnswer": "Athlete’s foot",
+    "topics": ["Pathology"],
+    "subtopics": ["Contraindications"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "pathology",
     "category": "Pathology",
     "tags": ["modality_massage", "population_athlete", "organ_skin"],
     "keywords": ["modality_massage", "population_athlete", "organ_skin"],
@@ -523,17 +425,8 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 9,
-    "text": "Massage should be avoided on which of the following skin conditions?",
-    "options": ["Psoriasis", "Eczema", "Athlete’s foot", "Stretch marks"],
-    "correctAnswer": "Athlete’s foot",
-    "abcd": [
-      "A. Psoriasis",
-      "B. Eczema",
-      "C. Athlete’s foot",
-      "D. Stretch marks"
-    ],
     "main_topic": "pathology",
-    "subtopic": "contraindications",
-    "filename": "contraindications.json"
+    "filepath": "data/questions/pathology/contraindications/contraindications.json",
+    "sourceFile": "contraindications"
   }
 ]

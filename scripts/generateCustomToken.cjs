@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 // @ts-nocheck
 // scripts/generateCustomToken.js
 // Usage: node scripts/generateCustomToken.js <uid>

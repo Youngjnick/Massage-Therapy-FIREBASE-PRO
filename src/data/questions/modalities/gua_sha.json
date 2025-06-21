@@ -1,17 +1,18 @@
 [
   {
-    "id": "Gua Sha 001",
+    "id": "gua_sha_001",
     "question": "What is the primary purpose of Gua Sha?",
-    "answers": [
+    "options": [
       "Muscle building",
       "Skin exfoliation",
       "Promoting circulation and relieving stagnation",
       "Removing moles"
     ],
-    "correct": 2,
+    "correctAnswer": "Promoting circulation and relieving stagnation",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["anatomy_muscles", "modality_gua_sha", "organ_skin"],
     "keywords": ["anatomy_muscles", "modality_gua_sha", "organ_skin"],
@@ -35,37 +36,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 1,
-    "text": "What is the primary purpose of Gua Sha?",
-    "options": [
-      "Muscle building",
-      "Skin exfoliation",
-      "Promoting circulation and relieving stagnation",
-      "Removing moles"
-    ],
-    "correctAnswer": "Promoting circulation and relieving stagnation",
-    "abcd": [
-      "A. Muscle building",
-      "B. Skin exfoliation",
-      "C. Promoting circulation and relieving stagnation",
-      "D. Removing moles"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 002",
+    "id": "gua_sha_002",
     "question": "What tool is commonly used in a Gua Sha treatment?",
-    "answers": [
+    "options": [
       "Wooden roller",
       "Jade or horn scraping tool",
       "Metal needle",
       "Cotton pad"
     ],
-    "correct": 1,
+    "correctAnswer": "Jade or horn scraping tool",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_gua_sha"],
     "keywords": ["modality_gua_sha"],
@@ -89,37 +77,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 2,
-    "text": "What tool is commonly used in a Gua Sha treatment?",
-    "options": [
-      "Wooden roller",
-      "Jade or horn scraping tool",
-      "Metal needle",
-      "Cotton pad"
-    ],
-    "correctAnswer": "Jade or horn scraping tool",
-    "abcd": [
-      "A. Wooden roller",
-      "B. Jade or horn scraping tool",
-      "C. Metal needle",
-      "D. Cotton pad"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 003",
+    "id": "gua_sha_003",
     "question": "Which of the following best describes the technique of Gua Sha?",
-    "answers": [
+    "options": [
       "Deep pressure kneading",
       "Gentle tapping with fingers",
       "Repeated scraping of the skin surface",
       "Percussive therapy using suction cups"
     ],
-    "correct": 2,
+    "correctAnswer": "Repeated scraping of the skin surface",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "technique_cupping",
@@ -155,32 +130,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 3,
-    "text": "Which of the following best describes the technique of Gua Sha?",
-    "options": [
-      "Deep pressure kneading",
-      "Gentle tapping with fingers",
-      "Repeated scraping of the skin surface",
-      "Percussive therapy using suction cups"
-    ],
-    "correctAnswer": "Repeated scraping of the skin surface",
-    "abcd": [
-      "A. Deep pressure kneading",
-      "B. Gentle tapping with fingers",
-      "C. Repeated scraping of the skin surface",
-      "D. Percussive therapy using suction cups"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 004",
+    "id": "gua_sha_004",
     "question": "The red or purple marks left after Gua Sha are known as:",
-    "answers": ["Bruises", "Petechiae", "Erythema", "Sha"],
-    "correct": 3,
+    "options": ["Bruises", "Petechiae", "Erythema", "Sha"],
+    "correctAnswer": "Sha",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_gua_sha"],
     "keywords": ["modality_gua_sha"],
@@ -204,27 +166,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 4,
-    "text": "The red or purple marks left after Gua Sha are known as:",
-    "options": ["Bruises", "Petechiae", "Erythema", "Sha"],
-    "correctAnswer": "Sha",
-    "abcd": ["A. Bruises", "B. Petechiae", "C. Erythema", "D. Sha"],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 005",
+    "id": "gua_sha_005",
     "question": "Which bodily system is primarily targeted by Gua Sha?",
-    "answers": [
+    "options": [
       "Endocrine system",
       "Circulatory and lymphatic systems",
       "Digestive system",
       "Respiratory system"
     ],
-    "correct": 1,
+    "correctAnswer": "Circulatory and lymphatic systems",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["system_digestive", "modality_gua_sha", "concept_targeted"],
     "keywords": ["system_digestive", "modality_gua_sha", "concept_targeted"],
@@ -248,37 +207,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 5,
-    "text": "Which bodily system is primarily targeted by Gua Sha?",
-    "options": [
-      "Endocrine system",
-      "Circulatory and lymphatic systems",
-      "Digestive system",
-      "Respiratory system"
-    ],
-    "correctAnswer": "Circulatory and lymphatic systems",
-    "abcd": [
-      "A. Endocrine system",
-      "B. Circulatory and lymphatic systems",
-      "C. Digestive system",
-      "D. Respiratory system"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 006",
+    "id": "gua_sha_006",
     "question": "Which condition is commonly treated with Gua Sha?",
-    "answers": [
+    "options": [
       "Broken bones",
       "Fever and muscle tension",
       "Open wounds",
       "Skin infections"
     ],
-    "correct": 1,
+    "correctAnswer": "Fever and muscle tension",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_muscles",
@@ -316,32 +262,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 6,
-    "text": "Which condition is commonly treated with Gua Sha?",
-    "options": [
-      "Broken bones",
-      "Fever and muscle tension",
-      "Open wounds",
-      "Skin infections"
-    ],
-    "correctAnswer": "Fever and muscle tension",
-    "abcd": [
-      "A. Broken bones",
-      "B. Fever and muscle tension",
-      "C. Open wounds",
-      "D. Skin infections"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 007",
+    "id": "gua_sha_007",
     "question": "Gua Sha originates from which region?",
-    "answers": ["South America", "India", "China and East Asia", "Egypt"],
-    "correct": 2,
+    "options": ["South America", "India", "China and East Asia", "Egypt"],
+    "correctAnswer": "China and East Asia",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_gua_sha", "concept_originates", "concept_originated"],
     "keywords": [
@@ -369,32 +302,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 7,
-    "text": "Gua Sha originates from which region?",
-    "options": ["South America", "India", "China and East Asia", "Egypt"],
-    "correctAnswer": "China and East Asia",
-    "abcd": [
-      "A. South America",
-      "B. India",
-      "C. China and East Asia",
-      "D. Egypt"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 008",
+    "id": "gua_sha_008",
     "question": "How is the pressure typically applied during a Gua Sha session?",
-    "answers": [
+    "options": [
       "Light and circular",
       "Deep and pulsed",
       "Firm and linear",
       "Random and tapping"
     ],
-    "correct": 2,
+    "correctAnswer": "Firm and linear",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["technique_tapping", "technique_pressure", "modality_gua_sha"],
     "keywords": ["technique_tapping", "technique_pressure", "modality_gua_sha"],
@@ -418,37 +343,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 8,
-    "text": "How is the pressure typically applied during a Gua Sha session?",
-    "options": [
-      "Light and circular",
-      "Deep and pulsed",
-      "Firm and linear",
-      "Random and tapping"
-    ],
-    "correctAnswer": "Firm and linear",
-    "abcd": [
-      "A. Light and circular",
-      "B. Deep and pulsed",
-      "C. Firm and linear",
-      "D. Random and tapping"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 009",
+    "id": "gua_sha_009",
     "question": "Gua Sha may help stimulate the immune system by:",
-    "answers": [
+    "options": [
       "Increasing blood flow and promoting lymph drainage",
       "Blocking pain receptors",
       "Causing mild infections",
       "Decreasing blood pressure"
     ],
-    "correct": 0,
+    "correctAnswer": "Increasing blood flow and promoting lymph drainage",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "technique_pressure",
@@ -484,37 +396,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 9,
-    "text": "Gua Sha may help stimulate the immune system by:",
-    "options": [
-      "Increasing blood flow and promoting lymph drainage",
-      "Blocking pain receptors",
-      "Causing mild infections",
-      "Decreasing blood pressure"
-    ],
-    "correctAnswer": "Increasing blood flow and promoting lymph drainage",
-    "abcd": [
-      "A. Increasing blood flow and promoting lymph drainage",
-      "B. Blocking pain receptors",
-      "C. Causing mild infections",
-      "D. Decreasing blood pressure"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   },
   {
-    "id": "Gua Sha 010",
+    "id": "gua_sha_010",
     "question": "What is a contraindication for Gua Sha?",
-    "answers": [
+    "options": [
       "Mild muscle tension",
       "Chronic fatigue",
       "Open wounds or sunburn",
       "Headache"
     ],
-    "correct": 2,
+    "correctAnswer": "Open wounds or sunburn",
+    "topics": ["Modalities"],
+    "subtopics": ["Gua_sha.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_muscles",
@@ -550,22 +449,8 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 10,
-    "text": "What is a contraindication for Gua Sha?",
-    "options": [
-      "Mild muscle tension",
-      "Chronic fatigue",
-      "Open wounds or sunburn",
-      "Headache"
-    ],
-    "correctAnswer": "Open wounds or sunburn",
-    "abcd": [
-      "A. Mild muscle tension",
-      "B. Chronic fatigue",
-      "C. Open wounds or sunburn",
-      "D. Headache"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "gua_sha.json"
+    "filepath": "data/questions/modalities/gua_sha.json",
+    "sourceFile": "gua_sha"
   }
 ]

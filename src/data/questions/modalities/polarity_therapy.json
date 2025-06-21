@@ -1,17 +1,18 @@
 [
   {
-    "id": "Polarity 001",
+    "id": "polarity_therapy_001",
     "question": "What is the main goal of Polarity Therapy?",
-    "answers": [
+    "options": [
       "Strengthen bones",
       "Improve skin tone",
       "Balance the body's energy fields",
       "Enhance digestion"
     ],
-    "correct": 2,
+    "correctAnswer": "Balance the body's energy fields",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_bones",
@@ -47,37 +48,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 1,
-    "text": "What is the main goal of Polarity Therapy?",
-    "options": [
-      "Strengthen bones",
-      "Improve skin tone",
-      "Balance the body's energy fields",
-      "Enhance digestion"
-    ],
-    "correctAnswer": "Balance the body's energy fields",
-    "abcd": [
-      "A. Strengthen bones",
-      "B. Improve skin tone",
-      "C. Balance the body's energy fields",
-      "D. Enhance digestion"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 002",
+    "id": "polarity_therapy_002",
     "question": "Who developed Polarity Therapy?",
-    "answers": [
+    "options": [
       "Dr. Ida Rolf",
       "Dr. Randolph Stone",
       "Dr. John Upledger",
       "Dr. Andrew Weil"
     ],
-    "correct": 1,
+    "correctAnswer": "Dr. Randolph Stone",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_rolfing",
@@ -109,37 +97,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 2,
-    "text": "Who developed Polarity Therapy?",
-    "options": [
-      "Dr. Ida Rolf",
-      "Dr. Randolph Stone",
-      "Dr. John Upledger",
-      "Dr. Andrew Weil"
-    ],
-    "correctAnswer": "Dr. Randolph Stone",
-    "abcd": [
-      "A. Dr. Ida Rolf",
-      "B. Dr. Randolph Stone",
-      "C. Dr. John Upledger",
-      "D. Dr. Andrew Weil"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 003",
+    "id": "polarity_therapy_003",
     "question": "Polarity Therapy integrates concepts from which systems?",
-    "answers": [
+    "options": [
       "Ayurveda, Traditional Chinese Medicine, and Western medicine",
       "Homeopathy and chiropractic",
       "Aromatherapy and reflexology",
       "Reiki and crystal healing"
     ],
-    "correct": 0,
+    "correctAnswer": "Ayurveda, Traditional Chinese Medicine, and Western medicine",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_reflexology",
@@ -177,32 +152,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 3,
-    "text": "Polarity Therapy integrates concepts from which systems?",
-    "options": [
-      "Ayurveda, Traditional Chinese Medicine, and Western medicine",
-      "Homeopathy and chiropractic",
-      "Aromatherapy and reflexology",
-      "Reiki and crystal healing"
-    ],
-    "correctAnswer": "Ayurveda, Traditional Chinese Medicine, and Western medicine",
-    "abcd": [
-      "A. Ayurveda, Traditional Chinese Medicine, and Western medicine",
-      "B. Homeopathy and chiropractic",
-      "C. Aromatherapy and reflexology",
-      "D. Reiki and crystal healing"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 004",
+    "id": "polarity_therapy_004",
     "question": "Which element is NOT part of the five elements in Polarity Therapy?",
-    "answers": ["Earth", "Metal", "Fire", "Water"],
-    "correct": 1,
+    "options": ["Earth", "Metal", "Fire", "Water"],
+    "correctAnswer": "Metal",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_polarity_therapy"],
     "keywords": ["modality_polarity_therapy"],
@@ -226,27 +188,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 4,
-    "text": "Which element is NOT part of the five elements in Polarity Therapy?",
-    "options": ["Earth", "Metal", "Fire", "Water"],
-    "correctAnswer": "Metal",
-    "abcd": ["A. Earth", "B. Metal", "C. Fire", "D. Water"],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 005",
+    "id": "polarity_therapy_005",
     "question": "Which of the following techniques is commonly used in Polarity Therapy?",
-    "answers": [
+    "options": [
       "Percussion",
       "Deep tissue pressure",
       "Gentle touch and energetic contact",
       "Joint cracking"
     ],
-    "correct": 2,
+    "correctAnswer": "Gentle touch and energetic contact",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_deep_tissue",
@@ -284,37 +243,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 5,
-    "text": "Which of the following techniques is commonly used in Polarity Therapy?",
-    "options": [
-      "Percussion",
-      "Deep tissue pressure",
-      "Gentle touch and energetic contact",
-      "Joint cracking"
-    ],
-    "correctAnswer": "Gentle touch and energetic contact",
-    "abcd": [
-      "A. Percussion",
-      "B. Deep tissue pressure",
-      "C. Gentle touch and energetic contact",
-      "D. Joint cracking"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 006",
+    "id": "polarity_therapy_006",
     "question": "What does the term 'polarity' in Polarity Therapy refer to?",
-    "answers": [
+    "options": [
       "Opposition in muscle groups",
       "Emotional tension",
       "Positive and negative energy charges in the body",
       "Magnetic therapy tools"
     ],
-    "correct": 2,
+    "correctAnswer": "Positive and negative energy charges in the body",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_muscles",
@@ -348,37 +294,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 6,
-    "text": "What does the term 'polarity' in Polarity Therapy refer to?",
-    "options": [
-      "Opposition in muscle groups",
-      "Emotional tension",
-      "Positive and negative energy charges in the body",
-      "Magnetic therapy tools"
-    ],
-    "correctAnswer": "Positive and negative energy charges in the body",
-    "abcd": [
-      "A. Opposition in muscle groups",
-      "B. Emotional tension",
-      "C. Positive and negative energy charges in the body",
-      "D. Magnetic therapy tools"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 007",
+    "id": "polarity_therapy_007",
     "question": "In Polarity Therapy, energy is believed to flow through:",
-    "answers": [
+    "options": [
       "Skin pores",
       "Blood vessels",
       "Electromagnetic pathways",
       "The nervous system only"
     ],
-    "correct": 2,
+    "correctAnswer": "Electromagnetic pathways",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_nervous_system",
@@ -410,37 +343,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 7,
-    "text": "In Polarity Therapy, energy is believed to flow through:",
-    "options": [
-      "Skin pores",
-      "Blood vessels",
-      "Electromagnetic pathways",
-      "The nervous system only"
-    ],
-    "correctAnswer": "Electromagnetic pathways",
-    "abcd": [
-      "A. Skin pores",
-      "B. Blood vessels",
-      "C. Electromagnetic pathways",
-      "D. The nervous system only"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 008",
+    "id": "polarity_therapy_008",
     "question": "Which bodywork approach is often integrated into Polarity Therapy?",
-    "answers": [
+    "options": [
       "Swedish massage",
       "Craniosacral therapy",
       "Reflexology",
       "Manual lymph drainage"
     ],
-    "correct": 1,
+    "correctAnswer": "Craniosacral therapy",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_massage",
@@ -478,37 +398,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 8,
-    "text": "Which bodywork approach is often integrated into Polarity Therapy?",
-    "options": [
-      "Swedish massage",
-      "Craniosacral therapy",
-      "Reflexology",
-      "Manual lymph drainage"
-    ],
-    "correctAnswer": "Craniosacral therapy",
-    "abcd": [
-      "A. Swedish massage",
-      "B. Craniosacral therapy",
-      "C. Reflexology",
-      "D. Manual lymph drainage"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 009",
+    "id": "polarity_therapy_009",
     "question": "Polarity Therapy also includes which of the following lifestyle components?",
-    "answers": [
+    "options": [
       "Color therapy",
       "Sound baths",
       "Diet and exercise",
       "Surgical techniques"
     ],
-    "correct": 2,
+    "correctAnswer": "Diet and exercise",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_polarity_therapy"],
     "keywords": ["modality_polarity_therapy"],
@@ -532,37 +439,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 9,
-    "text": "Polarity Therapy also includes which of the following lifestyle components?",
-    "options": [
-      "Color therapy",
-      "Sound baths",
-      "Diet and exercise",
-      "Surgical techniques"
-    ],
-    "correctAnswer": "Diet and exercise",
-    "abcd": [
-      "A. Color therapy",
-      "B. Sound baths",
-      "C. Diet and exercise",
-      "D. Surgical techniques"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   },
   {
-    "id": "Polarity 010",
+    "id": "polarity_therapy_010",
     "question": "What kind of touch is used in Polarity Therapy?",
-    "answers": [
+    "options": [
       "Only deep pressure",
       "Only feather-light strokes",
       "Varied pressure including gentle and firm",
       "Only tapping"
     ],
-    "correct": 2,
+    "correctAnswer": "Varied pressure including gentle and firm",
+    "topics": ["Modalities"],
+    "subtopics": ["Polarity_therapy.json"],
     "distractors": [],
     "difficulty": "easy",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "technique_tapping",
@@ -594,22 +488,8 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 10,
-    "text": "What kind of touch is used in Polarity Therapy?",
-    "options": [
-      "Only deep pressure",
-      "Only feather-light strokes",
-      "Varied pressure including gentle and firm",
-      "Only tapping"
-    ],
-    "correctAnswer": "Varied pressure including gentle and firm",
-    "abcd": [
-      "A. Only deep pressure",
-      "B. Only feather-light strokes",
-      "C. Varied pressure including gentle and firm",
-      "D. Only tapping"
-    ],
     "main_topic": "modalities",
-    "subtopic": "",
-    "filename": "polarity_therapy.json"
+    "filepath": "data/questions/modalities/polarity_therapy.json",
+    "sourceFile": "polarity_therapy"
   }
 ]
