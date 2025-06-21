@@ -1,6 +1,7 @@
 [
   {
     "id": "plantar_nerve_innervations_001",
+    "correctAnswer": "Flexor hallucis brevis",
     "question": "Which muscle is innervated by the medial plantar nerve?",
     "options": [
       "Flexor hallucis brevis",
@@ -8,14 +9,26 @@
       "Abductor digiti minimi",
       "Quadratus plantae"
     ],
-    "correctAnswer": "Flexor hallucis brevis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The medial plantar nerve innervates flexor hallucis brevis.",
     "long_explanation": "The medial plantar nerve, a branch of the tibial nerve, innervates intrinsic foot muscles including the abductor hallucis, flexor digitorum brevis, and flexor hallucis brevis. It contributes to toe flexion and stabilization during gait.",
     "clinical_application": "Massage therapists can apply medial foot work to support flexor hallucis function and relieve plantar tension.",
+    "source_reference": "Trail Guide to the Body, Netter's Atlas",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "nerve_innervation",
       "medial_plantar_nerve",
@@ -27,13 +40,11 @@
       "flexor hallucis brevis",
       "foot innervation"
     ],
-    "source_reference": "Trail Guide to the Body, Netter's Atlas",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_002",
+    "correctAnswer": "Flexor digiti minimi brevis",
     "question": "Which of the following receives innervation from the lateral plantar nerve?",
     "options": [
       "Abductor hallucis",
@@ -41,14 +52,26 @@
       "Flexor digiti minimi brevis",
       "Flexor hallucis brevis"
     ],
-    "correctAnswer": "Flexor digiti minimi brevis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "Flexor digiti minimi brevis is innervated by the superficial branch of the lateral plantar nerve.",
     "long_explanation": "The lateral plantar nerve provides motor innervation to most intrinsic foot muscles not supplied by the medial branch, including flexor digiti minimi brevis and plantar interossei. It supports toe abduction, flexion, and lateral foot stability.",
     "clinical_application": "Therapists targeting lateral foot dysfunction should consider the lateral plantar nerve’s motor distribution.",
+    "source_reference": "Gray’s Anatomy, MBLEx Outline",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "lateral_plantar",
       "nerve_innervation",
@@ -60,13 +83,11 @@
       "flexor digiti minimi brevis",
       "foot motor"
     ],
-    "source_reference": "Gray’s Anatomy, MBLEx Outline",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_003",
+    "correctAnswer": "Lateral plantar nerve",
     "question": "The quadratus plantae muscle is innervated by:",
     "options": [
       "Superficial fibular nerve",
@@ -74,14 +95,26 @@
       "Lateral plantar nerve",
       "Medial plantar nerve"
     ],
-    "correctAnswer": "Lateral plantar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "Quadratus plantae is innervated by the lateral plantar nerve.",
     "long_explanation": "Quadratus plantae assists flexor digitorum longus in flexing the toes and is supplied by the lateral plantar nerve. It adjusts the line of pull for toe flexion.",
     "clinical_application": "Techniques addressing posterior heel tension can support this muscle's function in toe mechanics.",
+    "source_reference": "Netter's Atlas, FSMTB",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "plantar_innervation",
       "foot_function",
@@ -89,13 +122,11 @@
       "massage_therapy"
     ],
     "keywords": ["quadratus plantae", "toe flexion", "lateral plantar"],
-    "source_reference": "Netter's Atlas, FSMTB",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_004",
+    "correctAnswer": "Medial plantar nerve",
     "question": "Which plantar nerve provides sensory innervation to the medial three and a half toes?",
     "options": [
       "Lateral plantar nerve",
@@ -103,14 +134,26 @@
       "Deep fibular nerve",
       "Medial plantar nerve"
     ],
-    "correctAnswer": "Medial plantar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The medial plantar nerve supplies sensory innervation to the medial 3½ toes.",
     "long_explanation": "The medial plantar nerve provides cutaneous sensation to the plantar surface of the first through the medial half of the fourth toe, similar to the median nerve in the hand.",
     "clinical_application": "Clients with numbness or tingling in the medial foot may be experiencing medial plantar compression or irritation.",
+    "source_reference": "Clinical Neuroanatomy, MBLEx",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Neuroanatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "cutaneous_innervation",
       "sensory_foot",
@@ -118,13 +161,11 @@
       "client_assessment"
     ],
     "keywords": ["medial plantar nerve", "foot sensory", "plantar surface"],
-    "source_reference": "Clinical Neuroanatomy, MBLEx",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_005",
+    "correctAnswer": "Interossei of the foot",
     "question": "Which muscle group is primarily controlled by the lateral plantar nerve?",
     "options": [
       "Thenar muscles",
@@ -132,14 +173,26 @@
       "Dorsiflexors",
       "Anterior tibialis group"
     ],
-    "correctAnswer": "Interossei of the foot",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The interossei of the foot are innervated by the lateral plantar nerve.",
     "long_explanation": "Lateral plantar branches supply the plantar and dorsal interossei, controlling toe spreading (abduction) and squeezing (adduction) — essential for balance and gait.",
     "clinical_application": "Targeted footwork in massage can aid clients with poor toe control or medial arch instability.",
+    "source_reference": "Trail Guide, Gray’s Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Musculoskeletal System",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["interossei", "foot_stabilization", "plantar_nerve", "balance"],
     "keywords": [
       "interossei",
@@ -147,13 +200,11 @@
       "toe abduction",
       "toe adduction"
     ],
-    "source_reference": "Trail Guide, Gray’s Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_006",
+    "correctAnswer": "Lateral plantar nerve",
     "question": "Which nerve innervates the abductor digiti minimi muscle of the foot?",
     "options": [
       "Medial plantar nerve",
@@ -161,14 +212,26 @@
       "Deep fibular nerve",
       "Tibial nerve directly"
     ],
-    "correctAnswer": "Lateral plantar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The abductor digiti minimi is innervated by the lateral plantar nerve.",
     "long_explanation": "The lateral plantar nerve supplies the abductor digiti minimi, which abducts the fifth toe and supports the lateral longitudinal arch. It originates from the tibial nerve and travels across the sole.",
     "clinical_application": "Massage therapists can focus on lateral heel tension and outer foot fatigue by supporting this muscle and its nerve supply.",
+    "source_reference": "Netter's Atlas, MBLEx Outline",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "abductor_digiti_minimi",
       "lateral_plantar",
@@ -180,13 +243,11 @@
       "lateral plantar nerve",
       "fifth toe muscle"
     ],
-    "source_reference": "Netter's Atlas, MBLEx Outline",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_007",
+    "correctAnswer": "Medial plantar nerve (1st) and lateral plantar nerve (2nd–4th)",
     "question": "The lumbrical muscles of the foot are innervated by:",
     "options": [
       "Medial plantar nerve (1st) and lateral plantar nerve (2nd–4th)",
@@ -194,14 +255,26 @@
       "Only lateral plantar nerve",
       "Superficial fibular nerve"
     ],
-    "correctAnswer": "Medial plantar nerve (1st) and lateral plantar nerve (2nd–4th)",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The 1st lumbrical is supplied by the medial plantar nerve; the rest by the lateral plantar nerve.",
     "long_explanation": "The lumbricals flex the metatarsophalangeal joints and extend interphalangeal joints. The split innervation mirrors the hand (median and ulnar nerves). This dual innervation is clinically important for diagnosing nerve injuries.",
     "clinical_application": "Clients with toe cramping or digital dysfunction may benefit from addressing both medial and lateral plantar nerve zones.",
+    "source_reference": "Gray's Anatomy, FSMTB",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "lumbricals",
       "dual_innervation",
@@ -214,13 +287,11 @@
       "lateral plantar",
       "toe flexors"
     ],
-    "source_reference": "Gray's Anatomy, FSMTB",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_008",
+    "correctAnswer": "Lateral plantar nerve",
     "question": "Which plantar nerve branch is responsible for innervating the skin over the lateral 1½ toes?",
     "options": [
       "Sural nerve",
@@ -228,14 +299,26 @@
       "Lateral plantar nerve",
       "Deep fibular nerve"
     ],
-    "correctAnswer": "Lateral plantar nerve",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The lateral plantar nerve provides sensory innervation to the lateral 1½ toes.",
     "long_explanation": "The lateral plantar nerve supplies the lateral sole and skin over the fifth toe and lateral half of the fourth toe, assisting in tactile feedback during gait and balance.",
     "clinical_application": "Loss of sensation in this area can signal compression or entrapment of the lateral plantar nerve at the tarsal tunnel or sole.",
+    "source_reference": "Clinical Neuroanatomy, Netter",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Sensory System",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "cutaneous_foot",
       "lateral_plantar",
@@ -247,13 +330,11 @@
       "foot sensation",
       "plantar nerve dermatome"
     ],
-    "source_reference": "Clinical Neuroanatomy, Netter",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_009",
+    "correctAnswer": "Medial and lateral plantar nerves",
     "question": "The tibial nerve gives rise to which two terminal branches that supply the sole?",
     "options": [
       "Deep fibular and superficial fibular nerves",
@@ -261,14 +342,26 @@
       "Medial and lateral plantar nerves",
       "Femoral and obturator nerves"
     ],
-    "correctAnswer": "Medial and lateral plantar nerves",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The medial and lateral plantar nerves arise from the tibial nerve.",
     "long_explanation": "The tibial nerve bifurcates in the tarsal tunnel to form the medial and lateral plantar nerves. These branches innervate both muscles and skin of the plantar surface, forming the neurovascular foundation of foot control.",
     "clinical_application": "Assessment of plantar innervation can help isolate causes of foot dysfunction, especially in diabetic neuropathy or postural imbalance.",
+    "source_reference": "Trail Guide to the Body",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "beginner",
-    "category": "Nerve Pathways",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "tibial_nerve",
       "plantar_branches",
@@ -281,13 +374,11 @@
       "lateral plantar",
       "sole innervation"
     ],
-    "source_reference": "Trail Guide to the Body",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "plantar_nerve_innervations_010",
+    "correctAnswer": "Lumbricals",
     "question": "Which muscle is shared between the deep branch of the lateral plantar nerve and the medial plantar nerve?",
     "options": [
       "Flexor hallucis longus",
@@ -295,14 +386,26 @@
       "Lumbricals",
       "Flexor digitorum longus"
     ],
-    "correctAnswer": "Lumbricals",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "foot_innervations",
+      "plantar_nerve",
+      "plantar_nerve_innervations"
+    ],
     "short_explanation": "The lumbricals have split innervation between the medial and lateral plantar nerves.",
     "long_explanation": "The first lumbrical is innervated by the medial plantar nerve, while the lateral three receive innervation from the deep branch of the lateral plantar nerve. This distribution supports fine toe coordination.",
     "clinical_application": "Recognizing dual nerve supply helps differentiate between tibial nerve and branch-specific lesions in neuromuscular dysfunction.",
+    "source_reference": "Gray’s Anatomy, Clinical Ortho Manual",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "advanced",
-    "category": "Muscle Innervation",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": [
       "dual_innervation",
       "lumbricals",
@@ -315,9 +418,6 @@
       "lumbricals",
       "toe muscles"
     ],
-    "source_reference": "Gray’s Anatomy, Clinical Ortho Manual",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/plantar_nerve_innervations.json",
-    "sourceFile": "plantar_nerve_innervations"
+    "synonyms": null
   }
 ]

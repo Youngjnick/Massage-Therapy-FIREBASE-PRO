@@ -1,6 +1,7 @@
 [
   {
     "id": "intrinsic_hand_muscles_001",
+    "correctAnswer": "Median nerve",
     "question": "Which nerve innervates the thenar muscles of the hand?",
     "options": [
       "Ulnar nerve",
@@ -8,18 +9,20 @@
       "Radial nerve",
       "Musculocutaneous nerve"
     ],
-    "correctAnswer": "Median nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The median nerve innervates most of the thenar muscles.",
     "long_explanation": "The thenar muscles, including abductor pollicis brevis, flexor pollicis brevis (superficial head), and opponens pollicis, are innervated by the recurrent branch of the median nerve. These muscles control thumb opposition and fine motor skills.",
     "clinical_application": "Compression of the median nerve in carpal tunnel syndrome can lead to weakness and atrophy of the thenar eminence.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "technique_compression",
       "anatomy_nerve",
@@ -40,26 +43,11 @@
       "nerve_musculocutaneous_nerve",
       "bone_carpals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["thumb muscles", "thenar group"],
-    "img": "thenar_muscles_median.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["thumb muscles", "thenar group"]
   },
   {
     "id": "intrinsic_hand_muscles_002",
+    "correctAnswer": "Ulnar nerve",
     "question": "Which nerve supplies the hypothenar muscles?",
     "options": [
       "Radial nerve",
@@ -67,18 +55,20 @@
       "Ulnar nerve",
       "Axillary nerve"
     ],
-    "correctAnswer": "Ulnar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The ulnar nerve innervates the hypothenar muscles.",
     "long_explanation": "The hypothenar muscles—abductor digiti minimi, flexor digiti minimi brevis, and opponens digiti minimi—are all innervated by the deep branch of the ulnar nerve. They contribute to movements of the little finger.",
     "clinical_application": "Ulnar nerve compression, such as in Guyon's canal syndrome, may cause atrophy in the hypothenar eminence.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "technique_compression",
       "anatomy_nerve",
@@ -101,26 +91,11 @@
       "nerve_radial_nerve",
       "nerve_axillary_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter’s Atlas of Human Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["pinky muscles"],
-    "img": "hypothenar_ulnar.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["pinky muscles"]
   },
   {
     "id": "intrinsic_hand_muscles_003",
+    "correctAnswer": "Flexor pollicis brevis",
     "question": "Which intrinsic hand muscle is innervated by both the ulnar and median nerves?",
     "options": [
       "Adductor pollicis",
@@ -128,18 +103,20 @@
       "Opponens pollicis",
       "Lumbricals 1 and 2"
     ],
-    "correctAnswer": "Flexor pollicis brevis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "Flexor pollicis brevis has dual innervation.",
     "long_explanation": "The flexor pollicis brevis has a superficial head (median nerve) and a deep head (ulnar nerve), making it one of the few hand muscles with dual innervation.",
     "clinical_application": "Understanding dual innervation is important in evaluating partial nerve injuries affecting thumb flexion.",
+    "source_reference": "Gray's Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "hard",
     "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -158,26 +135,11 @@
       "nerve_median_nerve",
       "nerve_ulnar_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Gray's Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["FPB"],
-    "img": "fpb_dual_innervation.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["FPB"]
   },
   {
     "id": "intrinsic_hand_muscles_004",
+    "correctAnswer": "Ulnar nerve",
     "question": "Which nerve innervates the adductor pollicis muscle?",
     "options": [
       "Median nerve",
@@ -185,18 +147,20 @@
       "Radial nerve",
       "Musculocutaneous nerve"
     ],
-    "correctAnswer": "Ulnar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The adductor pollicis is innervated by the ulnar nerve.",
     "long_explanation": "Despite being in the thumb, the adductor pollicis is not part of the thenar group and is supplied by the deep branch of the ulnar nerve.",
     "clinical_application": "Testing adductor pollicis function helps localize lesions in the ulnar nerve.",
+    "source_reference": "Clinical Anatomy by Systems",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -217,26 +181,11 @@
       "nerve_musculocutaneous_nerve",
       "organ_testes"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinical Anatomy by Systems",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["thumb adductor"],
-    "img": "adductor_pollicis_ulnar.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["thumb adductor"]
   },
   {
     "id": "intrinsic_hand_muscles_005",
+    "correctAnswer": "Lumbricals 1 and 2",
     "question": "Which intrinsic hand muscles are innervated by the median nerve?",
     "options": [
       "Lumbricals 3 and 4",
@@ -244,18 +193,20 @@
       "Lumbricals 1 and 2",
       "Dorsal interossei"
     ],
-    "correctAnswer": "Lumbricals 1 and 2",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "Lumbricals 1 and 2 are innervated by the median nerve.",
     "long_explanation": "Lumbricals 1 and 2, attached to the radial side of the index and middle fingers, are innervated by the median nerve. Lumbricals 3 and 4 are innervated by the ulnar nerve.",
     "clinical_application": "Loss of function in lumbricals can affect MCP flexion and IP extension.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -270,26 +221,11 @@
       "nerve_median_nerve",
       "nerve_ulnar_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Moore's Clinically Oriented Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["intrinsic muscles"],
-    "img": "lumbricals_median.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["intrinsic muscles"]
   },
   {
     "id": "intrinsic_hand_muscles_006",
+    "correctAnswer": "Dorsal interossei",
     "question": "Which intrinsic hand muscles are responsible for finger abduction and are innervated by the ulnar nerve?",
     "options": [
       "Palmar interossei",
@@ -297,18 +233,20 @@
       "Dorsal interossei",
       "Thenar muscles"
     ],
-    "correctAnswer": "Dorsal interossei",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "Dorsal interossei abduct the fingers and are innervated by the ulnar nerve.",
     "long_explanation": "The dorsal interossei muscles abduct the fingers away from the midline of the hand and are innervated by the deep branch of the ulnar nerve. There are four dorsal interossei.",
     "clinical_application": "Loss of ulnar nerve function can impair finger abduction, affecting grip and dexterity.",
+    "source_reference": "Kapit/Wilhelm's Anatomy Coloring Book",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -321,26 +259,11 @@
       "muscle_dorsal_interossei",
       "nerve_ulnar_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Kapit/Wilhelm's Anatomy Coloring Book",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["interossei muscles"],
-    "img": "dorsal_interossei_ulnar.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["interossei muscles"]
   },
   {
     "id": "intrinsic_hand_muscles_007",
+    "correctAnswer": "Ulnar nerve",
     "question": "What is the nerve supply to the palmar interossei muscles?",
     "options": [
       "Median nerve",
@@ -348,18 +271,20 @@
       "Ulnar nerve",
       "Musculocutaneous nerve"
     ],
-    "correctAnswer": "Ulnar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The palmar interossei are innervated by the ulnar nerve.",
     "long_explanation": "The palmar interossei muscles are responsible for finger adduction and are innervated by the deep branch of the ulnar nerve. These muscles help stabilize the fingers during precision grip.",
     "clinical_application": "Injury to the ulnar nerve may impair fine motor control, especially adduction of the fingers.",
+    "source_reference": "Netter's Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "hard",
     "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.088Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -380,26 +305,11 @@
       "nerve_radial_nerve",
       "nerve_musculocutaneous_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter's Atlas of Human Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.088Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["adductor muscles of fingers"],
-    "img": "palmar_interossei_ulnar.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["adductor muscles of fingers"]
   },
   {
     "id": "intrinsic_hand_muscles_008",
+    "correctAnswer": "Hypothenar muscles",
     "question": "Which muscle group in the hand assists in opposition of the little finger?",
     "options": [
       "Thenar muscles",
@@ -407,18 +317,20 @@
       "Dorsal interossei",
       "Hypothenar muscles"
     ],
-    "correctAnswer": "Hypothenar muscles",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The hypothenar muscles assist in little finger opposition.",
     "long_explanation": "The hypothenar group includes the opponens digiti minimi, which allows for opposition of the little finger, and is innervated by the ulnar nerve.",
     "clinical_application": "Loss of hypothenar function can interfere with fine manipulation and grip strength.",
+    "source_reference": "Atlas of Anatomy (Thieme)",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.089Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -435,26 +347,11 @@
       "muscle_dorsal_interossei",
       "nerve_ulnar_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Atlas of Anatomy (Thieme)",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.089Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["pinky muscles", "ulnar side"],
-    "img": "hypothenar_opposition.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["pinky muscles", "ulnar side"]
   },
   {
     "id": "intrinsic_hand_muscles_009",
+    "correctAnswer": "Ulnar nerve",
     "question": "What nerve innervates the deep head of the flexor pollicis brevis?",
     "options": [
       "Median nerve",
@@ -462,18 +359,20 @@
       "Ulnar nerve",
       "Axillary nerve"
     ],
-    "correctAnswer": "Ulnar nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The deep head of flexor pollicis brevis is innervated by the ulnar nerve.",
     "long_explanation": "Unlike the superficial head (median nerve), the deep head of flexor pollicis brevis is innervated by the deep branch of the ulnar nerve. This highlights the complexity of thumb muscle innervation.",
     "clinical_application": "In combined nerve injuries, understanding dual innervation helps preserve surgical outcomes.",
+    "source_reference": "Gray's Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.089Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -492,26 +391,11 @@
       "nerve_radial_nerve",
       "nerve_axillary_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Gray's Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.089Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["thumb flexor"],
-    "img": "fpb_deep_head_ulnar.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["thumb flexor"]
   },
   {
     "id": "intrinsic_hand_muscles_010",
+    "correctAnswer": "Radial nerve",
     "question": "Which of the following nerves does NOT innervate any intrinsic muscles of the hand?",
     "options": [
       "Median nerve",
@@ -519,18 +403,20 @@
       "Ulnar nerve",
       "All of the above do"
     ],
-    "correctAnswer": "Radial nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Muscle_groups", "Hands"],
-    "distractors": [],
+    "topics": ["anatomy", "muscle_groups", "hands", "intrinsic_hand_muscles"],
     "short_explanation": "The radial nerve does not innervate intrinsic hand muscles.",
     "long_explanation": "The radial nerve primarily supplies the extensor muscles in the forearm and does not innervate intrinsic hand muscles. Intrinsic muscles are innervated by the median and ulnar nerves.",
     "clinical_application": "Radial nerve palsy causes wrist drop but typically spares intrinsic hand function.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Innervation",
-    "subcategory": "Intrinsic Hand Muscles",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.089Z",
+    "updated_at": "2025-05-24T14:54:13.431Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -545,22 +431,6 @@
       "nerve_ulnar_nerve",
       "nerve_radial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Moore's Clinically Oriented Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.089Z",
-    "updated_at": "2025-05-24T14:54:13.431Z",
-    "unit": "../../../src/data/questions/anatomy/muscle groups/intrinsic_hand_muscles",
-    "synonyms": ["wrist extensor nerve"],
-    "img": "radial_nerve_no_intrinsics.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
-    "sourceFile": "intrinsic_hand_muscles"
+    "synonyms": ["wrist extensor nerve"]
   }
 ]

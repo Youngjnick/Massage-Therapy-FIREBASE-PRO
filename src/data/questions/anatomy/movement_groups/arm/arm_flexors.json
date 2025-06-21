@@ -1,6 +1,7 @@
 [
   {
     "id": "arm_flexors_001",
+    "correctAnswer": "Brachialis",
     "question": "Which muscle is the primary flexor of the elbow in all positions of forearm rotation?",
     "options": [
       "Biceps brachii",
@@ -8,18 +9,20 @@
       "Brachioradialis",
       "Coracobrachialis"
     ],
-    "correctAnswer": "Brachialis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Brachialis is the strongest elbow flexor regardless of forearm position.",
     "long_explanation": "The brachialis lies deep to the biceps brachii and attaches from the anterior humerus to the ulnar tuberosity. Unlike the biceps, it does not cross the shoulder joint or insert on the radius, allowing it to function strictly as a pure elbow flexor across all positions of supination or pronation.",
     "clinical_application": "Understanding brachialis function is important in designing rehab protocols for elbow flexion after injuries such as distal humerus fractures.",
+    "source_reference": "Trail Guide to the Body, 6th ed., p. 143",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "anatomy_joint",
       "anatomy_muscles",
@@ -42,25 +45,11 @@
       "bone_humerus",
       "bone_radius"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed., p. 143",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "brachialis_muscle.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_002",
+    "correctAnswer": "Forearm supination",
     "question": "What is the primary action of the biceps brachii besides elbow flexion?",
     "options": [
       "Shoulder abduction",
@@ -68,18 +57,20 @@
       "Forearm supination",
       "Wrist flexion"
     ],
-    "correctAnswer": "Forearm supination",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Biceps brachii also supinates the forearm.",
     "long_explanation": "The biceps brachii inserts on the radial tuberosity and is a powerful supinator of the forearm, especially when the elbow is flexed. This function is crucial in daily tasks like using a screwdriver.",
     "clinical_application": "Biceps tears or tendinopathy can affect both flexion and supination strength, which massage therapists should assess when evaluating arm pain.",
+    "source_reference": "Trail Guide to the Body, 6th ed., p. 142",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "modality_massage",
       "condition_pain",
@@ -94,25 +85,11 @@
       "concept_insertion",
       "muscle_biceps_brachii"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed., p. 142",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "biceps_brachii_function.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_003",
+    "correctAnswer": "Musculocutaneous nerve",
     "question": "Which nerve innervates the brachialis muscle?",
     "options": [
       "Median nerve",
@@ -120,18 +97,20 @@
       "Ulnar nerve",
       "Musculocutaneous nerve"
     ],
-    "correctAnswer": "Musculocutaneous nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "The musculocutaneous nerve innervates the brachialis.",
     "long_explanation": "The musculocutaneous nerve (C5-C7) arises from the lateral cord of the brachial plexus and supplies the anterior arm muscles including biceps brachii, coracobrachialis, and brachialis. Brachialis may also receive a branch from the radial nerve.",
     "clinical_application": "Injury to the musculocutaneous nerve can impair elbow flexion, highlighting its role in arm function assessments.",
+    "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 413",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "anatomy_nerve",
       "anatomy_muscles",
@@ -156,25 +135,11 @@
       "nerve_radial_nerve",
       "nerve_musculocutaneous_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 413",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "nerve_brachialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_004",
+    "correctAnswer": "Neutral forearm",
     "question": "The brachioradialis is most active during which type of elbow flexion?",
     "options": [
       "Supinated forearm",
@@ -182,18 +147,20 @@
       "Neutral forearm",
       "Fully extended arm"
     ],
-    "correctAnswer": "Neutral forearm",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Brachioradialis flexes best with the forearm in a neutral position.",
     "long_explanation": "Originating from the lateral supracondylar ridge and inserting on the radius, brachioradialis acts primarily when the forearm is in mid-position, like when drinking from a cup with a thumbs-up grip.",
     "clinical_application": "Palpation of the brachioradialis can help massage therapists assess lateral forearm tightness or radial nerve irritation.",
+    "source_reference": "Trail Guide to the Body, 6th ed., p. 144",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "modality_massage",
       "technique_cupping",
@@ -216,25 +183,11 @@
       "nerve_radial_nerve",
       "bone_radius"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed., p. 144",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "brachioradialis_flexion.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_005",
+    "correctAnswer": "Coracobrachialis",
     "question": "Which muscle helps flex the arm at the shoulder joint?",
     "options": [
       "Brachialis",
@@ -242,18 +195,20 @@
       "Brachioradialis",
       "Triceps brachii"
     ],
-    "correctAnswer": "Coracobrachialis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Coracobrachialis assists in shoulder flexion.",
     "long_explanation": "Coracobrachialis originates on the coracoid process and inserts on the medial humerus. It helps flex and adduct the shoulder and stabilizes the humerus during arm movements.",
     "clinical_application": "Massage therapists often address coracobrachialis when treating anterior shoulder pain or impingement symptoms.",
+    "source_reference": "Trail Guide to the Body, 6th ed., p. 140",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "modality_massage",
       "anatomy_joint",
@@ -282,25 +237,11 @@
       "joint_joint",
       "bone_humerus"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed., p. 140",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "coracobrachialis_action.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_006",
+    "correctAnswer": "Biceps brachii",
     "question": "Which muscle of the arm crosses both the shoulder and elbow joints?",
     "options": [
       "Brachialis",
@@ -308,18 +249,20 @@
       "Brachioradialis",
       "Triceps brachii"
     ],
-    "correctAnswer": "Biceps brachii",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Biceps brachii crosses both the shoulder and elbow joints.",
     "long_explanation": "Biceps brachii originates at the scapula (short head from coracoid, long head from supraglenoid tubercle) and inserts on the radius, enabling it to flex the elbow and shoulder and supinate the forearm.",
     "clinical_application": "In shoulder dysfunctions, assessing biceps tightness or overuse can be crucial for full recovery.",
+    "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 412",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "technique_fulling",
       "anatomy_muscles",
@@ -348,25 +291,11 @@
       "bone_scapula",
       "bone_radius"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 412",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "biceps_brachii_dual_joint.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_007",
+    "correctAnswer": "Biceps tendinitis",
     "question": "What is a common overuse condition affecting arm flexors?",
     "options": [
       "Carpal tunnel syndrome",
@@ -374,18 +303,20 @@
       "Tennis elbow",
       "Biceps tendinitis"
     ],
-    "correctAnswer": "Biceps tendinitis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Biceps tendinitis is a common overuse condition.",
     "long_explanation": "Overuse of the biceps brachii, particularly the long head, can result in tendinitis, presenting as anterior shoulder or arm pain and sometimes a snapping sensation.",
     "clinical_application": "Massage techniques like friction therapy and stretching can help manage symptoms of biceps tendinitis.",
+    "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 486",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "technique_friction",
       "condition_pain",
@@ -404,25 +335,11 @@
       "muscle_biceps_brachii",
       "bone_carpals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 486",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "biceps_tendinitis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_008",
+    "correctAnswer": "Extensor carpi radialis longus",
     "question": "Which muscle is involved in both elbow flexion and wrist extension synergy patterns?",
     "options": [
       "Biceps brachii",
@@ -430,18 +347,20 @@
       "Brachioradialis",
       "Extensor carpi radialis longus"
     ],
-    "correctAnswer": "Extensor carpi radialis longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Extensor carpi radialis longus synergizes elbow flexion and wrist extension.",
     "long_explanation": "ECRL originates from the lateral humerus and acts to extend and abduct the wrist while assisting with elbow flexion. This muscle plays a role in complex movement patterns involving tool use or gripping.",
     "clinical_application": "Addressing ECRL in therapy can improve grip endurance and reduce lateral forearm strain.",
+    "source_reference": "Trail Guide to the Body, 6th ed., p. 154",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "anatomy_muscles",
       "concept_originates",
@@ -462,25 +381,11 @@
       "muscle_triceps_brachii",
       "bone_humerus"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed., p. 154",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "ecrl_synergy.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_009",
+    "correctAnswer": "Brachialis",
     "question": "Which arm flexor is not directly involved in supination or pronation?",
     "options": [
       "Biceps brachii",
@@ -488,18 +393,20 @@
       "Brachioradialis",
       "Pronator teres"
     ],
-    "correctAnswer": "Brachialis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Brachialis does not affect forearm rotation.",
     "long_explanation": "Brachialis attaches to the ulna and is unaffected by radius rotation, making it a pure elbow flexor regardless of supination or pronation.",
     "clinical_application": "Knowing this helps massage therapists isolate true elbow flexors during rehabilitation.",
+    "source_reference": "Trail Guide to the Body, 6th ed., p. 143",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "modality_massage",
       "muscle_biceps_brachii",
@@ -512,25 +419,11 @@
       "bone_radius",
       "bone_ulna"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed., p. 143",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "brachialis_isolation.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   },
   {
     "id": "arm_flexors_010",
+    "correctAnswer": "Flex elbow in pronation",
     "question": "Which test might isolate the brachialis muscle during clinical assessment?",
     "options": [
       "Flex elbow in supination",
@@ -538,18 +431,20 @@
       "Flex elbow in neutral grip",
       "Resisted wrist flexion"
     ],
-    "correctAnswer": "Flex elbow in pronation",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "arm_flexors"],
     "short_explanation": "Elbow flexion in pronation isolates the brachialis.",
     "long_explanation": "By flexing the elbow with the forearm pronated, the biceps brachii is biomechanically disadvantaged, allowing the therapist to more effectively evaluate brachialis strength.",
     "clinical_application": "Therapists can use this to assess brachialis function and detect muscular imbalances.",
+    "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 496",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_flexors.json",
+    "question_type": "multiple_choice",
     "difficulty": "intermediate",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Anatomy",
-    "subcategory": "Upper Limb",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.081Z",
+    "updated_at": "2025-05-24T14:54:13.425Z",
     "tags": [
       "anatomy_muscles",
       "exam_assessment",
@@ -562,21 +457,6 @@
       "muscle_biceps_brachii",
       "organ_testes"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 496",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.081Z",
-    "updated_at": "2025-05-24T14:54:13.425Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/arm_flexors",
-    "img": "brachialis_test.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/arm_flexors.json",
-    "sourceFile": "arm_flexors"
+    "synonyms": null
   }
 ]

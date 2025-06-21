@@ -1,6 +1,7 @@
 [
   {
     "id": "antigens_001",
+    "correctAnswer": "A protein that triggers an immune response",
     "question": "What is an antigen?",
     "options": [
       "A type of antibody",
@@ -8,12 +9,26 @@
       "A white blood cell",
       "A digestive enzyme"
     ],
-    "correctAnswer": "A protein that triggers an immune response",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_cells",
       "anatomy_protein",
@@ -30,22 +45,11 @@
       "immunology_antibodies",
       "system_digestive"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_002",
+    "correctAnswer": "On the surface of pathogens",
     "question": "Where are antigens commonly found?",
     "options": [
       "On the surface of pathogens",
@@ -53,30 +57,33 @@
       "Within the cell nucleus",
       "In mitochondria"
     ],
-    "correctAnswer": "On the surface of pathogens",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
-    "tags": ["anatomy_cells", "anatomy_nucleus", "immunology_antigens"],
-    "keywords": ["anatomy_cells", "anatomy_nucleus", "immunology_antigens"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
+    "difficulty_rating": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "tags": ["anatomy_cells", "anatomy_nucleus", "immunology_antigens"],
+    "keywords": ["anatomy_cells", "anatomy_nucleus", "immunology_antigens"],
+    "synonyms": null
   },
   {
     "id": "antigens_003",
+    "correctAnswer": "T cells and B cells",
     "question": "Which immune system cells recognize antigens?",
     "options": [
       "Red blood cells",
@@ -84,12 +91,26 @@
       "T cells and B cells",
       "Platelets"
     ],
-    "correctAnswer": "T cells and B cells",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_cells",
       "system_immune",
@@ -102,22 +123,11 @@
       "anatomy_red_blood",
       "immunology_antigens"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_004",
+    "correctAnswer": "Production of antibodies",
     "question": "What is the result of antigen recognition by B cells?",
     "options": [
       "Secretion of digestive enzymes",
@@ -125,12 +135,26 @@
       "Cell lysis",
       "Increased oxygen transport"
     ],
-    "correctAnswer": "Production of antibodies",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_cells",
       "immunology_antigens",
@@ -143,22 +167,11 @@
       "immunology_antibodies",
       "system_digestive"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_005",
+    "correctAnswer": "Self antigen",
     "question": "Which type of antigen is produced by the body and normally not targeted by the immune system?",
     "options": [
       "Foreign antigen",
@@ -166,30 +179,33 @@
       "Pathogenic antigen",
       "Autoantigen"
     ],
-    "correctAnswer": "Self antigen",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
-    "tags": ["system_immune", "immunology_antigens", "concept_targeted"],
-    "keywords": ["system_immune", "immunology_antigens", "concept_targeted"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
+    "difficulty_rating": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "tags": ["system_immune", "immunology_antigens", "concept_targeted"],
+    "keywords": ["system_immune", "immunology_antigens", "concept_targeted"],
+    "synonyms": null
   },
   {
     "id": "antigens_006",
+    "correctAnswer": "It introduces antigens to stimulate immune memory",
     "question": "Which of the following best describes a vaccine’s role in immunity?",
     "options": [
       "It directly kills pathogens",
@@ -197,12 +213,26 @@
       "It eliminates toxins from the body",
       "It increases red blood cell production"
     ],
-    "correctAnswer": "It introduces antigens to stimulate immune memory",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_cells",
       "system_immune",
@@ -215,22 +245,11 @@
       "anatomy_red_blood",
       "immunology_antigens"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_007",
+    "correctAnswer": "Harmless foreign antigens",
     "question": "An allergic reaction results from the immune system misidentifying what as harmful?",
     "options": [
       "Self antigens",
@@ -238,42 +257,59 @@
       "Harmless foreign antigens",
       "Antibodies"
     ],
-    "correctAnswer": "Harmless foreign antigens",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": ["system_immune", "immunology_antigens", "immunology_antibodies"],
     "keywords": [
       "system_immune",
       "immunology_antigens",
       "immunology_antibodies"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_008",
+    "correctAnswer": "T cells",
     "question": "Major Histocompatibility Complex (MHC) proteins present antigens to:",
     "options": ["Bacteria", "T cells", "Red blood cells", "Platelets"],
-    "correctAnswer": "T cells",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_cells",
       "anatomy_protein",
@@ -288,22 +324,11 @@
       "anatomy_red_blood",
       "immunology_antigens"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_009",
+    "correctAnswer": "Plasma B cells",
     "question": "Which cells produce antibodies in response to antigens?",
     "options": [
       "Macrophages",
@@ -311,34 +336,37 @@
       "Plasma B cells",
       "Neutrophils"
     ],
-    "correctAnswer": "Plasma B cells",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.104Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": ["anatomy_cells", "immunology_antigens", "immunology_antibodies"],
     "keywords": [
       "anatomy_cells",
       "immunology_antigens",
       "immunology_antibodies"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.104Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "synonyms": null
   },
   {
     "id": "antigens_010",
+    "correctAnswer": "An autoimmune disorder may result",
     "question": "What happens when the immune system attacks self antigens?",
     "options": [
       "Viral infection occurs",
@@ -346,26 +374,28 @@
       "An autoimmune disorder may result",
       "Immunity is enhanced"
     ],
-    "correctAnswer": "An autoimmune disorder may result",
-    "topics": ["Anatomy"],
-    "subtopics": ["Systems", "Endocrine_system", "Neurochemicals"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "antigens"
+    ],
+    "short_explanation": null,
+    "long_explanation": null,
+    "clinical_application": null,
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
-    "tags": ["system_immune", "immunology_antigens"],
-    "keywords": ["system_immune", "immunology_antigens"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
+    "difficulty_rating": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "antigens",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/endocrine_system/neurochemicals/antigens.json",
-    "sourceFile": "antigens"
+    "tags": ["system_immune", "immunology_antigens"],
+    "keywords": ["system_immune", "immunology_antigens"],
+    "synonyms": null
   }
 ]

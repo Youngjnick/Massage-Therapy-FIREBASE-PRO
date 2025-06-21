@@ -1,6 +1,7 @@
 [
   {
     "id": "sarcolemma_001",
+    "correctAnswer": "The cell membrane of a muscle fiber",
     "question": "What is the sarcolemma?",
     "options": [
       "The contractile unit of muscle",
@@ -8,22 +9,26 @@
       "The cell membrane of a muscle fiber",
       "The protein component of muscle"
     ],
-    "correctAnswer": "The cell membrane of a muscle fiber",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "The sarcolemma is the muscle cell membrane.",
     "long_explanation": "The sarcolemma is the specialized plasma membrane surrounding a muscle fiber. It plays a critical role in conducting action potentials and linking to the extracellular matrix.",
     "clinical_application": "Damage to the sarcolemma is a hallmark of muscular dystrophies, especially Duchenne’s.",
+    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.087Z",
+    "updated_at": "2025-05-24T14:54:13.429Z",
     "tags": [
       "anatomy_membrane",
       "anatomy_cells",
@@ -44,106 +49,69 @@
       "anatomy_plasma_membrane",
       "anatomy_component"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.087Z",
-    "updated_at": "2025-05-24T14:54:13.429Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["muscle cell membrane"],
-    "img": "sarcolemma_structure.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "synonyms": ["muscle cell membrane"]
   },
   {
     "id": "sarcolemma_002",
+    "correctAnswer": "T-tubules",
     "question": "What structure within the sarcolemma helps transmit action potentials into the muscle fiber?",
     "options": ["Myofibrils", "Sarcoplasmic reticulum", "T-tubules", "Z-discs"],
-    "correctAnswer": "T-tubules",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "T-tubules are invaginations of the sarcolemma.",
     "long_explanation": "Transverse tubules (T-tubules) are extensions of the sarcolemma that penetrate into the muscle cell, allowing depolarization to reach internal regions and initiate calcium release from the sarcoplasmic reticulum.",
     "clinical_application": "Defective T-tubules may contribute to cardiac arrhythmias and muscle weakness.",
+    "source_reference": "Netter's Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
-    "tags": ["anatomy_muscles"],
-    "keywords": ["anatomy_muscles"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Netter's Atlas of Human Anatomy",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.087Z",
     "updated_at": "2025-05-24T14:54:13.429Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["transverse tubules"],
-    "img": "t_tubules_sarcolemma.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "tags": ["anatomy_muscles"],
+    "keywords": ["anatomy_muscles"],
+    "synonyms": ["transverse tubules"]
   },
   {
     "id": "sarcolemma_003",
+    "correctAnswer": "Dystrophin",
     "question": "Which of the following proteins is critical to maintaining sarcolemma integrity?",
     "options": ["Actin", "Myosin", "Dystrophin", "Troponin"],
-    "correctAnswer": "Dystrophin",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "Dystrophin stabilizes the sarcolemma.",
     "long_explanation": "Dystrophin connects the internal cytoskeleton of muscle fibers to the sarcolemma and extracellular matrix. It prevents tearing during contraction.",
     "clinical_application": "Mutations in the dystrophin gene cause Duchenne muscular dystrophy, leading to sarcolemma breakdown and muscle degeneration.",
+    "source_reference": "Molecular Biology of the Cell, Alberts",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
-    "tags": ["anatomy_protein", "anatomy_muscles", "anatomy_matrix"],
-    "keywords": ["anatomy_protein", "anatomy_muscles", "anatomy_matrix"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Molecular Biology of the Cell, Alberts",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.087Z",
     "updated_at": "2025-05-24T14:54:13.429Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["structural protein"],
-    "img": "dystrophin_sarcolemma.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "tags": ["anatomy_protein", "anatomy_muscles", "anatomy_matrix"],
+    "keywords": ["anatomy_protein", "anatomy_muscles", "anatomy_matrix"],
+    "synonyms": ["structural protein"]
   },
   {
     "id": "sarcolemma_004",
+    "correctAnswer": "Calcium storage",
     "question": "Which function is NOT directly associated with the sarcolemma?",
     "options": [
       "Transmission of action potentials",
@@ -151,22 +119,26 @@
       "Calcium storage",
       "Initiation of muscle contraction"
     ],
-    "correctAnswer": "Calcium storage",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "Calcium storage occurs in the sarcoplasmic reticulum, not sarcolemma.",
     "long_explanation": "While the sarcolemma conducts signals and interfaces with connective tissue and T-tubules, calcium is stored in the sarcoplasmic reticulum, an internal organelle.",
     "clinical_application": "Distinguishing sarcolemma from other muscle components is key in interpreting muscle biopsies.",
+    "source_reference": "Principles of Anatomy and Physiology by Tortora",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "hard",
     "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.087Z",
+    "updated_at": "2025-05-24T14:54:13.429Z",
     "tags": [
       "anatomy_organelle",
       "anatomy_tissues",
@@ -183,70 +155,44 @@
       "anatomy_muscle_contraction",
       "anatomy_component"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Principles of Anatomy and Physiology by Tortora",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.087Z",
-    "updated_at": "2025-05-24T14:54:13.429Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["membrane role"],
-    "img": "sarcolemma_vs_sarcoplasmic_reticulum.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "synonyms": ["membrane role"]
   },
   {
     "id": "sarcolemma_005",
+    "correctAnswer": "Endomysium",
     "question": "The sarcolemma is continuous with which extracellular structure?",
     "options": ["Endomysium", "Epimysium", "Perimysium", "Myofibrils"],
-    "correctAnswer": "Endomysium",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "The sarcolemma connects with the endomysium.",
     "long_explanation": "The sarcolemma interfaces with the endomysium, a connective tissue layer that supports muscle fibers and transmits force during contraction.",
     "clinical_application": "This connection is essential for distributing contraction force and maintaining muscle structure.",
+    "source_reference": "Clinically Oriented Anatomy by Moore",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.087Z",
+    "updated_at": "2025-05-24T14:54:13.429Z",
     "tags": ["anatomy_tissues", "anatomy_muscles", "anatomy_connective_tissue"],
     "keywords": [
       "anatomy_tissues",
       "anatomy_muscles",
       "anatomy_connective_tissue"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinically Oriented Anatomy by Moore",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.087Z",
-    "updated_at": "2025-05-24T14:54:13.429Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["fiber wrapping"],
-    "img": "sarcolemma_endomysium.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "synonyms": ["fiber wrapping"]
   },
   {
     "id": "sarcolemma_006",
+    "correctAnswer": "Sodium channel",
     "question": "Which ion channel embedded in the sarcolemma is essential for action potential propagation?",
     "options": [
       "Calcium channel",
@@ -254,22 +200,26 @@
       "Potassium pump",
       "Chloride channel"
     ],
-    "correctAnswer": "Sodium channel",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "Sodium channels initiate muscle action potentials.",
     "long_explanation": "Voltage-gated sodium channels in the sarcolemma depolarize the membrane and initiate action potentials, which lead to muscle contraction.",
     "clinical_application": "Defects in sodium channels are linked to muscle channelopathies like periodic paralysis.",
+    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.087Z",
+    "updated_at": "2025-05-24T14:54:13.429Z",
     "tags": [
       "anatomy_membrane",
       "anatomy_muscles",
@@ -280,26 +230,11 @@
       "anatomy_muscles",
       "anatomy_muscle_contraction"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.087Z",
-    "updated_at": "2025-05-24T14:54:13.429Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["Na+ channel"],
-    "img": "sodium_channels_sarcolemma.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "synonyms": ["Na+ channel"]
   },
   {
     "id": "sarcolemma_007",
+    "correctAnswer": "Receive neurotransmitters from neurons",
     "question": "What is the main function of the motor end plate located on the sarcolemma?",
     "options": [
       "Act as a calcium reservoir",
@@ -307,22 +242,26 @@
       "Receive neurotransmitters from neurons",
       "Anchor myofibrils to the membrane"
     ],
-    "correctAnswer": "Receive neurotransmitters from neurons",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "The motor end plate receives acetylcholine to trigger contraction.",
     "long_explanation": "The motor end plate is a specialized region of the sarcolemma that receives acetylcholine from motor neurons, triggering depolarization and muscle contraction.",
     "clinical_application": "This site is targeted in myasthenia gravis, where antibodies block acetylcholine receptors.",
+    "source_reference": "Clinically Oriented Anatomy by Moore",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.087Z",
+    "updated_at": "2025-05-24T14:54:13.430Z",
     "tags": [
       "anatomy_membrane",
       "anatomy_muscles",
@@ -337,26 +276,11 @@
       "immunology_antibodies",
       "concept_targeted"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinically Oriented Anatomy by Moore",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.087Z",
-    "updated_at": "2025-05-24T14:54:13.430Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["ACh receptor site"],
-    "img": "motor_end_plate_sarcolemma.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "synonyms": ["ACh receptor site"]
   },
   {
     "id": "sarcolemma_008",
+    "correctAnswer": "Facilitate signal transduction and membrane repair",
     "question": "What is the role of caveolae in the sarcolemma?",
     "options": [
       "Produce ATP",
@@ -364,44 +288,33 @@
       "Facilitate signal transduction and membrane repair",
       "Store glycogen"
     ],
-    "correctAnswer": "Facilitate signal transduction and membrane repair",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "Caveolae are involved in signaling and membrane repair.",
     "long_explanation": "Caveolae are small invaginations in the sarcolemma that contain signaling molecules and play a key role in mechanosensing and membrane resealing after microinjury.",
     "clinical_application": "Defective caveolae proteins are linked to muscle dystrophies and lipodystrophy syndromes.",
+    "source_reference": "Molecular Cell Biology by Lodish",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
-    "tags": ["anatomy_membrane", "anatomy_protein", "anatomy_muscles"],
-    "keywords": ["anatomy_membrane", "anatomy_protein", "anatomy_muscles"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Molecular Cell Biology by Lodish",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.087Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["membrane pits"],
-    "img": "caveolae_sarcolemma.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "tags": ["anatomy_membrane", "anatomy_protein", "anatomy_muscles"],
+    "keywords": ["anatomy_membrane", "anatomy_protein", "anatomy_muscles"],
+    "synonyms": ["membrane pits"]
   },
   {
     "id": "sarcolemma_009",
+    "correctAnswer": "Duchenne muscular dystrophy",
     "question": "Which disease is primarily caused by mutations in the dystrophin gene affecting the sarcolemma?",
     "options": [
       "Multiple sclerosis",
@@ -409,44 +322,33 @@
       "Duchenne muscular dystrophy",
       "Polymyositis"
     ],
-    "correctAnswer": "Duchenne muscular dystrophy",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "Duchenne muscular dystrophy results from dystrophin defects.",
     "long_explanation": "Duchenne muscular dystrophy is a genetic disorder where lack of dystrophin weakens the sarcolemma, causing muscle fiber damage and degeneration.",
     "clinical_application": "This condition underscores the importance of sarcolemma stability in muscular health.",
+    "source_reference": "Muscle Biopsy: A Practical Approach",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "hard",
     "difficulty_rating": 4,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
-    "tags": ["anatomy_muscles"],
-    "keywords": ["anatomy_muscles"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Muscle Biopsy: A Practical Approach",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.087Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["DMD"],
-    "img": "duchenne_dystrophy_sarcolemma.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "tags": ["anatomy_muscles"],
+    "keywords": ["anatomy_muscles"],
+    "synonyms": ["DMD"]
   },
   {
     "id": "sarcolemma_010",
+    "correctAnswer": "It maintains resting membrane potential and conducts impulses",
     "question": "Which of the following best describes the electrical property of the sarcolemma?",
     "options": [
       "It is impermeable to all ions",
@@ -454,40 +356,28 @@
       "It maintains resting membrane potential and conducts impulses",
       "It stores neurotransmitters"
     ],
-    "correctAnswer": "It maintains resting membrane potential and conducts impulses",
-    "topics": ["Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Muscle_layers.json"
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcolemma"
     ],
-    "distractors": [],
     "short_explanation": "The sarcolemma helps maintain membrane potential and conducts action potentials.",
     "long_explanation": "The sarcolemma has voltage-gated ion channels that generate and propagate action potentials. It maintains ion gradients essential for muscle excitability.",
     "clinical_application": "Alterations in membrane potential are seen in disorders like hyperkalemic periodic paralysis.",
+    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
+    "question_type": "multiple_choice",
     "difficulty": "medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "category": "Muscle Physiology",
-    "subcategory": "Sarcolemma",
-    "tags": ["anatomy_muscles", "anatomy_membrane_potential"],
-    "keywords": ["anatomy_muscles", "anatomy_membrane_potential"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
     "difficulty_adjustment": 0,
+    "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.087Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "unit": "../../../src/data/questions/anatomy/muscle fascia and connective tissue/sarcolemma",
-    "synonyms": ["muscle electrical membrane"],
-    "img": "sarcolemma_membrane_potential.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/muscular_system/muscle_layers/sarcolemma.json",
-    "sourceFile": "sarcolemma"
+    "tags": ["anatomy_muscles", "anatomy_membrane_potential"],
+    "keywords": ["anatomy_muscles", "anatomy_membrane_potential"],
+    "synonyms": ["muscle electrical membrane"]
   }
 ]

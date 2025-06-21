@@ -1,6 +1,7 @@
 [
   {
     "id": "c7_nerve_innervations_001",
+    "correctAnswer": "Triceps brachii",
     "question": "Which muscle is primarily innervated by the C7 spinal root?",
     "options": [
       "Deltoid",
@@ -8,22 +9,32 @@
       "Triceps brachii",
       "Supraspinatus"
     ],
-    "correctAnswer": "Triceps brachii",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "C7 primarily innervates the triceps brachii.",
     "long_explanation": "The triceps brachii, responsible for elbow extension, is largely innervated by the radial nerve, which receives significant input from the C7 spinal root.",
-    "applied_example": "Weak elbow extension in a massage client may indicate C7 nerve involvement.",
+    "clinical_application": "Weak elbow extension in a massage client may indicate C7 nerve involvement.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "radial nerve", "triceps", "elbow extension"],
     "keywords": ["C7 root", "radial nerve", "motor innervation", "upper limb"],
-    "source_reference": "Moore's Clinically Oriented Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_002",
+    "correctAnswer": "Middle finger",
     "question": "Which dermatome corresponds to the C7 spinal nerve?",
     "options": [
       "Lateral arm",
@@ -31,13 +42,25 @@
       "Middle finger",
       "Little finger"
     ],
-    "correctAnswer": "Middle finger",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "The middle finger is innervated by the C7 dermatome.",
     "long_explanation": "The C7 dermatome covers the posterior aspect of the arm and forearm and the palmar side of the middle finger.",
-    "applied_example": "Numbness or tingling in the middle finger may indicate C7 radiculopathy.",
+    "clinical_application": "Numbness or tingling in the middle finger may indicate C7 radiculopathy.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "easy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "dermatome", "sensory"],
     "keywords": [
       "middle finger",
@@ -45,13 +68,11 @@
       "sensory innervation",
       "radiculopathy"
     ],
-    "source_reference": "Netter’s Atlas of Human Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_003",
+    "correctAnswer": "Elbow extension",
     "question": "Which movement is commonly affected in a C7 spinal root injury?",
     "options": [
       "Shoulder abduction",
@@ -59,40 +80,60 @@
       "Wrist extension",
       "Elbow extension"
     ],
-    "correctAnswer": "Elbow extension",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "Wrist extension may be impaired with C7 injury.",
     "long_explanation": "The radial nerve, influenced by C7, innervates wrist extensors. Injury can lead to wrist drop.",
-    "applied_example": "Massage therapists may note weakness or compensation in wrist posture during upper body assessment.",
+    "clinical_application": "Massage therapists may note weakness or compensation in wrist posture during upper body assessment.",
+    "source_reference": "Clinical Orthopedic Examination Textbook",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "motor deficit", "wrist"],
     "keywords": ["radial nerve", "C7 lesion", "motor testing"],
-    "source_reference": "Clinical Orthopedic Examination Textbook",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_004",
+    "correctAnswer": "Radial",
     "question": "C7 contributes to which of the following nerves?",
     "options": ["Musculocutaneous", "Radial", "Axillary", "Ulnar"],
-    "correctAnswer": "Radial",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "C7 is a major contributor to the radial nerve.",
     "long_explanation": "The radial nerve arises from the posterior cord of the brachial plexus and includes fibers from C5–T1, with strong contribution from C7.",
-    "applied_example": "In radial nerve compression cases, testing triceps and wrist extensors helps isolate C7 involvement.",
+    "clinical_application": "In radial nerve compression cases, testing triceps and wrist extensors helps isolate C7 involvement.",
+    "source_reference": "Gray’s Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "radial nerve", "brachial plexus"],
     "keywords": ["radial nerve root", "posterior cord", "nerve anatomy"],
-    "source_reference": "Gray’s Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_005",
+    "correctAnswer": "Triceps reflex",
     "question": "Which reflex is primarily tested to assess C7 function?",
     "options": [
       "Biceps reflex",
@@ -100,22 +141,32 @@
       "Brachioradialis reflex",
       "Patellar reflex"
     ],
-    "correctAnswer": "Triceps reflex",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "The triceps reflex assesses C7 integrity.",
     "long_explanation": "The triceps reflex, triggered by tapping the triceps tendon, tests the integrity of the C7 spinal root via the radial nerve.",
-    "applied_example": "Diminished or absent triceps reflex may warrant referral for neurological evaluation.",
+    "clinical_application": "Diminished or absent triceps reflex may warrant referral for neurological evaluation.",
+    "source_reference": "Clinical Neurology Manual",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "easy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "reflex testing", "triceps"],
     "keywords": ["neurological exam", "triceps tendon", "radial nerve"],
-    "source_reference": "Clinical Neurology Manual",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_006",
+    "correctAnswer": "Numbness in the middle finger",
     "question": "What symptom might a client with C7 nerve root compression report?",
     "options": [
       "Pain in the shoulder blade",
@@ -123,26 +174,36 @@
       "Tingling in the thumb",
       "Weakness in hip flexion"
     ],
-    "correctAnswer": "Numbness in the middle finger",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "Middle finger numbness is a hallmark of C7 involvement.",
     "long_explanation": "Compression or irritation of the C7 root can result in sensory deficits along its dermatome, especially affecting the middle finger and posterior forearm.",
-    "applied_example": "Massage therapists should assess dermatomal pain to distinguish cervical radiculopathy from peripheral nerve entrapment.",
+    "clinical_application": "Massage therapists should assess dermatomal pain to distinguish cervical radiculopathy from peripheral nerve entrapment.",
+    "source_reference": "Orthopedic Physical Assessment",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "nerve compression", "radiculopathy"],
     "keywords": [
       "middle finger sensory",
       "C7 neuropathy",
       "cervical disc issues"
     ],
-    "source_reference": "Orthopedic Physical Assessment",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_007",
+    "correctAnswer": "Wrist extensors",
     "question": "Which muscle group may weaken with C7 injury?",
     "options": [
       "Shoulder abductors",
@@ -150,22 +211,32 @@
       "Wrist flexors",
       "Wrist extensors"
     ],
-    "correctAnswer": "Wrist extensors",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "Wrist extensors are commonly affected by C7 injury.",
     "long_explanation": "C7 contributes to radial nerve innervation of wrist extensors, including extensor carpi radialis and ulnaris.",
-    "applied_example": "Strength testing during clinical massage can reveal asymmetries in wrist function that point to C7 issues.",
+    "clinical_application": "Strength testing during clinical massage can reveal asymmetries in wrist function that point to C7 issues.",
+    "source_reference": "Trail Guide to the Body",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "muscle testing", "radial nerve"],
     "keywords": ["extensor weakness", "nerve root", "functional testing"],
-    "source_reference": "Trail Guide to the Body",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_008",
+    "correctAnswer": "Neck extension with lateral rotation",
     "question": "What spinal motion may aggravate C7 radiculopathy symptoms?",
     "options": [
       "Cervical flexion",
@@ -173,22 +244,32 @@
       "Thoracic flexion",
       "Lumbar side bending"
     ],
-    "correctAnswer": "Neck extension with lateral rotation",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "Neck extension with lateral rotation may worsen symptoms.",
     "long_explanation": "This position narrows the intervertebral foramina, potentially compressing the exiting spinal nerve root.",
-    "applied_example": "Cervical compression tests like Spurling's may help confirm C7 involvement during musculoskeletal screening.",
+    "clinical_application": "Cervical compression tests like Spurling's may help confirm C7 involvement during musculoskeletal screening.",
+    "source_reference": "Orthopedic Testing Guidebook",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "radiculopathy", "neck motion"],
     "keywords": ["Spurling test", "cervical root compression", "neck mobility"],
-    "source_reference": "Orthopedic Testing Guidebook",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_009",
+    "correctAnswer": "Posterior cord",
     "question": "C7 is part of which division of the brachial plexus?",
     "options": [
       "Lateral cord",
@@ -196,22 +277,32 @@
       "Posterior cord",
       "Superior trunk"
     ],
-    "correctAnswer": "Posterior cord",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "C7 contributes to the posterior cord of the brachial plexus.",
     "long_explanation": "The posterior cord is formed from the posterior divisions of all three trunks (upper, middle, and lower) and gives rise to the axillary and radial nerves.",
-    "applied_example": "A working understanding of plexus pathways helps massage therapists trace pain referral patterns to root causes.",
+    "clinical_application": "A working understanding of plexus pathways helps massage therapists trace pain referral patterns to root causes.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "hard",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "brachial plexus", "posterior cord"],
     "keywords": ["nerve cord", "anatomy of plexus", "radial output"],
-    "source_reference": "Moore's Clinically Oriented Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "c7_nerve_innervations_010",
+    "correctAnswer": "Thoracodorsal nerve",
     "question": "Which nerve receives fibers from C7 and innervates the latissimus dorsi?",
     "options": [
       "Thoracodorsal nerve",
@@ -219,18 +310,27 @@
       "Axillary nerve",
       "Ulnar nerve"
     ],
-    "correctAnswer": "Thoracodorsal nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Spinal_root_levels"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "c7_nerve_innervations"
+    ],
     "short_explanation": "Thoracodorsal nerve originates from C6–C8.",
     "long_explanation": "The thoracodorsal nerve, a branch of the posterior cord, receives C7 input and innervates the latissimus dorsi muscle.",
-    "applied_example": "Massage focused on the lats for shoulder function or scapular tension may involve nerve structures from the C7 root.",
+    "clinical_application": "Massage focused on the lats for shoulder function or scapular tension may involve nerve structures from the C7 root.",
+    "source_reference": "Netter’s Anatomy Flash Cards",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "moderate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
     "tags": ["C7", "thoracodorsal", "latissimus dorsi"],
     "keywords": ["nerve supply", "back muscles", "posterior cord"],
-    "source_reference": "Netter’s Anatomy Flash Cards",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/spinal_root_levels/c7_nerve_innervations.json",
-    "sourceFile": "c7_nerve_innervations"
+    "synonyms": null
   }
 ]

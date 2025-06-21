@@ -1,6 +1,7 @@
 [
   {
     "id": "foot_extensors_001",
+    "correctAnswer": "Extensor hallucis longus",
     "question": "Which muscle extends the great toe at both MTP and IP joints?",
     "options": [
       "Extensor hallucis longus",
@@ -8,18 +9,20 @@
       "Extensor digitorum longus",
       "Abductor hallucis"
     ],
-    "correctAnswer": "Extensor hallucis longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "foot_extensors"],
     "short_explanation": "Extensor hallucis longus extends the big toe at both joints.",
     "long_explanation": "EHL originates on the fibula and inserts on the distal phalanx of the hallux, enabling full extension of the big toe during swing phase of gait.",
     "clinical_application": "Weakness here can lead to toe drag during walking, common in foot drop.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Extensors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.082Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "technique_fulling",
       "anatomy_muscles",
@@ -44,25 +47,11 @@
       "muscle_abductor_hallucis",
       "bone_fibula"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.082Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": ["EHL", "toe lifter"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/foot_extensors.json",
-    "sourceFile": "foot_extensors"
+    "synonyms": ["EHL", "toe lifter"]
   },
   {
     "id": "foot_extensors_002",
+    "correctAnswer": "Extension of toes 2–5",
     "question": "What is the primary action of extensor digitorum longus?",
     "options": [
       "Toe flexion",
@@ -70,18 +59,20 @@
       "Extension of toes 2–5",
       "Plantarflexion of the ankle"
     ],
-    "correctAnswer": "Extension of toes 2–5",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "foot_extensors"],
     "short_explanation": "Extensor digitorum longus extends toes 2–5.",
     "long_explanation": "EDL originates from the tibia/fibula and extends down to insert on the distal phalanges of toes 2–5, helping lift the toes during swing phase.",
     "clinical_application": "Tightness here may create dorsal foot pain or contribute to shin splints.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Extensors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.082Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "condition_pain",
       "movement_plantarflexion",
@@ -102,25 +93,11 @@
       "bone_tibia",
       "bone_fibula"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.082Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": ["EDL", "long toe extensor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/foot_extensors.json",
-    "sourceFile": "foot_extensors"
+    "synonyms": ["EDL", "long toe extensor"]
   },
   {
     "id": "foot_extensors_003",
+    "correctAnswer": "Extensor digitorum longus",
     "question": "Which muscle assists in both dorsiflexion and extension of the toes?",
     "options": [
       "Tibialis posterior",
@@ -128,18 +105,20 @@
       "Extensor digitorum longus",
       "Flexor digitorum longus"
     ],
-    "correctAnswer": "Extensor digitorum longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "foot_extensors"],
     "short_explanation": "EDL helps lift the foot and extend toes together during gait.",
     "long_explanation": "Its anatomical course allows it to both dorsiflex the ankle and extend the lateral toes, making it key in swing and heel strike phases.",
     "clinical_application": "Weakness can cause foot slap or gait compensation.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Extensors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.082Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "anatomy_muscles",
       "concept_assists",
@@ -156,25 +135,11 @@
       "muscle_extensor_digitorum_longus",
       "muscle_flexor_digitorum_longus"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.082Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": ["toe and foot extensor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/foot_extensors.json",
-    "sourceFile": "foot_extensors"
+    "synonyms": ["toe and foot extensor"]
   },
   {
     "id": "foot_extensors_004",
+    "correctAnswer": "Distal phalanx of the hallux",
     "question": "What is the insertion of extensor hallucis longus?",
     "options": [
       "Base of proximal phalanx of the hallux",
@@ -182,18 +147,20 @@
       "Distal phalanx of the hallux",
       "Navicular bone"
     ],
-    "correctAnswer": "Distal phalanx of the hallux",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "foot_extensors"],
     "short_explanation": "EHL inserts on the distal phalanx of the hallux.",
     "long_explanation": "This allows full extension at both the MTP and IP joints, supporting toe clearance and balance during gait.",
     "clinical_application": "Useful in gait correction therapies for big toe stiffness or neuropathy.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Extensors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.082Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "technique_fulling",
       "anatomy_bones",
@@ -210,25 +177,11 @@
       "muscle_extensor_hallucis_longus",
       "bone_metatarsals"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.082Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": ["long toe extensor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/foot_extensors.json",
-    "sourceFile": "foot_extensors"
+    "synonyms": ["long toe extensor"]
   },
   {
     "id": "foot_extensors_005",
+    "correctAnswer": "Extensor digitorum brevis",
     "question": "Which muscle is located on the dorsal surface of the foot and assists in toe extension?",
     "options": [
       "Extensor digitorum brevis",
@@ -236,18 +189,20 @@
       "Plantar interossei",
       "Peroneus brevis"
     ],
-    "correctAnswer": "Extensor digitorum brevis",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "foot", "foot_extensors"],
     "short_explanation": "Extensor digitorum brevis is a dorsal foot muscle that extends toes 2–4.",
     "long_explanation": "EDB originates on the dorsal calcaneus and inserts into the tendons of EDL, supporting toe extension.",
     "clinical_application": "May be mistaken for swelling or tumor in dorsal foot; palpation confirms its muscular nature.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Extensors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.082Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "anatomy_muscles",
       "concept_originates",
@@ -270,21 +225,6 @@
       "muscle_plantar_interossei",
       "muscle_extensor_digitorum_brevis"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.082Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_extensors",
-    "synonyms": ["EDB"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/foot/foot_extensors.json",
-    "sourceFile": "foot_extensors"
+    "synonyms": ["EDB"]
   }
 ]

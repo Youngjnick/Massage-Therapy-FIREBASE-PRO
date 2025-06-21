@@ -1,53 +1,66 @@
 [
   {
     "id": "cell_specialization_fun_facts_001",
+    "correctAnswer": "Smooth ER",
     "question": "Which organelle would be most abundant in cells that produce steroid hormones or lipids?",
     "options": ["Rough ER", "Golgi apparatus", "Smooth ER", "Mitochondria"],
-    "correctAnswer": "Smooth ER",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": [
-      "anatomy_cells",
-      "anatomy_organelle",
-      "smooth_er",
-      "lipid_synthesis"
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
     ],
-    "keywords": [
-      "anatomy_cells",
-      "anatomy_organelle",
-      "smooth_er",
-      "lipid_synthesis"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
     "short_explanation": "Smooth ER synthesizes lipids and steroid hormones.",
     "long_explanation": "Cells that produce steroids or lipids have abundant smooth ER, which is responsible for lipid metabolism and detoxification.",
     "clinical_application": "Understanding this supports the role of hormone balance and detox in massage, particularly in endocrine support techniques.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": [
+      "anatomy_cells",
+      "anatomy_organelle",
+      "smooth_er",
+      "lipid_synthesis"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_organelle",
+      "smooth_er",
+      "lipid_synthesis"
+    ],
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_002",
+    "correctAnswer": "Mitochondria",
     "question": "Cardiac muscle cells require large amounts of energy. Which organelle is especially abundant in them?",
     "options": ["Ribosomes", "Lysosomes", "Mitochondria", "Nucleus"],
-    "correctAnswer": "Mitochondria",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
+    "short_explanation": "Cardiac muscle cells contain many mitochondria for energy.",
+    "long_explanation": "Mitochondria produce ATP through aerobic respiration. High energy demand in cardiac tissue means more mitochondria.",
+    "clinical_application": "Massage improves circulation, supporting oxygen delivery and ATP production in heart and skeletal muscles.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
     "tags": [
       "anatomy_cells",
       "anatomy_nucleus",
@@ -66,25 +79,11 @@
       "cardiac_energy",
       "mitochondria"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
-    "short_explanation": "Cardiac muscle cells contain many mitochondria for energy.",
-    "long_explanation": "Mitochondria produce ATP through aerobic respiration. High energy demand in cardiac tissue means more mitochondria.",
-    "clinical_application": "Massage improves circulation, supporting oxygen delivery and ATP production in heart and skeletal muscles.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_003",
+    "correctAnswer": "Red blood cells",
     "question": "Which cells contain no nucleus at maturity?",
     "options": [
       "White blood cells",
@@ -92,12 +91,25 @@
       "Neurons",
       "Muscle cells"
     ],
-    "correctAnswer": "Red blood cells",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
+    "short_explanation": "Mature red blood cells lack a nucleus.",
+    "long_explanation": "Red blood cells eject their nucleus to make room for hemoglobin, optimizing oxygen transport.",
+    "clinical_application": "Massage improves red blood cell flow, enhancing oxygen delivery critical to tissue healing.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
     "tags": [
       "anatomy_cells",
       "anatomy_nucleus",
@@ -112,25 +124,11 @@
       "anatomy_red_blood",
       "rbc_structure"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
-    "short_explanation": "Mature red blood cells lack a nucleus.",
-    "long_explanation": "Red blood cells eject their nucleus to make room for hemoglobin, optimizing oxygen transport.",
-    "clinical_application": "Massage improves red blood cell flow, enhancing oxygen delivery critical to tissue healing.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_004",
+    "correctAnswer": "Neuron",
     "question": "Which type of human cell has the longest axon?",
     "options": [
       "Epithelial cell",
@@ -138,12 +136,25 @@
       "Neuron",
       "Red blood cell"
     ],
-    "correctAnswer": "Neuron",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
+    "short_explanation": "Neurons have the longest axons for signal transmission.",
+    "long_explanation": "Axons can extend over a meter to transmit electrical impulses between the spinal cord and extremities.",
+    "clinical_application": "Massage can stimulate neural pathways and help reduce tension along long axon routes.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
     "tags": [
       "anatomy_cells",
       "anatomy_muscles",
@@ -156,25 +167,11 @@
       "anatomy_red_blood",
       "axon_length"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
-    "short_explanation": "Neurons have the longest axons for signal transmission.",
-    "long_explanation": "Axons can extend over a meter to transmit electrical impulses between the spinal cord and extremities.",
-    "clinical_application": "Massage can stimulate neural pathways and help reduce tension along long axon routes.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_005",
+    "correctAnswer": "To transmit electrical signals over long distances",
     "question": "Why is the axon of some neurons so long?",
     "options": [
       "To carry nutrients to the skin",
@@ -182,33 +179,32 @@
       "To transmit electrical signals over long distances",
       "To store energy"
     ],
-    "correctAnswer": "To transmit electrical signals over long distances",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": ["organ_skin", "neural_signal"],
-    "keywords": ["organ_skin", "neural_signal"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
     "short_explanation": "To transmit signals over long distances.",
     "long_explanation": "Neurons have extended axons to carry signals from the central nervous system to distant muscles or organs.",
     "clinical_application": "Massage therapy can influence neural transmission and reduce nerve compression symptoms.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["organ_skin", "neural_signal"],
+    "keywords": ["organ_skin", "neural_signal"],
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_006",
+    "correctAnswer": "To allow more space for hemoglobin",
     "question": "What is the main reason red blood cells lack a nucleus?",
     "options": [
       "To reproduce faster",
@@ -216,12 +212,25 @@
       "To divide more efficiently",
       "To absorb oxygen directly"
     ],
-    "correctAnswer": "To allow more space for hemoglobin",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
+    "short_explanation": "To increase space for hemoglobin and oxygen transport.",
+    "long_explanation": "RBCs are optimized for gas exchange by eliminating their nucleus and maximizing hemoglobin content.",
+    "clinical_application": "Techniques that enhance circulation support red blood cell efficiency and oxygen delivery.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
     "tags": [
       "anatomy_cells",
       "anatomy_nucleus",
@@ -234,54 +243,39 @@
       "anatomy_red_blood",
       "hemoglobin_transport"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
-    "short_explanation": "To increase space for hemoglobin and oxygen transport.",
-    "long_explanation": "RBCs are optimized for gas exchange by eliminating their nucleus and maximizing hemoglobin content.",
-    "clinical_application": "Techniques that enhance circulation support red blood cell efficiency and oxygen delivery.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_007",
+    "correctAnswer": "Proteins",
     "question": "Cells with abundant rough ER are likely specialized for producing:",
     "options": ["Lipids", "Steroid hormones", "Proteins", "ATP"],
-    "correctAnswer": "Proteins",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": ["anatomy_cells", "anatomy_protein", "protein_synthesis"],
-    "keywords": ["anatomy_cells", "anatomy_protein", "protein_synthesis"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
     "short_explanation": "Rough ER specializes in protein synthesis.",
     "long_explanation": "Rough ER is studded with ribosomes that produce proteins for secretion or membrane integration.",
     "clinical_application": "Protein production is vital for muscle repair after massage-induced microtrauma.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["anatomy_cells", "anatomy_protein", "protein_synthesis"],
+    "keywords": ["anatomy_cells", "anatomy_protein", "protein_synthesis"],
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_008",
+    "correctAnswer": "They are long and multinucleated",
     "question": "Which of the following is true about skeletal muscle cells?",
     "options": [
       "They are usually uninucleated",
@@ -289,33 +283,32 @@
       "They are long and multinucleated",
       "They absorb nutrients via phagocytosis"
     ],
-    "correctAnswer": "They are long and multinucleated",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": ["anatomy_cells", "anatomy_muscles", "muscle_structure"],
-    "keywords": ["anatomy_cells", "anatomy_muscles", "muscle_structure"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
     "short_explanation": "They are long, multinucleated, and designed for contraction.",
     "long_explanation": "Skeletal muscle fibers fuse during development, resulting in large cells with many nuclei to support protein synthesis.",
     "clinical_application": "Massage improves muscle recovery by enhancing nutrient delivery to these specialized cells.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["anatomy_cells", "anatomy_muscles", "muscle_structure"],
+    "keywords": ["anatomy_cells", "anatomy_muscles", "muscle_structure"],
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_009",
+    "correctAnswer": "White blood cells",
     "question": "Which cells are especially rich in lysosomes to digest pathogens?",
     "options": [
       "Red blood cells",
@@ -323,12 +316,25 @@
       "White blood cells",
       "Neurons"
     ],
-    "correctAnswer": "White blood cells",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
+    "short_explanation": "White blood cells have many lysosomes to destroy pathogens.",
+    "long_explanation": "Lysosomes contain enzymes that digest harmful bacteria, crucial for immune defense.",
+    "clinical_application": "Massage may stimulate lymph flow, aiding white blood cell mobility and immune response.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
     "tags": [
       "anatomy_cells",
       "anatomy_muscles",
@@ -343,50 +349,34 @@
       "system_digestive",
       "immune_function"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
-    "short_explanation": "White blood cells have many lysosomes to destroy pathogens.",
-    "long_explanation": "Lysosomes contain enzymes that digest harmful bacteria, crucial for immune defense.",
-    "clinical_application": "Massage may stimulate lymph flow, aiding white blood cell mobility and immune response.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "synonyms": null
   },
   {
     "id": "cell_specialization_fun_facts_010",
+    "correctAnswer": "Epithelial cells",
     "question": "Which type of cell forms the lining of the digestive tract and often has microvilli for absorption?",
     "options": ["Neurons", "Epithelial cells", "Cardiac cells", "Adipocytes"],
-    "correctAnswer": "Epithelial cells",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": ["anatomy_cells", "system_digestive", "digestive_absorption"],
-    "keywords": ["anatomy_cells", "system_digestive", "digestive_absorption"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.115Z",
-    "updated_at": "2025-05-24T14:54:13.460Z",
-    "unit": "cell specialization fun facts",
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "cell_specialization_fun_facts"
+    ],
     "short_explanation": "Epithelial cells with microvilli increase nutrient absorption.",
     "long_explanation": "These cells form a barrier and absorb nutrients efficiently due to finger-like extensions called microvilli.",
     "clinical_application": "Massage of abdominal regions may enhance parasympathetic activity, improving gut function and absorption.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
-    "sourceFile": "cell_specialization_fun_facts"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cell_specialization_fun_facts.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.115Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["anatomy_cells", "system_digestive", "digestive_absorption"],
+    "keywords": ["anatomy_cells", "system_digestive", "digestive_absorption"],
+    "synonyms": null
   }
 ]

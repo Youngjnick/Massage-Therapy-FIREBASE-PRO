@@ -1,6 +1,7 @@
 [
   {
     "id": "periosteum_001",
+    "correctAnswer": "Provide a surface for muscle attachment and bone repair",
     "question": "What is the primary function of the periosteum?",
     "options": [
       "Produce red blood cells",
@@ -8,60 +9,62 @@
       "Provide a surface for muscle attachment and bone repair",
       "Support joint articulation"
     ],
-    "correctAnswer": "Provide a surface for muscle attachment and bone repair",
-    "topics": ["Anatomy", "Skeletal System"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "The periosteum anchors muscles and assists in bone growth and repair.",
     "long_explanation": "The periosteum is a dense fibrous membrane covering bones (except at joints). It contains osteogenic cells that help with bone healing and serves as a point of attachment for tendons and ligaments.",
     "clinical_application": "Understanding the periosteum's role helps massage therapists avoid excessive pressure over bony prominences that can irritate this sensitive layer.",
-    "tags": ["periosteum", "bone healing", "muscle attachment"],
-    "keywords": ["fibrous membrane", "osteogenic", "bone covering"],
-    "synonyms": ["bone sheath"],
-    "category": "Bone Structure",
-    "subcategory": "Periosteum",
+    "source_reference": "Trail Guide to the Body",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Easy",
     "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Trail Guide to the Body",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "bone healing", "muscle attachment"],
+    "keywords": ["fibrous membrane", "osteogenic", "bone covering"],
+    "synonyms": ["bone sheath"]
   },
   {
     "id": "periosteum_002",
+    "correctAnswer": "Osteoblasts",
     "question": "Which cells in the periosteum are responsible for bone growth and repair?",
     "options": ["Chondrocytes", "Fibroblasts", "Osteoblasts", "Adipocytes"],
-    "correctAnswer": "Osteoblasts",
-    "topics": ["Anatomy", "Skeletal System"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "Osteoblasts are the bone-forming cells in the periosteum.",
     "long_explanation": "Osteoblasts, located in the inner layer of the periosteum, are essential for bone deposition, growth, and healing after injury.",
     "clinical_application": "Massage near healing fractures must avoid disrupting osteoblastic activity in the periosteum.",
-    "tags": ["osteoblasts", "periosteum", "bone growth"],
-    "keywords": ["bone repair", "osteogenic cells", "regeneration"],
-    "synonyms": ["bone-forming cells"],
-    "category": "Bone Biology",
-    "subcategory": "Cellular Components",
+    "source_reference": "Essentials of Human Anatomy & Physiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Essentials of Human Anatomy & Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["osteoblasts", "periosteum", "bone growth"],
+    "keywords": ["bone repair", "osteogenic cells", "regeneration"],
+    "synonyms": ["bone-forming cells"]
   },
   {
     "id": "periosteum_003",
+    "correctAnswer": "Formation of synovial fluid",
     "question": "Which of the following is NOT a function of the periosteum?",
     "options": [
       "Anchoring ligaments and tendons",
@@ -69,32 +72,33 @@
       "Formation of synovial fluid",
       "Bone remodeling and repair"
     ],
-    "correctAnswer": "Formation of synovial fluid",
-    "topics": ["Anatomy", "Musculoskeletal System"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "Synovial fluid is formed by the synovial membrane, not the periosteum.",
     "long_explanation": "The periosteum supports bone growth, repair, and provides vascular supply, but does not produce synovial fluid. That role belongs to the synovial membrane within joints.",
     "clinical_application": "Anatomical distinctions between joint capsules and periosteum help distinguish joint versus bone-related pain during massage.",
-    "tags": ["periosteum", "function", "joint anatomy"],
-    "keywords": ["bone covering", "synovial fluid", "ligament anchor"],
-    "synonyms": ["bone membrane"],
-    "category": "Bone Anatomy",
-    "subcategory": "Periosteum Functions",
+    "source_reference": "Principles of Anatomy and Physiology",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Principles of Anatomy and Physiology",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "function", "joint anatomy"],
+    "keywords": ["bone covering", "synovial fluid", "ligament anchor"],
+    "synonyms": ["bone membrane"]
   },
   {
     "id": "periosteum_004",
+    "correctAnswer": "Inner cambium layer",
     "question": "Which layer of the periosteum contains osteoblasts and osteoclasts?",
     "options": [
       "Outer fibrous layer",
@@ -102,32 +106,33 @@
       "Inner cambium layer",
       "Articular cartilage"
     ],
-    "correctAnswer": "Inner cambium layer",
-    "topics": ["Anatomy", "Skeletal System"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "The inner cambium layer of the periosteum houses osteoblasts and osteoclasts.",
     "long_explanation": "The periosteum consists of two layers: the outer fibrous layer and the inner cambium (osteogenic) layer. The cambium contains cells essential for bone remodeling and repair, including osteoblasts and osteoclasts.",
     "clinical_application": "Massage techniques over bony areas must consider the sensitivity of the cambium layer, especially during healing phases.",
-    "tags": ["periosteum", "osteoblast", "osteoclast"],
-    "keywords": ["cambium", "bone remodeling", "osteogenic layer"],
-    "synonyms": ["osteogenic layer"],
-    "category": "Bone Structure",
-    "subcategory": "Periosteum",
+    "source_reference": "Gray’s Anatomy for Students",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Gray’s Anatomy for Students",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "osteoblast", "osteoclast"],
+    "keywords": ["cambium", "bone remodeling", "osteogenic layer"],
+    "synonyms": ["osteogenic layer"]
   },
   {
     "id": "periosteum_005",
+    "correctAnswer": "It contributes osteogenic cells for bone regeneration",
     "question": "What role does the periosteum play in fracture healing?",
     "options": [
       "It produces synovial fluid",
@@ -135,32 +140,33 @@
       "It initiates hematopoiesis",
       "It contributes osteogenic cells for bone regeneration"
     ],
-    "correctAnswer": "It contributes osteogenic cells for bone regeneration",
-    "topics": ["Anatomy", "Skeletal System"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "The periosteum supplies osteogenic cells that regenerate bone during healing.",
     "long_explanation": "After a fracture, the periosteum plays a critical role by supplying progenitor cells that become osteoblasts and form new bone matrix, essential to the healing process.",
     "clinical_application": "Therapists must be aware that aggressive techniques over healing fractures can disrupt periosteal bone regeneration.",
-    "tags": ["periosteum", "fracture healing", "osteogenic"],
-    "keywords": ["bone repair", "osteoblasts", "regeneration"],
-    "synonyms": ["bone regeneration layer"],
-    "category": "Fracture Recovery",
-    "subcategory": "Healing Process",
+    "source_reference": "Orthopedic Massage",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Orthopedic Massage",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "fracture healing", "osteogenic"],
+    "keywords": ["bone repair", "osteoblasts", "regeneration"],
+    "synonyms": ["bone regeneration layer"]
   },
   {
     "id": "periosteum_006",
+    "correctAnswer": "Dull ache near joints",
     "question": "Which sensation is often associated with inflammation of the periosteum (periostitis)?",
     "options": [
       "Dull ache near joints",
@@ -168,32 +174,33 @@
       "Burning in the dermis",
       "Pain with tendon stretching"
     ],
-    "correctAnswer": "Dull ache near joints",
-    "topics": ["Anatomy", "Musculoskeletal Pathology"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "Periostitis typically presents as a dull ache near the affected bone.",
     "long_explanation": "Periostitis, or inflammation of the periosteum, is commonly seen in overuse injuries (e.g., shin splints). It manifests as a dull, localized pain worsened by activity.",
     "clinical_application": "Massage may reduce symptoms of periostitis when adapted to avoid aggravating the inflamed periosteum.",
-    "tags": ["periostitis", "periosteum inflammation", "bone pain"],
-    "keywords": ["shin splints", "dull ache", "inflammation"],
-    "synonyms": ["bone membrane inflammation"],
-    "category": "Inflammatory Conditions",
-    "subcategory": "Periostitis",
+    "source_reference": "Trail Guide to the Body",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Pathology",
-    "source_reference": "Trail Guide to the Body",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periostitis", "periosteum inflammation", "bone pain"],
+    "keywords": ["shin splints", "dull ache", "inflammation"],
+    "synonyms": ["bone membrane inflammation"]
   },
   {
     "id": "periosteum_007",
+    "correctAnswer": "Dense irregular connective tissue",
     "question": "What connective tissue primarily composes the outer layer of the periosteum?",
     "options": [
       "Loose areolar connective tissue",
@@ -201,32 +208,33 @@
       "Elastic connective tissue",
       "Adipose tissue"
     ],
-    "correctAnswer": "Dense irregular connective tissue",
-    "topics": ["Anatomy", "Connective Tissue"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "The outer layer is composed of dense irregular connective tissue.",
     "long_explanation": "The fibrous outer layer of the periosteum contains dense irregular connective tissue, providing strength and anchoring sites for tendons and ligaments.",
     "clinical_application": "Understanding periosteal fiber orientation helps guide manual therapies that support tendon health.",
-    "tags": ["periosteum", "connective tissue", "fibrous layer"],
-    "keywords": ["dense connective", "fibrous outer", "tendon attachment"],
-    "synonyms": ["fibrous sheath"],
-    "category": "Tissue Types",
-    "subcategory": "Dense Connective",
+    "source_reference": "Atlas of Human Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Easy",
     "difficulty_rating": 2,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Atlas of Human Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "connective tissue", "fibrous layer"],
+    "keywords": ["dense connective", "fibrous outer", "tendon attachment"],
+    "synonyms": ["fibrous sheath"]
   },
   {
     "id": "periosteum_008",
+    "correctAnswer": "Articular surfaces of joints",
     "question": "In which anatomical areas is the periosteum absent?",
     "options": [
       "Diaphysis of long bones",
@@ -234,32 +242,33 @@
       "Articular surfaces of joints",
       "Epiphyseal plates"
     ],
-    "correctAnswer": "Articular surfaces of joints",
-    "topics": ["Anatomy", "Skeletal Anatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "The periosteum is absent at articular surfaces, which are covered by cartilage.",
     "long_explanation": "Periosteum covers bones except where articular cartilage exists, such as joint surfaces. These surfaces are instead covered by hyaline cartilage for friction-free movement.",
     "clinical_application": "Joint assessments should consider that articular cartilage—not periosteum—bears contact during movement.",
-    "tags": ["periosteum", "exceptions", "articular cartilage"],
-    "keywords": ["bone surfaces", "joint cartilage", "periosteum gaps"],
-    "synonyms": ["bone coverage exception"],
-    "category": "Bone Surface",
-    "subcategory": "Joint Structure",
+    "source_reference": "Clinically Oriented Anatomy",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Clinically Oriented Anatomy",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "exceptions", "articular cartilage"],
+    "keywords": ["bone surfaces", "joint cartilage", "periosteum gaps"],
+    "synonyms": ["bone coverage exception"]
   },
   {
     "id": "periosteum_009",
+    "correctAnswer": "It houses capillaries that nourish compact bone",
     "question": "How does the periosteum contribute to the vascularization of bone?",
     "options": [
       "It stores red blood cells",
@@ -267,32 +276,33 @@
       "It houses capillaries that nourish compact bone",
       "It contains lymphatic vessels only"
     ],
-    "correctAnswer": "It houses capillaries that nourish compact bone",
-    "topics": ["Anatomy", "Skeletal Circulation"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "Capillaries in the periosteum supply nutrients to the compact bone.",
     "long_explanation": "The periosteum is rich in blood vessels, particularly in the inner layer. These vessels penetrate into the compact bone, supporting its metabolic needs.",
     "clinical_application": "Maintaining healthy blood flow in periosteal layers supports post-injury bone healing and nutrient delivery.",
-    "tags": ["vascular supply", "periosteum", "bone blood flow"],
-    "keywords": ["nutrient arteries", "capillaries", "bone circulation"],
-    "synonyms": ["vascular bone covering"],
-    "category": "Vascular Anatomy",
-    "subcategory": "Periosteum Supply",
+    "source_reference": "Anatomy & Physiology: The Unity of Form and Function",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Anatomy & Physiology: The Unity of Form and Function",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["vascular supply", "periosteum", "bone blood flow"],
+    "keywords": ["nutrient arteries", "capillaries", "bone circulation"],
+    "synonyms": ["vascular bone covering"]
   },
   {
     "id": "periosteum_010",
+    "correctAnswer": "Sensory nociceptors",
     "question": "What nerve fibers are abundant in the periosteum?",
     "options": [
       "Sympathetic efferents",
@@ -300,28 +310,28 @@
       "Sensory nociceptors",
       "Parasympathetic fibers"
     ],
-    "correctAnswer": "Sensory nociceptors",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": [
-      "Systems",
-      "Muscle_fascia_and_connective_tissue",
-      "Bone_layers"
+    "topics": [
+      "anatomy",
+      "systems",
+      "skeletal_system",
+      "bone_layers",
+      "periosteum"
     ],
     "short_explanation": "Sensory nociceptors in the periosteum detect pain.",
     "long_explanation": "The periosteum is one of the most pain-sensitive structures in the body, containing abundant nociceptors that trigger sharp pain during injury or irritation.",
     "clinical_application": "Massage pressure must be adjusted over bony areas to avoid overstimulating these pain-sensitive nerve endings.",
-    "tags": ["periosteum", "pain", "nociceptors"],
-    "keywords": ["pain fibers", "sensory nerves", "bone sensitivity"],
-    "synonyms": ["bone pain receptors"],
-    "category": "Sensory System",
-    "subcategory": "Nociception",
+    "source_reference": "Neuroscience: Exploring the Brain",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
+    "question_type": "multiple_choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
-    "question_type": "multiple_choice",
-    "mblex_category": "Anatomy",
-    "source_reference": "Neuroscience: Exploring the Brain",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/systems/skeletal_system/bone_layers/periosteum.json",
-    "sourceFile": "periosteum"
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["periosteum", "pain", "nociceptors"],
+    "keywords": ["pain fibers", "sensory nerves", "bone sensitivity"],
+    "synonyms": ["bone pain receptors"]
   }
 ]
