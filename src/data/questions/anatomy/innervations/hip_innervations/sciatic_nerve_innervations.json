@@ -1,6 +1,7 @@
 [
   {
     "id": "sciatic_nerve_innervations_001",
+    "correctAnswer": "Common Fibular Nerve",
     "question": "Which nerve innervates the Biceps Femoris (short head)?",
     "options": [
       "Femoral Nerve",
@@ -8,18 +9,25 @@
       "Obturator Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Common Fibular Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Biceps Femoris (short head) is innervated by the Common Fibular Nerve.",
     "long_explanation": "The Common Fibular Nerve, a branch of the sciatic nerve system, provides motor innervation to the Biceps Femoris (short head), enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Common Fibular Nerve innervates the Biceps Femoris (short head) helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 98,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -42,27 +50,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Biceps Femoris (short head)"],
-    "relevance_score": 98,
-    "img": "/img/sciatic_nerve/biceps_femoris_(short_head).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Biceps Femoris (short head)"]
   },
   {
     "id": "sciatic_nerve_innervations_002",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Flexor Hallucis Longus?",
     "options": [
       "Femoral Nerve",
@@ -70,18 +62,25 @@
       "Tibial Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Flexor Hallucis Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Flexor Hallucis Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Flexor Hallucis Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -106,27 +105,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Flexor Hallucis Longus"],
-    "relevance_score": 99,
-    "img": "/img/sciatic_nerve/flexor_hallucis_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Flexor Hallucis Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_003",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Adductor Magnus (hamstring part)?",
     "options": [
       "Femoral Nerve",
@@ -134,18 +117,25 @@
       "Obturator Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Adductor Magnus (hamstring part) is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Adductor Magnus (hamstring part), enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Adductor Magnus (hamstring part) helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 86,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -170,27 +160,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Adductor Magnus (hamstring part)"],
-    "relevance_score": 86,
-    "img": "/img/sciatic_nerve/adductor_magnus_(hamstring_part).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Adductor Magnus (hamstring part)"]
   },
   {
     "id": "sciatic_nerve_innervations_004",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Brevis?",
     "options": [
       "Obturator Nerve",
@@ -198,18 +172,25 @@
       "Superior Gluteal Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 91,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -232,27 +213,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Brevis"],
-    "relevance_score": 91,
-    "img": "/img/sciatic_nerve/extensor_digitorum_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_005",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Tibialis Anterior?",
     "options": [
       "Obturator Nerve",
@@ -260,18 +225,25 @@
       "Inferior Gluteal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Anterior is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Anterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Tibialis Anterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 86,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -294,27 +266,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Anterior"],
-    "relevance_score": 86,
-    "img": "/img/sciatic_nerve/tibialis_anterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Anterior"]
   },
   {
     "id": "sciatic_nerve_innervations_006",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Semitendinosus?",
     "options": [
       "Obturator Nerve",
@@ -322,18 +278,25 @@
       "Inferior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Semitendinosus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Semitendinosus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Semitendinosus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -358,27 +321,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Semitendinosus"],
-    "relevance_score": 97,
-    "img": "/img/sciatic_nerve/semitendinosus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Semitendinosus"]
   },
   {
     "id": "sciatic_nerve_innervations_007",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Plantaris?",
     "options": [
       "Tibial Nerve",
@@ -386,18 +333,25 @@
       "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Plantaris is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Plantaris, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Plantaris helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 88,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -422,27 +376,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Plantaris"],
-    "relevance_score": 88,
-    "img": "/img/sciatic_nerve/plantaris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Plantaris"]
   },
   {
     "id": "sciatic_nerve_innervations_008",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Biceps Femoris (long head)?",
     "options": [
       "Obturator Nerve",
@@ -450,18 +388,25 @@
       "Inferior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Biceps Femoris (long head) is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Biceps Femoris (long head), enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Biceps Femoris (long head) helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -486,27 +431,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Biceps Femoris (long head)"],
-    "relevance_score": 87,
-    "img": "/img/sciatic_nerve/biceps_femoris_(long_head).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Biceps Femoris (long head)"]
   },
   {
     "id": "sciatic_nerve_innervations_009",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Longus?",
     "options": [
       "Femoral Nerve",
@@ -514,18 +443,25 @@
       "Inferior Gluteal Nerve",
       "Deep Peroneal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 98,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -550,27 +486,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Longus"],
-    "relevance_score": 98,
-    "img": "/img/sciatic_nerve/extensor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_010",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Semitendinosus?",
     "options": [
       "Obturator Nerve",
@@ -578,18 +498,25 @@
       "Tibial Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Semitendinosus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Semitendinosus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Semitendinosus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 100,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -614,27 +541,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Semitendinosus"],
-    "relevance_score": 100,
-    "img": "/img/sciatic_nerve/semitendinosus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Semitendinosus"]
   },
   {
     "id": "sciatic_nerve_innervations_011",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Hallucis Longus?",
     "options": [
       "Obturator Nerve",
@@ -642,18 +553,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Hallucis Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Hallucis Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Hallucis Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 95,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -678,27 +596,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Hallucis Longus"],
-    "relevance_score": 95,
-    "img": "/img/sciatic_nerve/extensor_hallucis_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Hallucis Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_012",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Gastrocnemius?",
     "options": [
       "Tibial Nerve",
@@ -706,18 +608,25 @@
       "Superior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Gastrocnemius is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Gastrocnemius, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Gastrocnemius helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 92,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -740,27 +649,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Gastrocnemius"],
-    "relevance_score": 92,
-    "img": "/img/sciatic_nerve/gastrocnemius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Gastrocnemius"]
   },
   {
     "id": "sciatic_nerve_innervations_013",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Plantaris?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -768,18 +661,25 @@
       "Tibial Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Plantaris is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Plantaris, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Plantaris helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 95,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -802,27 +702,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Plantaris"],
-    "relevance_score": 95,
-    "img": "/img/sciatic_nerve/plantaris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Plantaris"]
   },
   {
     "id": "sciatic_nerve_innervations_014",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Soleus?",
     "options": [
       "Obturator Nerve",
@@ -830,18 +714,25 @@
       "Tibial Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Soleus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Soleus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Soleus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -864,27 +755,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Soleus"],
-    "relevance_score": 94,
-    "img": "/img/sciatic_nerve/soleus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Soleus"]
   },
   {
     "id": "sciatic_nerve_innervations_015",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Semitendinosus?",
     "options": [
       "Superior Gluteal Nerve",
@@ -892,18 +767,25 @@
       "Obturator Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Semitendinosus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Semitendinosus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Semitendinosus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -926,27 +808,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Semitendinosus"],
-    "relevance_score": 89,
-    "img": "/img/sciatic_nerve/semitendinosus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Semitendinosus"]
   },
   {
     "id": "sciatic_nerve_innervations_016",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Tibialis Posterior?",
     "options": [
       "Superior Gluteal Nerve",
@@ -954,18 +820,25 @@
       "Inferior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Posterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Tibialis Posterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -988,27 +861,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Posterior"],
-    "relevance_score": 94,
-    "img": "/img/sciatic_nerve/tibialis_posterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Posterior"]
   },
   {
     "id": "sciatic_nerve_innervations_017",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Adductor Magnus (hamstring part)?",
     "options": [
       "Superior Gluteal Nerve",
@@ -1016,18 +873,25 @@
       "Inferior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Adductor Magnus (hamstring part) is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Adductor Magnus (hamstring part), enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Adductor Magnus (hamstring part) helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 85,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1050,27 +914,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Adductor Magnus (hamstring part)"],
-    "relevance_score": 85,
-    "img": "/img/sciatic_nerve/adductor_magnus_(hamstring_part).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Adductor Magnus (hamstring part)"]
   },
   {
     "id": "sciatic_nerve_innervations_018",
+    "correctAnswer": "Superficial Peroneal Nerve",
     "question": "Which nerve innervates the Peroneus Brevis?",
     "options": [
       "Superior Gluteal Nerve",
@@ -1078,18 +926,25 @@
       "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Superficial Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Peroneus Brevis is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Peroneus Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Superficial Peroneal Nerve innervates the Peroneus Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 95,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1110,27 +965,11 @@
       "nerve_femoral_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Peroneus Brevis"],
-    "relevance_score": 95,
-    "img": "/img/sciatic_nerve/peroneus_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Peroneus Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_019",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -1138,18 +977,25 @@
       "Superior Gluteal Nerve",
       "Deep Peroneal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 95,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1172,27 +1018,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Longus"],
-    "relevance_score": 95,
-    "img": "/img/sciatic_nerve/extensor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_020",
+    "correctAnswer": "Superficial Peroneal Nerve",
     "question": "Which nerve innervates the Peroneus Brevis?",
     "options": [
       "Obturator Nerve",
@@ -1200,18 +1030,25 @@
       "Inferior Gluteal Nerve",
       "Superficial Peroneal Nerve"
     ],
-    "correctAnswer": "Superficial Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Peroneus Brevis is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Peroneus Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Superficial Peroneal Nerve innervates the Peroneus Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 100,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1234,27 +1071,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Peroneus Brevis"],
-    "relevance_score": 100,
-    "img": "/img/sciatic_nerve/peroneus_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Peroneus Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_021",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Hallucis Brevis?",
     "options": [
       "Femoral Nerve",
@@ -1262,18 +1083,25 @@
       "Deep Peroneal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Hallucis Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Hallucis Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Hallucis Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1298,27 +1126,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Hallucis Brevis"],
-    "relevance_score": 87,
-    "img": "/img/sciatic_nerve/extensor_hallucis_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Hallucis Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_022",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -1326,18 +1138,25 @@
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1362,27 +1181,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Longus"],
-    "relevance_score": 89,
-    "img": "/img/sciatic_nerve/extensor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_023",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Tibialis Posterior?",
     "options": [
       "Tibial Nerve",
@@ -1390,18 +1193,25 @@
       "Obturator Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Posterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Tibialis Posterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1426,27 +1236,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Posterior"],
-    "relevance_score": 99,
-    "img": "/img/sciatic_nerve/tibialis_posterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Posterior"]
   },
   {
     "id": "sciatic_nerve_innervations_024",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Hallucis Brevis?",
     "options": [
       "Obturator Nerve",
@@ -1454,18 +1248,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Hallucis Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Hallucis Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Hallucis Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 93,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.450Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1490,27 +1291,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.450Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Hallucis Brevis"],
-    "relevance_score": 93,
-    "img": "/img/sciatic_nerve/extensor_hallucis_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Hallucis Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_025",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Hallucis Brevis?",
     "options": [
       "Superior Gluteal Nerve",
@@ -1518,18 +1303,25 @@
       "Femoral Nerve",
       "Deep Peroneal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Hallucis Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Hallucis Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Hallucis Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1552,27 +1344,11 @@
       "nerve_femoral_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Hallucis Brevis"],
-    "relevance_score": 94,
-    "img": "/img/sciatic_nerve/extensor_hallucis_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Hallucis Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_026",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Flexor Hallucis Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -1580,18 +1356,25 @@
       "Superior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Flexor Hallucis Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Flexor Hallucis Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Flexor Hallucis Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1614,27 +1397,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Flexor Hallucis Longus"],
-    "relevance_score": 94,
-    "img": "/img/sciatic_nerve/flexor_hallucis_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Flexor Hallucis Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_027",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Tibialis Posterior?",
     "options": [
       "Tibial Nerve",
@@ -1642,18 +1409,25 @@
       "Inferior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Posterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Tibialis Posterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 85,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1676,27 +1450,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Posterior"],
-    "relevance_score": 85,
-    "img": "/img/sciatic_nerve/tibialis_posterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Posterior"]
   },
   {
     "id": "sciatic_nerve_innervations_028",
+    "correctAnswer": "Superficial Peroneal Nerve",
     "question": "Which nerve innervates the Peroneus Brevis?",
     "options": [
       "Obturator Nerve",
@@ -1704,18 +1462,25 @@
       "Femoral Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Superficial Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Peroneus Brevis is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Peroneus Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Superficial Peroneal Nerve innervates the Peroneus Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 100,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1738,27 +1503,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Peroneus Brevis"],
-    "relevance_score": 100,
-    "img": "/img/sciatic_nerve/peroneus_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Peroneus Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_029",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Hallucis Brevis?",
     "options": [
       "Obturator Nerve",
@@ -1766,18 +1515,25 @@
       "Femoral Nerve",
       "Deep Peroneal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Hallucis Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Hallucis Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Hallucis Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 100,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1802,27 +1558,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Hallucis Brevis"],
-    "relevance_score": 100,
-    "img": "/img/sciatic_nerve/extensor_hallucis_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Hallucis Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_030",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Soleus?",
     "options": [
       "Obturator Nerve",
@@ -1830,18 +1570,25 @@
       "Femoral Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Soleus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Soleus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Soleus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 91,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1866,27 +1613,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Soleus"],
-    "relevance_score": 91,
-    "img": "/img/sciatic_nerve/soleus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Soleus"]
   },
   {
     "id": "sciatic_nerve_innervations_031",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Semitendinosus?",
     "options": [
       "Femoral Nerve",
@@ -1894,18 +1625,25 @@
       "Superior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Semitendinosus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Semitendinosus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Semitendinosus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1930,27 +1668,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Semitendinosus"],
-    "relevance_score": 89,
-    "img": "/img/sciatic_nerve/semitendinosus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Semitendinosus"]
   },
   {
     "id": "sciatic_nerve_innervations_032",
+    "correctAnswer": "Superficial Peroneal Nerve",
     "question": "Which nerve innervates the Peroneus Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -1958,18 +1680,25 @@
       "Superficial Peroneal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Superficial Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Peroneus Longus is innervated by the Superficial Peroneal Nerve.",
     "long_explanation": "The Superficial Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Peroneus Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Superficial Peroneal Nerve innervates the Peroneus Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 93,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -1992,27 +1721,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Peroneus Longus"],
-    "relevance_score": 93,
-    "img": "/img/sciatic_nerve/peroneus_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Peroneus Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_033",
+    "correctAnswer": "Common Fibular Nerve",
     "question": "Which nerve innervates the Biceps Femoris (short head)?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2020,18 +1733,25 @@
       "Superior Gluteal Nerve",
       "Common Fibular Nerve"
     ],
-    "correctAnswer": "Common Fibular Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Biceps Femoris (short head) is innervated by the Common Fibular Nerve.",
     "long_explanation": "The Common Fibular Nerve, a branch of the sciatic nerve system, provides motor innervation to the Biceps Femoris (short head), enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Common Fibular Nerve innervates the Biceps Femoris (short head) helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2052,27 +1772,11 @@
       "nerve_sciatic_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Biceps Femoris (short head)"],
-    "relevance_score": 87,
-    "img": "/img/sciatic_nerve/biceps_femoris_(short_head).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Biceps Femoris (short head)"]
   },
   {
     "id": "sciatic_nerve_innervations_034",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Popliteus?",
     "options": [
       "Tibial Nerve",
@@ -2080,18 +1784,25 @@
       "Inferior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Popliteus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Popliteus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Popliteus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2114,27 +1825,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Popliteus"],
-    "relevance_score": 94,
-    "img": "/img/sciatic_nerve/popliteus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Popliteus"]
   },
   {
     "id": "sciatic_nerve_innervations_035",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Flexor Digitorum Longus?",
     "options": [
       "Superior Gluteal Nerve",
@@ -2142,18 +1837,25 @@
       "Tibial Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Flexor Digitorum Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Flexor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Flexor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2178,27 +1880,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Flexor Digitorum Longus"],
-    "relevance_score": 94,
-    "img": "/img/sciatic_nerve/flexor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Flexor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_036",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Flexor Hallucis Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2206,18 +1892,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Flexor Hallucis Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Flexor Hallucis Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Flexor Hallucis Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 85,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2240,27 +1933,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Flexor Hallucis Longus"],
-    "relevance_score": 85,
-    "img": "/img/sciatic_nerve/flexor_hallucis_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Flexor Hallucis Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_037",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Brevis?",
     "options": [
       "Deep Peroneal Nerve",
@@ -2268,18 +1945,25 @@
       "Obturator Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 96,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2302,27 +1986,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Brevis"],
-    "relevance_score": 96,
-    "img": "/img/sciatic_nerve/extensor_digitorum_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_038",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Tibialis Posterior?",
     "options": [
       "Obturator Nerve",
@@ -2330,18 +1998,25 @@
       "Inferior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Posterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Tibialis Posterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 88,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2366,27 +2041,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Posterior"],
-    "relevance_score": 88,
-    "img": "/img/sciatic_nerve/tibialis_posterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Posterior"]
   },
   {
     "id": "sciatic_nerve_innervations_039",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Brevis?",
     "options": [
       "Obturator Nerve",
@@ -2394,18 +2053,25 @@
       "Deep Peroneal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2430,27 +2096,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Brevis"],
-    "relevance_score": 99,
-    "img": "/img/sciatic_nerve/extensor_digitorum_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_040",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Brevis?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2458,18 +2108,25 @@
       "Superior Gluteal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Brevis is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Brevis, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Brevis helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 93,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2492,27 +2149,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Brevis"],
-    "relevance_score": 93,
-    "img": "/img/sciatic_nerve/extensor_digitorum_brevis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Brevis"]
   },
   {
     "id": "sciatic_nerve_innervations_041",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Longus?",
     "options": [
       "Obturator Nerve",
@@ -2520,18 +2161,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 90,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2556,27 +2204,11 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Longus"],
-    "relevance_score": 90,
-    "img": "/img/sciatic_nerve/extensor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_042",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Tibialis Posterior?",
     "options": [
       "Tibial Nerve",
@@ -2584,18 +2216,25 @@
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Posterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Tibialis Posterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 90,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2620,27 +2259,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Posterior"],
-    "relevance_score": 90,
-    "img": "/img/sciatic_nerve/tibialis_posterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Posterior"]
   },
   {
     "id": "sciatic_nerve_innervations_043",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Tibialis Posterior?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2648,18 +2271,25 @@
       "Superior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Tibialis Posterior is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Tibialis Posterior, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Tibialis Posterior helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 96,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2682,27 +2312,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Tibialis Posterior"],
-    "relevance_score": 96,
-    "img": "/img/sciatic_nerve/tibialis_posterior.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Tibialis Posterior"]
   },
   {
     "id": "sciatic_nerve_innervations_044",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Gastrocnemius?",
     "options": [
       "Femoral Nerve",
@@ -2710,18 +2324,25 @@
       "Tibial Nerve",
       "Inferior Gluteal Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Gastrocnemius is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Gastrocnemius, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Gastrocnemius helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 100,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2744,27 +2365,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Gastrocnemius"],
-    "relevance_score": 100,
-    "img": "/img/sciatic_nerve/gastrocnemius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Gastrocnemius"]
   },
   {
     "id": "sciatic_nerve_innervations_045",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Longus?",
     "options": [
       "Femoral Nerve",
@@ -2772,18 +2377,25 @@
       "Deep Peroneal Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 88,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2806,27 +2418,11 @@
       "nerve_femoral_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Longus"],
-    "relevance_score": 88,
-    "img": "/img/sciatic_nerve/extensor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_046",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Soleus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2834,18 +2430,25 @@
       "Tibial Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Soleus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Soleus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Soleus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 98,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2868,27 +2471,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Soleus"],
-    "relevance_score": 98,
-    "img": "/img/sciatic_nerve/soleus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Soleus"]
   },
   {
     "id": "sciatic_nerve_innervations_047",
+    "correctAnswer": "Tibial Nerve",
     "question": "Which nerve innervates the Flexor Digitorum Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2896,18 +2483,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Tibial Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Flexor Digitorum Longus is innervated by the Tibial Nerve.",
     "long_explanation": "The Tibial Nerve, a branch of the sciatic nerve system, provides motor innervation to the Flexor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Tibial Nerve innervates the Flexor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 95,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2932,27 +2526,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Flexor Digitorum Longus"],
-    "relevance_score": 95,
-    "img": "/img/sciatic_nerve/flexor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Flexor Digitorum Longus"]
   },
   {
     "id": "sciatic_nerve_innervations_048",
+    "correctAnswer": "Deep Peroneal Nerve",
     "question": "Which nerve innervates the Extensor Digitorum Longus?",
     "options": [
       "Inferior Gluteal Nerve",
@@ -2960,18 +2538,25 @@
       "Deep Peroneal Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Deep Peroneal Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "sciatic_nerve_innervations"
+    ],
     "short_explanation": "The Extensor Digitorum Longus is innervated by the Deep Peroneal Nerve.",
     "long_explanation": "The Deep Peroneal Nerve, a branch of the sciatic nerve system, provides motor innervation to the Extensor Digitorum Longus, enabling actions essential for movement such as knee flexion, plantarflexion, or dorsiflexion. This understanding is critical for assessing lower limb nerve function.",
     "clinical_application": "In massage therapy or rehabilitation, knowing that the Deep Peroneal Nerve innervates the Extensor Digitorum Longus helps target specific regions when addressing nerve impingements, gait dysfunctions, or posterior chain imbalances.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Sciatic Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.103Z",
+    "updated_at": "2025-05-24T14:54:13.451Z",
     "tags": [
       "anatomy_nerve",
       "exam_assessment",
@@ -2994,23 +2579,6 @@
       "nerve_obturator_nerve",
       "nerve_peroneal_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.103Z",
-    "updated_at": "2025-05-24T14:54:13.451Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/sciatic_nerve_innervations",
-    "synonyms": ["Extensor Digitorum Longus"],
-    "relevance_score": 87,
-    "img": "/img/sciatic_nerve/extensor_digitorum_longus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/sciatic_nerve_innervations.json",
-    "sourceFile": "sciatic_nerve_innervations"
+    "synonyms": ["Extensor Digitorum Longus"]
   }
 ]

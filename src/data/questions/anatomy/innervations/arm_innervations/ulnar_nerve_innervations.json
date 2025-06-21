@@ -1,6 +1,7 @@
 [
   {
     "id": "ulnar_nerve_innervations_001",
+    "correctAnswer": "Flexor carpi ulnaris",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Biceps brachii",
@@ -8,14 +9,25 @@
       "Brachioradialis",
       "Pronator teres"
     ],
-    "correctAnswer": "Flexor carpi ulnaris",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "The ulnar nerve innervates the flexor carpi ulnaris in the forearm.",
     "long_explanation": "The ulnar nerve is responsible for innervating specific muscles in the forearm and hand, including the flexor carpi ulnaris and the medial half of the flexor digitorum profundus. These muscles allow for wrist flexion and ulnar deviation.",
+    "clinical_application": "Knowledge of ulnar nerve innervation helps therapists apply techniques that avoid nerve compression near the medial epicondyle of the elbow.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Anatomy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:05:05.241635",
+    "updated_at": "2025-05-31T18:05:05.241647",
     "tags": [
       "anatomy_nerve",
       "ulnar_nerve",
@@ -29,23 +41,11 @@
       "innervation",
       "massage"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-31T18:05:05.241635",
-    "updated_at": "2025-05-31T18:05:05.241647",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Knowledge of ulnar nerve innervation helps therapists apply techniques that avoid nerve compression near the medial epicondyle of the elbow.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_002",
+    "correctAnswer": "Adductor pollicis",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Supinator",
@@ -53,14 +53,25 @@
       "Brachialis",
       "Adductor pollicis"
     ],
-    "correctAnswer": "Adductor pollicis",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Adductor pollicis is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Adductor pollicis is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -75,23 +86,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_003",
+    "correctAnswer": "Flexor digitorum profundus (medial half)",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Supinator",
@@ -99,14 +98,25 @@
       "Flexor digitorum profundus (medial half)",
       "Brachialis"
     ],
-    "correctAnswer": "Flexor digitorum profundus (medial half)",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Flexor digitorum profundus (medial half) is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Flexor digitorum profundus (medial half) is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Flexor digitorum profundus (medial half) dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -121,23 +131,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Flexor digitorum profundus (medial half) dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_004",
+    "correctAnswer": "Palmar interossei",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Palmar interossei",
@@ -145,14 +143,25 @@
       "Flexor pollicis longus",
       "Supinator"
     ],
-    "correctAnswer": "Palmar interossei",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Palmar interossei is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Palmar interossei is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Palmar interossei dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -167,23 +176,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Palmar interossei dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_005",
+    "correctAnswer": "Adductor pollicis",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Adductor pollicis",
@@ -191,14 +188,25 @@
       "Supinator",
       "Flexor pollicis longus"
     ],
-    "correctAnswer": "Adductor pollicis",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Adductor pollicis is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Adductor pollicis is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -213,23 +221,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_006",
+    "correctAnswer": "Flexor carpi ulnaris",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Brachialis",
@@ -237,14 +233,25 @@
       "Flexor pollicis longus",
       "Flexor carpi ulnaris"
     ],
-    "correctAnswer": "Flexor carpi ulnaris",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Flexor carpi ulnaris is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Flexor carpi ulnaris is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Flexor carpi ulnaris dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -259,23 +266,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Flexor carpi ulnaris dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_007",
+    "correctAnswer": "Palmar interossei",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Supinator",
@@ -283,14 +278,25 @@
       "Flexor pollicis longus",
       "Brachialis"
     ],
-    "correctAnswer": "Palmar interossei",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Palmar interossei is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Palmar interossei is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Palmar interossei dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -305,23 +311,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Palmar interossei dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_008",
+    "correctAnswer": "Palmar interossei",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Brachialis",
@@ -329,14 +323,25 @@
       "Flexor pollicis longus",
       "Supinator"
     ],
-    "correctAnswer": "Palmar interossei",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Palmar interossei is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Palmar interossei is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Palmar interossei dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -351,23 +356,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Palmar interossei dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_009",
+    "correctAnswer": "Adductor pollicis",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Flexor pollicis longus",
@@ -375,14 +368,25 @@
       "Supinator",
       "Brachialis"
     ],
-    "correctAnswer": "Adductor pollicis",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Adductor pollicis is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Adductor pollicis is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -397,23 +401,11 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   },
   {
     "id": "ulnar_nerve_innervations_010",
+    "correctAnswer": "Adductor pollicis",
     "question": "Which of the following muscles is innervated by the ulnar nerve?",
     "options": [
       "Adductor pollicis",
@@ -421,14 +413,25 @@
       "Flexor pollicis longus",
       "Supinator"
     ],
-    "correctAnswer": "Adductor pollicis",
-    "topics": ["Anatomy", "Neuroanatomy"],
-    "subtopics": ["Innervations", "Arm_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "ulnar_nerve_innervations"
+    ],
     "short_explanation": "Adductor pollicis is innervated by the ulnar nerve.",
     "long_explanation": "The ulnar nerve innervates intrinsic hand muscles and parts of the forearm. Adductor pollicis is one of its motor targets, essential for fine motor control, grip strength, and finger movements.",
+    "clinical_application": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Nerve Innervations",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": "2025-05-31T18:04:07.858451",
+    "updated_at": "2025-05-31T18:04:07.858451",
     "tags": [
       "ulnar_nerve",
       "hand_muscles",
@@ -443,19 +446,6 @@
       "nerve anatomy",
       "massage therapy"
     ],
-    "mblex_category": "Anatomy and Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "created_at": "2025-05-31T18:04:07.858451",
-    "updated_at": "2025-05-31T18:04:07.858451",
-    "unit": "ulnar nerve innervation",
-    "applied_example": "Targeting the ulnar nerve path during massage can aid clients experiencing numbness or tingling in the 4th and 5th digits, especially in conditions like cubital tunnel syndrome involving Adductor pollicis dysfunction.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/arm_innervations/ulnar_nerve_innervations.json",
-    "sourceFile": "ulnar_nerve_innervations"
+    "synonyms": null
   }
 ]

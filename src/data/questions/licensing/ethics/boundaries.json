@@ -1,6 +1,7 @@
 [
   {
     "id": "boundaries_001",
+    "correctAnswer": "Permission given after full disclosure of treatment details",
     "question": "What is informed consent in massage therapy?",
     "options": [
       "Permission given automatically when the session begins",
@@ -8,12 +9,20 @@
       "Permission given after full disclosure of treatment details",
       "Verbal agreement during treatment"
     ],
-    "correctAnswer": "Permission given after full disclosure of treatment details",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "Informed consent is permission granted after explaining the treatment details.",
+    "long_explanation": "It ensures the client understands and agrees to the treatment plan, including risks, benefits, and boundaries before starting.",
+    "clinical_application": "This builds trust, promotes autonomy, and protects both therapist and client legally and ethically.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "technique_fulling",
       "ethics_consent",
@@ -28,25 +37,11 @@
       "ethics_informed_consent",
       "ethics_best_practices"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "Informed consent is permission granted after explaining the treatment details.",
-    "long_explanation": "It ensures the client understands and agrees to the treatment plan, including risks, benefits, and boundaries before starting.",
-    "clinical_application": "This builds trust, promotes autonomy, and protects both therapist and client legally and ethically.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_002",
+    "correctAnswer": "It protects both client and therapist legally and ethically",
     "question": "Why is informed consent important?",
     "options": [
       "It allows the therapist to work freely",
@@ -54,12 +49,20 @@
       "It avoids having to record SOAP notes",
       "It increases tips from clients"
     ],
-    "correctAnswer": "It protects both client and therapist legally and ethically",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "It protects both client and therapist by establishing mutual understanding.",
+    "long_explanation": "Informed consent helps maintain ethical standards, clear communication, and legal protection for both parties.",
+    "clinical_application": "It reinforces transparency and professionalism—especially important in sensitive or clinical massage settings.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "assessment_soap",
       "ethics_consent",
@@ -76,25 +79,11 @@
       "documentation_soap_notes",
       "ethics_protection"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "It protects both client and therapist by establishing mutual understanding.",
-    "long_explanation": "Informed consent helps maintain ethical standards, clear communication, and legal protection for both parties.",
-    "clinical_application": "It reinforces transparency and professionalism—especially important in sensitive or clinical massage settings.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_003",
+    "correctAnswer": "Before starting each session or making changes to treatment",
     "question": "When should a massage therapist obtain informed consent?",
     "options": [
       "Only for deep tissue work",
@@ -102,12 +91,20 @@
       "Before starting each session or making changes to treatment",
       "Only if the client asks questions"
     ],
-    "correctAnswer": "Before starting each session or making changes to treatment",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "Before every session or when changing the treatment plan.",
+    "long_explanation": "Consent is an ongoing process—not a one-time event—required for ethical care delivery.",
+    "clinical_application": "Ongoing consent allows adjustments in pressure or areas treated without breaching client comfort.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "modality_massage",
       "modality_deep_tissue",
@@ -128,25 +125,11 @@
       "ethics_informed_consent",
       "ethics_treatment_process"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "Before every session or when changing the treatment plan.",
-    "long_explanation": "Consent is an ongoing process—not a one-time event—required for ethical care delivery.",
-    "clinical_application": "Ongoing consent allows adjustments in pressure or areas treated without breaching client comfort.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_004",
+    "correctAnswer": "Client’s right to personal space and draping",
     "question": "Which of the following best describes a physical boundary?",
     "options": [
       "Client’s right to personal space and draping",
@@ -154,33 +137,27 @@
       "Listening carefully during sessions",
       "Sharing business cards with clients"
     ],
-    "correctAnswer": "Client’s right to personal space and draping",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Licensing",
-    "tags": ["ethics_boundary", "client", "boundary_physical"],
-    "keywords": ["ethics_boundary", "client", "boundary_physical"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
+    "topics": ["licensing", "ethics", "boundaries"],
     "short_explanation": "A physical boundary refers to respecting the client’s personal space and draping needs.",
     "long_explanation": "It includes ensuring appropriate coverage and requesting permission before touching or adjusting the client’s body.",
     "clinical_application": "Observing physical boundaries reduces risk of discomfort or misinterpretation during treatment.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
+    "tags": ["ethics_boundary", "client", "boundary_physical"],
+    "keywords": ["ethics_boundary", "client", "boundary_physical"],
+    "synonyms": null
   },
   {
     "id": "boundaries_005",
+    "correctAnswer": "Limiting emotional involvement and maintaining professionalism",
     "question": "What is an emotional boundary in massage therapy?",
     "options": [
       "Limiting emotional involvement and maintaining professionalism",
@@ -188,12 +165,20 @@
       "Using emotional music during sessions",
       "Avoiding eye contact with the client"
     ],
-    "correctAnswer": "Limiting emotional involvement and maintaining professionalism",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "Emotional boundaries involve staying professional and limiting personal involvement.",
+    "long_explanation": "Therapists must maintain objectivity, avoid over-identifying, and prevent emotional entanglement with clients.",
+    "clinical_application": "Clear emotional boundaries protect both the client’s safety and the therapist’s neutrality.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "anatomy_muscles",
       "ethics_boundary",
@@ -210,25 +195,11 @@
       "organ_eyes",
       "boundary_emotional"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "Emotional boundaries involve staying professional and limiting personal involvement.",
-    "long_explanation": "Therapists must maintain objectivity, avoid over-identifying, and prevent emotional entanglement with clients.",
-    "clinical_application": "Clear emotional boundaries protect both the client’s safety and the therapist’s neutrality.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_006",
+    "correctAnswer": "Respecting the client’s beliefs, thoughts, and opinions",
     "question": "What is an intellectual boundary?",
     "options": [
       "Respecting the client’s beliefs, thoughts, and opinions",
@@ -236,12 +207,20 @@
       "Focusing only on physical symptoms",
       "Performing techniques only with certification"
     ],
-    "correctAnswer": "Respecting the client’s beliefs, thoughts, and opinions",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "It’s the respect for a client’s thoughts, beliefs, and decisions.",
+    "long_explanation": "Massage therapists should never impose personal beliefs or disregard client input during sessions.",
+    "clinical_application": "Respect for diverse views promotes inclusivity and better client-practitioner rapport.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "ethics_boundary",
       "client",
@@ -254,25 +233,11 @@
       "concept_focuses",
       "boundary_intellectual"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "It’s the respect for a client’s thoughts, beliefs, and decisions.",
-    "long_explanation": "Massage therapists should never impose personal beliefs or disregard client input during sessions.",
-    "clinical_application": "Respect for diverse views promotes inclusivity and better client-practitioner rapport.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_007",
+    "correctAnswer": "Making suggestive comments during a session",
     "question": "Which of the following is an example of violating a sexual boundary?",
     "options": [
       "Working on the back with permission",
@@ -280,12 +245,20 @@
       "Making suggestive comments during a session",
       "Offering a water bottle after the session"
     ],
-    "correctAnswer": "Making suggestive comments during a session",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "Sexual boundary violations include inappropriate comments or behavior.",
+    "long_explanation": "Any suggestive remark or action undermines client safety and violates ethical standards.",
+    "clinical_application": "Massage therapy should remain safe, professional, and free from sexual innuendo or conduct.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "technique_pressure",
       "ethics_consent",
@@ -298,25 +271,11 @@
       "ethics_boundary",
       "boundary_sexual"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "Sexual boundary violations include inappropriate comments or behavior.",
-    "long_explanation": "Any suggestive remark or action undermines client safety and violates ethical standards.",
-    "clinical_application": "Massage therapy should remain safe, professional, and free from sexual innuendo or conduct.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_008",
+    "correctAnswer": "Pause and re-explain until the client clearly understands",
     "question": "How should a therapist respond if a client appears confused about the session plan?",
     "options": [
       "Begin treatment and clarify later",
@@ -324,33 +283,27 @@
       "Pause and re-explain until the client clearly understands",
       "Ask the client to sign a waiver"
     ],
-    "correctAnswer": "Pause and re-explain until the client clearly understands",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Licensing",
-    "tags": ["client", "plan_plan", "ethics_clarity"],
-    "keywords": ["client", "plan_plan", "ethics_clarity"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
+    "topics": ["licensing", "ethics", "boundaries"],
     "short_explanation": "Therapist should pause and clarify the session plan clearly.",
     "long_explanation": "Misunderstandings can be harmful. Clear, repeated explanation ensures consent and confidence.",
     "clinical_application": "Checking for understanding improves safety, trust, and outcomes.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
+    "tags": ["client", "plan_plan", "ethics_clarity"],
+    "keywords": ["client", "plan_plan", "ethics_clarity"],
+    "synonyms": null
   },
   {
     "id": "boundaries_009",
+    "correctAnswer": "Clear communication and consistent professional behavior",
     "question": "Which of the following ensures maintenance of ethical boundaries?",
     "options": [
       "Avoiding informed consent",
@@ -358,12 +311,20 @@
       "Clear communication and consistent professional behavior",
       "Treating clients like family"
     ],
-    "correctAnswer": "Clear communication and consistent professional behavior",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "Maintained through consistent communication and professionalism.",
+    "long_explanation": "Boundaries are reinforced with clear dialogue, reliable behavior, and respect for client autonomy.",
+    "clinical_application": "Maintaining boundaries reduces liability and enhances therapeutic effectiveness.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "ethics_consent",
       "ethics_boundary",
@@ -378,25 +339,11 @@
       "ethics_informed_consent",
       "ethics_maintenance"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "Maintained through consistent communication and professionalism.",
-    "long_explanation": "Boundaries are reinforced with clear dialogue, reliable behavior, and respect for client autonomy.",
-    "clinical_application": "Maintaining boundaries reduces liability and enhances therapeutic effectiveness.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   },
   {
     "id": "boundaries_010",
+    "correctAnswer": "Redirect the session and reinforce professional boundaries",
     "question": "What should a therapist do if a client begins disclosing deeply personal issues?",
     "options": [
       "Encourage deeper discussion to build trust",
@@ -404,12 +351,20 @@
       "Redirect the session and reinforce professional boundaries",
       "Give advice based on personal opinion"
     ],
-    "correctAnswer": "Redirect the session and reinforce professional boundaries",
-    "topics": ["Licensing"],
-    "subtopics": ["Ethics"],
-    "distractors": [],
+    "topics": ["licensing", "ethics", "boundaries"],
+    "short_explanation": "Redirect and reaffirm the professional focus of the session.",
+    "long_explanation": "Therapists are not counselors and must avoid dual roles, maintaining a supportive but clear scope of practice.",
+    "clinical_application": "Redirecting helps maintain emotional boundaries and prevents role confusion or ethical risk.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/licensing/ethics/boundaries.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Licensing",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.121Z",
+    "updated_at": "2025-05-24T14:54:13.465Z",
     "tags": [
       "ethics_boundary",
       "client",
@@ -422,21 +377,6 @@
       "boundary_emotional",
       "scope_of_practice"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.121Z",
-    "updated_at": "2025-05-24T14:54:13.465Z",
-    "unit": "boundaries questions",
-    "short_explanation": "Redirect and reaffirm the professional focus of the session.",
-    "long_explanation": "Therapists are not counselors and must avoid dual roles, maintaining a supportive but clear scope of practice.",
-    "clinical_application": "Redirecting helps maintain emotional boundaries and prevents role confusion or ethical risk.",
-    "main_topic": "licensing",
-    "filepath": "data/questions/licensing/ethics/boundaries.json",
-    "sourceFile": "boundaries"
+    "synonyms": null
   }
 ]

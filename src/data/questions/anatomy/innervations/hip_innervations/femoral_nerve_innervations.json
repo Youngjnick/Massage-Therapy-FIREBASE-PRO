@@ -1,6 +1,7 @@
 [
   {
     "id": "femoral_nerve_innervations_001",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Tibial Nerve",
@@ -8,18 +9,25 @@
       "Obturator Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -46,27 +54,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 94,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_002",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Tibial Nerve",
@@ -74,18 +66,25 @@
       "Sciatic Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 94,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -110,27 +109,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 94,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_003",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Sciatic Nerve",
@@ -138,18 +121,25 @@
       "Tibial Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 92,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -172,27 +162,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 92,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_004",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Tibial Nerve",
@@ -200,18 +174,25 @@
       "Obturator Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -238,27 +219,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 97,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_005",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Iliacus?",
     "options": [
       "Obturator Nerve",
@@ -266,18 +231,25 @@
       "Femoral Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Iliacus receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Iliacus, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Iliacus, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 93,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -302,27 +274,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Iliacus"],
-    "relevance_score": 93,
-    "img": "/img/femoral_nerve/iliacus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Iliacus"]
   },
   {
     "id": "femoral_nerve_innervations_006",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Tibial Nerve",
@@ -330,18 +286,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -366,27 +329,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 89,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_007",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Tibial Nerve",
@@ -394,18 +341,25 @@
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -430,27 +384,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 97,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_008",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Sciatic Nerve",
@@ -458,18 +396,25 @@
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -494,27 +439,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 87,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_009",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Tibial Nerve",
@@ -522,18 +451,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -560,27 +496,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 89,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_010",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Superior Gluteal Nerve",
@@ -588,18 +508,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 91,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -624,27 +551,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 91,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_011",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Superior Gluteal Nerve",
@@ -652,18 +563,25 @@
       "Tibial Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 91,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -686,27 +604,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 91,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_012",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Obturator Nerve",
@@ -714,18 +616,25 @@
       "Femoral Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -752,27 +661,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 99,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_013",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Femoral Nerve",
@@ -780,18 +673,25 @@
       "Tibial Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -816,27 +716,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 97,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_014",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Tibial Nerve",
@@ -844,18 +728,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -880,27 +771,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 99,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_015",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Femoral Nerve",
@@ -908,18 +783,25 @@
       "Tibial Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -944,27 +826,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 89,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_016",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Obturator Nerve",
@@ -972,18 +838,25 @@
       "Superior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 85,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1008,27 +881,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 85,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_017",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Femoral Nerve",
@@ -1036,18 +893,25 @@
       "Obturator Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 88,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1072,27 +936,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 88,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_018",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Obturator Nerve",
@@ -1100,18 +948,25 @@
       "Tibial Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1136,27 +991,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 89,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_019",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Sciatic Nerve",
@@ -1164,18 +1003,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 85,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1200,27 +1046,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 85,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_020",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Iliacus?",
     "options": [
       "Sciatic Nerve",
@@ -1228,18 +1058,25 @@
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Iliacus receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Iliacus, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Iliacus, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1264,27 +1101,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Iliacus"],
-    "relevance_score": 89,
-    "img": "/img/femoral_nerve/iliacus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Iliacus"]
   },
   {
     "id": "femoral_nerve_innervations_021",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Obturator Nerve",
@@ -1292,18 +1113,25 @@
       "Sciatic Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 95,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1328,27 +1156,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 95,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_022",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Femoral Nerve",
@@ -1356,18 +1168,25 @@
       "Obturator Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 93,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1390,27 +1209,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 93,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_023",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Tibial Nerve",
@@ -1418,18 +1221,25 @@
       "Sciatic Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1456,27 +1266,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 87,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_024",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Iliacus?",
     "options": [
       "Obturator Nerve",
@@ -1484,18 +1278,25 @@
       "Superior Gluteal Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Iliacus receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Iliacus, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Iliacus, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 89,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1520,27 +1321,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Iliacus"],
-    "relevance_score": 89,
-    "img": "/img/femoral_nerve/iliacus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Iliacus"]
   },
   {
     "id": "femoral_nerve_innervations_025",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Femoral Nerve",
@@ -1548,18 +1333,25 @@
       "Superior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 93,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1584,27 +1376,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 93,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_026",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Sciatic Nerve",
@@ -1612,18 +1388,25 @@
       "Superior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 86,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1648,27 +1431,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 86,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_027",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Intermedius?",
     "options": [
       "Sciatic Nerve",
@@ -1676,18 +1443,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Intermedius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Intermedius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Intermedius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 100,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1714,27 +1488,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Intermedius"],
-    "relevance_score": 100,
-    "img": "/img/femoral_nerve/vastus_intermedius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Intermedius"]
   },
   {
     "id": "femoral_nerve_innervations_028",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Obturator Nerve",
@@ -1742,18 +1500,25 @@
       "Sciatic Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1778,27 +1543,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 99,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_029",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Tibial Nerve",
@@ -1806,18 +1555,25 @@
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 91,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1842,27 +1598,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 91,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_030",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Lateralis?",
     "options": [
       "Femoral Nerve",
@@ -1870,18 +1610,25 @@
       "Tibial Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Lateralis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Lateralis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Lateralis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1906,27 +1653,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Lateralis"],
-    "relevance_score": 99,
-    "img": "/img/femoral_nerve/vastus_lateralis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Lateralis"]
   },
   {
     "id": "femoral_nerve_innervations_031",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Intermedius?",
     "options": [
       "Obturator Nerve",
@@ -1934,18 +1665,25 @@
       "Sciatic Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Intermedius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Intermedius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Intermedius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 86,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -1970,27 +1708,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Intermedius"],
-    "relevance_score": 86,
-    "img": "/img/femoral_nerve/vastus_intermedius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Intermedius"]
   },
   {
     "id": "femoral_nerve_innervations_032",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Intermedius?",
     "options": [
       "Superior Gluteal Nerve",
@@ -1998,18 +1720,25 @@
       "Tibial Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Intermedius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Intermedius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Intermedius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 88,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2034,27 +1763,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Intermedius"],
-    "relevance_score": 88,
-    "img": "/img/femoral_nerve/vastus_intermedius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Intermedius"]
   },
   {
     "id": "femoral_nerve_innervations_033",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Obturator Nerve",
@@ -2062,18 +1775,25 @@
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 96,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2098,27 +1818,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 96,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_034",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Sciatic Nerve",
@@ -2126,18 +1830,25 @@
       "Superior Gluteal Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2160,27 +1871,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 97,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_035",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Intermedius?",
     "options": [
       "Sciatic Nerve",
@@ -2188,18 +1883,25 @@
       "Obturator Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Intermedius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Intermedius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Intermedius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2224,27 +1926,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Intermedius"],
-    "relevance_score": 87,
-    "img": "/img/femoral_nerve/vastus_intermedius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Intermedius"]
   },
   {
     "id": "femoral_nerve_innervations_036",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Superior Gluteal Nerve",
@@ -2252,18 +1938,25 @@
       "Tibial Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 86,
+    "created_at": "2025-05-24T14:34:08.091Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2286,27 +1979,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.091Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 86,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_037",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Superior Gluteal Nerve",
@@ -2314,18 +1991,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 96,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2350,27 +2034,11 @@
       "nerve_femoral_nerve",
       "nerve_obturator_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 96,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_038",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Femoral Nerve",
@@ -2378,18 +2046,25 @@
       "Tibial Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 91,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2416,27 +2091,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 91,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_039",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Intermedius?",
     "options": [
       "Tibial Nerve",
@@ -2444,18 +2103,25 @@
       "Sciatic Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Intermedius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Intermedius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Intermedius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 85,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2480,27 +2146,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Intermedius"],
-    "relevance_score": 85,
-    "img": "/img/femoral_nerve/vastus_intermedius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Intermedius"]
   },
   {
     "id": "femoral_nerve_innervations_040",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Femoral Nerve",
@@ -2508,18 +2158,25 @@
       "Sciatic Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2544,27 +2201,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 99,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_041",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Tibial Nerve",
@@ -2572,18 +2213,25 @@
       "Obturator Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 87,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2610,27 +2258,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 87,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_042",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Articularis Genu?",
     "options": [
       "Superior Gluteal Nerve",
@@ -2638,18 +2270,25 @@
       "Femoral Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Articularis Genu receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Articularis Genu, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Articularis Genu, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 90,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2672,27 +2311,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Articularis Genu"],
-    "relevance_score": 90,
-    "img": "/img/femoral_nerve/articularis_genu.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Articularis Genu"]
   },
   {
     "id": "femoral_nerve_innervations_043",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Iliacus?",
     "options": [
       "Obturator Nerve",
@@ -2700,18 +2323,25 @@
       "Tibial Nerve",
       "Femoral Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Iliacus receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Iliacus, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Iliacus, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 86,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2736,27 +2366,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Iliacus"],
-    "relevance_score": 86,
-    "img": "/img/femoral_nerve/iliacus.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Iliacus"]
   },
   {
     "id": "femoral_nerve_innervations_044",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Superior Gluteal Nerve",
@@ -2764,18 +2378,25 @@
       "Femoral Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2800,27 +2421,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 97,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_045",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Superior Gluteal Nerve",
@@ -2828,18 +2433,25 @@
       "Femoral Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 98,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2864,27 +2476,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 98,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   },
   {
     "id": "femoral_nerve_innervations_046",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Sartorius?",
     "options": [
       "Tibial Nerve",
@@ -2892,18 +2488,25 @@
       "Femoral Nerve",
       "Obturator Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Sartorius receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Sartorius, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Sartorius, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 97,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2930,27 +2533,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Sartorius"],
-    "relevance_score": 97,
-    "img": "/img/femoral_nerve/sartorius.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Sartorius"]
   },
   {
     "id": "femoral_nerve_innervations_047",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Rectus Femoris?",
     "options": [
       "Sciatic Nerve",
@@ -2958,18 +2545,25 @@
       "Femoral Nerve",
       "Tibial Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Rectus Femoris receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Rectus Femoris, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Rectus Femoris, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 96,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -2994,27 +2588,11 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Rectus Femoris"],
-    "relevance_score": 96,
-    "img": "/img/femoral_nerve/rectus_femoris.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Rectus Femoris"]
   },
   {
     "id": "femoral_nerve_innervations_048",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Pectineus (partial, also obturator)?",
     "options": [
       "Tibial Nerve",
@@ -3022,18 +2600,25 @@
       "Femoral Nerve",
       "Sciatic Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Pectineus (partial, also obturator) receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Pectineus (partial, also obturator), contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Pectineus (partial, also obturator), leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 88,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -3060,27 +2645,11 @@
       "nerve_obturator_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Pectineus (partial, also obturator)"],
-    "relevance_score": 88,
-    "img": "/img/femoral_nerve/pectineus_(partial,_also_obturator).png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Pectineus (partial, also obturator)"]
   },
   {
     "id": "femoral_nerve_innervations_049",
+    "correctAnswer": "Femoral Nerve",
     "question": "Which nerve innervates the Vastus Medialis?",
     "options": [
       "Tibial Nerve",
@@ -3088,18 +2657,25 @@
       "Femoral Nerve",
       "Superior Gluteal Nerve"
     ],
-    "correctAnswer": "Femoral Nerve",
-    "topics": ["Anatomy"],
-    "subtopics": ["Innervations", "Hip_innervations"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "hip_innervations",
+      "femoral_nerve_innervations"
+    ],
     "short_explanation": "The Vastus Medialis receives motor innervation from the femoral nerve.",
     "long_explanation": "The femoral nerve originates from the lumbar plexus (L2-L4) and innervates the Vastus Medialis, contributing to hip flexion or knee extension depending on the specific muscle.",
     "clinical_application": "Injury to the femoral nerve may impair the function of the Vastus Medialis, leading to weakness in leg extension or difficulty walking. Therapists must be cautious in anterior thigh treatments.",
+    "source_reference": "Trail Guide to the Body by A. Biel",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Femoral Nerve",
+    "difficulty_adjustment": 0,
+    "relevance_score": 99,
+    "created_at": "2025-05-24T14:34:08.092Z",
+    "updated_at": "2025-05-24T14:54:13.436Z",
     "tags": [
       "anatomy_muscle",
       "anatomy_nerve",
@@ -3124,23 +2700,6 @@
       "nerve_femoral_nerve",
       "nerve_tibial_nerve"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body by A. Biel",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.092Z",
-    "updated_at": "2025-05-24T14:54:13.436Z",
-    "unit": "../../../src/data/questions/anatomy/muscle innervations/femoral_nerve_innervations",
-    "synonyms": ["Vastus Medialis"],
-    "relevance_score": 99,
-    "img": "/img/femoral_nerve/vastus_medialis.png",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/innervations/hip_innervations/femoral_nerve_innervations.json",
-    "sourceFile": "femoral_nerve_innervations"
+    "synonyms": ["Vastus Medialis"]
   }
 ]

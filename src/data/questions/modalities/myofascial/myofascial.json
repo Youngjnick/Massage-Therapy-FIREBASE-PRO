@@ -1,6 +1,7 @@
 [
   {
     "id": "myofascial_001",
+    "correctAnswer": "Release fascial restrictions and restore mobility",
     "question": "What is the primary goal of myofascial release therapy?",
     "options": [
       "Increase muscle size",
@@ -8,15 +9,20 @@
       "Release fascial restrictions and restore mobility",
       "Enhance cardiovascular endurance"
     ],
-    "correctAnswer": "Release fascial restrictions and restore mobility",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Myofascial release targets fascial restrictions to improve tissue mobility.",
     "long_explanation": "The goal of myofascial massage is to release restrictions in fascia — the connective tissue that surrounds muscles — to improve movement, reduce pain, and enhance circulation.",
     "clinical_application": "Commonly used for chronic pain, limited range of motion, or postural imbalances.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "modality_massage",
       "anatomy_fascia",
@@ -43,22 +49,11 @@
       "concept_targeted",
       "concept_restoration"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_002",
+    "correctAnswer": "Sustained and gentle",
     "question": "What type of pressure is typically used in myofascial release?",
     "options": [
       "Rhythmic and percussive",
@@ -66,15 +61,20 @@
       "Sustained and gentle",
       "Feather-light touch"
     ],
-    "correctAnswer": "Sustained and gentle",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Myofascial techniques involve gentle, sustained pressure.",
     "long_explanation": "Myofascial release relies on holding pressure into a restriction for 90 seconds or more to allow fascial tissues to soften and release. Sudden or deep force is typically avoided.",
     "clinical_application": "Effective for fibromyalgia, post-surgical recovery, and tension headaches.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "technique_pressure",
       "anatomy_tissues",
@@ -97,33 +97,27 @@
       "concept_tension",
       "population_post_surgical"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_003",
+    "correctAnswer": "Fascia",
     "question": "Which connective tissue is primarily targeted in myofascial massage?",
     "options": ["Tendon", "Cartilage", "Fascia", "Ligament"],
-    "correctAnswer": "Fascia",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Myofascial massage targets the fascia.",
     "long_explanation": "Fascia is a web of connective tissue that envelops muscles, organs, and bones. Restrictions or adhesions in this tissue can affect mobility and pain levels.",
     "clinical_application": "Releasing fascial adhesions may improve posture and reduce chronic tension.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "modality_massage",
       "modality_myofascial",
@@ -154,22 +148,11 @@
       "concept_targeted",
       "concept_tension"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_004",
+    "correctAnswer": "Pain and limited range of motion",
     "question": "What is a common result of restricted fascia?",
     "options": [
       "Improved coordination",
@@ -177,15 +160,20 @@
       "Pain and limited range of motion",
       "Increased reflex speed"
     ],
-    "correctAnswer": "Pain and limited range of motion",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Restricted fascia often causes pain and stiffness.",
     "long_explanation": "When fascia tightens or develops adhesions, it can pull on muscles and joints, reducing movement and causing discomfort or dysfunction.",
     "clinical_application": "Massage therapists use myofascial work to restore mobility and reduce compensatory strain.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "modality_massage",
       "modality_myofascial",
@@ -210,22 +198,11 @@
       "condition_discomfort",
       "concept_restoration"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_005",
+    "correctAnswer": "Chronic neck and back pain",
     "question": "Which condition is most likely to benefit from myofascial therapy?",
     "options": [
       "Acute fractures",
@@ -233,15 +210,20 @@
       "Chronic neck and back pain",
       "Vertigo"
     ],
-    "correctAnswer": "Chronic neck and back pain",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Chronic musculoskeletal pain often responds well to myofascial release.",
     "long_explanation": "Clients with ongoing pain, especially those with postural strain or old injuries, may benefit from the fascial decompression and realignment that myofascial techniques offer.",
     "clinical_application": "Frequently used for clients with fibromyalgia, scoliosis, or repetitive strain injuries.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "condition_pain",
       "condition_fibromyalgia",
@@ -260,22 +242,11 @@
       "modality_myofascial_release",
       "condition_injuries"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_006",
+    "correctAnswer": "Spontaneous body movement guided by internal tension release",
     "question": "What is a key principle behind myofascial unwinding?",
     "options": [
       "Guided breathing",
@@ -283,15 +254,20 @@
       "Spontaneous body movement guided by internal tension release",
       "Fast-paced stretching"
     ],
-    "correctAnswer": "Spontaneous body movement guided by internal tension release",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Myofascial unwinding involves spontaneous, guided motion.",
     "long_explanation": "Myofascial unwinding allows the client’s body to move instinctively as fascial restrictions are released. This technique is passive and often intuitive, guided by tissue response.",
     "clinical_application": "Used for clients with trauma, chronic holding patterns, or emotional tension.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "modality_myofascial",
       "anatomy_tissues",
@@ -310,22 +286,11 @@
       "client",
       "concept_tension"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_007",
+    "correctAnswer": "Postural re-education",
     "question": "Which technique is often paired with myofascial work to enhance results?",
     "options": [
       "Friction massage",
@@ -333,15 +298,20 @@
       "Postural re-education",
       "Vibration therapy"
     ],
-    "correctAnswer": "Postural re-education",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Postural awareness supports long-term fascial balance.",
     "long_explanation": "Postural re-education teaches clients to move and hold their bodies in ways that reduce stress on the fascia and support release outcomes.",
     "clinical_application": "Therapists may offer stretches or ergonomic tips post-session to maintain fascial mobility.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "modality_massage",
       "modality_myofascial",
@@ -362,22 +332,11 @@
       "concept_balance",
       "technique_friction_massage"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_008",
+    "correctAnswer": "Fascia is avascular and does not contract voluntarily",
     "question": "What distinguishes fascia from muscle tissue?",
     "options": [
       "Fascia is vascular and contracts like muscle",
@@ -385,15 +344,20 @@
       "Fascia is a type of nerve",
       "Fascia only exists in the legs"
     ],
-    "correctAnswer": "Fascia is avascular and does not contract voluntarily",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Fascia lacks its own blood supply and does not contract voluntarily.",
     "long_explanation": "Unlike muscle, fascia is a dense, fibrous tissue that doesn’t contract on command and has limited vascular supply. It plays a structural, rather than motor, role in the body.",
     "clinical_application": "Therapists must use sustained pressure and time to engage fascial release safely.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "anatomy_fascia",
       "anatomy_nerve",
@@ -410,22 +374,11 @@
       "anatomy_muscles",
       "ethics_boundary"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_009",
+    "correctAnswer": "A sticky or fibrous area limiting fascial glide",
     "question": "Which of the following best describes a fascial adhesion?",
     "options": [
       "A scar in the bone marrow",
@@ -433,15 +386,20 @@
       "A sticky or fibrous area limiting fascial glide",
       "A nerve entrapment in muscle"
     ],
-    "correctAnswer": "A sticky or fibrous area limiting fascial glide",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "Adhesions are sticky points in fascia that limit tissue movement.",
     "long_explanation": "Adhesions are areas where fascia sticks to adjacent layers, reducing its ability to slide. This can pull on muscles and contribute to pain or restriction.",
     "clinical_application": "Myofascial release techniques are designed to melt or break apart these adhesions gently.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "anatomy_fascia",
       "anatomy_nerve",
@@ -462,33 +420,27 @@
       "ethics_boundary",
       "modality_myofascial_release"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   },
   {
     "id": "myofascial_010",
+    "correctAnswer": "The abdomen",
     "question": "Which area of the body contains a high concentration of fascial layering?",
     "options": ["The eye", "The abdomen", "The ear", "The tongue"],
-    "correctAnswer": "The abdomen",
-    "topics": ["Modalities"],
-    "subtopics": ["Myofascial"],
-    "distractors": [],
+    "topics": ["modalities", "myofascial", "myofascial"],
     "short_explanation": "The abdomen has multiple fascial layers between organs and muscles.",
     "long_explanation": "The abdomen contains visceral, muscular, and superficial fascia that interlace to support organs and movement. Restriction here can affect posture and breathing.",
     "clinical_application": "Myofascial massage in the abdominal area may help with core tension, digestion, or breathing dysfunction.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/modalities/myofascial/myofascial.json",
+    "question_type": null,
     "difficulty": "moderate",
-    "category": "Modalities",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.140Z",
+    "updated_at": "2025-05-24T14:54:13.482Z",
     "tags": [
       "modality_massage",
       "modality_myofascial",
@@ -519,18 +471,6 @@
       "organ_ears",
       "organ_tongue"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.140Z",
-    "updated_at": "2025-05-24T14:54:13.482Z",
-    "unit": "../../../src/data/questions/modalities/myofascial/myofascial",
-    "main_topic": "modalities",
-    "filepath": "data/questions/modalities/myofascial/myofascial.json",
-    "sourceFile": "myofascial"
+    "synonyms": null
   }
 ]

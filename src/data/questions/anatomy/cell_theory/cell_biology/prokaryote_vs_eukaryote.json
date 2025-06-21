@@ -1,6 +1,7 @@
 [
   {
     "id": "prokaryote_vs_eukaryote_001",
+    "correctAnswer": "Lack of a nucleus",
     "question": "Which of the following is a defining characteristic of prokaryotic cells?",
     "options": [
       "Presence of a nucleus",
@@ -8,250 +9,257 @@
       "Lack of a nucleus",
       "Multicellular structure"
     ],
-    "correctAnswer": "Lack of a nucleus",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": [
-      "anatomy_membrane",
-      "anatomy_cells",
-      "anatomy_nucleus",
-      "anatomy_organelle",
-      "biology_prokaryotes",
-      "cell_structure",
-      "massage_microbiology"
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
     ],
-    "keywords": [
-      "anatomy_membrane",
-      "anatomy_cells",
-      "anatomy_nucleus",
-      "anatomy_organelle",
-      "biology_prokaryotes",
-      "cell_structure",
-      "massage_microbiology"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
     "short_explanation": "Prokaryotes lack a nucleus.",
     "long_explanation": "Prokaryotic cells do not have a membrane-bound nucleus. Their DNA floats freely in the cytoplasm within a region called the nucleoid.",
     "clinical_application": "Understanding prokaryotes helps massage therapists recognize microbial cell structures and basic infection control principles.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
+    "tags": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_nucleus",
+      "anatomy_organelle",
+      "biology_prokaryotes",
+      "cell_structure",
+      "massage_microbiology"
+    ],
+    "keywords": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_nucleus",
+      "anatomy_organelle",
+      "biology_prokaryotes",
+      "cell_structure",
+      "massage_microbiology"
+    ],
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_002",
+    "correctAnswer": "Eukaryotic",
     "question": "Which type of cell has linear DNA stored in a nucleus?",
     "options": ["Prokaryotic", "Eukaryotic", "Both", "Neither"],
-    "correctAnswer": "Eukaryotic",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": [
-      "anatomy_cells",
-      "anatomy_nucleus",
-      "anatomy_dna",
-      "biology_eukaryotic",
-      "biology_prokaryotes",
-      "dna_structure",
-      "nuclear_organization"
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
     ],
-    "keywords": [
-      "anatomy_cells",
-      "anatomy_nucleus",
-      "anatomy_dna",
-      "biology_eukaryotic",
-      "biology_prokaryotes",
-      "dna_structure",
-      "nuclear_organization"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
     "short_explanation": "Eukaryotic cells have linear DNA in a membrane-bound nucleus.",
     "long_explanation": "Eukaryotes store their DNA as organized chromosomes within a nucleus, unlike prokaryotes which have circular DNA.",
     "clinical_application": "This concept reinforces how genetic material behaves in tissue cells during recovery after massage.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
+    "tags": [
+      "anatomy_cells",
+      "anatomy_nucleus",
+      "anatomy_dna",
+      "biology_eukaryotic",
+      "biology_prokaryotes",
+      "dna_structure",
+      "nuclear_organization"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_nucleus",
+      "anatomy_dna",
+      "biology_eukaryotic",
+      "biology_prokaryotes",
+      "dna_structure",
+      "nuclear_organization"
+    ],
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_003",
+    "correctAnswer": "Prokaryotic",
     "question": "Bacteria are examples of which type of cell?",
     "options": ["Eukaryotic", "Animal", "Prokaryotic", "Plant"],
-    "correctAnswer": "Prokaryotic",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": [
-      "microbiology_bacteria",
-      "biology_eukaryotic",
-      "biology_prokaryotes",
-      "microbial_classification"
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
     ],
-    "keywords": [
-      "microbiology_bacteria",
-      "biology_eukaryotic",
-      "biology_prokaryotes",
-      "microbial_classification"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
     "short_explanation": "Bacteria are prokaryotic cells.",
     "long_explanation": "Bacteria lack a nucleus and organelles, fitting the definition of prokaryotes. They have circular DNA and reproduce asexually.",
     "clinical_application": "Massage therapists must understand bacteria as prokaryotes to apply hygiene standards and reduce infection risk.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
+    "tags": [
+      "microbiology_bacteria",
+      "biology_eukaryotic",
+      "biology_prokaryotes",
+      "microbial_classification"
+    ],
+    "keywords": [
+      "microbiology_bacteria",
+      "biology_eukaryotic",
+      "biology_prokaryotes",
+      "microbial_classification"
+    ],
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_004",
+    "correctAnswer": "Eukaryotic",
     "question": "Which type of cells contain mitochondria?",
     "options": ["Prokaryotic", "Eukaryotic", "Both", "Neither"],
-    "correctAnswer": "Eukaryotic",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": [
-      "anatomy_cells",
-      "biology_eukaryotic",
-      "biology_prokaryotes",
-      "mitochondria_function"
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
     ],
-    "keywords": [
-      "anatomy_cells",
-      "biology_eukaryotic",
-      "biology_prokaryotes",
-      "mitochondria_function"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
     "short_explanation": "Only eukaryotic cells contain mitochondria.",
     "long_explanation": "Mitochondria are organelles responsible for cellular respiration and ATP production. These are absent in prokaryotic cells.",
     "clinical_application": "Cellular energy production relates to muscle function and fatigue — critical for massage therapy outcomes.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
+    "tags": [
+      "anatomy_cells",
+      "biology_eukaryotic",
+      "biology_prokaryotes",
+      "mitochondria_function"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "biology_eukaryotic",
+      "biology_prokaryotes",
+      "mitochondria_function"
+    ],
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_005",
+    "correctAnswer": "Binary fission",
     "question": "Prokaryotes typically reproduce through:",
     "options": ["Binary fission", "Mitosis", "Meiosis", "Budding"],
-    "correctAnswer": "Binary fission",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": ["biology_prokaryotes", "binary_fission", "cell_division"],
-    "keywords": ["biology_prokaryotes", "binary_fission", "cell_division"],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
+    ],
     "short_explanation": "Prokaryotes reproduce via binary fission.",
     "long_explanation": "Binary fission is a simple, asexual process where the cell duplicates its DNA and divides into two identical cells.",
     "clinical_application": "Understanding this helps therapists grasp how quickly bacterial populations can grow on unclean surfaces.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
+    "tags": ["biology_prokaryotes", "binary_fission", "cell_division"],
+    "keywords": ["biology_prokaryotes", "binary_fission", "cell_division"],
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_006",
+    "correctAnswer": "All of the above",
     "question": "Eukaryotic cells are found in which of the following organisms?",
     "options": ["Fungi", "Plants", "Animals", "All of the above"],
-    "correctAnswer": "All of the above",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
-    "difficulty": "intermediate",
-    "category": "Cell Theory",
-    "tags": [
-      "anatomy_cells",
-      "microbiology_fungi",
-      "biology_eukaryotic",
-      "biology_organisms",
-      "organism_classification"
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
     ],
-    "keywords": [
-      "anatomy_cells",
-      "microbiology_fungi",
-      "biology_eukaryotic",
-      "biology_organisms",
-      "organism_classification"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
     "short_explanation": "Eukaryotic cells are found in fungi, plants, and animals.",
     "long_explanation": "All multicellular organisms are made of eukaryotic cells with nuclei and organelles that perform specialized functions.",
     "clinical_application": "This foundation is key for understanding tissue structures massage therapists work with every day.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
+    "tags": [
+      "anatomy_cells",
+      "microbiology_fungi",
+      "biology_eukaryotic",
+      "biology_organisms",
+      "organism_classification"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "microbiology_fungi",
+      "biology_eukaryotic",
+      "biology_organisms",
+      "organism_classification"
+    ],
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_007",
+    "correctAnswer": "Ribosomes",
     "question": "Which of these structures is found in both prokaryotes and eukaryotes?",
     "options": ["Nucleus", "Mitochondria", "Ribosomes", "Golgi apparatus"],
-    "correctAnswer": "Ribosomes",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
+    ],
+    "short_explanation": "Ribosomes are present in both prokaryotes and eukaryotes.",
+    "long_explanation": "Despite their simplicity, prokaryotes possess ribosomes, allowing them to synthesize proteins, though in a less complex way.",
+    "clinical_application": "Massage therapy influences protein production during healing, highlighting the importance of ribosomes in all cells.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
     "tags": [
       "anatomy_nucleus",
       "anatomy_ribosomes",
@@ -264,25 +272,11 @@
       "biology_prokaryotes",
       "shared_structures"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
-    "short_explanation": "Ribosomes are present in both prokaryotes and eukaryotes.",
-    "long_explanation": "Despite their simplicity, prokaryotes possess ribosomes, allowing them to synthesize proteins, though in a less complex way.",
-    "clinical_application": "Massage therapy influences protein production during healing, highlighting the importance of ribosomes in all cells.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_008",
+    "correctAnswer": "They have compartmentalized organelles",
     "question": "What distinguishes eukaryotic cells in terms of organization?",
     "options": [
       "They are always unicellular",
@@ -290,12 +284,25 @@
       "They have compartmentalized organelles",
       "They have circular DNA"
     ],
-    "correctAnswer": "They have compartmentalized organelles",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
+    ],
+    "short_explanation": "Eukaryotic cells have compartmentalized organelles.",
+    "long_explanation": "Their internal membranes create specialized environments for processes like protein synthesis and energy production.",
+    "clinical_application": "Cellular organization relates to how massage targets different tissue types with unique structures and responses.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
     "tags": [
       "anatomy_membrane",
       "anatomy_cells",
@@ -314,25 +321,11 @@
       "biology_eukaryotic",
       "compartmentalization"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
-    "short_explanation": "Eukaryotic cells have compartmentalized organelles.",
-    "long_explanation": "Their internal membranes create specialized environments for processes like protein synthesis and energy production.",
-    "clinical_application": "Cellular organization relates to how massage targets different tissue types with unique structures and responses.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_009",
+    "correctAnswer": "Circular",
     "question": "What shape is the DNA in most prokaryotes?",
     "options": [
       "Linear",
@@ -340,12 +333,25 @@
       "Circular",
       "Segmented"
     ],
-    "correctAnswer": "Circular",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
+    ],
+    "short_explanation": "Prokaryotes typically have circular DNA.",
+    "long_explanation": "Unlike the linear DNA in eukaryotes, prokaryotic DNA forms a loop, reflecting their simpler genome structure.",
+    "clinical_application": "Understanding DNA forms contributes to differentiating pathogens and body cells in therapeutic discussions.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
     "tags": [
       "anatomy_nucleus",
       "anatomy_dna",
@@ -358,25 +364,11 @@
       "biology_prokaryotes",
       "dna_shape"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
-    "short_explanation": "Prokaryotes typically have circular DNA.",
-    "long_explanation": "Unlike the linear DNA in eukaryotes, prokaryotic DNA forms a loop, reflecting their simpler genome structure.",
-    "clinical_application": "Understanding DNA forms contributes to differentiating pathogens and body cells in therapeutic discussions.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "synonyms": null
   },
   {
     "id": "prokaryote_vs_eukaryote_010",
+    "correctAnswer": "Endoplasmic reticulum",
     "question": "Which of the following structures is exclusive to eukaryotic cells?",
     "options": [
       "Cytoplasm",
@@ -384,12 +376,25 @@
       "Endoplasmic reticulum",
       "Ribosomes"
     ],
-    "correctAnswer": "Endoplasmic reticulum",
-    "topics": ["Anatomy", "Cell_theory"],
-    "subtopics": ["Cell_theory", "Cell_biology"],
-    "distractors": [],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "cell_biology",
+      "prokaryote_vs_eukaryote"
+    ],
+    "short_explanation": "The endoplasmic reticulum is found only in eukaryotes.",
+    "long_explanation": "This organelle helps produce proteins and lipids and is part of the endomembrane system found only in eukaryotic cells.",
+    "clinical_application": "Knowing specialized structures helps explain metabolic responses of tissues to massage and healing processes.",
+    "source_reference": null,
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
+    "question_type": null,
     "difficulty": "intermediate",
-    "category": "Cell Theory",
+    "difficulty_rating": null,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.114Z",
+    "updated_at": "2025-05-24T14:54:13.459Z",
     "tags": [
       "anatomy_membrane",
       "anatomy_cells",
@@ -406,21 +411,6 @@
       "biology_eukaryotic",
       "endomembrane_system"
     ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.114Z",
-    "updated_at": "2025-05-24T14:54:13.459Z",
-    "unit": "prokaryote vs eukaryote",
-    "short_explanation": "The endoplasmic reticulum is found only in eukaryotes.",
-    "long_explanation": "This organelle helps produce proteins and lipids and is part of the endomembrane system found only in eukaryotic cells.",
-    "clinical_application": "Knowing specialized structures helps explain metabolic responses of tissues to massage and healing processes.",
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/cell_theory/cell_biology/prokaryote_vs_eukaryote.json",
-    "sourceFile": "prokaryote_vs_eukaryote"
+    "synonyms": null
   }
 ]

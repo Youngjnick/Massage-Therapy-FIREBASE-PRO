@@ -1,20 +1,23 @@
 [
   {
     "id": "foot_flexors_001",
+    "correctAnswer": "8",
     "question": "How many intrinsic foot muscles are involved in toe flexion?",
     "options": ["2", "4", "6", "8"],
-    "correctAnswer": "8",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "foot_flexors"],
     "short_explanation": "There are 8 key intrinsic foot muscles that assist in toe flexion.",
     "long_explanation": "These include flexor digitorum brevis, flexor hallucis brevis, lumbricals, quadratus plantae, flexor digiti minimi brevis, and the dorsal and plantar interossei. Together, they help bend the toes and maintain arch integrity.",
     "clinical_application": "These muscles are important in balance and toe-off during gait. Weakness may contribute to claw toe or arch collapse.",
+    "source_reference": "Trail Guide to the Body, 6th ed. – Foot Muscles",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/foot_flexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Flexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.083Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "anatomy_muscles",
       "concept_balance",
@@ -35,25 +38,11 @@
       "muscle_flexor_digiti_minimi_brevis",
       "muscle_plantar_interossei"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed. – Foot Muscles",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.083Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_flexors",
-    "synonyms": ["toe muscles", "toe flexors"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/foot_flexors.json",
-    "sourceFile": "foot_flexors"
+    "synonyms": ["toe muscles", "toe flexors"]
   },
   {
     "id": "foot_flexors_002",
+    "correctAnswer": "Flexor hallucis longus",
     "question": "Which muscle flexes the big toe at the interphalangeal joint?",
     "options": [
       "Flexor digitorum longus",
@@ -61,18 +50,20 @@
       "Flexor hallucis longus",
       "Abductor hallucis"
     ],
-    "correctAnswer": "Flexor hallucis longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "foot_flexors"],
     "short_explanation": "Flexor hallucis longus flexes the big toe at the distal joint.",
     "long_explanation": "This long muscle runs along the posterior leg and inserts on the distal phalanx of the hallux, allowing powerful flexion during push-off in gait.",
     "clinical_application": "Injuries here are common in ballet dancers and sprinters with overuse of toe-off power.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/foot_flexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Flexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.083Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "anatomy_joint",
       "anatomy_muscles",
@@ -97,25 +88,11 @@
       "muscle_flexor_hallucis_brevis",
       "joint_joint"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.083Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_flexors",
-    "synonyms": ["FHL", "hallux flexor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/foot_flexors.json",
-    "sourceFile": "foot_flexors"
+    "synonyms": ["FHL", "hallux flexor"]
   },
   {
     "id": "foot_flexors_003",
+    "correctAnswer": "Quadratus plantae",
     "question": "Which muscle assists in flexing the toes and correcting oblique pull of flexor digitorum longus?",
     "options": [
       "Flexor hallucis brevis",
@@ -123,18 +100,20 @@
       "Lumbricals",
       "Extensor digitorum longus"
     ],
-    "correctAnswer": "Quadratus plantae",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "foot_flexors"],
     "short_explanation": "Quadratus plantae redirects pull of flexor digitorum longus to flex the toes straight.",
     "long_explanation": "It originates on the calcaneus and inserts onto the tendon of flexor digitorum longus, straightening the line of pull for more effective toe flexion.",
     "clinical_application": "Useful in maintaining proper foot mechanics in pronators or those with collapsing arches.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/foot_flexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Flexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.083Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "anatomy_muscles",
       "concept_originates",
@@ -157,25 +136,11 @@
       "muscle_flexor_digitorum_longus",
       "muscle_flexor_hallucis_brevis"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.083Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_flexors",
-    "synonyms": ["QP", "plantar foot muscle"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/foot_flexors.json",
-    "sourceFile": "foot_flexors"
+    "synonyms": ["QP", "plantar foot muscle"]
   },
   {
     "id": "foot_flexors_004",
+    "correctAnswer": "Tibialis anterior",
     "question": "Which of the following is NOT involved in toe flexion?",
     "options": [
       "Flexor digitorum brevis",
@@ -183,18 +148,20 @@
       "Tibialis anterior",
       "Lumbricals"
     ],
-    "correctAnswer": "Tibialis anterior",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "foot_flexors"],
     "short_explanation": "Tibialis anterior is a dorsiflexor, not a toe flexor.",
     "long_explanation": "Though located near the flexors in the leg, tibialis anterior extends the toes and dorsiflexes the foot. It does not contribute to toe curling or gripping.",
     "clinical_application": "Important to differentiate in gait assessments where dorsiflexion vs toe flexion can mimic similar movement.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/foot_flexors.json",
+    "question_type": "multiple choice",
     "difficulty": "easy",
     "difficulty_rating": 2,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Flexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.083Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "exam_assessment",
       "muscle_tibialis_anterior",
@@ -207,25 +174,11 @@
       "muscle_flexor_digitorum_brevis",
       "muscle_plantar_interossei"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.083Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_flexors",
-    "synonyms": ["non-flexor muscles"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/foot_flexors.json",
-    "sourceFile": "foot_flexors"
+    "synonyms": ["non-flexor muscles"]
   },
   {
     "id": "foot_flexors_005",
+    "correctAnswer": "Flexor digitorum longus",
     "question": "Which muscle flexes the lateral four toes at the distal interphalangeal joints?",
     "options": [
       "Flexor digitorum brevis",
@@ -233,18 +186,20 @@
       "Flexor digitorum longus",
       "Plantar interossei"
     ],
-    "correctAnswer": "Flexor digitorum longus",
-    "topics": ["Anatomy"],
-    "subtopics": ["Movement_groups"],
-    "distractors": [],
+    "topics": ["anatomy", "movement_groups", "arm", "foot_flexors"],
     "short_explanation": "Flexor digitorum longus inserts on distal phalanges of toes 2–5.",
     "long_explanation": "It passes behind the medial malleolus, then splits into four tendons to flex the DIP joints. It works with the quadratus plantae and lumbricals.",
     "clinical_application": "Overuse may contribute to plantar fasciitis or claw toe patterns.",
+    "source_reference": "Trail Guide to the Body, 6th ed.",
+    "sourceFile": null,
+    "filepath": "src/data/questions/anatomy/movement_groups/arm/foot_flexors.json",
+    "question_type": "multiple choice",
     "difficulty": "moderate",
     "difficulty_rating": 3,
-    "question_type": "multiple choice",
-    "category": "Anatomy & Physiology",
-    "subcategory": "Foot Flexors",
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.083Z",
+    "updated_at": "2025-05-24T14:54:13.426Z",
     "tags": [
       "anatomy_muscles",
       "concept_insertion",
@@ -263,21 +218,6 @@
       "muscle_flexor_digitorum_brevis",
       "muscle_plantar_interossei"
     ],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Trail Guide to the Body, 6th ed.",
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.083Z",
-    "updated_at": "2025-05-24T14:54:13.426Z",
-    "unit": "../../../src/data/questions/anatomy/movement groups/foot_flexors",
-    "synonyms": ["FDL", "toe flexor"],
-    "main_topic": "anatomy",
-    "filepath": "data/questions/anatomy/movement_groups/arm/foot_flexors.json",
-    "sourceFile": "foot_flexors"
+    "synonyms": ["FDL", "toe flexor"]
   }
 ]
