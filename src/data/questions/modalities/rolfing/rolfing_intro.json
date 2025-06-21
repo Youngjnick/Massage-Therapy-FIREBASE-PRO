@@ -1,17 +1,18 @@
 [
   {
-    "id": "Rolfing Intro 001",
+    "id": "rolfing_intro_001",
     "question": "What is the primary goal of Rolfing Structural Integration?",
-    "answers": [
+    "options": [
       "To relieve joint dislocations",
       "To align the body in gravity by manipulating fascia",
       "To enhance lymphatic flow",
       "To reduce emotional tension only"
     ],
-    "correct": 1,
+    "correctAnswer": "To align the body in gravity by manipulating fascia",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_rolfing",
@@ -53,37 +54,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 1,
-    "text": "What is the primary goal of Rolfing Structural Integration?",
-    "options": [
-      "To relieve joint dislocations",
-      "To align the body in gravity by manipulating fascia",
-      "To enhance lymphatic flow",
-      "To reduce emotional tension only"
-    ],
-    "correctAnswer": "To align the body in gravity by manipulating fascia",
-    "abcd": [
-      "A. To relieve joint dislocations",
-      "B. To align the body in gravity by manipulating fascia",
-      "C. To enhance lymphatic flow",
-      "D. To reduce emotional tension only"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 002",
+    "id": "rolfing_intro_002",
     "question": "Who developed Rolfing Structural Integration?",
-    "answers": [
+    "options": [
       "Emil Vodder",
       "Janet Travell",
       "Dr. Ida Rolf",
       "John Upledger"
     ],
-    "correct": 2,
+    "correctAnswer": "Dr. Ida Rolf",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_rolfing",
@@ -117,32 +105,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 2,
-    "text": "Who developed Rolfing Structural Integration?",
-    "options": [
-      "Emil Vodder",
-      "Janet Travell",
-      "Dr. Ida Rolf",
-      "John Upledger"
-    ],
-    "correctAnswer": "Dr. Ida Rolf",
-    "abcd": [
-      "A. Emil Vodder",
-      "B. Janet Travell",
-      "C. Dr. Ida Rolf",
-      "D. John Upledger"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 003",
+    "id": "rolfing_intro_003",
     "question": "Which connective tissue does Rolfing primarily target?",
-    "answers": ["Tendons", "Ligaments", "Fascia", "Cartilage"],
-    "correct": 2,
+    "options": ["Tendons", "Ligaments", "Fascia", "Cartilage"],
+    "correctAnswer": "Fascia",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_rolfing",
@@ -176,27 +151,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 3,
-    "text": "Which connective tissue does Rolfing primarily target?",
-    "options": ["Tendons", "Ligaments", "Fascia", "Cartilage"],
-    "correctAnswer": "Fascia",
-    "abcd": ["A. Tendons", "B. Ligaments", "C. Fascia", "D. Cartilage"],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 004",
+    "id": "rolfing_intro_004",
     "question": "Rolfing differs from traditional massage by focusing on:",
-    "answers": [
+    "options": [
       "Quick relaxation",
       "Energy meridians",
       "Long-term postural and structural changes",
       "Temporary stress relief"
     ],
-    "correct": 2,
+    "correctAnswer": "Long-term postural and structural changes",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_massage",
@@ -234,32 +206,19 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 4,
-    "text": "Rolfing differs from traditional massage by focusing on:",
-    "options": [
-      "Quick relaxation",
-      "Energy meridians",
-      "Long-term postural and structural changes",
-      "Temporary stress relief"
-    ],
-    "correctAnswer": "Long-term postural and structural changes",
-    "abcd": [
-      "A. Quick relaxation",
-      "B. Energy meridians",
-      "C. Long-term postural and structural changes",
-      "D. Temporary stress relief"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 005",
+    "id": "rolfing_intro_005",
     "question": "How many sessions are typically involved in the traditional Rolfing series?",
-    "answers": ["5", "7", "10", "12"],
-    "correct": 2,
+    "options": ["5", "7", "10", "12"],
+    "correctAnswer": "10",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_rolfing"],
     "keywords": ["modality_rolfing"],
@@ -283,27 +242,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 5,
-    "text": "How many sessions are typically involved in the traditional Rolfing series?",
-    "options": ["5", "7", "10", "12"],
-    "correctAnswer": "10",
-    "abcd": ["A. 5", "B. 7", "C. 10", "D. 12"],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 006",
+    "id": "rolfing_intro_006",
     "question": "What was Dr. Ida Rolf's academic background?",
-    "answers": [
+    "options": [
       "Chiropractic and acupuncture",
       "Physics and biochemistry",
       "Biochemistry and mathematics",
       "Psychology and neurology"
     ],
-    "correct": 2,
+    "correctAnswer": "Biochemistry and mathematics",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["founder_ida_rolf"],
     "keywords": ["founder_ida_rolf"],
@@ -327,37 +283,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 6,
-    "text": "What was Dr. Ida Rolf's academic background?",
-    "options": [
-      "Chiropractic and acupuncture",
-      "Physics and biochemistry",
-      "Biochemistry and mathematics",
-      "Psychology and neurology"
-    ],
-    "correctAnswer": "Biochemistry and mathematics",
-    "abcd": [
-      "A. Chiropractic and acupuncture",
-      "B. Physics and biochemistry",
-      "C. Biochemistry and mathematics",
-      "D. Psychology and neurology"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 007",
+    "id": "rolfing_intro_007",
     "question": "In Rolfing, improved alignment of the body is believed to result in:",
-    "answers": [
+    "options": [
       "Increased muscle size",
       "Reduced circulation",
       "Improved energy efficiency and function",
       "Less skin elasticity"
     ],
-    "correct": 2,
+    "correctAnswer": "Improved energy efficiency and function",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_rolfing", "anatomy_muscles", "organ_skin"],
     "keywords": ["modality_rolfing", "anatomy_muscles", "organ_skin"],
@@ -381,37 +324,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 7,
-    "text": "In Rolfing, improved alignment of the body is believed to result in:",
-    "options": [
-      "Increased muscle size",
-      "Reduced circulation",
-      "Improved energy efficiency and function",
-      "Less skin elasticity"
-    ],
-    "correctAnswer": "Improved energy efficiency and function",
-    "abcd": [
-      "A. Increased muscle size",
-      "B. Reduced circulation",
-      "C. Improved energy efficiency and function",
-      "D. Less skin elasticity"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 008",
+    "id": "rolfing_intro_008",
     "question": "Which of the following best describes the intensity of a typical Rolfing session?",
-    "answers": [
+    "options": [
       "Always gentle and soothing",
       "Variable; can be deep and intense",
       "Only light and superficial",
       "Rhythmic percussion techniques"
     ],
-    "correct": 1,
+    "correctAnswer": "Variable; can be deep and intense",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_rolfing", "purpose_relaxation", "concept_soothing"],
     "keywords": ["modality_rolfing", "purpose_relaxation", "concept_soothing"],
@@ -435,37 +365,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 8,
-    "text": "Which of the following best describes the intensity of a typical Rolfing session?",
-    "options": [
-      "Always gentle and soothing",
-      "Variable; can be deep and intense",
-      "Only light and superficial",
-      "Rhythmic percussion techniques"
-    ],
-    "correctAnswer": "Variable; can be deep and intense",
-    "abcd": [
-      "A. Always gentle and soothing",
-      "B. Variable; can be deep and intense",
-      "C. Only light and superficial",
-      "D. Rhythmic percussion techniques"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 009",
+    "id": "rolfing_intro_009",
     "question": "What is the primary focus of the first few sessions of the Rolfing 10-series?",
-    "answers": [
+    "options": [
       "Integrating pelvic and spinal function",
       "Addressing fascial restrictions in the arms",
       "Balancing superficial layers of fascia",
       "Mobilizing the diaphragm and thoracic spine"
     ],
-    "correct": 2,
+    "correctAnswer": "Balancing superficial layers of fascia",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_rolfing",
@@ -503,37 +420,24 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 9,
-    "text": "What is the primary focus of the first few sessions of the Rolfing 10-series?",
-    "options": [
-      "Integrating pelvic and spinal function",
-      "Addressing fascial restrictions in the arms",
-      "Balancing superficial layers of fascia",
-      "Mobilizing the diaphragm and thoracic spine"
-    ],
-    "correctAnswer": "Balancing superficial layers of fascia",
-    "abcd": [
-      "A. Integrating pelvic and spinal function",
-      "B. Addressing fascial restrictions in the arms",
-      "C. Balancing superficial layers of fascia",
-      "D. Mobilizing the diaphragm and thoracic spine"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   },
   {
-    "id": "Rolfing Intro 010",
+    "id": "rolfing_intro_010",
     "question": "Which professional institution certifies Rolfing practitioners?",
-    "answers": [
+    "options": [
       "Rolf Institute of Structural Integration",
       "Massage Therapy Foundation",
       "American Board of Manual Therapies",
       "Structural Medicine Academy"
     ],
-    "correct": 0,
+    "correctAnswer": "Rolf Institute of Structural Integration",
+    "topics": ["Modalities"],
+    "subtopics": ["Rolfing"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "modality_rolfing",
@@ -567,22 +471,8 @@
     "relevance_score": 5,
     "synonyms": [],
     "variant": 10,
-    "text": "Which professional institution certifies Rolfing practitioners?",
-    "options": [
-      "Rolf Institute of Structural Integration",
-      "Massage Therapy Foundation",
-      "American Board of Manual Therapies",
-      "Structural Medicine Academy"
-    ],
-    "correctAnswer": "Rolf Institute of Structural Integration",
-    "abcd": [
-      "A. Rolf Institute of Structural Integration",
-      "B. Massage Therapy Foundation",
-      "C. American Board of Manual Therapies",
-      "D. Structural Medicine Academy"
-    ],
     "main_topic": "modalities",
-    "subtopic": "rolfing",
-    "filename": "rolfing_intro.json"
+    "filepath": "data/questions/modalities/rolfing/rolfing_intro.json",
+    "sourceFile": "rolfing_intro"
   }
 ]

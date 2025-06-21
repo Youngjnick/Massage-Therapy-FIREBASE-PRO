@@ -1,25 +1,7 @@
 [
   {
-    "id": "exocrine_001",
+    "id": "exocrine_system_001",
     "question": "Which of the following is an example of an exocrine gland?",
-    "answers": [
-      "Pituitary gland",
-      "Sweat gland",
-      "Thyroid gland",
-      "Pineal gland"
-    ],
-    "correct": 1,
-    "short_explanation": "Sweat glands secrete via ducts to the skin surface.",
-    "long_explanation": "Exocrine glands release substances through ducts to specific locations. Sweat glands release perspiration through ducts onto the skin to regulate temperature.",
-    "applied_example": "Understanding sweat glands can help massage therapists support detoxification and improve circulation during treatment.",
-    "difficulty": "easy",
-    "category": "Exocrine System",
-    "topic": "Sweat Glands",
-    "tags": ["sweat", "exocrine", "glands"],
-    "keywords": ["ducts", "skin", "perspiration"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Tortora: Principles of Anatomy and Physiology",
-    "text": "Which of the following is an example of an exocrine gland?",
     "options": [
       "Pituitary gland",
       "Sweat gland",
@@ -27,60 +9,44 @@
       "Pineal gland"
     ],
     "correctAnswer": "Sweat gland",
-    "abcd": [
-      "A. Pituitary gland",
-      "B. Sweat gland",
-      "C. Thyroid gland",
-      "D. Pineal gland"
-    ],
+    "topics": ["Anatomy", "Sweat Glands"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Sweat glands secrete via ducts to the skin surface.",
+    "long_explanation": "Exocrine glands release substances through ducts to specific locations. Sweat glands release perspiration through ducts onto the skin to regulate temperature.",
+    "applied_example": "Understanding sweat glands can help massage therapists support detoxification and improve circulation during treatment.",
+    "difficulty": "easy",
+    "category": "Exocrine System",
+    "tags": ["sweat", "exocrine", "glands"],
+    "keywords": ["ducts", "skin", "perspiration"],
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Tortora: Principles of Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
   },
   {
-    "id": "exocrine_002",
+    "id": "exocrine_system_002",
     "question": "Which gland secretes digestive enzymes into the small intestine?",
-    "answers": ["Liver", "Pancreas", "Thyroid", "Adrenal gland"],
-    "correct": 1,
+    "options": ["Liver", "Pancreas", "Thyroid", "Adrenal gland"],
+    "correctAnswer": "Pancreas",
+    "topics": ["Anatomy", "Pancreas"],
+    "subtopics": ["Systems"],
     "short_explanation": "The exocrine pancreas secretes digestive enzymes into the duodenum.",
     "long_explanation": "The pancreas has both endocrine and exocrine roles. Its exocrine portion secretes amylase, lipase, and proteases via the pancreatic duct into the small intestine.",
     "applied_example": "A client with pancreatic enzyme insufficiency may have digestive issues requiring nutritional support alongside massage care.",
     "difficulty": "medium",
     "category": "Exocrine System",
-    "topic": "Pancreas",
     "tags": ["pancreas", "enzymes", "digestion"],
     "keywords": ["amylase", "lipase", "duct system"],
     "mblex_category": "Anatomy & Physiology",
     "source_reference": "Guyton & Hall: Medical Physiology",
-    "text": "Which gland secretes digestive enzymes into the small intestine?",
-    "options": ["Liver", "Pancreas", "Thyroid", "Adrenal gland"],
-    "correctAnswer": "Pancreas",
-    "abcd": ["A. Liver", "B. Pancreas", "C. Thyroid", "D. Adrenal gland"],
     "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
   },
   {
-    "id": "exocrine_003",
+    "id": "exocrine_system_003",
     "question": "What is the function of sebaceous glands?",
-    "answers": [
-      "Secrete sweat for thermoregulation",
-      "Secrete hormones into the bloodstream",
-      "Secrete oil for skin and hair lubrication",
-      "Filter waste from the bloodstream"
-    ],
-    "correct": 2,
-    "short_explanation": "Sebaceous glands produce sebum to lubricate skin and hair.",
-    "long_explanation": "Sebaceous glands are exocrine glands that secrete sebum through hair follicles. This oily substance prevents drying and provides a barrier against microbes.",
-    "applied_example": "Massage therapists should avoid over-manipulating sebaceous areas in clients with acne or dermatitis.",
-    "difficulty": "easy",
-    "category": "Exocrine System",
-    "topic": "Sebaceous Glands",
-    "tags": ["sebum", "skin", "lubrication"],
-    "keywords": ["oil glands", "hair follicles", "dermis"],
-    "mblex_category": "Integumentary System",
-    "source_reference": "Marieb: Human Anatomy & Physiology",
-    "text": "What is the function of sebaceous glands?",
     "options": [
       "Secrete sweat for thermoregulation",
       "Secrete hormones into the bloodstream",
@@ -88,37 +54,24 @@
       "Filter waste from the bloodstream"
     ],
     "correctAnswer": "Secrete oil for skin and hair lubrication",
-    "abcd": [
-      "A. Secrete sweat for thermoregulation",
-      "B. Secrete hormones into the bloodstream",
-      "C. Secrete oil for skin and hair lubrication",
-      "D. Filter waste from the bloodstream"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
-  },
-  {
-    "id": "exocrine_004",
-    "question": "Which of the following is NOT an exocrine gland?",
-    "answers": [
-      "Mammary gland",
-      "Salivary gland",
-      "Adrenal gland",
-      "Sweat gland"
-    ],
-    "correct": 2,
-    "short_explanation": "The adrenal gland is endocrine, not exocrine.",
-    "long_explanation": "Exocrine glands have ducts and secrete to surfaces. The adrenal gland is endocrine and releases hormones like cortisol and adrenaline into the bloodstream.",
-    "applied_example": "Distinguishing between endocrine and exocrine helps therapists understand how internal physiology affects external symptoms.",
+    "topics": ["Anatomy", "Sebaceous Glands"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Sebaceous glands produce sebum to lubricate skin and hair.",
+    "long_explanation": "Sebaceous glands are exocrine glands that secrete sebum through hair follicles. This oily substance prevents drying and provides a barrier against microbes.",
+    "applied_example": "Massage therapists should avoid over-manipulating sebaceous areas in clients with acne or dermatitis.",
     "difficulty": "easy",
     "category": "Exocrine System",
-    "topic": "Gland Types",
-    "tags": ["glands", "classification", "endocrine vs exocrine"],
-    "keywords": ["adrenal", "cortisol", "ductless"],
-    "mblex_category": "Physiology",
-    "source_reference": "Silverthorn: Human Physiology",
-    "text": "Which of the following is NOT an exocrine gland?",
+    "tags": ["sebum", "skin", "lubrication"],
+    "keywords": ["oil glands", "hair follicles", "dermis"],
+    "mblex_category": "Integumentary System",
+    "source_reference": "Marieb: Human Anatomy & Physiology",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
+  },
+  {
+    "id": "exocrine_system_004",
+    "question": "Which of the following is NOT an exocrine gland?",
     "options": [
       "Mammary gland",
       "Salivary gland",
@@ -126,37 +79,24 @@
       "Sweat gland"
     ],
     "correctAnswer": "Adrenal gland",
-    "abcd": [
-      "A. Mammary gland",
-      "B. Salivary gland",
-      "C. Adrenal gland",
-      "D. Sweat gland"
-    ],
+    "topics": ["Anatomy", "Gland Types"],
+    "subtopics": ["Systems"],
+    "short_explanation": "The adrenal gland is endocrine, not exocrine.",
+    "long_explanation": "Exocrine glands have ducts and secrete to surfaces. The adrenal gland is endocrine and releases hormones like cortisol and adrenaline into the bloodstream.",
+    "applied_example": "Distinguishing between endocrine and exocrine helps therapists understand how internal physiology affects external symptoms.",
+    "difficulty": "easy",
+    "category": "Exocrine System",
+    "tags": ["glands", "classification", "endocrine vs exocrine"],
+    "keywords": ["adrenal", "cortisol", "ductless"],
+    "mblex_category": "Physiology",
+    "source_reference": "Silverthorn: Human Physiology",
     "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
   },
   {
-    "id": "exocrine_005",
+    "id": "exocrine_system_005",
     "question": "Where do lacrimal glands release their secretions?",
-    "answers": [
-      "Into the bloodstream",
-      "Into the digestive tract",
-      "Onto the eyeball surface",
-      "Into the nasal cavity"
-    ],
-    "correct": 2,
-    "short_explanation": "Lacrimal glands release tears onto the surface of the eye.",
-    "long_explanation": "Lacrimal glands are exocrine structures located in the upper lateral region of the orbit. They produce tears that lubricate and protect the eye.",
-    "applied_example": "Massage near the orbit should respect the lacrimal gland to prevent irritation, especially in sinus or facial techniques.",
-    "difficulty": "medium",
-    "category": "Exocrine System",
-    "topic": "Lacrimal Glands",
-    "tags": ["lacrimal", "tears", "eye"],
-    "keywords": ["tear production", "lubrication", "orbital gland"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Clinical Anatomy by Regions",
-    "text": "Where do lacrimal glands release their secretions?",
     "options": [
       "Into the bloodstream",
       "Into the digestive tract",
@@ -164,37 +104,24 @@
       "Into the nasal cavity"
     ],
     "correctAnswer": "Onto the eyeball surface",
-    "abcd": [
-      "A. Into the bloodstream",
-      "B. Into the digestive tract",
-      "C. Onto the eyeball surface",
-      "D. Into the nasal cavity"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
-  },
-  {
-    "id": "exocrine_006",
-    "question": "Which duct delivers bile from the liver and gallbladder to the small intestine?",
-    "answers": [
-      "Cystic duct",
-      "Pancreatic duct",
-      "Bile duct",
-      "Common hepatic duct"
-    ],
-    "correct": 2,
-    "short_explanation": "The bile duct transports bile to the duodenum.",
-    "long_explanation": "The common bile duct carries bile produced in the liver and stored in the gallbladder into the small intestine to aid in fat digestion.",
-    "applied_example": "Gallbladder or bile duct dysfunction can affect digestion and energy, which therapists may need to accommodate during treatment.",
+    "topics": ["Anatomy", "Lacrimal Glands"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Lacrimal glands release tears onto the surface of the eye.",
+    "long_explanation": "Lacrimal glands are exocrine structures located in the upper lateral region of the orbit. They produce tears that lubricate and protect the eye.",
+    "applied_example": "Massage near the orbit should respect the lacrimal gland to prevent irritation, especially in sinus or facial techniques.",
     "difficulty": "medium",
     "category": "Exocrine System",
-    "topic": "Digestive Ducts",
-    "tags": ["bile", "gallbladder", "digestion"],
-    "keywords": ["duct system", "liver", "fat emulsification"],
-    "mblex_category": "Digestive System",
-    "source_reference": "Robbins & Cotran Pathologic Basis of Disease",
-    "text": "Which duct delivers bile from the liver and gallbladder to the small intestine?",
+    "tags": ["lacrimal", "tears", "eye"],
+    "keywords": ["tear production", "lubrication", "orbital gland"],
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Clinical Anatomy by Regions",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
+  },
+  {
+    "id": "exocrine_system_006",
+    "question": "Which duct delivers bile from the liver and gallbladder to the small intestine?",
     "options": [
       "Cystic duct",
       "Pancreatic duct",
@@ -202,37 +129,24 @@
       "Common hepatic duct"
     ],
     "correctAnswer": "Bile duct",
-    "abcd": [
-      "A. Cystic duct",
-      "B. Pancreatic duct",
-      "C. Bile duct",
-      "D. Common hepatic duct"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
-  },
-  {
-    "id": "exocrine_007",
-    "question": "What type of secretion is released by salivary glands?",
-    "answers": [
-      "Mucus only",
-      "Serous only",
-      "Mucous and serous",
-      "Watery and hormonal"
-    ],
-    "correct": 2,
-    "short_explanation": "Salivary glands produce both mucus and serous fluids.",
-    "long_explanation": "Saliva contains mucus for lubrication and serous fluid with enzymes like amylase to begin carbohydrate digestion.",
-    "applied_example": "Dry mouth or excess salivation can indicate dysfunction, which may arise from nerve damage or medication effects.",
+    "topics": ["Anatomy", "Digestive Ducts"],
+    "subtopics": ["Systems"],
+    "short_explanation": "The bile duct transports bile to the duodenum.",
+    "long_explanation": "The common bile duct carries bile produced in the liver and stored in the gallbladder into the small intestine to aid in fat digestion.",
+    "applied_example": "Gallbladder or bile duct dysfunction can affect digestion and energy, which therapists may need to accommodate during treatment.",
     "difficulty": "medium",
     "category": "Exocrine System",
-    "topic": "Salivary Glands",
-    "tags": ["saliva", "digestion", "amylase"],
-    "keywords": ["mucous glands", "serous glands", "oral cavity"],
+    "tags": ["bile", "gallbladder", "digestion"],
+    "keywords": ["duct system", "liver", "fat emulsification"],
     "mblex_category": "Digestive System",
-    "source_reference": "Principles of Anatomy and Physiology, Tortora",
-    "text": "What type of secretion is released by salivary glands?",
+    "source_reference": "Robbins & Cotran Pathologic Basis of Disease",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
+  },
+  {
+    "id": "exocrine_system_007",
+    "question": "What type of secretion is released by salivary glands?",
     "options": [
       "Mucus only",
       "Serous only",
@@ -240,37 +154,24 @@
       "Watery and hormonal"
     ],
     "correctAnswer": "Mucous and serous",
-    "abcd": [
-      "A. Mucus only",
-      "B. Serous only",
-      "C. Mucous and serous",
-      "D. Watery and hormonal"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
-  },
-  {
-    "id": "exocrine_008",
-    "question": "What is the role of ceruminous glands?",
-    "answers": [
-      "Secrete hormones into the brain",
-      "Produce sweat on the scalp",
-      "Secrete earwax into the ear canal",
-      "Lubricate the eyes"
-    ],
-    "correct": 2,
-    "short_explanation": "Ceruminous glands secrete cerumen (earwax).",
-    "long_explanation": "These modified sweat glands in the external auditory canal protect the ear by trapping dust and repelling insects with cerumen.",
-    "applied_example": "Massage near the ears should avoid excessive pressure on the canal to prevent disrupting cerumen balance.",
+    "topics": ["Anatomy", "Salivary Glands"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Salivary glands produce both mucus and serous fluids.",
+    "long_explanation": "Saliva contains mucus for lubrication and serous fluid with enzymes like amylase to begin carbohydrate digestion.",
+    "applied_example": "Dry mouth or excess salivation can indicate dysfunction, which may arise from nerve damage or medication effects.",
     "difficulty": "medium",
     "category": "Exocrine System",
-    "topic": "Ceruminous Glands",
-    "tags": ["earwax", "ear", "protection"],
-    "keywords": ["cerumen", "modified sweat gland", "auditory canal"],
-    "mblex_category": "Integumentary System",
-    "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "text": "What is the role of ceruminous glands?",
+    "tags": ["saliva", "digestion", "amylase"],
+    "keywords": ["mucous glands", "serous glands", "oral cavity"],
+    "mblex_category": "Digestive System",
+    "source_reference": "Principles of Anatomy and Physiology, Tortora",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
+  },
+  {
+    "id": "exocrine_system_008",
+    "question": "What is the role of ceruminous glands?",
     "options": [
       "Secrete hormones into the brain",
       "Produce sweat on the scalp",
@@ -278,37 +179,24 @@
       "Lubricate the eyes"
     ],
     "correctAnswer": "Secrete earwax into the ear canal",
-    "abcd": [
-      "A. Secrete hormones into the brain",
-      "B. Produce sweat on the scalp",
-      "C. Secrete earwax into the ear canal",
-      "D. Lubricate the eyes"
-    ],
+    "topics": ["Anatomy", "Ceruminous Glands"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Ceruminous glands secrete cerumen (earwax).",
+    "long_explanation": "These modified sweat glands in the external auditory canal protect the ear by trapping dust and repelling insects with cerumen.",
+    "applied_example": "Massage near the ears should avoid excessive pressure on the canal to prevent disrupting cerumen balance.",
+    "difficulty": "medium",
+    "category": "Exocrine System",
+    "tags": ["earwax", "ear", "protection"],
+    "keywords": ["cerumen", "modified sweat gland", "auditory canal"],
+    "mblex_category": "Integumentary System",
+    "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
     "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
   },
   {
-    "id": "exocrine_009",
+    "id": "exocrine_system_009",
     "question": "What distinguishes exocrine glands from endocrine glands?",
-    "answers": [
-      "Exocrine glands use hormones",
-      "Endocrine glands use ducts",
-      "Exocrine glands secrete through ducts",
-      "Endocrine glands secrete digestive enzymes"
-    ],
-    "correct": 2,
-    "short_explanation": "Exocrine glands secrete via ducts; endocrine glands are ductless.",
-    "long_explanation": "Exocrine glands release their substances (e.g., enzymes, oils) to external or internal surfaces through ducts, while endocrine glands release hormones directly into the blood.",
-    "applied_example": "Understanding gland type helps massage therapists explain symptoms like swelling, discharge, or hormonal changes to clients.",
-    "difficulty": "easy",
-    "category": "Exocrine System",
-    "topic": "Comparison",
-    "tags": ["exocrine vs endocrine", "ducts", "hormones"],
-    "keywords": ["gland classification", "ducted secretion", "body systems"],
-    "mblex_category": "Anatomy & Physiology",
-    "source_reference": "Silverthorn: Human Physiology",
-    "text": "What distinguishes exocrine glands from endocrine glands?",
     "options": [
       "Exocrine glands use hormones",
       "Endocrine glands use ducts",
@@ -316,37 +204,24 @@
       "Endocrine glands secrete digestive enzymes"
     ],
     "correctAnswer": "Exocrine glands secrete through ducts",
-    "abcd": [
-      "A. Exocrine glands use hormones",
-      "B. Endocrine glands use ducts",
-      "C. Exocrine glands secrete through ducts",
-      "D. Endocrine glands secrete digestive enzymes"
-    ],
+    "topics": ["Anatomy", "Comparison"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Exocrine glands secrete via ducts; endocrine glands are ductless.",
+    "long_explanation": "Exocrine glands release their substances (e.g., enzymes, oils) to external or internal surfaces through ducts, while endocrine glands release hormones directly into the blood.",
+    "applied_example": "Understanding gland type helps massage therapists explain symptoms like swelling, discharge, or hormonal changes to clients.",
+    "difficulty": "easy",
+    "category": "Exocrine System",
+    "tags": ["exocrine vs endocrine", "ducts", "hormones"],
+    "keywords": ["gland classification", "ducted secretion", "body systems"],
+    "mblex_category": "Anatomy & Physiology",
+    "source_reference": "Silverthorn: Human Physiology",
     "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
   },
   {
-    "id": "exocrine_010",
+    "id": "exocrine_system_010",
     "question": "Which exocrine glands secrete digestive juices into the mouth?",
-    "answers": [
-      "Parotid, submandibular, and sublingual glands",
-      "Pituitary, adrenal, and pineal glands",
-      "Sebaceous, ceruminous, and sweat glands",
-      "Islets of Langerhans, pancreas, and liver"
-    ],
-    "correct": 0,
-    "short_explanation": "Salivary glands secrete digestive enzymes into the oral cavity.",
-    "long_explanation": "The parotid, submandibular, and sublingual salivary glands release saliva that begins starch digestion and lubricates food.",
-    "applied_example": "Jaw and neck massage can support saliva flow and reduce TMJ stress or dry mouth symptoms.",
-    "difficulty": "medium",
-    "category": "Exocrine System",
-    "topic": "Oral Digestion",
-    "tags": ["salivary glands", "oral digestion", "enzymes"],
-    "keywords": ["parotid", "sublingual", "saliva production"],
-    "mblex_category": "Digestive System",
-    "source_reference": "Clinical Anatomy by Regions",
-    "text": "Which exocrine glands secrete digestive juices into the mouth?",
     "options": [
       "Parotid, submandibular, and sublingual glands",
       "Pituitary, adrenal, and pineal glands",
@@ -354,14 +229,19 @@
       "Islets of Langerhans, pancreas, and liver"
     ],
     "correctAnswer": "Parotid, submandibular, and sublingual glands",
-    "abcd": [
-      "A. Parotid, submandibular, and sublingual glands",
-      "B. Pituitary, adrenal, and pineal glands",
-      "C. Sebaceous, ceruminous, and sweat glands",
-      "D. Islets of Langerhans, pancreas, and liver"
-    ],
+    "topics": ["Anatomy", "Oral Digestion"],
+    "subtopics": ["Systems"],
+    "short_explanation": "Salivary glands secrete digestive enzymes into the oral cavity.",
+    "long_explanation": "The parotid, submandibular, and sublingual salivary glands release saliva that begins starch digestion and lubricates food.",
+    "applied_example": "Jaw and neck massage can support saliva flow and reduce TMJ stress or dry mouth symptoms.",
+    "difficulty": "medium",
+    "category": "Exocrine System",
+    "tags": ["salivary glands", "oral digestion", "enzymes"],
+    "keywords": ["parotid", "sublingual", "saliva production"],
+    "mblex_category": "Digestive System",
+    "source_reference": "Clinical Anatomy by Regions",
     "main_topic": "anatomy",
-    "subtopic": "systems",
-    "filename": "exocrine_system.json"
+    "filepath": "data/questions/anatomy/systems/exocrine_system.json",
+    "sourceFile": "exocrine_system"
   }
 ]

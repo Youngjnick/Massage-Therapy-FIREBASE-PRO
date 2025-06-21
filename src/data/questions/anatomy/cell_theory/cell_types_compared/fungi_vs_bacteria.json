@@ -1,19 +1,20 @@
 [
   {
-    "id": "Fungi Vs Bacteria 001",
+    "id": "fungi_vs_bacteria_001",
     "question": "Which of the following is true about bacteria?",
-    "answers": [
+    "options": [
       "They are multicellular organisms",
       "They have membrane-bound organelles",
       "They are prokaryotic and lack a nucleus",
       "They perform photosynthesis only"
     ],
-    "correct": 2,
+    "correctAnswer": "They are prokaryotic and lack a nucleus",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Bacteria are prokaryotic organisms that lack a nucleus and membrane-bound organelles.",
     "long_explanation": "Bacteria are unicellular prokaryotes, meaning they lack a true nucleus and organelles. Their genetic material is free-floating in the cytoplasm. They can be beneficial (gut flora) or harmful (pathogens). Their simple structure allows rapid reproduction and adaptation.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -50,39 +51,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Massage therapists must maintain strict hygiene practices to avoid transmitting pathogenic bacteria that may reside on the skin or surfaces, especially when working near open wounds or cuts.",
-    "text": "Which of the following is true about bacteria?",
-    "options": [
-      "They are multicellular organisms",
-      "They have membrane-bound organelles",
-      "They are prokaryotic and lack a nucleus",
-      "They perform photosynthesis only"
-    ],
-    "correctAnswer": "They are prokaryotic and lack a nucleus",
-    "abcd": [
-      "A. They are multicellular organisms",
-      "B. They have membrane-bound organelles",
-      "C. They are prokaryotic and lack a nucleus",
-      "D. They perform photosynthesis only"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 002",
+    "id": "fungi_vs_bacteria_002",
     "question": "Which of the following best describes fungi?",
-    "answers": [
+    "options": [
       "Unicellular and photosynthetic",
       "Prokaryotic and anaerobic",
       "Eukaryotic and can be unicellular or multicellular",
       "Viruses with cell walls"
     ],
-    "correct": 2,
+    "correctAnswer": "Eukaryotic and can be unicellular or multicellular",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Fungi are eukaryotic and can be unicellular (yeast) or multicellular (mold).",
     "long_explanation": "Fungi are eukaryotic organisms with membrane-bound nuclei and organelles. Some are unicellular like yeast; others are multicellular like molds and mushrooms. They absorb nutrients from their environment and play roles in decomposition, food production, and disease.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -115,34 +103,21 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "In massage therapy, fungal infections like athlete's foot are local contraindications. Therapists should avoid direct contact and follow infection control protocols.",
-    "text": "Which of the following best describes fungi?",
-    "options": [
-      "Unicellular and photosynthetic",
-      "Prokaryotic and anaerobic",
-      "Eukaryotic and can be unicellular or multicellular",
-      "Viruses with cell walls"
-    ],
-    "correctAnswer": "Eukaryotic and can be unicellular or multicellular",
-    "abcd": [
-      "A. Unicellular and photosynthetic",
-      "B. Prokaryotic and anaerobic",
-      "C. Eukaryotic and can be unicellular or multicellular",
-      "D. Viruses with cell walls"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 003",
+    "id": "fungi_vs_bacteria_003",
     "question": "Which kingdom do fungi belong to?",
-    "answers": ["Protista", "Monera", "Plantae", "Fungi"],
-    "correct": 3,
+    "options": ["Protista", "Monera", "Plantae", "Fungi"],
+    "correctAnswer": "Fungi",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Fungi belong to the Fungi kingdom, distinct from plants, animals, and bacteria.",
     "long_explanation": "The kingdom Fungi includes a wide variety of organisms like yeasts, molds, and mushrooms. Fungi are heterotrophs that absorb nutrients from organic matter and reproduce via spores. Unlike plants, they do not perform photosynthesis and have chitin in their cell walls.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -171,29 +146,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Recognizing that fungi can colonize skin and nails helps therapists refer clients with suspicious lesions to medical professionals before treatment.",
-    "text": "Which kingdom do fungi belong to?",
-    "options": ["Protista", "Monera", "Plantae", "Fungi"],
-    "correctAnswer": "Fungi",
-    "abcd": ["A. Protista", "B. Monera", "C. Plantae", "D. Fungi"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 004",
+    "id": "fungi_vs_bacteria_004",
     "question": "Bacteria reproduce primarily through which process?",
-    "answers": [
+    "options": [
       "Binary fission",
       "Budding",
       "Spore formation",
       "Sexual reproduction"
     ],
-    "correct": 0,
+    "correctAnswer": "Binary fission",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Bacteria reproduce asexually via binary fission-dividing into two identical cells.",
     "long_explanation": "Binary fission is a rapid asexual reproduction method where bacteria copy their DNA and split into two daughter cells. This allows exponential growth in favorable conditions and contributes to antibiotic resistance when not managed properly.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "microbiology_bacteria", "anatomy_dna"],
     "keywords": ["anatomy_cells", "microbiology_bacteria", "anatomy_dna"],
@@ -208,39 +180,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Rapid bacterial reproduction underscores the importance of cleaning equipment and linens between clients to prevent cross-contamination.",
-    "text": "Bacteria reproduce primarily through which process?",
-    "options": [
-      "Binary fission",
-      "Budding",
-      "Spore formation",
-      "Sexual reproduction"
-    ],
-    "correctAnswer": "Binary fission",
-    "abcd": [
-      "A. Binary fission",
-      "B. Budding",
-      "C. Spore formation",
-      "D. Sexual reproduction"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 005",
+    "id": "fungi_vs_bacteria_005",
     "question": "What structure is commonly found in fungi but not in bacteria?",
-    "answers": [
+    "options": [
       "Peptidoglycan",
       "Chlorophyll",
       "Chitin cell walls",
       "Capsules"
     ],
-    "correct": 2,
+    "correctAnswer": "Chitin cell walls",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Fungi have cell walls made of chitin, while bacteria lack this component.",
     "long_explanation": "Fungi possess rigid cell walls composed of chitin, a tough polysaccharide also found in insect exoskeletons. Bacteria have cell walls made of peptidoglycan instead. This structural difference is key to identifying infections and determining appropriate treatments.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -265,39 +224,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "When skin feels thickened or flaky due to fungal infection, massage should be avoided on that area to prevent spread or discomfort.",
-    "text": "What structure is commonly found in fungi but not in bacteria?",
-    "options": [
-      "Peptidoglycan",
-      "Chlorophyll",
-      "Chitin cell walls",
-      "Capsules"
-    ],
-    "correctAnswer": "Chitin cell walls",
-    "abcd": [
-      "A. Peptidoglycan",
-      "B. Chlorophyll",
-      "C. Chitin cell walls",
-      "D. Capsules"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 006",
+    "id": "fungi_vs_bacteria_006",
     "question": "Which of the following is true about bacterial cell walls?",
-    "answers": [
+    "options": [
       "They are made of cellulose",
       "They lack a cell wall",
       "They are made of peptidoglycan",
       "They are identical to animal cells"
     ],
-    "correct": 2,
+    "correctAnswer": "They are made of peptidoglycan",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Bacterial cell walls contain peptidoglycan, a polymer unique to prokaryotes.",
     "long_explanation": "Peptidoglycan provides structure and protection to bacterial cells and is a major target of antibiotics like penicillin. This molecule is not present in fungi or human cells, making it useful for selective bacterial targeting in treatments.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -324,34 +270,21 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Clients undergoing antibiotic treatment for bacterial infections may experience fatigue or compromised immunity. Massage therapists should adjust intensity and monitor for signs of systemic infection.",
-    "text": "Which of the following is true about bacterial cell walls?",
-    "options": [
-      "They are made of cellulose",
-      "They lack a cell wall",
-      "They are made of peptidoglycan",
-      "They are identical to animal cells"
-    ],
-    "correctAnswer": "They are made of peptidoglycan",
-    "abcd": [
-      "A. They are made of cellulose",
-      "B. They lack a cell wall",
-      "C. They are made of peptidoglycan",
-      "D. They are identical to animal cells"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 007",
+    "id": "fungi_vs_bacteria_007",
     "question": "Which of the following organisms can cause ringworm?",
-    "answers": ["Virus", "Bacterium", "Fungus", "Protozoan"],
-    "correct": 2,
+    "options": ["Virus", "Bacterium", "Fungus", "Protozoan"],
+    "correctAnswer": "Fungus",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Ringworm is a fungal skin infection caused by dermatophytes, not bacteria or viruses.",
     "long_explanation": "Despite its name, ringworm is not caused by a worm but by a fungus that infects the outer skin layer, often creating a circular rash. It is contagious via skin contact or contaminated surfaces like towels, mats, or clothing.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_organs",
@@ -378,29 +311,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "If a client presents with ringworm, the affected area is a local contraindication. Massage should avoid the lesion, and strict hygiene protocols must be followed.",
-    "text": "Which of the following organisms can cause ringworm?",
-    "options": ["Virus", "Bacterium", "Fungus", "Protozoan"],
-    "correctAnswer": "Fungus",
-    "abcd": ["A. Virus", "B. Bacterium", "C. Fungus", "D. Protozoan"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 008",
+    "id": "fungi_vs_bacteria_008",
     "question": "Which of the following diseases is caused by bacteria?",
-    "answers": [
+    "options": [
       "Athlete’s foot",
       "Strep throat",
       "Candidiasis",
       "Aspergillosis"
     ],
-    "correct": 1,
+    "correctAnswer": "Strep throat",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Strep throat is caused by Streptococcus bacteria, not fungi.",
     "long_explanation": "Streptococcus is a genus of Gram-positive bacteria that can cause strep throat, skin infections, or systemic illness. Symptoms include sore throat, fever, and swollen lymph nodes. Bacterial infections require different treatment than fungal infections.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "condition_pain",
@@ -429,39 +359,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Clients with systemic bacterial infections like strep throat should postpone massage until symptoms resolve, as full-body work may exacerbate fatigue or spread infection.",
-    "text": "Which of the following diseases is caused by bacteria?",
-    "options": [
-      "Athlete’s foot",
-      "Strep throat",
-      "Candidiasis",
-      "Aspergillosis"
-    ],
-    "correctAnswer": "Strep throat",
-    "abcd": [
-      "A. Athlete’s foot",
-      "B. Strep throat",
-      "C. Candidiasis",
-      "D. Aspergillosis"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 009",
+    "id": "fungi_vs_bacteria_009",
     "question": "Which is a key structural difference between fungi and bacteria?",
-    "answers": [
+    "options": [
       "Fungi have no cell membrane",
       "Bacteria have mitochondria",
       "Fungi have nuclei, bacteria do not",
       "Bacteria are larger than fungi"
     ],
-    "correct": 2,
+    "correctAnswer": "Fungi have nuclei, bacteria do not",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Fungi are eukaryotic and have nuclei; bacteria are prokaryotic and lack nuclei.",
     "long_explanation": "Fungi have membrane-bound organelles, including a nucleus, mitochondria, and vacuoles. Bacteria, as prokaryotes, have no true nucleus. This fundamental difference impacts how each organism grows, reproduces, and responds to treatment.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -498,39 +415,26 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Understanding these differences helps massage therapists recognize conditions more likely to be fungal or bacterial in origin when observing skin lesions or infections.",
-    "text": "Which is a key structural difference between fungi and bacteria?",
-    "options": [
-      "Fungi have no cell membrane",
-      "Bacteria have mitochondria",
-      "Fungi have nuclei, bacteria do not",
-      "Bacteria are larger than fungi"
-    ],
-    "correctAnswer": "Fungi have nuclei, bacteria do not",
-    "abcd": [
-      "A. Fungi have no cell membrane",
-      "B. Bacteria have mitochondria",
-      "C. Fungi have nuclei, bacteria do not",
-      "D. Bacteria are larger than fungi"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   },
   {
-    "id": "Fungi Vs Bacteria 010",
+    "id": "fungi_vs_bacteria_010",
     "question": "How do fungi primarily obtain nutrients?",
-    "answers": [
+    "options": [
       "Photosynthesis",
       "Consuming other animals",
       "Absorption of organic material",
       "Engulfing bacteria"
     ],
-    "correct": 2,
+    "correctAnswer": "Absorption of organic material",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_types_compared"],
     "distractors": [],
     "short_explanation": "Fungi absorb nutrients from organic material through external digestion.",
     "long_explanation": "Fungi release enzymes into their environment to break down organic matter, then absorb the resulting nutrients. This decomposer role is vital in ecosystems. Unlike animals, fungi do not ingest or photosynthesize their food.",
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_organs",
@@ -557,22 +461,8 @@
     "updated_at": "2025-05-24T14:54:13.461Z",
     "unit": "fungi vs bacteria",
     "applied_example": "Fungal overgrowth on skin (e.g., yeast infections) is linked to moisture and poor airflow. Therapists should observe hygiene and avoid occlusive lotions in such cases.",
-    "text": "How do fungi primarily obtain nutrients?",
-    "options": [
-      "Photosynthesis",
-      "Consuming other animals",
-      "Absorption of organic material",
-      "Engulfing bacteria"
-    ],
-    "correctAnswer": "Absorption of organic material",
-    "abcd": [
-      "A. Photosynthesis",
-      "B. Consuming other animals",
-      "C. Absorption of organic material",
-      "D. Engulfing bacteria"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_types_compared",
-    "filename": "fungi_vs_bacteria.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_types_compared/fungi_vs_bacteria.json",
+    "sourceFile": "fungi_vs_bacteria"
   }
 ]

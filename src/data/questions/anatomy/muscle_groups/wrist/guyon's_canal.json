@@ -1,25 +1,7 @@
 [
   {
-    "id": "guyons_channel_001",
+    "id": "guyon's_canal_001",
     "question": "Where is Guyon's canal located?",
-    "answers": [
-      "Between the scaphoid and trapezium",
-      "Between the pisiform and hamate",
-      "Between the radius and ulna",
-      "Under the flexor retinaculum"
-    ],
-    "correct": 1,
-    "short_explanation": "Guyon's canal is formed between the pisiform and hook of hamate.",
-    "long_explanation": "Guyon's canal (or tunnel) is a fibro-osseous tunnel on the ulnar side of the wrist, bordered medially by the pisiform and laterally by the hook of the hamate. It allows passage of the ulnar nerve and artery.",
-    "applied_example": "Palpation around the pisiform in wrist pain assessment can reveal compression symptoms linked to Guyon’s canal.",
-    "difficulty": "easy",
-    "category": "Anatomy",
-    "topic": "Wrist Anatomy",
-    "tags": ["guyon's canal", "ulnar nerve", "pisiform", "hamate"],
-    "keywords": ["guyon's tunnel", "ulnar compression", "hand"],
-    "mblex_category": "Anatomy",
-    "source_reference": "Netter's Atlas of Human Anatomy",
-    "text": "Where is Guyon's canal located?",
     "options": [
       "Between the scaphoid and trapezium",
       "Between the pisiform and hamate",
@@ -27,37 +9,24 @@
       "Under the flexor retinaculum"
     ],
     "correctAnswer": "Between the pisiform and hamate",
-    "abcd": [
-      "A. Between the scaphoid and trapezium",
-      "B. Between the pisiform and hamate",
-      "C. Between the radius and ulna",
-      "D. Under the flexor retinaculum"
-    ],
+    "topics": ["Anatomy", "Wrist Anatomy"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "Guyon's canal is formed between the pisiform and hook of hamate.",
+    "long_explanation": "Guyon's canal (or tunnel) is a fibro-osseous tunnel on the ulnar side of the wrist, bordered medially by the pisiform and laterally by the hook of the hamate. It allows passage of the ulnar nerve and artery.",
+    "applied_example": "Palpation around the pisiform in wrist pain assessment can reveal compression symptoms linked to Guyon’s canal.",
+    "difficulty": "easy",
+    "category": "Anatomy",
+    "tags": ["guyon's canal", "ulnar nerve", "pisiform", "hamate"],
+    "keywords": ["guyon's tunnel", "ulnar compression", "hand"],
+    "mblex_category": "Anatomy",
+    "source_reference": "Netter's Atlas of Human Anatomy",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_002",
+    "id": "guyon's_canal_002",
     "question": "Which nerve passes through Guyon's canal?",
-    "answers": [
-      "Median nerve",
-      "Radial nerve",
-      "Ulnar nerve",
-      "Anterior interosseous nerve"
-    ],
-    "correct": 2,
-    "short_explanation": "The ulnar nerve passes through Guyon’s canal.",
-    "long_explanation": "The ulnar nerve travels through Guyon’s canal alongside the ulnar artery. Compression here can lead to sensory and motor symptoms in the hand, a condition called Guyon’s canal syndrome.",
-    "applied_example": "Understanding the nerve pathway helps massage therapists modify techniques for clients with ulnar nerve entrapment.",
-    "difficulty": "easy",
-    "category": "Neuroanatomy",
-    "topic": "Peripheral Nerves",
-    "tags": ["ulnar nerve", "nerve entrapment", "guyon's syndrome"],
-    "keywords": ["nerve", "compression", "wrist"],
-    "mblex_category": "Pathology",
-    "source_reference": "Gray's Anatomy for Students",
-    "text": "Which nerve passes through Guyon's canal?",
     "options": [
       "Median nerve",
       "Radial nerve",
@@ -65,37 +34,24 @@
       "Anterior interosseous nerve"
     ],
     "correctAnswer": "Ulnar nerve",
-    "abcd": [
-      "A. Median nerve",
-      "B. Radial nerve",
-      "C. Ulnar nerve",
-      "D. Anterior interosseous nerve"
-    ],
+    "topics": ["Anatomy", "Peripheral Nerves"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "The ulnar nerve passes through Guyon’s canal.",
+    "long_explanation": "The ulnar nerve travels through Guyon’s canal alongside the ulnar artery. Compression here can lead to sensory and motor symptoms in the hand, a condition called Guyon’s canal syndrome.",
+    "applied_example": "Understanding the nerve pathway helps massage therapists modify techniques for clients with ulnar nerve entrapment.",
+    "difficulty": "easy",
+    "category": "Neuroanatomy",
+    "tags": ["ulnar nerve", "nerve entrapment", "guyon's syndrome"],
+    "keywords": ["nerve", "compression", "wrist"],
+    "mblex_category": "Pathology",
+    "source_reference": "Gray's Anatomy for Students",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_003",
+    "id": "guyon's_canal_003",
     "question": "Compression of the ulnar nerve in Guyon's canal typically affects which digits?",
-    "answers": [
-      "Thumb and index finger",
-      "Index and middle finger",
-      "Ring and little finger",
-      "All five fingers"
-    ],
-    "correct": 2,
-    "short_explanation": "The ring and little finger are innervated by the ulnar nerve.",
-    "long_explanation": "Ulnar nerve compression in Guyon’s canal leads to numbness, tingling, or weakness in the 4th and 5th digits, corresponding to the ulnar distribution of motor and sensory innervation.",
-    "applied_example": "Massage therapists can screen for Guyon’s canal compression in clients with pinky-side hand weakness or numbness.",
-    "difficulty": "easy",
-    "category": "Clinical Neuroanatomy",
-    "topic": "Nerve Distribution",
-    "tags": ["ulnar nerve", "guyon's canal", "hand innervation"],
-    "keywords": ["digits", "nerve distribution", "pinky"],
-    "mblex_category": "Anatomy",
-    "source_reference": "Trail Guide to the Body",
-    "text": "Compression of the ulnar nerve in Guyon's canal typically affects which digits?",
     "options": [
       "Thumb and index finger",
       "Index and middle finger",
@@ -103,37 +59,24 @@
       "All five fingers"
     ],
     "correctAnswer": "Ring and little finger",
-    "abcd": [
-      "A. Thumb and index finger",
-      "B. Index and middle finger",
-      "C. Ring and little finger",
-      "D. All five fingers"
-    ],
+    "topics": ["Anatomy", "Nerve Distribution"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "The ring and little finger are innervated by the ulnar nerve.",
+    "long_explanation": "Ulnar nerve compression in Guyon’s canal leads to numbness, tingling, or weakness in the 4th and 5th digits, corresponding to the ulnar distribution of motor and sensory innervation.",
+    "applied_example": "Massage therapists can screen for Guyon’s canal compression in clients with pinky-side hand weakness or numbness.",
+    "difficulty": "easy",
+    "category": "Clinical Neuroanatomy",
+    "tags": ["ulnar nerve", "guyon's canal", "hand innervation"],
+    "keywords": ["digits", "nerve distribution", "pinky"],
+    "mblex_category": "Anatomy",
+    "source_reference": "Trail Guide to the Body",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_004",
+    "id": "guyon's_canal_004",
     "question": "Which activities are most likely to cause Guyon’s canal syndrome?",
-    "answers": [
-      "Typing on a keyboard",
-      "Carrying heavy backpacks",
-      "Prolonged cycling",
-      "Running on uneven terrain"
-    ],
-    "correct": 2,
-    "short_explanation": "Prolonged pressure on the palm during cycling can compress the ulnar nerve.",
-    "long_explanation": "Cyclists often rest the heel of their hand on handlebars, causing sustained compression of the ulnar nerve in Guyon’s canal. This leads to numbness or tingling in the ulnar digits.",
-    "applied_example": "Massage or ergonomic education for cyclists should include awareness of pressure points near Guyon’s canal.",
-    "difficulty": "medium",
-    "category": "Pathology",
-    "topic": "Nerve Compression Syndromes",
-    "tags": ["cyclist palsy", "ulnar nerve", "compression"],
-    "keywords": ["bike", "handlebar neuropathy", "nerve"],
-    "mblex_category": "Pathology",
-    "source_reference": "Orthopedic Physical Assessment – Magee",
-    "text": "Which activities are most likely to cause Guyon’s canal syndrome?",
     "options": [
       "Typing on a keyboard",
       "Carrying heavy backpacks",
@@ -141,37 +84,24 @@
       "Running on uneven terrain"
     ],
     "correctAnswer": "Prolonged cycling",
-    "abcd": [
-      "A. Typing on a keyboard",
-      "B. Carrying heavy backpacks",
-      "C. Prolonged cycling",
-      "D. Running on uneven terrain"
-    ],
+    "topics": ["Anatomy", "Nerve Compression Syndromes"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "Prolonged pressure on the palm during cycling can compress the ulnar nerve.",
+    "long_explanation": "Cyclists often rest the heel of their hand on handlebars, causing sustained compression of the ulnar nerve in Guyon’s canal. This leads to numbness or tingling in the ulnar digits.",
+    "applied_example": "Massage or ergonomic education for cyclists should include awareness of pressure points near Guyon’s canal.",
+    "difficulty": "medium",
+    "category": "Pathology",
+    "tags": ["cyclist palsy", "ulnar nerve", "compression"],
+    "keywords": ["bike", "handlebar neuropathy", "nerve"],
+    "mblex_category": "Pathology",
+    "source_reference": "Orthopedic Physical Assessment – Magee",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_005",
+    "id": "guyon's_canal_005",
     "question": "What structure provides the roof of Guyon’s canal?",
-    "answers": [
-      "Palmar aponeurosis",
-      "Flexor retinaculum",
-      "Palmar carpal ligament",
-      "Transverse carpal ligament"
-    ],
-    "correct": 2,
-    "short_explanation": "The palmar carpal ligament forms the roof of Guyon's canal.",
-    "long_explanation": "Guyon’s canal is bordered superiorly by the palmar carpal ligament, and inferiorly by the flexor retinaculum. This anatomy creates a tight tunnel prone to compression.",
-    "applied_example": "Anatomical knowledge of soft tissue tunnels aids precision in deep tissue wrist techniques.",
-    "difficulty": "medium",
-    "category": "Anatomy",
-    "topic": "Wrist Ligaments",
-    "tags": ["palmar carpal ligament", "wrist anatomy"],
-    "keywords": ["canal roof", "carpal tunnel"],
-    "mblex_category": "Anatomy",
-    "source_reference": "Clinically Oriented Anatomy – Moore",
-    "text": "What structure provides the roof of Guyon’s canal?",
     "options": [
       "Palmar aponeurosis",
       "Flexor retinaculum",
@@ -179,37 +109,24 @@
       "Transverse carpal ligament"
     ],
     "correctAnswer": "Palmar carpal ligament",
-    "abcd": [
-      "A. Palmar aponeurosis",
-      "B. Flexor retinaculum",
-      "C. Palmar carpal ligament",
-      "D. Transverse carpal ligament"
-    ],
+    "topics": ["Anatomy", "Wrist Ligaments"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "The palmar carpal ligament forms the roof of Guyon's canal.",
+    "long_explanation": "Guyon’s canal is bordered superiorly by the palmar carpal ligament, and inferiorly by the flexor retinaculum. This anatomy creates a tight tunnel prone to compression.",
+    "applied_example": "Anatomical knowledge of soft tissue tunnels aids precision in deep tissue wrist techniques.",
+    "difficulty": "medium",
+    "category": "Anatomy",
+    "tags": ["palmar carpal ligament", "wrist anatomy"],
+    "keywords": ["canal roof", "carpal tunnel"],
+    "mblex_category": "Anatomy",
+    "source_reference": "Clinically Oriented Anatomy – Moore",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_006",
+    "id": "guyon's_canal_006",
     "question": "What is a key difference between Guyon's canal syndrome and carpal tunnel syndrome?",
-    "answers": [
-      "Carpal tunnel affects the ulnar nerve",
-      "Guyon's canal affects the median nerve",
-      "Carpal tunnel affects the thumb side; Guyon’s canal the pinky side",
-      "Both affect the same fingers"
-    ],
-    "correct": 2,
-    "short_explanation": "Carpal tunnel = median nerve (thumb); Guyon’s = ulnar nerve (pinky).",
-    "long_explanation": "Carpal tunnel syndrome involves median nerve compression (thumb, index, middle), while Guyon’s canal syndrome involves ulnar nerve compression (ring, pinky fingers). Differentiating them is key to treatment.",
-    "applied_example": "Therapists should localize symptoms to accurately suggest neural decompression or stretching techniques.",
-    "difficulty": "medium",
-    "category": "Clinical Comparison",
-    "topic": "Neurological Syndromes",
-    "tags": ["median vs ulnar", "carpal tunnel", "guyon"],
-    "keywords": ["nerve comparison", "hand pain", "entrapment"],
-    "mblex_category": "Pathology",
-    "source_reference": "Orthopedic Assessment – Clarkson",
-    "text": "What is a key difference between Guyon's canal syndrome and carpal tunnel syndrome?",
     "options": [
       "Carpal tunnel affects the ulnar nerve",
       "Guyon's canal affects the median nerve",
@@ -217,37 +134,24 @@
       "Both affect the same fingers"
     ],
     "correctAnswer": "Carpal tunnel affects the thumb side; Guyon’s canal the pinky side",
-    "abcd": [
-      "A. Carpal tunnel affects the ulnar nerve",
-      "B. Guyon's canal affects the median nerve",
-      "C. Carpal tunnel affects the thumb side; Guyon’s canal the pinky side",
-      "D. Both affect the same fingers"
-    ],
+    "topics": ["Anatomy", "Neurological Syndromes"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "Carpal tunnel = median nerve (thumb); Guyon’s = ulnar nerve (pinky).",
+    "long_explanation": "Carpal tunnel syndrome involves median nerve compression (thumb, index, middle), while Guyon’s canal syndrome involves ulnar nerve compression (ring, pinky fingers). Differentiating them is key to treatment.",
+    "applied_example": "Therapists should localize symptoms to accurately suggest neural decompression or stretching techniques.",
+    "difficulty": "medium",
+    "category": "Clinical Comparison",
+    "tags": ["median vs ulnar", "carpal tunnel", "guyon"],
+    "keywords": ["nerve comparison", "hand pain", "entrapment"],
+    "mblex_category": "Pathology",
+    "source_reference": "Orthopedic Assessment – Clarkson",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_007",
+    "id": "guyon's_canal_007",
     "question": "What type of massage technique is contraindicated in acute Guyon's canal syndrome?",
-    "answers": [
-      "Cross-fiber friction",
-      "Effleurage",
-      "Myofascial release",
-      "Lymphatic drainage"
-    ],
-    "correct": 0,
-    "short_explanation": "Avoid friction massage during acute nerve inflammation.",
-    "long_explanation": "Cross-fiber friction increases local inflammation and nerve irritation during acute entrapment phases. Softer, decompressive techniques are preferred until symptoms subside.",
-    "applied_example": "Choosing gentle, nerve-friendly modalities is critical when treating nerve-sensitive wrist pain.",
-    "difficulty": "hard",
-    "category": "Massage Technique",
-    "topic": "Nerve Contraindications",
-    "tags": ["contraindication", "ulnar nerve", "wrist pain"],
-    "keywords": ["acute", "technique", "nerve massage"],
-    "mblex_category": "Therapeutic Techniques",
-    "source_reference": "Massage Therapy Principles and Practice – Salvo",
-    "text": "What type of massage technique is contraindicated in acute Guyon's canal syndrome?",
     "options": [
       "Cross-fiber friction",
       "Effleurage",
@@ -255,37 +159,24 @@
       "Lymphatic drainage"
     ],
     "correctAnswer": "Cross-fiber friction",
-    "abcd": [
-      "A. Cross-fiber friction",
-      "B. Effleurage",
-      "C. Myofascial release",
-      "D. Lymphatic drainage"
-    ],
+    "topics": ["Anatomy", "Nerve Contraindications"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "Avoid friction massage during acute nerve inflammation.",
+    "long_explanation": "Cross-fiber friction increases local inflammation and nerve irritation during acute entrapment phases. Softer, decompressive techniques are preferred until symptoms subside.",
+    "applied_example": "Choosing gentle, nerve-friendly modalities is critical when treating nerve-sensitive wrist pain.",
+    "difficulty": "hard",
+    "category": "Massage Technique",
+    "tags": ["contraindication", "ulnar nerve", "wrist pain"],
+    "keywords": ["acute", "technique", "nerve massage"],
+    "mblex_category": "Therapeutic Techniques",
+    "source_reference": "Massage Therapy Principles and Practice – Salvo",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_008",
+    "id": "guyon's_canal_008",
     "question": "Which artery accompanies the ulnar nerve in Guyon’s canal?",
-    "answers": [
-      "Radial artery",
-      "Brachial artery",
-      "Ulnar artery",
-      "Deep palmar arch"
-    ],
-    "correct": 2,
-    "short_explanation": "The ulnar artery travels through Guyon’s canal with the ulnar nerve.",
-    "long_explanation": "Both the ulnar nerve and artery pass through Guyon’s canal. Vascular symptoms can also appear in compression, such as reduced blood flow or hand pallor.",
-    "applied_example": "Vascular considerations should be part of massage assessments, particularly with pulse, color, or temperature changes in the hand.",
-    "difficulty": "medium",
-    "category": "Vascular Anatomy",
-    "topic": "Hand Circulation",
-    "tags": ["ulnar artery", "vascular", "canal anatomy"],
-    "keywords": ["blood vessel", "nerve tunnel", "compression"],
-    "mblex_category": "Anatomy",
-    "source_reference": "Atlas of Human Anatomy – Netter",
-    "text": "Which artery accompanies the ulnar nerve in Guyon’s canal?",
     "options": [
       "Radial artery",
       "Brachial artery",
@@ -293,37 +184,24 @@
       "Deep palmar arch"
     ],
     "correctAnswer": "Ulnar artery",
-    "abcd": [
-      "A. Radial artery",
-      "B. Brachial artery",
-      "C. Ulnar artery",
-      "D. Deep palmar arch"
-    ],
+    "topics": ["Anatomy", "Hand Circulation"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "The ulnar artery travels through Guyon’s canal with the ulnar nerve.",
+    "long_explanation": "Both the ulnar nerve and artery pass through Guyon’s canal. Vascular symptoms can also appear in compression, such as reduced blood flow or hand pallor.",
+    "applied_example": "Vascular considerations should be part of massage assessments, particularly with pulse, color, or temperature changes in the hand.",
+    "difficulty": "medium",
+    "category": "Vascular Anatomy",
+    "tags": ["ulnar artery", "vascular", "canal anatomy"],
+    "keywords": ["blood vessel", "nerve tunnel", "compression"],
+    "mblex_category": "Anatomy",
+    "source_reference": "Atlas of Human Anatomy – Netter",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_009",
+    "id": "guyon's_canal_009",
     "question": "What condition is commonly known as 'Handlebar palsy'?",
-    "answers": [
-      "Median nerve compression at wrist",
-      "Ulnar nerve entrapment at elbow",
-      "Ulnar nerve compression at Guyon’s canal",
-      "Radial tunnel syndrome"
-    ],
-    "correct": 2,
-    "short_explanation": "Handlebar palsy = ulnar compression at Guyon’s canal.",
-    "long_explanation": "The term 'Handlebar palsy' refers to ulnar nerve entrapment at the wrist caused by prolonged pressure during biking. Symptoms include paresthesia and weakness in ulnar fingers.",
-    "applied_example": "Advising clients on grip positioning during cycling can prevent recurrence of handlebar palsy.",
-    "difficulty": "easy",
-    "category": "Clinical Terms",
-    "topic": "Nerve Entrapment Syndromes",
-    "tags": ["handlebar palsy", "ulnar nerve", "guyon’s"],
-    "keywords": ["cycling", "palsy", "ulnar neuropathy"],
-    "mblex_category": "Pathology",
-    "source_reference": "Orthopedic Massage – Lowe",
-    "text": "What condition is commonly known as 'Handlebar palsy'?",
     "options": [
       "Median nerve compression at wrist",
       "Ulnar nerve entrapment at elbow",
@@ -331,37 +209,24 @@
       "Radial tunnel syndrome"
     ],
     "correctAnswer": "Ulnar nerve compression at Guyon’s canal",
-    "abcd": [
-      "A. Median nerve compression at wrist",
-      "B. Ulnar nerve entrapment at elbow",
-      "C. Ulnar nerve compression at Guyon’s canal",
-      "D. Radial tunnel syndrome"
-    ],
+    "topics": ["Anatomy", "Nerve Entrapment Syndromes"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "Handlebar palsy = ulnar compression at Guyon’s canal.",
+    "long_explanation": "The term 'Handlebar palsy' refers to ulnar nerve entrapment at the wrist caused by prolonged pressure during biking. Symptoms include paresthesia and weakness in ulnar fingers.",
+    "applied_example": "Advising clients on grip positioning during cycling can prevent recurrence of handlebar palsy.",
+    "difficulty": "easy",
+    "category": "Clinical Terms",
+    "tags": ["handlebar palsy", "ulnar nerve", "guyon’s"],
+    "keywords": ["cycling", "palsy", "ulnar neuropathy"],
+    "mblex_category": "Pathology",
+    "source_reference": "Orthopedic Massage – Lowe",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   },
   {
-    "id": "guyons_channel_010",
+    "id": "guyon's_canal_010",
     "question": "Which muscle's tendon is closest to Guyon’s canal on the ulnar side?",
-    "answers": [
-      "Flexor carpi radialis",
-      "Flexor carpi ulnaris",
-      "Palmaris longus",
-      "Pronator teres"
-    ],
-    "correct": 1,
-    "short_explanation": "Flexor carpi ulnaris inserts near the pisiform adjacent to Guyon’s canal.",
-    "long_explanation": "The flexor carpi ulnaris attaches to the pisiform bone, one of the bony borders of Guyon’s canal. This proximity is clinically important for palpation and manual therapy.",
-    "applied_example": "Manual therapists may use the flexor carpi ulnaris as a landmark when assessing ulnar nerve entrapment.",
-    "difficulty": "medium",
-    "category": "Muscle Anatomy",
-    "topic": "Wrist Flexors",
-    "tags": ["FCU", "wrist anatomy", "guyon’s border"],
-    "keywords": ["ulnar wrist", "tendon", "landmark"],
-    "mblex_category": "Anatomy",
-    "source_reference": "Muscles: Testing and Function – Kendall",
-    "text": "Which muscle's tendon is closest to Guyon’s canal on the ulnar side?",
     "options": [
       "Flexor carpi radialis",
       "Flexor carpi ulnaris",
@@ -369,14 +234,19 @@
       "Pronator teres"
     ],
     "correctAnswer": "Flexor carpi ulnaris",
-    "abcd": [
-      "A. Flexor carpi radialis",
-      "B. Flexor carpi ulnaris",
-      "C. Palmaris longus",
-      "D. Pronator teres"
-    ],
+    "topics": ["Anatomy", "Wrist Flexors"],
+    "subtopics": ["Muscle_groups", "Wrist"],
+    "short_explanation": "Flexor carpi ulnaris inserts near the pisiform adjacent to Guyon’s canal.",
+    "long_explanation": "The flexor carpi ulnaris attaches to the pisiform bone, one of the bony borders of Guyon’s canal. This proximity is clinically important for palpation and manual therapy.",
+    "applied_example": "Manual therapists may use the flexor carpi ulnaris as a landmark when assessing ulnar nerve entrapment.",
+    "difficulty": "medium",
+    "category": "Muscle Anatomy",
+    "tags": ["FCU", "wrist anatomy", "guyon’s border"],
+    "keywords": ["ulnar wrist", "tendon", "landmark"],
+    "mblex_category": "Anatomy",
+    "source_reference": "Muscles: Testing and Function – Kendall",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/wrist",
-    "filename": "guyon's_canal.json"
+    "filepath": "data/questions/anatomy/muscle_groups/wrist/guyon's_canal.json",
+    "sourceFile": "guyon's_canal"
   }
 ]

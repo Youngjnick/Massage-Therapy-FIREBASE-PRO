@@ -1,54 +1,7 @@
 [
   {
-    "id": "Hamstrings 001",
+    "id": "hamstring_muscles_001",
     "question": "Which of the following muscles is *not* part of the hamstring group?",
-    "answers": [
-      "Semitendinosus",
-      "Semimembranosus",
-      "Biceps femoris",
-      "Rectus femoris"
-    ],
-    "correct": 3,
-    "distractors": [],
-    "short_explanation": "Rectus femoris is part of the quadriceps, not the hamstrings.",
-    "long_explanation": "The hamstring group includes the semitendinosus, semimembranosus, and biceps femoris muscles, all located on the posterior thigh. Rectus femoris, on the other hand, is an anterior thigh muscle involved in knee extension.",
-    "applied_example": "Massage therapists should avoid confusing anterior quadriceps muscles with the posterior hamstrings during treatment for tightness or strain.",
-    "difficulty": "intermediate",
-    "topic": "anatomy",
-    "category": "Anatomy",
-    "tags": [
-      "muscle_group_hamstrings",
-      "anatomy_leg",
-      "region_posterior_thigh",
-      "anatomy_origin",
-      "anatomy_insertion",
-      "anatomy_nerve",
-      "movement_knee_flexion",
-      "modality_massage_therapy",
-      "condition_strain",
-      "client_athlete"
-    ],
-    "keywords": [
-      "hamstrings",
-      "biceps femoris",
-      "semitendinosus",
-      "semimembranosus",
-      "sciatic nerve",
-      "posterior thigh",
-      "knee flexion",
-      "hip extension"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-28T00:00:00.000Z",
-    "updated_at": "2025-05-28T00:00:00.000Z",
-    "unit": "hamstring muscles",
-    "text": "Which of the following muscles is *not* part of the hamstring group?",
     "options": [
       "Semitendinosus",
       "Semimembranosus",
@@ -56,32 +9,13 @@
       "Rectus femoris"
     ],
     "correctAnswer": "Rectus femoris",
-    "abcd": [
-      "A. Semitendinosus",
-      "B. Semimembranosus",
-      "C. Biceps femoris",
-      "D. Rectus femoris"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 002",
-    "question": "What is the primary function of the hamstring muscles?",
-    "answers": [
-      "Hip flexion",
-      "Knee extension",
-      "Knee flexion",
-      "Ankle dorsiflexion"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "The hamstrings flex the knee and extend the hip.",
-    "long_explanation": "Hamstrings cross both the hip and knee joints. Their primary actions include knee flexion and hip extension, essential for walking, running, and jumping.",
-    "applied_example": "Tight or weak hamstrings can alter gait and increase injury risk in runners and athletes. Massage can aid recovery and flexibility.",
+    "short_explanation": "Rectus femoris is part of the quadriceps, not the hamstrings.",
+    "long_explanation": "The hamstring group includes the semitendinosus, semimembranosus, and biceps femoris muscles, all located on the posterior thigh. Rectus femoris, on the other hand, is an anterior thigh muscle involved in knee extension.",
+    "applied_example": "Massage therapists should avoid confusing anterior quadriceps muscles with the posterior hamstrings during treatment for tightness or strain.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -115,7 +49,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "What is the primary function of the hamstring muscles?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_002",
+    "question": "What is the primary function of the hamstring muscles?",
     "options": [
       "Hip flexion",
       "Knee extension",
@@ -123,32 +63,13 @@
       "Ankle dorsiflexion"
     ],
     "correctAnswer": "Knee flexion",
-    "abcd": [
-      "A. Hip flexion",
-      "B. Knee extension",
-      "C. Knee flexion",
-      "D. Ankle dorsiflexion"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 003",
-    "question": "Which hamstring muscle has two heads?",
-    "answers": [
-      "Semitendinosus",
-      "Semimembranosus",
-      "Biceps femoris",
-      "Sartorius"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "Biceps femoris has a long head and a short head.",
-    "long_explanation": "The biceps femoris consists of two heads—long and short. The long head originates at the ischial tuberosity, while the short head originates on the femur. Both insert on the fibula.",
-    "applied_example": "Knowing the dual-head structure helps massage therapists identify the correct origin and insertion points during sports therapy.",
+    "short_explanation": "The hamstrings flex the knee and extend the hip.",
+    "long_explanation": "Hamstrings cross both the hip and knee joints. Their primary actions include knee flexion and hip extension, essential for walking, running, and jumping.",
+    "applied_example": "Tight or weak hamstrings can alter gait and increase injury risk in runners and athletes. Massage can aid recovery and flexibility.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -182,7 +103,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which hamstring muscle has two heads?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_003",
+    "question": "Which hamstring muscle has two heads?",
     "options": [
       "Semitendinosus",
       "Semimembranosus",
@@ -190,32 +117,13 @@
       "Sartorius"
     ],
     "correctAnswer": "Biceps femoris",
-    "abcd": [
-      "A. Semitendinosus",
-      "B. Semimembranosus",
-      "C. Biceps femoris",
-      "D. Sartorius"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 004",
-    "question": "Where do most of the hamstrings originate?",
-    "answers": [
-      "Ischial tuberosity",
-      "Iliac crest",
-      "Greater trochanter",
-      "Tibial tuberosity"
-    ],
-    "correct": 0,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "Most hamstrings originate from the ischial tuberosity.",
-    "long_explanation": "The semitendinosus, semimembranosus, and long head of the biceps femoris all originate from the ischial tuberosity, a key bony landmark of the pelvis.",
-    "applied_example": "This area may become tender in runners with hamstring strain or overuse—therapists can palpate the origin for assessment and care.",
+    "short_explanation": "Biceps femoris has a long head and a short head.",
+    "long_explanation": "The biceps femoris consists of two heads—long and short. The long head originates at the ischial tuberosity, while the short head originates on the femur. Both insert on the fibula.",
+    "applied_example": "Knowing the dual-head structure helps massage therapists identify the correct origin and insertion points during sports therapy.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -249,7 +157,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Where do most of the hamstrings originate?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_004",
+    "question": "Where do most of the hamstrings originate?",
     "options": [
       "Ischial tuberosity",
       "Iliac crest",
@@ -257,32 +171,13 @@
       "Tibial tuberosity"
     ],
     "correctAnswer": "Ischial tuberosity",
-    "abcd": [
-      "A. Ischial tuberosity",
-      "B. Iliac crest",
-      "C. Greater trochanter",
-      "D. Tibial tuberosity"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 005",
-    "question": "Which hamstring muscle inserts on the fibular head?",
-    "answers": [
-      "Semitendinosus",
-      "Semimembranosus",
-      "Biceps femoris",
-      "Gracilis"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "Biceps femoris inserts on the fibula.",
-    "long_explanation": "The biceps femoris inserts on the head of the fibula, distinguishing it from the semitendinosus and semimembranosus, which insert on the tibia.",
-    "applied_example": "Fibular head palpation is essential in assessing biceps femoris injury or insertional tendinopathy.",
+    "short_explanation": "Most hamstrings originate from the ischial tuberosity.",
+    "long_explanation": "The semitendinosus, semimembranosus, and long head of the biceps femoris all originate from the ischial tuberosity, a key bony landmark of the pelvis.",
+    "applied_example": "This area may become tender in runners with hamstring strain or overuse—therapists can palpate the origin for assessment and care.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -316,7 +211,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which hamstring muscle inserts on the fibular head?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_005",
+    "question": "Which hamstring muscle inserts on the fibular head?",
     "options": [
       "Semitendinosus",
       "Semimembranosus",
@@ -324,32 +225,13 @@
       "Gracilis"
     ],
     "correctAnswer": "Biceps femoris",
-    "abcd": [
-      "A. Semitendinosus",
-      "B. Semimembranosus",
-      "C. Biceps femoris",
-      "D. Gracilis"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 006",
-    "question": "Which nerve primarily innervates the hamstring muscles?",
-    "answers": [
-      "Obturator nerve",
-      "Femoral nerve",
-      "Sciatic nerve",
-      "Peroneal nerve"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "The sciatic nerve innervates most hamstrings.",
-    "long_explanation": "The tibial division of the sciatic nerve innervates all hamstring muscles except the short head of the biceps femoris, which is innervated by the common peroneal branch.",
-    "applied_example": "Understanding innervation helps distinguish between muscle dysfunction and neurological issues during treatment planning.",
+    "short_explanation": "Biceps femoris inserts on the fibula.",
+    "long_explanation": "The biceps femoris inserts on the head of the fibula, distinguishing it from the semitendinosus and semimembranosus, which insert on the tibia.",
+    "applied_example": "Fibular head palpation is essential in assessing biceps femoris injury or insertional tendinopathy.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -383,7 +265,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which nerve primarily innervates the hamstring muscles?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_006",
+    "question": "Which nerve primarily innervates the hamstring muscles?",
     "options": [
       "Obturator nerve",
       "Femoral nerve",
@@ -391,32 +279,13 @@
       "Peroneal nerve"
     ],
     "correctAnswer": "Sciatic nerve",
-    "abcd": [
-      "A. Obturator nerve",
-      "B. Femoral nerve",
-      "C. Sciatic nerve",
-      "D. Peroneal nerve"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 007",
-    "question": "Which hamstring muscle lies most medially?",
-    "answers": [
-      "Biceps femoris",
-      "Semitendinosus",
-      "Semimembranosus",
-      "Sartorius"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "Semimembranosus is the most medial hamstring muscle.",
-    "long_explanation": "From lateral to medial on the posterior thigh: biceps femoris, semitendinosus, then semimembranosus. Semimembranosus lies closest to the inner thigh.",
-    "applied_example": "Palpating medially helps therapists accurately locate the semimembranosus during treatments for medial knee pain.",
+    "short_explanation": "The sciatic nerve innervates most hamstrings.",
+    "long_explanation": "The tibial division of the sciatic nerve innervates all hamstring muscles except the short head of the biceps femoris, which is innervated by the common peroneal branch.",
+    "applied_example": "Understanding innervation helps distinguish between muscle dysfunction and neurological issues during treatment planning.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -450,7 +319,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which hamstring muscle lies most medially?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_007",
+    "question": "Which hamstring muscle lies most medially?",
     "options": [
       "Biceps femoris",
       "Semitendinosus",
@@ -458,32 +333,13 @@
       "Sartorius"
     ],
     "correctAnswer": "Semimembranosus",
-    "abcd": [
-      "A. Biceps femoris",
-      "B. Semitendinosus",
-      "C. Semimembranosus",
-      "D. Sartorius"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 008",
-    "question": "Which hamstring is part of the pes anserinus?",
-    "answers": [
-      "Semimembranosus",
-      "Biceps femoris",
-      "Semitendinosus",
-      "Adductor longus"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "Semitendinosus is part of the pes anserinus group.",
-    "long_explanation": "The pes anserinus is a conjoined tendon made up of semitendinosus, gracilis, and sartorius, inserting at the medial proximal tibia.",
-    "applied_example": "Massage techniques near the pes anserinus can relieve medial knee discomfort and improve function.",
+    "short_explanation": "Semimembranosus is the most medial hamstring muscle.",
+    "long_explanation": "From lateral to medial on the posterior thigh: biceps femoris, semitendinosus, then semimembranosus. Semimembranosus lies closest to the inner thigh.",
+    "applied_example": "Palpating medially helps therapists accurately locate the semimembranosus during treatments for medial knee pain.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -517,7 +373,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which hamstring is part of the pes anserinus?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_008",
+    "question": "Which hamstring is part of the pes anserinus?",
     "options": [
       "Semimembranosus",
       "Biceps femoris",
@@ -525,32 +387,13 @@
       "Adductor longus"
     ],
     "correctAnswer": "Semitendinosus",
-    "abcd": [
-      "A. Semimembranosus",
-      "B. Biceps femoris",
-      "C. Semitendinosus",
-      "D. Adductor longus"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 009",
-    "question": "Which hamstring muscle is most often injured in athletes?",
-    "answers": [
-      "Semitendinosus",
-      "Semimembranosus",
-      "Biceps femoris",
-      "Rectus femoris"
-    ],
-    "correct": 2,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "Biceps femoris is the most commonly strained hamstring.",
-    "long_explanation": "The biceps femoris is frequently injured due to its dual-head structure and high involvement in sprinting. Its lateral location also contributes to strain risk.",
-    "applied_example": "Sports massage protocols often prioritize treating and preventing biceps femoris injuries in runners and sprinters.",
+    "short_explanation": "Semitendinosus is part of the pes anserinus group.",
+    "long_explanation": "The pes anserinus is a conjoined tendon made up of semitendinosus, gracilis, and sartorius, inserting at the medial proximal tibia.",
+    "applied_example": "Massage techniques near the pes anserinus can relieve medial knee discomfort and improve function.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -584,7 +427,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which hamstring muscle is most often injured in athletes?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_009",
+    "question": "Which hamstring muscle is most often injured in athletes?",
     "options": [
       "Semitendinosus",
       "Semimembranosus",
@@ -592,32 +441,13 @@
       "Rectus femoris"
     ],
     "correctAnswer": "Biceps femoris",
-    "abcd": [
-      "A. Semitendinosus",
-      "B. Semimembranosus",
-      "C. Biceps femoris",
-      "D. Rectus femoris"
-    ],
-    "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
-  },
-  {
-    "id": "Hamstrings 010",
-    "question": "Which of the following is a shared action of all hamstring muscles?",
-    "answers": [
-      "Hip flexion",
-      "Knee flexion",
-      "Hip abduction",
-      "Ankle plantarflexion"
-    ],
-    "correct": 1,
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
     "distractors": [],
-    "short_explanation": "All hamstrings flex the knee.",
-    "long_explanation": "Each hamstring muscle crosses the knee joint posteriorly, allowing it to flex the knee. Most also extend the hip by crossing the hip joint.",
-    "applied_example": "Massage therapists use this shared function to assess flexibility and strength during gait evaluations.",
+    "short_explanation": "Biceps femoris is the most commonly strained hamstring.",
+    "long_explanation": "The biceps femoris is frequently injured due to its dual-head structure and high involvement in sprinting. Its lateral location also contributes to strain risk.",
+    "applied_example": "Sports massage protocols often prioritize treating and preventing biceps femoris injuries in runners and sprinters.",
     "difficulty": "intermediate",
-    "topic": "anatomy",
     "category": "Anatomy",
     "tags": [
       "muscle_group_hamstrings",
@@ -651,7 +481,13 @@
     "created_at": "2025-05-28T00:00:00.000Z",
     "updated_at": "2025-05-28T00:00:00.000Z",
     "unit": "hamstring muscles",
-    "text": "Which of the following is a shared action of all hamstring muscles?",
+    "main_topic": "anatomy",
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
+  },
+  {
+    "id": "hamstring_muscles_010",
+    "question": "Which of the following is a shared action of all hamstring muscles?",
     "options": [
       "Hip flexion",
       "Knee flexion",
@@ -659,14 +495,48 @@
       "Ankle plantarflexion"
     ],
     "correctAnswer": "Knee flexion",
-    "abcd": [
-      "A. Hip flexion",
-      "B. Knee flexion",
-      "C. Hip abduction",
-      "D. Ankle plantarflexion"
+    "topics": ["Anatomy"],
+    "subtopics": ["Muscle_groups", "Leg"],
+    "distractors": [],
+    "short_explanation": "All hamstrings flex the knee.",
+    "long_explanation": "Each hamstring muscle crosses the knee joint posteriorly, allowing it to flex the knee. Most also extend the hip by crossing the hip joint.",
+    "applied_example": "Massage therapists use this shared function to assess flexibility and strength during gait evaluations.",
+    "difficulty": "intermediate",
+    "category": "Anatomy",
+    "tags": [
+      "muscle_group_hamstrings",
+      "anatomy_leg",
+      "region_posterior_thigh",
+      "anatomy_origin",
+      "anatomy_insertion",
+      "anatomy_nerve",
+      "movement_knee_flexion",
+      "modality_massage_therapy",
+      "condition_strain",
+      "client_athlete"
     ],
+    "keywords": [
+      "hamstrings",
+      "biceps femoris",
+      "semitendinosus",
+      "semimembranosus",
+      "sciatic nerve",
+      "posterior thigh",
+      "knee flexion",
+      "hip extension"
+    ],
+    "stats": {
+      "correct": 0,
+      "incorrect": 0,
+      "attempts": 0
+    },
+    "last_answered_at": null,
+    "difficulty_adjustment": 0,
+    "created_at": "2025-05-28T00:00:00.000Z",
+    "updated_at": "2025-05-28T00:00:00.000Z",
+    "unit": "hamstring muscles",
     "main_topic": "anatomy",
-    "subtopic": "muscle_groups/leg",
-    "filename": "hamstring_muscles.json"
+    "filepath": "data/questions/anatomy/muscle_groups/leg/hamstring_muscles.json",
+    "sourceFile": "hamstring_muscles"
   }
 ]

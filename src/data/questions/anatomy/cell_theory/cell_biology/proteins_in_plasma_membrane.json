@@ -1,17 +1,18 @@
 [
   {
-    "id": "Proteins In Plasma Membrane 001",
+    "id": "proteins_in_plasma_membrane_001",
     "question": "What is the primary function of channel proteins in the plasma membrane?",
-    "answers": [
+    "options": [
       "To generate ATP",
       "To serve as hormone receptors",
       "To allow specific ions to pass through the membrane",
       "To catalyze protein synthesis"
     ],
-    "correct": 2,
+    "correctAnswer": "To allow specific ions to pass through the membrane",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -38,32 +39,19 @@
     "short_explanation": "Channel proteins help ions pass through the membrane.",
     "long_explanation": "Channel proteins form pores that allow specific ions to move across the membrane, supporting electrochemical gradients.",
     "clinical_application": "Massage can influence fluid and ion balance across membranes, aiding in relaxation and muscle recovery.",
-    "text": "What is the primary function of channel proteins in the plasma membrane?",
-    "options": [
-      "To generate ATP",
-      "To serve as hormone receptors",
-      "To allow specific ions to pass through the membrane",
-      "To catalyze protein synthesis"
-    ],
-    "correctAnswer": "To allow specific ions to pass through the membrane",
-    "abcd": [
-      "A. To generate ATP",
-      "B. To serve as hormone receptors",
-      "C. To allow specific ions to pass through the membrane",
-      "D. To catalyze protein synthesis"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 002",
+    "id": "proteins_in_plasma_membrane_002",
     "question": "Which membrane proteins help substances move against their concentration gradient using energy?",
-    "answers": ["Receptors", "Transporters", "Linkers", "Channels"],
-    "correct": 1,
+    "options": ["Receptors", "Transporters", "Linkers", "Channels"],
+    "correctAnswer": "Transporters",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -90,22 +78,19 @@
     "short_explanation": "Transporters use energy to move substances against their gradient.",
     "long_explanation": "Transport proteins actively move ions or molecules from low to high concentration using ATP, crucial for maintaining cell function.",
     "clinical_application": "Massage affects circulation and ATP availability, impacting active transport in healing tissues.",
-    "text": "Which membrane proteins help substances move against their concentration gradient using energy?",
-    "options": ["Receptors", "Transporters", "Linkers", "Channels"],
-    "correctAnswer": "Transporters",
-    "abcd": ["A. Receptors", "B. Transporters", "C. Linkers", "D. Channels"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 003",
+    "id": "proteins_in_plasma_membrane_003",
     "question": "Which type of membrane protein detects signals like hormones and initiates a response?",
-    "answers": ["Enzymes", "Receptors", "Glycoproteins", "Linkers"],
-    "correct": 1,
+    "options": ["Enzymes", "Receptors", "Glycoproteins", "Linkers"],
+    "correctAnswer": "Receptors",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_protein", "cell_signaling"],
     "keywords": ["anatomy_membrane", "anatomy_protein", "cell_signaling"],
@@ -122,22 +107,19 @@
     "short_explanation": "Receptor proteins detect signals like hormones.",
     "long_explanation": "Receptors on the cell membrane bind to hormones or neurotransmitters, initiating internal cellular responses.",
     "clinical_application": "Massage can stimulate neurotransmitter release, activating receptor pathways that promote relaxation and healing.",
-    "text": "Which type of membrane protein detects signals like hormones and initiates a response?",
-    "options": ["Enzymes", "Receptors", "Glycoproteins", "Linkers"],
-    "correctAnswer": "Receptors",
-    "abcd": ["A. Enzymes", "B. Receptors", "C. Glycoproteins", "D. Linkers"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 004",
+    "id": "proteins_in_plasma_membrane_004",
     "question": "Which protein type speeds up chemical reactions at the cell membrane?",
-    "answers": ["Channel proteins", "Enzymes", "Transporters", "Linkers"],
-    "correct": 1,
+    "options": ["Channel proteins", "Enzymes", "Transporters", "Linkers"],
+    "correctAnswer": "Enzymes",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -164,32 +146,24 @@
     "short_explanation": "Membrane-bound enzymes catalyze reactions.",
     "long_explanation": "These proteins accelerate essential chemical reactions at the cell surface, including digestion and signaling processes.",
     "clinical_application": "Massage may enhance enzymatic activity involved in inflammation and recovery.",
-    "text": "Which protein type speeds up chemical reactions at the cell membrane?",
-    "options": ["Channel proteins", "Enzymes", "Transporters", "Linkers"],
-    "correctAnswer": "Enzymes",
-    "abcd": [
-      "A. Channel proteins",
-      "B. Enzymes",
-      "C. Transporters",
-      "D. Linkers"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 005",
+    "id": "proteins_in_plasma_membrane_005",
     "question": "What is the 'lock and key' model used to describe?",
-    "answers": [
+    "options": [
       "Ion transport in channels",
       "The attachment of cells via linkers",
       "How enzymes bind to specific substrates",
       "Cholesterol's effect on fluidity"
     ],
-    "correct": 2,
+    "correctAnswer": "How enzymes bind to specific substrates",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells"],
     "keywords": ["anatomy_cells"],
@@ -203,37 +177,24 @@
     "created_at": "2025-05-24T14:34:08.115Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
     "unit": "proteins in plasma membrane",
-    "text": "What is the 'lock and key' model used to describe?",
-    "options": [
-      "Ion transport in channels",
-      "The attachment of cells via linkers",
-      "How enzymes bind to specific substrates",
-      "Cholesterol's effect on fluidity"
-    ],
-    "correctAnswer": "How enzymes bind to specific substrates",
-    "abcd": [
-      "A. Ion transport in channels",
-      "B. The attachment of cells via linkers",
-      "C. How enzymes bind to specific substrates",
-      "D. Cholesterol's effect on fluidity"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 006",
+    "id": "proteins_in_plasma_membrane_006",
     "question": "Linker proteins function to:",
-    "answers": [
+    "options": [
       "Form lipid bilayers",
       "Anchor the membrane to the cytoskeleton and extracellular structures",
       "Produce hormones",
       "Store energy"
     ],
-    "correct": 1,
+    "correctAnswer": "Anchor the membrane to the cytoskeleton and extracellular structures",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_protein", "cell_anchoring"],
     "keywords": ["anatomy_membrane", "anatomy_protein", "cell_anchoring"],
@@ -250,37 +211,24 @@
     "short_explanation": "Linker proteins anchor cells and provide structural support.",
     "long_explanation": "They connect the plasma membrane to internal and external frameworks, stabilizing cell shape and connections.",
     "clinical_application": "Structural protein knowledge helps explain tissue resistance, elasticity, and effects of manual therapy.",
-    "text": "Linker proteins function to:",
-    "options": [
-      "Form lipid bilayers",
-      "Anchor the membrane to the cytoskeleton and extracellular structures",
-      "Produce hormones",
-      "Store energy"
-    ],
-    "correctAnswer": "Anchor the membrane to the cytoskeleton and extracellular structures",
-    "abcd": [
-      "A. Form lipid bilayers",
-      "B. Anchor the membrane to the cytoskeleton and extracellular structures",
-      "C. Produce hormones",
-      "D. Store energy"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 007",
+    "id": "proteins_in_plasma_membrane_007",
     "question": "Cell identity markers are primarily involved in:",
-    "answers": [
+    "options": [
       "Catalyzing reactions",
       "Transporting proteins",
       "Recognizing self vs non-self cells",
       "Producing ATP"
     ],
-    "correct": 2,
+    "correctAnswer": "Recognizing self vs non-self cells",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_protein", "immune_identity"],
     "keywords": ["anatomy_cells", "anatomy_protein", "immune_identity"],
@@ -297,37 +245,24 @@
     "short_explanation": "Cell identity markers help recognize self vs. non-self.",
     "long_explanation": "These glycoproteins allow immune cells to identify the body's own cells and distinguish foreign invaders.",
     "clinical_application": "Massage can support immune health by improving lymphatic circulation and cellular communication.",
-    "text": "Cell identity markers are primarily involved in:",
-    "options": [
-      "Catalyzing reactions",
-      "Transporting proteins",
-      "Recognizing self vs non-self cells",
-      "Producing ATP"
-    ],
-    "correctAnswer": "Recognizing self vs non-self cells",
-    "abcd": [
-      "A. Catalyzing reactions",
-      "B. Transporting proteins",
-      "C. Recognizing self vs non-self cells",
-      "D. Producing ATP"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 008",
+    "id": "proteins_in_plasma_membrane_008",
     "question": "Which of the following contributes to the glycocalyx and functions in cell recognition?",
-    "answers": [
+    "options": [
       "Cholesterol",
       "Glycolipids",
       "Alpha-helix proteins",
       "Peripheral proteins"
     ],
-    "correct": 1,
+    "correctAnswer": "Glycolipids",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_protein", "glycocalyx_function"],
     "keywords": ["anatomy_cells", "anatomy_protein", "glycocalyx_function"],
@@ -344,37 +279,24 @@
     "short_explanation": "The glycocalyx protects the cell and aids recognition.",
     "long_explanation": "This sugary coating contains glycoproteins and glycolipids, which protect the cell and help it communicate with other cells.",
     "clinical_application": "Improved understanding supports why gentle massage techniques help maintain tissue health and communication.",
-    "text": "Which of the following contributes to the glycocalyx and functions in cell recognition?",
-    "options": [
-      "Cholesterol",
-      "Glycolipids",
-      "Alpha-helix proteins",
-      "Peripheral proteins"
-    ],
-    "correctAnswer": "Glycolipids",
-    "abcd": [
-      "A. Cholesterol",
-      "B. Glycolipids",
-      "C. Alpha-helix proteins",
-      "D. Peripheral proteins"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 009",
+    "id": "proteins_in_plasma_membrane_009",
     "question": "What is the role of glycoproteins in the plasma membrane?",
-    "answers": [
+    "options": [
       "They help regulate pH",
       "They act as receptors and identity markers",
       "They synthesize DNA",
       "They form phospholipid tails"
     ],
-    "correct": 1,
+    "correctAnswer": "They act as receptors and identity markers",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -401,37 +323,24 @@
     "short_explanation": "Glycoproteins act as receptors and identity markers.",
     "long_explanation": "These membrane proteins have sugar groups that aid in communication and immune recognition.",
     "clinical_application": "Understanding glycoprotein function supports knowledge of inflammation regulation through massage.",
-    "text": "What is the role of glycoproteins in the plasma membrane?",
-    "options": [
-      "They help regulate pH",
-      "They act as receptors and identity markers",
-      "They synthesize DNA",
-      "They form phospholipid tails"
-    ],
-    "correctAnswer": "They act as receptors and identity markers",
-    "abcd": [
-      "A. They help regulate pH",
-      "B. They act as receptors and identity markers",
-      "C. They synthesize DNA",
-      "D. They form phospholipid tails"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 010",
+    "id": "proteins_in_plasma_membrane_010",
     "question": "Which proteins span the entire lipid bilayer?",
-    "answers": [
+    "options": [
       "Peripheral proteins",
       "Alpha-helix proteins",
       "Integral proteins",
       "Glycolipids"
     ],
-    "correct": 2,
+    "correctAnswer": "Integral proteins",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_protein", "concept_integration", "integral_protein"],
     "keywords": ["anatomy_protein", "concept_integration", "integral_protein"],
@@ -448,37 +357,24 @@
     "short_explanation": "Integral proteins span the membrane and assist in transport.",
     "long_explanation": "These proteins go through the lipid bilayer and play key roles in substance movement and cell signaling.",
     "clinical_application": "Massage supports transport functions across membranes that influence muscle cell repair and recovery.",
-    "text": "Which proteins span the entire lipid bilayer?",
-    "options": [
-      "Peripheral proteins",
-      "Alpha-helix proteins",
-      "Integral proteins",
-      "Glycolipids"
-    ],
-    "correctAnswer": "Integral proteins",
-    "abcd": [
-      "A. Peripheral proteins",
-      "B. Alpha-helix proteins",
-      "C. Integral proteins",
-      "D. Glycolipids"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 011",
+    "id": "proteins_in_plasma_membrane_011",
     "question": "Peripheral proteins are typically located:",
-    "answers": [
+    "options": [
       "Deep inside the nucleus",
       "On the inner or outer surface of the membrane",
       "Spanning across the entire membrane",
       "Inside the lysosome"
     ],
-    "correct": 1,
+    "correctAnswer": "On the inner or outer surface of the membrane",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -505,37 +401,24 @@
     "short_explanation": "Peripheral proteins are on the membrane surface.",
     "long_explanation": "These proteins do not penetrate the membrane but assist in support, signaling, or connection to the cytoskeleton.",
     "clinical_application": "Massage may affect these proteins indirectly by influencing cell signaling and shape.",
-    "text": "Peripheral proteins are typically located:",
-    "options": [
-      "Deep inside the nucleus",
-      "On the inner or outer surface of the membrane",
-      "Spanning across the entire membrane",
-      "Inside the lysosome"
-    ],
-    "correctAnswer": "On the inner or outer surface of the membrane",
-    "abcd": [
-      "A. Deep inside the nucleus",
-      "B. On the inner or outer surface of the membrane",
-      "C. Spanning across the entire membrane",
-      "D. Inside the lysosome"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 012",
+    "id": "proteins_in_plasma_membrane_012",
     "question": "What structural motif do many integral proteins exhibit to pass through membranes?",
-    "answers": [
+    "options": [
       "Beta sheets",
       "Globular folds",
       "Alpha-helix structures",
       "Triple helices"
     ],
-    "correct": 2,
+    "correctAnswer": "Alpha-helix structures",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_protein", "concept_integration"],
     "keywords": ["anatomy_protein", "concept_integration"],
@@ -549,32 +432,19 @@
     "created_at": "2025-05-24T14:34:08.115Z",
     "updated_at": "2025-05-24T14:54:13.459Z",
     "unit": "proteins in plasma membrane",
-    "text": "What structural motif do many integral proteins exhibit to pass through membranes?",
-    "options": [
-      "Beta sheets",
-      "Globular folds",
-      "Alpha-helix structures",
-      "Triple helices"
-    ],
-    "correctAnswer": "Alpha-helix structures",
-    "abcd": [
-      "A. Beta sheets",
-      "B. Globular folds",
-      "C. Alpha-helix structures",
-      "D. Triple helices"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 013",
+    "id": "proteins_in_plasma_membrane_013",
     "question": "Which of the following is NOT a protein but is embedded in the membrane and affects its fluidity?",
-    "answers": ["Cholesterol", "Globular protein", "Linker", "Receptor"],
-    "correct": 0,
+    "options": ["Cholesterol", "Globular protein", "Linker", "Receptor"],
+    "correctAnswer": "Cholesterol",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_protein", "cholesterol_membrane"],
     "keywords": ["anatomy_membrane", "anatomy_protein", "cholesterol_membrane"],
@@ -591,32 +461,24 @@
     "short_explanation": "Cholesterol stabilizes and adds fluidity to the membrane.",
     "long_explanation": "It inserts between lipids to prevent rigidity or excessive fluidity, maintaining optimal membrane function.",
     "clinical_application": "Massage may help maintain membrane health, flexibility, and nutrient transport influenced by cholesterol.",
-    "text": "Which of the following is NOT a protein but is embedded in the membrane and affects its fluidity?",
-    "options": ["Cholesterol", "Globular protein", "Linker", "Receptor"],
-    "correctAnswer": "Cholesterol",
-    "abcd": [
-      "A. Cholesterol",
-      "B. Globular protein",
-      "C. Linker",
-      "D. Receptor"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 014",
+    "id": "proteins_in_plasma_membrane_014",
     "question": "Globular proteins in the membrane are characterized by:",
-    "answers": [
+    "options": [
       "Linear shape with no folding",
       "Highly folded, compact structure with specific functions",
       "DNA storage roles",
       "Formation of lipid layers"
     ],
-    "correct": 1,
+    "correctAnswer": "Highly folded, compact structure with specific functions",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -643,32 +505,19 @@
     "short_explanation": "Globular proteins are compact and functional in shape.",
     "long_explanation": "They have a tightly folded 3D structure, enabling precise interactions for enzymatic, signaling, or transport roles.",
     "clinical_application": "This supports understanding how massage influences protein function and recovery mechanisms.",
-    "text": "Globular proteins in the membrane are characterized by:",
-    "options": [
-      "Linear shape with no folding",
-      "Highly folded, compact structure with specific functions",
-      "DNA storage roles",
-      "Formation of lipid layers"
-    ],
-    "correctAnswer": "Highly folded, compact structure with specific functions",
-    "abcd": [
-      "A. Linear shape with no folding",
-      "B. Highly folded, compact structure with specific functions",
-      "C. DNA storage roles",
-      "D. Formation of lipid layers"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 015",
+    "id": "proteins_in_plasma_membrane_015",
     "question": "The Na+/K+ pump is an example of which type of membrane protein?",
-    "answers": ["Receptor", "Enzyme", "Transporter", "Linker"],
-    "correct": 2,
+    "options": ["Receptor", "Enzyme", "Transporter", "Linker"],
+    "correctAnswer": "Transporter",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_protein", "sodium_potassium_pump"],
     "keywords": [
@@ -689,27 +538,24 @@
     "short_explanation": "This pump is an active transporter maintaining ion balance.",
     "long_explanation": "It moves sodium and potassium ions against their gradients using ATP, maintaining cell homeostasis.",
     "clinical_application": "Massage improves circulation and may indirectly enhance ATP availability for such essential ion pumps.",
-    "text": "The Na+/K+ pump is an example of which type of membrane protein?",
-    "options": ["Receptor", "Enzyme", "Transporter", "Linker"],
-    "correctAnswer": "Transporter",
-    "abcd": ["A. Receptor", "B. Enzyme", "C. Transporter", "D. Linker"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 016",
+    "id": "proteins_in_plasma_membrane_016",
     "question": "Cholesterol's role in the plasma membrane is to:",
-    "answers": [
+    "options": [
       "Decrease membrane thickness",
       "Add rigidity and maintain fluidity",
       "Break down proteins",
       "Signal neurotransmitters"
     ],
-    "correct": 1,
+    "correctAnswer": "Add rigidity and maintain fluidity",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -736,37 +582,24 @@
     "short_explanation": "Cholesterol stabilizes and adds fluidity to the membrane.",
     "long_explanation": "It inserts between lipids to prevent rigidity or excessive fluidity, maintaining optimal membrane function.",
     "clinical_application": "Massage may help maintain membrane health, flexibility, and nutrient transport influenced by cholesterol.",
-    "text": "Cholesterol's role in the plasma membrane is to:",
-    "options": [
-      "Decrease membrane thickness",
-      "Add rigidity and maintain fluidity",
-      "Break down proteins",
-      "Signal neurotransmitters"
-    ],
-    "correctAnswer": "Add rigidity and maintain fluidity",
-    "abcd": [
-      "A. Decrease membrane thickness",
-      "B. Add rigidity and maintain fluidity",
-      "C. Break down proteins",
-      "D. Signal neurotransmitters"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 017",
+    "id": "proteins_in_plasma_membrane_017",
     "question": "Which of the following best describes the function of the glycocalyx?",
-    "answers": [
+    "options": [
       "Energy production",
       "Structural reinforcement",
       "Protection and cell recognition",
       "Synthesis of cholesterol"
     ],
-    "correct": 2,
+    "correctAnswer": "Protection and cell recognition",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "glycocalyx_function"],
     "keywords": ["anatomy_cells", "glycocalyx_function"],
@@ -783,32 +616,19 @@
     "short_explanation": "The glycocalyx protects the cell and aids recognition.",
     "long_explanation": "This sugary coating contains glycoproteins and glycolipids, which protect the cell and help it communicate with other cells.",
     "clinical_application": "Improved understanding supports why gentle massage techniques help maintain tissue health and communication.",
-    "text": "Which of the following best describes the function of the glycocalyx?",
-    "options": [
-      "Energy production",
-      "Structural reinforcement",
-      "Protection and cell recognition",
-      "Synthesis of cholesterol"
-    ],
-    "correctAnswer": "Protection and cell recognition",
-    "abcd": [
-      "A. Energy production",
-      "B. Structural reinforcement",
-      "C. Protection and cell recognition",
-      "D. Synthesis of cholesterol"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 018",
+    "id": "proteins_in_plasma_membrane_018",
     "question": "Membrane receptors typically bind to:",
-    "answers": ["Ions", "Hormones or signaling molecules", "DNA", "ATP"],
-    "correct": 1,
+    "options": ["Ions", "Hormones or signaling molecules", "DNA", "ATP"],
+    "correctAnswer": "Hormones or signaling molecules",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_dna", "cell_signaling"],
     "keywords": ["anatomy_membrane", "anatomy_dna", "cell_signaling"],
@@ -825,32 +645,24 @@
     "short_explanation": "Receptor proteins detect signals like hormones.",
     "long_explanation": "Receptors on the cell membrane bind to hormones or neurotransmitters, initiating internal cellular responses.",
     "clinical_application": "Massage can stimulate neurotransmitter release, activating receptor pathways that promote relaxation and healing.",
-    "text": "Membrane receptors typically bind to:",
-    "options": ["Ions", "Hormones or signaling molecules", "DNA", "ATP"],
-    "correctAnswer": "Hormones or signaling molecules",
-    "abcd": [
-      "A. Ions",
-      "B. Hormones or signaling molecules",
-      "C. DNA",
-      "D. ATP"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 019",
+    "id": "proteins_in_plasma_membrane_019",
     "question": "What is the overall role of proteins in the plasma membrane?",
-    "answers": [
+    "options": [
       "They solely act as passive barriers",
       "They serve diverse roles in transport, signaling, and structural support",
       "They reduce cell metabolism",
       "They produce cell wall components"
     ],
-    "correct": 1,
+    "correctAnswer": "They serve diverse roles in transport, signaling, and structural support",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -881,37 +693,24 @@
     "short_explanation": "Membrane proteins transport, signal, and support the cell.",
     "long_explanation": "Proteins embedded in the membrane perform many functions like substance transport, signal reception, and structural stability.",
     "clinical_application": "Massage benefits cellular function by supporting all these protein roles through increased circulation and oxygenation.",
-    "text": "What is the overall role of proteins in the plasma membrane?",
-    "options": [
-      "They solely act as passive barriers",
-      "They serve diverse roles in transport, signaling, and structural support",
-      "They reduce cell metabolism",
-      "They produce cell wall components"
-    ],
-    "correctAnswer": "They serve diverse roles in transport, signaling, and structural support",
-    "abcd": [
-      "A. They solely act as passive barriers",
-      "B. They serve diverse roles in transport, signaling, and structural support",
-      "C. They reduce cell metabolism",
-      "D. They produce cell wall components"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   },
   {
-    "id": "Proteins In Plasma Membrane 020",
+    "id": "proteins_in_plasma_membrane_020",
     "question": "Which protein type would be most involved in immune system cell-cell communication?",
-    "answers": [
+    "options": [
       "Transporters",
       "Channel proteins",
       "Cell identity markers",
       "Enzymes"
     ],
-    "correct": 2,
+    "correctAnswer": "Cell identity markers",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Cell_biology"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -938,22 +737,8 @@
     "short_explanation": "Cell identity markers help recognize self vs. non-self.",
     "long_explanation": "These glycoproteins allow immune cells to identify the body's own cells and distinguish foreign invaders.",
     "clinical_application": "Massage can support immune health by improving lymphatic circulation and cellular communication.",
-    "text": "Which protein type would be most involved in immune system cell-cell communication?",
-    "options": [
-      "Transporters",
-      "Channel proteins",
-      "Cell identity markers",
-      "Enzymes"
-    ],
-    "correctAnswer": "Cell identity markers",
-    "abcd": [
-      "A. Transporters",
-      "B. Channel proteins",
-      "C. Cell identity markers",
-      "D. Enzymes"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/cell_biology",
-    "filename": "proteins_in_plasma_membrane.json"
+    "filepath": "data/questions/anatomy/cell_theory/cell_biology/proteins_in_plasma_membrane.json",
+    "sourceFile": "proteins_in_plasma_membrane"
   }
 ]

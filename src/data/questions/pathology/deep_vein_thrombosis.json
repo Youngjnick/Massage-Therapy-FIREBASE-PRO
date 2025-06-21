@@ -1,19 +1,20 @@
 [
   {
-    "id": "dvt_001",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_001",
     "question": "What is the primary risk associated with a deep vein thrombosis (DVT)?",
-    "answers": [
+    "options": [
       "Varicose veins",
       "Pulmonary embolism",
       "Peripheral neuropathy",
       "Lymphedema"
     ],
-    "correct": "Pulmonary embolism",
+    "correctAnswer": "Pulmonary embolism",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The most dangerous consequence of a DVT is a pulmonary embolism.",
     "long_explanation": "When a thrombus (blood clot) dislodges from a vein, it can travel to the lungs, causing a pulmonary embolism—a life-threatening emergency.",
     "clinical_application": "Massage therapists should never treat a client with suspected DVT due to the risk of dislodging a clot.",
@@ -22,24 +23,25 @@
     "mblex_category": "Pathology",
     "source_reference": "CDC: Deep Vein Thrombosis",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_002",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_002",
     "question": "Which of the following is a classic symptom of DVT in the lower limb?",
-    "answers": [
+    "options": [
       "Cold, pale toes",
       "Swelling, redness, and warmth",
       "Numbness and tingling",
       "Muscle spasms"
     ],
-    "correct": "Swelling, redness, and warmth",
+    "correctAnswer": "Swelling, redness, and warmth",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "Multiple Choice",
     "short_explanation": "DVT commonly presents as swelling, redness, and a warm sensation.",
     "long_explanation": "DVT typically manifests as localized swelling, erythema (redness), warmth, and sometimes pain or tightness in the leg. These symptoms are unilateral and may be mistaken for muscle strain or cellulitis.",
     "clinical_application": "Recognizing these symptoms is essential to avoid performing massage that could risk a pulmonary embolism.",
@@ -48,19 +50,20 @@
     "mblex_category": "Pathology",
     "source_reference": "Mayo Clinic: DVT Symptoms",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_003",
-    "topic": "Pathology",
+    "id": "deep_vein_thrombosis_003",
+    "question": "Which diagnostic test is most commonly used to confirm a suspected DVT?",
+    "options": ["MRI", "X-ray", "Ultrasound imaging", "CT scan"],
+    "correctAnswer": "Ultrasound imaging",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
     "subcategory": "Deep Vein Thrombosis",
     "difficulty": "Medium",
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
-    "question": "Which diagnostic test is most commonly used to confirm a suspected DVT?",
-    "answers": ["MRI", "X-ray", "Ultrasound imaging", "CT scan"],
-    "correct": "Ultrasound imaging",
     "short_explanation": "Duplex ultrasound is the most common test for diagnosing DVT.",
     "long_explanation": "Duplex ultrasound is a non-invasive and highly effective imaging test that visualizes blood flow and can identify clots in the veins. It is the first-line tool used to diagnose DVT.",
     "clinical_application": "Massage therapists should refer clients with DVT-like symptoms to a physician for ultrasound evaluation.",
@@ -69,24 +72,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Johns Hopkins Medicine: DVT Diagnosis",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_004",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_004",
     "question": "Which factor increases a person's risk of developing DVT?",
-    "answers": [
+    "options": [
       "High fluid intake",
       "Prolonged immobility",
       "Low blood pressure",
       "Frequent massage"
     ],
-    "correct": "Prolonged immobility",
+    "correctAnswer": "Prolonged immobility",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Stagnant blood flow during immobility increases clotting risk.",
     "long_explanation": "Extended periods of immobility, such as during long flights, bed rest, or after surgery, can cause blood to pool in the legs, increasing the risk of clot formation.",
     "clinical_application": "Massage therapists should inquire about recent travel or surgeries when assessing clients with lower limb discomfort.",
@@ -95,24 +99,25 @@
     "mblex_category": "Pathology",
     "source_reference": "American College of Cardiology",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_005",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_005",
     "question": "Which client scenario most strongly contraindicates massage due to DVT risk?",
-    "answers": [
+    "options": [
       "A client with a healing muscle strain",
       "A client on anticoagulant therapy",
       "A client with unilateral calf swelling and tenderness",
       "A client with controlled hypertension"
     ],
-    "correct": "A client with unilateral calf swelling and tenderness",
+    "correctAnswer": "A client with unilateral calf swelling and tenderness",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "This presentation is characteristic of an active DVT.",
     "long_explanation": "Unilateral calf swelling, tenderness, and warmth are hallmark signs of DVT and warrant medical referral. Massage could dislodge the clot.",
     "clinical_application": "Recognizing key DVT symptoms ensures therapist safety and client protection.",
@@ -121,24 +126,25 @@
     "mblex_category": "Pathology",
     "source_reference": "FSMTB Massage Therapy Guidelines",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_006",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_006",
     "question": "What is a key preventative strategy for avoiding DVT during long travel?",
-    "answers": [
+    "options": [
       "Massaging the legs before flying",
       "Taking sedatives on long flights",
       "Wearing compression stockings and walking periodically",
       "Drinking caffeine-rich beverages"
     ],
-    "correct": "Wearing compression stockings and walking periodically",
+    "correctAnswer": "Wearing compression stockings and walking periodically",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "These measures promote circulation and reduce clot risk.",
     "long_explanation": "To prevent DVT on long trips, individuals should wear compression stockings, stay hydrated, and move their legs regularly to maintain healthy venous return.",
     "clinical_application": "Therapists should advise clients on safe travel practices, especially those with known vascular conditions.",
@@ -147,24 +153,25 @@
     "mblex_category": "Pathology",
     "source_reference": "World Health Organization: Travel and Health",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_007",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_007",
     "question": "Which medication class is commonly used to treat and prevent DVT?",
-    "answers": [
+    "options": [
       "Beta blockers",
       "Anticoagulants",
       "Antibiotics",
       "Corticosteroids"
     ],
-    "correct": "Anticoagulants",
+    "correctAnswer": "Anticoagulants",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Anticoagulants reduce blood clot formation.",
     "long_explanation": "Drugs such as heparin and warfarin are anticoagulants that help prevent the growth or formation of blood clots. They are the cornerstone of DVT treatment.",
     "clinical_application": "Clients on anticoagulants require careful assessment due to increased bleeding risk from deep pressure or vigorous techniques.",
@@ -173,24 +180,25 @@
     "mblex_category": "Pathology",
     "source_reference": "American Society of Hematology",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_008",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_008",
     "question": "What is post-thrombotic syndrome (PTS), a common complication of DVT?",
-    "answers": [
+    "options": [
       "A new blood clot in the heart",
       "Persistent leg pain and swelling after a DVT",
       "A clot that spreads to the arm",
       "An autoimmune condition triggered by clotting"
     ],
-    "correct": "Persistent leg pain and swelling after a DVT",
+    "correctAnswer": "Persistent leg pain and swelling after a DVT",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "PTS is a chronic complication of DVT affecting the same limb.",
     "long_explanation": "Post-thrombotic syndrome occurs due to damage to venous valves, resulting in chronic pain, swelling, and skin changes in the affected limb after DVT.",
     "clinical_application": "Massage therapy must be modified for clients with PTS to avoid exacerbating swelling or vascular stress.",
@@ -199,24 +207,25 @@
     "mblex_category": "Pathology",
     "source_reference": "National Blood Clot Alliance",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_009",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_009",
     "question": "Which symptom requires emergency referral in a client with suspected DVT?",
-    "answers": [
+    "options": [
       "Mild soreness in both legs",
       "Pain in the heel during walking",
       "Sudden shortness of breath or chest pain",
       "Swelling in the hands"
     ],
-    "correct": "Sudden shortness of breath or chest pain",
+    "correctAnswer": "Sudden shortness of breath or chest pain",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "These may indicate a pulmonary embolism.",
     "long_explanation": "A clot that dislodges from the leg can travel to the lungs, causing a pulmonary embolism. Symptoms like shortness of breath, chest pain, or coughing blood are medical emergencies.",
     "clinical_application": "Massage therapists must stop treatment and refer immediately if a client reports these signs.",
@@ -225,24 +234,25 @@
     "mblex_category": "Pathology",
     "source_reference": "American Heart Association",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   },
   {
-    "id": "dvt_010",
-    "topic": "Pathology",
-    "subcategory": "Deep Vein Thrombosis",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "Multiple Choice",
+    "id": "deep_vein_thrombosis_010",
     "question": "Why is massage contraindicated in cases of suspected DVT?",
-    "answers": [
+    "options": [
       "It can improve circulation too much",
       "It might relax muscles excessively",
       "It can dislodge the clot and cause an embolism",
       "It is too painful to perform"
     ],
-    "correct": "It can dislodge the clot and cause an embolism",
+    "correctAnswer": "It can dislodge the clot and cause an embolism",
+    "topics": ["Pathology"],
+    "subtopics": ["Deep_vein_thrombosis.json"],
+    "subcategory": "Deep Vein Thrombosis",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "Multiple Choice",
     "short_explanation": "Massage may release the clot into the bloodstream.",
     "long_explanation": "Manual pressure during massage may dislodge a thrombus from the deep veins. If it travels to the lungs, it can cause a potentially fatal pulmonary embolism.",
     "clinical_application": "Therapists must always screen for signs of DVT before treating clients with limb swelling or trauma history.",
@@ -251,7 +261,7 @@
     "mblex_category": "Pathology",
     "source_reference": "FSMTB Massage Therapy Guidelines",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "deep_vein_thrombosis.json"
+    "filepath": "data/questions/pathology/deep_vein_thrombosis.json",
+    "sourceFile": "deep_vein_thrombosis"
   }
 ]

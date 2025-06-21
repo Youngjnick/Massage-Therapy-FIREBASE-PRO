@@ -1,19 +1,20 @@
 [
   {
-    "id": "Tibial Nerve 001",
+    "id": "tibial_nerve_innervations_001",
     "question": "Which muscle is primarily innervated by the tibial nerve?",
-    "answers": [
+    "options": [
       "Tibialis anterior",
       "Gastrocnemius",
       "Fibularis longus",
       "Extensor hallucis longus"
     ],
-    "correct": 1,
+    "correctAnswer": "Gastrocnemius",
+    "topics": ["Anatomy", "Nerve_innervations"],
+    "subtopics": ["Innervations", "Hip_innervations"],
     "short_explanation": "The gastrocnemius is innervated by the tibial nerve.",
     "long_explanation": "The tibial nerve innervates the posterior compartment of the leg, including gastrocnemius, which plays a vital role in plantarflexion and propulsion during gait.",
     "applied_example": "Deep tissue massage to the gastrocnemius can reduce cramping and support rehabilitation in clients with nerve root impingement affecting tibial nerve function.",
     "difficulty": "intermediate",
-    "topic": "nerve_innervations",
     "category": "Anatomy",
     "tags": [
       "nerve_tibial",
@@ -36,22 +37,8 @@
       "incorrect": 0,
       "attempts": 0
     },
-    "text": "Which muscle is primarily innervated by the tibial nerve?",
-    "options": [
-      "Tibialis anterior",
-      "Gastrocnemius",
-      "Fibularis longus",
-      "Extensor hallucis longus"
-    ],
-    "correctAnswer": "Gastrocnemius",
-    "abcd": [
-      "A. Tibialis anterior",
-      "B. Gastrocnemius",
-      "C. Fibularis longus",
-      "D. Extensor hallucis longus"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/hip_innervations",
-    "filename": "tibial_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/hip_innervations/tibial_nerve_innervations.json",
+    "sourceFile": "tibial_nerve_innervations"
   }
 ]

@@ -1,68 +1,7 @@
 [
   {
-    "id": "Craniosacral 001",
+    "id": "craniosacral_intro_001",
     "question": "What is the primary goal of craniosacral therapy?",
-    "answers": [
-      "Increasing blood pressure",
-      "Releasing fascial restrictions in the craniosacral system",
-      "Strengthening skeletal muscles",
-      "Enhancing lymphatic drainage"
-    ],
-    "correct": 1,
-    "distractors": [],
-    "short_explanation": "Craniosacral therapy aims to release restrictions in the craniosacral system to enhance the body’s natural healing.",
-    "long_explanation": "Craniosacral therapy (CST) is a gentle, hands-on modality that targets the membranes and cerebrospinal fluid surrounding the brain and spinal cord. Its primary goal is to identify and release restrictions in the craniosacral system to improve central nervous system function and overall well-being.",
-    "clinical_application": "Practitioners may use CST techniques to assist clients dealing with migraines, chronic pain, and nervous system dysregulation.",
-    "difficulty": "moderate",
-    "topic": "modalities",
-    "category": "Modalities",
-    "tags": [
-      "modality_lymphatic_drainage",
-      "technique_pressure",
-      "anatomy_membrane",
-      "anatomy_muscles",
-      "anatomy_nervous_system",
-      "condition_pain",
-      "purpose_healing",
-      "client",
-      "anatomy_brain",
-      "modality_craniosacral_therapy",
-      "concept_assists",
-      "concept_assisted",
-      "concept_targeted",
-      "organ_brain",
-      "organ_spinal_cord",
-      "modality_modality"
-    ],
-    "keywords": [
-      "modality_lymphatic_drainage",
-      "technique_pressure",
-      "anatomy_membrane",
-      "anatomy_muscles",
-      "anatomy_nervous_system",
-      "condition_pain",
-      "purpose_healing",
-      "client",
-      "anatomy_brain",
-      "modality_craniosacral_therapy",
-      "concept_assists",
-      "concept_assisted",
-      "concept_targeted",
-      "organ_brain",
-      "organ_spinal_cord",
-      "modality_modality"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.131Z",
-    "updated_at": "2025-05-24T14:54:13.478Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "What is the primary goal of craniosacral therapy?",
     "options": [
       "Increasing blood pressure",
       "Releasing fascial restrictions in the craniosacral system",
@@ -70,48 +9,49 @@
       "Enhancing lymphatic drainage"
     ],
     "correctAnswer": "Releasing fascial restrictions in the craniosacral system",
-    "abcd": [
-      "A. Increasing blood pressure",
-      "B. Releasing fascial restrictions in the craniosacral system",
-      "C. Strengthening skeletal muscles",
-      "D. Enhancing lymphatic drainage"
-    ],
-    "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
-  },
-  {
-    "id": "Craniosacral 002",
-    "question": "What fluid does craniosacral therapy focus on?",
-    "answers": [
-      "Synovial fluid",
-      "Lymph",
-      "Cerebrospinal fluid",
-      "Blood plasma"
-    ],
-    "correct": 2,
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
-    "short_explanation": "CST focuses on the movement of cerebrospinal fluid around the brain and spinal cord.",
-    "long_explanation": "Cerebrospinal fluid (CSF) plays a crucial role in protecting and nourishing the brain and spinal cord. CST practitioners aim to detect and normalize the rhythm of CSF, which they believe affects the health of the entire body.",
-    "clinical_application": "Subtle palpation of CSF flow helps guide therapeutic decisions, especially in neurological or stress-related complaints.",
+    "short_explanation": "Craniosacral therapy aims to release restrictions in the craniosacral system to enhance the body’s natural healing.",
+    "long_explanation": "Craniosacral therapy (CST) is a gentle, hands-on modality that targets the membranes and cerebrospinal fluid surrounding the brain and spinal cord. Its primary goal is to identify and release restrictions in the craniosacral system to improve central nervous system function and overall well-being.",
+    "clinical_application": "Practitioners may use CST techniques to assist clients dealing with migraines, chronic pain, and nervous system dysregulation.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
-      "purpose_stress",
+      "modality_lymphatic_drainage",
+      "technique_pressure",
+      "anatomy_membrane",
+      "anatomy_muscles",
+      "anatomy_nervous_system",
+      "condition_pain",
+      "purpose_healing",
+      "client",
       "anatomy_brain",
       "modality_craniosacral_therapy",
-      "concept_focuses",
+      "concept_assists",
+      "concept_assisted",
+      "concept_targeted",
       "organ_brain",
-      "organ_spinal_cord"
+      "organ_spinal_cord",
+      "modality_modality"
     ],
     "keywords": [
-      "purpose_stress",
+      "modality_lymphatic_drainage",
+      "technique_pressure",
+      "anatomy_membrane",
+      "anatomy_muscles",
+      "anatomy_nervous_system",
+      "condition_pain",
+      "purpose_healing",
+      "client",
       "anatomy_brain",
       "modality_craniosacral_therapy",
-      "concept_focuses",
+      "concept_assists",
+      "concept_assisted",
+      "concept_targeted",
       "organ_brain",
-      "organ_spinal_cord"
+      "organ_spinal_cord",
+      "modality_modality"
     ],
     "stats": {
       "correct": 0,
@@ -123,7 +63,13 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "What fluid does craniosacral therapy focus on?",
+    "main_topic": "modalities",
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
+  },
+  {
+    "id": "craniosacral_intro_002",
+    "question": "What fluid does craniosacral therapy focus on?",
     "options": [
       "Synovial fluid",
       "Lymph",
@@ -131,46 +77,29 @@
       "Blood plasma"
     ],
     "correctAnswer": "Cerebrospinal fluid",
-    "abcd": [
-      "A. Synovial fluid",
-      "B. Lymph",
-      "C. Cerebrospinal fluid",
-      "D. Blood plasma"
-    ],
-    "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
-  },
-  {
-    "id": "Craniosacral 003",
-    "question": "Craniosacral therapy was developed by which osteopathic physician?",
-    "answers": [
-      "John Upledger",
-      "Andrew Taylor Still",
-      "Janet Travell",
-      "Ida Rolf"
-    ],
-    "correct": 0,
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
-    "short_explanation": "Dr. John Upledger is credited with developing and popularizing craniosacral therapy.",
-    "long_explanation": "In the 1970s and 1980s, Dr. John Upledger expanded on early cranial concepts introduced by William Sutherland to create craniosacral therapy. He integrated osteopathic principles with light-touch techniques to access the craniosacral system.",
-    "clinical_application": "Upledger’s approach is widely taught in massage and physical therapy programs for its gentle effectiveness.",
+    "short_explanation": "CST focuses on the movement of cerebrospinal fluid around the brain and spinal cord.",
+    "long_explanation": "Cerebrospinal fluid (CSF) plays a crucial role in protecting and nourishing the brain and spinal cord. CST practitioners aim to detect and normalize the rhythm of CSF, which they believe affects the health of the entire body.",
+    "clinical_application": "Subtle palpation of CSF flow helps guide therapeutic decisions, especially in neurological or stress-related complaints.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
-      "modality_massage",
-      "modality_rolfing",
-      "founder_ida_rolf",
-      "concept_integration",
-      "modality_craniosacral_therapy"
+      "purpose_stress",
+      "anatomy_brain",
+      "modality_craniosacral_therapy",
+      "concept_focuses",
+      "organ_brain",
+      "organ_spinal_cord"
     ],
     "keywords": [
-      "modality_massage",
-      "modality_rolfing",
-      "founder_ida_rolf",
-      "concept_integration",
-      "modality_craniosacral_therapy"
+      "purpose_stress",
+      "anatomy_brain",
+      "modality_craniosacral_therapy",
+      "concept_focuses",
+      "organ_brain",
+      "organ_spinal_cord"
     ],
     "stats": {
       "correct": 0,
@@ -182,7 +111,13 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "Craniosacral therapy was developed by which osteopathic physician?",
+    "main_topic": "modalities",
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
+  },
+  {
+    "id": "craniosacral_intro_003",
+    "question": "Craniosacral therapy was developed by which osteopathic physician?",
     "options": [
       "John Upledger",
       "Andrew Taylor Still",
@@ -190,60 +125,27 @@
       "Ida Rolf"
     ],
     "correctAnswer": "John Upledger",
-    "abcd": [
-      "A. John Upledger",
-      "B. Andrew Taylor Still",
-      "C. Janet Travell",
-      "D. Ida Rolf"
-    ],
-    "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
-  },
-  {
-    "id": "Craniosacral 004",
-    "question": "Which of the following is a technique used in craniosacral therapy?",
-    "answers": [
-      "Muscle stripping",
-      "Myofascial unwinding",
-      "Still point induction",
-      "Deep tissue compression"
-    ],
-    "correct": 2,
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
-    "short_explanation": "Still point induction is a CST technique that encourages relaxation by pausing the craniosacral rhythm.",
-    "long_explanation": "A still point occurs when the rhythm of cerebrospinal fluid temporarily stops or slows, allowing the body to reset and reorganize. Inducing this state through gentle contact (often at the occiput) is believed to promote deep healing and parasympathetic activation.",
-    "clinical_application": "Useful for clients with chronic stress, tension headaches, or anxiety-related symptoms.",
+    "short_explanation": "Dr. John Upledger is credited with developing and popularizing craniosacral therapy.",
+    "long_explanation": "In the 1970s and 1980s, Dr. John Upledger expanded on early cranial concepts introduced by William Sutherland to create craniosacral therapy. He integrated osteopathic principles with light-touch techniques to access the craniosacral system.",
+    "clinical_application": "Upledger’s approach is widely taught in massage and physical therapy programs for its gentle effectiveness.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
-      "modality_deep_tissue",
-      "modality_myofascial",
-      "technique_compression",
-      "anatomy_tissues",
-      "anatomy_muscles",
-      "purpose_relaxation",
-      "purpose_stress",
-      "purpose_healing",
-      "client",
-      "modality_craniosacral_therapy",
-      "concept_tension",
-      "concept_anxiety"
+      "modality_massage",
+      "modality_rolfing",
+      "founder_ida_rolf",
+      "concept_integration",
+      "modality_craniosacral_therapy"
     ],
     "keywords": [
-      "modality_deep_tissue",
-      "modality_myofascial",
-      "technique_compression",
-      "anatomy_tissues",
-      "anatomy_muscles",
-      "purpose_relaxation",
-      "purpose_stress",
-      "purpose_healing",
-      "client",
-      "modality_craniosacral_therapy",
-      "concept_tension",
-      "concept_anxiety"
+      "modality_massage",
+      "modality_rolfing",
+      "founder_ida_rolf",
+      "concept_integration",
+      "modality_craniosacral_therapy"
     ],
     "stats": {
       "correct": 0,
@@ -255,7 +157,13 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "Which of the following is a technique used in craniosacral therapy?",
+    "main_topic": "modalities",
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
+  },
+  {
+    "id": "craniosacral_intro_004",
+    "question": "Which of the following is a technique used in craniosacral therapy?",
     "options": [
       "Muscle stripping",
       "Myofascial unwinding",
@@ -263,46 +171,41 @@
       "Deep tissue compression"
     ],
     "correctAnswer": "Still point induction",
-    "abcd": [
-      "A. Muscle stripping",
-      "B. Myofascial unwinding",
-      "C. Still point induction",
-      "D. Deep tissue compression"
-    ],
-    "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
-  },
-  {
-    "id": "Craniosacral 005",
-    "question": "What type of touch is characteristic of craniosacral therapy?",
-    "answers": [
-      "5–10 pounds of pressure",
-      "Firm gliding strokes",
-      "Feather-light contact, under 5 grams of pressure",
-      "Percussion techniques"
-    ],
-    "correct": 2,
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
-    "short_explanation": "CST uses very light touch—often less than the weight of a nickel.",
-    "long_explanation": "Craniosacral therapy relies on subtle palpation skills to detect minute movements and rhythms. The light touch is meant to interact with the craniosacral rhythm without engaging the muscle or skeletal systems directly.",
-    "clinical_application": "Ideal for sensitive clients, including those with fibromyalgia, chronic fatigue, or trauma.",
+    "short_explanation": "Still point induction is a CST technique that encourages relaxation by pausing the craniosacral rhythm.",
+    "long_explanation": "A still point occurs when the rhythm of cerebrospinal fluid temporarily stops or slows, allowing the body to reset and reorganize. Inducing this state through gentle contact (often at the occiput) is believed to promote deep healing and parasympathetic activation.",
+    "clinical_application": "Useful for clients with chronic stress, tension headaches, or anxiety-related symptoms.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
-      "technique_pounding",
-      "technique_pressure",
+      "modality_deep_tissue",
+      "modality_myofascial",
+      "technique_compression",
+      "anatomy_tissues",
       "anatomy_muscles",
-      "condition_fibromyalgia",
-      "modality_craniosacral_therapy"
+      "purpose_relaxation",
+      "purpose_stress",
+      "purpose_healing",
+      "client",
+      "modality_craniosacral_therapy",
+      "concept_tension",
+      "concept_anxiety"
     ],
     "keywords": [
-      "technique_pounding",
-      "technique_pressure",
+      "modality_deep_tissue",
+      "modality_myofascial",
+      "technique_compression",
+      "anatomy_tissues",
       "anatomy_muscles",
-      "condition_fibromyalgia",
-      "modality_craniosacral_therapy"
+      "purpose_relaxation",
+      "purpose_stress",
+      "purpose_healing",
+      "client",
+      "modality_craniosacral_therapy",
+      "concept_tension",
+      "concept_anxiety"
     ],
     "stats": {
       "correct": 0,
@@ -314,7 +217,13 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "What type of touch is characteristic of craniosacral therapy?",
+    "main_topic": "modalities",
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
+  },
+  {
+    "id": "craniosacral_intro_005",
+    "question": "What type of touch is characteristic of craniosacral therapy?",
     "options": [
       "5–10 pounds of pressure",
       "Firm gliding strokes",
@@ -322,27 +231,54 @@
       "Percussion techniques"
     ],
     "correctAnswer": "Feather-light contact, under 5 grams of pressure",
-    "abcd": [
-      "A. 5–10 pounds of pressure",
-      "B. Firm gliding strokes",
-      "C. Feather-light contact, under 5 grams of pressure",
-      "D. Percussion techniques"
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
+    "distractors": [],
+    "short_explanation": "CST uses very light touch—often less than the weight of a nickel.",
+    "long_explanation": "Craniosacral therapy relies on subtle palpation skills to detect minute movements and rhythms. The light touch is meant to interact with the craniosacral rhythm without engaging the muscle or skeletal systems directly.",
+    "clinical_application": "Ideal for sensitive clients, including those with fibromyalgia, chronic fatigue, or trauma.",
+    "difficulty": "moderate",
+    "category": "Modalities",
+    "tags": [
+      "technique_pounding",
+      "technique_pressure",
+      "anatomy_muscles",
+      "condition_fibromyalgia",
+      "modality_craniosacral_therapy"
     ],
+    "keywords": [
+      "technique_pounding",
+      "technique_pressure",
+      "anatomy_muscles",
+      "condition_fibromyalgia",
+      "modality_craniosacral_therapy"
+    ],
+    "stats": {
+      "correct": 0,
+      "incorrect": 0,
+      "attempts": 0
+    },
+    "last_answered_at": null,
+    "difficulty_adjustment": 0,
+    "created_at": "2025-05-24T14:34:08.131Z",
+    "updated_at": "2025-05-24T14:54:13.478Z",
+    "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
     "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
   },
   {
-    "id": "Craniosacral 006",
+    "id": "craniosacral_intro_006",
     "question": "Which structure is not directly assessed during craniosacral therapy?",
-    "answers": ["Sacrum", "Temporal bones", "Ilium", "Deltoid muscle"],
-    "correct": 3,
+    "options": ["Sacrum", "Temporal bones", "Ilium", "Deltoid muscle"],
+    "correctAnswer": "Deltoid muscle",
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
     "short_explanation": "The deltoid is not part of the craniosacral system.",
     "long_explanation": "CST practitioners primarily work with bones of the cranium, spine, sacrum, and associated fascia—especially those influencing the dural membrane system. While adjacent structures may respond to treatment, skeletal muscles like the deltoid are not directly manipulated.",
     "clinical_application": "Focus remains on the cranial sutures, spinal alignment, and sacral movement.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_fascia",
@@ -382,30 +318,27 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "Which structure is not directly assessed during craniosacral therapy?",
-    "options": ["Sacrum", "Temporal bones", "Ilium", "Deltoid muscle"],
-    "correctAnswer": "Deltoid muscle",
-    "abcd": ["A. Sacrum", "B. Temporal bones", "C. Ilium", "D. Deltoid muscle"],
     "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
   },
   {
-    "id": "Craniosacral 007",
+    "id": "craniosacral_intro_007",
     "question": "What is the typical rhythm practitioners assess during CST?",
-    "answers": [
+    "options": [
       "Cardiac rhythm",
       "Respiratory rhythm",
       "Craniosacral rhythm",
       "Circadian rhythm"
     ],
-    "correct": 2,
+    "correctAnswer": "Craniosacral rhythm",
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
     "short_explanation": "The craniosacral rhythm is a subtle pulsation of CSF flow.",
     "long_explanation": "The craniosacral rhythm, also called the primary respiratory mechanism, is typically palpated at a rate of 6–12 cycles per minute. Skilled therapists feel for this motion at the skull, sacrum, or feet.",
     "clinical_application": "Deviations in the rhythm’s quality, symmetry, or amplitude may suggest areas of restriction.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": ["modality_craniosacral", "exam_assessment", "bone_sacrum"],
     "keywords": ["modality_craniosacral", "exam_assessment", "bone_sacrum"],
@@ -419,80 +352,13 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "What is the typical rhythm practitioners assess during CST?",
-    "options": [
-      "Cardiac rhythm",
-      "Respiratory rhythm",
-      "Craniosacral rhythm",
-      "Circadian rhythm"
-    ],
-    "correctAnswer": "Craniosacral rhythm",
-    "abcd": [
-      "A. Cardiac rhythm",
-      "B. Respiratory rhythm",
-      "C. Craniosacral rhythm",
-      "D. Circadian rhythm"
-    ],
     "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
   },
   {
-    "id": "Craniosacral 008",
+    "id": "craniosacral_intro_008",
     "question": "Which client population may particularly benefit from craniosacral therapy?",
-    "answers": [
-      "Competitive bodybuilders",
-      "Postpartum individuals",
-      "Healthy teenagers",
-      "Long-distance runners only"
-    ],
-    "correct": 1,
-    "distractors": [],
-    "short_explanation": "CST can be beneficial for postpartum recovery due to its gentle approach.",
-    "long_explanation": "Postpartum individuals may experience tension, pain, or nervous system dysregulation due to childbirth. CST offers a non-invasive option to relieve cranial and sacral imbalances, especially when other modalities may feel too intense.",
-    "clinical_application": "Used for pelvic alignment, calming the nervous system, and supporting recovery after labor.",
-    "difficulty": "moderate",
-    "topic": "modalities",
-    "category": "Modalities",
-    "tags": [
-      "anatomy_nervous_system",
-      "condition_pain",
-      "purpose_relaxation",
-      "purpose_stress",
-      "purpose_healing",
-      "purpose_benefit",
-      "client",
-      "modality_craniosacral_therapy",
-      "concept_recovery",
-      "concept_tension",
-      "concept_calm",
-      "modality_modality"
-    ],
-    "keywords": [
-      "anatomy_nervous_system",
-      "condition_pain",
-      "purpose_relaxation",
-      "purpose_stress",
-      "purpose_healing",
-      "purpose_benefit",
-      "client",
-      "modality_craniosacral_therapy",
-      "concept_recovery",
-      "concept_tension",
-      "concept_calm",
-      "modality_modality"
-    ],
-    "stats": {
-      "correct": 0,
-      "incorrect": 0,
-      "attempts": 0
-    },
-    "last_answered_at": null,
-    "difficulty_adjustment": 0,
-    "created_at": "2025-05-24T14:34:08.131Z",
-    "updated_at": "2025-05-24T14:54:13.478Z",
-    "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "Which client population may particularly benefit from craniosacral therapy?",
     "options": [
       "Competitive bodybuilders",
       "Postpartum individuals",
@@ -500,54 +366,41 @@
       "Long-distance runners only"
     ],
     "correctAnswer": "Postpartum individuals",
-    "abcd": [
-      "A. Competitive bodybuilders",
-      "B. Postpartum individuals",
-      "C. Healthy teenagers",
-      "D. Long-distance runners only"
-    ],
-    "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
-  },
-  {
-    "id": "Craniosacral 009",
-    "question": "What does a craniosacral therapist typically assess with their hands?",
-    "answers": [
-      "Joint range of motion",
-      "Myotome function",
-      "Fascial tension and rhythmic motion",
-      "Muscle contraction strength"
-    ],
-    "correct": 2,
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
-    "short_explanation": "CST therapists feel for fascial restrictions and rhythmic craniosacral motion.",
-    "long_explanation": "With gentle palpation, practitioners assess the motion of the craniosacral system, fascial ease or restriction, and overall energetic flow. Unlike orthopedic assessment, the focus is on subtle rhythmic patterns rather than gross movement.",
-    "clinical_application": "May help identify areas of chronic tension that are not apparent through traditional physical assessments.",
+    "short_explanation": "CST can be beneficial for postpartum recovery due to its gentle approach.",
+    "long_explanation": "Postpartum individuals may experience tension, pain, or nervous system dysregulation due to childbirth. CST offers a non-invasive option to relieve cranial and sacral imbalances, especially when other modalities may feel too intense.",
+    "clinical_application": "Used for pelvic alignment, calming the nervous system, and supporting recovery after labor.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
-      "modality_craniosacral",
-      "anatomy_joint",
-      "anatomy_muscles",
-      "anatomy_muscle_contraction",
+      "anatomy_nervous_system",
+      "condition_pain",
+      "purpose_relaxation",
       "purpose_stress",
-      "exam_assessment",
-      "concept_focus",
+      "purpose_healing",
+      "purpose_benefit",
+      "client",
+      "modality_craniosacral_therapy",
+      "concept_recovery",
       "concept_tension",
-      "joint_joint"
+      "concept_calm",
+      "modality_modality"
     ],
     "keywords": [
-      "modality_craniosacral",
-      "anatomy_joint",
-      "anatomy_muscles",
-      "anatomy_muscle_contraction",
+      "anatomy_nervous_system",
+      "condition_pain",
+      "purpose_relaxation",
       "purpose_stress",
-      "exam_assessment",
-      "concept_focus",
+      "purpose_healing",
+      "purpose_benefit",
+      "client",
+      "modality_craniosacral_therapy",
+      "concept_recovery",
       "concept_tension",
-      "joint_joint"
+      "concept_calm",
+      "modality_modality"
     ],
     "stats": {
       "correct": 0,
@@ -559,7 +412,13 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "What does a craniosacral therapist typically assess with their hands?",
+    "main_topic": "modalities",
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
+  },
+  {
+    "id": "craniosacral_intro_009",
+    "question": "What does a craniosacral therapist typically assess with their hands?",
     "options": [
       "Joint range of motion",
       "Myotome function",
@@ -567,32 +426,67 @@
       "Muscle contraction strength"
     ],
     "correctAnswer": "Fascial tension and rhythmic motion",
-    "abcd": [
-      "A. Joint range of motion",
-      "B. Myotome function",
-      "C. Fascial tension and rhythmic motion",
-      "D. Muscle contraction strength"
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
+    "distractors": [],
+    "short_explanation": "CST therapists feel for fascial restrictions and rhythmic craniosacral motion.",
+    "long_explanation": "With gentle palpation, practitioners assess the motion of the craniosacral system, fascial ease or restriction, and overall energetic flow. Unlike orthopedic assessment, the focus is on subtle rhythmic patterns rather than gross movement.",
+    "clinical_application": "May help identify areas of chronic tension that are not apparent through traditional physical assessments.",
+    "difficulty": "moderate",
+    "category": "Modalities",
+    "tags": [
+      "modality_craniosacral",
+      "anatomy_joint",
+      "anatomy_muscles",
+      "anatomy_muscle_contraction",
+      "purpose_stress",
+      "exam_assessment",
+      "concept_focus",
+      "concept_tension",
+      "joint_joint"
     ],
+    "keywords": [
+      "modality_craniosacral",
+      "anatomy_joint",
+      "anatomy_muscles",
+      "anatomy_muscle_contraction",
+      "purpose_stress",
+      "exam_assessment",
+      "concept_focus",
+      "concept_tension",
+      "joint_joint"
+    ],
+    "stats": {
+      "correct": 0,
+      "incorrect": 0,
+      "attempts": 0
+    },
+    "last_answered_at": null,
+    "difficulty_adjustment": 0,
+    "created_at": "2025-05-24T14:34:08.131Z",
+    "updated_at": "2025-05-24T14:54:13.478Z",
+    "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
     "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
   },
   {
-    "id": "Craniosacral 010",
+    "id": "craniosacral_intro_010",
     "question": "Which criticism is most commonly directed at craniosacral therapy?",
-    "answers": [
+    "options": [
       "It causes muscle soreness",
       "It lacks strong scientific validation",
       "It is too aggressive",
       "It requires expensive equipment"
     ],
-    "correct": 1,
+    "correctAnswer": "It lacks strong scientific validation",
+    "topics": ["Modalities"],
+    "subtopics": ["Craniosacral"],
     "distractors": [],
     "short_explanation": "CST is often criticized for lacking robust scientific evidence.",
     "long_explanation": "While many practitioners and clients report benefits, craniosacral therapy remains controversial in the scientific community due to limited high-quality research. The subtle nature of its techniques makes clinical trials challenging, but anecdotal and clinical reports support its use for certain populations.",
     "clinical_application": "Practitioners should explain benefits and limitations transparently and integrate CST with other evidence-based care when appropriate.",
     "difficulty": "moderate",
-    "topic": "modalities",
     "category": "Modalities",
     "tags": [
       "anatomy_muscles",
@@ -624,22 +518,8 @@
     "created_at": "2025-05-24T14:34:08.131Z",
     "updated_at": "2025-05-24T14:54:13.478Z",
     "unit": "../../../src/data/questions/modalities/craniosacral/craniosacral_intro",
-    "text": "Which criticism is most commonly directed at craniosacral therapy?",
-    "options": [
-      "It causes muscle soreness",
-      "It lacks strong scientific validation",
-      "It is too aggressive",
-      "It requires expensive equipment"
-    ],
-    "correctAnswer": "It lacks strong scientific validation",
-    "abcd": [
-      "A. It causes muscle soreness",
-      "B. It lacks strong scientific validation",
-      "C. It is too aggressive",
-      "D. It requires expensive equipment"
-    ],
     "main_topic": "modalities",
-    "subtopic": "craniosacral",
-    "filename": "craniosacral_intro.json"
+    "filepath": "data/questions/modalities/craniosacral/craniosacral_intro.json",
+    "sourceFile": "craniosacral_intro"
   }
 ]

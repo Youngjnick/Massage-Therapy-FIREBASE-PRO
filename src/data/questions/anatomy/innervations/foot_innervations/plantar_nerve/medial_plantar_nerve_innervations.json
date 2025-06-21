@@ -1,19 +1,20 @@
 [
   {
-    "id": "Medial Plantar Nerve 001",
+    "id": "medial_plantar_nerve_innervations_001",
     "question": "Which muscle is innervated by the medial plantar nerve?",
-    "answers": [
+    "options": [
       "Abductor hallucis",
       "Flexor hallucis longus",
       "Peroneus brevis",
       "Extensor digitorum brevis"
     ],
-    "correct": 0,
+    "correctAnswer": "Abductor hallucis",
+    "topics": ["Anatomy", "Neuroanatomy"],
+    "subtopics": ["Innervations", "Foot_innervations", "Plantar_nerve"],
     "distractors": [],
     "short_explanation": "The medial plantar nerve innervates abductor hallucis, an intrinsic foot muscle.",
     "long_explanation": "The medial plantar nerve, a branch of the tibial nerve, innervates several intrinsic foot muscles. One of its primary motor targets is the abductor hallucis, which abducts the big toe and supports the medial longitudinal arch. This innervation is clinically relevant in cases of tarsal tunnel syndrome or nerve entrapment affecting gait and posture.",
     "difficulty": "intermediate",
-    "topic": "neuroanatomy",
     "category": "Nerve Innervation",
     "tags": [
       "nerve_medial_plantar",
@@ -41,22 +42,8 @@
     "updated_at": "2025-05-31T17:41:13.800153",
     "unit": "medial plantar nerve",
     "applied_example": "During a foot massage, stimulating the medial plantar region can relieve tension in the abductor hallucis. Awareness of this nerve’s distribution aids in treating clients with plantar fasciitis or medial arch pain.",
-    "text": "Which muscle is innervated by the medial plantar nerve?",
-    "options": [
-      "Abductor hallucis",
-      "Flexor hallucis longus",
-      "Peroneus brevis",
-      "Extensor digitorum brevis"
-    ],
-    "correctAnswer": "Abductor hallucis",
-    "abcd": [
-      "A. Abductor hallucis",
-      "B. Flexor hallucis longus",
-      "C. Peroneus brevis",
-      "D. Extensor digitorum brevis"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "innervations/foot_innervations/plantar_nerve",
-    "filename": "medial_plantar_nerve_innervations.json"
+    "filepath": "data/questions/anatomy/innervations/foot_innervations/plantar_nerve/medial_plantar_nerve_innervations.json",
+    "sourceFile": "medial_plantar_nerve_innervations"
   }
 ]

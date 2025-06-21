@@ -1,19 +1,20 @@
 [
   {
-    "id": "thrombophlebitis_001",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_001",
     "question": "What is thrombophlebitis?",
-    "answers": [
+    "options": [
       "A bacterial infection of an artery",
       "Inflammation of a vein associated with clot formation",
       "Nerve inflammation in the lower limbs",
       "A type of bone fracture"
     ],
-    "correct": "Inflammation of a vein associated with clot formation",
+    "correctAnswer": "Inflammation of a vein associated with clot formation",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Thrombophlebitis is the inflammation of a vein due to the presence of a thrombus (clot).",
     "long_explanation": "Thrombophlebitis occurs when a blood clot causes inflammation in a vein. It most commonly affects superficial veins in the legs but can also occur deeper in the body as deep vein thrombosis (DVT).",
     "clinical_application": "Massage is contraindicated in areas affected by thrombophlebitis due to the risk of dislodging the clot and causing a pulmonary embolism.",
@@ -22,24 +23,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Mayo Clinic: Thrombophlebitis Overview",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_002",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_002",
     "question": "Which of the following is a common cause of superficial thrombophlebitis?",
-    "answers": [
+    "options": [
       "Bacterial infection",
       "Injury from IV catheterization",
       "Lymphatic blockage",
       "Diabetic neuropathy"
     ],
-    "correct": "Injury from IV catheterization",
+    "correctAnswer": "Injury from IV catheterization",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Catheters can irritate vein walls and cause clot formation.",
     "long_explanation": "Superficial thrombophlebitis often results from trauma to a vein, especially from IV insertion or prolonged pressure. This leads to localized inflammation and clot formation in the affected superficial vein.",
     "clinical_application": "Avoid massage over recent IV sites or inflamed veins due to clot risk and pain.",
@@ -48,24 +50,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Cleveland Clinic: Superficial Thrombophlebitis",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_003",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_003",
     "question": "Which sign is typically associated with thrombophlebitis in a limb?",
-    "answers": [
+    "options": [
       "Cool and pale skin",
       "Swelling and tenderness along a vein",
       "Rapid pulse rate",
       "Itchy rash"
     ],
-    "correct": "Swelling and tenderness along a vein",
+    "correctAnswer": "Swelling and tenderness along a vein",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "Multiple Choice",
     "short_explanation": "The affected area is often tender, swollen, and red.",
     "long_explanation": "Thrombophlebitis presents with localized redness, swelling, and tenderness along the affected vein. The area may feel warm and cord-like to the touch.",
     "clinical_application": "Therapists should inspect for visible inflammation before proceeding with any massage on the limbs.",
@@ -74,24 +77,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Mayo Clinic: Thrombophlebitis Symptoms",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_004",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_004",
     "question": "Which population is at higher risk of developing thrombophlebitis?",
-    "answers": [
+    "options": [
       "Children under 10",
       "Athletes under 25",
       "Post-surgical and immobilized individuals",
       "Clients with seasonal allergies"
     ],
-    "correct": "Post-surgical and immobilized individuals",
+    "correctAnswer": "Post-surgical and immobilized individuals",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Inactivity and surgery increase clot risk.",
     "long_explanation": "Surgery, prolonged bed rest, and long periods of immobility slow venous return, creating conditions favorable for clot formation and inflammation of veins.",
     "clinical_application": "Always screen for recent surgeries, hospitalizations, or long travel history before leg massage.",
@@ -100,24 +104,25 @@
     "mblex_category": "Pathology",
     "source_reference": "NIH: Deep Vein Thrombosis and Pulmonary Embolism",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_005",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_005",
     "question": "Which vein is most commonly affected in lower-limb superficial thrombophlebitis?",
-    "answers": [
+    "options": [
       "Great saphenous vein",
       "Femoral vein",
       "Popliteal vein",
       "Brachial vein"
     ],
-    "correct": "Great saphenous vein",
+    "correctAnswer": "Great saphenous vein",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "The great saphenous vein is often involved due to its superficial location.",
     "long_explanation": "The great saphenous vein, running along the inner leg, is prone to thrombophlebitis due to its superficial position and frequent use for IV lines or surgical access.",
     "clinical_application": "Avoid massage over this area if red, cord-like, or painful due to clotting risk.",
@@ -126,24 +131,25 @@
     "mblex_category": "Pathology",
     "source_reference": "British Medical Journal: Thrombophlebitis of the Leg",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_006",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_006",
     "question": "What is a potential complication of untreated deep vein thrombophlebitis?",
-    "answers": [
+    "options": [
       "Arterial aneurysm",
       "Nerve palsy",
       "Pulmonary embolism",
       "Liver cirrhosis"
     ],
-    "correct": "Pulmonary embolism",
+    "correctAnswer": "Pulmonary embolism",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "DVT can lead to a life-threatening pulmonary embolism.",
     "long_explanation": "If a clot from deep vein thrombophlebitis dislodges, it can travel to the lungs and obstruct a pulmonary artery, causing chest pain, shortness of breath, or sudden death.",
     "clinical_application": "Deep leg massage is contraindicated when DVT is suspected due to embolism risk.",
@@ -152,24 +158,25 @@
     "mblex_category": "Pathology",
     "source_reference": "CDC: Pulmonary Embolism",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_007",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_007",
     "question": "Which therapy is commonly used to reduce the risk of thrombophlebitis post-surgery?",
-    "answers": [
+    "options": [
       "Massage therapy",
       "Compression stockings",
       "Hot stone therapy",
       "Ultrasound imaging"
     ],
-    "correct": "Compression stockings",
+    "correctAnswer": "Compression stockings",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "Multiple Choice",
     "short_explanation": "Compression supports venous return and reduces clot risk.",
     "long_explanation": "Graduated compression stockings help reduce venous stasis in the legs, lowering the risk of clot formation following surgery or immobilization.",
     "clinical_application": "Massage therapists should not remove compression garments unless directed by medical staff.",
@@ -178,24 +185,25 @@
     "mblex_category": "Pathology",
     "source_reference": "American College of Surgeons",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_008",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_008",
     "question": "What should a massage therapist do if a client reports sudden calf pain, warmth, and redness?",
-    "answers": [
+    "options": [
       "Proceed with gentle massage",
       "Apply heat to the area",
       "Refer the client to a physician immediately",
       "Stretch the leg to reduce tension"
     ],
-    "correct": "Refer the client to a physician immediately",
+    "correctAnswer": "Refer the client to a physician immediately",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "These are signs of possible DVT, a medical emergency.",
     "long_explanation": "Symptoms like calf pain, swelling, redness, and warmth may indicate deep vein thrombosis. Massage could dislodge the clot, so referral to urgent medical care is required.",
     "clinical_application": "Therapists must recognize red flags and refer rather than treat suspected DVT cases.",
@@ -204,19 +212,20 @@
     "mblex_category": "Pathology",
     "source_reference": "Massage Therapy Foundation: Red Flags in Practice",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_009",
-    "topic": "Pathology",
+    "id": "thrombophelbitis_009",
+    "question": "Which blood test is often used to support diagnosis of deep vein thrombosis?",
+    "options": ["CBC", "D-dimer", "Hemoglobin A1c", "Troponin"],
+    "correctAnswer": "D-dimer",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
     "subcategory": "Thrombophlebitis",
     "difficulty": "Medium",
     "difficulty_rating": 3,
     "question_type": "Multiple Choice",
-    "question": "Which blood test is often used to support diagnosis of deep vein thrombosis?",
-    "answers": ["CBC", "D-dimer", "Hemoglobin A1c", "Troponin"],
-    "correct": "D-dimer",
     "short_explanation": "D-dimer levels rise in the presence of a clot.",
     "long_explanation": "D-dimer is a byproduct of clot breakdown and is elevated in conditions involving thrombosis, such as DVT or pulmonary embolism. It is not specific, but aids in diagnosis.",
     "clinical_application": "Massage therapists do not diagnose, but understanding lab indicators aids communication with clients under medical care.",
@@ -225,24 +234,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Lab Tests Online",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   },
   {
-    "id": "thrombophlebitis_010",
-    "topic": "Pathology",
-    "subcategory": "Thrombophlebitis",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
+    "id": "thrombophelbitis_010",
     "question": "How does massage therapy affect clients taking anticoagulant medications for thrombophlebitis?",
-    "answers": [
+    "options": [
       "Massage helps stabilize clot formation",
       "Massage has no effect on clients taking anticoagulants",
       "Massage may increase risk of bruising and bleeding",
       "Massage improves drug absorption"
     ],
-    "correct": "Massage may increase risk of bruising and bleeding",
+    "correctAnswer": "Massage may increase risk of bruising and bleeding",
+    "topics": ["Pathology"],
+    "subtopics": ["Thrombophelbitis.json"],
+    "subcategory": "Thrombophlebitis",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "Anticoagulants thin the blood, increasing risk of bruising during massage.",
     "long_explanation": "Clients taking blood thinners such as warfarin or heparin are more prone to internal and surface bleeding. Deep or aggressive massage should be avoided; light pressure and careful monitoring are essential.",
     "clinical_application": "Always ask about blood-thinner use and modify pressure accordingly.",
@@ -251,7 +261,7 @@
     "mblex_category": "Pathology",
     "source_reference": "Massage Therapy Journal: Working with Clients on Anticoagulants",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "thrombophelbitis.json"
+    "filepath": "data/questions/pathology/thrombophelbitis.json",
+    "sourceFile": "thrombophelbitis"
   }
 ]

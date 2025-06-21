@@ -14,7 +14,7 @@ import { useAnalytics } from './hooks/useAnalytics';
 function RouteDebug() {
   const location = useLocation();
   React.useEffect(() => {
-    // eslint-disable-next-line no-console
+     
     console.log('[DEBUG][Router] location.pathname:', location.pathname, 'basename:', import.meta.env.BASE_URL);
   }, [location]);
   return null;

@@ -1,19 +1,20 @@
 [
   {
-    "id": "osgood_schlatter_001",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_001",
     "question": "What is Osgood-Schlatter’s disease primarily characterized by?",
-    "answers": [
+    "options": [
       "Degeneration of the hip joint",
       "Swelling and pain at the tibial tuberosity",
       "Cartilage breakdown in the ankle",
       "Tearing of the quadriceps tendon"
     ],
-    "correct": "Swelling and pain at the tibial tuberosity",
+    "correctAnswer": "Swelling and pain at the tibial tuberosity",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Osgood-Schlatter’s disease causes pain and swelling at the tibial tuberosity due to repetitive strain.",
     "long_explanation": "Osgood-Schlatter’s disease is an overuse injury common in adolescents during growth spurts. It involves inflammation of the patellar tendon at the tibial tuberosity, where the tendon attaches to the shinbone. Repetitive stress from running or jumping can lead to pain, swelling, and a visible bump.",
     "clinical_application": "Massage therapy for Osgood-Schlatter’s should avoid direct pressure on the tibial tuberosity. Techniques may focus on quadriceps release and reducing tension on the patellar tendon.",
@@ -22,24 +23,25 @@
     "mblex_category": "Pathology",
     "source_reference": "National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_002",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_002",
     "question": "Which population is most commonly affected by Osgood-Schlatter’s disease?",
-    "answers": [
+    "options": [
       "Elderly adults with arthritis",
       "Adolescents undergoing growth spurts",
       "Infants learning to walk",
       "Middle-aged runners"
     ],
-    "correct": "Adolescents undergoing growth spurts",
+    "correctAnswer": "Adolescents undergoing growth spurts",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "It typically affects active children during rapid bone growth.",
     "long_explanation": "Osgood-Schlatter’s disease is most common in physically active children, especially those aged 10–15, during periods of rapid growth. The quadriceps exert tension on the tibial tuberosity, leading to inflammation.",
     "clinical_application": "Therapists should ask about adolescent knee pain and modify leg techniques to avoid direct irritation.",
@@ -48,19 +50,20 @@
     "mblex_category": "Pathology",
     "source_reference": "Johns Hopkins Medicine: Osgood-Schlatter Disease",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_003",
-    "topic": "Pathology",
+    "id": "osgood_schlatter's_disease_003",
+    "question": "What sport is commonly associated with Osgood-Schlatter’s disease?",
+    "options": ["Swimming", "Basketball", "Chess", "Archery"],
+    "correctAnswer": "Basketball",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
     "subcategory": "Osgood-Schlatter’s Disease",
     "difficulty": "Easy",
     "difficulty_rating": 2,
     "question_type": "Multiple Choice",
-    "question": "What sport is commonly associated with Osgood-Schlatter’s disease?",
-    "answers": ["Swimming", "Basketball", "Chess", "Archery"],
-    "correct": "Basketball",
     "short_explanation": "Jumping and running activities increase patellar tendon stress.",
     "long_explanation": "Sports like basketball, soccer, and volleyball place repetitive stress on the knees, particularly the quadriceps and patellar tendon, increasing the risk of Osgood-Schlatter’s in growing adolescents.",
     "clinical_application": "Knowing a young client’s athletic background can help guide knee assessments and treatment strategies.",
@@ -69,24 +72,25 @@
     "mblex_category": "Pathology",
     "source_reference": "American Academy of Orthopaedic Surgeons (AAOS)",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_004",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_004",
     "question": "Which structure is directly involved in Osgood-Schlatter’s disease?",
-    "answers": [
+    "options": [
       "Medial meniscus",
       "Tibial tuberosity",
       "Lateral collateral ligament",
       "Fibular head"
     ],
-    "correct": "Tibial tuberosity",
+    "correctAnswer": "Tibial tuberosity",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "The tibial tuberosity is where the patellar tendon attaches.",
     "long_explanation": "Inflammation at the site where the patellar tendon inserts into the tibial tuberosity is the hallmark of Osgood-Schlatter’s. Repetitive traction can lead to swelling, tenderness, and even ossification of the tuberosity.",
     "clinical_application": "Avoid kneading over the tibial tuberosity in affected clients. Focus on myofascial release to the quadriceps.",
@@ -95,24 +99,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Cleveland Clinic: Osgood-Schlatter Disease",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_005",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_005",
     "question": "What is the recommended massage approach for active Osgood-Schlatter’s symptoms?",
-    "answers": [
+    "options": [
       "Deep tissue on tibial tuberosity",
       "Ice massage directly on the bump",
       "Avoidance of direct work on inflamed site with soft tissue release elsewhere",
       "Cross-fiber friction on the tendon insertion"
     ],
-    "correct": "Avoidance of direct work on inflamed site with soft tissue release elsewhere",
+    "correctAnswer": "Avoidance of direct work on inflamed site with soft tissue release elsewhere",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "Massage should not irritate the inflamed tibial tuberosity.",
     "long_explanation": "During symptomatic periods, massage should avoid the painful bump. Techniques like gentle effleurage, quadriceps release, and lymphatic drainage can reduce associated tension and swelling.",
     "clinical_application": "Therapists should adapt their work to avoid worsening inflammation and refer if pain is severe or unresponsive.",
@@ -121,24 +126,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Massage Therapy Journal: Treating Adolescent Knee Pain",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_006",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_006",
     "question": "Which symptom is LEAST associated with Osgood-Schlatter’s?",
-    "answers": [
+    "options": [
       "Localized swelling at the tibia",
       "Pain that worsens with activity",
       "Clicking inside the knee joint",
       "Tender bump below the kneecap"
     ],
-    "correct": "Clicking inside the knee joint",
+    "correctAnswer": "Clicking inside the knee joint",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Clicking suggests intra-articular pathology, not typical of Osgood-Schlatter’s.",
     "long_explanation": "Osgood-Schlatter’s affects the outside of the tibial tuberosity, not internal joint surfaces. Clicking or locking is more indicative of meniscus or patellar tracking issues.",
     "clinical_application": "Understanding symptom patterns helps differentiate conditions like patellar tendinitis or meniscus tears.",
@@ -147,24 +153,25 @@
     "mblex_category": "Pathology",
     "source_reference": "NIH Pediatric Orthopedics",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_007",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Easy",
-    "difficulty_rating": 2,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_007",
     "question": "Which muscles are primarily involved in pulling on the tibial tuberosity?",
-    "answers": [
+    "options": [
       "Hamstrings",
       "Gastrocnemius",
       "Quadriceps femoris",
       "Adductors"
     ],
-    "correct": "Quadriceps femoris",
+    "correctAnswer": "Quadriceps femoris",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Easy",
+    "difficulty_rating": 2,
+    "question_type": "Multiple Choice",
     "short_explanation": "The quadriceps attach to the tibial tuberosity via the patellar tendon.",
     "long_explanation": "The quadriceps femoris group exerts tension through the patellar tendon, which attaches at the tibial tuberosity. Overuse or growth can create repeated stress on this insertion point, especially during jumping or sprinting.",
     "clinical_application": "Massage may target tight quadriceps to relieve traction at the insertion point in growing athletes.",
@@ -173,24 +180,25 @@
     "mblex_category": "Anatomy",
     "source_reference": "Trail Guide to the Body",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_008",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_008",
     "question": "How is Osgood-Schlatter’s disease usually diagnosed?",
-    "answers": [
+    "options": [
       "Blood test and biopsy",
       "MRI with contrast",
       "Physical exam and patient history",
       "Spinal tap and EMG"
     ],
-    "correct": "Physical exam and patient history",
+    "correctAnswer": "Physical exam and patient history",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "Diagnosis is based on symptoms, growth status, and palpation.",
     "long_explanation": "Most cases of Osgood-Schlatter’s are diagnosed clinically by evaluating knee pain location, growth phase, and participation in physical activity. X-rays may support the diagnosis in some cases.",
     "clinical_application": "Massage therapists should take a detailed history when working with adolescent clients with knee pain.",
@@ -199,24 +207,25 @@
     "mblex_category": "Pathology",
     "source_reference": "Pediatric Orthopedic Society of North America",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_009",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Medium",
-    "difficulty_rating": 3,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_009",
     "question": "Which of the following is a possible long-term result of untreated Osgood-Schlatter’s?",
-    "answers": [
+    "options": [
       "Total knee replacement",
       "Permanent deformity of tibial tuberosity",
       "Ligament rupture",
       "Nerve compression syndrome"
     ],
-    "correct": "Permanent deformity of tibial tuberosity",
+    "correctAnswer": "Permanent deformity of tibial tuberosity",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Medium",
+    "difficulty_rating": 3,
+    "question_type": "Multiple Choice",
     "short_explanation": "A persistent bump or ossification may remain at the site.",
     "long_explanation": "Although symptoms usually resolve with maturity, untreated or severe cases may result in a pronounced bony prominence or chronic discomfort at the tibial tuberosity.",
     "clinical_application": "Clients with history of Osgood-Schlatter’s may benefit from myofascial work to compensate for long-term biomechanical changes.",
@@ -225,24 +234,25 @@
     "mblex_category": "Pathology",
     "source_reference": "BMJ: Long-Term Sequelae of Osgood-Schlatter Disease",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   },
   {
-    "id": "osgood_schlatter_010",
-    "topic": "Pathology",
-    "subcategory": "Osgood-Schlatter’s Disease",
-    "difficulty": "Hard",
-    "difficulty_rating": 4,
-    "question_type": "Multiple Choice",
+    "id": "osgood_schlatter's_disease_010",
     "question": "Which clinical sign best helps distinguish Osgood-Schlatter’s from patellar tendinitis?",
-    "answers": [
+    "options": [
       "Pain worsens with jumping",
       "Swelling on the tibial tuberosity",
       "Tenderness around the kneecap",
       "Crepitus in the joint"
     ],
-    "correct": "Swelling on the tibial tuberosity",
+    "correctAnswer": "Swelling on the tibial tuberosity",
+    "topics": ["Pathology"],
+    "subtopics": ["Osgood_schlatter's_disease.json"],
+    "subcategory": "Osgood-Schlatter’s Disease",
+    "difficulty": "Hard",
+    "difficulty_rating": 4,
+    "question_type": "Multiple Choice",
     "short_explanation": "Osgood-Schlatter’s presents with a bump and tenderness below the kneecap.",
     "long_explanation": "Osgood-Schlatter’s is characterized by localized swelling and pain at the tibial tuberosity, unlike patellar tendinitis which affects the tendon itself above or near the kneecap.",
     "clinical_application": "Accurate symptom localization helps differentiate safe areas for treatment and referral decisions.",
@@ -251,7 +261,7 @@
     "mblex_category": "Pathology",
     "source_reference": "National Athletic Trainers’ Association",
     "main_topic": "pathology",
-    "subtopic": "",
-    "filename": "osgood_schlatter's_disease.json"
+    "filepath": "data/questions/pathology/osgood_schlatter's_disease.json",
+    "sourceFile": "osgood_schlatter's_disease"
   }
 ]

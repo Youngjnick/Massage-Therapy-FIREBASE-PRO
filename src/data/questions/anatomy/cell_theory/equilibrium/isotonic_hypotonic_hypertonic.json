@@ -1,17 +1,18 @@
 [
   {
-    "id": "Isotonic Hypotonic Hypertonic 001",
+    "id": "isotonic_hypotonic_hypertonic_001",
     "question": "What happens to a cell placed in an isotonic solution?",
-    "answers": [
+    "options": [
       "It swells and bursts",
       "It shrinks",
       "It maintains its shape with no net water movement",
       "It digests itself"
     ],
-    "correct": 2,
+    "correctAnswer": "It maintains its shape with no net water movement",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -37,37 +38,24 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "The cell maintains its shape with no net water movement.",
     "long_explanation": "In an isotonic solution, the concentration of solutes is equal inside and outside the cell. Water moves in and out at the same rate, resulting in no net change in cell volume. This balance maintains cell stability.",
-    "text": "What happens to a cell placed in an isotonic solution?",
-    "options": [
-      "It swells and bursts",
-      "It shrinks",
-      "It maintains its shape with no net water movement",
-      "It digests itself"
-    ],
-    "correctAnswer": "It maintains its shape with no net water movement",
-    "abcd": [
-      "A. It swells and bursts",
-      "B. It shrinks",
-      "C. It maintains its shape with no net water movement",
-      "D. It digests itself"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 002",
+    "id": "isotonic_hypotonic_hypertonic_002",
     "question": "In a hypertonic solution, water moves:",
-    "answers": [
+    "options": [
       "Into the cell",
       "Out of the cell",
       "Equally in and out",
       "Nowhere at all"
     ],
-    "correct": 1,
+    "correctAnswer": "Out of the cell",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "concept_balance", "anatomy_animal_cells"],
     "keywords": ["anatomy_cells", "concept_balance", "anatomy_animal_cells"],
@@ -83,37 +71,24 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "Out of the cell, causing it to shrink.",
     "long_explanation": "A hypertonic solution has more solutes outside the cell than inside. Water moves out to balance the gradient, causing the cell to lose volume and shrink — a process called crenation in animal cells.",
-    "text": "In a hypertonic solution, water moves:",
-    "options": [
-      "Into the cell",
-      "Out of the cell",
-      "Equally in and out",
-      "Nowhere at all"
-    ],
-    "correctAnswer": "Out of the cell",
-    "abcd": [
-      "A. Into the cell",
-      "B. Out of the cell",
-      "C. Equally in and out",
-      "D. Nowhere at all"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 003",
+    "id": "isotonic_hypotonic_hypertonic_003",
     "question": "A hypotonic solution has:",
-    "answers": [
+    "options": [
       "More solute than the cell",
       "The same solute concentration as the cell",
       "Less solute and more water than the cell",
       "No solutes"
     ],
-    "correct": 2,
+    "correctAnswer": "Less solute and more water than the cell",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -137,37 +112,24 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "Less solute and more water than the cell.",
     "long_explanation": "In a hypotonic solution, water flows into the cell due to the lower external solute concentration. This may cause the cell to swell and, in animal cells, potentially burst (lysis).",
-    "text": "A hypotonic solution has:",
-    "options": [
-      "More solute than the cell",
-      "The same solute concentration as the cell",
-      "Less solute and more water than the cell",
-      "No solutes"
-    ],
-    "correctAnswer": "Less solute and more water than the cell",
-    "abcd": [
-      "A. More solute than the cell",
-      "B. The same solute concentration as the cell",
-      "C. Less solute and more water than the cell",
-      "D. No solutes"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 004",
+    "id": "isotonic_hypotonic_hypertonic_004",
     "question": "What effect does a hypotonic solution have on an animal cell?",
-    "answers": [
+    "options": [
       "The cell stays the same",
       "The cell shrinks",
       "The cell may swell and burst",
       "The cell forms a wall"
     ],
-    "correct": 2,
+    "correctAnswer": "The cell may swell and burst",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["technique_pressure", "anatomy_cells", "anatomy_animal_cells"],
     "keywords": ["technique_pressure", "anatomy_cells", "anatomy_animal_cells"],
@@ -183,32 +145,19 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "It may swell and burst due to water influx.",
     "long_explanation": "Animal cells in hypotonic solutions absorb water, swelling due to osmotic pressure. Without a rigid cell wall, they can burst in a process known as hemolysis.",
-    "text": "What effect does a hypotonic solution have on an animal cell?",
-    "options": [
-      "The cell stays the same",
-      "The cell shrinks",
-      "The cell may swell and burst",
-      "The cell forms a wall"
-    ],
-    "correctAnswer": "The cell may swell and burst",
-    "abcd": [
-      "A. The cell stays the same",
-      "B. The cell shrinks",
-      "C. The cell may swell and burst",
-      "D. The cell forms a wall"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 005",
+    "id": "isotonic_hypotonic_hypertonic_005",
     "question": "Which solution type would cause plasmolysis in plant cells?",
-    "answers": ["Isotonic", "Hypotonic", "Hypertonic", "Acidic"],
-    "correct": 2,
+    "options": ["Isotonic", "Hypotonic", "Hypertonic", "Acidic"],
+    "correctAnswer": "Hypertonic",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_membrane", "anatomy_cells", "anatomy_plant_cells"],
     "keywords": ["anatomy_membrane", "anatomy_cells", "anatomy_plant_cells"],
@@ -224,22 +173,19 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "A hypertonic solution causes plasmolysis.",
     "long_explanation": "Plasmolysis occurs when water leaves a plant cell in a hypertonic solution, causing the membrane to pull away from the wall. This dehydrates the cell and disrupts function.",
-    "text": "Which solution type would cause plasmolysis in plant cells?",
-    "options": ["Isotonic", "Hypotonic", "Hypertonic", "Acidic"],
-    "correctAnswer": "Hypertonic",
-    "abcd": ["A. Isotonic", "B. Hypotonic", "C. Hypertonic", "D. Acidic"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 006",
+    "id": "isotonic_hypotonic_hypertonic_006",
     "question": "Which solution is best for intravenous rehydration?",
-    "answers": ["Hypertonic", "Hypotonic", "Isotonic", "Colloid"],
-    "correct": 2,
+    "options": ["Hypertonic", "Hypotonic", "Isotonic", "Colloid"],
+    "correctAnswer": "Isotonic",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_cells",
@@ -265,27 +211,24 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "An isotonic solution maintains fluid balance during IV therapy.",
     "long_explanation": "Isotonic solutions like 0.9% saline match the body's osmotic balance. They restore hydration without disrupting cell size or electrolyte equilibrium, making them ideal for IV fluids.",
-    "text": "Which solution is best for intravenous rehydration?",
-    "options": ["Hypertonic", "Hypotonic", "Isotonic", "Colloid"],
-    "correctAnswer": "Isotonic",
-    "abcd": ["A. Hypertonic", "B. Hypotonic", "C. Isotonic", "D. Colloid"],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 007",
+    "id": "isotonic_hypotonic_hypertonic_007",
     "question": "In a hypertonic environment, a red blood cell will:",
-    "answers": [
+    "options": [
       "Expand and lyse",
       "Remain the same",
       "Shrink (crenate)",
       "Become isotonic"
     ],
-    "correct": 2,
+    "correctAnswer": "Shrink (crenate)",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "anatomy_red_blood"],
     "keywords": ["anatomy_cells", "anatomy_red_blood"],
@@ -301,37 +244,24 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "Shrink due to water loss — a process called crenation.",
     "long_explanation": "When placed in a hypertonic solution, red blood cells lose water and shrink. This can impair oxygen transport and occurs in cases of dehydration or saline imbalance.",
-    "text": "In a hypertonic environment, a red blood cell will:",
-    "options": [
-      "Expand and lyse",
-      "Remain the same",
-      "Shrink (crenate)",
-      "Become isotonic"
-    ],
-    "correctAnswer": "Shrink (crenate)",
-    "abcd": [
-      "A. Expand and lyse",
-      "B. Remain the same",
-      "C. Shrink (crenate)",
-      "D. Become isotonic"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 008",
+    "id": "isotonic_hypotonic_hypertonic_008",
     "question": "In osmosis, water moves from:",
-    "answers": [
+    "options": [
       "High solute to low solute",
       "Low water to high water",
       "High water concentration to low water concentration",
       "Equilibrium to gradient"
     ],
-    "correct": 2,
+    "correctAnswer": "High water concentration to low water concentration",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "anatomy_membrane",
@@ -355,37 +285,24 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "High water concentration to low water concentration.",
     "long_explanation": "Osmosis is the passive diffusion of water across a semipermeable membrane. Water moves from areas of high water (low solute) to low water (high solute) to balance concentrations.",
-    "text": "In osmosis, water moves from:",
-    "options": [
-      "High solute to low solute",
-      "Low water to high water",
-      "High water concentration to low water concentration",
-      "Equilibrium to gradient"
-    ],
-    "correctAnswer": "High water concentration to low water concentration",
-    "abcd": [
-      "A. High solute to low solute",
-      "B. Low water to high water",
-      "C. High water concentration to low water concentration",
-      "D. Equilibrium to gradient"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 009",
+    "id": "isotonic_hypotonic_hypertonic_009",
     "question": "Which of the following best defines an isotonic solution?",
-    "answers": [
+    "options": [
       "Higher solute than the cell",
       "Lower solute than the cell",
       "Equal solute concentration as the cell",
       "No water present"
     ],
-    "correct": 2,
+    "correctAnswer": "Equal solute concentration as the cell",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": ["anatomy_cells", "purpose_stress", "biochemistry_concentration"],
     "keywords": [
@@ -405,32 +322,19 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "It has an equal solute concentration as the cell.",
     "long_explanation": "Isotonic solutions do not cause water to enter or exit cells excessively. They maintain equilibrium, preventing osmotic stress and are crucial in clinical hydration therapy.",
-    "text": "Which of the following best defines an isotonic solution?",
-    "options": [
-      "Higher solute than the cell",
-      "Lower solute than the cell",
-      "Equal solute concentration as the cell",
-      "No water present"
-    ],
-    "correctAnswer": "Equal solute concentration as the cell",
-    "abcd": [
-      "A. Higher solute than the cell",
-      "B. Lower solute than the cell",
-      "C. Equal solute concentration as the cell",
-      "D. No water present"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   },
   {
-    "id": "Isotonic Hypotonic Hypertonic 010",
+    "id": "isotonic_hypotonic_hypertonic_010",
     "question": "What condition results from placing animal cells in a hypotonic solution for too long?",
-    "answers": ["Hemolysis", "Plasmolysis", "Crenation", "Osmotic dehydration"],
-    "correct": 0,
+    "options": ["Hemolysis", "Plasmolysis", "Crenation", "Osmotic dehydration"],
+    "correctAnswer": "Hemolysis",
+    "topics": ["Anatomy", "Cell_theory"],
+    "subtopics": ["Cell_theory", "Equilibrium"],
     "distractors": [],
     "difficulty": "intermediate",
-    "topic": "cell_theory",
     "category": "Cell Theory",
     "tags": [
       "technique_pressure",
@@ -456,17 +360,8 @@
     "unit": "isotonic hypotonic hypertonic",
     "short_explanation": "Hemolysis — the bursting of red blood cells.",
     "long_explanation": "Excess water entering the cell in a hypotonic environment increases internal pressure. Without a cell wall, animal cells can burst — a condition known as hemolysis. This is dangerous and monitored during IV therapy.",
-    "text": "What condition results from placing animal cells in a hypotonic solution for too long?",
-    "options": ["Hemolysis", "Plasmolysis", "Crenation", "Osmotic dehydration"],
-    "correctAnswer": "Hemolysis",
-    "abcd": [
-      "A. Hemolysis",
-      "B. Plasmolysis",
-      "C. Crenation",
-      "D. Osmotic dehydration"
-    ],
     "main_topic": "anatomy",
-    "subtopic": "cell_theory/equilibrium",
-    "filename": "isotonic_hypotonic_hypertonic.json"
+    "filepath": "data/questions/anatomy/cell_theory/equilibrium/isotonic_hypotonic_hypertonic.json",
+    "sourceFile": "isotonic_hypotonic_hypertonic"
   }
 ]
