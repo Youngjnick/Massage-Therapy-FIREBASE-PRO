@@ -3,6 +3,7 @@ import { glob } from 'glob';
 
 const QUESTIONS_GLOB = 'src/data/questions/**/*.json';
 
+// Canonical field order and style
 const FIELD_ORDER = [
   'id',
   'correctAnswer',
