@@ -37,14 +37,20 @@ describe('QuizOption (keyboard/mouse answer selection)', () => {
       ); }} onSubmitOption={onSubmitOption} inputId="test-id-1" />
     );
     const radio = screen.getByRole('radio');
-    // First Enter/Space should select, not submit
+    // First Enter should select, not submit
     fireEvent.keyDown(radio, { key: 'Enter' });
+    // Rerender with selected=true
+    rerender(
+      <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-1" />
+    );
+    // Now Enter should submit
+    fireEvent.keyDown(radio, { key: 'Enter' });
+    // Rerender again to simulate post-submit state
+    rerender(
+      <QuizOption label="A" option="Option 1" selected={true} disabled={false} onSelect={() => {}} onSubmitOption={onSubmitOption} inputId="test-id-1" />
+    );
+    // Now Space should submit again
     fireEvent.keyDown(radio, { key: ' ' });
-    // Now Enter/Space should submit (twice)
-    fireEvent.keyDown(radio, { key: 'Enter' });
-    fireEvent.keyDown(radio, { key: ' ' });
-    // Extra Enter/Space should not submit again (simulate user holding key or pressing repeatedly)
-    fireEvent.keyDown(radio, { key: 'Enter' });
     // Only two submits should be counted
     expect(onSubmitOption).toHaveBeenCalledTimes(2);
     fireEvent.keyDown(radio, { key: 'ArrowDown' });

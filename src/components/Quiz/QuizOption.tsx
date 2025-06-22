@@ -158,6 +158,17 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
             onSubmitOption();
           }
         }}
+        onKeyDown={e => {
+          if (Boolean(disabled) || e.currentTarget.readOnly) return;
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            if (!selected && typeof onSelect === 'function') {
+              onSelect();
+            } else if (selected && typeof onSubmitOption === 'function') {
+              onSubmitOption();
+            }
+          }
+        }}
       />
       <label htmlFor={uniqueInputId} style={{ fontWeight: 600, marginRight: 8, cursor: disabled ? 'not-allowed' : 'pointer' }}>{labelStr}.</label> {optionStr}
       <QuizOptionIndicator
