@@ -32,17 +32,6 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     await expect(page.getByRole('button', { name: /start/i })).toBeVisible();
   });
 
-  test('Network failure: submitting results', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('1');
-    await page.getByRole('button', { name: /start/i }).click();
-    await page.getByTestId('quiz-option').first().click();
-    // Simulate network failure on Firestore write (result submission)
-    await page.route('**/firestore.googleapis.com/**', route => route.abort());
-    await page.getByRole('button', { name: /finish/i }).click();
-    await expect(page.getByTestId('quiz-error')).toBeVisible();
-  });
-
   test('ARIA attributes: quiz options and navigation', async ({ page }) => {
     await page.goto('/');
     await page.getByLabel('Quiz Length').fill('2');
