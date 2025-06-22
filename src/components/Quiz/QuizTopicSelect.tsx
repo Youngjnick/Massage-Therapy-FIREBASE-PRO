@@ -16,6 +16,7 @@ const QuizTopicSelect: React.FC<QuizTopicSelectProps & { id?: string }> = ({ ava
     id={id}
     data-testid={id}
   >
+    <option value="">Select a topic</option>
     {availableTopics.map(topic => (
       <option key={topic} value={topic}>{prettifyTopic(topic)}</option>
     ))}

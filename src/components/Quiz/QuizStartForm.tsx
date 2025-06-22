@@ -7,8 +7,8 @@ interface QuizStartFormProps {
   availableTopics: string[];
   selectedTopic: string;
   setSelectedTopic: (topic: string) => void;
-  quizLength: number;
-  setQuizLength: (len: number) => void;
+  quizLength: number | '';
+  setQuizLength: (len: number | '') => void;
   maxQuizLength: number;
   sort: string;
   setSort: (val: string) => void;
@@ -45,7 +45,8 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
 
   function validate() {
     if (!props.selectedTopic) return 'Please select a topic.';
-    if (!props.quizLength || props.quizLength < 1) return 'Please enter a valid quiz length.';
+    if (!props.quizLength && props.quizLength !== 0) return 'Please enter a valid quiz length.';
+    if (props.quizLength < 1) return 'Quiz length must be at least 1.';
     if (!props.availableTopics || props.availableTopics.length === 0) return 'No topics available.';
     return null;
   }
@@ -155,7 +156,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
             </select>
           </label>
         )}
-        <button style={{ marginLeft: '1rem' }} type="submit" aria-label="Start Quiz" disabled={props.quizLength < 1 || props.maxQuizLength === 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
+        <button style={{ marginLeft: '1rem' }} type="submit" aria-label="Start Quiz" disabled={props.quizLength === '' || props.quizLength < 1 || props.maxQuizLength === 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
         {error && (
           <div style={{ color: 'red', marginTop: 12 }} data-testid="quiz-start-error" role="alert">{error}</div>
         )}
