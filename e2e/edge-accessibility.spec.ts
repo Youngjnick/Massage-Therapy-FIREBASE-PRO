@@ -78,13 +78,6 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     // Answer first question
     const radios = page.getByTestId('quiz-radio');
     await radios.first().click();
-    // Debug: log all button names
-    const buttons = await page.locator('button').all();
-    for (const btn of buttons) {
-      const name = await btn.textContent();
-      const aria = await btn.getAttribute('aria-label');
-      console.log('[DEBUG] Button:', { name, aria });
-    }
     // Check mid-quiz Finish button (robust selection)
     const finishBtns = page.getByRole('button', { name: /finish/i });
     const finishBtnEarly = finishBtns.first();
