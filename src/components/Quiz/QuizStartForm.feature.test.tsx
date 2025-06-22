@@ -17,7 +17,7 @@ describe('QuizStartForm (feature toggles)', () => {
     setFilter: jest.fn(),
     filterValue: '',
     setFilterValue: jest.fn(),
-    availableDifficulties: ['easy', 'hard'],
+    availableDifficulties: ['easy', 'intermediate', 'hard'],
     availableTags: [],
     toggleState: {
       showExplanations: true,

@@ -1,5 +1,6 @@
 /* global console */
 import { test, expect } from '@playwright/test';
+import badges from '../public/badges/badges.json' assert { type: 'json' };
 
 const BASE_URL = 'https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/';
 
@@ -27,33 +28,28 @@ const mainPages = [
 
 test.describe('Production Asset Checks', () => {
   test('Badge images load and are visible', async ({ page }) => {
+    // Go to the root page first (SPA routing workaround for GitHub Pages)
     await page.goto(BASE_URL);
-    for (const badge of badgeImages) {
-      const img = page.locator(`img[src*="${badge}"]`);
-      await expect(img).toBeVisible();
-      // Check image loaded (naturalWidth > 0)
-      const width = await img.evaluate(el => ('naturalWidth' in el ? el.naturalWidth : 1));
-      expect(width).toBeGreaterThan(0);
-    }
-  });
-
-  // This test is skipped locally for stability. Enable in CI by removing test.skip.
-  test.skip('Badge images load and are visible on /achievements', async ({ page }) => {
-    await page.goto(`${BASE_URL}achievements`);
+    // Click the Achievements link in the navbar
+    await page.getByRole('link', { name: /achievements/i }).click();
     // Wait for badge container or a known badge element
     const badgeContainer = page.locator('[data-testid="badge-container"], .badge-list, .achievements-list');
-    await badgeContainer.first().waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+    await badgeContainer.first().waitFor({ state: 'visible', timeout: 10000 });
     for (const badge of badgeImages) {
-      const img = page.locator(`img[src*="${badge}"]`);
-      try {
-        await expect(img).toBeVisible({ timeout: 5000 });
-        // Check image loaded (naturalWidth > 0)
-        const width = await img.evaluate(el => ('naturalWidth' in el ? el.naturalWidth : 1));
-        expect(width).toBeGreaterThan(0);
-      } catch {
-        // Debug output if image is not found or not visible
-        // (no-op for CI stability)
-      }
+      // Wait for the image with the correct alt text to appear
+      const badgeMeta = badges.find((b: any) => `badges/${b.image}` === badge);
+      const altText = badgeMeta ? badgeMeta.name : badge;
+      const img = page.locator(`img[alt="${altText}"]`);
+      await img.waitFor({ state: 'visible', timeout: 10000 });
+      // Wait for image to load (naturalWidth > 0)
+      const handle = await img.elementHandle();
+      await page.waitForFunction(
+        el => el instanceof HTMLImageElement && el.naturalWidth > 0,
+        handle,
+        { timeout: 10000 }
+      );
+      await expect(img).toBeVisible({ timeout: 10000 });
+      await expect(img).toHaveAttribute('src', new RegExp(badge));
     }
   });
 
