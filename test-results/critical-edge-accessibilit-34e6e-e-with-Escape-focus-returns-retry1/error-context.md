@@ -18,9 +18,16 @@
     - listitem:
       - link "Profile":
         - /url: /profile
-- heading "Quiz" [level=1]
-- status "Loading"
-- text: Loading...
+- heading "Achievements" [level=2]
+- button "Open badge modal for First Quiz":
+  - img "First Quiz"
+  - text: First Quiz
+- button "Open badge modal for Accuracy 100%":
+  - img "Accuracy 100%"
+  - text: Accuracy 100%
+- button "Open badge modal for Test Badge":
+  - img "Test Badge"
+  - text: Test Badge
 - contentinfo:
   - textbox "Search questions"
 ```
