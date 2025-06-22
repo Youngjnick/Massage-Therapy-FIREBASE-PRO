@@ -73,15 +73,31 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
 
   test('Screen reader text: ARIA labels and roles', async ({ page }) => {
     await page.goto('/');
-    // Check for ARIA roles on quiz options and navigation
+    await page.getByLabel('Quiz Length').fill('2');
+    await page.getByRole('button', { name: /start/i }).click();
+    // Answer first question
     const radios = page.getByTestId('quiz-radio');
-    for (let i = 0; i < await radios.count(); i++) {
-      const role = await radios.nth(i).getAttribute('role');
-      expect(role === 'radio' || role === null).toBeTruthy();
+    await radios.first().click();
+    // Debug: log all button names
+    const buttons = await page.locator('button').all();
+    for (const btn of buttons) {
+      const name = await btn.textContent();
+      const aria = await btn.getAttribute('aria-label');
+      console.log('[DEBUG] Button:', { name, aria });
     }
-    // Check for ARIA labels on navigation buttons
-    const finishBtn = page.getByRole('button', { name: /finish/i });
-    expect(await finishBtn.getAttribute('aria-label') || '').toMatch(/finish/i);
+    // Check mid-quiz Finish button (robust selection)
+    const finishBtns = page.getByRole('button', { name: /finish/i });
+    const finishBtnEarly = finishBtns.first();
+    expect(await finishBtnEarly.getAttribute('aria-label')).toMatch(/finish quiz early/i);
+    // Go to next question
+    const nextBtn = page.getByRole('button', { name: /next/i });
+    await nextBtn.click();
+    // Answer last question
+    const radios2 = page.getByTestId('quiz-radio');
+    await radios2.first().click();
+    // Check last-question Finish Quiz button
+    const finishBtn = page.getByRole('button', { name: /finish quiz/i });
+    expect(await finishBtn.getAttribute('aria-label')).toMatch(/finish quiz/i);
   });
 
   test('Mobile viewport: quiz, results, achievements', async ({ page }) => {
@@ -94,6 +110,6 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     await page.getByRole('button', { name: /finish/i }).click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     await page.goto('/achievements');
-    await expect(page.getByText(/achievements/i)).toBeVisible();
+    await expect(page.getByRole('heading', { name: /achievements/i })).toBeVisible();
   });
 });
