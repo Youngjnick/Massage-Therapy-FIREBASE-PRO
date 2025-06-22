@@ -97,7 +97,7 @@ const Quiz: React.FC = () => {
         setQuestions(qs);
         // Extract unique topics (use the last topic for each question)
         const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
-        if (!selectedTopic && topics.length > 0) setSelectedTopic(topics[0]);
+        if (!selectedTopic && topics.length > 0) setSelectedTopic(topics.at(-1) ?? "");
       })
       .catch(() => {
         setWarning('Error: Failed to load questions. Could not load questions.');
@@ -254,7 +254,7 @@ const Quiz: React.FC = () => {
   const topicStats = React.useMemo(() => {
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-      const topic = (q.topics && q.topics[0]) || 'Other';
+      const topic = (q.topics && q.topics.at(-1)) || 'Other';
       if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
       stats[topic].total++;
       if (userAnswers[i] !== undefined && (shuffledOptions[i] || q.options)[userAnswers[i]] === q.correctAnswer) {
@@ -274,7 +274,7 @@ const Quiz: React.FC = () => {
         if (user) {
           const stats: { [topic: string]: { correct: number; total: number } } = {};
           (shuffledQuestions.length ? shuffledQuestions : quizQuestions).forEach((q) => {
-            const topic = (q.topics && q.topics[0]) || 'Other';
+            const topic = (q.topics && q.topics.at(-1)) || 'Other';
             if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
             stats[topic].total++;
           });
