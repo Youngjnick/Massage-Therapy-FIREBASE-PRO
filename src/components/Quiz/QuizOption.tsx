@@ -134,10 +134,7 @@ const QuizOption: React.FC<QuizOptionProps> = ({
         name={name}
         checked={selected}
         onChange={e => {
-          if (Boolean(disabled) || e.currentTarget.readOnly) return;
-          if (!selected) {
-            try { if (typeof onSelect === 'function') onSelect(); } catch { /* swallow */ }
-          }
+          // Do nothing: prevent arrow key navigation from selecting/submitting
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
         aria-checked={selected}
