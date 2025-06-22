@@ -19,6 +19,7 @@ interface QuizQuestionCardProps {
   onNext: () => void;
   onFinish: () => void;
   total: number;
+  disableAllOptions?: boolean; // Add this prop
 }
 
 const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
@@ -36,6 +37,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
   onFinish,
   total,
   answered: answeredProp, // Destructure answered as answeredProp
+  ...props
 }) => {
   // Generate a unique instance id for this question card (per mount)
   // Use window.crypto.randomUUID() for true uniqueness if available
@@ -110,7 +112,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   label={String.fromCharCode(65 + i)}
                   option={opt}
                   selected={userAnswers[current] === i}
-                  disabled={answered ? true : false}
+                  disabled={props.disableAllOptions || (answered ? true : false)}
                   onSelect={() => {
                     // Only select, do not submit
                     if (!answered) handleAnswer(i, false);
