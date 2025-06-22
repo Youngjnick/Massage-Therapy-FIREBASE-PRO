@@ -75,11 +75,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   // Track which keys have submitted in this focus session
   const submittedKeysRef = React.useRef<{ [key: string]: boolean }>({});
 
-  // Reset submit keys on blur
-  const handleBlur = () => {
-    submittedKeysRef.current = {};
-  };
-
   // Reset submit keys when selection changes
   React.useEffect(() => {
     submittedKeysRef.current = {};
@@ -87,20 +82,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
 
   // IMPORTANT: The 'name' prop must be unique per quiz card/group.
   // Keyboard navigation (ArrowUp/Down/Left/Right) is scoped to radios with the same 'name'.
-  const focusSiblingInput = (direction: 'next' | 'prev') => {
-    const thisInput = document.getElementById(uniqueInputId);
-    if (!thisInput || !name) return;
-    const radios = Array.from(document.querySelectorAll('input[type="radio"][name="' + name + '"]'))
-      .map(r => r as HTMLInputElement)
-      .filter(r => r.offsetParent !== null);
-    const idx = radios.findIndex(r => r.id === uniqueInputId);
-    if (idx === -1) return;
-    const nextIdx = direction === 'next' ? (idx + 1) % radios.length : (idx - 1 + radios.length) % radios.length;
-    // Debug log
-    console.log('[QuizOption] focusSiblingInput:', { direction, current: uniqueInputId, next: radios[nextIdx]?.id });
-    Promise.resolve().then(() => { radios[nextIdx]?.focus(); });
-  };
-
   // Helper to get the input element from ref (handles function or object ref)
   const getInputEl = () => {
     if (typeof resolvedInputRef === 'function') return null;
