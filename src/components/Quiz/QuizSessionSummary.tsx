@@ -48,23 +48,36 @@ const QuizSessionSummary: React.FC<QuizSessionSummaryProps> = ({
       </div>
       <button onClick={onRetry}>Try Another Quiz</button>
       <ul style={{ marginTop: 24 }}>
-        {questions.map((q: any, i: number) => (
-          <li key={q.id} style={{ marginBottom: 16 }}>
-            <strong>{q.question}</strong><br />
-            <span>Your answer: {userAnswers[i] !== undefined ? (shuffledOptions[i] || q.options)[userAnswers[i]] : 'No answer'}</span><br />
-            <span>Correct answer: {q.correctAnswer}</span>
-            {q.short_explanation && (
-              <div style={{ color: '#059669', marginTop: 4 }}>Explanation: {q.short_explanation}</div>
-            )}
-            {q.long_explanation && (
-              <div style={{ color: '#2563eb', marginTop: 4 }}>More Info: {q.long_explanation}</div>
-            )}
-            {q.clinical_application && (
-              <div style={{ color: '#64748b', marginTop: 4 }}>Clinical Application: {q.clinical_application}</div>
-            )}
-          </li>
-        ))}
+        {questions.map((q: any, i: number) => {
+          const userAnswerIdx = userAnswers[i];
+          const userAnswer = userAnswerIdx !== undefined ? (shuffledOptions[i] || q.options)[userAnswerIdx] : null;
+          const isUnanswered = userAnswerIdx === undefined;
+          return (
+            <li key={q.id} style={{ marginBottom: 16, opacity: isUnanswered ? 0.6 : 1 }}>
+              <strong>{q.question}</strong><br />
+              <span>
+                Your answer: {isUnanswered ? <span style={{ color: '#b91c1c', fontWeight: 600 }}>No answer</span> : userAnswer}
+              </span><br />
+              <span>Correct answer: {q.correctAnswer}</span>
+              {q.short_explanation && (
+                <div style={{ color: '#059669', marginTop: 4 }}>Explanation: {q.short_explanation}</div>
+              )}
+              {q.long_explanation && (
+                <div style={{ color: '#2563eb', marginTop: 4 }}>More Info: {q.long_explanation}</div>
+              )}
+              {q.clinical_application && (
+                <div style={{ color: '#64748b', marginTop: 4 }}>Clinical Application: {q.clinical_application}</div>
+              )}
+            </li>
+          );
+        })}
       </ul>
+      <div style={{ marginTop: 16, fontWeight: 600 }}>
+        Answered: {userAnswers.filter(a => a !== undefined).length} / {questions.length}
+        {userAnswers.some(a => a === undefined) && (
+          <span style={{ color: '#b91c1c', marginLeft: 8 }}>(Some questions were skipped or left unanswered)</span>
+        )}
+      </div>
       <button onClick={onClose} style={{ marginTop: 24 }}>Close</button>
     </div>
   </div>
