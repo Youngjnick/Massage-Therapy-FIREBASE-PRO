@@ -78,6 +78,7 @@ const BadgeModal: React.FC<BadgeModalProps> = ({ badge, open, onClose }) => {
             cursor: 'pointer',
           }}
           aria-label="Close badge modal"
+          data-testid="badge-modal-close-bottom"
         >
           Close
         </button>

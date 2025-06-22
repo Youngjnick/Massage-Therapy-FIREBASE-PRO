@@ -39,7 +39,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, children, className = '', 
         }}
         onClick={e => e.stopPropagation()}
       >
-        <button onClick={onClose} style={{ position: 'absolute', top: 24, right: 32, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#64748b' }} aria-label="Close Modal">&times;</button>
+        <button onClick={onClose} style={{ position: 'absolute', top: 24, right: 32, background: 'none', border: 'none', fontSize: 24, cursor: 'pointer', color: '#64748b' }} aria-label="Close Modal" data-testid="badge-modal-close-top">&times;</button>
         {children}
       </div>
     </div>
