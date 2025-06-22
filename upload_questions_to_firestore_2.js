@@ -59,7 +59,7 @@ function validateQuestion(q, file, idx) {
   const warnings = [];
   if (!q.short_explanation) warnings.push('Missing short_explanation');
   if (!q.long_explanation) warnings.push('Missing long_explanation');
-  if (!q.applied_example) warnings.push('Missing applied_example');
+  if (!q.clinical_application) warnings.push('Missing clinical_application');
   return (errors.length > 0 || warnings.length > 0)
     ? { file, idx, id: q.id, errors, warnings }
     : null;

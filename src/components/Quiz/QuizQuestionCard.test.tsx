@@ -9,7 +9,7 @@ describe('QuizQuestionCard', () => {
   it('renders question text', () => {
     render(
       <QuizQuestionCard
-        q={{ text: 'What is the capital of France?', options: ['Paris', 'London', 'Berlin', 'Rome'], id: '1' }}
+        q={{ question: 'What is the capital of France?', options: ['Paris', 'London', 'Berlin', 'Rome'], id: '1' }}
         current={0}
         userAnswers={[]}
         answered={false}
@@ -31,7 +31,7 @@ describe('QuizQuestionCard', () => {
 
 describe('QuizQuestionCard (explanations/feedback)', () => {
   const explanationProps = {
-    q: { text: 'Q1', options: ['A', 'B'], correctAnswer: 'A', short_explanation: 'Short', long_explanation: 'Long' },
+    q: { question: 'Q1', options: ['A', 'B'], correctAnswer: 'A', short_explanation: 'Short', long_explanation: 'Long' },
     current: 0,
     userAnswers: [0],
     answered: false,

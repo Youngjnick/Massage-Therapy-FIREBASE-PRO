@@ -28,17 +28,6 @@ const FIELD_ORDER = [
 ];
 
 function canonicalizeQuestion(q) {
-  // Merge applied_example into clinical_application if needed
-  if (
-    Object.prototype.hasOwnProperty.call(q, 'applied_example') &&
-    (!Object.prototype.hasOwnProperty.call(q, 'clinical_application') || q['clinical_application'] == null || q['clinical_application'] === '')
-  ) {
-    q['clinical_application'] = q['applied_example'];
-  }
-  // Lowercase all topics if present
-  if (Array.isArray(q.topics)) {
-    q.topics = q.topics.map(t => typeof t === 'string' ? t.toLowerCase() : t);
-  }
   // Only keep fields in FIELD_ORDER, set missing/empty to null
   const out = {};
   FIELD_ORDER.forEach(field => {
