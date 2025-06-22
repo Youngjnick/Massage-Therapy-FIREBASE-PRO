@@ -24,7 +24,9 @@ const QuizActions: React.FC<QuizActionsProps> = ({
       onClick={onNext}
       disabled={current >= total - 1 || !answered}
       aria-label="Next question"
-      style={{ display: current < total - 1 ? undefined : 'none' }}
+      style={{ visibility: current < total - 1 ? 'visible' : 'hidden', position: 'absolute' }}
+      tabIndex={current < total - 1 ? 0 : -1}
+      data-testid="quiz-next-btn"
     >
       Next
     </button>
