@@ -7,14 +7,27 @@ const errors = [];
 const changes = [];
 const renames = [];
 
+// Helper to normalize filenames: lowercase, remove apostrophes, replace non-alphanum (except _) with _, collapse multiple _
+function normalizeFilename(filename) {
+  return filename
+    .toLowerCase()
+    .replace(/'/g, '')
+    .replace(/[^a-z0-9_]+/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
 const run = async () => {
   const files = await glob(QUESTIONS_GLOB);
   for (const file of files) {
     const dir = path.dirname(file);
     const base = path.basename(file);
-    const newBase = base.replace(/'/g, ''); // Remove apostrophes
-    if (base !== newBase) {
-      const newPath = path.join(dir, newBase);
+    const ext = path.extname(base);
+    const baseNoExt = path.basename(base, ext);
+    const normalizedBase = normalizeFilename(baseNoExt) + ext;
+    let newPath = path.join(dir, normalizedBase);
+    // Only rename if the normalized filename is different
+    if (base !== normalizedBase) {
       try {
         fs.renameSync(file, newPath);
         renames.push(`${file} => ${newPath}`);
@@ -22,33 +35,34 @@ const run = async () => {
         errors.push({ file, error: 'Rename error' });
         continue;
       }
+    } else {
+      newPath = file;
     }
     let data;
     try {
-      const content = fs.readFileSync(path.join(dir, newBase), 'utf8');
+      const content = fs.readFileSync(newPath, 'utf8');
       data = JSON.parse(content);
     } catch {
-      errors.push({ file: path.join(dir, newBase), error: 'Invalid JSON or read error' });
+      errors.push({ file: newPath, error: 'Invalid JSON or read error' });
       continue;
     }
     if (!Array.isArray(data) || data.length === 0) continue;
     let changed = false;
-    // --- UPDATED: Use cleaned-up filename as prefix for ID ---
-    const cleanBase = path.basename(newBase, '.json').replace(/[^a-zA-Z0-9_]/g, '_');
+    // Use normalized filename (without extension) as prefix for ID
+    const cleanBase = path.basename(normalizedBase, '.json');
     data.forEach((q, idx) => {
       const newId = `${cleanBase}_${String(idx + 1).padStart(3, '0')}`;
       if (q.id !== newId) {
-        changes.push(`${path.join(dir, newBase)}: ${q.id} => ${newId}`);
+        changes.push(`${newPath}: ${q.id} => ${newId}`);
         q.id = newId;
         changed = true;
       }
     });
-    // --- END UPDATED ---
     if (changed) {
       try {
-        fs.writeFileSync(path.join(dir, newBase), JSON.stringify(data, null, 2) + '\n', 'utf8');
+        fs.writeFileSync(newPath, JSON.stringify(data, null, 2) + '\n', 'utf8');
       } catch {
-        errors.push({ file: path.join(dir, newBase), error: 'Write error' });
+        errors.push({ file: newPath, error: 'Write error' });
       }
     }
   }
