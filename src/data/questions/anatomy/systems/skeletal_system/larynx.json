@@ -14,7 +14,6 @@
     "long_explanation": "The thyroid cartilage is the largest of the laryngeal cartilages and creates a protrusion in the anterior neck called the laryngeal prominence or 'Adam’s apple.'",
     "clinical_application": "Awareness of this landmark helps massage therapists avoid undue pressure on the anterior neck and allows for accurate anatomical palpation.",
     "source_reference": "Atlas of Human Anatomy, Netter",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "cartilage", "thyroid", "adam’s apple"],
-    "keywords": ["thyroid cartilage", "laryngeal prominence", "adam’s apple"],
-    "synonyms": ["laryngeal prominence", "neck cartilage"]
+    "tags": [
+      "larynx",
+      "cartilage",
+      "thyroid",
+      "adam’s apple"
+    ],
+    "keywords": [
+      "thyroid cartilage",
+      "laryngeal prominence",
+      "adam’s apple"
+    ],
+    "synonyms": [
+      "laryngeal prominence",
+      "neck cartilage"
+    ]
   },
   {
     "id": "larynx_002",
@@ -42,7 +53,6 @@
     "long_explanation": "The larynx plays a dual role: it acts as a passage for air and contains the vocal folds that produce sound. It also protects the lower airways by preventing food and liquids from entering the trachea.",
     "clinical_application": "Massage therapists should understand the protective role of the larynx to avoid compressing or irritating sensitive neck structures.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,9 +61,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "voice", "airway", "function"],
-    "keywords": ["voice box", "phonation", "airway protection"],
-    "synonyms": ["voice box", "airway valve"]
+    "tags": [
+      "larynx",
+      "voice",
+      "airway",
+      "function"
+    ],
+    "keywords": [
+      "voice box",
+      "phonation",
+      "airway protection"
+    ],
+    "synonyms": [
+      "voice box",
+      "airway valve"
+    ]
   },
   {
     "id": "larynx_003",
@@ -70,7 +92,6 @@
     "long_explanation": "The epiglottis is a leaf-shaped flap of elastic cartilage that folds down to seal off the laryngeal inlet during swallowing, preventing food and liquid from entering the airway.",
     "clinical_application": "Understanding epiglottis function is useful when treating clients recovering from stroke or dysphagia where aspiration risk is high.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,9 +100,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["epiglottis", "swallowing", "aspiration", "larynx"],
-    "keywords": ["airway protection", "epiglottis", "swallow reflex"],
-    "synonyms": ["swallow valve", "airway lid"]
+    "tags": [
+      "epiglottis",
+      "swallowing",
+      "aspiration",
+      "larynx"
+    ],
+    "keywords": [
+      "airway protection",
+      "epiglottis",
+      "swallow reflex"
+    ],
+    "synonyms": [
+      "swallow valve",
+      "airway lid"
+    ]
   },
   {
     "id": "larynx_004",
@@ -98,7 +131,6 @@
     "long_explanation": "There are several cartilages in the larynx, but the arytenoid cartilages are paired and sit on the posterior cricoid. They anchor and move the vocal cords to adjust pitch and volume.",
     "clinical_application": "Voice changes or hoarseness in clients may involve arytenoid dysfunction or inflammation.",
     "source_reference": "Clinical Anatomy by Regions, Snell",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -107,9 +139,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "arytenoid", "vocal cords", "paired"],
-    "keywords": ["arytenoid", "vocal movement", "laryngeal cartilages"],
-    "synonyms": ["paired cartilages", "vocal cord anchors"]
+    "tags": [
+      "larynx",
+      "arytenoid",
+      "vocal cords",
+      "paired"
+    ],
+    "keywords": [
+      "arytenoid",
+      "vocal movement",
+      "laryngeal cartilages"
+    ],
+    "synonyms": [
+      "paired cartilages",
+      "vocal cord anchors"
+    ]
   },
   {
     "id": "larynx_005",
@@ -126,7 +170,6 @@
     "long_explanation": "The recurrent laryngeal nerve, a branch of the vagus nerve (CN X), supplies all intrinsic laryngeal muscles except the cricothyroid, which is supplied by the external branch of the superior laryngeal nerve.",
     "clinical_application": "Injury to this nerve can cause vocal fold paralysis and hoarseness — important when treating post-surgical or trauma clients.",
     "source_reference": "Neuroanatomy Through Clinical Cases, Blumenfeld",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -135,21 +178,37 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "nerve", "recurrent laryngeal", "vagus"],
-    "keywords": ["recurrent laryngeal nerve", "CN X", "laryngeal innervation"],
-    "synonyms": ["laryngeal nerve", "vagus branch"]
+    "tags": [
+      "larynx",
+      "nerve",
+      "recurrent laryngeal",
+      "vagus"
+    ],
+    "keywords": [
+      "recurrent laryngeal nerve",
+      "CN X",
+      "laryngeal innervation"
+    ],
+    "synonyms": [
+      "laryngeal nerve",
+      "vagus branch"
+    ]
   },
   {
     "id": "larynx_006",
     "correctAnswer": "Glottis",
     "question": "Which laryngeal structure contains the vocal folds?",
-    "options": ["Glottis", "Epiglottis", "Cricoid cartilage", "Trachea"],
+    "options": [
+      "Glottis",
+      "Epiglottis",
+      "Cricoid cartilage",
+      "Trachea"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "larynx"],
     "short_explanation": "The glottis contains the vocal folds.",
     "long_explanation": "The glottis refers to the space between the vocal folds, including the folds themselves. It plays a critical role in phonation by regulating the passage of air and sound production.",
     "clinical_application": "Voice hoarseness or strain can result from glottal dysfunction. Therapists should be cautious with clients experiencing voice fatigue or chronic laryngeal tension.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -158,21 +217,37 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "glottis", "vocal folds", "voice"],
-    "keywords": ["glottis", "phonation", "vocal cords"],
-    "synonyms": ["vocal space", "phonation zone"]
+    "tags": [
+      "larynx",
+      "glottis",
+      "vocal folds",
+      "voice"
+    ],
+    "keywords": [
+      "glottis",
+      "phonation",
+      "vocal cords"
+    ],
+    "synonyms": [
+      "vocal space",
+      "phonation zone"
+    ]
   },
   {
     "id": "larynx_007",
     "correctAnswer": "Voice box",
     "question": "Which of the following is another name for the larynx?",
-    "options": ["Voice box", "Windpipe", "Breastbone", "Esophagus"],
+    "options": [
+      "Voice box",
+      "Windpipe",
+      "Breastbone",
+      "Esophagus"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "larynx"],
     "short_explanation": "The larynx is commonly known as the voice box.",
     "long_explanation": "The larynx is often referred to as the 'voice box' because it houses the vocal folds and is responsible for sound production. It also helps in respiration and airway protection.",
     "clinical_application": "Therapists should be familiar with common terminology that clients might use when describing voice or neck issues.",
     "source_reference": "Marieb & Hoehn, Human Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -181,9 +256,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "voice box", "anatomy"],
-    "keywords": ["voice box", "sound", "speech"],
-    "synonyms": ["voice box", "sound organ"]
+    "tags": [
+      "larynx",
+      "voice box",
+      "anatomy"
+    ],
+    "keywords": [
+      "voice box",
+      "sound",
+      "speech"
+    ],
+    "synonyms": [
+      "voice box",
+      "sound organ"
+    ]
   },
   {
     "id": "larynx_008",
@@ -200,7 +286,6 @@
     "long_explanation": "The cricothyroid muscle, innervated by the external branch of the superior laryngeal nerve, tilts the thyroid cartilage forward to lengthen and tense the vocal cords, raising vocal pitch.",
     "clinical_application": "Massage therapists working with singers or vocal professionals should understand muscular contributions to pitch control.",
     "source_reference": "Clinical Anatomy by Regions, Snell",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -209,9 +294,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cricothyroid", "vocal pitch", "laryngeal muscles"],
-    "keywords": ["cricothyroid", "voice modulation", "pitch control"],
-    "synonyms": ["pitch control", "tensing vocal cords"]
+    "tags": [
+      "cricothyroid",
+      "vocal pitch",
+      "laryngeal muscles"
+    ],
+    "keywords": [
+      "cricothyroid",
+      "voice modulation",
+      "pitch control"
+    ],
+    "synonyms": [
+      "pitch control",
+      "tensing vocal cords"
+    ]
   },
   {
     "id": "larynx_009",
@@ -228,7 +324,6 @@
     "long_explanation": "Most laryngeal cartilages, such as the thyroid, cricoid, and arytenoid, are made of hyaline cartilage, which provides support while allowing flexibility. The epiglottis, however, is made of elastic cartilage.",
     "clinical_application": "Massage around the anterior neck should account for underlying cartilage structure to avoid discomfort or injury.",
     "source_reference": "Atlas of Human Anatomy, Netter",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,25 +332,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "cartilage", "hyaline"],
+    "tags": [
+      "larynx",
+      "cartilage",
+      "hyaline"
+    ],
     "keywords": [
       "hyaline cartilage",
       "laryngeal framework",
       "thyroid cartilage"
     ],
-    "synonyms": ["support cartilage", "rigid airway cartilage"]
+    "synonyms": [
+      "support cartilage",
+      "rigid airway cartilage"
+    ]
   },
   {
     "id": "larynx_010",
     "correctAnswer": "Trachea",
     "question": "Which structure lies directly inferior to the larynx?",
-    "options": ["Trachea", "Pharynx", "Esophagus", "Hyoid bone"],
+    "options": [
+      "Trachea",
+      "Pharynx",
+      "Esophagus",
+      "Hyoid bone"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "larynx"],
     "short_explanation": "The trachea lies just below the larynx.",
     "long_explanation": "The trachea, or windpipe, continues the airway from the larynx down into the thorax. It begins immediately inferior to the cricoid cartilage at the level of C6.",
     "clinical_application": "This relationship is important when massaging the neck and upper chest, especially in clients with tracheostomy or respiratory issues.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/larynx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -264,8 +370,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["larynx", "trachea", "anatomy", "respiratory"],
-    "keywords": ["trachea", "airway", "neck anatomy"],
-    "synonyms": ["windpipe", "airway below larynx"]
+    "tags": [
+      "larynx",
+      "trachea",
+      "anatomy",
+      "respiratory"
+    ],
+    "keywords": [
+      "trachea",
+      "airway",
+      "neck anatomy"
+    ],
+    "synonyms": [
+      "windpipe",
+      "airway below larynx"
+    ]
   }
 ]

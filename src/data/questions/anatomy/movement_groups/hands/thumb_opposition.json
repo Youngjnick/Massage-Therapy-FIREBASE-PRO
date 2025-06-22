@@ -14,7 +14,6 @@
     "long_explanation": "Opponens pollicis, part of the thenar group, allows the thumb to touch the tips of the other fingers by flexing, abducting, and rotating the 1st metacarpal across the palm.",
     "clinical_application": "Weakness of this muscle, such as from median nerve damage, can impair grip and pinch strength. Massage may support function through thenar release techniques.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,14 +22,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thumb", "opposition", "opponens pollicis", "thenar"],
+    "tags": [
+      "thumb",
+      "opposition",
+      "opponens pollicis",
+      "thenar"
+    ],
     "keywords": [
       "thumb muscle",
       "opposition",
       "median nerve",
       "thenar eminence"
     ],
-    "synonyms": ["opposing thumb", "thenar muscle"]
+    "synonyms": [
+      "opposing thumb",
+      "thenar muscle"
+    ]
   },
   {
     "id": "thumb_opposition_002",
@@ -47,7 +54,6 @@
     "long_explanation": "Opposition is a compound movement where the thumb abducts, flexes, and rotates medially across the palm to meet the other fingers.",
     "clinical_application": "Restricted thumb opposition may impair daily functions like grasping and pinching. Manual therapy may help increase mobility.",
     "source_reference": "Clinical Kinesiology, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -56,9 +62,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["opposition", "thumb motion", "combined movement"],
-    "keywords": ["thumb abduction", "thumb flexion", "opposition"],
-    "synonyms": ["thumb movements", "composite motion"]
+    "tags": [
+      "opposition",
+      "thumb motion",
+      "combined movement"
+    ],
+    "keywords": [
+      "thumb abduction",
+      "thumb flexion",
+      "opposition"
+    ],
+    "synonyms": [
+      "thumb movements",
+      "composite motion"
+    ]
   },
   {
     "id": "thumb_opposition_003",
@@ -75,7 +92,6 @@
     "long_explanation": "The median nerve, via the recurrent branch, innervates the opponens pollicis. Injury to this nerve can impair opposition.",
     "clinical_application": "Massage therapists should be aware of nerve pathways when treating clients with carpal tunnel syndrome.",
     "source_reference": "Netter’s Atlas of Human Anatomy, 7th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -84,21 +100,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["median nerve", "thenar", "nerve injury"],
-    "keywords": ["opponens pollicis", "median nerve", "thenar innervation"],
-    "synonyms": ["recurrent branch", "nerve supply of thenar"]
+    "tags": [
+      "median nerve",
+      "thenar",
+      "nerve injury"
+    ],
+    "keywords": [
+      "opponens pollicis",
+      "median nerve",
+      "thenar innervation"
+    ],
+    "synonyms": [
+      "recurrent branch",
+      "nerve supply of thenar"
+    ]
   },
   {
     "id": "thumb_opposition_004",
     "correctAnswer": "Trapezium",
     "question": "Which carpal bone articulates with the first metacarpal to allow thumb opposition?",
-    "options": ["Trapezium", "Scaphoid", "Lunate", "Capitate"],
+    "options": [
+      "Trapezium",
+      "Scaphoid",
+      "Lunate",
+      "Capitate"
+    ],
     "topics": ["anatomy", "movement_groups", "hands", "thumb_opposition"],
     "short_explanation": "The trapezium articulates with the 1st metacarpal.",
     "long_explanation": "The trapezium forms the saddle joint with the 1st metacarpal, enabling thumb opposition and a wide range of motion.",
     "clinical_application": "Joint dysfunction at the trapezium may limit opposition. Soft tissue release and joint mobilization may be helpful.",
     "source_reference": "Gray’s Anatomy for Students, 4th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -107,9 +138,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trapezium", "CMC joint", "thumb joint"],
-    "keywords": ["trapezium", "thumb carpometacarpal", "thumb articulation"],
-    "synonyms": ["thumb CMC joint"]
+    "tags": [
+      "trapezium",
+      "CMC joint",
+      "thumb joint"
+    ],
+    "keywords": [
+      "trapezium",
+      "thumb carpometacarpal",
+      "thumb articulation"
+    ],
+    "synonyms": [
+      "thumb CMC joint"
+    ]
   },
   {
     "id": "thumb_opposition_005",
@@ -126,7 +167,6 @@
     "long_explanation": "The median nerve innervates muscles like opponens pollicis. Damage—such as from carpal tunnel syndrome—may limit opposition and grip.",
     "clinical_application": "Recognizing opposition weakness can guide treatment for clients with suspected nerve compression.",
     "source_reference": "Orthopedic Physical Assessment, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,9 +175,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve injury", "opposition loss", "median"],
-    "keywords": ["median nerve", "thumb function", "carpal tunnel"],
-    "synonyms": ["thumb paralysis", "median nerve damage"]
+    "tags": [
+      "nerve injury",
+      "opposition loss",
+      "median"
+    ],
+    "keywords": [
+      "median nerve",
+      "thumb function",
+      "carpal tunnel"
+    ],
+    "synonyms": [
+      "thumb paralysis",
+      "median nerve damage"
+    ]
   },
   {
     "id": "thumb_opposition_006",
@@ -154,7 +205,6 @@
     "long_explanation": "Thumb opposition is a compound motion that spans multiple planes, but the movement across the palm toward the little finger involves primarily sagittal and frontal plane motion through the saddle-shaped CMC joint.",
     "clinical_application": "Awareness of thumb motion planes assists in effective soft tissue and joint mobilization techniques.",
     "source_reference": "Clinical Kinesiology and Anatomy, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -163,14 +213,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["planes of motion", "thumb", "opposition"],
+    "tags": [
+      "planes of motion",
+      "thumb",
+      "opposition"
+    ],
     "keywords": [
       "sagittal",
       "frontal",
       "thumb opposition",
       "anatomical planes"
     ],
-    "synonyms": ["opposition planes", "thumb motion axis"]
+    "synonyms": [
+      "opposition planes",
+      "thumb motion axis"
+    ]
   },
   {
     "id": "thumb_opposition_007",
@@ -187,7 +244,6 @@
     "long_explanation": "Carpal tunnel syndrome compresses the median nerve, which innervates the thenar muscles responsible for opposition. Symptoms include weakness in grasping and pinching.",
     "clinical_application": "Massage can help reduce tension in the forearm flexors and wrist to alleviate pressure on the carpal tunnel.",
     "source_reference": "Orthopedic Physical Assessment, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -196,9 +252,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["median nerve", "carpal tunnel", "thumb dysfunction"],
-    "keywords": ["carpal tunnel", "thumb weakness", "nerve compression"],
-    "synonyms": ["median nerve compression", "thumb opposition loss"]
+    "tags": [
+      "median nerve",
+      "carpal tunnel",
+      "thumb dysfunction"
+    ],
+    "keywords": [
+      "carpal tunnel",
+      "thumb weakness",
+      "nerve compression"
+    ],
+    "synonyms": [
+      "median nerve compression",
+      "thumb opposition loss"
+    ]
   },
   {
     "id": "thumb_opposition_008",
@@ -215,7 +282,6 @@
     "long_explanation": "Thumb opposition is essential for precision grips and fine motor tasks such as buttoning shirts, writing, or picking up small objects.",
     "clinical_application": "Limited thumb opposition can impact ADLs. Massage therapy may support function through improving mobility and circulation to the thenar region.",
     "source_reference": "Functional Anatomy of the Hand, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -224,9 +290,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ADLs", "grasp", "thumb function"],
-    "keywords": ["fine motor", "precision grip", "daily function"],
-    "synonyms": ["precision grip", "functional use of thumb"]
+    "tags": [
+      "ADLs",
+      "grasp",
+      "thumb function"
+    ],
+    "keywords": [
+      "fine motor",
+      "precision grip",
+      "daily function"
+    ],
+    "synonyms": [
+      "precision grip",
+      "functional use of thumb"
+    ]
   },
   {
     "id": "thumb_opposition_009",
@@ -243,7 +320,6 @@
     "long_explanation": "The thumb’s CMC joint is a saddle joint between the trapezium and the 1st metacarpal. It allows the thumb’s unique range of motion, including opposition.",
     "clinical_application": "Degeneration of this joint (CMC arthritis) is common and may limit opposition. Therapists can help manage symptoms through soft tissue work and mobilization.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -252,9 +328,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CMC joint", "thumb", "saddle joint"],
-    "keywords": ["thumb CMC", "carpometacarpal", "joint type"],
-    "synonyms": ["CMC thumb joint", "trapeziometacarpal joint"]
+    "tags": [
+      "CMC joint",
+      "thumb",
+      "saddle joint"
+    ],
+    "keywords": [
+      "thumb CMC",
+      "carpometacarpal",
+      "joint type"
+    ],
+    "synonyms": [
+      "CMC thumb joint",
+      "trapeziometacarpal joint"
+    ]
   },
   {
     "id": "thumb_opposition_010",
@@ -271,7 +358,6 @@
     "long_explanation": "Abductor pollicis brevis, also innervated by the median nerve, contributes to the initial movement of the thumb away from the palm, aiding in opposition.",
     "clinical_application": "Strengthening this muscle may aid recovery in clients with impaired thumb mobility from repetitive strain or nerve compression.",
     "source_reference": "Netter’s Atlas of Human Anatomy, 7th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/thumb_opposition.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -280,8 +366,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thumb muscles", "abduction", "assisting muscles"],
-    "keywords": ["abductor pollicis brevis", "thenar group", "thumb movement"],
-    "synonyms": ["thenar abductor", "thumb abduction muscle"]
+    "tags": [
+      "thumb muscles",
+      "abduction",
+      "assisting muscles"
+    ],
+    "keywords": [
+      "abductor pollicis brevis",
+      "thenar group",
+      "thumb movement"
+    ],
+    "synonyms": [
+      "thenar abductor",
+      "thumb abduction muscle"
+    ]
   }
 ]

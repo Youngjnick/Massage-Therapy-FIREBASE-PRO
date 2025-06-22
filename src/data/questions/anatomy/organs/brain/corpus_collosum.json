@@ -14,7 +14,6 @@
     "long_explanation": "The corpus callosum is a thick bundle of nerve fibers that serves as the main communication bridge between the left and right cerebral hemispheres, enabling coordination and integration of motor, sensory, and cognitive functions.",
     "clinical_application": "In bodywork, recognizing the role of the corpus callosum can help when considering neurological integration in cases of brain injury or developmental disorders.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "easy",
@@ -28,7 +27,11 @@
       "brain hemispheres",
       "interhemispheric communication"
     ],
-    "keywords": ["communication", "white matter", "brain"],
+    "keywords": [
+      "communication",
+      "white matter",
+      "brain"
+    ],
     "synonyms": null
   },
   {
@@ -46,7 +49,6 @@
     "long_explanation": "White matter in the brain consists of myelinated axons. The corpus callosum contains millions of these axons, allowing rapid transmission of signals between the two hemispheres.",
     "clinical_application": "White matter damage, including in the corpus callosum, may lead to poor coordination or split-brain symptoms that can inform massage approaches with neuro-compromised clients.",
     "source_reference": "Bear, Connors, & Paradiso: Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "easy",
@@ -55,21 +57,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["white matter", "corpus callosum", "myelinated axons"],
-    "keywords": ["brain structure", "tissue type"],
+    "tags": [
+      "white matter",
+      "corpus callosum",
+      "myelinated axons"
+    ],
+    "keywords": [
+      "brain structure",
+      "tissue type"
+    ],
     "synonyms": null
   },
   {
     "id": "corpus_collosum_003",
     "correctAnswer": "Split-brain syndrome",
     "question": "Damage to the corpus callosum may result in what condition?",
-    "options": ["Ataxia", "Hemiplegia", "Split-brain syndrome", "Aphasia"],
+    "options": [
+      "Ataxia",
+      "Hemiplegia",
+      "Split-brain syndrome",
+      "Aphasia"
+    ],
     "topics": ["anatomy", "organs", "brain", "corpus_collosum"],
     "short_explanation": "Split-brain syndrome occurs when the corpus callosum is severed.",
     "long_explanation": "In split-brain syndrome, the two hemispheres cannot share information. This can result in behaviors such as the left hand acting independently of verbal commands (left hand vs. right brain conflict).",
     "clinical_application": "Clients with post-neurosurgical trauma may exhibit integration difficulties, requiring sensory and motor-focused therapy strategies.",
     "source_reference": "Neuroscience: Exploring the Brain – Bear et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "medium",
@@ -78,21 +91,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["split brain", "callosotomy", "hemisphere communication"],
-    "keywords": ["corpus callosum", "brain surgery"],
+    "tags": [
+      "split brain",
+      "callosotomy",
+      "hemisphere communication"
+    ],
+    "keywords": [
+      "corpus callosum",
+      "brain surgery"
+    ],
     "synonyms": null
   },
   {
     "id": "corpus_collosum_004",
     "correctAnswer": "Cerebral cortex",
     "question": "The corpus callosum is located beneath which cerebral structure?",
-    "options": ["Thalamus", "Cerebellum", "Cerebral cortex", "Hippocampus"],
+    "options": [
+      "Thalamus",
+      "Cerebellum",
+      "Cerebral cortex",
+      "Hippocampus"
+    ],
     "topics": ["anatomy", "organs", "brain", "corpus_collosum"],
     "short_explanation": "The corpus callosum lies beneath the cerebral cortex.",
     "long_explanation": "Anatomically, the corpus callosum arches above the lateral ventricles and is positioned directly below the cerebral cortex, helping transmit signals across hemispheres.",
     "clinical_application": "Knowledge of brain layering is helpful in advanced craniosacral therapy when working on integration through cortical and subcortical structures.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "easy",
@@ -101,8 +125,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cortex", "corpus callosum", "cerebral anatomy"],
-    "keywords": ["brain layers", "location"],
+    "tags": [
+      "cortex",
+      "corpus callosum",
+      "cerebral anatomy"
+    ],
+    "keywords": [
+      "brain layers",
+      "location"
+    ],
     "synonyms": null
   },
   {
@@ -120,7 +151,6 @@
     "long_explanation": "Agenesis of the corpus callosum is a rare congenital condition in which the corpus callosum fails to develop, often leading to coordination, cognitive, and developmental challenges.",
     "clinical_application": "Massage therapists working with neurodiverse populations may adapt techniques to enhance proprioception and integration.",
     "source_reference": "Robbins & Cotran: Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "medium",
@@ -129,21 +159,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["agenesis", "neurodevelopment", "callosal malformation"],
-    "keywords": ["developmental", "disorder", "congenital"],
+    "tags": [
+      "agenesis",
+      "neurodevelopment",
+      "callosal malformation"
+    ],
+    "keywords": [
+      "developmental",
+      "disorder",
+      "congenital"
+    ],
     "synonyms": null
   },
   {
     "id": "corpus_collosum_006",
     "correctAnswer": "MRI",
     "question": "Which imaging method best visualizes the corpus callosum?",
-    "options": ["X-ray", "Ultrasound", "MRI", "CT scan"],
+    "options": [
+      "X-ray",
+      "Ultrasound",
+      "MRI",
+      "CT scan"
+    ],
     "topics": ["anatomy", "organs", "brain", "corpus_collosum"],
     "short_explanation": "MRI is the most detailed non-invasive imaging for brain structures.",
     "long_explanation": "Magnetic Resonance Imaging (MRI) allows high-resolution visualization of brain soft tissues, including the white matter of the corpus callosum, making it ideal for assessing damage, atrophy, or malformation.",
     "clinical_application": "Understanding imaging helps bodyworkers interpret client diagnoses and collaborate with other healthcare providers more effectively.",
     "source_reference": "Radiopaedia.org",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "medium",
@@ -152,8 +194,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["MRI", "brain scan", "corpus callosum imaging"],
-    "keywords": ["neuroimaging", "diagnostics"],
+    "tags": [
+      "MRI",
+      "brain scan",
+      "corpus callosum imaging"
+    ],
+    "keywords": [
+      "neuroimaging",
+      "diagnostics"
+    ],
     "synonyms": null
   },
   {
@@ -171,7 +220,6 @@
     "long_explanation": "In split-brain patients, information entering the right hemisphere (via the left visual field) cannot be transferred to the speech-dominant left hemisphere, impairing verbalization.",
     "clinical_application": "Therapists may observe such lateralized behaviors during functional assessments or neurological rehabilitation sessions.",
     "source_reference": "Gazzaniga: Cognitive Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "hard",
@@ -180,21 +228,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["visual field", "brain split", "hemisphere function"],
-    "keywords": ["speech", "vision", "integration"],
+    "tags": [
+      "visual field",
+      "brain split",
+      "hemisphere function"
+    ],
+    "keywords": [
+      "speech",
+      "vision",
+      "integration"
+    ],
     "synonyms": null
   },
   {
     "id": "corpus_collosum_008",
     "correctAnswer": "Splenium",
     "question": "Which area of the corpus callosum connects the occipital lobes?",
-    "options": ["Rostrum", "Genu", "Body", "Splenium"],
+    "options": [
+      "Rostrum",
+      "Genu",
+      "Body",
+      "Splenium"
+    ],
     "topics": ["anatomy", "organs", "brain", "corpus_collosum"],
     "short_explanation": "The splenium links occipital and posterior parietal lobes.",
     "long_explanation": "The corpus callosum is subdivided into regions including the rostrum, genu, body, and splenium. The splenium connects visual and sensory integration regions of the brain.",
     "clinical_application": "Impairments in the splenium may impact visual-spatial tasks, potentially altering a client’s movement or balance pattern during bodywork assessment.",
     "source_reference": "Moore: Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "hard",
@@ -203,21 +263,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["splenium", "visual cortex", "interhemispheric"],
-    "keywords": ["brain region", "connection"],
+    "tags": [
+      "splenium",
+      "visual cortex",
+      "interhemispheric"
+    ],
+    "keywords": [
+      "brain region",
+      "connection"
+    ],
     "synonyms": null
   },
   {
     "id": "corpus_collosum_009",
     "correctAnswer": "Genu",
     "question": "Which part of the corpus callosum lies closest to the frontal lobes?",
-    "options": ["Genu", "Splenium", "Isthmus", "Body"],
+    "options": [
+      "Genu",
+      "Splenium",
+      "Isthmus",
+      "Body"
+    ],
     "topics": ["anatomy", "organs", "brain", "corpus_collosum"],
     "short_explanation": "The genu connects the frontal lobes.",
     "long_explanation": "The genu is the anterior bend of the corpus callosum and links the two frontal lobes, playing a role in executive function coordination across hemispheres.",
     "clinical_application": "Massage therapy supporting attention or mental clarity may benefit from cranial or neck work that stimulates cerebral blood flow and relaxation.",
     "source_reference": "Snell’s Clinical Neuroanatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "medium",
@@ -226,8 +297,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["genu", "frontal lobe", "corpus callosum"],
-    "keywords": ["frontal cortex", "anterior brain"],
+    "tags": [
+      "genu",
+      "frontal lobe",
+      "corpus callosum"
+    ],
+    "keywords": [
+      "frontal cortex",
+      "anterior brain"
+    ],
     "synonyms": null
   },
   {
@@ -245,7 +323,6 @@
     "long_explanation": "Bimanual tasks (like tying shoes or playing piano) require both hemispheres to share motor planning data, which is facilitated by the corpus callosum’s white matter tracts.",
     "clinical_application": "Motor coordination challenges may reflect deeper interhemispheric communication issues, useful to assess during bodywork evaluations.",
     "source_reference": "Kandel: Principles of Neural Science",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/corpus_collosum.json",
     "question_type": null,
     "difficulty": "medium",
@@ -254,8 +331,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["motor skills", "corpus callosum", "interhemispheric"],
-    "keywords": ["coordination", "bimanual", "integration"],
+    "tags": [
+      "motor skills",
+      "corpus callosum",
+      "interhemispheric"
+    ],
+    "keywords": [
+      "coordination",
+      "bimanual",
+      "integration"
+    ],
     "synonyms": null
   }
 ]

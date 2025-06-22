@@ -14,7 +14,6 @@
     "long_explanation": "Dual innervation occurs when an organ is controlled by both sympathetic and parasympathetic nervous systems, allowing for more refined control of function. For example, the heart receives excitatory input from the sympathetic system and inhibitory input from the parasympathetic system.",
     "clinical_application": "Massage therapy aiming to modulate autonomic tone may influence both divisions and impact dual-innervated organs like the heart and digestive tract.",
     "source_reference": "Principles of Anatomy and Physiology – Tortora",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "easy",
@@ -29,20 +28,28 @@
       "parasympathetic",
       "sympathetic"
     ],
-    "keywords": ["ANS", "organ control", "autonomic input"],
+    "keywords": [
+      "ANS",
+      "organ control",
+      "autonomic input"
+    ],
     "synonyms": null
   },
   {
     "id": "dual_innervations_002",
     "correctAnswer": "Heart",
     "question": "Which of the following organs receives dual innervation?",
-    "options": ["Heart", "Liver", "Pancreas", "Kidneys"],
+    "options": [
+      "Heart",
+      "Liver",
+      "Pancreas",
+      "Kidneys"
+    ],
     "topics": ["anatomy", "innervations", "dual_innervations"],
     "short_explanation": "The heart is innervated by both sympathetic and parasympathetic fibers.",
     "long_explanation": "The sympathetic system increases heart rate and contractility, while the parasympathetic (via the vagus nerve) decreases heart rate, demonstrating dual innervation for precise cardiovascular regulation.",
     "clinical_application": "Heart rate variability (HRV) often reflects the balance between sympathetic and parasympathetic influences on the heart.",
     "source_reference": "Human Physiology – Silverthorn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +58,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["heart", "vagus nerve", "dual innervation"],
-    "keywords": ["ANS", "cardiac regulation", "sympathetic", "parasympathetic"],
+    "tags": [
+      "heart",
+      "vagus nerve",
+      "dual innervation"
+    ],
+    "keywords": [
+      "ANS",
+      "cardiac regulation",
+      "sympathetic",
+      "parasympathetic"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +86,6 @@
     "long_explanation": "Cranial nerve X (the vagus nerve) is a major parasympathetic pathway and innervates the heart, lungs, stomach, intestines, and more, often working alongside sympathetic fibers to regulate function.",
     "clinical_application": "Deep breathing techniques and vagal stimulation can modulate parasympathetic tone for therapeutic purposes.",
     "source_reference": "Neuroscience – Bear, Connors, Paradiso",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +94,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vagus nerve", "CN X", "dual innervation", "parasympathetic"],
-    "keywords": ["autonomic input", "cranial nerves", "heart", "lungs"],
+    "tags": [
+      "vagus nerve",
+      "CN X",
+      "dual innervation",
+      "parasympathetic"
+    ],
+    "keywords": [
+      "autonomic input",
+      "cranial nerves",
+      "heart",
+      "lungs"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +123,6 @@
     "long_explanation": "The sympathetic nervous system typically stimulates organ activity to support the 'fight or flight' response — increasing heart rate, dilating airways, or slowing digestion, depending on the target.",
     "clinical_application": "Client stress may lead to sympathetic overdrive, affecting massage outcomes and requiring calming techniques.",
     "source_reference": "Human Anatomy & Physiology – Marieb & Hoehn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +131,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sympathetic", "fight or flight", "dual innervation"],
-    "keywords": ["stress response", "organ activity", "ANS"],
+    "tags": [
+      "sympathetic",
+      "fight or flight",
+      "dual innervation"
+    ],
+    "keywords": [
+      "stress response",
+      "organ activity",
+      "ANS"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +158,6 @@
     "long_explanation": "The parasympathetic division facilitates 'rest and digest' processes, slowing heart rate, enhancing gastrointestinal activity, and conserving energy.",
     "clinical_application": "Massage therapy can enhance parasympathetic dominance, aiding in client relaxation and healing.",
     "source_reference": "Fundamentals of Anatomy & Physiology – Martini",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -135,21 +166,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["parasympathetic", "dual innervation", "rest and digest"],
-    "keywords": ["vagal tone", "repair", "autonomic regulation"],
+    "tags": [
+      "parasympathetic",
+      "dual innervation",
+      "rest and digest"
+    ],
+    "keywords": [
+      "vagal tone",
+      "repair",
+      "autonomic regulation"
+    ],
     "synonyms": null
   },
   {
     "id": "dual_innervations_006",
     "correctAnswer": "Adrenal medulla",
     "question": "Which structure is NOT dually innervated?",
-    "options": ["Adrenal medulla", "Heart", "Lungs", "Intestines"],
+    "options": [
+      "Adrenal medulla",
+      "Heart",
+      "Lungs",
+      "Intestines"
+    ],
     "topics": ["anatomy", "innervations", "dual_innervations"],
     "short_explanation": "The adrenal medulla only receives sympathetic innervation.",
     "long_explanation": "Unlike most organs, the adrenal medulla lacks parasympathetic innervation. It is stimulated solely by preganglionic sympathetic neurons to release epinephrine and norepinephrine.",
     "clinical_application": "This exception is important when managing stress-induced adrenal overactivation during chronic sympathetic dominance.",
     "source_reference": "Neuroscience – Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "hard",
@@ -158,21 +201,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adrenal medulla", "sympathetic only", "ANS"],
-    "keywords": ["stress response", "autonomic control", "organ exceptions"],
+    "tags": [
+      "adrenal medulla",
+      "sympathetic only",
+      "ANS"
+    ],
+    "keywords": [
+      "stress response",
+      "autonomic control",
+      "organ exceptions"
+    ],
     "synonyms": null
   },
   {
     "id": "dual_innervations_007",
     "correctAnswer": "Acetylcholine",
     "question": "Which neurotransmitter is primarily used by the parasympathetic division?",
-    "options": ["Acetylcholine", "Norepinephrine", "Epinephrine", "Dopamine"],
+    "options": [
+      "Acetylcholine",
+      "Norepinephrine",
+      "Epinephrine",
+      "Dopamine"
+    ],
     "topics": ["anatomy", "innervations", "dual_innervations"],
     "short_explanation": "Parasympathetic neurons release acetylcholine at their synapses.",
     "long_explanation": "Both preganglionic and postganglionic neurons of the parasympathetic division use acetylcholine as their neurotransmitter, promoting slower, restorative functions.",
     "clinical_application": "Parasympathetic stimulation via acetylcholine enhances digestion and relaxation — goals often supported by massage therapy.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -181,8 +236,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["acetylcholine", "parasympathetic", "neurotransmitter"],
-    "keywords": ["ANS", "nerve signaling", "cholinergic"],
+    "tags": [
+      "acetylcholine",
+      "parasympathetic",
+      "neurotransmitter"
+    ],
+    "keywords": [
+      "ANS",
+      "nerve signaling",
+      "cholinergic"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +263,6 @@
     "long_explanation": "Organs receiving dual input can increase, decrease, or balance their activity based on the push-pull effect between sympathetic and parasympathetic input.",
     "clinical_application": "HRV biofeedback and relaxation techniques help practitioners observe and adjust autonomic balance.",
     "source_reference": "Essentials of Human Anatomy & Physiology – Marieb",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -209,8 +271,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["homeostasis", "ANS", "modulation"],
-    "keywords": ["organ control", "balance", "autonomic"],
+    "tags": [
+      "homeostasis",
+      "ANS",
+      "modulation"
+    ],
+    "keywords": [
+      "organ control",
+      "balance",
+      "autonomic"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +298,6 @@
     "long_explanation": "Most glands receive dual innervation, but sweat glands are an exception — they're innervated by sympathetic cholinergic fibers only, which stimulate perspiration.",
     "clinical_application": "Excessive sweating may indicate heightened sympathetic tone, especially in anxious clients.",
     "source_reference": "Anatomy & Physiology for Health Professionals",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "hard",
@@ -237,8 +306,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sweat glands", "sympathetic", "exceptions"],
-    "keywords": ["autonomic nervous system", "glands", "sweating"],
+    "tags": [
+      "sweat glands",
+      "sympathetic",
+      "exceptions"
+    ],
+    "keywords": [
+      "autonomic nervous system",
+      "glands",
+      "sweating"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +333,6 @@
     "long_explanation": "Organ response is context-dependent. For example, the heart may increase or decrease rate depending on which receptors (beta or muscarinic) are more stimulated. The interplay allows flexibility and adaptation.",
     "clinical_application": "This principle supports using massage to shift parasympathetic dominance when clients are stuck in fight-or-flight mode.",
     "source_reference": "Principles of Neural Science – Kandel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/dual_innervations.json",
     "question_type": null,
     "difficulty": "hard",
@@ -265,8 +341,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dual innervation", "receptor balance", "ANS response"],
-    "keywords": ["homeostasis", "neurotransmitter", "modulation"],
+    "tags": [
+      "dual innervation",
+      "receptor balance",
+      "ANS response"
+    ],
+    "keywords": [
+      "homeostasis",
+      "neurotransmitter",
+      "modulation"
+    ],
     "synonyms": null
   }
 ]

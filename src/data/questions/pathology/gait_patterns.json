@@ -14,7 +14,6 @@
     "long_explanation": "Steppage gait is characterized by excessive hip and knee flexion to prevent the foot from dragging, often caused by weakness in the dorsiflexors due to peroneal nerve injury or neuropathy.",
     "clinical_application": "Massage therapy may focus on reducing compensation strain and supporting neurological referrals for underlying causes.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gait", "foot drop", "steppage"],
-    "keywords": ["dorsiflexor", "gait abnormality", "peroneal nerve"],
+    "tags": [
+      "gait",
+      "foot drop",
+      "steppage"
+    ],
+    "keywords": [
+      "dorsiflexor",
+      "gait abnormality",
+      "peroneal nerve"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The gluteus medius stabilizes the pelvis during single-leg stance. Weakness leads to contralateral pelvic drop during walking.",
     "clinical_application": "Massage can address muscle imbalances and facilitate strengthening through improved neuromuscular activation.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Trendelenburg", "gluteus medius", "hip abductor weakness"],
-    "keywords": ["pelvic drop", "hip stability", "lateral trunk lean"],
+    "tags": [
+      "Trendelenburg",
+      "gluteus medius",
+      "hip abductor weakness"
+    ],
+    "keywords": [
+      "pelvic drop",
+      "hip stability",
+      "lateral trunk lean"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "Parkinson’s disease commonly causes a shuffling, festinating gait with reduced arm swing and flexed posture due to basal ganglia dysfunction.",
     "clinical_application": "Massage can help reduce rigidity and increase mobility for patients with neurodegenerative conditions.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Parkinson's", "neurological", "festinating gait"],
-    "keywords": ["stooped posture", "shuffling", "basal ganglia"],
+    "tags": [
+      "Parkinson's",
+      "neurological",
+      "festinating gait"
+    ],
+    "keywords": [
+      "stooped posture",
+      "shuffling",
+      "basal ganglia"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "To avoid pain, individuals with antalgic gait shorten the stance phase on the affected leg and often show asymmetrical weight-bearing.",
     "clinical_application": "Massage can support recovery by addressing compensatory muscle tension and promoting relaxation.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -107,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["antalgic", "gait", "pain"],
-    "keywords": ["limping", "weight shift", "stance phase"],
+    "tags": [
+      "antalgic",
+      "gait",
+      "pain"
+    ],
+    "keywords": [
+      "limping",
+      "weight shift",
+      "stance phase"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +154,6 @@
     "long_explanation": "Hemiplegic gait features circumduction of the paretic leg and typically results from upper motor neuron lesions due to cerebrovascular accidents.",
     "clinical_application": "Massage therapy may support improved proprioception, spasticity reduction, and soft tissue elasticity.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -135,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["stroke", "hemiplegia", "neurological gait"],
-    "keywords": ["circumduction", "CVA", "upper motor neuron"],
+    "tags": [
+      "stroke",
+      "hemiplegia",
+      "neurological gait"
+    ],
+    "keywords": [
+      "circumduction",
+      "CVA",
+      "upper motor neuron"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +189,6 @@
     "long_explanation": "Due to increased adductor tone and spasticity, individuals with spastic CP may present with legs crossing midline while walking.",
     "clinical_application": "Massage may help reduce spasticity and support stretching programs for hypertonic muscles.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scissoring", "cerebral palsy", "spasticity"],
-    "keywords": ["adduction", "neuromuscular", "spastic gait"],
+    "tags": [
+      "scissoring",
+      "cerebral palsy",
+      "spasticity"
+    ],
+    "keywords": [
+      "adduction",
+      "neuromuscular",
+      "spastic gait"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +224,6 @@
     "long_explanation": "Loss of proprioception causes individuals to widen their base and slap the feet against the ground to sense placement, often worsening in low light.",
     "clinical_application": "Massage may help increase somatic awareness and reduce compensatory strain from exaggerated movements.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -191,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ataxia", "proprioception", "sensory loss"],
-    "keywords": ["foot slap", "unsteady gait", "wide base"],
+    "tags": [
+      "ataxia",
+      "proprioception",
+      "sensory loss"
+    ],
+    "keywords": [
+      "foot slap",
+      "unsteady gait",
+      "wide base"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +259,6 @@
     "long_explanation": "When the swing leg cannot clear due to stiffness or leg length discrepancy, the stance leg plantarflexes to help elevate the pelvis and allow clearance.",
     "clinical_application": "Massage can address tight hip flexors or plantarflexors contributing to compensatory motion.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vaulting", "compensation", "leg clearance"],
-    "keywords": ["plantarflexion", "swing phase", "gait adaptation"],
+    "tags": [
+      "vaulting",
+      "compensation",
+      "leg clearance"
+    ],
+    "keywords": [
+      "plantarflexion",
+      "swing phase",
+      "gait adaptation"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +294,6 @@
     "long_explanation": "Cerebellar ataxia presents as uncoordinated, wide-based gait with irregular step timing and a tendency to veer or fall.",
     "clinical_application": "Massage may support coordination by reducing musculoskeletal tension caused by overcompensation.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -247,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ataxic gait", "cerebellar", "balance"],
-    "keywords": ["wide base", "uncoordinated", "poor balance"],
+    "tags": [
+      "ataxic gait",
+      "cerebellar",
+      "balance"
+    ],
+    "keywords": [
+      "wide base",
+      "uncoordinated",
+      "poor balance"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +329,6 @@
     "long_explanation": "In conditions like muscular dystrophy, pelvic girdle and trunk muscles are weak, leading to a waddling, side-to-side gait with difficulty stabilizing the pelvis.",
     "clinical_application": "Massage may aid comfort and circulation in clients with progressive neuromuscular disorders.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/gait_patterns/gait_patterns.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -275,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["waddling gait", "muscular dystrophy", "pelvic instability"],
-    "keywords": ["proximal weakness", "trunk sway", "gait compensation"],
+    "tags": [
+      "waddling gait",
+      "muscular dystrophy",
+      "pelvic instability"
+    ],
+    "keywords": [
+      "proximal weakness",
+      "trunk sway",
+      "gait compensation"
+    ],
     "synonyms": null
   }
 ]

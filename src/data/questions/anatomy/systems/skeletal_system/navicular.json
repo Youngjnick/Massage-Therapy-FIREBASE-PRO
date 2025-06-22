@@ -3,13 +3,17 @@
     "id": "navicular_001",
     "correctAnswer": "Medial midfoot",
     "question": "Where is the navicular bone located in the body?",
-    "options": ["Medial midfoot", "Lateral ankle", "Heel", "Big toe"],
+    "options": [
+      "Medial midfoot",
+      "Lateral ankle",
+      "Heel",
+      "Big toe"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "navicular"],
     "short_explanation": "The navicular bone is located in the medial midfoot.",
     "long_explanation": "The navicular bone is one of the tarsal bones found in the medial aspect of the midfoot. It articulates with the talus posteriorly and the cuneiform bones anteriorly.",
     "clinical_application": "Understanding navicular location is important for treating medial foot pain or flatfoot deformity with massage or manual therapy.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -18,21 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["navicular", "foot bones", "tarsals"],
-    "keywords": ["navicular bone", "midfoot", "tarsals"],
-    "synonyms": ["navicular bone", "tarsal bone"]
+    "tags": [
+      "navicular",
+      "foot bones",
+      "tarsals"
+    ],
+    "keywords": [
+      "navicular bone",
+      "midfoot",
+      "tarsals"
+    ],
+    "synonyms": [
+      "navicular bone",
+      "tarsal bone"
+    ]
   },
   {
     "id": "navicular_002",
     "correctAnswer": "Talus",
     "question": "The navicular bone articulates directly with which bone posteriorly?",
-    "options": ["Talus", "Calcaneus", "Cuboid", "1st metatarsal"],
+    "options": [
+      "Talus",
+      "Calcaneus",
+      "Cuboid",
+      "1st metatarsal"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "navicular"],
     "short_explanation": "It articulates with the talus.",
     "long_explanation": "Posteriorly, the navicular articulates with the head of the talus. This connection plays a key role in the medial longitudinal arch of the foot.",
     "clinical_application": "Joint dysfunction between the talus and navicular can contribute to foot pain and instability, relevant during sports massage or rehabilitation.",
     "source_reference": "Clinically Oriented Anatomy, Moore & Dalley",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -41,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["navicular", "talus", "articulation"],
-    "keywords": ["navicular", "talus", "foot joints"],
-    "synonyms": ["talonavicular joint", "posterior navicular"]
+    "tags": [
+      "navicular",
+      "talus",
+      "articulation"
+    ],
+    "keywords": [
+      "navicular",
+      "talus",
+      "foot joints"
+    ],
+    "synonyms": [
+      "talonavicular joint",
+      "posterior navicular"
+    ]
   },
   {
     "id": "navicular_003",
@@ -60,7 +90,6 @@
     "long_explanation": "The navicular is a keystone bone in the medial longitudinal arch. It bears and transfers load during walking and helps maintain foot structure.",
     "clinical_application": "Pain or collapse at the navicular can indicate arch dysfunction, which may benefit from arch-supportive massage techniques.",
     "source_reference": "Anatomy Trains, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -69,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["foot arch", "navicular", "medial longitudinal"],
-    "keywords": ["medial arch", "navicular support", "foot structure"],
-    "synonyms": ["arch support", "foot arch"]
+    "tags": [
+      "foot arch",
+      "navicular",
+      "medial longitudinal"
+    ],
+    "keywords": [
+      "medial arch",
+      "navicular support",
+      "foot structure"
+    ],
+    "synonyms": [
+      "arch support",
+      "foot arch"
+    ]
   },
   {
     "id": "navicular_004",
@@ -88,7 +128,6 @@
     "long_explanation": "Navicular stress syndrome, often seen in runners and jumpers, involves overuse of the navicular bone, leading to stress fracture or inflammation. It presents with vague midfoot pain and requires rest or immobilization.",
     "clinical_application": "Massage therapists should avoid deep pressure over a tender navicular and refer clients for evaluation if stress injury is suspected.",
     "source_reference": "Mosby's Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -97,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["navicular", "stress fracture", "sports injury"],
-    "keywords": ["navicular syndrome", "midfoot stress", "athlete foot pain"],
-    "synonyms": ["navicular fracture", "midfoot stress injury"]
+    "tags": [
+      "navicular",
+      "stress fracture",
+      "sports injury"
+    ],
+    "keywords": [
+      "navicular syndrome",
+      "midfoot stress",
+      "athlete foot pain"
+    ],
+    "synonyms": [
+      "navicular fracture",
+      "midfoot stress injury"
+    ]
   },
   {
     "id": "navicular_005",
@@ -116,7 +166,6 @@
     "long_explanation": "The tibialis posterior muscle inserts onto the navicular tuberosity and plays a critical role in supporting the medial arch and controlling foot inversion.",
     "clinical_application": "Dysfunction or tension in the tibialis posterior can affect navicular mechanics and arch stability, guiding massage strategy in the medial ankle area.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -125,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tibialis posterior", "navicular insertion", "medial ankle"],
-    "keywords": ["tibialis posterior", "foot muscles", "arch support"],
-    "synonyms": ["tibialis posterior tendon", "navicular tuberosity"]
+    "tags": [
+      "tibialis posterior",
+      "navicular insertion",
+      "medial ankle"
+    ],
+    "keywords": [
+      "tibialis posterior",
+      "foot muscles",
+      "arch support"
+    ],
+    "synonyms": [
+      "tibialis posterior tendon",
+      "navicular tuberosity"
+    ]
   },
   {
     "id": "navicular_006",
@@ -144,7 +204,6 @@
     "long_explanation": "Anteriorly, the navicular bone forms joints with the medial, intermediate, and lateral cuneiform bones, completing the tarsal arch in the midfoot.",
     "clinical_application": "Understanding these articulations helps therapists assess midfoot joint restrictions that may affect foot flexibility or gait.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -153,8 +212,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["navicular", "cuneiforms", "foot anatomy"],
-    "keywords": ["cuneiform", "midfoot", "navicular articulation"],
+    "tags": [
+      "navicular",
+      "cuneiforms",
+      "foot anatomy"
+    ],
+    "keywords": [
+      "cuneiform",
+      "midfoot",
+      "navicular articulation"
+    ],
     "synonyms": [
       "medial cuneiform",
       "intermediate cuneiform",
@@ -176,7 +243,6 @@
     "long_explanation": "The navicular tuberosity is a bony projection on the medial side of the foot and serves as a key palpation site. It’s often used to assess foot alignment and tibialis posterior tension.",
     "clinical_application": "Massage therapists may assess the navicular tuberosity to detect fallen arches or overpronation.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -185,13 +251,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palpation", "navicular tuberosity", "landmark"],
+    "tags": [
+      "palpation",
+      "navicular tuberosity",
+      "landmark"
+    ],
     "keywords": [
       "foot palpation",
       "navicular prominence",
       "tibialis posterior insertion"
     ],
-    "synonyms": ["bony landmark", "foot medial prominence"]
+    "synonyms": [
+      "bony landmark",
+      "foot medial prominence"
+    ]
   },
   {
     "id": "navicular_008",
@@ -208,7 +281,6 @@
     "long_explanation": "Navicular stress injuries present with gradually increasing midfoot pain, especially during high-impact activities like running or jumping. Early diagnosis prevents worsening into a full fracture.",
     "clinical_application": "Therapists should refer clients with worsening medial foot pain during weight-bearing activity for medical evaluation.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -217,13 +289,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["navicular pain", "stress fracture", "midfoot"],
+    "tags": [
+      "navicular pain",
+      "stress fracture",
+      "midfoot"
+    ],
     "keywords": [
       "navicular syndrome",
       "midfoot tenderness",
       "activity-induced pain"
     ],
-    "synonyms": ["stress reaction", "navicular stress pain"]
+    "synonyms": [
+      "stress reaction",
+      "navicular stress pain"
+    ]
   },
   {
     "id": "navicular_009",
@@ -240,7 +319,6 @@
     "long_explanation": "The navicular bone receives blood supply primarily from the posterior tibial artery. Limited vascularization in certain regions contributes to its vulnerability to stress fractures and delayed healing.",
     "clinical_application": "Massage therapists should understand the implications of poor blood flow when working with clients recovering from navicular injuries.",
     "source_reference": "Clinically Oriented Anatomy, Moore & Dalley",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -249,25 +327,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["blood supply", "posterior tibial artery", "navicular healing"],
+    "tags": [
+      "blood supply",
+      "posterior tibial artery",
+      "navicular healing"
+    ],
     "keywords": [
       "vascular supply",
       "avascular zone",
       "tarsal bone circulation"
     ],
-    "synonyms": ["vascular supply", "navicular circulation"]
+    "synonyms": [
+      "vascular supply",
+      "navicular circulation"
+    ]
   },
   {
     "id": "navicular_010",
     "correctAnswer": "Pes planus",
     "question": "Which foot deformity is often associated with navicular bone displacement?",
-    "options": ["Pes planus", "Clubfoot", "Hallux valgus", "Hammertoe"],
+    "options": [
+      "Pes planus",
+      "Clubfoot",
+      "Hallux valgus",
+      "Hammertoe"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "navicular"],
     "short_explanation": "Pes planus (flatfoot) often involves dropped navicular position.",
     "long_explanation": "Pes planus, or flatfoot, involves collapse of the medial longitudinal arch and a lowered or medially displaced navicular. It can result from tibialis posterior dysfunction or ligament laxity.",
     "clinical_application": "Massage may assist in managing muscular compensation in flatfoot deformities but should be part of a broader care plan.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/navicular.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -276,12 +365,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["flatfoot", "pes planus", "navicular drop"],
+    "tags": [
+      "flatfoot",
+      "pes planus",
+      "navicular drop"
+    ],
     "keywords": [
       "arch collapse",
       "tibialis posterior dysfunction",
       "navicular misalignment"
     ],
-    "synonyms": ["flatfoot", "navicular drop"]
+    "synonyms": [
+      "flatfoot",
+      "navicular drop"
+    ]
   }
 ]

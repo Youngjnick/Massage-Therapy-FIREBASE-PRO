@@ -14,7 +14,6 @@
     "long_explanation": "Herpes zoster results from reactivation of the dormant varicella-zoster virus (the same virus that causes chickenpox) in sensory ganglia.",
     "clinical_application": "Massage is contraindicated during the active outbreak due to risk of transmission and nerve inflammation.",
     "source_reference": "CDC, Tortora & Derrickson",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/herpes_zoster.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["virus", "shingles", "infection"],
-    "keywords": ["varicella", "VZV", "reactivation"],
-    "synonyms": ["shingles", "zoster"]
+    "tags": [
+      "virus",
+      "shingles",
+      "infection"
+    ],
+    "keywords": [
+      "varicella",
+      "VZV",
+      "reactivation"
+    ],
+    "synonyms": [
+      "shingles",
+      "zoster"
+    ]
   },
   {
     "id": "herpes_zoster_002",
@@ -42,7 +52,6 @@
     "long_explanation": "After chickenpox resolves, the virus lies dormant in sensory neurons of dorsal root ganglia and may reactivate later in life as shingles.",
     "clinical_application": "Understanding its neurological location helps explain dermatomal pain distribution in clients.",
     "source_reference": "Marieb & Hoehn",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/herpes_zoster.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -51,9 +60,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerves", "ganglia", "latency"],
-    "keywords": ["dorsal root", "latency", "nerve"],
-    "synonyms": ["nerve root storage"]
+    "tags": [
+      "nerves",
+      "ganglia",
+      "latency"
+    ],
+    "keywords": [
+      "dorsal root",
+      "latency",
+      "nerve"
+    ],
+    "synonyms": [
+      "nerve root storage"
+    ]
   },
   {
     "id": "herpes_zoster_003",
@@ -70,7 +89,6 @@
     "long_explanation": "The virus travels down a specific sensory nerve to the skin, causing a unilateral vesicular rash and severe neuropathic pain along that dermatome.",
     "clinical_application": "Clients with this pattern may report burning pain in one area—alerting therapists to a possible reactivation.",
     "source_reference": "CDC Clinical Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/herpes_zoster.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -79,9 +97,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rash", "pain", "dermatome"],
-    "keywords": ["burning", "blisters", "nerve pain"],
-    "synonyms": ["segmental rash"]
+    "tags": [
+      "rash",
+      "pain",
+      "dermatome"
+    ],
+    "keywords": [
+      "burning",
+      "blisters",
+      "nerve pain"
+    ],
+    "synonyms": [
+      "segmental rash"
+    ]
   },
   {
     "id": "herpes_zoster_004",
@@ -98,7 +126,6 @@
     "long_explanation": "Postherpetic neuralgia can last months or even years, caused by damaged sensory nerves from viral inflammation.",
     "clinical_application": "Massage may be cautiously reintroduced to improve circulation and comfort in the chronic phase.",
     "source_reference": "Guyton & Hall, Mayo Clinic",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/herpes_zoster.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -107,9 +134,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pain", "neuralgia", "post-viral"],
-    "keywords": ["nerve damage", "chronic pain", "shingles aftereffects"],
-    "synonyms": ["PHN"]
+    "tags": [
+      "pain",
+      "neuralgia",
+      "post-viral"
+    ],
+    "keywords": [
+      "nerve damage",
+      "chronic pain",
+      "shingles aftereffects"
+    ],
+    "synonyms": [
+      "PHN"
+    ]
   },
   {
     "id": "herpes_zoster_005",
@@ -126,7 +163,6 @@
     "long_explanation": "Reactivation risk increases with age or immunosuppression due to reduced cell-mediated immunity needed to suppress the virus.",
     "clinical_application": "Massage therapists should screen older clients for shingles history before applying techniques near affected nerves.",
     "source_reference": "CDC, NIH",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/herpes_zoster.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -135,8 +171,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["immunity", "elderly", "risk factors"],
-    "keywords": ["immunocompromised", "cellular immunity", "aging"],
-    "synonyms": ["high-risk groups"]
+    "tags": [
+      "immunity",
+      "elderly",
+      "risk factors"
+    ],
+    "keywords": [
+      "immunocompromised",
+      "cellular immunity",
+      "aging"
+    ],
+    "synonyms": [
+      "high-risk groups"
+    ]
   }
 ]

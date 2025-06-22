@@ -3,13 +3,17 @@
     "id": "nociceptors_001",
     "correctAnswer": "Painful stimuli",
     "question": "What do nociceptors primarily detect?",
-    "options": ["Light touch", "Vibration", "Painful stimuli", "Temperature"],
+    "options": [
+      "Light touch",
+      "Vibration",
+      "Painful stimuli",
+      "Temperature"
+    ],
     "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "nociceptors"],
     "short_explanation": "Nociceptors are sensory neurons specialized for detecting pain.",
     "long_explanation": "These free nerve endings detect harmful or potentially damaging stimuli and send pain signals to the central nervous system.",
     "clinical_application": "Massage therapists must understand nociceptor activation thresholds to avoid overstimulating areas of acute injury.",
     "source_reference": "Tortora: Principles of Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -18,9 +22,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pain", "receptors", "sensory system"],
-    "keywords": ["nociception", "free nerve endings", "pain detection"],
-    "synonyms": ["pain receptors"]
+    "tags": [
+      "pain",
+      "receptors",
+      "sensory system"
+    ],
+    "keywords": [
+      "nociception",
+      "free nerve endings",
+      "pain detection"
+    ],
+    "synonyms": [
+      "pain receptors"
+    ]
   },
   {
     "id": "nociceptors_002",
@@ -37,7 +51,6 @@
     "long_explanation": "Unlike other mechanoreceptors, nociceptors are simple in structure and are located throughout the skin, joints, and organs.",
     "clinical_application": "Understanding their structure helps massage therapists recognize when to use lighter pressure or avoid specific techniques.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -46,9 +59,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["structure", "anatomy", "nerve endings"],
-    "keywords": ["free nerve ending", "unencapsulated", "afferent neuron"],
-    "synonyms": ["naked nerve endings"]
+    "tags": [
+      "structure",
+      "anatomy",
+      "nerve endings"
+    ],
+    "keywords": [
+      "free nerve ending",
+      "unencapsulated",
+      "afferent neuron"
+    ],
+    "synonyms": [
+      "naked nerve endings"
+    ]
   },
   {
     "id": "nociceptors_003",
@@ -65,7 +88,6 @@
     "long_explanation": "Nociceptors are activated by tissue injury, mechanical overload, or inflammatory chemicals like bradykinin and prostaglandins.",
     "clinical_application": "Identifying these triggers helps avoid techniques that may worsen inflammatory responses in clients with acute injuries.",
     "source_reference": "Medical Physiology, Tortora",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -74,9 +96,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pain", "stimuli", "inflammation"],
-    "keywords": ["tissue damage", "chemical irritants", "injury response"],
-    "synonyms": ["harm detection receptors"]
+    "tags": [
+      "pain",
+      "stimuli",
+      "inflammation"
+    ],
+    "keywords": [
+      "tissue damage",
+      "chemical irritants",
+      "injury response"
+    ],
+    "synonyms": [
+      "harm detection receptors"
+    ]
   },
   {
     "id": "nociceptors_004",
@@ -93,7 +125,6 @@
     "long_explanation": "Repeated pain signals can sensitize spinal cord neurons, leading to exaggerated pain responses to even mild stimuli — a key factor in chronic pain syndromes.",
     "clinical_application": "Massage must be adapted in clients with fibromyalgia or neuropathic pain to prevent overstimulation of sensitized nociceptors.",
     "source_reference": "Neuroscience of Pain, Massage Therapy Journal",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -102,21 +133,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chronic pain", "sensitization", "nervous system"],
-    "keywords": ["central sensitization", "hyperalgesia", "neuropathy"],
-    "synonyms": ["pain amplification"]
+    "tags": [
+      "chronic pain",
+      "sensitization",
+      "nervous system"
+    ],
+    "keywords": [
+      "central sensitization",
+      "hyperalgesia",
+      "neuropathy"
+    ],
+    "synonyms": [
+      "pain amplification"
+    ]
   },
   {
     "id": "nociceptors_005",
     "correctAnswer": "Substance P",
     "question": "Which neurotransmitter is most commonly released by activated nociceptors?",
-    "options": ["Acetylcholine", "Substance P", "Serotonin", "Dopamine"],
+    "options": [
+      "Acetylcholine",
+      "Substance P",
+      "Serotonin",
+      "Dopamine"
+    ],
     "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "nociceptors"],
     "short_explanation": "Substance P is a key neurotransmitter in pain pathways.",
     "long_explanation": "Substance P facilitates pain transmission in the spinal cord and contributes to inflammation and pain sensitivity.",
     "clinical_application": "Understanding this helps therapists recognize the importance of reducing inflammatory triggers that prolong nociceptor activation.",
     "source_reference": "Guyton & Hall Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -125,9 +170,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["neurotransmitter", "pain signaling", "substance P"],
-    "keywords": ["pain pathway", "inflammatory mediator", "neurotransmission"],
-    "synonyms": ["pain chemical messenger"]
+    "tags": [
+      "neurotransmitter",
+      "pain signaling",
+      "substance P"
+    ],
+    "keywords": [
+      "pain pathway",
+      "inflammatory mediator",
+      "neurotransmission"
+    ],
+    "synonyms": [
+      "pain chemical messenger"
+    ]
   },
   {
     "id": "nociceptors_006",
@@ -144,7 +199,6 @@
     "long_explanation": "Pain is conveyed by A-delta (lightly myelinated) and C-fibers (unmyelinated), resulting in slower transmission compared to touch or proprioceptive fibers.",
     "clinical_application": "This delay in signal transmission explains the difference between sharp initial pain and delayed dull ache after injury.",
     "source_reference": "Principles of Neural Science",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -153,9 +207,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fiber types", "pain transmission", "neurophysiology"],
-    "keywords": ["C-fiber", "A-delta", "unmyelinated"],
-    "synonyms": ["slow pain fibers"]
+    "tags": [
+      "fiber types",
+      "pain transmission",
+      "neurophysiology"
+    ],
+    "keywords": [
+      "C-fiber",
+      "A-delta",
+      "unmyelinated"
+    ],
+    "synonyms": [
+      "slow pain fibers"
+    ]
   },
   {
     "id": "nociceptors_007",
@@ -172,7 +236,6 @@
     "long_explanation": "Gentle, non-nociceptive touch in surrounding tissue helps reduce guarding while minimizing pain receptor activity.",
     "clinical_application": "Used in early healing stages to promote circulation without exacerbating pain.",
     "source_reference": "Massage Therapy Journal",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -181,9 +244,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage technique", "safety", "pain management"],
-    "keywords": ["gentle pressure", "non-noxious", "modulation"],
-    "synonyms": ["low-stimulation technique"]
+    "tags": [
+      "massage technique",
+      "safety",
+      "pain management"
+    ],
+    "keywords": [
+      "gentle pressure",
+      "non-noxious",
+      "modulation"
+    ],
+    "synonyms": [
+      "low-stimulation technique"
+    ]
   },
   {
     "id": "nociceptors_008",
@@ -200,7 +273,6 @@
     "long_explanation": "Transcutaneous electrical nerve stimulation activates A-beta fibers which inhibit nociceptive transmission via the gate control mechanism.",
     "clinical_application": "Often used adjunctively with massage to manage chronic or post-surgical pain.",
     "source_reference": "Clinical Massage Techniques Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -209,9 +281,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["modality", "TENS", "pain modulation"],
-    "keywords": ["gate control", "A-beta fibers", "neuromodulation"],
-    "synonyms": ["electrical analgesia"]
+    "tags": [
+      "modality",
+      "TENS",
+      "pain modulation"
+    ],
+    "keywords": [
+      "gate control",
+      "A-beta fibers",
+      "neuromodulation"
+    ],
+    "synonyms": [
+      "electrical analgesia"
+    ]
   },
   {
     "id": "nociceptors_009",
@@ -228,7 +310,6 @@
     "long_explanation": "Prostaglandins are inflammatory mediators that lower nociceptor thresholds, making them more responsive to mechanical or chemical stimuli.",
     "clinical_application": "NSAIDs reduce prostaglandin synthesis, explaining their effectiveness for inflammatory pain.",
     "source_reference": "Guyton & Hall Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -237,21 +318,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["inflammation", "chemicals", "pain enhancement"],
-    "keywords": ["prostaglandin", "sensitization", "NSAID"],
-    "synonyms": ["pain mediator"]
+    "tags": [
+      "inflammation",
+      "chemicals",
+      "pain enhancement"
+    ],
+    "keywords": [
+      "prostaglandin",
+      "sensitization",
+      "NSAID"
+    ],
+    "synonyms": [
+      "pain mediator"
+    ]
   },
   {
     "id": "nociceptors_010",
     "correctAnswer": "Referred pain",
     "question": "What term describes pain felt in a location different from its origin?",
-    "options": ["Radiating pain", "Referred pain", "Phantom pain", "Allodynia"],
+    "options": [
+      "Radiating pain",
+      "Referred pain",
+      "Phantom pain",
+      "Allodynia"
+    ],
     "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "nociceptors"],
     "short_explanation": "Referred pain is perceived in an area distinct from the source.",
     "long_explanation": "Referred pain results from shared spinal segments between visceral and somatic nociceptors, confusing the brain’s localization of the stimulus.",
     "clinical_application": "Massage therapists should recognize referred pain patterns such as gallbladder pain manifesting in the right shoulder.",
     "source_reference": "Clinical Neuroanatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/nociceptors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -260,8 +355,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["referred pain", "visceral-somatic", "mapping"],
-    "keywords": ["pain location", "spinal segment", "mislocalization"],
-    "synonyms": ["viscero-somatic pain"]
+    "tags": [
+      "referred pain",
+      "visceral-somatic",
+      "mapping"
+    ],
+    "keywords": [
+      "pain location",
+      "spinal segment",
+      "mislocalization"
+    ],
+    "synonyms": [
+      "viscero-somatic pain"
+    ]
   }
 ]

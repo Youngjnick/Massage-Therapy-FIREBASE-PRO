@@ -14,7 +14,6 @@
     "long_explanation": "Ehlers-Danlos Syndrome is a connective tissue disorder that affects collagen production, leading to hyperflexible joints, fragile skin, and sometimes vascular issues.",
     "clinical_application": "Clients with EDS may require gentle massage techniques and modified stretching routines.",
     "source_reference": "FSMTB Pathology Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["connective tissue", "EDS", "hyperflexibility"],
-    "keywords": ["ehlers-danlos", "joint laxity", "collagen disorder"],
+    "tags": [
+      "connective tissue",
+      "EDS",
+      "hyperflexibility"
+    ],
+    "keywords": [
+      "ehlers-danlos",
+      "joint laxity",
+      "collagen disorder"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The Beighton Score is a 9-point scale evaluating the flexibility of major joints. A score of 5 or higher often indicates generalized hypermobility.",
     "clinical_application": "A massage therapist may use this score to inform treatment planning and avoid overstretching.",
     "source_reference": "Beighton Score Clinical Use",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["assessment", "screening", "beighton"],
-    "keywords": ["flexibility test", "hypermobility scale", "assessment tools"],
+    "tags": [
+      "assessment",
+      "screening",
+      "beighton"
+    ],
+    "keywords": [
+      "flexibility test",
+      "hypermobility scale",
+      "assessment tools"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "Without proper support and strengthening, hypermobile joints may become unstable, leading to frequent subluxations or full dislocations.",
     "clinical_application": "Clients may benefit from strengthening exercises and stabilization-focused therapies.",
     "source_reference": "Orthopedic Pathology Reference",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "easy",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dislocation", "instability", "joint safety"],
-    "keywords": ["injury", "joint risk", "mobility disorder"],
+    "tags": [
+      "dislocation",
+      "instability",
+      "joint safety"
+    ],
+    "keywords": [
+      "injury",
+      "joint risk",
+      "mobility disorder"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "Clients with hypermobility benefit from techniques that support tissue tone and proprioception. Aggressive mobilization may increase joint instability.",
     "clinical_application": "Use slow, supportive strokes along hypermobile joints like the shoulder or elbow to enhance proprioceptive feedback.",
     "source_reference": "Massage Therapy Journal",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,21 +127,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage safety", "fascia", "gentle pressure"],
-    "keywords": ["soft tissue", "fascia", "safe massage"],
+    "tags": [
+      "massage safety",
+      "fascia",
+      "gentle pressure"
+    ],
+    "keywords": [
+      "soft tissue",
+      "fascia",
+      "safe massage"
+    ],
     "synonyms": null
   },
   {
     "id": "hypermobility_005",
     "correctAnswer": "Cardiovascular",
     "question": "Which system besides the musculoskeletal is often affected in hypermobility syndromes?",
-    "options": ["Cardiovascular", "Endocrine", "Renal", "Integumentary"],
+    "options": [
+      "Cardiovascular",
+      "Endocrine",
+      "Renal",
+      "Integumentary"
+    ],
     "topics": ["pathology", "hypermobility"],
     "short_explanation": "Cardiovascular symptoms like low blood pressure and tachycardia can occur.",
     "long_explanation": "Autonomic dysfunction is common in hypermobility syndromes like EDS, leading to symptoms such as POTS (Postural Orthostatic Tachycardia Syndrome) and blood pressure regulation issues.",
     "clinical_application": "Massage therapists should be cautious with sudden position changes and monitor for dizziness or fainting.",
     "source_reference": "NIH EDS Resources",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "hard",
@@ -130,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["autonomic", "cardiac", "POTS"],
-    "keywords": ["blood pressure", "tachycardia", "EDS"],
+    "tags": [
+      "autonomic",
+      "cardiac",
+      "POTS"
+    ],
+    "keywords": [
+      "blood pressure",
+      "tachycardia",
+      "EDS"
+    ],
     "synonyms": null
   },
   {
     "id": "hypermobility_006",
     "correctAnswer": "Ligaments",
     "question": "Which structure provides passive stability to hypermobile joints?",
-    "options": ["Ligaments", "Muscles", "Bursae", "Tendons"],
+    "options": [
+      "Ligaments",
+      "Muscles",
+      "Bursae",
+      "Tendons"
+    ],
     "topics": ["pathology", "hypermobility"],
     "short_explanation": "Ligaments prevent excessive joint movement.",
     "long_explanation": "Ligaments are key components of passive joint stability. In hypermobility, these structures are often lax or elongated, contributing to joint instability.",
     "clinical_application": "Therapists should focus on techniques that increase proprioception and avoid ligament overstretch.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -153,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ligaments", "stability", "anatomy"],
-    "keywords": ["joint capsule", "passive support", "collagen"],
+    "tags": [
+      "ligaments",
+      "stability",
+      "anatomy"
+    ],
+    "keywords": [
+      "joint capsule",
+      "passive support",
+      "collagen"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +224,6 @@
     "long_explanation": "Training proprioception enhances the body's ability to sense joint position and movement, which is especially critical for people with hypermobile joints prone to misalignment.",
     "clinical_application": "Balance and stability exercises can be integrated with massage care plans.",
     "source_reference": "Proprioceptive Neuromuscular Facilitation Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -181,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["proprioception", "balance", "coordination"],
-    "keywords": ["body awareness", "stability", "rehabilitation"],
+    "tags": [
+      "proprioception",
+      "balance",
+      "coordination"
+    ],
+    "keywords": [
+      "body awareness",
+      "stability",
+      "rehabilitation"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +259,6 @@
     "long_explanation": "These joints have a wide range of motion by design and are often the first to show signs of excessive flexibility or instability in hypermobile individuals.",
     "clinical_application": "Therapists may notice extreme thumb extension or shoulder instability in these clients.",
     "source_reference": "Functional Movement Systems Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "easy",
@@ -209,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joints", "mobility", "instability"],
-    "keywords": ["hands", "shoulders", "range of motion"],
+    "tags": [
+      "joints",
+      "mobility",
+      "instability"
+    ],
+    "keywords": [
+      "hands",
+      "shoulders",
+      "range of motion"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +294,6 @@
     "long_explanation": "Targeted exercise programs focusing on control and coordination can help stabilize hypermobile joints and prevent recurrent injury.",
     "clinical_application": "A Pilates program emphasizing control and alignment is often beneficial.",
     "source_reference": "Hypermobility and Rehabilitation Protocols",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -237,21 +302,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["strengthening", "stability", "rehab"],
-    "keywords": ["exercise", "rehabilitation", "support"],
+    "tags": [
+      "strengthening",
+      "stability",
+      "rehab"
+    ],
+    "keywords": [
+      "exercise",
+      "rehabilitation",
+      "support"
+    ],
     "synonyms": null
   },
   {
     "id": "hypermobility_010",
     "correctAnswer": "Collagen",
     "question": "Which connective tissue protein is often affected in hypermobility disorders?",
-    "options": ["Collagen", "Elastin", "Actin", "Keratin"],
+    "options": [
+      "Collagen",
+      "Elastin",
+      "Actin",
+      "Keratin"
+    ],
     "topics": ["pathology", "hypermobility"],
     "short_explanation": "Collagen abnormalities contribute to joint laxity.",
     "long_explanation": "In many hypermobility-related disorders like EDS, collagen is improperly formed, affecting the strength and elasticity of connective tissues.",
     "clinical_application": "Understanding collagen issues helps therapists tailor bodywork to avoid stress on compromised structures.",
     "source_reference": "Connective Tissue Disorders Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypermobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -260,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["collagen", "connective tissue", "protein"],
-    "keywords": ["joint laxity", "connective disorder", "structure"],
+    "tags": [
+      "collagen",
+      "connective tissue",
+      "protein"
+    ],
+    "keywords": [
+      "joint laxity",
+      "connective disorder",
+      "structure"
+    ],
     "synonyms": null
   }
 ]

@@ -9,18 +9,11 @@
       "Tibialis anterior",
       "Gastrocnemius"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "The deep fibular nerve innervates anterior compartment muscles like tibialis anterior.",
     "long_explanation": "The deep fibular (peroneal) nerve supplies the anterior compartment of the leg, including tibialis anterior, extensor hallucis longus, and extensor digitorum longus. These muscles dorsiflex the ankle and extend the toes.",
     "clinical_application": "In clients with foot drop or anterior shin pain, understanding deep fibular nerve anatomy helps direct therapeutic massage or neuromuscular techniques appropriately.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -29,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["deep_fibular", "anterior_leg", "nerve_innervation"],
+    "tags": [
+      "deep_fibular",
+      "anterior_leg",
+      "nerve_innervation"
+    ],
     "keywords": [
       "tibialis anterior",
       "foot drop",
@@ -48,18 +45,11 @@
       "Lateral compartment",
       "Deep posterior compartment"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "It supplies the fibularis longus and brevis in the lateral leg compartment.",
     "long_explanation": "The superficial fibular nerve innervates the lateral compartment muscles—fibularis longus and brevis—which are responsible for foot eversion.",
     "clinical_application": "Understanding lateral compartment innervation helps massage therapists target strain patterns in ankle instability.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -68,7 +58,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["superficial_fibular", "lateral_leg", "foot_eversion"],
+    "tags": [
+      "superficial_fibular",
+      "lateral_leg",
+      "foot_eversion"
+    ],
     "keywords": [
       "fibularis longus",
       "foot eversion",
@@ -86,18 +80,11 @@
       "Dorsum of the foot (except first web space)",
       "Sole of the foot"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "It innervates most of the dorsum of the foot, excluding the 1st web space.",
     "long_explanation": "The superficial fibular nerve provides sensation to the dorsum of the foot except the 1st web space, which is covered by the deep fibular nerve.",
     "clinical_application": "Sensory testing here can help distinguish superficial from deep fibular nerve lesions.",
     "source_reference": "Moore Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -106,7 +93,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cutaneous_innervation", "superficial_fibular", "foot"],
+    "tags": [
+      "cutaneous_innervation",
+      "superficial_fibular",
+      "foot"
+    ],
     "keywords": [
       "dorsum of foot",
       "superficial fibular nerve",
@@ -124,18 +115,11 @@
       "Superficial fibular nerve",
       "Saphenous nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "Dorsiflexion is controlled by muscles innervated by the deep fibular nerve.",
     "long_explanation": "The deep fibular nerve innervates the dorsiflexors of the ankle such as tibialis anterior. Damage results in foot drop. Superficial fibular nerve does not affect dorsiflexion.",
     "clinical_application": "Therapists may observe foot drop during gait analysis, which suggests deep fibular impairment, not lateral compartment dysfunction.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -144,27 +128,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dorsiflexion", "deep_fibular", "nerve_damage"],
-    "keywords": ["foot drop", "deep fibular nerve", "gait analysis"],
+    "tags": [
+      "dorsiflexion",
+      "deep_fibular",
+      "nerve_damage"
+    ],
+    "keywords": [
+      "foot drop",
+      "deep fibular nerve",
+      "gait analysis"
+    ],
     "synonyms": null
   },
   {
     "id": "deep_vs_superficial_fibular_nerve_005",
     "correctAnswer": "Eversion",
     "question": "Which action would be most affected by damage to the superficial fibular nerve?",
-    "options": ["Plantarflexion", "Dorsiflexion", "Toe flexion", "Eversion"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
+    "options": [
+      "Plantarflexion",
+      "Dorsiflexion",
+      "Toe flexion",
+      "Eversion"
     ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "Eversion is the main action of muscles innervated by the superficial fibular nerve.",
     "long_explanation": "Fibularis longus and brevis, innervated by the superficial fibular nerve, evert the foot. Injury impairs this action and may lead to ankle instability.",
     "clinical_application": "Massage therapy targeting lateral leg dysfunction can restore balance and prevent ankle sprains linked to eversion weakness.",
     "source_reference": "Netter’s Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -173,27 +163,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["eversion", "superficial_fibular", "ankle_instability"],
-    "keywords": ["fibularis muscles", "foot eversion", "nerve injury"],
+    "tags": [
+      "eversion",
+      "superficial_fibular",
+      "ankle_instability"
+    ],
+    "keywords": [
+      "fibularis muscles",
+      "foot eversion",
+      "nerve injury"
+    ],
     "synonyms": null
   },
   {
     "id": "deep_vs_superficial_fibular_nerve_006",
     "correctAnswer": "L4-S1",
     "question": "The deep fibular nerve originates from which spinal nerve roots?",
-    "options": ["L3-L4", "L4-S1", "S1-S3", "L2-L3"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
+    "options": [
+      "L3-L4",
+      "L4-S1",
+      "S1-S3",
+      "L2-L3"
     ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "It arises from the common fibular division of the sciatic nerve, spinal roots L4–S1.",
     "long_explanation": "The deep fibular nerve originates from L4–S1, travels through the anterior leg, and innervates dorsiflexors and toe extensors.",
     "clinical_application": "Recognizing dermatomal patterns assists therapists in differentiating spinal from peripheral nerve dysfunction in lower limb issues.",
     "source_reference": "Moore Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -202,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["deep_fibular", "spinal_roots", "sciatic_branch"],
-    "keywords": ["nerve roots", "deep fibular", "sciatic nerve"],
+    "tags": [
+      "deep_fibular",
+      "spinal_roots",
+      "sciatic_branch"
+    ],
+    "keywords": [
+      "nerve roots",
+      "deep fibular",
+      "sciatic nerve"
+    ],
     "synonyms": null
   },
   {
@@ -216,18 +220,11 @@
       "Deep posterior",
       "Superficial posterior"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "Posterior compartments are served by the tibial nerve, not fibular branches.",
     "long_explanation": "While deep and superficial fibular nerves serve the anterior and lateral compartments, posterior compartments are innervated by the tibial nerve.",
     "clinical_application": "Targeting the correct compartment is critical for effective deep tissue leg massage or neuromuscular therapy.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -236,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posterior_leg", "tibial_nerve", "compartment_syndrome"],
-    "keywords": ["posterior leg", "tibial nerve", "leg innervation"],
+    "tags": [
+      "posterior_leg",
+      "tibial_nerve",
+      "compartment_syndrome"
+    ],
+    "keywords": [
+      "posterior leg",
+      "tibial nerve",
+      "leg innervation"
+    ],
     "synonyms": null
   },
   {
@@ -250,18 +255,11 @@
       "Foot drop",
       "Sensory loss in the heel"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "Anterior tarsal tunnel syndrome can cause foot drop from deep fibular compression.",
     "long_explanation": "The deep fibular nerve runs beneath the extensor retinaculum at the ankle. Entrapment here can cause motor weakness and sensory deficits in the web space.",
     "clinical_application": "Massage therapists treating anterior ankle tightness may alleviate nerve entrapment symptoms and improve dorsiflexion.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -270,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve_compression", "foot_drop", "anterior_tarsal_tunnel"],
-    "keywords": ["deep fibular", "foot drop", "anterior ankle"],
+    "tags": [
+      "nerve_compression",
+      "foot_drop",
+      "anterior_tarsal_tunnel"
+    ],
+    "keywords": [
+      "deep fibular",
+      "foot drop",
+      "anterior ankle"
+    ],
     "synonyms": null
   },
   {
@@ -284,18 +290,11 @@
       "Deep fibular nerve",
       "Sural nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "The deep fibular nerve passes under the extensor retinaculum in the anterior ankle.",
     "long_explanation": "The anterior tarsal tunnel houses the deep fibular nerve and anterior tibial vessels, making it a site for entrapment in high-stress ankle use.",
     "clinical_application": "Understanding tunnel anatomy helps therapists avoid direct compression during anterior ankle techniques.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -304,8 +303,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anterior_tarsal_tunnel", "deep_fibular", "entrapment"],
-    "keywords": ["extensor retinaculum", "nerve entrapment", "deep fibular"],
+    "tags": [
+      "anterior_tarsal_tunnel",
+      "deep_fibular",
+      "entrapment"
+    ],
+    "keywords": [
+      "extensor retinaculum",
+      "nerve entrapment",
+      "deep fibular"
+    ],
     "synonyms": null
   },
   {
@@ -318,18 +325,11 @@
       "Web space between the first and second toes",
       "Heel"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "foot_innervations",
-      "fibular_nerve",
-      "deep_vs_superficial_fibular_nerve"
-    ],
+    "topics": ["anatomy", "innervations", "foot_innervations", "fibular_nerve", "deep_vs_superficial_fibular_nerve"],
     "short_explanation": "The first web space is exclusively innervated by the deep fibular nerve.",
     "long_explanation": "Only the deep fibular nerve supplies the 1st interdigital space. Loss of sensation here is diagnostic of deep fibular involvement.",
     "clinical_application": "Sensory testing in this web space provides targeted assessment for deep fibular function during foot injury evaluations.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/foot_innervations/fibular_nerve/deep_vs_superficial_fibular_nerve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -338,8 +338,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sensory_loss", "deep_fibular", "diagnostic_zone"],
-    "keywords": ["first web space", "deep fibular", "foot sensation"],
+    "tags": [
+      "sensory_loss",
+      "deep_fibular",
+      "diagnostic_zone"
+    ],
+    "keywords": [
+      "first web space",
+      "deep fibular",
+      "foot sensation"
+    ],
     "synonyms": null
   }
 ]

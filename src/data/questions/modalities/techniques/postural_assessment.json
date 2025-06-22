@@ -14,7 +14,6 @@
     "long_explanation": "Kyphotic-lordotic posture is characterized by an exaggerated thoracic kyphosis and lumbar lordosis. This pattern typically presents with a forward head, rounded shoulders, and an anterior pelvic tilt. It often results from prolonged sitting, poor ergonomics, or muscle imbalances.",
     "clinical_application": "Massage therapy can help address postural distortions by releasing tight muscles such as the pectorals and upper trapezius, while supporting awareness and balance of spinal curves.",
     "source_reference": "Trail Guide to the Body, 6th ed. — Postural Assessment Chapter",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,7 +22,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "assessment", "kyphosis", "lordosis"],
+    "tags": [
+      "posture",
+      "assessment",
+      "kyphosis",
+      "lordosis"
+    ],
     "keywords": [
       "postural patterns",
       "spine",
@@ -47,7 +51,6 @@
     "long_explanation": "Clients with forward head posture commonly have tight scalenes and sternocleidomastoid (SCM) muscles. These anterior neck muscles compensate for the head’s forward displacement and can become overactive and fibrotic.",
     "clinical_application": "Massage techniques like myofascial release or trigger point therapy to the SCM and scalenes can help restore balanced head posture.",
     "source_reference": "Kinesiology of the Musculoskeletal System, 3rd ed. — Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -56,8 +59,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscles", "forward head", "neck tension"],
-    "keywords": ["SCM", "scalenes", "posture", "neck"],
+    "tags": [
+      "muscles",
+      "forward head",
+      "neck tension"
+    ],
+    "keywords": [
+      "SCM",
+      "scalenes",
+      "posture",
+      "neck"
+    ],
     "synonyms": null
   },
   {
@@ -75,7 +87,6 @@
     "long_explanation": "Postural assessment allows massage therapists to observe habitual patterns that may indicate muscle tightness, weakness, or compensation. While it is not diagnostic, it helps inform treatment planning.",
     "clinical_application": "Observing anterior and lateral views can reveal asymmetries to guide session focus (e.g., tight hip flexors or rotated shoulders).",
     "source_reference": "FSMTB Content Outline — Assessment Section",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -84,8 +95,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["assessment", "purpose", "posture"],
-    "keywords": ["muscle imbalance", "alignment", "observation"],
+    "tags": [
+      "assessment",
+      "purpose",
+      "posture"
+    ],
+    "keywords": [
+      "muscle imbalance",
+      "alignment",
+      "observation"
+    ],
     "synonyms": null
   },
   {
@@ -103,7 +122,6 @@
     "long_explanation": "A plumb line from the mastoid process through the lateral malleolus should pass through the major load-bearing joints in ideal posture. Forward or backward shifts indicate postural imbalance.",
     "clinical_application": "Therapists use this reference in visual assessments to plan treatment for structural support.",
     "source_reference": "Trail Guide to the Body, Postural Analysis Techniques",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -112,21 +130,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["alignment", "landmarks", "side view"],
-    "keywords": ["plumb line", "mastoid", "anatomical reference"],
+    "tags": [
+      "alignment",
+      "landmarks",
+      "side view"
+    ],
+    "keywords": [
+      "plumb line",
+      "mastoid",
+      "anatomical reference"
+    ],
     "synonyms": null
   },
   {
     "id": "postural_assessment_005",
     "correctAnswer": "Flat-back posture",
     "question": "In which postural deviation is the pelvis tilted posteriorly and the lumbar curve flattened?",
-    "options": ["Swayback", "Lordosis", "Kyphosis", "Flat-back posture"],
+    "options": [
+      "Swayback",
+      "Lordosis",
+      "Kyphosis",
+      "Flat-back posture"
+    ],
     "topics": ["modalities", "techniques", "postural_assessment"],
     "short_explanation": "Flat-back posture is defined by a posterior pelvic tilt and reduced lumbar lordosis.",
     "long_explanation": "Flat-back posture results in a loss of the natural lumbar curve due to posterior pelvic tilt and often presents with forward head and flexed knees. This posture can be associated with tight hamstrings and weak hip flexors.",
     "clinical_application": "Massage focus should include lengthening the hamstrings and strengthening lumbar extensors.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -135,8 +165,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pelvis", "lumbar", "posture"],
-    "keywords": ["posterior tilt", "flattened spine", "flat-back"],
+    "tags": [
+      "pelvis",
+      "lumbar",
+      "posture"
+    ],
+    "keywords": [
+      "posterior tilt",
+      "flattened spine",
+      "flat-back"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +192,6 @@
     "long_explanation": "When viewed from the back, an imbalance in the height of the iliac crests may indicate lateral tilt caused by muscular asymmetry, scoliosis, or leg length discrepancy.",
     "clinical_application": "Massage may focus on the QL, hip abductors, and paraspinals to address pelvic asymmetry.",
     "source_reference": "Postural Assessment: A Guide for Massage Therapists, NCBTMB",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,8 +200,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pelvic tilt", "hip", "alignment"],
-    "keywords": ["iliac crest", "QL", "lateral imbalance"],
+    "tags": [
+      "pelvic tilt",
+      "hip",
+      "alignment"
+    ],
+    "keywords": [
+      "iliac crest",
+      "QL",
+      "lateral imbalance"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +227,6 @@
     "long_explanation": "Deviations such as genu valgum (knock knees) or genu varum (bow legs) can affect posture and gait. Proper massage and postural awareness can address contributing muscle imbalances.",
     "clinical_application": "Massage therapists assess leg alignment to identify muscle tension in adductors, IT band, or calves.",
     "source_reference": "Posture and Body Mechanics, ABMP Resources",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -191,8 +235,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knees", "alignment", "lower body"],
-    "keywords": ["neutral knee", "valgus", "varus", "leg posture"],
+    "tags": [
+      "knees",
+      "alignment",
+      "lower body"
+    ],
+    "keywords": [
+      "neutral knee",
+      "valgus",
+      "varus",
+      "leg posture"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +263,6 @@
     "long_explanation": "Swayback posture causes the pelvis to shift forward and spine to lean backward, which places chronic stretch on hip flexors such as the iliopsoas, reducing their function and support.",
     "clinical_application": "Massage and stretching can help restore mobility, but strengthening is key to long-term correction.",
     "source_reference": "Postural Patterns and Muscle Function, NMT Academy",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,8 +271,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["swayback", "hip flexors", "imbalance"],
-    "keywords": ["iliopsoas", "anterior support", "postural weakness"],
+    "tags": [
+      "swayback",
+      "hip flexors",
+      "imbalance"
+    ],
+    "keywords": [
+      "iliopsoas",
+      "anterior support",
+      "postural weakness"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +298,6 @@
     "long_explanation": "Visible asymmetry of scapulae, rib cage prominence, or spinal deviation can indicate scoliosis. Massage does not correct curvature but may reduce pain and muscle tension on the convex side.",
     "clinical_application": "Massage therapists should refer clients for diagnostic evaluation while supporting comfort and function through targeted work.",
     "source_reference": "Scoliosis Research Society & Massage Therapy Foundation",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -247,8 +306,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scoliosis", "asymmetry", "spine"],
-    "keywords": ["scapula", "curve", "postural deviation"],
+    "tags": [
+      "scoliosis",
+      "asymmetry",
+      "spine"
+    ],
+    "keywords": [
+      "scapula",
+      "curve",
+      "postural deviation"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +333,6 @@
     "long_explanation": "The pelvis tips forward due to overactive hip flexors (iliopsoas, rectus femoris) and weak abdominals and gluteals. This causes lumbar hyperlordosis and potential low back discomfort.",
     "clinical_application": "Massage can focus on releasing hip flexors and supporting abdominal engagement through education.",
     "source_reference": "Trail Guide to Movement, Andrews & Calley",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/postural_assessment.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -275,8 +341,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pelvic tilt", "core", "imbalance"],
-    "keywords": ["anterior tilt", "hip flexor", "lordosis", "core weakness"],
+    "tags": [
+      "pelvic tilt",
+      "core",
+      "imbalance"
+    ],
+    "keywords": [
+      "anterior tilt",
+      "hip flexor",
+      "lordosis",
+      "core weakness"
+    ],
     "synonyms": null
   }
 ]

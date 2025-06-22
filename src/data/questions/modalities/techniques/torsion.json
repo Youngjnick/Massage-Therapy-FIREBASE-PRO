@@ -14,7 +14,6 @@
     "long_explanation": "In massage therapy, torsion refers to the application of a twisting or spiral pressure to soft tissues to promote relaxation, circulation, and release of fascial restrictions.",
     "clinical_application": "Used in myofascial release to unwind tissue restrictions in the thoracolumbar fascia.",
     "source_reference": "Massage Therapy Principles and Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["torsion", "spiral pressure", "twisting technique"],
-    "keywords": ["myofascial", "rotation", "soft tissue manipulation"],
+    "tags": [
+      "torsion",
+      "spiral pressure",
+      "twisting technique"
+    ],
+    "keywords": [
+      "myofascial",
+      "rotation",
+      "soft tissue manipulation"
+    ],
     "synonyms": null
   },
   {
     "id": "torsion_002",
     "correctAnswer": "Fascia",
     "question": "Which structure is most targeted by torsion massage techniques?",
-    "options": ["Fascia", "Bone", "Lymph nodes", "Synovial membranes"],
+    "options": [
+      "Fascia",
+      "Bone",
+      "Lymph nodes",
+      "Synovial membranes"
+    ],
     "topics": ["modalities", "techniques", "torsion"],
     "short_explanation": "Fascia responds well to slow twisting techniques.",
     "long_explanation": "Torsion techniques aim to affect the fascia by creating a shearing or unwinding effect, often used to release chronic restrictions or adhesions.",
     "clinical_application": "Applied over the IT band to decrease tension and increase mobility.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "easy",
@@ -46,8 +57,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "shear force", "release techniques"],
-    "keywords": ["fascial release", "tissue glide"],
+    "tags": [
+      "fascia",
+      "shear force",
+      "release techniques"
+    ],
+    "keywords": [
+      "fascial release",
+      "tissue glide"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +83,6 @@
     "long_explanation": "Myofascial release applies sustained pressure and torque to release fascial adhesions. Torsion helps unwinding spiral patterns in the fascia.",
     "clinical_application": "Used in the back to help reduce chronic upper thoracic restrictions.",
     "source_reference": "Myofascial Release Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "easy",
@@ -74,8 +91,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofascial", "torsion", "unwinding"],
-    "keywords": ["connective tissue", "myofascial therapy", "slow pressure"],
+    "tags": [
+      "myofascial",
+      "torsion",
+      "unwinding"
+    ],
+    "keywords": [
+      "connective tissue",
+      "myofascial therapy",
+      "slow pressure"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +118,6 @@
     "long_explanation": "Unlike Swedish massage, torsion massage uses rotational force often centered on a fixed anchor point, gently mobilizing layers of fascia.",
     "clinical_application": "Often used around the sacrum or shoulder girdle.",
     "source_reference": "Massage Modalities Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -102,8 +126,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["spiral motion", "manual therapy", "torsion"],
-    "keywords": ["rotation", "fascial layers", "twisting motion"],
+    "tags": [
+      "spiral motion",
+      "manual therapy",
+      "torsion"
+    ],
+    "keywords": [
+      "rotation",
+      "fascial layers",
+      "twisting motion"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +153,6 @@
     "long_explanation": "Torsion massage is contraindicated in acute trauma but ideal for long-standing fascial tension from postural dysfunction or repetitive strain.",
     "clinical_application": "Used post-rehab for athletes with scar tissue buildup.",
     "source_reference": "Orthopedic Massage Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -130,8 +161,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chronic restriction", "fascial tension", "massage indication"],
-    "keywords": ["scar tissue", "adhesion", "mobility"],
+    "tags": [
+      "chronic restriction",
+      "fascial tension",
+      "massage indication"
+    ],
+    "keywords": [
+      "scar tissue",
+      "adhesion",
+      "mobility"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +188,6 @@
     "long_explanation": "Pelvic torsions often involve fascial restrictions in the lumbosacral region. Torsion massage helps reestablish fascial balance.",
     "clinical_application": "Applied for sacroiliac dysfunction or pelvic tilt.",
     "source_reference": "Structural Integration Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -158,8 +196,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sacrum", "SI joint", "pelvic torsion"],
-    "keywords": ["low back pain", "postural imbalance"],
+    "tags": [
+      "sacrum",
+      "SI joint",
+      "pelvic torsion"
+    ],
+    "keywords": [
+      "low back pain",
+      "postural imbalance"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +222,6 @@
     "long_explanation": "Slow twisting pressure helps realign fascial fibers and increase hydration through mechanical stimulation of fluid movement between tissue planes.",
     "clinical_application": "Improves glide between skin and muscle layers in dehydrated fascia.",
     "source_reference": "Fascial Fitness Research",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "hard",
@@ -186,8 +230,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hydration", "fascia", "shear forces"],
-    "keywords": ["interstitial fluid", "viscoelasticity", "manual therapy"],
+    "tags": [
+      "hydration",
+      "fascia",
+      "shear forces"
+    ],
+    "keywords": [
+      "interstitial fluid",
+      "viscoelasticity",
+      "manual therapy"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +257,6 @@
     "long_explanation": "Proprioceptive Neuromuscular Facilitation (PNF) techniques can incorporate spiral or torsional force patterns alongside client effort to reset neuromuscular tension.",
     "clinical_application": "Used for athletes in dynamic warm-ups and post-event recovery.",
     "source_reference": "Sports Massage Protocols",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "hard",
@@ -214,8 +265,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["PNF", "active release", "torsion stretch"],
-    "keywords": ["neuromuscular", "engagement", "resistance"],
+    "tags": [
+      "PNF",
+      "active release",
+      "torsion stretch"
+    ],
+    "keywords": [
+      "neuromuscular",
+      "engagement",
+      "resistance"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +292,6 @@
     "long_explanation": "By slowing fascial tension and enhancing tissue awareness, torsion massage helps shift the body into a parasympathetic (rest-and-digest) state.",
     "clinical_application": "Useful in clients with stress, anxiety, or high muscle tone.",
     "source_reference": "Massage and the Nervous System",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "hard",
@@ -242,8 +300,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["parasympathetic", "massage benefits", "stress relief"],
-    "keywords": ["nervous system", "massage response"],
+    "tags": [
+      "parasympathetic",
+      "massage benefits",
+      "stress relief"
+    ],
+    "keywords": [
+      "nervous system",
+      "massage response"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +326,6 @@
     "long_explanation": "Deep fascial torsion may interfere with healing in postsurgical clients or those with unstable structural issues. Clearance from a physician is advised.",
     "clinical_application": "Avoid torsion in clients with recent spinal fusion or abdominal surgery.",
     "source_reference": "Ethics and Contraindications in Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/torsion.json",
     "question_type": null,
     "difficulty": "hard",
@@ -270,8 +334,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["contraindication", "post-surgery", "safety"],
-    "keywords": ["massage ethics", "precaution"],
+    "tags": [
+      "contraindication",
+      "post-surgery",
+      "safety"
+    ],
+    "keywords": [
+      "massage ethics",
+      "precaution"
+    ],
     "synonyms": null
   }
 ]

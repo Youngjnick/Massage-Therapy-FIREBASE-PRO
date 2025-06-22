@@ -14,7 +14,6 @@
     "long_explanation": "Active trigger points are hyperirritable spots in skeletal muscle that cause pain without pressure. They often produce referred pain, motor dysfunction, and autonomic symptoms.",
     "clinical_application": "Therapists assess for spontaneous pain or referral during intake, indicating active point involvement.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["active trigger", "referred pain", "myofascial"],
-    "keywords": ["active point", "trigger", "pain referral"],
-    "synonyms": ["active myofascial point", "chronic trigger"]
+    "tags": [
+      "active trigger",
+      "referred pain",
+      "myofascial"
+    ],
+    "keywords": [
+      "active point",
+      "trigger",
+      "pain referral"
+    ],
+    "synonyms": [
+      "active myofascial point",
+      "chronic trigger"
+    ]
   },
   {
     "id": "trigger_points_002",
@@ -42,7 +52,6 @@
     "long_explanation": "Trigger points tend to form in regions of chronic muscle overuse or tension, typically within taut bands near motor endplates or musculoskeletal junctions.",
     "clinical_application": "Palpation of taut muscle bands is a standard method for identifying potential trigger points.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle", "location", "trigger point"],
-    "keywords": ["taut band", "skeletal muscle", "palpation"],
-    "synonyms": ["muscle knot", "myofascial restriction"]
+    "tags": [
+      "muscle",
+      "location",
+      "trigger point"
+    ],
+    "keywords": [
+      "taut band",
+      "skeletal muscle",
+      "palpation"
+    ],
+    "synonyms": [
+      "muscle knot",
+      "myofascial restriction"
+    ]
   },
   {
     "id": "trigger_points_003",
@@ -70,7 +90,6 @@
     "long_explanation": "Latent trigger points are inactive in terms of referred pain unless stimulated. They may limit movement or cause muscle weakness without causing constant pain.",
     "clinical_application": "Latent points may still influence posture or performance and benefit from treatment.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["latent trigger", "tenderness", "dysfunction"],
-    "keywords": ["latent point", "silent trigger", "palpation"],
-    "synonyms": ["inactive trigger", "silent myofascial point"]
+    "tags": [
+      "latent trigger",
+      "tenderness",
+      "dysfunction"
+    ],
+    "keywords": [
+      "latent point",
+      "silent trigger",
+      "palpation"
+    ],
+    "synonyms": [
+      "inactive trigger",
+      "silent myofascial point"
+    ]
   },
   {
     "id": "trigger_points_004",
@@ -98,7 +128,6 @@
     "long_explanation": "Trigger points form from sustained muscle contraction, repetitive strain, poor ergonomics, acute injuries, or emotional stress, leading to localized ischemia and metabolic waste buildup.",
     "clinical_application": "Therapists assess client history for overuse or injury when treating chronic muscular pain.",
     "source_reference": "Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -107,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["overuse", "trigger formation", "stress"],
-    "keywords": ["repetitive strain", "posture", "trauma"],
-    "synonyms": ["trigger formation", "cause of pain points"]
+    "tags": [
+      "overuse",
+      "trigger formation",
+      "stress"
+    ],
+    "keywords": [
+      "repetitive strain",
+      "posture",
+      "trauma"
+    ],
+    "synonyms": [
+      "trigger formation",
+      "cause of pain points"
+    ]
   },
   {
     "id": "trigger_points_005",
@@ -126,7 +166,6 @@
     "long_explanation": "Satellite trigger points arise in adjacent or functionally related muscles that are overloaded while compensating for a muscle with an active primary trigger point.",
     "clinical_application": "Effective treatment must include both the primary and satellite points to fully restore function.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["satellite", "secondary", "compensation"],
-    "keywords": ["trigger chains", "pain referral", "associated points"],
-    "synonyms": ["secondary trigger", "referred trigger"]
+    "tags": [
+      "satellite",
+      "secondary",
+      "compensation"
+    ],
+    "keywords": [
+      "trigger chains",
+      "pain referral",
+      "associated points"
+    ],
+    "synonyms": [
+      "secondary trigger",
+      "referred trigger"
+    ]
   },
   {
     "id": "trigger_points_006",
@@ -154,7 +204,6 @@
     "long_explanation": "Trigger points are associated with a contracted sarcomere segment, leading to local ischemia and accumulation of waste products such as lactic acid, which sensitizes nerves and causes pain.",
     "clinical_application": "Massage therapy improves local circulation and helps clear metabolic byproducts to reduce trigger point irritability.",
     "source_reference": "Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,9 +212,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ischemia", "metabolic waste", "physiology"],
-    "keywords": ["oxygen deficiency", "tissue congestion", "pain chemistry"],
-    "synonyms": ["hypoxia", "biochemical irritation"]
+    "tags": [
+      "ischemia",
+      "metabolic waste",
+      "physiology"
+    ],
+    "keywords": [
+      "oxygen deficiency",
+      "tissue congestion",
+      "pain chemistry"
+    ],
+    "synonyms": [
+      "hypoxia",
+      "biochemical irritation"
+    ]
   },
   {
     "id": "trigger_points_007",
@@ -182,7 +242,6 @@
     "long_explanation": "In addition to localized and referred pain, trigger points can cause stiffness, limited ROM, weakness in affected muscles, and sometimes autonomic signs like sweating or redness.",
     "clinical_application": "Massage therapists should consider motor effects when evaluating muscular dysfunction caused by trigger points.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -191,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["symptoms", "ROM", "weakness"],
-    "keywords": ["stiffness", "functional limitation", "motor dysfunction"],
-    "synonyms": ["limited ROM", "trigger point weakness"]
+    "tags": [
+      "symptoms",
+      "ROM",
+      "weakness"
+    ],
+    "keywords": [
+      "stiffness",
+      "functional limitation",
+      "motor dysfunction"
+    ],
+    "synonyms": [
+      "limited ROM",
+      "trigger point weakness"
+    ]
   },
   {
     "id": "trigger_points_008",
@@ -210,7 +280,6 @@
     "long_explanation": "Sustained postures, especially forward head or rounded shoulders, increase muscle strain and lead to trigger point formation in overused stabilizers like trapezius and sternocleidomastoid.",
     "clinical_application": "Postural education is key to preventing chronic trigger point reactivation after massage therapy.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "habit", "chronic"],
-    "keywords": ["forward head", "upper trap", "ergonomics"],
-    "synonyms": ["head-forward posture", "neck strain"]
+    "tags": [
+      "posture",
+      "habit",
+      "chronic"
+    ],
+    "keywords": [
+      "forward head",
+      "upper trap",
+      "ergonomics"
+    ],
+    "synonyms": [
+      "head-forward posture",
+      "neck strain"
+    ]
   },
   {
     "id": "trigger_points_009",
@@ -238,7 +318,6 @@
     "long_explanation": "Trigger points refer pain in consistent and predictable patterns, often illustrated in anatomical trigger point charts to guide assessment and treatment.",
     "clinical_application": "Massage therapists use referral maps to distinguish trigger point pain from nerve root or visceral pain.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -247,9 +326,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["assessment", "referral", "diagnostic tools"],
-    "keywords": ["pain map", "trigger chart", "referral pattern"],
-    "synonyms": ["pain pattern guide", "trigger chart"]
+    "tags": [
+      "assessment",
+      "referral",
+      "diagnostic tools"
+    ],
+    "keywords": [
+      "pain map",
+      "trigger chart",
+      "referral pattern"
+    ],
+    "synonyms": [
+      "pain pattern guide",
+      "trigger chart"
+    ]
   },
   {
     "id": "trigger_points_010",
@@ -266,7 +356,6 @@
     "long_explanation": "Chronic stress and pain increase sympathetic activity, contributing to muscle tension, vasoconstriction, and sustained trigger point irritability.",
     "clinical_application": "Massage therapists use calming techniques like diaphragmatic breathing and slow pressure to reduce sympathetic dominance.",
     "source_reference": "Principles of Manual Medicine, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_points.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -275,8 +364,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sympathetic", "stress", "nervous system"],
-    "keywords": ["fight-or-flight", "stress response", "autonomic"],
-    "synonyms": ["stress system", "autonomic trigger link"]
+    "tags": [
+      "sympathetic",
+      "stress",
+      "nervous system"
+    ],
+    "keywords": [
+      "fight-or-flight",
+      "stress response",
+      "autonomic"
+    ],
+    "synonyms": [
+      "stress system",
+      "autonomic trigger link"
+    ]
   }
 ]

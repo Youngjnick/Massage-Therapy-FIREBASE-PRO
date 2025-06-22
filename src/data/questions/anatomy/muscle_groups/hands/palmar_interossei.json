@@ -3,13 +3,17 @@
     "id": "palmar_interossei_001",
     "correctAnswer": "3",
     "question": "How many palmar interossei muscles are present in the human hand?",
-    "options": ["2", "3", "4", "5"],
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "palmar_interossei"],
     "short_explanation": "There are three palmar interossei muscles in the hand.",
     "long_explanation": "The hand contains three palmar interossei muscles located on the ulnar side of the second metacarpal and radial sides of the fourth and fifth metacarpals. They adduct the fingers toward the third digit.",
     "clinical_application": "Massage therapists addressing fine motor dysfunctions can target these muscles to help improve precision grip.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "easy",
@@ -18,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palmar interossei", "adduction", "hand muscles"],
-    "keywords": ["palmar", "interossei", "hand", "adduction"],
+    "tags": [
+      "palmar interossei",
+      "adduction",
+      "hand muscles"
+    ],
+    "keywords": [
+      "palmar",
+      "interossei",
+      "hand",
+      "adduction"
+    ],
     "synonyms": null
   },
   {
@@ -37,7 +50,6 @@
     "long_explanation": "The palmar interossei muscles bring the index, ring, and little fingers toward the midline (third digit), stabilizing the hand during grasping.",
     "clinical_application": "Understanding finger adduction can help in treating overuse syndromes like writer's cramp.",
     "source_reference": "Kinesiology of the Musculoskeletal System – Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "easy",
@@ -46,8 +58,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["finger adduction", "interossei", "muscle action"],
-    "keywords": ["muscle", "hand", "adduct", "interossei"],
+    "tags": [
+      "finger adduction",
+      "interossei",
+      "muscle action"
+    ],
+    "keywords": [
+      "muscle",
+      "hand",
+      "adduct",
+      "interossei"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +86,6 @@
     "long_explanation": "Palmar interossei insert on the medial (ulnar) or lateral (radial) side of the base of the proximal phalanges and into the extensor expansion of fingers 2, 4, and 5.",
     "clinical_application": "Precise palpation and mobilization can help treat limited MCP joint mobility related to interossei insertion points.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "medium",
@@ -74,8 +94,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["insertions", "phalanges", "extensor expansion"],
-    "keywords": ["hand", "interossei", "anatomy"],
+    "tags": [
+      "insertions",
+      "phalanges",
+      "extensor expansion"
+    ],
+    "keywords": [
+      "hand",
+      "interossei",
+      "anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +121,6 @@
     "long_explanation": "The palmar interossei are innervated by the deep branch of the ulnar nerve, which is crucial for intrinsic hand movements including finger adduction and MCP flexion.",
     "clinical_application": "In ulnar nerve entrapment, adduction weakness is often seen due to interossei involvement.",
     "source_reference": "Clinically Oriented Anatomy – Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "medium",
@@ -102,21 +129,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "innervation", "hand"],
-    "keywords": ["nerve", "interossei", "motor function"],
+    "tags": [
+      "ulnar nerve",
+      "innervation",
+      "hand"
+    ],
+    "keywords": [
+      "nerve",
+      "interossei",
+      "motor function"
+    ],
     "synonyms": null
   },
   {
     "id": "palmar_interossei_005",
     "correctAnswer": "Flexion",
     "question": "What is the function of the palmar interossei at the MCP joints?",
-    "options": ["Extension", "Abduction", "Flexion", "Lateral rotation"],
+    "options": [
+      "Extension",
+      "Abduction",
+      "Flexion",
+      "Lateral rotation"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "palmar_interossei"],
     "short_explanation": "They assist in MCP joint flexion.",
     "long_explanation": "Palmar interossei flex the MCP joints and extend the IP joints via the extensor hood, contributing to complex finger mechanics.",
     "clinical_application": "Strengthening these muscles can help post-injury recovery in cases of grip weakness.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "medium",
@@ -125,8 +164,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["MCP joint", "flexion", "interossei"],
-    "keywords": ["flex", "interossei", "hand function"],
+    "tags": [
+      "MCP joint",
+      "flexion",
+      "interossei"
+    ],
+    "keywords": [
+      "flex",
+      "interossei",
+      "hand function"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +191,6 @@
     "long_explanation": "The middle finger serves as the midline reference for adduction/abduction and thus lacks a palmar interosseous muscle.",
     "clinical_application": "This fact is crucial for assessing intrinsic hand muscle integrity in neurological exams.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "hard",
@@ -153,8 +199,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["middle finger", "exceptions", "interossei"],
-    "keywords": ["digits", "interossei", "midline"],
+    "tags": [
+      "middle finger",
+      "exceptions",
+      "interossei"
+    ],
+    "keywords": [
+      "digits",
+      "interossei",
+      "midline"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +226,6 @@
     "long_explanation": "Palmar interossei and lumbricals insert into the extensor hood, where they assist in flexing the metacarpophalangeal joints and extending the interphalangeal joints.",
     "clinical_application": "This coordinated action is critical during precision grip and fine motor skills.",
     "source_reference": "Muscles: Testing and Function – Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "hard",
@@ -181,8 +234,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lumbricals", "interossei", "precision"],
-    "keywords": ["MCP", "IP", "muscle synergy"],
+    "tags": [
+      "lumbricals",
+      "interossei",
+      "precision"
+    ],
+    "keywords": [
+      "MCP",
+      "IP",
+      "muscle synergy"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +261,6 @@
     "long_explanation": "Ulnar nerve paralysis affects palmar interossei and lumbricals, leading to unopposed extension at MCP joints and flexion at IP joints in ulnar claw.",
     "clinical_application": "Massage therapy may help relieve compensatory muscle strain in the wrist and palm from altered hand posture.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "hard",
@@ -209,21 +269,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "claw hand", "paralysis"],
-    "keywords": ["nerve injury", "hand deformity", "interossei"],
+    "tags": [
+      "ulnar nerve",
+      "claw hand",
+      "paralysis"
+    ],
+    "keywords": [
+      "nerve injury",
+      "hand deformity",
+      "interossei"
+    ],
     "synonyms": null
   },
   {
     "id": "palmar_interossei_009",
     "correctAnswer": "Unipennate",
     "question": "What type of muscle architecture do palmar interossei exhibit?",
-    "options": ["Unipennate", "Bipennate", "Fusiform", "Parallel"],
+    "options": [
+      "Unipennate",
+      "Bipennate",
+      "Fusiform",
+      "Parallel"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "palmar_interossei"],
     "short_explanation": "They are unipennate muscles.",
     "long_explanation": "The palmar interossei are unipennate, meaning their muscle fibers run obliquely on one side of a central tendon, supporting precision in movement.",
     "clinical_application": "Unipennate architecture allows controlled fine motion — key in grasping therapies.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "medium",
@@ -232,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["unipennate", "muscle architecture", "hand"],
-    "keywords": ["muscle shape", "hand muscle", "pennation"],
+    "tags": [
+      "unipennate",
+      "muscle architecture",
+      "hand"
+    ],
+    "keywords": [
+      "muscle shape",
+      "hand muscle",
+      "pennation"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +331,6 @@
     "long_explanation": "Weakness in palmar interossei results in difficulty bringing the fingers toward the third digit, reducing grip strength and hand coordination.",
     "clinical_application": "Strength tests of finger adduction can guide rehabilitation exercises for patients with ulnar nerve damage.",
     "source_reference": "Kinesiology – Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/palmar_interossei.json",
     "question_type": null,
     "difficulty": "easy",
@@ -260,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["weakness", "finger adduction", "interossei"],
-    "keywords": ["muscle testing", "hand rehab", "adduction"],
+    "tags": [
+      "weakness",
+      "finger adduction",
+      "interossei"
+    ],
+    "keywords": [
+      "muscle testing",
+      "hand rehab",
+      "adduction"
+    ],
     "synonyms": null
   }
 ]

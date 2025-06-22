@@ -3,13 +3,17 @@
     "id": "ventricles_brain_001",
     "correctAnswer": "4",
     "question": "How many ventricles are present in the human brain?",
-    "options": ["2", "3", "4", "5"],
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
     "topics": ["anatomy", "organs", "brain", "ventricles_brain"],
     "short_explanation": "There are four ventricles: two lateral, one third, and one fourth.",
     "long_explanation": "The human brain has four interconnected ventricles filled with cerebrospinal fluid: two lateral ventricles (one in each hemisphere), the third ventricle, and the fourth ventricle.",
     "clinical_application": "Knowledge of ventricular anatomy is important when evaluating conditions like hydrocephalus in clinical practice.",
     "source_reference": "Netter's Atlas of Human Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -18,8 +22,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brain ventricles", "neuroanatomy", "CSF"],
-    "keywords": ["ventricles", "lateral", "third", "fourth", "CSF"],
+    "tags": [
+      "brain ventricles",
+      "neuroanatomy",
+      "CSF"
+    ],
+    "keywords": [
+      "ventricles",
+      "lateral",
+      "third",
+      "fourth",
+      "CSF"
+    ],
     "synonyms": null
   },
   {
@@ -37,7 +51,6 @@
     "long_explanation": "Each lateral ventricle is connected to the third ventricle via the interventricular foramen, also known as the foramen of Monro, allowing CSF to flow through the ventricular system.",
     "clinical_application": "Blockage at the foramen of Monro can cause hydrocephalus due to CSF accumulation in the lateral ventricles.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -46,8 +59,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["interventricular foramen", "foramen of Monro", "CSF flow"],
-    "keywords": ["ventricular system", "neuroanatomy", "CSF circulation"],
+    "tags": [
+      "interventricular foramen",
+      "foramen of Monro",
+      "CSF flow"
+    ],
+    "keywords": [
+      "ventricular system",
+      "neuroanatomy",
+      "CSF circulation"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +86,6 @@
     "long_explanation": "The third ventricle is a narrow midline cavity that lies between the right and left thalamus in the diencephalon, forming part of the CSF-filled ventricular system.",
     "clinical_application": "Swelling of the thalamus or tumor in the diencephalon can obstruct the third ventricle, affecting CSF flow.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -74,8 +94,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["third ventricle", "diencephalon", "thalamus"],
-    "keywords": ["ventricular system", "brain anatomy", "CSF circulation"],
+    "tags": [
+      "third ventricle",
+      "diencephalon",
+      "thalamus"
+    ],
+    "keywords": [
+      "ventricular system",
+      "brain anatomy",
+      "CSF circulation"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +121,6 @@
     "long_explanation": "The cerebral aqueduct (aqueduct of Sylvius) is a narrow channel in the midbrain that connects the third ventricle superiorly to the fourth ventricle inferiorly, allowing CSF flow.",
     "clinical_application": "Obstruction of the cerebral aqueduct is a common cause of non-communicating hydrocephalus.",
     "source_reference": "Neuroscience, Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -102,8 +129,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cerebral aqueduct", "ventricular flow", "midbrain"],
-    "keywords": ["brainstem", "CSF blockage", "aqueduct of Sylvius"],
+    "tags": [
+      "cerebral aqueduct",
+      "ventricular flow",
+      "midbrain"
+    ],
+    "keywords": [
+      "brainstem",
+      "CSF blockage",
+      "aqueduct of Sylvius"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +156,6 @@
     "long_explanation": "The fourth ventricle is a diamond-shaped cavity located in the hindbrain, nestled between the pons/medulla and cerebellum. It marks the continuation of the ventricular system into the central canal of the spinal cord.",
     "clinical_application": "Massage therapists working near the posterior neck and cranial base must be aware of underlying neurovascular and CSF-sensitive structures.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -130,8 +164,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fourth ventricle", "pons", "cerebellum"],
-    "keywords": ["ventricular system", "hindbrain", "posterior fossa"],
+    "tags": [
+      "fourth ventricle",
+      "pons",
+      "cerebellum"
+    ],
+    "keywords": [
+      "ventricular system",
+      "hindbrain",
+      "posterior fossa"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +191,6 @@
     "long_explanation": "CSF is a clear fluid produced by the choroid plexuses that circulates within the brain ventricles and subarachnoid space, providing cushioning and metabolic support.",
     "clinical_application": "Massage therapists should be cautious with clients with CSF flow disturbances, such as those with shunts or post-concussion symptoms.",
     "source_reference": "Neuroscience: Exploring the Brain",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -158,8 +199,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CSF", "ventricular fluid", "choroid plexus"],
-    "keywords": ["cerebrospinal fluid", "brain protection"],
+    "tags": [
+      "CSF",
+      "ventricular fluid",
+      "choroid plexus"
+    ],
+    "keywords": [
+      "cerebrospinal fluid",
+      "brain protection"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +225,6 @@
     "long_explanation": "The choroid plexuses are vascular networks found in all four ventricles that produce cerebrospinal fluid. They filter blood plasma into CSF.",
     "clinical_application": "Inflammation or infection of the choroid plexus can impair CSF production and balance.",
     "source_reference": "Netter's Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -186,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CSF production", "choroid plexus", "ventricles"],
-    "keywords": ["ventricular lining", "fluid balance", "neuroanatomy"],
+    "tags": [
+      "CSF production",
+      "choroid plexus",
+      "ventricles"
+    ],
+    "keywords": [
+      "ventricular lining",
+      "fluid balance",
+      "neuroanatomy"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +260,6 @@
     "long_explanation": "Hydrocephalus results from an imbalance between CSF production and absorption, leading to increased intracranial pressure. It may be due to obstruction, overproduction, or impaired absorption.",
     "clinical_application": "Therapists should avoid deep pressure on the cranium in clients with hydrocephalus or shunts.",
     "source_reference": "Pathophysiology, McCance & Huether",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -214,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hydrocephalus", "CSF imbalance", "ventricular swelling"],
-    "keywords": ["cerebral ventricles", "fluid accumulation", "ICP"],
+    "tags": [
+      "hydrocephalus",
+      "CSF imbalance",
+      "ventricular swelling"
+    ],
+    "keywords": [
+      "cerebral ventricles",
+      "fluid accumulation",
+      "ICP"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +295,6 @@
     "long_explanation": "After leaving the ventricles, CSF enters the subarachnoid space between the arachnoid and pia mater. It bathes the brain and spinal cord before being reabsorbed by arachnoid villi.",
     "clinical_application": "Inflammation here leads to meningitis, a condition therapists must screen for if symptoms like headache or neck stiffness are present.",
     "source_reference": "Neuroscience, Bear et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -242,8 +303,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["subarachnoid", "CSF circulation", "meninges"],
-    "keywords": ["arachnoid mater", "pia mater", "CSF flow"],
+    "tags": [
+      "subarachnoid",
+      "CSF circulation",
+      "meninges"
+    ],
+    "keywords": [
+      "arachnoid mater",
+      "pia mater",
+      "CSF flow"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +330,6 @@
     "long_explanation": "CSF exits the ventricular system through the two lateral foramina of Luschka and the median foramen of Magendie in the fourth ventricle, entering the subarachnoid space around the brain and spinal cord.",
     "clinical_application": "Blockage of these openings can lead to CSF accumulation and raised intracranial pressure.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/ventricles_brain.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -270,8 +338,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["foramina of Luschka", "foramen of Magendie", "CSF exit points"],
-    "keywords": ["ventricular outflow", "neuroanatomy", "CSF drainage"],
+    "tags": [
+      "foramina of Luschka",
+      "foramen of Magendie",
+      "CSF exit points"
+    ],
+    "keywords": [
+      "ventricular outflow",
+      "neuroanatomy",
+      "CSF drainage"
+    ],
     "synonyms": null
   }
 ]

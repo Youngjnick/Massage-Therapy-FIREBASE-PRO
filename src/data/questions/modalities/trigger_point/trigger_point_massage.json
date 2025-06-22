@@ -14,7 +14,6 @@
     "long_explanation": "Trigger point massage applies focused pressure to hyperirritable nodules in muscle tissue with the aim of reducing pain and restoring normal tissue function.",
     "clinical_application": "Therapists use trigger point therapy to reduce muscle tension, restore range of motion, and interrupt pain-referral patterns in clients with chronic or postural dysfunction.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger point", "pain relief", "manual therapy"],
-    "keywords": ["deactivation", "trigger points", "referred pain"],
-    "synonyms": ["trigger point release", "pain point deactivation"]
+    "tags": [
+      "trigger point",
+      "pain relief",
+      "manual therapy"
+    ],
+    "keywords": [
+      "deactivation",
+      "trigger points",
+      "referred pain"
+    ],
+    "synonyms": [
+      "trigger point release",
+      "pain point deactivation"
+    ]
   },
   {
     "id": "trigger_point_massage_002",
@@ -42,7 +52,6 @@
     "long_explanation": "Trigger points are sensitive, palpable nodules found within taut muscle fibers. They may refer pain locally or to distant sites when compressed.",
     "clinical_application": "Identifying and treating trigger points helps resolve postural issues and movement impairments.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,9 +60,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger point", "definition", "muscle nodule"],
-    "keywords": ["taut band", "myofascial trigger point"],
-    "synonyms": ["muscle knot", "pain point"]
+    "tags": [
+      "trigger point",
+      "definition",
+      "muscle nodule"
+    ],
+    "keywords": [
+      "taut band",
+      "myofascial trigger point"
+    ],
+    "synonyms": [
+      "muscle knot",
+      "pain point"
+    ]
   },
   {
     "id": "trigger_point_massage_003",
@@ -70,7 +89,6 @@
     "long_explanation": "A local twitch response is an involuntary contraction of the taut band, and reproduction of referred pain indicates successful engagement of the trigger point.",
     "clinical_application": "Therapists should monitor these signs to adjust pressure and confirm treatment accuracy.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,9 +97,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["twitch", "referred pain", "release"],
-    "keywords": ["local twitch", "neuromuscular response", "therapeutic sign"],
-    "synonyms": ["twitch sign", "pain referral"]
+    "tags": [
+      "twitch",
+      "referred pain",
+      "release"
+    ],
+    "keywords": [
+      "local twitch",
+      "neuromuscular response",
+      "therapeutic sign"
+    ],
+    "synonyms": [
+      "twitch sign",
+      "pain referral"
+    ]
   },
   {
     "id": "trigger_point_massage_004",
@@ -98,7 +127,6 @@
     "long_explanation": "Trigger points in the upper trapezius can refer pain to the side of the head, contributing to tension-type headaches or jaw discomfort.",
     "clinical_application": "Massage therapists can address headache complaints by assessing trigger points in cervical and shoulder musculature.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -107,9 +135,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["referred pain", "headache", "trapezius"],
-    "keywords": ["temporal referral", "trap trigger point", "head pain"],
-    "synonyms": ["trap referral", "temporal trigger"]
+    "tags": [
+      "referred pain",
+      "headache",
+      "trapezius"
+    ],
+    "keywords": [
+      "temporal referral",
+      "trap trigger point",
+      "head pain"
+    ],
+    "synonyms": [
+      "trap referral",
+      "temporal trigger"
+    ]
   },
   {
     "id": "trigger_point_massage_005",
@@ -126,7 +165,6 @@
     "long_explanation": "Direct ischemic compression involves applying steady, firm pressure to the trigger point until it softens or pain decreases. Pressure is held for 20–60 seconds.",
     "clinical_application": "Therapists monitor client feedback closely during this technique to avoid overstimulation.",
     "source_reference": "Clinical Massage Therapy, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,9 +173,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ischemic compression", "pressure", "manual technique"],
-    "keywords": ["sustained pressure", "trigger therapy", "manual release"],
-    "synonyms": ["ischemic compression", "static pressure"]
+    "tags": [
+      "ischemic compression",
+      "pressure",
+      "manual technique"
+    ],
+    "keywords": [
+      "sustained pressure",
+      "trigger therapy",
+      "manual release"
+    ],
+    "synonyms": [
+      "ischemic compression",
+      "static pressure"
+    ]
   },
   {
     "id": "trigger_point_massage_006",
@@ -154,7 +203,6 @@
     "long_explanation": "Successful trigger point release often results in reduced pain, decreased local tenderness, increased range of motion, and a palpable softening of the taut band.",
     "clinical_application": "Therapists should assess client comfort and tissue texture changes during and after treatment to confirm effectiveness.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,9 +211,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["release", "trigger point", "results"],
-    "keywords": ["palpation", "tissue softening", "treatment outcome"],
-    "synonyms": ["trigger point softened", "reduced tenderness"]
+    "tags": [
+      "release",
+      "trigger point",
+      "results"
+    ],
+    "keywords": [
+      "palpation",
+      "tissue softening",
+      "treatment outcome"
+    ],
+    "synonyms": [
+      "trigger point softened",
+      "reduced tenderness"
+    ]
   },
   {
     "id": "trigger_point_massage_007",
@@ -182,7 +241,6 @@
     "long_explanation": "Guiding clients to breathe deeply and steadily during sustained pressure reduces sympathetic tension, supports nervous system regulation, and eases discomfort during release.",
     "clinical_application": "Using breath as a regulatory tool during painful work improves tolerance and effectiveness of trigger point therapy.",
     "source_reference": "Clinical Massage Therapy, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -191,9 +249,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["breathing", "trigger point", "parasympathetic"],
-    "keywords": ["deep breath", "relaxation", "therapeutic cue"],
-    "synonyms": ["therapeutic breathing", "breath cue"]
+    "tags": [
+      "breathing",
+      "trigger point",
+      "parasympathetic"
+    ],
+    "keywords": [
+      "deep breath",
+      "relaxation",
+      "therapeutic cue"
+    ],
+    "synonyms": [
+      "therapeutic breathing",
+      "breath cue"
+    ]
   },
   {
     "id": "trigger_point_massage_008",
@@ -210,7 +279,6 @@
     "long_explanation": "Ischemic compression involves sustained pressure held for 20–60 seconds until the trigger point softens or pain diminishes. Excessive pressure or time can cause bruising or soreness.",
     "clinical_application": "Therapists must monitor tissue response and client feedback to determine optimal duration per site.",
     "source_reference": "Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,9 +287,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["timing", "trigger point", "ischemic compression"],
-    "keywords": ["hold time", "manual pressure", "treatment duration"],
-    "synonyms": ["trigger point duration", "compression time"]
+    "tags": [
+      "timing",
+      "trigger point",
+      "ischemic compression"
+    ],
+    "keywords": [
+      "hold time",
+      "manual pressure",
+      "treatment duration"
+    ],
+    "synonyms": [
+      "trigger point duration",
+      "compression time"
+    ]
   },
   {
     "id": "trigger_point_massage_009",
@@ -238,7 +317,6 @@
     "long_explanation": "Active trigger points cause pain at rest, while latent ones are only painful when pressed. Active points may also refer pain in predictable patterns without stimulation.",
     "clinical_application": "Massage therapists assess for active points during intake and palpation to guide therapeutic focus.",
     "source_reference": "Travell & Simons’ Myofascial Pain and Dysfunction, Vol. 1",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -247,9 +325,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger types", "pain", "assessment"],
-    "keywords": ["active trigger point", "spontaneous pain", "chronic"],
-    "synonyms": ["active pain point", "chronic trigger"]
+    "tags": [
+      "trigger types",
+      "pain",
+      "assessment"
+    ],
+    "keywords": [
+      "active trigger point",
+      "spontaneous pain",
+      "chronic"
+    ],
+    "synonyms": [
+      "active pain point",
+      "chronic trigger"
+    ]
   },
   {
     "id": "trigger_point_massage_010",
@@ -266,7 +355,6 @@
     "long_explanation": "After releasing trigger points, clients are often advised to hydrate, apply heat or gentle movement, and stretch the involved muscles to maintain gains and reduce post-session soreness.",
     "clinical_application": "Therapists should educate clients on proper aftercare to support tissue healing and prevent reactivation.",
     "source_reference": "The Trigger Point Therapy Workbook, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -275,8 +363,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aftercare", "trigger point", "stretching"],
-    "keywords": ["post-massage", "hydration", "self-care"],
-    "synonyms": ["trigger point aftercare", "client follow-up"]
+    "tags": [
+      "aftercare",
+      "trigger point",
+      "stretching"
+    ],
+    "keywords": [
+      "post-massage",
+      "hydration",
+      "self-care"
+    ],
+    "synonyms": [
+      "trigger point aftercare",
+      "client follow-up"
+    ]
   }
 ]

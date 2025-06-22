@@ -3,18 +3,17 @@
     "id": "cnx_nerve_innervations_001",
     "correctAnswer": "Digestive",
     "question": "Which major organ system is most extensively innervated by the vagus nerve (CN X)?",
-    "options": ["Digestive", "Urinary", "Musculoskeletal", "Endocrine"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
+    "options": [
+      "Digestive",
+      "Urinary",
+      "Musculoskeletal",
+      "Endocrine"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "CN X provides extensive parasympathetic innervation to the digestive tract.",
     "long_explanation": "The vagus nerve innervates the gastrointestinal tract from the esophagus down to the transverse colon. It regulates motility, secretions, and visceral sensation.",
     "clinical_application": "Vagal stimulation may influence digestion and is considered in treatments for gut motility disorders and vagal tone regulation in massage therapy.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,7 +22,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vagus nerve", "CN X", "parasympathetic", "GI tract"],
+    "tags": [
+      "vagus nerve",
+      "CN X",
+      "parasympathetic",
+      "GI tract"
+    ],
     "keywords": [
       "autonomic nervous system",
       "gut-brain axis",
@@ -41,17 +45,11 @@
       "Omohyoid",
       "Sternothyroid"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "The recurrent laryngeal nerve innervates most intrinsic laryngeal muscles including the posterior cricoarytenoid.",
     "long_explanation": "All intrinsic muscles of the larynx are innervated by the recurrent laryngeal nerve, a branch of CN X, except the cricothyroid which is supplied by the external branch of the superior laryngeal nerve.",
     "clinical_application": "Damage to the recurrent laryngeal nerve can lead to hoarseness, a concern in thyroid or neck surgeries.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -60,7 +58,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["recurrent laryngeal", "larynx", "CN X"],
+    "tags": [
+      "recurrent laryngeal",
+      "larynx",
+      "CN X"
+    ],
     "keywords": [
       "voice box nerves",
       "vocal cord innervation",
@@ -72,18 +74,17 @@
     "id": "cnx_nerve_innervations_003",
     "correctAnswer": "CN X",
     "question": "Which cranial nerve carries parasympathetic fibers to the heart?",
-    "options": ["CN IX", "CN X", "CN XI", "CN VII"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
+    "options": [
+      "CN IX",
+      "CN X",
+      "CN XI",
+      "CN VII"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "The vagus nerve decreases heart rate via parasympathetic fibers.",
     "long_explanation": "CN X innervates the heart via cardiac branches that slow heart rate and reduce contractility through cholinergic signals.",
     "clinical_application": "Techniques like vagal breathing or massage near the carotid sinus can enhance vagal tone and reduce stress-related cardiac symptoms.",
     "source_reference": "Principles of Neural Science by Kandel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -92,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CN X", "heart", "parasympathetic"],
-    "keywords": ["vagal tone", "cardiac innervation", "rest and digest"],
+    "tags": [
+      "CN X",
+      "heart",
+      "parasympathetic"
+    ],
+    "keywords": [
+      "vagal tone",
+      "cardiac innervation",
+      "rest and digest"
+    ],
     "synonyms": null
   },
   {
@@ -106,17 +115,11 @@
       "Foramen spinosum",
       "Foramen rotundum"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "CN X exits through the jugular foramen along with CN IX and XI.",
     "long_explanation": "The jugular foramen is a key opening at the base of the skull allowing passage of major cranial nerves and veins. It’s clinically relevant in evaluating lesions or compressions near the brainstem.",
     "clinical_application": "Palpation of neck and skull base in massage or craniosacral therapy considers nerve exits like the jugular foramen.",
     "source_reference": "Moore's Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -125,26 +128,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["jugular foramen", "skull exit", "CN X"],
-    "keywords": ["cranial nerve foramina", "brainstem anatomy"],
+    "tags": [
+      "jugular foramen",
+      "skull exit",
+      "CN X"
+    ],
+    "keywords": [
+      "cranial nerve foramina",
+      "brainstem anatomy"
+    ],
     "synonyms": null
   },
   {
     "id": "cnx_nerve_innervations_005",
     "correctAnswer": "Hoarseness",
     "question": "What is a common symptom of unilateral vagus nerve damage?",
-    "options": ["Facial paralysis", "Hoarseness", "Trismus", "Ptosis"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
+    "options": [
+      "Facial paralysis",
+      "Hoarseness",
+      "Trismus",
+      "Ptosis"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "CN X lesion often results in hoarseness due to vocal cord paralysis.",
     "long_explanation": "Unilateral damage to the vagus nerve or its recurrent laryngeal branch paralyzes the vocal cord on one side, leading to hoarseness and difficulty speaking.",
     "clinical_application": "Post-surgical massage near the neck requires awareness of vocal changes indicating nerve injury.",
     "source_reference": "Clinical Neurology by Aminoff",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -153,26 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vagus damage", "hoarseness", "vocal cord"],
-    "keywords": ["nerve lesion", "voice change", "CN X palsy"],
+    "tags": [
+      "vagus damage",
+      "hoarseness",
+      "vocal cord"
+    ],
+    "keywords": [
+      "nerve lesion",
+      "voice change",
+      "CN X palsy"
+    ],
     "synonyms": null
   },
   {
     "id": "cnx_nerve_innervations_006",
     "correctAnswer": "Descending colon",
     "question": "The vagus nerve provides visceral sensory innervation to all of the following except:",
-    "options": ["Esophagus", "Stomach", "Descending colon", "Trachea"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
+    "options": [
+      "Esophagus",
+      "Stomach",
+      "Descending colon",
+      "Trachea"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "The descending colon is innervated by the pelvic splanchnic nerves (S2–S4).",
     "long_explanation": "The vagus nerve supplies parasympathetic and visceral afferents to the GI tract up to the transverse colon. Beyond that, pelvic splanchnics take over.",
     "clinical_application": "Abdominal work in massage should account for vagal vs pelvic innervation zones when assessing autonomic tone.",
     "source_reference": "Human Physiology by Silverthorn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -181,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vagus territory", "GI tract", "colon innervation"],
-    "keywords": ["vagal boundary", "S2-S4", "gut-brain link"],
+    "tags": [
+      "vagus territory",
+      "GI tract",
+      "colon innervation"
+    ],
+    "keywords": [
+      "vagal boundary",
+      "S2-S4",
+      "gut-brain link"
+    ],
     "synonyms": null
   },
   {
@@ -195,17 +219,11 @@
       "Deep diaphragmatic breathing",
       "Jumping jacks"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "Slow, deep breathing enhances vagal tone.",
     "long_explanation": "The vagus nerve responds to diaphragmatic breathing by promoting parasympathetic activity. This reduces heart rate, blood pressure, and stress hormones.",
     "clinical_application": "Massage therapists often pair breathing cues with treatment to enhance parasympathetic shift and reduce client anxiety.",
     "source_reference": "Polyvagal Theory by Stephen Porges",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -214,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vagal tone", "breathing", "relaxation"],
-    "keywords": ["parasympathetic boost", "stress reduction", "CN X hacks"],
+    "tags": [
+      "vagal tone",
+      "breathing",
+      "relaxation"
+    ],
+    "keywords": [
+      "parasympathetic boost",
+      "stress reduction",
+      "CN X hacks"
+    ],
     "synonyms": null
   },
   {
@@ -228,17 +254,11 @@
       "Cricothyroid",
       "Lateral cricoarytenoid"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "Cricothyroid is the only laryngeal muscle innervated by the external branch of CN X.",
     "long_explanation": "The cricothyroid muscle adjusts tension in the vocal cords to modulate pitch. It’s innervated by the external branch of the superior laryngeal nerve.",
     "clinical_application": "High-pitched vocal difficulties may signal damage to this specific CN X branch — relevant in intubation injuries.",
     "source_reference": "Otolaryngology Clinics Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -247,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cricothyroid", "larynx", "external branch"],
-    "keywords": ["voice modulation", "vagus motor", "laryngeal pitch"],
+    "tags": [
+      "cricothyroid",
+      "larynx",
+      "external branch"
+    ],
+    "keywords": [
+      "voice modulation",
+      "vagus motor",
+      "laryngeal pitch"
+    ],
     "synonyms": null
   },
   {
@@ -261,17 +289,11 @@
       "Somatic and visceral",
       "Special sensory only"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "The vagus carries somatic, visceral, and parasympathetic fibers.",
     "long_explanation": "CN X is a mixed cranial nerve with sensory fibers to external ear, pharynx, thoracic and abdominal viscera, and motor and parasympathetic branches.",
     "clinical_application": "Understanding vagus nerve fiber types aids massage techniques addressing both pain and autonomic tone.",
     "source_reference": "Neuroscience by Purves",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -280,26 +302,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CN X fibers", "sensory motor mix"],
-    "keywords": ["mixed cranial nerve", "autonomic-somatic", "vagal structure"],
+    "tags": [
+      "CN X fibers",
+      "sensory motor mix"
+    ],
+    "keywords": [
+      "mixed cranial nerve",
+      "autonomic-somatic",
+      "vagal structure"
+    ],
     "synonyms": null
   },
   {
     "id": "cnx_nerve_innervations_010",
     "correctAnswer": "Nodose",
     "question": "Which ganglion is associated with sensory cell bodies of the vagus nerve?",
-    "options": ["Otic", "Nodose", "Ciliary", "Pterygopalatine"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cnx_nerve_innervations"
+    "options": [
+      "Otic",
+      "Nodose",
+      "Ciliary",
+      "Pterygopalatine"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnx_nerve_innervations"],
     "short_explanation": "The nodose (inferior) ganglion contains the visceral sensory cell bodies.",
     "long_explanation": "The nodose ganglion (inferior vagal ganglion) houses the pseudounipolar neurons responsible for visceral afferent transmission via the vagus nerve.",
     "clinical_application": "Massage of the neck near vagal trunks and associated ganglia may affect autonomic balance through sensory modulation.",
     "source_reference": "Clinical Neuroanatomy by Snell",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cnx_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -308,8 +336,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nodose ganglion", "vagus sensory", "CN X"],
-    "keywords": ["visceral afferents", "ganglia", "autonomic pathways"],
+    "tags": [
+      "nodose ganglion",
+      "vagus sensory",
+      "CN X"
+    ],
+    "keywords": [
+      "visceral afferents",
+      "ganglia",
+      "autonomic pathways"
+    ],
     "synonyms": null
   }
 ]

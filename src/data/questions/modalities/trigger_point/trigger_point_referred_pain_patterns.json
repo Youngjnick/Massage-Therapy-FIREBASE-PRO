@@ -9,16 +9,11 @@
       "Temporalis",
       "Levator scapulae"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Upper trapezius trigger points often refer to the temple.",
     "long_explanation": "The upper trapezius is a common site of trigger points that can refer pain to the lateral head and behind the eyes. This pain pattern is often mistaken for tension-type headaches or migraines.",
     "clinical_application": "Palpate along the upper fibers from the acromion to the neck. Use pincer or flat palpation to identify taut bands. Treat with sustained pressure or stripping massage to relieve headache symptoms.",
     "source_reference": "Travell and Simons’ Myofascial Pain and Dysfunction",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -27,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger point", "trapezius", "headache"],
+    "tags": [
+      "trigger point",
+      "trapezius",
+      "headache"
+    ],
     "keywords": [
       "upper trapezius",
       "tension headache",
@@ -45,16 +44,11 @@
       "Pronator teres",
       "Pectoralis minor"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Pectoralis minor trigger points can refer pain down the arm.",
     "long_explanation": "Trigger points in the pectoralis minor can compress the brachial plexus and mimic neurovascular symptoms such as numbness or tingling in the hand, similar to carpal tunnel syndrome.",
     "clinical_application": "Palpate deep under the pectoralis major near the coracoid process. Gentle sustained pressure or active release techniques help restore function and relieve distal referral symptoms.",
     "source_reference": "Travell and Simons’ Myofascial Pain and Dysfunction",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -63,7 +57,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger point", "pec minor", "carpal tunnel mimic"],
+    "tags": [
+      "trigger point",
+      "pec minor",
+      "carpal tunnel mimic"
+    ],
     "keywords": [
       "pectoralis minor",
       "brachial plexus",
@@ -82,16 +80,11 @@
       "Medial knee",
       "Low back"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Gluteus minimus refers pain along the lateral leg.",
     "long_explanation": "The gluteus minimus trigger points often mimic sciatica, referring sharp pain down the lateral thigh toward the knee or calf, especially during prolonged standing or weight-bearing.",
     "clinical_application": "With the client side-lying, palpate just inferior and anterior to the gluteus medius. Use ischemic compression followed by myofascial elongation techniques.",
     "source_reference": "Trigger Point Therapy Workbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -100,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger point", "gluteus minimus", "sciatica mimic"],
-    "keywords": ["gluteus minimus", "lateral leg pain", "sciatica referral"],
+    "tags": [
+      "trigger point",
+      "gluteus minimus",
+      "sciatica mimic"
+    ],
+    "keywords": [
+      "gluteus minimus",
+      "lateral leg pain",
+      "sciatica referral"
+    ],
     "synonyms": null
   },
   {
@@ -114,16 +115,11 @@
       "Neck and jaw",
       "Medial forearm and hand"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Infraspinatus refers pain to the anterior shoulder and arm.",
     "long_explanation": "Infraspinatus trigger points can cause a deep, aching pain in the anterior deltoid and may radiate down the lateral arm, mimicking a C5-C6 radiculopathy or rotator cuff pathology.",
     "clinical_application": "Have the client prone or seated. Palpate the infraspinous fossa, locating taut bands near the lateral border of the scapula. Trigger point pressure release or active movement release is highly effective.",
     "source_reference": "Clinical Trigger Point Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -132,25 +128,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["infraspinatus", "shoulder pain", "trigger point"],
-    "keywords": ["infraspinatus", "anterior deltoid", "arm referral"],
+    "tags": [
+      "infraspinatus",
+      "shoulder pain",
+      "trigger point"
+    ],
+    "keywords": [
+      "infraspinatus",
+      "anterior deltoid",
+      "arm referral"
+    ],
     "synonyms": null
   },
   {
     "id": "trigger_point_referred_pain_patterns_005",
     "correctAnswer": "Masseter",
     "question": "Which muscle's trigger points often cause pain around the eye and jaw, sometimes mistaken for dental issues?",
-    "options": ["Temporalis", "Masseter", "Platysma", "Frontalis"],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
+    "options": [
+      "Temporalis",
+      "Masseter",
+      "Platysma",
+      "Frontalis"
     ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Masseter trigger points can mimic dental or sinus pain.",
     "long_explanation": "The masseter refers pain to the lower jaw, teeth, and sometimes the area around the eye. It can contribute to TMJ dysfunction and headaches when tight or overloaded from bruxism or stress.",
     "clinical_application": "Palpate intraorally or externally along the jawline. Apply static pressure to taut bands while guiding the client in jaw movements to release tension and restore alignment.",
     "source_reference": "Travell and Simons’ Myofascial Pain and Dysfunction",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -159,8 +163,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["masseter", "TMJ", "jaw pain", "trigger point"],
-    "keywords": ["masseter", "dental pain", "jaw referral", "bruxism"],
+    "tags": [
+      "masseter",
+      "TMJ",
+      "jaw pain",
+      "trigger point"
+    ],
+    "keywords": [
+      "masseter",
+      "dental pain",
+      "jaw referral",
+      "bruxism"
+    ],
     "synonyms": null
   },
   {
@@ -173,16 +187,11 @@
       "Piriformis",
       "Multifidus"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Piriformis referral can mimic sacroiliac or sciatic pain.",
     "long_explanation": "Piriformis trigger points often produce deep gluteal pain that can radiate to the sacrum, posterior thigh, and even down the leg, often confused with sciatica or SI joint dysfunction.",
     "clinical_application": "Palpate in sidelying or prone position, just medial to the greater trochanter. Use slow, deep pressure to access the piriformis and assess whether referral occurs down the leg.",
     "source_reference": "Trigger Point Therapy Workbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -191,8 +200,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["piriformis", "SI joint", "sciatica", "trigger point"],
-    "keywords": ["piriformis", "gluteal pain", "sacroiliac dysfunction"],
+    "tags": [
+      "piriformis",
+      "SI joint",
+      "sciatica",
+      "trigger point"
+    ],
+    "keywords": [
+      "piriformis",
+      "gluteal pain",
+      "sacroiliac dysfunction"
+    ],
     "synonyms": null
   },
   {
@@ -205,16 +223,11 @@
       "Subscapularis",
       "Latissimus dorsi"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Pectoralis major referral may resemble angina.",
     "long_explanation": "Pectoralis major trigger points can refer pain across the chest and into the medial arm. This pattern may closely mimic angina or cardiac-related chest pain.",
     "clinical_application": "Palpate with client supine, applying flat palpation from the sternum toward the humerus. Be cautious and assess cardiac red flags when treating this region.",
     "source_reference": "Travell and Simons’ Myofascial Pain and Dysfunction",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -223,8 +236,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pectoralis major", "chest pain", "trigger point"],
-    "keywords": ["pectoral referral", "chest referral", "pseudo-angina"],
+    "tags": [
+      "pectoralis major",
+      "chest pain",
+      "trigger point"
+    ],
+    "keywords": [
+      "pectoral referral",
+      "chest referral",
+      "pseudo-angina"
+    ],
     "synonyms": null
   },
   {
@@ -237,16 +258,11 @@
       "Flexor digitorum superficialis",
       "Flexor pollicis brevis"
     ],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
-    ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Flexor digitorum superficialis is overused during typing.",
     "long_explanation": "Repetitive finger flexion during keyboard use can overload the flexor digitorum superficialis, leading to trigger points that may refer pain into the forearm and wrist.",
     "clinical_application": "Palpate the volar forearm in seated position. Identify taut bands with light to moderate pressure, and treat with cross-fiber friction or stripping massage.",
     "source_reference": "Clinical Trigger Point Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -255,25 +271,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["forearm", "typing", "trigger point"],
-    "keywords": ["flexor digitorum", "RSI", "typing pain"],
+    "tags": [
+      "forearm",
+      "typing",
+      "trigger point"
+    ],
+    "keywords": [
+      "flexor digitorum",
+      "RSI",
+      "typing pain"
+    ],
     "synonyms": null
   },
   {
     "id": "trigger_point_referred_pain_patterns_009",
     "correctAnswer": "Popliteus",
     "question": "Trigger points in which muscle may cause deep medial knee pain mistaken for a ligament injury?",
-    "options": ["Vastus lateralis", "Gracilis", "Sartorius", "Popliteus"],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
+    "options": [
+      "Vastus lateralis",
+      "Gracilis",
+      "Sartorius",
+      "Popliteus"
     ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Popliteus refers pain behind the knee and medially.",
     "long_explanation": "Trigger points in the popliteus muscle can cause localized pain in the posterior and medial knee region. This may be confused with MCL strain or meniscus injury.",
     "clinical_application": "With the client prone and knee flexed, palpate deeply just lateral to the tibial plateau. Apply deep pressure and assess for pain referral down the medial leg.",
     "source_reference": "Trigger Point Therapy Workbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -282,25 +306,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["popliteus", "knee pain", "trigger point"],
-    "keywords": ["posterior knee", "popliteus referral", "MCL mimic"],
+    "tags": [
+      "popliteus",
+      "knee pain",
+      "trigger point"
+    ],
+    "keywords": [
+      "posterior knee",
+      "popliteus referral",
+      "MCL mimic"
+    ],
     "synonyms": null
   },
   {
     "id": "trigger_point_referred_pain_patterns_010",
     "correctAnswer": "Suboccipitals",
     "question": "Trigger points in which of the following can contribute to chronic tension-type headaches and eye strain?",
-    "options": ["Occipitalis", "Suboccipitals", "Masseter", "Frontalis"],
-    "topics": [
-      "modalities",
-      "trigger_point",
-      "trigger_point_referred_pain_patterns"
+    "options": [
+      "Occipitalis",
+      "Suboccipitals",
+      "Masseter",
+      "Frontalis"
     ],
+    "topics": ["modalities", "trigger_point", "trigger_point_referred_pain_patterns"],
     "short_explanation": "Suboccipitals refer pain into the cranium and behind the eyes.",
     "long_explanation": "Suboccipital muscles are a frequent site of tension-type headache trigger points. These refer pain behind the eyes and into the top of the head due to their attachments at the skull base.",
     "clinical_application": "Client supine, cradle the head and use precise digital pressure under the occiput. Apply small circular compressions to release tension and test eye pressure referral.",
     "source_reference": "Travell and Simons’ Myofascial Pain and Dysfunction",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/trigger_point/trigger_point_referred_pain_patterns.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -309,8 +341,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["suboccipitals", "tension headache", "trigger point"],
-    "keywords": ["eye pain", "suboccipital trigger point", "cranial referral"],
+    "tags": [
+      "suboccipitals",
+      "tension headache",
+      "trigger point"
+    ],
+    "keywords": [
+      "eye pain",
+      "suboccipital trigger point",
+      "cranial referral"
+    ],
     "synonyms": null
   }
 ]

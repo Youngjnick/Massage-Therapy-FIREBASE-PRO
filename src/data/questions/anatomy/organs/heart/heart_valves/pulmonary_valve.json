@@ -14,7 +14,6 @@
     "long_explanation": "The pulmonary valve opens during right ventricular systole to allow deoxygenated blood to flow into the pulmonary artery, and it closes during diastole to prevent backflow into the right ventricle.",
     "clinical_application": "Pulmonary valve stenosis may reduce oxygen delivery and manifest as fatigue or cyanosis, especially during exercise.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary valve", "heart valve", "right ventricle"],
-    "keywords": ["valve", "pulmonary circulation", "semilunar"],
+    "tags": [
+      "pulmonary valve",
+      "heart valve",
+      "right ventricle"
+    ],
+    "keywords": [
+      "valve",
+      "pulmonary circulation",
+      "semilunar"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The pulmonary valve is situated between the right ventricle and the pulmonary artery, facilitating blood flow to the lungs.",
     "clinical_application": "Correct identification of heart valve locations is essential in auscultation and diagnosing murmurs.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,21 +57,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary valve", "valve position", "anatomy"],
-    "keywords": ["valve", "heart", "right ventricle", "pulmonary artery"],
+    "tags": [
+      "pulmonary valve",
+      "valve position",
+      "anatomy"
+    ],
+    "keywords": [
+      "valve",
+      "heart",
+      "right ventricle",
+      "pulmonary artery"
+    ],
     "synonyms": null
   },
   {
     "id": "pulmonary_valve_003",
     "correctAnswer": "S2",
     "question": "Which sound is associated with the closure of the pulmonary valve?",
-    "options": ["S1", "S2", "S3", "Opening snap"],
+    "options": [
+      "S1",
+      "S2",
+      "S3",
+      "Opening snap"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "pulmonary_valve"],
     "short_explanation": "S2 is created by closure of the aortic and pulmonary valves.",
     "long_explanation": "The second heart sound (S2) corresponds to the closure of the semilunar valves—pulmonary and aortic—marking the end of systole.",
     "clinical_application": "A split S2 sound may indicate pulmonary hypertension or delayed valve closure.",
     "source_reference": "Bates’ Guide to Physical Examination",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -74,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "semilunar valves", "pulmonary valve"],
-    "keywords": ["heart sounds", "auscultation", "semilunar"],
+    "tags": [
+      "S2",
+      "semilunar valves",
+      "pulmonary valve"
+    ],
+    "keywords": [
+      "heart sounds",
+      "auscultation",
+      "semilunar"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +120,6 @@
     "long_explanation": "When the pulmonary valve is narrowed, the right ventricle must work harder to push blood through, leading to hypertrophy and possibly right heart failure.",
     "clinical_application": "Massage therapists may notice fatigue, cyanosis, or jugular distension in clients with this condition.",
     "source_reference": "Lilly’s Pathophysiology of Heart Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -102,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary stenosis", "hypertrophy", "valve disorder"],
-    "keywords": ["right heart", "valvular disease", "congenital"],
+    "tags": [
+      "pulmonary stenosis",
+      "hypertrophy",
+      "valve disorder"
+    ],
+    "keywords": [
+      "right heart",
+      "valvular disease",
+      "congenital"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +155,6 @@
     "long_explanation": "Pulmonary regurgitation occurs when the valve fails to close properly during diastole, allowing blood to leak back into the right ventricle.",
     "clinical_application": "It may cause a decrescendo diastolic murmur and symptoms of right heart failure.",
     "source_reference": "Guyton & Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -130,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary regurgitation", "valvular incompetence", "diastole"],
-    "keywords": ["backflow", "valve failure", "heart murmur"],
+    "tags": [
+      "pulmonary regurgitation",
+      "valvular incompetence",
+      "diastole"
+    ],
+    "keywords": [
+      "backflow",
+      "valve failure",
+      "heart murmur"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +190,6 @@
     "long_explanation": "Congenital heart defects commonly affect the pulmonary valve, leading to obstruction and cyanotic symptoms in infancy or childhood.",
     "clinical_application": "Massage practitioners working with pediatric clients should be aware of congenital murmurs and cardiologist follow-up.",
     "source_reference": "Nelson Textbook of Pediatrics",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -158,8 +198,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["congenital", "pulmonary valve", "cardiac defects"],
-    "keywords": ["valve", "congenital", "stenosis", "pediatrics"],
+    "tags": [
+      "congenital",
+      "pulmonary valve",
+      "cardiac defects"
+    ],
+    "keywords": [
+      "valve",
+      "congenital",
+      "stenosis",
+      "pediatrics"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +226,6 @@
     "long_explanation": "The pulmonary valve is auscultated at the left second intercostal space, adjacent to the sternum.",
     "clinical_application": "Practitioners can identify abnormal heart sounds such as murmurs or splits by auscultating this area.",
     "source_reference": "Bates’ Guide to Physical Examination",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -186,8 +234,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["auscultation", "pulmonary valve", "intercostal space"],
-    "keywords": ["left upper sternal", "heart sound", "valve"],
+    "tags": [
+      "auscultation",
+      "pulmonary valve",
+      "intercostal space"
+    ],
+    "keywords": [
+      "left upper sternal",
+      "heart sound",
+      "valve"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +261,6 @@
     "long_explanation": "During embryogenesis, the truncus arteriosus divides to form the aorta and pulmonary trunk, giving rise to their respective semilunar valves.",
     "clinical_application": "Knowledge of development helps explain congenital abnormalities like persistent truncus.",
     "source_reference": "Langman’s Medical Embryology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -214,8 +269,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["embryology", "pulmonary valve", "development"],
-    "keywords": ["truncus arteriosus", "semilunar valve", "congenital"],
+    "tags": [
+      "embryology",
+      "pulmonary valve",
+      "development"
+    ],
+    "keywords": [
+      "truncus arteriosus",
+      "semilunar valve",
+      "congenital"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +296,6 @@
     "long_explanation": "A loud pulmonary component (P2) of the second heart sound is a hallmark sign of pulmonary hypertension and strain on the valve.",
     "clinical_application": "Massage therapists should refer clients with exertional dyspnea and loud P2 for cardiovascular evaluation.",
     "source_reference": "Lilly’s Pathophysiology of Heart Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -242,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["P2", "pulmonary hypertension", "valvular sound"],
-    "keywords": ["heart sound", "hypertension", "auscultation"],
+    "tags": [
+      "P2",
+      "pulmonary hypertension",
+      "valvular sound"
+    ],
+    "keywords": [
+      "heart sound",
+      "hypertension",
+      "auscultation"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +331,6 @@
     "long_explanation": "The pulmonary and aortic valves are semilunar valves with similar anatomy, each containing three cusps and functioning to prevent backflow during diastole.",
     "clinical_application": "Understanding semilunar valve mechanics helps with identifying murmurs from either outflow tract.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/pulmonary_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -270,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["semilunar valves", "pulmonary valve", "aortic valve"],
-    "keywords": ["valve structure", "cusps", "outflow valves"],
+    "tags": [
+      "semilunar valves",
+      "pulmonary valve",
+      "aortic valve"
+    ],
+    "keywords": [
+      "valve structure",
+      "cusps",
+      "outflow valves"
+    ],
     "synonyms": null
   }
 ]

@@ -3,17 +3,17 @@
     "id": "sweat_glands_001",
     "correctAnswer": "Eccrine",
     "question": "Which type of sweat gland is most numerous in the human body?",
-    "options": ["Apocrine", "Sebaceous", "Eccrine", "Ceruminous"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Apocrine",
+      "Sebaceous",
+      "Eccrine",
+      "Ceruminous"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Eccrine glands are the most abundant.",
     "long_explanation": "Eccrine sweat glands are found all over the body and play a primary role in thermoregulation.",
     "clinical_application": "Massage therapists may observe active eccrine sweating on palms or soles during stress.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -22,9 +22,19 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": ["eccrine", "sweat", "glands"],
-    "keywords": ["thermoregulation", "palms", "soles"],
-    "synonyms": ["merocrine"]
+    "tags": [
+      "eccrine",
+      "sweat",
+      "glands"
+    ],
+    "keywords": [
+      "thermoregulation",
+      "palms",
+      "soles"
+    ],
+    "synonyms": [
+      "merocrine"
+    ]
   },
   {
     "id": "sweat_glands_002",
@@ -36,16 +46,11 @@
       "Into hair follicles",
       "Directly into lymph"
     ],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
-    ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Apocrine glands secrete into hair follicles.",
     "long_explanation": "Unlike eccrine glands, apocrine glands release their milky secretion into the upper part of the hair follicle.",
     "clinical_application": "Odor from body sweat is often linked to apocrine gland activity.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -54,25 +59,33 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": ["apocrine", "hair follicle"],
-    "keywords": ["gland opening", "skin appendages"],
-    "synonyms": ["scent glands"]
+    "tags": [
+      "apocrine",
+      "hair follicle"
+    ],
+    "keywords": [
+      "gland opening",
+      "skin appendages"
+    ],
+    "synonyms": [
+      "scent glands"
+    ]
   },
   {
     "id": "sweat_glands_003",
     "correctAnswer": "Apocrine",
     "question": "Which sweat glands become active at puberty?",
-    "options": ["Eccrine", "Apocrine", "Ceruminous", "Sebaceous"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Eccrine",
+      "Apocrine",
+      "Ceruminous",
+      "Sebaceous"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Apocrine glands activate during puberty.",
     "long_explanation": "Hormonal changes at puberty trigger apocrine gland function, especially in the axilla and groin.",
     "clinical_application": "Therapists should note apocrine activity in hormonal adolescents.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -81,9 +94,19 @@
     "relevance_score": 9.4,
     "created_at": null,
     "updated_at": null,
-    "tags": ["puberty", "apocrine", "hormonal"],
-    "keywords": ["armpit sweat", "pubescent", "axillary"],
-    "synonyms": ["scent glands"]
+    "tags": [
+      "puberty",
+      "apocrine",
+      "hormonal"
+    ],
+    "keywords": [
+      "armpit sweat",
+      "pubescent",
+      "axillary"
+    ],
+    "synonyms": [
+      "scent glands"
+    ]
   },
   {
     "id": "sweat_glands_004",
@@ -95,16 +118,11 @@
       "Temperature regulation",
       "Pheromone release"
     ],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
-    ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Eccrine glands regulate temperature via sweat evaporation.",
     "long_explanation": "Eccrine glands produce watery sweat that cools the body when it evaporates from the skin.",
     "clinical_application": "Thermoregulatory massage might activate or influence sweat output.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -113,25 +131,35 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": ["eccrine", "cooling", "sweat"],
-    "keywords": ["heat", "evaporation", "fluid"],
-    "synonyms": ["thermoregulation"]
+    "tags": [
+      "eccrine",
+      "cooling",
+      "sweat"
+    ],
+    "keywords": [
+      "heat",
+      "evaporation",
+      "fluid"
+    ],
+    "synonyms": [
+      "thermoregulation"
+    ]
   },
   {
     "id": "sweat_glands_005",
     "correctAnswer": "Apocrine",
     "question": "Which gland type contributes to body odor through bacterial action?",
-    "options": ["Sebaceous", "Eccrine", "Apocrine", "Mammary"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Sebaceous",
+      "Eccrine",
+      "Apocrine",
+      "Mammary"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Apocrine sweat, when broken down by bacteria, produces odor.",
     "long_explanation": "The thick, protein-rich secretion of apocrine glands provides a medium for bacterial growth, leading to body odor.",
     "clinical_application": "Clients may seek massage to manage stress-related apocrine overactivity.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -140,25 +168,34 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": ["body odor", "apocrine", "bacteria"],
-    "keywords": ["sweat smell", "axillary odor"],
-    "synonyms": ["scent gland"]
+    "tags": [
+      "body odor",
+      "apocrine",
+      "bacteria"
+    ],
+    "keywords": [
+      "sweat smell",
+      "axillary odor"
+    ],
+    "synonyms": [
+      "scent gland"
+    ]
   },
   {
     "id": "sweat_glands_006",
     "correctAnswer": "Eccrine",
     "question": "Which sweat glands are primarily found in the palms, soles, and forehead?",
-    "options": ["Apocrine", "Ceruminous", "Mammary", "Eccrine"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Apocrine",
+      "Ceruminous",
+      "Mammary",
+      "Eccrine"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Eccrine glands are dominant in these areas.",
     "long_explanation": "Eccrine glands are concentrated on the palms, soles, and forehead for efficient cooling and grip regulation.",
     "clinical_application": "Massage therapists often observe clammy hands/feet from eccrine activity.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -167,25 +204,34 @@
     "relevance_score": 9.4,
     "created_at": null,
     "updated_at": null,
-    "tags": ["eccrine", "distribution"],
-    "keywords": ["palms", "soles", "sweating"],
-    "synonyms": ["merocrine"]
+    "tags": [
+      "eccrine",
+      "distribution"
+    ],
+    "keywords": [
+      "palms",
+      "soles",
+      "sweating"
+    ],
+    "synonyms": [
+      "merocrine"
+    ]
   },
   {
     "id": "sweat_glands_007",
     "correctAnswer": "Ceruminous",
     "question": "Which sweat gland is modified to produce earwax?",
-    "options": ["Eccrine", "Sebaceous", "Ceruminous", "Apocrine"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Eccrine",
+      "Sebaceous",
+      "Ceruminous",
+      "Apocrine"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Ceruminous glands produce cerumen in the ear canal.",
     "long_explanation": "These specialized glands are located in the external auditory canal and help protect the ear from debris.",
     "clinical_application": "Massage around ears should avoid irritation of ceruminous glands.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -194,25 +240,35 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cerumen", "ear canal", "gland"],
-    "keywords": ["wax", "modified sweat", "auditory"],
-    "synonyms": ["earwax glands"]
+    "tags": [
+      "cerumen",
+      "ear canal",
+      "gland"
+    ],
+    "keywords": [
+      "wax",
+      "modified sweat",
+      "auditory"
+    ],
+    "synonyms": [
+      "earwax glands"
+    ]
   },
   {
     "id": "sweat_glands_008",
     "correctAnswer": "Eccrine",
     "question": "Which sweat glands are classified as merocrine glands?",
-    "options": ["Eccrine", "Apocrine", "Sebaceous", "Ceruminous"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Eccrine",
+      "Apocrine",
+      "Sebaceous",
+      "Ceruminous"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Eccrine glands use merocrine secretion (exocytosis).",
     "long_explanation": "Merocrine secretion involves exocytosis of sweat without loss of cytoplasm — a trait of eccrine glands.",
     "clinical_application": "Understanding this helps differentiate inflammatory risks in skin treatments.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -221,25 +277,33 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": ["merocrine", "exocytosis"],
-    "keywords": ["sweat mechanism", "eccrine"],
-    "synonyms": ["non-damaging secretion"]
+    "tags": [
+      "merocrine",
+      "exocytosis"
+    ],
+    "keywords": [
+      "sweat mechanism",
+      "eccrine"
+    ],
+    "synonyms": [
+      "non-damaging secretion"
+    ]
   },
   {
     "id": "sweat_glands_009",
     "correctAnswer": "Sympathetic",
     "question": "What kind of nervous control regulates sweat gland activity?",
-    "options": ["Somatic", "Parasympathetic", "Sympathetic", "Enteric"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Somatic",
+      "Parasympathetic",
+      "Sympathetic",
+      "Enteric"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Sweat glands are under sympathetic control.",
     "long_explanation": "Both eccrine and apocrine glands are controlled by the sympathetic nervous system, but via different neurotransmitters.",
     "clinical_application": "Massage can reduce sympathetic arousal and sweating.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -248,25 +312,35 @@
     "relevance_score": 9.4,
     "created_at": null,
     "updated_at": null,
-    "tags": ["autonomic", "sweat", "nervous system"],
-    "keywords": ["stress response", "cholinergic", "adrenergic"],
-    "synonyms": ["sweat control"]
+    "tags": [
+      "autonomic",
+      "sweat",
+      "nervous system"
+    ],
+    "keywords": [
+      "stress response",
+      "cholinergic",
+      "adrenergic"
+    ],
+    "synonyms": [
+      "sweat control"
+    ]
   },
   {
     "id": "sweat_glands_010",
     "correctAnswer": "Mammary",
     "question": "Which gland is responsible for milk secretion in the breasts?",
-    "options": ["Apocrine", "Mammary", "Sebaceous", "Ceruminous"],
-    "topics": [
-      "anatomy",
-      "muscle_fascia_and_connective_tissue",
-      "sweat_glands"
+    "options": [
+      "Apocrine",
+      "Mammary",
+      "Sebaceous",
+      "Ceruminous"
     ],
+    "topics": ["anatomy", "muscle_fascia_and_connective_tissue", "sweat_glands"],
     "short_explanation": "Mammary glands are modified apocrine glands.",
     "long_explanation": "Though functionally distinct, mammary glands are specialized sweat glands that secrete milk under hormonal regulation.",
     "clinical_application": "Understanding this helps avoid confusion with apocrine function in the axilla.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_fascia_and_connective_tissue/sweat_glands.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -275,8 +349,18 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": ["milk", "mammary", "glands"],
-    "keywords": ["lactation", "breast", "sweat derivative"],
-    "synonyms": ["modified apocrine"]
+    "tags": [
+      "milk",
+      "mammary",
+      "glands"
+    ],
+    "keywords": [
+      "lactation",
+      "breast",
+      "sweat derivative"
+    ],
+    "synonyms": [
+      "modified apocrine"
+    ]
   }
 ]

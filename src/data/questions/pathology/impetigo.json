@@ -14,7 +14,6 @@
     "long_explanation": "Impetigo is a superficial skin infection usually caused by *Staphylococcus aureus* or *Streptococcus pyogenes*.",
     "clinical_application": "Avoid massage in the presence of any impetigo lesions, as it is highly contagious.",
     "source_reference": "CDC, Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/impetigo.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -23,9 +22,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["infection", "bacteria", "skin"],
-    "keywords": ["staph", "strep", "bacterial skin infection"],
-    "synonyms": ["bacterial impetigo"]
+    "tags": [
+      "infection",
+      "bacteria",
+      "skin"
+    ],
+    "keywords": [
+      "staph",
+      "strep",
+      "bacterial skin infection"
+    ],
+    "synonyms": [
+      "bacterial impetigo"
+    ]
   },
   {
     "id": "impetigo_002",
@@ -42,7 +51,6 @@
     "long_explanation": "Impetigo frequently affects preschool and school-age children due to close contact and underdeveloped hygiene habits.",
     "clinical_application": "Be alert when working with children or parents reporting school outbreaks.",
     "source_reference": "American Academy of Dermatology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/impetigo.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -51,9 +59,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pediatric", "infection", "skin"],
-    "keywords": ["children", "school", "contagious"],
-    "synonyms": ["childhood skin infection"]
+    "tags": [
+      "pediatric",
+      "infection",
+      "skin"
+    ],
+    "keywords": [
+      "children",
+      "school",
+      "contagious"
+    ],
+    "synonyms": [
+      "childhood skin infection"
+    ]
   },
   {
     "id": "impetigo_003",
@@ -70,7 +88,6 @@
     "long_explanation": "Impetigo often begins as red sores that rupture and form a golden-yellow, sticky crust — particularly around the mouth and nose.",
     "clinical_application": "Lesions must be fully resolved before massage to prevent surface contamination and spread.",
     "source_reference": "CDC",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/impetigo.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -79,9 +96,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lesions", "crust", "skin signs"],
-    "keywords": ["honey crust", "nose rash", "facial sores"],
-    "synonyms": ["impetigo rash"]
+    "tags": [
+      "lesions",
+      "crust",
+      "skin signs"
+    ],
+    "keywords": [
+      "honey crust",
+      "nose rash",
+      "facial sores"
+    ],
+    "synonyms": [
+      "impetigo rash"
+    ]
   },
   {
     "id": "impetigo_004",
@@ -98,7 +125,6 @@
     "long_explanation": "Transmission occurs via skin-to-skin contact or contact with contaminated items like towels, linens, or toys.",
     "clinical_application": "Use disposable covers and disinfect surfaces if there's any suspicion of skin infection.",
     "source_reference": "FSMTB, Mayo Clinic",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/impetigo.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -107,9 +133,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["contagion", "skin contact", "infection spread"],
-    "keywords": ["direct contact", "surface contamination", "hygiene"],
-    "synonyms": ["contact infection"]
+    "tags": [
+      "contagion",
+      "skin contact",
+      "infection spread"
+    ],
+    "keywords": [
+      "direct contact",
+      "surface contamination",
+      "hygiene"
+    ],
+    "synonyms": [
+      "contact infection"
+    ]
   },
   {
     "id": "impetigo_005",
@@ -126,7 +162,6 @@
     "long_explanation": "Impetigo is typically treated with topical antibiotics like mupirocin or oral antibiotics in more widespread cases.",
     "clinical_application": "Clients on antibiotics should still wait until lesions are healed before returning to massage therapy.",
     "source_reference": "American Academy of Family Physicians",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/impetigo.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -135,8 +170,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["treatment", "antibiotic", "topical"],
-    "keywords": ["mupirocin", "amoxicillin", "bacterial treatment"],
-    "synonyms": ["skin infection medication"]
+    "tags": [
+      "treatment",
+      "antibiotic",
+      "topical"
+    ],
+    "keywords": [
+      "mupirocin",
+      "amoxicillin",
+      "bacterial treatment"
+    ],
+    "synonyms": [
+      "skin infection medication"
+    ]
   }
 ]

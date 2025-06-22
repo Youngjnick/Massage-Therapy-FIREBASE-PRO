@@ -14,7 +14,6 @@
     "long_explanation": "Located in the medial temporal lobe, the amygdala helps recognize emotional stimuli—especially fear—and initiate appropriate behavioral responses.",
     "clinical_application": "In massage clients with anxiety, understanding the amygdala's role in stress responses helps tailor relaxing treatments.",
     "source_reference": "Neuroscience: Exploring the Brain",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["amygdala", "fear", "emotional brain"],
-    "keywords": ["limbic system", "emotional memory", "fight-or-flight"],
+    "tags": [
+      "amygdala",
+      "fear",
+      "emotional brain"
+    ],
+    "keywords": [
+      "limbic system",
+      "emotional memory",
+      "fight-or-flight"
+    ],
     "synonyms": null
   },
   {
     "id": "amygdala_002",
     "correctAnswer": "Hypothalamus",
     "question": "Which structure does the amygdala communicate with to activate the stress response?",
-    "options": ["Cerebellum", "Medulla", "Hypothalamus", "Occipital lobe"],
+    "options": [
+      "Cerebellum",
+      "Medulla",
+      "Hypothalamus",
+      "Occipital lobe"
+    ],
     "topics": ["anatomy", "organs", "brain", "amygdala"],
     "short_explanation": "The amygdala activates the hypothalamus to initiate the HPA axis.",
     "long_explanation": "Through its connections to the hypothalamus, the amygdala activates the HPA axis, triggering cortisol release in response to fear.",
     "clinical_application": "Chronic stress from overactive amygdala-hypothalamic signaling may be mitigated by calming massage therapies.",
     "source_reference": "Principles of Neural Science",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["HPA axis", "hypothalamus", "cortisol"],
-    "keywords": ["amygdala stress", "fear signaling", "endocrine response"],
+    "tags": [
+      "HPA axis",
+      "hypothalamus",
+      "cortisol"
+    ],
+    "keywords": [
+      "amygdala stress",
+      "fear signaling",
+      "endocrine response"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "The limbic system regulates emotion, memory, and motivation. The amygdala plays a central role in fear and aggression.",
     "clinical_application": "Bodywork targeting relaxation may reduce sympathetic dominance in clients with overactive limbic processing.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "basic",
@@ -74,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["limbic", "emotion", "amygdala"],
-    "keywords": ["limbic system", "emotion center", "brain circuits"],
+    "tags": [
+      "limbic",
+      "emotion",
+      "amygdala"
+    ],
+    "keywords": [
+      "limbic system",
+      "emotion center",
+      "brain circuits"
+    ],
     "synonyms": null
   },
   {
     "id": "amygdala_004",
     "correctAnswer": "Fear",
     "question": "Which emotion is most directly associated with the amygdala?",
-    "options": ["Gratitude", "Fear", "Happiness", "Trust"],
+    "options": [
+      "Gratitude",
+      "Fear",
+      "Happiness",
+      "Trust"
+    ],
     "topics": ["anatomy", "organs", "brain", "amygdala"],
     "short_explanation": "Fear is primarily processed by the amygdala.",
     "long_explanation": "Neuroimaging studies show heightened amygdala activity during fear-based stimuli. It also stores fear-based emotional memories.",
     "clinical_application": "Clients with PTSD may show heightened amygdala responses—deep tissue may need to be modulated accordingly.",
     "source_reference": "DSM-5, Neurobiology of PTSD",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "basic",
@@ -97,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fear", "PTSD", "emotions"],
-    "keywords": ["fear center", "emotion circuits", "trauma response"],
+    "tags": [
+      "fear",
+      "PTSD",
+      "emotions"
+    ],
+    "keywords": [
+      "fear center",
+      "emotion circuits",
+      "trauma response"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +154,6 @@
     "long_explanation": "Patients with amygdala lesions often fail to recognize or react to threatening stimuli. This supports its role in emotional salience.",
     "clinical_application": "Massage for clients with neurological damage may require careful observation of emotional cues if fear processing is impaired.",
     "source_reference": "Case studies in Behavioral Neurology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -125,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["amygdala lesion", "fear response", "neuropsychology"],
-    "keywords": ["lesion behavior", "fear blunting", "brain injury"],
+    "tags": [
+      "amygdala lesion",
+      "fear response",
+      "neuropsychology"
+    ],
+    "keywords": [
+      "lesion behavior",
+      "fear blunting",
+      "brain injury"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +189,6 @@
     "long_explanation": "Emotionally charged events are remembered more vividly due to amygdala-hippocampal interplay. This strengthens memory consolidation.",
     "clinical_application": "Massage clients with trauma histories may retain emotional memory triggers. Therapists should maintain safe and grounded environments.",
     "source_reference": "Cognitive Neuroscience by Gazzaniga",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -153,21 +197,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["emotional memory", "hippocampus", "trauma"],
-    "keywords": ["memory storage", "emotion encoding", "amygdala-hippocampus"],
+    "tags": [
+      "emotional memory",
+      "hippocampus",
+      "trauma"
+    ],
+    "keywords": [
+      "memory storage",
+      "emotion encoding",
+      "amygdala-hippocampus"
+    ],
     "synonyms": null
   },
   {
     "id": "amygdala_007",
     "correctAnswer": "GABA",
     "question": "Which neurotransmitter modulates amygdala-driven fear responses?",
-    "options": ["GABA", "Acetylcholine", "Dopamine", "Serotonin"],
+    "options": [
+      "GABA",
+      "Acetylcholine",
+      "Dopamine",
+      "Serotonin"
+    ],
     "topics": ["anatomy", "organs", "brain", "amygdala"],
     "short_explanation": "GABA inhibits overactivation of the amygdala.",
     "long_explanation": "Inhibitory GABAergic interneurons modulate amygdala activity. Dysfunction in GABA signaling is linked to anxiety and panic disorders.",
     "clinical_application": "Massage may help stimulate parasympathetic and GABAergic tone to calm overexcited limbic systems.",
     "source_reference": "Neuropsychopharmacology: Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -176,7 +232,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["GABA", "anxiety", "amygdala inhibition"],
+    "tags": [
+      "GABA",
+      "anxiety",
+      "amygdala inhibition"
+    ],
     "keywords": [
       "GABA neurotransmitter",
       "fear modulation",
@@ -199,7 +259,6 @@
     "long_explanation": "Eye Movement Desensitization and Reprocessing (EMDR) integrates bilateral stimulation to dampen hyperactive emotional responses.",
     "clinical_application": "Massage therapists working with trauma-sensitive populations should be aware of EMDR as a complementary approach.",
     "source_reference": "EMDR Institute Resources",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -208,7 +267,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["EMDR", "PTSD", "amygdala"],
+    "tags": [
+      "EMDR",
+      "PTSD",
+      "amygdala"
+    ],
     "keywords": [
       "trauma healing",
       "emotional regulation",
@@ -231,7 +294,6 @@
     "long_explanation": "When triggered by fear or stress, the amygdala communicates with brainstem centers to initiate rapid heart rate, respiration, and muscle readiness.",
     "clinical_application": "Massage may reduce chronic sympathetic dominance by providing downregulation cues to the amygdala.",
     "source_reference": "Guyton & Hall Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -240,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sympathetic activation", "fight-or-flight", "amygdala"],
-    "keywords": ["ANS control", "heart rate", "autonomic arousal"],
+    "tags": [
+      "sympathetic activation",
+      "fight-or-flight",
+      "amygdala"
+    ],
+    "keywords": [
+      "ANS control",
+      "heart rate",
+      "autonomic arousal"
+    ],
     "synonyms": null
   },
   {
@@ -259,7 +329,6 @@
     "long_explanation": "The thalamus acts as a sensory relay center, delivering visual, auditory, and somatic signals directly to the amygdala for rapid emotional processing.",
     "clinical_application": "Touch input during massage may influence limbic appraisal when trauma associations are present.",
     "source_reference": "Fundamentals of Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/amygdala.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -268,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thalamus", "sensory input", "amygdala"],
-    "keywords": ["fear stimulus", "limbic relay", "emotional reflex"],
+    "tags": [
+      "thalamus",
+      "sensory input",
+      "amygdala"
+    ],
+    "keywords": [
+      "fear stimulus",
+      "limbic relay",
+      "emotional reflex"
+    ],
     "synonyms": null
   }
 ]

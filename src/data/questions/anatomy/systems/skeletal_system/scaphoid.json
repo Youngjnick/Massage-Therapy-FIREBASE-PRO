@@ -14,7 +14,6 @@
     "long_explanation": "The scaphoid lies in the proximal carpal row and articulates with the radius, trapezium, trapezoid, capitate, and lunate bones. It is the largest bone in the proximal row and critical for wrist motion.",
     "clinical_application": "Palpating the scaphoid is essential when evaluating clients with wrist pain or suspected fractures.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scaphoid", "carpal bones", "wrist anatomy"],
-    "keywords": ["proximal row", "lateral wrist", "anatomical snuffbox"],
+    "tags": [
+      "scaphoid",
+      "carpal bones",
+      "wrist anatomy"
+    ],
+    "keywords": [
+      "proximal row",
+      "lateral wrist",
+      "anatomical snuffbox"
+    ],
     "synonyms": null
   },
   {
     "id": "scaphoid_002",
     "correctAnswer": "Radius",
     "question": "Which bone does the scaphoid directly articulate with?",
-    "options": ["Pisiform", "Radius", "Ulna", "Hamate"],
+    "options": [
+      "Pisiform",
+      "Radius",
+      "Ulna",
+      "Hamate"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "scaphoid"],
     "short_explanation": "The scaphoid articulates directly with the radius on the lateral side of the wrist.",
     "long_explanation": "The scaphoid spans the proximal carpal row and forms part of the radiocarpal joint. It is a key stabilizer and transmits forces from the hand to the forearm.",
     "clinical_application": "Understanding its articulation helps massage therapists assess wrist alignment and joint mechanics during treatment.",
     "source_reference": "Clinically Oriented Anatomy – Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scaphoid articulation", "radius", "radiocarpal joint"],
-    "keywords": ["wrist joint", "bone contact", "stability"],
+    "tags": [
+      "scaphoid articulation",
+      "radius",
+      "radiocarpal joint"
+    ],
+    "keywords": [
+      "wrist joint",
+      "bone contact",
+      "stability"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "The anatomical snuffbox is a triangular depression on the lateral wrist bounded by the extensor tendons. Pain in this area often indicates a scaphoid fracture.",
     "clinical_application": "Palpation of the snuffbox is a common orthopedic test used to assess potential scaphoid injury in wrist trauma cases.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["snuffbox", "scaphoid fracture", "palpation"],
-    "keywords": ["wrist exam", "bony landmark", "orthopedic"],
+    "tags": [
+      "snuffbox",
+      "scaphoid fracture",
+      "palpation"
+    ],
+    "keywords": [
+      "wrist exam",
+      "bony landmark",
+      "orthopedic"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "The scaphoid receives blood primarily from branches of the radial artery entering distally. A fracture can disrupt flow to the proximal pole, risking non-union or necrosis.",
     "clinical_application": "Massage therapists must understand healing limitations when working with clients post-injury to avoid excessive pressure near the fracture site.",
     "source_reference": "Netter’s Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["avascular necrosis", "bone healing", "radial artery"],
-    "keywords": ["vascular supply", "fracture risk", "healing complications"],
+    "tags": [
+      "avascular necrosis",
+      "bone healing",
+      "radial artery"
+    ],
+    "keywords": [
+      "vascular supply",
+      "fracture risk",
+      "healing complications"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "The radial artery enters the scaphoid at its distal pole, which can compromise the vascularity of the proximal portion if fractured.",
     "clinical_application": "Knowledge of this supply aids in understanding healing timeframes and complications from ischemia.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -130,8 +162,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["radial artery", "scaphoid blood supply"],
-    "keywords": ["vascularization", "bone ischemia", "radial branch"],
+    "tags": [
+      "radial artery",
+      "scaphoid blood supply"
+    ],
+    "keywords": [
+      "vascularization",
+      "bone ischemia",
+      "radial branch"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +188,6 @@
     "long_explanation": "Radial deviation of the wrist causes the scaphoid to press against the radial styloid process, increasing mechanical stress and potential pain or injury.",
     "clinical_application": "Therapists assessing wrist pain during radial deviation should consider scaphoid stress or fracture.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -158,8 +196,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scaphoid", "radial deviation", "wrist motion"],
-    "keywords": ["mechanical stress", "carpal movement", "compression"],
+    "tags": [
+      "scaphoid",
+      "radial deviation",
+      "wrist motion"
+    ],
+    "keywords": [
+      "mechanical stress",
+      "carpal movement",
+      "compression"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +223,6 @@
     "long_explanation": "Tenderness in the anatomical snuffbox is highly suggestive of a scaphoid fracture, especially after a fall onto an outstretched hand (FOOSH).",
     "clinical_application": "Therapists should refer clients with persistent snuffbox pain after trauma for imaging.",
     "source_reference": "Clinically Oriented Anatomy – Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -186,8 +231,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scaphoid fracture", "clinical sign", "snuffbox"],
-    "keywords": ["diagnostic indicator", "orthopedic", "hand trauma"],
+    "tags": [
+      "scaphoid fracture",
+      "clinical sign",
+      "snuffbox"
+    ],
+    "keywords": [
+      "diagnostic indicator",
+      "orthopedic",
+      "hand trauma"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +258,6 @@
     "long_explanation": "As a bridging bone, the scaphoid plays a critical role in stabilizing wrist motion and distributing forces across both carpal rows.",
     "clinical_application": "Scaphoid injuries can disrupt wrist mechanics due to its central stabilizing role between rows.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -214,21 +266,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["carpal rows", "scaphoid bridge", "wrist stability"],
-    "keywords": ["carpal structure", "stabilizer", "hand motion"],
+    "tags": [
+      "carpal rows",
+      "scaphoid bridge",
+      "wrist stability"
+    ],
+    "keywords": [
+      "carpal structure",
+      "stabilizer",
+      "hand motion"
+    ],
     "synonyms": null
   },
   {
     "id": "scaphoid_009",
     "correctAnswer": "X-ray",
     "question": "Which imaging technique is most commonly used to confirm a suspected scaphoid fracture?",
-    "options": ["X-ray", "Ultrasound", "MRI", "CT scan"],
+    "options": [
+      "X-ray",
+      "Ultrasound",
+      "MRI",
+      "CT scan"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "scaphoid"],
     "short_explanation": "X-rays are typically the first imaging step for scaphoid fractures.",
     "long_explanation": "Initial diagnosis of a scaphoid fracture usually begins with a wrist X-ray, although early fractures may not be visible until days later, necessitating MRI or CT for confirmation.",
     "clinical_application": "Massage therapists should delay treatment over a suspected fracture site until diagnostic imaging rules out bone injury.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -237,8 +301,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scaphoid fracture", "imaging", "diagnosis"],
-    "keywords": ["x-ray", "MRI", "orthopedic"],
+    "tags": [
+      "scaphoid fracture",
+      "imaging",
+      "diagnosis"
+    ],
+    "keywords": [
+      "x-ray",
+      "MRI",
+      "orthopedic"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +328,6 @@
     "long_explanation": "Due to limited vascular supply, especially to the proximal pole, an untreated scaphoid fracture can lead to avascular necrosis, resulting in bone death and long-term dysfunction.",
     "clinical_application": "Therapists must be cautious and refer clients with suspected fractures to prevent complications like necrosis and loss of function.",
     "source_reference": "Netter’s Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/scaphoid.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -265,8 +336,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["avascular necrosis", "bone death", "scaphoid fracture"],
-    "keywords": ["vascular injury", "nonunion", "wrist complications"],
+    "tags": [
+      "avascular necrosis",
+      "bone death",
+      "scaphoid fracture"
+    ],
+    "keywords": [
+      "vascular injury",
+      "nonunion",
+      "wrist complications"
+    ],
     "synonyms": null
   }
 ]

@@ -14,7 +14,6 @@
     "long_explanation": "The quadriceps tendon transmits force from the quadriceps femoris to the patella, facilitating knee extension. It's distinct from the patellar tendon, which continues from the patella to the tibia.",
     "clinical_application": "Tension or strain in the quadriceps tendon can be treated with massage, stretching, and strengthening of surrounding structures.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["quadriceps", "tendon", "patella", "knee extension"],
-    "keywords": ["quadriceps tendon", "knee", "anatomy"],
+    "tags": [
+      "quadriceps",
+      "tendon",
+      "patella",
+      "knee extension"
+    ],
+    "keywords": [
+      "quadriceps tendon",
+      "knee",
+      "anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "The patellar tendon connects the patella to the tibial tuberosity and plays a critical role in transmitting force for knee extension. It's often called the patellar ligament due to bone-to-bone connection.",
     "clinical_application": "Tenderness here is common in Osgood-Schlatter disease, especially in adolescent athletes.",
     "source_reference": "Orthopedic Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["patellar tendon", "tibia", "knee"],
-    "keywords": ["tibial tuberosity", "patellar ligament", "knee"],
+    "tags": [
+      "patellar tendon",
+      "tibia",
+      "knee"
+    ],
+    "keywords": [
+      "tibial tuberosity",
+      "patellar ligament",
+      "knee"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +85,6 @@
     "long_explanation": "Pes anserinus is the conjoined insertion of sartorius, gracilis, and semitendinosus tendons on the medial tibia. It stabilizes the knee, especially during flexion and rotation.",
     "clinical_application": "Manual therapy targeting the pes anserine region can help with bursitis and medial knee pain.",
     "source_reference": "Clinical Orthopedic Manual Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pes anserinus", "semitendinosus", "knee"],
-    "keywords": ["medial knee", "tendon insertion", "bursitis"],
+    "tags": [
+      "pes anserinus",
+      "semitendinosus",
+      "knee"
+    ],
+    "keywords": [
+      "medial knee",
+      "tendon insertion",
+      "bursitis"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +120,6 @@
     "long_explanation": "The IT band originates from the tensor fasciae latae and gluteus maximus and provides lateral knee support. It inserts on Gerdy's tubercle of the tibia.",
     "clinical_application": "Massage, foam rolling, or myofascial release can relieve IT band syndrome.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["iliotibial band", "tensor fasciae latae", "knee"],
-    "keywords": ["lateral knee", "IT band", "tendon origin"],
+    "tags": [
+      "iliotibial band",
+      "tensor fasciae latae",
+      "knee"
+    ],
+    "keywords": [
+      "lateral knee",
+      "IT band",
+      "tendon origin"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "This small muscle and its tendon provide posterior support and control the initial flexion of the knee from full extension.",
     "clinical_application": "Trigger point therapy or massage to the popliteal region may aid those with posterior knee pain or mobility issues.",
     "source_reference": "Orthopedic Massage Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -135,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["popliteus", "unlocking", "knee flexion"],
-    "keywords": ["posterior knee", "flexion", "rotation"],
+    "tags": [
+      "popliteus",
+      "unlocking",
+      "knee flexion"
+    ],
+    "keywords": [
+      "posterior knee",
+      "flexion",
+      "rotation"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +190,6 @@
     "long_explanation": "Chronic stress leads to patellar tendinopathy, causing anterior knee pain especially during squatting or jumping.",
     "clinical_application": "Massage, eccentric loading, and friction therapy are common treatments for patellar tendinopathy.",
     "source_reference": "Sports Injury Guidebook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -163,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["patellar tendon", "jumper's knee", "overuse"],
-    "keywords": ["tendinopathy", "patellar pain", "massage treatment"],
+    "tags": [
+      "patellar tendon",
+      "jumper's knee",
+      "overuse"
+    ],
+    "keywords": [
+      "tendinopathy",
+      "patellar pain",
+      "massage treatment"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "It reinforces the posteromedial aspect of the knee and assists with knee flexion and internal rotation.",
     "clinical_application": "Manual therapy techniques for posterior knee stiffness often include semimembranosus work.",
     "source_reference": "Functional Kinesiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "hard",
@@ -191,8 +233,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["semimembranosus", "posterior knee", "ligament"],
-    "keywords": ["oblique popliteal ligament", "knee capsule"],
+    "tags": [
+      "semimembranosus",
+      "posterior knee",
+      "ligament"
+    ],
+    "keywords": [
+      "oblique popliteal ligament",
+      "knee capsule"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +259,6 @@
     "long_explanation": "It is part of the lateral hamstring and provides posterior and lateral support to the knee. It may become tight in cases of lateral knee pain.",
     "clinical_application": "Massage to the biceps femoris tendon can assist in cases of IT band syndrome or lateral hamstring tightness.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "hard",
@@ -219,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["biceps femoris", "fibular head", "hamstrings"],
-    "keywords": ["posterior thigh", "lateral knee", "tendon"],
+    "tags": [
+      "biceps femoris",
+      "fibular head",
+      "hamstrings"
+    ],
+    "keywords": [
+      "posterior thigh",
+      "lateral knee",
+      "tendon"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +294,6 @@
     "long_explanation": "As one of the pes anserinus group, the gracilis tendon supports dynamic movement and balance of the medial knee.",
     "clinical_application": "Massage therapists may focus on the gracilis in clients with tight inner thighs or medial knee discomfort.",
     "source_reference": "Muscle Testing and Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "hard",
@@ -247,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gracilis", "knee flexion", "medial rotation"],
-    "keywords": ["inner thigh", "tendon action", "medial support"],
+    "tags": [
+      "gracilis",
+      "knee flexion",
+      "medial rotation"
+    ],
+    "keywords": [
+      "inner thigh",
+      "tendon action",
+      "medial support"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +329,6 @@
     "long_explanation": "IT band syndrome involves inflammation of the distal IT band where it crosses the knee, often due to repetitive flexion-extension cycles.",
     "clinical_application": "Myofascial release and massage targeting the IT band can alleviate symptoms in active clients.",
     "source_reference": "Sports Injury Guidebook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/tendons/knee_tendons.json",
     "question_type": null,
     "difficulty": "hard",
@@ -275,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["IT band", "runners", "lateral knee pain"],
-    "keywords": ["cyclist injury", "friction syndrome", "massage therapy"],
+    "tags": [
+      "IT band",
+      "runners",
+      "lateral knee pain"
+    ],
+    "keywords": [
+      "cyclist injury",
+      "friction syndrome",
+      "massage therapy"
+    ],
     "synonyms": null
   }
 ]

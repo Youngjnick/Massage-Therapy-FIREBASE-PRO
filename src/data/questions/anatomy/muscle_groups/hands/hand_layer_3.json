@@ -14,7 +14,6 @@
     "long_explanation": "Layer 3 of the intrinsic muscles of the hand includes the adductor pollicis, palmar interossei, and dorsal interossei. These muscles control fine motor functions such as adduction and abduction of the fingers.",
     "clinical_application": "Knowledge of these muscles helps in precision rehabilitation for grip dysfunctions or ulnar nerve injuries.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hand anatomy", "intrinsic muscles", "layer 3"],
-    "keywords": ["palmar interossei", "dorsal interossei", "adductor pollicis"],
+    "tags": [
+      "hand anatomy",
+      "intrinsic muscles",
+      "layer 3"
+    ],
+    "keywords": [
+      "palmar interossei",
+      "dorsal interossei",
+      "adductor pollicis"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The palmar interossei adduct the second, fourth, and fifth digits toward the middle finger. They assist in fine motor control during grasping tasks.",
     "clinical_application": "Weakness in these muscles can be seen in ulnar nerve palsy, affecting grip strength.",
     "source_reference": "Netter's Anatomy Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hand", "interossei", "function"],
-    "keywords": ["palmar interossei", "finger adduction", "ulnar nerve"],
+    "tags": [
+      "hand",
+      "interossei",
+      "function"
+    ],
+    "keywords": [
+      "palmar interossei",
+      "finger adduction",
+      "ulnar nerve"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "All dorsal interossei are innervated by the deep branch of the ulnar nerve, which is responsible for finger abduction and contributing to MCP joint flexion.",
     "clinical_application": "Ulnar neuropathy can lead to impaired finger spreading due to dorsal interossei paralysis.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "interossei", "innervation"],
-    "keywords": ["dorsal interossei", "ulnar nerve", "hand muscles"],
+    "tags": [
+      "ulnar nerve",
+      "interossei",
+      "innervation"
+    ],
+    "keywords": [
+      "dorsal interossei",
+      "ulnar nerve",
+      "hand muscles"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "The dorsal interossei muscles abduct the index, middle, and ring fingers away from the midline of the hand. They are crucial for spreading the fingers.",
     "clinical_application": "Massage therapists may assess dorsal interossei function in patients with coordination or gripping problems.",
     "source_reference": "Netter's Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "easy",
@@ -107,21 +127,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dorsal interossei", "abduction", "hand movement"],
-    "keywords": ["finger abduction", "dorsal interossei", "ulnar innervation"],
+    "tags": [
+      "dorsal interossei",
+      "abduction",
+      "hand movement"
+    ],
+    "keywords": [
+      "finger abduction",
+      "dorsal interossei",
+      "ulnar innervation"
+    ],
     "synonyms": null
   },
   {
     "id": "hand_layer_3_005",
     "correctAnswer": "4",
     "question": "How many dorsal interossei muscles are there in the human hand?",
-    "options": ["3", "4", "5", "6"],
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "hand_layer_3"],
     "short_explanation": "There are four dorsal interossei muscles.",
     "long_explanation": "The hand has four dorsal interossei muscles located between the metacarpal bones, responsible for abducting fingers from the axis of the middle finger.",
     "clinical_application": "Manual muscle testing may reveal weakness in finger abduction if dorsal interossei are compromised.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "easy",
@@ -130,8 +162,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hand muscles", "interossei count"],
-    "keywords": ["dorsal interossei", "muscle count", "hand anatomy"],
+    "tags": [
+      "hand muscles",
+      "interossei count"
+    ],
+    "keywords": [
+      "dorsal interossei",
+      "muscle count",
+      "hand anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +188,6 @@
     "long_explanation": "This deep intrinsic hand muscle pulls the thumb medially toward the palm, enabling a strong grip by stabilizing the thumb during grasping.",
     "clinical_application": "Targeted therapy on the adductor pollicis can benefit patients with thumb strain or poor pinch strength.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -158,8 +196,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thumb movement", "adductor pollicis"],
-    "keywords": ["thumb adduction", "grip", "ulnar nerve"],
+    "tags": [
+      "thumb movement",
+      "adductor pollicis"
+    ],
+    "keywords": [
+      "thumb adduction",
+      "grip",
+      "ulnar nerve"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +222,6 @@
     "long_explanation": "This ligament stabilizes the metacarpal bones and separates the palmar and dorsal interossei, which originate on adjacent metacarpals.",
     "clinical_application": "Understanding this separation is crucial when treating conditions like palmar fibrosis or interosseous compartment syndrome.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -186,8 +230,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["interossei", "ligaments", "hand anatomy"],
-    "keywords": ["deep transverse metacarpal ligament", "interossei", "hand"],
+    "tags": [
+      "interossei",
+      "ligaments",
+      "hand anatomy"
+    ],
+    "keywords": [
+      "deep transverse metacarpal ligament",
+      "interossei",
+      "hand"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +257,6 @@
     "long_explanation": "The interossei not only abduct/adduct fingers but also aid in flexing MCP joints and extending IP joints by acting through the extensor hood.",
     "clinical_application": "Weakness in MCP flexion may indicate deeper intrinsic muscle dysfunction affecting grip precision.",
     "source_reference": "Clinical Oriented Anatomy, Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "hard",
@@ -214,8 +265,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["MCP joint", "intrinsic hand muscles"],
-    "keywords": ["flexion", "interossei", "grip"],
+    "tags": [
+      "MCP joint",
+      "intrinsic hand muscles"
+    ],
+    "keywords": [
+      "flexion",
+      "interossei",
+      "grip"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +291,6 @@
     "long_explanation": "Damage to the ulnar nerve affects the adductor pollicis, leading to thumb weakness. Interestingly, high ulnar lesions may present with less clawing than low lesions due to paralysis of flexors as well.",
     "clinical_application": "Therapists use this concept to localize ulnar nerve damage in cases of hand muscle imbalance.",
     "source_reference": "Neuroanatomy Through Clinical Cases",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "hard",
@@ -242,8 +299,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "adductor pollicis", "nerve lesion"],
-    "keywords": ["ulnar paradox", "thumb", "nerve"],
+    "tags": [
+      "ulnar nerve",
+      "adductor pollicis",
+      "nerve lesion"
+    ],
+    "keywords": [
+      "ulnar paradox",
+      "thumb",
+      "nerve"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +326,6 @@
     "long_explanation": "In Froment’s sign, the patient attempts to grasp paper between thumb and index. If the adductor pollicis is weak, the thumb flexes at the IP joint using flexor pollicis longus instead.",
     "clinical_application": "A positive Froment’s sign can indicate ulnar neuropathy affecting intrinsic hand muscles.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -270,21 +334,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Froment’s sign", "ulnar nerve"],
-    "keywords": ["adductor pollicis", "ulnar test", "clinical sign"],
+    "tags": [
+      "Froment’s sign",
+      "ulnar nerve"
+    ],
+    "keywords": [
+      "adductor pollicis",
+      "ulnar test",
+      "clinical sign"
+    ],
     "synonyms": null
   },
   {
     "id": "hand_layer_3_011",
     "correctAnswer": "Middle finger",
     "question": "Which digit does not have a palmar interosseous muscle?",
-    "options": ["Thumb", "Index finger", "Middle finger", "Little finger"],
+    "options": [
+      "Thumb",
+      "Index finger",
+      "Middle finger",
+      "Little finger"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "hand_layer_3"],
     "short_explanation": "The middle finger has no palmar interosseous muscle.",
     "long_explanation": "Palmar interossei adduct fingers toward the middle finger, but the middle finger itself abducts in both directions via dorsal interossei and lacks a palmar interosseous.",
     "clinical_application": "Hand therapists consider this when assessing muscle symmetry or performing dexterity rehab.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/hand_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -293,8 +368,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palmar interossei", "finger muscles"],
-    "keywords": ["middle finger", "no palmar interosseous", "abduction"],
+    "tags": [
+      "palmar interossei",
+      "finger muscles"
+    ],
+    "keywords": [
+      "middle finger",
+      "no palmar interosseous",
+      "abduction"
+    ],
     "synonyms": null
   }
 ]

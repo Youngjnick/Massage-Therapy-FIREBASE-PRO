@@ -14,7 +14,6 @@
     "long_explanation": "The plantar foot has four layers of muscles. The flexor digitorum brevis lies in the first layer, just deep to the plantar fascia. It flexes the lateral four toes at the proximal interphalangeal joints.",
     "clinical_application": "Massage therapists often target this muscle to reduce plantar foot tension or aid recovery from plantar fasciitis.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["plantar foot", "superficial layer", "flexor digitorum brevis"],
-    "keywords": ["foot muscles", "first layer", "toe flexion"],
+    "tags": [
+      "plantar foot",
+      "superficial layer",
+      "flexor digitorum brevis"
+    ],
+    "keywords": [
+      "foot muscles",
+      "first layer",
+      "toe flexion"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "Abductor hallucis originates from the medial calcaneus and inserts on the proximal phalanx of the big toe. It supports the medial longitudinal arch and is part of the first layer.",
     "clinical_application": "Foot massage techniques that target abductor hallucis may benefit clients with hallux valgus or collapsed arches.",
     "source_reference": "Orthopedic Massage Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["abductor hallucis", "big toe", "first layer"],
-    "keywords": ["hallux abduction", "medial arch", "toe movement"],
+    "tags": [
+      "abductor hallucis",
+      "big toe",
+      "first layer"
+    ],
+    "keywords": [
+      "hallux abduction",
+      "medial arch",
+      "toe movement"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "Quadratus plantae arises from the calcaneus and inserts on the lateral margin of the flexor digitorum longus tendons, aiding in straightening toe flexion force.",
     "clinical_application": "This muscle is key in toe mechanics during gait and may be targeted during therapeutic foot massage for claw toe or flat foot.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["quadratus plantae", "toe flexion", "foot function"],
-    "keywords": ["flexor digitorum longus", "foot balance", "second layer"],
+    "tags": [
+      "quadratus plantae",
+      "toe flexion",
+      "foot function"
+    ],
+    "keywords": [
+      "flexor digitorum longus",
+      "foot balance",
+      "second layer"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "These small muscles originate on the tendons of flexor digitorum longus and help balance toe motion, especially during stance phase of gait.",
     "clinical_application": "Tightness or dysfunction here can cause claw toe deformity; massage can promote healthy foot mechanics.",
     "source_reference": "Clinical Orthopedic Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +127,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lumbricals", "toe motion", "foot muscles"],
-    "keywords": ["foot control", "second layer", "MTP flexion", "IP extension"],
+    "tags": [
+      "lumbricals",
+      "toe motion",
+      "foot muscles"
+    ],
+    "keywords": [
+      "foot control",
+      "second layer",
+      "MTP flexion",
+      "IP extension"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "The oblique head arises from the bases of metatarsals 2–4, while the transverse head spans across the MTP joints. It adducts the great toe and stabilizes the transverse arch.",
     "clinical_application": "Strengthening or releasing this muscle may support hallux stabilization in massage or rehabilitation plans.",
     "source_reference": "Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -135,21 +163,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adductor hallucis", "transverse head", "oblique head"],
-    "keywords": ["toe adduction", "transverse arch", "third layer"],
+    "tags": [
+      "adductor hallucis",
+      "transverse head",
+      "oblique head"
+    ],
+    "keywords": [
+      "toe adduction",
+      "transverse arch",
+      "third layer"
+    ],
     "synonyms": null
   },
   {
     "id": "plantar_foot_006",
     "correctAnswer": "Third layer",
     "question": "Which layer contains the flexor hallucis brevis muscle?",
-    "options": ["Third layer", "First layer", "Second layer", "Fourth layer"],
+    "options": [
+      "Third layer",
+      "First layer",
+      "Second layer",
+      "Fourth layer"
+    ],
     "topics": ["anatomy", "muscle_groups", "foot", "plantar_foot"],
     "short_explanation": "Flexor hallucis brevis lies in the third muscular layer.",
     "long_explanation": "It flexes the big toe at the MTP joint and has two heads of insertion with sesamoid bones embedded in its tendons for protection and leverage.",
     "clinical_application": "Massage therapy may help relieve tension in the flexor hallucis brevis, improving gait or toe push-off power.",
     "source_reference": "Anatomy Trains",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -158,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["flexor hallucis brevis", "toe flexion", "third layer"],
-    "keywords": ["MTP joint", "foot layer", "big toe"],
+    "tags": [
+      "flexor hallucis brevis",
+      "toe flexion",
+      "third layer"
+    ],
+    "keywords": [
+      "MTP joint",
+      "foot layer",
+      "big toe"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +225,6 @@
     "long_explanation": "These deep muscles of the fourth layer assist in dynamic balance of the toes during walking and running by adducting toes 3–5 toward the second toe.",
     "clinical_application": "Clients with flat feet may benefit from strengthening or neuromuscular work on the interossei to improve balance.",
     "source_reference": "Orthopedic Massage Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "hard",
@@ -186,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["toe adduction", "plantar interossei", "fourth layer"],
-    "keywords": ["foot stability", "intrinsic muscles", "adduction"],
+    "tags": [
+      "toe adduction",
+      "plantar interossei",
+      "fourth layer"
+    ],
+    "keywords": [
+      "foot stability",
+      "intrinsic muscles",
+      "adduction"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +260,6 @@
     "long_explanation": "They form a key part of toe flexion mechanics, providing strength and directional correction of flexor digitorum longus pull.",
     "clinical_application": "Trigger points or fascial restrictions in these muscles may lead to toe cramps or gait dysfunction.",
     "source_reference": "Clinical Anatomy of the Lower Limb",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "hard",
@@ -214,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["flexor digitorum brevis", "calcaneus", "toe flexion"],
-    "keywords": ["plantar flexors", "origin", "second layer"],
+    "tags": [
+      "flexor digitorum brevis",
+      "calcaneus",
+      "toe flexion"
+    ],
+    "keywords": [
+      "plantar flexors",
+      "origin",
+      "second layer"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +295,6 @@
     "long_explanation": "Originating from the lateral calcaneus, this muscle provides lateral support and helps balance during lateral foot movements.",
     "clinical_application": "Lateral foot pain in overpronators may involve abductor digiti minimi and benefit from targeted soft tissue therapy.",
     "source_reference": "Netter’s Anatomy Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "hard",
@@ -242,8 +303,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["abductor digiti minimi", "fifth toe", "lateral foot"],
-    "keywords": ["toe abduction", "lateral arch", "foot support"],
+    "tags": [
+      "abductor digiti minimi",
+      "fifth toe",
+      "lateral foot"
+    ],
+    "keywords": [
+      "toe abduction",
+      "lateral arch",
+      "foot support"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +330,6 @@
     "long_explanation": "The lateral plantar nerve innervates most deeper plantar muscles, including quadratus plantae and lateral lumbricals, while the medial plantar nerve handles the medial side.",
     "clinical_application": "Neuromuscular work around this region may help with plantar nerve entrapment or gait compensation.",
     "source_reference": "Peripheral Nerve Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_foot.json",
     "question_type": null,
     "difficulty": "hard",
@@ -270,8 +338,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lateral plantar nerve", "quadratus plantae", "nerve supply"],
-    "keywords": ["foot innervation", "medial vs lateral", "nerve distribution"],
+    "tags": [
+      "lateral plantar nerve",
+      "quadratus plantae",
+      "nerve supply"
+    ],
+    "keywords": [
+      "foot innervation",
+      "medial vs lateral",
+      "nerve distribution"
+    ],
     "synonyms": null
   }
 ]

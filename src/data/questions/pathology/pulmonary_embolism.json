@@ -14,7 +14,6 @@
     "long_explanation": "Pulmonary embolisms typically result from a blood clot that travels from a deep vein in the leg (deep vein thrombosis) to the lungs, where it obstructs pulmonary arteries.",
     "clinical_application": "Massage therapists must be cautious if a client has a history of DVT, as improper techniques can dislodge a clot.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary embolism", "DVT", "blood clot", "lungs"],
-    "keywords": ["deep vein thrombosis", "embolus", "vascular"],
-    "synonyms": ["PE", "DVT", "embolus"]
+    "tags": [
+      "pulmonary embolism",
+      "DVT",
+      "blood clot",
+      "lungs"
+    ],
+    "keywords": [
+      "deep vein thrombosis",
+      "embolus",
+      "vascular"
+    ],
+    "synonyms": [
+      "PE",
+      "DVT",
+      "embolus"
+    ]
   },
   {
     "id": "pulmonary_embolism_002",
@@ -42,7 +54,6 @@
     "long_explanation": "A pulmonary embolism often presents as a sudden onset of shortness of breath, sometimes accompanied by chest pain and rapid heart rate. It is a medical emergency.",
     "clinical_application": "Therapists must refer out or call 911 if a client reports sudden unexplained breathing difficulty.",
     "source_reference": "Lippincott's Illustrated Reviews: Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -51,9 +62,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary embolism", "symptoms", "emergency"],
-    "keywords": ["dyspnea", "shortness of breath", "chest pain"],
-    "synonyms": ["dyspnea", "acute SOB"]
+    "tags": [
+      "pulmonary embolism",
+      "symptoms",
+      "emergency"
+    ],
+    "keywords": [
+      "dyspnea",
+      "shortness of breath",
+      "chest pain"
+    ],
+    "synonyms": [
+      "dyspnea",
+      "acute SOB"
+    ]
   },
   {
     "id": "pulmonary_embolism_003",
@@ -70,7 +92,6 @@
     "long_explanation": "Clients who are sedentary, post-operative, or have clotting disorders are more susceptible to emboli formation due to blood stasis.",
     "clinical_application": "Therapists should perform thorough intakes and avoid deep leg work in at-risk individuals.",
     "source_reference": "Massage Therapy: Principles and Practice, Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,9 +100,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["risk factors", "immobility", "surgery"],
-    "keywords": ["post-surgery", "immobility", "DVT risk"],
-    "synonyms": ["surgical risk", "immobility risk"]
+    "tags": [
+      "risk factors",
+      "immobility",
+      "surgery"
+    ],
+    "keywords": [
+      "post-surgery",
+      "immobility",
+      "DVT risk"
+    ],
+    "synonyms": [
+      "surgical risk",
+      "immobility risk"
+    ]
   },
   {
     "id": "pulmonary_embolism_004",
@@ -98,7 +130,6 @@
     "long_explanation": "CT pulmonary angiography is fast, accurate, and widely available. It helps visualize blockages in pulmonary arteries.",
     "clinical_application": "Understanding diagnostic tools helps therapists communicate effectively with medically managed clients.",
     "source_reference": "Merck Manual Professional Edition",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -107,9 +138,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diagnosis", "CT scan", "imaging"],
-    "keywords": ["pulmonary angiography", "CT", "diagnostic imaging"],
-    "synonyms": ["CT scan PE", "CT angiography"]
+    "tags": [
+      "diagnosis",
+      "CT scan",
+      "imaging"
+    ],
+    "keywords": [
+      "pulmonary angiography",
+      "CT",
+      "diagnostic imaging"
+    ],
+    "synonyms": [
+      "CT scan PE",
+      "CT angiography"
+    ]
   },
   {
     "id": "pulmonary_embolism_005",
@@ -126,7 +168,6 @@
     "long_explanation": "Massage can increase circulation and dislodge existing emboli, making it dangerous in active cases. Therapy is only permitted once medically cleared.",
     "clinical_application": "Always screen for clotting disorders and recent embolic events before performing any massage.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,9 +176,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["contraindication", "embolism", "safety"],
-    "keywords": ["pulmonary embolism", "massage contraindication"],
-    "synonyms": ["contraindicated massage", "active PE"]
+    "tags": [
+      "contraindication",
+      "embolism",
+      "safety"
+    ],
+    "keywords": [
+      "pulmonary embolism",
+      "massage contraindication"
+    ],
+    "synonyms": [
+      "contraindicated massage",
+      "active PE"
+    ]
   },
   {
     "id": "pulmonary_embolism_006",
@@ -154,7 +205,6 @@
     "long_explanation": "Massive pulmonary emboli can lead to right-sided heart failure, shock, or even sudden death due to obstruction of pulmonary circulation.",
     "clinical_application": "Awareness of cardiovascular complications helps massage therapists know when not to treat and when to refer urgently.",
     "source_reference": "Lippincott's Illustrated Reviews: Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,9 +213,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary embolism", "complications", "cardiac"],
-    "keywords": ["right heart failure", "shock", "embolism complications"],
-    "synonyms": ["right heart strain", "cardiac complication"]
+    "tags": [
+      "pulmonary embolism",
+      "complications",
+      "cardiac"
+    ],
+    "keywords": [
+      "right heart failure",
+      "shock",
+      "embolism complications"
+    ],
+    "synonyms": [
+      "right heart strain",
+      "cardiac complication"
+    ]
   },
   {
     "id": "pulmonary_embolism_007",
@@ -182,7 +243,6 @@
     "long_explanation": "Prolonged immobility, such as during long flights or desk jobs, increases the risk of clot formation due to reduced venous return.",
     "clinical_application": "Encouraging movement and stretching can help prevent DVT-related complications in clients with sedentary lifestyles.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -191,21 +251,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["risk factors", "lifestyle", "prevention"],
-    "keywords": ["immobility", "clotting risk", "sedentary"],
-    "synonyms": ["inactivity", "immobility risk"]
+    "tags": [
+      "risk factors",
+      "lifestyle",
+      "prevention"
+    ],
+    "keywords": [
+      "immobility",
+      "clotting risk",
+      "sedentary"
+    ],
+    "synonyms": [
+      "inactivity",
+      "immobility risk"
+    ]
   },
   {
     "id": "pulmonary_embolism_008",
     "correctAnswer": "D-dimer",
     "question": "Which laboratory test may help detect a pulmonary embolism?",
-    "options": ["D-dimer", "Creatinine", "Hemoglobin A1C", "Calcium"],
+    "options": [
+      "D-dimer",
+      "Creatinine",
+      "Hemoglobin A1C",
+      "Calcium"
+    ],
     "topics": ["pathology", "pulmonary_embolism"],
     "short_explanation": "D-dimer is elevated in cases of thrombosis.",
     "long_explanation": "A D-dimer test measures fibrin degradation products in the blood. Elevated levels suggest clot formation and breakdown, prompting further imaging.",
     "clinical_application": "Massage therapists don't order labs, but understanding test relevance improves communication with medical providers.",
     "source_reference": "Merck Manual Professional Edition",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -214,9 +289,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["labs", "diagnosis", "blood test"],
-    "keywords": ["D-dimer", "clot marker", "lab test"],
-    "synonyms": ["D dimer test", "clot screen"]
+    "tags": [
+      "labs",
+      "diagnosis",
+      "blood test"
+    ],
+    "keywords": [
+      "D-dimer",
+      "clot marker",
+      "lab test"
+    ],
+    "synonyms": [
+      "D dimer test",
+      "clot screen"
+    ]
   },
   {
     "id": "pulmonary_embolism_009",
@@ -233,7 +319,6 @@
     "long_explanation": "Initial treatment often involves anticoagulants like heparin or warfarin to prevent new clots. In severe cases, thrombolytics or surgery may be needed.",
     "clinical_application": "Massage should not be performed without clearance when anticoagulants are in use, due to bruising and bleeding risks.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -242,9 +327,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["treatment", "emergency care", "medications"],
-    "keywords": ["anticoagulants", "blood thinners", "PE treatment"],
-    "synonyms": ["blood thinners", "clot prevention"]
+    "tags": [
+      "treatment",
+      "emergency care",
+      "medications"
+    ],
+    "keywords": [
+      "anticoagulants",
+      "blood thinners",
+      "PE treatment"
+    ],
+    "synonyms": [
+      "blood thinners",
+      "clot prevention"
+    ]
   },
   {
     "id": "pulmonary_embolism_010",
@@ -261,7 +357,6 @@
     "long_explanation": "A pulmonary embolism is a sudden blockage in one of the pulmonary arteries, often caused by a migrating blood clot. It can impair oxygen exchange and cause respiratory distress.",
     "clinical_application": "Massage therapists should recognize signs and contraindications associated with circulatory disorders like PE.",
     "source_reference": "Massage Therapy: Principles and Practice, Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pulmonary_embolism.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -270,8 +365,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["definition", "pulmonary embolism", "blockage"],
-    "keywords": ["embolism", "pulmonary artery", "circulatory"],
-    "synonyms": ["PE definition", "artery blockage"]
+    "tags": [
+      "definition",
+      "pulmonary embolism",
+      "blockage"
+    ],
+    "keywords": [
+      "embolism",
+      "pulmonary artery",
+      "circulatory"
+    ],
+    "synonyms": [
+      "PE definition",
+      "artery blockage"
+    ]
   }
 ]

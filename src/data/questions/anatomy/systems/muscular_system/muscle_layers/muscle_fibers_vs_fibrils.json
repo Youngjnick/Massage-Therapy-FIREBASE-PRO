@@ -9,18 +9,11 @@
       "They are the same size",
       "Myofilament"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
-    ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "A muscle fiber contains many myofibrils.",
     "long_explanation": "Muscle fibers are individual muscle cells that enclose hundreds to thousands of cylindrical myofibrils, which contain the contractile elements.",
     "clinical_application": "Massage can affect the alignment of myofibrils within muscle fibers by reducing tension and improving mobility.",
     "source_reference": "Tortora & Derrickson – Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "easy",
@@ -29,27 +22,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle fiber", "myofibril", "cell structure"],
-    "keywords": ["muscle anatomy", "hierarchy"],
+    "tags": [
+      "muscle fiber",
+      "myofibril",
+      "cell structure"
+    ],
+    "keywords": [
+      "muscle anatomy",
+      "hierarchy"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_002",
     "correctAnswer": "Sarcomeres",
     "question": "Myofibrils are composed primarily of which structures?",
-    "options": ["Sarcomeres", "Sarcolemma", "Nerve endings", "Mitochondria"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Sarcomeres",
+      "Sarcolemma",
+      "Nerve endings",
+      "Mitochondria"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Myofibrils are made of repeating sarcomeres.",
     "long_explanation": "Sarcomeres, the contractile units of the muscle, are arranged end to end within myofibrils and contain actin and myosin filaments.",
     "clinical_application": "Muscle soreness may be related to microtrauma in sarcomeres during intense activity.",
     "source_reference": "Moore – Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "easy",
@@ -58,27 +56,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sarcomere", "myofibril", "actin", "myosin"],
-    "keywords": ["contractile units", "muscle fiber"],
+    "tags": [
+      "sarcomere",
+      "myofibril",
+      "actin",
+      "myosin"
+    ],
+    "keywords": [
+      "contractile units",
+      "muscle fiber"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_003",
     "correctAnswer": "Sarcolemma",
     "question": "What encloses the entire muscle fiber?",
-    "options": ["Sarcomere", "Sarcolemma", "Myofibril", "Endomysium"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Sarcomere",
+      "Sarcolemma",
+      "Myofibril",
+      "Endomysium"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "The sarcolemma is the muscle cell membrane.",
     "long_explanation": "Each muscle fiber is surrounded by the sarcolemma, which conducts action potentials and helps transmit signals for contraction.",
     "clinical_application": "Manual therapy may improve membrane fluidity and nutrient exchange via improved blood flow to muscle fibers.",
     "source_reference": "Saladin – Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "medium",
@@ -87,27 +91,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sarcolemma", "muscle cell", "fiber membrane"],
-    "keywords": ["muscle membrane", "signal conduction"],
+    "tags": [
+      "sarcolemma",
+      "muscle cell",
+      "fiber membrane"
+    ],
+    "keywords": [
+      "muscle membrane",
+      "signal conduction"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_004",
     "correctAnswer": "Myofibril",
     "question": "Which structure contains the actual contractile proteins in muscle?",
-    "options": ["Muscle fiber", "Sarcolemma", "Myofibril", "Epimysium"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Muscle fiber",
+      "Sarcolemma",
+      "Myofibril",
+      "Epimysium"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Myofibrils contain actin and myosin for contraction.",
     "long_explanation": "Myofibrils are made up of sarcomeres, which are composed of actin (thin) and myosin (thick) filaments that interact during contraction.",
     "clinical_application": "Understanding this helps therapists apply techniques that relieve mechanical stress at the fibril level.",
     "source_reference": "Guyton – Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "medium",
@@ -116,27 +125,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofibril", "actin", "myosin"],
-    "keywords": ["muscle contraction", "filaments"],
+    "tags": [
+      "myofibril",
+      "actin",
+      "myosin"
+    ],
+    "keywords": [
+      "muscle contraction",
+      "filaments"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_005",
     "correctAnswer": "Endomysium",
     "question": "Which connective tissue layer surrounds individual muscle fibers?",
-    "options": ["Epimysium", "Endomysium", "Perimysium", "Sarcomysium"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Epimysium",
+      "Endomysium",
+      "Perimysium",
+      "Sarcomysium"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Endomysium surrounds each muscle fiber.",
     "long_explanation": "The endomysium is a thin connective tissue layer that encloses each individual muscle fiber and allows capillaries and nerves to reach it.",
     "clinical_application": "Massage techniques can increase circulation and lymphatic drainage through manipulation of endomysial layers.",
     "source_reference": "Trail Guide to the Body – Andrew Biel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "medium",
@@ -145,27 +159,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["endomysium", "connective tissue", "muscle fiber"],
-    "keywords": ["muscle wrapping", "blood flow"],
+    "tags": [
+      "endomysium",
+      "connective tissue",
+      "muscle fiber"
+    ],
+    "keywords": [
+      "muscle wrapping",
+      "blood flow"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_006",
     "correctAnswer": "Myofibril",
     "question": "Which component directly shortens during muscle contraction?",
-    "options": ["Myofibril", "Myofilament", "Muscle fiber", "Tendon"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Myofibril",
+      "Myofilament",
+      "Muscle fiber",
+      "Tendon"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Myofibrils shorten due to sliding of filaments.",
     "long_explanation": "During contraction, actin and myosin slide over each other within the sarcomere, causing the myofibrils to shorten and the muscle to contract.",
     "clinical_application": "Massage aimed at releasing contracted myofibrils can enhance flexibility and reduce DOMS (Delayed Onset Muscle Soreness).",
     "source_reference": "Martini – Fundamentals of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "medium",
@@ -174,27 +193,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofibril", "sliding filament", "muscle shortening"],
-    "keywords": ["muscle action", "contractile elements"],
+    "tags": [
+      "myofibril",
+      "sliding filament",
+      "muscle shortening"
+    ],
+    "keywords": [
+      "muscle action",
+      "contractile elements"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_007",
     "correctAnswer": "Muscle fiber",
     "question": "Myofibrils are located within which structure?",
-    "options": ["Sarcomere", "Mitochondrion", "Muscle fiber", "Tendon"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Sarcomere",
+      "Mitochondrion",
+      "Muscle fiber",
+      "Tendon"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Myofibrils are found inside each muscle fiber.",
     "long_explanation": "Each muscle fiber houses multiple myofibrils, making up the internal machinery that enables contraction and force generation.",
     "clinical_application": "Massage strategies for hypertrophy should aim to preserve and support the integrity of myofibril arrangements within fibers.",
     "source_reference": "Clinically Oriented Anatomy – Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "medium",
@@ -203,8 +227,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofibril", "muscle fiber", "cell interior"],
-    "keywords": ["fiber anatomy", "muscle units"],
+    "tags": [
+      "myofibril",
+      "muscle fiber",
+      "cell interior"
+    ],
+    "keywords": [
+      "fiber anatomy",
+      "muscle units"
+    ],
     "synonyms": null
   },
   {
@@ -217,18 +248,11 @@
       "They have alternating light and dark bands",
       "They are randomly distributed"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
-    ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Alternating bands form striations.",
     "long_explanation": "Striations in skeletal and cardiac muscle result from the regular arrangement of actin and myosin in sarcomeres within myofibrils.",
     "clinical_application": "Identifying striated vs. non-striated muscle types is important for therapists targeting specific tissue responses.",
     "source_reference": "Saladin – Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "hard",
@@ -237,27 +261,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["striated muscle", "sarcomere", "myofibril"],
-    "keywords": ["z lines", "a bands", "i bands"],
+    "tags": [
+      "striated muscle",
+      "sarcomere",
+      "myofibril"
+    ],
+    "keywords": [
+      "z lines",
+      "a bands",
+      "i bands"
+    ],
     "synonyms": null
   },
   {
     "id": "muscle_fibers_vs_fibrils_009",
     "correctAnswer": "Myofibril",
     "question": "Which structure would you target to influence force generation at the microscopic level?",
-    "options": ["Muscle fiber", "Myofibril", "Perimysium", "Fascicle"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
+    "options": [
+      "Muscle fiber",
+      "Myofibril",
+      "Perimysium",
+      "Fascicle"
     ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Myofibrils are responsible for contraction force.",
     "long_explanation": "Massage techniques that improve alignment and hydration of myofibrils may support more effective muscle function and strength.",
     "clinical_application": "Active release and stretching methods may directly target myofibril-level resistance in hypertonic muscles.",
     "source_reference": "Guyton – Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "hard",
@@ -266,8 +296,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["force", "myofibril", "contraction"],
-    "keywords": ["power generation", "muscle work"],
+    "tags": [
+      "force",
+      "myofibril",
+      "contraction"
+    ],
+    "keywords": [
+      "power generation",
+      "muscle work"
+    ],
     "synonyms": null
   },
   {
@@ -280,18 +317,11 @@
       "Fascicles and myofibrils are the same",
       "Myofibrils contain fascicles"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "muscular_system",
-      "muscle_layers",
-      "muscle_fibers_vs_fibrils"
-    ],
+    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "muscle_fibers_vs_fibrils"],
     "short_explanation": "Fascicles are larger bundles of muscle fibers.",
     "long_explanation": "Fascicles are visible groupings of muscle fibers surrounded by perimysium, while myofibrils are microscopic structures inside each fiber.",
     "clinical_application": "Trigger point therapy may release tension within specific fascicles, indirectly affecting embedded myofibrils.",
     "source_reference": "Trail Guide to the Body – Biel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/muscular_system/muscle_layers/muscle_fibers_vs_fibrils.json",
     "question_type": null,
     "difficulty": "hard",
@@ -300,8 +330,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascicle", "myofibril", "muscle organization"],
-    "keywords": ["bundles", "perimysium", "muscle layers"],
+    "tags": [
+      "fascicle",
+      "myofibril",
+      "muscle organization"
+    ],
+    "keywords": [
+      "bundles",
+      "perimysium",
+      "muscle layers"
+    ],
     "synonyms": null
   }
 ]

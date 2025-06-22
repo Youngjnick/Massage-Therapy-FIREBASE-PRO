@@ -14,7 +14,6 @@
     "long_explanation": "Tui Na combines Traditional Chinese Medicine principles with massage techniques to move qi and blood in the body.",
     "clinical_application": "Ideal for clients seeking non-invasive therapy for musculoskeletal tension or internal disorders.",
     "source_reference": "Chinese Massage Manual – TCM Education Series",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -56,7 +55,6 @@
     "long_explanation": "It is one of the four main branches of TCM, alongside acupuncture, herbal medicine, and qigong.",
     "clinical_application": "Used as part of a holistic protocol to balance internal health and energy flow.",
     "source_reference": "Foundations of TCM – East-West Manual Therapies",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -94,7 +92,6 @@
     "long_explanation": "These manipulations influence muscles, joints, and meridian pathways to treat pain and promote circulation.",
     "clinical_application": "Effective in chronic pain, joint stiffness, and sports recovery.",
     "source_reference": "Tui Na Therapeutic Methods – Clinical Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -103,8 +100,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-24T14:34:08.145Z",
     "updated_at": "2025-05-26T22:14:32.510426Z",
-    "tags": ["modality_tuina", "technique_cupping", "technique_tapping"],
-    "keywords": ["modality_tuina", "technique_cupping", "technique_tapping"],
+    "tags": [
+      "modality_tuina",
+      "technique_cupping",
+      "technique_tapping"
+    ],
+    "keywords": [
+      "modality_tuina",
+      "technique_cupping",
+      "technique_tapping"
+    ],
     "synonyms": null
   },
   {
@@ -122,7 +127,6 @@
     "long_explanation": "It addresses conditions ranging from back pain and sciatica to fatigue and emotional stress.",
     "clinical_application": "Often used in integrative therapy sessions targeting both body and energy systems.",
     "source_reference": "Tui Na Case Studies – Manual Healing Practices",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -160,7 +164,6 @@
     "long_explanation": "These therapies reinforce each other in Chinese medical protocols for systemic and localized disorders.",
     "clinical_application": "Helps blend physical and energetic interventions in clinical massage.",
     "source_reference": "TCM Integrative Therapy Guide – Practitioner Level",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -169,21 +172,29 @@
     "relevance_score": 5,
     "created_at": "2025-05-24T14:34:08.145Z",
     "updated_at": "2025-05-26T22:14:32.510426Z",
-    "tags": ["modality_tuina"],
-    "keywords": ["modality_tuina"],
+    "tags": [
+      "modality_tuina"
+    ],
+    "keywords": [
+      "modality_tuina"
+    ],
     "synonyms": null
   },
   {
     "id": "tui_na_006",
     "correctAnswer": "Push",
     "question": "What does 'Tui' mean in Chinese?",
-    "options": ["Stretch", "Push", "Knead", "Heal"],
+    "options": [
+      "Stretch",
+      "Push",
+      "Knead",
+      "Heal"
+    ],
     "topics": ["modalities", "tui-na", "tui_na"],
     "short_explanation": "‘Tui’ means to push.",
     "long_explanation": "Tui is the first half of the name and reflects the directional movement used to affect energy flow.",
     "clinical_application": "Educates therapists on the biomechanical focus of Chinese manual medicine.",
     "source_reference": "Chinese Bodywork Terminology – Healing Dictionary",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -192,21 +203,29 @@
     "relevance_score": 5,
     "created_at": "2025-05-24T14:34:08.145Z",
     "updated_at": "2025-05-26T22:14:32.510426Z",
-    "tags": ["purpose_healing"],
-    "keywords": ["purpose_healing"],
+    "tags": [
+      "purpose_healing"
+    ],
+    "keywords": [
+      "purpose_healing"
+    ],
     "synonyms": null
   },
   {
     "id": "tui_na_007",
     "correctAnswer": "Pinch or grasp",
     "question": "What does 'Na' mean in Chinese?",
-    "options": ["Pinch or grasp", "Heal", "Slide", "Tap"],
+    "options": [
+      "Pinch or grasp",
+      "Heal",
+      "Slide",
+      "Tap"
+    ],
     "topics": ["modalities", "tui-na", "tui_na"],
     "short_explanation": "‘Na’ means to grasp.",
     "long_explanation": "It emphasizes lifting and gripping soft tissues to move stagnation and support circulation.",
     "clinical_application": "Used for areas with stagnation or muscle tightness.",
     "source_reference": "Glossary of Chinese Massage Techniques – Clinical Terms",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -215,8 +234,14 @@
     "relevance_score": 5,
     "created_at": "2025-05-24T14:34:08.145Z",
     "updated_at": "2025-05-26T22:14:32.510426Z",
-    "tags": ["technique_tapping", "purpose_healing"],
-    "keywords": ["technique_tapping", "purpose_healing"],
+    "tags": [
+      "technique_tapping",
+      "purpose_healing"
+    ],
+    "keywords": [
+      "technique_tapping",
+      "purpose_healing"
+    ],
     "synonyms": null
   },
   {
@@ -234,7 +259,6 @@
     "long_explanation": "While it’s generally safe, applying pressure to unstable or broken tissues can worsen injury.",
     "clinical_application": "Massage therapists must assess for acute trauma or post-surgical recovery.",
     "source_reference": "Massage Contraindications – Clinical Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -269,13 +293,17 @@
     "id": "tui_na_009",
     "correctAnswer": "Qi (Chi)",
     "question": "Tui Na aims to balance the flow of which vital energy?",
-    "options": ["Qi (Chi)", "Ojas", "Aura", "Yin"],
+    "options": [
+      "Qi (Chi)",
+      "Ojas",
+      "Aura",
+      "Yin"
+    ],
     "topics": ["modalities", "tui-na", "tui_na"],
     "short_explanation": "Tui Na aims to move and balance qi (Chi).",
     "long_explanation": "By unblocking meridians and restoring qi flow, Tui Na enhances physical and emotional vitality.",
     "clinical_application": "Supports stress relief, immune function, and organ balance.",
     "source_reference": "Energetics of Chinese Medicine – Qi Flow Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -284,8 +312,14 @@
     "relevance_score": 5,
     "created_at": "2025-05-24T14:34:08.145Z",
     "updated_at": "2025-05-26T22:14:32.510426Z",
-    "tags": ["modality_tuina", "concept_balance"],
-    "keywords": ["modality_tuina", "concept_balance"],
+    "tags": [
+      "modality_tuina",
+      "concept_balance"
+    ],
+    "keywords": [
+      "modality_tuina",
+      "concept_balance"
+    ],
     "synonyms": null
   },
   {
@@ -303,7 +337,6 @@
     "long_explanation": "It does not require oil or disrobing and uses focused manipulation over clothing or cloth sheets.",
     "clinical_application": "Makes it ideal for clinical or multi-client settings.",
     "source_reference": "Tui Na Setup and Positioning – Therapist Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/tui-na/tui_na.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -312,8 +345,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-24T14:34:08.145Z",
     "updated_at": "2025-05-26T22:14:32.510426Z",
-    "tags": ["modality_massage", "modality_tuina", "client"],
-    "keywords": ["modality_massage", "modality_tuina", "client"],
+    "tags": [
+      "modality_massage",
+      "modality_tuina",
+      "client"
+    ],
+    "keywords": [
+      "modality_massage",
+      "modality_tuina",
+      "client"
+    ],
     "synonyms": null
   }
 ]

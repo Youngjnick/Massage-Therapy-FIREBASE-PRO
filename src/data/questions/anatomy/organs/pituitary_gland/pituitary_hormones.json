@@ -14,7 +14,6 @@
     "long_explanation": "Adrenocorticotropic hormone (ACTH) is produced by the anterior pituitary and acts on the adrenal cortex to stimulate the production and release of cortisol, a key stress hormone.",
     "clinical_application": "Massage therapy may reduce cortisol levels by influencing the stress response. Understanding ACTH is important in clients with adrenal or endocrine issues.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ACTH", "cortisol", "stress hormone"],
-    "keywords": ["adrenocorticotropic", "pituitary hormone", "endocrine axis"],
-    "synonyms": ["ACTH", "corticotropin"]
+    "tags": [
+      "ACTH",
+      "cortisol",
+      "stress hormone"
+    ],
+    "keywords": [
+      "adrenocorticotropic",
+      "pituitary hormone",
+      "endocrine axis"
+    ],
+    "synonyms": [
+      "ACTH",
+      "corticotropin"
+    ]
   },
   {
     "id": "pituitary_hormones_002",
@@ -42,7 +52,6 @@
     "long_explanation": "Oxytocin, produced in the hypothalamus and stored in the posterior pituitary, plays a role in labor by inducing uterine contractions and supports lactation by triggering milk letdown.",
     "clinical_application": "Massage therapists supporting new mothers may encounter changes in oxytocin levels associated with bonding and relaxation.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,21 +60,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["oxytocin", "posterior pituitary", "milk ejection"],
-    "keywords": ["oxytocin", "labor", "letdown reflex"],
-    "synonyms": ["labor hormone", "bonding hormone"]
+    "tags": [
+      "oxytocin",
+      "posterior pituitary",
+      "milk ejection"
+    ],
+    "keywords": [
+      "oxytocin",
+      "labor",
+      "letdown reflex"
+    ],
+    "synonyms": [
+      "labor hormone",
+      "bonding hormone"
+    ]
   },
   {
     "id": "pituitary_hormones_003",
     "correctAnswer": "Growth hormone (GH)",
     "question": "Which anterior pituitary hormone stimulates growth in bones and tissues?",
-    "options": ["Growth hormone (GH)", "Prolactin", "ACTH", "TSH"],
+    "options": [
+      "Growth hormone (GH)",
+      "Prolactin",
+      "ACTH",
+      "TSH"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary_hormones"],
     "short_explanation": "Growth hormone promotes growth of bones, muscles, and tissues.",
     "long_explanation": "Growth hormone (GH), also known as somatotropin, is secreted by the anterior pituitary and stimulates cell growth, repair, and metabolism, particularly in bones and muscles.",
     "clinical_application": "Knowledge of GH is relevant when addressing growth disorders or muscle recovery with therapeutic massage.",
     "source_reference": "Endocrine Physiology, Costanzo",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["growth hormone", "GH", "anterior pituitary"],
-    "keywords": ["somatotropin", "GH", "pituitary growth"],
-    "synonyms": ["GH", "somatotropin"]
+    "tags": [
+      "growth hormone",
+      "GH",
+      "anterior pituitary"
+    ],
+    "keywords": [
+      "somatotropin",
+      "GH",
+      "pituitary growth"
+    ],
+    "synonyms": [
+      "GH",
+      "somatotropin"
+    ]
   },
   {
     "id": "pituitary_hormones_004",
@@ -93,7 +128,6 @@
     "long_explanation": "Thyroid-stimulating hormone (TSH) is secreted by the anterior pituitary and acts on the thyroid gland to increase the synthesis and release of thyroid hormones, which regulate metabolism.",
     "clinical_application": "Massage therapists should be aware of thyroid disorders that can affect client energy, weight, and mood.",
     "source_reference": "Human Anatomy & Physiology, Marieb",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -102,21 +136,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["TSH", "thyroid", "anterior pituitary"],
-    "keywords": ["thyroid-stimulating hormone", "TSH", "thyroid hormones"],
-    "synonyms": ["TSH", "thyrotropin"]
+    "tags": [
+      "TSH",
+      "thyroid",
+      "anterior pituitary"
+    ],
+    "keywords": [
+      "thyroid-stimulating hormone",
+      "TSH",
+      "thyroid hormones"
+    ],
+    "synonyms": [
+      "TSH",
+      "thyrotropin"
+    ]
   },
   {
     "id": "pituitary_hormones_005",
     "correctAnswer": "Antidiuretic hormone (ADH)",
     "question": "Which hormone regulates water balance by increasing kidney reabsorption of water?",
-    "options": ["Antidiuretic hormone (ADH)", "Oxytocin", "ACTH", "FSH"],
+    "options": [
+      "Antidiuretic hormone (ADH)",
+      "Oxytocin",
+      "ACTH",
+      "FSH"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary_hormones"],
     "short_explanation": "ADH helps the kidneys retain water.",
     "long_explanation": "Antidiuretic hormone (ADH), also called vasopressin, is produced by the hypothalamus and released from the posterior pituitary. It signals the kidneys to retain water and reduce urine output.",
     "clinical_application": "Dehydration or fluid retention may be signs of ADH imbalance—important for massage safety and client comfort.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -125,21 +174,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ADH", "vasopressin", "fluid balance"],
-    "keywords": ["antidiuretic hormone", "kidney", "water regulation"],
-    "synonyms": ["vasopressin", "ADH"]
+    "tags": [
+      "ADH",
+      "vasopressin",
+      "fluid balance"
+    ],
+    "keywords": [
+      "antidiuretic hormone",
+      "kidney",
+      "water regulation"
+    ],
+    "synonyms": [
+      "vasopressin",
+      "ADH"
+    ]
   },
   {
     "id": "pituitary_hormones_006",
     "correctAnswer": "Prolactin",
     "question": "Which anterior pituitary hormone promotes milk production in lactating women?",
-    "options": ["Prolactin", "Oxytocin", "TSH", "LH"],
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "TSH",
+      "LH"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary_hormones"],
     "short_explanation": "Prolactin stimulates milk production after childbirth.",
     "long_explanation": "Prolactin is secreted by the anterior pituitary and acts on mammary glands to promote milk synthesis. It works alongside oxytocin, which controls milk ejection.",
     "clinical_application": "Massage can support lactation and bonding, and understanding prolactin's role is important in perinatal care.",
     "source_reference": "Human Anatomy & Physiology, Marieb & Hoehn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -148,9 +212,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["prolactin", "lactation", "anterior pituitary"],
-    "keywords": ["milk production", "hormone", "breastfeeding"],
-    "synonyms": ["PRL", "lactogenic hormone"]
+    "tags": [
+      "prolactin",
+      "lactation",
+      "anterior pituitary"
+    ],
+    "keywords": [
+      "milk production",
+      "hormone",
+      "breastfeeding"
+    ],
+    "synonyms": [
+      "PRL",
+      "lactogenic hormone"
+    ]
   },
   {
     "id": "pituitary_hormones_007",
@@ -167,7 +242,6 @@
     "long_explanation": "Luteinizing hormone (LH), secreted by the anterior pituitary, promotes ovulation in females and stimulates Leydig cells in males to produce testosterone.",
     "clinical_application": "Massage therapists should be mindful of hormonal fluctuations related to LH during the menstrual cycle and andropause.",
     "source_reference": "Endocrine Physiology, Costanzo",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -176,21 +250,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["LH", "testosterone", "ovulation"],
-    "keywords": ["luteinizing hormone", "gonadotropin", "fertility"],
-    "synonyms": ["LH", "gonadotropin"]
+    "tags": [
+      "LH",
+      "testosterone",
+      "ovulation"
+    ],
+    "keywords": [
+      "luteinizing hormone",
+      "gonadotropin",
+      "fertility"
+    ],
+    "synonyms": [
+      "LH",
+      "gonadotropin"
+    ]
   },
   {
     "id": "pituitary_hormones_008",
     "correctAnswer": "Follicle-stimulating hormone (FSH)",
     "question": "Which hormone from the anterior pituitary promotes the development of ovarian follicles and spermatogenesis?",
-    "options": ["Follicle-stimulating hormone (FSH)", "LH", "GH", "Prolactin"],
+    "options": [
+      "Follicle-stimulating hormone (FSH)",
+      "LH",
+      "GH",
+      "Prolactin"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary_hormones"],
     "short_explanation": "FSH supports egg and sperm production.",
     "long_explanation": "Follicle-stimulating hormone (FSH) is a gonadotropin that stimulates growth of ovarian follicles in females and promotes sperm development in males.",
     "clinical_application": "Understanding hormonal cycles is helpful in working with clients dealing with fertility, menstrual irregularities, or stress-related endocrine imbalance.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -199,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["FSH", "reproductive system", "pituitary"],
-    "keywords": ["follicle-stimulating hormone", "spermatogenesis", "gonads"],
-    "synonyms": ["FSH", "gonadotropin"]
+    "tags": [
+      "FSH",
+      "reproductive system",
+      "pituitary"
+    ],
+    "keywords": [
+      "follicle-stimulating hormone",
+      "spermatogenesis",
+      "gonads"
+    ],
+    "synonyms": [
+      "FSH",
+      "gonadotropin"
+    ]
   },
   {
     "id": "pituitary_hormones_009",
@@ -218,7 +318,6 @@
     "long_explanation": "The infundibulum is a stalk-like structure that links the hypothalamus with the pituitary gland, allowing for hormonal communication through the hypothalamic-pituitary axis.",
     "clinical_application": "Damage to this connection can impair hormonal regulation, potentially affecting metabolism, growth, and stress responses relevant to massage therapy.",
     "source_reference": "Neuroscience: Exploring the Brain, Bear et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -227,21 +326,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["infundibulum", "pituitary", "hypothalamus"],
-    "keywords": ["infundibulum", "pituitary stalk", "hypothalamic connection"],
-    "synonyms": ["pituitary stalk", "hypothalamic connection"]
+    "tags": [
+      "infundibulum",
+      "pituitary",
+      "hypothalamus"
+    ],
+    "keywords": [
+      "infundibulum",
+      "pituitary stalk",
+      "hypothalamic connection"
+    ],
+    "synonyms": [
+      "pituitary stalk",
+      "hypothalamic connection"
+    ]
   },
   {
     "id": "pituitary_hormones_010",
     "correctAnswer": "Vasopressin",
     "question": "Which hormone released from the posterior pituitary helps regulate blood pressure through vasoconstriction?",
-    "options": ["Vasopressin", "Aldosterone", "Prolactin", "Glucagon"],
+    "options": [
+      "Vasopressin",
+      "Aldosterone",
+      "Prolactin",
+      "Glucagon"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary_hormones"],
     "short_explanation": "Vasopressin increases blood pressure by narrowing blood vessels.",
     "long_explanation": "Also known as antidiuretic hormone (ADH), vasopressin is released from the posterior pituitary and causes vasoconstriction, contributing to blood pressure regulation and water retention in the kidneys.",
     "clinical_application": "Massage may lower blood pressure via parasympathetic stimulation, working in contrast to vasopressin's effects during stress.",
     "source_reference": "Endocrine Physiology, Costanzo",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary_hormones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -250,13 +364,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vasopressin", "posterior pituitary", "blood pressure"],
+    "tags": [
+      "vasopressin",
+      "posterior pituitary",
+      "blood pressure"
+    ],
     "keywords": [
       "vasopressin",
       "ADH",
       "hormonal regulation",
       "vasoconstriction"
     ],
-    "synonyms": ["antidiuretic hormone", "ADH"]
+    "synonyms": [
+      "antidiuretic hormone",
+      "ADH"
+    ]
   }
 ]

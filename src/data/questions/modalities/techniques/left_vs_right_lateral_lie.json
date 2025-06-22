@@ -3,13 +3,17 @@
     "id": "left_vs_right_lateral_lie_001",
     "correctAnswer": "Left side",
     "question": "In the left lateral lie position, which side of the body is in contact with the surface?",
-    "options": ["Left side", "Right side", "Back", "Stomach"],
+    "options": [
+      "Left side",
+      "Right side",
+      "Back",
+      "Stomach"
+    ],
     "topics": ["modalities", "techniques", "left_vs_right_lateral_lie"],
     "short_explanation": "The left side rests on the surface in the left lateral lie position.",
     "long_explanation": "The left lateral lie position refers to lying on the left side of the body, often used for digestive relief and side-lying massage techniques.",
     "clinical_application": "This position is often used during prenatal massage or when supporting lymphatic drainage on the right side.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -18,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["left side", "body position", "massage support"],
-    "keywords": ["left lateral", "side-lying", "massage position"],
+    "tags": [
+      "left side",
+      "body position",
+      "massage support"
+    ],
+    "keywords": [
+      "left lateral",
+      "side-lying",
+      "massage position"
+    ],
     "synonyms": null
   },
   {
     "id": "left_vs_right_lateral_lie_002",
     "correctAnswer": "Heart",
     "question": "Which organ is better supported in the left lateral lie for circulation and lymphatic drainage?",
-    "options": ["Heart", "Liver", "Right lung", "Pancreas"],
+    "options": [
+      "Heart",
+      "Liver",
+      "Right lung",
+      "Pancreas"
+    ],
     "topics": ["modalities", "techniques", "left_vs_right_lateral_lie"],
     "short_explanation": "Lying on the left side improves venous return and cardiac function.",
     "long_explanation": "The left lateral position reduces pressure on the inferior vena cava and may improve blood flow back to the heart, making it beneficial in pregnancy or circulatory massage.",
     "clinical_application": "Pregnant clients often lie in left lateral to prevent vena cava compression and promote heart circulation.",
     "source_reference": "Prenatal Massage by Elaine Stillerman",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -41,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["left lateral", "venous return", "cardiac support"],
-    "keywords": ["circulation", "pregnancy", "inferior vena cava"],
+    "tags": [
+      "left lateral",
+      "venous return",
+      "cardiac support"
+    ],
+    "keywords": [
+      "circulation",
+      "pregnancy",
+      "inferior vena cava"
+    ],
     "synonyms": null
   },
   {
@@ -60,7 +84,6 @@
     "long_explanation": "The dependent lung (right in this case) receives more perfusion due to gravity. This is a key consideration in postural drainage or respiratory care.",
     "clinical_application": "Side-lying massage may affect drainage or oxygen delivery depending on the dominant lung side down.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -69,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lung perfusion", "side lying", "respiratory"],
-    "keywords": ["dependent lung", "gravity", "massage effects"],
+    "tags": [
+      "lung perfusion",
+      "side lying",
+      "respiratory"
+    ],
+    "keywords": [
+      "dependent lung",
+      "gravity",
+      "massage effects"
+    ],
     "synonyms": null
   },
   {
     "id": "left_vs_right_lateral_lie_004",
     "correctAnswer": "Left lateral lie",
     "question": "Which position is typically safer for late-stage pregnancy massage?",
-    "options": ["Left lateral lie", "Right lateral lie", "Supine", "Prone"],
+    "options": [
+      "Left lateral lie",
+      "Right lateral lie",
+      "Supine",
+      "Prone"
+    ],
     "topics": ["modalities", "techniques", "left_vs_right_lateral_lie"],
     "short_explanation": "Left lateral lie is safest in pregnancy due to vascular flow.",
     "long_explanation": "The left lateral position reduces pressure on the inferior vena cava and supports placental blood flow, making it the preferred position for massage and sleep.",
     "clinical_application": "Prenatal massage often uses left lateral positioning with pillows to support the abdomen and reduce vascular compression.",
     "source_reference": "Massage During Pregnancy – ABMP",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -92,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pregnancy", "left lateral", "positioning"],
-    "keywords": ["vena cava", "circulation", "safe massage"],
+    "tags": [
+      "pregnancy",
+      "left lateral",
+      "positioning"
+    ],
+    "keywords": [
+      "vena cava",
+      "circulation",
+      "safe massage"
+    ],
     "synonyms": null
   },
   {
@@ -111,7 +154,6 @@
     "long_explanation": "Without pillow or bolster support, the dependent shoulder may experience compression or joint strain in lateral positions.",
     "clinical_application": "Bolstering under the ribcage and between the arms can reduce joint compression in side-lying massage.",
     "source_reference": "Massage Therapy Clinical Basics",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -120,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder", "compression", "side-lying"],
-    "keywords": ["support", "risk management", "massage safety"],
+    "tags": [
+      "shoulder",
+      "compression",
+      "side-lying"
+    ],
+    "keywords": [
+      "support",
+      "risk management",
+      "massage safety"
+    ],
     "synonyms": null
   },
   {
@@ -139,7 +189,6 @@
     "long_explanation": "Right lateral position places the right side down, allowing clear access to the left side of the back, ribs, and hip.",
     "clinical_application": "Use right lateral positioning to massage the left QL, lats, or glutes with better leverage and support.",
     "source_reference": "ABMP Side-Lying Protocols",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -148,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["right lateral", "massage access", "body mechanics"],
-    "keywords": ["left side access", "side-lying massage", "positioning"],
+    "tags": [
+      "right lateral",
+      "massage access",
+      "body mechanics"
+    ],
+    "keywords": [
+      "left side access",
+      "side-lying massage",
+      "positioning"
+    ],
     "synonyms": null
   },
   {
@@ -167,7 +224,6 @@
     "long_explanation": "Strategically placed bolsters under the head, between knees, and under the arm help maintain spinal neutrality and comfort.",
     "clinical_application": "Use bolsters when a client is in lateral position to reduce stress on joints and avoid muscle guarding.",
     "source_reference": "Massage Therapy Principles and Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -176,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bolstering", "alignment", "comfort"],
-    "keywords": ["side lying", "spinal support", "client care"],
+    "tags": [
+      "bolstering",
+      "alignment",
+      "comfort"
+    ],
+    "keywords": [
+      "side lying",
+      "spinal support",
+      "client care"
+    ],
     "synonyms": null
   },
   {
@@ -195,7 +259,6 @@
     "long_explanation": "The common peroneal nerve wraps around the fibula and can be compressed between the leg and a firm surface without cushioning.",
     "clinical_application": "In long sessions or postural holding, support the lateral leg to avoid peroneal neuropathy.",
     "source_reference": "Orthopedic Massage by Lowe",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "hard",
@@ -204,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["peroneal", "nerve compression", "side lying"],
-    "keywords": ["fibular head", "cushioning", "neuropathy"],
+    "tags": [
+      "peroneal",
+      "nerve compression",
+      "side lying"
+    ],
+    "keywords": [
+      "fibular head",
+      "cushioning",
+      "neuropathy"
+    ],
     "synonyms": null
   },
   {
@@ -223,7 +294,6 @@
     "long_explanation": "Positioning on one side promotes lymphatic return from the elevated side of the body, supporting fluid flow away from congestion.",
     "clinical_application": "Massage therapists can use side-lying positioning in lymphatic drainage techniques to improve fluid mobility.",
     "source_reference": "Lymphatic Drainage Textbook – Wittlinger",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -232,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lymph flow", "side lying", "fluid drainage"],
-    "keywords": ["massage therapy", "posture", "gravity-assisted"],
+    "tags": [
+      "lymph flow",
+      "side lying",
+      "fluid drainage"
+    ],
+    "keywords": [
+      "massage therapy",
+      "posture",
+      "gravity-assisted"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +329,6 @@
     "long_explanation": "One bolster between knees, one under the head, and one for upper arm support are standard to align hips, spine, and neck during side-lying work.",
     "clinical_application": "Clients with scoliosis or hip discomfort benefit from enhanced side-lying support during massage.",
     "source_reference": "Massage Practice Essentials – Fritz",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -260,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["side-lying", "massage technique", "bolsters"],
-    "keywords": ["positioning", "alignment", "massage setup"],
+    "tags": [
+      "side-lying",
+      "massage technique",
+      "bolsters"
+    ],
+    "keywords": [
+      "positioning",
+      "alignment",
+      "massage setup"
+    ],
     "synonyms": null
   },
   {
@@ -279,7 +364,6 @@
     "long_explanation": "The biofield, also called the human energy field, is a dynamic, organizing energy system believed to play a role in physical, emotional, and spiritual health. It encompasses and interacts with the physical body.",
     "clinical_application": "Massage therapists trained in energy-based techniques like Reiki often reference the biofield during treatment.",
     "source_reference": "National Center for Complementary and Integrative Health (NCCIH)",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -288,21 +372,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["biofield", "energy body", "subtle energy"],
-    "keywords": ["aura", "energy field", "massage therapy"],
+    "tags": [
+      "biofield",
+      "energy body",
+      "subtle energy"
+    ],
+    "keywords": [
+      "aura",
+      "energy field",
+      "massage therapy"
+    ],
     "synonyms": null
   },
   {
     "id": "left_vs_right_lateral_lie_012",
     "correctAnswer": "Chakras",
     "question": "Which traditional system describes seven major energy centers aligned along the spine?",
-    "options": ["Chakras", "Meridians", "Dermatomes", "Fascial trains"],
+    "options": [
+      "Chakras",
+      "Meridians",
+      "Dermatomes",
+      "Fascial trains"
+    ],
     "topics": ["modalities", "techniques", "left_vs_right_lateral_lie"],
     "short_explanation": "Chakras are central to Indian energetic anatomy.",
     "long_explanation": "The chakra system outlines seven energy centers along the central channel of the body, each linked to different emotional, physical, and spiritual functions. These centers interact with the biofield.",
     "clinical_application": "Massage techniques that involve energetic intention or emotional release may focus on balancing the chakras.",
     "source_reference": "Anodea Judith – Wheels of Life",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -311,8 +407,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chakras", "energy centers", "subtle anatomy"],
-    "keywords": ["chakra", "energy healing", "massage"],
+    "tags": [
+      "chakras",
+      "energy centers",
+      "subtle anatomy"
+    ],
+    "keywords": [
+      "chakra",
+      "energy healing",
+      "massage"
+    ],
     "synonyms": null
   },
   {
@@ -330,7 +434,6 @@
     "long_explanation": "Therapeutic Touch is a contemporary healing modality where practitioners consciously direct energy through intention and hand movements in the client's energy field to restore balance.",
     "clinical_application": "Practitioners may use Therapeutic Touch to calm anxiety or support relaxation at the end of a massage session.",
     "source_reference": "Krieger – Therapeutic Touch",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -339,21 +442,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["therapeutic touch", "biofield therapy", "energy healing"],
-    "keywords": ["non-contact", "energy field", "subtle body"],
+    "tags": [
+      "therapeutic touch",
+      "biofield therapy",
+      "energy healing"
+    ],
+    "keywords": [
+      "non-contact",
+      "energy field",
+      "subtle body"
+    ],
     "synonyms": null
   },
   {
     "id": "left_vs_right_lateral_lie_014",
     "correctAnswer": "Green",
     "question": "What color is traditionally associated with the heart chakra?",
-    "options": ["Green", "Red", "Blue", "Orange"],
+    "options": [
+      "Green",
+      "Red",
+      "Blue",
+      "Orange"
+    ],
     "topics": ["modalities", "techniques", "left_vs_right_lateral_lie"],
     "short_explanation": "Green corresponds to Anahata, the heart chakra.",
     "long_explanation": "The heart chakra (Anahata) is linked to compassion, love, and connection. Its traditional color is green, symbolizing growth and healing.",
     "clinical_application": "Energy bodywork targeting emotional trauma may include heart chakra balancing using color visualization.",
     "source_reference": "Eastern Bodywork and Chakras",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -362,8 +477,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["heart chakra", "chakra color", "anahata"],
-    "keywords": ["chakra", "green energy", "emotional healing"],
+    "tags": [
+      "heart chakra",
+      "chakra color",
+      "anahata"
+    ],
+    "keywords": [
+      "chakra",
+      "green energy",
+      "emotional healing"
+    ],
     "synonyms": null
   },
   {
@@ -381,7 +504,6 @@
     "long_explanation": "Reiki is a Japanese energy healing practice that involves channeling energy through the hands to stimulate the recipient’s self-healing response, often focused on chakra zones.",
     "clinical_application": "A massage therapist trained in Reiki may combine gentle touch with energy intention along chakra lines.",
     "source_reference": "Reiki Manual by Diane Stein",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -390,8 +512,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Reiki", "chakras", "universal energy"],
-    "keywords": ["energy channeling", "hands-on healing", "life force"],
+    "tags": [
+      "Reiki",
+      "chakras",
+      "universal energy"
+    ],
+    "keywords": [
+      "energy channeling",
+      "hands-on healing",
+      "life force"
+    ],
     "synonyms": null
   },
   {
@@ -409,7 +539,6 @@
     "long_explanation": "Blockages or imbalances in the energy field can correspond with chronic tension, fatigue, emotional instability, or immune issues, often treated holistically in bodywork.",
     "clinical_application": "Massage clients with persistent knots or exhaustion may benefit from energy-balancing techniques in addition to structural work.",
     "source_reference": "Healing Touch Program Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -418,8 +547,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["energy imbalance", "fatigue", "subtle symptoms"],
-    "keywords": ["biofield", "chronic pain", "massage integration"],
+    "tags": [
+      "energy imbalance",
+      "fatigue",
+      "subtle symptoms"
+    ],
+    "keywords": [
+      "biofield",
+      "chronic pain",
+      "massage integration"
+    ],
     "synonyms": null
   },
   {
@@ -437,7 +574,6 @@
     "long_explanation": "Located at the base of the spine, the root chakra governs basic survival instincts, body connection, and feelings of safety and trust.",
     "clinical_application": "When a client feels anxious or ungrounded, grounding massage techniques and root chakra work may help restore balance.",
     "source_reference": "Wheels of Life by Anodea Judith",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "easy",
@@ -446,8 +582,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["root chakra", "grounding", "survival"],
-    "keywords": ["muladhara", "safety", "chakra healing"],
+    "tags": [
+      "root chakra",
+      "grounding",
+      "survival"
+    ],
+    "keywords": [
+      "muladhara",
+      "safety",
+      "chakra healing"
+    ],
     "synonyms": null
   },
   {
@@ -465,7 +609,6 @@
     "long_explanation": "Practitioners of energy work may develop sensitivity to subtle cues like warmth, tingling, or sensation shifts while hovering hands over the client’s field.",
     "clinical_application": "Some therapists scan the biofield for hotspots or stagnation areas before deciding where to begin hands-on or energetic techniques.",
     "source_reference": "Energy Healing – Brennan",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -474,21 +617,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["intuitive scanning", "energy assessment", "biofield"],
-    "keywords": ["non-contact", "subtle perception", "massage therapy"],
+    "tags": [
+      "intuitive scanning",
+      "energy assessment",
+      "biofield"
+    ],
+    "keywords": [
+      "non-contact",
+      "subtle perception",
+      "massage therapy"
+    ],
     "synonyms": null
   },
   {
     "id": "left_vs_right_lateral_lie_019",
     "correctAnswer": "Electromagnetic field (EMF)",
     "question": "What scientific term is sometimes used to describe measurable aspects of the human energy field?",
-    "options": ["Electromagnetic field (EMF)", "Aura", "Qi", "Chakra current"],
+    "options": [
+      "Electromagnetic field (EMF)",
+      "Aura",
+      "Qi",
+      "Chakra current"
+    ],
     "topics": ["modalities", "techniques", "left_vs_right_lateral_lie"],
     "short_explanation": "EMFs can describe measurable fields produced by the body.",
     "long_explanation": "Scientific research shows that the heart and brain produce electromagnetic fields. These may correlate with traditional ideas of energy fields in practices like therapeutic touch.",
     "clinical_application": "Heart rate variability and biofeedback methods are grounded in understanding human EMFs for stress and healing support.",
     "source_reference": "HeartMath Institute",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -497,8 +652,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["EMF", "biofield science", "magnetism"],
-    "keywords": ["electromagnetic", "heart field", "energy medicine"],
+    "tags": [
+      "EMF",
+      "biofield science",
+      "magnetism"
+    ],
+    "keywords": [
+      "electromagnetic",
+      "heart field",
+      "energy medicine"
+    ],
     "synonyms": null
   },
   {
@@ -516,7 +679,6 @@
     "long_explanation": "Healing Touch practitioners use intention, heart-centered awareness, and light or near-body touch to support energetic alignment and healing in clients.",
     "clinical_application": "Massage therapists certified in Healing Touch may offer it as a supportive option for emotionally sensitive clients or those with chronic conditions.",
     "source_reference": "Healing Touch Program Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/left_vs_right_lateral_lie.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -525,8 +687,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["healing touch", "energy field", "visualization"],
-    "keywords": ["light touch", "intention", "massage integration"],
+    "tags": [
+      "healing touch",
+      "energy field",
+      "visualization"
+    ],
+    "keywords": [
+      "light touch",
+      "intention",
+      "massage integration"
+    ],
     "synonyms": null
   }
 ]

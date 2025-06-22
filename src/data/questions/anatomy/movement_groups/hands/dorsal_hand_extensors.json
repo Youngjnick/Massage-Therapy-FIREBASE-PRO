@@ -14,7 +14,6 @@
     "long_explanation": "The extensor digitorum muscle originates from the lateral epicondyle and inserts via tendons into the extensor expansions of digits 2–5. It’s the main muscle responsible for extending the fingers at the MCP joints.",
     "clinical_application": "Massage techniques targeting extensor digitorum can help relieve overuse strain in clients who perform repetitive gripping or typing tasks.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["extensor digitorum", "dorsal hand", "MCP joint"],
-    "keywords": ["finger extension", "extensor tendons", "repetitive strain"],
+    "tags": [
+      "extensor digitorum",
+      "dorsal hand",
+      "MCP joint"
+    ],
+    "keywords": [
+      "finger extension",
+      "extensor tendons",
+      "repetitive strain"
+    ],
     "synonyms": null
   },
   {
     "id": "dorsal_hand_extensors_002",
     "correctAnswer": "Index finger",
     "question": "The extensor indicis tendon is specifically associated with which digit?",
-    "options": ["Thumb", "Index finger", "Middle finger", "Little finger"],
+    "options": [
+      "Thumb",
+      "Index finger",
+      "Middle finger",
+      "Little finger"
+    ],
     "topics": ["anatomy", "movement_groups", "hands", "dorsal_hand_extensors"],
     "short_explanation": "Extensor indicis extends the index finger independently.",
     "long_explanation": "The extensor indicis originates from the posterior ulna and inserts into the extensor expansion of the index finger, allowing independent extension of digit 2.",
     "clinical_application": "Clients with overuse of the index finger (e.g., tech use) may benefit from myofascial release of extensor indicis.",
     "source_reference": "Clinical Massage Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["extensor indicis", "index finger", "dorsal forearm"],
-    "keywords": ["digit 2", "extensor tendon", "independent extension"],
+    "tags": [
+      "extensor indicis",
+      "index finger",
+      "dorsal forearm"
+    ],
+    "keywords": [
+      "digit 2",
+      "extensor tendon",
+      "independent extension"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "The extensor pollicis longus tendon curves around Lister’s tubercle and passes through the third extensor compartment of the dorsal wrist.",
     "clinical_application": "Understanding tendon compartments is important in assessing tenosynovitis (e.g., de Quervain’s) and selecting proper massage techniques.",
     "source_reference": "Netter’s Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -79,7 +97,11 @@
       "dorsal compartments",
       "tendon pathways"
     ],
-    "keywords": ["Lister’s tubercle", "third compartment", "thumb extensor"],
+    "keywords": [
+      "Lister’s tubercle",
+      "third compartment",
+      "thumb extensor"
+    ],
     "synonyms": null
   },
   {
@@ -97,7 +119,6 @@
     "long_explanation": "During active finger extension against resistance, the tendons of extensor digitorum become visibly raised and are easily palpated across the back of the hand.",
     "clinical_application": "Palpation of these tendons aids in assessing extensor integrity and in applying cross-fiber friction massage to reduce adhesions.",
     "source_reference": "Palpation and Assessment Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -106,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palpation", "dorsal tendons", "finger extension"],
-    "keywords": ["extensor digitorum", "dorsum", "palpation technique"],
+    "tags": [
+      "palpation",
+      "dorsal tendons",
+      "finger extension"
+    ],
+    "keywords": [
+      "extensor digitorum",
+      "dorsum",
+      "palpation technique"
+    ],
     "synonyms": null
   },
   {
@@ -125,7 +154,6 @@
     "long_explanation": "The extensor pollicis longus tendon emerges from the posterior forearm, curves around Lister’s tubercle, and inserts into the base of the distal phalanx of the thumb. It plays a key role in thumb extension.",
     "clinical_application": "Massage targeting EPL helps restore thumb mobility in overuse syndromes like gamer’s thumb or text thumb.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -134,7 +162,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thumb tendon", "EPL", "oblique course"],
+    "tags": [
+      "thumb tendon",
+      "EPL",
+      "oblique course"
+    ],
     "keywords": [
       "extensor pollicis longus",
       "thumb extension",
@@ -157,7 +189,6 @@
     "long_explanation": "De Quervain’s tenosynovitis is an overuse injury caused by repetitive thumb motion. It involves inflammation of the synovial sheath surrounding the extensor pollicis brevis and abductor pollicis longus tendons. This condition is commonly seen in postpartum individuals, athletes, and manual laborers.",
     "clinical_application": "Massage techniques like cross-fiber friction over the first dorsal compartment, combined with thumb splinting and rest, are helpful in treatment.",
     "source_reference": "Orthopedic Massage Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -166,7 +197,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["De Quervain", "thumb tendons", "overuse"],
+    "tags": [
+      "De Quervain",
+      "thumb tendons",
+      "overuse"
+    ],
     "keywords": [
       "extensor pollicis brevis",
       "abductor pollicis longus",
@@ -189,7 +224,6 @@
     "long_explanation": "Lateral epicondylitis, commonly known as tennis elbow, involves microtears and inflammation of the extensor carpi radialis brevis tendon at its origin on the lateral epicondyle. It results from repetitive wrist extension or gripping movements.",
     "clinical_application": "Deep tissue massage and myofascial release to the lateral forearm, along with eccentric wrist extensor training, are commonly used to rehabilitate this condition.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -198,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tennis elbow", "ECRB", "lateral epicondylitis"],
-    "keywords": ["wrist extension", "forearm pain", "overuse"],
+    "tags": [
+      "tennis elbow",
+      "ECRB",
+      "lateral epicondylitis"
+    ],
+    "keywords": [
+      "wrist extension",
+      "forearm pain",
+      "overuse"
+    ],
     "synonyms": null
   },
   {
@@ -217,7 +259,6 @@
     "long_explanation": "Cross-fiber friction involves applying firm, slow, perpendicular pressure across the tendon fibers to break down adhesions and improve mobility. This technique is effective for extensor tendons on the dorsum of the hand when restricted by scar tissue or chronic inflammation.",
     "clinical_application": "Use this strategy post-injury or in repetitive strain cases to enhance tendon glide and reduce discomfort.",
     "source_reference": "Clinical Massage Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -226,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage strategy", "cross-fiber friction", "adhesion"],
-    "keywords": ["tendon release", "extensor tendon", "manual therapy"],
+    "tags": [
+      "massage strategy",
+      "cross-fiber friction",
+      "adhesion"
+    ],
+    "keywords": [
+      "tendon release",
+      "extensor tendon",
+      "manual therapy"
+    ],
     "synonyms": null
   },
   {
@@ -245,7 +294,6 @@
     "long_explanation": "Extensor digitorum is the primary extensor for digits 2–5, while extensor indicis provides additional extension for the index finger. Dysfunction or injury to these tendons can impair the ability to extend the fingers at the MCP and IP joints.",
     "clinical_application": "Assess tendon strength and consider soft tissue work to restore function. Postural taping and tendon gliding exercises may also help.",
     "source_reference": "Orthopedic Assessment Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -254,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["finger extension", "extensor digitorum", "extensor indicis"],
-    "keywords": ["tendon weakness", "dorsal hand", "manual therapy"],
+    "tags": [
+      "finger extension",
+      "extensor digitorum",
+      "extensor indicis"
+    ],
+    "keywords": [
+      "tendon weakness",
+      "dorsal hand",
+      "manual therapy"
+    ],
     "synonyms": null
   },
   {
@@ -273,7 +329,6 @@
     "long_explanation": "To palpate the extensor indicis tendon, ask the client to flex all fingers except the index, which should be actively extended. This isolates the extensor indicis action and allows clear palpation along the ulnar side of the extensor digitorum tendon.",
     "clinical_application": "This technique is useful for assessing function post-tendon injury or surgery and guiding targeted massage therapy.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/hands/dorsal_hand_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -282,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palpation", "extensor indicis", "assessment"],
-    "keywords": ["index finger", "tendon testing", "dorsal hand"],
+    "tags": [
+      "palpation",
+      "extensor indicis",
+      "assessment"
+    ],
+    "keywords": [
+      "index finger",
+      "tendon testing",
+      "dorsal hand"
+    ],
     "synonyms": null
   }
 ]

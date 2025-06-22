@@ -14,7 +14,6 @@
     "long_explanation": "Massage for older adults often aims to increase blood flow, reduce stress, and ease musculoskeletal discomfort, promoting overall well-being.",
     "clinical_application": "An elderly client with arthritis receives regular massage to reduce joint stiffness and promote relaxation.",
     "source_reference": "Massage Therapy Principles & Practice – Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["geriatric massage", "older adults", "relaxation"],
-    "keywords": ["circulation", "elderly", "massage therapy"],
+    "tags": [
+      "geriatric massage",
+      "older adults",
+      "relaxation"
+    ],
+    "keywords": [
+      "circulation",
+      "elderly",
+      "massage therapy"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "Due to fragile skin, decreased muscle mass, and potential for bruising, lighter pressure is safer and more comfortable for elderly clients.",
     "clinical_application": "A massage therapist avoids deep techniques and uses gentle strokes for a client with thin skin and a history of bruising.",
     "source_reference": "Massage for the Hospital Patient and Medically Frail Client – Gayle MacDonald",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +57,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pressure", "geriatric safety"],
-    "keywords": ["light massage", "fragile skin"],
+    "tags": [
+      "pressure",
+      "geriatric safety"
+    ],
+    "keywords": [
+      "light massage",
+      "fragile skin"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +82,6 @@
     "long_explanation": "Clients with excessive thoracic curvature may experience discomfort lying flat; bolsters or reclined positioning support spinal alignment.",
     "clinical_application": "An older adult with a hunchback receives massage in a supported side-lying position to reduce pressure on the spine.",
     "source_reference": "Massage for the Hospital Patient – MacDonald",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "medium",
@@ -79,21 +90,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["positioning", "kyphosis", "elder care"],
-    "keywords": ["body mechanics", "spinal curve", "supportive positioning"],
+    "tags": [
+      "positioning",
+      "kyphosis",
+      "elder care"
+    ],
+    "keywords": [
+      "body mechanics",
+      "spinal curve",
+      "supportive positioning"
+    ],
     "synonyms": null
   },
   {
     "id": "geriatric_massage_004",
     "correctAnswer": "Anticoagulant use",
     "question": "Which condition may require extra caution due to skin fragility in seniors?",
-    "options": ["Tendinitis", "Hypertension", "Anticoagulant use", "Myopia"],
+    "options": [
+      "Tendinitis",
+      "Hypertension",
+      "Anticoagulant use",
+      "Myopia"
+    ],
     "topics": ["modalities", "special_populations", "geriatric_massage"],
     "short_explanation": "Anticoagulants increase risk of bruising.",
     "long_explanation": "Many elderly clients are on blood thinners, which heighten susceptibility to bruising and bleeding. Pressure and strokes must be carefully adjusted.",
     "clinical_application": "The therapist confirms medication history and avoids aggressive strokes on an 82-year-old taking warfarin.",
     "source_reference": "Mosby's Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "medium",
@@ -102,8 +125,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anticoagulants", "elderly care", "massage risk"],
-    "keywords": ["bruising", "medication", "caution"],
+    "tags": [
+      "anticoagulants",
+      "elderly care",
+      "massage risk"
+    ],
+    "keywords": [
+      "bruising",
+      "medication",
+      "caution"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +152,6 @@
     "long_explanation": "Physical touch offers comfort, reassurance, and a sense of connection, which are especially important for seniors living alone or in care facilities.",
     "clinical_application": "A massage therapist provides weekly sessions in a retirement home to help residents feel more connected and calm.",
     "source_reference": "Touch Research Institute – Tiffany Field",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "medium",
@@ -130,8 +160,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["emotional support", "elder care"],
-    "keywords": ["loneliness", "social touch", "comfort"],
+    "tags": [
+      "emotional support",
+      "elder care"
+    ],
+    "keywords": [
+      "loneliness",
+      "social touch",
+      "comfort"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +186,6 @@
     "long_explanation": "Osteoporosis reduces bone density and increases fracture risk. Therapists should avoid compressive techniques over vertebrae or joints.",
     "clinical_application": "A client with osteoporosis receives only gentle stroking on the spine and hips, with no deep kneading.",
     "source_reference": "Massage Therapy Principles & Practice – Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "hard",
@@ -158,21 +194,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["osteoporosis", "bone safety"],
-    "keywords": ["fracture risk", "massage modifications"],
+    "tags": [
+      "osteoporosis",
+      "bone safety"
+    ],
+    "keywords": [
+      "fracture risk",
+      "massage modifications"
+    ],
     "synonyms": null
   },
   {
     "id": "geriatric_massage_007",
     "correctAnswer": "Kyphosis",
     "question": "Which common postural pattern may increase in geriatric clients?",
-    "options": ["Lordosis", "Kyphosis", "Scoliosis", "Forward pelvic tilt"],
+    "options": [
+      "Lordosis",
+      "Kyphosis",
+      "Scoliosis",
+      "Forward pelvic tilt"
+    ],
     "topics": ["modalities", "special_populations", "geriatric_massage"],
     "short_explanation": "Kyphosis is common with aging due to vertebral changes.",
     "long_explanation": "Age-related disc degeneration and muscle weakness can cause excessive thoracic kyphosis, affecting respiratory and muscular function.",
     "clinical_application": "Massage focuses on opening the chest and lengthening the back to address postural strain.",
     "source_reference": "Muscles: Testing & Function – Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "medium",
@@ -181,8 +227,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["kyphosis", "geriatric posture"],
-    "keywords": ["spinal curve", "thoracic flexion"],
+    "tags": [
+      "kyphosis",
+      "geriatric posture"
+    ],
+    "keywords": [
+      "spinal curve",
+      "thoracic flexion"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +252,6 @@
     "long_explanation": "Neuropathy reduces tactile feedback, increasing the risk of unnoticed injury. Therapists must monitor visually and communicate regularly.",
     "clinical_application": "A therapist avoids friction and checks skin redness frequently while massaging a diabetic client with foot neuropathy.",
     "source_reference": "Mosby’s Guide to Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "hard",
@@ -209,8 +260,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["neuropathy", "geriatric care"],
-    "keywords": ["sensation", "nerve damage", "foot care"],
+    "tags": [
+      "neuropathy",
+      "geriatric care"
+    ],
+    "keywords": [
+      "sensation",
+      "nerve damage",
+      "foot care"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +286,6 @@
     "long_explanation": "While massage offers many physical and emotional benefits, it does not cure or reverse conditions like dementia, though it may ease associated anxiety.",
     "clinical_application": "Massage soothes agitation in a client with Alzheimer’s but does not affect memory loss.",
     "source_reference": "Massage for the Hospital Patient – MacDonald",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "hard",
@@ -237,8 +294,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["geriatric benefits", "limitations"],
-    "keywords": ["dementia", "massage effects"],
+    "tags": [
+      "geriatric benefits",
+      "limitations"
+    ],
+    "keywords": [
+      "dementia",
+      "massage effects"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +319,6 @@
     "long_explanation": "Frail elderly clients may tolerate only 10–20 minutes of massage at first, especially if bed-bound or weak. Sessions can increase gradually over time.",
     "clinical_application": "The therapist begins with a 15-minute gentle foot and hand massage, gradually increasing to 30 minutes over several weeks.",
     "source_reference": "Massage for the Hospital Patient – MacDonald",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/geriatric_massage.json",
     "question_type": null,
     "difficulty": "hard",
@@ -265,8 +327,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["duration", "frailty", "care planning"],
-    "keywords": ["time limit", "elder care", "massage tolerance"],
+    "tags": [
+      "duration",
+      "frailty",
+      "care planning"
+    ],
+    "keywords": [
+      "time limit",
+      "elder care",
+      "massage tolerance"
+    ],
     "synonyms": null
   }
 ]

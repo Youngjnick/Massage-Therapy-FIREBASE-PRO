@@ -1,0 +1,55 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- 'progressbar "Quiz progress: 0%"'
+- text: 0 %
+- group "Question Progress":
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+- group "What is the origin of the rectus abdominis muscle?":
+  - text: What is the origin of the rectus abdominis muscle?
+  - list:
+    - listitem:
+      - 'radio "Option A: Pubic crest and pubic symphysis"'
+      - text: A. Pubic crest and pubic symphysis
+    - listitem:
+      - 'radio "Option B: Xiphoid process"'
+      - text: B. Xiphoid process
+    - listitem:
+      - 'radio "Option C: Iliac crest"'
+      - text: C. Iliac crest
+    - listitem:
+      - 'radio "Option D: Costal cartilages of ribs 5-7"'
+      - text: D. Costal cartilages of ribs 5-7
+- text: "Quick Tip: The rectus abdominis originates from the pubic crest and symphysis. More Info: The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation. Clinical Application: Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt. Source: Trail Guide to the Body – Biel Tags: rectus abdominis, origin, core muscles Keywords: pubic crest, abdominal muscle, origin"
+- button "Previous question" [disabled]: Previous
+- button "Next question" [disabled]: Next
+- button "Finish quiz early": Finish
+- contentinfo:
+  - textbox "Search questions"
+```

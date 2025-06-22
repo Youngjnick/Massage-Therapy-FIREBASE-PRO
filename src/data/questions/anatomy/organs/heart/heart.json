@@ -14,7 +14,6 @@
     "long_explanation": "Deoxygenated blood from the superior and inferior vena cava enters the right atrium, then flows to the right ventricle and lungs for oxygenation.",
     "clinical_application": "Understanding blood flow is essential when massaging clients with heart conditions like congestive heart failure.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["heart chambers", "right atrium", "systemic circulation"],
-    "keywords": ["right atrium", "vena cava", "deoxygenated blood"],
+    "tags": [
+      "heart chambers",
+      "right atrium",
+      "systemic circulation"
+    ],
+    "keywords": [
+      "right atrium",
+      "vena cava",
+      "deoxygenated blood"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_002",
     "correctAnswer": "Tricuspid",
     "question": "Which valve prevents backflow from the right ventricle to the right atrium?",
-    "options": ["Bicuspid", "Pulmonary", "Tricuspid", "Aortic"],
+    "options": [
+      "Bicuspid",
+      "Pulmonary",
+      "Tricuspid",
+      "Aortic"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart"],
     "short_explanation": "The tricuspid valve separates the right atrium and right ventricle.",
     "long_explanation": "The tricuspid valve closes during right ventricular contraction to prevent blood from flowing back into the right atrium.",
     "clinical_application": "Mitral or tricuspid valve disorders may require light-pressure techniques during massage therapy.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "basic",
@@ -46,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["valves", "tricuspid", "heart"],
-    "keywords": ["AV valve", "right heart", "cardiac anatomy"],
+    "tags": [
+      "valves",
+      "tricuspid",
+      "heart"
+    ],
+    "keywords": [
+      "AV valve",
+      "right heart",
+      "cardiac anatomy"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_003",
     "correctAnswer": "SA node",
     "question": "What structure initiates the electrical impulse for heart contraction?",
-    "options": ["AV node", "SA node", "Purkinje fibers", "Bundle of His"],
+    "options": [
+      "AV node",
+      "SA node",
+      "Purkinje fibers",
+      "Bundle of His"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart"],
     "short_explanation": "The sinoatrial (SA) node is the pacemaker of the heart.",
     "long_explanation": "The SA node generates spontaneous electrical signals that set the rhythm of the heartbeat, transmitting to the AV node and ventricles.",
     "clinical_application": "Massage therapists should monitor for arrhythmia signs and use caution around carotid sinus areas.",
     "source_reference": "Guyton and Hall Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -69,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SA node", "pacemaker", "cardiac rhythm"],
-    "keywords": ["heart impulse", "SA node", "conduction system"],
+    "tags": [
+      "SA node",
+      "pacemaker",
+      "cardiac rhythm"
+    ],
+    "keywords": [
+      "heart impulse",
+      "SA node",
+      "conduction system"
+    ],
     "synonyms": null
   },
   {
@@ -88,7 +119,6 @@
     "long_explanation": "The left and right coronary arteries branch off the ascending aorta and deliver oxygen-rich blood to the heart tissue itself.",
     "clinical_application": "Understanding coronary supply is critical in clients with a history of bypass or angina.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -97,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["coronary arteries", "heart blood supply", "myocardium"],
-    "keywords": ["heart circulation", "cardiac muscle", "oxygenated blood"],
+    "tags": [
+      "coronary arteries",
+      "heart blood supply",
+      "myocardium"
+    ],
+    "keywords": [
+      "heart circulation",
+      "cardiac muscle",
+      "oxygenated blood"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +154,6 @@
     "long_explanation": "During systole, the ventricles contract to pump blood into the aorta and pulmonary arteries, while AV valves close to prevent backflow.",
     "clinical_application": "Clients with high blood pressure may have elevated systolic values—massage may support parasympathetic relaxation.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -125,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["systole", "cardiac cycle", "ventricular contraction"],
-    "keywords": ["systolic pressure", "heartbeat phases", "ventricle"],
+    "tags": [
+      "systole",
+      "cardiac cycle",
+      "ventricular contraction"
+    ],
+    "keywords": [
+      "systolic pressure",
+      "heartbeat phases",
+      "ventricle"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_006",
     "correctAnswer": "Mitral",
     "question": "Which valve is located between the left atrium and left ventricle?",
-    "options": ["Tricuspid", "Aortic", "Pulmonary", "Mitral"],
+    "options": [
+      "Tricuspid",
+      "Aortic",
+      "Pulmonary",
+      "Mitral"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart"],
     "short_explanation": "The mitral (bicuspid) valve regulates blood flow on the heart's left side.",
     "long_explanation": "The mitral valve allows oxygen-rich blood to flow from the left atrium to the left ventricle and prevents backflow during contraction.",
     "clinical_application": "Massage therapists should avoid deep work in prone position if client experiences mitral regurgitation symptoms.",
     "source_reference": "Moore’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "basic",
@@ -148,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mitral valve", "left heart", "cardiac anatomy"],
-    "keywords": ["bicuspid valve", "atrioventricular valve", "left ventricle"],
+    "tags": [
+      "mitral valve",
+      "left heart",
+      "cardiac anatomy"
+    ],
+    "keywords": [
+      "bicuspid valve",
+      "atrioventricular valve",
+      "left ventricle"
+    ],
     "synonyms": null
   },
   {
@@ -167,7 +224,6 @@
     "long_explanation": "The interventricular and interatrial septa prevent the mixing of oxygenated and deoxygenated blood under normal conditions.",
     "clinical_application": "Congenital septal defects can cause murmurs or cyanosis—important red flags in health screening.",
     "source_reference": "Embryology by Langman",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -176,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["septum", "heart wall", "chamber separation"],
-    "keywords": ["interventricular septum", "heart partition", "VSD"],
+    "tags": [
+      "septum",
+      "heart wall",
+      "chamber separation"
+    ],
+    "keywords": [
+      "interventricular septum",
+      "heart partition",
+      "VSD"
+    ],
     "synonyms": null
   },
   {
@@ -195,7 +259,6 @@
     "long_explanation": "Unlike most veins, the pulmonary veins carry oxygenated blood. They enter the heart’s left atrium to begin systemic circulation.",
     "clinical_application": "Knowledge of this reversal is helpful in recognizing vascular diagrams and interpreting imaging.",
     "source_reference": "Netter's Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "basic",
@@ -204,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary vein", "lung circulation", "oxygenated blood"],
-    "keywords": ["left atrium", "pulmonary return", "heart-lung connection"],
+    "tags": [
+      "pulmonary vein",
+      "lung circulation",
+      "oxygenated blood"
+    ],
+    "keywords": [
+      "left atrium",
+      "pulmonary return",
+      "heart-lung connection"
+    ],
     "synonyms": null
   },
   {
@@ -223,7 +294,6 @@
     "long_explanation": "The pericardium surrounds the heart, containing a lubricating fluid that reduces friction during contractions and provides mechanical protection.",
     "clinical_application": "Pericarditis (inflammation) may present as chest pain—a concern for massage therapists to identify and refer.",
     "source_reference": "Snell’s Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -232,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pericardium", "heart sac", "friction reduction"],
-    "keywords": ["pericardial sac", "serous membrane", "heart protection"],
+    "tags": [
+      "pericardium",
+      "heart sac",
+      "friction reduction"
+    ],
+    "keywords": [
+      "pericardial sac",
+      "serous membrane",
+      "heart protection"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +329,6 @@
     "long_explanation": "Located on the lateral aspect of the forearm, the radial artery is superficial and easily palpated, making it ideal for pulse checks.",
     "clinical_application": "Massage therapists can assess baseline pulse before and after treatments to monitor autonomic changes.",
     "source_reference": "Bates’ Guide to Physical Examination",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart.json",
     "question_type": null,
     "difficulty": "basic",
@@ -260,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["radial pulse", "artery", "heart rate"],
-    "keywords": ["pulse check", "radial artery", "wrist pulse"],
+    "tags": [
+      "radial pulse",
+      "artery",
+      "heart rate"
+    ],
+    "keywords": [
+      "pulse check",
+      "radial artery",
+      "wrist pulse"
+    ],
     "synonyms": null
   }
 ]

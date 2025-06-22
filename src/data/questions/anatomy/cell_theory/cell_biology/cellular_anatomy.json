@@ -14,7 +14,6 @@
     "long_explanation": "The cell membrane is a semipermeable barrier that surrounds the cell, allowing selective transport of nutrients, ions, and waste. It also supports communication and recognition through membrane proteins and receptors.",
     "clinical_application": "Damage to the cell membrane, as seen in trauma or infection, can lead to loss of homeostasis and cell death. This is crucial in understanding inflammation and immune responses.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_membrane", "anatomy_cells", "anatomy_protein"],
-    "keywords": ["anatomy_membrane", "anatomy_cells", "anatomy_protein"],
+    "tags": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_protein"
+    ],
+    "keywords": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_protein"
+    ],
     "synonyms": null
   },
   {
     "id": "cellular_anatomy_002",
     "correctAnswer": "Mitochondrion",
     "question": "Which organelle is known as the 'powerhouse' of the cell?",
-    "options": ["Nucleus", "Ribosome", "Mitochondrion", "Golgi apparatus"],
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondrion",
+      "Golgi apparatus"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cellular_anatomy"],
     "short_explanation": "The mitochondrion generates energy in the form of ATP.",
     "long_explanation": "Mitochondria convert glucose and oxygen into ATP through cellular respiration. They also regulate apoptosis (programmed cell death) and play roles in calcium signaling and metabolism.",
     "clinical_application": "Mitochondrial dysfunction is linked to neurodegenerative diseases and metabolic syndromes, making it a focus in aging and chronic disease research.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -46,21 +57,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_nucleus", "anatomy_organelle", "anatomy_ribosomes"],
-    "keywords": ["anatomy_nucleus", "anatomy_organelle", "anatomy_ribosomes"],
+    "tags": [
+      "anatomy_nucleus",
+      "anatomy_organelle",
+      "anatomy_ribosomes"
+    ],
+    "keywords": [
+      "anatomy_nucleus",
+      "anatomy_organelle",
+      "anatomy_ribosomes"
+    ],
     "synonyms": null
   },
   {
     "id": "cellular_anatomy_003",
     "correctAnswer": "Nucleus",
     "question": "Which structure contains the cell’s genetic material?",
-    "options": ["Endoplasmic reticulum", "Golgi body", "Nucleus", "Lysosome"],
+    "options": [
+      "Endoplasmic reticulum",
+      "Golgi body",
+      "Nucleus",
+      "Lysosome"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cellular_anatomy"],
     "short_explanation": "The nucleus houses and protects the cell’s DNA.",
     "long_explanation": "The nucleus is a membrane-bound structure that stores DNA and coordinates activities like growth, protein synthesis, and cell division. It contains the nucleolus and chromatin.",
     "clinical_application": "Mutations in nuclear DNA can cause genetic disorders and cancers. Nuclear changes are key diagnostic indicators in pathology.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -69,8 +92,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_nucleus", "anatomy_genetic_material"],
-    "keywords": ["anatomy_nucleus", "anatomy_genetic_material"],
+    "tags": [
+      "anatomy_nucleus",
+      "anatomy_genetic_material"
+    ],
+    "keywords": [
+      "anatomy_nucleus",
+      "anatomy_genetic_material"
+    ],
     "synonyms": null
   },
   {
@@ -88,7 +117,6 @@
     "long_explanation": "The rough ER is studded with ribosomes and modifies newly synthesized proteins, while the smooth ER synthesizes lipids and detoxifies chemicals. Together, they act as the cell’s manufacturing and shipping center.",
     "clinical_application": "ER stress is implicated in diseases like diabetes, Alzheimer’s, and cancer due to its role in protein folding and cellular stress responses.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -97,8 +125,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_protein", "anatomy_ribosomes"],
-    "keywords": ["anatomy_protein", "anatomy_ribosomes"],
+    "tags": [
+      "anatomy_protein",
+      "anatomy_ribosomes"
+    ],
+    "keywords": [
+      "anatomy_protein",
+      "anatomy_ribosomes"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +150,6 @@
     "long_explanation": "Ribosomes link amino acids into polypeptides by reading messenger RNA instructions. They may float freely or attach to the ER, supporting growth, repair, and cell signaling.",
     "clinical_application": "Antibiotics often target bacterial ribosomes. Ribosomal defects in humans can lead to disorders like Diamond-Blackfan anemia and some cancers.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -125,8 +158,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_protein"],
-    "keywords": ["anatomy_protein"],
+    "tags": [
+      "anatomy_protein"
+    ],
+    "keywords": [
+      "anatomy_protein"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +181,6 @@
     "long_explanation": "The Golgi receives vesicles from the ER, modifies proteins and lipids (e.g., glycosylation), and packages them into vesicles for transport within or outside the cell.",
     "clinical_application": "Disruption in Golgi function affects protein trafficking, contributing to diseases like congenital disorders of glycosylation (CDG).",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -153,21 +189,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_protein", "anatomy_dna", "biochemistry_glucose"],
-    "keywords": ["anatomy_protein", "anatomy_dna", "biochemistry_glucose"],
+    "tags": [
+      "anatomy_protein",
+      "anatomy_dna",
+      "biochemistry_glucose"
+    ],
+    "keywords": [
+      "anatomy_protein",
+      "anatomy_dna",
+      "biochemistry_glucose"
+    ],
     "synonyms": null
   },
   {
     "id": "cellular_anatomy_007",
     "correctAnswer": "Rough ER",
     "question": "Which type of ER has ribosomes attached and assists in protein synthesis?",
-    "options": ["Smooth ER", "Rough ER", "Golgi body", "Nucleolus"],
+    "options": [
+      "Smooth ER",
+      "Rough ER",
+      "Golgi body",
+      "Nucleolus"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cellular_anatomy"],
     "short_explanation": "Lysosomes break down waste and cellular debris.",
     "long_explanation": "Lysosomes contain enzymes that digest macromolecules, damaged organelles, and pathogens. They help recycle cellular components and maintain homeostasis.",
     "clinical_application": "Lysosomal storage diseases (e.g., Tay-Sachs) result from enzyme deficiencies, leading to toxic buildup and cell dysfunction.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -205,7 +253,6 @@
     "long_explanation": "The cytoskeleton is a network of microfilaments, microtubules, and intermediate filaments that maintain shape, anchor organelles, and facilitate intracellular transport and cell division.",
     "clinical_application": "Defects in cytoskeletal proteins are linked to diseases like muscular dystrophy and certain neuropathies.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -214,8 +261,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_protein"],
-    "keywords": ["anatomy_cells", "anatomy_protein"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_protein"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_protein"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +286,6 @@
     "long_explanation": "The nuclear envelope surrounds the nucleus and contains nuclear pores that allow selective exchange of RNA, proteins, and signaling molecules, ensuring controlled communication between nucleus and cytoplasm.",
     "clinical_application": "Altered nuclear transport is involved in viral replication and neurodegenerative diseases like ALS and Huntington’s.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -273,7 +325,6 @@
     "long_explanation": "The cytoplasm includes cytosol and suspended organelles. It’s where many metabolic reactions occur and facilitates molecular transport within the cell.",
     "clinical_application": "Cytoplasmic changes (e.g., inclusion bodies, vacuolization) are diagnostic clues in infection, cancer, and cell injury.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/cellular_anatomy.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -282,8 +333,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.109Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_ribosomes"],
-    "keywords": ["anatomy_cells", "anatomy_ribosomes"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_ribosomes"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_ribosomes"
+    ],
     "synonyms": null
   }
 ]

@@ -14,7 +14,6 @@
     "long_explanation": "Sensory (afferent) neurons detect stimuli such as touch, temperature, and pain, sending signals toward the brain or spinal cord for processing.",
     "clinical_application": "A massage therapist stimulating sensory receptors may indirectly influence CNS processing, affecting relaxation and awareness.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sensory neurons", "afferent pathway"],
-    "keywords": ["receptors", "afferent signals"],
+    "tags": [
+      "sensory neurons",
+      "afferent pathway"
+    ],
+    "keywords": [
+      "receptors",
+      "afferent signals"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +47,6 @@
     "long_explanation": "Motor (efferent) neurons exit the spinal cord to initiate contraction in skeletal muscles or secretion from glands.",
     "clinical_application": "Massage therapists often engage motor pathways through neuromuscular techniques to facilitate motor control and reduce hypertonicity.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +55,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["motor neurons", "efferent"],
-    "keywords": ["muscle control", "motor output"],
+    "tags": [
+      "motor neurons",
+      "efferent"
+    ],
+    "keywords": [
+      "muscle control",
+      "motor output"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +80,6 @@
     "long_explanation": "Interneurons serve as connectors and processors between sensory and motor neurons, forming complex networks for reflexes and cognition.",
     "clinical_application": "Understanding interneurons is important for therapists considering the impact of spinal reflex arcs on movement patterns.",
     "source_reference": "Kandel – Principles of Neural Science",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +88,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["interneurons", "CNS", "reflexes"],
-    "keywords": ["neural circuits", "processing"],
+    "tags": [
+      "interneurons",
+      "CNS",
+      "reflexes"
+    ],
+    "keywords": [
+      "neural circuits",
+      "processing"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +114,6 @@
     "long_explanation": "Bipolar neurons have two processes and are specialized for relaying sensory information from the retina, olfactory epithelium, and inner ear.",
     "clinical_application": "Disorders affecting bipolar neurons can alter balance or vision—key considerations when positioning clients.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +122,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bipolar neurons", "retina", "olfaction"],
-    "keywords": ["special senses", "retinal cells"],
+    "tags": [
+      "bipolar neurons",
+      "retina",
+      "olfaction"
+    ],
+    "keywords": [
+      "special senses",
+      "retinal cells"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +148,6 @@
     "long_explanation": "Unipolar neurons, also called pseudounipolar, are involved in sensory transmission, with one end detecting stimuli and the other transmitting it to the CNS.",
     "clinical_application": "Pain perception often involves unipolar neurons—key to understanding chronic pain patterns.",
     "source_reference": "Robbins Basic Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -135,21 +156,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["unipolar neurons", "sensory input"],
-    "keywords": ["pseudounipolar", "somatosensory"],
+    "tags": [
+      "unipolar neurons",
+      "sensory input"
+    ],
+    "keywords": [
+      "pseudounipolar",
+      "somatosensory"
+    ],
     "synonyms": null
   },
   {
     "id": "neuron_types_006",
     "correctAnswer": "Multipolar",
     "question": "What structural type are most motor neurons classified as?",
-    "options": ["Unipolar", "Bipolar", "Multipolar", "Pyramidal"],
+    "options": [
+      "Unipolar",
+      "Bipolar",
+      "Multipolar",
+      "Pyramidal"
+    ],
     "topics": ["anatomy", "systems", "nervous_system", "neuron_types"],
     "short_explanation": "Motor neurons are typically multipolar with multiple dendrites.",
     "long_explanation": "Multipolar neurons have one axon and multiple dendrites, allowing for integration of many inputs—essential for coordinating motor commands.",
     "clinical_application": "Massage techniques aimed at motor control (e.g., PNF) work in tandem with multipolar neuron pathways.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -158,8 +189,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["multipolar", "motor neurons"],
-    "keywords": ["axon", "dendrites", "motor integration"],
+    "tags": [
+      "multipolar",
+      "motor neurons"
+    ],
+    "keywords": [
+      "axon",
+      "dendrites",
+      "motor integration"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +215,6 @@
     "long_explanation": "Found in the cerebral cortex, pyramidal neurons integrate complex signals and are involved in voluntary movement, thought, and planning.",
     "clinical_application": "Mind-body therapies that engage cognition, like mindfulness massage, may influence pyramidal neuron activity.",
     "source_reference": "Kandel – Principles of Neural Science",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "hard",
@@ -186,21 +223,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pyramidal neurons", "cerebral cortex"],
-    "keywords": ["executive function", "cognitive processing"],
+    "tags": [
+      "pyramidal neurons",
+      "cerebral cortex"
+    ],
+    "keywords": [
+      "executive function",
+      "cognitive processing"
+    ],
     "synonyms": null
   },
   {
     "id": "neuron_types_008",
     "correctAnswer": "Association",
     "question": "Which term best describes the functional classification of interneurons?",
-    "options": ["Afferent", "Efferent", "Association", "Sensory"],
+    "options": [
+      "Afferent",
+      "Efferent",
+      "Association",
+      "Sensory"
+    ],
     "topics": ["anatomy", "systems", "nervous_system", "neuron_types"],
     "short_explanation": "Interneurons are association neurons that connect sensory and motor neurons.",
     "long_explanation": "Association neurons form networks that facilitate reflex arcs, integration, and modulation of neural circuits.",
     "clinical_application": "In spinal reflex therapy, understanding interneuron roles helps therapists design neuromuscular strategies.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -209,8 +256,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["interneurons", "association neurons"],
-    "keywords": ["reflex integration", "relay neurons"],
+    "tags": [
+      "interneurons",
+      "association neurons"
+    ],
+    "keywords": [
+      "reflex integration",
+      "relay neurons"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +281,6 @@
     "long_explanation": "Synaptic vesicles at axon terminals store neurotransmitters and are released during synaptic transmission across all neuron types.",
     "clinical_application": "Massage influencing neurotransmitter release (e.g., serotonin) depends on these synaptic structures.",
     "source_reference": "Neuroscience – Purves",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -237,8 +289,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["synapse", "neurotransmitters"],
-    "keywords": ["axon terminal", "synaptic cleft"],
+    "tags": [
+      "synapse",
+      "neurotransmitters"
+    ],
+    "keywords": [
+      "axon terminal",
+      "synaptic cleft"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +314,6 @@
     "long_explanation": "This structure allows integration of many inputs from other neurons, which is essential for motor function and CNS processing.",
     "clinical_application": "Massage that stimulates motor responses engages multipolar neurons in spinal and cranial pathways.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/nervous_system/neuron_types.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -265,8 +322,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["multipolar", "motor neuron"],
-    "keywords": ["dendrites", "axon", "neuron structure"],
+    "tags": [
+      "multipolar",
+      "motor neuron"
+    ],
+    "keywords": [
+      "dendrites",
+      "axon",
+      "neuron structure"
+    ],
     "synonyms": null
   }
 ]

@@ -14,7 +14,6 @@
     "long_explanation": "The suprascapular nerve arises from the upper trunk of the brachial plexus (C5–C6) and supplies the supraspinatus (abduction) and infraspinatus (external rotation).",
     "clinical_application": "Weakness in shoulder abduction or external rotation can indicate suprascapular nerve compression in the suprascapular notch.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["suprascapular", "supraspinatus", "infraspinatus"],
+    "tags": [
+      "suprascapular",
+      "supraspinatus",
+      "infraspinatus"
+    ],
     "keywords": [
       "shoulder nerve",
       "rotator cuff innervation",
@@ -46,7 +49,6 @@
     "long_explanation": "After supplying the supraspinatus, the nerve travels through the spinoglenoid notch to innervate the infraspinatus. Compression here may spare abduction but affect rotation.",
     "clinical_application": "Overhead athletes often develop spinoglenoid entrapment. Massage and strengthening may assist with recovery.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -55,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["entrapment", "spinoglenoid", "shoulder nerve"],
-    "keywords": ["shoulder impingement", "athlete injury", "nerve compression"],
+    "tags": [
+      "entrapment",
+      "spinoglenoid",
+      "shoulder nerve"
+    ],
+    "keywords": [
+      "shoulder impingement",
+      "athlete injury",
+      "nerve compression"
+    ],
     "synonyms": null
   },
   {
@@ -74,7 +84,6 @@
     "long_explanation": "The infraspinatus is a major external rotator. Loss of suprascapular innervation disrupts this function significantly.",
     "clinical_application": "Reduced control during overhead or throwing motions can indicate this nerve's involvement.",
     "source_reference": "Kendall’s Muscles: Testing and Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "basic",
@@ -83,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["external rotation", "rotator cuff", "infraspinatus"],
-    "keywords": ["shoulder mechanics", "nerve injury", "rotator weakness"],
+    "tags": [
+      "external rotation",
+      "rotator cuff",
+      "infraspinatus"
+    ],
+    "keywords": [
+      "shoulder mechanics",
+      "nerve injury",
+      "rotator weakness"
+    ],
     "synonyms": null
   },
   {
@@ -102,7 +119,6 @@
     "long_explanation": "The upper trunk (C5–C6) gives rise to the suprascapular nerve early in the brachial plexus pathway.",
     "clinical_application": "Brachial plexus injuries involving the upper trunk may affect supraspinatus and infraspinatus function.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -111,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brachial plexus", "upper trunk", "shoulder nerves"],
-    "keywords": ["nerve origin", "upper trunk lesion", "C5-C6"],
+    "tags": [
+      "brachial plexus",
+      "upper trunk",
+      "shoulder nerves"
+    ],
+    "keywords": [
+      "nerve origin",
+      "upper trunk lesion",
+      "C5-C6"
+    ],
     "synonyms": null
   },
   {
@@ -130,7 +154,6 @@
     "long_explanation": "The suprascapular notch, bridged by the superior transverse ligament, is a common site of nerve entrapment.",
     "clinical_application": "Careful palpation around this region helps identify muscular atrophy or nerve compression symptoms.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -139,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scapula", "nerve location", "suprascapular notch"],
-    "keywords": ["palpation", "ligament bridge", "nerve entrapment"],
+    "tags": [
+      "scapula",
+      "nerve location",
+      "suprascapular notch"
+    ],
+    "keywords": [
+      "palpation",
+      "ligament bridge",
+      "nerve entrapment"
+    ],
     "synonyms": null
   },
   {
@@ -158,7 +189,6 @@
     "long_explanation": "The nerve passes through the suprascapular notch before innervating both muscles. Entrapment here blocks both branches.",
     "clinical_application": "Patients may show signs of both abduction and external rotation weakness.",
     "source_reference": "Orthopedic Examination Techniques, Hoppenfeld",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -167,21 +197,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve entrapment", "shoulder innervation"],
-    "keywords": ["entrapment site", "rotator cuff deficit"],
+    "tags": [
+      "nerve entrapment",
+      "shoulder innervation"
+    ],
+    "keywords": [
+      "entrapment site",
+      "rotator cuff deficit"
+    ],
     "synonyms": null
   },
   {
     "id": "suprescapular_007",
     "correctAnswer": "Swimmers",
     "question": "Which profession may be prone to suprascapular nerve injury due to repetitive overhead movements?",
-    "options": ["Dentists", "Electricians", "Librarians", "Swimmers"],
+    "options": [
+      "Dentists",
+      "Electricians",
+      "Librarians",
+      "Swimmers"
+    ],
     "topics": ["anatomy", "innervations", "back_innervations", "suprescapular"],
     "short_explanation": "Swimmers frequently use overhead motions, risking nerve compression.",
     "long_explanation": "Repetitive abduction and rotation of the shoulder can stretch or compress the suprascapular nerve, especially at notches.",
     "clinical_application": "Massage and rehab for athletes often include nerve glides and rotator cuff stabilization strategies.",
     "source_reference": "Sports Injury Prevention Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "basic",
@@ -190,8 +230,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["athletic injury", "overhead stress", "swimmer's shoulder"],
-    "keywords": ["nerve compression", "overuse injury", "rotator rehab"],
+    "tags": [
+      "athletic injury",
+      "overhead stress",
+      "swimmer's shoulder"
+    ],
+    "keywords": [
+      "nerve compression",
+      "overuse injury",
+      "rotator rehab"
+    ],
     "synonyms": null
   },
   {
@@ -209,7 +257,6 @@
     "long_explanation": "This ligament converts the notch into a foramen through which the nerve travels, making it a frequent entrapment site.",
     "clinical_application": "Manual therapy should account for this anatomical choke point when addressing scapular pain or weakness.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -218,8 +265,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["transverse ligament", "nerve entrapment"],
-    "keywords": ["ligament bridge", "scapular notch anatomy"],
+    "tags": [
+      "transverse ligament",
+      "nerve entrapment"
+    ],
+    "keywords": [
+      "ligament bridge",
+      "scapular notch anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -237,7 +290,6 @@
     "long_explanation": "Although it may carry some proprioceptive fibers, its main role is motor innervation to supraspinatus and infraspinatus.",
     "clinical_application": "Targeted nerve reactivation or stimulation can help retrain affected rotator cuff muscles.",
     "source_reference": "Neuroanatomy Through Clinical Cases",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "basic",
@@ -246,8 +298,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["motor nerve", "nerve function", "shoulder"],
-    "keywords": ["nerve classification", "rotator innervation"],
+    "tags": [
+      "motor nerve",
+      "nerve function",
+      "shoulder"
+    ],
+    "keywords": [
+      "nerve classification",
+      "rotator innervation"
+    ],
     "synonyms": null
   },
   {
@@ -265,7 +324,6 @@
     "long_explanation": "When supraspinatus loses innervation, the muscle shrinks, creating visible hollowness in the supraspinous fossa.",
     "clinical_application": "Observation and palpation of muscle bulk help assess chronic denervation patterns.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/suprescapular.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -274,8 +332,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle wasting", "nerve palsy", "scapular region"],
-    "keywords": ["fossa hollowing", "rotator nerve damage"],
+    "tags": [
+      "muscle wasting",
+      "nerve palsy",
+      "scapular region"
+    ],
+    "keywords": [
+      "fossa hollowing",
+      "rotator nerve damage"
+    ],
     "synonyms": null
   }
 ]

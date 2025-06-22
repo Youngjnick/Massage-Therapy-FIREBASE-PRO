@@ -14,7 +14,6 @@
     "long_explanation": "The mitral valve allows blood flow from the left atrium to the left ventricle and prevents backflow during ventricular contraction. It has two cusps and is part of the left heart.",
     "clinical_application": "Clients with mitral valve prolapse may experience fatigue and shortness of breath—massage must be adapted accordingly.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mitral valve", "left heart", "valve anatomy"],
+    "tags": [
+      "mitral valve",
+      "left heart",
+      "valve anatomy"
+    ],
     "keywords": [
       "bicuspid",
       "atrioventricular",
@@ -47,7 +50,6 @@
     "long_explanation": "The tricuspid valve ensures one-way flow from the right atrium into the right ventricle, preventing regurgitation during systole.",
     "clinical_application": "Palpating jugular vein distension in clients with tricuspid insufficiency can provide insight into cardiac stress.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "basic",
@@ -56,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tricuspid", "right heart", "atrioventricular valve"],
-    "keywords": ["right atrium", "valve function", "cardiac flow"],
+    "tags": [
+      "tricuspid",
+      "right heart",
+      "atrioventricular valve"
+    ],
+    "keywords": [
+      "right atrium",
+      "valve function",
+      "cardiac flow"
+    ],
     "synonyms": null
   },
   {
@@ -75,7 +85,6 @@
     "long_explanation": "The aortic semilunar valve opens during left ventricular contraction, allowing blood into the aorta, and closes to prevent retrograde flow.",
     "clinical_application": "Aortic stenosis presents with fainting and fatigue—massage should avoid increasing cardiovascular demand.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -84,21 +93,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aortic valve", "left ventricle", "semilunar valve"],
-    "keywords": ["valve closure", "cardiac output", "blood pressure"],
+    "tags": [
+      "aortic valve",
+      "left ventricle",
+      "semilunar valve"
+    ],
+    "keywords": [
+      "valve closure",
+      "cardiac output",
+      "blood pressure"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_valves_004",
     "correctAnswer": "Pulmonary",
     "question": "Which valve opens during right ventricular contraction?",
-    "options": ["Mitral", "Pulmonary", "Tricuspid", "Aortic"],
+    "options": [
+      "Mitral",
+      "Pulmonary",
+      "Tricuspid",
+      "Aortic"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "heart_valves"],
     "short_explanation": "The pulmonary valve opens to allow blood flow to the lungs.",
     "long_explanation": "The pulmonary semilunar valve opens as the right ventricle contracts, pushing blood into the pulmonary artery and toward the lungs.",
     "clinical_application": "Clients with pulmonary hypertension may experience increased strain on the right heart and valve structures.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -107,21 +128,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary valve", "semilunar", "right heart"],
-    "keywords": ["ventricular systole", "blood to lungs", "semilunar valve"],
+    "tags": [
+      "pulmonary valve",
+      "semilunar",
+      "right heart"
+    ],
+    "keywords": [
+      "ventricular systole",
+      "blood to lungs",
+      "semilunar valve"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_valves_005",
     "correctAnswer": "3",
     "question": "How many cusps does the tricuspid valve have?",
-    "options": ["2", "3", "4", "5"],
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "heart_valves"],
     "short_explanation": "The tricuspid valve has three cusps.",
     "long_explanation": "The three leaflets of the tricuspid valve are anterior, posterior, and septal, enabling effective closure and blood flow regulation.",
     "clinical_application": "Valve anatomy is important when identifying murmurs during auscultation or assessing fatigue syndromes.",
     "source_reference": "Clinically Oriented Anatomy by Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "basic",
@@ -130,21 +163,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tricuspid valve", "cusps", "leaflets"],
-    "keywords": ["right AV valve", "three cusps", "chambers"],
+    "tags": [
+      "tricuspid valve",
+      "cusps",
+      "leaflets"
+    ],
+    "keywords": [
+      "right AV valve",
+      "three cusps",
+      "chambers"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_valves_006",
     "correctAnswer": "Regurgitation",
     "question": "What condition results from valve failure to close properly?",
-    "options": ["Stenosis", "Regurgitation", "Fibrillation", "Tamponade"],
+    "options": [
+      "Stenosis",
+      "Regurgitation",
+      "Fibrillation",
+      "Tamponade"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "heart_valves"],
     "short_explanation": "Regurgitation occurs when valves do not close completely, allowing backflow.",
     "long_explanation": "Valve insufficiency or regurgitation may cause inefficient circulation, increased cardiac workload, and can be heard as a murmur.",
     "clinical_application": "Massage therapists should note heart valve regurgitation as a reason for cautious, modified care.",
     "source_reference": "Bates’ Physical Examination Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -153,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["regurgitation", "valve failure", "murmur"],
-    "keywords": ["valve disease", "blood backflow", "mitral insufficiency"],
+    "tags": [
+      "regurgitation",
+      "valve failure",
+      "murmur"
+    ],
+    "keywords": [
+      "valve disease",
+      "blood backflow",
+      "mitral insufficiency"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +225,6 @@
     "long_explanation": "These tendinous cords attach valve leaflets to papillary muscles in the ventricles, ensuring valves close properly during contraction.",
     "clinical_application": "Chordae rupture may lead to sudden regurgitation—massage intake forms should screen for valve repair history.",
     "source_reference": "Netter’s Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -181,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chordae tendineae", "AV valves", "papillary muscle"],
-    "keywords": ["heart strings", "valve support", "valve mechanics"],
+    "tags": [
+      "chordae tendineae",
+      "AV valves",
+      "papillary muscle"
+    ],
+    "keywords": [
+      "heart strings",
+      "valve support",
+      "valve mechanics"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +260,6 @@
     "long_explanation": "Semilunar valves prevent backflow from arteries into ventricles. Their three-cusp structure resembles a half-moon, hence the name.",
     "clinical_application": "Recognizing semilunar function is important when assessing breath-related chest discomfort.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "basic",
@@ -209,21 +268,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["semilunar", "aortic valve", "pulmonary valve"],
-    "keywords": ["valve shape", "arterial valves", "cardiac anatomy"],
+    "tags": [
+      "semilunar",
+      "aortic valve",
+      "pulmonary valve"
+    ],
+    "keywords": [
+      "valve shape",
+      "arterial valves",
+      "cardiac anatomy"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_valves_009",
     "correctAnswer": "Mitral",
     "question": "Which valve is most often affected in rheumatic fever?",
-    "options": ["Tricuspid", "Mitral", "Aortic", "Pulmonary"],
+    "options": [
+      "Tricuspid",
+      "Mitral",
+      "Aortic",
+      "Pulmonary"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "heart_valves"],
     "short_explanation": "Rheumatic fever most often damages the mitral valve.",
     "long_explanation": "Autoimmune response post-strep infection can lead to mitral stenosis or regurgitation. The mitral valve is the most vulnerable.",
     "clinical_application": "Screen for cardiac history before applying deep techniques, especially in the thoracic region.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -232,21 +303,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mitral disease", "rheumatic fever", "cardiac history"],
-    "keywords": ["valve stenosis", "mitral regurgitation", "immune damage"],
+    "tags": [
+      "mitral disease",
+      "rheumatic fever",
+      "cardiac history"
+    ],
+    "keywords": [
+      "valve stenosis",
+      "mitral regurgitation",
+      "immune damage"
+    ],
     "synonyms": null
   },
   {
     "id": "heart_valves_010",
     "correctAnswer": "S2",
     "question": "What sound is produced when the semilunar valves close?",
-    "options": ["S1", "S2", "Murmur", "Click"],
+    "options": [
+      "S1",
+      "S2",
+      "Murmur",
+      "Click"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "heart_valves"],
     "short_explanation": "The second heart sound (S2) is created when semilunar valves close.",
     "long_explanation": "S2 marks the end of systole and the start of diastole, produced by closure of the aortic and pulmonary valves.",
     "clinical_application": "In massage clients with cardiovascular conditions, auscultation cues like S2 splitting may indicate stress on the heart.",
     "source_reference": "Bates’ Physical Exam",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/heart_valves.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -255,8 +338,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "semilunar closure", "heart sound"],
-    "keywords": ["aortic valve", "pulmonary valve", "diastole start"],
+    "tags": [
+      "S2",
+      "semilunar closure",
+      "heart sound"
+    ],
+    "keywords": [
+      "aortic valve",
+      "pulmonary valve",
+      "diastole start"
+    ],
     "synonyms": null
   }
 ]

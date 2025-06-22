@@ -14,7 +14,6 @@
     "long_explanation": "This abnormal lateral spinal curvature can affect posture, muscle symmetry, and breathing mechanics.",
     "clinical_application": "Massage therapy focuses on relieving muscular imbalance and supporting spinal mobility.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,8 +22,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_spine", "condition_scoliosis"],
-    "keywords": ["anatomy_spine", "condition_scoliosis"],
+    "tags": [
+      "anatomy_spine",
+      "condition_scoliosis"
+    ],
+    "keywords": [
+      "anatomy_spine",
+      "condition_scoliosis"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +47,6 @@
     "long_explanation": "When vein valves collapse or fail, blood pools and veins become distended, especially in the legs.",
     "clinical_application": "Massage should avoid direct pressure on varicosities and focus on circulation enhancement around affected areas.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -51,21 +55,29 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_artery"],
-    "keywords": ["anatomy_artery"],
+    "tags": [
+      "anatomy_artery"
+    ],
+    "keywords": [
+      "anatomy_artery"
+    ],
     "synonyms": null
   },
   {
     "id": "pathology_beginner_003",
     "correctAnswer": "Bones",
     "question": "Osteoporosis primarily affects the:",
-    "options": ["Joints", "Lymph nodes", "Arteries", "Bones"],
+    "options": [
+      "Joints",
+      "Lymph nodes",
+      "Arteries",
+      "Bones"
+    ],
     "topics": ["pathology", "pathology_beginner"],
     "short_explanation": "Osteoporosis primarily weakens bones.",
     "long_explanation": "This condition reduces bone density, increasing the risk of fractures, especially in the spine, hips, and wrists.",
     "clinical_application": "Massage must be gentle and adapted to avoid excessive pressure that could damage fragile bones.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -74,7 +86,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_joint", "anatomy_artery", "anatomy_bones", "joint_joint"],
+    "tags": [
+      "anatomy_joint",
+      "anatomy_artery",
+      "anatomy_bones",
+      "joint_joint"
+    ],
     "keywords": [
       "anatomy_joint",
       "anatomy_artery",
@@ -98,7 +115,6 @@
     "long_explanation": "Often the result of trauma or injury, it appears as swelling or bruising and should not be massaged directly.",
     "clinical_application": "Massage is contraindicated locally but may support drainage in surrounding tissues.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -107,8 +123,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_artery", "anatomy_bones"],
-    "keywords": ["anatomy_artery", "anatomy_bones"],
+    "tags": [
+      "anatomy_artery",
+      "anatomy_bones"
+    ],
+    "keywords": [
+      "anatomy_artery",
+      "anatomy_bones"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +148,6 @@
     "long_explanation": "It may result from trauma, IV injection, or clot formation and often presents with redness, pain, and swelling.",
     "clinical_application": "Massage is locally contraindicated to avoid aggravating the inflammation or dislodging a clot.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -135,8 +156,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_artery"],
-    "keywords": ["anatomy_artery"],
+    "tags": [
+      "anatomy_artery"
+    ],
+    "keywords": [
+      "anatomy_artery"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +179,6 @@
     "long_explanation": "This condition is serious and can lead to embolism if a clot travels through the bloodstream.",
     "clinical_application": "Massage is strongly contraindicated and clients should be referred to medical care.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -163,8 +187,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_artery", "anatomy_bones"],
-    "keywords": ["anatomy_artery", "anatomy_bones"],
+    "tags": [
+      "anatomy_artery",
+      "anatomy_bones"
+    ],
+    "keywords": [
+      "anatomy_artery",
+      "anatomy_bones"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +212,6 @@
     "long_explanation": "It may lodge in the lungs (pulmonary embolism), brain (stroke), or heart, causing sudden symptoms.",
     "clinical_application": "Massage is contraindicated when embolic risk is present due to serious complications.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -191,8 +220,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_artery", "technique_pressure"],
-    "keywords": ["anatomy_artery", "technique_pressure"],
+    "tags": [
+      "anatomy_artery",
+      "technique_pressure"
+    ],
+    "keywords": [
+      "anatomy_artery",
+      "technique_pressure"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +245,6 @@
     "long_explanation": "It may rupture under pressure, leading to internal bleeding and life-threatening consequences.",
     "clinical_application": "Massage should avoid the affected area and encourage medical evaluation if suspected.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -219,7 +253,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["anatomy_joint", "anatomy_artery", "joint_joint", "organ_lungs"],
+    "tags": [
+      "anatomy_joint",
+      "anatomy_artery",
+      "joint_joint",
+      "organ_lungs"
+    ],
     "keywords": [
       "anatomy_joint",
       "anatomy_artery",
@@ -243,7 +282,6 @@
     "long_explanation": "This condition leads to swelling due to impaired drainage and may be congenital or result from surgery or infection.",
     "clinical_application": "Massage therapists trained in manual lymphatic drainage (MLD) may treat under supervision.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -283,7 +321,6 @@
     "long_explanation": "Applying pressure near inflamed, clot-prone veins risks dislodging a thrombus and causing embolism.",
     "clinical_application": "Therapists must avoid massage until medically cleared.",
     "source_reference": "Salvo, FSMTB, Massage Pathology Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_beginner.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -292,8 +329,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.152Z",
     "updated_at": "2025-05-24T14:54:13.493Z",
-    "tags": ["modality_massage", "condition_scoliosis", "contraindication"],
-    "keywords": ["modality_massage", "condition_scoliosis", "contraindication"],
+    "tags": [
+      "modality_massage",
+      "condition_scoliosis",
+      "contraindication"
+    ],
+    "keywords": [
+      "modality_massage",
+      "condition_scoliosis",
+      "contraindication"
+    ],
     "synonyms": null
   }
 ]

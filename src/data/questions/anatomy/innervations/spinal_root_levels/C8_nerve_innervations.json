@@ -3,18 +3,17 @@
     "id": "c8_nerve_innervations_001",
     "correctAnswer": "Little finger",
     "question": "Which finger is primarily associated with the C8 dermatome?",
-    "options": ["Thumb", "Index finger", "Middle finger", "Little finger"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
+    "options": [
+      "Thumb",
+      "Index finger",
+      "Middle finger",
+      "Little finger"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "C8 dermatome includes the little (5th) finger.",
     "long_explanation": "The C8 spinal nerve provides sensory innervation to the medial forearm and the 5th digit (little finger), making it a key dermatome for assessing C8 integrity.",
     "clinical_application": "Numbness or tingling in the little finger may indicate C8 radiculopathy, relevant in postural or repetitive stress injuries seen in massage clients.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C8", "dermatome", "sensory"],
-    "keywords": ["ulnar", "nerve", "pinky"],
+    "tags": [
+      "C8",
+      "dermatome",
+      "sensory"
+    ],
+    "keywords": [
+      "ulnar",
+      "nerve",
+      "pinky"
+    ],
     "synonyms": null
   },
   {
@@ -37,17 +44,11 @@
       "Finger flexion",
       "Wrist supination"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "C8 innervates muscles responsible for finger flexion.",
     "long_explanation": "C8 contributes to flexor digitorum superficialis and profundus muscles, allowing flexion of the fingers, especially at the distal interphalangeal joints.",
     "clinical_application": "Impaired grip strength from C8 dysfunction may affect a client's ability to hold massage implements or resist compression.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -56,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C8", "motor", "grip strength"],
-    "keywords": ["finger flexors", "ulnar nerve", "median nerve"],
+    "tags": [
+      "C8",
+      "motor",
+      "grip strength"
+    ],
+    "keywords": [
+      "finger flexors",
+      "ulnar nerve",
+      "median nerve"
+    ],
     "synonyms": null
   },
   {
@@ -70,17 +79,11 @@
       "Ulnar nerve",
       "Musculocutaneous nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "The ulnar nerve contains C8 fibers that innervate part of flexor digitorum profundus.",
     "long_explanation": "The ulnar nerve supplies the medial half of flexor digitorum profundus (for digits 4 and 5), and this muscle also receives dual innervation from the median nerve.",
     "clinical_application": "Massage therapists may see difficulty in digit 4–5 flexion as a sign of ulnar nerve or C8 root compromise.",
     "source_reference": "Kendall’s Muscles: Testing and Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -89,26 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "C8", "hand flexors"],
-    "keywords": ["deep flexors", "anterior forearm", "nerve root"],
+    "tags": [
+      "ulnar nerve",
+      "C8",
+      "hand flexors"
+    ],
+    "keywords": [
+      "deep flexors",
+      "anterior forearm",
+      "nerve root"
+    ],
     "synonyms": null
   },
   {
     "id": "c8_nerve_innervations_004",
     "correctAnswer": "C8",
     "question": "What myotome is tested by finger flexion strength?",
-    "options": ["C6", "C7", "C8", "T1"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
+    "options": [
+      "C6",
+      "C7",
+      "C8",
+      "T1"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "C8 is tested via finger flexion.",
     "long_explanation": "Finger flexion against resistance, especially at the DIP joints, assesses the C8 myotome which governs the long finger flexors.",
     "clinical_application": "Use gentle resistance testing in clients with possible cervical disc herniation to detect C8 weakness early.",
     "source_reference": "Clinical Neuroanatomy Made Ridiculously Simple",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "easy",
@@ -117,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myotome", "C8", "neurological exam"],
-    "keywords": ["motor test", "finger strength", "cervical radiculopathy"],
+    "tags": [
+      "myotome",
+      "C8",
+      "neurological exam"
+    ],
+    "keywords": [
+      "motor test",
+      "finger strength",
+      "cervical radiculopathy"
+    ],
     "synonyms": null
   },
   {
@@ -131,17 +149,11 @@
       "Flexor carpi ulnaris",
       "Flexor digitorum superficialis"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "Extensor carpi radialis longus helps extend the wrist and receives C8 input.",
     "long_explanation": "Although primarily innervated by C6–C7, some radial nerve branches to wrist extensors also receive C8 fibers, particularly under load or fatigue conditions.",
     "clinical_application": "Understanding overlapping root innervation helps in designing massage techniques for forearm extensors during rehabilitation.",
     "source_reference": "Braddom’s Physical Medicine and Rehabilitation",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -150,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C8", "wrist", "radial nerve"],
-    "keywords": ["extension", "wrist muscles", "radial nerve"],
+    "tags": [
+      "C8",
+      "wrist",
+      "radial nerve"
+    ],
+    "keywords": [
+      "extension",
+      "wrist muscles",
+      "radial nerve"
+    ],
     "synonyms": null
   },
   {
@@ -164,17 +184,11 @@
       "Weak grip and numb 5th finger",
       "Deltoid muscle atrophy"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "C8 compression affects grip and causes numbness in the pinky.",
     "long_explanation": "C8 radiculopathy often presents with weakness in hand grip, numbness in the ulnar side of the hand, and trouble flexing fingers, particularly the 4th and 5th digits.",
     "clinical_application": "Massage therapists working on the neck should monitor for symptoms that might suggest nerve root involvement.",
     "source_reference": "Neuroanatomy Through Clinical Cases",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -183,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C8", "nerve compression", "symptoms"],
-    "keywords": ["radiculopathy", "cervical spine", "grip strength"],
+    "tags": [
+      "C8",
+      "nerve compression",
+      "symptoms"
+    ],
+    "keywords": [
+      "radiculopathy",
+      "cervical spine",
+      "grip strength"
+    ],
     "synonyms": null
   },
   {
@@ -197,17 +219,11 @@
       "Brachioradialis reflex",
       "No specific reflex"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "C8 does not have a standard reflex associated with it.",
     "long_explanation": "Unlike C5-C7, C8 lacks a commonly used reflex in clinical neurology exams. Instead, muscle testing is used to evaluate function.",
     "clinical_application": "Massage therapists should assess motor strength and sensory patterns to infer possible C8 involvement when no reflex is present.",
     "source_reference": "Neuroscience: Exploring the Brain",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -216,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C8", "reflex testing", "clinical evaluation"],
-    "keywords": ["neurology", "reflex", "radiculopathy"],
+    "tags": [
+      "C8",
+      "reflex testing",
+      "clinical evaluation"
+    ],
+    "keywords": [
+      "neurology",
+      "reflex",
+      "radiculopathy"
+    ],
     "synonyms": null
   },
   {
@@ -230,17 +254,11 @@
       "Medial cord",
       "Superior trunk"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "C8 contributes to the medial cord.",
     "long_explanation": "C8 and T1 roots form the lower trunk, which then continues into the medial cord of the brachial plexus. This cord gives rise to the ulnar nerve and part of the median nerve.",
     "clinical_application": "Understanding plexus anatomy aids massage therapists in localizing neural compression in the axilla and shoulder.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -249,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brachial plexus", "C8", "cords"],
-    "keywords": ["medial cord", "lower trunk", "nerve origin"],
+    "tags": [
+      "brachial plexus",
+      "C8",
+      "cords"
+    ],
+    "keywords": [
+      "medial cord",
+      "lower trunk",
+      "nerve origin"
+    ],
     "synonyms": null
   },
   {
@@ -263,17 +289,11 @@
       "Finger flexion",
       "Shoulder elevation"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "Shoulder elevation is not governed by C8.",
     "long_explanation": "Shoulder elevation is primarily controlled by C3–C5 (accessory and phrenic contributions). C8 is not involved in trapezius or levator scapulae motor innervation.",
     "clinical_application": "Differentiating C8 from other root levels helps identify compression syndromes correctly during neck-focused massage.",
     "source_reference": "Clinical Anatomy by Regions",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -282,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C8", "motion", "nerve distribution"],
-    "keywords": ["motor pattern", "differentiation", "shoulder"],
+    "tags": [
+      "C8",
+      "motion",
+      "nerve distribution"
+    ],
+    "keywords": [
+      "motor pattern",
+      "differentiation",
+      "shoulder"
+    ],
     "synonyms": null
   },
   {
@@ -296,17 +324,11 @@
       "Cross-fiber friction to the upper traps",
       "Petrissage on the foot"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "c8_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "c8_nerve_innervations"],
     "short_explanation": "Deep pressure under the clavicle can compress the lower brachial plexus (C8-T1).",
     "long_explanation": "The space between the clavicle and first rib is a potential site for compression of the lower brachial plexus. Aggressive massage here may worsen C8-related symptoms.",
     "clinical_application": "Therapists should use caution in thoracic outlet areas to avoid worsening C8-related neuropathies.",
     "source_reference": "Massage Therapy Principles and Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/c8_nerve_innervations.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -315,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage caution", "C8", "thoracic outlet"],
-    "keywords": ["compression", "brachial plexus", "massage technique"],
+    "tags": [
+      "massage caution",
+      "C8",
+      "thoracic outlet"
+    ],
+    "keywords": [
+      "compression",
+      "brachial plexus",
+      "massage technique"
+    ],
     "synonyms": null
   }
 ]

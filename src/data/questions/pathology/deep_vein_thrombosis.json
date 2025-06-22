@@ -14,7 +14,6 @@
     "long_explanation": "When a thrombus (blood clot) dislodges from a vein, it can travel to the lungs, causing a pulmonary embolism—a life-threatening emergency.",
     "clinical_application": "Massage therapists should never treat a client with suspected DVT due to the risk of dislodging a clot.",
     "source_reference": "CDC: Deep Vein Thrombosis",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["embolism", "clot", "contraindication"],
-    "keywords": ["thrombus", "pulmonary embolism", "blood clot"],
+    "tags": [
+      "embolism",
+      "clot",
+      "contraindication"
+    ],
+    "keywords": [
+      "thrombus",
+      "pulmonary embolism",
+      "blood clot"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "DVT typically manifests as localized swelling, erythema (redness), warmth, and sometimes pain or tightness in the leg. These symptoms are unilateral and may be mistaken for muscle strain or cellulitis.",
     "clinical_application": "Recognizing these symptoms is essential to avoid performing massage that could risk a pulmonary embolism.",
     "source_reference": "Mayo Clinic: DVT Symptoms",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,21 +57,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["symptoms", "vascular", "DVT"],
-    "keywords": ["swelling", "redness", "heat", "warmth"],
+    "tags": [
+      "symptoms",
+      "vascular",
+      "DVT"
+    ],
+    "keywords": [
+      "swelling",
+      "redness",
+      "heat",
+      "warmth"
+    ],
     "synonyms": null
   },
   {
     "id": "deep_vein_thrombosis_003",
     "correctAnswer": "Ultrasound imaging",
     "question": "Which diagnostic test is most commonly used to confirm a suspected DVT?",
-    "options": ["MRI", "X-ray", "Ultrasound imaging", "CT scan"],
+    "options": [
+      "MRI",
+      "X-ray",
+      "Ultrasound imaging",
+      "CT scan"
+    ],
     "topics": ["pathology", "deep_vein_thrombosis"],
     "short_explanation": "Duplex ultrasound is the most common test for diagnosing DVT.",
     "long_explanation": "Duplex ultrasound is a non-invasive and highly effective imaging test that visualizes blood flow and can identify clots in the veins. It is the first-line tool used to diagnose DVT.",
     "clinical_application": "Massage therapists should refer clients with DVT-like symptoms to a physician for ultrasound evaluation.",
     "source_reference": "Johns Hopkins Medicine: DVT Diagnosis",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diagnosis", "ultrasound", "vascular"],
-    "keywords": ["duplex scan", "veins", "diagnostic tool"],
+    "tags": [
+      "diagnosis",
+      "ultrasound",
+      "vascular"
+    ],
+    "keywords": [
+      "duplex scan",
+      "veins",
+      "diagnostic tool"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +120,6 @@
     "long_explanation": "Extended periods of immobility, such as during long flights, bed rest, or after surgery, can cause blood to pool in the legs, increasing the risk of clot formation.",
     "clinical_application": "Massage therapists should inquire about recent travel or surgeries when assessing clients with lower limb discomfort.",
     "source_reference": "American College of Cardiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,8 +128,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["risk factor", "immobility", "circulation"],
-    "keywords": ["stasis", "immobile", "flight", "hospital"],
+    "tags": [
+      "risk factor",
+      "immobility",
+      "circulation"
+    ],
+    "keywords": [
+      "stasis",
+      "immobile",
+      "flight",
+      "hospital"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +156,6 @@
     "long_explanation": "Unilateral calf swelling, tenderness, and warmth are hallmark signs of DVT and warrant medical referral. Massage could dislodge the clot.",
     "clinical_application": "Recognizing key DVT symptoms ensures therapist safety and client protection.",
     "source_reference": "FSMTB Massage Therapy Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -130,8 +164,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["contraindication", "red flag", "screening"],
-    "keywords": ["calf swelling", "tenderness", "unilateral"],
+    "tags": [
+      "contraindication",
+      "red flag",
+      "screening"
+    ],
+    "keywords": [
+      "calf swelling",
+      "tenderness",
+      "unilateral"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +191,6 @@
     "long_explanation": "To prevent DVT on long trips, individuals should wear compression stockings, stay hydrated, and move their legs regularly to maintain healthy venous return.",
     "clinical_application": "Therapists should advise clients on safe travel practices, especially those with known vascular conditions.",
     "source_reference": "World Health Organization: Travel and Health",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -158,8 +199,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["prevention", "travel", "compression"],
-    "keywords": ["stockings", "flight safety", "hydration"],
+    "tags": [
+      "prevention",
+      "travel",
+      "compression"
+    ],
+    "keywords": [
+      "stockings",
+      "flight safety",
+      "hydration"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +226,6 @@
     "long_explanation": "Drugs such as heparin and warfarin are anticoagulants that help prevent the growth or formation of blood clots. They are the cornerstone of DVT treatment.",
     "clinical_application": "Clients on anticoagulants require careful assessment due to increased bleeding risk from deep pressure or vigorous techniques.",
     "source_reference": "American Society of Hematology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -186,8 +234,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["treatment", "blood thinning", "medication"],
-    "keywords": ["heparin", "warfarin", "coumadin"],
+    "tags": [
+      "treatment",
+      "blood thinning",
+      "medication"
+    ],
+    "keywords": [
+      "heparin",
+      "warfarin",
+      "coumadin"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +261,6 @@
     "long_explanation": "Post-thrombotic syndrome occurs due to damage to venous valves, resulting in chronic pain, swelling, and skin changes in the affected limb after DVT.",
     "clinical_application": "Massage therapy must be modified for clients with PTS to avoid exacerbating swelling or vascular stress.",
     "source_reference": "National Blood Clot Alliance",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -214,8 +269,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["complication", "PTS", "chronic"],
-    "keywords": ["post-thrombotic", "valve damage", "venous insufficiency"],
+    "tags": [
+      "complication",
+      "PTS",
+      "chronic"
+    ],
+    "keywords": [
+      "post-thrombotic",
+      "valve damage",
+      "venous insufficiency"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +296,6 @@
     "long_explanation": "A clot that dislodges from the leg can travel to the lungs, causing a pulmonary embolism. Symptoms like shortness of breath, chest pain, or coughing blood are medical emergencies.",
     "clinical_application": "Massage therapists must stop treatment and refer immediately if a client reports these signs.",
     "source_reference": "American Heart Association",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -242,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["emergency", "referral", "pulmonary embolism"],
-    "keywords": ["embolism", "breathing", "emergency care"],
+    "tags": [
+      "emergency",
+      "referral",
+      "pulmonary embolism"
+    ],
+    "keywords": [
+      "embolism",
+      "breathing",
+      "emergency care"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +331,6 @@
     "long_explanation": "Manual pressure during massage may dislodge a thrombus from the deep veins. If it travels to the lungs, it can cause a potentially fatal pulmonary embolism.",
     "clinical_application": "Therapists must always screen for signs of DVT before treating clients with limb swelling or trauma history.",
     "source_reference": "FSMTB Massage Therapy Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/deep_vein_thrombosis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -270,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["contraindication", "safety", "massage"],
-    "keywords": ["embolism", "pulmonary risk", "clot danger"],
+    "tags": [
+      "contraindication",
+      "safety",
+      "massage"
+    ],
+    "keywords": [
+      "embolism",
+      "pulmonary risk",
+      "clot danger"
+    ],
     "synonyms": null
   }
 ]

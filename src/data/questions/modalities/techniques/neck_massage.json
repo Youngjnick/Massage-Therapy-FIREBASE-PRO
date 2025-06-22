@@ -3,13 +3,17 @@
     "id": "neck_massage_001",
     "correctAnswer": "Effleurage",
     "question": "Which massage stroke is typically used to begin a neck massage session?",
-    "options": ["Effleurage", "Petrissage", "Tapotement", "Friction"],
+    "options": [
+      "Effleurage",
+      "Petrissage",
+      "Tapotement",
+      "Friction"
+    ],
     "topics": ["modalities", "techniques", "neck_massage"],
     "short_explanation": "Effleurage uses gliding strokes to warm tissue and relax the client.",
     "long_explanation": "Effleurage is often used at the beginning of a neck massage to warm up tissues, promote circulation, and introduce touch in a calming manner.",
     "clinical_application": "Start with effleurage to prepare the neck for deeper techniques like petrissage or friction.",
     "source_reference": "Mosby’s Fundamentals of Therapeutic Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -18,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["effleurage", "neck", "warming"],
-    "keywords": ["neck massage", "effleurage", "warming strokes"],
-    "synonyms": ["gliding", "stroking"]
+    "tags": [
+      "effleurage",
+      "neck",
+      "warming"
+    ],
+    "keywords": [
+      "neck massage",
+      "effleurage",
+      "warming strokes"
+    ],
+    "synonyms": [
+      "gliding",
+      "stroking"
+    ]
   },
   {
     "id": "neck_massage_002",
@@ -37,7 +52,6 @@
     "long_explanation": "Massaging directly over the carotid artery can disrupt blood flow or stimulate a baroreceptor reflex, potentially causing dizziness or fainting.",
     "clinical_application": "When working near the SCM or anterior neck, use gentle techniques and avoid compressive strokes over vascular structures.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["safety", "carotid", "neck"],
-    "keywords": ["carotid artery", "neck massage safety", "contraindications"],
-    "synonyms": ["anterior neck", "vascular caution"]
+    "tags": [
+      "safety",
+      "carotid",
+      "neck"
+    ],
+    "keywords": [
+      "carotid artery",
+      "neck massage safety",
+      "contraindications"
+    ],
+    "synonyms": [
+      "anterior neck",
+      "vascular caution"
+    ]
   },
   {
     "id": "neck_massage_003",
@@ -65,7 +90,6 @@
     "long_explanation": "The upper trapezius connects the neck and shoulders and is prone to holding stress, making it a common focus during neck massage.",
     "clinical_application": "Addressing trigger points in the upper trapezius can reduce neck stiffness and improve posture.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -74,9 +98,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["upper trapezius", "tension", "trigger points"],
-    "keywords": ["neck tension", "trapezius", "trigger point massage"],
-    "synonyms": ["shoulder tension"]
+    "tags": [
+      "upper trapezius",
+      "tension",
+      "trigger points"
+    ],
+    "keywords": [
+      "neck tension",
+      "trapezius",
+      "trigger point massage"
+    ],
+    "synonyms": [
+      "shoulder tension"
+    ]
   },
   {
     "id": "neck_massage_004",
@@ -93,7 +127,6 @@
     "long_explanation": "Tight suboccipital muscles can compress nerves and restrict blood flow, contributing to cervicogenic and tension headaches. Massage helps alleviate this tension.",
     "clinical_application": "Use focused compression or friction under the occiput to reduce headache intensity.",
     "source_reference": "Clinical Massage Therapy, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,21 +135,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["headache", "suboccipitals", "trigger point"],
-    "keywords": ["suboccipital release", "headache relief", "neck massage"],
-    "synonyms": ["base of skull", "occipital tension"]
+    "tags": [
+      "headache",
+      "suboccipitals",
+      "trigger point"
+    ],
+    "keywords": [
+      "suboccipital release",
+      "headache relief",
+      "neck massage"
+    ],
+    "synonyms": [
+      "base of skull",
+      "occipital tension"
+    ]
   },
   {
     "id": "neck_massage_005",
     "correctAnswer": "Myofascial release",
     "question": "Which technique best targets fascial restrictions in the neck?",
-    "options": ["Myofascial release", "Tapotement", "Effleurage", "Vibration"],
+    "options": [
+      "Myofascial release",
+      "Tapotement",
+      "Effleurage",
+      "Vibration"
+    ],
     "topics": ["modalities", "techniques", "neck_massage"],
     "short_explanation": "Myofascial release reduces tissue adhesions and increases mobility.",
     "long_explanation": "This technique involves slow, sustained pressure that lengthens fascia, improving neck range of motion and reducing chronic tension.",
     "clinical_application": "Use MFR for clients with stiff necks, postural imbalances, or fascial tightness from overuse or trauma.",
     "source_reference": "Fascial Stretch Therapy Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -125,9 +173,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofascial release", "neck fascia", "range of motion"],
-    "keywords": ["fascia", "MFR", "neck mobility"],
-    "synonyms": ["fascial work", "tissue elongation"]
+    "tags": [
+      "myofascial release",
+      "neck fascia",
+      "range of motion"
+    ],
+    "keywords": [
+      "fascia",
+      "MFR",
+      "neck mobility"
+    ],
+    "synonyms": [
+      "fascial work",
+      "tissue elongation"
+    ]
   },
   {
     "id": "neck_massage_006",
@@ -144,7 +203,6 @@
     "long_explanation": "Trigger points in the SCM often refer pain to the ear, eye, or jaw. It's easily accessible along the side of the neck and should be approached carefully.",
     "clinical_application": "Use light compression and stripping techniques along the SCM to address referred pain.",
     "source_reference": "Travell & Simons’ Trigger Point Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -153,9 +211,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SCM", "referral", "trigger points"],
-    "keywords": ["sternocleidomastoid", "ear pain", "jaw referral"],
-    "synonyms": ["SCM", "lateral neck muscle"]
+    "tags": [
+      "SCM",
+      "referral",
+      "trigger points"
+    ],
+    "keywords": [
+      "sternocleidomastoid",
+      "ear pain",
+      "jaw referral"
+    ],
+    "synonyms": [
+      "SCM",
+      "lateral neck muscle"
+    ]
   },
   {
     "id": "neck_massage_007",
@@ -172,7 +241,6 @@
     "long_explanation": "Whiplash can involve ligamentous and muscular damage. Massage is contraindicated until cleared by a physician or after the acute inflammatory phase.",
     "clinical_application": "Always screen for recent trauma before performing cervical massage.",
     "source_reference": "Massage Therapy Ethics & Safety Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -181,9 +249,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["whiplash", "contraindication", "neck trauma"],
-    "keywords": ["acute injury", "cervical trauma", "safety"],
-    "synonyms": ["neck strain", "car accident"]
+    "tags": [
+      "whiplash",
+      "contraindication",
+      "neck trauma"
+    ],
+    "keywords": [
+      "acute injury",
+      "cervical trauma",
+      "safety"
+    ],
+    "synonyms": [
+      "neck strain",
+      "car accident"
+    ]
   },
   {
     "id": "neck_massage_008",
@@ -200,7 +279,6 @@
     "long_explanation": "Neck massage can relieve overworked posterior cervical muscles and help correct imbalances caused by prolonged forward head posture, especially in desk workers.",
     "clinical_application": "Address suboccipitals, levator scapulae, and upper trapezius to help rebalance the head and neck alignment.",
     "source_reference": "Postural Assessment for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -209,9 +287,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "ergonomics", "forward head"],
-    "keywords": ["forward head posture", "postural correction"],
-    "synonyms": ["text neck", "cervical imbalance"]
+    "tags": [
+      "posture",
+      "ergonomics",
+      "forward head"
+    ],
+    "keywords": [
+      "forward head posture",
+      "postural correction"
+    ],
+    "synonyms": [
+      "text neck",
+      "cervical imbalance"
+    ]
   },
   {
     "id": "neck_massage_009",
@@ -228,7 +316,6 @@
     "long_explanation": "In side-lying positions, a pillow or bolster helps align the cervical spine and prevents hyperextension or flexion during the session.",
     "clinical_application": "Adjust head support to match shoulder height and reduce strain during lateral neck work.",
     "source_reference": "Massage for Orthopedic Conditions",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,9 +324,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["body mechanics", "side-lying", "support"],
-    "keywords": ["head support", "positioning", "side lying"],
-    "synonyms": ["cervical alignment"]
+    "tags": [
+      "body mechanics",
+      "side-lying",
+      "support"
+    ],
+    "keywords": [
+      "head support",
+      "positioning",
+      "side lying"
+    ],
+    "synonyms": [
+      "cervical alignment"
+    ]
   },
   {
     "id": "neck_massage_010",
@@ -256,7 +353,6 @@
     "long_explanation": "Extreme rotation and extension of the cervical spine can temporarily occlude vertebral arteries, especially in older adults or those with vascular issues. It’s best avoided during massage.",
     "clinical_application": "Keep the neck in a neutral or comfortably supported range, especially during passive movement.",
     "source_reference": "Massage Therapy Principles and Practice, 6th Edition",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/neck_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -265,8 +361,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vertebral artery", "rotation", "vascular safety"],
-    "keywords": ["vertebral artery", "neck extension", "caution"],
-    "synonyms": ["VA compromise", "neck manipulation risk"]
+    "tags": [
+      "vertebral artery",
+      "rotation",
+      "vascular safety"
+    ],
+    "keywords": [
+      "vertebral artery",
+      "neck extension",
+      "caution"
+    ],
+    "synonyms": [
+      "VA compromise",
+      "neck manipulation risk"
+    ]
   }
 ]

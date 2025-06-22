@@ -14,7 +14,6 @@
     "long_explanation": "The iliofemoral ligament, also called the Y-ligament of Bigelow, is the strongest ligament in the human body. It prevents excessive hip extension and helps maintain upright posture.",
     "clinical_application": "Postural support in standing relies on passive tension of the iliofemoral ligament.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["iliofemoral", "hip joint", "ligament strength"],
-    "keywords": ["Y ligament", "Bigelow", "extension", "posture"],
+    "tags": [
+      "iliofemoral",
+      "hip joint",
+      "ligament strength"
+    ],
+    "keywords": [
+      "Y ligament",
+      "Bigelow",
+      "extension",
+      "posture"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "The pubofemoral ligament extends from the pubis to the femur, reinforcing the joint capsule and limiting excessive abduction and extension of the hip.",
     "clinical_application": "Stretching the hip into abduction may test pubofemoral ligament integrity.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pubofemoral", "abduction", "hip stabilization"],
-    "keywords": ["hip capsule", "abduction", "ligament stability"],
+    "tags": [
+      "pubofemoral",
+      "abduction",
+      "hip stabilization"
+    ],
+    "keywords": [
+      "hip capsule",
+      "abduction",
+      "ligament stability"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +85,6 @@
     "long_explanation": "The ischiofemoral ligament is a posterior structure that spirals over the femoral neck and resists internal rotation and hyperextension of the hip.",
     "clinical_application": "Increased internal rotation may signal laxity in the ischiofemoral ligament.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ischiofemoral", "posterior hip", "internal rotation"],
-    "keywords": ["hip spiral", "posterior capsule", "hip stability"],
+    "tags": [
+      "ischiofemoral",
+      "posterior hip",
+      "internal rotation"
+    ],
+    "keywords": [
+      "hip spiral",
+      "posterior capsule",
+      "hip stability"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +120,6 @@
     "long_explanation": "The ligamentum teres provides a protective path for the artery of the head of the femur. Although it has minimal mechanical support in adults, it is essential for vascularization in childhood.",
     "clinical_application": "Damage to this ligament may compromise blood supply, especially in children.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ligamentum teres", "vascular supply", "hip blood flow"],
-    "keywords": ["artery of head of femur", "vascular", "ligament"],
+    "tags": [
+      "ligamentum teres",
+      "vascular supply",
+      "hip blood flow"
+    ],
+    "keywords": [
+      "artery of head of femur",
+      "vascular",
+      "ligament"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "The iliofemoral ligament is anterior and becomes taut with hip extension and external rotation, limiting those movements and aiding joint stability.",
     "clinical_application": "Functional standing posture relies on tension in the iliofemoral ligament without muscular effort.",
     "source_reference": "Orthopedic Physical Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -135,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["iliofemoral", "extension", "external rotation"],
-    "keywords": ["Y ligament", "anterior capsule", "hip posture"],
+    "tags": [
+      "iliofemoral",
+      "extension",
+      "external rotation"
+    ],
+    "keywords": [
+      "Y ligament",
+      "anterior capsule",
+      "hip posture"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +190,6 @@
     "long_explanation": "This ligament spans the acetabular notch, converting it into a foramen through which nerves and vessels pass, helping maintain the labrum's circular integrity.",
     "clinical_application": "Hip arthroscopy often requires careful navigation around this ligament.",
     "source_reference": "Orthopedic Physical Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "hard",
@@ -163,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["acetabular", "hip labrum", "notch support"],
-    "keywords": ["acetabulum", "hip socket", "transverse ligament"],
+    "tags": [
+      "acetabular",
+      "hip labrum",
+      "notch support"
+    ],
+    "keywords": [
+      "acetabulum",
+      "hip socket",
+      "transverse ligament"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "Hip extension combined with internal rotation causes maximal tension in the iliofemoral, pubofemoral, and ischiofemoral ligaments, tightening the joint capsule overall.",
     "clinical_application": "This position is used to assess end-range stability in orthopedic exams.",
     "source_reference": "Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "hard",
@@ -191,21 +233,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["capsular ligaments", "combined motion"],
-    "keywords": ["iliofemoral", "pubofemoral", "ischiofemoral", "extension"],
+    "tags": [
+      "capsular ligaments",
+      "combined motion"
+    ],
+    "keywords": [
+      "iliofemoral",
+      "pubofemoral",
+      "ischiofemoral",
+      "extension"
+    ],
     "synonyms": null
   },
   {
     "id": "hip_ligaments_008",
     "correctAnswer": "Posterior",
     "question": "The ischiofemoral ligament reinforces which part of the hip joint?",
-    "options": ["Anterior", "Inferior", "Posterior", "Medial"],
+    "options": [
+      "Anterior",
+      "Inferior",
+      "Posterior",
+      "Medial"
+    ],
     "topics": ["anatomy", "ligaments", "hip_ligaments", "hip_ligaments"],
     "short_explanation": "It reinforces the posterior aspect of the hip joint.",
     "long_explanation": "The ischiofemoral ligament arises from the ischium and spirals to attach to the femoral neck posteriorly, helping limit internal rotation and extension.",
     "clinical_application": "Posterior hip pain during rotation may involve this ligament.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -214,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ischiofemoral", "posterior", "hip capsule"],
-    "keywords": ["hip support", "posterior reinforcement", "internal rotation"],
+    "tags": [
+      "ischiofemoral",
+      "posterior",
+      "hip capsule"
+    ],
+    "keywords": [
+      "hip support",
+      "posterior reinforcement",
+      "internal rotation"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +295,6 @@
     "long_explanation": "While structurally weak in adults, the ligamentum teres is vital for delivering blood to the femoral head during development.",
     "clinical_application": "Avascular necrosis in children may relate to trauma of this ligament.",
     "source_reference": "Gray's Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "hard",
@@ -242,8 +303,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ligamentum teres", "vascular", "youth development"],
-    "keywords": ["femoral head", "pediatric anatomy", "blood supply"],
+    "tags": [
+      "ligamentum teres",
+      "vascular",
+      "youth development"
+    ],
+    "keywords": [
+      "femoral head",
+      "pediatric anatomy",
+      "blood supply"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +330,6 @@
     "long_explanation": "Originating from the pubic portion of the pelvis and blending with the joint capsule, the pubofemoral ligament limits excessive abduction and external rotation to maintain joint stability.",
     "clinical_application": "Injury here could lead to instability in lateral leg movements.",
     "source_reference": "Orthopedic Physical Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hip_ligaments/hip_ligaments.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -270,8 +338,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pubofemoral", "external rotation", "hip stability"],
-    "keywords": ["abduction control", "hip capsule", "ligament injury"],
+    "tags": [
+      "pubofemoral",
+      "external rotation",
+      "hip stability"
+    ],
+    "keywords": [
+      "abduction control",
+      "hip capsule",
+      "ligament injury"
+    ],
     "synonyms": null
   }
 ]

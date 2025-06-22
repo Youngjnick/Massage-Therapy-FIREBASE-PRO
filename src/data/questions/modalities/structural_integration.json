@@ -14,7 +14,6 @@
     "long_explanation": "Structural integration focuses on balancing and organizing the body's myofascial system to improve posture, movement efficiency, and function in relation to gravity.",
     "clinical_application": "Massage therapists trained in structural integration use fascial manipulation to address postural imbalances.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["alignment", "gravity", "myofascial"],
-    "keywords": ["body balance", "posture", "fascia"],
+    "tags": [
+      "alignment",
+      "gravity",
+      "myofascial"
+    ],
+    "keywords": [
+      "body balance",
+      "posture",
+      "fascia"
+    ],
     "synonyms": null
   },
   {
     "id": "structural_integration_002",
     "correctAnswer": "Fascia",
     "question": "Which connective tissue is most targeted in structural integration?",
-    "options": ["Tendons", "Ligaments", "Fascia", "Cartilage"],
+    "options": [
+      "Tendons",
+      "Ligaments",
+      "Fascia",
+      "Cartilage"
+    ],
     "topics": ["modalities", "structural_integration"],
     "short_explanation": "Fascia is the main target in structural integration.",
     "long_explanation": "Fascia is the three-dimensional connective tissue matrix that surrounds muscles, bones, and organs. Structural integration seeks to rehydrate and reorganize fascial layers.",
     "clinical_application": "Understanding fascial continuity helps therapists release compensatory patterns across distant regions of the body.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -46,8 +57,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "connective tissue"],
-    "keywords": ["myofascial", "soft tissue"],
+    "tags": [
+      "fascia",
+      "connective tissue"
+    ],
+    "keywords": [
+      "myofascial",
+      "soft tissue"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +82,6 @@
     "long_explanation": "Dr. Ida P. Rolf pioneered the method of structural integration, commonly known as Rolfing®, focusing on myofascial release and postural realignment.",
     "clinical_application": "Knowledge of Rolfing® principles informs deep tissue and movement-based massage approaches.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -74,8 +90,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Rolfing", "history", "pioneer"],
-    "keywords": ["Ida Rolf", "fascial therapy"],
+    "tags": [
+      "Rolfing",
+      "history",
+      "pioneer"
+    ],
+    "keywords": [
+      "Ida Rolf",
+      "fascial therapy"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +116,6 @@
     "long_explanation": "Structural integration emphasizes how the body interacts with gravity. Proper alignment in gravity can reduce compensatory strain and improve function.",
     "clinical_application": "Therapists can assess vertical alignment and tailor sessions to restore balance.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -102,8 +124,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "gravity", "function"],
-    "keywords": ["alignment", "biomechanics"],
+    "tags": [
+      "posture",
+      "gravity",
+      "function"
+    ],
+    "keywords": [
+      "alignment",
+      "biomechanics"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +150,6 @@
     "long_explanation": "The classic structural integration method follows a 10-session protocol where each session builds upon the previous, addressing specific body segments and fascial planes.",
     "clinical_application": "Using structured series helps track postural and movement progress across time.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -130,8 +158,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["session plan", "10-series", "protocol"],
-    "keywords": ["Rolfing series", "progressive therapy"],
+    "tags": [
+      "session plan",
+      "10-series",
+      "protocol"
+    ],
+    "keywords": [
+      "Rolfing series",
+      "progressive therapy"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +184,6 @@
     "long_explanation": "Postural distortions like forward head posture and pelvic imbalances often stem from fascial restrictions that structural integration seeks to address.",
     "clinical_application": "Massage therapists use postural analysis to guide fascial release strategies.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -158,8 +192,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "assessment", "imbalances"],
-    "keywords": ["head forward", "anterior tilt"],
+    "tags": [
+      "posture",
+      "assessment",
+      "imbalances"
+    ],
+    "keywords": [
+      "head forward",
+      "anterior tilt"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +218,6 @@
     "long_explanation": "Both methods focus on releasing fascial adhesions to improve movement, but structural integration is more holistic and structured.",
     "clinical_application": "Combining techniques allows therapists to create customized treatment plans for chronic tension and dysfunction.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -186,8 +226,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["techniques", "fascia", "release"],
-    "keywords": ["myofascial therapy", "tissue planes"],
+    "tags": [
+      "techniques",
+      "fascia",
+      "release"
+    ],
+    "keywords": [
+      "myofascial therapy",
+      "tissue planes"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +252,6 @@
     "long_explanation": "To create lasting postural changes, therapists must address the fascial layers that hold muscles in chronic shortened or lengthened positions.",
     "clinical_application": "Working fascial sheaths around muscle groups can re-educate posture and movement.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -214,8 +260,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["deep fascia", "structural change"],
-    "keywords": ["long-term posture", "myofascial layers"],
+    "tags": [
+      "deep fascia",
+      "structural change"
+    ],
+    "keywords": [
+      "long-term posture",
+      "myofascial layers"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +285,6 @@
     "long_explanation": "Thomas Myers' concept of 'Anatomy Trains' introduced the idea of myofascial meridians that transmit force and tension through interconnected fascial lines.",
     "clinical_application": "Understanding fascial chains allows therapists to work globally to resolve local dysfunction.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -242,8 +293,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascial chains", "tensegrity", "myers"],
-    "keywords": ["anatomy trains", "fascial lines"],
+    "tags": [
+      "fascial chains",
+      "tensegrity",
+      "myers"
+    ],
+    "keywords": [
+      "anatomy trains",
+      "fascial lines"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +319,6 @@
     "long_explanation": "Structural integration is suited for clients with longstanding movement inefficiencies, postural compensations, or fascial restrictions rather than acute injuries.",
     "clinical_application": "Massage therapists may refer or use structural principles to support rehabilitation for desk workers, athletes, or post-injury cases.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/structural_integration.json",
     "question_type": "Multiple Choice",
     "difficulty": null,
@@ -270,8 +327,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chronic tension", "posture", "movement"],
-    "keywords": ["desk workers", "alignment", "long-term care"],
+    "tags": [
+      "chronic tension",
+      "posture",
+      "movement"
+    ],
+    "keywords": [
+      "desk workers",
+      "alignment",
+      "long-term care"
+    ],
     "synonyms": null
   }
 ]

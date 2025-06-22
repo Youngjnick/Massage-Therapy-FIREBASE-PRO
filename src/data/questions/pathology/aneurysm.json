@@ -14,7 +14,6 @@
     "long_explanation": "An aneurysm is an abnormal dilation or ballooning in the wall of a blood vessel, typically an artery, due to weakness in the vessel wall. It can rupture and lead to serious complications such as internal bleeding or stroke.",
     "clinical_application": "Massage therapists must be cautious with clients who have known aneurysms, especially avoiding pressure near affected arteries.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "definition", "blood vessel"],
-    "keywords": ["aneurysm", "dilation", "vessel wall", "rupture risk"],
-    "synonyms": ["vessel bulge", "vessel dilation"]
+    "tags": [
+      "aneurysm",
+      "definition",
+      "blood vessel"
+    ],
+    "keywords": [
+      "aneurysm",
+      "dilation",
+      "vessel wall",
+      "rupture risk"
+    ],
+    "synonyms": [
+      "vessel bulge",
+      "vessel dilation"
+    ]
   },
   {
     "id": "aneurysm_002",
@@ -42,7 +53,6 @@
     "long_explanation": "The abdominal aorta is a common site for aneurysm formation due to the high pressure and the natural weakening of vessel walls with age.",
     "clinical_application": "Avoid deep abdominal work on clients with diagnosed abdominal aortic aneurysm.",
     "source_reference": "Lippincott's Illustrated Review: Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,9 +61,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "location", "aorta"],
-    "keywords": ["abdominal aorta", "aneurysm site", "vascular"],
-    "synonyms": ["AAA", "aortic aneurysm"]
+    "tags": [
+      "aneurysm",
+      "location",
+      "aorta"
+    ],
+    "keywords": [
+      "abdominal aorta",
+      "aneurysm site",
+      "vascular"
+    ],
+    "synonyms": [
+      "AAA",
+      "aortic aneurysm"
+    ]
   },
   {
     "id": "aneurysm_003",
@@ -70,7 +91,6 @@
     "long_explanation": "If an aneurysm ruptures, it can cause severe internal bleeding or hemorrhagic stroke, depending on its location. Immediate emergency care is required.",
     "clinical_application": "Therapists should ask about history of aneurysms and avoid any triggering pressure or technique near sensitive areas.",
     "source_reference": "Merck Manual Professional Edition",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -79,9 +99,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "rupture", "bleeding risk"],
-    "keywords": ["rupture", "internal bleeding", "hemorrhage"],
-    "synonyms": ["aneurysm rupture", "hemorrhage"]
+    "tags": [
+      "aneurysm",
+      "rupture",
+      "bleeding risk"
+    ],
+    "keywords": [
+      "rupture",
+      "internal bleeding",
+      "hemorrhage"
+    ],
+    "synonyms": [
+      "aneurysm rupture",
+      "hemorrhage"
+    ]
   },
   {
     "id": "aneurysm_004",
@@ -98,7 +129,6 @@
     "long_explanation": "Chronic high blood pressure weakens arterial walls, increasing the chance of aneurysm formation, especially in major arteries like the aorta.",
     "clinical_application": "Understanding this risk factor helps massage therapists appreciate the importance of gentle techniques for hypertensive clients.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -107,9 +137,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["risk factors", "hypertension", "aneurysm"],
-    "keywords": ["high blood pressure", "vascular risk", "aneurysm"],
-    "synonyms": ["hypertension", "elevated BP"]
+    "tags": [
+      "risk factors",
+      "hypertension",
+      "aneurysm"
+    ],
+    "keywords": [
+      "high blood pressure",
+      "vascular risk",
+      "aneurysm"
+    ],
+    "synonyms": [
+      "hypertension",
+      "elevated BP"
+    ]
   },
   {
     "id": "aneurysm_005",
@@ -126,7 +167,6 @@
     "long_explanation": "Rupture of a cerebral aneurysm can result in a sudden 'thunderclap' headache, often described as the worst headache of one's life, accompanied by other signs of stroke.",
     "clinical_application": "If a client describes sudden onset severe headache with other neurological symptoms, emergency referral is critical.",
     "source_reference": "First Aid for the USMLE Step 1, 2022",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,21 +175,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cerebral aneurysm", "headache", "stroke symptoms"],
-    "keywords": ["rupture", "brain aneurysm", "head pain"],
-    "synonyms": ["thunderclap headache", "brain hemorrhage"]
+    "tags": [
+      "cerebral aneurysm",
+      "headache",
+      "stroke symptoms"
+    ],
+    "keywords": [
+      "rupture",
+      "brain aneurysm",
+      "head pain"
+    ],
+    "synonyms": [
+      "thunderclap headache",
+      "brain hemorrhage"
+    ]
   },
   {
     "id": "aneurysm_006",
     "correctAnswer": "Ultrasound",
     "question": "Which diagnostic tool is commonly used to detect aneurysms in major arteries?",
-    "options": ["Ultrasound", "X-ray", "Thermography", "Blood test"],
+    "options": [
+      "Ultrasound",
+      "X-ray",
+      "Thermography",
+      "Blood test"
+    ],
     "topics": ["pathology", "aneurysm"],
     "short_explanation": "Ultrasound is often used to detect aortic aneurysms.",
     "long_explanation": "Ultrasound imaging is non-invasive and effective at identifying aneurysms, especially in the abdominal aorta. Other tools may include CT angiography and MRI depending on location.",
     "clinical_application": "Massage therapists should ask clients about any vascular conditions confirmed by imaging before deep tissue work near the abdomen or neck.",
     "source_reference": "Merck Manual Professional Edition",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -158,9 +213,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "diagnosis", "ultrasound"],
-    "keywords": ["aortic aneurysm", "ultrasound", "vascular imaging"],
-    "synonyms": ["diagnostic imaging", "vascular scan"]
+    "tags": [
+      "aneurysm",
+      "diagnosis",
+      "ultrasound"
+    ],
+    "keywords": [
+      "aortic aneurysm",
+      "ultrasound",
+      "vascular imaging"
+    ],
+    "synonyms": [
+      "diagnostic imaging",
+      "vascular scan"
+    ]
   },
   {
     "id": "aneurysm_007",
@@ -177,7 +243,6 @@
     "long_explanation": "A dissecting aneurysm, or aortic dissection, involves a tear in the inner layer of the artery wall, causing blood to flow between the layers, which can rapidly lead to rupture.",
     "clinical_application": "Therapists should avoid any circulatory-stimulating massage in clients with known dissection risk.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -186,9 +251,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "dissecting", "artery wall"],
-    "keywords": ["aortic dissection", "artery tear", "vascular emergency"],
-    "synonyms": ["aortic dissection", "arterial tear"]
+    "tags": [
+      "aneurysm",
+      "dissecting",
+      "artery wall"
+    ],
+    "keywords": [
+      "aortic dissection",
+      "artery tear",
+      "vascular emergency"
+    ],
+    "synonyms": [
+      "aortic dissection",
+      "arterial tear"
+    ]
   },
   {
     "id": "aneurysm_008",
@@ -205,7 +281,6 @@
     "long_explanation": "Saccular aneurysms are localized outpouchings of a vessel wall, often seen in cerebral arteries and associated with increased rupture risk.",
     "clinical_application": "Knowledge of aneurysm types can guide therapists when evaluating client history of cerebrovascular issues.",
     "source_reference": "First Aid for the USMLE Step 1, 2022",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -214,9 +289,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "saccular", "vascular structure"],
-    "keywords": ["saccular aneurysm", "cerebral", "bulge"],
-    "synonyms": ["berry aneurysm", "outpouching aneurysm"]
+    "tags": [
+      "aneurysm",
+      "saccular",
+      "vascular structure"
+    ],
+    "keywords": [
+      "saccular aneurysm",
+      "cerebral",
+      "bulge"
+    ],
+    "synonyms": [
+      "berry aneurysm",
+      "outpouching aneurysm"
+    ]
   },
   {
     "id": "aneurysm_009",
@@ -233,7 +319,6 @@
     "long_explanation": "Smoking contributes to arterial wall damage and hypertension, both major risk factors for aneurysm development. Quitting smoking can significantly reduce risk.",
     "clinical_application": "Massage therapists can support clients’ wellness goals by encouraging healthy lifestyle habits when appropriate.",
     "source_reference": "Lippincott's Illustrated Review: Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -242,9 +327,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "prevention", "lifestyle"],
-    "keywords": ["smoking", "vascular health", "prevention"],
-    "synonyms": ["smoking cessation", "tobacco avoidance"]
+    "tags": [
+      "aneurysm",
+      "prevention",
+      "lifestyle"
+    ],
+    "keywords": [
+      "smoking",
+      "vascular health",
+      "prevention"
+    ],
+    "synonyms": [
+      "smoking cessation",
+      "tobacco avoidance"
+    ]
   },
   {
     "id": "aneurysm_010",
@@ -261,7 +357,6 @@
     "long_explanation": "Fusiform aneurysms are spindle-shaped and involve all layers of a blood vessel, often seen in large arteries like the aorta. They may be asymptomatic until large or ruptured.",
     "clinical_application": "Understanding aneurysm forms helps therapists ask better health history questions and avoid contraindicated areas.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/aneurysm.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -270,8 +365,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aneurysm", "fusiform", "vascular anatomy"],
-    "keywords": ["fusiform aneurysm", "aortic dilation", "vascular"],
-    "synonyms": ["circumferential aneurysm", "spindle-shaped aneurysm"]
+    "tags": [
+      "aneurysm",
+      "fusiform",
+      "vascular anatomy"
+    ],
+    "keywords": [
+      "fusiform aneurysm",
+      "aortic dilation",
+      "vascular"
+    ],
+    "synonyms": [
+      "circumferential aneurysm",
+      "spindle-shaped aneurysm"
+    ]
   }
 ]

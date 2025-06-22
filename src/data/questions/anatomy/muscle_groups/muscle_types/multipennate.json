@@ -3,13 +3,17 @@
     "id": "multipennate_001",
     "correctAnswer": "Deltoid",
     "question": "Which of the following muscles is classified as multipennate due to its fiber arrangement?",
-    "options": ["Deltoid", "Biceps brachii", "Sartorius", "Pectoralis major"],
+    "options": [
+      "Deltoid",
+      "Biceps brachii",
+      "Sartorius",
+      "Pectoralis major"
+    ],
     "topics": ["anatomy", "muscle_groups", "muscle_types", "multipennate"],
     "short_explanation": "The deltoid muscle has a multipennate fiber arrangement.",
     "long_explanation": "A multipennate muscle has fibers arranged in multiple feather-like sections attaching obliquely to central tendons. The deltoid is a classic example, with its anterior, middle, and posterior heads all contributing to powerful multidirectional shoulder movements.",
     "clinical_application": "Understanding the multipennate structure helps massage therapists apply strokes that follow fiber direction and address common deltoid overuse or trigger points.",
     "source_reference": "Trail Guide to the Body, 6th Edition",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -47,7 +51,6 @@
     "long_explanation": "Multipennate muscles pack more muscle fibers into a given volume due to their angled fiber structure. This makes them ideal for strength and power over speed or range.",
     "clinical_application": "Massage therapists should use deeper pressure techniques when treating multipennate muscles to address deeper trigger points.",
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -56,8 +59,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pennate muscle", "fiber arrangement", "strength"],
-    "keywords": ["multipennate", "muscle force", "fiber density"],
+    "tags": [
+      "pennate muscle",
+      "fiber arrangement",
+      "strength"
+    ],
+    "keywords": [
+      "multipennate",
+      "muscle force",
+      "fiber density"
+    ],
     "synonyms": null
   },
   {
@@ -75,7 +86,6 @@
     "long_explanation": "In a multipennate muscle, fibers approach several central tendons from multiple directions. This orientation maximizes the number of fibers and increases power.",
     "clinical_application": "Recognizing this structure helps in palpation, especially in muscles like the deltoid, where fibers converge from multiple heads.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -84,21 +94,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle anatomy", "fiber orientation", "deltoid"],
-    "keywords": ["oblique fibers", "pennation angle", "muscle heads"],
+    "tags": [
+      "muscle anatomy",
+      "fiber orientation",
+      "deltoid"
+    ],
+    "keywords": [
+      "oblique fibers",
+      "pennation angle",
+      "muscle heads"
+    ],
     "synonyms": null
   },
   {
     "id": "multipennate_004",
     "correctAnswer": "Power and strength",
     "question": "Multipennate muscles typically sacrifice range of motion for what functional gain?",
-    "options": ["Speed", "Flexibility", "Power and strength", "Endurance"],
+    "options": [
+      "Speed",
+      "Flexibility",
+      "Power and strength",
+      "Endurance"
+    ],
     "topics": ["anatomy", "muscle_groups", "muscle_types", "multipennate"],
     "short_explanation": "Multipennate muscles are built for force production, not range.",
     "long_explanation": "Because multipennate muscles have shorter fibers packed at angles, they are better suited to producing force than achieving a wide range of movement.",
     "clinical_application": "Massage may need to focus on breaking up adhesions and realigning tissue within the shorter fascicles.",
     "source_reference": "Kinesiology: The Skeletal System and Muscle Function, Joseph E. Muscolino",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -107,8 +129,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle strength", "fiber structure", "range vs force"],
-    "keywords": ["multipennate", "muscle function", "biomechanics"],
+    "tags": [
+      "muscle strength",
+      "fiber structure",
+      "range vs force"
+    ],
+    "keywords": [
+      "multipennate",
+      "muscle function",
+      "biomechanics"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +156,6 @@
     "long_explanation": "Unlike fusiform or strap muscles with parallel fibers, multipennate muscles have obliquely angled fibers, allowing for greater cross-sectional fiber density and force.",
     "clinical_application": "Parallel-fibered muscles require different treatment strokes compared to pennate structures.",
     "source_reference": "Anatomy Trains, Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,8 +164,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["multipennate", "parallel", "muscle architecture"],
-    "keywords": ["fiber orientation", "muscle types", "force generation"],
+    "tags": [
+      "multipennate",
+      "parallel",
+      "muscle architecture"
+    ],
+    "keywords": [
+      "fiber orientation",
+      "muscle types",
+      "force generation"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +191,6 @@
     "long_explanation": "Because multipennate muscles are built for strength and stability, they activate during high-resistance movements such as lifting, rather than finesse tasks like typing or throwing.",
     "clinical_application": "Athletes and clients who lift overhead often may benefit from trigger point therapy in the deltoid.",
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,8 +199,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["movement", "muscle function", "lifting"],
-    "keywords": ["functional anatomy", "multipennate muscle use"],
+    "tags": [
+      "movement",
+      "muscle function",
+      "lifting"
+    ],
+    "keywords": [
+      "functional anatomy",
+      "multipennate muscle use"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "PCSA refers to the sum of all muscle fiber cross sections. In multipennate muscles, the oblique fiber arrangement allows for more fibers to fit in parallel, maximizing PCSA and strength.",
     "clinical_application": "Therapists should adjust pressure techniques based on expected density and PCSA of the muscle region.",
     "source_reference": "Essentials of Kinesiology, Muscolino",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -191,21 +233,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["PCSA", "biomechanics", "muscle strength"],
-    "keywords": ["cross-sectional area", "fiber angle", "strength potential"],
+    "tags": [
+      "PCSA",
+      "biomechanics",
+      "muscle strength"
+    ],
+    "keywords": [
+      "cross-sectional area",
+      "fiber angle",
+      "strength potential"
+    ],
     "synonyms": null
   },
   {
     "id": "multipennate_008",
     "correctAnswer": "Multipennate",
     "question": "The deltoid muscle is best categorized as:",
-    "options": ["Unipennate", "Bipennate", "Multipennate", "Fusiform"],
+    "options": [
+      "Unipennate",
+      "Bipennate",
+      "Multipennate",
+      "Fusiform"
+    ],
     "topics": ["anatomy", "muscle_groups", "muscle_types", "multipennate"],
     "short_explanation": "The deltoid is a textbook example of a multipennate muscle.",
     "long_explanation": "The deltoid has three distinct heads with fibers that insert into a common tendon from different directions — characteristic of multipennate structure.",
     "clinical_application": "Massage therapists often encounter deltoid tension due to its multidirectional use in daily shoulder motion.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -214,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["deltoid", "multipennate", "muscle structure"],
-    "keywords": ["shoulder anatomy", "muscle heads", "fiber insertion"],
+    "tags": [
+      "deltoid",
+      "multipennate",
+      "muscle structure"
+    ],
+    "keywords": [
+      "shoulder anatomy",
+      "muscle heads",
+      "fiber insertion"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +295,6 @@
     "long_explanation": "The shoulder and hip regions contain large muscles with multipennate arrangements designed for stability and strength across multiple planes of motion.",
     "clinical_application": "Massage in these regions may target multiple angles of fiber engagement and compression zones.",
     "source_reference": "Kinesiology, 3rd ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -242,8 +303,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["multipennate regions", "muscle location"],
-    "keywords": ["shoulder muscles", "hip muscles", "muscle types"],
+    "tags": [
+      "multipennate regions",
+      "muscle location"
+    ],
+    "keywords": [
+      "shoulder muscles",
+      "hip muscles",
+      "muscle types"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +329,6 @@
     "long_explanation": "The tradeoff in muscle design favors force output over speed or range. Multipennate muscles have numerous short fibers angled to central tendons, ideal for generating stable, strong movement.",
     "clinical_application": "Massage therapists may use friction and compression techniques to address overuse in power muscles like the deltoid.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/muscle_types/multipennate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -270,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle function", "structure", "strength"],
-    "keywords": ["pennation", "muscle design", "force"],
+    "tags": [
+      "muscle function",
+      "structure",
+      "strength"
+    ],
+    "keywords": [
+      "pennation",
+      "muscle design",
+      "force"
+    ],
     "synonyms": null
   }
 ]

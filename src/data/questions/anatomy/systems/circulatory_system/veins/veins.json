@@ -14,7 +14,6 @@
     "long_explanation": "The median cubital vein bridges the cephalic and basilic veins at the cubital fossa and is superficial and relatively stable, making it ideal for venipuncture.",
     "clinical_application": "Massage therapists should avoid direct pressure over the cubital fossa to prevent irritation in clients with repeated needle use.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["venipuncture", "cubital vein", "forearm"],
-    "keywords": ["blood draw", "cephalic", "basilic", "cubital fossa"],
+    "tags": [
+      "venipuncture",
+      "cubital vein",
+      "forearm"
+    ],
+    "keywords": [
+      "blood draw",
+      "cephalic",
+      "basilic",
+      "cubital fossa"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "It runs alongside the internal carotid artery and vagus nerve in the carotid sheath and joins the subclavian to form the brachiocephalic vein.",
     "clinical_application": "Jugular venous distension is an important sign of cardiovascular disease, often noted in massage intake.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -51,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["jugular vein", "brain drainage", "venous return"],
-    "keywords": ["carotid sheath", "cerebral drainage", "JVD"],
+    "tags": [
+      "jugular vein",
+      "brain drainage",
+      "venous return"
+    ],
+    "keywords": [
+      "carotid sheath",
+      "cerebral drainage",
+      "JVD"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +85,6 @@
     "long_explanation": "It is formed by the union of the superior mesenteric and splenic veins and is key in the portal circulation system.",
     "clinical_application": "Portal hypertension may lead to varices and is a contraindication for deep abdominal massage.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -79,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["portal vein", "liver", "GI circulation"],
-    "keywords": ["hepatic portal", "mesenteric", "splenic vein"],
+    "tags": [
+      "portal vein",
+      "liver",
+      "GI circulation"
+    ],
+    "keywords": [
+      "hepatic portal",
+      "mesenteric",
+      "splenic vein"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +120,6 @@
     "long_explanation": "It drains into the axillary vein and is often visible in muscular individuals. It is also sometimes used for IV access.",
     "clinical_application": "Massage over the cephalic vein should be cautious in clients with vascular access devices.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "basic",
@@ -107,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cephalic", "lateral forearm", "arm veins"],
-    "keywords": ["superficial vein", "venous return", "upper limb"],
+    "tags": [
+      "cephalic",
+      "lateral forearm",
+      "arm veins"
+    ],
+    "keywords": [
+      "superficial vein",
+      "venous return",
+      "upper limb"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "It continues as the external iliac vein and is crucial for returning blood from the lower extremity.",
     "clinical_application": "Femoral vein thrombosis is a deep vein thrombosis (DVT) risk that massage therapists must be aware of.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -135,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["femoral vein", "thigh circulation", "deep vein"],
-    "keywords": ["DVT", "femoral triangle", "venous return"],
+    "tags": [
+      "femoral vein",
+      "thigh circulation",
+      "deep vein"
+    ],
+    "keywords": [
+      "DVT",
+      "femoral triangle",
+      "venous return"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +190,6 @@
     "long_explanation": "It runs from the foot to the groin and drains into the femoral vein. It is often harvested for coronary artery bypass grafting (CABG).",
     "clinical_application": "Massage on clients post-CABG may need to address donor site soreness along the medial leg.",
     "source_reference": "Surgical Anatomy Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -163,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["great saphenous", "bypass surgery", "leg vein"],
-    "keywords": ["CABG", "longest vein", "venous graft"],
+    "tags": [
+      "great saphenous",
+      "bypass surgery",
+      "leg vein"
+    ],
+    "keywords": [
+      "CABG",
+      "longest vein",
+      "venous graft"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "This reverses the usual arterial/venous oxygenation rule. Pulmonary veins return oxygen-rich blood to the left atrium.",
     "clinical_application": "Understanding this is vital in cardiovascular massage or lymphatic therapy related to cardiopulmonary health.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "tricky",
@@ -191,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary vein", "oxygenation", "cardiology"],
-    "keywords": ["pulmonary arteries", "left atrium", "gas exchange"],
+    "tags": [
+      "pulmonary vein",
+      "oxygenation",
+      "cardiology"
+    ],
+    "keywords": [
+      "pulmonary arteries",
+      "left atrium",
+      "gas exchange"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +260,6 @@
     "long_explanation": "The subclavian drains into the brachiocephalic, which drains into the SVC, carrying blood from the upper body to the right atrium.",
     "clinical_application": "Massage therapists should be aware of venous return issues in clients with edema or poor circulation in the upper limbs.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -219,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SVC", "brachiocephalic", "venous hierarchy"],
-    "keywords": ["upper limb drainage", "central vein", "thoracic circulation"],
+    "tags": [
+      "SVC",
+      "brachiocephalic",
+      "venous hierarchy"
+    ],
+    "keywords": [
+      "upper limb drainage",
+      "central vein",
+      "thoracic circulation"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +295,6 @@
     "long_explanation": "The SVC and IVC bring systemic deoxygenated blood, while the coronary sinus drains venous blood from the myocardium.",
     "clinical_application": "Clients with cardiac insufficiency may have systemic backup from these veins; therapists should modify sessions accordingly.",
     "source_reference": "Guyton and Hall Textbook of Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -247,8 +303,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["right atrium", "venous return", "heart veins"],
-    "keywords": ["SVC", "IVC", "coronary sinus", "cardiac output"],
+    "tags": [
+      "right atrium",
+      "venous return",
+      "heart veins"
+    ],
+    "keywords": [
+      "SVC",
+      "IVC",
+      "coronary sinus",
+      "cardiac output"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +331,6 @@
     "long_explanation": "It begins at the lateral foot and empties into the popliteal vein behind the knee. It can be visualized for vein assessment in swelling or varicose issues.",
     "clinical_application": "Massage therapy targeting venous return should be cautious around engorged or varicose small saphenous veins.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/circulatory_system/veins/veins.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -275,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["small saphenous", "lateral leg", "popliteal"],
-    "keywords": ["posterior leg vein", "superficial drainage", "lower limb"],
+    "tags": [
+      "small saphenous",
+      "lateral leg",
+      "popliteal"
+    ],
+    "keywords": [
+      "posterior leg vein",
+      "superficial drainage",
+      "lower limb"
+    ],
     "synonyms": null
   }
 ]

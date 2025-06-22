@@ -9,17 +9,11 @@
       "Tensor fasciae latae",
       "Gluteus maximus"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "The inferior gluteal nerve innervates the gluteus maximus.",
     "long_explanation": "The inferior gluteal nerve exclusively supplies the gluteus maximus, a major muscle involved in powerful hip extension and external rotation.",
     "clinical_application": "Weakness in hip extension may indicate inferior gluteal nerve involvement, especially relevant in postural assessments or gait evaluations.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -28,26 +22,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["inferior gluteal nerve", "gluteus maximus"],
-    "keywords": ["hip extension", "nerve innervation", "gluteal muscles"],
+    "tags": [
+      "inferior gluteal nerve",
+      "gluteus maximus"
+    ],
+    "keywords": [
+      "hip extension",
+      "nerve innervation",
+      "gluteal muscles"
+    ],
     "synonyms": null
   },
   {
     "id": "inferior_gluteal_002",
     "correctAnswer": "L5–S2",
     "question": "What is the spinal root origin of the inferior gluteal nerve?",
-    "options": ["L4–S1", "L2–L4", "S1–S3", "L5–S2"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
+    "options": [
+      "L4–S1",
+      "L2–L4",
+      "S1–S3",
+      "L5–S2"
     ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "The nerve arises from L5, S1, and S2.",
     "long_explanation": "The inferior gluteal nerve originates from the posterior divisions of spinal nerves L5, S1, and S2 and exits the pelvis through the greater sciatic foramen.",
     "clinical_application": "Knowledge of nerve roots helps correlate specific spinal injuries with muscle weakness in massage assessments.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -56,8 +56,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve root", "lumbosacral plexus"],
-    "keywords": ["L5", "S1", "S2", "nerve origin"],
+    "tags": [
+      "nerve root",
+      "lumbosacral plexus"
+    ],
+    "keywords": [
+      "L5",
+      "S1",
+      "S2",
+      "nerve origin"
+    ],
     "synonyms": null
   },
   {
@@ -70,17 +78,11 @@
       "Hip extension",
       "Knee flexion"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "Gluteus maximus controls hip extension.",
     "long_explanation": "Since the gluteus maximus is innervated by the inferior gluteal nerve, its primary action—hip extension—would be weakened if the nerve is compromised.",
     "clinical_application": "Massage therapists may notice postural changes or gait issues in clients with compromised hip extension.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -89,8 +91,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["motor function", "gluteus maximus", "hip movement"],
-    "keywords": ["hip extension", "nerve lesion", "gluteal weakness"],
+    "tags": [
+      "motor function",
+      "gluteus maximus",
+      "hip movement"
+    ],
+    "keywords": [
+      "hip extension",
+      "nerve lesion",
+      "gluteal weakness"
+    ],
     "synonyms": null
   },
   {
@@ -103,17 +113,11 @@
       "Lesser sciatic foramen",
       "Femoral triangle"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "It exits via the greater sciatic foramen.",
     "long_explanation": "The inferior gluteal nerve exits the pelvis below the piriformis muscle through the greater sciatic foramen, alongside the sciatic nerve and other gluteal vessels.",
     "clinical_application": "Understanding anatomical pathways can help identify compression syndromes or guide manual therapy.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -122,8 +126,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve pathway", "sciatic foramen", "gluteal anatomy"],
-    "keywords": ["greater sciatic notch", "nerve exit", "pelvis"],
+    "tags": [
+      "nerve pathway",
+      "sciatic foramen",
+      "gluteal anatomy"
+    ],
+    "keywords": [
+      "greater sciatic notch",
+      "nerve exit",
+      "pelvis"
+    ],
     "synonyms": null
   },
   {
@@ -136,17 +148,11 @@
       "Difficulty rising from a seated position",
       "Thigh adduction weakness"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "Clients may struggle to extend the hip to rise from sitting.",
     "long_explanation": "Because the gluteus maximus is responsible for powerful hip extension, injury to the inferior gluteal nerve may cause difficulty in movements like rising from a chair or climbing stairs.",
     "clinical_application": "These functional limitations should inform massage strategies and potential referral for further evaluation.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -155,8 +161,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["clinical sign", "gluteal nerve", "functional test"],
-    "keywords": ["hip extension deficit", "glute weakness", "rising from seat"],
+    "tags": [
+      "clinical sign",
+      "gluteal nerve",
+      "functional test"
+    ],
+    "keywords": [
+      "hip extension deficit",
+      "glute weakness",
+      "rising from seat"
+    ],
     "synonyms": null
   },
   {
@@ -169,17 +183,11 @@
       "Climbing stairs",
       "Toe walking"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "Climbing stairs requires strong hip extension from gluteus maximus.",
     "long_explanation": "Powerful hip extension, such as during stair climbing or rising from a squat, relies on the gluteus maximus, innervated by the inferior gluteal nerve.",
     "clinical_application": "Weakness during stair climbing may indicate dysfunction of the inferior gluteal nerve and should guide assessment or referral.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -188,8 +196,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gluteus maximus", "hip extension", "activity"],
-    "keywords": ["climbing", "stairs", "hip power"],
+    "tags": [
+      "gluteus maximus",
+      "hip extension",
+      "activity"
+    ],
+    "keywords": [
+      "climbing",
+      "stairs",
+      "hip power"
+    ],
     "synonyms": null
   },
   {
@@ -202,17 +218,11 @@
       "Pudendal nerve",
       "Posterior femoral cutaneous nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "The superior gluteal nerve runs above the inferior gluteal nerve.",
     "long_explanation": "In the gluteal region, the superior gluteal nerve exits the pelvis above the piriformis, while the inferior gluteal nerve exits below it. This spatial arrangement is important in surgical and clinical contexts.",
     "clinical_application": "Anatomical positioning helps clinicians avoid nerve injury during deep tissue massage or injections.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -221,8 +231,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve positioning", "anatomical relationship"],
-    "keywords": ["gluteal region", "nerve comparison", "piriformis"],
+    "tags": [
+      "nerve positioning",
+      "anatomical relationship"
+    ],
+    "keywords": [
+      "gluteal region",
+      "nerve comparison",
+      "piriformis"
+    ],
     "synonyms": null
   },
   {
@@ -235,17 +252,11 @@
       "Sciatica",
       "Ischial bursitis"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "Piriformis syndrome may involve structures exiting below the piriformis, including this nerve.",
     "long_explanation": "Piriformis syndrome involves compression of nerves exiting the greater sciatic foramen beneath the piriformis, including the inferior gluteal nerve, leading to gluteus maximus dysfunction.",
     "clinical_application": "Therapists should assess deep gluteal tightness and treat accordingly with myofascial or neuromuscular techniques.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -254,8 +265,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve compression", "piriformis", "gluteal dysfunction"],
-    "keywords": ["piriformis syndrome", "nerve impingement", "gluteal pain"],
+    "tags": [
+      "nerve compression",
+      "piriformis",
+      "gluteal dysfunction"
+    ],
+    "keywords": [
+      "piriformis syndrome",
+      "nerve impingement",
+      "gluteal pain"
+    ],
     "synonyms": null
   },
   {
@@ -268,17 +287,11 @@
       "Trigger point release to gluteus maximus",
       "Lymphatic drainage to popliteal nodes"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "Trigger point work in gluteus maximus can relieve deep tension.",
     "long_explanation": "The gluteus maximus, when harboring trigger points, may affect its power and function. Releasing these points supports better hip extension and reduces referral patterns in the posterior pelvis.",
     "clinical_application": "Use trigger point therapy to enhance gluteal recruitment, especially in clients with sitting fatigue or low back strain.",
     "source_reference": "Clinical Massage Therapy – Rattray",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -287,8 +300,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger point", "gluteus maximus", "massage technique"],
-    "keywords": ["manual therapy", "myofascial release", "gluteal massage"],
+    "tags": [
+      "trigger point",
+      "gluteus maximus",
+      "massage technique"
+    ],
+    "keywords": [
+      "manual therapy",
+      "myofascial release",
+      "gluteal massage"
+    ],
     "synonyms": null
   },
   {
@@ -301,17 +322,11 @@
       "Client prone, resists hip extension",
       "Standing heel raise"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "hip_innervations",
-      "inferior_gluteal"
-    ],
+    "topics": ["anatomy", "innervations", "hip_innervations", "inferior_gluteal"],
     "short_explanation": "Prone resisted hip extension isolates the gluteus maximus.",
     "long_explanation": "To assess gluteus maximus strength, place the client prone with the knee flexed to eliminate hamstring bias and apply resistance against hip extension. This directly tests the inferior gluteal nerve’s motor output.",
     "clinical_application": "Muscle testing helps identify neuro-muscular imbalances and guides targeted massage therapy plans.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/inferior_gluteal.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -320,8 +335,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle testing", "glute strength", "assessment"],
-    "keywords": ["manual resistance", "hip extension test", "glute activation"],
+    "tags": [
+      "muscle testing",
+      "glute strength",
+      "assessment"
+    ],
+    "keywords": [
+      "manual resistance",
+      "hip extension test",
+      "glute activation"
+    ],
     "synonyms": null
   }
 ]

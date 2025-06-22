@@ -14,7 +14,6 @@
     "long_explanation": "The Rough Endoplasmic Reticulum (RER) is studded with ribosomes, which give it a 'rough' appearance under a microscope. These ribosomes are involved in synthesizing proteins for secretion or membrane insertion.",
     "clinical_application": "Muscle cells use RER to synthesize receptors and enzymes; understanding this helps explain tissue recovery and adaptation post-massage.",
     "source_reference": "Tortora – Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["RER", "ribosomes", "protein synthesis"],
-    "keywords": ["rough er", "ribosomes", "protein production"],
+    "tags": [
+      "RER",
+      "ribosomes",
+      "protein synthesis"
+    ],
+    "keywords": [
+      "rough er",
+      "ribosomes",
+      "protein production"
+    ],
     "synonyms": null
   },
   {
     "id": "rough_vs_smooth_er_002",
     "correctAnswer": "Smooth ER",
     "question": "Which type of ER is responsible for lipid and steroid synthesis?",
-    "options": ["Rough ER", "Golgi Apparatus", "Mitochondria", "Smooth ER"],
+    "options": [
+      "Rough ER",
+      "Golgi Apparatus",
+      "Mitochondria",
+      "Smooth ER"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "rough_vs_smooth_er"],
     "short_explanation": "Smooth ER synthesizes lipids and steroids.",
     "long_explanation": "The Smooth Endoplasmic Reticulum (SER) lacks ribosomes and is primarily involved in lipid metabolism, steroid hormone synthesis, and detoxification processes.",
     "clinical_application": "Liver and adrenal cells have abundant SER. Therapists working with clients with hormonal imbalances can benefit from knowing this.",
     "source_reference": "Guyton & Hall – Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "easy",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SER", "lipids", "detoxification"],
-    "keywords": ["smooth er", "lipid synthesis", "hormones"],
+    "tags": [
+      "SER",
+      "lipids",
+      "detoxification"
+    ],
+    "keywords": [
+      "smooth er",
+      "lipid synthesis",
+      "hormones"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "The rough ER is mainly for synthesizing and folding proteins, while lipid and steroid metabolism is carried out in the smooth ER.",
     "clinical_application": "Massage therapists exploring cellular health should recognize how metabolic dysfunctions impact tissue performance.",
     "source_reference": "OpenStax Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "medium",
@@ -74,21 +92,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rough er", "lipid synthesis"],
-    "keywords": ["protein", "rough er", "lipid metabolism"],
+    "tags": [
+      "rough er",
+      "lipid synthesis"
+    ],
+    "keywords": [
+      "protein",
+      "rough er",
+      "lipid metabolism"
+    ],
     "synonyms": null
   },
   {
     "id": "rough_vs_smooth_er_004",
     "correctAnswer": "Golgi Apparatus",
     "question": "Which organelle works closely with the rough ER to modify and package proteins?",
-    "options": ["Lysosome", "Golgi Apparatus", "Smooth ER", "Nucleolus"],
+    "options": [
+      "Lysosome",
+      "Golgi Apparatus",
+      "Smooth ER",
+      "Nucleolus"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "rough_vs_smooth_er"],
     "short_explanation": "The Golgi Apparatus modifies and packages proteins.",
     "long_explanation": "Proteins synthesized by the rough ER are sent to the Golgi Apparatus, where they undergo modifications like glycosylation and are sorted for transport.",
     "clinical_application": "Understanding this helps therapists relate to conditions involving protein misfolding or cellular stress.",
     "source_reference": "Marieb – Human Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "medium",
@@ -97,8 +126,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["golgi", "rough er", "protein transport"],
-    "keywords": ["protein modification", "golgi apparatus", "cell export"],
+    "tags": [
+      "golgi",
+      "rough er",
+      "protein transport"
+    ],
+    "keywords": [
+      "protein modification",
+      "golgi apparatus",
+      "cell export"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +153,6 @@
     "long_explanation": "In liver cells, the smooth ER contains enzymes that detoxify alcohol, drugs, and metabolic byproducts. This function is essential for homeostasis.",
     "clinical_application": "Clients recovering from substance use may benefit from liver-supportive treatments and lifestyle changes — understanding SER helps therapists contextualize these.",
     "source_reference": "Robbins Basic Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "medium",
@@ -125,8 +161,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["smooth er", "detox", "liver"],
-    "keywords": ["cytochrome", "ser", "xenobiotic metabolism"],
+    "tags": [
+      "smooth er",
+      "detox",
+      "liver"
+    ],
+    "keywords": [
+      "cytochrome",
+      "ser",
+      "xenobiotic metabolism"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +188,6 @@
     "long_explanation": "Cells that secrete enzymes, hormones, or antibodies — like pancreatic or plasma cells — have highly developed rough ER to produce and export large amounts of proteins.",
     "clinical_application": "Understanding this helps therapists appreciate why glandular health impacts tissue repair and recovery.",
     "source_reference": "Gray's Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "medium",
@@ -153,21 +196,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rough er", "secretory cells"],
-    "keywords": ["protein secretion", "pancreatic cells", "plasma cells"],
+    "tags": [
+      "rough er",
+      "secretory cells"
+    ],
+    "keywords": [
+      "protein secretion",
+      "pancreatic cells",
+      "plasma cells"
+    ],
     "synonyms": null
   },
   {
     "id": "rough_vs_smooth_er_007",
     "correctAnswer": "Calcium",
     "question": "The smooth ER contributes to muscle function by storing which ion?",
-    "options": ["Sodium", "Chloride", "Potassium", "Calcium"],
+    "options": [
+      "Sodium",
+      "Chloride",
+      "Potassium",
+      "Calcium"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "rough_vs_smooth_er"],
     "short_explanation": "SER stores calcium in muscle cells.",
     "long_explanation": "In muscle cells, the smooth ER is known as the sarcoplasmic reticulum. It stores and releases calcium to trigger muscle contraction.",
     "clinical_application": "Massage therapists who influence muscle tension are indirectly affecting calcium release and reuptake in the sarcoplasmic reticulum.",
     "source_reference": "Essentials of Human Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "hard",
@@ -176,21 +230,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sarcoplasmic reticulum", "calcium", "muscle contraction"],
-    "keywords": ["smooth er", "ca2+", "muscle physiology"],
+    "tags": [
+      "sarcoplasmic reticulum",
+      "calcium",
+      "muscle contraction"
+    ],
+    "keywords": [
+      "smooth er",
+      "ca2+",
+      "muscle physiology"
+    ],
     "synonyms": null
   },
   {
     "id": "rough_vs_smooth_er_008",
     "correctAnswer": "Chaperone proteins",
     "question": "Which component of the rough ER assists in protein folding?",
-    "options": ["Ribosome", "Golgi complex", "Chaperone proteins", "Vesicle"],
+    "options": [
+      "Ribosome",
+      "Golgi complex",
+      "Chaperone proteins",
+      "Vesicle"
+    ],
     "topics": ["anatomy", "cell_theory", "cell_biology", "rough_vs_smooth_er"],
     "short_explanation": "Chaperone proteins assist in folding.",
     "long_explanation": "Molecular chaperones inside the rough ER help nascent proteins fold correctly, preventing aggregation and functional loss.",
     "clinical_application": "Misfolded proteins can lead to diseases — knowledge useful in understanding chronic inflammatory or autoimmune conditions encountered in massage therapy.",
     "source_reference": "Molecular Biology of the Cell – Alberts",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "hard",
@@ -199,8 +265,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["protein folding", "rough er"],
-    "keywords": ["chaperone proteins", "folding error", "er stress"],
+    "tags": [
+      "protein folding",
+      "rough er"
+    ],
+    "keywords": [
+      "chaperone proteins",
+      "folding error",
+      "er stress"
+    ],
     "synonyms": null
   },
   {
@@ -218,7 +291,6 @@
     "long_explanation": "The defining structural difference is the presence of ribosomes on the surface of the rough ER, which are absent in the smooth ER. This affects their respective functions.",
     "clinical_application": "This concept helps therapists understand cellular roles in injury, growth, and recovery.",
     "source_reference": "OpenStax Biology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "medium",
@@ -227,8 +299,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["er structure", "ribosomes", "cell anatomy"],
-    "keywords": ["endoplasmic reticulum", "surface texture", "ribosome"],
+    "tags": [
+      "er structure",
+      "ribosomes",
+      "cell anatomy"
+    ],
+    "keywords": [
+      "endoplasmic reticulum",
+      "surface texture",
+      "ribosome"
+    ],
     "synonyms": null
   },
   {
@@ -246,7 +326,6 @@
     "long_explanation": "The Unfolded Protein Response (UPR) is a cellular stress response triggered by accumulation of misfolded proteins in the ER, contributing to neurodegeneration and inflammation.",
     "clinical_application": "Clients with chronic conditions such as Alzheimer's or diabetes may be experiencing ER stress — useful insight for massage therapists addressing systemic effects.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/rough_vs_smooth_er.json",
     "question_type": null,
     "difficulty": "hard",
@@ -255,7 +334,10 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["er stress", "protein misfolding"],
+    "tags": [
+      "er stress",
+      "protein misfolding"
+    ],
     "keywords": [
       "unfolded protein response",
       "cell stress",

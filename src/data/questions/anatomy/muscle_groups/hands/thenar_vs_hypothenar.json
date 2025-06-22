@@ -14,7 +14,6 @@
     "long_explanation": "The thenar eminence contains muscles that act on the thumb, including the opponens pollicis, abductor pollicis brevis, and flexor pollicis brevis. In contrast, the hypothenar eminence includes muscles like abductor digiti minimi, flexor digiti minimi brevis, and opponens digiti minimi that control the 5th digit.",
     "clinical_application": "Thenar muscle weakness is often tested in cases of median nerve compression, such as carpal tunnel syndrome.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thenar", "hypothenar", "intrinsic hand muscles"],
+    "tags": [
+      "thenar",
+      "hypothenar",
+      "intrinsic hand muscles"
+    ],
     "keywords": [
       "opponens pollicis",
       "thenar group",
@@ -47,7 +50,6 @@
     "long_explanation": "The median nerve innervates most of the thenar muscles, including the abductor pollicis brevis, opponens pollicis, and superficial head of the flexor pollicis brevis. Damage to this nerve can result in thenar atrophy and loss of thumb opposition.",
     "clinical_application": "Carpal tunnel syndrome may cause atrophy of thenar muscles due to median nerve compression.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "medium",
@@ -56,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thenar", "median nerve", "thumb innervation"],
-    "keywords": ["median nerve", "thenar muscles", "carpal tunnel syndrome"],
+    "tags": [
+      "thenar",
+      "median nerve",
+      "thumb innervation"
+    ],
+    "keywords": [
+      "median nerve",
+      "thenar muscles",
+      "carpal tunnel syndrome"
+    ],
     "synonyms": null
   },
   {
@@ -75,7 +85,6 @@
     "long_explanation": "Thenar muscles act on the thumb while hypothenar muscles act on the 5th digit (pinky). Despite different digits, they both help in opposition and flexion, contributing to the hand's fine motor control.",
     "clinical_application": "Massage therapists may mobilize both areas to restore grip strength and hand coordination after injury.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "easy",
@@ -84,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thenar", "hypothenar", "opposition"],
-    "keywords": ["opposition", "digit flexion", "grip"],
+    "tags": [
+      "thenar",
+      "hypothenar",
+      "opposition"
+    ],
+    "keywords": [
+      "opposition",
+      "digit flexion",
+      "grip"
+    ],
     "synonyms": null
   },
   {
@@ -103,7 +120,6 @@
     "long_explanation": "The hypothenar group includes muscles specific to the pinky finger: abductor digiti minimi, flexor digiti minimi brevis, and opponens digiti minimi. These contrast with the thenar muscles, which focus on the thumb.",
     "clinical_application": "Hypothenar tightness or atrophy can impair ulnar-side hand grip and is seen in ulnar nerve entrapments.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "easy",
@@ -112,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hypothenar", "pinky", "ulnar nerve"],
-    "keywords": ["opponens digiti minimi", "hypothenar", "ulnar nerve"],
+    "tags": [
+      "hypothenar",
+      "pinky",
+      "ulnar nerve"
+    ],
+    "keywords": [
+      "opponens digiti minimi",
+      "hypothenar",
+      "ulnar nerve"
+    ],
     "synonyms": null
   },
   {
@@ -131,7 +155,6 @@
     "long_explanation": "Cubital tunnel syndrome compresses the ulnar nerve at the elbow. Since the hypothenar muscles are innervated by the ulnar nerve, chronic compression leads to wasting of these muscles and weakened 5th digit control.",
     "clinical_application": "Palpation of hypothenar muscle bulk may help massage therapists assess for signs of ulnar neuropathy.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "medium",
@@ -140,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "hypothenar", "cubital tunnel syndrome"],
-    "keywords": ["ulnar neuropathy", "hypothenar atrophy", "elbow entrapment"],
+    "tags": [
+      "ulnar nerve",
+      "hypothenar",
+      "cubital tunnel syndrome"
+    ],
+    "keywords": [
+      "ulnar neuropathy",
+      "hypothenar atrophy",
+      "elbow entrapment"
+    ],
     "synonyms": null
   },
   {
@@ -159,7 +190,6 @@
     "long_explanation": "Opposition involves rotating and flexing the thumb across the palm to meet the fingers, a critical motion for grasping. The opponens pollicis plays a key role in this action.",
     "clinical_application": "Thumb opposition is tested in median nerve assessment and is vital for effective gripping in massage work.",
     "source_reference": "Kinesiology of the Musculoskeletal System by Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "easy",
@@ -168,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["opponens pollicis", "thenar", "opposition"],
-    "keywords": ["thumb opposition", "grip", "median nerve"],
+    "tags": [
+      "opponens pollicis",
+      "thenar",
+      "opposition"
+    ],
+    "keywords": [
+      "thumb opposition",
+      "grip",
+      "median nerve"
+    ],
     "synonyms": null
   },
   {
@@ -187,7 +225,6 @@
     "long_explanation": "Abductor digiti minimi is one of the hypothenar muscles and functions to move the little finger laterally, aiding in grip and balance.",
     "clinical_application": "Strengthening this muscle helps improve lateral stability in grip during massage techniques requiring pinky control.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "easy",
@@ -196,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["abductor digiti minimi", "hypothenar", "digit movement"],
-    "keywords": ["pinky abduction", "hypothenar", "grip balance"],
+    "tags": [
+      "abductor digiti minimi",
+      "hypothenar",
+      "digit movement"
+    ],
+    "keywords": [
+      "pinky abduction",
+      "hypothenar",
+      "grip balance"
+    ],
     "synonyms": null
   },
   {
@@ -215,7 +260,6 @@
     "long_explanation": "Thenar muscles control thumb opposition while hypothenar muscles control pinky movement. Loss of both would impair the ability to bring these digits together for functional gripping.",
     "clinical_application": "Rehabilitation may focus on retraining opposition after nerve injuries affecting both the median and ulnar nerves.",
     "source_reference": "Kinesiology of the Musculoskeletal System",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "medium",
@@ -224,21 +268,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thenar", "hypothenar", "opposition", "grasp"],
-    "keywords": ["thumb-pinky opposition", "grip function", "nerve injury"],
+    "tags": [
+      "thenar",
+      "hypothenar",
+      "opposition",
+      "grasp"
+    ],
+    "keywords": [
+      "thumb-pinky opposition",
+      "grip function",
+      "nerve injury"
+    ],
     "synonyms": null
   },
   {
     "id": "thenar_vs_hypothenar_009",
     "correctAnswer": "Flexor retinaculum",
     "question": "Which bone serves as the attachment site for both thenar and hypothenar muscles?",
-    "options": ["Radius", "Ulna", "Flexor retinaculum", "Scaphoid"],
+    "options": [
+      "Radius",
+      "Ulna",
+      "Flexor retinaculum",
+      "Scaphoid"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "thenar_vs_hypothenar"],
     "short_explanation": "The flexor retinaculum anchors many intrinsic hand muscles.",
     "long_explanation": "The flexor retinaculum (transverse carpal ligament) provides attachment for both thenar (e.g., abductor pollicis brevis) and hypothenar (e.g., abductor digiti minimi) muscles. It also forms the roof of the carpal tunnel.",
     "clinical_application": "Manual techniques targeting the flexor retinaculum can relieve pressure in cases of carpal tunnel syndrome.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "medium",
@@ -247,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["flexor retinaculum", "thenar", "hypothenar"],
-    "keywords": ["carpal tunnel", "attachment site", "hand muscles"],
+    "tags": [
+      "flexor retinaculum",
+      "thenar",
+      "hypothenar"
+    ],
+    "keywords": [
+      "carpal tunnel",
+      "attachment site",
+      "hand muscles"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +331,6 @@
     "long_explanation": "Hypothenar muscles, located on the ulnar side of the palm, function to move the 5th digit. They are innervated by the ulnar nerve and contribute to fine motor tasks like cupping the hand.",
     "clinical_application": "Massage therapists may mobilize the hypothenar group to improve grip strength and lateral finger mobility.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/thenar_vs_hypothenar.json",
     "question_type": null,
     "difficulty": "easy",
@@ -275,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hypothenar", "ulnar nerve", "5th digit"],
-    "keywords": ["pinky control", "ulnar side", "intrinsic muscles"],
+    "tags": [
+      "hypothenar",
+      "ulnar nerve",
+      "5th digit"
+    ],
+    "keywords": [
+      "pinky control",
+      "ulnar side",
+      "intrinsic muscles"
+    ],
     "synonyms": null
   }
 ]

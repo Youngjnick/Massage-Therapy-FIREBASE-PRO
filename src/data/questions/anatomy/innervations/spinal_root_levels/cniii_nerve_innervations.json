@@ -9,17 +9,11 @@
       "Both motor and parasympathetic fibers",
       "Sympathetic fibers only"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "CN III carries motor and parasympathetic fibers.",
     "long_explanation": "The oculomotor nerve innervates most of the extraocular muscles and carries parasympathetic fibers for pupil constriction and lens accommodation.",
     "clinical_application": "A patient with a dilated pupil and droopy eyelid may have a CN III lesion affecting both motor and parasympathetic function.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "easy",
@@ -28,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CN III", "oculomotor", "parasympathetic"],
-    "keywords": ["motor nerve", "autonomic", "extraocular"],
+    "tags": [
+      "CN III",
+      "oculomotor",
+      "parasympathetic"
+    ],
+    "keywords": [
+      "motor nerve",
+      "autonomic",
+      "extraocular"
+    ],
     "synonyms": null
   },
   {
@@ -42,17 +44,11 @@
       "Superior rectus",
       "Inferior oblique"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "Lateral rectus is innervated by CN VI (abducens).",
     "long_explanation": "CN III innervates all extraocular muscles except lateral rectus (CN VI) and superior oblique (CN IV).",
     "clinical_application": "Impaired medial gaze with intact lateral gaze may suggest CN III palsy.",
     "source_reference": "Netter's Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "medium",
@@ -61,26 +57,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["extraocular muscles", "eye movement"],
-    "keywords": ["medial rectus", "lateral rectus", "cranial innervation"],
+    "tags": [
+      "extraocular muscles",
+      "eye movement"
+    ],
+    "keywords": [
+      "medial rectus",
+      "lateral rectus",
+      "cranial innervation"
+    ],
     "synonyms": null
   },
   {
     "id": "cniii_nerve_innervations_003",
     "correctAnswer": "Ptosis",
     "question": "Damage to CN III can result in which clinical sign?",
-    "options": ["Bell’s palsy", "Anosmia", "Ptosis", "Tongue deviation"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
+    "options": [
+      "Bell’s palsy",
+      "Anosmia",
+      "Ptosis",
+      "Tongue deviation"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "Ptosis is drooping of the eyelid, often from CN III dysfunction.",
     "long_explanation": "The oculomotor nerve innervates the levator palpebrae superioris, which elevates the upper eyelid. Damage can result in ptosis.",
     "clinical_application": "CN III palsy may also present with an eye that is 'down and out' due to unopposed lateral rectus and superior oblique action.",
     "source_reference": "Moore Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "medium",
@@ -89,8 +91,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ptosis", "oculomotor dysfunction"],
-    "keywords": ["eyelid droop", "cranial nerve lesion"],
+    "tags": [
+      "ptosis",
+      "oculomotor dysfunction"
+    ],
+    "keywords": [
+      "eyelid droop",
+      "cranial nerve lesion"
+    ],
     "synonyms": null
   },
   {
@@ -103,17 +111,11 @@
       "Tear production",
       "Heart rate regulation"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "CN III controls pupillary constriction via the sphincter pupillae.",
     "long_explanation": "The Edinger-Westphal nucleus sends parasympathetic fibers through CN III to the ciliary ganglion, which controls the sphincter pupillae and ciliary muscles for accommodation.",
     "clinical_application": "A dilated pupil unresponsive to light suggests damage to the parasympathetic fibers of CN III.",
     "source_reference": "Neuroanatomy Through Clinical Cases",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "medium",
@@ -122,26 +124,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["parasympathetic", "pupil"],
-    "keywords": ["light reflex", "ciliary ganglion"],
+    "tags": [
+      "parasympathetic",
+      "pupil"
+    ],
+    "keywords": [
+      "light reflex",
+      "ciliary ganglion"
+    ],
     "synonyms": null
   },
   {
     "id": "cniii_nerve_innervations_005",
     "correctAnswer": "Midbrain",
     "question": "Where does CN III originate in the brainstem?",
-    "options": ["Pons", "Medulla", "Midbrain", "Thalamus"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
+    "options": [
+      "Pons",
+      "Medulla",
+      "Midbrain",
+      "Thalamus"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "CN III emerges from the midbrain.",
     "long_explanation": "Specifically, CN III originates from the oculomotor nucleus in the midbrain at the level of the superior colliculus.",
     "clinical_application": "Brainstem strokes at the midbrain level can affect CN III function.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "medium",
@@ -150,8 +157,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brainstem", "midbrain origin"],
-    "keywords": ["cranial nerve nuclei", "oculomotor nucleus"],
+    "tags": [
+      "brainstem",
+      "midbrain origin"
+    ],
+    "keywords": [
+      "cranial nerve nuclei",
+      "oculomotor nucleus"
+    ],
     "synonyms": null
   },
   {
@@ -164,17 +177,11 @@
       "Superior orbital fissure",
       "Inferior orbital fissure"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "CN III passes through the superior orbital fissure.",
     "long_explanation": "The nerve enters the orbit via the superior orbital fissure along with CNs IV, VI, and branches of CN V1.",
     "clinical_application": "Orbital trauma affecting this fissure can impact multiple cranial nerves, including CN III.",
     "source_reference": "Netter's Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "medium",
@@ -183,8 +190,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve pathway", "orbit"],
-    "keywords": ["cranial foramina", "orbital entry"],
+    "tags": [
+      "nerve pathway",
+      "orbit"
+    ],
+    "keywords": [
+      "cranial foramina",
+      "orbital entry"
+    ],
     "synonyms": null
   },
   {
@@ -197,17 +210,11 @@
       "Nucleus ambiguus",
       "Solitary nucleus"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "The Edinger-Westphal nucleus sends parasympathetic fibers with CN III.",
     "long_explanation": "This nucleus is responsible for controlling pupil constriction and lens accommodation by relaying through the ciliary ganglion.",
     "clinical_application": "Damage to this nucleus affects pupillary light reflex and accommodation.",
     "source_reference": "Neuroscience Essentials",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "hard",
@@ -216,8 +223,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nuclei", "parasympathetic"],
-    "keywords": ["autonomic control", "pupil reflex"],
+    "tags": [
+      "nuclei",
+      "parasympathetic"
+    ],
+    "keywords": [
+      "autonomic control",
+      "pupil reflex"
+    ],
     "synonyms": null
   },
   {
@@ -230,17 +243,11 @@
       "Eye is centrally aligned",
       "Eye is elevated and medially rotated"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "Unopposed lateral rectus and superior oblique pull the eye outward and downward.",
     "long_explanation": "Without CN III innervation, the remaining CN IV and CN VI muscles dominate, resulting in the characteristic 'down and out' eye position.",
     "clinical_application": "This is a classic sign of oculomotor nerve palsy seen in diabetic neuropathy or aneurysms.",
     "source_reference": "Clinical Neuroanatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "hard",
@@ -249,8 +256,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve palsy", "eye alignment"],
-    "keywords": ["eye deviation", "muscle imbalance"],
+    "tags": [
+      "nerve palsy",
+      "eye alignment"
+    ],
+    "keywords": [
+      "eye deviation",
+      "muscle imbalance"
+    ],
     "synonyms": null
   },
   {
@@ -263,17 +276,11 @@
       "Superior rectus",
       "Inferior oblique"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "Levator palpebrae superioris lifts the upper eyelid.",
     "long_explanation": "This muscle receives motor innervation from CN III and plays a key role in maintaining open eyes. Its dysfunction leads to ptosis.",
     "clinical_application": "Massage therapists observing eyelid drooping during a session should consider referring for neurological assessment.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "easy",
@@ -282,8 +289,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["eyelid control", "motor function"],
-    "keywords": ["levator", "eyelid droop", "ptosis"],
+    "tags": [
+      "eyelid control",
+      "motor function"
+    ],
+    "keywords": [
+      "levator",
+      "eyelid droop",
+      "ptosis"
+    ],
     "synonyms": null
   },
   {
@@ -296,17 +310,11 @@
       "It dilates and becomes unreactive",
       "It oscillates with eye movement"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "cniii_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "cniii_nerve_innervations"],
     "short_explanation": "Parasympathetic fibers are compressed first, causing pupil dilation.",
     "long_explanation": "Since the parasympathetic fibers run superficially on CN III, they are often the first affected in compression injuries like herniation, leading to a 'blown pupil'.",
     "clinical_application": "Pupil dilation in head trauma may signal brain herniation and requires emergency attention.",
     "source_reference": "Neuroscience Essentials",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/cniii_nerve_innervations.json",
     "question_type": null,
     "difficulty": "hard",
@@ -315,8 +323,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pupil reflex", "nerve compression"],
-    "keywords": ["blown pupil", "parasympathetic loss"],
+    "tags": [
+      "pupil reflex",
+      "nerve compression"
+    ],
+    "keywords": [
+      "blown pupil",
+      "parasympathetic loss"
+    ],
     "synonyms": null
   }
 ]

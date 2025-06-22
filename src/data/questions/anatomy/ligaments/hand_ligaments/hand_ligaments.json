@@ -14,7 +14,6 @@
     "long_explanation": "The volar plate is a fibrocartilaginous ligament located on the palmar side of the MCP and IP joints. It prevents hyperextension and enhances joint stability during finger movement.",
     "clinical_application": "Injury to the volar plate may mimic a sprain. Massage should be modified if tenderness or swelling is present around the MCP joints.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hand", "ligaments", "MCP", "volar plate"],
-    "keywords": ["hand ligaments", "MCP", "volar plate", "palmar ligaments"],
-    "synonyms": ["palmar plate", "volar ligament"]
+    "tags": [
+      "hand",
+      "ligaments",
+      "MCP",
+      "volar plate"
+    ],
+    "keywords": [
+      "hand ligaments",
+      "MCP",
+      "volar plate",
+      "palmar ligaments"
+    ],
+    "synonyms": [
+      "palmar plate",
+      "volar ligament"
+    ]
   },
   {
     "id": "hand_ligaments_002",
@@ -42,7 +54,6 @@
     "long_explanation": "Collateral ligaments are located on each side of the MCP and IP joints and resist lateral forces to prevent excessive deviation.",
     "clinical_application": "Sprains of these ligaments are common in finger injuries. Massage therapists should assess for pain or laxity before applying pressure.",
     "source_reference": "Orthopedic Physical Assessment, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,9 +62,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ligaments", "collateral", "fingers", "MCP"],
-    "keywords": ["collateral ligament", "finger stability", "side movement"],
-    "synonyms": ["side ligaments", "lateral ligaments"]
+    "tags": [
+      "ligaments",
+      "collateral",
+      "fingers",
+      "MCP"
+    ],
+    "keywords": [
+      "collateral ligament",
+      "finger stability",
+      "side movement"
+    ],
+    "synonyms": [
+      "side ligaments",
+      "lateral ligaments"
+    ]
   },
   {
     "id": "hand_ligaments_003",
@@ -70,7 +93,6 @@
     "long_explanation": "The flexor retinaculum is a strong fibrous band that forms the roof of the carpal tunnel and helps protect the median nerve and tendons passing through.",
     "clinical_application": "Carpal tunnel syndrome may involve compression beneath the flexor retinaculum. Massage to nearby structures can help relieve symptoms.",
     "source_reference": "Clinical Anatomy by Systems, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -79,9 +101,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["carpal tunnel", "flexor retinaculum", "wrist", "median nerve"],
-    "keywords": ["carpal tunnel", "flexor retinaculum", "hand ligaments"],
-    "synonyms": ["transverse carpal ligament"]
+    "tags": [
+      "carpal tunnel",
+      "flexor retinaculum",
+      "wrist",
+      "median nerve"
+    ],
+    "keywords": [
+      "carpal tunnel",
+      "flexor retinaculum",
+      "hand ligaments"
+    ],
+    "synonyms": [
+      "transverse carpal ligament"
+    ]
   },
   {
     "id": "hand_ligaments_004",
@@ -98,7 +131,6 @@
     "long_explanation": "The annular pulleys (A1–A5) are ligamentous bands that hold flexor tendons against the phalanges, ensuring efficient finger flexion without bowstringing.",
     "clinical_application": "Trigger finger often involves thickening of the annular ligaments. Massage should be gentle in these areas if inflammation is present.",
     "source_reference": "Gray’s Anatomy for Students, 4th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -107,14 +139,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["annular ligament", "pulleys", "tendons", "fingers"],
+    "tags": [
+      "annular ligament",
+      "pulleys",
+      "tendons",
+      "fingers"
+    ],
     "keywords": [
       "flexor tendon",
       "annular pulley",
       "bowstringing",
       "trigger finger"
     ],
-    "synonyms": ["pulley system", "annular pulley"]
+    "synonyms": [
+      "pulley system",
+      "annular pulley"
+    ]
   },
   {
     "id": "hand_ligaments_005",
@@ -131,7 +171,6 @@
     "long_explanation": "The deep transverse metacarpal ligament binds the distal heads of the 2nd to 5th metacarpals, stabilizing the palmar arch and preventing excessive spread.",
     "clinical_application": "Tension or dysfunction in this ligament may affect hand span and grip strength, relevant for thumb or finger massage.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -140,9 +179,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["metacarpals", "transverse ligament", "palmar arch"],
-    "keywords": ["deep transverse metacarpal ligament", "hand span", "grip"],
-    "synonyms": ["deep transverse metacarpal ligament"]
+    "tags": [
+      "metacarpals",
+      "transverse ligament",
+      "palmar arch"
+    ],
+    "keywords": [
+      "deep transverse metacarpal ligament",
+      "hand span",
+      "grip"
+    ],
+    "synonyms": [
+      "deep transverse metacarpal ligament"
+    ]
   },
   {
     "id": "hand_ligaments_006",
@@ -159,7 +208,6 @@
     "long_explanation": "The scapholunate ligament is a key stabilizer of the proximal carpal row. Injury to this ligament may cause wrist instability and pain with weight bearing.",
     "clinical_application": "Massage therapists should take care around the scaphoid area if a scapholunate ligament injury is suspected, especially following a fall on an outstretched hand.",
     "source_reference": "Orthopedic Physical Assessment, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -168,9 +216,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scaphoid", "lunate", "wrist", "carpal"],
-    "keywords": ["scapholunate ligament", "wrist ligaments", "carpal bones"],
-    "synonyms": ["SL ligament", "scapho-lunate ligament"]
+    "tags": [
+      "scaphoid",
+      "lunate",
+      "wrist",
+      "carpal"
+    ],
+    "keywords": [
+      "scapholunate ligament",
+      "wrist ligaments",
+      "carpal bones"
+    ],
+    "synonyms": [
+      "SL ligament",
+      "scapho-lunate ligament"
+    ]
   },
   {
     "id": "hand_ligaments_007",
@@ -187,7 +247,6 @@
     "long_explanation": "Ligaments are composed mostly of dense regular connective tissue, which allows them to resist tensile forces and stabilize joints without much stretch.",
     "clinical_application": "Massage over ligaments should avoid excessive force, as these tissues have limited elasticity and slow healing rates.",
     "source_reference": "Principles of Anatomy & Physiology, 15th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -196,13 +255,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["connective tissue", "ligaments", "anatomy"],
+    "tags": [
+      "connective tissue",
+      "ligaments",
+      "anatomy"
+    ],
     "keywords": [
       "dense regular connective tissue",
       "hand ligaments",
       "tendon vs ligament"
     ],
-    "synonyms": ["ligament structure", "collagen fibers"]
+    "synonyms": [
+      "ligament structure",
+      "collagen fibers"
+    ]
   },
   {
     "id": "hand_ligaments_008",
@@ -219,7 +285,6 @@
     "long_explanation": "Ulnar collateral ligament (UCL) sprain of the thumb, often called skier's or gamekeeper’s thumb, results from valgus force applied to the thumb during activities like skiing or falls.",
     "clinical_application": "Massage should avoid overstretching or lateral pressure at the thumb MCP joint following UCL injury.",
     "source_reference": "Orthopedic Physical Assessment, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -228,14 +293,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thumb", "ligament injury", "skier's thumb"],
+    "tags": [
+      "thumb",
+      "ligament injury",
+      "skier's thumb"
+    ],
     "keywords": [
       "ulnar collateral ligament",
       "MCP",
       "skier's thumb",
       "UCL tear"
     ],
-    "synonyms": ["UCL injury", "thumb UCL", "gamekeeper's thumb"]
+    "synonyms": [
+      "UCL injury",
+      "thumb UCL",
+      "gamekeeper's thumb"
+    ]
   },
   {
     "id": "hand_ligaments_009",
@@ -252,7 +325,6 @@
     "long_explanation": "The palmar radiocarpal ligament is a thick fibrous band that stabilizes the wrist joint, particularly during wrist extension and load-bearing.",
     "clinical_application": "Pain or restriction with wrist extension may involve this ligament. Gentle ROM and soft tissue work around the wrist may support recovery.",
     "source_reference": "Gray’s Anatomy for Students, 4th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -261,13 +333,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["wrist", "radiocarpal", "ligaments", "radius"],
+    "tags": [
+      "wrist",
+      "radiocarpal",
+      "ligaments",
+      "radius"
+    ],
     "keywords": [
       "palmar radiocarpal ligament",
       "wrist stability",
       "radius to carpal"
     ],
-    "synonyms": ["radiocarpal complex", "wrist ligament"]
+    "synonyms": [
+      "radiocarpal complex",
+      "wrist ligament"
+    ]
   },
   {
     "id": "hand_ligaments_010",
@@ -284,7 +364,6 @@
     "long_explanation": "A rupture of the central slip causes the PIP joint to flex and DIP to hyperextend, known as Boutonnière deformity. It often results from trauma or RA.",
     "clinical_application": "Massage therapists should assess for abnormal finger postures and avoid overstretching fingers affected by extensor hood injuries.",
     "source_reference": "Orthopedic Physical Assessment, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/hand_ligaments/hand_ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -293,8 +372,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["extensor hood", "central slip", "finger deformity"],
-    "keywords": ["central slip rupture", "boutonnière", "extensor mechanism"],
-    "synonyms": ["central slip rupture", "finger tendon injury"]
+    "tags": [
+      "extensor hood",
+      "central slip",
+      "finger deformity"
+    ],
+    "keywords": [
+      "central slip rupture",
+      "boutonnière",
+      "extensor mechanism"
+    ],
+    "synonyms": [
+      "central slip rupture",
+      "finger tendon injury"
+    ]
   }
 ]

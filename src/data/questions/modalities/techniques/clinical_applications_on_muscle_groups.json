@@ -3,17 +3,17 @@
     "id": "clinical_applications_on_muscle_groups_001",
     "correctAnswer": "Petrissage",
     "question": "Which technique is most effective for releasing tension in the upper trapezius muscle?",
-    "options": ["Effleurage", "Tapotement", "Petrissage", "Joint movement"],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
+    "options": [
+      "Effleurage",
+      "Tapotement",
+      "Petrissage",
+      "Joint movement"
     ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Petrissage deeply manipulates muscle fibers to reduce tension.",
     "long_explanation": "Petrissage involves kneading, wringing, and squeezing movements that target deeper muscle layers. It's highly effective for addressing hypertonicity and stress-related tightness in the upper trapezius.",
     "clinical_application": "Used for neck stiffness, tension headaches, and postural fatigue.",
     "source_reference": "Trail Guide to the Body, FSMTB",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -22,25 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique_petrissage", "muscle_trapezius", "purpose_relaxation"],
-    "keywords": ["kneading", "upper trapezius", "neck tension"],
+    "tags": [
+      "technique_petrissage",
+      "muscle_trapezius",
+      "purpose_relaxation"
+    ],
+    "keywords": [
+      "kneading",
+      "upper trapezius",
+      "neck tension"
+    ],
     "synonyms": null
   },
   {
     "id": "clinical_applications_on_muscle_groups_002",
     "correctAnswer": "IT band",
     "question": "Which muscle group would benefit most from deep friction massage to address adhesion?",
-    "options": ["Hamstrings", "Forearm flexors", "IT band", "Abdominals"],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
+    "options": [
+      "Hamstrings",
+      "Forearm flexors",
+      "IT band",
+      "Abdominals"
     ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "The IT band is prone to adhesions that respond to friction.",
     "long_explanation": "Deep friction massage breaks down fibrotic tissue and improves pliability in fascia-heavy regions like the iliotibial band.",
     "clinical_application": "For lateral knee pain, IT band syndrome, or post-surgical adhesions.",
     "source_reference": "Salvo, Clinical Massage Techniques",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -54,24 +62,28 @@
       "muscle_it_band",
       "adhesion_treatment"
     ],
-    "keywords": ["IT band", "friction", "adhesions"],
+    "keywords": [
+      "IT band",
+      "friction",
+      "adhesions"
+    ],
     "synonyms": null
   },
   {
     "id": "clinical_applications_on_muscle_groups_003",
     "correctAnswer": "Effleurage",
     "question": "Which massage technique is best suited for the paraspinal muscles?",
-    "options": ["Friction", "Compression", "Tapotement", "Effleurage"],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
+    "options": [
+      "Friction",
+      "Compression",
+      "Tapotement",
+      "Effleurage"
     ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Effleurage glides lengthwise along the spine to relax paraspinal tension.",
     "long_explanation": "Light to moderate pressure strokes with effleurage enhance circulation and reduce tightness along the erector spinae and paraspinal regions.",
     "clinical_application": "For back fatigue, postural pain, or chronic stress.",
     "source_reference": "Salvo, Trail Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -80,25 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique_effleurage", "muscle_paraspinal", "spine_relaxation"],
-    "keywords": ["effleurage", "spine", "paraspinal"],
+    "tags": [
+      "technique_effleurage",
+      "muscle_paraspinal",
+      "spine_relaxation"
+    ],
+    "keywords": [
+      "effleurage",
+      "spine",
+      "paraspinal"
+    ],
     "synonyms": null
   },
   {
     "id": "clinical_applications_on_muscle_groups_004",
     "correctAnswer": "Petrissage",
     "question": "What technique is recommended for relieving tightness in the gastrocnemius and soleus?",
-    "options": ["Tapotement", "Vibration", "Petrissage", "Effleurage"],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
+    "options": [
+      "Tapotement",
+      "Vibration",
+      "Petrissage",
+      "Effleurage"
     ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Petrissage helps break up muscle tightness in the calves.",
     "long_explanation": "Targets the deeper fibers in the posterior leg, improving elasticity and circulation in the gastrocnemius and soleus.",
     "clinical_application": "Ideal for runners, prolonged standing, or plantar fasciitis.",
     "source_reference": "FSMTB, Clinical Applications Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -107,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique_petrissage", "muscle_gastrocnemius", "muscle_soleus"],
-    "keywords": ["calves", "muscle recovery", "soleus"],
+    "tags": [
+      "technique_petrissage",
+      "muscle_gastrocnemius",
+      "muscle_soleus"
+    ],
+    "keywords": [
+      "calves",
+      "muscle recovery",
+      "soleus"
+    ],
     "synonyms": null
   },
   {
@@ -121,16 +149,11 @@
       "Tapotement",
       "Joint mobilization"
     ],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
-    ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Trigger point therapy targets specific tender nodules in tight muscles.",
     "long_explanation": "Applies sustained pressure to trigger points that refer pain and create chronic tension.",
     "clinical_application": "Used for tennis elbow, overuse injuries, or typing strain.",
     "source_reference": "Trail Guide, Orthopedic Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -139,8 +162,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["modality_trigger_point_therapy", "muscle_forearm_extensors"],
-    "keywords": ["trigger points", "extensor tension"],
+    "tags": [
+      "modality_trigger_point_therapy",
+      "muscle_forearm_extensors"
+    ],
+    "keywords": [
+      "trigger points",
+      "extensor tension"
+    ],
     "synonyms": null
   },
   {
@@ -153,16 +182,11 @@
       "Tapotement",
       "Friction"
     ],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
-    ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Compression and stretching reduce neuromuscular tension.",
     "long_explanation": "Static compression softens tight muscle fibers, while passive stretching elongates shortened tissue in the lateral hip.",
     "clinical_application": "Used in sciatica, hip dysfunction, or sacroiliac instability.",
     "source_reference": "Salvo, NMT Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -176,24 +200,28 @@
       "technique_stretching",
       "muscle_gluteals"
     ],
-    "keywords": ["gluteus medius", "piriformis", "sciatica"],
+    "keywords": [
+      "gluteus medius",
+      "piriformis",
+      "sciatica"
+    ],
     "synonyms": null
   },
   {
     "id": "clinical_applications_on_muscle_groups_007",
     "correctAnswer": "PNF stretching",
     "question": "What technique is effective for lengthening tight hamstrings?",
-    "options": ["Tapotement", "PNF stretching", "Vibration", "Effleurage"],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
+    "options": [
+      "Tapotement",
+      "PNF stretching",
+      "Vibration",
+      "Effleurage"
     ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "PNF uses contract-relax cycles to enhance muscle length.",
     "long_explanation": "PNF stretches involve client contraction followed by passive therapist-assisted elongation of the muscle, increasing flexibility and ROM.",
     "clinical_application": "Used for athletes, chronic tightness, or gait dysfunction.",
     "source_reference": "Clinical Kinesiology Textbook, FSMTB",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -202,25 +230,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique_pnf", "muscle_hamstrings", "stretching_flexibility"],
-    "keywords": ["hamstrings", "flexibility", "stretch"],
+    "tags": [
+      "technique_pnf",
+      "muscle_hamstrings",
+      "stretching_flexibility"
+    ],
+    "keywords": [
+      "hamstrings",
+      "flexibility",
+      "stretch"
+    ],
     "synonyms": null
   },
   {
     "id": "clinical_applications_on_muscle_groups_008",
     "correctAnswer": "Levator scapulae",
     "question": "Which muscle benefits most from ischemic compression near the scapula?",
-    "options": ["Levator scapulae", "Deltoid", "Trapezius", "Teres major"],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
+    "options": [
+      "Levator scapulae",
+      "Deltoid",
+      "Trapezius",
+      "Teres major"
     ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Ischemic compression reduces active trigger points in deep neck muscles.",
     "long_explanation": "Temporarily reduces blood flow to deactivate hypersensitive points in the levator scapulae, then releases for a flush effect.",
     "clinical_application": "Common for clients with tech neck, forward head posture, or shoulder stiffness.",
     "source_reference": "NMT Training Guide, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -229,8 +265,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique_ischemic_compression", "muscle_levator_scapulae"],
-    "keywords": ["levator scapulae", "trigger points", "shoulder tension"],
+    "tags": [
+      "technique_ischemic_compression",
+      "muscle_levator_scapulae"
+    ],
+    "keywords": [
+      "levator scapulae",
+      "trigger points",
+      "shoulder tension"
+    ],
     "synonyms": null
   },
   {
@@ -243,16 +286,11 @@
       "Effleurage followed by gentle petrissage",
       "Tapotement"
     ],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
-    ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Effleurage flushes metabolic waste; petrissage relaxes fibers.",
     "long_explanation": "Combining superficial gliding strokes with deeper kneading promotes recovery, reduces DOMS, and enhances circulation in large thigh muscles.",
     "clinical_application": "Used post-event for athletes or strength training clients.",
     "source_reference": "Sports Massage Textbook, Trail Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -266,7 +304,11 @@
       "technique_petrissage",
       "muscle_quadriceps"
     ],
-    "keywords": ["recovery", "quad fatigue", "sports massage"],
+    "keywords": [
+      "recovery",
+      "quad fatigue",
+      "sports massage"
+    ],
     "synonyms": null
   },
   {
@@ -279,16 +321,11 @@
       "Friction between ribs",
       "Trigger point release"
     ],
-    "topics": [
-      "modalities",
-      "techniques",
-      "clinical_applications_on_muscle_groups"
-    ],
+    "topics": ["modalities", "techniques", "clinical_applications_on_muscle_groups"],
     "short_explanation": "Friction mobilizes tight intercostals and rib spaces.",
     "long_explanation": "Cross-fiber friction between intercostal spaces helps restore rib cage expansion and improve respiratory function.",
     "clinical_application": "Used for clients with shallow breath, anxiety, or thoracic stiffness.",
     "source_reference": "Breath-Integrated Bodywork Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/clinical_applications_on_muscle_groups.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -297,8 +334,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique_friction", "muscle_intercostals", "breathwork_support"],
-    "keywords": ["intercostal friction", "rib release", "breathing"],
+    "tags": [
+      "technique_friction",
+      "muscle_intercostals",
+      "breathwork_support"
+    ],
+    "keywords": [
+      "intercostal friction",
+      "rib release",
+      "breathing"
+    ],
     "synonyms": null
   }
 ]

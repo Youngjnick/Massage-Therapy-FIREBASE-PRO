@@ -14,7 +14,6 @@
     "long_explanation": "Red bone marrow is a vital hematopoietic tissue found primarily in the flat bones and proximal ends of long bones in adults. It generates red blood cells, white blood cells, and platelets.",
     "clinical_application": "Massage therapy over the sternum or pelvis should consider underlying red marrow in these areas, especially in immunocompromised clients.",
     "source_reference": "Martini: Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hematopoiesis", "bone marrow", "blood cells"],
-    "keywords": ["red marrow", "blood production", "medullary cavity"],
+    "tags": [
+      "hematopoiesis",
+      "bone marrow",
+      "blood cells"
+    ],
+    "keywords": [
+      "red marrow",
+      "blood production",
+      "medullary cavity"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "In adults, red marrow is concentrated in the flat bones such as the sternum, ribs, vertebrae, and ilium, where hematopoiesis continues actively.",
     "clinical_application": "Awareness of red marrow areas helps avoid excess pressure during deep tissue techniques over the thorax and pelvis.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "medium",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adult anatomy", "axial skeleton", "bone marrow"],
-    "keywords": ["sternum", "iliac crest", "hematopoiesis"],
+    "tags": [
+      "adult anatomy",
+      "axial skeleton",
+      "bone marrow"
+    ],
+    "keywords": [
+      "sternum",
+      "iliac crest",
+      "hematopoiesis"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "During early development, red marrow fills the medullary cavities of all bones, including long bones like the femur and humerus, supporting rapid growth and high blood cell turnover.",
     "clinical_application": "Knowledge of pediatric marrow distribution aids in understanding systemic effects of pediatric bone trauma or disease.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "medium",
@@ -79,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pediatrics", "bone marrow", "hematopoiesis"],
-    "keywords": ["child", "red marrow distribution", "growth"],
+    "tags": [
+      "pediatrics",
+      "bone marrow",
+      "hematopoiesis"
+    ],
+    "keywords": [
+      "child",
+      "red marrow distribution",
+      "growth"
+    ],
     "synonyms": null
   },
   {
     "id": "red_marrow_004",
     "correctAnswer": "Adipocytes",
     "question": "Which component is NOT produced in red marrow?",
-    "options": ["Erythrocytes", "Platelets", "Adipocytes", "Leukocytes"],
+    "options": [
+      "Erythrocytes",
+      "Platelets",
+      "Adipocytes",
+      "Leukocytes"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "red_marrow"],
     "short_explanation": "Adipocytes are more associated with yellow marrow.",
     "long_explanation": "While red marrow produces blood components such as erythrocytes, leukocytes, and thrombocytes, adipocytes are a feature of yellow marrow, which stores fat.",
     "clinical_application": "Marrow type distinction is useful in understanding healing, immunity, and energy metabolism, especially in elderly or malnourished clients.",
     "source_reference": "Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "easy",
@@ -102,21 +127,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["blood cells", "yellow marrow", "fat storage"],
-    "keywords": ["adipocyte", "hematopoiesis", "platelet"],
+    "tags": [
+      "blood cells",
+      "yellow marrow",
+      "fat storage"
+    ],
+    "keywords": [
+      "adipocyte",
+      "hematopoiesis",
+      "platelet"
+    ],
     "synonyms": null
   },
   {
     "id": "red_marrow_005",
     "correctAnswer": "Iliac crest",
     "question": "Where is red marrow commonly sampled for a bone marrow biopsy?",
-    "options": ["Tibia", "Humerus", "Iliac crest", "Sternum"],
+    "options": [
+      "Tibia",
+      "Humerus",
+      "Iliac crest",
+      "Sternum"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "red_marrow"],
     "short_explanation": "The iliac crest provides accessible red marrow for biopsy.",
     "long_explanation": "The posterior iliac crest is a preferred site for sampling due to its superficial location, rich marrow content, and relatively low risk of complications.",
     "clinical_application": "Massage therapists should take care not to apply direct deep pressure over recent biopsy sites in the pelvis.",
     "source_reference": "Pathophysiology for the Health Professions",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "medium",
@@ -125,8 +162,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["biopsy", "iliac crest", "pelvis"],
-    "keywords": ["marrow biopsy", "posterior superior iliac spine"],
+    "tags": [
+      "biopsy",
+      "iliac crest",
+      "pelvis"
+    ],
+    "keywords": [
+      "marrow biopsy",
+      "posterior superior iliac spine"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +188,6 @@
     "long_explanation": "With age, some red marrow is replaced by adipose tissue, leading to the formation of yellow marrow in long bones. However, under stress or demand, yellow marrow can revert to red.",
     "clinical_application": "This plasticity is important in understanding recovery from trauma or anemia, where marrow activity may increase.",
     "source_reference": "Robbins Basic Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "medium",
@@ -153,7 +196,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aging", "marrow conversion", "yellow marrow"],
+    "tags": [
+      "aging",
+      "marrow conversion",
+      "yellow marrow"
+    ],
     "keywords": [
       "fatty infiltration",
       "adipose replacement",
@@ -176,7 +223,6 @@
     "long_explanation": "Red bone marrow houses hematopoietic stem cells (HSCs), which differentiate into all blood cells. These are key in bone marrow transplants and immune regeneration.",
     "clinical_application": "Understanding stem cell roles is critical for massage safety with clients undergoing transplant recovery.",
     "source_reference": "Molecular Biology of the Cell",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "hard",
@@ -185,21 +231,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["stem cells", "HSC", "immune system"],
-    "keywords": ["hematopoiesis", "marrow transplant", "progenitor cells"],
+    "tags": [
+      "stem cells",
+      "HSC",
+      "immune system"
+    ],
+    "keywords": [
+      "hematopoiesis",
+      "marrow transplant",
+      "progenitor cells"
+    ],
     "synonyms": null
   },
   {
     "id": "red_marrow_008",
     "correctAnswer": "Anemia",
     "question": "Which condition can lead to red marrow hyperplasia?",
-    "options": ["Osteoporosis", "Anemia", "Arthritis", "Diabetes"],
+    "options": [
+      "Osteoporosis",
+      "Anemia",
+      "Arthritis",
+      "Diabetes"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "red_marrow"],
     "short_explanation": "Anemia increases demand for red blood cells, triggering hyperplasia.",
     "long_explanation": "In response to low oxygen-carrying capacity, red marrow may become more active, increasing its mass and converting yellow marrow back to red for increased production.",
     "clinical_application": "In clients with anemia, fatigue and tissue sensitivity may correlate with hyperactive marrow and systemic symptoms.",
     "source_reference": "Essentials of Pathophysiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "medium",
@@ -208,21 +266,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anemia", "hyperplasia", "bone marrow"],
-    "keywords": ["marrow reactivation", "oxygen demand", "erythropoiesis"],
+    "tags": [
+      "anemia",
+      "hyperplasia",
+      "bone marrow"
+    ],
+    "keywords": [
+      "marrow reactivation",
+      "oxygen demand",
+      "erythropoiesis"
+    ],
     "synonyms": null
   },
   {
     "id": "red_marrow_009",
     "correctAnswer": "Vitamin B12",
     "question": "Which vitamin is critical for red marrow function?",
-    "options": ["Vitamin C", "Vitamin D", "Vitamin B12", "Vitamin K"],
+    "options": [
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin B12",
+      "Vitamin K"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "red_marrow"],
     "short_explanation": "Vitamin B12 supports red blood cell production in the marrow.",
     "long_explanation": "Vitamin B12 and folate are essential for DNA synthesis in rapidly dividing hematopoietic cells. Deficiency can lead to megaloblastic anemia, impairing marrow function.",
     "clinical_application": "Massage therapists may observe pallor or fatigue in clients with nutritional anemia linked to marrow dysfunction.",
     "source_reference": "Nutrition and Diet Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "medium",
@@ -231,21 +301,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vitamin B12", "nutrition", "anemia"],
-    "keywords": ["folate", "erythropoiesis", "nutritional deficiency"],
+    "tags": [
+      "vitamin B12",
+      "nutrition",
+      "anemia"
+    ],
+    "keywords": [
+      "folate",
+      "erythropoiesis",
+      "nutritional deficiency"
+    ],
     "synonyms": null
   },
   {
     "id": "red_marrow_010",
     "correctAnswer": "Erythropoietin",
     "question": "Red marrow production can be artificially stimulated by which hormone?",
-    "options": ["Insulin", "Erythropoietin", "Testosterone", "Melatonin"],
+    "options": [
+      "Insulin",
+      "Erythropoietin",
+      "Testosterone",
+      "Melatonin"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "red_marrow"],
     "short_explanation": "Erythropoietin increases red blood cell production in red marrow.",
     "long_explanation": "Erythropoietin (EPO) is released primarily by the kidneys in response to low oxygen levels. It stimulates red marrow to produce more erythrocytes, improving oxygen delivery to tissues.",
     "clinical_application": "Clients undergoing EPO therapy for kidney disease or anemia may experience changes in tissue perfusion relevant to massage response.",
     "source_reference": "Guyton & Hall: Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/red_marrow.json",
     "question_type": null,
     "difficulty": "hard",
@@ -254,8 +336,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["erythropoietin", "kidney hormone", "oxygen"],
-    "keywords": ["hematocrit", "hypoxia", "blood doping"],
+    "tags": [
+      "erythropoietin",
+      "kidney hormone",
+      "oxygen"
+    ],
+    "keywords": [
+      "hematocrit",
+      "hypoxia",
+      "blood doping"
+    ],
     "synonyms": null
   }
 ]

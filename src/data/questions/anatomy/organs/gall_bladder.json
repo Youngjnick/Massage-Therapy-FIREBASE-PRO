@@ -14,7 +14,6 @@
     "long_explanation": "The gallbladder does not produce bile; instead, it stores bile made by the liver and releases it into the small intestine in response to fat ingestion.",
     "clinical_application": "Massage over the right upper abdomen should be cautious in clients with gallbladder disease or pain due to risk of exacerbating inflammation.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bile", "gallbladder", "digestion"],
-    "keywords": ["gallbladder", "bile storage", "fat digestion"],
+    "tags": [
+      "bile",
+      "gallbladder",
+      "digestion"
+    ],
+    "keywords": [
+      "gallbladder",
+      "bile storage",
+      "fat digestion"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The gallbladder is situated under the right lobe of the liver, in the right upper quadrant, making it susceptible to referred pain in the right shoulder and scapula.",
     "clinical_application": "Referred pain from gallbladder disease may appear in the right shoulder, which massage therapists should recognize as a red flag.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "basic",
@@ -51,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["quadrants", "anatomy", "gallbladder"],
-    "keywords": ["location", "RUQ", "visceral pain"],
+    "tags": [
+      "quadrants",
+      "anatomy",
+      "gallbladder"
+    ],
+    "keywords": [
+      "location",
+      "RUQ",
+      "visceral pain"
+    ],
     "synonyms": null
   },
   {
     "id": "gall_bladder_003",
     "correctAnswer": "Cholecystokinin",
     "question": "Which hormone triggers bile release from the gallbladder?",
-    "options": ["Gastrin", "Secretin", "Cholecystokinin", "Insulin"],
+    "options": [
+      "Gastrin",
+      "Secretin",
+      "Cholecystokinin",
+      "Insulin"
+    ],
     "topics": ["anatomy", "organs", "gall_bladder"],
     "short_explanation": "Cholecystokinin (CCK) stimulates bile release in response to fats.",
     "long_explanation": "CCK is released by the small intestine when fatty foods enter. It signals the gallbladder to contract and release bile into the duodenum.",
     "clinical_application": "Understanding CCK helps massage therapists working with clients who report postprandial bloating or gallbladder issues.",
     "source_reference": "Guyton and Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hormone", "CCK", "gallbladder"],
-    "keywords": ["cholecystokinin", "fat digestion", "bile release"],
+    "tags": [
+      "hormone",
+      "CCK",
+      "gallbladder"
+    ],
+    "keywords": [
+      "cholecystokinin",
+      "fat digestion",
+      "bile release"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "When bile contains too much cholesterol and not enough bile salts, stones can form and block the cystic duct, leading to inflammation.",
     "clinical_application": "Clients with gallstones may report referred pain to the right scapula. Avoid deep abdominal massage in acute cases.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gallstones", "cholelithiasis", "cholesterol"],
-    "keywords": ["gallbladder stones", "cholesterol imbalance", "bile"],
+    "tags": [
+      "gallstones",
+      "cholelithiasis",
+      "cholesterol"
+    ],
+    "keywords": [
+      "gallbladder stones",
+      "cholesterol imbalance",
+      "bile"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "Bile flows from the gallbladder into the cystic duct, then into the common bile duct to reach the duodenum. This pathway may be obstructed by gallstones.",
     "clinical_application": "Understanding duct anatomy helps bodyworkers interpret digestive pain patterns.",
     "source_reference": "Netter’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "basic",
@@ -130,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["biliary tree", "gallbladder", "ducts"],
-    "keywords": ["cystic duct", "bile flow", "digestive anatomy"],
+    "tags": [
+      "biliary tree",
+      "gallbladder",
+      "ducts"
+    ],
+    "keywords": [
+      "cystic duct",
+      "bile flow",
+      "digestive anatomy"
+    ],
     "synonyms": null
   },
   {
     "id": "gall_bladder_006",
     "correctAnswer": "Fats",
     "question": "Bile from the gallbladder helps in digestion of which nutrient?",
-    "options": ["Proteins", "Carbohydrates", "Fats", "Minerals"],
+    "options": [
+      "Proteins",
+      "Carbohydrates",
+      "Fats",
+      "Minerals"
+    ],
     "topics": ["anatomy", "organs", "gall_bladder"],
     "short_explanation": "Bile emulsifies fats, aiding their breakdown.",
     "long_explanation": "Bile contains bile salts that break fat globules into smaller droplets (emulsification), which increases the surface area for lipase action.",
     "clinical_application": "Massage therapists should be aware of gallbladder function when working with clients experiencing fatty food intolerance.",
     "source_reference": "Physiology Made Easy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "basic",
@@ -153,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fat digestion", "bile", "gallbladder"],
-    "keywords": ["lipid emulsification", "bile salts", "fat metabolism"],
+    "tags": [
+      "fat digestion",
+      "bile",
+      "gallbladder"
+    ],
+    "keywords": [
+      "lipid emulsification",
+      "bile salts",
+      "fat metabolism"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +224,6 @@
     "long_explanation": "Due to shared innervation via the phrenic nerve (C3–C5), gallbladder pain can manifest in the right upper quadrant and right shoulder.",
     "clinical_application": "Therapists should distinguish musculoskeletal pain from referred gallbladder pain for safe practice.",
     "source_reference": "Moore's Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -181,7 +232,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["referred pain", "gallbladder", "scapular region"],
+    "tags": [
+      "referred pain",
+      "gallbladder",
+      "scapular region"
+    ],
     "keywords": [
       "visceral referral",
       "gallbladder inflammation",
@@ -193,13 +248,17 @@
     "id": "gall_bladder_008",
     "correctAnswer": "Cholecystitis",
     "question": "Which condition is a medical emergency requiring removal of the gallbladder?",
-    "options": ["Pancreatitis", "Cholecystitis", "Hepatitis", "Appendicitis"],
+    "options": [
+      "Pancreatitis",
+      "Cholecystitis",
+      "Hepatitis",
+      "Appendicitis"
+    ],
     "topics": ["anatomy", "organs", "gall_bladder"],
     "short_explanation": "Cholecystitis is inflammation of the gallbladder, often requiring surgery.",
     "long_explanation": "Cholecystitis can result from a blocked cystic duct, leading to infection and rupture if untreated. Cholecystectomy is often required.",
     "clinical_application": "Clients recovering from surgery should be treated with gentle, non-abdominal techniques during healing.",
     "source_reference": "Emergency Medicine Essentials",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -208,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gallbladder", "cholecystitis", "surgical emergency"],
-    "keywords": ["gallbladder removal", "infection", "abdominal pain"],
+    "tags": [
+      "gallbladder",
+      "cholecystitis",
+      "surgical emergency"
+    ],
+    "keywords": [
+      "gallbladder removal",
+      "infection",
+      "abdominal pain"
+    ],
     "synonyms": null
   },
   {
@@ -227,7 +294,6 @@
     "long_explanation": "Without the gallbladder, bile is not stored but drips continuously into the small intestine, which may affect fat digestion efficiency.",
     "clinical_application": "Clients without a gallbladder may experience digestive sensitivity to high-fat meals. Massage therapists should avoid abdominal compression post-surgery.",
     "source_reference": "Physiology Review Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "basic",
@@ -236,21 +302,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bile flow", "cholecystectomy", "digestion"],
-    "keywords": ["post-gallbladder surgery", "bile secretion", "fat digestion"],
+    "tags": [
+      "bile flow",
+      "cholecystectomy",
+      "digestion"
+    ],
+    "keywords": [
+      "post-gallbladder surgery",
+      "bile secretion",
+      "fat digestion"
+    ],
     "synonyms": null
   },
   {
     "id": "gall_bladder_010",
     "correctAnswer": "Fats",
     "question": "Which nutrient's digestion is most impacted by gallbladder dysfunction?",
-    "options": ["Carbohydrates", "Proteins", "Fats", "Fiber"],
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Fats",
+      "Fiber"
+    ],
     "topics": ["anatomy", "organs", "gall_bladder"],
     "short_explanation": "Fats require bile for emulsification, which is stored in the gallbladder.",
     "long_explanation": "Without proper bile release, fats are poorly emulsified, leading to steatorrhea (fatty stool) and nutrient malabsorption.",
     "clinical_application": "Therapists should refer clients reporting unexplained fatty stool, bloating, and abdominal pain to rule out gallbladder issues.",
     "source_reference": "Nutrition and Digestion for Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/gall_bladder.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -259,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fat digestion", "gallbladder", "malabsorption"],
-    "keywords": ["steatorrhea", "bile", "gallbladder dysfunction"],
+    "tags": [
+      "fat digestion",
+      "gallbladder",
+      "malabsorption"
+    ],
+    "keywords": [
+      "steatorrhea",
+      "bile",
+      "gallbladder dysfunction"
+    ],
     "synonyms": null
   }
 ]

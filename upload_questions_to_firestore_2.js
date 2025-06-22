@@ -48,20 +48,42 @@ async function confirmUpload() {
 
 function validateQuestion(q, file, idx) {
   const errors = [];
-  if (!q.id) errors.push('Missing id');
-  if (!q.question && !q.text) errors.push('Missing question/text');
+  // Require all canonical fields
+  const requiredFields = [
+    'id',
+    'correctAnswer',
+    'question',
+    'options',
+    'topics',
+    'short_explanation',
+    'long_explanation',
+    'clinical_application',
+    'source_reference',
+    'filepath',
+    'question_type',
+    'difficulty',
+    'difficulty_rating',
+    'difficulty_adjustment',
+    'relevance_score',
+    'created_at',
+    'updated_at',
+    'tags',
+    'keywords',
+    'synonyms'
+  ];
+  requiredFields.forEach(field => {
+    // Only error if field is undefined (not present at all), but allow null or empty
+    if (q[field] === undefined) {
+      errors.push(`Missing ${field}`);
+    }
+  });
+  // Additional checks for options/correctAnswer
   if (!Array.isArray(q.options) || q.options.length < 2) errors.push('Missing or invalid options');
   if (typeof q.correctAnswer !== 'string' || !Array.isArray(q.options) || !q.options.includes(q.correctAnswer)) {
     errors.push('Missing or invalid correctAnswer');
   }
-  if (!Array.isArray(q.abcd) || q.abcd.length !== q.options.length) errors.push('Missing or invalid abcd');
-  // Warn if clinical explanation fields are missing (but do not block upload)
-  const warnings = [];
-  if (!q.short_explanation) warnings.push('Missing short_explanation');
-  if (!q.long_explanation) warnings.push('Missing long_explanation');
-  if (!q.clinical_application) warnings.push('Missing clinical_application');
-  return (errors.length > 0 || warnings.length > 0)
-    ? { file, idx, id: q.id, errors, warnings }
+  return (errors.length > 0)
+    ? { file, idx, id: q.id, errors, warnings: [] }
     : null;
 }
 
@@ -77,6 +99,39 @@ function normalizeQuestionId(id, fileBase, idx) {
   }
   if (!id) return id;
   return id.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+}
+
+const FIELD_ORDER = [
+  'id',
+  'correctAnswer',
+  'question',
+  'options',
+  'topics',
+  'short_explanation',
+  'long_explanation',
+  'clinical_application',
+  'source_reference',
+  'filepath',
+  'question_type',
+  'difficulty',
+  'difficulty_rating',
+  'difficulty_adjustment',
+  'relevance_score',
+  'created_at',
+  'updated_at',
+  'tags',
+  'keywords',
+  'synonyms'
+];
+
+function canonicalizeQuestion(q) {
+  const out = {};
+  FIELD_ORDER.forEach(field => {
+    let v = q[field];
+    if (v === undefined || v === '' || (Array.isArray(v) && v.length === 0)) v = null;
+    out[field] = v;
+  });
+  return out;
 }
 
 async function uploadQuestions() {
@@ -101,17 +156,12 @@ async function uploadQuestions() {
     const baseName = path.basename(file, '.json');
     const snakeSource = toSnakeCase(baseName);
     for (let i = 0; i < questions.length; i++) {
-      const q = questions[i];
+      let q = questions[i];
       // Normalize answer_options to options if needed
       if (!q.options && Array.isArray(q.answer_options)) {
         q.options = q.answer_options;
       }
-      // Auto-generate abcd if missing and options exists
-      if (!q.abcd && Array.isArray(q.options)) {
-        const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-        q.abcd = q.options.map((opt, idx) => `${letters[idx] || '?'}${opt.startsWith('.') ? '' : '. '} ${opt}`.trim());
-      }
-      console.log('DEBUG: Question object before validation:', JSON.stringify(q, null, 2));
+      // abcd is no longer generated or used
       q.unit = snakeSource;
       if (q.id) {
         q.id = normalizeQuestionId(q.id, snakeSource, i);
@@ -130,6 +180,8 @@ async function uploadQuestions() {
         }
         continue;
       }
+      // Canonicalize question to match field order and nulls
+      q = canonicalizeQuestion(q);
       // Uncomment to enable actual upload
       try {
         console.log(`Uploading: [${q.id}] ${q.text || q.question || ''}`);

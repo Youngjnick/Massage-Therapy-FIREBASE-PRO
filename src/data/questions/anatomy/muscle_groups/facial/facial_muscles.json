@@ -14,7 +14,6 @@
     "long_explanation": "The orbicularis oculi encircles the orbit and is responsible for blinking and squinting. It is innervated by the temporal and zygomatic branches of CN VII.",
     "clinical_application": "Gentle massage around the eyes can stimulate lymph drainage while respecting the function of orbicularis oculi.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["orbicularis oculi", "blinking", "eyelids"],
-    "keywords": ["facial muscles", "eye closure", "CN VII"],
+    "tags": [
+      "orbicularis oculi",
+      "blinking",
+      "eyelids"
+    ],
+    "keywords": [
+      "facial muscles",
+      "eye closure",
+      "CN VII"
+    ],
     "synonyms": null
   },
   {
     "id": "facial_muscles_002",
     "correctAnswer": "Frontalis",
     "question": "Which muscle elevates the eyebrows and wrinkles the forehead?",
-    "options": ["Buccinator", "Orbicularis oculi", "Frontalis", "Risorius"],
+    "options": [
+      "Buccinator",
+      "Orbicularis oculi",
+      "Frontalis",
+      "Risorius"
+    ],
     "topics": ["anatomy", "muscle_groups", "facial", "facial_muscles"],
     "short_explanation": "The frontalis raises the eyebrows and creates forehead lines.",
     "long_explanation": "Frontalis, part of the occipitofrontalis muscle, is innervated by the facial nerve and plays a key role in expressing surprise or curiosity.",
     "clinical_application": "Facial massage should follow wrinkle lines to avoid overstretching frontalis fibers during cosmetic work.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "easy",
@@ -46,8 +57,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["frontalis", "eyebrow elevation"],
-    "keywords": ["forehead wrinkles", "surprise", "CN VII"],
+    "tags": [
+      "frontalis",
+      "eyebrow elevation"
+    ],
+    "keywords": [
+      "forehead wrinkles",
+      "surprise",
+      "CN VII"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +83,6 @@
     "long_explanation": "Zygomaticus major extends from the cheekbone to the corner of the mouth, pulling it upward and laterally during smiling.",
     "clinical_application": "Trigger points in this muscle can reduce expression or cause asymmetric smiling.",
     "source_reference": "Rattray Clinical Massage Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "medium",
@@ -74,21 +91,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["smiling", "zygomaticus major"],
-    "keywords": ["laugh lines", "cheek muscle", "facial nerve"],
+    "tags": [
+      "smiling",
+      "zygomaticus major"
+    ],
+    "keywords": [
+      "laugh lines",
+      "cheek muscle",
+      "facial nerve"
+    ],
     "synonyms": null
   },
   {
     "id": "facial_muscles_004",
     "correctAnswer": "Buccinator",
     "question": "Which muscle compresses the cheeks during chewing or blowing?",
-    "options": ["Buccinator", "Masseter", "Orbicularis oris", "Risorius"],
+    "options": [
+      "Buccinator",
+      "Masseter",
+      "Orbicularis oris",
+      "Risorius"
+    ],
     "topics": ["anatomy", "muscle_groups", "facial", "facial_muscles"],
     "short_explanation": "Buccinator compresses the cheek inward.",
     "long_explanation": "Buccinator is deep to the other facial muscles and prevents food from collecting between the teeth and cheek. It also aids in blowing air out forcefully.",
     "clinical_application": "Deep cheek massage can affect the buccinator and benefit TMJ issues.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "medium",
@@ -97,8 +125,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["buccinator", "cheek compression"],
-    "keywords": ["chewing", "blowing", "facial massage"],
+    "tags": [
+      "buccinator",
+      "cheek compression"
+    ],
+    "keywords": [
+      "chewing",
+      "blowing",
+      "facial massage"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +151,6 @@
     "long_explanation": "The orbicularis oris encircles the mouth and functions like a sphincter to purse, close, and pucker the lips.",
     "clinical_application": "Massage around the mouth should be gentle to avoid overstretching orbicularis oris, especially in older clients.",
     "source_reference": "Netter's Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "medium",
@@ -125,8 +159,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["orbicularis oris", "puckering", "kissing"],
-    "keywords": ["mouth sphincter", "lip closure", "CN VII"],
+    "tags": [
+      "orbicularis oris",
+      "puckering",
+      "kissing"
+    ],
+    "keywords": [
+      "mouth sphincter",
+      "lip closure",
+      "CN VII"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +186,6 @@
     "long_explanation": "This muscle allows the upper lip to curl upward and is active in expressions like sneering or showing the upper teeth.",
     "clinical_application": "Hypertonicity may give a 'snarl' appearance; massage can balance tone in cosmetic work.",
     "source_reference": "Rattray Clinical Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "medium",
@@ -153,8 +194,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["levator labii", "upper lip", "expression"],
-    "keywords": ["lip curl", "sneering", "facial nerve"],
+    "tags": [
+      "levator labii",
+      "upper lip",
+      "expression"
+    ],
+    "keywords": [
+      "lip curl",
+      "sneering",
+      "facial nerve"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +221,6 @@
     "long_explanation": "This thin superficial muscle expresses tension or fear and is often involved in neck rigidity. It connects facial expression to the anterior neck.",
     "clinical_application": "Neck massage often targets platysma for relief of tension or cosmetic tone.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "medium",
@@ -181,8 +229,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["platysma", "neck tension", "facial expression"],
-    "keywords": ["superficial neck", "jaw depression", "tight fascia"],
+    "tags": [
+      "platysma",
+      "neck tension",
+      "facial expression"
+    ],
+    "keywords": [
+      "superficial neck",
+      "jaw depression",
+      "tight fascia"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +256,6 @@
     "long_explanation": "This muscle pulls the corners of the mouth downward and is involved in expressions of sadness or discontent.",
     "clinical_application": "Facial reflexology and massage can tone this muscle to improve emotional expression or lift mood-related posturing.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "easy",
@@ -209,8 +264,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["frown", "depressor anguli oris"],
-    "keywords": ["mouth depression", "emotional tone"],
+    "tags": [
+      "frown",
+      "depressor anguli oris"
+    ],
+    "keywords": [
+      "mouth depression",
+      "emotional tone"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +289,6 @@
     "long_explanation": "This thin muscle assists in nasal dilation and is active during deep breathing, crying, or anger.",
     "clinical_application": "Work on this muscle may be beneficial for clients with breathing tension or nasal congestion.",
     "source_reference": "Netter's Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "hard",
@@ -237,8 +297,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nasal flare", "nose movement"],
-    "keywords": ["facial muscle", "nostrils", "levator"],
+    "tags": [
+      "nasal flare",
+      "nose movement"
+    ],
+    "keywords": [
+      "facial muscle",
+      "nostrils",
+      "levator"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +323,6 @@
     "long_explanation": "The mentalis is involved in expressions of doubt or pout. It raises and pushes the lower lip outward while tightening the chin skin.",
     "clinical_application": "Clients with high tone here may benefit from chin relaxation work during facial massage.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/facial/facial_muscles.json",
     "question_type": null,
     "difficulty": "medium",
@@ -265,8 +331,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mentalis", "chin wrinkle", "lip pout"],
-    "keywords": ["expression", "chin muscle"],
+    "tags": [
+      "mentalis",
+      "chin wrinkle",
+      "lip pout"
+    ],
+    "keywords": [
+      "expression",
+      "chin muscle"
+    ],
     "synonyms": null
   }
 ]

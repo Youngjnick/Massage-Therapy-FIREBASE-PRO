@@ -14,7 +14,6 @@
     "long_explanation": "Medial rotation, also called internal rotation, is the rotational movement of a limb or body part toward the midline. For example, turning the humerus inward is medial rotation.",
     "clinical_application": "Understanding this motion helps massage therapists assess joint restrictions and guide corrective strategies.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rotation", "medial", "movement"],
-    "keywords": ["medial rotation", "internal rotation", "joint motion"],
-    "synonyms": ["internal rotation", "inward rotation"]
+    "tags": [
+      "rotation",
+      "medial",
+      "movement"
+    ],
+    "keywords": [
+      "medial rotation",
+      "internal rotation",
+      "joint motion"
+    ],
+    "synonyms": [
+      "internal rotation",
+      "inward rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_002",
@@ -42,7 +52,6 @@
     "long_explanation": "Lateral (external) rotation of the shoulder is primarily performed by the infraspinatus and teres minor. These muscles rotate the humerus away from the midline.",
     "clinical_application": "Weakness in these muscles can affect shoulder stability, which is vital in clients with rotator cuff injuries.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder", "rotation", "infraspinatus"],
-    "keywords": ["lateral rotation", "external rotation", "shoulder"],
-    "synonyms": ["external rotation", "shoulder lateral rotation"]
+    "tags": [
+      "shoulder",
+      "rotation",
+      "infraspinatus"
+    ],
+    "keywords": [
+      "lateral rotation",
+      "external rotation",
+      "shoulder"
+    ],
+    "synonyms": [
+      "external rotation",
+      "shoulder lateral rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_003",
@@ -70,7 +90,6 @@
     "long_explanation": "Medial and lateral rotation typically occur in the transverse plane, where motion happens around a vertical axis.",
     "clinical_application": "Understanding planes helps massage therapists design movements and palpation assessments that align with anatomical planes.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["transverse plane", "rotation", "movement"],
-    "keywords": ["planes of motion", "rotation", "transverse"],
-    "synonyms": ["horizontal plane", "rotation plane"]
+    "tags": [
+      "transverse plane",
+      "rotation",
+      "movement"
+    ],
+    "keywords": [
+      "planes of motion",
+      "rotation",
+      "transverse"
+    ],
+    "synonyms": [
+      "horizontal plane",
+      "rotation plane"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_004",
@@ -98,7 +128,6 @@
     "long_explanation": "Medial rotation of the femur involves turning the thigh so that the toes point toward the midline. This movement occurs at the hip joint and engages muscles like the gluteus medius and tensor fasciae latae.",
     "clinical_application": "Assessing hip rotation helps detect gait imbalances and postural compensations in massage clients.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -107,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hip", "femur", "rotation"],
-    "keywords": ["medial rotation", "hip joint", "femoral movement"],
-    "synonyms": ["internal hip rotation", "femoral medial rotation"]
+    "tags": [
+      "hip",
+      "femur",
+      "rotation"
+    ],
+    "keywords": [
+      "medial rotation",
+      "hip joint",
+      "femoral movement"
+    ],
+    "synonyms": [
+      "internal hip rotation",
+      "femoral medial rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_005",
@@ -126,7 +166,6 @@
     "long_explanation": "The subscapularis is one of the rotator cuff muscles and is the primary internal rotator of the humerus at the shoulder joint.",
     "clinical_application": "Strengthening or releasing this muscle is often crucial in clients with shoulder imbalances or internal rotation restrictions.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -135,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["subscapularis", "medial rotation", "shoulder"],
-    "keywords": ["internal rotation", "humerus", "subscapularis"],
-    "synonyms": ["internal rotator", "shoulder medial rotation"]
+    "tags": [
+      "subscapularis",
+      "medial rotation",
+      "shoulder"
+    ],
+    "keywords": [
+      "internal rotation",
+      "humerus",
+      "subscapularis"
+    ],
+    "synonyms": [
+      "internal rotator",
+      "shoulder medial rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_006",
@@ -154,7 +204,6 @@
     "long_explanation": "Lateral rotation describes movement away from the midline around the longitudinal axis. It is commonly called external rotation, particularly in the shoulder and hip joints.",
     "clinical_application": "Massage therapists often assess limited external rotation in shoulder mobility assessments or gait analysis.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,9 +212,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rotation", "external", "terminology"],
-    "keywords": ["external rotation", "lateral rotation", "joint motion"],
-    "synonyms": ["external rotation"]
+    "tags": [
+      "rotation",
+      "external",
+      "terminology"
+    ],
+    "keywords": [
+      "external rotation",
+      "lateral rotation",
+      "joint motion"
+    ],
+    "synonyms": [
+      "external rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_007",
@@ -182,7 +241,6 @@
     "long_explanation": "Lateral (external) rotation of the hip involves turning the thigh so that the toes point away from the midline. It engages muscles like the piriformis, gemellus, and obturator internus.",
     "clinical_application": "Assessment of hip lateral rotation helps therapists address gait, posture, or sciatic nerve impingement issues.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -191,21 +249,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hip", "rotation", "external"],
-    "keywords": ["hip rotation", "lateral", "piriformis"],
-    "synonyms": ["external hip rotation"]
+    "tags": [
+      "hip",
+      "rotation",
+      "external"
+    ],
+    "keywords": [
+      "hip rotation",
+      "lateral",
+      "piriformis"
+    ],
+    "synonyms": [
+      "external hip rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_008",
     "correctAnswer": "Shoulder joint",
     "question": "Which of the following is a joint capable of both medial and lateral rotation?",
-    "options": ["Shoulder joint", "Knee joint", "Elbow joint", "Ankle joint"],
+    "options": [
+      "Shoulder joint",
+      "Knee joint",
+      "Elbow joint",
+      "Ankle joint"
+    ],
     "topics": ["anatomy", "movement_groups", "medial_vs_lateral_rotation"],
     "short_explanation": "The shoulder allows both medial and lateral rotation.",
     "long_explanation": "The glenohumeral (shoulder) joint is a ball-and-socket joint, which allows for a wide range of motion, including both medial and lateral rotation.",
     "clinical_application": "Knowledge of shoulder rotation is critical when evaluating range-of-motion limitations during upper body massage therapy.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -214,21 +286,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder", "rotation", "joint motion"],
-    "keywords": ["glenohumeral", "shoulder joint", "rotation"],
-    "synonyms": ["glenohumeral joint"]
+    "tags": [
+      "shoulder",
+      "rotation",
+      "joint motion"
+    ],
+    "keywords": [
+      "glenohumeral",
+      "shoulder joint",
+      "rotation"
+    ],
+    "synonyms": [
+      "glenohumeral joint"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_009",
     "correctAnswer": "Pronation",
     "question": "Which movement of the radius and ulna is most similar to medial rotation?",
-    "options": ["Pronation", "Supination", "Flexion", "Extension"],
+    "options": [
+      "Pronation",
+      "Supination",
+      "Flexion",
+      "Extension"
+    ],
     "topics": ["anatomy", "movement_groups", "medial_vs_lateral_rotation"],
     "short_explanation": "Pronation mimics internal rotation at the forearm.",
     "long_explanation": "Although not a true rotation in the anatomical sense, pronation of the forearm resembles medial (internal) rotation in its functional effect of turning inward.",
     "clinical_application": "This analogy helps massage therapists explain motion patterns to clients in simplified terms.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,9 +323,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["forearm", "rotation", "pronation"],
-    "keywords": ["pronation", "forearm rotation", "radius ulna"],
-    "synonyms": ["forearm internal rotation"]
+    "tags": [
+      "forearm",
+      "rotation",
+      "pronation"
+    ],
+    "keywords": [
+      "pronation",
+      "forearm rotation",
+      "radius ulna"
+    ],
+    "synonyms": [
+      "forearm internal rotation"
+    ]
   },
   {
     "id": "medial_vs_lateral_rotation_010",
@@ -256,7 +352,6 @@
     "long_explanation": "Subscapularis is a medial rotator of the shoulder, while infraspinatus is a lateral rotator. Both are part of the rotator cuff and act antagonistically.",
     "clinical_application": "This balance is essential in posture correction, particularly in shoulder impingement cases treated by massage therapy.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/medial_vs_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -265,8 +360,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder", "rotation", "muscles"],
-    "keywords": ["infraspinatus", "subscapularis", "rotator cuff"],
-    "synonyms": ["rotator cuff rotation"]
+    "tags": [
+      "shoulder",
+      "rotation",
+      "muscles"
+    ],
+    "keywords": [
+      "infraspinatus",
+      "subscapularis",
+      "rotator cuff"
+    ],
+    "synonyms": [
+      "rotator cuff rotation"
+    ]
   }
 ]

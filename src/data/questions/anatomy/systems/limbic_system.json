@@ -14,7 +14,6 @@
     "long_explanation": "The limbic system is a complex network of structures including the amygdala, hippocampus, cingulate gyrus, and others, responsible for emotional behavior, motivation, and memory formation.",
     "clinical_application": "Therapists and bodyworkers may observe emotional releases during treatment, reflecting limbic activation or trauma responses.",
     "source_reference": "Neuroscience by Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,21 +22,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["limbic system", "emotion", "memory"],
-    "keywords": ["amygdala", "hippocampus", "emotional regulation", "memory"],
+    "tags": [
+      "limbic system",
+      "emotion",
+      "memory"
+    ],
+    "keywords": [
+      "amygdala",
+      "hippocampus",
+      "emotional regulation",
+      "memory"
+    ],
     "synonyms": null
   },
   {
     "id": "limbic_system_002",
     "correctAnswer": "Hippocampus",
     "question": "Which structure in the limbic system is primarily involved in memory consolidation?",
-    "options": ["Amygdala", "Hippocampus", "Thalamus", "Basal ganglia"],
+    "options": [
+      "Amygdala",
+      "Hippocampus",
+      "Thalamus",
+      "Basal ganglia"
+    ],
     "topics": ["anatomy", "systems", "limbic_system"],
     "short_explanation": "The hippocampus helps store and retrieve long-term memories.",
     "long_explanation": "The hippocampus, located in the medial temporal lobe, plays a critical role in the formation, organization, and retrieval of long-term memories.",
     "clinical_application": "Damage to the hippocampus can result in anterograde amnesia, often seen in conditions like Alzheimer’s disease.",
     "source_reference": "Principles of Neural Science by Kandel et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -46,21 +58,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hippocampus", "memory", "limbic"],
-    "keywords": ["long-term memory", "temporal lobe", "hippocampal function"],
+    "tags": [
+      "hippocampus",
+      "memory",
+      "limbic"
+    ],
+    "keywords": [
+      "long-term memory",
+      "temporal lobe",
+      "hippocampal function"
+    ],
     "synonyms": null
   },
   {
     "id": "limbic_system_003",
     "correctAnswer": "Amygdala",
     "question": "Which limbic structure is most associated with fear and aggression?",
-    "options": ["Hippocampus", "Cerebellum", "Amygdala", "Hypothalamus"],
+    "options": [
+      "Hippocampus",
+      "Cerebellum",
+      "Amygdala",
+      "Hypothalamus"
+    ],
     "topics": ["anatomy", "systems", "limbic_system"],
     "short_explanation": "The amygdala regulates fear responses and aggression.",
     "long_explanation": "The amygdala is essential for processing emotions like fear, anger, and pleasure. It links emotional reactions to memories and environmental cues.",
     "clinical_application": "Overactivity of the amygdala may contribute to anxiety disorders and PTSD.",
     "source_reference": "Neuroanatomy through Clinical Cases by Blumenfeld",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -69,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["amygdala", "emotion", "limbic"],
-    "keywords": ["fear", "aggression", "emotional memory"],
+    "tags": [
+      "amygdala",
+      "emotion",
+      "limbic"
+    ],
+    "keywords": [
+      "fear",
+      "aggression",
+      "emotional memory"
+    ],
     "synonyms": null
   },
   {
@@ -88,7 +120,6 @@
     "long_explanation": "Part of the limbic cortex, the cingulate gyrus is involved in emotional regulation, attention, and pain perception. It helps modulate responses based on emotional context.",
     "clinical_application": "Therapies targeting mindfulness and stress management may influence cingulate gyrus function.",
     "source_reference": "Neuroscience by Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -97,21 +128,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cingulate gyrus", "emotion", "attention"],
-    "keywords": ["emotional regulation", "motivation", "limbic cortex"],
+    "tags": [
+      "cingulate gyrus",
+      "emotion",
+      "attention"
+    ],
+    "keywords": [
+      "emotional regulation",
+      "motivation",
+      "limbic cortex"
+    ],
     "synonyms": null
   },
   {
     "id": "limbic_system_005",
     "correctAnswer": "Epilepsy",
     "question": "Which condition is strongly associated with limbic system dysfunction?",
-    "options": ["Asthma", "Epilepsy", "Diabetes", "Parkinson’s disease"],
+    "options": [
+      "Asthma",
+      "Epilepsy",
+      "Diabetes",
+      "Parkinson’s disease"
+    ],
     "topics": ["anatomy", "systems", "limbic_system"],
     "short_explanation": "Temporal lobe epilepsy often involves the limbic system.",
     "long_explanation": "The limbic system, particularly the hippocampus and amygdala, is frequently implicated in temporal lobe epilepsy, leading to seizures with emotional or memory components.",
     "clinical_application": "Massage therapists should take precautions when working with clients prone to seizures, especially around the head and neck.",
     "source_reference": "Adams and Victor’s Principles of Neurology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -120,21 +163,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["epilepsy", "limbic dysfunction"],
-    "keywords": ["seizures", "temporal lobe", "hippocampus"],
+    "tags": [
+      "epilepsy",
+      "limbic dysfunction"
+    ],
+    "keywords": [
+      "seizures",
+      "temporal lobe",
+      "hippocampus"
+    ],
     "synonyms": null
   },
   {
     "id": "limbic_system_006",
     "correctAnswer": "Dopamine",
     "question": "Which neurotransmitter is most involved in limbic system pathways related to pleasure and reward?",
-    "options": ["Acetylcholine", "Dopamine", "GABA", "Glutamate"],
+    "options": [
+      "Acetylcholine",
+      "Dopamine",
+      "GABA",
+      "Glutamate"
+    ],
     "topics": ["anatomy", "systems", "limbic_system"],
     "short_explanation": "Dopamine mediates reward-related limbic activity.",
     "long_explanation": "The mesolimbic dopamine pathway connects the ventral tegmental area to the nucleus accumbens and plays a central role in motivation, reward, and addiction.",
     "clinical_application": "Understanding dopamine's role can inform therapy approaches for clients with substance use disorders.",
     "source_reference": "Principles of Neural Science by Kandel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -143,21 +197,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dopamine", "reward", "mesolimbic pathway"],
-    "keywords": ["addiction", "motivation", "limbic system"],
+    "tags": [
+      "dopamine",
+      "reward",
+      "mesolimbic pathway"
+    ],
+    "keywords": [
+      "addiction",
+      "motivation",
+      "limbic system"
+    ],
     "synonyms": null
   },
   {
     "id": "limbic_system_007",
     "correctAnswer": "Mammillary bodies",
     "question": "The fornix connects the hippocampus to which other limbic structure?",
-    "options": ["Thalamus", "Hypothalamus", "Mammillary bodies", "Amygdala"],
+    "options": [
+      "Thalamus",
+      "Hypothalamus",
+      "Mammillary bodies",
+      "Amygdala"
+    ],
     "topics": ["anatomy", "systems", "limbic_system"],
     "short_explanation": "The fornix transmits signals to the mammillary bodies.",
     "long_explanation": "The fornix is a C-shaped white matter tract that relays signals from the hippocampus to the mammillary bodies and hypothalamus, facilitating memory circuits.",
     "clinical_application": "Damage to the fornix can result in memory loss or disorientation.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -166,8 +232,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fornix", "hippocampus", "mammillary bodies"],
-    "keywords": ["memory loop", "limbic connections"],
+    "tags": [
+      "fornix",
+      "hippocampus",
+      "mammillary bodies"
+    ],
+    "keywords": [
+      "memory loop",
+      "limbic connections"
+    ],
     "synonyms": null
   },
   {
@@ -185,7 +258,6 @@
     "long_explanation": "The entorhinal cortex receives signals from the olfactory bulb and transmits them to the hippocampus, linking smell and emotional memory.",
     "clinical_application": "This explains why scents can strongly evoke past memories or emotional states during therapeutic sessions.",
     "source_reference": "Bear, Connors & Paradiso – Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -194,8 +266,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["olfaction", "entorhinal cortex", "emotion"],
-    "keywords": ["smell", "emotion", "memory", "hippocampus"],
+    "tags": [
+      "olfaction",
+      "entorhinal cortex",
+      "emotion"
+    ],
+    "keywords": [
+      "smell",
+      "emotion",
+      "memory",
+      "hippocampus"
+    ],
     "synonyms": null
   },
   {
@@ -213,7 +294,6 @@
     "long_explanation": "The Papez circuit is a neural pathway involving the hippocampus, mammillary bodies, thalamus, and cingulate cortex, and is vital for emotional experience and memory.",
     "clinical_application": "Papez circuit disruptions can contribute to memory impairment in neurological conditions.",
     "source_reference": "Neuroanatomy through Clinical Cases",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -222,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["papez circuit", "mammillary bodies", "hippocampus"],
-    "keywords": ["memory loop", "emotion processing", "limbic pathways"],
+    "tags": [
+      "papez circuit",
+      "mammillary bodies",
+      "hippocampus"
+    ],
+    "keywords": [
+      "memory loop",
+      "emotion processing",
+      "limbic pathways"
+    ],
     "synonyms": null
   },
   {
@@ -241,7 +329,6 @@
     "long_explanation": "In somatic and trauma-informed therapies, emotional patterns stored in the body are accessed and processed via limbic system structures, especially the amygdala and hippocampus.",
     "clinical_application": "Massage therapists using somatic techniques often witness emotional release tied to limbic system regulation.",
     "source_reference": "The Body Keeps the Score by Bessel van der Kolk",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/limbic_system.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -250,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["limbic system", "body memory", "somatic therapy"],
-    "keywords": ["emotional release", "trauma", "body-mind connection"],
+    "tags": [
+      "limbic system",
+      "body memory",
+      "somatic therapy"
+    ],
+    "keywords": [
+      "emotional release",
+      "trauma",
+      "body-mind connection"
+    ],
     "synonyms": null
   }
 ]
