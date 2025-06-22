@@ -19,7 +19,10 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
           min={1}
           max={maxQuizLength}
           value={quizLength}
-          onChange={e => setQuizLength(Number(e.target.value))}
+          onChange={e => {
+            const val = Math.max(1, Number(e.target.value));
+            setQuizLength(val);
+          }}
           style={{ width: 60, marginLeft: 4 }}
           id={id}
           data-testid={dataTestId}
