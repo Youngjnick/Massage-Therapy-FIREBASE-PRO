@@ -56,6 +56,8 @@ const Quiz: React.FC = () => {
   const [warning, setWarning] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [sortedTopics, setSortedTopics] = useState<string[]>([]);
+  const [showCancelDialog, setShowCancelDialog] = useState(false);
+  const [resumePrompt, setResumePrompt] = useState(false);
 
   // Use modularized data hook
   const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
@@ -370,41 +372,47 @@ const Quiz: React.FC = () => {
     (async () => {
       const saved = await loadQuizProgress();
       if (saved && saved.started && !saved.showResults) {
-        // Offer to resume (simple: auto-resume for now)
-        setStarted(true);
-        setCurrent(saved.current || 0);
-        setUserAnswers(saved.userAnswers || []);
-        setShuffledQuestions(saved.shuffledQuestions || []);
-        setShuffledOptions(saved.shuffledOptions || {});
-        setShowResults(false);
+        setResumePrompt(true);
       }
     })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Auto-save progress on every relevant change
-  useEffect(() => {
-    if (!started || showResults) return;
-    saveQuizProgress({
-      started,
-      current,
-      userAnswers,
-      shuffledQuestions,
-      shuffledOptions,
-      selectedTopic,
-      quizLength,
-      showResults: false
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [started, current, userAnswers, shuffledQuestions, shuffledOptions, selectedTopic, quizLength]);
-
-  // On quiz finish, clear saved progress
-  useEffect(() => {
-    if (showResults) {
-      saveQuizProgress({});
+  // Handler for resuming or starting new
+  const handleResume = async () => {
+    const saved = await loadQuizProgress();
+    if (saved) {
+      setStarted(true);
+      setCurrent(saved.current || 0);
+      setUserAnswers(saved.userAnswers || []);
+      setShuffledQuestions(saved.shuffledQuestions || []);
+      setShuffledOptions(saved.shuffledOptions || {});
+      setShowResults(false);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showResults]);
+    setResumePrompt(false);
+  };
+  const handleStartNew = () => {
+    saveQuizProgress({});
+    resetQuiz();
+    setResumePrompt(false);
+  };
+
+  // Cancel/exit logic
+  const handleCancelQuiz = () => {
+    setShowCancelDialog(true);
+  };
+  const confirmCancelQuiz = () => {
+    saveQuizProgress({});
+    resetQuiz();
+    setShowCancelDialog(false);
+  };
+  const continueQuiz = () => {
+    setShowCancelDialog(false);
+  };
+
+  // --- Debugging: Log all state changes ---
+  useEffect(() => {
+    console.log('Quiz state changed:', { started, showResults, current, userAnswers, shuffledQuestions, shuffledOptions });
+  }, [started, showResults, current, userAnswers, shuffledQuestions, shuffledOptions]);
 
   if (loading) {
     return (
@@ -443,6 +451,24 @@ const Quiz: React.FC = () => {
   return (
     <div className="quiz-container" data-testid="quiz-container">
       <h1>Quiz</h1>
+      {/* Resume prompt dialog */}
+      {resumePrompt && (
+        <div className="resume-dialog" style={{ background: '#fffbe6', border: '1px solid #fbbf24', padding: 24, borderRadius: 8, marginBottom: 16 }}>
+          <strong>Resume your quiz?</strong>
+          <div style={{ margin: '12px 0' }}>You have an unfinished quiz. Would you like to resume or start a new one?</div>
+          <button onClick={handleResume} style={{ marginRight: 12 }}>Resume</button>
+          <button onClick={handleStartNew}>Start New</button>
+        </div>
+      )}
+      {/* Cancel/exit confirmation dialog */}
+      {showCancelDialog && (
+        <div className="cancel-dialog" style={{ background: '#fffbe6', border: '1px solid #fbbf24', padding: 24, borderRadius: 8, marginBottom: 16 }}>
+          <strong>Exit Quiz?</strong>
+          <div style={{ margin: '12px 0' }}>Are you sure you want to exit? Your progress will be lost.</div>
+          <button onClick={confirmCancelQuiz} style={{ marginRight: 12 }}>Exit Without Saving</button>
+          <button onClick={continueQuiz}>Continue Quiz</button>
+        </div>
+      )}
       {error && (
         <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
           {error}
@@ -514,6 +540,7 @@ const Quiz: React.FC = () => {
             /* Add this prop for test: disableAllOptions if quizQuestions.length === 0 (simulate test) */
             disableAllOptions={quizQuestions.length === 0}
           />
+          <button onClick={handleCancelQuiz} style={{ margin: '16px 0', background: '#fee2e2', color: '#b91c1c', border: 'none', borderRadius: 6, padding: '6px 18px', fontWeight: 600, cursor: 'pointer' }}>Cancel Quiz</button>
         </>
       )}
       {!started && !showResults && (
