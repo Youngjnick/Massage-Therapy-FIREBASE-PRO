@@ -19,14 +19,23 @@ const QuizActions: React.FC<QuizActionsProps> = ({
 }) => (
   <div className="quiz-actions">
     <button onClick={onPrev} disabled={current === 0} aria-label="Previous question">Previous</button>
-    {current < total - 1 ? (
-      <>
-        <button onClick={onNext} disabled={!answered} aria-label="Next question">Next</button>
-        <button onClick={onFinish} aria-label="Finish quiz early">Finish</button>
-      </>
-    ) : (
-      <button onClick={onFinish} disabled={!answered} aria-label="Finish quiz">Finish Quiz</button>
-    )}
+    {/* Always render Next button, but disable and hide as appropriate */}
+    <button
+      onClick={onNext}
+      disabled={current >= total - 1 || !answered}
+      aria-label="Next question"
+      style={{ display: current < total - 1 ? undefined : 'none' }}
+    >
+      Next
+    </button>
+    {/* Always render Finish button, but disable as appropriate */}
+    <button
+      onClick={onFinish}
+      disabled={!answered}
+      aria-label={current < total - 1 ? 'Finish quiz early' : 'Finish quiz'}
+    >
+      {current < total - 1 ? 'Finish' : 'Finish Quiz'}
+    </button>
   </div>
 );
 

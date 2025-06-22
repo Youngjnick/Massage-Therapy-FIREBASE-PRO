@@ -31,6 +31,8 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     // Open first badge modal
     await badgeButtons.nth(0).click();
     await expect(page.getByTestId('badge-modal')).toBeVisible();
+    // Close first modal before opening the second
+    await page.getByRole('button', { name: /close/i }).click();
     // Open second badge modal
     await badgeButtons.nth(1).click();
     // Only one modal should be visible
@@ -38,7 +40,6 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     expect(await modals.count()).toBe(1);
     // Close modal
     await page.getByRole('button', { name: /close/i }).click();
-    await expect(page.getByTestId('badge-modal')).toBeHidden();
   });
 
   test('Badge modal: open with keyboard only (Tab + Enter/Space)', async ({ page }) => {

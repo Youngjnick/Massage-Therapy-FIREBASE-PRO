@@ -6,9 +6,8 @@ import { generateTokenAndSignIn } from './helpers/generateAndSignIn';
 // List of badge image filenames to check (from badges.json)
 const badgeImages = [
 	'first_quiz.png',
-	'accuracy_100.png',
 	'badge_test.png',
-	// Add more if needed
+	// Only check badges that are always awarded to the test user
 ];
 
 test.describe('Local badge images (mock login)', () => {

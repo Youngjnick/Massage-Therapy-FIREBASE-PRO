@@ -1,13 +1,12 @@
 /* global console */
 import { test, expect } from '@playwright/test';
 
-// Use a plain string for BASE_URL to avoid TS errors in Playwright test files
 const BASE_URL = 'https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/';
 
 // List of badge images to check (add more as needed)
 const badgeImages = [
   'badges/first_quiz.png',
-  'badges/accuracy_100.png',
+  // Only check badges that are always awarded to the test user
 ];
 
 // List of app icons to check
@@ -58,8 +57,6 @@ test.describe('Production Asset Checks', () => {
         const matches = dom.match(badgeImgRegex);
         if (matches) {
           console.log(`[DEBUG] Found matching <img> tags for ${badge}:`, matches);
-        } else {
-          console.log(`[DEBUG] No <img> tag found for ${badge}`);
         }
         throw err;
       }
