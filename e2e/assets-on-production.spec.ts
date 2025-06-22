@@ -25,8 +25,6 @@ const mainPages = [
   'profile',
 ];
 
-const RUN_PROD_ASSET_TESTS = !!process.env.CI;
-
 test.describe('Production Asset Checks', () => {
   test('Badge images load and are visible', async ({ page }) => {
     await page.goto(BASE_URL);
