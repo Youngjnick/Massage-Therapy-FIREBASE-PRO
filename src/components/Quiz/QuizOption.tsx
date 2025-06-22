@@ -159,6 +159,7 @@ const QuizOption: React.FC<QuizOptionProps> = ({
         }}
         onKeyDown={e => {
           if (Boolean(disabled) || e.currentTarget.readOnly) return;
+          // Only handle Enter and Space for select/submit
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
             if (!selected && typeof onSelect === 'function') {
@@ -167,6 +168,7 @@ const QuizOption: React.FC<QuizOptionProps> = ({
               onSubmitOption();
             }
           }
+          // Do NOT handle arrow keys here; let browser handle radio navigation
         }}
       />
       <label htmlFor={uniqueInputId} style={{ fontWeight: 600, marginRight: 8, cursor: disabled ? 'not-allowed' : 'pointer' }}>{labelStr}.</label> {optionStr}

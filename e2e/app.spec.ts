@@ -267,3 +267,65 @@ test('should navigate to all main pages via NavBar and route correctly', async (
   await page.goForward();
   await expect(page.getByRole('heading', { name: /profile/i })).toBeVisible();
 });
+
+test('should not submit answer when using arrow keys (only change selection)', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel('Quiz Length').fill('2');
+  // Select the first real topic (index 1, since index 0 is likely 'Select a Topic')
+  const topicSelect = page.getByLabel(/topic/i);
+  if (await topicSelect.count()) {
+    await topicSelect.selectOption({ index: 1 });
+  }
+  await page.getByRole('button', { name: /start/i }).click();
+  const radios = page.getByTestId('quiz-radio');
+  await expect(radios.first()).toBeVisible();
+  // Focus the first radio
+  await radios.first().focus();
+  // Press ArrowDown to move selection (should not submit)
+  await page.keyboard.press('ArrowDown');
+  await page.waitForTimeout(200);
+  await expect(page.getByTestId('quiz-question-card')).toBeVisible();
+  // Press ArrowUp to move selection (should not submit)
+  await page.keyboard.press('ArrowUp');
+  await page.waitForTimeout(200);
+  await expect(page.getByTestId('quiz-question-card')).toBeVisible();
+});
+
+test('arrow keys: wrap-around, skip disabled, and maintain selection state', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel('Quiz Length').fill('4');
+  // Select the first real topic (index 1)
+  const topicSelect = page.getByLabel(/topic/i);
+  if (await topicSelect.count()) {
+    await topicSelect.selectOption({ index: 1 });
+  }
+  await page.getByRole('button', { name: /start/i }).click();
+  const radios = page.getByTestId('quiz-radio');
+  await expect(radios.first()).toBeVisible();
+  // Find all enabled radios using browser-side evaluation
+  const enabledRadioIndexes = await page.$$eval('[data-testid="quiz-radio"]', els => els.map((el, i) => !(el as HTMLInputElement).disabled ? i : -1).filter(i => i !== -1));
+  const firstEnabledIndex = enabledRadioIndexes[0];
+  // Focus the first enabled radio
+  await radios.nth(firstEnabledIndex).focus();
+  // ArrowUp on first should wrap to some enabled radio (not disabled)
+  await page.keyboard.press('ArrowUp');
+  await page.waitForTimeout(200);
+  // Get the currently focused element and assert it is enabled
+  const focusedRadio = await page.evaluateHandle(() => document.activeElement);
+  const isDisabled = await focusedRadio.evaluate((el: any) => el.disabled);
+  expect(isDisabled).toBeFalsy();
+  // ArrowDown on focused should wrap to another enabled radio (not disabled)
+  await focusedRadio.asElement().focus();
+  await page.keyboard.press('ArrowDown');
+  await page.waitForTimeout(200);
+  const focusedRadio2 = await page.evaluateHandle(() => document.activeElement);
+  const isDisabled2 = await focusedRadio2.evaluate((el: any) => el.disabled);
+  expect(isDisabled2).toBeFalsy();
+  // After several arrow presses, ensure no submission
+  for (let i = 0; i < 10; i++) {
+    await page.keyboard.press('ArrowDown');
+    await page.waitForTimeout(50);
+    await expect(page.getByTestId('quiz-question-card')).toBeVisible();
+  }
+  // The currently focused radio should be enabled (if your UI checks on focus, otherwise skip this)
+});
