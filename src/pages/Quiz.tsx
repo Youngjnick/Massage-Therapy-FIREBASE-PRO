@@ -150,14 +150,14 @@ const Quiz: React.FC = () => {
         return;
       }
       // Only handle Arrow keys if NOT focused on any input
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-        // Do NOT submit answer, just go to next/prev question
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        // Only allow left/right to navigate quiz cards
         e.preventDefault();
-        // Do not call setAnswered(false) here, just navigate
-        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next();
+        if (e.key === 'ArrowRight') next();
         else prev();
         return;
       }
+      // ArrowUp/ArrowDown do nothing globally (let browser handle for radios)
       if (/^[1-9]$/.test(e.key)) {
         const idx = parseInt(e.key, 10) - 1;
         if (q && q.options[idx]) handleAnswer(idx);

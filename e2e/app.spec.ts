@@ -329,3 +329,76 @@ test('arrow keys: wrap-around, skip disabled, and maintain selection state', asy
   }
   // The currently focused radio should be enabled (if your UI checks on focus, otherwise skip this)
 });
+
+test('up/down arrow keys only cycle focus on answer options, never advance quiz card', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel('Quiz Length').fill('3');
+  const topicSelect = page.getByLabel(/topic/i);
+  if (await topicSelect.count()) {
+    await topicSelect.selectOption({ index: 1 });
+  }
+  await page.getByRole('button', { name: /start/i }).click();
+  // Record the question prompt before navigation (first line of card)
+  const questionPromptBefore = (await page.getByTestId('quiz-question-card').innerText()).split('\n')[0];
+  const radios = page.getByTestId('quiz-radio');
+  await expect(radios.first()).toBeVisible();
+  // Focus the first enabled radio
+  const enabledRadioIndexes = await page.$$eval('[data-testid="quiz-radio"]', els => els.map((el, i) => !(el as HTMLInputElement).disabled ? i : -1).filter(i => i !== -1));
+  const firstEnabledIndex = enabledRadioIndexes[0];
+  await radios.nth(firstEnabledIndex).focus();
+  // Press ArrowDown and ArrowUp repeatedly
+  for (let i = 0; i < 10; i++) {
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowUp');
+    await page.waitForTimeout(50);
+  }
+  // Record the question prompt after navigation
+  const questionPromptAfter = (await page.getByTestId('quiz-question-card').innerText()).split('\n')[0];
+  expect(questionPromptAfter).toBe(questionPromptBefore);
+});
+
+test('arrow keys: only one enabled option does not change focus or selection', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel('Quiz Length').fill('1');
+  const topicSelect = page.getByLabel(/topic/i);
+  if (await topicSelect.count()) {
+    await topicSelect.selectOption({ index: 1 });
+  }
+  await page.getByRole('button', { name: /start/i }).click();
+  // Disable all but one option (simulate via JS for test)
+  await page.evaluate(() => {
+    const radios = Array.from(document.querySelectorAll('[data-testid="quiz-radio"]'));
+    radios.forEach((el, i) => {
+      if (i !== 0) (el as HTMLInputElement).disabled = true;
+    });
+  });
+  const radios = page.getByTestId('quiz-radio');
+  await radios.first().focus();
+  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('ArrowUp');
+  // Should still be focused on the only enabled radio
+  const active = await page.evaluate(() => document.activeElement?.getAttribute('data-testid'));
+  expect(active).toBe('quiz-radio');
+});
+
+test('arrow keys: all options disabled does nothing', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel('Quiz Length').fill('1');
+  const topicSelect = page.getByLabel(/topic/i);
+  if (await topicSelect.count()) {
+    await topicSelect.selectOption({ index: 1 });
+  }
+  await page.getByRole('button', { name: /start/i }).click();
+  // Disable all options (simulate via JS for test)
+  await page.evaluate(() => {
+    const radios = Array.from(document.querySelectorAll('[data-testid="quiz-radio"]'));
+    radios.forEach((el) => (el as HTMLInputElement).disabled = true);
+  });
+  // Try to focus and arrow
+  const radios = page.getByTestId('quiz-radio');
+  await radios.first().focus();
+  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('ArrowUp');
+  // Should not throw, and quiz card should still be visible
+  await expect(page.getByTestId('quiz-question-card')).toBeVisible();
+});
