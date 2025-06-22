@@ -339,6 +339,73 @@ const Quiz: React.FC = () => {
     return () => { if (unsubscribe) unsubscribe(); };
   }, [showResults]);
 
+  // --- Quiz Progress Save/Load ---
+  const saveQuizProgress = async (progress: any) => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (user) {
+      const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
+      await setDoc(progressRef, progress, { merge: true });
+    } else if (typeof window !== 'undefined') {
+      window.localStorage.setItem('quizProgress', JSON.stringify(progress));
+    }
+  };
+
+  const loadQuizProgress = async () => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (user) {
+      const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
+      const snap = await getDoc(progressRef);
+      if (snap.exists()) return snap.data();
+    } else if (typeof window !== 'undefined') {
+      const stored = window.localStorage.getItem('quizProgress');
+      if (stored) return JSON.parse(stored);
+    }
+    return null;
+  };
+
+  // On mount, check for saved progress and offer to resume
+  useEffect(() => {
+    (async () => {
+      const saved = await loadQuizProgress();
+      if (saved && saved.started && !saved.showResults) {
+        // Offer to resume (simple: auto-resume for now)
+        setStarted(true);
+        setCurrent(saved.current || 0);
+        setUserAnswers(saved.userAnswers || []);
+        setShuffledQuestions(saved.shuffledQuestions || []);
+        setShuffledOptions(saved.shuffledOptions || {});
+        setShowResults(false);
+      }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Auto-save progress on every relevant change
+  useEffect(() => {
+    if (!started || showResults) return;
+    saveQuizProgress({
+      started,
+      current,
+      userAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      selectedTopic,
+      quizLength,
+      showResults: false
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [started, current, userAnswers, shuffledQuestions, shuffledOptions, selectedTopic, quizLength]);
+
+  // On quiz finish, clear saved progress
+  useEffect(() => {
+    if (showResults) {
+      saveQuizProgress({});
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showResults]);
+
   if (loading) {
     return (
       <div className="quiz-container" data-testid="quiz-container">

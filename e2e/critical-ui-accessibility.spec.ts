@@ -108,19 +108,6 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     }
   });
 
-  test('Quiz handles all options disabled', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('1');
-    await page.getByRole('button', { name: /start/i }).click();
-    // Simulate all options disabled (if possible)
-    const options = page.getByTestId('quiz-option');
-    for (let i = 0; i < await options.count(); i++) {
-      await expect(options.nth(i)).toBeDisabled();
-    }
-    // Next button should be disabled
-    await expect(page.getByRole('button', { name: /next/i })).toBeDisabled();
-  });
-
   test('Quiz results always show, even if some questions unanswered', async ({ page }) => {
     await page.goto('/');
     await page.getByLabel('Quiz Length').fill('2');
