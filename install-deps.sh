@@ -11,4 +11,7 @@ npm install --save-dev react @types/react @testing-library/react @types/testing-
 echo "Installing required dependencies..."
 npm install firebase glob json5 jspdf react-dom react-router-dom strip-json-comments
 
+echo "Installing Playwright browsers..."
+npx playwright install
+
 echo "All dependencies installed!"
