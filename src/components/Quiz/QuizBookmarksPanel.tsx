@@ -26,7 +26,7 @@ const QuizBookmarksPanel: React.FC<QuizBookmarksPanelProps> = ({
         <ul style={{ maxHeight: 300, overflowY: 'auto', padding: 0, margin: 0, listStyle: 'none' }}>
           {quizQuestions.filter(q => bookmarks.includes(q.id)).map(q => (
             <li key={q.id} style={{ marginBottom: 12, display: 'flex', alignItems: 'center' }}>
-              <span style={{ flex: 1 }}>{q.text}</span>
+              <span style={{ flex: 1 }}>{q.question}</span>
               <button onClick={() => onToggleBookmark(q.id)} style={{ marginLeft: 8, background: 'none', border: 'none', cursor: 'pointer' }}>
                 <FaBookmark color="#f59e42" /> Remove
               </button>
