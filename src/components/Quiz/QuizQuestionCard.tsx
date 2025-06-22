@@ -48,12 +48,12 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
 
   // Defensive check: ensure q is always defined and has required properties
   const safeQ =
-    q && typeof q === 'object' && q.text && Array.isArray(q.options)
+    q && typeof q === 'object' && q.question && Array.isArray(q.options)
       ? q
-      : { text: 'No questions available', options: ['N/A'], correctAnswer: 'N/A', id: 'empty' };
+      : { question: 'No questions available', options: ['N/A'], correctAnswer: 'N/A', id: 'empty' };
 
   // Sanitize question text to remove any repeated 'Topic' at the start (e.g., 'TopicTopic', 'Topic Topic', etc.)
-  let sanitizedText = safeQ.text;
+  let sanitizedText = safeQ.question;
   if (typeof sanitizedText === 'string') {
     const before = sanitizedText;
     sanitizedText = sanitizedText.replace(/^(topic)+/i, 'Topic'); // Remove any number of 'topic' at the start
@@ -97,7 +97,7 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   : 'selected'
                 : '';
             // Use a unique question identifier for inputId
-            const safeQuestionId = safeQ.id || (safeQ.text ? safeQ.text.replace(/[^a-zA-Z0-9]/g, '').slice(0, 10) : current);
+            const safeQuestionId = safeQ.id || (safeQ.question ? safeQ.question.replace(/[^a-zA-Z0-9]/g, '').slice(0, 10) : current);
             // Add current index and questionInstanceId to inputId to ensure uniqueness even for repeated questions
             const inputId = `quiz-option-${safeQuestionId}-${i}-${current}-${questionInstanceId}`;
             const name = `quiz-question-${safeQuestionId}-${current}-${questionInstanceId}`;

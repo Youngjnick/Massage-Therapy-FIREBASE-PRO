@@ -50,7 +50,7 @@ const QuizSessionSummary: React.FC<QuizSessionSummaryProps> = ({
       <ul style={{ marginTop: 24 }}>
         {questions.map((q: any, i: number) => (
           <li key={q.id} style={{ marginBottom: 16 }}>
-            <strong>{q.text}</strong><br />
+            <strong>{q.question}</strong><br />
             <span>Your answer: {userAnswers[i] !== undefined ? (shuffledOptions[i] || q.options)[userAnswers[i]] : 'No answer'}</span><br />
             <span>Correct answer: {q.correctAnswer}</span>
             {q.short_explanation && (

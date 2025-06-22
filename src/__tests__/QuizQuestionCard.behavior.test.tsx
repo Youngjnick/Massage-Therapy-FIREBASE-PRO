@@ -6,7 +6,7 @@ import { CreateStatefulQuizCard, baseProps } from '../components/Quiz/QuizQuesti
 
 describe('QuizQuestionCard (app-level quiz flow)', () => {
   const defaultProps = {
-    q: { text: 'Q1', options: ['A', 'B'], correctAnswer: 'A' },
+    q: { question: 'Q1', options: ['A', 'B'], correctAnswer: 'A' },
     current: 0,
     userAnswers: [],
     answered: false,
