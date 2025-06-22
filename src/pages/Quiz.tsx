@@ -221,6 +221,15 @@ const Quiz: React.FC = () => {
       started,
       quizQuestions
     });
+    // Save quiz progress for resume
+    await saveQuizProgress({
+      started: true,
+      current,
+      userAnswers: newAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      showResults: false
+    });
   };
 
   // --- Firestore analytics update at quiz finish ---
