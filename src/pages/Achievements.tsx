@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { getBadges, Badge } from '../badges';
 import BadgeModal from '../components/Quiz/BadgeModal';
 
@@ -6,6 +6,7 @@ const Achievements: React.FC = () => {
   const [badges, setBadges] = useState<Badge[]>([]);
   const [selectedBadge, setSelectedBadge] = useState<Badge | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const lastFocusedBadgeRef = useRef<HTMLDivElement | null>(null);
 
   const fallbackUrl = `${import.meta.env.BASE_URL}badges/fallback.png`;
 
@@ -29,6 +30,13 @@ const Achievements: React.FC = () => {
       });
   }, []);
 
+  // Return focus to last badge when modal closes
+  useEffect(() => {
+    if (!selectedBadge && lastFocusedBadgeRef.current) {
+      lastFocusedBadgeRef.current.focus();
+    }
+  }, [selectedBadge]);
+
   return (
     <div>
       <h2>Achievements</h2>
@@ -51,10 +59,14 @@ const Achievements: React.FC = () => {
             tabIndex={0}
             role="button"
             aria-label={`Open badge modal for ${badge.name}`}
-            onClick={() => setSelectedBadge(badge)}
+            onClick={e => {
+              lastFocusedBadgeRef.current = e.currentTarget;
+              setSelectedBadge(badge);
+            }}
             onKeyDown={e => {
               if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
+                lastFocusedBadgeRef.current = e.currentTarget as HTMLDivElement;
                 setSelectedBadge(badge);
               }
             }}

@@ -28,6 +28,13 @@
 - button "Open badge modal for Test Badge":
   - img "Test Badge"
   - text: Test Badge
+- button "Close Modal": ×
+- img "First Quiz"
+- heading "First Quiz" [level=2]
+- paragraph: Complete your first quiz
+- strong: "Criteria:"
+- text: first_quiz Earned!
+- button "Close badge modal": Close
 - contentinfo:
   - textbox "Search questions"
 ```
