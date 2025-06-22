@@ -51,7 +51,8 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await badgeButton.focus();
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('badge-modal')).toBeVisible();
-    await page.getByRole('button', { name: /close/i }).focus();
+    // Focus the bottom close button and close with Space
+    await page.getByTestId('badge-modal-close-bottom').focus();
     await page.keyboard.press('Space');
     await expect(page.getByTestId('badge-modal')).toBeHidden();
   });
@@ -213,5 +214,17 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     // Simulate JS error (if possible, e.g. via special test param)
     // For now, check that the app still shows a fallback UI
     await expect(page.getByText(/something went wrong|error/i)).not.toHaveCount(0);
+  });
+
+  test('Badge modal: top-right close button closes modal', async ({ page }) => {
+    await page.goto('/achievements');
+    // Open the first badge modal
+    const badgeButton = page.getByTestId('badge-container').first();
+    await badgeButton.click();
+    await expect(page.getByTestId('badge-modal')).toBeVisible();
+    // Click the top-right close button
+    await page.getByTestId('badge-modal-close-top').click();
+    // Modal should be closed
+    await expect(page.getByTestId('badge-modal')).toBeHidden();
   });
 });

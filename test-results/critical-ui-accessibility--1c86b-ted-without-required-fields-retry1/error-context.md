@@ -27,22 +27,22 @@
   - button
   - button
   - button
-- group "Where does the transverse abdominis muscle originate?":
-  - text: Where does the transverse abdominis muscle originate?
+- group "What is the origin of the rectus abdominis muscle?":
+  - text: What is the origin of the rectus abdominis muscle?
   - list:
     - listitem:
-      - 'radio "Option A: Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament"'
-      - text: A. Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament
+      - 'radio "Option A: Pubic crest and pubic symphysis"'
+      - text: A. Pubic crest and pubic symphysis
     - listitem:
-      - 'radio "Option B: Pubic crest"'
-      - text: B. Pubic crest
+      - 'radio "Option B: Xiphoid process"'
+      - text: B. Xiphoid process
     - listitem:
-      - 'radio "Option C: Xiphoid process"'
-      - text: C. Xiphoid process
+      - 'radio "Option C: Iliac crest"'
+      - text: C. Iliac crest
     - listitem:
-      - 'radio "Option D: Anterior sacrum"'
-      - text: D. Anterior sacrum
-- text: "Quick Tip: It originates from ribs, fascia, and pelvis. More Info: The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength. Clinical Application: Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support. Source: Musculoskeletal Anatomy – R. Floyd Tags: transverse abdominis, origin, core stability Keywords: rib attachment, abdominal core, pelvis"
+      - 'radio "Option D: Costal cartilages of ribs 5-7"'
+      - text: D. Costal cartilages of ribs 5-7
+- text: "Quick Tip: The rectus abdominis originates from the pubic crest and symphysis. More Info: The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation. Clinical Application: Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt. Source: Trail Guide to the Body – Biel Tags: rectus abdominis, origin, core muscles Keywords: pubic crest, abdominal muscle, origin"
 - button "Previous question" [disabled]: Previous
 - button "Next question" [disabled]: Next
 - button "Finish quiz early" [disabled]: Finish

@@ -27,22 +27,22 @@
   - button
   - button
   - button
-- group "What nerve supplies the internal oblique muscle?":
-  - text: What nerve supplies the internal oblique muscle?
+- group "Which nerves innervate the transverse abdominis?":
+  - text: Which nerves innervate the transverse abdominis?
   - list:
     - listitem:
-      - 'radio "Option A: Lower six thoracoabdominal nerves and L1"'
-      - text: A. Lower six thoracoabdominal nerves and L1
+      - 'radio "Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)"'
+      - text: A. Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)
     - listitem:
-      - 'radio "Option B: Genitofemoral nerve"'
-      - text: B. Genitofemoral nerve
+      - 'radio "Option B: Pudendal nerve"'
+      - text: B. Pudendal nerve
     - listitem:
-      - 'radio "Option C: Obturator nerve"'
-      - text: C. Obturator nerve
+      - 'radio "Option C: Sacral plexus"'
+      - text: C. Sacral plexus
     - listitem:
-      - 'radio "Option D: Phrenic nerve"'
-      - text: D. Phrenic nerve
-- text: "Quick Tip: It is innervated by thoracoabdominal nerves and the L1 nerve. More Info: The internal oblique receives motor supply from thoracoabdominal nerves (T7–T11), subcostal (T12), and contributions from iliohypogastric and ilioinguinal nerves (L1), coordinating trunk flexion and abdominal compression. Clinical Application: Knowledge of this innervation helps when working with patients recovering from abdominal surgery or sports injuries. Source: Gray’s Anatomy for Students Tags: internal oblique, nerves, L1 Keywords: iliohypogastric, thoracoabdominal, trunk"
+      - 'radio "Option D: Vagus nerve"'
+      - text: D. Vagus nerve
+- text: "Quick Tip: It is innervated by both thoracic and upper lumbar nerves. More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability. Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support. Source: Principles of Anatomy and Physiology – Tortora Tags: transverse abdominis, L1, T7–T12 Keywords: nerve supply, abdominal wall, core"
 - button "Previous question" [disabled]: Previous
 - button "Next question" [disabled]: Next
 - button "Finish quiz early" [disabled]: Finish
