@@ -32,14 +32,14 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await badgeButtons.nth(0).click();
     await expect(page.getByTestId('badge-modal')).toBeVisible();
     // Close first modal before opening the second
-    await page.getByRole('button', { name: /close/i }).click();
+    await page.getByTestId('badge-modal-close-bottom').click();
     // Open second badge modal
     await badgeButtons.nth(1).click();
     // Only one modal should be visible
     const modals = page.locator('[data-testid="badge-modal"]');
     expect(await modals.count()).toBe(1);
     // Close modal
-    await page.getByRole('button', { name: /close/i }).click();
+    await page.getByTestId('badge-modal-close-bottom').click();
   });
 
   test('Badge modal: open with keyboard only (Tab + Enter/Space)', async ({ page }) => {
@@ -116,8 +116,9 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     // Fallback image
     const fallbackImg = page.locator('img[src*="badge_test.png"]');
     await expect(fallbackImg).toBeVisible();
-    // Keyboard close
-    await page.keyboard.press('Escape');
+    // Keyboard close (bottom button)
+    await page.getByTestId('badge-modal-close-bottom').focus();
+    await page.keyboard.press('Enter');
     await expect(page.getByTestId('badge-modal')).toBeHidden();
   });
 
