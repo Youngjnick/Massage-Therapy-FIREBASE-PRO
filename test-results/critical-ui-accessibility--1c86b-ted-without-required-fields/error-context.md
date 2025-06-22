@@ -27,22 +27,22 @@
   - button
   - button
   - button
-- group "Where does the transverse abdominis muscle originate?":
-  - text: Where does the transverse abdominis muscle originate?
+- group "Which nerve innervates the rectus abdominis muscle?":
+  - text: Which nerve innervates the rectus abdominis muscle?
   - list:
     - listitem:
-      - 'radio "Option A: Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament"'
-      - text: A. Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament
+      - 'radio "Option A: Intercostal nerves (T7–T11) and subcostal nerve (T12)"'
+      - text: A. Intercostal nerves (T7–T11) and subcostal nerve (T12)
     - listitem:
-      - 'radio "Option B: Pubic crest"'
-      - text: B. Pubic crest
+      - 'radio "Option B: Iliohypogastric nerve"'
+      - text: B. Iliohypogastric nerve
     - listitem:
-      - 'radio "Option C: Xiphoid process"'
-      - text: C. Xiphoid process
+      - 'radio "Option C: Femoral nerve"'
+      - text: C. Femoral nerve
     - listitem:
-      - 'radio "Option D: Anterior sacrum"'
-      - text: D. Anterior sacrum
-- text: "Quick Tip: It originates from ribs, fascia, and pelvis. More Info: The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength. Clinical Application: Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support. Source: Musculoskeletal Anatomy – R. Floyd Tags: transverse abdominis, origin, core stability Keywords: rib attachment, abdominal core, pelvis"
+      - 'radio "Option D: Lumbar plexus"'
+      - text: D. Lumbar plexus
+- text: "Quick Tip: The rectus abdominis is innervated by lower thoracic spinal nerves. More Info: Specifically, the intercostal nerves from T7 to T11 and the subcostal nerve (T12) innervate the rectus abdominis, allowing voluntary motor control during trunk flexion and compression of abdominal contents. Clinical Application: This is relevant when assessing abdominal wall weakness or post-surgical nerve impairment. Source: Netter's Atlas of Human Anatomy Tags: rectus abdominis, innervation, spinal nerves Keywords: thoracic nerves, intercostal, core control"
 - button "Previous question" [disabled]: Previous
 - button "Next question" [disabled]: Next
 - button "Finish quiz early" [disabled]: Finish
