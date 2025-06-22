@@ -80,10 +80,11 @@ const Quiz: React.FC = () => {
   const q = activeQuestions[current];
 
   // --- Derived variables (declare after quizQuestions/activeQuestions) ---
-  const availableTopics = Array.from(new Set(questions.map((q: any) => (q.topics && q.topics[0]) || 'Other')));
+  // Use the last topic for each question for availableTopics
+  const availableTopics = Array.from(new Set(questions.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
   const maxQuizLength = quizQuestions.length;
   // User can select a desired quiz length, but always clamp to available range
-  const [desiredQuizLength, setDesiredQuizLength] = useState<number>(10);
+  const [desiredQuizLength, setDesiredQuizLength] = useState<number>(5);
   const quizLength = maxQuizLength === 0 ? 0 : Math.max(1, Math.min(desiredQuizLength, maxQuizLength));
   const totalQuestions = started ? shuffledQuestions.length : quizQuestions.length;
   const progress = totalQuestions > 0 ? Math.round((userAnswers.filter((a) => a !== undefined).length / totalQuestions) * 100) : 0;
@@ -94,8 +95,8 @@ const Quiz: React.FC = () => {
     getQuestions()
       .then((qs) => {
         setQuestions(qs);
-        // Extract unique topics
-        const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[0]) || 'Other')));
+        // Extract unique topics (use the last topic for each question)
+        const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
         if (!selectedTopic && topics.length > 0) setSelectedTopic(topics[0]);
       })
       .catch(() => {
@@ -175,6 +176,8 @@ const Quiz: React.FC = () => {
         [qs[i], qs[j]] = [qs[j], qs[i]];
       }
     }
+    // Only use the first N questions for the quiz
+    qs = qs.slice(0, quizLength);
     setShuffledQuestions(qs);
     // Shuffle options for each question
     const so: { [key: number]: string[] } = {};
@@ -358,6 +361,7 @@ const Quiz: React.FC = () => {
   }
 
   // Compute answered array for QuizStepper
+  // Defensive: ensure answeredArray is always correct for all questions
   const answeredArray = activeQuestions.map((_, i) => userAnswers[i] !== undefined);
 
   // Fix setFilter and setSort to accept string
@@ -421,8 +425,10 @@ const Quiz: React.FC = () => {
               }
             }}
             onFinish={async () => {
-              // Check for unanswered questions
-              if (userAnswers.some(a => a === undefined)) {
+              // Debug: log when finish is clicked and show answers
+              console.log('Finish Quiz clicked', { userAnswers, current, totalQuestions });
+              // Defensive: always check if last question is answered
+              if (userAnswers.some((a, i) => a === undefined && i < totalQuestions)) {
                 setWarning('Please answer all questions before finishing the quiz.');
                 return;
               }
@@ -437,7 +443,6 @@ const Quiz: React.FC = () => {
                 setShowResults(true);
               } catch {
                 setError('Error: Failed to submit results. Could not submit your quiz results.');
-                setShowResults(true);
               }
             }}
             total={totalQuestions}
