@@ -60,11 +60,12 @@ const Achievements: React.FC = () => {
             role="button"
             aria-label={`Open badge modal for ${badge.name}`}
             onClick={e => {
+              if (selectedBadge) return; // Prevent opening if already open
               lastFocusedBadgeRef.current = e.currentTarget;
               setSelectedBadge(badge);
             }}
             onKeyDown={e => {
-              if (e.key === 'Enter' || e.key === ' ') {
+              if ((e.key === 'Enter' || e.key === ' ') && !selectedBadge) {
                 e.preventDefault();
                 lastFocusedBadgeRef.current = e.currentTarget as HTMLDivElement;
                 setSelectedBadge(badge);
