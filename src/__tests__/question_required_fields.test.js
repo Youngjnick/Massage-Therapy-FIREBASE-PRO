@@ -1,9 +1,8 @@
-// src/__tests__/question_required_fields.test.js
 const fs = require('fs');
 const path = require('path');
+// Use __dirname directly, remove ESM/TS logic
 
 describe('All questions have required fields', () => {
-  // Recursively find all .json files in a directory
   function findJsonFiles(dir) {
     let results = [];
     fs.readdirSync(dir).forEach(file => {
@@ -17,10 +16,8 @@ describe('All questions have required fields', () => {
     });
     return results;
   }
-
   const questionsDir = path.join(__dirname, '../data/questions');
   const jsonFiles = findJsonFiles(questionsDir);
-
   jsonFiles.forEach(file => {
     test(`Validates required fields in ${file}`, () => {
       const content = fs.readFileSync(file, 'utf8');
@@ -31,7 +28,7 @@ describe('All questions have required fields', () => {
         throw new Error(`Invalid JSON in ${file}: ${e.message}`);
       }
       expect(Array.isArray(data)).toBe(true);
-      data.forEach(q => {
+      data.forEach((q) => {
         expect(q).toHaveProperty('correctAnswer');
         expect(typeof q.correctAnswer).toBe('string');
         expect(q).toHaveProperty('question');

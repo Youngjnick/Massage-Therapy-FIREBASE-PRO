@@ -1,6 +1,8 @@
+// Use CommonJS for Jest compatibility
 const fs = require('fs');
 const path = require('path');
 
+// Use __dirname directly, remove ESM/TS logic
 describe('Question JSON validation', () => {
   // Recursively find all .json files in a directory
   function findJsonFiles(dir) {
@@ -31,7 +33,7 @@ describe('Question JSON validation', () => {
     jsonFiles.forEach(file => {
       const content = fs.readFileSync(file, 'utf8');
       const data = JSON.parse(content);
-      data.forEach(q => {
+      data.forEach((q) => {
         if (!idToFiles[q.id]) {
           idToFiles[q.id] = [];
         }
@@ -59,7 +61,7 @@ describe('Question JSON validation', () => {
       const content = fs.readFileSync(file, 'utf8');
       const data = JSON.parse(content);
       const base = getCleanBaseName(file);
-      data.forEach(q => {
+      data.forEach((q) => {
         if (!q.id.startsWith(base + '_')) {
           badIds.push({ id: q.id, file, expectedPrefix: base + '_' });
         }
@@ -81,7 +83,7 @@ describe('Question JSON validation', () => {
         throw new Error(`Invalid JSON in ${file}: ${e.message}`);
       }
       expect(Array.isArray(data)).toBe(true);
-      data.forEach(q => {
+      data.forEach((q) => {
         expect(q).toHaveProperty('id');
         expect(q).toHaveProperty('question');
         expect(Array.isArray(q.options)).toBe(true);
@@ -90,11 +92,6 @@ describe('Question JSON validation', () => {
       });
       // Ensure the file has at least one question
       expect(data.length).toBeGreaterThan(0);
-
-      // Ensure 2-space indentation and trailing newline
-      // const formatted = JSON.stringify(data, null, 2) + '\n';
-      // expect(content.endsWith('\n')).toBe(true);
-      // expect(content).toBe(formatted);
     });
   });
 });
