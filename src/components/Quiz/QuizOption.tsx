@@ -18,7 +18,7 @@ interface QuizOptionProps {
   isFirst?: boolean; // Add this prop
 }
 
-const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
+const QuizOption: React.FC<QuizOptionProps> = ({
   label,
   option,
   selected,
@@ -32,7 +32,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
   children,
   autoFocus = false,
   isFirst = false,
-  'data-testid': dataTestId,
   ...rest
 }) => {
   const classList = className.split(' ');
@@ -149,7 +148,7 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         data-disabled={Boolean(disabled)}
         tabIndex={tabIndex}
         data-quiz-radio
-        data-testid={dataTestId || "quiz-option"}
+        data-testid="quiz-radio"
         // autoFocus={autoFocus} // Remove this line to avoid React warnings and double-focusing
         onClick={e => {
           e.stopPropagation();
