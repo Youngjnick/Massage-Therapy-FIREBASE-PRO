@@ -134,7 +134,6 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
       style={{ width: '100%', cursor: disabled ? 'not-allowed' : 'pointer' }}
       {...rest}
       data-qa="quiz-option"
-      data-testid={dataTestId}
       onClick={() => {
         if (disabled) return;
         // Only focus input if not already focused
@@ -169,39 +168,13 @@ const QuizOption: React.FC<QuizOptionProps & { 'data-testid'?: string }> = ({
         data-disabled={Boolean(disabled)}
         tabIndex={tabIndex}
         data-quiz-radio
-        data-testid="quiz-radio"
+        data-testid={dataTestId || "quiz-option"}
         // autoFocus={autoFocus} // Remove this line to avoid React warnings and double-focusing
         onClick={e => {
           e.stopPropagation();
           if (Boolean(disabled) || e.currentTarget.readOnly) return;
           if (selected && typeof onSubmitOption === 'function') {
             onSubmitOption();
-          }
-        }}
-        onBlur={handleBlur}
-        onKeyDown={e => {
-          // Debug log for keydown
-          console.log('[QuizOption] onKeyDown:', { key: e.key, id: uniqueInputId, focused: document.activeElement?.id });
-          if (Boolean(disabled) || e.currentTarget.readOnly) return;
-          if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-            e.preventDefault();
-            focusSiblingInput('prev');
-            return;
-          }
-          if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-            e.preventDefault();
-            focusSiblingInput('next');
-            return;
-          }
-          if ((e.key === 'Enter' || e.key === ' ')) {
-            e.preventDefault();
-            if (!selected) {
-              try { if (typeof onSelect === 'function') onSelect(); } catch { /* swallow */ }
-            } else if (!submittedKeysRef.current[e.key]) {
-              submittedKeysRef.current[e.key] = true;
-              try { if (typeof onSubmitOption === 'function') onSubmitOption(); } catch { /* swallow */ }
-            }
-            return;
           }
         }}
       />

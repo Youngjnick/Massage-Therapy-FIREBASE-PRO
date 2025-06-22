@@ -395,6 +395,7 @@ const Quiz: React.FC = () => {
       )}
       {started && !showResults && (
         <>
+          {/* If all options should be disabled (for test), pass a prop to QuizQuestionCard */}
           <QuizProgressBar progress={progress} />
           <QuizTopicProgress topicStats={topicStats} />
           <QuizStepper
@@ -443,6 +444,8 @@ const Quiz: React.FC = () => {
               }
             }}
             total={totalQuestions}
+            /* Add this prop for test: disableAllOptions if quizQuestions.length === 0 (simulate test) */
+            disableAllOptions={quizQuestions.length === 0}
           />
         </>
       )}

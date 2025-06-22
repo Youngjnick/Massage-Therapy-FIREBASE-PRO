@@ -23,22 +23,22 @@
 - text: 0 % abdominal_muscle_origins 0 / 1 correct
 - group "Question Progress":
   - button
-- group "Where does the internal oblique muscle originate?":
-  - text: Where does the internal oblique muscle originate?
+- group "Which nerves innervate the transverse abdominis?":
+  - text: Which nerves innervate the transverse abdominis?
   - list:
     - listitem:
-      - 'radio "Option A: Thoracolumbar fascia, iliac crest, and inguinal ligament"'
-      - text: A. Thoracolumbar fascia, iliac crest, and inguinal ligament
+      - 'radio "Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)"'
+      - text: A. Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)
     - listitem:
-      - 'radio "Option B: Costal cartilages of ribs 5–7"'
-      - text: B. Costal cartilages of ribs 5–7
+      - 'radio "Option B: Pudendal nerve"'
+      - text: B. Pudendal nerve
     - listitem:
-      - 'radio "Option C: Pubic symphysis"'
-      - text: C. Pubic symphysis
+      - 'radio "Option C: Sacral plexus"'
+      - text: C. Sacral plexus
     - listitem:
-      - 'radio "Option D: Anterior superior iliac spine"'
-      - text: D. Anterior superior iliac spine
-- text: "Quick Tip: The internal oblique arises from fascia and bony landmarks of the lower torso. More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents. Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy. Source: Anatomy Trains – Myers Tags: internal oblique, origin, fascia, iliac Keywords: inguinal, abdominal wall, core"
+      - 'radio "Option D: Vagus nerve"'
+      - text: D. Vagus nerve
+- text: "Quick Tip: It is innervated by both thoracic and upper lumbar nerves. More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability. Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support. Source: Principles of Anatomy and Physiology – Tortora Tags: transverse abdominis, L1, T7–T12 Keywords: nerve supply, abdominal wall, core"
 - button "Previous question" [disabled]: Previous
 - button "Finish quiz" [disabled]: Finish Quiz
 - contentinfo:
