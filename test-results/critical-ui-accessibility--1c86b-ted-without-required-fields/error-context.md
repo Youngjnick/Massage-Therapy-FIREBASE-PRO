@@ -21,7 +21,7 @@
 - heading "Quiz" [level=1]
 - text: Topic
 - combobox "Topic":
-  - option "Abdominal Muscle Origins"
+  - option "Abdominal Muscle Origins" [selected]
   - option "Accessory Nerve"
   - option "Acetylcholine"
   - option "Acute Injury"
@@ -440,9 +440,9 @@
   - option "Sweat Glands"
   - option "Synovial Fluid"
   - option "Synovial Joints"
+  - option "T1 Nerve Innervations"
   - option "T11 Nerve Innervations"
   - option "T12 Nerve Innervations"
-  - option "T1 Nerve Innervations"
   - option "Talocrural Joint"
   - option "Talonavicular Ligament"
   - option "Tendons Of The Foot"
@@ -484,7 +484,7 @@
   - option "Ventricles Brain"
   - option "White Blood Cell Types"
   - option "Yellow Marrow"
-  - option "Z Lines" [selected]
+  - option "Z Lines"
 - text: "Quiz Length:"
 - spinbutton "Quiz Length": "1"
 - text: "Sort:"

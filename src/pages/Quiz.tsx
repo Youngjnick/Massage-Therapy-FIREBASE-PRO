@@ -55,6 +55,7 @@ const Quiz: React.FC = () => {
   const [liveTopicStats, setLiveTopicStats] = useState<{ [topic: string]: { correct: number; total: number } } | null>(null);
   const [warning, setWarning] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [sortedTopics, setSortedTopics] = useState<string[]>([]);
 
   // Use modularized data hook
   const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
@@ -80,8 +81,6 @@ const Quiz: React.FC = () => {
   const q = activeQuestions[current];
 
   // --- Derived variables (declare after quizQuestions/activeQuestions) ---
-  // Use the last topic for each question for availableTopics
-  const availableTopics = Array.from(new Set(questions.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
   const maxQuizLength = quizQuestions.length;
   // User can select a desired quiz length, but always clamp to available range
   const [desiredQuizLength, setDesiredQuizLength] = useState<number>(5);
@@ -97,7 +96,10 @@ const Quiz: React.FC = () => {
         setQuestions(qs);
         // Extract unique topics (use the last topic for each question)
         const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
-        if (!selectedTopic && topics.length > 0) setSelectedTopic(topics.at(-1) ?? "");
+        const sorted = [...topics].sort((a, b) => a.localeCompare(b));
+        setSortedTopics(sorted);
+        // Set default topic to the first alphabetically
+        if (!selectedTopic && sorted.length > 0) setSelectedTopic(sorted[0]);
       })
       .catch(() => {
         setWarning('Error: Failed to load questions. Could not load questions.');
@@ -352,9 +354,8 @@ const Quiz: React.FC = () => {
   // Defensive: ensure answeredArray is always correct for all questions
   const answeredArray = activeQuestions.map((_, i) => userAnswers[i] !== undefined);
 
-  // Fix setFilter and setSort to accept string
+  // Fix setFilter to accept string
   const handleSetFilter = (val: string) => setFilter(val as any);
-  const handleSetSort = (val: string) => setSort(val);
 
   // Add a function to reset all quiz state and show the start form
   const resetQuiz = () => {
@@ -446,14 +447,14 @@ const Quiz: React.FC = () => {
       )}
       {!started && !showResults && (
         <QuizStartForm
-          availableTopics={availableTopics}
+          availableTopics={sortedTopics}
           selectedTopic={selectedTopic}
           setSelectedTopic={setSelectedTopic}
           quizLength={quizLength}
           setQuizLength={setDesiredQuizLength}
           maxQuizLength={maxQuizLength}
           sort={"default"}
-          setSort={handleSetSort}
+          setSort={setSort}
           onStart={startQuiz}
           filter={filter}
           setFilter={handleSetFilter}
