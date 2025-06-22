@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import QuizOption from './QuizOption';
 
 describe('QuizOption', () => {
@@ -423,7 +423,7 @@ describe('QuizOption', () => {
       expect(onSelect).not.toHaveBeenCalled();
       expect(onSubmitOption).not.toHaveBeenCalled();
     });
-    it('calls onSelect/onSubmitOption if input is enabled after rapid toggling and then clicked', () => {
+    it('calls onSelect/onSubmitOption if input is enabled after rapid toggling and then clicked', async () => {
       function Wrapper() {
         const [selected, setSelected] = React.useState(false);
         const [disabled, setDisabled] = React.useState(true);
@@ -448,12 +448,11 @@ describe('QuizOption', () => {
       render(<Wrapper />);
       const radio = screen.getByRole('radio');
       // Wait for enable
-      setTimeout(() => {
-        fireEvent.click(radio); // select
-        expect(radio).toBeChecked();
-        fireEvent.click(radio); // submit
-        expect(radio).toBeChecked();
-      }, 20);
+      await waitFor(() => expect(radio).not.toBeDisabled());
+      fireEvent.click(radio); // select
+      expect(radio).toBeChecked();
+      fireEvent.click(radio); // submit
+      expect(radio).toBeChecked();
     });
     it('does not call handlers if input is rapidly set to readOnly and back before click', () => {
       // This test is unreliable in JSDOM/RTL due to lack of real readOnly propagation and event timing.
