@@ -14,7 +14,6 @@
     "long_explanation": "Urticaria, also known as hives, presents as transient, pruritic, erythematous swellings of the skin due to dermal edema. The welts can vary in size and shape and are typically itchy.",
     "clinical_application": "Massage therapists should avoid areas affected by active urticaria to prevent irritation and ensure client comfort.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,21 +22,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["urticaria", "hives", "itching", "welts"],
-    "keywords": ["hives", "wheals", "itchy skin"],
+    "tags": [
+      "urticaria",
+      "hives",
+      "itching",
+      "welts"
+    ],
+    "keywords": [
+      "hives",
+      "wheals",
+      "itchy skin"
+    ],
     "synonyms": null
   },
   {
     "id": "urticaria_002",
     "correctAnswer": "Mast cells",
     "question": "Which immune system component is primarily involved in triggering urticaria?",
-    "options": ["B cells", "T cells", "Mast cells", "Macrophages"],
+    "options": [
+      "B cells",
+      "T cells",
+      "Mast cells",
+      "Macrophages"
+    ],
     "topics": ["pathology", "urticaria"],
     "short_explanation": "Mast cells release histamine, a key trigger for urticaria.",
     "long_explanation": "Mast cells play a central role in urticaria by releasing histamine and other inflammatory mediators that cause vasodilation and increased vascular permeability, leading to the characteristic wheals.",
     "clinical_application": "Knowing the immunologic basis of urticaria can help massage therapists identify when a skin condition might be an allergic response requiring medical evaluation.",
     "source_reference": "Fundamentals of Therapeutic Massage, 7th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["histamine", "mast cells", "immune response"],
-    "keywords": ["mast cells", "histamine", "urticaria mechanism"],
+    "tags": [
+      "histamine",
+      "mast cells",
+      "immune response"
+    ],
+    "keywords": [
+      "mast cells",
+      "histamine",
+      "urticaria mechanism"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +85,6 @@
     "long_explanation": "Acute urticaria typically results from an allergic response to triggers like shellfish, nuts, antibiotics, or insect stings. The reaction is rapid and can last up to 6 weeks.",
     "clinical_application": "Massage therapists should inquire about allergy history before sessions and monitor for signs of an allergic skin reaction during treatments.",
     "source_reference": "ABMP Massage Therapy Pathology Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -74,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["allergy", "acute urticaria", "trigger"],
-    "keywords": ["food allergy", "drug reaction", "hives"],
+    "tags": [
+      "allergy",
+      "acute urticaria",
+      "trigger"
+    ],
+    "keywords": [
+      "food allergy",
+      "drug reaction",
+      "hives"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +120,6 @@
     "long_explanation": "Physical urticaria refers to a group of hives induced by environmental factors. Subtypes include cold urticaria, cholinergic urticaria (from heat or exercise), and pressure urticaria.",
     "clinical_application": "Therapists should avoid aggressive techniques or temperature extremes in clients with physical urticaria.",
     "source_reference": "Massage Therapy: Integrating Research and Practice, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,8 +128,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["physical urticaria", "pressure hives", "cold response"],
-    "keywords": ["stimulus", "cold", "vibration", "urticaria"],
+    "tags": [
+      "physical urticaria",
+      "pressure hives",
+      "cold response"
+    ],
+    "keywords": [
+      "stimulus",
+      "cold",
+      "vibration",
+      "urticaria"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +156,6 @@
     "long_explanation": "Wheals from urticaria are fleeting, typically disappearing within 1–2 hours without leaving marks. However, new wheals can appear as others fade during the active phase.",
     "clinical_application": "This transient nature helps differentiate urticaria from more persistent dermatoses during client assessments.",
     "source_reference": "Pathophysiology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -130,8 +164,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["duration", "acute urticaria", "hive timing"],
-    "keywords": ["wheals", "acute", "duration", "hives"],
+    "tags": [
+      "duration",
+      "acute urticaria",
+      "hive timing"
+    ],
+    "keywords": [
+      "wheals",
+      "acute",
+      "duration",
+      "hives"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +192,6 @@
     "long_explanation": "Chronic spontaneous urticaria (CSU), persisting for over 6 weeks without an identifiable external trigger, is often autoimmune in nature. It has a strong association with autoimmune thyroid conditions like Hashimoto’s.",
     "clinical_application": "Massage professionals should refer clients with persistent or unexplained skin eruptions to a physician for autoimmune screening.",
     "source_reference": "Clinical Dermatology: A Color Guide to Diagnosis and Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -158,21 +200,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CSU", "autoimmune", "chronic hives"],
-    "keywords": ["chronic urticaria", "autoimmune thyroid", "Hashimoto"],
+    "tags": [
+      "CSU",
+      "autoimmune",
+      "chronic hives"
+    ],
+    "keywords": [
+      "chronic urticaria",
+      "autoimmune thyroid",
+      "Hashimoto"
+    ],
     "synonyms": null
   },
   {
     "id": "urticaria_007",
     "correctAnswer": "Osteoarthritis",
     "question": "Which of the following is NOT considered a typical trigger for urticaria?",
-    "options": ["Stress", "Infection", "Sunlight", "Osteoarthritis"],
+    "options": [
+      "Stress",
+      "Infection",
+      "Sunlight",
+      "Osteoarthritis"
+    ],
     "topics": ["pathology", "urticaria"],
     "short_explanation": "Osteoarthritis is not typically associated with urticaria flare-ups.",
     "long_explanation": "Urticaria is commonly triggered by stress, infections (viral especially), temperature changes, and allergens. Musculoskeletal conditions like osteoarthritis do not directly provoke hives.",
     "clinical_application": "Understanding potential urticaria triggers helps in adapting massage sessions to minimize flare-up risks.",
     "source_reference": "Fritz, Susan G. - Mosby’s Fundamentals of Therapeutic Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -181,21 +235,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trigger", "hives", "exclusion"],
-    "keywords": ["non-trigger", "arthritic condition", "urticaria causes"],
+    "tags": [
+      "trigger",
+      "hives",
+      "exclusion"
+    ],
+    "keywords": [
+      "non-trigger",
+      "arthritic condition",
+      "urticaria causes"
+    ],
     "synonyms": null
   },
   {
     "id": "urticaria_008",
     "correctAnswer": "Hives",
     "question": "Urticaria is also known by which common name?",
-    "options": ["Ringworm", "Rosacea", "Hives", "Eczema"],
+    "options": [
+      "Ringworm",
+      "Rosacea",
+      "Hives",
+      "Eczema"
+    ],
     "topics": ["pathology", "urticaria"],
     "short_explanation": "The term 'hives' is commonly used to describe urticaria.",
     "long_explanation": "Urticaria is the medical term for what laypeople refer to as hives. The condition involves itchy, red wheals that develop quickly and resolve within hours.",
     "clinical_application": "Massage therapists often encounter clients with 'hives'—knowing the medical terminology supports professional communication.",
     "source_reference": "ABMP Massage Pathology Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -204,8 +270,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hives", "urticaria", "terminology"],
-    "keywords": ["common name", "lay term", "urticaria"],
+    "tags": [
+      "hives",
+      "urticaria",
+      "terminology"
+    ],
+    "keywords": [
+      "common name",
+      "lay term",
+      "urticaria"
+    ],
     "synonyms": null
   },
   {
@@ -223,7 +297,6 @@
     "long_explanation": "First-line treatment for urticaria typically involves non-sedating antihistamines like cetirizine or loratadine, which reduce the severity and duration of hives.",
     "clinical_application": "Clients on antihistamines may experience reduced skin sensitivity—therapists should adjust techniques accordingly.",
     "source_reference": "Clinical Guide to Common Skin Conditions, ABMP",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -232,8 +305,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["antihistamine", "treatment", "hives"],
-    "keywords": ["urticaria treatment", "histamine blockers"],
+    "tags": [
+      "antihistamine",
+      "treatment",
+      "hives"
+    ],
+    "keywords": [
+      "urticaria treatment",
+      "histamine blockers"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +331,6 @@
     "long_explanation": "Dermatographic urticaria, or 'skin writing', is a form of physical urticaria where raised, itchy lines appear shortly after scratching or pressure. It's one of the most common forms of inducible hives.",
     "clinical_application": "Massage therapists should use light pressure or avoid friction-based techniques on clients with dermatographism.",
     "source_reference": "Clinical Dermatology Reference Guide, 2023",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/urticaria.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -260,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dermatographism", "skin writing", "induced urticaria"],
-    "keywords": ["pressure hives", "linear hives", "skin reaction"],
+    "tags": [
+      "dermatographism",
+      "skin writing",
+      "induced urticaria"
+    ],
+    "keywords": [
+      "pressure hives",
+      "linear hives",
+      "skin reaction"
+    ],
     "synonyms": null
   }
 ]

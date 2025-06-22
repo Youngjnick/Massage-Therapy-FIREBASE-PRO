@@ -14,7 +14,6 @@
     "long_explanation": "The four dorsal interossei muscles are responsible for abducting the index, middle, and ring fingers. They originate from adjacent metacarpals and insert onto proximal phalanges and the extensor hood.",
     "clinical_application": "Assessing finger abduction strength helps evaluate dorsal interossei function, especially in ulnar nerve assessments.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dorsal interossei", "finger abduction", "hand muscles"],
-    "keywords": ["dorsal hand", "abduction", "interossei"],
+    "tags": [
+      "dorsal interossei",
+      "finger abduction",
+      "hand muscles"
+    ],
+    "keywords": [
+      "dorsal hand",
+      "abduction",
+      "interossei"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The deep branch of the ulnar nerve supplies motor innervation to the dorsal interossei, which control finger abduction.",
     "clinical_application": "Loss of ulnar nerve function leads to weakened finger abduction, affecting fine motor tasks like piano playing.",
     "source_reference": "Clinical Neuroanatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -51,21 +57,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "hand innervation"],
-    "keywords": ["dorsal interossei", "ulnar nerve", "motor control"],
+    "tags": [
+      "ulnar nerve",
+      "hand innervation"
+    ],
+    "keywords": [
+      "dorsal interossei",
+      "ulnar nerve",
+      "motor control"
+    ],
     "synonyms": null
   },
   {
     "id": "dorsal_hand_003",
     "correctAnswer": "Middle finger",
     "question": "Which digit has two dorsal interossei muscles acting on it?",
-    "options": ["Thumb", "Index finger", "Middle finger", "Little finger"],
+    "options": [
+      "Thumb",
+      "Index finger",
+      "Middle finger",
+      "Little finger"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "dorsal_hand"],
     "short_explanation": "The middle finger has two dorsal interossei for bidirectional abduction.",
     "long_explanation": "The middle finger can abduct in either direction and therefore has two dorsal interossei, one on each side, unlike other digits.",
     "clinical_application": "Functional movement of the middle finger is a key test in dorsal interosseous muscle strength assessments.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -74,8 +91,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["middle finger", "abduction", "interossei"],
-    "keywords": ["middle finger", "bidirectional", "dorsal muscle"],
+    "tags": [
+      "middle finger",
+      "abduction",
+      "interossei"
+    ],
+    "keywords": [
+      "middle finger",
+      "bidirectional",
+      "dorsal muscle"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +118,6 @@
     "long_explanation": "These muscles insert onto the base of the proximal phalanges and the extensor expansion, aiding in both finger abduction and extension at the interphalangeal joints.",
     "clinical_application": "Insertion points are important in surgeries or injuries requiring hand reconstruction or splinting.",
     "source_reference": "Netter’s Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -102,8 +126,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle insertion", "dorsal hand"],
-    "keywords": ["proximal phalanx", "extensor hood", "interossei"],
+    "tags": [
+      "muscle insertion",
+      "dorsal hand"
+    ],
+    "keywords": [
+      "proximal phalanx",
+      "extensor hood",
+      "interossei"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +152,6 @@
     "long_explanation": "By inserting into the extensor hood, the dorsal interossei contribute to flexing the metacarpophalangeal joints while extending the interphalangeal joints.",
     "clinical_application": "Their dual action is important in rehabilitation of grip and hand coordination.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -130,8 +160,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["MCP flexion", "extensor hood"],
-    "keywords": ["flexion", "hand coordination", "interosseous muscles"],
+    "tags": [
+      "MCP flexion",
+      "extensor hood"
+    ],
+    "keywords": [
+      "flexion",
+      "hand coordination",
+      "interosseous muscles"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +186,6 @@
     "long_explanation": "The dorsal metacarpal arteries branch from the radial and ulnar arteries and provide blood to the dorsal interossei and surrounding tissues.",
     "clinical_application": "Understanding blood supply is critical in evaluating tissue healing or planning surgical grafts.",
     "source_reference": "Atlas of Human Anatomy, Netter",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "hard",
@@ -158,8 +194,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dorsal metacarpal artery", "vascular anatomy"],
-    "keywords": ["dorsal hand", "arterial supply", "interossei"],
+    "tags": [
+      "dorsal metacarpal artery",
+      "vascular anatomy"
+    ],
+    "keywords": [
+      "dorsal hand",
+      "arterial supply",
+      "interossei"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +220,6 @@
     "long_explanation": "Unlike other dorsal muscles that act on fingers, abductor pollicis longus abducts the thumb at the carpometacarpal joint and contributes to radial deviation.",
     "clinical_application": "Understanding this action helps differentiate tendon injuries in the thumb region.",
     "source_reference": "Essentials of Musculoskeletal Care",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -186,21 +228,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["APL", "thumb abduction"],
-    "keywords": ["APL", "radial deviation", "thumb"],
+    "tags": [
+      "APL",
+      "thumb abduction"
+    ],
+    "keywords": [
+      "APL",
+      "radial deviation",
+      "thumb"
+    ],
     "synonyms": null
   },
   {
     "id": "dorsal_hand_008",
     "correctAnswer": "Claw hand",
     "question": "What hand deformity may result from loss of dorsal interossei function?",
-    "options": ["Claw hand", "Ape hand", "Bishop's hand", "Trigger finger"],
+    "options": [
+      "Claw hand",
+      "Ape hand",
+      "Bishop's hand",
+      "Trigger finger"
+    ],
     "topics": ["anatomy", "muscle_groups", "hands", "dorsal_hand"],
     "short_explanation": "Loss of interossei function can contribute to claw hand deformity.",
     "long_explanation": "Without dorsal interossei to assist with MCP flexion and IP extension, the fingers hyperextend at the MCP and flex at the IP joints, resulting in claw hand.",
     "clinical_application": "Massage therapists may assist in managing symptoms and compensatory muscle tension associated with claw hand.",
     "source_reference": "Orthopedic Physical Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "hard",
@@ -209,8 +262,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["claw hand", "ulnar nerve palsy"],
-    "keywords": ["interossei", "hand deformity", "nerve damage"],
+    "tags": [
+      "claw hand",
+      "ulnar nerve palsy"
+    ],
+    "keywords": [
+      "interossei",
+      "hand deformity",
+      "nerve damage"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +288,6 @@
     "long_explanation": "The dorsal aponeurosis, or extensor expansion, receives contributions from the lumbricals and interossei and is visible on the back of the hand.",
     "clinical_application": "Proper identification is critical in surgical planning and injury rehab to avoid damaging deeper muscle layers.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -237,8 +296,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dorsal aponeurosis", "extensor hood"],
-    "keywords": ["extensor expansion", "interosseous covering"],
+    "tags": [
+      "dorsal aponeurosis",
+      "extensor hood"
+    ],
+    "keywords": [
+      "extensor expansion",
+      "interosseous covering"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +321,6 @@
     "long_explanation": "The dorsal interossei are the only muscles responsible for finger abduction. Their paralysis eliminates this movement, commonly seen in ulnar nerve injuries.",
     "clinical_application": "Therapists may work to strengthen compensatory muscles or improve hand coordination during rehab for ulnar neuropathy.",
     "source_reference": "Clinically Oriented Anatomy, Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/dorsal_hand.json",
     "question_type": null,
     "difficulty": "easy",
@@ -265,7 +329,10 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["finger abduction", "paralysis"],
+    "tags": [
+      "finger abduction",
+      "paralysis"
+    ],
     "keywords": [
       "ulnar nerve injury",
       "dorsal interossei loss",

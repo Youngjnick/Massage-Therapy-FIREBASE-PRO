@@ -14,7 +14,6 @@
     "long_explanation": "Diarthrotic joints are also known as synovial joints. They feature a synovial cavity filled with fluid, a joint capsule, and articular cartilage allowing a wide range of motion.",
     "clinical_application": "Massage around diarthrotic joints can enhance joint mobility, reduce pain, and ease restrictions in surrounding musculature.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 91",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diarthrosis", "synovial joint", "mobility"],
-    "keywords": ["freely movable", "joint capsule", "synovial fluid"],
+    "tags": [
+      "diarthrosis",
+      "synovial joint",
+      "mobility"
+    ],
+    "keywords": [
+      "freely movable",
+      "joint capsule",
+      "synovial fluid"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The knee is a freely movable joint with a synovial cavity, allowing flexion and extension with some rotation. It contains articular cartilage, menisci, and synovial fluid.",
     "clinical_application": "Understanding diarthrotic joints like the knee is vital for therapists treating joint dysfunction or soft tissue imbalance around load-bearing areas.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson, 15th ed., p. 281",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -51,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee joint", "diarthrosis", "synovial"],
-    "keywords": ["hinge joint", "flexion", "knee"],
+    "tags": [
+      "knee joint",
+      "diarthrosis",
+      "synovial"
+    ],
+    "keywords": [
+      "hinge joint",
+      "flexion",
+      "knee"
+    ],
     "synonyms": null
   },
   {
     "id": "diarthrotic_joints_003",
     "correctAnswer": "Synovial fluid",
     "question": "Which of the following components is essential in all diarthrotic joints?",
-    "options": ["Bursa", "Synovial fluid", "Meniscus", "Interosseous membrane"],
+    "options": [
+      "Bursa",
+      "Synovial fluid",
+      "Meniscus",
+      "Interosseous membrane"
+    ],
     "topics": ["anatomy", "joints", "diarthrotic_joints"],
     "short_explanation": "Synovial fluid lubricates all diarthrotic joints.",
     "long_explanation": "Diarthrotic joints require synovial fluid to reduce friction and nourish articular cartilage. While bursae and menisci are present in some, synovial fluid is always present.",
     "clinical_application": "Joint lubrication is crucial in pain-free movement and is supported by active movement and soft tissue therapies.",
     "source_reference": "Anatomy & Physiology, Saladin 9th ed., p. 248",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["synovial fluid", "lubrication", "joint anatomy"],
-    "keywords": ["articular capsule", "lubricant", "motion"],
+    "tags": [
+      "synovial fluid",
+      "lubrication",
+      "joint anatomy"
+    ],
+    "keywords": [
+      "articular capsule",
+      "lubricant",
+      "motion"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "These joints, like the shoulder and hip, allow flexion, extension, abduction, adduction, circumduction, and rotation due to their rounded head fitting into a socket.",
     "clinical_application": "Massage therapists must assess movement range in ball-and-socket joints to identify restrictions or impingement syndromes.",
     "source_reference": "Gray’s Anatomy for Students, 4th ed., p. 172",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ball and socket", "ROM", "diarthrotic"],
-    "keywords": ["shoulder", "hip", "multi-axial movement"],
+    "tags": [
+      "ball and socket",
+      "ROM",
+      "diarthrotic"
+    ],
+    "keywords": [
+      "shoulder",
+      "hip",
+      "multi-axial movement"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "Hyaline cartilage covers the surfaces of bones in synovial joints, reducing friction, absorbing shock, and allowing smooth movement.",
     "clinical_application": "Degeneration of articular cartilage, as in osteoarthritis, limits mobility — massage can support by reducing surrounding muscle tension.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 162",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -130,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["articular cartilage", "joint health", "friction"],
-    "keywords": ["hyaline cartilage", "shock absorption", "smooth movement"],
+    "tags": [
+      "articular cartilage",
+      "joint health",
+      "friction"
+    ],
+    "keywords": [
+      "hyaline cartilage",
+      "shock absorption",
+      "smooth movement"
+    ],
     "synonyms": null
   },
   {
     "id": "diarthrotic_joints_006",
     "correctAnswer": "Synovial capsule",
     "question": "Which structure encloses a diarthrotic joint and helps maintain joint integrity?",
-    "options": ["Articular cartilage", "Synovial capsule", "Ligament", "Bursa"],
+    "options": [
+      "Articular cartilage",
+      "Synovial capsule",
+      "Ligament",
+      "Bursa"
+    ],
     "topics": ["anatomy", "joints", "diarthrotic_joints"],
     "short_explanation": "The synovial capsule encloses the joint cavity.",
     "long_explanation": "The fibrous outer layer of the synovial capsule stabilizes the joint and retains synovial fluid, supporting structural integrity and motion control.",
     "clinical_application": "Manual therapy techniques can target capsular stiffness to improve joint range of motion in clients with restricted diarthroses.",
     "source_reference": "Anatomy & Physiology, Saladin 9th ed., p. 246",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -153,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint capsule", "synovial membrane", "structure"],
-    "keywords": ["capsule", "enclosure", "joint protection"],
+    "tags": [
+      "joint capsule",
+      "synovial membrane",
+      "structure"
+    ],
+    "keywords": [
+      "capsule",
+      "enclosure",
+      "joint protection"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +224,6 @@
     "long_explanation": "Hinge joints like the elbow allow movement in one plane (flexion/extension) and are supported by ligaments and a synovial capsule.",
     "clinical_application": "Massage can address tension in surrounding muscles such as biceps and triceps that affect elbow range of motion.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 121",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -181,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hinge joint", "elbow", "uniaxial movement"],
-    "keywords": ["flexion", "extension", "uniaxial"],
+    "tags": [
+      "hinge joint",
+      "elbow",
+      "uniaxial movement"
+    ],
+    "keywords": [
+      "flexion",
+      "extension",
+      "uniaxial"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +259,6 @@
     "long_explanation": "This synovial pivot joint between the atlas (C1) and axis (C2) enables rotational movement, such as shaking the head 'no.'",
     "clinical_application": "Neck pain or stiffness may involve tension in muscles surrounding this joint — targeted neck massage may restore rotational freedom.",
     "source_reference": "Gray’s Anatomy for Students, 4th ed., p. 228",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -209,21 +267,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pivot joint", "atlantoaxial", "rotation"],
-    "keywords": ["C1", "C2", "cervical spine"],
+    "tags": [
+      "pivot joint",
+      "atlantoaxial",
+      "rotation"
+    ],
+    "keywords": [
+      "C1",
+      "C2",
+      "cervical spine"
+    ],
     "synonyms": null
   },
   {
     "id": "diarthrotic_joints_009",
     "correctAnswer": "Meniscus",
     "question": "Which structure within a diarthrotic joint helps cushion and stabilize the joint by increasing surface contact?",
-    "options": ["Ligament", "Tendon", "Meniscus", "Synovial membrane"],
+    "options": [
+      "Ligament",
+      "Tendon",
+      "Meniscus",
+      "Synovial membrane"
+    ],
     "topics": ["anatomy", "joints", "diarthrotic_joints"],
     "short_explanation": "Menisci improve fit and absorb shock.",
     "long_explanation": "Found in joints like the knee, menisci are fibrocartilaginous discs that reduce pressure and distribute weight across the joint surface.",
     "clinical_application": "Injury to the meniscus may present as knee locking or pain — massage is supportive for surrounding tissue healing but not direct meniscal repair.",
     "source_reference": "Clinical Anatomy, Moore & Dalley, 8th ed., p. 543",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -232,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["meniscus", "knee joint", "shock absorption"],
-    "keywords": ["fibrocartilage", "stabilization", "load distribution"],
+    "tags": [
+      "meniscus",
+      "knee joint",
+      "shock absorption"
+    ],
+    "keywords": [
+      "fibrocartilage",
+      "stabilization",
+      "load distribution"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +329,6 @@
     "long_explanation": "All diarthrotic joints are synovial, featuring a cavity filled with synovial fluid, a capsule, and supporting structures like ligaments and cartilage.",
     "clinical_application": "Many musculoskeletal dysfunctions treated by massage occur around synovial joints like the shoulder, knee, and spine.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson, 15th ed., p. 280",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/diarthrotic_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -260,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["synovial joint", "diarthrosis", "freely movable"],
-    "keywords": ["joint classification", "articulation", "movement"],
+    "tags": [
+      "synovial joint",
+      "diarthrosis",
+      "freely movable"
+    ],
+    "keywords": [
+      "joint classification",
+      "articulation",
+      "movement"
+    ],
     "synonyms": null
   }
 ]

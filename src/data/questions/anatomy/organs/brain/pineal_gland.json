@@ -3,13 +3,17 @@
     "id": "pineal_gland_001",
     "correctAnswer": "Melatonin",
     "question": "What is the primary hormone secreted by the pineal gland?",
-    "options": ["Serotonin", "Dopamine", "Melatonin", "Cortisol"],
+    "options": [
+      "Serotonin",
+      "Dopamine",
+      "Melatonin",
+      "Cortisol"
+    ],
     "topics": ["anatomy", "organs", "brain", "pineal_gland"],
     "short_explanation": "Melatonin is secreted by the pineal gland to regulate sleep cycles.",
     "long_explanation": "The pineal gland secretes melatonin, especially in response to darkness, helping to regulate the circadian rhythm and sleep-wake cycles.",
     "clinical_application": "Massage therapy that promotes relaxation in the evening may naturally support melatonin production and restful sleep.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "easy",
@@ -18,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["melatonin", "pineal gland", "sleep"],
-    "keywords": ["circadian rhythm", "hormones", "pineal"],
+    "tags": [
+      "melatonin",
+      "pineal gland",
+      "sleep"
+    ],
+    "keywords": [
+      "circadian rhythm",
+      "hormones",
+      "pineal"
+    ],
     "synonyms": null
   },
   {
@@ -37,7 +49,6 @@
     "long_explanation": "This small endocrine gland sits in the epithalamus near the center of the brain, nestled between the two hemispheres in a groove near the thalamus.",
     "clinical_application": "Craniosacral massage techniques targeting the cranial base may help relieve tension in areas surrounding the pineal gland.",
     "source_reference": "Netter: Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "medium",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["location", "pineal", "brain"],
-    "keywords": ["epithalamus", "brain gland", "neuroendocrine"],
+    "tags": [
+      "location",
+      "pineal",
+      "brain"
+    ],
+    "keywords": [
+      "epithalamus",
+      "brain gland",
+      "neuroendocrine"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "The pineal gland receives input about light via the retina and suprachiasmatic nucleus, adjusting melatonin levels accordingly to maintain circadian rhythm.",
     "clinical_application": "Encouraging clients to reduce screen time before bed can enhance natural melatonin production and improve sleep quality.",
     "source_reference": "Guyton & Hall: Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "medium",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["light", "circadian", "pineal gland"],
-    "keywords": ["melatonin", "photoreception", "SCN"],
+    "tags": [
+      "light",
+      "circadian",
+      "pineal gland"
+    ],
+    "keywords": [
+      "melatonin",
+      "photoreception",
+      "SCN"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "Pineal gland calcification is common in aging individuals and may decrease melatonin output, affecting sleep regulation.",
     "clinical_application": "Elderly clients experiencing insomnia may benefit from massage therapies that support parasympathetic activation and sleep hygiene.",
     "source_reference": "Robbins & Cotran: Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "medium",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pineal gland", "calcification", "aging"],
-    "keywords": ["melatonin", "sleep loss", "senescence"],
+    "tags": [
+      "pineal gland",
+      "calcification",
+      "aging"
+    ],
+    "keywords": [
+      "melatonin",
+      "sleep loss",
+      "senescence"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "The SCN in the hypothalamus acts as the body’s biological clock. It receives light input and signals the pineal gland to regulate melatonin secretion.",
     "clinical_application": "Understanding this pathway helps massage therapists time relaxation sessions to support healthy circadian function.",
     "source_reference": "Bear, Connors & Paradiso: Neuroscience Exploring the Brain",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "hard",
@@ -130,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SCN", "pineal", "circadian rhythm"],
-    "keywords": ["suprachiasmatic nucleus", "hypothalamus", "melatonin"],
+    "tags": [
+      "SCN",
+      "pineal",
+      "circadian rhythm"
+    ],
+    "keywords": [
+      "suprachiasmatic nucleus",
+      "hypothalamus",
+      "melatonin"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +189,6 @@
     "long_explanation": "Melatonin influences circadian rhythms by promoting sleepiness in response to darkness, aligning body functions with environmental cycles.",
     "clinical_application": "Massage therapy sessions timed in the evening may reinforce this natural hormonal rhythm for clients with insomnia.",
     "source_reference": "Silverthorn: Human Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "easy",
@@ -158,21 +197,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["melatonin", "sleep", "pineal"],
-    "keywords": ["circadian", "hormonal rhythm", "light response"],
+    "tags": [
+      "melatonin",
+      "sleep",
+      "pineal"
+    ],
+    "keywords": [
+      "circadian",
+      "hormonal rhythm",
+      "light response"
+    ],
     "synonyms": null
   },
   {
     "id": "pineal_gland_007",
     "correctAnswer": "Serotonin",
     "question": "Which neurotransmitter is a precursor to melatonin in the pineal gland?",
-    "options": ["GABA", "Serotonin", "Epinephrine", "Histamine"],
+    "options": [
+      "GABA",
+      "Serotonin",
+      "Epinephrine",
+      "Histamine"
+    ],
     "topics": ["anatomy", "organs", "brain", "pineal_gland"],
     "short_explanation": "Melatonin is synthesized from serotonin in the pineal gland.",
     "long_explanation": "The pineal gland converts serotonin into melatonin using enzymes activated during darkness, highlighting the biochemical link between mood and sleep.",
     "clinical_application": "Massage may influence serotonin levels, indirectly supporting melatonin synthesis and improved sleep cycles.",
     "source_reference": "Tortora: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "medium",
@@ -181,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["serotonin", "melatonin", "pineal gland"],
-    "keywords": ["precursor", "neuroendocrine", "mood and sleep"],
+    "tags": [
+      "serotonin",
+      "melatonin",
+      "pineal gland"
+    ],
+    "keywords": [
+      "precursor",
+      "neuroendocrine",
+      "mood and sleep"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +259,6 @@
     "long_explanation": "Because the pineal gland is near the cerebral aqueduct, tumors may block cerebrospinal fluid (CSF) flow, leading to increased intracranial pressure and hydrocephalus.",
     "clinical_application": "Massage is contraindicated in clients with signs of increased intracranial pressure such as severe headache or vision loss.",
     "source_reference": "Robbins: Basic Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "hard",
@@ -209,21 +267,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tumor", "CSF", "hydrocephalus"],
-    "keywords": ["intracranial pressure", "pineal mass", "neurological signs"],
+    "tags": [
+      "tumor",
+      "CSF",
+      "hydrocephalus"
+    ],
+    "keywords": [
+      "intracranial pressure",
+      "pineal mass",
+      "neurological signs"
+    ],
     "synonyms": null
   },
   {
     "id": "pineal_gland_009",
     "correctAnswer": "Cone-shaped",
     "question": "Which of the following best describes the pineal gland’s shape?",
-    "options": ["Bean-shaped", "Cone-shaped", "Oval-shaped", "Rod-shaped"],
+    "options": [
+      "Bean-shaped",
+      "Cone-shaped",
+      "Oval-shaped",
+      "Rod-shaped"
+    ],
     "topics": ["anatomy", "organs", "brain", "pineal_gland"],
     "short_explanation": "The pineal gland is cone-shaped and small.",
     "long_explanation": "Its name comes from its pinecone-like shape, measuring about 5–8 mm in length, and it plays a crucial role in hormonal regulation.",
     "clinical_application": "Awareness of this structure’s shape and position helps therapists studying cranial anatomy and subtle energy work.",
     "source_reference": "Netter: Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "easy",
@@ -232,21 +302,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shape", "pineal", "anatomy"],
-    "keywords": ["cone-shaped", "pinecone", "endocrine anatomy"],
+    "tags": [
+      "shape",
+      "pineal",
+      "anatomy"
+    ],
+    "keywords": [
+      "cone-shaped",
+      "pinecone",
+      "endocrine anatomy"
+    ],
     "synonyms": null
   },
   {
     "id": "pineal_gland_010",
     "correctAnswer": "Diencephalon",
     "question": "The pineal gland is part of which broader brain region?",
-    "options": ["Diencephalon", "Cerebellum", "Brainstem", "Medulla"],
+    "options": [
+      "Diencephalon",
+      "Cerebellum",
+      "Brainstem",
+      "Medulla"
+    ],
     "topics": ["anatomy", "organs", "brain", "pineal_gland"],
     "short_explanation": "The pineal gland belongs to the diencephalon region.",
     "long_explanation": "The diencephalon contains major endocrine and sensory structures including the pineal gland, thalamus, hypothalamus, and epithalamus.",
     "clinical_application": "Massage therapists studying neuroendocrine function may explore how the diencephalon integrates emotion, hormone balance, and circadian regulation.",
     "source_reference": "Bear: Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pineal_gland.json",
     "question_type": null,
     "difficulty": "medium",
@@ -255,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diencephalon", "pineal", "brain anatomy"],
-    "keywords": ["epithalamus", "central brain", "neuroendocrine"],
+    "tags": [
+      "diencephalon",
+      "pineal",
+      "brain anatomy"
+    ],
+    "keywords": [
+      "epithalamus",
+      "central brain",
+      "neuroendocrine"
+    ],
     "synonyms": null
   }
 ]

@@ -9,17 +9,11 @@
       "Serratus anterior",
       "Rhomboid major"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "The long thoracic nerve innervates the serratus anterior.",
     "long_explanation": "The long thoracic nerve arises from roots C5–C7 and travels superficially to innervate the serratus anterior, critical for scapular protraction and stabilization.",
     "clinical_application": "Clients with scapular winging may have long thoracic nerve injury, often due to trauma or repetitive overhead activity.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -28,26 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["long thoracic", "serratus anterior", "C5–C7"],
-    "keywords": ["nerve injury", "scapular winging", "upper limb nerve"],
+    "tags": [
+      "long thoracic",
+      "serratus anterior",
+      "C5–C7"
+    ],
+    "keywords": [
+      "nerve injury",
+      "scapular winging",
+      "upper limb nerve"
+    ],
     "synonyms": null
   },
   {
     "id": "long_thoacic_nerve_innervations_002",
     "correctAnswer": "C5–C7",
     "question": "Which spinal roots give rise to the long thoracic nerve?",
-    "options": ["C3–C5", "C5–C7", "C6–C8", "T1–T3"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
+    "options": [
+      "C3–C5",
+      "C5–C7",
+      "C6–C8",
+      "T1–T3"
     ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "The long thoracic nerve is formed from C5, C6, and C7.",
     "long_explanation": "Emerging from the roots of the brachial plexus, the long thoracic nerve originates from C5–C7 and travels along the thoracic wall to the serratus anterior.",
     "clinical_application": "Knowledge of nerve roots aids in identifying proximal injuries from brachial plexus compression or surgery.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -56,26 +57,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["C5", "C6", "C7", "long thoracic nerve"],
-    "keywords": ["brachial plexus", "nerve roots", "serratus"],
+    "tags": [
+      "C5",
+      "C6",
+      "C7",
+      "long thoracic nerve"
+    ],
+    "keywords": [
+      "brachial plexus",
+      "nerve roots",
+      "serratus"
+    ],
     "synonyms": null
   },
   {
     "id": "long_thoacic_nerve_innervations_003",
     "correctAnswer": "Winging scapula",
     "question": "Damage to the long thoracic nerve may result in which clinical sign?",
-    "options": ["Shoulder droop", "Winging scapula", "Claw hand", "Wrist drop"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
+    "options": [
+      "Shoulder droop",
+      "Winging scapula",
+      "Claw hand",
+      "Wrist drop"
     ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "Winging scapula is the hallmark of long thoracic nerve injury.",
     "long_explanation": "The serratus anterior anchors the scapula to the rib cage. When denervated, the medial scapula protrudes posteriorly when pushing forward—scapular winging.",
     "clinical_application": "Therapists assessing posture or push-up mechanics may spot subtle scapular instability linked to long thoracic dysfunction.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -84,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scapular winging", "long thoracic", "nerve injury"],
-    "keywords": ["serratus paralysis", "posterior scapula", "shoulder blade"],
+    "tags": [
+      "scapular winging",
+      "long thoracic",
+      "nerve injury"
+    ],
+    "keywords": [
+      "serratus paralysis",
+      "posterior scapula",
+      "shoulder blade"
+    ],
     "synonyms": null
   },
   {
@@ -98,17 +115,11 @@
       "Scapular protraction",
       "Wrist extension"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "Scapular protraction is impaired due to serratus anterior paralysis.",
     "long_explanation": "The serratus anterior is crucial for forward movement and upward rotation of the scapula, such as in reaching or punching.",
     "clinical_application": "Boxers or swimmers may lose power and fluidity in arm movements if scapular control is disrupted.",
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -117,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scapular motion", "nerve paralysis", "shoulder control"],
-    "keywords": ["serratus function", "nerve testing", "scapular glide"],
+    "tags": [
+      "scapular motion",
+      "nerve paralysis",
+      "shoulder control"
+    ],
+    "keywords": [
+      "serratus function",
+      "nerve testing",
+      "scapular glide"
+    ],
     "synonyms": null
   },
   {
@@ -131,17 +150,11 @@
       "It travels on the superficial surface of the serratus anterior",
       "It is located in the spinal canal"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "The long thoracic nerve is superficially located and exposed during movement or trauma.",
     "long_explanation": "Its superficial path along the lateral thorax makes it susceptible to injury from blows, surgery, or repetitive overhead use.",
     "clinical_application": "Massage therapists should avoid deep pressure over the lateral ribs in post-op or athletic clients.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -150,26 +163,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve trauma", "exposed nerves", "shoulder blade"],
-    "keywords": ["nerve exposure", "surgical risk", "superficial nerve"],
+    "tags": [
+      "nerve trauma",
+      "exposed nerves",
+      "shoulder blade"
+    ],
+    "keywords": [
+      "nerve exposure",
+      "surgical risk",
+      "superficial nerve"
+    ],
     "synonyms": null
   },
   {
     "id": "long_thoacic_nerve_innervations_006",
     "correctAnswer": "Reaching overhead",
     "question": "Which activity would be most affected by long thoracic nerve palsy?",
-    "options": ["Gripping", "Typing", "Reaching overhead", "Running"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
+    "options": [
+      "Gripping",
+      "Typing",
+      "Reaching overhead",
+      "Running"
     ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "Overhead reaching requires scapular rotation, which depends on serratus anterior.",
     "long_explanation": "Tasks like reaching high shelves require coordinated scapular movement. Loss of serratus anterior causes fatigue, pain, or dysfunction in these motions.",
     "clinical_application": "Massage clients with neck/shoulder complaints should be screened for serratus dysfunction when reporting difficulty lifting arms.",
     "source_reference": "Kendall’s Muscles: Testing and Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -178,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["overhead activity", "nerve injury", "long thoracic"],
-    "keywords": ["serratus weakness", "reaching pain", "shoulder motion"],
+    "tags": [
+      "overhead activity",
+      "nerve injury",
+      "long thoracic"
+    ],
+    "keywords": [
+      "serratus weakness",
+      "reaching pain",
+      "shoulder motion"
+    ],
     "synonyms": null
   },
   {
@@ -192,17 +220,11 @@
       "Tinel’s sign",
       "Phalen’s test"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "The wall push-up test highlights scapular winging.",
     "long_explanation": "Instruct the client to push against a wall with both arms extended. A protruding medial border of the scapula indicates serratus weakness.",
     "clinical_application": "Useful in sports rehab and massage settings to track scapular stabilization progress or screen dysfunction.",
     "source_reference": "Orthopedic Physical Exam, Hoppenfeld",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -211,26 +233,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["wall push test", "scapular test", "nerve screening"],
-    "keywords": ["scapular winging test", "serratus anterior test"],
+    "tags": [
+      "wall push test",
+      "scapular test",
+      "nerve screening"
+    ],
+    "keywords": [
+      "scapular winging test",
+      "serratus anterior test"
+    ],
     "synonyms": null
   },
   {
     "id": "long_thoacic_nerve_innervations_008",
     "correctAnswer": "Lateral",
     "question": "The long thoracic nerve innervates its target muscle on which side?",
-    "options": ["Posterior", "Anterior", "Medial", "Lateral"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
+    "options": [
+      "Posterior",
+      "Anterior",
+      "Medial",
+      "Lateral"
     ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "It runs along the lateral chest wall.",
     "long_explanation": "The long thoracic nerve travels on the lateral aspect of the rib cage to innervate the serratus anterior from its external surface.",
     "clinical_application": "Therapists should visualize this lateral route when palpating ribs or working on thoracic fascia.",
     "source_reference": "Grant’s Dissector",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -239,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve path", "serratus innervation", "lateral thorax"],
-    "keywords": ["thoracic nerve", "rib cage nerve", "serratus anterior"],
+    "tags": [
+      "nerve path",
+      "serratus innervation",
+      "lateral thorax"
+    ],
+    "keywords": [
+      "thoracic nerve",
+      "rib cage nerve",
+      "serratus anterior"
+    ],
     "synonyms": null
   },
   {
@@ -253,17 +289,11 @@
       "Surgical trauma",
       "Overhead sports"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "Neck fractures usually don’t affect the long thoracic nerve.",
     "long_explanation": "Compression (e.g., backpack straps), surgery (e.g., lymph node dissection), and repetitive strain are common causes of long thoracic nerve palsy.",
     "clinical_application": "Massage practitioners should take client history of post-op breast, shoulder, or axillary surgery into account.",
     "source_reference": "Physical Medicine and Rehab Secrets",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -272,26 +302,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve palsy", "nerve compression", "overhead trauma"],
-    "keywords": ["surgical nerve injury", "axillary nerve", "shoulder nerve"],
+    "tags": [
+      "nerve palsy",
+      "nerve compression",
+      "overhead trauma"
+    ],
+    "keywords": [
+      "surgical nerve injury",
+      "axillary nerve",
+      "shoulder nerve"
+    ],
     "synonyms": null
   },
   {
     "id": "long_thoacic_nerve_innervations_010",
     "correctAnswer": "Roots",
     "question": "Which brachial plexus region gives rise to the long thoracic nerve?",
-    "options": ["Roots", "Trunks", "Divisions", "Cords"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "back_innervations",
-      "long_thoacic_nerve_innervations"
+    "options": [
+      "Roots",
+      "Trunks",
+      "Divisions",
+      "Cords"
     ],
+    "topics": ["anatomy", "innervations", "back_innervations", "long_thoacic_nerve_innervations"],
     "short_explanation": "It branches directly from the roots (C5–C7).",
     "long_explanation": "Unlike many other nerves of the upper limb, the long thoracic nerve arises directly from the roots of the brachial plexus before they combine into trunks.",
     "clinical_application": "This root-level origin makes it vulnerable during traction injuries or cervical plexus strain.",
     "source_reference": "Atlas of Anatomy, Thieme",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/back_innervations/long_thoacic_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -300,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve origin", "brachial plexus", "roots"],
-    "keywords": ["nerve branching", "C5–C7", "serratus motor"],
+    "tags": [
+      "nerve origin",
+      "brachial plexus",
+      "roots"
+    ],
+    "keywords": [
+      "nerve branching",
+      "C5–C7",
+      "serratus motor"
+    ],
     "synonyms": null
   }
 ]

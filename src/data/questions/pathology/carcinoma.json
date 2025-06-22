@@ -14,7 +14,6 @@
     "long_explanation": "Carcinomas are malignant tumors that develop from epithelial tissues, which cover body surfaces and line internal organs. They are the most common form of cancer.",
     "clinical_application": "Massage therapists should understand carcinoma origins to appropriately assess risk and apply modifications, especially for clients undergoing cancer treatment.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,21 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cancer", "epithelial", "malignancy"],
-    "keywords": ["carcinoma", "epithelial", "tumor"],
-    "synonyms": ["epithelial cancer", "malignant tumor"]
+    "tags": [
+      "cancer",
+      "epithelial",
+      "malignancy"
+    ],
+    "keywords": [
+      "carcinoma",
+      "epithelial",
+      "tumor"
+    ],
+    "synonyms": [
+      "epithelial cancer",
+      "malignant tumor"
+    ]
   },
   {
     "id": "carcinoma_002",
     "correctAnswer": "Basal cell carcinoma",
     "question": "Which of the following is a type of carcinoma commonly found on the skin?",
-    "options": ["Basal cell carcinoma", "Lymphoma", "Sarcoma", "Glioblastoma"],
+    "options": [
+      "Basal cell carcinoma",
+      "Lymphoma",
+      "Sarcoma",
+      "Glioblastoma"
+    ],
     "topics": ["pathology", "carcinoma"],
     "short_explanation": "Basal cell carcinoma originates from basal epithelial cells.",
     "long_explanation": "Basal cell carcinoma is a slow-growing skin cancer arising from the basal layer of the epidermis, commonly due to UV exposure.",
     "clinical_application": "Massage therapists should avoid direct contact over active skin lesions and refer clients with suspicious moles or sores to medical professionals.",
     "source_reference": "Milady’s Theory and Practice of Therapeutic Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["skin", "cancer", "UV"],
-    "keywords": ["basal cell", "skin cancer", "epithelial"],
-    "synonyms": ["basal cell", "skin cancer"]
+    "tags": [
+      "skin",
+      "cancer",
+      "UV"
+    ],
+    "keywords": [
+      "basal cell",
+      "skin cancer",
+      "epithelial"
+    ],
+    "synonyms": [
+      "basal cell",
+      "skin cancer"
+    ]
   },
   {
     "id": "carcinoma_003",
@@ -65,7 +90,6 @@
     "long_explanation": "Carcinomas arise from epithelial tissues, whereas sarcomas arise from connective tissue like bone, fat, or muscle.",
     "clinical_application": "Differentiating tumor origin helps therapists understand metastasis patterns and treatment needs.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["connective tissue", "sarcoma", "cancer types"],
-    "keywords": ["sarcoma", "carcinoma", "tissue origin"],
-    "synonyms": ["sarcoma tissue", "non-epithelial"]
+    "tags": [
+      "connective tissue",
+      "sarcoma",
+      "cancer types"
+    ],
+    "keywords": [
+      "sarcoma",
+      "carcinoma",
+      "tissue origin"
+    ],
+    "synonyms": [
+      "sarcoma tissue",
+      "non-epithelial"
+    ]
   },
   {
     "id": "carcinoma_004",
@@ -93,7 +128,6 @@
     "long_explanation": "Metastatic carcinoma indicates that cancer has spread to other tissues or organs. Massage may require physician approval and be adapted to avoid stimulating circulation excessively in affected areas.",
     "clinical_application": "Therapists must confirm with clients and care teams whether massage is safe and appropriate based on metastasis location and severity.",
     "source_reference": "Massage Therapy: Principles and Practice, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,13 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["metastasis", "cancer care", "modification"],
+    "tags": [
+      "metastasis",
+      "cancer care",
+      "modification"
+    ],
     "keywords": [
       "metastatic cancer",
       "treatment planning",
       "massage modification"
     ],
-    "synonyms": ["cancer spread", "cancer metastasis"]
+    "synonyms": [
+      "cancer spread",
+      "cancer metastasis"
+    ]
   },
   {
     "id": "carcinoma_005",
@@ -125,7 +166,6 @@
     "long_explanation": "Squamous cell carcinoma can present as scaly, rough, or crusty patches that don’t heal, often in sun-exposed areas.",
     "clinical_application": "Massage therapists should be trained to notice suspicious skin changes and refer clients to a dermatologist when appropriate.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -134,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["skin cancer", "screening", "early signs"],
-    "keywords": ["squamous cell", "skin lesions", "non-healing"],
-    "synonyms": ["scaly lesion", "non-healing patch"]
+    "tags": [
+      "skin cancer",
+      "screening",
+      "early signs"
+    ],
+    "keywords": [
+      "squamous cell",
+      "skin lesions",
+      "non-healing"
+    ],
+    "synonyms": [
+      "scaly lesion",
+      "non-healing patch"
+    ]
   },
   {
     "id": "carcinoma_006",
@@ -153,7 +204,6 @@
     "long_explanation": "Carcinomas, such as lung and oral cancers, have strong associations with smoking and other carcinogens. These substances can mutate epithelial cells and lead to malignancy.",
     "clinical_application": "Understanding risk factors helps massage therapists provide informed lifestyle support and understand cancer patterns in clients.",
     "source_reference": "Pathology A to Z, Werner",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -162,9 +212,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["smoking", "risk factor", "cancer prevention"],
-    "keywords": ["smoking", "carcinoma", "risk"],
-    "synonyms": ["tobacco use", "nicotine exposure"]
+    "tags": [
+      "smoking",
+      "risk factor",
+      "cancer prevention"
+    ],
+    "keywords": [
+      "smoking",
+      "carcinoma",
+      "risk"
+    ],
+    "synonyms": [
+      "tobacco use",
+      "nicotine exposure"
+    ]
   },
   {
     "id": "carcinoma_007",
@@ -181,7 +242,6 @@
     "long_explanation": "Carcinoma in situ refers to cancerous epithelial cells that have not invaded surrounding tissues. Once they breach the basement membrane, the cancer is considered invasive.",
     "clinical_application": "Early detection of carcinoma in situ often leads to a better prognosis and less invasive treatment options.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -190,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["in situ", "non-invasive", "early stage"],
-    "keywords": ["basement membrane", "cancer stage", "early detection"],
-    "synonyms": ["pre-invasive", "early-stage carcinoma"]
+    "tags": [
+      "in situ",
+      "non-invasive",
+      "early stage"
+    ],
+    "keywords": [
+      "basement membrane",
+      "cancer stage",
+      "early detection"
+    ],
+    "synonyms": [
+      "pre-invasive",
+      "early-stage carcinoma"
+    ]
   },
   {
     "id": "carcinoma_008",
@@ -209,7 +280,6 @@
     "long_explanation": "Human papillomavirus (HPV), particularly types 16 and 18, is strongly associated with cervical carcinoma. Vaccination and screening can significantly reduce risk.",
     "clinical_application": "Awareness of HPV's role supports client education, especially for reproductive health and informed consent in abdominal or pelvic massage.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -218,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["HPV", "cervical cancer", "infection"],
-    "keywords": ["human papillomavirus", "cervical carcinoma", "risk factor"],
-    "synonyms": ["human papillomavirus", "HPV"]
+    "tags": [
+      "HPV",
+      "cervical cancer",
+      "infection"
+    ],
+    "keywords": [
+      "human papillomavirus",
+      "cervical carcinoma",
+      "risk factor"
+    ],
+    "synonyms": [
+      "human papillomavirus",
+      "HPV"
+    ]
   },
   {
     "id": "carcinoma_009",
@@ -237,7 +318,6 @@
     "long_explanation": "Massage can support well-being during chemotherapy, but therapists must avoid compromised tissues, use gentle pressure, and consult with the client’s care team for safety.",
     "clinical_application": "Always obtain physician clearance before massaging clients receiving cancer treatments.",
     "source_reference": "Massage Therapy Principles and Practice, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -246,9 +326,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chemotherapy", "contraindication", "modification"],
-    "keywords": ["massage and cancer", "chemotherapy", "safety"],
-    "synonyms": ["chemo precautions", "cancer massage"]
+    "tags": [
+      "chemotherapy",
+      "contraindication",
+      "modification"
+    ],
+    "keywords": [
+      "massage and cancer",
+      "chemotherapy",
+      "safety"
+    ],
+    "synonyms": [
+      "chemo precautions",
+      "cancer massage"
+    ]
   },
   {
     "id": "carcinoma_010",
@@ -265,7 +356,6 @@
     "long_explanation": "Chronic exposure to ultraviolet light can damage DNA in skin cells, leading to both basal and squamous cell carcinomas, especially in light-skinned individuals.",
     "clinical_application": "Clients with frequent sun exposure or outdoor professions should be observed for abnormal lesions during massage sessions.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/carcinoma.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -274,8 +364,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sun exposure", "skin cancer", "UV rays"],
-    "keywords": ["ultraviolet", "basal cell", "squamous cell", "sunlight"],
-    "synonyms": ["UV-related carcinoma", "sun-induced cancer"]
+    "tags": [
+      "sun exposure",
+      "skin cancer",
+      "UV rays"
+    ],
+    "keywords": [
+      "ultraviolet",
+      "basal cell",
+      "squamous cell",
+      "sunlight"
+    ],
+    "synonyms": [
+      "UV-related carcinoma",
+      "sun-induced cancer"
+    ]
   }
 ]

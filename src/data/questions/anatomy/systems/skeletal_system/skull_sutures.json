@@ -14,7 +14,6 @@
     "long_explanation": "Running from the frontal bone to the occipital bone, the sagittal suture lies along the top midline of the skull and is a key landmark in cranial anatomy.",
     "clinical_application": "Knowledge of this suture helps craniosacral practitioners and massage therapists orient their hands during cranial holds.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["suture", "skull", "parietal bones"],
-    "keywords": ["sagittal suture", "parietal bones", "cranial midline"],
+    "tags": [
+      "suture",
+      "skull",
+      "parietal bones"
+    ],
+    "keywords": [
+      "sagittal suture",
+      "parietal bones",
+      "cranial midline"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "Located across the top of the head from ear to ear, the coronal suture marks the anterior boundary of the parietal bones and separates them from the frontal bone.",
     "clinical_application": "This suture is relevant in cranial massage and for understanding skull expansion during infancy.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,8 +57,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cranial bones", "frontal bone", "suture"],
-    "keywords": ["coronal suture", "frontal-parietal junction"],
+    "tags": [
+      "cranial bones",
+      "frontal bone",
+      "suture"
+    ],
+    "keywords": [
+      "coronal suture",
+      "frontal-parietal junction"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +83,6 @@
     "long_explanation": "Shaped like the Greek letter lambda (Λ), this suture lies along the posterior skull and can be a site of tension or overlapping in infants.",
     "clinical_application": "Massage near the occipital ridge should respect this suture line, especially in pediatric or craniosacral therapy.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,21 +91,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["skull", "occipital", "suture"],
-    "keywords": ["lambdoid suture", "occipital-parietal"],
+    "tags": [
+      "skull",
+      "occipital",
+      "suture"
+    ],
+    "keywords": [
+      "lambdoid suture",
+      "occipital-parietal"
+    ],
     "synonyms": null
   },
   {
     "id": "skull_sutures_004",
     "correctAnswer": "Sagittal",
     "question": "Which skull suture typically closes last in normal development?",
-    "options": ["Sagittal", "Coronal", "Lambdoid", "Metopic"],
+    "options": [
+      "Sagittal",
+      "Coronal",
+      "Lambdoid",
+      "Metopic"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "skull_sutures"],
     "short_explanation": "The sagittal suture is usually the last to fuse in cranial development.",
     "long_explanation": "Sutures allow for skull growth in infancy. The sagittal suture often remains open into adulthood, enabling flexibility for the expanding brain.",
     "clinical_application": "Delayed or early closure of this suture may be associated with craniosynostosis and is relevant in pediatric assessment.",
     "source_reference": "Developmental Anatomy Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,8 +125,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cranial growth", "infant skull", "suture fusion"],
-    "keywords": ["sagittal fusion", "skull development"],
+    "tags": [
+      "cranial growth",
+      "infant skull",
+      "suture fusion"
+    ],
+    "keywords": [
+      "sagittal fusion",
+      "skull development"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +151,6 @@
     "long_explanation": "This anatomical landmark is a key site for measuring head circumference and is the location of the anterior fontanelle in infants.",
     "clinical_application": "In craniosacral therapy, bregma is an important tactile reference for assessing cranial balance.",
     "source_reference": "Craniosacral Therapy Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -130,8 +159,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bregma", "cranial landmarks", "suture anatomy"],
-    "keywords": ["sagittal-coronal junction", "anterior fontanelle"],
+    "tags": [
+      "bregma",
+      "cranial landmarks",
+      "suture anatomy"
+    ],
+    "keywords": [
+      "sagittal-coronal junction",
+      "anterior fontanelle"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +185,6 @@
     "long_explanation": "In sagittal craniosynostosis, the skull cannot expand sideways, so it grows anteroposteriorly, producing a boat-shaped head. It may require surgical correction.",
     "clinical_application": "Early detection is key, and therapists should refer out if abnormal head shapes or developmental delays are observed in infants.",
     "source_reference": "Pediatric Neurology Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -158,8 +193,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["skull pathology", "sutures", "craniosynostosis"],
-    "keywords": ["scaphocephaly", "sagittal fusion", "cranial deformity"],
+    "tags": [
+      "skull pathology",
+      "sutures",
+      "craniosynostosis"
+    ],
+    "keywords": [
+      "scaphocephaly",
+      "sagittal fusion",
+      "cranial deformity"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +220,6 @@
     "long_explanation": "This lateral suture lies above the ear and is often palpated in cranial and TMJ work.",
     "clinical_application": "Knowledge of the squamous suture helps identify potential fascial restrictions affecting the temporal region.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -186,8 +228,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["temporal bone", "parietal", "suture"],
-    "keywords": ["squamous suture", "temporal-parietal"],
+    "tags": [
+      "temporal bone",
+      "parietal",
+      "suture"
+    ],
+    "keywords": [
+      "squamous suture",
+      "temporal-parietal"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +254,6 @@
     "long_explanation": "The anterior fontanelle is diamond-shaped and usually closes between 12–18 months of age. It allows brain growth and flexibility during birth.",
     "clinical_application": "Caution is needed when massaging or touching an infant’s head where the anterior fontanelle has not yet ossified.",
     "source_reference": "Human Embryology Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -214,8 +262,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fontanelle", "infant skull", "suture fusion"],
-    "keywords": ["anterior fontanelle", "bregma", "infant anatomy"],
+    "tags": [
+      "fontanelle",
+      "infant skull",
+      "suture fusion"
+    ],
+    "keywords": [
+      "anterior fontanelle",
+      "bregma",
+      "infant anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +289,6 @@
     "long_explanation": "Though ossified, sutures may exhibit subtle movement due to cranial rhythm. Craniosacral therapy aims to optimize this motion to relieve tension patterns and improve flow of cerebrospinal fluid.",
     "clinical_application": "Therapists practicing cranial techniques use the sutures as landmarks and leverage points for subtle, indirect touch.",
     "source_reference": "Craniosacral Therapy Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -242,8 +297,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["craniosacral", "sutures", "micromovement"],
-    "keywords": ["cranial motion", "craniosacral rhythm", "suture function"],
+    "tags": [
+      "craniosacral",
+      "sutures",
+      "micromovement"
+    ],
+    "keywords": [
+      "cranial motion",
+      "craniosacral rhythm",
+      "suture function"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +324,6 @@
     "long_explanation": "Sutures are synarthroses—immovable joints where bones are tightly joined by collagen fibers. These provide protection and structural integrity to the cranium.",
     "clinical_application": "Understanding suture type is important when explaining cranial mobility, head trauma, or congenital conditions to clients.",
     "source_reference": "Joint Structure and Function, Levangie & Norkin",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/skull_sutures.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -270,8 +332,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint type", "skull joint", "fibrous"],
-    "keywords": ["fibrous joint", "cranial joint", "synarthrosis"],
+    "tags": [
+      "joint type",
+      "skull joint",
+      "fibrous"
+    ],
+    "keywords": [
+      "fibrous joint",
+      "cranial joint",
+      "synarthrosis"
+    ],
     "synonyms": null
   }
 ]

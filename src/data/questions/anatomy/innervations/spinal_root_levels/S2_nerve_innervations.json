@@ -9,17 +9,11 @@
       "Gastrocnemius",
       "Peroneus longus"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "The gastrocnemius is innervated by the tibial nerve, with contributions from spinal roots including S2.",
     "long_explanation": "The tibial nerve, a branch of the sciatic nerve, provides motor innervation to the gastrocnemius muscle. This nerve receives fibers from spinal roots L4 to S3, with S2 playing a key role in plantar flexion and lower limb propulsion.",
     "clinical_application": "Massage targeting the calf may aid clients with tension, cramps, or gait dysfunction linked to S2 nerve dysfunction or nerve root irritation.",
     "source_reference": "Trail Guide to the Body, 5th Ed",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -53,17 +47,11 @@
       "Plantar flexion",
       "Hip abduction"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "S2 supports plantar flexion via tibial nerve branches.",
     "long_explanation": "S2 spinal root contributes to tibial nerve innervation, enabling plantar flexion at the ankle joint by activating muscles like the gastrocnemius and soleus.",
     "clinical_application": "Weakness in plantar flexion or gait instability may indicate S2 nerve root compression or dysfunction.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -72,26 +60,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2_root", "lower_limb", "plantar_flexion"],
-    "keywords": ["S2", "nerve root", "plantar flexion", "tibial nerve", "gait"],
+    "tags": [
+      "S2_root",
+      "lower_limb",
+      "plantar_flexion"
+    ],
+    "keywords": [
+      "S2",
+      "nerve root",
+      "plantar flexion",
+      "tibial nerve",
+      "gait"
+    ],
     "synonyms": null
   },
   {
     "id": "s2_nerve_innervations_003",
     "correctAnswer": "S2",
     "question": "Which nerve root contributes to the posterior femoral cutaneous nerve?",
-    "options": ["L5", "S1", "S2", "T12"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
+    "options": [
+      "L5",
+      "S1",
+      "S2",
+      "T12"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "The posterior femoral cutaneous nerve is formed from S1–S3 roots, including S2.",
     "long_explanation": "The posterior femoral cutaneous nerve, formed by roots S1-S3, provides sensory innervation to the posterior thigh and lower gluteal region. S2 fibers are a significant contributor.",
     "clinical_application": "Sensory loss or pain in the posterior thigh may reflect S2 root compression or entrapment neuropathy.",
     "source_reference": "Clinically Oriented Anatomy, Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -100,7 +97,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "posterior_femoral_cutaneous", "sensory"],
+    "tags": [
+      "S2",
+      "posterior_femoral_cutaneous",
+      "sensory"
+    ],
     "keywords": [
       "S2",
       "posterior femoral cutaneous nerve",
@@ -119,17 +120,11 @@
       "Pubococcygeus",
       "All of the above"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "S2 innervates several pelvic floor muscles, including the levator ani group.",
     "long_explanation": "The pelvic floor muscles, especially the levator ani (pubococcygeus, iliococcygeus), receive innervation from sacral nerves including S2. This is crucial for pelvic organ support and continence.",
     "clinical_application": "Pelvic floor dysfunctions like incontinence or prolapse may involve S2 nerve injury.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -138,8 +133,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2_root", "pelvic_floor", "levator_ani", "neuromuscular"],
-    "keywords": ["S2", "levator ani", "pelvic floor", "nerve", "continence"],
+    "tags": [
+      "S2_root",
+      "pelvic_floor",
+      "levator_ani",
+      "neuromuscular"
+    ],
+    "keywords": [
+      "S2",
+      "levator ani",
+      "pelvic floor",
+      "nerve",
+      "continence"
+    ],
     "synonyms": null
   },
   {
@@ -152,17 +158,11 @@
       "Superficial fibular nerve",
       "Sural nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "S2 is part of the tibial nerve pathway that innervates foot intrinsics.",
     "long_explanation": "The tibial nerve receives contributions from L4–S3. It innervates many intrinsic foot muscles via its medial and lateral plantar branches, with S2 involved in motor coordination.",
     "clinical_application": "Foot muscle imbalance or toe deformities may result from impaired S2-tibial signaling.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -171,7 +171,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "tibial_nerve", "foot_innervation"],
+    "tags": [
+      "S2",
+      "tibial_nerve",
+      "foot_innervation"
+    ],
     "keywords": [
       "S2",
       "foot",
@@ -191,17 +195,11 @@
       "Liver detoxification",
       "Pupillary dilation"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "S2 contributes to parasympathetic control of the bladder.",
     "long_explanation": "Spinal roots S2–S4 give rise to pelvic splanchnic nerves, which provide parasympathetic innervation to pelvic organs including the bladder and lower bowel.",
     "clinical_application": "Loss of bladder control in spinal cord injuries often correlates with damage to S2–S4 roots.",
     "source_reference": "Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -210,7 +208,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "autonomic", "bladder", "parasympathetic"],
+    "tags": [
+      "S2",
+      "autonomic",
+      "bladder",
+      "parasympathetic"
+    ],
     "keywords": [
       "S2",
       "parasympathetic",
@@ -229,17 +232,11 @@
       "Posterior thigh pain",
       "Neck stiffness"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "S2 radiculopathy can cause posterior thigh and calf pain.",
     "long_explanation": "Irritation of the S2 nerve root may result in sensory deficits or shooting pain down the posterior thigh and into the calf, often confused with sciatic nerve pathology.",
     "clinical_application": "Massage can help reduce tension in muscles compressing nerve roots and ease pain from radiculopathy.",
     "source_reference": "Muscolino – Kinesiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -248,7 +245,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "radiculopathy", "thigh_pain"],
+    "tags": [
+      "S2",
+      "radiculopathy",
+      "thigh_pain"
+    ],
     "keywords": [
       "S2",
       "nerve root",
@@ -268,17 +269,11 @@
       "Achilles reflex",
       "Biceps reflex"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "S2 contributes to the Achilles (ankle jerk) reflex.",
     "long_explanation": "The Achilles tendon reflex is mediated by the tibial nerve, which draws from S1 and S2 roots. S2 dysfunction may reduce or eliminate this reflex.",
     "clinical_application": "Testing the Achilles reflex helps screen for lower spinal nerve compression.",
     "source_reference": "Clinical Neurology Made Ridiculously Simple",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "basic",
@@ -287,8 +282,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "Achilles_reflex", "neuro_exam"],
-    "keywords": ["S2", "Achilles", "ankle jerk", "reflex", "tibial nerve"],
+    "tags": [
+      "S2",
+      "Achilles_reflex",
+      "neuro_exam"
+    ],
+    "keywords": [
+      "S2",
+      "Achilles",
+      "ankle jerk",
+      "reflex",
+      "tibial nerve"
+    ],
     "synonyms": null
   },
   {
@@ -301,17 +306,11 @@
       "Common fibular nerve",
       "Posterior femoral cutaneous nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "The common fibular nerve arises mostly from L4–S1, not S2.",
     "long_explanation": "The common fibular (peroneal) nerve is formed by fibers from L4–S1, whereas nerves like the pudendal and posterior femoral cutaneous receive S2 contributions.",
     "clinical_application": "Knowledge of spinal contributions helps differentially diagnose nerve injuries.",
     "source_reference": "Netter’s Atlas of Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -320,7 +319,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "nerve_pathways", "differential_diagnosis"],
+    "tags": [
+      "S2",
+      "nerve_pathways",
+      "differential_diagnosis"
+    ],
     "keywords": [
       "S2",
       "pudendal",
@@ -340,17 +343,11 @@
       "Rectus femoris",
       "Iliopsoas"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "s2_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "s2_nerve_innervations"],
     "short_explanation": "The external anal sphincter receives somatic innervation from S2–S4.",
     "long_explanation": "The pudendal nerve, originating from S2–S4, innervates the external anal sphincter, playing a critical role in voluntary bowel control.",
     "clinical_application": "S2 damage may contribute to incontinence or loss of anal tone, critical for evaluating spinal cord injuries.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/s2_nerve_innervations.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -359,7 +356,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "S3", "anal_sphincter", "pudendal"],
+    "tags": [
+      "S2",
+      "S3",
+      "anal_sphincter",
+      "pudendal"
+    ],
     "keywords": [
       "S2",
       "S3",

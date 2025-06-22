@@ -14,7 +14,6 @@
     "long_explanation": "The third layer includes flexor hallucis brevis, adductor hallucis, and flexor digiti minimi brevis. These muscles lie deeper than the first two layers and assist in toe movement and stabilization.",
     "clinical_application": "Manual therapy techniques can improve big toe mechanics by targeting flexor hallucis brevis during medial arch massage.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["plantar layer 3", "foot muscles", "hallucis"],
-    "keywords": ["third layer", "foot", "flexor hallucis brevis"],
+    "tags": [
+      "plantar layer 3",
+      "foot muscles",
+      "hallucis"
+    ],
+    "keywords": [
+      "third layer",
+      "foot",
+      "flexor hallucis brevis"
+    ],
     "synonyms": null
   },
   {
     "id": "plantar_layer_3_002",
     "correctAnswer": "2",
     "question": "The adductor hallucis has how many heads?",
-    "options": ["2", "1", "3", "4"],
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
     "topics": ["anatomy", "muscle_groups", "foot", "plantar_layer_3"],
     "short_explanation": "It has 2 heads: oblique and transverse.",
     "long_explanation": "The adductor hallucis has an oblique head (originating from the bases of metatarsals 2–4) and a transverse head (originating from the MTP ligaments). It adducts the big toe and supports the transverse arch.",
     "clinical_application": "Working on adductor hallucis can help address metatarsal pain or forefoot imbalance in barefoot runners.",
     "source_reference": "Muscles: Testing and Function – Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adductor hallucis", "muscle heads", "foot anatomy"],
-    "keywords": ["oblique head", "transverse head", "toe adduction"],
+    "tags": [
+      "adductor hallucis",
+      "muscle heads",
+      "foot anatomy"
+    ],
+    "keywords": [
+      "oblique head",
+      "transverse head",
+      "toe adduction"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "Flexor digiti minimi brevis originates from the fifth metatarsal and inserts on the proximal phalanx of the fifth digit. It flexes the little toe and supports the lateral longitudinal arch.",
     "clinical_application": "Massage to relieve lateral foot strain often targets this muscle to restore toe flexion and arch control.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["toe flexion", "lateral foot", "plantar muscles"],
-    "keywords": ["flexor digiti minimi", "fifth toe", "lateral arch"],
+    "tags": [
+      "toe flexion",
+      "lateral foot",
+      "plantar muscles"
+    ],
+    "keywords": [
+      "flexor digiti minimi",
+      "fifth toe",
+      "lateral arch"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "Flexor hallucis brevis provides powerful flexion at the first metatarsophalangeal joint, helping with toe-off in gait.",
     "clinical_application": "Toe flexor strengthening, including FHB activation, can improve balance and propulsion in barefoot gait training.",
     "source_reference": "Kinesiology: The Skeletal System and Muscle Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["big toe", "toe flexion", "FHB"],
-    "keywords": ["flexor hallucis brevis", "MTP joint", "foot function"],
+    "tags": [
+      "big toe",
+      "toe flexion",
+      "FHB"
+    ],
+    "keywords": [
+      "flexor hallucis brevis",
+      "MTP joint",
+      "foot function"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "The superficial branch of the lateral plantar nerve supplies the flexor digiti minimi brevis, enabling flexion of the fifth toe.",
     "clinical_application": "Compression along the lateral plantar nerve may present as reduced toe flexion strength or lateral foot discomfort.",
     "source_reference": "Clinical Neuroanatomy Made Ridiculously Simple",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -130,7 +162,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve supply", "plantar foot", "toe muscles"],
+    "tags": [
+      "nerve supply",
+      "plantar foot",
+      "toe muscles"
+    ],
     "keywords": [
       "flexor digiti minimi brevis",
       "plantar nerve",
@@ -153,7 +189,6 @@
     "long_explanation": "Adductor hallucis has two heads; the transverse head spans across the metatarsal heads and helps support the transverse arch during gait and stance.",
     "clinical_application": "Massage targeting this muscle may help alleviate discomfort from forefoot collapse or improper shoe support.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -162,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["transverse arch", "adductor hallucis", "foot mechanics"],
-    "keywords": ["transverse head", "arch support", "forefoot stability"],
+    "tags": [
+      "transverse arch",
+      "adductor hallucis",
+      "foot mechanics"
+    ],
+    "keywords": [
+      "transverse head",
+      "arch support",
+      "forefoot stability"
+    ],
     "synonyms": null
   },
   {
@@ -181,7 +224,6 @@
     "long_explanation": "The layers of the plantar foot proceed from superficial to deep: first, second, third, and fourth. The third layer is nestled between the long flexor tendons of layer two and the interossei of layer four.",
     "clinical_application": "Accurate identification of layers helps massage therapists perform myofascial release with better anatomical precision.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "easy",
@@ -190,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle layering", "plantar foot", "anatomy"],
-    "keywords": ["third layer", "second layer", "anatomical orientation"],
+    "tags": [
+      "muscle layering",
+      "plantar foot",
+      "anatomy"
+    ],
+    "keywords": [
+      "third layer",
+      "second layer",
+      "anatomical orientation"
+    ],
     "synonyms": null
   },
   {
@@ -209,7 +259,6 @@
     "long_explanation": "Flexor digiti minimi brevis plays a role in toe flexion and stabilization of the lateral longitudinal arch, crucial for side-to-side balance and propulsion.",
     "clinical_application": "Manual techniques can support this muscle when working with clients who supinate or have reduced fifth toe mobility.",
     "source_reference": "Kinesiology: The Skeletal System and Muscle Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -218,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["5th toe", "toe flexion", "metatarsal origin"],
-    "keywords": ["flexor digiti minimi", "toe mobility", "foot strength"],
+    "tags": [
+      "5th toe",
+      "toe flexion",
+      "metatarsal origin"
+    ],
+    "keywords": [
+      "flexor digiti minimi",
+      "toe mobility",
+      "foot strength"
+    ],
     "synonyms": null
   },
   {
@@ -237,7 +294,6 @@
     "long_explanation": "FHB has two heads that insert on the medial and lateral sides of the base of the proximal phalanx of the hallux, often with embedded sesamoid bones.",
     "clinical_application": "Strengthening and massaging this muscle can help clients with hallux rigidus or reduced toe-off power.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -246,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hallux", "medial arch", "FHB"],
-    "keywords": ["toe flexors", "two heads", "sesamoids"],
+    "tags": [
+      "hallux",
+      "medial arch",
+      "FHB"
+    ],
+    "keywords": [
+      "toe flexors",
+      "two heads",
+      "sesamoids"
+    ],
     "synonyms": null
   },
   {
@@ -265,7 +329,6 @@
     "long_explanation": "Chronic tension in adductor hallucis, especially with poor footwear or overpronation, may encourage hallux valgus deformity, where the big toe deviates medially.",
     "clinical_application": "Myofascial release of the transverse head and mobilization of the first MTP joint may relieve early bunion symptoms.",
     "source_reference": "Orthopedic Massage – Lowe",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/foot/plantar_layer_3.json",
     "question_type": null,
     "difficulty": "hard",
@@ -274,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bunion", "toe deviation", "hallux valgus"],
-    "keywords": ["adductor hallucis", "foot dysfunction", "massage therapy"],
+    "tags": [
+      "bunion",
+      "toe deviation",
+      "hallux valgus"
+    ],
+    "keywords": [
+      "adductor hallucis",
+      "foot dysfunction",
+      "massage therapy"
+    ],
     "synonyms": null
   }
 ]

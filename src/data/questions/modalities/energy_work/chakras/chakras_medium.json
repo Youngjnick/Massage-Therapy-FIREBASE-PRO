@@ -14,7 +14,6 @@
     "long_explanation": "The fifth chakra, or throat chakra (Vishuddha), is located at the throat and governs communication, truth, and self-expression. It is symbolized by the color blue.",
     "clinical_application": "Therapists may use visualization, vocal toning, or neck/throat massage to support energy flow in the throat chakra.",
     "source_reference": "The Subtle Body by Cyndi Dale",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,21 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chakras", "communication", "energy"],
-    "keywords": ["throat chakra", "vishuddha", "communication"],
-    "synonyms": ["vishuddha", "blue chakra"]
+    "tags": [
+      "chakras",
+      "communication",
+      "energy"
+    ],
+    "keywords": [
+      "throat chakra",
+      "vishuddha",
+      "communication"
+    ],
+    "synonyms": [
+      "vishuddha",
+      "blue chakra"
+    ]
   },
   {
     "id": "chakras_medium_002",
     "correctAnswer": "Green",
     "question": "What is the primary color associated with the heart chakra?",
-    "options": ["Green", "Red", "Orange", "Blue"],
+    "options": [
+      "Green",
+      "Red",
+      "Orange",
+      "Blue"
+    ],
     "topics": ["modalities", "energy_work", "chakras", "chakras_medium"],
     "short_explanation": "Green is linked to the heart chakra.",
     "long_explanation": "The fourth chakra, Anahata (heart chakra), is associated with the color green. It governs love, compassion, and emotional balance.",
     "clinical_application": "Massage therapists may use heart-opening techniques and breathwork to support this chakra's flow.",
     "source_reference": "Eastern Body, Western Mind by Anodea Judith",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chakras", "color associations", "heart"],
-    "keywords": ["heart chakra", "anahata", "green"],
-    "synonyms": ["anahata", "heart center"]
+    "tags": [
+      "chakras",
+      "color associations",
+      "heart"
+    ],
+    "keywords": [
+      "heart chakra",
+      "anahata",
+      "green"
+    ],
+    "synonyms": [
+      "anahata",
+      "heart center"
+    ]
   },
   {
     "id": "chakras_medium_003",
@@ -65,7 +90,6 @@
     "long_explanation": "The root chakra, or Muladhara, represents stability, security, and basic survival needs. It is located at the base of the spine and is associated with the color red.",
     "clinical_application": "Grounding techniques and foot massage can help balance the root chakra.",
     "source_reference": "The Subtle Body by Cyndi Dale",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["root chakra", "energy center", "spine"],
-    "keywords": ["muladhara", "stability", "base of spine"],
-    "synonyms": ["muladhara", "red chakra"]
+    "tags": [
+      "root chakra",
+      "energy center",
+      "spine"
+    ],
+    "keywords": [
+      "muladhara",
+      "stability",
+      "base of spine"
+    ],
+    "synonyms": [
+      "muladhara",
+      "red chakra"
+    ]
   },
   {
     "id": "chakras_medium_004",
@@ -93,7 +128,6 @@
     "long_explanation": "The sixth chakra, or Ajna (third eye chakra), is associated with insight, imagination, and perception. It is located on the forehead between the eyes and symbolized by indigo.",
     "clinical_application": "Gentle cranial holds or brow massage may be used to enhance clarity and focus in this area.",
     "source_reference": "Eastern Body, Western Mind by Anodea Judith",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["third eye", "intuition", "perception"],
-    "keywords": ["ajna", "forehead", "indigo"],
-    "synonyms": ["ajna", "sixth chakra"]
+    "tags": [
+      "third eye",
+      "intuition",
+      "perception"
+    ],
+    "keywords": [
+      "ajna",
+      "forehead",
+      "indigo"
+    ],
+    "synonyms": [
+      "ajna",
+      "sixth chakra"
+    ]
   },
   {
     "id": "chakras_medium_005",
@@ -121,7 +166,6 @@
     "long_explanation": "The seventh chakra, or Sahasrara (crown chakra), is associated with divine wisdom and enlightenment. It is symbolized by violet or white and located at the crown of the head.",
     "clinical_application": "Still-point holds at the cranium or energy work above the head can be used to support this chakra.",
     "source_reference": "The Subtle Body by Cyndi Dale",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -130,21 +174,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["crown chakra", "consciousness", "spiritual"],
-    "keywords": ["sahasrara", "seventh chakra", "divine connection"],
-    "synonyms": ["sahasrara", "violet chakra"]
+    "tags": [
+      "crown chakra",
+      "consciousness",
+      "spiritual"
+    ],
+    "keywords": [
+      "sahasrara",
+      "seventh chakra",
+      "divine connection"
+    ],
+    "synonyms": [
+      "sahasrara",
+      "violet chakra"
+    ]
   },
   {
     "id": "chakras_medium_006",
     "correctAnswer": "Joy",
     "question": "What emotion is commonly associated with a balanced sacral chakra?",
-    "options": ["Joy", "Fear", "Grief", "Shame"],
+    "options": [
+      "Joy",
+      "Fear",
+      "Grief",
+      "Shame"
+    ],
     "topics": ["modalities", "energy_work", "chakras", "chakras_medium"],
     "short_explanation": "Joy and creativity arise from a balanced sacral chakra.",
     "long_explanation": "The sacral chakra (Svadhisthana) governs pleasure, emotional flow, and creativity. A balanced sacral chakra often presents as joyful, open, and sensually expressive behavior.",
     "clinical_application": "Massage around the hips and pelvis, along with hydrotherapy, may help restore balance in this region.",
     "source_reference": "Eastern Body, Western Mind by Anodea Judith",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -153,9 +212,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["chakras", "emotions", "sacral"],
-    "keywords": ["svadhisthana", "joy", "creativity"],
-    "synonyms": ["emotional expression", "creative energy"]
+    "tags": [
+      "chakras",
+      "emotions",
+      "sacral"
+    ],
+    "keywords": [
+      "svadhisthana",
+      "joy",
+      "creativity"
+    ],
+    "synonyms": [
+      "emotional expression",
+      "creative energy"
+    ]
   },
   {
     "id": "chakras_medium_007",
@@ -172,7 +242,6 @@
     "long_explanation": "The third chakra, known as Manipura or solar plexus chakra, is located above the navel. It governs willpower, confidence, and decision-making. Its associated color is yellow.",
     "clinical_application": "Massage therapists may use abdominal techniques or breathwork to support energy balance in this area.",
     "source_reference": "The Subtle Body by Cyndi Dale",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -181,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["personal power", "solar plexus", "will"],
-    "keywords": ["manipura", "confidence", "self-esteem"],
-    "synonyms": ["manipura", "yellow chakra"]
+    "tags": [
+      "personal power",
+      "solar plexus",
+      "will"
+    ],
+    "keywords": [
+      "manipura",
+      "confidence",
+      "self-esteem"
+    ],
+    "synonyms": [
+      "manipura",
+      "yellow chakra"
+    ]
   },
   {
     "id": "chakras_medium_008",
@@ -200,7 +280,6 @@
     "long_explanation": "Practices like Reiki, crystal therapy, sound healing, and guided meditation are often used to balance chakra energy centers. These techniques help clear blockages and restore flow.",
     "clinical_application": "Massage therapists may incorporate Reiki or use energy intention while working over chakra zones.",
     "source_reference": "Hands of Light by Barbara Brennan",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -209,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["energy healing", "reiki", "balance"],
-    "keywords": ["energy work", "chakra balance", "blockages"],
-    "synonyms": ["energy balancing", "healing touch"]
+    "tags": [
+      "energy healing",
+      "reiki",
+      "balance"
+    ],
+    "keywords": [
+      "energy work",
+      "chakra balance",
+      "blockages"
+    ],
+    "synonyms": [
+      "energy balancing",
+      "healing touch"
+    ]
   },
   {
     "id": "chakras_medium_009",
@@ -228,7 +318,6 @@
     "long_explanation": "The heart chakra governs love and connection. Blockages may cause emotional coldness, isolation, or lack of empathy. Physical symptoms may include tension in the chest or shoulders.",
     "clinical_application": "Therapists may use gentle upper body massage and grounding to encourage openness and connection.",
     "source_reference": "Eastern Body, Western Mind by Anodea Judith",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,21 +326,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["emotions", "blockages", "chakra deficiency"],
-    "keywords": ["heart chakra", "empathy", "emotional coldness"],
-    "synonyms": ["withdrawal", "closed heart"]
+    "tags": [
+      "emotions",
+      "blockages",
+      "chakra deficiency"
+    ],
+    "keywords": [
+      "heart chakra",
+      "empathy",
+      "emotional coldness"
+    ],
+    "synonyms": [
+      "withdrawal",
+      "closed heart"
+    ]
   },
   {
     "id": "chakras_medium_010",
     "correctAnswer": "Water",
     "question": "The sacral chakra is primarily associated with which element?",
-    "options": ["Water", "Air", "Fire", "Earth"],
+    "options": [
+      "Water",
+      "Air",
+      "Fire",
+      "Earth"
+    ],
     "topics": ["modalities", "energy_work", "chakras", "chakras_medium"],
     "short_explanation": "The sacral chakra corresponds with the water element.",
     "long_explanation": "The sacral chakra (Svadhisthana) is symbolically connected to water. This element reflects fluidity, emotional expression, and sensuality, aligning with the chakra's functions.",
     "clinical_application": "Massage techniques promoting rhythmic flow may help regulate sacral chakra balance.",
     "source_reference": "The Subtle Body by Cyndi Dale",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/chakras/chakras_medium.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -260,8 +364,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["elements", "water", "sacral"],
-    "keywords": ["fluidity", "water element", "emotions"],
-    "synonyms": ["fluidity", "water chakra"]
+    "tags": [
+      "elements",
+      "water",
+      "sacral"
+    ],
+    "keywords": [
+      "fluidity",
+      "water element",
+      "emotions"
+    ],
+    "synonyms": [
+      "fluidity",
+      "water chakra"
+    ]
   }
 ]

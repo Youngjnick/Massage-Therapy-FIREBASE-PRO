@@ -14,7 +14,6 @@
     "long_explanation": "Hypomobility occurs when a joint lacks its normal range of motion, often due to capsular restriction, adhesions, or muscular tightness.",
     "clinical_application": "Clients with frozen shoulder exhibit hypomobility in the glenohumeral joint, often needing targeted mobility work.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["restricted motion", "joint stiffness", "ROM"],
-    "keywords": ["limited motion", "capsular restriction", "joint dysfunction"],
+    "tags": [
+      "restricted motion",
+      "joint stiffness",
+      "ROM"
+    ],
+    "keywords": [
+      "limited motion",
+      "capsular restriction",
+      "joint dysfunction"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "This condition involves inflammation and thickening of the joint capsule, resulting in pain and severely reduced movement.",
     "clinical_application": "Massage therapy may assist in reducing pain and promoting gradual return of mobility in clients with adhesive capsulitis.",
     "source_reference": "FSMTB Pathology Outline",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adhesive capsulitis", "frozen shoulder", "ROM restriction"],
-    "keywords": ["shoulder", "capsular adhesion", "limited mobility"],
+    "tags": [
+      "adhesive capsulitis",
+      "frozen shoulder",
+      "ROM restriction"
+    ],
+    "keywords": [
+      "shoulder",
+      "capsular adhesion",
+      "limited mobility"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "Prolonged postures or inactivity can cause joint capsules to adaptively shorten, contributing to hypomobility.",
     "clinical_application": "Massage may be combined with stretching and mobilization to target these postural restrictions.",
     "source_reference": "Musculoskeletal System Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["capsule", "posture", "joint restriction"],
-    "keywords": ["adaptive shortening", "capsular tightness", "immobility"],
+    "tags": [
+      "capsule",
+      "posture",
+      "joint restriction"
+    ],
+    "keywords": [
+      "adaptive shortening",
+      "capsular tightness",
+      "immobility"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "Mobilization techniques focus on improving arthrokinematics by gently guiding joints through their limited range to break adhesions.",
     "clinical_application": "A therapist might apply grade I–II mobilizations for a client with early-stage frozen shoulder.",
     "source_reference": "Massage Therapy Journal",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mobilization", "joint therapy", "restricted ROM"],
-    "keywords": ["movement therapy", "joint work", "manual therapy"],
+    "tags": [
+      "mobilization",
+      "joint therapy",
+      "restricted ROM"
+    ],
+    "keywords": [
+      "movement therapy",
+      "joint work",
+      "manual therapy"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +154,6 @@
     "long_explanation": "Immobility can lead to cartilage breakdown, joint space narrowing, and stiffness, which may accelerate degenerative processes such as osteoarthritis.",
     "clinical_application": "Massage therapy combined with movement therapy may delay progression of degenerative changes in immobile joints.",
     "source_reference": "Orthopedic Pathology Reference",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "hard",
@@ -135,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["degeneration", "joint stiffness", "immobility risk"],
-    "keywords": ["osteoarthritis", "limited use", "wear and tear"],
+    "tags": [
+      "degeneration",
+      "joint stiffness",
+      "immobility risk"
+    ],
+    "keywords": [
+      "osteoarthritis",
+      "limited use",
+      "wear and tear"
+    ],
     "synonyms": null
   },
   {
     "id": "hypomobility_006",
     "correctAnswer": "Hypertonicity",
     "question": "Which muscle state commonly accompanies hypomobile joints?",
-    "options": ["Hypertonicity", "Flaccidity", "Spasm", "Atrophy"],
+    "options": [
+      "Hypertonicity",
+      "Flaccidity",
+      "Spasm",
+      "Atrophy"
+    ],
     "topics": ["pathology", "hypomobility"],
     "short_explanation": "Hypertonic muscles can limit joint motion further.",
     "long_explanation": "Muscles surrounding hypomobile joints often become hypertonic in an attempt to stabilize restricted areas, compounding movement limitations.",
     "clinical_application": "Massage targeting hypertonic musculature can help facilitate improved mobility.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -158,21 +197,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hypertonic", "muscle tightness", "mobility"],
-    "keywords": ["tight muscles", "restricted ROM", "guarding"],
+    "tags": [
+      "hypertonic",
+      "muscle tightness",
+      "mobility"
+    ],
+    "keywords": [
+      "tight muscles",
+      "restricted ROM",
+      "guarding"
+    ],
     "synonyms": null
   },
   {
     "id": "hypomobility_007",
     "correctAnswer": "Older adults",
     "question": "Which age group is most prone to joint hypomobility?",
-    "options": ["Older adults", "Young athletes", "Infants", "Teenagers"],
+    "options": [
+      "Older adults",
+      "Young athletes",
+      "Infants",
+      "Teenagers"
+    ],
     "topics": ["pathology", "hypomobility"],
     "short_explanation": "Aging contributes to tissue stiffness and joint degeneration.",
     "long_explanation": "As people age, collagen stiffens and synovial fluid decreases, making joints more susceptible to hypomobility.",
     "clinical_application": "Massage therapists working with elderly clients often focus on improving or maintaining joint range of motion.",
     "source_reference": "Geriatric Massage Therapy Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "easy",
@@ -181,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aging", "joint health", "mobility"],
-    "keywords": ["elderly", "senior care", "arthritis"],
+    "tags": [
+      "aging",
+      "joint health",
+      "mobility"
+    ],
+    "keywords": [
+      "elderly",
+      "senior care",
+      "arthritis"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +259,6 @@
     "long_explanation": "Stretching within a safe range maintains elasticity in muscles and fascia while reducing capsular tightness, preventing further limitation.",
     "clinical_application": "Therapists can recommend specific stretches post-massage for clients with joint stiffness.",
     "source_reference": "Rehabilitation Protocols Handbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "easy",
@@ -209,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["stretching", "range of motion", "maintenance"],
-    "keywords": ["mobility routine", "active care", "client self-care"],
+    "tags": [
+      "stretching",
+      "range of motion",
+      "maintenance"
+    ],
+    "keywords": [
+      "mobility routine",
+      "active care",
+      "client self-care"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +294,6 @@
     "long_explanation": "Desk jobs often lead to thoracic kyphosis and restricted spinal movement, which impacts posture and shoulder mobility.",
     "clinical_application": "Massage focused on the thoracic erectors and scapular region can restore extension capacity.",
     "source_reference": "Posture Assessment Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -237,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thoracic", "desk posture", "spine"],
-    "keywords": ["slouching", "kyphosis", "restricted spine"],
+    "tags": [
+      "thoracic",
+      "desk posture",
+      "spine"
+    ],
+    "keywords": [
+      "slouching",
+      "kyphosis",
+      "restricted spine"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +329,6 @@
     "long_explanation": "By applying sustained, gentle pressure into the fascial system, therapists can release adhesions and improve tissue glide, enhancing joint motion.",
     "clinical_application": "Apply slow fascial unwinding on the hip capsule of a client with limited mobility post-surgery.",
     "source_reference": "Fascia: The Tensional Network",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/hypomobility.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -265,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "restrictions", "mobility"],
-    "keywords": ["manual therapy", "myofascial", "restriction"],
+    "tags": [
+      "fascia",
+      "restrictions",
+      "mobility"
+    ],
+    "keywords": [
+      "manual therapy",
+      "myofascial",
+      "restriction"
+    ],
     "synonyms": null
   }
 ]

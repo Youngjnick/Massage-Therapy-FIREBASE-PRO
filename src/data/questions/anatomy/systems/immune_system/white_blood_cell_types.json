@@ -3,13 +3,17 @@
     "id": "white_blood_cell_types_001",
     "correctAnswer": "Neutrophil",
     "question": "Which white blood cell type is most abundant in normal blood?",
-    "options": ["Lymphocyte", "Eosinophil", "Neutrophil", "Basophil"],
+    "options": [
+      "Lymphocyte",
+      "Eosinophil",
+      "Neutrophil",
+      "Basophil"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Neutrophils are the most abundant WBCs.",
     "long_explanation": "Neutrophils make up 50–70% of circulating leukocytes and are the first responders in bacterial infections. They perform phagocytosis and inflammation control.",
     "clinical_application": "Elevated neutrophils in a client may indicate acute bacterial infection — relevant during massage intake assessments.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -18,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["neutrophil", "WBC", "blood cells"],
-    "keywords": ["leukocyte", "infection", "neutrophilia"],
+    "tags": [
+      "neutrophil",
+      "WBC",
+      "blood cells"
+    ],
+    "keywords": [
+      "leukocyte",
+      "infection",
+      "neutrophilia"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_002",
     "correctAnswer": "B cells",
     "question": "Which WBC type is primarily responsible for antibody production?",
-    "options": ["T cells", "Monocytes", "B cells", "Basophils"],
+    "options": [
+      "T cells",
+      "Monocytes",
+      "B cells",
+      "Basophils"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "B cells produce antibodies.",
     "long_explanation": "B lymphocytes (B cells) differentiate into plasma cells that produce antibodies to neutralize pathogens. They are essential in adaptive immunity.",
     "clinical_application": "Massage therapists working with immunocompromised clients should understand B cell function during infection recovery.",
     "source_reference": "Immunology: Kuby",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "medium",
@@ -41,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["B cells", "antibodies", "immunity"],
-    "keywords": ["plasma cells", "adaptive immunity", "humoral response"],
+    "tags": [
+      "B cells",
+      "antibodies",
+      "immunity"
+    ],
+    "keywords": [
+      "plasma cells",
+      "adaptive immunity",
+      "humoral response"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_003",
     "correctAnswer": "Eosinophil",
     "question": "Which WBC is most active in fighting parasitic infections?",
-    "options": ["Neutrophil", "Eosinophil", "Lymphocyte", "Basophil"],
+    "options": [
+      "Neutrophil",
+      "Eosinophil",
+      "Lymphocyte",
+      "Basophil"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Eosinophils combat parasites.",
     "long_explanation": "Eosinophils are granulocytes that secrete enzymes to destroy parasitic invaders and are also involved in allergic reactions.",
     "clinical_application": "Chronic eosinophilia may relate to allergies or parasites — massage therapists should screen for these in health histories.",
     "source_reference": "Robbins Basic Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "medium",
@@ -64,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["eosinophils", "parasites", "WBC types"],
-    "keywords": ["granulocyte", "parasitic defense", "allergic response"],
+    "tags": [
+      "eosinophils",
+      "parasites",
+      "WBC types"
+    ],
+    "keywords": [
+      "granulocyte",
+      "parasitic defense",
+      "allergic response"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_004",
     "correctAnswer": "Monocyte",
     "question": "Which WBC type becomes a macrophage when it exits the bloodstream?",
-    "options": ["Neutrophil", "Monocyte", "Eosinophil", "T cell"],
+    "options": [
+      "Neutrophil",
+      "Monocyte",
+      "Eosinophil",
+      "T cell"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Monocytes mature into macrophages.",
     "long_explanation": "Monocytes circulate in blood and enter tissues to differentiate into macrophages, which phagocytose pathogens and dead cells.",
     "clinical_application": "Post-injury inflammation involves macrophage cleanup — massage may support healing during this phase.",
     "source_reference": "Medical Microbiology – Murray",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -87,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["monocyte", "macrophage", "phagocytosis"],
-    "keywords": ["inflammation", "clean-up cells", "immune defense"],
+    "tags": [
+      "monocyte",
+      "macrophage",
+      "phagocytosis"
+    ],
+    "keywords": [
+      "inflammation",
+      "clean-up cells",
+      "immune defense"
+    ],
     "synonyms": null
   },
   {
@@ -106,7 +154,6 @@
     "long_explanation": "Granulocytes are characterized by granules in their cytoplasm, which contain enzymes for fighting pathogens and mediating inflammation.",
     "clinical_application": "Granulocyte imbalances can affect recovery and inflammation in clients post-infection.",
     "source_reference": "Essential Immunology – Roitt",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "medium",
@@ -115,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["granulocytes", "neutrophils", "basophils"],
-    "keywords": ["granules", "inflammation", "blood defense"],
+    "tags": [
+      "granulocytes",
+      "neutrophils",
+      "basophils"
+    ],
+    "keywords": [
+      "granules",
+      "inflammation",
+      "blood defense"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_006",
     "correctAnswer": "Basophil",
     "question": "Which white blood cell releases histamine during allergic responses?",
-    "options": ["Eosinophil", "Neutrophil", "Basophil", "Monocyte"],
+    "options": [
+      "Eosinophil",
+      "Neutrophil",
+      "Basophil",
+      "Monocyte"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Basophils release histamine.",
     "long_explanation": "Basophils are involved in allergic and hypersensitivity reactions and release histamine and heparin during immune activation.",
     "clinical_application": "Understanding histamine release helps massage therapists modify techniques for clients with skin allergies or mast cell issues.",
     "source_reference": "Allergy and Clinical Immunology – Middleton",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "medium",
@@ -138,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["basophil", "histamine", "allergies"],
-    "keywords": ["hypersensitivity", "granule release", "immune reaction"],
+    "tags": [
+      "basophil",
+      "histamine",
+      "allergies"
+    ],
+    "keywords": [
+      "hypersensitivity",
+      "granule release",
+      "immune reaction"
+    ],
     "synonyms": null
   },
   {
@@ -157,7 +224,6 @@
     "long_explanation": "NK cells are lymphocytes that provide innate immune defense by detecting and destroying infected or malignant cells without prior sensitization.",
     "clinical_application": "Massage therapy supporting immune regulation may enhance parasympathetic balance, indirectly aiding NK function.",
     "source_reference": "Janeway’s Immunobiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "hard",
@@ -166,21 +232,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["NK cells", "cancer defense", "immune system"],
-    "keywords": ["innate lymphocytes", "apoptosis", "immune surveillance"],
+    "tags": [
+      "NK cells",
+      "cancer defense",
+      "immune system"
+    ],
+    "keywords": [
+      "innate lymphocytes",
+      "apoptosis",
+      "immune surveillance"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_008",
     "correctAnswer": "Lymphocytes",
     "question": "Which WBC is elevated during viral infections?",
-    "options": ["Eosinophils", "Neutrophils", "Lymphocytes", "Basophils"],
+    "options": [
+      "Eosinophils",
+      "Neutrophils",
+      "Lymphocytes",
+      "Basophils"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Lymphocytes fight viruses.",
     "long_explanation": "Lymphocytes, especially T cells, are central to the body's defense against viruses. High lymphocyte counts often indicate viral illness.",
     "clinical_application": "Massage intake notes may reflect recent viral illness; lymphocyte trends can guide clinical decision-making.",
     "source_reference": "Clinical Microbiology Made Ridiculously Simple",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "easy",
@@ -189,21 +267,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["viral infection", "lymphocyte", "WBC elevation"],
-    "keywords": ["viral response", "immune monitoring", "adaptive immunity"],
+    "tags": [
+      "viral infection",
+      "lymphocyte",
+      "WBC elevation"
+    ],
+    "keywords": [
+      "viral response",
+      "immune monitoring",
+      "adaptive immunity"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_009",
     "correctAnswer": "Basophils",
     "question": "Which WBC type is least abundant in healthy adults?",
-    "options": ["Monocytes", "Eosinophils", "Basophils", "Lymphocytes"],
+    "options": [
+      "Monocytes",
+      "Eosinophils",
+      "Basophils",
+      "Lymphocytes"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Basophils are rare, <1% of WBCs.",
     "long_explanation": "Basophils are involved in allergic reactions and inflammatory signaling but are least numerous under normal conditions.",
     "clinical_application": "Sudden basophilia may suggest chronic inflammation or leukemia, relevant for therapist referral if systemic symptoms present.",
     "source_reference": "Hematology: Basic Principles and Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "hard",
@@ -212,21 +302,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["basophils", "blood count", "WBC rarity"],
-    "keywords": ["granulocyte", "least common", "hematology"],
+    "tags": [
+      "basophils",
+      "blood count",
+      "WBC rarity"
+    ],
+    "keywords": [
+      "granulocyte",
+      "least common",
+      "hematology"
+    ],
     "synonyms": null
   },
   {
     "id": "white_blood_cell_types_010",
     "correctAnswer": "Macrophages",
     "question": "Which cells initiate the adaptive immune response by presenting antigens?",
-    "options": ["Neutrophils", "Macrophages", "Basophils", "Eosinophils"],
+    "options": [
+      "Neutrophils",
+      "Macrophages",
+      "Basophils",
+      "Eosinophils"
+    ],
     "topics": ["anatomy", "systems", "immune_system", "white_blood_cell_types"],
     "short_explanation": "Macrophages present antigens to lymphocytes.",
     "long_explanation": "Macrophages, derived from monocytes, phagocytose pathogens and present their antigens on MHC-II molecules to helper T cells, kickstarting the adaptive response.",
     "clinical_application": "Boosting immune awareness through wellness and recovery massage supports clients during immune challenges.",
     "source_reference": "Janeway’s Immunobiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/immune_system/white_blood_cell_types.json",
     "question_type": null,
     "difficulty": "hard",
@@ -235,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["macrophages", "antigen", "T cells"],
-    "keywords": ["APCs", "adaptive immunity", "MHC II"],
+    "tags": [
+      "macrophages",
+      "antigen",
+      "T cells"
+    ],
+    "keywords": [
+      "APCs",
+      "adaptive immunity",
+      "MHC II"
+    ],
     "synonyms": null
   }
 ]

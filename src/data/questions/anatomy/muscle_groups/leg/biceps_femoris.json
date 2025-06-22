@@ -14,7 +14,6 @@
     "long_explanation": "As one of the hamstring muscles, biceps femoris crosses both the hip and knee joints. It helps extend the hip and flex the knee, especially during walking or running.",
     "clinical_application": "Massage therapists should assess this muscle in clients with posterior thigh tightness or gait issues.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hip extension", "knee flexion", "biceps femoris"],
-    "keywords": ["hamstring", "posterior thigh", "joint actions"],
-    "synonyms": ["hamstring movement", "dual joint actions"]
+    "tags": [
+      "hip extension",
+      "knee flexion",
+      "biceps femoris"
+    ],
+    "keywords": [
+      "hamstring",
+      "posterior thigh",
+      "joint actions"
+    ],
+    "synonyms": [
+      "hamstring movement",
+      "dual joint actions"
+    ]
   },
   {
     "id": "biceps_femoris_002",
@@ -42,7 +52,6 @@
     "long_explanation": "The long head is innervated by the tibial portion and the short head by the common fibular portion of the sciatic nerve, making it unique among the hamstrings.",
     "clinical_application": "Knowing its dual innervation helps when assessing sciatic nerve entrapment patterns affecting the posterior thigh.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sciatic nerve", "innervation", "biceps femoris"],
-    "keywords": ["nerve supply", "hamstrings", "sciatic"],
-    "synonyms": ["nerve supply", "posterior thigh nerve"]
+    "tags": [
+      "sciatic nerve",
+      "innervation",
+      "biceps femoris"
+    ],
+    "keywords": [
+      "nerve supply",
+      "hamstrings",
+      "sciatic"
+    ],
+    "synonyms": [
+      "nerve supply",
+      "posterior thigh nerve"
+    ]
   },
   {
     "id": "biceps_femoris_003",
@@ -70,7 +90,6 @@
     "long_explanation": "The biceps femoris inserts onto the lateral side of the fibular head, which allows it to contribute to lateral rotation of the knee when the knee is flexed.",
     "clinical_application": "Palpation of the fibular head helps locate distal hamstring tension or injury sites.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,21 +98,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["insertion", "fibula", "biceps femoris"],
-    "keywords": ["fibular head", "lateral insertion", "distal hamstrings"],
-    "synonyms": ["fibular attachment", "biceps femoris insertion"]
+    "tags": [
+      "insertion",
+      "fibula",
+      "biceps femoris"
+    ],
+    "keywords": [
+      "fibular head",
+      "lateral insertion",
+      "distal hamstrings"
+    ],
+    "synonyms": [
+      "fibular attachment",
+      "biceps femoris insertion"
+    ]
   },
   {
     "id": "biceps_femoris_004",
     "correctAnswer": "Long head",
     "question": "Which head of the biceps femoris originates from the ischial tuberosity?",
-    "options": ["Long head", "Short head", "Both heads", "Neither head"],
+    "options": [
+      "Long head",
+      "Short head",
+      "Both heads",
+      "Neither head"
+    ],
     "topics": ["anatomy", "muscle_groups", "leg", "biceps_femoris"],
     "short_explanation": "The long head originates from the ischial tuberosity.",
     "long_explanation": "The biceps femoris has two heads: the long head originates on the ischial tuberosity, while the short head originates from the posterior femur. This dual origin allows the muscle to act on both the hip and knee joints.",
     "clinical_application": "Knowledge of origin points supports effective trigger point therapy and sports massage planning.",
     "source_reference": "Muscles: Testing and Function, Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["origin", "biceps femoris", "ischial tuberosity"],
-    "keywords": ["long head", "hamstring origin", "dual-head muscle"],
-    "synonyms": ["ischial origin", "hamstring proximal"]
+    "tags": [
+      "origin",
+      "biceps femoris",
+      "ischial tuberosity"
+    ],
+    "keywords": [
+      "long head",
+      "hamstring origin",
+      "dual-head muscle"
+    ],
+    "synonyms": [
+      "ischial origin",
+      "hamstring proximal"
+    ]
   },
   {
     "id": "biceps_femoris_005",
@@ -121,7 +166,6 @@
     "long_explanation": "Unlike the semitendinosus and semimembranosus, which medially rotate the knee, the biceps femoris contributes to lateral (external) rotation of the knee when the joint is flexed.",
     "clinical_application": "Massage therapists should consider this function when treating athletes with rotational knee strain.",
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -130,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee rotation", "biceps femoris", "hamstring function"],
-    "keywords": ["lateral rotation", "external rotation", "posterior thigh"],
-    "synonyms": ["external knee rotation", "rotational action"]
+    "tags": [
+      "knee rotation",
+      "biceps femoris",
+      "hamstring function"
+    ],
+    "keywords": [
+      "lateral rotation",
+      "external rotation",
+      "posterior thigh"
+    ],
+    "synonyms": [
+      "external knee rotation",
+      "rotational action"
+    ]
   },
   {
     "id": "biceps_femoris_006",
@@ -149,7 +204,6 @@
     "long_explanation": "The short head of the biceps femoris originates from the femur and only acts on the knee joint, performing flexion and lateral rotation. The long head, which crosses the hip, also assists in hip extension.",
     "clinical_application": "Isolated dysfunction of the short head may affect knee mechanics without involving hip movement.",
     "source_reference": "Muscles: Testing and Function, Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -158,21 +212,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["short head", "long head", "hamstring anatomy"],
-    "keywords": ["knee flexion", "hip extension", "muscle heads"],
-    "synonyms": ["short head", "long head difference"]
+    "tags": [
+      "short head",
+      "long head",
+      "hamstring anatomy"
+    ],
+    "keywords": [
+      "knee flexion",
+      "hip extension",
+      "muscle heads"
+    ],
+    "synonyms": [
+      "short head",
+      "long head difference"
+    ]
   },
   {
     "id": "biceps_femoris_007",
     "correctAnswer": "Sprinting",
     "question": "Which sport is most likely to cause biceps femoris strain due to explosive movement?",
-    "options": ["Sprinting", "Swimming", "Yoga", "Cycling at low speed"],
+    "options": [
+      "Sprinting",
+      "Swimming",
+      "Yoga",
+      "Cycling at low speed"
+    ],
     "topics": ["anatomy", "muscle_groups", "leg", "biceps_femoris"],
     "short_explanation": "Running and sprinting often lead to hamstring strain.",
     "long_explanation": "The biceps femoris is commonly strained in activities requiring sudden acceleration or deceleration, especially in sprinters or soccer players. It is particularly vulnerable during terminal swing phase of gait.",
     "clinical_application": "Massage therapists should evaluate biceps femoris strain in athletes with posterior thigh pain during or after sprints.",
     "source_reference": "Sports Massage: Comprehensive Care for Athletics",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -181,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hamstring injury", "sports massage", "strain"],
-    "keywords": ["strain", "sprinting", "explosive movement"],
-    "synonyms": ["hamstring strain", "sports injury"]
+    "tags": [
+      "hamstring injury",
+      "sports massage",
+      "strain"
+    ],
+    "keywords": [
+      "strain",
+      "sprinting",
+      "explosive movement"
+    ],
+    "synonyms": [
+      "hamstring strain",
+      "sports injury"
+    ]
   },
   {
     "id": "biceps_femoris_008",
@@ -200,7 +280,6 @@
     "long_explanation": "When the biceps femoris is weak, synergistic muscles like the gluteus maximus (hip extension) or gastrocnemius (knee flexion) may become overactive, leading to altered gait mechanics.",
     "clinical_application": "Massage therapists should assess compensatory tension patterns in clients with posterior chain imbalance.",
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -209,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["compensation", "muscle imbalance", "gait"],
-    "keywords": ["gluteus maximus", "gastrocnemius", "posterior chain"],
-    "synonyms": ["gait compensation", "muscle substitution"]
+    "tags": [
+      "compensation",
+      "muscle imbalance",
+      "gait"
+    ],
+    "keywords": [
+      "gluteus maximus",
+      "gastrocnemius",
+      "posterior chain"
+    ],
+    "synonyms": [
+      "gait compensation",
+      "muscle substitution"
+    ]
   },
   {
     "id": "biceps_femoris_009",
@@ -228,7 +318,6 @@
     "long_explanation": "The distal biceps femoris tendon is easiest to locate laterally at the back of the knee when the client is prone and the knee is flexed, as it inserts on the fibular head.",
     "clinical_application": "Palpation assists in locating strain, tightness, or myofascial trigger points before treatment.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,9 +326,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palpation", "knee", "hamstring tendon"],
-    "keywords": ["biceps femoris", "fibular head", "palpation technique"],
-    "synonyms": ["palpation site", "biceps femoris tendon"]
+    "tags": [
+      "palpation",
+      "knee",
+      "hamstring tendon"
+    ],
+    "keywords": [
+      "biceps femoris",
+      "fibular head",
+      "palpation technique"
+    ],
+    "synonyms": [
+      "palpation site",
+      "biceps femoris tendon"
+    ]
   },
   {
     "id": "biceps_femoris_010",
@@ -256,7 +356,6 @@
     "long_explanation": "Biceps femoris strain may present as sharp pain during resisted knee flexion, tenderness along the muscle belly, or bruising in acute cases. This is often seen in athletic injuries.",
     "clinical_application": "Massage therapy protocols should adjust pressure and techniques during acute healing phases of hamstring strain.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/biceps_femoris.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -265,8 +364,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["strain", "muscle injury", "posterior thigh"],
-    "keywords": ["resisted knee flexion", "strain symptom", "hamstring pain"],
-    "synonyms": ["hamstring strain", "muscle tear"]
+    "tags": [
+      "strain",
+      "muscle injury",
+      "posterior thigh"
+    ],
+    "keywords": [
+      "resisted knee flexion",
+      "strain symptom",
+      "hamstring pain"
+    ],
+    "synonyms": [
+      "hamstring strain",
+      "muscle tear"
+    ]
   }
 ]

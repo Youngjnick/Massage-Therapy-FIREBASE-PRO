@@ -3,13 +3,17 @@
     "id": "soap_notes_001",
     "correctAnswer": "Subjective",
     "question": "What does the 'S' in SOAP notes stand for?",
-    "options": ["Subjective", "Supportive", "Systemic", "Superficial"],
+    "options": [
+      "Subjective",
+      "Supportive",
+      "Systemic",
+      "Superficial"
+    ],
     "topics": ["licensing", "soap_notes", "soap_notes"],
     "short_explanation": "'S' stands for Subjective, referring to what the client reports.",
     "long_explanation": "The 'S' in SOAP stands for Subjective, which includes information the client reports, such as symptoms, concerns, or relevant health history in their own words.",
     "clinical_application": "Accurately recording client statements helps build a complete clinical picture and supports personalized treatment.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -18,21 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "documentation", "subjective"],
-    "keywords": ["subjective", "client report", "soap notes"],
-    "synonyms": ["subjective section", "client-reported"]
+    "tags": [
+      "soap",
+      "documentation",
+      "subjective"
+    ],
+    "keywords": [
+      "subjective",
+      "client report",
+      "soap notes"
+    ],
+    "synonyms": [
+      "subjective section",
+      "client-reported"
+    ]
   },
   {
     "id": "soap_notes_002",
     "correctAnswer": "Objective",
     "question": "Which section of the SOAP note would include your visual and palpatory observations?",
-    "options": ["Objective", "Assessment", "Subjective", "Plan"],
+    "options": [
+      "Objective",
+      "Assessment",
+      "Subjective",
+      "Plan"
+    ],
     "topics": ["licensing", "soap_notes", "soap_notes"],
     "short_explanation": "Observations belong in the 'Objective' section.",
     "long_explanation": "The 'Objective' section includes findings from observation, palpation, posture analysis, and other measurable or observable clinical data gathered by the therapist.",
     "clinical_application": "Objective notes offer a baseline and support the therapeutic rationale.",
     "source_reference": "Mosby’s Fundamentals of Therapeutic Massage, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -41,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "objective", "observation"],
-    "keywords": ["objective findings", "palpation", "documentation"],
-    "synonyms": ["visual findings", "palpatory data"]
+    "tags": [
+      "soap",
+      "objective",
+      "observation"
+    ],
+    "keywords": [
+      "objective findings",
+      "palpation",
+      "documentation"
+    ],
+    "synonyms": [
+      "visual findings",
+      "palpatory data"
+    ]
   },
   {
     "id": "soap_notes_003",
@@ -60,7 +90,6 @@
     "long_explanation": "The 'Assessment' section contains the therapist's analysis of the client's condition based on subjective and objective data. This includes clinical impressions, progress, and response to treatment.",
     "clinical_application": "Clear assessments guide treatment planning and demonstrate clinical reasoning.",
     "source_reference": "Massage Therapy: Principles and Practice, Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -69,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "assessment", "clinical impression"],
-    "keywords": ["assessment", "interpretation", "treatment response"],
-    "synonyms": ["treatment impression", "clinical judgment"]
+    "tags": [
+      "soap",
+      "assessment",
+      "clinical impression"
+    ],
+    "keywords": [
+      "assessment",
+      "interpretation",
+      "treatment response"
+    ],
+    "synonyms": [
+      "treatment impression",
+      "clinical judgment"
+    ]
   },
   {
     "id": "soap_notes_004",
@@ -88,7 +128,6 @@
     "long_explanation": "The 'Plan' section documents the therapist’s strategy for future sessions. This may include techniques to be used, referrals, homework for the client, or frequency of treatment.",
     "clinical_application": "Clear planning supports continuity of care and shows intention in the therapeutic process.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -97,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "plan", "future care"],
-    "keywords": ["treatment plan", "next session", "therapeutic goals"],
-    "synonyms": ["treatment planning", "next steps"]
+    "tags": [
+      "soap",
+      "plan",
+      "future care"
+    ],
+    "keywords": [
+      "treatment plan",
+      "next session",
+      "therapeutic goals"
+    ],
+    "synonyms": [
+      "treatment planning",
+      "next steps"
+    ]
   },
   {
     "id": "soap_notes_005",
@@ -116,7 +166,6 @@
     "long_explanation": "The 'Subjective' section should only include the client’s words and reported symptoms. Therapist interpretations or findings should be placed in the Objective or Assessment sections.",
     "clinical_application": "Proper documentation ensures legal clarity and clinical accuracy.",
     "source_reference": "Massage Therapy: Principles and Practice, Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -125,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "subjective", "scope of practice"],
-    "keywords": ["subjective note", "client input", "recordkeeping"],
-    "synonyms": ["non-subjective data", "therapist observation"]
+    "tags": [
+      "soap",
+      "subjective",
+      "scope of practice"
+    ],
+    "keywords": [
+      "subjective note",
+      "client input",
+      "recordkeeping"
+    ],
+    "synonyms": [
+      "non-subjective data",
+      "therapist observation"
+    ]
   },
   {
     "id": "soap_notes_006",
@@ -144,7 +204,6 @@
     "long_explanation": "SOAP notes document the therapeutic process by capturing client feedback, therapist observations, and treatment rationale. This provides a structured approach to monitoring progress and modifying care plans.",
     "clinical_application": "Maintaining thorough SOAP notes helps ensure continuity and accountability in client care.",
     "source_reference": "Mosby’s Fundamentals of Therapeutic Massage, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -153,21 +212,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "clinical outcomes", "treatment planning"],
-    "keywords": ["documentation", "clinical tracking", "treatment planning"],
-    "synonyms": ["progress tracking", "outcome monitoring"]
+    "tags": [
+      "soap",
+      "clinical outcomes",
+      "treatment planning"
+    ],
+    "keywords": [
+      "documentation",
+      "clinical tracking",
+      "treatment planning"
+    ],
+    "synonyms": [
+      "progress tracking",
+      "outcome monitoring"
+    ]
   },
   {
     "id": "soap_notes_007",
     "correctAnswer": "Plan",
     "question": "Where should the therapist document a referral to another healthcare provider?",
-    "options": ["Plan", "Subjective", "Objective", "Assessment"],
+    "options": [
+      "Plan",
+      "Subjective",
+      "Objective",
+      "Assessment"
+    ],
     "topics": ["licensing", "soap_notes", "soap_notes"],
     "short_explanation": "Referrals are included in the Plan section.",
     "long_explanation": "The Plan section of SOAP notes includes upcoming treatment strategies, client homework, and any necessary referrals to other professionals.",
     "clinical_application": "Including referrals in the Plan ensures continuity of care and professional collaboration.",
     "source_reference": "Massage Therapy: Principles and Practice, Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -176,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["referral", "soap", "plan"],
-    "keywords": ["referral", "plan", "documentation"],
-    "synonyms": ["referral note", "future care"]
+    "tags": [
+      "referral",
+      "soap",
+      "plan"
+    ],
+    "keywords": [
+      "referral",
+      "plan",
+      "documentation"
+    ],
+    "synonyms": [
+      "referral note",
+      "future care"
+    ]
   },
   {
     "id": "soap_notes_008",
@@ -195,7 +280,6 @@
     "long_explanation": "Complete SOAP notes offer legal protection for the therapist and serve as documentation in case of malpractice claims or insurance audits. They also uphold professional standards.",
     "clinical_application": "Accurate records are essential for liability protection and professional integrity.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -204,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ethics", "legal", "soap"],
-    "keywords": ["liability", "recordkeeping", "documentation"],
-    "synonyms": ["legal documentation", "client record"]
+    "tags": [
+      "ethics",
+      "legal",
+      "soap"
+    ],
+    "keywords": [
+      "liability",
+      "recordkeeping",
+      "documentation"
+    ],
+    "synonyms": [
+      "legal documentation",
+      "client record"
+    ]
   },
   {
     "id": "soap_notes_009",
@@ -223,7 +318,6 @@
     "long_explanation": "Objective data are things the therapist can see, touch, or measure directly. This includes posture, swelling, tenderness on palpation, or changes in skin temperature.",
     "clinical_application": "Accurate objective notes help identify progress or patterns of dysfunction.",
     "source_reference": "Mosby’s Fundamentals of Therapeutic Massage, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -232,9 +326,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["objective", "soap", "clinical observation"],
-    "keywords": ["palpation", "observation", "measurable"],
-    "synonyms": ["objective record", "postural finding"]
+    "tags": [
+      "objective",
+      "soap",
+      "clinical observation"
+    ],
+    "keywords": [
+      "palpation",
+      "observation",
+      "measurable"
+    ],
+    "synonyms": [
+      "objective record",
+      "postural finding"
+    ]
   },
   {
     "id": "soap_notes_010",
@@ -251,7 +356,6 @@
     "long_explanation": "SOAP notes should be professional and objective, avoiding slang, exaggeration, or personal opinions. This ensures clarity, accuracy, and legal soundness.",
     "clinical_application": "Professional documentation reflects clinical competence and protects therapist credibility.",
     "source_reference": "Massage Therapy: Principles and Practice, Susan Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/licensing/soap_notes/soap_notes.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -260,8 +364,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["soap", "documentation", "professionalism"],
-    "keywords": ["clinical note", "professional language", "objective writing"],
-    "synonyms": ["clinical tone", "professional writing"]
+    "tags": [
+      "soap",
+      "documentation",
+      "professionalism"
+    ],
+    "keywords": [
+      "clinical note",
+      "professional language",
+      "objective writing"
+    ],
+    "synonyms": [
+      "clinical tone",
+      "professional writing"
+    ]
   }
 ]

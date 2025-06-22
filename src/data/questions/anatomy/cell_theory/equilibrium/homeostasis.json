@@ -14,7 +14,6 @@
     "long_explanation": "Homeostasis refers to the regulation of internal conditions like temperature, pH, and glucose levels. The body uses feedback systems to detect changes and trigger corrective responses, keeping systems in balance despite external fluctuations.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -62,7 +61,6 @@
     "long_explanation": "The nervous system monitors internal and external environments, sending rapid electrical signals to adjust bodily functions. It works closely with the endocrine system to maintain balance in processes like temperature control and heart rate.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -102,7 +100,6 @@
     "long_explanation": "Negative feedback loops restore balance by reversing a change. For example, when blood sugar rises, insulin is released to lower it. Once glucose normalizes, insulin secretion decreases—demonstrating a self-regulating cycle.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -139,13 +136,17 @@
     "id": "homeostasis_004",
     "correctAnswer": "Pancreas",
     "question": "What organ helps regulate blood glucose levels through the secretion of insulin?",
-    "options": ["Liver", "Pancreas", "Stomach", "Kidney"],
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Stomach",
+      "Kidney"
+    ],
     "topics": ["anatomy", "cell_theory", "equilibrium", "homeostasis"],
     "short_explanation": "The pancreas releases insulin to regulate blood glucose levels.",
     "long_explanation": "The pancreas detects high blood sugar and releases insulin, which promotes glucose uptake by cells and storage in the liver. This helps return blood sugar to a stable level, a key aspect of metabolic homeostasis.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -188,13 +189,17 @@
     "id": "homeostasis_005",
     "correctAnswer": "Sweating",
     "question": "Which of the following would be a homeostatic response to high body temperature?",
-    "options": ["Vasoconstriction", "Sweating", "Shivering", "Pupil dilation"],
+    "options": [
+      "Vasoconstriction",
+      "Sweating",
+      "Shivering",
+      "Pupil dilation"
+    ],
     "topics": ["anatomy", "cell_theory", "equilibrium", "homeostasis"],
     "short_explanation": "Sweating helps cool the body and lower internal temperature.",
     "long_explanation": "When body temperature rises, sweat glands produce moisture that evaporates from the skin surface, releasing heat. This cooling mechanism is part of a negative feedback loop that prevents overheating.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -203,8 +208,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.117Z",
     "updated_at": "2025-05-24T14:54:13.462Z",
-    "tags": ["organ_skin"],
-    "keywords": ["organ_skin"],
+    "tags": [
+      "organ_skin"
+    ],
+    "keywords": [
+      "organ_skin"
+    ],
     "synonyms": null
   },
   {
@@ -222,7 +231,6 @@
     "long_explanation": "The nervous system sends rapid signals while the endocrine system regulates longer-term changes via hormones. Together, they maintain vital parameters like blood pressure, metabolism, and hydration.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -262,7 +270,6 @@
     "long_explanation": "Baroreceptors detect low pressure and activate the sympathetic nervous system. This increases heart rate and narrows blood vessels, restoring circulation to vital organs.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -308,7 +315,6 @@
     "long_explanation": "ADH is secreted by the pituitary gland when dehydration is detected. It signals the kidneys to reabsorb more water, reducing urine output and helping maintain fluid balance.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -317,8 +323,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.117Z",
     "updated_at": "2025-05-24T14:54:13.462Z",
-    "tags": ["concept_balance", "anatomy_kidneys", "organ_kidneys"],
-    "keywords": ["concept_balance", "anatomy_kidneys", "organ_kidneys"],
+    "tags": [
+      "concept_balance",
+      "anatomy_kidneys",
+      "organ_kidneys"
+    ],
+    "keywords": [
+      "concept_balance",
+      "anatomy_kidneys",
+      "organ_kidneys"
+    ],
     "synonyms": null
   },
   {
@@ -336,7 +350,6 @@
     "long_explanation": "Unlike negative feedback, which stabilizes, positive feedback increases the original stimulus. It’s used in processes like blood clotting and childbirth where rapid escalation is beneficial.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -345,8 +358,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.117Z",
     "updated_at": "2025-05-24T14:54:13.462Z",
-    "tags": ["concept_originates", "concept_originated"],
-    "keywords": ["concept_originates", "concept_originated"],
+    "tags": [
+      "concept_originates",
+      "concept_originated"
+    ],
+    "keywords": [
+      "concept_originates",
+      "concept_originated"
+    ],
     "synonyms": null
   },
   {
@@ -364,7 +383,6 @@
     "long_explanation": "During labor, oxytocin triggers contractions. These contractions stretch the cervix, which signals more oxytocin release—creating a loop until delivery is complete.",
     "clinical_application": null,
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/homeostasis.json",
     "question_type": null,
     "difficulty": "intermediate",

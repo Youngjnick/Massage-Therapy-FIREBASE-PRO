@@ -14,7 +14,6 @@
     "long_explanation": "Myofascial remodeling involves sustained pressure and stretch techniques aimed at breaking down adhesions, reorganizing collagen fibers, and restoring fascial glide and alignment over time.",
     "clinical_application": "Massage therapists may use remodeling techniques in clients with long-standing postural restrictions, scar tissue, or movement limitations.",
     "source_reference": "Fascial Release for Structural Balance by James Earls & Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,13 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofascial release", "remodeling", "adhesions"],
+    "tags": [
+      "myofascial release",
+      "remodeling",
+      "adhesions"
+    ],
     "keywords": [
       "fascial change",
       "adhesion breakdown",
       "remodeling techniques"
     ],
-    "synonyms": ["fascial reorganization", "collagen remodeling"]
+    "synonyms": [
+      "fascial reorganization",
+      "collagen remodeling"
+    ]
   },
   {
     "id": "myofascial_remodeling_002",
@@ -46,7 +52,6 @@
     "long_explanation": "Plasticity in connective tissue refers to the fascia's ability to undergo permanent structural change when subjected to consistent, slow, and sustained pressure or stretch, a principle key to remodeling.",
     "clinical_application": "Understanding tissue plasticity helps therapists apply proper pressure and timing for fascial change.",
     "source_reference": "Fascia: The Tensional Network of the Human Body, Schleip et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -55,13 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["plasticity", "connective tissue", "fascial change"],
+    "tags": [
+      "plasticity",
+      "connective tissue",
+      "fascial change"
+    ],
     "keywords": [
       "tissue adaptation",
       "plastic deformation",
       "myofascial response"
     ],
-    "synonyms": ["plastic deformation", "fascial adaptation"]
+    "synonyms": [
+      "plastic deformation",
+      "fascial adaptation"
+    ]
   },
   {
     "id": "myofascial_remodeling_003",
@@ -78,7 +90,6 @@
     "long_explanation": "Fascia remodels in response to low-load, long-duration techniques. Time under tension allows collagen to realign and adhesions to break, distinguishing it from quick-release techniques.",
     "clinical_application": "Massage therapists should avoid fast movements during remodeling and instead hold pressure for 90+ seconds per site.",
     "source_reference": "Myofascial Release Manual by Ruth Duncan",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -87,21 +98,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sustained pressure", "fascial stretch", "time under tension"],
-    "keywords": ["slow release", "collagen realignment", "remodeling pressure"],
-    "synonyms": ["slow stretch", "hold and sink"]
+    "tags": [
+      "sustained pressure",
+      "fascial stretch",
+      "time under tension"
+    ],
+    "keywords": [
+      "slow release",
+      "collagen realignment",
+      "remodeling pressure"
+    ],
+    "synonyms": [
+      "slow stretch",
+      "hold and sink"
+    ]
   },
   {
     "id": "myofascial_remodeling_004",
     "correctAnswer": "Fascia",
     "question": "Which structure is primarily affected during myofascial remodeling?",
-    "options": ["Fascia", "Tendons", "Bones", "Blood vessels"],
+    "options": [
+      "Fascia",
+      "Tendons",
+      "Bones",
+      "Blood vessels"
+    ],
     "topics": ["modalities", "myofascial", "myofascial_remodeling"],
     "short_explanation": "Fascia is the main tissue targeted during remodeling techniques.",
     "long_explanation": "Myofascial remodeling targets fascia, the connective tissue surrounding muscles. Over time, fascia can develop restrictions or adhesions that impact movement, posture, and pain patterns.",
     "clinical_application": "Remodeling fascia can improve functional range of motion and reduce compensatory movement patterns.",
     "source_reference": "Fascia and Biotensegrity, Robert Schleip",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -110,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "connective tissue", "restrictions"],
-    "keywords": ["myofascial work", "fascial adhesions", "remodeling"],
-    "synonyms": ["connective tissue", "myofascia"]
+    "tags": [
+      "fascia",
+      "connective tissue",
+      "restrictions"
+    ],
+    "keywords": [
+      "myofascial work",
+      "fascial adhesions",
+      "remodeling"
+    ],
+    "synonyms": [
+      "connective tissue",
+      "myofascia"
+    ]
   },
   {
     "id": "myofascial_remodeling_005",
@@ -129,7 +166,6 @@
     "long_explanation": "Overloading the tissue can trigger guarding responses and disrupt fascial reorganization. Gentle engagement within the tissue barrier respects the client’s nervous system and promotes lasting change.",
     "clinical_application": "Therapists should avoid pushing through resistance and instead wait for tissue release signs during remodeling work.",
     "source_reference": "The Endless Web by Louis Schultz",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -138,13 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tissue barrier", "nervous system", "fascial safety"],
+    "tags": [
+      "tissue barrier",
+      "nervous system",
+      "fascial safety"
+    ],
     "keywords": [
       "barrier response",
       "therapeutic threshold",
       "remodeling safety"
     ],
-    "synonyms": ["tissue resistance", "barrier concept"]
+    "synonyms": [
+      "tissue resistance",
+      "barrier concept"
+    ]
   },
   {
     "id": "myofascial_remodeling_006",
@@ -161,7 +204,6 @@
     "long_explanation": "During a successful fascial release, therapists often perceive a softening or lengthening of the tissue. Clients may also describe warmth or tingling. These changes reflect neurological and mechanical responses.",
     "clinical_application": "Recognizing these signs helps therapists pace the session and avoid overworking an area.",
     "source_reference": "Myofascial Release Manual by Ruth Duncan",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -170,21 +212,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascial release", "softening", "therapist feedback"],
-    "keywords": ["tissue melting", "fascial response", "release signs"],
-    "synonyms": ["tissue release", "melting response"]
+    "tags": [
+      "fascial release",
+      "softening",
+      "therapist feedback"
+    ],
+    "keywords": [
+      "tissue melting",
+      "fascial response",
+      "release signs"
+    ],
+    "synonyms": [
+      "tissue release",
+      "melting response"
+    ]
   },
   {
     "id": "myofascial_remodeling_007",
     "correctAnswer": "Hands",
     "question": "What tool does a massage therapist primarily use during fascial remodeling?",
-    "options": ["Hands", "Massage gun", "Hot stone", "Foam roller"],
+    "options": [
+      "Hands",
+      "Massage gun",
+      "Hot stone",
+      "Foam roller"
+    ],
     "topics": ["modalities", "myofascial", "myofascial_remodeling"],
     "short_explanation": "Fascial work is typically performed with the hands.",
     "long_explanation": "Although tools exist, most fascial remodeling is performed using fingers, knuckles, or forearms to apply slow, sustained pressure directly into the tissue layers.",
     "clinical_application": "Hands provide sensitive feedback that allows the therapist to feel tissue changes and client response in real-time.",
     "source_reference": "Fascial Release for Structural Balance by Earls & Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -193,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["manual therapy", "touch", "sensitivity"],
-    "keywords": ["palpation", "manual technique", "hands-on remodeling"],
-    "synonyms": ["manual therapy", "hands-on"]
+    "tags": [
+      "manual therapy",
+      "touch",
+      "sensitivity"
+    ],
+    "keywords": [
+      "palpation",
+      "manual technique",
+      "hands-on remodeling"
+    ],
+    "synonyms": [
+      "manual therapy",
+      "hands-on"
+    ]
   },
   {
     "id": "myofascial_remodeling_008",
@@ -212,7 +280,6 @@
     "long_explanation": "Conditions like cellulitis, acute injury, or infection are contraindications for deep fascial work. Applying pressure in these cases can increase damage, spread infection, or exacerbate pain.",
     "clinical_application": "Therapists should assess for redness, swelling, or warmth before applying remodeling pressure.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -221,9 +288,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["contraindications", "acute inflammation", "red flags"],
-    "keywords": ["cellulitis", "acute injury", "swelling"],
-    "synonyms": ["infection", "redness", "swelling"]
+    "tags": [
+      "contraindications",
+      "acute inflammation",
+      "red flags"
+    ],
+    "keywords": [
+      "cellulitis",
+      "acute injury",
+      "swelling"
+    ],
+    "synonyms": [
+      "infection",
+      "redness",
+      "swelling"
+    ]
   },
   {
     "id": "myofascial_remodeling_009",
@@ -240,7 +319,6 @@
     "long_explanation": "Well-hydrated fascia allows for better slide-and-glide between tissue layers. Dehydrated fascia becomes sticky and restricted, making remodeling less effective.",
     "clinical_application": "Encouraging hydration before and after sessions can enhance outcomes and prevent soreness.",
     "source_reference": "Fascia Research Congress Proceedings, 2018",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -249,9 +327,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hydration", "tissue fluidity", "fascial glide"],
-    "keywords": ["hydrated fascia", "interstitial fluid", "tissue slide"],
-    "synonyms": ["fluid fascia", "hydrated connective tissue"]
+    "tags": [
+      "hydration",
+      "tissue fluidity",
+      "fascial glide"
+    ],
+    "keywords": [
+      "hydrated fascia",
+      "interstitial fluid",
+      "tissue slide"
+    ],
+    "synonyms": [
+      "fluid fascia",
+      "hydrated connective tissue"
+    ]
   },
   {
     "id": "myofascial_remodeling_010",
@@ -268,7 +357,6 @@
     "long_explanation": "Chronic tension and restriction in fascia can pull the body out of alignment. Remodeling these lines can release holding patterns and improve vertical stacking and functional posture.",
     "clinical_application": "Postural improvement is a key goal of structural bodywork, especially in clients with fascial imbalance or repetitive strain patterns.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_remodeling.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -277,8 +365,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "fascial tension", "alignment"],
-    "keywords": ["structural bodywork", "fascial holding", "alignment"],
-    "synonyms": ["structural alignment", "postural release"]
+    "tags": [
+      "posture",
+      "fascial tension",
+      "alignment"
+    ],
+    "keywords": [
+      "structural bodywork",
+      "fascial holding",
+      "alignment"
+    ],
+    "synonyms": [
+      "structural alignment",
+      "postural release"
+    ]
   }
 ]

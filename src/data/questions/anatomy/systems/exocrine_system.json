@@ -14,7 +14,6 @@
     "long_explanation": "Exocrine glands release substances through ducts to specific locations. Sweat glands release perspiration through ducts onto the skin to regulate temperature.",
     "clinical_application": "Understanding sweat glands can help massage therapists support detoxification and improve circulation during treatment.",
     "source_reference": "Tortora: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sweat", "exocrine", "glands"],
-    "keywords": ["ducts", "skin", "perspiration"],
+    "tags": [
+      "sweat",
+      "exocrine",
+      "glands"
+    ],
+    "keywords": [
+      "ducts",
+      "skin",
+      "perspiration"
+    ],
     "synonyms": null
   },
   {
     "id": "exocrine_system_002",
     "correctAnswer": "Pancreas",
     "question": "Which gland secretes digestive enzymes into the small intestine?",
-    "options": ["Liver", "Pancreas", "Thyroid", "Adrenal gland"],
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Thyroid",
+      "Adrenal gland"
+    ],
     "topics": ["anatomy", "systems", "exocrine_system"],
     "short_explanation": "The exocrine pancreas secretes digestive enzymes into the duodenum.",
     "long_explanation": "The pancreas has both endocrine and exocrine roles. Its exocrine portion secretes amylase, lipase, and proteases via the pancreatic duct into the small intestine.",
     "clinical_application": "A client with pancreatic enzyme insufficiency may have digestive issues requiring nutritional support alongside massage care.",
     "source_reference": "Guyton & Hall: Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "medium",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pancreas", "enzymes", "digestion"],
-    "keywords": ["amylase", "lipase", "duct system"],
+    "tags": [
+      "pancreas",
+      "enzymes",
+      "digestion"
+    ],
+    "keywords": [
+      "amylase",
+      "lipase",
+      "duct system"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "Sebaceous glands are exocrine glands that secrete sebum through hair follicles. This oily substance prevents drying and provides a barrier against microbes.",
     "clinical_application": "Massage therapists should avoid over-manipulating sebaceous areas in clients with acne or dermatitis.",
     "source_reference": "Marieb: Human Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "easy",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sebum", "skin", "lubrication"],
-    "keywords": ["oil glands", "hair follicles", "dermis"],
+    "tags": [
+      "sebum",
+      "skin",
+      "lubrication"
+    ],
+    "keywords": [
+      "oil glands",
+      "hair follicles",
+      "dermis"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "Exocrine glands have ducts and secrete to surfaces. The adrenal gland is endocrine and releases hormones like cortisol and adrenaline into the bloodstream.",
     "clinical_application": "Distinguishing between endocrine and exocrine helps therapists understand how internal physiology affects external symptoms.",
     "source_reference": "Silverthorn: Human Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "easy",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["glands", "classification", "endocrine vs exocrine"],
-    "keywords": ["adrenal", "cortisol", "ductless"],
+    "tags": [
+      "glands",
+      "classification",
+      "endocrine vs exocrine"
+    ],
+    "keywords": [
+      "adrenal",
+      "cortisol",
+      "ductless"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "Lacrimal glands are exocrine structures located in the upper lateral region of the orbit. They produce tears that lubricate and protect the eye.",
     "clinical_application": "Massage near the orbit should respect the lacrimal gland to prevent irritation, especially in sinus or facial techniques.",
     "source_reference": "Clinical Anatomy by Regions",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "medium",
@@ -130,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lacrimal", "tears", "eye"],
-    "keywords": ["tear production", "lubrication", "orbital gland"],
+    "tags": [
+      "lacrimal",
+      "tears",
+      "eye"
+    ],
+    "keywords": [
+      "tear production",
+      "lubrication",
+      "orbital gland"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +189,6 @@
     "long_explanation": "The common bile duct carries bile produced in the liver and stored in the gallbladder into the small intestine to aid in fat digestion.",
     "clinical_application": "Gallbladder or bile duct dysfunction can affect digestion and energy, which therapists may need to accommodate during treatment.",
     "source_reference": "Robbins & Cotran Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "medium",
@@ -158,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bile", "gallbladder", "digestion"],
-    "keywords": ["duct system", "liver", "fat emulsification"],
+    "tags": [
+      "bile",
+      "gallbladder",
+      "digestion"
+    ],
+    "keywords": [
+      "duct system",
+      "liver",
+      "fat emulsification"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +224,6 @@
     "long_explanation": "Saliva contains mucus for lubrication and serous fluid with enzymes like amylase to begin carbohydrate digestion.",
     "clinical_application": "Dry mouth or excess salivation can indicate dysfunction, which may arise from nerve damage or medication effects.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "medium",
@@ -186,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["saliva", "digestion", "amylase"],
-    "keywords": ["mucous glands", "serous glands", "oral cavity"],
+    "tags": [
+      "saliva",
+      "digestion",
+      "amylase"
+    ],
+    "keywords": [
+      "mucous glands",
+      "serous glands",
+      "oral cavity"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +259,6 @@
     "long_explanation": "These modified sweat glands in the external auditory canal protect the ear by trapping dust and repelling insects with cerumen.",
     "clinical_application": "Massage near the ears should avoid excessive pressure on the canal to prevent disrupting cerumen balance.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "medium",
@@ -214,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["earwax", "ear", "protection"],
-    "keywords": ["cerumen", "modified sweat gland", "auditory canal"],
+    "tags": [
+      "earwax",
+      "ear",
+      "protection"
+    ],
+    "keywords": [
+      "cerumen",
+      "modified sweat gland",
+      "auditory canal"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +294,6 @@
     "long_explanation": "Exocrine glands release their substances (e.g., enzymes, oils) to external or internal surfaces through ducts, while endocrine glands release hormones directly into the blood.",
     "clinical_application": "Understanding gland type helps massage therapists explain symptoms like swelling, discharge, or hormonal changes to clients.",
     "source_reference": "Silverthorn: Human Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "easy",
@@ -242,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["exocrine vs endocrine", "ducts", "hormones"],
-    "keywords": ["gland classification", "ducted secretion", "body systems"],
+    "tags": [
+      "exocrine vs endocrine",
+      "ducts",
+      "hormones"
+    ],
+    "keywords": [
+      "gland classification",
+      "ducted secretion",
+      "body systems"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +329,6 @@
     "long_explanation": "The parotid, submandibular, and sublingual salivary glands release saliva that begins starch digestion and lubricates food.",
     "clinical_application": "Jaw and neck massage can support saliva flow and reduce TMJ stress or dry mouth symptoms.",
     "source_reference": "Clinical Anatomy by Regions",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/exocrine_system.json",
     "question_type": null,
     "difficulty": "medium",
@@ -270,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["salivary glands", "oral digestion", "enzymes"],
-    "keywords": ["parotid", "sublingual", "saliva production"],
+    "tags": [
+      "salivary glands",
+      "oral digestion",
+      "enzymes"
+    ],
+    "keywords": [
+      "parotid",
+      "sublingual",
+      "saliva production"
+    ],
     "synonyms": null
   }
 ]

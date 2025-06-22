@@ -14,7 +14,6 @@
     "long_explanation": "The deltoid tuberosity is a roughened ridge halfway down the lateral humerus. The insertion point is essential for translating the deltoid's contraction into abduction of the arm at the glenohumeral joint.",
     "clinical_application": "Palpation near the deltoid insertion helps assess inflammation or hypertrophy in overhead athletes.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/insertions/shoulder_insertion.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -43,7 +42,10 @@
       "bone_scapula",
       "bone_humerus"
     ],
-    "synonyms": ["shoulder abductor", "deltoid muscle"]
+    "synonyms": [
+      "shoulder abductor",
+      "deltoid muscle"
+    ]
   },
   {
     "id": "shoulder_insertion_002",
@@ -60,7 +62,6 @@
     "long_explanation": "This broad muscle inserts on the humerus where it can efficiently pull the arm inward (adduction) and rotate it medially. Its wide sternal origin narrows into a powerful tendon at this insertion point.",
     "clinical_application": "This area is often tender in bench press athletes or those with shoulder impingement syndrome.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/insertions/shoulder_insertion.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -89,7 +90,10 @@
       "muscle_pectoralis_major",
       "bone_humerus"
     ],
-    "synonyms": ["chest muscle", "pec major"]
+    "synonyms": [
+      "chest muscle",
+      "pec major"
+    ]
   },
   {
     "id": "shoulder_insertion_003",
@@ -106,7 +110,6 @@
     "long_explanation": "The greater tubercle provides a strong attachment for the supraspinatus to pull the arm away from the body. Its location on the lateral humerus makes it a key player in early-phase abduction.",
     "clinical_application": "Tears or tendinitis in this insertion site are common in rotator cuff injuries.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/insertions/shoulder_insertion.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -133,7 +136,10 @@
       "muscle_supraspinatus",
       "bone_humerus"
     ],
-    "synonyms": ["RTC", "shoulder abductor"]
+    "synonyms": [
+      "RTC",
+      "shoulder abductor"
+    ]
   },
   {
     "id": "shoulder_insertion_004",
@@ -150,7 +156,6 @@
     "long_explanation": "This insertion point allows the teres major to function like the latissimus dorsi, pulling the humerus inward and rotating it toward the body. It's especially active in resisted arm movements.",
     "clinical_application": "Overuse or tightness here may contribute to limited external rotation in overhead athletes.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/insertions/shoulder_insertion.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -179,7 +184,10 @@
       "muscle_teres_major",
       "bone_humerus"
     ],
-    "synonyms": ["teres", "teres group"]
+    "synonyms": [
+      "teres",
+      "teres group"
+    ]
   },
   {
     "id": "shoulder_insertion_005",
@@ -196,7 +204,6 @@
     "long_explanation": "Its flat tendon travels under the axilla to insert on the humerus, where it contributes powerfully to pulling motions. This location gives it leverage for actions like climbing or rowing.",
     "clinical_application": "Tension at this insertion can cause tightness in swimmers and weightlifters performing pull-down movements.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/insertions/shoulder_insertion.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -221,6 +228,9 @@
       "muscle_latissimus_dorsi",
       "bone_humerus"
     ],
-    "synonyms": ["lat", "posterior shoulder"]
+    "synonyms": [
+      "lat",
+      "posterior shoulder"
+    ]
   }
 ]

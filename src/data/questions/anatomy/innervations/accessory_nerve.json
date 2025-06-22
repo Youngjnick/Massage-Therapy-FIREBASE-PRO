@@ -14,7 +14,6 @@
     "long_explanation": "The spinal accessory nerve (cranial nerve XI) provides motor innervation to the sternocleidomastoid (SCM) and trapezius muscles, which are involved in head rotation and shoulder elevation.",
     "clinical_application": "Massage therapists may assess CN XI function when clients report difficulty shrugging or turning their head.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -23,7 +22,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cranial nerve XI", "spinal accessory", "trapezius", "SCM"],
+    "tags": [
+      "cranial nerve XI",
+      "spinal accessory",
+      "trapezius",
+      "SCM"
+    ],
     "keywords": [
       "accessory nerve",
       "trapezius",
@@ -47,7 +51,6 @@
     "long_explanation": "Damage to the spinal accessory nerve may lead to weakness in the trapezius, causing shoulder droop, and weakness in the SCM, impairing head rotation.",
     "clinical_application": "Neurological exams may include asking the client to shrug shoulders or turn the head against resistance.",
     "source_reference": "Clinically Oriented Anatomy, Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -56,8 +59,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve injury", "motor deficit", "CN XI"],
-    "keywords": ["accessory nerve", "shoulder weakness", "SCM function"],
+    "tags": [
+      "nerve injury",
+      "motor deficit",
+      "CN XI"
+    ],
+    "keywords": [
+      "accessory nerve",
+      "shoulder weakness",
+      "SCM function"
+    ],
     "synonyms": null
   },
   {
@@ -75,7 +86,6 @@
     "long_explanation": "The trapezius receives motor signals from CN XI. Asking the client to shrug shoulders against resistance evaluates the strength and integrity of the spinal accessory nerve.",
     "clinical_application": "Muscle testing during massage assessment can indicate underlying nerve dysfunction.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -84,8 +94,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle test", "trapezius", "accessory nerve"],
-    "keywords": ["shrug test", "CN XI", "motor strength"],
+    "tags": [
+      "muscle test",
+      "trapezius",
+      "accessory nerve"
+    ],
+    "keywords": [
+      "shrug test",
+      "CN XI",
+      "motor strength"
+    ],
     "synonyms": null
   },
   {
@@ -103,7 +121,6 @@
     "long_explanation": "The spinal accessory nerve has a cranial part (from the medulla) and a spinal part (from cervical spinal cord levels C1–C5), though the spinal part is primarily responsible for motor innervation.",
     "clinical_application": "Cervical trauma may impair accessory nerve function due to its spinal origin.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -112,8 +129,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve origin", "cranial nerve XI", "C1-C5"],
-    "keywords": ["spinal cord", "brainstem", "motor pathways"],
+    "tags": [
+      "nerve origin",
+      "cranial nerve XI",
+      "C1-C5"
+    ],
+    "keywords": [
+      "spinal cord",
+      "brainstem",
+      "motor pathways"
+    ],
     "synonyms": null
   },
   {
@@ -131,7 +156,6 @@
     "long_explanation": "While trapezius and sternocleidomastoid are motor targets of CN XI, the deltoid muscle is innervated by the axillary nerve from the brachial plexus.",
     "clinical_application": "Differentiating nerve pathways is key for understanding regional dysfunction and massage contraindications.",
     "source_reference": "Trail Guide to the Body, Biel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -140,7 +164,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["innervation", "cranial nerves", "axillary nerve"],
+    "tags": [
+      "innervation",
+      "cranial nerves",
+      "axillary nerve"
+    ],
     "keywords": [
       "muscle innervation",
       "nerve pathways",
@@ -163,7 +191,6 @@
     "long_explanation": "The sternocleidomastoid contracts to flex the cervical spine and rotate the head contralaterally. It is innervated by CN XI.",
     "clinical_application": "Massage therapy techniques on the SCM can improve neck mobility and relieve tension headaches.",
     "source_reference": "Muscles: Testing and Function, Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -172,8 +199,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SCM", "neck movement", "head rotation"],
-    "keywords": ["sternocleidomastoid", "neck flexion", "head rotation"],
+    "tags": [
+      "SCM",
+      "neck movement",
+      "head rotation"
+    ],
+    "keywords": [
+      "sternocleidomastoid",
+      "neck flexion",
+      "head rotation"
+    ],
     "synonyms": null
   },
   {
@@ -191,7 +226,6 @@
     "long_explanation": "CN XI injury can cause trapezius weakness, leading to shoulder drooping, poor scapular control, and altered postural alignment of the upper body.",
     "clinical_application": "Postural assessments should consider CN XI function in clients with shoulder imbalances.",
     "source_reference": "Postural Assessment, Jane Johnson",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -200,21 +234,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "scapula", "trapezius"],
-    "keywords": ["CN XI", "scapular control", "postural assessment"],
+    "tags": [
+      "posture",
+      "scapula",
+      "trapezius"
+    ],
+    "keywords": [
+      "CN XI",
+      "scapular control",
+      "postural assessment"
+    ],
     "synonyms": null
   },
   {
     "id": "accessory_nerve_008",
     "correctAnswer": "CN XI",
     "question": "Which cranial nerve is sometimes considered to have both cranial and spinal components?",
-    "options": ["CN X", "CN XI", "CN IX", "CN XII"],
+    "options": [
+      "CN X",
+      "CN XI",
+      "CN IX",
+      "CN XII"
+    ],
     "topics": ["anatomy", "innervations", "accessory_nerve"],
     "short_explanation": "CN XI is unique with cranial and spinal roots.",
     "long_explanation": "Cranial nerve XI is composed of a spinal root (from C1–C5) and a cranial root (from the medulla), although in most modern classifications the cranial part is considered part of the vagus nerve.",
     "clinical_application": "Understanding dual-origin nerves aids in accurate assessment of dysfunctions with multiple sources.",
     "source_reference": "Neuroanatomy Through Clinical Cases, Blumenfeld",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -223,8 +269,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cranial nerves", "dual origin", "spinal roots"],
-    "keywords": ["cranial root", "spinal accessory", "nerve classification"],
+    "tags": [
+      "cranial nerves",
+      "dual origin",
+      "spinal roots"
+    ],
+    "keywords": [
+      "cranial root",
+      "spinal accessory",
+      "nerve classification"
+    ],
     "synonyms": null
   },
   {
@@ -242,7 +296,6 @@
     "long_explanation": "The spinal accessory nerve is relatively superficial in the posterior cervical triangle, making it vulnerable to compression from deep or heavy massage techniques in this region.",
     "clinical_application": "Use light, directional strokes in the posterior triangle to avoid compressing vulnerable nerves.",
     "source_reference": "Mosby's Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -251,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage precautions", "posterior triangle", "nerve protection"],
-    "keywords": ["safe massage", "nerve compression", "posterior neck"],
+    "tags": [
+      "massage precautions",
+      "posterior triangle",
+      "nerve protection"
+    ],
+    "keywords": [
+      "safe massage",
+      "nerve compression",
+      "posterior neck"
+    ],
     "synonyms": null
   },
   {
@@ -270,7 +331,6 @@
     "long_explanation": "Though scapular winging is classically associated with long thoracic nerve damage (serratus anterior), CN XI damage can also result in scapular winging via impaired trapezius function, especially the upper and middle fibers.",
     "clinical_application": "Massage practitioners should evaluate scapular symmetry when shoulder complaints persist after treatment.",
     "source_reference": "NeuroKinetic Therapy, David Weinstock",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/accessory_nerve.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -279,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scapular winging", "nerve damage", "postural dysfunction"],
-    "keywords": ["accessory nerve", "trapezius", "scapular motion"],
+    "tags": [
+      "scapular winging",
+      "nerve damage",
+      "postural dysfunction"
+    ],
+    "keywords": [
+      "accessory nerve",
+      "trapezius",
+      "scapular motion"
+    ],
     "synonyms": null
   }
 ]

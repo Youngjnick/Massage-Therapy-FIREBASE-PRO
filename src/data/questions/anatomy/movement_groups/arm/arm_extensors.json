@@ -3,13 +3,17 @@
     "id": "arm_extensors_001",
     "correctAnswer": "Triceps brachii",
     "question": "Which muscle is the primary extensor of the elbow joint?",
-    "options": ["Anconeus", "Triceps brachii", "Deltoid", "Latissimus dorsi"],
+    "options": [
+      "Anconeus",
+      "Triceps brachii",
+      "Deltoid",
+      "Latissimus dorsi"
+    ],
     "topics": ["anatomy", "movement_groups", "arm", "arm_extensors"],
     "short_explanation": "Triceps brachii is the main elbow extensor.",
     "long_explanation": "The triceps brachii, with three heads (long, lateral, and medial), is the primary muscle responsible for extending the elbow. The long head also assists with shoulder extension and adduction.",
     "clinical_application": "Triceps strength is crucial in activities like pushing or weightlifting. Its assessment is important in post-surgical elbow rehab.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 147",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -59,7 +63,6 @@
     "long_explanation": "All three heads of the triceps are innervated by the radial nerve, which arises from the posterior cord of the brachial plexus (C6-C8). This nerve also innervates many forearm extensors.",
     "clinical_application": "Radial nerve injuries can lead to weakened elbow and wrist extension, sometimes observed as 'wrist drop.'",
     "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 417",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -107,7 +110,6 @@
     "long_explanation": "The long head of the triceps brachii originates on the infraglenoid tubercle of the scapula, allowing it to assist with shoulder extension and adduction in addition to elbow extension.",
     "clinical_application": "Understanding the long head's origin is helpful when treating posterior shoulder pain or long head tendon strain.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 147",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -142,13 +144,17 @@
     "id": "arm_extensors_004",
     "correctAnswer": "Anconeus",
     "question": "Which small muscle assists the triceps in elbow extension and stabilizes the elbow joint?",
-    "options": ["Brachialis", "Anconeus", "Pronator teres", "Supinator"],
+    "options": [
+      "Brachialis",
+      "Anconeus",
+      "Pronator teres",
+      "Supinator"
+    ],
     "topics": ["anatomy", "movement_groups", "arm", "arm_extensors"],
     "short_explanation": "The anconeus assists triceps in elbow extension.",
     "long_explanation": "The anconeus is a small triangular muscle located near the lateral epicondyle of the humerus. It helps with elbow extension and stabilizes the joint during rapid movements.",
     "clinical_application": "Palpation of the anconeus can reveal tenderness associated with lateral elbow stress or triceps overuse.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 148",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -192,7 +198,6 @@
     "long_explanation": "The medial head of the triceps is located beneath the long and lateral heads. It is always active during elbow extension, even with light resistance.",
     "clinical_application": "Targeting the medial head in rehab helps rebuild base strength in elbow extension post-injury.",
     "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 414",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -201,7 +206,11 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.080Z",
     "updated_at": "2025-05-24T14:54:13.424Z",
-    "tags": ["concept_targeted", "condition_injury", "muscle_triceps_brachii"],
+    "tags": [
+      "concept_targeted",
+      "condition_injury",
+      "muscle_triceps_brachii"
+    ],
     "keywords": [
       "concept_targeted",
       "condition_injury",
@@ -224,7 +233,6 @@
     "long_explanation": "Triceps tendinitis usually affects the distal tendon at the olecranon. It results from overuse or improper technique in activities like push-ups or bench pressing.",
     "clinical_application": "Massage therapists may apply deep friction and cross-fiber massage to address triceps tendinitis.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 503",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -233,7 +241,11 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.080Z",
     "updated_at": "2025-05-24T14:54:13.424Z",
-    "tags": ["modality_massage", "technique_friction", "condition_tendinitis"],
+    "tags": [
+      "modality_massage",
+      "technique_friction",
+      "condition_tendinitis"
+    ],
     "keywords": [
       "modality_massage",
       "technique_friction",
@@ -256,7 +268,6 @@
     "long_explanation": "The radial nerve travels in the radial groove of the humerus. Injury here can lead to triceps weakness and loss of elbow extension, along with wrist drop from extensor paralysis.",
     "clinical_application": "In trauma cases like humeral fractures, testing triceps reflex helps evaluate radial nerve integrity.",
     "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 416",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -300,7 +311,6 @@
     "long_explanation": "Because the long head crosses both the shoulder and elbow joints, it is most active when both joints are extending simultaneously, such as during a swimming stroke or a behind-the-head press.",
     "clinical_application": "Including compound extension movements in therapy activates the long head effectively.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 147",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -309,8 +319,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.080Z",
     "updated_at": "2025-05-24T14:54:13.424Z",
-    "tags": ["anatomy_joint", "joint_joint"],
-    "keywords": ["anatomy_joint", "joint_joint"],
+    "tags": [
+      "anatomy_joint",
+      "joint_joint"
+    ],
+    "keywords": [
+      "anatomy_joint",
+      "joint_joint"
+    ],
     "synonyms": null
   },
   {
@@ -328,7 +344,6 @@
     "long_explanation": "All three heads of the triceps converge into a single tendon that inserts at the olecranon process of the ulna. This allows it to extend the elbow joint effectively.",
     "clinical_application": "Injuries here can be palpated as tenderness at the posterior elbow and are involved in triceps tendinopathies.",
     "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 415",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -365,13 +380,17 @@
     "id": "arm_extensors_010",
     "correctAnswer": "Lateral head",
     "question": "Which head of the triceps is most active during high-force movements?",
-    "options": ["Long head", "Medial head", "Lateral head", "Anconeus"],
+    "options": [
+      "Long head",
+      "Medial head",
+      "Lateral head",
+      "Anconeus"
+    ],
     "topics": ["anatomy", "movement_groups", "arm", "arm_extensors"],
     "short_explanation": "The lateral head is recruited during powerful extension.",
     "long_explanation": "The lateral head of the triceps brachii is activated more during high-intensity or explosive elbow extension tasks such as throwing or heavy pressing.",
     "clinical_application": "Strengthening the lateral head can improve power and reduce injury risk in athletic clients.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 148",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/arm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",

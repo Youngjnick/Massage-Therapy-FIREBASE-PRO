@@ -14,7 +14,6 @@
     "long_explanation": "The glomerulus is a network of capillaries located in the Bowman's capsule of the nephron. Its main role is to filter blood plasma, initiating the process of urine formation by allowing water and small solutes to pass through while retaining larger proteins and cells.",
     "clinical_application": "Understanding filtration helps massage therapists appreciate renal contraindications and how hydration influences bodywork.",
     "source_reference": "Tortora & Derrickson – Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["glomerulus", "filtration", "kidney"],
+    "tags": [
+      "glomerulus",
+      "filtration",
+      "kidney"
+    ],
     "keywords": [
       "glomerulus",
       "renal corpuscle",
@@ -47,7 +50,6 @@
     "long_explanation": "The Bowman's capsule encases the glomerulus and collects the filtrate that passes through the capillary walls. This filtrate then continues through the nephron for processing into urine.",
     "clinical_application": "Understanding this relationship helps practitioners consider pressure and fluid balance when treating clients with kidney concerns.",
     "source_reference": "Martini – Fundamentals of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "easy",
@@ -56,21 +58,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bowman's capsule", "renal", "nephron"],
-    "keywords": ["renal corpuscle", "filtration unit"],
+    "tags": [
+      "bowman's capsule",
+      "renal",
+      "nephron"
+    ],
+    "keywords": [
+      "renal corpuscle",
+      "filtration unit"
+    ],
     "synonyms": null
   },
   {
     "id": "glomeruli_003",
     "correctAnswer": "Fenestrated",
     "question": "What type of capillaries make up the glomerulus?",
-    "options": ["Continuous", "Fenestrated", "Sinusoidal", "Discontinuous"],
+    "options": [
+      "Continuous",
+      "Fenestrated",
+      "Sinusoidal",
+      "Discontinuous"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "glomeruli"],
     "short_explanation": "Glomeruli have fenestrated capillaries to support filtration.",
     "long_explanation": "Fenestrated capillaries in the glomerulus have pores that allow water and solutes to pass while blocking blood cells and large proteins. This structure is ideal for ultrafiltration.",
     "clinical_application": "This function is important in massage when considering lymphatic drainage and systemic circulation.",
     "source_reference": "Ross & Pawlina – Histology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "medium",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fenestrated", "capillary", "glomerulus"],
-    "keywords": ["pores", "renal filtration", "capillary types"],
+    "tags": [
+      "fenestrated",
+      "capillary",
+      "glomerulus"
+    ],
+    "keywords": [
+      "pores",
+      "renal filtration",
+      "capillary types"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "Podocytes are specialized epithelial cells in the Bowman's capsule that form slit diaphragms over fenestrated capillaries. They regulate the passage of substances based on size and charge.",
     "clinical_application": "Knowledge of filtration cells can help inform treatment plans for clients with renal insufficiency.",
     "source_reference": "Guyton & Hall – Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "medium",
@@ -107,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["podocytes", "glomerulus", "filtration"],
-    "keywords": ["foot processes", "renal filter", "nephron"],
+    "tags": [
+      "podocytes",
+      "glomerulus",
+      "filtration"
+    ],
+    "keywords": [
+      "foot processes",
+      "renal filter",
+      "nephron"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +154,6 @@
     "long_explanation": "The glomerular capillaries maintain high hydrostatic pressure that pushes plasma and solutes through the filtration barrier into the Bowman's capsule.",
     "clinical_application": "Clients with high blood pressure may have increased glomerular filtration, influencing hydration and tissue function.",
     "source_reference": "Saladin – Anatomy & Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "hard",
@@ -135,8 +162,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hydrostatic", "glomerulus", "blood pressure"],
-    "keywords": ["filtration pressure", "glomerular filtration rate"],
+    "tags": [
+      "hydrostatic",
+      "glomerulus",
+      "blood pressure"
+    ],
+    "keywords": [
+      "filtration pressure",
+      "glomerular filtration rate"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +188,6 @@
     "long_explanation": "Glomerular filtration rate (GFR) depends on adequate pressure. If blood pressure or perfusion drops, GFR also decreases, impairing kidney function.",
     "clinical_application": "Massage therapists must be aware of hypotension or shock in clients, as these may impair renal clearance.",
     "source_reference": "Clinically Oriented Anatomy – Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "medium",
@@ -163,21 +196,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["GFR", "blood pressure", "kidneys"],
-    "keywords": ["filtration rate", "renal perfusion", "glomerular pressure"],
+    "tags": [
+      "GFR",
+      "blood pressure",
+      "kidneys"
+    ],
+    "keywords": [
+      "filtration rate",
+      "renal perfusion",
+      "glomerular pressure"
+    ],
     "synonyms": null
   },
   {
     "id": "glomeruli_007",
     "correctAnswer": "Angiotensin II",
     "question": "Which hormone constricts the efferent arteriole to maintain glomerular filtration pressure?",
-    "options": ["Aldosterone", "ADH", "Angiotensin II", "ANP"],
+    "options": [
+      "Aldosterone",
+      "ADH",
+      "Angiotensin II",
+      "ANP"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "glomeruli"],
     "short_explanation": "Angiotensin II maintains filtration by constricting efferent arterioles.",
     "long_explanation": "By narrowing the efferent arteriole, angiotensin II increases pressure in the glomerulus, sustaining filtration during low blood volume or pressure.",
     "clinical_application": "Understanding hormonal control of GFR helps explain how massage may aid stress reduction and blood pressure balance.",
     "source_reference": "Guyton – Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "hard",
@@ -186,21 +231,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["angiotensin", "filtration", "kidney"],
-    "keywords": ["efferent arteriole", "GFR control", "renin-angiotensin"],
+    "tags": [
+      "angiotensin",
+      "filtration",
+      "kidney"
+    ],
+    "keywords": [
+      "efferent arteriole",
+      "GFR control",
+      "renin-angiotensin"
+    ],
     "synonyms": null
   },
   {
     "id": "glomeruli_008",
     "correctAnswer": "Diabetes mellitus",
     "question": "Which condition may damage glomeruli and reduce filtration ability?",
-    "options": ["Diabetes mellitus", "Asthma", "Osteoarthritis", "Psoriasis"],
+    "options": [
+      "Diabetes mellitus",
+      "Asthma",
+      "Osteoarthritis",
+      "Psoriasis"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "glomeruli"],
     "short_explanation": "Diabetes can damage glomerular capillaries.",
     "long_explanation": "Chronic high blood glucose damages the glomerular basement membrane, leading to proteinuria and nephropathy. This is a major cause of renal failure.",
     "clinical_application": "Massage therapists must adjust techniques for diabetic clients with renal issues.",
     "source_reference": "Robbins – Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "medium",
@@ -209,8 +266,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diabetes", "glomerulus", "nephropathy"],
-    "keywords": ["proteinuria", "diabetic nephropathy", "renal disease"],
+    "tags": [
+      "diabetes",
+      "glomerulus",
+      "nephropathy"
+    ],
+    "keywords": [
+      "proteinuria",
+      "diabetic nephropathy",
+      "renal disease"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +293,6 @@
     "long_explanation": "Blood enters via the afferent arteriole, filters in the glomerulus, and exits through the efferent arteriole, which then branches into capillaries around the nephron.",
     "clinical_application": "Anatomy of blood flow informs massage contraindications in renal hypertension.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "easy",
@@ -237,21 +301,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["efferent", "glomerulus", "arteriole"],
-    "keywords": ["blood flow", "renal vessel", "glomerular loop"],
+    "tags": [
+      "efferent",
+      "glomerulus",
+      "arteriole"
+    ],
+    "keywords": [
+      "blood flow",
+      "renal vessel",
+      "glomerular loop"
+    ],
     "synonyms": null
   },
   {
     "id": "glomeruli_010",
     "correctAnswer": "Red blood cells",
     "question": "Which component does NOT normally pass through the glomerular filtration barrier?",
-    "options": ["Sodium", "Water", "Glucose", "Red blood cells"],
+    "options": [
+      "Sodium",
+      "Water",
+      "Glucose",
+      "Red blood cells"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "glomeruli"],
     "short_explanation": "RBCs are too large to pass through the filtration barrier.",
     "long_explanation": "The glomerular barrier allows water and small solutes like glucose and sodium to pass, but it blocks blood cells and most proteins to preserve blood composition.",
     "clinical_application": "Presence of blood in urine may suggest damage to the glomerular barrier—an important client health flag.",
     "source_reference": "Tortora – Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/glomeruli.json",
     "question_type": null,
     "difficulty": "medium",
@@ -260,8 +336,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["glomerular", "filtration", "urine"],
-    "keywords": ["blood cells", "glomerular damage", "filtration membrane"],
+    "tags": [
+      "glomerular",
+      "filtration",
+      "urine"
+    ],
+    "keywords": [
+      "blood cells",
+      "glomerular damage",
+      "filtration membrane"
+    ],
     "synonyms": null
   }
 ]

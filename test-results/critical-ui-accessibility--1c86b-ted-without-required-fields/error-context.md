@@ -1,0 +1,55 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- 'progressbar "Quiz progress: 0%"'
+- text: 0 %
+- group "Question Progress":
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+  - button
+- group "Where does the internal oblique muscle originate?":
+  - text: Where does the internal oblique muscle originate?
+  - list:
+    - listitem:
+      - 'radio "Option A: Thoracolumbar fascia, iliac crest, and inguinal ligament"'
+      - text: A. Thoracolumbar fascia, iliac crest, and inguinal ligament
+    - listitem:
+      - 'radio "Option B: Costal cartilages of ribs 5–7"'
+      - text: B. Costal cartilages of ribs 5–7
+    - listitem:
+      - 'radio "Option C: Pubic symphysis"'
+      - text: C. Pubic symphysis
+    - listitem:
+      - 'radio "Option D: Anterior superior iliac spine"'
+      - text: D. Anterior superior iliac spine
+- text: "Quick Tip: The internal oblique arises from fascia and bony landmarks of the lower torso. More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents. Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy. Source: Anatomy Trains – Myers Tags: internal oblique, origin, fascia, iliac Keywords: inguinal, abdominal wall, core"
+- button "Previous question" [disabled]: Previous
+- button "Next question" [disabled]: Next
+- button "Finish quiz early": Finish
+- contentinfo:
+  - textbox "Search questions"
+```

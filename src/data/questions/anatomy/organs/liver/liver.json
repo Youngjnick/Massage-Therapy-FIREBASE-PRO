@@ -14,7 +14,6 @@
     "long_explanation": "The liver plays a key role in metabolizing carbohydrates, proteins, and fats, detoxifying substances, and storing glycogen, vitamins, and minerals.",
     "clinical_application": "Clients with liver dysfunction may experience fatigue or poor metabolism; therapists should be aware of signs that suggest systemic dysfunction.",
     "source_reference": "Tortora – Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["liver", "metabolism", "detoxification"],
-    "keywords": ["liver function", "metabolism", "detox", "nutrients"],
+    "tags": [
+      "liver",
+      "metabolism",
+      "detoxification"
+    ],
+    "keywords": [
+      "liver function",
+      "metabolism",
+      "detox",
+      "nutrients"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "Bile produced in the liver travels through the common hepatic duct toward the cystic duct, which directs it into the gallbladder for storage.",
     "clinical_application": "Understanding bile pathways is crucial in recognizing symptoms of liver or gallbladder obstruction, such as jaundice.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -51,21 +58,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bile ducts", "hepatic system"],
-    "keywords": ["common hepatic duct", "bile transport", "gallbladder"],
+    "tags": [
+      "bile ducts",
+      "hepatic system"
+    ],
+    "keywords": [
+      "common hepatic duct",
+      "bile transport",
+      "gallbladder"
+    ],
     "synonyms": null
   },
   {
     "id": "liver_003",
     "correctAnswer": "Vitamin B12",
     "question": "Which vitamin is primarily stored in the liver?",
-    "options": ["Vitamin C", "Vitamin B12", "Vitamin D", "Vitamin K"],
+    "options": [
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin D",
+      "Vitamin K"
+    ],
     "topics": ["anatomy", "organs", "liver", "liver"],
     "short_explanation": "The liver stores vitamin B12.",
     "long_explanation": "The liver acts as a storage site for fat-soluble vitamins and B12. It holds several years' supply of B12, essential for red blood cell production and neurological function.",
     "clinical_application": "Deficiencies may arise in liver disease, and massage therapists should note signs of fatigue or neurological symptoms that may be related.",
     "source_reference": "Nutrition: Concepts and Controversies",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vitamin storage", "liver", "B12"],
-    "keywords": ["vitamin B12", "liver storage", "nutrition"],
+    "tags": [
+      "vitamin storage",
+      "liver",
+      "B12"
+    ],
+    "keywords": [
+      "vitamin B12",
+      "liver storage",
+      "nutrition"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "The liver produces bile but does not store it. Storage occurs in the gallbladder. The liver regulates blood glucose, detoxifies toxins, and produces essential proteins.",
     "clinical_application": "Clarifying organ roles is key in understanding digestive complaints and knowing when to refer clients for medical evaluation.",
     "source_reference": "Guyton and Hall – Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["liver", "gallbladder", "bile"],
-    "keywords": ["bile storage", "plasma proteins", "detox"],
+    "tags": [
+      "liver",
+      "gallbladder",
+      "bile"
+    ],
+    "keywords": [
+      "bile storage",
+      "plasma proteins",
+      "detox"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "Kupffer cells are specialized macrophages within liver sinusoids that remove bacteria, debris, and old red blood cells from the blood.",
     "clinical_application": "These cells help prevent infection; compromised liver immunity may lead to increased systemic infections.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -130,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["liver immune", "Kupffer cells", "macrophages"],
-    "keywords": ["phagocytosis", "sinusoids", "immune function"],
+    "tags": [
+      "liver immune",
+      "Kupffer cells",
+      "macrophages"
+    ],
+    "keywords": [
+      "phagocytosis",
+      "sinusoids",
+      "immune function"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +189,6 @@
     "long_explanation": "The portal vein carries blood rich in nutrients and toxins from the stomach, intestines, and spleen to the liver for filtration, metabolism, and detoxification.",
     "clinical_application": "Portal circulation is essential for nutrient processing. Disruption can lead to portal hypertension, affecting systemic circulation and digestion.",
     "source_reference": "Clinically Oriented Anatomy – Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -158,21 +197,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["portal circulation", "hepatic blood flow"],
-    "keywords": ["portal vein", "nutrient transport", "GI circulation"],
+    "tags": [
+      "portal circulation",
+      "hepatic blood flow"
+    ],
+    "keywords": [
+      "portal vein",
+      "nutrient transport",
+      "GI circulation"
+    ],
     "synonyms": null
   },
   {
     "id": "liver_007",
     "correctAnswer": "Cirrhosis",
     "question": "Which condition results from chronic liver damage and leads to scarring of liver tissue?",
-    "options": ["Hepatitis", "Cholecystitis", "Cirrhosis", "Pancreatitis"],
+    "options": [
+      "Hepatitis",
+      "Cholecystitis",
+      "Cirrhosis",
+      "Pancreatitis"
+    ],
     "topics": ["anatomy", "organs", "liver", "liver"],
     "short_explanation": "Cirrhosis is the scarring of liver tissue due to chronic damage.",
     "long_explanation": "Cirrhosis develops when liver cells are repeatedly damaged and replaced by fibrous scar tissue, compromising liver function and blood flow.",
     "clinical_application": "Massage therapists should be cautious with clients diagnosed with cirrhosis due to possible clotting issues, fluid retention, or fatigue.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -181,21 +231,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["liver disease", "fibrosis", "cirrhosis"],
-    "keywords": ["chronic liver disease", "scarring", "fibrosis"],
+    "tags": [
+      "liver disease",
+      "fibrosis",
+      "cirrhosis"
+    ],
+    "keywords": [
+      "chronic liver disease",
+      "scarring",
+      "fibrosis"
+    ],
     "synonyms": null
   },
   {
     "id": "liver_008",
     "correctAnswer": "Alcohol",
     "question": "Which substance is primarily broken down by the liver to reduce toxicity?",
-    "options": ["Lactic acid", "Alcohol", "Glucose", "Calcium"],
+    "options": [
+      "Lactic acid",
+      "Alcohol",
+      "Glucose",
+      "Calcium"
+    ],
     "topics": ["anatomy", "organs", "liver", "liver"],
     "short_explanation": "The liver breaks down alcohol to reduce toxicity.",
     "long_explanation": "The liver uses enzymes such as alcohol dehydrogenase to metabolize ethanol into less harmful substances. Excessive alcohol intake can overwhelm this system and damage liver cells.",
     "clinical_application": "Clients with alcohol-related liver strain may benefit from detox-focused lifestyle recommendations, though medical referral is necessary.",
     "source_reference": "Guyton & Hall – Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -204,8 +266,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["alcohol metabolism", "liver detoxification"],
-    "keywords": ["ethanol", "toxic breakdown", "liver enzymes"],
+    "tags": [
+      "alcohol metabolism",
+      "liver detoxification"
+    ],
+    "keywords": [
+      "ethanol",
+      "toxic breakdown",
+      "liver enzymes"
+    ],
     "synonyms": null
   },
   {
@@ -223,7 +292,6 @@
     "long_explanation": "The liver produces bile, which contains bile salts that emulsify dietary fats, allowing lipase enzymes to digest them more effectively in the small intestine.",
     "clinical_application": "Poor bile production may lead to fat malabsorption and related issues such as nutrient deficiencies and digestive discomfort.",
     "source_reference": "Tortora – Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -232,21 +300,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bile", "fat digestion", "liver function"],
-    "keywords": ["bile salts", "emulsification", "lipid processing"],
+    "tags": [
+      "bile",
+      "fat digestion",
+      "liver function"
+    ],
+    "keywords": [
+      "bile salts",
+      "emulsification",
+      "lipid processing"
+    ],
     "synonyms": null
   },
   {
     "id": "liver_010",
     "correctAnswer": "Cholecystokinin (CCK)",
     "question": "Which hormone stimulates bile release indirectly by contracting the gallbladder?",
-    "options": ["Secretin", "Cholecystokinin (CCK)", "Insulin", "Gastrin"],
+    "options": [
+      "Secretin",
+      "Cholecystokinin (CCK)",
+      "Insulin",
+      "Gastrin"
+    ],
     "topics": ["anatomy", "organs", "liver", "liver"],
     "short_explanation": "CCK triggers the gallbladder to release bile.",
     "long_explanation": "Cholecystokinin (CCK) is secreted by the small intestine in response to fat. It signals the gallbladder to contract, releasing stored bile to aid in lipid digestion.",
     "clinical_application": "Understanding this pathway is vital for digestive massage, especially in clients with gallbladder or biliary issues.",
     "source_reference": "Guyton & Hall – Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/liver/liver.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -255,7 +335,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CCK", "hormone", "bile release"],
+    "tags": [
+      "CCK",
+      "hormone",
+      "bile release"
+    ],
     "keywords": [
       "cholecystokinin",
       "gallbladder contraction",

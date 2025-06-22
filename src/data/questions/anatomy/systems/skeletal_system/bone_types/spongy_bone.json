@@ -3,19 +3,17 @@
     "id": "spongy_bone_001",
     "correctAnswer": "Trabeculae",
     "question": "What is a defining structural feature of spongy bone?",
-    "options": ["Trabeculae", "Osteons", "Cartilage pads", "Synovial sacs"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
+    "options": [
+      "Trabeculae",
+      "Osteons",
+      "Cartilage pads",
+      "Synovial sacs"
     ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Spongy bone contains trabeculae, a lattice-like network.",
     "long_explanation": "Spongy bone, or cancellous bone, is made up of trabeculae—thin columns and plates of bone that form a porous network. This structure helps reduce bone weight while supporting internal stress lines.",
     "clinical_application": "Knowing the structure of spongy bone is essential when considering fractures in areas like the vertebrae or pelvis where trabecular bone dominates.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -24,27 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trabeculae", "bone structure", "sponge-like"],
-    "keywords": ["trabeculae", "lattice", "porous bone"],
-    "synonyms": ["cancellous", "trabecular bone"]
+    "tags": [
+      "trabeculae",
+      "bone structure",
+      "sponge-like"
+    ],
+    "keywords": [
+      "trabeculae",
+      "lattice",
+      "porous bone"
+    ],
+    "synonyms": [
+      "cancellous",
+      "trabecular bone"
+    ]
   },
   {
     "id": "spongy_bone_002",
     "correctAnswer": "Epiphyses",
     "question": "Where is spongy bone primarily located in long bones?",
-    "options": ["Epiphyses", "Diaphyses", "Periosteum", "Medullary cavity"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
+    "options": [
+      "Epiphyses",
+      "Diaphyses",
+      "Periosteum",
+      "Medullary cavity"
     ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Spongy bone is mainly found in the epiphyses of long bones.",
     "long_explanation": "The epiphyses, or ends, of long bones are composed of spongy bone. This trabecular region helps absorb shock and lighten the overall bone structure.",
     "clinical_application": "Therapists should be mindful of fracture-prone epiphyses when treating elderly clients or those with osteoporosis.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -53,27 +60,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["epiphysis", "long bone", "trabecular bone"],
-    "keywords": ["long bones", "bone ends", "epiphyses"],
-    "synonyms": ["bone ends", "trabecular region"]
+    "tags": [
+      "epiphysis",
+      "long bone",
+      "trabecular bone"
+    ],
+    "keywords": [
+      "long bones",
+      "bone ends",
+      "epiphyses"
+    ],
+    "synonyms": [
+      "bone ends",
+      "trabecular region"
+    ]
   },
   {
     "id": "spongy_bone_003",
     "correctAnswer": "Osteoblasts",
     "question": "Which type of bone cell is most active in remodeling spongy bone?",
-    "options": ["Osteoblasts", "Chondrocytes", "Osteoclasts", "Fibroblasts"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
+    "options": [
+      "Osteoblasts",
+      "Chondrocytes",
+      "Osteoclasts",
+      "Fibroblasts"
     ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Osteoblasts build new bone during remodeling.",
     "long_explanation": "Osteoblasts are responsible for synthesizing new bone matrix during remodeling, especially important in the trabecular structure of spongy bone where turnover is higher than in compact bone.",
     "clinical_application": "Understanding osteoblast activity is important for massage therapists working with clients recovering from fractures or managing bone density issues.",
     "source_reference": "Mosby's Anatomy and Physiology, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -82,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["osteoblast", "bone cell", "bone remodeling"],
-    "keywords": ["osteoblasts", "remodeling", "bone repair"],
-    "synonyms": ["bone formation cells", "bone-building cells"]
+    "tags": [
+      "osteoblast",
+      "bone cell",
+      "bone remodeling"
+    ],
+    "keywords": [
+      "osteoblasts",
+      "remodeling",
+      "bone repair"
+    ],
+    "synonyms": [
+      "bone formation cells",
+      "bone-building cells"
+    ]
   },
   {
     "id": "spongy_bone_004",
@@ -96,18 +123,11 @@
       "Lack of marrow",
       "External muscle attachment"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Its porous structure reduces density and weight.",
     "long_explanation": "Spongy bone’s trabecular architecture includes numerous air spaces, which make it significantly lighter than dense, solid compact bone. This allows easier movement and flexibility in the skeleton.",
     "clinical_application": "This feature is critical in reducing the load on joints, especially in weight-bearing bones such as the pelvis and vertebrae.",
     "source_reference": "Anatomy Trains, 3rd Ed., Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -116,27 +136,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bone weight", "structure", "density"],
-    "keywords": ["porous", "lightweight", "skeleton"],
-    "synonyms": ["light bone", "air spaces"]
+    "tags": [
+      "bone weight",
+      "structure",
+      "density"
+    ],
+    "keywords": [
+      "porous",
+      "lightweight",
+      "skeleton"
+    ],
+    "synonyms": [
+      "light bone",
+      "air spaces"
+    ]
   },
   {
     "id": "spongy_bone_005",
     "correctAnswer": "Sternum",
     "question": "In which of the following bones is spongy bone especially abundant?",
-    "options": ["Sternum", "Femur", "Mandible", "Clavicle"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
+    "options": [
+      "Sternum",
+      "Femur",
+      "Mandible",
+      "Clavicle"
     ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Spongy bone is prominent in flat bones like the sternum.",
     "long_explanation": "Flat bones such as the sternum, ribs, and skull have a layer of spongy bone sandwiched between two layers of compact bone. This structure supports hematopoiesis and absorbs mechanical stress.",
     "clinical_application": "Massage pressure over the sternum should be light due to the underlying spongy bone and its marrow content.",
     "source_reference": "Understanding Pathophysiology, Huether & McCance",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Intermediate",
@@ -145,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["flat bones", "spongy", "sternum"],
-    "keywords": ["sternum", "flat bone", "marrow"],
-    "synonyms": ["flat bone", "breastbone"]
+    "tags": [
+      "flat bones",
+      "spongy",
+      "sternum"
+    ],
+    "keywords": [
+      "sternum",
+      "flat bone",
+      "marrow"
+    ],
+    "synonyms": [
+      "flat bone",
+      "breastbone"
+    ]
   },
   {
     "id": "spongy_bone_006",
@@ -159,18 +199,11 @@
       "Compact bone",
       "Periosteum"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "The spaces are filled with red bone marrow.",
     "long_explanation": "Spongy bone has numerous spaces within its trabecular framework, which are filled with red bone marrow that plays a vital role in hematopoiesis.",
     "clinical_application": "Understanding the marrow content of spongy bone helps massage therapists appreciate systemic conditions like anemia or leukemia that originate here.",
     "source_reference": "Anatomy Trains, 3rd Ed., Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Intermediate",
@@ -179,9 +212,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["red marrow", "hematopoiesis", "spongy bone"],
-    "keywords": ["bone marrow", "trabecular spaces", "blood cell formation"],
-    "synonyms": ["marrow-filled", "hematopoietic bone"]
+    "tags": [
+      "red marrow",
+      "hematopoiesis",
+      "spongy bone"
+    ],
+    "keywords": [
+      "bone marrow",
+      "trabecular spaces",
+      "blood cell formation"
+    ],
+    "synonyms": [
+      "marrow-filled",
+      "hematopoietic bone"
+    ]
   },
   {
     "id": "spongy_bone_007",
@@ -193,18 +237,11 @@
       "Osteoid bone",
       "Periosteal bone"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Spongy bone is also called cancellous bone.",
     "long_explanation": "Spongy bone, known for its porous appearance, is interchangeably referred to as cancellous bone due to its lattice-like structure formed by trabeculae.",
     "clinical_application": "Massage therapists may encounter the term 'cancellous bone' in anatomical charts or assessments when discussing bone health.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -213,9 +250,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cancellous bone", "bone structure"],
-    "keywords": ["trabeculae", "spongy", "bone terms"],
-    "synonyms": ["cancellous bone", "trabecular bone"]
+    "tags": [
+      "cancellous bone",
+      "bone structure"
+    ],
+    "keywords": [
+      "trabeculae",
+      "spongy",
+      "bone terms"
+    ],
+    "synonyms": [
+      "cancellous bone",
+      "trabecular bone"
+    ]
   },
   {
     "id": "spongy_bone_008",
@@ -227,18 +274,11 @@
       "Store energy",
       "Secrete synovial fluid"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "They support force distribution within bones.",
     "long_explanation": "Trabeculae are oriented along lines of mechanical stress and serve to efficiently distribute force, protecting bone from fractures and conserving weight.",
     "clinical_application": "This architectural efficiency is relevant when considering movement patterns, injury recovery, and postural assessment in bodywork.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -247,9 +287,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trabeculae", "stress distribution", "bone architecture"],
-    "keywords": ["structural support", "trabecular orientation", "bone stress"],
-    "synonyms": ["trabecular support", "force distribution"]
+    "tags": [
+      "trabeculae",
+      "stress distribution",
+      "bone architecture"
+    ],
+    "keywords": [
+      "structural support",
+      "trabecular orientation",
+      "bone stress"
+    ],
+    "synonyms": [
+      "trabecular support",
+      "force distribution"
+    ]
   },
   {
     "id": "spongy_bone_009",
@@ -261,18 +312,11 @@
       "Mandible and clavicle",
       "Sternum and ribs"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Short bones such as the carpals and tarsals are mostly spongy bone.",
     "long_explanation": "Bones like the carpals and tarsals are categorized as short bones and are composed mainly of spongy bone surrounded by a thin layer of compact bone.",
     "clinical_application": "Therapists massaging the hands and feet should be aware of their delicate trabecular structure, especially in clients with osteoporosis.",
     "source_reference": "Mosby's Anatomy and Physiology, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -281,9 +325,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["short bones", "spongy composition", "carpals", "tarsals"],
-    "keywords": ["short bone", "spongy dominant", "bone classification"],
-    "synonyms": ["short bones", "hand and foot bones"]
+    "tags": [
+      "short bones",
+      "spongy composition",
+      "carpals",
+      "tarsals"
+    ],
+    "keywords": [
+      "short bone",
+      "spongy dominant",
+      "bone classification"
+    ],
+    "synonyms": [
+      "short bones",
+      "hand and foot bones"
+    ]
   },
   {
     "id": "spongy_bone_010",
@@ -295,18 +351,11 @@
       "It becomes compact with age",
       "Its marrow converts to fat early"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "spongy_bone"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "spongy_bone"],
     "short_explanation": "Its high surface area makes it more susceptible to resorption.",
     "long_explanation": "Due to its porous structure and greater surface area, spongy bone undergoes faster remodeling and is more vulnerable to imbalances in bone resorption versus formation, as seen in osteoporosis.",
     "clinical_application": "Massage practitioners should note that compression or deep pressure over vertebrae or hips in osteoporotic clients should be minimized.",
     "source_reference": "Understanding Pathophysiology, Huether & McCance",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/spongy_bone.json",
     "question_type": "Multiple Choice",
     "difficulty": "Intermediate",
@@ -315,8 +364,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["osteoporosis", "bone resorption", "spongy bone"],
-    "keywords": ["fragility", "bone density", "trabecular loss"],
-    "synonyms": ["osteoporotic bone", "trabecular loss"]
+    "tags": [
+      "osteoporosis",
+      "bone resorption",
+      "spongy bone"
+    ],
+    "keywords": [
+      "fragility",
+      "bone density",
+      "trabecular loss"
+    ],
+    "synonyms": [
+      "osteoporotic bone",
+      "trabecular loss"
+    ]
   }
 ]

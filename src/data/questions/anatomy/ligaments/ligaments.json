@@ -14,7 +14,6 @@
     "long_explanation": "The ACL runs from the femur to the tibia inside the knee joint. It is a key stabilizer that prevents anterior translation of the tibia, especially during activities like pivoting or jumping.",
     "clinical_application": "In massage therapy, clients with ACL tears may present with knee instability. Post-rehab massage can support surrounding musculature but avoid deep work near acute injuries.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,7 +22,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee joint", "ACL", "ligament"],
+    "tags": [
+      "knee joint",
+      "ACL",
+      "ligament"
+    ],
     "keywords": [
       "anterior cruciate ligament",
       "tibia",
@@ -47,7 +50,6 @@
     "long_explanation": "Running along the anterior surfaces of the vertebral bodies, the anterior longitudinal ligament helps maintain vertebral alignment and limits spinal extension, especially during backward bending.",
     "clinical_application": "Clients with poor postural habits may benefit from massage to reduce hypertonicity in spinal extensors that place strain on this ligament.",
     "source_reference": "Clinically Oriented Anatomy (Moore & Dalley)",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -56,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["spinal column", "ligaments", "hyperextension"],
-    "keywords": ["anterior longitudinal", "vertebrae", "spinal stability"],
+    "tags": [
+      "spinal column",
+      "ligaments",
+      "hyperextension"
+    ],
+    "keywords": [
+      "anterior longitudinal",
+      "vertebrae",
+      "spinal stability"
+    ],
     "synonyms": null
   },
   {
@@ -75,7 +85,6 @@
     "long_explanation": "Also known as the transverse carpal ligament, the flexor retinaculum stretches from the pisiform and hamate to the scaphoid and trapezium bones. It protects the median nerve and finger flexor tendons.",
     "clinical_application": "Carpal tunnel syndrome often involves compression of the median nerve beneath this ligament. Massage can support surrounding tissues but avoid pressure directly over inflamed areas.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -84,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["carpal tunnel", "flexor retinaculum", "wrist"],
-    "keywords": ["median nerve", "ligament", "wrist anatomy"],
+    "tags": [
+      "carpal tunnel",
+      "flexor retinaculum",
+      "wrist"
+    ],
+    "keywords": [
+      "median nerve",
+      "ligament",
+      "wrist anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -103,7 +120,6 @@
     "long_explanation": "The plantar calcaneonavicular (spring) ligament maintains the arch by holding the navicular bone in position and supporting the head of the talus. It's crucial for shock absorption during gait.",
     "clinical_application": "Massage therapists working with clients who have flat feet or plantar fasciitis may consider techniques to support this ligament’s function by releasing surrounding structures.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -112,21 +128,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["arch support", "foot ligament", "spring ligament"],
-    "keywords": ["plantar", "calcaneonavicular", "medial arch"],
+    "tags": [
+      "arch support",
+      "foot ligament",
+      "spring ligament"
+    ],
+    "keywords": [
+      "plantar",
+      "calcaneonavicular",
+      "medial arch"
+    ],
     "synonyms": null
   },
   {
     "id": "ligaments_005",
     "correctAnswer": "Cervical spine",
     "question": "The ligamentum nuchae is found in which region of the body?",
-    "options": ["Pelvis", "Cervical spine", "Knee", "Shoulder"],
+    "options": [
+      "Pelvis",
+      "Cervical spine",
+      "Knee",
+      "Shoulder"
+    ],
     "topics": ["anatomy", "ligaments", "ligaments"],
     "short_explanation": "The ligamentum nuchae spans the back of the neck.",
     "long_explanation": "This ligament runs from the external occipital protuberance to the cervical spinous processes, stabilizing the head and neck during motion. It serves as an attachment for several posterior neck muscles.",
     "clinical_application": "Chronic neck tension may involve strain on this ligament. Massage techniques that reduce upper trapezius and suboccipital tension can help.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -135,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["neck", "ligamentum nuchae", "cervical region"],
-    "keywords": ["posterior neck", "ligament", "cervical stability"],
+    "tags": [
+      "neck",
+      "ligamentum nuchae",
+      "cervical region"
+    ],
+    "keywords": [
+      "posterior neck",
+      "ligament",
+      "cervical stability"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +190,6 @@
     "long_explanation": "Located on the lateral aspect of the ankle, the ATFL connects the fibula to the talus and is stressed during plantarflexion and inversion. It's the most frequently injured ligament in ankle sprains.",
     "clinical_application": "Massage should avoid acute sprains but can be used in subacute stages to improve circulation, reduce swelling, and release compensatory tension.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ankle", "sprain", "ATFL"],
-    "keywords": ["anterior talofibular", "ankle ligament", "inversion injury"],
+    "tags": [
+      "ankle",
+      "sprain",
+      "ATFL"
+    ],
+    "keywords": [
+      "anterior talofibular",
+      "ankle ligament",
+      "inversion injury"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "The transverse ligament of the atlas is a strong band that spans the ring of the atlas and secures the dens (odontoid process) of the axis in place. This prevents spinal cord compression during head movement.",
     "clinical_application": "In cervical instability or trauma, this ligament may be compromised. Massage should avoid deep pressure in the upper cervical region without medical clearance.",
     "source_reference": "Clinically Oriented Anatomy (Moore & Dalley)",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -191,8 +233,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cervical spine", "transverse ligament", "dens"],
-    "keywords": ["atlas", "axis", "odontoid", "cervical stability"],
+    "tags": [
+      "cervical spine",
+      "transverse ligament",
+      "dens"
+    ],
+    "keywords": [
+      "atlas",
+      "axis",
+      "odontoid",
+      "cervical stability"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +261,6 @@
     "long_explanation": "The superior pubic ligament stabilizes the anterior pelvis by connecting the pubic bones superiorly. It complements the interpubic disc and supports pelvic alignment.",
     "clinical_application": "Pelvic instability or discomfort in prenatal/postpartum clients may involve this structure. Massage can address tension in adjacent adductors or abdominal muscles.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,8 +269,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pelvis", "pubic symphysis", "ligament"],
-    "keywords": ["superior pubic", "pelvic girdle", "anterior pelvis"],
+    "tags": [
+      "pelvis",
+      "pubic symphysis",
+      "ligament"
+    ],
+    "keywords": [
+      "superior pubic",
+      "pelvic girdle",
+      "anterior pelvis"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +296,6 @@
     "long_explanation": "The interosseous membrane is a fibrous sheet connecting the shafts of the radius and ulna. It stabilizes the forearm during supination and pronation while providing attachment sites for muscles.",
     "clinical_application": "Forearm pain or overuse injuries (e.g., from gripping tools) may affect this region. Massage techniques can improve function of associated muscles and fascia.",
     "source_reference": "Atlas of Anatomy by Gilroy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -247,7 +304,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["forearm", "radius", "ulna"],
+    "tags": [
+      "forearm",
+      "radius",
+      "ulna"
+    ],
     "keywords": [
       "interosseous membrane",
       "forearm stability",
@@ -270,7 +331,6 @@
     "long_explanation": "The superior, middle, and inferior glenohumeral ligaments reinforce the anterior capsule of the shoulder joint. They resist external rotation and anterior translation of the humeral head.",
     "clinical_application": "In clients with anterior shoulder instability or throwing injuries, massage can support surrounding musculature while avoiding overstretching the joint capsule.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/ligaments/ligaments.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -279,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder joint", "ligaments", "stability"],
-    "keywords": ["glenohumeral", "rotator cuff", "capsular ligaments"],
+    "tags": [
+      "shoulder joint",
+      "ligaments",
+      "stability"
+    ],
+    "keywords": [
+      "glenohumeral",
+      "rotator cuff",
+      "capsular ligaments"
+    ],
     "synonyms": null
   }
 ]

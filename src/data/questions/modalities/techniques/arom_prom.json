@@ -14,7 +14,6 @@
     "long_explanation": "ROM (Range of Motion) refers to the full movement potential of a joint, usually measured in degrees. It's essential for evaluating flexibility and function.",
     "clinical_application": "Massage therapists assess ROM to tailor treatments, reduce restrictions, and restore joint mobility, especially post-injury or in chronic conditions.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anatomy_joint", "mobility_assessment", "clinical_evaluation"],
-    "keywords": ["ROM", "range of motion", "flexibility", "joint mobility"],
+    "tags": [
+      "anatomy_joint",
+      "mobility_assessment",
+      "clinical_evaluation"
+    ],
+    "keywords": [
+      "ROM",
+      "range of motion",
+      "flexibility",
+      "joint mobility"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "AROM involves voluntary contraction of muscles by the client without external aid. It's used to evaluate neuromuscular function and pain tolerance.",
     "clinical_application": "Therapists assess AROM to gauge muscle strength, neurological control, and joint integrity before applying deeper techniques.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -51,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["client_active", "assessment_arom", "anatomy_muscles"],
-    "keywords": ["active motion", "self-initiated movement", "client control"],
+    "tags": [
+      "client_active",
+      "assessment_arom",
+      "anatomy_muscles"
+    ],
+    "keywords": [
+      "active motion",
+      "self-initiated movement",
+      "client control"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +85,6 @@
     "long_explanation": "PROM is used when the therapist or device moves the joint while the client remains passive. It's important for assessing joint health and flexibility when muscle activity is limited.",
     "clinical_application": "PROM is often used post-surgery, with stroke clients, or in pain management to restore mobility without overloading the system.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -79,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["therapist_passive", "assessment_prom", "rehab_technique"],
-    "keywords": ["passive motion", "joint mobility", "therapist-guided"],
+    "tags": [
+      "therapist_passive",
+      "assessment_prom",
+      "rehab_technique"
+    ],
+    "keywords": [
+      "passive motion",
+      "joint mobility",
+      "therapist-guided"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +120,6 @@
     "long_explanation": "Unlike AROM, PROM is done without client effort. It helps evaluate ligament flexibility, joint function, and connective tissue integrity.",
     "clinical_application": "Used in rehab settings when clients can't move independently or when guarding is present due to pain or neurological conditions.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -107,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint_assist", "mobility_passive", "rehab_care"],
-    "keywords": ["passive motion", "therapist movement", "flexibility test"],
+    "tags": [
+      "joint_assist",
+      "mobility_passive",
+      "rehab_care"
+    ],
+    "keywords": [
+      "passive motion",
+      "therapist movement",
+      "flexibility test"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "Measuring ROM is foundational for evaluating posture, functional mobility, and treatment progress. It provides baseline and comparison data for care planning.",
     "clinical_application": "Therapists use ROM data to detect asymmetries, joint dysfunctions, or progress after therapeutic interventions.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -135,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["assessment", "joint_function", "movement_evaluation"],
-    "keywords": ["ROM benefit", "functional test", "flexibility"],
+    "tags": [
+      "assessment",
+      "joint_function",
+      "movement_evaluation"
+    ],
+    "keywords": [
+      "ROM benefit",
+      "functional test",
+      "flexibility"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +190,6 @@
     "long_explanation": "If a client can't fully move a joint through AROM, it often indicates muscle strain, nerve inhibition, or pain guarding rather than joint damage.",
     "clinical_application": "Identifying this helps differentiate whether the problem is muscular, neural, or joint-related--informing the massage strategy.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -163,8 +198,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["clinical_screening", "muscle_condition", "client_evaluation"],
-    "keywords": ["weakness", "neuromuscular", "pain restriction"],
+    "tags": [
+      "clinical_screening",
+      "muscle_condition",
+      "client_evaluation"
+    ],
+    "keywords": [
+      "weakness",
+      "neuromuscular",
+      "pain restriction"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "PROM being greater than AROM suggests the joint is capable of full range, but the client's muscles or nervous system can't engage it.",
     "clinical_application": "Useful in detecting early-stage weakness, guarding, or neuromuscular disorders like MS or Parkinson's.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -191,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["neuromuscular", "comparison_screening", "rom_discrepancy"],
-    "keywords": ["AROM PROM difference", "motor control", "functional deficit"],
+    "tags": [
+      "neuromuscular",
+      "comparison_screening",
+      "rom_discrepancy"
+    ],
+    "keywords": [
+      "AROM PROM difference",
+      "motor control",
+      "functional deficit"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +260,6 @@
     "long_explanation": "In healthy individuals, PROM exceeds AROM slightly due to the absence of muscular limitations or pain inhibition.",
     "clinical_application": "Important for distinguishing muscular limitations vs. joint or capsular restrictions in therapy.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -219,8 +268,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rom_range", "motion_analysis"],
-    "keywords": ["PROM > AROM", "flexibility", "passive range"],
+    "tags": [
+      "rom_range",
+      "motion_analysis"
+    ],
+    "keywords": [
+      "PROM > AROM",
+      "flexibility",
+      "passive range"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +294,6 @@
     "long_explanation": "PROM allows for safe assessment of joint mobility when clients are immobilized, in acute pain, or unconscious.",
     "clinical_application": "Applied in medical massage, hospice care, or post-injury evaluations when client movement is contraindicated.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -247,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["acute_pain", "passive_assessment", "limited_client_mobility"],
-    "keywords": ["passive exam", "non-voluntary movement", "rehab"],
+    "tags": [
+      "acute_pain",
+      "passive_assessment",
+      "limited_client_mobility"
+    ],
+    "keywords": [
+      "passive exam",
+      "non-voluntary movement",
+      "rehab"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +329,6 @@
     "long_explanation": "This tool helps therapists quantify ROM in degrees, allowing consistent tracking of mobility gains or losses.",
     "clinical_application": "Goniometers are used in assessments, insurance documentation, and rehab progress reports.",
     "source_reference": "FSMTB, Trail Guide to Movement, Salvo",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/arom_prom.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -275,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["measurement_tools", "goniometry", "clinical_data"],
-    "keywords": ["goniometer", "angle measurement", "mobility tracking"],
+    "tags": [
+      "measurement_tools",
+      "goniometry",
+      "clinical_data"
+    ],
+    "keywords": [
+      "goniometer",
+      "angle measurement",
+      "mobility tracking"
+    ],
     "synonyms": null
   }
 ]

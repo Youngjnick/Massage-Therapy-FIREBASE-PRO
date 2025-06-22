@@ -14,7 +14,6 @@
     "long_explanation": "EHL originates on the fibula and inserts on the distal phalanx of the hallux, enabling full extension of the big toe during swing phase of gait.",
     "clinical_application": "Weakness here can lead to toe drag during walking, common in foot drop.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -47,7 +46,10 @@
       "muscle_abductor_hallucis",
       "bone_fibula"
     ],
-    "synonyms": ["EHL", "toe lifter"]
+    "synonyms": [
+      "EHL",
+      "toe lifter"
+    ]
   },
   {
     "id": "foot_extensors_002",
@@ -64,7 +66,6 @@
     "long_explanation": "EDL originates from the tibia/fibula and extends down to insert on the distal phalanges of toes 2–5, helping lift the toes during swing phase.",
     "clinical_application": "Tightness here may create dorsal foot pain or contribute to shin splints.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
     "question_type": "multiple choice",
     "difficulty": "easy",
@@ -93,7 +94,10 @@
       "bone_tibia",
       "bone_fibula"
     ],
-    "synonyms": ["EDL", "long toe extensor"]
+    "synonyms": [
+      "EDL",
+      "long toe extensor"
+    ]
   },
   {
     "id": "foot_extensors_003",
@@ -110,7 +114,6 @@
     "long_explanation": "Its anatomical course allows it to both dorsiflex the ankle and extend the lateral toes, making it key in swing and heel strike phases.",
     "clinical_application": "Weakness can cause foot slap or gait compensation.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -135,7 +138,9 @@
       "muscle_extensor_digitorum_longus",
       "muscle_flexor_digitorum_longus"
     ],
-    "synonyms": ["toe and foot extensor"]
+    "synonyms": [
+      "toe and foot extensor"
+    ]
   },
   {
     "id": "foot_extensors_004",
@@ -152,7 +157,6 @@
     "long_explanation": "This allows full extension at both the MTP and IP joints, supporting toe clearance and balance during gait.",
     "clinical_application": "Useful in gait correction therapies for big toe stiffness or neuropathy.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -177,7 +181,9 @@
       "muscle_extensor_hallucis_longus",
       "bone_metatarsals"
     ],
-    "synonyms": ["long toe extensor"]
+    "synonyms": [
+      "long toe extensor"
+    ]
   },
   {
     "id": "foot_extensors_005",
@@ -194,7 +200,6 @@
     "long_explanation": "EDB originates on the dorsal calcaneus and inserts into the tendons of EDL, supporting toe extension.",
     "clinical_application": "May be mistaken for swelling or tumor in dorsal foot; palpation confirms its muscular nature.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/foot/foot_extensors.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -225,6 +230,8 @@
       "muscle_plantar_interossei",
       "muscle_extensor_digitorum_brevis"
     ],
-    "synonyms": ["EDB"]
+    "synonyms": [
+      "EDB"
+    ]
   }
 ]

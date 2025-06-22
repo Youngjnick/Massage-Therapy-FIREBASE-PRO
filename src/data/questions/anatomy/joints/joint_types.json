@@ -14,7 +14,6 @@
     "long_explanation": "Ball-and-socket joints, like those in the shoulder and hip, allow flexion, extension, abduction, adduction, rotation, and circumduction. Their rounded bone head fits into a concave socket, granting maximal range of motion at the cost of stability. These joints rely heavily on surrounding musculature for support.",
     "clinical_application": "For a client with shoulder hypermobility, a massage therapist may work on rotator cuff and scapular stabilizers to reduce strain on the joint and improve proprioceptive support without increasing laxity.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -56,7 +55,6 @@
     "long_explanation": "Hinge joints are uniaxial, meaning they allow movement in a single plane–like bending and straightening. Their structure enhances stability and strength during motion, such as lifting or walking.",
     "clinical_application": "Clients with limited knee extension may benefit from massage to the hamstrings and calf to release muscular restriction and improve range within the joint's natural axis.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -83,13 +81,17 @@
     "id": "joint_types_003",
     "correctAnswer": "Neck (between atlas and axis)",
     "question": "Where in the body would you find a pivot joint?",
-    "options": ["Shoulder", "Thumb", "Neck (between atlas and axis)", "Hip"],
+    "options": [
+      "Shoulder",
+      "Thumb",
+      "Neck (between atlas and axis)",
+      "Hip"
+    ],
     "topics": ["anatomy", "joints", "joint_types"],
     "short_explanation": "Pivot joints allow one bone to rotate around another, such as between the first two cervical vertebrae.",
     "long_explanation": "The atlantoaxial joint between C1 and C2 vertebrae is a pivot joint allowing head rotation. These joints are specialized for twisting motions and are stabilized by surrounding ligaments and musculature.",
     "clinical_application": "A massage therapist addressing neck stiffness might gently work on suboccipital muscles to restore rotation at the pivot joint while avoiding aggressive stretches that could strain cervical ligaments.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -129,7 +131,6 @@
     "long_explanation": "These joints, such as those in the carpals and tarsals, enable subtle translational movements that help distribute load and absorb shock. They are crucial for flexibility and smooth joint transitions.",
     "clinical_application": "When treating wrist pain, massage focused on the forearm and intrinsic hand muscles may reduce tension affecting the glide between carpal bones.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -175,7 +176,6 @@
     "long_explanation": "Saddle joints, like the carpometacarpal joint of the thumb, allow flexion/extension and abduction/adduction. Their unique structure is essential for grasp and fine motor control but prone to overuse and arthritis.",
     "clinical_application": "Massage targeting the thenar eminence and forearm flexors may alleviate pain in clients with thumb arthritis or repetitive strain from texting or gripping tools.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -202,13 +202,17 @@
     "id": "joint_types_006",
     "correctAnswer": "Pivot joint",
     "question": "Which joint type allows for rotation around a single axis?",
-    "options": ["Pivot joint", "Hinge joint", "Condyloid joint", "Suture"],
+    "options": [
+      "Pivot joint",
+      "Hinge joint",
+      "Condyloid joint",
+      "Suture"
+    ],
     "topics": ["anatomy", "joints", "joint_types"],
     "short_explanation": "Pivot joints allow rotation around a single axis, such as turning the head or rotating the forearm.",
     "long_explanation": "Rotation occurs at pivot joints like the atlantoaxial joint or the proximal radioulnar joint in the forearm. These joints are stabilized by ligaments and muscular control to avoid excessive torque.",
     "clinical_application": "Clients with limited forearm pronation may benefit from massage of the supinator, pronator teres, and surrounding connective tissue to restore function in the pivot joint without joint mobilization.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -248,7 +252,6 @@
     "long_explanation": "Synovial joints, which include most movable joints like knees and shoulders, have a capsule filled with synovial fluid to lubricate and nourish the joint. They are supported by cartilage, ligaments, and muscle.",
     "clinical_application": "When addressing chronic knee tightness, soft tissue work can improve circulation to periarticular structures and reduce tension that compresses the synovial cavity.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -257,7 +260,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.078Z",
     "updated_at": "2025-05-24T14:54:13.422Z",
-    "tags": ["anatomy_muscle", "anatomy_joint", "anatomy_bones", "joint_joint"],
+    "tags": [
+      "anatomy_muscle",
+      "anatomy_joint",
+      "anatomy_bones",
+      "joint_joint"
+    ],
     "keywords": [
       "anatomy_muscle",
       "anatomy_joint",
@@ -270,13 +278,17 @@
     "id": "joint_types_008",
     "correctAnswer": "Shoulder",
     "question": "Which joint is an example of a ball-and-socket joint?",
-    "options": ["Knee", "Shoulder", "Elbow", "Wrist"],
+    "options": [
+      "Knee",
+      "Shoulder",
+      "Elbow",
+      "Wrist"
+    ],
     "topics": ["anatomy", "joints", "joint_types"],
     "short_explanation": "The shoulder is a ball-and-socket joint, capable of motion in all directions.",
     "long_explanation": "The glenohumeral joint of the shoulder provides the most range of motion in the body. It depends heavily on the rotator cuff and scapular muscles for stabilization during movement.",
     "clinical_application": "Massage for shoulder dysfunction may target overused deltoid and trapezius muscles while addressing scapular stabilizers like the rhomboids and serratus anterior.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -285,21 +297,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.078Z",
     "updated_at": "2025-05-24T14:54:13.422Z",
-    "tags": ["anatomy_joint", "anatomy_muscles", "joint_joint"],
-    "keywords": ["anatomy_joint", "anatomy_muscles", "joint_joint"],
+    "tags": [
+      "anatomy_joint",
+      "anatomy_muscles",
+      "joint_joint"
+    ],
+    "keywords": [
+      "anatomy_joint",
+      "anatomy_muscles",
+      "joint_joint"
+    ],
     "synonyms": null
   },
   {
     "id": "joint_types_009",
     "correctAnswer": "Suture",
     "question": "Which of the following joints is immovable?",
-    "options": ["Suture", "Hinge", "Ball-and-socket", "Gliding"],
+    "options": [
+      "Suture",
+      "Hinge",
+      "Ball-and-socket",
+      "Gliding"
+    ],
     "topics": ["anatomy", "joints", "joint_types"],
     "short_explanation": "Sutures are fibrous joints in the skull that are immovable once fused.",
     "long_explanation": "Sutures connect skull bones during early development and eventually ossify to create a protective structure. They allow brain growth in infants but form stable joints by adulthood.",
     "clinical_application": "While sutures themselves don't move in adults, craniosacral therapists may use gentle touch around them to address tension in surrounding fascia and improve cerebrospinal fluid flow.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -339,7 +363,6 @@
     "long_explanation": "Found in the wrist and knuckles, condyloid joints allow flexion/extension and abduction/adduction. Their biaxial movement supports complex tasks like writing, gripping, or shifting weight across joints.",
     "clinical_application": "To support a client with wrist stiffness, massage of the forearm flexors/extensors and interosseous muscles may restore mobility in condyloid joints affected by repetitive use or inflammation.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/joint_types.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -348,8 +371,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.078Z",
     "updated_at": "2025-05-24T14:54:13.422Z",
-    "tags": ["anatomy_joint", "joint_joint"],
-    "keywords": ["anatomy_joint", "joint_joint"],
+    "tags": [
+      "anatomy_joint",
+      "joint_joint"
+    ],
+    "keywords": [
+      "anatomy_joint",
+      "joint_joint"
+    ],
     "synonyms": null
   }
 ]

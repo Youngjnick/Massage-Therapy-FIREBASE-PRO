@@ -14,7 +14,6 @@
     "long_explanation": "The thalamus acts as a major relay station for sensory signals, directing them to appropriate areas of the cerebral cortex for interpretation. It plays a role in regulating consciousness, sleep, and alertness.",
     "clinical_application": "Damage to the thalamus can affect sensory processing and consciousness—important considerations in stroke and trauma cases during massage intake.",
     "source_reference": "Neuroscience, Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,21 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thalamus", "sensory relay", "central nervous system"],
-    "keywords": ["sensory relay", "thalamus function", "cerebral cortex"],
-    "synonyms": ["sensory hub", "cortical relay center"]
+    "tags": [
+      "thalamus",
+      "sensory relay",
+      "central nervous system"
+    ],
+    "keywords": [
+      "sensory relay",
+      "thalamus function",
+      "cerebral cortex"
+    ],
+    "synonyms": [
+      "sensory hub",
+      "cortical relay center"
+    ]
   },
   {
     "id": "thalamus_002",
     "correctAnswer": "Smell",
     "question": "Which sense does NOT pass through the thalamus before reaching the cortex?",
-    "options": ["Smell", "Touch", "Vision", "Hearing"],
+    "options": [
+      "Smell",
+      "Touch",
+      "Vision",
+      "Hearing"
+    ],
     "topics": ["anatomy", "organs", "brain", "thalamus"],
     "short_explanation": "Olfaction bypasses the thalamus.",
     "long_explanation": "All sensory input except olfaction is relayed through the thalamus. Olfactory signals travel directly from the olfactory bulb to the olfactory cortex.",
     "clinical_application": "Understanding this pathway helps therapists interpret neurological deficits and avoid overstimulation in sensitive individuals.",
     "source_reference": "Human Anatomy & Physiology, Marieb & Hoehn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["olfaction", "sensory relay", "thalamus"],
-    "keywords": ["smell", "olfactory system", "thalamic bypass"],
-    "synonyms": ["olfaction", "non-thalamic pathway"]
+    "tags": [
+      "olfaction",
+      "sensory relay",
+      "thalamus"
+    ],
+    "keywords": [
+      "smell",
+      "olfactory system",
+      "thalamic bypass"
+    ],
+    "synonyms": [
+      "olfaction",
+      "non-thalamic pathway"
+    ]
   },
   {
     "id": "thalamus_003",
@@ -65,7 +90,6 @@
     "long_explanation": "The thalamus serves as a relay center, channeling sensory and some motor information to the cerebral cortex, where perception and voluntary response are generated.",
     "clinical_application": "In cases of traumatic brain injury, thalamic damage can disrupt higher cortical processing—this is relevant for therapists working with neurologically affected clients.",
     "source_reference": "Gray's Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -74,21 +98,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cerebral cortex", "relay", "brain pathways"],
-    "keywords": ["cortex", "relay station", "brain anatomy"],
-    "synonyms": ["cortical target", "higher brain relay"]
+    "tags": [
+      "cerebral cortex",
+      "relay",
+      "brain pathways"
+    ],
+    "keywords": [
+      "cortex",
+      "relay station",
+      "brain anatomy"
+    ],
+    "synonyms": [
+      "cortical target",
+      "higher brain relay"
+    ]
   },
   {
     "id": "thalamus_004",
     "correctAnswer": "Diencephalon",
     "question": "Where is the thalamus located?",
-    "options": ["Diencephalon", "Pons", "Frontal lobe", "Cerebellum"],
+    "options": [
+      "Diencephalon",
+      "Pons",
+      "Frontal lobe",
+      "Cerebellum"
+    ],
     "topics": ["anatomy", "organs", "brain", "thalamus"],
     "short_explanation": "The thalamus is located in the diencephalon.",
     "long_explanation": "The thalamus lies deep in the brain within the diencephalon, bordered by the third ventricle. It sits superior to the brainstem and forms part of the wall of the lateral ventricles.",
     "clinical_application": "Understanding its location is crucial for interpreting central lesions during intake and treatment planning.",
     "source_reference": "Netter’s Atlas of Human Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -97,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thalamus location", "diencephalon", "brain anatomy"],
-    "keywords": ["deep brain", "ventricles", "central brain structure"],
-    "synonyms": ["midline brain", "subcortical region"]
+    "tags": [
+      "thalamus location",
+      "diencephalon",
+      "brain anatomy"
+    ],
+    "keywords": [
+      "deep brain",
+      "ventricles",
+      "central brain structure"
+    ],
+    "synonyms": [
+      "midline brain",
+      "subcortical region"
+    ]
   },
   {
     "id": "thalamus_005",
@@ -116,7 +166,6 @@
     "long_explanation": "While the thalamus is involved in sensory processing, motor control, and sleep-wake cycles, it is not primarily responsible for hormone regulation—that role is managed by the hypothalamus and pituitary.",
     "clinical_application": "Differentiating between thalamic and hypothalamic roles helps therapists understand neurological symptoms during assessment.",
     "source_reference": "Neuroscience, Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -125,9 +174,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thalamus function", "neuroanatomy", "brain regions"],
-    "keywords": ["hormones", "cognition", "motor signals", "sensory input"],
-    "synonyms": ["endocrine control", "hormonal regulation"]
+    "tags": [
+      "thalamus function",
+      "neuroanatomy",
+      "brain regions"
+    ],
+    "keywords": [
+      "hormones",
+      "cognition",
+      "motor signals",
+      "sensory input"
+    ],
+    "synonyms": [
+      "endocrine control",
+      "hormonal regulation"
+    ]
   },
   {
     "id": "thalamus_006",
@@ -144,7 +205,6 @@
     "long_explanation": "The VPL nucleus processes somatosensory information from the body. Damage here, especially from stroke, can result in Dejerine-Roussy syndrome (thalamic pain syndrome), causing chronic, central neuropathic pain.",
     "clinical_application": "Clients with post-stroke pain syndromes may have hypersensitivity due to thalamic involvement; adjust pressure and avoid overstimulation.",
     "source_reference": "Neuroscience, Purves et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -153,9 +213,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thalamus", "chronic pain", "VPL nucleus"],
-    "keywords": ["thalamic pain syndrome", "Dejerine-Roussy", "VPL"],
-    "synonyms": ["VPL damage", "thalamic stroke", "central pain"]
+    "tags": [
+      "thalamus",
+      "chronic pain",
+      "VPL nucleus"
+    ],
+    "keywords": [
+      "thalamic pain syndrome",
+      "Dejerine-Roussy",
+      "VPL"
+    ],
+    "synonyms": [
+      "VPL damage",
+      "thalamic stroke",
+      "central pain"
+    ]
   },
   {
     "id": "thalamus_007",
@@ -172,7 +244,6 @@
     "long_explanation": "The medial geniculate body (MGB) of the thalamus receives auditory input from the inferior colliculus and projects to the primary auditory cortex in the temporal lobe.",
     "clinical_application": "Clients with auditory processing issues or tinnitus may have involvement in central auditory pathways, including the MGB.",
     "source_reference": "Principles of Neural Science, Kandel et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -181,9 +252,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["auditory", "medial geniculate", "thalamus"],
-    "keywords": ["hearing", "temporal lobe", "auditory relay"],
-    "synonyms": ["MGB", "auditory thalamus"]
+    "tags": [
+      "auditory",
+      "medial geniculate",
+      "thalamus"
+    ],
+    "keywords": [
+      "hearing",
+      "temporal lobe",
+      "auditory relay"
+    ],
+    "synonyms": [
+      "MGB",
+      "auditory thalamus"
+    ]
   },
   {
     "id": "thalamus_008",
@@ -200,7 +282,6 @@
     "long_explanation": "The thalamus, along with the hypothalamus and epithalamus, forms the diencephalon. This region lies just above the brainstem and is central in processing sensory and regulatory functions.",
     "clinical_application": "Understanding this hierarchy aids in localizing neurological damage and planning safe therapeutic approaches.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -209,9 +290,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brain region", "diencephalon", "anatomy"],
-    "keywords": ["diencephalon", "midline brain", "subcortical"],
-    "synonyms": ["midbrain region", "thalamic location"]
+    "tags": [
+      "brain region",
+      "diencephalon",
+      "anatomy"
+    ],
+    "keywords": [
+      "diencephalon",
+      "midline brain",
+      "subcortical"
+    ],
+    "synonyms": [
+      "midbrain region",
+      "thalamic location"
+    ]
   },
   {
     "id": "thalamus_009",
@@ -228,7 +320,6 @@
     "long_explanation": "The ventral anterior and ventrolateral nuclei of the thalamus receive input from motor structures and relay this to the motor cortex, coordinating movement planning and execution.",
     "clinical_application": "Clients with motor impairments post-stroke or in Parkinson’s may have disrupted thalamocortical motor pathways.",
     "source_reference": "Clinically Oriented Anatomy, Moore et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,9 +328,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["motor", "thalamus", "relay"],
-    "keywords": ["motor cortex", "ventral nuclei", "basal ganglia"],
-    "synonyms": ["motor relay", "ventral thalamic nuclei"]
+    "tags": [
+      "motor",
+      "thalamus",
+      "relay"
+    ],
+    "keywords": [
+      "motor cortex",
+      "ventral nuclei",
+      "basal ganglia"
+    ],
+    "synonyms": [
+      "motor relay",
+      "ventral thalamic nuclei"
+    ]
   },
   {
     "id": "thalamus_010",
@@ -256,7 +358,6 @@
     "long_explanation": "The interthalamic adhesion (massa intermedia) is a small midline connection of gray matter between the right and left thalamus across the third ventricle. It's not always present in every individual.",
     "clinical_application": "Knowledge of thalamic anatomy supports understanding of midline brain lesions, especially when interpreting imaging.",
     "source_reference": "Netter’s Atlas of Human Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thalamus.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -265,8 +366,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thalamus", "interthalamic adhesion", "brain anatomy"],
-    "keywords": ["massa intermedia", "third ventricle", "diencephalon"],
-    "synonyms": ["massa intermedia", "thalamic bridge"]
+    "tags": [
+      "thalamus",
+      "interthalamic adhesion",
+      "brain anatomy"
+    ],
+    "keywords": [
+      "massa intermedia",
+      "third ventricle",
+      "diencephalon"
+    ],
+    "synonyms": [
+      "massa intermedia",
+      "thalamic bridge"
+    ]
   }
 ]

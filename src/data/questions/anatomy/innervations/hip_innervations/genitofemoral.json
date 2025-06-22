@@ -3,13 +3,17 @@
     "id": "genitofemoral_001",
     "correctAnswer": "L1–L2",
     "question": "Which spinal nerve roots contribute to the genitofemoral nerve?",
-    "options": ["T12–L1", "L1–L2", "L2–L3", "S1–S2"],
+    "options": [
+      "T12–L1",
+      "L1–L2",
+      "L2–L3",
+      "S1–S2"
+    ],
     "topics": ["anatomy", "innervations", "hip_innervations", "genitofemoral"],
     "short_explanation": "The genitofemoral nerve arises from L1 and L2.",
     "long_explanation": "The genitofemoral nerve is a branch of the lumbar plexus formed by the anterior rami of spinal nerves L1 and L2. It splits into genital and femoral branches.",
     "clinical_application": "Understanding its origin helps in assessing groin-related symptoms that may be due to nerve irritation or compression.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -18,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["genitofemoral nerve", "L1", "L2", "lumbar plexus"],
-    "keywords": ["nerve root", "groin innervation", "lumbar plexus"],
+    "tags": [
+      "genitofemoral nerve",
+      "L1",
+      "L2",
+      "lumbar plexus"
+    ],
+    "keywords": [
+      "nerve root",
+      "groin innervation",
+      "lumbar plexus"
+    ],
     "synonyms": null
   },
   {
@@ -37,7 +50,6 @@
     "long_explanation": "The genital branch travels through the inguinal canal to innervate the cremaster muscle and provide sensation to the scrotum in males.",
     "clinical_application": "Loss of cremasteric reflex may indicate genitofemoral or upper motor neuron dysfunction.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -46,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cremaster", "genital branch", "inguinal canal"],
-    "keywords": ["male anatomy", "nerve reflex", "scrotum"],
+    "tags": [
+      "cremaster",
+      "genital branch",
+      "inguinal canal"
+    ],
+    "keywords": [
+      "male anatomy",
+      "nerve reflex",
+      "scrotum"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +85,6 @@
     "long_explanation": "This branch provides cutaneous sensation to a small region of skin overlying the upper anterior thigh, near the femoral triangle.",
     "clinical_application": "Compression during surgery or trauma may result in sensory disturbances in this region.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -74,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["femoral triangle", "cutaneous", "femoral branch"],
-    "keywords": ["thigh sensation", "nerve compression", "surgery"],
+    "tags": [
+      "femoral triangle",
+      "cutaneous",
+      "femoral branch"
+    ],
+    "keywords": [
+      "thigh sensation",
+      "nerve compression",
+      "surgery"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +120,6 @@
     "long_explanation": "This reflex involves stroking the upper inner thigh, which triggers contraction of the cremaster muscle and elevation of the testis in males.",
     "clinical_application": "Absent cremasteric reflex may suggest genitofemoral or L1–L2 spinal cord injury.",
     "source_reference": "Clinical Neuroanatomy – Snell",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -102,8 +128,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cremasteric reflex", "L1", "L2", "neurological exam"],
-    "keywords": ["reflex arc", "male pelvic nerve", "neurology"],
+    "tags": [
+      "cremasteric reflex",
+      "L1",
+      "L2",
+      "neurological exam"
+    ],
+    "keywords": [
+      "reflex arc",
+      "male pelvic nerve",
+      "neurology"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +156,6 @@
     "long_explanation": "The genital branch exits the inguinal canal and provides sensory input to the labia majora and adjacent skin in females.",
     "clinical_application": "This innervation is clinically relevant in pelvic pain syndromes or after inguinal surgery.",
     "source_reference": "Human Anatomy – Marieb & Hoehn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -130,8 +164,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["genitofemoral nerve", "labia", "sensory"],
-    "keywords": ["female pelvis", "inguinal nerve", "cutaneous innervation"],
+    "tags": [
+      "genitofemoral nerve",
+      "labia",
+      "sensory"
+    ],
+    "keywords": [
+      "female pelvis",
+      "inguinal nerve",
+      "cutaneous innervation"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +191,6 @@
     "long_explanation": "During hernia repairs, especially open inguinal surgeries, the genitofemoral nerve is at risk due to its course through the inguinal canal. Damage can result in chronic groin pain or sensory deficits.",
     "clinical_application": "Massage therapists should recognize referred groin symptoms post-surgery as possibly neurological in origin.",
     "source_reference": "Surgical Anatomy – Skandalakis",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -158,8 +199,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hernia surgery", "nerve injury", "post-surgical pain"],
-    "keywords": ["inguinal canal", "nerve entrapment", "postoperative"],
+    "tags": [
+      "hernia surgery",
+      "nerve injury",
+      "post-surgical pain"
+    ],
+    "keywords": [
+      "inguinal canal",
+      "nerve entrapment",
+      "postoperative"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +226,6 @@
     "long_explanation": "The nerve travels anteriorly through the psoas and beneath the inguinal ligament. Deep work in this area could compress the nerve or exacerbate irritation.",
     "clinical_application": "Use light myofascial techniques over the inguinal region if symptoms suggest nerve sensitivity.",
     "source_reference": "Clinical Massage Therapy – Rattray",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -186,8 +234,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve safety", "massage technique", "inguinal region"],
-    "keywords": ["clinical caution", "nerve pathway", "technique modification"],
+    "tags": [
+      "nerve safety",
+      "massage technique",
+      "inguinal region"
+    ],
+    "keywords": [
+      "clinical caution",
+      "nerve pathway",
+      "technique modification"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +261,6 @@
     "long_explanation": "Entrapment or irritation can cause burning, tingling, or hypersensitivity in its sensory distribution, often mistaken for femoral nerve issues.",
     "clinical_application": "Massage therapists should consider nerve referral patterns in anterior thigh complaints, especially if unrelated to muscle strain.",
     "source_reference": "Orthopedic Physical Assessment – Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -214,7 +269,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve entrapment", "anterior thigh", "burning sensation"],
+    "tags": [
+      "nerve entrapment",
+      "anterior thigh",
+      "burning sensation"
+    ],
     "keywords": [
       "femoral triangle",
       "nerve compression",
@@ -237,7 +296,6 @@
     "long_explanation": "After originating from L1–L2, the genitofemoral nerve pierces and travels along the anterior surface of psoas major, making it vulnerable during abdominal procedures.",
     "clinical_application": "Knowledge of this anatomy can guide abdominal massage and avoid nerve compression.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -246,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["psoas", "nerve location", "abdominal anatomy"],
-    "keywords": ["nerve course", "lumbar plexus", "palpation safety"],
+    "tags": [
+      "psoas",
+      "nerve location",
+      "abdominal anatomy"
+    ],
+    "keywords": [
+      "nerve course",
+      "lumbar plexus",
+      "palpation safety"
+    ],
     "synonyms": null
   },
   {
@@ -265,7 +331,6 @@
     "long_explanation": "It provides motor innervation to the cremaster muscle and sensory innervation to regions of the groin, including the scrotum or labia majora and upper anterior thigh.",
     "clinical_application": "Recognizing its mixed nature is important when evaluating muscle tone or sensory dysfunction in the inguinal area.",
     "source_reference": "Neuroscience – Purves",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/hip_innervations/genitofemoral.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -274,8 +339,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mixed nerve", "motor and sensory", "genitofemoral"],
-    "keywords": ["nerve type", "cremaster", "cutaneous innervation"],
+    "tags": [
+      "mixed nerve",
+      "motor and sensory",
+      "genitofemoral"
+    ],
+    "keywords": [
+      "nerve type",
+      "cremaster",
+      "cutaneous innervation"
+    ],
     "synonyms": null
   }
 ]

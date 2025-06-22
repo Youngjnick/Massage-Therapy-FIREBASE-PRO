@@ -3,13 +3,17 @@
     "id": "knee_lateral_rotation_001",
     "correctAnswer": "Biceps femoris",
     "question": "Which muscle is primarily responsible for lateral rotation of the tibia at the knee?",
-    "options": ["Biceps femoris", "Semitendinosus", "Gracilis", "Sartorius"],
+    "options": [
+      "Biceps femoris",
+      "Semitendinosus",
+      "Gracilis",
+      "Sartorius"
+    ],
     "topics": ["anatomy", "movement_groups", "leg", "knee_lateral_rotation"],
     "short_explanation": "Biceps femoris laterally rotates the tibia when the knee is flexed.",
     "long_explanation": "The biceps femoris, part of the hamstring group, originates on the ischial tuberosity and inserts on the fibular head. When the knee is flexed, it laterally rotates the tibia.",
     "clinical_application": "Understanding this action is important in treating knee rotational imbalances and hamstring dysfunctions.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -18,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["biceps femoris", "knee", "rotation"],
-    "keywords": ["lateral rotation", "hamstrings", "biceps femoris"],
-    "synonyms": ["lateral tibial rotator", "hamstring muscle"]
+    "tags": [
+      "biceps femoris",
+      "knee",
+      "rotation"
+    ],
+    "keywords": [
+      "lateral rotation",
+      "hamstrings",
+      "biceps femoris"
+    ],
+    "synonyms": [
+      "lateral tibial rotator",
+      "hamstring muscle"
+    ]
   },
   {
     "id": "knee_lateral_rotation_002",
@@ -37,7 +52,6 @@
     "long_explanation": "As the leg prepares for heel strike in gait, the tibia externally rotates relative to the femur to 'lock' the knee in extension, often referred to as the screw-home mechanism.",
     "clinical_application": "Therapists should assess tibial rotation mechanics when evaluating gait dysfunctions or knee pain.",
     "source_reference": "Clinical Kinesiology and Anatomy, Lippert",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gait", "tibia", "rotation"],
-    "keywords": ["screw-home mechanism", "gait cycle", "terminal stance"],
-    "synonyms": ["external tibial rotation", "gait mechanics"]
+    "tags": [
+      "gait",
+      "tibia",
+      "rotation"
+    ],
+    "keywords": [
+      "screw-home mechanism",
+      "gait cycle",
+      "terminal stance"
+    ],
+    "synonyms": [
+      "external tibial rotation",
+      "gait mechanics"
+    ]
   },
   {
     "id": "knee_lateral_rotation_003",
@@ -65,7 +90,6 @@
     "long_explanation": "The lateral meniscus, along with the anterior cruciate ligament (ACL), helps guide the lateral rotation of the tibia and provides joint stability as the knee approaches full extension.",
     "clinical_application": "Massage therapists should consider meniscal mechanics when addressing chronic knee discomfort or post-injury care.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee joint", "meniscus", "rotation"],
-    "keywords": ["lateral meniscus", "knee mechanics", "rotation control"],
-    "synonyms": ["meniscal mechanics", "lateral guidance"]
+    "tags": [
+      "knee joint",
+      "meniscus",
+      "rotation"
+    ],
+    "keywords": [
+      "lateral meniscus",
+      "knee mechanics",
+      "rotation control"
+    ],
+    "synonyms": [
+      "meniscal mechanics",
+      "lateral guidance"
+    ]
   },
   {
     "id": "knee_lateral_rotation_004",
@@ -93,7 +128,6 @@
     "long_explanation": "The ACL plays a crucial role in preventing anterior translation and excessive lateral rotation of the tibia relative to the femur, especially during dynamic movements such as pivoting.",
     "clinical_application": "Understanding rotational strain on the ACL is important in injury prevention and post-rehab massage therapy protocols.",
     "source_reference": "Principles of Athletic Training, Arnheim & Prentice",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -102,13 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ligament", "ACL", "rotation"],
+    "tags": [
+      "ligament",
+      "ACL",
+      "rotation"
+    ],
     "keywords": [
       "anterior cruciate ligament",
       "knee rotation",
       "injury prevention"
     ],
-    "synonyms": ["ACL", "knee stabilization"]
+    "synonyms": [
+      "ACL",
+      "knee stabilization"
+    ]
   },
   {
     "id": "knee_lateral_rotation_005",
@@ -125,7 +166,6 @@
     "long_explanation": "The pivot shift test is a dynamic test used by clinicians to evaluate rotational instability of the knee, often related to anterior cruciate ligament injuries and abnormal tibial movement.",
     "clinical_application": "Massage therapists should refer out if pivot shift test results suggest ligament laxity contributing to chronic instability.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -134,9 +174,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["clinical test", "tibia", "instability"],
-    "keywords": ["pivot shift", "tibial rotation", "ACL"],
-    "synonyms": ["tibial instability", "rotational assessment"]
+    "tags": [
+      "clinical test",
+      "tibia",
+      "instability"
+    ],
+    "keywords": [
+      "pivot shift",
+      "tibial rotation",
+      "ACL"
+    ],
+    "synonyms": [
+      "tibial instability",
+      "rotational assessment"
+    ]
   },
   {
     "id": "knee_lateral_rotation_006",
@@ -153,7 +204,6 @@
     "long_explanation": "While not a primary rotator, the lateral head of the gastrocnemius stabilizes the posterior knee and fibular head during weight-bearing actions, indirectly facilitating controlled tibial rotation.",
     "clinical_application": "Therapists should address gastrocnemius tension when lateral knee rotation is restricted.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -162,9 +212,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gastrocnemius", "knee", "rotation"],
-    "keywords": ["gastrocnemius", "fibular head", "rotation"],
-    "synonyms": ["fibular stabilizer", "posterior knee support"]
+    "tags": [
+      "gastrocnemius",
+      "knee",
+      "rotation"
+    ],
+    "keywords": [
+      "gastrocnemius",
+      "fibular head",
+      "rotation"
+    ],
+    "synonyms": [
+      "fibular stabilizer",
+      "posterior knee support"
+    ]
   },
   {
     "id": "knee_lateral_rotation_007",
@@ -181,7 +242,6 @@
     "long_explanation": "When biceps femoris is more active than its medial counterparts (semitendinosus, semimembranosus), the tibia will rotate laterally during knee flexion, which may affect gait patterns.",
     "clinical_application": "Massage targeting biceps femoris may be necessary in cases of asymmetric gait or hyperlateral tibial rotation.",
     "source_reference": "Clinical Kinesiology and Anatomy, Lippert",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -190,9 +250,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rotation", "biceps femoris", "gait"],
-    "keywords": ["external rotation", "knee flexion", "hamstring dominance"],
-    "synonyms": ["external tibial rotation", "hamstring imbalance"]
+    "tags": [
+      "rotation",
+      "biceps femoris",
+      "gait"
+    ],
+    "keywords": [
+      "external rotation",
+      "knee flexion",
+      "hamstring dominance"
+    ],
+    "synonyms": [
+      "external tibial rotation",
+      "hamstring imbalance"
+    ]
   },
   {
     "id": "knee_lateral_rotation_008",
@@ -209,7 +280,6 @@
     "long_explanation": "Chronic lateral rotation of the tibia can contribute to valgus stress on the knees and compensatory eversion of the feet, affecting gait efficiency and joint health.",
     "clinical_application": "Massage therapists may need to address associated muscle tightness or postural imbalances in clients with tibial rotation dysfunctions.",
     "source_reference": "Kinesiology of the Musculoskeletal System, Neumann",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -218,9 +288,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "valgus", "eversion"],
-    "keywords": ["tibial torsion", "valgus knee", "foot eversion"],
-    "synonyms": ["knock knees", "valgus knee"]
+    "tags": [
+      "posture",
+      "valgus",
+      "eversion"
+    ],
+    "keywords": [
+      "tibial torsion",
+      "valgus knee",
+      "foot eversion"
+    ],
+    "synonyms": [
+      "knock knees",
+      "valgus knee"
+    ]
   },
   {
     "id": "knee_lateral_rotation_009",
@@ -237,7 +318,6 @@
     "long_explanation": "The screw-home mechanism involves lateral rotation of the tibia as the knee extends fully, stabilizing the joint during standing and walking.",
     "clinical_application": "This coupling is essential in evaluating full extension dysfunctions and is relevant in massage protocols for athletes or post-surgical clients.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -246,9 +326,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["screw-home", "knee extension", "rotation"],
-    "keywords": ["extension", "stability", "tibial rotation"],
-    "synonyms": ["locking mechanism", "terminal extension"]
+    "tags": [
+      "screw-home",
+      "knee extension",
+      "rotation"
+    ],
+    "keywords": [
+      "extension",
+      "stability",
+      "tibial rotation"
+    ],
+    "synonyms": [
+      "locking mechanism",
+      "terminal extension"
+    ]
   },
   {
     "id": "knee_lateral_rotation_010",
@@ -265,7 +356,6 @@
     "long_explanation": "Tight semitendinosus and semimembranosus muscles oppose lateral rotation of the tibia, potentially contributing to movement restriction and imbalance.",
     "clinical_application": "Massage can help release medial hamstring tension and restore balanced knee motion.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_lateral_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -274,12 +364,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hamstrings", "restriction", "rotation"],
+    "tags": [
+      "hamstrings",
+      "restriction",
+      "rotation"
+    ],
     "keywords": [
       "medial hamstrings",
       "movement restriction",
       "tibial imbalance"
     ],
-    "synonyms": ["hamstring tension", "rotation restriction"]
+    "synonyms": [
+      "hamstring tension",
+      "rotation restriction"
+    ]
   }
 ]

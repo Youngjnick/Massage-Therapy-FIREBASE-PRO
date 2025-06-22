@@ -14,7 +14,6 @@
     "long_explanation": "The spleen acts as a blood filter, removing old or damaged red blood cells and pathogens. It also helps in immune surveillance by activating lymphocytes.",
     "clinical_application": "Massage therapists should avoid deep pressure over the left upper abdomen, especially in cases of splenomegaly or post-infection.",
     "source_reference": "Guyton and Hall Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["spleen", "blood filtration", "red blood cells"],
-    "keywords": ["RBC recycling", "spleen function", "lymphatic organ"],
+    "tags": [
+      "spleen",
+      "blood filtration",
+      "red blood cells"
+    ],
+    "keywords": [
+      "RBC recycling",
+      "spleen function",
+      "lymphatic organ"
+    ],
     "synonyms": null
   },
   {
     "id": "spleen_002",
     "correctAnswer": "Lymphocytes",
     "question": "What kind of immune cells are abundant in the spleen's white pulp?",
-    "options": ["Erythrocytes", "Hepatocytes", "Lymphocytes", "Chondrocytes"],
+    "options": [
+      "Erythrocytes",
+      "Hepatocytes",
+      "Lymphocytes",
+      "Chondrocytes"
+    ],
     "topics": ["anatomy", "organs", "spleen"],
     "short_explanation": "Lymphocytes dominate the white pulp of the spleen.",
     "long_explanation": "White pulp in the spleen contains a high concentration of lymphocytes which are activated during immune responses to blood-borne pathogens.",
     "clinical_application": "A weakened immune system post-splenectomy may require therapists to modify infection control and treatment planning.",
     "source_reference": "Immunology: A Short Course",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -46,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["spleen", "lymphocytes", "white pulp"],
-    "keywords": ["immune tissue", "white pulp", "spleen lymphocytes"],
+    "tags": [
+      "spleen",
+      "lymphocytes",
+      "white pulp"
+    ],
+    "keywords": [
+      "immune tissue",
+      "white pulp",
+      "spleen lymphocytes"
+    ],
     "synonyms": null
   },
   {
@@ -65,7 +84,6 @@
     "long_explanation": "Referred pain in the left shoulder arises due to diaphragmatic irritation from intra-abdominal bleeding. This is a medical emergency.",
     "clinical_application": "Therapists must rule out abdominal trauma or recent injury before performing deep abdominal work.",
     "source_reference": "Emergency Medicine Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -74,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Kehr's sign", "splenic rupture", "referred pain"],
-    "keywords": ["abdominal trauma", "spleen injury", "shoulder pain"],
+    "tags": [
+      "Kehr's sign",
+      "splenic rupture",
+      "referred pain"
+    ],
+    "keywords": [
+      "abdominal trauma",
+      "spleen injury",
+      "shoulder pain"
+    ],
     "synonyms": null
   },
   {
     "id": "spleen_004",
     "correctAnswer": "Liver cirrhosis",
     "question": "Which condition commonly leads to an enlarged spleen?",
-    "options": ["Appendicitis", "Liver cirrhosis", "Diabetes", "Cholecystitis"],
+    "options": [
+      "Appendicitis",
+      "Liver cirrhosis",
+      "Diabetes",
+      "Cholecystitis"
+    ],
     "topics": ["anatomy", "organs", "spleen"],
     "short_explanation": "Liver cirrhosis can cause splenomegaly due to portal hypertension.",
     "long_explanation": "Increased pressure in the portal venous system leads to backup into the spleen, enlarging it due to excess blood pooling and immune activity.",
     "clinical_application": "During intake, a history of liver disease should cue caution near the left upper abdomen during massage.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -97,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["splenomegaly", "portal hypertension", "liver disease"],
-    "keywords": ["spleen enlargement", "cirrhosis", "massage precautions"],
+    "tags": [
+      "splenomegaly",
+      "portal hypertension",
+      "liver disease"
+    ],
+    "keywords": [
+      "spleen enlargement",
+      "cirrhosis",
+      "massage precautions"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +154,6 @@
     "long_explanation": "The spleen plays a key role in removing bloodborne pathogens. Post-splenectomy, patients are more vulnerable to infections, especially from encapsulated organisms.",
     "clinical_application": "Therapists should inquire about splenectomy during history-taking and practice enhanced infection control if applicable.",
     "source_reference": "Medical Microbiology by Murray",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -125,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["splenectomy", "immune suppression", "blood pathogens"],
-    "keywords": ["splenectomy risks", "immunocompromised", "infection control"],
+    "tags": [
+      "splenectomy",
+      "immune suppression",
+      "blood pathogens"
+    ],
+    "keywords": [
+      "splenectomy risks",
+      "immunocompromised",
+      "infection control"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +189,6 @@
     "long_explanation": "It is protected by the 9th to 11th ribs on the left side and rests posterior to the stomach.",
     "clinical_application": "Massage pressure in this quadrant should be gentle or avoided in certain clients to prevent discomfort or harm.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "basic",
@@ -153,21 +197,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["left upper quadrant", "spleen location", "rib protection"],
-    "keywords": ["LUQ", "spleen anatomy", "abdominal quadrants"],
+    "tags": [
+      "left upper quadrant",
+      "spleen location",
+      "rib protection"
+    ],
+    "keywords": [
+      "LUQ",
+      "spleen anatomy",
+      "abdominal quadrants"
+    ],
     "synonyms": null
   },
   {
     "id": "spleen_007",
     "correctAnswer": "Red pulp",
     "question": "Which part of the spleen is responsible for red blood cell recycling?",
-    "options": ["White pulp", "Lymphoid follicles", "Red pulp", "Trabeculae"],
+    "options": [
+      "White pulp",
+      "Lymphoid follicles",
+      "Red pulp",
+      "Trabeculae"
+    ],
     "topics": ["anatomy", "organs", "spleen"],
     "short_explanation": "The red pulp of the spleen is involved in RBC breakdown.",
     "long_explanation": "The red pulp contains macrophages that phagocytose old erythrocytes, recycle iron, and remove debris.",
     "clinical_application": "Knowledge of RBC turnover aids in understanding fatigue and anemia linked to spleen or liver dysfunction.",
     "source_reference": "Physiology by Berne & Levy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -176,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["red pulp", "RBC recycling", "iron recovery"],
-    "keywords": ["erythrocyte turnover", "macrophages", "spleen filtering"],
+    "tags": [
+      "red pulp",
+      "RBC recycling",
+      "iron recovery"
+    ],
+    "keywords": [
+      "erythrocyte turnover",
+      "macrophages",
+      "spleen filtering"
+    ],
     "synonyms": null
   },
   {
@@ -195,7 +259,6 @@
     "long_explanation": "It contains T and B cells arranged around central arterioles, helping detect and neutralize pathogens in the blood.",
     "clinical_application": "Therapists studying immune modulation through touch should understand the tissue types involved in immune response.",
     "source_reference": "Histology: A Text and Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -204,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["white pulp", "lymphoid tissue", "histology"],
-    "keywords": ["T cells", "B cells", "immune tissue"],
+    "tags": [
+      "white pulp",
+      "lymphoid tissue",
+      "histology"
+    ],
+    "keywords": [
+      "T cells",
+      "B cells",
+      "immune tissue"
+    ],
     "synonyms": null
   },
   {
@@ -223,7 +294,6 @@
     "long_explanation": "The splenic artery is a major branch of the celiac trunk and follows a tortuous path along the pancreas before reaching the spleen.",
     "clinical_application": "Vascular health and blood flow are important in post-surgical spleen recovery and understanding massage contraindications.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "basic",
@@ -232,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["splenic artery", "blood supply", "vascular"],
-    "keywords": ["celiac trunk", "arterial flow", "abdominal arteries"],
+    "tags": [
+      "splenic artery",
+      "blood supply",
+      "vascular"
+    ],
+    "keywords": [
+      "celiac trunk",
+      "arterial flow",
+      "abdominal arteries"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +329,6 @@
     "long_explanation": "Because the spleen is highly vascular, trauma from accidents or sports can cause life-threatening bleeding, necessitating removal.",
     "clinical_application": "Clients with past splenectomy may require immune system precautions and light-pressure massage approaches.",
     "source_reference": "Emergency Surgical Procedures Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/spleen.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -260,7 +337,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["splenectomy", "trauma", "surgical removal"],
+    "tags": [
+      "splenectomy",
+      "trauma",
+      "surgical removal"
+    ],
     "keywords": [
       "spleen injury",
       "splenic bleeding",

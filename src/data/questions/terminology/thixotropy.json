@@ -14,7 +14,6 @@
     "long_explanation": "Thixotropy describes a time-dependent property of some gels or fluids that become less viscous when agitated. In massage, this concept explains how tissues like fascia become more pliable with heat or movement.",
     "clinical_application": "Massage techniques such as effleurage and myofascial release rely on thixotropic properties to improve tissue extensibility.",
     "source_reference": "Clinical Massage Therapy, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,21 +22,37 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "fluid dynamics", "massage"],
-    "keywords": ["gel to sol", "soft tissue", "viscosity", "massage effects"],
-    "synonyms": ["gel-sol transformation", "fascia hydration"]
+    "tags": [
+      "fascia",
+      "fluid dynamics",
+      "massage"
+    ],
+    "keywords": [
+      "gel to sol",
+      "soft tissue",
+      "viscosity",
+      "massage effects"
+    ],
+    "synonyms": [
+      "gel-sol transformation",
+      "fascia hydration"
+    ]
   },
   {
     "id": "thixotropy_002",
     "correctAnswer": "Fascia",
     "question": "Which tissue is most associated with thixotropic behavior in the body?",
-    "options": ["Fascia", "Ligaments", "Bone", "Tendons"],
+    "options": [
+      "Fascia",
+      "Ligaments",
+      "Bone",
+      "Tendons"
+    ],
     "topics": ["terminology", "thixotropy"],
     "short_explanation": "Fascia exhibits thixotropic properties.",
     "long_explanation": "Fascia, the connective tissue surrounding muscles and organs, responds to movement and heat by changing viscosity, becoming more fluid and allowing better mobility.",
     "clinical_application": "Massage techniques targeting fascial layers are more effective after tissue warming due to thixotropy.",
     "source_reference": "Myofascial Release Manual, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +61,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["connective tissue", "fascia", "viscosity"],
-    "keywords": ["fascial response", "hydration", "gel-sol behavior"],
-    "synonyms": ["fascial tissue", "connective gel"]
+    "tags": [
+      "connective tissue",
+      "fascia",
+      "viscosity"
+    ],
+    "keywords": [
+      "fascial response",
+      "hydration",
+      "gel-sol behavior"
+    ],
+    "synonyms": [
+      "fascial tissue",
+      "connective gel"
+    ]
   },
   {
     "id": "thixotropy_003",
@@ -65,7 +91,6 @@
     "long_explanation": "Myofascial release involves slow, sustained pressure into fascia to promote softening through thixotropic changes, allowing the tissue matrix to shift from a dense to a more fluid state.",
     "clinical_application": "Thixotropic change supports deeper work without excessive pressure or trauma to tissue.",
     "source_reference": "Clinical Massage Therapy, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -74,9 +99,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["myofascial", "sustained pressure", "viscosity change"],
-    "keywords": ["myofascial release", "hydration", "gel state"],
-    "synonyms": ["fascial softening", "slow tissue melting"]
+    "tags": [
+      "myofascial",
+      "sustained pressure",
+      "viscosity change"
+    ],
+    "keywords": [
+      "myofascial release",
+      "hydration",
+      "gel state"
+    ],
+    "synonyms": [
+      "fascial softening",
+      "slow tissue melting"
+    ]
   },
   {
     "id": "thixotropy_004",
@@ -93,7 +129,6 @@
     "long_explanation": "Movement, heat, or pressure can convert the ground substance in connective tissue from a gel-like to a sol-like state, improving mobility and responsiveness.",
     "clinical_application": "Pre-massage stretching or active movement may prime tissue for deeper therapeutic techniques.",
     "source_reference": "Principles of Manual Medicine, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -102,9 +137,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["movement", "fluid dynamics", "soft tissue"],
-    "keywords": ["warming up tissue", "ground substance", "gel-sol transition"],
-    "synonyms": ["tissue warming", "viscosity change"]
+    "tags": [
+      "movement",
+      "fluid dynamics",
+      "soft tissue"
+    ],
+    "keywords": [
+      "warming up tissue",
+      "ground substance",
+      "gel-sol transition"
+    ],
+    "synonyms": [
+      "tissue warming",
+      "viscosity change"
+    ]
   },
   {
     "id": "thixotropy_005",
@@ -121,7 +167,6 @@
     "long_explanation": "In its gel state, fascia has a more structured, resistant form that limits motion. Sustained movement or heat can convert it into a sol state for greater pliability.",
     "clinical_application": "Massage therapists may feel increased tissue resistance when fascia is in a gel state and adapt techniques accordingly.",
     "source_reference": "Fascial Manipulation: Practical Part, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -130,9 +175,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "gel state", "ground substance"],
-    "keywords": ["dense fascia", "tissue stiffness", "gel matrix"],
-    "synonyms": ["stiff fascia", "gel matrix"]
+    "tags": [
+      "fascia",
+      "gel state",
+      "ground substance"
+    ],
+    "keywords": [
+      "dense fascia",
+      "tissue stiffness",
+      "gel matrix"
+    ],
+    "synonyms": [
+      "stiff fascia",
+      "gel matrix"
+    ]
   },
   {
     "id": "thixotropy_006",
@@ -149,7 +205,6 @@
     "long_explanation": "Heat increases molecular motion in ground substance, aiding in the transition from a thick gel state to a more fluid sol state. This makes tissues more pliable and receptive to massage.",
     "clinical_application": "Using heat packs before treatment can enhance thixotropic softening, improving massage outcomes in stiff or dehydrated fascia.",
     "source_reference": "Myofascial Release Manual, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -158,9 +213,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["temperature", "fascia", "fluidity"],
-    "keywords": ["heat", "pliability", "thermal effects"],
-    "synonyms": ["heat softens fascia", "thermal thixotropy"]
+    "tags": [
+      "temperature",
+      "fascia",
+      "fluidity"
+    ],
+    "keywords": [
+      "heat",
+      "pliability",
+      "thermal effects"
+    ],
+    "synonyms": [
+      "heat softens fascia",
+      "thermal thixotropy"
+    ]
   },
   {
     "id": "thixotropy_007",
@@ -177,7 +243,6 @@
     "long_explanation": "Without movement, fascia can become dehydrated and revert to a thicker gel-like consistency, leading to stiffness and restricted mobility. This is reversible with activity and manual therapy.",
     "clinical_application": "Clients with sedentary habits may present with fascial stiffness due to loss of thixotropic mobility—mobilization helps restore fluidity.",
     "source_reference": "Fascia: The Tensional Network, 2012.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -186,21 +251,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["immobility", "gel reformation", "stiffness"],
-    "keywords": ["inactivity", "fascia thickening", "sedentary tissue"],
-    "synonyms": ["gel state return", "immobile fascia"]
+    "tags": [
+      "immobility",
+      "gel reformation",
+      "stiffness"
+    ],
+    "keywords": [
+      "inactivity",
+      "fascia thickening",
+      "sedentary tissue"
+    ],
+    "synonyms": [
+      "gel state return",
+      "immobile fascia"
+    ]
   },
   {
     "id": "thixotropy_008",
     "correctAnswer": "Rheopexy",
     "question": "Which of the following terms best describes the opposite of thixotropy?",
-    "options": ["Rheopexy", "Friction", "Osmosis", "Homeostasis"],
+    "options": [
+      "Rheopexy",
+      "Friction",
+      "Osmosis",
+      "Homeostasis"
+    ],
     "topics": ["terminology", "thixotropy"],
     "short_explanation": "Rheopexy is the opposite—fluids that thicken with movement.",
     "long_explanation": "Where thixotropy describes substances becoming less viscous with movement, rheopexy refers to those that become more viscous (thicker) the longer they are agitated.",
     "clinical_application": "Understanding both thixotropy and rheopexy helps clarify how tissues and gels respond differently in manual therapy contexts.",
     "source_reference": "Principles of Manual Medicine, 3rd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -209,9 +289,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fluid dynamics", "viscosity", "contrast"],
-    "keywords": ["rheopexy", "reverse viscosity", "gel physics"],
-    "synonyms": ["reverse thixotropy", "thickening with motion"]
+    "tags": [
+      "fluid dynamics",
+      "viscosity",
+      "contrast"
+    ],
+    "keywords": [
+      "rheopexy",
+      "reverse viscosity",
+      "gel physics"
+    ],
+    "synonyms": [
+      "reverse thixotropy",
+      "thickening with motion"
+    ]
   },
   {
     "id": "thixotropy_009",
@@ -228,7 +319,6 @@
     "long_explanation": "Water is a major component of the extracellular matrix. Adequate hydration supports sol-gel transitions, improving fascial pliability and responsiveness to movement.",
     "clinical_application": "Encouraging hydration before and after massage enhances tissue recovery and maintains fascial mobility.",
     "source_reference": "Fascial Release for Structural Balance, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,9 +327,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hydration", "ground substance", "sol state"],
-    "keywords": ["tissue hydration", "fascia fluid", "gel to sol"],
-    "synonyms": ["tissue water", "hydrated fascia"]
+    "tags": [
+      "hydration",
+      "ground substance",
+      "sol state"
+    ],
+    "keywords": [
+      "tissue hydration",
+      "fascia fluid",
+      "gel to sol"
+    ],
+    "synonyms": [
+      "tissue water",
+      "hydrated fascia"
+    ]
   },
   {
     "id": "thixotropy_010",
@@ -256,7 +357,6 @@
     "long_explanation": "Thixotropy explains why tissues soften with movement and heat. Therapists use this knowledge to apply techniques progressively—starting gently to warm tissue, then increasing depth.",
     "clinical_application": "Incorporating thixotropic principles enhances safety, reduces strain, and maximizes client comfort.",
     "source_reference": "Clinical Massage Therapy, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/terminology/thixotropy.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -265,8 +365,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["therapeutic strategy", "manual therapy", "massage"],
-    "keywords": ["treatment planning", "soft tissue", "warming techniques"],
-    "synonyms": ["treatment strategy", "progressive pressure"]
+    "tags": [
+      "therapeutic strategy",
+      "manual therapy",
+      "massage"
+    ],
+    "keywords": [
+      "treatment planning",
+      "soft tissue",
+      "warming techniques"
+    ],
+    "synonyms": [
+      "treatment strategy",
+      "progressive pressure"
+    ]
   }
 ]

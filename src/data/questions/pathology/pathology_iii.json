@@ -14,7 +14,6 @@
     "long_explanation": "RA causes the immune system to attack the synovial lining of joints, leading to swelling, pain, and potential joint deformity. It typically affects small joints symmetrically.",
     "clinical_application": "Massage can reduce pain and improve range of motion during remission but should be avoided during acute flares.",
     "source_reference": "FSMTB Massage Therapy Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rheumatoid arthritis", "autoimmune", "inflammation"],
-    "keywords": ["RA", "joint pain", "massage caution"],
+    "tags": [
+      "rheumatoid arthritis",
+      "autoimmune",
+      "inflammation"
+    ],
+    "keywords": [
+      "RA",
+      "joint pain",
+      "massage caution"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "OA results from mechanical wear on joints, leading to cartilage breakdown and bony overgrowths. It's most common in weight-bearing joints like hips and knees.",
     "clinical_application": "Massage can reduce stiffness, support surrounding muscles, and improve joint comfort in clients with OA.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -51,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["osteoarthritis", "degeneration", "joints"],
-    "keywords": ["cartilage wear", "joint pain", "aging"],
+    "tags": [
+      "osteoarthritis",
+      "degeneration",
+      "joints"
+    ],
+    "keywords": [
+      "cartilage wear",
+      "joint pain",
+      "aging"
+    ],
     "synonyms": null
   },
   {
     "id": "pathology_iii_003",
     "correctAnswer": "Bursa",
     "question": "What is the primary structure affected in bursitis?",
-    "options": ["Tendon", "Ligament", "Joint capsule", "Bursa"],
+    "options": [
+      "Tendon",
+      "Ligament",
+      "Joint capsule",
+      "Bursa"
+    ],
     "topics": ["pathology", "pathology_iii"],
     "short_explanation": "Bursitis is inflammation of a fluid-filled sac called a bursa.",
     "long_explanation": "A bursa reduces friction between soft tissues and bone. Overuse or trauma can inflame it, causing localized pain and swelling, especially in shoulders, hips, and elbows.",
     "clinical_application": "Massage around the affected area can relieve muscular tension, but direct pressure over the inflamed bursa should be avoided.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bursitis", "inflammation", "massage safety"],
-    "keywords": ["bursa", "joint pain", "overuse"],
+    "tags": [
+      "bursitis",
+      "inflammation",
+      "massage safety"
+    ],
+    "keywords": [
+      "bursa",
+      "joint pain",
+      "overuse"
+    ],
     "synonyms": null
   },
   {
     "id": "pathology_iii_004",
     "correctAnswer": "Scoliosis",
     "question": "Which condition is defined as a lateral curvature of the spine?",
-    "options": ["Lordosis", "Kyphosis", "Scoliosis", "Spondylosis"],
+    "options": [
+      "Lordosis",
+      "Kyphosis",
+      "Scoliosis",
+      "Spondylosis"
+    ],
     "topics": ["pathology", "pathology_iii"],
     "short_explanation": "Scoliosis is an abnormal sideways curvature of the spine.",
     "long_explanation": "Scoliosis can be structural or functional and may cause compensatory muscle imbalances, back pain, or posture issues. It’s often diagnosed in adolescence but can worsen with age.",
     "clinical_application": "Massage helps reduce muscle tightness on the convex side and improve postural awareness but should be part of a multidisciplinary approach.",
     "source_reference": "FSMTB Pathology Outline",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -97,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scoliosis", "spine", "posture"],
-    "keywords": ["lateral curvature", "vertebral alignment", "massage benefit"],
+    "tags": [
+      "scoliosis",
+      "spine",
+      "posture"
+    ],
+    "keywords": [
+      "lateral curvature",
+      "vertebral alignment",
+      "massage benefit"
+    ],
     "synonyms": null
   },
   {
@@ -116,7 +154,6 @@
     "long_explanation": "Fibromyalgia is a complex syndrome involving pain amplification in the nervous system. Clients may experience tender points, fatigue, poor sleep, and sensitivity to touch.",
     "clinical_application": "Gentle, nurturing massage may reduce pain and anxiety. Avoid deep pressure and always adjust techniques to client tolerance.",
     "source_reference": "Massage Therapy Foundation Clinical Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -125,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fibromyalgia", "chronic pain", "tender points"],
-    "keywords": ["soft tissue", "sensitivity", "gentle massage"],
+    "tags": [
+      "fibromyalgia",
+      "chronic pain",
+      "tender points"
+    ],
+    "keywords": [
+      "soft tissue",
+      "sensitivity",
+      "gentle massage"
+    ],
     "synonyms": null
   },
   {
     "id": "pathology_iii_006",
     "correctAnswer": "Tendonitis",
     "question": "Which condition is characterized by chronic inflammation of tendon fibers due to overuse?",
-    "options": ["Tendonitis", "Bursitis", "Arthritis", "Fasciitis"],
+    "options": [
+      "Tendonitis",
+      "Bursitis",
+      "Arthritis",
+      "Fasciitis"
+    ],
     "topics": ["pathology", "pathology_iii"],
     "short_explanation": "Tendonitis is inflammation of a tendon, often from repetitive strain.",
     "long_explanation": "Tendonitis usually occurs in joints with repetitive motion, like the shoulder, elbow, and wrist. It causes localized pain and can limit range of motion.",
     "clinical_application": "Massage can reduce muscular compensation and improve circulation to the area, but direct work over an inflamed tendon should be cautious.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -148,21 +197,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["tendonitis", "overuse", "inflammation"],
-    "keywords": ["repetitive strain", "tendon inflammation", "pain"],
+    "tags": [
+      "tendonitis",
+      "overuse",
+      "inflammation"
+    ],
+    "keywords": [
+      "repetitive strain",
+      "tendon inflammation",
+      "pain"
+    ],
     "synonyms": null
   },
   {
     "id": "pathology_iii_007",
     "correctAnswer": "Kyphosis",
     "question": "What spinal postural deviation is associated with exaggerated thoracic curvature?",
-    "options": ["Scoliosis", "Kyphosis", "Lordosis", "Spina bifida"],
+    "options": [
+      "Scoliosis",
+      "Kyphosis",
+      "Lordosis",
+      "Spina bifida"
+    ],
     "topics": ["pathology", "pathology_iii"],
     "short_explanation": "Kyphosis is an excessive outward curve of the thoracic spine.",
     "long_explanation": "Kyphosis may be structural or postural. It can result from aging, osteoporosis, or muscular imbalance, often causing a hunched upper back appearance.",
     "clinical_application": "Massage can reduce hypertonicity in the pectorals and upper traps, supporting better alignment and client comfort.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -171,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posture", "kyphosis", "thoracic spine"],
-    "keywords": ["hunchback", "spinal curve", "muscle imbalance"],
+    "tags": [
+      "posture",
+      "kyphosis",
+      "thoracic spine"
+    ],
+    "keywords": [
+      "hunchback",
+      "spinal curve",
+      "muscle imbalance"
+    ],
     "synonyms": null
   },
   {
@@ -190,7 +259,6 @@
     "long_explanation": "Plantar fasciitis involves microtears and inflammation of the plantar fascia, particularly where it attaches to the heel bone. It's common in athletes and those with poor foot mechanics.",
     "clinical_application": "Massage of the foot arch and calf muscles can relieve tension and support recovery. Deep friction may help in chronic cases.",
     "source_reference": "FSMTB Pathology Outline",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -199,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["foot pain", "plantar fascia", "inflammation"],
-    "keywords": ["heel pain", "runner’s injury", "fasciitis"],
+    "tags": [
+      "foot pain",
+      "plantar fascia",
+      "inflammation"
+    ],
+    "keywords": [
+      "heel pain",
+      "runner’s injury",
+      "fasciitis"
+    ],
     "synonyms": null
   },
   {
@@ -218,7 +294,6 @@
     "long_explanation": "The median nerve becomes compressed under the flexor retinaculum in the wrist, often due to repetitive strain. Symptoms include numbness, weakness, and tingling in the thumb and first three fingers.",
     "clinical_application": "Massage of the forearm flexors and techniques to reduce swelling in the wrist can help reduce compression symptoms.",
     "source_reference": "Massage Therapy Foundation Clinical Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -227,21 +302,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve compression", "carpal tunnel", "median nerve"],
-    "keywords": ["hand numbness", "wrist injury", "repetitive strain"],
+    "tags": [
+      "nerve compression",
+      "carpal tunnel",
+      "median nerve"
+    ],
+    "keywords": [
+      "hand numbness",
+      "wrist injury",
+      "repetitive strain"
+    ],
     "synonyms": null
   },
   {
     "id": "pathology_iii_010",
     "correctAnswer": "Lordosis",
     "question": "Which postural distortion is characterized by an exaggerated lumbar curve?",
-    "options": ["Scoliosis", "Kyphosis", "Lordosis", "Flat back"],
+    "options": [
+      "Scoliosis",
+      "Kyphosis",
+      "Lordosis",
+      "Flat back"
+    ],
     "topics": ["pathology", "pathology_iii"],
     "short_explanation": "Lordosis involves excessive inward curvature of the lumbar spine.",
     "long_explanation": "Lumbar hyperlordosis can result from tight hip flexors, weak abdominals, and poor posture. It often causes low back discomfort and anterior pelvic tilt.",
     "clinical_application": "Massage focused on the iliopsoas, erector spinae, and abdominal support muscles can relieve imbalance and support spinal health.",
     "source_reference": "Orthopedic Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/pathology_iii.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -250,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["postural distortion", "lumbar", "lordosis"],
-    "keywords": ["low back curve", "anterior tilt", "posture"],
+    "tags": [
+      "postural distortion",
+      "lumbar",
+      "lordosis"
+    ],
+    "keywords": [
+      "low back curve",
+      "anterior tilt",
+      "posture"
+    ],
     "synonyms": null
   }
 ]

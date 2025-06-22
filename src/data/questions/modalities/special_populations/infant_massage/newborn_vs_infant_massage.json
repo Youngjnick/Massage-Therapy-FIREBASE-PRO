@@ -9,17 +9,11 @@
       "Infants should not receive massage under any circumstances.",
       "Newborns respond better to sports massage than infants."
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Newborns have underdeveloped nervous systems and tolerate only very light, brief touch.",
     "long_explanation": "Massage for newborns must be approached with great sensitivity due to their immature nervous and circulatory systems. Sessions should be brief, lasting only a few minutes, and use feather-light strokes. Infants (1 month and older) can gradually tolerate longer sessions and slightly firmer pressure as their sensory systems develop.",
     "clinical_application": "Massage therapists working with newborns must limit session length and pressure to prevent overstimulation or distress.",
     "source_reference": "Touch Research Institute: Infant Massage Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -28,7 +22,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["newborn", "infant", "pressure", "nervous system"],
+    "tags": [
+      "newborn",
+      "infant",
+      "pressure",
+      "nervous system"
+    ],
     "keywords": [
       "baby massage",
       "age differences",
@@ -47,17 +46,11 @@
       "Light effleurage on the legs",
       "Percussion on the shoulders"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Effleurage is a gentle stroking technique suitable for newborns.",
     "long_explanation": "Light effleurage on the legs is often the first technique introduced because newborns tolerate it best. The legs are less sensitive than the torso or head, and gentle strokes help establish comfort and bonding.",
     "clinical_application": "Therapists should begin with the legs using feather-light strokes and watch for cues of overstimulation in newborns.",
     "source_reference": "International Association of Infant Massage",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -66,26 +59,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["technique", "effleurage", "safety"],
-    "keywords": ["stroke", "first touch", "gentle massage"],
+    "tags": [
+      "technique",
+      "effleurage",
+      "safety"
+    ],
+    "keywords": [
+      "stroke",
+      "first touch",
+      "gentle massage"
+    ],
     "synonyms": null
   },
   {
     "id": "newborn_vs_infant_massage_003",
     "correctAnswer": "1 month",
     "question": "At what age is an infant generally ready for longer massage sessions?",
-    "options": ["Birth", "2 weeks", "1 month", "6 months"],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
+    "options": [
+      "Birth",
+      "2 weeks",
+      "1 month",
+      "6 months"
     ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Around 4–6 weeks, infants begin to tolerate longer massages.",
     "long_explanation": "As infants reach one month of age, their sensory and circulatory systems develop, making them better suited for massages lasting 10–20 minutes. Before this stage, newborns require brief, calming strokes only.",
     "clinical_application": "Session duration can be gradually increased after the newborn phase, as long as the infant remains relaxed and alert.",
     "source_reference": "Touchpoints by T. Berry Brazelton",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -94,8 +94,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["duration", "development", "timing"],
-    "keywords": ["session length", "massage age", "1 month"],
+    "tags": [
+      "duration",
+      "development",
+      "timing"
+    ],
+    "keywords": [
+      "session length",
+      "massage age",
+      "1 month"
+    ],
     "synonyms": null
   },
   {
@@ -108,17 +116,11 @@
       "It may cause vomiting or reflux",
       "It overstimulates their nervous system"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Newborn digestion is sensitive, and pressure can trigger spit-up.",
     "long_explanation": "After feeding, the lower esophageal sphincter in newborns is immature, and abdominal massage can lead to regurgitation. Waiting 30+ minutes allows digestion to begin and reduces this risk.",
     "clinical_application": "Always time abdominal massage well and apply only minimal pressure in the newborn stage.",
     "source_reference": "La Leche League International",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -127,8 +129,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["digestion", "abdominal massage", "timing"],
-    "keywords": ["reflux", "feeding", "spit-up", "contraindication"],
+    "tags": [
+      "digestion",
+      "abdominal massage",
+      "timing"
+    ],
+    "keywords": [
+      "reflux",
+      "feeding",
+      "spit-up",
+      "contraindication"
+    ],
     "synonyms": null
   },
   {
@@ -141,17 +152,11 @@
       "Reaching for the therapist",
       "Cooing and making eye contact"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "These are classic signs of sensory overload in newborns.",
     "long_explanation": "Newborns use subtle cues like yawning, limb withdrawal, and gaze aversion to signal overstimulation. Therapists must stop or pause the session when such cues appear.",
     "clinical_application": "Training in infant behavioral cues is essential for safe and effective newborn massage.",
     "source_reference": "ZERO TO THREE: Infant Behavioral Signs",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -160,8 +165,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cues", "behavior", "overstimulation"],
-    "keywords": ["reflexes", "sensory overload", "newborn signs"],
+    "tags": [
+      "cues",
+      "behavior",
+      "overstimulation"
+    ],
+    "keywords": [
+      "reflexes",
+      "sensory overload",
+      "newborn signs"
+    ],
     "synonyms": null
   },
   {
@@ -174,17 +187,11 @@
       "Newborn skin is thinner and more absorbent than infant skin",
       "There is no difference"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Newborn skin has a more permeable barrier and higher absorption risk.",
     "long_explanation": "Newborns are born with immature epidermal barriers, making their skin more vulnerable to transdermal absorption and damage. This requires cautious use of oils and strokes. By 1–2 months, the skin thickens and becomes more protective.",
     "clinical_application": "Choose hypoallergenic oils and avoid strong scents when massaging newborns.",
     "source_reference": "American Academy of Pediatrics: Neonatal Skin Development",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -193,8 +200,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["skin", "absorption", "safety"],
-    "keywords": ["skin barrier", "permeability", "infant dermis"],
+    "tags": [
+      "skin",
+      "absorption",
+      "safety"
+    ],
+    "keywords": [
+      "skin barrier",
+      "permeability",
+      "infant dermis"
+    ],
     "synonyms": null
   },
   {
@@ -207,17 +222,11 @@
       "Knee jerk reflex",
       "Plantar reflex"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "The Babinski reflex causes toe extension in response to sole stimulation.",
     "long_explanation": "The Babinski reflex is normal in newborns and disappears around 1 year. It causes toes to fan out when the sole is stroked. This reflex should be respected when applying massage strokes to the feet.",
     "clinical_application": "Understanding reflex responses allows therapists to adapt footwork and avoid triggering distress.",
     "source_reference": "Harvard Health: Newborn Reflexes",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -226,8 +235,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["reflex", "nervous system", "foot"],
-    "keywords": ["primitive reflex", "Babinski", "developmental response"],
+    "tags": [
+      "reflex",
+      "nervous system",
+      "foot"
+    ],
+    "keywords": [
+      "primitive reflex",
+      "Babinski",
+      "developmental response"
+    ],
     "synonyms": null
   },
   {
@@ -240,17 +257,11 @@
       "Newborn sensory systems are more sensitive to overstimulation",
       "It improves therapist concentration"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Newborns are easily overstimulated by excess noise or light.",
     "long_explanation": "Because newborns have immature sensory systems, they react more strongly to environmental stimuli. A quiet, dimly lit space supports relaxation and bonding during massage.",
     "clinical_application": "Create a calm environment to support parasympathetic activation and avoid reflexive distress.",
     "source_reference": "Infant Mental Health Journal",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -259,8 +270,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["environment", "lighting", "stimulation"],
-    "keywords": ["ambient control", "calm setting", "newborn care"],
+    "tags": [
+      "environment",
+      "lighting",
+      "stimulation"
+    ],
+    "keywords": [
+      "ambient control",
+      "calm setting",
+      "newborn care"
+    ],
     "synonyms": null
   },
   {
@@ -273,17 +292,11 @@
       "Newborns are best positioned on a soft, padded surface with full support",
       "There is no difference"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Newborns need full support due to limited motor control.",
     "long_explanation": "Newborns lack muscle tone and head control, so a soft, supportive surface like a padded mat is best. Older infants may tolerate semi-reclined or caregiver-held positions during massage.",
     "clinical_application": "Proper positioning prevents distress and supports safe interaction during sessions.",
     "source_reference": "Certified Infant Massage Instructor Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -292,8 +305,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["position", "support", "posture"],
-    "keywords": ["floor mat", "swaddling", "head support"],
+    "tags": [
+      "position",
+      "support",
+      "posture"
+    ],
+    "keywords": [
+      "floor mat",
+      "swaddling",
+      "head support"
+    ],
     "synonyms": null
   },
   {
@@ -306,17 +327,11 @@
       "Observe facial expressions, body language, and alert cues",
       "Begin massage immediately after feeding"
     ],
-    "topics": [
-      "modalities",
-      "special_populations",
-      "infant_massage",
-      "newborn_vs_infant_massage"
-    ],
+    "topics": ["modalities", "special_populations", "infant_massage", "newborn_vs_infant_massage"],
     "short_explanation": "Nonverbal cues are essential for infant and newborn massage safety.",
     "long_explanation": "Consent in infant massage involves attunement to the baby’s cues. A calm, alert state is ideal. Therapists and caregivers should look for soft facial expressions, stillness, and readiness to engage. Crying, arching, or turning away indicate the session should pause or end.",
     "clinical_application": "Always seek active consent through behavioral observation before and during infant massage.",
     "source_reference": "Infant Massage USA: Best Practices",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/special_populations/infant_massage/newborn_vs_infant_massage.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -325,8 +340,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["consent", "baby cues", "ethics"],
-    "keywords": ["readiness", "emotional safety", "massage start"],
+    "tags": [
+      "consent",
+      "baby cues",
+      "ethics"
+    ],
+    "keywords": [
+      "readiness",
+      "emotional safety",
+      "massage start"
+    ],
     "synonyms": null
   }
 ]

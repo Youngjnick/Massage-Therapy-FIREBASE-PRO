@@ -14,7 +14,6 @@
     "long_explanation": "Washing hands prevents germ transfer and demonstrates care. Greeting the client with warmth helps ease nerves and create a therapeutic connection.",
     "clinical_application": "Builds rapport, sets a professional tone, and ensures hygiene—key in therapeutic relationships.",
     "source_reference": "FSMTB, Salvo’s Massage Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hygiene", "client_care", "professionalism"],
-    "keywords": ["greeting", "hand washing", "rapport", "hygiene"],
+    "tags": [
+      "hygiene",
+      "client_care",
+      "professionalism"
+    ],
+    "keywords": [
+      "greeting",
+      "hand washing",
+      "rapport",
+      "hygiene"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "Gathering client history, goals, and preferences ensures safe, effective care. Skipping intake could lead to ineffective or harmful treatment.",
     "clinical_application": "Essential for identifying medical conditions, pressure preferences, or areas to avoid.",
     "source_reference": "FSMTB, Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,8 +58,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["client_intake", "safety_screening", "customization"],
-    "keywords": ["intake", "interview", "assessment", "client needs"],
+    "tags": [
+      "client_intake",
+      "safety_screening",
+      "customization"
+    ],
+    "keywords": [
+      "intake",
+      "interview",
+      "assessment",
+      "client needs"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +86,6 @@
     "long_explanation": "Allergic reactions to oils or discomfort from pressure levels can ruin a session. Asking these up front prevents harm and builds trust.",
     "clinical_application": "Vital for sensitive skin, previous injuries, or chronic conditions needing lighter work.",
     "source_reference": "Salvo, FSMTB",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "easy",
@@ -79,8 +94,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["client_safety", "pressure_customization", "allergy_check"],
-    "keywords": ["allergies", "pressure level", "client comfort"],
+    "tags": [
+      "client_safety",
+      "pressure_customization",
+      "allergy_check"
+    ],
+    "keywords": [
+      "allergies",
+      "pressure level",
+      "client comfort"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +121,6 @@
     "long_explanation": "Low lights and slow music help shift clients out of fight-or-flight mode and into rest-and-digest, optimizing therapeutic results.",
     "clinical_application": "Especially important for anxious clients, trauma-informed care, and stress recovery.",
     "source_reference": "Massage Therapy Principles & Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -107,8 +129,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["relaxation_environment", "sensory_preparation"],
-    "keywords": ["music", "lighting", "calm atmosphere"],
+    "tags": [
+      "relaxation_environment",
+      "sensory_preparation"
+    ],
+    "keywords": [
+      "music",
+      "lighting",
+      "calm atmosphere"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "Draping establishes physical and psychological safety, allowing the client to relax fully without worry about exposure.",
     "clinical_application": "Crucial for trauma-informed care, ethics compliance, and client trust.",
     "source_reference": "FSMTB Ethics Section",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "easy",
@@ -135,8 +163,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["draping_technique", "client_ethics", "comfort_modesty"],
-    "keywords": ["modesty", "warmth", "safety", "ethics"],
+    "tags": [
+      "draping_technique",
+      "client_ethics",
+      "comfort_modesty"
+    ],
+    "keywords": [
+      "modesty",
+      "warmth",
+      "safety",
+      "ethics"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +191,6 @@
     "long_explanation": "Knowing where to place the face, limbs, and head allows the client to get settled comfortably and safely, reducing anxiety.",
     "clinical_application": "Important for new clients, elderly clients, or those with mobility limitations.",
     "source_reference": "Salvo Textbook, FSMTB",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -163,8 +199,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["client_instruction", "setup_guidance"],
-    "keywords": ["positioning", "communication", "preparation"],
+    "tags": [
+      "client_instruction",
+      "setup_guidance"
+    ],
+    "keywords": [
+      "positioning",
+      "communication",
+      "preparation"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +225,6 @@
     "long_explanation": "Shivering or tension caused by low room temperature interferes with relaxation and may increase discomfort during treatment.",
     "clinical_application": "Especially critical for elderly clients, those with circulation issues, or clients with anxiety.",
     "source_reference": "Massage Therapy Fundamentals",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "easy",
@@ -191,8 +233,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["comfort_climate", "environment_control"],
-    "keywords": ["warmth", "comfort", "room temperature"],
+    "tags": [
+      "comfort_climate",
+      "environment_control"
+    ],
+    "keywords": [
+      "warmth",
+      "comfort",
+      "room temperature"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +259,6 @@
     "long_explanation": "Clients who are nervous may carry tension that interferes with therapeutic goals. Gentle, informative communication can lower cortisol and foster rapport.",
     "clinical_application": "Essential for trauma survivors, first-time clients, or anyone exhibiting anxiety.",
     "source_reference": "Trauma-Informed Massage Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -219,8 +267,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["client_reassurance", "trauma_informed_care"],
-    "keywords": ["nervous client", "anxiety", "communication"],
+    "tags": [
+      "client_reassurance",
+      "trauma_informed_care"
+    ],
+    "keywords": [
+      "nervous client",
+      "anxiety",
+      "communication"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +293,6 @@
     "long_explanation": "Human warmth at the start of the session builds trust and openness. Clients who feel emotionally safe relax more fully and benefit more from treatment.",
     "clinical_application": "Great for return clients and new clients alike—enhances long-term retention.",
     "source_reference": "FSMTB, Client Communication Skills",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "easy",
@@ -247,8 +301,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rapport_building", "client_connection"],
-    "keywords": ["smile", "introduction", "connection"],
+    "tags": [
+      "rapport_building",
+      "client_connection"
+    ],
+    "keywords": [
+      "smile",
+      "introduction",
+      "connection"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +327,6 @@
     "long_explanation": "Cold lotion causes startle responses, and allergic reactions are a serious concern. Asking and testing show professionalism and care.",
     "clinical_application": "Especially important for clients with eczema, allergies, or scent sensitivity.",
     "source_reference": "Salvo, FSMTB, Massage Practice Exams",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/beginning_a_session_tips.json",
     "question_type": null,
     "difficulty": "moderate",
@@ -275,8 +335,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["product_use", "allergy_awareness", "comfort"],
-    "keywords": ["warm lotion", "skin care", "product safety"],
+    "tags": [
+      "product_use",
+      "allergy_awareness",
+      "comfort"
+    ],
+    "keywords": [
+      "warm lotion",
+      "skin care",
+      "product safety"
+    ],
     "synonyms": null
   }
 ]

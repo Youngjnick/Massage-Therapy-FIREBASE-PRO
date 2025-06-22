@@ -14,7 +14,6 @@
     "long_explanation": "The thyroid secretes mostly thyroxine (T4), which is converted into the more active form, T3, in peripheral tissues. T4 regulates metabolism, heart rate, and body temperature.",
     "clinical_application": "In massage clients with fatigue or weight gain, undiagnosed thyroid issues may warrant referral for testing.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,21 +22,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["T4", "thyroid hormone", "endocrine"],
-    "keywords": ["thyroxine", "thyroid output", "metabolism regulation"],
+    "tags": [
+      "T4",
+      "thyroid hormone",
+      "endocrine"
+    ],
+    "keywords": [
+      "thyroxine",
+      "thyroid output",
+      "metabolism regulation"
+    ],
     "synonyms": null
   },
   {
     "id": "thyroid_002",
     "correctAnswer": "Iodine",
     "question": "Which mineral is essential for thyroid hormone synthesis?",
-    "options": ["Calcium", "Iron", "Iodine", "Zinc"],
+    "options": [
+      "Calcium",
+      "Iron",
+      "Iodine",
+      "Zinc"
+    ],
     "topics": ["anatomy", "organs", "thyroid"],
     "short_explanation": "Iodine is required to form thyroid hormones.",
     "long_explanation": "Iodine is actively transported into the thyroid and used in the synthesis of T3 and T4. Deficiency can lead to goiter and hypothyroidism.",
     "clinical_application": "Massage therapists may encounter clients from iodine-deficient regions with enlarged thyroids or low energy.",
     "source_reference": "Endocrinology by Hadley",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "basic",
@@ -46,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["iodine", "thyroid synthesis", "goiter"],
-    "keywords": ["thyroid mineral", "iodine deficiency", "hormone synthesis"],
+    "tags": [
+      "iodine",
+      "thyroid synthesis",
+      "goiter"
+    ],
+    "keywords": [
+      "thyroid mineral",
+      "iodine deficiency",
+      "hormone synthesis"
+    ],
     "synonyms": null
   },
   {
     "id": "thyroid_003",
     "correctAnswer": "Calcitonin",
     "question": "Which hormone lowers blood calcium levels and is produced by the thyroid?",
-    "options": ["PTH", "Calcitonin", "T3", "Insulin"],
+    "options": [
+      "PTH",
+      "Calcitonin",
+      "T3",
+      "Insulin"
+    ],
     "topics": ["anatomy", "organs", "thyroid"],
     "short_explanation": "Calcitonin lowers blood calcium levels by inhibiting bone resorption.",
     "long_explanation": "Produced by parafollicular (C) cells of the thyroid, calcitonin helps reduce calcium by inhibiting osteoclast activity and increasing calcium excretion.",
     "clinical_application": "Knowledge of calcium regulation can aid in treating clients with osteoporosis or chronic tension from muscle cramping.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -69,7 +92,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["calcitonin", "calcium homeostasis", "C cells"],
+    "tags": [
+      "calcitonin",
+      "calcium homeostasis",
+      "C cells"
+    ],
     "keywords": [
       "thyroid calcium hormone",
       "osteoclast inhibition",
@@ -92,7 +119,6 @@
     "long_explanation": "The thyroid is a butterfly-shaped gland positioned in the anterior neck at the level of the C5–T1 vertebrae, wrapping around the trachea.",
     "clinical_application": "During neck massage or lymphatic drainage, therapists should avoid applying pressure directly over the thyroid area.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "basic",
@@ -101,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thyroid anatomy", "neck", "trachea"],
-    "keywords": ["thyroid location", "cervical anatomy", "anterior neck"],
+    "tags": [
+      "thyroid anatomy",
+      "neck",
+      "trachea"
+    ],
+    "keywords": [
+      "thyroid location",
+      "cervical anatomy",
+      "anterior neck"
+    ],
     "synonyms": null
   },
   {
@@ -120,7 +154,6 @@
     "long_explanation": "Hypothyroidism leads to slowed metabolism, fatigue, weight gain, and cold intolerance. It can result from autoimmune thyroiditis (Hashimoto's) or iodine deficiency.",
     "clinical_application": "Massage therapists should monitor pressure and temperature in clients with hypothyroidism due to low energy and skin sensitivity.",
     "source_reference": "Harrison’s Principles of Internal Medicine",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -129,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hypothyroidism", "autoimmune", "Hashimoto"],
-    "keywords": ["thyroid deficiency", "slow metabolism", "thyroid disorders"],
+    "tags": [
+      "hypothyroidism",
+      "autoimmune",
+      "Hashimoto"
+    ],
+    "keywords": [
+      "thyroid deficiency",
+      "slow metabolism",
+      "thyroid disorders"
+    ],
     "synonyms": null
   },
   {
@@ -148,7 +189,6 @@
     "long_explanation": "Thyroid-stimulating hormone (TSH) is secreted by the anterior pituitary and prompts the thyroid to synthesize and release hormones in response to low circulating levels.",
     "clinical_application": "Clients on thyroid medication often have regular TSH levels checked; awareness helps in timing massage for optimal energy.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -157,7 +197,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["TSH", "pituitary", "thyroid regulation"],
+    "tags": [
+      "TSH",
+      "pituitary",
+      "thyroid regulation"
+    ],
     "keywords": [
       "thyroid-stimulating hormone",
       "feedback loop",
@@ -180,7 +224,6 @@
     "long_explanation": "Graves’ disease is an autoimmune disorder where antibodies stimulate the TSH receptor, leading to elevated T3 and T4 levels, anxiety, weight loss, and goiter.",
     "clinical_application": "Therapists should be cautious with pressure and pace in clients with hyperthyroidism due to cardiovascular stress.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -189,7 +232,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Graves", "hyperthyroidism", "autoantibodies"],
+    "tags": [
+      "Graves",
+      "hyperthyroidism",
+      "autoantibodies"
+    ],
     "keywords": [
       "excess thyroid hormone",
       "thyrotoxicosis",
@@ -201,13 +248,17 @@
     "id": "thyroid_008",
     "correctAnswer": "TSH",
     "question": "Which lab finding is typically elevated in primary hypothyroidism?",
-    "options": ["T3", "T4", "TSH", "Calcitonin"],
+    "options": [
+      "T3",
+      "T4",
+      "TSH",
+      "Calcitonin"
+    ],
     "topics": ["anatomy", "organs", "thyroid"],
     "short_explanation": "TSH is elevated as the body tries to stimulate a failing thyroid.",
     "long_explanation": "In primary hypothyroidism, low levels of thyroid hormone fail to provide negative feedback, leading the pituitary to increase TSH production.",
     "clinical_application": "Clients with high TSH may feel cold or fatigued; therapists should consider slower-paced sessions.",
     "source_reference": "Current Medical Diagnosis & Treatment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -216,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["TSH elevation", "hypothyroidism labs", "endocrine feedback"],
-    "keywords": ["thyroid blood tests", "thyroid feedback", "TSH marker"],
+    "tags": [
+      "TSH elevation",
+      "hypothyroidism labs",
+      "endocrine feedback"
+    ],
+    "keywords": [
+      "thyroid blood tests",
+      "thyroid feedback",
+      "TSH marker"
+    ],
     "synonyms": null
   },
   {
@@ -235,7 +294,6 @@
     "long_explanation": "The recurrent laryngeal nerve branches from the vagus and loops near the thyroid. Damage can lead to vocal cord paralysis and hoarseness.",
     "clinical_application": "Massage therapists should be aware of surgical history when addressing anterior neck tension or voice strain.",
     "source_reference": "Surgical Anatomy by Skandalakis",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -244,7 +302,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["recurrent laryngeal", "thyroid surgery", "nerve preservation"],
+    "tags": [
+      "recurrent laryngeal",
+      "thyroid surgery",
+      "nerve preservation"
+    ],
     "keywords": [
       "voice nerve",
       "thyroidectomy complication",
@@ -267,7 +329,6 @@
     "long_explanation": "Thyroid-stimulating autoantibodies in Graves’ cause the gland to enlarge. A goiter may also develop from iodine deficiency or nodules.",
     "clinical_application": "Clients with neck swelling should be referred for evaluation before receiving focused anterior neck work.",
     "source_reference": "Harrison’s Principles of Internal Medicine",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thyroid.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -276,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["goiter", "thyroid swelling", "Graves’ disease"],
-    "keywords": ["thyroid enlargement", "visible goiter", "anterior neck mass"],
+    "tags": [
+      "goiter",
+      "thyroid swelling",
+      "Graves’ disease"
+    ],
+    "keywords": [
+      "thyroid enlargement",
+      "visible goiter",
+      "anterior neck mass"
+    ],
     "synonyms": null
   }
 ]

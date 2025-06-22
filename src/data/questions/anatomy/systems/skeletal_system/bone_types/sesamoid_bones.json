@@ -9,18 +9,11 @@
       "Reduce friction and enhance tendon leverage",
       "Connect ligaments to bones"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Sesamoid bones reduce tendon friction and enhance mechanical advantage.",
     "long_explanation": "These small bones form within tendons to minimize wear and improve leverage. The patella is the most well-known sesamoid bone.",
     "clinical_application": "Understanding sesamoid function helps massage therapists treat areas like the knee and big toe where tendons may be under stress.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 86",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -29,27 +22,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sesamoid", "tendon", "friction", "leverage"],
-    "keywords": ["patella", "mechanical advantage", "embedded bones"],
+    "tags": [
+      "sesamoid",
+      "tendon",
+      "friction",
+      "leverage"
+    ],
+    "keywords": [
+      "patella",
+      "mechanical advantage",
+      "embedded bones"
+    ],
     "synonyms": null
   },
   {
     "id": "sesamoid_bones_002",
     "correctAnswer": "Patella",
     "question": "Which of the following is the largest sesamoid bone in the human body?",
-    "options": ["Pisiform", "Patella", "Navicular", "Calcaneus"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
+    "options": [
+      "Pisiform",
+      "Patella",
+      "Navicular",
+      "Calcaneus"
     ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "The patella is the largest sesamoid bone.",
     "long_explanation": "The patella forms within the quadriceps tendon and protects the knee joint while increasing the leverage of the quadriceps femoris muscle.",
     "clinical_application": "Massage around the knee should consider the mobility and function of the patella to prevent irritation.",
     "source_reference": "Anatomy & Physiology, Saladin 9th ed., p. 217",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -58,8 +58,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["patella", "largest sesamoid", "knee"],
-    "keywords": ["kneecap", "quadriceps tendon"],
+    "tags": [
+      "patella",
+      "largest sesamoid",
+      "knee"
+    ],
+    "keywords": [
+      "kneecap",
+      "quadriceps tendon"
+    ],
     "synonyms": null
   },
   {
@@ -72,18 +79,11 @@
       "Beneath the head of the first metatarsal",
       "Next to the navicular bone"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "They are found beneath the first metatarsal head.",
     "long_explanation": "Two small sesamoid bones lie under the big toe joint, helping absorb weight and reduce tendon strain during gait.",
     "clinical_application": "Sesamoiditis in the foot may require adapted pressure or avoidance during massage therapy.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 213",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -92,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["foot", "big toe", "first metatarsal", "sesamoiditis"],
-    "keywords": ["plantar", "metatarsophalangeal joint"],
+    "tags": [
+      "foot",
+      "big toe",
+      "first metatarsal",
+      "sesamoiditis"
+    ],
+    "keywords": [
+      "plantar",
+      "metatarsophalangeal joint"
+    ],
     "synonyms": null
   },
   {
@@ -106,18 +114,11 @@
       "They are attached to muscle bellies",
       "They are all irregular in shape"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Sesamoids form inside tendons.",
     "long_explanation": "Sesamoid bones are embedded in tendons and serve biomechanical roles such as pressure modulation, commonly at joints.",
     "clinical_application": "Massage therapists working near joints should assess for sesamoid tension zones in tendinous regions.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson, 15th ed., p. 212",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -126,27 +127,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["embedded bone", "tendons", "biomechanics"],
-    "keywords": ["in-tendon", "leverage", "modulation"],
+    "tags": [
+      "embedded bone",
+      "tendons",
+      "biomechanics"
+    ],
+    "keywords": [
+      "in-tendon",
+      "leverage",
+      "modulation"
+    ],
     "synonyms": null
   },
   {
     "id": "sesamoid_bones_005",
     "correctAnswer": "Pisiform",
     "question": "Which sesamoid bone is part of the proximal row of carpals and articulates with the triquetrum?",
-    "options": ["Scaphoid", "Hamate", "Pisiform", "Capitate"],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
+    "options": [
+      "Scaphoid",
+      "Hamate",
+      "Pisiform",
+      "Capitate"
     ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Pisiform is the sesamoid of the wrist.",
     "long_explanation": "The pisiform sits within the tendon of flexor carpi ulnaris and articulates with the triquetrum, serving as a sesamoid bone in the wrist.",
     "clinical_application": "Wrist strain may involve pisiform compression, relevant for massage therapists treating carpal tunnel symptoms.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 146",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -155,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pisiform", "carpal", "ulnar side"],
-    "keywords": ["wrist", "flexor carpi ulnaris", "triangular bone"],
+    "tags": [
+      "pisiform",
+      "carpal",
+      "ulnar side"
+    ],
+    "keywords": [
+      "wrist",
+      "flexor carpi ulnaris",
+      "triangular bone"
+    ],
     "synonyms": null
   },
   {
@@ -169,18 +184,11 @@
       "Plantar fasciitis",
       "Morton’s neuroma"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Sesamoiditis is inflammation of the sesamoid bones in the foot.",
     "long_explanation": "Sesamoiditis causes pain beneath the ball of the big toe due to overuse or trauma to the tendons housing the sesamoids.",
     "clinical_application": "Massage therapists should reduce pressure on the affected area and support arch mechanics in clients with foot pain.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 215",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -189,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sesamoiditis", "inflammation", "foot pain"],
-    "keywords": ["big toe", "inflammation", "weight-bearing"],
+    "tags": [
+      "sesamoiditis",
+      "inflammation",
+      "foot pain"
+    ],
+    "keywords": [
+      "big toe",
+      "inflammation",
+      "weight-bearing"
+    ],
     "synonyms": null
   },
   {
@@ -203,18 +219,11 @@
       "Ossification within tendons due to mechanical stress",
       "Ossification at bone epiphyses"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Sesamoids ossify within tendons under stress.",
     "long_explanation": "Mechanical forces like tension and friction lead to ossification of fibrocartilaginous regions inside tendons, forming sesamoid bones over time.",
     "clinical_application": "Therapists should be cautious with repeated friction techniques in tendon areas prone to ossification.",
     "source_reference": "Human Anatomy, Marieb 8th ed., p. 162",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -223,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ossification", "tendons", "mechanical stress"],
-    "keywords": ["stress", "formation", "development"],
+    "tags": [
+      "ossification",
+      "tendons",
+      "mechanical stress"
+    ],
+    "keywords": [
+      "stress",
+      "formation",
+      "development"
+    ],
     "synonyms": null
   },
   {
@@ -237,18 +254,11 @@
       "Along the iliac crest",
       "Near the coracoid process"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Palpable sesamoids lie beneath the big toe joint.",
     "long_explanation": "The two small sesamoid bones beneath the 1st metatarsal can be palpated during assessment of plantar structures or toe extension.",
     "clinical_application": "Palpating these bones can help assess gait dysfunction or confirm sesamoiditis.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 225",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -257,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palpation", "big toe", "gait"],
-    "keywords": ["assessment", "plantar", "palpate"],
+    "tags": [
+      "palpation",
+      "big toe",
+      "gait"
+    ],
+    "keywords": [
+      "assessment",
+      "plantar",
+      "palpate"
+    ],
     "synonyms": null
   },
   {
@@ -271,18 +289,11 @@
       "Quadriceps femoris tendon",
       "Semitendinosus tendon"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "The patella lies within the quadriceps femoris tendon.",
     "long_explanation": "The patella increases leverage of the quadriceps muscle by acting as a fulcrum within its tendon over the knee joint.",
     "clinical_application": "Therapists assessing knee mobility should consider patellar tracking and alignment.",
     "source_reference": "Anatomy & Physiology, Saladin 9th ed., p. 218",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -291,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["patella", "knee", "quadriceps"],
-    "keywords": ["tendon", "knee", "fulcrum"],
+    "tags": [
+      "patella",
+      "knee",
+      "quadriceps"
+    ],
+    "keywords": [
+      "tendon",
+      "knee",
+      "fulcrum"
+    ],
     "synonyms": null
   },
   {
@@ -305,18 +324,11 @@
       "They are often small and vary in number among individuals",
       "They connect directly to bone marrow spaces"
     ],
-    "topics": [
-      "anatomy",
-      "systems",
-      "skeletal_system",
-      "bone_types",
-      "sesamoid_bones"
-    ],
+    "topics": ["anatomy", "systems", "skeletal_system", "bone_types", "sesamoid_bones"],
     "short_explanation": "Sesamoid bones vary in size and number.",
     "long_explanation": "Most sesamoid bones are small, and some may be absent or present in extra numbers depending on genetics and mechanical use.",
     "clinical_application": "This variability should be accounted for in clinical palpation and diagnosis.",
     "source_reference": "Gray's Anatomy for Students, 4th ed., p. 118",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/bone_types/sesamoid_bones.json",
     "question_type": "Multiple Choice",
     "difficulty": "Moderate",
@@ -325,8 +337,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["variability", "accessory bones", "sesamoids"],
-    "keywords": ["number variation", "individual differences"],
+    "tags": [
+      "variability",
+      "accessory bones",
+      "sesamoids"
+    ],
+    "keywords": [
+      "number variation",
+      "individual differences"
+    ],
     "synonyms": null
   }
 ]

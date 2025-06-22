@@ -14,7 +14,6 @@
     "long_explanation": "The PSIS can be found by palpating medially and slightly inferior to the iliac crest, where dimples are visible on many individuals.",
     "clinical_application": "Identifying the PSIS is key for sacral alignment, lumbar assessment, and low back pain evaluation.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["PSIS", "pelvis", "bony landmarks"],
-    "keywords": ["iliac crest", "pelvis palpation", "posterior landmarks"],
-    "synonyms": ["posterior pelvis", "bony landmarks"]
+    "tags": [
+      "PSIS",
+      "pelvis",
+      "bony landmarks"
+    ],
+    "keywords": [
+      "iliac crest",
+      "pelvis palpation",
+      "posterior landmarks"
+    ],
+    "synonyms": [
+      "posterior pelvis",
+      "bony landmarks"
+    ]
   },
   {
     "id": "palpation_landmarks_002",
@@ -42,7 +52,6 @@
     "long_explanation": "C7 is easily located due to its prominent spinous process. Transverse processes lie laterally and can be palpated to assess cervical mobility.",
     "clinical_application": "Palpating these structures aids in identifying restricted motion, asymmetry, or vertebral misalignment.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cervical spine", "palpation", "neck"],
-    "keywords": ["transverse process", "cervical vertebrae", "neck landmarks"],
-    "synonyms": ["neck palpation", "C7 landmarks"]
+    "tags": [
+      "cervical spine",
+      "palpation",
+      "neck"
+    ],
+    "keywords": [
+      "transverse process",
+      "cervical vertebrae",
+      "neck landmarks"
+    ],
+    "synonyms": [
+      "neck palpation",
+      "C7 landmarks"
+    ]
   },
   {
     "id": "palpation_landmarks_003",
@@ -70,7 +90,6 @@
     "long_explanation": "To locate the sciatic nerve, draw an imaginary line between the greater trochanter and ischial tuberosity. Palpation near the midpoint of this line may elicit nerve sensitivity.",
     "clinical_application": "Precise palpation avoids nerve compression and guides effective gluteal massage.",
     "source_reference": "Muscolino's Clinical Anatomy for Manual Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,9 +98,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gluteals", "sciatic", "nerve"],
-    "keywords": ["sciatic nerve palpation", "gluteal landmarks"],
-    "synonyms": ["sciatic nerve palpation", "gluteal landmarks"]
+    "tags": [
+      "gluteals",
+      "sciatic",
+      "nerve"
+    ],
+    "keywords": [
+      "sciatic nerve palpation",
+      "gluteal landmarks"
+    ],
+    "synonyms": [
+      "sciatic nerve palpation",
+      "gluteal landmarks"
+    ]
   },
   {
     "id": "palpation_landmarks_004",
@@ -98,7 +127,6 @@
     "long_explanation": "The SCM can be palpated when the client rotates their head to the side and slightly lifts it. The muscle forms a diagonal band on the neck from mastoid to clavicle/sternum.",
     "clinical_application": "Palpating the SCM is helpful for treating tension headaches and postural imbalance.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -107,9 +135,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["SCM", "neck", "palpation"],
-    "keywords": ["sternocleidomastoid", "neck muscle", "palpation"],
-    "synonyms": ["SCM", "sternocleidomastoid"]
+    "tags": [
+      "SCM",
+      "neck",
+      "palpation"
+    ],
+    "keywords": [
+      "sternocleidomastoid",
+      "neck muscle",
+      "palpation"
+    ],
+    "synonyms": [
+      "SCM",
+      "sternocleidomastoid"
+    ]
   },
   {
     "id": "palpation_landmarks_005",
@@ -126,7 +165,6 @@
     "long_explanation": "The medial (vertebral) border of the scapula is palpated by drawing fingers along the inner edge of the scapula as the arm is moved across the body or lifted.",
     "clinical_application": "Helps assess shoulder blade motion and scapular winging in posture evaluations.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,9 +173,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["scapula", "palpation", "shoulder"],
-    "keywords": ["medial scapula border", "shoulder blade edge"],
-    "synonyms": ["medial scapula border", "shoulder blade edge"]
+    "tags": [
+      "scapula",
+      "palpation",
+      "shoulder"
+    ],
+    "keywords": [
+      "medial scapula border",
+      "shoulder blade edge"
+    ],
+    "synonyms": [
+      "medial scapula border",
+      "shoulder blade edge"
+    ]
   },
   {
     "id": "palpation_landmarks_006",
@@ -154,7 +202,6 @@
     "long_explanation": "To locate the brachial pulse, palpate medial to the biceps tendon in the anterior elbow (antecubital fossa). This area is commonly used for blood pressure measurement.",
     "clinical_application": "Accurate palpation of the brachial artery aids in assessing circulation and selecting massage techniques for the upper limb.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,9 +210,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brachial artery", "pulse", "antecubital"],
-    "keywords": ["brachial artery", "pulse palpation", "biceps tendon"],
-    "synonyms": ["brachial pulse", "antecubital fossa"]
+    "tags": [
+      "brachial artery",
+      "pulse",
+      "antecubital"
+    ],
+    "keywords": [
+      "brachial artery",
+      "pulse palpation",
+      "biceps tendon"
+    ],
+    "synonyms": [
+      "brachial pulse",
+      "antecubital fossa"
+    ]
   },
   {
     "id": "palpation_landmarks_007",
@@ -182,7 +240,6 @@
     "long_explanation": "The superior angle of the scapula is the insertion point of levator scapulae and can be palpated to assess tension differences with the trapezius.",
     "clinical_application": "Helps differentiate muscular tension sources in neck and shoulder complaints.",
     "source_reference": "Muscolino’s Musculoskeletal Anatomy Coloring Book",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -191,9 +248,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["trapezius", "levator scapulae", "scapula"],
-    "keywords": ["scapula angle", "neck palpation", "upper back"],
-    "synonyms": ["scapular angle", "levator insertion"]
+    "tags": [
+      "trapezius",
+      "levator scapulae",
+      "scapula"
+    ],
+    "keywords": [
+      "scapula angle",
+      "neck palpation",
+      "upper back"
+    ],
+    "synonyms": [
+      "scapular angle",
+      "levator insertion"
+    ]
   },
   {
     "id": "palpation_landmarks_008",
@@ -210,7 +278,6 @@
     "long_explanation": "The long head of the biceps brachii runs through the intertubercular groove. With slight external rotation of the arm, the tendon becomes palpable between the greater and lesser tubercles.",
     "clinical_application": "Accurate palpation helps assess biceps tendonitis or shoulder instability.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,13 +286,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["biceps tendon", "shoulder", "palpation"],
+    "tags": [
+      "biceps tendon",
+      "shoulder",
+      "palpation"
+    ],
     "keywords": [
       "intertubercular groove",
       "biceps brachii",
       "humerus landmarks"
     ],
-    "synonyms": ["biceps tendon groove", "bicipital groove"]
+    "synonyms": [
+      "biceps tendon groove",
+      "bicipital groove"
+    ]
   },
   {
     "id": "palpation_landmarks_009",
@@ -242,7 +316,6 @@
     "long_explanation": "The mastoid process of the temporal bone is a rounded projection behind the ear. It serves as an attachment for the sternocleidomastoid, splenius capitis, and other muscles.",
     "clinical_application": "Palpation helps assess neck muscle tension and guide craniosacral techniques.",
     "source_reference": "Muscolino's Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -251,9 +324,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mastoid", "temporal bone", "palpation"],
-    "keywords": ["mastoid process", "ear landmark", "neck muscles"],
-    "synonyms": ["temporal process", "ear base"]
+    "tags": [
+      "mastoid",
+      "temporal bone",
+      "palpation"
+    ],
+    "keywords": [
+      "mastoid process",
+      "ear landmark",
+      "neck muscles"
+    ],
+    "synonyms": [
+      "temporal process",
+      "ear base"
+    ]
   },
   {
     "id": "palpation_landmarks_010",
@@ -270,7 +354,6 @@
     "long_explanation": "To palpate the iliopsoas, locate the anterior superior iliac spine (ASIS) and move slightly medial and inferior beneath the inguinal ligament. This region requires caution due to nearby vascular structures.",
     "clinical_application": "Palpation of the iliopsoas can assist in assessing hip flexor tightness or psoas syndrome.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/techniques/palpation/palpation_landmarks.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -279,8 +362,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["iliopsoas", "ASIS", "hip"],
-    "keywords": ["psoas palpation", "inguinal ligament", "hip flexor"],
-    "synonyms": ["iliopsoas access", "psoas location"]
+    "tags": [
+      "iliopsoas",
+      "ASIS",
+      "hip"
+    ],
+    "keywords": [
+      "psoas palpation",
+      "inguinal ligament",
+      "hip flexor"
+    ],
+    "synonyms": [
+      "iliopsoas access",
+      "psoas location"
+    ]
   }
 ]

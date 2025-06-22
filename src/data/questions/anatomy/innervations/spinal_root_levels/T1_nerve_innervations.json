@@ -9,17 +9,11 @@
       "Flexor carpi radialis",
       "Deltoid"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "T1 innervates the intrinsic hand muscles.",
     "long_explanation": "The T1 spinal nerve primarily supplies motor innervation to the intrinsic muscles of the hand, especially the interossei and lumbricals, via the ulnar and median nerves.",
     "clinical_application": "Weakness in fine motor tasks, such as writing, may suggest T1 nerve root involvement.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -28,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["T1", "motor", "intrinsic hand muscles"],
-    "keywords": ["T1 nerve", "motor innervation", "hand muscles"],
-    "synonyms": ["T1", "hand innervation"]
+    "tags": [
+      "T1",
+      "motor",
+      "intrinsic hand muscles"
+    ],
+    "keywords": [
+      "T1 nerve",
+      "motor innervation",
+      "hand muscles"
+    ],
+    "synonyms": [
+      "T1",
+      "hand innervation"
+    ]
   },
   {
     "id": "t1_nerve_innervations_002",
@@ -42,17 +47,11 @@
       "Thumb and index finger",
       "Lateral shoulder"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "T1 supplies sensation to the medial upper arm.",
     "long_explanation": "The T1 dermatome corresponds to the medial side of the forearm and upper arm, and loss of sensation here may indicate nerve root damage.",
     "clinical_application": "Massage therapists may observe sensory loss along this path in clients with cervical radiculopathy involving T1.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -61,26 +60,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["dermatome", "T1", "upper limb"],
-    "keywords": ["T1 dermatome", "medial arm", "nerve sensation"],
-    "synonyms": ["T1 dermatome", "medial arm"]
+    "tags": [
+      "dermatome",
+      "T1",
+      "upper limb"
+    ],
+    "keywords": [
+      "T1 dermatome",
+      "medial arm",
+      "nerve sensation"
+    ],
+    "synonyms": [
+      "T1 dermatome",
+      "medial arm"
+    ]
   },
   {
     "id": "t1_nerve_innervations_003",
     "correctAnswer": "Lower trunk",
     "question": "Which part of the brachial plexus does the T1 nerve root contribute to?",
-    "options": ["Lower trunk", "Upper trunk", "Middle trunk", "Posterior cord"],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
+    "options": [
+      "Lower trunk",
+      "Upper trunk",
+      "Middle trunk",
+      "Posterior cord"
     ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "T1 contributes to the lower trunk of the brachial plexus.",
     "long_explanation": "The T1 nerve root, along with C8, forms the lower trunk of the brachial plexus, which gives rise to the medial cord and then branches like the ulnar nerve.",
     "clinical_application": "Understanding this anatomy helps identify lesion sites in cases of upper limb weakness or numbness.",
     "source_reference": "Clinically Oriented Anatomy, Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -89,9 +98,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["brachial plexus", "T1", "nerve root"],
-    "keywords": ["T1", "lower trunk", "brachial plexus"],
-    "synonyms": ["brachial plexus", "T1 contribution"]
+    "tags": [
+      "brachial plexus",
+      "T1",
+      "nerve root"
+    ],
+    "keywords": [
+      "T1",
+      "lower trunk",
+      "brachial plexus"
+    ],
+    "synonyms": [
+      "brachial plexus",
+      "T1 contribution"
+    ]
   },
   {
     "id": "t1_nerve_innervations_004",
@@ -103,17 +123,11 @@
       "Elbow flexion",
       "Shoulder abduction"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "Fine finger movements may be impaired due to T1 damage.",
     "long_explanation": "T1 innervates small muscles of the hand responsible for precise movements like finger abduction and adduction. Damage here can result in clumsiness or muscle wasting.",
     "clinical_application": "Therapists should assess hand function if T1 compression is suspected.",
     "source_reference": "Muscles: Testing and Function, Kendall",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -122,9 +136,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve damage", "T1", "fine motor"],
-    "keywords": ["T1 root", "hand coordination", "nerve deficit"],
-    "synonyms": ["fine motor", "hand function", "T1"]
+    "tags": [
+      "nerve damage",
+      "T1",
+      "fine motor"
+    ],
+    "keywords": [
+      "T1 root",
+      "hand coordination",
+      "nerve deficit"
+    ],
+    "synonyms": [
+      "fine motor",
+      "hand function",
+      "T1"
+    ]
   },
   {
     "id": "t1_nerve_innervations_005",
@@ -136,17 +162,11 @@
       "Axillary nerve",
       "Radial nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "T1 contributes to the medial cutaneous nerve of the forearm.",
     "long_explanation": "T1 fibers form part of the medial cutaneous nerve of the forearm, which supplies the skin of the medial forearm. Damage can result in numbness in this region.",
     "clinical_application": "Sensory testing in this area helps pinpoint brachial plexus injuries.",
     "source_reference": "Anatomy Coloring Book, Kapit",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -155,9 +175,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cutaneous nerve", "T1", "medial forearm"],
-    "keywords": ["medial cutaneous nerve", "T1", "forearm sensation"],
-    "synonyms": ["T1", "cutaneous forearm", "sensory innervation"]
+    "tags": [
+      "cutaneous nerve",
+      "T1",
+      "medial forearm"
+    ],
+    "keywords": [
+      "medial cutaneous nerve",
+      "T1",
+      "forearm sensation"
+    ],
+    "synonyms": [
+      "T1",
+      "cutaneous forearm",
+      "sensory innervation"
+    ]
   },
   {
     "id": "t1_nerve_innervations_006",
@@ -169,17 +201,11 @@
       "Thoracic outlet syndrome",
       "Bell’s palsy"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "Horner’s syndrome can result from T1 nerve involvement.",
     "long_explanation": "T1 nerve root lesions may be involved in cases of Horner’s syndrome due to disruption of sympathetic pathways. Symptoms include ptosis, miosis, and anhidrosis.",
     "clinical_application": "Recognizing Horner’s syndrome helps in identifying serious pathologies involving T1 or sympathetic chain damage.",
     "source_reference": "Clinically Oriented Anatomy, Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -188,9 +214,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["T1", "nerve root", "Horner’s syndrome"],
-    "keywords": ["T1", "Horner's", "nerve compression"],
-    "synonyms": ["sympathetic chain", "ptosis", "T1 lesion"]
+    "tags": [
+      "T1",
+      "nerve root",
+      "Horner’s syndrome"
+    ],
+    "keywords": [
+      "T1",
+      "Horner's",
+      "nerve compression"
+    ],
+    "synonyms": [
+      "sympathetic chain",
+      "ptosis",
+      "T1 lesion"
+    ]
   },
   {
     "id": "t1_nerve_innervations_007",
@@ -202,17 +240,11 @@
       "Bicipital groove",
       "Cervical fascial sheath"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "T1 nerve fibers exit via the intervertebral foramen.",
     "long_explanation": "After exiting the spinal cord, the T1 nerve root passes through the intervertebral foramen between T1 and T2 vertebrae before joining the brachial plexus.",
     "clinical_application": "Compression at the intervertebral foramen may cause sensory and motor deficits in the upper limb.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -221,9 +253,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nerve path", "intervertebral foramen", "T1"],
-    "keywords": ["T1", "nerve exit", "spinal anatomy"],
-    "synonyms": ["nerve root path", "T1 spinal nerve exit"]
+    "tags": [
+      "nerve path",
+      "intervertebral foramen",
+      "T1"
+    ],
+    "keywords": [
+      "T1",
+      "nerve exit",
+      "spinal anatomy"
+    ],
+    "synonyms": [
+      "nerve root path",
+      "T1 spinal nerve exit"
+    ]
   },
   {
     "id": "t1_nerve_innervations_008",
@@ -235,17 +278,11 @@
       "Musculocutaneous nerve",
       "Long thoracic nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "The ulnar nerve receives fibers from T1.",
     "long_explanation": "The ulnar nerve is a branch of the medial cord of the brachial plexus, which includes fibers from the T1 spinal nerve and innervates several hand muscles.",
     "clinical_application": "Damage to T1 may present as weakness in ulnar-innervated hand muscles like the hypothenar group.",
     "source_reference": "Trail Guide to the Body, 6th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -254,9 +291,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ulnar nerve", "T1", "hand control"],
-    "keywords": ["T1 fibers", "ulnar nerve", "motor hand"],
-    "synonyms": ["T1", "hand nerve", "ulnar"]
+    "tags": [
+      "ulnar nerve",
+      "T1",
+      "hand control"
+    ],
+    "keywords": [
+      "T1 fibers",
+      "ulnar nerve",
+      "motor hand"
+    ],
+    "synonyms": [
+      "T1",
+      "hand nerve",
+      "ulnar"
+    ]
   },
   {
     "id": "t1_nerve_innervations_009",
@@ -268,17 +317,11 @@
       "Wrist supination",
       "Neck rotation"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "Finger spreading may be weakened due to intrinsic hand muscle involvement.",
     "long_explanation": "T1 innervates interossei muscles that allow for abduction and adduction of the fingers. Compression can impair these fine movements.",
     "clinical_application": "Loss of fine finger movement may help localize nerve pathology to the T1 spinal level.",
     "source_reference": "Anatomy Trains, Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -287,9 +330,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["T1", "finger movement", "nerve compression"],
-    "keywords": ["T1 root", "hand movement", "nerve impairment"],
-    "synonyms": ["hand muscles", "finger motion", "T1"]
+    "tags": [
+      "T1",
+      "finger movement",
+      "nerve compression"
+    ],
+    "keywords": [
+      "T1 root",
+      "hand movement",
+      "nerve impairment"
+    ],
+    "synonyms": [
+      "hand muscles",
+      "finger motion",
+      "T1"
+    ]
   },
   {
     "id": "t1_nerve_innervations_010",
@@ -301,17 +356,11 @@
       "Median nerve",
       "Thoracodorsal nerve"
     ],
-    "topics": [
-      "anatomy",
-      "innervations",
-      "spinal_root_levels",
-      "t1_nerve_innervations"
-    ],
+    "topics": ["anatomy", "innervations", "spinal_root_levels", "t1_nerve_innervations"],
     "short_explanation": "The medial cutaneous nerve of the arm carries T1 sensory fibers.",
     "long_explanation": "T1 fibers contribute to the medial cutaneous nerve of the arm, which provides sensory innervation to the skin over the medial aspect of the upper arm.",
     "clinical_application": "Sensory loss in this region can aid in identifying T1 involvement in brachial plexus lesions.",
     "source_reference": "Gray’s Anatomy for Students, 4th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/innervations/spinal_root_levels/t1_nerve_innervations.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -320,8 +369,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cutaneous nerve", "T1", "medial upper arm"],
-    "keywords": ["T1 nerve", "medial cord", "sensory innervation"],
-    "synonyms": ["T1", "sensory", "medial arm nerve"]
+    "tags": [
+      "cutaneous nerve",
+      "T1",
+      "medial upper arm"
+    ],
+    "keywords": [
+      "T1 nerve",
+      "medial cord",
+      "sensory innervation"
+    ],
+    "synonyms": [
+      "T1",
+      "sensory",
+      "medial arm nerve"
+    ]
   }
 ]

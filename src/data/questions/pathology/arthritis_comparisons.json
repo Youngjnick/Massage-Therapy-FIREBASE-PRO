@@ -14,7 +14,6 @@
     "long_explanation": "Rheumatoid arthritis is a systemic autoimmune disease that often causes symmetrical joint inflammation. Osteoarthritis is degenerative and usually affects joints asymmetrically due to wear and tear.",
     "clinical_application": "Massage therapists must adapt techniques when working with clients who have joint inflammation from RA to avoid aggravating symptoms.",
     "source_reference": "Mosby’s Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,13 +22,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["arthritis", "RA", "OA", "autoimmune"],
+    "tags": [
+      "arthritis",
+      "RA",
+      "OA",
+      "autoimmune"
+    ],
     "keywords": [
       "rheumatoid arthritis",
       "osteoarthritis",
       "joint inflammation"
     ],
-    "synonyms": ["RA vs OA", "joint comparison", "inflammatory arthritis"]
+    "synonyms": [
+      "RA vs OA",
+      "joint comparison",
+      "inflammatory arthritis"
+    ]
   },
   {
     "id": "arthritis_comparisons_002",
@@ -46,7 +54,6 @@
     "long_explanation": "Osteoarthritis is a degenerative joint condition where cartilage breaks down due to chronic use, age, or injury. It contrasts with rheumatoid arthritis, which is autoimmune.",
     "clinical_application": "Massage therapy may be beneficial in reducing stiffness in OA but should avoid irritated or swollen joints.",
     "source_reference": "Lippincott’s Pathophysiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -55,9 +62,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["osteoarthritis", "wear and tear", "degeneration"],
-    "keywords": ["mechanical arthritis", "joint wear", "cartilage"],
-    "synonyms": ["degenerative joint disease", "wear-related arthritis"]
+    "tags": [
+      "osteoarthritis",
+      "wear and tear",
+      "degeneration"
+    ],
+    "keywords": [
+      "mechanical arthritis",
+      "joint wear",
+      "cartilage"
+    ],
+    "synonyms": [
+      "degenerative joint disease",
+      "wear-related arthritis"
+    ]
   },
   {
     "id": "arthritis_comparisons_003",
@@ -74,7 +92,6 @@
     "long_explanation": "Rheumatoid factor is an antibody commonly found in patients with RA, aiding in diagnosis. It is not found in osteoarthritis.",
     "clinical_application": "Knowledge of RA markers helps therapists understand the systemic nature of this condition when planning treatments.",
     "source_reference": "First Aid for the USMLE Step 1, 2022",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -83,9 +100,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["rheumatoid factor", "autoimmune", "diagnostics"],
-    "keywords": ["RA", "rheumatoid factor", "seropositive arthritis"],
-    "synonyms": ["RA marker", "autoantibodies", "RF positive"]
+    "tags": [
+      "rheumatoid factor",
+      "autoimmune",
+      "diagnostics"
+    ],
+    "keywords": [
+      "RA",
+      "rheumatoid factor",
+      "seropositive arthritis"
+    ],
+    "synonyms": [
+      "RA marker",
+      "autoantibodies",
+      "RF positive"
+    ]
   },
   {
     "id": "arthritis_comparisons_004",
@@ -102,7 +131,6 @@
     "long_explanation": "In rheumatoid arthritis, inflammation causes prolonged morning stiffness often exceeding 30–60 minutes, while OA stiffness tends to ease after brief movement.",
     "clinical_application": "Clients with RA may benefit from gentle warming techniques and range-of-motion exercises at the start of sessions.",
     "source_reference": "Mosby’s Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -111,9 +139,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["morning stiffness", "RA", "inflammation"],
-    "keywords": ["rheumatoid arthritis", "joint stiffness", "diagnostic signs"],
-    "synonyms": ["RA symptoms", "prolonged stiffness", "joint inflammation"]
+    "tags": [
+      "morning stiffness",
+      "RA",
+      "inflammation"
+    ],
+    "keywords": [
+      "rheumatoid arthritis",
+      "joint stiffness",
+      "diagnostic signs"
+    ],
+    "synonyms": [
+      "RA symptoms",
+      "prolonged stiffness",
+      "joint inflammation"
+    ]
   },
   {
     "id": "arthritis_comparisons_005",
@@ -130,7 +170,6 @@
     "long_explanation": "OA causes bony changes and cartilage degeneration that result in joint swelling, often without the heat and redness seen in inflammatory arthritides like RA.",
     "clinical_application": "Massage for OA may focus on improving circulation and joint mobility without aggravating the joint structures.",
     "source_reference": "Lippincott’s Pathophysiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -139,9 +178,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint swelling", "OA", "non-inflammatory"],
-    "keywords": ["osteoarthritis", "bony swelling", "non-red joints"],
-    "synonyms": ["OA swelling", "bony joints", "degenerative changes"]
+    "tags": [
+      "joint swelling",
+      "OA",
+      "non-inflammatory"
+    ],
+    "keywords": [
+      "osteoarthritis",
+      "bony swelling",
+      "non-red joints"
+    ],
+    "synonyms": [
+      "OA swelling",
+      "bony joints",
+      "degenerative changes"
+    ]
   },
   {
     "id": "arthritis_comparisons_006",
@@ -158,7 +209,6 @@
     "long_explanation": "Heberden's nodes (DIP joints) and Bouchard's nodes (PIP joints) are bony outgrowths found in osteoarthritis due to joint degeneration and osteophyte formation.",
     "clinical_application": "Palpating for these nodes can help massage therapists assess OA progression and tailor gentle joint techniques.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -167,9 +217,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["osteoarthritis", "nodes", "hand joints"],
-    "keywords": ["heberden nodes", "bouchard nodes", "joint deformities"],
-    "synonyms": ["bony nodes", "joint nodules", "OA features"]
+    "tags": [
+      "osteoarthritis",
+      "nodes",
+      "hand joints"
+    ],
+    "keywords": [
+      "heberden nodes",
+      "bouchard nodes",
+      "joint deformities"
+    ],
+    "synonyms": [
+      "bony nodes",
+      "joint nodules",
+      "OA features"
+    ]
   },
   {
     "id": "arthritis_comparisons_007",
@@ -186,7 +248,6 @@
     "long_explanation": "Osteoarthritis often begins in the DIP joints (near fingernails), while RA usually targets the smaller proximal joints first. Joint location can help differentiate between arthritis types.",
     "clinical_application": "Massage therapists should assess for localized pain and avoid direct pressure on enlarged DIP joints in OA clients.",
     "source_reference": "Lippincott’s Illustrated Reviews: Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -195,9 +256,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint location", "osteoarthritis", "finger joints"],
-    "keywords": ["DIP joint", "arthritis pattern", "hand joints"],
-    "synonyms": ["distal arthritis", "DIP", "finger arthritis"]
+    "tags": [
+      "joint location",
+      "osteoarthritis",
+      "finger joints"
+    ],
+    "keywords": [
+      "DIP joint",
+      "arthritis pattern",
+      "hand joints"
+    ],
+    "synonyms": [
+      "distal arthritis",
+      "DIP",
+      "finger arthritis"
+    ]
   },
   {
     "id": "arthritis_comparisons_008",
@@ -214,7 +287,6 @@
     "long_explanation": "Unlike OA, rheumatoid arthritis is systemic and can lead to extra-articular symptoms such as fatigue, low-grade fever, and malaise, particularly during flare-ups.",
     "clinical_application": "Massage therapists should take care to modify sessions when a client with RA is experiencing fatigue or systemic inflammation.",
     "source_reference": "Clinical Pathophysiology Made Ridiculously Simple",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -223,8 +295,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["systemic", "RA", "inflammatory"],
-    "keywords": ["fever", "fatigue", "autoimmune symptoms"],
+    "tags": [
+      "systemic",
+      "RA",
+      "inflammatory"
+    ],
+    "keywords": [
+      "fever",
+      "fatigue",
+      "autoimmune symptoms"
+    ],
     "synonyms": [
       "fatigue in RA",
       "systemic inflammation",
@@ -246,7 +326,6 @@
     "long_explanation": "In RA, chronic inflammation leads to pannus—a destructive vascular granulation tissue that erodes cartilage and bone, distinguishing it from OA’s degenerative process.",
     "clinical_application": "Understanding pannus formation reinforces the need for caution during massage in joints with known RA involvement.",
     "source_reference": "Robbins Basic Pathology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -255,13 +334,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pannus", "RA", "joint erosion"],
+    "tags": [
+      "pannus",
+      "RA",
+      "joint erosion"
+    ],
     "keywords": [
       "synovial membrane",
       "granulation tissue",
       "autoimmune destruction"
     ],
-    "synonyms": ["pannus", "synovial thickening", "joint destruction"]
+    "synonyms": [
+      "pannus",
+      "synovial thickening",
+      "joint destruction"
+    ]
   },
   {
     "id": "arthritis_comparisons_010",
@@ -278,7 +365,6 @@
     "long_explanation": "Osteoarthritis leads to thinning cartilage, osteophyte (bone spur) formation, and sclerosis of subchondral bone. These structural changes reduce joint mobility and cause mechanical pain.",
     "clinical_application": "Massage can help alleviate compensatory tension from altered joint biomechanics in OA, with attention to client comfort.",
     "source_reference": "Lippincott’s Pathophysiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/arthritis_comparisons.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -287,8 +373,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cartilage loss", "joint degeneration", "bone spurs"],
-    "keywords": ["osteophytes", "cartilage thinning", "OA pathophysiology"],
-    "synonyms": ["OA changes", "joint wear", "bony remodeling"]
+    "tags": [
+      "cartilage loss",
+      "joint degeneration",
+      "bone spurs"
+    ],
+    "keywords": [
+      "osteophytes",
+      "cartilage thinning",
+      "OA pathophysiology"
+    ],
+    "synonyms": [
+      "OA changes",
+      "joint wear",
+      "bony remodeling"
+    ]
   }
 ]

@@ -14,7 +14,6 @@
     "long_explanation": "The Loop of Henle plays a key role in concentrating urine. Its descending limb is permeable to water, while the ascending limb actively pumps out Na+ and Cl−, creating a countercurrent multiplier system in the renal medulla.",
     "clinical_application": "Understanding this function helps therapists assess hydration-related back pain or edema that may have renal origins.",
     "source_reference": "Guyton & Hall Textbook of Medical Physiology, 14th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["loop of Henle", "urine concentration", "renal physiology"],
-    "keywords": ["countercurrent", "nephron", "water reabsorption"],
+    "tags": [
+      "loop of Henle",
+      "urine concentration",
+      "renal physiology"
+    ],
+    "keywords": [
+      "countercurrent",
+      "nephron",
+      "water reabsorption"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "In the thick ascending limb of the Loop of Henle, Na+ and Cl− ions are reabsorbed into the medulla, but this segment is impermeable to water, helping generate the medullary osmotic gradient.",
     "clinical_application": "Diuretics that target the ascending limb (loop diuretics) are powerful and may affect blood pressure and tissue hydration — important for massage considerations in hypertensive clients.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology, 15th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -51,7 +57,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["loop of Henle", "water impermeability", "nephron segment"],
+    "tags": [
+      "loop of Henle",
+      "water impermeability",
+      "nephron segment"
+    ],
     "keywords": [
       "thick ascending limb",
       "medullary gradient",
@@ -74,7 +84,6 @@
     "long_explanation": "Countercurrent multiplication is a system in which the flow of filtrate in opposite directions (down the descending limb and up the ascending limb) allows for the efficient creation of an osmotic gradient. This facilitates water reabsorption later in the nephron.",
     "clinical_application": "Massage therapists must understand how hydration status and renal concentration mechanisms affect overall fluid balance and tissue quality.",
     "source_reference": "Renal Physiology, Koeppen & Stanton, 5th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -83,21 +92,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["countercurrent", "osmotic gradient", "loop of Henle"],
-    "keywords": ["countercurrent mechanism", "medullary salt gradient"],
+    "tags": [
+      "countercurrent",
+      "osmotic gradient",
+      "loop of Henle"
+    ],
+    "keywords": [
+      "countercurrent mechanism",
+      "medullary salt gradient"
+    ],
     "synonyms": null
   },
   {
     "id": "hinele_loop_004",
     "correctAnswer": "Renal medulla",
     "question": "Where are most loops of Henle located in the kidney?",
-    "options": ["Renal cortex", "Renal sinus", "Renal medulla", "Renal pelvis"],
+    "options": [
+      "Renal cortex",
+      "Renal sinus",
+      "Renal medulla",
+      "Renal pelvis"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "hinele_loop"],
     "short_explanation": "The Loop of Henle extends into the medulla.",
     "long_explanation": "While nephrons originate in the renal cortex, their loops of Henle dip into the renal medulla. Juxtamedullary nephrons have longer loops that extend deep into the medulla for greater urine concentration.",
     "clinical_application": "Knowing the medullary location supports assessment of referred pain or edema in clients with possible renal compromise.",
     "source_reference": "Moore's Clinically Oriented Anatomy, 8th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -106,21 +126,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nephron anatomy", "medulla", "loop of Henle"],
-    "keywords": ["juxtamedullary nephron", "renal zones"],
+    "tags": [
+      "nephron anatomy",
+      "medulla",
+      "loop of Henle"
+    ],
+    "keywords": [
+      "juxtamedullary nephron",
+      "renal zones"
+    ],
     "synonyms": null
   },
   {
     "id": "hinele_loop_005",
     "correctAnswer": "Sodium",
     "question": "Which of the following ions is actively transported in the ascending limb of the Loop of Henle?",
-    "options": ["Calcium", "Bicarbonate", "Sodium", "Hydrogen"],
+    "options": [
+      "Calcium",
+      "Bicarbonate",
+      "Sodium",
+      "Hydrogen"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "hinele_loop"],
     "short_explanation": "Sodium is actively transported in the ascending limb.",
     "long_explanation": "In the thick ascending limb of the Loop of Henle, sodium is actively pumped into the medullary interstitium, helping create the gradient needed for water reabsorption in the collecting duct.",
     "clinical_application": "Excess sodium loss can lead to muscle cramps or hypotension — symptoms massage therapists may encounter in dehydrated or over-diuresed clients.",
     "source_reference": "Essentials of Human Physiology, 12th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -129,8 +160,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sodium reabsorption", "nephron transport", "loop physiology"],
-    "keywords": ["Na+", "ascending limb", "salt reabsorption"],
+    "tags": [
+      "sodium reabsorption",
+      "nephron transport",
+      "loop physiology"
+    ],
+    "keywords": [
+      "Na+",
+      "ascending limb",
+      "salt reabsorption"
+    ],
     "synonyms": null
   },
   {
@@ -148,7 +187,6 @@
     "long_explanation": "As filtrate travels down the descending limb, water exits by osmosis due to the increasingly hypertonic environment of the medulla. This concentrates the filtrate.",
     "clinical_application": "Proper hydration influences this mechanism. Dehydrated clients may experience concentrated urine and fascial tension, relevant in therapeutic massage assessments.",
     "source_reference": "Guyton & Hall, Medical Physiology, 14th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -157,8 +195,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["descending limb", "water reabsorption", "osmotic gradient"],
-    "keywords": ["water permeability", "loop of Henle", "urine concentration"],
+    "tags": [
+      "descending limb",
+      "water reabsorption",
+      "osmotic gradient"
+    ],
+    "keywords": [
+      "water permeability",
+      "loop of Henle",
+      "urine concentration"
+    ],
     "synonyms": null
   },
   {
@@ -176,7 +222,6 @@
     "long_explanation": "The thick ascending limb actively transports sodium out of the filtrate, a process essential for maintaining the medullary gradient. Damage here compromises the kidney's ability to produce concentrated urine, resulting in dilute output.",
     "clinical_application": "Recognizing signs of dilute urine in conjunction with back pain may help massage therapists encourage appropriate referral and avoid misdiagnosis of muscular issues.",
     "source_reference": "Robbins Basic Pathology, 10th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -185,21 +230,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["kidney pathology", "loop of Henle", "urine dilution"],
-    "keywords": ["nephron damage", "urine concentration defect", "diuresis"],
+    "tags": [
+      "kidney pathology",
+      "loop of Henle",
+      "urine dilution"
+    ],
+    "keywords": [
+      "nephron damage",
+      "urine concentration defect",
+      "diuresis"
+    ],
     "synonyms": null
   },
   {
     "id": "hinele_loop_008",
     "correctAnswer": "Hairpin-shaped",
     "question": "What shape is the Loop of Henle typically described as?",
-    "options": ["Straight line", "Hairpin-shaped", "Curved arch", "Zigzag"],
+    "options": [
+      "Straight line",
+      "Hairpin-shaped",
+      "Curved arch",
+      "Zigzag"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "hinele_loop"],
     "short_explanation": "The loop is hairpin-shaped, descending and then ascending through the medulla.",
     "long_explanation": "The Loop of Henle has a U- or hairpin-shaped structure with a descending and ascending limb. This shape is key to its function in creating and maintaining osmotic gradients in the kidney.",
     "clinical_application": "Visualizing this shape helps therapists understand how different regions of the nephron have specialized functions and vulnerabilities.",
     "source_reference": "Color Atlas of Anatomy, Rohen, 8th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -208,8 +265,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["loop structure", "nephron anatomy"],
-    "keywords": ["hairpin loop", "U-shape", "renal medulla"],
+    "tags": [
+      "loop structure",
+      "nephron anatomy"
+    ],
+    "keywords": [
+      "hairpin loop",
+      "U-shape",
+      "renal medulla"
+    ],
     "synonyms": null
   },
   {
@@ -227,7 +291,6 @@
     "long_explanation": "The vasa recta are straight capillaries that run alongside the Loop of Henle in juxtamedullary nephrons. They participate in countercurrent exchange to preserve the medullary concentration gradient necessary for urine concentration.",
     "clinical_application": "Proper vasa recta function is essential for hydration and blood pressure regulation — vital considerations for safe bodywork in clients with kidney conditions.",
     "source_reference": "Renal Physiology, Koeppen & Stanton, 5th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -236,8 +299,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vasa recta", "nephron blood supply", "countercurrent exchange"],
-    "keywords": ["renal blood vessels", "juxtamedullary nephron"],
+    "tags": [
+      "vasa recta",
+      "nephron blood supply",
+      "countercurrent exchange"
+    ],
+    "keywords": [
+      "renal blood vessels",
+      "juxtamedullary nephron"
+    ],
     "synonyms": null
   },
   {
@@ -255,7 +325,6 @@
     "long_explanation": "Juxtamedullary nephrons, which have long loops of Henle extending deep into the renal medulla, are essential for the kidney’s ability to produce concentrated urine by establishing a strong osmotic gradient.",
     "clinical_application": "Therapists should appreciate how renal efficiency affects systemic hydration, edema, and even fascial tone — key factors in safe massage planning.",
     "source_reference": "Guyton & Hall, Medical Physiology, 14th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/hinele_loop.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -264,8 +333,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["juxtamedullary nephron", "urine concentration"],
-    "keywords": ["deep nephron", "renal function", "medullary gradient"],
+    "tags": [
+      "juxtamedullary nephron",
+      "urine concentration"
+    ],
+    "keywords": [
+      "deep nephron",
+      "renal function",
+      "medullary gradient"
+    ],
     "synonyms": null
   }
 ]

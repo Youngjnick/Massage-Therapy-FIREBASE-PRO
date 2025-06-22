@@ -14,7 +14,6 @@
     "long_explanation": "The synovial membrane is a thin layer of connective tissue that produces lubricating fluid, reducing friction between the articular surfaces and nourishing cartilage.",
     "clinical_application": "Massage enhances circulation near joints, which may help maintain fluid exchange and reduce stiffness in clients with joint immobility.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint anatomy", "synovial fluid", "membrane"],
-    "keywords": ["joint lining", "synovium", "lubrication"],
+    "tags": [
+      "joint anatomy",
+      "synovial fluid",
+      "membrane"
+    ],
+    "keywords": [
+      "joint lining",
+      "synovium",
+      "lubrication"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "This smooth, resilient cartilage cushions joint surfaces and allows low-friction movement. It has no blood supply and relies on joint motion for nutrient exchange.",
     "clinical_application": "Massage supporting joint motion helps keep cartilage nourished indirectly via improved synovial fluid distribution.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cartilage", "hyaline", "joints"],
-    "keywords": ["joint surface", "articular cartilage", "bone ends"],
+    "tags": [
+      "cartilage",
+      "hyaline",
+      "joints"
+    ],
+    "keywords": [
+      "joint surface",
+      "articular cartilage",
+      "bone ends"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "Synovial fluid is a thick, viscous substance secreted by the synovial membrane. It reduces friction, absorbs shock, and nourishes cartilage inside freely movable joints.",
     "clinical_application": "Joint mobilization and active movement during massage encourage synovial fluid movement for improved joint health.",
     "source_reference": "Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -79,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["synovial fluid", "joint lubrication", "nutrition"],
-    "keywords": ["joint fluid", "motion", "viscous lubrication"],
+    "tags": [
+      "synovial fluid",
+      "joint lubrication",
+      "nutrition"
+    ],
+    "keywords": [
+      "joint fluid",
+      "motion",
+      "viscous lubrication"
+    ],
     "synonyms": null
   },
   {
     "id": "synovial_joints_004",
     "correctAnswer": "Joint capsule",
     "question": "Which part of the synovial joint provides mechanical strength and encloses the joint cavity?",
-    "options": ["Meniscus", "Joint capsule", "Bursa", "Ligament"],
+    "options": [
+      "Meniscus",
+      "Joint capsule",
+      "Bursa",
+      "Ligament"
+    ],
     "topics": ["anatomy", "joints", "synovial_joints"],
     "short_explanation": "The joint capsule is a fibrous structure surrounding the entire synovial joint.",
     "long_explanation": "The capsule includes an outer fibrous layer and an inner synovial membrane. It protects the joint, contains synovial fluid, and helps stabilize the articulation.",
     "clinical_application": "Massage improves tissue mobility around joint capsules, reducing stiffness and aiding recovery from immobility or postural restriction.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint capsule", "structure", "joint cavity"],
-    "keywords": ["fibrous layer", "enclosure", "joint support"],
+    "tags": [
+      "joint capsule",
+      "structure",
+      "joint cavity"
+    ],
+    "keywords": [
+      "fibrous layer",
+      "enclosure",
+      "joint support"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "The menisci are fibrocartilaginous pads in the knee that increase contact between the femur and tibia. They absorb compressive forces and reduce wear on joint surfaces.",
     "clinical_application": "Massage may aid recovery from muscular compensation after meniscus injury, but joint-specific manual techniques should be used cautiously.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -130,21 +162,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["meniscus", "knee", "shock absorption"],
-    "keywords": ["fibrocartilage", "joint stability", "knee injury"],
+    "tags": [
+      "meniscus",
+      "knee",
+      "shock absorption"
+    ],
+    "keywords": [
+      "fibrocartilage",
+      "joint stability",
+      "knee injury"
+    ],
     "synonyms": null
   },
   {
     "id": "synovial_joints_006",
     "correctAnswer": "Bursa",
     "question": "Which accessory structure helps reduce friction between skin, tendons, and bones near joints?",
-    "options": ["Ligament", "Bursa", "Meniscus", "Joint capsule"],
+    "options": [
+      "Ligament",
+      "Bursa",
+      "Meniscus",
+      "Joint capsule"
+    ],
     "topics": ["anatomy", "joints", "synovial_joints"],
     "short_explanation": "Bursae are small fluid-filled sacs that reduce friction near joints.",
     "long_explanation": "Bursae are found near major joints such as the shoulder, hip, and knee. They cushion areas where muscles, tendons, or skin rub against bone. Inflammation of a bursa is called bursitis.",
     "clinical_application": "Massage can reduce muscular tension near bursae, but direct pressure over inflamed bursae should be avoided.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -153,8 +197,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["bursa", "friction reduction", "accessory structure"],
-    "keywords": ["joint protection", "bursitis", "shoulder", "hip"],
+    "tags": [
+      "bursa",
+      "friction reduction",
+      "accessory structure"
+    ],
+    "keywords": [
+      "joint protection",
+      "bursitis",
+      "shoulder",
+      "hip"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +225,6 @@
     "long_explanation": "Ligaments are tough, collagen-rich structures that connect bone to bone. They stabilize joints and limit excessive movement. Their parallel collagen fiber orientation resists tensile stress.",
     "clinical_application": "Massage helps reduce muscle guarding around ligaments but cannot stretch ligaments safely. Care is needed post-sprain.",
     "source_reference": "Netter’s Clinical Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -181,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ligaments", "connective tissue", "joint stability"],
-    "keywords": ["collagen", "bone connection", "dense connective"],
+    "tags": [
+      "ligaments",
+      "connective tissue",
+      "joint stability"
+    ],
+    "keywords": [
+      "collagen",
+      "bone connection",
+      "dense connective"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +260,6 @@
     "long_explanation": "This hyaline cartilage reduces friction and absorbs shock in synovial joints. It lacks blood supply and relies on motion and synovial fluid for nourishment.",
     "clinical_application": "Massage can’t regenerate cartilage, but improving movement and surrounding tissue health can support joint function.",
     "source_reference": "Orthopedic Physical Assessment by Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -209,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cartilage", "joint friction", "shock absorber"],
-    "keywords": ["articulation", "bone surface", "smooth movement"],
+    "tags": [
+      "cartilage",
+      "joint friction",
+      "shock absorber"
+    ],
+    "keywords": [
+      "articulation",
+      "bone surface",
+      "smooth movement"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +295,6 @@
     "long_explanation": "The outer fibrous layer of a joint capsule consists of dense irregular connective tissue. It is richly innervated, helps limit joint movement, and responds to tension over time.",
     "clinical_application": "Massage targeting tight muscles around this capsule can improve joint range of motion and reduce stiffness.",
     "source_reference": "Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -237,8 +303,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint capsule", "fibrous layer", "adaptation"],
-    "keywords": ["capsular thickening", "stress response", "joint support"],
+    "tags": [
+      "joint capsule",
+      "fibrous layer",
+      "adaptation"
+    ],
+    "keywords": [
+      "capsular thickening",
+      "stress response",
+      "joint support"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +330,6 @@
     "long_explanation": "This viscous fluid minimizes wear between bones and transports nutrients to cartilage, which lacks direct blood flow. Movement enhances its circulation.",
     "clinical_application": "Massage supports joint health by promoting mobility, which in turn improves synovial fluid distribution.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/joints/synovial_joints.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -265,8 +338,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["synovial fluid", "joint nutrition", "lubrication"],
-    "keywords": ["joint nourishment", "fluid balance", "movement"],
+    "tags": [
+      "synovial fluid",
+      "joint nutrition",
+      "lubrication"
+    ],
+    "keywords": [
+      "joint nourishment",
+      "fluid balance",
+      "movement"
+    ],
     "synonyms": null
   }
 ]

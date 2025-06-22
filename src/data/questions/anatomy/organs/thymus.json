@@ -14,7 +14,6 @@
     "long_explanation": "The thymus is essential in the development and education of T cells, which are critical for adaptive immunity. It is most active during childhood and shrinks after puberty.",
     "clinical_application": "Understanding the thymus is important in autoimmune disorders and may guide therapeutic communication in clients with immunodeficiencies.",
     "source_reference": "Janeway's Immunobiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "basic",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["T cells", "thymus function", "immune development"],
-    "keywords": ["T lymphocyte maturation", "immune system", "thymopoiesis"],
+    "tags": [
+      "T cells",
+      "thymus function",
+      "immune development"
+    ],
+    "keywords": [
+      "T lymphocyte maturation",
+      "immune system",
+      "thymopoiesis"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The thymus lies anterior to the heart and behind the sternum. It is bilobed and gradually decreases in size with age.",
     "clinical_application": "Avoid direct pressure over the sternum in infants or young children where the thymus may still be prominent.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "basic",
@@ -51,21 +57,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["mediastinum", "sternum", "gland location"],
-    "keywords": ["thymus location", "sternum", "anterior mediastinum"],
+    "tags": [
+      "mediastinum",
+      "sternum",
+      "gland location"
+    ],
+    "keywords": [
+      "thymus location",
+      "sternum",
+      "anterior mediastinum"
+    ],
     "synonyms": null
   },
   {
     "id": "thymus_003",
     "correctAnswer": "Thymosin",
     "question": "Which hormone is primarily secreted by the thymus to support T cell development?",
-    "options": ["Insulin", "Thymosin", "Cortisol", "Melatonin"],
+    "options": [
+      "Insulin",
+      "Thymosin",
+      "Cortisol",
+      "Melatonin"
+    ],
     "topics": ["anatomy", "organs", "thymus"],
     "short_explanation": "Thymosin is the key hormone that supports T cell maturation.",
     "long_explanation": "Thymosin helps stimulate immature T cells to develop into functional immune cells. It plays a central role in immune competence.",
     "clinical_application": "Understanding hormonal influence on immunity can assist in assessing chronic fatigue or immune suppression in clients.",
     "source_reference": "Endocrinology by Hadley",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -74,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thymosin", "T cell maturation", "hormone"],
-    "keywords": ["thymic hormones", "immune modulation", "T lymphocyte"],
+    "tags": [
+      "thymosin",
+      "T cell maturation",
+      "hormone"
+    ],
+    "keywords": [
+      "thymic hormones",
+      "immune modulation",
+      "T lymphocyte"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +119,6 @@
     "long_explanation": "Thymic involution is the process by which the thymus decreases in size and function with age, making adults more reliant on memory T cells.",
     "clinical_application": "Age-related decline in thymic function can influence healing and immunity in older massage clients.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["thymic involution", "aging immune system", "fatty replacement"],
-    "keywords": ["thymus shrinkage", "immune aging", "fatty infiltration"],
+    "tags": [
+      "thymic involution",
+      "aging immune system",
+      "fatty replacement"
+    ],
+    "keywords": [
+      "thymus shrinkage",
+      "immune aging",
+      "fatty infiltration"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "DiGeorge syndrome is a genetic disorder leading to underdeveloped thymus and parathyroid glands, causing immunodeficiency and hypocalcemia.",
     "clinical_application": "Knowing this disorder may help a therapist understand infection risks and behavior in pediatric clients with genetic syndromes.",
     "source_reference": "Medical Genetics by Jorde",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -130,7 +162,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["DiGeorge", "thymus deficiency", "T cell immunodeficiency"],
+    "tags": [
+      "DiGeorge",
+      "thymus deficiency",
+      "T cell immunodeficiency"
+    ],
     "keywords": [
       "22q11 deletion",
       "congenital immunity",
@@ -153,7 +189,6 @@
     "long_explanation": "Developing T cells are tested for their ability to recognize self vs. non-self antigens. Cells failing these tests are eliminated to prevent autoimmunity.",
     "clinical_application": "Knowledge of immune cell selection supports awareness of autoimmune conditions in client history.",
     "source_reference": "Janeway's Immunobiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -162,7 +197,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["T cell selection", "autoimmunity", "central tolerance"],
+    "tags": [
+      "T cell selection",
+      "autoimmunity",
+      "central tolerance"
+    ],
     "keywords": [
       "positive selection",
       "negative selection",
@@ -185,7 +224,6 @@
     "long_explanation": "These keratinized epithelial structures are thought to support T cell development and regulate dendritic cell function.",
     "clinical_application": "Understanding tissue microanatomy helps health professionals visualize immune regulation pathways.",
     "source_reference": "Histology: A Text and Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -194,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["Hassall’s corpuscles", "thymus histology", "medulla"],
-    "keywords": ["thymic histology", "epithelial cells", "immune tissue"],
+    "tags": [
+      "Hassall’s corpuscles",
+      "thymus histology",
+      "medulla"
+    ],
+    "keywords": [
+      "thymic histology",
+      "epithelial cells",
+      "immune tissue"
+    ],
     "synonyms": null
   },
   {
@@ -213,7 +259,6 @@
     "long_explanation": "Peak T cell development occurs in infancy, which sets up immune tolerance and memory that carry into adulthood.",
     "clinical_application": "This helps explain the susceptibility of infants to infection and the importance of immune monitoring.",
     "source_reference": "Developmental Biology by Gilbert",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "basic",
@@ -222,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["early immunity", "pediatric thymus", "neonatal immunity"],
-    "keywords": ["fetal development", "childhood immunity", "early T cells"],
+    "tags": [
+      "early immunity",
+      "pediatric thymus",
+      "neonatal immunity"
+    ],
+    "keywords": [
+      "fetal development",
+      "childhood immunity",
+      "early T cells"
+    ],
     "synonyms": null
   },
   {
@@ -241,7 +294,6 @@
     "long_explanation": "The third pharyngeal pouch gives rise to both the thymus and inferior parathyroid glands. Errors here can result in congenital immunodeficiency.",
     "clinical_application": "Knowledge of embryologic origin aids understanding congenital disorders like DiGeorge syndrome.",
     "source_reference": "Langman’s Medical Embryology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -250,7 +302,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pharyngeal pouch", "thymus development", "congenital disorders"],
+    "tags": [
+      "pharyngeal pouch",
+      "thymus development",
+      "congenital disorders"
+    ],
     "keywords": [
       "branchial pouch",
       "embryologic derivation",
@@ -273,7 +329,6 @@
     "long_explanation": "T lymphocytes carry out direct immune responses to infected or abnormal cells. The thymus shapes their identity and self-tolerance.",
     "clinical_application": "Therapists may see impacts of poor T cell response in clients with chronic viral or autoimmune issues.",
     "source_reference": "Janeway's Immunobiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/thymus.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -282,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cell-mediated", "T cells", "thymus function"],
-    "keywords": ["adaptive immunity", "killer T cells", "thymus-dependent"],
+    "tags": [
+      "cell-mediated",
+      "T cells",
+      "thymus function"
+    ],
+    "keywords": [
+      "adaptive immunity",
+      "killer T cells",
+      "thymus-dependent"
+    ],
     "synonyms": null
   }
 ]

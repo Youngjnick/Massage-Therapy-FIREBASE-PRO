@@ -14,7 +14,6 @@
     "long_explanation": "The pons is the middle portion of the brainstem, connecting the midbrain above to the medulla oblongata below. It serves as a bridge between the cerebrum, cerebellum, and spinal cord.",
     "clinical_application": "In craniosacral therapy, gentle techniques affecting the occiput and upper cervical spine may influence circulation and function near the pons.",
     "source_reference": "Netter: Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pons", "brainstem", "midbrain", "medulla"],
-    "keywords": ["location", "neuroanatomy", "cranial"],
+    "tags": [
+      "pons",
+      "brainstem",
+      "midbrain",
+      "medulla"
+    ],
+    "keywords": [
+      "location",
+      "neuroanatomy",
+      "cranial"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "The pons houses nuclei for cranial nerves and acts as a relay station for motor signals from the cerebral cortex to the cerebellum, along with facial sensation and expression.",
     "clinical_application": "Massage therapy around the jaw and upper neck can affect areas innervated through pathways originating in the pons, including facial and trigeminal nerve functions.",
     "source_reference": "Bear, Connors & Paradiso: Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -51,21 +58,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pons", "facial nerves", "motor relay"],
-    "keywords": ["cranial nerves", "motor", "sensory"],
+    "tags": [
+      "pons",
+      "facial nerves",
+      "motor relay"
+    ],
+    "keywords": [
+      "cranial nerves",
+      "motor",
+      "sensory"
+    ],
     "synonyms": null
   },
   {
     "id": "pons_003",
     "correctAnswer": "CN V–VIII",
     "question": "Which cranial nerves emerge from the pons?",
-    "options": ["CN I–IV", "CN V–VIII", "CN IX–XII", "CN II–VI"],
+    "options": [
+      "CN I–IV",
+      "CN V–VIII",
+      "CN IX–XII",
+      "CN II–VI"
+    ],
     "topics": ["anatomy", "organs", "brain", "pons"],
     "short_explanation": "Cranial nerves V–VIII emerge from or near the pons.",
     "long_explanation": "The pons contains nuclei or fiber tracts for cranial nerves V (trigeminal), VI (abducens), VII (facial), and VIII (vestibulocochlear), which are involved in facial sensation, eye movement, expression, and hearing.",
     "clinical_application": "Symptoms such as facial numbness or hearing disturbances may point to pons dysfunction involving these cranial nerves.",
     "source_reference": "Snell: Clinical Neuroanatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -74,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["CN V", "CN VI", "CN VII", "CN VIII"],
-    "keywords": ["cranial nerve origin", "brainstem function"],
+    "tags": [
+      "CN V",
+      "CN VI",
+      "CN VII",
+      "CN VIII"
+    ],
+    "keywords": [
+      "cranial nerve origin",
+      "brainstem function"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +120,6 @@
     "long_explanation": "The middle cerebellar peduncles are large bundles of fibers that relay information between the pons and cerebellum, helping coordinate movement and balance.",
     "clinical_application": "Balance dysfunction or poor coordination may stem from interruption in pons-to-cerebellum communication.",
     "source_reference": "Tortora & Derrickson: Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -102,8 +128,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["peduncles", "pons", "cerebellum"],
-    "keywords": ["brain connection", "motor coordination"],
+    "tags": [
+      "peduncles",
+      "pons",
+      "cerebellum"
+    ],
+    "keywords": [
+      "brain connection",
+      "motor coordination"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "The pons is involved in motor and sensory functions of the head and face, but higher-level auditory interpretation occurs in the auditory cortex of the temporal lobe.",
     "clinical_application": "Understanding neural pathway locations helps therapists differentiate between brainstem issues and cortical sensory dysfunctions.",
     "source_reference": "Silverthorn: Human Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "hard",
@@ -130,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pons", "function", "hearing", "brain regions"],
-    "keywords": ["brainstem vs cortex", "neuro differentiation"],
+    "tags": [
+      "pons",
+      "function",
+      "hearing",
+      "brain regions"
+    ],
+    "keywords": [
+      "brainstem vs cortex",
+      "neuro differentiation"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +189,6 @@
     "long_explanation": "The pons controls facial muscle movement through cranial nerve VII. Lesions may lead to weakness or paralysis on one or both sides of the face, depending on severity and location.",
     "clinical_application": "Massage therapists working with clients recovering from facial nerve palsy may aid in lymphatic flow and gentle stimulation to affected tissues.",
     "source_reference": "Robbins: Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -158,21 +197,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["facial nerve", "brain injury", "cranial nerve VII"],
-    "keywords": ["Bell's palsy", "brainstem damage"],
+    "tags": [
+      "facial nerve",
+      "brain injury",
+      "cranial nerve VII"
+    ],
+    "keywords": [
+      "Bell's palsy",
+      "brainstem damage"
+    ],
     "synonyms": null
   },
   {
     "id": "pons_007",
     "correctAnswer": "Serotonin",
     "question": "Which neurotransmitter is significantly associated with the pons?",
-    "options": ["Dopamine", "Serotonin", "Acetylcholine", "GABA"],
+    "options": [
+      "Dopamine",
+      "Serotonin",
+      "Acetylcholine",
+      "GABA"
+    ],
     "topics": ["anatomy", "organs", "brain", "pons"],
     "short_explanation": "Serotonin is synthesized in the raphe nuclei of the pons.",
     "long_explanation": "The raphe nuclei in the pons are a major source of serotonin, which influences mood, pain modulation, and sleep-wake cycles.",
     "clinical_application": "Massage therapy may indirectly affect serotonin levels via parasympathetic activation and improved sleep, both related to pontine functions.",
     "source_reference": "Bear: Neuroscience",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "hard",
@@ -181,8 +231,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["serotonin", "pons", "raphe nuclei"],
-    "keywords": ["mood", "neurotransmitters", "brainstem"],
+    "tags": [
+      "serotonin",
+      "pons",
+      "raphe nuclei"
+    ],
+    "keywords": [
+      "mood",
+      "neurotransmitters",
+      "brainstem"
+    ],
     "synonyms": null
   },
   {
@@ -200,7 +258,6 @@
     "long_explanation": "These pontine centers help smooth the transition between inhalation and exhalation by modulating signals to the medulla’s respiratory centers.",
     "clinical_application": "Relaxation-focused breathing techniques benefit from an understanding of these centers for targeting autonomic regulation.",
     "source_reference": "Guyton & Hall: Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -209,8 +266,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pons", "breathing", "respiration"],
-    "keywords": ["apneustic", "pneumotaxic", "brainstem"],
+    "tags": [
+      "pons",
+      "breathing",
+      "respiration"
+    ],
+    "keywords": [
+      "apneustic",
+      "pneumotaxic",
+      "brainstem"
+    ],
     "synonyms": null
   },
   {
@@ -228,7 +293,6 @@
     "long_explanation": "The pons regulates REM sleep through connections with the thalamus and cortex. It plays a role in dreaming and muscle atonia during REM.",
     "clinical_application": "Clients with sleep disorders may benefit from massage protocols that support parasympathetic tone and encourage REM cycling.",
     "source_reference": "Principles of Neural Science – Kandel",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -237,8 +301,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pons", "REM", "sleep"],
-    "keywords": ["dreaming", "sleep stage", "brainstem"],
+    "tags": [
+      "pons",
+      "REM",
+      "sleep"
+    ],
+    "keywords": [
+      "dreaming",
+      "sleep stage",
+      "brainstem"
+    ],
     "synonyms": null
   },
   {
@@ -256,7 +328,6 @@
     "long_explanation": "Via the middle cerebellar peduncles, the pons integrates information needed for smooth motor coordination and balance by communicating with the cerebellum.",
     "clinical_application": "Postural massage techniques often stimulate proprioceptive feedback systems involving the pons and cerebellum.",
     "source_reference": "Human Anatomy & Physiology – Marieb & Hoehn",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/brain/pons.json",
     "question_type": null,
     "difficulty": "medium",
@@ -265,8 +336,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["balance", "motor control", "pons", "cerebellum"],
-    "keywords": ["coordination", "brainstem", "cerebellar relay"],
+    "tags": [
+      "balance",
+      "motor control",
+      "pons",
+      "cerebellum"
+    ],
+    "keywords": [
+      "coordination",
+      "brainstem",
+      "cerebellar relay"
+    ],
     "synonyms": null
   }
 ]

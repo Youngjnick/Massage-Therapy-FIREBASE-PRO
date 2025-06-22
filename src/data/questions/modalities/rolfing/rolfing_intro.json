@@ -14,7 +14,6 @@
     "long_explanation": "The goal is to improve posture, movement efficiency, and comfort by releasing fascial adhesions and improving body symmetry.",
     "clinical_application": "Therapists use Rolfing principles to support clients with chronic tension, misalignment, or poor posture.",
     "source_reference": "Rolfing and Physical Reality - Ida Rolf",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -60,7 +59,6 @@
     "long_explanation": "A biochemist, Rolf pioneered a system to improve body alignment by targeting fascial patterns and structural imbalance.",
     "clinical_application": "Her legacy supports integrative approaches in manual therapy.",
     "source_reference": "Ida Rolf: Structural Integration Legacy - Practitioner Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -87,13 +85,17 @@
     "id": "rolfing_intro_003",
     "correctAnswer": "Fascia",
     "question": "Which connective tissue does Rolfing primarily target?",
-    "options": ["Tendons", "Ligaments", "Fascia", "Cartilage"],
+    "options": [
+      "Tendons",
+      "Ligaments",
+      "Fascia",
+      "Cartilage"
+    ],
     "topics": ["modalities", "rolfing", "rolfing_intro"],
     "short_explanation": "Fascia is the main focus of Rolfing work.",
     "long_explanation": "Fascia is a web-like connective tissue that shapes and supports the body; Rolfing frees restrictions in this network.",
     "clinical_application": "Fascial work aids posture, mobility, and chronic pain reduction.",
     "source_reference": "The Fascia Manual - J. Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -131,7 +133,6 @@
     "long_explanation": "While massage typically offers relaxation, Rolfing addresses how the body holds itself in space, correcting alignment.",
     "clinical_application": "Ideal for clients seeking lasting changes to posture and pain patterns.",
     "source_reference": "Structural Integration Explained - Manual Therapy Digest",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -162,13 +163,17 @@
     "id": "rolfing_intro_005",
     "correctAnswer": "10",
     "question": "How many sessions are typically involved in the traditional Rolfing series?",
-    "options": ["5", "7", "10", "12"],
+    "options": [
+      "5",
+      "7",
+      "10",
+      "12"
+    ],
     "topics": ["modalities", "rolfing", "rolfing_intro"],
     "short_explanation": "The classic Rolfing protocol includes 10 sessions.",
     "long_explanation": "These sessions progress systematically, starting with superficial layers and moving toward deeper structural integration.",
     "clinical_application": "Offers a framework for therapists working with structural change over time.",
     "source_reference": "The Rolfing Ten-Series - Clinical Training Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -177,8 +182,12 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "tags": ["modality_rolfing"],
-    "keywords": ["modality_rolfing"],
+    "tags": [
+      "modality_rolfing"
+    ],
+    "keywords": [
+      "modality_rolfing"
+    ],
     "synonyms": null
   },
   {
@@ -196,7 +205,6 @@
     "long_explanation": "Her scientific training shaped her structural and energetic theories in manual therapy.",
     "clinical_application": "Positions Rolfing as both evidence-informed and intuitively applied.",
     "source_reference": "Rolf Biography - Structural Therapy Archives",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -205,8 +213,12 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "tags": ["founder_ida_rolf"],
-    "keywords": ["founder_ida_rolf"],
+    "tags": [
+      "founder_ida_rolf"
+    ],
+    "keywords": [
+      "founder_ida_rolf"
+    ],
     "synonyms": null
   },
   {
@@ -224,7 +236,6 @@
     "long_explanation": "Proper structure supports movement, breath, and emotional well-being through gravitational alignment.",
     "clinical_application": "Clients often report less fatigue and better coordination.",
     "source_reference": "Gravity and the Body - Rolfing Journal",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -233,8 +244,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "tags": ["modality_rolfing", "anatomy_muscles", "organ_skin"],
-    "keywords": ["modality_rolfing", "anatomy_muscles", "organ_skin"],
+    "tags": [
+      "modality_rolfing",
+      "anatomy_muscles",
+      "organ_skin"
+    ],
+    "keywords": [
+      "modality_rolfing",
+      "anatomy_muscles",
+      "organ_skin"
+    ],
     "synonyms": null
   },
   {
@@ -252,7 +271,6 @@
     "long_explanation": "Though known for deep work, Rolfing also includes subtle techniques; intensity is adapted for tissue tone and tolerance.",
     "clinical_application": "Helps address deep tension without overwhelming the client.",
     "source_reference": "Touch Techniques in Structural Integration - Advanced Manual Methods",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -261,8 +279,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:04:59.189900Z",
     "updated_at": "2025-05-26T22:04:59.189900Z",
-    "tags": ["modality_rolfing", "purpose_relaxation", "concept_soothing"],
-    "keywords": ["modality_rolfing", "purpose_relaxation", "concept_soothing"],
+    "tags": [
+      "modality_rolfing",
+      "purpose_relaxation",
+      "concept_soothing"
+    ],
+    "keywords": [
+      "modality_rolfing",
+      "purpose_relaxation",
+      "concept_soothing"
+    ],
     "synonyms": null
   },
   {
@@ -280,7 +306,6 @@
     "long_explanation": "The first sessions prepare the body by freeing surface tissues before deeper work begins.",
     "clinical_application": "Useful to improve breathing, pelvic lift, and basic awareness.",
     "source_reference": "The Rolfing Series Breakdown - Therapist Curriculum",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -322,7 +347,6 @@
     "long_explanation": "Founded by Ida Rolf, the institute offers professional education in Structural Integration techniques.",
     "clinical_application": "Ensures that clients receive standardized and informed care.",
     "source_reference": "Certification Pathways in Manual Therapy - Training Standards Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/rolfing/rolfing_intro.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",

@@ -14,7 +14,6 @@
     "long_explanation": "The thenar muscles, including abductor pollicis brevis, flexor pollicis brevis (superficial head), and opponens pollicis, are innervated by the recurrent branch of the median nerve. These muscles control thumb opposition and fine motor skills.",
     "clinical_application": "Compression of the median nerve in carpal tunnel syndrome can lead to weakness and atrophy of the thenar eminence.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -43,7 +42,10 @@
       "nerve_musculocutaneous_nerve",
       "bone_carpals"
     ],
-    "synonyms": ["thumb muscles", "thenar group"]
+    "synonyms": [
+      "thumb muscles",
+      "thenar group"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_002",
@@ -60,7 +62,6 @@
     "long_explanation": "The hypothenar muscles—abductor digiti minimi, flexor digiti minimi brevis, and opponens digiti minimi—are all innervated by the deep branch of the ulnar nerve. They contribute to movements of the little finger.",
     "clinical_application": "Ulnar nerve compression, such as in Guyon's canal syndrome, may cause atrophy in the hypothenar eminence.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -91,7 +92,9 @@
       "nerve_radial_nerve",
       "nerve_axillary_nerve"
     ],
-    "synonyms": ["pinky muscles"]
+    "synonyms": [
+      "pinky muscles"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_003",
@@ -108,7 +111,6 @@
     "long_explanation": "The flexor pollicis brevis has a superficial head (median nerve) and a deep head (ulnar nerve), making it one of the few hand muscles with dual innervation.",
     "clinical_application": "Understanding dual innervation is important in evaluating partial nerve injuries affecting thumb flexion.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "hard",
@@ -135,7 +137,9 @@
       "nerve_median_nerve",
       "nerve_ulnar_nerve"
     ],
-    "synonyms": ["FPB"]
+    "synonyms": [
+      "FPB"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_004",
@@ -152,7 +156,6 @@
     "long_explanation": "Despite being in the thumb, the adductor pollicis is not part of the thenar group and is supplied by the deep branch of the ulnar nerve.",
     "clinical_application": "Testing adductor pollicis function helps localize lesions in the ulnar nerve.",
     "source_reference": "Clinical Anatomy by Systems",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -181,7 +184,9 @@
       "nerve_musculocutaneous_nerve",
       "organ_testes"
     ],
-    "synonyms": ["thumb adductor"]
+    "synonyms": [
+      "thumb adductor"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_005",
@@ -198,7 +203,6 @@
     "long_explanation": "Lumbricals 1 and 2, attached to the radial side of the index and middle fingers, are innervated by the median nerve. Lumbricals 3 and 4 are innervated by the ulnar nerve.",
     "clinical_application": "Loss of function in lumbricals can affect MCP flexion and IP extension.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -221,7 +225,9 @@
       "nerve_median_nerve",
       "nerve_ulnar_nerve"
     ],
-    "synonyms": ["intrinsic muscles"]
+    "synonyms": [
+      "intrinsic muscles"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_006",
@@ -238,7 +244,6 @@
     "long_explanation": "The dorsal interossei muscles abduct the fingers away from the midline of the hand and are innervated by the deep branch of the ulnar nerve. There are four dorsal interossei.",
     "clinical_application": "Loss of ulnar nerve function can impair finger abduction, affecting grip and dexterity.",
     "source_reference": "Kapit/Wilhelm's Anatomy Coloring Book",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -259,7 +264,9 @@
       "muscle_dorsal_interossei",
       "nerve_ulnar_nerve"
     ],
-    "synonyms": ["interossei muscles"]
+    "synonyms": [
+      "interossei muscles"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_007",
@@ -276,7 +283,6 @@
     "long_explanation": "The palmar interossei muscles are responsible for finger adduction and are innervated by the deep branch of the ulnar nerve. These muscles help stabilize the fingers during precision grip.",
     "clinical_application": "Injury to the ulnar nerve may impair fine motor control, especially adduction of the fingers.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "hard",
@@ -305,7 +311,9 @@
       "nerve_radial_nerve",
       "nerve_musculocutaneous_nerve"
     ],
-    "synonyms": ["adductor muscles of fingers"]
+    "synonyms": [
+      "adductor muscles of fingers"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_008",
@@ -322,7 +330,6 @@
     "long_explanation": "The hypothenar group includes the opponens digiti minimi, which allows for opposition of the little finger, and is innervated by the ulnar nerve.",
     "clinical_application": "Loss of hypothenar function can interfere with fine manipulation and grip strength.",
     "source_reference": "Atlas of Anatomy (Thieme)",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "easy",
@@ -347,7 +354,10 @@
       "muscle_dorsal_interossei",
       "nerve_ulnar_nerve"
     ],
-    "synonyms": ["pinky muscles", "ulnar side"]
+    "synonyms": [
+      "pinky muscles",
+      "ulnar side"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_009",
@@ -364,7 +374,6 @@
     "long_explanation": "Unlike the superficial head (median nerve), the deep head of flexor pollicis brevis is innervated by the deep branch of the ulnar nerve. This highlights the complexity of thumb muscle innervation.",
     "clinical_application": "In combined nerve injuries, understanding dual innervation helps preserve surgical outcomes.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -391,7 +400,9 @@
       "nerve_radial_nerve",
       "nerve_axillary_nerve"
     ],
-    "synonyms": ["thumb flexor"]
+    "synonyms": [
+      "thumb flexor"
+    ]
   },
   {
     "id": "intrinsic_hand_muscles_010",
@@ -408,7 +419,6 @@
     "long_explanation": "The radial nerve primarily supplies the extensor muscles in the forearm and does not innervate intrinsic hand muscles. Intrinsic muscles are innervated by the median and ulnar nerves.",
     "clinical_application": "Radial nerve palsy causes wrist drop but typically spares intrinsic hand function.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/hands/intrinsic_hand_muscles.json",
     "question_type": "multiple_choice",
     "difficulty": "medium",
@@ -431,6 +441,8 @@
       "nerve_ulnar_nerve",
       "nerve_radial_nerve"
     ],
-    "synonyms": ["wrist extensor nerve"]
+    "synonyms": [
+      "wrist extensor nerve"
+    ]
   }
 ]

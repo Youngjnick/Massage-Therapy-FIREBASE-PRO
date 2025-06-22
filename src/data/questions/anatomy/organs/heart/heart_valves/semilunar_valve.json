@@ -14,7 +14,6 @@
     "long_explanation": "Semilunar valves are located at the exits of the heart's ventricles. The aortic valve lies between the left ventricle and aorta, while the pulmonary valve lies between the right ventricle and pulmonary artery.",
     "clinical_application": "Understanding semilunar valve function is key when assessing heart murmurs in medical intake.",
     "source_reference": "Moore's Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["semilunar", "valves", "aortic", "pulmonary"],
-    "keywords": ["semilunar valves", "aortic valve", "pulmonary valve"],
+    "tags": [
+      "semilunar",
+      "valves",
+      "aortic",
+      "pulmonary"
+    ],
+    "keywords": [
+      "semilunar valves",
+      "aortic valve",
+      "pulmonary valve"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "These valves prevent backflow as blood exits the heart's ventricles—pulmonary to lungs, aortic to body.",
     "clinical_application": "Valve efficiency helps maintain healthy blood pressure, an important factor for client safety during massage.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -51,21 +58,32 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["blood flow", "semilunar valves"],
-    "keywords": ["ventricular ejection", "aortic valve", "pulmonary valve"],
+    "tags": [
+      "blood flow",
+      "semilunar valves"
+    ],
+    "keywords": [
+      "ventricular ejection",
+      "aortic valve",
+      "pulmonary valve"
+    ],
     "synonyms": null
   },
   {
     "id": "semilunar_valve_003",
     "correctAnswer": "Half-moon",
     "question": "What shape are semilunar valve leaflets?",
-    "options": ["Triangular", "Half-moon", "Circular", "Oval"],
+    "options": [
+      "Triangular",
+      "Half-moon",
+      "Circular",
+      "Oval"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "semilunar_valve"],
     "short_explanation": "Semilunar valves are named for their half-moon shaped cusps.",
     "long_explanation": "Each semilunar valve consists of three crescent-shaped cusps that close tightly to prevent backflow.",
     "clinical_application": "Valve shape contributes to effective sealing—important in patients with murmurs or regurgitation.",
     "source_reference": "Netter's Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -74,8 +92,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shape", "cusps", "valves"],
-    "keywords": ["semilunar cusp", "half-moon shape"],
+    "tags": [
+      "shape",
+      "cusps",
+      "valves"
+    ],
+    "keywords": [
+      "semilunar cusp",
+      "half-moon shape"
+    ],
     "synonyms": null
   },
   {
@@ -93,7 +118,6 @@
     "long_explanation": "In aortic regurgitation, blood flows backward into the left ventricle, decreasing efficiency and potentially causing hypertrophy or heart failure.",
     "clinical_application": "Massage therapists may observe fatigue or orthopnea in clients with valve regurgitation.",
     "source_reference": "Lilly's Pathophysiology of Heart Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -102,21 +126,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["regurgitation", "aortic valve"],
-    "keywords": ["valve insufficiency", "aortic regurgitation"],
+    "tags": [
+      "regurgitation",
+      "aortic valve"
+    ],
+    "keywords": [
+      "valve insufficiency",
+      "aortic regurgitation"
+    ],
     "synonyms": null
   },
   {
     "id": "semilunar_valve_005",
     "correctAnswer": "S2",
     "question": "Which sound is most associated with semilunar valve closure?",
-    "options": ["S1", "S2", "S3", "S4"],
+    "options": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "semilunar_valve"],
     "short_explanation": "S2 corresponds with the closure of the semilunar valves.",
     "long_explanation": "The second heart sound (S2) occurs at the end of systole as the aortic and pulmonary valves snap shut.",
     "clinical_application": "Abnormal S2 sounds may suggest valve disease, warranting medical evaluation before bodywork.",
     "source_reference": "Bates' Guide to Physical Examination",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -125,8 +159,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["S2", "valves", "cardiology"],
-    "keywords": ["heart sound", "semilunar", "valve closure"],
+    "tags": [
+      "S2",
+      "valves",
+      "cardiology"
+    ],
+    "keywords": [
+      "heart sound",
+      "semilunar",
+      "valve closure"
+    ],
     "synonyms": null
   },
   {
@@ -144,7 +186,6 @@
     "long_explanation": "The pulmonary valve regulates outflow from the right ventricle into the pulmonary trunk, carrying blood to the lungs for oxygenation.",
     "clinical_application": "Knowledge of the pulmonary circuit helps therapists screen for circulatory or respiratory strain.",
     "source_reference": "Moore’s Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -153,8 +194,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pulmonary valve", "right ventricle"],
-    "keywords": ["pulmonary trunk", "valve flow"],
+    "tags": [
+      "pulmonary valve",
+      "right ventricle"
+    ],
+    "keywords": [
+      "pulmonary trunk",
+      "valve flow"
+    ],
     "synonyms": null
   },
   {
@@ -172,7 +219,6 @@
     "long_explanation": "During ventricular relaxation (diastole), semilunar valves close to prevent arterial blood from re-entering the heart.",
     "clinical_application": "Valve closure is essential for maintaining diastolic pressure in circulation.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -181,21 +227,31 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diastole", "valve function"],
-    "keywords": ["semilunar valves", "cardiac cycle"],
+    "tags": [
+      "diastole",
+      "valve function"
+    ],
+    "keywords": [
+      "semilunar valves",
+      "cardiac cycle"
+    ],
     "synonyms": null
   },
   {
     "id": "semilunar_valve_008",
     "correctAnswer": "Echocardiogram",
     "question": "Which clinical tool best evaluates semilunar valve function?",
-    "options": ["X-ray", "ECG", "Echocardiogram", "Angiogram"],
+    "options": [
+      "X-ray",
+      "ECG",
+      "Echocardiogram",
+      "Angiogram"
+    ],
     "topics": ["anatomy", "organs", "heart", "heart_valves", "semilunar_valve"],
     "short_explanation": "Echocardiography is used to assess valve structure and function.",
     "long_explanation": "An echocardiogram provides real-time imaging of the heart's valves and chambers, useful in detecting stenosis or regurgitation.",
     "clinical_application": "Clients with diagnosed valve dysfunction may have recent echo results indicating the severity of regurgitation or stenosis.",
     "source_reference": "ASE Echocardiography Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -204,8 +260,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diagnosis", "echo", "valves"],
-    "keywords": ["echocardiogram", "valve imaging"],
+    "tags": [
+      "diagnosis",
+      "echo",
+      "valves"
+    ],
+    "keywords": [
+      "echocardiogram",
+      "valve imaging"
+    ],
     "synonyms": null
   },
   {
@@ -223,7 +286,6 @@
     "long_explanation": "Semilunar valve stenosis causes resistance to outflow, making the ventricle work harder to eject blood, which can lead to hypertrophy.",
     "clinical_application": "Massage intensity may need adjustment in clients with valve disease to prevent overloading the heart.",
     "source_reference": "Lilly's Pathophysiology of Heart Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -232,8 +294,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["stenosis", "valve narrowing"],
-    "keywords": ["semilunar stenosis", "cardiac strain"],
+    "tags": [
+      "stenosis",
+      "valve narrowing"
+    ],
+    "keywords": [
+      "semilunar stenosis",
+      "cardiac strain"
+    ],
     "synonyms": null
   },
   {
@@ -251,7 +319,6 @@
     "long_explanation": "The left ventricle pumps oxygenated blood through the aortic valve into systemic circulation via the aorta.",
     "clinical_application": "Massage therapists should be cautious with clients who have aortic valve conditions due to potential strain on the left ventricle.",
     "source_reference": "Gray’s Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/heart/heart_valves/semilunar_valve.json",
     "question_type": null,
     "difficulty": "easy",
@@ -260,8 +327,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["aortic valve", "left ventricle"],
-    "keywords": ["left heart", "systemic circulation", "semilunar"],
+    "tags": [
+      "aortic valve",
+      "left ventricle"
+    ],
+    "keywords": [
+      "left heart",
+      "systemic circulation",
+      "semilunar"
+    ],
     "synonyms": null
   }
 ]

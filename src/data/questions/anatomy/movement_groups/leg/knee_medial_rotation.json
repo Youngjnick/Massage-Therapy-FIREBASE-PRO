@@ -14,7 +14,6 @@
     "long_explanation": "During knee flexion, the semitendinosus assists in medially rotating the tibia on the femur. It is one of the hamstring muscles located on the medial side of the thigh.",
     "clinical_application": "Understanding this helps massage therapists address movement limitations during gait or postural compensation.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,21 +22,37 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee", "medial rotation", "semitendinosus"],
-    "keywords": ["hamstrings", "medial rotation", "tibia", "knee"],
-    "synonyms": ["tibial rotation", "hamstring function"]
+    "tags": [
+      "knee",
+      "medial rotation",
+      "semitendinosus"
+    ],
+    "keywords": [
+      "hamstrings",
+      "medial rotation",
+      "tibia",
+      "knee"
+    ],
+    "synonyms": [
+      "tibial rotation",
+      "hamstring function"
+    ]
   },
   {
     "id": "knee_medial_rotation_002",
     "correctAnswer": "Flexed",
     "question": "Medial rotation of the knee is only possible when the knee is in which position?",
-    "options": ["Flexed", "Extended", "Locked", "Hyperextended"],
+    "options": [
+      "Flexed",
+      "Extended",
+      "Locked",
+      "Hyperextended"
+    ],
     "topics": ["anatomy", "movement_groups", "leg", "knee_medial_rotation"],
     "short_explanation": "Knee medial rotation requires a flexed knee.",
     "long_explanation": "Rotation at the knee joint (tibial on femoral rotation) is only possible when the knee is flexed, allowing the condyles to unlock from full extension.",
     "clinical_application": "Massage therapists should assess active and passive knee rotation only with the knee flexed.",
     "source_reference": "Principles of Anatomy and Physiology, Tortora & Derrickson",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,9 +61,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee", "flexion", "medial rotation"],
-    "keywords": ["knee flexion", "tibial rotation", "medial motion"],
-    "synonyms": ["knee rotation", "joint position"]
+    "tags": [
+      "knee",
+      "flexion",
+      "medial rotation"
+    ],
+    "keywords": [
+      "knee flexion",
+      "tibial rotation",
+      "medial motion"
+    ],
+    "synonyms": [
+      "knee rotation",
+      "joint position"
+    ]
   },
   {
     "id": "knee_medial_rotation_003",
@@ -65,7 +91,6 @@
     "long_explanation": "The semimembranosus (a hamstring) and the gracilis (a hip adductor) both cross the knee joint and contribute to internal (medial) tibial rotation when the knee is bent.",
     "clinical_application": "Therapists may treat these muscles when improving gait symmetry and correcting rotational imbalances.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -74,9 +99,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["medial rotation", "knee flexion", "muscles"],
-    "keywords": ["semimembranosus", "gracilis", "internal rotation"],
-    "synonyms": ["hamstrings", "adductors", "rotation"]
+    "tags": [
+      "medial rotation",
+      "knee flexion",
+      "muscles"
+    ],
+    "keywords": [
+      "semimembranosus",
+      "gracilis",
+      "internal rotation"
+    ],
+    "synonyms": [
+      "hamstrings",
+      "adductors",
+      "rotation"
+    ]
   },
   {
     "id": "knee_medial_rotation_004",
@@ -93,7 +130,6 @@
     "long_explanation": "The popliteus is a deep muscle in the posterior knee that rotates the tibia medially to unlock the knee from full extension during the initial phase of flexion.",
     "clinical_application": "Dysfunction in the popliteus can lead to limited flexion or rotational imbalance, often overlooked in therapy.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -102,9 +138,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["popliteus", "knee flexion", "rotation"],
-    "keywords": ["unlocking knee", "deep knee muscle", "posterior leg"],
-    "synonyms": ["unlocking knee", "tibial rotation", "posterior knee"]
+    "tags": [
+      "popliteus",
+      "knee flexion",
+      "rotation"
+    ],
+    "keywords": [
+      "unlocking knee",
+      "deep knee muscle",
+      "posterior leg"
+    ],
+    "synonyms": [
+      "unlocking knee",
+      "tibial rotation",
+      "posterior knee"
+    ]
   },
   {
     "id": "knee_medial_rotation_005",
@@ -121,7 +169,6 @@
     "long_explanation": "Medial knee rotation is important in turning motions during gait. Limitation may cause compensations in the hip or foot, altering normal walking biomechanics.",
     "clinical_application": "Massage therapists should assess for restricted tibial rotation when addressing lower limb compensation patterns.",
     "source_reference": "Clinical Kinesiology and Anatomy, Lippert",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -130,21 +177,37 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gait", "rotation limitation", "knee function"],
-    "keywords": ["walking", "tibia", "rotation", "biomechanics"],
-    "synonyms": ["rotation gait", "walking dysfunction"]
+    "tags": [
+      "gait",
+      "rotation limitation",
+      "knee function"
+    ],
+    "keywords": [
+      "walking",
+      "tibia",
+      "rotation",
+      "biomechanics"
+    ],
+    "synonyms": [
+      "rotation gait",
+      "walking dysfunction"
+    ]
   },
   {
     "id": "knee_medial_rotation_006",
     "correctAnswer": "Biceps femoris",
     "question": "Which of the following muscles does NOT contribute to medial rotation of the knee?",
-    "options": ["Biceps femoris", "Sartorius", "Gracilis", "Semitendinosus"],
+    "options": [
+      "Biceps femoris",
+      "Sartorius",
+      "Gracilis",
+      "Semitendinosus"
+    ],
     "topics": ["anatomy", "movement_groups", "leg", "knee_medial_rotation"],
     "short_explanation": "Biceps femoris performs lateral, not medial, rotation of the knee.",
     "long_explanation": "While several muscles such as semitendinosus, semimembranosus, sartorius, gracilis, and popliteus assist with medial knee rotation, the biceps femoris acts to laterally rotate the tibia when the knee is flexed.",
     "clinical_application": "This distinction is important during muscle testing and treatment of rotational imbalance.",
     "source_reference": "Trail Guide to the Body, 5th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -153,9 +216,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee", "rotation", "muscle actions"],
-    "keywords": ["biceps femoris", "lateral rotation", "hamstring function"],
-    "synonyms": ["lateral rotator", "knee muscle"]
+    "tags": [
+      "knee",
+      "rotation",
+      "muscle actions"
+    ],
+    "keywords": [
+      "biceps femoris",
+      "lateral rotation",
+      "hamstring function"
+    ],
+    "synonyms": [
+      "lateral rotator",
+      "knee muscle"
+    ]
   },
   {
     "id": "knee_medial_rotation_007",
@@ -172,7 +246,6 @@
     "long_explanation": "Medial knee rotation is used when crossing one leg over the other in a seated position, engaging muscles like gracilis, sartorius, and semimembranosus.",
     "clinical_application": "Therapists should assess these muscles in clients who have difficulty crossing legs or experience medial knee strain.",
     "source_reference": "Muscles: Testing and Function, Kendall et al.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -181,9 +254,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee", "movement", "daily activities"],
-    "keywords": ["leg crossing", "medial rotation", "knee posture"],
-    "synonyms": ["cross-legged", "hip rotation", "knee function"]
+    "tags": [
+      "knee",
+      "movement",
+      "daily activities"
+    ],
+    "keywords": [
+      "leg crossing",
+      "medial rotation",
+      "knee posture"
+    ],
+    "synonyms": [
+      "cross-legged",
+      "hip rotation",
+      "knee function"
+    ]
   },
   {
     "id": "knee_medial_rotation_008",
@@ -200,7 +285,6 @@
     "long_explanation": "The sartorius, the longest muscle in the body, originates from the anterior superior iliac spine and inserts on the pes anserine region of the tibia, contributing to flexion and medial rotation of the knee.",
     "clinical_application": "Understanding this path helps in treating strain patterns or imbalances affecting both the hip and knee.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -209,9 +293,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["sartorius", "knee", "medial rotation"],
-    "keywords": ["ASIS", "pes anserine", "hip and knee"],
-    "synonyms": ["longest muscle", "medial rotator", "pes anserine group"]
+    "tags": [
+      "sartorius",
+      "knee",
+      "medial rotation"
+    ],
+    "keywords": [
+      "ASIS",
+      "pes anserine",
+      "hip and knee"
+    ],
+    "synonyms": [
+      "longest muscle",
+      "medial rotator",
+      "pes anserine group"
+    ]
   },
   {
     "id": "knee_medial_rotation_009",
@@ -228,7 +324,6 @@
     "long_explanation": "The muscles forming the pes anserine group (sartorius, gracilis, semitendinosus) medially rotate and stabilize the tibia, especially during gait adaptations on unstable surfaces.",
     "clinical_application": "Massage to these muscles can improve joint tracking and reduce compensatory stress patterns in walking.",
     "source_reference": "Clinical Kinesiology and Anatomy, Lippert",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -237,9 +332,23 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pes anserine", "knee stability", "gait"],
-    "keywords": ["sartorius", "gracilis", "semitendinosus", "gait"],
-    "synonyms": ["sartorius", "gracilis", "semitendinosus", "medial support"]
+    "tags": [
+      "pes anserine",
+      "knee stability",
+      "gait"
+    ],
+    "keywords": [
+      "sartorius",
+      "gracilis",
+      "semitendinosus",
+      "gait"
+    ],
+    "synonyms": [
+      "sartorius",
+      "gracilis",
+      "semitendinosus",
+      "medial support"
+    ]
   },
   {
     "id": "knee_medial_rotation_010",
@@ -256,7 +365,6 @@
     "long_explanation": "Seated tibial rotation involves rotating the foot inward and outward with the knee flexed. Limitation in internal (medial) rotation may indicate restrictions in soft tissue or capsular structures around the knee.",
     "clinical_application": "Massage therapists may use this test to determine whether to target soft tissue mobilization or refer out for orthopedic assessment.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/leg/knee_medial_rotation.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -265,8 +373,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["knee assessment", "rotation test", "mobility"],
-    "keywords": ["medial rotation test", "knee ROM", "tibial mobility"],
-    "synonyms": ["rotation mobility", "knee assessment"]
+    "tags": [
+      "knee assessment",
+      "rotation test",
+      "mobility"
+    ],
+    "keywords": [
+      "medial rotation test",
+      "knee ROM",
+      "tibial mobility"
+    ],
+    "synonyms": [
+      "rotation mobility",
+      "knee assessment"
+    ]
   }
 ]

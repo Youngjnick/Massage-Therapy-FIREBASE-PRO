@@ -14,7 +14,6 @@
     "long_explanation": "The minor calyces receive urine from the renal papillae, then converge into major calyces, which channel urine into the renal pelvis and eventually the ureter.",
     "clinical_application": "Blockages or kidney stones in the calyces can cause backflow and pain in the flanks, affecting body posture and massage approach.",
     "source_reference": "OpenStax Anatomy & Physiology, 2nd ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -23,21 +22,37 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["urinary system", "kidney", "calyx", "renal anatomy"],
-    "keywords": ["minor calyx", "major calyx", "renal pelvis"],
-    "synonyms": ["renal calyx", "kidney calyx"]
+    "tags": [
+      "urinary system",
+      "kidney",
+      "calyx",
+      "renal anatomy"
+    ],
+    "keywords": [
+      "minor calyx",
+      "major calyx",
+      "renal pelvis"
+    ],
+    "synonyms": [
+      "renal calyx",
+      "kidney calyx"
+    ]
   },
   {
     "id": "kidney_calyx_002",
     "correctAnswer": "Major calyx",
     "question": "Which structure directly drains into the renal pelvis?",
-    "options": ["Minor calyx", "Ureter", "Renal pyramid", "Major calyx"],
+    "options": [
+      "Minor calyx",
+      "Ureter",
+      "Renal pyramid",
+      "Major calyx"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "The major calyces drain into the renal pelvis.",
     "long_explanation": "Urine formed in the nephrons passes through the renal papillae into the minor calyces, then into major calyces, which drain into the renal pelvis and then the ureter.",
     "clinical_application": "Massage therapists may need to modify techniques in cases of renal obstruction that involve major calyces.",
     "source_reference": "Gray’s Anatomy for Students, 4th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,21 +61,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["kidney drainage", "renal pelvis", "major calyx"],
-    "keywords": ["urine collection", "renal flow", "kidney structures"],
-    "synonyms": ["renal funnel"]
+    "tags": [
+      "kidney drainage",
+      "renal pelvis",
+      "major calyx"
+    ],
+    "keywords": [
+      "urine collection",
+      "renal flow",
+      "kidney structures"
+    ],
+    "synonyms": [
+      "renal funnel"
+    ]
   },
   {
     "id": "kidney_calyx_003",
     "correctAnswer": "Minor calyx",
     "question": "Where does urine from a renal papilla flow immediately next?",
-    "options": ["Renal pelvis", "Minor calyx", "Major calyx", "Ureter"],
+    "options": [
+      "Renal pelvis",
+      "Minor calyx",
+      "Major calyx",
+      "Ureter"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Urine flows from the renal papilla into a minor calyx.",
     "long_explanation": "The renal papilla marks the apex of a renal pyramid, where urine enters a minor calyx for collection before progressing to a major calyx.",
     "clinical_application": "Understanding urine flow helps in recognizing symptoms from kidney stones obstructing minor calyces.",
     "source_reference": "Moore Clinically Oriented Anatomy, 8th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -69,9 +98,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["renal anatomy", "papilla", "minor calyx"],
-    "keywords": ["urine path", "papilla", "minor calyx"],
-    "synonyms": ["first drainage point"]
+    "tags": [
+      "renal anatomy",
+      "papilla",
+      "minor calyx"
+    ],
+    "keywords": [
+      "urine path",
+      "papilla",
+      "minor calyx"
+    ],
+    "synonyms": [
+      "first drainage point"
+    ]
   },
   {
     "id": "kidney_calyx_004",
@@ -88,7 +127,6 @@
     "long_explanation": "Stones forming in the kidney can become lodged in a calyx or the renal pelvis, causing hydronephrosis, pain, and potential urinary backup.",
     "clinical_application": "Flank tenderness during massage should prompt caution in clients with a history of kidney stones.",
     "source_reference": "Robbins Basic Pathology, 10th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -97,21 +135,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["kidney stones", "urinary obstruction", "renal pain"],
-    "keywords": ["calculi", "hydronephrosis", "urinary blockage"],
-    "synonyms": ["renal calculi"]
+    "tags": [
+      "kidney stones",
+      "urinary obstruction",
+      "renal pain"
+    ],
+    "keywords": [
+      "calculi",
+      "hydronephrosis",
+      "urinary blockage"
+    ],
+    "synonyms": [
+      "renal calculi"
+    ]
   },
   {
     "id": "kidney_calyx_005",
     "correctAnswer": "1",
     "question": "How many minor calyces typically drain a single renal pyramid?",
-    "options": ["1", "2–3", "4–5", "6 or more"],
+    "options": [
+      "1",
+      "2–3",
+      "4–5",
+      "6 or more"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Each renal pyramid typically drains into one minor calyx.",
     "long_explanation": "Each renal pyramid ends in a papilla that funnels urine into a single minor calyx, though several minor calyces feed into a major calyx.",
     "clinical_application": "Identifying specific calyces can help localize pathology seen on imaging reports clients may bring in.",
     "source_reference": "Clinically Oriented Anatomy, Moore, 8th ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -120,21 +172,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["renal pyramid", "urine drainage", "minor calyx"],
-    "keywords": ["urinary anatomy", "minor calyx", "papilla"],
-    "synonyms": ["pyramidal drainage"]
+    "tags": [
+      "renal pyramid",
+      "urine drainage",
+      "minor calyx"
+    ],
+    "keywords": [
+      "urinary anatomy",
+      "minor calyx",
+      "papilla"
+    ],
+    "synonyms": [
+      "pyramidal drainage"
+    ]
   },
   {
     "id": "kidney_calyx_006",
     "correctAnswer": "Renal pelvis",
     "question": "Which structure follows the calyces in the path of urine flow?",
-    "options": ["Nephron", "Ureter", "Renal pelvis", "Renal corpuscle"],
+    "options": [
+      "Nephron",
+      "Ureter",
+      "Renal pelvis",
+      "Renal corpuscle"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Calyces drain into the renal pelvis before the ureter.",
     "long_explanation": "After collecting urine from the calyces, the renal pelvis acts as a funnel to channel it into the ureter.",
     "clinical_application": "Compression over this area should be avoided in cases of hydronephrosis or kidney infections.",
     "source_reference": "OpenStax Anatomy & Physiology, 2nd ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -143,21 +209,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["urine flow", "renal pelvis", "kidney anatomy"],
-    "keywords": ["pelvis", "urine drainage", "calyx function"],
-    "synonyms": ["renal funnel"]
+    "tags": [
+      "urine flow",
+      "renal pelvis",
+      "kidney anatomy"
+    ],
+    "keywords": [
+      "pelvis",
+      "urine drainage",
+      "calyx function"
+    ],
+    "synonyms": [
+      "renal funnel"
+    ]
   },
   {
     "id": "kidney_calyx_007",
     "correctAnswer": "Renal sinus",
     "question": "The minor and major calyces are found in which part of the kidney?",
-    "options": ["Cortex", "Medulla", "Hilum", "Renal sinus"],
+    "options": [
+      "Cortex",
+      "Medulla",
+      "Hilum",
+      "Renal sinus"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Calyces are part of the renal sinus within the kidney.",
     "long_explanation": "The renal sinus is a cavity in the kidney that houses the renal pelvis, calyces, blood vessels, nerves, and fat.",
     "clinical_application": "Understanding renal sinus contents is useful for interpreting imaging and referrals.",
     "source_reference": "Grant’s Atlas of Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -166,21 +246,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["renal sinus", "internal kidney anatomy", "urinary system"],
-    "keywords": ["renal hilum", "sinus", "urine drainage"],
-    "synonyms": ["kidney cavity"]
+    "tags": [
+      "renal sinus",
+      "internal kidney anatomy",
+      "urinary system"
+    ],
+    "keywords": [
+      "renal hilum",
+      "sinus",
+      "urine drainage"
+    ],
+    "synonyms": [
+      "kidney cavity"
+    ]
   },
   {
     "id": "kidney_calyx_008",
     "correctAnswer": "Pyelitis",
     "question": "What term describes an inflammation of the calyces due to infection?",
-    "options": ["Nephritis", "Cystitis", "Pyelitis", "Hydronephrosis"],
+    "options": [
+      "Nephritis",
+      "Cystitis",
+      "Pyelitis",
+      "Hydronephrosis"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Pyelitis is inflammation of the renal pelvis and calyces.",
     "long_explanation": "It is often caused by bacterial infection and can lead to pyelonephritis if untreated.",
     "clinical_application": "Massage may need to be deferred in cases of active infection or systemic fever.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -189,21 +283,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["renal infection", "pyelitis", "calyx inflammation"],
-    "keywords": ["kidney infection", "urinary tract", "renal pathology"],
-    "synonyms": ["upper UTI"]
+    "tags": [
+      "renal infection",
+      "pyelitis",
+      "calyx inflammation"
+    ],
+    "keywords": [
+      "kidney infection",
+      "urinary tract",
+      "renal pathology"
+    ],
+    "synonyms": [
+      "upper UTI"
+    ]
   },
   {
     "id": "kidney_calyx_009",
     "correctAnswer": "2 or 3",
     "question": "How many major calyces typically exist in a kidney?",
-    "options": ["1", "2 or 3", "4–5", "6 or more"],
+    "options": [
+      "1",
+      "2 or 3",
+      "4–5",
+      "6 or more"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Most kidneys have 2–3 major calyces.",
     "long_explanation": "Each major calyx receives input from several minor calyces and drains into the renal pelvis. The number may vary slightly between individuals.",
     "clinical_application": "Imaging that notes dilation of major calyces may indicate early obstruction or reflux.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -212,21 +320,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["major calyx", "kidney structure", "urine collection"],
-    "keywords": ["renal anatomy", "major calyces", "urinary system"],
-    "synonyms": ["calyceal system"]
+    "tags": [
+      "major calyx",
+      "kidney structure",
+      "urine collection"
+    ],
+    "keywords": [
+      "renal anatomy",
+      "major calyces",
+      "urinary system"
+    ],
+    "synonyms": [
+      "calyceal system"
+    ]
   },
   {
     "id": "kidney_calyx_010",
     "correctAnswer": "Ultrasound",
     "question": "What imaging modality is most useful in detecting calyx dilation?",
-    "options": ["Ultrasound", "X-ray", "MRI", "PET scan"],
+    "options": [
+      "Ultrasound",
+      "X-ray",
+      "MRI",
+      "PET scan"
+    ],
     "topics": ["anatomy", "organs", "kidneys", "kidney_calyx"],
     "short_explanation": "Ultrasound is commonly used to detect hydronephrosis and calyceal enlargement.",
     "long_explanation": "Ultrasound allows non-invasive visualization of renal calyces and is used to monitor urine flow and obstruction.",
     "clinical_application": "Knowledge of imaging methods can help massage therapists understand client conditions involving renal swelling or urinary issues.",
     "source_reference": "Fundamentals of Diagnostic Radiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/kidneys/kidney_calyx.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -235,8 +357,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["renal imaging", "hydronephrosis", "ultrasound"],
-    "keywords": ["ultrasound", "kidney scan", "urine blockage"],
-    "synonyms": ["sonography"]
+    "tags": [
+      "renal imaging",
+      "hydronephrosis",
+      "ultrasound"
+    ],
+    "keywords": [
+      "ultrasound",
+      "kidney scan",
+      "urine blockage"
+    ],
+    "synonyms": [
+      "sonography"
+    ]
   }
 ]

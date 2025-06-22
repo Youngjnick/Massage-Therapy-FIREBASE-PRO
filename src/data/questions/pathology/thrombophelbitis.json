@@ -14,7 +14,6 @@
     "long_explanation": "Thrombophlebitis occurs when a blood clot causes inflammation in a vein. It most commonly affects superficial veins in the legs but can also occur deeper in the body as deep vein thrombosis (DVT).",
     "clinical_application": "Massage is contraindicated in areas affected by thrombophlebitis due to the risk of dislodging the clot and causing a pulmonary embolism.",
     "source_reference": "Mayo Clinic: Thrombophlebitis Overview",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["vein", "inflammation", "clot"],
-    "keywords": ["thrombosis", "vein clot", "vascular inflammation"],
+    "tags": [
+      "vein",
+      "inflammation",
+      "clot"
+    ],
+    "keywords": [
+      "thrombosis",
+      "vein clot",
+      "vascular inflammation"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "Superficial thrombophlebitis often results from trauma to a vein, especially from IV insertion or prolonged pressure. This leads to localized inflammation and clot formation in the affected superficial vein.",
     "clinical_application": "Avoid massage over recent IV sites or inflamed veins due to clot risk and pain.",
     "source_reference": "Cleveland Clinic: Superficial Thrombophlebitis",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["catheter", "superficial", "injury"],
-    "keywords": ["IV", "catheter trauma", "vein inflammation"],
+    "tags": [
+      "catheter",
+      "superficial",
+      "injury"
+    ],
+    "keywords": [
+      "IV",
+      "catheter trauma",
+      "vein inflammation"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "Thrombophlebitis presents with localized redness, swelling, and tenderness along the affected vein. The area may feel warm and cord-like to the touch.",
     "clinical_application": "Therapists should inspect for visible inflammation before proceeding with any massage on the limbs.",
     "source_reference": "Mayo Clinic: Thrombophlebitis Symptoms",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -79,8 +92,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["symptoms", "assessment", "vascular"],
-    "keywords": ["swelling", "pain", "inflammation"],
+    "tags": [
+      "symptoms",
+      "assessment",
+      "vascular"
+    ],
+    "keywords": [
+      "swelling",
+      "pain",
+      "inflammation"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "Surgery, prolonged bed rest, and long periods of immobility slow venous return, creating conditions favorable for clot formation and inflammation of veins.",
     "clinical_application": "Always screen for recent surgeries, hospitalizations, or long travel history before leg massage.",
     "source_reference": "NIH: Deep Vein Thrombosis and Pulmonary Embolism",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -107,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["risk factors", "immobility", "post-surgical"],
-    "keywords": ["surgery", "bed rest", "DVT risk"],
+    "tags": [
+      "risk factors",
+      "immobility",
+      "post-surgical"
+    ],
+    "keywords": [
+      "surgery",
+      "bed rest",
+      "DVT risk"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +154,6 @@
     "long_explanation": "The great saphenous vein, running along the inner leg, is prone to thrombophlebitis due to its superficial position and frequent use for IV lines or surgical access.",
     "clinical_application": "Avoid massage over this area if red, cord-like, or painful due to clotting risk.",
     "source_reference": "British Medical Journal: Thrombophlebitis of the Leg",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -135,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["leg veins", "saphenous", "superficial"],
-    "keywords": ["saphenous vein", "leg inflammation", "vascular"],
+    "tags": [
+      "leg veins",
+      "saphenous",
+      "superficial"
+    ],
+    "keywords": [
+      "saphenous vein",
+      "leg inflammation",
+      "vascular"
+    ],
     "synonyms": null
   },
   {
@@ -154,7 +189,6 @@
     "long_explanation": "If a clot from deep vein thrombophlebitis dislodges, it can travel to the lungs and obstruct a pulmonary artery, causing chest pain, shortness of breath, or sudden death.",
     "clinical_application": "Deep leg massage is contraindicated when DVT is suspected due to embolism risk.",
     "source_reference": "CDC: Pulmonary Embolism",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["complication", "embolism", "vascular emergency"],
-    "keywords": ["PE", "clot travel", "DVT complication"],
+    "tags": [
+      "complication",
+      "embolism",
+      "vascular emergency"
+    ],
+    "keywords": [
+      "PE",
+      "clot travel",
+      "DVT complication"
+    ],
     "synonyms": null
   },
   {
@@ -182,7 +224,6 @@
     "long_explanation": "Graduated compression stockings help reduce venous stasis in the legs, lowering the risk of clot formation following surgery or immobilization.",
     "clinical_application": "Massage therapists should not remove compression garments unless directed by medical staff.",
     "source_reference": "American College of Surgeons",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -191,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["prevention", "compression", "post-surgical"],
-    "keywords": ["stockings", "venous return", "clot prevention"],
+    "tags": [
+      "prevention",
+      "compression",
+      "post-surgical"
+    ],
+    "keywords": [
+      "stockings",
+      "venous return",
+      "clot prevention"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +259,6 @@
     "long_explanation": "Symptoms like calf pain, swelling, redness, and warmth may indicate deep vein thrombosis. Massage could dislodge the clot, so referral to urgent medical care is required.",
     "clinical_application": "Therapists must recognize red flags and refer rather than treat suspected DVT cases.",
     "source_reference": "Massage Therapy Foundation: Red Flags in Practice",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -219,21 +267,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["referral", "red flags", "contraindications"],
-    "keywords": ["urgent care", "DVT signs", "massage caution"],
+    "tags": [
+      "referral",
+      "red flags",
+      "contraindications"
+    ],
+    "keywords": [
+      "urgent care",
+      "DVT signs",
+      "massage caution"
+    ],
     "synonyms": null
   },
   {
     "id": "thrombophelbitis_009",
     "correctAnswer": "D-dimer",
     "question": "Which blood test is often used to support diagnosis of deep vein thrombosis?",
-    "options": ["CBC", "D-dimer", "Hemoglobin A1c", "Troponin"],
+    "options": [
+      "CBC",
+      "D-dimer",
+      "Hemoglobin A1c",
+      "Troponin"
+    ],
     "topics": ["pathology", "thrombophelbitis"],
     "short_explanation": "D-dimer levels rise in the presence of a clot.",
     "long_explanation": "D-dimer is a byproduct of clot breakdown and is elevated in conditions involving thrombosis, such as DVT or pulmonary embolism. It is not specific, but aids in diagnosis.",
     "clinical_application": "Massage therapists do not diagnose, but understanding lab indicators aids communication with clients under medical care.",
     "source_reference": "Lab Tests Online",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -242,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["diagnosis", "labs", "vascular"],
-    "keywords": ["clot marker", "blood test", "d-dimer"],
+    "tags": [
+      "diagnosis",
+      "labs",
+      "vascular"
+    ],
+    "keywords": [
+      "clot marker",
+      "blood test",
+      "d-dimer"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +329,6 @@
     "long_explanation": "Clients taking blood thinners such as warfarin or heparin are more prone to internal and surface bleeding. Deep or aggressive massage should be avoided; light pressure and careful monitoring are essential.",
     "clinical_application": "Always ask about blood-thinner use and modify pressure accordingly.",
     "source_reference": "Massage Therapy Journal: Working with Clients on Anticoagulants",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/thrombophelbitis.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -270,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anticoagulants", "bruising", "caution"],
-    "keywords": ["blood thinners", "bleeding risk", "medication"],
+    "tags": [
+      "anticoagulants",
+      "bruising",
+      "caution"
+    ],
+    "keywords": [
+      "blood thinners",
+      "bleeding risk",
+      "medication"
+    ],
     "synonyms": null
   }
 ]

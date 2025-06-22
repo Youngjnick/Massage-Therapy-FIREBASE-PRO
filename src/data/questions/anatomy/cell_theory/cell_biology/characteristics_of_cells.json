@@ -9,17 +9,11 @@
       "Enclosed by a cell membrane",
       "Multicellular structure"
     ],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
-    ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "All cells are enclosed by a cell membrane that maintains their internal environment.",
     "long_explanation": "The cell membrane is a flexible, semipermeable barrier that separates the interior of the cell from the external environment. It regulates what enters and exits the cell, providing protection and structure.",
     "clinical_application": "Understanding the cell membrane helps massage therapists appreciate how cellular hydration, inflammation, and pressure sensitivity are affected by touch and tissue work.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -28,8 +22,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_membrane", "anatomy_cells", "anatomy_nucleus"],
-    "keywords": ["anatomy_membrane", "anatomy_cells", "anatomy_nucleus"],
+    "tags": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_nucleus"
+    ],
+    "keywords": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_nucleus"
+    ],
     "synonyms": null
   },
   {
@@ -42,17 +44,11 @@
       "Forms ribosomes",
       "Carries oxygen"
     ],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
-    ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "DNA contains instructions for cell function, growth, and reproduction.",
     "long_explanation": "DNA encodes the genetic blueprint of life. It directs the synthesis of proteins that regulate structure and function in the body. Each cell’s identity and purpose are defined by the genes it expresses.",
     "clinical_application": "Massage therapy cannot alter DNA, but stress reduction and healthy circulation may support gene expression related to repair and immunity.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -61,8 +57,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_ribosomes", "anatomy_dna"],
-    "keywords": ["anatomy_cells", "anatomy_ribosomes", "anatomy_dna"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_ribosomes",
+      "anatomy_dna"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_ribosomes",
+      "anatomy_dna"
+    ],
     "synonyms": null
   },
   {
@@ -75,17 +79,11 @@
       "The jelly-like substance that holds organelles",
       "The storage site for waste"
     ],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
-    ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "The cytoplasm suspends organelles and supports metabolic activity.",
     "long_explanation": "The cytoplasm includes the cytosol and embedded organelles. It facilitates nutrient diffusion, enzymatic reactions, and cellular movement. It's vital for homeostasis and energy transfer.",
     "clinical_application": "Massage improves circulation, which enhances nutrient delivery that ultimately diffuses through the cytoplasm to maintain cell vitality.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -94,8 +92,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_cytoplasm", "anatomy_organelle"],
-    "keywords": ["anatomy_cells", "anatomy_cytoplasm", "anatomy_organelle"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_cytoplasm",
+      "anatomy_organelle"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_cytoplasm",
+      "anatomy_organelle"
+    ],
     "synonyms": null
   },
   {
@@ -108,17 +114,11 @@
       "Other pre-existing cells",
       "Tissues"
     ],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
-    ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "Ribosomes create proteins by translating genetic instructions.",
     "long_explanation": "Ribosomes read messenger RNA (mRNA) to assemble amino acids into proteins, essential for cell repair, structure, and function. They can float freely or attach to the ER.",
     "clinical_application": "Tissue regeneration depends on protein synthesis. Massage therapy may support protein production indirectly by improving circulation and reducing stress hormones that impair recovery.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -127,26 +127,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_tissues", "anatomy_dna"],
-    "keywords": ["anatomy_cells", "anatomy_tissues", "anatomy_dna"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_tissues",
+      "anatomy_dna"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_tissues",
+      "anatomy_dna"
+    ],
     "synonyms": null
   },
   {
     "id": "characteristics_of_cells_005",
     "correctAnswer": "Ribosomes",
     "question": "Which component do all cells use to synthesize proteins?",
-    "options": ["Chloroplasts", "Ribosomes", "Mitochondria", "Golgi bodies"],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
+    "options": [
+      "Chloroplasts",
+      "Ribosomes",
+      "Mitochondria",
+      "Golgi bodies"
     ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "Mitochondria generate cellular energy through respiration.",
     "long_explanation": "Mitochondria convert glucose and oxygen into ATP — the body’s usable energy form. They also regulate metabolism and cell death.",
     "clinical_application": "Massage therapy improves oxygen delivery, potentially supporting mitochondrial ATP production, enhancing tissue healing and energy availability.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -155,8 +162,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_ribosomes", "anatomy_component"],
-    "keywords": ["anatomy_cells", "anatomy_ribosomes", "anatomy_component"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_ribosomes",
+      "anatomy_component"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_ribosomes",
+      "anatomy_component"
+    ],
     "synonyms": null
   },
   {
@@ -169,17 +184,11 @@
       "Ribosomes",
       "Endoplasmic reticulum"
     ],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
-    ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "The cell membrane regulates entry and exit of materials.",
     "long_explanation": "The phospholipid bilayer of the cell membrane includes transport proteins and receptors that mediate the cell’s exchange of ions, nutrients, and waste with the extracellular environment.",
     "clinical_application": "Proper membrane function is essential for cell health. Massage may influence interstitial fluid exchange, indirectly benefiting nutrient flow to cell membranes.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -208,18 +217,17 @@
     "id": "characteristics_of_cells_007",
     "correctAnswer": "Cell membrane",
     "question": "Which structure regulates what enters and exits a cell?",
-    "options": ["Cytoplasm", "Nucleus", "Mitochondria", "Cell membrane"],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
+    "options": [
+      "Cytoplasm",
+      "Nucleus",
+      "Mitochondria",
+      "Cell membrane"
     ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "The nucleus stores and protects DNA.",
     "long_explanation": "As the control center of the cell, the nucleus houses chromosomes made of DNA. It regulates gene expression and directs cellular activity, including protein production and cell division.",
     "clinical_application": "Though massage doesn’t directly influence nuclear function, reducing systemic inflammation may help create conditions that preserve cellular health.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -246,18 +254,17 @@
     "id": "characteristics_of_cells_008",
     "correctAnswer": "Eukaryotic",
     "question": "Which type of cell is typically larger and more complex?",
-    "options": ["Prokaryotic", "Eukaryotic", "Viral", "Bacterial"],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
+    "options": [
+      "Prokaryotic",
+      "Eukaryotic",
+      "Viral",
+      "Bacterial"
     ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "The ER builds and processes proteins and lipids.",
     "long_explanation": "The rough ER (with ribosomes) helps synthesize proteins, while the smooth ER produces lipids and detoxifies chemicals. The ER helps shape the internal cell structure.",
     "clinical_application": "ER function is critical in tissue recovery and detoxification. Enhanced circulation from massage may support cellular repair that relies on ER pathways.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -266,8 +273,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "biology_eukaryotic", "biology_prokaryotes"],
-    "keywords": ["anatomy_cells", "biology_eukaryotic", "biology_prokaryotes"],
+    "tags": [
+      "anatomy_cells",
+      "biology_eukaryotic",
+      "biology_prokaryotes"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "biology_eukaryotic",
+      "biology_prokaryotes"
+    ],
     "synonyms": null
   },
   {
@@ -280,17 +295,11 @@
       "Energy production",
       "Transport of materials"
     ],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
-    ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "The Golgi body processes and transports cellular products.",
     "long_explanation": "The Golgi apparatus receives proteins and lipids from the ER, modifies them (e.g., adding sugars), and directs them to their destinations inside or outside the cell.",
     "clinical_application": "The Golgi is key in secretion and repair. Massage may support the demand for Golgi activity during recovery by promoting cell turnover and reducing stress.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -299,26 +308,31 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_protein"],
-    "keywords": ["anatomy_cells", "anatomy_protein"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_protein"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_protein"
+    ],
     "synonyms": null
   },
   {
     "id": "characteristics_of_cells_010",
     "correctAnswer": "Cytosol",
     "question": "The fluid portion of the cell outside the nucleus is called:",
-    "options": ["Plasma", "Cytosol", "Nucleoplasm", "Periplasm"],
-    "topics": [
-      "anatomy",
-      "cell_theory",
-      "cell_biology",
-      "characteristics_of_cells"
+    "options": [
+      "Plasma",
+      "Cytosol",
+      "Nucleoplasm",
+      "Periplasm"
     ],
+    "topics": ["anatomy", "cell_theory", "cell_biology", "characteristics_of_cells"],
     "short_explanation": "Lysosomes digest and recycle cellular waste.",
     "long_explanation": "Lysosomes contain digestive enzymes that break down damaged organelles, pathogens, and cellular debris. This prevents waste accumulation and supports immune function.",
     "clinical_application": "Tissue massage may aid in lymphatic movement and clearance of waste products, complementing lysosomal activity at the cellular level.",
     "source_reference": null,
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/cell_theory/cell_biology/characteristics_of_cells.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -327,8 +341,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.111Z",
     "updated_at": "2025-05-24T14:54:13.457Z",
-    "tags": ["anatomy_cells", "anatomy_nucleus", "anatomy_cytosol"],
-    "keywords": ["anatomy_cells", "anatomy_nucleus", "anatomy_cytosol"],
+    "tags": [
+      "anatomy_cells",
+      "anatomy_nucleus",
+      "anatomy_cytosol"
+    ],
+    "keywords": [
+      "anatomy_cells",
+      "anatomy_nucleus",
+      "anatomy_cytosol"
+    ],
     "synonyms": null
   }
 ]

@@ -14,7 +14,6 @@
     "long_explanation": "Myofascial meridians, also known as Anatomy Trains lines, connect muscles and fascia across the body. Understanding these lines aids in holistic assessments and treatment of movement restrictions.",
     "clinical_application": "Massage therapists can use this concept to treat distant restrictions affecting pain and posture.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "myofascial", "anatomy trains", "posture"],
-    "keywords": ["fascial chains", "anatomy trains", "myofascial lines"],
-    "synonyms": ["anatomy trains", "fascial lines"]
+    "tags": [
+      "fascia",
+      "myofascial",
+      "anatomy trains",
+      "posture"
+    ],
+    "keywords": [
+      "fascial chains",
+      "anatomy trains",
+      "myofascial lines"
+    ],
+    "synonyms": [
+      "anatomy trains",
+      "fascial lines"
+    ]
   },
   {
     "id": "myofascial_meridians_002",
@@ -42,7 +53,6 @@
     "long_explanation": "The Superficial Back Line (SBL) is one of the major myofascial meridians. It connects the plantar fascia, Achilles tendon, hamstrings, sacrum, spinal muscles, and scalp fascia, playing a role in upright posture and movement.",
     "clinical_application": "Restrictions in the SBL can lead to compensations affecting spinal mobility and posture.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,9 +61,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascia", "back line", "posture"],
-    "keywords": ["superficial back line", "SBL", "fascia", "anatomy trains"],
-    "synonyms": ["SBL", "posterior fascia chain"]
+    "tags": [
+      "fascia",
+      "back line",
+      "posture"
+    ],
+    "keywords": [
+      "superficial back line",
+      "SBL",
+      "fascia",
+      "anatomy trains"
+    ],
+    "synonyms": [
+      "SBL",
+      "posterior fascia chain"
+    ]
   },
   {
     "id": "myofascial_meridians_003",
@@ -70,7 +92,6 @@
     "long_explanation": "The Deep Front Line (DFL) includes the psoas, diaphragm, pelvic floor, and other deep stabilizers. It is responsible for core alignment and functions such as breath regulation and postural tone.",
     "clinical_application": "Tension or imbalance in the DFL can result in low back pain, poor breath mechanics, and pelvic misalignment.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -79,9 +100,23 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["deep front line", "breath", "core", "stability"],
-    "keywords": ["DFL", "core support", "psoas", "diaphragm"],
-    "synonyms": ["DFL", "core line", "deep stabilizers"]
+    "tags": [
+      "deep front line",
+      "breath",
+      "core",
+      "stability"
+    ],
+    "keywords": [
+      "DFL",
+      "core support",
+      "psoas",
+      "diaphragm"
+    ],
+    "synonyms": [
+      "DFL",
+      "core line",
+      "deep stabilizers"
+    ]
   },
   {
     "id": "myofascial_meridians_004",
@@ -98,7 +133,6 @@
     "long_explanation": "The Spiral Line connects opposite limbs and sides of the body in a helical pattern. It plays a key role in maintaining balance and coordinating movements like walking or twisting.",
     "clinical_application": "Massage techniques can follow this line to improve gait mechanics and rotational symmetry.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -107,9 +141,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["spiral line", "movement", "rotation"],
-    "keywords": ["contralateral movement", "gait", "spiral pattern"],
-    "synonyms": ["spiral pattern", "helical myofascial line"]
+    "tags": [
+      "spiral line",
+      "movement",
+      "rotation"
+    ],
+    "keywords": [
+      "contralateral movement",
+      "gait",
+      "spiral pattern"
+    ],
+    "synonyms": [
+      "spiral pattern",
+      "helical myofascial line"
+    ]
   },
   {
     "id": "myofascial_meridians_005",
@@ -126,7 +171,6 @@
     "long_explanation": "The Lateral Line runs along the side body, including the peroneals, IT band, obliques, and intercostals. It aids in lateral flexion and prevents side collapse during single-leg stance.",
     "clinical_application": "Lateral Line release can help improve gait, pelvic tilt, and standing balance.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -135,9 +179,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["lateral line", "balance", "stability"],
-    "keywords": ["side body", "lateral chain", "balance"],
-    "synonyms": ["lateral chain", "side line"]
+    "tags": [
+      "lateral line",
+      "balance",
+      "stability"
+    ],
+    "keywords": [
+      "side body",
+      "lateral chain",
+      "balance"
+    ],
+    "synonyms": [
+      "lateral chain",
+      "side line"
+    ]
   },
   {
     "id": "myofascial_meridians_006",
@@ -154,7 +209,6 @@
     "long_explanation": "The Superficial Back Line connects structures from the bottom of the feet to the scalp along the back body. It plays a role in upright posture and extension movements.",
     "clinical_application": "Tightness along this line may present as hamstring or low back strain. Massage work along the line can improve posture and flexibility.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -163,9 +217,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["posterior chain", "fascia", "hamstrings"],
-    "keywords": ["superficial back line", "posterior", "fascial connection"],
-    "synonyms": ["posterior fascial chain", "back line"]
+    "tags": [
+      "posterior chain",
+      "fascia",
+      "hamstrings"
+    ],
+    "keywords": [
+      "superficial back line",
+      "posterior",
+      "fascial connection"
+    ],
+    "synonyms": [
+      "posterior fascial chain",
+      "back line"
+    ]
   },
   {
     "id": "myofascial_meridians_007",
@@ -182,7 +247,6 @@
     "long_explanation": "The Deep Front Line is a key stabilizing fascial pathway running through the inner core. It includes deep muscles and fascia that affect breathing, spinal support, and postural integrity.",
     "clinical_application": "Working this line supports breathing patterns and postural control, often important in clients with chronic fatigue or postural collapse.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -191,9 +255,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["core", "psoas", "diaphragm", "posture"],
-    "keywords": ["deep front line", "core fascia", "pelvic floor"],
-    "synonyms": ["core fascial chain", "deep stabilizing line"]
+    "tags": [
+      "core",
+      "psoas",
+      "diaphragm",
+      "posture"
+    ],
+    "keywords": [
+      "deep front line",
+      "core fascia",
+      "pelvic floor"
+    ],
+    "synonyms": [
+      "core fascial chain",
+      "deep stabilizing line"
+    ]
   },
   {
     "id": "myofascial_meridians_008",
@@ -210,7 +286,6 @@
     "long_explanation": "Thomas Myers expanded on Ida Rolf’s work by mapping the myofascial system into distinct meridians or lines, showing global muscular and fascial connections that affect posture and movement.",
     "clinical_application": "Practitioners use these maps to inform assessments and hands-on treatments of chronic strain and imbalance.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -219,9 +294,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["history", "originator", "fascia"],
-    "keywords": ["thomas myers", "anatomy trains", "origin"],
-    "synonyms": ["creator of anatomy trains", "founder"]
+    "tags": [
+      "history",
+      "originator",
+      "fascia"
+    ],
+    "keywords": [
+      "thomas myers",
+      "anatomy trains",
+      "origin"
+    ],
+    "synonyms": [
+      "creator of anatomy trains",
+      "founder"
+    ]
   },
   {
     "id": "myofascial_meridians_009",
@@ -238,7 +324,6 @@
     "long_explanation": "Because fascia is continuous, restrictions or imbalances in one area can create strain or dysfunction in a distant area along the same fascial line. This concept helps explain referred tension or pain that is not locally sourced.",
     "clinical_application": "This understanding supports holistic treatment strategies, especially when symptoms do not match local pathology.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -247,9 +332,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["fascial continuity", "remote pain", "strain patterns"],
-    "keywords": ["referred pain", "global restriction", "fascial pull"],
-    "synonyms": ["tensional pull", "fascial referral"]
+    "tags": [
+      "fascial continuity",
+      "remote pain",
+      "strain patterns"
+    ],
+    "keywords": [
+      "referred pain",
+      "global restriction",
+      "fascial pull"
+    ],
+    "synonyms": [
+      "tensional pull",
+      "fascial referral"
+    ]
   },
   {
     "id": "myofascial_meridians_010",
@@ -266,7 +362,6 @@
     "long_explanation": "This line includes muscles and fascia that support the front of the body, including the tibialis anterior, quadriceps, rectus abdominis, and sternocleidomastoid. It is involved in flexion and forward bending.",
     "clinical_application": "Addressing this line may help clients with forward head posture or flexion-based tension.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/myofascial/myofascial_meridians.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -275,8 +370,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anterior chain", "flexion", "fascia"],
-    "keywords": ["superficial front line", "flexors", "anterior support"],
-    "synonyms": ["anterior flexion line", "front line"]
+    "tags": [
+      "anterior chain",
+      "flexion",
+      "fascia"
+    ],
+    "keywords": [
+      "superficial front line",
+      "flexors",
+      "anterior support"
+    ],
+    "synonyms": [
+      "anterior flexion line",
+      "front line"
+    ]
   }
 ]

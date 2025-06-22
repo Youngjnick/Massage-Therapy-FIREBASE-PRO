@@ -14,7 +14,6 @@
     "long_explanation": "The term reflects the primary method of applying therapeutic touch using fingers and palms along energy meridians.",
     "clinical_application": "Helps educate clients on how focused pressure restores energy flow.",
     "source_reference": "Shiatsu Theory and Practice - C. Beresford-Cooke",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -23,8 +22,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "tags": ["modality_shiatsu", "technique_pressure", "purpose_healing"],
-    "keywords": ["modality_shiatsu", "technique_pressure", "purpose_healing"],
+    "tags": [
+      "modality_shiatsu",
+      "technique_pressure",
+      "purpose_healing"
+    ],
+    "keywords": [
+      "modality_shiatsu",
+      "technique_pressure",
+      "purpose_healing"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "Though Japanese in form, Shiatsu is rooted in Traditional Chinese Medicine and mirrors acupuncture principles without needles.",
     "clinical_application": "Therapists apply this model to treat systemic imbalances holistically.",
     "source_reference": "The Foundations of Shiatsu - East Asian Manual Therapies",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -51,8 +57,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "tags": ["modality_shiatsu", "purpose_healing", "modality_ayurveda"],
-    "keywords": ["modality_shiatsu", "purpose_healing", "modality_ayurveda"],
+    "tags": [
+      "modality_shiatsu",
+      "purpose_healing",
+      "modality_ayurveda"
+    ],
+    "keywords": [
+      "modality_shiatsu",
+      "purpose_healing",
+      "modality_ayurveda"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "The therapist uses hands (not oils) to deliver static or rhythmic pressure to balance energy channels and promote wellness.",
     "clinical_application": "Great for clients who prefer clothed treatments with energetic focus.",
     "source_reference": "Shiatsu for Massage Therapists - Professional Manual",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -79,8 +92,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "tags": ["modality_shiatsu", "technique_pressure", "modality_oils"],
-    "keywords": ["modality_shiatsu", "technique_pressure", "modality_oils"],
+    "tags": [
+      "modality_shiatsu",
+      "technique_pressure",
+      "modality_oils"
+    ],
+    "keywords": [
+      "modality_shiatsu",
+      "technique_pressure",
+      "modality_oils"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +119,6 @@
     "long_explanation": "Shiatsu seeks to regulate and restore the flow of qi through the body’s meridians to address dysfunction and enhance vitality.",
     "clinical_application": "Common in sessions for stress, fatigue, and emotional imbalance.",
     "source_reference": "Qi and Pressure - Shiatsu Concepts Text",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -125,13 +145,17 @@
     "id": "shiatsu_005",
     "correctAnswer": "Meridians",
     "question": "Which concept is central to Shiatsu practice?",
-    "options": ["Meridians", "Reflex zones", "Muscle chains", "Tissue layers"],
+    "options": [
+      "Meridians",
+      "Reflex zones",
+      "Muscle chains",
+      "Tissue layers"
+    ],
     "topics": ["modalities", "shiatsu"],
     "short_explanation": "Meridians guide the structure of treatment.",
     "long_explanation": "These invisible pathways organize energy distribution; applying pressure at points along them is said to clear stagnation and restore function.",
     "clinical_application": "Used like acupuncture maps to guide treatment plans.",
     "source_reference": "Meridian Theory in Manual Therapy - Clinical Atlas",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -171,7 +195,6 @@
     "long_explanation": "Treatments occur on a mat or table with clients dressed in flexible clothing, allowing deeper joint and meridian work.",
     "clinical_application": "Ideal for clients seeking structured, pressure-based, non-oil treatments.",
     "source_reference": "The Practical Guide to Shiatsu",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -180,8 +203,16 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "tags": ["modality_shiatsu", "client", "modality_oils"],
-    "keywords": ["modality_shiatsu", "client", "modality_oils"],
+    "tags": [
+      "modality_shiatsu",
+      "client",
+      "modality_oils"
+    ],
+    "keywords": [
+      "modality_shiatsu",
+      "client",
+      "modality_oils"
+    ],
     "synonyms": null
   },
   {
@@ -199,7 +230,6 @@
     "long_explanation": "Light strokes are not characteristic of Shiatsu, which emphasizes deliberate, firm touch guided by breath and intention.",
     "clinical_application": "Helps distinguish Shiatsu from Swedish massage in practice.",
     "source_reference": "Manual Techniques Comparison - Therapy Reference Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -237,7 +267,6 @@
     "long_explanation": "Practitioners cultivate a meditative state and follow energetic cues, making the work more adaptive and internalized.",
     "clinical_application": "Appropriate for clients needing emotionally attuned or trauma-sensitive touch.",
     "source_reference": "Zen Shiatsu - Masunaga",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -246,8 +275,12 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "tags": ["modality_shiatsu"],
-    "keywords": ["modality_shiatsu"],
+    "tags": [
+      "modality_shiatsu"
+    ],
+    "keywords": [
+      "modality_shiatsu"
+    ],
     "synonyms": null
   },
   {
@@ -265,7 +298,6 @@
     "long_explanation": "Stimulating meridians can calm the nervous system, support gut motility, and ease musculoskeletal restrictions.",
     "clinical_application": "Used in fatigue, IBS, anxiety, or chronic stiffness.",
     "source_reference": "Functional Shiatsu - Applied East Asian Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -305,7 +337,6 @@
     "long_explanation": "Practitioners are trained to screen for contraindications, especially structural instability and infection.",
     "clinical_application": "Ensures safe practice and protects both therapist and client.",
     "source_reference": "Safety and Scope - Massage Law and Practice Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/shiatsu.json",
     "question_type": "multiple choice",
     "difficulty": "intermediate",
@@ -314,8 +345,14 @@
     "relevance_score": 5,
     "created_at": "2025-05-26T22:08:44.014226Z",
     "updated_at": "2025-05-26T22:08:44.014226Z",
-    "tags": ["modality_shiatsu", "technique_pressure"],
-    "keywords": ["modality_shiatsu", "technique_pressure"],
+    "tags": [
+      "modality_shiatsu",
+      "technique_pressure"
+    ],
+    "keywords": [
+      "modality_shiatsu",
+      "technique_pressure"
+    ],
     "synonyms": null
   }
 ]

@@ -3,7 +3,7 @@ import { glob } from 'glob';
 
 const QUESTIONS_GLOB = 'src/data/questions/**/*.json';
 
-// Canonical field order and style
+// Canonical field order and style (sourceFile REMOVED)
 const FIELD_ORDER = [
   'id',
   'correctAnswer',
@@ -14,7 +14,6 @@ const FIELD_ORDER = [
   'long_explanation',
   'clinical_application',
   'source_reference',
-  'sourceFile',
   'filepath',
   'question_type',
   'difficulty',
@@ -28,11 +27,21 @@ const FIELD_ORDER = [
   'synonyms'
 ];
 
-function canonicalizeQuestion(q) {
+function getTopicsFromPath(filePath) {
+  // Remove src/data/questions/ and .json
+  const rel = filePath.replace(/^src\/data\/questions\//, '').replace(/\.json$/, '');
+  // Split by / and filter out empty
+  return rel.split('/').filter(Boolean);
+}
+
+function canonicalizeQuestion(q, topicsFromPath) {
   // Only keep fields in FIELD_ORDER, set missing/empty to null
   const out = {};
   FIELD_ORDER.forEach(field => {
     let v = q[field];
+    if (field === 'topics') {
+      v = topicsFromPath;
+    }
     if (v === undefined || v === '' || (Array.isArray(v) && v.length === 0)) v = null;
     out[field] = v;
   });
@@ -62,7 +71,8 @@ const run = async () => {
       const content = fs.readFileSync(file, 'utf8');
       let data = JSON.parse(content);
       if (Array.isArray(data)) {
-        data = data.map(canonicalizeQuestion);
+        const topicsFromPath = getTopicsFromPath(file);
+        data = data.map(q => canonicalizeQuestion(q, topicsFromPath));
         fs.writeFileSync(file, customStringify(data) + '\n', 'utf8');
         changed++;
       }

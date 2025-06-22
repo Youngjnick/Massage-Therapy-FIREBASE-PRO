@@ -14,7 +14,6 @@
     "long_explanation": "The anterior pituitary, or adenohypophysis, produces hormones that regulate growth, metabolism, reproduction, and stress responses. It is controlled by hypothalamic signals via the hypophyseal portal system.",
     "clinical_application": "Clients with hormonal imbalances such as infertility or thyroid dysfunction may have anterior pituitary disorders underlying their symptoms.",
     "source_reference": "Guyton & Hall Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,21 +22,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["GH", "LH", "ACTH", "anterior pituitary"],
-    "keywords": ["growth hormone", "endocrine function", "pituitary hormones"],
+    "tags": [
+      "GH",
+      "LH",
+      "ACTH",
+      "anterior pituitary"
+    ],
+    "keywords": [
+      "growth hormone",
+      "endocrine function",
+      "pituitary hormones"
+    ],
     "synonyms": null
   },
   {
     "id": "pituitary_002",
     "correctAnswer": "Oxytocin",
     "question": "Which hormone is released by the posterior pituitary?",
-    "options": ["Prolactin", "Oxytocin", "TSH", "ACTH"],
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "TSH",
+      "ACTH"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary"],
     "short_explanation": "The posterior pituitary stores and releases oxytocin and ADH.",
     "long_explanation": "Oxytocin and antidiuretic hormone (ADH) are synthesized in the hypothalamus but stored and released from the posterior pituitary (neurohypophysis).",
     "clinical_application": "Massage may promote oxytocin release, supporting relaxation and emotional bonding in therapeutic settings.",
     "source_reference": "Endocrine Physiology by Costanzo",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "basic",
@@ -46,21 +58,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["oxytocin", "posterior pituitary", "neurohypophysis"],
-    "keywords": ["oxytocin release", "ADH", "hypothalamic hormones"],
+    "tags": [
+      "oxytocin",
+      "posterior pituitary",
+      "neurohypophysis"
+    ],
+    "keywords": [
+      "oxytocin release",
+      "ADH",
+      "hypothalamic hormones"
+    ],
     "synonyms": null
   },
   {
     "id": "pituitary_003",
     "correctAnswer": "Hypothalamus",
     "question": "Which structure controls the pituitary gland?",
-    "options": ["Thalamus", "Cerebellum", "Hypothalamus", "Pineal gland"],
+    "options": [
+      "Thalamus",
+      "Cerebellum",
+      "Hypothalamus",
+      "Pineal gland"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary"],
     "short_explanation": "The hypothalamus regulates the pituitary through hormonal signals.",
     "long_explanation": "The hypothalamus communicates with the anterior pituitary via the hypophyseal portal system and sends neural signals to the posterior pituitary, thus controlling its hormone secretion.",
     "clinical_application": "Stress affects hypothalamic output, which in turn alters pituitary function—relevant when treating clients with chronic stress disorders.",
     "source_reference": "Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -69,21 +93,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hypothalamus", "pituitary control", "neuroendocrine"],
-    "keywords": ["hypophyseal axis", "HPA axis", "endocrine system"],
+    "tags": [
+      "hypothalamus",
+      "pituitary control",
+      "neuroendocrine"
+    ],
+    "keywords": [
+      "hypophyseal axis",
+      "HPA axis",
+      "endocrine system"
+    ],
     "synonyms": null
   },
   {
     "id": "pituitary_004",
     "correctAnswer": "TSH",
     "question": "What hormone from the anterior pituitary stimulates the thyroid gland?",
-    "options": ["TRH", "TSH", "T3", "Calcitonin"],
+    "options": [
+      "TRH",
+      "TSH",
+      "T3",
+      "Calcitonin"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary"],
     "short_explanation": "TSH (thyroid-stimulating hormone) promotes thyroid hormone production.",
     "long_explanation": "TSH is released from the anterior pituitary in response to TRH from the hypothalamus. It stimulates the thyroid to produce T3 and T4, which regulate metabolism.",
     "clinical_application": "Massage therapists treating clients with thyroid disorders may benefit from understanding pituitary–thyroid regulation.",
     "source_reference": "Clinical Endocrinology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -92,21 +128,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["TSH", "thyroid axis", "pituitary"],
-    "keywords": ["thyroid function", "TSH hormone", "pituitary-thyroid axis"],
+    "tags": [
+      "TSH",
+      "thyroid axis",
+      "pituitary"
+    ],
+    "keywords": [
+      "thyroid function",
+      "TSH hormone",
+      "pituitary-thyroid axis"
+    ],
     "synonyms": null
   },
   {
     "id": "pituitary_005",
     "correctAnswer": "Prolactin",
     "question": "Which pituitary hormone directly stimulates milk production?",
-    "options": ["LH", "FSH", "Prolactin", "Oxytocin"],
+    "options": [
+      "LH",
+      "FSH",
+      "Prolactin",
+      "Oxytocin"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary"],
     "short_explanation": "Prolactin promotes lactation in postpartum women.",
     "long_explanation": "Prolactin is secreted from the anterior pituitary and acts on mammary glands to initiate and sustain milk production. It is stimulated by infant suckling and inhibited by dopamine.",
     "clinical_application": "Therapeutic massage may support lactating clients by improving relaxation and hormonal balance that aids prolactin release.",
     "source_reference": "Essentials of Human Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "basic",
@@ -115,8 +163,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["prolactin", "lactation", "hormones"],
-    "keywords": ["milk production", "pituitary hormone", "postpartum support"],
+    "tags": [
+      "prolactin",
+      "lactation",
+      "hormones"
+    ],
+    "keywords": [
+      "milk production",
+      "pituitary hormone",
+      "postpartum support"
+    ],
     "synonyms": null
   },
   {
@@ -134,7 +190,6 @@
     "long_explanation": "Acromegaly is marked by thickened bones, enlarged hands/feet, and facial features due to persistent GH secretion after epiphyseal plate closure. It is often due to pituitary adenomas.",
     "clinical_application": "Recognizing signs of acromegaly may prompt referral. Massage pressure should be adjusted for enlarged tissues and joints.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -143,7 +198,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["GH", "acromegaly", "pituitary tumor"],
+    "tags": [
+      "GH",
+      "acromegaly",
+      "pituitary tumor"
+    ],
     "keywords": [
       "growth hormone excess",
       "pituitary dysfunction",
@@ -155,13 +214,17 @@
     "id": "pituitary_007",
     "correctAnswer": "ACTH",
     "question": "Which hormone is suppressed by high levels of cortisol?",
-    "options": ["LH", "GH", "ACTH", "ADH"],
+    "options": [
+      "LH",
+      "GH",
+      "ACTH",
+      "ADH"
+    ],
     "topics": ["anatomy", "organs", "pituitary_gland", "pituitary"],
     "short_explanation": "Cortisol inhibits ACTH through negative feedback.",
     "long_explanation": "Cortisol produced by the adrenal cortex feeds back to suppress ACTH from the anterior pituitary, maintaining hormonal balance via the HPA axis.",
     "clinical_application": "Understanding feedback loops helps when treating clients with adrenal fatigue or chronic stress syndromes.",
     "source_reference": "Medical Physiology by Boron & Boulpaep",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -170,8 +233,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["cortisol", "ACTH", "HPA axis"],
-    "keywords": ["pituitary feedback", "cortisol loop", "stress hormones"],
+    "tags": [
+      "cortisol",
+      "ACTH",
+      "HPA axis"
+    ],
+    "keywords": [
+      "pituitary feedback",
+      "cortisol loop",
+      "stress hormones"
+    ],
     "synonyms": null
   },
   {
@@ -189,7 +260,6 @@
     "long_explanation": "ADH, released by the posterior pituitary, acts on renal collecting ducts to increase aquaporin expression and conserve water, especially during dehydration.",
     "clinical_application": "Clients with diabetes insipidus (low ADH) may have dehydration concerns. Hydration-focused massage may be contraindicated.",
     "source_reference": "Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -198,8 +268,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ADH", "water balance", "posterior pituitary"],
-    "keywords": ["antidiuretic", "vasopressin", "renal function"],
+    "tags": [
+      "ADH",
+      "water balance",
+      "posterior pituitary"
+    ],
+    "keywords": [
+      "antidiuretic",
+      "vasopressin",
+      "renal function"
+    ],
     "synonyms": null
   },
   {
@@ -217,7 +295,6 @@
     "long_explanation": "This can result from trauma, tumors, or genetic defects. It causes hormonal deficiencies in thyroid, adrenal, and gonadal axes.",
     "clinical_application": "Massage therapists may see fatigue or depression in clients with undiagnosed hypopituitarism. Referral is key.",
     "source_reference": "Harrison's Principles of Internal Medicine",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -226,7 +303,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pituitary failure", "hyposecretion", "hormonal deficiency"],
+    "tags": [
+      "pituitary failure",
+      "hyposecretion",
+      "hormonal deficiency"
+    ],
     "keywords": [
       "pituitary gland damage",
       "hormonal deficit",
@@ -249,7 +330,6 @@
     "long_explanation": "This vascular network allows releasing/inhibiting hormones from the hypothalamus to directly influence anterior pituitary secretions without dilution in systemic circulation.",
     "clinical_application": "Knowing this pathway helps understand how stress quickly alters hormonal output affecting massage outcomes.",
     "source_reference": "Neuroscience by Purves",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pituitary_gland/pituitary.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -258,7 +338,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hypophyseal portal", "pituitary signaling", "hormone transport"],
+    "tags": [
+      "hypophyseal portal",
+      "pituitary signaling",
+      "hormone transport"
+    ],
     "keywords": [
       "portal circulation",
       "neuroendocrine connection",

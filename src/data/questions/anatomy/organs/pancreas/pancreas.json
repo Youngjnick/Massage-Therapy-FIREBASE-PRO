@@ -14,7 +14,6 @@
     "long_explanation": "The pancreas serves two critical functions: exocrine (digestive enzyme production like amylase, lipase) and endocrine (hormone secretion like insulin and glucagon). This dual functionality plays a central role in metabolism and digestion.",
     "clinical_application": "Understanding pancreatic function helps massage therapists recognize signs of metabolic imbalance or digestive disorders during client assessment.",
     "source_reference": "Trail Guide to the Body, Ch. 6",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -23,21 +22,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["organ_pancreas", "endocrine_system", "digestive_system"],
-    "keywords": ["pancreas", "endocrine", "exocrine", "digestion", "insulin"],
+    "tags": [
+      "organ_pancreas",
+      "endocrine_system",
+      "digestive_system"
+    ],
+    "keywords": [
+      "pancreas",
+      "endocrine",
+      "exocrine",
+      "digestion",
+      "insulin"
+    ],
     "synonyms": null
   },
   {
     "id": "pancreas_002",
     "correctAnswer": "Insulin",
     "question": "Which hormone is secreted by the beta cells of the pancreas?",
-    "options": ["Glucagon", "Somatostatin", "Insulin", "Adrenaline"],
+    "options": [
+      "Glucagon",
+      "Somatostatin",
+      "Insulin",
+      "Adrenaline"
+    ],
     "topics": ["anatomy", "organs", "pancreas", "pancreas"],
     "short_explanation": "Beta cells produce insulin to lower blood sugar.",
     "long_explanation": "Insulin is produced by beta cells in the islets of Langerhans. It facilitates glucose uptake into cells, thus reducing blood glucose levels. Dysfunction leads to diabetes mellitus.",
     "clinical_application": "A massage therapist working with diabetic clients should be aware of insulin's role and recognize signs of hypoglycemia during sessions.",
     "source_reference": "Guyton and Hall Textbook of Medical Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -46,7 +59,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["organ_pancreas", "hormone", "endocrine_system"],
+    "tags": [
+      "organ_pancreas",
+      "hormone",
+      "endocrine_system"
+    ],
     "keywords": [
       "insulin",
       "beta cells",
@@ -71,7 +88,6 @@
     "long_explanation": "Pancreatic enzymes aid in digestion: amylase breaks down carbohydrates, lipase digests fats, and trypsin acts on proteins. These are secreted into the small intestine via the pancreatic duct.",
     "clinical_application": "Knowledge of digestive enzymes can guide a therapist’s nutritional awareness and referrals in clients with digestive complaints.",
     "source_reference": "Anatomy & Physiology Made Incredibly Easy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "basic",
@@ -80,8 +96,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["digestive_system", "organ_pancreas", "enzymes"],
-    "keywords": ["amylase", "lipase", "trypsin", "pancreas", "digestion"],
+    "tags": [
+      "digestive_system",
+      "organ_pancreas",
+      "enzymes"
+    ],
+    "keywords": [
+      "amylase",
+      "lipase",
+      "trypsin",
+      "pancreas",
+      "digestion"
+    ],
     "synonyms": null
   },
   {
@@ -99,7 +125,6 @@
     "long_explanation": "Secreted by alpha cells in the pancreas, glucagon promotes glycogenolysis in the liver, releasing glucose into the bloodstream. It is the functional opposite of insulin.",
     "clinical_application": "Understanding glucagon is vital for massage therapists when assessing energy levels or hypoglycemic symptoms in diabetic clients.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -108,8 +133,18 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["organ_pancreas", "hormone", "glucose"],
-    "keywords": ["glucagon", "alpha cells", "glycogen", "liver", "blood sugar"],
+    "tags": [
+      "organ_pancreas",
+      "hormone",
+      "glucose"
+    ],
+    "keywords": [
+      "glucagon",
+      "alpha cells",
+      "glycogen",
+      "liver",
+      "blood sugar"
+    ],
     "synonyms": null
   },
   {
@@ -127,7 +162,6 @@
     "long_explanation": "The pancreatic duct delivers digestive enzymes to the duodenum. It often merges with the common bile duct at the hepatopancreatic ampulla before entering the small intestine.",
     "clinical_application": "Massage therapists should avoid deep abdominal work in clients with gallbladder or pancreatic duct disorders due to referred pain risk.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "basic",
@@ -136,21 +170,35 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["anatomy", "organ_pancreas", "digestive_system", "ducts"],
-    "keywords": ["pancreatic duct", "duodenum", "enzymes", "digestion"],
+    "tags": [
+      "anatomy",
+      "organ_pancreas",
+      "digestive_system",
+      "ducts"
+    ],
+    "keywords": [
+      "pancreatic duct",
+      "duodenum",
+      "enzymes",
+      "digestion"
+    ],
     "synonyms": null
   },
   {
     "id": "pancreas_006",
     "correctAnswer": "Alpha cells",
     "question": "Which pancreatic cells secrete glucagon?",
-    "options": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
+    "options": [
+      "Alpha cells",
+      "Beta cells",
+      "Delta cells",
+      "Acinar cells"
+    ],
     "topics": ["anatomy", "organs", "pancreas", "pancreas"],
     "short_explanation": "Glucagon is secreted by alpha cells in the islets of Langerhans.",
     "long_explanation": "Alpha cells in the pancreas detect low blood glucose levels and release glucagon to stimulate glycogenolysis in the liver.",
     "clinical_application": "Massage practitioners working with hypoglycemic clients should be aware of glucagon's compensatory effects.",
     "source_reference": "Guyton & Hall Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -159,7 +207,12 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["alpha cells", "glucagon", "pancreas", "blood sugar"],
+    "tags": [
+      "alpha cells",
+      "glucagon",
+      "pancreas",
+      "blood sugar"
+    ],
     "keywords": [
       "islets of Langerhans",
       "endocrine pancreas",
@@ -182,7 +235,6 @@
     "long_explanation": "Somatostatin, secreted by delta cells, regulates the endocrine system by suppressing the release of several hormones, including insulin, glucagon, and growth hormone.",
     "clinical_application": "Understanding somatostatin is useful for interpreting hormonal dysregulation in complex endocrine disorders.",
     "source_reference": "Pathophysiology: The Biologic Basis for Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -191,8 +243,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pancreas", "somatostatin", "hormonal regulation"],
-    "keywords": ["delta cells", "pancreatic hormones", "feedback inhibition"],
+    "tags": [
+      "pancreas",
+      "somatostatin",
+      "hormonal regulation"
+    ],
+    "keywords": [
+      "delta cells",
+      "pancreatic hormones",
+      "feedback inhibition"
+    ],
     "synonyms": null
   },
   {
@@ -210,7 +270,6 @@
     "long_explanation": "Pancreatitis is inflammation of the pancreas, often due to gallstones or alcohol use. It damages acinar cells, reducing enzyme output, causing digestive issues.",
     "clinical_application": "Massage therapists must refer out if a client reports upper abdominal pain with digestive symptoms suggestive of pancreatitis.",
     "source_reference": "Robbins Pathologic Basis of Disease",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -219,8 +278,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pancreas", "inflammation", "exocrine"],
-    "keywords": ["pancreatitis", "enzyme secretion", "acinar cells"],
+    "tags": [
+      "pancreas",
+      "inflammation",
+      "exocrine"
+    ],
+    "keywords": [
+      "pancreatitis",
+      "enzyme secretion",
+      "acinar cells"
+    ],
     "synonyms": null
   },
   {
@@ -238,7 +305,6 @@
     "long_explanation": "In cystic fibrosis, thick secretions obstruct ducts, preventing digestive enzymes from reaching the intestine, resulting in malabsorption and nutrient deficiencies.",
     "clinical_application": "Massage therapists may support clients with cystic fibrosis by easing thoracic tension and promoting lymphatic drainage.",
     "source_reference": "Essentials of Human Diseases and Conditions",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "advanced",
@@ -247,8 +313,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pancreas", "cystic fibrosis", "malabsorption"],
-    "keywords": ["CFTR gene", "enzyme deficiency", "pancreatic duct"],
+    "tags": [
+      "pancreas",
+      "cystic fibrosis",
+      "malabsorption"
+    ],
+    "keywords": [
+      "CFTR gene",
+      "enzyme deficiency",
+      "pancreatic duct"
+    ],
     "synonyms": null
   },
   {
@@ -266,7 +340,6 @@
     "long_explanation": "The liver and pancreas connect via the common bile and pancreatic ducts. These join to empty digestive secretions into the duodenum, aiding fat and nutrient digestion.",
     "clinical_application": "Understanding this anatomy helps therapists interpret gallbladder and pancreatic referral patterns in abdominal or mid-back pain.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/pancreas/pancreas.json",
     "question_type": null,
     "difficulty": "intermediate",
@@ -275,8 +348,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pancreas", "liver", "ducts"],
-    "keywords": ["hepatopancreatic ampulla", "common bile duct", "duodenum"],
+    "tags": [
+      "pancreas",
+      "liver",
+      "ducts"
+    ],
+    "keywords": [
+      "hepatopancreatic ampulla",
+      "common bile duct",
+      "duodenum"
+    ],
     "synonyms": null
   }
 ]

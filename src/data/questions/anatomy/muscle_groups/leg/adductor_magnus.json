@@ -14,7 +14,6 @@
     "long_explanation": "The adductor magnus has a large origin, arising from both the inferior pubic ramus and the ischial tuberosity. These origins support its dual role in adduction and extension of the thigh.",
     "clinical_application": "Knowledge of these origin points helps massage therapists identify areas of tension in deep medial thigh work.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -23,8 +22,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adductor magnus", "origin", "pelvis"],
-    "keywords": ["pubis", "ischium", "hip adduction"],
+    "tags": [
+      "adductor magnus",
+      "origin",
+      "pelvis"
+    ],
+    "keywords": [
+      "pubis",
+      "ischium",
+      "hip adduction"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +49,6 @@
     "long_explanation": "The adductor magnus contributes to both adduction and extension of the hip, especially due to its large posterior portion.",
     "clinical_application": "Tightness in this muscle may limit hip extension and medial stability, affecting gait and posture.",
     "source_reference": "Kinesiology of the Musculoskeletal System",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -51,8 +57,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hip motion", "adductor magnus", "extension"],
-    "keywords": ["thigh movement", "adduction", "hip extension"],
+    "tags": [
+      "hip motion",
+      "adductor magnus",
+      "extension"
+    ],
+    "keywords": [
+      "thigh movement",
+      "adduction",
+      "hip extension"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +84,6 @@
     "long_explanation": "The adductor portion of the muscle is innervated by the obturator nerve (L2–L4), while the hamstring portion is innervated by the tibial part of the sciatic nerve (L4–S3).",
     "clinical_application": "Dual innervation is important when evaluating nerve lesions and differentiating movement impairments.",
     "source_reference": "Gray's Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -79,21 +92,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["innervation", "dual nerve", "adductor magnus"],
-    "keywords": ["obturator nerve", "sciatic nerve", "pelvis"],
+    "tags": [
+      "innervation",
+      "dual nerve",
+      "adductor magnus"
+    ],
+    "keywords": [
+      "obturator nerve",
+      "sciatic nerve",
+      "pelvis"
+    ],
     "synonyms": null
   },
   {
     "id": "adductor_magnus_004",
     "correctAnswer": "Medial",
     "question": "Which region of the thigh does the adductor magnus occupy?",
-    "options": ["Anterior", "Lateral", "Medial", "Posterior"],
+    "options": [
+      "Anterior",
+      "Lateral",
+      "Medial",
+      "Posterior"
+    ],
     "topics": ["anatomy", "muscle_groups", "leg", "adductor_magnus"],
     "short_explanation": "It is a deep muscle in the medial compartment.",
     "long_explanation": "The adductor magnus lies in the medial thigh, deep to the gracilis and adductor longus, contributing to thigh adduction and extension.",
     "clinical_application": "Deep tissue massage in the medial thigh requires awareness of this large muscle's location and attachments.",
     "source_reference": "Muscles: Testing and Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -102,8 +127,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["medial thigh", "muscle compartment", "adductor group"],
-    "keywords": ["thigh anatomy", "medial compartment", "deep muscle"],
+    "tags": [
+      "medial thigh",
+      "muscle compartment",
+      "adductor group"
+    ],
+    "keywords": [
+      "thigh anatomy",
+      "medial compartment",
+      "deep muscle"
+    ],
     "synonyms": null
   },
   {
@@ -121,7 +154,6 @@
     "long_explanation": "The adductor hiatus is an opening in the tendon of the adductor magnus through which the femoral artery and vein pass into the posterior thigh, becoming the popliteal artery and vein.",
     "clinical_application": "Compression or dysfunction in this region may affect vascular flow and lead to neurovascular symptoms.",
     "source_reference": "Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -130,8 +162,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["adductor hiatus", "vascular passage", "posterior thigh"],
-    "keywords": ["femoral artery", "popliteal", "vascular anatomy"],
+    "tags": [
+      "adductor hiatus",
+      "vascular passage",
+      "posterior thigh"
+    ],
+    "keywords": [
+      "femoral artery",
+      "popliteal",
+      "vascular anatomy"
+    ],
     "synonyms": null
   },
   {
@@ -149,7 +189,6 @@
     "long_explanation": "The adductor magnus has a dual structure: the adductor portion from the pubis and the hamstring portion from the ischial tuberosity. The latter functions in hip extension, sharing characteristics with hamstring muscles.",
     "clinical_application": "Massage techniques addressing posterior hip tightness should consider the ischial portion’s contribution to limited hip mobility.",
     "source_reference": "Kinesiology of the Musculoskeletal System",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -158,8 +197,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["hip extension", "hamstring portion", "ischium"],
-    "keywords": ["ischial tuberosity", "hip movement", "posterior thigh"],
+    "tags": [
+      "hip extension",
+      "hamstring portion",
+      "ischium"
+    ],
+    "keywords": [
+      "ischial tuberosity",
+      "hip movement",
+      "posterior thigh"
+    ],
     "synonyms": null
   },
   {
@@ -177,7 +224,6 @@
     "long_explanation": "The adductor magnus does not cross the knee joint and therefore does not participate in knee flexion. Its functions are primarily hip adduction and extension, as well as postural stabilization.",
     "clinical_application": "Distinguishing its role helps avoid misattribution of knee pain to this muscle during clinical assessments.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -186,8 +232,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["muscle action", "adductor magnus", "knee vs hip"],
-    "keywords": ["hip adduction", "knee movement", "gait"],
+    "tags": [
+      "muscle action",
+      "adductor magnus",
+      "knee vs hip"
+    ],
+    "keywords": [
+      "hip adduction",
+      "knee movement",
+      "gait"
+    ],
     "synonyms": null
   },
   {
@@ -205,7 +259,6 @@
     "long_explanation": "Because the hamstring portion of the adductor magnus originates from the ischial tuberosity, this bony landmark is helpful for palpation in deep tissue assessments.",
     "clinical_application": "Massage therapy for hip and hamstring tension often requires precise palpation at this location to avoid sciatic nerve irritation.",
     "source_reference": "Muscle Testing and Palpation",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -214,8 +267,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["palpation", "ischial tuberosity", "adductor magnus"],
-    "keywords": ["palpation", "landmarks", "posterior hip"],
+    "tags": [
+      "palpation",
+      "ischial tuberosity",
+      "adductor magnus"
+    ],
+    "keywords": [
+      "palpation",
+      "landmarks",
+      "posterior hip"
+    ],
     "synonyms": null
   },
   {
@@ -233,7 +294,6 @@
     "long_explanation": "Groin strain or adductor tendinopathy is common in athletes and can involve the adductor magnus, especially with overuse or abrupt eccentric loading.",
     "clinical_application": "Therapists should assess the adductor magnus in athletes reporting medial thigh or groin pain, and apply techniques that address tension and scar tissue.",
     "source_reference": "Orthopedic Physical Assessment",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -242,8 +302,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["groin strain", "sports injury", "adductor"],
-    "keywords": ["adductor strain", "medial thigh", "athlete injuries"],
+    "tags": [
+      "groin strain",
+      "sports injury",
+      "adductor"
+    ],
+    "keywords": [
+      "adductor strain",
+      "medial thigh",
+      "athlete injuries"
+    ],
     "synonyms": null
   },
   {
@@ -261,7 +329,6 @@
     "long_explanation": "Stripping techniques and friction applied along the muscle fibers of the medial thigh are effective in reducing tone and adhesions in the adductor magnus.",
     "clinical_application": "These techniques help restore hip mobility and reduce strain on surrounding structures such as the gracilis and obturator externus.",
     "source_reference": "Clinical Massage Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/muscle_groups/leg/adductor_magnus.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -270,8 +337,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage therapy", "techniques", "adductor magnus"],
-    "keywords": ["deep tissue", "friction", "hypertonicity"],
+    "tags": [
+      "massage therapy",
+      "techniques",
+      "adductor magnus"
+    ],
+    "keywords": [
+      "deep tissue",
+      "friction",
+      "hypertonicity"
+    ],
     "synonyms": null
   }
 ]

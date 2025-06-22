@@ -14,7 +14,6 @@
     "long_explanation": "The cribriform plate is a perforated horizontal section of the ethmoid bone through which olfactory nerve filaments (CN I) ascend to the olfactory bulbs. It is critical for the sense of smell and is fragile, making it susceptible to trauma.",
     "clinical_application": "Blunt head trauma affecting the cribriform plate can impair olfaction or lead to cerebrospinal fluid (CSF) leaks. Gentle cranial massage must avoid excessive pressure in this region.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["olfactory nerve", "cribriform plate", "CN I"],
-    "keywords": ["ethmoid bone", "olfaction", "nasal cavity", "cranial nerve"],
+    "tags": [
+      "olfactory nerve",
+      "cribriform plate",
+      "CN I"
+    ],
+    "keywords": [
+      "ethmoid bone",
+      "olfaction",
+      "nasal cavity",
+      "cranial nerve"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "The perpendicular plate of the ethmoid bone is a thin vertical bony projection that descends into the nasal cavity to help form the nasal septum, along with the vomer and septal cartilage.",
     "clinical_application": "Misalignments of the nasal septum may involve the ethmoid bone and can contribute to sinus congestion or headaches, which massage therapists may address via craniosacral or sinus drainage techniques.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -51,8 +58,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["nasal septum", "ethmoid", "perpendicular plate"],
-    "keywords": ["ethmoid bone", "nasal structure", "midline"],
+    "tags": [
+      "nasal septum",
+      "ethmoid",
+      "perpendicular plate"
+    ],
+    "keywords": [
+      "ethmoid bone",
+      "nasal structure",
+      "midline"
+    ],
     "synonyms": null
   },
   {
@@ -70,7 +85,6 @@
     "long_explanation": "The thin orbital plate (or lamina papyracea) forms the medial wall of the orbit. It is extremely delicate and adjacent to the ethmoidal air cells, which can become infected and inflamed (ethmoiditis).",
     "clinical_application": "Infections in this area may present as orbital pain or eye pressure. Light facial massage techniques should avoid aggravating nearby sinuses.",
     "source_reference": "Essential Clinical Anatomy by Moore",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -79,8 +93,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["orbital plate", "eye socket", "lamina papyracea"],
-    "keywords": ["ethmoid bone", "orbit", "cranial bones"],
+    "tags": [
+      "orbital plate",
+      "eye socket",
+      "lamina papyracea"
+    ],
+    "keywords": [
+      "ethmoid bone",
+      "orbit",
+      "cranial bones"
+    ],
     "synonyms": null
   },
   {
@@ -98,7 +120,6 @@
     "long_explanation": "The crista galli is a superior midline projection of the ethmoid bone. It serves as an attachment for the falx cerebri, a fold of dura mater that separates the two cerebral hemispheres.",
     "clinical_application": "Fascial tension or cranial trauma involving this region may contribute to headaches or altered intracranial pressure, relevant in craniosacral therapy.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -107,8 +128,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["crista galli", "falx cerebri", "ethmoid"],
-    "keywords": ["cranial anatomy", "dura mater", "brain support"],
+    "tags": [
+      "crista galli",
+      "falx cerebri",
+      "ethmoid"
+    ],
+    "keywords": [
+      "cranial anatomy",
+      "dura mater",
+      "brain support"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +155,6 @@
     "long_explanation": "The ethmoidal air cells are a type of paranasal sinus lined with ciliated pseudostratified columnar epithelium. These cells help move mucus toward the nasal passages, maintaining sinus health.",
     "clinical_application": "Sinus massage and lymphatic drainage techniques can aid in relieving ethmoid sinus congestion by enhancing mucus movement.",
     "source_reference": "Clinical Anatomy by Regions",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -135,21 +163,34 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ethmoidal sinuses", "ciliated epithelium", "sinus drainage"],
-    "keywords": ["sinus", "ethmoid", "epithelium", "respiratory"],
+    "tags": [
+      "ethmoidal sinuses",
+      "ciliated epithelium",
+      "sinus drainage"
+    ],
+    "keywords": [
+      "sinus",
+      "ethmoid",
+      "epithelium",
+      "respiratory"
+    ],
     "synonyms": null
   },
   {
     "id": "ethmoid_bone_006",
     "correctAnswer": "Lacrimal bone",
     "question": "Which bone articulates directly with the ethmoid to contribute to the medial wall of the orbit?",
-    "options": ["Maxilla", "Zygomatic bone", "Lacrimal bone", "Temporal bone"],
+    "options": [
+      "Maxilla",
+      "Zygomatic bone",
+      "Lacrimal bone",
+      "Temporal bone"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "ethmoid_bone"],
     "short_explanation": "The lacrimal bone and ethmoid bone together form part of the medial orbital wall.",
     "long_explanation": "The ethmoid articulates with the lacrimal bone in the medial orbital wall. Their close anatomical relationship supports the orbital structure and provides space for the nasolacrimal duct.",
     "clinical_application": "Awareness of this relationship is essential in facial massage and lymphatic drainage near the medial canthus to avoid excessive pressure on delicate structures.",
     "source_reference": "Trail Guide to the Body",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -158,7 +199,11 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ethmoid", "lacrimal bone", "orbit"],
+    "tags": [
+      "ethmoid",
+      "lacrimal bone",
+      "orbit"
+    ],
     "keywords": [
       "orbital anatomy",
       "cranial articulation",
@@ -181,7 +226,6 @@
     "long_explanation": "The ethmoidal air cells are small sinus cavities within the ethmoid bone. They reduce skull weight and act as resonating chambers, contributing to the tone and quality of voice.",
     "clinical_application": "Congestion in ethmoidal sinuses can dull vocal resonance. Massage techniques around the nasal bridge can support sinus drainage and vocal clarity.",
     "source_reference": "Atlas of Human Anatomy by Netter",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Easy",
@@ -190,21 +234,33 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ethmoid", "sinuses", "resonance"],
-    "keywords": ["voice", "paranasal sinuses", "resonating chambers"],
+    "tags": [
+      "ethmoid",
+      "sinuses",
+      "resonance"
+    ],
+    "keywords": [
+      "voice",
+      "paranasal sinuses",
+      "resonating chambers"
+    ],
     "synonyms": null
   },
   {
     "id": "ethmoid_bone_008",
     "correctAnswer": "Anosmia",
     "question": "Trauma to the cribriform plate of the ethmoid bone may result in which complication?",
-    "options": ["Anosmia", "Diplopia", "Tinnitus", "Trismus"],
+    "options": [
+      "Anosmia",
+      "Diplopia",
+      "Tinnitus",
+      "Trismus"
+    ],
     "topics": ["anatomy", "systems", "skeletal_system", "ethmoid_bone"],
     "short_explanation": "Damage to the cribriform plate can impair olfactory nerve function, leading to anosmia.",
     "long_explanation": "The cribriform plate transmits the olfactory nerve (CN I). Trauma such as a skull fracture can shear the nerve filaments, causing a loss of smell (anosmia) and increasing the risk of CSF leakage.",
     "clinical_application": "Cranial massage work should consider a patient’s history of head trauma, especially if olfactory loss is reported, to avoid aggravation of the area.",
     "source_reference": "Gray's Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Hard",
@@ -213,8 +269,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["olfactory nerve", "cribriform plate", "anosmia"],
-    "keywords": ["ethmoid trauma", "olfaction", "cranial nerves"],
+    "tags": [
+      "olfactory nerve",
+      "cribriform plate",
+      "anosmia"
+    ],
+    "keywords": [
+      "ethmoid trauma",
+      "olfaction",
+      "cranial nerves"
+    ],
     "synonyms": null
   },
   {
@@ -232,7 +296,6 @@
     "long_explanation": "Olfactory epithelium, composed of specialized sensory cells, lines the roof of the nasal cavity just beneath the cribriform plate. It allows odor molecules to activate olfactory receptors.",
     "clinical_application": "Chronic sinusitis or inflammation can damage the olfactory epithelium. Understanding this helps massage therapists appreciate the effects of sinus massage on olfaction.",
     "source_reference": "Clinical Neuroanatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -241,8 +304,16 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["olfactory", "nasal cavity", "ethmoid"],
-    "keywords": ["olfactory epithelium", "nasal anatomy", "cranial nerve I"],
+    "tags": [
+      "olfactory",
+      "nasal cavity",
+      "ethmoid"
+    ],
+    "keywords": [
+      "olfactory epithelium",
+      "nasal anatomy",
+      "cranial nerve I"
+    ],
     "synonyms": null
   },
   {
@@ -260,7 +331,6 @@
     "long_explanation": "The ethmoidal labyrinth refers to the lateral masses of the ethmoid bone. These contain the superior and middle nasal conchae and numerous ethmoidal air cells, helping to filter, humidify, and warm inhaled air.",
     "clinical_application": "Massage therapists performing facial drainage may target areas overlying the labyrinth to support sinus relief and nasal airflow improvement.",
     "source_reference": "Anatomy Trains by Thomas Myers",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/systems/skeletal_system/ethmoid_bone.json",
     "question_type": "multiple_choice",
     "difficulty": "Medium",
@@ -269,8 +339,17 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ethmoidal labyrinth", "nasal conchae", "air filtration"],
-    "keywords": ["nasal anatomy", "conchae", "sinuses", "ethmoid"],
+    "tags": [
+      "ethmoidal labyrinth",
+      "nasal conchae",
+      "air filtration"
+    ],
+    "keywords": [
+      "nasal anatomy",
+      "conchae",
+      "sinuses",
+      "ethmoid"
+    ],
     "synonyms": null
   }
 ]

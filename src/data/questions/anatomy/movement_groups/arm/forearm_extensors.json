@@ -14,7 +14,6 @@
     "long_explanation": "This muscle originates from the lateral supracondylar ridge of the humerus and inserts on the second metacarpal. It acts to extend and radially deviate the wrist.",
     "clinical_application": "Overuse can lead to lateral epicondylitis ('tennis elbow'), making it a key target in soft tissue therapy.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 158",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -60,7 +59,6 @@
     "long_explanation": "Extensor digitorum originates from the lateral epicondyle and inserts into the extensor expansions of digits 2–5, enabling extension at the MCP and IP joints.",
     "clinical_application": "Trigger point therapy in this muscle can relieve hand stiffness and improve finger range of motion.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 159",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -100,7 +98,6 @@
     "long_explanation": "ECRB originates from the lateral epicondyle and inserts on the third metacarpal. It works with ECRL to stabilize the wrist during finger movements.",
     "clinical_application": "ECRB is the most commonly involved muscle in lateral epicondylitis.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 492",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -138,7 +135,6 @@
     "long_explanation": "The radial nerve and its branches supply all the extensor muscles in the posterior compartment of the forearm, enabling wrist and finger extension.",
     "clinical_application": "Compression or injury can result in wrist drop and impaired extension.",
     "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 435",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -186,7 +182,6 @@
     "long_explanation": "Originating from the lateral epicondyle and ulna, ECU inserts on the 5th metacarpal and contributes to wrist extension and ulnar deviation.",
     "clinical_application": "Ulnar-sided wrist pain may involve ECU tendon sheath inflammation, often managed with rest and massage.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 160",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -232,7 +227,6 @@
     "long_explanation": "This muscle lies deep and medial to extensor digitorum and allows isolated extension of the index finger, important for pointing and precision tasks.",
     "clinical_application": "Manual therapy on extensor indicis helps relieve digital strain in repetitive motion disorders.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 161",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -241,8 +235,12 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "tags": ["anatomy_muscles"],
-    "keywords": ["anatomy_muscles"],
+    "tags": [
+      "anatomy_muscles"
+    ],
+    "keywords": [
+      "anatomy_muscles"
+    ],
     "synonyms": null
   },
   {
@@ -260,7 +258,6 @@
     "long_explanation": "EPL allows full extension of the thumb, crucial for grasp and release movements, and forms part of the anatomical snuffbox.",
     "clinical_application": "Massage to EPL can relieve pain in De Quervain’s syndrome or tendinitis.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 163",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -302,7 +299,6 @@
     "long_explanation": "EDM is a slender muscle that assists with isolated extension of the fifth digit and is often engaged during grip release or expressive hand gestures.",
     "clinical_application": "Strain in EDM may be observed in musicians or typists due to repetitive finger extension.",
     "source_reference": "Trail Guide to the Body, 6th ed., p. 160",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -311,21 +307,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.084Z",
     "updated_at": "2025-05-24T14:54:13.427Z",
-    "tags": ["anatomy_muscles", "concept_assists", "concept_assisted"],
-    "keywords": ["anatomy_muscles", "concept_assists", "concept_assisted"],
+    "tags": [
+      "anatomy_muscles",
+      "concept_assists",
+      "concept_assisted"
+    ],
+    "keywords": [
+      "anatomy_muscles",
+      "concept_assists",
+      "concept_assisted"
+    ],
     "synonyms": null
   },
   {
     "id": "forearm_extensors_009",
     "correctAnswer": "EPB and APL",
     "question": "Which two muscles form the lateral boundary of the anatomical snuffbox?",
-    "options": ["EPL and EDM", "EPB and APL", "ED and ECU", "FCR and FDS"],
+    "options": [
+      "EPL and EDM",
+      "EPB and APL",
+      "ED and ECU",
+      "FCR and FDS"
+    ],
     "topics": ["anatomy", "movement_groups", "arm", "forearm_extensors"],
     "short_explanation": "EPB and APL form the lateral snuffbox wall.",
     "long_explanation": "The anatomical snuffbox is bordered laterally by the tendons of extensor pollicis brevis and abductor pollicis longus, and medially by extensor pollicis longus. This area houses the radial artery.",
     "clinical_application": "Palpation here helps diagnose tendinopathies and assess radial artery pulse.",
     "source_reference": "Netter's Atlas of Human Anatomy, 7th ed., Plate 428",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",
@@ -365,7 +373,6 @@
     "long_explanation": "Lateral epicondylitis is commonly caused by repetitive strain of the ECRB muscle, which originates near the lateral epicondyle and stabilizes the wrist during gripping.",
     "clinical_application": "Soft tissue massage, stretching, and eccentric loading are effective treatments for ECRB-related pain.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig, p. 495",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/movement_groups/arm/forearm_extensors.json",
     "question_type": "multiple_choice",
     "difficulty": "intermediate",

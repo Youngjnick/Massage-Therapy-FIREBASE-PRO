@@ -14,7 +14,6 @@
     "long_explanation": "Somatic therapy helps clients process trauma through body-centered awareness, allowing unresolved stress patterns to emerge and be released through breath, movement, or sensation tracking.",
     "clinical_application": "Massage therapists incorporating somatic principles can observe shifts in breathing, muscle tension, and posture to support trauma-informed care.",
     "source_reference": "Somatic Psychology: Body-Mind Integration",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -23,8 +22,17 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.136Z",
     "updated_at": "2025-05-26T15:13:41.941886Z",
-    "tags": ["modality_somatic", "trauma_release", "body_awareness"],
-    "keywords": ["trauma", "body", "somatic therapy", "release"],
+    "tags": [
+      "modality_somatic",
+      "trauma_release",
+      "body_awareness"
+    ],
+    "keywords": [
+      "trauma",
+      "body",
+      "somatic therapy",
+      "release"
+    ],
     "synonyms": null
   },
   {
@@ -42,7 +50,6 @@
     "long_explanation": "Rather than reliving trauma, Somatic Experiencing guides clients to notice internal sensations and safely release stored energy from the autonomic nervous system.",
     "clinical_application": "Massage therapists can integrate this by pacing pressure and observing shifts in client tone or breath.",
     "source_reference": "Peter Levine, Somatic Experiencing Textbook",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -51,7 +58,11 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.136Z",
     "updated_at": "2025-05-26T15:13:41.941886Z",
-    "tags": ["modality_SE", "nervous_system_discharge", "trauma_integration"],
+    "tags": [
+      "modality_SE",
+      "nervous_system_discharge",
+      "trauma_integration"
+    ],
     "keywords": [
       "survival energy",
       "trauma",
@@ -75,7 +86,6 @@
     "long_explanation": "Interoception involves noticing internal sensations like heartbeat, breath, or gut tension. It's a cornerstone of somatic approaches that foster emotional regulation.",
     "clinical_application": "Encouraging clients to notice internal shifts during massage supports mind-body reconnection.",
     "source_reference": "Neuroscience of Interoception and Touch, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -84,21 +94,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.136Z",
     "updated_at": "2025-05-26T15:13:41.941886Z",
-    "tags": ["modality_somatic", "interoception", "awareness"],
-    "keywords": ["internal awareness", "body cues", "self-regulation"],
+    "tags": [
+      "modality_somatic",
+      "interoception",
+      "awareness"
+    ],
+    "keywords": [
+      "internal awareness",
+      "body cues",
+      "self-regulation"
+    ],
     "synonyms": null
   },
   {
     "id": "somatic_therapy_004",
     "correctAnswer": "Somatic Experiencing",
     "question": "Peter Levine is most associated with which somatic therapy approach?",
-    "options": ["Hakomi", "Somatic Experiencing", "Bioenergetics", "EMDR"],
+    "options": [
+      "Hakomi",
+      "Somatic Experiencing",
+      "Bioenergetics",
+      "EMDR"
+    ],
     "topics": ["modalities", "energy_work", "somatic_therapy"],
     "short_explanation": "Peter Levine developed Somatic Experiencing.",
     "long_explanation": "Dr. Levine’s method focuses on the biological basis of trauma and emphasizes slow, titrated release of stored autonomic energy to restore regulation.",
     "clinical_application": "Knowledge of SE allows therapists to recognize trauma signs (e.g., freeze/shutdown) and adjust techniques accordingly.",
     "source_reference": "Levine, Waking the Tiger",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -107,8 +129,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.136Z",
     "updated_at": "2025-05-26T15:13:41.941886Z",
-    "tags": ["founder_SE", "trauma_integration", "modality_origin"],
-    "keywords": ["Peter Levine", "SE", "somatic therapy"],
+    "tags": [
+      "founder_SE",
+      "trauma_integration",
+      "modality_origin"
+    ],
+    "keywords": [
+      "Peter Levine",
+      "SE",
+      "somatic therapy"
+    ],
     "synonyms": null
   },
   {
@@ -126,7 +156,6 @@
     "long_explanation": "In Hakomi therapy, clients are guided into mindful states to observe internal responses, uncover implicit beliefs, and facilitate emotional healing.",
     "clinical_application": "Therapists may adapt this by encouraging clients to sense what arises when an area is touched.",
     "source_reference": "Hakomi Method Training Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -135,21 +164,33 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.136Z",
     "updated_at": "2025-05-26T15:13:41.941886Z",
-    "tags": ["modality_hakomi", "mindfulness", "unconscious_material"],
-    "keywords": ["Hakomi", "mindfulness", "somatic psychology"],
+    "tags": [
+      "modality_hakomi",
+      "mindfulness",
+      "unconscious_material"
+    ],
+    "keywords": [
+      "Hakomi",
+      "mindfulness",
+      "somatic psychology"
+    ],
     "synonyms": null
   },
   {
     "id": "somatic_therapy_006",
     "correctAnswer": "Parasympathetic",
     "question": "Which nervous system branch is often targeted in somatic regulation practices?",
-    "options": ["Sympathetic", "Parasympathetic", "Central", "Enteric"],
+    "options": [
+      "Sympathetic",
+      "Parasympathetic",
+      "Central",
+      "Enteric"
+    ],
     "topics": ["modalities", "energy_work", "somatic_therapy"],
     "short_explanation": "The parasympathetic nervous system is a key focus in somatic work.",
     "long_explanation": "Somatic therapies often aim to calm sympathetic arousal and support parasympathetic activation—helping the body move from fight-or-flight to rest-and-digest.",
     "clinical_application": "Massage activates the parasympathetic branch by engaging safe, rhythmic touch and slow pressure.",
     "source_reference": "Polyvagal Theory in Therapy",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -186,7 +227,6 @@
     "long_explanation": "By accessing and resolving trauma stored in body memory, somatic therapy helps regulate the autonomic nervous system and restore equilibrium.",
     "clinical_application": "Massage therapists can support this by slowing down and matching the client’s breathing and tension shifts.",
     "source_reference": "Body Keeps the Score – Bessel van der Kolk",
-    "sourceFile": null,
     "filepath": "src/data/questions/modalities/energy_work/somatic_therapy.json",
     "question_type": null,
     "difficulty": "medium",
@@ -195,8 +235,16 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.136Z",
     "updated_at": "2025-05-26T15:13:41.941886Z",
-    "tags": ["nervous_system_balance", "somatic_goal", "healing_trauma"],
-    "keywords": ["nervous system", "regulation", "trauma release"],
+    "tags": [
+      "nervous_system_balance",
+      "somatic_goal",
+      "healing_trauma"
+    ],
+    "keywords": [
+      "nervous system",
+      "regulation",
+      "trauma release"
+    ],
     "synonyms": null
   }
 ]

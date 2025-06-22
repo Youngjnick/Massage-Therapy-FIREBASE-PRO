@@ -14,7 +14,6 @@
     "long_explanation": "Frozen shoulder, or adhesive capsulitis, involves stiffness and pain in the shoulder joint caused by inflammation and thickening of the joint capsule. It often progresses in stages and may last for months.",
     "clinical_application": "Massage therapy can be beneficial in the thawing phase, using gentle techniques to reduce muscle guarding and improve circulation.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,21 +22,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["frozen shoulder", "adhesive capsulitis", "shoulder pain"],
-    "keywords": ["frozen shoulder", "adhesive capsulitis", "joint capsule"],
-    "synonyms": ["frozen shoulder", "capsular tightness"]
+    "tags": [
+      "frozen shoulder",
+      "adhesive capsulitis",
+      "shoulder pain"
+    ],
+    "keywords": [
+      "frozen shoulder",
+      "adhesive capsulitis",
+      "joint capsule"
+    ],
+    "synonyms": [
+      "frozen shoulder",
+      "capsular tightness"
+    ]
   },
   {
     "id": "frozen_shoulder_002",
     "correctAnswer": "Freezing",
     "question": "Which phase of frozen shoulder is characterized by severe pain and progressive stiffness?",
-    "options": ["Freezing", "Frozen", "Thawing", "Recovery"],
+    "options": [
+      "Freezing",
+      "Frozen",
+      "Thawing",
+      "Recovery"
+    ],
     "topics": ["pathology", "frozen_shoulder"],
     "short_explanation": "The freezing phase involves pain and increasing stiffness.",
     "long_explanation": "Frozen shoulder typically progresses through three stages: freezing (painful), frozen (stiffness), and thawing (gradual improvement). The freezing stage features worsening pain and limited motion.",
     "clinical_application": "Massage in the freezing stage should be minimal and supportive, avoiding exacerbation of symptoms.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -46,13 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["frozen shoulder", "stages", "shoulder stiffness"],
+    "tags": [
+      "frozen shoulder",
+      "stages",
+      "shoulder stiffness"
+    ],
     "keywords": [
       "freezing stage",
       "painful phase",
       "adhesive capsulitis progression"
     ],
-    "synonyms": ["painful phase", "early stage"]
+    "synonyms": [
+      "painful phase",
+      "early stage"
+    ]
   },
   {
     "id": "frozen_shoulder_003",
@@ -69,7 +90,6 @@
     "long_explanation": "The glenohumeral joint, where the humerus meets the scapula, becomes restricted in frozen shoulder due to capsular adhesions and inflammation.",
     "clinical_application": "Massage therapists should avoid aggressive mobilization of the glenohumeral joint in early stages of frozen shoulder.",
     "source_reference": "Clinical Orthopedic Manual Therapy, Chaitow",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -78,9 +98,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder joint", "glenohumeral", "capsulitis"],
-    "keywords": ["shoulder mobility", "frozen shoulder joint"],
-    "synonyms": ["shoulder joint", "GH joint"]
+    "tags": [
+      "shoulder joint",
+      "glenohumeral",
+      "capsulitis"
+    ],
+    "keywords": [
+      "shoulder mobility",
+      "frozen shoulder joint"
+    ],
+    "synonyms": [
+      "shoulder joint",
+      "GH joint"
+    ]
   },
   {
     "id": "frozen_shoulder_004",
@@ -97,7 +127,6 @@
     "long_explanation": "Frozen shoulder commonly affects people aged 40–60, especially those with diabetes, thyroid disorders, or after shoulder immobilization.",
     "clinical_application": "Massage therapists should be aware of client health history, particularly diabetes, when assessing shoulder dysfunction.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -106,9 +135,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["risk factors", "frozen shoulder", "diabetes"],
-    "keywords": ["frozen shoulder demographics", "capsulitis risk"],
-    "synonyms": ["diabetes and shoulder", "frozen shoulder risks"]
+    "tags": [
+      "risk factors",
+      "frozen shoulder",
+      "diabetes"
+    ],
+    "keywords": [
+      "frozen shoulder demographics",
+      "capsulitis risk"
+    ],
+    "synonyms": [
+      "diabetes and shoulder",
+      "frozen shoulder risks"
+    ]
   },
   {
     "id": "frozen_shoulder_005",
@@ -125,7 +164,6 @@
     "long_explanation": "Frozen shoulder typically causes a capsular pattern of restriction: external rotation, abduction, and then internal rotation. External rotation is often the first and most severely limited.",
     "clinical_application": "Gentle mobilization and fascial techniques may support external rotation over time in the thawing phase.",
     "source_reference": "Orthopedic Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -134,9 +172,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ROM restriction", "frozen shoulder", "external rotation"],
-    "keywords": ["shoulder ROM", "capsular pattern", "adhesive capsulitis"],
-    "synonyms": ["shoulder restriction", "capsular tightness"]
+    "tags": [
+      "ROM restriction",
+      "frozen shoulder",
+      "external rotation"
+    ],
+    "keywords": [
+      "shoulder ROM",
+      "capsular pattern",
+      "adhesive capsulitis"
+    ],
+    "synonyms": [
+      "shoulder restriction",
+      "capsular tightness"
+    ]
   },
   {
     "id": "frozen_shoulder_006",
@@ -153,7 +202,6 @@
     "long_explanation": "In the thawing phase of adhesive capsulitis, pain diminishes and mobility slowly improves. This phase may last several months, with variable rates of recovery.",
     "clinical_application": "Massage therapists can incorporate more active techniques in this phase to facilitate range of motion and reduce residual adhesions.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -167,8 +215,15 @@
       "frozen shoulder recovery",
       "mobility improvement"
     ],
-    "keywords": ["adhesive capsulitis", "shoulder thawing", "recovery phase"],
-    "synonyms": ["thawing phase", "recovery stage"]
+    "keywords": [
+      "adhesive capsulitis",
+      "shoulder thawing",
+      "recovery phase"
+    ],
+    "synonyms": [
+      "thawing phase",
+      "recovery stage"
+    ]
   },
   {
     "id": "frozen_shoulder_007",
@@ -185,7 +240,6 @@
     "long_explanation": "In frozen shoulder, the glenohumeral joint capsule thickens and tightens, leading to adhesions that restrict movement. The synovial lining is also affected by inflammation.",
     "clinical_application": "Knowledge of capsule involvement helps massage therapists select appropriate myofascial release and movement-based interventions.",
     "source_reference": "Clinical Orthopedic Manual Therapy, Chaitow",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -194,13 +248,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["joint capsule", "adhesions", "shoulder stiffness"],
+    "tags": [
+      "joint capsule",
+      "adhesions",
+      "shoulder stiffness"
+    ],
     "keywords": [
       "glenohumeral capsule",
       "frozen shoulder",
       "adhesive capsulitis"
     ],
-    "synonyms": ["capsular restriction", "shoulder adhesions"]
+    "synonyms": [
+      "capsular restriction",
+      "shoulder adhesions"
+    ]
   },
   {
     "id": "frozen_shoulder_008",
@@ -217,7 +278,6 @@
     "long_explanation": "The frozen phase is marked by stiffness more than pain. Massage should focus on relaxation and improving circulation without aggressive mobilization that could aggravate adhesions.",
     "clinical_application": "Techniques such as gentle effleurage, static compression, and diaphragmatic breathing support relaxation and lymphatic drainage.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -226,13 +286,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage technique", "frozen shoulder", "frozen phase"],
+    "tags": [
+      "massage technique",
+      "frozen shoulder",
+      "frozen phase"
+    ],
     "keywords": [
       "adhesive capsulitis",
       "gentle massage",
       "restricted shoulder"
     ],
-    "synonyms": ["conservative massage", "light touch"]
+    "synonyms": [
+      "conservative massage",
+      "light touch"
+    ]
   },
   {
     "id": "frozen_shoulder_009",
@@ -249,7 +316,6 @@
     "long_explanation": "Frozen shoulder often follows trauma, surgery, or immobilization where the arm is held in a fixed position for too long. Lack of movement can initiate capsular adhesions.",
     "clinical_application": "Post-injury rehabilitation should include early mobilization strategies to avoid developing adhesive capsulitis.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -258,13 +324,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["shoulder immobilization", "risk factors", "capsulitis triggers"],
+    "tags": [
+      "shoulder immobilization",
+      "risk factors",
+      "capsulitis triggers"
+    ],
     "keywords": [
       "immobilization",
       "shoulder stiffness",
       "frozen shoulder cause"
     ],
-    "synonyms": ["disuse", "shoulder bracing", "motion limitation"]
+    "synonyms": [
+      "disuse",
+      "shoulder bracing",
+      "motion limitation"
+    ]
   },
   {
     "id": "frozen_shoulder_010",
@@ -281,7 +355,6 @@
     "long_explanation": "As the shoulder regains motion in the thawing phase, massage therapy helps reduce residual fascial tightness and encourages circulation. Therapists can gradually reintroduce range of motion techniques.",
     "clinical_application": "Use myofascial release and passive stretching to improve mobility without pain provocation.",
     "source_reference": "Clinical Orthopedic Manual Therapy, Chaitow",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/frozen_shoulder.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -290,8 +363,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["massage benefits", "frozen shoulder thawing", "recovery phase"],
-    "keywords": ["massage thawing", "adhesive capsulitis", "rehab strategies"],
-    "synonyms": ["shoulder rehab massage", "recovery support"]
+    "tags": [
+      "massage benefits",
+      "frozen shoulder thawing",
+      "recovery phase"
+    ],
+    "keywords": [
+      "massage thawing",
+      "adhesive capsulitis",
+      "rehab strategies"
+    ],
+    "synonyms": [
+      "shoulder rehab massage",
+      "recovery support"
+    ]
   }
 ]

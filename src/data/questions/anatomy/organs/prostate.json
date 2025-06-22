@@ -14,7 +14,6 @@
     "long_explanation": "The prostate gland contributes to seminal fluid by producing enzymes, proteins, and nutrients that help sperm survive the vaginal environment and aid in mobility.",
     "clinical_application": "Knowledge of prostate anatomy is important when considering contraindications for abdominal massage in clients with prostate issues.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -23,9 +22,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["prostate", "seminal fluid", "reproductive"],
-    "keywords": ["prostate", "seminal fluid", "male reproductive system"],
-    "synonyms": ["seminal gland function", "prostate secretion"]
+    "tags": [
+      "prostate",
+      "seminal fluid",
+      "reproductive"
+    ],
+    "keywords": [
+      "prostate",
+      "seminal fluid",
+      "male reproductive system"
+    ],
+    "synonyms": [
+      "seminal gland function",
+      "prostate secretion"
+    ]
   },
   {
     "id": "prostate_002",
@@ -42,7 +52,6 @@
     "long_explanation": "Anatomically, the prostate gland surrounds the proximal urethra just inferior to the bladder, allowing its secretions to mix with sperm during ejaculation.",
     "clinical_application": "Massage pressure over the lower abdomen should be adapted in clients with known prostate inflammation or hypertrophy.",
     "source_reference": "Netter’s Atlas of Human Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -51,9 +60,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["prostate", "bladder", "anatomy"],
-    "keywords": ["prostate location", "male pelvis", "bladder relation"],
-    "synonyms": ["pelvic anatomy", "inferior to bladder"]
+    "tags": [
+      "prostate",
+      "bladder",
+      "anatomy"
+    ],
+    "keywords": [
+      "prostate location",
+      "male pelvis",
+      "bladder relation"
+    ],
+    "synonyms": [
+      "pelvic anatomy",
+      "inferior to bladder"
+    ]
   },
   {
     "id": "prostate_003",
@@ -70,7 +90,6 @@
     "long_explanation": "BPH is a non-cancerous enlargement of the prostate that can obstruct urinary flow, leading to symptoms like weak stream or frequent urination.",
     "clinical_application": "Be aware of client-reported urinary issues that may suggest BPH, as this can affect positioning and treatment planning.",
     "source_reference": "Mosby’s Pathology for Massage Therapists",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -79,25 +98,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["BPH", "enlarged prostate", "urinary symptoms"],
+    "tags": [
+      "BPH",
+      "enlarged prostate",
+      "urinary symptoms"
+    ],
     "keywords": [
       "benign prostatic hyperplasia",
       "urinary function",
       "male pathology"
     ],
-    "synonyms": ["prostate enlargement", "BPH"]
+    "synonyms": [
+      "prostate enlargement",
+      "BPH"
+    ]
   },
   {
     "id": "prostate_004",
     "correctAnswer": "Urethra",
     "question": "What structure passes through the prostate gland?",
-    "options": ["Urethra", "Vas deferens", "Colon", "Ejaculatory duct"],
+    "options": [
+      "Urethra",
+      "Vas deferens",
+      "Colon",
+      "Ejaculatory duct"
+    ],
     "topics": ["anatomy", "organs", "prostate"],
     "short_explanation": "The urethra passes through the prostate.",
     "long_explanation": "The prostatic urethra is the section of the urethra that runs through the prostate gland. This allows prostatic fluid to mix with sperm during ejaculation.",
     "clinical_application": "Conditions affecting the prostate may compress the urethra, influencing urination and massage precautions.",
     "source_reference": "Gray’s Anatomy for Students",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -106,9 +136,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["urethra", "prostate gland", "urinary system"],
-    "keywords": ["prostatic urethra", "urinary tract", "male anatomy"],
-    "synonyms": ["prostatic urethra", "urinary passage"]
+    "tags": [
+      "urethra",
+      "prostate gland",
+      "urinary system"
+    ],
+    "keywords": [
+      "prostatic urethra",
+      "urinary tract",
+      "male anatomy"
+    ],
+    "synonyms": [
+      "prostatic urethra",
+      "urinary passage"
+    ]
   },
   {
     "id": "prostate_005",
@@ -125,7 +166,6 @@
     "long_explanation": "DHT, a metabolite of testosterone, binds to androgen receptors in the prostate, promoting its development and enlargement. It plays a key role in BPH and prostate cancer progression.",
     "clinical_application": "Clients undergoing treatment for prostate issues may be on medications targeting DHT, relevant when evaluating general health during intake.",
     "source_reference": "Essentials of Human Physiology by Fox",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -134,21 +174,36 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["DHT", "hormone", "testosterone"],
-    "keywords": ["dihydrotestosterone", "androgen", "male hormone"],
-    "synonyms": ["DHT", "androgen"]
+    "tags": [
+      "DHT",
+      "hormone",
+      "testosterone"
+    ],
+    "keywords": [
+      "dihydrotestosterone",
+      "androgen",
+      "male hormone"
+    ],
+    "synonyms": [
+      "DHT",
+      "androgen"
+    ]
   },
   {
     "id": "prostate_006",
     "correctAnswer": "PSA test",
     "question": "Which type of cancer screening test involves measuring a specific antigen related to the prostate?",
-    "options": ["PSA test", "CBC test", "Liver function test", "Pap smear"],
+    "options": [
+      "PSA test",
+      "CBC test",
+      "Liver function test",
+      "Pap smear"
+    ],
     "topics": ["anatomy", "organs", "prostate"],
     "short_explanation": "The PSA test measures prostate-specific antigen levels.",
     "long_explanation": "The prostate-specific antigen (PSA) blood test is used to screen for prostate cancer. Elevated levels may suggest cancer or other prostate disorders like BPH or prostatitis.",
     "clinical_application": "Massage therapists should be aware of client-reported prostate conditions, especially if undergoing testing or treatment for elevated PSA.",
     "source_reference": "Mosby's Pathology for Massage Therapists, 2nd Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -157,14 +212,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["PSA", "cancer", "screening", "prostate"],
+    "tags": [
+      "PSA",
+      "cancer",
+      "screening",
+      "prostate"
+    ],
     "keywords": [
       "PSA test",
       "cancer screening",
       "antigen",
       "prostate-specific antigen"
     ],
-    "synonyms": ["prostate antigen test", "PSA screening"]
+    "synonyms": [
+      "prostate antigen test",
+      "PSA screening"
+    ]
   },
   {
     "id": "prostate_007",
@@ -181,7 +244,6 @@
     "long_explanation": "Enlargement or inflammation of the prostate can compress the urethra, leading to urinary symptoms such as weak stream, urgency, or incomplete emptying.",
     "clinical_application": "Massage practitioners should inquire about urinary issues during health intake to avoid contraindicated abdominal work.",
     "source_reference": "Tortora & Derrickson, Principles of Anatomy and Physiology",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -190,9 +252,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["urinary", "prostate symptoms", "BPH"],
-    "keywords": ["prostate", "urination", "BPH", "enlargement"],
-    "synonyms": ["urinary difficulty", "urinary retention"]
+    "tags": [
+      "urinary",
+      "prostate symptoms",
+      "BPH"
+    ],
+    "keywords": [
+      "prostate",
+      "urination",
+      "BPH",
+      "enlargement"
+    ],
+    "synonyms": [
+      "urinary difficulty",
+      "urinary retention"
+    ]
   },
   {
     "id": "prostate_008",
@@ -209,7 +283,6 @@
     "long_explanation": "The prostate is classified as an exocrine gland because it secretes its fluid into ducts that ultimately exit the body through ejaculation, rather than into the bloodstream.",
     "clinical_application": "Understanding glandular function helps massage professionals interpret hormonal and fluid regulation in body systems.",
     "source_reference": "Martini, Human Anatomy, 9th Ed.",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Easy",
@@ -218,13 +291,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["gland type", "exocrine", "secretion"],
+    "tags": [
+      "gland type",
+      "exocrine",
+      "secretion"
+    ],
     "keywords": [
       "exocrine gland",
       "male reproductive system",
       "glandular secretion"
     ],
-    "synonyms": ["gland classification", "prostate gland type"]
+    "synonyms": [
+      "gland classification",
+      "prostate gland type"
+    ]
   },
   {
     "id": "prostate_009",
@@ -241,7 +321,6 @@
     "long_explanation": "The slightly alkaline fluid produced by the prostate helps counteract the acidic environment of the female reproductive tract, enhancing sperm viability and motility.",
     "clinical_application": "Clients experiencing fertility challenges may benefit from understanding how massage for stress reduction can complement reproductive health.",
     "source_reference": "Saladin, Anatomy & Physiology: The Unity of Form and Function",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Hard",
@@ -250,9 +329,20 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["pH balance", "alkaline", "semen"],
-    "keywords": ["alkaline fluid", "neutralize acidity", "semen pH"],
-    "synonyms": ["alkaline semen", "acid-base balance"]
+    "tags": [
+      "pH balance",
+      "alkaline",
+      "semen"
+    ],
+    "keywords": [
+      "alkaline fluid",
+      "neutralize acidity",
+      "semen pH"
+    ],
+    "synonyms": [
+      "alkaline semen",
+      "acid-base balance"
+    ]
   },
   {
     "id": "prostate_010",
@@ -269,7 +359,6 @@
     "long_explanation": "The ejaculatory duct carries sperm from the vas deferens and fluids from the seminal vesicles through the prostate, mixing with prostatic fluid before reaching the urethra.",
     "clinical_application": "Knowledge of duct anatomy is useful when considering reproductive health issues and pelvic massage contraindications.",
     "source_reference": "Moore & Dalley, Clinically Oriented Anatomy",
-    "sourceFile": null,
     "filepath": "src/data/questions/anatomy/organs/prostate.json",
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
@@ -278,8 +367,19 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": ["ejaculatory duct", "reproductive duct", "prostate"],
-    "keywords": ["ejaculatory duct", "semen", "vas deferens"],
-    "synonyms": ["sperm duct", "duct in prostate"]
+    "tags": [
+      "ejaculatory duct",
+      "reproductive duct",
+      "prostate"
+    ],
+    "keywords": [
+      "ejaculatory duct",
+      "semen",
+      "vas deferens"
+    ],
+    "synonyms": [
+      "sperm duct",
+      "duct in prostate"
+    ]
   }
 ]

@@ -14,7 +14,6 @@
     "long_explanation": "Deep vein thrombosis is a medical emergency. Massage can dislodge a clot, potentially leading to pulmonary embolism, stroke, or cardiac arrest. Medical clearance is required before resuming massage.",
     "clinical_application": "Always screen for unexplained leg swelling, tenderness, and warmth in clients — these are DVT red flags.",
     "source_reference": "FSMTB Candidate Handbook; AMTA Safety Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -35,7 +34,11 @@
       "client",
       "modality_massage_therapy"
     ],
-    "synonyms": ["DVT", "thrombosis", "clot"]
+    "synonyms": [
+      "DVT",
+      "thrombosis",
+      "clot"
+    ]
   },
   {
     "id": "contraindications_full_002",
@@ -52,7 +55,6 @@
     "long_explanation": "Varicose veins are fragile and pressure can damage the valve system or worsen pooling. Gentle work may be allowed with medical clearance, but deeper strokes are avoided over the area.",
     "clinical_application": "Visually inspect for enlarged or twisted superficial veins and avoid direct pressure.",
     "source_reference": "Trail Guide to the Body; AMTA Position Statements",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -73,7 +75,10 @@
       "contraindication",
       "concept_localized"
     ],
-    "synonyms": ["varicosities", "twisted veins"]
+    "synonyms": [
+      "varicosities",
+      "twisted veins"
+    ]
   },
   {
     "id": "contraindications_full_003",
@@ -90,7 +95,6 @@
     "long_explanation": "When a client has a fever, flu, strep throat, or other systemic infection, massage can worsen symptoms and pose risk of transmission. Reschedule when client is symptom-free for 24+ hours.",
     "clinical_application": "Ensure client screening includes illness questions to protect both client and therapist.",
     "source_reference": "FSMTB Outline; AMTA Clinical Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "easy",
@@ -111,7 +115,10 @@
       "client_presents",
       "concept_anxiety"
     ],
-    "synonyms": ["systemic infection", "contagious illness"]
+    "synonyms": [
+      "systemic infection",
+      "contagious illness"
+    ]
   },
   {
     "id": "contraindications_full_004",
@@ -128,7 +135,6 @@
     "long_explanation": "Recent surgeries involve fragile tissues, inflammation, risk of dehiscence, and potential blood clots. A physician's note ensures safety and timing for bodywork.",
     "clinical_application": "Always check for surgical dates, scar healing status, and medical advice before proceeding.",
     "source_reference": "FSMTB Clinical Guidelines; AMTA Surgery Protocols",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -151,7 +157,10 @@
       "purpose_healing",
       "concept_anxiety"
     ],
-    "synonyms": ["surgical site", "recent operation"]
+    "synonyms": [
+      "surgical site",
+      "recent operation"
+    ]
   },
   {
     "id": "contraindications_full_005",
@@ -168,7 +177,6 @@
     "long_explanation": "Athlete's foot is contagious and can spread to hands or other areas. Local massage should be avoided, and therapist hygiene precautions strictly followed.",
     "clinical_application": "If the infection is localized to the feet, work can be done on other body areas safely.",
     "source_reference": "FSMTB Outline; CDC Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -191,7 +199,10 @@
       "population_athlete",
       "organ_skin"
     ],
-    "synonyms": ["foot fungus", "tinea"]
+    "synonyms": [
+      "foot fungus",
+      "tinea"
+    ]
   },
   {
     "id": "contraindications_full_006",
@@ -208,7 +219,6 @@
     "long_explanation": "A myocardial infarction (heart attack) indicates cardiac instability. Massage should not be performed until the client has received medical clearance and is no longer in an acute phase.",
     "clinical_application": "Always ask about recent cardiac events or hospitalizations before working with cardiac clients.",
     "source_reference": "FSMTB Pathology Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "hard",
@@ -229,7 +239,10 @@
       "modality_massage_therapy",
       "organ_heart"
     ],
-    "synonyms": ["heart attack", "MI"]
+    "synonyms": [
+      "heart attack",
+      "MI"
+    ]
   },
   {
     "id": "contraindications_full_007",
@@ -246,7 +259,6 @@
     "long_explanation": "Clients with osteoporosis have fragile bones. Light pressure, support positioning, and avoiding joint compression allow massage to be performed safely with modification.",
     "clinical_application": "Use bolsters, avoid deep techniques, and educate elderly clients on benefits of gentle touch.",
     "source_reference": "FSMTB Special Populations Guide",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -279,7 +291,10 @@
       "joint_joint",
       "plan_plan"
     ],
-    "synonyms": ["bone thinning", "low bone density"]
+    "synonyms": [
+      "bone thinning",
+      "low bone density"
+    ]
   },
   {
     "id": "contraindications_full_008",
@@ -296,7 +311,6 @@
     "long_explanation": "Warts are caused by HPV and can spread through skin contact or contamination. Avoid direct pressure on affected sites, especially plantar warts on the feet.",
     "clinical_application": "Apply universal precautions and offer a hand or seated massage as an alternative.",
     "source_reference": "FSMTB Dermatology Standards",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "easy",
@@ -319,7 +333,10 @@
       "condition_localized_contraindication",
       "organ_skin"
     ],
-    "synonyms": ["verruca", "foot wart"]
+    "synonyms": [
+      "verruca",
+      "foot wart"
+    ]
   },
   {
     "id": "contraindications_full_009",
@@ -336,7 +353,6 @@
     "long_explanation": "Medications like warfarin or apixaban reduce clotting ability. Even moderate pressure can cause bruising or internal bleeding. Always use light techniques unless cleared by a physician.",
     "clinical_application": "Watch for signs of easy bruising, hematomas, or capillary fragility in elderly clients or those on long-term medication.",
     "source_reference": "AMTA Medication Guidelines",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -361,7 +377,10 @@
       "concept_thinners",
       "concept_blood_thinners"
     ],
-    "synonyms": ["blood thinning drugs", "bleeding risk"]
+    "synonyms": [
+      "blood thinning drugs",
+      "bleeding risk"
+    ]
   },
   {
     "id": "contraindications_full_010",
@@ -378,7 +397,6 @@
     "long_explanation": "This early phase (24–72 hours post-injury) involves redness, swelling, and pain. Massage can increase inflammation and disrupt natural healing if applied too soon.",
     "clinical_application": "Use RICE (rest, ice, compression, elevation) during inflammation. Massage is introduced later for scar remodeling or muscle relaxation.",
     "source_reference": "FSMTB Inflammation & Recovery Module",
-    "sourceFile": null,
     "filepath": "src/data/questions/pathology/contraindications/contraindications_full.json",
     "question_type": "multiple choice",
     "difficulty": "moderate",
@@ -411,6 +429,9 @@
       "condition_injury",
       "concept_recovery"
     ],
-    "synonyms": ["acute phase", "initial injury"]
+    "synonyms": [
+      "acute phase",
+      "initial injury"
+    ]
   }
 ]
