@@ -21,7 +21,7 @@
 - heading "Quiz" [level=1]
 - text: Topic
 - combobox "Topic":
-  - option "Abdominal Muscle Origins" [selected]
+  - option "Abdominal Muscle Origins"
   - option "Accessory Nerve"
   - option "Acetylcholine"
   - option "Acute Injury"
@@ -484,7 +484,7 @@
   - option "Ventricles Brain"
   - option "White Blood Cell Types"
   - option "Yellow Marrow"
-  - option "Z Lines"
+  - option "Z Lines" [selected]
 - text: "Quiz Length:"
 - spinbutton "Quiz Length": "1"
 - text: "Sort:"

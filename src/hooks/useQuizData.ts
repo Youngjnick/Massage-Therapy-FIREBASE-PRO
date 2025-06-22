@@ -21,7 +21,7 @@ export function useQuizData(selectedTopic: string, setSelectedTopic: (topic: str
     fetchQuizQuestions()
       .then((qs) => {
         setQuestions(qs);
-        if (!selectedTopic && availableTopics.length > 0) setSelectedTopic(availableTopics[0]);
+        if (!selectedTopic && availableTopics.length > 0) setSelectedTopic(availableTopics.at(-1) ?? "");
       })
       .catch((err) => {
         // eslint-disable-next-line no-console

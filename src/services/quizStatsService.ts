@@ -22,7 +22,7 @@ export async function updateQuizStatsOnFinish({
     if (!user) return;
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-      const topic = (q.topics && q.topics[0]) || 'Other';
+      const topic = (q.topics && q.topics.at(-1)) || 'Other';
       if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
       stats[topic].total++;
       if (
@@ -80,7 +80,7 @@ export async function updateQuizStatsOnAnswer({
     if (!user) return;
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
-      const topic = (q.topics && q.topics[0]) || 'Other';
+      const topic = (q.topics && q.topics.at(-1)) || 'Other';
       if (!stats[topic]) stats[topic] = { correct: 0, total: 0 };
       stats[topic].total++;
       if (

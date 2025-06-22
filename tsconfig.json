@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "es2022",
     "module": "esnext",
     "strict": true,
     "esModuleInterop": true,
@@ -10,7 +10,7 @@
     "rootDir": ".",
     "jsx": "react-jsx",
     "types": ["vite/client", "jest", "node"],
-    "lib": ["es2020", "dom"],
+    "lib": ["es2022", "dom"],
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
