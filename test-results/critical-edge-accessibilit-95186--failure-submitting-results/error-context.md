@@ -37,8 +37,8 @@
 - button "Try Another Quiz"
 - list:
   - listitem:
-    - strong: Which nerves innervate the transverse abdominis?
-    - text: "Your answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Correct answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Explanation: It is innervated by both thoracic and upper lumbar nerves. More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability. Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support."
+    - strong: Which abdominal muscle is the deepest layer of the lateral abdominal wall?
+    - text: "Your answer: Transverse abdominis Correct answer: Transverse abdominis Explanation: The transverse abdominis lies deepest in the abdominal wall. More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration. Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer."
 - button "Close"
 - contentinfo:
   - textbox "Search questions"

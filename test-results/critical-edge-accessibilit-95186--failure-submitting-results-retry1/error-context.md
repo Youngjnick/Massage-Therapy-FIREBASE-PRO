@@ -37,8 +37,8 @@
 - button "Try Another Quiz"
 - list:
   - listitem:
-    - strong: What nerve supplies the internal oblique muscle?
-    - text: "Your answer: Lower six thoracoabdominal nerves and L1 Correct answer: Lower six thoracoabdominal nerves and L1 Explanation: It is innervated by thoracoabdominal nerves and the L1 nerve. More Info: The internal oblique receives motor supply from thoracoabdominal nerves (T7–T11), subcostal (T12), and contributions from iliohypogastric and ilioinguinal nerves (L1), coordinating trunk flexion and abdominal compression. Clinical Application: Knowledge of this innervation helps when working with patients recovering from abdominal surgery or sports injuries."
+    - strong: What is the origin of the rectus abdominis muscle?
+    - text: "Your answer: Pubic crest and pubic symphysis Correct answer: Pubic crest and pubic symphysis Explanation: The rectus abdominis originates from the pubic crest and symphysis. More Info: The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation. Clinical Application: Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt."
 - button "Close"
 - contentinfo:
   - textbox "Search questions"

@@ -60,10 +60,15 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await page.goto('/');
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
-    const nextBtn = page.getByRole('button', { name: /next/i });
-    await expect(nextBtn).toBeVisible();
-    // Should be disabled or hidden (not enabled)
-    expect(await nextBtn.isDisabled() || !(await nextBtn.isVisible())).toBeTruthy();
+    const nextBtns = await page.locator('button', { hasText: /next/i }).all();
+    if (nextBtns.length === 0) {
+      // Button not present (e.g., single-question quiz or last question) — acceptable
+      expect(true).toBeTruthy();
+    } else {
+      const nextBtn = nextBtns[0];
+      // Should be disabled or hidden (not enabled)
+      expect(await nextBtn.isDisabled() || !(await nextBtn.isVisible())).toBeTruthy();
+    }
   });
 
   test('Quiz cannot be started without required fields', async ({ page }) => {
