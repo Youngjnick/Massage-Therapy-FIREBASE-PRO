@@ -2,8 +2,8 @@
 import React from 'react';
 
 interface QuizLengthInputProps {
-  quizLength: number;
-  setQuizLength: (len: number) => void;
+  quizLength: number | '';
+  setQuizLength: (len: number | '') => void;
   maxQuizLength: number;
   id?: string;
   "data-testid"?: string;
@@ -18,9 +18,9 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
           type="number"
           min={1}
           max={maxQuizLength}
-          value={quizLength}
+          value={quizLength === 0 ? '' : quizLength}
           onChange={e => {
-            const val = Math.max(1, Number(e.target.value));
+            const val = e.target.value === '' ? '' : Math.max(1, Number(e.target.value));
             setQuizLength(val);
           }}
           style={{ width: 60, marginLeft: 4 }}

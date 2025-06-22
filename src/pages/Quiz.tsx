@@ -83,8 +83,9 @@ const Quiz: React.FC = () => {
   // --- Derived variables (declare after quizQuestions/activeQuestions) ---
   const maxQuizLength = quizQuestions.length;
   // User can select a desired quiz length, but always clamp to available range
-  const [desiredQuizLength, setDesiredQuizLength] = useState<number>(5);
-  const quizLength = maxQuizLength === 0 ? 0 : Math.max(1, Math.min(desiredQuizLength, maxQuizLength));
+  const [desiredQuizLength, setDesiredQuizLength] = useState<number | ''>(5);
+  // Compute quizLength: if empty string, treat as 0
+  const quizLength = desiredQuizLength === '' ? 0 : (maxQuizLength === 0 ? 0 : Math.max(1, Math.min(desiredQuizLength, maxQuizLength)));
   const totalQuestions = started ? shuffledQuestions.length : quizQuestions.length;
   const progress = totalQuestions > 0 ? Math.round((userAnswers.filter((a) => a !== undefined).length / totalQuestions) * 100) : 0;
 
@@ -451,7 +452,7 @@ const Quiz: React.FC = () => {
           selectedTopic={selectedTopic}
           setSelectedTopic={setSelectedTopic}
           quizLength={quizLength}
-          setQuizLength={setDesiredQuizLength}
+          setQuizLength={val => setDesiredQuizLength(val === '' ? '' : Number(val))}
           maxQuizLength={maxQuizLength}
           sort={"default"}
           setSort={setSort}
