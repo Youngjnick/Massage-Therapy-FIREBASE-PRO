@@ -337,6 +337,8 @@ const Quiz: React.FC = () => {
   }, [showResults]);
 
   if (error) {
+    // Render error UI at the top of the quiz container, but allow quiz to remain visible if possible
+    // This ensures the error is visible for tests and users, even if the quiz is still on screen
     return (
       <div className="quiz-container" data-testid="quiz-container">
         <h1>Quiz</h1>

@@ -57,12 +57,9 @@ test('should reset quiz and focus first option after restart', async ({ page }) 
   // After reset, fill the start form again and start the quiz
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
-  // Debug: capture screenshot and log HTML before focus assertion
-  await page.screenshot({ path: 'debug-reset-quiz.png' });
-  const html = await page.content();
-  console.log('DEBUG HTML after quiz reset:', html);
-  // Use robust selector for radio input after restart
-  const input = await page.getByTestId('quiz-radio').first();
+  // Wait for the first radio input to be visible
+  const firstOption = page.getByTestId('quiz-option').first();
+  const input = await firstOption.locator('input[type="radio"]');
   await expect(input).toBeFocused();
 });
 

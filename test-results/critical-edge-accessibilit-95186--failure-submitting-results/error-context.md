@@ -1,0 +1,45 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation:
+  - list:
+    - listitem:
+      - link "Quiz":
+        - /url: /quiz
+    - listitem:
+      - link "Achievements":
+        - /url: /achievements
+    - listitem:
+      - link "Analytics":
+        - /url: /analytics
+    - listitem:
+      - link "Profile":
+        - /url: /profile
+- heading "Quiz" [level=1]
+- button "Start New Quiz"
+- heading "Results" [level=2]
+- text: anatomy 1 / 1 correct
+- heading "Accuracy by Topic" [level=4]
+- list:
+  - listitem: "anatomy: 1 / 1 correct (100%)"
+- heading "Quiz Results" [level=2]
+- paragraph: "Your score: 1 / 1"
+- strong: "Average Time per Question:"
+- text: 0 sec
+- strong: "Longest Correct Streak:"
+- text: "1"
+- strong: "Accuracy by Topic:"
+- list:
+  - listitem: "anatomy: 1 / 1 (100%)"
+- button "Try Another Quiz"
+- list:
+  - listitem:
+    - strong: What nerve supplies the internal oblique muscle?
+    - text: "Your answer: Lower six thoracoabdominal nerves and L1 Correct answer: Lower six thoracoabdominal nerves and L1 Explanation: It is innervated by thoracoabdominal nerves and the L1 nerve. More Info: The internal oblique receives motor supply from thoracoabdominal nerves (T7–T11), subcostal (T12), and contributions from iliohypogastric and ilioinguinal nerves (L1), coordinating trunk flexion and abdominal compression. Clinical Application: Knowledge of this innervation helps when working with patients recovering from abdominal surgery or sports injuries."
+- button "Close"
+- contentinfo:
+  - textbox "Search questions"
+```

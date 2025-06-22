@@ -155,9 +155,9 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
             </select>
           </label>
         )}
-        <button style={{ marginLeft: '1rem' }} type="submit" disabled={props.quizLength < 1 || props.maxQuizLength === 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
+        <button style={{ marginLeft: '1rem' }} type="submit" aria-label="Start Quiz" disabled={props.quizLength < 1 || props.maxQuizLength === 0 || !props.availableTopics || props.availableTopics.length === 0 || !props.selectedTopic}>Start Quiz</button>
         {error && (
-          <div style={{ color: 'red', marginTop: 12 }} data-testid="quiz-start-error">{error}</div>
+          <div style={{ color: 'red', marginTop: 12 }} data-testid="quiz-start-error" role="alert">{error}</div>
         )}
       </form>
       {props.showStartNewQuiz && (
