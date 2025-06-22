@@ -6,6 +6,9 @@ interface QuizTopicSelectProps {
   setSelectedTopic: (topic: string) => void;
 }
 
+const prettifyTopic = (topic: string) =>
+  topic.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
 const QuizTopicSelect: React.FC<QuizTopicSelectProps & { id?: string }> = ({ availableTopics, selectedTopic, setSelectedTopic, id }) => (
   <select
     value={selectedTopic}
@@ -14,7 +17,7 @@ const QuizTopicSelect: React.FC<QuizTopicSelectProps & { id?: string }> = ({ ava
     data-testid={id}
   >
     {availableTopics.map(topic => (
-      <option key={topic} value={topic}>{topic}</option>
+      <option key={topic} value={topic}>{prettifyTopic(topic)}</option>
     ))}
   </select>
 );
