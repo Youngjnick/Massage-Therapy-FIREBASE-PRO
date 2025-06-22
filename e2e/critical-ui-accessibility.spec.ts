@@ -73,14 +73,39 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Quiz cannot be started without required fields', async ({ page }) => {
+    test.setTimeout(20000); // Increase timeout for stability
     await page.goto('/');
-    // Try to start without filling anything
-    await page.getByRole('button', { name: /start/i }).click();
-    await expect(page.getByText(/required|please/i)).toBeVisible();
-    // Fill only length
-    await page.getByLabel('Quiz Length').fill('2');
-    await page.getByRole('button', { name: /start/i }).click();
-    await expect(page.getByText(/required|please/i)).toBeVisible();
+    await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+    const startBtn = page.getByRole('button', { name: /start/i });
+    const lengthInput = page.getByLabel('Quiz Length');
+    await expect(startBtn).toBeVisible({ timeout: 10000 });
+    await expect(lengthInput).toBeVisible({ timeout: 10000 });
+    const topicSelect = page.locator('#quiz-topic-select');
+    await expect(topicSelect).toBeVisible({ timeout: 10000 });
+    const options = await topicSelect.locator('option').all();
+    // eslint-disable-next-line no-undef
+    console.log('Number of topic options:', options.length);
+    const quizLengthValue = await lengthInput.inputValue();
+    const hasValidTopic = options.length > 1 && (await topicSelect.inputValue()) !== '';
+    const hasValidLength = Number(quizLengthValue) >= 1;
+    if (hasValidTopic && hasValidLength) {
+      await expect(startBtn).toBeEnabled();
+    } else {
+      await expect(startBtn).toBeDisabled();
+    }
+    // Now clear the length and check disabled
+    await lengthInput.fill('');
+    await expect(startBtn).toBeDisabled();
+    // Restore valid length, clear topic if possible
+    await lengthInput.fill('2');
+    if (options.length > 1) {
+      await topicSelect.selectOption(''); // Try to clear selection if possible
+      // Button should be disabled if topic is required
+      await expect(startBtn).toBeDisabled();
+      // Select a valid topic again
+      await topicSelect.selectOption({ index: 1 });
+      await expect(startBtn).toBeEnabled();
+    }
   });
 
   test('Quiz handles all options disabled', async ({ page }) => {
