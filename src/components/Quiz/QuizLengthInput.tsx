@@ -16,7 +16,7 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
         Quiz Length:
         <input
           type="number"
-          min={maxQuizLength === 0 ? 0 : 1}
+          min={1}
           max={maxQuizLength}
           value={quizLength}
           onChange={e => setQuizLength(Number(e.target.value))}

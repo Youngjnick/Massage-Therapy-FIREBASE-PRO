@@ -5,6 +5,11 @@ import { getAuth } from 'firebase/auth';
 import { Question } from '../types';
 import { fileList as questionFileList } from '../questions/fileList';
 
+// Pure function for fetching quiz questions
+export async function fetchQuizQuestions() {
+  return getQuestions();
+}
+
 export function useQuizData(selectedTopic: string, setSelectedTopic: (topic: string) => void) {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
@@ -13,7 +18,7 @@ export function useQuizData(selectedTopic: string, setSelectedTopic: (topic: str
   const availableTopics = (questionFileList as string[]).map((f: string) => f.replace(/\.json$/, ''));
 
   useEffect(() => {
-    getQuestions()
+    fetchQuizQuestions()
       .then((qs) => {
         setQuestions(qs);
         if (!selectedTopic && availableTopics.length > 0) setSelectedTopic(availableTopics[0]);

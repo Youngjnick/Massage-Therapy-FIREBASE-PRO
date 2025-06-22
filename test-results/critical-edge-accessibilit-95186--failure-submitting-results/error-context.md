@@ -37,8 +37,8 @@
 - button "Try Another Quiz"
 - list:
   - listitem:
-    - strong: Which abdominal muscle is the deepest layer of the lateral abdominal wall?
-    - text: "Your answer: Transverse abdominis Correct answer: Transverse abdominis Explanation: The transverse abdominis lies deepest in the abdominal wall. More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration. Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer."
+    - strong: What is the origin of the external oblique muscle?
+    - text: "Your answer: External surfaces of ribs 5–12 Correct answer: External surfaces of ribs 5–12 Explanation: The external oblique arises from ribs 5 to 12. More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression. Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture."
 - button "Close"
 - contentinfo:
   - textbox "Search questions"
