@@ -336,20 +336,6 @@ const Quiz: React.FC = () => {
     return () => { if (unsubscribe) unsubscribe(); };
   }, [showResults]);
 
-  if (error) {
-    // Render error UI at the top of the quiz container, but allow quiz to remain visible if possible
-    // This ensures the error is visible for tests and users, even if the quiz is still on screen
-    return (
-      <div className="quiz-container" data-testid="quiz-container">
-        <h1>Quiz</h1>
-        <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
-          {error}
-        </div>
-        <button onClick={() => window.location.reload()} style={{ marginTop: 16 }}>Retry</button>
-      </div>
-    );
-  }
-
   if (loading) {
     return (
       <div className="quiz-container" data-testid="quiz-container">
@@ -391,6 +377,13 @@ const Quiz: React.FC = () => {
       {error && (
         <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
           {error}
+          <button
+            onClick={() => setError(null)}
+            style={{ marginLeft: 16, fontSize: 14, padding: '2px 10px', borderRadius: 6, border: 'none', background: '#fee2e2', color: '#b91c1c', cursor: 'pointer' }}
+            aria-label="Dismiss error"
+          >
+            Dismiss
+          </button>
         </div>
       )}
       {warning && (

@@ -37,8 +37,8 @@
 - button "Try Another Quiz"
 - list:
   - listitem:
-    - strong: Which nerves innervate the transverse abdominis?
-    - text: "Your answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Correct answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Explanation: It is innervated by both thoracic and upper lumbar nerves. More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability. Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support."
+    - strong: What nerve supplies the internal oblique muscle?
+    - text: "Your answer: Lower six thoracoabdominal nerves and L1 Correct answer: Lower six thoracoabdominal nerves and L1 Explanation: It is innervated by thoracoabdominal nerves and the L1 nerve. More Info: The internal oblique receives motor supply from thoracoabdominal nerves (T7–T11), subcostal (T12), and contributions from iliohypogastric and ilioinguinal nerves (L1), coordinating trunk flexion and abdominal compression. Clinical Application: Knowledge of this innervation helps when working with patients recovering from abdominal surgery or sports injuries."
 - button "Close"
 - contentinfo:
   - textbox "Search questions"
