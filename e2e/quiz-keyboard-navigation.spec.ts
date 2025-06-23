@@ -63,7 +63,7 @@ test.describe('Quiz keyboard navigation', () => {
       if (reactRoot && (window as any).__REACT_DEVTOOLS_GLOBAL_HOOK__) {
         // Try to find userAnswers in React state (best effort)
         // eslint-disable-next-line no-console
-        console.log('BROWSER userAnswers:', window.userAnswers);
+        console.log('BROWSER userAnswers:', (window as any).userAnswers);
       }
     });
     const radios = page.locator('[role="radio"]');

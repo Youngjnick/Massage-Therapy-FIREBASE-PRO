@@ -133,7 +133,7 @@ const QuizOption: React.FC<QuizOptionProps> = ({
         type="radio"
         name={name}
         checked={selected}
-        onChange={e => {
+        onChange={() => {
           // Do nothing: prevent arrow key navigation from selecting/submitting
         }}
         aria-label={`Option ${labelStr}: ${optionStr}`}
