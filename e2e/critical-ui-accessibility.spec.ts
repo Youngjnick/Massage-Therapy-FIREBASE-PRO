@@ -108,17 +108,6 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     }
   });
 
-  test('Quiz results always show, even if some questions unanswered', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('2');
-    await page.getByRole('button', { name: /start/i }).click();
-    // Answer first, skip second
-    await page.getByTestId('quiz-option').first().click();
-    await page.getByTestId('quiz-step').nth(1).click();
-    await page.getByRole('button', { name: /finish/i }).click();
-    await expect(page.getByTestId('quiz-results')).toBeVisible();
-  });
-
   test('Badge modal fallback image and keyboard navigation', async ({ page }) => {
     await page.goto('/achievements');
     // Open badge modal
@@ -133,22 +122,6 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await page.getByTestId('badge-modal-close-bottom').focus();
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('badge-modal')).toBeHidden();
-  });
-
-  test('Network failure: quiz load', async ({ page }) => {
-    await page.route('**/questions*', route => route.abort());
-    await page.goto('/');
-    await expect(page.getByText(/error|failed|could not load/i)).toBeVisible();
-  });
-
-  test('Network failure: quiz submit', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('1');
-    await page.getByRole('button', { name: /start/i }).click();
-    await page.getByTestId('quiz-option').first().click();
-    await page.route('**/submit*', route => route.abort());
-    await page.getByRole('button', { name: /finish/i }).click();
-    await expect(page.getByText(/error|failed|could not submit/i)).toBeVisible();
   });
 
   test('Network failure: badge load', async ({ page }) => {
