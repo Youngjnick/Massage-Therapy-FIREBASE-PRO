@@ -12,7 +12,7 @@ test.describe('Quiz keyboard navigation', () => {
       if (msg.type() === 'log') {
         // Only print logs from QuizQuestionCard
         if (msg.text().includes('[QuizQuestionCard]')) {
-          // eslint-disable-next-line no-console
+           
           // @ts-ignore
           globalThis.console.log('BROWSER LOG:', msg.text());
         }
@@ -62,7 +62,7 @@ test.describe('Quiz keyboard navigation', () => {
       const reactRoot = document.querySelector('[data-testid="quiz-container"]');
       if (reactRoot && (window as any).__REACT_DEVTOOLS_GLOBAL_HOOK__) {
         // Try to find userAnswers in React state (best effort)
-        // eslint-disable-next-line no-console
+         
         console.log('BROWSER userAnswers:', (window as any).userAnswers);
       }
     });
