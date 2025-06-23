@@ -8,7 +8,8 @@ test.beforeEach(async ({ page }) => {
 
 // This test assumes a user is already authenticated or uses a test account.
 test.describe('Quiz Stats Live Update', () => {
-  test('Stats and topic stats update after quiz completion', async ({ page }) => {
+  // Skipped: Stats and topic stats update after quiz completion (redundant, covered by integration test)
+  test.skip('Stats and topic stats update after quiz completion', async ({ page }) => {
     // Go to analytics page and record initial stats
     await page.goto('/analytics');
     await page.waitForSelector('h1');
