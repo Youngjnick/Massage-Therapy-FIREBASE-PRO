@@ -1,1 +1,1 @@
-// Deleted: This test file was removed because the tested UI flow is now single-step (answer is submitted on radio click), and this test expected a two-step flow. See integration tests for real user flow coverage.
+// Deleted: This test file was removed because it contained no tests. See integration tests for real user flow coverage.
