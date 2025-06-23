@@ -32,7 +32,10 @@ const QuizActions: React.FC<QuizActionsProps> = ({
     </button>
     {/* Always render Finish button, but disable as appropriate */}
     <button
-      onClick={onFinish}
+      onClick={() => {
+        console.log('[QuizActions] Finish clicked', { answered, current, total });
+        onFinish();
+      }}
       disabled={!answered}
       aria-label={current < total - 1 ? 'Finish quiz early' : 'Finish quiz'}
     >
