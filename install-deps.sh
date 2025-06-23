@@ -15,3 +15,12 @@ echo "Installing Playwright browsers..."
 npx playwright install
 
 echo "All dependencies installed!"
+
+echo "Ensuring jest-dom matchers are available for all test environments..."
+# Add jest-dom import to both setupTests.js and setupTests.ts if not present
+if ! grep -q "@testing-library/jest-dom" src/setupTests.js 2>/dev/null; then
+  echo "import '@testing-library/jest-dom';" >> src/setupTests.js
+fi
+if ! grep -q "@testing-library/jest-dom" src/setupTests.ts 2>/dev/null; then
+  echo "import '@testing-library/jest-dom';" >> src/setupTests.ts
+fi
