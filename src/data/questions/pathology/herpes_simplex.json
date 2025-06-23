@@ -1,8 +1,8 @@
 [
   {
     "id": "herpes_simplex_001",
-    "correctAnswer": "Herpes simplex virus",
     "question": "What virus causes herpes simplex infections?",
+    "correctAnswer": "Herpes simplex virus",
     "options": [
       "Varicella-zoster virus",
       "Epstein-Barr virus",
@@ -22,30 +22,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "HSV",
-      "virus",
-      "infection"
-    ],
-    "keywords": [
-      "herpesvirus",
-      "cold sores",
-      "genital herpes"
-    ],
-    "synonyms": [
-      "HSV"
-    ]
+    "tags": ["HSV", "virus", "infection"],
+    "keywords": ["herpesvirus", "cold sores", "genital herpes"],
+    "synonyms": ["HSV"]
   },
   {
     "id": "herpes_simplex_002",
-    "correctAnswer": "HSV-1",
     "question": "Which type of herpes simplex virus is most commonly associated with cold sores?",
-    "options": [
-      "HSV-1",
-      "HSV-2",
-      "Varicella-zoster",
-      "HPV"
-    ],
+    "correctAnswer": "HSV-1",
+    "options": ["HSV-1", "HSV-2", "Varicella-zoster", "HPV"],
     "topics": ["pathology", "herpes_simplex"],
     "short_explanation": "HSV-1 typically causes oral herpes.",
     "long_explanation": "HSV-1 is primarily responsible for cold sores or fever blisters around the mouth, often acquired in childhood.",
@@ -59,30 +44,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "oral herpes",
-      "cold sores",
-      "HSV-1"
-    ],
-    "keywords": [
-      "fever blister",
-      "mouth lesion",
-      "facial herpes"
-    ],
-    "synonyms": [
-      "oral herpes"
-    ]
+    "tags": ["oral herpes", "cold sores", "HSV-1"],
+    "keywords": ["fever blister", "mouth lesion", "facial herpes"],
+    "synonyms": ["oral herpes"]
   },
   {
     "id": "herpes_simplex_003",
-    "correctAnswer": "Sensory nerve ganglia",
     "question": "Where does the herpes simplex virus remain latent after initial infection?",
-    "options": [
-      "Bloodstream",
-      "Dermis",
-      "Sensory nerve ganglia",
-      "Thymus"
-    ],
+    "correctAnswer": "Sensory nerve ganglia",
+    "options": ["Bloodstream", "Dermis", "Sensory nerve ganglia", "Thymus"],
     "topics": ["pathology", "herpes_simplex"],
     "short_explanation": "HSV lies dormant in sensory ganglia like trigeminal or sacral nerves.",
     "long_explanation": "Once infected, the virus travels along nerves and stays dormant in ganglia, often reactivating during stress or immune suppression.",
@@ -96,24 +66,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "latency",
-      "ganglia",
-      "reactivation"
-    ],
-    "keywords": [
-      "nerve",
-      "trigeminal",
-      "sacral"
-    ],
-    "synonyms": [
-      "latent herpes"
-    ]
+    "tags": ["latency", "ganglia", "reactivation"],
+    "keywords": ["nerve", "trigeminal", "sacral"],
+    "synonyms": ["latent herpes"]
   },
   {
     "id": "herpes_simplex_004",
-    "correctAnswer": "Fever, stress, or sunlight",
     "question": "What triggers herpes simplex virus reactivation?",
+    "correctAnswer": "Fever, stress, or sunlight",
     "options": [
       "Vaccination",
       "Antibiotics",
@@ -133,25 +93,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "trigger",
-      "reactivation",
-      "sunlight"
-    ],
-    "keywords": [
-      "UV",
-      "fever",
-      "stress",
-      "suppress"
-    ],
-    "synonyms": [
-      "recurrent herpes"
-    ]
+    "tags": ["trigger", "reactivation", "sunlight"],
+    "keywords": ["UV", "fever", "stress", "suppress"],
+    "synonyms": ["recurrent herpes"]
   },
   {
     "id": "herpes_simplex_005",
-    "correctAnswer": "Direct skin-to-skin contact",
     "question": "How is herpes simplex virus most commonly transmitted?",
+    "correctAnswer": "Direct skin-to-skin contact",
     "options": [
       "Airborne droplets",
       "Contaminated water",
@@ -171,25 +120,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "transmission",
-      "contact",
-      "viral spread"
-    ],
-    "keywords": [
-      "skin contact",
-      "mucosa",
-      "kissing"
-    ],
-    "synonyms": [
-      "spread",
-      "contagious herpes"
-    ]
+    "tags": ["transmission", "contact", "viral spread"],
+    "keywords": ["skin contact", "mucosa", "kissing"],
+    "synonyms": ["spread", "contagious herpes"]
   },
   {
     "id": "herpes_simplex_006",
-    "correctAnswer": "Genital and perineal areas",
     "question": "Which body region is most commonly affected by HSV-2?",
+    "correctAnswer": "Genital and perineal areas",
     "options": [
       "Oral cavity",
       "Nasal passages",
@@ -209,24 +147,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "HSV-2",
-      "genital",
-      "STI"
-    ],
-    "keywords": [
-      "sexually transmitted",
-      "lesion",
-      "anogenital"
-    ],
-    "synonyms": [
-      "genital herpes"
-    ]
+    "tags": ["HSV-2", "genital", "STI"],
+    "keywords": ["sexually transmitted", "lesion", "anogenital"],
+    "synonyms": ["genital herpes"]
   },
   {
     "id": "herpes_simplex_007",
-    "correctAnswer": "Itching, tingling, or burning",
     "question": "Which symptom typically precedes the appearance of a herpes lesion?",
+    "correctAnswer": "Itching, tingling, or burning",
     "options": [
       "Fever and chills",
       "Itching, tingling, or burning",
@@ -246,24 +174,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "prodrome",
-      "symptom",
-      "early sign"
-    ],
-    "keywords": [
-      "itching",
-      "burning",
-      "warning"
-    ],
-    "synonyms": [
-      "early herpes symptoms"
-    ]
+    "tags": ["prodrome", "symptom", "early sign"],
+    "keywords": ["itching", "burning", "warning"],
+    "synonyms": ["early herpes symptoms"]
   },
   {
     "id": "herpes_simplex_008",
-    "correctAnswer": "Contact precautions",
     "question": "What type of precaution is recommended in a healthcare or massage setting to prevent HSV transmission?",
+    "correctAnswer": "Contact precautions",
     "options": [
       "Contact precautions",
       "Droplet precautions",
@@ -283,24 +201,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "infection control",
-      "PPE",
-      "precautions"
-    ],
-    "keywords": [
-      "gloves",
-      "hygiene",
-      "sanitation"
-    ],
-    "synonyms": [
-      "standard precautions"
-    ]
+    "tags": ["infection control", "PPE", "precautions"],
+    "keywords": ["gloves", "hygiene", "sanitation"],
+    "synonyms": ["standard precautions"]
   },
   {
     "id": "herpes_simplex_009",
-    "correctAnswer": "Oral antivirals",
     "question": "Which treatment is most effective for managing herpes simplex symptoms?",
+    "correctAnswer": "Oral antivirals",
     "options": [
       "Topical steroids",
       "Oral antivirals",
@@ -320,24 +228,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "treatment",
-      "antiviral",
-      "medication"
-    ],
-    "keywords": [
-      "acyclovir",
-      "valacyclovir",
-      "famciclovir"
-    ],
-    "synonyms": [
-      "herpes medication"
-    ]
+    "tags": ["treatment", "antiviral", "medication"],
+    "keywords": ["acyclovir", "valacyclovir", "famciclovir"],
+    "synonyms": ["herpes medication"]
   },
   {
     "id": "herpes_simplex_010",
-    "correctAnswer": "It may spread the virus through contact",
     "question": "Why should massage be avoided during active herpes simplex outbreaks?",
+    "correctAnswer": "It may spread the virus through contact",
     "options": [
       "It worsens inflammation",
       "It increases risk of autoimmune disorders",
@@ -357,18 +255,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "contraindication",
-      "outbreak",
-      "infection risk"
-    ],
-    "keywords": [
-      "lesions",
-      "transmission",
-      "massage safety"
-    ],
-    "synonyms": [
-      "massage contraindication"
-    ]
+    "tags": ["contraindication", "outbreak", "infection risk"],
+    "keywords": ["lesions", "transmission", "massage safety"],
+    "synonyms": ["massage contraindication"]
   }
 ]

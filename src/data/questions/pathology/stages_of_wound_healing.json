@@ -1,8 +1,8 @@
 [
   {
     "id": "stages_of_wound_healing_001",
-    "correctAnswer": "Inflammatory phase",
     "question": "Which phase of wound healing begins immediately after injury?",
+    "correctAnswer": "Inflammatory phase",
     "options": [
       "Proliferative phase",
       "Maturation phase",
@@ -22,25 +22,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "wound healing",
-      "inflammatory",
-      "hemostasis"
-    ],
-    "keywords": [
-      "acute",
-      "hemostasis",
-      "neutrophils"
-    ],
-    "synonyms": [
-      "initial phase",
-      "early response"
-    ]
+    "tags": ["wound healing", "inflammatory", "hemostasis"],
+    "keywords": ["acute", "hemostasis", "neutrophils"],
+    "synonyms": ["initial phase", "early response"]
   },
   {
     "id": "stages_of_wound_healing_002",
-    "correctAnswer": "Fibroblast proliferation",
     "question": "What key cellular activity dominates the proliferative phase?",
+    "correctAnswer": "Fibroblast proliferation",
     "options": [
       "Platelet degranulation",
       "Collagen remodeling",
@@ -60,30 +49,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "fibroblasts",
-      "proliferation",
-      "granulation"
-    ],
-    "keywords": [
-      "ECM",
-      "angiogenesis",
-      "type III collagen"
-    ],
-    "synonyms": [
-      "fibroplasia"
-    ]
+    "tags": ["fibroblasts", "proliferation", "granulation"],
+    "keywords": ["ECM", "angiogenesis", "type III collagen"],
+    "synonyms": ["fibroplasia"]
   },
   {
     "id": "stages_of_wound_healing_003",
-    "correctAnswer": "Proliferation",
     "question": "During which phase is angiogenesis most active?",
-    "options": [
-      "Hemostasis",
-      "Inflammation",
-      "Proliferation",
-      "Maturation"
-    ],
+    "correctAnswer": "Proliferation",
+    "options": ["Hemostasis", "Inflammation", "Proliferation", "Maturation"],
     "topics": ["pathology", "stages_of_wound_healing"],
     "short_explanation": "Angiogenesis occurs primarily during the proliferative phase.",
     "long_explanation": "New blood vessels form to support metabolically active tissue regrowth. VEGF and fibroblast activity play central roles in revascularization.",
@@ -97,24 +71,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "angiogenesis",
-      "vascular",
-      "proliferative"
-    ],
-    "keywords": [
-      "VEGF",
-      "capillary sprouting",
-      "blood supply"
-    ],
-    "synonyms": [
-      "neovascularization"
-    ]
+    "tags": ["angiogenesis", "vascular", "proliferative"],
+    "keywords": ["VEGF", "capillary sprouting", "blood supply"],
+    "synonyms": ["neovascularization"]
   },
   {
     "id": "stages_of_wound_healing_004",
-    "correctAnswer": "Scar contraction",
     "question": "What signals the start of the maturation (remodeling) phase?",
+    "correctAnswer": "Scar contraction",
     "options": [
       "Clot formation",
       "Scar contraction",
@@ -134,30 +98,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "remodeling",
-      "maturation",
-      "scar"
-    ],
-    "keywords": [
-      "collagen transition",
-      "myofibroblasts",
-      "contraction"
-    ],
-    "synonyms": [
-      "remodeling phase"
-    ]
+    "tags": ["remodeling", "maturation", "scar"],
+    "keywords": ["collagen transition", "myofibroblasts", "contraction"],
+    "synonyms": ["remodeling phase"]
   },
   {
     "id": "stages_of_wound_healing_005",
-    "correctAnswer": "Type I collagen",
     "question": "Which protein replaces type III collagen in the final scar?",
-    "options": [
-      "Type II collagen",
-      "Elastin",
-      "Type I collagen",
-      "Fibrin"
-    ],
+    "correctAnswer": "Type I collagen",
+    "options": ["Type II collagen", "Elastin", "Type I collagen", "Fibrin"],
     "topics": ["pathology", "stages_of_wound_healing"],
     "short_explanation": "Type I collagen provides tensile strength in mature scars.",
     "long_explanation": "Initial repair uses type III collagen, which is gradually replaced by stronger type I collagen to restore tissue integrity.",
@@ -171,30 +120,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "collagen",
-      "scarring",
-      "tensile strength"
-    ],
-    "keywords": [
-      "type I collagen",
-      "scar tissue",
-      "replacement"
-    ],
-    "synonyms": [
-      "fibrous remodeling"
-    ]
+    "tags": ["collagen", "scarring", "tensile strength"],
+    "keywords": ["type I collagen", "scar tissue", "replacement"],
+    "synonyms": ["fibrous remodeling"]
   },
   {
     "id": "stages_of_wound_healing_006",
-    "correctAnswer": "Neutrophils",
     "question": "Which cells are first to arrive at the wound site during the inflammatory phase?",
-    "options": [
-      "Fibroblasts",
-      "Macrophages",
-      "Neutrophils",
-      "Keratinocytes"
-    ],
+    "correctAnswer": "Neutrophils",
+    "options": ["Fibroblasts", "Macrophages", "Neutrophils", "Keratinocytes"],
     "topics": ["pathology", "stages_of_wound_healing"],
     "short_explanation": "Neutrophils are first responders in wound healing.",
     "long_explanation": "Neutrophils arrive within minutes to phagocytose bacteria and debris, setting the stage for subsequent immune and tissue repair processes.",
@@ -208,24 +142,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "inflammation",
-      "immune",
-      "neutrophils"
-    ],
-    "keywords": [
-      "phagocytosis",
-      "acute inflammation",
-      "first response"
-    ],
-    "synonyms": [
-      "polymorphonuclear leukocytes"
-    ]
+    "tags": ["inflammation", "immune", "neutrophils"],
+    "keywords": ["phagocytosis", "acute inflammation", "first response"],
+    "synonyms": ["polymorphonuclear leukocytes"]
   },
   {
     "id": "stages_of_wound_healing_007",
-    "correctAnswer": "They clean debris and signal repair",
     "question": "What role do macrophages play in wound healing?",
+    "correctAnswer": "They clean debris and signal repair",
     "options": [
       "They form granulation tissue",
       "They produce scar collagen",
@@ -245,24 +169,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "macrophage",
-      "healing",
-      "growth factors"
-    ],
-    "keywords": [
-      "TGF-beta",
-      "cleanup",
-      "repair signaling"
-    ],
-    "synonyms": [
-      "monocytes (mature)"
-    ]
+    "tags": ["macrophage", "healing", "growth factors"],
+    "keywords": ["TGF-beta", "cleanup", "repair signaling"],
+    "synonyms": ["monocytes (mature)"]
   },
   {
     "id": "stages_of_wound_healing_008",
-    "correctAnswer": "Highly vascular connective tissue",
     "question": "Which of the following best describes granulation tissue?",
+    "correctAnswer": "Highly vascular connective tissue",
     "options": [
       "Dead fibrous tissue",
       "Highly vascular connective tissue",
@@ -282,24 +196,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "granulation",
-      "capillaries",
-      "fibroblasts"
-    ],
-    "keywords": [
-      "new tissue",
-      "vascular",
-      "proliferation"
-    ],
-    "synonyms": [
-      "repair bed"
-    ]
+    "tags": ["granulation", "capillaries", "fibroblasts"],
+    "keywords": ["new tissue", "vascular", "proliferation"],
+    "synonyms": ["repair bed"]
   },
   {
     "id": "stages_of_wound_healing_009",
-    "correctAnswer": "Size and cleanliness of the wound",
     "question": "What determines whether wound healing is primary or secondary intention?",
+    "correctAnswer": "Size and cleanliness of the wound",
     "options": [
       "Size and cleanliness of the wound",
       "Patient hydration levels",
@@ -319,24 +223,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "intention",
-      "healing type",
-      "scar formation"
-    ],
-    "keywords": [
-      "primary",
-      "secondary",
-      "approximation"
-    ],
-    "synonyms": [
-      "healing path"
-    ]
+    "tags": ["intention", "healing type", "scar formation"],
+    "keywords": ["primary", "secondary", "approximation"],
+    "synonyms": ["healing path"]
   },
   {
     "id": "stages_of_wound_healing_010",
-    "correctAnswer": "Smoking",
     "question": "Which factor most significantly delays wound healing?",
+    "correctAnswer": "Smoking",
     "options": [
       "Protein-rich diet",
       "Moist wound environment",
@@ -356,18 +250,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "healing delay",
-      "smoking",
-      "oxygen"
-    ],
-    "keywords": [
-      "vasoconstriction",
-      "nicotine",
-      "hypoxia"
-    ],
-    "synonyms": [
-      "healing inhibitors"
-    ]
+    "tags": ["healing delay", "smoking", "oxygen"],
+    "keywords": ["vasoconstriction", "nicotine", "hypoxia"],
+    "synonyms": ["healing inhibitors"]
   }
 ]

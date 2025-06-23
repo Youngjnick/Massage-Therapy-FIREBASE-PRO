@@ -1,8 +1,8 @@
 [
   {
     "id": "addisons_disease_001",
-    "correctAnswer": "Adrenal cortex",
     "question": "What gland is primarily affected in Addison’s disease?",
+    "correctAnswer": "Adrenal cortex",
     "options": [
       "Pituitary gland",
       "Thyroid gland",
@@ -22,22 +22,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "adrenal cortex",
-      "hormone deficiency",
-      "Addison’s"
-    ],
-    "keywords": [
-      "endocrine",
-      "cortisol",
-      "aldosterone"
-    ],
+    "tags": ["adrenal cortex", "hormone deficiency", "Addison’s"],
+    "keywords": ["endocrine", "cortisol", "aldosterone"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_002",
-    "correctAnswer": "Cortisol and aldosterone",
     "question": "Which two hormones are deficient in Addison’s disease?",
+    "correctAnswer": "Cortisol and aldosterone",
     "options": [
       "Insulin and glucagon",
       "Cortisol and aldosterone",
@@ -57,22 +49,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "cortisol",
-      "aldosterone",
-      "steroid hormones"
-    ],
-    "keywords": [
-      "glucocorticoid",
-      "mineralocorticoid",
-      "hypofunction"
-    ],
+    "tags": ["cortisol", "aldosterone", "steroid hormones"],
+    "keywords": ["glucocorticoid", "mineralocorticoid", "hypofunction"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_003",
-    "correctAnswer": "Low blood pressure",
     "question": "Which of the following is a common symptom of Addison’s disease?",
+    "correctAnswer": "Low blood pressure",
     "options": [
       "Hyperactivity",
       "Low blood pressure",
@@ -92,22 +76,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "hypotension",
-      "aldosterone",
-      "sodium loss"
-    ],
-    "keywords": [
-      "blood pressure",
-      "fatigue",
-      "volume loss"
-    ],
+    "tags": ["hypotension", "aldosterone", "sodium loss"],
+    "keywords": ["blood pressure", "fatigue", "volume loss"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_004",
-    "correctAnswer": "Dark pigmentation (hyperpigmentation)",
     "question": "What skin sign is often associated with Addison’s disease?",
+    "correctAnswer": "Dark pigmentation (hyperpigmentation)",
     "options": [
       "Pale patches",
       "Dark pigmentation (hyperpigmentation)",
@@ -127,22 +103,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "skin signs",
-      "hyperpigmentation",
-      "ACTH"
-    ],
-    "keywords": [
-      "melanin",
-      "skin tone",
-      "bronzing"
-    ],
+    "tags": ["skin signs", "hyperpigmentation", "ACTH"],
+    "keywords": ["melanin", "skin tone", "bronzing"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_005",
-    "correctAnswer": "Hyponatremia and hyperkalemia",
     "question": "Which electrolyte imbalance is typical in Addison’s disease?",
+    "correctAnswer": "Hyponatremia and hyperkalemia",
     "options": [
       "Hypernatremia and hypokalemia",
       "Hyponatremia and hyperkalemia",
@@ -162,22 +130,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "electrolytes",
-      "aldosterone",
-      "Addison's"
-    ],
-    "keywords": [
-      "sodium loss",
-      "potassium retention",
-      "fatigue"
-    ],
+    "tags": ["electrolytes", "aldosterone", "Addison's"],
+    "keywords": ["sodium loss", "potassium retention", "fatigue"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_006",
-    "correctAnswer": "Autoimmune destruction of the adrenal cortex",
     "question": "What is the most common cause of Addison’s disease in developed countries?",
+    "correctAnswer": "Autoimmune destruction of the adrenal cortex",
     "options": [
       "Tuberculosis",
       "Autoimmune destruction of the adrenal cortex",
@@ -197,22 +157,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "autoimmune",
-      "adrenal",
-      "destruction"
-    ],
-    "keywords": [
-      "primary insufficiency",
-      "cortisol",
-      "aldosterone"
-    ],
+    "tags": ["autoimmune", "adrenal", "destruction"],
+    "keywords": ["primary insufficiency", "cortisol", "aldosterone"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_007",
-    "correctAnswer": "A sudden drop in blood pressure and cortisol levels",
     "question": "What is an Addisonian crisis?",
+    "correctAnswer": "A sudden drop in blood pressure and cortisol levels",
     "options": [
       "A sudden drop in blood pressure and cortisol levels",
       "A seizure related to glucose deficiency",
@@ -232,28 +184,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "adrenal crisis",
-      "hypotension",
-      "emergency"
-    ],
-    "keywords": [
-      "cortisol",
-      "collapse",
-      "adrenal insufficiency"
-    ],
+    "tags": ["adrenal crisis", "hypotension", "emergency"],
+    "keywords": ["cortisol", "collapse", "adrenal insufficiency"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_008",
-    "correctAnswer": "ACTH",
     "question": "Which hormone is usually elevated in primary Addison’s disease due to feedback mechanisms?",
-    "options": [
-      "TSH",
-      "Growth hormone",
-      "ACTH",
-      "Prolactin"
-    ],
+    "correctAnswer": "ACTH",
+    "options": ["TSH", "Growth hormone", "ACTH", "Prolactin"],
     "topics": ["pathology", "addisons_disease"],
     "short_explanation": "ACTH increases in response to low cortisol.",
     "long_explanation": "The pituitary increases ACTH production in an attempt to stimulate cortisol release from the failing adrenal glands, often leading to hyperpigmentation via melanocyte stimulation.",
@@ -267,22 +206,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "ACTH",
-      "pituitary",
-      "feedback loop"
-    ],
-    "keywords": [
-      "hormonal feedback",
-      "melanin",
-      "adrenal-pituitary axis"
-    ],
+    "tags": ["ACTH", "pituitary", "feedback loop"],
+    "keywords": ["hormonal feedback", "melanin", "adrenal-pituitary axis"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_009",
-    "correctAnswer": "Corticosteroid replacement therapy",
     "question": "What treatment is typically required for Addison’s disease?",
+    "correctAnswer": "Corticosteroid replacement therapy",
     "options": [
       "Insulin injections",
       "Corticosteroid replacement therapy",
@@ -302,22 +233,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "corticosteroids",
-      "treatment",
-      "Addison's"
-    ],
-    "keywords": [
-      "hormone replacement",
-      "hydrocortisone",
-      "chronic care"
-    ],
+    "tags": ["corticosteroids", "treatment", "Addison's"],
+    "keywords": ["hormone replacement", "hydrocortisone", "chronic care"],
     "synonyms": null
   },
   {
     "id": "addisons_disease_010",
-    "correctAnswer": "Monitor for fatigue, dizziness, or low BP during sessions",
     "question": "Which of the following would be a **massage consideration** for a client with Addison’s disease?",
+    "correctAnswer": "Monitor for fatigue, dizziness, or low BP during sessions",
     "options": [
       "Use deep pressure to increase circulation",
       "Avoid all massage unless under supervision",
@@ -337,16 +260,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "massage caution",
-      "hypotension",
-      "energy management"
-    ],
-    "keywords": [
-      "adaptation",
-      "fatigue",
-      "low BP"
-    ],
+    "tags": ["massage caution", "hypotension", "energy management"],
+    "keywords": ["adaptation", "fatigue", "low BP"],
     "synonyms": null
   }
 ]

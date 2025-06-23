@@ -1,14 +1,9 @@
 [
   {
     "id": "lungs_001",
-    "correctAnswer": "Right lung",
     "question": "Which lung has three lobes?",
-    "options": [
-      "Left lung",
-      "Right lung",
-      "Both lungs",
-      "Neither lung"
-    ],
+    "correctAnswer": "Right lung",
+    "options": ["Left lung", "Right lung", "Both lungs", "Neither lung"],
     "topics": ["anatomy", "organs", "lungs", "lungs"],
     "short_explanation": "The right lung has three lobes: superior, middle, and inferior.",
     "long_explanation": "The right lung is larger and has three lobes separated by the horizontal and oblique fissures, while the left lung has two lobes to accommodate the heart.",
@@ -22,22 +17,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "right lung",
-      "lung lobes",
-      "anatomy"
-    ],
-    "keywords": [
-      "lobes",
-      "right lung",
-      "thoracic cavity"
-    ],
+    "tags": ["right lung", "lung lobes", "anatomy"],
+    "keywords": ["lobes", "right lung", "thoracic cavity"],
     "synonyms": null
   },
   {
     "id": "lungs_002",
-    "correctAnswer": "Diaphragm",
     "question": "What is the main muscle responsible for inspiration?",
+    "correctAnswer": "Diaphragm",
     "options": [
       "Diaphragm",
       "Intercostals",
@@ -57,28 +44,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "diaphragm",
-      "inspiration",
-      "breathing"
-    ],
-    "keywords": [
-      "respiration",
-      "breath control",
-      "thoracic expansion"
-    ],
+    "tags": ["diaphragm", "inspiration", "breathing"],
+    "keywords": ["respiration", "breath control", "thoracic expansion"],
     "synonyms": null
   },
   {
     "id": "lungs_003",
-    "correctAnswer": "Larynx",
     "question": "Which structure is NOT part of the lower respiratory tract?",
-    "options": [
-      "Trachea",
-      "Bronchi",
-      "Larynx",
-      "Alveoli"
-    ],
+    "correctAnswer": "Larynx",
+    "options": ["Trachea", "Bronchi", "Larynx", "Alveoli"],
     "topics": ["anatomy", "organs", "lungs", "lungs"],
     "short_explanation": "The larynx is part of the upper respiratory tract.",
     "long_explanation": "The lower respiratory tract includes the trachea, bronchi, bronchioles, and alveoli. The larynx, although near the trachea, belongs to the upper tract.",
@@ -92,28 +66,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "upper airway",
-      "respiratory anatomy",
-      "larynx"
-    ],
-    "keywords": [
-      "upper vs lower airway",
-      "bronchi",
-      "trachea"
-    ],
+    "tags": ["upper airway", "respiratory anatomy", "larynx"],
+    "keywords": ["upper vs lower airway", "bronchi", "trachea"],
     "synonyms": null
   },
   {
     "id": "lungs_004",
-    "correctAnswer": "Alveoli",
     "question": "Where does gas exchange occur in the lungs?",
-    "options": [
-      "Bronchi",
-      "Bronchioles",
-      "Alveoli",
-      "Pleura"
-    ],
+    "correctAnswer": "Alveoli",
+    "options": ["Bronchi", "Bronchioles", "Alveoli", "Pleura"],
     "topics": ["anatomy", "organs", "lungs", "lungs"],
     "short_explanation": "Gas exchange occurs in the alveoli.",
     "long_explanation": "Alveoli are tiny sacs with thin walls surrounded by capillaries, allowing efficient oxygen and carbon dioxide diffusion between air and blood.",
@@ -127,22 +88,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "alveoli",
-      "gas exchange",
-      "respiration"
-    ],
-    "keywords": [
-      "oxygen diffusion",
-      "capillary exchange",
-      "lungs"
-    ],
+    "tags": ["alveoli", "gas exchange", "respiration"],
+    "keywords": ["oxygen diffusion", "capillary exchange", "lungs"],
     "synonyms": null
   },
   {
     "id": "lungs_005",
-    "correctAnswer": "Visceral pleura",
     "question": "Which pleural layer directly adheres to the lungs?",
+    "correctAnswer": "Visceral pleura",
     "options": [
       "Parietal pleura",
       "Visceral pleura",
@@ -162,22 +115,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "visceral pleura",
-      "pleural cavity",
-      "lungs"
-    ],
-    "keywords": [
-      "pleural layers",
-      "lung membrane",
-      "thoracic lining"
-    ],
+    "tags": ["visceral pleura", "pleural cavity", "lungs"],
+    "keywords": ["pleural layers", "lung membrane", "thoracic lining"],
     "synonyms": null
   },
   {
     "id": "lungs_006",
-    "correctAnswer": "Phrenic nerve",
     "question": "Which nerve innervates the diaphragm?",
+    "correctAnswer": "Phrenic nerve",
     "options": [
       "Vagus nerve",
       "Accessory nerve",
@@ -197,22 +142,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "phrenic nerve",
-      "diaphragm",
-      "respiration"
-    ],
-    "keywords": [
-      "C3 C4 C5",
-      "nerve to diaphragm",
-      "breathing"
-    ],
+    "tags": ["phrenic nerve", "diaphragm", "respiration"],
+    "keywords": ["C3 C4 C5", "nerve to diaphragm", "breathing"],
     "synonyms": null
   },
   {
     "id": "lungs_007",
-    "correctAnswer": "Reduces surface tension in alveoli",
     "question": "What is the function of surfactant in the lungs?",
+    "correctAnswer": "Reduces surface tension in alveoli",
     "options": [
       "Lubricates pleural surfaces",
       "Protects alveoli from pathogens",
@@ -232,28 +169,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "surfactant",
-      "alveoli",
-      "surface tension"
-    ],
-    "keywords": [
-      "lung function",
-      "neonatal respiration",
-      "type II cells"
-    ],
+    "tags": ["surfactant", "alveoli", "surface tension"],
+    "keywords": ["lung function", "neonatal respiration", "type II cells"],
     "synonyms": null
   },
   {
     "id": "lungs_008",
-    "correctAnswer": "Trachea",
     "question": "What structure bifurcates into left and right primary bronchi?",
-    "options": [
-      "Pharynx",
-      "Larynx",
-      "Trachea",
-      "Bronchioles"
-    ],
+    "correctAnswer": "Trachea",
+    "options": ["Pharynx", "Larynx", "Trachea", "Bronchioles"],
     "topics": ["anatomy", "organs", "lungs", "lungs"],
     "short_explanation": "The trachea divides into the left and right primary bronchi.",
     "long_explanation": "The trachea ends at the carina, where it splits into two primary bronchi that enter each lung at the hilum.",
@@ -267,28 +191,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "trachea",
-      "bronchi",
-      "airway division"
-    ],
-    "keywords": [
-      "carina",
-      "bronchial tree",
-      "lungs"
-    ],
+    "tags": ["trachea", "bronchi", "airway division"],
+    "keywords": ["carina", "bronchial tree", "lungs"],
     "synonyms": null
   },
   {
     "id": "lungs_009",
-    "correctAnswer": "Right",
     "question": "Which lung is more susceptible to aspiration?",
-    "options": [
-      "Left",
-      "Right",
-      "Both equally",
-      "Neither"
-    ],
+    "correctAnswer": "Right",
+    "options": ["Left", "Right", "Both equally", "Neither"],
     "topics": ["anatomy", "organs", "lungs", "lungs"],
     "short_explanation": "The right lung is more vertical and wider, making it more prone to aspiration.",
     "long_explanation": "The right main bronchus is shorter, wider, and more vertical than the left, increasing the likelihood of aspirated material entering the right lung.",
@@ -302,28 +213,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "aspiration",
-      "right bronchus",
-      "lung anatomy"
-    ],
-    "keywords": [
-      "airway anatomy",
-      "right lung",
-      "choking"
-    ],
+    "tags": ["aspiration", "right bronchus", "lung anatomy"],
+    "keywords": ["airway anatomy", "right lung", "choking"],
     "synonyms": null
   },
   {
     "id": "lungs_010",
-    "correctAnswer": "Pons and medulla",
     "question": "Which part of the brain regulates breathing rhythm?",
-    "options": [
-      "Cerebellum",
-      "Pons and medulla",
-      "Thalamus",
-      "Hypothalamus"
-    ],
+    "correctAnswer": "Pons and medulla",
+    "options": ["Cerebellum", "Pons and medulla", "Thalamus", "Hypothalamus"],
     "topics": ["anatomy", "organs", "lungs", "lungs"],
     "short_explanation": "The medulla and pons regulate respiratory rhythm.",
     "long_explanation": "The medullary respiratory centers control inspiration and expiration. The pons modifies the rhythm for speech and other functions.",
@@ -337,16 +235,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "medulla",
-      "pons",
-      "respiration center"
-    ],
-    "keywords": [
-      "brainstem",
-      "breathing",
-      "ventilation"
-    ],
+    "tags": ["medulla", "pons", "respiration center"],
+    "keywords": ["brainstem", "breathing", "ventilation"],
     "synonyms": null
   }
 ]

@@ -1,15 +1,20 @@
 [
   {
     "id": "cnv_nerve_innervations_001",
-    "correctAnswer": "Ophthalmic (V1)",
     "question": "Which branch of the trigeminal nerve provides sensory innervation to the forehead and scalp?",
+    "correctAnswer": "Ophthalmic (V1)",
     "options": [
       "Mandibular (V3)",
       "Maxillary (V2)",
       "Ophthalmic (V1)",
       "Facial Nerve"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "The ophthalmic branch (V1) supplies the forehead and scalp.",
     "long_explanation": "The trigeminal nerve has three main branches: V1 (ophthalmic), V2 (maxillary), and V3 (mandibular). V1 is purely sensory and innervates the scalp, forehead, and upper eyelid.",
     "clinical_application": "When massaging the head or applying facial techniques, awareness of V1 can help avoid overstimulation of sensitive areas.",
@@ -22,29 +27,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "CN V",
-      "V1",
-      "ophthalmic nerve"
-    ],
-    "keywords": [
-      "forehead",
-      "scalp",
-      "sensory innervation"
-    ],
+    "tags": ["CN V", "V1", "ophthalmic nerve"],
+    "keywords": ["forehead", "scalp", "sensory innervation"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_002",
-    "correctAnswer": "V3",
     "question": "Which division of CN V provides motor innervation to the muscles of mastication?",
-    "options": [
-      "V1",
-      "V2",
-      "V3",
-      "All branches"
+    "correctAnswer": "V3",
+    "options": ["V1", "V2", "V3", "All branches"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
     "short_explanation": "The mandibular branch (V3) contains motor fibers.",
     "long_explanation": "While V1 and V2 are purely sensory, V3 carries both sensory and motor fibers, innervating the masseter, temporalis, medial and lateral pterygoids.",
     "clinical_application": "Temporomandibular joint (TMJ) work may benefit from understanding the motor function of V3.",
@@ -57,29 +54,26 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "CN V",
-      "V3",
-      "mastication"
-    ],
-    "keywords": [
-      "muscles of mastication",
-      "mandibular nerve",
-      "motor fibers"
-    ],
+    "tags": ["CN V", "V3", "mastication"],
+    "keywords": ["muscles of mastication", "mandibular nerve", "motor fibers"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_003",
-    "correctAnswer": "Sensory to midface",
     "question": "What is the primary function of the maxillary division (V2) of CN V?",
+    "correctAnswer": "Sensory to midface",
     "options": [
       "Motor to jaw",
       "Taste to anterior tongue",
       "Sensory to midface",
       "Smell perception"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "V2 is purely sensory to the midface.",
     "long_explanation": "The maxillary division (V2) provides sensory innervation to the cheeks, upper lip, maxillary teeth, nasal cavity, and palate.",
     "clinical_application": "Facial massage in the midface region should account for V2’s sensitivity.",
@@ -92,29 +86,26 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "CN V",
-      "V2",
-      "maxillary"
-    ],
-    "keywords": [
-      "midface",
-      "sensory nerve",
-      "nasal cavity"
-    ],
+    "tags": ["CN V", "V2", "maxillary"],
+    "keywords": ["midface", "sensory nerve", "nasal cavity"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_004",
-    "correctAnswer": "Trigeminal nerve (V3)",
     "question": "Which nerve is responsible for the jaw-jerk reflex?",
+    "correctAnswer": "Trigeminal nerve (V3)",
     "options": [
       "Facial nerve",
       "Hypoglossal nerve",
       "Trigeminal nerve (V3)",
       "Accessory nerve"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "The mandibular branch (V3) mediates the jaw-jerk reflex.",
     "long_explanation": "The jaw-jerk reflex is a monosynaptic reflex involving the trigeminal nerve’s motor nucleus and mandibular division (V3).",
     "clinical_application": "An exaggerated jaw-jerk reflex can be a sign of upper motor neuron lesions.",
@@ -127,29 +118,26 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "jaw reflex",
-      "V3",
-      "trigeminal motor"
-    ],
-    "keywords": [
-      "mandibular reflex",
-      "motor testing",
-      "cranial nerve reflex"
-    ],
+    "tags": ["jaw reflex", "V3", "trigeminal motor"],
+    "keywords": ["mandibular reflex", "motor testing", "cranial nerve reflex"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_005",
-    "correctAnswer": "It has both sensory and motor components",
     "question": "Which of the following is true of the trigeminal nerve?",
+    "correctAnswer": "It has both sensory and motor components",
     "options": [
       "It carries only motor fibers",
       "It has both sensory and motor components",
       "It only innervates structures in the neck",
       "It carries parasympathetic fibers to salivary glands"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "CN V is both sensory and motor.",
     "long_explanation": "The trigeminal nerve is primarily sensory but has motor fibers in its mandibular division for chewing.",
     "clinical_application": "This dual function makes CN V essential in both sensation and jaw movement assessments during cranial exams.",
@@ -162,29 +150,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "CN V",
-      "dual nerve",
-      "motor and sensory"
-    ],
-    "keywords": [
-      "cranial nerve",
-      "dual innervation",
-      "chewing"
-    ],
+    "tags": ["CN V", "dual nerve", "motor and sensory"],
+    "keywords": ["cranial nerve", "dual innervation", "chewing"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_006",
-    "correctAnswer": "V2",
     "question": "Trigeminal neuralgia most commonly affects which division of CN V?",
-    "options": [
-      "V1",
-      "V2",
-      "V3",
-      "Vagus nerve"
+    "correctAnswer": "V2",
+    "options": ["V1", "V2", "V3", "Vagus nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
     "short_explanation": "V2 is most frequently involved in trigeminal neuralgia.",
     "long_explanation": "Trigeminal neuralgia causes sudden facial pain and most often affects the maxillary division (V2), followed by V3 and rarely V1.",
     "clinical_application": "Massage therapists must use caution in affected regions to avoid triggering pain.",
@@ -197,29 +177,26 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "trigeminal neuralgia",
-      "V2",
-      "facial pain"
-    ],
-    "keywords": [
-      "neuralgia",
-      "nerve compression",
-      "pain syndrome"
-    ],
+    "tags": ["trigeminal neuralgia", "V2", "facial pain"],
+    "keywords": ["neuralgia", "nerve compression", "pain syndrome"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_007",
-    "correctAnswer": "Lateral rectus muscle",
     "question": "Which structure does the mandibular nerve (V3) not innervate?",
+    "correctAnswer": "Lateral rectus muscle",
     "options": [
       "Mylohyoid muscle",
       "Temporalis muscle",
       "Lateral rectus muscle",
       "Masseter muscle"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "The lateral rectus is innervated by CN VI.",
     "long_explanation": "V3 innervates muscles of mastication and the mylohyoid, but not eye muscles like the lateral rectus (CN VI).",
     "clinical_application": "Accurate knowledge of innervation prevents confusion when working with jaw versus eye dysfunction.",
@@ -232,29 +209,26 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "V3",
-      "muscle innervation",
-      "exclusions"
-    ],
-    "keywords": [
-      "cranial nerve VI",
-      "mylohyoid",
-      "eye muscle"
-    ],
+    "tags": ["V3", "muscle innervation", "exclusions"],
+    "keywords": ["cranial nerve VI", "mylohyoid", "eye muscle"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_008",
-    "correctAnswer": "Upper eyelid and cornea",
     "question": "Which area is innervated by the ophthalmic branch (V1)?",
+    "correctAnswer": "Upper eyelid and cornea",
     "options": [
       "Lower lip",
       "Side of the nose",
       "Upper eyelid and cornea",
       "Chin and jawline"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "V1 supplies the upper eyelid and cornea.",
     "long_explanation": "V1 innervates the cornea, upper eyelid, forehead, and part of the nose, playing a role in the corneal reflex.",
     "clinical_application": "Avoid excessive pressure near the eyes during facial massage to prevent discomfort or irritation.",
@@ -267,29 +241,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "V1",
-      "cornea",
-      "eyelid"
-    ],
-    "keywords": [
-      "sensory",
-      "trigeminal",
-      "ophthalmic"
-    ],
+    "tags": ["V1", "cornea", "eyelid"],
+    "keywords": ["sensory", "trigeminal", "ophthalmic"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_009",
-    "correctAnswer": "CN V and VII",
     "question": "Which cranial nerve is tested by checking the corneal reflex?",
-    "options": [
-      "CN II and III",
-      "CN V and VII",
-      "CN III and VI",
-      "CN I and V"
+    "correctAnswer": "CN V and VII",
+    "options": ["CN II and III", "CN V and VII", "CN III and VI", "CN I and V"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
     "short_explanation": "The corneal reflex involves CN V (sensory) and CN VII (motor).",
     "long_explanation": "Touching the cornea triggers CN V (V1) to sense the stimulus, and CN VII activates the orbicularis oculi to blink.",
     "clinical_application": "Understanding this reflex can help massage therapists recognize possible nerve damage if blinking is absent.",
@@ -302,29 +268,26 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "corneal reflex",
-      "V1",
-      "facial nerve"
-    ],
-    "keywords": [
-      "blinking reflex",
-      "nerve testing",
-      "eye protection"
-    ],
+    "tags": ["corneal reflex", "V1", "facial nerve"],
+    "keywords": ["blinking reflex", "nerve testing", "eye protection"],
     "synonyms": null
   },
   {
     "id": "cnv_nerve_innervations_010",
-    "correctAnswer": "Trigeminal (Gasserian) ganglion",
     "question": "What is the sensory ganglion of the trigeminal nerve called?",
+    "correctAnswer": "Trigeminal (Gasserian) ganglion",
     "options": [
       "Geniculate ganglion",
       "Ciliary ganglion",
       "Trigeminal (Gasserian) ganglion",
       "Pterygopalatine ganglion"
     ],
-    "topics": ["anatomy", "innervations", "spinal_root_levels", "cnv_nerve_innervations"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "spinal_root_levels",
+      "cnv_nerve_innervations"
+    ],
     "short_explanation": "The trigeminal ganglion houses sensory cell bodies.",
     "long_explanation": "Located in Meckel's cave, the Gasserian ganglion contains the cell bodies of sensory neurons from all three trigeminal branches.",
     "clinical_application": "This structure is a key site in nerve block procedures for trigeminal neuralgia management.",
@@ -337,16 +300,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "trigeminal ganglion",
-      "Gasserian",
-      "sensory"
-    ],
-    "keywords": [
-      "ganglion",
-      "cranial nerve",
-      "nerve block"
-    ],
+    "tags": ["trigeminal ganglion", "Gasserian", "sensory"],
+    "keywords": ["ganglion", "cranial nerve", "nerve block"],
     "synonyms": null
   }
 ]

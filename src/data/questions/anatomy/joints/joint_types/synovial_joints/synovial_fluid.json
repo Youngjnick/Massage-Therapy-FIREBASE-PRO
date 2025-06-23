@@ -1,15 +1,21 @@
 [
   {
     "id": "synovial_fluid_001",
-    "correctAnswer": "Lubrication, shock absorption, and nutrient transport",
     "question": "What is the primary function of synovial fluid in joints?",
+    "correctAnswer": "Lubrication, shock absorption, and nutrient transport",
     "options": [
       "Blood circulation",
       "Lubrication, shock absorption, and nutrient transport",
       "Lymphatic drainage",
       "Oxygen exchange"
     ],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Synovial fluid lubricates, cushions, and nourishes the joint.",
     "long_explanation": "Produced by the synovial membrane, this viscous fluid reduces friction between articulating bones, distributes nutrients to cartilage, and acts as a shock absorber.",
     "clinical_application": "Massage techniques that promote joint mobility can enhance synovial fluid circulation, aiding in joint health and flexibility.",
@@ -28,10 +34,16 @@
   },
   {
     "id": "synovial_fluid_002",
-    "correctAnswer": "Synoviocytes",
     "question": "Which cells are responsible for secreting synovial fluid?",
+    "correctAnswer": "Synoviocytes",
     "options": ["Osteocytes", "Synoviocytes", "Chondrocytes", "Fibroblasts"],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Synoviocytes secrete synovial fluid.",
     "long_explanation": "Type B synoviocytes in the synovial membrane produce the hyaluronan-rich fluid that fills the joint capsule and supports cartilage function.",
     "clinical_application": "In chronic joint conditions, stimulating these cells through movement and massage can encourage fluid replenishment and reduce stiffness.",
@@ -50,10 +62,16 @@
   },
   {
     "id": "synovial_fluid_003",
-    "correctAnswer": "Hyaluronic acid",
     "question": "Which component gives synovial fluid its viscous, slippery texture?",
+    "correctAnswer": "Hyaluronic acid",
     "options": ["Collagen", "Elastin", "Hyaluronic acid", "Calcium"],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Hyaluronic acid increases synovial fluid viscosity.",
     "long_explanation": "This molecule binds water, contributing to the gel-like consistency essential for joint lubrication and shock absorption.",
     "clinical_application": "Hyaluronic acid injections are used in osteoarthritis to improve joint function and reduce pain.",
@@ -72,15 +90,21 @@
   },
   {
     "id": "synovial_fluid_004",
-    "correctAnswer": "Gentle rhythmic motion",
     "question": "Which movement pattern best stimulates synovial fluid circulation?",
+    "correctAnswer": "Gentle rhythmic motion",
     "options": [
       "Prolonged immobilization",
       "Gentle rhythmic motion",
       "Static stretching",
       "High-impact force"
     ],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Gentle, rhythmic motion enhances synovial fluid flow.",
     "long_explanation": "Movement stimulates synovial membrane activity, promoting fluid distribution across the articular cartilage and reducing joint friction.",
     "clinical_application": "Massage therapists use joint mobilizations and active-assisted range-of-motion techniques to encourage synovial fluid exchange.",
@@ -99,10 +123,16 @@
   },
   {
     "id": "synovial_fluid_005",
-    "correctAnswer": "Effusion",
     "question": "Which pathology involves excessive accumulation of synovial fluid in a joint?",
+    "correctAnswer": "Effusion",
     "options": ["Arthrosis", "Synovitis", "Effusion", "Tendinopathy"],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Effusion is fluid buildup in the joint capsule.",
     "long_explanation": "Joint effusion can result from injury, inflammation, or overuse, causing swelling, pain, and reduced mobility.",
     "clinical_application": "Massage is contraindicated during acute effusion but beneficial in later stages to reduce fibrosis and promote circulation.",
@@ -121,15 +151,21 @@
   },
   {
     "id": "synovial_fluid_006",
-    "correctAnswer": "Synovial joint",
     "question": "Which joint type most commonly contains synovial fluid?",
+    "correctAnswer": "Synovial joint",
     "options": [
       "Fibrous joint",
       "Cartilaginous joint",
       "Synovial joint",
       "Suture joint"
     ],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Synovial fluid is found in synovial joints.",
     "long_explanation": "Synovial joints are the most mobile type of joint in the body and contain a synovial cavity filled with synovial fluid for lubrication and nutrient exchange.",
     "clinical_application": "Massage therapists can focus on mobilizing synovial joints to encourage fluid movement and joint health.",
@@ -148,15 +184,21 @@
   },
   {
     "id": "synovial_fluid_007",
-    "correctAnswer": "It becomes less viscous",
     "question": "What happens to synovial fluid viscosity when joint temperature increases?",
+    "correctAnswer": "It becomes less viscous",
     "options": [
       "It becomes more viscous",
       "It remains unchanged",
       "It solidifies",
       "It becomes less viscous"
     ],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Higher temperatures make synovial fluid less viscous.",
     "long_explanation": "Warming the joint through exercise or massage reduces the viscosity of synovial fluid, improving lubrication and range of motion.",
     "clinical_application": "Massage warms tissues and joints, enhancing synovial flow and flexibility in stiff clients.",
@@ -175,15 +217,21 @@
   },
   {
     "id": "synovial_fluid_008",
-    "correctAnswer": "It decreases over time",
     "question": "How does aging affect synovial fluid production?",
+    "correctAnswer": "It decreases over time",
     "options": [
       "It increases dramatically",
       "It stays the same",
       "It decreases over time",
       "It causes fluid thickening"
     ],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Aging reduces synovial fluid production.",
     "long_explanation": "As we age, synovial membrane activity declines, reducing fluid output and contributing to joint stiffness and degenerative changes.",
     "clinical_application": "Regular low-impact movement and massage in older adults can help maintain joint mobility by stimulating synovial activity.",
@@ -202,10 +250,16 @@
   },
   {
     "id": "synovial_fluid_009",
-    "correctAnswer": "Glucose",
     "question": "Which nutrient is most dependent on diffusion via synovial fluid to reach cartilage?",
+    "correctAnswer": "Glucose",
     "options": ["Glucose", "Calcium", "Oxygen", "Iron"],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "Cartilage receives glucose via synovial fluid diffusion.",
     "long_explanation": "Articular cartilage is avascular and relies on synovial fluid to transport nutrients like glucose for energy metabolism.",
     "clinical_application": "Joint movement during massage or physical therapy enhances diffusion, supporting cartilage metabolism and health.",
@@ -224,15 +278,21 @@
   },
   {
     "id": "synovial_fluid_010",
-    "correctAnswer": "Joint capsule",
     "question": "Which structure encases and supports synovial fluid within a joint?",
+    "correctAnswer": "Joint capsule",
     "options": [
       "Articular cartilage",
       "Joint capsule",
       "Tendon sheath",
       "Ligament"
     ],
-    "topics": ["anatomy", "joints", "synovial_fluid"],
+    "topics": [
+      "anatomy",
+      "joints",
+      "joint_types",
+      "synovial_joints",
+      "synovial_fluid"
+    ],
     "short_explanation": "The joint capsule contains the synovial membrane and fluid.",
     "long_explanation": "The fibrous outer layer of the joint capsule encloses the synovial membrane, which produces and retains the synovial fluid inside the joint space.",
     "clinical_application": "Understanding this anatomy helps massage therapists assess joint restrictions and apply mobilization techniques safely.",

@@ -1,14 +1,9 @@
 [
   {
     "id": "postural_analysis_001",
-    "correctAnswer": "Lordosis",
     "question": "Which postural distortion is characterized by excessive inward curvature of the lumbar spine?",
-    "options": [
-      "Kyphosis",
-      "Scoliosis",
-      "Flat back",
-      "Lordosis"
-    ],
+    "correctAnswer": "Lordosis",
+    "options": ["Kyphosis", "Scoliosis", "Flat back", "Lordosis"],
     "topics": ["pathology", "postural_analysis"],
     "short_explanation": "Lordosis involves hyperextension of the lumbar spine.",
     "long_explanation": "Lumbar lordosis is an exaggerated inward curvature of the lower back. It can be structural or postural and is often caused by tight hip flexors and weak abdominal muscles.",
@@ -22,28 +17,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "lordosis",
-      "lumbar spine",
-      "posture"
-    ],
-    "keywords": [
-      "hyperlordosis",
-      "anterior pelvic tilt",
-      "lumbar curve"
-    ],
+    "tags": ["lordosis", "lumbar spine", "posture"],
+    "keywords": ["hyperlordosis", "anterior pelvic tilt", "lumbar curve"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_002",
-    "correctAnswer": "Kyphosis",
     "question": "Which condition involves an exaggerated outward curve of the thoracic spine, often appearing as a hunched back?",
-    "options": [
-      "Scoliosis",
-      "Kyphosis",
-      "Lordosis",
-      "Forward head posture"
-    ],
+    "correctAnswer": "Kyphosis",
+    "options": ["Scoliosis", "Kyphosis", "Lordosis", "Forward head posture"],
     "topics": ["pathology", "postural_analysis"],
     "short_explanation": "Kyphosis creates a rounded upper back and shoulder appearance.",
     "long_explanation": "Thoracic kyphosis is a forward rounding of the upper spine. It may be caused by poor posture, muscle imbalances, or structural conditions like Scheuermann’s disease.",
@@ -57,22 +39,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "kyphosis",
-      "thoracic spine",
-      "rounded shoulders"
-    ],
-    "keywords": [
-      "hunchback",
-      "thoracic curve",
-      "posture"
-    ],
+    "tags": ["kyphosis", "thoracic spine", "rounded shoulders"],
+    "keywords": ["hunchback", "thoracic curve", "posture"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_003",
-    "correctAnswer": "Sternocleidomastoid and suboccipitals",
     "question": "Which muscles are typically overactive in forward head posture?",
+    "correctAnswer": "Sternocleidomastoid and suboccipitals",
     "options": [
       "Sternocleidomastoid and suboccipitals",
       "Rhomboids and serratus anterior",
@@ -92,22 +66,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "forward head",
-      "neck",
-      "muscle imbalance"
-    ],
-    "keywords": [
-      "cervical spine",
-      "text neck",
-      "postural dysfunction"
-    ],
+    "tags": ["forward head", "neck", "muscle imbalance"],
+    "keywords": ["cervical spine", "text neck", "postural dysfunction"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_004",
-    "correctAnswer": "Hip flexors and spinal extensors",
     "question": "Anterior pelvic tilt is often caused by tightness in which muscle group?",
+    "correctAnswer": "Hip flexors and spinal extensors",
     "options": [
       "Hamstrings and abdominals",
       "Hip flexors and spinal extensors",
@@ -127,22 +93,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "pelvic tilt",
-      "hip flexors",
-      "muscle imbalance"
-    ],
-    "keywords": [
-      "posture",
-      "low back",
-      "anterior tilt"
-    ],
+    "tags": ["pelvic tilt", "hip flexors", "muscle imbalance"],
+    "keywords": ["posture", "low back", "anterior tilt"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_005",
-    "correctAnswer": "Increased tone on the concave side",
     "question": "What is a common muscular compensation pattern in someone with scoliosis?",
+    "correctAnswer": "Increased tone on the concave side",
     "options": [
       "Symmetrical activation on both sides of the spine",
       "Increased tone on the concave side",
@@ -162,22 +120,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "scoliosis",
-      "posture",
-      "muscle tone"
-    ],
-    "keywords": [
-      "spinal curve",
-      "concavity",
-      "compensation"
-    ],
+    "tags": ["scoliosis", "posture", "muscle tone"],
+    "keywords": ["spinal curve", "concavity", "compensation"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_006",
-    "correctAnswer": "Flat back posture",
     "question": "Which posture is characterized by a flattened lumbar curve and posterior pelvic tilt?",
+    "correctAnswer": "Flat back posture",
     "options": [
       "Swayback posture",
       "Flat back posture",
@@ -197,22 +147,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "flat back",
-      "lumbar curve",
-      "pelvic tilt"
-    ],
-    "keywords": [
-      "posterior tilt",
-      "reduced lordosis",
-      "back pain"
-    ],
+    "tags": ["flat back", "lumbar curve", "pelvic tilt"],
+    "keywords": ["posterior tilt", "reduced lordosis", "back pain"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_007",
-    "correctAnswer": "Deep neck flexors and lower trapezius",
     "question": "In upper crossed syndrome, which muscle group is typically inhibited or weakened?",
+    "correctAnswer": "Deep neck flexors and lower trapezius",
     "options": [
       "Pectoralis major and minor",
       "Upper trapezius and levator scapulae",
@@ -232,22 +174,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "upper crossed syndrome",
-      "muscle imbalance",
-      "posture"
-    ],
-    "keywords": [
-      "forward head",
-      "round shoulders",
-      "scapular control"
-    ],
+    "tags": ["upper crossed syndrome", "muscle imbalance", "posture"],
+    "keywords": ["forward head", "round shoulders", "scapular control"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_008",
-    "correctAnswer": "Posterior tilt with thoracic shift posteriorly",
     "question": "A client with swayback posture typically shows which pelvic and thoracic alignment pattern?",
+    "correctAnswer": "Posterior tilt with thoracic shift posteriorly",
     "options": [
       "Posterior tilt and forward head",
       "Anterior tilt and lumbar lordosis",
@@ -267,22 +201,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "swayback",
-      "pelvic alignment",
-      "posture"
-    ],
-    "keywords": [
-      "postural sag",
-      "thoracic shift",
-      "pelvic drift"
-    ],
+    "tags": ["swayback", "pelvic alignment", "posture"],
+    "keywords": ["postural sag", "thoracic shift", "pelvic drift"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_009",
-    "correctAnswer": "Cervical extension overload",
     "question": "Which movement dysfunction is most associated with anterior head carriage?",
+    "correctAnswer": "Cervical extension overload",
     "options": [
       "Reduced lumbar mobility",
       "Impaired shoulder retraction",
@@ -302,22 +228,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "forward head",
-      "neck strain",
-      "muscle overload"
-    ],
-    "keywords": [
-      "cervical spine",
-      "extension fatigue",
-      "posture"
-    ],
+    "tags": ["forward head", "neck strain", "muscle overload"],
+    "keywords": ["cervical spine", "extension fatigue", "posture"],
     "synonyms": null
   },
   {
     "id": "postural_analysis_010",
-    "correctAnswer": "Hyperlordosis",
     "question": "Which of the following posture types places increased tension on the hip flexors and lumbar spine?",
+    "correctAnswer": "Hyperlordosis",
     "options": [
       "Flat back",
       "Scoliosis",
@@ -337,16 +255,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "hyperlordosis",
-      "hip flexors",
-      "lumbar stress"
-    ],
-    "keywords": [
-      "low back pain",
-      "postural alignment",
-      "iliopsoas"
-    ],
+    "tags": ["hyperlordosis", "hip flexors", "lumbar stress"],
+    "keywords": ["low back pain", "postural alignment", "iliopsoas"],
     "synonyms": null
   }
 ]

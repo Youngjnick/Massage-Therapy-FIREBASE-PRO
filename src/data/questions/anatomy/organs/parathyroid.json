@@ -1,8 +1,8 @@
 [
   {
     "id": "parathyroid_001",
-    "correctAnswer": "Parathyroid hormone (PTH)",
     "question": "What hormone is secreted by the parathyroid glands?",
+    "correctAnswer": "Parathyroid hormone (PTH)",
     "options": [
       "Calcitonin",
       "Parathyroid hormone (PTH)",
@@ -22,11 +22,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "PTH",
-      "calcium",
-      "parathyroid"
-    ],
+    "tags": ["PTH", "calcium", "parathyroid"],
     "keywords": [
       "parathyroid hormone",
       "calcium regulation",
@@ -36,14 +32,9 @@
   },
   {
     "id": "parathyroid_002",
-    "correctAnswer": "Skeletal",
     "question": "Which organ system is most directly affected by parathyroid hormone?",
-    "options": [
-      "Respiratory",
-      "Digestive",
-      "Skeletal",
-      "Reproductive"
-    ],
+    "correctAnswer": "Skeletal",
+    "options": ["Respiratory", "Digestive", "Skeletal", "Reproductive"],
     "topics": ["anatomy", "organs", "parathyroid"],
     "short_explanation": "PTH primarily acts on bones to regulate calcium.",
     "long_explanation": "PTH stimulates osteoclasts to resorb bone matrix, releasing calcium into the bloodstream. It plays a key role in bone remodeling and calcium-phosphate balance.",
@@ -57,22 +48,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "bone metabolism",
-      "osteoclasts",
-      "PTH"
-    ],
-    "keywords": [
-      "bone resorption",
-      "skeletal health",
-      "PTH function"
-    ],
+    "tags": ["bone metabolism", "osteoclasts", "PTH"],
+    "keywords": ["bone resorption", "skeletal health", "PTH function"],
     "synonyms": null
   },
   {
     "id": "parathyroid_003",
-    "correctAnswer": "Increases calcium reabsorption",
     "question": "What is the effect of PTH on renal function?",
+    "correctAnswer": "Increases calcium reabsorption",
     "options": [
       "Decreases calcium reabsorption",
       "Increases phosphate reabsorption",
@@ -92,11 +75,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "kidney",
-      "PTH",
-      "calcium reabsorption"
-    ],
+    "tags": ["kidney", "PTH", "calcium reabsorption"],
     "keywords": [
       "renal calcium handling",
       "distal tubule",
@@ -106,8 +85,8 @@
   },
   {
     "id": "parathyroid_004",
-    "correctAnswer": "Hypocalcemia",
     "question": "Low levels of PTH can lead to which condition?",
+    "correctAnswer": "Hypocalcemia",
     "options": [
       "Hypercalcemia",
       "Hypocalcemia",
@@ -127,28 +106,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "hypoparathyroidism",
-      "low calcium",
-      "tetany"
-    ],
-    "keywords": [
-      "hypocalcemia",
-      "calcium deficiency",
-      "PTH insufficiency"
-    ],
+    "tags": ["hypoparathyroidism", "low calcium", "tetany"],
+    "keywords": ["hypocalcemia", "calcium deficiency", "PTH insufficiency"],
     "synonyms": null
   },
   {
     "id": "parathyroid_005",
-    "correctAnswer": "Vitamin D",
     "question": "Which vitamin is activated by PTH to assist in calcium absorption?",
-    "options": [
-      "Vitamin A",
-      "Vitamin B12",
-      "Vitamin C",
-      "Vitamin D"
-    ],
+    "correctAnswer": "Vitamin D",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
     "topics": ["anatomy", "organs", "parathyroid"],
     "short_explanation": "PTH activates vitamin D, enhancing calcium absorption in the gut.",
     "long_explanation": "PTH stimulates conversion of inactive vitamin D to its active form, calcitriol, in the kidneys, which increases calcium absorption from the intestines.",
@@ -162,11 +128,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "vitamin D",
-      "calcitriol",
-      "PTH function"
-    ],
+    "tags": ["vitamin D", "calcitriol", "PTH function"],
     "keywords": [
       "calcium absorption",
       "gut metabolism",
@@ -176,8 +138,8 @@
   },
   {
     "id": "parathyroid_006",
-    "correctAnswer": "On the posterior surface of the thyroid",
     "question": "Where are the parathyroid glands typically located?",
+    "correctAnswer": "On the posterior surface of the thyroid",
     "options": [
       "On the posterior surface of the thyroid",
       "Inside the adrenal glands",
@@ -197,22 +159,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "parathyroid anatomy",
-      "posterior thyroid",
-      "gland location"
-    ],
-    "keywords": [
-      "cervical glands",
-      "endocrine position",
-      "neck anatomy"
-    ],
+    "tags": ["parathyroid anatomy", "posterior thyroid", "gland location"],
+    "keywords": ["cervical glands", "endocrine position", "neck anatomy"],
     "synonyms": null
   },
   {
     "id": "parathyroid_007",
-    "correctAnswer": "Kidney stones",
     "question": "What is a common symptom of hyperparathyroidism?",
+    "correctAnswer": "Kidney stones",
     "options": [
       "Bradycardia",
       "Weight loss",
@@ -232,28 +186,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "kidney stones",
-      "hypercalcemia",
-      "PTH excess"
-    ],
-    "keywords": [
-      "hyperparathyroidism",
-      "stone formation",
-      "bone pain"
-    ],
+    "tags": ["kidney stones", "hypercalcemia", "PTH excess"],
+    "keywords": ["hyperparathyroidism", "stone formation", "bone pain"],
     "synonyms": null
   },
   {
     "id": "parathyroid_008",
-    "correctAnswer": "Negative",
     "question": "What type of feedback loop regulates PTH secretion?",
-    "options": [
-      "Positive",
-      "Neural",
-      "Negative",
-      "Reflexive"
-    ],
+    "correctAnswer": "Negative",
+    "options": ["Positive", "Neural", "Negative", "Reflexive"],
     "topics": ["anatomy", "organs", "parathyroid"],
     "short_explanation": "PTH is regulated by negative feedback in response to serum calcium levels.",
     "long_explanation": "When calcium levels fall, PTH is released to restore balance. Rising calcium then inhibits further secretion, creating a negative feedback loop.",
@@ -267,11 +208,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "negative feedback",
-      "PTH regulation",
-      "calcium homeostasis"
-    ],
+    "tags": ["negative feedback", "PTH regulation", "calcium homeostasis"],
     "keywords": [
       "feedback loop",
       "parathyroid function",
@@ -281,14 +218,9 @@
   },
   {
     "id": "parathyroid_009",
-    "correctAnswer": "Calcium",
     "question": "Parathyroid disorders are most directly linked to imbalances in which electrolyte?",
-    "options": [
-      "Potassium",
-      "Chloride",
-      "Sodium",
-      "Calcium"
-    ],
+    "correctAnswer": "Calcium",
+    "options": ["Potassium", "Chloride", "Sodium", "Calcium"],
     "topics": ["anatomy", "organs", "parathyroid"],
     "short_explanation": "Calcium is tightly regulated by PTH.",
     "long_explanation": "PTH regulates serum calcium, and imbalances in PTH levels result in hypercalcemia or hypocalcemia with muscle, nerve, and bone symptoms.",
@@ -302,11 +234,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "calcium",
-      "electrolyte",
-      "PTH"
-    ],
+    "tags": ["calcium", "electrolyte", "PTH"],
     "keywords": [
       "calcium regulation",
       "electrolyte homeostasis",
@@ -316,14 +244,9 @@
   },
   {
     "id": "parathyroid_010",
-    "correctAnswer": "Ultrasound",
     "question": "What imaging technique is often used to locate overactive parathyroid tissue?",
-    "options": [
-      "X-ray",
-      "Ultrasound",
-      "CT angiography",
-      "PET scan"
-    ],
+    "correctAnswer": "Ultrasound",
+    "options": ["X-ray", "Ultrasound", "CT angiography", "PET scan"],
     "topics": ["anatomy", "organs", "parathyroid"],
     "short_explanation": "Ultrasound is commonly used to locate enlarged or overactive parathyroid glands.",
     "long_explanation": "Ultrasound and nuclear medicine scans (like sestamibi) are used preoperatively to localize hyperactive parathyroid glands for surgical planning.",
@@ -337,16 +260,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "ultrasound",
-      "parathyroid imaging",
-      "hyperparathyroidism"
-    ],
-    "keywords": [
-      "sestamibi scan",
-      "neck ultrasound",
-      "gland localization"
-    ],
+    "tags": ["ultrasound", "parathyroid imaging", "hyperparathyroidism"],
+    "keywords": ["sestamibi scan", "neck ultrasound", "gland localization"],
     "synonyms": null
   }
 ]

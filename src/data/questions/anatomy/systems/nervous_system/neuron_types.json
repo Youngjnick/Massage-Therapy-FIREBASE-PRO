@@ -1,8 +1,8 @@
 [
   {
     "id": "neuron_types_001",
-    "correctAnswer": "Sensory neurons",
     "question": "Which neuron type transmits impulses from sensory receptors to the central nervous system?",
+    "correctAnswer": "Sensory neurons",
     "options": [
       "Motor neurons",
       "Interneurons",
@@ -22,20 +22,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "sensory neurons",
-      "afferent pathway"
-    ],
-    "keywords": [
-      "receptors",
-      "afferent signals"
-    ],
+    "tags": ["sensory neurons", "afferent pathway"],
+    "keywords": ["receptors", "afferent signals"],
     "synonyms": null
   },
   {
     "id": "neuron_types_002",
-    "correctAnswer": "Send signals from CNS to muscles or glands",
     "question": "What is the primary function of motor neurons?",
+    "correctAnswer": "Send signals from CNS to muscles or glands",
     "options": [
       "Process sensory input",
       "Transmit signals within the brain",
@@ -55,20 +49,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "motor neurons",
-      "efferent"
-    ],
-    "keywords": [
-      "muscle control",
-      "motor output"
-    ],
+    "tags": ["motor neurons", "efferent"],
+    "keywords": ["muscle control", "motor output"],
     "synonyms": null
   },
   {
     "id": "neuron_types_003",
-    "correctAnswer": "Interneurons",
     "question": "Which neurons are most abundant in the central nervous system?",
+    "correctAnswer": "Interneurons",
     "options": [
       "Sensory neurons",
       "Motor neurons",
@@ -88,21 +76,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "interneurons",
-      "CNS",
-      "reflexes"
-    ],
-    "keywords": [
-      "neural circuits",
-      "processing"
-    ],
+    "tags": ["interneurons", "CNS", "reflexes"],
+    "keywords": ["neural circuits", "processing"],
     "synonyms": null
   },
   {
     "id": "neuron_types_004",
-    "correctAnswer": "Bipolar neurons",
     "question": "Which neuron type has one axon and one dendrite and is typically involved in special senses?",
+    "correctAnswer": "Bipolar neurons",
     "options": [
       "Multipolar neurons",
       "Unipolar neurons",
@@ -122,21 +103,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "bipolar neurons",
-      "retina",
-      "olfaction"
-    ],
-    "keywords": [
-      "special senses",
-      "retinal cells"
-    ],
+    "tags": ["bipolar neurons", "retina", "olfaction"],
+    "keywords": ["special senses", "retinal cells"],
     "synonyms": null
   },
   {
     "id": "neuron_types_005",
-    "correctAnswer": "Unipolar neurons",
     "question": "Which neuron type has a single process that splits into two branches functioning as an axon?",
+    "correctAnswer": "Unipolar neurons",
     "options": [
       "Bipolar neurons",
       "Unipolar neurons",
@@ -156,26 +130,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "unipolar neurons",
-      "sensory input"
-    ],
-    "keywords": [
-      "pseudounipolar",
-      "somatosensory"
-    ],
+    "tags": ["unipolar neurons", "sensory input"],
+    "keywords": ["pseudounipolar", "somatosensory"],
     "synonyms": null
   },
   {
     "id": "neuron_types_006",
-    "correctAnswer": "Multipolar",
     "question": "What structural type are most motor neurons classified as?",
-    "options": [
-      "Unipolar",
-      "Bipolar",
-      "Multipolar",
-      "Pyramidal"
-    ],
+    "correctAnswer": "Multipolar",
+    "options": ["Unipolar", "Bipolar", "Multipolar", "Pyramidal"],
     "topics": ["anatomy", "systems", "nervous_system", "neuron_types"],
     "short_explanation": "Motor neurons are typically multipolar with multiple dendrites.",
     "long_explanation": "Multipolar neurons have one axon and multiple dendrites, allowing for integration of many inputs—essential for coordinating motor commands.",
@@ -189,21 +152,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "multipolar",
-      "motor neurons"
-    ],
-    "keywords": [
-      "axon",
-      "dendrites",
-      "motor integration"
-    ],
+    "tags": ["multipolar", "motor neurons"],
+    "keywords": ["axon", "dendrites", "motor integration"],
     "synonyms": null
   },
   {
     "id": "neuron_types_007",
-    "correctAnswer": "Pyramidal neurons",
     "question": "Which neurons are involved in higher cognitive functions like decision-making?",
+    "correctAnswer": "Pyramidal neurons",
     "options": [
       "Motor neurons",
       "Sensory neurons",
@@ -223,26 +179,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "pyramidal neurons",
-      "cerebral cortex"
-    ],
-    "keywords": [
-      "executive function",
-      "cognitive processing"
-    ],
+    "tags": ["pyramidal neurons", "cerebral cortex"],
+    "keywords": ["executive function", "cognitive processing"],
     "synonyms": null
   },
   {
     "id": "neuron_types_008",
-    "correctAnswer": "Association",
     "question": "Which term best describes the functional classification of interneurons?",
-    "options": [
-      "Afferent",
-      "Efferent",
-      "Association",
-      "Sensory"
-    ],
+    "correctAnswer": "Association",
+    "options": ["Afferent", "Efferent", "Association", "Sensory"],
     "topics": ["anatomy", "systems", "nervous_system", "neuron_types"],
     "short_explanation": "Interneurons are association neurons that connect sensory and motor neurons.",
     "long_explanation": "Association neurons form networks that facilitate reflex arcs, integration, and modulation of neural circuits.",
@@ -256,20 +201,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "interneurons",
-      "association neurons"
-    ],
-    "keywords": [
-      "reflex integration",
-      "relay neurons"
-    ],
+    "tags": ["interneurons", "association neurons"],
+    "keywords": ["reflex integration", "relay neurons"],
     "synonyms": null
   },
   {
     "id": "neuron_types_009",
-    "correctAnswer": "Synaptic vesicles",
     "question": "Which feature is common to all neuron types?",
+    "correctAnswer": "Synaptic vesicles",
     "options": [
       "Myelin sheath",
       "Ability to divide",
@@ -289,20 +228,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "synapse",
-      "neurotransmitters"
-    ],
-    "keywords": [
-      "axon terminal",
-      "synaptic cleft"
-    ],
+    "tags": ["synapse", "neurotransmitters"],
+    "keywords": ["axon terminal", "synaptic cleft"],
     "synonyms": null
   },
   {
     "id": "neuron_types_010",
-    "correctAnswer": "They have a single axon and multiple dendrites",
     "question": "What distinguishes multipolar neurons from other types?",
+    "correctAnswer": "They have a single axon and multiple dendrites",
     "options": [
       "They have no dendrites",
       "They have a single axon and multiple dendrites",
@@ -322,15 +255,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "multipolar",
-      "motor neuron"
-    ],
-    "keywords": [
-      "dendrites",
-      "axon",
-      "neuron structure"
-    ],
+    "tags": ["multipolar", "motor neuron"],
+    "keywords": ["dendrites", "axon", "neuron structure"],
     "synonyms": null
   }
 ]

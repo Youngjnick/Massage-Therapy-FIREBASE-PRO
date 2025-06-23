@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import QuizSortSelect from './QuizSortSelect';
 import QuizTopicSelect from './QuizTopicSelect';
 import QuizLengthInput from './QuizLengthInput';
+import TopicsTreeDropdown from '../TopicsTreeDropdown';
 
 interface QuizStartFormProps {
   availableTopics: string[];
@@ -80,6 +81,20 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
             ref={lengthInputRef}
           />
           <QuizSortSelect sort={props.sort} setSort={props.setSort} />
+        </div>
+        <div style={{ margin: '1rem 0' }}>
+          <TopicsTreeDropdown
+            onSelect={filePath => {
+              // Set the selected topic to the file path (without .json and folders)
+              // You may want to extract just the topic name or use the full path
+              const topic = filePath.replace(/\.json$/, '').split('/').pop() || filePath;
+              props.setSelectedTopic(topic);
+              // Optionally, auto-start the quiz
+              if (props.quizLength && props.quizLength > 0) {
+                props.onStart({ selectedTopic: topic, quizLength: props.quizLength, sort: props.sort, ...toggleState });
+              }
+            }}
+          />
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', margin: '1rem 0' }}>
           <div>

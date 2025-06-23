@@ -1,14 +1,9 @@
 [
   {
     "id": "cytology_001",
-    "correctAnswer": "Cells",
     "question": "What is cytology the study of?",
-    "options": [
-      "Tissues",
-      "Cells",
-      "Organs",
-      "Organ systems"
-    ],
+    "correctAnswer": "Cells",
+    "options": ["Tissues", "Cells", "Organs", "Organ systems"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "Cytology is the study of cells and their structure and function.",
     "long_explanation": "Cytology examines the form, physiology, and pathology of individual cells. It’s essential for understanding how cells function, reproduce, and respond to disease.",
@@ -22,24 +17,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.112Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "cytology",
-      "cell biology",
-      "cell structure"
-    ],
-    "keywords": [
-      "cell",
-      "structure",
-      "microscopic",
-      "function",
-      "pathology"
-    ],
+    "tags": ["cytology", "cell biology", "cell structure"],
+    "keywords": ["cell", "structure", "microscopic", "function", "pathology"],
     "synonyms": null
   },
   {
     "id": "cytology_002",
-    "correctAnswer": "Hematoxylin and Eosin",
     "question": "Which staining technique is commonly used in cytology to highlight cell nuclei?",
+    "correctAnswer": "Hematoxylin and Eosin",
     "options": [
       "Hematoxylin and Eosin",
       "Gram stain",
@@ -59,30 +44,15 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "staining",
-      "cytology",
-      "H&E"
-    ],
-    "keywords": [
-      "hematoxylin",
-      "eosin",
-      "nucleus",
-      "histology",
-      "diagnosis"
-    ],
+    "tags": ["staining", "cytology", "H&E"],
+    "keywords": ["hematoxylin", "eosin", "nucleus", "histology", "diagnosis"],
     "synonyms": null
   },
   {
     "id": "cytology_003",
-    "correctAnswer": "Microscope",
     "question": "Which tool is essential in the study of cytology?",
-    "options": [
-      "Scalpel",
-      "Telescope",
-      "Microscope",
-      "Centrifuge"
-    ],
+    "correctAnswer": "Microscope",
+    "options": ["Scalpel", "Telescope", "Microscope", "Centrifuge"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "The microscope is essential for examining cells in cytology.",
     "long_explanation": "Because cells are microscopic, cytology relies on light and electron microscopes to reveal detailed cellular features such as organelles, nuclei, and abnormalities.",
@@ -96,28 +66,15 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "microscope",
-      "cytology",
-      "tools"
-    ],
-    "keywords": [
-      "microscope",
-      "cell exam",
-      "cytology tools"
-    ],
+    "tags": ["microscope", "cytology", "tools"],
+    "keywords": ["microscope", "cell exam", "cytology tools"],
     "synonyms": null
   },
   {
     "id": "cytology_004",
-    "correctAnswer": "Oncocytology",
     "question": "What branch of cytology focuses on detecting cancer cells?",
-    "options": [
-      "Histopathology",
-      "Oncocytology",
-      "Genomics",
-      "Neurology"
-    ],
+    "correctAnswer": "Oncocytology",
+    "options": ["Histopathology", "Oncocytology", "Genomics", "Neurology"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "Oncocytology is the study of cancerous cellular changes.",
     "long_explanation": "Oncocytology involves identifying abnormal cell morphology, such as irregular nuclei and mitotic figures, that indicate malignancy. It's essential for early cancer detection.",
@@ -131,28 +88,15 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "cytology",
-      "oncocytology",
-      "cancer"
-    ],
-    "keywords": [
-      "malignancy",
-      "cytology",
-      "oncology"
-    ],
+    "tags": ["cytology", "oncocytology", "cancer"],
+    "keywords": ["malignancy", "cytology", "oncology"],
     "synonyms": null
   },
   {
     "id": "cytology_005",
-    "correctAnswer": "Nucleus",
     "question": "Which cell component is analyzed for genetic mutations in cytological testing?",
-    "options": [
-      "Ribosomes",
-      "Cytoplasm",
-      "Nucleus",
-      "Golgi apparatus"
-    ],
+    "correctAnswer": "Nucleus",
+    "options": ["Ribosomes", "Cytoplasm", "Nucleus", "Golgi apparatus"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "The nucleus is where genetic mutations are typically detected.",
     "long_explanation": "Cytological testing often focuses on the nucleus, where DNA mutations can signal conditions like cancer, infections, or inherited diseases.",
@@ -166,29 +110,15 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "nucleus",
-      "genetics",
-      "cytology"
-    ],
-    "keywords": [
-      "DNA",
-      "mutation",
-      "genetics",
-      "cytopathology"
-    ],
+    "tags": ["nucleus", "genetics", "cytology"],
+    "keywords": ["DNA", "mutation", "genetics", "cytopathology"],
     "synonyms": null
   },
   {
     "id": "cytology_006",
-    "correctAnswer": "Pap smear",
     "question": "What is a common cytological sample used in cervical cancer screening?",
-    "options": [
-      "Urine",
-      "Pap smear",
-      "Saliva",
-      "Blood plasma"
-    ],
+    "correctAnswer": "Pap smear",
+    "options": ["Urine", "Pap smear", "Saliva", "Blood plasma"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "A Pap smear collects cervical cells for cytological analysis.",
     "long_explanation": "Pap smears are used to detect abnormal epithelial cells in the cervix that could indicate precancerous or cancerous changes. The sample is examined under a microscope.",
@@ -202,11 +132,7 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "Pap smear",
-      "cytology",
-      "cervical cancer"
-    ],
+    "tags": ["Pap smear", "cytology", "cervical cancer"],
     "keywords": [
       "screening",
       "cytopathology",
@@ -217,8 +143,8 @@
   },
   {
     "id": "cytology_007",
-    "correctAnswer": "Shed epithelial cells",
     "question": "Which type of cells are often studied in exfoliative cytology?",
+    "correctAnswer": "Shed epithelial cells",
     "options": [
       "Blood cells",
       "Muscle cells",
@@ -238,29 +164,15 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "cytology",
-      "exfoliative",
-      "epithelial cells"
-    ],
-    "keywords": [
-      "shed cells",
-      "screening",
-      "diagnosis",
-      "surface tissue"
-    ],
+    "tags": ["cytology", "exfoliative", "epithelial cells"],
+    "keywords": ["shed cells", "screening", "diagnosis", "surface tissue"],
     "synonyms": null
   },
   {
     "id": "cytology_008",
-    "correctAnswer": "400x",
     "question": "Cytotechnologists typically examine samples under what magnification?",
-    "options": [
-      "2x",
-      "10x",
-      "400x",
-      "1000x"
-    ],
+    "correctAnswer": "400x",
+    "options": ["2x", "10x", "400x", "1000x"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "They use high-powered microscopes, typically 400x magnification.",
     "long_explanation": "At 400x magnification, cytotechnologists can clearly identify nuclear and cytoplasmic details that indicate disease. It’s a standard in routine cytology exams.",
@@ -274,28 +186,15 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "cytology",
-      "microscope",
-      "magnification"
-    ],
-    "keywords": [
-      "400x",
-      "slide analysis",
-      "diagnostic detail"
-    ],
+    "tags": ["cytology", "microscope", "magnification"],
+    "keywords": ["400x", "slide analysis", "diagnostic detail"],
     "synonyms": null
   },
   {
     "id": "cytology_009",
-    "correctAnswer": "Nucleus",
     "question": "Which part of a cell is typically stained dark blue/purple in H&E staining?",
-    "options": [
-      "Golgi apparatus",
-      "Cytoplasm",
-      "Nucleus",
-      "Lysosomes"
-    ],
+    "correctAnswer": "Nucleus",
+    "options": ["Golgi apparatus", "Cytoplasm", "Nucleus", "Lysosomes"],
     "topics": ["anatomy", "cell_theory", "cell_biology", "cytology"],
     "short_explanation": "The nucleus stains dark blue/purple with hematoxylin.",
     "long_explanation": "In H&E staining, the nucleus takes up hematoxylin due to its acidic DNA content, aiding in the identification of cell health, division, and pathology.",
@@ -309,22 +208,14 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "nucleus",
-      "H&E staining",
-      "cytology"
-    ],
-    "keywords": [
-      "hematoxylin",
-      "nuclear staining",
-      "blue nucleus"
-    ],
+    "tags": ["nucleus", "H&E staining", "cytology"],
+    "keywords": ["hematoxylin", "nuclear staining", "blue nucleus"],
     "synonyms": null
   },
   {
     "id": "cytology_010",
-    "correctAnswer": "It allows detection of cellular abnormalities and disease",
     "question": "Why is cytology important in diagnostics?",
+    "correctAnswer": "It allows detection of cellular abnormalities and disease",
     "options": [
       "It identifies nutrient deficiencies",
       "It allows detection of cellular abnormalities and disease",
@@ -344,17 +235,8 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.113Z",
     "updated_at": "2025-05-24T14:54:13.458Z",
-    "tags": [
-      "cytology",
-      "diagnostics",
-      "disease detection"
-    ],
-    "keywords": [
-      "screening",
-      "early detection",
-      "cell changes",
-      "precancer"
-    ],
+    "tags": ["cytology", "diagnostics", "disease detection"],
+    "keywords": ["screening", "early detection", "cell changes", "precancer"],
     "synonyms": null
   }
 ]
