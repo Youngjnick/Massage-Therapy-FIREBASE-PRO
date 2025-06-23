@@ -1,15 +1,16 @@
 [
   {
     "id": "sarcomeres_001",
-    "correctAnswer": "Sarcomere",
     "question": "What is the basic contractile unit of a skeletal muscle?",
-    "options": [
-      "Myofibril",
-      "Sarcomere",
-      "Myosin",
-      "Actin"
+    "correctAnswer": "Sarcomere",
+    "options": ["Myofibril", "Sarcomere", "Myosin", "Actin"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "The sarcomere is the basic contractile unit.",
     "long_explanation": "Sarcomeres are the repeating structural and functional units of a myofibril, responsible for muscle contraction. They are composed of thick (myosin) and thin (actin) filaments organized between two Z-lines.",
     "clinical_application": "Understanding sarcomere mechanics is essential in diagnosing and treating muscular dystrophies.",
@@ -36,21 +37,20 @@
       "science_organization",
       "biology_organisms"
     ],
-    "synonyms": [
-      "muscle unit"
-    ]
+    "synonyms": ["muscle unit"]
   },
   {
     "id": "sarcomeres_002",
-    "correctAnswer": "I band and H zone",
     "question": "Which bands of the sarcomere change length during muscle contraction?",
-    "options": [
-      "A band only",
-      "I band and H zone",
-      "Z disc",
-      "M line"
+    "correctAnswer": "I band and H zone",
+    "options": ["A band only", "I band and H zone", "Z disc", "M line"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "The I band and H zone shorten during contraction.",
     "long_explanation": "During contraction, the thin filaments slide over thick filaments, shortening the I band and H zone. The A band remains constant in length because thick filaments do not change length.",
     "clinical_application": "Sarcomere sliding is the basis of the sliding filament theory, essential in rehabilitation therapies.",
@@ -63,31 +63,26 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.088Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "tags": [
-      "anatomy_muscles",
-      "anatomy_muscle_contraction",
-      "anatomy_zones"
-    ],
+    "tags": ["anatomy_muscles", "anatomy_muscle_contraction", "anatomy_zones"],
     "keywords": [
       "anatomy_muscles",
       "anatomy_muscle_contraction",
       "anatomy_zones"
     ],
-    "synonyms": [
-      "sarcomere bands"
-    ]
+    "synonyms": ["sarcomere bands"]
   },
   {
     "id": "sarcomeres_003",
-    "correctAnswer": "Myosin",
     "question": "What proteins make up the thick filaments in a sarcomere?",
-    "options": [
-      "Actin",
-      "Tropomyosin",
-      "Troponin",
-      "Myosin"
+    "correctAnswer": "Myosin",
+    "options": ["Actin", "Tropomyosin", "Troponin", "Myosin"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "Thick filaments are composed of myosin.",
     "long_explanation": "Myosin molecules form the thick filaments of the sarcomere and have heads that bind to actin to generate force during contraction. Their ATPase activity powers the sliding filament process.",
     "clinical_application": "Mutations in myosin genes are associated with certain types of myopathies.",
@@ -100,27 +95,27 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.088Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "tags": [
-      "anatomy_protein"
-    ],
-    "keywords": [
-      "anatomy_protein"
-    ],
-    "synonyms": [
-      "motor protein"
-    ]
+    "tags": ["anatomy_protein"],
+    "keywords": ["anatomy_protein"],
+    "synonyms": ["motor protein"]
   },
   {
     "id": "sarcomeres_004",
-    "correctAnswer": "Separates sarcomeres",
     "question": "What is the function of the Z disc in a sarcomere?",
+    "correctAnswer": "Separates sarcomeres",
     "options": [
       "Anchors thick filaments",
       "Separates sarcomeres",
       "Forms the M line",
       "Contains myosin heads"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
+    ],
     "short_explanation": "The Z disc separates adjacent sarcomeres.",
     "long_explanation": "Z discs are dense protein structures that anchor the actin filaments and mark the boundaries between sarcomeres. They play a critical role in transmitting force along the myofibril.",
     "clinical_application": "Z-disc integrity is important in muscle diseases such as desmin-related myopathy.",
@@ -145,21 +140,20 @@
       "ethics_boundary",
       "concept_integration"
     ],
-    "synonyms": [
-      "Z line"
-    ]
+    "synonyms": ["Z line"]
   },
   {
     "id": "sarcomeres_005",
-    "correctAnswer": "Titin",
     "question": "Which protein helps restore sarcomere length after stretching and acts like a molecular spring?",
-    "options": [
-      "Myosin",
-      "Titin",
-      "Actin",
-      "Nebulin"
+    "correctAnswer": "Titin",
+    "options": ["Myosin", "Titin", "Actin", "Nebulin"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "Titin acts as a spring to maintain sarcomere integrity.",
     "long_explanation": "Titin is a large elastic protein that extends from the Z disc to the M line, contributing to passive elasticity and helping sarcomeres return to resting length after contraction or stretch.",
     "clinical_application": "Mutations in titin are linked to cardiomyopathies and muscle stiffness.",
@@ -184,21 +178,20 @@
       "purpose_healing",
       "concept_restoration"
     ],
-    "synonyms": [
-      "connectin"
-    ]
+    "synonyms": ["connectin"]
   },
   {
     "id": "sarcomeres_006",
-    "correctAnswer": "I band",
     "question": "Which band of the sarcomere contains only actin filaments?",
-    "options": [
-      "A band",
-      "H zone",
-      "I band",
-      "Z disc"
+    "correctAnswer": "I band",
+    "options": ["A band", "H zone", "I band", "Z disc"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "The I band contains only thin (actin) filaments.",
     "long_explanation": "The I band appears lighter under a microscope and includes only thin filaments (actin). It shortens during muscle contraction as filaments slide past each other.",
     "clinical_application": "Changes in I band length are useful markers in studies of muscle contraction and disease.",
@@ -211,31 +204,26 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.088Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "tags": [
-      "anatomy_muscles",
-      "anatomy_muscle_contraction",
-      "anatomy_zones"
-    ],
+    "tags": ["anatomy_muscles", "anatomy_muscle_contraction", "anatomy_zones"],
     "keywords": [
       "anatomy_muscles",
       "anatomy_muscle_contraction",
       "anatomy_zones"
     ],
-    "synonyms": [
-      "light band"
-    ]
+    "synonyms": ["light band"]
   },
   {
     "id": "sarcomeres_007",
-    "correctAnswer": "M line",
     "question": "Which line in the sarcomere anchors thick filaments and defines the center of the A band?",
-    "options": [
-      "Z line",
-      "M line",
-      "I band",
-      "H zone"
+    "correctAnswer": "M line",
+    "options": ["Z line", "M line", "I band", "H zone"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "The M line anchors thick (myosin) filaments at the sarcomere center.",
     "long_explanation": "Located in the center of the A band and H zone, the M line consists of proteins that stabilize and anchor the thick filaments, ensuring proper alignment during contraction.",
     "clinical_application": "Disruption of M line proteins may result in myopathies and reduced contractile efficiency.",
@@ -248,29 +236,22 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.088Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "tags": [
-      "anatomy_protein",
-      "anatomy_zones"
-    ],
-    "keywords": [
-      "anatomy_protein",
-      "anatomy_zones"
-    ],
-    "synonyms": [
-      "middle line"
-    ]
+    "tags": ["anatomy_protein", "anatomy_zones"],
+    "keywords": ["anatomy_protein", "anatomy_zones"],
+    "synonyms": ["middle line"]
   },
   {
     "id": "sarcomeres_008",
-    "correctAnswer": "Both I band and H zone",
     "question": "Which structure shortens during muscle contraction but not the A band?",
-    "options": [
-      "I band",
-      "H zone",
-      "Z disc",
-      "Both I band and H zone"
+    "correctAnswer": "Both I band and H zone",
+    "options": ["I band", "H zone", "Z disc", "Both I band and H zone"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "The I band and H zone shorten; A band stays the same.",
     "long_explanation": "As thin filaments slide toward the center of the sarcomere during contraction, both the I band and H zone decrease in length, while the A band (length of thick filaments) remains unchanged.",
     "clinical_application": "These changes can be visualized in histological studies of muscle pathology.",
@@ -295,21 +276,20 @@
       "science_histology",
       "anatomy_zones"
     ],
-    "synonyms": [
-      "contractile bands"
-    ]
+    "synonyms": ["contractile bands"]
   },
   {
     "id": "sarcomeres_009",
-    "correctAnswer": "Tropomyosin",
     "question": "Which protein regulates actin-myosin binding by covering binding sites on actin?",
-    "options": [
-      "Titin",
-      "Nebulin",
-      "Tropomyosin",
-      "Calmodulin"
+    "correctAnswer": "Tropomyosin",
+    "options": ["Titin", "Nebulin", "Tropomyosin", "Calmodulin"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
     "short_explanation": "Tropomyosin blocks myosin-binding sites on actin.",
     "long_explanation": "In resting muscle, tropomyosin lies along the actin filament, preventing myosin from binding. Upon calcium binding to troponin, tropomyosin shifts, allowing contraction to occur.",
     "clinical_application": "Abnormal tropomyosin expression is implicated in some cardiomyopathies and skeletal muscle disorders.",
@@ -322,29 +302,27 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.088Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "tags": [
-      "anatomy_protein",
-      "anatomy_muscles"
-    ],
-    "keywords": [
-      "anatomy_protein",
-      "anatomy_muscles"
-    ],
-    "synonyms": [
-      "actin blocker"
-    ]
+    "tags": ["anatomy_protein", "anatomy_muscles"],
+    "keywords": ["anatomy_protein", "anatomy_muscles"],
+    "synonyms": ["actin blocker"]
   },
   {
     "id": "sarcomeres_010",
-    "correctAnswer": "Binds to troponin to uncover actin",
     "question": "What is the role of calcium in sarcomere contraction?",
+    "correctAnswer": "Binds to troponin to uncover actin",
     "options": [
       "Breaks down ATP",
       "Binds to myosin head",
       "Binds to troponin to uncover actin",
       "Inhibits acetylcholine release"
     ],
-    "topics": ["anatomy", "systems", "muscular_system", "muscle_layers", "sarcomeres"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "muscular_system",
+      "muscle_layers",
+      "sarcomeres"
+    ],
     "short_explanation": "Calcium binds to troponin, allowing actin-myosin interaction.",
     "long_explanation": "Calcium released from the sarcoplasmic reticulum binds to troponin, which causes a conformational change that shifts tropomyosin off actin’s binding sites, enabling myosin binding and contraction.",
     "clinical_application": "Calcium regulation is critical in muscle physiology and is targeted by drugs for conditions like malignant hyperthermia.",
@@ -357,16 +335,8 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.088Z",
     "updated_at": "2025-05-24T14:54:13.430Z",
-    "tags": [
-      "anatomy_muscles",
-      "concept_targeted"
-    ],
-    "keywords": [
-      "anatomy_muscles",
-      "concept_targeted"
-    ],
-    "synonyms": [
-      "calcium signaling"
-    ]
+    "tags": ["anatomy_muscles", "concept_targeted"],
+    "keywords": ["anatomy_muscles", "concept_targeted"],
+    "synonyms": ["calcium signaling"]
   }
 ]

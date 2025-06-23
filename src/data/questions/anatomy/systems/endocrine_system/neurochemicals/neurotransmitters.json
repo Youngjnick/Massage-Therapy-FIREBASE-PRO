@@ -1,15 +1,16 @@
 [
   {
     "id": "neurotransmitters_001",
-    "correctAnswer": "Acetylcholine",
     "question": "Which neurotransmitter is primarily responsible for muscle contraction?",
-    "options": [
-      "Dopamine",
-      "Serotonin",
-      "Acetylcholine",
-      "Norepinephrine"
+    "correctAnswer": "Acetylcholine",
+    "options": ["Dopamine", "Serotonin", "Acetylcholine", "Norepinephrine"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "Acetylcholine is the neurotransmitter that initiates muscle contraction. It transmits signals from motor neurons to muscle fibers.",
     "long_explanation": "Acetylcholine is released at neuromuscular junctions, where it binds to receptors on skeletal muscle cells, triggering an action potential and resulting in contraction. This process is fundamental to voluntary movement and motor control. Dysfunction in acetylcholine signaling can result in paralysis or muscle fatigue, as seen in conditions like myasthenia gravis.",
     "clinical_application": "In massage therapy, working with overactive or tense muscles may help support normal neuromuscular function and improve acetylcholine balance by reducing sympathetic nervous system dominance.",
@@ -22,11 +23,7 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "anatomy_cells",
-      "anatomy_muscles",
-      "anatomy_muscle_contraction"
-    ],
+    "tags": ["anatomy_cells", "anatomy_muscles", "anatomy_muscle_contraction"],
     "keywords": [
       "anatomy_cells",
       "anatomy_muscles",
@@ -36,15 +33,16 @@
   },
   {
     "id": "neurotransmitters_002",
-    "correctAnswer": "Serotonin",
     "question": "Which neurotransmitter is associated with mood regulation, appetite, and sleep?",
-    "options": [
-      "Dopamine",
-      "GABA",
-      "Serotonin",
-      "Glutamate"
+    "correctAnswer": "Serotonin",
+    "options": ["Dopamine", "GABA", "Serotonin", "Glutamate"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "Serotonin regulates mood, appetite, and sleep. It’s a key neurotransmitter in emotional and physiological balance.",
     "long_explanation": "Serotonin (5-HT) is found in the brain and gastrointestinal tract. It influences mood, appetite, circadian rhythm, and even social behavior. Low serotonin levels are associated with depression and anxiety, while higher levels support feelings of well-being. Many antidepressants work by increasing serotonin levels in the brain.",
     "clinical_application": "Massage may enhance serotonin production by reducing cortisol and activating the parasympathetic nervous system, promoting relaxation and emotional balance.",
@@ -79,15 +77,21 @@
   },
   {
     "id": "neurotransmitters_003",
-    "correctAnswer": "Motor control, reward, and motivation",
     "question": "Dopamine plays a significant role in which of the following?",
+    "correctAnswer": "Motor control, reward, and motivation",
     "options": [
       "Muscle contraction",
       "Pain inhibition",
       "Motor control, reward, and motivation",
       "Sleep regulation"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
+    ],
     "short_explanation": "Dopamine is critical for motor control, motivation, and reward-seeking behavior.",
     "long_explanation": "Dopamine acts within the brain's basal ganglia to regulate movement, and in the limbic system to influence mood and motivation. It’s essential for initiating movement and reinforcing pleasurable experiences. Deficits in dopamine are linked to Parkinson’s disease, while excess dopamine activity is associated with addiction.",
     "clinical_application": "Therapeutic massage may improve dopamine levels indirectly by reducing stress, improving mood, and promoting a sense of physical reward or accomplishment.",
@@ -120,15 +124,16 @@
   },
   {
     "id": "neurotransmitters_004",
-    "correctAnswer": "Glutamate",
     "question": "Which neurotransmitter is the main excitatory chemical in the brain?",
-    "options": [
-      "GABA",
-      "Serotonin",
-      "Norepinephrine",
-      "Glutamate"
+    "correctAnswer": "Glutamate",
+    "options": ["GABA", "Serotonin", "Norepinephrine", "Glutamate"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "'Glutamate' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'Glutamate', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'Glutamate' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -141,29 +146,22 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage",
-      "anatomy_brain",
-      "organ_brain"
-    ],
-    "keywords": [
-      "modality_massage",
-      "anatomy_brain",
-      "organ_brain"
-    ],
+    "tags": ["modality_massage", "anatomy_brain", "organ_brain"],
+    "keywords": ["modality_massage", "anatomy_brain", "organ_brain"],
     "synonyms": null
   },
   {
     "id": "neurotransmitters_005",
-    "correctAnswer": "GABA",
     "question": "Which neurotransmitter is the most common inhibitory neurotransmitter in the central nervous system?",
-    "options": [
-      "GABA",
-      "Dopamine",
-      "Serotonin",
-      "Norepinephrine"
+    "correctAnswer": "GABA",
+    "options": ["GABA", "Dopamine", "Serotonin", "Norepinephrine"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "'GABA' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'GABA', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'GABA' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -176,27 +174,22 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage",
-      "anatomy_nervous_system"
-    ],
-    "keywords": [
-      "modality_massage",
-      "anatomy_nervous_system"
-    ],
+    "tags": ["modality_massage", "anatomy_nervous_system"],
+    "keywords": ["modality_massage", "anatomy_nervous_system"],
     "synonyms": null
   },
   {
     "id": "neurotransmitters_006",
-    "correctAnswer": "Norepinephrine",
     "question": "Which neurotransmitter is involved in the fight-or-flight response?",
-    "options": [
-      "GABA",
-      "Norepinephrine",
-      "Dopamine",
-      "Acetylcholine"
+    "correctAnswer": "Norepinephrine",
+    "options": ["GABA", "Norepinephrine", "Dopamine", "Acetylcholine"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "'Norepinephrine' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'Norepinephrine', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'Norepinephrine' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -209,25 +202,22 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage"
-    ],
-    "keywords": [
-      "modality_massage"
-    ],
+    "tags": ["modality_massage"],
+    "keywords": ["modality_massage"],
     "synonyms": null
   },
   {
     "id": "neurotransmitters_007",
-    "correctAnswer": "Serotonin",
     "question": "Low levels of which neurotransmitter are associated with depression?",
-    "options": [
-      "Serotonin",
-      "Acetylcholine",
-      "Dopamine",
-      "Glutamate"
+    "correctAnswer": "Serotonin",
+    "options": ["Serotonin", "Acetylcholine", "Dopamine", "Glutamate"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "'Serotonin' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'Serotonin', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'Serotonin' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -240,27 +230,27 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage",
-      "biochemistry_levels"
-    ],
-    "keywords": [
-      "modality_massage",
-      "biochemistry_levels"
-    ],
+    "tags": ["modality_massage", "biochemistry_levels"],
+    "keywords": ["modality_massage", "biochemistry_levels"],
     "synonyms": null
   },
   {
     "id": "neurotransmitters_008",
-    "correctAnswer": "Block pain and promote a sense of well-being",
     "question": "What is the primary function of endorphins?",
+    "correctAnswer": "Block pain and promote a sense of well-being",
     "options": [
       "Stimulate digestion",
       "Regulate mood swings",
       "Block pain and promote a sense of well-being",
       "Trigger reflexes"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
+    ],
     "short_explanation": "'Block pain and promote a sense of well-being' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'Block pain and promote a sense of well-being', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'Block pain and promote a sense of well-being' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -273,29 +263,22 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage",
-      "condition_pain",
-      "system_digestive"
-    ],
-    "keywords": [
-      "modality_massage",
-      "condition_pain",
-      "system_digestive"
-    ],
+    "tags": ["modality_massage", "condition_pain", "system_digestive"],
+    "keywords": ["modality_massage", "condition_pain", "system_digestive"],
     "synonyms": null
   },
   {
     "id": "neurotransmitters_009",
-    "correctAnswer": "Melatonin",
     "question": "Which neurotransmitter helps regulate circadian rhythms and sleep cycles?",
-    "options": [
-      "Acetylcholine",
-      "Dopamine",
-      "Melatonin",
-      "Serotonin"
+    "correctAnswer": "Melatonin",
+    "options": ["Acetylcholine", "Dopamine", "Melatonin", "Serotonin"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "'Melatonin' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'Melatonin', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'Melatonin' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -308,27 +291,22 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage",
-      "physiology_sleep"
-    ],
-    "keywords": [
-      "modality_massage",
-      "physiology_sleep"
-    ],
+    "tags": ["modality_massage", "physiology_sleep"],
+    "keywords": ["modality_massage", "physiology_sleep"],
     "synonyms": null
   },
   {
     "id": "neurotransmitters_010",
-    "correctAnswer": "Norepinephrine",
     "question": "Which neurotransmitter is elevated during alertness and stress responses?",
-    "options": [
-      "GABA",
-      "Norepinephrine",
-      "Serotonin",
-      "Dopamine"
+    "correctAnswer": "Norepinephrine",
+    "options": ["GABA", "Norepinephrine", "Serotonin", "Dopamine"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "endocrine_system",
+      "neurochemicals",
+      "neurotransmitters"
     ],
-    "topics": ["anatomy", "systems", "endocrine_system", "neurochemicals", "neurotransmitters"],
     "short_explanation": "'Norepinephrine' is the correct neurotransmitter for this function.",
     "long_explanation": "The correct answer, 'Norepinephrine', plays a critical role in this physiological or neurological function. Understanding its effects supports clinical reasoning and communication in massage settings.",
     "clinical_application": "In practice, recognizing the effects of 'Norepinephrine' can help massage therapists understand client symptoms and adjust treatments to promote nervous system balance.",
@@ -341,14 +319,8 @@
     "relevance_score": null,
     "created_at": "2025-05-24T14:34:08.104Z",
     "updated_at": "2025-05-24T14:54:13.452Z",
-    "tags": [
-      "modality_massage",
-      "purpose_stress"
-    ],
-    "keywords": [
-      "modality_massage",
-      "purpose_stress"
-    ],
+    "tags": ["modality_massage", "purpose_stress"],
+    "keywords": ["modality_massage", "purpose_stress"],
     "synonyms": null
   }
 ]

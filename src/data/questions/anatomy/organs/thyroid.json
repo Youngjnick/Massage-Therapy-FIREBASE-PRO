@@ -1,8 +1,8 @@
 [
   {
     "id": "thyroid_001",
-    "correctAnswer": "Thyroxine (T4)",
     "question": "What hormone is produced in greatest quantity by the thyroid gland?",
+    "correctAnswer": "Thyroxine (T4)",
     "options": [
       "Thyroxine (T4)",
       "Triiodothyronine (T3)",
@@ -22,28 +22,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "T4",
-      "thyroid hormone",
-      "endocrine"
-    ],
-    "keywords": [
-      "thyroxine",
-      "thyroid output",
-      "metabolism regulation"
-    ],
+    "tags": ["T4", "thyroid hormone", "endocrine"],
+    "keywords": ["thyroxine", "thyroid output", "metabolism regulation"],
     "synonyms": null
   },
   {
     "id": "thyroid_002",
-    "correctAnswer": "Iodine",
     "question": "Which mineral is essential for thyroid hormone synthesis?",
-    "options": [
-      "Calcium",
-      "Iron",
-      "Iodine",
-      "Zinc"
-    ],
+    "correctAnswer": "Iodine",
+    "options": ["Calcium", "Iron", "Iodine", "Zinc"],
     "topics": ["anatomy", "organs", "thyroid"],
     "short_explanation": "Iodine is required to form thyroid hormones.",
     "long_explanation": "Iodine is actively transported into the thyroid and used in the synthesis of T3 and T4. Deficiency can lead to goiter and hypothyroidism.",
@@ -57,28 +44,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "iodine",
-      "thyroid synthesis",
-      "goiter"
-    ],
-    "keywords": [
-      "thyroid mineral",
-      "iodine deficiency",
-      "hormone synthesis"
-    ],
+    "tags": ["iodine", "thyroid synthesis", "goiter"],
+    "keywords": ["thyroid mineral", "iodine deficiency", "hormone synthesis"],
     "synonyms": null
   },
   {
     "id": "thyroid_003",
-    "correctAnswer": "Calcitonin",
     "question": "Which hormone lowers blood calcium levels and is produced by the thyroid?",
-    "options": [
-      "PTH",
-      "Calcitonin",
-      "T3",
-      "Insulin"
-    ],
+    "correctAnswer": "Calcitonin",
+    "options": ["PTH", "Calcitonin", "T3", "Insulin"],
     "topics": ["anatomy", "organs", "thyroid"],
     "short_explanation": "Calcitonin lowers blood calcium levels by inhibiting bone resorption.",
     "long_explanation": "Produced by parafollicular (C) cells of the thyroid, calcitonin helps reduce calcium by inhibiting osteoclast activity and increasing calcium excretion.",
@@ -92,11 +66,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "calcitonin",
-      "calcium homeostasis",
-      "C cells"
-    ],
+    "tags": ["calcitonin", "calcium homeostasis", "C cells"],
     "keywords": [
       "thyroid calcium hormone",
       "osteoclast inhibition",
@@ -106,8 +76,8 @@
   },
   {
     "id": "thyroid_004",
-    "correctAnswer": "Anterior to the trachea below the larynx",
     "question": "Where is the thyroid gland located?",
+    "correctAnswer": "Anterior to the trachea below the larynx",
     "options": [
       "Posterior to the trachea",
       "Anterior to the trachea below the larynx",
@@ -127,22 +97,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "thyroid anatomy",
-      "neck",
-      "trachea"
-    ],
-    "keywords": [
-      "thyroid location",
-      "cervical anatomy",
-      "anterior neck"
-    ],
+    "tags": ["thyroid anatomy", "neck", "trachea"],
+    "keywords": ["thyroid location", "cervical anatomy", "anterior neck"],
     "synonyms": null
   },
   {
     "id": "thyroid_005",
-    "correctAnswer": "Hypothyroidism",
     "question": "What condition results from an underactive thyroid?",
+    "correctAnswer": "Hypothyroidism",
     "options": [
       "Hyperthyroidism",
       "Hypothyroidism",
@@ -162,22 +124,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "hypothyroidism",
-      "autoimmune",
-      "Hashimoto"
-    ],
-    "keywords": [
-      "thyroid deficiency",
-      "slow metabolism",
-      "thyroid disorders"
-    ],
+    "tags": ["hypothyroidism", "autoimmune", "Hashimoto"],
+    "keywords": ["thyroid deficiency", "slow metabolism", "thyroid disorders"],
     "synonyms": null
   },
   {
     "id": "thyroid_006",
-    "correctAnswer": "Regulates thyroid hormone production",
     "question": "What is the role of TSH in thyroid function?",
+    "correctAnswer": "Regulates thyroid hormone production",
     "options": [
       "Inhibits thyroid activity",
       "Stimulates calcitonin",
@@ -197,11 +151,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "TSH",
-      "pituitary",
-      "thyroid regulation"
-    ],
+    "tags": ["TSH", "pituitary", "thyroid regulation"],
     "keywords": [
       "thyroid-stimulating hormone",
       "feedback loop",
@@ -211,8 +161,8 @@
   },
   {
     "id": "thyroid_007",
-    "correctAnswer": "Graves’ disease",
     "question": "Which condition is associated with excessive thyroid hormone production?",
+    "correctAnswer": "Graves’ disease",
     "options": [
       "Graves’ disease",
       "Hashimoto’s thyroiditis",
@@ -232,11 +182,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "Graves",
-      "hyperthyroidism",
-      "autoantibodies"
-    ],
+    "tags": ["Graves", "hyperthyroidism", "autoantibodies"],
     "keywords": [
       "excess thyroid hormone",
       "thyrotoxicosis",
@@ -246,14 +192,9 @@
   },
   {
     "id": "thyroid_008",
-    "correctAnswer": "TSH",
     "question": "Which lab finding is typically elevated in primary hypothyroidism?",
-    "options": [
-      "T3",
-      "T4",
-      "TSH",
-      "Calcitonin"
-    ],
+    "correctAnswer": "TSH",
+    "options": ["T3", "T4", "TSH", "Calcitonin"],
     "topics": ["anatomy", "organs", "thyroid"],
     "short_explanation": "TSH is elevated as the body tries to stimulate a failing thyroid.",
     "long_explanation": "In primary hypothyroidism, low levels of thyroid hormone fail to provide negative feedback, leading the pituitary to increase TSH production.",
@@ -267,22 +208,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "TSH elevation",
-      "hypothyroidism labs",
-      "endocrine feedback"
-    ],
-    "keywords": [
-      "thyroid blood tests",
-      "thyroid feedback",
-      "TSH marker"
-    ],
+    "tags": ["TSH elevation", "hypothyroidism labs", "endocrine feedback"],
+    "keywords": ["thyroid blood tests", "thyroid feedback", "TSH marker"],
     "synonyms": null
   },
   {
     "id": "thyroid_009",
-    "correctAnswer": "Recurrent laryngeal nerve",
     "question": "What anatomical structure must be preserved during thyroid surgery to avoid hoarseness?",
+    "correctAnswer": "Recurrent laryngeal nerve",
     "options": [
       "Vagus nerve",
       "Phrenic nerve",
@@ -302,11 +235,7 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "recurrent laryngeal",
-      "thyroid surgery",
-      "nerve preservation"
-    ],
+    "tags": ["recurrent laryngeal", "thyroid surgery", "nerve preservation"],
     "keywords": [
       "voice nerve",
       "thyroidectomy complication",
@@ -316,8 +245,8 @@
   },
   {
     "id": "thyroid_010",
-    "correctAnswer": "Graves’ disease",
     "question": "Which condition commonly results in a visible neck swelling (goiter)?",
+    "correctAnswer": "Graves’ disease",
     "options": [
       "Addison’s disease",
       "Graves’ disease",
@@ -337,16 +266,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "goiter",
-      "thyroid swelling",
-      "Graves’ disease"
-    ],
-    "keywords": [
-      "thyroid enlargement",
-      "visible goiter",
-      "anterior neck mass"
-    ],
+    "tags": ["goiter", "thyroid swelling", "Graves’ disease"],
+    "keywords": ["thyroid enlargement", "visible goiter", "anterior neck mass"],
     "synonyms": null
   }
 ]

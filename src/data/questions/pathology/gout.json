@@ -1,14 +1,9 @@
 [
   {
     "id": "gout_001",
-    "correctAnswer": "Big toe",
     "question": "Which joint is most commonly affected during an acute gout attack?",
-    "options": [
-      "Elbow",
-      "Knee",
-      "Big toe",
-      "Wrist"
-    ],
+    "correctAnswer": "Big toe",
+    "options": ["Elbow", "Knee", "Big toe", "Wrist"],
     "topics": ["pathology", "gout"],
     "short_explanation": "The big toe is the most common site of gout flare-ups.",
     "long_explanation": "Gout frequently affects the metatarsophalangeal joint of the big toe due to the accumulation of uric acid crystals, which trigger a painful inflammatory response.",
@@ -22,31 +17,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "gout",
-      "big toe",
-      "joint inflammation"
-    ],
-    "keywords": [
-      "MTP joint",
-      "toe",
-      "gout flare"
-    ],
-    "synonyms": [
-      "first MTP",
-      "hallux"
-    ]
+    "tags": ["gout", "big toe", "joint inflammation"],
+    "keywords": ["MTP joint", "toe", "gout flare"],
+    "synonyms": ["first MTP", "hallux"]
   },
   {
     "id": "gout_002",
-    "correctAnswer": "Uric acid",
     "question": "What substance builds up in the joints to cause gout?",
-    "options": [
-      "Calcium",
-      "Lactic acid",
-      "Uric acid",
-      "Glucose"
-    ],
+    "correctAnswer": "Uric acid",
+    "options": ["Calcium", "Lactic acid", "Uric acid", "Glucose"],
     "topics": ["pathology", "gout"],
     "short_explanation": "Gout is caused by a buildup of uric acid crystals.",
     "long_explanation": "Gout occurs when the body accumulates uric acid, which crystallizes in joints and leads to inflammation, pain, and swelling.",
@@ -60,25 +39,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "uric acid",
-      "crystals",
-      "gout"
-    ],
-    "keywords": [
-      "uric acid",
-      "hyperuricemia",
-      "joint crystals"
-    ],
-    "synonyms": [
-      "urate",
-      "uric acid crystals"
-    ]
+    "tags": ["uric acid", "crystals", "gout"],
+    "keywords": ["uric acid", "hyperuricemia", "joint crystals"],
+    "synonyms": ["urate", "uric acid crystals"]
   },
   {
     "id": "gout_003",
-    "correctAnswer": "Men over 40",
     "question": "Which population is at increased risk for developing gout?",
+    "correctAnswer": "Men over 40",
     "options": [
       "Young children",
       "Post-menopausal women",
@@ -98,31 +66,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "gout",
-      "risk factors",
-      "demographics"
-    ],
-    "keywords": [
-      "men",
-      "age",
-      "risk group"
-    ],
-    "synonyms": [
-      "middle-aged men",
-      "older males"
-    ]
+    "tags": ["gout", "risk factors", "demographics"],
+    "keywords": ["men", "age", "risk group"],
+    "synonyms": ["middle-aged men", "older males"]
   },
   {
     "id": "gout_004",
-    "correctAnswer": "Red meat",
     "question": "Which of the following foods is most likely to trigger a gout flare-up?",
-    "options": [
-      "Leafy greens",
-      "Red meat",
-      "Low-fat dairy",
-      "Bananas"
-    ],
+    "correctAnswer": "Red meat",
+    "options": ["Leafy greens", "Red meat", "Low-fat dairy", "Bananas"],
     "topics": ["pathology", "gout"],
     "short_explanation": "Foods high in purines, like red meat, can trigger gout.",
     "long_explanation": "Dietary purines are metabolized into uric acid. Red meats, organ meats, and certain seafoods are known to raise uric acid levels.",
@@ -136,31 +88,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "diet",
-      "purines",
-      "triggers"
-    ],
-    "keywords": [
-      "red meat",
-      "organ meat",
-      "purine-rich foods"
-    ],
-    "synonyms": [
-      "purines",
-      "meat trigger"
-    ]
+    "tags": ["diet", "purines", "triggers"],
+    "keywords": ["red meat", "organ meat", "purine-rich foods"],
+    "synonyms": ["purines", "meat trigger"]
   },
   {
     "id": "gout_005",
-    "correctAnswer": "Tophi",
     "question": "What is the term for large, visible deposits of uric acid crystals in chronic gout?",
-    "options": [
-      "Callus",
-      "Bursa",
-      "Tophi",
-      "Lipoma"
-    ],
+    "correctAnswer": "Tophi",
+    "options": ["Callus", "Bursa", "Tophi", "Lipoma"],
     "topics": ["pathology", "gout"],
     "short_explanation": "Tophi are hard nodules formed by uric acid crystals.",
     "long_explanation": "Tophi are firm lumps under the skin composed of urate crystals that form in chronic gout and may appear near joints or in the ear.",
@@ -174,19 +110,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "tophi",
-      "chronic gout",
-      "crystals"
-    ],
-    "keywords": [
-      "tophi",
-      "urate nodules",
-      "hard deposits"
-    ],
-    "synonyms": [
-      "uric deposits",
-      "urate nodules"
-    ]
+    "tags": ["tophi", "chronic gout", "crystals"],
+    "keywords": ["tophi", "urate nodules", "hard deposits"],
+    "synonyms": ["uric deposits", "urate nodules"]
   }
 ]

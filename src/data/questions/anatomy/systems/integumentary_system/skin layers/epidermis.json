@@ -1,15 +1,21 @@
 [
   {
     "id": "epidermis_001",
-    "correctAnswer": "Stratum corneum",
     "question": "What is the outermost layer of the epidermis called?",
+    "correctAnswer": "Stratum corneum",
     "options": [
       "Stratum basale",
       "Stratum spinosum",
       "Stratum corneum",
       "Stratum lucidum"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "Stratum corneum is the outermost layer of the epidermis.",
     "long_explanation": "This layer consists of dead, flattened keratinized cells that protect the body from environmental damage and dehydration.",
     "clinical_application": "Massage should not irritate this layer, especially in clients with eczema or psoriasis.",
@@ -22,31 +28,27 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "epidermis",
-      "layers",
-      "stratum corneum"
-    ],
-    "keywords": [
-      "keratinized",
-      "barrier",
-      "skin"
-    ],
-    "synonyms": [
-      "horny layer"
-    ]
+    "tags": ["epidermis", "layers", "stratum corneum"],
+    "keywords": ["keratinized", "barrier", "skin"],
+    "synonyms": ["horny layer"]
   },
   {
     "id": "epidermis_002",
-    "correctAnswer": "Melanocytes",
     "question": "Which cells in the epidermis produce melanin?",
+    "correctAnswer": "Melanocytes",
     "options": [
       "Keratinocytes",
       "Melanocytes",
       "Langerhans cells",
       "Merkel cells"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "Melanocytes produce the pigment melanin.",
     "long_explanation": "Melanocytes are found in the stratum basale and protect against UV radiation by producing melanin.",
     "clinical_application": "Massage therapists should note pigmentation changes for potential referral.",
@@ -59,31 +61,27 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "melanocytes",
-      "pigment",
-      "melanin"
-    ],
-    "keywords": [
-      "UV protection",
-      "basale",
-      "melanin"
-    ],
-    "synonyms": [
-      "pigment cells"
-    ]
+    "tags": ["melanocytes", "pigment", "melanin"],
+    "keywords": ["UV protection", "basale", "melanin"],
+    "synonyms": ["pigment cells"]
   },
   {
     "id": "epidermis_003",
-    "correctAnswer": "Keratinocytes",
     "question": "What is the primary cell type found in the epidermis?",
+    "correctAnswer": "Keratinocytes",
     "options": [
       "Fibroblasts",
       "Melanocytes",
       "Keratinocytes",
       "Langerhans cells"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "Keratinocytes make up the majority of epidermal cells.",
     "long_explanation": "These cells synthesize keratin, a protein that strengthens and waterproofs the skin.",
     "clinical_application": "Dry or flaky skin indicates keratinocyte turnover issues, important in massage intake.",
@@ -96,31 +94,27 @@
     "relevance_score": 9.4,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "keratinocyte",
-      "epidermis",
-      "keratin"
-    ],
-    "keywords": [
-      "skin cells",
-      "barrier",
-      "protein"
-    ],
-    "synonyms": [
-      "keratin cell"
-    ]
+    "tags": ["keratinocyte", "epidermis", "keratin"],
+    "keywords": ["skin cells", "barrier", "protein"],
+    "synonyms": ["keratin cell"]
   },
   {
     "id": "epidermis_004",
-    "correctAnswer": "Stratum basale",
     "question": "Which epidermal layer is responsible for cell division?",
+    "correctAnswer": "Stratum basale",
     "options": [
       "Stratum granulosum",
       "Stratum lucidum",
       "Stratum basale",
       "Stratum corneum"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "The stratum basale contains mitotically active cells.",
     "long_explanation": "New keratinocytes are produced in this deepest epidermal layer and move upward over time.",
     "clinical_application": "Understanding this helps explain skin regeneration and healing after superficial massage.",
@@ -133,31 +127,22 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "basale",
-      "mitosis",
-      "growth"
-    ],
-    "keywords": [
-      "new cells",
-      "skin base",
-      "division"
-    ],
-    "synonyms": [
-      "germinativum"
-    ]
+    "tags": ["basale", "mitosis", "growth"],
+    "keywords": ["new cells", "skin base", "division"],
+    "synonyms": ["germinativum"]
   },
   {
     "id": "epidermis_005",
-    "correctAnswer": "Langerhans cells",
     "question": "Which immune cells are located in the epidermis?",
-    "options": [
-      "T cells",
-      "Langerhans cells",
-      "Macrophages",
-      "Neutrophils"
+    "correctAnswer": "Langerhans cells",
+    "options": ["T cells", "Langerhans cells", "Macrophages", "Neutrophils"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
     "short_explanation": "Langerhans cells detect pathogens and alert the immune system.",
     "long_explanation": "These dendritic cells are antigen-presenting and reside primarily in the stratum spinosum.",
     "clinical_application": "Massage should avoid broken skin to prevent microbial entry before Langerhans cell activation.",
@@ -170,31 +155,27 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "immune",
-      "epidermis",
-      "Langerhans"
-    ],
-    "keywords": [
-      "skin immunity",
-      "dendritic",
-      "antigen"
-    ],
-    "synonyms": [
-      "immune epidermal cells"
-    ]
+    "tags": ["immune", "epidermis", "Langerhans"],
+    "keywords": ["skin immunity", "dendritic", "antigen"],
+    "synonyms": ["immune epidermal cells"]
   },
   {
     "id": "epidermis_006",
-    "correctAnswer": "Stratum lucidum",
     "question": "Which layer of the epidermis is only present in thick skin?",
+    "correctAnswer": "Stratum lucidum",
     "options": [
       "Stratum basale",
       "Stratum granulosum",
       "Stratum lucidum",
       "Stratum spinosum"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "Stratum lucidum is found only in thick skin areas like palms and soles.",
     "long_explanation": "This translucent layer adds protection and durability in high-friction areas.",
     "clinical_application": "Massage pressure can be deeper in these areas due to added epidermal thickness.",
@@ -207,31 +188,22 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "lucidum",
-      "thick skin",
-      "palms"
-    ],
-    "keywords": [
-      "sole",
-      "protection",
-      "layer"
-    ],
-    "synonyms": [
-      "clear layer"
-    ]
+    "tags": ["lucidum", "thick skin", "palms"],
+    "keywords": ["sole", "protection", "layer"],
+    "synonyms": ["clear layer"]
   },
   {
     "id": "epidermis_007",
-    "correctAnswer": "28–30 days",
     "question": "How long does it typically take for a keratinocyte to travel from the stratum basale to the stratum corneum?",
-    "options": [
-      "1 day",
-      "7 days",
-      "28–30 days",
-      "60 days"
+    "correctAnswer": "28–30 days",
+    "options": ["1 day", "7 days", "28–30 days", "60 days"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
     "short_explanation": "The epidermal turnover cycle is about 28 days.",
     "long_explanation": "Keratinocytes gradually move upward while changing shape and accumulating keratin until they slough off.",
     "clinical_application": "Massage can assist exfoliation but should not damage immature keratinocytes.",
@@ -244,30 +216,27 @@
     "relevance_score": 9.4,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "keratinocyte",
-      "cycle",
-      "turnover"
-    ],
-    "keywords": [
-      "skin renewal",
-      "migration"
-    ],
-    "synonyms": [
-      "epidermal turnover"
-    ]
+    "tags": ["keratinocyte", "cycle", "turnover"],
+    "keywords": ["skin renewal", "migration"],
+    "synonyms": ["epidermal turnover"]
   },
   {
     "id": "epidermis_008",
-    "correctAnswer": "Waterproofing and strength",
     "question": "What is the function of keratin in the epidermis?",
+    "correctAnswer": "Waterproofing and strength",
     "options": [
       "Melanin production",
       "Lubrication",
       "Waterproofing and strength",
       "Sebum secretion"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "Keratin helps waterproof and strengthen the skin.",
     "long_explanation": "This fibrous protein is produced by keratinocytes and is vital for the protective barrier.",
     "clinical_application": "Skin hydration and barrier function affect massage product absorption.",
@@ -280,30 +249,27 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "keratin",
-      "protein",
-      "barrier"
-    ],
-    "keywords": [
-      "skin strength",
-      "waterproof"
-    ],
-    "synonyms": [
-      "skin protein"
-    ]
+    "tags": ["keratin", "protein", "barrier"],
+    "keywords": ["skin strength", "waterproof"],
+    "synonyms": ["skin protein"]
   },
   {
     "id": "epidermis_009",
-    "correctAnswer": "Desmosomes",
     "question": "Which junctions tightly connect epidermal cells?",
+    "correctAnswer": "Desmosomes",
     "options": [
       "Gap junctions",
       "Tight junctions",
       "Desmosomes",
       "Hemidesmosomes"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
+    ],
     "short_explanation": "Desmosomes link keratinocytes together.",
     "long_explanation": "They help maintain structural integrity of the skin under mechanical stress.",
     "clinical_application": "Friction during massage can impact desmosome strength in fragile skin types.",
@@ -316,31 +282,22 @@
     "relevance_score": 9,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "junctions",
-      "epidermis",
-      "desmosomes"
-    ],
-    "keywords": [
-      "keratinocytes",
-      "adhesion",
-      "skin cells"
-    ],
-    "synonyms": [
-      "cell junction"
-    ]
+    "tags": ["junctions", "epidermis", "desmosomes"],
+    "keywords": ["keratinocytes", "adhesion", "skin cells"],
+    "synonyms": ["cell junction"]
   },
   {
     "id": "epidermis_010",
-    "correctAnswer": "Vitamin D",
     "question": "Which vitamin is synthesized in the epidermis under UV light?",
-    "options": [
-      "Vitamin A",
-      "Vitamin B12",
-      "Vitamin C",
-      "Vitamin D"
+    "correctAnswer": "Vitamin D",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "topics": [
+      "anatomy",
+      "systems",
+      "integumentary_system",
+      "skin layers",
+      "epidermis"
     ],
-    "topics": ["anatomy", "systems", "integumentary_system", "skin layers", "epidermis"],
     "short_explanation": "Vitamin D is synthesized from cholesterol in the skin.",
     "long_explanation": "UVB exposure triggers vitamin D3 production, later activated by the liver and kidneys.",
     "clinical_application": "Massage therapists working with clients with limited sun exposure may consider this in overall wellness planning.",
@@ -353,18 +310,8 @@
     "relevance_score": 9.2,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "vitamin D",
-      "UV",
-      "skin synthesis"
-    ],
-    "keywords": [
-      "sunlight",
-      "epidermis",
-      "calciferol"
-    ],
-    "synonyms": [
-      "cholecalciferol"
-    ]
+    "tags": ["vitamin D", "UV", "skin synthesis"],
+    "keywords": ["sunlight", "epidermis", "calciferol"],
+    "synonyms": ["cholecalciferol"]
   }
 ]

@@ -1,8 +1,8 @@
 [
   {
     "id": "glucagon_001",
-    "correctAnswer": "Raises blood glucose",
     "question": "What is the primary physiological function of glucagon?",
+    "correctAnswer": "Raises blood glucose",
     "options": [
       "Raises blood glucose",
       "Lowers blood glucose",
@@ -22,31 +22,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "glucagon",
-      "blood sugar",
-      "hormones"
-    ],
-    "keywords": [
-      "glucose",
-      "gluconeogenesis",
-      "glycogenolysis"
-    ],
-    "synonyms": [
-      "hyperglycemic hormone",
-      "glucose-raising"
-    ]
+    "tags": ["glucagon", "blood sugar", "hormones"],
+    "keywords": ["glucose", "gluconeogenesis", "glycogenolysis"],
+    "synonyms": ["hyperglycemic hormone", "glucose-raising"]
   },
   {
     "id": "glucagon_002",
-    "correctAnswer": "Alpha cells",
     "question": "Which pancreatic cells secrete glucagon?",
-    "options": [
-      "Alpha cells",
-      "Beta cells",
-      "Delta cells",
-      "Acinar cells"
-    ],
+    "correctAnswer": "Alpha cells",
+    "options": ["Alpha cells", "Beta cells", "Delta cells", "Acinar cells"],
     "topics": ["anatomy", "organs", "pancreas", "glucagon"],
     "short_explanation": "Alpha cells secrete glucagon.",
     "long_explanation": "Glucagon is produced and secreted by alpha cells in the islets of Langerhans within the pancreas. These cells monitor blood glucose and release glucagon when levels fall.",
@@ -60,25 +44,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "pancreas",
-      "alpha cells",
-      "glucagon"
-    ],
-    "keywords": [
-      "alpha cells",
-      "islets",
-      "hormone"
-    ],
-    "synonyms": [
-      "A cells",
-      "pancreatic alpha cells"
-    ]
+    "tags": ["pancreas", "alpha cells", "glucagon"],
+    "keywords": ["alpha cells", "islets", "hormone"],
+    "synonyms": ["A cells", "pancreatic alpha cells"]
   },
   {
     "id": "glucagon_003",
-    "correctAnswer": "Glycogenolysis",
     "question": "Which process is most directly stimulated by glucagon in the liver?",
+    "correctAnswer": "Glycogenolysis",
     "options": [
       "Glycogenolysis",
       "Lipogenesis",
@@ -98,25 +71,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "glycogenolysis",
-      "glucagon",
-      "liver"
-    ],
-    "keywords": [
-      "glycogen breakdown",
-      "glucose production",
-      "gluconeogenesis"
-    ],
-    "synonyms": [
-      "breakdown of glycogen",
-      "glucose release"
-    ]
+    "tags": ["glycogenolysis", "glucagon", "liver"],
+    "keywords": ["glycogen breakdown", "glucose production", "gluconeogenesis"],
+    "synonyms": ["breakdown of glycogen", "glucose release"]
   },
   {
     "id": "glucagon_004",
-    "correctAnswer": "During fasting",
     "question": "When is glucagon secretion typically increased?",
+    "correctAnswer": "During fasting",
     "options": [
       "During fasting",
       "After eating carbohydrates",
@@ -136,31 +98,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "fasting",
-      "glucose",
-      "hormone secretion"
-    ],
-    "keywords": [
-      "fasting state",
-      "hypoglycemia",
-      "catabolic state"
-    ],
-    "synonyms": [
-      "low glucose state",
-      "catabolic hormone"
-    ]
+    "tags": ["fasting", "glucose", "hormone secretion"],
+    "keywords": ["fasting state", "hypoglycemia", "catabolic state"],
+    "synonyms": ["low glucose state", "catabolic hormone"]
   },
   {
     "id": "glucagon_005",
-    "correctAnswer": "Insulin",
     "question": "Which hormone has opposing effects to glucagon?",
-    "options": [
-      "Insulin",
-      "Cortisol",
-      "Epinephrine",
-      "ADH"
-    ],
+    "correctAnswer": "Insulin",
+    "options": ["Insulin", "Cortisol", "Epinephrine", "ADH"],
     "topics": ["anatomy", "organs", "pancreas", "glucagon"],
     "short_explanation": "Insulin opposes the action of glucagon.",
     "long_explanation": "Insulin, secreted by beta cells in the pancreas, lowers blood glucose by promoting its uptake into cells and stimulating glycogenesis. Glucagon raises blood glucose, making them physiological opposites.",
@@ -174,31 +120,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "insulin",
-      "blood sugar",
-      "hormone balance"
-    ],
-    "keywords": [
-      "insulin",
-      "glucagon",
-      "antagonistic hormones"
-    ],
-    "synonyms": [
-      "blood sugar lowering hormone",
-      "glucose uptake"
-    ]
+    "tags": ["insulin", "blood sugar", "hormone balance"],
+    "keywords": ["insulin", "glucagon", "antagonistic hormones"],
+    "synonyms": ["blood sugar lowering hormone", "glucose uptake"]
   },
   {
     "id": "glucagon_006",
-    "correctAnswer": "Gluconeogenesis",
     "question": "Which metabolic pathway is stimulated by glucagon to generate new glucose molecules from non-carbohydrate sources?",
-    "options": [
-      "Gluconeogenesis",
-      "Glycolysis",
-      "Lipogenesis",
-      "Glycogenesis"
-    ],
+    "correctAnswer": "Gluconeogenesis",
+    "options": ["Gluconeogenesis", "Glycolysis", "Lipogenesis", "Glycogenesis"],
     "topics": ["anatomy", "organs", "pancreas", "glucagon"],
     "short_explanation": "Glucagon stimulates gluconeogenesis.",
     "long_explanation": "Gluconeogenesis is the process of producing glucose from non-carbohydrate sources such as amino acids and glycerol. Glucagon promotes this in the liver during fasting states to maintain blood glucose levels.",
@@ -212,25 +142,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "gluconeogenesis",
-      "glucagon",
-      "glucose production"
-    ],
-    "keywords": [
-      "gluconeogenesis",
-      "glucose",
-      "non-carbohydrates"
-    ],
-    "synonyms": [
-      "new glucose formation",
-      "non-carb glucose production"
-    ]
+    "tags": ["gluconeogenesis", "glucagon", "glucose production"],
+    "keywords": ["gluconeogenesis", "glucose", "non-carbohydrates"],
+    "synonyms": ["new glucose formation", "non-carb glucose production"]
   },
   {
     "id": "glucagon_007",
-    "correctAnswer": "Low blood glucose",
     "question": "What triggers the release of glucagon from the pancreas?",
+    "correctAnswer": "Low blood glucose",
     "options": [
       "Low blood glucose",
       "High blood glucose",
@@ -250,31 +169,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "hypoglycemia",
-      "glucagon",
-      "blood sugar"
-    ],
-    "keywords": [
-      "low glucose",
-      "blood sugar",
-      "hormone trigger"
-    ],
-    "synonyms": [
-      "hypoglycemia trigger",
-      "low glucose level"
-    ]
+    "tags": ["hypoglycemia", "glucagon", "blood sugar"],
+    "keywords": ["low glucose", "blood sugar", "hormone trigger"],
+    "synonyms": ["hypoglycemia trigger", "low glucose level"]
   },
   {
     "id": "glucagon_008",
-    "correctAnswer": "Liver",
     "question": "Which organ is the primary target of glucagon's action?",
-    "options": [
-      "Liver",
-      "Kidney",
-      "Stomach",
-      "Skeletal muscle"
-    ],
+    "correctAnswer": "Liver",
+    "options": ["Liver", "Kidney", "Stomach", "Skeletal muscle"],
     "topics": ["anatomy", "organs", "pancreas", "glucagon"],
     "short_explanation": "Glucagon primarily targets the liver.",
     "long_explanation": "The liver is the main site of glucagon’s effects. Glucagon promotes glycogenolysis and gluconeogenesis in the liver to increase blood glucose levels during fasting or low sugar states.",
@@ -288,25 +191,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "glucagon",
-      "liver",
-      "hormone target"
-    ],
-    "keywords": [
-      "liver",
-      "glucose regulation",
-      "metabolism"
-    ],
-    "synonyms": [
-      "hepatic target",
-      "glucose organ"
-    ]
+    "tags": ["glucagon", "liver", "hormone target"],
+    "keywords": ["liver", "glucose regulation", "metabolism"],
+    "synonyms": ["hepatic target", "glucose organ"]
   },
   {
     "id": "glucagon_009",
-    "correctAnswer": "Stimulates lipolysis",
     "question": "What is the effect of glucagon on lipid metabolism?",
+    "correctAnswer": "Stimulates lipolysis",
     "options": [
       "Stimulates lipolysis",
       "Stimulates fat storage",
@@ -326,25 +218,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "lipolysis",
-      "glucagon",
-      "fat metabolism"
-    ],
-    "keywords": [
-      "triglycerides",
-      "fat breakdown",
-      "energy source"
-    ],
-    "synonyms": [
-      "fat breakdown",
-      "lipid catabolism"
-    ]
+    "tags": ["lipolysis", "glucagon", "fat metabolism"],
+    "keywords": ["triglycerides", "fat breakdown", "energy source"],
+    "synonyms": ["fat breakdown", "lipid catabolism"]
   },
   {
     "id": "glucagon_010",
-    "correctAnswer": "Peptide hormone",
     "question": "What type of hormone is glucagon based on its structure?",
+    "correctAnswer": "Peptide hormone",
     "options": [
       "Peptide hormone",
       "Steroid hormone",
@@ -364,19 +245,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "peptide hormone",
-      "hormone type",
-      "glucagon"
-    ],
-    "keywords": [
-      "peptide",
-      "hormone class",
-      "protein hormone"
-    ],
-    "synonyms": [
-      "protein-based hormone",
-      "amino acid hormone"
-    ]
+    "tags": ["peptide hormone", "hormone type", "glucagon"],
+    "keywords": ["peptide", "hormone class", "protein hormone"],
+    "synonyms": ["protein-based hormone", "amino acid hormone"]
   }
 ]

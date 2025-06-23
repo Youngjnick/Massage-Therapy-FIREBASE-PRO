@@ -1,15 +1,21 @@
 [
   {
     "id": "endocardium_001",
-    "correctAnswer": "Line the heart chambers and valves",
     "question": "What is the primary function of the endocardium?",
+    "correctAnswer": "Line the heart chambers and valves",
     "options": [
       "Contract the heart chambers",
       "Pump blood to the lungs",
       "Line the heart chambers and valves",
       "Store oxygen for the myocardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
+    ],
     "short_explanation": "The endocardium lines the inner chambers and valves of the heart.",
     "long_explanation": "The endocardium is a smooth layer of endothelial cells lining the inner surface of the heart, reducing friction and forming part of the valves.",
     "clinical_application": "Endocardial infections can lead to valve damage and systemic complications like stroke.",
@@ -22,29 +28,27 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "heart",
-      "endocardium",
-      "valves"
-    ],
-    "keywords": [
-      "inner lining",
-      "cardiac tissue",
-      "endothelial cells"
-    ],
+    "tags": ["heart", "endocardium", "valves"],
+    "keywords": ["inner lining", "cardiac tissue", "endothelial cells"],
     "synonyms": null
   },
   {
     "id": "endocardium_002",
-    "correctAnswer": "Endothelial cells",
     "question": "What type of cells make up the endocardium?",
+    "correctAnswer": "Endothelial cells",
     "options": [
       "Myocytes",
       "Epithelial cells",
       "Endothelial cells",
       "Fibroblasts"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
+    ],
     "short_explanation": "Endothelial cells line the endocardium.",
     "long_explanation": "The endocardium consists primarily of a layer of squamous endothelial cells supported by connective tissue, allowing a smooth, frictionless surface for blood flow.",
     "clinical_application": "Damage to these cells increases risk of clot formation or infective endocarditis.",
@@ -57,27 +61,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "endothelium",
-      "cardiac lining"
-    ],
-    "keywords": [
-      "squamous cells",
-      "tissue lining"
-    ],
+    "tags": ["endothelium", "cardiac lining"],
+    "keywords": ["squamous cells", "tissue lining"],
     "synonyms": null
   },
   {
     "id": "endocardium_003",
-    "correctAnswer": "Endocardium",
     "question": "Infective endocarditis primarily affects which structure?",
-    "options": [
-      "Pericardium",
-      "Epicardium",
-      "Endocardium",
-      "Myocardium"
+    "correctAnswer": "Endocardium",
+    "options": ["Pericardium", "Epicardium", "Endocardium", "Myocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
     "short_explanation": "Endocarditis is an infection of the endocardial surface.",
     "long_explanation": "Bacteria or fungi infect the endocardium, especially heart valves. It can result from poor dental hygiene, IV drug use, or implanted devices.",
     "clinical_application": "Massage therapists should defer treatment in patients with systemic infection and refer to medical professionals.",
@@ -90,29 +89,27 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "endocarditis",
-      "infection",
-      "valves"
-    ],
-    "keywords": [
-      "bacterial infection",
-      "heart valves",
-      "septicemia"
-    ],
+    "tags": ["endocarditis", "infection", "valves"],
+    "keywords": ["bacterial infection", "heart valves", "septicemia"],
     "synonyms": null
   },
   {
     "id": "endocardium_004",
-    "correctAnswer": "Myocardium",
     "question": "Which layer of the heart lies directly beneath the endocardium?",
+    "correctAnswer": "Myocardium",
     "options": [
       "Fibrous pericardium",
       "Parietal pleura",
       "Myocardium",
       "Epicardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
+    ],
     "short_explanation": "The myocardium lies beneath the endocardium.",
     "long_explanation": "The myocardium is the thick, contractile middle layer of the heart wall, located beneath the inner endocardial lining.",
     "clinical_application": "In cardiac disease, endocardial and myocardial damage may coexist, affecting both electrical and mechanical functions.",
@@ -125,29 +122,27 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "heart layers",
-      "myocardium",
-      "anatomy"
-    ],
-    "keywords": [
-      "heart wall",
-      "endocardium",
-      "myocardium"
-    ],
+    "tags": ["heart layers", "myocardium", "anatomy"],
+    "keywords": ["heart wall", "endocardium", "myocardium"],
     "synonyms": null
   },
   {
     "id": "endocardium_005",
-    "correctAnswer": "Shortness of breath and fever",
     "question": "Which of the following symptoms might suggest endocardial inflammation?",
+    "correctAnswer": "Shortness of breath and fever",
     "options": [
       "Localized chest wall pain",
       "Shortness of breath and fever",
       "Shoulder pain",
       "Chronic coughing"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
+    ],
     "short_explanation": "Fever and shortness of breath are signs of infective endocarditis.",
     "long_explanation": "Endocardial inflammation can lead to systemic infection, fatigue, murmurs, and signs of embolism if clots dislodge.",
     "clinical_application": "Massage therapy should be avoided during active infection due to systemic risks and cardiovascular instability.",
@@ -160,28 +155,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "symptoms",
-      "endocarditis"
-    ],
-    "keywords": [
-      "fever",
-      "dyspnea",
-      "heart infection"
-    ],
+    "tags": ["symptoms", "endocarditis"],
+    "keywords": ["fever", "dyspnea", "heart infection"],
     "synonyms": null
   },
   {
     "id": "endocardium_006",
-    "correctAnswer": "Mesoderm",
     "question": "What is the embryological origin of the endocardium?",
-    "options": [
-      "Ectoderm",
-      "Mesoderm",
-      "Endoderm",
-      "Neural crest cells"
+    "correctAnswer": "Mesoderm",
+    "options": ["Ectoderm", "Mesoderm", "Endoderm", "Neural crest cells"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
     "short_explanation": "The endocardium originates from mesoderm.",
     "long_explanation": "The heart develops from mesodermal tissue, with endocardial cushions forming the internal lining and valves of the heart.",
     "clinical_application": "This knowledge helps understand congenital heart defects and embryological malformations.",
@@ -194,28 +183,27 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "embryology",
-      "cardiac development"
-    ],
-    "keywords": [
-      "mesoderm",
-      "heart origin",
-      "endocardial cushions"
-    ],
+    "tags": ["embryology", "cardiac development"],
+    "keywords": ["mesoderm", "heart origin", "endocardial cushions"],
     "synonyms": null
   },
   {
     "id": "endocardium_007",
-    "correctAnswer": "Endocardium",
     "question": "The Purkinje fibers are located within or just beneath which cardiac layer?",
+    "correctAnswer": "Endocardium",
     "options": [
       "Epicardium",
       "Myocardium",
       "Endocardium",
       "Fibrous pericardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
+    ],
     "short_explanation": "Purkinje fibers reside within or below the endocardium.",
     "long_explanation": "Purkinje fibers are part of the conduction system and lie in the subendocardial space, enabling efficient impulse transmission to the myocardium.",
     "clinical_application": "Disruptions in this layer can cause arrhythmias, which are important considerations in cardiac rehab massage.",
@@ -228,29 +216,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "conduction",
-      "Purkinje fibers",
-      "endocardium"
-    ],
-    "keywords": [
-      "subendocardial space",
-      "heart rhythm",
-      "fibers"
-    ],
+    "tags": ["conduction", "Purkinje fibers", "endocardium"],
+    "keywords": ["subendocardial space", "heart rhythm", "fibers"],
     "synonyms": null
   },
   {
     "id": "endocardium_008",
-    "correctAnswer": "Stroke",
     "question": "What is a common complication of prosthetic valve endocarditis?",
-    "options": [
-      "Hypotension",
-      "Stroke",
-      "Liver failure",
-      "Pulmonary fibrosis"
+    "correctAnswer": "Stroke",
+    "options": ["Hypotension", "Stroke", "Liver failure", "Pulmonary fibrosis"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
     "short_explanation": "Embolic stroke is a major complication.",
     "long_explanation": "Vegetations on the prosthetic valve can break off, travel through the bloodstream, and block cerebral vessels causing stroke.",
     "clinical_application": "Stroke history may affect positioning and safety precautions during massage therapy sessions.",
@@ -263,29 +244,27 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "stroke",
-      "emboli",
-      "prosthetic valves"
-    ],
-    "keywords": [
-      "embolism",
-      "valve infection",
-      "neurovascular risk"
-    ],
+    "tags": ["stroke", "emboli", "prosthetic valves"],
+    "keywords": ["embolism", "valve infection", "neurovascular risk"],
     "synonyms": null
   },
   {
     "id": "endocardium_009",
-    "correctAnswer": "Smooth blood flow and clot prevention",
     "question": "The endocardium helps regulate which of the following?",
+    "correctAnswer": "Smooth blood flow and clot prevention",
     "options": [
       "Myocardial contraction",
       "Blood pressure",
       "Cardiac conduction",
       "Smooth blood flow and clot prevention"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
+    ],
     "short_explanation": "It prevents clot formation and facilitates smooth blood flow.",
     "long_explanation": "The endocardial lining secretes anticoagulant factors and creates a low-resistance surface, reducing thrombosis risk.",
     "clinical_application": "Damage or irregularities in the endocardium may predispose to clot formation, crucial in deep vein thrombosis prevention education.",
@@ -298,28 +277,22 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "blood flow",
-      "anticoagulant",
-      "lining"
-    ],
-    "keywords": [
-      "clot prevention",
-      "cardiac physiology"
-    ],
+    "tags": ["blood flow", "anticoagulant", "lining"],
+    "keywords": ["clot prevention", "cardiac physiology"],
     "synonyms": null
   },
   {
     "id": "endocardium_010",
-    "correctAnswer": "Ultrasound (echocardiogram)",
     "question": "Which imaging technique is most useful for evaluating endocardial damage?",
-    "options": [
-      "X-ray",
-      "Ultrasound (echocardiogram)",
-      "CT scan",
-      "MRI"
+    "correctAnswer": "Ultrasound (echocardiogram)",
+    "options": ["X-ray", "Ultrasound (echocardiogram)", "CT scan", "MRI"],
+    "topics": [
+      "anatomy",
+      "organs",
+      "heart",
+      "heart_muscle_layers",
+      "endocardium"
     ],
-    "topics": ["anatomy", "organs", "heart", "heart_muscle_layers", "endocardium"],
     "short_explanation": "An echocardiogram is preferred for visualizing endocardial structures.",
     "long_explanation": "Transthoracic and transesophageal echocardiograms provide clear views of the endocardium and valves, useful in diagnosing infections or clots.",
     "clinical_application": "Clients undergoing echocardiography may have recent cardiac concerns requiring therapist caution.",
@@ -332,15 +305,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "echocardiogram",
-      "cardiac imaging"
-    ],
-    "keywords": [
-      "TTE",
-      "TEE",
-      "heart ultrasound"
-    ],
+    "tags": ["echocardiogram", "cardiac imaging"],
+    "keywords": ["TTE", "TEE", "heart ultrasound"],
     "synonyms": null
   }
 ]

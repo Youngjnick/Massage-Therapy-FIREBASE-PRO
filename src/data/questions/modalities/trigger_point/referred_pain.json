@@ -1,8 +1,8 @@
 [
   {
     "id": "referred_pain_001",
-    "correctAnswer": "Pain perceived at a location other than the site of origin",
     "question": "What is referred pain?",
+    "correctAnswer": "Pain perceived at a location other than the site of origin",
     "options": [
       "Pain felt at the site of tissue damage",
       "Pain that radiates along a nerve",
@@ -22,31 +22,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "referred pain",
-      "pain perception",
-      "neuroscience"
-    ],
-    "keywords": [
-      "viscero-somatic",
-      "pain mapping",
-      "nerve convergence"
-    ],
-    "synonyms": [
-      "viscero-somatic pain",
-      "mislocalized pain"
-    ]
+    "tags": ["referred pain", "pain perception", "neuroscience"],
+    "keywords": ["viscero-somatic", "pain mapping", "nerve convergence"],
+    "synonyms": ["viscero-somatic pain", "mislocalized pain"]
   },
   {
     "id": "referred_pain_002",
-    "correctAnswer": "Heart",
     "question": "Which organ is most commonly associated with referred pain to the left shoulder?",
-    "options": [
-      "Liver",
-      "Stomach",
-      "Heart",
-      "Kidney"
-    ],
+    "correctAnswer": "Heart",
+    "options": ["Liver", "Stomach", "Heart", "Kidney"],
     "topics": ["modalities", "trigger_point", "referred_pain"],
     "short_explanation": "Heart pain is often referred to the left shoulder and arm.",
     "long_explanation": "Due to shared spinal segments (T1–T5), the brain may interpret heart pain as coming from the chest, neck, jaw, or left arm and shoulder.",
@@ -60,24 +44,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "heart",
-      "left shoulder",
-      "visceral pain"
-    ],
-    "keywords": [
-      "cardiac pain",
-      "angina",
-      "T1–T5"
-    ],
-    "synonyms": [
-      "cardiac referral pattern"
-    ]
+    "tags": ["heart", "left shoulder", "visceral pain"],
+    "keywords": ["cardiac pain", "angina", "T1–T5"],
+    "synonyms": ["cardiac referral pattern"]
   },
   {
     "id": "referred_pain_003",
-    "correctAnswer": "Right shoulder and scapula",
     "question": "Pain from gallbladder inflammation is often referred to which area?",
+    "correctAnswer": "Right shoulder and scapula",
     "options": [
       "Lower abdomen",
       "Right shoulder and scapula",
@@ -97,24 +71,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "gallbladder",
-      "scapular pain",
-      "C3–C5"
-    ],
-    "keywords": [
-      "cholecystitis",
-      "referred pain",
-      "diaphragm"
-    ],
-    "synonyms": [
-      "right shoulder pain"
-    ]
+    "tags": ["gallbladder", "scapular pain", "C3–C5"],
+    "keywords": ["cholecystitis", "referred pain", "diaphragm"],
+    "synonyms": ["right shoulder pain"]
   },
   {
     "id": "referred_pain_004",
-    "correctAnswer": "Because of convergence of sensory inputs on spinal cord neurons",
     "question": "Why does referred pain occur at a different location from the source?",
+    "correctAnswer": "Because of convergence of sensory inputs on spinal cord neurons",
     "options": [
       "Due to low pain threshold",
       "Due to nerve fiber damage",
@@ -134,23 +98,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "spinal cord",
-      "convergence",
-      "neuroanatomy"
-    ],
-    "keywords": [
-      "referred pain",
-      "afferent convergence"
-    ],
-    "synonyms": [
-      "mislocalized pain"
-    ]
+    "tags": ["spinal cord", "convergence", "neuroanatomy"],
+    "keywords": ["referred pain", "afferent convergence"],
+    "synonyms": ["mislocalized pain"]
   },
   {
     "id": "referred_pain_005",
-    "correctAnswer": "Kidney stones",
     "question": "Which condition is most likely to produce referred pain to the lower back and flank?",
+    "correctAnswer": "Kidney stones",
     "options": [
       "Appendicitis",
       "Kidney stones",
@@ -170,30 +125,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "kidney",
-      "flank pain",
-      "renal colic"
-    ],
-    "keywords": [
-      "nephrolithiasis",
-      "referred pain",
-      "T10–L1"
-    ],
-    "synonyms": [
-      "renal referred pain"
-    ]
+    "tags": ["kidney", "flank pain", "renal colic"],
+    "keywords": ["nephrolithiasis", "referred pain", "T10–L1"],
+    "synonyms": ["renal referred pain"]
   },
   {
     "id": "referred_pain_006",
-    "correctAnswer": "C3–C5",
     "question": "Which nerve roots are shared between the diaphragm and the shoulder region, explaining referred pain?",
-    "options": [
-      "T1–T4",
-      "L2–L4",
-      "C3–C5",
-      "S1–S2"
-    ],
+    "correctAnswer": "C3–C5",
+    "options": ["T1–T4", "L2–L4", "C3–C5", "S1–S2"],
     "topics": ["modalities", "trigger_point", "referred_pain"],
     "short_explanation": "The diaphragm and shoulder share innervation from C3–C5 roots.",
     "long_explanation": "The phrenic nerve originates from C3–C5, and irritation of the diaphragm can refer pain to the shoulder due to overlapping dermatomes.",
@@ -207,24 +147,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "phrenic nerve",
-      "shoulder pain",
-      "diaphragm"
-    ],
-    "keywords": [
-      "C3–C5",
-      "phrenic",
-      "referred shoulder pain"
-    ],
-    "synonyms": [
-      "diaphragm-shoulder pain"
-    ]
+    "tags": ["phrenic nerve", "shoulder pain", "diaphragm"],
+    "keywords": ["C3–C5", "phrenic", "referred shoulder pain"],
+    "synonyms": ["diaphragm-shoulder pain"]
   },
   {
     "id": "referred_pain_007",
-    "correctAnswer": "Periumbilical region",
     "question": "Appendicitis may initially cause referred pain in which region?",
+    "correctAnswer": "Periumbilical region",
     "options": [
       "Right shoulder",
       "Left lower quadrant",
@@ -244,30 +174,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "appendix",
-      "T10",
-      "periumbilical pain"
-    ],
-    "keywords": [
-      "visceral pain",
-      "appendicitis",
-      "T10 dermatome"
-    ],
-    "synonyms": [
-      "umbilical referral"
-    ]
+    "tags": ["appendix", "T10", "periumbilical pain"],
+    "keywords": ["visceral pain", "appendicitis", "T10 dermatome"],
+    "synonyms": ["umbilical referral"]
   },
   {
     "id": "referred_pain_008",
-    "correctAnswer": "T10",
     "question": "Which dermatome corresponds to the umbilical region, often used in assessing referred pain?",
-    "options": [
-      "T6",
-      "T8",
-      "T10",
-      "T12"
-    ],
+    "correctAnswer": "T10",
+    "options": ["T6", "T8", "T10", "T12"],
     "topics": ["modalities", "trigger_point", "referred_pain"],
     "short_explanation": "T10 corresponds to the umbilicus.",
     "long_explanation": "Dermatomes map sensory innervation across the skin, and T10 includes the periumbilical area, which helps in diagnosing referred pain.",
@@ -281,24 +196,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "T10",
-      "dermatome",
-      "referred pain"
-    ],
-    "keywords": [
-      "umbilicus",
-      "sensory mapping",
-      "visceral-somatic"
-    ],
-    "synonyms": [
-      "T10 dermatome"
-    ]
+    "tags": ["T10", "dermatome", "referred pain"],
+    "keywords": ["umbilicus", "sensory mapping", "visceral-somatic"],
+    "synonyms": ["T10 dermatome"]
   },
   {
     "id": "referred_pain_009",
-    "correctAnswer": "Epigastric pain radiating to the back",
     "question": "Which pain pattern suggests pancreatic inflammation?",
+    "correctAnswer": "Epigastric pain radiating to the back",
     "options": [
       "Pain in right shoulder",
       "Epigastric pain radiating to the back",
@@ -318,24 +223,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "pancreas",
-      "epigastric",
-      "back pain"
-    ],
-    "keywords": [
-      "pancreatitis",
-      "T6–T10",
-      "referred pain"
-    ],
-    "synonyms": [
-      "pancreatic referred pain"
-    ]
+    "tags": ["pancreas", "epigastric", "back pain"],
+    "keywords": ["pancreatitis", "T6–T10", "referred pain"],
+    "synonyms": ["pancreatic referred pain"]
   },
   {
     "id": "referred_pain_010",
-    "correctAnswer": "Trigger point referral",
     "question": "Which technique helps map referred pain patterns during physical assessment?",
+    "correctAnswer": "Trigger point referral",
     "options": [
       "Myotome charting",
       "Trigger point referral",
@@ -355,18 +250,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "trigger points",
-      "referral patterns",
-      "muscle pain"
-    ],
-    "keywords": [
-      "myofascial",
-      "referred pain",
-      "assessment"
-    ],
-    "synonyms": [
-      "trigger point maps"
-    ]
+    "tags": ["trigger points", "referral patterns", "muscle pain"],
+    "keywords": ["myofascial", "referred pain", "assessment"],
+    "synonyms": ["trigger point maps"]
   }
 ]

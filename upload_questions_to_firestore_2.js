@@ -51,8 +51,8 @@ function validateQuestion(q, file, idx) {
   // Require all canonical fields
   const requiredFields = [
     'id',
-    'correctAnswer',
     'question',
+    'correctAnswer',
     'options',
     'topics',
     'short_explanation',

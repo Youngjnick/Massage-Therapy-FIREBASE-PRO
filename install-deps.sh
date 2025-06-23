@@ -11,6 +11,10 @@ npm install --save-dev react @types/react @testing-library/react @types/testing-
 echo "Installing required dependencies..."
 npm install firebase glob json5 jspdf react-dom react-router-dom strip-json-comments
 
+# Install Material UI and its peer dependencies
+echo "Installing Material UI (MUI) and peer dependencies..."
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/lab @mui/x-tree-view
+
 echo "Installing Playwright browsers..."
 npx playwright install
 
@@ -24,3 +28,7 @@ fi
 if ! grep -q "@testing-library/jest-dom" src/setupTests.ts 2>/dev/null; then
   echo "import '@testing-library/jest-dom';" >> src/setupTests.ts
 fi
+
+echo "Checking all question JSON files for syntax errors..."
+find src/data/questions -type f -name '*.json' -exec sh -c 'echo -n "{}: "; node -e "try{JSON.parse(require(\"fs\").readFileSync(\"{}\",\"utf8\"));console.log(\"OK\") }catch(e){console.log(\"ERROR\")}"' \;
+echo "JSON syntax check complete."

@@ -1,14 +1,9 @@
 [
   {
     "id": "soap_notes_001",
-    "correctAnswer": "Subjective",
     "question": "What does the 'S' in SOAP notes stand for?",
-    "options": [
-      "Subjective",
-      "Supportive",
-      "Systemic",
-      "Superficial"
-    ],
+    "correctAnswer": "Subjective",
+    "options": ["Subjective", "Supportive", "Systemic", "Superficial"],
     "topics": ["licensing", "soap_notes", "soap_notes"],
     "short_explanation": "'S' stands for Subjective, referring to what the client reports.",
     "long_explanation": "The 'S' in SOAP stands for Subjective, which includes information the client reports, such as symptoms, concerns, or relevant health history in their own words.",
@@ -22,31 +17,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "documentation",
-      "subjective"
-    ],
-    "keywords": [
-      "subjective",
-      "client report",
-      "soap notes"
-    ],
-    "synonyms": [
-      "subjective section",
-      "client-reported"
-    ]
+    "tags": ["soap", "documentation", "subjective"],
+    "keywords": ["subjective", "client report", "soap notes"],
+    "synonyms": ["subjective section", "client-reported"]
   },
   {
     "id": "soap_notes_002",
-    "correctAnswer": "Objective",
     "question": "Which section of the SOAP note would include your visual and palpatory observations?",
-    "options": [
-      "Objective",
-      "Assessment",
-      "Subjective",
-      "Plan"
-    ],
+    "correctAnswer": "Objective",
+    "options": ["Objective", "Assessment", "Subjective", "Plan"],
     "topics": ["licensing", "soap_notes", "soap_notes"],
     "short_explanation": "Observations belong in the 'Objective' section.",
     "long_explanation": "The 'Objective' section includes findings from observation, palpation, posture analysis, and other measurable or observable clinical data gathered by the therapist.",
@@ -60,25 +39,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "objective",
-      "observation"
-    ],
-    "keywords": [
-      "objective findings",
-      "palpation",
-      "documentation"
-    ],
-    "synonyms": [
-      "visual findings",
-      "palpatory data"
-    ]
+    "tags": ["soap", "objective", "observation"],
+    "keywords": ["objective findings", "palpation", "documentation"],
+    "synonyms": ["visual findings", "palpatory data"]
   },
   {
     "id": "soap_notes_003",
-    "correctAnswer": "Client's progress and treatment response",
     "question": "Which of the following would most appropriately be included in the 'Assessment' section of a SOAP note?",
+    "correctAnswer": "Client's progress and treatment response",
     "options": [
       "Client's progress and treatment response",
       "Client's report of pain",
@@ -98,25 +66,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "assessment",
-      "clinical impression"
-    ],
-    "keywords": [
-      "assessment",
-      "interpretation",
-      "treatment response"
-    ],
-    "synonyms": [
-      "treatment impression",
-      "clinical judgment"
-    ]
+    "tags": ["soap", "assessment", "clinical impression"],
+    "keywords": ["assessment", "interpretation", "treatment response"],
+    "synonyms": ["treatment impression", "clinical judgment"]
   },
   {
     "id": "soap_notes_004",
-    "correctAnswer": "Outline of future treatment goals and actions",
     "question": "What is the purpose of the 'Plan' section in a SOAP note?",
+    "correctAnswer": "Outline of future treatment goals and actions",
     "options": [
       "Outline of future treatment goals and actions",
       "Description of observed posture",
@@ -136,25 +93,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "plan",
-      "future care"
-    ],
-    "keywords": [
-      "treatment plan",
-      "next session",
-      "therapeutic goals"
-    ],
-    "synonyms": [
-      "treatment planning",
-      "next steps"
-    ]
+    "tags": ["soap", "plan", "future care"],
+    "keywords": ["treatment plan", "next session", "therapeutic goals"],
+    "synonyms": ["treatment planning", "next steps"]
   },
   {
     "id": "soap_notes_005",
-    "correctAnswer": "Therapist’s impression of a muscle knot",
     "question": "Which of the following is NOT appropriate to include in the 'Subjective' section?",
+    "correctAnswer": "Therapist’s impression of a muscle knot",
     "options": [
       "Therapist’s impression of a muscle knot",
       "Client's statement of pain",
@@ -174,25 +120,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "subjective",
-      "scope of practice"
-    ],
-    "keywords": [
-      "subjective note",
-      "client input",
-      "recordkeeping"
-    ],
-    "synonyms": [
-      "non-subjective data",
-      "therapist observation"
-    ]
+    "tags": ["soap", "subjective", "scope of practice"],
+    "keywords": ["subjective note", "client input", "recordkeeping"],
+    "synonyms": ["non-subjective data", "therapist observation"]
   },
   {
     "id": "soap_notes_006",
-    "correctAnswer": "They track client progress and guide treatment planning",
     "question": "Which of the following best describes how SOAP notes support clinical outcomes?",
+    "correctAnswer": "They track client progress and guide treatment planning",
     "options": [
       "They track client progress and guide treatment planning",
       "They replace the need for consent forms",
@@ -212,31 +147,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "clinical outcomes",
-      "treatment planning"
-    ],
-    "keywords": [
-      "documentation",
-      "clinical tracking",
-      "treatment planning"
-    ],
-    "synonyms": [
-      "progress tracking",
-      "outcome monitoring"
-    ]
+    "tags": ["soap", "clinical outcomes", "treatment planning"],
+    "keywords": ["documentation", "clinical tracking", "treatment planning"],
+    "synonyms": ["progress tracking", "outcome monitoring"]
   },
   {
     "id": "soap_notes_007",
-    "correctAnswer": "Plan",
     "question": "Where should the therapist document a referral to another healthcare provider?",
-    "options": [
-      "Plan",
-      "Subjective",
-      "Objective",
-      "Assessment"
-    ],
+    "correctAnswer": "Plan",
+    "options": ["Plan", "Subjective", "Objective", "Assessment"],
     "topics": ["licensing", "soap_notes", "soap_notes"],
     "short_explanation": "Referrals are included in the Plan section.",
     "long_explanation": "The Plan section of SOAP notes includes upcoming treatment strategies, client homework, and any necessary referrals to other professionals.",
@@ -250,25 +169,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "referral",
-      "soap",
-      "plan"
-    ],
-    "keywords": [
-      "referral",
-      "plan",
-      "documentation"
-    ],
-    "synonyms": [
-      "referral note",
-      "future care"
-    ]
+    "tags": ["referral", "soap", "plan"],
+    "keywords": ["referral", "plan", "documentation"],
+    "synonyms": ["referral note", "future care"]
   },
   {
     "id": "soap_notes_008",
-    "correctAnswer": "They provide a defensible record in case of legal or insurance inquiry",
     "question": "Which legal or ethical benefit is associated with keeping complete SOAP notes?",
+    "correctAnswer": "They provide a defensible record in case of legal or insurance inquiry",
     "options": [
       "They provide a defensible record in case of legal or insurance inquiry",
       "They eliminate the need for informed consent",
@@ -288,25 +196,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "ethics",
-      "legal",
-      "soap"
-    ],
-    "keywords": [
-      "liability",
-      "recordkeeping",
-      "documentation"
-    ],
-    "synonyms": [
-      "legal documentation",
-      "client record"
-    ]
+    "tags": ["ethics", "legal", "soap"],
+    "keywords": ["liability", "recordkeeping", "documentation"],
+    "synonyms": ["legal documentation", "client record"]
   },
   {
     "id": "soap_notes_009",
-    "correctAnswer": "Client exhibits anterior pelvic tilt during gait analysis",
     "question": "Which example belongs in the Objective section of a SOAP note?",
+    "correctAnswer": "Client exhibits anterior pelvic tilt during gait analysis",
     "options": [
       "Client exhibits anterior pelvic tilt during gait analysis",
       "Client complains of hip tightness",
@@ -326,25 +223,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "objective",
-      "soap",
-      "clinical observation"
-    ],
-    "keywords": [
-      "palpation",
-      "observation",
-      "measurable"
-    ],
-    "synonyms": [
-      "objective record",
-      "postural finding"
-    ]
+    "tags": ["objective", "soap", "clinical observation"],
+    "keywords": ["palpation", "observation", "measurable"],
+    "synonyms": ["objective record", "postural finding"]
   },
   {
     "id": "soap_notes_010",
-    "correctAnswer": "Use clear, concise, and factual language without personal opinions",
     "question": "When documenting in SOAP format, which practice is most professional?",
+    "correctAnswer": "Use clear, concise, and factual language without personal opinions",
     "options": [
       "Use clear, concise, and factual language without personal opinions",
       "Write emotionally to show empathy",
@@ -364,19 +250,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "soap",
-      "documentation",
-      "professionalism"
-    ],
-    "keywords": [
-      "clinical note",
-      "professional language",
-      "objective writing"
-    ],
-    "synonyms": [
-      "clinical tone",
-      "professional writing"
-    ]
+    "tags": ["soap", "documentation", "professionalism"],
+    "keywords": ["clinical note", "professional language", "objective writing"],
+    "synonyms": ["clinical tone", "professional writing"]
   }
 ]

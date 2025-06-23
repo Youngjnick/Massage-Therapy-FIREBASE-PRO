@@ -1,8 +1,8 @@
 [
   {
     "id": "urticaria_001",
-    "correctAnswer": "Red, raised, itchy welts",
     "question": "What is the most common symptom of urticaria?",
+    "correctAnswer": "Red, raised, itchy welts",
     "options": [
       "Cracking skin",
       "Red, raised, itchy welts",
@@ -22,29 +22,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "urticaria",
-      "hives",
-      "itching",
-      "welts"
-    ],
-    "keywords": [
-      "hives",
-      "wheals",
-      "itchy skin"
-    ],
+    "tags": ["urticaria", "hives", "itching", "welts"],
+    "keywords": ["hives", "wheals", "itchy skin"],
     "synonyms": null
   },
   {
     "id": "urticaria_002",
-    "correctAnswer": "Mast cells",
     "question": "Which immune system component is primarily involved in triggering urticaria?",
-    "options": [
-      "B cells",
-      "T cells",
-      "Mast cells",
-      "Macrophages"
-    ],
+    "correctAnswer": "Mast cells",
+    "options": ["B cells", "T cells", "Mast cells", "Macrophages"],
     "topics": ["pathology", "urticaria"],
     "short_explanation": "Mast cells release histamine, a key trigger for urticaria.",
     "long_explanation": "Mast cells play a central role in urticaria by releasing histamine and other inflammatory mediators that cause vasodilation and increased vascular permeability, leading to the characteristic wheals.",
@@ -58,22 +44,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "histamine",
-      "mast cells",
-      "immune response"
-    ],
-    "keywords": [
-      "mast cells",
-      "histamine",
-      "urticaria mechanism"
-    ],
+    "tags": ["histamine", "mast cells", "immune response"],
+    "keywords": ["mast cells", "histamine", "urticaria mechanism"],
     "synonyms": null
   },
   {
     "id": "urticaria_003",
-    "correctAnswer": "Allergic reaction to food or medication",
     "question": "What is a common cause of acute urticaria?",
+    "correctAnswer": "Allergic reaction to food or medication",
     "options": [
       "Poor hydration",
       "Fungal infection",
@@ -93,22 +71,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "allergy",
-      "acute urticaria",
-      "trigger"
-    ],
-    "keywords": [
-      "food allergy",
-      "drug reaction",
-      "hives"
-    ],
+    "tags": ["allergy", "acute urticaria", "trigger"],
+    "keywords": ["food allergy", "drug reaction", "hives"],
     "synonyms": null
   },
   {
     "id": "urticaria_004",
-    "correctAnswer": "Physical urticaria",
     "question": "Which type of urticaria is triggered by physical stimuli such as pressure or cold?",
+    "correctAnswer": "Physical urticaria",
     "options": [
       "Chronic idiopathic urticaria",
       "Physical urticaria",
@@ -128,23 +98,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "physical urticaria",
-      "pressure hives",
-      "cold response"
-    ],
-    "keywords": [
-      "stimulus",
-      "cold",
-      "vibration",
-      "urticaria"
-    ],
+    "tags": ["physical urticaria", "pressure hives", "cold response"],
+    "keywords": ["stimulus", "cold", "vibration", "urticaria"],
     "synonyms": null
   },
   {
     "id": "urticaria_005",
-    "correctAnswer": "30 minutes to 2 hours",
     "question": "What is the typical duration of an individual wheal in acute urticaria?",
+    "correctAnswer": "30 minutes to 2 hours",
     "options": [
       "A few seconds",
       "30 minutes to 2 hours",
@@ -164,23 +125,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "duration",
-      "acute urticaria",
-      "hive timing"
-    ],
-    "keywords": [
-      "wheals",
-      "acute",
-      "duration",
-      "hives"
-    ],
+    "tags": ["duration", "acute urticaria", "hive timing"],
+    "keywords": ["wheals", "acute", "duration", "hives"],
     "synonyms": null
   },
   {
     "id": "urticaria_006",
-    "correctAnswer": "Chronic spontaneous urticaria",
     "question": "Which form of urticaria is most likely associated with autoimmune thyroid disease?",
+    "correctAnswer": "Chronic spontaneous urticaria",
     "options": [
       "Acute urticaria",
       "Chronic spontaneous urticaria",
@@ -200,28 +152,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "CSU",
-      "autoimmune",
-      "chronic hives"
-    ],
-    "keywords": [
-      "chronic urticaria",
-      "autoimmune thyroid",
-      "Hashimoto"
-    ],
+    "tags": ["CSU", "autoimmune", "chronic hives"],
+    "keywords": ["chronic urticaria", "autoimmune thyroid", "Hashimoto"],
     "synonyms": null
   },
   {
     "id": "urticaria_007",
-    "correctAnswer": "Osteoarthritis",
     "question": "Which of the following is NOT considered a typical trigger for urticaria?",
-    "options": [
-      "Stress",
-      "Infection",
-      "Sunlight",
-      "Osteoarthritis"
-    ],
+    "correctAnswer": "Osteoarthritis",
+    "options": ["Stress", "Infection", "Sunlight", "Osteoarthritis"],
     "topics": ["pathology", "urticaria"],
     "short_explanation": "Osteoarthritis is not typically associated with urticaria flare-ups.",
     "long_explanation": "Urticaria is commonly triggered by stress, infections (viral especially), temperature changes, and allergens. Musculoskeletal conditions like osteoarthritis do not directly provoke hives.",
@@ -235,28 +174,15 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "trigger",
-      "hives",
-      "exclusion"
-    ],
-    "keywords": [
-      "non-trigger",
-      "arthritic condition",
-      "urticaria causes"
-    ],
+    "tags": ["trigger", "hives", "exclusion"],
+    "keywords": ["non-trigger", "arthritic condition", "urticaria causes"],
     "synonyms": null
   },
   {
     "id": "urticaria_008",
-    "correctAnswer": "Hives",
     "question": "Urticaria is also known by which common name?",
-    "options": [
-      "Ringworm",
-      "Rosacea",
-      "Hives",
-      "Eczema"
-    ],
+    "correctAnswer": "Hives",
+    "options": ["Ringworm", "Rosacea", "Hives", "Eczema"],
     "topics": ["pathology", "urticaria"],
     "short_explanation": "The term 'hives' is commonly used to describe urticaria.",
     "long_explanation": "Urticaria is the medical term for what laypeople refer to as hives. The condition involves itchy, red wheals that develop quickly and resolve within hours.",
@@ -270,22 +196,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "hives",
-      "urticaria",
-      "terminology"
-    ],
-    "keywords": [
-      "common name",
-      "lay term",
-      "urticaria"
-    ],
+    "tags": ["hives", "urticaria", "terminology"],
+    "keywords": ["common name", "lay term", "urticaria"],
     "synonyms": null
   },
   {
     "id": "urticaria_009",
-    "correctAnswer": "Antihistamines",
     "question": "Which treatment is most commonly prescribed for urticaria relief?",
+    "correctAnswer": "Antihistamines",
     "options": [
       "Corticosteroid injections",
       "Antihistamines",
@@ -305,21 +223,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "antihistamine",
-      "treatment",
-      "hives"
-    ],
-    "keywords": [
-      "urticaria treatment",
-      "histamine blockers"
-    ],
+    "tags": ["antihistamine", "treatment", "hives"],
+    "keywords": ["urticaria treatment", "histamine blockers"],
     "synonyms": null
   },
   {
     "id": "urticaria_010",
-    "correctAnswer": "Dermatographism",
     "question": "Which form of urticaria is characterized by linear hives appearing after stroking the skin?",
+    "correctAnswer": "Dermatographism",
     "options": [
       "Solar urticaria",
       "Pressure urticaria",
@@ -339,16 +250,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "dermatographism",
-      "skin writing",
-      "induced urticaria"
-    ],
-    "keywords": [
-      "pressure hives",
-      "linear hives",
-      "skin reaction"
-    ],
+    "tags": ["dermatographism", "skin writing", "induced urticaria"],
+    "keywords": ["pressure hives", "linear hives", "skin reaction"],
     "synonyms": null
   }
 ]

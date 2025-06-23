@@ -1,8 +1,8 @@
 [
   {
     "id": "it_band_massage_001",
-    "correctAnswer": "Dense connective tissue",
     "question": "What is the iliotibial (IT) band primarily composed of?",
+    "correctAnswer": "Dense connective tissue",
     "options": [
       "Dense connective tissue",
       "Skeletal muscle",
@@ -14,7 +14,7 @@
     "long_explanation": "The IT band is a thickened lateral portion of the fascia lata, primarily composed of collagen-rich connective tissue. It is not a muscle and therefore has limited elasticity.",
     "clinical_application": "Massage targeting the IT band focuses on reducing tension in surrounding tissues rather than stretching the band itself.",
     "source_reference": "Anatomy Trains, Myers",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -22,25 +22,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "IT band",
-      "fascia",
-      "connective tissue"
-    ],
-    "keywords": [
-      "iliotibial band",
-      "fascia lata",
-      "collagen"
-    ],
-    "synonyms": [
-      "fascia",
-      "lateral thigh fascia"
-    ]
+    "tags": ["IT band", "fascia", "connective tissue"],
+    "keywords": ["iliotibial band", "fascia lata", "collagen"],
+    "synonyms": ["fascia", "lateral thigh fascia"]
   },
   {
     "id": "it_band_massage_002",
-    "correctAnswer": "Tensor fasciae latae and gluteus maximus",
     "question": "Which muscles insert into the IT band and can be addressed during massage?",
+    "correctAnswer": "Tensor fasciae latae and gluteus maximus",
     "options": [
       "Tensor fasciae latae and gluteus maximus",
       "Rectus femoris and adductor longus",
@@ -52,7 +41,7 @@
     "long_explanation": "The TFL and upper fibers of the gluteus maximus both insert into the iliotibial band, influencing its tension and contributing to lateral knee tracking issues when tight.",
     "clinical_application": "Releasing TFL and glute max can indirectly reduce IT band discomfort.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -60,24 +49,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "TFL",
-      "gluteus maximus",
-      "insertion"
-    ],
-    "keywords": [
-      "muscle attachment",
-      "hip abductors"
-    ],
-    "synonyms": [
-      "hip abductors",
-      "ITB contributors"
-    ]
+    "tags": ["TFL", "gluteus maximus", "insertion"],
+    "keywords": ["muscle attachment", "hip abductors"],
+    "synonyms": ["hip abductors", "ITB contributors"]
   },
   {
     "id": "it_band_massage_003",
-    "correctAnswer": "Iliotibial band syndrome",
     "question": "Which condition is most often associated with IT band dysfunction?",
+    "correctAnswer": "Iliotibial band syndrome",
     "options": [
       "Iliotibial band syndrome",
       "Patellar tendonitis",
@@ -89,7 +68,7 @@
     "long_explanation": "Iliotibial band syndrome (ITBS) is a common overuse injury characterized by friction between the IT band and the lateral femoral epicondyle. It often presents with pain during activities like running or cycling.",
     "clinical_application": "Massage can reduce contributing muscle tightness and inflammation.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -97,24 +76,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "ITBS",
-      "overuse",
-      "running injury"
-    ],
-    "keywords": [
-      "iliotibial band syndrome",
-      "lateral knee pain"
-    ],
-    "synonyms": [
-      "ITBS",
-      "runner’s knee"
-    ]
+    "tags": ["ITBS", "overuse", "running injury"],
+    "keywords": ["iliotibial band syndrome", "lateral knee pain"],
+    "synonyms": ["ITBS", "runner’s knee"]
   },
   {
     "id": "it_band_massage_004",
-    "correctAnswer": "It may cause inflammation or bruising",
     "question": "Why is direct deep pressure on the IT band often discouraged?",
+    "correctAnswer": "It may cause inflammation or bruising",
     "options": [
       "It may cause inflammation or bruising",
       "It lengthens the band too quickly",
@@ -126,7 +95,7 @@
     "long_explanation": "Due to its density and limited vascularity, applying heavy direct pressure on the IT band may increase discomfort or inflammation rather than relieving tension.",
     "clinical_application": "Massage should focus on adjacent muscles rather than the band itself.",
     "source_reference": "Fascial Release for Structural Balance, Myers",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -134,37 +103,21 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "contraindication",
-      "pressure",
-      "fascial sensitivity"
-    ],
-    "keywords": [
-      "overpressure",
-      "inflammation",
-      "dense fascia"
-    ],
-    "synonyms": [
-      "direct pressure caution",
-      "bruising risk"
-    ]
+    "tags": ["contraindication", "pressure", "fascial sensitivity"],
+    "keywords": ["overpressure", "inflammation", "dense fascia"],
+    "synonyms": ["direct pressure caution", "bruising risk"]
   },
   {
     "id": "it_band_massage_005",
-    "correctAnswer": "Myofascial release",
     "question": "Which massage technique is most suitable for addressing surrounding tension contributing to IT band pain?",
-    "options": [
-      "Myofascial release",
-      "Effleurage",
-      "Tapotement",
-      "Vibration"
-    ],
+    "correctAnswer": "Myofascial release",
+    "options": ["Myofascial release", "Effleurage", "Tapotement", "Vibration"],
     "topics": ["modalities", "techniques", "it_band_massage"],
     "short_explanation": "Myofascial release helps reduce surrounding tissue restrictions.",
     "long_explanation": "Myofascial release is effective for restoring glide between fascial layers and surrounding musculature such as the TFL and glutes, indirectly improving IT band function.",
     "clinical_application": "Use slow, sustained fascial techniques rather than rapid or compressive strokes.",
     "source_reference": "Myofascial Techniques, Chaitow",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -172,25 +125,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "release",
-      "glide",
-      "indirect technique"
-    ],
-    "keywords": [
-      "fascia",
-      "release technique",
-      "hip tension"
-    ],
-    "synonyms": [
-      "fascial release",
-      "connective tissue massage"
-    ]
+    "tags": ["release", "glide", "indirect technique"],
+    "keywords": ["fascia", "release technique", "hip tension"],
+    "synonyms": ["fascial release", "connective tissue massage"]
   },
   {
     "id": "it_band_massage_006",
-    "correctAnswer": "It stabilizes the lateral knee during activity",
     "question": "What role does the IT band play in knee stabilization?",
+    "correctAnswer": "It stabilizes the lateral knee during activity",
     "options": [
       "It stabilizes the lateral knee during activity",
       "It flexes the hip and knee",
@@ -202,7 +144,7 @@
     "long_explanation": "The IT band provides lateral support to the knee joint, especially during weight-bearing and flexion-extension cycles like walking or running.",
     "clinical_application": "Massage of contributing muscles can enhance IT band function and relieve lateral knee stress.",
     "source_reference": "Trail Guide to the Body, 6th Ed.",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -210,25 +152,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "knee",
-      "stabilization",
-      "IT band"
-    ],
-    "keywords": [
-      "lateral knee",
-      "movement",
-      "support"
-    ],
-    "synonyms": [
-      "lateral support",
-      "knee stabilization"
-    ]
+    "tags": ["knee", "stabilization", "IT band"],
+    "keywords": ["lateral knee", "movement", "support"],
+    "synonyms": ["lateral support", "knee stabilization"]
   },
   {
     "id": "it_band_massage_007",
-    "correctAnswer": "Lateral thigh tightness and clicking near the knee",
     "question": "Which client presentation may indicate a need for IT band-focused massage?",
+    "correctAnswer": "Lateral thigh tightness and clicking near the knee",
     "options": [
       "Lateral thigh tightness and clicking near the knee",
       "Numbness in the big toe",
@@ -240,7 +171,7 @@
     "long_explanation": "Tightness, discomfort, or snapping sensations along the lateral thigh or knee often suggest IT band involvement. This is common in runners, cyclists, and those with imbalanced gait.",
     "clinical_application": "Assess for contributing muscular tension and address with myofascial or neuromuscular techniques.",
     "source_reference": "Clinical Massage Therapy, Rattray & Ludwig",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -248,24 +179,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "gait",
-      "tightness",
-      "runner"
-    ],
-    "keywords": [
-      "hip tightness",
-      "lateral thigh pain"
-    ],
-    "synonyms": [
-      "runner’s tightness",
-      "lateral snapping"
-    ]
+    "tags": ["gait", "tightness", "runner"],
+    "keywords": ["hip tightness", "lateral thigh pain"],
+    "synonyms": ["runner’s tightness", "lateral snapping"]
   },
   {
     "id": "it_band_massage_008",
-    "correctAnswer": "Side-lying with upper leg flexed",
     "question": "What massage position best exposes the IT band for assessment?",
+    "correctAnswer": "Side-lying with upper leg flexed",
     "options": [
       "Side-lying with upper leg flexed",
       "Supine with hip externally rotated",
@@ -277,7 +198,7 @@
     "long_explanation": "The side-lying position provides optimal access to the full length of the IT band from the hip to the knee. It also allows for passive movement testing.",
     "clinical_application": "Use bolsters for support and align hips to reduce strain during lateral thigh work.",
     "source_reference": "Mosby’s Fundamentals of Therapeutic Massage",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -285,25 +206,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "body position",
-      "assessment",
-      "lateral thigh"
-    ],
-    "keywords": [
-      "side-lying",
-      "hip alignment",
-      "ITB access"
-    ],
-    "synonyms": [
-      "lateral positioning",
-      "side posture"
-    ]
+    "tags": ["body position", "assessment", "lateral thigh"],
+    "keywords": ["side-lying", "hip alignment", "ITB access"],
+    "synonyms": ["lateral positioning", "side posture"]
   },
   {
     "id": "it_band_massage_009",
-    "correctAnswer": "Ober’s test",
     "question": "How can a therapist assess for IT band tightness?",
+    "correctAnswer": "Ober’s test",
     "options": [
       "Ober’s test",
       "Thomas test",
@@ -315,7 +225,7 @@
     "long_explanation": "Ober’s test involves passively abducting and extending the client’s hip while in side-lying. If the leg remains elevated instead of dropping down, the IT band is likely tight.",
     "clinical_application": "This test can guide the therapist in selecting appropriate techniques and areas to target.",
     "source_reference": "Orthopedic Physical Assessment, Magee",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -323,24 +233,14 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "orthopedic test",
-      "assessment",
-      "tightness"
-    ],
-    "keywords": [
-      "Ober’s test",
-      "hip mobility"
-    ],
-    "synonyms": [
-      "hip drop test",
-      "abduction restriction test"
-    ]
+    "tags": ["orthopedic test", "assessment", "tightness"],
+    "keywords": ["Ober’s test", "hip mobility"],
+    "synonyms": ["hip drop test", "abduction restriction test"]
   },
   {
     "id": "it_band_massage_010",
-    "correctAnswer": "Improve muscle-fascia balance and reduce restriction",
     "question": "What is a primary goal of massage techniques used on IT band-related dysfunction?",
+    "correctAnswer": "Improve muscle-fascia balance and reduce restriction",
     "options": [
       "Improve muscle-fascia balance and reduce restriction",
       "Lengthen the IT band permanently",
@@ -352,7 +252,7 @@
     "long_explanation": "The goal is not to 'stretch' the IT band, but to relieve tension in the contributing muscles and improve fascial glide, reducing lateral strain and improving mobility.",
     "clinical_application": "Focus on gluteals, TFL, and vastus lateralis for optimal results.",
     "source_reference": "Myofascial Techniques, Chaitow",
-    "filepath": "src/data/questions/modalities/techniques/it_band_massage.json",
+    "filepath": null,
     "question_type": "Multiple Choice",
     "difficulty": "Medium",
     "difficulty_rating": 3,
@@ -360,18 +260,8 @@
     "relevance_score": null,
     "created_at": null,
     "updated_at": null,
-    "tags": [
-      "balance",
-      "glide",
-      "dysfunction"
-    ],
-    "keywords": [
-      "functional mobility",
-      "fascial balance"
-    ],
-    "synonyms": [
-      "balance",
-      "myofascial release"
-    ]
+    "tags": ["balance", "glide", "dysfunction"],
+    "keywords": ["functional mobility", "fascial balance"],
+    "synonyms": ["balance", "myofascial release"]
   }
 ]
