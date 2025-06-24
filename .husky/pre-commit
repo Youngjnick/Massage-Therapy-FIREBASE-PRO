@@ -1,4 +1,11 @@
 #!/bin/sh
 
 npx lint-staged
-npx playwright test --last-failed || exit 1
+npx playwright test --last-failed || {
+  status=$?
+  if grep -q 'No tests found' <<< "$(npx playwright test --last-failed 2>&1)"; then
+    echo 'No failed tests to re-run, skipping.'
+  else
+    exit $status
+  fi
+}
