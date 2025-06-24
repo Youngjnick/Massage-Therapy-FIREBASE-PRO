@@ -16,6 +16,12 @@ const Profile: React.FC = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
       setUser(firebaseUser);
+      // Debug output for E2E: log user state to window
+      if (typeof window !== 'undefined') {
+        // @ts-ignore
+        window._E2E_USER = firebaseUser;
+        console.log('[E2E DEBUG] Profile user:', firebaseUser);
+      }
     });
     return () => unsubscribe();
   }, []);
