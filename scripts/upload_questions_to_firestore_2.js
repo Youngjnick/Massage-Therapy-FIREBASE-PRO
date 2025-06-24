@@ -5,11 +5,12 @@
 import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
-// eslint-disable-next-line
-import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
+// import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
+const serviceAccount = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../serviceAccountKey.json'), 'utf8')
+);
 import readline from 'readline';
 import { fileURLToPath } from 'url';
-import { normalizeQuestionFields } from './questionUtils.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
