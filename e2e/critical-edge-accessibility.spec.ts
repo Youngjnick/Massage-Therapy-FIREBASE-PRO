@@ -12,9 +12,9 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     await stepperDots.nth(2).click();
     // On third question, try to finish
     const finishBtn = page.getByRole('button', { name: /finish/i });
-    // The button should be disabled if not all questions are answered
-    await expect(finishBtn).toBeDisabled();
-    // Optionally, check for a tooltip or warning if present
+    // The button should be enabled even if not all questions are answered
+    await expect(finishBtn).toBeEnabled();
+    // Optionally, check for a warning or partial results if present
     // const warning = page.getByText(/unanswered|required|please answer/i);
     // await expect(warning).toBeVisible();
   });

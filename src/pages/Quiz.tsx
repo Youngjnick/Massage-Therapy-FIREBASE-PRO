@@ -458,15 +458,18 @@ const Quiz: React.FC = () => {
                 // setWarning('Some questions are unanswered. Showing partial results.');
               }
               try {
-                // Explicitly save quiz progress before showing results
-                await saveQuizProgress({
-                  started: false, // Mark quiz as finished
+                // Sanitize only for Firestore
+                const sanitizedForFirestore = {
+                  started: false,
                   current,
-                  userAnswers,
-                  shuffledQuestions,
-                  shuffledOptions,
+                  userAnswers: userAnswers.map(a => a === undefined ? null : a),
+                  shuffledQuestions: (shuffledQuestions || []).map(q => q === undefined ? null : q),
+                  shuffledOptions: Object.fromEntries(
+                    Object.entries(shuffledOptions || {}).map(([k, v]) => [k, Array.isArray(v) ? v.map(opt => opt === undefined ? null : opt) : v])
+                  ),
                   showResults: true
-                });
+                };
+                await saveQuizProgress(sanitizedForFirestore);
                 await updateQuizStatsOnFinish({
                   userAnswers,
                   shuffledQuestions,
