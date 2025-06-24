@@ -1,13 +1,7 @@
 import * as React from 'react';
-import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
-import { TreeItem } from '@mui/x-tree-view/TreeItem';
-import { fileList } from '../questions/fileList';
 
-// Format label for display
-function formatLabel(label: string) {
-  return label.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-}
-
+// --- MUI TreeView logic temporarily commented out ---
+/*
 // Build a tree from the fileList, including leaves for files
 function buildTree(paths: string[], onSelect: any): any[] {
   const root: Record<string, any> = {};
@@ -53,20 +47,17 @@ function buildTree(paths: string[], onSelect: any): any[] {
   }
   return toTreeItems(root);
 }
+*/
+// --- End MUI TreeView logic ---
 
 interface TopicsTreeDropdownProps {
-  onSelect: any;
+  onSelect: (filePath: string) => void;
 }
 
 const TopicsTreeDropdown: React.FC<TopicsTreeDropdownProps> = ({ onSelect }) => {
-  return (
-    <SimpleTreeView
-      aria-label="topics"
-      sx={{ maxWidth: 300, flexGrow: 1, overflowY: 'auto' }}
-    >
-      {buildTree(fileList, onSelect)}
-    </SimpleTreeView>
-  );
+  // All topic selection UIs are commented out for now.
+  // Placeholder UI while dropdown is commented out
+  return <div style={{ color: '#888' }}>Topic selector temporarily disabled</div>;
 };
 
 export default TopicsTreeDropdown;
