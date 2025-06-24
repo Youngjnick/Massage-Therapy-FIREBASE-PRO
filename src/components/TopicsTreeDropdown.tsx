@@ -50,14 +50,19 @@ function buildTree(paths: string[], onSelect: any): any[] {
 */
 // --- End MUI TreeView logic ---
 
-interface TopicsTreeDropdownProps {
-  onSelect: (filePath: string) => void;
-}
+// interface TopicsTreeDropdownProps {
+//   onSelect: (filePath: string) => void;
+// }
 
-const TopicsTreeDropdown: React.FC<TopicsTreeDropdownProps> = ({ onSelect }) => {
-  // All topic selection UIs are commented out for now.
-  // Placeholder UI while dropdown is commented out
-  return <div style={{ color: '#888' }}>Topic selector temporarily disabled</div>;
-};
+// const TopicsTreeDropdown: React.FC<TopicsTreeDropdownProps> = (/* { onSelect } */) => {
+//   // All topic selection UIs are commented out for now.
+//   // Placeholder UI while dropdown is commented out
+//   return <div style={{ color: '#888' }}>MUI accordion menu temporarily disabled</div>;
+// };
+
+// Temporary placeholder while component is disabled
+const TopicsTreeDropdown = () => (
+  <div style={{ color: '#888' }}>MUI accordion menu temporarily disabled</div>
+);
 
 export default TopicsTreeDropdown;
