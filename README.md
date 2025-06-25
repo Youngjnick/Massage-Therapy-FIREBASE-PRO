@@ -74,3 +74,33 @@ Contributions are welcome! Please submit a pull request or open an issue for any
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## End-to-End (E2E) Testing
+
+### How to Run E2E Tests
+
+- Always use the following command to run E2E (Playwright) tests:
+  ```
+  npm run test:e2e
+  ```
+  This script will automatically start the dev server (using `npm run dev`) and run all Playwright tests. You do **not** need to start the dev server manually.
+
+- Do **not** run Playwright tests directly with `playwright test` unless you have already started the dev server yourself. The recommended workflow is to always use `npm run test:e2e`.
+
+- If you want to run E2E tests in headed mode (with the browser UI), use:
+  ```
+  npm run test:e2e:headed
+  ```
+
+### E2E Test Coverage
+- E2E tests cover user flows, navigation, quiz, login, results, achievements, profile, analytics, and accessibility.
+- Analytics and stats (quiz results, topic stats, etc.) are tested for live updates in the UI and backend.
+
+### Troubleshooting
+- If you encounter errors, ensure all dependencies are installed:
+  ```
+  ./scripts/install-deps.sh
+  ```
+- For more details, see `scripts/playwright-output.txt` for E2E test logs.
+
+---

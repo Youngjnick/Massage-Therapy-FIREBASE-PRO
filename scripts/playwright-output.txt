@@ -1,7 +1,43 @@
 
-Running 2 tests using 1 worker
+Running 1 test using 1 worker
 
-  ✓  1 e2e/app-accessibility-full.spec.ts:45:7 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (3.9s)
-  ✓  2 e2e/app-accessibility-full.spec.ts:89:7 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (577ms)
 
-  2 passed (6.0s)
+  ✘  1 e2e/quiz-stats-live-update.spec.ts:11:7 › Quiz Stats Live Update › Stats and topic stats update after quiz completion (30.1s)
+
+  ✘  2 e2e/quiz-stats-live-update.spec.ts:11:7 › Quiz Stats Live Update › Stats and topic stats update after quiz completion (retry #1) (18.1s)
+
+
+  1) e2e/quiz-stats-live-update.spec.ts:11:7 › Quiz Stats Live Update › Stats and topic stats update after quiz completion 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.goto: Target page, context or browser has been closed
+
+      20 |
+      21 |     // Start a new quiz and complete it
+    > 22 |     await page.goto('/quiz');
+         |                ^
+      23 |     await page.waitForSelector('[data-testid="quiz-start-form"]');
+      24 |     // Fill out and start quiz (adjust selectors as needed)
+      25 |     await page.getByLabel('Quiz Length').fill('2');
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/quiz-stats-live-update.spec.ts:22:16
+
+    Error Context: test-results/quiz-stats-live-update-Qui-92f90-pdate-after-quiz-completion/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test was interrupted.
+
+    Error: page.goto: Target page, context or browser has been closed
+
+      20 |
+      21 |     // Start a new quiz and complete it
+    > 22 |     await page.goto('/quiz');
+         |                ^
+      23 |     await page.waitForSelector('[data-testid="quiz-start-form"]');
+      24 |     // Fill out and start quiz (adjust selectors as needed)
+      25 |     await page.getByLabel('Quiz Length').fill('2');
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/quiz-stats-live-update.spec.ts:22:16
+
+  1 failed
+    e2e/quiz-stats-live-update.spec.ts:11:7 › Quiz Stats Live Update › Stats and topic stats update after quiz completion 
