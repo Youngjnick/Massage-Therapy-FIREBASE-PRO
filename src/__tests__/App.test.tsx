@@ -13,10 +13,15 @@ jest.mock('../hooks/useAnalytics', () => {
     mockLogEvent,
   };
 });
-
+jest.mock('../questions', () => {
+  return {
+    getQuestions: jest.fn(() => Promise.reject(new Error('fail'))), // Always fail for all tests
+  };
+});
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from '../App';
+
 jest.mock('react-router-dom', () => {
   const actual = jest.requireActual('react-router-dom');
   return {
@@ -35,4 +40,15 @@ test('logs analytics event on app load', () => {
   mockLogEvent.mockClear();
   render(<App />);
   expect(mockLogEvent).toHaveBeenCalledWith('app_loaded');
+});
+
+test('shows error if questions fail to load', async () => {
+  render(<App />);
+  // Use getAllByText to allow for multiple error elements
+  await waitFor(() => {
+    const errorEls = screen.getAllByText(
+      (content) => /failed to load questions/i.test(content)
+    );
+    expect(errorEls.length).toBeGreaterThan(0);
+  });
 });
