@@ -90,6 +90,11 @@ const Profile: React.FC = () => {
       <div style={{ fontWeight: 600, fontSize: 20, marginBottom: 16 }}>
         {user ? user.displayName : 'Guest'}
       </div>
+      {user && (
+        <div data-testid="profile-uid" style={{ fontSize: 12, color: '#888', marginBottom: 8 }}>
+          {user.email?.split('@')[0]}
+        </div>
+      )}
       <div style={{ margin: '2rem auto', maxWidth: 340, textAlign: 'left' }}>
         <h3>Settings</h3>
         <label style={{ display: 'block', marginBottom: 8 }}>
