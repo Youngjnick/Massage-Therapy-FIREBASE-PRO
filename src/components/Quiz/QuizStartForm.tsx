@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import QuizSortSelect from './QuizSortSelect';
 import QuizTopicSelect from './QuizTopicSelect';
 import QuizLengthInput from './QuizLengthInput';
-import TopicsTreeDropdown from '../TopicsTreeDropdown';
+// import TopicsTreeDropdown from '../TopicsTreeDropdown';
 
 interface QuizStartFormProps {
   availableTopics: string[];
@@ -82,7 +82,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
           />
           <QuizSortSelect sort={props.sort} setSort={props.setSort} />
         </div>
-        <div style={{ margin: '1rem 0' }}>
+        {/* <div style={{ margin: '1rem 0' }}>
           <TopicsTreeDropdown
             onSelect={filePath => {
               // Set the selected topic to the file path (without .json and folders)
@@ -95,7 +95,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
               }
             }}
           />
-        </div>
+        </div> */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', margin: '1rem 0' }}>
           <div>
             <label htmlFor="show-explanations-toggle">Show Explanations</label>
@@ -103,6 +103,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
               id="show-explanations-toggle"
               type="checkbox"
               checked={toggleState.showExplanations}
+              aria-label="Show Explanations toggle"
               onChange={e => setToggleState({ ...toggleState, showExplanations: e.target.checked })}
               onKeyDown={e => {
                 if (e.key === ' ' || e.key === 'Enter') {
@@ -118,6 +119,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
               id="instant-feedback-toggle"
               type="checkbox"
               checked={toggleState.instantFeedback}
+              aria-label="Instant Feedback toggle"
               onChange={e => setToggleState({ ...toggleState, instantFeedback: e.target.checked })}
               style={{ marginLeft: 6 }}
             />
@@ -128,6 +130,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
               id="randomize-questions-toggle"
               type="checkbox"
               checked={toggleState.randomizeQuestions}
+              aria-label="Randomize Questions toggle"
               onChange={e => setToggleState({ ...toggleState, randomizeQuestions: e.target.checked })}
               style={{ marginLeft: 6 }}
             />
@@ -138,6 +141,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
               id="randomize-options-toggle"
               type="checkbox"
               checked={toggleState.randomizeOptions}
+              aria-label="Randomize Options toggle"
               onChange={e => setToggleState({ ...toggleState, randomizeOptions: e.target.checked })}
               style={{ marginLeft: 6 }}
             />
@@ -145,7 +149,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
         </div>
         <label style={{ marginLeft: '1rem' }}>
           Filter:
-          <select value={props.filter} onChange={e => props.setFilter(e.target.value)}>
+          <select value={props.filter} onChange={e => props.setFilter(e.target.value)} aria-label="Filter questions">
             <option value="all">All</option>
             <option value="incorrect">Incorrect</option>
             <option value="unseen">Unseen</option>
@@ -156,7 +160,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
         {props.filter === 'difficulty' && (
           <label style={{ marginLeft: '1rem' }}>
             Difficulty:
-            <select value={props.filterValue} onChange={e => props.setFilterValue(e.target.value)}>
+            <select value={props.filterValue} onChange={e => props.setFilterValue(e.target.value)} aria-label="Select difficulty">
               <option value="">All</option>
               {props.availableDifficulties?.map(d => <option key={d} value={d}>{d}</option>)}
             </select>
@@ -165,7 +169,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
         {props.filter === 'tag' && (
           <label style={{ marginLeft: '1rem' }}>
             Tag:
-            <select value={props.filterValue} onChange={e => props.setFilterValue(e.target.value)}>
+            <select value={props.filterValue} onChange={e => props.setFilterValue(e.target.value)} aria-label="Select tag">
               <option value="">All</option>
               {props.availableTags?.map(tag => <option key={tag} value={tag}>{tag}</option>)}
             </select>

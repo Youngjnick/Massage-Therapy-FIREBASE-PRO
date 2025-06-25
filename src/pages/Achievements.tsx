@@ -58,7 +58,7 @@ const Achievements: React.FC = () => {
             style={{ textAlign: 'center' }}
             tabIndex={0}
             role="button"
-            aria-label={`Open badge modal for ${badge.name}`}
+            aria-label={`Open badge modal for badge: ${badge.name}`}
             onClick={e => {
               if (selectedBadge) return; // Prevent opening if already open
               lastFocusedBadgeRef.current = e.currentTarget;

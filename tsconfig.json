@@ -32,5 +32,11 @@
     "__tests__/**/*.js",
     "__tests__/**/*.jsx"
   ],
-  "exclude": ["node_modules", "dist", ".vite", "dataconnect-generated"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vite",
+    "dataconnect-generated",
+    "tmp-worktree-*"
+  ]
 }
