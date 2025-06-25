@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged, User, signInWithEmailAndPassword } from 'firebase/auth';
 import { app } from '../firebase/firebaseConfig';
 import { getUserSettings, setUserSettings } from '../userSettings';
 
@@ -12,6 +12,9 @@ const Profile: React.FC = () => {
   const [ariaSound, setAriaSound] = useState(true);
   const [haptic, setHaptic] = useState(false);
   const [showExplanations, setShowExplanations] = useState(true);
+  const [testEmail, setTestEmail] = useState('');
+  const [testPassword, setTestPassword] = useState('');
+  const [testSignInError, setTestSignInError] = useState<string | null>(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
@@ -66,8 +69,18 @@ const Profile: React.FC = () => {
   };
   const handleReset = () => alert('Reset all user data (implement logic)');
 
+  const handleTestSignIn = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setTestSignInError(null);
+    try {
+      await signInWithEmailAndPassword(auth, testEmail, testPassword);
+    } catch (err: any) {
+      setTestSignInError(err.message || 'Sign in failed');
+    }
+  };
+
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }} data-testid="profile-page">
       <h2>Profile</h2>
       <img
         src={user && user.photoURL ? user.photoURL : `${import.meta.env.BASE_URL}default_avatar.png`}
@@ -100,6 +113,34 @@ const Profile: React.FC = () => {
         )}
         <button onClick={handleReset} style={{ marginLeft: 16 }} aria-label="Reset all user data">Reset All</button>
       </div>
+      {/* Test/dev-only sign-in form */}
+      {import.meta.env.DEV && !user && (
+        <form onSubmit={handleTestSignIn} style={{ marginTop: 32, maxWidth: 340, marginLeft: 'auto', marginRight: 'auto', background: '#f8f8f8', padding: 16, borderRadius: 8 }}>
+          <h4>Test/Dev Email Sign-In</h4>
+          <input
+            type="email"
+            placeholder="Test Email"
+            value={testEmail}
+            onChange={e => setTestEmail(e.target.value)}
+            style={{ width: '100%', marginBottom: 8 }}
+            autoComplete="username"
+            aria-label="Test email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={testPassword}
+            onChange={e => setTestPassword(e.target.value)}
+            style={{ width: '100%', marginBottom: 8 }}
+            autoComplete="current-password"
+            aria-label="Test password"
+            required
+          />
+          <button type="submit" style={{ width: '100%' }} aria-label="Sign in with email">Sign In (Test Only)</button>
+          {testSignInError && <div style={{ color: 'red', marginTop: 8 }}>{testSignInError}</div>}
+        </form>
+      )}
     </div>
   );
 };
