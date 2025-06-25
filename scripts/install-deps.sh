@@ -11,7 +11,6 @@ npm install --save-dev react @types/react @testing-library/react @types/testing-
 echo "Installing required dependencies..."
 npm install firebase glob json5 jspdf react-dom react-router-dom strip-json-comments
 
-# Install Material UI and its peer dependencies
 echo "Installing Material UI (MUI) and peer dependencies..."
 npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/lab @mui/x-tree-view
 
