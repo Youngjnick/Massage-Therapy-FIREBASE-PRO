@@ -35,8 +35,19 @@ while [[ $# -gt 0 ]]; do
       COMMIT_CURRENT_BRANCH_ONLY=true
       shift
       ;;
+    --*)
+      # Ignore unknown options
+      shift
+      ;;
+    -*)
+      # Ignore unknown short options
+      shift
+      ;;
     *)
-      branches+=$1
+      # Only add as branch if it does not start with -- or -
+      if [[ $1 != --* && $1 != -* ]]; then
+        branches+=$1
+      fi
       shift
       ;;
   esac
@@ -68,15 +79,39 @@ if [[ ${#branches[@]} -eq 0 ]]; then
   done
 fi
 
-# Show confirmation with explicit branch list
-if [[ ${#branches[@]} -gt 0 ]]; then
-  echo "\nYou are about to sync ALL FILES from the current branch to the following remotes/branches:"
-  for remote in $remotes; do
+# Accept any entry as a remote branch by default (origin/branch)
+# Combine remotes and branches into a single targets array (only valid remote/branch pairs)
+all_targets=()
+for remote in $remotes; do
+  # Only add if remote is a real git remote
+  if git remote | grep -qx "$remote"; then
     for branch in $branches; do
-      echo "  $remote/$branch"
+      all_targets+="$remote/$branch"
     done
+  fi
+  # Do NOT treat branch names as remotes
+  # This prevents invalid targets like branch/branch
+  # Only valid remote/branch pairs are added
+done
+# Remove duplicates
+all_targets=($(printf "%s\n" "${all_targets[@]}" | awk '!seen[$0]++'))
+
+# Detect if in detached HEAD state and get current ref/commit info
+CURRENT_BRANCH=$(git symbolic-ref --short -q HEAD)
+CURRENT_COMMIT=$(git rev-parse --short HEAD)
+if [[ -z "$CURRENT_BRANCH" ]]; then
+  REF_DESC="detached HEAD at $CURRENT_COMMIT"
+else
+  REF_DESC="branch $CURRENT_BRANCH ($CURRENT_COMMIT)"
+fi
+
+# Show confirmation with explicit target list
+if [[ ${#all_targets[@]} -gt 0 ]]; then
+  echo "\nYou are about to sync ALL FILES from $REF_DESC to the following targets (remotes and/or branches):"
+  for target in $all_targets; do
+    echo "  $target"
   done
-  echo "\nThis will OVERWRITE the state of these branches/remotes with your current branch's files."
+  echo "\nThis will OVERWRITE the state of these branches/remotes with your current files from $REF_DESC."
   echo "Type 'yes' to continue, or anything else to abort: "
   read answer
   if [[ "$answer" != "yes" ]]; then
@@ -85,7 +120,7 @@ if [[ ${#branches[@]} -gt 0 ]]; then
   fi
 fi
 
-# Run all tests once before syncing branches
+# Run all tests before syncing branches (optional, controlled by SKIP_TESTS)
 GREEN='\033[32m'
 RED='\033[31m'
 YELLOW='\033[33m'
@@ -211,7 +246,14 @@ if [[ "$SKIP_TESTS" = false ]]; then
       grep -E '^\s*✖|FAILED' scripts/playwright-output.txt | while read -r fail_line; do
         echo -e "${RED}$fail_line${NC}"
       done
-      grep -E '^e2e/[^ ]+\.spec\.[jt]s[x]? +.*FAILED' scripts/playwright-output.txt | awk '{print $1}' | sort | uniq > scripts/last-failing-playwright-files.txt
+      # Always clear the file before writing
+      > scripts/last-failing-playwright-files.txt
+      # Try to extract failed test files from Playwright output (modern and legacy formats)
+      grep -E '\\[e2e/[^ ]+\\.spec\\.[jt]sx?\\]' scripts/playwright-output.txt | sed -E 's/.*\[(e2e\/[^ ]+\\.spec\\.[jt]sx?)\].*/\1/' | sort | uniq >> scripts/last-failing-playwright-files.txt
+      # Fallback for older output formats
+      if [[ ! -s scripts/last-failing-playwright-files.txt ]]; then
+        grep -E '^e2e/[^ ]+\\.spec\\.[jt]s[x]? +.*FAILED' scripts/playwright-output.txt | awk '{print $1}' | sort | uniq >> scripts/last-failing-playwright-files.txt
+      fi
       echo "\nFailing Playwright test files saved to scripts/last-failing-playwright-files.txt"
       echo "To re-run only failing tests: npm run test:e2e:headed -- $(cat scripts/last-failing-playwright-files.txt | xargs)"
       echo "\nPlaywright E2E tests failed. What do you want to do? (fix/wip/abort): "
@@ -262,118 +304,108 @@ fi
 
 summary_table=()
 
-for remote in $remotes; do
-  for branch in $branches; do
-    worktree_dir="tmp-worktree-$remote-$branch"
-    echo "\n--- Syncing all files to $remote/$branch ---"
-    echo "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
-    # Remove temp worktree dir if it exists and prune stale worktrees
-    if [[ -d "$worktree_dir" ]]; then
-      echo "Removing existing worktree directory $worktree_dir..."
-      git worktree remove --force "$worktree_dir" 2>/dev/null || rm -rf "$worktree_dir"
-    fi
-    git worktree prune
-    # Check if branch exists on remote, create if not
-    if ! git ls-remote --exit-code --heads $remote $branch > /dev/null; then
-      echo "Branch $branch does not exist on $remote. Creating it from current HEAD."
-      git push $remote HEAD:$branch
-    fi
-    git worktree add -B $branch $worktree_dir $remote/$branch || continue
-    # Progress bar for rsync (showing file copy progress, compatible with old rsync)
-    echo "Syncing files to $worktree_dir (progress bar below):"
-    rsync -a --progress --delete --exclude='.git' --exclude='tmp-worktree-*' --exclude='node_modules' ./ $worktree_dir/
-    cd $worktree_dir
-    git add -A
-    if git diff --cached --quiet; then
-      echo "No changes to commit for $remote/$branch."
-      echo "No changes to commit for $remote/$branch." >> "$LOG_FILE"
+for target in $all_targets; do
+  # Split target into remote and branch (format: remote/branch)
+  remote="${target%%/*}"
+  branch="${target#*/}"
+  if [[ -z "$remote" || -z "$branch" || "$remote" == "$branch" ]]; then
+    echo "Skipping invalid target: $target"
+    continue
+  fi
+  echo "\n--- Syncing all files to $remote/$branch ---"
+  echo "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
+  # Add and commit all changes
+  git add -A
+  if git diff --cached --quiet; then
+    echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp."
+    echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp." >> "$LOG_FILE"
+    if $WIP_MODE; then
+      COMMIT_MSG="WIP: sync (force empty commit, tests/type/lint/e2e failing or skipped)\n\nNo file changes.\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
     else
-      # Generate dynamic commit message with file list and test results
-      CHANGED=$(git status --short)
-      echo "\nChanged files for $remote/$branch:"
-      if [[ -n "$CHANGED" ]]; then
-        echo "$CHANGED" | while read -r line; do
-          echo -e "${GREEN}$line${NC}"
-        done
-      fi
-      echo "\nChanged files for $remote/$branch:" >> "$LOG_FILE"
-      echo "$CHANGED" >> "$LOG_FILE"
-      if $WIP_MODE; then
-        COMMIT_MSG="WIP: sync (tests/type/lint/e2e failing or skipped)\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-      else
-        COMMIT_MSG="chore(sync): auto-sync all files to $remote/$branch\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-      fi
-      git commit -m "$COMMIT_MSG"
-      # Try fast-forward push first (fix: remove --ff-only for compatibility)
-      if git push $remote $branch; then
-        PUSH_MODE="normal"
-        PUSH_SUCCESS=true
-      else
-        echo "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
-        echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
-        echo "Automatically force pushing to overwrite remote history..."
-        if git push --force $remote $branch; then
-          PUSH_MODE="force"
-          PUSH_SUCCESS=true
-        else
-          PUSH_MODE="force"
-          PUSH_SUCCESS=false
-        fi
-      fi
-      # Post-push verification
-      LOCAL_HASH=$(git rev-parse HEAD)
-      REMOTE_HASH=$(git ls-remote $remote $branch | awk '{print $1}')
-      if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
-        echo -e "${GREEN}✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
-        echo "✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
-        summary_table+="$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)\n"
-      elif [[ "$PUSH_SUCCESS" = true ]]; then
-        echo -e "${YELLOW}⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
-        echo "⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
-        summary_table+="$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)\n"
-      else
-        echo -e "${RED}❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
-        echo "❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
-        summary_table+="$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)\n"
-      fi
-      # GitHub update notification and open branch page
-      if [[ "$remote" == "origin" ]]; then
-        echo "View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch"
-        echo "View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch" >> "$LOG_FILE"
-        open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch"
-      fi
-      # CI/CD: Trigger GitHub Actions workflow_dispatch if .github/workflows/ci.yml exists
-      if [[ -f .github/workflows/ci.yml ]]; then
-        echo "Triggering CI/CD for $remote/$branch (if configured on remote)."
-        echo "Triggering CI/CD for $remote/$branch (if configured on remote)." >> "$LOG_FILE"
-        # Optionally, you can use gh CLI to trigger workflow_dispatch if you have permissions
-        # gh workflow run ci.yml --ref $branch
-      fi
-      # Optional: Deploy to gh-pages if branch is gh-pages
-      if [[ "$branch" == "gh-pages" ]]; then
-        echo "\nYou just updated gh-pages. Do you want to build and deploy the latest dist to gh-pages? (yes/no): "
-        echo "\nYou just updated gh-pages. Do you want to build and deploy the latest dist to gh-pages? (yes/no): " >> "$LOG_FILE"
-        read deploy_decision
-        if [[ "$deploy_decision" == "yes" ]]; then
-          echo "Running npm run build..."
-          echo "Running npm run build..." >> "$LOG_FILE"
-          npm run build
-          echo "Deploying dist/ to gh-pages using npx gh-pages -d dist ..."
-          echo "Deploying dist/ to gh-pages using npx gh-pages -d dist ..." >> "$LOG_FILE"
-          npx gh-pages -d dist
-          echo "Deployed to https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/"
-          echo "Deployed to https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/" >> "$LOG_FILE"
-        else
-          echo "Skipped deploy to gh-pages."
-          echo "Skipped deploy to gh-pages." >> "$LOG_FILE"
-        fi
-      fi
+      COMMIT_MSG="chore(sync): force empty commit to $remote/$branch\n\nNo file changes.\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
     fi
-    cd ..
-    git worktree remove $worktree_dir --force
-    echo "Done with $remote/$branch."
-    echo "Done with $remote/$branch." >> "$LOG_FILE"
-  done
+    git commit --allow-empty -m "$COMMIT_MSG"
+  else
+    CHANGED=$(git status --short)
+    echo "\nChanged files for $remote/$branch:"
+    if [[ -n "$CHANGED" ]]; then
+      echo "$CHANGED" | while read -r line; do
+        echo -e "${GREEN}$line${NC}"
+      done
+    fi
+    echo "\nChanged files for $remote/$branch:" >> "$LOG_FILE"
+    echo "$CHANGED" >> "$LOG_FILE"
+    if $WIP_MODE; then
+      COMMIT_MSG="WIP: sync (tests/type/lint/e2e failing or skipped)\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
+    else
+      COMMIT_MSG="chore(sync): auto-sync all files to $remote/$branch\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
+    fi
+    git commit -m "$COMMIT_MSG"
+  fi
+  # Push to remote/branch
+  if git push $remote HEAD:$branch; then
+    PUSH_MODE="normal"
+    PUSH_SUCCESS=true
+  else
+    echo "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
+    echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
+    echo "Automatically force pushing to overwrite remote history..."
+    if git push --force $remote HEAD:$branch; then
+      PUSH_MODE="force"
+      PUSH_SUCCESS=true
+    else
+      PUSH_MODE="force"
+      PUSH_SUCCESS=false
+    fi
+  fi
+  LOCAL_HASH=$(git rev-parse HEAD)
+  REMOTE_HASH=$(git ls-remote $remote $branch | awk '{print $1}')
+  if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
+    echo -e "${GREEN}✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
+    echo "✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
+    summary_table+="$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)\n"
+  elif [[ "$PUSH_SUCCESS" = true ]]; then
+    echo -e "${YELLOW}⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
+    echo "⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
+    summary_table+="$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)\n"
+  else
+    echo -e "${RED}❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
+    echo "❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
+    summary_table+="$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)\n"
+  fi
+  if [[ "$remote" == "origin" ]]; then
+    echo "View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch"
+    echo "View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch" >> "$LOG_FILE"
+    open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch"
+  fi
+  # CI/CD: Trigger GitHub Actions workflow_dispatch if .github/workflows/ci.yml exists
+  if [[ -f .github/workflows/ci.yml ]]; then
+    echo "Triggering CI/CD for $remote/$branch (if configured on remote)."
+    echo "Triggering CI/CD for $remote/$branch (if configured on remote)." >> "$LOG_FILE"
+    # Optionally, you can use gh CLI to trigger workflow_dispatch if you have permissions
+    # gh workflow run ci.yml --ref $branch
+  fi
+  # Optional: Deploy to gh-pages if branch is gh-pages
+  if [[ "$branch" == "gh-pages" ]]; then
+    echo "\nYou just updated gh-pages. Do you want to build and deploy the latest dist to gh-pages? (yes/no): "
+    echo "\nYou just updated gh-pages. Do you want to build and deploy the latest dist to gh-pages? (yes/no): " >> "$LOG_FILE"
+    read deploy_decision
+    if [[ "$deploy_decision" == "yes" ]]; then
+      echo "Running npm run build..."
+      echo "Running npm run build..." >> "$LOG_FILE"
+      npm run build
+      echo "Deploying dist/ to gh-pages using npx gh-pages -d dist ..."
+      echo "Deploying dist/ to gh-pages using npx gh-pages -d dist ..." >> "$LOG_FILE"
+      npx gh-pages -d dist
+      echo "Deployed to https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/"
+      echo "Deployed to https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/" >> "$LOG_FILE"
+    else
+      echo "Skipped deploy to gh-pages."
+      echo "Skipped deploy to gh-pages." >> "$LOG_FILE"
+    fi
+  fi
+  echo "Done with $remote/$branch."
+  echo "Done with $remote/$branch." >> "$LOG_FILE"
 done
 
 # Update last sync time in log file (guarded)

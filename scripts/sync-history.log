@@ -225,3 +225,368 @@ Done with origin/github-deploy.
 --- Syncing all files to origin/refactor/modularize-app ---
 
 --- Syncing all files to origin/feature/testing-setup ---
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/testing-basis ---
+Done with origin/testing-basis.
+
+--- Syncing all files to testing-basis/testing-basis ---
+Last sync: 2025-06-24 22:19:01 EDT
+
+Summary of updates:
+origin/testing-basis: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/origin ---
+Done with origin/origin.
+
+--- Syncing all files to origin/refactor/modularize-app ---
+Last sync: 2025-06-25 07:46:00 EDT
+
+Summary of updates:
+origin/origin: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/refactor/modularize-app (current working directory) ---
+
+Changed files for origin/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+✅ origin/refactor/modularize-app is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/refactor/modularize-app
+Triggering CI/CD for origin/refactor/modularize-app (if configured on remote).
+
+--- Syncing all files to refactor/modularize-app/refactor/modularize-app (current working directory) ---
+
+Changed files for refactor/modularize-app/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+Normal push failed for refactor/modularize-app/refactor/modularize-app. The remote branch may have diverged.
+❌ WARNING: refactor/modularize-app/refactor/modularize-app did NOT update to 33ab2017386543f9ecf146089e42db491d06bd47 (remote has , push: force)
+Triggering CI/CD for refactor/modularize-app/refactor/modularize-app (if configured on remote).
+Last sync: 2025-06-25 07:52:34 EDT
+
+Summary of updates:
+origin/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ refactor/modularize-app/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (MISMATCH! remote has , force)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/--remote ---
+
+--- Syncing all files to origin/origin ---
+Done with origin/origin.
+
+--- Syncing all files to origin/test-branch ---
+Done with origin/test-branch.
+
+--- Syncing all files to local branch test-branch ---
+Done with local branch test-branch.
+
+--- Syncing all files to local branch --remote ---
+Last sync: 2025-06-25 08:05:58 EDT
+
+Summary of updates:
+origin/origin: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ origin/test-branch: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ local/test-branch: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, local)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to local branch origin/refactor/modularize-app ---
+
+--- Syncing all files to local branch origin/feature/testing-setup ---
+Last sync: 2025-06-25 08:25:53 EDT
+
+Summary of updates:
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/refactor/modularize-app ---
+
+Changed files for origin/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+✅ origin/refactor/modularize-app is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/refactor/modularize-app
+Triggering CI/CD for origin/refactor/modularize-app (if configured on remote).
+Done with origin/refactor/modularize-app.
+
+--- Syncing all files to origin/feature/testing-setup ---
+
+Changed files for origin/feature/testing-setup:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+Normal push failed for origin/feature/testing-setup. The remote branch may have diverged.
+✅ origin/feature/testing-setup is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: force)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/feature/testing-setup
+Triggering CI/CD for origin/feature/testing-setup (if configured on remote).
+Done with origin/feature/testing-setup.
+Last sync: 2025-06-25 08:31:41 EDT
+
+Summary of updates:
+origin/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ origin/feature/testing-setup: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, force)
+
+
+--- Syncing all files to origin/refactor/modularize-app ---
+
+Changed files for origin/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+✅ origin/refactor/modularize-app is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/refactor/modularize-app
+Triggering CI/CD for origin/refactor/modularize-app (if configured on remote).
+Done with origin/refactor/modularize-app.
+
+--- Syncing all files to origin/feature/testing-setup ---
+
+Changed files for origin/feature/testing-setup:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+✅ origin/feature/testing-setup is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/feature/testing-setup
+Triggering CI/CD for origin/feature/testing-setup (if configured on remote).
+Done with origin/feature/testing-setup.
+
+--- Syncing all files to refactor/modularize-app/refactor/modularize-app ---
+
+Changed files for refactor/modularize-app/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for refactor/modularize-app/refactor/modularize-app. The remote branch may have diverged.
+❌ WARNING: refactor/modularize-app/refactor/modularize-app did NOT update to 33ab2017386543f9ecf146089e42db491d06bd47 (remote has , push: force)
+Triggering CI/CD for refactor/modularize-app/refactor/modularize-app (if configured on remote).
+Done with refactor/modularize-app/refactor/modularize-app.
+
+--- Syncing all files to refactor/modularize-app/feature/testing-setup ---
+
+Changed files for refactor/modularize-app/feature/testing-setup:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for refactor/modularize-app/feature/testing-setup. The remote branch may have diverged.
+❌ WARNING: refactor/modularize-app/feature/testing-setup did NOT update to 33ab2017386543f9ecf146089e42db491d06bd47 (remote has , push: force)
+Triggering CI/CD for refactor/modularize-app/feature/testing-setup (if configured on remote).
+Done with refactor/modularize-app/feature/testing-setup.
+
+--- Syncing all files to feature/testing-setup/refactor/modularize-app ---
+
+Changed files for feature/testing-setup/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for feature/testing-setup/refactor/modularize-app. The remote branch may have diverged.
+❌ WARNING: feature/testing-setup/refactor/modularize-app did NOT update to 33ab2017386543f9ecf146089e42db491d06bd47 (remote has , push: force)
+Triggering CI/CD for feature/testing-setup/refactor/modularize-app (if configured on remote).
+Done with feature/testing-setup/refactor/modularize-app.
+
+--- Syncing all files to feature/testing-setup/feature/testing-setup ---
+
+Changed files for feature/testing-setup/feature/testing-setup:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for feature/testing-setup/feature/testing-setup. The remote branch may have diverged.
+❌ WARNING: feature/testing-setup/feature/testing-setup did NOT update to 33ab2017386543f9ecf146089e42db491d06bd47 (remote has , push: force)
+Triggering CI/CD for feature/testing-setup/feature/testing-setup (if configured on remote).
+Done with feature/testing-setup/feature/testing-setup.
+Last sync: 2025-06-25 08:50:55 EDT
+
+Summary of updates:
+origin/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ origin/feature/testing-setup: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ refactor/modularize-app/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (MISMATCH! remote has , force)
+ refactor/modularize-app/feature/testing-setup: 33ab2017386543f9ecf146089e42db491d06bd47 (MISMATCH! remote has , force)
+ feature/testing-setup/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (MISMATCH! remote has , force)
+ feature/testing-setup/feature/testing-setup: 33ab2017386543f9ecf146089e42db491d06bd47 (MISMATCH! remote has , force)
+
+
+--- Syncing all files to origin/refactor/modularize-app ---
+
+Changed files for origin/refactor/modularize-app:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+✅ origin/refactor/modularize-app is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/refactor/modularize-app
+Triggering CI/CD for origin/refactor/modularize-app (if configured on remote).
+Done with origin/refactor/modularize-app.
+
+--- Syncing all files to origin/feature/testing-setup ---
+
+Changed files for origin/feature/testing-setup:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+✅ origin/feature/testing-setup is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/feature/testing-setup
+Triggering CI/CD for origin/feature/testing-setup (if configured on remote).
+Done with origin/feature/testing-setup.
+Last sync: 2025-06-25 08:54:02 EDT
+
+Summary of updates:
+origin/refactor/modularize-app: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+ origin/feature/testing-setup: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/base-app-fully-featured-11 ---
+
+Changed files for origin/base-app-fully-featured-11:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for origin/base-app-fully-featured-11. The remote branch may have diverged.
+✅ origin/base-app-fully-featured-11 is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: force)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/base-app-fully-featured-11
+Triggering CI/CD for origin/base-app-fully-featured-11 (if configured on remote).
+Done with origin/base-app-fully-featured-11.
+
+--- Syncing all files to origin/base-app-fully-featured-12 ---
+
+Changed files for origin/base-app-fully-featured-12:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for origin/base-app-fully-featured-12. The remote branch may have diverged.
+✅ origin/base-app-fully-featured-12 is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: force)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/base-app-fully-featured-12
+Triggering CI/CD for origin/base-app-fully-featured-12 (if configured on remote).
+Done with origin/base-app-fully-featured-12.
+
+--- Syncing all files to origin/base-app-fully-featured-13 ---
+
+Changed files for origin/base-app-fully-featured-13:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for origin/base-app-fully-featured-13. The remote branch may have diverged.
+✅ origin/base-app-fully-featured-13 is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: force)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/base-app-fully-featured-13
+Triggering CI/CD for origin/base-app-fully-featured-13 (if configured on remote).
+Done with origin/base-app-fully-featured-13.
+Last sync: 2025-06-25 09:15:07 EDT
+
+Summary of updates:
+origin/base-app-fully-featured-11: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, force)
+ origin/base-app-fully-featured-12: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, force)
+ origin/base-app-fully-featured-13: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, force)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/base/playwright-setup ---
+
+Changed files for origin/base/playwright-setup:
+M  e2e/app-accessibility-full.spec.ts
+M  scripts/dev-server-e2e.log
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+✅ origin/base/playwright-setup is up to date with local commit 33ab2017386543f9ecf146089e42db491d06bd47 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/base/playwright-setup
+Triggering CI/CD for origin/base/playwright-setup (if configured on remote).
+Done with origin/base/playwright-setup.
+Last sync: 2025-06-25 09:29:22 EDT
+
+Summary of updates:
+origin/base/playwright-setup: 33ab2017386543f9ecf146089e42db491d06bd47 (OK, normal)
+
+Running ESLint...
+Running TypeScript type check...
+Running npm test (Jest) for all branches...
+
+--- Syncing all files to origin/main ---
