@@ -115,7 +115,7 @@ const Profile: React.FC = () => {
       </div>
       {/* Test/dev-only sign-in form */}
       {import.meta.env.DEV && !user && (
-        <form onSubmit={handleTestSignIn} style={{ marginTop: 32, maxWidth: 340, marginLeft: 'auto', marginRight: 'auto', background: '#f8f8f8', padding: 16, borderRadius: 8 }}>
+        <form onSubmit={handleTestSignIn} style={{ marginTop: 32, maxWidth: 340, marginLeft: 'auto', marginRight: 'auto', background: '#f8f8f8', padding: 16, borderRadius: 8 }} data-testid="test-signin-form">
           <h4>Test/Dev Email Sign-In</h4>
           <input
             type="email"
@@ -126,6 +126,7 @@ const Profile: React.FC = () => {
             autoComplete="username"
             aria-label="Test email"
             required
+            data-testid="test-signin-email"
           />
           <input
             type="password"
@@ -136,8 +137,9 @@ const Profile: React.FC = () => {
             autoComplete="current-password"
             aria-label="Test password"
             required
+            data-testid="test-signin-password"
           />
-          <button type="submit" style={{ width: '100%' }} aria-label="Sign in with email">Sign In (Test Only)</button>
+          <button type="submit" style={{ width: '100%' }} aria-label="Sign in with email" data-testid="test-signin-submit">Sign In (Test Only)</button>
           {testSignInError && <div style={{ color: 'red', marginTop: 8 }}>{testSignInError}</div>}
         </form>
       )}
