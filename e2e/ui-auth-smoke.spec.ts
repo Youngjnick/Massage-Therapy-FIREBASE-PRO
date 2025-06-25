@@ -1,0 +1,24 @@
+import { test, expect } from '@playwright/test';
+
+const TEST_EMAIL = 'test1234@gmail.com';
+const TEST_PASSWORD = 'test1234';
+
+// Adjust selectors as needed for your login form
+const EMAIL_SELECTOR = 'input[type="email"], input[name="email"]';
+const PASSWORD_SELECTOR = 'input[type="password"], input[name="password"]';
+const SUBMIT_SELECTOR = 'button[type="submit"], button:has-text("Sign In"), button:has-text("Login")';
+const PROFILE_SELECTOR = '[data-testid="profile-page"], [data-testid="user-profile"], [data-testid="profile"]';
+
+const LOGIN_PATH = '/profile';
+const POST_LOGIN_PATH = '/profile';
+
+test('UI auth: can sign in via login form and see profile', async ({ page }) => {
+  await page.goto(LOGIN_PATH);
+  await page.fill(EMAIL_SELECTOR, TEST_EMAIL);
+  await page.fill(PASSWORD_SELECTOR, TEST_PASSWORD);
+  await page.click(SUBMIT_SELECTOR);
+  await page.waitForTimeout(2000);
+  await page.goto(POST_LOGIN_PATH);
+  const profileVisible = await page.locator(PROFILE_SELECTOR).first().isVisible().catch(() => false);
+  expect(profileVisible).toBeTruthy();
+});
