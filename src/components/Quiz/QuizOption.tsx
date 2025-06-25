@@ -114,6 +114,8 @@ const QuizOption: React.FC<QuizOptionProps> = ({
       style={{ width: '100%', cursor: disabled ? 'not-allowed' : 'pointer' }}
       {...rest}
       data-qa="quiz-option"
+      role="group"
+      aria-label={`Quiz option: ${labelStr}. ${optionStr}`}
       onClick={() => {
         if (disabled) return;
         // Only focus input if not already focused

@@ -14,6 +14,7 @@ const QuizStepper: React.FC<QuizStepperProps> = ({ total, current, answered, onS
         type="button"
         className="quiz-stepper-dot"
         aria-current="step"
+        aria-label="Current step"
         disabled
         data-testid="quiz-stepper-dot"
       />
@@ -28,6 +29,8 @@ const QuizStepper: React.FC<QuizStepperProps> = ({ total, current, answered, onS
             (answered[idx] ? ' answered' : '')
           }
           aria-current={idx === current ? 'step' : undefined}
+          aria-label={`Go to question ${idx + 1}${answered[idx] ? ' (answered)' : ''}${idx === current ? ' (current)' : ''}`}
+          role="button"
           onClick={() => onStep(idx)}
           onKeyDown={e => {
             if (e.key === 'Enter' || e.key === ' ') {

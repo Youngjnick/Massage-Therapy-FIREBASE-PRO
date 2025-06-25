@@ -5,6 +5,7 @@
     "deploy": "gh-pages -d dist",
     "test": "jest",
     "test:e2e": "start-server-and-test dev http://localhost:5173 'playwright test'",
+    "test:e2e:headed": "playwright test --headed",
     "dev": "vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },

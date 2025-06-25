@@ -321,4 +321,10 @@ export default [
       '@typescript-eslint/no-undef': 'off',
     },
   },
+  {
+    ignores: [
+      'tmp-worktree-*',
+      'tmp-worktree-*/**',
+    ],
+  },
 ];

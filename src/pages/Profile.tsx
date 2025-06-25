@@ -80,25 +80,25 @@ const Profile: React.FC = () => {
       <div style={{ margin: '2rem auto', maxWidth: 340, textAlign: 'left' }}>
         <h3>Settings</h3>
         <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={darkMode} onChange={e => setDarkMode(e.target.checked)} /> Dark Mode
+          <input type="checkbox" checked={darkMode} onChange={e => setDarkMode(e.target.checked)} aria-label="Toggle dark mode" /> Dark Mode
         </label>
         <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={ariaSound} onChange={e => setAriaSound(e.target.checked)} /> Aria Sound
+          <input type="checkbox" checked={ariaSound} onChange={e => setAriaSound(e.target.checked)} aria-label="Toggle aria sound" /> Aria Sound
         </label>
         <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={haptic} onChange={e => setHaptic(e.target.checked)} /> Haptic Feedback
+          <input type="checkbox" checked={haptic} onChange={e => setHaptic(e.target.checked)} aria-label="Toggle haptic feedback" /> Haptic Feedback
         </label>
         <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={showExplanations} onChange={e => setShowExplanations(e.target.checked)} /> Show Explanations
+          <input type="checkbox" checked={showExplanations} onChange={e => setShowExplanations(e.target.checked)} aria-label="Toggle show explanations" /> Show Explanations
         </label>
       </div>
       <div style={{ marginTop: 32 }}>
         {user ? (
-          <button onClick={handleSignOut}>Sign Out</button>
+          <button onClick={handleSignOut} aria-label="Sign out">Sign Out</button>
         ) : (
-          <button onClick={handleSignIn}>Sign In with Google</button>
+          <button onClick={handleSignIn} aria-label="Sign in with Google">Sign In with Google</button>
         )}
-        <button onClick={handleReset} style={{ marginLeft: 16 }}>Reset All</button>
+        <button onClick={handleReset} style={{ marginLeft: 16 }} aria-label="Reset all user data">Reset All</button>
       </div>
     </div>
   );
