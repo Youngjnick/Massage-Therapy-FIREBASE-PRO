@@ -590,3 +590,24 @@ Running TypeScript type check...
 Running npm test (Jest) for all branches...
 
 --- Syncing all files to origin/main ---
+
+Changed files for origin/main:
+M  e2e/app-accessibility-full.spec.ts
+M  package-lock.json
+M  package.json
+M  scripts/dev-server-e2e.log
+M  scripts/install-deps.sh
+A  scripts/playwright-output.txt
+M  scripts/sync-all-files-to-specified-branches.sh
+M  scripts/sync-history.log
+M  test-custom-token.txt
+M  test-results/.last-run.json
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-retry1/error-context.md
+D  test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility/error-context.md
+Normal push failed for origin/main. The remote branch may have diverged.
+✅ origin/main is up to date with local commit e8019e4c3ee987eeaa2f95b841032efa784cd0f2 (push: force)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/main
+Triggering CI/CD for origin/main (if configured on remote).
+Done with origin/main.
+
+--- Syncing all files to origin/main2 ---
