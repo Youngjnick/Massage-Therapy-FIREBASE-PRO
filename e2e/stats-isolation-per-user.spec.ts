@@ -1,7 +1,7 @@
 import { test, expect, Page } from '@playwright/test';
 
-const USER_A = { email: 'testuserA@gmail.com', password: 'test1234' };
-const USER_B = { email: 'testuserB@gmail.com', password: 'test1234' };
+const USER_A = { email: 'testUserA@gmail.com', password: 'test1234' };
+const USER_B = { email: 'testUserB@gmail.com', password: 'test1234' };
 const EMAIL_SELECTOR = '[data-testid="test-signin-email"]';
 const PASSWORD_SELECTOR = '[data-testid="test-signin-password"]';
 const SUBMIT_SELECTOR = '[data-testid="test-signin-submit"]';
