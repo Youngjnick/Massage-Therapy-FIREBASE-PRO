@@ -62,6 +62,9 @@ test.describe('Stats Isolation per User', () => {
       if (initialA) break;
       await page.waitForTimeout(500);
     }
+    /* eslint-disable no-undef */
+    console.log('User A initial stat:', initialA);
+    /* eslint-enable no-undef */
     const initialAInt = parseInt(initialA, 10) || 0;
     // Take a quiz as User A
     await page.goto('/quiz');
@@ -81,6 +84,9 @@ test.describe('Stats Isolation per User', () => {
       if (updatedA) break;
       await page.waitForTimeout(500);
     }
+    /* eslint-disable no-undef */
+    console.log('User A updated stat:', updatedA);
+    /* eslint-enable no-undef */
     const updatedAInt = parseInt(updatedA, 10) || 0;
     expect(updatedAInt).toBeGreaterThan(initialAInt);
     // Sign out User A
@@ -96,6 +102,9 @@ test.describe('Stats Isolation per User', () => {
       if (statB) break;
       await page.waitForTimeout(500);
     }
+    /* eslint-disable no-undef */
+    console.log('User B stat:', statB);
+    /* eslint-enable no-undef */
     const statBInt = parseInt(statB, 10) || 0;
     // User B's stat should not have changed due to User A's quiz
     expect(statBInt).toBeLessThanOrEqual(initialAInt);
@@ -112,6 +121,9 @@ test.describe('Stats Isolation per User', () => {
       if (finalA) break;
       await page.waitForTimeout(500);
     }
+    /* eslint-disable no-undef */
+    console.log('User A final stat:', finalA);
+    /* eslint-enable no-undef */
     const finalAInt = parseInt(finalA, 10) || 0;
     expect(finalAInt).toBe(updatedAInt);
   });
