@@ -1,36 +1,36 @@
-[debug] [2025-06-27T11:56:13.962Z] ----------------------------------------------------------------------
-[debug] [2025-06-27T11:56:13.963Z] Command:       /opt/homebrew/Cellar/node@20/20.19.2/bin/node /opt/homebrew/bin/firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth
-[debug] [2025-06-27T11:56:13.963Z] CLI Version:   14.7.0
-[debug] [2025-06-27T11:56:13.964Z] Platform:      darwin
-[debug] [2025-06-27T11:56:13.964Z] Node Version:  v20.19.2
-[debug] [2025-06-27T11:56:13.964Z] Time:          Fri Jun 27 2025 07:56:13 GMT-0400 (Eastern Daylight Time)
-[debug] [2025-06-27T11:56:13.964Z] ----------------------------------------------------------------------
+[debug] [2025-06-27T12:24:03.456Z] ----------------------------------------------------------------------
+[debug] [2025-06-27T12:24:03.458Z] Command:       /opt/homebrew/Cellar/node@20/20.19.2/bin/node /opt/homebrew/bin/firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth
+[debug] [2025-06-27T12:24:03.458Z] CLI Version:   14.7.0
+[debug] [2025-06-27T12:24:03.458Z] Platform:      darwin
+[debug] [2025-06-27T12:24:03.458Z] Node Version:  v20.19.2
+[debug] [2025-06-27T12:24:03.458Z] Time:          Fri Jun 27 2025 08:24:03 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-06-27T12:24:03.458Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-06-27T11:56:14.076Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-06-27T11:56:14.076Z] > authorizing via signed-in user (youngjnick@gmail.com)
-[debug] [2025-06-27T11:56:14.147Z] openjdk version "17.0.15" 2025-04-15
+[debug] [2025-06-27T12:24:03.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-27T12:24:03.575Z] > authorizing via signed-in user (youngjnick@gmail.com)
+[debug] [2025-06-27T12:24:03.670Z] openjdk version "17.0.15" 2025-04-15
 
-[debug] [2025-06-27T11:56:14.147Z] OpenJDK Runtime Environment Homebrew (build 17.0.15+0)
+[debug] [2025-06-27T12:24:03.670Z] OpenJDK Runtime Environment Homebrew (build 17.0.15+0)
 OpenJDK 64-Bit Server VM Homebrew (build 17.0.15+0, mixed mode, sharing)
 
-[debug] [2025-06-27T11:56:14.149Z] Parsed Java major version: 17
+[debug] [2025-06-27T12:24:03.676Z] Parsed Java major version: 17
 [info] i  emulators: Starting emulators: auth, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore"}}
-[debug] [2025-06-27T11:56:14.306Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-06-27T11:56:14.306Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-06-27T11:56:14.306Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-06-27T11:56:14.306Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-06-27T11:56:14.306Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-06-27T11:56:14.309Z] [hub] writing locator at /var/folders/4_/021vklnx525_pxs1dlkrfqzc0000gn/T/hub-massage-therapy-smart-st-c7f8f.json
+[debug] [2025-06-27T12:24:03.848Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-27T12:24:03.849Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-27T12:24:03.849Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-27T12:24:03.849Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-27T12:24:03.849Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-06-27T12:24:03.851Z] [hub] writing locator at /var/folders/4_/021vklnx525_pxs1dlkrfqzc0000gn/T/hub-massage-therapy-smart-st-c7f8f.json
 [info] i  firestore: Importing data from /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/firestore_export/firestore_export.overall_export_metadata {"metadata":{"emulator":{"name":"firestore"},"message":"Importing data from /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/firestore_export/firestore_export.overall_export_metadata"}}
-[debug] [2025-06-27T11:56:14.315Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2025-06-27T11:56:14.315Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
-[debug] [2025-06-27T11:56:14.315Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/macuser/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","massage-therapy-smart-st-c7f8f","--seed_from_export","/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/firestore_export/firestore_export.overall_export_metadata","--rules","/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/macuser/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"massage-therapy-smart-st-c7f8f\",\"--seed_from_export\",\"/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/firestore_export/firestore_export.overall_export_metadata\",\"--rules\",\"/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[debug] [2025-06-27T12:24:03.856Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-06-27T12:24:03.856Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-06-27T12:24:03.856Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/macuser/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","massage-therapy-smart-st-c7f8f","--seed_from_export","/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/firestore_export/firestore_export.overall_export_metadata","--rules","/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/macuser/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"massage-therapy-smart-st-c7f8f\",\"--seed_from_export\",\"/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/firestore_export/firestore_export.overall_export_metadata\",\"--rules\",\"/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
 [info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
-[debug] [2025-06-27T11:56:14.915Z] Jun 27, 2025 7:56:14 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+[debug] [2025-06-27T12:24:04.464Z] Jun 27, 2025 8:24:04 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
 INFO: Started WebSocket server on ws://127.0.0.1:9150
- {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 27, 2025 7:56:14 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
-[debug] [2025-06-27T11:56:14.926Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
-[debug] [2025-06-27T11:56:14.927Z] 127.0.0.1:8080
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 27, 2025 8:24:04 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-06-27T12:24:04.475Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2025-06-27T12:24:04.475Z] 127.0.0.1:8080
 If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
 
    export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
@@ -44,7 +44,9 @@ Dev App Server is now running.
 
  {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
 [info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
-[debug] [2025-06-27T11:56:18.166Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] i  auth: Importing config from /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/auth_export/config.json {"metadata":{"emulator":{"name":"auth"},"message":"Importing config from /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/auth_export/config.json"}}
+[info] i  auth: Importing accounts from /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/auth_export/accounts.json {"metadata":{"emulator":{"name":"auth"},"message":"Importing accounts from /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/emulator-data/auth_export/accounts.json"}}
+[debug] [2025-06-27T12:24:07.582Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
