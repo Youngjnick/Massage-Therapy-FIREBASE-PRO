@@ -67,4 +67,31 @@ test.describe('Accessibility: ARIA roles and labels', () => {
       /* eslint-enable no-undef */
     }
   });
+
+  test('Keyboard navigation: Tab through all interactive elements and ensure correct focus order', async ({ page }) => {
+    await uiSignIn(page);
+    await page.goto('/');
+
+    // Collect all tabbable elements
+    const tabbableSelectors = [
+      'a[href]',
+      'button:not([disabled])',
+      'input:not([type="hidden"]):not([disabled])',
+      'select:not([disabled])',
+      'textarea:not([disabled])',
+      '[tabindex]:not([tabindex="-1"])',
+    ];
+    const tabbable = await page.$$(tabbableSelectors.join(','));
+    expect(tabbable.length).toBeGreaterThan(0);
+
+    // Focus the first element and tab through all
+    await page.keyboard.press('Tab');
+    let lastFocused = await page.evaluate(() => document.activeElement?.outerHTML);
+    for (let i = 1; i < tabbable.length; i++) {
+      await page.keyboard.press('Tab');
+      const currentFocused = await page.evaluate(() => document.activeElement?.outerHTML);
+      expect(currentFocused).not.toBe(lastFocused);
+      lastFocused = currentFocused;
+    }
+  });
 });
