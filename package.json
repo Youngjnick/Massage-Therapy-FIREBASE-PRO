@@ -4,6 +4,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "jest",
+    "pretest:e2e": "lsof -ti:5173 | xargs kill -9 || true",
     "test:e2e": "start-server-and-test dev http://localhost:5173 'playwright test'",
     "test:e2e:headed": "playwright test --headed",
     "dev": "vite",

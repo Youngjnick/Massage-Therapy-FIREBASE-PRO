@@ -1,0 +1,26 @@
+{
+  "kind": "identitytoolkit#DownloadAccountResponse",
+  "users": [
+    {
+      "localId": "IV4z0DFJ1hywtWJ9K2DBxsLUkcpu",
+      "lastLoginAt": "1751025394382",
+      "displayName": "Test User",
+      "emailVerified": false,
+      "email": "test1234@gmail.com",
+      "salt": "fakeSaltwXZVnoiF0xj0vTwZ0Qko",
+      "passwordHash": "fakeHash:salt=fakeSaltwXZVnoiF0xj0vTwZ0Qko:password=test1234",
+      "passwordUpdatedAt": 1751025394382,
+      "validSince": "1751025394",
+      "createdAt": "1751025394382",
+      "providerUserInfo": [
+        {
+          "providerId": "password",
+          "email": "test1234@gmail.com",
+          "federatedId": "test1234@gmail.com",
+          "rawId": "test1234@gmail.com",
+          "displayName": "Test User"
+        }
+      ]
+    }
+  ]
+}
