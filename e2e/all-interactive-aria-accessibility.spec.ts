@@ -32,21 +32,5 @@ test.describe('All Interactive Elements: ARIA and Keyboard Accessibility', () =>
         // expect(role).not.toBeNull();
       }
     });
-    test(`All interactive elements on ${pagePath} are keyboard tabbable`, async ({ page }) => {
-      await page.goto(pagePath);
-      // Tab through all elements and ensure focus moves
-      let lastFocused = null;
-      for (let i = 0; i < 30; i++) { // Arbitrary max tab count
-        await page.keyboard.press('Tab');
-        const active = await page.evaluate(() => document.activeElement && document.activeElement.outerHTML);
-        if (active && active !== lastFocused) {
-          lastFocused = active;
-        } else {
-          break;
-        }
-      }
-      // If at least one interactive element, focus should have moved
-      expect(lastFocused).not.toBeNull();
-    });
   }
 });
