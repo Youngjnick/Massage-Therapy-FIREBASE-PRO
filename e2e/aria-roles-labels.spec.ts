@@ -10,10 +10,26 @@
 //
 // Summary: The test failed because the app was not running on the expected port, so Playwright couldn't find the "Start" button. Keeping ports consistent and using relative URLs prevents this issue.
 
-import { test, expect } from '@playwright/test';
+import { test, expect, Page } from '@playwright/test';
+
+const TEST_EMAIL = 'test1234@gmail.com';
+const TEST_PASSWORD = 'test1234';
+const EMAIL_SELECTOR = '[data-testid="test-signin-email"]';
+const PASSWORD_SELECTOR = '[data-testid="test-signin-password"]';
+const SUBMIT_SELECTOR = '[data-testid="test-signin-submit"]';
+
+async function uiSignIn(page: Page) {
+  await page.goto('/profile');
+  await page.fill(EMAIL_SELECTOR, TEST_EMAIL);
+  await page.fill(PASSWORD_SELECTOR, TEST_PASSWORD);
+  await page.click(SUBMIT_SELECTOR);
+  // Wait for sign-out button to appear as proof of successful login
+  await page.waitForSelector('button[aria-label="Sign out"], button:has-text("Sign Out")', { timeout: 10000 });
+}
 
 test.describe('Accessibility: ARIA roles and labels', () => {
   test('Main navigation and buttons have correct ARIA roles and labels', async ({ page }) => {
+    await uiSignIn(page);
     await page.goto('/');
 
     // Main navigation
