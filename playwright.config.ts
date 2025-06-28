@@ -9,6 +9,16 @@ export default defineConfig({
     ...devices['Desktop Chrome'],
     headless: false,
   },
+  projects: [
+    {
+      name: 'Desktop Chrome',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['iPhone 12'] },
+    },
+  ],
   webServer: {
     command: 'vite --port 5174',
     port: 5174,
