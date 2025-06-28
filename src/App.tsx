@@ -32,7 +32,7 @@ const App: React.FC = () => {
       <RouteDebug />
       <AppHeader />
       <NavBar />
-      <div className="main-content">
+      <main className="main-content" role="main">
         <Routes>
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/achievements" element={<Achievements />} />
@@ -40,7 +40,7 @@ const App: React.FC = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<Navigate to="/quiz" replace />} />
         </Routes>
-      </div>
+      </main>
       <AppFooter />
     </Router>
   );

@@ -400,7 +400,7 @@ const Quiz: React.FC = () => {
   };
 
   return (
-    <div className="quiz-container" data-testid="quiz-container">
+    <div className="quiz-container" data-testid="quiz-container" role="form">
       <h1>Quiz</h1>
       {error && (
         <div role="alert" style={{ color: '#ef4444', fontWeight: 600, marginBottom: 12 }} data-testid="quiz-error">
@@ -419,9 +419,9 @@ const Quiz: React.FC = () => {
           {warning}
         </div>
       )}
+      {/* Always render all quiz states inside the form container */}
       {started && !showResults && (
         <>
-          {/* If all options should be disabled (for test), pass a prop to QuizQuestionCard */}
           <QuizProgressBar progress={progress} />
           <QuizTopicProgress topicStats={topicStats} />
           <QuizStepper
@@ -484,7 +484,6 @@ const Quiz: React.FC = () => {
               }
             }}
             total={totalQuestions}
-            /* Add this prop for test: disableAllOptions if quizQuestions.length === 0 (simulate test) */
             disableAllOptions={quizQuestions.length === 0}
           />
         </>

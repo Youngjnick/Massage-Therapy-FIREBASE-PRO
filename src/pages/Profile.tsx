@@ -80,7 +80,7 @@ const Profile: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center' }} data-testid="profile-page">
+    <div style={{ textAlign: 'center' }} data-testid="profile-page" role="form">
       <h2>Profile</h2>
       <img
         src={user && user.photoURL ? user.photoURL : `${import.meta.env.BASE_URL}default_avatar.png`}
