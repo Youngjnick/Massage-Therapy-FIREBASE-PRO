@@ -1,19 +1,5 @@
 import { test, expect } from '@playwright/test';
-
-const TEST_EMAIL = 'test1234@gmail.com';
-const TEST_PASSWORD = 'test1234';
-const EMAIL_SELECTOR = '[data-testid="test-signin-email"]';
-const PASSWORD_SELECTOR = '[data-testid="test-signin-password"]';
-const SUBMIT_SELECTOR = '[data-testid="test-signin-submit"]';
-const SIGNOUT_SELECTOR = 'button[aria-label="Sign out"], button:has-text("Sign Out")';
-
-async function uiSignIn(page: import('@playwright/test').Page) {
-  await page.goto('/profile');
-  await page.fill(EMAIL_SELECTOR, TEST_EMAIL);
-  await page.fill(PASSWORD_SELECTOR, TEST_PASSWORD);
-  await page.click(SUBMIT_SELECTOR);
-  await page.waitForSelector(SIGNOUT_SELECTOR, { timeout: 10000 });
-}
+import { uiSignIn } from './helpers/uiSignIn';
 
 async function getStatValue(page: import('@playwright/test').Page, label: string): Promise<string> {
   const statLocator = page.locator(`strong:text-is('${label}')`);
