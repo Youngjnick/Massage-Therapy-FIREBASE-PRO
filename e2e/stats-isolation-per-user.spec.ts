@@ -1,19 +1,8 @@
 import { test, expect, Page } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
 
 const USER_A = { email: 'testUserA@gmail.com', password: 'test1234' };
 const USER_B = { email: 'testUserB@gmail.com', password: 'test1234' };
-const EMAIL_SELECTOR = '[data-testid="test-signin-email"]';
-const PASSWORD_SELECTOR = '[data-testid="test-signin-password"]';
-const SUBMIT_SELECTOR = '[data-testid="test-signin-submit"]';
-const SIGNOUT_SELECTOR = 'button[aria-label="Sign out"], button:has-text("Sign Out")';
-
-async function uiSignIn(page: Page, { email, password }: { email: string; password: string }) {
-  await page.goto('/profile');
-  await page.fill(EMAIL_SELECTOR, email);
-  await page.fill(PASSWORD_SELECTOR, password);
-  await page.click(SUBMIT_SELECTOR);
-  await page.waitForSelector(SIGNOUT_SELECTOR, { timeout: 10000 });
-}
 
 async function getStatValue(page: Page, label: string): Promise<string> {
   const statLocator = page.locator(`strong:text-is('${label}')`);
@@ -91,28 +80,28 @@ test.describe('Stats Isolation per User', () => {
     expect(updatedAInt).toBeGreaterThan(initialAInt);
     // Sign out User A
     await page.goto('/profile');
-    await page.click(SIGNOUT_SELECTOR);
-    await page.waitForSelector(EMAIL_SELECTOR, { timeout: 10000 });
+    await page.click('button[aria-label="Sign out"], button:has-text("Sign Out")');
+    await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     // User B: sign in, check stat
     await uiSignIn(page, USER_B);
     await page.goto('/analytics');
-    let statB = '';
+    let initialB = '';
     for (let i = 0; i < 10; i++) {
-      statB = await getStatValue(page, 'Quizzes Taken:') || '';
-      if (statB) break;
+      initialB = await getStatValue(page, 'Quizzes Taken:') || '';
+      if (initialB) break;
       await page.waitForTimeout(500);
     }
     /* eslint-disable no-undef */
-    console.log('User B stat:', statB);
+    console.log('User B stat:', initialB);
     /* eslint-enable no-undef */
-    const statBInt = parseInt(statB, 10) || 0;
+    const initialBInt = parseInt(initialB, 10) || 0;
     // User B's stat should not have changed due to User A's quiz
-    expect(statBInt).toBeLessThanOrEqual(initialAInt);
+    expect(initialBInt).toBeLessThanOrEqual(initialAInt);
 
     // Optionally: sign out and back in as User A to verify stats again
     await page.goto('/profile');
-    await page.click(SIGNOUT_SELECTOR);
-    await page.waitForSelector(EMAIL_SELECTOR, { timeout: 10000 });
+    await page.click('button[aria-label="Sign out"], button:has-text("Sign Out")');
+    await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     await uiSignIn(page, USER_A);
     await page.goto('/analytics');
     let finalA = '';
