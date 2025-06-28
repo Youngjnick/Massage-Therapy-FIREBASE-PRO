@@ -54,7 +54,7 @@ const QuizStartForm: React.FC<QuizStartFormProps> = (props) => {
 
   return (
     <>
-      <form data-testid="quiz-start-form" style={{ marginBottom: '1rem' }} onSubmit={e => {
+      <form data-testid="quiz-start-form" role="form" style={{ marginBottom: '1rem' }} onSubmit={e => {
         e.preventDefault();
         const validationError = validate();
         if (validationError) {
