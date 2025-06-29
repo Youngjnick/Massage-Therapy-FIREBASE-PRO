@@ -33,7 +33,7 @@ test.describe('Navigation and ARIA Accessibility Flow', () => {
       });
       await page.goto(route);
       // DEBUG: Print page content for troubleshooting blank page
-      // eslint-disable-next-line no-undef
+       
       // @ts-ignore
       // Print only the first 1000 characters for brevity
       const pageContent = (await page.content()).slice(0, 1000);

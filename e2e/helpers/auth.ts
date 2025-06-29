@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 // Import firebaseConfig from your app config
 import { firebaseConfig } from '../../src/firebase/firebaseConfig';
 
-/* eslint-disable */
+ 
 // @ts-nocheck
 
 // Add explicit types for Playwright helper
