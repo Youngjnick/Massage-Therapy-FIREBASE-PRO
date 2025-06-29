@@ -1,11 +1,11 @@
- 
 // @ts-nocheck
 // scripts/generateCustomToken.js
 // Usage: node scripts/generateCustomToken.js <uid>
 
 const admin = require('firebase-admin');
 const fs = require('fs');
-const serviceAccount = require('./serviceAccountKey.json');
+const path = require('path');
+const serviceAccount = require(path.join(__dirname, '../serviceAccountKey.json'));
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
