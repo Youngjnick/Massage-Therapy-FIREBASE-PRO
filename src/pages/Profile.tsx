@@ -15,6 +15,7 @@ const Profile: React.FC = () => {
   const [testEmail, setTestEmail] = useState('');
   const [testPassword, setTestPassword] = useState('');
   const [testSignInError, setTestSignInError] = useState<string | null>(null);
+  const [settingsLoaded, setSettingsLoaded] = useState(false);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
@@ -37,25 +38,29 @@ const Profile: React.FC = () => {
   // Load user settings from Firestore
   useEffect(() => {
     if (!user) return;
+    setSettingsLoaded(false); // Reset when user changes
+    console.log('[DEBUG] Loading user settings for:', user.uid);
     getUserSettings(user.uid).then(settings => {
-      if (!settings) return; // null check
+      console.log('[DEBUG] Loaded settings:', settings);
+      if (!settings) {
+        setSettingsLoaded(true);
+        return; // null check
+      }
       setDarkMode(!!settings.darkMode);
       setAriaSound(settings.ariaSound !== false);
       setHaptic(!!settings.haptic);
       setShowExplanations(settings.showExplanations !== false);
+      setSettingsLoaded(true);
     });
   }, [user]);
 
-  // Save settings to Firestore when changed
+  // Save settings to Firestore when changed, but only after settingsLoaded
   useEffect(() => {
-    if (!user) return;
-    setUserSettings(user.uid, {
-      darkMode,
-      ariaSound,
-      haptic,
-      showExplanations,
-    });
-  }, [user, darkMode, ariaSound, haptic, showExplanations]);
+    if (!user || !settingsLoaded) return;
+    const settings = { darkMode, ariaSound, haptic, showExplanations };
+    console.log('[DEBUG] Saving user settings for:', user.uid, settings);
+    setUserSettings(user.uid, settings);
+  }, [user, darkMode, ariaSound, haptic, showExplanations, settingsLoaded]);
 
   const handleSignIn = async () => {
     try {
@@ -95,21 +100,28 @@ const Profile: React.FC = () => {
           {user.email?.split('@')[0]}
         </div>
       )}
-      <div style={{ margin: '2rem auto', maxWidth: 340, textAlign: 'left' }}>
-        <h3>Settings</h3>
-        <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={darkMode} onChange={e => setDarkMode(e.target.checked)} aria-label="Toggle dark mode" /> Dark Mode
-        </label>
-        <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={ariaSound} onChange={e => setAriaSound(e.target.checked)} aria-label="Toggle aria sound" /> Aria Sound
-        </label>
-        <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={haptic} onChange={e => setHaptic(e.target.checked)} aria-label="Toggle haptic feedback" /> Haptic Feedback
-        </label>
-        <label style={{ display: 'block', marginBottom: 8 }}>
-          <input type="checkbox" checked={showExplanations} onChange={e => setShowExplanations(e.target.checked)} aria-label="Toggle show explanations" /> Show Explanations
-        </label>
-      </div>
+      {/* Only render settings after settingsLoaded is true */}
+      {settingsLoaded ? (
+        <div style={{ margin: '2rem auto', maxWidth: 340, textAlign: 'left' }}>
+          <h3>Settings</h3>
+          <label style={{ display: 'block', marginBottom: 8 }}>
+            <input type="checkbox" checked={darkMode} onChange={e => setDarkMode(e.target.checked)} aria-label="Toggle dark mode" /> Dark Mode
+          </label>
+          <label style={{ display: 'block', marginBottom: 8 }}>
+            <input type="checkbox" checked={ariaSound} onChange={e => setAriaSound(e.target.checked)} aria-label="Toggle aria sound" /> Aria Sound
+          </label>
+          <label style={{ display: 'block', marginBottom: 8 }}>
+            <input type="checkbox" checked={haptic} onChange={e => setHaptic(e.target.checked)} aria-label="Toggle haptic feedback" /> Haptic Feedback
+          </label>
+          <label style={{ display: 'block', marginBottom: 8 }}>
+            <input type="checkbox" checked={showExplanations} onChange={e => setShowExplanations(e.target.checked)} aria-label="Toggle show explanations" /> Show Explanations
+          </label>
+        </div>
+      ) : (
+        <div style={{ margin: '2rem auto', maxWidth: 340, textAlign: 'center' }}>
+          <span>Loading settings…</span>
+        </div>
+      )}
       <div style={{ marginTop: 32 }}>
         {user ? (
           <button onClick={handleSignOut} aria-label="Sign out">Sign Out</button>
