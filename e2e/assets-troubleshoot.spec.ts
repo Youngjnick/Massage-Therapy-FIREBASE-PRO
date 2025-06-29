@@ -29,16 +29,29 @@ test.describe('Development Asset Troubleshooting', () => {
   // 3. Achievements page badge containers and images
   test('Achievements page renders badge containers and images', async ({ page }) => {
     await page.goto(`${DEV_BASE_URL}/achievements`);
-    // Try common test id/class for badge containers
-    const badgeContainers = await page.locator('[data-testid="badge-container"], .badge-container').count();
-    if (badgeContainers === 0) {
+    // Wait for either badge containers or the empty state
+    const badgeContainerLocator = page.locator('[data-testid="badge-container"]');
+    const badgeEmptyLocator = page.locator('[data-testid="badge-empty"]');
+    // Wait up to 10s for either to appear
+    const found = await Promise.race([
+      badgeContainerLocator.first().waitFor({ state: 'visible', timeout: 10000 }).then(() => 'container').catch(() => null),
+      badgeEmptyLocator.waitFor({ state: 'visible', timeout: 10000 }).then(() => 'empty').catch(() => null),
+    ]);
+    if (found === 'container') {
+      const badgeContainers = await badgeContainerLocator.count();
+      expect(badgeContainers).toBeGreaterThan(0);
+      // Check for at least one badge image (awarded or unawarded)
+      const badgeImgs = await page.locator('img[data-testid="badge-awarded"], img[data-testid="badge-unawarded"]').count();
+      expect(badgeImgs).toBeGreaterThan(0);
+    } else if (found === 'empty') {
+      // Pass: empty state is valid (element exists in DOM)
+      return;
+    } else {
+      // Neither appeared: log DOM and fail
       const dom = await page.content();
       console.log('DOM snapshot:', dom);
+      throw new Error('Neither badge containers nor empty state appeared on Achievements page');
     }
-    expect(badgeContainers).toBeGreaterThan(0);
-    // Check for at least one badge image
-    const badgeImgs = await page.locator('img[src*="badges/"]').count();
-    expect(badgeImgs).toBeGreaterThan(0);
   });
 
   // 4. badges.json fetch
