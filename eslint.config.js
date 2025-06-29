@@ -126,12 +126,10 @@ export default [
       'dist/',
       'dataconnect-generated/',
       'node_modules/',
-      'playwright.config.ts',
-      'vite.config.ts',
-      'e2e/tsconfig.json',
-      'src/__tests__/static.badgeimages-dist.test.ts',
-      'src/__tests__/static.badgeimages-public.test.ts',
-      'upload_questions_to_firestore_2.js', // Exclude problematic ESM import assertion file
+      'build/',
+      'coverage/',
+      '.env',
+      '*.log',
     ],
   },
   {
