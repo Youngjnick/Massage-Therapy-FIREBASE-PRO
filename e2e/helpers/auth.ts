@@ -1,7 +1,11 @@
 // @ts-nocheck
 // e2e/helpers/auth.ts
-import fs from 'fs';
+import { fileURLToPath } from 'url';
 import path from 'path';
+import fs from 'fs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Import firebaseConfig from your app config
 import { firebaseConfig } from '../../src/firebase/firebaseConfig';
