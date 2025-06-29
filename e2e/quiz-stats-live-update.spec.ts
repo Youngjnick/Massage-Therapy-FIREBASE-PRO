@@ -151,7 +151,6 @@ test.describe('Quiz Stats Live Update', () => {
       expect(statsChanged).toBe(true);
     } catch (err) {
       // Print error for debugging
-      // eslint-disable-next-line no-undef
       console.error('Test failed:', err);
       throw err;
     }
