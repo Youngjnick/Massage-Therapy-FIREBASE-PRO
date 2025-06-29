@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // scripts/createTestUser.js
 // Run with: node scripts/createTestUser.js
 
