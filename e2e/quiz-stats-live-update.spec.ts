@@ -1,23 +1,19 @@
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 
-test.describe.skip('Quiz Stats Live Update', () => {
+test.describe('Quiz Stats Live Update', () => {
   test('Stats and topic stats update after quiz completion', async ({ page }) => {
     test.setTimeout(60000);
     try {
       await uiSignIn(page);
       await page.goto('/analytics');
-      test.skip(page.isClosed(), 'Page closed after /analytics navigation');
       await page.waitForSelector('h1');
       const initialQuizzesTaken = await page.locator('text=Quizzes Taken:').textContent();
       const initialCorrect = await page.locator('text=Correct Answers:').textContent();
       const initialAccuracy = await page.locator('text=Accuracy:').textContent();
       const initialTopicStats = await page.locator('[data-testid="quiz-topic-progress"]').innerText().catch(() => '');
-      test.skip(page.isClosed(), 'Page closed after reading analytics stats');
       await page.waitForTimeout(1000);
-      test.skip(page.isClosed(), 'Page closed after waitForTimeout');
       await page.goto('/quiz');
-      test.skip(page.isClosed(), 'Page closed after /quiz navigation');
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
       await page.getByLabel('Quiz Length').fill('2');
       await page.getByRole('button', { name: /start/i }).click();
@@ -29,9 +25,7 @@ test.describe.skip('Quiz Stats Live Update', () => {
       }
       await expect(page.getByTestId('quiz-results')).toBeVisible();
       await page.goto('/analytics');
-      test.skip(page.isClosed(), 'Page closed after /analytics navigation (post-quiz)');
       await page.waitForTimeout(2000);
-      test.skip(page.isClosed(), 'Page closed after waitForTimeout (post-quiz)');
       const updatedQuizzesTaken = await page.locator('text=Quizzes Taken:').textContent();
       const updatedCorrect = await page.locator('text=Correct Answers:').textContent();
       const updatedAccuracy = await page.locator('text=Accuracy:').textContent();
@@ -41,7 +35,9 @@ test.describe.skip('Quiz Stats Live Update', () => {
       expect(updatedAccuracy).not.toBe(initialAccuracy);
       expect(updatedTopicStats).not.toBe(initialTopicStats);
     } catch (err) {
-      test.skip(page.isClosed(), 'Page was closed unexpectedly, possibly due to backend/network issues. Skipping test.');
+      // Print error for debugging
+      // eslint-disable-next-line no-undef
+      console.error('Test failed:', err);
       throw err;
     }
   });
