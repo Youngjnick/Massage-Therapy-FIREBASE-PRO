@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /* eslint-env node */
 // ESM-compatible upload_questions_to_firestore_2.js
 // Usage: node upload_questions_to_firestore_2.js
@@ -5,21 +6,54 @@
 import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
 const serviceAccount = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../serviceAccountKey.json'), 'utf8')
 );
 import readline from 'readline';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+
+// Prompt for emulator or production
+async function promptTarget() {
+  return new Promise((resolve) => {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout,
+    });
+    rl.question('Upload to Firestore emulator (e) or production (p)? [e/p]: ', (answer) => {
+      rl.close();
+      const val = answer.trim().toLowerCase();
+      if (val === 'e' || val === 'p') {
+        resolve(val);
+      } else {
+        console.log('Invalid input. Please enter "e" or "p".');
+        process.exit(1);
+      }
+    });
+  });
+}
+
+const target = await promptTarget();
 
 // Initialize Firebase Admin
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
 const db = admin.firestore();
+
+if (target === 'e') {
+  process.env.FIRESTORE_EMULATOR_HOST = 'localhost:8080';
+  db.settings({ host: 'localhost:8080', ssl: false });
+  console.log('Uploading to Firestore Emulator at localhost:8080');
+} else {
+  console.log('Uploading to Firestore Production');
+}
+
+// Correctly resolve the questions directory from the project root
+const questionsDir = path.join(__dirname, '../src/data/questions');
 
 // Recursively walk directory for .json files
 function walk(dir, filelist = []) {
@@ -32,19 +66,6 @@ function walk(dir, filelist = []) {
     }
   });
   return filelist;
-}
-
-async function confirmUpload() {
-  return new Promise((resolve) => {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout,
-    });
-    rl.question('Are you sure you want to upload questions to Firestore? (y/n): ', (answer) => {
-      rl.close();
-      resolve(answer.trim().toLowerCase() === 'y');
-    });
-  });
 }
 
 function validateQuestion(q, file, idx) {
@@ -136,7 +157,6 @@ function canonicalizeQuestion(q) {
 }
 
 async function uploadQuestions() {
-  const questionsDir = path.join(__dirname, 'src/data/questions');
   const files = walk(questionsDir);
   let total = 0;
   let validationErrors = [];
@@ -221,11 +241,4 @@ async function uploadQuestions() {
   process.exit(0);
 }
 
-(async () => {
-  const confirmed = await confirmUpload();
-  if (!confirmed) {
-    console.log('Upload cancelled. No questions were uploaded.');
-    process.exit(0);
-  }
-  await uploadQuestions();
-})();
+uploadQuestions();
