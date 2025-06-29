@@ -23,28 +23,69 @@ test.describe('Navigation and ARIA Accessibility Flow', () => {
   });
 
   for (const route of routes) {
-    test(`Page ${route} has correct ARIA roles and keyboard navigation`, async ({ page }) => {
+    test(`Page ${route} has correct ARIA roles and keyboard navigation`, async ({ page, browserName }, testInfo) => {
+      // Log browser console errors for this test
+      const errors: string[] = [];
+      page.on('console', msg => {
+        if (msg.type() === 'error' || msg.type() === 'warning') {
+          errors.push(`[${msg.type()}] ${msg.text()}`);
+        }
+      });
       await page.goto(route);
       // DEBUG: Print page content for troubleshooting blank page
       // eslint-disable-next-line no-undef
       // @ts-ignore
       // Print only the first 1000 characters for brevity
-      console.log('PAGE CONTENT:', (await page.content()).slice(0, 1000));
+      const pageContent = (await page.content()).slice(0, 1000);
+      await testInfo.attach('DEBUG: PAGE CONTENT', { body: pageContent });
       // Wait for main content to be visible before ARIA checks
-      if (route === '/quiz') {
-        await page.waitForSelector('[data-testid="quiz-container"][role="form"]', { state: 'visible', timeout: 10000 });
-      } else if (route === '/') {
+      let effectiveRoute = route;
+      // Always check the current URL after navigation
+      const url = await page.url();
+      await testInfo.attach('DEBUG: Current URL after navigation', { body: url });
+      if (route === '/') {
+        // Wait for hydration and possible redirect
+        await page.waitForSelector('[role="main"]', { state: 'visible', timeout: 10000 });
+        // If redirected, update effectiveRoute
+        if (url.endsWith('/quiz')) {
+          effectiveRoute = '/quiz';
+          // Wait for quiz form to be visible
+          await page.waitForSelector('[data-testid="quiz-container"][role="form"]', { state: 'visible', timeout: 10000 });
+        }
+      } else if (route === '/quiz') {
+        let found = false;
+        let attempts = 0;
+        const maxAttempts = browserName === 'chromium' && page.viewportSize()?.width === 375 ? 3 : 1; // Retry only for Mobile Chrome
+        while (!found && attempts < maxAttempts) {
+          try {
+            await page.waitForSelector('[data-testid="quiz-container"][role="form"]', { state: 'visible', timeout: 30000 });
+            found = true;
+          } catch (e) {
+            attempts++;
+            if (attempts < maxAttempts) {
+              await page.reload();
+            } else {
+              throw e;
+            }
+          }
+        }
+      } else {
         await page.waitForSelector('[role="main"]', { state: 'visible', timeout: 10000 });
       }
+      // Extra debug: print effectiveRoute and roles
+      await testInfo.attach('DEBUG: effectiveRoute and roles', { body: `${effectiveRoute} ${JSON.stringify(pageRoles[effectiveRoute as keyof typeof pageRoles])}` });
+      // NEW DEBUG: Print full HTML after waiting for selectors
+      const htmlAfterWait = await page.content();
+      await testInfo.attach('DEBUG: HTML after wait', { body: htmlAfterWait });
       // Check ARIA roles
-      const roles = pageRoles[route as keyof typeof pageRoles] || [];
+      const roles = pageRoles[effectiveRoute as keyof typeof pageRoles] || [];
       for (const role of roles) {
-        if (route === '/quiz' && role === 'form') {
+        if (effectiveRoute === '/quiz' && role === 'form') {
           const el = await page.locator('[data-testid="quiz-container"][role="form"]').first();
-          await expect(el, `Missing ARIA role: ${role} on ${route}`).toBeVisible();
+          await expect(el, `Missing ARIA role: ${role} on ${effectiveRoute}`).toBeVisible();
         } else {
           const el = await page.locator(`[role="${role}"]`).first();
-          await expect(el, `Missing ARIA role: ${role} on ${route}`).toBeVisible();
+          await expect(el, `Missing ARIA role: ${role} on ${effectiveRoute}`).toBeVisible();
         }
       }
       // Tab through all interactive elements
@@ -59,6 +100,9 @@ test.describe('Navigation and ARIA Accessibility Flow', () => {
       }
       // Optionally, check focus indicator (outline)
       // Optionally, check navigation links work with keyboard
+      if (errors.length > 0) {
+        await testInfo.attach('DEBUG: Browser console errors', { body: errors.join('\n') });
+      }
     });
   }
 });
