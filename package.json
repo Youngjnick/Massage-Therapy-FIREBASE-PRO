@@ -5,12 +5,12 @@
     "deploy": "gh-pages -d dist",
     "test": "jest",
     "pretest:e2e": "lsof -ti:5173 | xargs kill -9 || true",
-    "test:e2e": "start-server-and-test dev http://localhost:5173 playwright:test",
+    "test:e2e": "./scripts/run_playwright_and_capture_output.sh",
     "test:e2e:headed": "playwright test --headed",
     "dev": "vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "emulators": "npx firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth",
-    "playwright:test": "playwright test"
+    "playwright:test": "npx playwright test"
   },
   "devDependencies": {
     "@babel/core": "^7.27.4",
