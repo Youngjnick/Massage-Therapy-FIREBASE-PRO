@@ -325,4 +325,12 @@ export default [
       'tmp-worktree-*/**',
     ],
   },
+  {
+    files: ['vite.config.ts'],
+    languageOptions: {
+      globals: {
+        process: 'readonly',
+      },
+    },
+  },
 ];

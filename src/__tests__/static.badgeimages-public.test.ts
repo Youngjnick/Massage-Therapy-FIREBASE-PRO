@@ -1,5 +1,4 @@
 /* eslint-env node, jest */
-/* global process */
 import fs from 'fs';
 import path from 'path';
 import badges from '../../public/badges/badges.json';
