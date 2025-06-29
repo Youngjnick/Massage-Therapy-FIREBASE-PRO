@@ -5,7 +5,9 @@ for PORT in $PORTS; do
   PIDS=$(lsof -ti tcp:$PORT)
   if [ -n "$PIDS" ]; then
     echo "Killing processes on port $PORT..."
-    kill -9 $PIDS
+    for PID in ${(f)PIDS}; do
+      kill -9 $PID
+    done
   fi
 done
 echo "Done."
