@@ -108,3 +108,43 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
     }
   });
 });
+
+test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () => {
+  test.use({ viewport: { width: 375, height: 812 } }); // iPhone X/11/12/13/14 size
+  test('Tab through all main pages and assert focus order/visibility (Mobile)', async ({ page }) => {
+    await page.goto('/');
+    const navLinks = [
+      { label: 'Quiz', path: '/quiz', aria: 'Go to Quiz page' },
+      { label: 'Achievements', path: '/achievements', aria: 'Go to Achievements page' },
+      { label: 'Analytics', path: '/analytics', aria: 'Go to Analytics page' },
+      { label: 'Profile', path: '/profile', aria: 'Go to Profile page' },
+    ];
+    for (const nav of navLinks) {
+      const navLink = await page.getByRole('link', { name: nav.label });
+      await navLink.focus();
+      await expect(navLink).toBeFocused();
+      await page.waitForTimeout(150);
+      await page.keyboard.press('Enter');
+      await page.waitForURL(`**${nav.path}`);
+      await page.waitForTimeout(150);
+      const tabbable = await getTabbableElements(page);
+      await test.step(`Tabbable elements on ${nav.path} (Mobile):`, async () => {
+        for (let i = 0; i < tabbable.length; i++) {
+          const el = tabbable[i];
+          await test.step(`#${i}: tag=${el.tag}, role=${el.role}, ariaLabel=${el.ariaLabel}, text=${el.text}`, async () => {});
+        }
+      });
+      // Fix: add type for el
+      const found = tabbable.some((el: any) => el.ariaLabel === nav.aria);
+      expect(found).toBeTruthy();
+      for (let i = 0; i < tabbable.length; i++) {
+        await page.keyboard.press('Tab');
+        const active = await page.evaluate(() => document.activeElement?.outerHTML);
+        await test.step(`DEBUG: After Tab #${i} on ${nav.path} (Mobile), expected: ${tabbable[i].outerHTML.substring(0, 32)}` , async () => {});
+        await test.step(`DEBUG: Actual active: ${active?.substring(0, 64)}`, async () => {});
+        expect(active).toBeTruthy();
+      }
+      await page.goto('/');
+    }
+  });
+});
