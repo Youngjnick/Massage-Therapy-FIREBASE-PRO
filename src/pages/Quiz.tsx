@@ -95,6 +95,7 @@ const Quiz: React.FC = () => {
     getQuestions()
       .then((qs) => {
         setQuestions(qs);
+        console.log('[E2E DEBUG] getQuestions resolved', qs.length, 'questions');
         // Extract unique topics (use the last topic for each question)
         const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
         const sorted = [...topics].sort((a, b) => a.localeCompare(b));
@@ -102,11 +103,15 @@ const Quiz: React.FC = () => {
         // Set default topic to the first alphabetically
         if (!selectedTopic && sorted.length > 0) setSelectedTopic(sorted[0]);
       })
-      .catch(() => {
+      .catch((err) => {
         setWarning('Error: Failed to load questions. Could not load questions.');
         setError('Error: Failed to load questions. Could not load questions.');
+        console.error('[E2E DEBUG] getQuestions failed', err);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        setLoading(false);
+        console.log('[E2E DEBUG] setLoading(false) after getQuestions');
+      });
 
     // Load bookmarks from Firebase on start (replace 'userId' with real user id)
     getBookmarks('demoUser');

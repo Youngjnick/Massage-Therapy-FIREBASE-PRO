@@ -48,7 +48,14 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
       await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
     } catch {
       const html = await page.content();
+      const logsText = logs.join('\n');
       console.error('Quiz results not visible after finishing (mobile viewport). Page HTML:', html);
+      console.error('Browser console logs:', logsText);
+      // Attach debug info for Playwright report
+      if (test.info) {
+        await test.info().attach('page-html', { body: html, contentType: 'text/html' });
+        await test.info().attach('console-logs', { body: logsText, contentType: 'text/plain' });
+      }
       throw new Error('Quiz results not visible after finishing (mobile viewport).');
     }
   });
