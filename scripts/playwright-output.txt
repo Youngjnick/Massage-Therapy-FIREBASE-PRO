@@ -1,0 +1,14 @@
+
+Running 196 tests using 1 worker
+
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (1.2s)
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (696ms)
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (605ms)
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (607ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (647ms)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (3.9s)
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:89:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (607ms)
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:114:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (3.4s)
+  -  9 [Desktop Chrome] › e2e/app.critical-flow.spec.ts:5:6 › should start quiz and focus first option
+Navigating to home page...
+Filling Quiz Length...
