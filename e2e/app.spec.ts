@@ -289,7 +289,7 @@ test('should show fallback badge image if badge image fails to load', async ({ p
   // Open the badge modal by clicking the badge
   await page.getByTestId('badge-container').first().click();
   // The fallback image should appear in the modal
-  const fallbackImg = page.locator('img[src*="badges/badge_test.png"]');
+  const fallbackImg = page.locator('img[data-testid="badge-image"][src*="badges/badge_test.png"]');
   await expect(fallbackImg).toBeVisible();
   const naturalWidth = await fallbackImg.evaluate((el) => {
     // @ts-ignore

@@ -8,7 +8,7 @@ const Achievements: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const lastFocusedBadgeRef = useRef<HTMLDivElement | null>(null);
 
-  const fallbackUrl = `${import.meta.env.BASE_URL}badges/fallback.png`;
+  const fallbackUrl = `${import.meta.env.BASE_URL}badges/badge_test.png`;
 
   // Preload fallback image once
   useEffect(() => {

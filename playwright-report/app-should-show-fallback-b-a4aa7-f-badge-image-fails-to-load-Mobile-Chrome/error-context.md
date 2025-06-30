@@ -23,10 +23,17 @@
         - /url: /profile
         - text: Profile
 - main:
-  - form:
-    - heading "Quiz" [level=1]
-    - status "Loading"
-    - text: Loading...
+  - heading "Achievements" [level=2]
+  - 'button "Open badge modal for badge: Broken Badge"':
+    - img "Broken Badge"
+    - text: Broken Badge
+  - button "Close Modal": ×
+  - img "Broken Badge"
+  - heading "Broken Badge" [level=2]
+  - paragraph: This badge image does not exist
+  - strong: "Criteria:"
+  - text: nonexistent_badge Earned!
+  - button "Close badge modal": Close
 - contentinfo:
   - textbox "Search questions"
 ```
