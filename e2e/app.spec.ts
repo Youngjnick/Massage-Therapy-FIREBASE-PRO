@@ -1,3 +1,4 @@
+/* global console */
 import { test, expect } from '@playwright/test';
 
 test('should reset quiz and focus first option after restart', async ({ page }) => {
@@ -10,6 +11,15 @@ test('should reset quiz and focus first option after restart', async ({ page }) 
   // After reset, fill the start form again and start the quiz
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
+
+  // Wait for loading spinner to disappear (if present)
+  try {
+    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+  } catch {
+    console.error('Quiz loading spinner did not disappear. Page HTML:', await page.content());
+    throw new Error('Quiz did not finish loading.');
+  }
+
   // Wait for the first radio input to be visible
   const firstOption = page.getByTestId('quiz-option').first();
   const input = await firstOption.locator('input[type="radio"]');
@@ -54,8 +64,22 @@ test('should show topic stats in results', async ({ page }) => {
   await page.getByRole('button', { name: /start/i }).click();
   await page.getByTestId('quiz-option').first().click();
   await page.getByRole('button', { name: /finish/i }).click();
-  // Check for topic progress bar (topic name and progress bar)
-  // Use a more specific selector for the topic stats
+
+  // Wait for loading spinner to disappear (if present)
+  try {
+    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+  } catch {
+    console.error('Quiz loading spinner did not disappear after finishing quiz. Page HTML:', await page.content());
+    throw new Error('Quiz did not finish loading after finishing.');
+  }
+
+  // Wait for topic stats to appear
+  try {
+    await page.waitForSelector('[data-testid="quiz-topic-progress"]', { timeout: 20000 });
+  } catch {
+    console.error('Topic stats did not appear. Page HTML:', await page.content());
+    throw new Error('Topic stats not found in results.');
+  }
   await expect(page.getByTestId('quiz-topic-progress')).toBeVisible();
   // Optionally, check for a topic name from your test data, e.g. 'Anatomy' or similar
 });
