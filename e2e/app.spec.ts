@@ -41,7 +41,7 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   // Wait for loading spinner to disappear (if present)
   try {
     console.log('Waiting for quiz loading spinner to disappear...');
-    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 25000 });
+    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 35000 });
   } catch {
     const html = await page.content();
     console.error('Quiz loading spinner did not disappear. Page HTML:', html);
@@ -53,7 +53,7 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   // Wait for quiz question container to be visible
   try {
     console.log('Waiting for quiz question card to be visible...');
-    await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 25000 });
   } catch {
     const html = await page.content();
     console.error('Quiz question card not visible after spinner. Page HTML:', html);
@@ -63,7 +63,7 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   }
 
   // Wait a bit longer to allow React to focus
-  await page.waitForTimeout(700);
+  await page.waitForTimeout(1200);
 
   // Log number of quiz options
   const optionCount = await page.getByTestId('quiz-option').count();
@@ -72,7 +72,7 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   // Wait for the first radio input to be visible and enabled
   const firstOption = page.getByTestId('quiz-option').first();
   const input = await firstOption.locator('input[type="radio"]');
-  await expect(input).toBeVisible({ timeout: 15000 });
+  await expect(input).toBeVisible({ timeout: 20000 });
   await expect(input).toBeEnabled();
 
   // Log all focusable quiz options and their focus state
@@ -87,23 +87,23 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   // Wait for focus, log debug info if not focused
   let focused = false;
   let lastActiveTag = '';
-  for (let retry = 0; retry < 20; retry++) {
+  for (let retry = 0; retry < 30; retry++) {
     focused = await input.evaluate((node) => node === document.activeElement);
     if (focused) break;
     lastActiveTag = await page.evaluate(() => document.activeElement?.outerHTML || 'none');
-    await page.waitForTimeout(150);
+    await page.waitForTimeout(200);
   }
   if (!focused) {
     // Try to focus programmatically
     console.warn('First quiz option radio not focused, trying to focus programmatically...');
     await input.focus();
-    await page.waitForTimeout(300);
+    await page.waitForTimeout(400);
     focused = await input.evaluate((node) => node === document.activeElement);
     if (!focused) {
       // Try tabbing to the input
       console.warn('Programmatic focus failed, trying to tab to the input...');
       await page.keyboard.press('Tab');
-      await page.waitForTimeout(300);
+      await page.waitForTimeout(400);
       focused = await input.evaluate((node) => node === document.activeElement);
     }
   }

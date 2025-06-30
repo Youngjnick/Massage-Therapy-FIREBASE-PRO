@@ -25,6 +25,10 @@ test('badges.json has correct criteria and image fields', async ({ request }) =>
 test('badge_test image is visible and loads', async ({ page }) => {
   await page.goto(DEV_BASE_URL + '/achievements');
   const testBadgeImg = await page.locator('img[src*="badge_test.png"]');
+  // Scroll into view for mobile or if offscreen
+  if (await testBadgeImg.count() > 0) {
+    await testBadgeImg.first().scrollIntoViewIfNeeded();
+  }
   if (!(await testBadgeImg.isVisible())) {
     const html = await page.content();
     console.error('badge_test.png image not visible on /achievements. Page HTML:', html);
