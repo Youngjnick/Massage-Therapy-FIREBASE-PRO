@@ -1,1 +1,27 @@
-{"kind":"identitytoolkit#DownloadAccountResponse","users":[{"localId":"W91attaqQvTDV3y0DMVLp4QcR9rc","createdAt":"1751232520349","lastLoginAt":"1751232520349","displayName":"Test User","passwordHash":"fakeHash:salt=fakeSaltH5Q7B2mwtkaQbsySYoQw:password=test1234","salt":"fakeSaltH5Q7B2mwtkaQbsySYoQw","passwordUpdatedAt":1751236000417,"providerUserInfo":[{"providerId":"password","email":"test1234@gmail.com","federatedId":"test1234@gmail.com","rawId":"test1234@gmail.com","displayName":"Test User"}],"validSince":"1751236000","email":"test1234@gmail.com","emailVerified":false,"disabled":false}]}
+{
+  "kind": "identitytoolkit#DownloadAccountResponse",
+  "users": [
+    {
+      "localId": "W91attaqQvTDV3y0DMVLp4QcR9rc",
+      "createdAt": "1751232520349",
+      "lastLoginAt": "1751232520349",
+      "displayName": "Test User",
+      "passwordHash": "fakeHash:salt=fakeSaltH5Q7B2mwtkaQbsySYoQw:password=test1234",
+      "salt": "fakeSaltH5Q7B2mwtkaQbsySYoQw",
+      "passwordUpdatedAt": 1751246391413,
+      "providerUserInfo": [
+        {
+          "providerId": "password",
+          "email": "test1234@gmail.com",
+          "federatedId": "test1234@gmail.com",
+          "rawId": "test1234@gmail.com",
+          "displayName": "Test User"
+        }
+      ],
+      "validSince": "1751246391",
+      "email": "test1234@gmail.com",
+      "emailVerified": false,
+      "disabled": false
+    }
+  ]
+}

@@ -30,7 +30,12 @@ async function uiSignIn(page: Page) {
 test.describe('Accessibility: ARIA roles and labels', () => {
   test('Main navigation and buttons have correct ARIA roles and labels', async ({ page }) => {
     await uiSignIn(page);
-    await page.goto('/');
+    await page.goto('/quiz?e2e=1');
+
+    // Wait for the quiz start form to be present before looking for the Start button
+    await page.waitForSelector('[data-testid="quiz-container"] form', { timeout: 15000 });
+    const startButton = page.getByRole('button', { name: /start/i });
+    await expect(startButton).toBeVisible({ timeout: 10000 });
 
     // Main navigation
     const nav = page.getByRole('navigation');
@@ -48,9 +53,9 @@ test.describe('Accessibility: ARIA roles and labels', () => {
       await quizLengthInput.first().fill('1');
     }
     // Wait for Start button
-    const startButton = page.getByRole('button', { name: /start/i });
-    await expect(startButton).toBeVisible();
-    await startButton.click();
+    const startButton2 = page.getByRole('button', { name: /start/i });
+    await expect(startButton2).toBeVisible();
+    await startButton2.click();
 
     // Quiz options (radio buttons) should now be present
     const quizOptions = page.getByRole('radio');
