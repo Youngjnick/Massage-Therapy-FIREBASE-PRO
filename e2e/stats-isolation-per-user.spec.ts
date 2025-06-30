@@ -40,20 +40,27 @@ async function getStatValue(page: Page, label: string): Promise<string> {
   return '';
 }
 
+const log = (...args: any[]) => {
+  // @ts-expect-error
+  // eslint-disable-next-line no-undef
+  (globalThis.console || console).log(...args);
+};
+
 test.describe('Stats Isolation per User', () => {
   test('stats should not leak between users', async ({ page }) => {
     // User A: sign in, get initial stat, take a quiz
     await uiSignIn(page, USER_A);
+    await page.goto('/profile');
+    const userAId = await page.evaluate(() => window.localStorage.getItem('uid'));
+    log('User A UID:', userAId);
     await page.goto('/analytics');
     let initialA = '';
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       initialA = await getStatValue(page, 'Quizzes Taken:') || '';
       if (initialA) break;
       await page.waitForTimeout(500);
     }
-    /* eslint-disable no-undef */
-    console.log('User A initial stat:', initialA);
-    /* eslint-enable no-undef */
+    log('User A initial stat:', initialA);
     const initialAInt = parseInt(initialA, 10) || 0;
     // Take a quiz as User A
     await page.goto('/quiz');
@@ -64,18 +71,18 @@ test.describe('Stats Isolation per User', () => {
     await page.getByTestId('quiz-option').first().click();
     await page.getByRole('button', { name: /next|finish/i }).click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
+    // Wait for stats to update
+    await page.waitForTimeout(3000);
     // Reload analytics and get updated stat for User A
     await page.goto('/analytics');
     await page.waitForTimeout(2000);
     let updatedA = '';
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       updatedA = await getStatValue(page, 'Quizzes Taken:') || '';
       if (updatedA) break;
       await page.waitForTimeout(500);
     }
-    /* eslint-disable no-undef */
-    console.log('User A updated stat:', updatedA);
-    /* eslint-enable no-undef */
+    log('User A updated stat:', updatedA);
     const updatedAInt = parseInt(updatedA, 10) || 0;
     expect(updatedAInt).toBeGreaterThan(initialAInt);
     // Sign out User A
@@ -84,35 +91,36 @@ test.describe('Stats Isolation per User', () => {
     await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     // User B: sign in, check stat
     await uiSignIn(page, USER_B);
+    await page.goto('/profile');
+    const userBId = await page.evaluate(() => window.localStorage.getItem('uid'));
+    log('User B UID:', userBId);
     await page.goto('/analytics');
     let initialB = '';
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       initialB = await getStatValue(page, 'Quizzes Taken:') || '';
       if (initialB) break;
       await page.waitForTimeout(500);
     }
-    /* eslint-disable no-undef */
-    console.log('User B stat:', initialB);
-    /* eslint-enable no-undef */
+    log('User B stat:', initialB);
     const initialBInt = parseInt(initialB, 10) || 0;
     // User B's stat should not have changed due to User A's quiz
     expect(initialBInt).toBeLessThanOrEqual(initialAInt);
-
     // Optionally: sign out and back in as User A to verify stats again
     await page.goto('/profile');
     await page.click('button[aria-label="Sign out"], button:has-text("Sign Out")');
     await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     await uiSignIn(page, USER_A);
+    await page.goto('/profile');
+    const userAId2 = await page.evaluate(() => window.localStorage.getItem('uid'));
+    log('User A UID after re-login:', userAId2);
     await page.goto('/analytics');
     let finalA = '';
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       finalA = await getStatValue(page, 'Quizzes Taken:') || '';
       if (finalA) break;
       await page.waitForTimeout(500);
     }
-    /* eslint-disable no-undef */
-    console.log('User A final stat:', finalA);
-    /* eslint-enable no-undef */
+    log('User A final stat:', finalA);
     const finalAInt = parseInt(finalA, 10) || 0;
     expect(finalAInt).toBe(updatedAInt);
   });

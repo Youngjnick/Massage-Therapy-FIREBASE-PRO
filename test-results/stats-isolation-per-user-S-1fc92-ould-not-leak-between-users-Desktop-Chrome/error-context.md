@@ -23,17 +23,20 @@
         - /url: /profile
         - text: Profile
 - main:
-  - heading "Achievements" [level=2]
-  - 'button "Open badge modal for badge: Broken Badge"':
-    - img "Broken Badge"
-    - text: Broken Badge
-  - button "Close Modal": ×
-  - img "Broken Badge"
-  - heading "Broken Badge" [level=2]
-  - paragraph: This badge image does not exist
-  - strong: "Criteria:"
-  - text: nonexistent_badge Earned!
-  - button "Close badge modal": Close
+  - heading "Analytics" [level=1]
+  - strong: "Quizzes Taken:"
+  - text: "6"
+  - strong: "Correct Answers:"
+  - text: 0 / 10
+  - strong: "Accuracy:"
+  - text: 0%
+  - strong: "Current Streak:"
+  - text: 0 days
+  - strong: "Badges Earned:"
+  - text: "0"
+  - heading "Topic Breakdown" [level=3]
+  - text: abdominal_muscle_origins 0 / 10 correct
+  - heading "Quiz Activity (Last 14 Days)" [level=3]
 - contentinfo:
   - textbox "Search questions"
 ```
