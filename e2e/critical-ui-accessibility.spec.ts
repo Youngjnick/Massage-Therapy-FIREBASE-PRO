@@ -6,6 +6,14 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     test.setTimeout(60000); // Increase timeout for this test
     await page.setViewportSize({ width: 375, height: 812 }); // iPhone X size
     await page.goto('/');
+    // Wait for quiz loading spinner to disappear (if present)
+    try {
+      await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+    } catch {
+      const html = await page.content();
+      console.error('Quiz loading spinner did not disappear (mobile viewport). Page HTML:', html);
+      throw new Error('Quiz did not finish loading (mobile viewport).');
+    }
     await page.getByLabel('Quiz Length').fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     // Wait for quiz container
@@ -31,7 +39,13 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await page.waitForTimeout(200);
     await page.getByRole('button', { name: /finish/i }).click();
     // Wait for results
-    await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
+    try {
+      await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
+    } catch {
+      const html = await page.content();
+      console.error('Quiz results not visible after finishing (mobile viewport). Page HTML:', html);
+      throw new Error('Quiz results not visible after finishing (mobile viewport).');
+    }
   });
 
   test('Badge modals: only one open at a time, keyboard accessible', async ({ page }) => {
