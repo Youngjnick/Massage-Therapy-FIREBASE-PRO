@@ -212,6 +212,7 @@ const Quiz: React.FC = () => {
 
   // In the answer submission handler, ensure Firestore setDoc is called after answering a question
   const handleAnswer = async (idx: number) => {
+    console.log('[E2E DEBUG] handleAnswer called', { idx, current, showResults, userAnswers });
     if (showResults) return; // Ignore answers after quiz is completed
     const newAnswers = [...userAnswers];
     newAnswers[current] = idx;
@@ -233,6 +234,7 @@ const Quiz: React.FC = () => {
       shuffledOptions,
       showResults: false
     });
+    console.log('[E2E DEBUG] handleAnswer finished', { idx, current, newAnswers });
   };
 
   // --- Firestore analytics update at quiz finish ---
