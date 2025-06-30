@@ -53,14 +53,26 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     await page.goto('/');
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
-    // Tab through quiz options and navigation buttons
-    let tabCount = 0;
-    for (let i = 0; i < 10; i++) {
+    // Wait for quiz question card to be visible
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+
+    // Tab through quiz options and navigation buttons, track unique focused elements
+    const focusedElements = new Set();
+    for (let i = 0; i < 12; i++) {
       await page.keyboard.press('Tab');
-      tabCount++;
+      const active = await page.evaluate(() => {
+        const el = document.activeElement;
+        if (!el) return null;
+        // Try to get a useful label for debugging
+        return el.getAttribute('aria-label') || el.getAttribute('data-testid') || el.tagName + (el.id ? '#' + el.id : '');
+      });
+      if (active) {
+        focusedElements.add(active);
+        console.log(`Tab ${i + 1}: Focused element:`, active);
+      }
     }
-    // If we reach at least 3-4 interactive elements, tab order is present
-    expect(tabCount).toBeGreaterThanOrEqual(3);
+    // Assert that at least 3 unique interactive elements are reached
+    expect(focusedElements.size).toBeGreaterThanOrEqual(3);
   });
 
   // Skipped: Screen reader text: ARIA labels and roles (redundant or data/setup issue)

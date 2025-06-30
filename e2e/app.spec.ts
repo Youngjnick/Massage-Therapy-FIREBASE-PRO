@@ -121,15 +121,6 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   expect(focused).toBeTruthy();
 });
 
-test('should handle edge case: no questions', async ({ page }) => {
-  // Simulate no questions by intercepting API or clearing questions in test env
-  // For now, just check for loading/error UI
-  await page.goto('/');
-  // If no questions, should show error or empty state
-  // This is a placeholder, update as needed for your app's behavior
-  // await expect(page.getByText(/no questions/i)).toBeVisible();
-});
-
 test('should handle edge case: rapid answer selection', async ({ page }) => {
   await page.goto('/');
   await page.getByLabel('Quiz Length').fill('2');
@@ -144,20 +135,33 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
 
 test('should show explanations when enabled', async ({ page }) => {
   await page.goto('/');
-  // Wait for the Quiz Start form or Quiz Length input to be visible
-  try {
-    await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
-    await page.waitForSelector('[aria-label="Quiz Length"]', { state: 'visible', timeout: 15000 });
-  } catch {
-    const html = await page.content();
-    console.error('Quiz Start form or Quiz Length input not visible. Page HTML:', html);
-    throw new Error('Quiz Start form or Quiz Length input not visible.');
+  // Wait for the Quiz Start form and Quiz Length input
+  await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
+  await page.waitForSelector('[aria-label="Quiz Length"]', { state: 'visible', timeout: 15000 });
+
+  // Explicitly enable the Show Explanations toggle if present
+  const explanationsToggle = page.locator('#show-explanations-toggle');
+  if (await explanationsToggle.isVisible()) {
+    if (!(await explanationsToggle.isChecked())) {
+      await explanationsToggle.check();
+    }
+  } else {
+    console.warn('Show Explanations toggle not found.');
   }
+
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
-  // Simulate enabling explanations (if toggle exists)
-  // For now, check for explanation text if present
-  // await expect(page.getByText(/explanation/i)).toBeVisible();
+
+  // Wait for quiz question card to be visible
+  await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+
+  // Check for explanation element by class
+  const explanation = page.locator('.quiz-explanation');
+  if (!(await explanation.isVisible())) {
+    const html = await page.content();
+    console.error('Explanation element not found. Page HTML:', html);
+  }
+  await expect(explanation).toBeVisible();
 });
 
 test('should show topic stats in results', async ({ page }) => {
