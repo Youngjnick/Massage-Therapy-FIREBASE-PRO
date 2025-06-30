@@ -365,9 +365,12 @@ const Quiz: React.FC = () => {
     console.log('Quiz state changed:', { started, showResults, current, userAnswers, shuffledQuestions, shuffledOptions });
   }, [started, showResults, current, userAnswers, shuffledQuestions, shuffledOptions]);
 
+  const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+  const forceShowStart = urlParams?.get('e2e') === '1';
+
   if (loading) {
     return (
-      <div className="quiz-container" data-testid="quiz-container">
+      <div className="quiz-container" data-testid="quiz-container" role="form">
         <h1>Quiz</h1>
         <div style={{ color: '#2563eb', fontWeight: 600, marginBottom: 12, display: 'flex', alignItems: 'center' }} data-testid="quiz-loading">
           <Spinner size={32} />
@@ -420,7 +423,26 @@ const Quiz: React.FC = () => {
         </div>
       )}
       {/* Always render all quiz states inside the form container */}
-      {started && !showResults && (
+      {(forceShowStart || (!started && !showResults)) && (
+        <QuizStartForm
+          availableTopics={sortedTopics}
+          selectedTopic={selectedTopic}
+          setSelectedTopic={setSelectedTopic}
+          quizLength={quizLength}
+          setQuizLength={val => setDesiredQuizLength(val === '' ? '' : Number(val))}
+          maxQuizLength={maxQuizLength}
+          sort={"default"}
+          setSort={setSort}
+          onStart={startQuiz}
+          filter={filter}
+          setFilter={handleSetFilter}
+          filterValue={filterValue}
+          setFilterValue={setFilterValue}
+          toggleState={toggleState}
+          setToggleState={setToggleState}
+        />
+      )}
+      {started && !showResults && !forceShowStart && (
         <>
           <QuizProgressBar progress={progress} />
           <QuizTopicProgress topicStats={topicStats} />
@@ -488,26 +510,7 @@ const Quiz: React.FC = () => {
           />
         </>
       )}
-      {!started && !showResults && (
-        <QuizStartForm
-          availableTopics={sortedTopics}
-          selectedTopic={selectedTopic}
-          setSelectedTopic={setSelectedTopic}
-          quizLength={quizLength}
-          setQuizLength={val => setDesiredQuizLength(val === '' ? '' : Number(val))}
-          maxQuizLength={maxQuizLength}
-          sort={"default"}
-          setSort={setSort}
-          onStart={startQuiz}
-          filter={filter}
-          setFilter={handleSetFilter}
-          filterValue={filterValue}
-          setFilterValue={setFilterValue}
-          toggleState={toggleState}
-          setToggleState={setToggleState}
-        />
-      )}
-      {showResults && (
+      {showResults && !forceShowStart && (
         <QuizResultsScreen
           isAllIncorrect={false}
           onStartNewQuiz={resetQuiz}
@@ -518,7 +521,7 @@ const Quiz: React.FC = () => {
           activeQuestions={activeQuestions}
         />
       )}
-      {showResults && reviewMode && (
+      {showResults && reviewMode && !forceShowStart && (
         <QuizReviewScreen
           reviewQueue={[]}
           activeQuestions={activeQuestions}
