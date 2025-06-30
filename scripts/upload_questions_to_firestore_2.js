@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* eslint-env node */
 // ESM-compatible upload_questions_to_firestore_2.js
-// Usage: node upload_questions_to_firestore_2.js
+// Usage: node upload_questions_to_firestore_2.js [e|p]
 
 import fs from 'fs';
 import path from 'path';
@@ -15,28 +15,30 @@ const serviceAccount = JSON.parse(
 );
 import readline from 'readline';
 
-
-// Prompt for emulator or production
-async function promptTarget() {
-  return new Promise((resolve) => {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout,
+// Accept CLI argument for target (e=emulator, p=production)
+let target = process.argv[2];
+if (!target) {
+  // Prompt for emulator or production if not provided
+  async function promptTarget() {
+    return new Promise((resolve) => {
+      const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+      });
+      rl.question('Upload to Firestore emulator (e) or production (p)? [e/p]: ', (answer) => {
+        rl.close();
+        const val = answer.trim().toLowerCase();
+        if (val === 'e' || val === 'p') {
+          resolve(val);
+        } else {
+          console.log('Invalid input. Please enter "e" or "p".');
+          process.exit(1);
+        }
+      });
     });
-    rl.question('Upload to Firestore emulator (e) or production (p)? [e/p]: ', (answer) => {
-      rl.close();
-      const val = answer.trim().toLowerCase();
-      if (val === 'e' || val === 'p') {
-        resolve(val);
-      } else {
-        console.log('Invalid input. Please enter "e" or "p".');
-        process.exit(1);
-      }
-    });
-  });
+  }
+  target = await promptTarget();
 }
-
-const target = await promptTarget();
 
 // Initialize Firebase Admin
 admin.initializeApp({
@@ -157,32 +159,102 @@ function canonicalizeQuestion(q) {
 }
 
 async function uploadQuestions() {
+  // Gather all questions from all JSON files for progress tracking
   const files = walk(questionsDir);
   let total = 0;
   let validationErrors = [];
   let skippedQuestions = [];
+  let failedQuestions = [];
+  let uploadedQuestions = [];
+  let allQuestions = [];
   for (const file of files) {
-    if (!fs.existsSync(file)) {
-      console.warn(`File not found: ${file}`);
-      continue;
-    }
+    if (!fs.existsSync(file)) continue;
     const raw = fs.readFileSync(file, 'utf8');
     let questions;
     try {
       questions = JSON.parse(raw);
     } catch {
+      // If JSON is invalid, skip this file and optionally log an error
+      console.error(`Invalid JSON in file: ${file}, skipping.`);
       continue;
     }
     if (!Array.isArray(questions)) continue;
-    const baseName = path.basename(file, '.json');
-    const snakeSource = toSnakeCase(baseName);
-    for (let i = 0; i < questions.length; i++) {
-      let q = questions[i];
-      // Normalize answer_options to options if needed
-      if (!q.options && Array.isArray(q.answer_options)) {
-        q.options = q.answer_options;
+    allQuestions.push(...questions.map((q, i) => ({...q, __file: file, __idx: i})));
+  }
+  const totalQuestions = allQuestions.length;
+  let current = 0;
+
+  // Detect if running against emulator or production
+  const isEmulator = (process.env.FIRESTORE_EMULATOR_HOST || '').includes('localhost');
+
+  if (isEmulator) {
+    // --- EMULATOR: BULK OVERWRITE USING FIRESTORE BATCH WRITES ---
+    const BATCH_SIZE = 500;
+    for (let batchStart = 0; batchStart < totalQuestions; batchStart += BATCH_SIZE) {
+      const batch = db.batch();
+      const batchQuestions = allQuestions.slice(batchStart, batchStart + BATCH_SIZE);
+      for (let j = 0; j < batchQuestions.length; j++) {
+        current++;
+        let q = batchQuestions[j];
+        const file = q.__file;
+        const i = q.__idx;
+        if (!q.options && Array.isArray(q.answer_options)) q.options = q.answer_options;
+        const baseName = path.basename(file, '.json');
+        const snakeSource = toSnakeCase(baseName);
+        q.unit = snakeSource;
+        if (q.id) {
+          q.id = normalizeQuestionId(q.id, snakeSource, i);
+        } else {
+          q.id = normalizeQuestionId(undefined, snakeSource, i);
+        }
+        if (q.filename) delete q.filename;
+        const vErr = validateQuestion(q, file, i);
+        if (vErr) {
+          if (vErr.errors.length > 0) {
+            validationErrors.push(vErr);
+            skippedQuestions.push(q);
+          }
+          if (vErr.warnings.length > 0) {
+            console.warn(`Warning for question in ${file} [index ${i}, id: ${q.id}]: ${vErr.warnings.join('; ')}`);
+          }
+          continue;
+        }
+        q = canonicalizeQuestion(q);
+        process.stdout.write(`[${current}/${totalQuestions}] Overwriting: [${q.id}]... `);
+        const docRef = db.collection('questions').doc(q.id);
+        batch.set(docRef, q, { merge: true });
+        uploadedQuestions.push(q);
       }
-      // abcd is no longer generated or used
+      try {
+        await batch.commit();
+        process.stdout.write('batch done\n');
+        total += batchQuestions.length;
+      } catch {
+        process.stdout.write('\n');
+        for (let j = 0; j < batchQuestions.length; j++) {
+          let q = batchQuestions[j];
+          const docRef = db.collection('questions').doc(q.id);
+          try {
+            await docRef.set(q, { merge: true });
+            process.stdout.write(`[${batchStart + j + 1}/${totalQuestions}] Overwriting: [${q.id}]... done\n`);
+            total++;
+          } catch (err2) {
+            console.error(`\n[${batchStart + j + 1}/${totalQuestions}] Failed: [${q.id}] -`, err2.message);
+            failedQuestions.push({ id: q.id, error: err2.message });
+          }
+        }
+      }
+    }
+  } else {
+    // --- PRODUCTION: MINIMIZE WRITES, ONLY UPDATE IF DIFFERENT ---
+    for (const qObj of allQuestions) {
+      current++;
+      let q = qObj;
+      const file = q.__file;
+      const i = q.__idx;
+      if (!q.options && Array.isArray(q.answer_options)) q.options = q.answer_options;
+      const baseName = path.basename(file, '.json');
+      const snakeSource = toSnakeCase(baseName);
       q.unit = snakeSource;
       if (q.id) {
         q.id = normalizeQuestionId(q.id, snakeSource, i);
@@ -201,33 +273,59 @@ async function uploadQuestions() {
         }
         continue;
       }
-      // Canonicalize question to match field order and nulls
       q = canonicalizeQuestion(q);
-      // Uncomment to enable actual upload
       try {
-        console.log(`Uploading: [${q.id}] ${q.text || q.question || ''}`);
-        await db.collection('questions').doc(q.id).set(q, { merge: true });
-        total++;
-      } catch (err) {
-        console.error(`Failed to upload question [${q.id}]:`, err);
+        const docRef = db.collection('questions').doc(q.id);
+        const docSnap = await docRef.get();
+        let shouldUpdate = true;
+        if (docSnap.exists) {
+          const remote = docSnap.data();
+          const clean = obj => {
+            const out = {};
+            for (const k in obj) {
+              if (obj[k] !== undefined && obj[k] !== null && !(Array.isArray(obj[k]) && obj[k].length === 0)) {
+                out[k] = obj[k];
+              }
+            }
+            return out;
+          };
+          const localClean = clean(q);
+          const remoteClean = clean(remote);
+          if (JSON.stringify(localClean) === JSON.stringify(remoteClean)) {
+            console.log(`[${current}/${totalQuestions}] Skipped (identical): [${q.id}]`);
+            skippedQuestions.push(q);
+            shouldUpdate = false;
+          } else {
+            process.stdout.write(`[${current}/${totalQuestions}] Updating: [${q.id}]... `);
+          }
+        } else {
+          process.stdout.write(`[${current}/${totalQuestions}] Uploading: [${q.id}]... `);
+        }
+        if (shouldUpdate) {
+          await docRef.set(q, { merge: true });
+          process.stdout.write('done\n');
+          total++;
+          uploadedQuestions.push(q);
+        }
+      } catch {
+        console.error(`\n[${current}/${totalQuestions}] Failed: [${q.id}] -`, 'Unknown error');
+        failedQuestions.push({ id: q.id, error: 'Unknown error' });
       }
-      // console.log(`Dry run: Skipping upload for question [${q.id}]`);
     }
   }
+  // Validation error reporting and summary
   if (validationErrors.length > 0) {
     console.log('\nValidation errors summary:');
     validationErrors.forEach(e => {
       console.log(`File: ${e.file}, Index: ${e.idx}, Id: ${e.id || 'N/A'} => ${e.errors.join('; ')}`);
     });
     console.log(`\nTotal invalid questions skipped: ${validationErrors.length}`);
-    // --- FIXED LOGIC BELOW ---
     const skippedDir = path.join(__dirname, 'skipped_questions');
     if (!fs.existsSync(skippedDir)) {
       fs.mkdirSync(skippedDir);
     }
     const grouped = {};
     skippedQuestions.forEach(q => {
-      // Use q.unit or fallback to 'unknown' for skipped file grouping
       let fileName = (q.unit ? q.unit : 'unknown') + '.json';
       if (!grouped[fileName]) grouped[fileName] = [];
       grouped[fileName].push(q);
@@ -237,7 +335,11 @@ async function uploadQuestions() {
     });
     console.log(`Skipped questions grouped and written to ${skippedDir}`);
   }
-  console.log(`Upload complete. Total questions uploaded: ${total}`);
+  console.log(`\nUpload complete. Uploaded: ${total}, Failed: ${failedQuestions.length}`);
+  if (failedQuestions.length > 0) {
+    console.log('Failed questions:');
+    failedQuestions.forEach(f => console.log(`- [${f.id}]: ${f.error}`));
+  }
   process.exit(0);
 }
 

@@ -6,6 +6,8 @@ export default defineConfig({
   testDir: './e2e',
   timeout: 30000,
   retries: 1,
+  workers: 1, // Run tests serially for reliability
+  globalTimeout: 10 * 60 * 1000, // 10 minutes for the whole suite
   use: {
     baseURL: 'http://localhost:5173/',
     ...devices['Desktop Chrome'],

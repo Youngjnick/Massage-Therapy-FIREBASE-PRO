@@ -80,12 +80,6 @@ describe('QuizStartForm', () => {
   });
 });
 
-describe('QuizStartForm (validation)', () => {
-  it.skip('disables Start button if no topic selected', () => {
-    // Skipped: Start button enabled/disabled logic changed in new flow.
-  });
-});
-
 describe('QuizStartForm (form submission and validation)', () => {
   it('calls onStart when form is submitted', () => {
     const onStart = jest.fn();
@@ -150,5 +144,63 @@ describe('QuizStartForm (quiz length default)', () => {
     );
     const input = screen.getByLabelText(/quiz length/i);
     expect(input).toHaveValue(availableQuestions);
+  });
+});
+
+describe('QuizStartForm (validation)', () => {
+  it('disables Start button if no topic selected', () => {
+    const props = {
+      ...defaultProps,
+      selectedTopic: '',
+    };
+    render(<QuizStartForm {...props} />);
+    const startBtn = screen.getByRole('button', { name: /start/i });
+    expect(startBtn).toBeDisabled();
+  });
+});
+
+describe('QuizStartForm (toggle interactions)', () => {
+  it('calls setToggleState when show explanations is toggled', () => {
+    const setToggleState = jest.fn();
+    render(<QuizStartForm {...defaultProps} setToggleState={setToggleState} />);
+    const checkbox = screen.getByLabelText(/show explanations/i);
+    fireEvent.click(checkbox);
+    expect(setToggleState).toHaveBeenCalledWith({
+      ...defaultProps.toggleState,
+      showExplanations: !defaultProps.toggleState.showExplanations,
+    });
+  });
+
+  it('calls setToggleState when instant feedback is toggled', () => {
+    const setToggleState = jest.fn();
+    render(<QuizStartForm {...defaultProps} setToggleState={setToggleState} />);
+    const checkbox = screen.getByLabelText(/instant feedback/i);
+    fireEvent.click(checkbox);
+    expect(setToggleState).toHaveBeenCalledWith({
+      ...defaultProps.toggleState,
+      instantFeedback: !defaultProps.toggleState.instantFeedback,
+    });
+  });
+
+  it('calls setToggleState when randomize questions is toggled', () => {
+    const setToggleState = jest.fn();
+    render(<QuizStartForm {...defaultProps} setToggleState={setToggleState} />);
+    const checkbox = screen.getByLabelText(/randomize questions/i);
+    fireEvent.click(checkbox);
+    expect(setToggleState).toHaveBeenCalledWith({
+      ...defaultProps.toggleState,
+      randomizeQuestions: !defaultProps.toggleState.randomizeQuestions,
+    });
+  });
+
+  it('calls setToggleState when randomize options is toggled', () => {
+    const setToggleState = jest.fn();
+    render(<QuizStartForm {...defaultProps} setToggleState={setToggleState} />);
+    const checkbox = screen.getByLabelText(/randomize options/i);
+    fireEvent.click(checkbox);
+    expect(setToggleState).toHaveBeenCalledWith({
+      ...defaultProps.toggleState,
+      randomizeOptions: !defaultProps.toggleState.randomizeOptions,
+    });
   });
 });

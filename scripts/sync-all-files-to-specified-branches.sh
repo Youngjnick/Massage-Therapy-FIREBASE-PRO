@@ -120,6 +120,63 @@ if [[ ${#all_targets[@]} -gt 0 ]]; then
   fi
 fi
 
+# --- ALWAYS COMMIT ALL CHANGES BEFORE SYNC ---
+# Always stage and commit all changes as WIP if there are uncommitted changes
+if [[ -n $(git status --porcelain) ]]; then
+  # Build a default summary from test/lint variables if available
+  DEFAULT_SUMMARY=""
+  if [[ -n "$TEST_SUMMARY" ]]; then
+    DEFAULT_SUMMARY+="$TEST_SUMMARY\n"
+  fi
+  if [[ -n "$PW_SUMMARY" ]]; then
+    DEFAULT_SUMMARY+="$PW_SUMMARY\n"
+  fi
+  # Add more summaries as needed (e.g., TS_SUMMARY, ESLINT_SUMMARY)
+  if [[ -n "$TS_SUMMARY" ]]; then
+    DEFAULT_SUMMARY+="$TS_SUMMARY\n"
+  fi
+  if [[ -n "$ESLINT_SUMMARY" ]]; then
+    DEFAULT_SUMMARY+="$ESLINT_SUMMARY\n"
+  fi
+  echo -e "${YELLOW}Uncommitted changes detected.${NC}"
+  if [[ -n "$DEFAULT_SUMMARY" ]]; then
+    echo -e "\n--- Generated Commit Summary ---\n$DEFAULT_SUMMARY\n-------------------------------"
+    echo "Do you want to edit this commit message before committing? (y/n): "
+    read edit_msg_choice
+    if [[ "$edit_msg_choice" == "y" ]]; then
+      echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
+      commit_msg=""
+      while IFS= read -r line; do
+        [[ -z "$line" ]] && break
+        commit_msg+="$line\n"
+      done
+    else
+      commit_msg="$DEFAULT_SUMMARY"
+    fi
+    git add -A
+    git commit -m "$commit_msg"
+  else
+    echo "Do you want to enter a custom commit message? (y/n): "
+    read custom_msg_choice
+    if [[ "$custom_msg_choice" == "y" ]]; then
+      echo "Enter your commit message (end with an empty line):"
+      commit_msg=""
+      while IFS= read -r line; do
+        [[ -z "$line" ]] && break
+        commit_msg+="$line\n"
+      done
+      git add -A
+      git commit -m "$commit_msg"
+    else
+      echo -e "${YELLOW}Auto-committing all uncommitted changes as WIP before sync...${NC}"
+      git add -A
+      git commit -m "WIP: auto-commit before sync-all-files-to-specified-branches.sh"
+    fi
+  fi
+else
+  echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
+fi
+
 # --- TEST & LINT SECTION ---
 # Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
 # If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
@@ -176,7 +233,17 @@ if [[ "$SKIP_TESTS" = false ]]; then
   # 3. Jest
   echo "Running Jest tests..."
   npm test -- --reporter=default | tee scripts/test-output.txt
+
+  # Parse Jest output for summary and failing test names
+  TEST_SUMMARY=""
   if grep -q "failing" scripts/test-output.txt; then
+    # Get summary line (e.g. 'Tests: 2 failed, 38 passed, 40 total')
+    SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+    # Get failing test suite names (e.g. 'FAIL  src/__tests__/SomeTest.test.tsx')
+    FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
+    if [[ -n "$SUMMARY_LINE" ]]; then
+      TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
+    fi
     echo -e "${RED}Jest tests failed.${NC}"
     echo "What do you want to do? (fix/wip/abort): "
     read jest_decision
@@ -189,6 +256,12 @@ if [[ "$SKIP_TESTS" = false ]]; then
       echo "Aborted due to Jest failures."
       exit 1
     fi
+  else
+    # If all tests pass, still include summary
+    SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+    if [[ -n "$SUMMARY_LINE" ]]; then
+      TEST_SUMMARY="$SUMMARY_LINE"
+    fi
   fi
   rm -f scripts/test-output.txt
 
@@ -200,8 +273,24 @@ if [[ "$SKIP_TESTS" = false ]]; then
     sleep 5
     echo "Running Playwright E2E..."
     npm run test:e2e:headed | tee scripts/playwright-output.txt
+
+    # Parse Playwright output for summary and failing test names
+    PW_SUMMARY=""
+    # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
+    PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
+    # Get failing test file names (e.g. 'FAIL  e2e/critical-ui-accessibility.spec.ts')
+    PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
+    if [[ -n "$PW_SUMMARY_LINE" ]]; then
+      PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
+      if [[ -n "$PW_FAILING_TESTS" ]]; then
+        PW_SUMMARY="$PW_SUMMARY\nFailing: $PW_FAILING_TESTS"
+      fi
+    fi
+
     if grep -q "failed" scripts/playwright-output.txt; then
       echo -e "${RED}Playwright E2E failed.${NC}"
+      echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
+      awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
       echo "What do you want to do? (fix/wip/abort): "
       read pw_decision
       if [[ "$pw_decision" == "fix" ]]; then
@@ -224,17 +313,6 @@ fi
 # --- ALWAYS PUSH/UPLOAD SECTION ---
 # If WIP_MODE is set, commit as WIP, otherwise normal commit
 # Always push/force-push to all specified branches/remotes
-
-# Auto-commit WIP if requested
-if [[ "$AUTO_COMMIT_WIP" = true ]]; then
-  if [[ -n $(git status --porcelain) ]]; then
-    echo -e "${YELLOW}Auto-committing all uncommitted changes as WIP before sync...${NC}"
-    git add -A
-    git commit -m "WIP: auto-commit before sync-all-files-to-specified-branches.sh"
-  else
-    echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
-  fi
-fi
 
 # If only committing to current branch, skip remote sync and exit
 if [[ "$COMMIT_CURRENT_BRANCH_ONLY" = true ]]; then
@@ -382,3 +460,7 @@ if [[ -w "$LOG_FILE" ]]; then
   echo "\nSummary of updates:" >> "$LOG_FILE"
   echo "$summary_table" >> "$LOG_FILE"
 fi
+
+# (Commented out) Seeding script call. Manual seeding is now required before running this sync script.
+# echo "Seeding Firestore questions..."
+# node scripts/upload_questions_to_firestore_2.js e

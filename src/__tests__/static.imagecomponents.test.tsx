@@ -7,7 +7,7 @@ import BadgeModal from '../components/Quiz/BadgeModal';
 describe('Profile image rendering', () => {
   it('renders default avatar if no user photoURL', () => {
     render(<Profile />);
-    const img = screen.getByAltText(/user avatar/i);
+    const img = screen.getByAltText(/user avatar/i) as HTMLImageElement;
     expect(img).toBeInTheDocument();
     expect(img.getAttribute('src')).toContain('default_avatar.png');
   });

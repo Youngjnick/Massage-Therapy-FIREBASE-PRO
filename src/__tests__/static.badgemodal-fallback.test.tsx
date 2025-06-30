@@ -6,7 +6,7 @@ describe('BadgeModal fallback image', () => {
   it('renders fallback image on error', () => {
     const badge = { id: 'nonexistent_badge', name: 'Missing Badge', description: 'desc', criteria: 'crit', awarded: false, image: 'nonexistent_badge.png' };
     render(<BadgeModal badge={badge} open={true} onClose={() => {}} />);
-    const img = screen.getByTestId('badge-image');
+    const img = screen.getByTestId('badge-image') as HTMLImageElement;
     expect(img).toBeInTheDocument();
     expect(img.getAttribute('src')).toContain('badges/nonexistent_badge.png');
     // Simulate error

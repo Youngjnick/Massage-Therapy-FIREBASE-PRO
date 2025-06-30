@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 const log = (...args: any[]) => {
-  // @ts-expect-error
   // eslint-disable-next-line no-undef
   (globalThis.console || console).log(...args);
 };
@@ -17,17 +16,20 @@ test.describe('Quiz Option Accessibility', () => {
     for (let i = 0; i < count; i++) {
       const option = options.nth(i);
       // Print all ARIA attributes for debug
-      const attrs = await option.evaluate(el => ({
-        role: el.getAttribute('role'),
-        ariaLabel: el.getAttribute('aria-label'),
-        ariaChecked: el.getAttribute('aria-checked'),
-        ariaDisabled: el.getAttribute('aria-disabled'),
-        tabIndex: el.getAttribute('tabindex'),
-        id: el.id,
-        name: el.getAttribute('name'),
-        checked: el.checked,
-        disabled: el.disabled,
-      }));
+      const attrs = await option.evaluate(el => {
+        const input = el as HTMLInputElement;
+        return {
+          role: input.getAttribute('role'),
+          ariaLabel: input.getAttribute('aria-label'),
+          ariaChecked: input.getAttribute('aria-checked'),
+          ariaDisabled: input.getAttribute('aria-disabled'),
+          tabIndex: input.getAttribute('tabindex'),
+          id: input.id,
+          name: input.getAttribute('name'),
+          checked: input.checked,
+          disabled: input.disabled,
+        };
+      });
       log(`[E2E DEBUG] Quiz option ${i}:`, attrs);
       // Check role
       expect(attrs.role).toBe('radio');
