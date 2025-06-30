@@ -79,14 +79,10 @@ const Achievements: React.FC = () => {
               style={{ width: 80, height: 80, borderRadius: 16, background: 'rgba(255,255,255,0.2)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', opacity: badge.awarded ? 1 : 0.5 }}
               data-testid={badge.awarded ? 'badge-awarded' : 'badge-unawarded'}
               onError={e => {
-                if (!(e.currentTarget as any)._hasFallback) {
-                  (e.currentTarget as any)._hasFallback = true;
-                  e.currentTarget.src = fallbackUrl;
-                  console.error('Badge image failed to load:', e.currentTarget.src);
-                }
+                // Only log error, do not swap to fallback. Let modal handle fallback.
+                console.error('Badge image failed to load:', e.currentTarget.src);
               }}
               onLoad={e => {
-                (e.currentTarget as any)._hasFallback = false;
                 console.log('Badge image loaded:', e.currentTarget.src);
               }}
             />
