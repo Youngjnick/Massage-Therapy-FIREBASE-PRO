@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 
-const DEV_BASE_URL = 'http://localhost:5174';
+const DEV_BASE_URL = 'http://localhost:5173';
 const badgeFile = 'first_quiz.png';
 const badgePath = `/badges/${badgeFile}`;
 
