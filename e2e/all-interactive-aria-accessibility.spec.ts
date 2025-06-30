@@ -1,3 +1,5 @@
+/* global console */
+
 import { test, expect } from '@playwright/test';
 
 const MAIN_PAGES = ['/', '/quiz', '/achievements', '/analytics', '/profile'];
@@ -26,6 +28,10 @@ test.describe('All Interactive Elements: ARIA and Keyboard Accessibility', () =>
           await el.getAttribute('aria-labelledby') ||
           await el.getAttribute('alt') ||
           await el.textContent() || '';
+        if (!name.trim().length) {
+          const outer = await el.evaluate(e => e.outerHTML);
+          console.error(`Element missing accessible name on ${pagePath}:`, outer);
+        }
         expect(name.trim().length).toBeGreaterThan(0);
         // Optionally, check for ARIA role
         // const role = await el.getAttribute('role');

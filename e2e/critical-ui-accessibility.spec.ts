@@ -1,10 +1,14 @@
-import { test, expect } from '@playwright/test';
 /* global console */
+
+import { test, expect } from '@playwright/test';
 
 test.describe('Critical UI and Accessibility Scenarios', () => {
   test('Mobile viewport: quiz UI, results, and modals are visible and usable', async ({ page }) => {
     test.setTimeout(60000); // Increase timeout for this test
     await page.setViewportSize({ width: 375, height: 812 }); // iPhone X size
+    const logs: string[] = [];
+    page.on('console', msg => logs.push(`${msg.type()}: ${msg.text()}`));
+    page.on('pageerror', err => logs.push(`pageerror: ${err.message}`));
     await page.goto('/');
     // Wait for quiz loading spinner to disappear (if present)
     try {
@@ -12,6 +16,7 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     } catch {
       const html = await page.content();
       console.error('Quiz loading spinner did not disappear (mobile viewport). Page HTML:', html);
+      console.error('Browser console logs:', logs.join('\n'));
       throw new Error('Quiz did not finish loading (mobile viewport).');
     }
     await page.getByLabel('Quiz Length').fill('2');

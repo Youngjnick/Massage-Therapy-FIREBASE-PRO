@@ -3,258 +3,27 @@ Running 196 tests using 4 workers
 
   -  1 [Desktop Chrome] › e2e/app.critical-flow.spec.ts:5:6 › should start quiz and focus first option
 Navigating to home page...
-  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (2.3s)
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (2.4s)
 Filling Quiz Length...
-  ✓  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (1.1s)
-  ✓  7 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (826ms)
-  ✓  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (1.1s)
-  ✓  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (946ms)
-  ✓  10 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (29ms)
-  ✓  11 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (1ms)
+  ✓  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (926ms)
+  ✓  7 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (860ms)
+  ✓  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (1.2s)
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+  ✓  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (1.1s)
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+  ✓  10 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (52ms)
+  ✓  11 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (3ms)
   -  12 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:10:8 › Development Asset Troubleshooting › Badge image is accessible directly
-  ✓  4 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.8s)
-  ✓  13 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (403ms)
-  ✓  14 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:89:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (688ms)
-  ✓  15 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (640ms)
-  ✓  17 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (394ms)
-PAGE CONTENT AFTER LOGIN: <!DOCTYPE html><html lang="en"><head>
-  <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
-injectIntoGlobalHook(window);
-window.$RefreshReg$ = () => {};
-window.$RefreshSig$ = () => (type) => type;</script>
-
-  <script type="module" src="/@vite/client"></script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Massage Therapy Smart Study PRO</title>
-  <link rel="icon" type="image/x-icon" href="/Massage-Therapy-FIREBASE-PRO/favicon.ico">
-  <link rel="apple-touch-icon" href="/Massage-Therapy-FIREBASE-PRO/icon-512x512.png">
-  <meta name="theme-color" content="#1e3c28">
-  <script type="module" src="/src/index.tsx"></script>
-<style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/src/components/AppHeader.css">.app-header {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  padding: 1.5rem 0 1rem 0;
-  justify-content: center;
-}
-.app-header__icon {
-  width: 48px;
-  he
-BROWSER CONSOLE: log [E2E DEBUG] Profile user: _UserImpl
-BROWSER CONSOLE: log [DEBUG] Loading user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
-BROWSER CONSOLE: log [DEBUG][userSettings] getUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {haptic: false, ariaSound: true, darkMode: false, showExplanations: true}
-BROWSER CONSOLE: log [DEBUG] Loaded settings: {haptic: false, ariaSound: true, darkMode: false, showExplanations: true}
-BROWSER CONSOLE: log [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
-BROWSER CONSOLE: log [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
-BROWSER CONSOLE: debug [vite] connecting...
-BROWSER CONSOLE: debug [vite] connected.
-BROWSER CONSOLE: info %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-BROWSER CONSOLE: log Connected to Firestore emulator at localhost:8080
-BROWSER CONSOLE: log [DEBUG][Router] location.pathname: /profile basename: /
-BROWSER CONSOLE: log [analytics] app_loaded undefined
-BROWSER CONSOLE: log [E2E DEBUG] Profile user: _UserImpl
-BROWSER CONSOLE: log [DEBUG] Loading user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
-BROWSER CONSOLE: log [DEBUG][userSettings] getUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {haptic: false, ariaSound: true, darkMode: false, showExplanations: true}
-BROWSER CONSOLE: log [DEBUG] Loaded settings: {haptic: false, ariaSound: true, darkMode: false, showExplanations: true}
-BROWSER CONSOLE: log [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
-BROWSER CONSOLE: log [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
-  ✓  18 [Desktop Chrome] › e2e/auth-session-persistence.spec.ts:18:3 › Auth Session Persistence › should persist session after reload (1.6s)
-  ✓  19 [Desktop Chrome] › e2e/auth-smoke.spec.ts:4:1 › auth smoke: can sign in and see user info (1.5s)
-  ✓  20 [Desktop Chrome] › e2e/auth.spec.ts:6:3 › Authentication UI Flows › should show sign-in prompt on Analytics when unauthenticated (619ms)
-  ✓  16 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:114:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (4.3s)
-Navigated to /profile
-Sign-in button is visible
-  ✓  22 [Desktop Chrome] › e2e/badge-appearance.spec.ts:13:2 › Local badge images (UI login) › All key badges appear on Achievements page (1.6s)
-  ✓  23 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:6:1 › badges.json has correct criteria and image fields (29ms)
-Popup opened event detected
-  ✓  21 [Desktop Chrome] › e2e/auth.spec.ts:11:3 › Authentication UI Flows › should show sign-in button and open popup on Profile page (1.9s)
-  ✓  24 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:25:1 › badge_test image is visible and loads (570ms)
-  ✓  25 [Desktop Chrome] › e2e/auth.spec.ts:45:3 › Authentication UI Flows › should show sign-in button after sign out click (UI only) (653ms)
-  -  27 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:5:8 › Critical Quiz Edge Cases and Accessibility › Partial answers: finish quiz with unanswered questions
-  -  28 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:24:8 › Critical Quiz Edge Cases and Accessibility › Network failure: loading questions
-  ✓  26 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to / (637ms)
-  ✓  30 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /quiz (619ms)
-  ✓  31 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /analytics (853ms)
-  ✓  32 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /profile (594ms)
-Filled Quiz Length input by label
-  ✓  29 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:37:3 › Critical Quiz Edge Cases and Accessibility › ARIA attributes: quiz options and navigation (2.7s)
-  ✓  34 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:97:3 › Critical Quiz Edge Cases and Accessibility › Badges: tab, open with Enter/Space, close with Escape, focus returns (695ms)
-  -  3 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:32:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels
-Number of quiz options (mobile): [33m4[39m
-  ✓  33 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:5:3 › Critical UI and Accessibility Scenarios › Mobile viewport: quiz UI, results, and modals are visible and usable (3.4s)
-Radio 0 disabled: [33mtrue[39m
-Radio 1 disabled: [33mtrue[39m
-Radio 2 disabled: [33mtrue[39m
-Radio 3 disabled: [33mtrue[39m
-  ✓  35 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:5:3 › Quiz Edge Cases and Accessibility › Quiz with all options disabled: keyboard navigation skips disabled (2.9s)
-  ✓  36 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:111:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (1.7s)
-  ✓  37 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:51:3 › Critical UI and Accessibility Scenarios › Badge modals: only one open at a time, keyboard accessible (852ms)
-  ✓  38 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:33:3 › Quiz Edge Cases and Accessibility › Badge modal: opens and fallback image appears if missing (1.0s)
-  ✓  40 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:71:3 › Critical UI and Accessibility Scenarios › Badge modal: open with keyboard only (Tab + Enter/Space) (809ms)
-  ✓  39 [Desktop Chrome] › e2e/finish-quiz-buttons.spec.ts:4:3 › Finish and Finish Quiz Buttons › completes quiz and shows results with Finish button (3.2s)
-Tab 1: Focused element: Finish quiz
-Tab 2: Focused element: Search questions
-Tab 3: Focused element: BODY
-Tab 4: Focused element: Go to Quiz page
-Tab 5: Focused element: Go to Achievements page
-Tab 6: Focused element: Go to Analytics page
-Tab 7: Focused element: Go to Profile page
-Tab 8: Focused element: Quiz progress: 0%
-Tab 9: Focused element: Go to question 1 (current)
-Tab 10: Focused element: Option A: Pubic crest and pubic symphysis
-Tab 11: Focused element: Finish quiz
-Tab 12: Focused element: Search questions
-  ✓  41 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:52:3 › Quiz Edge Cases and Accessibility › Tab order: all interactive elements are reachable (3.1s)
-  -  44 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:79:8 › Quiz Edge Cases and Accessibility › Screen reader text: ARIA labels and roles
-  ✓  42 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:86:3 › Critical UI and Accessibility Scenarios › Next button: always rendered, but hidden or disabled as appropriate (2.9s)
-  ✓  43 [Desktop Chrome] › e2e/finish-quiz-buttons.spec.ts:19:3 › Finish and Finish Quiz Buttons › shows Finish Quiz button and works as expected (2.7s)
-  ✓  45 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:101:3 › Quiz Edge Cases and Accessibility › Mobile viewport: quiz, results, achievements (2.9s)
-  ✓  46 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:101:3 › Critical UI and Accessibility Scenarios › Quiz cannot be started without required fields (3.0s)
-  ✓  49 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:135:3 › Critical UI and Accessibility Scenarios › Badge modal fallback image and keyboard navigation (1.1s)
-  ✓  50 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:151:3 › Critical UI and Accessibility Scenarios › Network failure: badge load (781ms)
-  ✓  47 [Desktop Chrome] › e2e/focus-indicator.spec.ts:18:3 › Mobile Accessibility: Focus Indicator on Quiz › Tabs through all interactive elements and checks visible focus indicator (2.9s)
-  ✓  48 [Desktop Chrome] › e2e/keyboard-navigation-and-restart.spec.ts:4:3 › Keyboard-Only Navigation and Quiz Restart › Complete a quiz using direct element selection/clicks (3.0s)
-  ✓  52 [Desktop Chrome] › e2e/focus-indicator.spec.ts:84:3 › Mobile Accessibility: Focus Indicator on Achievements › Tabs through all interactive elements and checks visible focus indicator (1.5s)
-  ✓  51 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:157:3 › Critical UI and Accessibility Scenarios › Accessibility: ARIA roles and labels (2.6s)
-  -  55 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:180:8 › Critical UI and Accessibility Scenarios › Tab order is logical for quiz controls
-  ✓  54 [Desktop Chrome] › e2e/focus-indicator.spec.ts:143:3 › Mobile Accessibility: Focus Indicator on Analytics › Tabs through all interactive elements and checks visible focus indicator (1.3s)
-  ✓  53 [Desktop Chrome] › e2e/keyboard-navigation-and-restart.spec.ts:22:3 › Keyboard-Only Navigation and Quiz Restart › Quiz restart resets all state and focus (2.8s)
-  ✓  58 [Desktop Chrome] › e2e/login-flow.spec.ts:5:3 › Sign In Flow (UI) › shows sign-in prompt when not authenticated (596ms)
-  ✓  56 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:193:3 › Critical UI and Accessibility Scenarios › Mobile viewport: quiz and results are usable (2.5s)
-  -  60 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:205:8 › Critical UI and Accessibility Scenarios › Quiz stepper: skip, revisit, answer in any order
-  -  61 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:224:8 › Critical UI and Accessibility Scenarios › Error boundary: UI does not crash on JS error in quiz
-  ✓  62 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:231:3 › Critical UI and Accessibility Scenarios › Badge modal: top-right close button closes modal (467ms)
-  ✓  59 [Desktop Chrome] › e2e/login-flow.spec.ts:11:3 › Sign In Flow (UI) › signs in with test form and shows user profile (1.1s)
-  ✓  57 [Desktop Chrome] › e2e/focus-indicator.spec.ts:202:3 › Mobile Accessibility: Focus Indicator on Profile › Tabs through all interactive elements and checks visible focus indicator (3.0s)
-
-  ✓  63 [Desktop Chrome] › e2e/login-flow.spec.ts:19:3 › Sign In Flow (UI) › signs out and returns to guest state (1.3s)
-  -  66 [Desktop Chrome] › e2e/quiz-autosave-partial-results.spec.ts:6:8 › Quiz Auto-Save and Resume › Auto-saves progress for guest (localStorage) and resumes on reload
-  -  67 [Desktop Chrome] › e2e/quiz-autosave-partial-results.spec.ts:26:8 › Quiz Auto-Save and Resume › Shows cancel/exit confirmation dialog when leaving quiz
-  -  68 [Desktop Chrome] › e2e/quiz-autosave-partial-results.spec.ts:43:8 › Quiz Partial Results › Shows partial results and highlights unanswered questions
-[browser][debug] [vite] connecting...
-[browser][debug] [vite] connected.
-[browser][info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[browser][log] Connected to Firestore emulator at localhost:8080
-[browser][log] [DEBUG][Router] location.pathname: /profile basename: /
-[browser][log] [analytics] app_loaded undefined
-[browser][log] [E2E DEBUG] Profile user: null
-[browser][log] [E2E DEBUG] Profile user: _UserImpl
-[browser][log] [DEBUG] Loading user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
-[browser][log] [DEBUG][userSettings] getUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {haptic: false, ariaSound: true, darkMode: false, showExplanations: true}
-[browser][log] [DEBUG] Loaded settings: {haptic: false, ariaSound: true, darkMode: false, showExplanations: true}
-[browser][log] [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
-[browser][log] [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
-[browser][log] [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
-[browser][log] [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
-[browser][debug] [vite] connecting...
-[browser][debug] [vite] connected.
-[browser][info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[browser][log] Connected to Firestore emulator at localhost:8080
-[browser][log] [DEBUG][Router] location.pathname: /profile basename: /
-[browser][log] [analytics] app_loaded undefined
-[browser][log] [E2E DEBUG] Profile user: _UserImpl
-[browser][log] [DEBUG] Loading user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
-[browser][log] [DEBUG][userSettings] getUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {haptic: false, ariaSound: true, showExplanations: true, darkMode: true}
-[browser][log] [DEBUG] Loaded settings: {haptic: false, ariaSound: true, showExplanations: true, darkMode: true}
-[browser][log] [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
-[browser][log] [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
-  ✓  65 [Desktop Chrome] › e2e/profile-update.spec.ts:16:3 › Profile Settings Persistence › can toggle dark mode and see it persist after reload (2.3s)
-  ✓  64 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:26:5 › Navigation and ARIA Accessibility Flow › Page / has correct ARIA roles and keyboard navigation (3.1s)
-
-  ✓  69 [Desktop Chrome] › e2e/quiz-keyboard-navigation.spec.ts:23:3 › Quiz keyboard navigation › ArrowDown/ArrowUp do not select or submit answers (4.3s)
-  ✓  70 [Desktop Chrome] › e2e/quiz-option-accessibility.spec.ts:4:3 › Quiz Option Accessibility › Each quiz option has correct ARIA attributes and is keyboard accessible (4.0s)
-  ✓  71 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:26:5 › Navigation and ARIA Accessibility Flow › Page /quiz has correct ARIA roles and keyboard navigation (3.8s)
-
-  ✓  72 [Desktop Chrome] › e2e/quiz-keyboard-navigation.spec.ts:54:3 › Quiz keyboard navigation › Enter/Space select and submit, Arrow keys do not (3.8s)
-  ✓  74 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:26:5 › Navigation and ARIA Accessibility Flow › Page /analytics has correct ARIA roles and keyboard navigation (3.6s)
-Button: '', enabled: true, visible: true, html: <button type="button" class="quiz-stepper-dot active answered" aria-current="step" aria-label="Go to question 1 (answered) (current)" role="button" data-testid="quiz-stepper-dot"></button>
-Button: '', enabled: true, visible: true, html: <button type="button" class="quiz-stepper-dot" aria-label="Go to question 2" role="button" data-testid="quiz-stepper-dot"></button>
-Button: 'Previous', enabled: false, visible: true, html: <button disabled="" aria-label="Previous question" role="button" aria-disabled="true">Previous</button>
-Button: 'Next', enabled: true, visible: true, html: <button aria-label="Next question" role="button" aria-disabled="false" tabindex="0" data-testid="quiz-next-btn" style="visibility: visible;">Next</button>
-Button: 'Finish', enabled: true, visible: true, html: <button aria-label="Finish quiz early" role="button" aria-disabled="false">Finish</button>
-Button: '', enabled: true, visible: true, html: <button type="button" class="quiz-stepper-dot answered" aria-label="Go to question 1 (answered)" role="button" data-testid="quiz-stepper-dot"></button>
-Button: '', enabled: true, visible: true, html: <button type="button" class="quiz-stepper-dot active answered" aria-label="Go to question 2 (answered) (current)" role="button" data-testid="quiz-stepper-dot" aria-current="step"></button>
-Button: 'Previous', enabled: true, visible: true, html: <button aria-label="Previous question" role="button" aria-disabled="false">Previous</button>
-Button: 'Next', enabled: false, visible: false, html: <button disabled="" aria-label="Next question" role="button" aria-disabled="true" tabindex="-1" data-testid="quiz-next-btn" style="visibility: hidden;">Next</button>
-Button: 'Finish Quiz', enabled: true, visible: true, html: <button aria-label="Finish quiz" role="button" aria-disabled="false">Finish Quiz</button>
-  ✓  76 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:26:5 › Navigation and ARIA Accessibility Flow › Page /profile has correct ARIA roles and keyboard navigation (3.3s)
-Final Quizzes Taken text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 23Correct Answers: 1 / 10Accuracy: 10%Current Streak: 0 daysBadges Earned: 0Topic Breakdownabdominal_muscle_origins1 / 10 correctQuiz Activity (Last 14 Days)
-Final Correct Answers text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 23Correct Answers: 1 / 10Accuracy: 10%Current Streak: 0 daysBadges Earned: 0Topic Breakdownabdominal_muscle_origins1 / 10 correctQuiz Activity (Last 14 Days)
-Final Accuracy text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 23Correct Answers: 1 / 10Accuracy: 10%Current Streak: 0 daysBadges Earned: 0Topic Breakdownabdominal_muscle_origins1 / 10 correctQuiz Activity (Last 14 Days)
-Final Topic Stats text: abdominal_muscle_origins
-1 / 10 correct
-Initial/Updated Quizzes Taken: [33m0[39m [33m23[39m
-Initial/Updated Correct: [33m0[39m [33m23[39m
-Initial/Updated Accuracy: [33m0[39m [33m23[39m
-Initial/Updated Topic Correct: [33m0[39m [33m1[39m
-  ✓  73 [Desktop Chrome] › e2e/quiz-stats-live-update.spec.ts:6:3 › Quiz Stats Live Update › Stats and topic stats update after quiz completion (7.6s)
-  -  78 [Desktop Chrome] › e2e/stats-persistence-firestore.spec.ts:19:8 › Stats Persistence with Firestore Backend Verification › UI stats and Firestore stats match and persist after quiz and reload
-User A initial stat: 4
-  ✓  75 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:41:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (9.6s)
-User A updated stat: 6
-  ✓  79 [Desktop Chrome] › e2e/stats-persistence.spec.ts:41:3 › Stats Persistence › should persist updated stats after quiz and reload (6.5s)
-User B stat: 0
-User A final stat: 6
-  ✓  77 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:44:3 › Stats Isolation per User › stats should not leak between users (8.4s)
-  -  82 [Desktop Chrome] › e2e/visual-regression.spec.ts:18:8 › Critical UI Visual Regression › quiz page matches visual snapshot
-  -  83 [Desktop Chrome] › e2e/visual-regression.spec.ts:18:8 › Critical UI Visual Regression › profile page matches visual snapshot
-  -  84 [Desktop Chrome] › e2e/visual-regression.spec.ts:18:8 › Critical UI Visual Regression › achievements page matches visual snapshot
-  -  85 [Desktop Chrome] › e2e/visual-regression.spec.ts:18:8 › Critical UI Visual Regression › analytics page matches visual snapshot
-  ✓  81 [Desktop Chrome] › e2e/ui-auth-smoke.spec.ts:15:1 › UI auth: can sign in via login form and see profile (3.0s)
-  ✓  80 [Desktop Chrome] › e2e/stats-topic-breakdown.spec.ts:13:3 › Stats Topic Breakdown › should increment topic breakdown after quiz in specific topic (5.1s)
-  -  87 [Mobile Chrome] › e2e/app.critical-flow.spec.ts:5:6 › should start quiz and focus first option
-  ✓  86 [Mobile Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (1.4s)
-  ✘  5 [Desktop Chrome] › e2e/app.spec.ts:18:1 › should reset quiz and focus first option after restart (1.0m)
-  ✓  90 [Mobile Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (624ms)
-Navigating to home page...
-Filling Quiz Length...
-  ✓  91 [Mobile Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (696ms)
-  ✓  92 [Mobile Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (445ms)
-  ✓  94 [Mobile Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:19:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (1.4s)
-Clicking Start button...
-Navigating to home page...
-Clicking first quiz option...
-Clicking Finish button...
-Filling Quiz Length...
-Clicking Start New Quiz button...
-Filling Quiz Length again...
-  ✓  88 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (5.4s)
-Clicking Start button again...
-Waiting for quiz loading spinner to disappear...
-Waiting for quiz question card to be visible...
-  ✓  96 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:89:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (765ms)
-Number of quiz options after restart: [33m4[39m
-Option 0 focused: [33mtrue[39m
-Option 1 focused: [33mfalse[39m
-Option 2 focused: [33mfalse[39m
-Option 3 focused: [33mfalse[39m
-Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_006-0-0-759e60dd-709e-4a28-82cf-11e33d83fabc" aria-label="Option A: Lower six thoracoabdominal nerves and L1" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_006-0-759e60dd-709e-4a28-82cf-11e33d83fabc" style="margin-right: 12px; cursor: pointer;">
-  ✓  89 [Mobile Chrome] › e2e/app.spec.ts:18:1 › should reset quiz and focus first option after restart (6.3s)
-Clicking Start button...
-Clicking first quiz option...
-Clicking Finish button...
-Clicking Start New Quiz button...
-Filling Quiz Length again...
-Clicking Start button again...
-Waiting for quiz loading spinner to disappear...
-Waiting for quiz question card to be visible...
-Number of quiz options after restart: [33m4[39m
-Option 0 focused: [33mtrue[39m
-  ✓  97 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:114:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (4.2s)
-Option 1 focused: [33mfalse[39m
-Option 2 focused: [33mfalse[39m
-Option 3 focused: [33mfalse[39m
-Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_006-0-0-e139a07a-eebe-457d-8dd6-5ee5fe1e6b9c" aria-label="Option A: Lower six thoracoabdominal nerves and L1" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_006-0-e139a07a-eebe-457d-8dd6-5ee5fe1e6b9c" style="margin-right: 12px; cursor: pointer;">
 All button texts on /quiz?e2e=1: [ [32m'Start Quiz'[39m ]
-  ✓  99 [Mobile Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (109ms)
-  ✓  100 [Mobile Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (7ms)
-  -  101 [Mobile Chrome] › e2e/assets-troubleshoot.spec.ts:10:8 › Development Asset Troubleshooting › Badge image is accessible directly
-  ✓  93 [Desktop Chrome] › e2e/app.spec.ts:18:1 › should reset quiz and focus first option after restart (retry #1) (7.9s)
-  ✓  102 [Mobile Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (352ms)
+  ✓  3 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.9s)
 Quiz Length input not found on /quiz. Page HTML: <!DOCTYPE html><html lang="en"><head>
-  <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.iFs_Bhrqdio.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-IvlQWaLHZdUKQFbafXd_3OEvU9Q/cb=gapi.loaded_0?le=scs" async=""></script><script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+  <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
 injectIntoGlobalHook(window);
 window.$RefreshReg$ = () => {};
 window.$RefreshSig$ = () => (type) => type;</script>
@@ -702,18 +471,26 @@ textarea:focus-visible,
     outline 0.1s,
     box-shadow 0.1s;
 }
-</style><style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style><script src="https://apis.google.com/js/api.js?onload=__iframefcb380064" type="text/javascript" charset="UTF-8" gapi_processed="true"></script><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-SWVWKNWDD3" async=""></script></head>
+</style><style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-SWVWKNWDD3" async=""></script></head>
 <body>
-  <div id="root"><header class="app-header"><img alt="App Icon" class="app-header__icon" src="/icon-512x512.png"><div class="app-header__titles"><span class="app-header__title-bold">Massage Therapy</span><span class="app-header__title-regular">Smart Study PRO</span></div></header><nav class="navbar" role="navigation" aria-label="Main navigation"><ul><li><a aria-label="Go to Quiz page" role="link" href="/quiz" data-discover="true">Quiz</a></li><li><a aria-label="Go to Achievements page" role="link" href="/achievements" data-discover="true">Achievements</a></li><li><a aria-label="Go to Analytics page" role="link" href="/analytics" data-discover="true">Analytics</a></li><li><a aria-label="Go to Profile page" role="link" href="/profile" data-discover="true">Profile</a></li></ul></nav><main class="main-content" role="main"><div class="quiz-container" data-testid="quiz-container" role="form"><h1>Quiz</h1><div data-testid="quiz-loading" style="color: rgb(37, 99, 235); font-weight: 600; margin-bottom: 12px; display: flex; align-items: center;"><div role="status" aria-label="Loading" style="display: inline-block; width: 32px; height: 32px; border-width: 4px; border-style: solid; border-color: rgb(37, 99, 235) rgb(203, 213, 225) rgb(203, 213, 225); border-image: none; border-radius: 50%; animation: 1s linear infinite spin; margin-right: 12px; vertical-align: middle;"></div>Loading...</div></div></main><footer class="app-footer"><input class="question-search-bar" placeholder="Search questions..." aria-label="Search questions" type="text"></footer></div>
+  <div id="root"><header class="app-header"><img alt="App Icon" class="app-header__icon" src="/icon-512x512.png"><div class="app-header__titles"><span class="app-header__title-bold">Massage Therapy</span><span class="app-header__title-regular">Smart Study PRO</span></div></header><nav class="navbar" role="navigation" aria-label="Main navigation"><ul><li><a aria-label="Go to Quiz page" role="link" href="/quiz" data-discover="true">Quiz</a></li><li><a aria-label="Go to Achievements page" role="link" href="/achievements" data-discover="true">Achievements</a></li><li><a aria-label="Go to Analytics page" role="link" href="/analytics" data-discover="true">Analytics</a></li><li><a aria-label="Go to Profile page" role="link" href="/profile" data-discover="true">Profile</a></li></ul></nav><main class="main-content" role="main"><div class="quiz-container" data-testid="quiz-container" role="form"><h1>Quiz</h1><div data-testid="quiz-loading" style="color: rgb(37, 99, 235); font-weight: 600; margin-bottom: 12px; display: flex; align-items: center;"><div role="status" aria-label="Loading" style="display: inline-block; width: 32px; height: 32px; border-width: 4px; border-style: solid; border-color: rgb(37, 99, 235) rgb(203, 213, 225) rgb(203, 213, 225); border-image: initial; border-radius: 50%; animation: 1s linear 0s infinite normal none running spin; margin-right: 12px; vertical-align: middle;"></div>Loading...</div></div></main><footer class="app-footer"><input class="question-search-bar" placeholder="Search questions..." aria-label="Search questions" type="text"></footer></div>
 
 
-<iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" tabindex="-1" vspace="0" width="100%" aria-hidden="true" id="I0_1751307056509" name="I0_1751307056509" src="https://massage-therapy-smart-st-c7f8f.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyANzEDUkGjM0M6L6dwZd1-TaOy1olo_6OM&amp;appName=%5BDEFAULT%5D&amp;v=11.9.0&amp;eid=p&amp;usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.iFs_Bhrqdio.O%2Fd%3D1%2Frs%3DAHpOoo-IvlQWaLHZdUKQFbafXd_3OEvU9Q%2Fm%3D__features__#id=I0_1751307056509&amp;_gfid=I0_1751307056509&amp;parent=http%3A%2F%2Flocalhost%3A5174&amp;pfname=&amp;rpctoken=14774044" style="position: absolute; top: -100px; width: 1px; height: 1px;"></iframe></body></html>
-  ✓  104 [Mobile Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (601ms)
-  ✓  105 [Mobile Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (365ms)
-  -  95 [Mobile Chrome] › e2e/aria-roles-labels.spec.ts:32:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels
-  ✓  98 [Mobile Chrome] › e2e/app.spec.ts:124:1 › should handle edge case: rapid answer selection (6.4s)
+</body></html>
+  ✓  13 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (494ms)
+  ✓  14 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:89:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (834ms)
+Number of quiz options after restart: [33m4[39m
+  ✓  15 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (801ms)
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_002-0-0-f964b12b-6ee0-4045-bcbf-06916828ca88" aria-label="Option A: Intercostal nerves (T7–T11) and subcostal nerve (T12)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_002-0-f964b12b-6ee0-4045-bcbf-06916828ca88" style="margin-right: 12px; cursor: pointer;">
+  ✓  5 [Desktop Chrome] › e2e/app.spec.ts:18:1 › should reset quiz and focus first option after restart (8.2s)
+  ✓  17 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (522ms)
+  -  4 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:32:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels
 PAGE CONTENT AFTER LOGIN: <!DOCTYPE html><html lang="en"><head>
-  <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.iFs_Bhrqdio.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-IvlQWaLHZdUKQFbafXd_3OEvU9Q/cb=gapi.loaded_0?le=scs" async=""></script><script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+  <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
 injectIntoGlobalHook(window);
 window.$RefreshReg$ = () => {};
 window.$RefreshSig$ = () => (type) => type;</script>
@@ -727,37 +504,72 @@ window.$RefreshSig$ = () => (type) => type;</script>
   <link rel="apple-touch-icon" href="/Massage-Therapy-FIREBASE-PRO/icon-512x512.png">
   <meta name="theme-color" content="#1e3c28">
   <script type="module" src="/src/index.tsx"></script>
-<style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBAS
+<style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/src/components/AppHeader.css">.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 0 1rem 0;
+  justify-content: center;
+}
+.app-header__icon {
+  width: 48px;
+  he
 BROWSER CONSOLE: log [E2E DEBUG] Profile user: _UserImpl
 BROWSER CONSOLE: log [DEBUG] Loading user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
-BROWSER CONSOLE: warning [2025-06-30T18:10:59.268Z]  @firebase/firestore: Firestore (11.9.0): WebChannelConnection RPC 'Listen' stream 0x268984b2 transport errored. Name: undefined Message: undefined
-BROWSER CONSOLE: error [2025-06-30T18:10:59.269Z]  @firebase/firestore: Firestore (11.9.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
-This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend.
+BROWSER CONSOLE: log [DEBUG][userSettings] getUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {haptic: false, ariaSound: true, showExplanations: true, darkMode: true}
+BROWSER CONSOLE: log [DEBUG] Loaded settings: {haptic: false, ariaSound: true, showExplanations: true, darkMode: true}
+BROWSER CONSOLE: log [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+BROWSER CONSOLE: log [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
 BROWSER CONSOLE: debug [vite] connecting...
 BROWSER CONSOLE: debug [vite] connected.
+BROWSER CONSOLE: info %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 BROWSER CONSOLE: log Connected to Firestore emulator at localhost:8080
 BROWSER CONSOLE: log [DEBUG][Router] location.pathname: /profile basename: /
 BROWSER CONSOLE: log [analytics] app_loaded undefined
 BROWSER CONSOLE: log [E2E DEBUG] Profile user: _UserImpl
 BROWSER CONSOLE: log [DEBUG] Loading user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
-  ✓  107 [Mobile Chrome] › e2e/aria-roles-labels.spec.ts:111:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (2.4s)
-  ✓  106 [Mobile Chrome] › e2e/auth-session-persistence.spec.ts:18:3 › Auth Session Persistence › should persist session after reload (2.7s)
-  ✓  110 [Mobile Chrome] › e2e/auth.spec.ts:6:3 › Authentication UI Flows › should show sign-in prompt on Analytics when unauthenticated (1.1s)
+BROWSER CONSOLE: log [DEBUG][userSettings] getUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {haptic: false, ariaSound: true, showExplanations: true, darkMode: true}
+BROWSER CONSOLE: log [DEBUG] Loaded settings: {haptic: false, ariaSound: true, showExplanations: true, darkMode: true}
+BROWSER CONSOLE: log [DEBUG] Saving user settings for: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+BROWSER CONSOLE: log [DEBUG][userSettings] setUserSettings: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3 {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+  ✓  19 [Desktop Chrome] › e2e/auth-session-persistence.spec.ts:18:3 › Auth Session Persistence › should persist session after reload (1.9s)
+  ✓  20 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:111:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (2.3s)
+  ✓  22 [Desktop Chrome] › e2e/auth.spec.ts:6:3 › Authentication UI Flows › should show sign-in prompt on Analytics when unauthenticated (1.0s)
+  ✓  21 [Desktop Chrome] › e2e/auth-smoke.spec.ts:4:1 › auth smoke: can sign in and see user info (1.9s)
 Navigated to /profile
 Sign-in button is visible
 Popup opened event detected
-  ✓  109 [Mobile Chrome] › e2e/auth-smoke.spec.ts:4:1 › auth smoke: can sign in and see user info (2.3s)
-  ✓  111 [Mobile Chrome] › e2e/auth.spec.ts:11:3 › Authentication UI Flows › should show sign-in button and open popup on Profile page (1.3s)
-  ✓  103 [Desktop Chrome] › e2e/app.spec.ts:124:1 › should handle edge case: rapid answer selection (6.6s)
-  ✓  113 [Mobile Chrome] › e2e/auth.spec.ts:45:3 › Authentication UI Flows › should show sign-in button after sign out click (UI only) (654ms)
-  ✓  115 [Mobile Chrome] › e2e/badge-dynamic-behavior.spec.ts:6:1 › badges.json has correct criteria and image fields (83ms)
-  ✓  112 [Mobile Chrome] › e2e/badge-appearance.spec.ts:13:2 › Local badge images (UI login) › All key badges appear on Achievements page (2.1s)
-  ✘  116 [Mobile Chrome] › e2e/badge-dynamic-behavior.spec.ts:25:1 › badge_test image is visible and loads (1.3s)
-  ✓  117 [Mobile Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to / (451ms)
-  ✓  108 [Mobile Chrome] › e2e/app.spec.ts:145:1 › should show explanations when enabled (6.8s)
-  ✓  118 [Mobile Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /quiz (682ms)
-  ✓  120 [Mobile Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /analytics (570ms)
-  ✓  121 [Mobile Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /profile (402ms)
-  -  123 [Mobile Chrome] › e2e/critical-edge-accessibility.spec.ts:5:8 › Critical Quiz Edge Cases and Accessibility › Partial answers: finish quiz with unanswered questions
-  -  124 [Mobile Chrome] › e2e/critical-edge-accessibility.spec.ts:24:8 › Critical Quiz Edge Cases and Accessibility › Network failure: loading questions
-  ✓  114 [Desktop Chrome] › e2e/app.spec.ts:145:1 › should show explanations when enabled (4.4s)
+  ✓  16 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:114:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (6.2s)
+  ✓  25 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:6:1 › badges.json has correct criteria and image fields (115ms)
+  ✓  23 [Desktop Chrome] › e2e/auth.spec.ts:11:3 › Authentication UI Flows › should show sign-in button and open popup on Profile page (2.0s)
+  ✓  24 [Desktop Chrome] › e2e/badge-appearance.spec.ts:13:2 › Local badge images (UI login) › All key badges appear on Achievements page (2.2s)
+  ✓  27 [Desktop Chrome] › e2e/auth.spec.ts:45:3 › Authentication UI Flows › should show sign-in button after sign out click (UI only) (1.1s)
+  -  29 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:5:8 › Critical Quiz Edge Cases and Accessibility › Partial answers: finish quiz with unanswered questions
+  -  30 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:24:8 › Critical Quiz Edge Cases and Accessibility › Network failure: loading questions
+  ✓  26 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:25:1 › badge_test image is visible and loads (1.7s)
+  ✓  28 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to / (1.1s)
+  ✓  32 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /quiz (794ms)
+  ✓  34 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /analytics (981ms)
+  ✓  35 [Desktop Chrome] › e2e/basic-navigation.spec.ts:13:5 › Basic Navigation › can navigate to /profile (1.3s)
+Radio 0 disabled: [33mtrue[39m
+Radio 1 disabled: [33mtrue[39m
+Radio 2 disabled: [33mtrue[39m
+Radio 3 disabled: [33mtrue[39m
+  ✓  36 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:5:3 › Quiz Edge Cases and Accessibility › Quiz with all options disabled: keyboard navigation skips disabled (4.1s)
+  ✓  37 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:33:3 › Quiz Edge Cases and Accessibility › Badge modal: opens and fallback image appears if missing (926ms)
+Tab 1: Focused element: Finish quiz
+Tab 2: Focused element: Search questions
+Tab 3: Focused element: BODY
+Tab 4: Focused element: Go to Quiz page
+Tab 5: Focused element: Go to Achievements page
+Tab 6: Focused element: Go to Analytics page
+Tab 7: Focused element: Go to Profile page
+Tab 8: Focused element: Quiz progress: 0%
+Tab 9: Focused element: Go to question 1 (current)
+Tab 10: Focused element: Option A: Lower six thoracoabdominal nerves and L1
+Tab 11: Focused element: Finish quiz
+Tab 12: Focused element: Search questions
+  ✓  38 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:52:3 › Quiz Edge Cases and Accessibility › Tab order: all interactive elements are reachable (2.8s)
+  -  39 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:79:8 › Quiz Edge Cases and Accessibility › Screen reader text: ARIA labels and roles
+  ✓  40 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:101:3 › Quiz Edge Cases and Accessibility › Mobile viewport: quiz, results, achievements (2.7s)
+  ✘  33 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:5:3 › Critical UI and Accessibility Scenarios › Mobile viewport: quiz UI, results, and modals are visible and usable (21.0s)
