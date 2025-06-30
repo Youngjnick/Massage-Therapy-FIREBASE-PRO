@@ -125,12 +125,21 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
   await page.goto('/');
   await page.getByLabel('Quiz Length').fill('2');
   await page.getByRole('button', { name: /start/i }).click();
+  // Wait for quiz question card to be visible
+  await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
   const options = page.getByTestId('quiz-option');
   await options.nth(0).click();
+  await page.waitForTimeout(150); // allow UI to update
   await options.nth(1).click();
+  await page.waitForTimeout(150); // allow UI to update
   await options.nth(0).click();
   // Should not crash, and feedback should be shown
-  await expect(page.getByTestId('quiz-feedback')).toBeVisible();
+  const feedback = page.getByTestId('quiz-feedback');
+  if (!(await feedback.isVisible())) {
+    const html = await page.content();
+    console.error('Quiz feedback not found after rapid answer selection. Page HTML:', html);
+  }
+  await expect(feedback).toBeVisible();
 });
 
 test('should show explanations when enabled', async ({ page }) => {

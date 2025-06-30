@@ -36,6 +36,15 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
 
   test('ARIA attributes: quiz options and navigation', async ({ page }, testInfo) => {
     await page.goto('/');
+    // Wait for quiz loading spinner to disappear (if present)
+    try {
+      await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+    } catch {
+      const html = await page.content();
+      console.error('Quiz loading spinner did not disappear. Page HTML:', html);
+      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+      throw new Error('Quiz did not finish loading.');
+    }
     // Robust: try multiple selectors for quiz length input
     let quizLengthInput;
     try {
