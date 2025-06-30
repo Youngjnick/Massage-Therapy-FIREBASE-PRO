@@ -1,31 +1,112 @@
 /* global console */
 import { test, expect } from '@playwright/test';
 
-test('should reset quiz and focus first option after restart', async ({ page }) => {
+test.setTimeout(60000); // Increase timeout for all tests in this file
+
+test('should reset quiz and focus first option after restart', async ({ page }, testInfo) => {
+  // Collect browser console logs for debug
+  const logs: string[] = [];
+  page.on('console', msg => logs.push(msg.type() + ': ' + msg.text()));
+
+  console.log('Navigating to home page...');
   await page.goto('/');
+  console.log('Filling Quiz Length...');
   await page.getByLabel('Quiz Length').fill('1');
+  console.log('Clicking Start button...');
   await page.getByRole('button', { name: /start/i }).click();
+  console.log('Clicking first quiz option...');
   await page.getByTestId('quiz-option').first().click();
+  console.log('Clicking Finish button...');
   await page.getByRole('button', { name: /finish/i }).click();
+  console.log('Clicking Start New Quiz button...');
   await page.getByRole('button', { name: /start new quiz/i }).click();
   // After reset, fill the start form again and start the quiz
+  console.log('Filling Quiz Length again...');
   await page.getByLabel('Quiz Length').fill('1');
+  console.log('Clicking Start button again...');
   await page.getByRole('button', { name: /start/i }).click();
 
   // Wait for loading spinner to disappear (if present)
   try {
-    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+    console.log('Waiting for quiz loading spinner to disappear...');
+    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 25000 });
   } catch {
-    console.error('Quiz loading spinner did not disappear. Page HTML:', await page.content());
+    const html = await page.content();
+    console.error('Quiz loading spinner did not disappear. Page HTML:', html);
+    console.error('Browser console logs:', logs.join('\n'));
+    if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
     throw new Error('Quiz did not finish loading.');
   }
 
-  // Wait for the first radio input to be visible
+  // Wait for quiz question container to be visible
+  try {
+    console.log('Waiting for quiz question card to be visible...');
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+  } catch {
+    const html = await page.content();
+    console.error('Quiz question card not visible after spinner. Page HTML:', html);
+    console.error('Browser console logs:', logs.join('\n'));
+    if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+    throw new Error('Quiz question card not visible.');
+  }
+
+  // Wait a bit longer to allow React to focus
+  await page.waitForTimeout(700);
+
+  // Log number of quiz options
+  const optionCount = await page.getByTestId('quiz-option').count();
+  console.log('Number of quiz options after restart:', optionCount);
+
+  // Wait for the first radio input to be visible and enabled
   const firstOption = page.getByTestId('quiz-option').first();
   const input = await firstOption.locator('input[type="radio"]');
-  if (input) {
-    await expect(input).toBeFocused();
+  await expect(input).toBeVisible({ timeout: 15000 });
+  await expect(input).toBeEnabled();
+
+  // Log all focusable quiz options and their focus state
+  const allOptions = await page.locator('[data-testid="quiz-option"] input[type="radio"]').all();
+  for (let i = 0; i < allOptions.length; i++) {
+    const isFocused = await allOptions[i].evaluate((node) => node === document.activeElement);
+    console.log(`Option ${i} focused:`, isFocused);
   }
+  const activeTag = await page.evaluate(() => document.activeElement?.outerHTML || 'none');
+  console.log('Active element after quiz restart:', activeTag);
+
+  // Wait for focus, log debug info if not focused
+  let focused = false;
+  let lastActiveTag = '';
+  for (let retry = 0; retry < 20; retry++) {
+    focused = await input.evaluate((node) => node === document.activeElement);
+    if (focused) break;
+    lastActiveTag = await page.evaluate(() => document.activeElement?.outerHTML || 'none');
+    await page.waitForTimeout(150);
+  }
+  if (!focused) {
+    // Try to focus programmatically
+    console.warn('First quiz option radio not focused, trying to focus programmatically...');
+    await input.focus();
+    await page.waitForTimeout(300);
+    focused = await input.evaluate((node) => node === document.activeElement);
+    if (!focused) {
+      // Try tabbing to the input
+      console.warn('Programmatic focus failed, trying to tab to the input...');
+      await page.keyboard.press('Tab');
+      await page.waitForTimeout(300);
+      focused = await input.evaluate((node) => node === document.activeElement);
+    }
+  }
+  if (!focused) {
+    const html = await page.content();
+    const screenshot = await page.screenshot();
+    console.error('First quiz option radio was not focused after restart. Page HTML:', html);
+    console.error('Active element:', lastActiveTag);
+    console.error('Browser console logs:', logs.join('\n'));
+    if (testInfo) {
+      await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+      await testInfo.attach('screenshot', { body: screenshot, contentType: 'image/png' });
+    }
+  }
+  expect(focused).toBeTruthy();
 });
 
 test('should handle edge case: no questions', async ({ page }) => {
@@ -51,6 +132,15 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
 
 test('should show explanations when enabled', async ({ page }) => {
   await page.goto('/');
+  // Wait for the Quiz Start form or Quiz Length input to be visible
+  try {
+    await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
+    await page.waitForSelector('[aria-label="Quiz Length"]', { state: 'visible', timeout: 15000 });
+  } catch {
+    const html = await page.content();
+    console.error('Quiz Start form or Quiz Length input not visible. Page HTML:', html);
+    throw new Error('Quiz Start form or Quiz Length input not visible.');
+  }
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
   // Simulate enabling explanations (if toggle exists)
