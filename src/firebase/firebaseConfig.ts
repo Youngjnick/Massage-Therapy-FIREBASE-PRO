@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
 import { getAnalytics, logEvent as firebaseLogEvent, isSupported } from 'firebase/analytics';
 
 const firebaseConfig = {
@@ -14,6 +14,21 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+
+// Connect to Firestore emulator in E2E/dev
+if (typeof window !== 'undefined') {
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const isE2E = window.location.search.includes('e2e=1');
+  if (isLocalhost || isE2E) {
+    // Avoid double-connecting in hot reload
+    try {
+      connectFirestoreEmulator(db, 'localhost', 8080);
+      console.log('Connected to Firestore emulator at localhost:8080');
+    } catch {
+      // Ignore errors when connecting to Firestore emulator (may already be connected)
+    }
+  }
+}
 
 // Initialize analytics only if supported (browser, not SSR)
 let analytics: ReturnType<typeof getAnalytics> | null = null;

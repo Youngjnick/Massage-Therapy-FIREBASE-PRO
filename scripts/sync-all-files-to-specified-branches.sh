@@ -120,165 +120,110 @@ if [[ ${#all_targets[@]} -gt 0 ]]; then
   fi
 fi
 
-# Run all tests before syncing branches (optional, controlled by SKIP_TESTS)
-GREEN='\033[32m'
-RED='\033[31m'
-YELLOW='\033[33m'
-NC='\033[0m' # No Color
+# --- TEST & LINT SECTION ---
+# Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
+# If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
+
+WIP_MODE=false
 TEST_SUMMARY=""
 PW_SUMMARY=""
-WIP_MODE=false
 
 if [[ "$SKIP_TESTS" = false ]]; then
-  # 1. Run lint
+  # 1. ESLint
   echo "Running ESLint..."
-  echo "Running ESLint..." >> "$LOG_FILE"
   npx eslint . | tee scripts/eslint-output.txt
   if grep -q "error" scripts/eslint-output.txt; then
-    echo -e "${RED}Lint errors detected. Please fix them before syncing.${NC}"
-    # Print only error lines with file and line info
+    echo -e "${RED}Lint errors detected.${NC}"
     grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
       echo -e "${RED}$line${NC}"
     done
     echo "What do you want to do? (fix/wip/abort): "
     read lint_decision
     if [[ "$lint_decision" == "fix" ]]; then
-      echo "Opening a shell for you to fix errors. Type 'exit' when done."
       $SHELL
       exit 1
     elif [[ "$lint_decision" == "wip" ]]; then
       WIP_MODE=true
     else
-      echo "Aborted sync due to lint errors."
+      echo "Aborted due to lint errors."
       exit 1
     fi
   fi
   rm -f scripts/eslint-output.txt
 
-  # 2. Run TypeScript type check
+  # 2. TypeScript
   echo "Running TypeScript type check..."
-  echo "Running TypeScript type check..." >> "$LOG_FILE"
   npx tsc --noEmit | tee scripts/ts-output.txt
   if [[ $? -ne 0 ]]; then
-    echo -e "${RED}TypeScript type errors detected. Please fix them before syncing.${NC}"
-    # Print only error lines with file and line info
+    echo -e "${RED}TypeScript errors detected.${NC}"
     grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
       echo -e "${RED}$line${NC}"
     done
     echo "What do you want to do? (fix/wip/abort): "
     read ts_decision
     if [[ "$ts_decision" == "fix" ]]; then
-      echo "Opening a shell for you to fix errors. Type 'exit' when done."
       $SHELL
       exit 1
     elif [[ "$ts_decision" == "wip" ]]; then
       WIP_MODE=true
     else
-      echo "Aborted sync due to TypeScript errors."
+      echo "Aborted due to TypeScript errors."
       exit 1
     fi
   fi
   rm -f scripts/ts-output.txt
 
-  # 3. Run Jest/unit tests with progress
-  echo "Running npm test (Jest) for all branches..."
-  echo "Running npm test (Jest) for all branches..." >> "$LOG_FILE"
+  # 3. Jest
+  echo "Running Jest tests..."
   npm test -- --reporter=default | tee scripts/test-output.txt
-  # Colorize Jest output
-  awk '{
-    if ($0 ~ /[0-9]+ passing/) {print "\033[32m" $0 "\033[0m"} \
-    else if ($0 ~ /skipped|flaky|pending|todo/) {print "\033[33m" $0 "\033[0m"} \
-    else if ($0 ~ /failing|failed|FAIL/) {print "\033[31m" $0 "\033[0m"} \
-    else {print $0}
-  }' scripts/test-output.txt
   if grep -q "failing" scripts/test-output.txt; then
-    FAILS=$(grep -A 1000 "failing" scripts/test-output.txt | grep -E '^[0-9]+\) ')
-    TEST_SUMMARY="\n${RED}Test results: FAIL${NC}\n$FAILS"
-    echo -e "${RED}The following tests failed:${NC}"
-    echo "$FAILS" | while read -r fail_line; do
-      echo -e "${RED}$fail_line${NC}"
-    done
-    grep -Eo 'at [^ ]+\.test\.[jt]s[x]?:[0-9]+:[0-9]+' scripts/test-output.txt | awk '{print $2}' | sort | uniq > scripts/last-failing-jest-files.txt
-    echo -e "\n${RED}Failing Jest test files saved to scripts/last-failing-jest-files.txt${NC}"
-    echo "To re-run only failing tests: npx jest $(cat scripts/last-failing-jest-files.txt | xargs)"
-    echo "\nTests are failing. What do you want to do? (fix/wip/abort): "
-    read commit_decision
-    if [[ "$commit_decision" == "fix" ]]; then
-      echo "Opening a shell for you to fix errors. Type 'exit' when done."
+    echo -e "${RED}Jest tests failed.${NC}"
+    echo "What do you want to do? (fix/wip/abort): "
+    read jest_decision
+    if [[ "$jest_decision" == "fix" ]]; then
       $SHELL
       exit 1
-    elif [[ "$commit_decision" == "wip" ]]; then
+    elif [[ "$jest_decision" == "wip" ]]; then
       WIP_MODE=true
     else
-      echo "Aborted sync due to failing tests."
+      echo "Aborted due to Jest failures."
       exit 1
     fi
-  elif grep -q "passing" scripts/test-output.txt; then
-    PASS_COUNT=$(grep -o '[0-9]\+ passing' scripts/test-output.txt | head -1)
-    TEST_SUMMARY="\nTest results: PASS ($PASS_COUNT)"
-  else
-    TEST_SUMMARY="\nTest results: UNKNOWN"
   fi
   rm -f scripts/test-output.txt
 
-  # 4. Run Playwright E2E in headed mode
-  if [[ -f playwright.config.ts && "$SKIP_ALL" = false ]]; then
-    echo "Starting dev server for E2E tests..."
-    echo "Starting dev server for E2E tests..." >> "$LOG_FILE"
+  # 4. Playwright/E2E (always after Jest)
+  if [[ -f playwright.config.ts ]]; then
+    echo "Starting dev server for E2E..."
     npm run dev > scripts/dev-server-e2e.log 2>&1 &
     DEV_SERVER_PID=$!
     sleep 5
-    echo "Running npm run test:e2e:headed (Playwright E2E tests in headed mode)..."
-    echo "Running npm run test:e2e:headed (Playwright E2E tests in headed mode)..." >> "$LOG_FILE"
+    echo "Running Playwright E2E..."
     npm run test:e2e:headed | tee scripts/playwright-output.txt
-    # Enhanced Playwright output colorization
-    awk '{
-      if ($0 ~ /\bpassed\b|✓/) {print "\033[32m" $0 "\033[0m"} \
-      else if ($0 ~ /skipped|flaky|pending|todo|\bexpected to fail\b/) {print "\033[33m" $0 "\033[0m"} \
-      else if ($0 ~ /failed|✖|FAILED|FAIL/) {print "\033[31m" $0 "\033[0m"} \
-      else {print $0}
-    }' scripts/playwright-output.txt
     if grep -q "failed" scripts/playwright-output.txt; then
-      PW_ERRORS=$(cat scripts/playwright-output.txt)
-      PW_SUMMARY="\nPlaywright E2E errors:\n$PW_ERRORS"
-      # Print failed E2E tests in red
-      echo -e "${RED}The following Playwright E2E tests failed:${NC}"
-      grep -E '^\s*✖|FAILED' scripts/playwright-output.txt | while read -r fail_line; do
-        echo -e "${RED}$fail_line${NC}"
-      done
-      # Always clear the file before writing
-      > scripts/last-failing-playwright-files.txt
-      # Try to extract failed test files from Playwright output (modern and legacy formats)
-      grep -E '\\[e2e/[^ ]+\\.spec\\.[jt]sx?\\]' scripts/playwright-output.txt | sed -E 's/.*\[(e2e\/[^ ]+\\.spec\\.[jt]sx?)\].*/\1/' | sort | uniq >> scripts/last-failing-playwright-files.txt
-      # Fallback for older output formats
-      if [[ ! -s scripts/last-failing-playwright-files.txt ]]; then
-        grep -E '^e2e/[^ ]+\\.spec\\.[jt]s[x]? +.*FAILED' scripts/playwright-output.txt | awk '{print $1}' | sort | uniq >> scripts/last-failing-playwright-files.txt
-      fi
-      echo "\nFailing Playwright test files saved to scripts/last-failing-playwright-files.txt"
-      echo "To re-run only failing tests: npm run test:e2e:headed -- $(cat scripts/last-failing-playwright-files.txt | xargs)"
-      echo "\nPlaywright E2E tests failed. What do you want to do? (fix/wip/abort): "
+      echo -e "${RED}Playwright E2E failed.${NC}"
+      echo "What do you want to do? (fix/wip/abort): "
       read pw_decision
       if [[ "$pw_decision" == "fix" ]]; then
-        echo "Opening a shell for you to fix errors. Type 'exit' when done."
-        $SHELL
         kill $DEV_SERVER_PID 2>/dev/null
+        $SHELL
         exit 1
       elif [[ "$pw_decision" == "wip" ]]; then
         WIP_MODE=true
       else
-        echo "Aborted sync due to Playwright E2E failures."
         kill $DEV_SERVER_PID 2>/dev/null
+        echo "Aborted due to Playwright failures."
         exit 1
       fi
-    elif grep -q "passed" scripts/playwright-output.txt; then
-      PW_SUMMARY="\nPlaywright E2E: PASS"
-    else
-      PW_SUMMARY="\nPlaywright E2E: UNKNOWN"
     fi
     rm -f scripts/playwright-output.txt
     kill $DEV_SERVER_PID 2>/dev/null
   fi
 fi
+
+# --- ALWAYS PUSH/UPLOAD SECTION ---
+# If WIP_MODE is set, commit as WIP, otherwise normal commit
+# Always push/force-push to all specified branches/remotes
 
 # Auto-commit WIP if requested
 if [[ "$AUTO_COMMIT_WIP" = true ]]; then
@@ -342,6 +287,8 @@ for target in $all_targets; do
     fi
     git commit -m "$COMMIT_MSG"
   fi
+  # Print message before pushing
+  echo "Pushing to $remote/$branch..."
   # Push to remote/branch
   if git push $remote HEAD:$branch; then
     PUSH_MODE="normal"
@@ -350,6 +297,7 @@ for target in $all_targets; do
     echo "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
     echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
     echo "Automatically force pushing to overwrite remote history..."
+    echo "Force pushing to $remote/$branch..."
     if git push --force $remote HEAD:$branch; then
       PUSH_MODE="force"
       PUSH_SUCCESS=true

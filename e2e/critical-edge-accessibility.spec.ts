@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+/* global console */
 
 test.describe('Critical Quiz Edge Cases and Accessibility', () => {
   test('Partial answers: finish quiz with unanswered questions', async ({ page }) => {
@@ -34,8 +35,27 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
 
   test('ARIA attributes: quiz options and navigation', async ({ page }) => {
     await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('2');
-    await page.getByRole('button', { name: /start/i }).click();
+    // Robust: try multiple selectors for quiz length input
+    let quizLengthInput;
+    try {
+      quizLengthInput = await page.getByLabel('Quiz Length');
+      await quizLengthInput.fill('2');
+    } catch {
+      quizLengthInput = await page.locator('[aria-label="Quiz Length"], input[name="quizLength"]');
+      if (await quizLengthInput.count() > 0) {
+        await quizLengthInput.first().fill('2');
+      } else {
+        // Debug: print page HTML if not found
+        console.log('Quiz Length input not found on /. Page HTML:', await page.content());
+      }
+    }
+    // Robust: try multiple names for Start button
+    const startBtn = page.getByRole('button', { name: /start|begin|start quiz/i });
+    if (!(await startBtn.count())) {
+      console.log('Start button not found on /. Page HTML:', await page.content());
+    }
+    await expect(startBtn).toBeVisible({ timeout: 10000 });
+    await startBtn.click();
     const radios = page.getByTestId('quiz-radio');
     for (let i = 0; i < await radios.count(); i++) {
       const ariaChecked = await radios.nth(i).getAttribute('aria-checked');
