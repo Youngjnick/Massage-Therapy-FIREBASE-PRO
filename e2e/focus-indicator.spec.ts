@@ -1,3 +1,4 @@
+/* global console */
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 
@@ -16,6 +17,13 @@ test.use({ viewport: { width: 375, height: 812 } }); // iPhone X/11/12/13/14 siz
 test.describe('Mobile Accessibility: Focus Indicator on Quiz', () => {
   test('Tabs through all interactive elements and checks visible focus indicator', async ({ page }, testInfo) => {
     await page.goto(quizUrl);
+    // Wait for loading spinner to disappear (if present)
+    try {
+      await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+    } catch {
+      console.error('Quiz loading spinner did not disappear on mobile quiz. Page HTML:', await page.content());
+      throw new Error('Quiz did not finish loading on mobile.');
+    }
     await page.waitForSelector('form', { timeout: 10000 });
     // Get all potentially interactive elements
     const allHandles = await page.$$(interactiveSelectors.join(','));
