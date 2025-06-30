@@ -22,6 +22,6 @@ describe('BadgeModal image fallback', () => {
     expect(img.getAttribute('src')).toContain('badges/badge_test.png');
     // Simulate error
     fireEvent.error(img);
-    expect(img.getAttribute('src')).toContain('badges/badge_test.png'); // fallback is same for test badge
+    expect(img.src).toContain('badges/badge_test.png'); // fallback is same for test badge
   });
 });
