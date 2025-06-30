@@ -15,6 +15,15 @@ const interactiveSelectors = [
 test.use({ viewport: { width: 375, height: 812 } }); // iPhone X/11/12/13/14 size
 
 test.describe('Mobile Accessibility: Focus Indicator on Quiz', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/');
+    await page.evaluate(() => {
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+    });
+    await page.context().clearCookies();
+    await page.reload();
+  });
   test('Tabs through all interactive elements and checks visible focus indicator', async ({ page }, testInfo) => {
     await page.goto(quizUrl);
     // Wait for loading spinner to disappear (if present)

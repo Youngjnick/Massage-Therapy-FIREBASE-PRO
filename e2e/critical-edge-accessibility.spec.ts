@@ -35,7 +35,14 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
   });
 
   test('ARIA attributes: quiz options and navigation', async ({ page }, testInfo) => {
+    // Robust: always clear storage and cookies before test
     await page.goto('/');
+    await page.evaluate(() => {
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+    });
+    await page.context().clearCookies();
+    await page.reload();
     // Wait for quiz loading spinner to disappear (if present)
     try {
       await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 30000 });

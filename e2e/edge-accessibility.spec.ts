@@ -2,9 +2,27 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Quiz Edge Cases and Accessibility', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/');
+    await page.evaluate(() => {
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+    });
+    await page.context().clearCookies();
+    await page.reload();
+  });
+
   test('Quiz with all options disabled: keyboard navigation skips disabled', async ({ page }, testInfo) => {
     await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('1');
+    const quizLengthInput = await page.getByLabel('Quiz Length');
+    const isEnabled = await quizLengthInput.isEnabled();
+    const max = await quizLengthInput.getAttribute('max');
+    if (!isEnabled || max === '0') {
+      const html = await page.content();
+      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+      throw new Error('No questions available for quiz. Check your data or Firestore emulator.');
+    }
+    await quizLengthInput.fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     // Force-disable all radios
     await page.evaluate(() => {

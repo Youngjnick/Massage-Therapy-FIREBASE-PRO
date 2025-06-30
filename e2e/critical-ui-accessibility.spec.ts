@@ -3,6 +3,16 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Critical UI and Accessibility Scenarios', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/');
+    await page.evaluate(() => {
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+    });
+    await page.context().clearCookies();
+    await page.reload();
+  });
+
   test('Mobile viewport: quiz UI, results, and modals are visible and usable', async ({ page }) => {
     test.setTimeout(60000); // Increase timeout for this test
     await page.setViewportSize({ width: 375, height: 812 }); // iPhone X size
@@ -97,7 +107,15 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
 
   test('Next button: always rendered, but hidden or disabled as appropriate', async ({ page }) => {
     await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('1');
+    const quizLengthInput = await page.getByLabel('Quiz Length');
+    const isEnabled = await quizLengthInput.isEnabled();
+    const max = await quizLengthInput.getAttribute('max');
+    if (!isEnabled || max === '0') {
+      const html = await page.content();
+      console.error('Quiz Length input is disabled or max=0. Page HTML:', html);
+      throw new Error('No questions available for quiz. Check your data or Firestore emulator.');
+    }
+    await quizLengthInput.fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     const nextBtns = await page.locator('button', { hasText: /next/i }).all();
     if (nextBtns.length === 0) {

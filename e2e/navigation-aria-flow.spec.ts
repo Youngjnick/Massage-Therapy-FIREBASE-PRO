@@ -19,6 +19,13 @@ const pageRoles = {
 
 test.describe('Navigation and ARIA Accessibility Flow', () => {
   test.beforeEach(async ({ page }) => {
+    await page.goto('/');
+    await page.evaluate(() => {
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+    });
+    await page.context().clearCookies();
+    await page.reload();
     await generateTokenAndSignIn(page);
   });
 
