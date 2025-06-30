@@ -183,7 +183,22 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
 });
 
 test('should show explanations when enabled', async ({ page }) => {
+  // Go to the app (use relative path for dev server)
   await page.goto('/');
+
+  // Set the toggle state in localStorage for this origin
+  await page.evaluate(() => {
+    window.localStorage.setItem('quizToggleState', JSON.stringify({
+      showExplanations: true,
+      instantFeedback: true,
+      randomizeQuestions: true,
+      randomizeOptions: false
+    }));
+  });
+
+  // Reload so the app picks up the new localStorage value
+  await page.reload();
+
   // Wait for the Quiz Start form and Quiz Length input
   await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
   await page.waitForSelector('[aria-label="Quiz Length"]', { state: 'visible', timeout: 15000 });
@@ -204,11 +219,26 @@ test('should show explanations when enabled', async ({ page }) => {
   // Wait for quiz question card to be visible
   await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
 
+  // Click the first option to trigger feedback/explanation
+  const options = page.getByTestId('quiz-option');
+  await options.nth(0).click();
+  await page.waitForTimeout(200); // allow UI to update
+
+  // Log the question object for debug
+  const questionDebug = await page.evaluate(() => {
+    // @ts-ignore
+    return window.__LAST_QUIZ_QUESTION__ || null;
+  });
+  console.log('[E2E DEBUG] Quiz question object:', questionDebug);
+
   // Check for explanation element by class
   const explanation = page.locator('.quiz-explanation');
   if (!(await explanation.isVisible())) {
     const html = await page.content();
     console.error('Explanation element not found. Page HTML:', html);
+    if (!questionDebug || (!questionDebug.shortExplanation && !questionDebug.longExplanation)) {
+      throw new Error('Test question does not have an explanation.');
+    }
   }
   await expect(explanation).toBeVisible();
 });

@@ -54,6 +54,12 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
       ? q
       : { question: 'No questions available', options: ['N/A'], correctAnswer: 'N/A', id: 'empty' };
 
+  // DEBUG: Expose question object for E2E
+  if (typeof window !== 'undefined') {
+    // @ts-ignore
+    window.__LAST_QUIZ_QUESTION__ = safeQ;
+  }
+
   // Sanitize question text to remove any repeated 'Topic' at the start (e.g., 'TopicTopic', 'Topic Topic', etc.)
   let sanitizedText = safeQ.question;
   if (typeof sanitizedText === 'string') {
