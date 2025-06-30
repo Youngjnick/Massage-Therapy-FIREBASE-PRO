@@ -407,6 +407,19 @@ const Quiz: React.FC = () => {
     // Optionally reset selectedTopic, toggleState, etc. if needed
   };
 
+  // --- Debugging: Log when Quiz component is mounted ---
+  console.log('[E2E DEBUG] Quiz component mounted');
+
+  // Add a global error handler for the quiz page (dev only)
+  if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+    window.addEventListener('error', (e) => {
+      console.error('[E2E DEBUG] Global error:', e.error || e.message || e);
+    });
+    window.addEventListener('unhandledrejection', (e) => {
+      console.error('[E2E DEBUG] Unhandled promise rejection:', e.reason || e);
+    });
+  }
+
   return (
     <div className="quiz-container" data-testid="quiz-container" role="form">
       <h1>Quiz</h1>
