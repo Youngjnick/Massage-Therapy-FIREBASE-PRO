@@ -7,7 +7,7 @@ export default defineConfig({
   timeout: 30000,
   retries: 1,
   use: {
-    baseURL: 'http://localhost:5174/',
+    baseURL: 'http://localhost:5173/',
     ...devices['Desktop Chrome'],
     headless: false,
   },
@@ -22,8 +22,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'vite --port 5174',
-    port: 5174,
+    command: 'vite --port 5173',
+    port: 5173,
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
   },
