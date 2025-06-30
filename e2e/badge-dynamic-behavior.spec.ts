@@ -1,7 +1,7 @@
 /* global console */
 import { test, expect } from '@playwright/test';
 
-const DEV_BASE_URL = 'http://localhost:5174';
+const DEV_BASE_URL = 'http://localhost:5173';
 
 test('badges.json has correct criteria and image fields', async ({ request }) => {
   const resp = await request.get(DEV_BASE_URL + '/badges/badges.json');

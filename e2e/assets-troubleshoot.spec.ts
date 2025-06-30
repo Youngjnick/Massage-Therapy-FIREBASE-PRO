@@ -1,7 +1,7 @@
 /* global console */
 import { test, expect } from '@playwright/test';
 
-const DEV_BASE_URL = 'http://localhost:5174';
+const DEV_BASE_URL = 'http://localhost:5173';
 
 // 1. Badge image direct access
 const badgeImage = '/badges/first_quiz.png';
