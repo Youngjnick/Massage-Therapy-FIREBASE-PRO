@@ -1,16 +1,28 @@
+/* global console */
 import { test, expect } from '@playwright/test';
 
 test.describe('Quiz Edge Cases and Accessibility', () => {
-  test('Quiz with all options disabled: keyboard navigation skips disabled', async ({ page }) => {
+  test('Quiz with all options disabled: keyboard navigation skips disabled', async ({ page }, testInfo) => {
     await page.goto('/');
-    // Simulate a quiz where all options are disabled (if possible via test data or UI toggle)
-    // For now
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
+    // Force-disable all radios
+    await page.evaluate(() => {
+      document.querySelectorAll('[data-testid="quiz-radio"]').forEach(el => {
+        (el as HTMLInputElement).disabled = true;
+      });
+    });
     const radios = page.getByTestId('quiz-radio');
     const count = await radios.count();
+    if (count === 0) {
+      const html = await page.content();
+      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+      throw new Error('No quiz radios found after quiz start.');
+    }
     for (let i = 0; i < count; i++) {
-      if (await radios.nth(i).isDisabled()) {
+      const isDisabled = await radios.nth(i).isDisabled();
+      console.log(`Radio ${i} disabled:`, isDisabled);
+      if (isDisabled) {
         // Try to tab to it
         await page.keyboard.press('Tab');
         await expect(radios.nth(i)).not.toBeFocused();

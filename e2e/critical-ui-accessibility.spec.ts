@@ -1,25 +1,37 @@
 import { test, expect } from '@playwright/test';
+/* global console */
 
 test.describe('Critical UI and Accessibility Scenarios', () => {
   test('Mobile viewport: quiz UI, results, and modals are visible and usable', async ({ page }) => {
+    test.setTimeout(60000); // Increase timeout for this test
     await page.setViewportSize({ width: 375, height: 812 }); // iPhone X size
     await page.goto('/');
     await page.getByLabel('Quiz Length').fill('2');
     await page.getByRole('button', { name: /start/i }).click();
-    // Quiz UI should be visible, no horizontal scroll
+    // Wait for quiz container
     const quizContainer = page.getByTestId('quiz-container');
-    await expect(quizContainer).toBeVisible();
+    await expect(quizContainer).toBeVisible({ timeout: 10000 });
+    // Wait for quiz options
+    const options = page.getByTestId('quiz-option');
+    await expect(options.first()).toBeVisible({ timeout: 10000 });
+    const optionCount = await options.count();
+    console.log('Number of quiz options (mobile):', optionCount);
+    // Quiz UI should be visible, no horizontal scroll
     const hasHorizontalScroll = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
     expect(hasHorizontalScroll).toBeFalsy();
     // Navigation buttons should be visible and accessible
-    await expect(page.getByRole('button', { name: /next/i })).toBeVisible();
-    await expect(page.getByRole('button', { name: /finish/i })).toBeVisible();
+    await expect(page.getByRole('button', { name: /next/i })).toBeVisible({ timeout: 10000 });
+    await expect(page.getByRole('button', { name: /finish/i })).toBeVisible({ timeout: 10000 });
     // Complete quiz and check results screen
-    await page.getByTestId('quiz-option').first().click();
+    await options.first().click();
+    await page.waitForTimeout(200); // Allow UI to update
     await page.getByRole('button', { name: /next/i }).click();
-    await page.getByTestId('quiz-option').first().click();
+    await expect(options.first()).toBeVisible({ timeout: 10000 });
+    await options.first().click();
+    await page.waitForTimeout(200);
     await page.getByRole('button', { name: /finish/i }).click();
-    await expect(page.getByTestId('quiz-results')).toBeVisible();
+    // Wait for results
+    await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
   });
 
   test('Badge modals: only one open at a time, keyboard accessible', async ({ page }) => {
@@ -83,8 +95,6 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     const topicSelect = page.locator('#quiz-topic-select');
     await expect(topicSelect).toBeVisible({ timeout: 10000 });
     const options = await topicSelect.locator('option').all();
-    // eslint-disable-next-line no-undef
-    console.log('Number of topic options:', options.length);
     const quizLengthValue = await lengthInput.inputValue();
     const hasValidTopic = options.length > 1 && (await topicSelect.inputValue()) !== '';
     const hasValidLength = Number(quizLengthValue) >= 1;

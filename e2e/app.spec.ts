@@ -1,5 +1,17 @@
 /* global console */
-import { test, expect } from '@playwright/test';
+import { test as base, expect } from '@playwright/test';
+
+export const test = base;
+
+base.beforeEach(async ({ page }) => {
+  // Clear localStorage, sessionStorage, and cookies before each test
+  await page.goto('/');
+  await page.evaluate(() => {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  });
+  await page.context().clearCookies();
+});
 
 test.setTimeout(60000); // Increase timeout for all tests in this file
 

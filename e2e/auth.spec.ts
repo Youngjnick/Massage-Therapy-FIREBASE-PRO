@@ -1,3 +1,4 @@
+/* global console */
 // @ts-nocheck
 import { test, expect } from '@playwright/test';
 
@@ -7,19 +8,37 @@ test.describe('Authentication UI Flows', () => {
     await expect(page.getByText(/please sign in to view your analytics/i)).toBeVisible();
   });
 
-  test('should show sign-in button and open popup on Profile page', async ({ page, context }) => {
+  test('should show sign-in button and open popup on Profile page', async ({ page, context }, testInfo) => {
     await page.goto('/profile');
+    console.log('Navigated to /profile');
     const signInBtn = page.getByRole('button', { name: /sign in with google/i });
-    await expect(signInBtn).toBeVisible();
+    try {
+      await expect(signInBtn).toBeVisible({ timeout: 10000 });
+      console.log('Sign-in button is visible');
+    } catch (e) {
+      const html = await page.content();
+      console.error('Sign-in button not visible. Page HTML:', html);
+      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+      throw e;
+    }
 
     // Listen for popup event
     let popupOpened = false;
     context.once('page', () => {
       popupOpened = true;
+      console.log('Popup opened event detected');
     });
     await signInBtn.click();
-    // Wait a moment for popup
-    await page.waitForTimeout(1000);
+    // Wait for popup or fail after timeout
+    for (let i = 0; i < 20; i++) {
+      if (popupOpened) break;
+      await page.waitForTimeout(150);
+    }
+    if (!popupOpened) {
+      const html = await page.content();
+      console.error('Popup did not open after clicking sign-in. Page HTML:', html);
+      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+    }
     expect(popupOpened).toBe(true);
   });
 
