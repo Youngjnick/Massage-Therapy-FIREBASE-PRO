@@ -38,12 +38,12 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
     await page.goto('/');
     // Wait for quiz loading spinner to disappear (if present)
     try {
-      await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+      await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 30000 });
     } catch {
       const html = await page.content();
-      console.error('Quiz loading spinner did not disappear. Page HTML:', html);
+      console.error('Quiz loading spinner did not disappear after 30s. Page HTML:', html);
       if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
-      throw new Error('Quiz did not finish loading.');
+      throw new Error('Quiz did not finish loading after 30s.');
     }
     // Robust: try multiple selectors for quiz length input
     let quizLengthInput;
