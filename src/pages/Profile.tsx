@@ -79,6 +79,7 @@ const Profile: React.FC = () => {
     setTestSignInError(null);
     try {
       await signInWithEmailAndPassword(auth, testEmail, testPassword);
+      localStorage.setItem('testUid', testEmail); // Set mock UID for E2E tests
     } catch (err: any) {
       setTestSignInError(err.message || 'Sign in failed');
     }

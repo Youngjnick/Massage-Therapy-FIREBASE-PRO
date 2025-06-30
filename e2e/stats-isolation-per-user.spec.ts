@@ -41,18 +41,45 @@ async function getStatValue(page: Page, label: string): Promise<string> {
 }
 
 const log = (...args: any[]) => {
-  // @ts-expect-error
-  // eslint-disable-next-line no-undef
-  (globalThis.console || console).log(...args);
+  // eslint-disable-next-line no-console
+  console.log(...args);
 };
 
 test.describe('Stats Isolation per User', () => {
   test('stats should not leak between users', async ({ page }) => {
     // User A: sign in, get initial stat, take a quiz
     await uiSignIn(page, USER_A);
-    await page.goto('/profile');
-    const userAId = await page.evaluate(() => window.localStorage.getItem('uid'));
+    // Print all localStorage keys/values immediately after sign-in for debug
+    const allLocalStorage = await page.evaluate(() => {
+      const out: Record<string, string> = {};
+      for (let i = 0; i < window.localStorage.length; i++) {
+        const key = window.localStorage.key(i);
+        if (key) out[key] = window.localStorage.getItem(key) ?? '';
+      }
+      return out;
+    });
+    log('[E2E DEBUG] User A localStorage after sign-in:', JSON.stringify(allLocalStorage, null, 2));
+    // Print all sessionStorage keys/values
+    const allSessionStorage = await page.evaluate(() => {
+      const out: Record<string, string> = {};
+      for (let i = 0; i < window.sessionStorage.length; i++) {
+        const key = window.sessionStorage.key(i);
+        if (key) out[key] = window.sessionStorage.getItem(key) ?? '';
+      }
+      return out;
+    });
+    log('[E2E DEBUG] User A sessionStorage after sign-in:', JSON.stringify(allSessionStorage, null, 2));
+    // Print all cookies
+    const cookies = await page.context().cookies();
+    log('[E2E DEBUG] Cookies after sign-in:', JSON.stringify(cookies, null, 2));
+    // Wait for mock UID to be set in localStorage after sign-in
+    await page.waitForFunction(() => !!window.localStorage.getItem('testUid'), { timeout: 5000 });
+    const userAId = await page.evaluate(() => window.localStorage.getItem('testUid'));
     log('User A UID:', userAId);
+    log(
+      '[E2E DEBUG] User A localStorage:',
+      JSON.stringify(await page.evaluate(() => Object.fromEntries(Object.entries(window.localStorage).filter(([key]) => key !== 'null' && key !== ''))), null, 2)
+    );
     await page.goto('/analytics');
     let initialA = '';
     for (let i = 0; i < 20; i++) {
@@ -91,9 +118,13 @@ test.describe('Stats Isolation per User', () => {
     await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     // User B: sign in, check stat
     await uiSignIn(page, USER_B);
-    await page.goto('/profile');
-    const userBId = await page.evaluate(() => window.localStorage.getItem('uid'));
+    await page.waitForFunction(() => !!window.localStorage.getItem('testUid'), { timeout: 5000 });
+    const userBId = await page.evaluate(() => window.localStorage.getItem('testUid'));
     log('User B UID:', userBId);
+    log(
+      '[E2E DEBUG] User B localStorage:',
+      JSON.stringify(await page.evaluate(() => Object.fromEntries(Object.entries(window.localStorage).filter(([key]) => key !== 'null' && key !== ''))), null, 2)
+    );
     await page.goto('/analytics');
     let initialB = '';
     for (let i = 0; i < 20; i++) {
@@ -110,9 +141,14 @@ test.describe('Stats Isolation per User', () => {
     await page.click('button[aria-label="Sign out"], button:has-text("Sign Out")');
     await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     await uiSignIn(page, USER_A);
-    await page.goto('/profile');
-    const userAId2 = await page.evaluate(() => window.localStorage.getItem('uid'));
+    // Wait for mock UID to be set in localStorage after sign-in
+    await page.waitForFunction(() => !!window.localStorage.getItem('testUid'), { timeout: 5000 });
+    const userAId2 = await page.evaluate(() => window.localStorage.getItem('testUid'));
     log('User A UID after re-login:', userAId2);
+    log(
+      '[E2E DEBUG] User A localStorage after re-login:',
+      JSON.stringify(await page.evaluate(() => Object.fromEntries(Object.entries(window.localStorage).filter(([key]) => key !== 'null' && key !== ''))), null, 2)
+    );
     await page.goto('/analytics');
     let finalA = '';
     for (let i = 0; i < 20; i++) {
