@@ -1,3 +1,4 @@
+/* global console */
 import { test, expect } from '@playwright/test';
 
 const DEV_BASE_URL = 'http://localhost:5174';
@@ -24,7 +25,15 @@ test('badges.json has correct criteria and image fields', async ({ request }) =>
 test('badge_test image is visible and loads', async ({ page }) => {
   await page.goto(DEV_BASE_URL + '/achievements');
   const testBadgeImg = await page.locator('img[src*="badge_test.png"]');
+  if (!(await testBadgeImg.isVisible())) {
+    const html = await page.content();
+    console.error('badge_test.png image not visible on /achievements. Page HTML:', html);
+  }
   await expect(testBadgeImg).toBeVisible({ timeout: 5000 });
-  const width = await testBadgeImg.evaluate(el => (el && 'naturalWidth' in el ? el.naturalWidth : 0));
+  const width = await testBadgeImg.evaluate(el => (el && 'naturalWidth' in el ? (el as HTMLImageElement).naturalWidth : 0)) as number;
+  if (width <= 0) {
+    const html = await page.content();
+    console.error('badge_test.png image is visible but did not load (width=0). Page HTML:', html);
+  }
   expect(width).toBeGreaterThan(0);
 });
