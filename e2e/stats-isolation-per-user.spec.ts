@@ -40,9 +40,9 @@ async function getStatValue(page: Page, label: string): Promise<string> {
   return '';
 }
 
+// Remove unused eslint-disable and use globalThis.console for Node.js context
 const log = (...args: any[]) => {
-  // eslint-disable-next-line no-console
-  console.log(...args);
+  globalThis.console.log(...args);
 };
 
 test.describe('Stats Isolation per User', () => {
