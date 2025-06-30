@@ -186,7 +186,17 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
 
   test('Accessibility: ARIA roles and labels', async ({ page }) => {
     await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('1');
+    // Fail-fast check for quiz data or Firestore emulator
+    const quizLengthInput = page.getByLabel('Quiz Length');
+    const isDisabled = await quizLengthInput.isDisabled();
+    const maxAttr = await quizLengthInput.getAttribute('max');
+    if (isDisabled || maxAttr === '0') {
+      const html = await page.content();
+      throw new Error(
+        `Quiz Length input is disabled or max=0.\nLikely cause: No quiz data in Firestore or Firestore emulator is not running.\nPage HTML:\n${html}`
+      );
+    }
+    await quizLengthInput.fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     const radios = page.getByTestId('quiz-radio');
     for (let i = 0; i < await radios.count(); i++) {
@@ -199,10 +209,7 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
       page.getByRole('button', { name: /finish/i })
     ];
     for (const btn of navButtons) {
-      if (await btn.count()) {
-        const ariaDisabled = await btn.getAttribute('aria-disabled');
-        expect(["true", "false", null]).toContain(ariaDisabled);
-      }
+      await expect(btn).toHaveAttribute('aria-label', /next|prev|finish/i);
     }
   });
 
