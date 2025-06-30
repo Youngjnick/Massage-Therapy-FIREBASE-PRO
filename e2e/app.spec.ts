@@ -122,24 +122,64 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
 });
 
 test('should handle edge case: rapid answer selection', async ({ page }) => {
+  console.log('[E2E DEBUG] Navigating to home page...');
   await page.goto('/');
+  console.log('[E2E DEBUG] Filling Quiz Length...');
   await page.getByLabel('Quiz Length').fill('2');
+  console.log('[E2E DEBUG] Clicking Start button...');
   await page.getByRole('button', { name: /start/i }).click();
-  // Wait for quiz question card to be visible
-  await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+  console.log('[E2E DEBUG] Waiting for quiz question card to be visible...');
+  try {
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+    console.log('[E2E DEBUG] Quiz question card is visible.');
+  } catch (e) {
+    const html = await page.content();
+    console.error('[E2E DEBUG] Quiz question card not visible after start. Page HTML:', html);
+    throw e;
+  }
   const options = page.getByTestId('quiz-option');
+  console.log('[E2E DEBUG] Clicking first option...');
   await options.nth(0).click();
   await page.waitForTimeout(150); // allow UI to update
+  console.log('[E2E DEBUG] Clicking second option...');
   await options.nth(1).click();
   await page.waitForTimeout(150); // allow UI to update
+  console.log('[E2E DEBUG] Clicking first option again...');
   await options.nth(0).click();
   // Should not crash, and feedback should be shown
   const feedback = page.getByTestId('quiz-feedback');
   if (!(await feedback.isVisible())) {
     const html = await page.content();
-    console.error('Quiz feedback not found after rapid answer selection. Page HTML:', html);
+    console.error('[E2E DEBUG] Quiz feedback not found after rapid answer selection. Page HTML:', html);
   }
   await expect(feedback).toBeVisible();
+  // Now test quiz restart
+  console.log('[E2E DEBUG] Clicking Finish button...');
+  await page.getByRole('button', { name: /finish/i }).click();
+  console.log('[E2E DEBUG] Clicking Start New Quiz button...');
+  await page.getByRole('button', { name: /start new quiz/i }).click();
+  console.log('[E2E DEBUG] Filling Quiz Length again...');
+  await page.getByLabel('Quiz Length').fill('2');
+  console.log('[E2E DEBUG] Clicking Start button again...');
+  await page.getByRole('button', { name: /start/i }).click();
+  console.log('[E2E DEBUG] Waiting for quiz loading spinner to disappear...');
+  try {
+    await page.waitForSelector('[data-testid="quiz-loading-spinner"]', { state: 'hidden', timeout: 15000 });
+    console.log('[E2E DEBUG] Quiz loading spinner is hidden.');
+  } catch (e) {
+    const html = await page.content();
+    console.error('[E2E DEBUG] Quiz loading spinner did not disappear. Page HTML:', html);
+    throw e;
+  }
+  console.log('[E2E DEBUG] Waiting for quiz question card to be visible after restart...');
+  try {
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { state: 'visible', timeout: 15000 });
+    console.log('[E2E DEBUG] Quiz question card is visible after restart.');
+  } catch (e) {
+    const html = await page.content();
+    console.error('[E2E DEBUG] Quiz question card not visible after restart. Page HTML:', html);
+    throw e;
+  }
 });
 
 test('should show explanations when enabled', async ({ page }) => {

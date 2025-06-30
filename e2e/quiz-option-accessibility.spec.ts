@@ -1,5 +1,11 @@
 import { test, expect } from '@playwright/test';
 
+const log = (...args: any[]) => {
+  // @ts-expect-error
+  // eslint-disable-next-line no-undef
+  (globalThis.console || console).log(...args);
+};
+
 test.describe('Quiz Option Accessibility', () => {
   test('Each quiz option has correct ARIA attributes and is keyboard accessible', async ({ page }) => {
     await page.goto('/');
@@ -10,18 +16,28 @@ test.describe('Quiz Option Accessibility', () => {
     const count = await options.count();
     for (let i = 0; i < count; i++) {
       const option = options.nth(i);
+      // Print all ARIA attributes for debug
+      const attrs = await option.evaluate(el => ({
+        role: el.getAttribute('role'),
+        ariaLabel: el.getAttribute('aria-label'),
+        ariaChecked: el.getAttribute('aria-checked'),
+        ariaDisabled: el.getAttribute('aria-disabled'),
+        tabIndex: el.getAttribute('tabindex'),
+        id: el.id,
+        name: el.getAttribute('name'),
+        checked: el.checked,
+        disabled: el.disabled,
+      }));
+      log(`[E2E DEBUG] Quiz option ${i}:`, attrs);
       // Check role
-      expect(await option.getAttribute('role')).toBe('radio');
+      expect(attrs.role).toBe('radio');
       // Check aria-label
-      const ariaLabel = await option.getAttribute('aria-label');
-      expect(ariaLabel).toMatch(/^Option [A-Z]:/);
+      expect(attrs.ariaLabel).toMatch(/^Option [A-Z]:/);
       // Check aria-checked
-      const ariaChecked = await option.getAttribute('aria-checked');
-      expect(['true', 'false']).toContain(ariaChecked);
+      expect(['true', 'false']).toContain(attrs.ariaChecked);
       // Check aria-disabled
-      const ariaDisabled = await option.getAttribute('aria-disabled');
-      expect(['true', 'false', null]).toContain(ariaDisabled);
-      if (ariaDisabled !== 'true') {
+      expect(['true', 'false', null]).toContain(attrs.ariaDisabled);
+      if (attrs.ariaDisabled !== 'true') {
         // Keyboard: Tab to option and check focus
         await option.focus();
         await expect(option).toBeFocused();
