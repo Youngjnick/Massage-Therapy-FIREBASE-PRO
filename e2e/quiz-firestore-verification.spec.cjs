@@ -95,11 +95,12 @@ test.describe('Quiz Firestore Verification', () => {
     await page.getByRole('button', { name: /finish/i }).click();
 
     // Wait for results to be visible
+
     await page.waitForSelector('[data-testid="quiz-results"]', { timeout: 10000 });
     await expect(page.getByTestId('quiz-results')).toBeVisible();
-
-    // Wait a bit before polling Firestore to avoid race condition
-    await page.waitForTimeout(2000);
+    console.log('[E2E DEBUG] Quiz results visible, waiting 4s before polling Firestore...');
+    await page.waitForTimeout(4000);
+    console.log('[E2E DEBUG] Starting Firestore polling...');
 
     // 3. Verify Firestore document for quiz progress using Admin SDK
     const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
@@ -114,6 +115,7 @@ test.describe('Quiz Firestore Verification', () => {
       // Progress bar logic
       progressBar = '[' + '='.repeat(i+1) + ' '.repeat(retries - i - 1) + ']';
       process.stdout.write(`\r[E2E] Polling Firestore quizProgress ${progressBar} ${i+1}/${retries}`);
+      console.log(` [E2E DEBUG] Poll #${i+1} Firestore doc:`, quizProgress);
       if (quizProgress && quizProgress.showResults === true) {
         process.stdout.write(`\n`);
         break;
