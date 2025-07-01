@@ -101,15 +101,16 @@ test.describe('Quiz Firestore Verification', () => {
     // 3. Verify Firestore document for quiz progress using Admin SDK
     const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
     console.log('E2E TEST Firestore doc path:', docRef.path);
-    let docSnap = await docRef.get();
-    let quizProgress = docSnap.data();
-    console.log('Firestore quizProgress (initial):', quizProgress);
-    let retries = 10;
-    while (quizProgress && quizProgress.showResults !== true && retries-- > 0) {
+    let quizProgress = null;
+    let retries = 15;
+    for (let i = 0; i < retries; i++) {
+      const docSnap = await docRef.get();
+      quizProgress = docSnap.exists ? docSnap.data() : null;
+      console.log(`[E2E DEBUG] Poll #${i+1}: Firestore quizProgress:`, quizProgress);
+      if (quizProgress && quizProgress.showResults === true) {
+        break;
+      }
       await new Promise(res => setTimeout(res, 1500));
-      docSnap = await docRef.get();
-      quizProgress = docSnap.data();
-      console.log('Polling Firestore quizProgress:', quizProgress);
     }
     console.log('E2E TEST Final Firestore quizProgress:', quizProgress);
     expect(quizProgress).not.toBeNull();

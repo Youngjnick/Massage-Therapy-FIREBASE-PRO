@@ -62,12 +62,25 @@ test.describe('Stats Critical Flows', () => {
       await page.getByTestId('quiz-option').first().click();
       await page.getByRole('button', { name: /next|finish/i }).click();
       await expect(page.getByTestId('quiz-results')).toBeVisible();
-      // Wait for stat update to propagate
-      await page.waitForTimeout(1500);
+      // Wait for stat update to propagate (poll for stat increment)
+      let statUpdated = false;
+      for (let poll = 0; poll < 20; poll++) {
+        await page.goto('/analytics');
+        await page.waitForTimeout(1000);
+        let polledStat = await getStatValue(page, 'Quizzes Taken:') || '';
+        const polledUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+        console.log(`[E2E DEBUG] Poll #${poll+1} after quiz: Quizzes Taken:`, polledStat, 'userUid:', polledUid);
+        if (parseInt(polledStat, 10) > initial) {
+          statUpdated = true;
+          break;
+        }
+      }
+      if (!statUpdated) {
+        throw new Error('Quizzes Taken stat did not increment after quiz');
+      }
     }
-    // Reload analytics and check stat
+    // Final check: stat should be at least initial + 2
     await page.goto('/analytics');
-    await page.waitForTimeout(2000);
     let updatedQuizzesTaken = '';
     for (let i = 0; i < 10; i++) {
       updatedQuizzesTaken = await getStatValue(page, 'Quizzes Taken:') || '';

@@ -60,16 +60,22 @@ test.describe('Stats Persistence', () => {
     await page.getByTestId('quiz-option').first().click();
     await page.getByRole('button', { name: /next|finish/i }).click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
-    // Wait for stat update to propagate
-    await page.waitForTimeout(1500);
-    // Reload analytics and check stats
-    await page.goto('/analytics');
-    await page.waitForTimeout(2000);
+    // Wait for stat update to propagate (poll for stat change)
     let updatedQuizzesTaken: string = '';
-    for (let i = 0; i < 10; i++) {
+    let statChanged = false;
+    for (let poll = 0; poll < 20; poll++) {
+      await page.goto('/analytics');
+      await page.waitForTimeout(1000);
       updatedQuizzesTaken = await getStatValue(page, 'Quizzes Taken:') || '';
-      if (updatedQuizzesTaken) break;
-      await page.waitForTimeout(500);
+      const polledUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+      console.log(`[E2E DEBUG] Poll #${poll+1} after quiz: Quizzes Taken:`, updatedQuizzesTaken, 'userUid:', polledUid);
+      if (updatedQuizzesTaken && updatedQuizzesTaken !== initialQuizzesTaken) {
+        statChanged = true;
+        break;
+      }
+    }
+    if (!statChanged) {
+      throw new Error('Quizzes Taken stat did not change after quiz');
     }
     const userUidAfter = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
     console.log('[E2E DEBUG] updatedQuizzesTaken:', updatedQuizzesTaken, 'userUid:', userUidAfter);
