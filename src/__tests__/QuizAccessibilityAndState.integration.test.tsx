@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 import App from '../App';
 import * as questionsModule from '../questions/index';
 
@@ -36,11 +37,11 @@ describe('Quiz Accessibility, Feedback, and State Integration', () => {
     render(<App />);
     await screen.findByTestId('quiz-start-form');
     // Tab to topic select
-    fireEvent.keyDown(document, { key: 'Tab' });
+    await act(async () => { fireEvent.keyDown(document, { key: 'Tab' }); });
     const topicSelect = screen.getByTestId('quiz-topic-select');
     expect(topicSelect).toBeInTheDocument();
     // Tab to quiz length input
-    fireEvent.keyDown(document, { key: 'Tab' });
+    await act(async () => { fireEvent.keyDown(document, { key: 'Tab' }); });
     const lengthInput = screen.getByTestId('quiz-length-input');
     expect(lengthInput).toBeInTheDocument();
     // Tab to toggles
@@ -60,12 +61,12 @@ describe('Quiz Accessibility, Feedback, and State Integration', () => {
     render(<App />);
     await screen.findByTestId('quiz-start-form');
     const feedbackCheckbox = screen.getByLabelText(/instant feedback/i);
-    fireEvent.click(feedbackCheckbox); // turn off
-    fireEvent.submit(screen.getByTestId('quiz-start-form'));
+    await act(async () => { fireEvent.click(feedbackCheckbox); }); // turn off
+    await act(async () => { fireEvent.submit(screen.getByTestId('quiz-start-form')); });
     await screen.findByTestId('quiz-question-card');
     const radios = screen.getAllByRole('radio');
-    fireEvent.click(radios[0]);
-    fireEvent.keyDown(radios[0], { key: 'Enter' });
+    await act(async () => { fireEvent.click(radios[0]); });
+    await act(async () => { fireEvent.keyDown(radios[0], { key: 'Enter' }); });
     expect(screen.queryByTestId('quiz-feedback')).not.toBeInTheDocument();
     // Optionally: simulate toggling feedback ON mid-quiz if UI allows
   });
@@ -74,8 +75,8 @@ describe('Quiz Accessibility, Feedback, and State Integration', () => {
     render(<App />);
     await screen.findByTestId('quiz-start-form');
     const explanationsCheckbox = screen.getByLabelText(/show explanations/i);
-    fireEvent.click(explanationsCheckbox); // turn off
-    fireEvent.submit(screen.getByTestId('quiz-start-form'));
+    await act(async () => { fireEvent.click(explanationsCheckbox); }); // turn off
+    await act(async () => { fireEvent.submit(screen.getByTestId('quiz-start-form')); });
     await screen.findByTestId('quiz-question-card');
     expect(screen.queryByText(/explanation/i)).not.toBeInTheDocument();
   });
@@ -95,11 +96,11 @@ describe('Quiz Accessibility, Feedback, and State Integration', () => {
     render(<App />);
     await screen.findByTestId('quiz-start-form');
     const lengthInput = screen.getByTestId('quiz-length-input') as HTMLInputElement;
-    fireEvent.change(lengthInput, { target: { value: -5 } });
+    await act(async () => { fireEvent.change(lengthInput, { target: { value: -5 } }); });
     expect(Number(lengthInput.value)).toBeGreaterThanOrEqual(1);
-    fireEvent.change(lengthInput, { target: { value: 999 } });
+    await act(async () => { fireEvent.change(lengthInput, { target: { value: 999 } }); });
     expect(Number(lengthInput.value)).toBeLessThanOrEqual(2); // 2 mock questions
-    fireEvent.change(lengthInput, { target: { value: 'abc' } });
+    await act(async () => { fireEvent.change(lengthInput, { target: { value: 'abc' } }); });
     expect(isNaN(Number(lengthInput.value))).toBe(false); // Should fallback to a valid number
   });
 });

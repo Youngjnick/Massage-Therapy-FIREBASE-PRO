@@ -3,16 +3,34 @@ GOOGLE_APPLICATION_CREDENTIALS: undefined
 NODE_ENV: test
 Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
 
-Running 198 tests using 1 worker
+Running 2 tests using 1 worker
 
-  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (892ms)
-  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (643ms)
-  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (588ms)
-  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (544ms)
-  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:21:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (523ms)
-  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (3.5s)
-  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:89:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (598ms)
-  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:114:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (3.7s)
-  -  9 [Desktop Chrome] › e2e/app.critical-flow.spec.ts:5:6 › should start quiz and focus first option
-Navigating to home page...
-Filling Quiz Length...
+[E2E DEBUG] initialQuizzesTaken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #8 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #9 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #10 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #11 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #12 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #13 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #14 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #15 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #16 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #17 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #18 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #19 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #20 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+  ✘  1 [Mobile Chrome] › e2e/stats-critical-flows.spec.ts:42:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (25.9s)
+[E2E DEBUG] initialQuizzesTaken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3
+[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: 122 userUid: 0wTE0Hy8n8Y3aFxQaLRibyaXYKF3

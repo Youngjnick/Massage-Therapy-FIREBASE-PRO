@@ -102,17 +102,26 @@ test.describe('Quiz Firestore Verification', () => {
     const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
     console.log('E2E TEST Firestore doc path:', docRef.path);
     let quizProgress = null;
-    let retries = 15;
+    const retries = 25;
+    const waitMs = 2000;
+    let progressBar = '';
     for (let i = 0; i < retries; i++) {
       const docSnap = await docRef.get();
       quizProgress = docSnap.exists ? docSnap.data() : null;
-      console.log(`[E2E DEBUG] Poll #${i+1}: Firestore quizProgress:`, quizProgress);
+      // Progress bar logic
+      progressBar = '[' + '='.repeat(i+1) + ' '.repeat(retries - i - 1) + ']';
+      process.stdout.write(`\r[E2E] Polling Firestore quizProgress ${progressBar} ${i+1}/${retries}`);
       if (quizProgress && quizProgress.showResults === true) {
+        process.stdout.write(`\n`);
         break;
       }
-      await new Promise(res => setTimeout(res, 1500));
+      await new Promise(res => setTimeout(res, waitMs));
     }
+    process.stdout.write(`\n`);
     console.log('E2E TEST Final Firestore quizProgress:', quizProgress);
+    if (!quizProgress || quizProgress.showResults !== true) {
+      throw new Error('Timed out waiting for Firestore quizProgress to have showResults: true. Last state: ' + JSON.stringify(quizProgress));
+    }
     expect(quizProgress).not.toBeNull();
     expect(quizProgress?.showResults).toBe(true);
     expect(Array.isArray(quizProgress?.userAnswers)).toBe(true);
