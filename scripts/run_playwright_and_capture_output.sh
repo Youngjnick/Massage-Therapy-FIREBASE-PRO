@@ -1,7 +1,39 @@
+
 #!/bin/zsh
 # Run Playwright tests and always capture output to scripts/playwright-output.txt, even if interrupted
 
-OUTPUT_FILE="scripts/playwright-output.txt"
+# Always use local emulators, never Google Cloud
+export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+export FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
+export NODE_ENV=test
 
-# Pass all arguments to Playwright
-npx playwright test "$@" | tee "$OUTPUT_FILE"
+
+OUTPUT_FILE="scripts/playwright-output.txt"
+LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
+
+# Function to extract failing test files from output
+function update_last_failing_files() {
+  grep -E '^\s*[✘xX-]' "$OUTPUT_FILE" | \
+    sed -E 's/.*\] › ([^:]+):.*/\1/' | \
+    sort | uniq > "$LAST_FAILING_FILE"
+  # If no failures, clear the file
+  if [[ ! -s "$LAST_FAILING_FILE" ]]; then
+    > "$LAST_FAILING_FILE"
+  fi
+}
+
+# Ensure last-failing file is updated even on interruption
+trap update_last_failing_files EXIT
+
+
+# Prompt user to choose between running all tests or only last failed
+echo "Run all tests or only last failed? ([a]ll/[f]ailed): "
+read -r choice
+
+if [[ "$choice" == "f"* ]]; then
+  # Always run only last failed tests in headed mode
+  npx playwright test --last-failed --headed "$@" | tee "$OUTPUT_FILE"
+else
+  # Always run all tests in headed mode
+  npx playwright test --headed "$@" | tee "$OUTPUT_FILE"
+fi

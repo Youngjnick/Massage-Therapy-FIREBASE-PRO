@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+/* global console */
 import { uiSignIn } from './helpers/uiSignIn';
 
 async function getStatValue(page: import('@playwright/test').Page, label: string): Promise<string> {
@@ -48,6 +49,8 @@ test.describe('Stats Critical Flows', () => {
       if (initialQuizzesTaken) break;
       await page.waitForTimeout(500);
     }
+    const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    console.log('[E2E DEBUG] initialQuizzesTaken:', initialQuizzesTaken, 'userUid:', userUid);
     const initial = parseInt(initialQuizzesTaken, 10) || 0;
     // Take two quizzes
     for (let quizNum = 0; quizNum < 2; quizNum++) {
@@ -59,6 +62,8 @@ test.describe('Stats Critical Flows', () => {
       await page.getByTestId('quiz-option').first().click();
       await page.getByRole('button', { name: /next|finish/i }).click();
       await expect(page.getByTestId('quiz-results')).toBeVisible();
+      // Wait for stat update to propagate
+      await page.waitForTimeout(1500);
     }
     // Reload analytics and check stat
     await page.goto('/analytics');
@@ -69,6 +74,8 @@ test.describe('Stats Critical Flows', () => {
       if (updatedQuizzesTaken) break;
       await page.waitForTimeout(500);
     }
+    const userUidAfter = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    console.log('[E2E DEBUG] updatedQuizzesTaken:', updatedQuizzesTaken, 'userUid:', userUidAfter);
     const updated = parseInt(updatedQuizzesTaken, 10) || 0;
     expect(updated).toBeGreaterThanOrEqual(initial + 2);
   });

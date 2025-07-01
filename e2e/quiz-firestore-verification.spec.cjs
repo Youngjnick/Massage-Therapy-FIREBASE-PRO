@@ -71,12 +71,12 @@ test.describe('Quiz Firestore Verification', () => {
     try {
       await page.getByLabel('Quiz Length').fill('1');
       quizLengthFilled = true;
-    } catch (e) {
+    } catch {
       // fallback to testid if label fails
       try {
         await page.getByTestId('quiz-length-input').fill('1');
         quizLengthFilled = true;
-      } catch (e2) {
+      } catch {
         console.log('Could not find Quiz Length input by label or testid');
       }
     }

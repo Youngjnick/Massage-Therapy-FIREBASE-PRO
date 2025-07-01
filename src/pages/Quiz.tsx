@@ -1,6 +1,6 @@
 // NOTE: Always ensure that `started` and `showResults` are mutually exclusive (never true at the same time) to prevent quiz card and results/review from rendering together.
 
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getQuestions } from '../questions/index';
 import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
@@ -84,7 +84,7 @@ const Quiz: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [sortedTopics, setSortedTopics] = useState<string[]>([]);
 
-  const quizCompleted = React.useRef(false); // Prevent further writes after completion
+  const quizCompleted = { current: false }; // Prevent further writes after completion
 
   // Use modularized data hook
   const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
@@ -667,7 +667,7 @@ const Quiz: React.FC = () => {
           toggleState={toggleState}
         />
       )}
-      <div style={{position:'fixed',bottom:0,left:0,zIndex:9999,background:'#fffbe6',color:'#b45309',padding:'8px',fontSize:'12px',borderTopRightRadius:'8px',boxShadow:'0 0 4px #b45309',maxWidth:'60vw',wordBreak:'break-all'}} data-testid="e2e-debug-firestore-status">
+      <div style={{position:'fixed',bottom:0,left:0,zIndex:9999,background:'#fffbe6',color:'#b45309',padding:'8px',fontSize:'12px',borderTopRightRadius:'8px',boxShadow:'0 0 4px #b45309',maxWidth:'60vw',wordBreak:'break-all',pointerEvents:'none'}} data-testid="e2e-debug-firestore-status">
         <div><b>E2E DEBUG</b></div>
         <div>showResults: {String(showResults)}</div>
         <div>Firestore: {firestoreStatus}</div>

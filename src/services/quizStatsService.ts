@@ -19,7 +19,11 @@ export async function updateQuizStatsOnFinish({
   try {
     const auth = getAuth();
     const user = auth.currentUser;
-    if (!user) return;
+    if (!user) {
+      console.log('[E2E DEBUG] updateQuizStatsOnFinish: No user');
+      return;
+    }
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: User UID', user.uid);
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
       const topic = (q.topics && q.topics.at(-1)) || 'Other';
@@ -37,13 +41,26 @@ export async function updateQuizStatsOnFinish({
     const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
     const prevSnap = await getDoc(analyticsRef);
     const prev = prevSnap.exists() ? prevSnap.data() : {};
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: prev analytics', { user: user.uid, prev });
     const streakHistory = Array.isArray(prev.streakHistory) ? [...prev.streakHistory] : [];
     streakHistory.push({ date: new Date().toISOString(), streak: prev.streak || 0 });
     const badgeProgress = { ...prev.badgeProgress, correct: correct };
+    const newCompleted = (prev.completed || 0) + 1;
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: writing analytics', {
+      user: user.uid,
+      prevCompleted: prev.completed,
+      newCompleted,
+      correct,
+      total,
+      stats,
+      badgeProgress,
+      streakHistory,
+      stack: new Error().stack
+    });
     await setDoc(
       analyticsRef,
       {
-        completed: (prev.completed || 0) + 1,
+        completed: newCompleted,
         correct,
         total,
         streak: prev.streak || 0,
@@ -56,8 +73,12 @@ export async function updateQuizStatsOnFinish({
     );
     const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
     await setDoc(topicStatsRef, stats, { merge: true });
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: analytics write complete', {
+      user: user.uid,
+      completed: newCompleted
+    });
   } catch (err) {
-    console.error('Failed to update Firestore stats at quiz finish:', err);
+    console.error('[E2E DEBUG] Failed to update Firestore stats at quiz finish:', err);
   }
 }
 

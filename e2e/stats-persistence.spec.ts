@@ -48,6 +48,9 @@ test.describe('Stats Persistence', () => {
       if (initialQuizzesTaken) break;
       await page.waitForTimeout(500);
     }
+    const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    /* global console */
+    console.log('[E2E DEBUG] initialQuizzesTaken:', initialQuizzesTaken, 'userUid:', userUid);
     // Take a quiz
     await page.goto('/quiz');
     await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
@@ -57,6 +60,8 @@ test.describe('Stats Persistence', () => {
     await page.getByTestId('quiz-option').first().click();
     await page.getByRole('button', { name: /next|finish/i }).click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
+    // Wait for stat update to propagate
+    await page.waitForTimeout(1500);
     // Reload analytics and check stats
     await page.goto('/analytics');
     await page.waitForTimeout(2000);
@@ -66,6 +71,8 @@ test.describe('Stats Persistence', () => {
       if (updatedQuizzesTaken) break;
       await page.waitForTimeout(500);
     }
+    const userUidAfter = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    console.log('[E2E DEBUG] updatedQuizzesTaken:', updatedQuizzesTaken, 'userUid:', userUidAfter);
     expect(updatedQuizzesTaken).not.toBe(initialQuizzesTaken);
   });
 });
