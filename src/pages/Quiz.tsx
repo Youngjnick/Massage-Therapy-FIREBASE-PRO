@@ -1,6 +1,6 @@
 // NOTE: Always ensure that `started` and `showResults` are mutually exclusive (never true at the same time) to prevent quiz card and results/review from rendering together.
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { getQuestions } from '../questions/index';
 import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
@@ -56,6 +56,7 @@ const Quiz: React.FC = () => {
   const [warning, setWarning] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [sortedTopics, setSortedTopics] = useState<string[]>([]);
+  const quizCompleted = React.useRef(false); // Prevent further writes after completion
 
   // Use modularized data hook
   const { questions, setQuestions, loading, setLoading } = useQuizData(selectedTopic, setSelectedTopic);
@@ -213,11 +214,10 @@ const Quiz: React.FC = () => {
   // In the answer submission handler, ensure Firestore setDoc is called after answering a question
   const handleAnswer = async (idx: number) => {
     console.log('[E2E DEBUG] handleAnswer called', { idx, current, showResults, userAnswers });
-    if (showResults) return; // Ignore answers after quiz is completed
+    if (showResults || quizCompleted.current) return; // Ignore answers after quiz is completed
     const newAnswers = [...userAnswers];
     newAnswers[current] = idx;
     setUserAnswers(newAnswers);
-    // After updating local state, update Firestore stats with the new answers
     await updateQuizStatsOnAnswer({
       userAnswers: newAnswers,
       shuffledQuestions,
@@ -225,15 +225,19 @@ const Quiz: React.FC = () => {
       started,
       quizQuestions
     });
-    // Save quiz progress for resume
-    await saveQuizProgress({
-      started: true,
-      current,
-      userAnswers: newAnswers,
-      shuffledQuestions,
-      shuffledOptions,
-      showResults: false
-    });
+    // Only save with showResults: false if not finished and not on last question
+    if (!showResults && current < quizQuestions.length - 1 && !quizCompleted.current) {
+      const progress = {
+        started: true,
+        current,
+        userAnswers: newAnswers,
+        shuffledQuestions,
+        shuffledOptions,
+        showResults: false
+      };
+      console.log('[E2E DEBUG] Firestore write (progress)', { ...progress, ts: Date.now() });
+      await saveQuizProgress(progress);
+    }
     console.log('[E2E DEBUG] handleAnswer finished', { idx, current, newAnswers });
   };
 
@@ -356,14 +360,22 @@ const Quiz: React.FC = () => {
   }, [showResults]);
 
   // --- Quiz Progress Save/Load ---
-  const saveQuizProgress = async (progress: any) => {
+  const saveQuizProgress = async (progress: any, merge: boolean = true) => {
+    if (quizCompleted.current) {
+      console.log('[E2E DEBUG] Blocked Firestore write after completion', { ...progress, ts: Date.now() });
+      console.trace('[E2E DEBUG] Blocked Firestore write after completion stack trace');
+      return;
+    }
     const auth = getAuth();
     const user = auth.currentUser;
     if (user) {
       const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
-      await setDoc(progressRef, progress, { merge: true });
+      const payload = { ...progress, lastWrite: Date.now() };
+      console.log('[E2E DEBUG] Firestore write (saveQuizProgress)', { ...payload, ts: Date.now(), merge });
+      console.trace('[E2E DEBUG] Firestore write (saveQuizProgress) stack trace');
+      await setDoc(progressRef, payload, { merge });
     } else if (typeof window !== 'undefined') {
-      window.localStorage.setItem('quizProgress', JSON.stringify(progress));
+      window.localStorage.setItem('quizProgress', JSON.stringify({ ...progress, lastWrite: Date.now() }));
     }
   };
 
@@ -493,11 +505,8 @@ const Quiz: React.FC = () => {
             onFinish={async () => {
               // Debug: log when finish is clicked and show answers
               console.log('Finish Quiz clicked', { userAnswers, current, totalQuestions });
-              // Defensive: always check if last question is answered
               if (userAnswers.some((a, i) => a === undefined && i < totalQuestions)) {
-                // Instead of blocking, allow finish and show partial results
                 // Optionally, set a warning or flag for partial results
-                // setWarning('Some questions are unanswered. Showing partial results.');
               }
               try {
                 // Sanitize only for Firestore
@@ -511,7 +520,20 @@ const Quiz: React.FC = () => {
                   ),
                   showResults: true
                 };
-                await saveQuizProgress(sanitizedForFirestore);
+                quizCompleted.current = true; // Block further writes immediately
+                console.log('[E2E DEBUG] Firestore write (final)', { ...sanitizedForFirestore, ts: Date.now() });
+                console.trace('[E2E DEBUG] Firestore write (final) stack trace');
+                await saveQuizProgress(sanitizedForFirestore, false); // merge: false for full overwrite
+                // Double-write failsafe
+                await saveQuizProgress(sanitizedForFirestore, false);
+                // Confirm Firestore state after write
+                const auth = getAuth();
+                const user = auth.currentUser;
+                if (user) {
+                  const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
+                  const progressSnap = await getDoc(progressRef);
+                  console.log('[E2E DEBUG] Firestore quizProgress after final write:', progressSnap.exists() ? progressSnap.data() : null);
+                }
                 await updateQuizStatsOnFinish({
                   userAnswers,
                   shuffledQuestions,
@@ -521,8 +543,9 @@ const Quiz: React.FC = () => {
                 });
                 setStarted(false); // Ensure results page is shown
                 setShowResults(true);
-              } catch {
+              } catch (err) {
                 setError('Error: Failed to submit results. Could not submit your quiz results.');
+                console.error('[E2E DEBUG] Error in onFinish:', err);
               }
             }}
             total={totalQuestions}

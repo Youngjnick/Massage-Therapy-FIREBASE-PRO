@@ -10,7 +10,8 @@
     "dev": "vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "emulators": "npx firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth",
-    "playwright:test": "npx playwright test"
+    "playwright:test": "npx playwright test",
+    "test:e2e:firestore": "FIRESTORE_EMULATOR_HOST=localhost:8080 npm run test:e2e:headed -- e2e/quiz-firestore-verification.spec.cjs"
   },
   "devDependencies": {
     "@babel/core": "^7.27.7",
@@ -53,12 +54,12 @@
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
+    "@emotion/styled": "^11.14.0",
     "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
-    "@mui/icons-material": "^7.2.0",
+    "@mui/icons-material": "^7.1.2",
     "@mui/lab": "^7.0.0-beta.14",
-    "@mui/material": "^7.2.0",
-    "@mui/x-tree-view": "^8.6.0",
+    "@mui/material": "^7.1.2",
+    "@mui/x-tree-view": "^8.5.3",
     "firebase": "^11.9.1",
     "glob": "^11.0.3",
     "json5": "^2.2.3",

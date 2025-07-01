@@ -78,11 +78,13 @@ const Profile: React.FC = () => {
     e.preventDefault();
     setTestSignInError(null);
     try {
-      await signInWithEmailAndPassword(auth, testEmail, testPassword);
+      console.log('[E2E TEST SIGNIN]', { testEmail, testPassword }); // Debug: log credentials
+      const userCredential = await signInWithEmailAndPassword(auth, testEmail, testPassword);
       if (typeof window !== 'undefined' && window.localStorage) {
-        window.localStorage.setItem('testUid', testEmail); // Set mock UID for E2E tests
+        window.localStorage.setItem('testUid', userCredential.user.uid); // Store real UID for E2E tests
       }
     } catch (err: any) {
+      console.error('[E2E TEST SIGNIN ERROR]', err); // Debug output for E2E
       setTestSignInError(err.message || 'Sign in failed');
     }
   };
