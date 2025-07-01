@@ -1,4 +1,6 @@
 import { test, expect, Page } from '@playwright/test';
+// Ensure process is available for progress bar
+import process from 'process';
 import { uiSignIn } from './helpers/uiSignIn';
 
 const USER_A = { email: 'testUserA@gmail.com', password: 'test1234' };
@@ -83,10 +85,14 @@ test.describe('Stats Isolation per User', () => {
     await page.goto('/analytics');
     let initialA = '';
     for (let i = 0; i < 20; i++) {
+      if (i === 0) process.stdout.write('Polling stat (User A initial): [');
       initialA = await getStatValue(page, 'Quizzes Taken:') || '';
       if (initialA) break;
+      process.stdout.write('#');
       await page.waitForTimeout(500);
+      if (i === 19) process.stdout.write('] (timeout)\n');
     }
+    if (initialA) process.stdout.write(']\n');
     log('User A initial stat:', initialA);
     const initialAInt = parseInt(initialA, 10) || 0;
     // Take a quiz as User A
@@ -105,10 +111,14 @@ test.describe('Stats Isolation per User', () => {
     await page.waitForTimeout(2000);
     let updatedA = '';
     for (let i = 0; i < 20; i++) {
+      if (i === 0) process.stdout.write('Polling stat (User A updated): [');
       updatedA = await getStatValue(page, 'Quizzes Taken:') || '';
       if (updatedA) break;
+      process.stdout.write('#');
       await page.waitForTimeout(500);
+      if (i === 19) process.stdout.write('] (timeout)\n');
     }
+    if (updatedA) process.stdout.write(']\n');
     log('User A updated stat:', updatedA);
     const updatedAInt = parseInt(updatedA, 10) || 0;
     expect(updatedAInt).toBeGreaterThan(initialAInt);
@@ -128,10 +138,14 @@ test.describe('Stats Isolation per User', () => {
     await page.goto('/analytics');
     let initialB = '';
     for (let i = 0; i < 20; i++) {
+      if (i === 0) process.stdout.write('Polling stat (User B initial): [');
       initialB = await getStatValue(page, 'Quizzes Taken:') || '';
       if (initialB) break;
+      process.stdout.write('#');
       await page.waitForTimeout(500);
+      if (i === 19) process.stdout.write('] (timeout)\n');
     }
+    if (initialB) process.stdout.write(']\n');
     log('User B stat:', initialB);
     const initialBInt = parseInt(initialB, 10) || 0;
     // User B's stat should not have changed due to User A's quiz
@@ -152,10 +166,14 @@ test.describe('Stats Isolation per User', () => {
     await page.goto('/analytics');
     let finalA = '';
     for (let i = 0; i < 20; i++) {
+      if (i === 0) process.stdout.write('Polling stat (User A final): [');
       finalA = await getStatValue(page, 'Quizzes Taken:') || '';
       if (finalA) break;
+      process.stdout.write('#');
       await page.waitForTimeout(500);
+      if (i === 19) process.stdout.write('] (timeout)\n');
     }
+    if (finalA) process.stdout.write(']\n');
     log('User A final stat:', finalA);
     const finalAInt = parseInt(finalA, 10) || 0;
     expect(finalAInt).toBe(updatedAInt);

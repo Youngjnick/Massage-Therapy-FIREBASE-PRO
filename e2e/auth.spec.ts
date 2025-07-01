@@ -1,4 +1,6 @@
 /* global console */
+// Ensure process is available for progress bar
+import process from 'process';
 // @ts-nocheck
 import { test, expect } from '@playwright/test';
 
@@ -29,11 +31,14 @@ test.describe('Authentication UI Flows', () => {
       console.log('Popup opened event detected');
     });
     await signInBtn.click();
-    // Wait for popup or fail after timeout
+    // Wait for popup or fail after timeout, with progress bar
+    process.stdout.write('Waiting for popup: [');
     for (let i = 0; i < 20; i++) {
       if (popupOpened) break;
+      process.stdout.write('#');
       await page.waitForTimeout(150);
     }
+    process.stdout.write(']\n');
     if (!popupOpened) {
       const html = await page.content();
       console.error('Popup did not open after clicking sign-in. Page HTML:', html);
