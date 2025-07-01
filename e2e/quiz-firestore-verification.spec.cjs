@@ -23,9 +23,10 @@ test.describe('Quiz Firestore Verification', () => {
     await page.fill('[data-testid="test-signin-email"]', TEST_EMAIL);
     await page.fill('[data-testid="test-signin-password"]', TEST_PASSWORD);
     await page.click('[data-testid="test-signin-submit"]');
-    // Wait for testUid to be set in localStorage
-    await page.waitForFunction(() => !!window.localStorage.getItem('testUid'), { timeout: 5000 });
-    const userUid = await page.evaluate(() => window.localStorage.getItem('testUid'));
+    // Wait for firebaseUserUid to be set in localStorage
+    await page.waitForFunction(() => !!window.localStorage.getItem('firebaseUserUid'), { timeout: 5000 });
+    const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    console.log('E2E TEST UID:', userUid);
     expect(userUid).toBeTruthy();
 
     // 2. Start and complete a quiz
@@ -39,6 +40,7 @@ test.describe('Quiz Firestore Verification', () => {
     // 3. Verify Firestore document for quiz progress using Admin SDK
     const db = admin.firestore();
     const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
+    console.log('E2E TEST Firestore doc path:', docRef.path);
     let docSnap = await docRef.get();
     let quizProgress = docSnap.data();
     console.log('Firestore quizProgress (initial):', quizProgress);
@@ -49,6 +51,7 @@ test.describe('Quiz Firestore Verification', () => {
       quizProgress = docSnap.data();
       console.log('Polling Firestore quizProgress:', quizProgress);
     }
+    console.log('E2E TEST Final Firestore quizProgress:', quizProgress);
     expect(quizProgress).not.toBeNull();
     expect(quizProgress?.showResults).toBe(true);
     expect(Array.isArray(quizProgress?.userAnswers)).toBe(true);

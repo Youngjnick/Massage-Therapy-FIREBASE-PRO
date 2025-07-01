@@ -25,6 +25,14 @@ const Profile: React.FC = () => {
         // @ts-ignore
         window._E2E_USER = firebaseUser;
         console.log('[E2E DEBUG] Profile user:', firebaseUser);
+        // Always set firebaseUserUid in localStorage for E2E reliability
+        if (window.localStorage) {
+          if (firebaseUser) {
+            window.localStorage.setItem('firebaseUserUid', firebaseUser.uid);
+          } else {
+            window.localStorage.removeItem('firebaseUserUid');
+          }
+        }
       }
     });
     return () => unsubscribe();
@@ -82,6 +90,7 @@ const Profile: React.FC = () => {
       const userCredential = await signInWithEmailAndPassword(auth, testEmail, testPassword);
       if (typeof window !== 'undefined' && window.localStorage) {
         window.localStorage.setItem('testUid', userCredential.user.uid); // Store real UID for E2E tests
+        window.localStorage.setItem('firebaseUserUid', userCredential.user.uid); // Also set firebaseUserUid for E2E tests
       }
     } catch (err: any) {
       console.error('[E2E TEST SIGNIN ERROR]', err); // Debug output for E2E

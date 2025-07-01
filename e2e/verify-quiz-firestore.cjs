@@ -21,6 +21,8 @@ async function main() {
   }
   const db = admin.firestore();
   const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
+  // Add a short delay to help with Firestore sync
+  await new Promise(res => global.setTimeout(res, 1000));
   const docSnap = await docRef.get();
   if (!docSnap.exists) {
     console.error('Quiz progress doc does not exist');
@@ -33,6 +35,7 @@ async function main() {
   }
   if (quizProgress.showResults !== true) {
     console.error('showResults is not true');
+    console.error('Full quizProgress doc:', JSON.stringify(quizProgress, null, 2));
     process.exit(4);
   }
   if (!Array.isArray(quizProgress.userAnswers)) {

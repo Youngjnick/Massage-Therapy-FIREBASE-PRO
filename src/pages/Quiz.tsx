@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { getQuestions } from '../questions/index';
 import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
+import { doc, getDoc } from 'firebase/firestore';
 import QuizQuestionCard from '../components/Quiz/QuizQuestionCard';
 import QuizProgressBar from '../components/Quiz/QuizProgressBar';
 import QuizStepper from '../components/Quiz/QuizStepper';
@@ -12,7 +13,7 @@ import { useQuizToggles } from '../hooks/useQuizToggles';
 import { useQuizState } from '../hooks/useQuizState';
 import { getFilteredSortedQuestions } from '../utils/quizFiltering';
 import { db } from '../firebaseClient';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { setDoc } from 'firebase/firestore';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import QuizReviewScreen from '../components/Quiz/QuizReviewScreen';
 import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
@@ -29,6 +30,32 @@ if (typeof window !== 'undefined') {
   } catch { /* ignore localStorage errors */ }
 }
 const Quiz: React.FC = () => {
+  const [firestoreStatus, setFirestoreStatus] = useState<string>('');
+  const [firestoreDoc, setFirestoreDoc] = useState<any>(null);
+  const [firestoreUid, setFirestoreUid] = useState<string>('');
+  const [firestoreDocPath, setFirestoreDocPath] = useState<string>('');
+
+  // Helper to fetch Firestore quizProgress doc for current user
+  const fetchFirestoreDoc = async () => {
+    try {
+      const auth = getAuth();
+      const user = auth.currentUser;
+      if (user) {
+        setFirestoreUid(user.uid);
+        const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
+        setFirestoreDocPath(progressRef.path);
+        const progressSnap = await getDoc(progressRef);
+        setFirestoreDoc(progressSnap.exists() ? progressSnap.data() : null);
+      } else {
+        setFirestoreUid('NO_USER');
+        setFirestoreDocPath('');
+        setFirestoreDoc(null);
+      }
+    } catch (err) {
+      setFirestoreDoc({ error: String(err) });
+    }
+  };
+
   // Remove local questions, setQuestions, loading, setLoading
   const [selectedTopic, setSelectedTopic] = useState<string>('');
   const [toggleState, setToggleState] = useQuizToggles(initialToggleState);
@@ -56,6 +83,7 @@ const Quiz: React.FC = () => {
   const [warning, setWarning] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [sortedTopics, setSortedTopics] = useState<string[]>([]);
+
   const quizCompleted = React.useRef(false); // Prevent further writes after completion
 
   // Use modularized data hook
@@ -227,6 +255,8 @@ const Quiz: React.FC = () => {
     });
     // Only save with showResults: false if not finished and not on last question
     if (!showResults && current < quizQuestions.length - 1 && !quizCompleted.current) {
+      // Extra guard: do not write if quiz is completed or showResults is true
+      if (quizCompleted.current || showResults) return;
       const progress = {
         started: true,
         current,
@@ -361,21 +391,60 @@ const Quiz: React.FC = () => {
 
   // --- Quiz Progress Save/Load ---
   const saveQuizProgress = async (progress: any, merge: boolean = true) => {
-    if (quizCompleted.current) {
-      console.log('[E2E DEBUG] Blocked Firestore write after completion', { ...progress, ts: Date.now() });
-      console.trace('[E2E DEBUG] Blocked Firestore write after completion stack trace');
+    // Debug output for every call
+    const statusMsg = `[E2E DEBUG] saveQuizProgress called: quizCompleted=${quizCompleted.current}, showResults=${showResults}, progressShowResults=${progress.showResults}, merge=${merge}, ts=${Date.now()}`;
+    setFirestoreStatus(statusMsg);
+    console.log(statusMsg);
+    // Strict guard: after quiz is completed, only allow writes with showResults: true
+    if (quizCompleted.current && progress.showResults !== true) {
+      setFirestoreStatus('[E2E DEBUG] Blocked Firestore write after completion: only showResults:true allowed');
+      console.log('[E2E DEBUG] Blocked Firestore write after completion: only showResults:true allowed', { ...progress, ts: Date.now() });
       return;
+    }
+    // Global guard: never allow a write with showResults: false if quiz is completed or showResults is true in state
+    if (quizCompleted.current || showResults || progress.showResults === false) {
+      if (progress.showResults === false) {
+        // Failsafe: check Firestore before writing
+        try {
+          const auth = getAuth();
+          const user = auth.currentUser;
+          if (user) {
+            const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
+            const progressSnap = await getDoc(progressRef);
+            if (progressSnap.exists() && progressSnap.data().showResults === true) {
+              setFirestoreStatus('[E2E DEBUG] Blocked Firestore write with showResults: false because Firestore already has showResults: true');
+              console.log('[E2E DEBUG] Blocked Firestore write with showResults: false because Firestore already has showResults: true', { ...progress, ts: Date.now() });
+              return;
+            }
+          }
+        } catch (err) {
+          setFirestoreStatus('[E2E DEBUG] Error checking Firestore in saveQuizProgress failsafe: ' + String(err));
+          console.error('[E2E DEBUG] Error checking Firestore in saveQuizProgress failsafe:', err);
+        }
+        setFirestoreStatus('[E2E DEBUG] Blocked Firestore write with showResults: false after completion or when showResults is true');
+        console.log('[E2E DEBUG] Blocked Firestore write with showResults: false after completion or when showResults is true', { ...progress, ts: Date.now() });
+        console.trace('[E2E DEBUG] Blocked Firestore write with showResults: false after completion or when showResults is true stack trace');
+        return;
+      }
     }
     const auth = getAuth();
     const user = auth.currentUser;
     if (user) {
       const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
       const payload = { ...progress, lastWrite: Date.now() };
+      setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - attempting write');
       console.log('[E2E DEBUG] Firestore write (saveQuizProgress)', { ...payload, ts: Date.now(), merge });
       console.trace('[E2E DEBUG] Firestore write (saveQuizProgress) stack trace');
-      await setDoc(progressRef, payload, { merge });
+      try {
+        await setDoc(progressRef, payload, { merge });
+        setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - SUCCESS');
+      } catch (err) {
+        setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - ERROR: ' + String(err));
+        console.error('[E2E DEBUG] Firestore write (saveQuizProgress) - ERROR:', err);
+      }
     } else if (typeof window !== 'undefined') {
       window.localStorage.setItem('quizProgress', JSON.stringify({ ...progress, lastWrite: Date.now() }));
+      setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - localStorage fallback');
     }
   };
 
@@ -509,6 +578,9 @@ const Quiz: React.FC = () => {
                 // Optionally, set a warning or flag for partial results
               }
               try {
+                setStarted(false); // Ensure results page is shown (moved up)
+                setShowResults(true); // Moved up
+                quizCompleted.current = true; // Block further writes immediately (moved here)
                 // Sanitize only for Firestore
                 const sanitizedForFirestore = {
                   started: false,
@@ -520,19 +592,43 @@ const Quiz: React.FC = () => {
                   ),
                   showResults: true
                 };
-                quizCompleted.current = true; // Block further writes immediately
                 console.log('[E2E DEBUG] Firestore write (final)', { ...sanitizedForFirestore, ts: Date.now() });
                 console.trace('[E2E DEBUG] Firestore write (final) stack trace');
-                await saveQuizProgress(sanitizedForFirestore, false); // merge: false for full overwrite
+                // --- Debugging: Extra logs around saveQuizProgress calls ---
+                console.log('[E2E DEBUG] About to write showResults:true to Firestore (first call)');
+                try {
+                  await saveQuizProgress(sanitizedForFirestore, false); // merge: false for full overwrite
+                  console.log('[E2E DEBUG] saveQuizProgress (first call) succeeded');
+                } catch (err) {
+                  console.error('[E2E DEBUG] saveQuizProgress (first call) ERROR:', err);
+                }
                 // Double-write failsafe
-                await saveQuizProgress(sanitizedForFirestore, false);
+                console.log('[E2E DEBUG] About to write showResults:true to Firestore (second call)');
+                try {
+                  await saveQuizProgress(sanitizedForFirestore, false);
+                  console.log('[E2E DEBUG] saveQuizProgress (second call) succeeded');
+                } catch (err) {
+                  console.error('[E2E DEBUG] saveQuizProgress (second call) ERROR:', err);
+                }
+                // Double-write failsafe
+                console.log('[E2E DEBUG] About to write showResults:true to Firestore (third call)');
+                try {
+                  await saveQuizProgress(sanitizedForFirestore, false);
+                  console.log('[E2E DEBUG] saveQuizProgress (third call) succeeded');
+                } catch (err) {
+                  console.error('[E2E DEBUG] saveQuizProgress (third call) ERROR:', err);
+                }
                 // Confirm Firestore state after write
                 const auth = getAuth();
                 const user = auth.currentUser;
                 if (user) {
                   const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
                   const progressSnap = await getDoc(progressRef);
-                  console.log('[E2E DEBUG] Firestore quizProgress after final write:', progressSnap.exists() ? progressSnap.data() : null);
+                  console.log('[E2E DEBUG] Firestore quizProgress after all writes:', progressSnap.exists() ? progressSnap.data() : null);
+                  // Set firebaseUserUid in localStorage for E2E tests
+                  if (typeof window !== 'undefined') {
+                    window.localStorage.setItem('firebaseUserUid', user.uid);
+                  }
                 }
                 await updateQuizStatsOnFinish({
                   userAnswers,
@@ -541,8 +637,6 @@ const Quiz: React.FC = () => {
                   started,
                   quizQuestions
                 });
-                setStarted(false); // Ensure results page is shown
-                setShowResults(true);
               } catch (err) {
                 setError('Error: Failed to submit results. Could not submit your quiz results.');
                 console.error('[E2E DEBUG] Error in onFinish:', err);
@@ -573,6 +667,15 @@ const Quiz: React.FC = () => {
           toggleState={toggleState}
         />
       )}
+      <div style={{position:'fixed',bottom:0,left:0,zIndex:9999,background:'#fffbe6',color:'#b45309',padding:'8px',fontSize:'12px',borderTopRightRadius:'8px',boxShadow:'0 0 4px #b45309',maxWidth:'60vw',wordBreak:'break-all'}} data-testid="e2e-debug-firestore-status">
+        <div><b>E2E DEBUG</b></div>
+        <div>showResults: {String(showResults)}</div>
+        <div>Firestore: {firestoreStatus}</div>
+        <div>UID: {firestoreUid}</div>
+        <div>Doc Path: {firestoreDocPath}</div>
+        <button onClick={fetchFirestoreDoc} style={{margin:'4px 0',fontSize:'11px'}}>Fetch Firestore Doc</button>
+        <div>Doc: <pre style={{margin:0,whiteSpace:'pre-wrap'}}>{firestoreDoc ? JSON.stringify(firestoreDoc, null, 2) : 'null'}</pre></div>
+      </div>
     </div>
   );
 };
