@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Finish and Finish Quiz Buttons', () => {
-  test('completes quiz and shows results with Finish button', async ({ page }) => {
+  test('completes quiz and shows results with Finish button', async ({ page }: { page: import('@playwright/test').Page }) => {
     await page.goto('/');
     console.log('[E2E PROGRESS] Navigated to /');
     await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
@@ -47,7 +47,8 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     console.log('[E2E PROGRESS] Quiz results are visible');
   });
 
-  test('shows Finish Quiz button and works as expected', async ({ page }) => {
+  // @ts-expect-error Playwright test typing workaround
+  test('shows Finish Quiz button and works as expected', async function({ page }: { page: import('@playwright/test').Page }) {
     await page.goto('/');
     console.log('[E2E PROGRESS] Navigated to /');
     // Wait for the DOM to be interactive
