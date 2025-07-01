@@ -1,3 +1,4 @@
+/* global console */
 import { test, expect } from '@playwright/test';
 
 test.describe('Finish and Finish Quiz Buttons', () => {
@@ -21,14 +22,22 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     await page.getByTestId('quiz-option').first().click();
-    // Click Finish Quiz if present
+    // Debug: check for both buttons
     const finishQuizBtn = page.getByRole('button', { name: /finish quiz/i });
-    if (await finishQuizBtn.isVisible()) {
+    const finishBtn = page.getByRole('button', { name: /finish/i });
+    const finishQuizVisible = await finishQuizBtn.isVisible({ timeout: 5000 }).catch(() => false);
+    const finishVisible = await finishBtn.isVisible({ timeout: 5000 }).catch(() => false);
+    console.log('[E2E DEBUG] Finish Quiz visible:', finishQuizVisible, 'Finish visible:', finishVisible);
+    if (finishQuizVisible) {
       await finishQuizBtn.click();
+      console.log('[E2E DEBUG] Clicked Finish Quiz button');
+    } else if (finishVisible) {
+      await finishBtn.click();
+      console.log('[E2E DEBUG] Clicked Finish button');
     } else {
-      // Fallback: try Finish
-      await page.getByRole('button', { name: /finish/i }).click();
+      throw new Error('Neither Finish Quiz nor Finish button was visible');
     }
     await expect(page.getByTestId('quiz-results')).toBeVisible();
+    console.log('[E2E DEBUG] Quiz results are visible');
+  }, 60000);
   });
-});

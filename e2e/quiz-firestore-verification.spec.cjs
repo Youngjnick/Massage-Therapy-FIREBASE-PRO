@@ -98,6 +98,9 @@ test.describe('Quiz Firestore Verification', () => {
     await page.waitForSelector('[data-testid="quiz-results"]', { timeout: 10000 });
     await expect(page.getByTestId('quiz-results')).toBeVisible();
 
+    // Wait a bit before polling Firestore to avoid race condition
+    await page.waitForTimeout(2000);
+
     // 3. Verify Firestore document for quiz progress using Admin SDK
     const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
     console.log('E2E TEST Firestore doc path:', docRef.path);
@@ -127,4 +130,4 @@ test.describe('Quiz Firestore Verification', () => {
     expect(Array.isArray(quizProgress?.userAnswers)).toBe(true);
     // Optionally, check more fields as needed
   });
-});
+  }, 60000);

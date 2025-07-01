@@ -9,7 +9,13 @@
     "outDir": "./dist",
     "rootDir": ".",
     "jsx": "react-jsx",
-    "types": ["vite/client", "jest", "@testing-library/jest-dom", "node"],
+    "types": [
+      "vite/client",
+      "jest",
+      "@testing-library/jest-dom",
+      "node",
+      "@playwright/test"
+    ],
     "lib": ["es2022", "dom"],
     "moduleResolution": "node",
     "resolveJsonModule": true
