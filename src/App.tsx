@@ -20,12 +20,30 @@ function RouteDebug() {
   return null;
 }
 
+
 const App: React.FC = () => {
   const { logEvent } = useAnalytics();
+  // Simulate user/Firebase loading state
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     logEvent('app_loaded');
+    // Simulate async Firebase/user init (replace with real logic if available)
+    const timer = setTimeout(() => setLoading(false), 600); // 600ms for demo
+    return () => clearTimeout(timer);
   }, [logEvent]);
+
+  if (loading) {
+    return (
+      <div className="app-loading-root" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff' }}>
+        <div>
+          <div className="spinner" style={{ margin: '0 auto', width: 48, height: 48, border: '6px solid #eee', borderTop: '6px solid #007bff', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
+          <div style={{ marginTop: 16, color: '#888', fontSize: 18 }}>Loading…</div>
+        </div>
+        <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
+      </div>
+    );
+  }
 
   return (
     <Router basename={import.meta.env.BASE_URL}>
