@@ -23,6 +23,8 @@ export async function updateQuizStatsOnFinish({
     if (!user) {
       console.log('[E2E DEBUG] updateQuizStatsOnFinish: No user');
       return;
+
+
     }
     console.log('[E2E DEBUG] updateQuizStatsOnFinish: User UID', user.uid);
     // Extra debug: log all input data

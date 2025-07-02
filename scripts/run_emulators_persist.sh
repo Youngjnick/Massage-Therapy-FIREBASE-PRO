@@ -31,3 +31,4 @@ echo "Using FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID and GCLOUD_PROJECT=$GCLOUD_
 
 # Start emulators with import flags and export on exit
 firebase emulators:start $FIRESTORE_IMPORT $AUTH_IMPORT --export-on-exit --project massage-therapy-smart-st-c7f8f
+

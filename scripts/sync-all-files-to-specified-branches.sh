@@ -1,3 +1,4 @@
+
 #!/bin/zsh
 # sync-all-files-to-branches.sh
 # Usage: ./scripts/sync-all-files-to-branches.sh [--remote remote1 remote2 ...] [--skip-tests] branch1 branch2 ...
