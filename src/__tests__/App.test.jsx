@@ -28,8 +28,10 @@ jest.mock('react-router-dom', () => {
 
 globalThis.import = { meta: { env: { BASE_URL: '/' } } };
 
-test('renders main content', () => {
+test('renders main content', async () => {
   render(<App />);
+  // Wait for the Quiz heading to appear, indicating main content is loaded
+  await screen.findByRole('heading', { name: /Quiz/i });
   expect(screen.getByText(/Massage/i)).toBeInTheDocument();
 });
 

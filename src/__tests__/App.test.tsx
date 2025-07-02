@@ -30,8 +30,12 @@ jest.mock('react-router-dom', () => {
   };
 });
 
-test('renders main content', () => {
+test('renders main content', async () => {
   render(<App />);
+  // Wait for loading spinner to disappear
+  await waitFor(() => {
+    expect(screen.queryByText(/Loading/i)).not.toBeInTheDocument();
+  });
   expect(screen.getByText(/Massage/i)).toBeInTheDocument();
 });
 
