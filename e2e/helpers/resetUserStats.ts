@@ -1,5 +1,7 @@
 import dotenv from 'dotenv';
 import path from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, '../../.env.e2e') });
 // Ensure required environment variables for Firebase Admin emulator use
 if (!process.env.FIRESTORE_EMULATOR_HOST) {
