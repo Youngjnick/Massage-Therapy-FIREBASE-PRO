@@ -9,13 +9,12 @@ export interface UserSettings {
 }
 
 export const getUserSettings = async (userId: string): Promise<UserSettings> => {
-  console.log('[E2E DEBUG][userSettings] getUserSettings called for:', userId);
   const ref = doc(db, 'users', userId);
   const snap = await getDoc(ref);
   if (snap.exists()) {
     const data = snap.data() as UserSettings;
     if (typeof window !== 'undefined') {
-      console.log('[E2E DEBUG][userSettings] getUserSettings: found data', userId, data);
+      console.log('[DEBUG][userSettings] getUserSettings:', userId, data);
     }
     return data;
   }
@@ -27,7 +26,7 @@ export const getUserSettings = async (userId: string): Promise<UserSettings> => 
     haptic: false,
   };
   if (typeof window !== 'undefined') {
-    console.log('[E2E DEBUG][userSettings] getUserSettings: no data, returning defaults for', userId, defaults);
+    console.log('[DEBUG][userSettings] getUserSettings: no data, returning defaults for', userId, defaults);
   }
   return defaults;
 };

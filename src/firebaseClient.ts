@@ -1,6 +1,6 @@
 // src/firebaseClient.ts
 import { initializeApp, getApps } from 'firebase/app';
-import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyANzEDUkGjM0M6L6dwZd1-TaOy1olo_6OM",
@@ -13,22 +13,5 @@ const firebaseConfig = {
 };
 
 // Prevent re-initialization in hot-reload/dev
-
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 export const db = getFirestore(app);
-
-// Always connect to Firestore emulator in test/E2E/dev environments
-if (typeof window !== 'undefined') {
-  const shouldUseEmulator =
-    window.location.hostname === 'localhost' ||
-    window.location.hostname === '127.0.0.1' ||
-    window.location.search.includes('e2e=1');
-  if (shouldUseEmulator) {
-    try {
-      connectFirestoreEmulator(db, 'localhost', 8080);
-      console.log('[E2E DEBUG] Connected to Firestore emulator at localhost:8080');
-    } catch {
-      // Ignore errors if already connected
-    }
-  }
-}

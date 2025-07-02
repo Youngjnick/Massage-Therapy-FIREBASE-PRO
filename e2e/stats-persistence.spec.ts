@@ -87,6 +87,7 @@ test.describe('Stats Persistence', () => {
     await startBtn.scrollIntoViewIfNeeded();
     await startBtn.click();
     await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 15000 });
+
     const firstOption = await page.getByTestId('quiz-option').first();
     await firstOption.scrollIntoViewIfNeeded();
     await firstOption.click();
