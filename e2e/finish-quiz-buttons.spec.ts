@@ -2,32 +2,67 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Finish and Finish Quiz Buttons', () => {
-  test('completes quiz and shows results with Finish button', async ({ page }: { page: import('@playwright/test').Page }) => {
-    await page.goto('/');
-    console.log('[E2E PROGRESS] Navigated to /');
-    await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
+test('completes quiz and shows results with Finish button', async ({ page }: { page: import('@playwright/test').Page }) => {
+  // Collect browser console logs
+  const consoleLogs: string[] = [];
+  page.on('console', msg => {
+    consoleLogs.push(`[${msg.type()}] ${msg.text()}`);
+  });
+  await page.goto('/quiz');
+  console.log('[E2E PROGRESS] Navigated to /quiz');
+  await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
+  // Wait for quiz start form
+  try {
+    await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+  } catch {
+    const html = await page.content();
+    console.log('[E2E ERROR] quiz-start-form not found. Dumping HTML...');
+    console.log('[E2E ERROR] HTML:', html);
+    if (consoleLogs.length > 0) {
+      console.log('[E2E ERROR] Browser console logs:');
+      for (const log of consoleLogs) {
+        console.log(log);
+      }
+    } else {
+      console.log('[E2E ERROR] No browser console logs captured.');
+    }
+    throw new Error('quiz-start-form not found on /quiz');
+  }
     let quizLengthInputFound = false;
+    let quizLengthInputTriedTestId = false;
     try {
-      await page.getByLabel('Quiz Length', { exact: false }).waitFor({ state: 'visible', timeout: 10000 });
+      await page.getByLabel('Quiz Length', { exact: false }).waitFor({ state: 'visible', timeout: 7000 });
       quizLengthInputFound = true;
     } catch {
-      if (!page.isClosed()) {
-        try {
-          await page.screenshot({ path: 'test-results/finish-quiz-buttons-quiz-length-missing-1.png', fullPage: true });
-          const html = await page.content();
-          console.log('[E2E ERROR] Quiz Length input not found. Dumping HTML and labels...');
-          const allLabels = await page.$$eval('label', (labels: Element[]) => labels.map(l => (l as HTMLLabelElement).textContent));
-          console.log('[E2E ERROR] All labels:', allLabels);
-          console.log('[E2E ERROR] HTML:', html);
-        } catch {
-          console.log('[E2E ERROR] Could not capture screenshot or HTML');
+      // Try by testid as fallback
+      try {
+        await page.getByTestId('quiz-length-input').waitFor({ state: 'visible', timeout: 7000 });
+        quizLengthInputFound = true;
+        quizLengthInputTriedTestId = true;
+      } catch {
+        if (!page.isClosed()) {
+          try {
+            await page.screenshot({ path: 'test-results/finish-quiz-buttons-quiz-length-missing-1.png', fullPage: true });
+            const html = await page.content();
+            console.log('[E2E ERROR] Quiz Length input not found. Dumping HTML and labels...');
+            const allLabels = await page.$$eval('label', (labels: Element[]) => labels.map(l => (l as HTMLLabelElement).textContent));
+            console.log('[E2E ERROR] All labels:', allLabels);
+            console.log('[E2E ERROR] HTML:', html);
+          } catch {
+            console.log('[E2E ERROR] Could not capture screenshot or HTML');
+          }
         }
+        throw new Error('Quiz Length input not found (label and testid)');
       }
-      throw new Error('Quiz Length input not found');
     }
     if (quizLengthInputFound) {
-      await page.getByLabel('Quiz Length', { exact: false }).fill('2');
-      console.log('[E2E PROGRESS] Filled Quiz Length input');
+      if (quizLengthInputTriedTestId) {
+        await page.getByTestId('quiz-length-input').fill('2');
+        console.log('[E2E PROGRESS] Filled Quiz Length input (testid)');
+      } else {
+        await page.getByLabel('Quiz Length', { exact: false }).fill('2');
+        console.log('[E2E PROGRESS] Filled Quiz Length input (label)');
+      }
     }
     await page.getByRole('button', { name: /start/i }).click();
     console.log('[E2E PROGRESS] Clicked Start button');
@@ -49,33 +84,66 @@ test.describe('Finish and Finish Quiz Buttons', () => {
 
   // @ts-expect-error Playwright test typing workaround
   test('shows Finish Quiz button and works as expected', async function({ page }: { page: import('@playwright/test').Page }) {
-    await page.goto('/');
-    console.log('[E2E PROGRESS] Navigated to /');
-    // Wait for the DOM to be interactive
+    // Collect browser console logs
+    const consoleLogs: string[] = [];
+    page.on('console', msg => {
+      consoleLogs.push(`[${msg.type()}] ${msg.text()}`);
+    });
+    await page.goto('/quiz');
+    console.log('[E2E PROGRESS] Navigated to /quiz');
     await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
-    let quizLengthInputFound = false;
+    // Wait for quiz start form
     try {
-      await page.getByLabel('Quiz Length', { exact: false }).waitFor({ state: 'visible', timeout: 10000 });
+      await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+    } catch {
+      const html = await page.content();
+      console.log('[E2E ERROR] quiz-start-form not found. Dumping HTML...');
+      console.log('[E2E ERROR] HTML:', html);
+      if (consoleLogs.length > 0) {
+        console.log('[E2E ERROR] Browser console logs:');
+        for (const log of consoleLogs) {
+          console.log(log);
+        }
+      } else {
+        console.log('[E2E ERROR] No browser console logs captured.');
+      }
+      throw new Error('quiz-start-form not found on /quiz');
+    }
+    let quizLengthInputFound = false;
+    let quizLengthInputTriedTestId = false;
+    try {
+      await page.getByLabel('Quiz Length', { exact: false }).waitFor({ state: 'visible', timeout: 7000 });
       quizLengthInputFound = true;
     } catch {
-      // Only try to log if the page is not closed
-      if (!page.isClosed()) {
-        try {
-          await page.screenshot({ path: 'test-results/finish-quiz-buttons-quiz-length-missing.png', fullPage: true });
-          const html = await page.content();
-          console.log('[E2E ERROR] Quiz Length input not found. Dumping HTML and labels...');
-          const allLabels = await page.$$eval('label', (labels: Element[]) => labels.map(l => (l as HTMLLabelElement).textContent));
-          console.log('[E2E ERROR] All labels:', allLabels);
-          console.log('[E2E ERROR] HTML:', html);
-        } catch {
-          console.log('[E2E ERROR] Could not capture screenshot or HTML');
+      // Try by testid as fallback
+      try {
+        await page.getByTestId('quiz-length-input').waitFor({ state: 'visible', timeout: 7000 });
+        quizLengthInputFound = true;
+        quizLengthInputTriedTestId = true;
+      } catch {
+        if (!page.isClosed()) {
+          try {
+            await page.screenshot({ path: 'test-results/finish-quiz-buttons-quiz-length-missing.png', fullPage: true });
+            const html = await page.content();
+            console.log('[E2E ERROR] Quiz Length input not found. Dumping HTML and labels...');
+            const allLabels = await page.$$eval('label', (labels: Element[]) => labels.map(l => (l as HTMLLabelElement).textContent));
+            console.log('[E2E ERROR] All labels:', allLabels);
+            console.log('[E2E ERROR] HTML:', html);
+          } catch {
+            console.log('[E2E ERROR] Could not capture screenshot or HTML');
+          }
         }
+        throw new Error('Quiz Length input not found (label and testid)');
       }
-      throw new Error('Quiz Length input not found');
     }
     if (quizLengthInputFound) {
-      await page.getByLabel('Quiz Length', { exact: false }).fill('1');
-      console.log('[E2E PROGRESS] Filled Quiz Length input');
+      if (quizLengthInputTriedTestId) {
+        await page.getByTestId('quiz-length-input').fill('1');
+        console.log('[E2E PROGRESS] Filled Quiz Length input (testid)');
+      } else {
+        await page.getByLabel('Quiz Length', { exact: false }).fill('1');
+        console.log('[E2E PROGRESS] Filled Quiz Length input (label)');
+      }
     }
     await page.getByRole('button', { name: /start/i }).click();
     console.log('[E2E PROGRESS] Clicked Start button');
