@@ -20,12 +20,20 @@ if (typeof window !== 'undefined') {
   const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const isE2E = window.location.search.includes('e2e=1');
   if (isLocalhost || isE2E) {
-    // Avoid double-connecting in hot reload
+    // Use VITE_FIRESTORE_EMULATOR_HOST if set, else default to localhost:8080
     try {
-      connectFirestoreEmulator(db, 'localhost', 8080);
-      console.log('Connected to Firestore emulator at localhost:8080');
-    } catch {
+      const emulatorHost = import.meta.env.VITE_FIRESTORE_EMULATOR_HOST;
+      if (emulatorHost) {
+        const [host, port] = emulatorHost.split(':');
+        connectFirestoreEmulator(db, host, Number(port));
+        console.log(`Connected to Firestore emulator at ${host}:${port} (from env)`);
+      } else {
+        connectFirestoreEmulator(db, 'localhost', 8080);
+        console.log('Connected to Firestore emulator at localhost:8080 (default)');
+      }
+    } catch (err) {
       // Ignore errors when connecting to Firestore emulator (may already be connected)
+      console.warn('Error connecting to Firestore emulator:', err);
     }
   }
 }

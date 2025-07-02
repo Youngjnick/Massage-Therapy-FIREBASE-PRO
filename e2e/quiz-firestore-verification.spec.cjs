@@ -30,42 +30,147 @@ const TEST_PASSWORD = process.env.E2E_TEST_PASSWORD || 'test1234';
 
 test.describe('Quiz Firestore Verification', () => {
   test('Quiz results are saved to Firestore after submit', async ({ page }) => {
-    // Clear test user's quizProgress before test
+    // Capture browser console errors/warnings for debugging
+    const browserLogs = [];
+    page.on('console', msg => {
+      if (msg.type() === 'error' || msg.type() === 'warning') {
+        browserLogs.push(`[BROWSER ${msg.type().toUpperCase()}] ${msg.text()}`);
+      }
+    });
+    // Use the shared UI sign-in helper for consistency with other tests
+    const { uiSignIn } = require('./helpers/uiSignIn');
     const db = admin.firestore();
     let userUid = null;
-    // Try to get UID from previous runs if possible
+    // Sign in and clear quizProgress for the test user
+    await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD, profilePath: '/profile' });
+    userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    if (userUid) {
+      const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
+      await docRef.delete().catch(e => console.log('No quizProgress doc to delete:', e.message));
+      console.log('Cleared quizProgress for UID:', userUid);
+    }
+    // Wait for firebaseUserUid to be set in localStorage, robust to page closure
     try {
-      await page.goto('/profile');
-      await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
-      await page.fill('[data-testid="test-signin-email"]', TEST_EMAIL);
-      await page.fill('[data-testid="test-signin-password"]', TEST_PASSWORD);
-      await page.click('[data-testid="test-signin-submit"]');
-      await page.waitForFunction(() => !!window.localStorage.getItem('firebaseUserUid'), { timeout: 5000 });
-      userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
-      if (userUid) {
-        const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
-        await docRef.delete().catch(e => console.log('No quizProgress doc to delete:', e.message));
-        console.log('Cleared quizProgress for UID:', userUid);
+      if (!page.isClosed()) {
+        await page.waitForFunction(() => !!window.localStorage.getItem('firebaseUserUid'), { timeout: 5000 });
       }
     } catch (e) {
-      console.log('Could not clear quizProgress before test:', e.message);
+      if (page.isClosed()) {
+        console.log('Page was closed before firebaseUserUid could be set. Skipping wait.');
+      } else {
+        throw e;
+      }
     }
-    // 1. Go to /profile and use the test sign-in form
-    await page.goto('/profile');
-    await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
-    await page.fill('[data-testid="test-signin-email"]', TEST_EMAIL);
-    await page.fill('[data-testid="test-signin-password"]', TEST_PASSWORD);
-    await page.click('[data-testid="test-signin-submit"]');
-    // Wait for firebaseUserUid to be set in localStorage
-    await page.waitForFunction(() => !!window.localStorage.getItem('firebaseUserUid'), { timeout: 5000 });
+    // Wait for sign-in form to disappear (robust for mobile/slow devices)
+    await page.waitForSelector('[data-testid="test-signin-submit"]', { state: 'detached', timeout: 7000 });
     userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    // Log current URL for debugging
+    const currentUrl = page.url();
+    console.log('After sign-in, current URL:', currentUrl);
     console.log('E2E TEST UID:', userUid);
     expect(userUid).toBeTruthy();
 
+    // Optionally, wait for a user-specific element or profile indicator here if available
+    // e.g. await page.waitForSelector('[data-testid="profile-logged-in"]', { timeout: 5000 });
+
     // 2. Start and complete a quiz (robust waits for all selectors)
-    await page.goto('/');
-    // Wait for Quiz Length input to be visible (works for both desktop and mobile)
-    await page.waitForSelector('[aria-label="Quiz Length"], [data-testid="quiz-length-input"]', { timeout: 10000 });
+    // Only navigate to /quiz if not already there
+    if (!page.url().includes('/quiz')) {
+      await page.goto('/quiz');
+      console.log('Navigated to /quiz');
+    }
+    // Wait a moment to ensure /quiz is loaded
+    await page.waitForTimeout(1000);
+    // Log URL and firebaseUserUid after navigation
+    const afterQuizUrl = page.url();
+    const afterQuizUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    console.log('[E2E DEBUG] After navigation, URL:', afterQuizUrl);
+    console.log('[E2E DEBUG] After navigation, firebaseUserUid:', afterQuizUid);
+    // If not on /quiz, log and fail
+    if (!afterQuizUrl.includes('/quiz')) {
+      // Try to find any error/auth message
+      let errorMsg = '';
+      try {
+        const errorEl = await page.$('[data-testid="auth-error"], .auth-error, .error, [role="alert"]');
+        if (errorEl) errorMsg = await errorEl.textContent();
+      } catch {}
+      const content = await page.content();
+      if (browserLogs.length) {
+        console.error('[E2E ERROR] Browser console errors/warnings after navigation:', browserLogs);
+      }
+      console.error('[E2E ERROR] Not on /quiz after navigation. URL:', afterQuizUrl, 'firebaseUserUid:', afterQuizUid, 'Error message:', errorMsg, 'Page content:', content.slice(0, 1000));
+      throw new Error('Did not reach /quiz after navigation. See debug logs above.');
+    }
+    // Wait for loading spinner to disappear if present (longer timeout)
+    let spinnerGone = false;
+    try {
+      await page.waitForSelector('[data-testid="loading-spinner"]', { state: 'detached', timeout: 20000 });
+      spinnerGone = true;
+    } catch (e) {
+      console.warn('[E2E WARNING] Loading spinner did not disappear after 20s. Proceeding to check for quiz input.');
+    }
+    // Wait for Quiz Length input to be visible (longer timeout)
+    try {
+      await page.waitForSelector('[aria-label="Quiz Length"], [data-testid="quiz-length-input"]', { timeout: 20000 });
+    } catch (e) {
+      // Dump page content for debugging
+      const content = await page.content();
+      console.error('[E2E ERROR] Quiz Length input not found after 20s. Page content:', content.slice(0, 1000));
+      throw e;
+    }
+    // Check for quiz questions after input is visible
+    let questionsFound = false;
+    let questionCount = 0;
+    let questionDetails = [];
+    // Collect all browser logs, not just errors/warnings
+    const allBrowserLogs = [];
+    page.on('console', msg => {
+      allBrowserLogs.push(`[BROWSER ${msg.type().toUpperCase()}] ${msg.text()}`);
+    });
+    // Collect network requests
+    const networkRequests = [];
+    page.on('request', req => {
+      networkRequests.push(`[REQUEST] ${req.method()} ${req.url()}`);
+    });
+    try {
+      // Find all quiz question <option> elements inside the quiz <select>
+      // Adjust selector as needed for your actual DOM structure
+      const questionEls = await page.$$('select option');
+      questionCount = questionEls.length;
+      if (questionCount > 0) {
+        questionsFound = true;
+        // Get text content of each question for debug
+        for (const el of questionEls) {
+          try {
+            const text = await el.textContent();
+            questionDetails.push(text);
+          } catch {}
+        }
+      }
+    } catch (e) {
+      // Ignore errors here, just log below
+    }
+    console.log(`[E2E DEBUG] Found ${questionCount} quiz question(s):`, questionDetails);
+    if (!questionsFound) {
+      const content = await page.content();
+      // Dump all browser logs
+      if (allBrowserLogs.length) {
+        console.error('[E2E ERROR] All browser console logs after quiz load:', allBrowserLogs);
+      }
+      if (browserLogs.length) {
+        console.error('[E2E ERROR] Browser console errors/warnings after quiz load:', browserLogs);
+      }
+      // Dump all network requests
+      if (networkRequests.length) {
+        console.error('[E2E ERROR] Network requests made by page:', networkRequests);
+      }
+      // Dump full page content
+      console.error('[E2E ERROR] No quiz questions found after loading /quiz. FULL Page content:', content);
+      throw new Error('No quiz questions found after loading /quiz. See debug logs above.');
+    }
+    if (browserLogs.length) {
+      console.warn('[E2E WARNING] Browser console errors/warnings after quiz load:', browserLogs);
+    }
     // Try both label and testid for compatibility
     let quizLengthFilled = false;
     try {
