@@ -49,16 +49,22 @@ const Profile: React.FC = () => {
     setSettingsLoaded(false); // Reset when user changes
     console.log('[DEBUG] Loading user settings for:', user.uid);
     getUserSettings(user.uid).then(settings => {
-      console.log('[DEBUG] Loaded settings:', settings);
+      console.log('[E2E DEBUG][Profile] getUserSettings resolved:', settings);
       if (!settings) {
         setSettingsLoaded(true);
         return; // null check
+      }
+      // Save loaded settings to localStorage for E2E
+      if (typeof window !== 'undefined' && window.localStorage) {
+        console.log('[E2E DEBUG][Profile] Writing userSettings to localStorage:', settings);
+        window.localStorage.setItem('userSettings', JSON.stringify(settings));
       }
       setDarkMode(!!settings.darkMode);
       setAriaSound(settings.ariaSound !== false);
       setHaptic(!!settings.haptic);
       setShowExplanations(settings.showExplanations !== false);
       setSettingsLoaded(true);
+      console.log('[E2E DEBUG][Profile] settingsLoaded set to true');
     });
   }, [user]);
 

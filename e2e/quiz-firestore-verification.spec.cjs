@@ -57,12 +57,43 @@ test.describe('Quiz Firestore Verification', () => {
     } catch (e) {
       console.log('Could not clear quizProgress before test:', e.message);
     }
+    // Always start with a clean session: clear localStorage and sessionStorage
+    await page.goto('/profile');
+    await page.evaluate(() => {
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+    });
+    await page.reload();
+
     // 1. Go to /profile and use the test sign-in form
     await page.goto('/profile');
-    await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
-    await page.fill('[data-testid="test-signin-email"]', TEST_EMAIL);
-    await page.fill('[data-testid="test-signin-password"]', TEST_PASSWORD);
-    await page.$eval('[data-testid="test-signin-submit"]', btn => btn.click());
+    // If sign-in form is not present, log diagnostics and reload once
+    let signInFormFound = false;
+    try {
+      await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 5000 });
+      signInFormFound = true;
+    } catch (e) {
+      const url = page.url();
+      const html = await page.content();
+      console.log('[E2E ERROR] Sign-in form not found after initial load. URL:', url);
+      console.log('[E2E ERROR] HTML:', html);
+      await page.reload();
+      try {
+        await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 5000 });
+        signInFormFound = true;
+      } catch (e2) {
+        const url2 = page.url();
+        const html2 = await page.content();
+        console.log('[E2E ERROR] Sign-in form still not found after reload. URL:', url2);
+        console.log('[E2E ERROR] HTML:', html2);
+        throw new Error('Sign-in form not found after reload.');
+      }
+    }
+    if (signInFormFound) {
+      await page.fill('[data-testid="test-signin-email"]', TEST_EMAIL);
+      await page.fill('[data-testid="test-signin-password"]', TEST_PASSWORD);
+      await page.$eval('[data-testid="test-signin-submit"]', btn => btn.click());
+    }
     // Wait for the sign-in button to be removed from the DOM (SPA transition)
     await page.waitForSelector('[data-testid="test-signin-submit"]', { state: 'detached', timeout: 5000 });
     // Wait for firebaseUserUid to be set in localStorage
@@ -71,22 +102,105 @@ test.describe('Quiz Firestore Verification', () => {
     console.log('E2E TEST UID:', userUid);
     expect(userUid).toBeTruthy();
 
-    // 2. Start and complete a quiz (robust waits for all selectors)
-    await page.goto('/');
+    // 2. Log and wait for user settings to be loaded before navigating to /quiz
+    const userSettingsAfterSignIn = await page.evaluate(() => window.localStorage.getItem('userSettings'));
+    const urlAfterSignIn = page.url();
+    const browserLogsAfterSignIn = await page.evaluate(() => window.__e2eConsoleLogs || []);
+    // Log all localStorage contents after sign-in for diagnostics
+    const allLocalStorage = await page.evaluate(() => {
+      const out = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        out[k] = localStorage.getItem(k);
+      }
+      return out;
+    });
+    console.log('[E2E DEBUG] userSettings in localStorage after sign-in:', userSettingsAfterSignIn);
+    console.log('[E2E DEBUG] URL after sign-in:', urlAfterSignIn);
+    console.log('[E2E DEBUG] Browser console logs after sign-in:', browserLogsAfterSignIn);
+    console.log('[E2E DEBUG] All localStorage after sign-in:', allLocalStorage);
+    // Wait up to 20s for userSettings key to appear
+    try {
+      await page.waitForFunction(() => !!window.localStorage.getItem('userSettings'), { timeout: 20000 });
+      const userSettingsReady = await page.evaluate(() => window.localStorage.getItem('userSettings'));
+      console.log('[E2E DEBUG] userSettings in localStorage after wait:', userSettingsReady);
+    } catch (e) {
+      const userSettingsTimeout = await page.evaluate(() => window.localStorage.getItem('userSettings'));
+      const html = await page.content();
+      const browserLogs = await page.evaluate(() => window.__e2eConsoleLogs || []);
+      await page.screenshot({ path: 'test-results/user-settings-missing.png', fullPage: true });
+      console.log('[E2E WARN] Timed out waiting for userSettings in localStorage. Value at timeout:', userSettingsTimeout);
+      console.log('[E2E WARN] HTML at timeout:', html);
+      console.log('[E2E WARN] Browser console logs at timeout:', browserLogs);
+    }
+    // After sign-in, dump Profile page HTML for diagnostics
+    const profileHtml = await page.content();
+    console.log('[E2E DEBUG] Profile page HTML after sign-in:', profileHtml);
+    // Add a short delay to allow any async writes to complete
+    await page.waitForTimeout(1000);
+
+    // Wait for the Profile page to show the test user's email or UID after sign-in
+    await page.waitForSelector('[data-testid="profile-uid"]', { timeout: 20000 });
+    const profileUidText = await page.$eval('[data-testid="profile-uid"]', el => el.textContent);
+    console.log('[E2E DEBUG] Profile UID after sign-in:', profileUidText);
+
+    // Always navigate to /quiz after sign-in, regardless of SPA state
+    await page.goto('/quiz');
+    // Log browser console output after navigation
+    const browserLogs = await page.evaluate(() => window.__e2eConsoleLogs || []);
+    console.log('[E2E DEBUG] Browser console logs after navigating to /quiz:', browserLogs);
+    // Wait for the quiz start form to be visible before looking for Quiz Length input
+    let quizStartFormVisible = false;
+    try {
+      await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+      quizStartFormVisible = true;
+    } catch (e) {
+      const html = await page.content();
+      const allLabels = await page.$$eval('label', (labels) => labels.map(l => l.textContent));
+      const allButtons = await page.$$eval('button', (btns) => btns.map(b => b.textContent));
+      console.log('[E2E ERROR] Quiz start form not found after 10s. Dumping HTML, labels, and buttons...');
+      console.log('[E2E ERROR] HTML:', html);
+      console.log('[E2E ERROR] All labels:', allLabels);
+      console.log('[E2E ERROR] All buttons:', allButtons);
+      throw new Error('Quiz start form not found on /quiz');
+    }
     // Wait for Quiz Length input to be visible (works for both desktop and mobile)
-    await page.waitForSelector('[aria-label="Quiz Length"], [data-testid="quiz-length-input"]', { timeout: 10000 });
+    console.log('[E2E DEBUG] About to wait for Quiz Length input selector...');
+    let quizLengthInputVisible = false;
+    try {
+      console.log('[E2E DEBUG] Waiting for Quiz Length input selector...');
+      await page.waitForSelector('[aria-label="Quiz Length"], [data-testid="quiz-length-input"]', { timeout: 10000 });
+      console.log('[E2E DEBUG] Quiz Length input selector found!');
+      quizLengthInputVisible = true;
+    } catch (e) {
+      console.log('[E2E DEBUG] Quiz Length input selector NOT found, entering catch block...');
+      const html = await page.content();
+      const bodyHtml = await page.$eval('body', el => el.innerHTML).catch(() => '[body not found]');
+      const allLabels = await page.$$eval('label', (labels) => labels.map(l => l.textContent));
+      const allButtons = await page.$$eval('button', (btns) => btns.map(b => b.textContent));
+      const consoleLogs = await page.evaluate(() => window.__e2eConsoleLogs || []);
+      console.log('[E2E ERROR] Quiz Length input not found after 10s. Dumping HTML, BODY, labels, buttons, and console logs...');
+      console.log('[E2E ERROR] HTML:', html);
+      console.log('[E2E ERROR] BODY:', bodyHtml);
+      console.log('[E2E ERROR] All labels:', allLabels);
+      console.log('[E2E ERROR] All buttons:', allButtons);
+      console.log('[E2E ERROR] Browser console logs:', consoleLogs);
+      throw new Error('Quiz Length input not found on /quiz');
+    }
     // Try both label and testid for compatibility
     let quizLengthFilled = false;
-    try {
-      await page.getByLabel('Quiz Length').fill('1');
-      quizLengthFilled = true;
-    } catch {
-      // fallback to testid if label fails
+    if (quizLengthInputVisible) {
       try {
-        await page.getByTestId('quiz-length-input').fill('1');
+        await page.getByLabel('Quiz Length').fill('1');
         quizLengthFilled = true;
       } catch {
-        console.log('Could not find Quiz Length input by label or testid');
+        // fallback to testid if label fails
+        try {
+          await page.getByTestId('quiz-length-input').fill('1');
+          quizLengthFilled = true;
+        } catch {
+          console.log('Could not find Quiz Length input by label or testid');
+        }
       }
     }
     expect(quizLengthFilled).toBe(true);
