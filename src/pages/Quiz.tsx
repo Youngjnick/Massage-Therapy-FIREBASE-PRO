@@ -656,13 +656,19 @@ const Quiz: React.FC = () => {
                     window.localStorage.setItem('firebaseUserUid', user.uid);
                   }
                 }
-                await updateQuizStatsOnFinish({
-                  userAnswers,
-                  shuffledQuestions,
-                  shuffledOptions,
-                  started,
-                  quizQuestions
-                });
+                // Move stats update logic here for reliability (was in useEffect)
+                try {
+                  await updateQuizStatsOnFinish({
+                    userAnswers,
+                    shuffledQuestions,
+                    shuffledOptions,
+                    started,
+                    quizQuestions
+                  });
+                  console.log('[E2E DEBUG] updateQuizStatsOnFinish called directly in onFinish');
+                } catch (err) {
+                  console.error('[E2E DEBUG] updateQuizStatsOnFinish error in onFinish', err);
+                }
               } catch (err) {
                 setError('Error: Failed to submit results. Could not submit your quiz results.');
                 console.error('[E2E DEBUG] Error in onFinish:', err);

@@ -118,14 +118,6 @@ test.describe('Stats Persistence', () => {
     const statsAfterQuiz = await getUserStats(userUid);
     console.log('[E2E DEBUG] Firestore analytics doc after quiz:', statsAfterQuiz);
 
-    // --- Fallback: if stat not updated, call backend helper directly ---
-    if (!statsAfterQuiz || typeof statsAfterQuiz.completed === 'undefined' || statsAfterQuiz.completed === 0) {
-      console.log('[E2E DEBUG] Fallback: calling updateQuizStatsOnFinish directly from test');
-      const { updateQuizStatsOnFinish } = await import('./helpers/updateQuizStatsOnFinish');
-      await updateQuizStatsOnFinish(userUid);
-      const statsAfterDirect = await getUserStats(userUid);
-      console.log('[E2E DEBUG] Firestore analytics doc after direct update:', statsAfterDirect);
-    }
     // Wait for stat update to propagate (poll for stat change)
     let updatedQuizzesTaken = '';
     let statChanged = false;
