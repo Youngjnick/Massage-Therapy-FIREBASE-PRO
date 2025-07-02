@@ -1,6 +1,10 @@
 #!/bin/zsh
 # Start Firebase emulators with persistent data
 
+# Always clean up any old emulators and ports first
+./scripts/kill-all-ports.sh
+sleep 2  # Give OS time to release ports and delete lock files
+
 # Set the data import/export directories
 FIRESTORE_EXPORT_DIR="emulator-data/firestore_export"
 AUTH_EXPORT_DIR="emulator-data/auth_export"
