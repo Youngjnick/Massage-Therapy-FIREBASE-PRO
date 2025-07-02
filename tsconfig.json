@@ -36,7 +36,9 @@
     "__tests__/**/*.ts",
     "__tests__/**/*.tsx",
     "__tests__/**/*.js",
-    "__tests__/**/*.jsx"
+    "__tests__/**/*.jsx",
+    "e2e",
+    "e2e/**/*.ts"
   ],
   "exclude": [
     "node_modules",

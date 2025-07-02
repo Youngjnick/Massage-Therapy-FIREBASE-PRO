@@ -10,7 +10,7 @@
     "dev": "vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "emulators": "npx firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth",
-    "playwright:test": "npx playwright test",
+    "playwright:test": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-firebase-pro npx playwright test",
     "test:e2e:firestore": "FIRESTORE_EMULATOR_HOST=localhost:8080 npm run test:e2e:headed -- e2e/quiz-firestore-verification.spec.cjs",
     "test:e2e:last-failed": "./scripts/run_playwright_and_capture_output.sh --last-failed"
   },

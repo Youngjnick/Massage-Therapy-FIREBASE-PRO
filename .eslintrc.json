@@ -44,6 +44,15 @@
         "no-undef": "off",
         "no-unused-vars": "off"
       }
+    },
+    {
+      "files": ["e2e/**/*.ts", "e2e/**/*.js"],
+      "env": {
+        "node": true
+      },
+      "rules": {
+        "no-undef": "off"
+      }
     }
   ]
 }
