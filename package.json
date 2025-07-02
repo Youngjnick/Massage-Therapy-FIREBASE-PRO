@@ -12,7 +12,8 @@
     "emulators": "npx firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth",
     "playwright:test": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-firebase-pro npx playwright test",
     "test:e2e:firestore": "FIRESTORE_EMULATOR_HOST=localhost:8080 npm run test:e2e:headed -- e2e/quiz-firestore-verification.spec.cjs",
-    "test:e2e:last-failed": "./scripts/run_playwright_and_capture_output.sh --last-failed"
+    "test:e2e:last-failed": "./scripts/run_playwright_and_capture_output.sh --last-failed",
+    "resetUserStats": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f ts-node e2e/helpers/resetUserStats.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.27.7",
@@ -50,6 +51,7 @@
     "react": "^19.1.0",
     "react-icons": "^5.5.0",
     "start-server-and-test": "^2.0.12",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },

@@ -49,6 +49,10 @@ test.describe('Stats Persistence', () => {
     }
     // Reset stat before test using Node.js helper
     await resetUserStats(userUid);
+    // Log Firestore analytics doc directly after reset
+    const { getUserStats } = await import('./helpers/getUserStats');
+    const statsAfterReset = await getUserStats(userUid);
+    console.log('[E2E DEBUG] Firestore analytics doc after reset:', statsAfterReset);
     await page.goto('/analytics');
     // Wait for stat value to be non-empty (should be 0 after reset)
     let initialQuizzesTaken = '';
@@ -90,6 +94,9 @@ test.describe('Stats Persistence', () => {
     await nextOrFinishBtn.scrollIntoViewIfNeeded();
     await nextOrFinishBtn.click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
+    // Log Firestore analytics doc directly after quiz completion
+    const statsAfterQuiz = await getUserStats(userUid);
+    console.log('[E2E DEBUG] Firestore analytics doc after quiz:', statsAfterQuiz);
     // Wait for stat update to propagate (poll for stat change)
     let updatedQuizzesTaken = '';
     let statChanged = false;

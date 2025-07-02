@@ -4,16 +4,5 @@ FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
 GOOGLE_APPLICATION_CREDENTIALS: undefined
 NODE_ENV: test
 Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
-Error: GCLOUD_PROJECT or FIREBASE_PROJECT_ID is not set. Please set your project ID for Firebase Admin emulator use.
-
-   at helpers/resetUserStats.ts:9
-
-   7 | }
-   8 | if (!process.env.GCLOUD_PROJECT && !process.env.FIREBASE_PROJECT_ID) {
->  9 |   throw new Error('GCLOUD_PROJECT or FIREBASE_PROJECT_ID is not set. Please set your project ID for Firebase Admin emulator use.');
-     |         ^
-  10 | }
-  11 | // Node.js helper to reset analytics.completed for a user in Firestore emulator
-  12 |
-    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/resetUserStats.ts:9:9
+Error: No tests found
 

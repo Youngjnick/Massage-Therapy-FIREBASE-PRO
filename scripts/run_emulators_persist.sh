@@ -19,5 +19,10 @@ else
   AUTH_IMPORT=""
 fi
 
+# Set environment variables for emulator clients
+export FIRESTORE_EMULATOR_HOST="localhost:8080"
+export GCLOUD_PROJECT="massage-therapy-smart-st-c7f8f"
+export FIREBASE_PROJECT_ID="massage-therapy-smart-st-c7f8f"
+
 # Start emulators with import flags and export on exit
 firebase emulators:start $FIRESTORE_IMPORT $AUTH_IMPORT --export-on-exit --project massage-therapy-smart-st-c7f8f

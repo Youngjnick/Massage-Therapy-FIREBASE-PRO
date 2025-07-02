@@ -17,6 +17,7 @@ export async function updateQuizStatsOnFinish({
   quizQuestions: Question[];
 }) {
   try {
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: called', { userAnswers, started, quizQuestionsLength: quizQuestions.length });
     const auth = getAuth();
     const user = auth.currentUser;
     if (!user) {

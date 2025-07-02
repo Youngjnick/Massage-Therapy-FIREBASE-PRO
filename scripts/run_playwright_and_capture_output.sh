@@ -5,6 +5,7 @@
 export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
 export FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
 export FIREBASE_PROJECT_ID=massage-therapy-firebase-pro
+export GCLOUD_PROJECT=massage-therapy-firebase-pro
 export NODE_ENV=test
 
 
