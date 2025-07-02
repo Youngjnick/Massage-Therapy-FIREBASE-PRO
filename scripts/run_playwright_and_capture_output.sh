@@ -1,10 +1,10 @@
-
 #!/bin/zsh
 # Run Playwright tests and always capture output to scripts/playwright-output.txt, even if interrupted
 
 # Always use local emulators, never Google Cloud
 export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
 export FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
+export FIREBASE_PROJECT_ID=massage-therapy-firebase-pro
 export NODE_ENV=test
 
 
