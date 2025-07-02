@@ -28,20 +28,46 @@ function update_last_failing_files() {
 trap update_last_failing_files EXIT
 
 
-# Run prioritized (flaky/important) test files first if specified
-if [[ -n "$PLAYWRIGHT_PRIORITIZED_TESTS" ]]; then
-  IFS=',' read -A prioritized_files <<< "$PLAYWRIGHT_PRIORITIZED_TESTS"
-  echo "Running prioritized test files first: ${prioritized_files[@]}"
-  npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
-  update_last_failing_files
-fi
-
-# Prompt user to choose between running all tests or only last failed
-echo "Run all tests or only last failed? ([a]ll/[f]ailed): "
+# Prompt user to choose which tests to run
+echo "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities): "
 read -r choice
 
+DEFAULT_PRIORITIZED_TESTS="e2e/stats-critical-flows.spec.ts,e2e/stats-persistence.spec.ts,e2e/quiz-firestore-verification.spec.cjs,e2e/quiz-keyboard-navigation.spec.ts,e2e/quiz-stats-live-update.spec.ts,e2e/finish-quiz-buttons.spec.ts,e2e/keyboard-navigation-and-restart.spec.ts,e2e/login-flow.spec.ts,e2e/edge-accessibility.spec.ts,e2e/critical-ui-accessibility.spec.ts"
+prioritized_files=()
+
 if [[ "$choice" == "f"* ]]; then
-  npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+  if [[ -s "$LAST_FAILING_FILE" ]]; then
+    # Read non-empty lines only
+    prioritized_files=()
+    while IFS= read -r line; do
+      [[ -n "$line" ]] && prioritized_files+=("$line")
+    done < "$LAST_FAILING_FILE"
+    if [[ ${#prioritized_files[@]} -gt 0 ]]; then
+      echo "Running last-failed test files: ${prioritized_files[@]}"
+      npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+      update_last_failing_files
+    else
+      echo "No valid last-failed test files found. Falling back to --last-failed."
+      npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+    fi
+  else
+    npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+  fi
+elif [[ "$choice" == "p"* ]]; then
+  # Use priorities: env or last failed only. Do NOT fall back to default list.
+  if [[ -n "$PLAYWRIGHT_PRIORITIZED_TESTS" ]]; then
+    IFS=',' read -A prioritized_files <<< "$PLAYWRIGHT_PRIORITIZED_TESTS"
+  elif [[ -s "$LAST_FAILING_FILE" ]]; then
+    mapfile -t prioritized_files < "$LAST_FAILING_FILE"
+  fi
+  if [[ ${#prioritized_files[@]} -gt 0 ]]; then
+    echo "Running prioritized test files: ${prioritized_files[@]}"
+    npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+    update_last_failing_files
+  else
+    echo "No prioritized tests found. Exiting."
+    exit 1
+  fi
 else
   npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
 fi

@@ -25,6 +25,14 @@ export async function updateQuizStatsOnFinish({
       return;
     }
     console.log('[E2E DEBUG] updateQuizStatsOnFinish: User UID', user.uid);
+    // Extra debug: log all input data
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: input', {
+      userAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      started,
+      quizQuestions
+    });
     const stats: { [topic: string]: { correct: number; total: number } } = {};
     (started ? shuffledQuestions : quizQuestions).forEach((q, i) => {
       const topic = (q.topics && q.topics.at(-1)) || 'Other';
@@ -37,8 +45,8 @@ export async function updateQuizStatsOnFinish({
         stats[topic].correct++;
       }
     });
-    const correct = Object.values(stats).reduce((sum, s) => sum + s.correct, 0);
-    const total = Object.values(stats).reduce((sum, s) => sum + s.total, 0);
+    const correct = Object.values(stats).reduce((sum, s) => sum + (s as { correct: number; total: number }).correct, 0);
+    const total = Object.values(stats).reduce((sum, s) => sum + (s as { correct: number; total: number }).total, 0);
     const analyticsRef = doc(db, 'users', user.uid, 'stats', 'analytics');
     const prevSnap = await getDoc(analyticsRef);
     const prev = prevSnap.exists() ? prevSnap.data() : {};
@@ -47,7 +55,8 @@ export async function updateQuizStatsOnFinish({
     streakHistory.push({ date: new Date().toISOString(), streak: prev.streak || 0 });
     const badgeProgress = { ...prev.badgeProgress, correct: correct };
     const newCompleted = (prev.completed || 0) + 1;
-    console.log('[E2E DEBUG] updateQuizStatsOnFinish: writing analytics', {
+    // Log all values before writing
+    console.log('[E2E DEBUG] updateQuizStatsOnFinish: about to write analytics', {
       user: user.uid,
       prevCompleted: prev.completed,
       newCompleted,
@@ -58,26 +67,35 @@ export async function updateQuizStatsOnFinish({
       streakHistory,
       stack: new Error().stack
     });
-    await setDoc(
-      analyticsRef,
-      {
-        completed: newCompleted,
-        correct,
-        total,
-        streak: prev.streak || 0,
-        badges: prev.badges || 0,
-        badgeProgress,
-        streakHistory,
-        updatedAt: new Date().toISOString(),
-      },
-      { merge: true }
-    );
+    try {
+      await setDoc(
+        analyticsRef,
+        {
+          completed: newCompleted,
+          correct,
+          total,
+          streak: prev.streak || 0,
+          badges: prev.badges || 0,
+          badgeProgress,
+          streakHistory,
+          updatedAt: new Date().toISOString(),
+        },
+        { merge: true }
+      );
+      console.log('[E2E DEBUG] updateQuizStatsOnFinish: analytics write success', {
+        user: user.uid,
+        completed: newCompleted
+      });
+    } catch (writeErr) {
+      console.error('[E2E DEBUG] updateQuizStatsOnFinish: analytics write error', writeErr);
+    }
     const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
-    await setDoc(topicStatsRef, stats, { merge: true });
-    console.log('[E2E DEBUG] updateQuizStatsOnFinish: analytics write complete', {
-      user: user.uid,
-      completed: newCompleted
-    });
+    try {
+      await setDoc(topicStatsRef, stats, { merge: true });
+      console.log('[E2E DEBUG] updateQuizStatsOnFinish: topicStats write success', { user: user.uid });
+    } catch (topicWriteErr) {
+      console.error('[E2E DEBUG] updateQuizStatsOnFinish: topicStats write error', topicWriteErr);
+    }
   } catch (err) {
     console.error('[E2E DEBUG] Failed to update Firestore stats at quiz finish:', err);
   }

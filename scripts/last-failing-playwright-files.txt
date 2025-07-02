@@ -1,1 +1,5 @@
-npx playwright test e2e/quiz-firestore-verification.spec.cjs --headed --reporter=list
+e2e/app.spec.ts
+e2e/aria-roles-labels.spec.ts
+e2e/assets-troubleshoot.spec.ts
+e2e/edge-accessibility.spec.ts
+e2e/stats-persistence.spec.ts

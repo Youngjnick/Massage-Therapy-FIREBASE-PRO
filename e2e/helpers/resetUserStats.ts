@@ -2,6 +2,9 @@
 /* global process */
 // Ensure required environment variables for Firebase Admin emulator use
 if (!process.env.FIRESTORE_EMULATOR_HOST) {
+  require('dotenv').config({ path: require('path').resolve(__dirname, '../../.env.e2e') });
+}
+if (!process.env.FIRESTORE_EMULATOR_HOST) {
   throw new Error('FIRESTORE_EMULATOR_HOST is not set. Please set it to point to your Firestore emulator (e.g., localhost:8080).');
 }
 if (!process.env.GCLOUD_PROJECT && !process.env.FIREBASE_PROJECT_ID) {

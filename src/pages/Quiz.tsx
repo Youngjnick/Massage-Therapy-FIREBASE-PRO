@@ -274,6 +274,13 @@ const Quiz: React.FC = () => {
   // --- Firestore analytics update at quiz finish ---
   useEffect(() => {
     if (!showResults) return;
+    console.log('[E2E DEBUG] useEffect[showResults]: triggered. About to call updateQuizStatsOnFinish', {
+      userAnswers,
+      shuffledQuestions,
+      shuffledOptions,
+      started,
+      quizQuestions
+    });
     (async () => {
       try {
         await updateQuizStatsOnFinish({
@@ -283,8 +290,10 @@ const Quiz: React.FC = () => {
           started,
           quizQuestions
         });
-      } catch {
+        console.log('[E2E DEBUG] useEffect[showResults]: updateQuizStatsOnFinish finished');
+      } catch (err) {
         setError('Error: Failed to submit results. Could not submit your quiz results.');
+        console.error('[E2E DEBUG] useEffect[showResults]: updateQuizStatsOnFinish error', err);
       }
     })();
   }, [showResults]);
@@ -595,6 +604,7 @@ const Quiz: React.FC = () => {
               }
               try {
                 setStarted(false); // Ensure results page is shown (moved up)
+                console.log('[E2E DEBUG] setShowResults(true) called');
                 setShowResults(true); // Moved up
                 quizCompleted.current = true; // Block further writes immediately (moved here)
                 // Sanitize only for Firestore
