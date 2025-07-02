@@ -1,0 +1,37 @@
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+[Playwright GLOBAL SETUP] process.env.HEADLESS: undefined
+[Playwright GLOBAL SETUP] Playwright config forces headless: false
+[Playwright GLOBAL SETUP] FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+[Playwright GLOBAL SETUP] FIREBASE_AUTH_EMULATOR_HOST: 127.0.0.1:9099
+[Playwright GLOBAL SETUP] FIREBASE_PROJECT_ID: massage-therapy-smart-st-c7f8f
+[Playwright GLOBAL SETUP] GCLOUD_PROJECT: massage-therapy-smart-st-c7f8f
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+ReferenceError: __dirname is not defined in ES module scope
+
+   at helpers/resetUserStats.ts:3
+
+  1 | import dotenv from 'dotenv';
+  2 | import path from 'path';
+> 3 | dotenv.config({ path: path.resolve(__dirname, '../../.env.e2e') });
+    |                                    ^
+  4 | // Ensure required environment variables for Firebase Admin emulator use
+  5 | if (!process.env.FIRESTORE_EMULATOR_HOST) {
+  6 |   throw new Error('FIRESTORE_EMULATOR_HOST is not set. Please set it to point to your Firestore emulator (e.g., localhost:8080).');
+    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/resetUserStats.ts:3:36
+ReferenceError: __dirname is not defined in ES module scope
+
+   at helpers/resetUserStats.ts:3
+
+  1 | import dotenv from 'dotenv';
+  2 | import path from 'path';
+> 3 | dotenv.config({ path: path.resolve(__dirname, '../../.env.e2e') });
+    |                                    ^
+  4 | // Ensure required environment variables for Firebase Admin emulator use
+  5 | if (!process.env.FIRESTORE_EMULATOR_HOST) {
+  6 |   throw new Error('FIRESTORE_EMULATOR_HOST is not set. Please set it to point to your Firestore emulator (e.g., localhost:8080).');
+    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/resetUserStats.ts:3:36
+Error: No tests found
+
