@@ -54,7 +54,7 @@ test.describe('Quiz Firestore Verification', () => {
         await docRef.delete().catch(e => console.log('No quizProgress doc to delete:', e.message));
         console.log('Cleared quizProgress for UID:', userUid);
       }
-    } catch (e) {
+    } catch {
       console.log('Could not clear quizProgress before test:', e.message);
     }
     // Always start with a clean session: clear localStorage and sessionStorage
@@ -72,7 +72,7 @@ test.describe('Quiz Firestore Verification', () => {
     try {
       await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 5000 });
       signInFormFound = true;
-    } catch (e) {
+    } catch {
       const url = page.url();
       const html = await page.content();
       console.log('[E2E ERROR] Sign-in form not found after initial load. URL:', url);
@@ -81,7 +81,7 @@ test.describe('Quiz Firestore Verification', () => {
       try {
         await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 5000 });
         signInFormFound = true;
-      } catch (e2) {
+      } catch {
         const url2 = page.url();
         const html2 = await page.content();
         console.log('[E2E ERROR] Sign-in form still not found after reload. URL:', url2);
@@ -124,7 +124,7 @@ test.describe('Quiz Firestore Verification', () => {
       await page.waitForFunction(() => !!window.localStorage.getItem('userSettings'), { timeout: 20000 });
       const userSettingsReady = await page.evaluate(() => window.localStorage.getItem('userSettings'));
       console.log('[E2E DEBUG] userSettings in localStorage after wait:', userSettingsReady);
-    } catch (e) {
+    } catch {
       const userSettingsTimeout = await page.evaluate(() => window.localStorage.getItem('userSettings'));
       const html = await page.content();
       const browserLogs = await page.evaluate(() => window.__e2eConsoleLogs || []);
@@ -150,11 +150,11 @@ test.describe('Quiz Firestore Verification', () => {
     const browserLogs = await page.evaluate(() => window.__e2eConsoleLogs || []);
     console.log('[E2E DEBUG] Browser console logs after navigating to /quiz:', browserLogs);
     // Wait for the quiz start form to be visible before looking for Quiz Length input
-    let quizStartFormVisible = false;
+    // let quizStartFormVisible = false;
     try {
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
-      quizStartFormVisible = true;
-    } catch (e) {
+      // quizStartFormVisible = true;
+    } catch {
       const html = await page.content();
       const allLabels = await page.$$eval('label', (labels) => labels.map(l => l.textContent));
       const allButtons = await page.$$eval('button', (btns) => btns.map(b => b.textContent));
@@ -172,7 +172,7 @@ test.describe('Quiz Firestore Verification', () => {
       await page.waitForSelector('[aria-label="Quiz Length"], [data-testid="quiz-length-input"]', { timeout: 10000 });
       console.log('[E2E DEBUG] Quiz Length input selector found!');
       quizLengthInputVisible = true;
-    } catch (e) {
+    } catch {
       console.log('[E2E DEBUG] Quiz Length input selector NOT found, entering catch block...');
       const html = await page.content();
       const bodyHtml = await page.$eval('body', el => el.innerHTML).catch(() => '[body not found]');
