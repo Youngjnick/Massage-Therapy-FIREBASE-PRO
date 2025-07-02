@@ -433,14 +433,30 @@ const Quiz: React.FC = () => {
       const progressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
       const payload = { ...progress, lastWrite: Date.now() };
       setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - attempting write');
-      console.log('[E2E DEBUG] Firestore write (saveQuizProgress)', { ...payload, ts: Date.now(), merge });
+      console.log('[E2E DEBUG] Firestore write (saveQuizProgress) - about to call setDoc', {
+        path: progressRef.path,
+        payload,
+        merge,
+        ts: Date.now(),
+      });
       console.trace('[E2E DEBUG] Firestore write (saveQuizProgress) stack trace');
       try {
         await setDoc(progressRef, payload, { merge });
         setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - SUCCESS');
+        console.log('[E2E DEBUG] Firestore write (saveQuizProgress) - SUCCESS', {
+          path: progressRef.path,
+          payload,
+          merge,
+          ts: Date.now(),
+        });
       } catch (err) {
         setFirestoreStatus('[E2E DEBUG] Firestore write (saveQuizProgress) - ERROR: ' + String(err));
-        console.error('[E2E DEBUG] Firestore write (saveQuizProgress) - ERROR:', err);
+        console.error('[E2E DEBUG] Firestore write (saveQuizProgress) - ERROR:', err, {
+          path: progressRef.path,
+          payload,
+          merge,
+          ts: Date.now(),
+        });
       }
     } else if (typeof window !== 'undefined') {
       window.localStorage.setItem('quizProgress', JSON.stringify({ ...progress, lastWrite: Date.now() }));

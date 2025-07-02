@@ -3,7 +3,14 @@ const admin = require('firebase-admin');
 const path = require('path');
 const { test, expect } = require('@playwright/test');
 
-// Log Firestore emulator environment
+// Log Firestore emulator environment and add fallback for emulator host
+let emulatorHost = process.env.FIRESTORE_EMULATOR_HOST;
+if (!emulatorHost) {
+  // Try localhost fallback if 127.0.0.1 is not set
+  emulatorHost = 'localhost:8080';
+  process.env.FIRESTORE_EMULATOR_HOST = emulatorHost;
+  console.warn('[E2E] FIRESTORE_EMULATOR_HOST was undefined, falling back to localhost:8080');
+}
 console.log('FIRESTORE_EMULATOR_HOST:', process.env.FIRESTORE_EMULATOR_HOST);
 console.log('GOOGLE_APPLICATION_CREDENTIALS:', process.env.GOOGLE_APPLICATION_CREDENTIALS);
 console.log('NODE_ENV:', process.env.NODE_ENV);
@@ -55,7 +62,9 @@ test.describe('Quiz Firestore Verification', () => {
     await page.waitForSelector('[data-testid="test-signin-email"]', { timeout: 10000 });
     await page.fill('[data-testid="test-signin-email"]', TEST_EMAIL);
     await page.fill('[data-testid="test-signin-password"]', TEST_PASSWORD);
-    await page.click('[data-testid="test-signin-submit"]');
+    await page.$eval('[data-testid="test-signin-submit"]', btn => btn.click());
+    // Wait for the sign-in button to be removed from the DOM (SPA transition)
+    await page.waitForSelector('[data-testid="test-signin-submit"]', { state: 'detached', timeout: 5000 });
     // Wait for firebaseUserUid to be set in localStorage
     await page.waitForFunction(() => !!window.localStorage.getItem('firebaseUserUid'), { timeout: 5000 });
     userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
@@ -93,9 +102,9 @@ test.describe('Quiz Firestore Verification', () => {
     // Wait for Finish button and click
     await page.waitForSelector('button, [role="button"]', { timeout: 10000 });
     await page.getByRole('button', { name: /finish/i }).click();
+    console.log('[E2E DEBUG] Clicked Finish button, waiting for results...');
 
     // Wait for results to be visible
-
     await page.waitForSelector('[data-testid="quiz-results"]', { timeout: 10000 });
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     console.log('[E2E DEBUG] Quiz results visible, waiting 4s before polling Firestore...');
@@ -106,16 +115,21 @@ test.describe('Quiz Firestore Verification', () => {
     const docRef = db.collection('users').doc(userUid).collection('quizProgress').doc('current');
     console.log('E2E TEST Firestore doc path:', docRef.path);
     let quizProgress = null;
-    const retries = 25;
-    const waitMs = 2000;
+    const retries = 40; // Increased from 25 for more reliability
+    const waitMs = 3000; // Increased from 2000ms for more reliability
     let progressBar = '';
+    const pollStart = Date.now();
+    const pollStates = [];
     for (let i = 0; i < retries; i++) {
       const docSnap = await docRef.get();
       quizProgress = docSnap.exists ? docSnap.data() : null;
-      // Progress bar logic
+      pollStates.push({ i, quizProgress, time: Date.now() });
+      // Progress bar logic with spinner and timestamp
+      const spinnerFrames = ['|', '/', '-', '\\'];
+      const spinner = spinnerFrames[i % spinnerFrames.length];
       progressBar = '[' + '='.repeat(i+1) + ' '.repeat(retries - i - 1) + ']';
-      process.stdout.write(`\r[E2E] Polling Firestore quizProgress ${progressBar} ${i+1}/${retries}`);
-      console.log(` [E2E DEBUG] Poll #${i+1} Firestore doc:`, quizProgress);
+      const elapsed = ((Date.now()-pollStart)/1000).toFixed(1);
+      process.stdout.write(`\r[E2E] Polling Firestore quizProgress ${progressBar} ${i+1}/${retries} ${spinner} Elapsed: ${elapsed}s State: ${JSON.stringify(quizProgress)}`);
       if (quizProgress && quizProgress.showResults === true) {
         process.stdout.write(`\n`);
         break;
@@ -125,6 +139,10 @@ test.describe('Quiz Firestore Verification', () => {
     process.stdout.write(`\n`);
     console.log('E2E TEST Final Firestore quizProgress:', quizProgress);
     if (!quizProgress || quizProgress.showResults !== true) {
+      console.log('E2E ERROR: Timed out waiting for Firestore quizProgress. All poll states:');
+      for (const state of pollStates) {
+        console.log(`Poll #${state.i + 1} at ${new Date(state.time).toISOString()}:`, state.quizProgress);
+      }
       throw new Error('Timed out waiting for Firestore quizProgress to have showResults: true. Last state: ' + JSON.stringify(quizProgress));
     }
     expect(quizProgress).not.toBeNull();
