@@ -28,14 +28,20 @@ function update_last_failing_files() {
 trap update_last_failing_files EXIT
 
 
+# Run prioritized (flaky/important) test files first if specified
+if [[ -n "$PLAYWRIGHT_PRIORITIZED_TESTS" ]]; then
+  IFS=',' read -A prioritized_files <<< "$PLAYWRIGHT_PRIORITIZED_TESTS"
+  echo "Running prioritized test files first: ${prioritized_files[@]}"
+  npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+  update_last_failing_files
+fi
+
 # Prompt user to choose between running all tests or only last failed
 echo "Run all tests or only last failed? ([a]ll/[f]ailed): "
 read -r choice
 
 if [[ "$choice" == "f"* ]]; then
-  # Always run only last failed tests in headed mode, and generate list report
   npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
 else
-  # Always run all tests in headed mode, and generate list report
   npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
 fi
