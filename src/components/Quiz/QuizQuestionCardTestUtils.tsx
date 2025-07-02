@@ -1,14 +1,19 @@
-/* eslint-disable react/prop-types */
+
+
 import React from 'react';
 import QuizQuestionCard from './QuizQuestionCard';
 import { jest } from '@jest/globals';
 
+/* eslint-disable react/prop-types */
 // Patch: add propTypes stubs to silence prop-types lint errors in test helpers
-QuizQuestionCard.propTypes = QuizQuestionCard.propTypes || {};
-QuizQuestionCard.propTypes.handleAnswer = () => null;
-QuizQuestionCard.propTypes.q = () => null;
-QuizQuestionCard.propTypes.current = () => null;
-QuizQuestionCard.propTypes.shuffledOptions = () => null;
+// These stubs silence prop-types errors in test environments only.
+// If you use TypeScript, you can ignore prop-types for test files via ESLint config instead.
+QuizQuestionCard.propTypes = {
+  handleAnswer: () => null,
+  q: () => null,
+  current: () => null,
+  shuffledOptions: () => null,
+};
 
 /**
  * Base props for QuizQuestionCard tests. Use as a default and override as needed.
@@ -74,7 +79,7 @@ export function CreateStatefulQuizCard(props: React.ComponentProps<typeof QuizQu
       setAnswered(false); // Always reset answered to false on selection
     }
     if (submit) setAnswered(true); // Only set answered to true on submit
-    if (typeof props.handleAnswer === 'function') props.handleAnswer(idx, submit);
+    if (typeof props.handleAnswer === 'function') props.handleAnswer(idx);
   };
   return (
     <QuizQuestionCard

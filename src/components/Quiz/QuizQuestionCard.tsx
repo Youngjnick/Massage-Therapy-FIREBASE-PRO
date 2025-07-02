@@ -8,7 +8,7 @@ interface QuizQuestionCardProps {
   current: number;
   userAnswers: number[];
   answered: boolean;
-  handleAnswer: (idx: number, submit?: boolean) => void;
+  handleAnswer: (_idx: number) => void;
   answerFeedback: string | null;
   showExplanations: boolean;
   shuffledOptions: { [key: number]: string[] };
@@ -121,11 +121,11 @@ const QuizQuestionCard: React.FC<QuizQuestionCardProps> = ({
                   disabled={props.disableAllOptions || (answered ? true : false)}
                   onSelect={() => {
                     // Only select, do not submit
-                    if (!answered) handleAnswer(i, false);
+                    if (!answered) handleAnswer(i);
                   }}
                   onSubmitOption={() => {
                     // Only submit if this option is already selected and not answered
-                    if (!answered && userAnswers[current] === i) handleAnswer(i, true);
+                    if (!answered && userAnswers[current] === i) handleAnswer(i);
                   }}
                   className={optionClass}
                   inputId={inputId}

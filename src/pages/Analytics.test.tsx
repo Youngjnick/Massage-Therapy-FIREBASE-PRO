@@ -10,6 +10,7 @@ const mockOnAuthStateChanged = jest.fn((auth: unknown, cb: (user: { uid: string 
 });
 jest.mock('firebase/auth', () => ({
   getAuth: jest.fn(),
+  
   onAuthStateChanged: (...args: [unknown, (user: { uid: string } | null) => void]) => mockOnAuthStateChanged(...args),
 }));
 
@@ -22,6 +23,7 @@ jest.mock('firebase/firestore', () => {
     query: jest.fn(),
     where: jest.fn(),
     doc: (...args: any[]) => mockDoc(...args),
+    
     onSnapshot: (ref: unknown, cb: (snapshot: any) => void) => {
       // Simulate two onSnapshot listeners: analytics and topicStats
       if (!mockFirestoreCallback) {

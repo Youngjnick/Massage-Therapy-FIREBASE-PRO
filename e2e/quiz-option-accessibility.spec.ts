@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 const log = (...args: any[]) => {
-  // eslint-disable-next-line no-undef
+  
   (globalThis.console || console).log(...args);
 };
 

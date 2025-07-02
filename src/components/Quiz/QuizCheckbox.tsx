@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+// ...existing code...
 import React from 'react';
 
 interface QuizCheckboxProps {
   label: string;
   checked: boolean;
-  onChange: (val: boolean) => void;
+  onChange: (_val: boolean) => void;
   style?: React.CSSProperties;
 }
 

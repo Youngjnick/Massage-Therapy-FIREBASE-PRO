@@ -1,13 +1,14 @@
 #!/bin/zsh
 # Run Playwright tests and always capture output to scripts/playwright-output.txt, even if interrupted
 
+
 # Always use local emulators, never Google Cloud
 export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
 export FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
-export FIREBASE_PROJECT_ID=massage-therapy-firebase-pro
-export GCLOUD_PROJECT=massage-therapy-firebase-pro
+export FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f
+export GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f
+echo "Using FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID and GCLOUD_PROJECT=$GCLOUD_PROJECT"
 export NODE_ENV=test
-
 
 OUTPUT_FILE="scripts/playwright-output.txt"
 LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
@@ -32,9 +33,9 @@ echo "Run all tests or only last failed? ([a]ll/[f]ailed): "
 read -r choice
 
 if [[ "$choice" == "f"* ]]; then
-  # Always run only last failed tests in headed mode
-  npx playwright test --last-failed --headed "$@" | tee "$OUTPUT_FILE"
+  # Always run only last failed tests in headed mode, and generate list report
+  npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
 else
-  # Always run all tests in headed mode
-  npx playwright test --headed "$@" | tee "$OUTPUT_FILE"
+  # Always run all tests in headed mode, and generate list report
+  npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
 fi

@@ -5,6 +5,7 @@ interface UseQuizKeyboardNavigationProps {
   current: number;
   next: () => void;
   prev: () => void;
+  
   handleAnswer: (idx: number) => void;
   optionsLength: number;
 }
@@ -20,8 +21,8 @@ export function useQuizKeyboardNavigation({ started, current, next, prev, handle
         e.preventDefault();
         prev();
       } else if (/^[1-9]$/.test(e.key)) {
-        const idx = parseInt(e.key, 10) - 1;
-        if (idx < optionsLength) handleAnswer(idx);
+        const _idx = parseInt(e.key, 10) - 1;
+        if (_idx < optionsLength) handleAnswer(_idx);
       }
     };
     window.addEventListener('keydown', handleKey);

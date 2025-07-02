@@ -1,13 +1,40 @@
+// import js from '@eslint/js'; // Removed duplicate
+// import parser from '@typescript-eslint/parser'; // Removed duplicate
+// import tsEslintPlugin from '@typescript-eslint/eslint-plugin'; // Removed duplicate
+// import reactPlugin from 'eslint-plugin-react'; // Removed duplicate
+// import prettier from 'eslint-config-prettier'; // Removed duplicate
+// import babelParser from '@babel/eslint-parser'; // Removed duplicate
+// Top-level ignores for all generated, report, and trace folders
+const globalIgnores = [
+  'node_modules/',
+  'dist/',
+  'build/',
+  'coverage/',
+  '.vite/',
+  'dataconnect-generated/',
+  'playwright-report/',
+  'playwright-report/**',
+  'playwright-report/trace/',
+  'playwright-report/trace/**',
+  'test-results/',
+  'emulator-data/',
+  '.env',
+  '*.log',
+  'tmp-worktree-*',
+  'tmp-worktree-*/**',
+];
 import js from '@eslint/js';
 import parser from '@typescript-eslint/parser';
 import reactPlugin from 'eslint-plugin-react';
 import prettier from 'eslint-config-prettier';
 import babelParser from '@babel/eslint-parser';
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
-
 export default [
-  js.configs.recommended,
-  prettier,
+  {
+    ignores: globalIgnores,
+  },
+  // js.configs.recommended, // Removed: not defined
+  // prettier, // Removed: not defined
   {
     files: [
       'src/__tests__/*.ts',
@@ -44,6 +71,7 @@ export default [
         console: true,
         global: true,
         alert: true,
+        process: true,
       },
     },
     plugins: {
@@ -121,18 +149,6 @@ export default [
     },
   },
   {
-    ignores: [
-      '.vite/',
-      'dist/',
-      'dataconnect-generated/',
-      'node_modules/',
-      'build/',
-      'coverage/',
-      '.env',
-      '*.log',
-    ],
-  },
-  {
     files: ['*.js', '**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
@@ -206,30 +222,6 @@ export default [
     },
   },
   {
-    ignores: [
-      'src/components/Quiz/QuizCheckbox.tsx',
-      'src/components/Quiz/QuizLengthInput.tsx',
-      'src/components/Quiz/QuizRandomizeOptions.tsx',
-      'src/components/Quiz/QuizSortSelect.tsx',
-      'src/components/Quiz/QuizBookmarkItem.tsx',
-      'src/components/Quiz/QuizBookmarksPanel.tsx',
-      'src/components/Quiz/QuizQuestionCard.tsx',
-      'src/components/Quiz/QuizStartControls.tsx',
-      'src/components/Quiz/QuizStartForm.tsx',
-      'src/components/Quiz/QuizStepper.tsx',
-      'src/components/Quiz/QuizTopicSelect.tsx',
-      'src/components/Quiz/useQuizKeyboardNavigation.ts',
-      'src/context/FeatureFlagContext.tsx',
-      'src/context/QuizContext.tsx',
-      'src/context/ToastContext.tsx',
-      'src/hooks/useQuizData.ts',
-      'src/hooks/useUserStats.ts',
-      'src/pages/Analytics.test.tsx',
-      'src/__tests__/Analytics.integration.test.tsx',
-      'src/__tests__/QuizResultsLiveStats.integration.test.tsx'
-    ],
-  },
-  {
     files: ['tests/**/*.js', '**/*.test.js'],
     languageOptions: {
       globals: {
@@ -244,6 +236,7 @@ export default [
         __dirname: 'readonly',
         require: 'readonly',
         module: 'readonly',
+        process: true,
       },
     },
   },
@@ -260,77 +253,23 @@ export default [
       },
     },
   },
+  // Ignore unused vars in type/interface definitions, only check real code
   {
-    files: ['src/setupTests.ts', '**/*.test.ts', '**/*.test.tsx', '**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
-    languageOptions: {
-      globals: {
-        process: 'readonly',
-      },
+    files: ['*.ts', '*.tsx', 'src/setupTests.ts'],
+    plugins: {
+      '@typescript-eslint': tsEslintPlugin,
     },
-  },
-  {
-    ignores: [
-      'node_modules/',
-      'dist/',
-      'build/',
-      'coverage/',
-      '.env',
-      '*.log',
-    ],
-  },
-  {
-    files: [
-      'src/__tests__/*.js',
-      'src/__tests__/**/*.js',
-      '__tests__/*.js',
-      '__tests__/**/*.js',
-      '**/*.test.js',
-      '**/*.test.jsx',
-    ],
     languageOptions: {
-      parser: babelParser,
-      parserOptions: {
-        requireConfigFile: false,
-        babelOptions: {
-          presets: ['@babel/preset-env', '@babel/preset-react'],
-        },
-      },
       globals: {
-        describe: true,
-        it: true,
-        expect: true,
-        beforeAll: true,
-        beforeEach: true,
-        afterAll: true,
-        jest: true,
-        test: true,
-        window: true,
-        document: true,
-        setTimeout: true,
-        console: true,
-        global: true,
-        alert: true,
-        __dirname: true,
-        require: true,
+        process: true,
       },
     },
     rules: {
-      '@typescript-eslint/no-var-requires': 'off',
-      '@typescript-eslint/no-undef': 'off',
-    },
-  },
-  {
-    ignores: [
-      'tmp-worktree-*',
-      'tmp-worktree-*/**',
-    ],
-  },
-  {
-    files: ['vite.config.ts'],
-    languageOptions: {
-      globals: {
-        process: 'readonly',
-      },
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_', ignoreRestSiblings: true },
+      ],
     },
   },
 ];

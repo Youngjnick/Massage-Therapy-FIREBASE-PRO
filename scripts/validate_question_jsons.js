@@ -19,7 +19,7 @@ function isJsonFile(filename) {
 
 function hasInvisibleChars(str) {
   // Checks for non-printable ASCII except tab/newline/carriage return
-  // eslint-disable-next-line no-control-regex
+  
   return /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F\u200B\uFEFF]/.test(str);
 }
 

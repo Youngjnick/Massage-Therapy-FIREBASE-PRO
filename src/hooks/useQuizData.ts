@@ -34,7 +34,7 @@ export function useQuizData(selectedTopic: string, setSelectedTopic: (topic: str
         console.log('[useQuizData] setQuestions done in', Date.now() - start, 'ms');
       })
       .catch((err) => {
-        // eslint-disable-next-line no-console
+         
         console.log('[useQuizData] Failed to load questions:', err);
         setError('Error: Failed to load questions. Could not load questions.');
       })

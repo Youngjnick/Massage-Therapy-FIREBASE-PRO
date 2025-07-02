@@ -3,8 +3,8 @@ import React from 'react';
 interface QuizBookmarkItemProps {
   question: { id: string; text: string };
   bookmarked: boolean;
-  onToggleBookmark: (_id: string) => void;
-  onReportError: (_id: string) => void;
+  onToggleBookmark: (id: string) => void;
+  onReportError: (id: string) => void;
 }
 
 const QuizBookmarkItem: React.FC<QuizBookmarkItemProps> = ({ question, bookmarked, onToggleBookmark, onReportError }) => (

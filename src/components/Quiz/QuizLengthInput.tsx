@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import React from 'react';
 
 interface QuizLengthInputProps {
   quizLength: number | '';
-  setQuizLength: (len: number | '') => void;
+  setQuizLength: (_len: number | '') => void;
   maxQuizLength: number;
   id?: string;
   "data-testid"?: string;
@@ -20,8 +20,8 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
           max={maxQuizLength}
           value={quizLength === 0 ? '' : quizLength}
           onChange={e => {
-            const val = e.target.value === '' ? '' : Math.max(1, Number(e.target.value));
-            setQuizLength(val);
+            const _val = e.target.value === '' ? '' : Math.max(1, Number(e.target.value));
+            setQuizLength(_val);
           }}
           style={{ width: 60, marginLeft: 4 }}
           id={id}
@@ -33,6 +33,8 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
       </label>
     </div>
   )
+
 );
+QuizLengthInput.displayName = "QuizLengthInput";
 
 export default QuizLengthInput;

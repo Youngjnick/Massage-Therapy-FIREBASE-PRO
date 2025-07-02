@@ -5,7 +5,7 @@ interface QuizBookmarksPanelProps {
   show: boolean;
   bookmarks: string[];
   quizQuestions: any[];
-  onToggleBookmark: (_id: string) => void;
+  onToggleBookmark: (id: string) => void;
   onClose: () => void;
 }
 

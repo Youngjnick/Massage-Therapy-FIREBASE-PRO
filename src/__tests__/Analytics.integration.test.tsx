@@ -14,7 +14,7 @@ jest.mock('firebase/firestore', () => {
     query: jest.fn(),
     where: jest.fn(),
     doc: (...args: any[]) => mockDoc(...args),
-    onSnapshot: (ref: unknown, cb: (_snapshot: any) => void) => {
+    onSnapshot: (ref: unknown, cb: (_unused: any) => void) => {
       cb({
         exists: () => true,
         data: () => ({

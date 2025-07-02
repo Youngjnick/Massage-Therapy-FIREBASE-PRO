@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 const admin = require('firebase-admin');
 const path = require('path');
 const { test, expect } = require('@playwright/test');
