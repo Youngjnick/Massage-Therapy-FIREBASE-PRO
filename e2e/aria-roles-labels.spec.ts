@@ -128,6 +128,7 @@ test.describe('Accessibility: ARIA roles and labels', () => {
       'button:not([disabled])',
       'input:not([type="hidden"]):not([disabled])',
       'select:not([disabled])',
+     
       'textarea:not([disabled])',
       '[tabindex]:not([tabindex="-1"])',
     ];
