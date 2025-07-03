@@ -1,7 +1,21 @@
 /* global console */
 
+
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+// ESM-compatible __dirname
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
+// Load test users from test-users.json
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 const MAIN_PAGES = ['/', '/quiz', '/achievements', '/analytics', '/profile'];
 
@@ -20,8 +34,9 @@ const INTERACTIVE_SELECTORS = [
 test.describe('All Interactive Elements: ARIA and Keyboard Accessibility', () => {
   for (const pagePath of MAIN_PAGES) {
     test(`All interactive elements on ${pagePath} have accessible names and ARIA roles`, async ({ page }, testInfo) => {
-      // Always sign in before visiting the page
-      await uiSignIn(page, { profilePath: '/profile' });
+      // Always sign in before visiting the page with dynamic test user
+      const user = await getTestUser(0);
+      await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
       await page.goto(pagePath);
       // Wait for main content to appear (prevents stuck loading)
       await page.waitForSelector('.main-content', { timeout: 10000 });
