@@ -40,7 +40,7 @@ export default defineConfig({
       },
     },
   ],
-  globalSetup: './playwright-global-setup.cjs',
+  globalSetup: './e2e/global-setup.ts',
   webServer: {
     command: 'vite --port 5173',
     port: 5173,

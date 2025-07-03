@@ -2,9 +2,20 @@ import { test, expect, Page } from '@playwright/test';
 // Ensure process is available for progress bar
 import process from 'process';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const USER_A = { email: 'testUserA@gmail.com', password: 'test1234' };
-const USER_B = { email: 'testUserB@gmail.com', password: 'test1234' };
+// Helper to load test users from test-users.json (ESM compatible)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+type TestUser = { email: string; password: string; uid: string };
+function loadTestUsers(): TestUser[] {
+  const usersPath = path.join(__dirname, 'test-users.json');
+  return JSON.parse(fs.readFileSync(usersPath, 'utf-8'));
+}
+
+const [USER_A, USER_B] = loadTestUsers();
 
 async function getStatValue(page: Page, label: string): Promise<string> {
   const statLocator = page.locator(`strong:text-is('${label}')`);
