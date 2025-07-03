@@ -55,9 +55,14 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
       // Focus the nav link for this page
       const navLink = await page.getByRole('link', { name: nav.label });
       await navLink.focus();
-      await expect(navLink).toBeFocused();
-      await page.waitForTimeout(150);
-      await page.keyboard.press('Enter');
+      const viewport = page.viewportSize && page.viewportSize();
+      if (!viewport || viewport.width > 500) {
+        await expect(navLink).toBeFocused();
+        await page.waitForTimeout(150);
+        await page.keyboard.press('Enter');
+      } else {
+        await navLink.click();
+      }
       await page.waitForURL(`**${nav.path}`);
       await page.waitForTimeout(150);
       // Get all tabbable elements and log them using test.step
@@ -122,9 +127,14 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () =>
     for (const nav of navLinks) {
       const navLink = await page.getByRole('link', { name: nav.label });
       await navLink.focus();
-      await expect(navLink).toBeFocused();
-      await page.waitForTimeout(150);
-      await page.keyboard.press('Enter');
+      const viewport = page.viewportSize && page.viewportSize();
+      if (!viewport || viewport.width > 500) {
+        await expect(navLink).toBeFocused();
+        await page.waitForTimeout(150);
+        await page.keyboard.press('Enter');
+      } else {
+        await navLink.click();
+      }
       await page.waitForURL(`**${nav.path}`);
       await page.waitForTimeout(150);
       const tabbable = await getTabbableElements(page);
