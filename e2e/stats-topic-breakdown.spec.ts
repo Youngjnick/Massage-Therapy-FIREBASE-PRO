@@ -1,5 +1,15 @@
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 const TOPIC = 'abdominal_muscle_origins';
 const TOPIC_LABEL = 'Abdominal Muscle Origins';
@@ -11,7 +21,8 @@ function getTopicBreakdownRegex(topic: string) {
 
 test.describe('Stats Topic Breakdown', () => {
   test('should increment topic breakdown after quiz in specific topic', async ({ page }) => {
-    await uiSignIn(page);
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
     await page.goto('/analytics');
     // Get initial topic breakdown value
     const initialText = await page.textContent('body');

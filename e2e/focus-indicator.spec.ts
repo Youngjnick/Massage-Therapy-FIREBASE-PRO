@@ -1,6 +1,8 @@
 /* global console */
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
 
 const quizUrl = '/quiz?e2e=1';
 const interactiveSelectors = [
@@ -11,6 +13,14 @@ const interactiveSelectors = [
   'textarea',
   '[tabindex]:not([tabindex="-1"])',
 ];
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 test.use({ viewport: { width: 375, height: 812 } }); // iPhone X/11/12/13/14 size
 
@@ -88,7 +98,8 @@ test.describe('Mobile Accessibility: Focus Indicator on Quiz', () => {
 
 test.describe('Mobile Accessibility: Focus Indicator on Achievements', () => {
   test.beforeEach(async ({ page }) => {
-    await uiSignIn(page);
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
   });
   test('Tabs through all interactive elements and checks visible focus indicator', async ({ page }, testInfo) => {
     await page.goto('/achievements');
@@ -147,7 +158,8 @@ test.describe('Mobile Accessibility: Focus Indicator on Achievements', () => {
 
 test.describe('Mobile Accessibility: Focus Indicator on Analytics', () => {
   test.beforeEach(async ({ page }) => {
-    await uiSignIn(page);
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
   });
   test('Tabs through all interactive elements and checks visible focus indicator', async ({ page }, testInfo) => {
     await page.goto('/analytics');
@@ -206,7 +218,8 @@ test.describe('Mobile Accessibility: Focus Indicator on Analytics', () => {
 
 test.describe('Mobile Accessibility: Focus Indicator on Profile', () => {
   test.beforeEach(async ({ page }) => {
-    await uiSignIn(page);
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
   });
   test('Tabs through all interactive elements and checks visible focus indicator', async ({ page }, testInfo) => {
     await page.goto('/profile');

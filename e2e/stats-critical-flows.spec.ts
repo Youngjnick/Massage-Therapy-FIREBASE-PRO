@@ -2,6 +2,16 @@
 import { test, expect } from '@playwright/test';
 /* global console */
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 async function getStatValue(page: import('@playwright/test').Page, label: string): Promise<string> {
   const statLocator = page.locator(`strong:text-is('${label}')`);
@@ -41,7 +51,8 @@ async function getStatValue(page: import('@playwright/test').Page, label: string
 
 test.describe('Stats Critical Flows', () => {
   test('should increment Quizzes Taken after each quiz', async ({ page }) => {
-    await uiSignIn(page);
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
     await page.goto('/analytics');
     // Get initial stat
     let initialQuizzesTaken = '';

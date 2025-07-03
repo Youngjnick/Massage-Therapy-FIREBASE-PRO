@@ -2,6 +2,16 @@
 /* global console */
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+async function getTestUser(index = 0) {
+	const usersPath = path.resolve(__dirname, 'test-users.json');
+	const usersRaw = await fs.readFile(usersPath, 'utf-8');
+	const users = JSON.parse(usersRaw);
+	return users[index];
+}
 
 const PAGES = [
 	{ path: '/quiz?e2e=1', name: 'quiz' },
@@ -20,7 +30,8 @@ test.describe('Critical UI Visual Regression', () => {
 			async ({ page }, testInfo) => {
 				testInfo.setTimeout(20000); // Set per-test timeout to 20s
 				if (auth) {
-					await uiSignIn(page);
+					const user = await getTestUser(0);
+					await uiSignIn(page, { email: user.email, password: user.password });
 				}
 				await page.setViewportSize(VIEWPORT);
 				await page.goto(path);

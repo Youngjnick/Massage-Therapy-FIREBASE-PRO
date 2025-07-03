@@ -5,6 +5,16 @@
 import { test, expect, Page } from '@playwright/test';
 import { resetUserStats } from './helpers/resetUserStats';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 async function getStatValue(page: Page, label: string): Promise<string> {
   const statLocator = page.locator(`strong:text-is('${label}')`);
@@ -44,7 +54,8 @@ async function getStatValue(page: Page, label: string): Promise<string> {
 
 test.describe('Stats Persistence After Reload', () => {
   test('should persist stats and UI after app reload', async ({ page }) => {
-    await uiSignIn(page);
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
     const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
     if (!userUid) throw new Error('firebaseUserUid not found in localStorage after sign-in.');
     await resetUserStats(userUid);

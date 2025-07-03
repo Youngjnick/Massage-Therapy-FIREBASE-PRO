@@ -1,5 +1,16 @@
+
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 const LOGIN_PATH = '/profile';
 
@@ -14,8 +25,9 @@ test.describe('Auth Session Persistence', () => {
     });
     await page.context().clearCookies();
 
-    // Use robust shared sign-in helper (no custom args)
-    await uiSignIn(page);
+    // Use robust shared sign-in helper with dynamic test user
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password });
 
     // Wait for sign-out button as proof of login (same as other tests)
     await expect(page.locator('button[aria-label="Sign out"], button:has-text("Sign Out")')).toBeVisible({ timeout: 10000 });
