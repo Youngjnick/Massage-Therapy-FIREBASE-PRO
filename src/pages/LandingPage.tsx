@@ -96,20 +96,29 @@ const LandingPage: React.FC = () => {
           fill="#6ee7b7"
           style={{
             transformOrigin: 'center',
-            animation: 'blobScale 7s ease-in-out infinite alternate, blobColor 12s ease-in-out infinite alternate',
+            animation: 'blobScale 7s cubic-bezier(.4,2,.6,1) infinite alternate, blobColor 12s cubic-bezier(.4,2,.6,1) infinite alternate, blobRotate 18s linear infinite',
+            filter: 'blur(0px) drop-shadow(0 0 32px #6ee7b7aa)',
           }}
         />
         <style>{`
           @keyframes blobScale {
             0% { transform: scaleX(1) scaleY(1); }
-            30% { transform: scaleX(1.08) scaleY(0.96); }
-            60% { transform: scaleX(0.95) scaleY(1.07); }
+            20% { transform: scaleX(1.12) scaleY(0.93); }
+            40% { transform: scaleX(0.92) scaleY(1.13); }
+            60% { transform: scaleX(1.08) scaleY(0.98); }
+            80% { transform: scaleX(0.97) scaleY(1.09); }
             100% { transform: scaleX(1) scaleY(1); }
           }
           @keyframes blobColor {
             0% { fill: #6ee7b7; }
-            50% { fill: #3b82f6; }
+            25% { fill: #3b82f6; }
+            50% { fill: #a5b4fc; }
+            75% { fill: #3b82f6; }
             100% { fill: #6ee7b7; }
+          }
+          @keyframes blobRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
           }
         `}</style>
       </svg>
@@ -125,6 +134,9 @@ const LandingPage: React.FC = () => {
           width: '90vw',
           minWidth: 0,
           padding: '1.2rem 1.1rem',
+          opacity: 0,
+          transform: 'translateY(32px)',
+          animation: 'fadeInCard 1.1s cubic-bezier(.4,2,.6,1) 0.2s forwards',
         }}
       >
         <img
@@ -265,6 +277,16 @@ const LandingPage: React.FC = () => {
           ))}
           <style>{`
             @keyframes fadeInUp {
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            @keyframes fadeInCard {
+              from {
+                opacity: 0;
+                transform: translateY(32px);
+              }
               to {
                 opacity: 1;
                 transform: translateY(0);
