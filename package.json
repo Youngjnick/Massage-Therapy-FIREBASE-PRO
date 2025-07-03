@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "vite build",
+    "build": "NODE_ENV=production vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "jest",

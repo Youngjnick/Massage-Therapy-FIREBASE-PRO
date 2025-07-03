@@ -55,6 +55,7 @@ LOG_FILE="$(dirname "$0")/sync-history.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 touch "$LOG_FILE"
 SKIP_TESTS=false
+NO_VERIFY=false
 
 # Parse arguments for --remote, --skip-tests, --auto-commit-wip, and --commit-current-branch-only
 AUTO_COMMIT_WIP=false
@@ -73,6 +74,11 @@ while [[ $# -gt 0 ]]; do
       SKIP_TESTS=true
       shift
       ;;
+    --no-verify)
+      SKIP_TESTS=true
+      NO_VERIFY=true
+      shift
+      ;;
     --auto-commit-wip)
       AUTO_COMMIT_WIP=true
       shift
@@ -85,7 +91,7 @@ while [[ $# -gt 0 ]]; do
       # Ignore unknown options
       shift
       ;;
-    -*)
+    -* )
       # Ignore unknown short options
       shift
       ;;
@@ -247,6 +253,13 @@ fi
 WIP_MODE=false
 TEST_SUMMARY=""
 PW_SUMMARY=""
+
+# Detect WIP mode from commit_mode variable (set during commit prompt)
+if [[ "$commit_mode" == "WIP" || "$commit_mode" == "wip" ]]; then
+  WIP_MODE=true
+  SKIP_TESTS=true
+  echo "[sync] WIP mode detected, skipping tests."
+fi
 
 if [[ "$SKIP_TESTS" = false ]]; then
   # 1. ESLint

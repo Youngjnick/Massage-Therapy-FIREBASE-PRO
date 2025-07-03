@@ -699,15 +699,17 @@ const Quiz: React.FC = () => {
           toggleState={toggleState}
         />
       )}
-      <div style={{position:'fixed',bottom:0,left:0,zIndex:9999,background:'#fffbe6',color:'#b45309',padding:'8px',fontSize:'12px',borderTopRightRadius:'8px',boxShadow:'0 0 4px #b45309',maxWidth:'60vw',wordBreak:'break-all',pointerEvents:'none'}} data-testid="e2e-debug-firestore-status">
-        <div><b>E2E DEBUG</b></div>
-        <div>showResults: {String(showResults)}</div>
-        <div>Firestore: {firestoreStatus}</div>
-        <div>UID: {firestoreUid}</div>
-        <div>Doc Path: {firestoreDocPath}</div>
-        <button onClick={fetchFirestoreDoc} style={{margin:'4px 0',fontSize:'11px'}}>Fetch Firestore Doc</button>
-        <div>Doc: <pre style={{margin:0,whiteSpace:'pre-wrap'}}>{firestoreDoc ? JSON.stringify(firestoreDoc, null, 2) : 'null'}</pre></div>
-      </div>
+      {import.meta.env.DEV && (
+        <div style={{position:'fixed',bottom:0,left:0,zIndex:9999,background:'#fffbe6',color:'#b45309',padding:'8px',fontSize:'12px',borderTopRightRadius:'8px',boxShadow:'0 0 4px #b45309',maxWidth:'60vw',wordBreak:'break-all',pointerEvents:'none'}} data-testid="e2e-debug-firestore-status">
+          <div><b>E2E DEBUG</b></div>
+          <div>showResults: {String(showResults)}</div>
+          <div>Firestore: {firestoreStatus}</div>
+          <div>UID: {firestoreUid}</div>
+          <div>Doc Path: {firestoreDocPath}</div>
+          <button onClick={fetchFirestoreDoc} style={{margin:'4px 0',fontSize:'11px'}}>Fetch Firestore Doc</button>
+          <div>Doc: <pre style={{margin:0,whiteSpace:'pre-wrap'}}>{firestoreDoc ? JSON.stringify(firestoreDoc, null, 2) : 'null'}</pre></div>
+        </div>
+      )}
     </div>
   );
 };

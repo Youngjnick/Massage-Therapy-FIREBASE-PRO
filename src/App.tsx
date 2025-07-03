@@ -23,11 +23,19 @@ function RouteDebug() {
 
 const App: React.FC = () => {
   const { logEvent } = useAnalytics();
-  // Simulate user/Firebase loading state
-  const [loading, setLoading] = React.useState(true);
+  // Simulate user/Firebase loading state, but skip in test environment
+  const [loading, setLoading] = React.useState(() => {
+    // If running in test, skip loading
+    return typeof process !== 'undefined' && process.env.NODE_ENV === 'test' ? false : true;
+  });
 
   React.useEffect(() => {
     logEvent('app_loaded');
+    // Skip loading delay in test
+    if (typeof process !== 'undefined' && process.env.NODE_ENV === 'test') {
+      setLoading(false);
+      return;
+    }
     // Simulate async Firebase/user init (replace with real logic if available)
     const timer = setTimeout(() => setLoading(false), 600); // 600ms for demo
     return () => clearTimeout(timer);

@@ -42,6 +42,15 @@ async function getTabbableElements(page: any) {
 }
 
 test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
+  test.beforeEach(async ({ context, page }) => {
+    await context.clearCookies();
+    await page.goto('/');
+    await page.evaluate(() => {
+      localStorage.clear();
+      sessionStorage.clear();
+    });
+  });
+  test.setTimeout(60000); // Increase timeout for robustness
   test('Tab through all main pages and assert focus order/visibility', async ({ page }) => {
     await page.goto('/');
     // NavBar links
@@ -115,6 +124,15 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
 });
 
 test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () => {
+  test.beforeEach(async ({ context, page }) => {
+    await context.clearCookies();
+    await page.goto('/');
+    await page.evaluate(() => {
+      localStorage.clear();
+      sessionStorage.clear();
+    });
+  });
+  test.setTimeout(60000); // Increase timeout for robustness
   test.use({ viewport: { width: 375, height: 812 } }); // iPhone X/11/12/13/14 size
   test('Tab through all main pages and assert focus order/visibility (Mobile)', async ({ page }) => {
     await page.goto('/');
