@@ -39,11 +39,18 @@ const featureList = [
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
+  const mainBtnRef = React.useRef<HTMLButtonElement>(null);
+
+  React.useEffect(() => {
+    // Focus the main sign-in button on mount for keyboard users
+    if (mainBtnRef.current) {
+      mainBtnRef.current.focus();
+    }
+  }, []);
 
   const handleSignIn = async (e: React.MouseEvent) => {
     e.preventDefault();
     if (isAuthEmulator()) {
-      // In emulator mode, go to /profile for test/dev sign-in
       navigate('/profile');
       return;
     }
@@ -64,13 +71,13 @@ const LandingPage: React.FC = () => {
       padding: 0
     }}>
       {/* Animated SVG background blob */}
-      <svg style={{ position: 'absolute', top: -120, left: -120, zIndex: 0, opacity: 0.18 }} width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg aria-hidden="true" style={{ position: 'absolute', top: -120, left: -120, zIndex: 0, opacity: 0.18 }} width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse cx="300" cy="300" rx="300" ry="220" fill="#6ee7b7" />
       </svg>
       <div className="glass-card" style={{ margin: '3.5rem auto 2rem', maxWidth: 700, textAlign: 'center', position: 'relative', zIndex: 1, boxShadow: '0 8px 32px rgba(0,0,0,0.18)' }}>
         <img
           src={`${import.meta.env.BASE_URL}icon-512x512.png`}
-          alt="Massage Therapy Pro Logo"
+          alt="Massage Therapy Pro app icon"
           style={{ width: 96, height: 96, marginBottom: 18, borderRadius: '50%', boxShadow: '0 2px 16px rgba(30,60,40,0.12)' }}
         />
         <h1 style={{ fontSize: '2.3rem', fontWeight: 700, color: '#eafff2', marginBottom: 6, letterSpacing: '0.01em' }}>
@@ -82,8 +89,14 @@ const LandingPage: React.FC = () => {
         <p style={{ fontSize: '1.08rem', color: '#eafff2b0', margin: '0 auto 1.5rem', maxWidth: 520 }}>
           Your interactive platform for learning, practicing, and tracking your progress in massage therapy. Get started by signing in or exploring our quizzes and resources.
         </p>
+        {/* Onboarding tip */}
+        <div style={{ background: 'rgba(110,231,183,0.13)', color: '#1e3c28', borderRadius: 8, padding: '0.7rem 1.2rem', margin: '0 auto 1.2rem', maxWidth: 420, fontSize: '1rem', fontWeight: 500 }}>
+          <span role="img" aria-label="Lightbulb" style={{ marginRight: 8 }}>💡</span>
+          Tip: You can try quizzes without signing in, but signing in lets you track your progress and earn achievements!
+        </div>
         <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
           <button
+            ref={mainBtnRef}
             className="main-btn"
             style={{
               padding: '0.85rem 2.2rem',
@@ -97,6 +110,7 @@ const LandingPage: React.FC = () => {
               transition: 'background 0.2s',
               border: 'none',
               cursor: 'pointer',
+              outline: 'none',
             }}
             onClick={handleSignIn}
             aria-label="Sign in with Google"
@@ -113,7 +127,11 @@ const LandingPage: React.FC = () => {
             fontSize: '1.1rem',
             boxShadow: '0 2px 8px rgba(0,184,148,0.08)',
             transition: 'background 0.2s',
-          }}>Explore Quizzes</a>
+            outline: 'none',
+          }}
+            tabIndex={0}
+            aria-label="Explore quizzes"
+          >Explore Quizzes</a>
         </div>
         {/* Feature highlights */}
         <div style={{
@@ -123,7 +141,7 @@ const LandingPage: React.FC = () => {
           marginTop: 36,
           flexWrap: 'wrap',
         }}>
-          {featureList.map((f, i) => (
+          {featureList.map(f => (
             <div key={f.title} style={{
               background: 'rgba(255,255,255,0.10)',
               borderRadius: 14,
@@ -142,7 +160,7 @@ const LandingPage: React.FC = () => {
               alignItems: 'center',
               gap: 8,
             }}>
-              <span style={{ fontSize: '2.1rem', marginBottom: 4 }}>{f.icon}</span>
+              <span style={{ fontSize: '2.1rem', marginBottom: 4 }} aria-hidden="true">{f.icon}</span>
               <span style={{ fontWeight: 700, fontSize: '1.08rem', color: '#6ee7b7', marginBottom: 2 }}>{f.title}</span>
               <span style={{ fontSize: '0.98rem', color: '#eafff2cc' }}>{f.desc}</span>
             </div>
