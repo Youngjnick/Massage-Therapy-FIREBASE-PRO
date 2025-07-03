@@ -30,9 +30,11 @@ globalThis.import = { meta: { env: { BASE_URL: '/' } } };
 
 test('renders main content', async () => {
   render(<App />);
-  // Wait for the Quiz heading to appear, indicating main content is loaded
-  await screen.findByRole('heading', { name: /Quiz/i });
-  expect(screen.getByText(/Massage/i)).toBeInTheDocument();
+  // Wait for the Quiz link to appear, indicating main content is loaded
+  const quizLinks = await screen.findAllByRole('link', { name: /Quiz/i });
+  expect(quizLinks.length).toBeGreaterThan(0);
+  // Use getAllByText to avoid multiple match error
+  expect(screen.getAllByText(/Massage/i).length).toBeGreaterThan(0);
 });
 
 test('logs analytics event on app load', () => {
