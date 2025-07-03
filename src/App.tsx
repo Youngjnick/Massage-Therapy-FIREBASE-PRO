@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import AppFooter from './components/AppFooter';
 import './App.css';
 import { useAnalytics } from './hooks/useAnalytics';
+import LandingPage from './pages/LandingPage';
 
 // Debug component to log routing info
 function RouteDebug() {
@@ -52,11 +53,12 @@ const App: React.FC = () => {
       <NavBar />
       <main className="main-content" role="main">
         <Routes>
+          <Route path="/" element={<LandingPage />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<Navigate to="/quiz" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <AppFooter />

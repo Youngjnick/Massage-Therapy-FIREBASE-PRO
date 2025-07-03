@@ -17,12 +17,12 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 
-// Connect to Firestore emulator in E2E/dev
+// Connect to Firestore emulator ONLY if explicitly requested
 if (typeof window !== 'undefined') {
-  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const isE2E = window.location.search.includes('e2e=1');
-  if (isLocalhost || isE2E) {
-    // Use VITE_FIRESTORE_EMULATOR_HOST if set, else default to localhost:8080
+  const useEmulator =
+    import.meta.env.VITE_USE_FIREBASE_EMULATOR === 'true' ||
+    !!import.meta.env.VITE_FIRESTORE_EMULATOR_HOST;
+  if (useEmulator) {
     try {
       const emulatorHost = import.meta.env.VITE_FIRESTORE_EMULATOR_HOST;
       if (emulatorHost) {
@@ -40,11 +40,13 @@ if (typeof window !== 'undefined') {
   }
 }
 
-// Connect to Auth emulator in E2E/dev
+// Connect to Auth emulator ONLY if explicitly requested
 if (typeof window !== 'undefined') {
-  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const isE2E = window.location.search.includes('e2e=1');
-  if (isLocalhost || isE2E) {
+  const useEmulator =
+    import.meta.env.VITE_USE_FIREBASE_EMULATOR === 'true' ||
+    !!import.meta.env.VITE_FIREBASE_AUTH_EMULATOR_HOST ||
+    !!import.meta.env.VITE_AUTH_EMULATOR_HOST;
+  if (useEmulator) {
     try {
       const emulatorHost = import.meta.env.VITE_FIREBASE_AUTH_EMULATOR_HOST || import.meta.env.VITE_AUTH_EMULATOR_HOST;
       if (emulatorHost) {
