@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
 import { getAnalytics, logEvent as firebaseLogEvent, isSupported } from 'firebase/analytics';
+import { getAuth, connectAuthEmulator } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyANzEDUkGjM0M6L6dwZd1-TaOy1olo_6OM",
@@ -14,6 +15,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const auth = getAuth(app);
 
 // Connect to Firestore emulator in E2E/dev
 if (typeof window !== 'undefined') {
@@ -34,6 +36,27 @@ if (typeof window !== 'undefined') {
     } catch (err) {
       // Ignore errors when connecting to Firestore emulator (may already be connected)
       console.warn('Error connecting to Firestore emulator:', err);
+    }
+  }
+}
+
+// Connect to Auth emulator in E2E/dev
+if (typeof window !== 'undefined') {
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const isE2E = window.location.search.includes('e2e=1');
+  if (isLocalhost || isE2E) {
+    try {
+      const emulatorHost = import.meta.env.VITE_FIREBASE_AUTH_EMULATOR_HOST || import.meta.env.VITE_AUTH_EMULATOR_HOST;
+      if (emulatorHost) {
+        const [host, port] = emulatorHost.replace('http://', '').split(':');
+        connectAuthEmulator(auth, `http://${host}:${port}`);
+        console.log(`Connected to Auth emulator at ${host}:${port} (from env)`);
+      } else {
+        connectAuthEmulator(auth, 'http://localhost:9099');
+        console.log('Connected to Auth emulator at localhost:9099 (default)');
+      }
+    } catch (err) {
+      console.warn('Error connecting to Auth emulator:', err);
     }
   }
 }

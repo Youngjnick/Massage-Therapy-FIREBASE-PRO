@@ -1,14 +1,14 @@
-[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+[dotenv@17.0.1] injecting env (5) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
 [Playwright GLOBAL SETUP] process.env.HEADLESS: undefined
 [Playwright GLOBAL SETUP] Playwright config forces headless: false
-[Playwright GLOBAL SETUP] FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
-[Playwright GLOBAL SETUP] FIREBASE_AUTH_EMULATOR_HOST: 127.0.0.1:9099
+[Playwright GLOBAL SETUP] FIRESTORE_EMULATOR_HOST: localhost:8080
+[Playwright GLOBAL SETUP] FIREBASE_AUTH_EMULATOR_HOST: localhost:9099
 [Playwright GLOBAL SETUP] FIREBASE_PROJECT_ID: massage-therapy-smart-st-c7f8f
 [Playwright GLOBAL SETUP] GCLOUD_PROJECT: massage-therapy-smart-st-c7f8f
-FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
-GOOGLE_APPLICATION_CREDENTIALS: undefined
-NODE_ENV: test
-Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
-[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
-Error: No tests found
 
+Running 2 tests using 1 worker
+
+  ✓  1 [Desktop Chrome] › e2e/ui-auth-smoke.spec.ts:16:1 › UI auth: can sign in via login form and see profile (2.7s)
+  ✓  2 [Mobile Chrome] › e2e/ui-auth-smoke.spec.ts:16:1 › UI auth: can sign in via login form and see profile (2.9s)
+
+  2 passed (8.3s)

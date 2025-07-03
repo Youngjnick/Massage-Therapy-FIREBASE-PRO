@@ -112,6 +112,9 @@ test.describe('Accessibility: ARIA roles and labels', () => {
     await uiSignIn(page);
     await page.goto('/');
 
+    // Wait for main content to appear (adjust selector as needed)
+    await page.waitForSelector('.main-content, main, nav, header', { timeout: 10000 });
+
     // Collect all tabbable elements
     const tabbableSelectors = [
       'a[href]',
@@ -122,16 +125,29 @@ test.describe('Accessibility: ARIA roles and labels', () => {
       '[tabindex]:not([tabindex="-1"])',
     ];
     const tabbable = await page.$$(tabbableSelectors.join(','));
+    if (tabbable.length === 0) {
+      // Debug: dump HTML if nothing found
+      console.error('No tabbable elements found! Page HTML:', await page.content());
+    }
     expect(tabbable.length).toBeGreaterThan(0);
 
-    // Focus the first element and tab through all
+    // Focus the first element and tab through all, logging focus order
     await page.keyboard.press('Tab');
     let lastFocused = await page.evaluate(() => document.activeElement?.outerHTML);
+    const focusOrder = [lastFocused];
     for (let i = 1; i < tabbable.length; i++) {
       await page.keyboard.press('Tab');
       const currentFocused = await page.evaluate(() => document.activeElement?.outerHTML);
-      expect(currentFocused).not.toBe(lastFocused);
+      focusOrder.push(currentFocused);
+      if (currentFocused === lastFocused) {
+        // Attach debug info and fail
+        console.error(`Focus did not move on Tab at index ${i}`);
+        console.error('Focus order so far:', focusOrder);
+        throw new Error(`Focus did not move on Tab at index ${i}`);
+      }
       lastFocused = currentFocused;
     }
+    // Optionally, log the full focus order for review
+    console.log('Tab focus order:', focusOrder);
   });
 });

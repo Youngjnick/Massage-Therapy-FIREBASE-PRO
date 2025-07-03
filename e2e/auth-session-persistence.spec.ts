@@ -1,68 +1,68 @@
 /* global console */
+
+
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+
+import { execSync } from 'child_process';
+
 
 const TEST_EMAIL = 'test1234@gmail.com';
 const TEST_PASSWORD = 'test1234';
-const TEST_SIGNIN_FORM_SELECTOR = '[data-testid="test-signin-form"]';
-const EMAIL_SELECTOR = '[data-testid="test-signin-email"]';
-const PASSWORD_SELECTOR = '[data-testid="test-signin-password"]';
-const SUBMIT_SELECTOR = '[data-testid="test-signin-submit"]';
 const PROFILE_SELECTOR = '[data-testid="profile-page"], [data-testid="user-profile"], [data-testid="profile"]';
 const SIGN_OUT_BUTTON_ROLE = { name: /sign out/i };
-
 const LOGIN_PATH = '/profile';
 
 // Test assumes /profile is a full page, not a modal
 
+
 test.describe('Auth Session Persistence', () => {
-  test('should persist session after reload', async ({ page }, testInfo) => {
-    await page.goto(LOGIN_PATH);
-
-    // Ensure we are using the test sign-in form
-    let testSignInForm = await page.$(TEST_SIGNIN_FORM_SELECTOR);
-    if (!testSignInForm) {
-      // If not present, try to sign out
-      const signOutButton = await page.getByRole('button', SIGN_OUT_BUTTON_ROLE).elementHandle().catch(() => null);
-      if (signOutButton) {
-        await signOutButton.click();
-        await page.waitForSelector(TEST_SIGNIN_FORM_SELECTOR, { timeout: 5000 });
-      } else {
-        throw new Error('Test sign-in form not found and no sign-out button present. Cannot proceed.');
-      }
+  test.beforeAll(async () => {
+    // Reset Auth emulator before running the test
+    try {
+      execSync('node ./scripts/resetAuthEmulator.ts', {
+        stdio: 'inherit',
+        env: { ...process.env },
+      });
+    } catch (e) {
+      console.error('Failed to reset Auth emulator:', e);
     }
+  });
 
-    // Now fill the test sign-in form only
-    await page.fill(EMAIL_SELECTOR, TEST_EMAIL);
-    await page.fill(PASSWORD_SELECTOR, TEST_PASSWORD);
-    await page.click(SUBMIT_SELECTOR);
+  test('should persist session after reload', async ({ page }, testInfo) => {
 
-    // Debug: Take screenshot after login attempt
-    await page.screenshot({ path: testInfo.outputPath('after-login.png'), fullPage: true });
-    // Debug: Output page content after login
-    const pageContent = await page.content();
-    console.log('PAGE CONTENT AFTER LOGIN:', pageContent.slice(0, 1000));
+    // Ensure clean state before login
+    await page.goto(LOGIN_PATH);
+    await page.evaluate(() => {
+      window.localStorage.clear();
+    });
+    await page.context().clearCookies();
+    // Use shared sign-in helper for robust login
+    await uiSignIn(page, {
+      email: TEST_EMAIL,
+      password: TEST_PASSWORD,
+    });
 
     // Debug: Listen for console messages
     page.on('console', msg => {
       console.log('BROWSER CONSOLE:', msg.type(), msg.text());
     });
 
-    // Wait for sign-out button as proof of login, with retries
-    let signOutFound = false;
-    for (let i = 0; i < 3; i++) {
-      try {
-        await page.getByRole('button', SIGN_OUT_BUTTON_ROLE).waitFor({ timeout: 5000 });
-        signOutFound = true;
-        break;
-      } catch {
-        console.log(`Sign-out button not found, retry ${i + 1}`);
-        await page.waitForTimeout(1000);
-      }
-    }
-    expect(signOutFound).toBeTruthy();
+    // Wait for sign-out button as proof of login
+    await expect(page.getByRole('button', SIGN_OUT_BUTTON_ROLE)).toBeVisible({ timeout: 5000 });
+
+    // Debug: Log auth user in localStorage before reload
+    const authUserKey = `firebase:authUser:massage-therapy-smart-st-c7f8f:[DEFAULT]`;
+    const userBefore = await page.evaluate(key => window.localStorage.getItem(key), authUserKey);
+    console.log('Auth user in localStorage BEFORE reload:', userBefore);
 
     // Reload the page
     await page.reload();
+
+    // Debug: Log auth user in localStorage after reload
+    const userAfter = await page.evaluate(key => window.localStorage.getItem(key), authUserKey);
+    console.log('Auth user in localStorage AFTER reload:', userAfter);
+
     // Should still be signed in (sign-out button visible)
     await expect(page.getByRole('button', SIGN_OUT_BUTTON_ROLE)).toBeVisible({ timeout: 5000 });
     // Optionally, check profile info is still visible

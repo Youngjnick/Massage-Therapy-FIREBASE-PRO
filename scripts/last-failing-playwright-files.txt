@@ -1,0 +1,2 @@
+npx playwright test e2e/ui-auth-smoke.spec.ts --headed --reporter=list | tee scripts/playwright-output.txt
+
