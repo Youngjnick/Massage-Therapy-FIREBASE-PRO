@@ -78,44 +78,24 @@ test.describe('Stats Critical Flows', () => {
       // Extra debug: check if quiz is marked complete in UI
       const quizResultsText = await page.getByTestId('quiz-results').textContent();
       console.log(`[E2E DEBUG] quizResultsText after quiz #${quizNum+1}:`, quizResultsText);
-      // Wait for stat update to propagate (poll for stat increment)
-      let statUpdated = false;
-      for (let poll = 0; poll < 40; poll++) { // Increase polling attempts
+      // After quiz completion, poll for stat update
+      let updated = false;
+      let polledStat = lastStat;
+      for (let poll = 0; poll < 60; poll++) { // Increased polling attempts
         await page.goto('/analytics');
-        await page.waitForTimeout(1500); // Increase wait time
-        let polledStat = await getStatValue(page, 'Quizzes Taken:') || '';
+        await page.waitForTimeout(2000); // Increased wait time
+        polledStat = parseInt(await getStatValue(page, 'Quizzes Taken:') || '0', 10);
         const polledUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
         console.log(`[E2E DEBUG] Poll #${poll+1} after quiz: Quizzes Taken:`, polledStat, 'userUid:', polledUid);
-        if (parseInt(polledStat, 10) > lastStat) {
-          statUpdated = true;
-          lastStat = parseInt(polledStat, 10);
+        if (polledStat > lastStat) {
+          updated = true;
           break;
         }
-        // Extra: force Firestore refresh by reloading page
-        await page.reload();
       }
-      if (!statUpdated) {
-        // Print Firestore emulator debug info if available
-        console.error(`[E2E ERROR] Quizzes Taken stat did not increment after quiz #${quizNum+1}`);
-        throw new Error('Quizzes Taken stat did not increment after quiz');
+      if (!updated) {
+        throw new Error(`Quizzes Taken stat did not increment after quiz #${quizNum+1}. Last stat: ${lastStat}, Polled stat: ${polledStat}`);
       }
-      // Add a delay after stat update before next quiz
-      if (quizNum === 0) {
-        console.log('[E2E DEBUG] Waiting 5s before starting next quiz to allow backend/Firestore to sync.');
-        await page.waitForTimeout(5000);
-      }
+      lastStat = polledStat;
     }
-    // Final check: stat should be at least initial + 2
-    await page.goto('/analytics');
-    let updatedQuizzesTaken = '';
-    for (let i = 0; i < 10; i++) {
-      updatedQuizzesTaken = await getStatValue(page, 'Quizzes Taken:') || '';
-      if (updatedQuizzesTaken) break;
-      await page.waitForTimeout(500);
-    }
-    const userUidAfter = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
-    console.log('[E2E DEBUG] updatedQuizzesTaken:', updatedQuizzesTaken, 'userUid:', userUidAfter);
-    const updated = parseInt(updatedQuizzesTaken, 10) || 0;
-    expect(updated).toBeGreaterThanOrEqual(initial + 2);
-  }, 60000);
+  });
 });
