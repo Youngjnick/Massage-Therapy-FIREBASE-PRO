@@ -40,6 +40,7 @@ const featureList = [
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   const mainBtnRef = React.useRef<HTMLButtonElement>(null);
+  const [showTip, setShowTip] = React.useState(false);
 
   React.useEffect(() => {
     // Focus the main sign-in button on mount for keyboard users
@@ -95,15 +96,20 @@ const LandingPage: React.FC = () => {
           fill="#6ee7b7"
           style={{
             transformOrigin: 'center',
-            animation: 'blobMorph 8s ease-in-out infinite alternate',
+            animation: 'blobScale 7s ease-in-out infinite alternate, blobColor 12s ease-in-out infinite alternate',
           }}
         />
         <style>{`
-          @keyframes blobMorph {
-            0% { rx: 300; ry: 220; }
-            40% { rx: 320; ry: 210; }
-            60% { rx: 280; ry: 240; }
-            100% { rx: 300; ry: 220; }
+          @keyframes blobScale {
+            0% { transform: scaleX(1) scaleY(1); }
+            30% { transform: scaleX(1.08) scaleY(0.96); }
+            60% { transform: scaleX(0.95) scaleY(1.07); }
+            100% { transform: scaleX(1) scaleY(1); }
+          }
+          @keyframes blobColor {
+            0% { fill: #6ee7b7; }
+            50% { fill: #3b82f6; }
+            100% { fill: #6ee7b7; }
           }
         `}</style>
       </svg>
@@ -135,11 +141,6 @@ const LandingPage: React.FC = () => {
         <p style={{ fontSize: '1.08rem', color: '#eafff2b0', margin: '0 auto 1.5rem', maxWidth: 520 }}>
           Your interactive platform for learning, practicing, and tracking your progress in massage therapy. Get started by signing in or exploring our quizzes and resources.
         </p>
-        {/* Onboarding tip */}
-        <div style={{ background: 'rgba(110,231,183,0.13)', color: '#1e3c28', borderRadius: 8, padding: '0.7rem 1.2rem', margin: '0 auto 1.2rem', maxWidth: 420, fontSize: '1rem', fontWeight: 500 }}>
-          <span role="img" aria-label="Lightbulb" style={{ marginRight: 8 }}>💡</span>
-          Tip: You can try quizzes without signing in, but signing in lets you track your progress and earn achievements!
-        </div>
         <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
           <button
             ref={mainBtnRef}
@@ -193,6 +194,7 @@ const LandingPage: React.FC = () => {
             }}
             tabIndex={0}
             aria-label="Explore quizzes"
+            onClick={e => { e.preventDefault(); setShowTip(true); navigate('/quiz'); }}
             onMouseDown={e => e.currentTarget.style.transform = 'scale(0.97)'}
             onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
             onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
@@ -202,6 +204,13 @@ const LandingPage: React.FC = () => {
             Explore Quizzes
           </a>
         </div>
+        {/* Onboarding tip */}
+        {showTip && (
+          <div style={{ background: 'rgba(110,231,183,0.13)', color: '#1e3c28', borderRadius: 8, padding: '0.7rem 1.2rem', margin: '0 auto 1.2rem', maxWidth: 420, fontSize: '1rem', fontWeight: 500 }}>
+            <span role="img" aria-label="Lightbulb" style={{ marginRight: 8 }}>💡</span>
+            Tip: You can try quizzes without signing in, but signing in lets you track your progress and earn achievements!
+          </div>
+        )}
         {/* Feature highlights */}
         <div style={{
           display: 'flex',
