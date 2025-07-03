@@ -16,7 +16,9 @@ LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
 # Function to extract failing test details from output
 function update_last_failing_files() {
   date '+[DEBUG] Updating last-failing file at %Y-%m-%d %H:%M:%S' >> "$LAST_FAILING_FILE"
-  awk '/^[[:space:]]*[✘xX-]/ {
+  gawk '/^[[:space:]]*[✘xX-]/ {
+# Ensure gawk is available
+command -v gawk >/dev/null 2>&1 || { echo >&2 "gawk is required but not installed. Aborting."; exit 1; }
     # Example line: ✘  31 [Desktop Chrome] › e2e/app.spec.ts:18:1 › Suite Name › Test Name (4.3s)
     match($0, /\] › ([^ ]+) ([^\(]+)/, arr)
     file=arr[1]
