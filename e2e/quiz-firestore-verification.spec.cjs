@@ -1,7 +1,7 @@
-
 const admin = require('firebase-admin');
 const path = require('path');
 const { test, expect } = require('@playwright/test');
+const fs = require('fs');
 
 // Log Firestore emulator environment
 console.log('FIRESTORE_EMULATOR_HOST:', process.env.FIRESTORE_EMULATOR_HOST);
@@ -25,8 +25,16 @@ if (!admin.apps.length) {
   }
 }
 
-const TEST_EMAIL = process.env.E2E_TEST_EMAIL || 'test1234@gmail.com';
-const TEST_PASSWORD = process.env.E2E_TEST_PASSWORD || 'test1234';
+function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = fs.readFileSync(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
+
+const user = getTestUser(0);
+const TEST_EMAIL = user.email;
+const TEST_PASSWORD = user.password;
 
 test.describe('Quiz Firestore Verification', () => {
   test('Quiz results are saved to Firestore after submit', async ({ page }) => {
