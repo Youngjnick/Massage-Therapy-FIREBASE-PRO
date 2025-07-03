@@ -21,3 +21,22 @@ test.describe('App reload and webbar visibility', () => {
     await page.screenshot({ path: 'webbar-after-reload.png', fullPage: true });
   });
 });
+
+test.describe('App reload and webbar visibility (production)', () => {
+  test('NavBar is visible after reload on deployed site', async ({ page }) => {
+    // Go to the production home page
+    await page.goto('https://youngjnick.github.io/Massage-Therapy-FIREBASE-PRO/');
+
+    // Wait for the NavBar to be visible (role="navigation")
+    await expect(page.getByRole('navigation', { name: /main navigation/i })).toBeVisible();
+
+    // Reload the page
+    await page.reload();
+
+    // NavBar should still be visible immediately after reload
+    await expect(page.getByRole('navigation', { name: /main navigation/i })).toBeVisible();
+
+    // Optionally, take a screenshot for debugging
+    await page.screenshot({ path: 'webbar-after-reload-prod.png', fullPage: true });
+  });
+});
