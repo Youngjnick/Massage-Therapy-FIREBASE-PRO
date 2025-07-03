@@ -94,7 +94,16 @@ async function globalSetup() {
         debugSummary.push(`No localId for ${user.email}, skipping Firestore doc creation.`);
       }
     } catch (err) {
-      debugSummary.push(`Exception while creating/signing in user ${user.email}: ${err && err.stack ? err.stack : err}`);
+      // TypeScript-safe error message extraction
+      let errMsg = '';
+      if (err && typeof err === 'object' && 'stack' in err && typeof (err as any).stack === 'string') {
+        errMsg = (err as any).stack;
+      } else if (err && typeof err === 'object' && 'message' in err && typeof (err as any).message === 'string') {
+        errMsg = (err as any).message;
+      } else {
+        errMsg = String(err);
+      }
+      debugSummary.push(`Exception while creating/signing in user ${user.email}: ${errMsg}`);
       throw err;
     }
   }

@@ -42,7 +42,7 @@ export default defineConfig({
   ],
   globalSetup: './e2e/global-setup.ts',
   webServer: {
-    command: 'vite --port 5173',
+    command: 'cp .env.e2e .env && vite --port 5173',
     port: 5173,
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
