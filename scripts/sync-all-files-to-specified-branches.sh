@@ -1,3 +1,48 @@
+# --- AI Commit Message Generation (OpenAI GPT-4) ---
+# Requires: OPENAI_API_KEY environment variable
+function generate_ai_commit_message() {
+  local diff summary prompt ai_response commit_msg
+  diff=$(git diff --cached)
+  summary=""
+  if [[ -f scripts/test-output.txt ]]; then
+    summary+="$(cat scripts/test-output.txt)\n"
+  fi
+  if [[ -f scripts/playwright-output.txt ]]; then
+    summary+="$(cat scripts/playwright-output.txt)\n"
+  fi
+  prompt="Generate a concise, detailed commit message for the following code changes and test results.\n\nGit diff:\n$diff\n\nTest summary:\n$summary\n"
+  if [[ -z "$OPENAI_API_KEY" ]]; then
+    echo "[AI COMMIT] Skipping AI commit message generation: OPENAI_API_KEY not set."
+    return 1
+  fi
+  echo "[AI COMMIT] Requesting commit message from OpenAI..."
+  ai_response=$(curl -s -X POST https://api.openai.com/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -d '{
+      "model": "gpt-4",
+      "messages": [
+        {"role": "system", "content": "You are a helpful assistant that writes clear, professional git commit messages."},
+        {"role": "user", "content": '"$prompt"'}
+      ],
+      "max_tokens": 256,
+      "temperature": 0.2
+    }')
+  commit_msg=$(echo "$ai_response" | grep -o '"content":"[^"]*"' | head -1 | sed 's/"content":"//' | sed 's/\\n/\n/g')
+  if [[ -z "$commit_msg" ]]; then
+    echo "[AI COMMIT] Failed to generate commit message."
+    return 1
+  fi
+  echo "\n--- AI Generated Commit Message ---\n$commit_msg\n-------------------------------"
+  echo "Do you want to use this AI-generated commit message? (y/n): "
+  read use_ai_msg
+  if [[ "$use_ai_msg" == "y" ]]; then
+    AI_COMMIT_MSG="$commit_msg"
+    return 0
+  else
+    return 1
+  fi
+}
 
 #!/bin/zsh
 # sync-all-files-to-branches.sh
@@ -74,9 +119,9 @@ if [[ ${#branches[@]} -eq 0 ]]; then
     echo "No branches entered. Exiting."
     exit 1
   fi
-  # Split on any whitespace (spaces, tabs, newlines)
-  for b in ${(z)branch_input}; do
-    branches+=$b
+  # Split branch_input on whitespace (spaces, tabs, newlines)
+  for b in $branch_input; do
+    branches+=("$b")
   done
 fi
 
@@ -122,7 +167,8 @@ if [[ ${#all_targets[@]} -gt 0 ]]; then
 fi
 
 # --- ALWAYS COMMIT ALL CHANGES BEFORE SYNC ---
-# Always stage and commit all changes as WIP if there are uncommitted changes
+
+# Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
   # Build a default summary from test/lint variables if available
   DEFAULT_SUMMARY=""
@@ -132,7 +178,6 @@ if [[ -n $(git status --porcelain) ]]; then
   if [[ -n "$PW_SUMMARY" ]]; then
     DEFAULT_SUMMARY+="$PW_SUMMARY\n"
   fi
-  # Add more summaries as needed (e.g., TS_SUMMARY, ESLINT_SUMMARY)
   if [[ -n "$TS_SUMMARY" ]]; then
     DEFAULT_SUMMARY+="$TS_SUMMARY\n"
   fi
@@ -140,13 +185,44 @@ if [[ -n $(git status --porcelain) ]]; then
     DEFAULT_SUMMARY+="$ESLINT_SUMMARY\n"
   fi
   echo -e "${YELLOW}Uncommitted changes detected.${NC}"
-  if [[ -n "$DEFAULT_SUMMARY" ]]; then
-    echo -e "\n--- Generated Commit Summary ---\n$DEFAULT_SUMMARY\n-------------------------------"
-    echo "Do you want to edit this commit message before committing? (y/n): "
-    read edit_msg_choice
-    if [[ "$edit_msg_choice" == "y" ]]; then
-      echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
+  echo -e "\n--- Generated Commit Summary ---\n$DEFAULT_SUMMARY\n-------------------------------"
+  # Offer AI commit message option
+  AI_COMMIT_MSG=""
+  echo "How do you want to commit these changes? (commit/WIP/ai/abort): "
+  read commit_mode
+  if [[ "$commit_mode" == "abort" ]]; then
+    echo "Aborted by user. No changes committed."
+    exit 1
+  fi
+  commit_msg=""
+  if [[ "$commit_mode" == "ai" ]]; then
+    if generate_ai_commit_message; then
+      commit_msg="$AI_COMMIT_MSG"
+    else
+      echo "Falling back to WIP commit message."
+      commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY"
+    fi
+    git add -A
+    git commit -m "$commit_msg"
+  elif [[ "$commit_mode" == "WIP" || "$commit_mode" == "wip" ]]; then
+    commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY"
+    echo "Do you want to edit the WIP commit message? (y/n): "
+    read edit_wip_choice
+    if [[ "$edit_wip_choice" == "y" ]]; then
+      echo "Enter your WIP commit message. The generated summary is shown above. (End with an empty line):"
       commit_msg=""
+      while IFS= read -r line; do
+        [[ -z "$line" ]] && break
+        commit_msg+="$line\n"
+      done
+    fi
+    git add -A
+    git commit -m "$commit_msg"
+  elif [[ "$commit_mode" == "commit" ]]; then
+    echo "Do you want to edit the commit message? (y/n): "
+    read edit_commit_choice
+    if [[ "$edit_commit_choice" == "y" ]]; then
+      echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
       while IFS= read -r line; do
         [[ -z "$line" ]] && break
         commit_msg+="$line\n"
@@ -157,22 +233,8 @@ if [[ -n $(git status --porcelain) ]]; then
     git add -A
     git commit -m "$commit_msg"
   else
-    echo "Do you want to enter a custom commit message? (y/n): "
-    read custom_msg_choice
-    if [[ "$custom_msg_choice" == "y" ]]; then
-      echo "Enter your commit message (end with an empty line):"
-      commit_msg=""
-      while IFS= read -r line; do
-        [[ -z "$line" ]] && break
-        commit_msg+="$line\n"
-      done
-      git add -A
-      git commit -m "$commit_msg"
-    else
-      echo -e "${YELLOW}Auto-committing all uncommitted changes as WIP before sync...${NC}"
-      git add -A
-      git commit -m "WIP: auto-commit before sync-all-files-to-specified-branches.sh"
-    fi
+    echo "Invalid option. Aborting."
+    exit 1
   fi
 else
   echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
