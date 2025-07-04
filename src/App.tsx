@@ -48,7 +48,7 @@ const App: React.FC = () => {
 
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      {import.meta.env.MODE === 'development' && <RouteDebug />}
+      {import.meta.env.DEV && <RouteDebug />}
       <AppHeader />
       <NavBar />
       <main className="main-content" role="main">
