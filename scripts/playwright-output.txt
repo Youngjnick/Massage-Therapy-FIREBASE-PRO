@@ -1,20 +1,20 @@
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-1j2juvd7@gmail.com created successfully. UID: 0tT5nrPAjA4iNVri8zZcWew67Ziy
-Firestore user doc created for testuserc-1j2juvd7@gmail.com (uid: 0tT5nrPAjA4iNVri8zZcWew67Ziy)
-User testuserd-u8ofch4f@gmail.com created successfully. UID: hpqAyAYDEaO9bCPYYMHNog5IQDXS
-Firestore user doc created for testuserd-u8ofch4f@gmail.com (uid: hpqAyAYDEaO9bCPYYMHNog5IQDXS)
+User testuserc-0mcztlc8@gmail.com created successfully. UID: v8p7bef1me17sNOgoxF1s4QxKlbK
+Firestore user doc created for testuserc-0mcztlc8@gmail.com (uid: v8p7bef1me17sNOgoxF1s4QxKlbK)
+User testuserd-5biesmf9@gmail.com created successfully. UID: XwSGU154jNVgXFDxIAhmmd2UA7jI
+Firestore user doc created for testuserd-5biesmf9@gmail.com (uid: XwSGU154jNVgXFDxIAhmmd2UA7jI)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-1j2juvd7@gmail.com",
+    "email": "testuserc-0mcztlc8@gmail.com",
     "password": "testuserC",
-    "uid": "0tT5nrPAjA4iNVri8zZcWew67Ziy"
+    "uid": "v8p7bef1me17sNOgoxF1s4QxKlbK"
   },
   {
-    "email": "testuserd-u8ofch4f@gmail.com",
+    "email": "testuserd-5biesmf9@gmail.com",
     "password": "testuserD",
-    "uid": "hpqAyAYDEaO9bCPYYMHNog5IQDXS"
+    "uid": "XwSGU154jNVgXFDxIAhmmd2UA7jI"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
@@ -28,6 +28,43 @@ Running 204 tests using 1 worker
 
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-1j2juvd7@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-0mcztlc8@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (4.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-0mcztlc8@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.4s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-0mcztlc8@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-0mcztlc8@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-0mcztlc8@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.0s)
+  ✘  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (1.3s)
+  ✘  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1.5s)
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (501ms)
+  ✘  9 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (1.2s)
+  ✘  10 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (retry #1) (1.4s)
+Navigating to home page...
+Filling Quiz Length...
