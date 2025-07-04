@@ -14,6 +14,7 @@ async function getTestUser(index = 0) {
 }
 
 const PAGES = [
+	{ path: '/', name: 'landing' },
 	{ path: '/quiz?e2e=1', name: 'quiz' },
 	{ path: '/profile', name: 'profile', auth: true },
 	{ path: '/achievements', name: 'achievements', auth: true },

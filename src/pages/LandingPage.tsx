@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, User, onAuthStateChanged } from 'firebase/auth';
 import { app } from '../firebase/firebaseConfig';
 
 const auth = getAuth(app);
@@ -41,6 +41,14 @@ const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   const mainBtnRef = React.useRef<HTMLButtonElement>(null);
   const [showTip, setShowTip] = React.useState(false);
+  const [testEmail, setTestEmail] = React.useState('');
+  const [testPassword, setTestPassword] = React.useState('');
+  const [testSignInError, setTestSignInError] = React.useState<string | null>(null);
+  const [user, setUser] = React.useState<User | null>(null);
+
+  React.useEffect(() => {
+    return onAuthStateChanged(auth, setUser);
+  }, []);
 
   const handleSignIn = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -53,6 +61,17 @@ const LandingPage: React.FC = () => {
       navigate('/profile');
     } catch {
       // Optionally show error
+    }
+  };
+
+  const handleTestSignIn = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setTestSignInError(null);
+    try {
+      await signInWithEmailAndPassword(auth, testEmail, testPassword);
+      navigate('/profile');
+    } catch (err: any) {
+      setTestSignInError(err.message || 'Sign in failed');
     }
   };
 
@@ -137,21 +156,36 @@ const LandingPage: React.FC = () => {
           animation: 'fadeInCard 1.1s cubic-bezier(.4,2,.6,1) 0.2s forwards',
         }}
       >
-        <img
-          src={`${import.meta.env.BASE_URL}icon-512x512.png`}
-          alt="Massage Therapy Pro app icon"
-          style={{ width: 96, height: 96, marginBottom: 18, borderRadius: '50%', boxShadow: '0 2px 16px rgba(30,60,40,0.12)' }}
-        />
-        <h1 style={{ fontSize: '2.3rem', fontWeight: 700, color: '#eafff2', marginBottom: 6, letterSpacing: '0.01em' }}>
-          Welcome to <span style={{ color: '#6ee7b7' }}>Massage Therapy Pro</span>
-        </h1>
-        <div style={{ fontSize: '1.18rem', color: '#eafff2cc', margin: '0 auto 1.2rem', maxWidth: 520, fontWeight: 500 }}>
-          Ace your massage therapy exams.<br />Practice, track, and succeed.
-        </div>
-        <p style={{ fontSize: '1.08rem', color: '#eafff2b0', margin: '0 auto 1.5rem', maxWidth: 520 }}>
-          Your interactive platform for learning, practicing, and tracking your progress in massage therapy. Get started by signing in or exploring our quizzes and resources.
-        </p>
-        <div style={{ marginTop: 28, display: 'flex', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
+        {/* Show test/dev sign-in form in emulator/test mode, otherwise Google sign-in */}
+        {((import.meta.env.DEV || isAuthEmulator()) && !user) ? (
+          <form onSubmit={handleTestSignIn} style={{ marginTop: 32, maxWidth: 340, marginLeft: 'auto', marginRight: 'auto', background: '#f8f8f8', padding: 16, borderRadius: 8 }} data-testid="test-signin-form">
+            <h4>Test/Dev Email Sign-In</h4>
+            <input
+              type="email"
+              placeholder="Test Email"
+              value={testEmail}
+              onChange={e => setTestEmail(e.target.value)}
+              style={{ width: '100%', marginBottom: 8 }}
+              autoComplete="username"
+              aria-label="Test email"
+              required
+              data-testid="test-signin-email"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={testPassword}
+              onChange={e => setTestPassword(e.target.value)}
+              style={{ width: '100%', marginBottom: 8 }}
+              autoComplete="current-password"
+              aria-label="Test password"
+              required
+              data-testid="test-signin-password"
+            />
+            <button type="submit" style={{ width: '100%' }} aria-label="Sign in with email" data-testid="test-signin-submit">Sign In (Test Only)</button>
+            {testSignInError && <div style={{ color: 'red', marginTop: 8 }}>{testSignInError}</div>}
+          </form>
+        ) : (
           <button
             ref={mainBtnRef}
             className="main-btn"
@@ -177,32 +211,32 @@ const LandingPage: React.FC = () => {
           >
             Sign In with Google
           </button>
-          <a
-            href="/quiz"
-            className="main-btn"
-            style={{
-              padding: '0.85rem 2.2rem',
-              background: 'linear-gradient(90deg, #00b894 60%, #3b82f6 100%)',
-              color: '#fff',
-              borderRadius: 10,
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '1.1rem',
-              boxShadow: '0 2px 8px rgba(0,184,148,0.08)',
-              transition: 'background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1)',
-              outline: 'none',
-              width: '100%',
-              maxWidth: 320,
-              marginBottom: 10,
-              display: 'inline-block',
-              textAlign: 'center',
-            }}
-            aria-label="Explore quizzes"
-            onClick={e => { e.preventDefault(); setShowTip(true); navigate('/quiz'); }}
-          >
-            Explore Quizzes
-          </a>
-        </div>
+        )}
+        <a
+          href="/quiz"
+          className="main-btn"
+          style={{
+            padding: '0.85rem 2.2rem',
+            background: 'linear-gradient(90deg, #00b894 60%, #3b82f6 100%)',
+            color: '#fff',
+            borderRadius: 10,
+            textDecoration: 'none',
+            fontWeight: 600,
+            fontSize: '1.1rem',
+            boxShadow: '0 2px 8px rgba(0,184,148,0.08)',
+            transition: 'background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1)',
+            outline: 'none',
+            width: '100%',
+            maxWidth: 320,
+            marginBottom: 10,
+            display: 'inline-block',
+            textAlign: 'center',
+          }}
+          aria-label="Explore quizzes"
+          onClick={e => { e.preventDefault(); setShowTip(true); navigate('/quiz'); }}
+        >
+          Explore Quizzes
+        </a>
         {/* Onboarding tip */}
         {showTip && (
           <div style={{ background: 'rgba(110,231,183,0.13)', color: '#1e3c28', borderRadius: 8, padding: '0.7rem 1.2rem', margin: '0 auto 1.2rem', maxWidth: 420, fontSize: '1rem', fontWeight: 500 }}>

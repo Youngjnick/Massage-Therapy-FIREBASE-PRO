@@ -1,0 +1,39 @@
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-6juiowux@gmail.com created successfully. UID: 1v23A42SxpsnaPrYwyEyCjfMvOa1
+Firestore user doc created for testuserc-6juiowux@gmail.com (uid: 1v23A42SxpsnaPrYwyEyCjfMvOa1)
+User testuserd-1umjsxu1@gmail.com created successfully. UID: gJCPb68v2QpsVczzT8gkun8uZhUf
+Firestore user doc created for testuserd-1umjsxu1@gmail.com (uid: gJCPb68v2QpsVczzT8gkun8uZhUf)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-6juiowux@gmail.com",
+    "password": "testuserC",
+    "uid": "1v23A42SxpsnaPrYwyEyCjfMvOa1"
+  },
+  {
+    "email": "testuserd-1umjsxu1@gmail.com",
+    "password": "testuserD",
+    "uid": "gJCPb68v2QpsVczzT8gkun8uZhUf"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (1) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 204 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-6juiowux@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+  ✘  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (13.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-6juiowux@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.

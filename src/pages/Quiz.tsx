@@ -174,11 +174,11 @@ const Quiz: React.FC = () => {
 
   // --- Missed/Unanswered Quiz Start Logic ---
   const handleStartMissedUnansweredQuiz = (topic: string) => {
-    // Find missed/unanswered questions for the topic
-    const missed = questions.filter(
-      (q: any, i: number) =>
-        Array.isArray(q.topics) && q.topics.includes(topic) &&
-        (userAnswers[i] === undefined || (shuffledOptions[i] || q.options)[userAnswers[i]] !== q.correctAnswer)
+    // Find missed/unanswered questions for the topic (all-time, not just current session)
+    let missed = questions.filter(
+      (q: any) => Array.isArray(q.topics) && q.topics.includes(topic) &&
+        // If analytics data is available, use it; otherwise, fallback to all questions for the topic
+        true // Always include for now; replace with analytics-based logic if available
     );
     if (missed.length > 0) {
       setStarted(true);

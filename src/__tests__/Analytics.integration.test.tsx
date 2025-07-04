@@ -32,6 +32,7 @@ jest.mock('firebase/firestore', () => {
 
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Analytics from '../pages/Analytics';
 
 describe('Analytics integration', () => {
@@ -39,7 +40,11 @@ describe('Analytics integration', () => {
     mockDoc.mockClear();
   });
   it('displays user stats: quizzes taken, correct answers, accuracy, streak, badges', async () => {
-    render(<Analytics />);
+    render(
+      <MemoryRouter>
+        <Analytics />
+      </MemoryRouter>
+    );
     // Check for labels and values using toHaveTextContent
     const quizzesDiv = (await screen.findByText('Quizzes Taken:')).parentElement!;
     expect(quizzesDiv).toHaveTextContent(/Quizzes Taken:\s*5/);
