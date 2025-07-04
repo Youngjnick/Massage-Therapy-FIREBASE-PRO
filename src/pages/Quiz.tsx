@@ -95,6 +95,13 @@ const Quiz: React.FC = () => {
     getQuestions()
       .then((qs) => {
         setQuestions(qs);
+        // DEBUG: Log all loaded questions and their topics
+        if (typeof window !== 'undefined') {
+          // @ts-ignore
+          window.__ALL_QUIZ_QUESTIONS__ = qs;
+        }
+        console.log('[QUIZ DEBUG] Loaded questions:', qs);
+        console.log('[QUIZ DEBUG] Extracted topics:', qs.map(q => q.topics));
         const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
         const sorted = [...topics].sort((a, b) => a.localeCompare(b));
         setSortedTopics(sorted);
@@ -174,11 +181,11 @@ const Quiz: React.FC = () => {
 
   // --- Missed/Unanswered Quiz Start Logic ---
   const handleStartMissedUnansweredQuiz = (topic: string) => {
-    // Find missed/unanswered questions for the topic (all-time, not just current session)
-    let missed = questions.filter(
-      (q: any) => Array.isArray(q.topics) && q.topics.includes(topic) &&
-        // If analytics data is available, use it; otherwise, fallback to all questions for the topic
-        true // Always include for now; replace with analytics-based logic if available
+    // Find missed/unanswered questions for the topic
+    const missed = questions.filter(
+      (q: any, i: number) =>
+        Array.isArray(q.topics) && q.topics.includes(topic) &&
+        (userAnswers[i] === undefined || (shuffledOptions[i] || q.options)[userAnswers[i]] !== q.correctAnswer)
     );
     if (missed.length > 0) {
       setStarted(true);

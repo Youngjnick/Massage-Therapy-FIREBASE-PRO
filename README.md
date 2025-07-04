@@ -103,4 +103,18 @@ This project is licensed under the MIT License. See the LICENSE file for details
   ```
 - For more details, see `scripts/playwright-output.txt` for E2E test logs.
 
----
+## Environment Switching
+
+You can easily switch between environments using the `toggle-env.sh` script:
+
+- **Production (GitHub/deploy):**
+  - `./toggle-env.sh production`
+  - Then run: `npm run start:prod`
+- **Production (local, no emulators):**
+  - `./toggle-env.sh localprod`
+  - Then run: `npm run start:localprod`
+- **Development (with emulators):**
+  - `./toggle-env.sh development`
+  - Then run: `npm run start:emulators`
+
+Make sure to update the Firebase config in each `.env.*` file as needed.

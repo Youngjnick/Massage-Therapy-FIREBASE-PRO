@@ -14,7 +14,11 @@
     "test:e2e:firestore": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f npm run test:e2e:headed -- e2e/quiz-firestore-verification.spec.cjs",
     "test:e2e:last-failed": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh --last-failed",
     "resetUserStats": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f ts-node e2e/helpers/resetUserStats.ts",
-    "test:e2e:playwright": "FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 npx playwright test"
+    "test:e2e:playwright": "FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 npx playwright test",
+    "start:prod": "vite preview --mode production",
+    "start:localprod": "vite --mode localprod",
+    "start:emulators": "vite --mode development",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
