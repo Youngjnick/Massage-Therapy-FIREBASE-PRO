@@ -3,8 +3,10 @@ import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebaseClient';
 import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
 import QuizTopicProgress from '../components/Quiz/QuizTopicProgress';
+import { useNavigate } from 'react-router-dom';
 
 const Analytics: React.FC = () => {
+  const navigate = useNavigate();
   const [stats, setStats] = useState({
     quizzesTaken: 0,
     correctAnswers: 0,
@@ -65,6 +67,11 @@ const Analytics: React.FC = () => {
     };
   }, [user]);
 
+  // Callback to start missed/unanswered quiz for a topic
+  const handleStartMissedUnansweredQuiz = (topic: string) => {
+    navigate('/quiz', { state: { startMissedUnanswered: true, topic } });
+  };
+
   if (!user) {
     return <div>Please sign in to view your analytics.</div>;
   }
@@ -92,7 +99,7 @@ const Analytics: React.FC = () => {
       {/* Topic breakdown */}
       <div style={{ marginTop: 32 }}>
         <h3>Topic Breakdown</h3>
-        <QuizTopicProgress topicStats={topicStats} />
+        <QuizTopicProgress topicStats={topicStats} onStartMissedUnansweredQuiz={handleStartMissedUnansweredQuiz} />
       </div>
       {/* Quiz history chart */}
       <div style={{ marginTop: 32 }}>

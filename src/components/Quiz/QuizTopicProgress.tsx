@@ -93,6 +93,7 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
                   fontWeight: 600,
                   cursor: 'pointer',
                   marginTop: 8,
+                  opacity: 1,
                 }}
                 aria-label={`Start quiz for ${modalTopic} (missed/unanswered)`}
                 onClick={() => {
@@ -105,7 +106,23 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
                 Start Quiz: Missed/Unanswered
               </button>
             ) : (
-              <div style={{ color: '#16a34a', marginTop: 8 }}>You’ve answered all questions for this topic!</div>
+              <button
+                style={{
+                  background: '#94a3b8',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: 6,
+                  padding: '10px 20px',
+                  fontWeight: 600,
+                  cursor: 'not-allowed',
+                  marginTop: 8,
+                  opacity: 0.6,
+                }}
+                aria-label={`No missed or unanswered questions for ${modalTopic}`}
+                disabled
+              >
+                Start Quiz: Missed/Unanswered
+              </button>
             )}
             {/* Placeholder for future: review all questions, badges, etc. */}
             <div style={{ marginTop: 24, color: '#888', fontSize: 13 }}>

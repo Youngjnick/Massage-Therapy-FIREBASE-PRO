@@ -14,6 +14,7 @@ import { getFilteredSortedQuestions } from '../utils/quizFiltering';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import Spinner from '../components/common/Spinner';
 import { useQuizData } from '../hooks/useQuizData';
+import { useLocation } from 'react-router-dom';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -24,6 +25,7 @@ if (typeof window !== 'undefined') {
   } catch { /* ignore localStorage errors */ }
 }
 const Quiz: React.FC = () => {
+  const location = useLocation();
   // --- All hooks must be called unconditionally at the top level ---
   const [selectedTopic, setSelectedTopic] = useState<string>('');
   const [toggleState, setToggleState] = useQuizToggles(initialToggleState);
@@ -198,6 +200,20 @@ const Quiz: React.FC = () => {
       setShuffledOptions(so);
     }
   };
+
+  // Check for navigation intent from Analytics
+  useEffect(() => {
+    if (location.state && location.state.startMissedUnanswered && location.state.topic) {
+      // Set selected topic immediately
+      setSelectedTopic(location.state.topic);
+      // Wait for questions to load, then trigger missed/unanswered quiz
+      if (!loading && questions.length > 0) {
+        handleStartMissedUnansweredQuiz(location.state.topic);
+        // Optionally clear the state so it doesn't re-trigger on refresh
+        window.history.replaceState({}, document.title);
+      }
+    }
+  }, [location.state, loading, questions]);
 
   // Use quizQuestions.length as the max quiz length
   const maxQuizLength = quizQuestions.length;
