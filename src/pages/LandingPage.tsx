@@ -42,13 +42,6 @@ const LandingPage: React.FC = () => {
   const mainBtnRef = React.useRef<HTMLButtonElement>(null);
   const [showTip, setShowTip] = React.useState(false);
 
-  React.useEffect(() => {
-    // Focus the main sign-in button on mount for keyboard users
-    if (mainBtnRef.current) {
-      mainBtnRef.current.focus();
-    }
-  }, []);
-
   const handleSignIn = async (e: React.MouseEvent) => {
     e.preventDefault();
     if (isAuthEmulator()) {
@@ -71,6 +64,10 @@ const LandingPage: React.FC = () => {
       overflow: 'hidden',
       padding: 0
     }}>
+      {/* Skip to main content link for accessibility */}
+      <a href="#main-content" style={{ position: 'absolute', left: -9999, top: 'auto', width: 1, height: 1, overflow: 'hidden', zIndex: 1000 }} className="skip-link">
+        Skip to main content
+      </a>
       {/* Animated SVG background blob */}
       <svg
         aria-hidden="true"
@@ -123,6 +120,7 @@ const LandingPage: React.FC = () => {
         `}</style>
       </svg>
       <div
+        id="main-content"
         className="glass-card"
         style={{
           margin: '3.5rem auto 2rem',
@@ -166,7 +164,7 @@ const LandingPage: React.FC = () => {
               fontWeight: 600,
               fontSize: '1.1rem',
               boxShadow: '0 2px 8px rgba(59,130,246,0.08)',
-              transition: 'background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1)',
+              transition: 'background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1)',
               border: 'none',
               cursor: 'pointer',
               outline: 'none',
@@ -176,11 +174,6 @@ const LandingPage: React.FC = () => {
             }}
             onClick={handleSignIn}
             aria-label="Sign in with Google"
-            onMouseDown={e => e.currentTarget.style.transform = 'scale(0.97)'}
-            onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
-            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-            onTouchStart={e => e.currentTarget.style.transform = 'scale(0.97)'}
-            onTouchEnd={e => e.currentTarget.style.transform = 'scale(1)'}
           >
             Sign In with Google
           </button>
@@ -196,7 +189,7 @@ const LandingPage: React.FC = () => {
               fontWeight: 600,
               fontSize: '1.1rem',
               boxShadow: '0 2px 8px rgba(0,184,148,0.08)',
-              transition: 'background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1)',
+              transition: 'background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1)',
               outline: 'none',
               width: '100%',
               maxWidth: 320,
@@ -204,14 +197,8 @@ const LandingPage: React.FC = () => {
               display: 'inline-block',
               textAlign: 'center',
             }}
-            tabIndex={0}
             aria-label="Explore quizzes"
             onClick={e => { e.preventDefault(); setShowTip(true); navigate('/quiz'); }}
-            onMouseDown={e => e.currentTarget.style.transform = 'scale(0.97)'}
-            onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
-            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-            onTouchStart={e => e.currentTarget.style.transform = 'scale(0.97)'}
-            onTouchEnd={e => e.currentTarget.style.transform = 'scale(1)'}
           >
             Explore Quizzes
           </a>
@@ -235,11 +222,12 @@ const LandingPage: React.FC = () => {
             // Map feature to route
             let route = '/';
             if (f.title === 'Practice Quizzes') route = '/quiz';
-            else if (f.title === 'Track Progress') route = '/analytics'; // changed from /stats
+            else if (f.title === 'Track Progress') route = '/analytics';
             else if (f.title === 'Earn Achievements') route = '/achievements';
             return (
-              <div
+              <button
                 key={f.title}
+                type="button"
                 className="feature-card"
                 style={{
                   background: 'rgba(255,255,255,0.10)',
@@ -253,7 +241,7 @@ const LandingPage: React.FC = () => {
                   color: '#eafff2',
                   fontWeight: 500,
                   fontSize: '1.04rem',
-                  border: '1.5px solid transparent', // border will be animated
+                  border: '1.5px solid transparent',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -269,9 +257,7 @@ const LandingPage: React.FC = () => {
                   position: 'relative',
                   overflow: 'hidden',
                 }}
-                tabIndex={0}
                 aria-label={f.title + ' (click to view)'}
-                role="button"
                 onClick={e => {
                   // Ripple effect
                   const card = e.currentTarget;
@@ -308,7 +294,7 @@ const LandingPage: React.FC = () => {
                 <span style={{ fontSize: '0.98rem', color: '#eafff2cc', lineHeight: 1.3 }}>{f.desc}</span>
                 {/* Animated border gradient overlay */}
                 <span className="feature-card-border" aria-hidden="true" />
-              </div>
+              </button>
             );
           })}
           <style>{`
@@ -358,11 +344,11 @@ const LandingPage: React.FC = () => {
               100% { background-position: 0% 50%; }
             }
             .feature-card:hover .feature-card-border,
-            .feature-card:focus .feature-card-border {
+            .feature-card:focus-visible .feature-card-border {
               opacity: 1;
               filter: blur(0.2px) drop-shadow(0 0 8px #6ee7b7cc);
             }
-            .feature-card:hover, .feature-card:focus {
+            .feature-card:hover, .feature-card:focus-visible {
               transform: scale(1.08) translateY(-4px) !important;
               box-shadow: 0 6px 32px 0 #6ee7b7cc, 0 2px 12px rgba(30,60,40,0.13);
               z-index: 2;
@@ -391,10 +377,29 @@ const LandingPage: React.FC = () => {
                 opacity: 0;
               }
             }
+            .main-btn {
+              transition: background 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+              will-change: transform;
+              outline: none;
+            }
+            .main-btn:hover, .main-btn:focus-visible {
+              transform: scale(1.08);
+              box-shadow: 0 0 0 3px #6ee7b7cc, 0 6px 32px 0 #6ee7b7cc, 0 2px 12px rgba(30,60,40,0.13);
+              z-index: 2;
+            }
+            .main-btn:active {
+              transform: scale(0.97);
+            }
           `}</style>
         </div>
         <footer style={{ marginTop: 40, color: '#eafff2a0', fontSize: 14 }}>
           &copy; {new Date().getFullYear()} Massage Therapy Pro &mdash; All rights reserved.
+          {/* Add nav bar after footer for tab loop */}
+          <nav style={{ marginTop: 24, display: 'flex', justifyContent: 'center', gap: 32 }} aria-label="Footer navigation">
+            <a href="/about" className="footer-nav-link" style={{ color: '#6ee7b7', textDecoration: 'underline', fontWeight: 500, fontSize: 16 }}>About</a>
+            <a href="/privacy" className="footer-nav-link" style={{ color: '#6ee7b7', textDecoration: 'underline', fontWeight: 500, fontSize: 16 }}>Privacy</a>
+            <a href="/contact" className="footer-nav-link" style={{ color: '#6ee7b7', textDecoration: 'underline', fontWeight: 500, fontSize: 16 }}>Contact</a>
+          </nav>
         </footer>
       </div>
     </div>
