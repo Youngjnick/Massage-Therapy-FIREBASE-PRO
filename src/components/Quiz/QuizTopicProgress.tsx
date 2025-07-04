@@ -15,6 +15,14 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
 
   if (!topicStats || Object.entries(topicStats).length === 0) return null;
 
+  // Prettify topic name (capitalize, replace underscores/dashes, etc.)
+  const prettify = (str: string) =>
+    str
+      .replace(/[_-]/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase())
+      .replace(/\s+/g, ' ')
+      .trim();
+
   // Placeholder: logic to get missed/unanswered counts for a topic
   const getMissedUnanswered = (topic: string) => {
     const stat = topicStats[topic];
@@ -36,33 +44,44 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
             <button
               key={topic}
               style={{
-                minWidth: 120,
-                background: '#f8fafc',
-                border: '1px solid #e5e7eb',
-                borderRadius: 8,
-                padding: 12,
+                minWidth: 90,
+                background: '#fff', // Clear/white background for minimal look
+                border: '1.5px solid #d1d5db',
+                borderRadius: 7,
+                padding: '8px 10px',
                 cursor: 'pointer',
                 outline: 'none',
-                boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
-                transition: 'box-shadow 0.2s',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                transition: 'box-shadow 0.18s, border 0.18s, background 0.18s',
+                fontSize: 15,
+                fontWeight: 500,
+                color: '#334155',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                gap: 2,
               }}
-              aria-label={`View details and actions for ${cleanTopic}`}
+              aria-label={`View details and actions for ${prettify(cleanTopic)}`}
               onClick={() => setModalTopic(topic)}
               onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setModalTopic(topic); }}
+              onFocus={e => e.currentTarget.style.boxShadow = '0 0 0 2px #38bdf8'}
+              onBlur={e => e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'}
+              onMouseOver={e => e.currentTarget.style.background = '#f1f5f9'}
+              onMouseOut={e => e.currentTarget.style.background = '#fff'}
             >
-              <div style={{ fontWeight: 600 }}>{cleanTopic}</div>
-              <div style={{ height: 8, background: '#e5e7eb', borderRadius: 4, margin: '4px 0', position: 'relative' }}>
+              <span style={{ fontWeight: 600, fontSize: 15 }}>{prettify(cleanTopic)}</span>
+              <div style={{ height: 6, background: '#e5e7eb', borderRadius: 3, margin: '2px 0', position: 'relative', width: '100%' }}>
                 <div
                   style={{
                     width: `${stat.total ? (100 * stat.correct) / stat.total : 0}%`,
                     height: '100%',
-                    background: '#3b82f6',
-                    borderRadius: 4,
-                    transition: 'width 0.3s',
+                    background: '#38bdf8',
+                    borderRadius: 3,
+                    transition: 'width 0.2s',
                   }}
                 />
               </div>
-              <div style={{ fontSize: 12 }}>{`${stat.correct} / ${stat.total} correct`}</div>
+              <div style={{ fontSize: 12, color: '#64748b' }}>{`${stat.correct} / ${stat.total}`}</div>
             </button>
           );
         })}
