@@ -277,21 +277,21 @@ const LandingPage: React.FC = () => {
                   }
                 }}
               >
-                <span style={{ fontSize: '2.1rem', marginBottom: 4 }} aria-hidden="true">
+                <span className="feature-card-icon" style={{ fontSize: '2.1rem', marginBottom: 4 }} aria-hidden="true">
                   {f.icon}
                 </span>
                 <span
+                  className="feature-card-title"
                   style={{
                     fontWeight: 700,
                     fontSize: '1.08rem',
-                    color: '#6ee7b7',
                     marginBottom: 2,
                     wordBreak: 'break-word',
                   }}
                 >
                   {f.title}
                 </span>
-                <span style={{ fontSize: '0.98rem', color: '#eafff2cc', lineHeight: 1.3 }}>{f.desc}</span>
+                <span className="feature-card-desc" style={{ fontSize: '0.98rem', lineHeight: 1.3 }}>{f.desc}</span>
                 {/* Animated border gradient overlay */}
                 <span className="feature-card-border" aria-hidden="true" />
               </button>
@@ -322,6 +322,38 @@ const LandingPage: React.FC = () => {
             .feature-card {
               position: relative;
               z-index: 1;
+            }
+            .feature-card-icon, .feature-card-title, .feature-card-desc {
+              opacity: 0.68;
+              transform: scale(1);
+              transition: opacity 0.18s cubic-bezier(.4,2,.6,1), transform 0.22s cubic-bezier(.4,2,.6,1);
+              will-change: transform, opacity;
+            }
+            .feature-card-icon {
+              color: #6ee7b7cc;
+            }
+            .feature-card-title {
+              color: #6ee7b7cc;
+            }
+            .feature-card-desc {
+              color: #eafff2cc;
+            }
+            button.feature-card:hover .feature-card-icon,
+            button.feature-card:focus-visible .feature-card-icon,
+            button.feature-card:hover .feature-card-title,
+            button.feature-card:focus-visible .feature-card-title,
+            button.feature-card:hover .feature-card-desc,
+            button.feature-card:focus-visible .feature-card-desc {
+              opacity: 1 !important;
+              transform: scale(1.12) !important;
+            }
+            button.feature-card:hover .feature-card-title,
+            button.feature-card:focus-visible .feature-card-title {
+              color: #6ee7b7 !important;
+            }
+            button.feature-card:hover .feature-card-desc,
+            button.feature-card:focus-visible .feature-card-desc {
+              color: #eafff2 !important;
             }
             .feature-card-border {
               pointer-events: none;
