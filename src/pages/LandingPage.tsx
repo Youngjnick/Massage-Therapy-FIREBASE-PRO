@@ -231,50 +231,86 @@ const LandingPage: React.FC = () => {
           marginTop: 36,
           flexWrap: 'wrap',
         }}>
-          {featureList.map((f, i) => (
-            <div
-              key={f.title}
-              style={{
-                background: 'rgba(255,255,255,0.10)',
-                borderRadius: 14,
-                padding: '1.1rem 1.3rem',
-                minWidth: 140,
-                maxWidth: 220,
-                margin: '0.5rem 0',
-                boxShadow: '0 2px 12px rgba(30,60,40,0.08)',
-                textAlign: 'center',
-                color: '#eafff2',
-                fontWeight: 500,
-                fontSize: '1.04rem',
-                border: '1.5px solid #6ee7b7',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: 8,
-                flex: '1 1 120px',
-                boxSizing: 'border-box',
-                opacity: 0,
-                transform: 'translateY(24px)',
-                animation: `fadeInUp 0.7s ${0.15 + i * 0.13}s cubic-bezier(.4,2,.6,1) forwards`,
-              }}
-            >
-              <span style={{ fontSize: '2.1rem', marginBottom: 4 }} aria-hidden="true">
-                {f.icon}
-              </span>
-              <span
+          {featureList.map((f, i) => {
+            // Map feature to route
+            let route = '/';
+            if (f.title === 'Practice Quizzes') route = '/quiz';
+            else if (f.title === 'Track Progress') route = '/analytics'; // changed from /stats
+            else if (f.title === 'Earn Achievements') route = '/achievements';
+            return (
+              <div
+                key={f.title}
+                className="feature-card"
                 style={{
-                  fontWeight: 700,
-                  fontSize: '1.08rem',
-                  color: '#6ee7b7',
-                  marginBottom: 2,
-                  wordBreak: 'break-word',
+                  background: 'rgba(255,255,255,0.10)',
+                  borderRadius: 14,
+                  padding: '1.1rem 1.3rem',
+                  minWidth: 140,
+                  maxWidth: 220,
+                  margin: '0.5rem 0',
+                  boxShadow: '0 2px 12px rgba(30,60,40,0.08)',
+                  textAlign: 'center',
+                  color: '#eafff2',
+                  fontWeight: 500,
+                  fontSize: '1.04rem',
+                  border: '1.5px solid transparent', // border will be animated
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: 8,
+                  flex: '1 1 120px',
+                  boxSizing: 'border-box',
+                  opacity: 0,
+                  transform: 'translateY(24px)',
+                  animation: `fadeInUp 0.7s ${0.15 + i * 0.13}s cubic-bezier(.4,2,.6,1) forwards, floatCard 4.2s ${(i * 0.7).toFixed(2)}s ease-in-out infinite alternate`,
+                  cursor: 'pointer',
+                  transition: 'transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s cubic-bezier(.4,2,.6,1), border 0.4s',
+                  outline: 'none',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+                tabIndex={0}
+                aria-label={f.title + ' (click to view)'}
+                role="button"
+                onClick={e => {
+                  // Ripple effect
+                  const card = e.currentTarget;
+                  const ripple = document.createElement('span');
+                  ripple.className = 'ripple';
+                  const rect = card.getBoundingClientRect();
+                  ripple.style.left = `${e.clientX - rect.left}px`;
+                  ripple.style.top = `${e.clientY - rect.top}px`;
+                  card.appendChild(ripple);
+                  setTimeout(() => ripple.remove(), 600);
+                  navigate(route);
+                }}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    navigate(route);
+                  }
                 }}
               >
-                {f.title}
-              </span>
-              <span style={{ fontSize: '0.98rem', color: '#eafff2cc', lineHeight: 1.3 }}>{f.desc}</span>
-            </div>
-          ))}
+                <span style={{ fontSize: '2.1rem', marginBottom: 4 }} aria-hidden="true">
+                  {f.icon}
+                </span>
+                <span
+                  style={{
+                    fontWeight: 700,
+                    fontSize: '1.08rem',
+                    color: '#6ee7b7',
+                    marginBottom: 2,
+                    wordBreak: 'break-word',
+                  }}
+                >
+                  {f.title}
+                </span>
+                <span style={{ fontSize: '0.98rem', color: '#eafff2cc', lineHeight: 1.3 }}>{f.desc}</span>
+                {/* Animated border gradient overlay */}
+                <span className="feature-card-border" aria-hidden="true" />
+              </div>
+            );
+          })}
           <style>{`
             @keyframes fadeInUp {
               to {
@@ -290,6 +326,69 @@ const LandingPage: React.FC = () => {
               to {
                 opacity: 1;
                 transform: translateY(0);
+              }
+            }
+            @keyframes floatCard {
+              0% { transform: translateY(0); }
+              50% { transform: translateY(-8px) scale(1.03); }
+              100% { transform: translateY(0); }
+            }
+            .feature-card {
+              position: relative;
+              z-index: 1;
+            }
+            .feature-card-border {
+              pointer-events: none;
+              content: '';
+              position: absolute;
+              inset: -2px;
+              border-radius: 16px;
+              z-index: 2;
+              border: 2.5px solid transparent;
+              background: linear-gradient(120deg, #6ee7b7, #3b82f6, #a5b4fc, #6ee7b7 90%);
+              background-size: 300% 300%;
+              animation: borderMove 3.5s linear infinite;
+              opacity: 0.7;
+              filter: blur(1.2px);
+              transition: opacity 0.2s;
+            }
+            @keyframes borderMove {
+              0% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+              100% { background-position: 0% 50%; }
+            }
+            .feature-card:hover .feature-card-border,
+            .feature-card:focus .feature-card-border {
+              opacity: 1;
+              filter: blur(0.2px) drop-shadow(0 0 8px #6ee7b7cc);
+            }
+            .feature-card:hover, .feature-card:focus {
+              transform: scale(1.08) translateY(-4px) !important;
+              box-shadow: 0 6px 32px 0 #6ee7b7cc, 0 2px 12px rgba(30,60,40,0.13);
+              z-index: 2;
+              border-color: #6ee7b7;
+            }
+            .feature-card:active {
+              transform: scale(0.97) translateY(1px) !important;
+              box-shadow: 0 2px 8px 0 #6ee7b788, 0 2px 8px rgba(30,60,40,0.10);
+            }
+            /* Ripple effect */
+            .ripple {
+              position: absolute;
+              border-radius: 50%;
+              transform: scale(0);
+              animation: ripple 0.6s linear;
+              background: rgba(110,231,183,0.25);
+              pointer-events: none;
+              z-index: 3;
+              width: 120px;
+              height: 120px;
+              opacity: 0.7;
+            }
+            @keyframes ripple {
+              to {
+                transform: scale(2.5);
+                opacity: 0;
               }
             }
           `}</style>
