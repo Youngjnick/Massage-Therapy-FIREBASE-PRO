@@ -45,7 +45,7 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
               key={topic}
               style={{
                 minWidth: 90,
-                background: '#fff', // Clear/white background for minimal look
+                background: 'rgba(255,255,255,0.7)', // Semi-transparent white
                 border: '1.5px solid #d1d5db',
                 borderRadius: 7,
                 padding: '8px 10px',
@@ -66,8 +66,8 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
               onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setModalTopic(topic); }}
               onFocus={e => e.currentTarget.style.boxShadow = '0 0 0 2px #38bdf8'}
               onBlur={e => e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'}
-              onMouseOver={e => e.currentTarget.style.background = '#f1f5f9'}
-              onMouseOut={e => e.currentTarget.style.background = '#fff'}
+              onMouseOver={e => e.currentTarget.style.background = 'rgba(241,245,249,0.85)'}
+              onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.7)'}
             >
               <span style={{ fontWeight: 600, fontSize: 15 }}>{prettify(cleanTopic)}</span>
               <div style={{ height: 6, background: '#e5e7eb', borderRadius: 3, margin: '2px 0', position: 'relative', width: '100%' }}>
