@@ -17,8 +17,8 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 
-// Connect to Firestore emulator ONLY if explicitly requested
-if (typeof window !== 'undefined') {
+// Connect to Firestore emulator ONLY if explicitly requested AND in development mode
+if (typeof window !== 'undefined' && import.meta.env.MODE === 'development') {
   const useEmulator =
     import.meta.env.VITE_USE_FIREBASE_EMULATOR === 'true' ||
     !!import.meta.env.VITE_FIRESTORE_EMULATOR_HOST;
@@ -40,8 +40,8 @@ if (typeof window !== 'undefined') {
   }
 }
 
-// Connect to Auth emulator ONLY if explicitly requested
-if (typeof window !== 'undefined') {
+// Connect to Auth emulator ONLY if explicitly requested AND in development mode
+if (typeof window !== 'undefined' && import.meta.env.MODE === 'development') {
   const useEmulator =
     import.meta.env.VITE_USE_FIREBASE_EMULATOR === 'true' ||
     !!import.meta.env.VITE_FIREBASE_AUTH_EMULATOR_HOST ||
