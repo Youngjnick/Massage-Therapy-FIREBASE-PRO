@@ -15,6 +15,7 @@ import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import Spinner from '../components/common/Spinner';
 import { useQuizData } from '../hooks/useQuizData';
 import { useLocation } from 'react-router-dom';
+import { getTopicStats } from '../utils/quizStats';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -221,9 +222,11 @@ const Quiz: React.FC = () => {
   // Render quiz UI components based on the current state
   if (loading) return <Spinner />;
   if (showResults) {
+    // Compute topic stats for the finished quiz session
+    const topicStats = getTopicStats(activeQuestions, userAnswers, shuffledOptions);
     return (
       <QuizResultsScreen
-        topicStats={{}}
+        topicStats={topicStats}
         onStartNewQuiz={() => {
           setShowResults(false);
           setStarted(false);
