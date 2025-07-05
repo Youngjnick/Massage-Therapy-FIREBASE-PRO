@@ -5,10 +5,16 @@ set -x
 function update_last_failing_files() {
   echo "[DEBUG] Running update_last_failing_files, OUTPUT_FILE=$OUTPUT_FILE"
   if [[ -f "$OUTPUT_FILE" ]]; then
-    # Extract all failing test file:line pairs (strip column), portable for macOS
-    grep -Eo 'e2e/[^ >]*\.spec\.[tc]s:[0-9]+:[0-9]+' "$OUTPUT_FILE" \
-      | sed -E 's/(:[0-9]+):[0-9]+$/\1/' \
-      | sort -u > "$LAST_FAILING_FILE"
+    # If there are no lines with '✘', all tests passed, so clear the last failing file
+    if ! grep -q '✘' "$OUTPUT_FILE"; then
+      echo "[DEBUG] No failures found (no '✘' in output). Clearing $LAST_FAILING_FILE."
+      > "$LAST_FAILING_FILE"
+    else
+      # Extract all failing test file:line pairs (strip column), portable for macOS
+      grep -Eo 'e2e/[^ >]*\.spec\.[tc]s:[0-9]+:[0-9]+' "$OUTPUT_FILE" \
+        | sed -E 's/(:[0-9]+):[0-9]+$/\1/' \
+        | sort -u > "$LAST_FAILING_FILE"
+    fi
     echo "[DEBUG] last-failing-playwright-files.txt contents:"
     cat "$LAST_FAILING_FILE"
   else
