@@ -49,16 +49,16 @@ if [[ "$choice" == "f"* ]]; then
       [[ -n "$line" ]] && prioritized_files+=("$line")
     done < "$LAST_FAILING_FILE"
     if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-      PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
       sync
       update_last_failing_files
     else
-      PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
       sync
       update_last_failing_files
     fi
   else
-    PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
     sync
     update_last_failing_files
   fi
@@ -72,14 +72,14 @@ elif [[ "$choice" == "p"* ]]; then
     done < "$LAST_FAILING_FILE"
   fi
   if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}"
+    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${prioritized_files[@]}"
     sync
     update_last_failing_files
   else
     exit 1
   fi
 else
-  PW_HEADLESS=0 npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+  PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
   sync
   update_last_failing_files
 fi

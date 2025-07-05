@@ -1,0 +1,75 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation "Main navigation":
+  - list:
+    - listitem:
+      - link "Go to Quiz page":
+        - /url: /quiz
+        - text: Quiz
+    - listitem:
+      - link "Go to Achievements page":
+        - /url: /achievements
+        - text: Achievements
+    - listitem:
+      - link "Go to Analytics page":
+        - /url: /analytics
+        - text: Analytics
+    - listitem:
+      - link "Go to Profile page":
+        - /url: /profile
+        - text: Profile
+- main:
+  - button "Start New Quiz"
+  - heading "Results" [level=2]
+  - heading "Accuracy by Topic" [level=4]
+  - list
+  - heading "Quiz Results" [level=2]
+  - paragraph: "Your score: 1 / 10"
+  - strong: "Average Time per Question:"
+  - text: 0 sec
+  - strong: "Longest Correct Streak:"
+  - text: "1"
+  - strong: "Accuracy by Topic:"
+  - list
+  - button "Try Another Quiz"
+  - list:
+    - listitem:
+      - strong: What is the origin of the external oblique muscle?
+      - text: "Your answer: External surfaces of ribs 5–12 Correct answer: External surfaces of ribs 5–12 Explanation: The external oblique arises from ribs 5 to 12. More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression. Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture."
+    - listitem:
+      - strong: Where does the internal oblique muscle originate?
+      - text: "Your answer: No answer Correct answer: Thoracolumbar fascia, iliac crest, and inguinal ligament Explanation: The internal oblique arises from fascia and bony landmarks of the lower torso. More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents. Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy."
+    - listitem:
+      - strong: What nerve supplies the internal oblique muscle?
+      - text: "Your answer: No answer Correct answer: Lower six thoracoabdominal nerves and L1 Explanation: It is innervated by thoracoabdominal nerves and the L1 nerve. More Info: The internal oblique receives motor supply from thoracoabdominal nerves (T7–T11), subcostal (T12), and contributions from iliohypogastric and ilioinguinal nerves (L1), coordinating trunk flexion and abdominal compression. Clinical Application: Knowledge of this innervation helps when working with patients recovering from abdominal surgery or sports injuries."
+    - listitem:
+      - strong: Which nerves innervate the transverse abdominis?
+      - text: "Your answer: No answer Correct answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Explanation: It is innervated by both thoracic and upper lumbar nerves. More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability. Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support."
+    - listitem:
+      - strong: Where does the transverse abdominis muscle originate?
+      - text: "Your answer: No answer Correct answer: Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament Explanation: It originates from ribs, fascia, and pelvis. More Info: The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength. Clinical Application: Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support."
+    - listitem:
+      - strong: What is the origin of the rectus abdominis muscle?
+      - text: "Your answer: No answer Correct answer: Pubic crest and pubic symphysis Explanation: The rectus abdominis originates from the pubic crest and symphysis. More Info: The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation. Clinical Application: Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt."
+    - listitem:
+      - strong: Which nerves innervate the external oblique muscle?
+      - text: "Your answer: No answer Correct answer: Thoracoabdominal nerves (T7–T11) and subcostal nerve (T12) Explanation: The external oblique is innervated by lower thoracic spinal nerves. More Info: Thoracoabdominal nerves (continuations of intercostals) from T7–T11 and the subcostal nerve (T12) supply the external oblique. These nerves allow trunk motion and abdominal wall compression. Clinical Application: A massage therapist targeting abdominal breathing or tension may stimulate these nerves for relaxation."
+    - listitem:
+      - strong: Which of the following abdominal muscles assists in forced expiration?
+      - text: "Your answer: No answer Correct answer: All of the above Explanation: All these muscles contract to assist in expelling air from the lungs. More Info: During forced expiration, abdominal muscles contract to compress the abdominal cavity, elevate the diaphragm, and push air out. This includes the rectus, obliques, and transverse muscles. Clinical Application: Massage can facilitate more effective breathing by improving abdominal compliance and reducing tension in these muscles."
+    - listitem:
+      - strong: Which abdominal muscle is the deepest layer of the lateral abdominal wall?
+      - text: "Your answer: No answer Correct answer: Transverse abdominis Explanation: The transverse abdominis lies deepest in the abdominal wall. More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration. Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer."
+    - listitem:
+      - strong: Which nerve innervates the rectus abdominis muscle?
+      - text: "Your answer: No answer Correct answer: Intercostal nerves (T7–T11) and subcostal nerve (T12) Explanation: The rectus abdominis is innervated by lower thoracic spinal nerves. More Info: Specifically, the intercostal nerves from T7 to T11 and the subcostal nerve (T12) innervate the rectus abdominis, allowing voluntary motor control during trunk flexion and compression of abdominal contents. Clinical Application: This is relevant when assessing abdominal wall weakness or post-surgical nerve impairment."
+  - text: "Answered: 1 / 10(Some questions were skipped or left unanswered)"
+  - button "Close"
+- contentinfo:
+  - textbox "Search questions"
+- paragraph: Running in emulator mode. Do not use with production credentials.
+```
