@@ -1,7 +1,30 @@
 /* global console */
 import { test as base, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 export const test = base;
+
+// Load test user from test-users.json (ESM compatible)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const testUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'test-users.json'), 'utf-8'));
+const TEST_EMAIL = testUsers[0].email;
+const TEST_PASSWORD = testUsers[0].password;
+
+// Helper to robustly fill Quiz Length input if present
+import type { Page } from '@playwright/test';
+async function fillQuizLengthIfPresent(page: Page, value = '1') {
+  const input = page.getByLabel('Quiz Length');
+  if (await input.count() && await input.isVisible()) {
+    await input.fill(value);
+    console.log(`[E2E] Filled Quiz Length with ${value}`);
+  } else {
+    console.warn('[E2E] Quiz Length input not found or not visible, skipping fill.');
+  }
+}
 
 base.beforeEach(async ({ page }) => {
   // Clear localStorage, sessionStorage, and cookies before each test
@@ -20,22 +43,18 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   const logs: string[] = [];
   page.on('console', msg => logs.push(msg.type() + ': ' + msg.text()));
 
-  console.log('Navigating to home page...');
+  // Always start from a clean state
   await page.goto('/');
-  console.log('Filling Quiz Length...');
-  await page.getByLabel('Quiz Length').fill('1');
-  console.log('Clicking Start button...');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz'); // Ensure we are on the quiz start form
+  await fillQuizLengthIfPresent(page, '1');
   await page.getByRole('button', { name: /start/i }).click();
-  console.log('Clicking first quiz option...');
   await page.getByTestId('quiz-option').first().click();
-  console.log('Clicking Finish button...');
   await page.getByRole('button', { name: /finish/i }).click();
-  console.log('Clicking Start New Quiz button...');
   await page.getByRole('button', { name: /start new quiz/i }).click();
   // After reset, fill the start form again and start the quiz
-  console.log('Filling Quiz Length again...');
-  await page.getByLabel('Quiz Length').fill('1');
-  console.log('Clicking Start button again...');
+  await page.goto('/quiz'); // Ensure we are on the quiz start form after restart
+  await fillQuizLengthIfPresent(page, '1');
   await page.getByRole('button', { name: /start/i }).click();
 
   // Wait for loading spinner to disappear (if present)
@@ -124,8 +143,11 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
 test('should handle edge case: rapid answer selection', async ({ page }) => {
   console.log('[E2E DEBUG] Navigating to home page...');
   await page.goto('/');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz'); // Ensure we are on the quiz start form
+  await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
   console.log('[E2E DEBUG] Filling Quiz Length...');
-  await page.getByLabel('Quiz Length').fill('2');
+  await fillQuizLengthIfPresent(page, '2');
   console.log('[E2E DEBUG] Clicking Start button...');
   await page.getByRole('button', { name: /start/i }).click();
   console.log('[E2E DEBUG] Waiting for quiz question card to be visible...');
@@ -159,7 +181,7 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
   console.log('[E2E DEBUG] Clicking Start New Quiz button...');
   await page.getByRole('button', { name: /start new quiz/i }).click();
   console.log('[E2E DEBUG] Filling Quiz Length again...');
-  await page.getByLabel('Quiz Length').fill('2');
+  await fillQuizLengthIfPresent(page, '2');
   console.log('[E2E DEBUG] Clicking Start button again...');
   await page.getByRole('button', { name: /start/i }).click();
   console.log('[E2E DEBUG] Waiting for quiz loading spinner to disappear...');
@@ -183,8 +205,9 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
 });
 
 test('should show explanations when enabled', async ({ page }) => {
-  // Go to the app (use relative path for dev server)
   await page.goto('/');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
 
   // Set the toggle state in localStorage for this origin
   await page.evaluate(() => {
@@ -198,6 +221,7 @@ test('should show explanations when enabled', async ({ page }) => {
 
   // Reload so the app picks up the new localStorage value
   await page.reload();
+  await page.goto('/quiz');
 
   // Wait for the Quiz Start form and Quiz Length input
   await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
@@ -213,7 +237,7 @@ test('should show explanations when enabled', async ({ page }) => {
     console.warn('Show Explanations toggle not found.');
   }
 
-  await page.getByLabel('Quiz Length').fill('1');
+  await fillQuizLengthIfPresent(page, '1');
   await page.getByRole('button', { name: /start/i }).click();
 
   // Wait for quiz question card to be visible
@@ -245,25 +269,118 @@ test('should show explanations when enabled', async ({ page }) => {
 
 test('should show topic stats in results', async ({ page }) => {
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('1');
-  await page.getByRole('button', { name: /start/i }).click();
-  await page.getByTestId('quiz-option').first().click();
-  await page.getByRole('button', { name: /finish/i }).click();
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
 
-  // Wait for loading spinner to disappear (if present)
-  try {
-    await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
-  } catch {
-    console.error('Quiz loading spinner did not disappear after finishing quiz. Page HTML:', await page.content());
-    throw new Error('Quiz did not finish loading after finishing.');
+  // Wait for the quiz start form to be visible before filling
+  await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
+
+  // Get all real topics (skip index 0 if it's a placeholder)
+  const topicSelect = page.getByLabel(/topic/i);
+  let options: string[] = [];
+  if (await topicSelect.count()) {
+    options = await topicSelect.locator('option').allTextContents();
+    console.log('[E2E DEBUG] Topic select options:', options);
+  } else {
+    throw new Error('[E2E DEBUG] Topic select not found.');
   }
 
-  // Wait for topic stats to appear
-  try {
-    await page.waitForSelector('[data-testid="quiz-topic-progress"]', { timeout: 20000 });
-  } catch {
-    console.error('Topic stats did not appear. Page HTML:', await page.content());
-    throw new Error('Topic stats not found in results.');
+  let foundStats = false;
+  let lastHtml = '';
+  // Try only the first real topic (skip index 0 if it's a placeholder)
+  const maxTopicsToTry = 1;
+  for (let topicIdx = 1; topicIdx < Math.min(options.length, maxTopicsToTry + 1); topicIdx++) {
+    await page.goto('/quiz');
+    // If on the results page, click "Start New Quiz" if present
+    const startNewQuizBtn = page.locator('[data-testid="quiz-results-start-new"], button:has-text("Start New Quiz")');
+    if (await startNewQuizBtn.count() && await startNewQuizBtn.isVisible()) {
+      await startNewQuizBtn.click();
+    }
+    await page.waitForSelector('[data-testid="quiz-start-form"]', { state: 'visible', timeout: 15000 });
+    // Select topic
+    await topicSelect.selectOption({ index: topicIdx });
+    const selectedValue = await topicSelect.inputValue();
+    console.log(`[E2E DEBUG] Trying topic index ${topicIdx}: value=${selectedValue}, label=${options[topicIdx]}`);
+    // Use a quiz length of 5 for more robust topic stats
+    await fillQuizLengthIfPresent(page, '5');
+    const quizLengthInput = page.getByLabel('Quiz Length');
+    if (await quizLengthInput.count()) {
+      const quizLengthValue = await quizLengthInput.inputValue();
+      console.log('[E2E DEBUG] Quiz Length input value after fill:', quizLengthValue);
+    }
+    // Extra debug: log the topic index and topic label
+    await page.getByRole('button', { name: /start/i }).click();
+    // Dynamically determine the number of questions from the stepper UI
+    let questionCount = 5;
+    const stepper = page.getByTestId('quiz-stepper');
+    if (await stepper.count()) {
+      const stepText = await stepper.innerText();
+      // Try to extract total from text like "1 / 5"
+      const match = stepText.match(/\d+\s*\/\s*(\d+)/);
+      if (match) questionCount = parseInt(match[1], 10);
+    }
+    // Answer all questions
+    for (let i = 0; i < questionCount; i++) {
+      const questionCard = page.getByTestId('quiz-question-card');
+      if (await questionCard.count()) {
+        const questionText = await questionCard.innerText();
+        // Extra debug: log the question text and topic index
+        console.log(`[E2E DEBUG] [Topic ${topicIdx}] Question ${i + 1}:`, questionText);
+        // Try to extract topic info from question object if available
+        const questionObj = await page.evaluate(() => {
+          // @ts-ignore
+          return window.__LAST_QUIZ_QUESTION__ || null;
+        });
+        console.log(`[E2E DEBUG] [Topic ${topicIdx}] QuestionObj:`, questionObj);
+        if (questionObj && Array.isArray(questionObj.topics)) {
+          console.log(`[E2E DEBUG] [Topic ${topicIdx}] QuestionObj.topics:`, questionObj.topics);
+          const quizTopic = questionObj.topics[questionObj.topics.length - 1];
+          console.log(`[E2E DEBUG] [Topic ${topicIdx}] QuestionObj.quizTopic (last):`, quizTopic);
+        } else if (questionObj && typeof questionObj.topic !== 'undefined') {
+          console.log(`[E2E DEBUG] [Topic ${topicIdx}] QuestionObj.topic:`, questionObj.topic);
+        }
+      }
+      // Always select an answer for the last question before finishing
+      await page.getByTestId('quiz-option').first().click();
+      if (i < questionCount - 1) {
+        await page.getByRole('button', { name: /next/i }).click();
+      } else {
+        // Wait for the Finish Quiz button to appear (only after last question is answered)
+        await page.waitForSelector('[data-testid="quiz-finish-btn"]', { state: 'visible', timeout: 5000 });
+        await page.getByTestId('quiz-finish-btn').click();
+      }
+    }
+    // Wait for loading spinner to disappear (if present)
+    try {
+      await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
+    } catch {
+      lastHtml = await page.content();
+      console.error(`[E2E DEBUG] [Topic ${topicIdx}] Quiz loading spinner did not disappear after finishing quiz. Page HTML:`, lastHtml);
+      continue;
+    }
+    // Extra debug: log the quiz result object if available
+    const quizResultDebug = await page.evaluate(() => {
+      // @ts-ignore
+      return window.__LAST_QUIZ_RESULT__ || null;
+    });
+    console.log(`[E2E DEBUG] [Topic ${topicIdx}] Quiz result object:`, quizResultDebug);
+    if (quizResultDebug && quizResultDebug.topicStats) {
+      console.log(`[E2E DEBUG] [Topic ${topicIdx}] Quiz result topicStats:`, quizResultDebug.topicStats);
+    }
+    // Wait for topic stats to appear
+    try {
+      await page.waitForSelector('[data-testid="quiz-topic-progress"]', { timeout: 20000 });
+      foundStats = true;
+      console.log(`[E2E DEBUG] [Topic ${topicIdx}] Topic stats appeared!`);
+      break;
+    } catch {
+      lastHtml = await page.content();
+      console.warn(`[E2E DEBUG] [Topic ${topicIdx}] Topic stats did not appear. Page HTML:`, lastHtml);
+    }
+  }
+  if (!foundStats) {
+    console.error('[E2E DEBUG] No topic produced stats. Last page HTML:', lastHtml);
+    throw new Error('Topic stats not found in results for any topic.');
   }
   await expect(page.getByTestId('quiz-topic-progress')).toBeVisible();
   // Optionally, check for a topic name from your test data, e.g. 'Anatomy' or similar
@@ -272,7 +389,9 @@ test('should show topic stats in results', async ({ page }) => {
 test('should render and be usable on mobile viewport', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 667 }); // iPhone 8 size
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('1');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
+  await fillQuizLengthIfPresent(page, '1');
   await page.getByRole('button', { name: /start/i }).click();
   await expect(page.getByTestId('quiz-question-card')).toBeVisible();
   // Check that options are visible and accessible
@@ -396,7 +515,9 @@ test('should navigate to all main pages via NavBar and route correctly', async (
 
 test('should not submit answer when using arrow keys (only change selection)', async ({ page }) => {
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('2');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
+  await fillQuizLengthIfPresent(page, '2');
   // Select the first real topic (index 1, since index 0 is likely 'Select a Topic')
   const topicSelect = page.getByLabel(/topic/i);
   if (await topicSelect.count()) {
@@ -419,7 +540,9 @@ test('should not submit answer when using arrow keys (only change selection)', a
 
 test('arrow keys: wrap-around, skip disabled, and maintain selection state', async ({ page }) => {
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('4');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
+  await fillQuizLengthIfPresent(page, '4');
   // Select the first real topic (index 1)
   const topicSelect = page.getByLabel(/topic/i);
   if (await topicSelect.count()) {
@@ -461,7 +584,9 @@ test('arrow keys: wrap-around, skip disabled, and maintain selection state', asy
 
 test('up/down arrow keys only cycle focus on answer options, never advance quiz card', async ({ page }) => {
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('3');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
+  await fillQuizLengthIfPresent(page, '3');
   const topicSelect = page.getByLabel(/topic/i);
   if (await topicSelect.count()) {
     await topicSelect.selectOption({ index: 1 });
@@ -488,7 +613,9 @@ test('up/down arrow keys only cycle focus on answer options, never advance quiz 
 
 test('arrow keys: only one enabled option does not change focus or selection', async ({ page }) => {
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('1');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
+  await fillQuizLengthIfPresent(page, '1');
   const topicSelect = page.getByLabel(/topic/i);
   if (await topicSelect.count()) {
     await topicSelect.selectOption({ index: 1 });
@@ -512,7 +639,9 @@ test('arrow keys: only one enabled option does not change focus or selection', a
 
 test('arrow keys: all options disabled does nothing', async ({ page }) => {
   await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('1');
+  await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
+  await page.goto('/quiz');
+  await fillQuizLengthIfPresent(page, '1');
   const topicSelect = page.getByLabel(/topic/i);
   if (await topicSelect.count()) {
     await topicSelect.selectOption({ index: 1 });

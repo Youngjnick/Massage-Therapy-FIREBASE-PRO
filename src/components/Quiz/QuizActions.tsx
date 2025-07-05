@@ -40,18 +40,37 @@ const QuizActions: React.FC<QuizActionsProps> = ({
     >
       Next
     </button>
-    {/* Always render Finish button */}
-    <button
-      onClick={() => {
-        console.log('[QuizActions] Finish clicked', { answered, current, total });
-        onFinish();
-      }}
-      aria-label={current < total - 1 ? 'Finish quiz early' : 'Finish quiz'}
-      role="button"
-      aria-disabled={false}
-    >
-      {current < total - 1 ? 'Finish' : 'Finish Quiz'}
-    </button>
+    {/* Render Finish (cancel) button for mid-quiz exit, and Finish Quiz button on last question */}
+    {current < total - 1 && (
+      <button
+        onClick={() => {
+          console.log('[QuizActions] Finish (cancel) clicked', { answered, current, total });
+          onFinish();
+        }}
+        aria-label="Finish quiz early"
+        role="button"
+        aria-disabled={false}
+        data-testid="quiz-cancel-btn"
+        style={{ marginLeft: 8 }}
+      >
+        Finish
+      </button>
+    )}
+    {/* Only show Finish Quiz button on last question AND after it is answered */}
+    {current === total - 1 && answered && (
+      <button
+        onClick={() => {
+          console.log('[QuizActions] Finish clicked', { answered, current, total });
+          onFinish();
+        }}
+        aria-label="Finish quiz"
+        role="button"
+        data-testid="quiz-finish-btn"
+        style={{ marginLeft: 8 }}
+      >
+        Finish Quiz
+      </button>
+    )}
   </div>
 );
 

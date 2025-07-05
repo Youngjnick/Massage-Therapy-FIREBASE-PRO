@@ -9,7 +9,7 @@ interface QuizResultsScreenProps {
   onStartNewQuiz: () => void;
   topicStats: { [topic: string]: { correct: number; total: number } };
   q: any;
-  userAnswers: number[];
+  userAnswers: (number | undefined)[];
   shuffledOptions: { [key: number]: string[] };
   activeQuestions: any[];
   onStartMissedUnansweredQuiz?: (topic: string) => void;
@@ -25,6 +25,18 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
   activeQuestions,
   onStartMissedUnansweredQuiz,
 }) => {
+  // DEBUG: Log all props on mount
+  React.useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log('[QUIZ RESULTS DEBUG] Props:', {
+      isAllIncorrect,
+      topicStats,
+      q,
+      userAnswers,
+      shuffledOptions,
+      activeQuestions,
+    });
+  }, []);
   // Defensive: If topicStats is missing or empty, do not render stats UI
   const safeTopicStats = topicStats && Object.keys(topicStats).length > 0 ? topicStats : {};
   return (
@@ -50,7 +62,11 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
         maxStreak={(() => {
           let max = 0, curr = 0;
           for (let i = 0; i < userAnswers.length; i++) {
-            if (userAnswers[i] !== undefined && (shuffledOptions[i] || (activeQuestions[i] && activeQuestions[i].options) || [])[userAnswers[i]] === (activeQuestions[i] && activeQuestions[i].correctAnswer)) {
+            if (
+              userAnswers[i] !== undefined &&
+              typeof userAnswers[i] === 'number' &&
+              (shuffledOptions[i] || (activeQuestions[i] && activeQuestions[i].options) || [])[userAnswers[i] as number] === (activeQuestions[i] && activeQuestions[i].correctAnswer)
+            ) {
               curr++;
               if (curr > max) max = curr;
             } else {

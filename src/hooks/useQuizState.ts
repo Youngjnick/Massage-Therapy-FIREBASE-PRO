@@ -5,7 +5,7 @@ export function useQuizState() {
   const [started, setStarted] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [current, setCurrent] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<number[]>([]);
+  const [userAnswers, setUserAnswers] = useState<(number | undefined)[]>([]);
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
   const [shuffledOptions, setShuffledOptions] = useState<{ [key: number]: string[] }>({});
   const [answered, setAnswered] = useState(false);

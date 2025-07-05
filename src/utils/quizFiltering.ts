@@ -1,4 +1,4 @@
-export function getFilteredSortedQuestions(questions: any[], selectedTopic: string, filter: string, filterValue: string, userAnswers: number[], shuffledOptions: { [key: number]: string[] }) {
+export function getFilteredSortedQuestions(questions: any[], selectedTopic: string, filter: string, filterValue: string, userAnswers: (number | undefined)[], shuffledOptions: { [key: number]: string[] }) {
   let qs = [...questions];
   if (selectedTopic) {
     qs = qs.filter((q: any) => Array.isArray(q.topics) && q.topics.includes(selectedTopic));

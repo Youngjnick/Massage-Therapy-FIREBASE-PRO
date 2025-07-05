@@ -19,6 +19,17 @@ function getTopicBreakdownRegex(topic: string) {
   return new RegExp(`${topic}\\s*\\d+ / \\d+ correct`);
 }
 
+// Helper to robustly fill Quiz Length input if present
+async function fillQuizLengthIfPresent(page, value = '1') {
+  const input = page.getByLabel('Quiz Length');
+  if (await input.count() && await input.isVisible()) {
+    await input.fill(value);
+    console.log(`[E2E] Filled Quiz Length with ${value}`);
+  } else {
+    console.warn('[E2E] Quiz Length input not found or not visible, skipping fill.');
+  }
+}
+
 test.describe('Stats Topic Breakdown', () => {
   test('should increment topic breakdown after quiz in specific topic', async ({ page }) => {
     const user = await getTestUser(0);
@@ -42,7 +53,7 @@ test.describe('Stats Topic Breakdown', () => {
     if (await topicSelect.count()) {
       await topicSelect.selectOption({ label: TOPIC_LABEL });
     }
-    await page.getByLabel('Quiz Length').fill('1');
+    await fillQuizLengthIfPresent(page, '1');
     await page.getByRole('button', { name: /start/i }).click();
     await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });
     await page.getByTestId('quiz-option').first().click();

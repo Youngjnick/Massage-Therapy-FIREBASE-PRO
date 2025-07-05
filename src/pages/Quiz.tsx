@@ -13,6 +13,7 @@ import { useQuizState } from '../hooks/useQuizState';
 import { getFilteredSortedQuestions } from '../utils/quizFiltering';
 import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import Spinner from '../components/common/Spinner';
+import { useTopicStats } from '../hooks/useTopicStats';
 import { useQuizData } from '../hooks/useQuizData';
 import { useLocation } from 'react-router-dom';
 
@@ -163,6 +164,7 @@ const Quiz: React.FC = () => {
         [qs[i], qs[j]] = [qs[j], qs[i]];
       }
     }
+    // Always slice to maxQuizLength (from desiredQuizLength)
     qs = qs.slice(0, maxQuizLength);
     setShuffledQuestions(qs);
     const so: { [key: number]: string[] } = {};
@@ -223,15 +225,40 @@ const Quiz: React.FC = () => {
   }, [location.state, loading, questions]);
 
   // Use quizQuestions.length as the max quiz length
-  const maxQuizLength = quizQuestions.length;
+  // Use desiredQuizLength (user input) as the max quiz length, fallback to quizQuestions.length
+  const maxQuizLength = typeof desiredQuizLength === 'number' && desiredQuizLength > 0 ? desiredQuizLength : quizQuestions.length;
+
+  // --- DEBUG: Log state on every render ---
+  useEffect(() => {
+    console.log('[QUIZ DEBUG] Render: started', started, 'showResults', showResults, 'current', current, 'userAnswers', userAnswers, 'activeQuestions', activeQuestions);
+  });
+
+  // --- DEBUG: Log when showResults changes ---
+  useEffect(() => {
+    console.log('[QUIZ DEBUG] showResults changed:', showResults);
+  }, [showResults]);
 
   // Render quiz UI components based on the current state
   if (loading) return <Spinner />;
   if (showResults) {
+    // Calculate topicStats using the real hook
+    const topicStats = useTopicStats(activeQuestions, userAnswers, shuffledOptions);
+    // Expose quiz result object for E2E/debug
+    if (typeof window !== 'undefined') {
+      window.__LAST_QUIZ_RESULT__ = {
+        userAnswers,
+        activeQuestions,
+        shuffledOptions,
+        topicStats,
+      };
+      console.log('[QUIZ DEBUG] Results screen rendered. __LAST_QUIZ_RESULT__:', window.__LAST_QUIZ_RESULT__);
+    }
+    console.log('[QUIZ DEBUG] Rendering QuizResultsScreen', { topicStats, userAnswers, activeQuestions, shuffledOptions });
     return (
       <QuizResultsScreen
-        topicStats={{}}
+        topicStats={topicStats}
         onStartNewQuiz={() => {
+          console.log('[QUIZ DEBUG] onStartNewQuiz called, resetting state');
           setShowResults(false);
           setStarted(false);
           setCurrent(0);
@@ -247,6 +274,39 @@ const Quiz: React.FC = () => {
     );
   }
   if (started && q) {
+    // Robust onFinish handler for both Finish and Finish Quiz buttons
+    const handleFinish = (source = 'unknown') => {
+      let updatedAnswers = [...userAnswers];
+      // Only allow partial quiz completion if source is 'cancel' (mid-quiz Finish button)
+      const isCancel = source === 'cancel';
+      if (!isCancel) {
+        // For Finish Quiz (final question), require answer
+        if (updatedAnswers[current] === undefined) {
+          console.warn('[QUIZ DEBUG] Tried to finish quiz but current question is unanswered. Aborting.');
+          return;
+        }
+      }
+      // Mark all unanswered as undefined (should not be needed, but keep for robustness)
+      for (let i = 0; i < totalQuestions; i++) {
+        if (updatedAnswers[i] === undefined) {
+          updatedAnswers[i] = undefined;
+        }
+      }
+      setUserAnswers(updatedAnswers);
+      setTimeout(() => {
+        console.log(`[QUIZ DEBUG] onFinish called from ${source}, setting showResults to true. userAnswers:`, updatedAnswers);
+        setShowResults(true);
+        setTimeout(() => {
+          console.log('[QUIZ DEBUG] onFinish post setShowResults. State after:', {
+            started,
+            showResults,
+            current,
+            userAnswers: updatedAnswers,
+            activeQuestions
+          });
+        }, 100);
+      }, 0);
+    };
     return (
       <div>
         <QuizProgressBar progress={progress} />
@@ -268,7 +328,7 @@ const Quiz: React.FC = () => {
           showInstantFeedback={toggleState.instantFeedback}
           onPrev={prev}
           onNext={next}
-          onFinish={() => setShowResults(true)}
+          onFinish={() => handleFinish('QuizQuestionCard/QuizActions')}
           total={totalQuestions}
           answered={userAnswers[current] !== undefined}
         />

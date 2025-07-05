@@ -14,7 +14,7 @@ interface QuizSessionSummaryProps {
   onClose: () => void;
   onRetry: () => void;
   questions: any[];
-  userAnswers: number[];
+  userAnswers: (number | undefined)[];
   shuffledOptions: { [key: number]: string[] };
 }
 

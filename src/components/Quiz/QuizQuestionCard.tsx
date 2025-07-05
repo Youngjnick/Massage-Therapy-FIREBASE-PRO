@@ -6,7 +6,7 @@ import QuizActions from './QuizActions';
 interface QuizQuestionCardProps {
   q: any;
   current: number;
-  userAnswers: number[];
+  userAnswers: (number | undefined)[];
   answered: boolean;
   handleAnswer: (_idx: number) => void;
   answerFeedback: string | null;

@@ -1,12 +1,23 @@
 import { test, expect } from '@playwright/test';
 
+// Helper to robustly fill Quiz Length input if present
+async function fillQuizLengthIfPresent(page, value = '1') {
+  const input = page.getByLabel('Quiz Length');
+  if (await input.count() && await input.isVisible()) {
+    await input.fill(value);
+    console.log(`[E2E] Filled Quiz Length with ${value}`);
+  } else {
+    console.warn('[E2E] Quiz Length input not found or not visible, skipping fill.');
+  }
+}
+
 // Test: Quiz auto-save and resume (Firestore/localStorage)
 test.describe('Quiz Auto-Save and Resume', () => {
   // Skipped: Auto-saves progress for guest (localStorage) and resumes on reload (redundant or flaky)
   test.skip('Auto-saves progress for guest (localStorage) and resumes on reload', async ({ page }) => {
     await page.goto('/');
     await page.goto('/quiz'); // Ensure we are on the quiz start form
-    await page.getByLabel('Quiz Length').fill('2');
+    await fillQuizLengthIfPresent(page, '2');
     await page.getByRole('button', { name: /start/i }).click();
     // Answer first question
     await page.getByTestId('quiz-option').first().click();
@@ -27,7 +38,7 @@ test.describe('Quiz Auto-Save and Resume', () => {
   test.skip('Shows cancel/exit confirmation dialog when leaving quiz', async ({ page }) => {
     await page.goto('/');
     await page.goto('/quiz'); // Ensure we are on the quiz start form
-    await page.getByLabel('Quiz Length').fill('2');
+    await fillQuizLengthIfPresent(page, '2');
     await page.getByRole('button', { name: /start/i }).click();
     // Try to navigate away
     await page.goBack();

@@ -17,6 +17,7 @@ import { test, expect, Page } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { uiSignIn } from './helpers/uiSignIn';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const testUsersPath = path.resolve(__dirname, 'test-users.json');
 const testUsers = JSON.parse(fs.readFileSync(testUsersPath, 'utf-8'));
@@ -26,18 +27,9 @@ const EMAIL_SELECTOR = '[data-testid="test-signin-email"]';
 const PASSWORD_SELECTOR = '[data-testid="test-signin-password"]';
 const SUBMIT_SELECTOR = '[data-testid="test-signin-submit"]';
 
-async function uiSignIn(page: Page) {
-  await page.goto('/profile');
-  await page.fill(EMAIL_SELECTOR, TEST_EMAIL);
-  await page.fill(PASSWORD_SELECTOR, TEST_PASSWORD);
-  await page.click(SUBMIT_SELECTOR);
-  // Wait for sign-out button to appear as proof of successful login
-  await page.waitForSelector('button[aria-label="Sign out"], button:has-text("Sign Out")', { timeout: 10000 });
-}
-
 test.describe('Accessibility: ARIA roles and labels', () => {
   test('Main navigation and buttons have correct ARIA roles and labels', async ({ page }) => {
-    await uiSignIn(page);
+    await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
     await page.goto('/quiz?e2e=1');
 
     // Wait for the quiz start form to be present before looking for the Start button
@@ -116,7 +108,7 @@ test.describe('Accessibility: ARIA roles and labels', () => {
   });
 
   test('Keyboard navigation: Tab through all interactive elements and ensure correct focus order', async ({ page }) => {
-    await uiSignIn(page);
+    await uiSignIn(page, { email: TEST_EMAIL, password: TEST_PASSWORD });
     await page.goto('/');
 
     // Wait for main content to appear (adjust selector as needed)
