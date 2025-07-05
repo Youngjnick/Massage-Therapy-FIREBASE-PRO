@@ -157,18 +157,24 @@ const Quiz: React.FC = () => {
       .finally(() => {
         setLoading(false);
       });
-  // Set selectedTopic to first available topic if not set, after sortedTopics is updated
-  // (MUST be inside the Quiz function component)
-  useEffect(() => {
-    if (!selectedTopic && sortedTopics.length > 0) {
-      setSelectedTopic(sortedTopics[0]);
-    }
-  }, [selectedTopic, sortedTopics]);
     getBookmarks('demoUser');
     const auth = getAuth();
     const user = auth.currentUser;
     if (!user) return;
   }, []);
+
+// Ensure selectedTopic is always valid when sortedTopics changes, but only set once per topics set
+const hasSetDefaultTopic = React.useRef<string | null>(null);
+useEffect(() => {
+  if (
+    sortedTopics.length > 0 &&
+    (!selectedTopic || !sortedTopics.includes(selectedTopic)) &&
+    hasSetDefaultTopic.current !== sortedTopics.join(',')
+  ) {
+    setSelectedTopic(sortedTopics[0]);
+    hasSetDefaultTopic.current = sortedTopics.join(',');
+  }
+}, [sortedTopics]);
 
   // Accessibility: Keyboard navigation and focus
   useEffect(() => {
