@@ -1,20 +1,20 @@
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-h6zkyt7c@gmail.com created successfully. UID: o2X2FGnIOPTYBfStJDNsdrMx5g6v
-Firestore user doc created for testuserc-h6zkyt7c@gmail.com (uid: o2X2FGnIOPTYBfStJDNsdrMx5g6v)
-User testuserd-jz7orv9p@gmail.com created successfully. UID: 44AiNYfkHlfS4IeLzGwunwmg9D4R
-Firestore user doc created for testuserd-jz7orv9p@gmail.com (uid: 44AiNYfkHlfS4IeLzGwunwmg9D4R)
+User testuserc-cjqjzc5f@gmail.com created successfully. UID: P5I1VTgRnDcySFZHJgMhxy4uGx0i
+Firestore user doc created for testuserc-cjqjzc5f@gmail.com (uid: P5I1VTgRnDcySFZHJgMhxy4uGx0i)
+User testuserd-r1clg4k9@gmail.com created successfully. UID: Lg9Bl47Kqf9yUyAZ1gGJpWuYQ3ss
+Firestore user doc created for testuserd-r1clg4k9@gmail.com (uid: Lg9Bl47Kqf9yUyAZ1gGJpWuYQ3ss)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-h6zkyt7c@gmail.com",
+    "email": "testuserc-cjqjzc5f@gmail.com",
     "password": "testuserC",
-    "uid": "o2X2FGnIOPTYBfStJDNsdrMx5g6v"
+    "uid": "P5I1VTgRnDcySFZHJgMhxy4uGx0i"
   },
   {
-    "email": "testuserd-jz7orv9p@gmail.com",
+    "email": "testuserd-r1clg4k9@gmail.com",
     "password": "testuserD",
-    "uid": "44AiNYfkHlfS4IeLzGwunwmg9D4R"
+    "uid": "Lg9Bl47Kqf9yUyAZ1gGJpWuYQ3ss"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
@@ -28,41 +28,44 @@ Running 204 tests using 1 worker
 
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-cjqjzc5f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.8s)
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.9s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-cjqjzc5f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
   ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.1s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-cjqjzc5f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.1s)
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.2s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-cjqjzc5f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
   ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.0s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-cjqjzc5f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.2s)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.0s)
   ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.1s)
-  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (464ms)
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (465ms)
   ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (5.6s)
+Navigating to home page...
+Filling Quiz Length...
+  ✘  9 [Desktop Chrome] › e2e/app.spec.ts:18:1 › should reset quiz and focus first option after restart (1.0m)
 Navigating to home page...
 Filling Quiz Length...

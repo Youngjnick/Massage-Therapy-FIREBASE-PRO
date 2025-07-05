@@ -1,9 +1,5 @@
-git add scripts/run_playwright_and_capture_output.sh scripts/last-failing-playwright-files.txt && git commit -m "WIP: [E2E infra] Robustly clear last-failing-playwright-files.txt if no Playwright failures detected
-
-- Improved update_last_failing_files logic: now clears last-failing-playwright-files.txt if there are no '✘' (failures) in Playwright output, regardless of 'All tests pass' message.
-- Ensures rerun infra and reporting are always in sync with actual test results.
-- Fixes issue where stale failures could persist after a fully passing run.
-- All changes committed as WIP for further review.
-
-[skip ci]" --no-verify && git push origin main4 --no-verify && git checkout main5 && git merge main4 --no-verify && git push origin main5 --no-verify && git checkout main4
-
+e2e/all-interactive-aria-accessibility.spec.ts:36
+e2e/app-accessibility-full.spec.ts:119
+e2e/app-accessibility-full.spec.ts:45
+e2e/app-accessibility-full.spec.ts:94
+e2e/app.spec.ts:18
