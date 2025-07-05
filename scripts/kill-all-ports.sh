@@ -5,7 +5,7 @@
 echo "Removing .firebase/ directory (emulator hub state)..."
 rm -rf .firebase/
 
-PORTS=(3000 4000 5000 8080 8081 8085 9000 9099 9150 4400 4500 5173)
+PORTS=(3000 4000 5000 8080 8081 8085 9000 9099 9150 4400 4500 5173 4173)
 
 # Also kill any node processes running the Firebase emulator suite (extra safety)
 echo "Killing any Firebase emulator processes (node with 'emulator' in command)..."
