@@ -31,3 +31,21 @@ fi
 echo "Checking all question JSON files for syntax errors..."
 find src/data/questions -type f -name '*.json' -exec sh -c 'echo -n "{}: "; node -e "try{JSON.parse(require(\"fs\").readFileSync(\"{}\",\"utf8\"));console.log(\"OK\") }catch(e){console.log(\"ERROR\")}"' \;
 echo "JSON syntax check complete."
+
+echo "Checking for gawk (GNU awk)..."
+if ! command -v gawk >/dev/null 2>&1; then
+  if [[ "$(uname)" == "Darwin" ]]; then
+    echo "gawk not found. Installing with Homebrew..."
+    if command -v brew >/dev/null 2>&1; then
+      brew install gawk
+    else
+      echo "Homebrew not found. Please install Homebrew and re-run this script, or install gawk manually."
+      exit 1
+    fi
+  else
+    echo "gawk not found. Please install gawk using your system package manager (e.g., sudo apt-get install gawk) and re-run this script."
+    exit 1
+  fi
+else
+  echo "gawk is already installed."
+fi

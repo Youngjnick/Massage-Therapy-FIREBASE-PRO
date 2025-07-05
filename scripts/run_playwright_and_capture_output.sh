@@ -13,8 +13,8 @@ LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
 
 # Function to extract only failing test file paths from output
 function update_last_failing_files() {
-  # Extract lines that look like Playwright test failures and get only the file path
-  awk '/^e2e\// { split($1, arr, ":"); print arr[1] }' "$OUTPUT_FILE" | sort | uniq > "$LAST_FAILING_FILE"
+  # Only keep lines that are valid Playwright test file paths (e2e/*.ts or e2e/*.cjs)
+  grep -Eo '^e2e/[a-zA-Z0-9_\-./]+\.(ts|cjs)' "$OUTPUT_FILE" | sort | uniq > "$LAST_FAILING_FILE"
 }
 
 # Ensure last-failing file is updated even on interruption
@@ -34,13 +34,13 @@ if [[ "$choice" == "f"* ]]; then
       [[ -n "$line" ]] && prioritized_files+=("$line")
     done < "$LAST_FAILING_FILE"
     if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-      npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
       update_last_failing_files
     else
-      npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
     fi
   else
-    npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
   fi
 elif [[ "$choice" == "p"* ]]; then
   if [[ -n "$PLAYWRIGHT_PRIORITIZED_TESTS" ]]; then
@@ -52,11 +52,11 @@ elif [[ "$choice" == "p"* ]]; then
     done < "$LAST_FAILING_FILE"
   fi
   if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-    npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
     update_last_failing_files
   else
     exit 1
   fi
 else
-  npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+  PW_HEADLESS=0 npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
 fi
