@@ -1,4 +1,18 @@
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Load test user from test-users.json for robust sign-in
+// __dirname is not defined in ESM; use import.meta.url workaround
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+async function getTestUser() {
+  const users = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'test-users.json'), 'utf-8'));
+  return users[0];
+}
 
 // Utility to collect all tabbable elements
 async function getTabbableElements(page: any) {
@@ -43,6 +57,9 @@ async function getTabbableElements(page: any) {
 
 test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
   test('Tab through all main pages and assert focus order/visibility', async ({ page }) => {
+    // Always sign in before accessing authenticated UI
+    const user = await getTestUser();
+    await uiSignIn(page, { email: user.email, password: user.password });
     await page.goto('/');
     // NavBar links
     const navLinks = [
@@ -52,8 +69,8 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
       { label: 'Profile', path: '/profile', aria: 'Go to Profile page' },
     ];
     for (const nav of navLinks) {
-      // Focus the nav link for this page
-      const navLink = await page.getByRole('link', { name: nav.label });
+      // Use unique aria-label for navigation links to avoid ambiguity
+      const navLink = await page.getByRole('link', { name: nav.aria, exact: true });
       await navLink.focus();
       const viewport = page.viewportSize && page.viewportSize();
       if (!viewport || viewport.width > 500) {
@@ -65,6 +82,21 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
       }
       await page.waitForURL(`**${nav.path}`);
       await page.waitForTimeout(150);
+      // Wait for loading spinner to disappear if present
+      try {
+        await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 10000 });
+      } catch {}
+      // Wait for Quiz Length input to be visible if on /quiz
+      if (nav.path === '/quiz') {
+        try {
+          await page.waitForURL('**/quiz', { timeout: 10000 });
+          await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+        } catch (e) {
+          const html = await page.content();
+          console.error('Failed to load /quiz or quiz-start-form not found. Page HTML:', html);
+          throw e;
+        }
+      }
       // Get all tabbable elements and log them using test.step
       const tabbable: Array<{ tag: string, role: string|null, ariaLabel: string|null, id: string|null, text: string|null, tabIndex: number, outerHTML: string }> = await getTabbableElements(page);
       await test.step(`Tabbable elements on ${nav.path}:`, async () => {
@@ -74,14 +106,14 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
         }
       });
       // Assert the nav link for this page is present in tabbable list
-      const found = tabbable.some((el) => el.ariaLabel === nav.aria);
+      const found = tabbable.some((el: any) => el.ariaLabel === nav.aria);
       expect(found).toBeTruthy();
       // Tab through all tabbable elements and check focus
       for (let i = 0; i < tabbable.length; i++) {
         await page.keyboard.press('Tab');
         const active = await page.evaluate(() => document.activeElement?.outerHTML);
         // Log for debugging
-        await test.step(`DEBUG: After Tab #${i} on ${nav.path}, expected: ${tabbable[i].outerHTML.substring(0, 32)}` , async () => {});
+        await test.step(`DEBUG: After Tab #${i} on ${nav.path} , expected: ${tabbable[i].outerHTML.substring(0, 32)}` , async () => {});
         await test.step(`DEBUG: Actual active: ${active?.substring(0, 64)}`, async () => {});
         // Only check that the active element is focusable, not strict order
         expect(active).toBeTruthy();
@@ -117,6 +149,9 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
 test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () => {
   test.use({ viewport: { width: 375, height: 812 } }); // iPhone X/11/12/13/14 size
   test('Tab through all main pages and assert focus order/visibility (Mobile)', async ({ page }) => {
+    // Always sign in before accessing authenticated UI
+    const user = await getTestUser();
+    await uiSignIn(page, { email: user.email, password: user.password });
     await page.goto('/');
     const navLinks = [
       { label: 'Quiz', path: '/quiz', aria: 'Go to Quiz page' },
@@ -125,7 +160,7 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () =>
       { label: 'Profile', path: '/profile', aria: 'Go to Profile page' },
     ];
     for (const nav of navLinks) {
-      const navLink = await page.getByRole('link', { name: nav.label });
+      const navLink = await page.getByRole('link', { name: nav.aria, exact: true });
       await navLink.focus();
       const viewport = page.viewportSize && page.viewportSize();
       if (!viewport || viewport.width > 500) {
@@ -137,6 +172,21 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () =>
       }
       await page.waitForURL(`**${nav.path}`);
       await page.waitForTimeout(150);
+      // Wait for loading spinner to disappear if present
+      try {
+        await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 10000 });
+      } catch {}
+      // Wait for Quiz Length input to be visible if on /quiz
+      if (nav.path === '/quiz') {
+        try {
+          await page.waitForURL('**/quiz', { timeout: 10000 });
+          await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+        } catch (e) {
+          const html = await page.content();
+          console.error('Failed to load /quiz or quiz-start-form not found. Page HTML:', html);
+          throw e;
+        }
+      }
       const tabbable = await getTabbableElements(page);
       await test.step(`Tabbable elements on ${nav.path} (Mobile):`, async () => {
         for (let i = 0; i < tabbable.length; i++) {
@@ -144,16 +194,26 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () =>
           await test.step(`#${i}: tag=${el.tag}, role=${el.role}, ariaLabel=${el.ariaLabel}, text=${el.text}`, async () => {});
         }
       });
-      // Fix: add type for el
       const found = tabbable.some((el: any) => el.ariaLabel === nav.aria);
       expect(found).toBeTruthy();
-      for (let i = 0; i < tabbable.length; i++) {
+      let lastFocused = await page.evaluate(() => document.activeElement?.outerHTML);
+      const focusOrder = [lastFocused];
+      let maxTabs = Math.min(tabbable.length, 50); // guard against infinite loop
+      for (let i = 0; i < maxTabs; i++) {
         await page.keyboard.press('Tab');
-        const active = await page.evaluate(() => document.activeElement?.outerHTML);
-        await test.step(`DEBUG: After Tab #${i} on ${nav.path} (Mobile), expected: ${tabbable[i].outerHTML.substring(0, 32)}` , async () => {});
-        await test.step(`DEBUG: Actual active: ${active?.substring(0, 64)}`, async () => {});
-        expect(active).toBeTruthy();
+        const currentFocused = await page.evaluate(() => document.activeElement?.outerHTML);
+        focusOrder.push(currentFocused);
+        await test.step(`DEBUG: After Tab #${i} on ${nav.path} (Mobile), expected: ${tabbable[i]?.outerHTML?.substring(0, 32)}` , async () => {});
+        await test.step(`DEBUG: Actual active: ${currentFocused?.substring(0, 64)}`, async () => {});
+        if (currentFocused === lastFocused) {
+          console.error(`Focus did not move on Tab at index ${i}`);
+          console.error('Focus order so far:', focusOrder);
+          throw new Error(`Focus did not move on Tab at index ${i}`);
+        }
+        lastFocused = currentFocused;
       }
+      // Optionally, log the full focus order for review
+      console.log('Tab focus order:', focusOrder);
       await page.goto('/');
     }
   });

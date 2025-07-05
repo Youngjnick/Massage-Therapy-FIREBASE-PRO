@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Keyboard-Only Navigation and Quiz Restart', () => {
   test('Complete a quiz using direct element selection/clicks', async ({ page }) => {
     await page.goto('/');
+    await page.goto('/quiz'); // Ensure we are on the quiz start form
     await page.getByLabel('Quiz Length').fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     // First question: select first option and go next
@@ -21,6 +22,7 @@ test.describe('Keyboard-Only Navigation and Quiz Restart', () => {
 
   test('Quiz restart resets all state and focus', async ({ page }) => {
     await page.goto('/');
+    await page.goto('/quiz'); // Ensure we are on the quiz start form
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     await page.getByTestId('quiz-option').first().click();

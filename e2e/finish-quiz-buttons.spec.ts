@@ -2,10 +2,17 @@
 /* global console */
 // @ts-expect-error: Playwright provides types for test context
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs';
+import path from 'path';
 
 test.describe('Finish and Finish Quiz Buttons', () => {
   test('completes quiz and shows results with Finish button', async ({ page }) => {
+    // Always sign in before accessing authenticated UI
+    const user = await getTestUser();
+    await uiSignIn(page, { email: user.email, password: user.password });
     await page.goto('/');
+    await page.goto('/quiz'); // Ensure we are on the quiz start form
     console.log('[E2E PROGRESS] Navigated to /');
     await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
     let quizLengthInputFound = false;
@@ -50,7 +57,11 @@ test.describe('Finish and Finish Quiz Buttons', () => {
   });
 
   test('shows Finish Quiz button and works as expected', async ({ page }) => {
+    // Always sign in before accessing authenticated UI
+    const user = await getTestUser();
+    await uiSignIn(page, { email: user.email, password: user.password });
     await page.goto('/');
+    await page.goto('/quiz'); // Ensure we are on the quiz start form
     console.log('[E2E PROGRESS] Navigated to /');
     // Wait for the DOM to be interactive
     await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
@@ -120,4 +131,10 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     console.log('[E2E DEBUG] Quiz results are visible');
   }, 60000);
-  });
+});
+
+// Load test user from test-users.json for robust sign-in
+async function getTestUser() {
+  const users = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'test-users.json'), 'utf-8'));
+  return users[0];
+}
