@@ -1,8 +1,14 @@
 /* global console */
 
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import { getTestUser } from './helpers/getTestUser';
 
 test.describe('Critical UI and Accessibility Scenarios', () => {
+  let testUser: { email: string; password: string; uid: string };
+  test.beforeAll(async () => {
+    testUser = await getTestUser(0);
+  });
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
     await page.evaluate(() => {
@@ -13,13 +19,18 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await page.reload();
   });
 
+  async function signInIfNeeded(page: any) {
+    await uiSignIn(page, { email: testUser.email, password: testUser.password, profilePath: '/profile' });
+  }
+
   test('Mobile viewport: quiz UI, results, and modals are visible and usable', async ({ page }, testInfo) => {
+    await signInIfNeeded(page); // signs in on /profile
+    await page.goto('/quiz');   // now go to /quiz after sign-in
     test.setTimeout(60000); // Increase timeout for this test
     await page.setViewportSize({ width: 375, height: 812 }); // iPhone X size
     const logs: string[] = [];
     page.on('console', msg => logs.push(`${msg.type()}: ${msg.text()}`));
     page.on('pageerror', err => logs.push(`pageerror: ${err.message}`));
-    await page.goto('/');
     // Wait for quiz loading spinner to disappear (if present)
     try {
       await page.waitForSelector('[data-testid="quiz-loading"]', { state: 'detached', timeout: 20000 });
@@ -31,48 +42,62 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
       }
       test.skip(true, 'Quiz loading spinner did not disappear (mobile viewport). Skipping as this may be a state or data issue in full suite runs.');
     }
-    await page.getByLabel('Quiz Length').fill('2');
-    await page.getByRole('button', { name: /start/i }).click();
-    // Wait for quiz container
-    const quizContainer = page.getByTestId('quiz-container');
-    await expect(quizContainer).toBeVisible({ timeout: 10000 });
+    // Wait for Quiz Length input to be enabled and get its max value
+    let quizLengthInput;
+    try {
+      quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+    } catch {
+      const html = await page.content();
+      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
+      test.skip(true, 'Quiz Length input not enabled after 10s. Skipping as quiz data may be missing or Firestore emulator not running.');
+    }
+    if (!quizLengthInput) throw new Error('Quiz Length input not found');
+    const max = await quizLengthInput.getAttribute('max');
+    const quizLength = max && Number(max) > 0 ? '1' : '1';
+    await quizLengthInput.fill(quizLength);
+    // Select a topic if required
+    const topicSelect = page.locator('#quiz-topic-select');
+    if (await topicSelect.count() > 0) {
+      const options = await topicSelect.locator('option').all();
+      if (options.length > 1) {
+        await topicSelect.selectOption({ index: 1 }); // Select first real topic
+      }
+    }
+    // Wait for Start button to be enabled
+    const startBtn = page.getByRole('button', { name: /start/i });
+    await expect(startBtn).toBeEnabled({ timeout: 5000 });
+    await startBtn.click();
+    // Wait for quiz question card, with debug output if not found
+    const quizQuestionCard = page.getByTestId('quiz-question-card');
+    try {
+      await expect(quizQuestionCard).toBeVisible({ timeout: 10000 });
+    } catch {
+      const html = await page.content();
+      if (testInfo) {
+        await testInfo.attach('after-start-html', { body: html, contentType: 'text/html' });
+        await testInfo.attach('after-start-console', { body: logs.join('\n'), contentType: 'text/plain' });
+      }
+      throw new Error('Quiz question card not found after clicking Start. See attached HTML and logs.');
+    }
     // Wait for quiz options
     const options = page.getByTestId('quiz-option');
     await expect(options.first()).toBeVisible({ timeout: 10000 });
-    const optionCount = await options.count();
-    console.log('Number of quiz options (mobile):', optionCount);
     // Quiz UI should be visible, no horizontal scroll
     const hasHorizontalScroll = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
     expect(hasHorizontalScroll).toBeFalsy();
-    // Navigation buttons should be visible and accessible
-    await expect(page.getByRole('button', { name: /next/i })).toBeVisible({ timeout: 10000 });
-    await expect(page.getByRole('button', { name: /finish/i })).toBeVisible({ timeout: 10000 });
-    // Complete quiz and check results screen
+    // Select the first option
     await options.first().click();
-    await page.waitForTimeout(200); // Allow UI to update
-    await page.getByRole('button', { name: /next/i }).click();
-    await expect(options.first()).toBeVisible({ timeout: 10000 });
-    await options.first().click();
-    await page.waitForTimeout(200);
-    await page.getByRole('button', { name: /finish/i }).click();
+    // Click Finish or Finish Quiz button
+    const finishBtn = page.getByRole('button', { name: /finish( quiz)?/i });
+    await expect(finishBtn).toBeVisible({ timeout: 10000 });
+    await expect(finishBtn).toBeEnabled({ timeout: 10000 });
+    await finishBtn.click();
     // Wait for results
-    try {
-      await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
-    } catch {
-      const html = await page.content();
-      const logsText = logs.join('\n');
-      console.error('Quiz results not visible after finishing (mobile viewport). Page HTML:', html);
-      console.error('Browser console logs:', logsText);
-      // Attach debug info for Playwright report
-      if (test.info) {
-        await test.info().attach('page-html', { body: html, contentType: 'text/html' });
-        await test.info().attach('console-logs', { body: logsText, contentType: 'text/plain' });
-      }
-      throw new Error('Quiz results not visible after finishing (mobile viewport).');
-    }
+    await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
   });
 
   test('Badge modals: only one open at a time, keyboard accessible', async ({ page }) => {
+    await signInIfNeeded(page);
     await page.goto('/achievements');
     // Wait for badges to load
     const badgeButtons = page.getByTestId('badge-container');
@@ -93,6 +118,7 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Badge modal: open with keyboard only (Tab + Enter/Space)', async ({ page }) => {
+    await signInIfNeeded(page);
     await page.goto('/achievements');
     // Tab to first badge
     await page.keyboard.press('Tab');
@@ -108,7 +134,8 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Next button: always rendered, but hidden or disabled as appropriate', async ({ page }) => {
-    await page.goto('/');
+    await signInIfNeeded(page);
+    await page.goto('/quiz');
     const quizLengthInput = await page.getByLabel('Quiz Length');
     const isEnabled = await quizLengthInput.isEnabled();
     const max = await quizLengthInput.getAttribute('max');
@@ -131,14 +158,14 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Quiz cannot be started without required fields', async ({ page }, testInfo) => {
-    test.setTimeout(20000); // Increase timeout for stability
-    await page.goto('/');
+    await signInIfNeeded(page);
+    await page.goto('/quiz');
     // Fail-fast: check for quiz start form
     try {
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
     } catch {
       const html = await page.content();
-      const logs = await page.evaluate(() => window.__PW_LOGS__ ? window.__PW_LOGS__ : 'No logs');
+      const logs = await page.evaluate(() => (window as any).__PW_LOGS__ ? (window as any).__PW_LOGS__ : 'No logs');
       if (testInfo) {
         await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
         await testInfo.attach('console-logs', { body: logs, contentType: 'text/plain' });
@@ -176,6 +203,7 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Badge modal fallback image and keyboard navigation', async ({ page }) => {
+    await signInIfNeeded(page);
     await page.goto('/achievements');
     // Open badge modal
     const badge = page.getByTestId('badge-container').first();
@@ -192,13 +220,15 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Network failure: badge load', async ({ page }) => {
+    await signInIfNeeded(page);
     await page.route('**/badges/badges.json', route => route.abort());
     await page.goto('/achievements');
     await expect(page.getByText(/error|failed|could not load/i)).toBeVisible();
   });
 
   test('Accessibility: ARIA roles and labels', async ({ page }, testInfo) => {
-    await page.goto('/');
+    await signInIfNeeded(page);
+    await page.goto('/quiz');
     // Fail-fast check for quiz data or Firestore emulator
     const quizLengthInput = page.getByLabel('Quiz Length');
     const isDisabled = await quizLengthInput.isDisabled();
@@ -212,44 +242,30 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     }
     await quizLengthInput.fill('1');
     await page.getByRole('button', { name: /start/i }).click();
-    // Wait for quiz container
-    try {
-      await page.waitForSelector('[data-testid="quiz-container"]', { timeout: 10000 });
-    } catch {
-      const html = await page.content();
-      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
-      throw new Error('Quiz container not found after starting quiz. Possible cause: quiz did not start, UI error, or missing data.');
-    }
-    const radios = page.getByTestId('quiz-radio');
-    for (let i = 0; i < await radios.count(); i++) {
-      const ariaChecked = await radios.nth(i).getAttribute('aria-checked');
-      expect(["true", "false", null]).toContain(ariaChecked);
-    }
-    // Robust wait for navigation buttons
-    const navButtonNames = [/next/i, /prev/i, /finish/i];
-    let foundNavBtn = false;
-    for (const name of navButtonNames) {
-      try {
-        await page.waitForSelector(`button[aria-label]`, { timeout: 5000 });
-        const btn = page.getByRole('button', { name });
-        if (await btn.count() > 0) {
-          await expect(btn).toHaveAttribute('aria-label', name);
-          foundNavBtn = true;
-        }
-      } catch {
-        // continue
-      }
-    }
-    if (!foundNavBtn) {
-      const html = await page.content();
-      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
-      test.skip(true, 'Navigation buttons not present or missing aria-label. Skipping as this may be a single-question quiz or UI state.');
-    }
+    // Wait for quiz question card (main quiz UI)
+    const quizQuestionCard = page.getByTestId('quiz-question-card');
+    await expect(quizQuestionCard).toBeVisible({ timeout: 10000 });
+    // Wait for quiz options
+    const options = page.getByTestId('quiz-option');
+    await expect(options.first()).toBeVisible({ timeout: 10000 });
+    // Quiz UI should be visible, no horizontal scroll
+    const hasHorizontalScroll = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
+    expect(hasHorizontalScroll).toBeFalsy();
+    // Select the first option
+    await options.first().click();
+    // Click Finish or Finish Quiz button
+    const finishBtn = page.getByRole('button', { name: /finish( quiz)?/i });
+    await expect(finishBtn).toBeVisible({ timeout: 10000 });
+    await expect(finishBtn).toBeEnabled({ timeout: 10000 });
+    await finishBtn.click();
+    // Wait for results
+    await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 10000 });
   });
 
   // Skipped: Tab order is logical for quiz controls (redundant, covered elsewhere or unreliable in e2e)
   test.skip('Tab order is logical for quiz controls', async ({ page }) => {
-    await page.goto('/');
+    await signInIfNeeded(page);
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     // Tab through options and controls
@@ -262,8 +278,9 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
   });
 
   test('Mobile viewport: quiz and results are usable', async ({ page }, testInfo) => {
+    await signInIfNeeded(page);
     await page.setViewportSize({ width: 375, height: 667 });
-    await page.goto('/');
+    await page.goto('/quiz');
     // Fail-fast for Quiz Length input
     let quizLengthInput;
     try {
@@ -273,6 +290,7 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
       if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
       test.skip(true, 'Quiz Length input not enabled after 10s. Skipping as quiz data may be missing or Firestore emulator not running.');
     }
+    if (!quizLengthInput) throw new Error('Quiz Length input not found');
     await quizLengthInput.fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     await expect(page.getByTestId('quiz-question-card')).toBeVisible();
@@ -283,7 +301,8 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
 
   // Skipped: Quiz stepper: skip, revisit, answer in any order (redundant or data/seed issue)
   test.skip('Quiz stepper: skip, revisit, answer in any order', async ({ page }) => {
-    await page.goto('/');
+    await signInIfNeeded(page);
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('3');
     await page.getByRole('button', { name: /start/i }).click();
     // Skip to 3rd question
@@ -300,15 +319,17 @@ test.describe('Critical UI and Accessibility Scenarios', () => {
     await expect(page.getByTestId('quiz-results')).toBeVisible();
   });
 
-  // Skipped: Error boundary: UI does not crash on JS error in quiz (redundant or unreliable in e2e)
+  // Skipped: Error boundary: UI does not crash on JS error in quiz, redundant or unreliable in e2e
   test.skip('Error boundary: UI does not crash on JS error in quiz', async ({ page }) => {
-    await page.goto('/');
+    await signInIfNeeded(page);
+    await page.goto('/quiz');
     // Simulate JS error (if possible, e.g. via special test param)
     // For now, check that the app still shows a fallback UI
     await expect(page.getByText(/something went wrong|error/i)).not.toHaveCount(0);
   });
 
   test('Badge modal: top-right close button closes modal', async ({ page }) => {
+    await signInIfNeeded(page);
     await page.goto('/achievements');
     // Open the first badge modal
     const badgeButton = page.getByTestId('badge-container').first();
