@@ -242,6 +242,7 @@ const Quiz: React.FC = () => {
   if (started && q) {
     return (
       <div>
+        <h1>Quiz</h1>
         <QuizProgressBar progress={progress} />
         <QuizStepper
           current={current}
@@ -270,23 +271,26 @@ const Quiz: React.FC = () => {
   }
   // Quiz start form
   return (
-    <QuizStartForm
-      availableTopics={sortedTopics}
-      selectedTopic={selectedTopic}
-      setSelectedTopic={setSelectedTopic}
-      quizLength={desiredQuizLength}
-      setQuizLength={setDesiredQuizLength as any}
-      maxQuizLength={maxQuizLength}
-      sort={''}
-      setSort={() => {}}
-      onStart={startQuiz}
-      filter={filter}
-      setFilter={val => setFilter(val as any)}
-      filterValue={filterValue}
-      setFilterValue={setFilterValue}
-      toggleState={toggleState}
-      setToggleState={setToggleState}
-    />
+    <div>
+      <h1>Quiz</h1>
+      <QuizStartForm
+        availableTopics={sortedTopics}
+        selectedTopic={selectedTopic}
+        setSelectedTopic={setSelectedTopic}
+        quizLength={desiredQuizLength}
+        setQuizLength={setDesiredQuizLength as any}
+        maxQuizLength={maxQuizLength}
+        sort={''}
+        setSort={() => {}}
+        onStart={startQuiz}
+        filter={filter}
+        setFilter={val => setFilter(val as any)}
+        filterValue={filterValue}
+        setFilterValue={setFilterValue}
+        toggleState={toggleState}
+        setToggleState={setToggleState}
+      />
+    </div>
   );
 };
 

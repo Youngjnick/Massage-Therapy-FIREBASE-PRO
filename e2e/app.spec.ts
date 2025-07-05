@@ -405,13 +405,9 @@ test('should navigate to all main pages via NavBar and route correctly', async (
       const href = await link.getAttribute('href');
       console.log(`[E2E DEBUG] Link: text="${text}", aria-label="${aria}", href="${href}"`);
     }
-    // Use a more specific locator to avoid strict mode violation
-    let navLink;
-    if (label === 'Quiz') {
-      navLink = page.getByRole('link', { name: /go to quiz page/i });
-    } else {
-      navLink = page.getByRole('link', { name: label });
-    }
+    // Always use aria-label for nav links
+    const ariaLabel = `Go to ${label} page`;
+    const navLink = page.getByRole('link', { name: ariaLabel });
     await navLink.first().click();
     await page.waitForURL(`**${path}`);
     if (label === 'Analytics') {
