@@ -1,273 +1,68 @@
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-upqsn9w7@gmail.com created successfully. UID: 5hsNoTPo84ngKq5uB3EANRTdBEh5
-Firestore user doc created for testuserc-upqsn9w7@gmail.com (uid: 5hsNoTPo84ngKq5uB3EANRTdBEh5)
-User testuserd-hxx45aol@gmail.com created successfully. UID: TcKPDJJliPK1ZTkp2aVd8et5bpuy
-Firestore user doc created for testuserd-hxx45aol@gmail.com (uid: TcKPDJJliPK1ZTkp2aVd8et5bpuy)
+User testuserc-h6zkyt7c@gmail.com created successfully. UID: o2X2FGnIOPTYBfStJDNsdrMx5g6v
+Firestore user doc created for testuserc-h6zkyt7c@gmail.com (uid: o2X2FGnIOPTYBfStJDNsdrMx5g6v)
+User testuserd-jz7orv9p@gmail.com created successfully. UID: 44AiNYfkHlfS4IeLzGwunwmg9D4R
+Firestore user doc created for testuserd-jz7orv9p@gmail.com (uid: 44AiNYfkHlfS4IeLzGwunwmg9D4R)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-upqsn9w7@gmail.com",
+    "email": "testuserc-h6zkyt7c@gmail.com",
     "password": "testuserC",
-    "uid": "5hsNoTPo84ngKq5uB3EANRTdBEh5"
+    "uid": "o2X2FGnIOPTYBfStJDNsdrMx5g6v"
   },
   {
-    "email": "testuserd-hxx45aol@gmail.com",
+    "email": "testuserd-jz7orv9p@gmail.com",
     "password": "testuserD",
-    "uid": "TcKPDJJliPK1ZTkp2aVd8et5bpuy"
+    "uid": "44AiNYfkHlfS4IeLzGwunwmg9D4R"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
-
-Running 6 tests using 1 worker
-
-  ✘  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (2.0s)
-  ✘  2 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1.4s)
-  ✓  3 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (542ms)
-  ✘  4 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (1.3s)
-  ✘  5 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (retry #1) (1.4s)
-  ✘  6 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (1.4s)
-  ✘  7 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1.3s)
-  ✓  8 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (431ms)
-  ✘  9 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (1.1s)
-  ✘  10 [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (retry #1) (1.3s)
-
-
-  1) [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility 
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      55 |       // Focus the nav link for this page
-      56 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 57 |       await navLink.focus();
-         |                     ^
-      58 |       const viewport = page.viewportSize && page.viewportSize();
-      59 |       if (!viewport || viewport.width > 500) {
-      60 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:57:21
-
-    Error Context: test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      55 |       // Focus the nav link for this page
-      56 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 57 |       await navLink.focus();
-         |                     ^
-      58 |       const viewport = page.viewportSize && page.viewportSize();
-      59 |       if (!viewport || viewport.width > 500) {
-      60 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:57:21
-
-    Error Context: test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome-retry1/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  2) [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) 
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      127 |     for (const nav of navLinks) {
-      128 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 129 |       await navLink.focus();
-          |                     ^
-      130 |       const viewport = page.viewportSize && page.viewportSize();
-      131 |       if (!viewport || viewport.width > 500) {
-      132 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:129:21
-
-    Error Context: test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      127 |     for (const nav of navLinks) {
-      128 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 129 |       await navLink.focus();
-          |                     ^
-      130 |       const viewport = page.viewportSize && page.viewportSize();
-      131 |       if (!viewport || viewport.width > 500) {
-      132 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:129:21
-
-    Error Context: test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome-retry1/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  3) [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility 
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      55 |       // Focus the nav link for this page
-      56 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 57 |       await navLink.focus();
-         |                     ^
-      58 |       const viewport = page.viewportSize && page.viewportSize();
-      59 |       if (!viewport || viewport.width > 500) {
-      60 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:57:21
-
-    Error Context: test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Mobile-Chrome/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Mobile-Chrome/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Mobile-Chrome/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      55 |       // Focus the nav link for this page
-      56 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 57 |       await navLink.focus();
-         |                     ^
-      58 |       const viewport = page.viewportSize && page.viewportSize();
-      59 |       if (!viewport || viewport.width > 500) {
-      60 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:57:21
-
-    Error Context: test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Mobile-Chrome-retry1/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Mobile-Chrome-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Mobile-Chrome-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  4) [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) 
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      127 |     for (const nav of navLinks) {
-      128 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 129 |       await navLink.focus();
-          |                     ^
-      130 |       const viewport = page.viewportSize && page.viewportSize();
-      131 |       if (!viewport || viewport.width > 500) {
-      132 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:129:21
-
-    Error Context: test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Mobile-Chrome/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Mobile-Chrome/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Mobile-Chrome/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: locator.focus: Error: strict mode violation: getByRole('link', { name: 'Quiz' }) resolved to 2 elements:
-        1) <a role="link" href="/quiz" data-discover="true" aria-label="Go to Quiz page">Quiz</a> aka getByRole('link', { name: 'Go to Quiz page' })
-        2) <a href="/quiz" class="main-btn" aria-label="Explore quizzes">Explore Quizzes</a> aka getByRole('link', { name: 'Explore quizzes' })
-
-    Call log:
-    [2m  - waiting for getByRole('link', { name: 'Quiz' })[22m
-
-
-      127 |     for (const nav of navLinks) {
-      128 |       const navLink = await page.getByRole('link', { name: nav.label });
-    > 129 |       await navLink.focus();
-          |                     ^
-      130 |       const viewport = page.viewportSize && page.viewportSize();
-      131 |       if (!viewport || viewport.width > 500) {
-      132 |         await expect(navLink).toBeFocused();
-        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts:129:21
-
-    Error Context: test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Mobile-Chrome-retry1/error-context.md
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Mobile-Chrome-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Mobile-Chrome-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  4 failed
-    [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility 
-    [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) 
-    [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility 
-    [Mobile Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) 
-  2 passed (18.4s)
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 204 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.8s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-h6zkyt7c@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.2s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.1s)
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (464ms)
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (5.6s)
+Navigating to home page...
+Filling Quiz Length...
