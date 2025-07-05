@@ -1,173 +1,58 @@
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-vctwfbyb@gmail.com created successfully. UID: o7zXyA4IrlMAKO5mI2FuPfmZe2iD
-Firestore user doc created for testuserc-vctwfbyb@gmail.com (uid: o7zXyA4IrlMAKO5mI2FuPfmZe2iD)
-User testuserd-6v9du124@gmail.com created successfully. UID: nRnE7AKsskCjafolgs8hR2a34Lqo
-Firestore user doc created for testuserd-6v9du124@gmail.com (uid: nRnE7AKsskCjafolgs8hR2a34Lqo)
+User testuserc-2xo9m79f@gmail.com created successfully. UID: I97SzLf5kA4KWcGig6T2DG224bOU
+Firestore user doc created for testuserc-2xo9m79f@gmail.com (uid: I97SzLf5kA4KWcGig6T2DG224bOU)
+User testuserd-bq5f25rn@gmail.com created successfully. UID: q0Yuq7tTPv3bnQZCpHmsCEua9FI9
+Firestore user doc created for testuserd-bq5f25rn@gmail.com (uid: q0Yuq7tTPv3bnQZCpHmsCEua9FI9)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-vctwfbyb@gmail.com",
+    "email": "testuserc-2xo9m79f@gmail.com",
     "password": "testuserC",
-    "uid": "o7zXyA4IrlMAKO5mI2FuPfmZe2iD"
+    "uid": "I97SzLf5kA4KWcGig6T2DG224bOU"
   },
   {
-    "email": "testuserd-6v9du124@gmail.com",
+    "email": "testuserd-bq5f25rn@gmail.com",
     "password": "testuserD",
-    "uid": "nRnE7AKsskCjafolgs8hR2a34Lqo"
+    "uid": "q0Yuq7tTPv3bnQZCpHmsCEua9FI9"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
 
-Running 12 tests using 1 worker
+Running 41 tests using 1 worker
 
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-2xo9m79f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.8s)
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (4.0s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-2xo9m79f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.1s)
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.2s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-2xo9m79f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.3s)
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.4s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-2xo9m79f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.0s)
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.3s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-2xo9m79f@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.1s)
-  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.4s)
-  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (538ms)
-  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (5.6s)
-[E2E DEBUG] About to sign in with test user: testuserc-vctwfbyb@gmail.com
-[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
-[E2E DEBUG] Navigating to profilePath: /profile
-[E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
-[E2E DEBUG] Submitting sign-in form.
-[E2E DEBUG] Waiting for sign-out button after login.
-[E2E DEBUG] Sign-in flow complete, sign-out button visible.
-[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
-[E2E DEBUG] Test start, current URL: http://localhost:5173/
-Navigating to quiz page...
-[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
-Filling Quiz Length...
-Clicking Start button...
-Clicking first quiz option...
-Clicking Finish button...
-Clicking Start New Quiz button...
-Filling Quiz Length again...
-Clicking Start button again...
-Waiting for quiz loading spinner to disappear...
-Waiting for quiz question card to be visible...
-Number of quiz options after restart: [33m4[39m
-Option 0 focused: [33mtrue[39m
-Option 1 focused: [33mfalse[39m
-Option 2 focused: [33mfalse[39m
-Option 3 focused: [33mfalse[39m
-Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_001-0-0-3910843f-2b5c-4435-9ac0-153af03437b3" aria-label="Option A: Pubic crest and pubic symphysis" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_001-0-3910843f-2b5c-4435-9ac0-153af03437b3" style="margin-right: 12px; cursor: pointer;">
-[E2E DEBUG] After test: should reset quiz and focus first option after restart
-[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
-  ✓  9 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (6.7s)
-[E2E DEBUG] About to sign in with test user: testuserc-vctwfbyb@gmail.com
-[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
-[E2E DEBUG] Navigating to profilePath: /profile
-[E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
-[E2E DEBUG] Submitting sign-in form.
-[E2E DEBUG] Waiting for sign-out button after login.
-[E2E DEBUG] Sign-in flow complete, sign-out button visible.
-[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
-[E2E DEBUG] Navigating to quiz page...
-[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
-[E2E DEBUG] Filling Quiz Length...
-[E2E DEBUG] Clicking Start button...
-[E2E DEBUG] Waiting for quiz question card to be visible...
-[E2E DEBUG] Quiz question card is visible.
-[E2E DEBUG] Clicking first option...
-[E2E DEBUG] Clicking second option...
-[E2E DEBUG] Clicking first option again...
-[E2E DEBUG] Clicking Finish button...
-[E2E DEBUG] Clicking Start New Quiz button...
-[E2E DEBUG] Filling Quiz Length again...
-[E2E DEBUG] Clicking Start button again...
-[E2E DEBUG] Waiting for quiz loading spinner to disappear...
-[E2E DEBUG] Quiz loading spinner is hidden.
-[E2E DEBUG] Waiting for quiz question card to be visible after restart...
-[E2E DEBUG] Quiz question card is visible after restart.
-[E2E DEBUG] After test: should handle edge case: rapid answer selection
-[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
-  ✓  10 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (5.6s)
-[E2E DEBUG] About to sign in with test user: testuserc-vctwfbyb@gmail.com
-[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
-[E2E DEBUG] Navigating to profilePath: /profile
-[E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
-[E2E DEBUG] Submitting sign-in form.
-[E2E DEBUG] Waiting for sign-out button after login.
-[E2E DEBUG] Sign-in flow complete, sign-out button visible.
-[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
-[E2E DEBUG] Quiz question object: {
-  id: [32m'abdominal_muscle_origins_001'[39m,
-  difficulty_rating: [1mnull[22m,
-  keywords: [ [32m'pubic crest'[39m, [32m'abdominal muscle'[39m, [32m'origin'[39m ],
-  question: [32m'What is the origin of the rectus abdominis muscle?'[39m,
-  long_explanation: [32m'The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation.'[39m,
-  question_type: [1mnull[22m,
-  synonyms: [1mnull[22m,
-  topics: [ [32m'anatomy'[39m, [32m'origins'[39m, [32m'abdominal_muscle_origins'[39m ],
-  created_at: [1mnull[22m,
-  difficulty_adjustment: [1mnull[22m,
-  relevance_score: [1mnull[22m,
-  short_explanation: [32m'The rectus abdominis originates from the pubic crest and symphysis.'[39m,
-  source_reference: [32m'Trail Guide to the Body – Biel'[39m,
-  tags: [ [32m'rectus abdominis'[39m, [32m'origin'[39m, [32m'core muscles'[39m ],
-  difficulty: [32m'easy'[39m,
-  filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
-  updated_at: [1mnull[22m,
-  options: [
-    [32m'Pubic crest and pubic symphysis'[39m,
-    [32m'Xiphoid process'[39m,
-    [32m'Iliac crest'[39m,
-    [32m'Costal cartilages of ribs 5-7'[39m
-  ],
-  clinical_application: [32m'Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt.'[39m,
-  correctAnswer: [32m'Pubic crest and pubic symphysis'[39m
-}
-[E2E DEBUG] After test: should show explanations when enabled
-[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
-  ✓  11 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (5.4s)
-[E2E DEBUG] About to sign in with test user: testuserc-vctwfbyb@gmail.com
-[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
-[E2E DEBUG] Navigating to profilePath: /profile
-[E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-vctwfbyb@gmail.com, password=testuserC
-[E2E DEBUG] Submitting sign-in form.
-[E2E DEBUG] Waiting for sign-out button after login.
-[E2E DEBUG] Sign-in flow complete, sign-out button visible.
-[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
-[E2E DEBUG] After test: should show topic stats in results
-[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
-  ✓  12 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (5.2s)
-
-  12 passed (55.0s)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.0s)

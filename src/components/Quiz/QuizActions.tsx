@@ -23,7 +23,7 @@ const QuizActions: React.FC<QuizActionsProps> = ({
       disabled={current === 0}
       aria-label="Previous question"
       role="button"
-      aria-disabled={current === 0}
+      aria-disabled={current === 0 ? "true" : "false"}
     >
       Previous
     </button>
@@ -33,7 +33,7 @@ const QuizActions: React.FC<QuizActionsProps> = ({
       disabled={current >= total - 1 || !answered}
       aria-label="Next question"
       role="button"
-      aria-disabled={current >= total - 1 || !answered}
+      aria-disabled={current >= total - 1 || !answered ? "true" : "false"}
       style={{ visibility: current < total - 1 ? 'visible' : 'hidden' }}
       tabIndex={current < total - 1 ? 0 : -1}
       data-testid="quiz-next-btn"
@@ -48,7 +48,8 @@ const QuizActions: React.FC<QuizActionsProps> = ({
       }}
       aria-label={current < total - 1 ? 'Finish quiz early' : 'Finish quiz'}
       role="button"
-      aria-disabled={false}
+      disabled={!answered}
+      aria-disabled={!answered ? "true" : "false"}
     >
       {current < total - 1 ? 'Finish' : 'Finish Quiz'}
     </button>

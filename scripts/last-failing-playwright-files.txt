@@ -1,1 +1,1 @@
-git add . && git commit -am "WIP: Fix topic stats E2E, always pass computed topicStats to QuizResultsScreen; all E2E tests now pass; see playwright-output.txt for debug and results" && git push --no-verify
+npx playwright test e2e/critical-edge-accessibility.spec.ts --project="Desktop Chrome"
