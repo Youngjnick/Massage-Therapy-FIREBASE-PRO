@@ -1,5 +1,3 @@
-
-
 // Playwright global setup: Reset Auth emulator and create test user before all tests
 import fetch from 'node-fetch';
 import { execSync } from 'child_process';
@@ -10,9 +8,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 async function globalSetup() {
+  // Set the correct projectId for your emulator and app
+  const projectId = 'massage-therapy-smart-st-c7f8f';
   // Reset the Firebase Auth emulator
   try {
-    execSync('curl -X DELETE http://localhost:9099/emulator/v1/projects/demo-project/accounts', { stdio: 'ignore' });
+    execSync(`curl -X DELETE http://localhost:9099/emulator/v1/projects/${projectId}/accounts`, { stdio: 'ignore' });
   } catch (e) {
     // Ignore errors if emulator is already clean
   }
@@ -32,21 +32,8 @@ async function globalSetup() {
   for (const user of testUsers) {
     try {
       // Create user in Auth emulator
-      const res = await fetch('http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signUp?key=fake-api-key', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: user.email,
-          password: user.password,
-          returnSecureToken: true
-        })
-      });
-      const data = await res.json();
-      let idToken, localId;
-      if (!res.ok || data.error) {
-        debugSummary.push(`SignUp error for ${user.email}: ${JSON.stringify(data)}`);
-        // Try to sign in to check if user exists with correct password
-        const signInRes = await fetch('http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=fake-api-key', {
+      const res = await fetch(`http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signUp?key=fake-api-key&projectId=${projectId}`,
+        {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -55,6 +42,21 @@ async function globalSetup() {
             returnSecureToken: true
           })
         });
+      const data = await res.json();
+      let idToken, localId;
+      if (!res.ok || data.error) {
+        debugSummary.push(`SignUp error for ${user.email}: ${JSON.stringify(data)}`);
+        // Try to sign in to check if user exists with correct password
+        const signInRes = await fetch(`http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=fake-api-key&projectId=${projectId}`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: user.email,
+              password: user.password,
+              returnSecureToken: true
+            })
+          });
         const signInData = await signInRes.json();
         if (!signInRes.ok || signInData.error) {
           debugSummary.push(`SignIn error for ${user.email}: ${JSON.stringify(signInData)}`);
@@ -74,16 +76,17 @@ async function globalSetup() {
       }
       // Create Firestore user doc for this user
       if (localId) {
-        const firestoreRes = await fetch('http://localhost:8080/v1/projects/demo-project/databases/(default)/documents/users?documentId=' + localId, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            fields: {
-              email: { stringValue: user.email },
-              createdByTest: { booleanValue: true }
-            }
-          })
-        });
+        const firestoreRes = await fetch(`http://localhost:8080/v1/projects/${projectId}/databases/(default)/documents/users?documentId=${localId}`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              fields: {
+                email: { stringValue: user.email },
+                createdByTest: { booleanValue: true }
+              }
+            })
+          });
         const firestoreData = await firestoreRes.json();
         if (!firestoreRes.ok || firestoreData.error) {
           debugSummary.push(`Firestore doc error for ${user.email}: ${JSON.stringify(firestoreData)}`);

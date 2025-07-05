@@ -1,5 +1,20 @@
 #!/bin/zsh
-# Run Playwright tests and always capture output to scripts/playwright-output.txt, even if interrupted
+set -x
+
+# Function to extract only failing test file paths from output
+function update_last_failing_files() {
+  echo "[DEBUG] Running update_last_failing_files, OUTPUT_FILE=$OUTPUT_FILE"
+  if [[ -f "$OUTPUT_FILE" ]]; then
+    # Extract all failing test file:line pairs (strip column), portable for macOS
+    grep -Eo 'e2e/[^ >]*\.spec\.[tc]s:[0-9]+:[0-9]+' "$OUTPUT_FILE" \
+      | sed -E 's/(:[0-9]+):[0-9]+$/\1/' \
+      | sort -u > "$LAST_FAILING_FILE"
+    echo "[DEBUG] last-failing-playwright-files.txt contents:"
+    cat "$LAST_FAILING_FILE"
+  else
+    echo "[DEBUG] OUTPUT_FILE does not exist: $OUTPUT_FILE"
+  fi
+}
 
 # Always use local emulators, never Google Cloud
 export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
@@ -11,14 +26,8 @@ export NODE_ENV=test
 OUTPUT_FILE="scripts/playwright-output.txt"
 LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
 
-# Function to extract only failing test file paths from output
-function update_last_failing_files() {
-  # Only keep lines that are valid Playwright test file paths (e2e/*.ts or e2e/*.cjs)
-  grep -Eo '^e2e/[a-zA-Z0-9_\-./]+\.(ts|cjs)' "$OUTPUT_FILE" | sort | uniq > "$LAST_FAILING_FILE"
-}
-
-# Ensure last-failing file is updated even on interruption
-trap update_last_failing_files EXIT
+# Trap EXIT and INT (Ctrl+C) to always update last-failing-playwright-files.txt
+trap update_last_failing_files EXIT INT
 
 # Prompt user to choose which tests to run
 print "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities): "
@@ -35,12 +44,17 @@ if [[ "$choice" == "f"* ]]; then
     done < "$LAST_FAILING_FILE"
     if [[ ${#prioritized_files[@]} -gt 0 ]]; then
       PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+      sync
       update_last_failing_files
     else
       PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+      sync
+      update_last_failing_files
     fi
   else
     PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+    sync
+    update_last_failing_files
   fi
 elif [[ "$choice" == "p"* ]]; then
   if [[ -n "$PLAYWRIGHT_PRIORITIZED_TESTS" ]]; then
@@ -52,11 +66,14 @@ elif [[ "$choice" == "p"* ]]; then
     done < "$LAST_FAILING_FILE"
   fi
   if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=0 npx playwright test --headed --reporter=list "${prioritized_files[@]}"
+    sync
     update_last_failing_files
   else
     exit 1
   fi
 else
   PW_HEADLESS=0 npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+  sync
+  update_last_failing_files
 fi
