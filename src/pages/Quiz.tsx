@@ -1,6 +1,48 @@
 // NOTE: Always ensure that `started` and `showResults` are mutually exclusive (never true at the same time) to prevent quiz card and results/review from rendering together.
 
 import React, { useEffect, useState } from 'react';
+// --- Error Boundary for Quiz Page ---
+class QuizErrorBoundary extends React.Component<any, { error: any }> {
+  constructor(props: any) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(error: any) {
+    return { error };
+  }
+  componentDidCatch(error: any, info: any) {
+    if (typeof window !== 'undefined') {
+      window.__LAST_ERROR__ = { error: error?.toString?.() || error, info };
+    }
+    // eslint-disable-next-line no-console
+    console.error('[QUIZ ERROR BOUNDARY]', error, info);
+  }
+  render() {
+    if (this.state.error) {
+      return (
+        <div data-testid="quiz-error" style={{ color: 'red', padding: 24, background: '#fff0f0', border: '1px solid #f00' }}>
+          <h2>Quiz Page Error</h2>
+          <pre>{this.state.error?.toString?.() || String(this.state.error)}</pre>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+// Global error logging for E2E/debug
+if (typeof window !== 'undefined') {
+  window.onerror = function (msg, url, line, col, error) {
+    window.__LAST_ERROR__ = { msg, url, line, col, error: error?.toString?.() || error };
+    // eslint-disable-next-line no-console
+    console.error('[QUIZ GLOBAL ERROR]', msg, url, line, col, error);
+  };
+  window.onunhandledrejection = function (event) {
+    window.__LAST_ERROR__ = { reason: event.reason?.toString?.() || event.reason };
+    // eslint-disable-next-line no-console
+    console.error('[QUIZ GLOBAL UNHANDLED REJECTION]', event.reason);
+  };
+}
 import { getQuestions } from '../questions/index';
 import { getBookmarks } from '../bookmarks/index';
 import { getAuth } from 'firebase/auth';
@@ -86,9 +128,13 @@ const Quiz: React.FC = () => {
   const activeQuestions = started ? shuffledQuestions : quizQuestions;
   const q = activeQuestions[current];
 
+
   // --- Derived variables (declare after quizQuestions/activeQuestions) ---
   const totalQuestions = started ? shuffledQuestions.length : quizQuestions.length;
   const progress = totalQuestions > 0 ? Math.round((userAnswers.filter((a) => a !== undefined).length / totalQuestions) * 100) : 0;
+
+  // --- FIX: Always call useTopicStats at the top level to avoid Hooks violation ---
+  const topicStats = useTopicStats(activeQuestions, userAnswers, shuffledOptions);
 
   // --- All hooks must be called unconditionally at the top level ---
   // Load questions and bookmarks on component mount
@@ -106,11 +152,18 @@ const Quiz: React.FC = () => {
         const topics = Array.from(new Set(qs.map((q: any) => (q.topics && q.topics[q.topics.length - 1]) || 'Other')));
         const sorted = [...topics].sort((a, b) => a.localeCompare(b));
         setSortedTopics(sorted);
-        if (!selectedTopic && sorted.length > 0) setSelectedTopic(sorted[0]);
+        // Removed setSelectedTopic from here to avoid infinite loop
       })
       .finally(() => {
         setLoading(false);
       });
+  // Set selectedTopic to first available topic if not set, after sortedTopics is updated
+  // (MUST be inside the Quiz function component)
+  useEffect(() => {
+    if (!selectedTopic && sortedTopics.length > 0) {
+      setSelectedTopic(sortedTopics[0]);
+    }
+  }, [selectedTopic, sortedTopics]);
     getBookmarks('demoUser');
     const auth = getAuth();
     const user = auth.currentUser;
@@ -167,6 +220,11 @@ const Quiz: React.FC = () => {
     // Always slice to maxQuizLength (from desiredQuizLength)
     qs = qs.slice(0, maxQuizLength);
     setShuffledQuestions(qs);
+    // Expose the real quiz length for E2E/debug
+    if (typeof window !== 'undefined') {
+      window.__QUIZ_LENGTH__ = qs.length;
+      console.log('[QUIZ DEBUG] __QUIZ_LENGTH__ set to', qs.length);
+    }
     const so: { [key: number]: string[] } = {};
     qs.forEach((q, i) => {
       so[i] = [...(q.options || [])];
@@ -210,17 +268,37 @@ const Quiz: React.FC = () => {
     }
   };
 
-  // Check for navigation intent from Analytics
+  // Check for navigation intent from Analytics (guard against infinite loop)
+  const hasStartedMissedQuizRef = React.useRef(false);
   useEffect(() => {
-    if (location.state && location.state.startMissedUnanswered && location.state.topic) {
-      // Set selected topic immediately
-      setSelectedTopic(location.state.topic);
+    if (
+      location.state &&
+      location.state.startMissedUnanswered &&
+      location.state.topic &&
+      !hasStartedMissedQuizRef.current
+    ) {
+      // Only set selected topic if different
+      setSelectedTopic((prev) => {
+        if (prev !== location.state.topic) {
+          return location.state.topic;
+        }
+        return prev;
+      });
       // Wait for questions to load, then trigger missed/unanswered quiz
       if (!loading && questions.length > 0) {
         handleStartMissedUnansweredQuiz(location.state.topic);
+        hasStartedMissedQuizRef.current = true;
         // Optionally clear the state so it doesn't re-trigger on refresh
         window.history.replaceState({}, document.title);
       }
+    }
+    // Reset ref if location changes to a different topic
+    if (
+      !location.state ||
+      !location.state.startMissedUnanswered ||
+      !location.state.topic
+    ) {
+      hasStartedMissedQuizRef.current = false;
     }
   }, [location.state, loading, questions]);
 
@@ -231,7 +309,7 @@ const Quiz: React.FC = () => {
   // --- DEBUG: Log state on every render ---
   useEffect(() => {
     console.log('[QUIZ DEBUG] Render: started', started, 'showResults', showResults, 'current', current, 'userAnswers', userAnswers, 'activeQuestions', activeQuestions);
-  });
+  }, [started, showResults, current, userAnswers, activeQuestions]);
 
   // --- DEBUG: Log when showResults changes ---
   useEffect(() => {
@@ -241,8 +319,6 @@ const Quiz: React.FC = () => {
   // Render quiz UI components based on the current state
   if (loading) return <Spinner />;
   if (showResults) {
-    // Calculate topicStats using the real hook
-    const topicStats = useTopicStats(activeQuestions, userAnswers, shuffledOptions);
     // Expose quiz result object for E2E/debug
     if (typeof window !== 'undefined') {
       window.__LAST_QUIZ_RESULT__ = {
@@ -251,7 +327,14 @@ const Quiz: React.FC = () => {
         shuffledOptions,
         topicStats,
       };
-      console.log('[QUIZ DEBUG] Results screen rendered. __LAST_QUIZ_RESULT__:', window.__LAST_QUIZ_RESULT__);
+      if (!topicStats || Object.keys(topicStats).length === 0) {
+        console.warn('[QUIZ DEBUG] Results screen: topicStats is empty or missing!', { topicStats, userAnswers, activeQuestions, shuffledOptions });
+      }
+      if (!window.__LAST_QUIZ_RESULT__) {
+        console.error('[QUIZ DEBUG] Results screen: __LAST_QUIZ_RESULT__ is not set!');
+      } else {
+        console.log('[QUIZ DEBUG] Results screen rendered. __LAST_QUIZ_RESULT__:', window.__LAST_QUIZ_RESULT__);
+      }
     }
     console.log('[QUIZ DEBUG] Rendering QuizResultsScreen', { topicStats, userAnswers, activeQuestions, shuffledOptions });
     return (
@@ -263,6 +346,9 @@ const Quiz: React.FC = () => {
           setStarted(false);
           setCurrent(0);
           setUserAnswers(Array(maxQuizLength).fill(undefined));
+          setShuffledQuestions([]);
+          setShuffledOptions({});
+          setQuestions([]); // Force questions to reload
         }}
         isAllIncorrect={false}
         q={q}
@@ -273,40 +359,37 @@ const Quiz: React.FC = () => {
       />
     );
   }
+  const handleFinish = React.useCallback((source: 'cancel' | 'final') => {
+    let updatedAnswers = [...userAnswers];
+    // Only allow partial quiz completion if source is 'cancel' (mid-quiz Finish button)
+    const isCancel = source === 'cancel';
+    if (!isCancel) {
+      // For Finish Quiz (final question), require answer
+      if (updatedAnswers[current] === undefined) {
+        console.warn('[QUIZ DEBUG] Tried to finish quiz but current question is unanswered. Aborting.');
+        return;
+      }
+    }
+    // Mark all unanswered as undefined (should not be needed, but keep for robustness)
+    for (let i = 0; i < totalQuestions; i++) {
+      if (updatedAnswers[i] === undefined) {
+        updatedAnswers[i] = undefined;
+      }
+    }
+    setUserAnswers(updatedAnswers);
+    // Use a microtask to ensure state updates before showing results
+    Promise.resolve().then(() => {
+      console.log(`[QUIZ DEBUG] onFinish called from ${source}, setting showResults to true. userAnswers:`, updatedAnswers);
+      if (current === totalQuestions - 1) {
+        console.log('[QUIZ DEBUG] handleFinish: This was the last question. Should show results next.');
+      } else {
+        console.log('[QUIZ DEBUG] handleFinish: Not last question. current:', current, 'totalQuestions:', totalQuestions);
+      }
+      setShowResults(true);
+    });
+  }, [userAnswers, current, totalQuestions, setUserAnswers, setShowResults, activeQuestions]);
+
   if (started && q) {
-    // Robust onFinish handler for both Finish and Finish Quiz buttons
-    const handleFinish = (source = 'unknown') => {
-      let updatedAnswers = [...userAnswers];
-      // Only allow partial quiz completion if source is 'cancel' (mid-quiz Finish button)
-      const isCancel = source === 'cancel';
-      if (!isCancel) {
-        // For Finish Quiz (final question), require answer
-        if (updatedAnswers[current] === undefined) {
-          console.warn('[QUIZ DEBUG] Tried to finish quiz but current question is unanswered. Aborting.');
-          return;
-        }
-      }
-      // Mark all unanswered as undefined (should not be needed, but keep for robustness)
-      for (let i = 0; i < totalQuestions; i++) {
-        if (updatedAnswers[i] === undefined) {
-          updatedAnswers[i] = undefined;
-        }
-      }
-      setUserAnswers(updatedAnswers);
-      setTimeout(() => {
-        console.log(`[QUIZ DEBUG] onFinish called from ${source}, setting showResults to true. userAnswers:`, updatedAnswers);
-        setShowResults(true);
-        setTimeout(() => {
-          console.log('[QUIZ DEBUG] onFinish post setShowResults. State after:', {
-            started,
-            showResults,
-            current,
-            userAnswers: updatedAnswers,
-            activeQuestions
-          });
-        }, 100);
-      }, 0);
-    };
     return (
       <div>
         <QuizProgressBar progress={progress} />
@@ -328,7 +411,7 @@ const Quiz: React.FC = () => {
           showInstantFeedback={toggleState.instantFeedback}
           onPrev={prev}
           onNext={next}
-          onFinish={() => handleFinish('QuizQuestionCard/QuizActions')}
+          onFinish={handleFinish}
           total={totalQuestions}
           answered={userAnswers[current] !== undefined}
         />
@@ -337,23 +420,25 @@ const Quiz: React.FC = () => {
   }
   // Quiz start form
   return (
-    <QuizStartForm
-      availableTopics={sortedTopics}
-      selectedTopic={selectedTopic}
-      setSelectedTopic={setSelectedTopic}
-      quizLength={desiredQuizLength}
-      setQuizLength={setDesiredQuizLength as any}
-      maxQuizLength={maxQuizLength}
-      sort={''}
-      setSort={() => {}}
-      onStart={startQuiz}
-      filter={filter}
-      setFilter={val => setFilter(val as any)}
-      filterValue={filterValue}
-      setFilterValue={setFilterValue}
-      toggleState={toggleState}
-      setToggleState={setToggleState}
-    />
+    <QuizErrorBoundary>
+      <QuizStartForm
+        availableTopics={sortedTopics}
+        selectedTopic={selectedTopic}
+        setSelectedTopic={setSelectedTopic}
+        quizLength={desiredQuizLength}
+        setQuizLength={setDesiredQuizLength as any}
+        maxQuizLength={maxQuizLength}
+        sort={''}
+        setSort={() => {}}
+        onStart={startQuiz}
+        filter={filter}
+        setFilter={val => setFilter(val as any)}
+        filterValue={filterValue}
+        setFilterValue={setFilterValue}
+        toggleState={toggleState}
+        setToggleState={setToggleState}
+      />
+    </QuizErrorBoundary>
   );
 };
 
