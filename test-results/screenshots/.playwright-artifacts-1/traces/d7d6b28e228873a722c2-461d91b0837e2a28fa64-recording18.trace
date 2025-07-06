@@ -1,0 +1,17 @@
+{"version":8,"type":"context-options","origin":"library","browserName":"","options":{},"platform":"darwin","wallTime":1751824796318,"monotonicTime":452098.931,"sdkLanguage":"javascript","contextId":"request-context@d682576c67178a1f54c899b363a98391","title":"assets-case-sensitivity.spec.ts:11 › Badge image is served by Vite dev server (case-sensitive)"}
+{"type":"before","callId":"call@1573","startTime":452099.971,"class":"APIRequestContext","method":"fetch","params":{"url":"http://localhost:5173/badges/first_quiz.png","method":"GET","timeout":0},"stepId":"pw:api@4","beforeSnapshot":"before@call@1573"}
+{"type":"log","callId":"call@1573","time":452109.102,"message":"→ GET http://localhost:5173/badges/first_quiz.png"}
+{"type":"log","callId":"call@1573","time":452109.113,"message":"  user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"}
+{"type":"log","callId":"call@1573","time":452109.116,"message":"  accept: */*"}
+{"type":"log","callId":"call@1573","time":452109.118,"message":"  accept-encoding: gzip,deflate,br"}
+{"type":"log","callId":"call@1573","time":452116.1,"message":"← 200 OK"}
+{"type":"log","callId":"call@1573","time":452116.113,"message":"  vary: Origin"}
+{"type":"log","callId":"call@1573","time":452116.115,"message":"  content-length: 958473"}
+{"type":"log","callId":"call@1573","time":452116.117,"message":"  content-type: image/png"}
+{"type":"log","callId":"call@1573","time":452116.119,"message":"  last-modified: Thu, 03 Jul 2025 22:51:15 GMT"}
+{"type":"log","callId":"call@1573","time":452116.121,"message":"  etag: W/\"958473-1751583075929\""}
+{"type":"log","callId":"call@1573","time":452116.123,"message":"  cache-control: no-cache"}
+{"type":"log","callId":"call@1573","time":452116.125,"message":"  date: Sun, 06 Jul 2025 17:59:56 GMT"}
+{"type":"log","callId":"call@1573","time":452116.127,"message":"  connection: keep-alive"}
+{"type":"log","callId":"call@1573","time":452116.128,"message":"  keep-alive: timeout=5"}
+{"type":"after","callId":"call@1573","endTime":452118.344,"result":{"response":{"url":"http://localhost:5173/badges/first_quiz.png","status":200,"statusText":"OK","headers":[{"name":"Vary","value":"Origin"},{"name":"Content-Length","value":"958473"},{"name":"Content-Type","value":"image/png"},{"name":"Last-Modified","value":"Thu, 03 Jul 2025 22:51:15 GMT"},{"name":"ETag","value":"W/\"958473-1751583075929\""},{"name":"Cache-Control","value":"no-cache"},{"name":"Date","value":"Sun, 06 Jul 2025 17:59:56 GMT"},{"name":"Connection","value":"keep-alive"},{"name":"Keep-Alive","value":"timeout=5"}],"fetchUid":"1bc24035b53dd58a9debc21d13192f70"}},"afterSnapshot":"after@call@1573"}

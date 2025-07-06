@@ -4,6 +4,7 @@ import re
 import datetime
 from pathlib import Path
 import json
+import html as html_escape_mod
 
 OUTPUT_FILE = Path("scripts/playwright-output.txt")
 HISTORY_FILE = Path("scripts/playwright-output-history.txt")
@@ -12,9 +13,14 @@ HTML_FILE = Path("playwright-history.html")
 def parse_output_file(output_file):
     results = []
     with open(output_file, encoding="utf-8") as f:
-        for line in f:
-            m = re.match(r'([✓✘]) .* (e2e/[^ >]*\\.spec\\.[tj]s):(\\d+):(\\d+)', line)
+        lines = list(f)
+        print("[DEBUG] First 20 lines of output file:")
+        for l in lines[:20]:
+            print(l.rstrip())
+        for line in lines:
+            m = re.match(r'^\s*([✓✘])\s+\d+\s+\[.*?\]\s+›\s+([\w/\.-]+\.spec\.[tj]s):(\d+):(\d+)', line)
             if m:
+                print(f"[DEBUG] Matched: {line.strip()}")
                 status, file, line_num, col_num = m.groups()
                 results.append({
                     "status": status,
@@ -23,6 +29,7 @@ def parse_output_file(output_file):
                     "col": int(col_num),
                     "raw": line.strip()
                 })
+    print(f"[DEBUG] Total matched results: {len(results)}")
     return results
 
 def summarize_results(results):
@@ -34,7 +41,13 @@ def summarize_results(results):
 
 def append_history_summary(total, passed, failed, failed_locations):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    summary = f"===== {now} =====\nTotal: {total}\nPassed: {passed}\nFailed: {failed}\nFailed locations: {', '.join(failed_locations)}\n"
+    output = ""
+    if OUTPUT_FILE.exists():
+        with open(OUTPUT_FILE, encoding="utf-8") as f:
+            output = f.read()
+    summary = f"""
+===== {now} =====\nTotal: {total}\nPassed: {passed}\nFailed: {failed}\nFailed locations: {', '.join(failed_locations)}\n--- Full Playwright Output ---\n{output}\n--- End of Output ---\n"""
+    # Always append the summary to the file, even if it was empty
     with open(HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(summary)
 
@@ -201,7 +214,8 @@ const chart = new Chart(ctx, {
 ''')
     html.append('<h2>Raw History</h2><pre>')
     with open(HISTORY_FILE, encoding="utf-8") as f:
-        html.append(f.read())
+        raw_history = f.read()
+        html.append(html_escape_mod.escape(raw_history))
     html.append('</pre></body></html>')
     with open(HTML_FILE, "w", encoding="utf-8") as f:
         f.write('\n'.join(html))
@@ -220,9 +234,14 @@ def main():
     if not OUTPUT_FILE.exists():
         print(f"[WARN] {OUTPUT_FILE} does not exist.")
         return
+    if OUTPUT_FILE.stat().st_size == 0:
+        print(f"[WARN] {OUTPUT_FILE} is empty.")
+        return
+    print(f"[INFO] Processing {OUTPUT_FILE}...")
     results = parse_output_file(OUTPUT_FILE)
     total, passed, failed, failed_locations = summarize_results(results)
     append_history_summary(total, passed, failed, failed_locations)
+    print(f"[INFO] Updated {HISTORY_FILE}.")
     errors = parse_error_blocks(OUTPUT_FILE)
     sequences = get_test_sequences_from_history(HISTORY_FILE)
     # Collect run_stats for export and chart
@@ -238,6 +257,7 @@ def main():
             run_stats.append({"date": run_dates[len(run_stats)] if len(run_stats)<len(run_dates) else "", "total": total, "passed": passed, "failed": failed})
     export_json_history(results, errors, sequences, run_stats)
     generate_html_report_advanced(results, errors, sequences)
+    print(f"[INFO] HTML and JSON reports updated.")
 
 if __name__ == "__main__":
     main()
