@@ -195,7 +195,7 @@ if [[ "$choice" == "f"* ]]; then
     first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
     if [[ -n "$first_failed" ]]; then
       echo "[INFO] Running Playwright bisect mode on: $first_failed"
-      npx playwright test --bisect "$first_failed"
+      PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --bisect "$first_failed"
     else
       echo "[INFO] No failed test found in output."
     fi
@@ -205,7 +205,7 @@ if [[ "$choice" == "f"* ]]; then
     first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
     if [[ -n "$first_failed" ]]; then
       echo "[INFO] First failed test file: $first_failed"
-      PWDEBUG=1 npx playwright test --reporter=list "$first_failed"
+      PWDEBUG=1 PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list "$first_failed"
     else
       echo "[INFO] No failed test found in output."
     fi
@@ -213,7 +213,7 @@ if [[ "$choice" == "f"* ]]; then
   fi
   if [[ "$failed_mode" == "2" ]]; then
     echo "[INFO] Running last-failing test files in CI mode: ${failed_files[*]}"
-    PW_HEADLESS=1 npx playwright test --reporter=list --project="Desktop Chrome" "${failed_files[@]}" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" "${failed_files[@]}" | tee "$OUTPUT_FILE"
     status=$?
     echo "\n[CI SUMMARY]"
     grep -E '^[✓✘]' "$OUTPUT_FILE" || true
@@ -345,7 +345,7 @@ if [[ "$choice" == "d"* ]]; then
   fi
   if [[ -n "$debug_file" ]]; then
     echo "[INFO] Debugging test file: $debug_file"
-    PWDEBUG=1 npx playwright test --reporter=list "$debug_file"
+    PWDEBUG=1 PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list "$debug_file"
     exit 0
   else
     echo "[ERROR] No file provided."

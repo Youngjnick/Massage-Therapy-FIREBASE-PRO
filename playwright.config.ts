@@ -13,7 +13,7 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:5173/',
     ...devices['Desktop Chrome'],
-    headless: false,
+    headless: process.env.PW_HEADLESS === '1',
     launchOptions: {
       args: [],
     },
@@ -28,7 +28,7 @@ export default defineConfig({
         launchOptions: {
           args: [],
         },
-        headless: false,
+        headless: process.env.PW_HEADLESS === '1',
         screenshot: 'only-on-failure',
       },
     },
@@ -39,7 +39,7 @@ export default defineConfig({
         launchOptions: {
           args: [],
         },
-        headless: false,
+        headless: process.env.PW_HEADLESS === '1',
         screenshot: 'only-on-failure',
       },
     },
