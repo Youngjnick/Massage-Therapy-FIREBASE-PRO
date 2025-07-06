@@ -1,0 +1,119 @@
+<html><head><title>Playwright Test History</title>
+<script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+<style>.fail{color:red;} .pass{color:green;} .flaky{color:orange;} pre{background:#f8f8f8;padding:1em;} .err{background:#fee;white-space:pre-wrap;} table{border-collapse:collapse;} th,td{padding:4px 8px;} tr.selected{background:#eef;}</style>
+</head><body>
+<h1>Playwright Test History</h1>
+<div>
+  <label>Filter by file: <select id='fileFilter'><option value=''>All</option>
+</select></label>
+  <label>Show: <select id='statusFilter'><option value=''>All</option><option value='fail'>Failed</option><option value='flaky'>Flaky</option></select></label>
+  <label>Date range: <input type='date' id='dateFrom'> to <input type='date' id='dateTo'></label>
+  <input type='text' id='searchBox' placeholder='Search location...'>
+</div>
+<canvas id="trendChart" width="600" height="200"></canvas>
+<table border=1 cellpadding=4 cellspacing=0 id="testTable"><tr><th>Test Location</th><th>Status</th><th>Error</th><th>History</th></tr><tbody id="testTableBody"></tbody></table>
+<div id="detailsModal" style="display:none;position:fixed;top:10%;left:10%;width:80%;height:80%;background:#fff;border:2px solid #888;overflow:auto;z-index:1000;padding:2em;"><button onclick="document.getElementById('detailsModal').style.display='none'">Close</button><div id="detailsContent"></div></div>
+<button onclick="downloadJson()">Download JSON</button>
+<script>
+const data = [];
+const parsed = JSON.parse(JSON.stringify(data));
+const runStats = [{"date": "2025-07-06 12:23:31", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 12:30:32", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 12:51:03", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 12:53:13", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 12:53:14", "total": 0, "passed": 0, "failed": 0}];
+
+function renderTable() {
+  const file = document.getElementById('fileFilter').value;
+  const status = document.getElementById('statusFilter').value;
+  const search = document.getElementById('searchBox').value.toLowerCase();
+  const from = document.getElementById('dateFrom').value;
+  const to = document.getElementById('dateTo').value;
+  let rows = parsed.filter(r =>
+    (!file || r.file === file) &&
+    (!status || (status==='fail'?r.status==='✘':status==='flaky'?r.sequence.includes('✓')&&r.sequence.includes('✘'):true)) &&
+    (!search || r.location.toLowerCase().includes(search))
+  );
+  let html = '';
+  for (const r of rows) {
+    html += `<tr onclick="showDetails('${r.location.replace(/'/g,'\'')}', this)"><td>${r.location}</td><td class='${r.status==='✓'?'pass':r.status==='✘'?'fail':isFlaky(r)?'flaky':''}'>${r.status}</td><td><div class='err'>${r.error}</div></td><td>${r.sequence}</td></tr>`;
+  }
+  document.getElementById('testTableBody').innerHTML = html;
+}
+function isFlaky(r) { return r.sequence.includes('✓') && r.sequence.includes('✘'); }
+['fileFilter','statusFilter','searchBox','dateFrom','dateTo'].forEach(id=>{
+  document.getElementById(id).oninput=renderTable;
+  document.getElementById(id).onchange=renderTable;
+});
+renderTable();
+function showDetails(loc, row) {
+  const r = parsed.find(x=>x.location===loc);
+  let html = `<h2>${loc}</h2>`;
+  html += `<p>Status: <span class='${r.status==='✓'?'pass':r.status==='✘'?'fail':isFlaky(r)?'flaky':''}'>${r.status}</span></p>`;
+  html += `<p>History: ${r.sequence}</p>`;
+  html += `<pre class='err'>${r.error}</pre>`;
+  html += `<a href='e2e/${r.file.split('/').pop()}' target='_blank'>View Source</a>`;
+  document.getElementById('detailsContent').innerHTML = html;
+  document.getElementById('detailsModal').style.display = 'block';
+  document.querySelectorAll('tr.selected').forEach(tr=>tr.classList.remove('selected'));
+  if(row) row.classList.add('selected');
+}
+// Download JSON
+function downloadJson() { window.open("playwright-history.json"); }
+// Trend chart
+const ctx = document.getElementById('trendChart').getContext('2d');
+const chart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: runStats.map(x=>x.date),
+    datasets: [
+      {label:'Passed',data:runStats.map(x=>x.passed),borderColor:'green',fill:false},
+      {label:'Failed',data:runStats.map(x=>x.failed),borderColor:'red',fill:false},
+      {label:'Total',data:runStats.map(x=>x.total),borderColor:'gray',fill:false}
+    ]
+  },
+  options: {responsive:true,plugins:{legend:{display:true}},onClick: (e,activeEls)=>{
+    if(activeEls.length>0){
+      const idx=activeEls[0].index;
+      const date=runStats[idx].date;
+      // Show failed tests for this date
+      let failedLocs = [];
+      if(parsed && parsed.length) {
+        // This is a simple demo: in a real version, you'd track per-date failures
+        failedLocs = parsed.filter(r=>r.status==='✘').map(r=>r.location);
+      }
+      alert('Failed tests on '+date+':
+'+failedLocs.join('
+'));
+    }
+  }}
+});
+
+<h2>Raw History</h2><pre>
+===== 2025-07-06 12:23:31 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: e2e/all-interactive-aria-accessibility.spec.ts:36:5
+
+===== 2025-07-06 12:30:32 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed details: 
+Test sequences: 
+Flaky tests: 
+
+===== 2025-07-06 12:51:03 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: 
+===== 2025-07-06 12:53:13 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: 
+===== 2025-07-06 12:53:14 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: 
+
+</pre></body></html>

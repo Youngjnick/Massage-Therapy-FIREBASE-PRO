@@ -26,7 +26,8 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Quiz Option Accessibility', () => {
   test('Each quiz option has correct ARIA attributes and is keyboard accessible', async ({ page }) => {
-    await page.goto('/');
+    // Always start on /quiz to ensure quiz UI is present
+    await page.goto('/quiz');
     // Wait for Quiz Length input to be visible and enabled, with debug output
     let quizLengthInput;
     try {

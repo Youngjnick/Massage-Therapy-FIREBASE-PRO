@@ -50,6 +50,14 @@ else
   echo "gawk is already installed."
 fi
 
+echo "Checking for Python 3..."
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "Python 3 is required for advanced Playwright reporting. Please install Python 3 and re-run this script."
+  exit 1
+else
+  echo "Python 3 is already installed."
+fi
+
 echo "Installing Playwright/Vite code coverage dev dependencies..."
 npm install --save-dev vite-plugin-istanbul nyc @cypress/code-coverage
 # Optionally: playwright-coverage (for advanced scenarios)

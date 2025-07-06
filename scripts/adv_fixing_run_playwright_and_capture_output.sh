@@ -1,24 +1,17 @@
 #!/bin/zsh
 set -x
 
-# Function to extract only failing test file paths from output
-function update_last_failing_files() {
-  echo "[DEBUG] Running update_last_failing_files, OUTPUT_FILE=$OUTPUT_FILE"
-  if [[ -f "$OUTPUT_FILE" ]]; then
-    # If there are no lines with '✘', all tests passed, so clear the last failing file
-    if ! grep -q '✘' "$OUTPUT_FILE"; then
-      echo "[DEBUG] No failures found (no '✘' in output). Clearing $LAST_FAILING_FILE."
-      : > "$LAST_FAILING_FILE"
-    else
-      # Extract all failing test file:line pairs (strip column), portable for macOS
-      grep -Eo 'e2e/[^ >]*\.spec\.[tc]s:[0-9]+:[0-9]+' "$OUTPUT_FILE" \
-        | sed -E 's/(:[0-9]+):[0-9]+$/\1/' \
-        | sort -u > "$LAST_FAILING_FILE"
-    fi
-    echo "[DEBUG] last-failing-playwright-files.txt contents:"
-  else
-    echo "[DEBUG] OUTPUT_FILE does not exist: $OUTPUT_FILE"
+# Remove GNU tool checks and advanced shell logic, use Python for reporting
+
+# Function to open the HTML report (macOS only)
+open_html_report() {
+  if [[ -f "playwright-history.html" ]]; then
+    open "playwright-history.html"
   fi
+}
+
+append_history_summary() {
+  python3 scripts/playwright_history_report.py
 }
 
 # Always use local emulators, never Google Cloud
@@ -29,10 +22,9 @@ export GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f
 export NODE_ENV=test
 
 OUTPUT_FILE="scripts/playwright-output.txt"
-LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
+HISTORY_FILE="scripts/playwright-output-history.txt"
 
-# Trap EXIT and INT (Ctrl+C) to always update last-failing-playwright-files.txt
-trap update_last_failing_files EXIT INT
+trap 'append_history_summary; open_html_report' EXIT INT
 
 # 1. Check for Playwright installation
 if ! command -v npx &>/dev/null || ! npx --no-install playwright --version &>/dev/null; then
@@ -41,6 +33,13 @@ if ! command -v npx &>/dev/null || ! npx --no-install playwright --version &>/de
 fi
 
 # 2. Clearer User Prompts with default
+# Lint and typecheck before prompting for test mode
+npm run lint && npx tsc --noEmit
+if [[ $? -ne 0 ]]; then
+  echo "[ERROR] Lint or typecheck failed. Aborting test run."
+  exit 1
+fi
+
 echo "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[s]ingle/[r]epeat/[c]lear/[h]elp, default: all): "
 read -r choice
 echo "[DEBUG] Choice selected: $choice"
@@ -48,19 +47,30 @@ choice=${choice:-a}
 
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
-  : > "$LAST_FAILING_FILE"
   # Run all tests and exit immediately after
   PW_HEADLESS=0 npx playwright test --headed --reporter=list | tee "$OUTPUT_FILE"
   sync
-  update_last_failing_files
   exit 0
+fi
+
+# [f]ailed mode: run only last-failing test files (now from OUTPUT_FILE)
+if [[ "$choice" == "f"* ]]; then
+  failed_files=( $(get_failed_test_files) )
+  if [[ ${#failed_files[@]} -gt 0 ]]; then
+    echo "[INFO] Running last-failing test files: ${failed_files[*]}"
+    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${failed_files[@]}" | tee "$OUTPUT_FILE"
+    exit 0
+  else
+    echo "[INFO] No last-failing test files found in $OUTPUT_FILE."
+    exit 0
+  fi
 fi
 
 # 10. Help mode
 if [[ "$choice" == "h"* ]]; then
   echo "\nUsage:"
   echo "  [a]ll      - Run all Playwright tests (default)"
-  echo "  [f]ailed   - Run only last failed test files (from $LAST_FAILING_FILE)"
+  echo "  [f]ailed   - Run only last failed test files (from $OUTPUT_FILE)"
   echo "  [p]riorities - Run prioritized test files (from env or last failed)"
   echo "  [x]failed-lines - Run only failing test lines (file:line) from last run (if supported)"
   echo "  [d]ebug    - Debug a test file (PWDEBUG=1)"
@@ -76,7 +86,6 @@ if [[ "$choice" == "h"* ]]; then
   echo "  [u]ntested - Run only untested test files (not present in last run output)"
   echo "  [update-snapshots] - Run tests with --update-snapshots"
   echo "  [coverage] - Run with code coverage enabled and output summary"
-  echo "  [lint]     - Run lint/typecheck before tests and skip if errors"
   echo "  [precommit] - Run only staged/changed tests before commit/push, block if any fail"
   echo "  [html]     - Open HTML report in browser after run"
   echo "  [faildebug] - After a failed run, prompt to debug first failed test"
@@ -100,19 +109,6 @@ if [[ "$choice" == "html"* ]]; then
   fi
 fi
 
-# [lint] mode: pre-run lint/typecheck
-if [[ "$choice" == "lint"* ]]; then
-  echo "[INFO] Running lint and typecheck..."
-  npm run lint && npx tsc --noEmit
-  if [[ $? -ne 0 ]]; then
-    echo "[ERROR] Lint or typecheck failed. Skipping tests."
-    exit 1
-  else
-    echo "[INFO] Lint/typecheck passed."
-    exit 0
-  fi
-fi
-
 # [u]ntested mode: run only untested test files (not present in last run output)
 if [[ "$choice" == "u"* ]]; then
   all_test_files=( $(ls e2e/*.spec.*[tj]s 2>/dev/null) )
@@ -132,7 +128,6 @@ if [[ "$choice" == "u"* ]]; then
     echo "[INFO] Running untested test files: ${untested_files[*]}"
     PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${untested_files[@]}"
     sync
-    update_last_failing_files
     exit 0
   else
     echo "[INFO] No untested test files detected."
@@ -145,7 +140,6 @@ if [[ "$choice" == "update-snapshots"* ]]; then
   echo "[INFO] Running tests with --update-snapshots."
   PW_HEADLESS=0 npx playwright test --update-snapshots --headed --reporter=list --project="Desktop Chrome"
   sync
-  update_last_failing_files
   exit 0
 fi
 
@@ -167,7 +161,6 @@ if [[ "$choice" == "precommit"* ]]; then
     echo "[INFO] Running staged/changed test files: ${unique_files[*]}"
     PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${unique_files[@]}"
     sync
-    update_last_failing_files
     if grep -q '✘' "$OUTPUT_FILE"; then
       echo "[ERROR] Pre-commit/push tests failed. Aborting."
       exit 1
@@ -228,7 +221,6 @@ if [[ "$choice" == "x"* ]]; then
       echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
       PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
       sync
-      update_last_failing_files
       exit 0
     else
       echo "[INFO] No failing test lines found."
@@ -293,7 +285,6 @@ if [[ "$choice" == "m"* ]]; then
     echo "[INFO] Running matched test files: ${matched_files[*]}"
     PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${matched_files[@]}"
     sync
-    update_last_failing_files
     exit 0
   else
     echo "[INFO] No test files matched pattern: $pattern"
@@ -309,7 +300,6 @@ if [[ "$choice" == "o"* ]]; then
     echo "[INFO] Running tests matching: $grep_pattern"
     PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" -g "$grep_pattern"
     sync
-    update_last_failing_files
     exit 0
   else
     echo "[ERROR] No grep pattern provided."
@@ -338,7 +328,6 @@ if [[ "$choice" == "g"* ]]; then
     echo "[INFO] Running changed test files: ${changed_files[*]}"
     PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${changed_files[@]}"
     sync
-    update_last_failing_files
     exit 0
   else
     echo "[INFO] No changed test files detected."
@@ -381,7 +370,6 @@ if [[ "$choice" == "q"* ]]; then
   echo "[INFO] Running only @fast-tagged tests."
   PW_HEADLESS=0 npx playwright test --grep "@fast" --headed --reporter=list --project="Desktop Chrome"
   sync
-  update_last_failing_files
   exit 0
 fi
 
@@ -395,4 +383,3 @@ fi
 # If no valid option was selected, default to running all tests
 PW_HEADLESS=0 npx playwright test --headed --reporter=list | tee "$OUTPUT_FILE"
 sync
-update_last_failing_files
