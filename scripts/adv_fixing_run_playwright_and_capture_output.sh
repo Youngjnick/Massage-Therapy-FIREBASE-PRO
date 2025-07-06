@@ -50,10 +50,48 @@ if [[ $? -ne 0 ]]; then
   exit 1
 fi
 
-echo "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[s]ingle/[r]epeat/[c]lear/[h]elp, default: all): "
-read -r choice
-echo "[DEBUG] Choice selected: $choice"
-choice=${choice:-a}
+# Improved menu prompt for test options
+show_menu_and_get_choice() {
+  echo "\nWhich tests do you want to run?"
+  echo "  1) [a]ll           - Run all Playwright tests (default)"
+  echo "  2) [f]ailed        - Run only last failed test files (from output), with options to rerun, CI mode, debug, bisect, or run only failing lines"
+  echo "  3) [p]riorities    - Run prioritized test files (from env or last failed)"
+  echo "  4) [s]elect        - Run by file, pattern, tag or description (ex. @fast)"
+  echo "  5) [c]hanged       - Run tests for changed/staged files (since last commit/branch or staged for commit)"
+  echo "  6) [r]epeat        - Repeat the last run (from output)"
+  echo "  7) [c]lear         - Clear last failing and output files"
+  echo "  8) [h]elp          - Show help message"
+  echo "  9) [u]ntested      - Run only untested test files"
+  echo " 10) [update-snapshots] - Run tests with --update-snapshots"
+  echo " 11) [coverage]      - Run with code coverage enabled"
+  echo " 12) [s]tats         - List all test files, status, and show statistics"
+  echo " 13) [w]atch         - Watch mode: re-run tests on file changes"
+  echo ""
+  echo "Enter a number (1-13) or letter/keyword (default: 1): "
+  read -r menu_choice
+  menu_choice=${menu_choice:-1}
+  # Remove [flaky] from menu and case
+  case $menu_choice in
+    1|a*) choice="a" ;;
+    2|f*) choice="f" ;;
+    3|p*) choice="p" ;;
+    4|s*) choice="s" ;;
+    5|c*) choice="changed" ;;
+    6|r*) choice="r" ;;
+    7|clear*) choice="clear" ;;
+    8|h*) choice="h" ;;
+    9|u*) choice="u" ;;
+    10|update-snapshots*) choice="update-snapshots" ;;
+    11|coverage*) choice="coverage" ;;
+    12|s) choice="stats" ;;
+    13|w*) choice="w" ;;
+    *) echo "[WARN] Invalid selection. Defaulting to all tests."; choice="a" ;;
+  esac
+}
+
+# Replace old prompt with improved menu
+show_menu_and_get_choice
+choice=$choice
 
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
@@ -66,43 +104,105 @@ fi
 # [f]ailed mode: run only last-failing test files (now from OUTPUT_FILE)
 if [[ "$choice" == "f"* ]]; then
   failed_files=( $(get_failed_test_files) )
-  if [[ ${#failed_files[@]} -gt 0 ]]; then
-    echo "[INFO] Running last-failing test files: ${failed_files[*]}"
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${failed_files[@]}" | tee "$OUTPUT_FILE"
-    exit 0
-  else
+  if [[ ${#failed_files[@]} -eq 0 ]]; then
     echo "[INFO] No last-failing test files found in $OUTPUT_FILE."
     exit 0
   fi
+  echo "Choose how to handle failed tests:"
+  echo "  1) Rerun failed tests (normal)"
+  echo "  2) Rerun failed tests (CI mode: fail on any test failure, output summary)"
+  echo "  3) Debug first failed test"
+  echo "  4) Bisect for flaky test (Playwright bisect mode)"
+  echo "  5) Run only failing test lines (file:line) from last run (if supported)"
+  echo "     (or type 'fl', 'flaky', or 'x' to select bisect or failed-lines mode)"
+  read -r failed_mode
+  failed_mode=${failed_mode:-1}
+  if [[ "$failed_mode" == "5" || "$failed_mode" == "x"* ]]; then
+    if [[ -s "$LAST_FAILING_FILE" ]]; then
+      failed_lines=( )
+      while IFS= read -r line; do
+        [[ -n "$line" ]] && failed_lines+=("$line")
+      done < "$LAST_FAILING_FILE"
+      if [[ ${#failed_lines[@]} -gt 0 ]]; then
+        echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
+        PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
+        sync
+        exit 0
+      else
+        echo "[INFO] No failing test lines found."
+        exit 0
+      fi
+    else
+      echo "[INFO] No last failing file found."
+      exit 0
+    fi
+  fi
+  if [[ "$failed_mode" == "4" || "$failed_mode" == "fl"* ]]; then
+    first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
+    if [[ -n "$first_failed" ]]; then
+      echo "[INFO] Running Playwright bisect mode on: $first_failed"
+      npx playwright test --bisect "$first_failed"
+    else
+      echo "[INFO] No failed test found in output."
+    fi
+    exit 0
+  fi
+  if [[ "$failed_mode" == "3" ]]; then
+    first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
+    if [[ -n "$first_failed" ]]; then
+      echo "[INFO] First failed test file: $first_failed"
+      PWDEBUG=1 npx playwright test --headed --reporter=list "$first_failed"
+    else
+      echo "[INFO] No failed test found in output."
+    fi
+    exit 0
+  fi
+  if [[ "$failed_mode" == "2" ]]; then
+    echo "[INFO] Running last-failing test files in CI mode: ${failed_files[*]}"
+    PW_HEADLESS=1 npx playwright test --reporter=list --project="Desktop Chrome" "${failed_files[@]}" | tee "$OUTPUT_FILE"
+    status=$?
+    echo "\n[CI SUMMARY]"
+    grep -E '^[✓✘]' "$OUTPUT_FILE" || true
+    if [[ $status -ne 0 ]]; then
+      echo "[CI] Test failures detected. Exiting with error."
+      exit 1
+    else
+      echo "[CI] All tests passed."
+      exit 0
+    fi
+  fi
+  # Optionally stop on first failed test
+  echo "Stop on first failed test? ([y]/n, default: y): "
+  read -r stop_on_first
+  stop_on_first=${stop_on_first:-y}
+  extra_args=""
+  if [[ "$stop_on_first" == "y"* ]]; then
+    extra_args="--max-failures=1"
+  fi
+  echo "[INFO] Running last-failing test files: ${failed_files[*]}"
+  PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" $extra_args "${failed_files[@]}" | tee "$OUTPUT_FILE"
+  exit 0
 fi
 
 # 10. Help mode
 if [[ "$choice" == "h"* ]]; then
   echo "\nUsage:"
   echo "  [a]ll      - Run all Playwright tests (default)"
-  echo "  [f]ailed   - Run only last failed test files (from $OUTPUT_FILE)"
+  echo "  [f]ailed   - Run only last failed test files (from output), with options to rerun, CI mode, debug, or bisect for flakiness"
   echo "  [p]riorities - Run prioritized test files (from env or last failed)"
   echo "  [x]failed-lines - Run only failing test lines (file:line) from last run (if supported)"
-  echo "  [d]ebug    - Debug a test file (PWDEBUG=1)"
-  echo "  [l]ist     - List all test files and their status (pass/fail/untested), warn on new/deleted"
-  echo "  [m]atch    - Run tests matching a pattern (substring/regex)"
-  echo "  [o]nly     - Run only a specific test name/description (Playwright --grep)"
-  echo "  [flaky]    - Run Playwright's bisect mode to find flaky tests"
-  echo "  [g]it-diff - Run only changed test files since last commit/branch"
-  echo "  [ci]       - CI mode: fail on any test failure, output summary, warn on new/deleted, upload artifacts"
-  echo "  [s]tats    - Show test run statistics (total, pass, fail, slowest, etc.)"
-  echo "  [q]uick    - Run only @fast-tagged tests"
-  echo "  [w]atch    - Watch mode: re-run tests on file changes"
+  echo "  [d]ebug    - Debug a test file (prompt for file, or last failed)"
+  echo "  [s]tats    - List all test files, status, and show statistics (summary of pass/fail/untested and slowest tests)"
+  echo "  [s]elect   - Run by file, pattern, tag, or description (e.g. filename, @fast, or test name)"
+  echo "  [w]atch    - Watch mode: re-run tests on file changes automatically"
   echo "  [u]ntested - Run only untested test files (not present in last run output)"
-  echo "  [update-snapshots] - Run tests with --update-snapshots"
-  echo "  [coverage] - Run with code coverage enabled and output summary"
+  echo "  [update-snapshots] - Run tests with --update-snapshots to update snapshots"
+  echo "  [coverage] - Run with code coverage enabled and output summary (requires setup)"
   echo "  [precommit] - Run only staged/changed tests before commit/push, block if any fail"
-  echo "  [html]     - Open HTML report in browser after run"
-  echo "  [faildebug] - After a failed run, prompt to debug first failed test"
-  echo "  [s]ingle   - Run a single test file (prompt for filename)"
-  echo "  [r]epeat   - Repeat the last run (from $OUTPUT_FILE)"
+  echo "  [html]     - Open HTML report in browser after run (if available)"
+  echo "  [r]epeat   - Repeat the last run (from output)"
   echo "  [c]lear    - Clear last failing and output files (optionally clear Playwright cache)"
-  echo "  [h]elp     - Show this help message\n"
+  echo "  [h]elp     - Show this help message with descriptions for all test modes\n"
   exit 0
 fi
 
@@ -161,65 +261,6 @@ if [[ "$choice" == "coverage"* ]]; then
   exit 0
 fi
 
-# [precommit] mode: run only staged/changed tests
-if [[ "$choice" == "precommit"* ]]; then
-  staged_files=( $(git diff --cached --name-only | grep -E '^e2e/.*\\.spec\\.[tj]s$') )
-  changed_files=( $(git diff --name-only HEAD | grep -E '^e2e/.*\\.spec\\.[tj]s$') )
-  files=( "${staged_files[@]}" "${changed_files[@]}" )
-  unique_files=( $(printf "%s\n" "${files[@]}" | sort -u) )
-  if [[ ${#unique_files[@]} -gt 0 ]]; then
-    echo "[INFO] Running staged/changed test files: ${unique_files[*]}"
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${unique_files[@]}"
-    sync
-    if grep -q '✘' "$OUTPUT_FILE"; then
-      echo "[ERROR] Pre-commit/push tests failed. Aborting."
-      exit 1
-    fi
-    exit 0
-  else
-    echo "[INFO] No staged or changed test files detected."
-    exit 0
-  fi
-fi
-
-# [faildebug] mode: after a failed run, prompt to debug first failed test
-if [[ "$choice" == "faildebug"* ]]; then
-  if grep -q '✘' "$OUTPUT_FILE"; then
-    first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
-    echo "[INFO] First failed test file: $first_failed"
-    echo "Do you want to debug it now? ([y]/n): "
-    read -r debug_now
-    debug_now=${debug_now:-y}
-    if [[ "$debug_now" == "y"* ]]; then
-      PWDEBUG=1 npx playwright test --headed --reporter=list "$first_failed"
-    fi
-    exit 0
-  else
-    echo "[INFO] No failed tests in last run."
-    exit 0
-  fi
-fi
-
-# [l]ist and [ci] warn on new/deleted test files
-if [[ "$choice" == "l"* || "$choice" == "ci"* ]]; then
-  all_test_files=( $(ls e2e/*.spec.*[tj]s 2>/dev/null) )
-  output_files=( $(grep -Eo 'e2e/[^ >]*\.spec\.[tj]s' "$OUTPUT_FILE" | sort -u) )
-  for f in "${all_test_files[@]}"; do
-    found=false
-    for of in "${output_files[@]}"; do
-      if [[ "$f" == "$of" ]]; then found=true; break; fi
-    done
-    if ! $found; then echo "[WARN] New test file never run: $f"; fi
-  done
-  for of in "${output_files[@]}"; do
-    found=false
-    for f in "${all_test_files[@]}"; do
-      if [[ "$of" == "$f" ]]; then found=true; break; fi
-    done
-    if ! $found; then echo "[WARN] Test file in output but missing: $of"; fi
-  done
-fi
-
 # [x]failed-lines mode
 if [[ "$choice" == "x"* ]]; then
   if [[ -s "$LAST_FAILING_FILE" ]]; then
@@ -259,8 +300,8 @@ if [[ "$choice" == "d"* ]]; then
   fi
 fi
 
-# [l]ist mode
-if [[ "$choice" == "l"* ]]; then
+# [s]tats mode: show test run statistics and list all test files/status
+if [[ "$choice" == "s"* ]]; then
   all_test_files=( $(ls e2e/*.spec.*[tj]s 2>/dev/null) )
   passing_files=()
   failing_files=()
@@ -278,90 +319,6 @@ if [[ "$choice" == "l"* ]]; then
       echo "[UNTESTED] $f"
     fi
   done
-  exit 0
-fi
-
-# [m]atch mode
-if [[ "$choice" == "m"* ]]; then
-  echo "Enter a substring or regex to match test files: "
-  read -r pattern
-  matched_files=( )
-  for f in e2e/*.spec.*[tj]s; do
-    if [[ "$f" =~ $pattern ]]; then
-      matched_files+=("$f")
-    fi
-  done
-  if [[ ${#matched_files[@]} -gt 0 ]]; then
-    echo "[INFO] Running matched test files: ${matched_files[*]}"
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${matched_files[@]}"
-    sync
-    exit 0
-  else
-    echo "[INFO] No test files matched pattern: $pattern"
-    exit 0
-  fi
-fi
-
-# [o]nly mode
-if [[ "$choice" == "o"* ]]; then
-  echo "Enter a test name or description to grep: "
-  read -r grep_pattern
-  if [[ -n "$grep_pattern" ]]; then
-    echo "[INFO] Running tests matching: $grep_pattern"
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" -g "$grep_pattern"
-    sync
-    exit 0
-  else
-    echo "[ERROR] No grep pattern provided."
-    exit 1
-  fi
-fi
-
-# [flaky] mode
-if [[ "$choice" == "flaky"* ]]; then
-  echo "Enter the test file to bisect for flakiness (e.g. e2e/your-test.spec.ts): "
-  read -r flaky_file
-  if [[ -n "$flaky_file" ]]; then
-    echo "[INFO] Running Playwright bisect mode on: $flaky_file"
-    npx playwright test --bisect "$flaky_file"
-    exit 0
-  else
-    echo "[ERROR] No file provided."
-    exit 1
-  fi
-fi
-
-# [g]it-diff mode
-if [[ "$choice" == "g"* ]]; then
-  changed_files=( $(git diff --name-only HEAD | grep -E '^e2e/.*\\.spec\\.[tj]s$') )
-  if [[ ${#changed_files[@]} -gt 0 ]]; then
-    echo "[INFO] Running changed test files: ${changed_files[*]}"
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${changed_files[@]}"
-    sync
-    exit 0
-  else
-    echo "[INFO] No changed test files detected."
-    exit 0
-  fi
-fi
-
-# [ci] mode
-if [[ "$choice" == "ci"* ]]; then
-  PW_HEADLESS=1 npx playwright test --reporter=list | tee "$OUTPUT_FILE"
-  status=$?
-  echo "\n[CI SUMMARY]"
-  grep -E '^[✓✘]' "$OUTPUT_FILE" || true
-  if [[ $status -ne 0 ]]; then
-    echo "[CI] Test failures detected. Exiting with error."
-    exit 1
-  else
-    echo "[CI] All tests passed."
-    exit 0
-  fi
-fi
-
-# [s]tats mode
-if [[ "$choice" == "s"* && "$choice" != "single"* ]]; then
   total=$(grep -E '^[✓✘]' "$OUTPUT_FILE" | wc -l | xargs)
   passed=$(grep -E '^✓' "$OUTPUT_FILE" | wc -l | xargs)
   failed=$(grep -E '^✘' "$OUTPUT_FILE" | wc -l | xargs)
@@ -372,14 +329,6 @@ if [[ "$choice" == "s"* && "$choice" != "single"* ]]; then
   echo "  Failed: $failed"
   echo "  Slowest tests:"
   echo "$slowest"
-  exit 0
-fi
-
-# [q]uick mode
-if [[ "$choice" == "q"* ]]; then
-  echo "[INFO] Running only @fast-tagged tests."
-  PW_HEADLESS=0 npx playwright test --grep "@fast" --headed --reporter=list --project="Desktop Chrome"
-  sync
   exit 0
 fi
 
