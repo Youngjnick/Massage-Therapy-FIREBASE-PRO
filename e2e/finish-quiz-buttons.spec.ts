@@ -4,6 +4,7 @@
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 import { getTestUser } from './helpers/getTestUser';
+import { getUserStats } from './helpers/getUserStats';
 
 let testUser;
 test.beforeAll(async () => {
@@ -76,6 +77,20 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     // Results screen should be visible
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     console.log('[E2E PROGRESS] Quiz results are visible');
+
+    // --- Firestore stat check ---
+    // Get user UID from localStorage
+    const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    expect(userUid).toBeTruthy();
+    // Poll Firestore for analytics.completed increment
+    let analytics = null;
+    for (let i = 0; i < 10; i++) {
+      analytics = await getUserStats(userUid);
+      if (analytics && typeof analytics.completed === 'number' && analytics.completed > 0) break;
+      await page.waitForTimeout(1000);
+    }
+    expect(analytics && analytics.completed > 0).toBeTruthy();
+    console.log('[E2E DEBUG] Firestore analytics after finish:', analytics);
   });
 
   test('shows Finish Quiz button and works as expected', async ({ page }) => {
@@ -94,6 +109,17 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     await finishBtnEarly.click();
     // Should see quiz results
     await expect(page.getByTestId('quiz-results')).toBeVisible();
+    // --- Firestore stat check ---
+    const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    expect(userUid).toBeTruthy();
+    let analytics = null;
+    for (let i = 0; i < 10; i++) {
+      analytics = await getUserStats(userUid);
+      if (analytics && typeof analytics.completed === 'number' && analytics.completed > 0) break;
+      await page.waitForTimeout(1000);
+    }
+    expect(analytics && analytics.completed > 0).toBeTruthy();
+    console.log('[E2E DEBUG] Firestore analytics after finish:', analytics);
     // Start another quiz for normal finish
     await page.getByRole('button', { name: /start new quiz/i }).click();
     // Re-query the quiz length input after DOM update
@@ -124,5 +150,16 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     console.log('[E2E PROGRESS] Clicked Finish Quiz button');
     // Results screen should be visible
     await expect(page.getByTestId('quiz-results')).toBeVisible();
+    // --- Firestore stat check ---
+    const userUid2 = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+    expect(userUid2).toBeTruthy();
+    let analytics2 = null;
+    for (let i = 0; i < 10; i++) {
+      analytics2 = await getUserStats(userUid2);
+      if (analytics2 && typeof analytics2.completed === 'number' && analytics2.completed > 0) break;
+      await page.waitForTimeout(1000);
+    }
+    expect(analytics2 && analytics2.completed > 0).toBeTruthy();
+    console.log('[E2E DEBUG] Firestore analytics after finish:', analytics2);
   });
 });
