@@ -47,9 +47,28 @@ if ! command -v npx &>/dev/null || ! npx --no-install playwright --version &>/de
   exit 1
 fi
 
-# 2. Clearer User Prompts with default
-# Lint and typecheck before prompting for test mode
-npm run lint && npx tsc --noEmit
+# 2. Lint and typecheck before prompting for test mode, with spinner only (no extra progress bar from npm)
+show_spinner() {
+  local pid=$1
+  local delay=0.1
+  local spinstr='|/-\\'
+  while kill -0 $pid 2>/dev/null; do
+    local temp=${spinstr#?}
+    printf " [%c]  " "$spinstr"
+    spinstr=$temp${spinstr%"$temp"}
+    sleep $delay
+    printf "\b\b\b\b\b\b"
+  done
+  printf "    \b\b\b\b"
+}
+
+echo "[INFO] Running lint and typecheck before showing test menu (this may take a few seconds)..."
+(
+  npx eslint . --ext .js,.jsx,.ts,.tsx && npx tsc --noEmit
+) &
+spinner_pid=$!
+show_spinner $spinner_pid
+wait $spinner_pid
 if [[ $? -ne 0 ]]; then
   echo "[ERROR] Lint or typecheck failed. Aborting test run."
   exit 1
