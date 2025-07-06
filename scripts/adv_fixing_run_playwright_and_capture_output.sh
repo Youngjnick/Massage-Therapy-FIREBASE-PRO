@@ -1,5 +1,10 @@
 #!/bin/zsh
-set -x
+# Usage: ./adv_fixing_run_playwright_and_capture_output.sh [--debug]
+# Pass --debug to enable shell tracing (set -x)
+
+if [[ "$1" == "--debug" || "$1" == "--trace" ]]; then
+  set -x
+fi
 
 # Remove GNU tool checks and advanced shell logic, use Python for reporting
 
@@ -53,18 +58,18 @@ fi
 # Improved menu prompt for test options
 show_menu_and_get_choice() {
   echo "\nWhich tests do you want to run?"
-  echo "  1) [a]ll           - Run all Playwright tests (default)"
-  echo "  2) [f]ailed        - Run only last failed test files (from output), with options to rerun, CI mode, debug, bisect, or run only failing lines"
-  echo "  3) [s]elect        - Run by file, pattern, tag or description (ex. @fast)"
-  echo "  4) [c]hanged       - Run tests for changed/staged files (since last commit/branch or staged for commit)"
-  echo "  5) [r]epeat        - Repeat the last run (from output)"
-  echo "  6) [cl]ear        - Clear last failing and output files"
-  echo "  7) [h]elp          - Show help message"
-  echo "  8) [u]ntested      - Run only untested test files"
-  echo "  9) [update-snapshots] - Run tests with --update-snapshots"
-  echo " 10) [coverage]      - Run with code coverage enabled"
-  echo " 11) [l]ist          - List all test files, status, and show statistics"
-  echo " 12) [w]atch         - Watch mode: re-run tests on file changes"
+  echo "  1) [a]ll             - Run all Playwright tests (default)"
+  echo "  2) [f]ailed          - Run last failed tests (rerun, CI, debug, bisect, failed-lines)"
+  echo "  3) [s]elect          - Run by file, pattern, tag, or description (e.g.@fast)"
+  echo "  4) [u]ntested        - Run only untested test files"
+  echo "  5) [c]hanged         - Run tests for changed or staged files (since last commit)"
+  echo "  6) [r]epeat          - Repeat the last run (from output)"
+  echo "  7) [l]ist            - List all test files, status, and show statistics"
+  echo "  8) [co]verage        - Run with code coverage enabled to identify untested code"
+  echo "  9) [w]atch           - Watch mode: re-run tests automatically on file changes"
+  echo " 10) [up]date-snapshots- Run tests with --update-snapshots"
+  echo " 11) [cl]ear           - Clear last failing and output files"
+  echo " 12) [h]elp            - Show help message"
   echo ""
   echo "Enter a number (1-12) or letter/keyword (default: 1): "
   read -r menu_choice
@@ -74,15 +79,15 @@ show_menu_and_get_choice() {
     1|a*) choice="a" ;;
     2|f*) choice="f" ;;
     3|s*) choice="s" ;;
-    4|c*) choice="changed" ;;
-    5|r*) choice="r" ;;
-    6|cl*|clear*) choice="clear" ;;
-    7|h*) choice="h" ;;
-    8|u*) choice="u" ;;
-    9|update-snapshots*) choice="update-snapshots" ;;
-    10|coverage*) choice="coverage" ;;
-    11|l*) choice="l" ;;
-    12|w*) choice="w" ;;
+    4|u*) choice="u" ;;
+    5|c*) choice="changed" ;;
+    6|r*) choice="r" ;;
+    7|l*) choice="l" ;;
+    8|co*) choice="coverage" ;;
+    9|w*) choice="w" ;;
+    10|up*) choice="update-snapshots" ;;
+    11|cl*|clear*) choice="clear" ;;
+    12|h*) choice="h" ;;
     *) echo "[WARN] Invalid selection. Defaulting to all tests."; choice="a" ;;
   esac
 }
