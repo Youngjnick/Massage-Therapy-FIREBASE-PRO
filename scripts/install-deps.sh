@@ -49,3 +49,8 @@ if ! command -v gawk >/dev/null 2>&1; then
 else
   echo "gawk is already installed."
 fi
+
+echo "Installing Playwright/Vite code coverage dev dependencies..."
+npm install --save-dev vite-plugin-istanbul nyc @cypress/code-coverage
+# Optionally: playwright-coverage (for advanced scenarios)
+# npm install --save-dev playwright-coverage
