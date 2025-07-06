@@ -6943,3 +6943,720 @@ FetchError: request to http://localhost:9099/identitytoolkit.googleapis.com/v1/a
 
 
 --- End of Output ---
+
+===== 2025-07-06 18:45:42 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+FetchError: request to http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signUp?key=fake-api-key&projectId=massage-therapy-smart-st-c7f8f failed, reason: 
+    at ClientRequest.<anonymous> (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/node_modules/node-fetch/lib/index.js:1501:11)
+
+
+--- End of Output ---
+
+===== 2025-07-06 18:46:48 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+FetchError: request to http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signUp?key=fake-api-key&projectId=massage-therapy-smart-st-c7f8f failed, reason: 
+    at ClientRequest.<anonymous> (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/node_modules/node-fetch/lib/index.js:1501:11)
+
+
+--- End of Output ---
+
+===== 2025-07-06 18:49:56 =====
+Total: 0
+Passed: 0
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+FetchError: request to http://localhost:9099/identitytoolkit.googleapis.com/v1/accounts:signUp?key=fake-api-key&projectId=massage-therapy-smart-st-c7f8f failed, reason: 
+    at ClientRequest.<anonymous> (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/node_modules/node-fetch/lib/index.js:1501:11)
+
+
+--- End of Output ---
+
+===== 2025-07-06 18:51:31 =====
+Total: 45
+Passed: 2
+Failed: 43
+Failed locations: e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:94:3, e2e/app-accessibility-full.spec.ts:94:3, e2e/app-accessibility-full.spec.ts:119:3, e2e/app-accessibility-full.spec.ts:119:3, e2e/app.spec.ts:42:1, e2e/app.spec.ts:42:1, e2e/app.spec.ts:152:1, e2e/app.spec.ts:152:1, e2e/app.spec.ts:215:1, e2e/app.spec.ts:215:1, e2e/app.spec.ts:276:1, e2e/app.spec.ts:276:1, e2e/app.spec.ts:302:1, e2e/app.spec.ts:302:1, e2e/app.spec.ts:312:1, e2e/app.spec.ts:312:1, e2e/app.spec.ts:330:1, e2e/app.spec.ts:330:1, e2e/app.spec.ts:388:1, e2e/app.spec.ts:388:1, e2e/aria-roles-labels.spec.ts:39:3, e2e/aria-roles-labels.spec.ts:39:3, e2e/aria-roles-labels.spec.ts:118:3, e2e/aria-roles-labels.spec.ts:118:3, e2e/assets-troubleshoot.spec.ts:24:3, e2e/assets-troubleshoot.spec.ts:24:3, e2e/assets-troubleshoot.spec.ts:30:3, e2e/assets-troubleshoot.spec.ts:30:3, e2e/assets-troubleshoot.spec.ts:58:3, e2e/assets-troubleshoot.spec.ts:58:3, e2e/auth-session-persistence.spec.ts:19:3
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-cqw7fapq@gmail.com created successfully. UID: LVpVuQDHD5k1mmOLydNJe06SE1Cc
+Firestore user doc created for testuserc-cqw7fapq@gmail.com (uid: LVpVuQDHD5k1mmOLydNJe06SE1Cc)
+User testuserd-vvog5l0m@gmail.com created successfully. UID: jROsQYgF8O99gOkvUxoNBAumCy6Q
+Firestore user doc created for testuserd-vvog5l0m@gmail.com (uid: jROsQYgF8O99gOkvUxoNBAumCy6Q)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-cqw7fapq@gmail.com",
+    "password": "testuserC",
+    "uid": "LVpVuQDHD5k1mmOLydNJe06SE1Cc"
+  },
+  {
+    "email": "testuserd-vvog5l0m@gmail.com",
+    "password": "testuserD",
+    "uid": "jROsQYgF8O99gOkvUxoNBAumCy6Q"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+  ✘  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (1ms)
+  ✘  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (1ms)
+  ✘  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (1ms)
+  ✘  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  7 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (1ms)
+  ✘  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (1ms)
+  ✘  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  11 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (1ms)
+  ✘  12 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1ms)
+  ✘  13 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (1ms)
+  ✘  14 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (retry #1) (1ms)
+  ✘  15 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (1ms)
+  ✘  16 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (retry #1) (1ms)
+  ✘  17 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (1ms)
+  ✘  18 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (retry #1) (1ms)
+  ✘  19 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (1ms)
+  ✘  20 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (retry #1) (1ms)
+  ✘  21 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (1ms)
+  ✘  22 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (retry #1) (1ms)
+  ✘  23 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (1ms)
+  ✘  24 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (retry #1) (1ms)
+  ✘  25 [Desktop Chrome] › e2e/app.spec.ts:302:1 › should render and be usable on mobile viewport (1ms)
+  ✘  26 [Desktop Chrome] › e2e/app.spec.ts:302:1 › should render and be usable on mobile viewport (retry #1) (1ms)
+  ✘  27 [Desktop Chrome] › e2e/app.spec.ts:312:1 › should load all referenced badge images on Achievements page (2ms)
+  ✘  28 [Desktop Chrome] › e2e/app.spec.ts:312:1 › should load all referenced badge images on Achievements page (retry #1) (1ms)
+  ✘  29 [Desktop Chrome] › e2e/app.spec.ts:330:1 › should show fallback badge image if badge image fails to load (1ms)
+  ✘  30 [Desktop Chrome] › e2e/app.spec.ts:330:1 › should show fallback badge image if badge image fails to load (retry #1) (1ms)
+  -  31 [Desktop Chrome] › e2e/app.spec.ts:361:6 › should load favicon, app icon, and default avatar image
+  ✘  32 [Desktop Chrome] › e2e/app.spec.ts:388:1 › should navigate to all main pages via NavBar and route correctly (1ms)
+  ✘  33 [Desktop Chrome] › e2e/app.spec.ts:388:1 › should navigate to all main pages via NavBar and route correctly (retry #1) (1ms)
+  ✘  34 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:39:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels (1ms)
+  ✘  35 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:39:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels (retry #1) (1ms)
+  ✘  36 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:118:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (1ms)
+  ✘  37 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:118:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (retry #1) (1ms)
+  ✓  38 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (57ms)
+  ✓  39 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (0ms)
+  -  40 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:10:8 › Development Asset Troubleshooting › Badge image is accessible directly
+  ✘  41 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (0ms)
+  ✘  42 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (retry #1) (1ms)
+  ✘  43 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (1ms)
+  ✘  44 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (retry #1) (1ms)
+  ✘  45 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (1ms)
+  ✘  46 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (retry #1) (1ms)
+  ✘  47 [Desktop Chrome] › e2e/auth-session-persistence.spec.ts:19:3 › Auth Session Persistence › should persist session after reload (1ms)
+
+--- End of Output ---
+
+===== 2025-07-06 18:51:31 =====
+Total: 45
+Passed: 2
+Failed: 43
+Failed locations: e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:94:3, e2e/app-accessibility-full.spec.ts:94:3, e2e/app-accessibility-full.spec.ts:119:3, e2e/app-accessibility-full.spec.ts:119:3, e2e/app.spec.ts:42:1, e2e/app.spec.ts:42:1, e2e/app.spec.ts:152:1, e2e/app.spec.ts:152:1, e2e/app.spec.ts:215:1, e2e/app.spec.ts:215:1, e2e/app.spec.ts:276:1, e2e/app.spec.ts:276:1, e2e/app.spec.ts:302:1, e2e/app.spec.ts:302:1, e2e/app.spec.ts:312:1, e2e/app.spec.ts:312:1, e2e/app.spec.ts:330:1, e2e/app.spec.ts:330:1, e2e/app.spec.ts:388:1, e2e/app.spec.ts:388:1, e2e/aria-roles-labels.spec.ts:39:3, e2e/aria-roles-labels.spec.ts:39:3, e2e/aria-roles-labels.spec.ts:118:3, e2e/aria-roles-labels.spec.ts:118:3, e2e/assets-troubleshoot.spec.ts:24:3, e2e/assets-troubleshoot.spec.ts:24:3, e2e/assets-troubleshoot.spec.ts:30:3, e2e/assets-troubleshoot.spec.ts:30:3, e2e/assets-troubleshoot.spec.ts:58:3, e2e/assets-troubleshoot.spec.ts:58:3, e2e/auth-session-persistence.spec.ts:19:3
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-cqw7fapq@gmail.com created successfully. UID: LVpVuQDHD5k1mmOLydNJe06SE1Cc
+Firestore user doc created for testuserc-cqw7fapq@gmail.com (uid: LVpVuQDHD5k1mmOLydNJe06SE1Cc)
+User testuserd-vvog5l0m@gmail.com created successfully. UID: jROsQYgF8O99gOkvUxoNBAumCy6Q
+Firestore user doc created for testuserd-vvog5l0m@gmail.com (uid: jROsQYgF8O99gOkvUxoNBAumCy6Q)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-cqw7fapq@gmail.com",
+    "password": "testuserC",
+    "uid": "LVpVuQDHD5k1mmOLydNJe06SE1Cc"
+  },
+  {
+    "email": "testuserd-vvog5l0m@gmail.com",
+    "password": "testuserD",
+    "uid": "jROsQYgF8O99gOkvUxoNBAumCy6Q"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+  ✘  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (1ms)
+  ✘  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (1ms)
+  ✘  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (1ms)
+  ✘  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  7 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (1ms)
+  ✘  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (1ms)
+  ✘  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  11 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (1ms)
+  ✘  12 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1ms)
+  ✘  13 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (1ms)
+  ✘  14 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (retry #1) (1ms)
+  ✘  15 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (1ms)
+  ✘  16 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (retry #1) (1ms)
+  ✘  17 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (1ms)
+  ✘  18 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (retry #1) (1ms)
+  ✘  19 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (1ms)
+  ✘  20 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (retry #1) (1ms)
+  ✘  21 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (1ms)
+  ✘  22 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (retry #1) (1ms)
+  ✘  23 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (1ms)
+  ✘  24 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (retry #1) (1ms)
+  ✘  25 [Desktop Chrome] › e2e/app.spec.ts:302:1 › should render and be usable on mobile viewport (1ms)
+  ✘  26 [Desktop Chrome] › e2e/app.spec.ts:302:1 › should render and be usable on mobile viewport (retry #1) (1ms)
+  ✘  27 [Desktop Chrome] › e2e/app.spec.ts:312:1 › should load all referenced badge images on Achievements page (2ms)
+  ✘  28 [Desktop Chrome] › e2e/app.spec.ts:312:1 › should load all referenced badge images on Achievements page (retry #1) (1ms)
+  ✘  29 [Desktop Chrome] › e2e/app.spec.ts:330:1 › should show fallback badge image if badge image fails to load (1ms)
+  ✘  30 [Desktop Chrome] › e2e/app.spec.ts:330:1 › should show fallback badge image if badge image fails to load (retry #1) (1ms)
+  -  31 [Desktop Chrome] › e2e/app.spec.ts:361:6 › should load favicon, app icon, and default avatar image
+  ✘  32 [Desktop Chrome] › e2e/app.spec.ts:388:1 › should navigate to all main pages via NavBar and route correctly (1ms)
+  ✘  33 [Desktop Chrome] › e2e/app.spec.ts:388:1 › should navigate to all main pages via NavBar and route correctly (retry #1) (1ms)
+  ✘  34 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:39:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels (1ms)
+  ✘  35 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:39:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels (retry #1) (1ms)
+  ✘  36 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:118:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (1ms)
+  ✘  37 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:118:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (retry #1) (1ms)
+  ✓  38 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (57ms)
+  ✓  39 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (0ms)
+  -  40 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:10:8 › Development Asset Troubleshooting › Badge image is accessible directly
+  ✘  41 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (0ms)
+  ✘  42 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (retry #1) (1ms)
+  ✘  43 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (1ms)
+  ✘  44 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (retry #1) (1ms)
+  ✘  45 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (1ms)
+  ✘  46 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (retry #1) (1ms)
+  ✘  47 [Desktop Chrome] › e2e/auth-session-persistence.spec.ts:19:3 › Auth Session Persistence › should persist session after reload (1ms)
+
+--- End of Output ---
+
+===== 2025-07-06 18:52:37 =====
+Total: 14
+Passed: 0
+Failed: 14
+Failed locations: e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:94:3, e2e/app-accessibility-full.spec.ts:94:3
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-buybt0wj@gmail.com created successfully. UID: Agnx5GkHOlKfOTucHnTOoGkl9tus
+Firestore user doc created for testuserc-buybt0wj@gmail.com (uid: Agnx5GkHOlKfOTucHnTOoGkl9tus)
+User testuserd-9tuameji@gmail.com created successfully. UID: FdG1h71aQoNq13p3pZYQAJbYXOqL
+Firestore user doc created for testuserd-9tuameji@gmail.com (uid: FdG1h71aQoNq13p3pZYQAJbYXOqL)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-buybt0wj@gmail.com",
+    "password": "testuserC",
+    "uid": "Agnx5GkHOlKfOTucHnTOoGkl9tus"
+  },
+  {
+    "email": "testuserd-9tuameji@gmail.com",
+    "password": "testuserD",
+    "uid": "FdG1h71aQoNq13p3pZYQAJbYXOqL"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+
+Running 24 tests using 1 worker
+
+  ✘  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (1ms)
+  ✘  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (1ms)
+  ✘  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (1ms)
+  ✘  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  7 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (1ms)
+  ✘  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (1ms)
+  ✘  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  11 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (1ms)
+  ✘  12 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1ms)
+  ✘  13 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (1ms)
+  ✘  14 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (retry #1) (1ms)
+
+--- End of Output ---
+
+===== 2025-07-06 18:52:38 =====
+Total: 14
+Passed: 0
+Failed: 14
+Failed locations: e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/all-interactive-aria-accessibility.spec.ts:36:5, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:45:3, e2e/app-accessibility-full.spec.ts:94:3, e2e/app-accessibility-full.spec.ts:94:3
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-buybt0wj@gmail.com created successfully. UID: Agnx5GkHOlKfOTucHnTOoGkl9tus
+Firestore user doc created for testuserc-buybt0wj@gmail.com (uid: Agnx5GkHOlKfOTucHnTOoGkl9tus)
+User testuserd-9tuameji@gmail.com created successfully. UID: FdG1h71aQoNq13p3pZYQAJbYXOqL
+Firestore user doc created for testuserd-9tuameji@gmail.com (uid: FdG1h71aQoNq13p3pZYQAJbYXOqL)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-buybt0wj@gmail.com",
+    "password": "testuserC",
+    "uid": "Agnx5GkHOlKfOTucHnTOoGkl9tus"
+  },
+  {
+    "email": "testuserd-9tuameji@gmail.com",
+    "password": "testuserD",
+    "uid": "FdG1h71aQoNq13p3pZYQAJbYXOqL"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+
+Running 24 tests using 1 worker
+
+  ✘  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (1ms)
+  ✘  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (1ms)
+  ✘  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (1ms)
+  ✘  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  7 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (1ms)
+  ✘  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (1ms)
+  ✘  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (retry #1) (1ms)
+  ✘  11 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (1ms)
+  ✘  12 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (retry #1) (1ms)
+  ✘  13 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (1ms)
+  ✘  14 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (retry #1) (1ms)
+
+--- End of Output ---
+
+===== 2025-07-06 18:59:47 =====
+Total: 13
+Passed: 13
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-xeelrqoj@gmail.com created successfully. UID: BUsBHYy2bhoQT1bzPUfp04Qzg4WR
+Firestore user doc created for testuserc-xeelrqoj@gmail.com (uid: BUsBHYy2bhoQT1bzPUfp04Qzg4WR)
+User testuserd-q7tqewl1@gmail.com created successfully. UID: bog5aJvpwyiywNR4zhvNDbFhlxSW
+Firestore user doc created for testuserd-q7tqewl1@gmail.com (uid: bog5aJvpwyiywNR4zhvNDbFhlxSW)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-xeelrqoj@gmail.com",
+    "password": "testuserC",
+    "uid": "BUsBHYy2bhoQT1bzPUfp04Qzg4WR"
+  },
+  {
+    "email": "testuserd-q7tqewl1@gmail.com",
+    "password": "testuserD",
+    "uid": "bog5aJvpwyiywNR4zhvNDbFhlxSW"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (7.5s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.2s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.2s)
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (651ms)
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (5.8s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_001-0-0-2757bb7a-a891-470d-acd5-b3fa6815a2a7" aria-label="Option A: Pubic crest and pubic symphysis" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_001-0-2757bb7a-a891-470d-acd5-b3fa6815a2a7" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  9 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (7.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+[E2E DEBUG] Filling Quiz Length...
+[E2E DEBUG] Clicking Start button...
+[E2E DEBUG] Waiting for quiz question card to be visible...
+[E2E DEBUG] Quiz question card is visible.
+[E2E DEBUG] Clicking first option...
+[E2E DEBUG] Clicking second option...
+[E2E DEBUG] Clicking first option again...
+[E2E DEBUG] Clicking Finish button...
+[E2E DEBUG] Clicking Start New Quiz button...
+[E2E DEBUG] Filling Quiz Length again...
+[E2E DEBUG] Clicking Start button again...
+[E2E DEBUG] Waiting for quiz loading spinner to disappear...
+[E2E DEBUG] Quiz loading spinner is hidden.
+[E2E DEBUG] Waiting for quiz question card to be visible after restart...
+[E2E DEBUG] Quiz question card is visible after restart.
+[E2E DEBUG] After test: should handle edge case: rapid answer selection
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  10 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (5.9s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Quiz question object: {
+  id: [32m'abdominal_muscle_origins_009'[39m,
+  difficulty_rating: [1mnull[22m,
+  keywords: [ [32m'deep muscle'[39m, [32m'abdominal wall'[39m, [32m'stability'[39m ],
+  question: [32m'Which abdominal muscle is the deepest layer of the lateral abdominal wall?'[39m,
+  long_explanation: [32m'It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration.'[39m,
+  question_type: [1mnull[22m,
+  synonyms: [1mnull[22m,
+  topics: [ [32m'anatomy'[39m, [32m'origins'[39m, [32m'abdominal_muscle_origins'[39m ],
+  created_at: [1mnull[22m,
+  difficulty_adjustment: [1mnull[22m,
+  relevance_score: [1mnull[22m,
+  short_explanation: [32m'The transverse abdominis lies deepest in the abdominal wall.'[39m,
+  source_reference: [32m'Trail Guide to the Body – Biel'[39m,
+  tags: [ [32m'transverse'[39m, [32m'deep core'[39m, [32m'abdominals'[39m ],
+  difficulty: [32m'moderate'[39m,
+  filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+  updated_at: [1mnull[22m,
+  options: [
+    [32m'Transverse abdominis'[39m,
+    [32m'Internal oblique'[39m,
+    [32m'External oblique'[39m,
+    [32m'Rectus abdominis'[39m
+  ],
+  clinical_application: [32m'Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer.'[39m,
+  correctAnswer: [32m'Transverse abdominis'[39m
+}
+[E2E DEBUG] After test: should show explanations when enabled
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  11 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (5.4s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] After test: should show topic stats in results
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  12 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (5.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] After test: should render and be usable on mobile viewport
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  13 [Desktop Chrome] › e2e/app.spec.ts:302:1 › should render and be usable on mobile viewport (4.9s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 18:59:47 =====
+Total: 13
+Passed: 13
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-xeelrqoj@gmail.com created successfully. UID: BUsBHYy2bhoQT1bzPUfp04Qzg4WR
+Firestore user doc created for testuserc-xeelrqoj@gmail.com (uid: BUsBHYy2bhoQT1bzPUfp04Qzg4WR)
+User testuserd-q7tqewl1@gmail.com created successfully. UID: bog5aJvpwyiywNR4zhvNDbFhlxSW
+Firestore user doc created for testuserd-q7tqewl1@gmail.com (uid: bog5aJvpwyiywNR4zhvNDbFhlxSW)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-xeelrqoj@gmail.com",
+    "password": "testuserC",
+    "uid": "BUsBHYy2bhoQT1bzPUfp04Qzg4WR"
+  },
+  {
+    "email": "testuserd-q7tqewl1@gmail.com",
+    "password": "testuserD",
+    "uid": "bog5aJvpwyiywNR4zhvNDbFhlxSW"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (7.5s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles (3.2s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (6.2s)
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (651ms)
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (5.8s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_001-0-0-2757bb7a-a891-470d-acd5-b3fa6815a2a7" aria-label="Option A: Pubic crest and pubic symphysis" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_001-0-2757bb7a-a891-470d-acd5-b3fa6815a2a7" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  9 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (7.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+[E2E DEBUG] Filling Quiz Length...
+[E2E DEBUG] Clicking Start button...
+[E2E DEBUG] Waiting for quiz question card to be visible...
+[E2E DEBUG] Quiz question card is visible.
+[E2E DEBUG] Clicking first option...
+[E2E DEBUG] Clicking second option...
+[E2E DEBUG] Clicking first option again...
+[E2E DEBUG] Clicking Finish button...
+[E2E DEBUG] Clicking Start New Quiz button...
+[E2E DEBUG] Filling Quiz Length again...
+[E2E DEBUG] Clicking Start button again...
+[E2E DEBUG] Waiting for quiz loading spinner to disappear...
+[E2E DEBUG] Quiz loading spinner is hidden.
+[E2E DEBUG] Waiting for quiz question card to be visible after restart...
+[E2E DEBUG] Quiz question card is visible after restart.
+[E2E DEBUG] After test: should handle edge case: rapid answer selection
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  10 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (5.9s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Quiz question object: {
+  id: [32m'abdominal_muscle_origins_009'[39m,
+  difficulty_rating: [1mnull[22m,
+  keywords: [ [32m'deep muscle'[39m, [32m'abdominal wall'[39m, [32m'stability'[39m ],
+  question: [32m'Which abdominal muscle is the deepest layer of the lateral abdominal wall?'[39m,
+  long_explanation: [32m'It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration.'[39m,
+  question_type: [1mnull[22m,
+  synonyms: [1mnull[22m,
+  topics: [ [32m'anatomy'[39m, [32m'origins'[39m, [32m'abdominal_muscle_origins'[39m ],
+  created_at: [1mnull[22m,
+  difficulty_adjustment: [1mnull[22m,
+  relevance_score: [1mnull[22m,
+  short_explanation: [32m'The transverse abdominis lies deepest in the abdominal wall.'[39m,
+  source_reference: [32m'Trail Guide to the Body – Biel'[39m,
+  tags: [ [32m'transverse'[39m, [32m'deep core'[39m, [32m'abdominals'[39m ],
+  difficulty: [32m'moderate'[39m,
+  filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+  updated_at: [1mnull[22m,
+  options: [
+    [32m'Transverse abdominis'[39m,
+    [32m'Internal oblique'[39m,
+    [32m'External oblique'[39m,
+    [32m'Rectus abdominis'[39m
+  ],
+  clinical_application: [32m'Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer.'[39m,
+  correctAnswer: [32m'Transverse abdominis'[39m
+}
+[E2E DEBUG] After test: should show explanations when enabled
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  11 [Desktop Chrome] › e2e/app.spec.ts:215:1 › should show explanations when enabled (5.4s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] After test: should show topic stats in results
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  12 [Desktop Chrome] › e2e/app.spec.ts:276:1 › should show topic stats in results (5.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] After test: should render and be usable on mobile viewport
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  13 [Desktop Chrome] › e2e/app.spec.ts:302:1 › should render and be usable on mobile viewport (4.9s)
+[E2E DEBUG] About to sign in with test user: testuserc-xeelrqoj@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-xeelrqoj@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---

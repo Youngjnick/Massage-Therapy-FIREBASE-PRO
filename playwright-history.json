@@ -1,7 +1,250 @@
 {
-  "tests": [],
+  "tests": [
+    {
+      "status": "\u2713",
+      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+      "line": 36,
+      "col": 5,
+      "raw": "\u2713  1 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on / have accessible names and ARIA roles (7.5s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+      "line": 36,
+      "col": 5,
+      "raw": "\u2713  2 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on /quiz have accessible names and ARIA roles (3.3s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+      "line": 36,
+      "col": 5,
+      "raw": "\u2713  3 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on /achievements have accessible names and ARIA roles (3.3s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+      "line": 36,
+      "col": 5,
+      "raw": "\u2713  4 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on /analytics have accessible names and ARIA roles (3.1s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+      "line": 36,
+      "col": 5,
+      "raw": "\u2713  5 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on /profile have accessible names and ARIA roles (3.2s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app-accessibility-full.spec.ts",
+      "line": 45,
+      "col": 3,
+      "raw": "\u2713  6 [Desktop Chrome] \u203a e2e/app-accessibility-full.spec.ts:45:3 \u203a App Accessibility: Full Tab Order and ARIA Audit \u203a Tab through all main pages and assert focus order/visibility (6.2s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app-accessibility-full.spec.ts",
+      "line": 94,
+      "col": 3,
+      "raw": "\u2713  7 [Desktop Chrome] \u203a e2e/app-accessibility-full.spec.ts:94:3 \u203a App Accessibility: Full Tab Order and ARIA Audit \u203a No missing or duplicate ARIA labels/roles on main interactive elements (651ms)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app-accessibility-full.spec.ts",
+      "line": 119,
+      "col": 3,
+      "raw": "\u2713  8 [Desktop Chrome] \u203a e2e/app-accessibility-full.spec.ts:119:3 \u203a App Accessibility: Full Tab Order and ARIA Audit (Mobile) \u203a Tab through all main pages and assert focus order/visibility (Mobile) (5.8s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app.spec.ts",
+      "line": 42,
+      "col": 1,
+      "raw": "\u2713  9 [Desktop Chrome] \u203a e2e/app.spec.ts:42:1 \u203a should reset quiz and focus first option after restart (7.0s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app.spec.ts",
+      "line": 152,
+      "col": 1,
+      "raw": "\u2713  10 [Desktop Chrome] \u203a e2e/app.spec.ts:152:1 \u203a should handle edge case: rapid answer selection (5.9s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app.spec.ts",
+      "line": 215,
+      "col": 1,
+      "raw": "\u2713  11 [Desktop Chrome] \u203a e2e/app.spec.ts:215:1 \u203a should show explanations when enabled (5.4s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app.spec.ts",
+      "line": 276,
+      "col": 1,
+      "raw": "\u2713  12 [Desktop Chrome] \u203a e2e/app.spec.ts:276:1 \u203a should show topic stats in results (5.0s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/app.spec.ts",
+      "line": 302,
+      "col": 1,
+      "raw": "\u2713  13 [Desktop Chrome] \u203a e2e/app.spec.ts:302:1 \u203a should render and be usable on mobile viewport (4.9s)"
+    }
+  ],
   "errors": {},
-  "sequences": {},
+  "sequences": {
+    "e2e/all-interactive-aria-accessibility.spec.ts:36:5": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app-accessibility-full.spec.ts:45:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app-accessibility-full.spec.ts:94:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app-accessibility-full.spec.ts:119:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:42:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:152:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:215:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:276:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:302:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:312:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:330:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:388:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/aria-roles-labels.spec.ts:39:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/aria-roles-labels.spec.ts:118:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/assets-troubleshoot.spec.ts:24:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/assets-troubleshoot.spec.ts:30:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/assets-troubleshoot.spec.ts:58:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/auth-session-persistence.spec.ts:19:3": [
+      "\u2718",
+      "\u2718"
+    ]
+  },
   "trend": [
     {
       "date": "2025-07-06 18:10:45",
@@ -25,6 +268,60 @@
       "date": "2025-07-06 18:32:41",
       "total": 0,
       "passed": 0,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-06 18:45:42",
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-06 18:46:48",
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-06 18:49:56",
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-06 18:51:31",
+      "total": 45,
+      "passed": 2,
+      "failed": 43
+    },
+    {
+      "date": "2025-07-06 18:51:31",
+      "total": 45,
+      "passed": 2,
+      "failed": 43
+    },
+    {
+      "date": "2025-07-06 18:52:37",
+      "total": 14,
+      "passed": 0,
+      "failed": 14
+    },
+    {
+      "date": "2025-07-06 18:52:38",
+      "total": 14,
+      "passed": 0,
+      "failed": 14
+    },
+    {
+      "date": "2025-07-06 18:59:47",
+      "total": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-06 18:59:47",
+      "total": 13,
+      "passed": 13,
       "failed": 0
     }
   ]

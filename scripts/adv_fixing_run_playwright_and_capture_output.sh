@@ -47,11 +47,20 @@ if ! command -v npx &>/dev/null || ! npx --no-install playwright --version &>/de
   exit 1
 fi
 
-# 2. Lint and typecheck before prompting for test mode, with spinner only (no extra progress bar from npm)
+# 1b. Check for Playwright browser binaries
+missing_browsers=$(npx playwright install --check 2>&1 | grep -E 'Missing browsers|To install|run:|npx playwright install')
+if [[ -n "$missing_browsers" ]]; then
+  echo "[ERROR] Playwright browser binaries are missing."
+  echo "$missing_browsers"
+  echo "[ACTION] Please run: npx playwright install"
+  exit 1
+fi
+
+# 2. Start lint and typecheck in the background with spinner, but show menu immediately
 show_spinner() {
   local pid=$1
   local delay=0.1
-  local spinstr='|/-\\'
+  local spinstr='◐◓◑◒'
   while kill -0 $pid 2>/dev/null; do
     local temp=${spinstr#?}
     printf " [%c]  " "$spinstr"
@@ -62,19 +71,11 @@ show_spinner() {
   printf "    \b\b\b\b"
 }
 
-echo "[INFO] Running lint and typecheck before showing test menu (this may take a few seconds)..."
-(
-  npx eslint . --ext .js,.jsx,.ts,.tsx && npx tsc --noEmit
-) &
-spinner_pid=$!
-show_spinner $spinner_pid
-wait $spinner_pid
-if [[ $? -ne 0 ]]; then
-  echo "[ERROR] Lint or typecheck failed. Aborting test run."
-  exit 1
-fi
+# Start lint/typecheck in background
+(npx eslint . --ext .js,.jsx,.ts,.tsx && npx tsc --noEmit) &
+lint_pid=$!
 
-# Improved menu prompt for test options
+# Show menu immediately
 show_menu_and_get_choice() {
   echo "\nWhich tests do you want to run?"
   echo "  1) [a]ll             - Run all Playwright tests (default)"
@@ -111,9 +112,19 @@ show_menu_and_get_choice() {
   esac
 }
 
-# Replace old prompt with improved menu
 show_menu_and_get_choice
 choice=$choice
+
+# Wait for lint/typecheck to finish before running tests
+if kill -0 $lint_pid 2>/dev/null; then
+  echo "[INFO] Waiting for lint and typecheck to finish..."
+  show_spinner $lint_pid
+  wait $lint_pid
+fi
+if [[ $? -ne 0 ]]; then
+  echo "[ERROR] Lint or typecheck failed. Aborting test run."
+  exit 1
+fi
 
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
@@ -277,8 +288,8 @@ fi
 # [coverage] mode
 if [[ "$choice" == "coverage"* ]]; then
   echo "[INFO] Running tests with code coverage enabled."
-  echo "[NOTE] Playwright/Vite code coverage is not yet fully set up. You must configure vite-plugin-istanbul in vite.config.ts and ensure coverage is collected and reported. See project docs."
-  PW_HEADLESS=0 npx playwright test --coverage --headed --reporter=list --project="Desktop Chrome"
+  echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
+  COVERAGE=true PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome"
   exit 0
 fi
 
