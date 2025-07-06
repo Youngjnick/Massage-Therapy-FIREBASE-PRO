@@ -8,7 +8,7 @@ function update_last_failing_files() {
     # If there are no lines with '✘', all tests passed, so clear the last failing file
     if ! grep -q '✘' "$OUTPUT_FILE"; then
       echo "[DEBUG] No failures found (no '✘' in output). Clearing $LAST_FAILING_FILE."
-      > "$LAST_FAILING_FILE"
+      : > "$LAST_FAILING_FILE"
     else
       # Extract all failing test file:line pairs (strip column), portable for macOS
       grep -Eo 'e2e/[^ >]*\.spec\.[tc]s:[0-9]+:[0-9]+' "$OUTPUT_FILE" \
@@ -16,9 +16,6 @@ function update_last_failing_files() {
         | sort -u > "$LAST_FAILING_FILE"
     fi
     echo "[DEBUG] last-failing-playwright-files.txt contents:"
-    if [[ -s "$LAST_FAILING_FILE" ]]; then
-      cat "$LAST_FAILING_FILE"
-    fi
   else
     echo "[DEBUG] OUTPUT_FILE does not exist: $OUTPUT_FILE"
   fi
@@ -44,14 +41,19 @@ if ! command -v npx &>/dev/null || ! npx --no-install playwright --version &>/de
 fi
 
 # 2. Clearer User Prompts with default
-print "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[s]ingle/[r]epeat/[c]lear/[h]elp, default: all): "
+echo "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[s]ingle/[r]epeat/[c]lear/[h]elp, default: all): "
 read -r choice
 echo "[DEBUG] Choice selected: $choice"
 choice=${choice:-a}
 
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
-  > "$LAST_FAILING_FILE"
+  : > "$LAST_FAILING_FILE"
+  # Run all tests and exit immediately after
+  PW_HEADLESS=0 npx playwright test --headed --reporter=list | tee "$OUTPUT_FILE"
+  sync
+  update_last_failing_files
+  exit 0
 fi
 
 # 10. Help mode
@@ -182,7 +184,7 @@ if [[ "$choice" == "faildebug"* ]]; then
   if grep -q '✘' "$OUTPUT_FILE"; then
     first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
     echo "[INFO] First failed test file: $first_failed"
-    print "Do you want to debug it now? ([y]/n): "
+    echo "Do you want to debug it now? ([y]/n): "
     read -r debug_now
     debug_now=${debug_now:-y}
     if [[ "$debug_now" == "y"* ]]; then
@@ -240,7 +242,7 @@ fi
 
 # [d]ebug mode
 if [[ "$choice" == "d"* ]]; then
-  print "Enter the test file path to debug (e.g. e2e/your-test.spec.ts), or leave blank for last failed: "
+  echo "Enter the test file path to debug (e.g. e2e/your-test.spec.ts), or leave blank for last failed: "
   read -r debug_file
   if [[ -z "$debug_file" && -s "$LAST_FAILING_FILE" ]]; then
     debug_file=$(head -n1 "$LAST_FAILING_FILE" | cut -d: -f1)
@@ -279,7 +281,7 @@ fi
 
 # [m]atch mode
 if [[ "$choice" == "m"* ]]; then
-  print "Enter a substring or regex to match test files: "
+  echo "Enter a substring or regex to match test files: "
   read -r pattern
   matched_files=( )
   for f in e2e/*.spec.*[tj]s; do
@@ -301,7 +303,7 @@ fi
 
 # [o]nly mode
 if [[ "$choice" == "o"* ]]; then
-  print "Enter a test name or description to grep: "
+  echo "Enter a test name or description to grep: "
   read -r grep_pattern
   if [[ -n "$grep_pattern" ]]; then
     echo "[INFO] Running tests matching: $grep_pattern"
@@ -317,7 +319,7 @@ fi
 
 # [flaky] mode
 if [[ "$choice" == "flaky"* ]]; then
-  print "Enter the test file to bisect for flakiness (e.g. e2e/your-test.spec.ts): "
+  echo "Enter the test file to bisect for flakiness (e.g. e2e/your-test.spec.ts): "
   read -r flaky_file
   if [[ -n "$flaky_file" ]]; then
     echo "[INFO] Running Playwright bisect mode on: $flaky_file"

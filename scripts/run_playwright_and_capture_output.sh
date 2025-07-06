@@ -78,6 +78,11 @@ elif [[ "$choice" == "p"* ]]; then
   else
     exit 1
   fi
+elif [[ "$choice" == "a"* ]]; then
+  PW_HEADLESS=0 npx playwright test "$@" | tee "$OUTPUT_FILE"
+  sync
+  update_last_failing_files
+  exit 0
 else
   PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
   sync
