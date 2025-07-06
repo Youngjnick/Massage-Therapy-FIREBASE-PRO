@@ -6,8 +6,6 @@
 <div>
   <label>Filter by file: <select id='fileFilter'><option value=''>All</option>
 <option value='e2e/all-interactive-aria-accessibility.spec.ts'>e2e/all-interactive-aria-accessibility.spec.ts</option>
-<option value='e2e/app-accessibility-full.spec.ts'>e2e/app-accessibility-full.spec.ts</option>
-<option value='e2e/app.spec.ts'>e2e/app.spec.ts</option>
 </select></label>
   <label>Show: <select id='statusFilter'><option value=''>All</option><option value='fail'>Failed</option><option value='flaky'>Flaky</option></select></label>
   <label>Date range: <input type='date' id='dateFrom'> to <input type='date' id='dateTo'></label>
@@ -18,9 +16,9 @@
 <div id="detailsModal" style="display:none;position:fixed;top:10%;left:10%;width:80%;height:80%;background:#fff;border:2px solid #888;overflow:auto;z-index:1000;padding:2em;"><button onclick="document.getElementById('detailsModal').style.display='none'">Close</button><div id="detailsContent"></div></div>
 <button onclick="downloadJson()">Download JSON</button>
 <script>
-const data = [{"location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5", "file": "e2e/all-interactive-aria-accessibility.spec.ts", "line": 36, "col": 5, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5", "file": "e2e/all-interactive-aria-accessibility.spec.ts", "line": 36, "col": 5, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5", "file": "e2e/all-interactive-aria-accessibility.spec.ts", "line": 36, "col": 5, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5", "file": "e2e/all-interactive-aria-accessibility.spec.ts", "line": 36, "col": 5, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5", "file": "e2e/all-interactive-aria-accessibility.spec.ts", "line": 36, "col": 5, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/app-accessibility-full.spec.ts:45:3", "file": "e2e/app-accessibility-full.spec.ts", "line": 45, "col": 3, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/app-accessibility-full.spec.ts:94:3", "file": "e2e/app-accessibility-full.spec.ts", "line": 94, "col": 3, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}, {"location": "e2e/app-accessibility-full.spec.ts:119:3", "file": "e2e/app-accessibility-full.spec.ts", "line": 119, "col": 3, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718"}, {"location": "e2e/app.spec.ts:42:1", "file": "e2e/app.spec.ts", "line": 42, "col": 1, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718"}, {"location": "e2e/app.spec.ts:152:1", "file": "e2e/app.spec.ts", "line": 152, "col": 1, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718"}, {"location": "e2e/app.spec.ts:215:1", "file": "e2e/app.spec.ts", "line": 215, "col": 1, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718"}, {"location": "e2e/app.spec.ts:276:1", "file": "e2e/app.spec.ts", "line": 276, "col": 1, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718"}, {"location": "e2e/app.spec.ts:302:1", "file": "e2e/app.spec.ts", "line": 302, "col": 1, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718"}];
+const data = [{"location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5", "file": "e2e/all-interactive-aria-accessibility.spec.ts", "line": 36, "col": 5, "status": "\u2713", "error": "", "sequence": "\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718\u2718"}];
 const parsed = JSON.parse(JSON.stringify(data));
-const runStats = [{"date": "2025-07-06 18:10:45", "total": 142, "passed": 142, "failed": 0}, {"date": "2025-07-06 18:10:47", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:32:39", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:32:41", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:45:42", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:46:48", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:49:56", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:51:31", "total": 45, "passed": 2, "failed": 43}, {"date": "2025-07-06 18:51:31", "total": 45, "passed": 2, "failed": 43}, {"date": "2025-07-06 18:52:37", "total": 14, "passed": 0, "failed": 14}, {"date": "2025-07-06 18:52:38", "total": 14, "passed": 0, "failed": 14}, {"date": "2025-07-06 18:59:47", "total": 13, "passed": 13, "failed": 0}, {"date": "2025-07-06 18:59:47", "total": 13, "passed": 13, "failed": 0}];
+const runStats = [{"date": "2025-07-06 18:10:45", "total": 142, "passed": 142, "failed": 0}, {"date": "2025-07-06 18:10:47", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:32:39", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:32:41", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:45:42", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:46:48", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:49:56", "total": 0, "passed": 0, "failed": 0}, {"date": "2025-07-06 18:51:31", "total": 45, "passed": 2, "failed": 43}, {"date": "2025-07-06 18:51:31", "total": 45, "passed": 2, "failed": 43}, {"date": "2025-07-06 18:52:37", "total": 14, "passed": 0, "failed": 14}, {"date": "2025-07-06 18:52:38", "total": 14, "passed": 0, "failed": 14}, {"date": "2025-07-06 18:59:47", "total": 13, "passed": 13, "failed": 0}, {"date": "2025-07-06 18:59:47", "total": 13, "passed": 13, "failed": 0}, {"date": "2025-07-06 19:04:00", "total": 1, "passed": 1, "failed": 0}, {"date": "2025-07-06 19:04:01", "total": 1, "passed": 1, "failed": 0}];
 
 function renderTable() {
   const file = document.getElementById('fileFilter').value;
@@ -7749,6 +7747,106 @@ Active element after quiz restart: &lt;input id=&quot;quiz-option-abdominal_musc
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 19:04:00 =====
+Total: 1
+Passed: 1
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-hqsimn19@gmail.com created successfully. UID: NTh7NWSRnH6W7P76ftlMcYlXmEef
+Firestore user doc created for testuserc-hqsimn19@gmail.com (uid: NTh7NWSRnH6W7P76ftlMcYlXmEef)
+User testuserd-u43jtai0@gmail.com created successfully. UID: gj5GN7Pm52NBscqaD0vEi7sDHxQ6
+Firestore user doc created for testuserd-u43jtai0@gmail.com (uid: gj5GN7Pm52NBscqaD0vEi7sDHxQ6)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    &quot;email&quot;: &quot;testuserc-hqsimn19@gmail.com&quot;,
+    &quot;password&quot;: &quot;testuserC&quot;,
+    &quot;uid&quot;: &quot;NTh7NWSRnH6W7P76ftlMcYlXmEef&quot;
+  },
+  {
+    &quot;email&quot;: &quot;testuserd-u43jtai0@gmail.com&quot;,
+    &quot;password&quot;: &quot;testuserD&quot;,
+    &quot;uid&quot;: &quot;gj5GN7Pm52NBscqaD0vEi7sDHxQ6&quot;
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+
+--- End of Output ---
+
+===== 2025-07-06 19:04:01 =====
+Total: 1
+Passed: 1
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-hqsimn19@gmail.com created successfully. UID: NTh7NWSRnH6W7P76ftlMcYlXmEef
+Firestore user doc created for testuserc-hqsimn19@gmail.com (uid: NTh7NWSRnH6W7P76ftlMcYlXmEef)
+User testuserd-u43jtai0@gmail.com created successfully. UID: gj5GN7Pm52NBscqaD0vEi7sDHxQ6
+Firestore user doc created for testuserd-u43jtai0@gmail.com (uid: gj5GN7Pm52NBscqaD0vEi7sDHxQ6)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    &quot;email&quot;: &quot;testuserc-hqsimn19@gmail.com&quot;,
+    &quot;password&quot;: &quot;testuserC&quot;,
+    &quot;uid&quot;: &quot;NTh7NWSRnH6W7P76ftlMcYlXmEef&quot;
+  },
+  {
+    &quot;email&quot;: &quot;testuserd-u43jtai0@gmail.com&quot;,
+    &quot;password&quot;: &quot;testuserD&quot;,
+    &quot;uid&quot;: &quot;gj5GN7Pm52NBscqaD0vEi7sDHxQ6&quot;
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
 
 --- End of Output ---
 

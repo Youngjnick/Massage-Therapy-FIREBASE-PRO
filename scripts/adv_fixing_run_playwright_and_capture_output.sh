@@ -115,6 +115,20 @@ show_menu_and_get_choice() {
 show_menu_and_get_choice
 choice=$choice
 
+# Prompt for headed or headless mode
+run_mode=""
+while [[ -z "$run_mode" ]]; do
+  echo "\nRun in which mode? [1] Headed (UI, default) or [2] Headless (faster, no UI)? [1/2]: "
+  read -r mode_choice
+  mode_choice=${mode_choice:-1}
+  case $mode_choice in
+    1|h|H|headed|Headed|ui|UI) run_mode="headed"; PW_HEADLESS=0; HEADLESS_FLAG="--headed" ;;
+    2|headless|Headless|n|N) run_mode="headless"; PW_HEADLESS=1; HEADLESS_FLAG="" ;;
+    *) echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS=0; HEADLESS_FLAG="--headed" ;;
+  esac
+done
+export PW_HEADLESS
+
 # Wait for lint/typecheck to finish before running tests
 if kill -0 $lint_pid 2>/dev/null; then
   echo "[INFO] Waiting for lint and typecheck to finish..."
@@ -126,10 +140,13 @@ if [[ $? -ne 0 ]]; then
   exit 1
 fi
 
+# Replace all test run commands to use $PW_HEADLESS and $HEADLESS_FLAG
+# Example: PW_HEADLESS=0 npx playwright test --headed ...
+# becomes: PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG ...
+
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
-  # Run all tests and exit immediately after
-  PW_HEADLESS=0 npx playwright test --headed --reporter=list | tee "$OUTPUT_FILE"
+  PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list | tee "$OUTPUT_FILE"
   sync
   exit 0
 fi
@@ -158,7 +175,7 @@ if [[ "$choice" == "f"* ]]; then
       done < "$LAST_FAILING_FILE"
       if [[ ${#failed_lines[@]} -gt 0 ]]; then
         echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
-        PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
+        PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
         sync
         exit 0
       else
@@ -184,7 +201,7 @@ if [[ "$choice" == "f"* ]]; then
     first_failed=$(grep -m1 '✘' "$OUTPUT_FILE" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
     if [[ -n "$first_failed" ]]; then
       echo "[INFO] First failed test file: $first_failed"
-      PWDEBUG=1 npx playwright test --headed --reporter=list "$first_failed"
+      PWDEBUG=1 npx playwright test $HEADLESS_FLAG --reporter=list "$first_failed"
     else
       echo "[INFO] No failed test found in output."
     fi
@@ -213,7 +230,7 @@ if [[ "$choice" == "f"* ]]; then
     extra_args="--max-failures=1"
   fi
   echo "[INFO] Running last-failing test files: ${failed_files[*]}"
-  PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" $extra_args "${failed_files[@]}" | tee "$OUTPUT_FILE"
+  PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list --project="Desktop Chrome" $extra_args "${failed_files[@]}" | tee "$OUTPUT_FILE"
   exit 0
 fi
 
@@ -268,7 +285,7 @@ if [[ "$choice" == "u"* ]]; then
   done
   if [[ ${#untested_files[@]} -gt 0 ]]; then
     echo "[INFO] Running untested test files: ${untested_files[*]}"
-    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${untested_files[@]}"
+    PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list --project="Desktop Chrome" "${untested_files[@]}"
     sync
     exit 0
   else
@@ -280,7 +297,7 @@ fi
 # [update-snapshots] mode
 if [[ "$choice" == "update-snapshots"* ]]; then
   echo "[INFO] Running tests with --update-snapshots."
-  PW_HEADLESS=0 npx playwright test --update-snapshots --headed --reporter=list --project="Desktop Chrome"
+  PW_HEADLESS=$PW_HEADLESS npx playwright test --update-snapshots $HEADLESS_FLAG --reporter=list --project="Desktop Chrome"
   sync
   exit 0
 fi
@@ -289,7 +306,7 @@ fi
 if [[ "$choice" == "coverage"* ]]; then
   echo "[INFO] Running tests with code coverage enabled."
   echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
-  COVERAGE=true PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome"
+  COVERAGE=true PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list --project="Desktop Chrome"
   exit 0
 fi
 
@@ -302,7 +319,7 @@ if [[ "$choice" == "x"* ]]; then
     done < "$LAST_FAILING_FILE"
     if [[ ${#failed_lines[@]} -gt 0 ]]; then
       echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
-      PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
       sync
       exit 0
     else
@@ -324,7 +341,7 @@ if [[ "$choice" == "d"* ]]; then
   fi
   if [[ -n "$debug_file" ]]; then
     echo "[INFO] Debugging test file: $debug_file"
-    PWDEBUG=1 npx playwright test --headed --reporter=list "$debug_file"
+    PWDEBUG=1 npx playwright test $HEADLESS_FLAG --reporter=list "$debug_file"
     exit 0
   else
     echo "[ERROR] No file provided."
@@ -367,10 +384,10 @@ fi
 # [w]atch mode
 if [[ "$choice" == "w"* ]]; then
   echo "[INFO] Running Playwright in watch mode."
-  PW_HEADLESS=0 npx playwright test --watch --headed --reporter=list --project="Desktop Chrome"
+  PW_HEADLESS=$PW_HEADLESS npx playwright test --watch $HEADLESS_FLAG --reporter=list --project="Desktop Chrome"
   exit 0
 fi
 
 # If no valid option was selected, default to running all tests
-PW_HEADLESS=0 npx playwright test --headed --reporter=list | tee "$OUTPUT_FILE"
+PW_HEADLESS=$PW_HEADLESS npx playwright test $HEADLESS_FLAG --reporter=list | tee "$OUTPUT_FILE"
 sync

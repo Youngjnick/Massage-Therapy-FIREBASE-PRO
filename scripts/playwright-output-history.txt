@@ -7660,3 +7660,103 @@ Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origi
 [E2E DEBUG] URL after sign-in: http://localhost:5173/profile
 
 --- End of Output ---
+
+===== 2025-07-06 19:04:00 =====
+Total: 1
+Passed: 1
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-hqsimn19@gmail.com created successfully. UID: NTh7NWSRnH6W7P76ftlMcYlXmEef
+Firestore user doc created for testuserc-hqsimn19@gmail.com (uid: NTh7NWSRnH6W7P76ftlMcYlXmEef)
+User testuserd-u43jtai0@gmail.com created successfully. UID: gj5GN7Pm52NBscqaD0vEi7sDHxQ6
+Firestore user doc created for testuserd-u43jtai0@gmail.com (uid: gj5GN7Pm52NBscqaD0vEi7sDHxQ6)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-hqsimn19@gmail.com",
+    "password": "testuserC",
+    "uid": "NTh7NWSRnH6W7P76ftlMcYlXmEef"
+  },
+  {
+    "email": "testuserd-u43jtai0@gmail.com",
+    "password": "testuserD",
+    "uid": "gj5GN7Pm52NBscqaD0vEi7sDHxQ6"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+
+--- End of Output ---
+
+===== 2025-07-06 19:04:01 =====
+Total: 1
+Passed: 1
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-hqsimn19@gmail.com created successfully. UID: NTh7NWSRnH6W7P76ftlMcYlXmEef
+Firestore user doc created for testuserc-hqsimn19@gmail.com (uid: NTh7NWSRnH6W7P76ftlMcYlXmEef)
+User testuserd-u43jtai0@gmail.com created successfully. UID: gj5GN7Pm52NBscqaD0vEi7sDHxQ6
+Firestore user doc created for testuserd-u43jtai0@gmail.com (uid: gj5GN7Pm52NBscqaD0vEi7sDHxQ6)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-hqsimn19@gmail.com",
+    "password": "testuserC",
+    "uid": "NTh7NWSRnH6W7P76ftlMcYlXmEef"
+  },
+  {
+    "email": "testuserd-u43jtai0@gmail.com",
+    "password": "testuserD",
+    "uid": "gj5GN7Pm52NBscqaD0vEi7sDHxQ6"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 1 worker
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  1 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles (3.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-hqsimn19@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+
+--- End of Output ---
