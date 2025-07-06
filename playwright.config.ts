@@ -7,7 +7,7 @@ export default defineConfig({
   testDir: './e2e',
   timeout: 30000,
   retries: 1,
-  workers: 1, // Run tests serially for reliability
+  // workers: 1, // Run tests serially for reliability
   globalTimeout: 10 * 60 * 1000, // 10 minutes for the whole suite
   outputDir: 'test-results/screenshots',
   use: {
@@ -50,6 +50,10 @@ export default defineConfig({
     port: 5173,
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
+    env: {
+      ...process.env,
+      COVERAGE: process.env.COVERAGE || '',
+    },
   },
   // Print headed/headless mode at config load
 });
