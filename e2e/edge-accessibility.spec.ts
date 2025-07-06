@@ -1,8 +1,15 @@
 /* global console */
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import { getTestUser } from './helpers/getTestUser';
+
+let testUser: { email: string; password: string; uid?: string };
+test.beforeAll(async () => {
+  testUser = await getTestUser(0);
+});
 
 test.describe('Quiz Edge Cases and Accessibility', () => {
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({ page }, testInfo) => {
     await page.goto('/');
     await page.evaluate(() => {
       window.localStorage.clear();
@@ -10,10 +17,13 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     });
     await page.context().clearCookies();
     await page.reload();
+    await uiSignIn(page, { email: testUser.email, password: testUser.password, profilePath: '/profile' });
   });
 
+  // All quiz-related tests should start on /quiz after sign-in
+
   test('Quiz with all options disabled: keyboard navigation skips disabled', async ({ page }, testInfo) => {
-    await page.goto('/');
+    await page.goto('/quiz');
     // Wait for Quiz Length input to be enabled, fail-fast if not
     let quizLengthInput;
     try {
@@ -75,7 +85,7 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
   });
 
   test('Tab order: all interactive elements are reachable', async ({ page }, testInfo) => {
-    await page.goto('/');
+    await page.goto('/quiz');
     // Fail-fast for Quiz Length input
     let quizLengthInput;
     try {
@@ -83,7 +93,7 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     } catch {
       const html = await page.content();
       if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
-      test.skip('Quiz Length input not enabled after 10s. Skipping as quiz data may be missing or Firestore emulator not running.');
+      test.skip(true, 'Quiz Length input not enabled after 10s. Skipping as quiz data may be missing or Firestore emulator not running.');
     }
     // Add undefined check for quizLengthInput before using it
     if (quizLengthInput) {
@@ -114,7 +124,7 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
 
   // Skipped: Screen reader text: ARIA labels and roles (redundant or data/setup issue)
   test.skip('Screen reader text: ARIA labels and roles', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     // Answer first question
@@ -137,7 +147,7 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
 
   test('Mobile viewport: quiz, results, achievements', async ({ page }, testInfo) => {
     await page.setViewportSize({ width: 375, height: 667 }); // iPhone 8
-    await page.goto('/');
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('1');
     await page.getByRole('button', { name: /start/i }).click();
     await expect(page.getByTestId('quiz-question-card')).toBeVisible();
@@ -160,7 +170,7 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     if (!foundNavBtn) {
       const html = await page.content();
       if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
-      test.skip('Navigation buttons not present or missing aria-label. Skipping as this may be a single-question quiz or UI state.');
+      test.skip(true, 'Navigation buttons not present or missing aria-label. Skipping as this may be a single-question quiz or UI state.');
     }
     await page.getByRole('button', { name: /finish/i }).click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
