@@ -23,10 +23,10 @@ base.beforeEach(async ({ page }) => {
   console.log('[E2E DEBUG] About to sign in with test user:', user.email);
   await page.goto('/profile');
   console.log('[E2E DEBUG] Current URL before sign-in:', page.url());
-  await page.screenshot({ path: 'before-signin.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/before-signin.png', fullPage: true });
   await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
   console.log('[E2E DEBUG] URL after sign-in:', page.url());
-  await page.screenshot({ path: 'after-signin.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/after-signin.png', fullPage: true });
 
   // Clear localStorage, sessionStorage, and cookies before each test
   await page.goto('/');
@@ -45,11 +45,11 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   page.on('console', msg => logs.push(msg.type() + ': ' + msg.text()));
 
   console.log('[E2E DEBUG] Test start, current URL:', page.url());
-  await page.screenshot({ path: 'test-start.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/test-start.png', fullPage: true });
   console.log('Navigating to quiz page...');
   await page.goto('/quiz');
   console.log('[E2E DEBUG] After goto /quiz, URL:', page.url());
-  await page.screenshot({ path: 'after-goto-quiz.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz.png', fullPage: true });
   console.log('Filling Quiz Length...');
   await page.getByLabel('Quiz Length').fill('1');
   console.log('Clicking Start button...');
@@ -153,7 +153,7 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
   console.log('[E2E DEBUG] Navigating to quiz page...');
   await page.goto('/quiz');
   console.log('[E2E DEBUG] After goto /quiz, URL:', page.url());
-  await page.screenshot({ path: 'after-goto-quiz-rapid.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz-rapid.png', fullPage: true });
   console.log('[E2E DEBUG] Filling Quiz Length...');
   await page.getByLabel('Quiz Length').fill('2');
   console.log('[E2E DEBUG] Clicking Start button...');
@@ -440,7 +440,7 @@ base.afterEach(async ({ page }, testInfo) => {
   if (page) {
     try {
       console.log('[E2E DEBUG] Current URL after test:', page.url());
-      await page.screenshot({ path: `after-test-${testInfo.title.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_\-]/g, '')}.png`, fullPage: true });
+      await page.screenshot({ path: `test-results/screenshots/after-test-${testInfo.title.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_\-]/g, '')}.png`, fullPage: true });
     } catch (e) {
       console.log('[E2E DEBUG] Could not get URL or screenshot after test:', e);
     }

@@ -18,7 +18,7 @@ test.describe('App reload and webbar visibility', () => {
     await expect(page.getByRole('navigation', { name: /main navigation/i })).toBeVisible();
 
     // Optionally, take a screenshot for debugging
-    await page.screenshot({ path: 'webbar-after-reload.png', fullPage: true });
+    await page.screenshot({ path: 'test-results/screenshots/webbar-after-reload.png', fullPage: true });
   });
 });
 
@@ -37,6 +37,6 @@ test.describe('App reload and webbar visibility (production)', () => {
     await expect(page.getByRole('navigation', { name: /main navigation/i })).toBeVisible();
 
     // Optionally, take a screenshot for debugging
-    await page.screenshot({ path: 'webbar-after-reload-prod.png', fullPage: true });
+    await page.screenshot({ path: 'test-results/screenshots/webbar-after-reload-prod.png', fullPage: true });
   });
 });

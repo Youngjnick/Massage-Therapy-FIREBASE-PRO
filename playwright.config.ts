@@ -9,6 +9,7 @@ export default defineConfig({
   retries: 1,
   workers: 1, // Run tests serially for reliability
   globalTimeout: 10 * 60 * 1000, // 10 minutes for the whole suite
+  outputDir: 'test-results/screenshots',
   use: {
     baseURL: 'http://localhost:5173/',
     ...devices['Desktop Chrome'],
@@ -17,6 +18,7 @@ export default defineConfig({
       args: [],
     },
     trace: 'on',
+    screenshot: 'only-on-failure',
   },
   projects: [
     {
@@ -27,6 +29,7 @@ export default defineConfig({
           args: [],
         },
         headless: false,
+        screenshot: 'only-on-failure',
       },
     },
     {
@@ -37,6 +40,7 @@ export default defineConfig({
           args: [],
         },
         headless: false,
+        screenshot: 'only-on-failure',
       },
     },
   ],

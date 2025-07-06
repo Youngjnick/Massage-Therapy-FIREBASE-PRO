@@ -380,6 +380,16 @@ if [[ "$choice" == "w"* ]]; then
   exit 0
 fi
 
+# Function to extract failed test files from the last Playwright run output
+get_failed_test_files() {
+  # Only look for lines with '✘' (failures) and extract the test file path
+  if [[ -f "$OUTPUT_FILE" ]]; then
+    grep -E '^\s*✘' "$OUTPUT_FILE" | \
+      sed -E 's/.* ([^ ]+\.spec\.[tj]s):[0-9]+:[0-9]+.*/\1/' | \
+      sort -u
+  fi
+}
+
 # If no valid option was selected, default to running all tests
 PW_HEADLESS=0 npx playwright test --headed --reporter=list | tee "$OUTPUT_FILE"
 sync
