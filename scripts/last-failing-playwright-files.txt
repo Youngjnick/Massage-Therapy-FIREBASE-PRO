@@ -1,7 +1,0 @@
-- Improved regex in parse_output_file to match all valid Playwright test result lines, ensuring all test results are captured.
-- Changed history writing logic to always append new summaries, guaranteeing the file is never empty and all runs are preserved.
-- Added debug output to help diagnose parsing and writing issues.
-- Ensured HTML and JSON reports are always updated after each run.
-- Confirmed compatibility with macOS/zsh and no reliance on GNU tools.
-- Workflow now fully automates E2E test result tracking, history, and reporting, with no manual intervention required after a file reset or script update.
-

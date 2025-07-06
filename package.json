@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
+    "@cypress/code-coverage": "^3.14.5",
     "@eslint/js": "^9.29.0",
     "@playwright/test": "^1.53.2",
     "@testing-library/jest-dom": "^6.6.3",
@@ -52,13 +53,15 @@
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
     "node-fetch": "^2.7.0",
+    "nyc": "^17.1.0",
     "playwright": "^1.53.2",
     "react": "^19.1.0",
     "react-icons": "^5.5.0",
     "start-server-and-test": "^2.0.12",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-istanbul": "^7.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
