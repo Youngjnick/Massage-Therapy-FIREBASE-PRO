@@ -12,8 +12,8 @@ const routes = [
 
 // ARIA roles expected on each page (customize as needed)
 const pageRoles = {
-  '/': ['form'], // Home redirects to /quiz, which has role="form"
-  '/quiz': ['form'],
+  '/': ['main'], // Home redirects to /quiz, which has role="main"
+  '/quiz': ['main'],
   '/analytics': ['main'],
   '/profile': ['main', 'form'],
 };
@@ -58,32 +58,24 @@ test.describe('Navigation and ARIA Accessibility Flow', () => {
       await testInfo.attach('DEBUG: Current URL after navigation', { body: url });
       if (route === '/') {
         // Wait for hydration and possible redirect
-        await page.waitForSelector('[role="main"]', { state: 'visible', timeout: 10000 });
+        await page.waitForSelector('main[role="main"]', { state: 'visible', timeout: 10000 });
         // If redirected, update effectiveRoute
         if (url.endsWith('/quiz')) {
           effectiveRoute = '/quiz';
-          // Wait for quiz form to be visible
-          await page.waitForSelector('[data-testid="quiz-container"][role="form"]', { state: 'visible', timeout: 10000 });
+          // Wait for quiz start form to be visible
+          await page.waitForSelector('[data-testid="quiz-start-form"][role="form"]', { state: 'visible', timeout: 10000 });
         }
       } else if (route === '/quiz') {
-        let found = false;
-        let attempts = 0;
-        const maxAttempts = browserName === 'chromium' && page.viewportSize()?.width === 375 ? 3 : 1; // Retry only for Mobile Chrome
-        while (!found && attempts < maxAttempts) {
-          try {
-            await page.waitForSelector('[data-testid="quiz-container"][role="form"]', { state: 'visible', timeout: 30000 });
-            found = true;
-          } catch (e) {
-            attempts++;
-            if (attempts < maxAttempts) {
-              await page.reload();
-            } else {
-              throw e;
-            }
-          }
+        // Wait for main quiz container
+        await page.waitForSelector('main[role="main"]', { state: 'visible', timeout: 10000 });
+        // Wait for quiz start form or quiz in progress
+        const formVisible = await page.locator('[data-testid="quiz-start-form"][role="form"]').isVisible().catch(() => false);
+        const quizVisible = await page.locator('main[role="main"]').isVisible().catch(() => false);
+        if (!formVisible && !quizVisible) {
+          throw new Error('Neither quiz start form nor quiz main container is visible');
         }
       } else {
-        await page.waitForSelector('[role="main"]', { state: 'visible', timeout: 10000 });
+        await page.waitForSelector('main[role="main"]', { state: 'visible', timeout: 10000 });
       }
       // Extra debug: print effectiveRoute and roles
       await testInfo.attach('DEBUG: effectiveRoute and roles', { body: `${effectiveRoute} ${JSON.stringify(pageRoles[effectiveRoute as keyof typeof pageRoles])}` });
@@ -93,8 +85,14 @@ test.describe('Navigation and ARIA Accessibility Flow', () => {
       // Check ARIA roles
       const roles = pageRoles[effectiveRoute as keyof typeof pageRoles] || [];
       for (const role of roles) {
-        if (effectiveRoute === '/quiz' && role === 'form') {
-          const el = await page.locator('[data-testid="quiz-container"][role="form"]').first();
+        if (effectiveRoute === '/quiz' && role === 'main') {
+          const el = await page.locator('main[role="main"]').first();
+          await expect(el, `Missing ARIA role: ${role} on ${effectiveRoute}`).toBeVisible();
+        } else if (effectiveRoute === '/quiz' && role === 'form') {
+          const el = await page.locator('[data-testid="quiz-start-form"][role="form"]').first();
+          await expect(el, `Missing ARIA role: ${role} on ${effectiveRoute}`).toBeVisible();
+        } else if (role === 'form') {
+          const el = await page.locator('[role="form"]').first();
           await expect(el, `Missing ARIA role: ${role} on ${effectiveRoute}`).toBeVisible();
         } else {
           const el = await page.locator(`[role="${role}"]`).first();

@@ -244,26 +244,28 @@ const Quiz: React.FC = () => {
     // Compute topic stats for the finished quiz session
     const topicStats = getTopicStats(activeQuestions, userAnswers, shuffledOptions);
     return (
-      <QuizResultsScreen
-        topicStats={topicStats}
-        onStartNewQuiz={() => {
-          setShowResults(false);
-          setStarted(false);
-          setCurrent(0);
-          setUserAnswers(Array(maxQuizLength).fill(undefined));
-        }}
-        isAllIncorrect={false}
-        q={q}
-        userAnswers={userAnswers}
-        shuffledOptions={shuffledOptions}
-        activeQuestions={activeQuestions}
-        onStartMissedUnansweredQuiz={handleStartMissedUnansweredQuiz}
-      />
+      <main role="main">
+        <QuizResultsScreen
+          topicStats={topicStats}
+          onStartNewQuiz={() => {
+            setShowResults(false);
+            setStarted(false);
+            setCurrent(0);
+            setUserAnswers(Array(maxQuizLength).fill(undefined));
+          }}
+          isAllIncorrect={false}
+          q={q}
+          userAnswers={userAnswers}
+          shuffledOptions={shuffledOptions}
+          activeQuestions={activeQuestions}
+          onStartMissedUnansweredQuiz={handleStartMissedUnansweredQuiz}
+        />
+      </main>
     );
   }
   if (started && q) {
     return (
-      <div>
+      <main role="main">
         <h1>Quiz</h1>
         <QuizProgressBar progress={progress} />
         <QuizStepper
@@ -288,12 +290,12 @@ const Quiz: React.FC = () => {
           total={totalQuestions}
           answered={userAnswers[current] !== undefined}
         />
-      </div>
+      </main>
     );
   }
   // Quiz start form
   return (
-    <div>
+    <main role="main">
       <h1>Quiz</h1>
       <QuizStartForm
         availableTopics={sortedTopics}
@@ -312,7 +314,7 @@ const Quiz: React.FC = () => {
         toggleState={toggleState}
         setToggleState={setToggleState}
       />
-    </div>
+    </main>
   );
 };
 
