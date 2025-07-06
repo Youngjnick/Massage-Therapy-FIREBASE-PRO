@@ -334,9 +334,8 @@ if [[ "$SKIP_TESTS" = false ]]; then
     npm run dev > scripts/dev-server-e2e.log 2>&1 &
     DEV_SERVER_PID=$!
     sleep 5
-    echo "Running Playwright E2E..."
-    npm run test:e2e:headed | tee scripts/playwright-output.txt
-
+    echo "Running Playwright E2E (advanced script)..."
+    ./scripts/adv_fixing_run_playwright_and_capture_output.sh
     # Parse Playwright output for summary and failing test names
     PW_SUMMARY=""
     # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
@@ -349,7 +348,6 @@ if [[ "$SKIP_TESTS" = false ]]; then
         PW_SUMMARY="$PW_SUMMARY\nFailing: $PW_FAILING_TESTS"
       fi
     fi
-
     if grep -q "failed" scripts/playwright-output.txt; then
       echo -e "${RED}Playwright E2E failed.${NC}"
       echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt

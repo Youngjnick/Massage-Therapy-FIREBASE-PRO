@@ -38,16 +38,48 @@ test.describe('Quiz Stats Live Update', () => {
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
       // Wait for Quiz Length input
       const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+      // Select a specific real topic for topic breakdowns
+      const TARGET_TOPIC_LABEL = 'Abdominal Muscle Origins';
+      const TARGET_TOPIC_VALUE = 'abdominal_muscle_origins';
+      let selected = false;
       // Select the first real topic (not empty/Other) if topic select is present
       const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
       if (await topicSelect.count() > 0) {
         const options = await topicSelect.locator('option').all();
+        // Try to select by value first
         for (const opt of options) {
           const val = await opt.getAttribute('value');
-          if (val && val !== '' && val.toLowerCase() !== 'other') {
+          if (val === TARGET_TOPIC_VALUE) {
             await topicSelect.selectOption(val);
-            console.log('[E2E DEBUG] Selected topic value:', val);
+            console.log('[E2E DEBUG] Selected topic value (by value):', val);
+            selected = true;
             break;
+          }
+        }
+        // If not found by value, try by label
+        if (!selected) {
+          for (const opt of options) {
+            const label = (await opt.textContent())?.trim();
+            if (label === TARGET_TOPIC_LABEL) {
+              const val = await opt.getAttribute('value');
+              if (val) {
+                await topicSelect.selectOption(val);
+                console.log('[E2E DEBUG] Selected topic value (by label):', val);
+                selected = true;
+                break;
+              }
+            }
+          }
+        }
+        // Fallback: select first valid topic (not empty/Other)
+        if (!selected) {
+          for (const opt of options) {
+            const val = await opt.getAttribute('value');
+            if (val && val !== '' && val.toLowerCase() !== 'other') {
+              await topicSelect.selectOption(val);
+              console.log('[E2E DEBUG] Selected topic value (fallback):', val);
+              break;
+            }
           }
         }
       }

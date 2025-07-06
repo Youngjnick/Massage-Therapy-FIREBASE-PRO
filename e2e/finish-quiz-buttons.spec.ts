@@ -31,24 +31,47 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
     let firstValid = null;
     let firstLabel = null;
+    // Select a specific real topic for topic breakdowns
+    const TARGET_TOPIC_LABEL = 'Abdominal Muscle Origins';
+    const TARGET_TOPIC_VALUE = 'abdominal_muscle_origins';
+    let selected = false;
     if (await topicSelect.count() > 0) {
       const options = await topicSelect.locator('option').all();
+      // Try to select by value first
       for (const opt of options) {
         const val = await opt.getAttribute('value');
-        const label = await opt.textContent();
-        if (val && val !== '' && val.toLowerCase() !== 'other') {
-          firstValid = val;
-          firstLabel = label;
+        if (val === TARGET_TOPIC_VALUE) {
+          await topicSelect.selectOption(val);
+          console.log('[E2E DEBUG] Selected topic value (by value):', val);
+          selected = true;
           break;
         }
       }
-      if (firstValid) {
-        await topicSelect.selectOption(firstValid);
-        // Wait for the UI to update the quiz length input (simulate real user interaction)
-        await page.waitForTimeout(300); // or wait for spinner if present
-        // Optionally, check that the label in the UI matches what we expect
-        const selectedLabel = await topicSelect.inputValue();
-        console.log('[E2E DEBUG] Selected first topic value:', firstValid, 'label:', firstLabel, 'UI selected:', selectedLabel);
+      // If not found by value, try by label
+      if (!selected) {
+        for (const opt of options) {
+          const label = (await opt.textContent())?.trim();
+          if (label === TARGET_TOPIC_LABEL) {
+            const val = await opt.getAttribute('value');
+            if (val) {
+              await topicSelect.selectOption(val);
+              console.log('[E2E DEBUG] Selected topic value (by label):', val);
+              selected = true;
+              break;
+            }
+          }
+        }
+      }
+      // Fallback: select first valid topic (not empty/Other)
+      if (!selected) {
+        for (const opt of options) {
+          const val = await opt.getAttribute('value');
+          if (val && val !== '' && val.toLowerCase() !== 'other') {
+            await topicSelect.selectOption(val);
+            console.log('[E2E DEBUG] Selected topic value (fallback):', val);
+            break;
+          }
+        }
       }
     }
     if (firstValid) {
