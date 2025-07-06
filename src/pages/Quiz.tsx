@@ -233,7 +233,6 @@ const Quiz: React.FC = () => {
         quizQuestions
       });
     }
-    // eslint-disable-next-line
   }, [showResults]);
 
   // Use quizQuestions.length as the max quiz length
