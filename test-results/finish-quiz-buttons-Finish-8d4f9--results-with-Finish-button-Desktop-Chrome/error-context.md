@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation "Main navigation":
+  - list:
+    - listitem:
+      - link "Go to Quiz page":
+        - /url: /quiz
+        - text: Quiz
+    - listitem:
+      - link "Go to Achievements page":
+        - /url: /achievements
+        - text: Achievements
+    - listitem:
+      - link "Go to Analytics page":
+        - /url: /analytics
+        - text: Analytics
+    - listitem:
+      - link "Go to Profile page":
+        - /url: /profile
+        - text: Profile
+- main:
+  - button "Start New Quiz"
+  - heading "Results" [level=2]
+  - button "View details and actions for Other": Other 2 / 2
+  - heading "Accuracy by Topic" [level=4]
+  - list:
+    - listitem: "Other: 2 / 2 correct (100%)"
+  - heading "Quiz Results" [level=2]
+  - paragraph: "Your score: 2 / 2"
+  - strong: "Average Time per Question:"
+  - text: 0 sec
+  - strong: "Longest Correct Streak:"
+  - text: "2"
+  - strong: "Accuracy by Topic:"
+  - list:
+    - listitem: "Other: 2 / 2 (100%)"
+  - button "Try Another Quiz"
+  - list:
+    - listitem:
+      - strong: Which nerve innervates the rectus abdominis muscle?
+      - text: "Your answer: Intercostal nerves (T7–T11) and subcostal nerve (T12) Correct answer: Intercostal nerves (T7–T11) and subcostal nerve (T12) Explanation: The rectus abdominis is innervated by lower thoracic spinal nerves. More Info: Specifically, the intercostal nerves from T7 to T11 and the subcostal nerve (T12) innervate the rectus abdominis, allowing voluntary motor control during trunk flexion and compression of abdominal contents. Clinical Application: This is relevant when assessing abdominal wall weakness or post-surgical nerve impairment."
+    - listitem:
+      - strong: Which nerves innervate the transverse abdominis?
+      - text: "Your answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Correct answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1) Explanation: It is innervated by both thoracic and upper lumbar nerves. More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability. Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support."
+  - text: "Answered: 2 / 2"
+  - button "Close"
+- contentinfo:
+  - textbox "Search questions"
+- paragraph: Running in emulator mode. Do not use with production credentials.
+```

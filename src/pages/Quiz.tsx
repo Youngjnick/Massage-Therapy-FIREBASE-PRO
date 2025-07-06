@@ -148,7 +148,11 @@ const Quiz: React.FC = () => {
     setStarted(true);
     setLoading(true);
     setCurrent(0);
-    setUserAnswers(Array(maxQuizLength).fill(undefined));
+    // Use desiredQuizLength if valid, otherwise fallback to maxQuizLength
+    const quizLen = typeof desiredQuizLength === 'number' && desiredQuizLength > 0
+      ? Math.min(desiredQuizLength, quizQuestions.length)
+      : quizQuestions.length;
+    setUserAnswers(Array(quizLen).fill(undefined));
     setShowResults(false);
     let qs = [...quizQuestions];
     if (toggleState.randomizeQuestions) {
@@ -157,7 +161,7 @@ const Quiz: React.FC = () => {
         [qs[i], qs[j]] = [qs[j], qs[i]];
       }
     }
-    qs = qs.slice(0, maxQuizLength);
+    qs = qs.slice(0, quizLen);
     setShuffledQuestions(qs);
     const so: { [key: number]: string[] } = {};
     qs.forEach((q, i) => {

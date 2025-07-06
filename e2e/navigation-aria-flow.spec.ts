@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { generateTokenAndSignIn } from './helpers/generateAndSignIn';
+import { uiSignIn } from './helpers/uiSignIn';
+import { getTestUser } from './helpers/getTestUser';
 
 // Main routes to check. Adjust as needed for your app.
 const routes = [
@@ -17,6 +18,11 @@ const pageRoles = {
   '/profile': ['main', 'form'],
 };
 
+let testUser: { email: string; password: string; uid?: string };
+test.beforeAll(async () => {
+  testUser = await getTestUser(0);
+});
+
 test.describe('Navigation and ARIA Accessibility Flow', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
@@ -26,7 +32,7 @@ test.describe('Navigation and ARIA Accessibility Flow', () => {
     });
     await page.context().clearCookies();
     await page.reload();
-    await generateTokenAndSignIn(page);
+    await uiSignIn(page, { email: testUser.email, password: testUser.password, profilePath: '/profile' });
   });
 
   for (const route of routes) {

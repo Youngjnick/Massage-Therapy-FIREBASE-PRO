@@ -69,6 +69,18 @@ export async function updateQuizStatsOnFinish({
       streakHistory,
       stack: new Error().stack
     });
+    // Log Firestore doc paths and data before writing
+    console.log('[E2E DEBUG] Firestore analyticsRef path:', analyticsRef.path);
+    console.log('[E2E DEBUG] Firestore analyticsRef data:', {
+      completed: newCompleted,
+      correct,
+      total,
+      streak: prev.streak || 0,
+      badges: prev.badges || 0,
+      badgeProgress,
+      streakHistory,
+      updatedAt: new Date().toISOString(),
+    });
     try {
       await setDoc(
         analyticsRef,
@@ -92,6 +104,9 @@ export async function updateQuizStatsOnFinish({
       console.error('[E2E DEBUG] updateQuizStatsOnFinish: analytics write error', writeErr);
     }
     const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
+    // Log Firestore doc paths and data before writing
+    console.log('[E2E DEBUG] Firestore topicStatsRef path:', topicStatsRef.path);
+    console.log('[E2E DEBUG] Firestore topicStatsRef data:', stats);
     try {
       await setDoc(topicStatsRef, stats, { merge: true });
       console.log('[E2E DEBUG] updateQuizStatsOnFinish: topicStats write success', { user: user.uid });

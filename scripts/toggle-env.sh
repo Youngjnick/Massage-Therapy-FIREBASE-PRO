@@ -1,12 +1,12 @@
 #!/bin/zsh
-# Toggle between .env.production and .env.development
+# Toggle between .env.production, .env.development, and .env.e2e
 # Usage: ./scripts/toggle-env.sh [1|2]
-# 1 = production, 2 = development
+# 1 = production, 2 = development (emulator/E2E)
 
 if [ $# -eq 0 ]; then
   echo "Select environment:"
   echo "1) Production (build & preview)"
-  echo "2) Development (dev server)"
+  echo "2) Development (dev server, emulator/E2E)"
   read "env_choice?Enter 1 or 2: "
 else
   env_choice=$1
@@ -20,13 +20,13 @@ case $env_choice in
     npm run build && npm run preview
     ;;
   2)
-    cp .env.development .env
-    echo ".env set to development mode."
-    echo "Starting development server..."
+    cp .env.e2e .env
+    echo ".env set to development (emulator/E2E) mode."
+    echo "Starting development server with emulator environment..."
     npm run dev
     ;;
   *)
-    echo "Unknown mode: $env_choice. Use 1 for production or 2 for development."
+    echo "Unknown mode: $env_choice. Use 1 for production or 2 for development (emulator/E2E)."
     exit 1
     ;;
 esac

@@ -1,12 +1,22 @@
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import { getTestUser } from './helpers/getTestUser';
 
 /* global console */
 
+let testUser: { email: string; password: string; uid?: string };
+test.beforeAll(async () => {
+  testUser = await getTestUser(0);
+});
+
 test.describe('Quiz keyboard navigation', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/quiz');
+    await page.goto('/');
     await page.evaluate(() => window.localStorage.clear());
+    await page.context().clearCookies();
     await page.reload();
+    await uiSignIn(page, { email: testUser.email, password: testUser.password, profilePath: '/profile' });
+    await page.goto('/quiz');
     // Print browser console logs to terminal for debugging
     page.on('console', msg => {
       if (msg.type() === 'log') {
