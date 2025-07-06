@@ -131,9 +131,9 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     const radios = page.getByTestId('quiz-radio');
     await radios.first().click();
     // Check mid-quiz Finish button (robust selection)
-    const finishBtns = page.getByRole('button', { name: /finish/i });
-    const finishBtnEarly = finishBtns.first();
-    expect(await finishBtnEarly.getAttribute('aria-label')).toMatch(/finish quiz early/i);
+    const finishBtnEarly = page.locator('button[aria-label="Finish quiz early"]');
+    expect(await finishBtnEarly.count()).toBeGreaterThan(0);
+    expect(await finishBtnEarly.first().getAttribute('aria-label')).toBe('Finish quiz early');
     // Go to next question
     const nextBtn = page.getByRole('button', { name: /next/i });
     await nextBtn.click();
@@ -141,8 +141,9 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     const radios2 = page.getByTestId('quiz-radio');
     await radios2.first().click();
     // Check last-question Finish Quiz button
-    const finishBtn = page.getByRole('button', { name: /finish quiz/i });
-    expect(await finishBtn.getAttribute('aria-label')).toMatch(/finish quiz/i);
+    const finishBtn = page.locator('button[aria-label="Finish quiz"]');
+    expect(await finishBtn.count()).toBeGreaterThan(0);
+    expect(await finishBtn.first().getAttribute('aria-label')).toBe('Finish quiz');
   });
 
   test('Mobile viewport: quiz, results, achievements', async ({ page }, testInfo) => {
@@ -152,27 +153,12 @@ test.describe('Quiz Edge Cases and Accessibility', () => {
     await page.getByRole('button', { name: /start/i }).click();
     await expect(page.getByTestId('quiz-question-card')).toBeVisible();
     await page.getByTestId('quiz-option').first().click();
-    // Robust wait for navigation buttons
-    const navButtonNames = [/next/i, /prev/i, /finish/i];
-    let foundNavBtn = false;
-    for (const name of navButtonNames) {
-      try {
-        await page.waitForSelector(`button[aria-label]`, { timeout: 5000 });
-        const btn = page.getByRole('button', { name });
-        if (await btn.count() > 0) {
-          await expect(btn).toHaveAttribute('aria-label', name);
-          foundNavBtn = true;
-        }
-      } catch {
-        // continue
-      }
-    }
-    if (!foundNavBtn) {
-      const html = await page.content();
-      if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
-      test.skip(true, 'Navigation buttons not present or missing aria-label. Skipping as this may be a single-question quiz or UI state.');
-    }
-    await page.getByRole('button', { name: /finish/i }).click();
+    // Wait for navigation buttons
+    await page.waitForSelector('button[aria-label]');
+    // Try to finish quiz (single-question quiz will only show Finish Quiz)
+    const finishBtn = await page.locator('button[aria-label="Finish quiz"], button[aria-label="Finish quiz early"]');
+    await expect(finishBtn.first()).toBeVisible();
+    await finishBtn.first().click();
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     await page.goto('/achievements');
     await expect(page.getByRole('heading', { name: /achievements/i })).toBeVisible();
