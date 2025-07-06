@@ -55,36 +55,34 @@ show_menu_and_get_choice() {
   echo "\nWhich tests do you want to run?"
   echo "  1) [a]ll           - Run all Playwright tests (default)"
   echo "  2) [f]ailed        - Run only last failed test files (from output), with options to rerun, CI mode, debug, bisect, or run only failing lines"
-  echo "  3) [p]riorities    - Run prioritized test files (from env or last failed)"
-  echo "  4) [s]elect        - Run by file, pattern, tag or description (ex. @fast)"
-  echo "  5) [c]hanged       - Run tests for changed/staged files (since last commit/branch or staged for commit)"
-  echo "  6) [r]epeat        - Repeat the last run (from output)"
-  echo "  7) [c]lear         - Clear last failing and output files"
-  echo "  8) [h]elp          - Show help message"
-  echo "  9) [u]ntested      - Run only untested test files"
-  echo " 10) [update-snapshots] - Run tests with --update-snapshots"
-  echo " 11) [coverage]      - Run with code coverage enabled"
-  echo " 12) [s]tats         - List all test files, status, and show statistics"
-  echo " 13) [w]atch         - Watch mode: re-run tests on file changes"
+  echo "  3) [s]elect        - Run by file, pattern, tag or description (ex. @fast)"
+  echo "  4) [c]hanged       - Run tests for changed/staged files (since last commit/branch or staged for commit)"
+  echo "  5) [r]epeat        - Repeat the last run (from output)"
+  echo "  6) [cl]ear        - Clear last failing and output files"
+  echo "  7) [h]elp          - Show help message"
+  echo "  8) [u]ntested      - Run only untested test files"
+  echo "  9) [update-snapshots] - Run tests with --update-snapshots"
+  echo " 10) [coverage]      - Run with code coverage enabled"
+  echo " 11) [l]ist          - List all test files, status, and show statistics"
+  echo " 12) [w]atch         - Watch mode: re-run tests on file changes"
   echo ""
-  echo "Enter a number (1-13) or letter/keyword (default: 1): "
+  echo "Enter a number (1-12) or letter/keyword (default: 1): "
   read -r menu_choice
   menu_choice=${menu_choice:-1}
   # Remove [flaky] from menu and case
   case $menu_choice in
     1|a*) choice="a" ;;
     2|f*) choice="f" ;;
-    3|p*) choice="p" ;;
-    4|s*) choice="s" ;;
-    5|c*) choice="changed" ;;
-    6|r*) choice="r" ;;
-    7|clear*) choice="clear" ;;
-    8|h*) choice="h" ;;
-    9|u*) choice="u" ;;
-    10|update-snapshots*) choice="update-snapshots" ;;
-    11|coverage*) choice="coverage" ;;
-    12|s) choice="stats" ;;
-    13|w*) choice="w" ;;
+    3|s*) choice="s" ;;
+    4|c*) choice="changed" ;;
+    5|r*) choice="r" ;;
+    6|cl*|clear*) choice="clear" ;;
+    7|h*) choice="h" ;;
+    8|u*) choice="u" ;;
+    9|update-snapshots*) choice="update-snapshots" ;;
+    10|coverage*) choice="coverage" ;;
+    11|l*) choice="l" ;;
+    12|w*) choice="w" ;;
     *) echo "[WARN] Invalid selection. Defaulting to all tests."; choice="a" ;;
   esac
 }
@@ -188,11 +186,10 @@ fi
 if [[ "$choice" == "h"* ]]; then
   echo "\nUsage:"
   echo "  [a]ll      - Run all Playwright tests (default)"
-  echo "  [f]ailed   - Run only last failed test files (from output), with options to rerun, CI mode, debug, or bisect for flakiness"
-  echo "  [p]riorities - Run prioritized test files (from env or last failed)"
+  echo "  [f]ailed   - Run only last failed test files (from output), with options to rerun, CI mode, debug, bisect, or run only failing lines"
   echo "  [x]failed-lines - Run only failing test lines (file:line) from last run (if supported)"
   echo "  [d]ebug    - Debug a test file (prompt for file, or last failed)"
-  echo "  [s]tats    - List all test files, status, and show statistics (summary of pass/fail/untested and slowest tests)"
+  echo "  [l]ist     - List all test files, status, and show statistics (summary of pass/fail/untested and slowest tests)"
   echo "  [s]elect   - Run by file, pattern, tag, or description (e.g. filename, @fast, or test name)"
   echo "  [w]atch    - Watch mode: re-run tests on file changes automatically"
   echo "  [u]ntested - Run only untested test files (not present in last run output)"
@@ -201,7 +198,7 @@ if [[ "$choice" == "h"* ]]; then
   echo "  [precommit] - Run only staged/changed tests before commit/push, block if any fail"
   echo "  [html]     - Open HTML report in browser after run (if available)"
   echo "  [r]epeat   - Repeat the last run (from output)"
-  echo "  [c]lear    - Clear last failing and output files (optionally clear Playwright cache)"
+  echo "  [cl]ear    - Clear last failing and output files (optionally clear Playwright cache)"
   echo "  [h]elp     - Show this help message with descriptions for all test modes\n"
   exit 0
 fi
@@ -300,8 +297,8 @@ if [[ "$choice" == "d"* ]]; then
   fi
 fi
 
-# [s]tats mode: show test run statistics and list all test files/status
-if [[ "$choice" == "s"* ]]; then
+# [l]ist mode: show test run statistics and list all test files/status
+if [[ "$choice" == "l"* ]]; then
   all_test_files=( $(ls e2e/*.spec.*[tj]s 2>/dev/null) )
   passing_files=()
   failing_files=()
