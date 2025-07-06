@@ -100,8 +100,26 @@ export async function updateQuizStatsOnFinish({
         user: user.uid,
         completed: newCompleted
       });
+      if (typeof window !== 'undefined') {
+        (window as any).__QUIZ_STATS_DEBUG__ = {
+          status: 'success',
+          user: user.uid,
+          completed: newCompleted,
+          correct,
+          total,
+          time: new Date().toISOString(),
+        };
+      }
     } catch (writeErr) {
       console.error('[E2E DEBUG] updateQuizStatsOnFinish: analytics write error', writeErr);
+      if (typeof window !== 'undefined') {
+        (window as any).__QUIZ_STATS_DEBUG__ = {
+          status: 'error',
+          user: user.uid,
+          error: (writeErr && (writeErr as any).message) ? (writeErr as any).message : String(writeErr),
+          time: new Date().toISOString(),
+        };
+      }
     }
     const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
     // Log Firestore doc paths and data before writing

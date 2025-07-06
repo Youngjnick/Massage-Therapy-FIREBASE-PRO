@@ -18,6 +18,19 @@ export async function getUserStats(uid: string) {
   }
   const db = getFirestore();
   const analyticsRef = db.doc(`users/${uid}/stats/analytics`);
-  const doc = await analyticsRef.get();
-  return doc.exists ? doc.data() : null;
+  const path = `users/${uid}/stats/analytics`;
+  try {
+    console.log(`[getUserStats] Querying Firestore path: ${path}`);
+    const doc = await analyticsRef.get();
+    if (doc.exists) {
+      console.log(`[getUserStats] Document found:`, doc.data());
+      return doc.data();
+    } else {
+      console.log(`[getUserStats] Document does not exist at path: ${path}`);
+      return null;
+    }
+  } catch (err) {
+    console.error(`[getUserStats] Error fetching doc at path: ${path}`, err);
+    throw err;
+  }
 }

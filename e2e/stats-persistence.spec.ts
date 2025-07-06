@@ -100,10 +100,20 @@ test.describe('Stats Persistence', () => {
       const html = await page.content();
       throw new Error('Quiz start form not found after retries. HTML: ' + html);
     }
-    // Scroll Quiz Length input into view for mobile
-    const quizLengthInput = await page.getByLabel('Quiz Length');
-    await quizLengthInput.scrollIntoViewIfNeeded();
-    await quizLengthInput.fill('1');
+    // Select the first real topic (not empty/Other) if topic select is present
+    const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+    if (await topicSelect.count() > 0) {
+      const options = await topicSelect.locator('option').all();
+      for (const opt of options) {
+        const val = await opt.getAttribute('value');
+        if (val && val !== '' && val.toLowerCase() !== 'other') {
+          await topicSelect.selectOption(val);
+          console.log('[E2E DEBUG] Selected topic value:', val);
+          break;
+        }
+      }
+    }
+    await page.getByLabel('Quiz Length').fill('1');
     console.log('[E2E DEBUG] E2E test: quiz length set to 1');
     const startBtn = await page.getByRole('button', { name: /start/i });
     await startBtn.scrollIntoViewIfNeeded();

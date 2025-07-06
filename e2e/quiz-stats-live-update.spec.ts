@@ -38,6 +38,19 @@ test.describe('Quiz Stats Live Update', () => {
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
       // Wait for Quiz Length input
       const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+      // Select the first real topic (not empty/Other) if topic select is present
+      const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+      if (await topicSelect.count() > 0) {
+        const options = await topicSelect.locator('option').all();
+        for (const opt of options) {
+          const val = await opt.getAttribute('value');
+          if (val && val !== '' && val.toLowerCase() !== 'other') {
+            await topicSelect.selectOption(val);
+            console.log('[E2E DEBUG] Selected topic value:', val);
+            break;
+          }
+        }
+      }
       await quizLengthInput.fill('2');
       await page.getByRole('button', { name: /start/i }).click();
       await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });

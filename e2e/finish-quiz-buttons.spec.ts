@@ -27,6 +27,41 @@ test.describe('Finish and Finish Quiz Buttons', () => {
   test('completes quiz and shows results with Finish button', async ({ page }) => {
     // Wait for Quiz Length input
     const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+    // Select the first real topic (not empty/Other) from the topic select, matching the UI logic (first element in sorted topics array)
+    const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+    let firstValid = null;
+    let firstLabel = null;
+    if (await topicSelect.count() > 0) {
+      const options = await topicSelect.locator('option').all();
+      for (const opt of options) {
+        const val = await opt.getAttribute('value');
+        const label = await opt.textContent();
+        if (val && val !== '' && val.toLowerCase() !== 'other') {
+          firstValid = val;
+          firstLabel = label;
+          break;
+        }
+      }
+      if (firstValid) {
+        await topicSelect.selectOption(firstValid);
+        // Wait for the UI to update the quiz length input (simulate real user interaction)
+        await page.waitForTimeout(300); // or wait for spinner if present
+        // Optionally, check that the label in the UI matches what we expect
+        const selectedLabel = await topicSelect.inputValue();
+        console.log('[E2E DEBUG] Selected first topic value:', firstValid, 'label:', firstLabel, 'UI selected:', selectedLabel);
+      }
+    }
+    if (firstValid) {
+      // Wait for quiz length input's max to update (UI must reflect topic change)
+      const prevMax = await quizLengthInput.getAttribute('max');
+      await page.waitForFunction(
+        (input, oldMax) => input && input.max !== oldMax && input.max !== '0',
+        quizLengthInput,
+        prevMax
+      );
+      const max = await quizLengthInput.getAttribute('max');
+      if (!max || Number(max) < 1) throw new Error('Selected topic has no questions!');
+    }
     await quizLengthInput.fill('2');
     console.log('[E2E PROGRESS] Filled Quiz Length input');
     await page.getByRole('button', { name: /start/i }).click();
@@ -78,24 +113,56 @@ test.describe('Finish and Finish Quiz Buttons', () => {
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     console.log('[E2E PROGRESS] Quiz results are visible');
 
+    // --- Quiz stats debug output ---
+    const quizStatsDebug = await page.evaluate(() => (window as any).__QUIZ_STATS_DEBUG__);
+    console.log('[E2E DEBUG] window.__QUIZ_STATS_DEBUG__:', quizStatsDebug);
+
     // --- Firestore stat check ---
     // Get user UID from localStorage
     const userUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
     expect(userUid).toBeTruthy();
-    // Poll Firestore for analytics.completed increment
+    // Poll Firestore for analytics.completed increment, with granular debug output
     let analytics = null;
-    for (let i = 0; i < 10; i++) {
-      analytics = await getUserStats(userUid);
-      if (analytics && typeof analytics.completed === 'number' && analytics.completed > 0) break;
+    let lastErr = null;
+    const statsDocPath = `users/${userUid}/stats/analytics`;
+    for (let i = 0; i < 20; i++) {
+      try {
+        analytics = await getUserStats(userUid);
+        console.log(`[E2E DEBUG] [Poll ${i+1}] Firestore stats at ${statsDocPath}:`, analytics);
+        if (analytics && typeof analytics.completed === 'number' && analytics.completed > 0) break;
+      } catch (err) {
+        lastErr = err;
+        console.log(`[E2E DEBUG] [Poll ${i+1}] Error fetching stats:`, err);
+      }
       await page.waitForTimeout(1000);
     }
-    expect(analytics && analytics.completed > 0).toBeTruthy();
+    if (!(analytics && analytics.completed > 0)) {
+      console.log('[E2E ERROR] Final analytics value:', analytics, 'Last error:', lastErr);
+      throw new Error('Firestore analytics.completed did not increment after quiz finish!');
+    }
     console.log('[E2E DEBUG] Firestore analytics after finish:', analytics);
   });
 
   test('shows Finish Quiz button and works as expected', async ({ page }) => {
     // Wait for Quiz Length input
     const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+    // Select the first real topic (not empty/Other) from the topic select, matching the UI logic (first element in sorted topics array)
+    const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+    if (await topicSelect.count() > 0) {
+      const options = await topicSelect.locator('option').all();
+      // Find the last valid topic (not empty/Other)
+      let lastValid = null;
+      for (const opt of options) {
+        const val = await opt.getAttribute('value');
+        if (val && val !== '' && val.toLowerCase() !== 'other') {
+          lastValid = val;
+        }
+      }
+      if (lastValid) {
+        await topicSelect.selectOption(lastValid);
+        console.log('[E2E DEBUG] Selected last topic value:', lastValid);
+      }
+    }
     await quizLengthInput.fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     // Answer first question

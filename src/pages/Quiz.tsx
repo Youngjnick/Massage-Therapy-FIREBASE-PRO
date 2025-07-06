@@ -16,6 +16,7 @@ import Spinner from '../components/common/Spinner';
 import { useQuizData } from '../hooks/useQuizData';
 import { useLocation } from 'react-router-dom';
 import { getTopicStats } from '../utils/quizStats';
+import { updateQuizStatsOnFinish } from '../services/quizStatsService';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -219,6 +220,21 @@ const Quiz: React.FC = () => {
       }
     }
   }, [location.state, loading, questions]);
+
+  // Call updateQuizStatsOnFinish when quiz is finished and results are shown
+  useEffect(() => {
+    if (showResults && started) {
+      // Only call once per quiz finish
+      updateQuizStatsOnFinish({
+        userAnswers,
+        shuffledQuestions,
+        shuffledOptions,
+        started,
+        quizQuestions
+      });
+    }
+    // eslint-disable-next-line
+  }, [showResults]);
 
   // Use quizQuestions.length as the max quiz length
   const maxQuizLength = quizQuestions.length;
