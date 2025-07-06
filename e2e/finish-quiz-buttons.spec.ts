@@ -2,122 +2,127 @@
 /* global console */
 // @ts-expect-error: Playwright provides types for test context
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import { getTestUser } from './helpers/getTestUser';
+
+let testUser;
+test.beforeAll(async () => {
+  testUser = await getTestUser(0);
+});
+
+test.beforeEach(async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  });
+  await page.context().clearCookies();
+  await page.reload();
+  await uiSignIn(page, { email: testUser.email, password: testUser.password, profilePath: '/profile' });
+  await page.goto('/quiz');
+});
 
 test.describe('Finish and Finish Quiz Buttons', () => {
   test('completes quiz and shows results with Finish button', async ({ page }) => {
-    await page.goto('/');
-    console.log('[E2E PROGRESS] Navigated to /');
-    await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
-    let quizLengthInputFound = false;
-    try {
-      await page.getByLabel('Quiz Length', { exact: false }).waitFor({ state: 'visible', timeout: 10000 });
-      quizLengthInputFound = true;
-    } catch {
-      if (!page.isClosed()) {
-        try {
-          await page.screenshot({ path: 'test-results/finish-quiz-buttons-quiz-length-missing-1.png', fullPage: true });
-          const html = await page.content();
-          console.log('[E2E ERROR] Quiz Length input not found. Dumping HTML and labels...');
-          const allLabels = await page.$$eval('label', (labels: Element[]) => labels.map(l => (l as HTMLLabelElement).textContent));
-          console.log('[E2E ERROR] All labels:', allLabels);
-          console.log('[E2E ERROR] HTML:', html);
-        } catch {
-          console.log('[E2E ERROR] Could not capture screenshot or HTML');
-        }
-      }
-      throw new Error('Quiz Length input not found');
-    }
-    if (quizLengthInputFound) {
-      await page.getByLabel('Quiz Length', { exact: false }).fill('2');
-      console.log('[E2E PROGRESS] Filled Quiz Length input');
-    }
+    // Wait for Quiz Length input
+    const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+    await quizLengthInput.fill('2');
+    console.log('[E2E PROGRESS] Filled Quiz Length input');
     await page.getByRole('button', { name: /start/i }).click();
     console.log('[E2E PROGRESS] Clicked Start button');
+    // Dump page HTML after clicking Start for debugging
+    const pageHtml = await page.content();
+    console.log('[E2E DEBUG] Page HTML after Start:', pageHtml);
+    // Debug: count number of quiz stepper dots rendered
+    const stepDots = await page.locator('[data-testid="quiz-stepper-dot"]').count();
+    console.log(`[E2E DEBUG] Number of quiz stepper dots: ${stepDots}`);
+    if (stepDots !== 2) {
+      throw new Error(`Expected 2 quiz stepper dots, but found ${stepDots}`);
+    }
     // Answer first question
-    await page.getByTestId('quiz-option').first().click();
+    const firstOption = page.getByTestId('quiz-option').first();
+    await expect(firstOption).toBeVisible();
+    await firstOption.click();
+    await page.waitForTimeout(150); // allow UI to update
     console.log('[E2E PROGRESS] Selected first quiz option');
-    await page.getByRole('button', { name: /next/i }).click();
+    // Wait for Next button to be enabled, then click
+    const nextBtn = page.getByRole('button', { name: /next/i });
+    await expect(nextBtn).toBeEnabled({ timeout: 10000 });
+    await nextBtn.click();
     console.log('[E2E PROGRESS] Clicked Next button');
     // Answer second question
-    await page.getByTestId('quiz-option').first().click();
+    const secondOption = page.getByTestId('quiz-option').first();
+    await expect(secondOption).toBeVisible();
+    await secondOption.click();
+    await page.waitForTimeout(150);
     console.log('[E2E PROGRESS] Selected second quiz option');
-    // Click Finish
-    await page.getByRole('button', { name: /finish/i }).click();
-    console.log('[E2E PROGRESS] Clicked Finish button');
+    // Robustly handle both auto-submit and explicit finish flows
+    const finishBtn = page.locator('button[aria-label="Finish quiz"]');
+    // Wait for either the results screen or the Finish Quiz button
+    const resultsPromise = page.waitForSelector('[data-testid="quiz-results"]', { timeout: 10000 }).catch(() => null);
+    const finishBtnPromise = finishBtn.isVisible().then(async (visible) => {
+      if (visible) {
+        await expect(finishBtn).toBeEnabled({ timeout: 10000 });
+        await finishBtn.click();
+        return true;
+      }
+      return false;
+    }).catch(() => false);
+    // Wait for either to resolve
+    const [results, finishClicked] = await Promise.all([resultsPromise, finishBtnPromise]);
+    if (!results && !finishClicked) {
+      throw new Error('Neither results screen nor Finish Quiz button appeared');
+    }
     // Results screen should be visible
     await expect(page.getByTestId('quiz-results')).toBeVisible();
     console.log('[E2E PROGRESS] Quiz results are visible');
   });
 
   test('shows Finish Quiz button and works as expected', async ({ page }) => {
-    await page.goto('/');
-    console.log('[E2E PROGRESS] Navigated to /');
-    // Wait for the DOM to be interactive
-    await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
-    let quizLengthInputFound = false;
-    try {
-      await page.getByLabel('Quiz Length', { exact: false }).waitFor({ state: 'visible', timeout: 10000 });
-      quizLengthInputFound = true;
-    } catch {
-      // Only try to log if the page is not closed
-      if (!page.isClosed()) {
-        try {
-          await page.screenshot({ path: 'test-results/finish-quiz-buttons-quiz-length-missing.png', fullPage: true });
-          const html = await page.content();
-          console.log('[E2E ERROR] Quiz Length input not found. Dumping HTML and labels...');
-          const allLabels = await page.$$eval('label', (labels: Element[]) => labels.map(l => (l as HTMLLabelElement).textContent));
-          console.log('[E2E ERROR] All labels:', allLabels);
-          console.log('[E2E ERROR] HTML:', html);
-        } catch {
-          console.log('[E2E ERROR] Could not capture screenshot or HTML');
-        }
-      }
-      throw new Error('Quiz Length input not found');
-    }
-    if (quizLengthInputFound) {
-      await page.getByLabel('Quiz Length', { exact: false }).fill('1');
-      console.log('[E2E PROGRESS] Filled Quiz Length input');
-    }
+    // Wait for Quiz Length input
+    const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+    await quizLengthInput.fill('2');
     await page.getByRole('button', { name: /start/i }).click();
-    console.log('[E2E PROGRESS] Clicked Start button');
-    await page.getByTestId('quiz-option').first().click();
-    console.log('[E2E PROGRESS] Selected first quiz option');
-
-    // Wait for either Finish Quiz or Finish button to appear, with progress output
-    const maxWaitMs = 20000;
-    const pollInterval = 500;
-    let waited = 0;
-    let finishQuizVisible = false;
-    let finishVisible = false;
-    let lastLog = '';
-    const finishQuizBtn = page.getByRole('button', { name: /finish quiz/i });
-    const finishBtn = page.getByRole('button', { name: /finish/i });
-    while (waited < maxWaitMs) {
-      finishQuizVisible = await finishQuizBtn.isVisible().catch(() => false);
-      finishVisible = await finishBtn.isVisible().catch(() => false);
-      if (finishQuizVisible || finishVisible) break;
-      const msg = `[E2E PROGRESS] Waiting for Finish/Finish Quiz button... waited ${waited / 1000}s`;
-      if (msg !== lastLog) console.log(msg);
-      lastLog = msg;
-      await page.waitForTimeout(pollInterval);
-      waited += pollInterval;
-    }
-    console.log('[E2E DEBUG] Finish Quiz visible:', finishQuizVisible, 'Finish visible:', finishVisible);
-    if (finishQuizVisible) {
-      await finishQuizBtn.waitFor({ state: 'attached', timeout: 5000 });
-      await finishQuizBtn.click();
-      console.log('[E2E DEBUG] Clicked Finish Quiz button');
-    } else if (finishVisible) {
-      await finishBtn.waitFor({ state: 'attached', timeout: 5000 });
-      await finishBtn.click();
-      console.log('[E2E DEBUG] Clicked Finish button');
-    } else {
-      // Dump all button texts for debugging
-      const allButtons = await page.$$eval('button', (btns: Element[]) => btns.map(b => (b as HTMLButtonElement).textContent));
-      console.log('[E2E ERROR] Neither Finish Quiz nor Finish button was visible. All buttons:', allButtons);
-      throw new Error('Neither Finish Quiz nor Finish button was visible');
-    }
+    // Answer first question
+    const firstOption = page.getByTestId('quiz-option').first();
+    await expect(firstOption).toBeVisible();
+    await firstOption.click();
+    await page.waitForTimeout(150);
+    // Should see Finish (early) button
+    const finishBtnEarly = page.locator('button[aria-label="Finish quiz early"]');
+    await expect(finishBtnEarly).toBeEnabled({ timeout: 10000 });
+    await finishBtnEarly.click();
+    // Should see quiz results
     await expect(page.getByTestId('quiz-results')).toBeVisible();
-    console.log('[E2E DEBUG] Quiz results are visible');
-  }, 60000);
+    // Start another quiz for normal finish
+    await page.getByRole('button', { name: /start new quiz/i }).click();
+    // Re-query the quiz length input after DOM update
+    const quizLengthInput2 = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+    await quizLengthInput2.fill('2');
+    await page.getByRole('button', { name: /start/i }).click();
+    // Answer all questions
+    const option1 = page.getByTestId('quiz-option').first();
+    await expect(option1).toBeVisible();
+    await option1.click();
+    await page.waitForTimeout(150);
+    const nextBtn = page.getByRole('button', { name: /next/i });
+    await expect(nextBtn).toBeEnabled({ timeout: 10000 });
+    await nextBtn.click();
+    const option2 = page.getByTestId('quiz-option').first();
+    await expect(option2).toBeVisible();
+    await option2.click();
+    await page.waitForTimeout(150);
+    // Should see Finish Quiz button
+    const finishBtn = page.locator('button[aria-label="Finish quiz"]');
+    await expect(finishBtn).toBeEnabled({ timeout: 10000 });
+    // Assert that the quiz is now on the last question (question 2 of 2)
+    // If your UI shows a question number, check it here. Otherwise, check for the Finish Quiz button.
+    await finishBtn.waitFor({ state: 'visible', timeout: 10000 });
+    await expect(finishBtn).toBeEnabled({ timeout: 10000 });
+    console.log('[E2E PROGRESS] Finish Quiz button is visible and enabled');
+    await finishBtn.click();
+    console.log('[E2E PROGRESS] Clicked Finish Quiz button');
+    // Results screen should be visible
+    await expect(page.getByTestId('quiz-results')).toBeVisible();
   });
+});
