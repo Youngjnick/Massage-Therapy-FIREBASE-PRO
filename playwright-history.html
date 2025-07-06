@@ -78,12 +78,11 @@ const chart = new Chart(ctx, {
         // This is a simple demo: in a real version, you'd track per-date failures
         failedLocs = parsed.filter(r=>r.status==='✘').map(r=>r.location);
       }
-      alert('Failed tests on '+date+':
-'+failedLocs.join('
-'));
+      alert('Failed tests on '+date+':\n'+failedLocs.join('\n'));
     }
   }}
 });
+</script>
 
 <h2>Raw History</h2><pre>
 ===== 2025-07-06 12:23:31 =====
@@ -141,4 +140,6 @@ Passed: 0
 Failed: 0
 Failed locations: 
 
-</pre></body></html>
+</pre>
+</body>
+</html>
