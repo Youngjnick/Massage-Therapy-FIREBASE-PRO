@@ -1,21 +1,21 @@
 [dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-b6l2vwy6@gmail.com created successfully. UID: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-Firestore user doc created for testuserc-b6l2vwy6@gmail.com (uid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1)
-User testuserd-yfvqioh1@gmail.com created successfully. UID: HwMAIdHXTZB21Dc9dtWfavC8FWUQ
-Firestore user doc created for testuserd-yfvqioh1@gmail.com (uid: HwMAIdHXTZB21Dc9dtWfavC8FWUQ)
+User testuserc-k69uhwe2@gmail.com created successfully. UID: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+Firestore user doc created for testuserc-k69uhwe2@gmail.com (uid: DoVUnLJevAtzZt4RfDbt2AGY6HiK)
+User testuserd-a2bhxlfz@gmail.com created successfully. UID: MXnK1yQiEKhy4dr8IUpZYqpSulZ8
+Firestore user doc created for testuserd-a2bhxlfz@gmail.com (uid: MXnK1yQiEKhy4dr8IUpZYqpSulZ8)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-b6l2vwy6@gmail.com",
+    "email": "testuserc-k69uhwe2@gmail.com",
     "password": "testuserC",
-    "uid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1"
+    "uid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK"
   },
   {
-    "email": "testuserd-yfvqioh1@gmail.com",
+    "email": "testuserd-a2bhxlfz@gmail.com",
     "password": "testuserD",
-    "uid": "HwMAIdHXTZB21Dc9dtWfavC8FWUQ"
+    "uid": "MXnK1yQiEKhy4dr8IUpZYqpSulZ8"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
@@ -32,10 +32,10 @@ Running 9 tests using 4 workers
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Submitting sign-in form.
@@ -44,64 +44,66 @@ Running 9 tests using 4 workers
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] User A localStorage after sign-in: {
-  "userSettings": "{\"email\":\"testuserc-b6l2vwy6@gmail.com\",\"createdByTest\":true}",
-  "firebaseUserUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1",
-  "testUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1"
+  "userSettings": "{\"email\":\"testuserc-k69uhwe2@gmail.com\",\"createdByTest\":true}",
+  "firebaseUserUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK",
+  "testUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK"
 }
-[E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] User A sessionStorage after sign-in: {}
 [E2E DEBUG] Cookies after sign-in: [
   {
     "name": "_ga_SWVWKNWDD3",
-    "value": "GS2.1.s1751916722$o1$g0$t1751916722$j60$l0$h0",
+    "value": "GS2.1.s1751917472$o1$g0$t1751917472$j60$l0$h0",
     "domain": "localhost",
     "path": "/",
-    "expires": 1786476722.892661,
+    "expires": 1786477472.597921,
     "httpOnly": false,
     "secure": false,
     "sameSite": "Lax"
   },
   {
     "name": "_ga",
-    "value": "GA1.1.1920784022.1751916723",
+    "value": "GA1.1.1497139409.1751917473",
     "domain": "localhost",
     "path": "/",
-    "expires": 1786476722.892878,
+    "expires": 1786477472.598197,
     "httpOnly": false,
     "secure": false,
     "sameSite": "Lax"
   }
 ]
-User A UID: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+User A UID: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] User A localStorage: {
-  "userSettings": "{\"email\":\"testuserc-b6l2vwy6@gmail.com\",\"createdByTest\":true}",
-  "firebaseUserUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1",
-  "testUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1"
+  "userSettings": "{\"email\":\"testuserc-k69uhwe2@gmail.com\",\"createdByTest\":true}",
+  "firebaseUserUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK",
+  "testUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK"
 }
-Polling stat (User A initial): [##[E2E DEBUG] initialQuizzesTaken: 0 userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+Polling stat (User A initial): [##[E2E DEBUG] initialQuizzesTaken: 0 userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 ]
 User A initial stat: 0
 [E2E DEBUG] initialQuizzesTaken: 0
 [E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
-[E2E DEBUG] quizResultsText after quiz #1: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhere does the internal oblique muscle originate?Your answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentCorrect answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentExplanation: The internal oblique arises from fascia and bony landmarks of the lower torso.More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents.Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy.Answered: 1 / 1Close
-[E2E DEBUG] updatedQuizzesTaken: 3
-[E2E DEBUG] quizzesTakenAfterReload: 3 expected: 3
-[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-  ✓  4 [Desktop Chrome] › e2e/stats-persistence-after-reload.spec.ts:56:3 › Stats Persistence After Reload › should persist stats and UI after app reload (10.9s)
+[E2E DEBUG] quizResultsText after quiz #1: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich abdominal muscle is the deepest layer of the lateral abdominal wall?Your answer: Transverse abdominisCorrect answer: Transverse abdominisExplanation: The transverse abdominis lies deepest in the abdominal wall.More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration.Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer.Answered: 1 / 1Close
+[E2E DEBUG] updatedQuizzesTaken: 2
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m2[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] quizzesTakenAfterReload: 2 expected: 2
+  ✓  4 [Desktop Chrome] › e2e/stats-persistence-after-reload.spec.ts:56:3 › Stats Persistence After Reload › should persist stats and UI after app reload (11.5s)
   -  5 [Desktop Chrome] › e2e/stats-persistence-firestore.spec.ts:25:8 › Stats Persistence with Firestore Backend Verification › UI stats and Firestore stats match and persist after quiz and reload
 [E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
 [E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] quizResultsText after quiz #2: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhat is the origin of the rectus abdominis muscle?Your answer: Pubic crest and pubic symphysisCorrect answer: Pubic crest and pubic symphysisExplanation: The rectus abdominis originates from the pubic crest and symphysis.More Info: The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation.Clinical Application: Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt.Answered: 1 / 1Close
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] E2E test: after resetUserStats
-[getUserStats] Querying Firestore path: users/FM9AWGVdgwb6jCWSW4IdcMHhsjt1/stats/analytics
+[getUserStats] Querying Firestore path: users/DoVUnLJevAtzZt4RfDbt2AGY6HiK/stats/analytics
 [getUserStats] Document found: {
   badges: [33m0[39m,
   total: [33m1[39m,
@@ -109,11 +111,11 @@ User A initial stat: 0
   badgeProgress: { correct: [33m1[39m },
   streak: [33m0[39m,
   streakHistory: [
-    { date: [32m'2025-07-07T19:32:09.573Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.648Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.767Z'[39m, streak: [33m0[39m }
+    { date: [32m'2025-07-07T19:44:39.317Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:39.480Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:44.328Z'[39m, streak: [33m0[39m }
   ],
-  updatedAt: [32m'2025-07-07T19:32:09.767Z'[39m,
+  updatedAt: [32m'2025-07-07T19:44:44.328Z'[39m,
   completed: [33m0[39m
 }
 [E2E DEBUG] Firestore analytics doc after reset: {
@@ -123,61 +125,59 @@ User A initial stat: 0
   badgeProgress: { correct: [33m1[39m },
   streak: [33m0[39m,
   streakHistory: [
-    { date: [32m'2025-07-07T19:32:09.573Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.648Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.767Z'[39m, streak: [33m0[39m }
+    { date: [32m'2025-07-07T19:44:39.317Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:39.480Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:44.328Z'[39m, streak: [33m0[39m }
   ],
-  updatedAt: [32m'2025-07-07T19:32:09.767Z'[39m,
+  updatedAt: [32m'2025-07-07T19:44:44.328Z'[39m,
   completed: [33m0[39m
 }
-[E2E DEBUG] E2E test: after goto /analytics
-[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
-Polling stat (User A updated): []
+Polling stat (User A updated): [[E2E DEBUG] E2E test: after goto /analytics
+]
 User A updated stat: 0
-[E2E DEBUG] quizResultsText after quiz #2: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhat is the origin of the external oblique muscle?Your answer: External surfaces of ribs 5–12Correct answer: External surfaces of ribs 5–12Explanation: The external oblique arises from ribs 5 to 12.More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression.Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture.Answered: 1 / 1Close
-  ✘  2 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:62:3 › Stats Isolation per User › stats should not leak between users (14.0s)
-[E2E DEBUG] initialQuizzesTaken after reset: 0 string userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+  ✘  3 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:62:3 › Stats Isolation per User › stats should not leak between users (13.7s)
+[E2E DEBUG] initialQuizzesTaken after reset: 0 string userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] E2E test: after goto /quiz
 [E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m0[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
-[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m0[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
 [E2E DEBUG] User A localStorage after sign-in: {
-  "userSettings": "{\"email\":\"testuserc-b6l2vwy6@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"darkMode\":false,\"showExplanations\":true}",
-  "firebaseUserUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1",
-  "testUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1"
+  "userSettings": "{\"email\":\"testuserc-k69uhwe2@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"darkMode\":false,\"showExplanations\":true}",
+  "firebaseUserUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK",
+  "testUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK"
 }
 [E2E DEBUG] User A sessionStorage after sign-in: {}
 [E2E DEBUG] Cookies after sign-in: [
   {
     "name": "_ga",
-    "value": "GA1.1.7367089.1751916737",
+    "value": "GA1.1.1744480050.1751917487",
     "domain": "localhost",
     "path": "/",
-    "expires": 1786476736.644376,
+    "expires": 1786477486.593201,
     "httpOnly": false,
     "secure": false,
     "sameSite": "Lax"
   },
   {
     "name": "_ga_SWVWKNWDD3",
-    "value": "GS2.1.s1751916736$o1$g0$t1751916736$j60$l0$h0",
+    "value": "GS2.1.s1751917486$o1$g0$t1751917486$j60$l0$h0",
     "domain": "localhost",
     "path": "/",
-    "expires": 1786476736.650564,
+    "expires": 1786477486.599368,
     "httpOnly": false,
     "secure": false,
     "sameSite": "Lax"
   }
 ]
-User A UID: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+User A UID: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] User A localStorage: {
-  "userSettings": "{\"email\":\"testuserc-b6l2vwy6@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"darkMode\":false,\"showExplanations\":true}",
-  "firebaseUserUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1",
-  "testUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1"
+  "userSettings": "{\"email\":\"testuserc-k69uhwe2@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"darkMode\":false,\"showExplanations\":true}",
+  "firebaseUserUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK",
+  "testUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK"
 }
 Polling stat (User A initial): [#[E2E DEBUG] E2E test: quiz-start-form found
 [E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
@@ -187,7 +187,10 @@ Polling stat (User A initial): [#[E2E DEBUG] E2E test: quiz-start-form found
 [E2E DEBUG] E2E test: first quiz option clicked
 [E2E DEBUG] E2E test: next/finish button clicked
 [E2E DEBUG] E2E test: quiz-results visible
-#Final Quizzes Taken text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 1Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownAbdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
+#[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: [33m1[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+]
+User A initial stat: 1
+Final Quizzes Taken text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 1Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownAbdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
 Final Correct Answers text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 1Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownAbdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
 Final Accuracy text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 1Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownAbdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
 Final Topic Stats text: Abdominal Muscle Origins
@@ -196,12 +199,9 @@ Initial/Updated Quizzes Taken: [33m0[39m [33m1[39m
 Initial/Updated Correct: [33m0[39m [33m1[39m
 Initial/Updated Accuracy: [33m0[39m [33m1[39m
 Initial/Updated Topic Correct: [33m1[39m [33m1[39m
-]
-User A initial stat: 1
-  ✓  1 [Desktop Chrome] › e2e/quiz-stats-live-update.spec.ts:16:3 › Quiz Stats Live Update › Stats and topic stats update after quiz completion (17.7s)
+  ✓  1 [Desktop Chrome] › e2e/quiz-stats-live-update.spec.ts:16:3 › Quiz Stats Live Update › Stats and topic stats update after quiz completion (18.3s)
 [E2E DEBUG] Navigating to profilePath: /profile
-[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: [33m1[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[getUserStats] Querying Firestore path: users/FM9AWGVdgwb6jCWSW4IdcMHhsjt1/stats/analytics
+[getUserStats] Querying Firestore path: users/DoVUnLJevAtzZt4RfDbt2AGY6HiK/stats/analytics
 [getUserStats] Document found: {
   badges: [33m0[39m,
   total: [33m1[39m,
@@ -209,13 +209,13 @@ User A initial stat: 1
   badgeProgress: { correct: [33m1[39m },
   streak: [33m0[39m,
   streakHistory: [
-    { date: [32m'2025-07-07T19:32:09.573Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.648Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.767Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:18.255Z'[39m, streak: [33m0[39m }
+    { date: [32m'2025-07-07T19:44:39.317Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:39.480Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:44.328Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:48.451Z'[39m, streak: [33m0[39m }
   ],
   completed: [33m1[39m,
-  updatedAt: [32m'2025-07-07T19:32:18.255Z'[39m
+  updatedAt: [32m'2025-07-07T19:44:48.452Z'[39m
 }
 [E2E DEBUG] Firestore analytics doc after quiz: {
   badges: [33m0[39m,
@@ -224,16 +224,17 @@ User A initial stat: 1
   badgeProgress: { correct: [33m1[39m },
   streak: [33m0[39m,
   streakHistory: [
-    { date: [32m'2025-07-07T19:32:09.573Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.648Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:09.767Z'[39m, streak: [33m0[39m },
-    { date: [32m'2025-07-07T19:32:18.255Z'[39m, streak: [33m0[39m }
+    { date: [32m'2025-07-07T19:44:39.317Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:39.480Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:44.328Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-07T19:44:48.451Z'[39m, streak: [33m0[39m }
   ],
   completed: [33m1[39m,
-  updatedAt: [32m'2025-07-07T19:32:18.255Z'[39m
+  updatedAt: [32m'2025-07-07T19:44:48.452Z'[39m
 }
+[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: [33m1[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
@@ -242,91 +243,91 @@ User A initial stat: 1
 
 
 Running in emulator mode. Do not use with production credentials.
-[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: [33m2[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: 2 string userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] updatedQuizzesTaken: 2 string userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-  ✓  6 [Desktop Chrome] › e2e/stats-persistence.spec.ts:59:3 › Stats Persistence › should persist updated stats after quiz and reload (9.8s)
-[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: 2 string userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] updatedQuizzesTaken: 2 string userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+  ✓  6 [Desktop Chrome] › e2e/stats-persistence.spec.ts:59:3 › Stats Persistence › should persist updated stats after quiz and reload (9.7s)
+[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: [33m2[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: [33m2[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] Updated analytics text: 
-  Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 3Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownAbdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
+  Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 2Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownAbdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
 
 
 Running in emulator mode. Do not use with production credentials.
 [E2E DEBUG] initialTotal: [33m0[39m updatedTotal: [33m1[39m
-[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
   ✓  8 [Desktop Chrome] › e2e/stats-topic-breakdown.spec.ts:22:3 › Stats Topic Breakdown › should increment topic breakdown after quiz in specific topic (6.6s)
 Polling stat (User A updated): []
-User A updated stat: 3
+User A updated stat: 2
+[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: [33m2[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] Navigating to profilePath: /profile
-[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserd-yfvqioh1@gmail.com, password=testuserD
+[E2E DEBUG] Filling sign-in form: email=testuserd-a2bhxlfz@gmail.com, password=testuserD
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-User B UID: HwMAIdHXTZB21Dc9dtWfavC8FWUQ
+User B UID: MXnK1yQiEKhy4dr8IUpZYqpSulZ8
 [E2E DEBUG] User B localStorage: {
-  "userSettings": "{\"email\":\"testuserd-yfvqioh1@gmail.com\",\"createdByTest\":true}",
-  "firebaseUserUid": "HwMAIdHXTZB21Dc9dtWfavC8FWUQ",
-  "testUid": "HwMAIdHXTZB21Dc9dtWfavC8FWUQ"
+  "userSettings": "{\"email\":\"testuserd-a2bhxlfz@gmail.com\",\"createdByTest\":true}",
+  "firebaseUserUid": "MXnK1yQiEKhy4dr8IUpZYqpSulZ8",
+  "testUid": "MXnK1yQiEKhy4dr8IUpZYqpSulZ8"
 }
-Polling stat (User B initial): [##]
+Polling stat (User B initial): [#[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: [33m2[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+#]
 User B stat: 0
-[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
 [E2E DEBUG] Navigating to profilePath: /profile
-  ✘  3 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:53:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (30.3s)
+[E2E DEBUG] Poll #8 after quiz: Quizzes Taken: [33m2[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+  ✘  2 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:53:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (30.4s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-User A UID after re-login: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+User A UID after re-login: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] User A localStorage after re-login: {
-  "userSettings": "{\"email\":\"testuserc-b6l2vwy6@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"darkMode\":false,\"showExplanations\":true}",
-  "firebaseUserUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1",
-  "testUid": "FM9AWGVdgwb6jCWSW4IdcMHhsjt1"
+  "userSettings": "{\"email\":\"testuserc-k69uhwe2@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"darkMode\":false,\"showExplanations\":true}",
+  "firebaseUserUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK",
+  "testUid": "DoVUnLJevAtzZt4RfDbt2AGY6HiK"
 }
-Polling stat (User A final): [##[E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
-[E2E DEBUG] Submitting sign-in form.
+Polling stat (User A final): [#[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
+#[E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
 ]
-User A final stat: 3
-[E2E DEBUG] Sign-in flow complete, sign-out button visible.
-  ✓  7 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:62:3 › Stats Isolation per User › stats should not leak between users (retry #1) (17.8s)
-[E2E DEBUG] initialQuizzesTaken: 3 userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
+User A final stat: 2
+  ✓  7 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:62:3 › Stats Isolation per User › stats should not leak between users (retry #1) (18.1s)
+[E2E DEBUG] initialQuizzesTaken: 2 userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
 [E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
-[E2E DEBUG] quizResultsText after quiz #1: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich nerves innervate the transverse abdominis?Your answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)Correct answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)Explanation: It is innervated by both thoracic and upper lumbar nerves.More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability.Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support.Answered: 1 / 1Close
-[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #8 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #9 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #10 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #11 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-[E2E DEBUG] Poll #12 after quiz: Quizzes Taken: [33m3[39m userUid: FM9AWGVdgwb6jCWSW4IdcMHhsjt1
-  ✘  9 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:53:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (retry #1) (30.3s)
+[E2E DEBUG] quizResultsText after quiz #1: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhat is the origin of the external oblique muscle?Your answer: External surfaces of ribs 5–12Correct answer: External surfaces of ribs 5–12Explanation: The external oblique arises from ribs 5 to 12.More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression.Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture.Answered: 1 / 1Close
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[E2E DEBUG] quizResultsText after quiz #2: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhere does the transverse abdominis muscle originate?Your answer: Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligamentCorrect answer: Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligamentExplanation: It originates from ribs, fascia, and pelvis.More Info: The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength.Clinical Application: Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support.Answered: 1 / 1Close
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #8 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+[E2E DEBUG] Poll #9 after quiz: Quizzes Taken: [33m3[39m userUid: DoVUnLJevAtzZt4RfDbt2AGY6HiK
+  ✘  9 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:53:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (retry #1) (30.4s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-[E2E DEBUG] quizResultsText after early finish: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 2Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich abdominal muscle is the deepest layer of the lateral abdominal wall?Your answer: Transverse abdominisCorrect answer: Transverse abdominisExplanation: The transverse abdominis lies deepest in the abdominal wall.More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration.Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer.Where does the internal oblique muscle originate?Your answer: No answerCorrect answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentExplanation: The internal oblique arises from fascia and bony landmarks of the lower torso.More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents.Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy.Answered: 1 / 2(Some questions were skipped or left unanswered)Close
-  ✓  10 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:171:3 › Stats Critical Flows › should allow early quiz completion with Finish (aria-label finish early) and show results (3.5s)
+[E2E DEBUG] quizResultsText after early finish: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 2Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich of the following abdominal muscles assists in forced expiration?Your answer: All of the aboveCorrect answer: All of the aboveExplanation: All these muscles contract to assist in expelling air from the lungs.More Info: During forced expiration, abdominal muscles contract to compress the abdominal cavity, elevate the diaphragm, and push air out. This includes the rectus, obliques, and transverse muscles.Clinical Application: Massage can facilitate more effective breathing by improving abdominal compliance and reducing tension in these muscles.Which abdominal muscle is the deepest layer of the lateral abdominal wall?Your answer: No answerCorrect answer: Transverse abdominisExplanation: The transverse abdominis lies deepest in the abdominal wall.More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration.Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer.Answered: 1 / 2(Some questions were skipped or left unanswered)Close
+  ✓  10 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:171:3 › Stats Critical Flows › should allow early quiz completion with Finish (aria-label finish early) and show results (4.1s)
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-b6l2vwy6@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-k69uhwe2@gmail.com, password=testuserC
 [E2E DEBUG] Submitting sign-in form.
 [E2E DEBUG] Waiting for sign-out button after login.
 [E2E DEBUG] Sign-in flow complete, sign-out button visible.
-[E2E DEBUG] quizResultsText after normal finish: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich nerves innervate the external oblique muscle?Your answer: Thoracoabdominal nerves (T7–T11) and subcostal nerve (T12)Correct answer: Thoracoabdominal nerves (T7–T11) and subcostal nerve (T12)Explanation: The external oblique is innervated by lower thoracic spinal nerves.More Info: Thoracoabdominal nerves (continuations of intercostals) from T7–T11 and the subcostal nerve (T12) supply the external oblique. These nerves allow trunk motion and abdominal wall compression.Clinical Application: A massage therapist targeting abdominal breathing or tension may stimulate these nerves for relaxation.Answered: 1 / 1Close
-  ✓  11 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:193:3 › Stats Critical Flows › should submit a completed quiz with Finish (aria-label finish quiz) and show results (4.3s)
+[E2E DEBUG] quizResultsText after normal finish: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich of the following abdominal muscles assists in forced expiration?Your answer: All of the aboveCorrect answer: All of the aboveExplanation: All these muscles contract to assist in expelling air from the lungs.More Info: During forced expiration, abdominal muscles contract to compress the abdominal cavity, elevate the diaphragm, and push air out. This includes the rectus, obliques, and transverse muscles.Clinical Application: Massage can facilitate more effective breathing by improving abdominal compliance and reducing tension in these muscles.Answered: 1 / 1Close
+  ✓  11 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:193:3 › Stats Critical Flows › should submit a completed quiz with Finish (aria-label finish quiz) and show results (4.0s)
 
 
   1) [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:53:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz 
