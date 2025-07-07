@@ -1,49 +1,3 @@
-# --- AI Commit Message Generation (OpenAI GPT-4) ---
-# Requires: OPENAI_API_KEY environment variable
-function generate_ai_commit_message() {
-  local diff summary prompt ai_response commit_msg
-  diff=$(git diff --cached)
-  summary=""
-  if [[ -f scripts/test-output.txt ]]; then
-    summary+="$(cat scripts/test-output.txt)\n"
-  fi
-  if [[ -f scripts/playwright-output.txt ]]; then
-    summary+="$(cat scripts/playwright-output.txt)\n"
-  fi
-  prompt="Generate a concise, detailed commit message for the following code changes and test results.\n\nGit diff:\n$diff\n\nTest summary:\n$summary\n"
-  if [[ -z "$OPENAI_API_KEY" ]]; then
-    echo "[AI COMMIT] Skipping AI commit message generation: OPENAI_API_KEY not set."
-    return 1
-  fi
-  echo "[AI COMMIT] Requesting commit message from OpenAI..."
-  ai_response=$(curl -s -X POST https://api.openai.com/v1/chat/completions \
-    -H "Content-Type: application/json" \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -d '{
-      "model": "gpt-4",
-      "messages": [
-        {"role": "system", "content": "You are a helpful assistant that writes clear, professional git commit messages."},
-        {"role": "user", "content": '"$prompt"'}
-      ],
-      "max_tokens": 256,
-      "temperature": 0.2
-    }')
-  commit_msg=$(echo "$ai_response" | grep -o '"content":"[^"]*"' | head -1 | sed 's/"content":"//' | sed 's/\\n/\n/g')
-  if [[ -z "$commit_msg" ]]; then
-    echo "[AI COMMIT] Failed to generate commit message."
-    return 1
-  fi
-  echo "\n--- AI Generated Commit Message ---\n$commit_msg\n-------------------------------"
-  echo "Do you want to use this AI-generated commit message? (y/n): "
-  read use_ai_msg
-  if [[ "$use_ai_msg" == "y" ]]; then
-    AI_COMMIT_MSG="$commit_msg"
-    return 0
-  else
-    return 1
-  fi
-}
-
 #!/bin/zsh
 # sync-all-files-to-branches.sh
 # Usage: ./scripts/sync-all-files-to-branches.sh [--remote remote1 remote2 ...] [--skip-tests] branch1 branch2 ...
@@ -55,6 +9,21 @@ LOG_FILE="$(dirname "$0")/sync-history.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 touch "$LOG_FILE"
 SKIP_TESTS=false
+
+# --- SUMMARY FUNCTION ---
+show_stash_and_precommit_summary() {
+  echo "\033[1;35m----- Git Commit Summary -----\033[0m"
+  git --no-pager log -1 --stat
+  echo
+  echo "Current branch: $(git symbolic-ref --short -q HEAD)"
+  git status -sb
+  echo
+  if git stash list | grep -q .; then
+    echo "Latest stash:"
+    git stash list | head -1
+  fi
+  echo "\033[1;35m-----------------------------\033[0m"
+}
 
 # Parse arguments for --remote, --skip-tests, --auto-commit-wip, and --commit-current-branch-only
 AUTO_COMMIT_WIP=false
@@ -119,9 +88,13 @@ if [[ ${#branches[@]} -eq 0 ]]; then
     echo "No branches entered. Exiting."
     exit 1
   fi
-  # Split branch_input on whitespace (spaces, tabs, newlines)
-  for b in $branch_input; do
-    branches+=("$b")
+  # Split branch_input on commas and whitespace (zsh compatible), trim, and only add non-empty
+  branch_array=(${(s:,:)branch_input// /,})
+  for b in "${branch_array[@]}"; do
+    b_trimmed="${b//[[:space:]]/}"
+    if [[ -n "$b_trimmed" ]]; then
+      branches+=("$b_trimmed")
+    fi
   done
 fi
 
@@ -132,15 +105,30 @@ for remote in $remotes; do
   # Only add if remote is a real git remote
   if git remote | grep -qx "$remote"; then
     for branch in $branches; do
-      all_targets+="$remote/$branch"
+      # Only add if branch is non-empty and not just whitespace
+      branch_trimmed="${branch//[[:space:]]/}"
+      if [[ -n "$branch_trimmed" ]]; then
+        all_targets+=("$remote/$branch_trimmed")
+      fi
     done
   fi
   # Do NOT treat branch names as remotes
   # This prevents invalid targets like branch/branch
   # Only valid remote/branch pairs are added
+  # Never add origin/ or main4 alone
 done
-# Remove duplicates
-all_targets=($(printf "%s\n" "${all_targets[@]}" | awk '!seen[$0]++'))
+# Remove duplicates and filter out any invalid targets (must match remote/branch)
+all_targets=($(printf "%s\n" "${all_targets[@]}" | grep -E '^[^/]+/.+$' | awk '!seen[$0]++'))
+
+# Diagnostic: print all_targets before confirmation
+if [[ ${#all_targets[@]} -eq 0 ]]; then
+  echo "\033[1;31mERROR: No valid remote/branch targets found. Exiting.\033[0m"
+  exit 1
+fi
+printf "\n\033[1;34m[DIAG] Final sync targets:\033[0m\n"
+for t in "${all_targets[@]}"; do
+  echo "  $t"
+done
 
 # Detect if in detached HEAD state and get current ref/commit info
 CURRENT_BRANCH=$(git symbolic-ref --short -q HEAD)
@@ -168,249 +156,359 @@ fi
 
 # --- ALWAYS COMMIT ALL CHANGES BEFORE SYNC ---
 
+# --- INTERACTIVE COMMIT MODE PROMPT ---
+COMMIT_MODE="commit"
+if [[ -n $(git status --porcelain) ]]; then
+  echo -e "\nChoose commit mode:"
+  echo "  1) commit  - Normal commit and push to remote (default)"
+  echo "  2) wip     - WIP commit and push to remote"
+  echo "  3) local   - Commit locally only, do NOT push to remote"
+  echo "  4) abort   - Abort and exit"
+  echo -n "Enter choice [commit/wip/local/abort]: "
+  read commit_mode_choice
+  case "$commit_mode_choice" in
+    wip|WIP|2)
+      COMMIT_MODE="wip"
+      ;;
+    local|LOCAL|3)
+      COMMIT_MODE="local"
+      ;;
+    abort|ABORT|4)
+      echo "Aborted by user. No changes made."
+      exit 1
+      ;;
+    commit|COMMIT|1|"")
+      COMMIT_MODE="commit"
+      ;;
+    *)
+      echo "Invalid choice. Defaulting to 'commit'."
+      COMMIT_MODE="commit"
+      ;;
+  esac
+fi
+
+# Normalize COMMIT_MODE to lowercase for consistent checks
+eval COMMIT_MODE="\${COMMIT_MODE:l}"
+
+# Set SKIP_TESTS if WIP mode was selected interactively
+if [[ "$COMMIT_MODE" == "wip" ]]; then
+  SKIP_TESTS=true
+fi
+
 # Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
-  # Build a default summary from test/lint variables if available
-  DEFAULT_SUMMARY=""
-  if [[ -n "$TEST_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$TEST_SUMMARY\n"
-  fi
-  if [[ -n "$PW_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$PW_SUMMARY\n"
-  fi
-  if [[ -n "$TS_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$TS_SUMMARY\n"
-  fi
-  if [[ -n "$ESLINT_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$ESLINT_SUMMARY\n"
-  fi
-  echo -e "${YELLOW}Uncommitted changes detected.${NC}"
-  echo -e "\n--- Generated Commit Summary ---\n$DEFAULT_SUMMARY\n-------------------------------"
-  # Offer AI commit message option
-  AI_COMMIT_MSG=""
-  echo "How do you want to commit these changes? (commit/WIP/ai/abort): "
-  read commit_mode
-  if [[ "$commit_mode" == "abort" ]]; then
-    echo "Aborted by user. No changes committed."
-    exit 1
-  fi
+  # Classic commit message preview: WIP/test/lint summaries, changed files, diff summary
+  CHANGED_FILES=$(git status --short)
+  # Use unstaged diff for preview so user always sees all changes
+  DIFF_STAT=$(git diff --stat)
   commit_msg=""
-  if [[ "$commit_mode" == "ai" ]]; then
-    if generate_ai_commit_message; then
-      commit_msg="$AI_COMMIT_MSG"
+  # Build grouped summary by file type
+  SCRIPTS_LIST=""
+  LOGS_LIST=""
+  OTHER_LIST=""
+  while read -r line; do
+    STATUS=$(echo "$line" | awk '{print $1}')
+    FILE=$(echo "$line" | awk '{print $2}')
+    if [[ "$STATUS" == D ]]; then
+      if [[ "$FILE" == scripts/*.sh ]]; then
+        SCRIPTS_LIST+="-Deleted $FILE\n"
+      elif [[ "$FILE" == *.log ]]; then
+        LOGS_LIST+="-Deleted $FILE\n"
+      elif [[ -n "$FILE" ]]; then
+        OTHER_LIST+="-Deleted $FILE\n"
+      fi
     else
-      echo "Falling back to WIP commit message."
-      commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY"
+      if [[ "$FILE" == scripts/*.sh ]]; then
+        SCRIPTS_LIST+="-Updated $FILE\n"
+      elif [[ "$FILE" == *.log ]]; then
+        LOGS_LIST+="-Updated $FILE\n"
+      elif [[ -n "$FILE" ]]; then
+        OTHER_LIST+="-Updated $FILE\n"
+      fi
     fi
-    git add -A
-    git commit -m "$commit_msg"
-  elif [[ "$commit_mode" == "WIP" || "$commit_mode" == "wip" ]]; then
-    commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY"
-    echo "Do you want to edit the WIP commit message? (y/n): "
-    read edit_wip_choice
-    if [[ "$edit_wip_choice" == "y" ]]; then
-      echo "Enter your WIP commit message. The generated summary is shown above. (End with an empty line):"
-      commit_msg=""
-      while IFS= read -r line; do
-        [[ -z "$line" ]] && break
-        commit_msg+="$line\n"
-      done
-    fi
-    git add -A
-    git commit -m "$commit_msg"
-  elif [[ "$commit_mode" == "commit" ]]; then
-    echo "Do you want to edit the commit message? (y/n): "
-    read edit_commit_choice
-    if [[ "$edit_commit_choice" == "y" ]]; then
-      echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
-      while IFS= read -r line; do
-        [[ -z "$line" ]] && break
-        commit_msg+="$line\n"
-      done
-    else
-      commit_msg="$DEFAULT_SUMMARY"
-    fi
-    git add -A
-    git commit -m "$commit_msg"
+  done <<< "$CHANGED_FILES"
+  SUMMARY_OVERVIEW=""
+  [[ -n "$SCRIPTS_LIST" ]] && SUMMARY_OVERVIEW+=" Scripts:\n$SCRIPTS_LIST"
+  [[ -n "$LOGS_LIST" ]] && SUMMARY_OVERVIEW+=" Logs:\n$LOGS_LIST"
+  [[ -n "$OTHER_LIST" ]] && SUMMARY_OVERVIEW+=" Other:\n$OTHER_LIST"
+  SUMMARY_OVERVIEW+="-Improved sync or automation scripts."
+
+  # --- Commit Message Title ---
+  # Build a descriptive, purpose-driven title
+  TITLE="Sync project files: updated scripts and logs"
+  if [[ "$SKIP_TESTS" = true ]]; then
+    TITLE+=" (tests/lint/type checks skipped)"
+  fi
+  if [[ "$COMMIT_MODE" == "wip" ]]; then
+    TITLE="WIP: $TITLE"
+  elif [[ "$COMMIT_MODE" == "commit" ]]; then
+    TITLE="Commit: $TITLE"
+  fi
+  commit_msg="$TITLE\n"
+  commit_msg+="\n--- Summary ---\n$SUMMARY_OVERVIEW\n"
+  # --- Purpose Section (dynamic) ---
+  PURPOSE_MSG=""
+  if [[ -n "$SCRIPTS_LIST" && -n "$LOGS_LIST" ]]; then
+    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Synchronized automation script ($SCRIPTS_FILES) and updated log file ($LOGS_FILES) to maintain up-to-date automation and accurate history."
+  elif [[ -n "$SCRIPTS_LIST" ]]; then
+    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Updated automation script ($SCRIPTS_FILES) to improve project workflow."
+  elif [[ -n "$LOGS_LIST" ]]; then
+    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Archived recent log activity ($LOGS_FILES) for traceability."
+  elif [[ -n "$OTHER_LIST" ]]; then
+    OTHER_FILES=$(echo "$OTHER_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Updated project files ($OTHER_FILES) as part of routine maintenance."
   else
-    echo "Invalid option. Aborting."
-    exit 1
+    PURPOSE_MSG="Project sync and maintenance."
+  fi
+  commit_msg+="\n--- Purpose ---\n$PURPOSE_MSG"
+
+  # --- Changed Files Section ---
+  commit_msg+="\n\n--- Changed Files ---\n$CHANGED_FILES\n"
+  # --- Diff Summary Section ---
+  # Prefix each diffstat line with a dash (no space), preserve alignment, and add a blank line before the summary
+  DIFF_STAT_DASHED=""
+  DIFF_STAT_SUMMARY=""
+  while IFS= read -r line; do
+    if [[ "$line" =~ files?\ changed ]]; then
+      DIFF_STAT_SUMMARY="$line"
+    elif [[ -n "$line" ]]; then
+      DIFF_STAT_DASHED+="-$line\n"
+    fi
+  done <<< "$DIFF_STAT"
+  if [[ -n "$DIFF_STAT_DASHED" ]]; then
+    commit_msg+="\n--- Diff Summary ---\n${DIFF_STAT_DASHED%\\n}\n"
+  else
+    commit_msg+="\n--- Diff Summary ---\n"
+  fi
+  if [[ -n "$DIFF_STAT_SUMMARY" ]]; then
+    commit_msg+="\n$DIFF_STAT_SUMMARY"
+  fi
+
+  # --- Purpose Section (dynamic) ---
+  # --- Purpose Section (dynamic) ---
+  if [[ "$SKIP_TESTS" = true ]]; then
+    commit_msg+="\n--- Test Results ---\nTests skipped."
+  fi
+  commit_msg+="\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')\n"
+  commit_msg+="\n--- Reviewer Notes ---\nNo manual testing required; automation only."
+  # Show the preview in the terminal
+  echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
+  echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
+  read commit_msg_action
+  case "$commit_msg_action" in
+    e|E)
+      TMP_COMMIT_MSG_FILE=$(mktemp)
+      echo "$commit_msg" > "$TMP_COMMIT_MSG_FILE"
+      ${EDITOR:-nano} "$TMP_COMMIT_MSG_FILE"
+      commit_msg=$(cat "$TMP_COMMIT_MSG_FILE")
+      rm -f "$TMP_COMMIT_MSG_FILE"
+      ;;
+    q|Q)
+      echo "Aborted by user before commit."
+      exit 1
+      ;;
+    a|A|"")
+      # Accept as is
+      ;;
+    *)
+      echo "Invalid choice. Aborting."
+      exit 1
+      ;;
+  esac
+  git add -A
+  # Write commit message to a temp file for reuse in worktree
+  TMP_COMMIT_MSG_FILE=$(mktemp)
+  echo "$commit_msg" > "$TMP_COMMIT_MSG_FILE"
+  git commit -F "$TMP_COMMIT_MSG_FILE"
+
+  # Always show stash and precommit summary after commit (all modes except abort)
+  show_stash_and_precommit_summary
+
+  if [[ "$COMMIT_MODE" == "local" ]]; then
+    echo -e "\n\033[1;33mCommitted locally only. No push to remote performed.\033[0m"
+    exit 0
+  fi
+  if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
+    open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
+  fi
+  # Only run tests for normal commit mode
+  if [[ "$SKIP_TESTS" = false ]]; then
+    # --- TEST & LINT SECTION ---
+    # Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
+    # If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
+    WIP_MODE=false
+    TEST_SUMMARY=""
+    PW_SUMMARY=""
+    # 1. ESLint
+    echo "Running ESLint..."
+    npx eslint . | tee scripts/eslint-output.txt
+    if grep -q "error" scripts/eslint-output.txt; then
+      echo -e "${RED}Lint errors detected.${NC}"
+      grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
+        echo -e "${RED}$line${NC}"
+      done
+      echo "What do you want to do? (fix/wip/abort): "
+      read lint_decision
+      if [[ "$lint_decision" == "fix" ]]; then
+        $SHELL
+        exit 1
+      elif [[ "$lint_decision" == "wip" ]]; then
+        WIP_MODE=true
+      else
+        echo "Aborted due to lint errors."
+        exit 1
+      fi
+    fi
+    rm -f scripts/eslint-output.txt
+    # 2. TypeScript
+    echo "Running TypeScript type check..."
+    npx tsc --noEmit | tee scripts/ts-output.txt
+    if [[ $? -ne 0 ]]; then
+      echo -e "${RED}TypeScript errors detected.${NC}"
+      grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
+        echo -e "${RED}$line${NC}"
+      done
+      echo "What do you want to do? (fix/wip/abort): "
+      read ts_decision
+      if [[ "$ts_decision" == "fix" ]]; then
+        $SHELL
+        exit 1
+      elif [[ "$ts_decision" == "wip" ]]; then
+        WIP_MODE=true
+      else
+        echo "Aborted due to TypeScript errors."
+        exit 1
+      fi
+    fi
+    rm -f scripts/ts-output.txt
+    # 3. Jest
+    echo "Running Jest tests..."
+    npm test -- --reporter=default | tee scripts/test-output.txt
+    TEST_SUMMARY=""
+    if grep -q "failing" scripts/test-output.txt; then
+      SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+      FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
+      if [[ -n "$SUMMARY_LINE" ]]; then
+        TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
+      fi
+      echo -e "${RED}Jest tests failed.${NC}"
+      echo "What do you want to do? (fix/wip/abort): "
+      read jest_decision
+      if [[ "$jest_decision" == "fix" ]]; then
+        $SHELL
+        exit 1
+      elif [[ "$jest_decision" == "wip" ]]; then
+        WIP_MODE=true
+      else
+        echo "Aborted due to Jest failures."
+        exit 1
+      fi
+    else
+      SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+      if [[ -n "$SUMMARY_LINE" ]]; then
+        TEST_SUMMARY="$SUMMARY_LINE"
+      fi
+    fi
+    rm -f scripts/test-output.txt
+    # 4. Playwright/E2E (always after Jest)
+    if [[ -f playwright.config.ts ]]; then
+      echo "Starting dev server for E2E..."
+      npm run dev > scripts/dev-server-e2e.log 2>&1 &
+      DEV_SERVER_PID=$!
+      sleep 5
+      echo "Running Playwright E2E (advanced script)..."
+      ./scripts/adv_fixing_run_playwright_and_capture_output.sh
+      PW_SUMMARY=""
+      PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed' scripts/playwright-output.txt | awk '{s+=$1} END {print s+0}')
+      PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
+      if [[ -n "$PW_SUMMARY_LINE" ]]; then
+        PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
+      fi
+      if grep -q "failed" scripts/playwright-output.txt; then
+        echo -e "${RED}Playwright E2E failed.${NC}"
+        echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
+        awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
+        echo "What do you want to do? (fix/wip/abort): "
+        read pw_decision
+        if [[ "$pw_decision" == "fix" ]]; then
+          kill $DEV_SERVER_PID 2>/dev/null
+          $SHELL
+          exit 1
+        elif [[ "$pw_decision" == "wip" ]]; then
+          WIP_MODE=true
+        else
+          kill $DEV_SERVER_PID 2>/dev/null
+          echo "Aborted due to Playwright failures."
+          exit 1
+        fi
+      fi
+      rm -f scripts/playwright-output.txt
+      kill $DEV_SERVER_PID 2>/dev/null
+    fi
   fi
 else
   echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
+  show_stash_and_precommit_summary
 fi
 
-# --- TEST & LINT SECTION ---
-# Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
-# If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
-
-WIP_MODE=false
-TEST_SUMMARY=""
-PW_SUMMARY=""
-
-if [[ "$SKIP_TESTS" = false ]]; then
-  # 1. ESLint
-  echo "Running ESLint..."
-  npx eslint . | tee scripts/eslint-output.txt
-  if grep -q "error" scripts/eslint-output.txt; then
-    echo -e "${RED}Lint errors detected.${NC}"
-    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
-      echo -e "${RED}$line${NC}"
-    done
-    echo "What do you want to do? (fix/wip/abort): "
-    read lint_decision
-    if [[ "$lint_decision" == "fix" ]]; then
-      $SHELL
-      exit 1
-    elif [[ "$lint_decision" == "wip" ]]; then
-      WIP_MODE=true
-    else
-      echo "Aborted due to lint errors."
-      exit 1
-    fi
-  fi
-  rm -f scripts/eslint-output.txt
-
-  # 2. TypeScript
-  echo "Running TypeScript type check..."
-  npx tsc --noEmit | tee scripts/ts-output.txt
-  if [[ $? -ne 0 ]]; then
-    echo -e "${RED}TypeScript errors detected.${NC}"
-    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
-      echo -e "${RED}$line${NC}"
-    done
-    echo "What do you want to do? (fix/wip/abort): "
-    read ts_decision
-    if [[ "$ts_decision" == "fix" ]]; then
-      $SHELL
-      exit 1
-    elif [[ "$ts_decision" == "wip" ]]; then
-      WIP_MODE=true
-    else
-      echo "Aborted due to TypeScript errors."
-      exit 1
-    fi
-  fi
-  rm -f scripts/ts-output.txt
-
-  # 3. Jest
-  echo "Running Jest tests..."
-  npm test -- --reporter=default | tee scripts/test-output.txt
-
-  # Parse Jest output for summary and failing test names
-  TEST_SUMMARY=""
-  if grep -q "failing" scripts/test-output.txt; then
-    # Get summary line (e.g. 'Tests: 2 failed, 38 passed, 40 total')
-    SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-    # Get failing test suite names (e.g. 'FAIL  src/__tests__/SomeTest.test.tsx')
-    FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
-    if [[ -n "$SUMMARY_LINE" ]]; then
-      TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
-    fi
-    echo -e "${RED}Jest tests failed.${NC}"
-    echo "What do you want to do? (fix/wip/abort): "
-    read jest_decision
-    if [[ "$jest_decision" == "fix" ]]; then
-      $SHELL
-      exit 1
-    elif [[ "$jest_decision" == "wip" ]]; then
-      WIP_MODE=true
-    else
-      echo "Aborted due to Jest failures."
-      exit 1
-    fi
-  else
-    # If all tests pass, still include summary
-    SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-    if [[ -n "$SUMMARY_LINE" ]]; then
-      TEST_SUMMARY="$SUMMARY_LINE"
-    fi
-  fi
-  rm -f scripts/test-output.txt
-
-  # 4. Playwright/E2E (always after Jest)
-  if [[ -f playwright.config.ts ]]; then
-    echo "Starting dev server for E2E..."
-    npm run dev > scripts/dev-server-e2e.log 2>&1 &
-    DEV_SERVER_PID=$!
-    sleep 5
-    echo "Running Playwright E2E..."
-    npm run test:e2e:headed | tee scripts/playwright-output.txt
-
-    # Parse Playwright output for summary and failing test names
-    PW_SUMMARY=""
-    # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
-    PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
-    # Get failing test file names (e.g. 'FAIL  e2e/critical-ui-accessibility.spec.ts')
-    PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
-    if [[ -n "$PW_SUMMARY_LINE" ]]; then
-      PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
-      if [[ -n "$PW_FAILING_TESTS" ]]; then
-        PW_SUMMARY="$PW_SUMMARY\nFailing: $PW_FAILING_TESTS"
-      fi
-    fi
-
-    if grep -q "failed" scripts/playwright-output.txt; then
-      echo -e "${RED}Playwright E2E failed.${NC}"
-      echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
-      awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
-      echo "What do you want to do? (fix/wip/abort): "
-      read pw_decision
-      if [[ "$pw_decision" == "fix" ]]; then
-        kill $DEV_SERVER_PID 2>/dev/null
-        $SHELL
-        exit 1
-      elif [[ "$pw_decision" == "wip" ]]; then
-        WIP_MODE=true
-      else
-        kill $DEV_SERVER_PID 2>/dev/null
-        echo "Aborted due to Playwright failures."
-        exit 1
-      fi
-    fi
-    rm -f scripts/playwright-output.txt
-    kill $DEV_SERVER_PID 2>/dev/null
-  fi
-fi
-
-# --- ALWAYS PUSH/UPLOAD SECTION ---
-# If WIP_MODE is set, commit as WIP, otherwise normal commit
-# Always push/force-push to all specified branches/remotes
-
-# If only committing to current branch, skip remote sync and exit
-if [[ "$COMMIT_CURRENT_BRANCH_ONLY" = true ]]; then
-  echo -e "${GREEN}Committed changes to current branch only. Skipping remote sync as requested.${NC}"
-  echo "Committed changes to current branch only. Skipped remote sync." >> "$LOG_FILE"
-  # Optionally print last sync time
-  if [[ -w "$LOG_FILE" ]]; then
-    echo "Last commit-only sync: $(date '+%Y-%m-%d %H:%M:%S %Z')" >> "$LOG_FILE"
-  fi
+# If local mode, skip all push logic and exit after commit
+if [[ "$COMMIT_MODE" == "local" ]]; then
+  echo -e "\n${YELLOW}Local commit only: No remote branches will be updated.${NC}"
   exit 0
 fi
 
-summary_table=()
+# --- ALWAYS PUSH/UPLOAD SECTION ---
+# Always push/force-push to all specified branches/remotes
+
+# Save the current branch to return to it later
+ORIGINAL_BRANCH=$(git symbolic-ref --short -q HEAD)
+ORIGINAL_COMMIT=$(git rev-parse HEAD)
+REPO_ROOT=$(git rev-parse --show-toplevel)
 
 for target in $all_targets; do
-  # Split target into remote and branch (format: remote/branch)
   remote="${target%%/*}"
   branch="${target#*/}"
   if [[ -z "$remote" || -z "$branch" || "$remote" == "$branch" ]]; then
     echo "Skipping invalid target: $target"
     continue
   fi
-  echo "\n--- Syncing all files to $remote/$branch ---"
-  echo "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
-  # Add and commit all changes
+
+  # Progress indicator before syncing
+  echo -e "\n\033[1;33m[INFO] Preparing to sync all files to $remote/$branch...\033[0m"
+  sleep 0.5
+  echo -ne "[INFO] Setting up worktree and copying files... "
+  # The next echo will overwrite this line
+  echo -e "\n--- Syncing all files to $remote/$branch ---"
+  echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
+
+  # Create a temporary worktree for the target branch
+  TMP_WORKTREE="$REPO_ROOT/.sync-tmp-$branch-$$"
+  git worktree remove --force "$TMP_WORKTREE" 2>/dev/null
+  if git show-ref --verify --quiet refs/heads/$branch; then
+    git worktree add "$TMP_WORKTREE" $branch
+  else
+    git worktree add -b $branch "$TMP_WORKTREE" $ORIGINAL_COMMIT
+  fi
+
+  # Copy all files from the current working tree to the worktree (excluding .git and node_modules)
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$TMP_WORKTREE/"
+
+  # Also copy all files to sync_tmp_backups for backup/inspection (in correct folder, not root)
+  BACKUP_TMP="$REPO_ROOT/sync_tmp_backups/.sync-tmp-$branch-$$"
+  mkdir -p "$BACKUP_TMP"
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$BACKUP_TMP/"
+
+  # Commit and push in the worktree
+  pushd "$TMP_WORKTREE" > /dev/null
   git add -A
   if git diff --cached --quiet; then
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp."
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp." >> "$LOG_FILE"
-    if $WIP_MODE; then
-      COMMIT_MSG="WIP: sync (force empty commit, tests/type/lint/e2e failing or skipped)\n\nNo file changes.\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    else
-      COMMIT_MSG="chore(sync): force empty commit to $remote/$branch\n\nNo file changes.\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    fi
-    git commit --allow-empty -m "$COMMIT_MSG"
+    git commit --allow-empty -F "$TMP_COMMIT_MSG_FILE"
   else
     CHANGED=$(git status --short)
     echo "\nChanged files for $remote/$branch:"
@@ -419,27 +517,34 @@ for target in $all_targets; do
         echo -e "${GREEN}$line${NC}"
       done
     fi
-    echo "\nChanged files for $remote/$branch:" >> "$LOG_FILE"
+    printf "\nChanged files for %s:\n" "$remote/$branch" >> "$LOG_FILE"
     echo "$CHANGED" >> "$LOG_FILE"
-    if $WIP_MODE; then
-      COMMIT_MSG="WIP: sync (tests/type/lint/e2e failing or skipped)\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    else
-      COMMIT_MSG="chore(sync): auto-sync all files to $remote/$branch\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    fi
-    git commit -m "$COMMIT_MSG"
+    git commit -F "$TMP_COMMIT_MSG_FILE"
   fi
-  # Print message before pushing
+
+  # Push to the correct remote/branch
   echo "Pushing to $remote/$branch..."
-  # Push to remote/branch
-  if git push $remote HEAD:$branch; then
+  PUSH_OUTPUT=""
+  PUSH_EXIT=0
+  PUSH_MODE="normal"
+  PUSH_SUCCESS=false
+  PUSH_OUTPUT=$(git push $remote $branch 2>&1)
+  PUSH_EXIT=$?
+  echo "[DIAG] git push $remote $branch exit code: $PUSH_EXIT"
+  printf "[DIAG] git push output:\n%s\n" "$PUSH_OUTPUT"
+  if [[ $PUSH_EXIT -eq 0 ]]; then
     PUSH_MODE="normal"
     PUSH_SUCCESS=true
   else
-    echo "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
+    echo -e "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
     echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
     echo "Automatically force pushing to overwrite remote history..."
     echo "Force pushing to $remote/$branch..."
-    if git push --force $remote HEAD:$branch; then
+    FORCE_PUSH_OUTPUT=$(git push --force $remote $branch 2>&1)
+    FORCE_PUSH_EXIT=$?
+    echo "[DIAG] git push --force $remote $branch exit code: $FORCE_PUSH_EXIT"
+    printf "[DIAG] git push --force output:\n%s\n" "$FORCE_PUSH_OUTPUT"
+    if [[ $FORCE_PUSH_EXIT -eq 0 ]]; then
       PUSH_MODE="force"
       PUSH_SUCCESS=true
     else
@@ -447,20 +552,53 @@ for target in $all_targets; do
       PUSH_SUCCESS=false
     fi
   fi
+
   LOCAL_HASH=$(git rev-parse HEAD)
   REMOTE_HASH=$(git ls-remote $remote $branch | awk '{print $1}')
-  if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
-    echo -e "${GREEN}✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
-    echo "✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
-    summary_table+="$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)\n"
-  elif [[ "$PUSH_SUCCESS" = true ]]; then
-    echo -e "${YELLOW}⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
-    echo "⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
-    summary_table+="$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)\n"
+  # --- Auto-check: verify local commit exists on remote branch ---
+  if git ls-remote $remote $branch | grep -q "$LOCAL_HASH"; then
+    echo -e "${GREEN} Verified: commit $LOCAL_HASH exists on $remote/$branch${NC}"
+    echo " Verified: commit $LOCAL_HASH exists on $remote/$branch" >> "$LOG_FILE"
   else
-    echo -e "${RED}❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
-    echo "❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
-    summary_table+="$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)\n"
+    echo -e "${RED} WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!${NC}"
+    echo " WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!" >> "$LOG_FILE"
+    echo -e "${YELLOW}Troubleshooting: Try running 'git fetch $remote' and 'git ls-remote $remote $branch' manually.${NC}"
+    echo "[DIAG] git ls-remote $remote $branch output:"
+    git ls-remote $remote $branch
+  fi
+
+  # --- Post-push: fetch and compare local and remote branch refs ---
+  echo -e "[DIAG] Fetching $remote/$branch after push for direct ref comparison..."
+  git fetch $remote $branch
+  LOCAL_BRANCH_HASH=$(git rev-parse HEAD)
+  REMOTE_BRANCH_HASH=$(git rev-parse $remote/$branch 2>/dev/null)
+  SUMMARY_STATUS=""
+  if [[ "$LOCAL_BRANCH_HASH" == "$REMOTE_BRANCH_HASH" && -n "$REMOTE_BRANCH_HASH" ]]; then
+    echo -e "${GREEN} Local branch and remote branch $remote/$branch are in sync: $LOCAL_BRANCH_HASH${NC}"
+    echo " Local branch and remote branch $remote/$branch are in sync: $LOCAL_BRANCH_HASH" >> "$LOG_FILE"
+    SUMMARY_STATUS="$remote/$branch: $LOCAL_BRANCH_HASH (OK, $PUSH_MODE, refs match)"
+  else
+    echo -e "${RED} Local branch and remote branch $remote/$branch are NOT in sync!${NC}"
+    echo -e "  Local:  $LOCAL_BRANCH_HASH"
+    echo -e "  Remote: $REMOTE_BRANCH_HASH"
+    echo " Local branch and remote branch $remote/$branch are NOT in sync!" >> "$LOG_FILE"
+    echo "  Local:  $LOCAL_BRANCH_HASH" >> "$LOG_FILE"
+    echo "  Remote: $REMOTE_BRANCH_HASH" >> "$LOG_FILE"
+    SUMMARY_STATUS="$remote/$branch: $LOCAL_BRANCH_HASH (MISMATCH! refs differ, $PUSH_MODE)"
+  fi
+  summary_table+=("$SUMMARY_STATUS")
+  if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
+    echo -e "${GREEN} $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
+    echo " $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
+    summary_table+=("$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)")
+  elif [[ "$PUSH_SUCCESS" = true ]]; then
+    echo -e "${YELLOW}  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
+    echo "  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
+    summary_table+=("$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)")
+  else
+    echo -e "${RED} WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
+    echo " WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
+    summary_table+=("$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)")
   fi
   if [[ "$remote" == "origin" ]]; then
     echo "View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch"
@@ -493,8 +631,19 @@ for target in $all_targets; do
       echo "Skipped deploy to gh-pages." >> "$LOG_FILE"
     fi
   fi
+
+  # Show commit message used for this sync
+  echo -e "\n\033[1;36mCommit message for $remote/$branch:\033[0m"
+  echo -e "$COMMIT_MSG\n"
+  echo "Commit message for $remote/$branch:" >> "$LOG_FILE"
+  echo "$COMMIT_MSG" >> "$LOG_FILE"
   echo "Done with $remote/$branch."
   echo "Done with $remote/$branch." >> "$LOG_FILE"
+
+  popd > /dev/null
+  git worktree remove --force "$TMP_WORKTREE"
+  # Clean up temp commit message file after last use
+  rm -f "$TMP_COMMIT_MSG_FILE"
 done
 
 # Update last sync time in log file (guarded)
@@ -502,28 +651,30 @@ if [[ -w "$LOG_FILE" ]]; then
   echo "Last sync: $(date '+%Y-%m-%d %H:%M:%S %Z')" >> "$LOG_FILE"
 fi
 
-echo "\nAll specified branches and remotes have been updated with all files from the current branch."
-echo "\nSummary of updates:"
+echo
+echo "All specified branches and remotes have been updated with all files from the current branch."
+echo
+echo "Summary of updates:"
 # Print summary table with color: green for OK, yellow for WARNING, red for MISMATCH
-IFS=$'\n'
-for line in $(echo -e "$summary_table"); do
+for line in "${summary_table[@]}"; do
   if [[ "$line" == *"OK"* ]]; then
-    echo -e "${GREEN}$line${NC}"
+    printf "%b\n" "${GREEN}${line}${NC}"
   elif [[ "$line" == *"WARNING"* ]]; then
-    echo -e "${YELLOW}$line${NC}"
+    printf "%b\n" "${YELLOW}${line}${NC}"
   elif [[ "$line" == *"MISMATCH"* ]]; then
-    echo -e "${RED}$line${NC}"
+    printf "%b\n" "${RED}${line}${NC}"
   else
     echo "$line"
   fi
 done
 unset IFS
-# Guard all log writes
 if [[ -w "$LOG_FILE" ]]; then
-  echo "\nSummary of updates:" >> "$LOG_FILE"
-  echo "$summary_table" >> "$LOG_FILE"
+  echo "" >> "$LOG_FILE"
+  echo "Summary of updates:" >> "$LOG_FILE"
+  for line in "${summary_table[@]}"; do
+    echo "$line" >> "$LOG_FILE"
+  done
 fi
-
 # (Commented out) Seeding script call. Manual seeding is now required before running this sync script.
 # echo "Seeding Firestore questions..."
 # node scripts/upload_questions_to_firestore_2.js e
