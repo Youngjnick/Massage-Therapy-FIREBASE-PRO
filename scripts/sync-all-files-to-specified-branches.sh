@@ -89,17 +89,30 @@ for remote in $remotes; do
   # Only add if remote is a real git remote
   if git remote | grep -qx "$remote"; then
     for branch in $branches; do
-      if [[ -n "$branch" ]]; then
-        all_targets+=("$remote/$branch")
+      # Only add if branch is non-empty and not just whitespace
+      branch_trimmed="${branch//[[:space:]]/}"
+      if [[ -n "$branch_trimmed" ]]; then
+        all_targets+=("$remote/$branch_trimmed")
       fi
     done
   fi
   # Do NOT treat branch names as remotes
   # This prevents invalid targets like branch/branch
   # Only valid remote/branch pairs are added
+  # Never add origin/ or main4 alone
 done
-# Remove duplicates
-all_targets=($(printf "%s\n" "${all_targets[@]}" | awk '!seen[$0]++'))
+# Remove duplicates and filter out any invalid targets (must match remote/branch)
+all_targets=($(printf "%s\n" "${all_targets[@]}" | grep -E '^[^/]+/.+$' | awk '!seen[$0]++'))
+
+# Diagnostic: print all_targets before confirmation
+if [[ ${#all_targets[@]} -eq 0 ]]; then
+  echo "\033[1;31mERROR: No valid remote/branch targets found. Exiting.\033[0m"
+  exit 1
+fi
+printf "\n\033[1;34m[DIAG] Final sync targets:\033[0m\n"
+for t in "${all_targets[@]}"; do
+  echo "  $t"
+done
 
 # Detect if in detached HEAD state and get current ref/commit info
 CURRENT_BRANCH=$(git symbolic-ref --short -q HEAD)
