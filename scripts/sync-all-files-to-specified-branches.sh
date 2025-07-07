@@ -602,8 +602,8 @@ for target in $all_targets; do
     echo "Skipping invalid target: $target"
     continue
   fi
-  echo "\n--- Syncing all files to $remote/$branch ---"
-  echo "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
+  echo -e "\n--- Syncing all files to $remote/$branch ---"
+  echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
 
   # --- ENHANCED DIAGNOSTICS BEFORE PUSH ---
   echo "\n[DIAG] Current working directory: $(pwd)"
@@ -670,7 +670,7 @@ for target in $all_targets; do
     PUSH_MODE="normal"
     PUSH_SUCCESS=true
   else
-    echo "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
+    echo -e "${RED}Normal push failed for $remote/$branch. The remote branch may have diverged.${NC}"
     echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
     echo "Automatically force pushing to overwrite remote history..."
     echo "Force pushing to $remote/$branch..."
