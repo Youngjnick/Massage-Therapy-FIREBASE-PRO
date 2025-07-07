@@ -87,7 +87,7 @@ for remote in $remotes; do
   if git remote | grep -qx "$remote"; then
     for branch in $branches; do
       if [[ -n "$branch" ]]; then
-        all_targets+="$remote/$branch"
+        all_targets+=("$remote/$branch")
       fi
     done
   fi
