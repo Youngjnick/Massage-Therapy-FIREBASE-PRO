@@ -124,15 +124,9 @@ fi
 
 # Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
-  # Prompt for a detailed commit summary
-  echo "Enter a detailed commit summary (press Enter to finish, Ctrl+D to end input):"
+  # Remove prompt for a detailed commit summary
   user_summary=""
-  while IFS= read -r line; do
-    user_summary+="$line\n"
-  done
-  # Remove trailing newline
-  user_summary="${user_summary%\\n}"
-  DEFAULT_SUMMARY="$user_summary"
+  DEFAULT_SUMMARY=""
 
   echo "How do you want to commit these changes? (commit/WIP/abort): "
   read commit_mode
@@ -162,7 +156,7 @@ if [[ -n $(git status --porcelain) ]]; then
       WIP_EXTRA+="\n\n--- Last Playwright Output ---\n$(tail -20 scripts/playwright-output.txt)"
     fi
     commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$WIP_EXTRA$COMMIT_AUTOINFO"
-    SKIP_TESTS=true
+    echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
     echo "Do you want to edit the WIP commit message? (y/n): "
     read edit_wip_choice
     if [[ "$edit_wip_choice" == "y" ]]; then
@@ -326,6 +320,8 @@ if [[ -n $(git status --porcelain) ]]; then
       COMMIT_EXTRA+="\n\n--- TypeScript Output ---\n$(tail -20 scripts/ts-output.txt)"
     fi
     COMMIT_EXTRA+="$COMMIT_AUTOINFO"
+    commit_msg="$DEFAULT_SUMMARY$COMMIT_EXTRA"
+    echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
     echo "Do you want to edit the commit message? (y/n): "
     read edit_commit_choice
     if [[ "$edit_commit_choice" == "y" ]]; then
@@ -334,8 +330,6 @@ if [[ -n $(git status --porcelain) ]]; then
         [[ -z "$line" ]] && break
         commit_msg+="$line\n"
       done
-    else
-      commit_msg="$DEFAULT_SUMMARY$COMMIT_EXTRA"
     fi
     git add -A
     git commit -m "$commit_msg"
