@@ -44,14 +44,25 @@ def summarize_results(results):
     failed_locations = [f'{r["file"]}:{r["line"]}:{r["col"]}' for r in results if r["status"] == "✘"]
     return total, passed, failed, failed_locations
 
-def append_history_summary(total, passed, failed, failed_locations):
+def append_history_summary(total, passed, failed, failed_locations, flaky, skipped, deleted, failed_titles, flaky_titles, skipped_titles):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     output = ""
     if OUTPUT_FILE.exists():
         with open(OUTPUT_FILE, encoding="utf-8") as f:
             output = f.read()
     summary = f"""
-===== {now} =====\nTotal: {total}\nPassed: {passed}\nFailed: {failed}\nFailed locations: {', '.join(failed_locations)}\n--- Full Playwright Output ---\n{output}\n--- End of Output ---\n"""
+============================================================
+PLAYWRIGHT RUN SUMMARY - {now}
+Total: {total}  Passed: {passed}  Failed: {failed}  Flaky: {flaky}  Skipped: {skipped}  Deleted: {deleted}\n"""
+    if failed > 0:
+        summary += f"\nFAILED TESTS:\n" + "\n".join(f"- {t}" for t in failed_titles) + "\n"
+    if flaky > 0:
+        summary += f"\nFLAKY TESTS:\n" + "\n".join(f"- {t}" for t in flaky_titles) + "\n"
+    if skipped > 0:
+        summary += f"\nSKIPPED TESTS:\n" + "\n".join(f"- {t}" for t in skipped_titles) + "\n"
+    if deleted > 0:
+        summary += f"\nDELETED TESTS: {deleted}\n"
+    summary += f"\n--- Full Playwright Output ---\n{output}\n--- End of Output ---\n"
     # Always append the summary to the file, even if it was empty
     with open(HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(summary)
@@ -122,12 +133,20 @@ def generate_html_report_advanced(results, errors, sequences):
         history_lines = f.readlines()
     run_dates = [l[6:25] for l in history_lines if l.startswith("=====")]
     run_stats = []
-    for i, l in enumerate(history_lines):
-        if l.startswith("Total: "):
-            total = int(l.split(": ")[1])
-            passed = int(history_lines[i+1].split(": ")[1]) if i+1 < len(history_lines) else 0
-            failed = int(history_lines[i+2].split(": ")[1]) if i+2 < len(history_lines) else 0
-            run_stats.append({"date": run_dates[len(run_stats)] if len(run_stats)<len(run_dates) else "", "total": total, "passed": passed, "failed": failed})
+    summary_re = re.compile(r"Total: (\d+) +Passed: (\d+) +Failed: (\d+) +Flaky: (\d+) +Skipped: (\d+) +Deleted: (\d+)")
+    for l in history_lines:
+        m = summary_re.search(l)
+        if m:
+            total, passed, failed, flaky, skipped, deleted = map(int, m.groups())
+            run_stats.append({
+                "date": run_dates[len(run_stats)] if len(run_stats)<len(run_dates) else "",
+                "total": total,
+                "passed": passed,
+                "failed": failed,
+                "flaky": flaky,
+                "skipped": skipped,
+                "deleted": deleted
+            })
     # HTML/JS
     html = []
     html.append('<html><head><title>Playwright Test History</title>')
@@ -268,7 +287,6 @@ def get_current_tests():
 def write_live_file(db):
     # Prune deleted tests: keep all results for any present .spec.ts file
     current_files = get_current_tests()
-    # Only keep entries that are dicts and have a file in current_files
     pruned_db = {k: v for k, v in db.items() if isinstance(v, dict) and v.get("file") in current_files}
     deleted = [v for k, v in db.items() if isinstance(v, dict) and v.get("file") not in current_files]
     # Group by file
@@ -288,6 +306,8 @@ def write_live_file(db):
             status = t["last_status"]
             mark = "✓" if status == "✓" else ("✘" if status == "✘" else "-")
             is_flaky = ("✓" in t["history"] and "✘" in t["history"])
+            # Show title/description if available, else fallback to location
+            title = t.get('title') or t.get('description') or t.get('location')
             if is_flaky:
                 flaky.append((file, t))
             if status == "✘":
@@ -296,7 +316,7 @@ def write_live_file(db):
                 passing.append((file, t))
             elif status == "-":
                 skipped.append((file, t))
-            lines.append(f"  {mark} {t.get('title', t['location'])}   [{hist}]" + ("  [flaky]" if is_flaky else ""))
+            lines.append(f"  {mark} {title}   [{hist}]" + ("  [flaky]" if is_flaky else ""))
         lines.append("")
     # Longest streaks
     def streak(history, val):
@@ -347,27 +367,55 @@ def main():
         return
     print(f"[INFO] Processing {OUTPUT_FILE}...")
     results = parse_output_file(OUTPUT_FILE)
-    total, passed, failed, failed_locations = summarize_results(results)
-    append_history_summary(total, passed, failed, failed_locations)
+    # Enhanced summary logic
+    total = len(results)
+    passed = sum(1 for r in results if r["status"] == "✓")
+    failed = sum(1 for r in results if r["status"] == "✘")
+    skipped = sum(1 for r in results if r["status"] == "-")
+    # Flaky: test with both ✓ and ✘ in history (from persistent JSON)
+    db = update_live_test_status(results)
+    flaky = 0
+    flaky_titles = []
+    failed_titles = []
+    skipped_titles = []
+    for k, v in db.items():
+        if isinstance(v, dict):
+            hist = v.get("history", [])
+            if "✓" in hist and "✘" in hist:
+                flaky += 1
+                flaky_titles.append(f"{v.get('file','?')}: {v.get('title', v.get('location','?'))}")
+            if v.get("last_status") == "✘":
+                failed_titles.append(f"{v.get('file','?')}: {v.get('title', v.get('location','?'))}")
+            if v.get("last_status") == "-":
+                skipped_titles.append(f"{v.get('file','?')}: {v.get('title', v.get('location','?'))}")
+    deleted = len([v for v in db.values() if isinstance(v, dict) and v.get("file") not in get_current_tests()])
+    failed_locations = [f'{r["file"]}:{r["line"]}:{r["col"]}' for r in results if r["status"] == "✘"]
+    append_history_summary(total, passed, failed, failed_locations, flaky, skipped, deleted, failed_titles, flaky_titles, skipped_titles)
     print(f"[INFO] Updated {HISTORY_FILE}.")
     errors = parse_error_blocks(OUTPUT_FILE)
     sequences = get_test_sequences_from_history(HISTORY_FILE)
     # Collect run_stats for export and chart
     with open(HISTORY_FILE, encoding="utf-8") as f:
         history_lines = f.readlines()
-    run_dates = [l[6:25] for l in history_lines if l.startswith("=====")]
+    run_dates = [l[6:25] for l in history_lines if l.startswith("=====") or l.startswith("=")]
     run_stats = []
-    for i, l in enumerate(history_lines):
-        if l.startswith("Total: "):
-            total = int(l.split(": ")[1])
-            passed = int(history_lines[i+1].split(": ")[1]) if i+1 < len(history_lines) else 0
-            failed = int(history_lines[i+2].split(": ")[1]) if i+2 < len(history_lines) else 0
-            run_stats.append({"date": run_dates[len(run_stats)] if len(run_stats)<len(run_dates) else "", "total": total, "passed": passed, "failed": failed})
+    summary_re = re.compile(r"Total: (\d+) +Passed: (\d+) +Failed: (\d+) +Flaky: (\d+) +Skipped: (\d+) +Deleted: (\d+)")
+    for l in history_lines:
+        m = summary_re.search(l)
+        if m:
+            total, passed, failed, flaky, skipped, deleted = map(int, m.groups())
+            run_stats.append({
+                "date": run_dates[len(run_stats)] if len(run_stats)<len(run_dates) else "",
+                "total": total,
+                "passed": passed,
+                "failed": failed,
+                "flaky": flaky,
+                "skipped": skipped,
+                "deleted": deleted
+            })
     export_json_history(results, errors, sequences, run_stats)
     generate_html_report_advanced(results, errors, sequences)
     print(f"[INFO] HTML and JSON reports updated.")
-    # --- NEW: update live file ---
-    db = update_live_test_status(results)
     write_live_file(db)
     print(f"[INFO] Live test status written to {LIVE_FILE}.")
 

@@ -193,6 +193,7 @@ fi
 if [[ "$choice" == "a"* ]]; then
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list | tee "$OUTPUT_FILE"
   print_playwright_summary "$OUTPUT_FILE"
+  # After Playwright run, always call the reporting tool to append improved summary
   python3 scripts/playwright_history_report.py
   sync
   exit 0
@@ -301,6 +302,7 @@ if [[ "$choice" == "s"* ]]; then
   echo "[INFO] Running Playwright with selection: $selection"
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list --project="Desktop Chrome" $selection | tee "$OUTPUT_FILE"
   print_playwright_summary "$OUTPUT_FILE"
+  # After Playwright run, always call the reporting tool to append improved summary
   python3 scripts/playwright_history_report.py
   sync
   exit 0
