@@ -202,24 +202,25 @@ if [[ -n $(git status --porcelain) ]]; then
   # Use unstaged diff for preview so user always sees all changes
   DIFF_STAT=$(git diff --stat)
   commit_msg=""
-  # Build commit message in the exact format for both preview and GitHub
-  # --- Summary Section ---
+  # Build grouped summary by file type
+  SCRIPTS_LIST=""
+  LOGS_LIST=""
+  OTHER_LIST=""
+  while read -r line; do
+    FILE=$(echo "$line" | awk '{print $2}')
+    if [[ "$FILE" == scripts/*.sh ]]; then
+      SCRIPTS_LIST+="-Updated $FILE\n"
+    elif [[ "$FILE" == *.log ]]; then
+      LOGS_LIST+="-Updated $FILE\n"
+    elif [[ -n "$FILE" ]]; then
+      OTHER_LIST+="-Updated $FILE\n"
+    fi
+  done <<< "$CHANGED_FILES"
   SUMMARY_OVERVIEW=""
-  CHANGED_COUNT=$(echo "$CHANGED_FILES" | grep -c '^')
-  if [[ $CHANGED_COUNT -eq 1 ]]; then
-    MAIN_FILE=$(echo "$CHANGED_FILES" | awk '{print $2}')
-    SUMMARY_OVERVIEW="- Updated $MAIN_FILE."
-  elif [[ $CHANGED_COUNT -gt 1 ]]; then
-    while read -r line; do
-      FILE=$(echo "$line" | awk '{print $2}')
-      [[ -n "$FILE" ]] && SUMMARY_OVERVIEW+="- Updated $FILE.\n"
-    done <<< "$CHANGED_FILES"
-  else
-    SUMMARY_OVERVIEW="- No file changes detected."
-  fi
-  if echo "$CHANGED_FILES" | grep -q 'scripts/'; then
-    SUMMARY_OVERVIEW+="- Improved sync or automation scripts."
-  fi
+  [[ -n "$SCRIPTS_LIST" ]] && SUMMARY_OVERVIEW+=" Scripts:\n$SCRIPTS_LIST"
+  [[ -n "$LOGS_LIST" ]] && SUMMARY_OVERVIEW+=" Logs:\n$LOGS_LIST"
+  [[ -n "$OTHER_LIST" ]] && SUMMARY_OVERVIEW+=" Other:\n$OTHER_LIST"
+  SUMMARY_OVERVIEW+="-Improved sync or automation scripts."
 
   # --- Commit Message Title ---
   # Build a descriptive, purpose-driven title
@@ -254,6 +255,37 @@ if [[ -n $(git status --porcelain) ]]; then
   if [[ -n "$DIFF_STAT_SUMMARY" ]]; then
     commit_msg+="\n$DIFF_STAT_SUMMARY"
   fi
+
+  # --- Purpose Section (dynamic) ---
+  PURPOSE_MSG=""
+  if [[ -n "$SCRIPTS_LIST" && -n "$LOGS_LIST" ]]; then
+    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Synchronized automation script ($SCRIPTS_FILES) and updated log file ($LOGS_FILES) to maintain up-to-date automation and accurate history."
+  elif [[ -n "$SCRIPTS_LIST" ]]; then
+    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Updated automation script ($SCRIPTS_FILES) to improve project workflow."
+  elif [[ -n "$LOGS_LIST" ]]; then
+    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Archived recent log activity ($LOGS_FILES) for traceability."
+  elif [[ -n "$OTHER_LIST" ]]; then
+    OTHER_FILES=$(echo "$OTHER_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Updated project files ($OTHER_FILES) as part of routine maintenance."
+  else
+    PURPOSE_MSG="Project sync and maintenance."
+  fi
+  commit_msg+="\n\n--- Purpose ---\n$PURPOSE_MSG"
+
+  # --- Timestamp ---
+  commit_msg+="\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
+
+  # --- Test Results Section ---
+  if [[ "$SKIP_TESTS" = true ]]; then
+    commit_msg+="\n\n--- Test Results ---\nTests skipped."
+  fi
+
+  # --- Reviewer Notes Section ---
+  commit_msg+="\n\n--- Reviewer Notes ---\nNo manual testing required; automation only."
   # Show the preview in the terminal
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
