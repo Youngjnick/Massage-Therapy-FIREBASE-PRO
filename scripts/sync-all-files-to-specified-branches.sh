@@ -201,12 +201,30 @@ if [[ -n $(git status --porcelain) ]]; then
   CHANGED_FILES=$(git status --short)
   DIFF_STAT=$(git diff --cached --stat)
   commit_msg=""
+  # Generate a detailed summary overview
+  SUMMARY_OVERVIEW=""
+  CHANGED_COUNT=$(echo "$CHANGED_FILES" | grep -c '^')
+  if [[ $CHANGED_COUNT -eq 1 ]]; then
+    MAIN_FILE=$(echo "$CHANGED_FILES" | awk '{print $2}')
+    SUMMARY_OVERVIEW="- Updated $MAIN_FILE."
+  elif [[ $CHANGED_COUNT -gt 1 ]]; then
+    FILE_LIST=$(echo "$CHANGED_FILES" | awk '{print $2}' | paste -sd, -)
+    SUMMARY_OVERVIEW="- Updated multiple files: $FILE_LIST."
+  else
+    SUMMARY_OVERVIEW="- No file changes detected."
+  fi
+  # Add a generic improvement line for scripts
+  if echo "$CHANGED_FILES" | grep -q 'scripts/'; then
+    SUMMARY_OVERVIEW="$SUMMARY_OVERVIEW\n- Improved sync or automation scripts."
+  fi
+  # Add a generic note for WIP mode
   if [[ "$SKIP_TESTS" = true ]]; then
     commit_msg+="WIP: Tests/lint/type checks skipped"
   else
     commit_msg+="Auto-commit before sync-all-files-to-specified-branches.sh"
   fi
-  commit_msg+="\n\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
+  commit_msg+="\n\nSummary:\n$SUMMARY_OVERVIEW\n"
+  commit_msg+="\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
   read commit_msg_action
