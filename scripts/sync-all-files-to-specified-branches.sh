@@ -201,7 +201,7 @@ if [[ -n $(git status --porcelain) ]]; then
   CHANGED_FILES=$(git status --short)
   DIFF_STAT=$(git diff --cached --stat)
   commit_msg=""
-  # Generate a detailed summary overview
+  # Generate a detailed summary overview in the desired format
   SUMMARY_OVERVIEW=""
   CHANGED_COUNT=$(echo "$CHANGED_FILES" | grep -c '^')
   if [[ $CHANGED_COUNT -eq 1 ]]; then
@@ -213,15 +213,13 @@ if [[ -n $(git status --porcelain) ]]; then
   else
     SUMMARY_OVERVIEW="- No file changes detected."
   fi
-  # Add a generic improvement line for scripts
   if echo "$CHANGED_FILES" | grep -q 'scripts/'; then
     SUMMARY_OVERVIEW="$SUMMARY_OVERVIEW\n- Improved sync or automation scripts."
   fi
-  # Add a generic note for WIP mode
   if [[ "$SKIP_TESTS" = true ]]; then
-    commit_msg+="WIP: Tests/lint/type checks skipped"
+    commit_msg="WIP: Tests/lint/type checks skipped"
   else
-    commit_msg+="Auto-commit before sync-all-files-to-specified-branches.sh"
+    commit_msg="Auto-commit before sync-all-files-to-specified-branches.sh"
   fi
   commit_msg+="\n\nSummary:\n$SUMMARY_OVERVIEW\n"
   commit_msg+="\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
