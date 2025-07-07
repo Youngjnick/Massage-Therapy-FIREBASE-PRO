@@ -253,27 +253,27 @@ if [[ -n $(git status --porcelain) ]]; then
       open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
     fi
     show_stash_and_precommit_summary
-    # No continue here; just return to main flow
-    return
+    # Do NOT return here; always continue to sync/push section
+  else
+    commit_msg="sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$COMMIT_AUTOINFO"
+    echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
+    echo "Do you want to edit the commit message? (y/n): "
+    read edit_commit_choice
+    if [[ "$edit_commit_choice" == "y" ]]; then
+      echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
+      while IFS= read -r line; do
+        [[ -z "$line" ]] && break
+        commit_msg+="$line\n"
+      done
+    fi
+    git add -A
+    git commit -m "$commit_msg"
+    # Open GitHub page for the branch if remote is origin
+    if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
+      open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
+    fi
+    show_stash_and_precommit_summary
   fi
-  commit_msg="sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$COMMIT_AUTOINFO"
-  echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
-  echo "Do you want to edit the commit message? (y/n): "
-  read edit_commit_choice
-  if [[ "$edit_commit_choice" == "y" ]]; then
-    echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
-    while IFS= read -r line; do
-      [[ -z "$line" ]] && break
-      commit_msg+="$line\n"
-    done
-  fi
-  git add -A
-  git commit -m "$commit_msg"
-  # Open GitHub page for the branch if remote is origin
-  if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
-    open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
-  fi
-  show_stash_and_precommit_summary
 else
   echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
   show_stash_and_precommit_summary
