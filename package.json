@@ -3,7 +3,7 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "test": "jest",
+    "test": "jest --coverage",
     "pretest:e2e": "lsof -ti:5173 | xargs kill -9 || true",
     "test:e2e": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh",
     "test:e2e:headed": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh",

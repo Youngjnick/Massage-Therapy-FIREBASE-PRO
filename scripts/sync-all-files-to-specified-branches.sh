@@ -175,6 +175,10 @@ if [[ -n $(git status --porcelain) ]]; then
     fi
     git add -A
     git commit -m "$commit_msg"
+    # Open GitHub page for the branch if remote is origin
+    if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
+      open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
+    fi
   elif [[ "$commit_mode" == "commit" ]]; then
     # Now run tests/lint/type checks and collect stats
     # --- TEST & LINT SECTION ---
@@ -335,6 +339,10 @@ if [[ -n $(git status --porcelain) ]]; then
     fi
     git add -A
     git commit -m "$commit_msg"
+    # Open GitHub page for the branch if remote is origin
+    if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
+      open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
+    fi
   else
     echo "Invalid option. Aborting."
     exit 1
@@ -474,6 +482,174 @@ if [[ "$SKIP_TESTS" = false ]]; then
       kill $DEV_SERVER_PID 2>/dev/null
     fi
   fi
+fi
+
+# --- ENHANCED PRE-COMMIT SUMMARY ---
+
+PRECOMMIT_SUMMARY=""
+
+# 1. Show last 1-3 commit messages
+printf '\n\033[1;34m==== Last 3 commit messages ===='\033[0m\n'
+git log -3 --oneline --decorate --color=always | tee >(cat >> "$LOG_FILE")
+PRECOMMIT_SUMMARY+="==== Last 3 commit messages ===="
+PRECOMMIT_SUMMARY+="\n$(git log -3 --oneline --decorate)\n"
+
+# 2. Show last lint/type/test/E2E status (colorized, with error/warning counts)
+LINT_SUMMARY=""
+TS_SUMMARY=""
+JEST_SUMMARY=""
+PW_SUMMARY=""
+GREEN='\033[32m'
+RED='\033[31m'
+YELLOW='\033[33m'
+NC='\033[0m'
+if [[ -f scripts/eslint-output.txt ]]; then
+  ERRORS=$(grep -c 'error' scripts/eslint-output.txt)
+  WARNINGS=$(grep -c 'warning' scripts/eslint-output.txt)
+  if [[ $ERRORS -gt 0 ]]; then
+    LINT_SUMMARY="${RED}Lint: $ERRORS errors, $WARNINGS warnings${NC}"
+  elif [[ $WARNINGS -gt 0 ]]; then
+    LINT_SUMMARY="${YELLOW}Lint: 0 errors, $WARNINGS warnings${NC}"
+  else
+    LINT_SUMMARY="${GREEN}Lint: 0 errors, 0 warnings${NC}"
+  fi
+fi
+if [[ -f scripts/ts-output.txt ]]; then
+  ERRORS=$(grep -c 'error TS' scripts/ts-output.txt)
+  if [[ $ERRORS -gt 0 ]]; then
+    TS_SUMMARY="${RED}Type: $ERRORS errors${NC}"
+  else
+    TS_SUMMARY="${GREEN}Type: 0 errors${NC}"
+  fi
+fi
+if [[ -f scripts/test-output.txt ]]; then
+  FAILS=$(grep -E '^Tests:' scripts/test-output.txt | grep -o '[0-9]* failed' | awk '{s+=$1} END {print s+0}')
+  if [[ $FAILS -gt 0 ]]; then
+    JEST_SUMMARY="${RED}Jest: $FAILS failed${NC}"
+  else
+    JEST_SUMMARY="${GREEN}Jest: 0 failed${NC}"
+  fi
+fi
+if [[ -f scripts/playwright-output.txt ]]; then
+  PW_FAILS=$(grep -Eo '[0-9]+ failed' scripts/playwright-output.txt | awk '{s+=$1} END {print s+0}')
+  if [[ $PW_FAILS -gt 0 ]]; then
+    PW_SUMMARY="${RED}E2E: $PW_FAILS failed${NC}"
+  else
+    PW_SUMMARY="${GREEN}E2E: 0 failed${NC}"
+  fi
+fi
+printf '\n\033[1;34m==== Last Lint/Type/Test/E2E Status ===='\033[0m\n'
+echo "$LINT_SUMMARY"
+echo "$TS_SUMMARY"
+echo "$JEST_SUMMARY"
+echo "$PW_SUMMARY"
+PRECOMMIT_SUMMARY+="==== Last Lint/Type/Test/E2E Status ===="
+PRECOMMIT_SUMMARY+="\n$LINT_SUMMARY\n$TS_SUMMARY\n$JEST_SUMMARY\n$PW_SUMMARY\n"
+
+# 3. Warn if uncommitted changes in other branches, offer to stash/pop
+if [[ -n $(git stash list) ]]; then
+  printf '\n\033[1;33mWARNING: You have stashed (uncommitted) changes in other branches!\033[0m\n'
+  git stash list | tee >(cat >> "$LOG_FILE")
+  PRECOMMIT_SUMMARY+="WARNING: You have stashed (uncommitted) changes in other branches!\n$(git stash list)\n"
+  echo "Do you want to pop a stash now? (y/n): "
+  read pop_stash
+  if [[ "$pop_stash" == "y" ]]; then
+    git stash list
+    echo "Enter the stash number to pop (e.g., 0 for the top stash), or leave blank to skip:"
+    read stash_num
+    if [[ -n "$stash_num" ]]; then
+      git stash pop stash@{$stash_num}
+    fi
+  fi
+fi
+
+# 4. Show staged vs. unstaged changes, and deleted/renamed files separately
+printf '\n\033[1;34m==== Staged Changes ===='\033[0m\n'
+git diff --cached --name-status | tee >(cat >> "$LOG_FILE")
+PRECOMMIT_SUMMARY+="==== Staged Changes ===="
+PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-status)\n"
+printf '\n\033[1;34m==== Unstaged Changes ===='\033[0m\n'
+git diff --name-status | tee >(cat >> "$LOG_FILE")
+PRECOMMIT_SUMMARY+="==== Unstaged Changes ===="
+PRECOMMIT_SUMMARY+="\n$(git diff --name-status)\n"
+
+# 5. Show deleted and renamed files separately, prompt for critical deletions
+printf '\n\033[1;34m==== Deleted Files (staged) ===='\033[0m\n'
+DELETED_FILES=($(git diff --cached --name-status | awk '$1=="D"{print $2}'))
+for f in "${DELETED_FILES[@]}"; do
+  echo "$f"
+  # If critical, prompt for confirmation
+  if [[ "$f" == "serviceAccountKey.json" || "$f" == "firebase.json" || "$f" == "playwright.config.ts" || "$f" == src/* || "$f" == e2e/* || "$f" == public/* || "$f" == scripts/* ]]; then
+    echo "\033[1;31mWARNING: You are deleting a critical file: $f\033[0m"
+    echo "Are you sure you want to delete this file? (yes/no): "
+    read confirm_delete
+    if [[ "$confirm_delete" != "yes" ]]; then
+      git restore --staged "$f"
+      echo "File $f was unstaged from deletion."
+    fi
+  fi
+  PRECOMMIT_SUMMARY+="Deleted: $f\n"
+done
+printf '\n\033[1;34m==== Renamed Files (staged) ===='\033[0m\n'
+git diff --cached --name-status | awk '$1 ~ /^R/ {print $2 " -> " $3}' | tee >(cat >> "$LOG_FILE")
+PRECOMMIT_SUMMARY+="==== Renamed Files (staged) ===="
+PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-status | awk '$1 ~ /^R/ {print $2 " -> " $3}')\n"
+
+# 6. File type and directory summary (staged changes)
+printf '\n\033[1;34m==== File Type Summary (staged) ===='\033[0m\n'
+git diff --cached --name-only | awk -F. '{print $NF}' | sort | uniq -c | sort -nr | tee >(cat >> "$LOG_FILE")
+PRECOMMIT_SUMMARY+="==== File Type Summary (staged) ===="
+PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-only | awk -F. '{print $NF}' | sort | uniq -c | sort -nr)\n"
+printf '\n\033[1;34m==== Directory Summary (staged) ===='\033[0m\n'
+git diff --cached --name-only | awk -F/ '{print $1}' | sort | uniq -c | sort -nr | tee >(cat >> "$LOG_FILE")
+PRECOMMIT_SUMMARY+="==== Directory Summary (staged) ===="
+PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-only | awk -F/ '{print $1}' | sort | uniq -c | sort -nr)\n"
+
+# 7. Prompt to stage unstaged files
+UNSTAGED=$(git diff --name-only)
+if [[ -n "$UNSTAGED" ]]; then
+  echo "\nYou have unstaged changes. Do you want to stage all unstaged changes? (y/n): "
+  read stage_all
+  if [[ "$stage_all" == "y" ]]; then
+    git add -A
+  else
+    echo "Select files to stage (enter numbers separated by space, or leave blank to skip):"
+    IFS=$'\n' read -rd '' -a unstaged_files <<<"$(git diff --name-only)"
+    for i in "${!unstaged_files[@]}"; do
+      printf "%2d) %s\n" $((i+1)) "${unstaged_files[$i]}"
+    done
+    read -a file_nums
+    for num in "${file_nums[@]}"; do
+      idx=$((num-1))
+      if [[ $idx -ge 0 && $idx -lt ${#unstaged_files[@]} ]]; then
+        git add "${unstaged_files[$idx]}"
+      fi
+    done
+  fi
+fi
+
+# 8. Optionally open changed files in editor
+CHANGED_FILES_LIST=($(git diff --cached --name-only))
+echo "\nDo you want to open any staged changed files in your editor for review? (y/n): "
+read open_files
+if [[ "$open_files" == "y" ]]; then
+  echo "Select files to open (enter numbers separated by space, or leave blank to skip):"
+  for i in "${!CHANGED_FILES_LIST[@]}"; do
+    printf "%2d) %s\n" $((i+1)) "${CHANGED_FILES_LIST[$i]}"
+  done
+  read -a open_nums
+  for num in "${open_nums[@]}"; do
+    idx=$((num-1))
+    if [[ $idx -ge 0 && $idx -lt ${#CHANGED_FILES_LIST[@]} ]]; then
+      open "${CHANGED_FILES_LIST[$idx]}"
+    fi
+  done
+fi
+
+# Save pre-commit summary to log file
+if [[ -w "$LOG_FILE" ]]; then
+  echo -e "\n==== Pre-commit summary ($(date '+%Y-%m-%d %H:%M:%S %Z')) ====" >> "$LOG_FILE"
+  echo -e "$PRECOMMIT_SUMMARY" >> "$LOG_FILE"
 fi
 
 # --- ALWAYS PUSH/UPLOAD SECTION ---
