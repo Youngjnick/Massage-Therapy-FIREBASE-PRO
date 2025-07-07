@@ -372,6 +372,7 @@ fi
 # Save the current branch to return to it later
 ORIGINAL_BRANCH=$(git symbolic-ref --short -q HEAD)
 ORIGINAL_COMMIT=$(git rev-parse HEAD)
+REPO_ROOT=$(git rev-parse --show-toplevel)
 
 for target in $all_targets; do
   remote="${target%%/*}"
@@ -383,17 +384,20 @@ for target in $all_targets; do
   echo -e "\n--- Syncing all files to $remote/$branch ---"
   echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
 
-  # Check if branch exists locally; if not, create it from the current commit
+  # Create a temporary worktree for the target branch
+  TMP_WORKTREE="$REPO_ROOT/.sync-tmp-$branch-$$"
+  git worktree remove --force "$TMP_WORKTREE" 2>/dev/null
   if git show-ref --verify --quiet refs/heads/$branch; then
-    git checkout $branch
+    git worktree add "$TMP_WORKTREE" $branch
   else
-    git checkout -b $branch $ORIGINAL_COMMIT
+    git worktree add -b $branch "$TMP_WORKTREE" $ORIGINAL_COMMIT
   fi
 
-  # Overwrite all files in the working tree with the state from the original branch
-  git reset --hard $ORIGINAL_COMMIT
+  # Copy all files from the current working tree to the worktree (excluding .git and node_modules)
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$TMP_WORKTREE/"
 
-  # Stage and commit all changes (if any)
+  # Commit and push in the worktree
+  pushd "$TMP_WORKTREE" > /dev/null
   git add -A
   if git diff --cached --quiet; then
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp."
@@ -526,9 +530,8 @@ for target in $all_targets; do
   echo "Done with $remote/$branch."
   echo "Done with $remote/$branch." >> "$LOG_FILE"
 
-  # Return to the original branch after syncing
-  git checkout $ORIGINAL_BRANCH
-
+  popd > /dev/null
+  git worktree remove --force "$TMP_WORKTREE"
 done
 
 # Update last sync time in log file (guarded)
