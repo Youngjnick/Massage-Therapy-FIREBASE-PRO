@@ -702,15 +702,15 @@ for target in $all_targets; do
   if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
     echo -e "${GREEN}✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
     echo "✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
-    summary_table+="$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)\n"
+    summary_table+=("$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)")
   elif [[ "$PUSH_SUCCESS" = true ]]; then
     echo -e "${YELLOW}⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
     echo "⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
-    summary_table+="$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)\n"
+    summary_table+=("$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)")
   else
     echo -e "${RED}❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
     echo "❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
-    summary_table+="$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)\n"
+    summary_table+=("$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)")
   fi
   if [[ "$remote" == "origin" ]]; then
     echo "View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$branch"
@@ -752,11 +752,10 @@ if [[ -w "$LOG_FILE" ]]; then
   echo "Last sync: $(date '+%Y-%m-%d %H:%M:%S %Z')" >> "$LOG_FILE"
 fi
 
-echo "\nAll specified branches and remotes have been updated with all files from the current branch."
-echo "\nSummary of updates:"
+echo -e "\nAll specified branches and remotes have been updated with all files from the current branch."
+echo -e "\nSummary of updates:"
 # Print summary table with color: green for OK, yellow for WARNING, red for MISMATCH
-IFS=$'\n'
-for line in $(echo -e "$summary_table"); do
+for line in "${summary_table[@]}"; do
   if [[ "$line" == *"OK"* ]]; then
     echo -e "${GREEN}$line${NC}"
   elif [[ "$line" == *"WARNING"* ]]; then
@@ -766,12 +765,15 @@ for line in $(echo -e "$summary_table"); do
   else
     echo "$line"
   fi
+  
 done
 unset IFS
 # Guard all log writes
 if [[ -w "$LOG_FILE" ]]; then
   echo "\nSummary of updates:" >> "$LOG_FILE"
-  echo "$summary_table" >> "$LOG_FILE"
+  for line in "${summary_table[@]}"; do
+    echo "$line" >> "$LOG_FILE"
+  done
 fi
 
 # (Commented out) Seeding script call. Manual seeding is now required before running this sync script.
