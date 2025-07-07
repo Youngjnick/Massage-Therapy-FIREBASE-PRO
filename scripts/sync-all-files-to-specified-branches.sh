@@ -214,6 +214,10 @@ if [[ -n $(git status --porcelain) ]]; then
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   git add -A
   git commit -m "$commit_msg"
+
+  # Always show stash and precommit summary after commit (all modes except abort)
+  show_stash_and_precommit_summary
+
   if [[ "$COMMIT_MODE" == "local" ]]; then
     echo -e "\n\033[1;33mCommitted locally only. No push to remote performed.\033[0m"
     exit 0
@@ -221,7 +225,6 @@ if [[ -n $(git status --porcelain) ]]; then
   if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
     open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
   fi
-  show_stash_and_precommit_summary
   # Only run tests for normal commit mode
   if [[ "$SKIP_TESTS" = false ]]; then
     # --- TEST & LINT SECTION ---
