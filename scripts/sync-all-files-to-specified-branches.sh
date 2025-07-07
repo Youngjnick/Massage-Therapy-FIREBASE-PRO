@@ -606,26 +606,26 @@ for target in $all_targets; do
   echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
 
   # --- ENHANCED DIAGNOSTICS BEFORE PUSH ---
-  echo "\n[DIAG] Current working directory: $(pwd)"
-  echo "[DIAG] Current HEAD: $(git rev-parse HEAD)"
-  echo "[DIAG] Current branch: $(git symbolic-ref --short -q HEAD || echo 'DETACHED HEAD')"
-  echo "[DIAG] git status:"
+  echo -e "\n[DIAG] Current working directory: $(pwd)"
+  echo -e "[DIAG] Current HEAD: $(git rev-parse HEAD)"
+  echo -e "[DIAG] Current branch: $(git symbolic-ref --short -q HEAD || echo 'DETACHED HEAD')"
+  echo -e "[DIAG] git status:"
   git status
-  echo "[DIAG] git branch -avv:"
+  echo -e "[DIAG] git branch -avv:"
   git branch -avv
-  echo "[DIAG] git config push settings:"
-  git config --get-regexp push || echo "[DIAG] No special push config."
-  echo "[DIAG] git remote -v:"
+  echo -e "[DIAG] git config push settings:"
+  git config --get-regexp push || echo -e "[DIAG] No special push config."
+  echo -e "[DIAG] git remote -v:"
   git remote -v
-  echo "[DIAG] git remote show $remote:"
+  echo -e "[DIAG] git remote show $remote:"
   git remote show "$remote"
   if [[ -d .git/hooks && -f .git/hooks/pre-push ]]; then
-    echo "[DIAG] pre-push hook detected at .git/hooks/pre-push:"
+    echo -e "[DIAG] pre-push hook detected at .git/hooks/pre-push:"
     head -20 .git/hooks/pre-push
   else
-    echo "[DIAG] No pre-push hook detected."
+    echo -e "[DIAG] No pre-push hook detected."
   fi
-  echo "[DIAG] Remote URL for $remote: $(git remote get-url $remote)"
+  echo -e "[DIAG] Remote URL for $remote: $(git remote get-url $remote)"
 
   # Add and commit all changes
   git add -A
