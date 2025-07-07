@@ -199,24 +199,28 @@ fi
 if [[ -n $(git status --porcelain) ]]; then
   # Classic commit message preview: WIP/test/lint summaries, changed files, diff summary
   CHANGED_FILES=$(git status --short)
-  DIFF_STAT=$(git diff --cached --stat)
+  # Use unstaged diff for preview so user always sees all changes
+  DIFF_STAT=$(git diff --stat)
   commit_msg=""
   # Build the commit message in the exact format for both preview and GitHub
-  # Build commit message in the exact requested format
+  # --- Summary Section ---
   SUMMARY_OVERVIEW=""
   CHANGED_COUNT=$(echo "$CHANGED_FILES" | grep -c '^')
   if [[ $CHANGED_COUNT -eq 1 ]]; then
     MAIN_FILE=$(echo "$CHANGED_FILES" | awk '{print $2}')
     SUMMARY_OVERVIEW="- Updated $MAIN_FILE."
   elif [[ $CHANGED_COUNT -gt 1 ]]; then
-    FILE_LIST=$(echo "$CHANGED_FILES" | awk '{print $2}' | paste -sd, -)
-    SUMMARY_OVERVIEW="- Updated multiple files: $FILE_LIST."
+    while read -r line; do
+      FILE=$(echo "$line" | awk '{print $2}')
+      [[ -n "$FILE" ]] && SUMMARY_OVERVIEW+="- Updated $FILE.\n"
+    done <<< "$CHANGED_FILES"
   else
     SUMMARY_OVERVIEW="- No file changes detected."
   fi
   if echo "$CHANGED_FILES" | grep -q 'scripts/'; then
-    SUMMARY_OVERVIEW="$SUMMARY_OVERVIEW\n- Improved sync or automation scripts."
+    SUMMARY_OVERVIEW+="- Improved sync or automation scripts."
   fi
+  # --- Commit Message Header ---
   if [[ "$SKIP_TESTS" = true ]]; then
     commit_msg="WIP: Tests/lint/type checks skipped\n"
   else
@@ -224,7 +228,13 @@ if [[ -n $(git status --porcelain) ]]; then
   fi
   commit_msg+="\n--- Summary ---\n$SUMMARY_OVERVIEW\n"
   commit_msg+="\n--- Changed Files ---\n$CHANGED_FILES\n"
-  commit_msg+="\n--- Diff Summary ---\n$DIFF_STAT"
+  # --- Diff Summary Section ---
+  # Prefix each diffstat line with a dash and a space, and preserve alignment
+  DIFF_STAT_DASHED=""
+  while IFS= read -r line; do
+    [[ -n "$line" ]] && DIFF_STAT_DASHED+=" -$line\n"
+  done <<< "$DIFF_STAT"
+  commit_msg+="\n--- Diff Summary ---\n${DIFF_STAT_DASHED%\\n}"
   # Show the preview in the terminal
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
