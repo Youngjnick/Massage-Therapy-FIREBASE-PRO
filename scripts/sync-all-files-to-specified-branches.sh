@@ -665,7 +665,7 @@ for target in $all_targets; do
   PUSH_OUTPUT=$(git push $remote HEAD:$branch 2>&1)
   PUSH_EXIT=$?
   echo "[DIAG] git push $remote HEAD:$branch exit code: $PUSH_EXIT"
-  echo "[DIAG] git push output:\n$PUSH_OUTPUT"
+  printf "[DIAG] git push output:\n%s\n" "$PUSH_OUTPUT"
   if [[ $PUSH_EXIT -eq 0 ]]; then
     PUSH_MODE="normal"
     PUSH_SUCCESS=true
@@ -677,7 +677,7 @@ for target in $all_targets; do
     FORCE_PUSH_OUTPUT=$(git push --force $remote HEAD:$branch 2>&1)
     FORCE_PUSH_EXIT=$?
     echo "[DIAG] git push --force $remote HEAD:$branch exit code: $FORCE_PUSH_EXIT"
-    echo "[DIAG] git push --force output:\n$FORCE_PUSH_OUTPUT"
+    printf "[DIAG] git push --force output:\n%s\n" "$FORCE_PUSH_OUTPUT"
     if [[ $FORCE_PUSH_EXIT -eq 0 ]]; then
       PUSH_MODE="force"
       PUSH_SUCCESS=true
