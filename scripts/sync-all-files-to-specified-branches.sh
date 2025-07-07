@@ -592,6 +592,29 @@ for target in $all_targets; do
   fi
   echo "\n--- Syncing all files to $remote/$branch ---"
   echo "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
+
+  # --- ENHANCED DIAGNOSTICS BEFORE PUSH ---
+  echo "\n[DIAG] Current working directory: $(pwd)"
+  echo "[DIAG] Current HEAD: $(git rev-parse HEAD)"
+  echo "[DIAG] Current branch: $(git symbolic-ref --short -q HEAD || echo 'DETACHED HEAD')"
+  echo "[DIAG] git status:"
+  git status
+  echo "[DIAG] git branch -avv:"
+  git branch -avv
+  echo "[DIAG] git config push settings:"
+  git config --get-regexp push || echo "[DIAG] No special push config."
+  echo "[DIAG] git remote -v:"
+  git remote -v
+  echo "[DIAG] git remote show $remote:"
+  git remote show "$remote"
+  if [[ -d .git/hooks && -f .git/hooks/pre-push ]]; then
+    echo "[DIAG] pre-push hook detected at .git/hooks/pre-push:"
+    head -20 .git/hooks/pre-push
+  else
+    echo "[DIAG] No pre-push hook detected."
+  fi
+  echo "[DIAG] Remote URL for $remote: $(git remote get-url $remote)"
+
   # Add and commit all changes
   git add -A
   if git diff --cached --quiet; then
@@ -622,8 +645,16 @@ for target in $all_targets; do
   fi
   # Print message before pushing
   echo "Pushing to $remote/$branch..."
-  # Push to remote/branch
-  if git push $remote HEAD:$branch; then
+  # --- ENHANCED PUSH DIAGNOSTICS ---
+  PUSH_OUTPUT=""
+  PUSH_EXIT=0
+  PUSH_MODE="normal"
+  PUSH_SUCCESS=false
+  PUSH_OUTPUT=$(git push $remote HEAD:$branch 2>&1)
+  PUSH_EXIT=$?
+  echo "[DIAG] git push $remote HEAD:$branch exit code: $PUSH_EXIT"
+  echo "[DIAG] git push output:\n$PUSH_OUTPUT"
+  if [[ $PUSH_EXIT -eq 0 ]]; then
     PUSH_MODE="normal"
     PUSH_SUCCESS=true
   else
@@ -631,7 +662,11 @@ for target in $all_targets; do
     echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
     echo "Automatically force pushing to overwrite remote history..."
     echo "Force pushing to $remote/$branch..."
-    if git push --force $remote HEAD:$branch; then
+    FORCE_PUSH_OUTPUT=$(git push --force $remote HEAD:$branch 2>&1)
+    FORCE_PUSH_EXIT=$?
+    echo "[DIAG] git push --force $remote HEAD:$branch exit code: $FORCE_PUSH_EXIT"
+    echo "[DIAG] git push --force output:\n$FORCE_PUSH_OUTPUT"
+    if [[ $FORCE_PUSH_EXIT -eq 0 ]]; then
       PUSH_MODE="force"
       PUSH_SUCCESS=true
     else
@@ -649,6 +684,8 @@ for target in $all_targets; do
     echo -e "${RED}❌ WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!${NC}"
     echo "❌ WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!" >> "$LOG_FILE"
     echo -e "${YELLOW}Troubleshooting: Try running 'git fetch $remote' and 'git ls-remote $remote $branch' manually.${NC}"
+    echo "[DIAG] git ls-remote $remote $branch output:"
+    git ls-remote $remote $branch
   fi
   if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
     echo -e "${GREEN}✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
