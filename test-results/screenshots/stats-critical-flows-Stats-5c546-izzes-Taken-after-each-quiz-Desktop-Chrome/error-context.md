@@ -23,7 +23,20 @@
         - /url: /profile
         - text: Profile
 - main:
-  - status "Loading": Loading...
+  - heading "Analytics" [level=1]
+  - strong: "Quizzes Taken:"
+  - text: "3"
+  - strong: "Correct Answers:"
+  - text: 1 / 1
+  - strong: "Accuracy:"
+  - text: 100%
+  - strong: "Current Streak:"
+  - text: 0 days
+  - strong: "Badges Earned:"
+  - text: "0"
+  - heading "Topic Breakdown" [level=3]
+  - button "View details and actions for Abdominal Muscle Origins": Abdominal Muscle Origins 1 / 1
+  - heading "Quiz Activity (Last 14 Days)" [level=3]
 - contentinfo:
   - textbox "Search questions"
 - paragraph: Running in emulator mode. Do not use with production credentials.

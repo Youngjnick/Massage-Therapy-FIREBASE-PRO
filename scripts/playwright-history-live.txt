@@ -1,150 +1,34 @@
-# Playwright E2E Test Status (as of 2025-07-07 11:50:31)
-
-e2e/all-interactive-aria-accessibility.spec.ts
-  ✓ e2e/all-interactive-aria-accessibility.spec.ts:36:5   [✓✓✓✓✓✓✓✓✓✓]
-
-e2e/app-accessibility-full.spec.ts
-  ✓ e2e/app-accessibility-full.spec.ts:45:3   [✓✓]
-  ✓ e2e/app-accessibility-full.spec.ts:94:3   [✓✓]
-  ✓ e2e/app-accessibility-full.spec.ts:119:3   [✓✓]
-
-e2e/app.spec.ts
-  ✓ e2e/app.spec.ts:42:1   [✓✓]
-  ✓ e2e/app.spec.ts:152:1   [✓✓]
-  ✓ e2e/app.spec.ts:215:1   [✓✓]
-  ✓ e2e/app.spec.ts:276:1   [✓✓]
-  ✓ e2e/app.spec.ts:302:1   [✓✓]
-  ✓ e2e/app.spec.ts:312:1   [✓✓]
-  ✓ e2e/app.spec.ts:330:1   [✓✓]
-  ✓ e2e/app.spec.ts:388:1   [✓✓]
-
-e2e/aria-roles-labels.spec.ts
-  ✓ e2e/aria-roles-labels.spec.ts:118:3   [✓✓]
-
-e2e/assets-case-sensitivity.spec.ts
-  ✓ e2e/assets-case-sensitivity.spec.ts:11:1   [✓✓]
-  ✓ e2e/assets-case-sensitivity.spec.ts:17:1   [✓✓]
-
-e2e/assets-troubleshoot.spec.ts
-  ✓ e2e/assets-troubleshoot.spec.ts:24:3   [✓✓]
-  ✓ e2e/assets-troubleshoot.spec.ts:30:3   [✓✓]
-  ✓ e2e/assets-troubleshoot.spec.ts:58:3   [✓✓]
-
-e2e/auth-session-persistence.spec.ts
-  ✓ e2e/auth-session-persistence.spec.ts:19:3   [✓✓]
-
-e2e/auth-smoke.spec.ts
-  ✓ e2e/auth-smoke.spec.ts:16:1   [✓✓]
-
-e2e/auth.spec.ts
-  ✓ e2e/auth.spec.ts:8:3   [✓✓]
-  ✓ e2e/auth.spec.ts:13:3   [✓✓]
-  ✓ e2e/auth.spec.ts:50:3   [✓✓]
-
-e2e/badge-appearance.spec.ts
-  ✓ e2e/badge-appearance.spec.ts:22:2   [✓✓]
-
-e2e/badge-dynamic-behavior.spec.ts
-  ✓ e2e/badge-dynamic-behavior.spec.ts:6:1   [✓✓]
-  ✓ e2e/badge-dynamic-behavior.spec.ts:25:1   [✓✓]
-
-e2e/basic-navigation.spec.ts
-  ✓ e2e/basic-navigation.spec.ts:13:5   [✓✓✓✓✓✓✓✓]
-
-e2e/critical-edge-accessibility.spec.ts
-  ✓ e2e/critical-edge-accessibility.spec.ts:41:3   [✓✓]
-  ✓ e2e/critical-edge-accessibility.spec.ts:119:3   [✓✓]
-
-e2e/critical-ui-accessibility.spec.ts
-  ✓ e2e/critical-ui-accessibility.spec.ts:26:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:120:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:136:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:160:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:205:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:222:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:229:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:280:3   [✓✓]
-  ✓ e2e/critical-ui-accessibility.spec.ts:331:3   [✓✓]
-
-e2e/edge-accessibility.spec.ts
-  ✓ e2e/edge-accessibility.spec.ts:25:3   [✓✓]
-  ✓ e2e/edge-accessibility.spec.ts:68:3   [✓✓]
-  ✓ e2e/edge-accessibility.spec.ts:87:3   [✓✓]
-  ✓ e2e/edge-accessibility.spec.ts:149:3   [✓✓]
-
-e2e/finish-quiz-buttons.spec.ts
-  ✓ e2e/finish-quiz-buttons.spec.ts:27:3   [✓✓]
-  ✓ e2e/finish-quiz-buttons.spec.ts:169:3   [✓✓]
-
-e2e/focus-indicator.spec.ts
-  ✓ e2e/focus-indicator.spec.ts:37:3   [✓✓]
-  ✓ e2e/focus-indicator.spec.ts:104:3   [✓✓]
-  ✓ e2e/focus-indicator.spec.ts:164:3   [✓✓]
-  ✓ e2e/focus-indicator.spec.ts:224:3   [✓✓]
-
-e2e/keyboard-navigation-and-restart.spec.ts
-  ✓ e2e/keyboard-navigation-and-restart.spec.ts:23:3   [✓✓]
-  ✓ e2e/keyboard-navigation-and-restart.spec.ts:64:3   [✓✓]
-
-e2e/login-flow.spec.ts
-  ✓ e2e/login-flow.spec.ts:15:3   [✓✓]
-  ✓ e2e/login-flow.spec.ts:21:3   [✓✓]
-  ✓ e2e/login-flow.spec.ts:30:3   [✓✓]
-
-e2e/navigation-aria-flow.spec.ts
-  ✓ e2e/navigation-aria-flow.spec.ts:39:5   [✓✓✓✓✓✓✓✓]
-
-e2e/profile-update.spec.ts
-  ✓ e2e/profile-update.spec.ts:26:3   [✓✘✓]  [flaky]
-
-e2e/quiz-firestore-verification.spec.ts
-  ✓ e2e/quiz-firestore-verification.spec.ts:38:3   [✓✓]
-
-e2e/quiz-keyboard-navigation.spec.ts
-  ✓ e2e/quiz-keyboard-navigation.spec.ts:33:3   [✓✓]
-  ✓ e2e/quiz-keyboard-navigation.spec.ts:64:3   [✓✓]
-
-e2e/quiz-option-accessibility.spec.ts
-  ✓ e2e/quiz-option-accessibility.spec.ts:28:3   [✓✓]
+# Playwright E2E Test Status (as of 2025-07-07 15:33:10)
 
 e2e/quiz-stats-live-update.spec.ts
-  ✓ e2e/quiz-stats-live-update.spec.ts:16:3   [✓✓]
-
-e2e/reload-webbar.spec.ts
-  ✓ e2e/reload-webbar.spec.ts:7:3   [✓✓]
-  ✓ e2e/reload-webbar.spec.ts:26:3   [✓✓]
+  ✓ e2e/quiz-stats-live-update.spec.ts:16:3   [✓]
 
 e2e/stats-critical-flows.spec.ts
-  ✘ e2e/stats-critical-flows.spec.ts:53:3   [✘✘✘✘]
-  ✓ e2e/stats-critical-flows.spec.ts:166:3   [✓✓]
-  ✓ e2e/stats-critical-flows.spec.ts:188:3   [✓✓]
+  ✘ e2e/stats-critical-flows.spec.ts:53:3   [✘✘]
+  ✓ e2e/stats-critical-flows.spec.ts:171:3   [✓]
+  ✓ e2e/stats-critical-flows.spec.ts:193:3   [✓]
 
 e2e/stats-isolation-per-user.spec.ts
-  ✘ e2e/stats-isolation-per-user.spec.ts:62:3   [✘✓✘✘]  [flaky]
+  ✓ e2e/stats-isolation-per-user.spec.ts:62:3   [✘✓]  [flaky]
 
 e2e/stats-persistence-after-reload.spec.ts
-  ✓ e2e/stats-persistence-after-reload.spec.ts:56:3   [✓✓]
+  ✓ e2e/stats-persistence-after-reload.spec.ts:56:3   [✓]
 
 e2e/stats-persistence.spec.ts
-  ✓ e2e/stats-persistence.spec.ts:59:3   [✓✓]
+  ✓ e2e/stats-persistence.spec.ts:59:3   [✓]
 
 e2e/stats-topic-breakdown.spec.ts
-  ✓ e2e/stats-topic-breakdown.spec.ts:22:3   [✓✓]
+  ✓ e2e/stats-topic-breakdown.spec.ts:22:3   [✓]
 
-e2e/ui-auth-smoke.spec.ts
-  ✓ e2e/ui-auth-smoke.spec.ts:23:1   [✓✓]
+Summary: Total: 8  Passing: 7  Failing: 1  Flaky: 1  Skipped: 0  Deleted: 2
 
-Summary: Total: 70  Passing: 68  Failing: 2  Flaky: 2  Skipped: 0  Deleted: 2
-
-Longest passing streak: e2e/all-interactive-aria-accessibility.spec.ts:  (10)
-Longest failing streak: e2e/stats-critical-flows.spec.ts:  (4)
+Longest passing streak: e2e/stats-persistence-after-reload.spec.ts:  (1)
+Longest failing streak: e2e/stats-critical-flows.spec.ts:  (2)
 
 Flaky tests:
-  e2e/profile-update.spec.ts:   [✓✘✓]
-  e2e/stats-isolation-per-user.spec.ts:   [✘✓✘✘]
+  e2e/stats-isolation-per-user.spec.ts:   [✘✓]
 
 Failing tests:
   e2e/stats-critical-flows.spec.ts:   [last: ✘]
-  e2e/stats-isolation-per-user.spec.ts:   [last: ✘]
 
 Recently deleted tests:

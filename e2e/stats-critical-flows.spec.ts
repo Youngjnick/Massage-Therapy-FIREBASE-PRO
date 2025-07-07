@@ -160,6 +160,11 @@ test.describe('Stats Critical Flows', () => {
         throw new Error(`Quizzes Taken stat did not increment after quiz #${quizNum+1}. Last stat: ${lastStat}, Polled stat: ${polledStat}`);
       }
       lastStat = polledStat;
+
+      // After quiz completion, check topic breakdown in results
+      if (quizResultsText && /Other/.test(quizResultsText)) {
+        console.warn(`[E2E WARNING] Topic breakdown used 'Other' for quiz #${quizNum+1}. Results:`, quizResultsText);
+      }
     }
   });
 

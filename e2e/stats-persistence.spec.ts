@@ -170,6 +170,12 @@ test.describe('Stats Persistence', () => {
     const statsAfterQuiz = await getUserStats(userUid);
     console.log('[E2E DEBUG] Firestore analytics doc after quiz:', statsAfterQuiz);
 
+    // After quiz completion, check topic breakdown in results
+    const resultsText = await page.getByTestId('quiz-results').textContent();
+    if (resultsText && /Other/.test(resultsText)) {
+      console.warn(`[E2E WARNING] Topic breakdown used "Other" after quiz completion. Results:`, resultsText);
+    }
+
     // Wait for stat update to propagate (poll for stat change)
     let updatedQuizzesTaken = '';
     let statChanged = false;

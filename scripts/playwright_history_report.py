@@ -1,3 +1,139 @@
+from pathlib import Path
+REPORT_TXT_FILE = Path("scripts/playwright-history-report.txt")
+def write_txt_summary(db, run_stats):
+    # Section: Tests that fail on multicore but pass on single worker
+    lines.append("\n## Multicore-Only Failures (Fail on multicore, Pass on single worker)\n")
+    for entry in filtered_db.values():
+        rbwm = entry.get("results_by_worker_mode", {})
+        single_hist = rbwm.get("single", [])
+        multi_hist = rbwm.get("multi", [])
+        if single_hist and multi_hist:
+            if ("✗" in multi_hist) and (all(x == "✓" for x in single_hist if x in ("✓", "✗"))):
+                title = entry.get('title') or entry.get('description') or entry.get('location')
+                file_path = entry.get('file', '')
+                file_link = f"[{file_path}]({GITHUB_BASE}{file_path})" if file_path else ""
+                lines.append(f"- {entry.get('location', '?')}  ✗(multi) ✓(single)  {title} {file_link}")
+    import glob
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    lines = [f"# Playwright E2E Test History (as of {now})\n"]
+    lines.append(f"Last Run: {now}\n")
+    # For GitHub file links (edit this if your repo URL changes)
+    GITHUB_BASE = "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/"
+    # Prune deleted tests: only include if .spec.ts file exists
+    all_spec_files = set(glob.glob("e2e/*.spec.*"))
+    filtered_db = {k: v for k, v in db.items() if isinstance(v, dict) and v.get("file") in all_spec_files}
+
+    # Latest Test Results (with duration and error if available)
+    lines.append("\n## Latest Test Results\n")
+    for entry in filtered_db.values():
+        if entry.get("last_status") in ("✓", "✗"):
+            mark = "✓" if entry["last_status"] == "✓" else "✗"
+            title = entry.get('title') or entry.get('description') or entry.get('location')
+            duration = entry.get('duration', '')
+            # Try to extract duration from raw if not present
+            if not duration and 'raw' in entry:
+                import re
+                m = re.search(r'\((\d+\.\d+)s\)', entry['raw'])
+                if m:
+                    duration = m.group(1) + 's'
+            flaky = ("✓" in entry.get("history", []) and "✗" in entry.get("history", []))
+            flaky_str = " [flaky]" if flaky else ""
+            err = entry.get('error', '')
+            dur_str = f" ({duration})" if duration else ""
+            # GitHub file link (edit for your repo)
+            file_path = entry.get('file', '')
+            file_link = f"[{file_path}]({GITHUB_BASE}{file_path})" if file_path else ""
+            # Show per-worker-mode status if available
+            rbwm = entry.get("results_by_worker_mode", {})
+            if rbwm:
+                status_str = []
+                for mode in ["single", "multi"]:
+                    hist = rbwm.get(mode, [])
+                    if hist:
+                        last = hist[-1]
+                        status_str.append(f"{last}({mode})")
+                status_str = " ".join(status_str)
+                lines.append(f"- {entry.get('location', '?')}  {status_str}  {title}{dur_str}{flaky_str} {file_link}")
+            else:
+                lines.append(f"- {entry.get('location', '?')}  {mark}  {title}{dur_str}{flaky_str} {file_link}")
+            if err:
+                lines.append(f"    Error: {err}")
+
+    lines.append("\n---\n")
+
+    # Filtering sections
+    # Failures only
+    lines.append("\n## Failures Only\n")
+    for entry in filtered_db.values():
+        if entry.get("last_status") == "✗":
+            title = entry.get('title') or entry.get('description') or entry.get('location')
+            file_path = entry.get('file', '')
+            file_link = f"[{file_path}]({GITHUB_BASE}{file_path})" if file_path else ""
+            lines.append(f"- {entry.get('location', '?')}  ✗  {title} {file_link}")
+            err = entry.get('error', '')
+            if err:
+                lines.append(f"    Error: {err}")
+    # Flaky only
+    lines.append("\n## Flaky Only\n")
+    for entry in filtered_db.values():
+        hist = entry.get("history", [])
+        if "✓" in hist and "✗" in hist:
+            title = entry.get('title') or entry.get('description') or entry.get('location')
+            file_path = entry.get('file', '')
+            file_link = f"[{file_path}]({GITHUB_BASE}{file_path})" if file_path else ""
+            lines.append(f"- {entry.get('location', '?')}  [flaky]  {title} {file_link}")
+
+    lines.append("\n---\n")
+
+    # Test History by Test (show only those with failures or history)
+    lines.append("\n## Test History by Test\n")
+    for entry in filtered_db.values():
+        loc = entry.get("location", "?")
+        hist = entry.get("history", [])
+        fails = hist.count("✗")
+        passes = hist.count("✓")
+        flaky = ("✓" in hist and "✗" in hist)
+        file_path = entry.get('file', '')
+        file_link = f"[{file_path}]({GITHUB_BASE}{file_path})" if file_path else ""
+        if fails > 0:
+            lines.append(f"{loc} {file_link}\n  ✗ ({fails} failures){' [flaky]' if flaky else ''}")
+            err = entry.get('error', '')
+            if err:
+                lines.append(f"    Error: {err}")
+        if passes > 0 and (fails > 0 or len(hist) > 1):
+            lines.append(f"  ✓ (latest)")
+
+    lines.append("\n---\n")
+
+    # Trend Over Time
+    lines.append("\n## Trend Over Time\n")
+    lines.append("Date                | Total | Passed | Failed | Flaky | Skipped | Deleted")
+    lines.append("--------------------|-------|--------|--------|-------|---------|-------")
+    for stat in run_stats[-5:]:  # Show last 5 runs
+        lines.append(f"{stat['date']:<20} | {stat['total']:<5} | {stat['passed']:<6} | {stat['failed']:<6} | {stat['flaky']:<5} | {stat['skipped']:<7} | {stat['deleted']:<6}")
+    lines.append("...                 | ...   | ...    | ...    | ...   | ...     | ...   | ...\n")
+
+    # Summary
+    passing = sum(1 for e in filtered_db.values() if e.get("last_status") == "✓")
+    failing = sum(1 for e in filtered_db.values() if e.get("last_status") == "✗")
+    flaky = sum(1 for e in filtered_db.values() if "✓" in e.get("history", []) and "✗" in e.get("history", []))
+    skipped = sum(1 for e in filtered_db.values() if e.get("last_status") == "-")
+    deleted = len(db) - len(filtered_db)
+    lines.append("---\n")
+    lines.append("Summary:")
+    lines.append(f"- Total tests: {len(filtered_db)}")
+    lines.append(f"- Passing: {passing}")
+    lines.append(f"- Failing: {failing}")
+    lines.append(f"- Flaky: {flaky}")
+    lines.append(f"- Skipped: {skipped}")
+    lines.append(f"- Deleted: {deleted}\n")
+    lines.append("Notes:")
+    lines.append("- ✓ = Pass, ✗ = Fail")
+    lines.append("- Each test shows its most recent result, duration, and a count of previous failures/passes.")
+    lines.append("- Flaky tests are marked with [flaky].")
+    lines.append("- The trend table shows how your suite’s health changed over time.\n")
+    with open(REPORT_TXT_FILE, "w", encoding="utf-8") as f:
+        f.write('\n'.join(lines))
 #!/usr/bin/env python3
 import sys
 import re
@@ -255,21 +391,27 @@ def export_json_history(results, errors, sequences, run_stats):
         json.dump(export, f, indent=2)
 
 # Helper: update the persistent test status/history JSON
-def update_live_test_status(results):
+def update_live_test_status(results, worker_mode=None):
     # Load or create the persistent JSON
     if JSON_FILE.exists():
         with open(JSON_FILE, encoding="utf-8") as f:
             db = json.load(f)
     else:
         db = {}
-    # Update each test's status and history
+    # Update each test's status and history, now by worker mode
     for r in results:
         loc = f'{r["file"]}:{r["line"]}:{r["col"]}'
         key = f'{r["file"]}::{r["title"]}' if "title" in r else loc
-        entry = db.get(key, {"file": r["file"], "title": r.get("title", ""), "location": loc, "history": [], "last_status": "", "last_time": ""})
+        entry = db.get(key, {"file": r["file"], "title": r.get("title", ""), "location": loc, "history": [], "last_status": "", "last_time": "", "results_by_worker_mode": {}})
         entry["last_status"] = r["status"]
         entry["last_time"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         entry["history"] = (entry.get("history") or [])[-9:] + [r["status"]]
+        # Track by worker mode
+        if worker_mode:
+            rbwm = entry.get("results_by_worker_mode", {})
+            rbwm.setdefault(worker_mode, [])
+            rbwm[worker_mode] = (rbwm[worker_mode][-9:] if rbwm[worker_mode] else []) + [r["status"]]
+            entry["results_by_worker_mode"] = rbwm
         db[key] = entry
     # Save back
     with open(JSON_FILE, "w", encoding="utf-8") as f:
@@ -373,7 +515,11 @@ def main():
     failed = sum(1 for r in results if r["status"] == "✘")
     skipped = sum(1 for r in results if r["status"] == "-")
     # Flaky: test with both ✓ and ✘ in history (from persistent JSON)
-    db = update_live_test_status(results)
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--worker-mode', choices=['single', 'multi'], default=None, help='Worker mode: single or multi')
+    args = parser.parse_args()
+    db = update_live_test_status(results, worker_mode=args.worker_mode)
     flaky = 0
     flaky_titles = []
     failed_titles = []
@@ -418,6 +564,8 @@ def main():
     print(f"[INFO] HTML and JSON reports updated.")
     write_live_file(db)
     print(f"[INFO] Live test status written to {LIVE_FILE}.")
+    write_txt_summary(db, run_stats)
+    print(f"[INFO] Markdown summary written to {REPORT_TXT_FILE}.")
 
 if __name__ == "__main__":
     main()
