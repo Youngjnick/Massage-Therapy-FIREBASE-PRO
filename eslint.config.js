@@ -22,6 +22,8 @@ const globalIgnores = [
   '*.log',
   'tmp-worktree-*',
   'tmp-worktree-*/**',
+  '.sync-tmp-*',
+  '.sync-tmp-*/**',
 ];
 import js from '@eslint/js';
 import parser from '@typescript-eslint/parser';

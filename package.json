@@ -3,10 +3,10 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "test": "jest",
+    "test": "jest --coverage",
     "pretest:e2e": "lsof -ti:5173 | xargs kill -9 || true",
-    "test:e2e": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh",
-    "test:e2e:headed": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh",
+    "test:e2e": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh && python3 scripts/playwright_history_report.py",
+    "test:e2e:headed": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh && python3 scripts/playwright_history_report.py",
     "dev": "vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "emulators": "npx firebase emulators:start --import=emulator-data --export-on-exit=emulator-data --only firestore,auth",
@@ -15,7 +15,8 @@
     "test:e2e:last-failed": "FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f ./scripts/run_playwright_and_capture_output.sh --last-failed",
     "resetUserStats": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f ts-node e2e/helpers/resetUserStats.ts",
     "test:e2e:playwright": "FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 npx playwright test",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npx playwright install"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
+    "@cypress/code-coverage": "^3.14.5",
     "@eslint/js": "^9.29.0",
     "@playwright/test": "^1.53.2",
     "@testing-library/jest-dom": "^6.6.3",
@@ -52,13 +54,15 @@
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
     "node-fetch": "^2.7.0",
+    "nyc": "^17.1.0",
     "playwright": "^1.53.2",
     "react": "^19.1.0",
     "react-icons": "^5.5.0",
     "start-server-and-test": "^2.0.12",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-istanbul": "^7.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
