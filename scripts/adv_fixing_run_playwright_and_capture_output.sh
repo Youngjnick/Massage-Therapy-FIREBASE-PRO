@@ -131,6 +131,28 @@ while [[ -z "$run_mode" ]]; do
   # Only set PW_HEADLESS inline for each Playwright invocation
 done
 
+# Prompt for number of workers (parallelism)
+MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
+DEFAULT_WORKERS=1
+if [[ $MAX_WORKERS -gt 4 ]]; then
+  MAX_WORKERS=4
+fi
+WORKERS=""
+while [[ -z "$WORKERS" ]]; do
+  echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS): "
+  read -r workers_choice
+  workers_choice=${workers_choice:-$DEFAULT_WORKERS}
+  if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
+    WORKERS=$workers_choice
+  elif [[ "$workers_choice" == "max" ]]; then
+    WORKERS=$MAX_WORKERS
+  else
+    echo "[WARN] Invalid selection. Please enter a number between 1 and $MAX_WORKERS, or 'max'."
+  fi
+done
+
+WORKERS_FLAG="--workers=$WORKERS"
+
 # Wait for lint/typecheck to finish before running tests
 if kill -0 $lint_pid 2>/dev/null; then
   echo "[INFO] Waiting for lint and typecheck to finish..."
@@ -150,7 +172,7 @@ fi
 # Example:
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
-  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list | tee "$OUTPUT_FILE"
+  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list | tee "$OUTPUT_FILE"
   sync
   exit 0
 fi
@@ -308,9 +330,29 @@ fi
 
 # [coverage] mode
 if [[ "$choice" == "coverage"* ]]; then
+  echo "[DEBUG] COVERAGE=[32m$COVERAGE[0m"
+  echo "[DEBUG] PW_HEADLESS=[32m$PW_HEADLESS_VALUE[0m"
   echo "[INFO] Running tests with code coverage enabled."
   echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
   COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome"
+  # Automatically generate HTML coverage report if .nyc_output exists
+  if [[ -d ".nyc_output" ]]; then
+    echo "[INFO] Generating HTML coverage report..."
+    npx nyc report --reporter=html
+    if [[ -f "coverage/index.html" ]]; then
+      echo "[INFO] Coverage report generated: coverage/index.html"
+      # Optionally open the report on macOS
+      if [[ "$OSTYPE" == "darwin"* ]]; then
+        open coverage/index.html
+      fi
+    else
+      echo "[WARN] Coverage report not found after generation."
+    fi
+    echo "[INFO] Coverage summary (console):"
+    npx nyc report --reporter=text-summary
+  else
+    echo "[WARN] No .nyc_output directory found. No coverage data to report."
+  fi
   exit 0
 fi
 

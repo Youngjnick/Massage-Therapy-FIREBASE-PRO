@@ -17,7 +17,7 @@ export default defineConfig({
       exclude: ['node_modules', 'test/', 'tests/', 'e2e/', 'cypress/'],
       extension: ['.js', '.ts', '.jsx', '.tsx'],
       cypress: false,
-      requireEnv: false,
+      requireEnv: true, // Only instrument if process.env.COVERAGE is set
       forceBuildInstrument: process.env.COVERAGE === 'true',
     }),
   ],
