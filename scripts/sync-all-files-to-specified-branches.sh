@@ -646,7 +646,7 @@ for target in $all_targets; do
         echo -e "${GREEN}$line${NC}"
       done
     fi
-    echo "\nChanged files for $remote/$branch:" >> "$LOG_FILE"
+    printf "\nChanged files for %s:\n" "$remote/$branch" >> "$LOG_FILE"
     echo "$CHANGED" >> "$LOG_FILE"
     if $WIP_MODE; then
       COMMIT_MSG="WIP: sync (tests/type/lint/e2e failing or skipped)\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
