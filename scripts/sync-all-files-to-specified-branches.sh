@@ -369,10 +369,11 @@ fi
 # --- ALWAYS PUSH/UPLOAD SECTION ---
 # Always push/force-push to all specified branches/remotes
 
-summary_table=()
+# Save the current branch to return to it later
+ORIGINAL_BRANCH=$(git symbolic-ref --short -q HEAD)
+ORIGINAL_COMMIT=$(git rev-parse HEAD)
 
 for target in $all_targets; do
-  # Split target into remote and branch (format: remote/branch)
   remote="${target%%/*}"
   branch="${target#*/}"
   if [[ -z "$remote" || -z "$branch" || "$remote" == "$branch" ]]; then
@@ -382,38 +383,22 @@ for target in $all_targets; do
   echo -e "\n--- Syncing all files to $remote/$branch ---"
   echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
 
-  # --- ENHANCED DIAGNOSTICS BEFORE PUSH ---
-  echo -e "\n[DIAG] Current working directory: $(pwd)"
-  echo -e "[DIAG] Current HEAD: $(git rev-parse HEAD)"
-  echo -e "[DIAG] Current branch: $(git symbolic-ref --short -q HEAD || echo 'DETACHED HEAD')"
-  echo -e "[DIAG] git status:"
-  git status
-  echo -e "[DIAG] git branch -avv:"
-  git branch -avv
-  echo -e "[DIAG] git config push settings:"
-  git config --get-regexp push || echo -e "[DIAG] No special push config."
-  echo -e "[DIAG] git remote -v:"
-  git remote -v
-  echo -e "[DIAG] git remote show $remote:"
-  git remote show "$remote"
-  if [[ -d .git/hooks && -f .git/hooks/pre-push ]]; then
-    echo -e "[DIAG] pre-push hook detected at .git/hooks/pre-push:"
-    head -20 .git/hooks/pre-push
+  # Check if branch exists locally; if not, create it from the current commit
+  if git show-ref --verify --quiet refs/heads/$branch; then
+    git checkout $branch
   else
-    echo -e "[DIAG] No pre-push hook detected."
+    git checkout -b $branch $ORIGINAL_COMMIT
   fi
-  echo -e "[DIAG] Remote URL for $remote: $(git remote get-url $remote)"
 
-  # Add and commit all changes
+  # Overwrite all files in the working tree with the state from the original branch
+  git reset --hard $ORIGINAL_COMMIT
+
+  # Stage and commit all changes (if any)
   git add -A
   if git diff --cached --quiet; then
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp."
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp." >> "$LOG_FILE"
-    if $WIP_MODE; then
-      COMMIT_MSG="WIP: sync (force empty commit, tests/type/lint/e2e failing or skipped)\n\nNo file changes.\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    else
-      COMMIT_MSG="chore(sync): force empty commit to $remote/$branch\n\nNo file changes.\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    fi
+    COMMIT_MSG="chore(sync): force empty commit to $remote/$branch\n\nNo file changes.\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
     git commit --allow-empty -m "$COMMIT_MSG"
   else
     CHANGED=$(git status --short)
@@ -425,23 +410,19 @@ for target in $all_targets; do
     fi
     printf "\nChanged files for %s:\n" "$remote/$branch" >> "$LOG_FILE"
     echo "$CHANGED" >> "$LOG_FILE"
-    if $WIP_MODE; then
-      COMMIT_MSG="WIP: sync (tests/type/lint/e2e failing or skipped)\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    else
-      COMMIT_MSG="chore(sync): auto-sync all files to $remote/$branch\n\nFiles affected:\n$CHANGED\n$TEST_SUMMARY$TS_SUMMARY$ESLINT_SUMMARY$PW_SUMMARY\n\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    fi
+    COMMIT_MSG="chore(sync): auto-sync all files to $remote/$branch\n\nFiles affected:\n$CHANGED\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
     git commit -m "$COMMIT_MSG"
   fi
-  # Print message before pushing
+
+  # Push to the correct remote/branch
   echo "Pushing to $remote/$branch..."
-  # --- ENHANCED PUSH DIAGNOSTICS ---
   PUSH_OUTPUT=""
   PUSH_EXIT=0
   PUSH_MODE="normal"
   PUSH_SUCCESS=false
-  PUSH_OUTPUT=$(git push $remote HEAD:$branch 2>&1)
+  PUSH_OUTPUT=$(git push $remote $branch 2>&1)
   PUSH_EXIT=$?
-  echo "[DIAG] git push $remote HEAD:$branch exit code: $PUSH_EXIT"
+  echo "[DIAG] git push $remote $branch exit code: $PUSH_EXIT"
   printf "[DIAG] git push output:\n%s\n" "$PUSH_OUTPUT"
   if [[ $PUSH_EXIT -eq 0 ]]; then
     PUSH_MODE="normal"
@@ -451,9 +432,9 @@ for target in $all_targets; do
     echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
     echo "Automatically force pushing to overwrite remote history..."
     echo "Force pushing to $remote/$branch..."
-    FORCE_PUSH_OUTPUT=$(git push --force $remote HEAD:$branch 2>&1)
+    FORCE_PUSH_OUTPUT=$(git push --force $remote $branch 2>&1)
     FORCE_PUSH_EXIT=$?
-    echo "[DIAG] git push --force $remote HEAD:$branch exit code: $FORCE_PUSH_EXIT"
+    echo "[DIAG] git push --force $remote $branch exit code: $FORCE_PUSH_EXIT"
     printf "[DIAG] git push --force output:\n%s\n" "$FORCE_PUSH_OUTPUT"
     if [[ $FORCE_PUSH_EXIT -eq 0 ]]; then
       PUSH_MODE="force"
@@ -463,6 +444,7 @@ for target in $all_targets; do
       PUSH_SUCCESS=false
     fi
   fi
+
   LOCAL_HASH=$(git rev-parse HEAD)
   REMOTE_HASH=$(git ls-remote $remote $branch | awk '{print $1}')
   # --- Auto-check: verify local commit exists on remote branch ---
@@ -496,7 +478,6 @@ for target in $all_targets; do
     echo "  Remote: $REMOTE_BRANCH_HASH" >> "$LOG_FILE"
     SUMMARY_STATUS="$remote/$branch: $LOCAL_BRANCH_HASH (MISMATCH! refs differ, $PUSH_MODE)"
   fi
-  # Only add one summary_table entry per remote/branch, preferring the most robust status
   summary_table+=("$SUMMARY_STATUS")
   if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
     echo -e "${GREEN} $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
@@ -544,6 +525,10 @@ for target in $all_targets; do
   fi
   echo "Done with $remote/$branch."
   echo "Done with $remote/$branch." >> "$LOG_FILE"
+
+  # Return to the original branch after syncing
+  git checkout $ORIGINAL_BRANCH
+
 done
 
 # Update last sync time in log file (guarded)
