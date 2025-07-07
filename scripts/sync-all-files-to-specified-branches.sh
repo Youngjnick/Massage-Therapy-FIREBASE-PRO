@@ -528,6 +528,12 @@ for target in $all_targets; do
       echo "Skipped deploy to gh-pages." >> "$LOG_FILE"
     fi
   fi
+
+  # Show commit message used for this sync
+  echo -e "\n\033[1;36mCommit message for $remote/$branch:\033[0m"
+  echo -e "$COMMIT_MSG\n"
+  echo "Commit message for $remote/$branch:" >> "$LOG_FILE"
+  echo "$COMMIT_MSG" >> "$LOG_FILE"
   echo "Done with $remote/$branch."
   echo "Done with $remote/$branch." >> "$LOG_FILE"
 
