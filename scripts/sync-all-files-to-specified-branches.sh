@@ -86,7 +86,9 @@ for remote in $remotes; do
   # Only add if remote is a real git remote
   if git remote | grep -qx "$remote"; then
     for branch in $branches; do
-      all_targets+="$remote/$branch"
+      if [[ -n "$branch" ]]; then
+        all_targets+="$remote/$branch"
+      fi
     done
   fi
   # Do NOT treat branch names as remotes
@@ -360,7 +362,7 @@ if [[ -n $(git status --porcelain) ]]; then
         echo "Running Playwright E2E (advanced script)..."
         ./scripts/adv_fixing_run_playwright_and_capture_output.sh
         PW_SUMMARY=""
-        PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
+        PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed' scripts/playwright-output.txt | awk '{s+=$1} END {print s+0}')
         PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
         if [[ -n "$PW_SUMMARY_LINE" ]]; then
           PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
