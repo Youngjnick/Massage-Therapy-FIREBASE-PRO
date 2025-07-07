@@ -73,9 +73,12 @@ if [[ ${#branches[@]} -eq 0 ]]; then
     echo "No branches entered. Exiting."
     exit 1
   fi
-  # Split branch_input on whitespace (spaces, tabs, newlines)
+  # Split branch_input on whitespace (spaces, tabs, newlines), trim, and only add non-empty
   for b in $branch_input; do
-    branches+=("$b")
+    b_trimmed="${b//[[:space:]]/}"
+    if [[ -n "$b_trimmed" ]]; then
+      branches+=("$b_trimmed")
+    fi
   done
 fi
 
