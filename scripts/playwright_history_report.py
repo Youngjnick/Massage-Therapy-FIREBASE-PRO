@@ -4,7 +4,7 @@ from playwright_report import parse, db, report_txt, report_html
 import argparse
 from pathlib import Path
 
-OUTPUT_FILE = Path("scripts/playwright-output.txt")
+OUTPUT_FILE = Path("scripts/reports/playwright-output.txt")
 
 
 def main():

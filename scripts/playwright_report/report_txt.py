@@ -2,7 +2,7 @@ import datetime
 from pathlib import Path
 import glob
 
-REPORT_TXT_FILE = Path("scripts/playwright-history-report.txt")
+REPORT_TXT_FILE = Path("scripts/reports/playwright-history-report.txt")
 
 def write_txt_summary(db, run_stats):
     now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')

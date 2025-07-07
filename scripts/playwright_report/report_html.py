@@ -19,7 +19,7 @@ def find_artifacts(test):
                     artifacts.append(os.path.join(root, f))
     return artifacts
 
-def generate_html_report(db, output_path="playwright-history.html"):
+def generate_html_report(db, output_path="scripts/reports/playwright-history.html"):
     # Only use dict values (skip lists or other types)
     tests = [v for v in db.values() if isinstance(v, dict)]
     GITHUB_BASE = "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/"
