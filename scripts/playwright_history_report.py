@@ -32,6 +32,8 @@ def parse_output_file(output_file):
                     "col": int(col_num),
                     "raw": line.strip()
                 })
+            else:
+                print(f"[DEBUG] No match: {line.strip()}")
     print(f"[DEBUG] Total matched results: {len(results)}")
     return results
 
@@ -256,23 +258,19 @@ def update_live_test_status(results):
     return db
 
 def get_current_tests():
-    import glob, re, os
-    current = set()
+    import glob, os
+    current_files = set()
     for path in glob.glob("e2e/*.spec.*[tj]s"):
-        if not os.path.isfile(path):
-            continue
-        with open(path, encoding="utf-8", errors="ignore") as f:
-            text = f.read()
-            # Playwright test titles: test('title', ...) or it('title', ...)
-            for m in re.finditer(r"(?:test|it)\(['\"](.+?)['\"]", text):
-                current.add(f"{path}::{m.group(1)}")
-    return current
+        if os.path.isfile(path):
+            current_files.add(path)
+    return current_files
 
 def write_live_file(db):
-    # Prune deleted tests
-    current_tests = get_current_tests()
-    pruned_db = {k: v for k, v in db.items() if k in current_tests}
-    deleted = [v for k, v in db.items() if k not in current_tests]
+    # Prune deleted tests: keep all results for any present .spec.ts file
+    current_files = get_current_tests()
+    # Only keep entries that are dicts and have a file in current_files
+    pruned_db = {k: v for k, v in db.items() if isinstance(v, dict) and v.get("file") in current_files}
+    deleted = [v for k, v in db.items() if isinstance(v, dict) and v.get("file") not in current_files]
     # Group by file
     from collections import defaultdict
     by_file = defaultdict(list)

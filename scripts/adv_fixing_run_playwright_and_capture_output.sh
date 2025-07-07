@@ -193,6 +193,7 @@ fi
 if [[ "$choice" == "a"* ]]; then
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list | tee "$OUTPUT_FILE"
   print_playwright_summary "$OUTPUT_FILE"
+  python3 scripts/playwright_history_report.py
   sync
   exit 0
 fi
@@ -202,6 +203,7 @@ if [[ "$choice" == "f"* ]]; then
   failed_files=( $(get_failed_test_files) )
   if [[ ${#failed_files[@]} -eq 0 ]]; then
     echo "[INFO] No last-failing test files found in $OUTPUT_FILE."
+    python3 scripts/playwright_history_report.py
     exit 0
   fi
   echo "Choose how to handle failed tests:"
@@ -222,14 +224,17 @@ if [[ "$choice" == "f"* ]]; then
       if [[ ${#failed_lines[@]} -gt 0 ]]; then
         echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
         PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
+        python3 scripts/playwright_history_report.py
         sync
         exit 0
       else
         echo "[INFO] No failing test lines found."
+        python3 scripts/playwright_history_report.py
         exit 0
       fi
     else
       echo "[INFO] No last failing file found."
+      python3 scripts/playwright_history_report.py
       exit 0
     fi
   fi
@@ -241,6 +246,7 @@ if [[ "$choice" == "f"* ]]; then
     else
       echo "[INFO] No failed test found in output."
     fi
+    python3 scripts/playwright_history_report.py
     exit 0
   fi
   if [[ "$failed_mode" == "3" ]]; then
@@ -251,6 +257,7 @@ if [[ "$choice" == "f"* ]]; then
     else
       echo "[INFO] No failed test found in output."
     fi
+    python3 scripts/playwright_history_report.py
     exit 0
   fi
   if [[ "$failed_mode" == "2" ]]; then
@@ -259,6 +266,7 @@ if [[ "$choice" == "f"* ]]; then
     status=$?
     echo "\n[CI SUMMARY]"
     grep -E '^[✓✘]' "$OUTPUT_FILE" || true
+    python3 scripts/playwright_history_report.py
     if [[ $status -ne 0 ]]; then
       echo "[CI] Test failures detected. Exiting with error."
       exit 1
@@ -277,6 +285,7 @@ if [[ "$choice" == "f"* ]]; then
   fi
   echo "[INFO] Running last-failing test files: ${failed_files[*]}"
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" $extra_args "${failed_files[@]}" | tee "$OUTPUT_FILE"
+  python3 scripts/playwright_history_report.py
   exit 0
 fi
 
@@ -286,11 +295,13 @@ if [[ "$choice" == "s"* ]]; then
   read -r selection
   if [[ -z "$selection" ]]; then
     echo "[WARN] No selection entered. Aborting."
+    python3 scripts/playwright_history_report.py
     exit 1
   fi
   echo "[INFO] Running Playwright with selection: $selection"
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list --project="Desktop Chrome" $selection | tee "$OUTPUT_FILE"
   print_playwright_summary "$OUTPUT_FILE"
+  python3 scripts/playwright_history_report.py
   sync
   exit 0
 fi
@@ -346,11 +357,13 @@ if [[ "$choice" == "u"* ]]; then
   done
   if [[ ${#untested_files[@]} -gt 0 ]]; then
     echo "[INFO] Running untested test files: ${untested_files[*]}"
-    PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" "${untested_files[@]}"
+    PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" "${untested_files[@]}" | tee "$OUTPUT_FILE"
+    python3 scripts/playwright_history_report.py
     sync
     exit 0
   else
     echo "[INFO] No untested test files detected."
+    python3 scripts/playwright_history_report.py
     exit 0
   fi
 fi
@@ -358,18 +371,20 @@ fi
 # [update-snapshots] mode
 if [[ "$choice" == "update-snapshots"* ]]; then
   echo "[INFO] Running tests with --update-snapshots."
-  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --update-snapshots --reporter=list --project="Desktop Chrome"
+  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --update-snapshots --reporter=list --project="Desktop Chrome" | tee "$OUTPUT_FILE"
+  python3 scripts/playwright_history_report.py
   sync
   exit 0
 fi
 
 # [coverage] mode
 if [[ "$choice" == "coverage"* ]]; then
-  echo "[DEBUG] COVERAGE=[32m$COVERAGE[0m"
-  echo "[DEBUG] PW_HEADLESS=[32m$PW_HEADLESS_VALUE[0m"
+  echo "[DEBUG] COVERAGE=\033[32m$COVERAGE\033[0m"
+  echo "[DEBUG] PW_HEADLESS=\033[32m$PW_HEADLESS_VALUE\033[0m"
   echo "[INFO] Running tests with code coverage enabled."
   echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
-  COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome"
+  COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" | tee "$OUTPUT_FILE"
+  python3 scripts/playwright_history_report.py
   # Automatically generate HTML coverage report if .nyc_output exists
   if [[ -d ".nyc_output" ]]; then
     echo "[INFO] Generating HTML coverage report..."
@@ -471,4 +486,5 @@ fi
 
 # If no valid option was selected, default to running all tests
 PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list | tee "$OUTPUT_FILE"
+python3 scripts/playwright_history_report.py
 sync
