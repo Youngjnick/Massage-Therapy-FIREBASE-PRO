@@ -1,49 +1,3 @@
-# --- AI Commit Message Generation (OpenAI GPT-4) ---
-# Requires: OPENAI_API_KEY environment variable
-function generate_ai_commit_message() {
-  local diff summary prompt ai_response commit_msg
-  diff=$(git diff --cached)
-  summary=""
-  if [[ -f scripts/test-output.txt ]]; then
-    summary+="$(cat scripts/test-output.txt)\n"
-  fi
-  if [[ -f scripts/playwright-output.txt ]]; then
-    summary+="$(cat scripts/playwright-output.txt)\n"
-  fi
-  prompt="Generate a concise, detailed commit message for the following code changes and test results.\n\nGit diff:\n$diff\n\nTest summary:\n$summary\n"
-  if [[ -z "$OPENAI_API_KEY" ]]; then
-    echo "[AI COMMIT] Skipping AI commit message generation: OPENAI_API_KEY not set."
-    return 1
-  fi
-  echo "[AI COMMIT] Requesting commit message from OpenAI..."
-  ai_response=$(curl -s -X POST https://api.openai.com/v1/chat/completions \
-    -H "Content-Type: application/json" \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -d '{
-      "model": "gpt-4",
-      "messages": [
-        {"role": "system", "content": "You are a helpful assistant that writes clear, professional git commit messages."},
-        {"role": "user", "content": '"$prompt"'}
-      ],
-      "max_tokens": 256,
-      "temperature": 0.2
-    }')
-  commit_msg=$(echo "$ai_response" | grep -o '"content":"[^"]*"' | head -1 | sed 's/"content":"//' | sed 's/\\n/\n/g')
-  if [[ -z "$commit_msg" ]]; then
-    echo "[AI COMMIT] Failed to generate commit message."
-    return 1
-  fi
-  echo "\n--- AI Generated Commit Message ---\n$commit_msg\n-------------------------------"
-  echo "Do you want to use this AI-generated commit message? (y/n): "
-  read use_ai_msg
-  if [[ "$use_ai_msg" == "y" ]]; then
-    AI_COMMIT_MSG="$commit_msg"
-    return 0
-  else
-    return 1
-  fi
-}
-
 #!/bin/zsh
 # sync-all-files-to-branches.sh
 # Usage: ./scripts/sync-all-files-to-branches.sh [--remote remote1 remote2 ...] [--skip-tests] branch1 branch2 ...
@@ -170,42 +124,45 @@ fi
 
 # Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
-  # Build a default summary from test/lint variables if available
-  DEFAULT_SUMMARY=""
-  if [[ -n "$TEST_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$TEST_SUMMARY\n"
-  fi
-  if [[ -n "$PW_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$PW_SUMMARY\n"
-  fi
-  if [[ -n "$TS_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$TS_SUMMARY\n"
-  fi
-  if [[ -n "$ESLINT_SUMMARY" ]]; then
-    DEFAULT_SUMMARY+="$ESLINT_SUMMARY\n"
-  fi
-  echo -e "${YELLOW}Uncommitted changes detected.${NC}"
-  echo -e "\n--- Generated Commit Summary ---\n$DEFAULT_SUMMARY\n-------------------------------"
-  # Offer AI commit message option
-  AI_COMMIT_MSG=""
-  echo "How do you want to commit these changes? (commit/WIP/ai/abort): "
+  # Prompt for a detailed commit summary
+  echo "Enter a detailed commit summary (press Enter to finish, Ctrl+D to end input):"
+  user_summary=""
+  while IFS= read -r line; do
+    user_summary+="$line\n"
+  done
+  # Remove trailing newline
+  user_summary="${user_summary%\\n}"
+  DEFAULT_SUMMARY="$user_summary"
+
+  echo "How do you want to commit these changes? (commit/WIP/abort): "
   read commit_mode
+  # Auto-generate changed files and diffstat info
+  CHANGED_FILES=$(git status --short)
+  DIFF_STAT=$(git diff --cached --stat)
+  COMMIT_AUTOINFO="\n\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
+
   if [[ "$commit_mode" == "abort" ]]; then
     echo "Aborted by user. No changes committed."
     exit 1
   fi
   commit_msg=""
-  if [[ "$commit_mode" == "ai" ]]; then
-    if generate_ai_commit_message; then
-      commit_msg="$AI_COMMIT_MSG"
-    else
-      echo "Falling back to WIP commit message."
-      commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY"
+  if [[ "$commit_mode" == "WIP" || "$commit_mode" == "wip" ]]; then
+    # Gather last known test/lint/type summaries if available
+    WIP_EXTRA="\n[WIP MODE: Tests/lint/type checks skipped]"
+    if [[ -f scripts/eslint-output.txt ]]; then
+      WIP_EXTRA+="\n\n--- Last ESLint Output ---\n$(tail -20 scripts/eslint-output.txt)"
     fi
-    git add -A
-    git commit -m "$commit_msg"
-  elif [[ "$commit_mode" == "WIP" || "$commit_mode" == "wip" ]]; then
-    commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY"
+    if [[ -f scripts/ts-output.txt ]]; then
+      WIP_EXTRA+="\n\n--- Last TypeScript Output ---\n$(tail -20 scripts/ts-output.txt)"
+    fi
+    if [[ -f scripts/test-output.txt ]]; then
+      WIP_EXTRA+="\n\n--- Last Jest Output ---\n$(tail -20 scripts/test-output.txt)"
+    fi
+    if [[ -f scripts/playwright-output.txt ]]; then
+      WIP_EXTRA+="\n\n--- Last Playwright Output ---\n$(tail -20 scripts/playwright-output.txt)"
+    fi
+    commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$WIP_EXTRA$COMMIT_AUTOINFO"
+    SKIP_TESTS=true
     echo "Do you want to edit the WIP commit message? (y/n): "
     read edit_wip_choice
     if [[ "$edit_wip_choice" == "y" ]]; then
@@ -219,6 +176,152 @@ if [[ -n $(git status --porcelain) ]]; then
     git add -A
     git commit -m "$commit_msg"
   elif [[ "$commit_mode" == "commit" ]]; then
+    # Now run tests/lint/type checks and collect stats
+    # --- TEST & LINT SECTION ---
+    # Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
+    # If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
+
+    WIP_MODE=false
+    TEST_SUMMARY=""
+    PW_SUMMARY=""
+
+    if [[ "$SKIP_TESTS" = false ]]; then
+      # 1. ESLint
+      echo "Running ESLint..."
+      npx eslint . | tee scripts/eslint-output.txt
+      if grep -q "error" scripts/eslint-output.txt; then
+        echo -e "${RED}Lint errors detected.${NC}"
+        grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
+          echo -e "${RED}$line${NC}"
+        done
+        echo "What do you want to do? (fix/wip/abort): "
+        read lint_decision
+        if [[ "$lint_decision" == "fix" ]]; then
+          $SHELL
+          exit 1
+        elif [[ "$lint_decision" == "wip" ]]; then
+          WIP_MODE=true
+        else
+          echo "Aborted due to lint errors."
+          exit 1
+        fi
+      fi
+      rm -f scripts/eslint-output.txt
+
+      # 2. TypeScript
+      echo "Running TypeScript type check..."
+      npx tsc --noEmit | tee scripts/ts-output.txt
+      if [[ $? -ne 0 ]]; then
+        echo -e "${RED}TypeScript errors detected.${NC}"
+        grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
+          echo -e "${RED}$line${NC}"
+        done
+        echo "What do you want to do? (fix/wip/abort): "
+        read ts_decision
+        if [[ "$ts_decision" == "fix" ]]; then
+          $SHELL
+          exit 1
+        elif [[ "$ts_decision" == "wip" ]]; then
+          WIP_MODE=true
+        else
+          echo "Aborted due to TypeScript errors."
+          exit 1
+        fi
+      fi
+      rm -f scripts/ts-output.txt
+
+      # 3. Jest
+      echo "Running Jest tests..."
+      npm test -- --reporter=default | tee scripts/test-output.txt
+
+      # Parse Jest output for summary and failing test names
+      TEST_SUMMARY=""
+      if grep -q "failing" scripts/test-output.txt; then
+        # Get summary line (e.g. 'Tests: 2 failed, 38 passed, 40 total')
+        SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+        # Get failing test suite names (e.g. 'FAIL  src/__tests__/SomeTest.test.tsx')
+        FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
+        if [[ -n "$SUMMARY_LINE" ]]; then
+          TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
+        fi
+        echo -e "${RED}Jest tests failed.${NC}"
+        echo "What do you want to do? (fix/wip/abort): "
+        read jest_decision
+        if [[ "$jest_decision" == "fix" ]]; then
+          $SHELL
+          exit 1
+        elif [[ "$jest_decision" == "wip" ]]; then
+          WIP_MODE=true
+        else
+          echo "Aborted due to Jest failures."
+          exit 1
+        fi
+      else
+        # If all tests pass, still include summary
+        SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+        if [[ -n "$SUMMARY_LINE" ]]; then
+          TEST_SUMMARY="$SUMMARY_LINE"
+        fi
+      fi
+      rm -f scripts/test-output.txt
+
+      # 4. Playwright/E2E (always after Jest)
+      if [[ -f playwright.config.ts ]]; then
+        echo "Starting dev server for E2E..."
+        npm run dev > scripts/dev-server-e2e.log 2>&1 &
+        DEV_SERVER_PID=$!
+        sleep 5
+        echo "Running Playwright E2E (advanced script)..."
+        ./scripts/adv_fixing_run_playwright_and_capture_output.sh
+        # Parse Playwright output for summary and failing test names
+        PW_SUMMARY=""
+        # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
+        PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
+        # Get failing test file names (e.g. 'FAIL  e2e/critical-ui-accessibility.spec.ts')
+        PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
+        if [[ -n "$PW_SUMMARY_LINE" ]]; then
+          PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
+          if [[ -n "$PW_FAILING_TESTS" ]]; then
+          fi
+        fi
+        if grep -q "failed" scripts/playwright-output.txt; then
+          echo -e "${RED}Playwright E2E failed.${NC}"
+          echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
+          awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
+          echo "What do you want to do? (fix/wip/abort): "
+          read pw_decision
+          if [[ "$pw_decision" == "fix" ]]; then
+            kill $DEV_SERVER_PID 2>/dev/null
+            $SHELL
+            exit 1
+          elif [[ "$pw_decision" == "wip" ]]; then
+            WIP_MODE=true
+          else
+            kill $DEV_SERVER_PID 2>/dev/null
+            echo "Aborted due to Playwright failures."
+            exit 1
+          fi
+        fi
+        rm -f scripts/playwright-output.txt
+        kill $DEV_SERVER_PID 2>/dev/null
+      fi
+    fi
+
+    # After tests, build the commit message as before, but append the stats and file info
+    COMMIT_EXTRA=""
+    if [[ -n "$TEST_SUMMARY" ]]; then
+      COMMIT_EXTRA+="\n\n--- Jest Summary ---\n$TEST_SUMMARY"
+    fi
+    if [[ -n "$PW_SUMMARY" ]]; then
+      COMMIT_EXTRA+="\n\n--- Playwright Summary ---\n$PW_SUMMARY"
+    fi
+    if [[ -f scripts/eslint-output.txt ]]; then
+      COMMIT_EXTRA+="\n\n--- ESLint Output ---\n$(tail -20 scripts/eslint-output.txt)"
+    fi
+    if [[ -f scripts/ts-output.txt ]]; then
+      COMMIT_EXTRA+="\n\n--- TypeScript Output ---\n$(tail -20 scripts/ts-output.txt)"
+    fi
+    COMMIT_EXTRA+="$COMMIT_AUTOINFO"
     echo "Do you want to edit the commit message? (y/n): "
     read edit_commit_choice
     if [[ "$edit_commit_choice" == "y" ]]; then
@@ -228,7 +331,7 @@ if [[ -n $(git status --porcelain) ]]; then
         commit_msg+="$line\n"
       done
     else
-      commit_msg="$DEFAULT_SUMMARY"
+      commit_msg="$DEFAULT_SUMMARY$COMMIT_EXTRA"
     fi
     git add -A
     git commit -m "$commit_msg"
@@ -240,134 +343,136 @@ else
   echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
 fi
 
-# --- TEST & LINT SECTION ---
-# Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
-# If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
-
-WIP_MODE=false
-TEST_SUMMARY=""
-PW_SUMMARY=""
-
+# Only run tests if not in WIP mode
 if [[ "$SKIP_TESTS" = false ]]; then
-  # 1. ESLint
-  echo "Running ESLint..."
-  npx eslint . | tee scripts/eslint-output.txt
-  if grep -q "error" scripts/eslint-output.txt; then
-    echo -e "${RED}Lint errors detected.${NC}"
-    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
-      echo -e "${RED}$line${NC}"
-    done
-    echo "What do you want to do? (fix/wip/abort): "
-    read lint_decision
-    if [[ "$lint_decision" == "fix" ]]; then
-      $SHELL
-      exit 1
-    elif [[ "$lint_decision" == "wip" ]]; then
-      WIP_MODE=true
-    else
-      echo "Aborted due to lint errors."
-      exit 1
-    fi
-  fi
-  rm -f scripts/eslint-output.txt
+  # --- TEST & LINT SECTION ---
+  # Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
+  # If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
 
-  # 2. TypeScript
-  echo "Running TypeScript type check..."
-  npx tsc --noEmit | tee scripts/ts-output.txt
-  if [[ $? -ne 0 ]]; then
-    echo -e "${RED}TypeScript errors detected.${NC}"
-    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
-      echo -e "${RED}$line${NC}"
-    done
-    echo "What do you want to do? (fix/wip/abort): "
-    read ts_decision
-    if [[ "$ts_decision" == "fix" ]]; then
-      $SHELL
-      exit 1
-    elif [[ "$ts_decision" == "wip" ]]; then
-      WIP_MODE=true
-    else
-      echo "Aborted due to TypeScript errors."
-      exit 1
-    fi
-  fi
-  rm -f scripts/ts-output.txt
-
-  # 3. Jest
-  echo "Running Jest tests..."
-  npm test -- --reporter=default | tee scripts/test-output.txt
-
-  # Parse Jest output for summary and failing test names
+  WIP_MODE=false
   TEST_SUMMARY=""
-  if grep -q "failing" scripts/test-output.txt; then
-    # Get summary line (e.g. 'Tests: 2 failed, 38 passed, 40 total')
-    SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-    # Get failing test suite names (e.g. 'FAIL  src/__tests__/SomeTest.test.tsx')
-    FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
-    if [[ -n "$SUMMARY_LINE" ]]; then
-      TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
-    fi
-    echo -e "${RED}Jest tests failed.${NC}"
-    echo "What do you want to do? (fix/wip/abort): "
-    read jest_decision
-    if [[ "$jest_decision" == "fix" ]]; then
-      $SHELL
-      exit 1
-    elif [[ "$jest_decision" == "wip" ]]; then
-      WIP_MODE=true
-    else
-      echo "Aborted due to Jest failures."
-      exit 1
-    fi
-  else
-    # If all tests pass, still include summary
-    SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-    if [[ -n "$SUMMARY_LINE" ]]; then
-      TEST_SUMMARY="$SUMMARY_LINE"
-    fi
-  fi
-  rm -f scripts/test-output.txt
+  PW_SUMMARY=""
 
-  # 4. Playwright/E2E (always after Jest)
-  if [[ -f playwright.config.ts ]]; then
-    echo "Starting dev server for E2E..."
-    npm run dev > scripts/dev-server-e2e.log 2>&1 &
-    DEV_SERVER_PID=$!
-    sleep 5
-    echo "Running Playwright E2E (advanced script)..."
-    ./scripts/adv_fixing_run_playwright_and_capture_output.sh
-    # Parse Playwright output for summary and failing test names
-    PW_SUMMARY=""
-    # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
-    PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
-    # Get failing test file names (e.g. 'FAIL  e2e/critical-ui-accessibility.spec.ts')
-    PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
-    if [[ -n "$PW_SUMMARY_LINE" ]]; then
-      PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
-      if [[ -n "$PW_FAILING_TESTS" ]]; then
-        PW_SUMMARY="$PW_SUMMARY\nFailing: $PW_FAILING_TESTS"
-      fi
-    fi
-    if grep -q "failed" scripts/playwright-output.txt; then
-      echo -e "${RED}Playwright E2E failed.${NC}"
-      echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
-      awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
+  if [[ "$SKIP_TESTS" = false ]]; then
+    # 1. ESLint
+    echo "Running ESLint..."
+    npx eslint . | tee scripts/eslint-output.txt
+    if grep -q "error" scripts/eslint-output.txt; then
+      echo -e "${RED}Lint errors detected.${NC}"
+      grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
+        echo -e "${RED}$line${NC}"
+      done
       echo "What do you want to do? (fix/wip/abort): "
-      read pw_decision
-      if [[ "$pw_decision" == "fix" ]]; then
-        kill $DEV_SERVER_PID 2>/dev/null
+      read lint_decision
+      if [[ "$lint_decision" == "fix" ]]; then
         $SHELL
         exit 1
-      elif [[ "$pw_decision" == "wip" ]]; then
+      elif [[ "$lint_decision" == "wip" ]]; then
         WIP_MODE=true
       else
-        kill $DEV_SERVER_PID 2>/dev/null
-        echo "Aborted due to Playwright failures."
+        echo "Aborted due to lint errors."
         exit 1
       fi
     fi
-    rm -f scripts/playwright-output.txt
-    kill $DEV_SERVER_PID 2>/dev/null
+    rm -f scripts/eslint-output.txt
+
+    # 2. TypeScript
+    echo "Running TypeScript type check..."
+    npx tsc --noEmit | tee scripts/ts-output.txt
+    if [[ $? -ne 0 ]]; then
+      echo -e "${RED}TypeScript errors detected.${NC}"
+      grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
+        echo -e "${RED}$line${NC}"
+      done
+      echo "What do you want to do? (fix/wip/abort): "
+      read ts_decision
+      if [[ "$ts_decision" == "fix" ]]; then
+        $SHELL
+        exit 1
+      elif [[ "$ts_decision" == "wip" ]]; then
+        WIP_MODE=true
+      else
+        echo "Aborted due to TypeScript errors."
+        exit 1
+      fi
+    fi
+    rm -f scripts/ts-output.txt
+
+    # 3. Jest
+    echo "Running Jest tests..."
+    npm test -- --reporter=default | tee scripts/test-output.txt
+
+    # Parse Jest output for summary and failing test names
+    TEST_SUMMARY=""
+    if grep -q "failing" scripts/test-output.txt; then
+      # Get summary line (e.g. 'Tests: 2 failed, 38 passed, 40 total')
+      SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+      # Get failing test suite names (e.g. 'FAIL  src/__tests__/SomeTest.test.tsx')
+      FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
+      if [[ -n "$SUMMARY_LINE" ]]; then
+        TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
+      fi
+      echo -e "${RED}Jest tests failed.${NC}"
+      echo "What do you want to do? (fix/wip/abort): "
+      read jest_decision
+      if [[ "$jest_decision" == "fix" ]]; then
+        $SHELL
+        exit 1
+      elif [[ "$jest_decision" == "wip" ]]; then
+        WIP_MODE=true
+      else
+        echo "Aborted due to Jest failures."
+        exit 1
+      fi
+    else
+      # If all tests pass, still include summary
+      SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+      if [[ -n "$SUMMARY_LINE" ]]; then
+        TEST_SUMMARY="$SUMMARY_LINE"
+      fi
+    fi
+    rm -f scripts/test-output.txt
+
+    # 4. Playwright/E2E (always after Jest)
+    if [[ -f playwright.config.ts ]]; then
+      echo "Starting dev server for E2E..."
+      npm run dev > scripts/dev-server-e2e.log 2>&1 &
+      DEV_SERVER_PID=$!
+      sleep 5
+      echo "Running Playwright E2E (advanced script)..."
+      ./scripts/adv_fixing_run_playwright_and_capture_output.sh
+      # Parse Playwright output for summary and failing test names
+      PW_SUMMARY=""
+      # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
+      PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
+      # Get failing test file names (e.g. 'FAIL  e2e/critical-ui-accessibility.spec.ts')
+      PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
+      if [[ -n "$PW_SUMMARY_LINE" ]]; then
+        PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
+        if [[ -n "$PW_FAILING_TESTS" ]]; then
+        fi
+      fi
+      if grep -q "failed" scripts/playwright-output.txt; then
+        echo -e "${RED}Playwright E2E failed.${NC}"
+        echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
+        awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
+        echo "What do you want to do? (fix/wip/abort): "
+        read pw_decision
+        if [[ "$pw_decision" == "fix" ]]; then
+          kill $DEV_SERVER_PID 2>/dev/null
+          $SHELL
+          exit 1
+        elif [[ "$pw_decision" == "wip" ]]; then
+          WIP_MODE=true
+        else
+          kill $DEV_SERVER_PID 2>/dev/null
+          echo "Aborted due to Playwright failures."
+          exit 1
+        fi
+      fi
+      rm -f scripts/playwright-output.txt
+      kill $DEV_SERVER_PID 2>/dev/null
+    fi
   fi
 fi
 
