@@ -1,0 +1,461 @@
+{
+  "tests": [
+    {
+      "status": "\u2713",
+      "file": "e2e/stats-persistence-after-reload.spec.ts",
+      "line": 56,
+      "col": 3,
+      "raw": "\u2713  4 [Desktop Chrome] \u203a e2e/stats-persistence-after-reload.spec.ts:56:3 \u203a Stats Persistence After Reload \u203a should persist stats and UI after app reload (10.9s)"
+    },
+    {
+      "status": "\u2718",
+      "file": "e2e/stats-isolation-per-user.spec.ts",
+      "line": 62,
+      "col": 3,
+      "raw": "\u2718  2 [Desktop Chrome] \u203a e2e/stats-isolation-per-user.spec.ts:62:3 \u203a Stats Isolation per User \u203a stats should not leak between users (14.0s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/quiz-stats-live-update.spec.ts",
+      "line": 16,
+      "col": 3,
+      "raw": "\u2713  1 [Desktop Chrome] \u203a e2e/quiz-stats-live-update.spec.ts:16:3 \u203a Quiz Stats Live Update \u203a Stats and topic stats update after quiz completion (17.7s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/stats-persistence.spec.ts",
+      "line": 59,
+      "col": 3,
+      "raw": "\u2713  6 [Desktop Chrome] \u203a e2e/stats-persistence.spec.ts:59:3 \u203a Stats Persistence \u203a should persist updated stats after quiz and reload (9.8s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/stats-topic-breakdown.spec.ts",
+      "line": 22,
+      "col": 3,
+      "raw": "\u2713  8 [Desktop Chrome] \u203a e2e/stats-topic-breakdown.spec.ts:22:3 \u203a Stats Topic Breakdown \u203a should increment topic breakdown after quiz in specific topic (6.6s)"
+    },
+    {
+      "status": "\u2718",
+      "file": "e2e/stats-critical-flows.spec.ts",
+      "line": 53,
+      "col": 3,
+      "raw": "\u2718  3 [Desktop Chrome] \u203a e2e/stats-critical-flows.spec.ts:53:3 \u203a Stats Critical Flows \u203a should increment Quizzes Taken after each quiz (30.3s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/stats-isolation-per-user.spec.ts",
+      "line": 62,
+      "col": 3,
+      "raw": "\u2713  7 [Desktop Chrome] \u203a e2e/stats-isolation-per-user.spec.ts:62:3 \u203a Stats Isolation per User \u203a stats should not leak between users (retry #1) (17.8s)"
+    },
+    {
+      "status": "\u2718",
+      "file": "e2e/stats-critical-flows.spec.ts",
+      "line": 53,
+      "col": 3,
+      "raw": "\u2718  9 [Desktop Chrome] \u203a e2e/stats-critical-flows.spec.ts:53:3 \u203a Stats Critical Flows \u203a should increment Quizzes Taken after each quiz (retry #1) (30.3s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/stats-critical-flows.spec.ts",
+      "line": 171,
+      "col": 3,
+      "raw": "\u2713  10 [Desktop Chrome] \u203a e2e/stats-critical-flows.spec.ts:171:3 \u203a Stats Critical Flows \u203a should allow early quiz completion with Finish (aria-label finish early) and show results (3.5s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/stats-critical-flows.spec.ts",
+      "line": 193,
+      "col": 3,
+      "raw": "\u2713  11 [Desktop Chrome] \u203a e2e/stats-critical-flows.spec.ts:193:3 \u203a Stats Critical Flows \u203a should submit a completed quiz with Finish (aria-label finish quiz) and show results (4.3s)"
+    }
+  ],
+  "errors": {},
+  "sequences": {
+    "e2e/all-interactive-aria-accessibility.spec.ts:36:5": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app-accessibility-full.spec.ts:45:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app-accessibility-full.spec.ts:94:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app-accessibility-full.spec.ts:119:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:42:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:152:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:215:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:276:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:302:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:312:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:330:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/app.spec.ts:388:1": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/aria-roles-labels.spec.ts:39:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/aria-roles-labels.spec.ts:118:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/assets-troubleshoot.spec.ts:24:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/assets-troubleshoot.spec.ts:30:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/assets-troubleshoot.spec.ts:58:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/auth-session-persistence.spec.ts:19:3": [
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/quiz-stats-live-update.spec.ts:16:3": [
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/stats-critical-flows.spec.ts:53:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/stats-isolation-per-user.spec.ts:62:3": [
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718",
+      "\u2718"
+    ],
+    "e2e/quiz-firestore-verification.spec.ts:38:3": [
+      "\u2718"
+    ],
+    "e2e/stats-persistence-after-reload.spec.ts:56:3": [
+      "\u2718"
+    ]
+  },
+  "trend": [
+    {
+      "date": "2025-07-06 18:10:45",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:10:47",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 0
+    },
+    {
+      "date": "2025-07-06 18:32:39",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:32:41",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:45:42",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:46:48",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:49:56",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:51:31",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:51:31",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:52:37",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:52:38",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:59:47",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 18:59:47",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:04:00",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:04:01",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:07:55",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:07:55",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:09:44",
+      "total": 165,
+      "passed": 157,
+      "failed": 8,
+      "flaky": 2,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:09:45",
+      "total": 165,
+      "passed": 157,
+      "failed": 8,
+      "flaky": 2,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:11:57",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:11:57",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:13:01",
+      "total": 10,
+      "passed": 7,
+      "failed": 3,
+      "flaky": 1,
+      "skipped": 0,
+      "deleted": 2
+    },
+    {
+      "date": "2025-07-06 19:13:02",
+      "total": 10,
+      "passed": 7,
+      "failed": 3,
+      "flaky": 1,
+      "skipped": 0,
+      "deleted": 2
+    }
+  ]
+}
