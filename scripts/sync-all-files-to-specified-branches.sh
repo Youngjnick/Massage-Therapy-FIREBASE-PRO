@@ -235,7 +235,28 @@ if [[ -n $(git status --porcelain) ]]; then
   fi
   commit_msg="$TITLE\n"
   commit_msg+="\n--- Summary ---\n$SUMMARY_OVERVIEW\n"
-  commit_msg+="\n--- Changed Files ---\n$CHANGED_FILES\n"
+  # --- Purpose Section (dynamic) ---
+  PURPOSE_MSG=""
+  if [[ -n "$SCRIPTS_LIST" && -n "$LOGS_LIST" ]]; then
+    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Synchronized automation script ($SCRIPTS_FILES) and updated log file ($LOGS_FILES) to maintain up-to-date automation and accurate history."
+  elif [[ -n "$SCRIPTS_LIST" ]]; then
+    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Updated automation script ($SCRIPTS_FILES) to improve project workflow."
+  elif [[ -n "$LOGS_LIST" ]]; then
+    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Archived recent log activity ($LOGS_FILES) for traceability."
+  elif [[ -n "$OTHER_LIST" ]]; then
+    OTHER_FILES=$(echo "$OTHER_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    PURPOSE_MSG="Updated project files ($OTHER_FILES) as part of routine maintenance."
+  else
+    PURPOSE_MSG="Project sync and maintenance."
+  fi
+  commit_msg+="\n--- Purpose ---\n$PURPOSE_MSG"
+
+  # --- Changed Files Section ---
+  commit_msg+="\n\n--- Changed Files ---\n$CHANGED_FILES\n"
   # --- Diff Summary Section ---
   # Prefix each diffstat line with a dash (no space), preserve alignment, and add a blank line before the summary
   DIFF_STAT_DASHED=""
@@ -257,35 +278,12 @@ if [[ -n $(git status --porcelain) ]]; then
   fi
 
   # --- Purpose Section (dynamic) ---
-  PURPOSE_MSG=""
-  if [[ -n "$SCRIPTS_LIST" && -n "$LOGS_LIST" ]]; then
-    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Synchronized automation script ($SCRIPTS_FILES) and updated log file ($LOGS_FILES) to maintain up-to-date automation and accurate history."
-  elif [[ -n "$SCRIPTS_LIST" ]]; then
-    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Updated automation script ($SCRIPTS_FILES) to improve project workflow."
-  elif [[ -n "$LOGS_LIST" ]]; then
-    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Archived recent log activity ($LOGS_FILES) for traceability."
-  elif [[ -n "$OTHER_LIST" ]]; then
-    OTHER_FILES=$(echo "$OTHER_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Updated project files ($OTHER_FILES) as part of routine maintenance."
-  else
-    PURPOSE_MSG="Project sync and maintenance."
-  fi
-  commit_msg+="\n\n--- Purpose ---\n$PURPOSE_MSG"
-
-  # --- Timestamp ---
-  commit_msg+="\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
-
-  # --- Test Results Section ---
+  # --- Purpose Section (dynamic) ---
   if [[ "$SKIP_TESTS" = true ]]; then
-    commit_msg+="\n\n--- Test Results ---\nTests skipped."
+    commit_msg+="\n--- Test Results ---\nTests skipped."
   fi
-
-  # --- Reviewer Notes Section ---
-  commit_msg+="\n\n--- Reviewer Notes ---\nNo manual testing required; automation only."
+  commit_msg+="\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')\n"
+  commit_msg+="\n--- Reviewer Notes ---\nNo manual testing required; automation only."
   # Show the preview in the terminal
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
