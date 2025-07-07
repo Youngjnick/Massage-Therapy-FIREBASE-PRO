@@ -2,38 +2,87 @@
   "tests": [
     {
       "status": "\u2713",
-      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
-      "line": 36,
+      "file": "e2e/basic-navigation.spec.ts",
+      "line": 13,
       "col": 5,
-      "raw": "\u2713  2 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on / have accessible names and ARIA roles @fast (6.0s)"
+      "raw": "\u2713  1 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to / (1.1s)"
     },
     {
       "status": "\u2713",
-      "file": "e2e/app-accessibility-full.spec.ts",
-      "line": 45,
-      "col": 3,
-      "raw": "\u2713  1 [Desktop Chrome] \u203a e2e/app-accessibility-full.spec.ts:45:3 \u203a App Accessibility: Full Tab Order and ARIA Audit \u203a Tab through all main pages and assert focus order/visibility (9.1s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/app-accessibility-full.spec.ts",
-      "line": 94,
-      "col": 3,
-      "raw": "\u2713  6 [Desktop Chrome] \u203a e2e/app-accessibility-full.spec.ts:94:3 \u203a App Accessibility: Full Tab Order and ARIA Audit \u203a No missing or duplicate ARIA labels/roles on main interactive elements (332ms)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
-      "line": 36,
+      "file": "e2e/basic-navigation.spec.ts",
+      "line": 13,
       "col": 5,
-      "raw": "\u2713  5 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)"
+      "raw": "\u2713  5 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to /quiz (332ms)"
     },
     {
       "status": "\u2713",
-      "file": "e2e/app.spec.ts",
-      "line": 42,
-      "col": 1,
-      "raw": "\u2713  3 [Desktop Chrome] \u203a e2e/app.spec.ts:42:1 \u203a should reset quiz and focus first option after restart (10.0s)"
+      "file": "e2e/basic-navigation.spec.ts",
+      "line": 13,
+      "col": 5,
+      "raw": "\u2713  6 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to /analytics (261ms)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/basic-navigation.spec.ts",
+      "line": 13,
+      "col": 5,
+      "raw": "\u2713  7 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to /profile (367ms)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/navigation-aria-flow.spec.ts",
+      "line": 39,
+      "col": 5,
+      "raw": "\u2713  4 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page / has correct ARIA roles and keyboard navigation (4.3s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/quiz-keyboard-navigation.spec.ts",
+      "line": 33,
+      "col": 3,
+      "raw": "\u2713  2 [Desktop Chrome] \u203a e2e/quiz-keyboard-navigation.spec.ts:33:3 \u203a Quiz keyboard navigation \u203a ArrowDown/ArrowUp do not select or submit answers (5.9s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/keyboard-navigation-and-restart.spec.ts",
+      "line": 23,
+      "col": 3,
+      "raw": "\u2713  3 [Desktop Chrome] \u203a e2e/keyboard-navigation-and-restart.spec.ts:23:3 \u203a Keyboard-Only Navigation and Quiz Restart \u203a Complete a quiz using direct element selection/clicks (6.5s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/navigation-aria-flow.spec.ts",
+      "line": 39,
+      "col": 5,
+      "raw": "\u2713  8 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page /quiz has correct ARIA roles and keyboard navigation (3.9s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/quiz-keyboard-navigation.spec.ts",
+      "line": 64,
+      "col": 3,
+      "raw": "\u2713  9 [Desktop Chrome] \u203a e2e/quiz-keyboard-navigation.spec.ts:64:3 \u203a Quiz keyboard navigation \u203a Enter/Space select and submit, Arrow keys do not (4.8s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/keyboard-navigation-and-restart.spec.ts",
+      "line": 64,
+      "col": 3,
+      "raw": "\u2713  10 [Desktop Chrome] \u203a e2e/keyboard-navigation-and-restart.spec.ts:64:3 \u203a Keyboard-Only Navigation and Quiz Restart \u203a Quiz restart resets all state and focus (4.6s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/navigation-aria-flow.spec.ts",
+      "line": 39,
+      "col": 5,
+      "raw": "\u2713  11 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page /analytics has correct ARIA roles and keyboard navigation (3.2s)"
+    },
+    {
+      "status": "\u2713",
+      "file": "e2e/navigation-aria-flow.spec.ts",
+      "line": 39,
+      "col": 5,
+      "raw": "\u2713  12 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page /profile has correct ARIA roles and keyboard navigation (2.9s)"
     }
   ],
   "errors": {},
@@ -574,47 +623,90 @@
       "total": 5,
       "passed": 5,
       "failed": 0
+    },
+    {
+      "date": "2025-07-07 08:18:21",
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-07 08:18:22",
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    {
+      "date": "2025-07-07 08:21:24",
+      "total": 12,
+      "passed": 12,
+      "failed": 0
     }
   ],
-  "e2e/all-interactive-aria-accessibility.spec.ts:36:5": {
-    "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+  "e2e/basic-navigation.spec.ts:13:5": {
+    "file": "e2e/basic-navigation.spec.ts",
     "title": "",
-    "location": "e2e/all-interactive-aria-accessibility.spec.ts:36:5",
+    "location": "e2e/basic-navigation.spec.ts:13:5",
     "history": [
+      "\u2713",
+      "\u2713",
       "\u2713",
       "\u2713"
     ],
     "last_status": "\u2713",
-    "last_time": "2025-07-06 22:11:30"
+    "last_time": "2025-07-07 08:21:24"
   },
-  "e2e/app-accessibility-full.spec.ts:45:3": {
-    "file": "e2e/app-accessibility-full.spec.ts",
+  "e2e/navigation-aria-flow.spec.ts:39:5": {
+    "file": "e2e/navigation-aria-flow.spec.ts",
     "title": "",
-    "location": "e2e/app-accessibility-full.spec.ts:45:3",
+    "location": "e2e/navigation-aria-flow.spec.ts:39:5",
+    "history": [
+      "\u2713",
+      "\u2713",
+      "\u2713",
+      "\u2713"
+    ],
+    "last_status": "\u2713",
+    "last_time": "2025-07-07 08:21:24"
+  },
+  "e2e/quiz-keyboard-navigation.spec.ts:33:3": {
+    "file": "e2e/quiz-keyboard-navigation.spec.ts",
+    "title": "",
+    "location": "e2e/quiz-keyboard-navigation.spec.ts:33:3",
     "history": [
       "\u2713"
     ],
     "last_status": "\u2713",
-    "last_time": "2025-07-06 22:11:30"
+    "last_time": "2025-07-07 08:21:24"
   },
-  "e2e/app-accessibility-full.spec.ts:94:3": {
-    "file": "e2e/app-accessibility-full.spec.ts",
+  "e2e/keyboard-navigation-and-restart.spec.ts:23:3": {
+    "file": "e2e/keyboard-navigation-and-restart.spec.ts",
     "title": "",
-    "location": "e2e/app-accessibility-full.spec.ts:94:3",
+    "location": "e2e/keyboard-navigation-and-restart.spec.ts:23:3",
     "history": [
       "\u2713"
     ],
     "last_status": "\u2713",
-    "last_time": "2025-07-06 22:11:30"
+    "last_time": "2025-07-07 08:21:24"
   },
-  "e2e/app.spec.ts:42:1": {
-    "file": "e2e/app.spec.ts",
+  "e2e/quiz-keyboard-navigation.spec.ts:64:3": {
+    "file": "e2e/quiz-keyboard-navigation.spec.ts",
     "title": "",
-    "location": "e2e/app.spec.ts:42:1",
+    "location": "e2e/quiz-keyboard-navigation.spec.ts:64:3",
     "history": [
       "\u2713"
     ],
     "last_status": "\u2713",
-    "last_time": "2025-07-06 22:11:30"
+    "last_time": "2025-07-07 08:21:24"
+  },
+  "e2e/keyboard-navigation-and-restart.spec.ts:64:3": {
+    "file": "e2e/keyboard-navigation-and-restart.spec.ts",
+    "title": "",
+    "location": "e2e/keyboard-navigation-and-restart.spec.ts:64:3",
+    "history": [
+      "\u2713"
+    ],
+    "last_status": "\u2713",
+    "last_time": "2025-07-07 08:21:24"
   }
 }

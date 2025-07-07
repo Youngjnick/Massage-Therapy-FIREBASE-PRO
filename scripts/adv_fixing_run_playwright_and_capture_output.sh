@@ -41,6 +41,25 @@ get_failed_test_files() {
   fi
 }
 
+# Function to print color-coded summary from output file
+print_playwright_summary() {
+  local output_file="$1"
+  local passed failed flaky total
+  passed=$(grep -E '^✓' "$output_file" | wc -l | xargs)
+  failed=$(grep -E '^✘' "$output_file" | wc -l | xargs)
+  flaky=$(grep -E '\[flaky\]' "$output_file" | wc -l | xargs)
+  total=$((passed + failed))
+  GREEN='\033[32m'
+  RED='\033[31m'
+  YELLOW='\033[33m'
+  NC='\033[0m'
+  printf "\n[SUMMARY] %b%d passed%b, %b%d failed%b, %b%d flaky%b, %d total\n" \
+    "$GREEN" "$passed" "$NC" \
+    "$RED" "$failed" "$NC" \
+    "$YELLOW" "$flaky" "$NC" \
+    "$total"
+}
+
 # 1. Check for Playwright installation
 if ! command -v npx &>/dev/null || ! npx --no-install playwright --version &>/dev/null; then
   echo "[ERROR] Playwright is not installed. Please run: npm install --save-dev @playwright/test"
@@ -173,6 +192,7 @@ fi
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list | tee "$OUTPUT_FILE"
+  print_playwright_summary "$OUTPUT_FILE"
   sync
   exit 0
 fi
@@ -257,6 +277,21 @@ if [[ "$choice" == "f"* ]]; then
   fi
   echo "[INFO] Running last-failing test files: ${failed_files[*]}"
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" $extra_args "${failed_files[@]}" | tee "$OUTPUT_FILE"
+  exit 0
+fi
+
+# [s]elect mode: prompt for file/pattern/tag/description and run
+if [[ "$choice" == "s"* ]]; then
+  echo "\nEnter file name, pattern, tag, or description to run (e.g. e2e/quiz*.spec.ts, @fast, or test name):"
+  read -r selection
+  if [[ -z "$selection" ]]; then
+    echo "[WARN] No selection entered. Aborting."
+    exit 1
+  fi
+  echo "[INFO] Running Playwright with selection: $selection"
+  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list --project="Desktop Chrome" $selection | tee "$OUTPUT_FILE"
+  print_playwright_summary "$OUTPUT_FILE"
+  sync
   exit 0
 fi
 
