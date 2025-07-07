@@ -122,6 +122,86 @@ fi
 
 # --- ALWAYS COMMIT ALL CHANGES BEFORE SYNC ---
 
+show_stash_and_precommit_summary() {
+  # --- ENHANCED PRE-COMMIT SUMMARY ---
+  PRECOMMIT_SUMMARY=""
+
+  # 1. Show last 1-3 commit messages
+  printf "\n\033[1;34m==== Last 3 commit messages ====\033[0m\n"
+  git log -3 --oneline --decorate --color=always | tee >(cat >> "$LOG_FILE")
+  PRECOMMIT_SUMMARY+="==== Last 3 commit messages ===="
+  PRECOMMIT_SUMMARY+="\n$(git log -3 --oneline --decorate)\n"
+
+  # 2. Show last lint/type/test/E2E status (colorized, with error/warning counts)
+  LINT_SUMMARY=""
+  TS_SUMMARY=""
+  JEST_SUMMARY=""
+  PW_SUMMARY=""
+  GREEN='\033[32m'
+  RED='\033[31m'
+  YELLOW='\033[33m'
+  NC='\033[0m'
+  if [[ -f scripts/eslint-output.txt ]]; then
+    ERRORS=$(grep -c 'error' scripts/eslint-output.txt)
+    WARNINGS=$(grep -c 'warning' scripts/eslint-output.txt)
+    if [[ $ERRORS -gt 0 ]]; then
+      LINT_SUMMARY="${RED}Lint: $ERRORS errors, $WARNINGS warnings${NC}"
+    elif [[ $WARNINGS -gt 0 ]]; then
+      LINT_SUMMARY="${YELLOW}Lint: 0 errors, $WARNINGS warnings${NC}"
+    else
+      LINT_SUMMARY="${GREEN}Lint: 0 errors, 0 warnings${NC}"
+    fi
+  fi
+  if [[ -f scripts/ts-output.txt ]]; then
+    ERRORS=$(grep -c 'error TS' scripts/ts-output.txt)
+    if [[ $ERRORS -gt 0 ]]; then
+      TS_SUMMARY="${RED}Type: $ERRORS errors${NC}"
+    else
+      TS_SUMMARY="${GREEN}Type: 0 errors${NC}"
+    fi
+  fi
+  if [[ -f scripts/test-output.txt ]]; then
+    FAILS=$(grep -E '^Tests:' scripts/test-output.txt | grep -o '[0-9]* failed' | awk '{s+=$1} END {print s+0}')
+    if [[ $FAILS -gt 0 ]]; then
+      JEST_SUMMARY="${RED}Jest: $FAILS failed${NC}"
+    else
+      JEST_SUMMARY="${GREEN}Jest: 0 failed${NC}"
+    fi
+  fi
+  if [[ -f scripts/playwright-output.txt ]]; then
+    PW_FAILS=$(grep -Eo '[0-9]+ failed' scripts/playwright-output.txt | awk '{s+=$1} END {print s+0}')
+    if [[ $PW_FAILS -gt 0 ]]; then
+      PW_SUMMARY="${RED}E2E: $PW_FAILS failed${NC}"
+    else
+      PW_SUMMARY="${GREEN}E2E: 0 failed${NC}"
+    fi
+  fi
+  printf "\n\033[1;34m==== Last Lint/Type/Test/E2E Status ====\033[0m\n"
+  echo "$LINT_SUMMARY"
+  echo "$TS_SUMMARY"
+  echo "$JEST_SUMMARY"
+  echo "$PW_SUMMARY"
+  PRECOMMIT_SUMMARY+="==== Last Lint/Type/Test/E2E Status ===="
+  PRECOMMIT_SUMMARY+="\n$LINT_SUMMARY\n$TS_SUMMARY\n$JEST_SUMMARY\n$PW_SUMMARY\n"
+
+  # 3. Warn if uncommitted changes in other branches, offer to stash/pop
+  if [[ -n $(git stash list) ]]; then
+    printf '\n\033[1;33mWARNING: You have stashed (uncommitted) changes in other branches!\033[0m\n'
+    git stash list | tee >(cat >> "$LOG_FILE")
+    PRECOMMIT_SUMMARY+="WARNING: You have stashed (uncommitted) changes in other branches!\n$(git stash list)\n"
+    echo "Do you want to pop a stash now? (y/n): "
+    read pop_stash
+    if [[ "$pop_stash" == "y" ]]; then
+      git stash list
+      echo "Enter the stash number to pop (e.g., 0 for the top stash), or leave blank to skip:"
+      read stash_num
+      if [[ -n "$stash_num" ]]; then
+        git stash pop stash@{$stash_num}
+      fi
+    fi
+  fi
+}
+
 # Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
   # Remove prompt for a detailed commit summary
@@ -172,7 +252,9 @@ if [[ -n $(git status --porcelain) ]]; then
     if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
       open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
     fi
-    continue
+    show_stash_and_precommit_summary
+    # No continue here; just return to main flow
+    return
   fi
   commit_msg="sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$COMMIT_AUTOINFO"
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
@@ -191,8 +273,10 @@ if [[ -n $(git status --porcelain) ]]; then
   if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
     open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
   fi
+  show_stash_and_precommit_summary
 else
   echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
+  show_stash_and_precommit_summary
 fi
 
 # Only run tests if not in WIP mode
@@ -330,8 +414,7 @@ fi
 
 # --- ENHANCED PRE-COMMIT SUMMARY ---
 
-PRECOMMIT_SUMMARY=""
-
+show_precommit_summary_and_stash_prompt() {
 # 1. Show last 1-3 commit messages
 printf "\n\033[1;34m==== Last 3 commit messages ====\033[0m\n"
 git log -3 --oneline --decorate --color=always | tee >(cat >> "$LOG_FILE")
