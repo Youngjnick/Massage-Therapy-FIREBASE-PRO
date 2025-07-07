@@ -202,7 +202,7 @@ if [[ -n $(git status --porcelain) ]]; then
   # Use unstaged diff for preview so user always sees all changes
   DIFF_STAT=$(git diff --stat)
   commit_msg=""
-  # Build the commit message in the exact format for both preview and GitHub
+  # Build commit message in the exact format for both preview and GitHub
   # --- Summary Section ---
   SUMMARY_OVERVIEW=""
   CHANGED_COUNT=$(echo "$CHANGED_FILES" | grep -c '^')
@@ -220,21 +220,40 @@ if [[ -n $(git status --porcelain) ]]; then
   if echo "$CHANGED_FILES" | grep -q 'scripts/'; then
     SUMMARY_OVERVIEW+="- Improved sync or automation scripts."
   fi
-  # --- Commit Message Header ---
+
+  # --- Commit Message Title ---
+  # Build a descriptive, purpose-driven title
+  TITLE="Sync project files: updated scripts and logs"
   if [[ "$SKIP_TESTS" = true ]]; then
-    commit_msg="WIP: Tests/lint/type checks skipped\n"
-  else
-    commit_msg="Auto-commit before sync-all-files-to-specified-branches.sh\n"
+    TITLE+=" (tests/lint/type checks skipped)"
   fi
+  if [[ "$COMMIT_MODE" == "wip" ]]; then
+    TITLE="WIP: $TITLE"
+  elif [[ "$COMMIT_MODE" == "commit" ]]; then
+    TITLE="Commit: $TITLE"
+  fi
+  commit_msg="$TITLE\n"
   commit_msg+="\n--- Summary ---\n$SUMMARY_OVERVIEW\n"
   commit_msg+="\n--- Changed Files ---\n$CHANGED_FILES\n"
   # --- Diff Summary Section ---
-  # Prefix each diffstat line with a dash and a space, and preserve alignment
+  # Prefix each diffstat line with a dash (no space), preserve alignment, and add a blank line before the summary
   DIFF_STAT_DASHED=""
+  DIFF_STAT_SUMMARY=""
   while IFS= read -r line; do
-    [[ -n "$line" ]] && DIFF_STAT_DASHED+=" -$line\n"
+    if [[ "$line" =~ files?\ changed ]]; then
+      DIFF_STAT_SUMMARY="$line"
+    elif [[ -n "$line" ]]; then
+      DIFF_STAT_DASHED+="-$line\n"
+    fi
   done <<< "$DIFF_STAT"
-  commit_msg+="\n--- Diff Summary ---\n${DIFF_STAT_DASHED%\\n}"
+  if [[ -n "$DIFF_STAT_DASHED" ]]; then
+    commit_msg+="\n--- Diff Summary ---\n${DIFF_STAT_DASHED%\\n}\n"
+  else
+    commit_msg+="\n--- Diff Summary ---\n"
+  fi
+  if [[ -n "$DIFF_STAT_SUMMARY" ]]; then
+    commit_msg+="\n$DIFF_STAT_SUMMARY"
+  fi
   # Show the preview in the terminal
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
@@ -416,6 +435,11 @@ for target in $all_targets; do
     echo "Skipping invalid target: $target"
     continue
   fi
+  # Progress indicator before syncing
+  echo -e "\n\033[1;33m[INFO] Preparing to sync all files to $remote/$branch...\033[0m"
+  sleep 0.5
+  echo -ne "[INFO] Setting up worktree and copying files... "
+  # The next echo will overwrite this line
   echo -e "\n--- Syncing all files to $remote/$branch ---"
   echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
 
