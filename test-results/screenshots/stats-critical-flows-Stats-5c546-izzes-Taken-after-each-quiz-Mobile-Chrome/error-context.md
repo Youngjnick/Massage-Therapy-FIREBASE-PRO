@@ -25,7 +25,7 @@
 - main:
   - heading "Analytics" [level=1]
   - strong: "Quizzes Taken:"
-  - text: "3"
+  - text: "1"
   - strong: "Correct Answers:"
   - text: 1 / 1
   - strong: "Accuracy:"
@@ -35,7 +35,7 @@
   - strong: "Badges Earned:"
   - text: "0"
   - heading "Topic Breakdown" [level=3]
-  - button "View details and actions for Z Lines": Z Lines 2 / 2
+  - button "View details and actions for Z Lines": Z Lines 1 / 2
   - button "View details and actions for Abdominal Muscle Origins": Abdominal Muscle Origins 1 / 1
   - heading "Quiz Activity (Last 14 Days)" [level=3]
 - contentinfo:
