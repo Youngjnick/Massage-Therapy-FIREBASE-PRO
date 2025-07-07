@@ -5,10 +5,13 @@ import datetime
 from pathlib import Path
 import json
 import html as html_escape_mod
+import os
 
 OUTPUT_FILE = Path("scripts/playwright-output.txt")
 HISTORY_FILE = Path("scripts/playwright-output-history.txt")
 HTML_FILE = Path("playwright-history.html")
+LIVE_FILE = Path("scripts/playwright-history-live.txt")
+JSON_FILE = Path("playwright-history.json")
 
 def parse_output_file(output_file):
     results = []
@@ -230,6 +233,113 @@ def export_json_history(results, errors, sequences, run_stats):
     with open("playwright-history.json", "w", encoding="utf-8") as f:
         json.dump(export, f, indent=2)
 
+# Helper: update the persistent test status/history JSON
+def update_live_test_status(results):
+    # Load or create the persistent JSON
+    if JSON_FILE.exists():
+        with open(JSON_FILE, encoding="utf-8") as f:
+            db = json.load(f)
+    else:
+        db = {}
+    # Update each test's status and history
+    for r in results:
+        loc = f'{r["file"]}:{r["line"]}:{r["col"]}'
+        key = f'{r["file"]}::{r["title"]}' if "title" in r else loc
+        entry = db.get(key, {"file": r["file"], "title": r.get("title", ""), "location": loc, "history": [], "last_status": "", "last_time": ""})
+        entry["last_status"] = r["status"]
+        entry["last_time"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        entry["history"] = (entry.get("history") or [])[-9:] + [r["status"]]
+        db[key] = entry
+    # Save back
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(db, f, indent=2)
+    return db
+
+def get_current_tests():
+    import glob, re, os
+    current = set()
+    for path in glob.glob("e2e/*.spec.*[tj]s"):
+        if not os.path.isfile(path):
+            continue
+        with open(path, encoding="utf-8", errors="ignore") as f:
+            text = f.read()
+            # Playwright test titles: test('title', ...) or it('title', ...)
+            for m in re.finditer(r"(?:test|it)\(['\"](.+?)['\"]", text):
+                current.add(f"{path}::{m.group(1)}")
+    return current
+
+def write_live_file(db):
+    # Prune deleted tests
+    current_tests = get_current_tests()
+    pruned_db = {k: v for k, v in db.items() if k in current_tests}
+    deleted = [v for k, v in db.items() if k not in current_tests]
+    # Group by file
+    from collections import defaultdict
+    by_file = defaultdict(list)
+    for entry in pruned_db.values():
+        by_file[entry["file"]].append(entry)
+    lines = [f"# Playwright E2E Test Status (as of {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})\n"]
+    flaky = []
+    failing = []
+    passing = []
+    skipped = []
+    for file, tests in sorted(by_file.items()):
+        lines.append(f"{file}")
+        for t in sorted(tests, key=lambda x: x.get("title", x["location"])):
+            hist = ''.join(t["history"])
+            status = t["last_status"]
+            mark = "✓" if status == "✓" else ("✘" if status == "✘" else "-")
+            is_flaky = ("✓" in t["history"] and "✘" in t["history"])
+            if is_flaky:
+                flaky.append((file, t))
+            if status == "✘":
+                failing.append((file, t))
+            elif status == "✓":
+                passing.append((file, t))
+            elif status == "-":
+                skipped.append((file, t))
+            lines.append(f"  {mark} {t.get('title', t['location'])}   [{hist}]" + ("  [flaky]" if is_flaky else ""))
+        lines.append("")
+    # Longest streaks
+    def streak(history, val):
+        s = 0
+        for x in reversed(history):
+            if x == val:
+                s += 1
+            else:
+                break
+        return s
+    longest_pass = max(pruned_db.values(), key=lambda t: streak(t["history"], "✓"), default=None)
+    longest_fail = max(pruned_db.values(), key=lambda t: streak(t["history"], "✘"), default=None)
+    # Summary
+    lines.append(f"Summary: Total: {len(pruned_db)}  Passing: {len(passing)}  Failing: {len(failing)}  Flaky: {len(flaky)}  Skipped: {len(skipped)}  Deleted: {len(deleted)}\n")
+    if longest_pass:
+        lines.append(f"Longest passing streak: {longest_pass['file']}: {longest_pass.get('title', longest_pass['location'])} ({streak(longest_pass['history'], '✓')})")
+    if longest_fail:
+        lines.append(f"Longest failing streak: {longest_fail['file']}: {longest_fail.get('title', longest_fail['location'])} ({streak(longest_fail['history'], '✘')})")
+    if flaky:
+        lines.append("\nFlaky tests:")
+        for file, t in flaky:
+            lines.append(f"  {file}: {t.get('title', t['location'])}  [{''.join(t['history'])}]")
+    if failing:
+        lines.append("\nFailing tests:")
+        for file, t in failing:
+            lines.append(f"  {file}: {t.get('title', t['location'])}  [last: {t['last_status']}]")
+    if deleted:
+        lines.append("\nRecently deleted tests:")
+        for t in deleted:
+            if isinstance(t, dict):
+                file = t.get('file', '?')
+                title = t.get('title', t.get('location', '?'))
+                last_time = t.get('last_time', '?')
+                # Skip if both file and title/location are missing or empty
+                if (not file or file == '?') and (not title or title == '?'):
+                    continue
+                lines.append(f"  {file}: {title} (last seen: {last_time})")
+    with open(LIVE_FILE, "w", encoding="utf-8") as f:
+        f.write('\n'.join(lines))
+
+# Patch main to update live file after each run
 def main():
     if not OUTPUT_FILE.exists():
         print(f"[WARN] {OUTPUT_FILE} does not exist.")
@@ -258,6 +368,10 @@ def main():
     export_json_history(results, errors, sequences, run_stats)
     generate_html_report_advanced(results, errors, sequences)
     print(f"[INFO] HTML and JSON reports updated.")
+    # --- NEW: update live file ---
+    db = update_live_test_status(results)
+    write_live_file(db)
+    print(f"[INFO] Live test status written to {LIVE_FILE}.")
 
 if __name__ == "__main__":
     main()

@@ -21181,3 +21181,1141 @@ Running in emulator mode. Do not use with production credentials.
   155 passed (4.1m)
 
 --- End of Output ---
+
+===== 2025-07-06 20:33:27 =====
+Total: 15
+Passed: 15
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-3tvxscgo@gmail.com created successfully. UID: bTKpitdpVRAfUMYl3Bd27oVbU4J8
+Firestore user doc created for testuserc-3tvxscgo@gmail.com (uid: bTKpitdpVRAfUMYl3Bd27oVbU4J8)
+User testuserd-z537am1z@gmail.com created successfully. UID: P8qS17QLO6gHLuna9FyvuHpW1idg
+Firestore user doc created for testuserd-z537am1z@gmail.com (uid: P8qS17QLO6gHLuna9FyvuHpW1idg)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-3tvxscgo@gmail.com",
+    "password": "testuserC",
+    "uid": "bTKpitdpVRAfUMYl3Bd27oVbU4J8"
+  },
+  {
+    "email": "testuserd-z537am1z@gmail.com",
+    "password": "testuserD",
+    "uid": "P8qS17QLO6gHLuna9FyvuHpW1idg"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] About to sign in with test user: testuserc-3tvxscgo@gmail.com
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (5.8s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+Clicking Start button...
+[E2E DEBUG] Submitting sign-in form.
+Clicking first quiz option...
+[E2E DEBUG] Waiting for sign-out button after login.
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Clicking Start button again...
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.3s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (327ms)
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_010-0-0-6921a6b9-7ff9-4040-bac8-b124ffd9af9f" aria-label="Option A: All of the above" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_010-0-6921a6b9-7ff9-4040-bac8-b124ffd9af9f" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.4s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.8s)
+[E2E DEBUG] About to sign in with test user: testuserc-3tvxscgo@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+[E2E DEBUG] Filling Quiz Length...
+  ✓  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles @fast (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Clicking Start button...
+[E2E DEBUG] Waiting for quiz question card to be visible...
+[E2E DEBUG] Quiz question card is visible.
+[E2E DEBUG] Clicking first option...
+[E2E DEBUG] Clicking second option...
+[E2E DEBUG] Clicking first option again...
+[E2E DEBUG] Clicking Finish button...
+[E2E DEBUG] Clicking Start New Quiz button...
+[E2E DEBUG] Filling Quiz Length again...
+[E2E DEBUG] Clicking Start button again...
+[E2E DEBUG] Waiting for quiz loading spinner to disappear...
+[E2E DEBUG] Quiz loading spinner is hidden.
+[E2E DEBUG] Waiting for quiz question card to be visible after restart...
+[E2E DEBUG] Quiz question card is visible after restart.
+[E2E DEBUG] After test: should handle edge case: rapid answer selection
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles @fast (4.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (7.9s)
+  ✓  12 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (166ms)
+  ✓  13 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (1ms)
+  -  14 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:10:8 › Development Asset Troubleshooting › Badge image is accessible directly
+  ✓  15 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (278ms)
+  ✓  9 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (7.9s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] About to sign in with test user: testuserc-3tvxscgo@gmail.com
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+  -  4 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:39:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  16 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (1.5s)
+  ✓  19 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (120ms)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+  ✓  11 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles @fast (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+Tab focus order: [
+  [32m'<a aria-label="Go to Quiz page" role="link" href="/quiz" data-discover="true">Quiz</a>'[39m,
+  [32m'<a aria-label="Go to Achievements page" role="link" href="/achievements" data-discover="true">Achievements</a>'[39m,
+  [32m'<a aria-label="Go to Analytics page" role="link" href="/analytics" data-discover="true">Analytics</a>'[39m,
+  [32m'<a aria-label="Go to Profile page" role="link" href="/profile" data-discover="true">Profile</a>'[39m,
+  [32m'<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 1000;">Skip to main content</a>'[39m,
+  [32m'<button class="main-btn" aria-label="Sign in with Google" style="padding: 0.85rem 2.2rem; background: linear-gradient(90deg, rgb(59, 130, 246) 60%, rgb(110, 231, 183) 100%); color: rgb(255, 255, 255); border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: rgba(59, 130, 246, 0.08) 0px 2px 8px; transition: background 0.2s, transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s cubic-bezier(0.4, 2, 0.6, 1); border: none; cursor: pointer; outline: none; width: 100%; max-width: 320px; margin-bottom: 10px;">Sign In with Google</button>'[39m,
+  [32m'<a href="/quiz" class="main-btn" aria-label="Explore quizzes" style="padding: 0.85rem 2.2rem; background: linear-gradient(90deg, rgb(0, 184, 148) 60%, rgb(59, 130, 246) 100%); color: rgb(255, 255, 255); border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: rgba(0, 184, 148, 0.08) 0px 2px 8px; transition: background 0.2s, transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s cubic-bezier(0.4, 2, 0.6, 1); outline: none; width: 100%; max-width: 320px; margin-bottom: 10px; display: inline-block; text-align: center;">Explore Quizzes</a>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Practice Quizzes (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.15s 1 normal forwards running fadeInUp, 4.2s ease-in-out 0s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">📝</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Practice Quizzes</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">Test your knowledge with interactive quizzes and instant feedback.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Track Progress (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.28s 1 normal forwards running fadeInUp, 4.2s ease-in-out 0.7s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">📈</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Track Progress</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">See your stats, streaks, and improvement over time.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Earn Achievements (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.41s 1 normal forwards running fadeInUp, 4.2s ease-in-out 1.4s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">🏆</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Earn Achievements</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">Unlock badges and celebrate your learning milestones.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<a href="/about" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">About</a>'[39m,
+  [32m'<a href="/privacy" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">Privacy</a>'[39m,
+  [32m'<a href="/contact" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">Contact</a>'[39m,
+  [32m'<input class="question-search-bar" placeholder="Search questions..." aria-label="Search questions" type="text">'[39m
+]
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+
+--- End of Output ---
+
+===== 2025-07-06 20:33:27 =====
+Total: 15
+Passed: 15
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-3tvxscgo@gmail.com created successfully. UID: bTKpitdpVRAfUMYl3Bd27oVbU4J8
+Firestore user doc created for testuserc-3tvxscgo@gmail.com (uid: bTKpitdpVRAfUMYl3Bd27oVbU4J8)
+User testuserd-z537am1z@gmail.com created successfully. UID: P8qS17QLO6gHLuna9FyvuHpW1idg
+Firestore user doc created for testuserd-z537am1z@gmail.com (uid: P8qS17QLO6gHLuna9FyvuHpW1idg)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-3tvxscgo@gmail.com",
+    "password": "testuserC",
+    "uid": "bTKpitdpVRAfUMYl3Bd27oVbU4J8"
+  },
+  {
+    "email": "testuserd-z537am1z@gmail.com",
+    "password": "testuserD",
+    "uid": "P8qS17QLO6gHLuna9FyvuHpW1idg"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] About to sign in with test user: testuserc-3tvxscgo@gmail.com
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (5.8s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+Clicking Start button...
+[E2E DEBUG] Submitting sign-in form.
+Clicking first quiz option...
+[E2E DEBUG] Waiting for sign-out button after login.
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Clicking Start button again...
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.3s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (327ms)
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_010-0-0-6921a6b9-7ff9-4040-bac8-b124ffd9af9f" aria-label="Option A: All of the above" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_010-0-6921a6b9-7ff9-4040-bac8-b124ffd9af9f" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.4s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.8s)
+[E2E DEBUG] About to sign in with test user: testuserc-3tvxscgo@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+[E2E DEBUG] Filling Quiz Length...
+  ✓  8 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles @fast (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Clicking Start button...
+[E2E DEBUG] Waiting for quiz question card to be visible...
+[E2E DEBUG] Quiz question card is visible.
+[E2E DEBUG] Clicking first option...
+[E2E DEBUG] Clicking second option...
+[E2E DEBUG] Clicking first option again...
+[E2E DEBUG] Clicking Finish button...
+[E2E DEBUG] Clicking Start New Quiz button...
+[E2E DEBUG] Filling Quiz Length again...
+[E2E DEBUG] Clicking Start button again...
+[E2E DEBUG] Waiting for quiz loading spinner to disappear...
+[E2E DEBUG] Quiz loading spinner is hidden.
+[E2E DEBUG] Waiting for quiz question card to be visible after restart...
+[E2E DEBUG] Quiz question card is visible after restart.
+[E2E DEBUG] After test: should handle edge case: rapid answer selection
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles @fast (4.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:119:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (7.9s)
+  ✓  12 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:11:1 › Badge image is served by Vite dev server (case-sensitive) (166ms)
+  ✓  13 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:17:1 › No case-different files in public/badges/ (1ms)
+  -  14 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:10:8 › Development Asset Troubleshooting › Badge image is accessible directly
+  ✓  15 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:24:3 › Development Asset Troubleshooting › App icon is accessible directly (278ms)
+  ✓  9 [Desktop Chrome] › e2e/app.spec.ts:152:1 › should handle edge case: rapid answer selection (7.9s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] About to sign in with test user: testuserc-3tvxscgo@gmail.com
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+  -  4 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:39:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  16 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:30:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (1.5s)
+  ✓  19 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:58:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (120ms)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+  ✓  11 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles @fast (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-3tvxscgo@gmail.com, password=testuserC
+Tab focus order: [
+  [32m'<a aria-label="Go to Quiz page" role="link" href="/quiz" data-discover="true">Quiz</a>'[39m,
+  [32m'<a aria-label="Go to Achievements page" role="link" href="/achievements" data-discover="true">Achievements</a>'[39m,
+  [32m'<a aria-label="Go to Analytics page" role="link" href="/analytics" data-discover="true">Analytics</a>'[39m,
+  [32m'<a aria-label="Go to Profile page" role="link" href="/profile" data-discover="true">Profile</a>'[39m,
+  [32m'<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 1000;">Skip to main content</a>'[39m,
+  [32m'<button class="main-btn" aria-label="Sign in with Google" style="padding: 0.85rem 2.2rem; background: linear-gradient(90deg, rgb(59, 130, 246) 60%, rgb(110, 231, 183) 100%); color: rgb(255, 255, 255); border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: rgba(59, 130, 246, 0.08) 0px 2px 8px; transition: background 0.2s, transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s cubic-bezier(0.4, 2, 0.6, 1); border: none; cursor: pointer; outline: none; width: 100%; max-width: 320px; margin-bottom: 10px;">Sign In with Google</button>'[39m,
+  [32m'<a href="/quiz" class="main-btn" aria-label="Explore quizzes" style="padding: 0.85rem 2.2rem; background: linear-gradient(90deg, rgb(0, 184, 148) 60%, rgb(59, 130, 246) 100%); color: rgb(255, 255, 255); border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: rgba(0, 184, 148, 0.08) 0px 2px 8px; transition: background 0.2s, transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s cubic-bezier(0.4, 2, 0.6, 1); outline: none; width: 100%; max-width: 320px; margin-bottom: 10px; display: inline-block; text-align: center;">Explore Quizzes</a>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Practice Quizzes (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.15s 1 normal forwards running fadeInUp, 4.2s ease-in-out 0s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">📝</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Practice Quizzes</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">Test your knowledge with interactive quizzes and instant feedback.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Track Progress (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.28s 1 normal forwards running fadeInUp, 4.2s ease-in-out 0.7s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">📈</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Track Progress</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">See your stats, streaks, and improvement over time.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Earn Achievements (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.41s 1 normal forwards running fadeInUp, 4.2s ease-in-out 1.4s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">🏆</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Earn Achievements</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">Unlock badges and celebrate your learning milestones.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<a href="/about" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">About</a>'[39m,
+  [32m'<a href="/privacy" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">Privacy</a>'[39m,
+  [32m'<a href="/contact" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">Contact</a>'[39m,
+  [32m'<input class="question-search-bar" placeholder="Search questions..." aria-label="Search questions" type="text">'[39m
+]
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+
+--- End of Output ---
+
+===== 2025-07-06 20:35:49 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:35:50 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:44:32 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:45:35 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:48:45 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:50:44 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:51:24 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
+
+===== 2025-07-06 20:52:08 =====
+Total: 5
+Passed: 5
+Failed: 0
+Failed locations: 
+--- Full Playwright Output ---
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-v5v6ge3e@gmail.com created successfully. UID: NOtU3NP1ZF34qB6rAa74HLtyeAAj
+Firestore user doc created for testuserc-v5v6ge3e@gmail.com (uid: NOtU3NP1ZF34qB6rAa74HLtyeAAj)
+User testuserd-ob7k6se1@gmail.com created successfully. UID: nhlPNCt9Co3tdBSDnfypPAF5bGDw
+Firestore user doc created for testuserd-ob7k6se1@gmail.com (uid: nhlPNCt9Co3tdBSDnfypPAF5bGDw)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-v5v6ge3e@gmail.com",
+    "password": "testuserC",
+    "uid": "NOtU3NP1ZF34qB6rAa74HLtyeAAj"
+  },
+  {
+    "email": "testuserd-ob7k6se1@gmail.com",
+    "password": "testuserD",
+    "uid": "nhlPNCt9Co3tdBSDnfypPAF5bGDw"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: undefined
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+
+Running 198 tests using 4 workers
+
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (6.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_008-0-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" aria-label="Option A: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_008-0-30ce48ce-c9ed-47a8-a32d-113cdb6e2480" style="margin-right: 12px; cursor: pointer;">
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:45:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:94:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (332ms)
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:36:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (3.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  3 [Desktop Chrome] › e2e/app.spec.ts:42:1 › should reset quiz and focus first option after restart (10.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-v5v6ge3e@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-v5v6ge3e@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+
+--- End of Output ---
