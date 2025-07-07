@@ -1,0 +1,58 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - img "App Icon"
+  - text: Massage Therapy Smart Study PRO
+- navigation "Main navigation":
+  - list:
+    - listitem:
+      - link "Go to Quiz page":
+        - /url: /quiz
+        - text: Quiz
+    - listitem:
+      - link "Go to Achievements page":
+        - /url: /achievements
+        - text: Achievements
+    - listitem:
+      - link "Go to Analytics page":
+        - /url: /analytics
+        - text: Analytics
+    - listitem:
+      - link "Go to Profile page":
+        - /url: /profile
+        - text: Profile
+- main:
+  - main:
+    - heading "Quiz" [level=1]
+    - 'progressbar "Quiz progress: 0%"'
+    - text: 0 %
+    - group "Question Progress":
+      - button "Go to question 1 (current)"
+    - group "Which of the following abdominal muscles assists in forced expiration?":
+      - text: Which of the following abdominal muscles assists in forced expiration?
+      - list:
+        - listitem:
+          - 'group "Quiz option: A. All of the above"':
+            - 'radio "Option A: All of the above"'
+            - text: A. All of the above
+        - listitem:
+          - 'group "Quiz option: B. Rectus abdominis"':
+            - 'radio "Option B: Rectus abdominis"'
+            - text: B. Rectus abdominis
+        - listitem:
+          - 'group "Quiz option: C. Internal and external obliques"':
+            - 'radio "Option C: Internal and external obliques"'
+            - text: C. Internal and external obliques
+        - listitem:
+          - 'group "Quiz option: D. Transverse abdominis"':
+            - 'radio "Option D: Transverse abdominis"'
+            - text: D. Transverse abdominis
+    - text: "Quick Tip: All these muscles contract to assist in expelling air from the lungs. More Info: During forced expiration, abdominal muscles contract to compress the abdominal cavity, elevate the diaphragm, and push air out. This includes the rectus, obliques, and transverse muscles. Clinical Application: Massage can facilitate more effective breathing by improving abdominal compliance and reducing tension in these muscles. Source: Clinical Anatomy – Snell Tags: expiration, abdominals, forced breathing Keywords: respiratory function, abdominal compression, core"
+    - group "Quiz navigation actions":
+      - button "Previous question" [disabled]: Previous
+      - button "Finish quiz" [disabled]: Finish Quiz
+- contentinfo:
+  - textbox "Search questions"
+- paragraph: Running in emulator mode. Do not use with production credentials.
+```
