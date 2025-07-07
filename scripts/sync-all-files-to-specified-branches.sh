@@ -141,7 +141,7 @@ if [[ -n $(git status --porcelain) ]]; then
   fi
   commit_msg=""
   if [[ "$commit_mode" == "WIP" || "$commit_mode" == "wip" ]]; then
-    # Gather last known test/lint/type summaries if available
+    # WIP mode: skip all test/lint/type logic, go directly to commit
     WIP_EXTRA="\n[WIP MODE: Tests/lint/type checks skipped]"
     if [[ -f scripts/eslint-output.txt ]]; then
       WIP_EXTRA+="\n\n--- Last ESLint Output ---\n$(tail -20 scripts/eslint-output.txt)"
@@ -163,7 +163,6 @@ if [[ -n $(git status --porcelain) ]]; then
       echo "Enter your WIP commit message. The generated summary is shown above. (End with an empty line):"
       commit_msg=""
       while IFS= read -r line; do
-        [[ -z "$line" ]] && break
         commit_msg+="$line\n"
       done
     fi
