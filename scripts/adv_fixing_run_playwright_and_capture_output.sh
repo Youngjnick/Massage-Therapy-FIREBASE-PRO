@@ -26,8 +26,8 @@ export FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f
 export GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f
 export NODE_ENV=test
 
-OUTPUT_FILE="scripts/playwright-output.txt"
-HISTORY_FILE="scripts/playwright-output-history.txt"
+OUTPUT_FILE="scripts/reports/playwright-output.txt"
+HISTORY_FILE="scripts/reports/playwright-output-history.txt"
 
 trap 'append_history_summary; open_html_report' EXIT INT
 

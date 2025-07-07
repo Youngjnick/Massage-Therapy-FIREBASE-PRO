@@ -2,7 +2,7 @@ import json
 import datetime
 from pathlib import Path
 
-JSON_FILE = Path("scripts/playwright-history.json")
+JSON_FILE = Path("scripts/reports/playwright-history.json")
 
 def update_live_test_status(results, worker_mode=None):
     if JSON_FILE.exists():

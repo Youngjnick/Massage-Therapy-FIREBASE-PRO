@@ -207,13 +207,24 @@ if [[ -n $(git status --porcelain) ]]; then
   LOGS_LIST=""
   OTHER_LIST=""
   while read -r line; do
+    STATUS=$(echo "$line" | awk '{print $1}')
     FILE=$(echo "$line" | awk '{print $2}')
-    if [[ "$FILE" == scripts/*.sh ]]; then
-      SCRIPTS_LIST+="-Updated $FILE\n"
-    elif [[ "$FILE" == *.log ]]; then
-      LOGS_LIST+="-Updated $FILE\n"
-    elif [[ -n "$FILE" ]]; then
-      OTHER_LIST+="-Updated $FILE\n"
+    if [[ "$STATUS" == D ]]; then
+      if [[ "$FILE" == scripts/*.sh ]]; then
+        SCRIPTS_LIST+="-Deleted $FILE\n"
+      elif [[ "$FILE" == *.log ]]; then
+        LOGS_LIST+="-Deleted $FILE\n"
+      elif [[ -n "$FILE" ]]; then
+        OTHER_LIST+="-Deleted $FILE\n"
+      fi
+    else
+      if [[ "$FILE" == scripts/*.sh ]]; then
+        SCRIPTS_LIST+="-Updated $FILE\n"
+      elif [[ "$FILE" == *.log ]]; then
+        LOGS_LIST+="-Updated $FILE\n"
+      elif [[ -n "$FILE" ]]; then
+        OTHER_LIST+="-Updated $FILE\n"
+      fi
     fi
   done <<< "$CHANGED_FILES"
   SUMMARY_OVERVIEW=""
@@ -465,6 +476,7 @@ for target in $all_targets; do
     echo "Skipping invalid target: $target"
     continue
   fi
+
   # Progress indicator before syncing
   echo -e "\n\033[1;33m[INFO] Preparing to sync all files to $remote/$branch...\033[0m"
   sleep 0.5
@@ -484,6 +496,11 @@ for target in $all_targets; do
 
   # Copy all files from the current working tree to the worktree (excluding .git and node_modules)
   rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$TMP_WORKTREE/"
+
+  # Also copy all files to sync_tmp_backups for backup/inspection (in correct folder, not root)
+  BACKUP_TMP="$REPO_ROOT/sync_tmp_backups/.sync-tmp-$branch-$$"
+  mkdir -p "$BACKUP_TMP"
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$BACKUP_TMP/"
 
   # Commit and push in the worktree
   pushd "$TMP_WORKTREE" > /dev/null

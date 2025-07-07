@@ -1,6 +1,6 @@
-# Playwright E2E Test History (as of 2025-07-07 16:02:02)
+# Playwright E2E Test History (as of 2025-07-07 19:27:19)
 
-Last Run: 2025-07-07 16:02:02
+Last Run: 2025-07-07 19:27:19
 
 
 ## Multicore-Only Failures (Fail on multicore, Pass on single worker)
@@ -8,13 +8,6 @@ Last Run: 2025-07-07 16:02:02
 
 ## Latest Test Results
 
-- e2e/stats-persistence-after-reload.spec.ts:56:3  ✓  e2e/stats-persistence-after-reload.spec.ts:56:3 [e2e/stats-persistence-after-reload.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-persistence-after-reload.spec.ts)
-- e2e/stats-isolation-per-user.spec.ts:62:3  ✓  e2e/stats-isolation-per-user.spec.ts:62:3 [e2e/stats-isolation-per-user.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-isolation-per-user.spec.ts)
-- e2e/quiz-stats-live-update.spec.ts:16:3  ✓  e2e/quiz-stats-live-update.spec.ts:16:3 [e2e/quiz-stats-live-update.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/quiz-stats-live-update.spec.ts)
-- e2e/stats-persistence.spec.ts:59:3  ✓  e2e/stats-persistence.spec.ts:59:3 [e2e/stats-persistence.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-persistence.spec.ts)
-- e2e/stats-topic-breakdown.spec.ts:22:3  ✓  e2e/stats-topic-breakdown.spec.ts:22:3 [e2e/stats-topic-breakdown.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-topic-breakdown.spec.ts)
-- e2e/stats-critical-flows.spec.ts:171:3  ✓  e2e/stats-critical-flows.spec.ts:171:3 [e2e/stats-critical-flows.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-critical-flows.spec.ts)
-- e2e/stats-critical-flows.spec.ts:193:3  ✓  e2e/stats-critical-flows.spec.ts:193:3 [e2e/stats-critical-flows.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-critical-flows.spec.ts)
 - e2e/badge-dynamic-behavior.spec.ts:6:1  ✓  e2e/badge-dynamic-behavior.spec.ts:6:1 [e2e/badge-dynamic-behavior.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/badge-dynamic-behavior.spec.ts)
 - e2e/badge-dynamic-behavior.spec.ts:25:1  ✓  e2e/badge-dynamic-behavior.spec.ts:25:1 [e2e/badge-dynamic-behavior.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/badge-dynamic-behavior.spec.ts)
 - e2e/badge-appearance.spec.ts:22:2  ✓  e2e/badge-appearance.spec.ts:22:2 [e2e/badge-appearance.spec.ts](https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/badge-appearance.spec.ts)
@@ -36,13 +29,6 @@ Last Run: 2025-07-07 16:02:02
   ✓ (latest)
   ✓ (latest)
   ✓ (latest)
-  ✓ (latest)
-  ✓ (latest)
-  ✓ (latest)
-  ✓ (latest)
-  ✓ (latest)
-  ✓ (latest)
-  ✓ (latest)
 
 ---
 
@@ -56,12 +42,12 @@ Date                | Total | Passed | Failed | Flaky | Skipped | Deleted
 ---
 
 Summary:
-- Total tests: 11
-- Passing: 10
+- Total tests: 3
+- Passing: 3
 - Failing: 0
 - Flaky: 0
 - Skipped: 0
-- Deleted: 4
+- Deleted: 1
 
 Notes:
 - ✓ = Pass, ✗ = Fail
