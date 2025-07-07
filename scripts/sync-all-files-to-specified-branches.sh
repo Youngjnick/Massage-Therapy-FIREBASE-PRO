@@ -201,7 +201,7 @@ if [[ -n $(git status --porcelain) ]]; then
   CHANGED_FILES=$(git status --short)
   DIFF_STAT=$(git diff --cached --stat)
   commit_msg=""
-  # Generate a detailed summary overview in the desired format
+  # Build the commit message in the exact format for both preview and GitHub
   SUMMARY_OVERVIEW=""
   CHANGED_COUNT=$(echo "$CHANGED_FILES" | grep -c '^')
   if [[ $CHANGED_COUNT -eq 1 ]]; then
@@ -217,12 +217,14 @@ if [[ -n $(git status --porcelain) ]]; then
     SUMMARY_OVERVIEW="$SUMMARY_OVERVIEW\n- Improved sync or automation scripts."
   fi
   if [[ "$SKIP_TESTS" = true ]]; then
-    commit_msg="WIP: Tests/lint/type checks skipped"
+    commit_msg="WIP: Tests/lint/type checks skipped\n"
   else
-    commit_msg="Auto-commit before sync-all-files-to-specified-branches.sh"
+    commit_msg="Auto-commit before sync-all-files-to-specified-branches.sh\n"
   fi
-  commit_msg+="\n\nSummary:\n$SUMMARY_OVERVIEW\n"
-  commit_msg+="\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
+  commit_msg+="\nSummary:\n$SUMMARY_OVERVIEW\n"
+  commit_msg+="\n--- Changed files ---\n$CHANGED_FILES\n"
+  commit_msg+="\n--- Diff summary ---\n$DIFF_STAT"
+  # Show the preview in the terminal
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
   echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
   read commit_msg_action
