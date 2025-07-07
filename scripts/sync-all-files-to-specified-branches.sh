@@ -171,6 +171,11 @@ if [[ -n $(git status --porcelain) ]]; then
   esac
 fi
 
+# Set SKIP_TESTS if WIP mode was selected interactively
+if [[ "$COMMIT_MODE" == "wip" ]]; then
+  SKIP_TESTS=true
+fi
+
 # Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
   # Remove prompt for a detailed commit summary
