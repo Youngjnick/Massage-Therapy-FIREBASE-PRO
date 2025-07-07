@@ -249,7 +249,10 @@ if [[ -n $(git status --porcelain) ]]; then
       ;;
   esac
   git add -A
-  git commit -m "$commit_msg"
+  # Write commit message to a temp file for reuse in worktree
+  TMP_COMMIT_MSG_FILE=$(mktemp)
+  echo "$commit_msg" > "$TMP_COMMIT_MSG_FILE"
+  git commit -F "$TMP_COMMIT_MSG_FILE"
 
   # Always show stash and precommit summary after commit (all modes except abort)
   show_stash_and_precommit_summary
@@ -423,8 +426,7 @@ for target in $all_targets; do
   if git diff --cached --quiet; then
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp."
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp." >> "$LOG_FILE"
-    COMMIT_MSG="chore(sync): force empty commit to $remote/$branch\n\nNo file changes.\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    git commit --allow-empty -m "$COMMIT_MSG"
+    git commit --allow-empty -F "$TMP_COMMIT_MSG_FILE"
   else
     CHANGED=$(git status --short)
     echo "\nChanged files for $remote/$branch:"
@@ -435,8 +437,7 @@ for target in $all_targets; do
     fi
     printf "\nChanged files for %s:\n" "$remote/$branch" >> "$LOG_FILE"
     echo "$CHANGED" >> "$LOG_FILE"
-    COMMIT_MSG="chore(sync): auto-sync all files to $remote/$branch\n\nFiles affected:\n$CHANGED\nAutomated sync script. Ensures all files in the current branch are present and up to date on all listed branches and remotes. Overwrites remote state."
-    git commit -m "$COMMIT_MSG"
+    git commit -F "$TMP_COMMIT_MSG_FILE"
   fi
 
   # Push to the correct remote/branch
@@ -559,6 +560,8 @@ for target in $all_targets; do
 
   popd > /dev/null
   git worktree remove --force "$TMP_WORKTREE"
+  # Clean up temp commit message file after last use
+  rm -f "$TMP_COMMIT_MSG_FILE"
 done
 
 # Update last sync time in log file (guarded)
