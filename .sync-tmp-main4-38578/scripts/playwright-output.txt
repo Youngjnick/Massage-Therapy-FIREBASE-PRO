@@ -1,0 +1,35 @@
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-1dk7qi5o@gmail.com created successfully. UID: PU7bNbX3uPKABiLtdrUjpHON4GSo
+Firestore user doc created for testuserc-1dk7qi5o@gmail.com (uid: PU7bNbX3uPKABiLtdrUjpHON4GSo)
+User testuserd-42m4j2tt@gmail.com created successfully. UID: UizUZ0QoZc59kTvkVBlD4cnYmsnX
+Firestore user doc created for testuserd-42m4j2tt@gmail.com (uid: UizUZ0QoZc59kTvkVBlD4cnYmsnX)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-1dk7qi5o@gmail.com",
+    "password": "testuserC",
+    "uid": "PU7bNbX3uPKABiLtdrUjpHON4GSo"
+  },
+  {
+    "email": "testuserd-42m4j2tt@gmail.com",
+    "password": "testuserD",
+    "uid": "UizUZ0QoZc59kTvkVBlD4cnYmsnX"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+
+Running 3 tests using 2 workers
+
+  ✓  1 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:6:1 › badges.json has correct criteria and image fields (32ms)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-1dk7qi5o@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  3 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:25:1 › badge_test image is visible and loads (1.5s)
+  ✓  2 [Desktop Chrome] › e2e/badge-appearance.spec.ts:22:2 › Local badge images (UI login) › All key badges appear on Achievements page (2.9s)
+
+  3 passed (3.7s)

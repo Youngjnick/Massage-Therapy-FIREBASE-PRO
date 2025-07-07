@@ -1,0 +1,50 @@
+<html><head><title>Playwright Test History</title>
+<style>.fail{color:red;} .pass{color:green;} .flaky{color:orange;} .multicore-only{background: #ffe0e0;} .singlepass{background: #e0ffe0;} .summary{font-weight:bold;} table{border-collapse:collapse;} th,td{padding:4px 8px;} tr.selected{background:#eef;} #search{margin:10px 0;}</style>
+</head><body>
+<h1>Playwright Test History</h1>
+<div class="summary">Total: 13 | Passing: 10 | Failing: 0 | Flaky: 0 | Multicore-only failures: 0</div>
+<div>
+<label>Status: <select id="statusFilter"><option value="">All</option><option value="pass">Passing</option><option value="fail">Failing</option><option value="flaky">Flaky</option><option value="multicore">Multicore-only</option></select></label>
+<input type="text" id="search" placeholder="Search test name or file...">
+</div>
+<h2>All Tests</h2>
+<table border=1 id="testTable"><tr><th>Test</th><th>Status</th><th>Single</th><th>Multi</th><th>Flaky</th><th>Source</th></tr>
+<tr class="pass"><td>?</td><td>-</td><td>-</td><td>-</td><td></td><td></td></tr>
+<tr class="pass"><td>?</td><td>-</td><td>-</td><td>-</td><td></td><td></td></tr>
+<tr class="pass"><td>e2e/stats-persistence-after-reload.spec.ts:56:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-persistence-after-reload.spec.ts" target="_blank">e2e/stats-persistence-after-reload.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/stats-isolation-per-user.spec.ts:62:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-isolation-per-user.spec.ts" target="_blank">e2e/stats-isolation-per-user.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/quiz-stats-live-update.spec.ts:16:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/quiz-stats-live-update.spec.ts" target="_blank">e2e/quiz-stats-live-update.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/stats-persistence.spec.ts:59:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-persistence.spec.ts" target="_blank">e2e/stats-persistence.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/stats-topic-breakdown.spec.ts:22:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-topic-breakdown.spec.ts" target="_blank">e2e/stats-topic-breakdown.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/stats-critical-flows.spec.ts:53:3</td><td>✘</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-critical-flows.spec.ts" target="_blank">e2e/stats-critical-flows.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/stats-critical-flows.spec.ts:171:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-critical-flows.spec.ts" target="_blank">e2e/stats-critical-flows.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/stats-critical-flows.spec.ts:193:3</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/stats-critical-flows.spec.ts" target="_blank">e2e/stats-critical-flows.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/badge-dynamic-behavior.spec.ts:6:1</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/badge-dynamic-behavior.spec.ts" target="_blank">e2e/badge-dynamic-behavior.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/badge-dynamic-behavior.spec.ts:25:1</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/badge-dynamic-behavior.spec.ts" target="_blank">e2e/badge-dynamic-behavior.spec.ts</a></td></tr>
+<tr class="pass"><td>e2e/badge-appearance.spec.ts:22:2</td><td>✓</td><td>-</td><td>-</td><td></td><td><a href="https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/blob/main/e2e/badge-appearance.spec.ts" target="_blank">e2e/badge-appearance.spec.ts</a></td></tr>
+</table>
+<script>
+const table = document.getElementById('testTable');
+const statusFilter = document.getElementById('statusFilter');
+const searchBox = document.getElementById('search');
+function filterTable() {
+  const status = statusFilter.value;
+  const search = searchBox.value.toLowerCase();
+  for (let i = 1; i < table.rows.length; i++) {
+    const row = table.rows[i];
+    let show = true;
+    if (status) {
+      if (status === 'flaky' && !row.classList.contains('flaky')) show = false;
+      if (status === 'fail' && !row.classList.contains('fail')) show = false;
+      if (status === 'pass' && !row.classList.contains('pass')) show = false;
+      if (status === 'multicore' && !row.classList.contains('multicore-only')) show = false;
+    }
+    if (search && !row.cells[0].textContent.toLowerCase().includes(search) && !row.cells[5].textContent.toLowerCase().includes(search)) {
+      show = false;
+    }
+    row.style.display = show ? '' : 'none';
+  }
+}
+statusFilter.oninput = searchBox.oninput = filterTable;
+</script>
+</body></html>
