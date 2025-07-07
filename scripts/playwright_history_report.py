@@ -11,7 +11,7 @@ OUTPUT_FILE = Path("scripts/playwright-output.txt")
 HISTORY_FILE = Path("scripts/playwright-output-history.txt")
 HTML_FILE = Path("playwright-history.html")
 LIVE_FILE = Path("scripts/playwright-history-live.txt")
-JSON_FILE = Path("playwright-history.json")
+JSON_FILE = Path("scripts/playwright-history.json")
 
 def parse_output_file(output_file):
     results = []
@@ -251,7 +251,7 @@ def export_json_history(results, errors, sequences, run_stats):
         "sequences": sequences,
         "trend": run_stats
     }
-    with open("playwright-history.json", "w", encoding="utf-8") as f:
+    with open("scripts/playwright-history.json", "w", encoding="utf-8") as f:
         json.dump(export, f, indent=2)
 
 # Helper: update the persistent test status/history JSON

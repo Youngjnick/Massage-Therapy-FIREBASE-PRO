@@ -1,22 +1,11 @@
-# Playwright E2E Test Status (as of 2025-07-07 08:44:21)
+# Playwright E2E Test Status (as of 2025-07-07 11:38:30)
 
-e2e/basic-navigation.spec.ts
-  ✓    [✓✓✓✓]
+e2e/all-interactive-aria-accessibility.spec.ts
+  ✓ e2e/all-interactive-aria-accessibility.spec.ts:36:5   [✓]
 
-e2e/keyboard-navigation-and-restart.spec.ts
-  ✓    [✓]
-  ✓    [✓]
+Summary: Total: 1  Passing: 1  Failing: 0  Flaky: 0  Skipped: 0  Deleted: 2
 
-e2e/navigation-aria-flow.spec.ts
-  ✓    [✓✓✓✓]
-
-e2e/quiz-keyboard-navigation.spec.ts
-  ✓    [✓]
-  ✓    [✓]
-
-Summary: Total: 6  Passing: 6  Failing: 0  Flaky: 0  Skipped: 0  Deleted: 2
-
-Longest passing streak: e2e/basic-navigation.spec.ts:  (4)
-Longest failing streak: e2e/basic-navigation.spec.ts:  (0)
+Longest passing streak: e2e/all-interactive-aria-accessibility.spec.ts:  (1)
+Longest failing streak: e2e/all-interactive-aria-accessibility.spec.ts:  (0)
 
 Recently deleted tests:

@@ -2,87 +2,10 @@
   "tests": [
     {
       "status": "\u2713",
-      "file": "e2e/basic-navigation.spec.ts",
-      "line": 13,
+      "file": "e2e/all-interactive-aria-accessibility.spec.ts",
+      "line": 36,
       "col": 5,
-      "raw": "\u2713  1 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to / (1.1s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/basic-navigation.spec.ts",
-      "line": 13,
-      "col": 5,
-      "raw": "\u2713  5 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to /quiz (332ms)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/basic-navigation.spec.ts",
-      "line": 13,
-      "col": 5,
-      "raw": "\u2713  6 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to /analytics (261ms)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/basic-navigation.spec.ts",
-      "line": 13,
-      "col": 5,
-      "raw": "\u2713  7 [Desktop Chrome] \u203a e2e/basic-navigation.spec.ts:13:5 \u203a Basic Navigation \u203a can navigate to /profile (367ms)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/navigation-aria-flow.spec.ts",
-      "line": 39,
-      "col": 5,
-      "raw": "\u2713  4 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page / has correct ARIA roles and keyboard navigation (4.3s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/quiz-keyboard-navigation.spec.ts",
-      "line": 33,
-      "col": 3,
-      "raw": "\u2713  2 [Desktop Chrome] \u203a e2e/quiz-keyboard-navigation.spec.ts:33:3 \u203a Quiz keyboard navigation \u203a ArrowDown/ArrowUp do not select or submit answers (5.9s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/keyboard-navigation-and-restart.spec.ts",
-      "line": 23,
-      "col": 3,
-      "raw": "\u2713  3 [Desktop Chrome] \u203a e2e/keyboard-navigation-and-restart.spec.ts:23:3 \u203a Keyboard-Only Navigation and Quiz Restart \u203a Complete a quiz using direct element selection/clicks (6.5s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/navigation-aria-flow.spec.ts",
-      "line": 39,
-      "col": 5,
-      "raw": "\u2713  8 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page /quiz has correct ARIA roles and keyboard navigation (3.9s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/quiz-keyboard-navigation.spec.ts",
-      "line": 64,
-      "col": 3,
-      "raw": "\u2713  9 [Desktop Chrome] \u203a e2e/quiz-keyboard-navigation.spec.ts:64:3 \u203a Quiz keyboard navigation \u203a Enter/Space select and submit, Arrow keys do not (4.8s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/keyboard-navigation-and-restart.spec.ts",
-      "line": 64,
-      "col": 3,
-      "raw": "\u2713  10 [Desktop Chrome] \u203a e2e/keyboard-navigation-and-restart.spec.ts:64:3 \u203a Keyboard-Only Navigation and Quiz Restart \u203a Quiz restart resets all state and focus (4.6s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/navigation-aria-flow.spec.ts",
-      "line": 39,
-      "col": 5,
-      "raw": "\u2713  11 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page /analytics has correct ARIA roles and keyboard navigation (3.2s)"
-    },
-    {
-      "status": "\u2713",
-      "file": "e2e/navigation-aria-flow.spec.ts",
-      "line": 39,
-      "col": 5,
-      "raw": "\u2713  12 [Desktop Chrome] \u203a e2e/navigation-aria-flow.spec.ts:39:5 \u203a Navigation and ARIA Accessibility Flow \u203a Page /profile has correct ARIA roles and keyboard navigation (2.9s)"
+      "raw": "\u2713  4 [Desktop Chrome] \u203a e2e/all-interactive-aria-accessibility.spec.ts:36:5 \u203a All Interactive Elements: ARIA and Keyboard Accessibility \u203a All interactive elements on / have accessible names and ARIA roles @fast (5.8s)"
     }
   ],
   "errors": {},
@@ -266,519 +189,111 @@
   "trend": [
     {
       "date": "2025-07-06 18:10:45",
-      "total": 142,
-      "passed": 142,
-      "failed": 0
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:10:47",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 0
     },
     {
       "date": "2025-07-06 18:32:39",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:32:41",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:45:42",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:46:48",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:49:56",
       "total": 0,
       "passed": 0,
-      "failed": 0
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:51:31",
-      "total": 45,
-      "passed": 2,
-      "failed": 43
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:51:31",
-      "total": 45,
-      "passed": 2,
-      "failed": 43
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:52:37",
-      "total": 14,
-      "passed": 0,
-      "failed": 14
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:52:38",
-      "total": 14,
-      "passed": 0,
-      "failed": 14
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     },
     {
       "date": "2025-07-06 18:59:47",
-      "total": 13,
-      "passed": 13,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 18:59:47",
-      "total": 13,
-      "passed": 13,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:04:00",
       "total": 1,
       "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:04:01",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:07:55",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:07:55",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:09:44",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:09:45",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:11:57",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:11:57",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:13:01",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:13:02",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:13:47",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:13:48",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:17:46",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:17:46",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:18:42",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:18:42",
-      "total": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:19:37",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:19:37",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:21:00",
-      "total": 3,
-      "passed": 3,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:21:00",
-      "total": 3,
-      "passed": 3,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:21:17",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:21:17",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:33:46",
-      "total": 132,
-      "passed": 128,
-      "failed": 4
-    },
-    {
-      "date": "2025-07-06 19:41:34",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:41:35",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:43:45",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:43:45",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:45:04",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:45:04",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:46:47",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:46:47",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:50:15",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 19:50:15",
-      "total": 2,
-      "passed": 2,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:00:38",
-      "total": 163,
-      "passed": 157,
-      "failed": 6
-    },
-    {
-      "date": "2025-07-06 20:14:32",
-      "total": 165,
-      "passed": 160,
-      "failed": 5
-    },
-    {
-      "date": "2025-07-06 20:33:27",
-      "total": 15,
-      "passed": 15,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:33:27",
-      "total": 15,
-      "passed": 15,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:35:49",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:35:50",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:44:32",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:45:35",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:48:45",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:50:44",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:51:24",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:52:08",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 20:53:37",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-06 22:11:30",
-      "total": 5,
-      "passed": 5,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:18:21",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:18:22",
-      "total": 0,
-      "passed": 0,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:21:24",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:32:20",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:35:53",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:36:32",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:37:05",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:37:38",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:38:12",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:38:47",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:39:24",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:40:24",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
-    },
-    {
-      "date": "2025-07-07 08:44:21",
-      "total": 12,
-      "passed": 12,
-      "failed": 0
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "deleted": 2
     }
-  ],
-  "e2e/basic-navigation.spec.ts:13:5": {
-    "file": "e2e/basic-navigation.spec.ts",
-    "title": "",
-    "location": "e2e/basic-navigation.spec.ts:13:5",
-    "history": [
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713"
-    ],
-    "last_status": "\u2713",
-    "last_time": "2025-07-07 08:59:33"
-  },
-  "e2e/navigation-aria-flow.spec.ts:39:5": {
-    "file": "e2e/navigation-aria-flow.spec.ts",
-    "title": "",
-    "location": "e2e/navigation-aria-flow.spec.ts:39:5",
-    "history": [
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713",
-      "\u2713"
-    ],
-    "last_status": "\u2713",
-    "last_time": "2025-07-07 08:59:33"
-  },
-  "e2e/quiz-keyboard-navigation.spec.ts:33:3": {
-    "file": "e2e/quiz-keyboard-navigation.spec.ts",
-    "title": "",
-    "location": "e2e/quiz-keyboard-navigation.spec.ts:33:3",
-    "history": [
-      "\u2713",
-      "\u2713"
-    ],
-    "last_status": "\u2713",
-    "last_time": "2025-07-07 08:59:33"
-  },
-  "e2e/keyboard-navigation-and-restart.spec.ts:23:3": {
-    "file": "e2e/keyboard-navigation-and-restart.spec.ts",
-    "title": "",
-    "location": "e2e/keyboard-navigation-and-restart.spec.ts:23:3",
-    "history": [
-      "\u2713",
-      "\u2713"
-    ],
-    "last_status": "\u2713",
-    "last_time": "2025-07-07 08:59:33"
-  },
-  "e2e/quiz-keyboard-navigation.spec.ts:64:3": {
-    "file": "e2e/quiz-keyboard-navigation.spec.ts",
-    "title": "",
-    "location": "e2e/quiz-keyboard-navigation.spec.ts:64:3",
-    "history": [
-      "\u2713",
-      "\u2713"
-    ],
-    "last_status": "\u2713",
-    "last_time": "2025-07-07 08:59:33"
-  },
-  "e2e/keyboard-navigation-and-restart.spec.ts:64:3": {
-    "file": "e2e/keyboard-navigation-and-restart.spec.ts",
-    "title": "",
-    "location": "e2e/keyboard-navigation-and-restart.spec.ts:64:3",
-    "history": [
-      "\u2713",
-      "\u2713"
-    ],
-    "last_status": "\u2713",
-    "last_time": "2025-07-07 08:59:33"
-  }
+  ]
 }

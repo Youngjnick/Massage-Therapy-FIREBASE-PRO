@@ -40,7 +40,7 @@ export NODE_ENV=test
 trap 'update_last_failing_files; update_playwright_history' EXIT INT
 
 # Prompt user to choose which tests to run
-print "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[c]overage): "
+printf "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[c]overage): "
 read -r choice
 
 # Coverage mode: run all tests with coverage and update history
