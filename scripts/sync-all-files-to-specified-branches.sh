@@ -172,173 +172,24 @@ if [[ -n $(git status --porcelain) ]]; then
     if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
       open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
     fi
-  elif [[ "$commit_mode" == "commit" ]]; then
-    # Now run tests/lint/type checks and collect stats
-    # --- TEST & LINT SECTION ---
-    # Always run: ESLint -> TypeScript -> Jest -> Playwright (in this order)
-    # If any fail, prompt for fix/wip/abort, but always allow WIP and always push/force-push unless abort
-
-    WIP_MODE=false
-    TEST_SUMMARY=""
-    PW_SUMMARY=""
-
-    if [[ "$SKIP_TESTS" = false ]]; then
-      # 1. ESLint
-      echo "Running ESLint..."
-      npx eslint . | tee scripts/eslint-output.txt
-      if grep -q "error" scripts/eslint-output.txt; then
-        echo -e "${RED}Lint errors detected.${NC}"
-        grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
-          echo -e "${RED}$line${NC}"
-        done
-        echo "What do you want to do? (fix/wip/abort): "
-        read lint_decision
-        if [[ "$lint_decision" == "fix" ]]; then
-          $SHELL
-          exit 1
-        elif [[ "$lint_decision" == "wip" ]]; then
-          WIP_MODE=true
-        else
-          echo "Aborted due to lint errors."
-          exit 1
-        fi
-      fi
-      rm -f scripts/eslint-output.txt
-
-      # 2. TypeScript
-      echo "Running TypeScript type check..."
-      npx tsc --noEmit | tee scripts/ts-output.txt
-      if [[ $? -ne 0 ]]; then
-        echo -e "${RED}TypeScript errors detected.${NC}"
-        grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
-          echo -e "${RED}$line${NC}"
-        done
-        echo "What do you want to do? (fix/wip/abort): "
-        read ts_decision
-        if [[ "$ts_decision" == "fix" ]]; then
-          $SHELL
-          exit 1
-        elif [[ "$ts_decision" == "wip" ]]; then
-          WIP_MODE=true
-        else
-          echo "Aborted due to TypeScript errors."
-          exit 1
-        fi
-      fi
-      rm -f scripts/ts-output.txt
-
-      # 3. Jest
-      echo "Running Jest tests..."
-      npm test -- --reporter=default | tee scripts/test-output.txt
-
-      # Parse Jest output for summary and failing test names
-      TEST_SUMMARY=""
-      if grep -q "failing" scripts/test-output.txt; then
-        # Get summary line (e.g. 'Tests: 2 failed, 38 passed, 40 total')
-        SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-        # Get failing test suite names (e.g. 'FAIL  src/__tests__/SomeTest.test.tsx')
-        FAILING_TESTS=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
-        if [[ -n "$SUMMARY_LINE" ]]; then
-          TEST_SUMMARY="$SUMMARY_LINE\nFailing: $FAILING_TESTS"
-        fi
-        echo -e "${RED}Jest tests failed.${NC}"
-        echo "What do you want to do? (fix/wip/abort): "
-        read jest_decision
-        if [[ "$jest_decision" == "fix" ]]; then
-          $SHELL
-          exit 1
-        elif [[ "$jest_decision" == "wip" ]]; then
-          WIP_MODE=true
-        else
-          echo "Aborted due to Jest failures."
-          exit 1
-        fi
-      else
-        # If all tests pass, still include summary
-        SUMMARY_LINE=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-        if [[ -n "$SUMMARY_LINE" ]]; then
-          TEST_SUMMARY="$SUMMARY_LINE"
-        fi
-      fi
-      rm -f scripts/test-output.txt
-
-      # 4. Playwright/E2E (always after Jest)
-      if [[ -f playwright.config.ts ]]; then
-        echo "Starting dev server for E2E..."
-        npm run dev > scripts/dev-server-e2e.log 2>&1 &
-        DEV_SERVER_PID=$!
-        sleep 5
-        echo "Running Playwright E2E (advanced script)..."
-        ./scripts/adv_fixing_run_playwright_and_capture_output.sh
-        # Parse Playwright output for summary and failing test names
-        PW_SUMMARY=""
-        # Try to extract summary line (e.g. '1 failed, 10 passed, 11 total')
-        PW_SUMMARY_LINE=$(grep -Eo '[0-9]+ failed, [0-9]+ passed, [0-9]+ total' scripts/playwright-output.txt | tail -1)
-        # Get failing test file names (e.g. 'FAIL  e2e/critical-ui-accessibility.spec.ts')
-        PW_FAILING_TESTS=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
-        if [[ -n "$PW_SUMMARY_LINE" ]]; then
-          PW_SUMMARY="E2E: $PW_SUMMARY_LINE"
-          if [[ -n "$PW_FAILING_TESTS" ]]; then
-          fi
-        fi
-        if grep -q "failed" scripts/playwright-output.txt; then
-          echo -e "${RED}Playwright E2E failed.${NC}"
-          echo "\n--- Playwright Failure Details ---" | tee -a scripts/playwright-output.txt
-          awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt | tee -a scripts/playwright-output.txt
-          echo "What do you want to do? (fix/wip/abort): "
-          read pw_decision
-          if [[ "$pw_decision" == "fix" ]]; then
-            kill $DEV_SERVER_PID 2>/dev/null
-            $SHELL
-            exit 1
-          elif [[ "$pw_decision" == "wip" ]]; then
-            WIP_MODE=true
-          else
-            kill $DEV_SERVER_PID 2>/dev/null
-            echo "Aborted due to Playwright failures."
-            exit 1
-          fi
-        fi
-        rm -f scripts/playwright-output.txt
-        kill $DEV_SERVER_PID 2>/dev/null
-      fi
-    fi
-
-    # After tests, build the commit message as before, but append the stats and file info
-    COMMIT_EXTRA=""
-    if [[ -n "$TEST_SUMMARY" ]]; then
-      COMMIT_EXTRA+="\n\n--- Jest Summary ---\n$TEST_SUMMARY"
-    fi
-    if [[ -n "$PW_SUMMARY" ]]; then
-      COMMIT_EXTRA+="\n\n--- Playwright Summary ---\n$PW_SUMMARY"
-    fi
-    if [[ -f scripts/eslint-output.txt ]]; then
-      COMMIT_EXTRA+="\n\n--- ESLint Output ---\n$(tail -20 scripts/eslint-output.txt)"
-    fi
-    if [[ -f scripts/ts-output.txt ]]; then
-      COMMIT_EXTRA+="\n\n--- TypeScript Output ---\n$(tail -20 scripts/ts-output.txt)"
-    fi
-    COMMIT_EXTRA+="$COMMIT_AUTOINFO"
-    commit_msg="$DEFAULT_SUMMARY$COMMIT_EXTRA"
-    echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
-    echo "Do you want to edit the commit message? (y/n): "
-    read edit_commit_choice
-    if [[ "$edit_commit_choice" == "y" ]]; then
-      echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
-      while IFS= read -r line; do
-        [[ -z "$line" ]] && break
-        commit_msg+="$line\n"
-      done
-    fi
-    git add -A
-    git commit -m "$commit_msg"
-    # Open GitHub page for the branch if remote is origin
-    if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
-      open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
-    fi
-  else
-    echo "Invalid option. Aborting."
-    exit 1
+    continue
+  fi
+  commit_msg="sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$COMMIT_AUTOINFO"
+  echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
+  echo "Do you want to edit the commit message? (y/n): "
+  read edit_commit_choice
+  if [[ "$edit_commit_choice" == "y" ]]; then
+    echo "Enter your commit message. The generated summary is shown above. (End with an empty line):"
+    while IFS= read -r line; do
+      [[ -z "$line" ]] && break
+      commit_msg+="$line\n"
+    done
+  fi
+  git add -A
+  git commit -m "$commit_msg"
+  # Open GitHub page for the branch if remote is origin
+  if [[ "origin" == "origin" && -n "$CURRENT_BRANCH" ]]; then
+    open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
   fi
 else
   echo -e "${GREEN}No uncommitted changes to auto-commit.${NC}"
@@ -557,17 +408,17 @@ if [[ -n $(git stash list) ]]; then
 fi
 
 # 4. Show staged vs. unstaged changes, and deleted/renamed files separately
-printf '\n\033[1;34m==== Staged Changes ===='\033[0m\n'
+printf "\n\033[1;34m==== Staged Changes ====\033[0m\n"
 git diff --cached --name-status | tee >(cat >> "$LOG_FILE")
 PRECOMMIT_SUMMARY+="==== Staged Changes ===="
 PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-status)\n"
-printf '\n\033[1;34m==== Unstaged Changes ===='\033[0m\n'
+printf "\n\033[1;34m==== Unstaged Changes ====\033[0m\n"
 git diff --name-status | tee >(cat >> "$LOG_FILE")
 PRECOMMIT_SUMMARY+="==== Unstaged Changes ===="
 PRECOMMIT_SUMMARY+="\n$(git diff --name-status)\n"
 
 # 5. Show deleted and renamed files separately, prompt for critical deletions
-printf '\n\033[1;34m==== Deleted Files (staged) ===='\033[0m\n'
+printf '\n\033[1;34m==== Deleted Files (staged) ====\033[0m\n'
 DELETED_FILES=($(git diff --cached --name-status | awk '$1=="D"{print $2}'))
 for f in "${DELETED_FILES[@]}"; do
   echo "$f"
@@ -583,17 +434,17 @@ for f in "${DELETED_FILES[@]}"; do
   fi
   PRECOMMIT_SUMMARY+="Deleted: $f\n"
 done
-printf '\n\033[1;34m==== Renamed Files (staged) ===='\033[0m\n'
+printf '\n\033[1;34m==== Renamed Files (staged) ====\033[0m\n'
 git diff --cached --name-status | awk '$1 ~ /^R/ {print $2 " -> " $3}' | tee >(cat >> "$LOG_FILE")
 PRECOMMIT_SUMMARY+="==== Renamed Files (staged) ===="
 PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-status | awk '$1 ~ /^R/ {print $2 " -> " $3}')\n"
 
 # 6. File type and directory summary (staged changes)
-printf '\n\033[1;34m==== File Type Summary (staged) ===='\033[0m\n'
+printf '\n\033[1;34m==== File Type Summary (staged) ====\033[0m\n'
 git diff --cached --name-only | awk -F. '{print $NF}' | sort | uniq -c | sort -nr | tee >(cat >> "$LOG_FILE")
 PRECOMMIT_SUMMARY+="==== File Type Summary (staged) ===="
 PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-only | awk -F. '{print $NF}' | sort | uniq -c | sort -nr)\n"
-printf '\n\033[1;34m==== Directory Summary (staged) ===='\033[0m\n'
+printf '\n\033[1;34m==== Directory Summary (staged) ====\033[0m\n'
 git diff --cached --name-only | awk -F/ '{print $1}' | sort | uniq -c | sort -nr | tee >(cat >> "$LOG_FILE")
 PRECOMMIT_SUMMARY+="==== Directory Summary (staged) ===="
 PRECOMMIT_SUMMARY+="\n$(git diff --cached --name-only | awk -F/ '{print $1}' | sort | uniq -c | sort -nr)\n"
