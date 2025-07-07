@@ -770,7 +770,8 @@ done
 unset IFS
 # Guard all log writes
 if [[ -w "$LOG_FILE" ]]; then
-  printf "\nSummary of updates:\n" >> "$LOG_FILE"
+  echo "" >> "$LOG_FILE"
+  echo "Summary of updates:" >> "$LOG_FILE"
   for line in "${summary_table[@]}"; do
     echo "$line" >> "$LOG_FILE"
   done
