@@ -10,6 +10,21 @@ mkdir -p "$(dirname "$LOG_FILE")"
 touch "$LOG_FILE"
 SKIP_TESTS=false
 
+# --- SUMMARY FUNCTION ---
+show_stash_and_precommit_summary() {
+  echo "\033[1;35m----- Git Commit Summary -----\033[0m"
+  git --no-pager log -1 --stat
+  echo
+  echo "Current branch: $(git symbolic-ref --short -q HEAD)"
+  git status -sb
+  echo
+  if git stash list | grep -q .; then
+    echo "Latest stash:"
+    git stash list | head -1
+  fi
+  echo "\033[1;35m-----------------------------\033[0m"
+}
+
 # Parse arguments for --remote, --skip-tests, --auto-commit-wip, and --commit-current-branch-only
 AUTO_COMMIT_WIP=false
 COMMIT_CURRENT_BRANCH_ONLY=false
