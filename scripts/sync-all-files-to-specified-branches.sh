@@ -253,7 +253,8 @@ if [[ -n $(git status --porcelain) ]]; then
       open "https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/$CURRENT_BRANCH"
     fi
     show_stash_and_precommit_summary
-    # Do NOT return here; always continue to sync/push section
+    # Prevent running tests after WIP commit
+    exit 0
   else
     commit_msg="sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$COMMIT_AUTOINFO"
     echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
