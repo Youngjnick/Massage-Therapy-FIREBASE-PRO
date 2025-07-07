@@ -171,6 +171,9 @@ if [[ -n $(git status --porcelain) ]]; then
   esac
 fi
 
+# Normalize COMMIT_MODE to lowercase for consistent checks
+eval COMMIT_MODE="\${COMMIT_MODE:l}"
+
 # Set SKIP_TESTS if WIP mode was selected interactively
 if [[ "$COMMIT_MODE" == "wip" ]]; then
   SKIP_TESTS=true
