@@ -489,7 +489,7 @@ fi
 PRECOMMIT_SUMMARY=""
 
 # 1. Show last 1-3 commit messages
-printf '\n\033[1;34m==== Last 3 commit messages ===='\033[0m\n'
+printf "\n\033[1;34m==== Last 3 commit messages ====\033[0m\n"
 git log -3 --oneline --decorate --color=always | tee >(cat >> "$LOG_FILE")
 PRECOMMIT_SUMMARY+="==== Last 3 commit messages ===="
 PRECOMMIT_SUMMARY+="\n$(git log -3 --oneline --decorate)\n"
@@ -538,7 +538,7 @@ if [[ -f scripts/playwright-output.txt ]]; then
     PW_SUMMARY="${GREEN}E2E: 0 failed${NC}"
   fi
 fi
-printf '\n\033[1;34m==== Last Lint/Type/Test/E2E Status ===='\033[0m\n'
+printf "\n\033[1;34m==== Last Lint/Type/Test/E2E Status ====\033[0m\n"
 echo "$LINT_SUMMARY"
 echo "$TS_SUMMARY"
 echo "$JEST_SUMMARY"
