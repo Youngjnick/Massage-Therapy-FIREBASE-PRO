@@ -197,37 +197,39 @@ fi
 
 # Always stage and commit all changes if there are uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
-  # Remove prompt for a detailed commit summary
-  user_summary=""
-  DEFAULT_SUMMARY=""
-
-  # Always use WIP or normal commit, skip commit/WIP/local/abort prompt
-  # Auto-generate changed files and diffstat info
+  # Classic commit message preview: WIP/test/lint summaries, changed files, diff summary
   CHANGED_FILES=$(git status --short)
   DIFF_STAT=$(git diff --cached --stat)
-  COMMIT_AUTOINFO="\n\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
-
-  # Always use WIP commit if SKIP_TESTS is true, else normal commit
   commit_msg=""
   if [[ "$SKIP_TESTS" = true ]]; then
-    WIP_EXTRA="\n[WIP MODE: Tests/lint/type checks skipped]"
-    if [[ -f scripts/eslint-output.txt ]]; then
-      WIP_EXTRA+="\n\n--- Last ESLint Output ---\n$(tail -20 scripts/eslint-output.txt)"
-    fi
-    if [[ -f scripts/ts-output.txt ]]; then
-      WIP_EXTRA+="\n\n--- Last TypeScript Output ---\n$(tail -20 scripts/ts-output.txt)"
-    fi
-    if [[ -f scripts/test-output.txt ]]; then
-      WIP_EXTRA+="\n\n--- Last Jest Output ---\n$(tail -20 scripts/test-output.txt)"
-    fi
-    if [[ -f scripts/playwright-output.txt ]]; then
-      WIP_EXTRA+="\n\n--- Last Playwright Output ---\n$(tail -20 scripts/playwright-output.txt)"
-    fi
-    commit_msg="WIP: auto-commit before sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$WIP_EXTRA$COMMIT_AUTOINFO"
+    commit_msg+="WIP: Tests/lint/type checks skipped"
   else
-    commit_msg="sync-all-files-to-specified-branches.sh\n\n$DEFAULT_SUMMARY$COMMIT_AUTOINFO"
+    commit_msg+="Auto-commit before sync-all-files-to-specified-branches.sh"
   fi
+  commit_msg+="\n\n--- Changed files ---\n$CHANGED_FILES\n\n--- Diff summary ---\n$DIFF_STAT"
   echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
+  echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
+  read commit_msg_action
+  case "$commit_msg_action" in
+    e|E)
+      TMP_COMMIT_MSG_FILE=$(mktemp)
+      echo "$commit_msg" > "$TMP_COMMIT_MSG_FILE"
+      ${EDITOR:-nano} "$TMP_COMMIT_MSG_FILE"
+      commit_msg=$(cat "$TMP_COMMIT_MSG_FILE")
+      rm -f "$TMP_COMMIT_MSG_FILE"
+      ;;
+    q|Q)
+      echo "Aborted by user before commit."
+      exit 1
+      ;;
+    a|A|"")
+      # Accept as is
+      ;;
+    *)
+      echo "Invalid choice. Aborting."
+      exit 1
+      ;;
+  esac
   git add -A
   git commit -m "$commit_msg"
 
