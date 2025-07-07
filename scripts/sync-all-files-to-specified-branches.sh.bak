@@ -576,7 +576,6 @@ if [[ -w "$LOG_FILE" ]]; then
   echo -e "\n==== Pre-commit summary ($(date '+%Y-%m-%d %H:%M:%S %Z')) ====" >> "$LOG_FILE"
   echo -e "$PRECOMMIT_SUMMARY" >> "$LOG_FILE"
 fi
-}
 
 # --- ALWAYS PUSH/UPLOAD SECTION ---
 # If WIP_MODE is set, commit as WIP, otherwise normal commit
@@ -691,11 +690,11 @@ for target in $all_targets; do
   REMOTE_HASH=$(git ls-remote $remote $branch | awk '{print $1}')
   # --- Auto-check: verify local commit exists on remote branch ---
   if git ls-remote $remote $branch | grep -q "$LOCAL_HASH"; then
-    echo -e "${GREEN} Verified: commit $LOCAL_HASH exists on $remote/$branch${NC}"
-    echo " Verified: commit $LOCAL_HASH exists on $remote/$branch" >> "$LOG_FILE"
+    echo -e "${GREEN}✔ Verified: commit $LOCAL_HASH exists on $remote/$branch${NC}"
+    echo "✔ Verified: commit $LOCAL_HASH exists on $remote/$branch" >> "$LOG_FILE"
   else
-    echo -e "${RED} WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!${NC}"
-    echo " WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!" >> "$LOG_FILE"
+    echo -e "${RED}❌ WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!${NC}"
+    echo "❌ WARNING: commit $LOCAL_HASH does NOT exist on $remote/$branch!" >> "$LOG_FILE"
     echo -e "${YELLOW}Troubleshooting: Try running 'git fetch $remote' and 'git ls-remote $remote $branch' manually.${NC}"
     echo "[DIAG] git ls-remote $remote $branch output:"
     git ls-remote $remote $branch
@@ -708,14 +707,14 @@ for target in $all_targets; do
   REMOTE_BRANCH_HASH=$(git rev-parse $remote/$branch 2>/dev/null)
   SUMMARY_STATUS=""
   if [[ "$LOCAL_BRANCH_HASH" == "$REMOTE_BRANCH_HASH" && -n "$REMOTE_BRANCH_HASH" ]]; then
-    echo -e "${GREEN} Local branch and remote branch $remote/$branch are in sync: $LOCAL_BRANCH_HASH${NC}"
-    echo " Local branch and remote branch $remote/$branch are in sync: $LOCAL_BRANCH_HASH" >> "$LOG_FILE"
+    echo -e "${GREEN}✔ Local branch and remote branch $remote/$branch are in sync: $LOCAL_BRANCH_HASH${NC}"
+    echo "✔ Local branch and remote branch $remote/$branch are in sync: $LOCAL_BRANCH_HASH" >> "$LOG_FILE"
     SUMMARY_STATUS="$remote/$branch: $LOCAL_BRANCH_HASH (OK, $PUSH_MODE, refs match)"
   else
-    echo -e "${RED} Local branch and remote branch $remote/$branch are NOT in sync!${NC}"
+    echo -e "${RED}❌ Local branch and remote branch $remote/$branch are NOT in sync!${NC}"
     echo -e "  Local:  $LOCAL_BRANCH_HASH"
     echo -e "  Remote: $REMOTE_BRANCH_HASH"
-    echo " Local branch and remote branch $remote/$branch are NOT in sync!" >> "$LOG_FILE"
+    echo "❌ Local branch and remote branch $remote/$branch are NOT in sync!" >> "$LOG_FILE"
     echo "  Local:  $LOCAL_BRANCH_HASH" >> "$LOG_FILE"
     echo "  Remote: $REMOTE_BRANCH_HASH" >> "$LOG_FILE"
     SUMMARY_STATUS="$remote/$branch: $LOCAL_BRANCH_HASH (MISMATCH! refs differ, $PUSH_MODE)"
@@ -723,16 +722,16 @@ for target in $all_targets; do
   # Only add one summary_table entry per remote/branch, preferring the most robust status
   summary_table+=("$SUMMARY_STATUS")
   if [[ "$PUSH_SUCCESS" = true && "$LOCAL_HASH" == "$REMOTE_HASH" ]]; then
-    echo -e "${GREEN} $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
-    echo " $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
+    echo -e "${GREEN}✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)${NC}"
+    echo "✅ $remote/$branch is up to date with local commit $LOCAL_HASH (push: $PUSH_MODE)" >> "$LOG_FILE"
     summary_table+=("$remote/$branch: $LOCAL_HASH (OK, $PUSH_MODE)")
   elif [[ "$PUSH_SUCCESS" = true ]]; then
-    echo -e "${YELLOW}  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
-    echo "  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
+    echo -e "${YELLOW}⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)${NC}"
+    echo "⚠️  $remote/$branch pushed, but commit hash mismatch (local: $LOCAL_HASH, remote: $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
     summary_table+=("$remote/$branch: $LOCAL_HASH (WARNING! remote has $REMOTE_HASH, $PUSH_MODE)")
   else
-    echo -e "${RED} WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
-    echo " WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
+    echo -e "${RED}❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)${NC}"
+    echo "❌ WARNING: $remote/$branch did NOT update to $LOCAL_HASH (remote has $REMOTE_HASH, push: $PUSH_MODE)" >> "$LOG_FILE"
     summary_table+=("$remote/$branch: $LOCAL_HASH (MISMATCH! remote has $REMOTE_HASH, $PUSH_MODE)")
   fi
   if [[ "$remote" == "origin" ]]; then
@@ -790,8 +789,10 @@ for line in "${summary_table[@]}"; do
   else
     echo "$line"
   fi
+
 done
 unset IFS
+# Guard all log writes
 if [[ -w "$LOG_FILE" ]]; then
   echo "" >> "$LOG_FILE"
   echo "Summary of updates:" >> "$LOG_FILE"
@@ -799,6 +800,7 @@ if [[ -w "$LOG_FILE" ]]; then
     echo "$line" >> "$LOG_FILE"
   done
 fi
+
 # (Commented out) Seeding script call. Manual seeding is now required before running this sync script.
 # echo "Seeding Firestore questions..."
 # node scripts/upload_questions_to_firestore_2.js e
