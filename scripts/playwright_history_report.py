@@ -18,9 +18,9 @@ def main():
     # For demo, just pass empty run_stats (should be loaded from history for full implementation)
     run_stats = []
     report_txt.write_txt_summary(db_obj, run_stats)
-    print("[INFO] Markdown summary written.")
+    print(f"[INFO] Markdown summary written to {report_txt.REPORT_TXT_FILE}")
     report_html.generate_html_report(db_obj)
-    print("[INFO] HTML summary written.")
+    print(f"[INFO] HTML summary written to scripts/reports/playwright-history.html")
 
 if __name__ == "__main__":
     main()
