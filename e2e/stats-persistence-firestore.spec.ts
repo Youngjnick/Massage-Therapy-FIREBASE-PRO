@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';

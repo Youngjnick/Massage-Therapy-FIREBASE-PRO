@@ -36,60 +36,75 @@ test.describe('Quiz Stats Live Update', () => {
       await page.waitForTimeout(1000);
       await page.goto('/quiz');
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
-      await page.getByLabel('Quiz Length').fill('2');
-      await page.getByRole('button', { name: /start/i }).click();
-      await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });
-      const options = page.getByTestId('quiz-option');
-      for (let i = 0; i < 2; i++) {
-        await options.first().click();
-        // Short wait for UI update
-        await page.waitForTimeout(200);
-        // --- DEBUG: Log UI state after answering ---
-        const buttons = await page.locator('button').elementHandles();
-        for (const btn of buttons) {
-          const text = await btn.evaluate(el => el.textContent?.trim());
-          const enabled = await btn.isEnabled();
-          const visible = await btn.isVisible();
-          const html = await btn.evaluate(el => (el as HTMLElement).outerHTML);
-          console.log(`Button: '${text}', enabled: ${enabled}, visible: ${visible}, html: ${html}`);
+      // Wait for Quiz Length input
+      const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+      // Select a specific real topic for topic breakdowns
+      const TARGET_TOPIC_LABEL = 'Abdominal Muscle Origins';
+      const TARGET_TOPIC_VALUE = 'abdominal_muscle_origins';
+      let selected = false;
+      // Select the first real topic (not empty/Other) if topic select is present
+      const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+      if (await topicSelect.count() > 0) {
+        const options = await topicSelect.locator('option').all();
+        // Try to select by value first
+        for (const opt of options) {
+          const val = await opt.getAttribute('value');
+          if (val === TARGET_TOPIC_VALUE) {
+            await topicSelect.selectOption(val);
+            console.log('[E2E DEBUG] Selected topic value (by value):', val);
+            selected = true;
+            break;
+          }
         }
-        // --- END DEBUG ---
-        if (i < 1) {
-          // Click the first enabled and visible Next button (do not wait for visible)
-          const nextButtons = await page.locator('button').filter({ hasText: 'Next' }).elementHandles();
-          let clicked = false;
-          for (const btn of nextButtons) {
-            if (await btn.isVisible() && await btn.isEnabled()) {
-              await btn.click();
-              clicked = true;
-              break;
+        // If not found by value, try by label
+        if (!selected) {
+          for (const opt of options) {
+            const label = (await opt.textContent())?.trim();
+            if (label === TARGET_TOPIC_LABEL) {
+              const val = await opt.getAttribute('value');
+              if (val) {
+                await topicSelect.selectOption(val);
+                console.log('[E2E DEBUG] Selected topic value (by label):', val);
+                selected = true;
+                break;
+              }
             }
           }
-          if (!clicked) {
-            const allButtons = await page.locator('button').allTextContents();
-            console.log('No enabled/visible Next button found. Visible buttons:', allButtons);
-            try { await page.screenshot({ path: 'no-next-btn.png', fullPage: true }); } catch {/* ignore screenshot error */}
-            throw new Error('Next button not found after answering question.');
-          }
-        } else {
-          // Click the enabled and visible Finish Quiz button
-          const finishButtons = await page.locator('button').filter({ hasText: 'Finish Quiz' }).elementHandles();
-          let clicked = false;
-          for (const btn of finishButtons) {
-            if (await btn.isVisible() && await btn.isEnabled()) {
-              await btn.click();
-              clicked = true;
+        }
+        // Fallback: select first valid topic (not empty/Other)
+        if (!selected) {
+          for (const opt of options) {
+            const val = await opt.getAttribute('value');
+            if (val && val !== '' && val.toLowerCase() !== 'other') {
+              await topicSelect.selectOption(val);
+              console.log('[E2E DEBUG] Selected topic value (fallback):', val);
               break;
             }
-          }
-          if (!clicked) {
-            const allButtons = await page.locator('button').allTextContents();
-            console.log('No enabled/visible Finish Quiz button found. Visible buttons:', allButtons);
-            try { await page.screenshot({ path: 'no-finish-btn.png', fullPage: true }); } catch {/* ignore screenshot error */}
-            throw new Error('Finish Quiz button not found after answering last question.');
           }
         }
       }
+      await quizLengthInput.fill('2');
+      await page.getByRole('button', { name: /start/i }).click();
+      await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });
+      // Answer first question
+      const firstOption = page.getByTestId('quiz-option').first();
+      await expect(firstOption).toBeVisible();
+      await firstOption.click();
+      await page.waitForTimeout(150);
+      // Wait for Next button to be enabled, then click
+      const nextBtn = page.getByRole('button', { name: /next/i });
+      await expect(nextBtn).toBeEnabled({ timeout: 10000 });
+      await nextBtn.click();
+      // Answer second question
+      const secondOption = page.getByTestId('quiz-option').first();
+      await expect(secondOption).toBeVisible();
+      await secondOption.click();
+      await page.waitForTimeout(150);
+      // Wait for Finish Quiz button to be enabled, then click
+      const finishBtn = page.locator('button[aria-label="Finish quiz"]');
+      await expect(finishBtn).toBeEnabled({ timeout: 10000 });
+      await finishBtn.click();
+      // Wait for results
       await expect(page.getByTestId('quiz-results')).toBeVisible();
       await page.goto('/analytics');
       // Poll for updated stats for up to 15 seconds

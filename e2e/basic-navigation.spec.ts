@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 
 const pages = [
   { path: '/', selector: 'body' },

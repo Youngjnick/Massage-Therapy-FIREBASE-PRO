@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
 import { fileURLToPath } from 'url';
+import { exec } from 'child_process';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
@@ -339,6 +340,13 @@ async function uploadQuestions() {
   if (failedQuestions.length > 0) {
     console.log('Failed questions:');
     failedQuestions.forEach(f => console.log(`- [${f.id}]: ${f.error}`));
+  }
+  // Open emulator UI if uploading to emulator
+  if (target === 'e') {
+    const open = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open';
+    const url = 'http://localhost:4000/firestore/default/data/questions';
+    console.log(`Opening Firestore Emulator UI at ${url}...`);
+    exec(`${open} ${url}`);
   }
   process.exit(0);
 }

@@ -2,8 +2,9 @@ import React from 'react';
 
 const Spinner: React.FC<{ size?: number }> = ({ size = 32 }) => (
   <div
-    role="status"
+    data-testid="quiz-loading"
     aria-label="Loading"
+    role="status"
     style={{
       display: 'inline-block',
       width: size,
@@ -15,7 +16,22 @@ const Spinner: React.FC<{ size?: number }> = ({ size = 32 }) => (
       marginRight: 12,
       verticalAlign: 'middle',
     }}
-  />
+  >
+    <span
+      style={{
+        position: 'absolute',
+        width: 1,
+        height: 1,
+        padding: 0,
+        margin: -1,
+        overflow: 'hidden',
+        clip: 'rect(0,0,0,0)',
+        border: 0,
+      }}
+    >
+      Loading...
+    </span>
+  </div>
 );
 
 export default Spinner;

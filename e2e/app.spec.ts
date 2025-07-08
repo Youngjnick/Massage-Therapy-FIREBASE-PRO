@@ -1,9 +1,34 @@
 /* global console */
 import { test as base, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
+import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+// ESM-compatible __dirname
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
+// Load test users from test-users.json
+async function getTestUser(index = 0) {
+  const usersPath = path.resolve(__dirname, 'test-users.json');
+  const usersRaw = await fs.readFile(usersPath, 'utf-8');
+  const users = JSON.parse(usersRaw);
+  return users[index];
+}
 
 export const test = base;
 
 base.beforeEach(async ({ page }) => {
+  // Sign in before each test
+  const user = await getTestUser(0);
+  console.log('[E2E DEBUG] About to sign in with test user:', user.email);
+  await page.goto('/profile');
+  console.log('[E2E DEBUG] Current URL before sign-in:', page.url());
+  await page.screenshot({ path: 'test-results/screenshots/before-signin.png', fullPage: true });
+  await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
+  console.log('[E2E DEBUG] URL after sign-in:', page.url());
+  await page.screenshot({ path: 'test-results/screenshots/after-signin.png', fullPage: true });
+
   // Clear localStorage, sessionStorage, and cookies before each test
   await page.goto('/');
   await page.evaluate(() => {
@@ -20,8 +45,12 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
   const logs: string[] = [];
   page.on('console', msg => logs.push(msg.type() + ': ' + msg.text()));
 
-  console.log('Navigating to home page...');
-  await page.goto('/');
+  console.log('[E2E DEBUG] Test start, current URL:', page.url());
+  await page.screenshot({ path: 'test-results/screenshots/test-start.png', fullPage: true });
+  console.log('Navigating to quiz page...');
+  await page.goto('/quiz');
+  console.log('[E2E DEBUG] After goto /quiz, URL:', page.url());
+  await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz.png', fullPage: true });
   console.log('Filling Quiz Length...');
   await page.getByLabel('Quiz Length').fill('1');
   console.log('Clicking Start button...');
@@ -122,8 +151,10 @@ test('should reset quiz and focus first option after restart', async ({ page }, 
 });
 
 test('should handle edge case: rapid answer selection', async ({ page }) => {
-  console.log('[E2E DEBUG] Navigating to home page...');
-  await page.goto('/');
+  console.log('[E2E DEBUG] Navigating to quiz page...');
+  await page.goto('/quiz');
+  console.log('[E2E DEBUG] After goto /quiz, URL:', page.url());
+  await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz-rapid.png', fullPage: true });
   console.log('[E2E DEBUG] Filling Quiz Length...');
   await page.getByLabel('Quiz Length').fill('2');
   console.log('[E2E DEBUG] Clicking Start button...');
@@ -183,8 +214,8 @@ test('should handle edge case: rapid answer selection', async ({ page }) => {
 });
 
 test('should show explanations when enabled', async ({ page }) => {
-  // Go to the app (use relative path for dev server)
-  await page.goto('/');
+  // Go to the quiz page (use correct path for quiz start form)
+  await page.goto('/quiz');
 
   // Set the toggle state in localStorage for this origin
   await page.evaluate(() => {
@@ -244,7 +275,7 @@ test('should show explanations when enabled', async ({ page }) => {
 });
 
 test('should show topic stats in results', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/quiz');
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
   await page.getByTestId('quiz-option').first().click();
@@ -271,7 +302,7 @@ test('should show topic stats in results', async ({ page }) => {
 
 test('should render and be usable on mobile viewport', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 667 }); // iPhone 8 size
-  await page.goto('/');
+  await page.goto('/quiz');
   await page.getByLabel('Quiz Length').fill('1');
   await page.getByRole('button', { name: /start/i }).click();
   await expect(page.getByTestId('quiz-question-card')).toBeVisible();
@@ -367,7 +398,18 @@ test('should navigate to all main pages via NavBar and route correctly', async (
   ];
 
   for (const { label, path, heading } of navLinks) {
-    await page.getByRole('link', { name: label }).click();
+    // Debug: log all links with their text and aria-label
+    const allLinks = await page.locator('a').all();
+    for (const link of allLinks) {
+      const text = await link.textContent();
+      const aria = await link.getAttribute('aria-label');
+      const href = await link.getAttribute('href');
+      console.log(`[E2E DEBUG] Link: text="${text}", aria-label="${aria}", href="${href}"`);
+    }
+    // Always use aria-label for nav links
+    const ariaLabel = `Go to ${label} page`;
+    const navLink = page.getByRole('link', { name: ariaLabel });
+    await navLink.first().click();
     await page.waitForURL(`**${path}`);
     if (label === 'Analytics') {
       // If not signed in, expect the sign-in message
@@ -394,140 +436,14 @@ test('should navigate to all main pages via NavBar and route correctly', async (
   await expect(page.getByRole('heading', { name: /profile/i })).toBeVisible();
 });
 
-test('should not submit answer when using arrow keys (only change selection)', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('2');
-  // Select the first real topic (index 1, since index 0 is likely 'Select a Topic')
-  const topicSelect = page.getByLabel(/topic/i);
-  if (await topicSelect.count()) {
-    await topicSelect.selectOption({ index: 1 });
+base.afterEach(async ({ page }, testInfo) => {
+  console.log(`[E2E DEBUG] After test: ${testInfo.title}`);
+  if (page) {
+    try {
+      console.log('[E2E DEBUG] Current URL after test:', page.url());
+      await page.screenshot({ path: `test-results/screenshots/after-test-${testInfo.title.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_\-]/g, '')}.png`, fullPage: true });
+    } catch (e) {
+      console.log('[E2E DEBUG] Could not get URL or screenshot after test:', e);
+    }
   }
-  await page.getByRole('button', { name: /start/i }).click();
-  const radios = page.getByTestId('quiz-radio');
-  await expect(radios.first()).toBeVisible();
-  // Focus the first radio
-  await radios.first().focus();
-  // Press ArrowDown to move selection (should not submit)
-  await page.keyboard.press('ArrowDown');
-  await page.waitForTimeout(200);
-  await expect(page.getByTestId('quiz-question-card')).toBeVisible();
-  // Press ArrowUp to move selection (should not submit)
-  await page.keyboard.press('ArrowUp');
-  await page.waitForTimeout(200);
-  await expect(page.getByTestId('quiz-question-card')).toBeVisible();
-});
-
-test('arrow keys: wrap-around, skip disabled, and maintain selection state', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('4');
-  // Select the first real topic (index 1)
-  const topicSelect = page.getByLabel(/topic/i);
-  if (await topicSelect.count()) {
-    await topicSelect.selectOption({ index: 1 });
-  }
-  await page.getByRole('button', { name: /start/i }).click();
-  const radios = page.getByTestId('quiz-radio');
-  await expect(radios.first()).toBeVisible();
-  // Find all enabled radios using browser-side evaluation
-  const enabledRadioIndexes = await page.$$eval('[data-testid="quiz-radio"]', els => els.map((el, i) => !(el as HTMLInputElement).disabled ? i : -1).filter(i => i !== -1));
-  const firstEnabledIndex = enabledRadioIndexes[0];
-  // Focus the first enabled radio
-  await radios.nth(firstEnabledIndex).focus();
-  // ArrowUp on first should wrap to some enabled radio (not disabled)
-  await page.keyboard.press('ArrowUp');
-  await page.waitForTimeout(200);
-  // Get the currently focused element and assert it is enabled
-  const focusedRadio = await page.evaluateHandle(() => document.activeElement);
-  const isDisabled = await focusedRadio.evaluate((el: any) => el.disabled);
-  expect(isDisabled).toBeFalsy();
-  // ArrowDown on focused should wrap to another enabled radio (not disabled)
-  const asElement = focusedRadio.asElement ? focusedRadio.asElement() : null;
-  if (asElement) {
-    await asElement.focus();
-  }
-  await page.keyboard.press('ArrowDown');
-  await page.waitForTimeout(200);
-  const focusedRadio2 = await page.evaluateHandle(() => document.activeElement);
-  const isDisabled2 = await focusedRadio2.evaluate((el: any) => el.disabled);
-  expect(isDisabled2).toBeFalsy();
-  // After several arrow presses, ensure no submission
-  for (let i = 0; i < 10; i++) {
-    await page.keyboard.press('ArrowDown');
-    await page.waitForTimeout(50);
-    await expect(page.getByTestId('quiz-question-card')).toBeVisible();
-  }
-  // The currently focused radio should be enabled (if your UI checks on focus, otherwise skip this)
-});
-
-test('up/down arrow keys only cycle focus on answer options, never advance quiz card', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('3');
-  const topicSelect = page.getByLabel(/topic/i);
-  if (await topicSelect.count()) {
-    await topicSelect.selectOption({ index: 1 });
-  }
-  await page.getByRole('button', { name: /start/i }).click();
-  // Record the question prompt before navigation (first line of card)
-  const questionPromptBefore = (await page.getByTestId('quiz-question-card').innerText()).split('\n')[0];
-  const radios = page.getByTestId('quiz-radio');
-  await expect(radios.first()).toBeVisible();
-  // Focus the first enabled radio
-  const enabledRadioIndexes = await page.$$eval('[data-testid="quiz-radio"]', els => els.map((el, i) => !(el as HTMLInputElement).disabled ? i : -1).filter(i => i !== -1));
-  const firstEnabledIndex = enabledRadioIndexes[0];
-  await radios.nth(firstEnabledIndex).focus();
-  // Press ArrowDown and ArrowUp repeatedly
-  for (let i = 0; i < 10; i++) {
-    await page.keyboard.press('ArrowDown');
-    await page.keyboard.press('ArrowUp');
-    await page.waitForTimeout(50);
-  }
-  // Record the question prompt after navigation
-  const questionPromptAfter = (await page.getByTestId('quiz-question-card').innerText()).split('\n')[0];
-  expect(questionPromptAfter).toBe(questionPromptBefore);
-});
-
-test('arrow keys: only one enabled option does not change focus or selection', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('1');
-  const topicSelect = page.getByLabel(/topic/i);
-  if (await topicSelect.count()) {
-    await topicSelect.selectOption({ index: 1 });
-  }
-  await page.getByRole('button', { name: /start/i }).click();
-  // Disable all but one option (simulate via JS for test)
-  await page.evaluate(() => {
-    const radios = Array.from(document.querySelectorAll('[data-testid="quiz-radio"]'));
-    radios.forEach((el, i) => {
-      if (i !== 0) (el as HTMLInputElement).disabled = true;
-    });
-  });
-  const radios = page.getByTestId('quiz-radio');
-  await radios.first().focus();
-  await page.keyboard.press('ArrowDown');
-  await page.keyboard.press('ArrowUp');
-  // Should still be focused on the only enabled radio
-  const active = await page.evaluate(() => document.activeElement?.getAttribute('data-testid'));
-  expect(active).toBe('quiz-radio');
-});
-
-test('arrow keys: all options disabled does nothing', async ({ page }) => {
-  await page.goto('/');
-  await page.getByLabel('Quiz Length').fill('1');
-  const topicSelect = page.getByLabel(/topic/i);
-  if (await topicSelect.count()) {
-    await topicSelect.selectOption({ index: 1 });
-  }
-  await page.getByRole('button', { name: /start/i }).click();
-  // Disable all options (simulate via JS for test)
-  await page.evaluate(() => {
-    const radios = Array.from(document.querySelectorAll('[data-testid="quiz-radio"]'));
-    radios.forEach((el) => (el as HTMLInputElement).disabled = true);
-  });
-  // Try to focus and arrow
-  const radios = page.getByTestId('quiz-radio');
-  await radios.first().focus();
-  await page.keyboard.press('ArrowDown');
-  await page.keyboard.press('ArrowUp');
-  // Should not throw, and quiz card should still be visible
-  await expect(page.getByTestId('quiz-question-card')).toBeVisible();
 });

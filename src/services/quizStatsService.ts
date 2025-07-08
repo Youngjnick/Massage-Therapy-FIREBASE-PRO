@@ -69,6 +69,18 @@ export async function updateQuizStatsOnFinish({
       streakHistory,
       stack: new Error().stack
     });
+    // Log Firestore doc paths and data before writing
+    console.log('[E2E DEBUG] Firestore analyticsRef path:', analyticsRef.path);
+    console.log('[E2E DEBUG] Firestore analyticsRef data:', {
+      completed: newCompleted,
+      correct,
+      total,
+      streak: prev.streak || 0,
+      badges: prev.badges || 0,
+      badgeProgress,
+      streakHistory,
+      updatedAt: new Date().toISOString(),
+    });
     try {
       await setDoc(
         analyticsRef,
@@ -88,16 +100,42 @@ export async function updateQuizStatsOnFinish({
         user: user.uid,
         completed: newCompleted
       });
+      if (typeof window !== 'undefined') {
+        (window as any).__QUIZ_STATS_DEBUG__ = {
+          status: 'success',
+          user: user.uid,
+          completed: newCompleted,
+          correct,
+          total,
+          time: new Date().toISOString(),
+        };
+      }
     } catch (writeErr) {
       console.error('[E2E DEBUG] updateQuizStatsOnFinish: analytics write error', writeErr);
+      if (typeof window !== 'undefined') {
+        (window as any).__QUIZ_STATS_DEBUG__ = {
+          status: 'error',
+          user: user.uid,
+          error: (writeErr && (writeErr as any).message) ? (writeErr as any).message : String(writeErr),
+          time: new Date().toISOString(),
+        };
+      }
     }
     const topicStatsRef = doc(db, 'users', user.uid, 'stats', 'topicStats');
+    // Log Firestore doc paths and data before writing
+    console.log('[E2E DEBUG] Firestore topicStatsRef path:', topicStatsRef.path);
+    console.log('[E2E DEBUG] Firestore topicStatsRef data:', stats);
     try {
       await setDoc(topicStatsRef, stats, { merge: true });
       console.log('[E2E DEBUG] updateQuizStatsOnFinish: topicStats write success', { user: user.uid });
     } catch (topicWriteErr) {
       console.error('[E2E DEBUG] updateQuizStatsOnFinish: topicStats write error', topicWriteErr);
     }
+    await writeQuizProgressToFirestore({
+      userAnswers,
+      shuffledQuestions,
+      showResults: true,
+    });
   } catch (err) {
     console.error('[E2E DEBUG] Failed to update Firestore stats at quiz finish:', err);
   }
@@ -154,5 +192,42 @@ export async function updateQuizStatsOnAnswer({
     await setDoc(topicStatsRef, stats, { merge: true });
   } catch (err) {
     console.error('Failed to update Firestore stats on answer:', err);
+  }
+}
+
+/**
+ * Write quiz progress to Firestore: users/{uid}/quizProgress/current
+ * Includes userAnswers, shuffledQuestions, showResults, and timestamp.
+ * Adds debug logging for E2E diagnosis.
+ */
+export async function writeQuizProgressToFirestore({
+  userAnswers,
+  shuffledQuestions,
+  showResults
+}: {
+  userAnswers: number[];
+  shuffledQuestions: Question[];
+  showResults: boolean;
+}) {
+  try {
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if (!user) {
+      console.log('[E2E DEBUG] writeQuizProgressToFirestore: No user');
+      return;
+    }
+    const quizProgressRef = doc(db, 'users', user.uid, 'quizProgress', 'current');
+    const data = {
+      userAnswers,
+      shuffledQuestions,
+      showResults,
+      updatedAt: new Date().toISOString(),
+    };
+    console.log('[E2E DEBUG] Firestore quizProgressRef path:', quizProgressRef.path);
+    console.log('[E2E DEBUG] Firestore quizProgressRef data:', data);
+    await setDoc(quizProgressRef, data, { merge: true });
+    console.log('[E2E DEBUG] writeQuizProgressToFirestore: success');
+  } catch (err) {
+    console.error('[E2E DEBUG] writeQuizProgressToFirestore: error', err);
   }
 }

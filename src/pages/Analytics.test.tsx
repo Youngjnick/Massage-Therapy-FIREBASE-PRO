@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, waitFor, act } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 
 // Static mocks for Firebase Auth and Firestore
 jest.mock('../firebaseClient', () => ({ db: {} }));
@@ -64,7 +65,11 @@ describe('Analytics Page', () => {
   });
 
   it('renders analytics stats for authenticated user', async () => {
-    render(<Analytics />);
+    render(
+      <MemoryRouter>
+        <Analytics />
+      </MemoryRouter>
+    );
     const quizzesDiv = screen.getByText('Quizzes Taken:').parentElement!;
     expect(quizzesDiv).toHaveTextContent(/Quizzes Taken:\s*5/);
     const correctDiv = screen.getByText('Correct Answers:').parentElement!;
@@ -87,12 +92,20 @@ describe('Analytics Page', () => {
       cb(null);
       return jest.fn();
     });
-    render(<Analytics />);
+    render(
+      <MemoryRouter>
+        <Analytics />
+      </MemoryRouter>
+    );
     expect(await screen.findByText(/please sign in/i)).toBeInTheDocument();
   });
 
   it('updates UI when Firestore data changes', async () => {
-    render(<Analytics />);
+    render(
+      <MemoryRouter>
+        <Analytics />
+      </MemoryRouter>
+    );
     const quizzesDiv = screen.getByText('Quizzes Taken:').parentElement!;
     const correctDiv = screen.getByText('Correct Answers:').parentElement!;
     // Initial state
@@ -125,7 +138,11 @@ describe('Analytics Page', () => {
   });
 
   it('handles missing analytics document gracefully', async () => {
-    render(<Analytics />);
+    render(
+      <MemoryRouter>
+        <Analytics />
+      </MemoryRouter>
+    );
     const quizzesDiv = screen.getByText('Quizzes Taken:').parentElement!;
     const correctDiv = screen.getByText('Correct Answers:').parentElement!;
     // Simulate missing doc as the first snapshot after render

@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
-/* global console */
+import { uiSignIn } from './helpers/uiSignIn';
+import fs from 'fs/promises';
+import path from 'path';
+
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 test.describe('Critical Quiz Edge Cases and Accessibility', () => {
   test.skip('Partial answers: finish quiz with unanswered questions', async ({ page }) => {
@@ -35,8 +39,14 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
   });
 
   test('ARIA attributes: quiz options and navigation', async ({ page }, testInfo) => {
+    // Use the working sign-in UI helper
+    const usersPath = path.resolve(__dirname, 'test-users.json');
+    const usersRaw = await fs.readFile(usersPath, 'utf-8');
+    const users = JSON.parse(usersRaw);
+    const user = users[0];
+    await uiSignIn(page, { email: user.email, password: user.password });
     // Robust: always clear storage and cookies before test
-    await page.goto('/');
+    await page.goto('/quiz');
     await page.evaluate(() => {
       window.localStorage.clear();
       window.sessionStorage.clear();
@@ -51,6 +61,11 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
       console.error('Quiz loading spinner did not disappear after 30s. Page HTML:', html);
       if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
       throw new Error('Quiz did not finish loading after 30s.');
+    }
+    // Debug: capture screenshot and HTML before searching for Quiz Length input
+    if (testInfo) {
+      await testInfo.attach('before-quiz-length-screenshot', { body: await page.screenshot(), contentType: 'image/png' });
+      await testInfo.attach('before-quiz-length-html', { body: await page.content(), contentType: 'text/html' });
     }
     // Robust: try multiple selectors for quiz length input
     let quizLengthInput;
@@ -67,7 +82,7 @@ test.describe('Critical Quiz Edge Cases and Accessibility', () => {
         console.log('Filled Quiz Length input by fallback selector');
       } else {
         const html = await page.content();
-        console.error('Quiz Length input not found on /. Page HTML:', html);
+        console.error('Quiz Length input not found on /quiz. Page HTML:', html);
         if (testInfo) await testInfo.attach('page-html', { body: html, contentType: 'text/html' });
         throw new Error('Quiz Length input not found');
       }

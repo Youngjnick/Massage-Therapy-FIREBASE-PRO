@@ -33,10 +33,11 @@ const INTERACTIVE_SELECTORS = [
 
 test.describe('All Interactive Elements: ARIA and Keyboard Accessibility', () => {
   for (const pagePath of MAIN_PAGES) {
-    test(`All interactive elements on ${pagePath} have accessible names and ARIA roles`, async ({ page }, testInfo) => {
+    test(`All interactive elements on ${pagePath} have accessible names and ARIA roles @fast`, async ({ page }, testInfo) => {
       // Always sign in before visiting the page with dynamic test user
       const user = await getTestUser(0);
       await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
+      // Always navigate to the page under test after sign-in
       await page.goto(pagePath);
       // Wait for main content to appear (prevents stuck loading)
       await page.waitForSelector('.main-content', { timeout: 10000 });

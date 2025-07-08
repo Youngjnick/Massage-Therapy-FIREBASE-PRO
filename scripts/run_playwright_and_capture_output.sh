@@ -1,84 +1,111 @@
 #!/bin/zsh
-# Run Playwright tests and always capture output to scripts/playwright-output.txt, even if interrupted
+set -x
 
+# Function to extract only failing test file paths from output
+function update_last_failing_files() {
+  echo "[DEBUG] Running update_last_failing_files, OUTPUT_FILE=$OUTPUT_FILE"
+  if [[ -f "$OUTPUT_FILE" ]]; then
+    # If there are no lines with '✘', all tests passed, so clear the last failing file
+    if ! grep -q '✘' "$OUTPUT_FILE"; then
+      echo "[DEBUG] No failures found (no '✘' in output). Clearing $LAST_FAILING_FILE."
+      > "$LAST_FAILING_FILE"
+    else
+      # Extract all failing test file:line pairs (strip column), portable for macOS
+      grep -Eo 'e2e/[^ >]*\.spec\.[tc]s:[0-9]+:[0-9]+' "$OUTPUT_FILE" \
+        | sed -E 's/(:[0-9]+):[0-9]+$/\1/' \
+        | sort -u > "$LAST_FAILING_FILE"
+    fi
+    echo "[DEBUG] last-failing-playwright-files.txt contents:"
+    cat "$LAST_FAILING_FILE"
+  else
+    echo "[DEBUG] OUTPUT_FILE does not exist: $OUTPUT_FILE"
+  fi
+}
+
+OUTPUT_FILE="scripts/playwright-output.txt"
+LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
+
+function update_playwright_history() {
+  python3 scripts/playwright_history_report.py
+}
 
 # Always use local emulators, never Google Cloud
 export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
 export FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
 export FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f
 export GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f
-echo "Using FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID and GCLOUD_PROJECT=$GCLOUD_PROJECT"
 export NODE_ENV=test
 
-OUTPUT_FILE="scripts/playwright-output.txt"
-LAST_FAILING_FILE="scripts/last-failing-playwright-files.txt"
-
-# Function to extract failing test details from output
-function update_last_failing_files() {
-  date '+[DEBUG] Updating last-failing file at %Y-%m-%d %H:%M:%S' >> "$LAST_FAILING_FILE"
-  gawk '/^[[:space:]]*[✘xX-]/ {
-# Ensure gawk is available
-command -v gawk >/dev/null 2>&1 || { echo >&2 "gawk is required but not installed. Aborting."; exit 1; }
-    # Example line: ✘  31 [Desktop Chrome] › e2e/app.spec.ts:18:1 › Suite Name › Test Name (4.3s)
-    match($0, /\] › ([^ ]+) ([^\(]+)/, arr)
-    file=arr[1]
-    test=arr[2]
-    # Try to get the next error message (if present)
-    getline nextline
-    err=""
-    if (nextline ~ /Error:/) {
-      err=nextline
-    }
-    printf "%s ›%s%s\n", file, test, (err != "" ? " [" err "]" : "")
-  }' "$OUTPUT_FILE" | sort | uniq >> "$LAST_FAILING_FILE"
-  # If no failures, clear the file (but keep timestamp)
-  if [[ $(wc -l < "$LAST_FAILING_FILE") -le 1 ]]; then
-    > "$LAST_FAILING_FILE"
-    date '+[DEBUG] Last-failing file cleared at %Y-%m-%d %H:%M:%S' >> "$LAST_FAILING_FILE"
-  fi
-}
-
-# Ensure last-failing file is updated even on interruption
-trap update_last_failing_files EXIT
-
-echo "[DEBUG] trap for EXIT set. Will update output files on script exit."
-
-echo "[DEBUG] Script started. Current directory: $(pwd)"
-echo "[DEBUG] Output file: $OUTPUT_FILE"
-echo "[DEBUG] Last failing file: $LAST_FAILING_FILE"
+# Trap EXIT and INT (Ctrl+C) to always update last-failing-playwright-files.txt and playwright history
+trap 'update_last_failing_files; update_playwright_history' EXIT INT
 
 # Prompt user to choose which tests to run
-echo "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities): "
+printf "Which tests do you want to run? ([a]ll/[f]ailed/[p]riorities/[c]overage): "
 read -r choice
+
+# Coverage mode: run all tests with coverage and update history
+if [[ "$choice" == "c"* || "$choice" == "coverage"* ]]; then
+  echo "[INFO] Running tests with code coverage enabled."
+  # Always prompt for confirmation before running coverage tests
+  vite_pid=$(lsof -i :5173 -t 2>/dev/null | head -n1)
+  vite_status_msg=""
+  if [[ -n "$vite_pid" ]]; then
+    if ! ps -p "$vite_pid" -o env | grep -q 'COVERAGE=true'; then
+      vite_status_msg="[WARN] Vite dev server is running but not with COVERAGE=true. Coverage will NOT be collected!\n[HINT] Stop your dev server and restart it with: COVERAGE=true npm run dev"
+    else
+      vite_status_msg="[INFO] Vite dev server detected on port 5173 with COVERAGE=true."
+    fi
+  else
+    vite_status_msg="[WARN] Vite dev server is not running."
+  fi
+  echo "$vite_status_msg"
+  while true; do
+    echo "\nIs the Vite dev server running in coverage mode (COVERAGE=true npm run dev) and ready? [y/N]: "
+    read -r confirm_vite
+    if [[ "$confirm_vite" =~ ^[Yy]$ ]]; then
+      break
+    else
+      echo "[INFO] Please start the Vite dev server in another terminal with:"
+      echo "    COVERAGE=true npm run dev"
+      echo "Then type 'y' and press Enter here when the server is ready, or Ctrl+C to abort."
+    fi
+  done
+  COVERAGE=true PW_HEADLESS=0 npx playwright test --reporter=list --project="Desktop Chrome" | tee "$OUTPUT_FILE"
+  sync
+  # Generate HTML report if .nyc_output exists
+  if [[ -d ".nyc_output" ]]; then
+    npx nyc report --reporter=html
+    echo "[INFO] Coverage HTML report generated at coverage/index.html"
+  else
+    echo "[WARN] .nyc_output directory not found, coverage report not generated."
+  fi
+  exit 0
+fi
 
 DEFAULT_PRIORITIZED_TESTS="e2e/stats-critical-flows.spec.ts,e2e/stats-persistence.spec.ts,e2e/quiz-firestore-verification.spec.cjs,e2e/quiz-keyboard-navigation.spec.ts,e2e/quiz-stats-live-update.spec.ts,e2e/finish-quiz-buttons.spec.ts,e2e/keyboard-navigation-and-restart.spec.ts,e2e/login-flow.spec.ts,e2e/edge-accessibility.spec.ts,e2e/critical-ui-accessibility.spec.ts,e2e/auth-session-persistence.spec.ts,e2e/quiz-firestore-verification.spec.cjs"
 prioritized_files=()
 
 if [[ "$choice" == "f"* ]]; then
-  echo "[DEBUG] User chose: failed"
   if [[ -s "$LAST_FAILING_FILE" ]]; then
-    echo "[DEBUG] Last failing file is not empty."
-    # Read non-empty lines only
     prioritized_files=()
     while IFS= read -r line; do
       [[ -n "$line" ]] && prioritized_files+=("$line")
     done < "$LAST_FAILING_FILE"
     if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-      echo "[DEBUG] Running last-failed test files: ${prioritized_files[@]}"
-      npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
-      echo "[DEBUG] Playwright run complete. Updating last failing files."
+      PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
+      sync
       update_last_failing_files
     else
-      echo "[DEBUG] No valid last-failed test files found. Falling back to --last-failed."
-      npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
+      sync
+      update_last_failing_files
     fi
   else
-    echo "[DEBUG] Last failing file is empty. Running --last-failed."
-    npx playwright test --last-failed --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=0 npx playwright test --last-failed --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
+    sync
+    update_last_failing_files
   fi
 elif [[ "$choice" == "p"* ]]; then
-  echo "[DEBUG] User chose: priorities"
-  # Use priorities: env or last failed only. Do NOT fall back to default list.
   if [[ -n "$PLAYWRIGHT_PRIORITIZED_TESTS" ]]; then
     IFS=',' read -A prioritized_files <<< "$PLAYWRIGHT_PRIORITIZED_TESTS"
   elif [[ -s "$LAST_FAILING_FILE" ]]; then
@@ -88,17 +115,19 @@ elif [[ "$choice" == "p"* ]]; then
     done < "$LAST_FAILING_FILE"
   fi
   if [[ ${#prioritized_files[@]} -gt 0 ]]; then
-    echo "[DEBUG] Running prioritized test files: ${prioritized_files[@]}"
-    npx playwright test --headed --reporter=list "${prioritized_files[@]}" | tee "$OUTPUT_FILE"
-    echo "[DEBUG] Playwright run complete. Updating last failing files."
+    PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "${prioritized_files[@]}"
+    sync
     update_last_failing_files
   else
-    echo "[DEBUG] No prioritized tests found. Exiting."
     exit 1
   fi
+elif [[ "$choice" == "a"* ]]; then
+  PW_HEADLESS=0 npx playwright test "$@" | tee "$OUTPUT_FILE"
+  sync
+  update_last_failing_files
+  exit 0
 else
-  echo "[DEBUG] User chose: all"
-  npx playwright test --headed --reporter=list "$@" | tee "$OUTPUT_FILE"
+  PW_HEADLESS=0 npx playwright test --headed --reporter=list --project="Desktop Chrome" "$@" | tee "$OUTPUT_FILE"
+  sync
+  update_last_failing_files
 fi
-
-echo "[DEBUG] Script finished."

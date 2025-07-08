@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage'; // Collect coverage after each test
 
 // Utility to collect all tabbable elements
 async function getTabbableElements(page: any) {
@@ -53,7 +54,7 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit', () => {
     ];
     for (const nav of navLinks) {
       // Focus the nav link for this page
-      const navLink = await page.getByRole('link', { name: nav.label });
+      const navLink = await page.getByRole('link', { name: nav.aria });
       await navLink.focus();
       const viewport = page.viewportSize && page.viewportSize();
       if (!viewport || viewport.width > 500) {
@@ -125,7 +126,7 @@ test.describe('App Accessibility: Full Tab Order and ARIA Audit (Mobile)', () =>
       { label: 'Profile', path: '/profile', aria: 'Go to Profile page' },
     ];
     for (const nav of navLinks) {
-      const navLink = await page.getByRole('link', { name: nav.label });
+      const navLink = await page.getByRole('link', { name: nav.aria });
       await navLink.focus();
       const viewport = page.viewportSize && page.viewportSize();
       if (!viewport || viewport.width > 500) {

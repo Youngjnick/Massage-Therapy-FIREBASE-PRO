@@ -1,4 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
+import './helpers/playwright-coverage';
 // Ensure process is available for progress bar
 import process from 'process';
 import { uiSignIn } from './helpers/uiSignIn';

@@ -1,4 +1,3 @@
- 
 import React from 'react';
 
 interface QuizLengthInputProps {
@@ -20,14 +19,18 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
           max={maxQuizLength}
           value={quizLength === 0 ? '' : quizLength}
           onChange={e => {
-            const _val = e.target.value === '' ? '' : Math.max(1, Number(e.target.value));
-            setQuizLength(_val);
+            let val: number | '' = e.target.value === '' ? '' : Number(e.target.value);
+            if (val !== '' && !isNaN(val)) {
+              val = Math.max(1, Math.min(val, maxQuizLength));
+            }
+            setQuizLength(val);
           }}
           style={{ width: 60, marginLeft: 4 }}
           id={id}
           data-testid={dataTestId}
           disabled={maxQuizLength === 0}
           aria-label="Quiz Length"
+          name="quizLength"
           ref={ref}
         />
       </label>

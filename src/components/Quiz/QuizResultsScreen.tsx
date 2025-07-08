@@ -12,6 +12,7 @@ interface QuizResultsScreenProps {
   userAnswers: number[];
   shuffledOptions: { [key: number]: string[] };
   activeQuestions: any[];
+  onStartMissedUnansweredQuiz?: (topic: string) => void;
 }
 
 const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
@@ -22,6 +23,7 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
   userAnswers,
   shuffledOptions,
   activeQuestions,
+  onStartMissedUnansweredQuiz,
 }) => {
   // Defensive: If topicStats is missing or empty, do not render stats UI
   const safeTopicStats = topicStats && Object.keys(topicStats).length > 0 ? topicStats : {};
@@ -39,7 +41,7 @@ const QuizResultsScreen: React.FC<QuizResultsScreenProps> = ({
       </button>
       <h2>Results</h2>
       {/* Live stats UI components */}
-      <QuizTopicProgress topicStats={safeTopicStats} />
+      <QuizTopicProgress topicStats={safeTopicStats} onStartMissedUnansweredQuiz={onStartMissedUnansweredQuiz} />
       <QuizSessionCharts topicStats={safeTopicStats} />
       <QuizSessionSummary
         score={userAnswers.filter((a, i) => a !== undefined && (shuffledOptions[i] || (q && q.options) || []).length > 0 && (shuffledOptions[i] || (q && q.options) || [])[a] === (activeQuestions[i] && activeQuestions[i].correctAnswer)).length}

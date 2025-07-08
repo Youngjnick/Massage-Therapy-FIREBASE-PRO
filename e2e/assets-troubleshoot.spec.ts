@@ -1,5 +1,6 @@
 /* global console */
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 
 const DEV_BASE_URL = 'http://localhost:5173';
 

@@ -31,3 +31,70 @@ fi
 echo "Checking all question JSON files for syntax errors..."
 find src/data/questions -type f -name '*.json' -exec sh -c 'echo -n "{}: "; node -e "try{JSON.parse(require(\"fs\").readFileSync(\"{}\",\"utf8\"));console.log(\"OK\") }catch(e){console.log(\"ERROR\")}"' \;
 echo "JSON syntax check complete."
+
+echo "Checking for gawk (GNU awk)..."
+if ! command -v gawk >/dev/null 2>&1; then
+  if [[ "$(uname)" == "Darwin" ]]; then
+    echo "gawk not found. Installing with Homebrew..."
+    if command -v brew >/dev/null 2>&1; then
+      brew install gawk
+    else
+      echo "Homebrew not found. Please install Homebrew and re-run this script, or install gawk manually."
+      exit 1
+    fi
+  else
+    echo "gawk not found. Please install gawk using your system package manager (e.g., sudo apt-get install gawk) and re-run this script."
+    exit 1
+  fi
+else
+  echo "gawk is already installed."
+fi
+
+echo "Checking for Python 3..."
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "Python 3 is required for advanced Playwright reporting. Please install Python 3 and re-run this script."
+  exit 1
+else
+  echo "Python 3 is already installed."
+fi
+
+echo "Installing Playwright/Vite code coverage dev dependencies..."
+npm install --save-dev vite-plugin-istanbul nyc @cypress/code-coverage
+# Optionally: playwright-coverage (for advanced scenarios)
+# npm install --save-dev playwright-coverage
+
+echo "\nChecking shell scripts for syntax errors and best practices..."
+
+# Install ShellCheck if not present (macOS/Homebrew)
+if ! command -v shellcheck >/dev/null 2>&1; then
+  if [[ "$(uname)" == "Darwin" ]]; then
+    echo "ShellCheck not found. Installing with Homebrew..."
+    if command -v brew >/dev/null 2>&1; then
+      brew install shellcheck
+    else
+      echo "Homebrew not found. Please install Homebrew and re-run this script, or install ShellCheck manually."
+      exit 1
+    fi
+  else
+    echo "ShellCheck not found. Please install ShellCheck using your system package manager (e.g., sudo apt-get install shellcheck) and re-run this script."
+    exit 1
+  fi
+else
+  echo "ShellCheck is already installed."
+fi
+
+# Run ShellCheck on all scripts
+for script in scripts/*.sh; do
+  echo "\nRunning ShellCheck on $script..."
+  shellcheck "$script" || true
+  # Syntax check with zsh (if script uses zsh), else bash
+  if head -1 "$script" | grep -q 'zsh'; then
+    echo "Syntax checking $script with zsh -n..."
+    zsh -n "$script" || echo "Syntax error in $script (zsh)"
+  else
+    echo "Syntax checking $script with bash -n..."
+    bash -n "$script" || echo "Syntax error in $script (bash)"
+  fi
+done
+
+echo "Shell script checks complete."

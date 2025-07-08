@@ -52,7 +52,7 @@ async function getStatValue(page: import('@playwright/test').Page, label: string
 test.describe('Stats Critical Flows', () => {
   test('should increment Quizzes Taken after each quiz', async ({ page }) => {
     const user = await getTestUser(0);
-    await uiSignIn(page, { email: user.email, password: user.password });
+    await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
     await page.goto('/analytics');
     // Get initial stat
     let initialQuizzesTaken = '';
@@ -69,11 +69,75 @@ test.describe('Stats Critical Flows', () => {
     for (let quizNum = 0; quizNum < 2; quizNum++) {
       await page.goto('/quiz');
       await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
-      await page.getByLabel('Quiz Length').fill('1');
+      // Wait for Quiz Length input
+      const quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 10000 });
+      // Select a specific real topic for topic breakdowns
+      const TARGET_TOPIC_LABEL = 'Abdominal Muscle Origins';
+      const TARGET_TOPIC_VALUE = 'abdominal_muscle_origins';
+      let selected = false;
+      // Select the first real topic (not empty/Other) if topic select is present
+      const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+      if (await topicSelect.count() > 0) {
+        const options = await topicSelect.locator('option').all();
+        // Try to select by value first
+        for (const opt of options) {
+          const val = await opt.getAttribute('value');
+          if (val === TARGET_TOPIC_VALUE) {
+            await topicSelect.selectOption(val);
+            console.log('[E2E DEBUG] Selected topic value (by value):', val);
+            selected = true;
+            break;
+          }
+        }
+        // If not found by value, try by label
+        if (!selected) {
+          for (const opt of options) {
+            const label = (await opt.textContent())?.trim();
+            if (label === TARGET_TOPIC_LABEL) {
+              const val = await opt.getAttribute('value');
+              if (val) {
+                await topicSelect.selectOption(val);
+                console.log('[E2E DEBUG] Selected topic value (by label):', val);
+                selected = true;
+                break;
+              }
+            }
+          }
+        }
+        // Fallback: select first valid topic (not empty/Other)
+        if (!selected) {
+          for (const opt of options) {
+            const val = await opt.getAttribute('value');
+            if (val && val !== '' && val.toLowerCase() !== 'other') {
+              await topicSelect.selectOption(val);
+              console.log('[E2E DEBUG] Selected topic value (fallback):', val);
+              break;
+            }
+          }
+        }
+      }
+      await quizLengthInput.fill('1');
       await page.getByRole('button', { name: /start/i }).click();
       await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });
-      await page.getByTestId('quiz-option').first().click();
-      await page.getByRole('button', { name: /next|finish/i }).click();
+      // Loop: answer and click next/finish until results
+      while (true) {
+        const quizOption = page.getByTestId('quiz-option').first();
+        await expect(quizOption).toBeVisible({ timeout: 10000 });
+        await expect(quizOption).toBeEnabled();
+        await quizOption.click();
+        await page.waitForTimeout(150);
+        // Prefer next button if present, else finish
+        const nextBtn = page.getByRole('button', { name: /next/i });
+        if (await nextBtn.count() > 0 && await nextBtn.first().isEnabled()) {
+          await nextBtn.first().click();
+        } else {
+          const finishBtn = page.locator('button[aria-label="Finish quiz"]');
+          if (await finishBtn.isVisible() && await finishBtn.isEnabled()) {
+            await finishBtn.click();
+            break;
+          }
+        }
+      }
       await expect(page.getByTestId('quiz-results')).toBeVisible();
       // Extra debug: check if quiz is marked complete in UI
       const quizResultsText = await page.getByTestId('quiz-results').textContent();
@@ -96,6 +160,55 @@ test.describe('Stats Critical Flows', () => {
         throw new Error(`Quizzes Taken stat did not increment after quiz #${quizNum+1}. Last stat: ${lastStat}, Polled stat: ${polledStat}`);
       }
       lastStat = polledStat;
+
+      // After quiz completion, check topic breakdown in results
+      if (quizResultsText && /Other/.test(quizResultsText)) {
+        console.warn(`[E2E WARNING] Topic breakdown used 'Other' for quiz #${quizNum+1}. Results:`, quizResultsText);
+      }
     }
+  });
+
+  test('should allow early quiz completion with Finish (aria-label finish early) and show results', async ({ page }) => {
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
+    await page.goto('/quiz');
+    await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+    await page.getByLabel('Quiz Length').fill('2');
+    await page.getByRole('button', { name: /start/i }).click();
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });
+    // Answer first question only
+    const quizOption = page.getByTestId('quiz-option').first();
+    await expect(quizOption).toBeVisible({ timeout: 10000 });
+    await expect(quizOption).toBeEnabled();
+    await quizOption.click();
+    // Click Finish with aria-label 'Finish quiz early'
+    const finishEarlyBtn = page.locator('button[aria-label="Finish quiz early"]');
+    await expect(finishEarlyBtn).toBeVisible();
+    await finishEarlyBtn.click();
+    await expect(page.getByTestId('quiz-results')).toBeVisible();
+    const quizResultsText = await page.getByTestId('quiz-results').textContent();
+    console.log('[E2E DEBUG] quizResultsText after early finish:', quizResultsText);
+  });
+
+  test('should submit a completed quiz with Finish (aria-label finish quiz) and show results', async ({ page }) => {
+    const user = await getTestUser(0);
+    await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });
+    await page.goto('/quiz');
+    await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 10000 });
+    await page.getByLabel('Quiz Length').fill('1');
+    await page.getByRole('button', { name: /start/i }).click();
+    await page.waitForSelector('[data-testid="quiz-question-card"]', { timeout: 10000 });
+    // Answer the only question
+    const quizOption = page.getByTestId('quiz-option').first();
+    await expect(quizOption).toBeVisible({ timeout: 10000 });
+    await expect(quizOption).toBeEnabled();
+    await quizOption.click();
+    // Click Finish with aria-label 'Finish quiz'
+    const finishBtn = page.locator('button[aria-label="Finish quiz"]');
+    await expect(finishBtn).toBeVisible();
+    await finishBtn.click();
+    await expect(page.getByTestId('quiz-results')).toBeVisible();
+    const quizResultsText = await page.getByTestId('quiz-results').textContent();
+    console.log('[E2E DEBUG] quizResultsText after normal finish:', quizResultsText);
   });
 });

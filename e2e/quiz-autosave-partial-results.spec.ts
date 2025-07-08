@@ -1,10 +1,12 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 
 // Test: Quiz auto-save and resume (Firestore/localStorage)
 test.describe('Quiz Auto-Save and Resume', () => {
   // Skipped: Auto-saves progress for guest (localStorage) and resumes on reload (redundant or flaky)
   test.skip('Auto-saves progress for guest (localStorage) and resumes on reload', async ({ page }) => {
-    await page.goto('/');
+    // Always start on /quiz for quiz UI
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     // Answer first question
@@ -24,7 +26,8 @@ test.describe('Quiz Auto-Save and Resume', () => {
 
   // Skipped: Shows cancel/exit confirmation dialog when leaving quiz (redundant or UI timing issue)
   test.skip('Shows cancel/exit confirmation dialog when leaving quiz', async ({ page }) => {
-    await page.goto('/');
+    // Always start on /quiz for quiz UI
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     // Try to navigate away
@@ -41,7 +44,8 @@ test.describe('Quiz Auto-Save and Resume', () => {
 test.describe('Quiz Partial Results', () => {
   // Skipped: Shows partial results and highlights unanswered questions (redundant)
   test.skip('Shows partial results and highlights unanswered questions', async ({ page }) => {
-    await page.goto('/');
+    // Always start on /quiz for quiz UI
+    await page.goto('/quiz');
     await page.getByLabel('Quiz Length').fill('3');
     await page.getByRole('button', { name: /start/i }).click();
     // Answer only first question

@@ -1,4 +1,3 @@
-
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
@@ -33,7 +32,7 @@ test.describe('Auth Session Persistence', () => {
     await expect(page.locator('button[aria-label="Sign out"], button:has-text("Sign Out")')).toBeVisible({ timeout: 10000 });
 
     // Debug: screenshot after login
-    await page.screenshot({ path: 'test-signin-after.png', fullPage: true });
+    await page.screenshot({ path: 'test-results/screenshots/test-signin-after.png', fullPage: true });
 
     // Reload the page
     await page.reload();

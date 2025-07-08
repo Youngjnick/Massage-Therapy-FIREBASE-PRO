@@ -13,10 +13,9 @@ async function getTestUser(index = 0) {
 
 const TOPIC = 'abdominal_muscle_origins';
 const TOPIC_LABEL = 'Abdominal Muscle Origins';
-
-function getTopicBreakdownRegex(topic: string) {
-  // e.g., abdominal_muscle_origins1 / 1 correct (no space)
-  return new RegExp(`${topic}\\s*\\d+ / \\d+ correct`);
+function getTopicBreakdownRegex(label: string) {
+  // e.g., Abdominal Muscle Origins1 / 1
+  return new RegExp(`${label}\\s*\\d+ / \\d+`);
 }
 
 test.describe('Stats Topic Breakdown', () => {
@@ -26,7 +25,8 @@ test.describe('Stats Topic Breakdown', () => {
     await page.goto('/analytics');
     // Get initial topic breakdown value
     const initialText = await page.textContent('body');
-    const initialMatch = initialText && initialText.match(getTopicBreakdownRegex(TOPIC));
+    console.log('[E2E DEBUG] Initial analytics text:', initialText);
+    const initialMatch = initialText && initialText.match(getTopicBreakdownRegex(TOPIC_LABEL));
     let initialTotal = 0;
     if (initialMatch) {
       const nums = initialMatch[0].match(/(\d+) \/ (\d+)/);
@@ -52,12 +52,14 @@ test.describe('Stats Topic Breakdown', () => {
     await page.goto('/analytics');
     await page.waitForTimeout(2000);
     const updatedText = await page.textContent('body');
-    const updatedMatch = updatedText && updatedText.match(getTopicBreakdownRegex(TOPIC));
+    console.log('[E2E DEBUG] Updated analytics text:', updatedText);
+    const updatedMatch = updatedText && updatedText.match(getTopicBreakdownRegex(TOPIC_LABEL));
     expect(updatedMatch).toBeTruthy();
     if (updatedMatch) {
       const nums = updatedMatch[0].match(/(\d+) \/ (\d+)/);
       if (nums) {
         const updatedTotal = parseInt(nums[2], 10);
+        console.log('[E2E DEBUG] initialTotal:', initialTotal, 'updatedTotal:', updatedTotal);
         expect(updatedTotal).toBeGreaterThan(initialTotal);
       }
     }

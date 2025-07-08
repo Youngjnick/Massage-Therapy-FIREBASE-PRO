@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, act } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Quiz from '../pages/Quiz';
 
 jest.mock('../hooks/useQuizData', () => ({
@@ -60,7 +61,11 @@ afterAll(() => {
 
 it('shows a spinner and Loading... message when loading', async () => {
   await act(async () => {
-    render(<Quiz />);
+    render(
+      <MemoryRouter>
+        <Quiz />
+      </MemoryRouter>
+    );
   });
   expect(screen.getByTestId('quiz-loading')).toBeInTheDocument();
   expect(screen.getByText(/loading/i)).toBeInTheDocument();

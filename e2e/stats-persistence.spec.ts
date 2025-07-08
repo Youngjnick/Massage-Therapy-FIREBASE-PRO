@@ -100,10 +100,52 @@ test.describe('Stats Persistence', () => {
       const html = await page.content();
       throw new Error('Quiz start form not found after retries. HTML: ' + html);
     }
-    // Scroll Quiz Length input into view for mobile
-    const quizLengthInput = await page.getByLabel('Quiz Length');
-    await quizLengthInput.scrollIntoViewIfNeeded();
-    await quizLengthInput.fill('1');
+    // Select a specific real topic for topic breakdowns
+    const TARGET_TOPIC_LABEL = 'Abdominal Muscle Origins';
+    const TARGET_TOPIC_VALUE = 'abdominal_muscle_origins';
+    let selected = false;
+    // Select the first real topic (not empty/Other) if topic select is present
+    const topicSelect = page.locator('#quiz-topic-select, [data-testid="quiz-topic-select"]');
+    if (await topicSelect.count() > 0) {
+      const options = await topicSelect.locator('option').all();
+      // Try to select by value first
+      for (const opt of options) {
+        const val = await opt.getAttribute('value');
+        if (val === TARGET_TOPIC_VALUE) {
+          await topicSelect.selectOption(val);
+          console.log('[E2E DEBUG] Selected topic value (by value):', val);
+          selected = true;
+          break;
+        }
+      }
+      // If not found by value, try by label
+      if (!selected) {
+        for (const opt of options) {
+          const label = (await opt.textContent())?.trim();
+          if (label === TARGET_TOPIC_LABEL) {
+            const val = await opt.getAttribute('value');
+            if (val) {
+              await topicSelect.selectOption(val);
+              console.log('[E2E DEBUG] Selected topic value (by label):', val);
+              selected = true;
+              break;
+            }
+          }
+        }
+      }
+      // Fallback: select first valid topic (not empty/Other)
+      if (!selected) {
+        for (const opt of options) {
+          const val = await opt.getAttribute('value');
+          if (val && val !== '' && val.toLowerCase() !== 'other') {
+            await topicSelect.selectOption(val);
+            console.log('[E2E DEBUG] Selected topic value (fallback):', val);
+            break;
+          }
+        }
+      }
+    }
+    await page.getByLabel('Quiz Length').fill('1');
     console.log('[E2E DEBUG] E2E test: quiz length set to 1');
     const startBtn = await page.getByRole('button', { name: /start/i });
     await startBtn.scrollIntoViewIfNeeded();
@@ -127,6 +169,12 @@ test.describe('Stats Persistence', () => {
     // Log Firestore analytics doc directly after quiz completion
     const statsAfterQuiz = await getUserStats(userUid);
     console.log('[E2E DEBUG] Firestore analytics doc after quiz:', statsAfterQuiz);
+
+    // After quiz completion, check topic breakdown in results
+    const resultsText = await page.getByTestId('quiz-results').textContent();
+    if (resultsText && /Other/.test(resultsText)) {
+      console.warn(`[E2E WARNING] Topic breakdown used "Other" after quiz completion. Results:`, resultsText);
+    }
 
     // Wait for stat update to propagate (poll for stat change)
     let updatedQuizzesTaken = '';
