@@ -312,11 +312,10 @@ if [[ -n $(git status --porcelain) ]]; then
       exit 1
       ;;
     a|A|"")
-      # Accept as is
+      echo -e "\n${GREEN}Committing changes...${NC}"
+      commit_with_spinner "Applying commit with auto-generated message"
       ;;
     *)
-      echo "Invalid choice. Aborting."
-      exit 1
       ;;
   esac
   git add -A
@@ -508,7 +507,7 @@ for target in $all_targets; do
   if git diff --cached --quiet; then
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp."
     echo "No changes to commit for $remote/$branch. Creating empty commit to update timestamp." >> "$LOG_FILE"
-    git commit --allow-empty -F "$TMP_COMMIT_MSG_FILE"
+    commit_with_spinner "Creating empty timestamp commit for $remote/$branch"
   else
     CHANGED=$(git status --short)
     echo "\nChanged files for $remote/$branch:"
@@ -519,7 +518,7 @@ for target in $all_targets; do
     fi
     printf "\nChanged files for %s:\n" "$remote/$branch" >> "$LOG_FILE"
     echo "$CHANGED" >> "$LOG_FILE"
-    git commit -F "$TMP_COMMIT_MSG_FILE"
+    commit_with_spinner "Committing changes for $remote/$branch"
   fi
 
   # Push to the correct remote/branch
@@ -528,8 +527,12 @@ for target in $all_targets; do
   PUSH_EXIT=0
   PUSH_MODE="normal"
   PUSH_SUCCESS=false
-  PUSH_OUTPUT=$(git push $remote $branch 2>&1)
-  PUSH_EXIT=$?
+  {
+    PUSH_OUTPUT=$(git push $remote $branch 2>&1)
+    PUSH_EXIT=$?
+  } &
+  spinner $! "Pushing changes to $remote/$branch"
+  wait
   echo "[DIAG] git push $remote $branch exit code: $PUSH_EXIT"
   printf "[DIAG] git push output:\n%s\n" "$PUSH_OUTPUT"
   if [[ $PUSH_EXIT -eq 0 ]]; then
@@ -540,8 +543,12 @@ for target in $all_targets; do
     echo "Normal push failed for $remote/$branch. The remote branch may have diverged." >> "$LOG_FILE"
     echo "Automatically force pushing to overwrite remote history..."
     echo "Force pushing to $remote/$branch..."
-    FORCE_PUSH_OUTPUT=$(git push --force $remote $branch 2>&1)
-    FORCE_PUSH_EXIT=$?
+    {
+      FORCE_PUSH_OUTPUT=$(git push --force $remote $branch 2>&1)
+      FORCE_PUSH_EXIT=$?
+    } &
+    spinner $! "Force pushing changes to $remote/$branch"
+    wait
     echo "[DIAG] git push --force $remote $branch exit code: $FORCE_PUSH_EXIT"
     printf "[DIAG] git push --force output:\n%s\n" "$FORCE_PUSH_OUTPUT"
     if [[ $FORCE_PUSH_EXIT -eq 0 ]]; then
