@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 import { getTestUser } from './helpers/getTestUser';
+import './helpers/playwright-coverage';
 
 let testUser: { email: string; password: string; uid?: string };
 test.beforeAll(async () => {

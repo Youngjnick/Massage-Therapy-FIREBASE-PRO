@@ -45,6 +45,7 @@ export default defineConfig({
     },
   ],
   globalSetup: './e2e/global-setup.ts',
+  globalTeardown: undefined,
   webServer: {
     command: 'cp .env.e2e .env && vite --port 5173',
     port: 5173,
@@ -55,5 +56,10 @@ export default defineConfig({
       COVERAGE: process.env.COVERAGE || '',
     },
   },
-  // Print headed/headless mode at config load
+  // Add test setup to import coverage hook for all tests
+  testMatch: '**/*.spec.ts',
+  fullyParallel: false,
+  reporter: [['list'], ['html']],
+  // Add test setup file
+  setupFilesAfterEnv: ['./e2e/playwright.setup.ts'],
 });

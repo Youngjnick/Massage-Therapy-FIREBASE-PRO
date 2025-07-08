@@ -9,6 +9,7 @@ import { test, expect } from '@playwright/test';
 import fs from 'fs';
 import { uiSignIn } from './helpers/uiSignIn';
 import { getTestUser } from './helpers/getTestUser';
+import './helpers/playwright-coverage';
 
 // Log Firestore emulator environment
 console.log('FIRESTORE_EMULATOR_HOST:', process.env.FIRESTORE_EMULATOR_HOST);

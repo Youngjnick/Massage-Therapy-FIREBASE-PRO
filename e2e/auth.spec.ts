@@ -3,6 +3,7 @@
 import process from 'process';
 // @ts-nocheck
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 
 test.describe('Authentication UI Flows', () => {
   test('should show sign-in prompt on Analytics when unauthenticated', async ({ page }) => {

@@ -5,6 +5,7 @@ import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
 import path from 'path';
+import './helpers/playwright-coverage';
 
 // ESM-compatible __dirname
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
