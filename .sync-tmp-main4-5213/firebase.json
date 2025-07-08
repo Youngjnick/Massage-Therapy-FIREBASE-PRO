@@ -1,0 +1,25 @@
+{
+  "emulators": {
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true,
+    "firestore": {
+      "port": 8080
+    },
+    "auth": {
+      "port": 9099
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "nam5",
+    "rules": "firestore.rules"
+  },
+  "export": {
+    "path": "firebase_exports"
+  },
+  "sync_tmp": {
+    "path": "sync_tmp_backups"
+  }
+}
