@@ -1,22 +1,22 @@
 [DEBUG] PW_HEADLESS: 0
 [dotenv@17.0.1] injecting env (5) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-umbg6t9o@gmail.com created successfully. UID: WN8rUYpsfUpBoeRAEAhQVqRDecc8
-Firestore user doc created for testuserc-umbg6t9o@gmail.com (uid: WN8rUYpsfUpBoeRAEAhQVqRDecc8)
-User testuserd-na7bbpw8@gmail.com created successfully. UID: l2EP3fH43DNsV8m6Mfwfdc0W9v9V
-Firestore user doc created for testuserd-na7bbpw8@gmail.com (uid: l2EP3fH43DNsV8m6Mfwfdc0W9v9V)
+User testuserc-p3e9muvk@gmail.com created successfully. UID: QjXuNLjInuqYsTtP7Um2bSkIsYRH
+Firestore user doc created for testuserc-p3e9muvk@gmail.com (uid: QjXuNLjInuqYsTtP7Um2bSkIsYRH)
+User testuserd-ekyakutg@gmail.com created successfully. UID: Jn3R6frb9uvz2vO09ZHkhOhVM9AD
+Firestore user doc created for testuserd-ekyakutg@gmail.com (uid: Jn3R6frb9uvz2vO09ZHkhOhVM9AD)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-umbg6t9o@gmail.com",
+    "email": "testuserc-p3e9muvk@gmail.com",
     "password": "testuserC",
-    "uid": "WN8rUYpsfUpBoeRAEAhQVqRDecc8"
+    "uid": "QjXuNLjInuqYsTtP7Um2bSkIsYRH"
   },
   {
-    "email": "testuserd-na7bbpw8@gmail.com",
+    "email": "testuserd-ekyakutg@gmail.com",
     "password": "testuserD",
-    "uid": "l2EP3fH43DNsV8m6Mfwfdc0W9v9V"
+    "uid": "Jn3R6frb9uvz2vO09ZHkhOhVM9AD"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
@@ -32,19 +32,18 @@ Running 99 tests using 4 workers
 
 [DEBUG] PW_HEADLESS: 0
 [COVERAGE DEBUG] process.env.COVERAGE: true
-[DEBUG] PW_HEADLESS: 0
 [COVERAGE DEBUG] playwright-coverage.ts loaded
 [DEBUG] PW_HEADLESS: 0
 [DEBUG] PW_HEADLESS: 0
+[DEBUG] PW_HEADLESS: 0
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
 [COVERAGE DEBUG] process.env.COVERAGE: true
 [COVERAGE DEBUG] process.env.COVERAGE: true
 [COVERAGE DEBUG] playwright-coverage.ts loaded
 [COVERAGE DEBUG] playwright-coverage.ts loaded
-[COVERAGE DEBUG] process.env.COVERAGE: true
-[COVERAGE DEBUG] playwright-coverage.ts loaded
-[E2E DEBUG] About to sign in with test user: testuserc-umbg6t9o@gmail.com
+[E2E DEBUG] About to sign in with test user: testuserc-p3e9muvk@gmail.com
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-umbg6t9o@gmail.com, password=testuserC

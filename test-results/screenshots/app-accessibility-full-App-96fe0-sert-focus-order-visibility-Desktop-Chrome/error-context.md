@@ -1,49 +1,6 @@
 # Page snapshot
 
 ```yaml
-- banner:
-  - img "App Icon"
-  - text: Massage Therapy Smart Study PRO
-- navigation "Main navigation":
-  - list:
-    - listitem:
-      - link "Go to Quiz page":
-        - /url: /quiz
-        - text: Quiz
-    - listitem:
-      - link "Go to Achievements page":
-        - /url: /achievements
-        - text: Achievements
-    - listitem:
-      - link "Go to Analytics page":
-        - /url: /analytics
-        - text: Analytics
-    - listitem:
-      - link "Go to Profile page":
-        - /url: /profile
-        - text: Profile
-- main:
-  - link "Skip to main content":
-    - /url: "#main-content"
-  - heading "Test/Dev Email Sign-In" [level=4]
-  - textbox "Test email"
-  - textbox "Test password"
-  - button "Sign in with email": Sign In (Test Only)
-  - link "Explore quizzes":
-    - /url: /quiz
-    - text: Explore Quizzes
-  - button "Practice Quizzes (click to view)": Practice Quizzes Test your knowledge with interactive quizzes and instant feedback.
-  - button "Track Progress (click to view)": Track Progress See your stats, streaks, and improvement over time.
-  - button "Earn Achievements (click to view)": Earn Achievements Unlock badges and celebrate your learning milestones.
-  - text: © 2025 Massage Therapy Pro — All rights reserved.
-  - navigation "Footer navigation":
-    - link "About":
-      - /url: /about
-    - link "Privacy":
-      - /url: /privacy
-    - link "Contact":
-      - /url: /contact
-- contentinfo:
-  - textbox "Search questions"
+- text: Loading…
 - paragraph: Running in emulator mode. Do not use with production credentials.
 ```

@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "types": [
+      "vite/client",
+      "jest",
+      "@testing-library/jest-dom",
+      "node",
+      "@playwright/test"
+    ],
+    "lib": ["es2022", "dom"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/__tests__/**/*.ts",
+    "src/__tests__/**/*.tsx",
+    "src/__tests__/**/*.js",
+    "src/__tests__/**/*.jsx",
+    "src/__tests__/*.ts",
+    "src/__tests__/*.tsx",
+    "__tests__",
+    "__tests__/**/*.ts",
+    "__tests__/**/*.tsx",
+    "__tests__/**/*.js",
+    "__tests__/**/*.jsx",
+    "e2e",
+    "e2e/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vite",
+    "dataconnect-generated",
+    "tmp-worktree-*",
+    "sync_tmp_backups",
+    "sync_tmp_backups/**",
+    ".sync-tmp-*",
+    ".sync-tmp-*/",
+    ".sync-tmp-*/**"
+  ]
+}
