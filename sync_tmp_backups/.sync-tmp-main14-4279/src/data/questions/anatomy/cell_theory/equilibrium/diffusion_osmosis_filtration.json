@@ -1,0 +1,324 @@
+[
+  {
+    "id": "diffusion_osmosis_filtration_001",
+    "question": "What is the primary mechanism of movement in simple diffusion?",
+    "correctAnswer": "Movement against a concentration gradient using ATP",
+    "options": [
+      "Movement against a concentration gradient using ATP",
+      "Movement along a concentration gradient without energy input",
+      "Bulk flow through membrane pores",
+      "Water movement through aquaporins only"
+    ],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "Simple diffusion moves molecules from high to low concentration without energy.",
+    "long_explanation": "Simple diffusion involves the passive movement of molecules like oxygen or carbon dioxide across membranes. It requires no energy and occurs due to the natural tendency of molecules to spread out.",
+    "clinical_application": "Oxygen exchange in the lungs occurs via simple diffusion from alveoli into capillaries.",
+    "source_reference": "Guyton and Hall Textbook of Medical Physiology",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "easy",
+    "difficulty_rating": 2,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["anatomy_membrane", "biochemistry_concentration", "organ_lungs"],
+    "keywords": [
+      "anatomy_membrane",
+      "biochemistry_concentration",
+      "organ_lungs"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_002",
+    "question": "Osmosis specifically refers to the movement of what substance?",
+    "correctAnswer": "Salt",
+    "options": ["Salt", "Glucose", "Proteins", "Water"],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "Osmosis is the passive movement of water across a semipermeable membrane.",
+    "long_explanation": "Osmosis is a special type of diffusion involving water molecules. It occurs when water moves across a semipermeable membrane from an area of low solute concentration to high solute concentration to equalize concentrations.",
+    "clinical_application": "IV fluids use osmotic principles to rehydrate patients without disrupting cell balance.",
+    "source_reference": "Human Anatomy & Physiology, Marieb",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "easy",
+    "difficulty_rating": 2,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_protein",
+      "client",
+      "concept_balance",
+      "biochemistry_glucose",
+      "biochemistry_concentration"
+    ],
+    "keywords": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_protein",
+      "client",
+      "concept_balance",
+      "biochemistry_glucose",
+      "biochemistry_concentration"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_003",
+    "question": "Which of the following best describes facilitated diffusion?",
+    "correctAnswer": "Movement of water through a semipermeable membrane",
+    "options": [
+      "Movement of water through a semipermeable membrane",
+      "Movement of molecules using protein carriers without ATP",
+      "Transport of ions through pumps requiring energy",
+      "Bulk flow of fluid from capillaries to tissues"
+    ],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "Facilitated diffusion helps transport molecules using carrier proteins without energy.",
+    "long_explanation": "Facilitated diffusion is a passive transport mechanism where specific molecules, such as glucose, pass through membrane proteins that aid their movement without requiring energy.",
+    "clinical_application": "Insulin increases glucose uptake by promoting facilitated diffusion through GLUT-4 transporters.",
+    "source_reference": "Medical Physiology, Guyton",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "medium",
+    "difficulty_rating": 3,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": [
+      "anatomy_membrane",
+      "anatomy_protein",
+      "anatomy_tissues",
+      "biochemistry_glucose"
+    ],
+    "keywords": [
+      "anatomy_membrane",
+      "anatomy_protein",
+      "anatomy_tissues",
+      "biochemistry_glucose"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_004",
+    "question": "What type of transport is involved when blood pressure forces plasma through capillary walls?",
+    "correctAnswer": "Osmosis",
+    "options": [
+      "Osmosis",
+      "Facilitated diffusion",
+      "Filtration",
+      "Active transport"
+    ],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "Filtration is driven by hydrostatic pressure, pushing fluids across membranes.",
+    "long_explanation": "Filtration occurs when hydrostatic pressure forces water and solutes through a membrane, such as in kidney glomeruli or capillary exchange in tissues.",
+    "clinical_application": "Filtration underlies blood pressure–based capillary exchange and kidney ultrafiltration.",
+    "source_reference": "Essentials of Human Physiology",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "medium",
+    "difficulty_rating": 3,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": [
+      "technique_pressure",
+      "anatomy_membrane",
+      "anatomy_tissues",
+      "anatomy_kidneys",
+      "organ_kidneys"
+    ],
+    "keywords": [
+      "technique_pressure",
+      "anatomy_membrane",
+      "anatomy_tissues",
+      "anatomy_kidneys",
+      "organ_kidneys"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_005",
+    "question": "Which condition can cause water to move out of cells via osmosis?",
+    "correctAnswer": "Hypotonic extracellular fluid",
+    "options": [
+      "Hypotonic extracellular fluid",
+      "Isotonic IV fluid administration",
+      "Hypertonic extracellular fluid",
+      "High intracellular glucose"
+    ],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "A hypertonic solution draws water out of cells due to higher solute concentration outside.",
+    "long_explanation": "When the extracellular fluid is hypertonic, water exits the cell to balance osmotic pressure. This can cause cellular shrinkage and dehydration.",
+    "clinical_application": "Hypertonic IV solutions are used in cases like cerebral edema to draw fluid out of brain cells.",
+    "source_reference": "Clinical Medicine Review",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "medium",
+    "difficulty_rating": 3,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": [
+      "technique_pressure",
+      "anatomy_cells",
+      "concept_balance",
+      "anatomy_brain",
+      "biochemistry_glucose",
+      "biochemistry_concentration",
+      "organ_brain"
+    ],
+    "keywords": [
+      "technique_pressure",
+      "anatomy_cells",
+      "concept_balance",
+      "anatomy_brain",
+      "biochemistry_glucose",
+      "biochemistry_concentration",
+      "organ_brain"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_006",
+    "question": "What is the role of aquaporins in osmosis?",
+    "correctAnswer": "They prevent water from entering cells",
+    "options": [
+      "They prevent water from entering cells",
+      "They actively transport water using ATP",
+      "They allow passive water flow across membranes",
+      "They bind solutes and change membrane charge"
+    ],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "Aquaporins are channels that allow water to pass through membranes passively.",
+    "long_explanation": "Aquaporins are integral membrane proteins that facilitate rapid, passive movement of water across cell membranes, crucial in tissues like kidneys and lungs.",
+    "clinical_application": "Aquaporin dysfunction can impair fluid regulation in diseases like nephrogenic diabetes insipidus.",
+    "source_reference": "Molecular Biology of the Cell",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "hard",
+    "difficulty_rating": 4,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_protein",
+      "anatomy_tissues",
+      "concept_integration",
+      "anatomy_kidneys",
+      "organ_lungs",
+      "organ_kidneys"
+    ],
+    "keywords": [
+      "anatomy_membrane",
+      "anatomy_cells",
+      "anatomy_protein",
+      "anatomy_tissues",
+      "concept_integration",
+      "anatomy_kidneys",
+      "organ_lungs",
+      "organ_kidneys"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_007",
+    "question": "Which of the following is NOT a passive transport mechanism?",
+    "correctAnswer": "Simple diffusion",
+    "options": [
+      "Simple diffusion",
+      "Facilitated diffusion",
+      "Osmosis",
+      "Sodium-potassium pump"
+    ],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "The sodium-potassium pump requires ATP and is active, not passive.",
+    "long_explanation": "Passive transport does not require energy and includes diffusion, osmosis, and facilitated diffusion. Active transport, such as the sodium-potassium pump, uses ATP to move ions against gradients.",
+    "clinical_application": "Cardiac drugs like digoxin target the sodium-potassium pump to affect heart function.",
+    "source_reference": "Human Anatomy & Physiology, Marieb",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "medium",
+    "difficulty_rating": 3,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["concept_targeted", "organ_heart"],
+    "keywords": ["concept_targeted", "organ_heart"],
+    "synonyms": null
+  },
+  {
+    "id": "diffusion_osmosis_filtration_008",
+    "question": "In the kidneys, what process filters blood plasma into the nephron?",
+    "correctAnswer": "Osmosis",
+    "options": ["Osmosis", "Reabsorption", "Secretion", "Filtration"],
+    "topics": [
+      "anatomy",
+      "cell_theory",
+      "equilibrium",
+      "diffusion_osmosis_filtration"
+    ],
+    "short_explanation": "Filtration in the glomerulus allows plasma to enter the nephron.",
+    "long_explanation": "In the renal corpuscle, hydrostatic pressure forces plasma from capillaries into Bowman’s capsule, initiating urine formation through filtration.",
+    "clinical_application": "Reduced filtration rate is a key marker in chronic kidney disease and is measured as GFR.",
+    "source_reference": "Medical Physiology, Guyton",
+    "filepath": "src/data/questions/anatomy/cell_theory/equilibrium/diffusion_osmosis_filtration.json",
+    "question_type": "multiple_choice",
+    "difficulty": "medium",
+    "difficulty_rating": 3,
+    "difficulty_adjustment": 0,
+    "relevance_score": null,
+    "created_at": "2025-05-24T14:34:08.116Z",
+    "updated_at": "2025-05-24T14:54:13.460Z",
+    "tags": ["technique_pressure", "anatomy_kidneys", "organ_kidneys"],
+    "keywords": ["technique_pressure", "anatomy_kidneys", "organ_kidneys"],
+    "synonyms": null
+  }
+]
