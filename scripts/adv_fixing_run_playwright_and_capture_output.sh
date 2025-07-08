@@ -29,10 +29,20 @@ export NODE_ENV=test
 # Ensure sync-tmp directory exists and move any existing sync-tmp files there
 SYNC_TMP_DIR="sync_tmp_backups"
 mkdir -p "$SYNC_TMP_DIR/reports"
+mkdir -p "$SYNC_TMP_DIR/.sync-tmp"
+
+# Move any existing sync-tmp files from root to backup directory
+if [[ -d ".sync-tmp" ]]; then
+  mv .sync-tmp/* "$SYNC_TMP_DIR/.sync-tmp/" 2>/dev/null || true
+  rmdir .sync-tmp 2>/dev/null || true
+fi
 
 # Set up output files in the backup directory
 OUTPUT_FILE="$SYNC_TMP_DIR/reports/playwright-output.txt"
 HISTORY_FILE="$SYNC_TMP_DIR/reports/playwright-output-history.txt"
+
+# Set TMPDIR for this session to redirect any new temp files
+export TMPDIR="$PWD/$SYNC_TMP_DIR/.sync-tmp"
 
 # Function to extract failed test files from the last Playwright run output
 get_failed_test_files() {
@@ -275,12 +285,16 @@ show_spinner() {
 run_with_spinner() {
   local message=$1
   shift
+  local tmp_output="$SYNC_TMP_DIR/.sync-tmp/spinner-output-$RANDOM.txt"
   # Run the command in background
-  ("$@") &
+  ("$@" > "$tmp_output" 2>&1) &
   local cmd_pid=$!
   show_spinner $cmd_pid "$message"
   wait $cmd_pid
-  return $?
+  local status=$?
+  cat "$tmp_output"
+  rm -f "$tmp_output"
+  return $status
 }
 
 # Ensure sync-tmp directory exists
@@ -511,8 +525,10 @@ fi
 # Example:
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
-  echo "[INFO] Starting Playwright tests across all browsers..."
-  (PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG | tee "$OUTPUT_FILE") &
+  echo "[INFO] Starting Playwright tests..."
+  mkdir -p "$SYNC_TMP_DIR/.sync-tmp/playwright-run-${RANDOM}"
+  (cd "$SYNC_TMP_DIR/.sync-tmp/playwright-run-${RANDOM}" && \
+   TMPDIR="$PWD" PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG | tee "$OUTPUT_FILE") &
   test_pid=$!
   show_spinner $test_pid "Running Playwright tests..."
   wait $test_pid

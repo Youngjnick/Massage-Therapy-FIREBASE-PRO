@@ -573,8 +573,10 @@ for target in $all_targets; do
   echo -e "\n--- Syncing all files to $remote/$branch ---"
   echo -e "\n--- Syncing all files to $remote/$branch ---" >> "$LOG_FILE"
 
-  # Create a temporary worktree for the target branch
-  TMP_WORKTREE="$REPO_ROOT/.sync-tmp-$branch-$$"
+  # Create a temporary worktree for the target branch in the backup directory
+  SYNC_TMP_DIR="$REPO_ROOT/sync_tmp_backups"
+  mkdir -p "$SYNC_TMP_DIR"
+  TMP_WORKTREE="$SYNC_TMP_DIR/.sync-tmp-$branch-$$"
   git worktree remove --force "$TMP_WORKTREE" 2>/dev/null
   if git show-ref --verify --quiet refs/heads/$branch; then
     git worktree add "$TMP_WORKTREE" $branch
@@ -583,10 +585,10 @@ for target in $all_targets; do
   fi
 
   # Copy all files from the current working tree to the worktree (excluding .git and node_modules)
-  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$TMP_WORKTREE/"
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='sync_tmp_backups' "$REPO_ROOT/" "$TMP_WORKTREE/"
 
-  # Ensure .sync-tmp files are copied to sync_tmp_backups automatically
-  BACKUP_TMP="$REPO_ROOT/sync_tmp_backups/.sync-tmp-$branch-$$"
+  # Also create a backup copy in the backup directory
+  BACKUP_TMP="$SYNC_TMP_DIR/.sync-tmp-$branch-$$-backup"
   mkdir -p "$BACKUP_TMP"
   rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$BACKUP_TMP/"
 
@@ -774,3 +776,15 @@ fi
 # (Commented out) Seeding script call. Manual seeding is now required before running this sync script.
 # echo "Seeding Firestore questions..."
 # node scripts/upload_questions_to_firestore_2.js e
+
+# Cleanup function for temporary directories
+cleanup_temp_dirs() {
+  # Remove any .sync-tmp directories from root if they exist
+  rm -rf "$REPO_ROOT"/.sync-tmp-* 2>/dev/null || true
+  
+  # Clean up old temp directories in backup location (older than 24 hours)
+  find "$SYNC_TMP_DIR" -name '.sync-tmp-*' -type d -mtime +1 -exec rm -rf {} \; 2>/dev/null || true
+}
+
+# Register cleanup on script exit
+trap cleanup_temp_dirs EXIT
