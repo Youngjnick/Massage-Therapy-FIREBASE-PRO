@@ -581,10 +581,14 @@ PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list | tee "$OUTPU
 python3 scripts/playwright_history_report.py
 sync
 
-# === AUTO COVERAGE REPORT GENERATION (always at end if coverage was collected) ===
-if [[ -d ".nyc_output" ]]; then
-  echo "[AUTO] Generating HTML coverage report (post-run)..."
-  npx nyc report --reporter=html
+# === ENSURE COVERAGE MERGE AND REPORT ALWAYS RUNS AT END ===
+# This block will always run, even if tests fail, as long as the script is not exited early.
+if [[ -d ".nyc_output" && $(ls -1 .nyc_output/*.json 2>/dev/null | wc -l) -gt 0 ]]; then
+  echo "[INFO] Coverage data found in .nyc_output:"
+  ls -l .nyc_output
+  echo "[AUTO] Merging all coverage data (Jest + Playwright)..."
+  npx nyc merge .nyc_output coverage/coverage-final.json
+  npx nyc report --report-dir=coverage --reporter=html
   if [[ -f "coverage/index.html" ]]; then
     echo "[AUTO] Coverage report generated: coverage/index.html"
     open coverage/index.html
@@ -595,7 +599,7 @@ if [[ -d ".nyc_output" ]]; then
     echo "[AUTO] Coverage report not found after generation."
   fi
   echo "[AUTO] Coverage summary (console):"
-  npx nyc report --reporter=text-summary
+  npx nyc report --report-dir=coverage --reporter=text-summary
 else
-  echo "[AUTO] No .nyc_output directory found. No coverage data to report."
+  echo "[WARN] No coverage data found in .nyc_output!"
 fi

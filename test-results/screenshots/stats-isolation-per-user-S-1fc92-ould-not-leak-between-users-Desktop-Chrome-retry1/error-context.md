@@ -25,7 +25,7 @@
 - main:
   - heading "Analytics" [level=1]
   - strong: "Quizzes Taken:"
-  - text: "0"
+  - text: "6"
   - strong: "Correct Answers:"
   - text: 1 / 1
   - strong: "Accuracy:"
