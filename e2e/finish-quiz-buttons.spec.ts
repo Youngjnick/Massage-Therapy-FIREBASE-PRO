@@ -2,6 +2,7 @@
 /* global console */
 // @ts-expect-error: Playwright provides types for test context
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 import { uiSignIn } from './helpers/uiSignIn';
 import { getTestUser } from './helpers/getTestUser';
 import { getUserStats } from './helpers/getUserStats';

@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 
 // Test: Quiz auto-save and resume (Firestore/localStorage)
 test.describe('Quiz Auto-Save and Resume', () => {

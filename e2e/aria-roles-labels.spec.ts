@@ -1,4 +1,5 @@
 // How to prevent port issues and test failures in the future:
+import './helpers/playwright-coverage';
 // 1. Always free up port 5173 before running tests:
 //    lsof -ti:5173 | xargs kill -9
 // 2. Force Vite to use 5173 and fail if unavailable by using:

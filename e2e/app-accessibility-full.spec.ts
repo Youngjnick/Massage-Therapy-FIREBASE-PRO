@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage'; // Collect coverage after each test
 
 // Utility to collect all tabbable elements
 async function getTabbableElements(page: any) {

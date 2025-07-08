@@ -101,7 +101,7 @@ show_menu_and_get_choice() {
   echo "  2) [f]ailed          - Run last failed tests (rerun, CI, debug, bisect, failed-lines)"
   echo "  3) [s]elect          - Run by file, pattern, tag, or description (e.g.@fast)"
   echo "  4) [u]ntested        - Run only untested test files"
-  echo "  5) [c]hanged         - Run tests for changed or staged files (since last commit)"
+  echo "  5) [ch]anged         - Run tests for changed or staged files (since last commit)"
   echo "  6) [r]epeat          - Repeat the last run (from output)"
   echo "  7) [l]ist            - List all test files, status, and show statistics"
   echo "  8) [co]verage        - Run with code coverage enabled to identify untested code"
@@ -119,7 +119,7 @@ show_menu_and_get_choice() {
     2|f*) choice="f" ;;
     3|s*) choice="s" ;;
     4|u*) choice="u" ;;
-    5|c*) choice="changed" ;;
+    5|ch*) choice="changed" ;;
     6|r*) choice="r" ;;
     7|l*) choice="l" ;;
     8|co*) choice="coverage" ;;
@@ -131,46 +131,159 @@ show_menu_and_get_choice() {
   esac
 }
 
+
+
+
+# [coverage] mode: prompt immediately after menu selection (robust for zsh/bash)
+
 show_menu_and_get_choice
-choice=$choice
+# Debug: print what the menu function set
+echo "[DEBUG] Menu selected: choice='$choice'"
 
-# Prompt for headed or headless mode
-run_mode=""
-PW_HEADLESS_VALUE=""
-while [[ -z "$run_mode" ]]; do
-  echo "\nRun in which mode? [1] Headed (UI, default) or [2] Headless (faster, no UI)? [1/2]: "
-  read -r mode_choice
-  mode_choice=${mode_choice:-1}
-  case $mode_choice in
-    1|h|H|headed|Headed|ui|UI) run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
-    2|headless|Headless|n|N) run_mode="headless"; PW_HEADLESS_VALUE="1" ;;
-    *) echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
-  esac
-  # Do NOT export PW_HEADLESS
-  # Only set PW_HEADLESS inline for each Playwright invocation
-done
+# [coverage] mode: prompt immediately after menu selection (robust for zsh/bash)
+case "$choice" in
+  coverage|COVERAGE)
+    # Prompt for Vite dev server confirmation FIRST
+    echo "[DEBUG] Entered coverage case block."
+    vite_pid=$(lsof -i :5173 -t 2>/dev/null | head -n1)
+    vite_status_msg=""
+    if [[ -n "$vite_pid" ]]; then
+      if ! ps -p "$vite_pid" -o env | grep -q 'COVERAGE=true'; then
+        vite_status_msg="[WARN] Vite dev server is running but not with COVERAGE=true. Coverage will NOT be collected!\n[HINT] Stop your dev server and restart it with: COVERAGE=true npm run dev"
+      else
+        vite_status_msg="[INFO] Vite dev server detected on port 5173 with COVERAGE=true."
+      fi
+    else
+      vite_status_msg="[WARN] Vite dev server is not running."
+    fi
 
-# Prompt for number of workers (parallelism)
-MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
-DEFAULT_WORKERS=1
-if [[ $MAX_WORKERS -gt 4 ]]; then
-  MAX_WORKERS=4
+    # Always show the Vite confirmation prompt FIRST, never skip
+    echo
+    echo "[COVERAGE MODE] Before continuing, you must confirm the Vite dev server is running in coverage mode."
+    echo "$vite_status_msg"
+    # Robustly flush any leftover input before prompt (zsh & bash)
+    while read -t 0.1 -n 10000 discard; do : ; done 2>/dev/null
+    sleep 0.1
+    while true; do
+      echo "[DEBUG] Entering coverage confirmation prompt loop..."
+      echo
+      echo "Is the Vite dev server running in coverage mode (COVERAGE=true npm run dev) and ready? [y/N]: "
+      read -r confirm_vite
+      if [[ "$confirm_vite" =~ ^[Yy]$ ]]; then
+        break
+      else
+        echo "[INFO] Please start the Vite dev server in another terminal with:"
+        echo "    COVERAGE=true npm run dev"
+        echo "Then type 'y' and press Enter here when the server is ready, or Ctrl+C to abort."
+      fi
+    done
+
+    # Prompt for headed or headless mode
+    run_mode=""
+    PW_HEADLESS_VALUE=""
+    while [[ -z "$run_mode" ]]; do
+      echo "\nRun in which mode? [1] Headed (UI, default) or [2] Headless (faster, no UI)? [1/2]: "
+      read -r mode_choice
+      mode_choice=${mode_choice:-1}
+      case $mode_choice in
+        1|h|H|headed|Headed|ui|UI) run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
+        2|headless|Headless|n|N) run_mode="headless"; PW_HEADLESS_VALUE="1" ;;
+        *) echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
+      esac
+    done
+    # Prompt for number of workers (parallelism)
+    MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
+    DEFAULT_WORKERS=1
+    if [[ $MAX_WORKERS -gt 4 ]]; then
+      MAX_WORKERS=4
+    fi
+    WORKERS=""
+    while [[ -z "$WORKERS" ]]; do
+      echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS): "
+      read -r workers_choice
+      workers_choice=${workers_choice:-$DEFAULT_WORKERS}
+      if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
+        WORKERS=$workers_choice
+      elif [[ "$workers_choice" == "max" ]]; then
+        WORKERS=$MAX_WORKERS
+      else
+        echo "[WARN] Invalid selection. Please enter a number between 1 and $MAX_WORKERS, or 'max'."
+      fi
+    done
+    WORKERS_FLAG="--workers=$WORKERS"
+
+    echo "[DEBUG] COVERAGE=\033[32m$COVERAGE\033[0m"
+    echo "[DEBUG] PW_HEADLESS=\033[32m$PW_HEADLESS_VALUE\033[0m"
+    echo "[INFO] Running tests with code coverage enabled."
+    echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
+
+    COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --reporter=list --project="Desktop Chrome" | tee "$OUTPUT_FILE"
+    python3 scripts/playwright_history_report.py
+    # Automatically generate HTML coverage report if .nyc_output exists
+    if [[ -d ".nyc_output" ]]; then
+      echo "[INFO] Generating HTML coverage report..."
+      npx nyc report --reporter=html
+      if [[ -f "coverage/index.html" ]]; then
+        echo "[INFO] Coverage report generated: coverage/index.html"
+        # Always open the report on macOS
+        open coverage/index.html
+      else
+        echo "[WARN] Coverage report not found after generation."
+      fi
+      echo "[INFO] Coverage summary (console):"
+      npx nyc report --reporter=text-summary
+    else
+      echo "[WARN] No .nyc_output directory found. No coverage data to report."
+    fi
+    exit 0
+    ;;
+esac
+
+ # Fallback debug if coverage block was not triggered
+if [[ "$choice" == "coverage" || "$choice" == "COVERAGE" ]]; then
+  echo "[ERROR] Coverage mode was selected but coverage prompt block was not triggered! Please check the menu logic."
+  exit 1
 fi
-WORKERS=""
-while [[ -z "$WORKERS" ]]; do
-  echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS): "
-  read -r workers_choice
-  workers_choice=${workers_choice:-$DEFAULT_WORKERS}
-  if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
-    WORKERS=$workers_choice
-  elif [[ "$workers_choice" == "max" ]]; then
-    WORKERS=$MAX_WORKERS
-  else
-    echo "[WARN] Invalid selection. Please enter a number between 1 and $MAX_WORKERS, or 'max'."
-  fi
-done
 
-WORKERS_FLAG="--workers=$WORKERS"
+# Prompt for headed or headless mode and workers only for non-coverage modes
+if [[ "$choice" != "coverage" && "$choice" != "COVERAGE" ]]; then
+  run_mode=""
+  PW_HEADLESS_VALUE=""
+  while [[ -z "$run_mode" ]]; do
+    echo "\nRun in which mode? [1] Headed (UI, default) or [2] Headless (faster, no UI)? [1/2]: "
+    read -r mode_choice
+    mode_choice=${mode_choice:-1}
+    case $mode_choice in
+      1|h|H|headed|Headed|ui|UI) run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
+      2|headless|Headless|n|N) run_mode="headless"; PW_HEADLESS_VALUE="1" ;;
+      *) echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
+    esac
+    # Do NOT export PW_HEADLESS
+    # Only set PW_HEADLESS inline for each Playwright invocation
+  done
+
+  MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
+  DEFAULT_WORKERS=1
+  if [[ $MAX_WORKERS -gt 4 ]]; then
+    MAX_WORKERS=4
+  fi
+  WORKERS=""
+  while [[ -z "$WORKERS" ]]; do
+    echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS): "
+    read -r workers_choice
+    workers_choice=${workers_choice:-$DEFAULT_WORKERS}
+    if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
+      WORKERS=$workers_choice
+    elif [[ "$workers_choice" == "max" ]]; then
+      WORKERS=$MAX_WORKERS
+    else
+      echo "[WARN] Invalid selection. Please enter a number between 1 and $MAX_WORKERS, or 'max'."
+    fi
+  done
+  WORKERS_FLAG="--workers=$WORKERS"
+else
+  WORKERS_FLAG=""
+fi
 
 # Wait for lint/typecheck to finish before running tests
 if kill -0 $lint_pid 2>/dev/null; then
@@ -379,34 +492,6 @@ if [[ "$choice" == "update-snapshots"* ]]; then
   exit 0
 fi
 
-# [coverage] mode
-if [[ "$choice" == "coverage"* ]]; then
-  echo "[DEBUG] COVERAGE=\033[32m$COVERAGE\033[0m"
-  echo "[DEBUG] PW_HEADLESS=\033[32m$PW_HEADLESS_VALUE\033[0m"
-  echo "[INFO] Running tests with code coverage enabled."
-  echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
-  COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list --project="Desktop Chrome" | tee "$OUTPUT_FILE"
-  python3 scripts/playwright_history_report.py
-  # Automatically generate HTML coverage report if .nyc_output exists
-  if [[ -d ".nyc_output" ]]; then
-    echo "[INFO] Generating HTML coverage report..."
-    npx nyc report --reporter=html
-    if [[ -f "coverage/index.html" ]]; then
-      echo "[INFO] Coverage report generated: coverage/index.html"
-      # Optionally open the report on macOS
-      if [[ "$OSTYPE" == "darwin"* ]]; then
-        open coverage/index.html
-      fi
-    else
-      echo "[WARN] Coverage report not found after generation."
-    fi
-    echo "[INFO] Coverage summary (console):"
-    npx nyc report --reporter=text-summary
-  else
-    echo "[WARN] No .nyc_output directory found. No coverage data to report."
-  fi
-  exit 0
-fi
 
 # [x]failed-lines mode
 if [[ "$choice" == "x"* ]]; then

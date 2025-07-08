@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 import { uiSignIn } from './helpers/uiSignIn';
 import { getTestUser } from './helpers/getTestUser';
 

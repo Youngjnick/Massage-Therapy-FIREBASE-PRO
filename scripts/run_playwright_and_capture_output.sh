@@ -46,17 +46,30 @@ read -r choice
 # Coverage mode: run all tests with coverage and update history
 if [[ "$choice" == "c"* || "$choice" == "coverage"* ]]; then
   echo "[INFO] Running tests with code coverage enabled."
-  # Check if Vite dev server is running with COVERAGE=true
+  # Always prompt for confirmation before running coverage tests
   vite_pid=$(lsof -i :5173 -t 2>/dev/null | head -n1)
+  vite_status_msg=""
   if [[ -n "$vite_pid" ]]; then
     if ! ps -p "$vite_pid" -o env | grep -q 'COVERAGE=true'; then
-      echo "[WARN] Vite dev server is running but not with COVERAGE=true. Coverage will NOT be collected!"
-      echo "[HINT] Stop your dev server and restart it with: COVERAGE=true npm run dev"
+      vite_status_msg="[WARN] Vite dev server is running but not with COVERAGE=true. Coverage will NOT be collected!\n[HINT] Stop your dev server and restart it with: COVERAGE=true npm run dev"
+    else
+      vite_status_msg="[INFO] Vite dev server detected on port 5173 with COVERAGE=true."
     fi
   else
-    echo "[WARN] Vite dev server is not running. You must start it with COVERAGE=true for coverage to work."
-    echo "[HINT] Run: COVERAGE=true npm run dev"
+    vite_status_msg="[WARN] Vite dev server is not running."
   fi
+  echo "$vite_status_msg"
+  while true; do
+    echo "\nIs the Vite dev server running in coverage mode (COVERAGE=true npm run dev) and ready? [y/N]: "
+    read -r confirm_vite
+    if [[ "$confirm_vite" =~ ^[Yy]$ ]]; then
+      break
+    else
+      echo "[INFO] Please start the Vite dev server in another terminal with:"
+      echo "    COVERAGE=true npm run dev"
+      echo "Then type 'y' and press Enter here when the server is ready, or Ctrl+C to abort."
+    fi
+  done
   COVERAGE=true PW_HEADLESS=0 npx playwright test --reporter=list --project="Desktop Chrome" | tee "$OUTPUT_FILE"
   sync
   # Generate HTML report if .nyc_output exists

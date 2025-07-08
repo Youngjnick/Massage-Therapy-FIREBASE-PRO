@@ -3,6 +3,7 @@
 // Ensures stats persist and UI is correct after a full app reload
 
 import { test, expect, Page } from '@playwright/test';
+import './helpers/playwright-coverage';
 import { resetUserStats } from './helpers/resetUserStats';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
