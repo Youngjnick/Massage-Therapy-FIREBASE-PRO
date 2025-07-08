@@ -1,0 +1,28 @@
+#!/bin/zsh
+# sync-all-files-to-branches.sh
+# Usage: ./scripts/sync-all-files-to-branches.sh [--remote remote1 remote2 ...] [--skip-tests] branch1 branch2 ...
+# Example: ./scripts/sync-all-files-to-branches.sh --remote origin your-fork main main2
+
+remotes=(origin)
+branches=()
+LOG_FILE="$(dirname "$0")/sync-history.log"
+mkdir -p "$(dirname "$LOG_FILE")"
+touch "$LOG_FILE"
+SKIP_TESTS=false
+
+# --- SUMMARY FUNCTION ---
+show_stash_and_precommit_summary() {
+  echo "\033[1;35m----- Git Commit Summary -----\033[0m"
+  git --no-pager log -1 --stat
+  echo
+  echo "Current branch: $(git symbolic-ref --short -q HEAD)"
+  git status -sb
+  echo
+  if git stash list | grep -q .; then
+    echo "Latest stash:"
+    git stash list | head -1
+  fi
+  echo "\033[1;35m-----------------------------\033[0m"
+}
+
+# ...existing code from commit c472a627 would continue here...

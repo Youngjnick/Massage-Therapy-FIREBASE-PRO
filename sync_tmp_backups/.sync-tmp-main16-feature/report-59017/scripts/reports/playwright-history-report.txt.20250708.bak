@@ -1,0 +1,24 @@
+# Playwright Test Report
+
+## Summary
+
+- **Total Tests:** 142
+- **Passed:** 0
+- **Failed:** 0
+- **Flaky:** 0
+- **Skipped:** 0
+
+## Test Results
+
+### e2e/badge-dynamic-behavior.spec.ts
+- ✅ **e2e/badge-dynamic-behavior.spec.ts:6:1**: ✓ (latest, 10 passes, 0 failures, 0 flaky, 0 skipped, last: 2025-07-07 21:14:37) 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+- ✅ **e2e/badge-dynamic-behavior.spec.ts:25:1**: ✓ (latest, 10 passes, 0 failures, 0 flaky, 0 skipped, last: 2025-07-07 21:14:37) 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+- ✅ **e2e/badge-dynamic-behavior.spec.ts:7:1**: ✓ (latest, 6 passes, 4 failures, 0 flaky, 0 skipped, last: 2025-07-08 14:35:11) 🟥🟥🟥🟥🟩🟩🟩🟩🟩🟩
+- ✅ **e2e/badge-dynamic-behavior.spec.ts:26:1**: ✓ (latest, 6 passes, 4 failures, 0 flaky, 0 skipped, last: 2025-07-08 14:35:11) 🟥🟥🟥🟥🟩🟩🟩🟩🟩🟩
+### e2e/badge-appearance.spec.ts
+- ✅ **e2e/badge-appearance.spec.ts:22:2**: ✓ (latest, 10 passes, 0 failures, 0 flaky, 0 skipped, last: 2025-07-07 21:14:37) 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+- ✅ **e2e/badge-appearance.spec.ts:23:2**: ✓ (latest, 6 passes, 4 failures, 0 flaky, 0 skipped, last: 2025-07-08 14:35:11) 🟥🟥🟥🟥🟩🟩🟩🟩🟩🟩
+### e2e/all-interactive-aria-accessibility.spec.ts
+- ✅ **e2e/all-interactive-aria-accessibility.spec.ts:36:5**: ✓ (latest, 10 passes, 0 failures, 0 flaky, 0 skipped, last: 2025-07-07 21:14:37) 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+- ✅ **e2e/all-interactive-aria-accessibility.spec.ts:37:5**: ✓ (latest, 10 passes, 0 failures, 0 flaky, 0 skipped, last: 2025-07-08 14:35:11) 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+# ...existing code...
