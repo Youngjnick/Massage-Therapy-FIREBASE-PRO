@@ -497,7 +497,7 @@ for target in $all_targets; do
   # Copy all files from the current working tree to the worktree (excluding .git and node_modules)
   rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$TMP_WORKTREE/"
 
-  # Also copy all files to sync_tmp_backups for backup/inspection (in correct folder, not root)
+  # Ensure .sync-tmp files are copied to sync_tmp_backups automatically
   BACKUP_TMP="$REPO_ROOT/sync_tmp_backups/.sync-tmp-$branch-$$"
   mkdir -p "$BACKUP_TMP"
   rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$BACKUP_TMP/"

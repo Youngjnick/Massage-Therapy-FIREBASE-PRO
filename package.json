@@ -16,7 +16,8 @@
     "resetUserStats": "FIRESTORE_EMULATOR_HOST=localhost:8080 GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f ts-node e2e/helpers/resetUserStats.ts",
     "test:e2e:playwright": "FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 npx playwright test",
     "preview": "vite preview",
-    "postinstall": "npx playwright install"
+    "postinstall": "npx playwright install",
+    "firestore:export": "firebase firestore:export ./firebase_exports"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",

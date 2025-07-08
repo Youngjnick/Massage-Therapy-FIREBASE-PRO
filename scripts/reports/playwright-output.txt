@@ -1,22 +1,22 @@
-[DEBUG] PW_HEADLESS: 0
+[DEBUG] PW_HEADLESS: 1
 [dotenv@17.0.1] injecting env (5) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-p3e9muvk@gmail.com created successfully. UID: QjXuNLjInuqYsTtP7Um2bSkIsYRH
-Firestore user doc created for testuserc-p3e9muvk@gmail.com (uid: QjXuNLjInuqYsTtP7Um2bSkIsYRH)
-User testuserd-ekyakutg@gmail.com created successfully. UID: Jn3R6frb9uvz2vO09ZHkhOhVM9AD
-Firestore user doc created for testuserd-ekyakutg@gmail.com (uid: Jn3R6frb9uvz2vO09ZHkhOhVM9AD)
+User testuserc-mwk2l5jf@gmail.com created successfully. UID: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+Firestore user doc created for testuserc-mwk2l5jf@gmail.com (uid: xRvFHQ1OFkeRasM5kUTOQFxfa59E)
+User testuserd-03brqlie@gmail.com created successfully. UID: eOPuOLhIp1fOD8nefOzZR3crdLCp
+Firestore user doc created for testuserd-03brqlie@gmail.com (uid: eOPuOLhIp1fOD8nefOzZR3crdLCp)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-p3e9muvk@gmail.com",
+    "email": "testuserc-mwk2l5jf@gmail.com",
     "password": "testuserC",
-    "uid": "QjXuNLjInuqYsTtP7Um2bSkIsYRH"
+    "uid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E"
   },
   {
-    "email": "testuserd-ekyakutg@gmail.com",
+    "email": "testuserd-03brqlie@gmail.com",
     "password": "testuserD",
-    "uid": "Jn3R6frb9uvz2vO09ZHkhOhVM9AD"
+    "uid": "eOPuOLhIp1fOD8nefOzZR3crdLCp"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
@@ -30,20 +30,1890 @@ Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
 
 Running 99 tests using 4 workers
 
-[DEBUG] PW_HEADLESS: 0
+[DEBUG] PW_HEADLESS: 1
+[DEBUG] PW_HEADLESS: 1
+[DEBUG] PW_HEADLESS: 1
 [COVERAGE DEBUG] process.env.COVERAGE: true
-[COVERAGE DEBUG] playwright-coverage.ts loaded
-[DEBUG] PW_HEADLESS: 0
-[DEBUG] PW_HEADLESS: 0
-[DEBUG] PW_HEADLESS: 0
 [COVERAGE DEBUG] process.env.COVERAGE: true
-[COVERAGE DEBUG] playwright-coverage.ts loaded
-[COVERAGE DEBUG] process.env.COVERAGE: true
+[DEBUG] PW_HEADLESS: 1
 [COVERAGE DEBUG] process.env.COVERAGE: true
 [COVERAGE DEBUG] playwright-coverage.ts loaded
 [COVERAGE DEBUG] playwright-coverage.ts loaded
-[E2E DEBUG] About to sign in with test user: testuserc-p3e9muvk@gmail.com
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on / have accessible names and ARIA roles @fast
+[COVERAGE] Wrote coverage to out-1751999553089-ml93bju7rc.json
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (7.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Clicking Start button...
+Clicking first quiz option...
+Clicking Finish button...
+Clicking Start New Quiz button...
+Filling Quiz Length again...
+Clicking Start button again...
+Waiting for quiz loading spinner to disappear...
+Waiting for quiz question card to be visible...
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts - Tab through all main pages and assert focus order/visibility
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[COVERAGE] Wrote coverage to out-1751999555935-v0m8c0rszs.json
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Number of quiz options after restart: [33m4[39m
+Option 0 focused: [33mtrue[39m
+Option 1 focused: [33mfalse[39m
+Option 2 focused: [33mfalse[39m
+Option 3 focused: [33mfalse[39m
+Active element after quiz restart: <input id="quiz-option-abdominal_muscle_origins_010-0-0-310bae35-b1e6-4f00-9034-220cd57b2d41" aria-label="Option A: All of the above" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_010-0-310bae35-b1e6-4f00-9034-220cd57b2d41" style="margin-right: 12px; cursor: pointer;">
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should reset quiz and focus first option after restart
+[COVERAGE] Wrote coverage to out-1751999556752-dx9vv6sjgb8.json
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  4 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:46:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (9.8s)
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /quiz have accessible names and ARIA roles @fast
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts - No missing or duplicate ARIA labels/roles on main interactive elements
+[COVERAGE] Wrote coverage to out-1751999558060-zi0erqt96y.json
+[COVERAGE] Wrote coverage to out-1751999558141-dhzu6bo0nrc.json
+  ✓  1 [Desktop Chrome] › e2e/app.spec.ts:43:1 › should reset quiz and focus first option after restart (11.1s)
+  ✓  6 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:95:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (2.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (5.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /achievements have accessible names and ARIA roles @fast
+[E2E DEBUG] Navigating to quiz page...
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+[E2E DEBUG] Filling Quiz Length...
+[COVERAGE] Wrote coverage to out-1751999564539-ub2pd46r7v.json
+  ✓  9 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles @fast (5.6s)
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts - Tab through all main pages and assert focus order/visibility (Mobile)
+[E2E DEBUG] Navigating to profilePath: /profile
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/aria-roles-labels.spec.ts - Main navigation and buttons have correct ARIA roles and labels
+[E2E DEBUG] Clicking Start button...
+[E2E DEBUG] Waiting for quiz question card to be visible...
+[COVERAGE] Wrote coverage to out-1751999567159-7p5roauv0y6.json
+[E2E DEBUG] Quiz question card is visible.
+[E2E DEBUG] Clicking first option...
+[COVERAGE] Wrote coverage to out-1751999567193-1ny9pd9n7vy.json
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Clicking second option...
+[E2E DEBUG] Clicking first option again...
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Clicking Finish button...
+[E2E DEBUG] Clicking Start New Quiz button...
+[E2E DEBUG] Filling Quiz Length again...
+[E2E DEBUG] Clicking Start button again...
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for quiz loading spinner to disappear...
+[E2E DEBUG] Quiz loading spinner is hidden.
+[E2E DEBUG] Waiting for quiz question card to be visible after restart...
+[E2E DEBUG] Quiz question card is visible after restart.
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should handle edge case: rapid answer selection
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  -  2 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:40:3 › Accessibility: ARIA roles and labels › Main navigation and buttons have correct ARIA roles and labels
+[COVERAGE] Wrote coverage to out-1751999568664-vlkfnwlpmep.json
+[E2E DEBUG] After test: should handle edge case: rapid answer selection
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:120:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (9.0s)
+  ✓  12 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:12:1 › Badge image is served by Vite dev server (case-sensitive) (82ms)
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /analytics have accessible names and ARIA roles @fast
+  ✓  13 [Desktop Chrome] › e2e/assets-case-sensitivity.spec.ts:18:1 › No case-different files in public/badges/ (9ms)
+  -  14 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:11:8 › Development Asset Troubleshooting › Badge image is accessible directly
+  ✓  7 [Desktop Chrome] › e2e/app.spec.ts:153:1 › should handle edge case: rapid answer selection (10.4s)
+  ✓  15 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:25:3 › Development Asset Troubleshooting › App icon is accessible directly (214ms)
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[COVERAGE] Wrote coverage to out-1751999569734-35bswhuipg.json
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  10 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles @fast (4.2s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Tab focus order: [
+  [32m'<a aria-label="Go to Quiz page" role="link" href="/quiz" data-discover="true">Quiz</a>'[39m,
+  [32m'<a aria-label="Go to Achievements page" role="link" href="/achievements" data-discover="true">Achievements</a>'[39m,
+  [32m'<a aria-label="Go to Analytics page" role="link" href="/analytics" data-discover="true">Analytics</a>'[39m,
+  [32m'<a aria-label="Go to Profile page" role="link" href="/profile" data-discover="true">Profile</a>'[39m,
+  [32m'<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 1000;">Skip to main content</a>'[39m,
+  [32m'<button class="main-btn" aria-label="Sign in with Google" style="padding: 0.85rem 2.2rem; background: linear-gradient(90deg, rgb(59, 130, 246) 60%, rgb(110, 231, 183) 100%); color: rgb(255, 255, 255); border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: rgba(59, 130, 246, 0.08) 0px 2px 8px; transition: background 0.2s, transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s cubic-bezier(0.4, 2, 0.6, 1); border: none; cursor: pointer; outline: none; width: 100%; max-width: 320px; margin-bottom: 10px;">Sign In with Google</button>'[39m,
+  [32m'<a href="/quiz" class="main-btn" aria-label="Explore quizzes" style="padding: 0.85rem 2.2rem; background: linear-gradient(90deg, rgb(0, 184, 148) 60%, rgb(59, 130, 246) 100%); color: rgb(255, 255, 255); border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: rgba(0, 184, 148, 0.08) 0px 2px 8px; transition: background 0.2s, transform 0.18s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.18s cubic-bezier(0.4, 2, 0.6, 1); outline: none; width: 100%; max-width: 320px; margin-bottom: 10px; display: inline-block; text-align: center;">Explore Quizzes</a>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Practice Quizzes (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.15s 1 normal forwards running fadeInUp, 4.2s ease-in-out 0s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">📝</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Practice Quizzes</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">Test your knowledge with interactive quizzes and instant feedback.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Track Progress (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.28s 1 normal forwards running fadeInUp, 4.2s ease-in-out 0.7s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">📈</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Track Progress</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">See your stats, streaks, and improvement over time.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<button type="button" class="feature-card" aria-label="Earn Achievements (click to view)" style="background: rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 1.1rem 1.3rem; min-width: 140px; max-width: 220px; margin: 0.5rem 0px; box-shadow: rgba(30, 60, 40, 0.08) 0px 2px 12px; text-align: center; color: rgb(234, 255, 242); font-weight: 500; font-size: 1.04rem; border: 1.5px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 1 1 120px; box-sizing: border-box; opacity: 0; transform: translateY(24px); animation: 0.7s cubic-bezier(0.4, 2, 0.6, 1) 0.41s 1 normal forwards running fadeInUp, 4.2s ease-in-out 1.4s infinite alternate none running floatCard; cursor: pointer; transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1), border 0.4s; outline: none; position: relative; overflow: hidden;"><span class="feature-card-icon" aria-hidden="true" style="font-size: 2.1rem; margin-bottom: 4px;">🏆</span><span class="feature-card-title" style="font-weight: 700; font-size: 1.08rem; margin-bottom: 2px; word-break: break-word;">Earn Achievements</span><span class="feature-card-desc" style="font-size: 0.98rem; line-height: 1.3;">Unlock badges and celebrate your learning milestones.</span><span class="feature-card-border" aria-hidden="true"></span></button>'[39m,
+  [32m'<a href="/about" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">About</a>'[39m,
+  [32m'<a href="/privacy" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">Privacy</a>'[39m,
+  [32m'<a href="/contact" class="footer-nav-link" style="color: rgb(110, 231, 183); text-decoration: underline; font-weight: 500; font-size: 16px;">Contact</a>'[39m,
+  [32m'<input class="question-search-bar" placeholder="Search questions..." aria-label="Search questions" type="text">'[39m
+]
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/aria-roles-labels.spec.ts - Keyboard navigation: Tab through all interactive elements and ensure correct focus order
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[COVERAGE] Wrote coverage to out-1751999571587-q1sog25n1ro.json
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+  ✓  17 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:31:3 › Development Asset Troubleshooting › Achievements page renders badge containers and images (2.0s)
+  ✓  19 [Desktop Chrome] › e2e/assets-troubleshoot.spec.ts:59:3 › Development Asset Troubleshooting › badges.json is accessible and returns valid JSON (252ms)
+  ✓  11 [Desktop Chrome] › e2e/aria-roles-labels.spec.ts:119:3 › Accessibility: ARIA roles and labels › Keyboard navigation: Tab through all interactive elements and ensure correct focus order (4.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /profile have accessible names and ARIA roles @fast
+[COVERAGE] Wrote coverage to out-1751999573478-bcq0crvf45h.json
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+  ✓  18 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles @fast (3.4s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  22 [Desktop Chrome] › e2e/auth.spec.ts:9:3 › Authentication UI Flows › should show sign-in prompt on Analytics when unauthenticated (1.2s)
+Navigated to /profile
+[E2E DEBUG] Quiz question object: {
+  id: [32m'abdominal_muscle_origins_006'[39m,
+  difficulty_rating: [1mnull[22m,
+  keywords: [ [32m'iliohypogastric'[39m, [32m'thoracoabdominal'[39m, [32m'trunk'[39m ],
+  question: [32m'What nerve supplies the internal oblique muscle?'[39m,
+  long_explanation: [32m'The internal oblique receives motor supply from thoracoabdominal nerves (T7–T11), subcostal (T12), and contributions from iliohypogastric and ilioinguinal nerves (L1), coordinating trunk flexion and abdominal compression.'[39m,
+  question_type: [1mnull[22m,
+  synonyms: [1mnull[22m,
+  topics: [ [32m'anatomy'[39m, [32m'origins'[39m, [32m'abdominal_muscle_origins'[39m ],
+  created_at: [1mnull[22m,
+  difficulty_adjustment: [1mnull[22m,
+  relevance_score: [1mnull[22m,
+  short_explanation: [32m'It is innervated by thoracoabdominal nerves and the L1 nerve.'[39m,
+  source_reference: [32m'Gray’s Anatomy for Students'[39m,
+  tags: [ [32m'internal oblique'[39m, [32m'nerves'[39m, [32m'L1'[39m ],
+  difficulty: [32m'hard'[39m,
+  filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+  updated_at: [1mnull[22m,
+  options: [
+    [32m'Lower six thoracoabdominal nerves and L1'[39m,
+    [32m'Genitofemoral nerve'[39m,
+    [32m'Obturator nerve'[39m,
+    [32m'Phrenic nerve'[39m
+  ],
+  clinical_application: [32m'Knowledge of this innervation helps when working with patients recovering from abdominal surgery or sports injuries.'[39m,
+  correctAnswer: [32m'Lower six thoracoabdominal nerves and L1'[39m
+}
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should show explanations when enabled
+[COVERAGE] Wrote coverage to out-1751999576077-467y3sp07hb.json
+[E2E DEBUG] After test: should show explanations when enabled
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  21 [Desktop Chrome] › e2e/auth-smoke.spec.ts:17:1 › auth smoke: can sign in and see user info (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  20 [Desktop Chrome] › e2e/auth-session-persistence.spec.ts:20:3 › Auth Session Persistence › should persist session after reload (3.8s)
+  ✓  25 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:7:1 › badges.json has correct criteria and image fields (37ms)
+Sign-in button is visible
+Waiting for popup: [##Popup opened event detected
+  ✓  16 [Desktop Chrome] › e2e/app.spec.ts:216:1 › should show explanations when enabled (7.0s)
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+]
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+  ✓  23 [Desktop Chrome] › e2e/auth.spec.ts:14:3 › Authentication UI Flows › should show sign-in button and open popup on Profile page (2.0s)
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  26 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:26:1 › badge_test image is visible and loads (1.8s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+  ✓  29 [Desktop Chrome] › e2e/basic-navigation.spec.ts:14:5 › Basic Navigation › can navigate to / (326ms)
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+  ✓  28 [Desktop Chrome] › e2e/auth.spec.ts:51:3 › Authentication UI Flows › should show sign-in button after sign out click (UI only) (1.5s)
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+  -  31 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:10:8 › Critical Quiz Edge Cases and Accessibility › Partial answers: finish quiz with unanswered questions
+  -  32 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:29:8 › Critical Quiz Edge Cases and Accessibility › Network failure: loading questions
+  ✓  30 [Desktop Chrome] › e2e/basic-navigation.spec.ts:14:5 › Basic Navigation › can navigate to /quiz (500ms)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  34 [Desktop Chrome] › e2e/basic-navigation.spec.ts:14:5 › Basic Navigation › can navigate to /analytics (481ms)
+  ✓  24 [Desktop Chrome] › e2e/badge-appearance.spec.ts:23:2 › Local badge images (UI login) › All key badges appear on Achievements page (3.4s)
+  ✓  35 [Desktop Chrome] › e2e/basic-navigation.spec.ts:14:5 › Basic Navigation › can navigate to /profile (252ms)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+Filled Quiz Length input by label
+  ✓  33 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:42:3 › Critical Quiz Edge Cases and Accessibility › ARIA attributes: quiz options and navigation (4.8s)
+  ✓  38 [Desktop Chrome] › e2e/critical-edge-accessibility.spec.ts:120:3 › Critical Quiz Edge Cases and Accessibility › Badges: tab, open with Enter/Space, close with Escape, focus returns (333ms)
+Radio 0 disabled: [33mtrue[39m
+Radio 1 disabled: [33mtrue[39m
+Radio 2 disabled: [33mtrue[39m
+Radio 3 disabled: [33mtrue[39m
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  36 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:26:3 › Quiz Edge Cases and Accessibility › Quiz with all options disabled: keyboard navigation skips disabled (5.5s)
+  ✓  37 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:27:3 › Critical UI and Accessibility Scenarios › Mobile viewport: quiz UI, results, and modals are visible and usable (5.5s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  -  41 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:100:3 › Critical UI and Accessibility Scenarios › Badge modals: only one open at a time, keyboard accessible
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  40 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:69:3 › Quiz Edge Cases and Accessibility › Badge modal: opens and fallback image appears if missing (3.2s)
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[E2E PROGRESS] Filled Quiz Length input
+[E2E PROGRESS] Clicked Start button
+[E2E DEBUG] Page HTML after Start: <!DOCTYPE html><html lang="en"><head>
+  <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+  <script type="module" src="/@vite/client"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage Therapy Smart Study PRO</title>
+  <link rel="icon" type="image/x-icon" href="/Massage-Therapy-FIREBASE-PRO/favicon.ico">
+  <link rel="apple-touch-icon" href="/Massage-Therapy-FIREBASE-PRO/icon-512x512.png">
+  <meta name="theme-color" content="#1e3c28">
+  <script type="module" src="/src/index.tsx"></script>
+<style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/src/components/AppHeader.css">.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 0 1rem 0;
+  justify-content: center;
+}
+.app-header__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  background: #1e3c28;
+}
+.app-header__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.app-header__title-bold {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #eafff2;
+  letter-spacing: 0.01em;
+}
+.app-header__title-regular {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #b6e7c9;
+  margin-top: 0.1rem;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 700px) {
+  .app-header {
+    flex-direction: row; /* Keep icon and title side by side */
+    gap: 0.7rem;
+    padding: 1rem 0 0.5rem 0;
+  }
+  .app-header__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+  .app-header__title-bold {
+    font-size: 1.2rem;
+  }
+  .app-header__title-regular {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .app-header__title-bold {
+    font-size: 1rem;
+  }
+  .app-header__title-regular {
+    font-size: 0.8rem;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/src/components/NavBar.css">.navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(30, 60, 40, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  margin: 24px auto 32px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0.75rem 2rem;
+  margin: 0;
+}
+.navbar a {
+  color: #d0ffd6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.22rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar a.active, .navbar a:hover {
+  background: rgba(80, 255, 180, 0.18);
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .navbar {
+    max-width: 100vw;
+    margin: 16px 0 20px 0;
+    border-radius: 10px;
+  }
+  .navbar ul {
+    gap: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .navbar a {
+    font-size: 1.08rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    max-width: 100vw;
+    border-radius: 6px;
+  }
+  .navbar ul {
+    gap: 0.5rem;
+    padding: 0.3rem 0.2rem;
+  }
+  .navbar a {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/src/components/AppFooter.css">.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0 1.5rem 0;
+  background: transparent;
+}
+
+.question-search-bar {
+  width: 320px;
+  max-width: 90vw;
+  padding: 0.7rem 1.2rem;
+  border-radius: 16px;
+  border: none;
+  background: rgba(30, 60, 40, 0.7);
+  color: #eafff2;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  /* Remove outline: none for accessibility */
+  /* outline: none; */
+  transition:
+    box-shadow 0.2s,
+    background 0.2s;
+  box-sizing: border-box;
+}
+
+.question-search-bar:focus {
+  background: rgba(80, 255, 180, 0.18);
+  box-shadow: 0 4px 24px rgba(80, 255, 180, 0.1);
+}
+
+@media (max-width: 700px) {
+  .app-footer {
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0.7rem 0.5rem 1rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .question-search-bar {
+    width: 100%;
+    max-width: 100vw;
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-footer {
+    padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .question-search-bar {
+    width: 100%;
+    max-width: 100vw;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/src/App.css">body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c28 0%, #2e7d4f 100%);
+  min-height: 100vh;
+  color: #eafff2;
+}
+
+body.dark-mode {
+  background: #18181b;
+  color: #f3f4f6;
+}
+
+.main-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: rgba(20, 40, 30, 0.5);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  min-height: 60vh;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.app-header.dark-mode,
+.glass-card.dark-mode {
+  background: rgba(30, 41, 59, 0.7);
+  color: #f3f4f6;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glass-card.dark-mode {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 700px) {
+  .main-content {
+    max-width: 100vw;
+    margin: 0 0;
+    padding: 1rem 0.25rem;
+    border-radius: 0;
+    min-height: 60vh;
+  }
+  .glass-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.5rem 0.1rem;
+    min-height: 50vh;
+  }
+  .glass-card {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+  }
+}
+
+/* --- Quiz UI Responsive Styles --- */
+.quiz-card {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1.2rem;
+  margin: 1.5rem auto 2rem auto;
+  max-width: 700px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+@media (max-width: 600px) {
+  .quiz-card {
+    padding: 1rem 0.5rem;
+    margin: 1rem 0.2rem 1.5rem 0.2rem;
+    border-radius: 12px;
+  }
+}
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 1.2rem 0 1.5rem 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.quiz-option {
+  display: flex;
+  align-items: center;
+  font-size: 1.08rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    border 0.18s,
+    box-shadow 0.18s;
+  min-height: 48px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  box-sizing: border-box;
+}
+.quiz-option.selected {
+  border: 2px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+}
+.quiz-option.correct {
+  border: 2px solid #22c55e;
+  background: rgba(34, 197, 94, 0.13);
+}
+.quiz-option.incorrect {
+  border: 2px solid #ef4444;
+  background: rgba(239, 68, 68, 0.13);
+}
+.quiz-option:active {
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.08);
+}
+@media (max-width: 600px) {
+  .quiz-option {
+    font-size: 1rem;
+    min-height: 44px;
+    padding: 0.7rem 0.7rem;
+  }
+}
+.quiz-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(200, 200, 200, 0.18);
+  border-radius: 8px;
+  margin: 1.2rem 0 0.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.quiz-progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(90deg, #6ee7b7, #3b82f6);
+  border-radius: 8px;
+  transition: width 0.3s;
+}
+.quiz-stepper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+.quiz-stepper-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background: #e5e7eb;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.quiz-stepper-dot.active {
+  background: #3b82f6;
+  outline: 2px solid #2563eb;
+}
+.quiz-stepper-dot.answered {
+  background: #6ee7b7;
+}
+.quiz-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  flex-direction: row;
+}
+.quiz-actions button {
+  min-width: 90px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    box-shadow 0.18s;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  margin: 0 2px;
+}
+.quiz-actions button:disabled {
+  background: #a5b4fc;
+  color: #e5e7eb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.quiz-explanation {
+  margin-top: 0.7rem;
+  font-size: 1.01rem;
+  color: #059669;
+}
+.quiz-feedback {
+  margin: 0.7rem 0;
+  font-weight: 600;
+  font-size: 1.08rem;
+}
+@media (max-width: 600px) {
+  .quiz-feedback {
+    font-size: 1rem;
+  }
+}
+/* End Quiz UI Responsive Styles */
+
+/* Global visible focus indicator for accessibility */
+button:focus-visible,
+[role='button']:focus-visible,
+a[href]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:not([tabindex='-1']):focus-visible {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+  transition:
+    outline 0.1s,
+    box-shadow 0.1s;
+}
+</style><style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-SWVWKNWDD3" async=""></script></head>
+<body>
+  <div id="root"><header class="app-header"><img alt="App Icon" class="app-header__icon" src="/icon-512x512.png"><div class="app-header__titles"><span class="app-header__title-bold">Massage Therapy</span><span class="app-header__title-regular">Smart Study PRO</span></div></header><nav class="navbar" role="navigation" aria-label="Main navigation"><ul><li><a aria-label="Go to Quiz page" role="link" href="/quiz" data-discover="true">Quiz</a></li><li><a aria-label="Go to Achievements page" role="link" href="/achievements" data-discover="true">Achievements</a></li><li><a aria-label="Go to Analytics page" role="link" href="/analytics" data-discover="true">Analytics</a></li><li><a aria-label="Go to Profile page" role="link" href="/profile" data-discover="true">Profile</a></li></ul></nav><main class="main-content" role="main"><main role="main"><h1>Quiz</h1><div class="quiz-progress-bar" style="width: 100%; margin: 1rem 0px;"><div class="quiz-progress-bar-inner" aria-valuenow="0" aria-valuemax="100" aria-valuemin="0" role="progressbar" tabindex="0" aria-label="Quiz progress: 0%" style="width: 0%; height: 10px; background: linear-gradient(90deg, rgb(110, 231, 183), rgb(59, 130, 246)); border-radius: 8px; transition: width 0.3s;"></div><div style="text-align: right; font-weight: 600; margin-top: 4px;">0 %</div></div><div class="quiz-stepper" aria-label="Question Progress" role="group"><button type="button" class="quiz-stepper-dot active" aria-current="step" aria-label="Go to question 1 (current)" role="button" data-testid="quiz-stepper-dot"></button><button type="button" class="quiz-stepper-dot" aria-label="Go to question 2" role="button" data-testid="quiz-stepper-dot"></button></div><div data-testid="quiz-question-card"><fieldset style="border: 0px; padding: 0px; margin: 0px;"><legend style="font-weight: 600; margin-bottom: 8px;">Where does the transverse abdominis muscle originate?</legend><ul style="list-style: none; padding: 0px;"><li><div class="quiz-option" data-testid="quiz-option" data-qa="quiz-option" role="group" aria-label="Quiz option: A. Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament" style="width: 100%; cursor: pointer;"><input id="quiz-option-abdominal_muscle_origins_007-0-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" aria-label="Option A: Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="0" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_007-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="margin-right: 12px; cursor: pointer;"><label for="quiz-option-abdominal_muscle_origins_007-0-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="font-weight: 600; margin-right: 8px; cursor: pointer;">A.</label> Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament</div></li><li><div class="quiz-option" data-testid="quiz-option" data-qa="quiz-option" role="group" aria-label="Quiz option: B. Pubic crest" style="width: 100%; cursor: pointer;"><input id="quiz-option-abdominal_muscle_origins_007-1-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" aria-label="Option B: Pubic crest" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="-1" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_007-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="margin-right: 12px; cursor: pointer;"><label for="quiz-option-abdominal_muscle_origins_007-1-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="font-weight: 600; margin-right: 8px; cursor: pointer;">B.</label> Pubic crest</div></li><li><div class="quiz-option" data-testid="quiz-option" data-qa="quiz-option" role="group" aria-label="Quiz option: C. Xiphoid process" style="width: 100%; cursor: pointer;"><input id="quiz-option-abdominal_muscle_origins_007-2-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" aria-label="Option C: Xiphoid process" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="-1" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_007-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="margin-right: 12px; cursor: pointer;"><label for="quiz-option-abdominal_muscle_origins_007-2-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="font-weight: 600; margin-right: 8px; cursor: pointer;">C.</label> Xiphoid process</div></li><li><div class="quiz-option" data-testid="quiz-option" data-qa="quiz-option" role="group" aria-label="Quiz option: D. Anterior sacrum" style="width: 100%; cursor: pointer;"><input id="quiz-option-abdominal_muscle_origins_007-3-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" aria-label="Option D: Anterior sacrum" aria-checked="false" aria-disabled="false" role="radio" data-disabled="false" tabindex="-1" data-quiz-radio="true" data-testid="quiz-radio" type="radio" name="quiz-question-abdominal_muscle_origins_007-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="margin-right: 12px; cursor: pointer;"><label for="quiz-option-abdominal_muscle_origins_007-3-0-d9d1a663-cec6-41bf-9b70-28b8e97b2fdd" style="font-weight: 600; margin-right: 8px; cursor: pointer;">D.</label> Anterior sacrum</div></li></ul></fieldset><div class="quiz-explanation">Quick Tip: It originates from ribs, fascia, and pelvis.</div><div style="color: rgb(37, 99, 235); margin-top: 8px; font-size: 15px;">More Info: The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength.</div><div style="color: rgb(100, 116, 139); margin-top: 8px; font-size: 14px;">Clinical Application: Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support.</div><div style="color: rgb(161, 98, 7); margin-top: 8px; font-size: 13px;">Source: Musculoskeletal Anatomy – R. Floyd</div><div style="color: rgb(100, 116, 139); margin-top: 8px; font-size: 13px;"><span>Tags: transverse abdominis, origin, core stability </span><span>Keywords: rib attachment, abdominal core, pelvis</span></div><div class="quiz-actions" role="group" aria-label="Quiz navigation actions"><button disabled="" aria-label="Previous question" role="button" aria-disabled="true">Previous</button><button disabled="" aria-label="Next question" role="button" aria-disabled="true" tabindex="0" data-testid="quiz-next-btn" style="visibility: visible;">Next</button><button aria-label="Finish quiz early" role="button" disabled="" aria-disabled="true">Finish</button></div></div></main></main><footer class="app-footer"><input class="question-search-bar" placeholder="Search questions..." aria-label="Search questions" type="text"></footer></div>
+
+
+<p class="firebase-emulator-warning" style="position: fixed; width: 100%; background-color: rgb(255, 255, 255); border: 0.1em solid rgb(0, 0, 0); color: rgb(181, 0, 0); bottom: 0px; left: 0px; margin: 0px; z-index: 10000; text-align: center;">Running in emulator mode. Do not use with production credentials.</p></body></html>
+[E2E DEBUG] Number of quiz stepper dots: 2
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E PROGRESS] Selected first quiz option
+[E2E PROGRESS] Clicked Next button
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E PROGRESS] Selected second quiz option
+[E2E PROGRESS] Quiz results are visible
+[E2E DEBUG] window.__QUIZ_STATS_DEBUG__: {
+  status: [32m'success'[39m,
+  user: [32m'xRvFHQ1OFkeRasM5kUTOQFxfa59E'[39m,
+  completed: [33m4[39m,
+  correct: [33m2[39m,
+  total: [33m2[39m,
+  time: [32m'2025-07-08T18:33:09.499Z'[39m
+}
+[getUserStats] Querying Firestore path: users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/stats/analytics
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[getUserStats] Document found: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m2[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m2[39m },
+  completed: [33m4[39m,
+  updatedAt: [32m'2025-07-08T18:33:09.476Z'[39m
+}
+[E2E DEBUG] [Poll 1] Firestore stats at users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/stats/analytics: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m2[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m2[39m },
+  completed: [33m4[39m,
+  updatedAt: [32m'2025-07-08T18:33:09.476Z'[39m
+}
+[E2E DEBUG] Firestore analytics after finish: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m2[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m2[39m },
+  completed: [33m4[39m,
+  updatedAt: [32m'2025-07-08T18:33:09.476Z'[39m
+}
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+  ✓  39 [Desktop Chrome] › e2e/finish-quiz-buttons.spec.ts:28:3 › Finish and Finish Quiz Buttons › completes quiz and shows results with Finish button (5.3s)
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+  ✓  42 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:121:3 › Critical UI and Accessibility Scenarios › Badge modal: open with keyboard only (Tab + Enter/Space) (2.8s)
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Selected last topic value: z_lines
+[getUserStats] Querying Firestore path: users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/stats/analytics
+[getUserStats] Document found: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m2[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m2[39m },
+  completed: [33m4[39m,
+  updatedAt: [32m'2025-07-08T18:33:09.476Z'[39m
+}
+[E2E DEBUG] Firestore analytics after finish: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m2[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m2[39m },
+  completed: [33m4[39m,
+  updatedAt: [32m'2025-07-08T18:33:09.476Z'[39m
+}
+[E2E PROGRESS] Finish Quiz button is visible and enabled
+[E2E PROGRESS] Clicked Finish Quiz button
+[getUserStats] Querying Firestore path: users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/stats/analytics
+[getUserStats] Document found: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m0[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:15.518Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m0[39m },
+  completed: [33m5[39m,
+  updatedAt: [32m'2025-07-08T18:33:15.518Z'[39m
+}
+[E2E DEBUG] Firestore analytics after finish: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m2[39m,
+  correct: [33m0[39m,
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:15.518Z'[39m, streak: [33m0[39m }
+  ],
+  badgeProgress: { correct: [33m0[39m },
+  completed: [33m5[39m,
+  updatedAt: [32m'2025-07-08T18:33:15.518Z'[39m
+}
+  ✓  45 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:137:3 › Critical UI and Accessibility Scenarios › Next button: always rendered, but hidden or disabled as appropriate (5.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  44 [Desktop Chrome] › e2e/finish-quiz-buttons.spec.ts:170:3 › Finish and Finish Quiz Buttons › shows Finish Quiz button and works as expected (6.7s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  47 [Desktop Chrome] › e2e/focus-indicator.spec.ts:38:3 › Mobile Accessibility: Focus Indicator on Quiz › Tabs through all interactive elements and checks visible focus indicator (3.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  -  43 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:88:3 › Quiz Edge Cases and Accessibility › Tab order: all interactive elements are reachable
+  -  49 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:127:8 › Quiz Edge Cases and Accessibility › Screen reader text: ARIA labels and roles
+  ✓  46 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:161:3 › Critical UI and Accessibility Scenarios › Quiz cannot be started without required fields (4.5s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  48 [Desktop Chrome] › e2e/focus-indicator.spec.ts:105:3 › Mobile Accessibility: Focus Indicator on Achievements › Tabs through all interactive elements and checks visible focus indicator (3.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  51 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:206:3 › Critical UI and Accessibility Scenarios › Badge modal fallback image and keyboard navigation (2.9s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  52 [Desktop Chrome] › e2e/focus-indicator.spec.ts:165:3 › Mobile Accessibility: Focus Indicator on Analytics › Tabs through all interactive elements and checks visible focus indicator (3.0s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  50 [Desktop Chrome] › e2e/edge-accessibility.spec.ts:150:3 › Quiz Edge Cases and Accessibility › Mobile viewport: quiz, results, achievements (5.4s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  53 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:223:3 › Critical UI and Accessibility Scenarios › Network failure: badge load (2.9s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+  ✓  54 [Desktop Chrome] › e2e/focus-indicator.spec.ts:225:3 › Mobile Accessibility: Focus Indicator on Profile › Tabs through all interactive elements and checks visible focus indicator (2.8s)
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  57 [Desktop Chrome] › e2e/login-flow.spec.ts:16:3 › Sign In Flow (UI) › shows sign-in prompt when not authenticated (1.5s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  56 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:230:3 › Critical UI and Accessibility Scenarios › Accessibility: ARIA roles and labels (4.7s)
+  -  59 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:267:8 › Critical UI and Accessibility Scenarios › Tab order is logical for quiz controls
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  55 [Desktop Chrome] › e2e/keyboard-navigation-and-restart.spec.ts:24:3 › Keyboard-Only Navigation and Quiz Restart › Complete a quiz using direct element selection/clicks (5.8s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  58 [Desktop Chrome] › e2e/login-flow.spec.ts:22:3 › Sign In Flow (UI) › signs in with test form and shows user profile (2.8s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  62 [Desktop Chrome] › e2e/login-flow.spec.ts:31:3 › Sign In Flow (UI) › signs out and returns to guest state (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  60 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:281:3 › Critical UI and Accessibility Scenarios › Mobile viewport: quiz and results are usable (5.2s)
+  -  64 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:304:8 › Critical UI and Accessibility Scenarios › Quiz stepper: skip, revisit, answer in any order
+  -  65 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:324:8 › Critical UI and Accessibility Scenarios › Error boundary: UI does not crash on JS error in quiz
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  61 [Desktop Chrome] › e2e/keyboard-navigation-and-restart.spec.ts:65:3 › Keyboard-Only Navigation and Quiz Restart › Quiz restart resets all state and focus (5.5s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  63 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:40:5 › Navigation and ARIA Accessibility Flow › Page / has correct ARIA roles and keyboard navigation (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  66 [Desktop Chrome] › e2e/critical-ui-accessibility.spec.ts:332:3 › Critical UI and Accessibility Scenarios › Badge modal: top-right close button closes modal (3.3s)
+  -  69 [Desktop Chrome] › e2e/quiz-autosave-partial-results.spec.ts:7:8 › Quiz Auto-Save and Resume › Auto-saves progress for guest (localStorage) and resumes on reload
+  -  70 [Desktop Chrome] › e2e/quiz-autosave-partial-results.spec.ts:28:8 › Quiz Auto-Save and Resume › Shows cancel/exit confirmation dialog when leaving quiz
+  -  71 [Desktop Chrome] › e2e/quiz-autosave-partial-results.spec.ts:46:8 › Quiz Partial Results › Shows partial results and highlights unanswered questions
+FIRESTORE_EMULATOR_HOST: 127.0.0.1:8080
+GOOGLE_APPLICATION_CREDENTIALS: serviceAccountKey.json
+NODE_ENV: test
+Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[browser][debug] [vite] connecting...
+[browser][debug] [vite] connected.
+[browser][info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[browser][log] Connected to Firestore emulator at localhost:8080 (from env)
+[browser][info] WARNING: You are using the Auth Emulator, which is intended for local testing only.  Do not use with production credentials.
+[browser][log] Connected to Auth emulator at localhost:9099 (from env)
+[browser][log] [DEBUG] import.meta.env: {BASE_URL: /, DEV: true, MODE: development, PROD: false, SSR: false}
+[browser][log] [DEBUG] Attempting to connect to Firestore emulator: localhost 8080
+[browser][log] [DEBUG] Connected to Firestore emulator at localhost:8080
+[browser][log] [DEBUG][Router] location.pathname: /profile basename: /
+[browser][log] [E2E DEBUG] Profile user: null
+[browser][log] [E2E TEST SIGNIN] {testEmail: testuserc-mwk2l5jf@gmail.com, testPassword: testuserC}
+[browser][log] [E2E DEBUG] Profile user: _UserImpl
+[browser][log] [DEBUG] Loading user settings for: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[browser][log] [DEBUG][userSettings] getUserSettings: xRvFHQ1OFkeRasM5kUTOQFxfa59E {email: testuserc-mwk2l5jf@gmail.com, createdByTest: true, haptic: false, ariaSound: true, darkMode: false}
+[browser][log] [E2E DEBUG][Profile] getUserSettings resolved: {email: testuserc-mwk2l5jf@gmail.com, createdByTest: true, haptic: false, ariaSound: true, darkMode: false}
+[browser][log] [E2E DEBUG][Profile] Writing userSettings to localStorage: {email: testuserc-mwk2l5jf@gmail.com, createdByTest: true, haptic: false, ariaSound: true, darkMode: false}
+[browser][log] [E2E DEBUG][Profile] settingsLoaded set to true
+[browser][log] [DEBUG] Saving user settings for: xRvFHQ1OFkeRasM5kUTOQFxfa59E {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
+[browser][log] [DEBUG][userSettings] setUserSettings: xRvFHQ1OFkeRasM5kUTOQFxfa59E {darkMode: false, ariaSound: true, haptic: false, showExplanations: true}
+[browser][log] [DEBUG] Saving user settings for: xRvFHQ1OFkeRasM5kUTOQFxfa59E {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+[browser][log] [DEBUG][userSettings] setUserSettings: xRvFHQ1OFkeRasM5kUTOQFxfa59E {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+[browser][debug] [vite] connecting...
+[browser][debug] [vite] connected.
+[browser][info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[browser][log] Connected to Firestore emulator at localhost:8080 (from env)
+[browser][info] WARNING: You are using the Auth Emulator, which is intended for local testing only.  Do not use with production credentials.
+[browser][log] Connected to Auth emulator at localhost:9099 (from env)
+[browser][log] [DEBUG] import.meta.env: {BASE_URL: /, DEV: true, MODE: development, PROD: false, SSR: false}
+[browser][log] [DEBUG] Attempting to connect to Firestore emulator: localhost 8080
+[browser][log] [DEBUG] Connected to Firestore emulator at localhost:8080
+[browser][log] [analytics] app_loaded undefined
+[browser][log] [DEBUG][Router] location.pathname: /profile basename: /
+[browser][log] [E2E DEBUG] Profile user: _UserImpl
+[browser][log] [DEBUG] Loading user settings for: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[browser][log] [DEBUG][userSettings] getUserSettings: xRvFHQ1OFkeRasM5kUTOQFxfa59E {email: testuserc-mwk2l5jf@gmail.com, createdByTest: true, haptic: false, ariaSound: true, showExplanations: true}
+[browser][log] [E2E DEBUG][Profile] getUserSettings resolved: {email: testuserc-mwk2l5jf@gmail.com, createdByTest: true, haptic: false, ariaSound: true, showExplanations: true}
+[browser][log] [E2E DEBUG][Profile] Writing userSettings to localStorage: {email: testuserc-mwk2l5jf@gmail.com, createdByTest: true, haptic: false, ariaSound: true, showExplanations: true}
+[browser][log] [E2E DEBUG][Profile] settingsLoaded set to true
+[browser][log] [DEBUG] Saving user settings for: xRvFHQ1OFkeRasM5kUTOQFxfa59E {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+[browser][log] [DEBUG][userSettings] setUserSettings: xRvFHQ1OFkeRasM5kUTOQFxfa59E {darkMode: true, ariaSound: true, haptic: false, showExplanations: true}
+  ✓  67 [Desktop Chrome] › e2e/profile-update.spec.ts:27:3 › Profile Settings Persistence › can toggle dark mode and see it persist after reload (4.1s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  68 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:40:5 › Navigation and ARIA Accessibility Flow › Page /quiz has correct ARIA roles and keyboard navigation (3.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  74 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:40:5 › Navigation and ARIA Accessibility Flow › Page /analytics has correct ARIA roles and keyboard navigation (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  73 [Desktop Chrome] › e2e/quiz-keyboard-navigation.spec.ts:34:3 › Quiz keyboard navigation › ArrowDown/ArrowUp do not select or submit answers (5.7s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  75 [Desktop Chrome] › e2e/navigation-aria-flow.spec.ts:40:5 › Navigation and ARIA Accessibility Flow › Page /profile has correct ARIA roles and keyboard navigation (3.3s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  76 [Desktop Chrome] › e2e/quiz-keyboard-navigation.spec.ts:65:3 › Quiz keyboard navigation › Enter/Space select and submit, Arrow keys do not (4.6s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Found sign-out button, clicking to reset state.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+Cleared quizProgress for UID: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+After sign-in, current URL: http://localhost:5173/profile
+E2E TEST UID: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+Navigated to /quiz
+[E2E DEBUG] Submitting sign-in form.
+Quiz option ARIA attributes: {
+  role: [32m'radio'[39m,
+  ariaLabel: [32m'Option A: All of the above'[39m,
+  ariaChecked: [32m'false'[39m,
+  ariaDisabled: [32m'false'[39m,
+  tabIndex: [32m'0'[39m,
+  id: [32m'quiz-option-abdominal_muscle_origins_010-0-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  name: [32m'quiz-question-abdominal_muscle_origins_010-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  checked: [33mfalse[39m,
+  disabled: [33mfalse[39m
+}
+Quiz option ARIA attributes: {
+  role: [32m'radio'[39m,
+  ariaLabel: [32m'Option B: Rectus abdominis'[39m,
+  ariaChecked: [32m'false'[39m,
+  ariaDisabled: [32m'true'[39m,
+  tabIndex: [32m'-1'[39m,
+  id: [32m'quiz-option-abdominal_muscle_origins_010-1-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  name: [32m'quiz-question-abdominal_muscle_origins_010-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  checked: [33mfalse[39m,
+  disabled: [33mtrue[39m
+}
+Quiz option ARIA attributes: {
+  role: [32m'radio'[39m,
+  ariaLabel: [32m'Option C: Internal and external obliques'[39m,
+  ariaChecked: [32m'false'[39m,
+  ariaDisabled: [32m'true'[39m,
+  tabIndex: [32m'-1'[39m,
+  id: [32m'quiz-option-abdominal_muscle_origins_010-2-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  name: [32m'quiz-question-abdominal_muscle_origins_010-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  checked: [33mfalse[39m,
+  disabled: [33mtrue[39m
+}
+Quiz option ARIA attributes: {
+  role: [32m'radio'[39m,
+  ariaLabel: [32m'Option D: Transverse abdominis'[39m,
+  ariaChecked: [32m'false'[39m,
+  ariaDisabled: [32m'true'[39m,
+  tabIndex: [32m'-1'[39m,
+  id: [32m'quiz-option-abdominal_muscle_origins_010-3-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  name: [32m'quiz-question-abdominal_muscle_origins_010-0-36ffd27e-0297-4db8-86dc-2e1f9b70e6fd'[39m,
+  checked: [33mfalse[39m,
+  disabled: [33mtrue[39m
+}
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  77 [Desktop Chrome] › e2e/quiz-option-accessibility.spec.ts:29:3 › Quiz Option Accessibility › Each quiz option has correct ARIA attributes and is keyboard accessible (4.7s)
+[E2E DEBUG] After navigation, URL: http://localhost:5173/quiz
+[E2E DEBUG] After navigation, firebaseUserUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should show topic stats in results
+[E2E DEBUG] Quiz results visible, waiting 4s before polling Firestore...
+[COVERAGE] Wrote coverage to out-1751999637985-t7q0klwf99.json
+[E2E DEBUG] After test: should show topic stats in results
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  79 [Desktop Chrome] › e2e/reload-webbar.spec.ts:8:3 › App reload and webbar visibility › NavBar is visible after reload (2.6s)
+  ✘  27 [Desktop Chrome] › e2e/app.spec.ts:277:1 › should show topic stats in results (1.0m)
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[DEBUG] PW_HEADLESS: 1
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  80 [Desktop Chrome] › e2e/reload-webbar.spec.ts:27:3 › App reload and webbar visibility (production) › NavBar is visible after reload on deployed site (2.7s)
+[E2E DEBUG] Navigating to profilePath: /profile
+Final Quizzes Taken text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 13Correct Answers: 2 / 2Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownZ Lines0 / 2Abdominal Muscle Origins2 / 2Quiz Activity (Last 14 Days)
+Final Correct Answers text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 13Correct Answers: 2 / 2Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownZ Lines0 / 2Abdominal Muscle Origins2 / 2Quiz Activity (Last 14 Days)
+Final Accuracy text: Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 13Correct Answers: 2 / 2Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownZ Lines0 / 2Abdominal Muscle Origins2 / 2Quiz Activity (Last 14 Days)
+Final Topic Stats text: Z Lines
+0 / 2
+Abdominal Muscle Origins
+2 / 2
+Initial/Updated Quizzes Taken: [33m12[39m [33m13[39m
+Initial/Updated Correct: [33m12[39m [33m13[39m
+Initial/Updated Accuracy: [33m12[39m [33m13[39m
+Initial/Updated Topic Correct: [33m0[39m [33m0[39m
+[E2E DEBUG] Starting Firestore polling...
+E2E TEST Firestore doc path: users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/quizProgress/current
+[E2E] Polling Firestore quizProgress [=                        ] 1/25 [E2E DEBUG] Poll #1 Firestore doc: {
+  userAnswers: [ [33m0[39m, [33m0[39m ],
+  showResults: [33mtrue[39m,
+  shuffledQuestions: [
+    {
+      id: [32m'abdominal_muscle_origins_007'[39m,
+      difficulty_rating: [1mnull[22m,
+      keywords: [36m[Array][39m,
+      question: [32m'Where does the transverse abdominis muscle originate?'[39m,
+      long_explanation: [32m'The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength.'[39m,
+      question_type: [1mnull[22m,
+      synonyms: [1mnull[22m,
+      topics: [36m[Array][39m,
+      created_at: [1mnull[22m,
+      difficulty_adjustment: [1mnull[22m,
+      relevance_score: [1mnull[22m,
+      short_explanation: [32m'It originates from ribs, fascia, and pelvis.'[39m,
+      source_reference: [32m'Musculoskeletal Anatomy – R. Floyd'[39m,
+      tags: [36m[Array][39m,
+      difficulty: [32m'hard'[39m,
+      filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+      updated_at: [1mnull[22m,
+      options: [36m[Array][39m,
+      clinical_application: [32m'Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support.'[39m,
+      correctAnswer: [32m'Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament'[39m
+    },
+    {
+      id: [32m'abdominal_muscle_origins_001'[39m,
+      difficulty_rating: [1mnull[22m,
+      keywords: [36m[Array][39m,
+      question: [32m'What is the origin of the rectus abdominis muscle?'[39m,
+      long_explanation: [32m'The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation.'[39m,
+      question_type: [1mnull[22m,
+      synonyms: [1mnull[22m,
+      topics: [36m[Array][39m,
+      created_at: [1mnull[22m,
+      difficulty_adjustment: [1mnull[22m,
+      relevance_score: [1mnull[22m,
+      short_explanation: [32m'The rectus abdominis originates from the pubic crest and symphysis.'[39m,
+      source_reference: [32m'Trail Guide to the Body – Biel'[39m,
+      tags: [36m[Array][39m,
+      difficulty: [32m'easy'[39m,
+      filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+      updated_at: [1mnull[22m,
+      options: [36m[Array][39m,
+      clinical_application: [32m'Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt.'[39m,
+      correctAnswer: [32m'Pubic crest and pubic symphysis'[39m
+    }
+  ],
+  updatedAt: [32m'2025-07-08T18:33:57.591Z'[39m
+}
+
+
+E2E TEST Final Firestore quizProgress: {
+  userAnswers: [ [33m0[39m, [33m0[39m ],
+  showResults: [33mtrue[39m,
+  shuffledQuestions: [
+    {
+      id: [32m'abdominal_muscle_origins_007'[39m,
+      difficulty_rating: [1mnull[22m,
+      keywords: [36m[Array][39m,
+      question: [32m'Where does the transverse abdominis muscle originate?'[39m,
+      long_explanation: [32m'The transverse abdominis arises from the internal surfaces of costal cartilages of ribs 7–12, thoracolumbar fascia, iliac crest, and lateral inguinal ligament. It’s key in abdominal wall stability and core strength.'[39m,
+      question_type: [1mnull[22m,
+      synonyms: [1mnull[22m,
+      topics: [36m[Array][39m,
+      created_at: [1mnull[22m,
+      difficulty_adjustment: [1mnull[22m,
+      relevance_score: [1mnull[22m,
+      short_explanation: [32m'It originates from ribs, fascia, and pelvis.'[39m,
+      source_reference: [32m'Musculoskeletal Anatomy – R. Floyd'[39m,
+      tags: [36m[Array][39m,
+      difficulty: [32m'hard'[39m,
+      filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+      updated_at: [1mnull[22m,
+      options: [36m[Array][39m,
+      clinical_application: [32m'Massage that encourages deep abdominal relaxation can improve coordination of the transverse abdominis for core support.'[39m,
+      correctAnswer: [32m'Internal surfaces of lower 6 ribs, iliac crest, thoracolumbar fascia, and inguinal ligament'[39m
+    },
+    {
+      id: [32m'abdominal_muscle_origins_001'[39m,
+      difficulty_rating: [1mnull[22m,
+      keywords: [36m[Array][39m,
+      question: [32m'What is the origin of the rectus abdominis muscle?'[39m,
+      long_explanation: [32m'The rectus abdominis muscle originates from the pubic crest and pubic symphysis and inserts on the xiphoid process and costal cartilages of ribs 5–7. It plays a vital role in trunk flexion and intra-abdominal pressure regulation.'[39m,
+      question_type: [1mnull[22m,
+      synonyms: [1mnull[22m,
+      topics: [36m[Array][39m,
+      created_at: [1mnull[22m,
+      difficulty_adjustment: [1mnull[22m,
+      relevance_score: [1mnull[22m,
+      short_explanation: [32m'The rectus abdominis originates from the pubic crest and symphysis.'[39m,
+      source_reference: [32m'Trail Guide to the Body – Biel'[39m,
+      tags: [36m[Array][39m,
+      difficulty: [32m'easy'[39m,
+      filepath: [32m'src/data/questions/anatomy/origins/abdominal_muscle_origins.json'[39m,
+      updated_at: [1mnull[22m,
+      options: [36m[Array][39m,
+      clinical_application: [32m'Understanding this helps massage therapists treat lower abdominal strain or address postural imbalance in anterior pelvic tilt.'[39m,
+      correctAnswer: [32m'Pubic crest and pubic symphysis'[39m
+    }
+  ],
+  updatedAt: [32m'2025-07-08T18:33:57.591Z'[39m
+}
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+  ✓  78 [Desktop Chrome] › e2e/quiz-stats-live-update.spec.ts:17:3 › Quiz Stats Live Update › Stats and topic stats update after quiz completion (8.5s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+  ✓  72 [Desktop Chrome] › e2e/quiz-firestore-verification.spec.ts:39:3 › Quiz Firestore Verification › Quiz results are saved to Firestore after submit (20.6s)
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] User A localStorage after sign-in: {
+  "userSettings": "{\"email\":\"testuserc-mwk2l5jf@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"showExplanations\":true,\"darkMode\":true}",
+  "firebaseUserUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E",
+  "testUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E"
+}
+[E2E DEBUG] User A sessionStorage after sign-in: {}
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Cookies after sign-in: [
+  {
+    "name": "_ga",
+    "value": "GA1.1.559821446.1751999642",
+    "domain": "localhost",
+    "path": "/",
+    "expires": 1786559642.302652,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_SWVWKNWDD3",
+    "value": "GS2.1.s1751999642$o1$g0$t1751999642$j60$l0$h0",
+    "domain": "localhost",
+    "path": "/",
+    "expires": 1786559642.310604,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]
+User A UID: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] User A localStorage: {
+  "userSettings": "{\"email\":\"testuserc-mwk2l5jf@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"showExplanations\":true,\"darkMode\":true}",
+  "firebaseUserUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E",
+  "testUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E"
+}
+Polling stat (User A initial): [[E2E DEBUG] initialQuizzesTaken: 0 userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+#]
+User A initial stat: 0
+[E2E DEBUG] initialQuizzesTaken: 0
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should show topic stats in results
+[COVERAGE] Wrote coverage to out-1751999646633-89lrgsmxtpp.json
+[E2E DEBUG] After test: should show topic stats in results
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[E2E DEBUG] quizResultsText after quiz #1: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhat is the origin of the external oblique muscle?Your answer: External surfaces of ribs 5–12Correct answer: External surfaces of ribs 5–12Explanation: The external oblique arises from ribs 5 to 12.More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression.Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture.Answered: 1 / 1Close
+  ✓  81 [Desktop Chrome] › e2e/app.spec.ts:277:1 › should show topic stats in results (retry #1) (7.6s)
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] updatedQuizzesTaken: 3
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] quizzesTakenAfterReload: 3 expected: 3
+  ✓  84 [Desktop Chrome] › e2e/stats-persistence-after-reload.spec.ts:57:3 › Stats Persistence After Reload › should persist stats and UI after app reload (9.3s)
+  -  86 [Desktop Chrome] › e2e/stats-persistence-firestore.spec.ts:26:8 › Stats Persistence with Firestore Backend Verification › UI stats and Firestore stats match and persist after quiz and reload
+[E2E DEBUG] Navigating to profilePath: /profile
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should render and be usable on mobile viewport
+[COVERAGE] Wrote coverage to out-1751999652746-sea1tvlzr6m.json
+[E2E DEBUG] After test: should render and be usable on mobile viewport
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✓  85 [Desktop Chrome] › e2e/app.spec.ts:303:1 › should render and be usable on mobile viewport (4.8s)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] quizResultsText after quiz #2: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhat is the origin of the external oblique muscle?Your answer: External surfaces of ribs 5–12Correct answer: External surfaces of ribs 5–12Explanation: The external oblique arises from ribs 5 to 12.More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression.Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture.Answered: 1 / 1Close
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] E2E test: after resetUserStats
+[getUserStats] Querying Firestore path: users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/stats/analytics
+[getUserStats] Document found: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m1[39m,
+  correct: [33m1[39m,
+  badgeProgress: { correct: [33m1[39m },
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:15.518Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:16.373Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:25.144Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.486Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.856Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:32.258Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.396Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.961Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:57.430Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:05.962Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:07.915Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:08.339Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:13.504Z'[39m, streak: [33m0[39m }
+  ],
+  updatedAt: [32m'2025-07-08T18:34:13.504Z'[39m,
+  completed: [33m0[39m
+}
+[E2E DEBUG] Firestore analytics doc after reset: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m1[39m,
+  correct: [33m1[39m,
+  badgeProgress: { correct: [33m1[39m },
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:15.518Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:16.373Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:25.144Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.486Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.856Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:32.258Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.396Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.961Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:57.430Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:05.962Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:07.915Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:08.339Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:13.504Z'[39m, streak: [33m0[39m }
+  ],
+  updatedAt: [32m'2025-07-08T18:34:13.504Z'[39m,
+  completed: [33m0[39m
+}
+Polling stat (User A updated): [[E2E DEBUG] E2E test: after goto /analytics
+]
+User A updated stat: 0
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+  ✘  83 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:63:3 › Stats Isolation per User › stats should not leak between users (12.4s)
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] initialQuizzesTaken after reset: 0 string userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] E2E test: after goto /quiz
+[DEBUG] PW_HEADLESS: 1
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[E2E DEBUG] Navigating to profilePath: /profile
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should load all referenced badge images on Achievements page
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m0[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[COVERAGE] Wrote coverage to out-1751999656073-mcr4m7jfbt.json
+[E2E DEBUG] After test: should load all referenced badge images on Achievements page
+[E2E DEBUG] Current URL after test: http://localhost:5173/achievements
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] User A localStorage after sign-in: {
+  "userSettings": "{\"email\":\"testuserc-mwk2l5jf@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"showExplanations\":true,\"darkMode\":true}",
+  "firebaseUserUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E",
+  "testUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E"
+}
+[E2E DEBUG] User A sessionStorage after sign-in: {}
+[E2E DEBUG] Cookies after sign-in: [
+  {
+    "name": "_ga",
+    "value": "GA1.1.991509962.1751999656",
+    "domain": "localhost",
+    "path": "/",
+    "expires": 1786559655.834121,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_SWVWKNWDD3",
+    "value": "GS2.1.s1751999655$o1$g0$t1751999655$j60$l0$h0",
+    "domain": "localhost",
+    "path": "/",
+    "expires": 1786559655.845137,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]
+User A UID: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] User A localStorage: {
+  "userSettings": "{\"email\":\"testuserc-mwk2l5jf@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"showExplanations\":true,\"darkMode\":true}",
+  "firebaseUserUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E",
+  "testUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E"
+}
+Polling stat (User A initial): [#
+  ✓  88 [Desktop Chrome] › e2e/app.spec.ts:313:1 › should load all referenced badge images on Achievements page (3.7s)
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] E2E test: quiz-start-form found
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+#[E2E DEBUG] E2E test: quiz length set to 1
+[E2E DEBUG] E2E test: start button clicked
+[E2E DEBUG] E2E test: quiz-question-card visible
+[E2E DEBUG] E2E test: first quiz option clicked
+[E2E DEBUG] E2E test: next/finish button clicked
+[E2E DEBUG] E2E test: quiz-results visible
+[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: [33m1[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+]
+User A initial stat: 1
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[getUserStats] Querying Firestore path: users/xRvFHQ1OFkeRasM5kUTOQFxfa59E/stats/analytics
+[getUserStats] Document found: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m1[39m,
+  correct: [33m1[39m,
+  badgeProgress: { correct: [33m1[39m },
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:15.518Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:16.373Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:25.144Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.486Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.856Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:32.258Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.396Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.961Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:57.430Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:05.962Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:07.915Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:08.339Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:13.504Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:17.738Z'[39m, streak: [33m0[39m }
+  ],
+  completed: [33m1[39m,
+  updatedAt: [32m'2025-07-08T18:34:17.738Z'[39m
+}
+[E2E DEBUG] Firestore analytics doc after quiz: {
+  badges: [33m0[39m,
+  streak: [33m0[39m,
+  total: [33m1[39m,
+  correct: [33m1[39m,
+  badgeProgress: { correct: [33m1[39m },
+  streakHistory: [
+    { date: [32m'2025-07-08T18:32:34.897Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:32:47.888Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:05.164Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:09.476Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:15.518Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:16.373Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:25.144Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.486Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:31.856Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:32.258Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.396Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:37.961Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:33:57.430Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:05.962Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:07.915Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:08.339Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:13.504Z'[39m, streak: [33m0[39m },
+    { date: [32m'2025-07-08T18:34:17.738Z'[39m, streak: [33m0[39m }
+  ],
+  completed: [33m1[39m,
+  updatedAt: [32m'2025-07-08T18:34:17.738Z'[39m
+}
+[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: [33m1[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should show fallback badge image if badge image fails to load
+[COVERAGE] Wrote coverage to out-1751999661224-tbjr14mkxlg.json
+[E2E DEBUG] After test: should show fallback badge image if badge image fails to load
+[E2E DEBUG] Current URL after test: http://localhost:5173/achievements
+  ✓  90 [Desktop Chrome] › e2e/app.spec.ts:331:1 › should show fallback badge image if badge image fails to load (4.5s)
+  -  91 [Desktop Chrome] › e2e/app.spec.ts:362:6 › should load favicon, app icon, and default avatar image
+[E2E DEBUG] About to sign in with test user: testuserc-mwk2l5jf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: 2 string userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] updatedQuizzesTaken: 2 string userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Navigating to profilePath: /profile
+  ✓  87 [Desktop Chrome] › e2e/stats-persistence.spec.ts:60:3 › Stats Persistence › should persist updated stats after quiz and reload (10.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: [33m2[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Initial analytics text: 
+  Loading…@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+
+Running in emulator mode. Do not use with production credentials.
+[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: [33m2[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+Polling stat (User A updated): []
+User A updated stat: 2
+[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: [33m2[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Link: text="Quiz", aria-label="Go to Quiz page", href="/quiz"
+[E2E DEBUG] Link: text="Achievements", aria-label="Go to Achievements page", href="/achievements"
+[E2E DEBUG] Link: text="Analytics", aria-label="Go to Analytics page", href="/analytics"
+[E2E DEBUG] Link: text="Profile", aria-label="Go to Profile page", href="/profile"
+[E2E DEBUG] Link: text="Quiz", aria-label="Go to Quiz page", href="/quiz"
+[E2E DEBUG] Link: text="Achievements", aria-label="Go to Achievements page", href="/achievements"
+[E2E DEBUG] Link: text="Analytics", aria-label="Go to Analytics page", href="/analytics"
+[E2E DEBUG] Link: text="Profile", aria-label="Go to Profile page", href="/profile"
+[E2E DEBUG] Link: text="Quiz", aria-label="Go to Quiz page", href="/quiz"
+[E2E DEBUG] Link: text="Achievements", aria-label="Go to Achievements page", href="/achievements"
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Link: text="Analytics", aria-label="Go to Analytics page", href="/analytics"
+[E2E DEBUG] Link: text="Profile", aria-label="Go to Profile page", href="/profile"
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts - should navigate to all main pages via NavBar and route correctly
+[COVERAGE] Wrote coverage to out-1751999667992-zxnoprgodfp.json
+[E2E DEBUG] After test: should navigate to all main pages via NavBar and route correctly
+[E2E DEBUG] Current URL after test: http://localhost:5173/profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserd-03brqlie@gmail.com, password=testuserD
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+  ✓  92 [Desktop Chrome] › e2e/app.spec.ts:389:1 › should navigate to all main pages via NavBar and route correctly (6.7s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+User B UID: eOPuOLhIp1fOD8nefOzZR3crdLCp
+[E2E DEBUG] User B localStorage: {
+  "userSettings": "{\"email\":\"testuserd-03brqlie@gmail.com\",\"createdByTest\":true}",
+  "firebaseUserUid": "eOPuOLhIp1fOD8nefOzZR3crdLCp",
+  "testUid": "eOPuOLhIp1fOD8nefOzZR3crdLCp"
+}
+Polling stat (User B initial): [#[E2E DEBUG] Updated analytics text: 
+  Massage TherapySmart Study PROQuizAchievementsAnalyticsProfileAnalyticsQuizzes Taken: 2Correct Answers: 1 / 1Accuracy: 100%Current Streak: 0 daysBadges Earned: 0Topic BreakdownZ Lines0 / 2Abdominal Muscle Origins1 / 1Quiz Activity (Last 14 Days)
+
+
+Running in emulator mode. Do not use with production credentials.
+[E2E DEBUG] initialTotal: [33m0[39m updatedTotal: [33m1[39m
+[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: [33m2[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+  ✓  93 [Desktop Chrome] › e2e/stats-topic-breakdown.spec.ts:23:3 › Stats Topic Breakdown › should increment topic breakdown after quiz in specific topic (6.8s)
+  -  95 [Desktop Chrome] › e2e/visual-regression.spec.ts:30:8 › Critical UI Visual Regression › landing page matches visual snapshot
+  -  96 [Desktop Chrome] › e2e/visual-regression.spec.ts:30:8 › Critical UI Visual Regression › quiz page matches visual snapshot
+  -  97 [Desktop Chrome] › e2e/visual-regression.spec.ts:30:8 › Critical UI Visual Regression › profile page matches visual snapshot
+  -  98 [Desktop Chrome] › e2e/visual-regression.spec.ts:30:8 › Critical UI Visual Regression › achievements page matches visual snapshot
+  -  99 [Desktop Chrome] › e2e/visual-regression.spec.ts:30:8 › Critical UI Visual Regression › analytics page matches visual snapshot
+#]
+User B stat: 0
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+  ✓  94 [Desktop Chrome] › e2e/ui-auth-smoke.spec.ts:24:1 › UI auth: can sign in via login form and see profile (1.8s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Poll #8 after quiz: Quizzes Taken: [33m2[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+  ✘  82 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:54:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (30.5s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+User A UID after re-login: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] User A localStorage after re-login: {
+  "userSettings": "{\"email\":\"testuserc-mwk2l5jf@gmail.com\",\"createdByTest\":true,\"haptic\":false,\"ariaSound\":true,\"showExplanations\":true,\"darkMode\":true}",
+  "firebaseUserUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E",
+  "testUid": "xRvFHQ1OFkeRasM5kUTOQFxfa59E"
+}
+Polling stat (User A final): [##[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+]
+User A final stat: 2
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/stats-isolation-per-user.spec.ts - stats should not leak between users
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[COVERAGE] Wrote coverage to out-1751999673834-e367fkca6v.json
+  ✓  89 [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:63:3 › Stats Isolation per User › stats should not leak between users (retry #1) (18.9s)
+[E2E DEBUG] initialQuizzesTaken: 2 userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[E2E DEBUG] quizResultsText after quiz #1: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich abdominal muscle is the deepest layer of the lateral abdominal wall?Your answer: Transverse abdominisCorrect answer: Transverse abdominisExplanation: The transverse abdominis lies deepest in the abdominal wall.More Info: It sits beneath the internal and external obliques and wraps around the torso like a corset, playing a key role in stabilization and respiration.Clinical Application: Massage therapy focusing on diaphragmatic breathing and abdominal release can benefit this deep core stabilizer.Answered: 1 / 1Close
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Selected topic value (by value): abdominal_muscle_origins
+[E2E DEBUG] quizResultsText after quiz #2: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhere does the internal oblique muscle originate?Your answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentCorrect answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentExplanation: The internal oblique arises from fascia and bony landmarks of the lower torso.More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents.Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy.Answered: 1 / 1Close
+[E2E DEBUG] Poll #1 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #2 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #3 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #4 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #5 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #6 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #7 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #8 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #9 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+[E2E DEBUG] Poll #10 after quiz: Quizzes Taken: [33m3[39m userUid: xRvFHQ1OFkeRasM5kUTOQFxfa59E
+  ✘  100 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:54:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz (retry #1) (30.4s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] quizResultsText after early finish: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 2Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhich nerves innervate the transverse abdominis?Your answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)Correct answer: Thoracoabdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)Explanation: It is innervated by both thoracic and upper lumbar nerves.More Info: The transverse abdominis receives motor innervation from thoracoabdominal nerves (T7–T11), subcostal nerve (T12), and iliohypogastric and ilioinguinal nerves (L1), providing deep abdominal stability.Clinical Application: Core training or massage for back pain often focuses on this muscle’s role in spinal support.What is the origin of the external oblique muscle?Your answer: No answerCorrect answer: External surfaces of ribs 5–12Explanation: The external oblique arises from ribs 5 to 12.More Info: The external oblique originates from the external surfaces of ribs 5–12 and inserts into the linea alba, iliac crest, and pubic tubercle. It helps with trunk rotation, lateral flexion, and abdominal compression.Clinical Application: Massage work on this area can ease tension from repetitive twisting or poor posture.Answered: 1 / 2(Some questions were skipped or left unanswered)Close
+  ✓  101 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:172:3 › Stats Critical Flows › should allow early quiz completion with Finish (aria-label finish early) and show results (4.1s)
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-mwk2l5jf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] quizResultsText after normal finish: Start New QuizResultsOther1 / 1Accuracy by TopicOther: 1 / 1 correct (100%)Quiz ResultsYour score: 1 / 1Average Time per Question: 0 secLongest Correct Streak: 1Accuracy by Topic:Other: 1 / 1 (100%)Try Another QuizWhere does the internal oblique muscle originate?Your answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentCorrect answer: Thoracolumbar fascia, iliac crest, and inguinal ligamentExplanation: The internal oblique arises from fascia and bony landmarks of the lower torso.More Info: This muscle originates from the thoracolumbar fascia, iliac crest, and lateral half of the inguinal ligament. It contributes to trunk rotation and compression of abdominal contents.Clinical Application: In cases of lateral strain or scoliosis, internal oblique involvement may be targeted in therapy.Answered: 1 / 1Close
+  ✓  102 [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:194:3 › Stats Critical Flows › should submit a completed quiz with Finish (aria-label finish quiz) and show results (4.0s)
+
+
+  1) [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:54:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+
+      149 |       for (let poll = 0; poll < 60; poll++) { // Increased polling attempts
+      150 |         await page.goto('/analytics');
+    > 151 |         await page.waitForTimeout(2000); // Increased wait time
+          |                    ^
+      152 |         polledStat = parseInt(await getStatValue(page, 'Quizzes Taken:') || '0', 10);
+      153 |         const polledUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+      154 |         console.log(`[E2E DEBUG] Poll #${poll+1} after quiz: Quizzes Taken:`, polledStat, 'userUid:', polledUid);
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/stats-critical-flows.spec.ts:151:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+
+      149 |       for (let poll = 0; poll < 60; poll++) { // Increased polling attempts
+      150 |         await page.goto('/analytics');
+    > 151 |         await page.waitForTimeout(2000); // Increased wait time
+          |                    ^
+      152 |         polledStat = parseInt(await getStatValue(page, 'Quizzes Taken:') || '0', 10);
+      153 |         const polledUid = await page.evaluate(() => window.localStorage.getItem('firebaseUserUid'));
+      154 |         console.log(`[E2E DEBUG] Poll #${poll+1} after quiz: Quizzes Taken:`, polledStat, 'userUid:', polledUid);
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/stats-critical-flows.spec.ts:151:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/screenshots/stats-critical-flows-Stats-5c546-izzes-Taken-after-each-quiz-Desktop-Chrome-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [Desktop Chrome] › e2e/app.spec.ts:277:1 › should show topic stats in results ─────────────────
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.fill: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for getByLabel('Quiz Length')[22m
+
+
+      277 | test('should show topic stats in results', async ({ page }) => {
+      278 |   await page.goto('/quiz');
+    > 279 |   await page.getByLabel('Quiz Length').fill('1');
+          |                                        ^
+      280 |   await page.getByRole('button', { name: /start/i }).click();
+      281 |   await page.getByTestId('quiz-option').first().click();
+      282 |   await page.getByRole('button', { name: /finish/i }).click();
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts:279:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:63:3 › Stats Isolation per User › stats should not leak between users 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: > [32m0[39m
+    Received:   [31m0[39m
+
+      134 |     log('User A updated stat:', updatedA);
+      135 |     const updatedAInt = parseInt(updatedA, 10) || 0;
+    > 136 |     expect(updatedAInt).toBeGreaterThan(initialAInt);
+          |                         ^
+      137 |     // Sign out User A
+      138 |     await page.goto('/profile');
+      139 |     await page.click('button[aria-label="Sign out"], button:has-text("Sign Out")');
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/stats-isolation-per-user.spec.ts:136:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/screenshots/stats-isolation-per-user-S-1fc92-ould-not-leak-between-users-Desktop-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/screenshots/stats-isolation-per-user-S-1fc92-ould-not-leak-between-users-Desktop-Chrome/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/screenshots/stats-isolation-per-user-S-1fc92-ould-not-leak-between-users-Desktop-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/screenshots/stats-isolation-per-user-S-1fc92-ould-not-leak-between-users-Desktop-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [Desktop Chrome] › e2e/stats-critical-flows.spec.ts:54:3 › Stats Critical Flows › should increment Quizzes Taken after each quiz 
+  2 flaky
+    [Desktop Chrome] › e2e/app.spec.ts:277:1 › should show topic stats in results ──────────────────
+    [Desktop Chrome] › e2e/stats-isolation-per-user.spec.ts:63:3 › Stats Isolation per User › stats should not leak between users 
+  20 skipped
+  76 passed (2.8m)
