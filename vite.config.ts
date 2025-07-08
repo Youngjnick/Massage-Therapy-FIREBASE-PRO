@@ -8,24 +8,36 @@ const base = process.env.NODE_ENV === 'production'
   ? '/Massage-Therapy-FIREBASE-PRO/'
   : '/';
 
-const plugins = [react()];
+const plugins = [
+  react(),
+  ...(process.env.COVERAGE === 'true'
+    ? [
+        istanbul({
+          include: 'src/**/*', // Instrument all files in src and subfolders
+          exclude: [], // Removed exclusions to ensure all files are instrumented
+          extension: ['.js', '.ts', '.jsx', '.tsx'],
+          cypress: false,
+          requireEnv: false, // Disable requireEnv to avoid strict env check
+          forceBuildInstrument: true,
+        }),
+      ]
+    : []),
+];
 
-if (process.env.COVERAGE === 'true') {
-  plugins.push(
-    istanbul({
-      include: 'src/**/*', // Instrument all files in src and subfolders
-      exclude: ['node_modules', 'test/', 'tests/', 'e2e/', 'cypress/'],
-      extension: ['.js', '.ts', '.jsx', '.tsx'],
-      cypress: false,
-      requireEnv: false, // Disable requireEnv to avoid strict env check
-      forceBuildInstrument: true,
-    })
-  );
-}
+console.log('[DEBUG] COVERAGE:', process.env.COVERAGE);
+console.log('[DEBUG] Istanbul plugin initialized:', process.env.COVERAGE === 'true');
+console.log('[DEBUG] Istanbul plugin configuration:', {
+  include: 'src/**/*',
+  exclude: [],
+  extension: ['.js', '.ts', '.jsx', '.tsx'],
+  cypress: false,
+  requireEnv: false,
+  forceBuildInstrument: true,
+});
 
 export default defineConfig({
   base,
-  plugins: plugins,
+  plugins,
   server: {
     port: 5173,
     strictPort: true,

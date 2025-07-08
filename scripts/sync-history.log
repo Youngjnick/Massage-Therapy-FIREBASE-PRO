@@ -33071,3 +33071,119 @@ Last sync: 2025-07-07 22:54:40 EDT
 Summary of updates:
 origin/main14: f931ab094c0423af1b29d8efc3994e8c3079226f (OK, normal, refs match)
 origin/main14: f931ab094c0423af1b29d8efc3994e8c3079226f (OK, normal)
+
+--- Syncing all files to origin/main14 ---
+
+Changed files for origin/main14:
+M  e2e/test-users.json
+A  firebase-export-1751943295155a3lPVE/firestore_export/all_namespaces/all_kinds/all_namespaces_all_kinds.export_metadata
+A  firebase-export-1751943295155a3lPVE/firestore_export/all_namespaces/all_kinds/output-0
+A  firebase-export-1751943295155a3lPVE/firestore_export/all_namespaces/all_kinds/output-1
+A  firebase-export-1751943295155a3lPVE/firestore_export/firestore_export.overall_export_metadata
+M  scripts/playwright_history_report.py
+M  scripts/reports/playwright-history.json
+M  scripts/reports/playwright-output.txt
+M  scripts/sync-history.log
+M  scripts/toggle-env.sh
+A  test-results/screenshots/all-interactive-aria-acces-0e258-e-names-and-ARIA-roles-fast-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/all-interactive-aria-acces-0e258-e-names-and-ARIA-roles-fast-Desktop-Chrome/trace.zip
+A  test-results/screenshots/all-interactive-aria-acces-258b5-e-names-and-ARIA-roles-fast-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/all-interactive-aria-acces-258b5-e-names-and-ARIA-roles-fast-Desktop-Chrome/trace.zip
+A  test-results/screenshots/all-interactive-aria-acces-cbcd4-e-names-and-ARIA-roles-fast-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/all-interactive-aria-acces-cbcd4-e-names-and-ARIA-roles-fast-Desktop-Chrome/trace.zip
+A  test-results/screenshots/all-interactive-aria-acces-dfc82-e-names-and-ARIA-roles-fast-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/all-interactive-aria-acces-dfc82-e-names-and-ARIA-roles-fast-Desktop-Chrome/trace.zip
+A  test-results/screenshots/all-interactive-aria-acces-fb9d0-e-names-and-ARIA-roles-fast-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/all-interactive-aria-acces-fb9d0-e-names-and-ARIA-roles-fast-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-accessibility-full-App-20790-n-main-interactive-elements-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-accessibility-full-App-20790-n-main-interactive-elements-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-accessibility-full-App-35d4a-us-order-visibility-Mobile--Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-accessibility-full-App-96fe0-sert-focus-order-visibility-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-handle-edge-case-rapid-answer-selection-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-handle-edge-case-rapid-answer-selection-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-load-all-refere-f24fa-images-on-Achievements-page-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-load-all-refere-f24fa-images-on-Achievements-page-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-navigate-to-all-7ca01--NavBar-and-route-correctly-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-navigate-to-all-7ca01--NavBar-and-route-correctly-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-render-and-be-usable-on-mobile-viewport-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-render-and-be-usable-on-mobile-viewport-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-reset-quiz-and-focus-first-option-after-restart-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-reset-quiz-and-focus-first-option-after-restart-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-show-explanations-when-enabled-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-show-explanations-when-enabled-Desktop-Chrome/trace.zip
+A  test-results/screenshots/app-should-show-fallback-b-a4aa7-f-badge-image-fails-to-load-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-show-fallback-b-a4aa7-f-badge-image-fails-to-load-Desktop-Chrome/trace.zip
+M  test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome/trace.zip
+A  test-results/screenshots/aria-roles-labels-Accessib-79baf-rrect-ARIA-roles-and-labels-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/aria-roles-labels-Accessib-79baf-rrect-ARIA-roles-and-labels-Desktop-Chrome/trace.zip
+A  test-results/screenshots/aria-roles-labels-Accessib-e6c55--ensure-correct-focus-order-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/aria-roles-labels-Accessib-e6c55--ensure-correct-focus-order-Desktop-Chrome/trace.zip
+A  test-results/screenshots/assets-case-sensitivity-Ba-ecee4--dev-server-case-sensitive--Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/assets-case-sensitivity-Ba-ecee4--dev-server-case-sensitive--Desktop-Chrome/trace.zip
+A  test-results/screenshots/assets-case-sensitivity-No-3010a-ent-files-in-public-badges--Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/assets-case-sensitivity-No-3010a-ent-files-in-public-badges--Desktop-Chrome/trace.zip
+A  test-results/screenshots/assets-troubleshoot-Develo-53f9f-ible-and-returns-valid-JSON-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/assets-troubleshoot-Develo-53f9f-ible-and-returns-valid-JSON-Desktop-Chrome/trace.zip
+A  test-results/screenshots/assets-troubleshoot-Develo-60db7-icon-is-accessible-directly-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/assets-troubleshoot-Develo-60db7-icon-is-accessible-directly-Desktop-Chrome/trace.zip
+A  test-results/screenshots/assets-troubleshoot-Develo-93878-badge-containers-and-images-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/assets-troubleshoot-Develo-93878-badge-containers-and-images-Desktop-Chrome/trace.zip
+A  test-results/screenshots/auth-Authentication-UI-Flo-66a7a-ter-sign-out-click-UI-only--Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/auth-Authentication-UI-Flo-66a7a-ter-sign-out-click-UI-only--Desktop-Chrome/trace.zip
+A  test-results/screenshots/auth-Authentication-UI-Flo-ae910--open-popup-on-Profile-page-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/auth-Authentication-UI-Flo-ae910--open-popup-on-Profile-page-Desktop-Chrome/trace.zip
+A  test-results/screenshots/auth-Authentication-UI-Flo-befc6-lytics-when-unauthenticated-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/auth-Authentication-UI-Flo-befc6-lytics-when-unauthenticated-Desktop-Chrome/trace.zip
+A  test-results/screenshots/auth-session-persistence-A-e7034-ersist-session-after-reload-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/auth-session-persistence-A-e7034-ersist-session-after-reload-Desktop-Chrome/trace.zip
+A  test-results/screenshots/auth-smoke-auth-smoke-can-sign-in-and-see-user-info-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/auth-smoke-auth-smoke-can-sign-in-and-see-user-info-Desktop-Chrome/trace.zip
+A  test-results/screenshots/badge-appearance-Local-bad-0d44c-appear-on-Achievements-page-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/badge-appearance-Local-bad-0d44c-appear-on-Achievements-page-Desktop-Chrome/trace.zip
+A  test-results/screenshots/badge-dynamic-behavior-bad-eae5d-t-criteria-and-image-fields-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/badge-dynamic-behavior-bad-eae5d-t-criteria-and-image-fields-Desktop-Chrome/trace.zip
+A  test-results/screenshots/badge-dynamic-behavior-badge-test-image-is-visible-and-loads-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/badge-dynamic-behavior-badge-test-image-is-visible-and-loads-Desktop-Chrome/trace.zip
+A  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to--Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to--Desktop-Chrome/trace.zip
+A  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to-analytics-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to-analytics-Desktop-Chrome/trace.zip
+A  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to-profile-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to-profile-Desktop-Chrome/trace.zip
+A  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to-quiz-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/basic-navigation-Basic-Navigation-can-navigate-to-quiz-Desktop-Chrome/trace.zip
+A  test-results/screenshots/critical-edge-accessibilit-34e6e-e-with-Escape-focus-returns-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/critical-edge-accessibilit-34e6e-e-with-Escape-focus-returns-Desktop-Chrome/trace.zip
+M  test-results/screenshots/critical-edge-accessibilit-c4bf2-quiz-options-and-navigation-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/critical-edge-accessibilit-c4bf2-quiz-options-and-navigation-Desktop-Chrome/trace.zip
+A  test-results/screenshots/critical-ui-accessibility--194ac--a-time-keyboard-accessible-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/critical-ui-accessibility--194ac--a-time-keyboard-accessible-Desktop-Chrome/trace.zip
+A  test-results/screenshots/critical-ui-accessibility--2b877-dals-are-visible-and-usable-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/critical-ui-accessibility--2b877-dals-are-visible-and-usable-Desktop-Chrome/trace.zip
+A  test-results/screenshots/critical-ui-accessibility--cbe9a-board-only-Tab-Enter-Space--Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/critical-ui-accessibility--cbe9a-board-only-Tab-Enter-Space--Desktop-Chrome/trace.zip
+A  test-results/screenshots/edge-accessibility-Quiz-Ed-3ba9f-ck-image-appears-if-missing-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/edge-accessibility-Quiz-Ed-3ba9f-ck-image-appears-if-missing-Desktop-Chrome/trace.zip
+A  test-results/screenshots/edge-accessibility-Quiz-Ed-68e63-tive-elements-are-reachable-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/edge-accessibility-Quiz-Ed-68e63-tive-elements-are-reachable-Desktop-Chrome/trace.zip
+A  test-results/screenshots/edge-accessibility-Quiz-Ed-6e39c-d-navigation-skips-disabled-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/edge-accessibility-Quiz-Ed-6e39c-d-navigation-skips-disabled-Desktop-Chrome/trace.zip
+A  test-results/screenshots/finish-quiz-buttons-Finish-8d4f9--results-with-Finish-button-Desktop-Chrome-retry1/trace.zip
+M  test-results/screenshots/finish-quiz-buttons-Finish-8d4f9--results-with-Finish-button-Desktop-Chrome/trace.zip
+M  vite.config.ts
+ Verified: commit 33c182124f379357c1a4f792fdf1b050dc164e36 exists on origin/main14
+ Local branch and remote branch origin/main14 are in sync: 33c182124f379357c1a4f792fdf1b050dc164e36
+ origin/main14 is up to date with local commit 33c182124f379357c1a4f792fdf1b050dc164e36 (push: normal)
+View branch on GitHub: https://github.com/youngjnick/Massage-Therapy-FIREBASE-PRO/tree/main14
+Triggering CI/CD for origin/main14 (if configured on remote).
+Commit message for origin/main14:
+
+Done with origin/main14.
+Last sync: 2025-07-07 23:47:55 EDT
+
+Summary of updates:
+origin/main14: 33c182124f379357c1a4f792fdf1b050dc164e36 (OK, normal, refs match)
+origin/main14: 33c182124f379357c1a4f792fdf1b050dc164e36 (OK, normal)

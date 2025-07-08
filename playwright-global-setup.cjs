@@ -13,4 +13,8 @@ module.exports = async () => {
   console.log('[Playwright GLOBAL SETUP] FIREBASE_AUTH_EMULATOR_HOST:', process.env.FIREBASE_AUTH_EMULATOR_HOST);
   console.log('[Playwright GLOBAL SETUP] FIREBASE_PROJECT_ID:', process.env.FIREBASE_PROJECT_ID);
   console.log('[Playwright GLOBAL SETUP] GCLOUD_PROJECT:', process.env.GCLOUD_PROJECT);
+  console.log('[DEBUG] PW_HEADLESS:', process.env.PW_HEADLESS);
+
+  process.env.PW_HEADLESS = '0';
+  console.log('[Playwright GLOBAL SETUP] Forced PW_HEADLESS to 0');
 };
