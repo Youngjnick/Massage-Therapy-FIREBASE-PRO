@@ -2,6 +2,7 @@
 // This test checks that the NavBar (webbar) is visible immediately after reload, to catch white page/flicker issues.
 
 import { test, expect } from '@playwright/test';
+import './helpers/playwright-coverage';
 
 test.describe('App reload and webbar visibility', () => {
   test('NavBar is visible after reload', async ({ page }) => {

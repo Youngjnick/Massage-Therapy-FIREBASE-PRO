@@ -10,6 +10,7 @@ import { resetUserStats } from './helpers/resetUserStats';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
 import path from 'path';
+import './helpers/playwright-coverage';
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 async function getTestUser(index = 0) {

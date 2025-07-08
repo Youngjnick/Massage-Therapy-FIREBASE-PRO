@@ -3,6 +3,7 @@ import { test, expect, Page } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
 import path from 'path';
+import './helpers/playwright-coverage';
 
 const PROFILE_PATH = '/profile';
 
