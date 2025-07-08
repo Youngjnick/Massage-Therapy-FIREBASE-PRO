@@ -29,7 +29,38 @@ export NODE_ENV=test
 OUTPUT_FILE="scripts/reports/playwright-output.txt"
 HISTORY_FILE="scripts/reports/playwright-output-history.txt"
 
-trap 'append_history_summary; open_html_report' EXIT INT
+# Ensure sync-tmp directory exists and move any existing sync-tmp files there
+SYNC_TMP_DIR="sync_tmp_backups"
+mkdir -p "$SYNC_TMP_DIR"
+
+# Move any existing .sync-tmp files to the backup directory
+move_sync_tmp_files() {
+  local timestamp=$(date "+%Y%m%d_%H%M%S")
+  local existing_files=($(find . -maxdepth 1 -name ".sync-tmp*"))
+  if [[ ${#existing_files[@]} -gt 0 ]]; then
+    echo "[INFO] Moving existing sync-tmp files to $SYNC_TMP_DIR/"
+    for file in "${existing_files[@]}"; do
+      # Skip if file doesn't exist (might have been moved by another process)
+      [[ ! -e "$file" ]] && continue
+      
+      local basename=$(basename "$file")
+      if [[ -d "$file" ]]; then
+        # For directories, create a timestamped directory and move the entire directory
+        mkdir -p "$SYNC_TMP_DIR"
+        mv "$file" "$SYNC_TMP_DIR/${basename}_${timestamp}"
+      else
+        # For regular files, just move them with timestamp
+        mv "$file" "$SYNC_TMP_DIR/${basename}_${timestamp}" 2>/dev/null || true
+      fi
+    done
+  fi
+}
+
+# Move any existing files at startup
+move_sync_tmp_files
+
+# Set up trap to move sync-tmp files before exit
+trap 'move_sync_tmp_files; append_history_summary; open_html_report' EXIT INT
 
 # Function to extract failed test files from the last Playwright run output
 get_failed_test_files() {
@@ -78,23 +109,45 @@ fi
 # 2. Start lint and typecheck in the background with spinner, but show menu immediately
 show_spinner() {
   local pid=$1
+  local message=${2:-"Processing..."}
   local delay=0.1
-  local spinstr='◐◓◑◒'
-  while kill -0 $pid 2>/dev/null; do
+  local spinstr='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
+  
+  # Clear any previous line
+  printf "\r"
+  
+  while ps -p $pid > /dev/null 2>&1; do
     local temp=${spinstr#?}
-    printf " [%c]  " "$spinstr"
-    spinstr=$temp${spinstr%"$temp"}
+    printf "\r[%c] %s" "$spinstr" "$message"
+    local spinstr=$temp${spinstr%"$temp"}
     sleep $delay
-    printf "\b\b\b\b\b\b"
   done
-  printf "    \b\b\b\b"
+  
+  # Clear spinner and message
+  printf "\r%-60s\r" " "
 }
 
-# Start lint/typecheck in background
+# Function to run command with spinner
+run_with_spinner() {
+  local message=$1
+  shift
+  # Run the command in background
+  ("$@") &
+  local cmd_pid=$!
+  show_spinner $cmd_pid "$message"
+  wait $cmd_pid
+  return $?
+}
+
+# Ensure sync-tmp directory exists
+SYNC_TMP_DIR="sync_tmp_backups"
+mkdir -p "$SYNC_TMP_DIR"
+
+# Start lint/typecheck in background with improved spinner
 (npx eslint . --ext .js,.jsx,.ts,.tsx && npx tsc --noEmit) &
 lint_pid=$!
 
-# Show menu immediately
+# Start spinner for lint/typecheck but show menu immediately
 show_menu_and_get_choice() {
   echo "\nWhich tests do you want to run?"
   echo "  1) [a]ll             - Run all Playwright tests (default)"
@@ -220,7 +273,12 @@ case "$choice" in
     echo "[INFO] Running tests with code coverage enabled."
     echo "[NOTE] Code coverage is enabled via COVERAGE=true and vite-plugin-istanbul. See project docs for details."
 
-    COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --headed --project="Desktop Chrome" | tee "$OUTPUT_FILE"
+    echo "[INFO] Starting Playwright tests with coverage..."
+    # Run tests with spinner while still capturing output
+    (COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --headed --project="Desktop Chrome" | tee "$OUTPUT_FILE") &
+    test_pid=$!
+    show_spinner $test_pid "Running Playwright tests with coverage..."
+    wait $test_pid
     python3 scripts/playwright_history_report.py
     # Automatically generate HTML coverage report if .nyc_output exists
     if [[ -d ".nyc_output" ]]; then
@@ -293,13 +351,14 @@ fi
 
 # Wait for lint/typecheck to finish before running tests
 if kill -0 $lint_pid 2>/dev/null; then
-  echo "[INFO] Waiting for lint and typecheck to finish..."
-  show_spinner $lint_pid
+  show_spinner $lint_pid "Running lint and type checks..."
   wait $lint_pid
-fi
-if [[ $? -ne 0 ]]; then
-  echo "[ERROR] Lint or typecheck failed. Aborting test run."
-  exit 1
+  status=$?
+  if [[ $status -ne 0 ]]; then
+    echo "[ERROR] Lint or typecheck failed. Aborting test run."
+    exit 1
+  fi
+  echo "[INFO] Lint and type checks completed successfully."
 fi
 
 # Replace all Playwright invocations:
@@ -310,7 +369,11 @@ fi
 # Example:
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
-  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --project="Desktop Chrome" | tee "$OUTPUT_FILE"
+  echo "[INFO] Starting Playwright tests..."
+  (PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --project="Desktop Chrome" | tee "$OUTPUT_FILE") &
+  test_pid=$!
+  show_spinner $test_pid "Running Playwright tests..."
+  wait $test_pid
   print_playwright_summary "$OUTPUT_FILE"
   # After Playwright run, always call the reporting tool to append improved summary
   python3 scripts/playwright_history_report.py
@@ -523,7 +586,7 @@ fi
 
 # [d]ebug mode
 if [[ "$choice" == "d"* ]]; then
-  echo "Enter the test file path to debug (e.g. e2e/your-test.spec.ts), or leave blank for last failed: "
+  echo "Enter the test file path to debug (e.g. e2e/your-test.spec.ts), or leave blank for last failing: "
   read -r debug_file
   if [[ -z "$debug_file" && -s "$LAST_FAILING_FILE" ]]; then
     debug_file=$(head -n1 "$LAST_FAILING_FILE" | cut -d: -f1)

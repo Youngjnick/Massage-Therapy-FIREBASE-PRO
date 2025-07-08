@@ -1,0 +1,329 @@
+[
+  {
+    "id": "brachial_plexus_innervations_001",
+    "question": "Which spinal nerve roots contribute to the formation of the brachial plexus?",
+    "correctAnswer": "C5–T1",
+    "options": ["C1–C5", "C5–T1", "T2–T6", "L1–L5"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The brachial plexus is formed from the ventral rami of spinal nerves C5 to T1.",
+    "long_explanation": "The brachial plexus is a complex network of nerves formed by the anterior (ventral) rami of C5 through T1 spinal nerves. These nerves merge and divide into trunks, divisions, cords, and branches that innervate the upper limb. Understanding its origin is crucial for interpreting patterns of motor and sensory deficits.",
+    "clinical_application": "If a client has paresthesia down the arm, especially after neck compression, massage therapists might consider impingement affecting the brachial plexus roots at C5–T1.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": [
+      "nerve_brachial_plexus",
+      "spinal_nerves",
+      "anatomy_neck",
+      "upper_limb_innervation"
+    ],
+    "keywords": ["brachial plexus", "C5", "T1", "nerve roots", "upper limb"],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_002",
+    "question": "Which part of the brachial plexus gives rise directly to the musculocutaneous, median, and ulnar nerves?",
+    "correctAnswer": "Cords",
+    "options": ["Trunks", "Divisions", "Roots", "Cords"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The cords of the brachial plexus give rise to its terminal branches, including the musculocutaneous, median, and ulnar nerves.",
+    "long_explanation": "The brachial plexus has five roots, three trunks, six divisions, and three cords. The cords—named lateral, medial, and posterior based on their position relative to the axillary artery—give rise to most of the terminal branches that innervate the upper limb.",
+    "clinical_application": "Knowledge of cord-level innervation helps therapists locate compression sites that may affect distal nerves like the median or ulnar during thoracic outlet syndrome.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": [
+      "nerve_brachial_plexus",
+      "upper_limb_innervation",
+      "cords",
+      "terminal_branches"
+    ],
+    "keywords": [
+      "cords",
+      "musculocutaneous",
+      "median",
+      "ulnar",
+      "brachial plexus"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_003",
+    "question": "Which of the following nerves does NOT originate from the brachial plexus?",
+    "correctAnswer": "Phrenic nerve",
+    "options": ["Radial nerve", "Phrenic nerve", "Median nerve", "Ulnar nerve"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The phrenic nerve originates from C3–C5 and innervates the diaphragm, not the upper limb.",
+    "long_explanation": "While the radial, median, and ulnar nerves are major branches of the brachial plexus, the phrenic nerve is derived from cervical nerves C3–C5. It travels inferiorly to innervate the diaphragm and is unrelated to upper limb innervation.",
+    "clinical_application": "Understanding nerve origins can help avoid confusion when identifying pain patterns in the shoulder versus those radiating from the diaphragm or neck.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "easy",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["nerve_phrenic", "nerve_brachial_plexus", "diaphragm_innervation"],
+    "keywords": [
+      "phrenic nerve",
+      "brachial plexus",
+      "radial",
+      "median",
+      "ulnar"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_004",
+    "question": "Which structure lies closest to the posterior cord of the brachial plexus in the axilla?",
+    "correctAnswer": "Axillary artery",
+    "options": [
+      "Subclavian vein",
+      "Axillary artery",
+      "Cephalic vein",
+      "Median cubital vein"
+    ],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The posterior cord lies posterior to the axillary artery.",
+    "long_explanation": "In the axilla, the cords of the brachial plexus are named in relation to the axillary artery. The posterior cord lies behind the artery and gives rise to nerves like the axillary and radial nerves.",
+    "clinical_application": "Palpation of the axilla during manual therapy can avoid neurovascular structures like the axillary artery and cords of the brachial plexus, reducing patient discomfort.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["posterior_cord", "axillary_artery", "brachial_plexus"],
+    "keywords": ["posterior cord", "axillary artery", "nerve anatomy"],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_005",
+    "question": "Erb’s palsy results from injury to which part of the brachial plexus?",
+    "correctAnswer": "Upper trunk",
+    "options": ["Lower trunk", "Middle trunk", "Upper trunk", "Posterior cord"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "Erb’s palsy involves damage to the upper trunk (C5–C6).",
+    "long_explanation": "Erb’s palsy is caused by traction on the upper trunk of the brachial plexus, typically during birth or trauma. This affects shoulder and elbow function due to impairment of the musculocutaneous and axillary nerves.",
+    "clinical_application": "Massage therapists should avoid overstretching the shoulder in clients with a history of upper brachial plexus injury and support muscular reeducation.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "advanced",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["erb_palsy", "upper_trunk", "nerve_injury"],
+    "keywords": ["Erb’s palsy", "C5", "C6", "upper trunk"],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_006",
+    "question": "Which nerve branching from the brachial plexus innervates the serratus anterior?",
+    "correctAnswer": "Long thoracic nerve",
+    "options": [
+      "Thoracodorsal nerve",
+      "Long thoracic nerve",
+      "Lateral pectoral nerve",
+      "Suprascapular nerve"
+    ],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The long thoracic nerve innervates the serratus anterior.",
+    "long_explanation": "The long thoracic nerve arises from roots C5–C7 and travels along the lateral thoracic wall to innervate the serratus anterior, which is essential for scapular protraction and stability.",
+    "clinical_application": "Winged scapula in clients can indicate long thoracic nerve damage—massage and movement therapy should adapt accordingly.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["serratus_anterior", "long_thoracic_nerve", "brachial_plexus"],
+    "keywords": ["serratus anterior", "long thoracic", "scapula", "C5–C7"],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_007",
+    "question": "Which of the following is a terminal branch of the posterior cord of the brachial plexus?",
+    "correctAnswer": "Axillary nerve",
+    "options": [
+      "Ulnar nerve",
+      "Axillary nerve",
+      "Musculocutaneous nerve",
+      "Median nerve"
+    ],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The axillary nerve is a terminal branch of the posterior cord.",
+    "long_explanation": "The posterior cord gives rise to the axillary and radial nerves. The axillary nerve supplies the deltoid and teres minor and wraps around the surgical neck of the humerus.",
+    "clinical_application": "Deltoid atrophy or shoulder numbness may suggest axillary nerve compression after trauma or improper massage technique near the shoulder capsule.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["axillary_nerve", "posterior_cord", "brachial_plexus"],
+    "keywords": ["axillary nerve", "posterior cord", "deltoid", "teres minor"],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_008",
+    "question": "Which nerve of the brachial plexus supplies the skin of the lateral forearm?",
+    "correctAnswer": "Lateral antebrachial cutaneous",
+    "options": [
+      "Radial nerve",
+      "Medial antebrachial cutaneous",
+      "Lateral antebrachial cutaneous",
+      "Median nerve"
+    ],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The lateral antebrachial cutaneous nerve provides sensory innervation to the lateral forearm.",
+    "long_explanation": "This nerve is a sensory continuation of the musculocutaneous nerve. It emerges lateral to the biceps tendon and innervates the skin on the lateral forearm.",
+    "clinical_application": "Numbness in the lateral forearm may be misattributed to the radial nerve; massage therapists should trace the musculocutaneous path for accurate differential handling.",
+    "source_reference": "Trail Guide to the Body, 6th Ed.",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "advanced",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["cutaneous_nerve", "brachial_plexus", "lateral_forearm"],
+    "keywords": [
+      "lateral antebrachial cutaneous",
+      "forearm sensation",
+      "musculocutaneous"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_009",
+    "question": "Which trunk of the brachial plexus gives rise to the suprascapular nerve?",
+    "correctAnswer": "Upper trunk",
+    "options": ["Upper trunk", "Middle trunk", "Lower trunk", "Posterior cord"],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The suprascapular nerve branches off the upper trunk (C5–C6).",
+    "long_explanation": "This nerve innervates the supraspinatus and infraspinatus muscles. It passes through the suprascapular notch, making it vulnerable to entrapment or compression.",
+    "clinical_application": "Clients with weak shoulder abduction or external rotation may benefit from assessment of suprascapular nerve function in the suprascapular notch.",
+    "source_reference": "Moore's Clinically Oriented Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["suprascapular_nerve", "brachial_plexus", "shoulder"],
+    "keywords": [
+      "suprascapular nerve",
+      "upper trunk",
+      "C5",
+      "C6",
+      "rotator cuff"
+    ],
+    "synonyms": null
+  },
+  {
+    "id": "brachial_plexus_innervations_010",
+    "question": "The medial cord of the brachial plexus gives rise to which of the following nerves?",
+    "correctAnswer": "Ulnar nerve",
+    "options": [
+      "Radial nerve",
+      "Median nerve",
+      "Musculocutaneous nerve",
+      "Ulnar nerve"
+    ],
+    "topics": [
+      "anatomy",
+      "innervations",
+      "arm_innervations",
+      "brachial_plexus_innervations"
+    ],
+    "short_explanation": "The ulnar nerve is a terminal branch of the medial cord.",
+    "long_explanation": "The medial cord of the brachial plexus gives rise to the ulnar nerve, which travels down the medial aspect of the arm and forearm. It supplies intrinsic hand muscles and the medial side of the hand.",
+    "clinical_application": "In cases of ulnar neuropathy, pressure relief and muscle reactivation techniques in the forearm and wrist are helpful during massage therapy sessions.",
+    "source_reference": "Netter’s Atlas of Human Anatomy",
+    "filepath": "src/data/questions/anatomy/innervations/arm_innervations/brachial_plexus_innervations.json",
+    "question_type": null,
+    "difficulty": "intermediate",
+    "difficulty_rating": null,
+    "difficulty_adjustment": null,
+    "relevance_score": null,
+    "created_at": null,
+    "updated_at": null,
+    "tags": ["ulnar_nerve", "brachial_plexus", "medial_cord"],
+    "keywords": ["ulnar nerve", "medial cord", "hand innervation"],
+    "synonyms": null
+  }
+]
