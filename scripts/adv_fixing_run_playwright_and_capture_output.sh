@@ -143,6 +143,8 @@ echo "[DEBUG] Menu selected: choice='$choice'"
 # [coverage] mode: prompt immediately after menu selection (robust for zsh/bash)
 case "$choice" in
   coverage|COVERAGE)
+    COVERAGE_RUN=1  # <--- Set flag for post-run coverage handling
+
     # Prompt for Vite dev server confirmation FIRST
     echo "[DEBUG] Entered coverage case block."
     vite_pid=$(lsof -i :5173 -t 2>/dev/null | head -n1)
@@ -239,7 +241,7 @@ case "$choice" in
     ;;
 esac
 
- # Fallback debug if coverage block was not triggered
+# Fallback debug if coverage block was not triggered
 if [[ "$choice" == "coverage" || "$choice" == "COVERAGE" ]]; then
   echo "[ERROR] Coverage mode was selected but coverage prompt block was not triggered! Please check the menu logic."
   exit 1
@@ -575,3 +577,21 @@ fi
 PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list | tee "$OUTPUT_FILE"
 python3 scripts/playwright_history_report.py
 sync
+
+# === AUTO COVERAGE REPORT GENERATION (always at end if coverage mode) ===
+if [[ "$choice" == "coverage" || "$choice" == "COVERAGE" ]]; then
+  if [[ -d ".nyc_output" ]]; then
+    echo "[AUTO] Generating HTML coverage report (post-run)..."
+    npx nyc report --reporter=html
+    if [[ -f "coverage/index.html" ]]; then
+      echo "[AUTO] Coverage report generated: coverage/index.html"
+      open coverage/index.html
+    else
+      echo "[AUTO] Coverage report not found after generation."
+    fi
+    echo "[AUTO] Coverage summary (console):"
+    npx nyc report --reporter=text-summary
+  else
+    echo "[AUTO] No .nyc_output directory found. No coverage data to report."
+  fi
+fi

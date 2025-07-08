@@ -60,6 +60,4 @@ export default defineConfig({
   testMatch: '**/*.spec.ts',
   fullyParallel: false,
   reporter: [['list'], ['html']],
-  // Add test setup file
-  setupFilesAfterEnv: ['./e2e/playwright.setup.ts'],
 });

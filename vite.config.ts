@@ -13,11 +13,11 @@ export default defineConfig({
   plugins: [
     react(),
     istanbul({
-      include: 'src/*',
+      include: 'src/**/*', // Instrument all files in src and subfolders
       exclude: ['node_modules', 'test/', 'tests/', 'e2e/', 'cypress/'],
       extension: ['.js', '.ts', '.jsx', '.tsx'],
       cypress: false,
-      requireEnv: true, // Only instrument if process.env.COVERAGE is set
+      requireEnv: false, // Disable requireEnv to avoid strict env check
       forceBuildInstrument: process.env.COVERAGE === 'true',
     }),
   ],
