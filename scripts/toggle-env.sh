@@ -20,6 +20,7 @@ if [[ -z "$env_choice" || "$env_choice" != "1" && "$env_choice" != "2" && "$env_
   env_choice=2
 fi
 
+# Add debug output for COVERAGE variable state
 case $env_choice in
   1)
     cp .env.production .env
@@ -32,6 +33,7 @@ case $env_choice in
     echo ".env set to Development mode (emulator/E2E)."
     echo "Unsetting COVERAGE environment variable..."
     unset COVERAGE
+    echo "COVERAGE variable state: $COVERAGE"
     echo "Starting development server with emulator environment..."
     npm run dev
     ;;
@@ -40,6 +42,7 @@ case $env_choice in
     echo ".env set to Coverage mode (emulator/E2E with coverage)."
     echo "Setting COVERAGE environment variable..."
     export COVERAGE=true
+    echo "COVERAGE variable state: $COVERAGE"
     echo "Starting development server with emulator and coverage enabled..."
     npm run dev
     ;;
@@ -48,3 +51,6 @@ case $env_choice in
     exit 1
     ;;
 esac
+
+# Debug output for final environment state
+echo "Final environment file: $(cat .env | grep -v '^#')"

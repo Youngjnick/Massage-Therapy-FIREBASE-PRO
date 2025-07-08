@@ -3,6 +3,8 @@
 
 import { defineConfig, devices } from '@playwright/test';
 
+console.log('[DEBUG] PW_HEADLESS:', process.env.PW_HEADLESS);
+
 export default defineConfig({
   testDir: './e2e',
   timeout: 30000,
@@ -59,5 +61,5 @@ export default defineConfig({
   // Add test setup to import coverage hook for all tests
   testMatch: '**/*.spec.ts',
   fullyParallel: false,
-  reporter: [['list'], ['html']],
+  reporter: undefined,
 });

@@ -11,11 +11,11 @@ OUTPUT_FILE = Path("scripts/reports/playwright-output.txt")
 
 def generate_summary_table(db_obj):
     summary = {
-        "Total Tests": len(db_obj.tests),
-        "Passed": sum(1 for t in db_obj.tests if t.status == "passed"),
-        "Failed": sum(1 for t in db_obj.tests if t.status == "failed"),
-        "Flaky": sum(1 for t in db_obj.tests if t.status == "flaky"),
-        "Skipped": sum(1 for t in db_obj.tests if t.status == "skipped"),
+        "Total Tests": len(db_obj.get("tests", [])),
+        "Passed": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "passed"),
+        "Failed": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "failed"),
+        "Flaky": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "flaky"),
+        "Skipped": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "skipped"),
     }
     return summary
 
@@ -39,14 +39,14 @@ def write_markdown_report(db_obj, run_stats, include_sections):
         if "test-results" in include_sections:
             f.write("\n## Test Results\n\n")
             test_history = {}
-            for test in db_obj.tests:
-                if test.name not in test_history:
-                    test_history[test.name] = {"passes": 0, "failures": 0, "latest_status": test.status}
-                if test.status == "passed":
-                    test_history[test.name]["passes"] += 1
-                elif test.status == "failed":
-                    test_history[test.name]["failures"] += 1
-                test_history[test.name]["latest_status"] = test.status
+            for test in db_obj.get("tests", []):
+                if test.get("name") not in test_history:
+                    test_history[test.get("name")] = {"passes": 0, "failures": 0, "latest_status": test.get("status")}
+                if test.get("status") == "passed":
+                    test_history[test.get("name")]["passes"] += 1
+                elif test.get("status") == "failed":
+                    test_history[test.get("name")]["failures"] += 1
+                test_history[test.get("name")]["latest_status"] = test.get("status")
             for test_name, history in test_history.items():
                 emoji = "✅" if history["latest_status"] == "passed" else "❌" if history["latest_status"] == "failed" else "⚠️"
                 f.write(f"- {emoji} **{test_name}**: {history['latest_status']} (latest, {history['passes']} passes, {history['failures']} failures)\n")
@@ -57,25 +57,25 @@ def write_markdown_report(db_obj, run_stats, include_sections):
                 f.write(f"- **{key}:** {value}%\n")
         if "trend-graph" in include_sections:
             f.write("\n## Trend Graph\n\n")
-            total_tests = len(db_obj.tests)
-            passed_tests = sum(1 for t in db_obj.tests if t.status == "passed")
-            failed_tests = sum(1 for t in db_obj.tests if t.status == "failed")
+            total_tests = len(db_obj.get("tests", []))
+            passed_tests = sum(1 for t in db_obj.get("tests", []) if t.get("status") == "passed")
+            failed_tests = sum(1 for t in db_obj.get("tests", []) if t.get("status") == "failed")
             pass_rate = (passed_tests / total_tests) * 100 if total_tests > 0 else 0
             fail_rate = (failed_tests / total_tests) * 100 if total_tests > 0 else 0
-            trend = "📈 Trend: " + "".join(["🟩" if t.status == "passed" else "🟥" for t in db_obj.tests[:10]])
+            trend = "📈 Trend: " + "".join(["🟩" if t.get("status") == "passed" else "🟥" for t in db_obj.get("tests", [])[:10]])
             f.write(f"{trend}\n")
             f.write(f"- **Pass Rate:** {pass_rate:.2f}%\n")
             f.write(f"- **Fail Rate:** {fail_rate:.2f}%\n")
         if "skipped-tests" in include_sections:
             f.write("\n## Skipped Tests\n\n")
-            skipped_tests = [t for t in db_obj.tests if t.status == "skipped"]
+            skipped_tests = [t for t in db_obj.get("tests", []) if t.get("status") == "skipped"]
             for test in skipped_tests:
-                f.write(f"- **{test.name}**\n")
+                f.write(f"- **{test.get('name')}**\n")
         if "deleted-tests" in include_sections:
             f.write("\n## Deleted Tests\n\n")
-            deleted_tests = [t for t in db_obj.tests if t.status == "deleted"]
+            deleted_tests = [t for t in db_obj.get("tests", []) if t.get("status") == "deleted"]
             for test in deleted_tests:
-                f.write(f"- **{test.name}**\n")
+                f.write(f"- **{test.get('name')}**\n")
 
 
 def main():
@@ -89,7 +89,7 @@ def main():
 
     # For demo, just pass empty run_stats (should be loaded from history for full implementation)
     run_stats = {"coverage": {"statements": 85, "branches": 80, "lines": 90, "functions": 88}}
-    write_markdown_report(db_obj, run_stats)
+    write_markdown_report(db_obj, run_stats, include_sections=args.include_sections)
     print(f"[INFO] Markdown summary written to {report_txt.REPORT_TXT_FILE}")
     report_html.generate_html_report(db_obj)
     print(f"[INFO] HTML summary written to scripts/reports/playwright-history.html")
