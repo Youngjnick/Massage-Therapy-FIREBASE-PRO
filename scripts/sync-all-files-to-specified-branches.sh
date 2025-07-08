@@ -20,7 +20,26 @@ show_stash_and_precommit_summary() {
   local PURPLE='\033[1;35m'
   local NC='\033[0m'
 
-  echo "${PURPLE}═══════════ Git Commit Summary ═══════════${NC}"
+  # Get counts for grouping
+  local status_output=$(git status --porcelain)
+  local modified_count=$(echo "$status_output" | grep -c "^.M")
+  local added_count=$(echo "$status_output" | grep -c "^A")
+  local deleted_count=$(echo "$status_output" | grep -c "^.D")
+  local untracked_count=$(echo "$status_output" | grep -c "^??")
+  local deleted_report_count=$(echo "$status_output" | grep -c "playwright-report/data/.*\.zip")
+  
+  # Prepare title based on what's changing
+  local title="Sync project files:"
+  [[ $modified_count -gt 0 ]] && title="$title updated files"
+  [[ $added_count -gt 0 ]] && title="$title, new additions"
+  [[ $deleted_count -gt 0 ]] && title="$title, cleanup"
+
+  echo "${PURPLE}--- Commit message preview ---${NC}"
+  if [[ $SKIP_TESTS == true ]]; then
+    echo "WIP: $title (tests/lint/type checks skipped)"
+  else
+    echo "$title"
+  fi
   
   # 1. Branch and sync status
   local current_branch=$(git symbolic-ref --short -q HEAD)
@@ -48,20 +67,31 @@ show_stash_and_precommit_summary() {
   git --no-pager log -1 --stat --color
   
   # 3. Modified files summary
-  echo "\n${BLUE}Working Tree Status${NC}"
-  local status_output=$(git status --porcelain)
+  echo "\n${BLUE}--- Changed Files ---${NC}"
   if [[ -n $status_output ]]; then
-    local modified=$(echo "$status_output" | grep -c "^.M")
-    local added=$(echo "$status_output" | grep -c "^A")
-    local deleted=$(echo "$status_output" | grep -c "^.D")
-    local untracked=$(echo "$status_output" | grep -c "^??")
+    # Group changes by type
+    echo "\nScript Changes:"
+    echo "$status_output" | grep "scripts/" | sed 's/^/  /'
     
-    [[ $modified -gt 0 ]] && echo "${YELLOW}Modified files: $modified${NC}"
-    [[ $added -gt 0 ]] && echo "${GREEN}New files: $added${NC}"
-    [[ $deleted -gt 0 ]] && echo "${RED}Deleted files: $deleted${NC}"
-    [[ $untracked -gt 0 ]] && echo "${YELLOW}Untracked files: $untracked${NC}"
+    echo "\nTest Changes:"
+    echo "$status_output" | grep -E "tests/|e2e/|\.spec\." | sed 's/^/  /'
     
-    git status -sb
+    # If there are many deleted report files, summarize them
+    if [[ $deleted_report_count -gt 0 ]]; then
+      echo "\nCleanup:"
+      echo "  Removed $deleted_report_count old test report files"
+    fi
+    
+    # Show other changes
+    echo "\nOther Changes:"
+    echo "$status_output" | grep -vE "scripts/|tests/|e2e/|\.spec\.|playwright-report/data/.*\.zip" | sed 's/^/  /'
+    
+    # Show totals
+    echo "\nSummary:"
+    [[ $modified_count -gt 0 ]] && echo "  ${YELLOW}Modified: $modified_count${NC}"
+    [[ $added_count -gt 0 ]] && echo "  ${GREEN}Added: $added_count${NC}"
+    [[ $deleted_count -gt 0 ]] && echo "  ${RED}Deleted: $deleted_count${NC}"
+    [[ $untracked_count -gt 0 ]] && echo "  ${YELLOW}Untracked: $untracked_count${NC}"
   else
     echo "${GREEN}✓ Working tree clean${NC}"
   fi

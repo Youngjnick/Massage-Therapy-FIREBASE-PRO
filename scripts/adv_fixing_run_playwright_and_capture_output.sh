@@ -26,41 +26,13 @@ export FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f
 export GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f
 export NODE_ENV=test
 
-OUTPUT_FILE="scripts/reports/playwright-output.txt"
-HISTORY_FILE="scripts/reports/playwright-output-history.txt"
-
 # Ensure sync-tmp directory exists and move any existing sync-tmp files there
 SYNC_TMP_DIR="sync_tmp_backups"
-mkdir -p "$SYNC_TMP_DIR"
+mkdir -p "$SYNC_TMP_DIR/reports"
 
-# Move any existing .sync-tmp files to the backup directory
-move_sync_tmp_files() {
-  local timestamp=$(date "+%Y%m%d_%H%M%S")
-  local existing_files=($(find . -maxdepth 1 -name ".sync-tmp*"))
-  if [[ ${#existing_files[@]} -gt 0 ]]; then
-    echo "[INFO] Moving existing sync-tmp files to $SYNC_TMP_DIR/"
-    for file in "${existing_files[@]}"; do
-      # Skip if file doesn't exist (might have been moved by another process)
-      [[ ! -e "$file" ]] && continue
-      
-      local basename=$(basename "$file")
-      if [[ -d "$file" ]]; then
-        # For directories, create a timestamped directory and move the entire directory
-        mkdir -p "$SYNC_TMP_DIR"
-        mv "$file" "$SYNC_TMP_DIR/${basename}_${timestamp}"
-      else
-        # For regular files, just move them with timestamp
-        mv "$file" "$SYNC_TMP_DIR/${basename}_${timestamp}" 2>/dev/null || true
-      fi
-    done
-  fi
-}
-
-# Move any existing files at startup
-move_sync_tmp_files
-
-# Set up trap to move sync-tmp files before exit
-trap 'move_sync_tmp_files; append_history_summary; open_html_report' EXIT INT
+# Set up output files in the backup directory
+OUTPUT_FILE="$SYNC_TMP_DIR/reports/playwright-output.txt"
+HISTORY_FILE="$SYNC_TMP_DIR/reports/playwright-output-history.txt"
 
 # Function to extract failed test files from the last Playwright run output
 get_failed_test_files() {
@@ -75,20 +47,104 @@ get_failed_test_files() {
 # Function to print color-coded summary from output file
 print_playwright_summary() {
   local output_file="$1"
-  local passed failed flaky total
-  passed=$(grep -E '^✓' "$output_file" | wc -l | xargs)
-  failed=$(grep -E '^✘' "$output_file" | wc -l | xargs)
+  local passed failed flaky skipped total duration
+  passed=$(grep -E '^✓|passed' "$output_file" | wc -l | xargs)
+  failed=$(grep -E '^✘|failed' "$output_file" | wc -l | xargs)
   flaky=$(grep -E '\[flaky\]' "$output_file" | wc -l | xargs)
-  total=$((passed + failed))
+  skipped=$(grep -E '^-' "$output_file" | wc -l | xargs)
+  total=$((passed + failed + skipped))
+
+  # Extract test duration if available
+  duration=$(grep -E 'Test Completed.*in|[0-9]+\.[0-9]+s\)$' "$output_file" | tail -n1 | grep -Eo '[0-9]+[\.0-9]*[ms]|\([0-9]+\.[0-9]+s\)' || echo "N/A")
+
+  # Colors and styles
   GREEN='\033[32m'
   RED='\033[31m'
   YELLOW='\033[33m'
+  BLUE='\033[1;34m'
+  PURPLE='\033[1;35m'
+  CYAN='\033[36m'
+  GRAY='\033[90m'
+  BOLD='\033[1m'
   NC='\033[0m'
-  printf "\n[SUMMARY] %b%d passed%b, %b%d failed%b, %b%d flaky%b, %d total\n" \
-    "$GREEN" "$passed" "$NC" \
-    "$RED" "$failed" "$NC" \
-    "$YELLOW" "$flaky" "$NC" \
-    "$total"
+
+  # GitHub-friendly box drawing (when output is viewed in GitHub)
+  if [[ "$GITHUB_ACTIONS" == "true" ]]; then
+    TOP_BORDER="╔════════════════════════════════════════════════════╗"
+    SECTION_START="╠════════════════════════════════════════════════════╣"
+    BOTTOM_BORDER="╚════════════════════════════════════════════════════╝"
+    SECTION_SEPARATOR="────────────────────────────────────────────────────"
+  else
+    TOP_BORDER="┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    SECTION_START="┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
+    BOTTOM_BORDER="┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    SECTION_SEPARATOR="──────────────────────────────────────────────────────"
+  fi
+  
+  # Header with GitHub-friendly spacing
+  echo "\n${PURPLE}${TOP_BORDER}${NC}"
+  echo "${PURPLE}║${NC}     🎭 ${BOLD}Playwright Test Summary${NC}                      ${PURPLE}║${NC}"
+  echo "${PURPLE}${SECTION_START}${NC}"
+
+  # Test Results Summary (GitHub-friendly format)
+  echo "📊 Test Results"
+  echo "$SECTION_SEPARATOR"
+  echo "✅ ${passed} passed    ❌ ${failed} failed    ⚠️  ${flaky} flaky    ⏩ ${skipped} skipped"
+  echo "Total: ${total} tests  ·  Duration: ${duration}  ·  Desktop Chrome\n"
+
+  # Coverage Info (if enabled)
+  if grep -q "COVERAGE DEBUG" "$output_file"; then
+    echo "📈 Coverage Stats"
+    echo "$SECTION_SEPARATOR"
+    coverage_summary=$(npx nyc report --reporter=text-summary 2>/dev/null || echo "No coverage data available")
+    if [[ -n "$coverage_summary" ]]; then
+      echo "$coverage_summary" | sed 's/^/  /'
+    else
+      echo "Coverage collection: ${GREEN}enabled${NC}"
+      if grep -q "window.__coverage__ is not present" "$output_file"; then
+        echo "${YELLOW}⚠️  Warning: Some pages did not report coverage data${NC}"
+      fi
+    fi
+    echo ""
+  fi
+
+  # Failed Tests with detailed information
+  if [[ $failed -gt 0 ]]; then
+    echo "${RED}❌ Failed Tests${NC}"
+    echo "$SECTION_SEPARATOR"
+    local counter=1
+    while IFS= read -r line; do
+      if [[ -n "$line" ]] && [[ "$line" =~ ^✘.*\[.*\] ]]; then
+        file_info=$(echo "$line" | grep -Eo 'e2e/[^ >]*\.spec\.[tj]s')
+        test_name=$(echo "$line" | sed -E 's/.*› //')
+        error_msg=$(grep -A 1 "$line" "$output_file" | tail -n 1)
+        echo "$counter) ${GRAY}$(basename "$file_info")${NC}"
+        echo "   ${test_name}"
+        echo "   ${RED}→ ${error_msg}${NC}\n"
+        ((counter++))
+      fi
+    done < <(grep -E '^✘.*\[.*\].*›' "$output_file")
+  fi
+
+  # Performance Impact
+  echo "${BLUE}⚡ Performance${NC}"
+  echo "$SECTION_SEPARATOR"
+  # Extract and show the 3 slowest tests
+  echo "Slowest Tests:"
+  grep -E '^[✓✘].*\[.*\].*›.*ms$' "$output_file" | sort -t'>' -k2 -nr | head -3 | while read -r line; do
+    test_name=$(echo "$line" | sed -E 's/.*› (.*) \([0-9]+ms\)/\1/')
+    duration=$(echo "$line" | grep -Eo '[0-9]+ms')
+    echo "  • ${GRAY}${test_name}${NC} (${PURPLE}${duration}${NC})"
+  done
+  echo ""
+
+  # Bottom border
+  echo "${PURPLE}${BOTTOM_BORDER}${NC}\n"
+  
+  # Store results for future reference
+  if [[ -d "$SYNC_TMP_DIR" ]]; then
+    echo "$total tests, $passed passed, $failed failed, $flaky flaky, $skipped skipped" > "$SYNC_TMP_DIR/last_test_summary.txt"
+  fi
 }
 
 # 1. Check for Playwright installation
@@ -112,17 +168,17 @@ show_spinner() {
   local message=${2:-"Processing..."}
   local delay=0.1
   local spinstr='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
-  
+
   # Clear any previous line
   printf "\r"
-  
+
   while ps -p $pid > /dev/null 2>&1; do
     local temp=${spinstr#?}
     printf "\r[%c] %s" "$spinstr" "$message"
     local spinstr=$temp${spinstr%"$temp"}
     sleep $delay
   done
-  
+
   # Clear spinner and message
   printf "\r%-60s\r" " "
 }
