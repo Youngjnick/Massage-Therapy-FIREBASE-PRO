@@ -21,8 +21,28 @@ def generate_summary_table(db_obj):
 
 
 def write_markdown_report(db_obj, run_stats, include_sections):
-    summary = generate_summary_table(db_obj)
-    # Calculate pass/fail/flaky/skipped for badges
+    # Recompute summary from latest test history (use last status in history if available)
+    tests = db_obj.get("tests", [])
+    summary = {
+        "Total Tests": len(tests),
+        "Passed": 0,
+        "Failed": 0,
+        "Flaky": 0,
+        "Skipped": 0,
+    }
+    for t in tests:
+        last_status = t.get("status")
+        # If history exists, use last entry
+        if t.get("history"):
+            last_hist = t["history"][-1]
+            if last_hist in ("\u2713", "passed", "✅"): last_status = "passed"
+            elif last_hist in ("\u2718", "failed", "❌"): last_status = "failed"
+            elif last_hist in ("flaky", "⚠️"): last_status = "flaky"
+            elif last_hist in ("skipped", "➖"): last_status = "skipped"
+        if last_status == "passed": summary["Passed"] += 1
+        elif last_status == "failed": summary["Failed"] += 1
+        elif last_status == "flaky": summary["Flaky"] += 1
+        elif last_status == "skipped": summary["Skipped"] += 1
     total = summary["Total Tests"]
     passed = summary["Passed"]
     failed = summary["Failed"]
@@ -31,30 +51,56 @@ def write_markdown_report(db_obj, run_stats, include_sections):
     pass_rate = (passed / total) * 100 if total > 0 else 0
     fail_rate = (failed / total) * 100 if total > 0 else 0
     coverage = run_stats.get("coverage", {})
-    # Markdown badges
     badge_url = lambda label, value, color: f"https://img.shields.io/badge/{label}-{value}-{color}.svg"
+    flaky_badge = badge_url('Flaky', flaky, 'yellow')
+    regression_badge = badge_url('Regression', failed, 'orange')
+    prev_coverage = run_stats.get("prev_coverage", {})
+    coverage_delta = None
+    if coverage and prev_coverage:
+        try:
+            coverage_delta = coverage.get('lines', 0) - prev_coverage.get('lines', 0)
+        except Exception:
+            coverage_delta = None
+    trends = run_stats.get("historical_trends", [])
     with open(report_txt.REPORT_TXT_FILE, "w") as f:
-        f.write("# Playwright Test Report\n\n")
-        # Badges
-        f.write(f"![Pass Rate]({badge_url('Pass_Rate', f'{pass_rate:.1f}%', 'brightgreen')}) ")
-        f.write(f"![Fail Rate]({badge_url('Fail_Rate', f'{fail_rate:.1f}%', 'red')}) ")
-        if coverage:
-            f.write(f"![Coverage]({badge_url('Coverage', f'{coverage.get('lines', 0)}%', 'blue')}) ")
-        f.write("\n\n")
+        def write_sticky_summary(f):
+            f.write("# Playwright Test Report\n\n")
+            # Badges
+            f.write(f"![Pass Rate]({badge_url('Pass_Rate', f'{pass_rate:.1f}%', 'brightgreen')}) ")
+            f.write(f"![Fail Rate]({badge_url('Fail_Rate', f'{fail_rate:.1f}%', 'red')}) ")
+            f.write(f"![Flaky]({flaky_badge}) ")
+            f.write(f"![Regression]({regression_badge}) ")
+            if coverage:
+                f.write(f"![Coverage]({badge_url('Coverage', f'{coverage.get('lines', 0)}%', 'blue')}) ")
+                if coverage_delta is not None:
+                    sign = '+' if coverage_delta >= 0 else ''
+                    f.write(f"![Coverage Delta](https://img.shields.io/badge/Coverage{sign}{coverage_delta}-{'brightgreen' if coverage_delta >= 0 else 'red'}.svg) ")
+            f.write("\n\n")
+            # Summary Table
+            f.write("| Total | Passed | Failed | Flaky | Skipped |\n")
+            f.write("|-------|--------|--------|-------|---------|\n")
+            f.write(f"| {total} | {passed} | {failed} | {flaky} | {skipped} |\n\n")
+
+        write_sticky_summary(f)
+        # Table of Contents
+        f.write("## Table of Contents\n\n")
+        f.write("- [Summary](#summary)\n")
+        f.write("- [Tests Needing Attention](#tests-needing-attention)\n")
+        f.write("- [Flaky Tests](#flaky-tests)\n")
+        f.write("- [Test Results](#test-results)\n")
+        f.write("- [Coverage](#coverage)\n")
+        f.write("- [Trend Graph](#trend-graph)\n")
+        f.write("- [Skipped Tests](#skipped-tests)\n")
+        f.write("- [Deleted Tests](#deleted-tests)\n\n")
+        # Summary heatmap/sparkline for pass/fail over time
+        if trends:
+            heatmap = ''.join(['🟩' if t['passed'] else '🟥' for t in trends])
+            f.write(f"**Summary Heatmap:** {heatmap}\n\n")
         if "summary" in include_sections:
             f.write("## Summary\n\n")
             for key, value in summary.items():
                 f.write(f"- **{key}:** {value}\n")
-        if "table-of-contents" in include_sections:
-            f.write("\n## Table of Contents\n\n")
-            f.write("- [Summary](#summary)\n")
-            f.write("- [Tests Needing Attention](#tests-needing-attention)\n")
-            f.write("- [Flaky Tests](#flaky-tests)\n")
-            f.write("- [Test Results](#test-results)\n")
-            f.write("- [Coverage](#coverage)\n")
-            f.write("- [Trend Graph](#trend-graph)\n")
-            f.write("- [Skipped Tests](#skipped-tests)\n")
-            f.write("- [Deleted Tests](#deleted-tests)\n")
+            f.write('\n[Back to Top](#playwright-test-report)\n')
         # Highlight problematic tests
         if True:
             f.write("\n## Tests Needing Attention\n\n")
@@ -71,6 +117,7 @@ def write_markdown_report(db_obj, run_stats, include_sections):
                     f.write(f"- **{name}** ({test.get('file')}) - Last: {test.get('status')} at {test.get('last_time', '')}\n")
         if "test-results" in include_sections:
             f.write("\n## Test Results\n\n")
+            f.write("> **Tip:** To filter by status (e.g., failed/flaky), use your editor's search or run the report script with a filter option.\n\n")
             # Group by file
             tests_by_file = {}
             for test in db_obj.get("tests", []):
@@ -78,11 +125,13 @@ def write_markdown_report(db_obj, run_stats, include_sections):
                 if file not in tests_by_file:
                     tests_by_file[file] = []
                 tests_by_file[file].append(test)
+            # GitHub repo URL (customize as needed)
             for file, tests in tests_by_file.items():
                 f.write(f"<details><summary><strong>{file}</strong></summary>\n\n")
-                # Per-file summary table
-                f.write("| Test | Status | Pass | Fail | Flaky | Skipped | Last Run | Trend |\n")
-                f.write("|------|--------|------|------|-------|---------|----------|-------|\n")
+                f.write("| Test | Status | Pass | Fail | Flaky | Skipped | Last Run | Trend | Duration |\n")
+                f.write("|------|--------|------|------|-------|---------|----------|-------|----------|\n")
+                # Highlight slowest tests
+                slow_tests = sorted([t for t in tests if t.get('avg_duration')], key=lambda t: t.get('avg_duration', 0), reverse=True)[:3]
                 for test in tests:
                     passes = sum(1 for s in test.get("history", []) if s in ("\u2713", "passed", "✅"))
                     fails = sum(1 for s in test.get("history", []) if s in ("\u2718", "failed", "❌"))
@@ -91,16 +140,39 @@ def write_markdown_report(db_obj, run_stats, include_sections):
                     last_status = test.get("status")
                     last_time = test.get("last_time", "")
                     name = test.get("title") or test.get("name")
-                    # Emoji for status
-                    if last_status in ("\u2713", "passed", "✅"): emoji = "✅"
-                    elif last_status in ("\u2718", "failed", "❌"): emoji = "❌"
-                    elif last_status in ("flaky", "⚠️"): emoji = "⚠️"
-                    elif last_status in ("skipped", "➖"): emoji = "➖"
+                    # Clickable local VSCode link (preferred)
+                    location = test.get("name")
+                    file_link = None
+                    rerun_cmd = None
+                    if ":" in location:
+                        parts = location.split(":")
+                        if len(parts) >= 3:
+                            file_part = parts[0]
+                            line_part = parts[1]
+                            file_link = f"vscode://file/{file_part}:{line_part}"
+                            rerun_cmd = f"npx playwright test {file_part} --line {line_part}"
+                    if file_link:
+                        name_md = f"[{name}]({file_link})"
+                    else:
+                        name_md = name
+                    # Add rerun command with copy instructions
+                    if rerun_cmd:
+                        name_md += f"<br><sub><code>{rerun_cmd}</code> (copy & run in terminal)</sub>"
+                    # Emoji for status (with alt text)
+                    if last_status in ("\u2713", "passed", "✅"): emoji = "✅"  # :white_check_mark:
+                    elif last_status in ("\u2718", "failed", "❌"): emoji = "❌"  # :x:
+                    elif last_status in ("flaky", "⚠️"): emoji = "⚠️"  # :warning:
+                    elif last_status in ("skipped", "➖"): emoji = "➖"  # :minus:
                     else: emoji = "⚠️"
-                    # Trend sparkline
-                    trend = "".join(["🟩" if s in ("\u2713", "passed", "✅") else "🟥" if s in ("\u2718", "failed", "❌") else "🟨" if s in ("flaky", "⚠️") else "➖" for s in test.get("history", [])[-10:]])
-                    f.write(f"| {name} | {emoji} | {passes} | {fails} | {flakies} | {skips} | {last_time} | {trend} |\n")
-                f.write("\n</details>\n\n")
+                    trend = "".join(["🟩" if s in ("\u2713", "passed", "✅") else "🟥" if s in ("\u2718", "failed", "❌") else "🟨" if s in ("flaky", "⚠️") else "➖" for s in test.get("history", [])[-5:]])
+                    avg_duration = test.get("avg_duration")
+                    last_duration = test.get("last_duration")
+                    duration_str = f"{last_duration or '-'} / {avg_duration or '-'}"
+                    details_id = name_md.replace(' ', '-').replace('/', '-').replace(':', '-')
+                    # Highlight slowest tests
+                    slow_marker = " 🚩" if test in slow_tests else ""
+                    f.write(f"| <details><summary>{name_md}{slow_marker}</summary>\n\nFull history: {test.get('history', [])}\n\n</details> | {emoji} | {passes} | {fails} | {flakies} | {skips} | {last_time} | {trend} | {duration_str} |\n")
+                f.write("\n</details>\n\n[Back to Top](#playwright-test-report)\n")
         if "coverage" in include_sections:
             f.write("\n## Coverage\n\n")
             coverage = run_stats.get("coverage", {})
@@ -108,15 +180,34 @@ def write_markdown_report(db_obj, run_stats, include_sections):
                 f.write(f"- **{key}:** {value}%\n")
         if "trend-graph" in include_sections:
             f.write("\n## Trend Graph\n\n")
-            total_tests = len(db_obj.get("tests", []))
-            passed_tests = sum(1 for t in db_obj.get("tests", []) if t.get("status") == "passed")
-            failed_tests = sum(1 for t in db_obj.get("tests", []) if t.get("status") == "failed")
-            pass_rate = (passed_tests / total_tests) * 100 if total_tests > 0 else 0
-            fail_rate = (failed_tests / total_tests) * 100 if total_tests > 0 else 0
-            trend = "📈 Trend: " + "".join(["🟩" if t.get("status") == "passed" else "🟥" if t.get("status") == "failed" else "🟨" if t.get("status") == "flaky" else "➖" for t in db_obj.get("tests", [])[:10]])
+            # Use last 20 test results for a more informative trend
+            last_statuses = []
+            for t in db_obj.get("tests", []):
+                if t.get("history"):
+                    last_statuses.extend(t["history"][-5:])
+            trend = "📈 Trend: " + "".join([
+                "🟩" if s in ("\u2713", "passed", "✅") else "🟥" if s in ("\u2718", "failed", "❌") else "🟨" if s in ("flaky", "⚠️") else "➖" for s in last_statuses[-20:]
+            ])
             f.write(f"{trend}\n")
+            # Compute pass/fail rates from last statuses
+            pass_count = sum(1 for s in last_statuses if s in ("\u2713", "passed", "✅"))
+            fail_count = sum(1 for s in last_statuses if s in ("\u2718", "failed", "❌"))
+            flaky_count = sum(1 for s in last_statuses if s in ("flaky", "⚠️"))
+            skip_count = sum(1 for s in last_statuses if s in ("skipped", "➖"))
+            total_count = len(last_statuses)
+            pass_rate = (pass_count / total_count) * 100 if total_count > 0 else 0
+            fail_rate = (fail_count / total_count) * 100 if total_count > 0 else 0
             f.write(f"- **Pass Rate:** {pass_rate:.2f}%\n")
             f.write(f"- **Fail Rate:** {fail_rate:.2f}%\n")
+            f.write(f"- **Flaky:** {flaky_count}\n")
+            f.write(f"- **Skipped:** {skip_count}\n")
+            # Historical trends section
+            if trends:
+                f.write("\n### Historical Trends\n\n")
+                f.write("| Run | Pass | Fail | Flaky | Skipped |\n")
+                f.write("|-----|------|------|-------|---------|\n")
+                for i, t in enumerate(trends):
+                    f.write(f"| {i+1} | {t.get('passed',0)} | {t.get('failed',0)} | {t.get('flaky',0)} | {t.get('skipped',0)} |\n")
         if "skipped-tests" in include_sections:
             f.write("\n## Skipped Tests\n\n")
             skipped_tests = [t for t in db_obj.get("tests", []) if t.get("status") == "skipped"]
@@ -127,6 +218,10 @@ def write_markdown_report(db_obj, run_stats, include_sections):
             deleted_tests = [t for t in db_obj.get("tests", []) if t.get("status") == "deleted"]
             for test in deleted_tests:
                 f.write(f"- **{test.get('name')}** (last: {test.get('last_time', '')})\n")
+        # At the end, repeat sticky summary
+        f.write("\n---\n")
+        write_sticky_summary(f)
+        f.write("\n")
 
 
 def main():
@@ -162,7 +257,8 @@ def main():
     run_stats = {"coverage": {"statements": 85, "branches": 80, "lines": 90, "functions": 88}}
     write_markdown_report(db_obj, run_stats, include_sections=args.include_sections)
     print(f"[INFO] Markdown summary written to {report_txt.REPORT_TXT_FILE}")
-    report_html.generate_html_report(db_obj)
+    # Pass the full history_data dict to the HTML report generator
+    report_html.generate_html_report(history_data)
     print(f"[INFO] HTML summary written to scripts/reports/playwright-history.html")
 
 
