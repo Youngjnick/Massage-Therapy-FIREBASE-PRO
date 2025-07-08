@@ -229,6 +229,9 @@ case "$choice" in
         echo "[INFO] Coverage report generated: coverage/index.html"
         # Always open the report on macOS
         open coverage/index.html
+      elif [[ -f "coverage/lcov-report/index.html" ]]; then
+        echo "[INFO] Coverage report generated: coverage/lcov-report/index.html"
+        open coverage/lcov-report/index.html
       else
         echo "[WARN] Coverage report not found after generation."
       fi
@@ -578,20 +581,21 @@ PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --reporter=list | tee "$OUTPU
 python3 scripts/playwright_history_report.py
 sync
 
-# === AUTO COVERAGE REPORT GENERATION (always at end if coverage mode) ===
-if [[ "$choice" == "coverage" || "$choice" == "COVERAGE" ]]; then
-  if [[ -d ".nyc_output" ]]; then
-    echo "[AUTO] Generating HTML coverage report (post-run)..."
-    npx nyc report --reporter=html
-    if [[ -f "coverage/index.html" ]]; then
-      echo "[AUTO] Coverage report generated: coverage/index.html"
-      open coverage/index.html
-    else
-      echo "[AUTO] Coverage report not found after generation."
-    fi
-    echo "[AUTO] Coverage summary (console):"
-    npx nyc report --reporter=text-summary
+# === AUTO COVERAGE REPORT GENERATION (always at end if coverage was collected) ===
+if [[ -d ".nyc_output" ]]; then
+  echo "[AUTO] Generating HTML coverage report (post-run)..."
+  npx nyc report --reporter=html
+  if [[ -f "coverage/index.html" ]]; then
+    echo "[AUTO] Coverage report generated: coverage/index.html"
+    open coverage/index.html
+  elif [[ -f "coverage/lcov-report/index.html" ]]; then
+    echo "[AUTO] Coverage report generated: coverage/lcov-report/index.html"
+    open coverage/lcov-report/index.html
   else
-    echo "[AUTO] No .nyc_output directory found. No coverage data to report."
+    echo "[AUTO] Coverage report not found after generation."
   fi
+  echo "[AUTO] Coverage summary (console):"
+  npx nyc report --reporter=text-summary
+else
+  echo "[AUTO] No .nyc_output directory found. No coverage data to report."
 fi
