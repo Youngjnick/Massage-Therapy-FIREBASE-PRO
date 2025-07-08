@@ -1,0 +1,47 @@
+[dotenv@17.0.1] injecting env (3) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+PLAYWRIGHT_USER_CREATION_DEBUG_START
+User testuserc-0kdit1du@gmail.com created successfully. UID: SDIKTUGSfQqfzwxZG0APKJ6nmS4C
+Firestore user doc created for testuserc-0kdit1du@gmail.com (uid: SDIKTUGSfQqfzwxZG0APKJ6nmS4C)
+User testuserd-rt0m8s8o@gmail.com created successfully. UID: vEs2KVXyLhMx3hXO7zeG58ZQSt9f
+Firestore user doc created for testuserd-rt0m8s8o@gmail.com (uid: vEs2KVXyLhMx3hXO7zeG58ZQSt9f)
+PLAYWRIGHT_USER_CREATION_DEBUG_END
+PLAYWRIGHT_TEST_USERS_JSON_START
+[
+  {
+    "email": "testuserc-0kdit1du@gmail.com",
+    "password": "testuserC",
+    "uid": "SDIKTUGSfQqfzwxZG0APKJ6nmS4C"
+  },
+  {
+    "email": "testuserd-rt0m8s8o@gmail.com",
+    "password": "testuserD",
+    "uid": "vEs2KVXyLhMx3hXO7zeG58ZQSt9f"
+  }
+]
+PLAYWRIGHT_TEST_USERS_JSON_END
+[COVERAGE DEBUG] process.env.COVERAGE: undefined
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+
+Running 3 tests using 2 workers
+
+[COVERAGE DEBUG] process.env.COVERAGE: [90mundefined[39m
+[COVERAGE DEBUG] process.env.COVERAGE: [90mundefined[39m
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/badge-dynamic-behavior.spec.ts - badges.json has correct criteria and image fields
+[E2E DEBUG] Navigating to profilePath: /profile
+[COVERAGE] window.__coverage__ is not present
+  ✓  1 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:7:1 › badges.json has correct criteria and image fields (489ms)
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-0kdit1du@gmail.com, password=testuserC
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/badge-dynamic-behavior.spec.ts - badge_test image is visible and loads
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[COVERAGE] Wrote coverage to out-1751940621266-k977bjpxq.json
+  ✓  3 [Desktop Chrome] › e2e/badge-dynamic-behavior.spec.ts:26:1 › badge_test image is visible and loads (2.0s)
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/badge-appearance.spec.ts - All key badges appear on Achievements page
+[COVERAGE] Wrote coverage to out-1751940622615-pyqj2ddpa9.json
+  ✓  2 [Desktop Chrome] › e2e/badge-appearance.spec.ts:23:2 › Local badge images (UI login) › All key badges appear on Achievements page (3.7s)
+
+  3 passed (5.2s)
