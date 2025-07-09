@@ -348,6 +348,23 @@ async function uploadQuestions() {
     console.log(`Opening Firestore Emulator UI at ${url}...`);
     exec(`${open} ${url}`);
   }
+
+  // --- Firestore backup cleanup: keep only the 2 most recent backups ---
+  const backupDir = path.join(__dirname, '../firebase_exports');
+  fs.readdir(backupDir, (err, files) => {
+    if (err) return console.warn('Could not read backup dir:', err.message);
+    const backupFolders = files.filter(f => f.startsWith('firebase-export-')).sort((a, b) => fs.statSync(path.join(backupDir, b)).mtimeMs - fs.statSync(path.join(backupDir, a)).mtimeMs);
+    if (backupFolders.length > 2) {
+      const toDelete = backupFolders.slice(2);
+      toDelete.forEach(folder => {
+        const fullPath = path.join(backupDir, folder);
+        fs.rmSync(fullPath, { recursive: true, force: true });
+        console.log(`Deleted old backup: ${folder}`);
+      });
+      if (toDelete.length > 0) console.log('Firestore backup cleanup complete. Only the 2 most recent backups are kept.');
+    }
+  });
+
   process.exit(0);
 }
 

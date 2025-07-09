@@ -15,5 +15,11 @@
     "database": "(default)",
     "location": "nam5",
     "rules": "firestore.rules"
+  },
+  "export": {
+    "path": "firebase_exports"
+  },
+  "sync_tmp": {
+    "path": "sync_tmp_backups"
   }
 }

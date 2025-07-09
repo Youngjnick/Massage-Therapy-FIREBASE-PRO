@@ -1,22 +1,22 @@
-[DEBUG] PW_HEADLESS: 0
-[dotenv@17.0.1] injecting env (5) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
+[DEBUG] PW_HEADLESS: 1
+[dotenv@17.0.1] injecting env (4) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
 PLAYWRIGHT_USER_CREATION_DEBUG_START
-User testuserc-umbg6t9o@gmail.com created successfully. UID: WN8rUYpsfUpBoeRAEAhQVqRDecc8
-Firestore user doc created for testuserc-umbg6t9o@gmail.com (uid: WN8rUYpsfUpBoeRAEAhQVqRDecc8)
-User testuserd-na7bbpw8@gmail.com created successfully. UID: l2EP3fH43DNsV8m6Mfwfdc0W9v9V
-Firestore user doc created for testuserd-na7bbpw8@gmail.com (uid: l2EP3fH43DNsV8m6Mfwfdc0W9v9V)
+User testuserc-8gn0dapf@gmail.com created successfully. UID: AYWgdB2qB5VwMIptImN5v7Ua6Z0Q
+Firestore user doc created for testuserc-8gn0dapf@gmail.com (uid: AYWgdB2qB5VwMIptImN5v7Ua6Z0Q)
+User testuserd-bc8axp89@gmail.com created successfully. UID: Po0w1kay5MygT2sv1xLcfD9S0fKl
+Firestore user doc created for testuserd-bc8axp89@gmail.com (uid: Po0w1kay5MygT2sv1xLcfD9S0fKl)
 PLAYWRIGHT_USER_CREATION_DEBUG_END
 PLAYWRIGHT_TEST_USERS_JSON_START
 [
   {
-    "email": "testuserc-umbg6t9o@gmail.com",
+    "email": "testuserc-8gn0dapf@gmail.com",
     "password": "testuserC",
-    "uid": "WN8rUYpsfUpBoeRAEAhQVqRDecc8"
+    "uid": "AYWgdB2qB5VwMIptImN5v7Ua6Z0Q"
   },
   {
-    "email": "testuserd-na7bbpw8@gmail.com",
+    "email": "testuserd-bc8axp89@gmail.com",
     "password": "testuserD",
-    "uid": "l2EP3fH43DNsV8m6Mfwfdc0W9v9V"
+    "uid": "Po0w1kay5MygT2sv1xLcfD9S0fKl"
   }
 ]
 PLAYWRIGHT_TEST_USERS_JSON_END
@@ -28,23 +28,189 @@ NODE_ENV: test
 Firestore Admin SDK pointed to emulator: 127.0.0.1:8080
 [dotenv@17.0.1] injecting env (0) from .env.e2e – [tip] encrypt with dotenvx: https://dotenvx.com
 
-Running 99 tests using 4 workers
+Running 198 tests using 6 workers
 
-[DEBUG] PW_HEADLESS: 0
+[DEBUG] PW_HEADLESS: 1
+[DEBUG] PW_HEADLESS: 1
 [COVERAGE DEBUG] process.env.COVERAGE: true
-[DEBUG] PW_HEADLESS: 0
-[COVERAGE DEBUG] playwright-coverage.ts loaded
-[DEBUG] PW_HEADLESS: 0
-[DEBUG] PW_HEADLESS: 0
-[COVERAGE DEBUG] process.env.COVERAGE: true
-[COVERAGE DEBUG] process.env.COVERAGE: true
-[COVERAGE DEBUG] playwright-coverage.ts loaded
 [COVERAGE DEBUG] playwright-coverage.ts loaded
 [COVERAGE DEBUG] process.env.COVERAGE: true
 [COVERAGE DEBUG] playwright-coverage.ts loaded
-[E2E DEBUG] About to sign in with test user: testuserc-umbg6t9o@gmail.com
+[DEBUG] PW_HEADLESS: 1
+[DEBUG] PW_HEADLESS: 1
+[DEBUG] PW_HEADLESS: 1
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[DEBUG] PW_HEADLESS: 1
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
+[COVERAGE DEBUG] process.env.COVERAGE: true
+[COVERAGE DEBUG] playwright-coverage.ts loaded
 [E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /quiz have accessible names and ARIA roles @fast
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /achievements have accessible names and ARIA roles @fast
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /analytics have accessible names and ARIA roles @fast
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /profile have accessible names and ARIA roles @fast
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on / have accessible names and ARIA roles @fast
+[COVERAGE] Wrote coverage to out-1752102509184-b0h6nbezaz6.json
+  ✓  3 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /achievements have accessible names and ARIA roles @fast (8.5s)
+[COVERAGE] Wrote coverage to out-1752102509312-ey1xd0vt1o.json
+  ✓  2 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /analytics have accessible names and ARIA roles @fast (8.9s)
+[COVERAGE] Wrote coverage to out-1752102510046-21xkxjfn1hb.json
+  ✓  4 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /quiz have accessible names and ARIA roles @fast (9.4s)
+[COVERAGE] Wrote coverage to out-1752102510314-ukoolcubl2.json
+  ✓  5 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on /profile have accessible names and ARIA roles @fast (9.7s)
+[COVERAGE] Wrote coverage to out-1752102510650-54uquopb67f.json
+  ✓  6 [Desktop Chrome] › e2e/all-interactive-aria-accessibility.spec.ts:37:5 › All Interactive Elements: ARIA and Keyboard Accessibility › All interactive elements on / have accessible names and ARIA roles @fast (9.9s)
+[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com
+[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com
+[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com
+  ✓  7 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:95:3 › App Accessibility: Full Tab Order and ARIA Audit › No missing or duplicate ARIA labels/roles on main interactive elements (1.3s)
+[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts - Tab through all main pages and assert focus order/visibility
+[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
 [E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
 [E2E DEBUG] Navigating to profilePath: /profile
 [E2E DEBUG] Waiting for sign-in form fields to be visible.
-[E2E DEBUG] Filling sign-in form: email=testuserc-umbg6t9o@gmail.com, password=testuserC
+[E2E DEBUG] Navigating to profilePath: /profile
+[COVERAGE] Wrote coverage to out-1752102513983-7bt8b7exhlc.json
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+  ✓  1 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:46:3 › App Accessibility: Full Tab Order and ARIA Audit › Tab through all main pages and assert focus order/visibility (13.5s)
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Navigating to quiz page...
+[E2E DEBUG] Test start, current URL: http://localhost:5173/
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+Navigating to quiz page...
+[E2E DEBUG] Filling Quiz Length...
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz
+Filling Quiz Length...
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+  ✓  8 [Desktop Chrome] › e2e/app-accessibility-full.spec.ts:120:3 › App Accessibility: Full Tab Order and ARIA Audit (Mobile) › Tab through all main pages and assert focus order/visibility (Mobile) (10.1s)
+[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com
+[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile
+[E2E DEBUG] Navigating to profilePath: /profile
+[E2E DEBUG] Waiting for sign-in form fields to be visible.
+[E2E DEBUG] After test: should handle edge case: rapid answer selection
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+[E2E DEBUG] After test: should show topic stats in results
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+[E2E DEBUG] After test: should reset quiz and focus first option after restart
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC
+[E2E DEBUG] Submitting sign-in form.
+[E2E DEBUG] Waiting for sign-out button after login.
+[E2E DEBUG] After test: should render and be usable on mobile viewport
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+  ✘  9 [Desktop Chrome] › e2e/app.spec.ts:43:1 › should reset quiz and focus first option after restart (13.7s)
+[31mTesting stopped early after 1 maximum allowed failures.[39m
+[E2E DEBUG] After test: should load all referenced badge images on Achievements page
+[E2E DEBUG] Current URL after test: http://localhost:5173/profile
+[E2E DEBUG] After test: should show explanations when enabled
+[E2E DEBUG] Current URL after test: http://localhost:5173/quiz
+[E2E DEBUG] Sign-in flow complete, sign-out button visible.
+[E2E DEBUG] URL after sign-in: http://localhost:5173/profile
+  ✘  13 [Desktop Chrome] › e2e/app.spec.ts:303:1 › should render and be usable on mobile viewport (10.4s)
+  ✘  10 [Desktop Chrome] › e2e/app.spec.ts:153:1 › should handle edge case: rapid answer selection (14.0s)
+  ✘  14 [Desktop Chrome] › e2e/app.spec.ts:313:1 › should load all referenced badge images on Achievements page (5.1s)
+  ✘  11 [Desktop Chrome] › e2e/app.spec.ts:216:1 › should show explanations when enabled (14.4s)
+  ✘  12 [Desktop Chrome] › e2e/app.spec.ts:277:1 › should show topic stats in results (14.0s)
+
+
+  1) [Desktop Chrome] › e2e/app.spec.ts:43:1 › should reset quiz and focus first option after restart 
+
+    TimeoutError: locator.fill: Timeout 5000ms exceeded.
+    Call log:
+    [2m  - waiting for getByLabel('Quiz Length')[22m
+
+
+      53 |   await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz.png', fullPage: true });
+      54 |   console.log('Filling Quiz Length...');
+    > 55 |   await page.getByLabel('Quiz Length').fill('1');
+         |                                        ^
+      56 |   console.log('Clicking Start button...');
+      57 |   await page.getByRole('button', { name: /start/i }).click();
+      58 |   console.log('Clicking first quiz option...');
+        at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts:55:40
+
+    Error Context: test-results/screenshots/app-should-reset-quiz-and-focus-first-option-after-restart-Desktop-Chrome/error-context.md
+
+  1 failed
+    [Desktop Chrome] › e2e/app.spec.ts:43:1 › should reset quiz and focus first option after restart 
+  5 interrupted
+    [Desktop Chrome] › e2e/app.spec.ts:153:1 › should handle edge case: rapid answer selection ─────
+    [Desktop Chrome] › e2e/app.spec.ts:216:1 › should show explanations when enabled ───────────────
+    [Desktop Chrome] › e2e/app.spec.ts:277:1 › should show topic stats in results ──────────────────
+    [Desktop Chrome] › e2e/app.spec.ts:303:1 › should render and be usable on mobile viewport ──────
+    [Desktop Chrome] › e2e/app.spec.ts:313:1 › should load all referenced badge images on Achievements page 
+  184 did not run
+  8 passed (26.7s)
+  1 error was not a part of any test, see above for details
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

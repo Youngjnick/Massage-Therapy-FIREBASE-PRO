@@ -1,3 +1,15 @@
+# Normalize line endings for all shell scripts to Unix (LF)
+echo "Normalizing line endings for all shell scripts to Unix (LF)..."
+if ! command -v dos2unix >/dev/null 2>&1; then
+  echo "dos2unix not found. Installing with Homebrew..."
+  if command -v brew >/dev/null 2>&1; then
+    brew install dos2unix
+  else
+    echo "Homebrew not found. Please install Homebrew and re-run this script, or install dos2unix manually."
+    exit 1
+  fi
+fi
+dos2unix scripts/git-sync-utils.sh scripts/sync-all-files-to-specified-branches.sh
 #!/bin/bash
 set -e
 
