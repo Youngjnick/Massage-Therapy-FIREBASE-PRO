@@ -15,6 +15,64 @@ fi
 source "$(dirname "$0")/git-sync-utils.sh"
 
 main() {
+    echo "Normalizing line endings for all shell scripts to Unix (LF)..."
+    if command -v dos2unix >/dev/null 2>&1; then
+      dos2unix scripts/*.sh
+    else
+      echo "dos2unix not found, using sed fallback."
+      for script in scripts/*.sh; do
+        sed -i '' $'s/\r$//' "$script"
+      done
+    fi
+
+    # --- Interactive branch selection: numbered, sorted by commit date (newest first) ---
+    echo "\nAvailable local branches (newest first):"
+    local branch_list branch_names idx
+    branch_list=( $(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/) )
+    idx=1
+    for branch in "${branch_list[@]}"; do
+      echo "  $idx) $branch"
+      ((idx++))
+    done
+    echo ""
+    # Interactive prompt for branch selection if no args
+    if [[ $# -eq 0 ]]; then
+      local selection new_branch
+      while true; do
+        echo "Enter branch numbers separated by space (e.g. 1 3 5), or '+' to add a new branch, or 'd' when done: "
+        read selection
+        if [[ "$selection" == "d" ]]; then
+          break
+        elif [[ "$selection" == "+" ]]; then
+          echo -n "Enter new branch name: "
+          read new_branch
+          if [[ -n "$new_branch" ]]; then
+            git branch "$new_branch"
+            branch_list=( $(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/) )
+            echo "Branch '$new_branch' created."
+            idx=1
+            for branch in "${branch_list[@]}"; do
+              echo "  $idx) $branch"
+              ((idx++))
+            done
+          fi
+        else
+          # Parse numbers and build TARGET_BRANCHES
+          TARGET_BRANCHES=()
+          for num in $selection; do
+            if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#branch_list[@]} )); then
+              TARGET_BRANCHES+=("${branch_list[$((num-1))]}")
+            fi
+          done
+          if [[ ${#TARGET_BRANCHES[@]} -gt 0 ]]; then
+            break
+          else
+            echo "No valid branch numbers entered."
+          fi
+        fi
+      done
+      set -- "${TARGET_BRANCHES[@]}"
+    fi
     # --- Argument Parsing ---
     parse_sync_args "$@"
     TARGET_BRANCHES=("${PARSED_TARGET_BRANCHES[@]}")
@@ -25,7 +83,13 @@ main() {
     DRY_RUN="$PARSED_DRY_RUN"
     MAX_PARALLEL="$PARSED_MAX_PARALLEL"
 
-    cd "$(git rev-parse --show-toplevel)" || { log_error "Not a git repository. Aborting."; exit 1; }
+    local repo_root
+    repo_root=$(git rev-parse --show-toplevel 2>/dev/null)
+    if [[ -z "$repo_root" ]]; then
+        log_error "Not a git repository. Please run this script from inside a git project directory. Aborting."
+        exit 1
+    fi
+    cd "$repo_root" || { log_error "Failed to cd to repository root: $repo_root. Aborting."; exit 1; }
     log_info "Running in repository root: $(pwd)"
 
     # Global array to track worktrees for cleanup
@@ -35,7 +99,9 @@ main() {
     # If no target branches are provided after parsing, prompt the user
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
         log_info "No target branches specified. Prompting for branch selection..."
-        TARGET_BRANCHES=($(prompt_for_branches))
+        echo "[DEBUG] About to call prompt_for_branches" >&2
+        read -A TARGET_BRANCHES <<<"$(prompt_for_branches)"
+        echo "[DEBUG] Returned from prompt_for_branches with: ${TARGET_BRANCHES[*]}" >&2
         log_info "User selected branches: ${TARGET_BRANCHES[*]}"
         if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
             log_error "No branches selected. Exiting."
@@ -82,6 +148,11 @@ main() {
         log_error "Failed to archive source branch '${original_branch}'. Aborting."
         exit 1
     fi
+
+    log_info "DEBUG: Final TARGET_BRANCHES array: ${TARGET_BRANCHES[@]}"
+    for branch in "${TARGET_BRANCHES[@]}"; do
+        log_info "DEBUG: Will sync branch: $branch"
+    done
 
     local pids=()
     for branch in "${TARGET_BRANCHES[@]}"; do
