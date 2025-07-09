@@ -1,5 +1,8 @@
 #!/bin/zsh
-# Usage: ./adv_fixing# Set up directories with optimized paths
+#!/bin/zsh
+# Usage: ./adv_fixing_run_playwright_and_capture_output.sh [--debug]
+# Set up directories with optimized paths
+setopt +o nomatch  # Prevent zsh from erroring on unmatched globs
 SYNC_TMP_DIR="sync_tmp_backups"
 REPORTS_DIR="$(dirname "$0")/reports"
 mkdir -p "$SYNC_TMP_DIR" "$REPORTS_DIR"
@@ -28,12 +31,22 @@ fi
 OUTPUT_FILE="$REPORTS_DIR/playwright-output.txt"
 HISTORY_FILE="$REPORTS_DIR/playwright-output-history.txt"
 
-# Clean up old reports (keep last 10)
-(cd "$REPORTS_DIR" && ls -t playwright-output-*.txt 2>/dev/null | tail -n +11 | xargs rm -f) & .sync-tmp files directly to sync_tmp_backups
+
+
+# Clean up old reports (keep last 10) - zsh compatible glob check
+if [[ -n ${(f)"$(echo $REPORTS_DIR/playwright-output-*.txt)"} && -e $REPORTS_DIR/playwright-output-*.txt ]]; then
+  (cd "$REPORTS_DIR" && ls -t playwright-output-*.txt 2>/dev/null | tail -n +11 | xargs rm -f)
+fi
+
+
+# Move any stray .sync-tmp files to backup directory
 if [[ -d ".sync-tmp" ]]; then
-  mv .sync-tmp/* "$SYNC_TMP_DIR/" 2>/dev/null || true
+  if [[ $(ls -A .sync-tmp 2>/dev/null) ]]; then
+    mv .sync-tmp/* "$SYNC_TMP_DIR/" 2>/dev/null || true
+  fi
   rmdir .sync-tmp 2>/dev/null || true
-fiaywright_and_capture_output.sh [--debug]
+fi
+
 # Pass --debug to enable shell tracing (set -x)
 
 if [[ "$1" == "--debug" || "$1" == "--trace" ]]; then
@@ -95,9 +108,9 @@ get_git_changes() {
   # Get modified files with status
   changes+="--- Changed Files ---\n"
   git status --porcelain | while read -r line; do
-    status=${line:0:2}
+    git_status=${line:0:2}
     file=${line:3}
-    case "$status" in
+    case "$git_status" in
       "M ") changes+="M  $file (modified)\n" ;;
       "A ") changes+="A  $file (added)\n" ;;
       "D ") changes+="D  $file (deleted)\n" ;;
@@ -105,13 +118,11 @@ get_git_changes() {
       "??") changes+="?? $file (untracked)\n" ;;
     esac
   done
-
   # Get diff statistics
   changes+="\n--- Diff Summary ---\n"
   git diff --stat | while read -r line; do
     changes+="$line\n"
   done
-
   echo -e "$changes"
 }
 
@@ -153,32 +164,31 @@ print_playwright_summary() {
   echo "📊 Test Results"
   echo "$SECTION_SEPARATOR"
   
-  # Parse results for each project
-  while IFS= read -r project_line; do
-    if [[ $project_line =~ Running[[:space:]]+([0-9]+)[[:space:]]+tests[[:space:]]+using[[:space:]]+([0-9]+)[[:space:]]+workers[[:space:]]+\(([^)]+)\) ]]; then
-      local project_tests=${BASH_REMATCH[1]}
-      local project_workers=${BASH_REMATCH[2]}
-      local project_name=${BASH_REMATCH[3]}
-      
-      # Count results for this project
-      local project_passed=$(grep -E "^✓.*\[$project_name\]" "$output_file" | wc -l | xargs)
-      local project_failed=$(grep -E "^✘.*\[$project_name\]" "$output_file" | wc -l | xargs)
-      local project_flaky=$(grep -E "\[flaky\].*\[$project_name\]" "$output_file" | wc -l | xargs)
-      local project_skipped=$(grep -E "^-.*\[$project_name\]" "$output_file" | wc -l | xargs)
-      
-      # Add to totals
-      total_passed=$((total_passed + project_passed))
-      total_failed=$((total_failed + project_failed))
-      total_flaky=$((total_flaky + project_flaky))
-      total_skipped=$((total_skipped + project_skipped))
-      total_all=$((total_all + project_tests))
-      
-      # Print project results
-      echo "${BOLD}${project_name}${NC}"
-      echo "✅ ${project_passed} passed    ❌ ${project_failed} failed    ⚠️  ${project_flaky} flaky    ⏩ ${project_skipped} skipped"
-      echo ""
-    fi
-  done < <(grep -E "Running.*tests using.*workers.*\([^)]+\)" "$output_file")
+  # Parse results for each project using gawk for zsh compatibility
+  grep -E "Running.*tests using.*workers.*\([^)]+\)" "$output_file" | \
+  gawk '
+    match($0, /Running[[:space:]]+([0-9]+)[[:space:]]+tests[[:space:]]+using[[:space:]]+([0-9]+)[[:space:]]+workers[[:space:]]+\(([^)]+)\)/, arr) {
+      print arr[1] "\t" arr[2] "\t" arr[3]
+    }
+  ' | while IFS=$'\t' read -r project_tests project_workers project_name; do
+    # Count results for this project
+    project_passed=$(grep -E "^✓.*\[$project_name\]" "$output_file" | wc -l | xargs)
+    project_failed=$(grep -E "^✘.*\[$project_name\]" "$output_file" | wc -l | xargs)
+    project_flaky=$(grep -E "\[flaky\].*\[$project_name\]" "$output_file" | wc -l | xargs)
+    project_skipped=$(grep -E "^-.*\[$project_name\]" "$output_file" | wc -l | xargs)
+
+    # Add to totals
+    total_passed=$((total_passed + project_passed))
+    total_failed=$((total_failed + project_failed))
+    total_flaky=$((total_flaky + project_flaky))
+    total_skipped=$((total_skipped + project_skipped))
+    total_all=$((total_all + project_tests))
+
+    # Print project results
+    echo "${BOLD}${project_name}${NC}"
+    echo "✅ ${project_passed} passed    ❌ ${project_failed} failed    ⚠️  ${project_flaky} flaky    ⏩ ${project_skipped} skipped"
+    echo ""
+  done
 
   # Extract overall duration
   local duration=$(grep -E 'Test Completed.*in|[0-9]+\.[0-9]+s\)$' "$output_file" | tail -n1 | grep -Eo '[0-9]+[\.0-9]*[ms]|\([0-9]+\.[0-9]+s\)' || echo "N/A")
@@ -332,6 +342,7 @@ run_with_spinner() {
   return $status
 }
 
+
 # Ensure sync-tmp directory exists
 SYNC_TMP_DIR="sync_tmp_backups"
 mkdir -p "$SYNC_TMP_DIR"
@@ -393,10 +404,17 @@ case "$choice" in
 
     # Prompt for Vite dev server confirmation FIRST
     echo "[DEBUG] Entered coverage case block."
+    PW_MODE_ARG=""
+    if [[ "$run_mode" == "headed" ]]; then
+      PW_MODE_ARG="--headed"
+    fi
+    # Remove ps -p ... -o env check for Vite coverage mode
+    # Instead, just warn if Vite is running and COVERAGE=true is not set
     vite_pid=$(lsof -i :5173 -t 2>/dev/null | head -n1)
     vite_status_msg=""
     if [[ -n "$vite_pid" ]]; then
-      if ! ps -p "$vite_pid" -o env | grep -q 'COVERAGE=true'; then
+      vite_env=$(ps -p "$vite_pid" -ww -o args= 2>/dev/null)
+      if [[ "$vite_env" != *"COVERAGE=true"* ]]; then
         vite_status_msg="[WARN] Vite dev server is running but not with COVERAGE=true. Coverage will NOT be collected!\n[HINT] Stop your dev server and restart it with: COVERAGE=true npm run dev"
       else
         vite_status_msg="[INFO] Vite dev server detected on port 5173 with COVERAGE=true."
@@ -428,30 +446,27 @@ case "$choice" in
 
     # Prompt for headed or headless mode
     PW_HEADLESS_VALUE=""
+    PW_MODE_FLAG=""
     echo "\nRun in which mode? [1] Headed (UI, default) or [2] Headless (faster, no UI)? [1/2]: "
     read -r mode_selection
     case "$mode_selection" in
-        1|h|H|headed|Headed|ui|UI) run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
-        2|headless|Headless|n|N) run_mode="headless"; PW_HEADLESS_VALUE="1" ;;
-        *) echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
+        1|h|H|headed|Headed|ui|UI)
+            run_mode="headed"; PW_HEADLESS_VALUE="0"; PW_MODE_FLAG="--headed" ;;
+        2|headless|Headless|n|N)
+            run_mode="headless"; PW_HEADLESS_VALUE="1"; PW_MODE_FLAG="--headless" ;;
+        *)
+            echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0"; PW_MODE_FLAG="--headed" ;;
     esac
-
-    # Export PW_HEADLESS for Playwright
-    export PW_HEADLESS="$PW_HEADLESS_VALUE"
-    echo "[DEBUG] PW_HEADLESS=\033[32m$PW_HEADLESS_VALUE\033[0m"
 
     # Prompt for number of workers (parallelism)
     MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
-    DEFAULT_WORKERS=1
-    if [[ $MAX_WORKERS -gt 4 ]]; then
-      MAX_WORKERS=4
-    fi
+    DEFAULT_WORKERS=$MAX_WORKERS
     WORKERS=""
     while [[ -z "$WORKERS" ]]; do
-      echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS): "
+      echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS, or type 'max'): "
       read -r workers_choice
       workers_choice=${workers_choice:-$DEFAULT_WORKERS}
-      if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
+      if [[ "$workers_choice" =~ ^[1-9][0-9]*$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
         WORKERS=$workers_choice
       elif [[ "$workers_choice" == "max" ]]; then
         WORKERS=$MAX_WORKERS
@@ -468,10 +483,11 @@ case "$choice" in
 
     echo "[INFO] Starting Playwright tests with coverage..."
     # Run tests with spinner while still capturing output - run all projects
-    (COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG --headed | tee "$OUTPUT_FILE") &
+    (COVERAGE=true PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG $PW_MODE_ARG | tee "$OUTPUT_FILE") &
     test_pid=$!
     show_spinner $test_pid "Running Playwright tests with coverage..."
     wait $test_pid
+    update_last_failing_lines
     python3 scripts/playwright_history_report.py
     # Automatically generate HTML coverage report if .nyc_output exists
     if [[ -d ".nyc_output" ]]; then
@@ -502,41 +518,43 @@ if [[ "$choice" == "coverage" || "$choice" == "COVERAGE" ]]; then
   exit 1
 fi
 
+
 # Prompt for headed or headless mode and workers only for non-coverage modes
 if [[ "$choice" != "coverage" && "$choice" != "COVERAGE" ]]; then
   run_mode=""
   PW_HEADLESS_VALUE=""
+  PW_MODE_FLAG=""
   while [[ -z "$run_mode" ]]; do
     echo "\nRun in which mode? [1] Headed (UI, default) or [2] Headless (faster, no UI)? [1/2]: "
     read -r mode_choice
     mode_choice=${mode_choice:-1}
     case $mode_choice in
-      1|h|H|headed|Headed|ui|UI) run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
-      2|headless|Headless|n|N) run_mode="headless"; PW_HEADLESS_VALUE="1" ;;
-      *) echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0" ;;
+      1|h|H|headed|Headed|ui|UI)
+        run_mode="headed"; PW_HEADLESS_VALUE="0"; PW_MODE_FLAG="--headed" ;;
+      2|headless|Headless|n|N)
+        run_mode="headless"; PW_HEADLESS_VALUE="1"; PW_MODE_FLAG="--headless" ;;
+      *)
+        echo "[WARN] Invalid selection. Defaulting to headed mode."; run_mode="headed"; PW_HEADLESS_VALUE="0"; PW_MODE_FLAG="--headed" ;;
     esac
-    # Do NOT export PW_HEADLESS
-    # Only set PW_HEADLESS inline for each Playwright invocation
   done
 
   # Automatically determine optimal number of workers based on CPU cores
   MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
-  if [[ $MAX_WORKERS -gt 4 ]]; then
-    MAX_WORKERS=4  # Cap at 4 for stability
-  fi
-  DEFAULT_WORKERS=$MAX_WORKERS  # Default to max workers for best performance
-  
-  # Allow user to override worker count if needed
-  echo "\nNumber of parallel workers to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS, recommended for fastest execution): "
-  read -r workers_choice
-  workers_choice=${workers_choice:-$DEFAULT_WORKERS}
-  if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
-    WORKERS=$workers_choice
-  else
-    echo "[INFO] Using recommended $DEFAULT_WORKERS workers for optimal performance"
-    WORKERS=$DEFAULT_WORKERS
-  fi
-  WORKERS_FLAG="--workers=$WORKERS --max-failures=5"  # Allow some failures before stopping
+  DEFAULT_WORKERS=$MAX_WORKERS
+  WORKERS=""
+  while [[ -z "$WORKERS" ]]; do
+    echo "\nNumber of parallel workers to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS, or type 'max'): "
+    read -r workers_choice
+    workers_choice=${workers_choice:-$DEFAULT_WORKERS}
+    if [[ "$workers_choice" =~ ^[1-9][0-9]*$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
+      WORKERS=$workers_choice
+    elif [[ "$workers_choice" == "max" ]]; then
+      WORKERS=$MAX_WORKERS
+    else
+      echo "[WARN] Invalid selection. Please enter a number between 1 and $MAX_WORKERS, or 'max'."
+    fi
+  done
+  WORKERS_FLAG="--workers=$WORKERS --max-failures=5"
 else
   WORKERS_FLAG=""
 fi
@@ -562,14 +580,21 @@ fi
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
   echo "[INFO] Starting Playwright tests..."
-  mkdir -p "$SYNC_TMP_DIR/.sync-tmp-playwright-${RANDOM}"
-  (cd "$SYNC_TMP_DIR/.sync-tmp/playwright-run-${RANDOM}" && \
-   TMPDIR="$PWD" PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG | tee "$OUTPUT_FILE") &
+  RUN_ID=$RANDOM
+  RUN_DIR="$SYNC_TMP_DIR/.sync-tmp/playwright-run-$RUN_ID"
+  mkdir -p "$RUN_DIR"
+  # Only add --headed if headed mode, do not add --headless
+  PW_MODE_ARG=""
+  if [[ "$run_mode" == "headed" ]]; then
+    PW_MODE_ARG="--headed"
+  fi
+  (cd "$RUN_DIR" && \
+   TMPDIR="$PWD" PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG $PW_MODE_ARG | tee "$OUTPUT_FILE") &
   test_pid=$!
   show_spinner $test_pid "Running Playwright tests..."
   wait $test_pid
   print_playwright_summary "$OUTPUT_FILE"
-  # After Playwright run, always call the reporting tool to append improved summary
+  update_last_failing_lines
   python3 scripts/playwright_history_report.py
   sync
   exit 0
@@ -601,6 +626,8 @@ if [[ "$choice" == "f"* ]]; then
       if [[ ${#failed_lines[@]} -gt 0 ]]; then
         echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
         PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --project="Desktop Chrome" "${failed_lines[@]}" | tee "$OUTPUT_FILE"
+        # After run, update last-failing file
+        update_last_failing_lines
         python3 scripts/playwright_history_report.py
         sync
         exit 0
@@ -662,6 +689,8 @@ if [[ "$choice" == "f"* ]]; then
   fi
   echo "[INFO] Running last-failing test files: ${failed_files[*]}"
   PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --project="Desktop Chrome" $extra_args "${failed_files[@]}" | tee "$OUTPUT_FILE"
+  # After any failed run, update last-failing file
+  update_last_failing_lines
   python3 scripts/playwright_history_report.py
   exit 0
 fi
@@ -676,7 +705,7 @@ if [[ "$choice" == "s"* ]]; then
     exit 1
   fi
   echo "[INFO] Running Playwright with selection: $selection"
-  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG "$selection" | tee "$OUTPUT_FILE"
+  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG $PW_MODE_FLAG "$selection" | tee "$OUTPUT_FILE"
   print_playwright_summary "$OUTPUT_FILE"
   # After Playwright run, always call the reporting tool to append improved summary
   python3 scripts/playwright_history_report.py
@@ -735,7 +764,7 @@ if [[ "$choice" == "u"* ]]; then
   done
   if [[ ${#untested_files[@]} -gt 0 ]]; then
     echo "[INFO] Running untested test files: ${untested_files[*]}"
-    PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test "${untested_files[@]}" | tee "$OUTPUT_FILE"
+    PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $PW_MODE_FLAG "${untested_files[@]}" | tee "$OUTPUT_FILE"
     python3 scripts/playwright_history_report.py
     sync
     exit 0
@@ -749,7 +778,7 @@ fi
 # [update-snapshots] mode
 if [[ "$choice" == "update-snapshots"* ]]; then
   echo "[INFO] Running tests with --update-snapshots."
-  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --update-snapshots | tee "$OUTPUT_FILE"
+  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $PW_MODE_FLAG --update-snapshots | tee "$OUTPUT_FILE"
   python3 scripts/playwright_history_report.py
   sync
   exit 0
@@ -765,7 +794,7 @@ if [[ "$choice" == "x"* ]]; then
     done < "$LAST_FAILING_FILE"
     if [[ ${#failed_lines[@]} -gt 0 ]]; then
       echo "[INFO] Running only failing test lines: ${failed_lines[*]}"
-      PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test "${failed_lines[@]}" | tee "$OUTPUT_FILE"
+      PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $PW_MODE_FLAG "${failed_lines[@]}" | tee "$OUTPUT_FILE"
       sync
       exit 0
     else
@@ -787,7 +816,7 @@ if [[ "$choice" == "d"* ]]; then
   fi
   if [[ -n "$debug_file" ]]; then
     echo "[INFO] Debugging test file: $debug_file"
-    PWDEBUG=1 PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --project="Desktop Chrome" "$debug_file"
+    PWDEBUG=1 PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test --project="Desktop Chrome" $PW_MODE_FLAG "$debug_file"
     exit 0
   else
     echo "[ERROR] No file provided."
@@ -835,7 +864,7 @@ if [[ "$choice" == "w"* ]]; then
 fi
 
 # If no valid option was selected, default to running all tests
-PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG | tee "$OUTPUT_FILE"
+  PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG $PW_MODE_FLAG | tee "$OUTPUT_FILE"
 python3 scripts/playwright_history_report.py
 sync
 

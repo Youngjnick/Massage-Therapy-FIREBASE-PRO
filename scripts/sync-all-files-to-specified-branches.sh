@@ -1,10 +1,15 @@
 #!/bin/zsh
 # sync-all-files-to-branches.sh
 
-# --- Setup and Configuration ---
+# --- ZSH Compatibility ---
+if [[ -z "$ZSH_VERSION" && -z "$BASH_VERSION" ]]; then
+  echo "[ERROR] This script must be run with zsh or bash." >&2
+  exit 1
+fi
 
-# Set script to exit on error
-set -euo pipefail
+# Use zsh-safe set options
+set -o errexit -o nounset -o pipefail
+setopt NO_UNSET
 
 # --- Globals ---
 # Color definitions for logging
@@ -57,40 +62,43 @@ show_help() {
 # Function to prompt user to select branches
 prompt_for_branches() {
     log_info "No target branches specified. Please select from the list below:"
-    
-    # Get local branches
-    local branches
-    branches=($(git for-each-ref --format='%(refname:short)' refs/heads/))
-    
-    if [ ${#branches[@]} -eq 0 ]; then
+    typeset -a branches
+    branches=()
+    while IFS= read -r branch; do
+        branches+=("$branch")
+    done < <(git for-each-ref --format='%(refname:short)' refs/heads/)
+    if [[ ${#branches[@]} -eq 0 ]]; then
         log_error "No local branches found to select from."
         exit 1
     fi
-
-    # Display branches in a numbered list
-    for i in "${!branches[@]}"; do
-        echo "  $((i+1))) ${branches[$i]}"
+    # Print all branches with manual index
+    local idx=1
+    for branch in "${branches[@]}"; do
+        echo "  $idx) $branch"
+        ((idx++))
     done
-
-    # Prompt for selection
-    read -p "Enter the numbers of the branches to sync (e.g., 1 3 4): " -r selection
-    
     local selected_branches=()
-    for num in $selection; do
-        # Check if input is a valid number
-        if [[ "$num" =~ ^[0-9]+$ ]] && [ "$num" -ge 1 ] && [ "$num" -le "${#branches[@]}" ]; then
-            selected_branches+=("${branches[$((num-1))]}")
+    while true; do
+        # Prompt for selection
+        printf "Enter the numbers of the branches to sync (e.g., 1 3 4): "
+        local selection_line
+        read selection_line
+        local -a selection
+        selection=(${(z)selection_line})
+        selected_branches=()
+        for num in $selection; do
+            if [[ "$num" == <-> ]] && (( num >= 1 && num <= ${#branches[@]} )); then
+                selected_branches+=("${branches[$((num-1))]}")
+            else
+                log_warning "Invalid selection: '$num'. Ignoring."
+            fi
+        done
+        if [[ ${#selected_branches[@]} -eq 0 ]]; then
+            log_warning "No valid branches selected. Please try again."
         else
-            log_warning "Invalid selection: '$num'. Ignoring."
+            break
         fi
     done
-
-    if [ ${#selected_branches[@]} -eq 0 ]; then
-        log_error "No valid branches were selected. Aborting."
-        exit 1
-    fi
-    
-    # Return the selected branches
     echo "${selected_branches[@]}"
 }
 
