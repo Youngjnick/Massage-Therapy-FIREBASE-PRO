@@ -56,6 +56,28 @@ main() {
       done
     fi
 
+    # --- Show all branches, highlight current branch in green and with asterisk ---
+    local current_branch
+    current_branch=$(git symbolic-ref --short HEAD)
+    echo
+    echo "Available branches (\033[32m*\033[0m = current):"
+    # Check if current branch has uncommitted changes
+    local branch_status_color
+    if [[ -n $(git status --porcelain) ]]; then
+      branch_status_color="\033[33m"  # yellow
+    else
+      branch_status_color="\033[32m"  # green
+    fi
+    git for-each-ref --format='%(refname:short)' refs/heads/ | while read branch; do
+      if [[ "$branch" == "$current_branch" ]]; then
+        # Color and asterisk
+        printf "  %b* %s\033[0m\n" "$branch_status_color" "$branch"
+      else
+        printf "    %s\n" "$branch"
+      fi
+    done
+    echo
+
 
     # --- Argument Parsing ---
     parse_sync_args "$@"
