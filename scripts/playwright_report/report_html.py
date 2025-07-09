@@ -68,23 +68,22 @@ def generate_html_report(db, output_path="scripts/reports/playwright-history.htm
     # Badges and summary table (sticky summary)
     total = len(tests)
     def get_status(test):
-        # Use last entry in history if available
-        last_status = test.get("last_status")
+        # Use last entry in history if available (dict-based)
         hist = test.get("history", [])
-        if hist:
-            last_hist = hist[-1]
-            if last_hist in ("\u2713", "passed", "✅"): last_status = "passed"
-            elif last_hist in ("\u2718", "failed", "❌"): last_status = "failed"
-            elif last_hist in ("flaky", "⚠️"): last_status = "flaky"
-            elif last_hist in ("skipped", "➖"): last_status = "skipped"
-        return last_status
+        last = hist[-1] if hist else {}
+        status = last.get("status") if isinstance(last, dict) else last
+        if status in ("\u2713", "passed", "✅"): return "passed"
+        if status in ("\u2718", "failed", "❌"): return "failed"
+        if status in ("flaky", "⚠️"): return "flaky"
+        if status in ("skipped", "➖"): return "skipped"
+        return test.get("last_status", "-")
     def is_flaky(test):
-        hist = test.get("history", [])
-        return any(s in ("flaky", "⚠️") for s in hist) or ("passed" in hist and "failed" in hist)
-    passing = sum(1 for t in tests if get_status(t) == "passed")
-    failing = sum(1 for t in tests if get_status(t) == "failed")
+        hist = [h for h in test.get("history", []) if isinstance(h, dict)]
+        return any(h.get("status") == "flaky" for h in hist) or (any(h.get("status") == "✓" for h in hist) and any(h.get("status") == "✗" for h in hist))
+    passing = sum(1 for t in tests if any(h.get("status") == "✓" for h in t.get("history", []) if isinstance(h, dict)))
+    failing = sum(1 for t in tests if any(h.get("status") == "✗" for h in t.get("history", []) if isinstance(h, dict)))
     flaky = sum(1 for t in tests if is_flaky(t))
-    skipped = sum(1 for t in tests if get_status(t) == "skipped")
+    skipped = sum(1 for t in tests if any(h.get("status") == "-" for h in t.get("history", []) if isinstance(h, dict)))
     # Badges
     html.append('<div>')
     html.append(f'<img class="badge" src="https://img.shields.io/badge/Pass_Rate-{passing/total*100 if total else 0:.1f}%25-brightgreen.svg" alt="Pass Rate">')
@@ -162,10 +161,17 @@ def generate_html_report(db, output_path="scripts/reports/playwright-history.htm
         loc = t.get("location", "?")
         title = t.get("title") or t.get("description") or loc
         rbwm = t.get("results_by_worker_mode", {})
-        single = rbwm.get("single", [])
-        multi = rbwm.get("multi", [])
-        single_str = f"{' '.join(single)}" if single else "-"
-        multi_str = f"{' '.join(multi)}" if multi else "-"
+        # For single/multi, show last status for each mode (dict-based)
+        def mode_str(mode):
+            mode_hist = rbwm.get(mode, [])
+            if mode_hist:
+                last = mode_hist[-1]
+                if isinstance(last, dict):
+                    return last.get("status", "-")
+                return last
+            return "-"
+        single_str = mode_str("single")
+        multi_str = mode_str("multi")
         is_flaky_row = is_flaky(t)
         row_class = "flaky" if is_flaky_row else ("fail" if status == "failed" else "pass")
         if t in multicore_only:
@@ -184,17 +190,22 @@ def generate_html_report(db, output_path="scripts/reports/playwright-history.htm
         # Artifacts
         artifacts = find_artifacts(t)
         artifact_links = " ".join([f'<a href="{a}" target="_blank">{os.path.basename(a)}</a>' for a in artifacts]) if artifacts else ""
-        # Error details (expand/collapse)
-        err = t.get("error", "")
-        err_btn = f'<button class="expand-btn" aria-expanded="false" aria-controls="err{idx}" onclick="toggleErr({idx}, this)">▶</button>' if err else ""
-        err_div = f'<div class="err-details" id="err{idx}" tabindex="0">{err}<button class="copy-btn" onclick="copyErr({idx}, event)">Copy</button></div>' if err else ""
-        # History details (expand/collapse)
+        # Error details (expand/collapse): last error in history
         hist = t.get("history", [])
-        hist_btn = f'<button class="expand-btn" aria-expanded="false" aria-controls="hist{idx}" onclick="toggleHist({idx}, this)">▶</button>' if hist else ""
-        hist_div = f'<div class="hist-details" id="hist{idx}" tabindex="0">{" ".join(hist)}</div>' if hist else ""
+        hist_dicts = [h for h in hist if isinstance(h, dict)]
+        last_err = hist_dicts[-1].get("error", "") if hist_dicts and hist_dicts[-1].get("error") else t.get("error", "")
+        err_btn = f'<button class="expand-btn" aria-expanded="false" aria-controls="err{idx}" onclick="toggleErr({idx}, this)">▶</button>' if last_err else ""
+        err_div = f'<div class="err-details" id="err{idx}" tabindex="0">{last_err}<button class="copy-btn" onclick="copyErr({idx}, event)">Copy</button></div>' if last_err else ""
+        # History details (expand/collapse): show last 10 runs with status and time
+        hist_btn = f'<button class="expand-btn" aria-expanded="false" aria-controls="hist{idx}" onclick="toggleHist({idx}, this)">▶</button>' if hist_dicts else ""
+        if hist_dicts:
+            hist_lines = [f"{h.get('time', '-')}: <b>{h.get('status', '-')}</b> {h.get('error', '')[:80] if h.get('error', '') else ''}" for h in hist_dicts[-10:]]
+            hist_div = f'<div class="hist-details" id="hist{idx}" tabindex="0">' + '<br>'.join(hist_lines) + '</div>'
+        else:
+            hist_div = ''
         # Duration and slowest highlighting
         avg_duration = t.get("avg_duration")
-        last_duration = t.get("last_duration")
+        last_duration = hist_dicts[-1].get("duration") if hist_dicts and hist_dicts[-1].get("duration") else t.get("last_duration")
         duration_str = f"{last_duration or '-'} / {avg_duration or '-'}"
         # Highlight slowest (top 3 by avg_duration)
         slow_marker = " 🚩" if avg_duration and avg_duration == max([tt.get('avg_duration', 0) for tt in tests if tt.get('avg_duration')]) else ""
@@ -207,7 +218,7 @@ def generate_html_report(db, output_path="scripts/reports/playwright-history.htm
         test_col += slow_marker
         # Source column: GitHub link
         github_link = f'<a href="{GITHUB_BASE}{file_path}" target="_blank">{file_path}</a>' if file_path else ""
-        html.append(f'<tr class="{row_class}"><td title="{title}">{test_col}</td><td>{status}</td><td>{single_str}</td><td>{multi_str}</td><td>{"flaky" if is_flaky_row else ""}</td><td>{github_link}</td><td class="artifacts">{artifact_links}</td><td style="min-width:90px;">{err_btn}{err_div}</td><td style="min-width:90px;">{hist_btn}{hist_div}</td><td>{duration_str}</td></tr>')
+        html.append(f'<tr class="{row_class}"><td title="{title}">{test_col}</td><td>{status}</td><td>{single_str}</td><td>{multi_str}</td><td{"flaky" if is_flaky_row else ""}</td><td>{github_link}</td><td class="artifacts">{artifact_links}</td><td style="min-width:90px;">{err_btn}{err_div}</td><td style="min-width:90px;">{hist_btn}{hist_div}</td><td>{duration_str}</td></tr>')
     html.append('</table>')
     # Total test entries and skipped warning
     html.append(f'<div style="font-size:0.95em; color:#888; margin-bottom:10px;">Total test entries in JSON: {len(all_entries)} | Rendered: {len(tests)}')

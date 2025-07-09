@@ -15,6 +15,37 @@ fi
 source "$(dirname "$0")/git-sync-utils.sh"
 
 main() {
+    # --- Optional: Auto-commit before sync if requested ---
+    AUTO_COMMIT=false
+    for arg in "$@"; do
+        if [[ "$arg" == "--auto-commit" ]]; then
+            AUTO_COMMIT=true
+        fi
+    done
+
+    if [ "$AUTO_COMMIT" = true ]; then
+        if [[ -n $(git status --porcelain) ]]; then
+            echo "You have unstaged or uncommitted changes in '${original_branch}'." >&2
+            echo -n "Auto-stage and commit all changes before sync? (y/N): "
+            read auto_commit_confirm
+            if [[ "$auto_commit_confirm" =~ ^[yY](es)?$ ]]; then
+                echo -n "Enter commit message [Auto-commit before sync]: "
+                read auto_commit_msg
+                if [[ -z "$auto_commit_msg" ]]; then
+                    auto_commit_msg="Auto-commit before sync"
+                fi
+                git add -A && git commit -m "$auto_commit_msg"
+            else
+                echo "Aborting sync. Please commit or stash your changes manually." >&2
+                exit 1
+            fi
+        fi
+    fi
+    # --- Ensure running in a real terminal for interactive prompts ---
+    if [[ ! -t 0 ]]; then
+        log_error "This script must be run from a terminal for interactive prompts."
+        exit 1
+    fi
     echo "Normalizing line endings for all shell scripts to Unix (LF)..."
     if command -v dos2unix >/dev/null 2>&1; then
       dos2unix scripts/*.sh
@@ -25,54 +56,7 @@ main() {
       done
     fi
 
-    # --- Interactive branch selection: numbered, sorted by commit date (newest first) ---
-    echo "\nAvailable local branches (newest first):"
-    local branch_list branch_names idx
-    branch_list=( $(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/) )
-    idx=1
-    for branch in "${branch_list[@]}"; do
-      echo "  $idx) $branch"
-      ((idx++))
-    done
-    echo ""
-    # Interactive prompt for branch selection if no args
-    if [[ $# -eq 0 ]]; then
-      local selection new_branch
-      while true; do
-        echo "Enter branch numbers separated by space (e.g. 1 3 5), or '+' to add a new branch, or 'd' when done: "
-        read selection
-        if [[ "$selection" == "d" ]]; then
-          break
-        elif [[ "$selection" == "+" ]]; then
-          echo -n "Enter new branch name: "
-          read new_branch
-          if [[ -n "$new_branch" ]]; then
-            git branch "$new_branch"
-            branch_list=( $(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/) )
-            echo "Branch '$new_branch' created."
-            idx=1
-            for branch in "${branch_list[@]}"; do
-              echo "  $idx) $branch"
-              ((idx++))
-            done
-          fi
-        else
-          # Parse numbers and build TARGET_BRANCHES
-          TARGET_BRANCHES=()
-          for num in $selection; do
-            if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#branch_list[@]} )); then
-              TARGET_BRANCHES+=("${branch_list[$((num-1))]}")
-            fi
-          done
-          if [[ ${#TARGET_BRANCHES[@]} -gt 0 ]]; then
-            break
-          else
-            echo "No valid branch numbers entered."
-          fi
-        fi
-      done
-      set -- "${TARGET_BRANCHES[@]}"
-    fi
+
     # --- Argument Parsing ---
     parse_sync_args "$@"
     TARGET_BRANCHES=("${PARSED_TARGET_BRANCHES[@]}")
@@ -99,9 +83,8 @@ main() {
     # If no target branches are provided after parsing, prompt the user
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
         log_info "No target branches specified. Prompting for branch selection..."
-        echo "[DEBUG] About to call prompt_for_branches" >&2
-        read -A TARGET_BRANCHES <<<"$(prompt_for_branches)"
-        echo "[DEBUG] Returned from prompt_for_branches with: ${TARGET_BRANCHES[*]}" >&2
+        # Use zsh array capture for robust multi-branch selection
+        TARGET_BRANCHES=(${(z)$(prompt_for_branches)})
         log_info "User selected branches: ${TARGET_BRANCHES[*]}"
         if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
             log_error "No branches selected. Exiting."
@@ -128,6 +111,13 @@ main() {
     log_info "Will sync from '${original_branch}' to the following branches: ${TARGET_BRANCHES[*]}"
     log_info "Remote: ${REMOTE}, Fast Mode: ${FAST_MODE}, Stash: ${STASH_CHANGES}, Dry Run: ${DRY_RUN}"
 
+    # Confirm with user the exact branches to sync to
+    echo
+    echo "You are about to sync from '${original_branch}' to the following branches:" >&2
+    for b in "${TARGET_BRANCHES[@]}"; do
+        echo "  - $b" >&2
+    done
+    echo
     if ! confirm_sync "$DRY_RUN"; then
         pop_stash_if_needed "$STASH_CHANGES"
         exit 0
@@ -173,6 +163,21 @@ main() {
 
     log_info "All branches synced. Performing final cleanup."
     pop_stash_if_needed "$STASH_CHANGES"
+    # Prompt for branch deletes at the very end
+    prompt_for_final_branch_deletes "$REMOTE"
+
+    # --- Optional: Post-sync diff prompt ---
+    echo -n "Would you like to see a summary diff between the source branch and each target branch? (y/N): "
+    read show_diff
+    if [[ "$show_diff" =~ ^[yY](es)?$ ]]; then
+        for b in "${TARGET_BRANCHES[@]}"; do
+            echo
+            echo "==== git diff --stat ${original_branch}..${b} ===="
+            git diff --stat "${original_branch}..${b}"
+        done
+        echo
+        echo "To see full diffs, run: git diff <source>..<target>"
+    fi
     if [ "$any_failed" -eq 1 ]; then
         log_error "One or more sync jobs failed. Please review the logs."
         exit 1
