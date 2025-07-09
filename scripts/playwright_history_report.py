@@ -6,43 +6,52 @@ from pathlib import Path
 import json
 import datetime
 
-OUTPUT_FILE = Path("scripts/reports/playwright-output.txt")
-
 
 def generate_summary_table(db_obj):
+    tests = []
+    if "tests" in db_obj:
+        tests = db_obj["tests"]
+    else:
+        for test_id, test_data in db_obj.items():
+            if test_id != "migrated":
+                tests.append(test_data)
+    
     summary = {
-        "Total Tests": len(db_obj.get("tests", [])),
-        "Passed": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "passed"),
-        "Failed": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "failed"),
-        "Flaky": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "flaky"),
-        "Skipped": sum(1 for t in db_obj.get("tests", []) if t.get("status") == "skipped"),
+        "Total Tests": len(tests),
+        "Passed": sum(1 for t in tests if t.get("history", []) and t["history"][-1] in ("\u2713", "✓")),
+        "Failed": sum(1 for t in tests if t.get("history", []) and t["history"][-1] in ("\u2718", "✘")),
+        "Flaky": sum(1 for t in tests if t.get("history", []) and any(s in ("flaky", "⚠️") for s in t["history"])),
+        "Skipped": sum(1 for t in tests if t.get("history", []) and t["history"][-1] in ("skipped", "➖")),
     }
     return summary
 
 
 def write_markdown_report(db_obj, run_stats, include_sections):
-    # Recompute summary from latest test history (use last status in history if available)
-    tests = db_obj.get("tests", [])
-    summary = {
-        "Total Tests": len(tests),
-        "Passed": 0,
-        "Failed": 0,
-        "Flaky": 0,
-        "Skipped": 0,
-    }
-    for t in tests:
-        last_status = t.get("status")
-        # If history exists, use last entry
-        if t.get("history"):
-            last_hist = t["history"][-1]
-            if last_hist in ("\u2713", "passed", "✅"): last_status = "passed"
-            elif last_hist in ("\u2718", "failed", "❌"): last_status = "failed"
-            elif last_hist in ("flaky", "⚠️"): last_status = "flaky"
-            elif last_hist in ("skipped", "➖"): last_status = "skipped"
-        if last_status == "passed": summary["Passed"] += 1
-        elif last_status == "failed": summary["Failed"] += 1
-        elif last_status == "flaky": summary["Flaky"] += 1
-        elif last_status == "skipped": summary["Skipped"] += 1
+    # Convert old format to new format if needed
+    if "tests" not in db_obj:
+        tests = []
+        for test_id, test_data in db_obj.items():
+            if test_id == "migrated":
+                continue
+            test = {
+                "title": test_data.get("title", ""),
+                "file": test_data.get("file", ""),
+                "name": test_id,
+                "line": test_id.split(":")[-2] if ":" in test_id else "",
+                "history": test_data.get("history", []),
+                "status": test_data.get("history", [])[-1] if test_data.get("history") else "",
+                "last_time": test_data.get("last_time", datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+                "duration": test_data.get("duration", "-"),
+                "duration_mean": test_data.get("duration_mean", "-"),
+                "skipped": test_data.get("skipped", False),
+                "deleted": test_data.get("deleted", False),
+                "path": test_id
+            }
+            tests.append(test)
+        db_obj = {"tests": tests}
+
+    summary = generate_summary_table(db_obj)
+    # Calculate pass/fail/flaky/skipped for badges
     total = summary["Total Tests"]
     passed = summary["Passed"]
     failed = summary["Failed"]
@@ -51,73 +60,38 @@ def write_markdown_report(db_obj, run_stats, include_sections):
     pass_rate = (passed / total) * 100 if total > 0 else 0
     fail_rate = (failed / total) * 100 if total > 0 else 0
     coverage = run_stats.get("coverage", {})
+    # Markdown badges
     badge_url = lambda label, value, color: f"https://img.shields.io/badge/{label}-{value}-{color}.svg"
-    flaky_badge = badge_url('Flaky', flaky, 'yellow')
-    regression_badge = badge_url('Regression', failed, 'orange')
-    prev_coverage = run_stats.get("prev_coverage", {})
-    coverage_delta = None
-    if coverage and prev_coverage:
-        try:
-            coverage_delta = coverage.get('lines', 0) - prev_coverage.get('lines', 0)
-        except Exception:
-            coverage_delta = None
-    trends = run_stats.get("historical_trends", [])
+    
     with open(report_txt.REPORT_TXT_FILE, "w") as f:
-        def write_sticky_summary(f):
-            f.write("# Playwright Test Report\n\n")
-            # Badges
-            f.write(f"![Pass Rate]({badge_url('Pass_Rate', f'{pass_rate:.1f}%', 'brightgreen')}) ")
-            f.write(f"![Fail Rate]({badge_url('Fail_Rate', f'{fail_rate:.1f}%', 'red')}) ")
-            f.write(f"![Flaky]({flaky_badge}) ")
-            f.write(f"![Regression]({regression_badge}) ")
-            if coverage:
-                f.write(f"![Coverage]({badge_url('Coverage', f'{coverage.get('lines', 0)}%', 'blue')}) ")
-                if coverage_delta is not None:
-                    sign = '+' if coverage_delta >= 0 else ''
-                    f.write(f"![Coverage Delta](https://img.shields.io/badge/Coverage{sign}{coverage_delta}-{'brightgreen' if coverage_delta >= 0 else 'red'}.svg) ")
-            f.write("\n\n")
-            # Summary Table
-            f.write("| Total | Passed | Failed | Flaky | Skipped |\n")
-            f.write("|-------|--------|--------|-------|---------|\n")
-            f.write(f"| {total} | {passed} | {failed} | {flaky} | {skipped} |\n\n")
-
-        write_sticky_summary(f)
-        # Table of Contents
-        f.write("## Table of Contents\n\n")
-        f.write("- [Summary](#summary)\n")
-        f.write("- [Tests Needing Attention](#tests-needing-attention)\n")
-        f.write("- [Flaky Tests](#flaky-tests)\n")
-        f.write("- [Test Results](#test-results)\n")
-        f.write("- [Coverage](#coverage)\n")
-        f.write("- [Trend Graph](#trend-graph)\n")
-        f.write("- [Skipped Tests](#skipped-tests)\n")
-        f.write("- [Deleted Tests](#deleted-tests)\n\n")
-        # Summary heatmap/sparkline for pass/fail over time
-        if trends:
-            heatmap = ''.join(['🟩' if t['passed'] else '🟥' for t in trends])
-            f.write(f"**Summary Heatmap:** {heatmap}\n\n")
+        f.write("# Playwright Test Report\n\n")
+        # Badges
+        f.write(f"![Pass Rate]({badge_url('Pass_Rate', f'{pass_rate:.1f}%', 'brightgreen')}) ")
+        f.write(f"![Fail Rate]({badge_url('Fail_Rate', f'{fail_rate:.1f}%', 'red')}) ")
+        if coverage:
+            f.write(f"![Coverage]({badge_url('Coverage', f'{coverage.get('lines', 0)}%', 'blue')}) ")
+        f.write("\n\n")
         if "summary" in include_sections:
             f.write("## Summary\n\n")
             for key, value in summary.items():
                 f.write(f"- **{key}:** {value}\n")
-            f.write('\n[Back to Top](#playwright-test-report)\n')
+        
         # Highlight problematic tests
-        if True:
-            f.write("\n## Tests Needing Attention\n\n")
-            for test in db_obj.get("tests", []):
-                if test.get("status") in ("failed", "flaky") or (test.get("history", []) and test.get("history", [])[-1] in ("\u2718", "failed", "❌", "flaky", "⚠️")):
-                    name = test.get("title") or test.get("name")
-                    f.write(f"- **{name}** ({test.get('file')}) - Last: {test.get('status')} at {test.get('last_time', '')}\n")
+        f.write("\n## Tests Needing Attention\n\n")
+        for test in db_obj.get("tests", []):
+            if test.get("status") in ("failed", "flaky") or (test.get("history", []) and test.get("history", [])[-1] in ("\u2718", "failed", "❌", "flaky", "⚠️")):
+                name = test.get("path") or (test.get("title") or test.get("name"))
+                f.write(f"- **{name}** ({test.get('file')}) - Last: ✘ at {test.get('last_time', '')}\n")
+        
         # Flaky tests section
-        if True:
-            f.write("\n## Flaky Tests\n\n")
-            for test in db_obj.get("tests", []):
-                if test.get("status") == "flaky" or any(s in ("flaky", "⚠️") for s in test.get("history", [])):
-                    name = test.get("title") or test.get("name")
-                    f.write(f"- **{name}** ({test.get('file')}) - Last: {test.get('status')} at {test.get('last_time', '')}\n")
+        f.write("\n## Flaky Tests\n\n")
+        for test in db_obj.get("tests", []):
+            if test.get("status") == "flaky" or any(s in ("flaky", "⚠️") for s in test.get("history", [])):
+                name = test.get("title") or test.get("name")
+                f.write(f"- **{name}** ({test.get('file')}) - Last: {test.get('status')} at {test.get('last_time', '')}\n")
+        
         if "test-results" in include_sections:
             f.write("\n## Test Results\n\n")
-            f.write("> **Tip:** To filter by status (e.g., failed/flaky), use your editor's search or run the report script with a filter option.\n\n")
             # Group by file
             tests_by_file = {}
             for test in db_obj.get("tests", []):
@@ -125,154 +99,193 @@ def write_markdown_report(db_obj, run_stats, include_sections):
                 if file not in tests_by_file:
                     tests_by_file[file] = []
                 tests_by_file[file].append(test)
-            # GitHub repo URL (customize as needed)
+            
             for file, tests in tests_by_file.items():
                 f.write(f"<details><summary><strong>{file}</strong></summary>\n\n")
+                # Per-file summary table
                 f.write("| Test | Status | Pass | Fail | Flaky | Skipped | Last Run | Trend | Duration |\n")
                 f.write("|------|--------|------|------|-------|---------|----------|-------|----------|\n")
-                # Highlight slowest tests
-                slow_tests = sorted([t for t in tests if t.get('avg_duration')], key=lambda t: t.get('avg_duration', 0), reverse=True)[:3]
                 for test in tests:
-                    passes = sum(1 for s in test.get("history", []) if s in ("\u2713", "passed", "✅"))
-                    fails = sum(1 for s in test.get("history", []) if s in ("\u2718", "failed", "❌"))
+                    # Get pass/fail counts
+                    passes = sum(1 for s in test.get("history", []) if s in ("\u2713", "✓", "passed", "✅"))
+                    fails = sum(1 for s in test.get("history", []) if s in ("\u2718", "✘", "failed", "❌"))
                     flakies = sum(1 for s in test.get("history", []) if s in ("flaky", "⚠️"))
                     skips = sum(1 for s in test.get("history", []) if s in ("skipped", "➖"))
-                    last_status = test.get("status")
+                    
+                    # Get test status and time
+                    last_status = test.get("status", "")
+                    if test.get("history"):
+                        last_status = test["history"][-1]
                     last_time = test.get("last_time", "")
-                    name = test.get("title") or test.get("name")
-                    # Clickable local VSCode link (preferred)
-                    location = test.get("name")
-                    file_link = None
-                    rerun_cmd = None
-                    if ":" in location:
-                        parts = location.split(":")
-                        if len(parts) >= 3:
-                            file_part = parts[0]
-                            line_part = parts[1]
-                            file_link = f"vscode://file/{file_part}:{line_part}"
-                            rerun_cmd = f"npx playwright test {file_part} --line {line_part}"
-                    if file_link:
-                        name_md = f"[{name}]({file_link})"
-                    else:
-                        name_md = name
-                    # Add rerun command with copy instructions
-                    if rerun_cmd:
-                        name_md += f"<br><sub><code>{rerun_cmd}</code> (copy & run in terminal)</sub>"
-                    # Emoji for status (with alt text)
-                    if last_status in ("\u2713", "passed", "✅"): emoji = "✅"  # :white_check_mark:
-                    elif last_status in ("\u2718", "failed", "❌"): emoji = "❌"  # :x:
-                    elif last_status in ("flaky", "⚠️"): emoji = "⚠️"  # :warning:
-                    elif last_status in ("skipped", "➖"): emoji = "➖"  # :minus:
+                    
+                    # Format test name and link
+                    name = test.get("path") or (test.get("title") or test.get("name"))
+                    file_link = f"{name}"
+                    
+                    # Emoji for status
+                    if last_status in ("\u2713", "✓", "passed", "✅"): emoji = "✅"
+                    elif last_status in ("\u2718", "✘", "failed", "❌"): emoji = "❌"
+                    elif last_status in ("flaky", "⚠️"): emoji = "⚠️"
+                    elif last_status in ("skipped", "➖"): emoji = "➖"
                     else: emoji = "⚠️"
-                    trend = "".join(["🟩" if s in ("\u2713", "passed", "✅") else "🟥" if s in ("\u2718", "failed", "❌") else "🟨" if s in ("flaky", "⚠️") else "➖" for s in test.get("history", [])[-5:]])
-                    avg_duration = test.get("avg_duration")
-                    last_duration = test.get("last_duration")
-                    duration_str = f"{last_duration or '-'} / {avg_duration or '-'}"
-                    details_id = name_md.replace(' ', '-').replace('/', '-').replace(':', '-')
-                    # Highlight slowest tests
-                    slow_marker = " 🚩" if test in slow_tests else ""
-                    f.write(f"| <details><summary>{name_md}{slow_marker}</summary>\n\nFull history: {test.get('history', [])}\n\n</details> | {emoji} | {passes} | {fails} | {flakies} | {skips} | {last_time} | {trend} | {duration_str} |\n")
-                f.write("\n</details>\n\n[Back to Top](#playwright-test-report)\n")
-        if "coverage" in include_sections:
-            f.write("\n## Coverage\n\n")
-            coverage = run_stats.get("coverage", {})
-            for key, value in coverage.items():
-                f.write(f"- **{key}:** {value}%\n")
-        if "trend-graph" in include_sections:
-            f.write("\n## Trend Graph\n\n")
-            # Use last 20 test results for a more informative trend
-            last_statuses = []
-            for t in db_obj.get("tests", []):
-                if t.get("history"):
-                    last_statuses.extend(t["history"][-5:])
-            trend = "📈 Trend: " + "".join([
-                "🟩" if s in ("\u2713", "passed", "✅") else "🟥" if s in ("\u2718", "failed", "❌") else "🟨" if s in ("flaky", "⚠️") else "➖" for s in last_statuses[-20:]
-            ])
-            f.write(f"{trend}\n")
-            # Compute pass/fail rates from last statuses
-            pass_count = sum(1 for s in last_statuses if s in ("\u2713", "passed", "✅"))
-            fail_count = sum(1 for s in last_statuses if s in ("\u2718", "failed", "❌"))
-            flaky_count = sum(1 for s in last_statuses if s in ("flaky", "⚠️"))
-            skip_count = sum(1 for s in last_statuses if s in ("skipped", "➖"))
-            total_count = len(last_statuses)
-            pass_rate = (pass_count / total_count) * 100 if total_count > 0 else 0
-            fail_rate = (fail_count / total_count) * 100 if total_count > 0 else 0
-            f.write(f"- **Pass Rate:** {pass_rate:.2f}%\n")
-            f.write(f"- **Fail Rate:** {fail_rate:.2f}%\n")
-            f.write(f"- **Flaky:** {flaky_count}\n")
-            f.write(f"- **Skipped:** {skip_count}\n")
-            # Historical trends section
-            if trends:
-                f.write("\n### Historical Trends\n\n")
-                f.write("| Run | Pass | Fail | Flaky | Skipped |\n")
-                f.write("|-----|------|------|-------|---------|\n")
-                for i, t in enumerate(trends):
-                    f.write(f"| {i+1} | {t.get('passed',0)} | {t.get('failed',0)} | {t.get('flaky',0)} | {t.get('skipped',0)} |\n")
-        if "skipped-tests" in include_sections:
-            f.write("\n## Skipped Tests\n\n")
-            skipped_tests = [t for t in db_obj.get("tests", []) if t.get("status") == "skipped"]
-            for test in skipped_tests:
-                f.write(f"- **{test.get('name')}** (last: {test.get('last_time', '')})\n")
-        if "deleted-tests" in include_sections:
-            f.write("\n## Deleted Tests\n\n")
-            deleted_tests = [t for t in db_obj.get("tests", []) if t.get("status") == "deleted"]
-            for test in deleted_tests:
-                f.write(f"- **{test.get('name')}** (last: {test.get('last_time', '')})\n")
-        # At the end, repeat sticky summary
-        f.write("\n---\n")
-        write_sticky_summary(f)
-        f.write("\n")
+                    
+                    # Get duration info
+                    duration = test.get("duration", "-")
+                    duration_mean = test.get("duration_mean", "-")
+                    if duration != "-" and duration_mean != "-":
+                        duration_str = f"{duration} / {duration_mean}"
+                    else:
+                        duration_str = "- / -"
+                    
+                    # Trend sparkline using full history
+                    if test.get("history"):
+                        trend = ""
+                        for h in test["history"][-10:]:  # Show last 10 results
+                            if h in ("\u2713", "✓", "passed", "✅"): trend += "🟩"
+                            elif h in ("\u2718", "✘", "failed", "❌"): trend += "🟥"
+                            elif h in ("flaky", "⚠️"): trend += "🟨"
+                            elif h in ("skipped", "➖"): trend += "⬜"
+                            else: trend += "⬜"
+                        while len(trend) < 10:  # Pad to 10 squares
+                            trend = "⬜" + trend
+                    else:
+                        trend = "⬜" * 10
+                        
+                    # Add test details with history
+                    f.write(f"| {file_link} | {emoji} | {passes} | {fails} | {flakies} | {skips} | {last_time} | {trend} | {duration_str} |\n")
+                
+                f.write("\n</details>\n\n")
 
+
+
+        # Add coverage information if available
+        if "coverage" in include_sections and coverage:
+            f.write("## Coverage\n\n")
+            f.write(f"- **statements:** {coverage.get('statements', 0)}%\n")
+            f.write(f"- **branches:** {coverage.get('branches', 0)}%\n")
+            f.write(f"- **lines:** {coverage.get('lines', 0)}%\n")
+            f.write(f"- **functions:** {coverage.get('functions', 0)}%\n\n")
+
+        # Add skipped tests section
+        f.write("## Skipped Tests\n\n")
+        skipped_tests = [t for t in db_obj.get("tests", []) if t.get("skipped")]
+        if skipped_tests:
+            for test in skipped_tests:
+                name = test.get("path") or (test.get("title") or test.get("name"))
+                f.write(f"- **{name}** ({test.get('file')}) - Last run: {test.get('last_time', '')}\n")
+        else:
+            f.write("No tests have been skipped.\n")
+        
+        # Add deleted tests section
+        f.write("\n## Deleted Tests\n\n")
+        deleted_tests = [t for t in db_obj.get("tests", []) if t.get("deleted")]
+        if deleted_tests:
+            for test in deleted_tests:
+                name = test.get("path") or (test.get("title") or test.get("name"))
+                f.write(f"- **{name}** ({test.get('file')}) - Last run: {test.get('last_time', '')}\n")
+        else:
+            f.write("No tests have been deleted.\n")
+
+        # Trend graph with full history table
+        f.write("\n## Trend Graph\n\n")
+        if test_history := [t for t in db_obj.get("tests", []) if t.get("history")]:
+            # Create a trend of the last 20 results only
+            trend_data = []
+            for t in test_history:
+                for h in t.get("history", [])[-20:]:  # Get last 20 results
+                    trend_data.append(h)
+            trend_data = trend_data[-20:]  # Keep only last 20 overall results
+            
+            # Calculate rates
+            total_results = len(trend_data)
+            passes = sum(1 for h in trend_data if h in ("\u2713", "✓", "passed", "✅"))
+            fails = sum(1 for h in trend_data if h in ("\u2718", "✘", "failed", "❌"))
+            flakies = sum(1 for h in trend_data if h in ("flaky", "⚠️"))
+            skips = sum(1 for h in trend_data if h in ("skipped", "➖"))
+            
+            pass_rate = (passes / total_results * 100) if total_results > 0 else 0
+            fail_rate = (fails / total_results * 100) if total_results > 0 else 0
+            
+            # Create trend visualization - last 20 results
+            trend = ""
+            for h in trend_data:
+                if h in ("\u2713", "✓", "passed", "✅"): trend += "🟩"
+                elif h in ("\u2718", "✘", "failed", "❌"): trend += "🟥"
+                elif h in ("flaky", "⚠️"): trend += "🟨"
+                elif h in ("skipped", "➖"): trend += "⬜"
+                else: trend += "⬜"
+            
+            f.write(f"📈 Last 20 Results: {trend}\n\n")
+            f.write("### Test Result History\n\n")
+            f.write("| Group | Pass Rate | Fail Rate | Flaky | Skipped | Trend |\n")
+            f.write("|-------|------------|-----------|--------|----------|--------|\n")
+            
+            # Group results by every 20 runs
+            chunks = [trend_data[i:i+20] for i in range(0, len(trend_data), 20)]
+            chunks.reverse()  # Show newest first
+            
+            for i, chunk in enumerate(chunks):
+                chunk_passes = sum(1 for h in chunk if h in ("\u2713", "✓", "passed", "✅"))
+                chunk_fails = sum(1 for h in chunk if h in ("\u2718", "✘", "failed", "❌"))
+                chunk_flakies = sum(1 for h in chunk if h in ("flaky", "⚠️"))
+                chunk_skips = sum(1 for h in chunk if h in ("skipped", "➖"))
+                chunk_total = len(chunk)
+                chunk_pass_rate = (chunk_passes / chunk_total * 100) if chunk_total > 0 else 0
+                chunk_fail_rate = (chunk_fails / chunk_total * 100) if chunk_total > 0 else 0
+                
+                # Create trend visualization for each group
+                chunk_trend = ""
+                for h in chunk:
+                    if h in ("\u2713", "✓", "passed", "✅"): chunk_trend += "🟩"
+                    elif h in ("\u2718", "✘", "failed", "❌"): chunk_trend += "🟥"
+                    elif h in ("flaky", "⚠️"): chunk_trend += "🟨"
+                    elif h in ("skipped", "➖"): chunk_trend += "⬜"
+                    else: chunk_trend += "⬜"
+                
+                f.write(f"| {len(chunks)-i} | {chunk_pass_rate:.2f}% | {chunk_fail_rate:.2f}% | {chunk_flakies} | {chunk_skips} | {chunk_trend} |\n")
+        
+        # Skipped tests section
+        f.write("## Skipped Tests\n\n")
+        has_skipped = False
+        for test in db_obj.get("tests", []):
+            if test.get("status") == "skipped" or (test.get("history", []) and test["history"][-1] in ("skipped", "➖")):
+                has_skipped = True
+                name = test.get("title") or test.get("name")
+                f.write(f"- **{name}** ({test.get('file')}) - Last: {test.get('status')} at {test.get('last_time', '')}\n")
+        if not has_skipped:
+            f.write("\n")
+
+        # Deleted tests section
+        f.write("## Deleted Tests\n\n")
+        has_deleted = False
+        for test in db_obj.get("deleted_tests", []):
+            has_deleted = True
+            name = test.get("title") or test.get("name")
+            f.write(f"- **{name}** ({test.get('file')}) - Deleted at {test.get('deleted_time', '')}\n")
+        if not has_deleted:
+            f.write("\n")
+        
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--worker-mode', choices=['single', 'multi'], default=None, help='Worker mode: single or multi')
-    parser.add_argument('--include-sections', nargs='+', default=['summary', 'test-results', 'coverage', 'trend-graph', 'skipped-tests', 'deleted-tests'], help='Sections to include in the report')
+    parser.add_argument("--db-file", type=Path, default=db.JSON_FILE)
+    parser.add_argument("--sections", nargs="+", default=["summary", "test-results"])
     args = parser.parse_args()
 
-    # Load from history.json instead of parsing output.txt
-    history_json_path = Path("scripts/reports/playwright-history.json")
-    if not history_json_path.exists():
-        print(f"[ERROR] {history_json_path} not found. Cannot generate report.")
-        sys.exit(1)
-    with open(history_json_path) as f:
-        history_data = json.load(f)
+    # Load the database
+    with open(args.db_file) as f:
+        db_obj = json.load(f)
+    
+    # Load run stats if available
+    run_stats = {}
+    run_stats_file = args.db_file.parent / "run_stats.json"
+    if run_stats_file.exists():
+        with open(run_stats_file) as f:
+            run_stats = json.load(f)
 
-    # Flatten test results from history.json
-    tests = []
-    for key, value in history_data.items():
-        if key == "migrated":
-            continue
-        test_entry = {
-            "name": value.get("location", key),
-            "status": value.get("last_status"),
-            "file": value.get("file"),
-            "history": value.get("history", []),
-            "last_time": value.get("last_time"),
-        }
-        tests.append(test_entry)
-
-    db_obj = {"tests": tests}
-    # Optionally, you can load coverage from history or keep as static
-    run_stats = {"coverage": {"statements": 85, "branches": 80, "lines": 90, "functions": 88}}
-    write_markdown_report(db_obj, run_stats, include_sections=args.include_sections)
-    print(f"[INFO] Markdown summary written to {report_txt.REPORT_TXT_FILE}")
-    # Pass the full history_data dict to the HTML report generator
-    report_html.generate_html_report(history_data)
-    print(f"[INFO] HTML summary written to scripts/reports/playwright-history.html")
+    # Generate markdown report
+    write_markdown_report(db_obj, run_stats, args.sections)
 
 
 if __name__ == "__main__":
     main()
-    # Open the HTML report automatically (macOS only)
-    html_report_path = Path("scripts/reports/playwright-history.html")
-    import platform
-    import subprocess
-    if html_report_path.exists():
-        system = platform.system()
-        if system == "Darwin":
-            subprocess.run(["open", str(html_report_path)])
-        elif system == "Windows":
-            subprocess.run(["start", str(html_report_path)], shell=True)
-        elif system == "Linux":
-            subprocess.run(["xdg-open", str(html_report_path)])

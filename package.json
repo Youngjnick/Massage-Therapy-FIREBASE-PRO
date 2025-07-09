@@ -17,7 +17,11 @@
     "test:e2e:playwright": "FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 npx playwright test",
     "preview": "vite preview",
     "postinstall": "npx playwright install",
-    "firestore:export": "firebase firestore:export ./firebase_exports"
+    "firestore:export": "firebase firestore:export ./firebase_exports",
+    "test:e2e:optimized": "node scripts/warm-test-cache.js && node scripts/optimize-test-order.js && FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f PW_PARALLEL=true ./scripts/adv_fixing_run_playwright_and_capture_output.sh",
+    "test:e2e:analyze": "node scripts/optimize-test-order.js",
+    "test:e2e:warm": "node scripts/warm-test-cache.js",
+    "test:e2e:sharded": "node scripts/optimize-test-order.js && concurrently -n 'shard-1,shard-2,shard-3,shard-4' 'SHARD_NUMBER=1 SHARD_COUNT=4 npm run test:e2e' 'SHARD_NUMBER=2 SHARD_COUNT=4 npm run test:e2e' 'SHARD_NUMBER=3 SHARD_COUNT=4 npm run test:e2e' 'SHARD_NUMBER=4 SHARD_COUNT=4 npm run test:e2e'"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",

@@ -22,8 +22,8 @@ const globalIgnores = [
   '*.log',
   'tmp-worktree-*',
   'tmp-worktree-*/**',
-  '.sync-tmp-*',
-  '.sync-tmp-*/**',
+  'sync_tmp_backups',
+  'sync_tmp_backups/**',
   // Add backup/temp ignores for all subfolders and files
   'sync_tmp_backups/',
   'sync_tmp_backups/**',
