@@ -22,6 +22,11 @@ const globalIgnores = [
   '*.log',
   'tmp-worktree-*',
   'tmp-worktree-*/**',
+  'sync_tmp_backups',
+  'sync_tmp_backups/**',
+  // Add backup/temp ignores for all subfolders and files
+  'sync_tmp_backups/',
+  'sync_tmp_backups/**',
 ];
 import js from '@eslint/js';
 import parser from '@typescript-eslint/parser';

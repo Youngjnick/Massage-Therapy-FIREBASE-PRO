@@ -3,6 +3,7 @@
 // Ensures stats persist and UI is correct after a full app reload
 
 import { test, expect, Page } from '@playwright/test';
+import './helpers/playwright-coverage';
 import { resetUserStats } from './helpers/resetUserStats';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
@@ -67,7 +68,7 @@ test.describe('Stats Persistence After Reload', () => {
       await page.waitForTimeout(500);
     }
     console.log('[E2E DEBUG] initialQuizzesTaken:', initialQuizzesTaken);
-    await page.screenshot({ path: 'quizzes-taken-initial.png', fullPage: true });
+    await page.screenshot({ path: 'test-results/screenshots/quizzes-taken-initial.png', fullPage: true });
     // Take a quiz
     await page.goto('/quiz');
     await page.waitForSelector('[data-testid="quiz-start-form"]', { timeout: 15000 });
@@ -95,7 +96,7 @@ test.describe('Stats Persistence After Reload', () => {
       await page.waitForTimeout(500);
     }
     console.log('[E2E DEBUG] updatedQuizzesTaken:', updatedQuizzesTaken);
-    await page.screenshot({ path: 'quizzes-taken-updated.png', fullPage: true });
+    await page.screenshot({ path: 'test-results/screenshots/quizzes-taken-updated.png', fullPage: true });
     // Now reload the app and check persistence
     await page.reload();
     await page.goto('/analytics');
@@ -106,7 +107,7 @@ test.describe('Stats Persistence After Reload', () => {
       await page.waitForTimeout(500);
     }
     console.log('[E2E DEBUG] quizzesTakenAfterReload:', quizzesTakenAfterReload, 'expected:', updatedQuizzesTaken);
-    await page.screenshot({ path: 'quizzes-taken-after-reload.png', fullPage: true });
+    await page.screenshot({ path: 'test-results/screenshots/quizzes-taken-after-reload.png', fullPage: true });
     expect(quizzesTakenAfterReload).toBe(updatedQuizzesTaken);
     // Optionally, check for white page or error UI
     const bodyHtml = await page.content();

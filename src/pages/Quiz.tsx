@@ -15,6 +15,8 @@ import QuizResultsScreen from '../components/Quiz/QuizResultsScreen';
 import Spinner from '../components/common/Spinner';
 import { useQuizData } from '../hooks/useQuizData';
 import { useLocation } from 'react-router-dom';
+import { getTopicStats } from '../utils/quizStats';
+import { updateQuizStatsOnFinish } from '../services/quizStatsService';
 
 // Get initial toggle state from localStorage if available
 let initialToggleState = undefined;
@@ -147,7 +149,11 @@ const Quiz: React.FC = () => {
     setStarted(true);
     setLoading(true);
     setCurrent(0);
-    setUserAnswers(Array(maxQuizLength).fill(undefined));
+    // Use desiredQuizLength if valid, otherwise fallback to maxQuizLength
+    const quizLen = typeof desiredQuizLength === 'number' && desiredQuizLength > 0
+      ? Math.min(desiredQuizLength, quizQuestions.length)
+      : quizQuestions.length;
+    setUserAnswers(Array(quizLen).fill(undefined));
     setShowResults(false);
     let qs = [...quizQuestions];
     if (toggleState.randomizeQuestions) {
@@ -156,7 +162,7 @@ const Quiz: React.FC = () => {
         [qs[i], qs[j]] = [qs[j], qs[i]];
       }
     }
-    qs = qs.slice(0, maxQuizLength);
+    qs = qs.slice(0, quizLen);
     setShuffledQuestions(qs);
     const so: { [key: number]: string[] } = {};
     qs.forEach((q, i) => {
@@ -215,33 +221,52 @@ const Quiz: React.FC = () => {
     }
   }, [location.state, loading, questions]);
 
+  // Call updateQuizStatsOnFinish when quiz is finished and results are shown
+  useEffect(() => {
+    if (showResults && started) {
+      // Only call once per quiz finish
+      updateQuizStatsOnFinish({
+        userAnswers,
+        shuffledQuestions,
+        shuffledOptions,
+        started,
+        quizQuestions
+      });
+    }
+  }, [showResults]);
+
   // Use quizQuestions.length as the max quiz length
   const maxQuizLength = quizQuestions.length;
 
   // Render quiz UI components based on the current state
   if (loading) return <Spinner />;
   if (showResults) {
+    // Compute topic stats for the finished quiz session
+    const topicStats = getTopicStats(activeQuestions, userAnswers, shuffledOptions);
     return (
-      <QuizResultsScreen
-        topicStats={{}}
-        onStartNewQuiz={() => {
-          setShowResults(false);
-          setStarted(false);
-          setCurrent(0);
-          setUserAnswers(Array(maxQuizLength).fill(undefined));
-        }}
-        isAllIncorrect={false}
-        q={q}
-        userAnswers={userAnswers}
-        shuffledOptions={shuffledOptions}
-        activeQuestions={activeQuestions}
-        onStartMissedUnansweredQuiz={handleStartMissedUnansweredQuiz}
-      />
+      <main role="main">
+        <QuizResultsScreen
+          topicStats={topicStats}
+          onStartNewQuiz={() => {
+            setShowResults(false);
+            setStarted(false);
+            setCurrent(0);
+            setUserAnswers(Array(maxQuizLength).fill(undefined));
+          }}
+          isAllIncorrect={false}
+          q={q}
+          userAnswers={userAnswers}
+          shuffledOptions={shuffledOptions}
+          activeQuestions={activeQuestions}
+          onStartMissedUnansweredQuiz={handleStartMissedUnansweredQuiz}
+        />
+      </main>
     );
   }
   if (started && q) {
     return (
-      <div>
+      <main role="main">
+        <h1>Quiz</h1>
         <QuizProgressBar progress={progress} />
         <QuizStepper
           current={current}
@@ -265,28 +290,31 @@ const Quiz: React.FC = () => {
           total={totalQuestions}
           answered={userAnswers[current] !== undefined}
         />
-      </div>
+      </main>
     );
   }
   // Quiz start form
   return (
-    <QuizStartForm
-      availableTopics={sortedTopics}
-      selectedTopic={selectedTopic}
-      setSelectedTopic={setSelectedTopic}
-      quizLength={desiredQuizLength}
-      setQuizLength={setDesiredQuizLength as any}
-      maxQuizLength={maxQuizLength}
-      sort={''}
-      setSort={() => {}}
-      onStart={startQuiz}
-      filter={filter}
-      setFilter={val => setFilter(val as any)}
-      filterValue={filterValue}
-      setFilterValue={setFilterValue}
-      toggleState={toggleState}
-      setToggleState={setToggleState}
-    />
+    <main role="main">
+      <h1>Quiz</h1>
+      <QuizStartForm
+        availableTopics={sortedTopics}
+        selectedTopic={selectedTopic}
+        setSelectedTopic={setSelectedTopic}
+        quizLength={desiredQuizLength}
+        setQuizLength={setDesiredQuizLength as any}
+        maxQuizLength={maxQuizLength}
+        sort={''}
+        setSort={() => {}}
+        onStart={startQuiz}
+        filter={filter}
+        setFilter={val => setFilter(val as any)}
+        filterValue={filterValue}
+        setFilterValue={setFilterValue}
+        toggleState={toggleState}
+        setToggleState={setToggleState}
+      />
+    </main>
   );
 };
 

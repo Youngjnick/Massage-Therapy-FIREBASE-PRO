@@ -30,6 +30,7 @@ const QuizLengthInput = React.forwardRef<HTMLInputElement, QuizLengthInputProps>
           data-testid={dataTestId}
           disabled={maxQuizLength === 0}
           aria-label="Quiz Length"
+          name="quizLength"
           ref={ref}
         />
       </label>

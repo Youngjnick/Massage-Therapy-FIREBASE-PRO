@@ -5,6 +5,7 @@ import { test, expect } from '@playwright/test';
 import { uiSignIn } from './helpers/uiSignIn';
 import fs from 'fs/promises';
 import path from 'path';
+import './helpers/playwright-coverage';
 
 // ESM-compatible __dirname
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
@@ -33,7 +34,7 @@ const INTERACTIVE_SELECTORS = [
 
 test.describe('All Interactive Elements: ARIA and Keyboard Accessibility', () => {
   for (const pagePath of MAIN_PAGES) {
-    test(`All interactive elements on ${pagePath} have accessible names and ARIA roles`, async ({ page }, testInfo) => {
+    test(`All interactive elements on ${pagePath} have accessible names and ARIA roles @fast`, async ({ page }, testInfo) => {
       // Always sign in before visiting the page with dynamic test user
       const user = await getTestUser(0);
       await uiSignIn(page, { email: user.email, password: user.password, profilePath: '/profile' });

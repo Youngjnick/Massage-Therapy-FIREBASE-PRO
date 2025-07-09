@@ -17,7 +17,7 @@ export async function uiSignIn(
   console.log(`[E2E DEBUG] Navigating to profilePath: ${profilePath}`);
   await page.goto(profilePath);
   // Debug: screenshot before sign-in
-  await page.screenshot({ path: 'test-signin-before.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/test-signin-before.png', fullPage: true });
   // Retry for up to 10 seconds for the sign-in form to appear
   let testSignInForm = null;
   for (let i = 0; i < 20; i++) {
@@ -33,7 +33,7 @@ export async function uiSignIn(
       await signOutButton.click();
       await page.waitForSelector(TEST_SIGNIN_FORM_SELECTOR, { timeout: 5000 });
     } else {
-      await page.screenshot({ path: 'test-signin-missing.png', fullPage: true });
+      await page.screenshot({ path: 'test-results/screenshots/test-signin-missing.png', fullPage: true });
       console.log('[E2E DEBUG] Test sign-in form not found and no sign-out button present.');
       throw new Error('Test sign-in form not found and no sign-out button present. Cannot proceed.');
     }
@@ -44,18 +44,18 @@ export async function uiSignIn(
   await page.waitForSelector(PASSWORD_SELECTOR, { timeout: 5000, state: 'visible' });
   await page.waitForSelector(SUBMIT_SELECTOR, { timeout: 5000, state: 'visible' });
   // Debug: screenshot before filling
-  await page.screenshot({ path: 'test-signin-form-visible.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/test-signin-form-visible.png', fullPage: true });
   console.log(`[E2E DEBUG] Filling sign-in form: email=${email}, password=${password}`);
   await page.fill(EMAIL_SELECTOR, email);
   await page.fill(PASSWORD_SELECTOR, password);
   // Debug: screenshot after filling
-  await page.screenshot({ path: 'test-signin-filled.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/test-signin-filled.png', fullPage: true });
   console.log('[E2E DEBUG] Submitting sign-in form.');
   await page.click(SUBMIT_SELECTOR);
   // Wait for sign-out button to appear as proof of successful login
   console.log('[E2E DEBUG] Waiting for sign-out button after login.');
   await page.waitForSelector(SIGNOUT_SELECTOR, { timeout: 10000 });
   // Debug: screenshot after login
-  await page.screenshot({ path: 'test-signin-after.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/test-signin-after.png', fullPage: true });
   console.log('[E2E DEBUG] Sign-in flow complete, sign-out button visible.');
 }

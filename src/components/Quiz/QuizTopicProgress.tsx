@@ -32,10 +32,17 @@ const QuizTopicProgress: React.FC<QuizTopicProgressProps> = ({ topicStats, onSta
     return { missed, unanswered };
   };
 
+  // Only show the most specific (leaf) topics
+  const topicKeys = Object.keys(topicStats);
+  const leafTopics = topicKeys.filter(topic =>
+    !topicKeys.some(other => other !== topic && other.startsWith(topic + '_'))
+  );
+
   return (
     <>
       <div data-testid="quiz-topic-progress" style={{ display: 'flex', gap: 16, marginBottom: 12, flexWrap: 'wrap' }}>
-        {Object.entries(topicStats).map(([topic, stat]) => {
+        {leafTopics.map(topic => {
+          const stat = topicStats[topic];
           const cleanTopic =
             typeof topic === 'string'
               ? topic.replace(/(topictpoic|tpoic|topic)+/gi, 'topic').replace(/topic+/gi, 'topic').trim()

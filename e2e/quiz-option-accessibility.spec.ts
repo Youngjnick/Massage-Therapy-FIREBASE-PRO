@@ -1,14 +1,51 @@
 import { test, expect } from '@playwright/test';
+import { uiSignIn } from './helpers/uiSignIn';
+import { getTestUser } from './helpers/getTestUser';
+import './helpers/playwright-coverage';
 
 const log = (...args: any[]) => {
   
   (globalThis.console || console).log(...args);
 };
 
+let testUser: { email: string; password: string; uid?: string };
+test.beforeAll(async () => {
+  testUser = await getTestUser(0);
+});
+
+test.beforeEach(async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  });
+  await page.context().clearCookies();
+  await page.reload();
+  await uiSignIn(page, { email: testUser.email, password: testUser.password, profilePath: '/profile' });
+  await page.goto('/quiz');
+});
+
 test.describe('Quiz Option Accessibility', () => {
   test('Each quiz option has correct ARIA attributes and is keyboard accessible', async ({ page }) => {
-    await page.goto('/');
-    await page.getByLabel('Quiz Length').fill('2');
+    // Always start on /quiz to ensure quiz UI is present
+    await page.goto('/quiz');
+    // Wait for Quiz Length input to be visible and enabled, with debug output
+    let quizLengthInput;
+    try {
+      quizLengthInput = await page.waitForSelector('input[aria-label="Quiz Length"]:not([disabled])', { timeout: 15000 });
+      if (!quizLengthInput) throw new Error('Quiz Length input not found');
+      const visible = await quizLengthInput.isVisible();
+      const enabled = await quizLengthInput.isEnabled();
+      if (!visible || !enabled) {
+        throw new Error(`Quiz Length input not visible/enabled. visible=${visible}, enabled=${enabled}`);
+      }
+    } catch (e) {
+      log('Quiz Length input not found or not enabled:', e);
+      const html = await page.content();
+      log('Page HTML at failure:', html);
+      throw e;
+    }
+    await quizLengthInput.fill('2');
     await page.getByRole('button', { name: /start/i }).click();
     await expect(page.getByTestId('quiz-question-card')).toBeVisible();
     const options = page.getByTestId('quiz-radio');
@@ -30,7 +67,7 @@ test.describe('Quiz Option Accessibility', () => {
           disabled: input.disabled,
         };
       });
-      log(`[E2E DEBUG] Quiz option ${i}:`, attrs);
+      log('Quiz option ARIA attributes:', attrs);
       // Check role
       expect(attrs.role).toBe('radio');
       // Check aria-label

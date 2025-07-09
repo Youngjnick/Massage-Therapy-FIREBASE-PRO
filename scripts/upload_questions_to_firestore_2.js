@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
 import { fileURLToPath } from 'url';
+import { exec } from 'child_process';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
@@ -340,6 +341,30 @@ async function uploadQuestions() {
     console.log('Failed questions:');
     failedQuestions.forEach(f => console.log(`- [${f.id}]: ${f.error}`));
   }
+  // Open emulator UI if uploading to emulator
+  if (target === 'e') {
+    const open = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open';
+    const url = 'http://localhost:4000/firestore/default/data/questions';
+    console.log(`Opening Firestore Emulator UI at ${url}...`);
+    exec(`${open} ${url}`);
+  }
+
+  // --- Firestore backup cleanup: keep only the 2 most recent backups ---
+  const backupDir = path.join(__dirname, '../firebase_exports');
+  fs.readdir(backupDir, (err, files) => {
+    if (err) return console.warn('Could not read backup dir:', err.message);
+    const backupFolders = files.filter(f => f.startsWith('firebase-export-')).sort((a, b) => fs.statSync(path.join(backupDir, b)).mtimeMs - fs.statSync(path.join(backupDir, a)).mtimeMs);
+    if (backupFolders.length > 2) {
+      const toDelete = backupFolders.slice(2);
+      toDelete.forEach(folder => {
+        const fullPath = path.join(backupDir, folder);
+        fs.rmSync(fullPath, { recursive: true, force: true });
+        console.log(`Deleted old backup: ${folder}`);
+      });
+      if (toDelete.length > 0) console.log('Firestore backup cleanup complete. Only the 2 most recent backups are kept.');
+    }
+  });
+
   process.exit(0);
 }
 

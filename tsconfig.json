@@ -45,6 +45,10 @@
     "dist",
     ".vite",
     "dataconnect-generated",
-    "tmp-worktree-*"
+    "tmp-worktree-*",
+    "sync_tmp_backups",
+    "sync_tmp_backups/**",
+    ".sync-tmp-*",
+    ".sync-tmp-*/**"
   ]
 }

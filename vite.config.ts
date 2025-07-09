@@ -1,19 +1,18 @@
 /* eslint-env node */
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { getPlugins } from './config/plugins';
+import { isCoverageEnabled, isProduction } from './config/env';
 
-// Use / for local dev, /Massage-Therapy-FIREBASE-PRO/ for production (GitHub Pages)
-const base = process.env.NODE_ENV === 'production'
-  ? '/Massage-Therapy-FIREBASE-PRO/'
-  : '/';
+const base = isProduction() ? '/Massage-Therapy-FIREBASE-PRO/' : '/';
 
 export default defineConfig({
   base,
-  plugins: [
-    react(),
-  ],
+  plugins: getPlugins(isCoverageEnabled()),
   server: {
     port: 5173,
     strictPort: true,
+  },
+  build: {
+    sourcemap: isCoverageEnabled(),
   },
 });
