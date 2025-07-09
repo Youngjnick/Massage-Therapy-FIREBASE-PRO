@@ -29,45 +29,94 @@ GIT_SYNC_ERR_GIT=3
 
 # --- Prompt for Branches (zsh compatible, reusable) ---
 prompt_for_branches() {
+    echo "[DEBUG] Entered prompt_for_branches function" >&2
     log_info "No target branches specified. Please select from the list below:"
+    if [[ ! -t 0 ]]; then
+        log_warning "Not running in an interactive terminal. Input may not work!"
+    fi
+    local current_branch
+    current_branch=$(git symbolic-ref --short HEAD)
     typeset -a branches
     branches=()
     while IFS= read -r branch; do
+        [[ "$branch" == "$current_branch" ]] && continue
         branches+=("$branch")
     done < <(git for-each-ref --format='%(refname:short)' refs/heads/)
     if [[ ${#branches[@]} -eq 0 ]]; then
         log_error "No local branches found to select from."
         exit 1
     fi
-    # Print all branches with manual index
-    local idx=1
-    for branch in "${branches[@]}"; do
-        echo "  $idx) $branch"
-        ((idx++))
-    done
     local selected_branches=()
     while true; do
-        # Prompt for selection
-        printf "Enter the numbers of the branches to sync (e.g., 1 3 4): "
-        local selection_line
-        read selection_line
-        local -a selection
-        selection=(${(z)selection_line})
-        selected_branches=()
-        for num in $selection; do
-            if [[ "$num" == <-> ]] && (( num >= 1 && num <= ${#branches[@]} )); then
-                selected_branches+=("${branches[$((num-1))]}")
-            else
-                log_warning "Invalid selection: '$num'. Ignoring."
-            fi
+        echo "Available branches:"
+        local idx=1
+        for branch in "${branches[@]}"; do
+            echo "  $idx) $branch"
+            ((idx++))
         done
-        if [[ ${#selected_branches[@]} -eq 0 ]]; then
-            log_warning "No valid branches selected. Please try again."
-        else
+        printf "Enter branch numbers separated by space (e.g. 1 3 5), or '+' to add a new branch. Press 'Enter' when done: "
+        local input
+        read input
+        echo "[DEBUG] User entered: $input" >&2
+        if [[ -z "$input" ]]; then
             break
+        elif [[ "$input" == "+" ]]; then
+            printf "Enter new branch name: "
+            read new_branch
+            echo "[DEBUG] User entered new branch: $new_branch" >&2
+            if [[ -z "$new_branch" ]]; then
+                log_warning "No branch name entered. Skipping add."
+                continue
+            fi
+            # Check if branch already exists
+            if git show-ref --verify --quiet refs/heads/"$new_branch"; then
+                log_warning "Branch '$new_branch' already exists. Adding to selection."
+                selected_branches+=("$new_branch")
+            else
+                # Create the new branch from the current branch
+                if git branch "$new_branch"; then
+                    log_info "Branch '$new_branch' created from current branch."
+                    selected_branches+=("$new_branch")
+                else
+                    log_error "Failed to create branch '$new_branch'. Not adding."
+                    continue
+                fi
+            fi
+            current_branch="$new_branch"
+            branches=()
+            while IFS= read -r branch; do
+                [[ "$branch" == "$current_branch" ]] && continue
+                branches+=("$branch")
+            done < <(git for-each-ref --format='%(refname:short)' refs/heads/)
+        else
+            local -a selection
+            selection=(${(z)input})
+            local handled=false
+            for num in $selection; do
+                if [[ "$num" == <-> ]] && (( num >= 1 && num <= ${#branches[@]} )); then
+                    selected_branches+=("${branches[$((num-1))]}")
+                    handled=true
+                fi
+            done
+            if [[ "$handled" == false && -n "$input" ]]; then
+                log_warning "Invalid input: '$input'. Please enter valid branch numbers or '+'."
+            fi
         fi
     done
-    echo "${selected_branches[@]}"
+    # Filter out empty strings and duplicates
+    local -A seen
+    local -a filtered_branches=()
+    for b in "${selected_branches[@]}"; do
+        if [[ -n "$b" && -z "${seen[$b]}" ]]; then
+            filtered_branches+=("$b")
+            seen[$b]=1
+        fi
+    done
+    if [[ ${#filtered_branches[@]} -eq 0 ]]; then
+        log_error "No branches selected. Aborting."
+        exit 1
+    fi
+    echo "${filtered_branches[@]}"
 }
 
 # --- Argument Parsing Utility (no nameref) ---
@@ -102,11 +151,14 @@ sync_branch_worktree() {
     local sync_source_dir="$3"
     local REMOTE="$4"
     local FAST_MODE="$5"
-    local -n _worktrees_to_clean=$6
     log_info "--- Starting sync for branch: $branch ---"
     local worktree_dir
     worktree_dir=$(mktemp -d -t "sync-worktree-$branch.XXXXXX")
-    _worktrees_to_clean+=("$worktree_dir")
+    WORKTREES_TO_CLEAN+=("$worktree_dir")
+    if [[ -z "$branch" ]]; then
+        log_error "Empty branch name passed to sync_branch_worktree. Skipping."
+        return $GIT_SYNC_ERR_GIT
+    fi
     if ! git worktree add -f "$worktree_dir" "$branch"; then
         log_error "Failed to create worktree for branch '$branch'. It might not exist locally. Skipping."
         return $GIT_SYNC_ERR_GIT
@@ -207,7 +259,8 @@ pop_stash_if_needed() {
 confirm_sync() {
     local DRY_RUN=$1
     if [ "$DRY_RUN" = false ]; then
-        read -p "Proceed with sync? (y/N): " -r confirm
+        echo -n "Proceed with sync? (y/N): "
+        read confirm
         if [[ ! "$confirm" =~ ^[yY](es)?$ ]]; then
             log_warning "Sync cancelled by user."
             return 1
