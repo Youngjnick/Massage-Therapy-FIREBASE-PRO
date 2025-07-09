@@ -1,6 +1,16 @@
 #!/bin/zsh
 # sync-all-files-to-specified-branches.sh
 
+# --- Drag-and-drop/quoted path fix: auto-re-exec as a command if needed ---
+# Handles both quoted path (drag-and-drop in zsh) and non-executable absolute path
+if [[ "$0" =~ ^\'.*\'$ ]]; then
+    # $0 is a quoted string (drag-and-drop in zsh), remove quotes and re-exec
+    exec zsh "${0:1:-1}" "$@"
+elif [[ "$0" == /* ]] && [[ ! -x "$0" ]]; then
+    # $0 is an absolute path but not executable (rare), try to exec as a command
+    exec zsh "$0" "$@"
+fi
+
 # --- Source Utility Functions ---
 source "$(dirname "$0")/git-sync-utils.sh"
 
@@ -24,8 +34,11 @@ main() {
 
     # If no target branches are provided after parsing, prompt the user
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
+        log_info "No target branches specified. Prompting for branch selection..."
         TARGET_BRANCHES=($(prompt_for_branches))
+        log_info "User selected branches: ${TARGET_BRANCHES[*]}"
         if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
+            log_error "No branches selected. Exiting."
             exit 1
         fi
     fi
