@@ -1,5 +1,39 @@
 #!/bin/zsh
-# Usage: ./adv_fixing_run_playwright_and_capture_output.sh [--debug]
+# Usage: ./adv_fixing# Set up directories with optimized paths
+SYNC_TMP_DIR="sync_tmp_backups"
+REPORTS_DIR="$(dirname "$0")/reports"
+mkdir -p "$SYNC_TMP_DIR" "$REPORTS_DIR"
+
+# Use RAM disk for temp files if available (macOS)
+if [[ -d "/private/var/tmp" && -w "/private/var/tmp" ]]; then
+  RAM_TMPDIR="/private/var/tmp/playwright-${USER}-$$"
+  mkdir -p "$RAM_TMPDIR"
+  export TMPDIR="$RAM_TMPDIR"
+  trap 'rm -rf "$RAM_TMPDIR"' EXIT
+else
+  export TMPDIR="$PWD/$SYNC_TMP_DIR"
+fi
+
+# Clean up old temp files (older than 24h) in the background
+(find "$SYNC_TMP_DIR" -name ".sync-tmp-*" -type f -mtime +1 -delete && \
+ find "$SYNC_TMP_DIR" -mindepth 1 -type d -empty -delete) &
+
+# Move any stray .sync-tmp files to backup directory
+if [[ -d ".sync-tmp" ]]; then
+  mv .sync-tmp/* "$SYNC_TMP_DIR/" 2>/dev/null || true
+  rmdir .sync-tmp 2>/dev/null || true
+fi
+
+# Set up output files in scripts/reports directory
+OUTPUT_FILE="$REPORTS_DIR/playwright-output.txt"
+HISTORY_FILE="$REPORTS_DIR/playwright-output-history.txt"
+
+# Clean up old reports (keep last 10)
+(cd "$REPORTS_DIR" && ls -t playwright-output-*.txt 2>/dev/null | tail -n +11 | xargs rm -f) & .sync-tmp files directly to sync_tmp_backups
+if [[ -d ".sync-tmp" ]]; then
+  mv .sync-tmp/* "$SYNC_TMP_DIR/" 2>/dev/null || true
+  rmdir .sync-tmp 2>/dev/null || true
+fiaywright_and_capture_output.sh [--debug]
 # Pass --debug to enable shell tracing (set -x)
 
 if [[ "$1" == "--debug" || "$1" == "--trace" ]]; then
@@ -26,23 +60,24 @@ export FIREBASE_PROJECT_ID=massage-therapy-smart-st-c7f8f
 export GCLOUD_PROJECT=massage-therapy-smart-st-c7f8f
 export NODE_ENV=test
 
-# Ensure sync-tmp directory exists and move any existing sync-tmp files there
+# Ensure directories exist
 SYNC_TMP_DIR="sync_tmp_backups"
-mkdir -p "$SYNC_TMP_DIR/reports"
-mkdir -p "$SYNC_TMP_DIR/.sync-tmp"
+REPORTS_DIR="$(dirname "$0")/reports"
+mkdir -p "$SYNC_TMP_DIR"  # Only for .sync-tmp files
+mkdir -p "$REPORTS_DIR"   # For all reports
 
-# Move any existing sync-tmp files from root to backup directory
+# Move any stray .sync-tmp files to backup directory
 if [[ -d ".sync-tmp" ]]; then
-  mv .sync-tmp/* "$SYNC_TMP_DIR/.sync-tmp/" 2>/dev/null || true
+  mv .sync-tmp/* "$SYNC_TMP_DIR/" 2>/dev/null || true
   rmdir .sync-tmp 2>/dev/null || true
 fi
 
-# Set up output files in the backup directory
-OUTPUT_FILE="$SYNC_TMP_DIR/reports/playwright-output.txt"
-HISTORY_FILE="$SYNC_TMP_DIR/reports/playwright-output-history.txt"
+# Set up output files in scripts/reports directory
+OUTPUT_FILE="$REPORTS_DIR/playwright-output.txt"
+HISTORY_FILE="$REPORTS_DIR/playwright-output-history.txt"
 
 # Set TMPDIR for this session to redirect any new temp files
-export TMPDIR="$PWD/$SYNC_TMP_DIR/.sync-tmp"
+export TMPDIR="$PWD/$SYNC_TMP_DIR"
 
 # Function to extract failed test files from the last Playwright run output
 get_failed_test_files() {
@@ -285,7 +320,7 @@ show_spinner() {
 run_with_spinner() {
   local message=$1
   shift
-  local tmp_output="$SYNC_TMP_DIR/.sync-tmp/spinner-output-$RANDOM.txt"
+  local tmp_output="$SYNC_TMP_DIR/.sync-tmp-spinner-$RANDOM"
   # Run the command in background
   ("$@" > "$tmp_output" 2>&1) &
   local cmd_pid=$!
@@ -484,23 +519,24 @@ if [[ "$choice" != "coverage" && "$choice" != "COVERAGE" ]]; then
     # Only set PW_HEADLESS inline for each Playwright invocation
   done
 
-  # Note: Project config defaults to serial execution for reliability
-  MAX_WORKERS=1
-  DEFAULT_WORKERS=1
-  WORKERS=""
-  while [[ -z "$WORKERS" ]]; do
-    echo "\nHow many Playwright workers (parallel test runners) do you want to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS): "
-    read -r workers_choice
-    workers_choice=${workers_choice:-$DEFAULT_WORKERS}
-    if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
-      WORKERS=$workers_choice
-    elif [[ "$workers_choice" == "max" ]]; then
-      WORKERS=$MAX_WORKERS
-    else
-      echo "[WARN] Invalid selection. Please enter a number between 1 and $MAX_WORKERS, or 'max'."
-    fi
-  done
-  WORKERS_FLAG="--workers=$WORKERS"
+  # Automatically determine optimal number of workers based on CPU cores
+  MAX_WORKERS=$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
+  if [[ $MAX_WORKERS -gt 4 ]]; then
+    MAX_WORKERS=4  # Cap at 4 for stability
+  fi
+  DEFAULT_WORKERS=$MAX_WORKERS  # Default to max workers for best performance
+  
+  # Allow user to override worker count if needed
+  echo "\nNumber of parallel workers to use? [1-$MAX_WORKERS] (default: $DEFAULT_WORKERS, recommended for fastest execution): "
+  read -r workers_choice
+  workers_choice=${workers_choice:-$DEFAULT_WORKERS}
+  if [[ "$workers_choice" =~ ^[1-4]$ ]] && [[ $workers_choice -le $MAX_WORKERS ]]; then
+    WORKERS=$workers_choice
+  else
+    echo "[INFO] Using recommended $DEFAULT_WORKERS workers for optimal performance"
+    WORKERS=$DEFAULT_WORKERS
+  fi
+  WORKERS_FLAG="--workers=$WORKERS --max-failures=5"  # Allow some failures before stopping
 else
   WORKERS_FLAG=""
 fi
@@ -526,7 +562,7 @@ fi
 # If running all tests, clear last failing file at the start
 if [[ "$choice" == "a"* ]]; then
   echo "[INFO] Starting Playwright tests..."
-  mkdir -p "$SYNC_TMP_DIR/.sync-tmp/playwright-run-${RANDOM}"
+  mkdir -p "$SYNC_TMP_DIR/.sync-tmp-playwright-${RANDOM}"
   (cd "$SYNC_TMP_DIR/.sync-tmp/playwright-run-${RANDOM}" && \
    TMPDIR="$PWD" PW_HEADLESS=$PW_HEADLESS_VALUE npx playwright test $WORKERS_FLAG | tee "$OUTPUT_FILE") &
   test_pid=$!

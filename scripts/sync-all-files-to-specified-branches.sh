@@ -585,12 +585,12 @@ for target in $all_targets; do
   fi
 
   # Copy all files from the current working tree to the worktree (excluding .git and node_modules)
-  rsync -a --exclude='.git' --exclude='node_modules' --exclude='sync_tmp_backups' "$REPO_ROOT/" "$TMP_WORKTREE/"
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$TMP_WORKTREE/"
 
   # Also create a backup copy in the backup directory
-  BACKUP_TMP="$SYNC_TMP_DIR/.sync-tmp-$branch-$$-backup"
+  BACKUP_TMP="$SYNC_TMP_DIR/sync_tmp_backups/tmp-$branch-$$-backup"
   mkdir -p "$BACKUP_TMP"
-  rsync -a --exclude='.git' --exclude='node_modules' --exclude='.sync-tmp-*' "$REPO_ROOT/" "$BACKUP_TMP/"
+  rsync -a --exclude='.git' --exclude='node_modules' --exclude='sync_tmp_backups' "$REPO_ROOT/" "$BACKUP_TMP/"
 
   # Commit and push in the worktree
   pushd "$TMP_WORKTREE" > /dev/null
@@ -788,3 +788,9 @@ cleanup_temp_dirs() {
 
 # Register cleanup on script exit
 trap cleanup_temp_dirs EXIT
+
+# Clean up old sync-tmp files
+echo "🧹 Cleaning up old sync-tmp files..."
+"$(dirname "$0")/cleanup-sync-tmp.sh"
+
+echo "✨ Sync complete!"
