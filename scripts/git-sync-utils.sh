@@ -219,16 +219,18 @@ sync_branch_worktree() {
         export GIT_SYNC_DEFERRED_DELETE_BRANCHES="$GIT_SYNC_DEFERRED_DELETE_BRANCHES $branch"
     fi
 
-    # --- Always auto-commit any uncommitted changes in the main working directory before syncing ---
-    if [[ -n $(git status --porcelain) ]]; then
+    # --- Always auto-commit all uncommitted changes in the main working directory before syncing ---
+    while [[ -n $(git status --porcelain) ]]; do
         log_info "Auto-committing all uncommitted changes in the main working directory before syncing..."
         git add -A
         if git commit -m "Auto-commit before sync to $branch ($(date +'%Y-%m-%d %H:%M:%S'))"; then
             log_info "Auto-commit successful."
         else
             log_warning "Auto-commit failed or nothing to commit."
+            break
         fi
-    else
+    done
+    if [[ -z $(git status --porcelain) ]]; then
         log_info "No uncommitted changes to auto-commit before syncing."
     fi
     local worktree_dir
