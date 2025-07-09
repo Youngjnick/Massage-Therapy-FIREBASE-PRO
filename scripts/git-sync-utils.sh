@@ -211,13 +211,12 @@ sync_branch_worktree() {
     local FAST_MODE="$5"
     log_info "--- Starting sync for branch: $branch ---"
     log_debug "[sync_branch_worktree] original_branch='$original_branch', branch='$branch', sync_source_dir='$sync_source_dir', REMOTE='$REMOTE', FAST_MODE='$FAST_MODE'" >&2
-    # Always add branch to deferred delete prompt at the start, so it is always set
-    if [[ -z "${GIT_SYNC_DEFERRED_DELETE_PROMPT}" ]]; then
-        export GIT_SYNC_DEFERRED_DELETE_PROMPT=1
-        export GIT_SYNC_DEFERRED_DELETE_BRANCHES="$branch"
-    else
-        export GIT_SYNC_DEFERRED_DELETE_BRANCHES="$GIT_SYNC_DEFERRED_DELETE_BRANCHES $branch"
+    # Always add branch to deferred delete prompt using a temp file (robust across subshells)
+    if [[ -z "$GIT_SYNC_DEFERRED_DELETE_FILE" ]]; then
+        export GIT_SYNC_DEFERRED_DELETE_FILE="/tmp/git-sync-deferred-branches-$$.txt"
+        : > "$GIT_SYNC_DEFERRED_DELETE_FILE"  # Truncate or create
     fi
+    echo "$branch" >> "$GIT_SYNC_DEFERRED_DELETE_FILE"
 
     # --- Always auto-commit all uncommitted changes in the main working directory before syncing ---
     while [[ -n $(git status --porcelain) ]]; do
@@ -275,16 +274,32 @@ sync_branch_worktree() {
         log_debug "[sync_branch_worktree] diff -ruN $sync_source_dir . (after rsync):" >&2
         diff -ruN "$sync_source_dir" . >&2 || true
 
-        # Confirm there are no unstaged or uncommitted files before staging
+        # Always auto-stage and commit all changes in the worktree for each target branch (no prompt)
         if [[ -n $(git status --porcelain) ]]; then
-            log_warning "There are unstaged or uncommitted changes in the worktree for '$branch' before staging."
-            git status --short
-            echo -n "Proceed with staging and committing these changes to '$branch'? (y/N): "
-            read confirm_unstaged
-            if [[ ! "$confirm_unstaged" =~ ^[yY](es)?$ ]]; then
-                log_warning "Sync for branch '$branch' cancelled by user due to unstaged/uncommitted files."
+            log_info "Auto-staging and committing all changes in the worktree for '$branch'..."
+            git add -A
+            log_debug "After git add -A, git status:" >&2
+            git status >&2
+            if git diff-index --quiet --cached HEAD --; then
+                log_warning "No changes to commit for branch '$branch'. (If you expected changes, check rsync source/dest and excludes.)"
+                exit 0
+            fi
+            if git commit -m "Sync from ${original_branch}"; then
+                if [ "$FAST_MODE" = true ]; then
+                    log_info "Fast mode enabled, skipping remote push for '$branch'."
+                else
+                    log_info "Pushing '$branch' to remote '${REMOTE}'..."
+                    if ! git push "$REMOTE" "$branch"; then
+                        log_error "Failed to push to branch '$branch'."
+                        exit $GIT_SYNC_ERR_GIT
+                    fi
+                fi
+            else
+                log_warning "Commit failed for branch '$branch', though changes were detected."
                 exit 1
             fi
+        else
+            log_info "No changes to commit for branch '$branch' after rsync."
         fi
 
         log_info "Committing changes in worktree for '$branch'..."
@@ -327,10 +342,13 @@ sync_branch_worktree() {
 
 # --- Final Branch Delete Prompt Utility ---
 prompt_for_final_branch_deletes() {
-    echo "[DEBUG] prompt_for_final_branch_deletes called. GIT_SYNC_DEFERRED_DELETE_BRANCHES='$GIT_SYNC_DEFERRED_DELETE_BRANCHES'" >&2
+    echo "[DEBUG] prompt_for_final_branch_deletes called. GIT_SYNC_DEFERRED_DELETE_FILE='$GIT_SYNC_DEFERRED_DELETE_FILE'" >&2
     local REMOTE="${1:-origin}"
-    local branches="$GIT_SYNC_DEFERRED_DELETE_BRANCHES"
-    log_debug "[prompt_for_final_branch_deletes] Called. GIT_SYNC_DEFERRED_DELETE_BRANCHES='$branches'" >&2
+    local branches=""
+    if [[ -n "$GIT_SYNC_DEFERRED_DELETE_FILE" && -f "$GIT_SYNC_DEFERRED_DELETE_FILE" ]]; then
+        branches=$(cat "$GIT_SYNC_DEFERRED_DELETE_FILE" | tr '\n' ' ')
+    fi
+    log_debug "[prompt_for_final_branch_deletes] Called. branches='$branches'" >&2
     if [[ -z "$branches" ]]; then
         log_debug "[prompt_for_final_branch_deletes] No branches to prompt for deletion." >&2
         return
@@ -397,8 +415,11 @@ prompt_for_final_branch_deletes() {
             fi
         done
     fi
-    unset GIT_SYNC_DEFERRED_DELETE_PROMPT
-    unset GIT_SYNC_DEFERRED_DELETE_BRANCHES
+    # Clean up temp file
+    if [[ -n "$GIT_SYNC_DEFERRED_DELETE_FILE" && -f "$GIT_SYNC_DEFERRED_DELETE_FILE" ]]; then
+        rm -f "$GIT_SYNC_DEFERRED_DELETE_FILE"
+        unset GIT_SYNC_DEFERRED_DELETE_FILE
+    fi
 }
 
 # --- Cleanup Utility (no nameref) ---
