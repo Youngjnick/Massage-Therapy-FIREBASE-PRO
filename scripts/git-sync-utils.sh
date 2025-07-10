@@ -211,6 +211,7 @@ sync_branch_worktree() {
     local FAST_MODE="$5"
     log_info "--- Starting sync for branch: $branch ---"
     log_debug "[sync_branch_worktree] original_branch='$original_branch', branch='$branch', sync_source_dir='$sync_source_dir', REMOTE='$REMOTE', FAST_MODE='$FAST_MODE'" >&2
+
     # Always add branch to deferred delete prompt using a temp file (robust across subshells)
     if [[ -z "$GIT_SYNC_DEFERRED_DELETE_FILE" ]]; then
         export GIT_SYNC_DEFERRED_DELETE_FILE="/tmp/git-sync-deferred-branches-$$.txt"
