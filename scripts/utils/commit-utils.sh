@@ -1,98 +1,118 @@
-#!/bin/zsh
-# commit-utils.sh: Commit message and prompt helpers for sync scripts
 
-# Helper: Run ESLint and handle errors
+
+# commit-utils.sh: Commit message and prompt helpers for sync scripts
+# All functions are zsh-native. Only export those needed externally.
+#
+# Exports:
+#   run_lint_and_handle_errors
+#   run_typescript_and_handle_errors
+#   run_jest_and_handle_errors
+#   run_playwright_and_handle_errors
+#   commit_and_push_with_summary
+#
+# Usage: Source this file in your orchestrator script.
+
+#!/bin/zsh
+set -euo pipefail
+
+
+
+# --- Configurable output file paths ---
+ESLINT_OUTPUT_FILE="scripts/eslint-output.txt"
+TS_OUTPUT_FILE="scripts/ts-output.txt"
+JEST_OUTPUT_FILE="scripts/test-output.txt"
+PW_OUTPUT_FILE="scripts/playwright-output.txt"
+
+# --- Configurable remote ---
+GIT_REMOTE="${REMOTE:-origin}"
+
+
+# --- Logging utilities ---
+log_info()    { print -P "%F{cyan}[INFO]%f $*"; }
+log_warn()    { print -P "%F{yellow}[WARN]%f $*"; }
+log_error()   { print -P "%F{red}[ERROR]%f $*"; }
+
+# --- Temp file helpers ---
+_tmpfiles=()
+make_tmpfile() {
+  local tmpfile; tmpfile=$(mktemp)
+  _tmpfiles+="$tmpfile"
+  echo "$tmpfile"
+}
+cleanup_tmpfiles() {
+  for f in "${_tmpfiles[@]:-}"; do [[ -f "$f" ]] && rm -f "$f"; done
+  _tmpfiles=()
+}
+trap cleanup_tmpfiles EXIT
+
+# --- Modular prompt for fix/wip/abort ---
+# Usage: prompt_fix_wip_abort <context>
+prompt_fix_wip_abort() {
+  local context="$1"
+  print -nP "%F{yellow}$context: What do you want to do? (fix/wip/abort): %f"
+  local decision; read decision
+  case "$decision" in
+    fix) $SHELL; exit 1 ;;
+    wip) return 2 ;;
+    *) log_error "Aborted due to $context errors."; exit 1 ;;
+  esac
+}
+
+# Run ESLint and handle errors (modular, zsh-native)
 run_lint_and_handle_errors() {
   print -P "%F{cyan}Running ESLint...%f"
-  npx eslint . | tee scripts/eslint-output.txt
-  if grep -q "error" scripts/eslint-output.txt; then
+  npx eslint . | tee "$ESLINT_OUTPUT_FILE"
+  if grep -q "error" "$ESLINT_OUTPUT_FILE"; then
     print -P "%F{red}Lint errors detected.%f"
-    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/eslint-output.txt | while read -r line; do
+    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' "$ESLINT_OUTPUT_FILE" | while read -r line; do
       print -P "%F{red}$line%f"
     done
-    print -nP "%F{yellow}What do you want to do? (fix/wip/abort): %f"
-    read lint_decision
-    case "$lint_decision" in
-      fix)
-        $SHELL
-        exit 1
-        ;;
-      wip)
-        return 2
-        ;;
-      *)
-        print -P "%F{red}Aborted due to lint errors.%f"
-        exit 1
-        ;;
-    esac
+    prompt_fix_wip_abort "Lint"
   fi
-  rm -f scripts/eslint-output.txt
+  rm -f "$ESLINT_OUTPUT_FILE"
   return 0
 }
 
-# Helper: Run TypeScript and handle errors
+# Run TypeScript and handle errors (modular, zsh-native)
 run_typescript_and_handle_errors() {
   print -P "%F{cyan}Running TypeScript type check...%f"
-  npx tsc --noEmit | tee scripts/ts-output.txt
+  npx tsc --noEmit | tee "$TS_OUTPUT_FILE"
   if [[ $? -ne 0 ]]; then
     print -P "%F{red}TypeScript errors detected.%f"
-    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' scripts/ts-output.txt | while read -r line; do
+    grep -E '^[^ ]+\.(ts|tsx|js|jsx):[0-9]+:[0-9]+' "$TS_OUTPUT_FILE" | while read -r line; do
       print -P "%F{red}$line%f"
     done
-    print -nP "%F{yellow}What do you want to do? (fix/wip/abort): %f"
-    read ts_decision
-    case "$ts_decision" in
-      fix)
-        $SHELL
-        exit 1
-        ;;
-      wip)
-        return 2
-        ;;
-      *)
-        print -P "%F{red}Aborted due to TypeScript errors.%f"
-        exit 1
-        ;;
-    esac
+    prompt_fix_wip_abort "TypeScript"
   fi
-  rm -f scripts/ts-output.txt
+  rm -f "$TS_OUTPUT_FILE"
   return 0
 }
 
-# Helper: Run Jest and handle errors
+# Run Jest and handle errors (modular, zsh-native)
 run_jest_and_handle_errors() {
   print -P "%F{cyan}Running Jest tests...%f"
-  npm test -- --reporter=default | tee scripts/test-output.txt
+  npm test -- --reporter=default | tee "$JEST_OUTPUT_FILE"
   local test_summary=""
-  if grep -q "failing" scripts/test-output.txt; then
-    local summary_line=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
-    local failing_tests=$(grep '^FAIL ' scripts/test-output.txt | awk '{print $2}' | xargs)
+  if grep -q "failing" "$JEST_OUTPUT_FILE"; then
+    local summary_line=$(grep -E '^Tests:' "$JEST_OUTPUT_FILE" | tail -1)
+    local failing_tests=$(grep '^FAIL ' "$JEST_OUTPUT_FILE" | awk '{print $2}' | xargs)
     if [[ -n "$summary_line" ]]; then
       test_summary="$summary_line\nFailing: $failing_tests"
     fi
     print -P "%F{red}Jest tests failed.%f"
-    print -nP "%F{yellow}What do you want to do? (fix/wip/abort): %f"
-    read jest_decision
-    case "$jest_decision" in
-      fix)
-        $SHELL; exit 1 ;;
-      wip)
-        echo "$test_summary"; rm -f scripts/test-output.txt; return 2 ;;
-      *)
-        print -P "%F{red}Aborted due to Jest failures.%f"; exit 1 ;;
-    esac
+    prompt_fix_wip_abort "Jest"
   else
-    local summary_line=$(grep -E '^Tests:' scripts/test-output.txt | tail -1)
+    local summary_line=$(grep -E '^Tests:' "$JEST_OUTPUT_FILE" | tail -1)
     if [[ -n "$summary_line" ]]; then
       test_summary="$summary_line"
     fi
   fi
-  rm -f scripts/test-output.txt
+  rm -f "$JEST_OUTPUT_FILE"
   echo "$test_summary"
   return 0
 }
 
-# Helper: Run Playwright and handle errors
+# Run Playwright and handle errors (modular, zsh-native)
 run_playwright_and_handle_errors() {
   [[ ! -f playwright.config.ts ]] && return 0
   print -P "%F{cyan}Starting dev server for E2E...%f"
@@ -102,62 +122,56 @@ run_playwright_and_handle_errors() {
   print -P "%F{cyan}Running Playwright E2E (advanced script)...%f"
   ./scripts/adv_fixing_run_playwright_and_capture_output.sh
   local pw_summary=""
-  local pw_summary_line=$(grep -Eo '[0-9]+ failed' scripts/playwright-output.txt | awk '{s+=$1} END {print s+0}')
-  local pw_failing_tests=$(grep '^FAIL ' scripts/playwright-output.txt | awk '{print $2}' | xargs)
+  local pw_summary_line=$(grep -Eo '[0-9]+ failed' "$PW_OUTPUT_FILE" | awk '{s+=$1} END {print s+0}')
+  local pw_failing_tests=$(grep '^FAIL ' "$PW_OUTPUT_FILE" | awk '{print $2}' | xargs)
   if [[ -n "$pw_summary_line" ]]; then
     pw_summary="E2E: $pw_summary_line"
   fi
-  if grep -q "failed" scripts/playwright-output.txt; then
+  if grep -q "failed" "$PW_OUTPUT_FILE"; then
     print -P "%F{red}Playwright E2E failed.%f"
     print -P "\n--- Playwright Failure Details ---"
-    awk '/^\s*[0-9]+\) /,/^\s*$/' scripts/playwright-output.txt
-    print -nP "%F{yellow}What do you want to do? (fix/wip/abort): %f"
-    read pw_decision
-    case "$pw_decision" in
-      fix)
-        kill $dev_server_pid 2>/dev/null; $SHELL; exit 1 ;;
-      wip)
-        kill $dev_server_pid 2>/dev/null; echo "$pw_summary"; rm -f scripts/playwright-output.txt; return 2 ;;
-      *)
-        kill $dev_server_pid 2>/dev/null; print -P "%F{red}Aborted due to Playwright failures.%f"; exit 1 ;;
-    esac
+    awk '/^\s*[0-9]+\) /,/^\s*$/' "$PW_OUTPUT_FILE"
+    prompt_fix_wip_abort "Playwright"
   fi
-  rm -f scripts/playwright-output.txt
+  rm -f "$PW_OUTPUT_FILE"
   kill $dev_server_pid 2>/dev/null
   echo "$pw_summary"
   return 0
 }
-# Helper: Classify changed files into scripts, logs, other
+# Classify changed files into categories using associative arrays
+# Returns: a | delimited string of category lists (scripts|logs|configs|docs|other)
 classify_changed_files() {
   local changed_files="$1"
-  local scripts_list=""
-  local logs_list=""
-  local other_list=""
+  typeset -A cats
+  cats=(
+    [scripts]=""
+    [logs]=""
+    [configs]=""
+    [docs]=""
+    [other]=""
+  )
   while read -r line; do
-    local status=$(echo "$line" | awk '{print $1}')
-    local file=$(echo "$line" | awk '{print $2}')
-    if [[ "$status" == D ]]; then
-      if [[ "$file" == scripts/*.sh ]]; then
-        scripts_list+="-Deleted $file\n"
-      elif [[ "$file" == *.log ]]; then
-        logs_list+="-Deleted $file\n"
-      elif [[ -n "$file" ]]; then
-        other_list+="-Deleted $file\n"
-      fi
-    else
-      if [[ "$file" == scripts/*.sh ]]; then
-        scripts_list+="-Updated $file\n"
-      elif [[ "$file" == *.log ]]; then
-        logs_list+="-Updated $file\n"
-      elif [[ -n "$file" ]]; then
-        other_list+="-Updated $file\n"
-      fi
+    local status file
+    status=$(echo "$line" | awk '{print $1}')
+    file=$(echo "$line" | awk '{print $2}')
+    local prefix="-Updated"
+    [[ "$status" == D ]] && prefix="-Deleted"
+    if [[ "$file" == scripts/*.sh ]]; then
+      cats[scripts]+="$prefix $file\n"
+    elif [[ "$file" == *.log ]]; then
+      cats[logs]+="$prefix $file\n"
+    elif [[ "$file" == *.json || "$file" == *.yml || "$file" == *.yaml ]]; then
+      cats[configs]+="$prefix $file\n"
+    elif [[ "$file" == *.md ]]; then
+      cats[docs]+="$prefix $file\n"
+    elif [[ -n "$file" ]]; then
+      cats[other]+="$prefix $file\n"
     fi
   done <<< "$changed_files"
-  echo "$scripts_list|$logs_list|$other_list"
+  echo "${cats[scripts]}|${cats[logs]}|${cats[configs]}|${cats[docs]}|${cats[other]}"
 }
 
-# Helper: Format diffstat for commit message
+# Format diffstat for commit message (utility)
 format_diff_summary() {
   local diff_stat="$1"
   local diff_stat_dashed=""
@@ -170,25 +184,26 @@ format_diff_summary() {
     fi
   done <<< "$diff_stat"
   if [[ -n "$diff_stat_dashed" ]]; then
-    echo -e "--- Diff Summary ---\n${diff_stat_dashed%\\n}\n$diff_stat_summary"
+    print -P "--- Diff Summary ---\n${diff_stat_dashed%\\n}\n$diff_stat_summary"
   else
-    echo -e "--- Diff Summary ---\n$diff_stat_summary"
+    print -P "--- Diff Summary ---\n$diff_stat_summary"
   fi
 }
-# Modular utility: Commit and push with detailed summary (for main script use)
+# Commit and push with detailed summary (for main script use)
+# Usage: commit_and_push_with_summary <branch> [prefix]
 commit_and_push_with_summary() {
   local branch="$1"
   local prefix="${2:-Sync}"
   local changed_files diff_stat commit_msg
   changed_files=$(git status --short)
   diff_stat=$(git diff --stat)
-  commit_msg="$prefix: Update $branch\n\n--- Changed Files ---\n${changed_files}\n\n--- Diff Summary ---\n${diff_stat}\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
+  commit_msg=$(build_commit_message false "$prefix" "$changed_files" "$diff_stat" "" "" "")
   print -P "\n%F{cyan}--- Commit message preview for $branch ---\n$commit_msg%f\n"
   git add -A
   if git diff --cached --quiet; then
     log_info "No staged changes to commit on '$branch'. Skipping commit."
   else
-  git commit -m "$commit_msg"
+    git commit -m "$commit_msg"
   fi
   git push "${REMOTE:-origin}" "$branch"
   log_info "Pushed branch '$branch' to '${REMOTE:-origin}' with detailed summary."
@@ -445,7 +460,13 @@ commit_and_push_with_prompt() {
   # Sync to each target branch in parallel
   run_parallel_sync
 }
-export -f commit_and_push_with_prompt
+
+# Only export functions needed externally
+export run_lint_and_handle_errors
+export run_typescript_and_handle_errors
+export run_jest_and_handle_errors
+export run_playwright_and_handle_errors
+export commit_and_push_with_summary
 #!/bin/zsh
 # commit-utils.sh: Commit message helpers and interactive commit prompt
 
