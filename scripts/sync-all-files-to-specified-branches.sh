@@ -93,21 +93,25 @@ main() {
     WORKTREES_TO_CLEAN=()
     setup_cleanup_trap
 
-    # If no target branches are provided after parsing, prompt the user
+    # If no target branches are provided after parsing, prompt the user and capture output directly
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
-        prompt_for_branches
-        # Always reload branches from temp file if set (zsh arrays are not exported)
-        if [[ -n "$GIT_SYNC_SELECTED_BRANCHES_FILE" && -f "$GIT_SYNC_SELECTED_BRANCHES_FILE" ]]; then
-            mapfile -t TARGET_BRANCHES < "$GIT_SYNC_SELECTED_BRANCHES_FILE"
-            echo "[DEBUG] TARGET_BRANCHES after prompt: ${TARGET_BRANCHES[@]}" >&2
-        else
-            TARGET_BRANCHES=("${branches[@]}")
-            echo "[DEBUG] TARGET_BRANCHES fallback from branches: ${TARGET_BRANCHES[@]}" >&2
-        fi
+        local selected_branches
+        selected_branches=($(prompt_for_branches))
+        TARGET_BRANCHES=()
+        for b in "${selected_branches[@]}"; do
+            [[ -n "$b" ]] && TARGET_BRANCHES+=("$b")
+        done
+        echo "[DEBUG] TARGET_BRANCHES after prompt: ${TARGET_BRANCHES[@]}" >&2
         if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
             log_error "No branches selected. Exiting."
             exit 1
         fi
+        echo
+        echo "You have selected the following target branches for sync:" >&2
+        for b in "${TARGET_BRANCHES[@]}"; do
+            echo "  - $b" >&2
+        done
+        echo
     fi
 
     local original_branch
