@@ -15,6 +15,25 @@ fi
 source "$(dirname "$0")/git-sync-utils.sh"
 
 main() {
+    echo "[DEBUG] Running main() in sync-all-files-to-specified-branches.sh" >&2
+    # --- Option: Push current branch to remote with detailed summary ---
+    for arg in "$@"; do
+        if [[ "$arg" == "--push-current-with-summary" ]]; then
+            local branch
+            branch=$(git symbolic-ref --short HEAD)
+            local changed_files diff_stat commit_msg
+            changed_files=$(git status --short)
+            diff_stat=$(git diff --stat)
+            commit_msg="Sync: Update $branch\n\n--- Changed Files ---\n${changed_files}\n\n--- Diff Summary ---\n${diff_stat}\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
+            # Auto-commit and push without prompt
+            git add -A
+            git commit -m "$commit_msg"
+            git push origin "$branch"
+            echo "Pushed to origin/$branch with detailed summary."
+            exit 0
+        fi
+    done
     # --- Optional: Auto-commit before sync if requested ---
     AUTO_COMMIT=false
     for arg in "$@"; do
@@ -56,27 +75,7 @@ main() {
       done
     fi
 
-    # --- Show all branches, highlight current branch in green and with asterisk ---
-    local current_branch
-    current_branch=$(git symbolic-ref --short HEAD)
-    echo
-    echo "Available branches (\033[32m*\033[0m = current):"
-    # Check if current branch has uncommitted changes
-    local branch_status_color
-    if [[ -n $(git status --porcelain) ]]; then
-      branch_status_color="\033[33m"  # yellow
-    else
-      branch_status_color="\033[32m"  # green
-    fi
-    git for-each-ref --format='%(refname:short)' refs/heads/ | while read branch; do
-      if [[ "$branch" == "$current_branch" ]]; then
-        # Color and asterisk
-        printf "  %b* %s\033[0m\n" "$branch_status_color" "$branch"
-      else
-        printf "    %s\n" "$branch"
-      fi
-    done
-    echo
+    # (Branch list is now only shown in prompt_for_branches)
 
 
     # --- Argument Parsing ---
@@ -104,10 +103,8 @@ main() {
 
     # If no target branches are provided after parsing, prompt the user
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
-        log_info "No target branches specified. Prompting for branch selection..."
-        # Use zsh array capture for robust multi-branch selection
-        TARGET_BRANCHES=(${(z)$(prompt_for_branches)})
-        log_info "User selected branches: ${TARGET_BRANCHES[*]}"
+        prompt_for_branches
+        TARGET_BRANCHES=("${branches[@]}")
         if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
             log_error "No branches selected. Exiting."
             exit 1
@@ -118,9 +115,41 @@ main() {
     original_branch=$(git symbolic-ref --short HEAD)
     log_info "Current branch is '${original_branch}'."
 
-    if [[ " ${TARGET_BRANCHES[*]} " =~ " ${original_branch} " ]]; then
-        log_error "Cannot sync to the current active branch ('${original_branch}'). Please remove it from the target list."
-        exit 1
+    # --- If current branch is in the sync list, auto-commit and push it, then remove from sync targets ---
+    local current_in_targets=false
+    for b in "${TARGET_BRANCHES[@]}"; do
+        if [[ "$b" == "$original_branch" ]]; then
+            current_in_targets=true
+            break
+        fi
+    done
+    if [ "$current_in_targets" = true ]; then
+        log_info "Current branch '${original_branch}' is in the sync target list. Auto-committing and pushing before syncing others."
+        local changed_files diff_stat commit_msg
+        changed_files=$(git status --short)
+        diff_stat=$(git diff --stat)
+        commit_msg="Sync: Update $original_branch\n\n--- Changed Files ---\n${changed_files}\n\n--- Diff Summary ---\n${diff_stat}\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
+        print -P "\n%F{cyan}--- Commit message preview for $original_branch ---\n$commit_msg%f\n"
+        git add -A
+        if git diff --cached --quiet; then
+            log_info "No staged changes to commit on '$original_branch'. Skipping commit."
+        else
+            git commit -m "$commit_msg"
+        fi
+        git push "$REMOTE" "$original_branch"
+        log_info "Pushed current branch '$original_branch' to '$REMOTE' with detailed summary."
+        # Remove current branch from TARGET_BRANCHES
+        local new_targets=()
+        for b in "${TARGET_BRANCHES[@]}"; do
+            if [[ "$b" != "$original_branch" ]]; then
+                new_targets+=("$b")
+            fi
+        done
+        TARGET_BRANCHES=("${new_targets[@]}")
+        if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
+            log_info "No other branches to sync after pushing current branch. Exiting."
+            exit 0
+        fi
     fi
 
     handle_stash "$STASH_CHANGES" "$DRY_RUN"

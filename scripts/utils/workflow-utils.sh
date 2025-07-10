@@ -16,30 +16,62 @@ typeset -ga all_targets
 
 # Prompt user for branches interactively (modularized, zsh-idiomatic)
 prompt_for_branches() {
-  print -P "%B%F{yellow}No branches specified. Please enter the branches you want to sync to (space-separated or one per line):%f%b"
-  print -P "%B%F{green}When you are done, press Enter twice to finish entering branch names.%f%b"
-  local branch_input=""
-  local first_entry=true
-  while IFS= read -r line; do
-    [[ -z "$line" ]] && break
-    branch_input+=" $line"
-    if [[ $first_entry == false ]]; then
-      print -P "%B%F{green}If you are done, press Enter again to finish entering branch names.%f%b"
+  echo "[DEBUG] Entered prompt_for_branches function" >&2
+  # Show all local branches, numbered, with current branch highlighted and colored
+  local all_branches current_branch idx status_color branch
+  all_branches=($(git for-each-ref --format='%(refname:short)' refs/heads/))
+  current_branch=$(git symbolic-ref --short HEAD)
+  print -P "%F{cyan}[DEBUG] Detected current branch: '$current_branch'%f"
+  print -P "%F{cyan}[DEBUG] All branches: ${all_branches[@]}%f"
+  idx=1
+  local branch_list=()
+  local found_current=false
+  for branch in "${all_branches[@]}"; do
+    local branch_trimmed current_trimmed
+    branch_trimmed="${branch//[[:space:]]/}"
+    current_trimmed="${current_branch//[[:space:]]/}"
+    if [[ "$branch_trimmed" == "$current_trimmed" ]]; then
+      found_current=true
     fi
-    first_entry=false
+    branch_list+=("$branch")
   done
-  if [[ -z "$branch_input" ]]; then
-    print -P "%B%F{red}No branches entered. Exiting.%f%b"
+  # If current branch is not in the list, add it at the top
+  if [[ "$found_current" == false ]]; then
+    branch_list=("$current_branch" "${branch_list[@]}")
+  fi
+  print -P "%F{cyan}[DEBUG] Final branch list: ${branch_list[@]}%f"
+  print -P "%B%F{yellow}No target branches specified. Please select from the list below:%f%b"
+  print -P "%BAvailable branches:%b"
+  for branch in "${branch_list[@]}"; do
+    local branch_trimmed current_trimmed
+    branch_trimmed="${branch//[[:space:]]/}"
+    current_trimmed="${current_branch//[[:space:]]/}"
+    if [[ "$branch_trimmed" == "$current_trimmed" ]]; then
+      if [[ -n $(git status --porcelain) ]]; then
+        status_color="%F{yellow}"
+      else
+        status_color="%F{green}"
+      fi
+      print -P "  ${(l:2::0:)$idx}) ${status_color}* $branch%f"
+    else
+      print -P "  ${(l:2::0:)$idx})   $branch"
+    fi
+    ((idx++))
+  done
+  print -P "%BType branch numbers separated by space (e.g. 1 3 5), or '+' to add a new branch. Press 'Enter' when done:%b "
+  read -r branch_nums
+  if [[ -z "$branch_nums" ]]; then
+    print -P "%B%F{red}No branches selected. Exiting.%f%b"
     return 1
   fi
-  # Split branch_input on commas and whitespace (zsh compatible), trim, and only add non-empty
-  typeset -a branch_array
-  branch_array=(${(s:,:)branch_input// /,})
-  for b in "${branch_array[@]}"; do
-    local b_trimmed="${b//[[:space:]]/}"
-    if [[ -n "$b_trimmed" ]]; then
-      branches+=("$b_trimmed")
+  typeset -a selected
+  for num in ${(z)branch_nums}; do
+    if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#all_branches[@]} )); then
+      selected+=("${all_branches[$((num-1))]}")
     fi
+  done
+  for b in "${selected[@]}"; do
+    branches+=("$b")
   done
 }
 
