@@ -1,6 +1,7 @@
-
 #!/bin/zsh
 # git-utils.sh: Git-related utility functions for sync scripts
+
+
 
 # Ensure zsh color support
 autoload -Uz colors && colors

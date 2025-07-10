@@ -1,6 +1,8 @@
 #!/bin/zsh
 # summary-utils.sh: Commit summary and status display for sync scripts
 
+
+
 # Helper: Print branch status (ahead/behind/sync)
 print_branch_status() {
   local branch="$1"
@@ -113,6 +115,12 @@ show_stash_and_precommit_summary() {
 export -f show_stash_and_precommit_summary
 #!/bin/zsh
 # summary-utils.sh: Summary display helpers for sync scripts
+
+# Prevent direct execution
+if [[ "${BASH_SOURCE[0]:-${(%):-%N}}" == "$0" ]]; then
+  echo "This is a utility module, not meant to be run directly." >&2
+  exit 1
+fi
 
 show_stash_and_precommit_summary() {
   local GREEN='\033[32m'

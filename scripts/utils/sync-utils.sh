@@ -1,6 +1,7 @@
-
 #!/bin/zsh
 # sync-utils.sh: Branch sync and parallel job helpers for sync scripts
+
+
 
 # Function to sync a single branch
 sync_branch() {

@@ -1,4 +1,13 @@
 #!/bin/zsh
+# --- Path Integrity Guard ---
+# If the script is not found at this path, print a clear error and exit.
+if [[ ! -f "$0" ]]; then
+  echo "ERROR: The script path appears to be invalid or split across lines."
+  echo "Please ensure you run this script with the full, single-line path."
+  echo "Example:"
+  echo "  /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/scripts/sync-all-files-to-specified-branches.sh"
+  exit 2
+fi
 # sync-all-files-to-specified-branches.sh
 
 # --- Drag-and-drop/quoted path fix: auto-re-exec as a command if needed ---
@@ -11,8 +20,17 @@ elif [[ "$0" == /* ]] && [[ ! -x "$0" ]]; then
     exec zsh "$0" "$@"
 fi
 
+
+
 # --- Source Utility Functions ---
-source "$(dirname "$0")/git-sync-utils.sh"
+source "$(dirname "$0")/utils/git-utils.sh"
+source "$(dirname "$0")/utils/ramdisk-utils.sh"
+source "$(dirname "$0")/utils/cli-utils.sh"
+source "$(dirname "$0")/utils/commit-utils.sh"
+source "$(dirname "$0")/utils/summary-utils.sh"
+source "$(dirname "$0")/utils/sync-utils.sh"
+source "$(dirname "$0")/utils/workflow-utils.sh"
+source "$(dirname "$0")/utils/prompt-utils.sh"
 
 main() {
     echo "[DEBUG] TARGET_BRANCHES before prompt: '${TARGET_BRANCHES[@]}'" >&2
@@ -95,19 +113,32 @@ main() {
 
     # If no target branches are provided after parsing, prompt the user
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
-        prompt_for_branches
-        # Always reload branches from temp file if set (zsh arrays are not exported)
-        if [[ -n "$GIT_SYNC_SELECTED_BRANCHES_FILE" && -f "$GIT_SYNC_SELECTED_BRANCHES_FILE" ]]; then
-            mapfile -t TARGET_BRANCHES < "$GIT_SYNC_SELECTED_BRANCHES_FILE"
-            echo "[DEBUG] TARGET_BRANCHES after prompt: ${TARGET_BRANCHES[@]}" >&2
-        else
-            TARGET_BRANCHES=("${branches[@]}")
-            echo "[DEBUG] TARGET_BRANCHES fallback from branches: ${TARGET_BRANCHES[@]}" >&2
-        fi
-        if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
+        # Use prompt-utils.sh for branch selection
+        local all_branches
+        all_branches=(${(@f)$(git for-each-ref --format='%(refname:short)' refs/heads/)})
+        local selected_branches
+        selected_branches=(${(@f)$(prompt_for_branch_selection "${all_branches[@]}")})
+        # Remove empty and non-branch lines (filter out menu/instructions)
+        local filtered_branches=()
+        for b in "${selected_branches[@]}"; do
+          for ab in "${all_branches[@]}"; do
+            if [[ "$b" == "$ab" ]]; then
+              filtered_branches+=("$b")
+              break
+            fi
+          done
+        done
+        if [[ ${#filtered_branches[@]} -eq 0 ]]; then
             log_error "No branches selected. Exiting."
             exit 1
         fi
+        TARGET_BRANCHES=("${filtered_branches[@]}")
+        # Write to temp file for consistency
+        local session_id="${GIT_SYNC_SESSION_ID:-$$}"
+        local tmp_branches_file="/tmp/git_sync_selected_branches.$USER.$session_id.zsh"
+        print -l -- "${TARGET_BRANCHES[@]}" > "$tmp_branches_file"
+        export GIT_SYNC_SELECTED_BRANCHES_FILE="$tmp_branches_file"
+        echo "[DEBUG] TARGET_BRANCHES after prompt: ${TARGET_BRANCHES[@]}" >&2
     fi
 
     local original_branch

@@ -1,6 +1,7 @@
-
 #!/bin/zsh
 # ramdisk-utils.sh: RAM disk and temp directory helpers for sync scripts
+
+
 
 setup_ramdisk() {
   if [[ "$(uname)" == "Darwin" ]]; then

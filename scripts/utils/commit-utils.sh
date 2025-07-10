@@ -1,3 +1,90 @@
+# --- Modular summary section formatting ---
+format_commit_summary_section() {
+  local label="$1"; local content="$2"
+  [[ -n "$content" ]] && echo "\n--- $label ---\n$content"
+}
+
+format_commit_purpose() {
+  local scripts_list="$1"; local logs_list="$2"; local configs_list="$3"; local docs_list="$4"; local other_list="$5"
+  if [[ -n "$scripts_list" && -n "$logs_list" ]]; then
+    local scripts_files=$(echo "$scripts_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    local logs_files=$(echo "$logs_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    echo "Synchronized automation script ($scripts_files) and updated log file ($logs_files) to maintain up-to-date automation and accurate history."
+  elif [[ -n "$scripts_list" ]]; then
+    local scripts_files=$(echo "$scripts_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    echo "Updated automation script ($scripts_files) to improve project workflow."
+  elif [[ -n "$logs_list" ]]; then
+    local logs_files=$(echo "$logs_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    echo "Archived recent log activity ($logs_files) for traceability."
+  elif [[ -n "$configs_list" ]]; then
+    local configs_files=$(echo "$configs_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    echo "Updated config files ($configs_files) for environment or build changes."
+  elif [[ -n "$docs_list" ]]; then
+    local docs_files=$(echo "$docs_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    echo "Updated documentation ($docs_files) for clarity or accuracy."
+  elif [[ -n "$other_list" ]]; then
+    local other_files=$(echo "$other_list" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
+    echo "Updated project files ($other_files) as part of routine maintenance."
+  else
+    echo "Project sync and maintenance."
+  fi
+}
+
+# --- Modular temp file commit logic ---
+commit_with_tempfile() {
+  local commit_msg="$1"
+  local tmpfile; tmpfile=$(make_tmpfile)
+  echo "$commit_msg" > "$tmpfile"
+  git commit -F "$tmpfile"
+}
+
+# --- Modular branch deduplication ---
+deduplicate_branches() {
+  typeset -A seen; local unique=();
+  for b in "$@"; do
+    [[ -z "${seen[$b]:-}" ]] && unique+=("$b") && seen[$b]=1
+  done
+  echo "${unique[@]}"
+}
+
+# --- Modular repo state check ---
+ensure_git_repo_ready() {
+  if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    log_error "Not a git repository. Please initialize a new repository or run this script from the root of a git project."
+    exit 1
+  fi
+  if ! git rev-parse --verify HEAD > /dev/null 2>&1; then
+    log_info "Empty repository detected. Creating initial commit on 'main' branch..."
+    git checkout -b main
+    git add -A
+    if git diff-index --quiet HEAD; then
+      log_info "No changes to commit. Initial commit not created."
+    else
+      git commit -m "Initial commit"
+    fi
+  fi
+  local current_branch; current_branch=$(git rev-parse --abbrev-ref HEAD)
+  if [[ -z "$current_branch" ]]; then
+    log_error "Could not determine the current branch. Please check your git repository status."
+    exit 1
+  fi
+  log_info "Running on branch: $current_branch"
+}
+
+# --- Modular summary printing ---
+print_commit_summary() {
+  local commit_msg="$1"
+  print -P "\n%F{cyan}--- Commit message preview ---\n$commit_msg%f\n"
+}
+
+# --- Modular all checks orchestrator ---
+run_all_checks_and_handle_errors() {
+  run_lint_and_handle_errors || return $?
+  run_typescript_and_handle_errors || return $?
+  local jest_summary; jest_summary=$(run_jest_and_handle_errors) || return $?
+  local pw_summary; pw_summary=$(run_playwright_and_handle_errors) || return $?
+  print_commit_summary "$jest_summary\n$pw_summary"
+}
 
 
 # commit-utils.sh: Commit message and prompt helpers for sync scripts
@@ -14,6 +101,8 @@
 
 #!/bin/zsh
 set -euo pipefail
+
+
 
 
 
@@ -45,12 +134,12 @@ cleanup_tmpfiles() {
 }
 trap cleanup_tmpfiles EXIT
 
-# --- Modular prompt for fix/wip/abort ---
-# Usage: prompt_fix_wip_abort <context>
+
+# --- Modular prompt for fix/wip/abort now in prompt-utils.sh ---
 prompt_fix_wip_abort() {
   local context="$1"
-  print -nP "%F{yellow}$context: What do you want to do? (fix/wip/abort): %f"
-  local decision; read decision
+  local decision
+  decision=$(prompt_for_fix_wip_abort)
   case "$decision" in
     fix) $SHELL; exit 1 ;;
     wip) return 2 ;;
@@ -471,20 +560,12 @@ export commit_and_push_with_summary
 # commit-utils.sh: Commit message helpers and interactive commit prompt
 
 build_commit_message() {
-  local SKIP_TESTS="$1"
-  local COMMIT_MODE="$2"
-  local CHANGED_FILES="$3"
-  local DIFF_STAT="$4"
-  local SCRIPTS_LIST="$5"
-  local LOGS_LIST="$6"
-  local OTHER_LIST="$7"
-
+  local SKIP_TESTS="$1" COMMIT_MODE="$2" CHANGED_FILES="$3" DIFF_STAT="$4" SCRIPTS_LIST="$5" LOGS_LIST="$6" OTHER_LIST="$7"
   local SUMMARY_OVERVIEW=""
   [[ -n "$SCRIPTS_LIST" ]] && SUMMARY_OVERVIEW+=" Scripts:\n$SCRIPTS_LIST"
   [[ -n "$LOGS_LIST" ]] && SUMMARY_OVERVIEW+=" Logs:\n$LOGS_LIST"
   [[ -n "$OTHER_LIST" ]] && SUMMARY_OVERVIEW+=" Other:\n$OTHER_LIST"
   SUMMARY_OVERVIEW+="-Improved sync or automation scripts."
-
   local TITLE="Sync project files: updated scripts and logs"
   if [[ "$SKIP_TESTS" = true ]]; then
     TITLE+=" (tests/lint/type checks skipped)"
@@ -496,29 +577,9 @@ build_commit_message() {
   fi
   local commit_msg="$TITLE\n"
   commit_msg+="\n--- Summary ---\n$SUMMARY_OVERVIEW\n"
-
-  local PURPOSE_MSG=""
-  if [[ -n "$SCRIPTS_LIST" && -n "$LOGS_LIST" ]]; then
-    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Synchronized automation script ($SCRIPTS_FILES) and updated log file ($LOGS_FILES) to maintain up-to-date automation and accurate history."
-  elif [[ -n "$SCRIPTS_LIST" ]]; then
-    SCRIPTS_FILES=$(echo "$SCRIPTS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Updated automation script ($SCRIPTS_FILES) to improve project workflow."
-  elif [[ -n "$LOGS_LIST" ]]; then
-    LOGS_FILES=$(echo "$LOGS_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Archived recent log activity ($LOGS_FILES) for traceability."
-  elif [[ -n "$OTHER_LIST" ]]; then
-    OTHER_FILES=$(echo "$OTHER_LIST" | sed 's/-Updated //g' | tr '\n' ',' | sed 's/,$//' | sed 's/,$//')
-    PURPOSE_MSG="Updated project files ($OTHER_FILES) as part of routine maintenance."
-  else
-    PURPOSE_MSG="Project sync and maintenance."
-  fi
-  commit_msg+="\n--- Purpose ---\n$PURPOSE_MSG"
+  commit_msg+="\n--- Purpose ---\n$(format_commit_purpose "$SCRIPTS_LIST" "$LOGS_LIST" "" "" "$OTHER_LIST")"
   commit_msg+="\n\n--- Changed Files ---\n$CHANGED_FILES\n"
-
-  local DIFF_STAT_DASHED=""
-  local DIFF_STAT_SUMMARY=""
+  local DIFF_STAT_DASHED="" DIFF_STAT_SUMMARY=""
   while IFS= read -r line; do
     if [[ "$line" =~ files?\ changed ]]; then
       DIFF_STAT_SUMMARY="$line"
@@ -544,12 +605,12 @@ build_commit_message() {
 
 interactive_commit_prompt() {
   local commit_msg="$1"
-  echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n$commit_msg\n"
-  echo "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
-  read commit_msg_action
-  case "$commit_msg_action" in
+  print -P "\n%F{cyan}--- Commit message preview ---%f\n$commit_msg\n"
+  local action
+  print -P "Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: "
+  read action
+  case "$action" in
     e|E)
-      # Open in $EDITOR or fallback to nano
       ${EDITOR:-nano} "$TMP_COMMIT_MSG_FILE"
       ;;
     q|Q)
