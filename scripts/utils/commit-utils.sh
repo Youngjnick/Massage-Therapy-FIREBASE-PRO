@@ -1,3 +1,52 @@
+# Generates a detailed commit summary for the given branch
+# Usage: generate_detailed_commit_summary <branch>
+# Output: multi-section commit message (changed files, diff, test results)
+generate_detailed_commit_summary() {
+    local branch="$1"
+    local changed_files diff_stat test_results commit_msg
+    changed_files=$(git status --short)
+    diff_stat=$(git diff --stat)
+    # Optionally run tests and capture results (customize as needed)
+    if type run_pre_sync_tests &>/dev/null; then
+        test_results=$(run_pre_sync_tests true true 2>&1)
+    else
+        test_results="[Test summary not available]"
+    fi
+    commit_msg="Sync: Update $branch\n\n--- Changed Files ---\n${changed_files}\n\n--- Diff Summary ---\n${diff_stat}\n\n--- Test Results ---\n${test_results}\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
+
+    # Preview and allow modification
+    local tmpfile
+    tmpfile=$(mktemp)
+    echo "$commit_msg" > "$tmpfile"
+    echo -e "\n\033[1;36m--- Commit message preview ---\033[0m\n"
+    cat "$tmpfile"
+    echo
+    while true; do
+        print -nP "%F{yellow}Do you want to (e)dit, (a)ccept, or (q)uit? [a/e/q]: %f"
+        read action
+        case "$action" in
+            e|E)
+                ${EDITOR:-nano} "$tmpfile"
+                clear
+                echo -e "\n\033[1;36m--- Commit message preview (edited) ---\033[0m\n"
+                cat "$tmpfile"
+                echo
+                ;;
+            q|Q)
+                rm -f "$tmpfile"
+                echo "Aborted by user."
+                exit 1
+                ;;
+            a|A|"")
+                break
+                ;;
+            *)
+                ;;
+        esac
+    done
+    cat "$tmpfile"
+    rm -f "$tmpfile"
+}
 
 
 # commit-utils.sh: Commit message and prompt helpers for sync scripts
