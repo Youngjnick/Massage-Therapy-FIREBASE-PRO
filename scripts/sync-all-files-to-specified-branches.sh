@@ -66,15 +66,6 @@ main() {
         log_error "This script must be run from a terminal for interactive prompts."
         exit 1
     fi
-    echo "Normalizing line endings for all shell scripts to Unix (LF)..."
-    if command -v dos2unix >/dev/null 2>&1; then
-      dos2unix scripts/*.sh
-    else
-      echo "dos2unix not found, using sed fallback."
-      for script in scripts/*.sh; do
-        sed -i '' $'s/\r$//' "$script"
-      done
-    fi
 
     # (Branch list is now only shown in prompt_for_branches)
 
@@ -105,7 +96,14 @@ main() {
     # If no target branches are provided after parsing, prompt the user
     if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
         prompt_for_branches
-        TARGET_BRANCHES=("${branches[@]}")
+        # Always reload branches from temp file if set (zsh arrays are not exported)
+        if [[ -n "$GIT_SYNC_SELECTED_BRANCHES_FILE" && -f "$GIT_SYNC_SELECTED_BRANCHES_FILE" ]]; then
+            mapfile -t TARGET_BRANCHES < "$GIT_SYNC_SELECTED_BRANCHES_FILE"
+            echo "[DEBUG] TARGET_BRANCHES after prompt: ${TARGET_BRANCHES[@]}" >&2
+        else
+            TARGET_BRANCHES=("${branches[@]}")
+            echo "[DEBUG] TARGET_BRANCHES fallback from branches: ${TARGET_BRANCHES[@]}" >&2
+        fi
         if [ ${#TARGET_BRANCHES[@]} -eq 0 ]; then
             log_error "No branches selected. Exiting."
             exit 1
@@ -170,6 +168,7 @@ main() {
         echo "  - $b" >&2
     done
     echo
+    echo "[DEBUG] Confirming sync with TARGET_BRANCHES: ${TARGET_BRANCHES[@]}" >&2
     if ! confirm_sync "$DRY_RUN"; then
         pop_stash_if_needed "$STASH_CHANGES"
         exit 0
@@ -229,6 +228,10 @@ main() {
         done
         echo
         echo "To see full diffs, run: git diff <source>..<target>"
+    fi
+    # Final cleanup of temp file after sync
+    if type cleanup_selected_branches_file &>/dev/null; then
+      cleanup_selected_branches_file
     fi
     if [ "$any_failed" -eq 1 ]; then
         log_error "One or more sync jobs failed. Please review the logs."

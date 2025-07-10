@@ -101,17 +101,21 @@ confirm_selected_branches() {
 
 ## Write selected branches to a temp file for main orchestrator to source
 write_selected_branches_to_file() {
-  local tmp_branches_file="/tmp/git_sync_selected_branches.$USER.$$.zsh"
+  # Use a session ID that is set by the main orchestrator and exported
+  local session_id="${GIT_SYNC_SESSION_ID:-$$}"
+  local tmp_branches_file="/tmp/git_sync_selected_branches.$USER.$session_id.zsh"
   print -l -- "${branches[@]}" > "$tmp_branches_file"
   export GIT_SYNC_SELECTED_BRANCHES_FILE="$tmp_branches_file"
 }
 
 # Remove the temp file after use
 cleanup_selected_branches_file() {
-  if [[ -n "$GIT_SYNC_SELECTED_BRANCHES_FILE" && -f "$GIT_SYNC_SELECTED_BRANCHES_FILE" ]]; then
-    rm -f "$GIT_SYNC_SELECTED_BRANCHES_FILE"
-    unset GIT_SYNC_SELECTED_BRANCHES_FILE
+  local session_id="${GIT_SYNC_SESSION_ID:-$$}"
+  local tmp_branches_file="/tmp/git_sync_selected_branches.$USER.$session_id.zsh"
+  if [[ -f "$tmp_branches_file" ]]; then
+    rm -f "$tmp_branches_file"
   fi
+  unset GIT_SYNC_SELECTED_BRANCHES_FILE
 }
 }
 
