@@ -285,7 +285,17 @@ sync_branch_worktree() {
                 log_warning "No changes to commit for branch '$branch'. (If you expected changes, check rsync source/dest and excludes.)"
                 exit 0
             fi
-            if git commit -m "Sync from ${original_branch}"; then
+            # Generate detailed commit message using build_commit_message from commit-utils.sh
+            local changed_files diff_stat commit_msg
+            changed_files=$(git status --short)
+            diff_stat=$(git diff --stat)
+            if type build_commit_message &>/dev/null; then
+                commit_msg=$(build_commit_message false "Sync: Update $branch from $original_branch" "$changed_files" "$diff_stat" "" "" "")
+            else
+                commit_msg="Sync: Update $branch from $original_branch\n\n--- Changed Files ---\n${changed_files}\n\n--- Diff Summary ---\n${diff_stat}\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            fi
+            print -P "\n%F{cyan}--- Commit message preview for $branch ---\n$commit_msg%f\n"
+            if git commit -m "$commit_msg"; then
                 if [ "$FAST_MODE" = true ]; then
                     log_info "Fast mode enabled, skipping remote push for '$branch'."
                 else

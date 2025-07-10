@@ -114,6 +114,21 @@ main() {
         echo
     fi
 
+    # Always include the current branch in TARGET_BRANCHES if not present
+    local original_branch
+    original_branch=$(git symbolic-ref --short HEAD)
+    local found_current=false
+    for b in "${TARGET_BRANCHES[@]}"; do
+        if [[ "$b" == "$original_branch" ]]; then
+            found_current=true
+            break
+        fi
+    done
+    if [ "$found_current" = false ]; then
+        TARGET_BRANCHES=("$original_branch" "${TARGET_BRANCHES[@]}")
+        print -P "%F{yellow}[INFO]%f The current branch '%F{cyan}$original_branch%f' was not in the sync target list and will be included automatically for safety."
+    fi
+
     local original_branch
     original_branch=$(git symbolic-ref --short HEAD)
     log_info "Current branch is '${original_branch}'."

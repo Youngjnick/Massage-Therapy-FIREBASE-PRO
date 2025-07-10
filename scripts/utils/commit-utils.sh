@@ -534,8 +534,26 @@ build_commit_message() {
   if [[ -n "$DIFF_STAT_SUMMARY" ]]; then
     commit_msg+="\n$DIFF_STAT_SUMMARY"
   fi
+  # Always add a Test Results section, even if tests are not skipped
+  commit_msg+="\n--- Test Results ---\n"
   if [[ "$SKIP_TESTS" = true ]]; then
-    commit_msg+="\n--- Test Results ---\nTests skipped."
+    commit_msg+="Tests skipped."
+  else
+    # Try to include breakdown and failing tests if available
+    local jest_summary_file="scripts/test-output.txt"
+    if [[ -f "$jest_summary_file" ]]; then
+      local summary_line failing_tests
+      summary_line=$(grep -E '^Tests:' "$jest_summary_file" | tail -1)
+      failing_tests=$(grep '^FAIL ' "$jest_summary_file" | awk '{print $2}' | xargs)
+      if [[ -n "$summary_line" ]]; then
+        commit_msg+="$summary_line\n"
+      fi
+      if [[ -n "$failing_tests" ]]; then
+        commit_msg+="Failing: $failing_tests\n"
+      fi
+    else
+      commit_msg+="Tests passed."
+    fi
   fi
   commit_msg+="\n\nSync performed: $(date -u '+%Y-%m-%d %H:%M UTC')\n"
   commit_msg+="\n--- Reviewer Notes ---\nNo manual testing required; automation only."
