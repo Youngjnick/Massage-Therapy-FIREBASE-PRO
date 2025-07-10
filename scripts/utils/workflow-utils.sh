@@ -16,13 +16,10 @@ typeset -ga all_targets
 
 # Prompt user for branches interactively (modularized, zsh-idiomatic)
 prompt_for_branches() {
-  echo "[DEBUG] Entered prompt_for_branches function" >&2
   # Show all local branches, numbered, with current branch highlighted and colored
   local all_branches current_branch idx status_color branch
   all_branches=($(git for-each-ref --format='%(refname:short)' refs/heads/))
   current_branch=$(git symbolic-ref --short HEAD)
-  print -P "%F{cyan}[DEBUG] Detected current branch: '$current_branch'%f"
-  print -P "%F{cyan}[DEBUG] All branches: ${all_branches[@]}%f"
   idx=1
   local branch_list=()
   local found_current=false
@@ -39,7 +36,6 @@ prompt_for_branches() {
   if [[ "$found_current" == false ]]; then
     branch_list=("$current_branch" "${branch_list[@]}")
   fi
-  print -P "%F{cyan}[DEBUG] Final branch list: ${branch_list[@]}%f"
   print -P "%B%F{yellow}No target branches specified. Please select from the list below:%f%b"
   print -P "%BAvailable branches:%b"
   for branch in "${branch_list[@]}"; do
@@ -65,21 +61,66 @@ prompt_for_branches() {
     return 1
   fi
   typeset -a selected
+  local branch_count=${#branch_list[@]}
   for num in ${(z)branch_nums}; do
-    if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#all_branches[@]} )); then
-      selected+=("${all_branches[$((num-1))]}")
+    if [[ "$num" =~ ^[0-9]+$ ]] && (( num >= 1 && num <= branch_count )); then
+      selected+=("${branch_list[$((num-1))]}")
     fi
   done
+  # Remove duplicates and preserve order
+  local seen=()
+  branches=()
   for b in "${selected[@]}"; do
-    branches+=("$b")
+    if [[ -z "${seen[(r)$b]}" ]]; then
+      branches+=("$b")
+      seen+=("$b")
+    fi
   done
+  show_selected_branches
+  confirm_selected_branches || return 1
+  write_selected_branches_to_file
+# Show selected branches to the user
+show_selected_branches() {
+  print -P "%BYou have selected the following branches:%b"
+  for b in "${branches[@]}"; do
+    print -P "  - $b"
+  done
+}
+
+# Confirm selection with the user
+confirm_selected_branches() {
+  print -P "%BConfirm selection? (y/N):%b "
+  read -r confirm
+  if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+    print -P "%F{red}Aborted by user.%f"
+    branches=()
+    return 1
+  fi
+  return 0
+}
+
+## Write selected branches to a temp file for main orchestrator to source
+write_selected_branches_to_file() {
+  local tmp_branches_file="/tmp/git_sync_selected_branches.$USER.$$.zsh"
+  print -l -- "${branches[@]}" > "$tmp_branches_file"
+  export GIT_SYNC_SELECTED_BRANCHES_FILE="$tmp_branches_file"
+}
+
+# Remove the temp file after use
+cleanup_selected_branches_file() {
+  if [[ -n "$GIT_SYNC_SELECTED_BRANCHES_FILE" && -f "$GIT_SYNC_SELECTED_BRANCHES_FILE" ]]; then
+    rm -f "$GIT_SYNC_SELECTED_BRANCHES_FILE"
+    unset GIT_SYNC_SELECTED_BRANCHES_FILE
+  fi
+}
 }
 
 # Validate and prompt for branches, including interactive input if needed
 validate_and_prompt_branches() {
   ensure_git_repo
   validate_branches
-  if [[ ${#branches[@]} -eq 0 ]]; then
+  # Robust check: always prompt if branches is empty or unset
+  if [[ -z "${branches+x}" || ${#branches[@]} -eq 0 ]]; then
     prompt_for_branches || return 1
   fi
 }

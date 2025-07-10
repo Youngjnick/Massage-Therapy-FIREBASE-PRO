@@ -15,6 +15,7 @@ fi
 source "$(dirname "$0")/git-sync-utils.sh"
 
 main() {
+    echo "[DEBUG] TARGET_BRANCHES before prompt: '${TARGET_BRANCHES[@]}'" >&2
     echo "[DEBUG] Running main() in sync-all-files-to-specified-branches.sh" >&2
     # --- Option: Push current branch to remote with detailed summary ---
     for arg in "$@"; do
