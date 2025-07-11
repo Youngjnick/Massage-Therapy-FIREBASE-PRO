@@ -20,6 +20,6 @@ select_branches_interactive() {
 }
 
 branch_cleanup_modular() {
-  # Example: delete merged branches except main/master
-  git branch --merged | grep -vE 'main|master|\*' | xargs -n 1 git branch -d
+  echo "[INFO] Running branch cleanup (modular)..."
+  # Placeholder for branch cleanup logic
 }

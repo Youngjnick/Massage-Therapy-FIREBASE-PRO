@@ -24,6 +24,7 @@ done
 #        --no-verify       Skip pre-commit and pre-push git hooks (skips all git hooks, not just tests; use with caution).
 #        --no-lint         Skip linting and formatting checks.
 #        --no-tests        Skip running tests before syncing.
+#        --no-playwright   Skip Playwright E2E tests only.
 #        --config <file>   Use a custom config file for default/toggleable options.
 #        --branch <name>   Use a specific branch as source/target for syncing.
 #        ...add others as needed for your workflow.
@@ -240,7 +241,8 @@ Options:
   --debug           Enable debug output
   --no-verify       Skip all git hooks
   --no-lint         Skip linting/formatting
-  --no-tests        Skip running tests
+  --no-tests        Skip running all tests
+  --no-playwright   Skip Playwright E2E tests only
   --config <file>   Use custom config file
   --branch <name>   Specify branch for sync
   --rebase          Use rebase instead of merge
@@ -490,10 +492,10 @@ select_branches() {
   branches=($(git for-each-ref --sort=committerdate refs/heads/ --format='%(refname:short)'))
   branch_count=${#branches[@]}
   echo "\nAvailable branches:" >&2
-  for i in {1..$branch_count}; do
-    local idx=$((i-1))
-    local bname="${branches[$idx]}"
-    local mark=" "
+  for ((i=1; i<=branch_count; i++)); do
+    idx=$((i-1))
+    bname="${branches[$idx]}"
+    mark=" "
     if [[ "$bname" == "$(git rev-parse --abbrev-ref HEAD)" ]]; then
       if git diff --quiet && git diff --cached --quiet; then
         mark="${color_success}*${color_reset}"
@@ -648,7 +650,52 @@ check_cicd_status_flow() {
 # MAIN MODULAR SYNC SCRIPT FLOW (CORE FEATURES ONLY)
 # =====================================================================
 
+interactive_flag_prompt() {
+  # Only prompt if not already processed
+  if [[ -z "$INTERACTIVE_FLAGS_PROCESSED" ]]; then
+    if (( $# == 0 )); then
+      echo "\nSelect options (type numbers separated by space, or press Enter for defaults):"
+      echo "  1. --no-tests        (Skip running all tests)"
+      echo "  2. --no-lint         (Skip linting/formatting)"
+      echo "  3. --no-verify       (Skip all git hooks)"
+      echo "  4. --dry-run         (Preview all actions without making changes)"
+      echo "  5. --auto-commit     (Auto-commit unstaged changes before syncing)"
+      echo "  6. --debug           (Enable debug output)"
+      echo "  7. --rebase          (Use rebase instead of merge)"
+      echo "  8. --no-playwright   (Skip Playwright E2E tests only)"
+      echo "  9. --help            (Show help and exit)"
+      echo -n "Your choice(s): "
+      read flag_nums
+      local new_args=()
+      for num in $flag_nums; do
+        case $num in
+          1) new_args+=(--no-tests) ;;
+          2) new_args+=(--no-lint) ;;
+          3) new_args+=(--no-verify) ;;
+          4) new_args+=(--dry-run) ;;
+          5) new_args+=(--auto-commit) ;;
+          6) new_args+=(--debug) ;;
+          7) new_args+=(--rebase) ;;
+          8) new_args+=(--no-playwright) ;;
+          9) print_help; exit 0 ;;
+        esac
+      done
+      if [[ ${#new_args[@]} -gt 0 ]]; then
+        # Preserve any original positional arguments (like branch names)
+        for arg in "$@"; do
+          new_args+=("$arg")
+        done
+        export INTERACTIVE_FLAGS_PROCESSED=1
+        exec "$0" "${new_args[@]}"
+      fi
+    fi
+    export INTERACTIVE_FLAGS_PROCESSED=1
+  fi
+}
+
 main() {
+  # 0. Interactive flag prompt (only if not already processed)
+  interactive_flag_prompt "$@"
   # 0. Drag-and-Drop Support & CLI Parsing
   handle_drag_and_drop "$@" || return $?
   parse_cli_args "$@"
