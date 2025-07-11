@@ -480,22 +480,7 @@ pre_sync_checks() {
   git rev-parse --is-inside-work-tree >/dev/null 2>&1 || { error "Not in a git repo"; return 1; }
   if [[ -f "$(dirname "$0")/lib/cli-parse.sh" ]]; then
     source "$(dirname "$0")/lib/cli-parse.sh"
-    parse_cli_args "$@"
-  fi
-  # Warn if there are unstaged/uncommitted changes and auto-commit is not enabled
-  if [[ $AUTO_COMMIT -ne 1 ]]; then
-    if [[ -n $(git status --porcelain) ]]; then
-      warn "You have unstaged or uncommitted changes in your working directory."
-      echo -n "Do you want to stage and commit all changes before continuing? (y/N): "
-      read stage_commit_confirm
-      if [[ "$stage_commit_confirm" =~ ^[yY](es)?$ ]]; then
-        git add -A
-        if [[ -f "$(dirname \"$0\")/lib/hooks.sh" ]]; then source "$(dirname \"$0\")/lib/hooks.sh"; fi
-        generate_commit_message_modular || return 1
-      else
-        warn "Continuing without staging/committing changes."
-      fi
-    fi
+    cli_parse_args "$@"
   fi
   # ...load config, check clean state, etc. (modularize as needed)...
   return 0
