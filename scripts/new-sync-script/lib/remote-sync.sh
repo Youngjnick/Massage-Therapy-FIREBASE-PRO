@@ -15,32 +15,40 @@ check_remote_divergence() {
 }
 
 sync_merge_flow_modular() {
-  # Parallel sync logic (placeholder)
-  local branches=($SYNC_BRANCHES)
-  for branch in "${branches[@]}"; do
-    echo "Syncing $branch..." >&2
-    git checkout "$branch" && git pull --rebase && git push
+  echo "[INFO] Syncing/merging branches (modular)..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would sync/merge branches: $SYNC_BRANCHES"; return 0; fi
+  local current_branch=$(git rev-parse --abbrev-ref HEAD)
+  for branch in $SYNC_BRANCHES; do
+    echo "[INFO] Syncing $current_branch into $branch..."
+    git checkout "$branch" && git merge "$current_branch" && git push origin "$branch"
+    if [[ $? -eq 0 ]]; then
+      echo "[SUCCESS] Synced $current_branch into $branch."
+    else
+      echo "[ERROR] Failed to sync $current_branch into $branch."
+    fi
   done
+  git checkout "$current_branch"
 }
 
 print_sync_summary_modular() {
-  echo "Sync summary for: $SYNC_BRANCHES" >&2
-  git log --oneline -n 5
+  echo "[INFO] Printing sync summary (modular)..."
+  # This could be expanded to print a table of results
 }
 
 post_sync_actions_modular() {
-  echo "Post-sync actions complete." >&2
+  echo "[INFO] Running post-sync actions (modular)..."
+  # Placeholder for any post-sync cleanup or notifications
 }
 
 open_github_page_modular() {
-  local url
-  url=$(git config --get remote.origin.url | sed 's/git@/https:\/\//;s/.git$//;s/:/\//')
-  url="${url//.git/}"
-  echo "Opening $url in browser..." >&2
-  if command -v open >/dev/null 2>&1; then open "$url"; fi
+  echo "[INFO] Opening GitHub page for branch (modular)..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would open GitHub page"; return 0; fi
+  local branch=$(git rev-parse --abbrev-ref HEAD)
+  local remote_url=$(git config --get remote.origin.url | sed 's/git@/https:\/\//;s/.git$//;s/:/\//')
+  open "$remote_url/tree/$branch"
 }
 
 preflight_remote_status_check_modular() {
-  git fetch --all
-  git remote -v
+  echo "[INFO] Preflight remote status check (modular)..."
+  # Placeholder for remote status check logic
 }

@@ -8,8 +8,6 @@ check_cicd_status() {
 }
 
 check_cicd_status_flow_modular() {
-  echo "Checking CI/CD status..." >&2
-  # Placeholder: poll GitHub Actions or CI API
-  echo "CI/CD status: (mocked) SUCCESS" >&2
-  return 0
+  echo "[INFO] Checking CI/CD status (modular)..."
+  # Placeholder for CI/CD status check logic
 }

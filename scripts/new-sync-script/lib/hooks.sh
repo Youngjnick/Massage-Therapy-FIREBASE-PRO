@@ -16,65 +16,44 @@ run_hook() {
 }
 
 run_lint() {
-  if command -v npm >/dev/null 2>&1; then
-    npm run lint || return 1
-  elif command -v yarn >/dev/null 2>&1; then
-    yarn lint || return 1
-  else
-    echo "No lint command found" >&2; return 1
-  fi
+  echo "[INFO] Running lint..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would run: npm run lint"; return 0; fi
+  npm run lint
 }
 
 run_typescript_check() {
-  if command -v npm >/dev/null 2>&1; then
-    npm run typecheck || return 1
-  elif command -v yarn >/dev/null 2>&1; then
-    yarn typecheck || return 1
-  else
-    echo "No typecheck command found" >&2; return 1
-  fi
+  echo "[INFO] Running TypeScript check..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would run: npm run typecheck"; return 0; fi
+  npm run typecheck
 }
 
 run_all_tests() {
-  if command -v npm >/dev/null 2>&1; then
-    npm test || return 1
-  elif command -v yarn >/dev/null 2>&1; then
-    yarn test || return 1
+  echo "[INFO] Running all tests (Jest & Playwright)..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would run: npm test && npx playwright test"; return 0; fi
+  if [[ "$NO_TESTS" == "1" ]]; then
+    echo "[INFO] Skipping all tests (--no-tests flag set)"
+    return 0
+  fi
+  npm test || return 1
+  if [[ -z "$NO_PLAYWRIGHT" ]]; then
+    npx playwright test || return 1
   else
-    echo "No test command found" >&2; return 1
+    echo "[INFO] Skipping Playwright tests (--no-playwright flag set)"
   fi
 }
 
 generate_commit_message_modular() {
-  # Generate a commit message, enforce GitHub limits, preview, allow edit
-  local branch type title body msg
-  branch=$(git rev-parse --abbrev-ref HEAD)
-  type="feat"
-  case "$branch" in
-    *fix*|*bug*) type="fix" ;;
-    *chore*) type="chore" ;;
-  esac
-  title="${type}: $(git status --short | head -n 1 | awk '{print $2}')"
-  body="Auto-generated commit for branch $branch."
-  msg="$title\n\n$body"
-  # Truncate to 72 chars for title, 400 for body
-  title="${title:0:72}"
-  body="${body:0:400}"
-  msg="$title\n\n$body"
-  echo -e "$msg" > .GIT_COMMIT_MSG_PREVIEW
-  ${EDITOR:-vi} .GIT_COMMIT_MSG_PREVIEW
-  msg=$(cat .GIT_COMMIT_MSG_PREVIEW)
-  rm .GIT_COMMIT_MSG_PREVIEW
-  echo -e "Commit message preview:\n$msg"
-  echo -n 'Proceed with commit? [y/N]: '
-  read yn
-  [[ $yn =~ ^[Yy]$ ]] || return 1
-  git commit -am "$title" -m "$body"
+  echo "[INFO] Generating commit message (modular)..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would generate commit message"; return 0; fi
+  generate_commit_message
 }
 
 run_pre_push_hook_modular() {
-  if [[ -x .git/hooks/pre-push ]]; then
-    .git/hooks/pre-push || return 1
+  echo "[INFO] Running pre-push hook..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would run: .husky/pre-push"; return 0; fi
+  if [[ -x .husky/pre-push ]]; then
+    ./.husky/pre-push
+  else
+    echo "[WARN] No pre-push hook found."
   fi
-  return 0
 }

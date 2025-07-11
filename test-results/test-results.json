@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 1,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -43,7 +43,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "Desktop Chrome",
         "name": "Desktop Chrome",
@@ -59,7 +59,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -75,7 +75,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.53.2",
-    "workers": 6,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
@@ -109,43 +109,52 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 9894,
-                      "errors": [],
+                      "status": "interrupted",
+                      "duration": 2487,
+                      "error": {
+                        "message": "Error: page.waitForTimeout: Test ended.",
+                        "stack": "Error: page.waitForTimeout: Test ended.\n    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:26:16)\n    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7",
+                        "location": {
+                          "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                          "column": 16,
+                          "line": 26
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     testSignInForm \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[33mTEST_SIGNIN_FORM_SELECTOR\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mif\u001b[39m (testSignInForm) \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mtestSignInForm) {\n \u001b[90m 29 |\u001b[39m     \u001b[90m// If not present, try to sign out\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                            "column": 16,
+                            "line": 26
+                          },
+                          "message": "Error: page.waitForTimeout: Test ended.\n\n\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     testSignInForm \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[33mTEST_SIGNIN_FORM_SELECTOR\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mif\u001b[39m (testSignInForm) \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mtestSignInForm) {\n \u001b[90m 29 |\u001b[39m     \u001b[90m// If not present, try to sign out\u001b[39m\u001b[0m\n\u001b[2m    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:26:16)\u001b[22m\n\u001b[2m    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
                         },
                         {
-                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                        },
-                        {
                           "text": "[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on / have accessible names and ARIA roles @fast\n"
                         },
                         {
-                          "text": "[COVERAGE] Wrote coverage to out-1752102510650-54uquopb67f.json\n"
+                          "text": "[COVERAGE] Wrote coverage to out-1752197998172-0pwpcmlwj80q.json\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-09T23:08:20.056Z",
+                      "startTime": "2025-07-11T01:39:54.731Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                        "column": 16,
+                        "line": 26
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "b6bb9df8c666e8a25a6c-17ebe3f14b4a274f4a7b",
@@ -170,43 +179,55 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 9431,
-                      "errors": [],
+                      "status": "interrupted",
+                      "duration": 2479,
+                      "error": {
+                        "message": "Error: page.waitForSelector: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"test-signin-email\"]') to be visible\u001b[22m\n",
+                        "stack": "Error: page.waitForSelector: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"test-signin-email\"]') to be visible\u001b[22m\n\n    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:43:14)\n    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7",
+                        "location": {
+                          "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                          "column": 14,
+                          "line": 43
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m   \u001b[90m// Wait for form to be visible and enabled\u001b[39m\n \u001b[90m 42 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'[E2E DEBUG] Waiting for sign-in form fields to be visible.'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mEMAIL_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mPASSWORD_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSUBMIT_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[90m// Debug: screenshot before filling\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                            "column": 14,
+                            "line": 43
+                          },
+                          "message": "Error: page.waitForSelector: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"test-signin-email\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m   \u001b[90m// Wait for form to be visible and enabled\u001b[39m\n \u001b[90m 42 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'[E2E DEBUG] Waiting for sign-in form fields to be visible.'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mEMAIL_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mPASSWORD_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSUBMIT_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[90m// Debug: screenshot before filling\u001b[39m\u001b[0m\n\u001b[2m    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:43:14)\u001b[22m\n\u001b[2m    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
                         },
                         {
-                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                        },
-                        {
                           "text": "[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /quiz have accessible names and ARIA roles @fast\n"
                         },
                         {
-                          "text": "[COVERAGE] Wrote coverage to out-1752102510046-21xkxjfn1hb.json\n"
+                          "text": "[COVERAGE] Wrote coverage to out-1752197998162-9tnxtg4yryn.json\n"
+                        },
+                        {
+                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-09T23:08:20.036Z",
+                      "startTime": "2025-07-11T01:39:54.735Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                        "column": 14,
+                        "line": 43
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "b6bb9df8c666e8a25a6c-ed9c795ce20e11bd00fb",
@@ -231,43 +252,52 @@
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 8465,
-                      "errors": [],
+                      "status": "interrupted",
+                      "duration": 2483,
+                      "error": {
+                        "message": "Error: page.waitForTimeout: Test ended.",
+                        "stack": "Error: page.waitForTimeout: Test ended.\n    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:26:16)\n    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7",
+                        "location": {
+                          "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                          "column": 16,
+                          "line": 26
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     testSignInForm \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[33mTEST_SIGNIN_FORM_SELECTOR\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mif\u001b[39m (testSignInForm) \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mtestSignInForm) {\n \u001b[90m 29 |\u001b[39m     \u001b[90m// If not present, try to sign out\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                            "column": 16,
+                            "line": 26
+                          },
+                          "message": "Error: page.waitForTimeout: Test ended.\n\n\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m     testSignInForm \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[33mTEST_SIGNIN_FORM_SELECTOR\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mif\u001b[39m (testSignInForm) \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mtestSignInForm) {\n \u001b[90m 29 |\u001b[39m     \u001b[90m// If not present, try to sign out\u001b[39m\u001b[0m\n\u001b[2m    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:26:16)\u001b[22m\n\u001b[2m    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
                         },
                         {
-                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                        },
-                        {
                           "text": "[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /achievements have accessible names and ARIA roles @fast\n"
                         },
                         {
-                          "text": "[COVERAGE] Wrote coverage to out-1752102509184-b0h6nbezaz6.json\n"
+                          "text": "[COVERAGE] Wrote coverage to out-1752197998167-5xnt0n351wj.json\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-09T23:08:20.028Z",
+                      "startTime": "2025-07-11T01:39:54.730Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                        "column": 16,
+                        "line": 26
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "b6bb9df8c666e8a25a6c-515cf44837160e4011f9",
@@ -292,43 +322,55 @@
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 8934,
-                      "errors": [],
+                      "status": "interrupted",
+                      "duration": 2494,
+                      "error": {
+                        "message": "Error: page.waitForSelector: Target page, context or browser has been closed",
+                        "stack": "Error: page.waitForSelector: Target page, context or browser has been closed\n    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:43:14)\n    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7",
+                        "location": {
+                          "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                          "column": 14,
+                          "line": 43
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m   \u001b[90m// Wait for form to be visible and enabled\u001b[39m\n \u001b[90m 42 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'[E2E DEBUG] Waiting for sign-in form fields to be visible.'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mEMAIL_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mPASSWORD_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSUBMIT_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[90m// Debug: screenshot before filling\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                            "column": 14,
+                            "line": 43
+                          },
+                          "message": "Error: page.waitForSelector: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39mhelpers/uiSignIn.ts:43\n\n\u001b[0m \u001b[90m 41 |\u001b[39m   \u001b[90m// Wait for form to be visible and enabled\u001b[39m\n \u001b[90m 42 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'[E2E DEBUG] Waiting for sign-in form fields to be visible.'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mEMAIL_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mPASSWORD_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSUBMIT_SELECTOR\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m\u001b[33m,\u001b[39m state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[90m// Debug: screenshot before filling\u001b[39m\u001b[0m\n\u001b[2m    at uiSignIn (/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts:43:14)\u001b[22m\n\u001b[2m    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts:40:7\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
                         },
                         {
-                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                        },
-                        {
                           "text": "[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /analytics have accessible names and ARIA roles @fast\n"
                         },
                         {
-                          "text": "[COVERAGE] Wrote coverage to out-1752102509312-ey1xd0vt1o.json\n"
+                          "text": "[COVERAGE] Wrote coverage to out-1752197998174-ci65jnzntpm.json\n"
+                        },
+                        {
+                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-09T23:08:20.018Z",
+                      "startTime": "2025-07-11T01:39:54.739Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/helpers/uiSignIn.ts",
+                        "column": 14,
+                        "line": 43
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "b6bb9df8c666e8a25a6c-d647c9d6d86ca76a11ff",
@@ -349,47 +391,8 @@
                   "expectedStatus": "passed",
                   "projectId": "Desktop Chrome",
                   "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 9650,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                        },
-                        {
-                          "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                        },
-                        {
-                          "text": "[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/all-interactive-aria-accessibility.spec.ts - All interactive elements on /profile have accessible names and ARIA roles @fast\n"
-                        },
-                        {
-                          "text": "[COVERAGE] Wrote coverage to out-1752102510314-ukoolcubl2.json\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-09T23:08:20.045Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
               "id": "b6bb9df8c666e8a25a6c-6193f9d144988a3375bd",
@@ -535,391 +538,8 @@
                   "expectedStatus": "passed",
                   "projectId": "Desktop Chrome",
                   "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 13477,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[COVERAGE DEBUG] Running afterEach for: /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app-accessibility-full.spec.ts - Tab through all main pages and assert focus order/visibility\n"
-                        },
-                        {
-                          "text": "[COVERAGE] Wrote coverage to out-1752102513983-7bt8b7exhlc.json\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Tabbable elements on /quiz:",
-                          "duration": 23,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#4: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 0
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /quiz, expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 8
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Achievements page\" role=\"link\" href=\"/achie",
-                          "duration": 1
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /quiz, expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Analytics page\" role=\"link\" href=\"/analytic",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /quiz, expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Profile page\" role=\"link\" href=\"/profile\" d",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /quiz, expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /quiz, expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Tabbable elements on /achievements:",
-                          "duration": 12,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#4: tag=DIV, role=button, ariaLabel=Open badge modal for badge: First Quiz, text=First Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#5: tag=DIV, role=button, ariaLabel=Open badge modal for badge: Accuracy 100%, text=Accuracy 100%",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#6: tag=DIV, role=button, ariaLabel=Open badge modal for badge: Test Badge, text=Test Badge",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#7: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 1
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /achievements, expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Analytics page\" role=\"link\" href=\"/analytic",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /achievements, expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Profile page\" role=\"link\" href=\"/profile\" d",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /achievements, expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <div data-testid=\"badge-container\" tabindex=\"0\" role=\"button\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /achievements, expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 1
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <div data-testid=\"badge-container\" tabindex=\"0\" role=\"button\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /achievements, expected: <div data-testid=\"badge-containe",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <div data-testid=\"badge-container\" tabindex=\"0\" role=\"button\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #5 on /achievements, expected: <div data-testid=\"badge-containe",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 1
-                        },
-                        {
-                          "title": "DEBUG: After Tab #6 on /achievements, expected: <div data-testid=\"badge-containe",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #7 on /achievements, expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Quiz page\" role=\"link\" href=\"/quiz\" data-di",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Tabbable elements on /analytics:",
-                          "duration": 7,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 1
-                            },
-                            {
-                              "title": "#4: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 0
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /analytics, expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Profile page\" role=\"link\" href=\"/profile\" d",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /analytics, expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /analytics, expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /analytics, expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 1
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Quiz page\" role=\"link\" href=\"/quiz\" data-di",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /analytics, expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Achievements page\" role=\"link\" href=\"/achie",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Tabbable elements on /profile:",
-                          "duration": 9,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#4: tag=BUTTON, role=null, ariaLabel=Sign in with Google, text=Sign In with Google",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#5: tag=BUTTON, role=null, ariaLabel=Reset all user data, text=Reset All",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#6: tag=INPUT, role=null, ariaLabel=Test email, text=",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#7: tag=INPUT, role=null, ariaLabel=Test password, text=",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#8: tag=BUTTON, role=null, ariaLabel=Sign in with email, text=Sign In (Test Only)",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#9: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 0
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /profile, expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <button aria-label=\"Sign in with Google\">Sign In with Google</bu",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /profile, expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <button aria-label=\"Reset all user data\" style=\"margin-left: 16p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /profile, expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input placeholder=\"Test Email\" autocomplete=\"username\" aria-lab",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /profile, expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input placeholder=\"Password\" autocomplete=\"current-password\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /profile, expected: <button aria-label=\"Sign in with",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <button type=\"submit\" aria-label=\"Sign in with email\" data-testi",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #5 on /profile, expected: <button aria-label=\"Reset all us",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #6 on /profile, expected: <input placeholder=\"Test Email\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #7 on /profile, expected: <input placeholder=\"Password\" au",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Quiz page\" role=\"link\" href=\"/quiz\" data-di",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #8 on /profile, expected: <button type=\"submit\" aria-label",
-                          "duration": 1
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Achievements page\" role=\"link\" href=\"/achie",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #9 on /profile, expected: <input class=\"question-search-ba",
-                          "duration": 2
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Analytics page\" role=\"link\" href=\"/analytic",
-                          "duration": 0
-                        }
-                      ],
-                      "startTime": "2025-07-09T23:08:20.005Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
               "id": "2f1bc87cb26fb954f485-39f0e921c347533fd48e",
@@ -938,22 +558,8 @@
                   "expectedStatus": "passed",
                   "projectId": "Desktop Chrome",
                   "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1296,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-09T23:08:29.643Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
               "id": "2f1bc87cb26fb954f485-c855e23ed67346a2f8d6",
@@ -1020,384 +626,8 @@
                   "expectedStatus": "passed",
                   "projectId": "Desktop Chrome",
                   "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 10068,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Tabbable elements on /quiz (Mobile):",
-                          "duration": 20,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#4: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 1
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /quiz (Mobile), expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Achievements page\" role=\"link\" href=\"/achie",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /quiz (Mobile), expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Analytics page\" role=\"link\" href=\"/analytic",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /quiz (Mobile), expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Profile page\" role=\"link\" href=\"/profile\" d",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /quiz (Mobile), expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /quiz (Mobile), expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Tabbable elements on /achievements (Mobile):",
-                          "duration": 58,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 9
-                            },
-                            {
-                              "title": "#4: tag=DIV, role=button, ariaLabel=Open badge modal for badge: First Quiz, text=First Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#5: tag=DIV, role=button, ariaLabel=Open badge modal for badge: Accuracy 100%, text=Accuracy 100%",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#6: tag=DIV, role=button, ariaLabel=Open badge modal for badge: Test Badge, text=Test Badge",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#7: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 0
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /achievements (Mobile), expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Analytics page\" role=\"link\" href=\"/analytic",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /achievements (Mobile), expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Profile page\" role=\"link\" href=\"/profile\" d",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /achievements (Mobile), expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <div data-testid=\"badge-container\" tabindex=\"0\" role=\"button\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /achievements (Mobile), expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <div data-testid=\"badge-container\" tabindex=\"0\" role=\"button\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /achievements (Mobile), expected: <div data-testid=\"badge-containe",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <div data-testid=\"badge-container\" tabindex=\"0\" role=\"button\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #5 on /achievements (Mobile), expected: <div data-testid=\"badge-containe",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #6 on /achievements (Mobile), expected: <div data-testid=\"badge-containe",
-                          "duration": 1
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #7 on /achievements (Mobile), expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Quiz page\" role=\"link\" href=\"/quiz\" data-di",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Tabbable elements on /analytics (Mobile):",
-                          "duration": 4,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#4: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 0
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /analytics (Mobile), expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Profile page\" role=\"link\" href=\"/profile\" d",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /analytics (Mobile), expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /analytics (Mobile), expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /analytics (Mobile), expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Quiz page\" role=\"link\" href=\"/quiz\" data-di",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /analytics (Mobile), expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Achievements page\" role=\"link\" href=\"/achie",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Tabbable elements on /profile (Mobile):",
-                          "duration": 10,
-                          "steps": [
-                            {
-                              "title": "#0: tag=A, role=link, ariaLabel=Go to Quiz page, text=Quiz",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#1: tag=A, role=link, ariaLabel=Go to Achievements page, text=Achievements",
-                              "duration": 1
-                            },
-                            {
-                              "title": "#2: tag=A, role=link, ariaLabel=Go to Analytics page, text=Analytics",
-                              "duration": 1
-                            },
-                            {
-                              "title": "#3: tag=A, role=link, ariaLabel=Go to Profile page, text=Profile",
-                              "duration": 1
-                            },
-                            {
-                              "title": "#4: tag=BUTTON, role=null, ariaLabel=Sign in with Google, text=Sign In with Google",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#5: tag=BUTTON, role=null, ariaLabel=Reset all user data, text=Reset All",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#6: tag=INPUT, role=null, ariaLabel=Test email, text=",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#7: tag=INPUT, role=null, ariaLabel=Test password, text=",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#8: tag=BUTTON, role=null, ariaLabel=Sign in with email, text=Sign In (Test Only)",
-                              "duration": 0
-                            },
-                            {
-                              "title": "#9: tag=INPUT, role=null, ariaLabel=Search questions, text=",
-                              "duration": 1
-                            }
-                          ]
-                        },
-                        {
-                          "title": "DEBUG: After Tab #0 on /profile (Mobile), expected: <a aria-label=\"Go to Quiz page\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <button aria-label=\"Sign in with Google\">Sign In with Google</bu",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #1 on /profile (Mobile), expected: <a aria-label=\"Go to Achievement",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <button aria-label=\"Reset all user data\" style=\"margin-left: 16p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #2 on /profile (Mobile), expected: <a aria-label=\"Go to Analytics p",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input placeholder=\"Test Email\" autocomplete=\"username\" aria-lab",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #3 on /profile (Mobile), expected: <a aria-label=\"Go to Profile pag",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input placeholder=\"Password\" autocomplete=\"current-password\" ar",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #4 on /profile (Mobile), expected: <button aria-label=\"Sign in with",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <button type=\"submit\" aria-label=\"Sign in with email\" data-testi",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #5 on /profile (Mobile), expected: <button aria-label=\"Reset all us",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <input class=\"question-search-bar\" placeholder=\"Search questions",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #6 on /profile (Mobile), expected: <input placeholder=\"Test Email\" ",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <body>\n  <div id=\"root\"><header class=\"app-header\"><img alt=\"App",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #7 on /profile (Mobile), expected: <input placeholder=\"Password\" au",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Quiz page\" role=\"link\" href=\"/quiz\" data-di",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #8 on /profile (Mobile), expected: <button type=\"submit\" aria-label",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Achievements page\" role=\"link\" href=\"/achie",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: After Tab #9 on /profile (Mobile), expected: <input class=\"question-search-ba",
-                          "duration": 0
-                        },
-                        {
-                          "title": "DEBUG: Actual active: <a aria-label=\"Go to Analytics page\" role=\"link\" href=\"/analytic",
-                          "duration": 0
-                        }
-                      ],
-                      "startTime": "2025-07-09T23:08:29.851Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
               "id": "2f1bc87cb26fb954f485-157cfeeca097ad3a1198",
@@ -1437,7 +667,7 @@
       "specs": [
         {
           "title": "should reset quiz and focus first option after restart",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -1446,98 +676,8 @@
               "expectedStatus": "passed",
               "projectId": "Desktop Chrome",
               "projectName": "Desktop Chrome",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "failed",
-                  "duration": 13724,
-                  "error": {
-                    "message": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Quiz Length')\u001b[22m\n",
-                    "stack": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Quiz Length')\u001b[22m\n\n    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts:55:40",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts",
-                      "column": 40,
-                      "line": 55
-                    },
-                    "snippet": "  53 |   await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz.png', fullPage: true });\n  54 |   console.log('Filling Quiz Length...');\n> 55 |   await page.getByLabel('Quiz Length').fill('1');\n     |                                        ^\n  56 |   console.log('Clicking Start button...');\n  57 |   await page.getByRole('button', { name: /start/i }).click();\n  58 |   console.log('Clicking first quiz option...');"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts",
-                        "column": 40,
-                        "line": 55
-                      },
-                      "message": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Quiz Length')\u001b[22m\n\n\n  53 |   await page.screenshot({ path: 'test-results/screenshots/after-goto-quiz.png', fullPage: true });\n  54 |   console.log('Filling Quiz Length...');\n> 55 |   await page.getByLabel('Quiz Length').fill('1');\n     |                                        ^\n  56 |   console.log('Clicking Start button...');\n  57 |   await page.getByRole('button', { name: /start/i }).click();\n  58 |   console.log('Clicking first quiz option...');\n    at /Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts:55:40"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] URL after sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Test start, current URL: http://localhost:5173/\n"
-                    },
-                    {
-                      "text": "Navigating to quiz page...\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz\n"
-                    },
-                    {
-                      "text": "Filling Quiz Length...\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After test: should reset quiz and focus first option after restart\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL after test: http://localhost:5173/quiz\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-07-09T23:08:30.579Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/test-results/screenshots/app-should-reset-quiz-and-focus-first-option-after-restart-Desktop-Chrome/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/e2e/app.spec.ts",
-                    "column": 40,
-                    "line": 55
-                  }
-                }
-              ],
-              "status": "unexpected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "c31ff144dc4fee3acd0a-afb9d5296bb2b735c4b9",
@@ -1556,70 +696,7 @@
               "expectedStatus": "passed",
               "projectId": "Desktop Chrome",
               "projectName": "Desktop Chrome",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 4,
-                  "status": "interrupted",
-                  "duration": 14022,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] URL after sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to quiz page...\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After goto /quiz, URL: http://localhost:5173/quiz\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling Quiz Length...\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After test: should handle edge case: rapid answer selection\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL after test: http://localhost:5173/quiz\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-07-09T23:08:30.667Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/test-results/screenshots/app-should-handle-edge-case-rapid-answer-selection-Desktop-Chrome/error-context.md"
-                    }
-                  ]
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -1639,55 +716,7 @@
               "expectedStatus": "passed",
               "projectId": "Desktop Chrome",
               "projectName": "Desktop Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "interrupted",
-                  "duration": 14419,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] URL after sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After test: should show explanations when enabled\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL after test: http://localhost:5173/quiz\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-07-09T23:08:30.783Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -1707,61 +736,7 @@
               "expectedStatus": "passed",
               "projectId": "Desktop Chrome",
               "projectName": "Desktop Chrome",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "interrupted",
-                  "duration": 14007,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] URL after sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After test: should show topic stats in results\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL after test: http://localhost:5173/quiz\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-07-09T23:08:31.126Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/test-results/screenshots/app-should-show-topic-stats-in-results-Desktop-Chrome/error-context.md"
-                    }
-                  ]
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -1781,61 +756,7 @@
               "expectedStatus": "passed",
               "projectId": "Desktop Chrome",
               "projectName": "Desktop Chrome",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 5,
-                  "status": "interrupted",
-                  "duration": 10402,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] URL after sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After test: should render and be usable on mobile viewport\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL after test: http://localhost:5173/quiz\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-07-09T23:08:34.395Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/Users/macuser/Desktop/Massage-Therapy-FIREBASE-PRO/test-results/screenshots/app-should-render-and-be-usable-on-mobile-viewport-Desktop-Chrome/error-context.md"
-                    }
-                  ]
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -1855,55 +776,7 @@
               "expectedStatus": "passed",
               "projectId": "Desktop Chrome",
               "projectName": "Desktop Chrome",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "interrupted",
-                  "duration": 5099,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[E2E DEBUG] About to sign in with test user: testuserc-8gn0dapf@gmail.com\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL before sign-in: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Navigating to profilePath: /profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-in form fields to be visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Filling sign-in form: email=testuserc-8gn0dapf@gmail.com, password=testuserC\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Submitting sign-in form.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Waiting for sign-out button after login.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] After test: should load all referenced badge images on Achievements page\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Current URL after test: http://localhost:5173/profile\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] Sign-in flow complete, sign-out button visible.\n"
-                    },
-                    {
-                      "text": "[E2E DEBUG] URL after sign-in: http://localhost:5173/profile\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-07-09T23:08:40.095Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
+              "results": [],
               "status": "skipped"
             }
           ],
@@ -6119,17 +4992,13 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
-    }
-  ],
+  "errors": [],
   "stats": {
-    "startTime": "2025-07-09T23:08:18.700Z",
-    "duration": 26735.266,
-    "expected": 8,
-    "skipped": 189,
-    "unexpected": 1,
+    "startTime": "2025-07-11T01:39:53.959Z",
+    "duration": 4449.618,
+    "expected": 0,
+    "skipped": 198,
+    "unexpected": 0,
     "flaky": 0
   }
 }

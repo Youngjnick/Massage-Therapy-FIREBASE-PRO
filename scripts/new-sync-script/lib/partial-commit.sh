@@ -10,7 +10,9 @@ partial_stash() {
 }
 
 handle_stash_flow_modular() {
-  echo "Stashing uncommitted changes..." >&2
+  echo "[INFO] Handling stash flow (modular)..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would stash and restore changes"; return 0; fi
   git stash push -u -m "sync-script-stash"
-  return 0
+  # ...sync/merge logic would go here...
+  git stash pop || echo "[WARN] No stash to pop."
 }

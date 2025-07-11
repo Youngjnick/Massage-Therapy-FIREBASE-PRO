@@ -11,11 +11,12 @@ error() {
 
 # Backup and restore helpers
 backup_before_sync_modular() {
-  local backup_dir=".sync-script-backup-$(date +%s)"
-  echo "Backing up working directory to $backup_dir..." >&2
-  mkdir -p "$backup_dir"
-  git ls-files -z | xargs -0 -I{} cp --parents {} "$backup_dir" 2>/dev/null
-  echo "Backup complete: $backup_dir" >&2
+  echo "[INFO] Backing up working directory before sync..."
+  if [[ "$DRY_RUN" == "1" ]]; then echo "[DRY RUN] Would backup to sync_tmp_backups/"; return 0; fi
+  mkdir -p sync_tmp_backups
+  backup_name="backup_$(date +%Y%m%d_%H%M%S)"
+  rsync -a --exclude 'sync_tmp_backups' ./ sync_tmp_backups/$backup_name/
+  echo "[INFO] Backup created: $backup_name"
 }
 
 list_backups() {

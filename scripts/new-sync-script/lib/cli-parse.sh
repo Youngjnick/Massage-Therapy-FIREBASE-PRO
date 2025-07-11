@@ -37,50 +37,22 @@ show_help() {
 }
 
 parse_cli_args() {
-  # Defaults
-  DRY_RUN=0; AUTO_COMMIT=0; DEBUG=1; NO_VERIFY=0; NO_LINT=0; NO_TESTS=0; CONFIG_FILE=""; BRANCH=""; REBASE=0
-  LIST_BACKUPS=0; RESTORE_BACKUP=0; DELETE_BACKUP=0
-  TARGET_BRANCHES=()
-  REMOTES=(origin)
-
-  while [[ $# -gt 0 ]]; do
-    case $1 in
-      --dry-run) DRY_RUN=1 ;;
-      --auto-commit) AUTO_COMMIT=1 ;;
-      --debug) DEBUG=1 ;;
-      --no-verify) NO_VERIFY=1 ;;
-      --no-lint) NO_LINT=1 ;;
-      --no-tests) NO_TESTS=1 ;;
-      --config) CONFIG_FILE="$2"; shift ;;
-      --branch) BRANCH="$2"; shift ;;
-      --rebase) REBASE=1 ;;
-      --list-backups) LIST_BACKUPS=1 ;;
-      --restore-backup) RESTORE_BACKUP=1 ;;
-      --delete-backup) DELETE_BACKUP=1 ;;
-      --remote)
-        shift
-        REMOTES=()
-        while [[ $# -gt 0 && ! "$1" =~ ^- ]]; do
-          REMOTES+=("$1")
-          shift
-        done
-        continue
-        ;;
-      --help|--docs)
-        show_help
-        exit 0
-        ;;
-      -*)
-        echo "Unknown option: $1"
-        show_help
-        exit 1
-        ;;
-      *)
-        TARGET_BRANCHES+=("$1")
-        ;;
+  # Minimal stub: parse known flags and export variables
+  for arg in "$@"; do
+    case $arg in
+      --dry-run) export DRY_RUN=1 ;;
+      --auto-commit) export AUTO_COMMIT=1 ;;
+      --debug) export DEBUG=1 ;;
+      --no-verify) export NO_VERIFY=1 ;;
+      --no-lint) export NO_LINT=1 ;;
+      --no-tests) export NO_TESTS=1 ;;
+      --no-playwright) export NO_PLAYWRIGHT=1 ;;
+      --config) shift; export CONFIG_FILE="$1" ;;
+      --branch) shift; export SYNC_BRANCHES="$1" ;;
+      --help|--docs) print_help; exit 0 ;;
     esac
     shift
-  done
+done
 }
 
 cli_handle_drag_and_drop() {
