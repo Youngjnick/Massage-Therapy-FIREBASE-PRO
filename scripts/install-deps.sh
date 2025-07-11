@@ -110,3 +110,21 @@ for script in scripts/*.sh; do
 done
 
 echo "Shell script checks complete."
+
+echo "\nInstalling bats-core for shell script testing..."
+if ! command -v bats >/dev/null 2>&1; then
+  if [[ "$(uname)" == "Darwin" ]]; then
+    echo "bats not found. Installing with Homebrew..."
+    if command -v brew >/dev/null 2>&1; then
+      brew install bats-core
+    else
+      echo "Homebrew not found. Please install Homebrew and re-run this script, or install bats-core manually."
+      exit 1
+    fi
+  else
+    echo "bats not found. Please install bats-core using your system package manager (e.g., sudo apt-get install bats) and re-run this script."
+    exit 1
+  fi
+else
+  echo "bats-core is already installed."
+fi
