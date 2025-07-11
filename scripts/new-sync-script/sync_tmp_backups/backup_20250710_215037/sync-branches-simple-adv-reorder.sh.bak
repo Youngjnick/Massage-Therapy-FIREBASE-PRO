@@ -1,12 +1,6 @@
 #!/bin/zsh
 # sync-branches-simple.sh
 
-# Source all modular libraries at the top for global function availability
-for lib in lib/colors.sh lib/hooks.sh lib/branch-protection.sh lib/conflict-resolution.sh lib/remote-sync.sh lib/cicd.sh lib/partial-commit.sh lib/backup.sh lib/cli-parse.sh; do
-  libpath="$(dirname "$0")/$lib"
-  [ -f "$libpath" ] && source "$libpath"
-done
-
 # =====================================================================
 # SYNC SCRIPT FLOW OVERVIEW (UI/USER FLOW ORDER)
 # =====================================================================
@@ -24,7 +18,6 @@ done
 #        --no-verify       Skip pre-commit and pre-push git hooks (skips all git hooks, not just tests; use with caution).
 #        --no-lint         Skip linting and formatting checks.
 #        --no-tests        Skip running tests before syncing.
-#        --no-playwright   Skip Playwright E2E tests only.
 #        --config <file>   Use a custom config file for default/toggleable options.
 #        --branch <name>   Use a specific branch as source/target for syncing.
 #        ...add others as needed for your workflow.
@@ -74,8 +67,6 @@ done
 #    - If no changes are present:
 #        - Inform the user that the working directory is clean and skip the auto-commit step.
 
-# (Example commit message template moved to documentation or multi-line comment below)
-: <<'END_COMMIT_DOC'
 Summary:
 Sync feature/login-refactor into main: Unify authentication logic and update tests
 
@@ -102,7 +93,6 @@ Test Results:
 Jest: All tests passed (112/112), coverage 98%.
 Playwright: All e2e login and profile tests passed.
 Manual: Verified login/logout and session persistence in local dev.
-END_COMMIT_DOC
 
 # 8. Run Jest/Playwright/Other Tests (toggleable)
 #    - Run Jest, Playwright, or other tests on the current branch after auto-commit (if enabled).
@@ -241,8 +231,7 @@ Options:
   --debug           Enable debug output
   --no-verify       Skip all git hooks
   --no-lint         Skip linting/formatting
-  --no-tests        Skip running all tests
-  --no-playwright   Skip Playwright E2E tests only
+  --no-tests        Skip running tests
   --config <file>   Use custom config file
   --branch <name>   Specify branch for sync
   --rebase          Use rebase instead of merge
@@ -460,285 +449,53 @@ generate_commit_message() {
 }
 
 # =====================================================================
-# FUNCTION IMPLEMENTATIONS (modular, can be moved to lib/)
+# MODULE IMPORTS (source utility modules)
 # =====================================================================
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%N}}")" && pwd)"
+source "$SCRIPT_DIR/lib/colors.sh"
+source "$SCRIPT_DIR/lib/hooks.sh"
+source "$SCRIPT_DIR/lib/branch-protection.sh"
+source "$SCRIPT_DIR/lib/conflict-resolution.sh"
+source "$SCRIPT_DIR/lib/remote-sync.sh"
+source "$SCRIPT_DIR/lib/cicd.sh"
+source "$SCRIPT_DIR/lib/partial-commit.sh"
+source "$SCRIPT_DIR/lib/backup.sh"
+source "$SCRIPT_DIR/lib/cli-parse.sh"
 
-handle_drag_and_drop() {
-  # Modular: source from lib/cli-parse.sh if available
-  if [[ -f "$(dirname "$0")/lib/cli-parse.sh" ]]; then
-    source "$(dirname "$0")/lib/cli-parse.sh"
-    cli_handle_drag_and_drop "$@"
-    return $?
-  fi
-  # Fallback: no-op
-  return 0
-}
-
-pre_sync_checks() {
-  # Modular: source from lib/cli-parse.sh for CLI parsing, lib/colors.sh for info/error
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would perform pre-sync checks"; return 0; fi
-  git rev-parse --is-inside-work-tree >/dev/null 2>&1 || { error "Not in a git repo"; return 1; }
-  if [[ -f "$(dirname "$0")/lib/cli-parse.sh" ]]; then
-    source "$(dirname "$0")/lib/cli-parse.sh"
-    parse_cli_args "$@"
-  fi
-  # Warn if there are unstaged/uncommitted changes and auto-commit is not enabled
-  if [[ $AUTO_COMMIT -ne 1 ]]; then
-    if [[ -n $(git status --porcelain) ]]; then
-      warn "You have unstaged or uncommitted changes in your working directory."
-      echo -n "Do you want to stage and commit all changes before continuing? (y/N): "
-      read stage_commit_confirm
-      if [[ "$stage_commit_confirm" =~ ^[yY](es)?$ ]]; then
-        git add -A
-        if [[ -f "$(dirname \"$0\")/lib/hooks.sh" ]]; then source "$(dirname \"$0\")/lib/hooks.sh"; fi
-        generate_commit_message_modular || return 1
-      else
-        warn "Continuing without staging/committing changes."
-      fi
-    fi
-  fi
-  # ...load config, check clean state, etc. (modularize as needed)...
-  return 0
-}
-
-select_branches() {
-  # List all local branches, ordered by most recent commit (most recent at the bottom)
-  local branches branch_list branch_count i
-  branches=($(git for-each-ref --sort=committerdate refs/heads/ --format='%(refname:short)'))
-  branch_count=${#branches[@]}
-  echo "\nAvailable branches:" >&2
-  for ((i=1; i<=branch_count; i++)); do
-    idx=$((i-1))
-    bname="${branches[$idx]}"
-    mark=" "
-    if [[ "$bname" == "$(git rev-parse --abbrev-ref HEAD)" ]]; then
-      if git diff --quiet && git diff --cached --quiet; then
-        mark="${color_success}*${color_reset}"
-      else
-        mark="${color_warn}*${color_reset}"
-      fi
-    fi
-    echo -e "  $i. $bname $mark"
-  done
-  echo -n "\nType branch numbers separated by space (e.g. 1 3 5), or '+' to add a new branch. Press 'Enter' when done: "
-  read branch_nums
-  if [[ "$branch_nums" == "+" ]]; then
-    echo -n "Enter new branch name: "
-    read new_branch
-    git checkout -b "$new_branch"
-    export SYNC_BRANCHES="$new_branch"
-    return 0
-  fi
-  local selected_branches=()
-  for num in $branch_nums; do
-    if [[ $num =~ ^[0-9]+$ ]] && (( num >= 1 && num <= branch_count )); then
-      selected_branches+=("${branches[$((num-1))]}")
-    fi
-  done
-  if [[ ${#selected_branches[@]} -eq 0 ]]; then
-    # No branches selected, use current branch as default
-    local current_branch
-    current_branch=$(git rev-parse --abbrev-ref HEAD)
-    info "No branches selected. Using current branch: $current_branch"
-    selected_branches=("$current_branch")
-  fi
-  export SYNC_BRANCHES="${selected_branches[*]}"
-  echo "Selected branches: $SYNC_BRANCHES" >&2
-}
-
-run_lint_and_format() {
-  if [[ $NO_LINT -eq 1 ]]; then info "Linting skipped (--no-lint)"; return 0; fi
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would run lint/format"; return 0; fi
-  if [[ -f "$(dirname "$0")/lib/colors.sh" ]]; then source "$(dirname "$0")/lib/colors.sh"; fi
-  if [[ -f "$(dirname "$0")/lib/hooks.sh" ]]; then source "$(dirname "$0")/lib/hooks.sh"; fi
-  type run_lint &>/dev/null || { warn "run_lint function not found after sourcing hooks.sh"; return 1; }
-  run_lint || { warn "Lint failed"; return 1; }
-  type run_typescript_check &>/dev/null || { warn "run_typescript_check function not found after sourcing hooks.sh"; return 1; }
-  run_typescript_check || { warn "TypeScript errors"; return 1; }
-  return 0
-}
-
-run_pre_push_hook() {
-  if [[ $NO_VERIFY -eq 1 ]]; then info "Pre-push hook skipped (--no-verify)"; return 0; fi
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would run pre-push hook"; return 0; fi
-  if [[ -f "$(dirname "$0")/lib/hooks.sh" ]]; then source "$(dirname "$0")/lib/hooks.sh"; fi
-  run_pre_push_hook_modular
-  return 0
-}
-
-auto_commit_flow() {
-  if [[ $AUTO_COMMIT -ne 1 ]]; then info "Auto-commit disabled"; return 0; fi
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would auto-commit changes"; return 0; fi
-  git diff --quiet && git diff --cached --quiet && { info "No changes to commit"; return 0; }
-  git add -A
-  if [[ -f "$(dirname "$0")/lib/hooks.sh" ]]; then source "$(dirname "$0")/lib/hooks.sh"; fi
-  generate_commit_message_modular || return 1
-  return 0
-}
-
-run_tests() {
-  if [[ $NO_TESTS -eq 1 ]]; then info "Tests skipped (--no-tests)"; return 0; fi
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would run tests"; return 0; fi
-  if [[ -f "$(dirname "$0")/lib/hooks.sh" ]]; then source "$(dirname "$0")/lib/hooks.sh"; fi
-  run_all_tests || { error "Tests failed"; return 1; }
-  return 0
-}
-
-handle_stash_flow() {
-  # Modular: source from lib/partial-commit.sh
-  if [[ -f "$(dirname "$0")/lib/partial-commit.sh" ]]; then
-    source "$(dirname "$0")/lib/partial-commit.sh"
-    handle_stash_flow_modular
-    return $?
-  fi
-  return 0
-}
-
-backup_before_sync() {
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would backup before sync"; return 0; fi
-  if [[ -f "$(dirname "$0")/lib/backup.sh" ]]; then
-    source "$(dirname "$0")/lib/backup.sh"
-    backup_before_sync_modular
-    return $?
-  fi
-  return 0
-}
-
-sync_merge_flow() {
-  if [[ $DRY_RUN -eq 1 ]]; then info "[DRY RUN] Would sync/merge branches"; return 0; fi
-  if [[ -f "$(dirname "$0")/lib/remote-sync.sh" ]]; then
-    source "$(dirname "$0")/lib/remote-sync.sh"
-    sync_merge_flow_modular
-    return $?
-  fi
-  return 0
-}
-
-print_sync_summary() {
-  if [[ -f "$(dirname "$0")/lib/remote-sync.sh" ]]; then
-    source "$(dirname "$0")/lib/remote-sync.sh"
-    print_sync_summary_modular
-    return $?
-  fi
-  return 0
-}
-
-post_sync_actions() {
-  if [[ -f "$(dirname "$0")/lib/remote-sync.sh" ]]; then
-    source "$(dirname "$0")/lib/remote-sync.sh"
-    post_sync_actions_modular
-    return $?
-  fi
-  return 0
-}
-
-open_github_page() {
-  if [[ -f "$(dirname "$0")/lib/remote-sync.sh" ]]; then
-    source "$(dirname "$0")/lib/remote-sync.sh"
-    open_github_page_modular
-    return $?
-  fi
-  return 0
-}
-
-branch_cleanup() {
-  if [[ -f "$(dirname "$0")/lib/branch-protection.sh" ]]; then
-    source "$(dirname "$0")/lib/branch-protection.sh"
-    branch_cleanup_modular
-    return $?
-  fi
-  return 0
-}
-
-preflight_remote_status_check() {
-  if [[ -f "$(dirname "$0")/lib/remote-sync.sh" ]]; then
-    source "$(dirname "$0")/lib/remote-sync.sh"
-    preflight_remote_status_check_modular
-    return $?
-  fi
-  return 0
-}
-
-check_cicd_status_flow() {
-  if [[ -f "$(dirname "$0")/lib/cicd.sh" ]]; then
-    source "$(dirname "$0")/lib/cicd.sh"
-    check_cicd_status_flow_modular
-    return $?
-  fi
-  return 0
-}
+# Parse CLI arguments (robust)
+parse_cli_args "$@"
 
 # =====================================================================
-# MAIN MODULAR SYNC SCRIPT FLOW (CORE FEATURES ONLY)
+# CLI ARGUMENT PARSING (add new flags)
 # =====================================================================
+DRY_RUN=0; DEBUG=1; REBASE=0; LIST_BACKUPS=0; RESTORE_BACKUP=0; DELETE_BACKUP=0; CONFIG_FILE=""
+for arg in "$@"; do
+  case $arg in
+    --dry-run) DRY_RUN=1 ;;
+    --auto-commit) AUTO_COMMIT=1 ;;
+    --debug) DEBUG=1 ;;
+    --no-verify) NO_VERIFY=1 ;;
+    --no-lint) NO_LINT=1 ;;
+    --no-tests) NO_TESTS=1 ;;
+    --config) CONFIG_FILE="$2"; shift ;;
+    --branch) BRANCH="$2"; shift ;;
+    --rebase) REBASE=1 ;;
+    --list-backups) LIST_BACKUPS=1 ;;
+    --restore-backup) RESTORE_BACKUP=1 ;;
+    --delete-backup) DELETE_BACKUP=1 ;;
+    --help|--docs) print_help; exit 0 ;;
+  esac
+  shift
+done
 
-interactive_flag_prompt() {
-  # Only prompt if not already processed
-  if [[ -z "$INTERACTIVE_FLAGS_PROCESSED" ]]; then
-    if (( $# == 0 )); then
-      echo "\nSelect options (type numbers separated by space, or press Enter for defaults):"
-      echo "  1. --no-tests        (Skip running all tests)"
-      echo "  2. --no-lint         (Skip linting/formatting)"
-      echo "  3. --no-verify       (Skip all git hooks)"
-      echo "  4. --dry-run         (Preview all actions without making changes)"
-      echo "  5. --auto-commit     (Auto-commit unstaged changes before syncing)"
-      echo "  6. --debug           (Enable debug output)"
-      echo "  7. --rebase          (Use rebase instead of merge)"
-      echo "  8. --no-playwright   (Skip Playwright E2E tests only)"
-      echo "  9. --help            (Show help and exit)"
-      echo -n "Your choice(s): "
-      read flag_nums
-      for num in $flag_nums; do
-        case $num in
-          1) export NO_TESTS=1 ;;
-          2) export NO_LINT=1 ;;
-          3) export NO_VERIFY=1 ;;
-          4) export DRY_RUN=1 ;;
-          5) export AUTO_COMMIT=1 ;;
-          6) export DEBUG=1 ;;
-          7) export REBASE=1 ;;
-          8) export NO_PLAYWRIGHT=1 ;;
-          9) print_help; exit 0 ;;
-        esac
-      done
-    fi
-    export INTERACTIVE_FLAGS_PROCESSED=1
-  fi
-}
-
+# =====================================================================
+# MAIN ENTRY (modular, testable)
+# =====================================================================
 main() {
-  # 0. Interactive flag prompt (only if not already processed)
-  interactive_flag_prompt "$@"
-  # 0. Drag-and-Drop Support & CLI Parsing
-  handle_drag_and_drop "$@" || return $?
-  parse_cli_args "$@"
-
-  # 1. Pre-Sync Checks & Setup
-  pre_sync_checks || return $?
-
-  # 2. Interactive Branch Selection
-  select_branches || return $?
-
-  # 3. Pre-commit Linting/Formatting
-  run_lint_and_format || return $?
-
-  # 4. Auto-commit Flow
-  auto_commit_flow || return $?
-
-  # 5. Run Jest/Playwright/Other Tests
-  run_tests || return $?
-
-  # 6. Backup/Restore
-  backup_before_sync || return $?
-
-  # 7. Sync/Merge Flow
-  sync_merge_flow || return $?
-
-  # 8. Sync/Push Summary Table
-  print_sync_summary || return $?
-
-  # 9. Post-Sync Actions
-  post_sync_actions || return $?
+  if [[ $LIST_BACKUPS -eq 1 ]]; then list_backups; exit 0; fi
+  if [[ $RESTORE_BACKUP -eq 1 ]]; then restore_backup; exit 0; fi
+  if [[ $DELETE_BACKUP -eq 1 ]]; then delete_backup; exit 0; fi
+  # ...existing code continues...
 }
 
 main "$@"
